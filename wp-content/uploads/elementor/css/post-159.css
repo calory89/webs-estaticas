@@ -1,0 +1,220 @@
+.elementor-159 .elementor-element.elementor-element-5abc26b2{padding:0100px 0px 100px 0px;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );line-height:var( --e-global-typography-primary-line-height );color:var( --e-global-color-primary );}.elementor-159 .elementor-element.elementor-element-a38716e > .elementor-widget-container{margin:0px 0px 032px 0px;}.elementor-159 .elementor-element.elementor-element-a38716e .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );line-height:var( --e-global-typography-primary-line-height );}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-159 .elementor-element.elementor-element-e3ca8af{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );color:var( --e-global-color-text );}:root{--page-title-display:none;}@media(max-width:1024px){.elementor-159 .elementor-element.elementor-element-5abc26b2{padding:040px 0px 40px 0px;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-159 .elementor-element.elementor-element-a38716e .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}.elementor-159 .elementor-element.elementor-element-e3ca8af{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}}@media(max-width:767px){.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-159 .elementor-element.elementor-element-a38716e .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}.elementor-159 .elementor-element.elementor-element-e3ca8af{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}}/* Start custom CSS for text-editor, class: .elementor-element-e3ca8af */.elementor-159 .elementor-element.elementor-element-e3ca8af [type=submit]:not(:disabled){
+    border-color:#43B97F;
+    border-radius:100px;
+    color: #43B97F;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+padding: 12px 32px
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af [type=submit]:not(:disabled):hover,
+.elementor-159 .elementor-element.elementor-element-e3ca8af [type=submit]:not(:disabled):focus{
+    background-color: #43B97F;
+    color: #fff;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af h2{
+    color: #192033;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af a{
+    color:#43B97F;; 
+}
+.elementor-159 .elementor-element.elementor-element-e3ca8af p{
+    margin-bottom: 1rem;
+}
+
+/*preview */
+.elementor-159 .elementor-element.elementor-element-e3ca8af p,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .job_description a,
+.elementor-159 .elementor-element.elementor-element-e3ca8af strong,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta li,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta li a{
+    margin-bottom:0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #6A6F7B;
+    text-decoration: none;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .job-type{
+    display: none;
+}
+
+ul.job_listings li.job_listing .job_description a{
+    color: #43B97F;
+    font-weight: 500;
+    display: inline;
+    padding: 0;
+}
+
+.job-list-wrap strong{
+    color: #A4A7AE;
+    font-weight: 500;
+}
+
+ul.job_listings li.job_listing div.position h3,
+.job_filters .search_jobs div label,
+.education-level{
+    color: #192033;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.job_filters .search_jobs div:not(.search_keywords) label,
+.education-level{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.top-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-wrap{
+    flex: 0 0 auto;
+    display: flex;
+    gap: 16px;
+}
+
+ul.job_listings li.job_listing div.position{
+    float:none;
+    padding:0;
+    width:auto;
+}
+
+ul.job_listings li.job_listing img.company_logo{
+    float: none;
+    position: relative;
+    left: 0;
+    margin-right: 0;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+}
+
+ul.job_listings li.job_listing{
+    padding:24px 32px;
+    background:#fff;
+    border-radius:16px;
+}
+
+div.job_listings ul.job_listings{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 32px;
+}
+
+.job-meta-wrap{
+    display:flex;
+    gap:16px;
+}
+
+ul.job_listings li.job_listing div.location{
+    width: auto;
+    float: none;
+    padding: 0;
+}
+
+.job-list-wrap .salary p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #192033;
+}
+
+ul.job_listings li.job_listing div.date,
+ul.job_listings li.job_listing div.location{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #A4A7AE;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .date-posted,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .salary,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .location{
+    position: relative;
+    padding-left: 23px;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .date-posted::before,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .salary:before,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .location::before{
+    content: '';
+    background: url(../../2022/12/map-pin.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .salary:before{
+    background: url(../../2022/12/banknotes.svg);
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .meta .date-posted::before{
+    background: url(../../2022/12/clock.svg);
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .application .application_button, 
+.job-manager-application-wrapper .application .application_button{
+    border: 2px solid #43B97F;
+    border-radius: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #43B97F;
+    padding:12px 32px;
+}
+
+.elementor-159 .elementor-element.elementor-element-e3ca8af .application .application_button:hover, 
+.job-manager-application-wrapper .application .application_button:hover,
+.elementor-159 .elementor-element.elementor-element-e3ca8af .application .application_button:focus, 
+.job-manager-application-wrapper .application .application_button:focus{
+    background-color:#43B97F;
+    color:#fff;
+}
+
+ .tags{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+ .tags a{
+    flex:0 0 auto;
+    padding: 8px 24px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    background-color: #EEEFF0;
+    border-radius: 100px;
+    color: #192033;
+    text-decoration: none;
+}/* End custom CSS */

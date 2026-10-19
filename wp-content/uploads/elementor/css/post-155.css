@@ -1,0 +1,39 @@
+.elementor-155 .elementor-element.elementor-element-887e5e5{padding:0100px 0px 100px 0px;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );line-height:var( --e-global-typography-primary-line-height );color:var( --e-global-color-primary );}.elementor-155 .elementor-element.elementor-element-57e8097 > .elementor-widget-container{margin:0px 0px 032px 0px;}.elementor-155 .elementor-element.elementor-element-57e8097 .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );line-height:var( --e-global-typography-primary-line-height );}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-155 .elementor-element.elementor-element-cfdebbf{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );color:var( --e-global-color-text );}:root{--page-title-display:none;}@media(max-width:1024px){.elementor-155 .elementor-element.elementor-element-887e5e5{padding:040px 0px 40px 0px;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-155 .elementor-element.elementor-element-57e8097 .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}.elementor-155 .elementor-element.elementor-element-cfdebbf{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}}@media(max-width:767px){.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-155 .elementor-element.elementor-element-57e8097 .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}.elementor-155 .elementor-element.elementor-element-cfdebbf{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );}}/* Start custom CSS for text-editor, class: .elementor-element-cfdebbf */.elementor-155 .elementor-element.elementor-element-cfdebbf [type=submit]:not(:disabled){
+    border-color:#43B97F;
+    border-radius:100px;
+    color: #43B97F;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+padding: 12px 32px
+}
+
+.elementor-155 .elementor-element.elementor-element-cfdebbf [type=submit]:not(:disabled):hover,
+.elementor-155 .elementor-element.elementor-element-cfdebbf [type=submit]:not(:disabled):focus{
+    background-color: #43B97F;
+    color: #fff;
+}
+
+.elementor-155 .elementor-element.elementor-element-cfdebbf h2{
+    color: #192033;
+}
+
+.elementor-155 .elementor-element.elementor-element-cfdebbf a,
+.elementor-155 .elementor-element.elementor-element-cfdebbf .job-dashboard-actions li a{
+    color:#43B97F;; 
+}
+.elementor-155 .elementor-element.elementor-element-cfdebbf p{
+    margin-bottom: 1rem;
+}
+
+.elementor-155 .elementor-element.elementor-element-cfdebbf .job_title a{
+    color: #192033;
+}
+
+@media all and (max-width:767px){
+    .elementor-155 .elementor-element.elementor-element-cfdebbf #job-manager-job-dashboard{
+        overflow:scroll;
+    }
+}/* End custom CSS */
