@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.happylowcost.com/?feed=xmlsitemap86
