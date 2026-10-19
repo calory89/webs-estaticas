@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-admin/
+
+Sitemap: https://www.superguiaviajera.com/sitemap.xml
+Sitemap: https://www.superguiaviajera.com/sitemap.rss
+
+Sitemap: https://www.superguiaviajera.com/sitemap_index.xml
