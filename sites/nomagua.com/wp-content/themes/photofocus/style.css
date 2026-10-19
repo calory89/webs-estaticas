@@ -1532,10 +1532,10 @@ body .section + .section.has-background-image {
   background-position: center; }
 
 #featured-video-section {
-  background-image: url("https://www.nomagua.com/wp-content/themes/photofocus/assets/images/video-bg.jpg"); }
+  background-image: url("/wp-content/themes/photofocus/assets/images/video-bg.jpg"); }
 
 #contact-section .main-image {
-  background-image: url("https://www.nomagua.com/wp-content/themes/photofocus/assets/images/contact-map.jpg"); }
+  background-image: url("/wp-content/themes/photofocus/assets/images/contact-map.jpg"); }
 
 /*--------------------------------------------------------------
 ## buttons 5.1
