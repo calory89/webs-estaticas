@@ -1,0 +1,65 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Onde o surf está clássico nas próximas 72 horas | SurfRanking</title>
+<meta name="description" content="Lista ao vivo dos melhores picos de surf do mundo que ficam bons nos próximos três dias: tamanho, período e vento da manhã em 1159 ondas de topo, atualizada duas vezes por dia.">
+<link rel="canonical" href="https://surfranking.com/pt/now.html"><link rel="alternate" hreflang="en" href="https://surfranking.com/now.html"><link rel="alternate" hreflang="es" href="https://surfranking.com/es/now.html"><link rel="alternate" hreflang="pt" href="https://surfranking.com/pt/now.html"><link rel="alternate" hreflang="fr" href="https://surfranking.com/fr/now.html"><link rel="alternate" hreflang="x-default" href="https://surfranking.com/now.html">
+<meta property="og:title" content="Onde o surf está clássico nas próximas 72 horas"><meta property="og:description" content="1159 das melhores ondas do mundo, analisadas duas vezes por dia. Tamanho, período e vento terral.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://surfranking.com/pt/now.html"><meta property="og:image" content="https://surfranking.com/og/now.jpg">
+<meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/icon-192.png"><link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="/seo.css">
+<style>
+.nowl{display:grid;gap:10px;margin:16px 0}
+.nowi{display:flex;gap:12px;align-items:center;border:1px solid #e3e8ee;border-radius:12px;padding:10px 12px;text-decoration:none;color:inherit;background:#fff}
+.nowi:hover{border-color:#0b7f8f}
+.nowi .r{font-weight:800;color:#8a97a5;min-width:28px;text-align:right}
+.nowi .n{font-weight:750;font-size:16px}.nowi .c{color:#5b6b7b;font-size:13px}
+.nowi .q{margin-left:auto;text-align:right;font-size:13px;white-space:nowrap}
+.nowi .q b{display:inline-block;background:#0e9f6e;color:#fff;border-radius:6px;padding:2px 7px;font-size:12px;margin-bottom:3px}
+.nowi .q b.g{background:#3fa34d}
+.filt{display:flex;gap:6px;flex-wrap:wrap}.filt button{border:1px solid #e3e8ee;background:#fff;border-radius:999px;padding:8px 13px;cursor:pointer;font-size:14px;min-height:40px}
+.filt button.on{background:#0b1a24;color:#fff;border-color:#0b1a24}
+.langs{font-size:13px;color:#5b6b7b}.langs a{color:inherit}
+@media(max-width:560px){.nowi .q{white-space:normal;max-width:42%}}
+@media(prefers-color-scheme:dark){.nowi{background:#111a22;border-color:#253240}.nowi .c{color:#9fb0c0}.filt button{background:#111a22;color:#dfe7ee;border-color:#253240}}
+</style></head><body>
+<header><div class="wrap top"><a class="logo" href="/pt/">SurfRanking</a><nav class="nav"><a class="btn g" href="/pt/">Ranking mundial</a><a class="btn" href="/pt/?view=now">Abrir na app</a></nav></div></header>
+<main class="wrap">
+<h1>Onde o surf está clássico nas próximas 72 horas</h1>
+<p class="sub" id="sub">1159 das melhores ondas do mundo, analisadas duas vezes por dia com a previsão marítima e de vento da Open-Meteo. Um pico entra quando a ondulação é sólida, o período longo e o vento da manhã fraco ou terral para a orientação dele.</p>
+<div class="filt" id="filt"><button class="on" data-d="">Próximos 3 dias</button><button data-d="0">Hoje</button><button data-d="1">Amanhã</button><button data-d="2">Depois de amanhã</button><button data-d="we">Este fim de semana</button><button data-share="1">↗ Partilhar esta lista</button></div>
+<div class="nowl" id="list"><p class="sub">A carregar a previsão…</p></div>
+<p class="sub">Previsão de modelo, não um relato: veja as condições locais antes de remar. Atualizado <span id="upd">duas vezes por dia</span>.</p>
+<p class="langs"><a href="/now.html">English</a> · <a href="/es/now.html">Español</a> · <a href="/pt/now.html">Português</a> · <a href="/fr/now.html">Français</a></p>
+</main>
+<footer class="wrap"><p>Previsão: modelos marítimos e meteorológicos da Open-Meteo. Ranking: SurfRanking, cinco anos de dados ERA5 mais a fama de cada pico entre surfistas.</p></footer>
+<script>
+(function(){
+var T={"firing": "Clássico", "good": "Bom", "today": "Hoje", "tomorrow": "Amanhã", "off": " · vento terral", "light": " · vento fraco", "none": "Nada clássico nesse dia na lista. Tente os próximos três dias.", "err": "Não foi possível carregar a previsão. Tente daqui a pouco.", "loc": "pt-PT", "ago": ["Atualizado há ", " min", " h"], "inw": " do mundo"},PRE="/pt";
+var U="https://ixkilrcelljcyrtwxwde.supabase.co/rest/v1/sr_epic_now?select=spot_id,name,slug,country,iso,rank,day,h,p,ws,rel,q,updated_at&q=gte.3.75&order=q.desc,rank.asc&limit=300",
+K="sb_publishable_lA4msmtP4iQStBucZ68NFg_jbFcwGRm",ROWS=[],D="";
+var DN=null;try{DN=new Intl.DisplayNames([T.loc.slice(0,2)],{type:"region"});}catch(e){}
+function cname(r){try{if(DN&&r.iso&&/^[A-Z]{2}$/.test(r.iso))return DN.of(r.iso)||r.country;}catch(e){}return r.country;}
+function flag(i){return i&&/^[A-Z]{2}$/.test(i)?String.fromCodePoint(0x1F1E6+i.charCodeAt(0)-65)+String.fromCodePoint(0x1F1E6+i.charCodeAt(1)-65):"";}
+function esc(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function off(d){var t=new Date(d+"T12:00:00"),n=new Date();n.setHours(12,0,0,0);return Math.round((t-n)/864e5);}
+function day(d){var k=off(d);return k<=0?T.today:k===1?T.tomorrow:new Date(d+"T12:00:00").toLocaleDateString(T.loc,{weekday:"long"});}
+function wkend(d){var w=new Date(d+"T12:00:00").getDay();return w===0||w===6||w===5;}
+function draw(){
+  var rows=ROWS.filter(function(r){return D===""||(D==="we"?wkend(r.day):String(Math.max(0,off(r.day)))===D);});
+  var seen={};rows.forEach(function(r,k){var z=r.country;seen[z]=(seen[z]||0)+1;r._k=r.q-0.25*(seen[z]-1)-k*0.0001;});
+  rows.sort(function(a,b){return b._k-a._k;});
+  var nf=new Intl.NumberFormat(T.loc,{maximumFractionDigits:1,minimumFractionDigits:1});
+  document.getElementById("list").innerHTML=rows.length?rows.slice(0,100).map(function(r,i){
+    var fire=r.q>=4.75;
+    return '<a class="nowi" href="'+PRE+'/?spot='+esc(r.slug)+'"><span class="r">'+(i+1)+'</span><span><span class="n">'+esc(r.name)+'</span><br><span class="c">'+flag(r.iso)+' '+esc(cname(r))+' · #'+r.rank+T.inw+'</span></span>'+
+      '<span class="q"><b class="'+(fire?'':'g')+'">'+(fire?T.firing:T.good)+'</b><br>'+esc(day(r.day))+' · '+nf.format(+r.h)+' m '+Math.round(r.p)+' s'+(r.rel==="off"?T.off:r.rel==="light"?T.light:'')+'</span></a>';}).join("")
+    :'<p class="sub">'+T.none+'</p>';
+}
+fetch(U,{headers:{apikey:K,Authorization:"Bearer "+K}}).then(function(r){return r.json();}).then(function(j){ROWS=j||[];
+  if(ROWS.length){var u=ROWS.reduce(function(a,r){return r.updated_at>a?r.updated_at:a;},"");var m=Math.max(1,Math.round((Date.now()-new Date(u))/60000));
+    document.getElementById("upd").textContent=T.ago[0]+(m<90?m+T.ago[1]:Math.round(m/60)+T.ago[2]);}
+  draw();}).catch(function(){document.getElementById("list").innerHTML='<p class="sub">'+T.err+'</p>';});
+document.getElementById("filt").onclick=function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.hasAttribute("data-share")){var d={title:document.title,url:location.href};if(navigator.share)navigator.share(d).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(location.href);return;}
+  D=b.getAttribute("data-d");
+  Array.prototype.forEach.call(this.querySelectorAll("[data-d]"),function(x){x.classList.toggle("on",x===b);});draw();};
+})();
+</script></body></html>

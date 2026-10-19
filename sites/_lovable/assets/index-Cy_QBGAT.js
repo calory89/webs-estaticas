@@ -1,0 +1,585 @@
+import{r as I,j as S}from"./index-DUOiKn19.js";const L=`
+<div class="ann">
+  <span><b>Applications open</b> · awaiting Founder #001</span>
+  <span class="cnt">— / 320 confirmed</span>
+  <span id="cd">—</span>
+  <a href="#list">Apply for admission</a>
+</div>
+
+<nav class="nav" id="nav">
+  <a class="brand" href="#top">Longevity Island<small>Karimunjawa</small></a>
+  <div class="nav-links">
+    <a href="#letter">The letter</a>
+    <a href="#place">The island</a>
+    <a href="#sanctuary">The sanctuary</a>
+    <a href="#residences">Residences</a>
+    <a href="#availability">Availability</a>
+    <a href="#money">Your money</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="#list" class="btn btn-primary">Join the Founder List</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="tagline">Not a clinic. Not a resort. · Karimunjawa · Java Sea · Indonesia</p>
+    <h1>A private longevity sanctuary for <em>320 founders.</em></h1>
+    <p class="sub">A numbered residence, a 70-year transferable right of use (renewable), and founder access to an <b>evidence-led wellness environment</b> designed around healthspan, community and the sea.</p>
+    <p class="from">Founder entry from <b>$95,000</b> · Phase 1 now open by private application</p>
+    <div class="hero-cta">
+      <a href="#list" class="btn btn-light">Join the Founder List</a>
+      <a href="#place" class="btn btn-light" style="border-color:rgba(233,226,214,.3)">Discover the island</a>
+    </div>
+    <p class="hero-note">Priority access before the public launch · founder places strictly limited · refundable $1,000 reservation, held through a regulated escrow provider (onboarding in progress).</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="trust">
+    <span>Protected marine reserve</span>
+    <span>Land <b>acquired &amp; titled</b></span>
+    <span>Residences by <b>Amoda</b></span>
+    <span>Reservations via regulated escrow <b>(onboarding)</b></span>
+    <span>Evidence-led longevity design</span>
+  </div>
+</div>
+
+<section class="clarity">
+  <div class="wrap">
+    <p class="tag reveal">In one sentence</p>
+    <p class="reveal">You are applying for admission to a <b>capped private founder community</b> — with a <b>transferable 70-year right of use (renewable)</b> attached to a numbered residence, plus <b>founder access to the shared longevity sanctuary</b> under the Charter terms.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="statement reveal">A protected marine reserve in the Java Sea. The science of longevity meeting the architecture of stillness. And, in time, three hundred and twenty people quietly choosing to <em>age well, together.</em></p>
+  </div>
+</section>
+
+<section class="alt" id="letter">
+  <div class="wrap narrow">
+    <p class="eyebrow reveal" style="text-align:center">A letter</p>
+    <div class="letter reveal">
+      <p>We did not set out to build a resort. We set out to build a way of arriving home, three hundred and twenty times over.</p>
+      <p>Six years ago I started looking for the kind of place I wanted to grow older in — not a holiday home, not an investment. I did not find it. Bali had become a city, the Maldives a service, Tulum a brand. Every refuge had been bought, sold and resold until the original idea was gone.</p>
+      <p>So we are building it. Not as a resort first, not as a fund — for three hundred and twenty people who care how they will spend the second half of their lives, and who are willing to commit before a single stone is laid.</p>
+      <p>The homes will be small. The shared spaces will be vast. Your island team will know your name, and your number, once chosen, stays with you for the term of your founder membership.</p>
+      <p>If this sounds like the place you've been looking for, the first step is a thirty-minute call with our founding team. After that, a $1,000 refundable reservation, held in escrow until the 320th founder is confirmed alongside you. Our masterplan is capped at 320 residences — that, more than anything, is the promise.</p>
+      <div class="sig">Equinox Investment Group, LLC<small>Developer · United States</small></div>
+    </div>
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="mailto:hello@longevityisland.org?subject=30-min%20conversation" class="btn btn-outline">Schedule a 30-min call with our team</a>
+    </div>
+  </div>
+</section>
+
+<section id="land">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Already secured · the place</p>
+      <h2>The land has already been secured — on the island they call the Maldives of Indonesia.</h2>
+      <p>350,000 sq ft of oceanfront land on Karimunjawa has already been acquired and titled. We are not searching for a site or speculating on a future land deal. Title documents are available for review during the application process.</p>
+      <p>Karimunjawa is an archipelago of 27 islands suspended between Java and Borneo, ringed by one of the largest coral reefs in Indonesia and known locally as <em>"the Maldives of Indonesia."</em> Designated a national marine park in 2001 and recognised as a <b>UNESCO Biosphere Reserve</b>, it is one of the last places in Southeast Asia where development is strictly capped — by zoning and by topography. For more than a century, fewer than 9,000 people have lived here, scattered across five inhabited islands. The rest is forest, mangrove, and water so clear you can see your shadow on the sand at twenty metres.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="n">350,000 sq ft</div><div class="l">Oceanfront land acquired</div></div>
+      <div class="stat"><div class="n">27</div><div class="l">Islands</div></div>
+      <div class="stat"><div class="n">&lt;9,000</div><div class="l">Inhabitants</div></div>
+      <div class="stat"><div class="n">110,000 ha</div><div class="l">Biosphere reserve</div></div>
+    </div>
+    <div class="notice reveal" style="margin-top:30px">Construction is intended to begin once the 320th founder is confirmed and the required approvals are in hand.</div>
+    <div class="gallery reveal">
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/edbd66f5-13d9-41d3-89b4-15857c76d998/shutterstock_789493708.jpg') center/cover"><span>White-sand beach</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/aa305a1c-7065-4690-bb4b-bbd9e2d44078/shutterstock_111316754_1.jpg') center/cover"><span>Turquoise lagoon</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/e93f5e84-3383-48b5-ab43-6409c9eee90d/shutterstock_25507681_1.jpg') center/cover"><span>Living coral reef</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/055735a7-1432-4239-adf8-f0cad2a6b551/shutterstock_1713330208.jpg') center/cover"><span>Jungle &amp; coast</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/a6d78074-8cd9-47d5-b019-d1329baf484c/shutterstock_1023871063_3.jpg') center/cover"><span>Sunset over the Java Sea</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/7d429cd1-70d9-416b-8a53-32dbd171550c/shutterstock_1053080564_3.jpg') center/cover"><span>Reef from the cliffs</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/8b801eb1-b58e-475a-9c6b-aa8f04c000ba/shutterstock_1812795211_3.jpg') center/cover"><span>Boats at anchor</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/c3381574-f8b2-4d11-8cb0-d38ec13bd7dd/shutterstock_789496621_3.jpg') center/cover"><span>Path to the sea</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/a551c89c-d1e9-4f52-b8a0-1c5173f291bb/shutterstock_1713330232.jpg') center/cover"><span>The village harbour</span></div>
+      <div class="gphoto" style="background:url('/__l5e/assets-v1/d1adf945-8455-4c57-9af4-a9238424d0d1/shutterstock_1713330136_1.jpg') center/cover"><span>Karimunjawa airport (KWB)</span></div>
+    </div>
+    <p class="pull reveal">"Every other off-plan project asks you to trust that the land will be found. Ours has already been acquired and titled — on what locals call the Maldives of Indonesia."</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Why here</p>
+      <h2>A community designed around what actually adds years.</h2>
+      <p>The regions where people most commonly live past 100 — the "Blue Zones" — tend to share five conditions: clean air, slow daily movement, real food, deep social bonds, and an unhurried sense of purpose. Karimunjawa, by accident of geography, offers the setting for all five.</p>
+      <p>We didn't build a resort here. We designed a community around what research associates with a longer healthspan: time in nature, time in water, time with people, and time without screens. Every home, every common space, every meal is sequenced around that one idea.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="n">7 µg/m³</div><div class="l">Air quality (PM2.5)</div></div>
+      <div class="stat"><div class="n">27–29°C</div><div class="l">Sea, year-round</div></div>
+      <div class="stat"><div class="n">600 m</div><div class="l">Longest "commute"</div></div>
+      <div class="stat"><div class="n">320</div><div class="l">Residences (masterplan cap)</div></div>
+    </div>
+    <p class="fine">The Blue Zones association between lifestyle and longevity is observational. We make no guarantee of individual outcomes — we measure them.</p>
+  </div>
+</section>
+
+<section class="alt" id="home">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">A quiet inheritance</p>
+      <h2>Designed by Amoda. Built to disappear into the landscape.</h2>
+      <p>A 25 m² eco prefab — bedroom and full bathroom — wrapped in cream panels and floor-to-ceiling sliding glass that opens onto a private deck. Your home is 25 m². The shared sanctuary is vast. The luxury is what you step out into.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="n">25 m²</div><div class="l">Efficient footprint</div></div>
+      <div class="stat"><div class="n">1 + 1</div><div class="l">Bed · bath</div></div>
+      <div class="stat"><div class="n">70 yr</div><div class="l">Right of use (renewable)</div></div>
+      <div class="stat"><div class="n">#1–320</div><div class="l">Numbered for life</div></div>
+    </div>
+    <p style="margin-top:26px;font-size:.9rem;color:var(--ink-soft)">Homes by Amoda · PT Ada Untuk Dunia — Indonesia's premium modular studio.</p>
+  </div>
+</section>
+
+<section id="sanctuary">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Your shared playground · the real luxury</p>
+      <h2>Twelve oceanfront spaces. All yours.</h2>
+      <p>The habits associated with longer healthspan rarely fit inside a private apartment — they live in a shared environment. Every facility opens to the sea, the jungle, or the sky.</p>
+    </div>
+    <div class="fac reveal">
+      <div class="fcell"><div class="k">Sunset</div><h4>The Beach Club</h4></div>
+      <div class="fcell"><div class="k">Strength + sea</div><h4>Oceanfront Gym</h4></div>
+      <div class="fcell"><div class="k">Heat</div><h4>Finnish &amp; Infrared Sauna</h4></div>
+      <div class="fcell"><div class="k">3°C</div><h4>Cold Plunge &amp; Cryo</h4></div>
+      <div class="fcell"><div class="k">Sunrise</div><h4>Yoga Shala</h4></div>
+      <div class="fcell"><div class="k">Depth</div><h4>Freediving Pool</h4></div>
+      <div class="fcell"><div class="k">Oxygen</div><h4>Hyperbaric Chamber</h4></div>
+      <div class="fcell"><div class="k">Vitality</div><h4>IV Drip Lounge &amp; Red Light</h4></div>
+      <div class="fcell"><div class="k">Communal</div><h4>Long-Table Dining</h4></div>
+      <div class="fcell"><div class="k">Focus</div><h4>Sea-View Coworking</h4></div>
+      <div class="fcell"><div class="k">Silence</div><h4>Meditation Dome</h4></div>
+      <div class="fcell"><div class="k">Under stars</div><h4>Beach Cinema</h4></div>
+    </div>
+    <p class="fine">AI-generated reference renders. Final builds based on Amoda design and the on-site landscape.</p>
+    <div style="margin-top:32px"><a href="#list" class="btn btn-outline">Join the Founder List</a></div>
+  </div>
+</section>
+
+<section class="alt" id="details">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">The thousand small things</p>
+      <h2>What you'll never have to ask for.</h2>
+      <p>Twelve quiet, considered details — the kind noticed the second time you arrive, and remembered for the rest of your life.</p>
+    </div>
+    <div class="details reveal">
+      <div class="det"><div class="rn">i.</div><h4>Your numbered bicycle</h4><p>A hand-built bamboo bicycle with a leather saddle and a small bronze plate engraved with your founder number. Lives at your door.</p></div>
+      <div class="det"><div class="rn">ii.</div><h4>Arrival without a suitcase</h4><p>Your coffee, your books, your linens — already in your home the day you arrive. Preferences updated once a year, by a single call.</p></div>
+      <div class="det"><div class="rn">iii.</div><h4>Fresh to your door</h4><p>Island-grown produce, just-picked herbs and warm bread from the kitchen, left at your door each morning.</p></div>
+      <div class="det"><div class="rn">iv.</div><h4>A library curated for you</h4><p>A literary curator interviews you, then sends books across the year — each with a note on why this one, why now.</p></div>
+      <div class="det"><div class="rn">v.</div><h4>One concierge, for years</h4><p>Not a team. One named person who knows your allergies, your grandchildren's names, the coffee you take.</p></div>
+      <div class="det"><div class="rn">vi.</div><h4>The Chef's Table</h4><p>An intimate eight-seat dinner each quarter, the other seven founders chosen by shared interest. A friend made, slowly.</p></div>
+    </div>
+    <p class="pull reveal">"Luxury is not what they add to the room. It is what you never have to think about again."</p>
+  </div>
+</section>
+
+<section class="dark" id="positioning">
+  <div class="wrap narrow" style="text-align:center">
+    <p class="eyebrow reveal" style="text-align:center">Not a clinic. Not a resort.</p>
+    <h2 class="reveal" style="font-size:clamp(1.9rem,5vw,2.9rem)">A private residential wellness sanctuary.</h2>
+    <p class="reveal" style="margin:22px auto 0">Longevity Island is a place where annual testing, recovery spaces, movement, nutrition, nature and community are designed to work together. The programme is preventive and wellness-oriented, supported by clinical advisors where appropriate — and never a substitute for medical diagnosis, treatment or emergency care.</p>
+  </div>
+</section>
+
+<section id="membership">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Included from day one</p>
+      <h2>The longevity programme that lives around you.</h2>
+      <p>One monthly fee covers every facility, your annual health audit, and the protocol the clinical team designs for you.</p>
+    </div>
+    <div class="mlist reveal">
+      <div class="mrow"><span>Unlimited sauna · cold plunge · HBOT · cryo · float · red-light · PEMF</span><span>Included</span></div>
+      <div class="mrow"><span>Unlimited classes — yoga · breathwork · freediving · meditation</span><span>Included</span></div>
+      <div class="mrow"><span>Annual biological-age test &amp; health audit, delivered through licensed third-party providers where required</span><span>1 / year</span></div>
+      <div class="mrow"><span>Personalised longevity protocol + review with the longevity physician or clinical advisor</span><span>1 / year</span></div>
+      <div class="mrow"><span>The 7-day reset journey</span><span>1 / year</span></div>
+      <div class="mrow"><span>Concierge support + property maintenance</span><span>Included</span></div>
+      <div class="mrow"><span>Global longevity tribe (app + meetups)</span><span>Year-round</span></div>
+      <div class="mrow"><span>1-on-1 sessions — trainer · dietitian · psychologist</span><span>Member rates</span></div>
+      <div class="mrow"><span>Chef-prepared longevity meals when on-island</span><span>Member rates</span></div>
+    </div>
+    <div class="price-tag reveal">$165 / month <small>Founder membership · $1,980 per year</small></div>
+    <p class="reveal" style="margin-top:14px;max-width:62ch">Core facilities, annual testing and group programming are included. Private sessions, meals and selected clinical services are available at member rates.</p>
+    <p class="fine reveal">Access is attached to the founder membership and right-of-use term, subject to Charter terms and payment of the monthly membership fee. The programme is wellness-oriented and preventive in nature; it is not a substitute for medical diagnosis, treatment or emergency care.</p>
+  </div>
+</section>
+
+<section class="alt" id="freedom">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Your residence, your call</p>
+      <h2>Use it. Share it. Transfer it.</h2>
+      <p>Full freedom — fully managed only when you ask for it.</p>
+    </div>
+    <div class="cols3 reveal">
+      <div class="c"><div class="i">i</div><h4>Use</h4><p>Come whenever you want, for as long as you want. No booking windows, no minimum stays, no rules. It's your home.</p></div>
+      <div class="c"><div class="i">ii</div><h4>Share</h4><p>Choose how many weeks each year you let us manage — 1 to 60. We handle guest vetting, programming and cleaning. Income paid monthly.</p></div>
+      <div class="c"><div class="i">iii</div><h4>Transfer</h4><p>Your right of use is designed to be transferable, subject to the Charter terms and local legal documentation — to pass on or to family.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="availability">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Limited founder release</p>
+      <h2>Only 20 residences in Phase 1. The masterplan is capped at 320.</h2>
+      <p>The island is released in measured phases. As each phase sells, the next opens at a higher price — so entering early is the difference in price. Our masterplan is capped at 320 residences, based on the parcel, zoning and low-density design; no further founder residences are planned.</p>
+    </div>
+    <div class="phases reveal">
+      <div class="prow now">
+        <div class="ph">Phase 1 <small>Founders · open now</small></div>
+        <div class="pp">$95,000 <small>from</small></div>
+        <div class="pa"><b>13 of 20</b> priority places allocated · 7 available<div class="availbar"><i style="width:65%"></i></div></div>
+        <div class="pd">Lowest scheduled release price</div>
+      </div>
+      <div class="prow">
+        <div class="ph">Phase 2 <small>Opens when Phase 1 sells</small></div>
+        <div class="pp">$115,000 <small>from</small></div>
+        <div class="pa">Released on sell-out of Phase 1</div>
+        <div class="pd">+$20,000 (+21%)</div>
+      </div>
+      <div class="prow">
+        <div class="ph">Phase 3 <small>Final release</small></div>
+        <div class="pp">$145,000 <small>from</small></div>
+        <div class="pa">Final residences</div>
+        <div class="pd">+$50,000 (+53%)</div>
+      </div>
+    </div>
+    <div style="margin-top:36px"><a href="#list" class="btn btn-outline">Secure Phase 1 pricing — join the Founder List</a></div>
+  </div>
+</section>
+
+<section id="residences">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">The residences · simply put</p>
+      <h2>One residence. One key to the sanctuary.</h2>
+      <p>The residence is compact and serene by design — your private base. The value is in what it opens. Every residence includes full access to the longevity sanctuary under the Charter terms.</p>
+    </div>
+    <div class="types reveal" style="grid-template-columns:1fr;max-width:560px">
+      <div class="type">
+        <div class="plan">Floor plan · Reserve Studio · 25 m² · Amoda module</div>
+        <div class="body">
+          <h4>The Reserve Residence</h4>
+          <div class="m">25 m² · bedroom · full bath · private deck</div>
+          <div class="price">from $95,000</div>
+          <ul>
+            <li>Unlimited lifetime access to all twelve facilities</li>
+            <li>Annual biological-age test &amp; health audit, via licensed third-party providers where required</li>
+            <li>Personalised longevity protocol &amp; annual clinical review</li>
+            <li>70-year right of use, renewable and transferable</li>
+            <li>A founder number, #1–#320, for life</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="fine">Sizes and prices are indicative for the founder phase. Exact terms are set out in the documents you receive as a founder.</p>
+  </div>
+</section>
+
+<section class="dark" id="healthspan">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">What you gain</p>
+      <h2>Designed for a longer healthspan.</h2>
+      <p>The aim is a longer healthspan — measured in your biology, year after year, alongside the founders around you. We don't promise a number. We measure what we can, and publish it.</p>
+    </div>
+    <div class="chartwrap reveal">
+      <svg viewBox="0 0 720 320" width="100%" role="img" aria-label="Schematic healthspan curve">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c2a877" stop-opacity=".25"/><stop offset="100%" stop-color="#c2a877" stop-opacity="0"/></linearGradient></defs>
+        <line x1="60" y1="20" x2="60" y2="270" stroke="rgba(255,255,255,.18)" />
+        <line x1="60" y1="270" x2="690" y2="270" stroke="rgba(255,255,255,.18)" />
+        <text x="60" y="292" font-size="12" fill="rgba(233,226,214,.7)" text-anchor="middle" font-family="Jost">50</text>
+        <text x="200" y="292" font-size="12" fill="rgba(233,226,214,.7)" text-anchor="middle" font-family="Jost">65</text>
+        <text x="340" y="292" font-size="12" fill="rgba(233,226,214,.7)" text-anchor="middle" font-family="Jost">75</text>
+        <text x="480" y="292" font-size="12" fill="rgba(233,226,214,.7)" text-anchor="middle" font-family="Jost">85</text>
+        <text x="620" y="292" font-size="12" fill="rgba(233,226,214,.7)" text-anchor="middle" font-family="Jost">95</text>
+        <text x="34" y="145" font-size="11" fill="#c2a877" text-anchor="middle" font-family="Jost" transform="rotate(-90 34 145)">HEALTHSPAN</text>
+        <path d="M60,70 C150,72 180,80 200,95 C250,135 320,220 480,250 C560,262 640,266 690,268" fill="none" stroke="rgba(233,226,214,.55)" stroke-width="2.5" stroke-dasharray="6 5"/>
+        <path d="M60,70 C200,68 320,72 400,86 C500,104 600,150 690,210" fill="none" stroke="#c2a877" stroke-width="3"/>
+        <path d="M60,70 C200,68 320,72 400,86 C500,104 600,150 690,210 L690,270 L60,270 Z" fill="url(#g1)"/>
+        <text x="206" y="120" font-size="12" fill="rgba(233,226,214,.7)" font-family="Jost">earlier decline</text>
+        <text x="452" y="128" font-size="12" fill="#c2a877" font-family="Jost">supported healthspan</text>
+      </svg>
+      <div class="legend">
+        <span style="font-style:italic;color:rgba(233,226,214,.6)">Illustrative healthspan curve</span>
+        <span><i style="background:rgba(233,226,214,.55)"></i>Typical trajectory</span>
+        <span><i style="background:#c2a877"></i>Supported environment</span>
+      </div>
+    </div>
+    <p class="fine">Schematic illustration only, not founder data. A simplified depiction of trends discussed in the healthy-ageing literature; not a prediction of your results. Your own bio-age report measures your trajectory privately, every year.</p>
+  </div>
+</section>
+
+<section id="documents">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Documents available for founder review</p>
+      <h2>Emotion is the reason. Documents are the proof.</h2>
+      <p>Serious applicants are shown the paperwork. The following are made available for review during the application process and on your call.</p>
+    </div>
+    <div class="fac reveal" style="margin-top:40px">
+      <div class="fcell" style="min-height:auto"><div class="k">01</div><h4 style="font-size:1.2rem">Land title documentation</h4></div>
+      <div class="fcell" style="min-height:auto"><div class="k">02</div><h4 style="font-size:1.2rem">Parcel map</h4></div>
+      <div class="fcell" style="min-height:auto"><div class="k">03</div><h4 style="font-size:1.2rem">Amoda partnership confirmation</h4></div>
+      <div class="fcell" style="min-height:auto"><div class="k">04</div><h4 style="font-size:1.2rem">Draft Charter</h4></div>
+      <div class="fcell" style="min-height:auto"><div class="k">05</div><h4 style="font-size:1.2rem">Draft right-of-use structure</h4></div>
+      <div class="fcell" style="min-height:auto"><div class="k">06</div><h4 style="font-size:1.2rem">Escrow process (once onboarded)</h4></div>
+    </div>
+    <p class="fine">Some documents are in draft form and evolving; we share them as they stand, candidly, rather than waiting for everything to be final.</p>
+  </div>
+</section>
+
+<section class="dark" id="money">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">The promise that makes the rest possible</p>
+      <h2>You pay nothing until the 320th founder is in.</h2>
+      <p>No construction begins, no balance is ever drawn, and no dollar of yours leaves escrow — until 320 people have made the same commitment you have. If we don't reach 320, every cent comes back to you, automatically.</p>
+    </div>
+    <div class="cards c4 reveal">
+      <div class="pc" style="background:var(--stone-2);border-color:rgba(255,255,255,.12)"><div class="role">01 · Independent escrow</div><p style="color:rgba(233,226,214,.82)">Reservations are held through an independent, FCA-regulated escrow provider, in a segregated account — never on our balance sheet. Provider onboarding is in progress.</p></div>
+      <div class="pc" style="background:var(--stone-2);border-color:rgba(255,255,255,.12)"><div class="role">02 · All-or-nothing</div><p style="color:rgba(233,226,214,.82)">Construction starts only when 320 founders are in. Until then, your money stays where you can recall it.</p></div>
+      <div class="pc" style="background:var(--stone-2);border-color:rgba(255,255,255,.12)"><div class="role">03 · Automatic refund</div><p style="color:rgba(233,226,214,.82)">If the campaign ends below 320, escrow refunds you automatically. No claims, no forms, no waiting.</p></div>
+      <div class="pc" style="background:var(--stone-2);border-color:rgba(255,255,255,.12)"><div class="role">04 · Built before paid</div><p style="color:rgba(233,226,214,.82)">The balance is released only against verified milestones — photo, video, third-party inspection.</p></div>
+    </div>
+    <p class="pull reveal">"You never pay for a promise. You pay for what 319 other people are willing to commit alongside you."</p>
+    <p class="fine" style="text-align:center;max-width:62ch;margin-left:auto;margin-right:auto">Refundable reservations held through a regulated escrow provider, subject to final provider onboarding and agreement terms. Card processing by Stripe (PCI-DSS Level 1).</p>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="lede reveal"><p class="eyebrow">From reservation to keys</p><h2>The path from today to the day you arrive.</h2></div>
+    <div class="timeline reveal">
+      <div class="tnode"><div class="when">Now · 2026</div><h4>Apply &amp; reserve</h4><p>$1,000 enters independent escrow. We hold your founder number while we curate the 320.</p></div>
+      <div class="tnode"><div class="when">Target · 2027</div><h4>The 320th confirms · construction begins</h4><p>The land is already secured. Construction is intended to begin once the 320th founder is confirmed and the required approvals are in hand.</p></div>
+      <div class="tnode"><div class="when">Target · 2028</div><h4>First founders arrive</h4><p>Your home, the gardens, the twelve common spaces — ready. You arrive, you sign, you sleep in your bed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="partners">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">The people we build with</p>
+      <h2>The best in the world at each piece of the island.</h2>
+      <p>We partner with respected names in modular architecture, equipment, escrow, biological-age science and wearables. We show only what is confirmed — and label honestly what is still in conversation.</p>
+    </div>
+    <div class="cards c3 reveal">
+      <div class="pc"><div class="role">The homes</div><h4>Amoda</h4><p>PT Ada Untuk Dunia · Indonesia. Low-impact modular design, certified for tropical conditions.</p><span class="badge">✓ Signed</span></div>
+      <div class="pc"><div class="role">Holding your deposit</div><h4>Shieldpay</h4><p>Intended FCA-regulated escrow provider. Segregated account, never on our balance sheet.</p><span class="badge talk">Onboarding</span></div>
+      <div class="pc"><div class="role">Card processing</div><h4>Stripe</h4><p>PCI-DSS Level 1.</p><span class="badge talk">Onboarding</span></div>
+      <div class="pc"><div class="role">Gym equipment</div><h4>Technogym</h4><p>Wellness equipment partner.</p><span class="badge talk">In conversation</span></div>
+      <div class="pc"><div class="role">Founder wearable</div><h4>WHOOP</h4><p>HRV · sleep · recovery.</p><span class="badge talk">In conversation</span></div>
+      <div class="pc"><div class="role">Sleep &amp; readiness</div><h4>Oura</h4><p>Alternative wearable.</p><span class="badge talk">In conversation</span></div>
+    </div>
+    <p class="fine">Partners marked "in conversation" or "onboarding" are not yet contracted; each will be confirmed here only once agreements are signed.</p>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">The people behind it</p>
+      <h2>The team putting their name to this.</h2>
+      <p>A project of this scale lives or dies by the people who put their reputation behind it. We show only what is confirmed; the rest is named the day applications open.</p>
+    </div>
+    <div class="cards c4 reveal">
+      <div class="pc"><div class="role">Developer</div><h4>Equinox Investment Group, LLC</h4><p>A US-based investment group behind Longevity Island — responsible for the land acquisition, the structure and the delivery of the project.</p><span class="badge">United States</span></div>
+      <div class="pc"><div class="role">Medical advisor · longevity</div><h4>To be announced</h4><p>The longevity physician who will sign the medical advisory. Named publicly the day applications open.</p><span class="badge talk">Joining</span></div>
+      <div class="pc"><div class="role">Design &amp; architecture</div><h4>Amoda</h4><p>PT Ada Untuk Dunia — our confirmed design and modular-build partner, with a track record in low-impact tropical builds.</p><span class="badge">✓ Signed</span></div>
+      <div class="pc"><div class="role">On-island operations</div><h4>To be announced</h4><p>A hospitality leader of the Aman, Six Senses or Soneva calibre — the person guests meet on day one.</p><span class="badge talk">Joining</span></div>
+    </div>
+    <p class="fine">The names above will be public the day applications open. Until then, every founder gets to meet them on the call.</p>
+  </div>
+</section>
+
+<section class="alt" id="admission">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">You don't buy in. You're admitted.</p>
+      <h2>From the day you apply, you shape the island.</h2>
+      <p>This is not only a property purchase — it is admission to a curated community of 320 people who will live, age and build something together. We curate. And once you're in, the decisions that shape the island are yours to vote on.</p>
+    </div>
+    <div class="cards reveal">
+      <div class="pc"><div class="role">i · Apply</div><h4>Submit your application</h4><p>A short form and a 30-minute call. We look for fit, not wealth: people who'll show up and care about ageing well.</p></div>
+      <div class="pc"><div class="role">ii · Curate</div><h4>~1 in 3 accepted</h4><p>320 founders, 47+ nationalities. A natural cap of ~10% from any one country and ~25% from any profession keeps it diverse.</p></div>
+      <div class="pc"><div class="role">iii · Shape</div><h4>Vote on what gets built</h4><p>Each quarter, a private ballot. The 13th common space, the chef in residence, the protocol focus — decided by the 320.</p></div>
+      <div class="pc"><div class="role">iv · Belong</div><h4>Your number, for life</h4><p>Once admitted, you're Founder #1–#320 — on every gathering, every ballot, every annual report.</p></div>
+    </div>
+
+    <p class="pull reveal">"You don't visit the island that gets built. You build the island you'll visit."</p>
+  </div>
+</section>
+
+<section id="proof">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">Proof, not promise</p>
+      <h2>We will publish the receipts, every January.</h2>
+      <p>Every founder receives a complimentary biological-age test on entry, and again every twelve months. Your individual results stay private; the community's anonymised aggregate is published each January in the Longevity Island Report. Nothing is invented; everything is measured.</p>
+    </div>
+    <div class="dash reveal">
+      <div class="drow"><span class="di">01</span><span class="dt">Your biological age on entry <small>Baseline · year 0</small></span><span class="dv">Measured</span></div>
+      <div class="drow"><span class="di">02</span><span class="dt">Re-test every 12 months <small>Year 1, year 2, year 3…</small></span><span class="dv">Tracked</span></div>
+      <div class="drow"><span class="di">03</span><span class="dt">Your private trajectory <small>Visible only to you</small></span><span class="dv">Private</span></div>
+      <div class="drow"><span class="di">04</span><span class="dt">Community aggregate, anonymised <small>Published every January</small></span><span class="dv">Public</span></div>
+      <div class="drow"><span class="di">05</span><span class="dt">Biomarker panel <small>HRV · sleep · VO₂max · CRP</small></span><span class="dv">~12 markers</span></div>
+      <div class="drow"><span class="di">06</span><span class="dt">Protocol adjustments <small>Reviewed yearly with your clinical advisor</small></span><span class="dv">1 / year</span></div>
+    </div>
+    <p class="pull reveal">"You don't compete with the others. You compete with the version of yourself who arrived a year ago."</p>
+  </div>
+</section>
+
+<section class="dark" id="admitted">
+  <div class="wrap">
+    <div class="lede reveal">
+      <p class="eyebrow">On the day you are admitted</p>
+      <h2>The day the call comes, your life quietly changes.</h2>
+      <p>The application is the easy part. What happens after you are admitted is the part you will remember for the rest of your life.</p>
+    </div>
+    <div class="ritual reveal">
+      <div class="rnode"><div class="rk">i.</div><h4>A personal founder call.</h4><p>Our founding team calls you personally — to tell you the number that is yours.</p></div>
+      <div class="rnode"><div class="rk">ii.</div><h4>A numbered founder certificate.</h4><p>A wax-sealed card naming you Founder, your number and the day. Kept framed.</p></div>
+      <div class="rnode"><div class="rk">iii.</div><h4>A bronze founder coin.</h4><p>Hand-cast in Yogyakarta — the island on one side, your number on the other.</p></div>
+      <div class="rnode"><div class="rk">iv.</div><h4>Private founder dinners.</h4><p>Intimate dinners in ten cities, where the first founders meet the first founders.</p></div>
+      <div class="rnode"><div class="rk">v.</div><h4>Your name on the founder wall.</h4><p>Carved into volcanic stone at the pavilion entrance, beside the other 319.</p></div>
+    </div>
+    <p class="pull reveal">"Most people will spend forty years telling friends about the holidays they took. A founder will spend forty years telling friends about the day they were chosen."</p>
+  </div>
+</section>
+
+<section class="alt" id="yield">
+  <div class="wrap narrow">
+    <p class="eyebrow reveal" style="text-align:center">For founders who choose to share</p>
+    <p class="reveal" style="text-align:center;font-family:var(--serif);font-size:clamp(1.3rem,3.4vw,1.7rem);color:var(--ink);max-width:34ch;margin:0 auto 26px">Some founders may choose to share their residence while away. Managed sharing is optional, variable, and never guaranteed.</p>
+    <details class="reveal" style="border:1px solid var(--line);background:var(--bg)">
+      <summary style="cursor:pointer;list-style:none;padding:18px 24px;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ocean-deep)">View illustrative sharing scenario →</summary>
+      <div style="padding:0 24px 28px">
+        <div class="notice">This is not sold as an investment product. The scenario below is shown only for founders who choose to share their residence while away.</div>
+        <div class="calc">
+          <div class="controls">
+            <label>Weeks shared per year <span class="val" id="weeksVal">30</span></label>
+            <input type="range" id="weeks" min="0" max="60" value="30" />
+            <label>Price per week, for two <span class="val" id="priceVal">$1,600</span></label>
+            <input type="range" id="price" min="500" max="4500" step="100" value="1600" />
+            <p class="fine">Assumptions: operating costs ≈ 45% of gross · management fee 25% of net-of-operating · HOA membership $1,980/yr.</p>
+          </div>
+          <div class="result">
+            <div class="rrow"><span>Gross rental income</span><span id="gross">$48,000</span></div>
+            <div class="rrow"><span>− Operating costs (45%)</span><span id="ops">−$21,600</span></div>
+            <div class="rrow"><span>− Management fee (25%)</span><span id="mgmt">−$6,600</span></div>
+            <div class="rrow"><span>− HOA membership</span><span id="hoa">−$1,980</span></div>
+            <div class="net"><small>Illustrative annual net</small><span id="net">$17,820</span></div>
+          </div>
+        </div>
+        <p class="fine">Illustrative estimate based on your inputs only. Not a forecast and not a guaranteed return. Real estate and rental income carry risk; occupancy and pricing vary.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="lede reveal"><p class="eyebrow">Location &amp; access</p><h2>How you arrive.</h2><p>Karimunjawa sits 90 km off the north coast of Java. Two ways in, both straightforward.</p></div>
+    <div class="access reveal">
+      <div class="arow"><span class="am">By air</span><span class="ad">30-minute flight from Semarang (SRG) to Karimunjawa (KWB), Wings Air.</span><span class="af">4 weekly</span></div>
+      <div class="arow"><span class="am">By sea</span><span class="ad">Express ferry from Jepara (TJP), about 2 hours.</span><span class="af">Daily</span></div>
+      <div class="arow"><span class="am">From Jakarta</span><span class="ad">Jakarta → Semarang (CGK–SRG, ~1h) → Karimunjawa.</span><span class="af">Same day</span></div>
+      <div class="arow"><span class="am">From Bali</span><span class="ad">Bali → Surabaya / Semarang → Karimunjawa.</span><span class="af">Same day</span></div>
+      <div class="arow"><span class="am">Private charter</span><span class="ad">From Bali, Jepara or Semarang.</span><span class="af">On request</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="list">
+  <div class="wrap">
+    <div class="lede center reveal">
+      <p class="eyebrow">Priority access · founding membership</p>
+      <h2>Join the Founder List.</h2>
+      <p>Early access to Phase 1 ahead of the public launch, at the lowest price the project will ever have. No application form to start, no obligation — the first step is simply a conversation.</p>
+    </div>
+    <form class="formwrap reveal" id="founderForm" novalidate>
+      <div class="grid2">
+        <div class="field"><label for="f-name">Full name</label><input id="f-name" type="text" required placeholder="Your name" /></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" required placeholder="you@email.com" /></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><label for="f-phone">Phone (optional)</label><input id="f-phone" type="tel" placeholder="+1 …" /></div>
+        <div class="field"><label for="f-loc">Country / city</label><input id="f-loc" type="text" placeholder="Miami, USA" /></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><label for="f-budget">Investment budget</label><select id="f-budget"><option value="">Select…</option><option>$90,000 – $130,000</option><option>$130,000 – $200,000</option><option>Over $200,000</option><option>Still exploring</option></select></div>
+        <div class="field"><label for="f-interest">Main interest</label><select id="f-interest"><option value="">Select…</option><option>Longevity &amp; biohacking</option><option>Second home / retreat</option><option>Community &amp; lifestyle</option><option>Considering sharing while away</option></select></div>
+      </div>
+      <div class="field"><label for="f-when">When might you reserve?</label><select id="f-when"><option value="">Select…</option><option>At the private launch</option><option>Within the next 3 months</option><option>Within 6–12 months</option><option>Just gathering information</option></select></div>
+      <label class="consent"><input type="checkbox" id="f-consent" required /> <span>I'd like to receive information about Longevity Island and the Phase 1 opening. I can unsubscribe at any time.</span></label>
+      <button type="submit" class="btn btn-primary btn-block">Request priority access</button>
+      <div class="form-ok" id="formOk">Thank you. You're on the Founder List — we'll be in touch with your priority access and a personal call with our team.</div>
+    </form>
+    <p class="fine" style="text-align:center;max-width:60ch;margin:20px auto 0">Founder places are strictly limited. Joining the list is not a reservation or an obligation to purchase. The $1,000 application is refundable, held through a regulated escrow provider (onboarding in progress).</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="lede reveal"><p class="eyebrow">Frequently asked</p><h2>Everything you'll want to know.</h2></div>
+    <div class="faq reveal" id="faqList">
+      <div class="qa open"><button>What exactly am I applying for?</button><div class="ans" style="max-height:400px"><p>You are applying for admission to a capped private founder community, with a transferable 70-year right of use (renewable) attached to a numbered residence, plus founder access to the shared longevity sanctuary under the Charter terms.</p></div></div>
+      <div class="qa"><button>Is this property ownership?</button><div class="ans"><p>No. This is not freehold ownership by the foreign buyer. It is a structured long-term right of use, documented locally and explained in the founder documents before any commitment is made.</p></div></div>
+      <div class="qa"><button>Does the home already exist?</button><div class="ans"><p>Not yet. The land has been secured and the residences are planned as low-density modular homes by Amoda. Construction is intended to begin only once 320 founders are confirmed and the required approvals are in hand.</p></div></div>
+      <div class="qa"><button>Is my reservation protected?</button><div class="ans"><p>The $1,000 reservation is intended to be held through a regulated escrow provider, subject to final onboarding and agreement terms. It is refundable if you are not accepted or if the founder threshold is not reached.</p></div></div>
+      <div class="qa"><button>Why does the price rise by phase?</button><div class="ans"><p>We release residences in measured phases; as each phase sells, the next opens at a higher price. Phase 1 founders enter at the lowest scheduled release price. The masterplan is capped at 320 residences.</p></div></div>
+      <div class="qa"><button>Is rental income guaranteed?</button><div class="ans"><p>No. Managed sharing is optional and variable. Any scenario shown is illustrative only and is not a forecast, guarantee or reason to join.</p></div></div>
+      <div class="qa"><button>Are health outcomes guaranteed?</button><div class="ans"><p>No. The programme is preventive and wellness-oriented. Testing and advisory support are designed to help founders track their own healthspan, but individual outcomes vary.</p></div></div>
+      <div class="qa"><button>What does "lifetime access" mean?</button><div class="ans"><p>Access is attached to the founder membership and right-of-use term, subject to the Charter, local documentation and payment of the monthly membership fee.</p></div></div>
+      <div class="qa"><button>What happens if approvals are delayed?</button><div class="ans"><p>Construction funds are not drawn until required approvals are in hand. If the project cannot proceed under the agreed terms, the relevant refund and termination provisions in the founder documents apply.</p></div></div>
+      <div class="qa"><button>Is it cyclone / earthquake safe? Is there wi-fi &amp; insurance?</button><div class="ans"><p>Karimunjawa lies outside the main Pacific cyclone corridor and away from the most active fault lines; the Amoda design is engineered to local code for tropical conditions. Each founder may also take out their own property insurance policy if they wish. Connectivity is handled by <b>Starlink</b> across the sanctuary — roughly <b>300 Mbps down and 300 Mbps up</b> — with full fibre-grade coverage in the coworking lounge and wi-fi in bedrooms, though switching it off is a deliberate part of the programme.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <p class="eyebrow reveal">Three hundred and twenty founders · masterplan cap</p>
+    <h2 class="reveal">If not now — the 320 will be chosen, with or without you.</h2>
+    <p class="reveal">The masterplan is capped at 320 residences. No further founder residences are planned. The friend who applies in time will spend the next forty years coming home to this island. We would rather you were the first. Join the Founder List for priority access and a personal call.</p>
+    <a href="#list" class="btn btn-light reveal">Join the Founder List</a>
+    <p class="hero-note reveal" style="color:rgba(244,239,230,.6);margin-top:22px">10-minute application · 30-minute call · refundable $1,000 held through a regulated escrow provider · Charter terms disclosed in private</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand" style="color:#fff;font-size:1.6rem">Longevity Island</div>
+      <p style="color:rgba(233,226,214,.6);font-size:.85rem;margin-top:10px">Karimunjawa Marine National Park · Indonesia</p>
+      <p style="margin-top:12px"><a href="mailto:hello@longevityisland.org">hello@longevityisland.org</a></p>
+    </div>
+    <div class="fineprint">
+      Homes by Amoda · Reservations held through a regulated escrow provider (onboarding in progress) · Card processing by Stripe.<br/><br/>
+      © 2026 Longevity Island. Reservations subject to terms. This page is informational and is not an offer of securities or a financial product, nor investment, legal, tax or medical advice. Real estate carries risk; figures shown are illustrative estimates in USD, not guarantees. The 320-residence figure reflects the current approved masterplan and is subject to local regulatory consent. Wellness and longevity services are subject to local medical regulations.
+    </div>
+  </div>
+</footer>
+
+<div class="mcta">
+  <span class="lbl">Phase 1 · from $95,000</span>
+  <a href="#list" class="btn btn-light">Join the Founder List</a>
+</div>
+`;function q(){return I.useEffect(()=>{const w=new Date("2026-11-15T18:00:00+07:00").getTime(),p=document.getElementById("cd");function u(){if(!p)return;const e=w-Date.now();if(e<=0){p.textContent="Launch is live";return}const a=Math.floor(e/864e5),s=Math.floor(e%864e5/36e5),i=Math.floor(e%36e5/6e4);p.textContent="Private launch in "+a+"d "+s+"h "+i+"m"}u();const k=window.setInterval(u,6e4),m=document.getElementById("nav"),y=()=>{m&&m.classList.toggle("scrolled",window.scrollY>30)};window.addEventListener("scroll",y);const v=new IntersectionObserver(e=>{e.forEach(a=>{a.isIntersecting&&(a.target.classList.add("in"),v.unobserve(a.target))})},{threshold:.1});document.querySelectorAll(".reveal").forEach(e=>v.observe(e));const f=[];document.querySelectorAll("#faqList .qa button").forEach(e=>{const a=()=>{const s=e.parentElement,i=s.querySelector(".ans");i&&(s.classList.contains("open")?(s.classList.remove("open"),i.style.maxHeight=""):(s.classList.add("open"),i.style.maxHeight=i.scrollHeight+"px"))};e.addEventListener("click",a),f.push({btn:e,fn:a})});const n=document.getElementById("weeks"),o=document.getElementById("price"),r=e=>"$"+Math.round(e).toLocaleString("en-US");function l(){if(!n||!o)return;const e=+n.value,a=+o.value,s=e*a,i=s*.45,d=(s-i)*.25,c=1980,x=s-i-d-c,t=(T,A)=>{const b=document.getElementById(T);b&&(b.textContent=A)};t("weeksVal",String(e)),t("priceVal",r(a)),t("gross",r(s)),t("ops","−"+r(i)),t("mgmt","−"+r(d)),t("hoa","−"+r(c)),t("net",r(x))}n&&n.addEventListener("input",l),o&&o.addEventListener("input",l),l();const h=document.getElementById("founderForm"),g=e=>{e.preventDefault();const a=document.getElementById("f-name")?.value.trim(),s=document.getElementById("f-email")?.value.trim(),i=document.getElementById("f-consent")?.checked;if(!a||!s||!i){alert("Please add your name, email, and tick the box to continue.");return}h?.querySelectorAll(".grid2,.field,.consent,button").forEach(c=>{c.style.display="none"});const d=document.getElementById("formOk");d&&(d.style.display="block")};return h?.addEventListener("submit",g),()=>{clearInterval(k),window.removeEventListener("scroll",y),v.disconnect(),f.forEach(({btn:e,fn:a})=>e.removeEventListener("click",a)),n&&n.removeEventListener("input",l),o&&o.removeEventListener("input",l),h?.removeEventListener("submit",g)}},[]),S.jsx("div",{className:"li-page",dangerouslySetInnerHTML:{__html:L}})}export{q as component};
