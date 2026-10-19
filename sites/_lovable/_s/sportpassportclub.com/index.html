@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sport Passport Club — Choose your experience</title>
+<meta name="description" content="Own a beachfront home on Sumba from €25,000 — with free nights every year at every new club worldwide, and 100+ sports at your door.">
+<meta property="og:title" content="Beachfront homes from €25,000 · Sport Passport Club">
+<meta property="og:description" content="Free nights worldwide every year · 100+ sports · Sumba, Indonesia. Open & operating.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="spc_v3_assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="spc_v3_assets/img/og.jpg">
+<link rel="icon" type="image/png" href="spc_v3_assets/img/logo_chip.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Marcellus&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--em:#0e3b2e;--em2:#0f6e56;--gold:#b08a4e;--goldl:#e7c067;--cream:#f4f1e9;--ink:#22302a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,sans-serif;color:var(--ink);background:var(--cream)}
+.serif{font-family:'Playfair Display',Georgia,serif}
+img{display:block;max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:84px 0}
+h2{font-size:clamp(32px,4.4vw,48px);line-height:1.1;font-weight:600;color:var(--em)}
+.kick{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;display:block}
+.sub{font-size:19px;line-height:1.7;color:#4d5a53;max-width:640px;margin-top:18px}
+.btn{display:inline-block;border:none;cursor:pointer;text-decoration:none;text-align:center;font-weight:700;border-radius:14px;font-size:17px;padding:18px 34px}
+.btn.gold{background:linear-gradient(120deg,var(--goldl),#c89a3a);color:#1a1205;box-shadow:0 10px 30px rgba(200,154,58,.35)}
+.btn.dark{background:var(--em);color:#fff}
+.btn.wa{background:#1faa55;color:#fff}
+.btn.line{background:transparent;border:2px solid var(--em);color:var(--em)}
+
+/* ===== CHOOSER ===== */
+#chooser{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;background:var(--cream);transition:opacity .5s,visibility .5s}
+#chooser.off{opacity:0;visibility:hidden}
+.chead{text-align:center;padding:34px 20px 18px}
+.chead img{width:200px;margin:0 auto 14px;border-radius:12px}
+.chead h1{font:600 clamp(24px,3.4vw,36px) 'Playfair Display',serif;color:var(--em)}
+.chead p{font-size:15px;color:#6b776f;margin-top:8px}
+.copts{flex:1;display:flex;gap:18px;padding:10px 26px 30px;max-width:1100px;margin:0 auto;width:100%}
+.copt{flex:1;position:relative;border-radius:24px;overflow:hidden;cursor:pointer;border:none;padding:0;text-align:left;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;background:#000;min-height:340px}
+.copt:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 30px 70px rgba(10,30,22,.35)}
+.copt .media{position:absolute;inset:0}
+.copt .media img,.copt .media video{width:100%;height:100%;object-fit:cover}
+.copt .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,17,13,.88),rgba(7,17,13,.15) 60%)}
+.copt .txt{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#fff}
+.copt .tk{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--goldl);font-weight:600}
+.copt .tt{font:600 30px 'Playfair Display',serif;margin:8px 0 6px}
+.copt .td{font-size:14px;line-height:1.55;color:rgba(255,255,255,.85);max-width:380px}
+.copt .go{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-weight:700;font-size:14px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:30px;padding:11px 20px;backdrop-filter:blur(6px)}
+.copt.classic .shade{background:linear-gradient(to top,rgba(34,40,32,.88),rgba(34,40,32,.08) 60%)}
+.cnote{text-align:center;font-size:12.5px;color:#8a948c;padding:0 20px 22px}
+.cquick{display:flex;gap:10px;align-items:center;justify-content:center;padding:4px 20px 12px;flex-wrap:wrap}
+@media(max-width:760px){.copts{flex-direction:column;padding:6px 16px 20px}.copt{min-height:250px}.chead img{width:140px}
+ .copt .txt{padding:20px}.copt .tt{font-size:23px}.copt .td{font-size:12.5px;max-width:none}.copt .go{margin-top:12px;padding:10px 16px;font-size:13px}}
+
+/* ===== TRADITIONAL SITE ===== */
+header.site{position:sticky;top:0;z-index:50;background:rgba(244,241,233,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid #e2dccd;display:flex;align-items:center;justify-content:space-between;padding:12px 26px}
+header.site img{height:44px;border-radius:8px}
+.hnav{display:flex;gap:10px;align-items:center}
+.hnav .btn{padding:12px 20px;font-size:14px;border-radius:11px}
+.vlink{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--em);text-decoration:none;
+  border:2px solid var(--em);border-radius:11px;padding:10px 16px}
+@media(max-width:700px){.vlink span.x{display:none}}
+
+.thero{background:#fff}
+.thero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;padding-top:60px;padding-bottom:60px}
+.thero h1{font:600 clamp(34px,4.6vw,52px)/1.12 'Playfair Display',serif;color:var(--em)}
+.thero h1 .g{color:var(--gold)}
+.tlead{font-size:19px;line-height:1.75;color:#4d5a53;margin-top:20px}
+.tbene{margin-top:26px;display:grid;gap:14px}
+.tbene .b{display:flex;gap:14px;align-items:flex-start;font-size:17px;line-height:1.5}
+.tbene .i{flex:0 0 44px;height:44px;border-radius:50%;background:var(--em);color:var(--goldl);display:grid;place-items:center;font-size:18px;letter-spacing:.5px}
+.tbene b{color:var(--em)}
+.tctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.ttrust{margin-top:26px;font-size:14.5px;color:#6b776f;line-height:1.8}
+.ttrust b{color:var(--em)}
+.thero img{border-radius:22px;width:100%;height:560px;object-fit:cover}
+@media(max-width:860px){.thero .wrap{grid-template-columns:1fr}.thero img{height:300px}}
+
+.softband{background:var(--em);color:#fff;text-align:center;padding:34px 20px}
+.softband .serif{font-size:clamp(19px,2.6vw,26px);color:var(--goldl)}
+
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.tgrid{grid-template-columns:1fr}}
+.tgrid img{border-radius:20px;width:100%;height:420px;object-fit:cover}
+ul.big{list-style:none;margin-top:22px}
+ul.big li{font-size:17px;line-height:1.6;padding:13px 0 13px 34px;position:relative;border-bottom:1px solid #e2dccd;color:#3c4a42}
+ul.big li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700;font-size:19px}
+.pricebig{font:700 56px 'Playfair Display',serif;color:var(--em);margin-top:10px}
+.pricebig small{font:600 18px Montserrat;color:#6b776f}
+
+.destrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.dest{flex:1 1 220px;border:2px solid var(--em);border-radius:18px;padding:22px;background:#fff}
+.dest.ghost{border-style:dashed;opacity:.75}
+.dest .st{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.dest b{font:600 22px 'Playfair Display',serif;color:var(--em);display:block;margin-top:8px}
+.dest span{font-size:14px;color:#5d6a62;display:block;margin-top:4px;line-height:1.5}
+
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.sgrid figure{position:relative;border-radius:16px;overflow:hidden}
+.sgrid img{width:100%;height:230px;object-fit:cover}
+.sgrid figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font-weight:700;font-size:16px;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+@media(max-width:860px){.sgrid{grid-template-columns:1fr 1fr}.sgrid img{height:170px}}
+
+.pnums{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.pnum{background:#fff;border:1px solid #e2dccd;border-radius:18px;padding:26px 18px;text-align:center}
+.pnum b{font:700 40px 'Playfair Display',serif;color:var(--em);display:block}
+.pnum span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8a948c}
+@media(max-width:760px){.pnums{grid-template-columns:1fr 1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.step{background:#fff;border:1px solid #e2dccd;border-radius:18px;padding:28px}
+.step .n{font:700 34px 'Playfair Display',serif;color:var(--gold)}
+.step b{display:block;font-size:19px;margin:10px 0 8px;color:var(--em)}
+.step p{font-size:15.5px;color:#55625a;line-height:1.6}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+details{border-bottom:1px solid #ddd6c5;padding:20px 0}
+summary{font-weight:600;font-size:19px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--em)}
+summary:after{content:"+";font:600 26px 'Playfair Display',serif;color:var(--gold)}
+details[open] summary:after{content:"–"}
+details p{font-size:16px;color:#55625a;line-height:1.7;margin-top:12px;max-width:760px}
+
+.tform{background:#fff;border:1px solid #e2dccd;border-radius:22px;padding:34px;max-width:640px;margin:34px auto 0}
+.tform label{font-size:13px;font-weight:600;color:#6b776f;display:block;margin:14px 0 6px;letter-spacing:.04em;text-transform:uppercase}
+.tform input{width:100%;border:1.5px solid #d8d1bf;background:#fbfaf6;border-radius:12px;padding:16px;font-size:17px}
+.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;align-items:stretch}
+.ccard{background:var(--cream);border:1px solid #ddd6c5;border-radius:20px;padding:28px;display:flex;flex-direction:column}
+.ccard.sig{border:2px solid var(--em);background:#fff;box-shadow:0 18px 44px rgba(14,59,46,.1)}
+.ctier{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.ccard h3{font-size:24px;color:var(--em);margin:10px 0 2px}
+.cprice{font-size:38px;font-weight:700;color:var(--em);margin-bottom:14px}
+.ccard dl{flex:1}
+.ccard dl div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #e6e0d0;font-size:13.5px}
+.ccard dt{color:#8a948c;white-space:nowrap}
+.ccard dd{color:#3c4a42;text-align:right}
+.cbtn{margin-top:18px;padding:13px;font-size:14px}
+@media(max-width:860px){.cmp{grid-template-columns:1fr}}
+.wafloat{position:fixed;right:22px;bottom:22px;z-index:70;width:58px;height:58px;border-radius:50%;background:#1faa55;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.wafloat svg{width:30px;height:30px;fill:#fff}
+footer{background:var(--em);color:rgba(255,255,255,.75);font-size:14px;text-align:center;padding:34px 18px;line-height:1.9}
+footer a{color:var(--goldl);text-decoration:none;font-weight:600}
+.muted{font-size:13px;color:#8a948c;margin-top:12px}
+</style>
+<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.4d3abd1f6b7321c2.js" data-artifact-kind="dwl_content_hash" data-artifact-id="45a686db75d55888715c30b7b80e1b22c2c7466bd7d56f502bcd0663be2cd305" data-commit-sha="0bb745dd61d8befd7618929c166486bd4d869590" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8xZnZmYWNxeDVlODMwdmZ2ZHhlN3Nzd21wMyIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiI0NWE2ODZkYjc1ZDU1ODg4NzE1YzMwYjdiODBlMWIyMmMyYzc0NjZiZDdkNTZmNTAyYmNkMDY2M2JlMmNkMzA1IiwiY29tbWl0X3NoYSI6IjBiYjc0NWRkNjFkOGJlZmQ3NjE4OTI5YzE2NjQ4NmJkNGQ4Njk1OTAiLCJleHAiOjE3OTUwMzY1NTd9.ziTOY4J6vwSQMiHi1h2za3-RMw0dcyAd_hOKFsaSmus"></script><meta name="twitter:title" content="Beachfront homes from €25,000 · Sport Passport Club"><meta name="twitter:description" content="Free nights worldwide every year · 100+ sports · Sumba, Indonesia. Open &amp; operating."></head>
+<body>
+
+<!-- ===== CHOOSER ===== -->
+<div id="chooser">
+  <div class="chead">
+    <a href="/" style="display:inline-block;line-height:0"><img src="spc_v3_assets/img/logo_chip.png" alt="Sport Passport Club"></a>
+    <h1 class="serif">How would you like to discover the Club?</h1>
+    <p>Two ways to explore. Same beach, same homes, same passport.</p>
+  </div>
+  <div class="copts">
+    <button class="copt classic" id="goClassic">
+      <span class="media"><img src="spc_v4_assets/bedroom.jpg" alt=""></span>
+      <span class="shade"></span>
+      <span class="txt">
+        <span class="tk">Calm · At your pace</span>
+        <span class="tt serif">The Classic visit</span>
+        <span class="td">A beautifully simple page. Read everything calmly — the home, the prices, the guarantees — like a fine brochure.</span>
+        <span class="go">Enter the Classic visit →</span>
+      </span>
+    </button>
+    <button class="copt" id="goModern">
+      <span class="media"><video muted loop playsinline autoplay preload="metadata" poster="spc_v3_assets/posters/P2HbSS4d5FQ.jpg"><source src="spc_v3_assets/videos/P2HbSS4d5FQ.mp4" type="video/mp4"></video></span>
+      <span class="shade"></span>
+      <span class="txt">
+        <span class="tk">Immersive · With video</span>
+        <span class="tt serif">The Video experience</span>
+        <span class="td">Feel Sumba in motion — the club told as full-screen video stories. Swipe through the island, the homes and the sport.</span>
+        <span class="go">▶ Start the Video experience</span>
+      </span>
+    </button>
+  </div>
+  <div class="cquick">
+    <span style="font-size:13px;color:#6b776f">In a hurry?</span>
+    <a id="spcHurryDossier" class="btn gold" style="padding:11px 18px;font-size:13.5px;border-radius:11px" href="SportPassportClub_Dossier.pdf" target="_blank" rel="noopener">Download the dossier (PDF)</a>
+    <a class="btn wa" style="padding:11px 18px;font-size:13.5px;border-radius:11px" id="wac" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn line" style="padding:9px 18px;font-size:13.5px;border-radius:11px" id="calc0" href="#" target="_blank" rel="noopener">Book a 20-minute call</a>
+  </div>
+  <div class="cnote">You can switch between the two at any time — nothing is lost.</div>
+</div>
+
+<!-- ===== TRADITIONAL SITE ===== -->
+<header class="site">
+  <a href="/" style="display:inline-block;line-height:0"><img src="spc_v3_assets/img/logo_chip.png" alt="Sport Passport Club"></a>
+  <div class="hnav">
+    <a class="vlink" href="SportPassportClub_Website_v3.html">▶ <span class="x">Video experience</span></a>
+    <a class="btn gold" href="#contact" style="padding:12px 20px;font-size:14px">Get the dossier</a>
+  </div>
+</header>
+
+<section class="thero">
+  <div class="wrap">
+    <div>
+      <span class="kick">Sumba, Indonesia · Founding cohort</span>
+      <h1>A beachfront home from <span class="g">€25,000</span> — that gives you the world.</h1>
+      <p class="tlead">Buy your home once. Then, every single year, enjoy <b>free nights at every new destination</b> the Club opens around the world — and live with <b>more sport at your door than anywhere on earth</b>.</p>
+      <div class="tbene">
+        <div class="b"><span class="i serif">I</span><span><b>The home is truly yours.</b> 240 m² of land, legal title in your name. Sign online or with a notary.</span></div>
+        <div class="b"><span class="i serif">II</span><span><b>Free nights worldwide, every year.</b> Each new Club we open, your passport unlocks free stays there — forever.</span></div>
+        <div class="b"><span class="i serif">III</span><span><b>100+ sports.</b> Padel, tennis, surf, riding, a Technogym gym — the sportiest club on the planet.</span></div>
+      </div>
+      <div class="tctas">
+        <a class="btn gold" href="#contact">Request the founder dossier</a>
+        <a class="btn wa" id="wa1" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+      <p style="margin-top:14px"><a id="cal1" href="#" target="_blank" rel="noopener" style="color:var(--em);font-weight:700;font-size:16px">Or book a 20-minute call →</a></p>
+      <p class="ttrust"><b>€16.3M</b> invested · <b>24</b> homes delivered · <b>474</b> owners from <b>40+</b> countries · 🏆 CNN's #1 island in the world</p>
+    </div>
+    <img src="spc_v4_assets/hero.jpg" alt="Beachfront homes on Sumba">
+  </div>
+</section>
+
+<div class="softband"><div class="serif">"You pay for the home. The world comes with it."</div></div>
+
+<section>
+  <div class="wrap tgrid">
+    <div>
+      <span class="kick">The home · Beachfront Studio</span>
+      <h2 class="serif">Real, delivered,<br>and truly yours.</h2>
+      <div class="pricebig">€25,000 <small>· land included</small></div>
+      <ul class="big">
+        <li>240 m² private plot, fifty metres from the sand, ocean-facing.</li>
+        <li>25 m² studio delivered ready — built by Indonesia's #1 modular maker.</li>
+        <li>80-year participation right under Indonesian law, renewable.</li>
+        <li>Pay in instalments, no interest. Book now, pay as we build.</li>
+        <li>Optional rental programme: we manage it, you keep 75% (~€100/night est.).</li>
+      </ul>
+      <div class="tctas"><a class="btn dark" href="#contact">Ask about this home</a></div>
+      <p class="muted">Beachfront Villa (€350,000) and Mansion (€1,100,000) also available — detailed in the dossier.</p>
+    </div>
+    <img src="spc_v4_assets/bedroom.jpg" alt="Delivered studio bedroom at sunset">
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <span class="kick">The residences</span>
+    <h2 class="serif">Three doors into the Club.</h2>
+    <p class="sub">Every residence includes the Passport, full membership, instalment payments with no interest, and legal title — sign online or with a notary.</p>
+    <div class="cmp">
+      <div class="ccard">
+        <div class="ctier">Entry</div>
+        <h3 class="serif">The Studio Home</h3>
+        <div class="cprice serif">€25,000</div>
+        <dl><div><dt>Land</dt><dd>200 m² private plot</dd></div>
+        <div><dt>Residence</dt><dd>25 m² studio, delivered ready</dd></div>
+        <div><dt>Position</dt><dd>Ocean-facing · 50 m from the sand</dd></div>
+        <div><dt>Rental, est.</dt><dd>~€100 / night · you keep 75%</dd></div></dl>
+        <a class="btn line cbtn" href="#contact">Request details</a>
+      </div>
+      <div class="ccard sig">
+        <div class="ctier">Signature</div>
+        <h3 class="serif">The Beachfront Villa</h3>
+        <div class="cprice serif">€350,000</div>
+        <dl><div><dt>Land</dt><dd>1,000 m² · 150 m² villa</dd></div>
+        <div><dt>Residence</dt><dd>3 bedrooms · private infinity pool</dd></div>
+        <div><dt>Also includes</dt><dd>Equity &amp; revenue share on common areas</dd></div>
+        <div><dt>Rental, est.</dt><dd>Comparable villas ~€500 / night</dd></div></dl>
+        <a class="btn gold cbtn" href="#contact">Request details</a>
+      </div>
+      <div class="ccard">
+        <div class="ctier">Flagship</div>
+        <h3 class="serif">The Mansion</h3>
+        <div class="cprice serif">€1,100,000</div>
+        <dl><div><dt>Land</dt><dd>4,500 m² · 600 m² residence</dd></div>
+        <div><dt>Residence</dt><dd>8 bedrooms · single circular roof</dd></div>
+        <div><dt>Also includes</dt><dd>Larger equity share · private beach stretch</dd></div>
+        <div><dt>For</dt><dd>Principals who want the platform itself</dd></div></dl>
+        <a class="btn line cbtn" href="#contact">Request details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kick">The Passport</span>
+    <h2 class="serif">One home today.<br>Free nights everywhere, tomorrow.</h2>
+    <p class="sub">This is what makes the Club different: your purchase travels with you. Every new destination we open around the world, you sleep there free — every year, for life. The earlier you join, the more nights you keep.</p>
+    <div class="destrow">
+      <div class="dest"><span class="st">● Open now</span><b>Sumba, Indonesia</b><span>Location 01 — open &amp; operating. CNN's #1 island, one hour from Bali.</span></div>
+      <div class="dest ghost"><span class="st">○ On the roadmap</span><b>Destination 02</b><span>The next beach is being scouted — founders vote on where we go.</span></div>
+      <div class="dest ghost"><span class="st">○ On the roadmap</span><b>Destination 03</b><span>The world is the plan. Your passport is the key.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kick">The sport</span>
+    <h2 class="serif">100+ sports, one shoreline.</h2>
+    <p class="sub">Two million square metres of beachfront built for movement, equipped by Technogym — with 300+ days of sun a year.</p>
+    <div class="sgrid">
+      <figure><img src="spc_v4_assets/s_padel.jpg" alt="Padel"><figcaption>Padel</figcaption></figure>
+      <figure><img src="spc_v4_assets/s_tennis.jpg" alt="Tennis"><figcaption>Tennis</figcaption></figure>
+      <figure><img src="spc_v4_assets/s_gym.jpg" alt="Gym"><figcaption>Gym by Technogym</figcaption></figure>
+      <figure><img src="spc_v4_assets/s_surf.jpg" alt="Surf"><figcaption>Surf · +97 more</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <span class="kick">This is real</span>
+    <h2 class="serif">Not renders. Delivered.</h2>
+    <div class="pnums">
+      <div class="pnum"><b>€16.3M</b><span>invested</span></div>
+      <div class="pnum"><b>24</b><span>homes delivered</span></div>
+      <div class="pnum"><b>474</b><span>owners</span></div>
+      <div class="pnum"><b>40+</b><span>countries</span></div>
+    </div>
+    <p class="sub" style="margin-top:26px">Two kilometres of beachfront secured, notarised and held by an Indonesian-domiciled company. The Club is in development: some units are delivered and lived in today, and new amenities arrive every year.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kick">How it works</span>
+    <h2 class="serif">Three calm steps.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><b>Get the dossier</b><p>Twelve pages: the homes, the prices, the passport, the guarantees. No commitment.</p></div>
+      <div class="step"><div class="n">2</div><b>A 20-minute call</b><p>With a real person. Your questions, your country, your timing. No pitch.</p></div>
+      <div class="step"><div class="n">3</div><b>Reserve &amp; sign</b><p>Secure your home and passport — sign online with notarial e-signature, or with our notary on Sumba.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap" style="max-width:860px">
+    <span class="kick">Questions</span>
+    <h2 class="serif">Everything buyers ask us.</h2>
+    <div style="margin-top:26px">
+      <details><summary>Do I really own the home?</summary><p>Yes. Legal title in your name to the studio and its 240 m² of land — 100% transferable. Live in it, rent it, gift it or sell it. The passport of free nights is a benefit of ownership, not the product.</p></details>
+      <details><summary>Is this a timeshare?</summary><p>No. A timeshare sells you weeks of someone else's property. Here you own real property — and the growing network of clubs rewards you with free stays on top.</p></details>
+      <details><summary>How do the free nights work?</summary><p>Each new destination the Club opens, owners unlock free nights there every year. Founders keep the largest allowance, for life. Sumba is open today; new destinations join the roadmap as the Club grows.</p></details>
+      <details><summary>How do I pay?</summary><p>In instalments, with no interest: a small reservation first, then staged payments as we build. The exact schedule is in the dossier.</p></details>
+      <details><summary>Who rents my home when I'm away?</summary><p>Our on-site team manages guests, cleaning and maintenance. You keep 75% of rental income — estimated around €100 per night for the studio.</p></details>
+      <details><summary>Can I visit before deciding?</summary><p>Yes. The Club is open and operating. Book a call and we'll arrange your visit — or join a live video tour from the island.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap" style="text-align:center">
+    <span class="kick">Founding spots are limited</span>
+    <h2 class="serif">Receive the founder dossier.</h2>
+    <p class="sub" style="margin:18px auto 0">Twelve pages with the homes, prices, passport and guarantees — plus a 20-minute call if you'd like one. No commitment, no spam.</p>
+    <form class="tform" data-form="classic" style="text-align:left">
+      <label>Full name</label><input data-f="name" required placeholder="Your name">
+      <label>Email</label><input data-f="email" type="email" required placeholder="you@email.com">
+      <label>Mobile (with country code)</label><input data-f="phone" type="tel" required placeholder="+34 612 345 678">
+      <button class="btn gold" type="submit" style="width:100%;margin-top:22px">Send me the dossier</button>
+      <p style="font-size:12.5px;color:#8a948c;margin-top:12px;text-align:center">Private &amp; confidential. Your details are used only to send the dossier and contact you about the Club. No spam, ever.</p>
+    </form>
+    <p class="muted">Prefer to talk? <a id="wa2" href="#" target="_blank" rel="noopener" style="color:var(--em);font-weight:700">WhatsApp +34 687 358 010</a> &nbsp;·&nbsp; <a id="cal2" href="#" target="_blank" rel="noopener" style="color:var(--em);font-weight:700">Book a 20-minute call</a></p>
+  </div>
+</section>
+
+<footer>
+  Sport Passport Club · Location 01 — Sumba, Indonesia · Built with Amoda · Equipped by Technogym<br>
+  You own the home · Legal title · Sign online or with a notary<br>
+  <a href="SportPassportClub_Website_v3.html">▶ Switch to the Video experience</a> &nbsp;·&nbsp; <a id="cal3" href="#" target="_blank" rel="noopener">Book a 20-minute call</a><br>
+  <span style="font-size:12px;color:rgba(255,255,255,.5)">Marketing &amp; investment by Equinox Investment Group, in partnership with beachfront landowners — the reason these prices are possible. © 2026 Sport Passport Club.</span>
+</footer>
+
+<a class="wafloat" id="waf" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.3 1.6-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2.1-.8-3.6-1.6-6-5.2-6.2-5.5-.2-.2-1.5-2-1.5-3.8 0-1.8 1-2.7 1.3-3 .3-.4.7-.5 1-.5h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1 1-.3 1.9z"/></svg></a>
+
+<script>
+const CAL="https://calendly.com/equinoxinvestmentgroup/eco-beach-city-info-call";
+const WA="https://wa.me/34687358010?text="+encodeURIComponent("Hi! I'm interested in Sport Passport Club — a beachfront home from €25,000. Please send me the founder dossier.");
+/* ===== LEAD DESTINATION ===== set LEAD_ENDPOINT when porting to Lovable (table 'inquiries'). */
+const LEAD_ENDPOINT="/api/public/leads"; const PIXEL_ID=""; const GA_ID="";
+["wa1","wa2","wac","waf"].forEach(id=>{const el=document.getElementById(id);if(el)el.href=WA;});
+["cal1","cal2","calc0","cal3"].forEach(id=>{const el=document.getElementById(id);if(el)el.href=CAL;});
+
+/* chooser */
+const chooser=document.getElementById('chooser');
+document.getElementById('goClassic').addEventListener('click',()=>{chooser.classList.add('off');try{sessionStorage.setItem('spc_mode','classic');}catch(_){}window.scrollTo(0,0);});
+document.getElementById('goModern').addEventListener('click',()=>{try{sessionStorage.setItem('spc_mode','video');}catch(_){}window.location.href='SportPassportClub_Website_v3.html';});
+
+/* leads */
+function utm(){const q=new URLSearchParams(location.search);return{utm_source:q.get('utm_source'),utm_medium:q.get('utm_medium'),utm_campaign:q.get('utm_campaign')};}
+function fireLeadPixel(){try{if(PIXEL_ID&&window.fbq)fbq('track','Lead',{value:25000,currency:'EUR'});}catch(e){}try{if(GA_ID&&window.gtag)gtag('event','generate_lead',{currency:'EUR',value:25000});}catch(e){}}
+function saveLead(d){const lead=Object.assign({interest:'sport-passport-club',page:'v10-classic',ts:new Date().toISOString()},utm(),d);
+ try{const k='spc_leads',a=JSON.parse(localStorage.getItem(k)||'[]');a.push(lead);localStorage.setItem(k,JSON.stringify(a));}catch(e){}
+ if(LEAD_ENDPOINT){try{fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{});}catch(e){}}
+ fireLeadPixel();}
+document.addEventListener('submit',e=>{const f=e.target.closest('[data-form]');if(!f)return;e.preventDefault();
+ const lead={};f.querySelectorAll('[data-f]').forEach(el=>lead[el.dataset.f]=el.value.trim());
+ saveLead(Object.assign(lead,{source:f.getAttribute('data-form')}));
+ f.innerHTML='<div class="serif" style="font-size:26px;color:var(--em)">Thank you — you\'re in.</div><p style="font-size:16px;color:#55625a;margin-top:10px;line-height:1.6">Choose your next step. The dossier opens in a new tab — you can come back here any time to schedule your call.</p><a class="btn gold" style="margin-top:18px;display:block" href="SportPassportClub_Dossier.pdf" target="_blank" rel="noopener">Download the dossier (PDF)</a><a class="btn dark" style="margin-top:10px;display:block" href="'+CAL+'" target="_blank" rel="noopener">Schedule a 20-minute call</a><a style="display:block;text-align:center;margin-top:12px;font-size:14px;color:#1faa55;font-weight:700;text-decoration:none" href="'+WA+'" target="_blank" rel="noopener">Or write to us on WhatsApp</a>';
+});
+
+/* ===== funnel events (ready for GA/Pixel; also kept locally in spc_events) ===== */
+function spcTrack(ev,data){try{const e=Object.assign({ev,page:'v10',ts:Date.now()},data||{});const k='spc_events',a=JSON.parse(localStorage.getItem(k)||'[]');a.push(e);localStorage.setItem(k,JSON.stringify(a.slice(-400)));}catch(_){}
+ try{window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:'spc_'+ev},data||{}));}catch(_){}
+ try{if(window.fbq)fbq('trackCustom','SPC_'+ev,data||{});}catch(_){}}
+spcTrack('chooser_view');
+document.getElementById('goClassic').addEventListener('click',()=>spcTrack('mode_classic'));
+document.getElementById('goModern').addEventListener('click',()=>spcTrack('mode_video'));
+document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const h=a.getAttribute('href')||'';
+ if(h.indexOf('Dossier.pdf')>-1)spcTrack('dossier_open');
+ else if(h.indexOf('calendly')>-1)spcTrack('call_click');
+ else if(h.indexOf('wa.me')>-1)spcTrack('whatsapp_click');});
+document.addEventListener('submit',e=>{const f=e.target.closest('[data-form]');if(f)spcTrack('lead_submit',{source:f.getAttribute('data-form')});});
+
+/* ===== In-a-hurry dossier gate (name+email popup) ===== */
+(function(){
+  function openHurry(){
+    if(document.getElementById('spc-hurry-modal'))return;
+    var ov=document.createElement('div');ov.id='spc-hurry-modal';
+    ov.setAttribute('style','position:fixed;inset:0;background:rgba(10,15,12,.72);z-index:99999;display:flex;align-items:center;justify-content:center;padding:18px;font-family:system-ui,-apple-system,sans-serif');
+    ov.innerHTML='<div style="background:#fff;max-width:420px;width:100%;border-radius:16px;padding:26px 24px;box-shadow:0 20px 60px rgba(0,0,0,.35)">'+
+      '<div style="font-family:Georgia,serif;font-size:22px;color:#0f3d2b;margin-bottom:6px">Get the founder dossier</div>'+
+      '<p style="font-size:14px;color:#55625a;margin:0 0 16px;line-height:1.5">Tell us where to send it. Twelve pages — homes, prices, passport, guarantees.</p>'+
+      '<form id="spc-hurry-form">'+
+        '<label style="font-size:12px;color:#55625a;display:block;margin-bottom:4px">Full name</label>'+
+        '<input name="name" required placeholder="Your name" style="width:100%;padding:11px 12px;border:1px solid #d6dcd6;border-radius:9px;font-size:14px;margin-bottom:12px;box-sizing:border-box">'+
+        '<label style="font-size:12px;color:#55625a;display:block;margin-bottom:4px">Email</label>'+
+        '<input name="email" type="email" required placeholder="you@email.com" style="width:100%;padding:11px 12px;border:1px solid #d6dcd6;border-radius:9px;font-size:14px;margin-bottom:18px;box-sizing:border-box">'+
+        '<button type="submit" style="width:100%;padding:12px;background:#c9a84c;color:#0d0d0d;font-weight:700;border:0;border-radius:10px;font-size:14px;cursor:pointer">Send me the dossier</button>'+
+        '<button type="button" id="spc-hurry-cancel" style="width:100%;margin-top:8px;padding:8px;background:transparent;color:#8a948c;border:0;font-size:12px;cursor:pointer">Cancel</button>'+
+      '</form></div>';
+    document.body.appendChild(ov);
+    ov.querySelector('#spc-hurry-cancel').onclick=function(){ov.remove();};
+    ov.querySelector('#spc-hurry-form').addEventListener('submit',function(e){
+      e.preventDefault();
+      var fd=new FormData(e.target);
+      var data={name:String(fd.get('name')||'').trim(),email:String(fd.get('email')||'').trim(),source:'hurry'};
+      try{saveLead(data);}catch(_){
+        try{fetch('/api/public/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.assign({page:location.pathname,ts:new Date().toISOString()},data))});}catch(__){}
+      }
+      ov.remove();
+      window.open('SportPassportClub_Dossier.pdf','_blank','noopener');
+    });
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest && e.target.closest('a#spcHurryDossier');
+    if(!a)return;
+    e.preventDefault();e.stopPropagation();
+    openHurry();
+  },true);
+})();
+</script>
+</body>
+</html>

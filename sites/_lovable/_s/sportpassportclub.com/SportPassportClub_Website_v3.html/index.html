@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Sport Passport Club — Beachfront homes from €25,000 · Sumba</title>
+<link rel="icon" type="image/png" href="spc_v3_assets/img/logo_chip.png">
+<meta property="og:title" content="Beachfront homes from €25,000 · Sport Passport Club">
+<meta property="og:description" content="Free nights worldwide every year · 100+ sports · Sumba, Indonesia. Open & operating.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="spc_v3_assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="spc_v3_assets/img/og.jpg">
+<meta name="description" content="Own a beachfront home on Sumba Island from €25,000 — plus a passport to free stays at every Club we open. 24 units delivered · 474 owners · €16.3M invested.">
+<meta property="og:title" content="Beachfront homes from €25,000 · Sport Passport Club">
+<meta property="og:description" content="Own a beachfront home on Sumba from €25,000. 100+ sports. A passport to free stays worldwide.">
+<style>
+:root{--gold:#e7c067;--ocean:#0f6e56;--ocean2:#0a4a3d;--ink:#06100d;--stage:430px}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  background:#06100d;color:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.bgblur{position:fixed;inset:0;background-size:cover;background-position:center;
+  filter:blur(64px) brightness(.4) saturate(1.25);transform:scale(1.3);transition:background-image .6s;z-index:0}
+
+.shell{position:relative;z-index:1;width:100%;max-width:var(--stage);height:100%;display:flex;background:#000}
+.stage{position:relative;width:100%;height:100%;overflow:hidden;background:#000;flex:1 1 auto;touch-action:none}
+
+/* DESKTOP: split — reel left, conversion rail right */
+.rail{display:none}
+@media(min-width:880px){
+  .shell{max-width:1000px;height:min(93vh,950px);border-radius:30px;overflow:hidden;
+    box-shadow:0 40px 120px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.06)}
+  .stage{flex:0 0 54%}
+  .rail{display:flex;flex:1;flex-direction:column;background:#08201a;border-left:1px solid rgba(255,255,255,.07);
+    padding:20px 26px;overflow-y:auto;justify-content:center}
+  .leadbar{display:none!important}
+}
+
+/* progress bars */
+.bars{position:absolute;top:0;left:0;right:0;z-index:40;display:flex;gap:3px;padding:11px 12px 0}
+.seg{flex:1;height:2.5px;background:rgba(255,255,255,.3);border-radius:3px;overflow:hidden}
+.seg>i{display:block;height:100%;width:0;background:#fff;border-radius:3px}
+.seg.done>i{width:100%}
+
+.topbar{position:absolute;top:19px;left:0;right:0;z-index:41;display:flex;align-items:center;
+  justify-content:space-between;padding:8px 14px 0;pointer-events:none}
+.brand{display:flex;align-items:center;gap:8px;pointer-events:auto}
+.brand .dot{width:25px;height:25px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--gold),#a87b1e);box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.brand b{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.tools{display:flex;align-items:center;gap:9px;pointer-events:auto}
+.blogo{height:48px;border-radius:10px;box-shadow:0 3px 14px rgba(0,0,0,.4)}
+.trio3{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip3{font-size:12.5px;font-weight:600;color:#fff;background:rgba(8,20,16,.62);border:1px solid rgba(255,255,255,.28);border-radius:30px;padding:8px 13px;backdrop-filter:blur(6px)}
+.chip3:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:8px;vertical-align:1px}
+.rtrio{display:grid;gap:7px;margin:0 0 12px}
+.rtrio .it{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;line-height:1.4;color:rgba(255,255,255,.92)}
+.rtrio .ic{flex:0 0 20px;font-size:13px;color:var(--gold);letter-spacing:.5px;font-weight:600}
+.rtrio b{color:var(--gold)}
+.skip{font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.85);background:rgba(0,0,0,.32);
+  border:none;border-radius:30px;padding:7px 12px;cursor:pointer;backdrop-filter:blur(6px)}
+.count{font-size:12px;opacity:.85;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.icobtn{width:33px;height:33px;border:none;border-radius:50%;background:rgba(0,0,0,.34);color:#fff;
+  font-size:15px;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px)}
+
+.deck{position:absolute;inset:0;z-index:5}
+.peek{position:absolute;top:0;bottom:0;width:7%;z-index:6;background-size:cover;background-position:center;
+  opacity:0;pointer-events:none;display:none}
+@media(min-width:880px){.peek{display:block;opacity:.25}.peekL{left:0;-webkit-mask:linear-gradient(90deg,#000,transparent);mask:linear-gradient(90deg,#000,transparent)}.peekR{right:0;-webkit-mask:linear-gradient(270deg,#000,transparent);mask:linear-gradient(270deg,#000,transparent)}}
+
+.card{position:absolute;inset:0;opacity:0;visibility:hidden;display:flex;flex-direction:column;
+  justify-content:flex-end;will-change:transform,opacity}
+.card.active{opacity:1;visibility:visible}
+.card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;background:#06100d}
+.card.active video{animation:kb 14s ease-out forwards}
+@keyframes kb{from{transform:scale(1.005)}to{transform:scale(1.08)}}
+.card .scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(4,16,13,.94),rgba(4,16,13,.5) 30%,rgba(4,16,13,.03) 58%,rgba(4,16,13,.4) 100%)}
+.card .body{position:relative;z-index:2;padding:0 26px 128px;transform:translateY(10px);opacity:0}
+@media(min-width:880px){.card .body{padding-bottom:40px}}
+.card.active .body{animation:rise .65s .1s forwards cubic-bezier(.2,.7,.2,1)}
+@keyframes rise{to{transform:translateY(0);opacity:1}}
+.kicker{display:inline-block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.card h2{font-size:34px;line-height:1.05;margin-bottom:12px;text-shadow:0 2px 18px rgba(0,0,0,.55);white-space:pre-line}
+.card.cover h2{font-size:42px}
+.card p.sub{font-size:15.5px;line-height:1.5;color:rgba(255,255,255,.92);max-width:340px;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+
+.ix{pointer-events:auto}
+.panel{position:relative;z-index:3;margin:0 18px 118px;background:rgba(8,20,16,.76);backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.15);border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.45);overflow:hidden;animation:pop .5s cubic-bezier(.2,.8,.25,1)}
+@media(min-width:880px){.panel{margin-bottom:30px}}
+@keyframes pop{from{transform:translateY(16px) scale(.98);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+.card.nobar .panel{margin-bottom:26px}
+.panel.closed{display:none}
+.phead{display:flex;align-items:center;gap:8px;padding:11px 12px 6px;cursor:grab;touch-action:none}
+.phead:active{cursor:grabbing}
+.grip{flex:1;display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.5);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.grip:before{content:"";width:32px;height:4px;border-radius:4px;background:rgba(255,255,255,.28)}
+.pclose{width:28px;height:28px;border:none;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:17px;line-height:1;cursor:pointer}
+.pbody{padding:2px 20px 20px}
+.pthumb{width:100%;height:96px;object-fit:cover;border-radius:12px;margin-bottom:12px}
+.panel .pk{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+.panel h3{font-size:24px;margin-bottom:2px}
+.price{font-size:37px;color:#fff;line-height:1;margin:8px 0 4px}
+.price small{font-size:14px;color:rgba(255,255,255,.6)}
+.specs{font-size:13px;color:rgba(255,255,255,.74);margin-bottom:4px}
+.pnote{font-size:13px;color:rgba(255,255,255,.62);margin:10px 0 14px;line-height:1.45}
+.btn{display:block;width:100%;text-align:center;background:#fff;color:var(--ocean2);border:none;border-radius:12px;padding:13px;font-size:14.5px;font-weight:700;cursor:pointer;text-decoration:none}
+.btn.gold{background:linear-gradient(120deg,var(--gold),#c89a3a);color:#1a1205}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.42);color:#fff;margin-top:9px;font-weight:600}
+.btn.wa{background:#1faa55;color:#fff;margin-top:9px;display:flex;align-items:center;justify-content:center;gap:8px}
+.muted{font-size:11.5px;color:rgba(255,255,255,.5);margin-top:11px;line-height:1.4}
+
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:4px 0 12px}
+.metric{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px}
+.metric b{font-size:16px;display:block}.metric span{font-size:10.5px;color:rgba(255,255,255,.65)}
+.badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.bdg{font-size:11px;color:#eafff5;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:30px;padding:6px 11px}
+.scar{margin:10px 0 2px}
+.scar .lab{display:flex;justify-content:space-between;font-size:11.5px;color:rgba(255,255,255,.7);margin-bottom:5px}
+.scar .lab b{color:#fff}
+.scar .bar{height:7px;border-radius:5px;background:rgba(255,255,255,.12);overflow:hidden}
+.scar .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ocean),var(--gold))}
+
+.steps{display:grid;gap:13px}.steps .s{display:flex;gap:13px;align-items:flex-start}
+.steps .n{flex:0 0 30px;height:30px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;font-size:14px;color:var(--gold)}
+.steps .s b{font-size:15px}.steps .s span{font-size:13px;color:rgba(255,255,255,.72);display:block;margin-top:2px}
+.plogos{display:flex;gap:12px;margin-top:4px}
+.plogo{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 10px;text-align:center}
+.plogo b{font-size:17px;letter-spacing:.1em;display:block}.plogo span{font-size:10px;color:var(--gold);letter-spacing:.05em;text-transform:uppercase;display:block;margin-top:6px}
+.fld{margin-bottom:12px}.fld .lab{display:flex;justify-content:space-between;font-size:12.5px;color:rgba(255,255,255,.72);margin-bottom:6px}.fld .lab b{color:#fff}
+input[type=range]{width:100%;accent-color:var(--gold);height:22px}
+.calcout{display:flex;align-items:baseline;gap:10px;margin:8px 0 2px}.calcout .big{font-size:33px;color:var(--gold)}.calcout .cap{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.kpis{display:flex;gap:18px;margin:10px 0 2px}.kpis .kn{font-size:18px}.kpis .kl{font-size:11px;color:rgba(255,255,255,.6)}
+.frm label{font-size:11px;color:rgba(255,255,255,.65);display:block;margin:9px 0 4px}
+.frm input{width:100%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;border-radius:10px;padding:12px;font-size:14px}
+.frm input::placeholder{color:rgba(255,255,255,.4)}
+.reopen{position:absolute;left:50%;bottom:124px;transform:translateX(-50%);z-index:4;display:none;align-items:center;gap:7px;font-size:12.5px;color:#fff;background:rgba(8,20,16,.82);border:1px solid rgba(255,255,255,.22);border-radius:30px;padding:9px 16px;cursor:pointer;backdrop-filter:blur(8px);white-space:nowrap}
+@media(min-width:880px){.reopen{bottom:30px}}
+.card.nobar .reopen{bottom:30px}
+.reopen.show{display:inline-flex;animation:pop .4s}
+.contchip{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12.5px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:30px;padding:8px 15px;cursor:pointer}
+.gal{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;margin-top:6px;touch-action:pan-x;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal figure{flex:0 0 auto;width:140px;margin:0}
+.gal img{width:140px;height:186px;object-fit:cover;border-radius:13px;display:block;background:#0a1f18}
+.gal figcaption{font-size:11px;color:rgba(255,255,255,.72);margin-top:6px;text-align:center}
+
+.leadbar{position:absolute;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:14px 16px calc(16px + env(safe-area-inset-bottom));background:linear-gradient(to top,rgba(4,14,11,.96),rgba(4,14,11,.6) 65%,rgba(4,14,11,0))}
+.lbtn{flex:1;text-align:center;border:none;border-radius:13px;padding:15px 12px;font-size:14.5px;font-weight:700;cursor:pointer;text-decoration:none}
+.lbtn.primary{background:linear-gradient(120deg,var(--gold),#c89a3a);color:#1a1205}
+.lbtn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(8px)}
+.hint{position:absolute;bottom:94px;left:0;right:0;z-index:20;text-align:center;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6);pointer-events:none;animation:pulse 2.4s infinite}
+@media(min-width:880px){.hint{bottom:18px}}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.9}}
+.lmodal{position:absolute;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(4,12,10,.66);backdrop-filter:blur(4px)}
+.lmodal.open{display:flex;animation:fade .25s}@keyframes fade{from{opacity:0}to{opacity:1}}
+.lcard{width:100%;max-width:360px;background:#0c1a16;border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px;position:relative;animation:pop .35s}
+.lcard h3{font-size:23px;margin-bottom:4px}.lcard .pk{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}.lcard p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:6px;line-height:1.5}
+.lx{position:absolute;top:14px;right:14px;width:30px;height:30px;border:none;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:18px;cursor:pointer}
+
+/* rail (desktop) */
+.rbrand{display:flex;align-items:center;gap:9px;margin-bottom:20px}
+.rbrand .dot{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--gold),#a87b1e)}
+.rbrand b{font-size:12px;letter-spacing:.13em;text-transform:uppercase}
+.rkicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.rh{font-size:23px;line-height:1.1;margin-bottom:9px}
+.rail .metrics{grid-template-columns:repeat(4,1fr);gap:6px;margin:2px 0 10px}
+.rail .metric{padding:7px 5px;text-align:center}
+.rail .metric b{font-size:13.5px}
+.rail .metric span{font-size:8.5px;letter-spacing:.02em}
+.rail .badges{margin-top:9px!important}
+.rail .bdg{padding:5px 9px;font-size:10px}
+@media(max-height:780px){.rail .badges{display:none!important}.rail .rfoot{margin-top:6px}.rgold{font-size:11.5px;padding:8px 10px}}
+.rgold{font:600 12.5px Montserrat;color:#1a1205;background:linear-gradient(120deg,var(--gold),#c89a3a);border-radius:10px;padding:10px 12px;margin:0 0 12px;line-height:1.45}
+.rform input{width:100%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;border-radius:10px;padding:11px 12px;font-size:13.5px;margin-bottom:7px}
+.rform input::placeholder{color:rgba(255,255,255,.4)}
+.rfoot{font-size:10.5px;color:rgba(255,255,255,.5);margin-top:9px;line-height:1.45}
+</style>
+</head>
+<body>
+<div class="bgblur" id="bgblur"></div>
+
+<div class="shell">
+  <div class="stage" id="stage">
+    <div class="peek peekL" id="peekL"></div>
+    <div class="peek peekR" id="peekR"></div>
+    <div class="bars" id="bars"></div>
+    <div class="topbar">
+      <img class="blogo ix" src="spc_v3_assets/img/logo_chip.png" alt="Sport Passport Club">
+      <div class="tools">
+        <a class="icobtn ix" href="SportPassportClub_Website_v10.html" title="Choose experience" style="text-decoration:none;font-size:13px">⌂</a>
+        <button class="skip ix" id="skip">Get offer ›</button>
+        <span class="count ix" id="count">1 / 22</span>
+        <button class="icobtn ix" id="mute" title="Sound">🔇</button>
+      </div>
+    </div>
+    <div class="deck" id="deck"></div>
+    <div class="hint" id="hint">‹ swipe ›&nbsp;&nbsp;·&nbsp;&nbsp;↑ dossier&nbsp;&nbsp;·&nbsp;&nbsp;tap 🔇 for sound</div>
+    <div class="leadbar ix" id="leadbar">
+      <button class="lbtn primary" data-lead>Get the dossier</button>
+      <a class="lbtn ghost" id="bookcall" href="#" target="_blank" rel="noopener">Book a call</a>
+    </div>
+    <div class="lmodal ix" id="lmodal">
+      <div class="lcard">
+        <button class="lx" id="lclose">×</button>
+        <div class="pk">Founder dossier</div>
+        <h3 class="serif">Get the full dossier</h3>
+        <p>Homes, ownership, prices and the Passport — sent straight to you. No commitment.</p>
+        <form class="frm" data-form="modal">
+          <label>Full name</label><input data-f="name" required placeholder="Your name">
+          <label>Email</label><input data-f="email" type="email" required placeholder="you@email.com">
+          <label>Mobile</label><input data-f="phone" type="tel" required placeholder="+34 ...">
+          <button class="btn gold" type="submit" style="margin-top:16px">Send me the dossier</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <aside class="rail">
+    <img src="spc_v3_assets/img/logo_chip.png" alt="Sport Passport Club" style="width:142px;border-radius:10px;margin-bottom:10px">
+    <div class="rkicker">Founding cohort · Sumba, Indonesia</div>
+    <h1 class="rh serif">Beachfront homes from €25,000</h1>
+    <div class="rgold">1 home = free nights every year at every future destination, worldwide. Forever.</div>
+    <div class="rtrio">
+      <div class="it"><span class="ic serif">I</span><span><b>Your studio, yours</b> — legal title, 240 m² land.</span></div>
+      <div class="it"><span class="ic serif">II</span><span><b>Free nights worldwide</b> — every new Club, every year.</span></div>
+      <div class="it"><span class="ic serif">III</span><span><b>100+ sports</b> at your door.</span></div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><b class="serif">€16.3M</b><span>invested</span></div>
+      <div class="metric"><b class="serif">24</b><span>units delivered</span></div>
+      <div class="metric"><b class="serif">474</b><span>owners</span></div>
+      <div class="metric"><b class="serif">40+</b><span>countries</span></div>
+    </div>
+    <form class="rform frm" data-form="rail" style="margin-top:16px">
+      <input data-f="email" type="email" required placeholder="Email">
+      <input data-f="phone" type="tel" required placeholder="+34 mobile">
+      <button class="btn gold" type="submit">Get the founder dossier</button>
+      <a class="btn wa" id="rwa" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+      <a id="rcal" href="#" target="_blank" rel="noopener" style="display:block;text-align:center;margin-top:8px;font-size:12.5px;color:var(--gold);font-weight:600;text-decoration:underline">Book a 20-min call</a>
+    </form>
+    <div class="badges" style="margin-top:14px">
+      <span class="bdg">🏆 CNN #1 island</span><span class="bdg">Legal title</span><span class="bdg">Sign online or with a notary</span><span class="bdg">100% transferable</span>
+    </div>
+    <div class="rfoot">You own the home · Legal title · Sign online or with a notary.</div>
+  </aside>
+</div>
+
+<script>
+const ASSET="spc_v3_assets";
+const CAL="https://calendly.com/equinoxinvestmentgroup/eco-beach-city-info-call";
+const WA="https://wa.me/34687358010?text="+encodeURIComponent("Hi! I'm interested in Sport Passport Club — a beachfront home from €25,000. Please send me the founder dossier.");
+/* ===== LEAD DESTINATION ===== When you port this to Lovable, set LEAD_ENDPOINT to your
+   Lovable Cloud insert (table 'inquiries') so leads show in /admin. PIXEL_ID / GA_ID enable
+   Meta + Google Ads conversions. Until then leads are kept in localStorage + WhatsApp. */
+const LEAD_ENDPOINT="";
+const PIXEL_ID="";
+const GA_ID="";
+
+document.getElementById('bookcall').href=CAL;
+document.getElementById('rwa').href=WA;
+const rc=document.getElementById('rcal');if(rc)rc.href=CAL;
+
+const DATA=[
+ {v:"P2HbSS4d5FQ",role:"cover",kicker:"Sport Passport Club · Sumba, Indonesia",t:"Own a beachfront home.\nUnlock the world.",s:"From €25,000 — and a passport to free stays at every Club we open, anywhere on earth."},
+ {v:"u30fPz8x_mI",kicker:"The destination",t:"Sumba, Indonesia",s:"300+ days of sun a year. Calm turquoise water. Your new front yard."},
+ {v:"3TTVHnpbToE",kicker:"The island",t:"#1 island in the world.",s:"Ranked the most beautiful island on earth by CNN Travel — turquoise lagoons, empty beaches and wild green hills."},
+ {v:"BK0-90aZ-Kc",kicker:"Getting there",t:"45 minutes from Bali.",s:"A short hop from Bali — and a world away from the crowds."},
+
+ {v:"zWIsVGWHBfs",role:"home",kicker:"Home 01 · Own it",t:"Beachfront Studio",price:"€25,000",specs:"240 m² land · founding tier",rent:"Est. rental ~€100 / night",photo:"delivered-bedroom",
+   pnote:"Book now, pay later as we build. Real ownership, legal title — not a timeshare. Comes with the Sport Passport."},
+ {v:"CWTKFA1rIaY",role:"home",kicker:"Home 02 · Own it",t:"Beachfront Villa",price:"€350,000",specs:"1,000 m² land · 150 m² house",rent:"Est. rental ~€500 / night",photo:"amoda",
+   pnote:"Your own villa on the ocean. Book now, pay later. Live it, rent it, or sell it — whenever you want."},
+
+ {v:"wwWshK7zHKM",kicker:"The Passport",t:"Free nights.\nEvery Club. Forever.",s:"Every new Sport Passport Club we open, your membership unlocks free stays. Founders own the most of it."},
+
+ {v:"P2HbSS4d5FQ",role:"trust",kicker:"This is real",t:"Not renders. Delivered."},
+ {v:"VtnsXXJbVEA",role:"gallery",kicker:"Life at the club",t:"Wake up here."},
+
+ {v:"DV3f352jbGL",kicker:"100+ sports, one shoreline",t:"Tennis at golden hour.",s:"Clay and hard courts a few steps from the sea."},
+ {v:"DYcPbV2on6T",t:"Night games under the lights.",s:"When the sun goes down, the courts come alive."},
+ {v:"DYNWLW8MsYS",t:"Ride the coastline at sunrise.",s:"Coastal trails, road and MTB — your morning commute is the view."},
+ {v:"DSAp7GriJXZ",kicker:"The gym",t:"Equipped by Technogym.",s:"The same kit as Olympic teams and the world's finest resorts."},
+ {v:"DZHUd_DP6V8",t:"Spin, CrossFit, padel & 90 more.",s:"One pass. Every discipline."},
+
+ {v:"DZFxYzysWBd",role:"partners",kicker:"Built & equipped by the best",t:"Made to last on the coast."},
+
+ {v:"DYSPcu3MjEF",kicker:"Recover",t:"Cold plunge at dawn.",s:"Sauna, ice, massage and sleep — the other half of performance."},
+ {v:"DSe3E0ODSkt",kicker:"Fuel",t:"Eat like you mean it.",s:"Fresh, local, seasonal — food that matches the life."},
+ {v:"DZAkuQpIsZ1",t:"Work from paradise.",s:"Fast fibre, quiet corners, and the beach 30 seconds away."},
+
+ {v:"DSusnCJDZQX",role:"howitworks",kicker:"How it works",t:"Three steps to the beach."},
+ {v:"DYvChL6NO3_",role:"calc",kicker:"Live it. Rent it.",t:"Your home. Your income."},
+ {v:"DU2PbU4k5h_",role:"founder",kicker:"Founding cohort",t:"The first owners\nget the most.",s:"Limited founding spots. Prices rise after the first homes — and founders keep the most free nights, forever."},
+ {v:"VtnsXXJbVEA",t:"Your beach. Your sport.\nYour passport.",s:"One shoreline. A hundred ways to move. A whole world of Clubs ahead."},
+ {v:"DZKzP19ot1W",role:"cta",kicker:"Founding spots are limited",t:"Claim your beach."}
+];
+
+const GAL=[["al_door","The entrance"],["g1","Villas & pools"],["al_passport","Your passport"],["g2","Studio suite"],["al_padel","Padel"],["al_gym","The gym"],["g4","Ocean pavilion"],["al_pool","Lap pool"],["al_cinema","Open-air cinema"],["al_stables","The stables"],["al_firepit","Firepit nights"],["g7","Ocean terrace"]];
+const deck=document.getElementById('deck'),bars=document.getElementById('bars');
+const poster=v=>`${ASSET}/posters/${v}.jpg`,vsrc=v=>`${ASSET}/videos/${v}.mp4`,img=n=>`${ASSET}/img/${n}.jpg`;
+let soundOn=false;
+
+DATA.forEach((d,i)=>{
+  const nobar=(d.role==='home'||d.role==='cta');
+  const card=document.createElement('div');
+  card.className='card'+(d.role==='cover'?' cover':'')+(nobar?' nobar':'');
+  card.dataset.hold=(d.role==='home'||d.role==='calc'||d.role==='cta'||d.role==='gallery')?'1':'0';
+  const video=document.createElement('video');
+  video.muted=true;video.playsInline=true;video.setAttribute('webkit-playsinline','');
+  video.preload='none';video.poster=poster(d.v);video.dataset.src=vsrc(d.v);
+  if(card.dataset.hold==='1')video.loop=true;
+  card.appendChild(video);
+  card.insertAdjacentHTML('beforeend','<div class="scrim"></div>');
+  const head=l=>`<div class="phead ix"><div class="grip">${l}</div><button class="pclose" title="Close">×</button></div>`;
+  let inner='';
+  if(d.role==='home'){
+    inner=`<div class="panel ix">${head('Drag · Home')}<div class="pbody">
+      <img class="pthumb" src="${img(d.photo)}" alt="">
+      <div class="pk">${d.kicker}</div><h3 class="serif">${d.t}</h3>
+      <div class="price serif">${d.price} <small>land included</small></div>
+      <div class="specs">${d.specs} · ${d.rent}</div><div class="pnote">${d.pnote}</div>
+      <button class="btn gold" data-lead>Request info &amp; dossier</button>
+      <a class="btn wa" href="${WA}" target="_blank" rel="noopener">WhatsApp us</a>
+      <div class="muted">You own the home · Legal title · Sign online or with a notary.</div></div></div>`;
+  }else if(d.role==='trust'){
+    inner=`<div class="panel ix">${head('Proof')}<div class="pbody">
+      <div class="pk">${d.kicker}</div><h3 class="serif">${d.t}</h3>
+      <div class="metrics" style="margin-top:10px">
+        <div class="metric"><b class="serif">€16.3M</b><span>invested</span></div>
+        <div class="metric"><b class="serif">24</b><span>units delivered</span></div>
+        <div class="metric"><b class="serif">474</b><span>owners</span></div>
+        <div class="metric"><b class="serif">40+</b><span>countries</span></div>
+      </div>
+      <img class="pthumb" style="height:84px;margin-top:10px" src="${img('delivered-bedroom')}" alt="">
+      <div class="badges"><span class="bdg">🏆 CNN #1 island</span><span class="bdg">Legal title</span><span class="bdg">Sign online or with a notary</span><span class="bdg">100% transferable</span></div>
+      <div class="contchip" data-next>Continue ›</div></div></div>`;
+  }else if(d.role==='gallery'){
+    inner=`<div class="panel ix">${head('Real homes')}<div class="pbody">
+      <div class="pk">${d.kicker}</div><h3 class="serif">${d.t}</h3>
+      <div class="muted" style="margin:2px 0 8px">A day inside Sport Passport Club. Swipe →</div>
+      <div class="gal ix">${GAL.map(g=>`<figure><img loading="lazy" src="${img(g[0])}" alt="${g[1]}"><figcaption>${g[1]}</figcaption></figure>`).join('')}</div>
+      <div class="contchip" data-next>Continue ›</div></div></div>`;
+  }else if(d.role==='partners'){
+    inner=`<div class="panel ix">${head('Partners')}<div class="pbody">
+      <div class="pk">${d.kicker}</div><h3 class="serif">${d.t}</h3>
+      <div class="plogos"><div class="plogo"><b class="serif">AMODA</b><span>#1 prefab homes · Indonesia</span></div><div class="plogo"><b class="serif">TECHNOGYM</b><span>World #1 gym equipment</span></div></div>
+      <div class="muted">Engineered to last on the coast — equipped like an Olympic training centre.</div>
+      <div class="contchip" data-next>Continue ›</div></div></div>`;
+  }else if(d.role==='howitworks'){
+    inner=`<div class="panel ix">${head('How it works')}<div class="pbody">
+      <div class="pk">${d.kicker}</div><h3 class="serif" style="margin-bottom:13px">${d.t}</h3>
+      <div class="steps">
+        <div class="s"><div class="n">1</div><div><b>Get the dossier</b><span>Photos, project, ownership, prices. No commitment.</span></div></div>
+        <div class="s"><div class="n">2</div><div><b>A 20-minute call</b><span>We show you everything and answer every question.</span></div></div>
+        <div class="s"><div class="n">3</div><div><b>Reserve &amp; sign</b><span>Secure your home and passport — sign online or with a notary.</span></div></div>
+      </div><button class="btn gold" data-lead style="margin-top:14px">Get the dossier</button></div></div>`;
+  }else if(d.role==='calc'){
+    inner=`<div class="panel ix">${head('Income calculator')}<div class="pbody">
+      <div class="pk">${d.kicker}</div><h3 class="serif" style="margin-bottom:11px">${d.t}</h3>
+      <div class="fld"><div class="lab"><span>Price per night</span><b id="c_pn">€90</b></div><input id="pn" type="range" min="40" max="250" step="5" value="90"></div>
+      <div class="fld"><div class="lab"><span>Nights rented / year</span><b id="c_nt">90</b></div><input id="nt" type="range" min="0" max="300" step="5" value="90"></div>
+      <div class="calcout"><div class="big serif" id="c_net">€6,075</div><div class="cap">net / year, est.</div></div>
+      <div class="kpis"><div><div class="kn serif" id="c_roi">24%</div><div class="kl">on €25,000</div></div><div><div class="kn serif" id="c_pay">4.1 yrs</div><div class="kl">to recoup</div></div></div>
+      <div class="muted">We manage rentals (keep 25%); you keep 75%. Estimate only — not a guaranteed return.</div></div></div>`;
+  }else if(d.role==='cta'){
+    inner=`<div class="panel ix">${head('Claim your spot')}<div class="pbody">
+      <div class="pk">${d.kicker}</div><h3 class="serif">${d.t}</h3>
+      <div class="muted" style="margin:6px 0 2px;font-size:13px;color:rgba(255,255,255,.8)">100+ sports · €16.3M invested · 24 delivered · from €25,000.</div>
+      <form class="frm" data-form="cta">
+        <label>Full name</label><input data-f="name" required placeholder="Your name">
+        <label>Email</label><input data-f="email" type="email" required placeholder="you@email.com">
+        <label>Mobile</label><input data-f="phone" type="tel" required placeholder="+34 ...">
+        <button class="btn gold" type="submit" style="margin-top:15px">Send me the founder dossier</button>
+      </form>
+      <a class="btn wa" href="${WA}" target="_blank" rel="noopener">WhatsApp us</a></div></div>`;
+  }else{
+    inner=`<div class="body">${d.kicker?`<span class="kicker">${d.kicker}</span>`:''}<h2 class="serif">${d.t}</h2>${d.s?`<p class="sub">${d.s}</p>`:''}${d.role==='cover'?`<div class="trio3"><span class="chip3">Home from €25k</span><span class="chip3">Free nights worldwide, every year</span><span class="chip3">100+ sports</span></div>`:''}</div>`;
+  }
+  card.insertAdjacentHTML('beforeend',inner);
+  if(card.querySelector('.panel'))card.insertAdjacentHTML('beforeend','<button class="reopen ix">ⓘ View details</button>');
+  deck.appendChild(card);
+  const seg=document.createElement('div');seg.className='seg';seg.innerHTML='<i></i>';bars.appendChild(seg);
+});
+
+const cards=[...deck.querySelectorAll('.card')],segs=[...bars.querySelectorAll('.seg')],fills=segs.map(s=>s.querySelector('i'));
+const countEl=document.getElementById('count'),hintEl=document.getElementById('hint'),leadbar=document.getElementById('leadbar');
+const peekL=document.getElementById('peekL'),peekR=document.getElementById('peekR');
+const last=cards.length-1;let idx=-1,lock=false,dwell=null;const CAP=14;
+
+function ensureLoaded(i){if(i<0||i>last)return;const v=cards[i].querySelector('video');if(!v.dataset.loaded){v.src=v.dataset.src;v.load();v.dataset.loaded='1';}v.muted=!soundOn;}
+function clearInline(c){c.style.transition='';c.style.transform='';c.style.visibility='';c.style.opacity='';c.style.zIndex='';}
+function paintBars(i){fills.forEach((f,k)=>{f.style.width=k<i?'100%':'0%';segs[k].classList.toggle('done',k<i);});}
+function updateLeadbar(){const r=DATA[idx].role,p=cards[idx].querySelector('.panel');const open=p&&!p.classList.contains('closed');leadbar.style.display=((r==='home'||r==='cta')&&open)?'none':'flex';}
+
+function activate(i){
+  if(dwell){clearTimeout(dwell);dwell=null;}
+  cards.forEach((c,k)=>{clearInline(c);c.classList.toggle('active',k===i);const v=c.querySelector('video');
+    if(k===i){ensureLoaded(i);try{v.currentTime=0;}catch(e){}const p=v.play();if(p&&p.catch)p.catch(()=>{});}else v.pause();});
+  idx=i;paintBars(i);countEl.textContent=(i+1)+' / '+cards.length;
+  document.getElementById('bgblur').style.backgroundImage=`url(${poster(DATA[i].v)})`;
+  peekL.style.backgroundImage=i>0?`url(${poster(DATA[i-1].v)})`:'none';
+  peekR.style.backgroundImage=i<last?`url(${poster(DATA[i+1].v)})`:'none';
+  ensureLoaded(i+1);hintEl.style.display=i>0?'none':'block';updateLeadbar();
+  if(cards[i].dataset.hold!=='1'){dwell=setTimeout(()=>{if(idx===i)next();},CAP*1000);}
+}
+function go(i){if(i<0)i=0;if(i>last)i=last;if(i===idx)return;activate(i);}
+function next(){if(idx<last&&!lock)go(idx+1);}
+function prev(){if(idx>0&&!lock)go(idx-1);}
+
+cards.forEach((card,i)=>{const v=card.querySelector('video');
+  v.addEventListener('timeupdate',()=>{if(i!==idx)return;if(card.dataset.hold==='1'){fills[i].style.width='100%';return;}const eff=Math.min(v.duration||CAP,CAP);fills[i].style.width=Math.min(100,v.currentTime/eff*100)+'%';});
+  v.addEventListener('ended',()=>{if(i===idx&&card.dataset.hold!=='1')next();});
+});
+
+/* drag carousel */
+const stage=document.getElementById('stage');
+let down=false,sx=0,sy=0,st=0,axis=null,dx=0,W=0;
+function peekPrep(){const p=cards[idx-1],n=cards[idx+1];[p,n].forEach(c=>{if(c){c.style.transition='none';c.style.visibility='visible';c.style.opacity='1';c.style.zIndex='2';}});}
+function place(d){const a=cards[idx],p=cards[idx-1],n=cards[idx+1];a.style.transition='none';a.style.transform=`translateX(${d}px)`;if(p)p.style.transform=`translateX(${-W+d}px)`;if(n)n.style.transform=`translateX(${W+d}px)`;}
+function commit(dir){lock=true;const a=cards[idx],b=cards[idx+dir];[a,b].forEach(c=>c.style.transition='transform .34s cubic-bezier(.22,.61,.36,1)');a.style.transform=`translateX(${dir<0?W:-W}px)`;b.style.transform='translateX(0)';setTimeout(()=>{activate(idx+dir);lock=false;},345);}
+function snap(){const a=cards[idx],p=cards[idx-1],n=cards[idx+1];[a,p,n].forEach(c=>{if(c)c.style.transition='transform .3s ease';});a.style.transform='translateX(0)';if(p)p.style.transform=`translateX(${-W}px)`;if(n)n.style.transform=`translateX(${W}px)`;setTimeout(()=>{if(p)clearInline(p);if(n)clearInline(n);clearInline(a);},310);}
+stage.addEventListener('pointerdown',e=>{if(lock||e.target.closest('.ix'))return;down=true;sx=e.clientX;sy=e.clientY;st=Date.now();axis=null;dx=0;W=stage.clientWidth;try{stage.setPointerCapture(e.pointerId);}catch(_){}});
+stage.addEventListener('pointermove',e=>{if(!down)return;const mx=e.clientX-sx,my=e.clientY-sy;if(!axis){if(Math.abs(mx)>9||Math.abs(my)>9){axis=Math.abs(mx)>Math.abs(my)?'x':'y';if(axis==='x')peekPrep();}}if(axis==='x'){e.preventDefault();let d=mx;if((idx===0&&d>0)||(idx===last&&d<0))d*=0.32;dx=d;place(d);}});
+function endDrag(e){if(!down)return;down=false;const my=e.clientY-sy,dt=Date.now()-st;if(axis==='x'){const th=W*0.16;if(dx<=-th&&idx<last)commit(1);else if(dx>=th&&idx>0)commit(-1);else snap();}else if(axis==='y'){if(my<-70){openLead();}else if(my>70){prev();}}else if(dt<300){const r=stage.getBoundingClientRect();(e.clientX-r.left)<r.width*0.30?prev():next();}axis=null;}
+stage.addEventListener('pointerup',endDrag);
+stage.addEventListener('pointercancel',()=>{if(down){down=false;if(axis==='x')snap();axis=null;}});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();next();}else if(e.key==='ArrowLeft')prev();});
+
+/* draggable + closable panels */
+cards.forEach(card=>{const panel=card.querySelector('.panel');if(!panel)return;
+  const head=panel.querySelector('.phead'),closeBtn=panel.querySelector('.pclose'),reopen=card.querySelector('.reopen');
+  let pd=false,px=0,py=0,ox=0,oy=0;
+  head.addEventListener('pointerdown',e=>{if(e.target.closest('.pclose'))return;pd=true;px=e.clientX;py=e.clientY;ox=+panel.dataset.tx||0;oy=+panel.dataset.ty||0;try{head.setPointerCapture(e.pointerId);}catch(_){}e.stopPropagation();});
+  head.addEventListener('pointermove',e=>{if(!pd)return;e.stopPropagation();const nx=ox+(e.clientX-px),ny=oy+(e.clientY-py);panel.dataset.tx=nx;panel.dataset.ty=ny;panel.style.transform=`translate(${nx}px,${ny}px)`;panel.style.animation='none';});
+  const stop=()=>{pd=false;};head.addEventListener('pointerup',stop);head.addEventListener('pointercancel',stop);
+  closeBtn.addEventListener('click',e=>{e.stopPropagation();panel.classList.add('closed');if(reopen)reopen.classList.add('show');updateLeadbar();});
+  if(reopen)reopen.addEventListener('click',e=>{e.stopPropagation();panel.classList.remove('closed');reopen.classList.remove('show');panel.style.transform='';panel.dataset.tx=0;panel.dataset.ty=0;updateLeadbar();});
+});
+
+/* nav chips + lead */
+deck.addEventListener('click',e=>{if(e.target.closest('[data-next]'))next();if(e.target.closest('[data-lead]'))openLead();});
+
+/* ===== leads ===== */
+function utm(){const q=new URLSearchParams(location.search);return{utm_source:q.get('utm_source'),utm_medium:q.get('utm_medium'),utm_campaign:q.get('utm_campaign')};}
+function fireLeadPixel(){try{if(PIXEL_ID&&window.fbq)fbq('track','Lead',{value:25000,currency:'EUR'});}catch(e){}try{if(GA_ID&&window.gtag)gtag('event','generate_lead',{currency:'EUR',value:25000});}catch(e){}}
+function saveLead(data){
+  const lead=Object.assign({interest:'sport-passport-club',ts:new Date().toISOString(),page:location.pathname},utm(),data);
+  try{const k='spc_leads',a=JSON.parse(localStorage.getItem(k)||'[]');a.push(lead);localStorage.setItem(k,JSON.stringify(a));}catch(e){}
+  if(LEAD_ENDPOINT){try{fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{});}catch(e){}}
+  fireLeadPixel();return true;
+}
+function thankBox(box){box.innerHTML='<div class="pk">Thank you</div><h3 class="serif">You\'re in.</h3><div class="muted" style="font-size:13px;color:rgba(255,255,255,.82)">Choose your next step — the dossier opens in a new tab, you can come back to book your call.</div><a class="btn gold" style="margin-top:12px" href="SportPassportClub_Dossier.pdf" target="_blank" rel="noopener">Download the dossier (PDF)</a><a class="btn ghost" style="margin-top:9px" href="'+CAL+'" target="_blank" rel="noopener">Schedule a 20-min call</a><a class="btn wa" style="margin-top:9px" href="'+WA+'" target="_blank" rel="noopener">WhatsApp</a>';}
+document.addEventListener('submit',e=>{const f=e.target.closest('[data-form]');if(!f)return;e.preventDefault();
+  const lead={};f.querySelectorAll('[data-f]').forEach(el=>lead[el.dataset.f]=el.value.trim());
+  saveLead(Object.assign(lead,{source:f.getAttribute('data-form')}));
+  thankBox(f.closest('.pbody')||f.closest('.lcard')||f);
+});
+
+/* lead modal */
+const lmodal=document.getElementById('lmodal');
+function openLead(){lmodal.classList.add('open');}function closeLead(){lmodal.classList.remove('open');}
+leadbar.querySelector('[data-lead]').addEventListener('click',openLead);
+document.getElementById('lclose').addEventListener('click',closeLead);
+lmodal.addEventListener('click',e=>{if(e.target===lmodal)closeLead();});
+/* exit-intent (desktop): cursor leaves the top → offer the dossier once */
+let exitDone=false;try{exitDone=!!sessionStorage.getItem('spc_exit');}catch(_){}
+document.addEventListener('mouseout',e=>{if(exitDone)return;if(e.clientY<=0&&!e.relatedTarget){exitDone=true;try{sessionStorage.setItem('spc_exit','1');}catch(_){}openLead();}});
+document.getElementById('skip').addEventListener('click',()=>{const k=DATA.findIndex(d=>d.role==='cta');if(k>=0)go(k);});
+
+/* mute */
+document.getElementById('mute').addEventListener('click',()=>{soundOn=!soundOn;document.getElementById('mute').textContent=soundOn?'🔊':'🔇';cards.forEach(c=>{c.querySelector('video').muted=!soundOn;});const cur=cards[idx].querySelector('video');if(soundOn){const p=cur.play();if(p&&p.catch)p.catch(()=>{});}});
+
+/* calculator */
+deck.addEventListener('input',e=>{if(e.target.id==='pn'||e.target.id==='nt'){const pn=+document.getElementById('pn').value,nt=+document.getElementById('nt').value,net=pn*nt*0.75,roi=net/25000*100,pay=net>0?25000/net:0,f=n=>'€'+Math.round(n).toLocaleString('en-US');document.getElementById('c_pn').textContent=f(pn);document.getElementById('c_nt').textContent=nt;document.getElementById('c_net').textContent=f(net);document.getElementById('c_roi').textContent=roi.toFixed(0)+'%';document.getElementById('c_pay').textContent=pay>0?pay.toFixed(1)+' yrs':'—';}});
+
+activate(0);
+
+/* ===== funnel events (ready for GA/Pixel; kept locally in spc_events) ===== */
+function spcTrack(ev,data){try{const e=Object.assign({ev,page:'v3',ts:Date.now()},data||{});const k='spc_events',a=JSON.parse(localStorage.getItem(k)||'[]');a.push(e);localStorage.setItem(k,JSON.stringify(a.slice(-400)));}catch(_){}
+ try{window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:'spc_'+ev},data||{}));}catch(_){}
+ try{if(window.fbq)fbq('trackCustom','SPC_'+ev,data||{});}catch(_){}}
+spcTrack('view');
+document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const h=a.getAttribute('href')||'';
+ if(h.indexOf('Dossier.pdf')>-1)spcTrack('dossier_open');
+ else if(h.indexOf('calendly')>-1)spcTrack('call_click');
+ else if(h.indexOf('wa.me')>-1)spcTrack('whatsapp_click');});
+document.addEventListener('submit',e=>{const f=e.target.closest('[data-form]');if(f)spcTrack('lead_submit',{source:f.getAttribute('data-form')});});
+</script>
+</body>
+</html>

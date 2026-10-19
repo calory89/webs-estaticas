@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="King of Streets: cada calle tiene un rey.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>King of Streets</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root{
+  --ink:#0A0E13; --ink2:#0E141B; --surface:#131C25; --surface2:#1A2530;
+  --line:#24323F; --road:#2B3A48; --road2:#35485A; --roadbig:#405668;
+  --fg:#E8EFF5; --muted:#8296A8; --dim:#5A6D7E;
+  --trace:#FF5B3D; --trace-glow:rgba(255,91,61,.35);
+  --gold:#F2C14E; --good:#3FD08A; --bad:#FF4D6A;
+  --plaque:#F3F1E9; --plaque-ink:#123A6B;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --cond:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--fg);font-family:var(--body);overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font-family:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--trace);outline-offset:2px}
+
+#app{position:fixed;inset:0;display:grid;grid-template-columns:300px 1fr;grid-template-rows:100%}
+#stage{position:relative;overflow:hidden;background:var(--ink)}
+#cv,#gl,#gl3{display:block;width:100%;height:100%;touch-action:none;position:absolute;inset:0}
+#mini{position:absolute;left:12px;bottom:12px;width:120px;height:120px;border-radius:6px;
+  box-shadow:0 4px 18px rgba(0,0,0,.25);pointer-events:none}
+
+/* ---------- left rail ---------- */
+#rail{background:var(--ink2);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.brand{padding:16px 16px 12px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:8px}
+.brand h1{font-family:var(--cond);font-weight:700;font-size:26px;letter-spacing:.06em;margin:0;text-transform:uppercase;line-height:1}
+.brand h1 em{font-style:normal;color:var(--trace)}
+.brand .v{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.1em}
+.railscroll{overflow-y:auto;flex:1;min-height:0;padding:14px 16px 18px;display:flex;flex-direction:column;gap:18px}
+.block{display:flex;flex-direction:column;gap:8px}
+.eyebrow{font-family:var(--cond);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--dim);font-weight:600}
+select,input[type=text]{width:100%;background:var(--surface);border:1px solid var(--line);color:var(--fg);
+  border-radius:4px;padding:9px 10px;font-family:var(--body);font-size:14px}
+input::placeholder{color:var(--dim)}
+.fromto{display:flex;flex-direction:column;gap:6px;position:relative}
+.ftrow{display:grid;grid-template-columns:38px 1fr;align-items:center;gap:8px}
+.ftrow span{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.08em}
+.btn{background:var(--trace);border:0;border-radius:4px;padding:11px 14px;font-family:var(--cond);
+  font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#180703;width:100%}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--fg)}
+.btn.ghost:hover{border-color:var(--road2);background:var(--surface)}
+.btn[disabled]{opacity:.45;cursor:default;filter:none}
+.seg{display:flex;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg button{flex:1;background:var(--surface);border:0;padding:7px 6px;font-family:var(--cond);
+  text-transform:uppercase;letter-spacing:.08em;font-size:11.5px;font-weight:600;color:var(--muted)}
+.seg button.on{background:var(--surface2);color:var(--fg);box-shadow:inset 0 -2px 0 var(--trace)}
+.races{display:flex;flex-direction:column;gap:5px}
+.race{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px;background:var(--surface);
+  border:1px solid transparent;border-left:2px solid var(--line);border-radius:0 4px 4px 0;padding:8px 10px;text-align:left;width:100%}
+.race:hover{background:var(--surface2);border-left-color:var(--trace)}
+.race.on{border-left-color:var(--trace);background:var(--surface2)}
+.race b{font-family:var(--cond);font-weight:600;font-size:14.5px;letter-spacing:.01em;display:block;line-height:1.15}
+.race small{color:var(--dim);font-size:11px;font-family:var(--mono)}
+.race .king{font-family:var(--mono);font-size:10px;color:var(--gold);white-space:nowrap}
+.territory{background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:12px}
+.territory .big{font-family:var(--cond);font-size:38px;font-weight:700;line-height:.95;color:var(--gold)}
+.territory p{margin:2px 0 0;font-size:12.5px;color:var(--muted)}
+.you{display:flex;gap:8px;align-items:center}
+.you input{flex:1}
+.sug{position:absolute;z-index:30;left:46px;right:0;background:var(--surface2);border:1px solid var(--road);
+  border-radius:4px;max-height:190px;overflow:auto;box-shadow:0 12px 28px rgba(0,0,0,.5)}
+.sug button{display:block;width:100%;text-align:left;background:none;border:0;padding:7px 10px;font-size:13px;color:var(--fg)}
+.sug button:hover,.sug button.hl{background:var(--trace);color:#180703}
+.hint{font-size:11.5px;color:var(--dim);line-height:1.45}
+.where{display:flex;gap:6px}
+.where input{flex:1}
+.where .btn{width:auto;padding:9px 14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.row2 .btn{padding:9px 8px;font-size:12.5px}
+#pickbar{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:40;display:flex;gap:10px;align-items:center;
+  background:rgba(14,20,27,.94);border:1px solid var(--line);border-radius:999px;padding:8px 8px 8px 16px;
+  font-family:var(--cond);letter-spacing:.06em;text-transform:uppercase;font-size:13px;color:var(--fg);white-space:nowrap;max-width:calc(100% - 24px)}
+#pickbar b{color:var(--trace)}
+#pickbar button{background:var(--surface2);border:1px solid var(--line);color:var(--fg);border-radius:999px;padding:6px 12px;
+  font-family:var(--cond);text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+#pickbar[hidden]{display:none}
+#challenge{position:absolute;left:50%;top:106px;transform:translateX(-50%);z-index:12;background:rgba(14,20,27,.92);
+  border:1px solid var(--trace);border-radius:6px;padding:8px 14px;font-family:var(--cond);letter-spacing:.05em;
+  font-size:14px;color:var(--fg);text-align:center;pointer-events:none;max-width:calc(100% - 24px)}
+#challenge b{color:var(--gold)}
+#challenge[hidden]{display:none}
+
+/* ---------- HUD ---------- */
+.hud{position:absolute;pointer-events:none;font-family:var(--mono)}
+#clock{top:14px;left:50%;transform:translateX(-50%);text-align:center;background:rgba(11,15,20,.80);
+  padding:6px 18px 8px;border-radius:6px;backdrop-filter:blur(6px);box-shadow:0 4px 18px rgba(0,0,0,.22)}
+#clock .t{font-size:42px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1;color:#F2F6FA}
+#clock .d{font-size:15px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+.d.up{color:var(--bad)} .d.dn{color:var(--good)}
+#timing{top:14px;right:14px;width:214px;display:flex;flex-direction:column;gap:3px}
+.sect{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;background:rgba(10,14,19,.78);
+  border-left:2px solid var(--line);padding:5px 8px;font-size:11.5px;backdrop-filter:blur(6px)}
+.sect.cur{border-left-color:var(--trace);background:rgba(19,28,37,.9)}
+.sect .nm{font-family:var(--body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.sect.cur .nm{color:var(--fg)}
+.sect .ms{font-variant-numeric:tabular-nums;color:var(--fg)}
+.sect .kg{color:var(--gold);font-size:10px}
+.sect.won .ms{color:var(--good)} .sect.lost .ms{color:var(--muted)}
+#plaque{bottom:18px;left:50%;transform:translateX(-50%);background:var(--plaque);color:var(--plaque-ink);
+  padding:7px 20px 8px;border-radius:2px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.5),inset 0 0 0 3px var(--plaque),inset 0 0 0 4px #C9D6E4;
+  max-width:min(74vw,460px)}
+#plaque .st{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;line-height:1.1}
+#plaque .kn{font-family:var(--mono);font-size:10px;color:#5C7391;margin-top:1px}
+#speedo{bottom:18px;right:18px;text-align:right;background:rgba(11,15,20,.80);padding:6px 14px 8px;
+  border-radius:6px;backdrop-filter:blur(6px);box-shadow:0 4px 18px rgba(0,0,0,.22)}
+#speedo .n{font-size:38px;font-weight:700;font-variant-numeric:tabular-nums;line-height:.9;color:#F2F6FA}
+#speedo .u{font-size:11px;color:var(--muted);letter-spacing:.16em}
+#warn{bottom:96px;left:50%;transform:translateX(-50%);color:#FFE3E8;background:rgba(196,32,62,.94);
+  padding:6px 14px;border-radius:5px;font-size:12.5px;letter-spacing:.1em;
+  text-transform:uppercase;font-weight:700;display:none}
+#lights{top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--cond);font-size:clamp(70px,16vw,150px);
+  font-weight:700;letter-spacing:.02em;line-height:1;text-shadow:0 3px 14px rgba(0,0,0,.45),0 0 60px rgba(0,0,0,.35)}
+#toasts{top:14px;left:14px;display:flex;flex-direction:column;gap:6px;max-width:300px}
+.toast{background:rgba(10,14,19,.92);border-left:3px solid var(--gold);padding:8px 12px;font-size:12.5px;
+  font-family:var(--body);line-height:1.35;backdrop-filter:blur(6px);animation:slide .35s ease both}
+.toast.lose{border-left-color:var(--bad)}
+@keyframes slide{from{opacity:0;transform:translateX(-14px)}}
+
+/* ---------- results ---------- */
+#results{position:absolute;inset:0;background:rgba(7,10,14,.9);backdrop-filter:blur(10px);display:none;
+  align-items:center;justify-content:center;padding:20px;overflow:auto}
+#results.on{display:flex}
+.card{background:var(--ink2);border:1px solid var(--line);border-radius:8px;width:min(560px,100%);overflow:hidden}
+.card header{padding:18px 22px 14px;border-bottom:1px solid var(--line)}
+.card header .lab{font-family:var(--cond);letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--dim)}
+.card header h2{font-family:var(--cond);font-size:30px;margin:2px 0 0;text-transform:uppercase;letter-spacing:.03em;font-weight:700}
+.finaltime{font-family:var(--mono);font-size:52px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1;padding:16px 22px 4px}
+.verdict{padding:0 22px 14px;font-size:14px;color:var(--muted)}
+.sectlist{padding:0 22px;display:flex;flex-direction:column}
+.sl{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
+.sl .n{font-family:var(--body)}
+.sl .m{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.sl .b{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase}
+.b.crown{color:var(--gold)} .b.keep{color:var(--dim)} .b.new{color:var(--good)}
+.board{padding:14px 22px 0}
+.board .row{display:grid;grid-template-columns:24px 1fr auto;gap:10px;font-family:var(--mono);font-size:12.5px;padding:4px 0;color:var(--muted)}
+.board .row.me{color:var(--fg)}
+.card footer{padding:16px 22px 20px;display:flex;gap:10px}
+.card footer .btn{flex:1}
+
+#loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:var(--ink);
+  font-family:var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-size:13px;z-index:5}
+#loading.off{display:none}
+
+/* ---------- touch ---------- */
+#touch{position:absolute;inset:auto 0 0 0;height:150px;display:none;pointer-events:none}
+#touch.on{display:block}
+.tb{position:absolute;bottom:16px;width:74px;height:74px;border-radius:50%;background:rgba(26,37,48,.82);
+  border:1px solid var(--road2);pointer-events:auto;display:flex;align-items:center;justify-content:center;
+  font-size:26px;color:var(--fg);user-select:none;-webkit-user-select:none}
+.tb:active,.tb.down{background:var(--trace);color:#180703}
+#tL{left:14px} #tR{left:100px} #tG{right:14px} #tB{right:100px;width:60px;height:60px;bottom:23px;font-size:19px}
+
+@media (max-width:820px){
+  #app{grid-template-columns:1fr;grid-template-rows:1fr auto}
+  #rail{border-right:0;border-top:1px solid var(--line);max-height:42vh;order:2}
+  #stage{order:1}
+  #timing{width:146px;top:70px;right:8px}
+  #mini{width:78px;height:78px;left:auto;right:10px;bottom:auto;top:232px}
+  .sect{font-size:10.5px;padding:4px 6px}
+  .sect:nth-child(n+4){display:none}
+  #clock{top:8px} #clock .t{font-size:30px} #clock .d{font-size:12px}
+  #speedo{bottom:auto;top:8px;right:auto;left:12px;text-align:left}
+  #speedo .n{font-size:26px} #speedo .u{font-size:9px}
+  #toasts{top:auto;bottom:160px;left:10px;right:10px;max-width:none}
+  #plaque{bottom:158px;max-width:min(88vw,330px);padding:5px 14px 6px}
+  #plaque .st{font-size:14px}
+  #warn{bottom:250px}
+  .railscroll{padding:12px 14px 16px}
+}
+@media (max-width:820px) and (pointer:fine){
+  #plaque{bottom:16px} #toasts{bottom:20px} #warn{bottom:110px}
+}
+
+/* ---------- vista fotorrealista ---------- */
+#gl{display:none}
+#gl3[hidden],#cv[hidden]{display:none}
+#gl .cesium-viewer{position:absolute;inset:0}
+#gl .cesium-widget canvas{width:100%!important;height:100%!important}
+#credits{position:absolute;left:0;bottom:0;z-index:6;color:#fff;font-size:10px;
+  font-family:var(--body);text-shadow:0 1px 3px rgba(0,0,0,.9);padding:3px 8px;pointer-events:auto}
+#credits a{color:#fff}
+#credits img{height:16px;vertical-align:middle}
+.cesium-widget-credits{color:#fff!important;font-size:10px!important}
+#loading{font-size:13px}
+
+/* ---------- v3: calle del día, temporada, bandas, pinturas, avisos, vídeo, primera vez ---------- */
+.daily{display:grid;gap:2px;text-align:left;width:100%;background:linear-gradient(135deg,#3A1408,#1A2530 70%);border:1px solid #6A2A14;
+  border-radius:6px;padding:10px 12px;color:var(--fg)}
+.daily:hover{border-color:var(--trace)}
+.daily .dl{font-family:var(--cond);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:#FF8A6A;font-weight:700}
+.daily b{font-family:var(--cond);font-size:19px;letter-spacing:.02em;line-height:1.1}
+.daily small{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.season{display:flex;align-items:flex-end;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:10px 12px}
+.season b{font-family:var(--cond);font-size:30px;color:var(--gold);line-height:.95;margin-right:6px}
+.season span{font-size:12.5px;color:var(--muted)}
+.season .end{font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+a.btn{display:block;text-align:center;text-decoration:none}
+.hint a{color:var(--muted)}
+.crew{background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:10px 12px;display:flex;flex-direction:column;gap:7px}
+.crew .ct{display:flex;gap:8px;align-items:center}
+.crew .ct b{font-family:var(--cond);font-size:18px}
+.crew small{color:var(--muted);font-size:12px}
+.crew code{font-family:var(--mono);color:var(--fg);background:var(--surface2);padding:1px 5px;border-radius:3px}
+.tag{font-family:var(--mono);font-size:11px;font-weight:700;background:var(--gold);color:#1A1204;padding:2px 6px;border-radius:3px}
+.crewf{display:flex;flex-direction:column;gap:6px}
+.crewf #crewTag{text-transform:uppercase;max-width:90px}
+.paints{display:flex;gap:7px;flex-wrap:wrap}
+.pt{width:32px;height:32px;border-radius:50%;border:2px solid var(--line);background:var(--pc);position:relative;padding:0}
+.pt.on{border-color:#fff;box-shadow:0 0 0 2px var(--trace)}
+.pt.lock{filter:grayscale(.85) brightness(.45)}
+.pt span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:#fff;font-weight:700}
+#ctlBlock .seg button{padding:9px 6px}
+@media (pointer:fine){ #ctlBlock{display:none} }
+.after{padding:0 22px}
+.guard{border-top:1px solid var(--line);padding:12px 0 2px}
+.guard .gt{font-family:var(--cond);letter-spacing:.06em;text-transform:uppercase;font-size:14px;margin-bottom:8px}
+.guard .gr{display:flex;gap:6px;flex-wrap:wrap}
+.guard .gr .btn{width:auto;padding:8px 12px;font-size:12.5px}
+.guard input{flex:1;min-width:150px;background:var(--surface);border:1px solid var(--line);color:var(--fg);border-radius:4px;padding:8px 10px;font-size:14px}
+.card footer{flex-wrap:wrap}
+.overlay{position:absolute;inset:0;z-index:50;background:rgba(7,10,14,.92);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:18px;overflow:auto}
+.overlay.on{display:flex}
+.ib{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.ib b{font-family:var(--cond);font-size:17px;display:block}
+.ib small{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.ib .btn{width:auto;padding:8px 12px;font-size:13px}
+#inbox .card header h2{color:var(--bad)}
+.inner{padding:6px 22px 4px}
+#onb .card{width:min(460px,100%)}
+#onb h2{font-size:34px;line-height:1}
+#onb p{color:var(--muted);font-size:14px;line-height:1.45;margin:0 0 12px}
+#onb .inner{display:flex;flex-direction:column;gap:9px;padding:14px 22px 6px}
+#onb input{font-size:16px;padding:12px}
+#onbMsg{min-height:16px}
+#vidwrap{flex-direction:column;gap:12px}
+.vidc{height:min(72vh,720px);max-width:92vw;aspect-ratio:9/16;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.6);background:#000;object-fit:contain}
+#vidmsg{font-family:var(--cond);letter-spacing:.08em;text-transform:uppercase;font-size:14px;color:var(--fg)}
+#vidbtns{display:flex;gap:8px}
+#vidbtns .btn{width:auto;padding:10px 16px}
+#vidbtns[hidden],#vid[hidden],#vidShare[hidden]{display:none}
+/* móvil: mandos grandes, inclinación y acelerador automático */
+@media (pointer:coarse){
+  .tb{width:88px;height:88px;font-size:30px}
+  #tR{left:112px} #tB{right:112px;width:70px;height:70px;bottom:25px}
+}
+#touch.tilt #tL,#touch.tilt #tR{display:none}
+#touch.auto #tG{opacity:.35}
+</style>
+
+<div id="app">
+  <aside id="rail">
+    <div class="brand"><img src="/favicon.svg" alt="" width="34" height="34" style="align-self:center;flex:none"><h1>King of<em>Streets</em></h1><span class="v">v7</span></div>
+    <div class="railscroll">
+      <div class="block">
+        <button type="button" class="daily" id="dailyBtn"><span class="dl">🔥 Calle del día</span><b id="dailyName">—</b><small id="dailyInfo">cargando…</small></button>
+      </div>
+      <div class="block">
+        <div class="eyebrow">Ciudad</div>
+        <select id="city" aria-label="Ciudad"></select>
+        <div class="where" id="whereRow">
+          <input type="text" id="where" autocomplete="off" placeholder="Cualquier ciudad del mundo…" aria-label="Dónde quieres correr">
+          <button class="btn" id="whereGo" type="button">Ir</button>
+        </div>
+        <div class="seg" role="group" aria-label="Aspecto del mapa">
+          <button type="button" id="skinDay" class="on">Día</button>
+          <button type="button" id="skinDusk">Atardecer</button>
+          <button type="button" id="skinNight">Noche</button>
+        </div>
+        <div class="seg" role="group" aria-label="Vista">
+          <button type="button" id="vChase" class="on">Tras el coche</button>
+          <button type="button" id="vHood">Capó</button>
+          <button type="button" id="vTop">Plano</button>
+          <button type="button" id="vGoogle" title="Imagen de Google, necesita clave">Google</button>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="eyebrow">Genera tu circuito</div>
+        <div class="fromto">
+          <div class="ftrow"><span>FROM</span><input type="text" id="from" autocomplete="off" placeholder="Calle Genaro Parladé"></div>
+          <div class="ftrow"><span>TO</span><input type="text" id="to" autocomplete="off" placeholder="Plaza de España"></div>
+        </div>
+        <button class="btn" id="gen">Race this route</button>
+        <div class="row2">
+          <button class="btn ghost" id="pickMap" type="button">Marcar en el mapa</button>
+          <button class="btn ghost" id="shareRoute" type="button">Retar a alguien</button>
+        </div>
+        <p class="hint" id="genhint">Escribe dos calles de cualquier ciudad del mundo, o márcalas en el mapa. El circuito sale de OpenStreetMap.</p>
+      </div>
+
+      <div class="block">
+        <div class="eyebrow">Carreras oficiales</div>
+        <div class="races" id="races"></div>
+      </div>
+
+      <div class="block">
+        <div class="eyebrow">Tu territorio</div>
+        <div class="territory">
+          <div class="big" id="terr">0</div>
+          <p id="terrtxt">calles bajo tu control</p>
+        </div>
+        <div class="you">
+          <input type="text" id="handle" maxlength="14" placeholder="Tu nombre" aria-label="Tu nombre">
+        </div>
+        <p class="hint">Cada calle tiene un rey. Haz el mejor sector de esa calle y la corona es tuya hasta que alguien te la quite. <a href="#" id="myStreet">Correr mi calle →</a></p>
+      </div>
+
+      <div class="block">
+        <div class="eyebrow">Temporada semanal</div>
+        <div class="season"><div><b id="wkN">0</b><span>coronas esta semana</span></div><div class="end" id="wkEnd">—</div></div>
+        <div class="row2"><a class="btn ghost" href="/leaderboard" target="_top">Ranking</a><a class="btn ghost" id="lnkMap" href="/me" target="_top">Mi mapa</a></div>
+      </div>
+
+      <div class="block">
+        <div class="eyebrow">Tu banda · guerra de barrios</div>
+        <div id="crewBox"></div>
+      </div>
+
+      <div class="block">
+        <div class="eyebrow">Pintura</div>
+        <div class="paints" id="paints"></div>
+        <p class="hint" id="paintHint"></p>
+      </div>
+
+      <div class="block" id="ctlBlock">
+        <div class="eyebrow">Controles</div>
+        <div class="seg"><button type="button" id="cAuto">Acelerador auto</button><button type="button" id="cTilt">Girar inclinando</button></div>
+      </div>
+    </div>
+  </aside>
+
+  <main id="stage">
+    <canvas id="cv"></canvas>
+    <canvas id="gl3" hidden></canvas>
+    <div id="pickbar" hidden><span id="picktxt">Toca la <b>salida</b></span><button type="button" id="pickCancel">Cancelar</button></div>
+    <div id="challenge" hidden></div>
+    <div id="gl"></div>
+    <div id="credits"></div>
+    <canvas id="mini" class="hud"></canvas>
+    <div id="loading">Cargando el trazado…</div>
+    <div class="hud" id="toasts"></div>
+    <div class="hud" id="clock"><div class="t" id="ct">0.00</div><div class="d" id="cd"></div></div>
+    <div class="hud" id="timing"></div>
+    <div class="hud" id="plaque"><div class="st" id="pst">—</div><div class="kn" id="pkn"></div></div>
+    <div class="hud" id="speedo"><div class="n" id="spd">0</div><div class="u">KM/H</div></div>
+    <div class="hud" id="warn">Vuelve al trazado</div>
+    <div class="hud" id="lights"></div>
+    <div id="touch">
+      <button class="tb" id="tL" aria-label="Izquierda">◄</button>
+      <button class="tb" id="tR" aria-label="Derecha">►</button>
+      <button class="tb" id="tB" aria-label="Frenar">■</button>
+      <button class="tb" id="tG" aria-label="Acelerar">▲</button>
+    </div>
+    <div id="results"><div class="card">
+      <header><div class="lab" id="rlab">Resultado</div><h2 id="rtitle">—</h2></header>
+      <div class="finaltime" id="rtime">0.00</div>
+      <div class="verdict" id="rverdict"></div>
+      <div class="sectlist" id="rsect"></div>
+      <div class="board"><div class="eyebrow" style="margin-bottom:6px">Leaderboard</div><div id="rboard"></div></div>
+      <div class="after" id="after"></div>
+      <footer><button class="btn" id="again">Otra vuelta</button><button class="btn ghost" id="vid" hidden>🎬 Vídeo</button><button class="btn ghost" id="share2">Retar</button><button class="btn ghost" id="close">Cerrar</button></footer>
+    </div></div>
+    <div class="overlay" id="inbox"><div class="card">
+      <header><div class="lab">Mientras no estabas</div><h2 id="inboxTitle">Te han quitado calles</h2></header>
+      <div class="inner" id="inboxList"></div>
+      <footer><button class="btn ghost" id="inboxClose">Luego</button></footer>
+    </div></div>
+    <div class="overlay" id="onb"><div class="card">
+      <header><div class="lab">King of Streets</div><h2>Cada calle tiene un rey.<br>¿Cuál es la tuya?</h2></header>
+      <div class="inner">
+        <p>Escribe tu calle. Te montamos una carrera desde ahí con el callejero real. Haz el mejor tiempo y la calle lleva tu nombre hasta que alguien te la quite.</p>
+        <input type="text" id="onbName" maxlength="14" placeholder="Tu nombre de piloto" autocomplete="nickname">
+        <input type="text" id="onbStreet" placeholder="Tu calle y ciudad · Calle Feria, Sevilla" autocomplete="street-address">
+        <button class="btn" id="onbGo" type="button">Correr mi calle</button>
+        <p class="hint" id="onbMsg"></p>
+      </div>
+      <footer><button class="btn ghost" id="onbDaily" type="button">🔥 Calle del día</button><button class="btn ghost" id="onbSkip" type="button">Ver Sevilla</button></footer>
+    </div></div>
+    <div class="overlay" id="vidwrap">
+      <div id="vidbox"></div>
+      <div id="vidmsg">Grabando…</div>
+      <div id="vidbtns" hidden><button class="btn" id="vidShare" type="button">Compartir</button><button class="btn ghost" id="vidDown" type="button">Descargar</button><button class="btn ghost" id="vidClose" type="button">Cerrar</button></div>
+    </div>
+  </main>
+</div>
+
+<script src="config.js"></script>
+<script src="cities.js"></script>
+<script src="osm.js"></script>
+<script src="game.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="three-extras.js"></script>
+<script src="cars3d.js"></script>
+<script src="city3d.js"></script>
+<script src="real3d.js"></script>
+<script src="cesium-view.js"></script>
+<script src="views.js"></script>
+<script src="extras.js"></script>
+<script src="drive.js"></script>
+<script src="social.js"></script>
+<script src="king.js"></script>
+<script src="real.js"></script>
+<script src="bots.js"></script>
+<script src="play.js"></script>
+<script src="garage.js"></script>
+<script src="modes.js"></script>
+<script src="world.js"></script>
+<script src="sound.js"></script>
+<script src="mobile.js"></script>
+<script src="qrcode.min.js"></script>
+<script src="live.js"></script>
+<script src="meta.js"></script>
+</body>
+</html>
