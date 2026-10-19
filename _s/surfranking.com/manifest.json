@@ -1,0 +1,53 @@
+{
+  "name": "SurfRanking",
+  "short_name": "SurfRanking",
+  "description": "Compare surf spots, seasons and access with transparent historical data and a live forecast.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b7f8f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/",
+  "shortcuts": [
+    {
+      "name": "Firing in the next 72 hours",
+      "short_name": "Firing now",
+      "url": "/now.html",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Plan a surf trip",
+      "short_name": "Plan a trip",
+      "url": "/?plan=1",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "sports",
+    "travel",
+    "weather"
+  ]
+}
