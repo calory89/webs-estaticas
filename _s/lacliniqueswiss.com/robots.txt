@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /thanks
+Disallow: /de/thanks
+Disallow: /es/thanks
+
+Sitemap: https://lacliniqueswiss.com/sitemap.xml

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48" role="img" aria-label="Listed on RealHunt">
+  <rect width="180" height="48" rx="12" fill="#16150F"/>
+  <rect x="10" y="10" width="28" height="28" rx="8" fill="#FFFFFF"/>
+  <path d="M17 26.5 24 19.5 31 26.5" fill="none" stroke="#16150F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="29.5" r="2.6" fill="#0EA5E9"/>
+  <text x="48" y="21" font-family="Inter,Helvetica,Arial,sans-serif" font-size="10" fill="#C9C4B8" letter-spacing=".6">LISTED ON</text>
+  <text x="48" y="36" font-family="Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">RealHunt</text>
+  <path d="M146 17l5 5 10-10" transform="translate(0 7)" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

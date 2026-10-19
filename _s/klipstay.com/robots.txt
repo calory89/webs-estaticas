@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /brands/dashboard
+Sitemap: https://klipstay.com/sitemap.xml

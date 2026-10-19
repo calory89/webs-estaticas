@@ -1,0 +1,19 @@
+/* ============ v6: datos de la comunidad, mapa, semana ============ */
+.badges{margin-bottom:2px}
+.tag-warn{background:var(--warn-soft);color:#6B5418}
+.tag-ins{border:0;background:var(--lav);color:inherit;font:inherit;font-size:13px;font-weight:700;padding:4px 10px;border-radius:var(--r-pill);display:inline-flex;gap:4px;align-items:center;cursor:pointer;min-height:28px}
+.send-card{border-color:var(--act)}
+.qa{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--s3)}
+.qa li{background:var(--sunk);border-radius:14px;padding:var(--s3) var(--s4)}
+.qa li p{margin-top:6px}
+.qa-card{border-color:var(--lav);background:linear-gradient(180deg,var(--card),var(--sunk))}
+.ctop{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:var(--s3)}
+.fair{border-color:var(--act-soft)}
+.pxmap{height:min(60vh,520px);border-radius:var(--r-card);overflow:hidden;background:var(--sunk)}
+.check-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.week .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2);text-align:center}
+.week .trio strong{display:block;font-size:24px}
+.insights .chips{margin-top:6px}
+body:has(.layer.in) .toast{bottom:calc(env(safe-area-inset-bottom) + 96px)}
+:root[data-theme="dark"] .tag-warn{color:#F1D9A6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag-warn{color:#F1D9A6}}

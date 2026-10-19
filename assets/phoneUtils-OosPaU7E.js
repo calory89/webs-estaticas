@@ -1,0 +1,1 @@
+const t=(t,r)=>{if(!t)return"";let s=t.trim();const e=`${r} `,i=r;let n="";for(;n!==s;)n=s,s.startsWith(e)?s=s.slice(e.length).trim():s.startsWith(i)?s=s.slice(i.length).trim():s.startsWith("+")&&(s=s.replace(/^\+\d+\s*/,"").trim());return s},r=(r,s)=>{const e=t(r,s);return e?`${s} ${e}`:""};export{r as f,t as s};

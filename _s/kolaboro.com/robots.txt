@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kolaboro.com/sitemap.xml
+# sync
+# sync 2

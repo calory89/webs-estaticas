@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Security Headers
+         The real headers (CSP, X-Frame-Options, Permissions-Policy, COOP, HSTS,
+         Referrer-Policy) are served by Cloudflare Pages / Netlify via public/_headers.
+         The meta CSP below is a frame-ancestors fallback for environments that
+         strip headers; meta cannot set X-Frame-Options. -->
+    <script>
+      /* frame-ancestors cannot be set from a <meta> tag (browsers ignore it and
+         log a console error). Refuse to be framed by another site instead. */
+      try { if (window.top !== window.self && !/(^|\.)lovable\.(app|dev)$/.test(location.hostname)) window.top.location.replace(window.self.location.href); } catch (e) { document.documentElement.style.display = "none"; }
+    </script>
+    <style>html, body { overflow-x: clip; }</style>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="google" content="notranslate">
+
+    <!-- Consent gating helper: third-party trackers below check this before loading.
+         analytics → Clarity, datafa.st, GA (GA is also gated by Consent Mode v2).
+         marketing → Facebook Pixel, HappierLeads (B2B de-anonymization).
+         essential-only → PageSense (treated as analytics).
+         If the visitor has not made a choice yet, NOTHING loads. -->
+    <script>
+      window.__ebcConsent = (function () {
+        try {
+          var raw = localStorage.getItem('cookieConsentStatus');
+          if (!raw) {
+            // First visit: the banner is not shown (removed per request), so we
+            // default to granting consent right here — synchronously, BEFORE the
+            // gated trackers below run. Doing it at this point means the trackers
+            // initialize on this same page load, so there is no client-side
+            // reload (which previously caused a visible blank/skeleton "error"
+            // flash on the first load). Visitors can still manage cookies from
+            // the footer.
+            var granted = { essential: true, analytics: true, marketing: true, personalization: true, timestamp: Date.now() };
+            try { localStorage.setItem('cookieConsentStatus', JSON.stringify(granted)); } catch (e) {}
+            return { analytics: true, marketing: true, decided: true };
+          }
+          var p = JSON.parse(raw);
+          return { analytics: !!p.analytics, marketing: !!p.marketing, decided: true };
+        } catch (e) { return { analytics: false, marketing: false, decided: false }; }
+      })();
+    </script>
+    
+    <title>Luxury Beach Residence | Your Home in a 2 km Beachfront Residence</title>
+    <meta name="description" content="Your home in a 2 km beachfront residence on Sumba Island, Indonesia. 474+ owners from 40+ countries.">
+    <meta name="author" content="Luxury Beach Residence" />
+    <!-- Critical: Preconnect to required origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cddppqysrtwdlqfwbbvp.supabase.co">
+    <link rel="preconnect" href="https://img.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="https://img.youtube.com">
+    
+    <!-- LCP image is preloaded via the Hero component's <img fetchpriority="high">.
+         Static preload tags were removed because Vite hashes asset filenames at build time,
+         making any hard-coded /src/assets/... preload a 404 in production and a wasted request. -->
+
+    <!-- Inter — Apple/Linear typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <!-- Playfair Display — display serif used in hero/marketing headlines.
+         Loading the webfont (instead of relying on a system fallback) prevents
+         tofu boxes for digits on devices that don't ship Playfair locally. -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"></noscript>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=5">
+    <link rel="icon" type="image/png" href="/favicon.png?v=5">
+    <link rel="apple-touch-icon" href="/favicon.png?v=5">
+
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://luxurybeachresidence.com/og-image.jpg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@luxurybeachresidence" />
+    
+    
+    <meta name="twitter:image" content="https://luxurybeachresidence.com/og-image.jpg">
+
+    <!-- Per-route canonical and og:url are emitted by <Seo> / react-helmet on each page.
+         Do NOT add a sitewide canonical or og:url here: <link rel="canonical"> tags
+         don't dedupe by rel, so any value here ships alongside the per-route one and
+         tells crawlers every route duplicates the homepage. -->
+
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Luxury Beach Residence",
+      "url": "https://luxurybeachresidence.com",
+      "logo": "https://luxurybeachresidence.com/og-image.jpg",
+      "description": "Beachfront eco-community and resort development on Sumba Island, Indonesia. Your home in a 2 km beachfront residence. 474+ owners from 40+ countries.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sumba Island",
+        "addressCountry": "ID"
+      },
+      "sameAs": [
+        "https://www.instagram.com/luxurybeachresidence"
+      ]
+    }
+    </script>
+
+    <!-- Google Consent Mode v2 — set defaults BEFORE gtag loads -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+    </script>
+
+    <!-- Google Tag (gtag.js) — deferred to idle to reduce main-thread work during LCP.
+         The consent-mode stub above still queues calls into dataLayer; gtag.js
+         will replay them once it loads. -->
+    <script>
+      (function(){
+        function loadGtag(){
+          try {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-F0XT0J3XQT';
+            (document.head || document.documentElement).appendChild(s);
+            gtag('js', new Date());
+            gtag('config', 'G-F0XT0J3XQT');
+            gtag('config', 'AW-11187203173');
+            gtag('config', 'AW-11187174327');
+            gtag('config', 'AW-976548876');
+            gtag('config', 'AW-16567325150');
+          } catch(e) { /* tracking is non-critical */ }
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGtag, { timeout: 5000 });
+        } else {
+          setTimeout(loadGtag, 4000);
+        }
+      })();
+    </script>
+
+    <!-- Datafast Analytics — load on first user interaction or after a long timeout
+         to keep main-thread free during LCP and TTI measurement window -->
+    <script>
+      (function(){
+        if (!window.__ebcConsent || !window.__ebcConsent.analytics) return;
+        var loaded = false;
+        function loadDatafast(){
+          if (loaded) return; loaded = true;
+          cleanup();
+          try {
+            var s = document.createElement('script');
+            s.defer = true;
+            s.src = 'https://datafa.st/js/script.js';
+            s.setAttribute('data-website-id', 'dfid_rZkiOjY0fXnAdlK9RcwFk');
+            s.setAttribute('data-domain', 'ecobeachcity.com');
+            (document.head || document.documentElement).appendChild(s);
+          } catch(e) { /* tracking is non-critical */ }
+        }
+        var events = ['pointerdown','keydown','scroll','touchstart'];
+        function cleanup(){ events.forEach(function(ev){ window.removeEventListener(ev, loadDatafast, { passive: true, capture: true }); }); }
+        events.forEach(function(ev){ window.addEventListener(ev, loadDatafast, { passive: true, capture: true, once: true }); });
+        setTimeout(loadDatafast, 8000);
+      })();
+    </script>
+
+    <!-- HappierLeads Tracking - load on first user interaction or after a long timeout
+         to keep main-thread free during LCP and TTI measurement window -->
+    <script>
+      // Global stub so any cached/external onload handler that references
+      // `Happierleads` directly never throws ReferenceError
+      window.Happierleads = window.Happierleads || function(){};
+      (function(){
+        if (!window.__ebcConsent || !window.__ebcConsent.marketing) return;
+        var loaded = false;
+        function loadHappierleads(){
+          if (loaded) return; loaded = true;
+          cleanup();
+          try {
+            var e = "rest.happierleads.com/v3/script?clientId=11GxqWdDxqyxCGto3cHmz2&version=4.0.0";
+            var t = document.createElement("script");
+            t.src = "https://" + e;
+            t.async = true;
+            t.onload = function(){
+              try {
+                if (typeof Happierleads !== 'undefined' && Happierleads && Happierleads.default) {
+                  new Happierleads.default();
+                }
+              } catch(e) { /* swallow - tracking is non-critical */ }
+            };
+            t.onerror = function(){ /* blocked or offline - ignore */ };
+            var c = document.getElementsByTagName("script")[0];
+            if (c && c.parentNode) c.parentNode.insertBefore(t, c);
+          } catch(e) { /* ignore */ }
+        }
+        var events = ['pointerdown','keydown','scroll','touchstart'];
+        function cleanup(){ events.forEach(function(ev){ window.removeEventListener(ev, loadHappierleads, { passive: true, capture: true }); }); }
+        events.forEach(function(ev){ window.addEventListener(ev, loadHappierleads, { passive: true, capture: true, once: true }); });
+        setTimeout(loadHappierleads, 8000);
+      })();
+    </script>
+
+    <!-- Meta Pixel (Facebook) — lazy load on first interaction or 1.2s timeout -->
+    <script>
+      (function(){
+        if (!window.__ebcConsent || !window.__ebcConsent.marketing) return;
+        var PIXEL_ID = "889846336857204";
+        var loaded = false;
+        function loadFbq(){
+          if (loaded) return; loaded = true; cleanup();
+          try {
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+            window.fbq('init', PIXEL_ID);
+            window.fbq('track', 'PageView');
+            window.__fbqReady = true;
+          } catch(e) { /* tracking is non-critical */ }
+        }
+        var events = ['pointerdown','keydown','scroll','touchstart'];
+        function cleanup(){ events.forEach(function(ev){ window.removeEventListener(ev, loadFbq, { passive: true, capture: true }); }); }
+        events.forEach(function(ev){ window.addEventListener(ev, loadFbq, { passive: true, capture: true, once: true }); });
+        setTimeout(loadFbq, 1200);
+      })();
+    </script>
+
+    <!-- Microsoft Clarity — lazy load on first interaction or 5s timeout -->
+    <script type="text/javascript">
+      if (window.__ebcConsent && window.__ebcConsent.analytics) {
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "wqn50nb6kp");
+      }
+    </script>
+
+    <!-- Zoho PageSense — gated on analytics consent. The previous synchronous
+         <script src=...> was removed because it bypassed consent and blocked
+         the main thread. -->
+    <script type="text/javascript">
+      if (window.__ebcConsent && window.__ebcConsent.analytics) {
+      (function(w,s){
+        var e=document.createElement("script");
+        e.type="text/javascript";
+        e.async=true;
+        e.src="https://cdn.pagesense.io/js/924997342/549a806b87d4493c81e359d8f3b627a3.js";
+        var x=document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(e,x);
+      })(window,"script");
+      }
+    </script>
+    <meta property="og:title" content="Luxury Beach Residence | Your home in a 2 km beachfront residence · Sumba Island, Indonesia">
+  <meta name="twitter:title" content="Luxury Beach Residence | Your home in a 2 km beachfront residence · Sumba Island, Indonesia">
+  <meta property="og:description" content="Your home in a 2 km beachfront residence on Sumba Island, Indonesia. 474+ owners from 40+ countries.">
+  <meta name="twitter:description" content="Your home in a 2 km beachfront residence on Sumba Island, Indonesia. 474+ owners from 40+ countries.">
+  <script type="module" crossorigin src="/assets/index-BanMW7rs.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-BunK7jMp.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-query-Dn3DxUsM.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-supabase-DKqYG9ew.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-ui-DVPkbYRP.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-motion-C2HOZwrb.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DbLiH-Y-.css">
+    <link rel="preload" as="image" href="/assets/villa-beachfront-pool-CtAD3wZ8.jpeg" fetchpriority="high" />
+  <script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.4d3abd1f6b7321c2.js" data-artifact-kind="dwl_content_hash" data-artifact-id="8df761d2bb72ca7e9a85a8b3dbc7c4c21b2ab661f807f6d72e1a21c392cb3816" data-commit-sha="40139ce3f28bc0a45f57f3f6a2a44642a64e5e8d" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8wc3k1aDlzM3N0OXliYTd3N2gyOXo2Z3p4OCIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiI4ZGY3NjFkMmJiNzJjYTdlOWE4NWE4YjNkYmM3YzRjMjFiMmFiNjYxZjgwN2Y2ZDcyZTFhMjFjMzkyY2IzODE2IiwiY29tbWl0X3NoYSI6IjQwMTM5Y2UzZjI4YmMwYTQ1ZjU3ZjNmNmEyYTQ0NjQyYTY0ZTVlOGQiLCJleHAiOjE3OTUwMzMyNTh9.SVWP0WvHi-QCkomMOJgbIK6W9gSBWv7v39Xx5SiCNR4"></script></head>
+
+  <body translate="no" class="notranslate">
+    <!-- Facebook pixel <noscript> fallback removed: it would fire on every
+         no-JS visit regardless of consent (RGPD violation). With JS enabled,
+         the pixel is loaded by index.html after marketing consent and by
+         CookieScriptLoader on consent change. -->
+    <script>
+      // Visit beacon: fires before React boots so we capture every session,
+      // including ones where the SPA fails to mount (Instagram/Facebook
+      // in-app webviews, slow chunks, JS errors, bots).
+      (function () {
+        try {
+          var KEY = 'ebc_pv_session';
+          var sid = sessionStorage.getItem(KEY);
+          if (!sid) {
+            sid = (crypto && crypto.randomUUID ? crypto.randomUUID() : (Date.now() + '-' + Math.random().toString(36).slice(2)));
+            sessionStorage.setItem(KEY, sid);
+          }
+          var qs = new URLSearchParams(location.search);
+          var body = JSON.stringify({
+            sessionId: sid,
+            path: location.pathname,
+            utm_source: qs.get('utm_source'),
+            utm_medium: qs.get('utm_medium'),
+            utm_campaign: qs.get('utm_campaign')
+          });
+          var url = 'https://cddppqysrtwdlqfwbbvp.supabase.co/functions/v1/track-visit-beacon';
+          // Public anon key — required by the Supabase Functions gateway even
+          // when the function itself is verify_jwt=false. sendBeacon cannot
+          // attach headers, so we always use fetch+keepalive.
+          var APIKEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkZHBwcXlzcnR3ZGxxZndiYnZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4NTcyNzIsImV4cCI6MjA3NzQzMzI3Mn0.yuH4OXO4VO1BsLUv-o5QdP7oS5cqT0_xr47aro7TAb0';
+          fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'apikey': APIKEY,
+              'Authorization': 'Bearer ' + APIKEY
+            },
+            body: body,
+            keepalive: true,
+            mode: 'cors',
+            credentials: 'omit'
+          }).catch(function(){});
+        } catch (e) { /* silent */ }
+      })();
+
+      // Swallow opaque cross-origin "Script error." events so they do not
+      // get reported as bounces by Clarity / GA. These come almost entirely
+      // from third-party scripts injected by Instagram / Facebook in-app
+      // browsers and are not actionable.
+      window.addEventListener('error', function (e) {
+        if (e && (e.message === 'Script error.' || (!e.filename && !e.lineno))) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+    </script>
+    <div id="root">
+    
+    </div>
+  </body>
+</html>
