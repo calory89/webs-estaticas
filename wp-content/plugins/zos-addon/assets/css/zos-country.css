@@ -1,0 +1,379 @@
+.zos-top-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    align-items: center;
+}
+
+.zos-filter-wrap{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 631px;
+}
+
+.zos-filter{
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+}
+
+.zos-filter:after {
+    content: '\e87d';
+    position: absolute;
+    font-size: 16px;
+    font-family: "eicons";
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 20px;
+    transform: rotate(90deg);
+    color: #0F172A;
+}
+
+#zos-filter{
+    padding: 16px;
+    border: 1px solid #EEEFF0;
+    border-radius: 8px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.zos-search{
+    width: 100%;
+    max-width: 411px;
+}
+
+.zos-search form{
+    position: relative;
+}
+
+.zos-search #search{
+    padding: 16px 16px 16px 52px;
+    border: none;
+    background-color: #F5F6F6;
+    border-radius: 8px;
+}
+
+.zos-search .search-icon{
+    position: absolute;
+    left: 17px;
+    top: 17px;
+}
+
+.zos-title{
+    font-size: 40px;
+    font-family: 'Inter';
+    line-height: 1.4;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000;
+}
+
+.zos-text{
+    color: #6A6F7B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: 'Inter';
+}
+
+.zos-continents{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.zos-continents .zos-tag{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 12px 24px;
+    color: #6A6F7B;
+    background: #F5F6F6;
+    border-radius: 8px;
+    transition: all .3s ease-out;
+}
+
+.zos-continents .zos-tag:hover,
+.zos-continents .zos-tag.active{
+    color: #fff;
+    background-color: #3632FF;
+}
+
+.zos-content-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.zos-card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 340px;
+    border-radius: 16px;
+    width: 23.3%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.zos-card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zos-card-top .tax-rate{
+    background: #fff;
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FF8E26;
+}
+
+.country-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+}
+
+.country-description{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #EEEFF0;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+}
+
+.zos-btn-wrap{
+    display: flex;
+    justify-content: space-between;
+    transition: max-height .3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.zos-card:hover .zos-btn-wrap{
+    max-height: 200px;
+}
+
+.zos-btn-wrap .btn{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    background-color: #3632FF;
+    color: #fff;
+    transition: all .3s ease-out;
+    width: 47%;
+    text-align: center;
+}
+
+.zos-btn-wrap .btn:hover{
+    background-color: #2D2AD4;
+}
+
+.zos-btn-wrap .btn.detail{
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.zos-btn-wrap .btn.detail:hover{
+    background-color: #fff;
+    color: #3632FF;
+}
+
+/* slider only style */
+.zos-content-wrap.swiper-wrapper{
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.zos-country-wrap .swiper-pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.zos-country-wrap .swiper-pagination-bullet{
+    background: #EEEFF0;
+    opacity: 1;
+}
+
+.zos-country-wrap .swiper-pagination-bullet-active{
+    background: #192033;
+    opacity: 1;
+    border-radius: 100px;
+    width: 16px;
+}
+
+.zos-mobile-arrow{
+    display: none;
+    position: absolute;
+    right: -5px;
+}
+
+.title-mobile{
+    display: none;
+    margin: 0;
+}
+
+.title-desktop{
+    display: block;
+}
+
+.flag-wrap{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media all and (max-width:767px) {
+    /* filter style */
+    .zos-mobile-arrow,
+    .title-mobile{
+        display: block;
+    }
+
+    .zos-mobile-arrow.disable,
+    .title-desktop{
+        display: none;
+    }
+
+    .zos-top-wrap{
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .zos-title{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    p.zos-text{
+        margin-bottom: 24px;
+    }
+
+    .zos-filter-wrap{
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .zos-filter{
+        max-width: 100%;
+    }
+
+    #zos-filter,
+    .zos-search #search{
+        font-size: 14px;
+    }
+
+    .zos-search #search{
+        padding: 17.5px 16px 17.5px 52px;
+    }
+
+    .zos-continents{
+        margin-bottom: 24px;
+        overflow: scroll;
+        flex-wrap: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        scroll-behavior: smooth;
+    }
+
+    .zos-continents::-webkit-scrollbar {
+        display: none;
+      }
+
+    .zos-continents .zos-tag{
+        flex: 0 0 auto;
+        font-size: 14px;
+    }
+
+    /* card style */
+    .country-title{
+        font-size: 18px;
+    }
+
+    .country-description{
+        font-size: 14px;
+    }
+
+    .zos-btn-wrap{
+        max-height: 200px;
+    }
+
+    .zos-card:not(.swiper-slide){
+        width: 100%;
+        min-height: 236px;
+        padding: 16px;
+    }
+
+    .zos-content-wrap:not(.swiper-wrapper){
+        gap: 16px;
+    }
+
+    .zos-card:not(.swiper-slide) .zos-btn-wrap .btn{
+        font-size: 14px;
+        padding: 8px;
+        
+    }
+
+    .zos-card:not(.swiper-slide) .zos-btn-wrap .btn.detail{
+        border: none;
+        text-decoration: underline;
+    }
+
+    .zos-card:not(.swiper-slide) .zos-btn-wrap .btn.detail:hover{
+        background-color: transparent;
+    }
+
+    .zos-card:not(.swiper-slide) .country-description{
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .zos-card:not(.swiper-slide) .country-title{
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .zos-card:not(.swiper-slide) .zos-card-top .tax-rate{
+        font-size: 20px;
+    }
+
+    .zos-card:not(.swiper-slide) .zos-card-top .flag{
+        width: 38px;
+    }
+
+    
+}
+
+@media all and (min-width:768px) and (max-width:1024px){
+    .zos-card{
+        width: 31%;
+    }
+}
