@@ -1,0 +1,1 @@
+const s="/assets/npwp-certificate-DcVIJ9Xs.jpg",a="/assets/tax-compliance-certificate-CYaLr60w.png",t="/assets/company-registration-certificate-CPqq5wLT.png",e="/assets/land-registry-page-1-z8nxFSfn.png";export{t as c,e as l,s as n,a as t};

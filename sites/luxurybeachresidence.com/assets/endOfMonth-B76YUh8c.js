@@ -1,0 +1,1 @@
+import{t}from"./en-US-DnE7bJvK.js";function e(e,n){const r=t(e),o=t(n);return 12*(r.getFullYear()-o.getFullYear())+(r.getMonth()-o.getMonth())}function n(e){const n=t(e),r=n.getMonth();return n.setFullYear(n.getFullYear(),r+1,0),n.setHours(23,59,59,999),n}export{e as d,n as e};
