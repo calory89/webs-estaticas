@@ -1,0 +1,1 @@
+import{j as e}from"./vendor-query-Dn3DxUsM.js";const s=()=>e.jsx("div",{className:"flex items-center justify-center py-8 md:py-12",children:e.jsx("div",{className:"w-12 h-px bg-border"})});export{s as L};

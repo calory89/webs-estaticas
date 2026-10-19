@@ -1,0 +1,1 @@
+const e="https://luxurybeachresidence.com",t={entryFromEUR:65e3,beachSuiteFromEUR:65e3,fullBeachfrontHomeFromEUR:15e4,currency:"USD"};16.3.toFixed(1);const o=e=>`$${e.toLocaleString("en-US")}`,r=t=>(t.startsWith("/")||(t=`/${t}`),`${e}${t}`);export{t as P,e as S,r as a,o as f};
