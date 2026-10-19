@@ -1,0 +1,793 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="https://www.carlosdeory.com/wp-content/cache/fvm/min/1789744926-csse2f401f377a620e6ce7d44c144f9ec69b85de727097337d2a1bf261edc143.css" as="style" media="all" /> 
+<link rel="preload" href="https://www.carlosdeory.com/wp-content/cache/fvm/min/1789744926-css215884f5c3c00c7f37d3786c39e9b5bd3fd1a4f2554d39ac7cacfb00aad7f.css" as="style" media="all" /> 
+<link rel="preload" href="https://www.carlosdeory.com/wp-content/cache/fvm/min/1789744926-css9dfa9a55b29017734759c2bf456960a11b2388e5f233183095f1f070b96f1.css" as="style" media="all" />
+<script data-cfasync="false">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]iebrowser/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?iebrowser=1"}else{document.location.href=href.replace("#","?iebrowser=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&iebrowser=1"}else{document.location.href=href.replace("#","&iebrowser=1#")}}}}</script>
+<script data-cfasync="false">class FVMLoader{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach(t=>window.addEventListener(t,e.userEventListener,e.eventOptions))}_removeUserInteractionListener(e){this.triggerEvents.forEach(t=>window.removeEventListener(t,e.userEventListener,e.eventOptions))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._runAllDelayedCSS(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("wpr-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=fvmdelay]").forEach(e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)})}_runAllDelayedCSS(){document.querySelectorAll("link[rel=fvmdelay]").forEach(e=>{e.setAttribute("rel","stylesheet")})}async _transformScript(e){return await this._requestAnimFrame(),new Promise(t=>{const n=document.createElement("script");let r;[...e.attributes].forEach(e=>{let t=e.nodeName;"type"!==t&&("data-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))}),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)})}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"wpr-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["wpr"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("DOMContentLoaded2",()=>t.bind(document)(n))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map(e=>"load"===e||0===e.indexOf("load.")?"wpr-jquery-load":e).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]})}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("DOMContentLoaded2")),await this._requestAnimFrame(),window.dispatchEvent(new Event("DOMContentLoaded2")),await this._requestAnimFrame(),document.dispatchEvent(new Event("wpr-readystatechange")),await this._requestAnimFrame(),document.wpronreadystatechange&&document.wpronreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("wpr-load")),await this._requestAnimFrame(),window.wpronload&&window.wpronload(),await this._requestAnimFrame(),this.allJQueries.forEach(e=>e(window).trigger("wpr-jquery-load")),window.dispatchEvent(new Event("wpr-pageshow")),await this._requestAnimFrame(),window.wpronpageshow&&window.wpronpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let a=e.get(n);void 0===a&&(a=n.nextSibling,e.set(n,a));const s=document.createDocumentFragment();r.setStart(s,0),s.appendChild(r.createContextualFragment(t)),i.insertBefore(s,a)}}async _requestAnimFrame(){return new Promise(e=>requestAnimationFrame(e))}static run(){const e=new FVMLoader(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}FVMLoader.run();</script>
+<link rel="profile" href="https://gmpg.org/xfn/11"> 
+<meta name='robots' content='noindex, follow' /> 
+<meta name="theme-color" content="#FFFFFF"> <title>Dinamarca - Carlos de Ory</title> 
+<meta property="og:locale" content="es_ES" /> 
+<meta property="og:type" content="article" /> 
+<meta property="og:title" content="Dinamarca - Carlos de Ory" /> 
+<meta property="og:url" content="https://www.carlosdeory.com/dinamarca/" /> 
+<meta property="og:site_name" content="Carlos de Ory" /> 
+<meta property="og:image" content="https://www.carlosdeory.com/wp-content/uploads/2026/09/carlos-de-ory-og.jpg" /> 
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" /> 
+<meta property="og:image:type" content="image/jpeg" /> 
+<meta name="twitter:card" content="summary_large_image" /> 
+<meta name="twitter:site" content="@mrstartups" /> 
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"CollectionPage","@id":"https:\/\/www.carlosdeory.com\/dinamarca\/","url":"https:\/\/www.carlosdeory.com\/dinamarca\/","name":"Dinamarca - Carlos de Ory","isPartOf":{"@id":"https:\/\/www.carlosdeory.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.carlosdeory.com\/dinamarca\/#primaryimage"},"image":{"@id":"https:\/\/www.carlosdeory.com\/dinamarca\/#primaryimage"},"thumbnailUrl":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2019\/02\/BMW.svg_.png","breadcrumb":{"@id":"https:\/\/www.carlosdeory.com\/dinamarca\/#breadcrumb"},"inLanguage":"es"},{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/www.carlosdeory.com\/dinamarca\/#primaryimage","url":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2019\/02\/BMW.svg_.png","contentUrl":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2019\/02\/BMW.svg_.png","width":900,"height":900,"caption":"Viajando Música: De Argentina al mundo con su guitarra y bicicleta"},{"@type":"BreadcrumbList","@id":"https:\/\/www.carlosdeory.com\/dinamarca\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https:\/\/www.carlosdeory.com\/"},{"@type":"ListItem","position":2,"name":"Dinamarca"}]},{"@type":"WebSite","@id":"https:\/\/www.carlosdeory.com\/#website","url":"https:\/\/www.carlosdeory.com\/","name":"Carlos de Ory","description":"Viajes, puntos y millas, y cómo monto empresas desde Sumba.","publisher":{"@id":"https:\/\/www.carlosdeory.com\/#\/schema\/person\/cb732442b588ab931e7001bd57be5170"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.carlosdeory.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":["Person","Organization"],"@id":"https:\/\/www.carlosdeory.com\/#\/schema\/person\/cb732442b588ab931e7001bd57be5170","name":"Carlos de Ory","image":{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2026\/09\/carlos-de-ory-icono.png","url":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2026\/09\/carlos-de-ory-icono.png","contentUrl":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2026\/09\/carlos-de-ory-icono.png","width":512,"height":512,"caption":"Carlos de Ory"},"logo":{"@id":"https:\/\/www.carlosdeory.com\/wp-content\/uploads\/2026\/09\/carlos-de-ory-icono.png"},"description":"Founder since 2013. I write about travel, points and miles, and building companies from Sumba.","sameAs":["https:\/\/www.carlosdeory.com\/about-me\/","https:\/\/www.linkedin.com\/in\/carlosdeory\/","https:\/\/x.com\/mrstartups","https:\/\/www.youtube.com\/@CarlosDeOry"]}]}</script>
+<link rel="alternate" type="application/rss+xml" title="Carlos de Ory &raquo; Feed" href="https://www.carlosdeory.com/feed/" /> 
+<link rel="alternate" type="application/rss+xml" title="Carlos de Ory &raquo; Feed de los comentarios" href="https://www.carlosdeory.com/comments/feed/" /> 
+<link rel="alternate" type="application/rss+xml" title="Carlos de Ory &raquo; Categoría Dinamarca del feed" href="https://www.carlosdeory.com/dinamarca/feed/" /> 
+<style id="wp-img-auto-sizes-contain-inline-css" media="all">img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}</style> 
+<style id="wp-block-library-inline-css" media="all">:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style> 
+<style id="classic-theme-styles-inline-css" media="all">/*! This file is auto-generated */ .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style> 
+<style id="global-styles-inline-css" media="all">:root{--wp--preset--aspect-ratio--square:1;--wp--preset--aspect-ratio--4-3:4/3;--wp--preset--aspect-ratio--3-4:3/4;--wp--preset--aspect-ratio--3-2:3/2;--wp--preset--aspect-ratio--2-3:2/3;--wp--preset--aspect-ratio--16-9:16/9;--wp--preset--aspect-ratio--9-16:9/16;--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp:6px 6px 0px rgb(0, 0, 0)}.wp-block-button{--wp--preset--dimension--25:25%;--wp--preset--dimension--50:50%;--wp--preset--dimension--75:75%;--wp--preset--dimension--100:100%}:where(body){margin:0}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}body .is-layout-flex{display:flex}.is-layout-flex{flex-wrap:wrap;align-items:center}.is-layout-flex>:is(*,div){margin:0}body .is-layout-grid{display:grid}.is-layout-grid>:is(*,div){margin:0}body{padding-top:0;padding-right:0;padding-bottom:0;padding-left:0}:root :where(.wp-element-button,.wp-block-button__link){background-color:#32373c;border-width:0;color:#fff;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;padding-top:calc(0.667em + 2px);padding-right:calc(1.333em + 2px);padding-bottom:calc(0.667em + 2px);padding-left:calc(1.333em + 2px);text-decoration:none;text-transform:inherit}.has-black-color{color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-color{color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-color{color:var(--wp--preset--color--white)!important}.has-pale-pink-color{color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-color{color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-color{color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-color{color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-color{color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-color{color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-color{color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-color{color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-color{color:var(--wp--preset--color--vivid-purple)!important}.has-black-background-color{background-color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-background-color{background-color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-background-color{background-color:var(--wp--preset--color--white)!important}.has-pale-pink-background-color{background-color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-background-color{background-color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-background-color{background-color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-background-color{background-color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-background-color{background-color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-background-color{background-color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-background-color{background-color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-background-color{background-color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-background-color{background-color:var(--wp--preset--color--vivid-purple)!important}.has-black-border-color{border-color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-border-color{border-color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-border-color{border-color:var(--wp--preset--color--white)!important}.has-pale-pink-border-color{border-color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-border-color{border-color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-border-color{border-color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-border-color{border-color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-border-color{border-color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-border-color{border-color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-border-color{border-color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-border-color{border-color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-border-color{border-color:var(--wp--preset--color--vivid-purple)!important}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple)!important}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan)!important}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)!important}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red)!important}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray)!important}.has-cool-to-warm-spectrum-gradient-background{background:var(--wp--preset--gradient--cool-to-warm-spectrum)!important}.has-blush-light-purple-gradient-background{background:var(--wp--preset--gradient--blush-light-purple)!important}.has-blush-bordeaux-gradient-background{background:var(--wp--preset--gradient--blush-bordeaux)!important}.has-luminous-dusk-gradient-background{background:var(--wp--preset--gradient--luminous-dusk)!important}.has-pale-ocean-gradient-background{background:var(--wp--preset--gradient--pale-ocean)!important}.has-electric-grass-gradient-background{background:var(--wp--preset--gradient--electric-grass)!important}.has-midnight-gradient-background{background:var(--wp--preset--gradient--midnight)!important}.has-small-font-size{font-size:var(--wp--preset--font-size--small)!important}.has-medium-font-size{font-size:var(--wp--preset--font-size--medium)!important}.has-large-font-size{font-size:var(--wp--preset--font-size--large)!important}.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large)!important}</style> 
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.carlosdeory.com/wp-content/cache/fvm/min/1789744926-csse2f401f377a620e6ce7d44c144f9ec69b85de727097337d2a1bf261edc143.css' media='all' /> 
+<link rel='stylesheet' id='toc-screen-css' href='https://www.carlosdeory.com/wp-content/cache/fvm/min/1789744926-css215884f5c3c00c7f37d3786c39e9b5bd3fd1a4f2554d39ac7cacfb00aad7f.css' media='all' /> 
+<link rel='stylesheet' id='ory-css' href='https://www.carlosdeory.com/wp-content/cache/fvm/min/1789744926-css9dfa9a55b29017734759c2bf456960a11b2388e5f233183095f1f070b96f1.css' media='all' /> 
+<script id="jquery-core-js" src="https://www.carlosdeory.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.carlosdeory.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script>(function(){var u="/wp-content/uploads/2026/09/";function a(r,h,s){var l=document.createElement("link");l.rel=r;l.href=u+h;if(s){l.sizes=s;}document.head.appendChild(l);}a("icon","cdo-favicon-32.png","32x32");a("icon","cdo-favicon-16.png","16x16");a("apple-touch-icon","cdo-apple-touch-icon.png","180x180");})();</script>
+<link rel="icon" href="https://www.carlosdeory.com/wp-content/uploads/2026/09/carlos-de-ory-icono-300x300.png" sizes="192x192" /> 
+<style id="wp-custom-css" media="all">html,body{max-width:100%;overflow-x:hidden}.head-in{max-width:1340px;gap:20px}.nav{min-width:0}.nav a{padding:8px 10px;font-size:13.5px}.brand{font-size:22px}.head-cta{padding:9px 17px;font-size:13px;margin-left:10px}@media(max-width:1120px){.head-cta{display:none}}:root{--gut:22px}@media(min-width:600px){:root{--gut:26px}}.entry>*,.share,.disclosure{width:min(100% - (var(--gut) * 2), var(--read));max-width:none;margin-left:auto;margin-right:auto}.entry>figure,.entry>.wp-block-image,.entry>.wp-block-embed,.entry>table,.entry>pre{width:min(100% - (var(--gut) * 2), 980px)}.entry>ul,.entry>ol{padding-left:26px}.entry img,.entry iframe,.entry embed,.entry object,.entry video{max-width:100%;height:auto}.entry iframe{width:100%}.entry [width]{max-width:100%}.entry table{-webkit-overflow-scrolling:touch}h1,h2,h3,h4,.card h3,.trick h3,.pod-b h3,.proj h3{overflow-wrap:break-word}.entry{overflow-wrap:break-word}.entry a{overflow-wrap:anywhere}.g3{grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr))}.g2{grid-template-columns:repeat(auto-fill,minmax(min(420px,100%),1fr))}.tricks{grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr))}.projects{grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr))}.searchform{max-width:min(520px,100%);flex-wrap:wrap}.searchform input[type=search]{min-width:0;flex:1 1 190px}.searchform .btn{flex:0 0 auto}.comment-form input[type=text],.comment-form input[type=email],.comment-form input[type=url],.comment-form textarea,#commentform input[type=text],#commentform input[type=email],#commentform input[type=url],#commentform textarea{width:100%;max-width:100%;box-sizing:border-box}.news-form{max-width:min(540px,100%)}.news-form input[type=email]{min-width:0;flex:1 1 190px}@media(max-width:600px){input,textarea,select{font-size:16px}}@media(max-width:600px){.wrap,.read{padding:0 var(--gut)}.head-in{padding:0 var(--gut);gap:14px;height:64px}.nav{inset:64px 0 auto 0;max-height:calc(100vh - 64px)}.brand{font-size:20px}.sec{padding:44px 0}.sec.tight{padding:32px 0}.sec-head{margin-bottom:24px;padding-bottom:12px}.grid{gap:28px 20px}.hero{padding-top:0}.hero-media{height:min(52vh,420px);border-radius:12px}.hero-card{margin-top:-34px;padding:24px var(--gut) 4px;border-radius:14px}.hero-card .dek{font-size:16.5px}.card-media{margin-bottom:14px}.card .ex{font-size:14.5px;margin-bottom:12px}.news{padding:30px 22px;border-radius:12px}.news.inline{padding:26px 20px;margin:34px 0}.news p{font-size:15.5px}.btn{padding:14px 22px;font-size:14.5px}.post-hero{padding:30px 0 20px}.post-hero .dek{font-size:18px}.post-cover{padding:0 var(--gut);margin-bottom:34px}.entry{font-size:17.5px;line-height:1.68}.entry blockquote{font-size:20px;padding:4px 0 4px 18px;margin:28px auto}.entry pre{padding:16px;font-size:14px}.entry table th,.entry table td{padding:10px 12px}.share{margin:34px auto;padding:18px 0;gap:8px}.share a,.share button{padding:9px 15px;font-size:13px}.author-box{gap:16px;padding:22px 0}.author-box img{width:60px;height:60px}.pod{gap:14px}.pod-art{width:72px;height:72px}.proj{padding:24px 22px 22px}.site-foot{margin-top:56px;padding:48px 0 36px}.foot-grid{gap:30px;margin-bottom:32px}}@media(max-width:520px){.sticky-bar{padding:12px 16px;gap:10px}.sticky-bar .t{font-size:12.5px}.sticky-bar .btn{padding:10px 16px;font-size:13px}}@media(min-width:601px) and (max-width:940px){.foot-grid{grid-template-columns:1fr 1fr}}@media(max-width:1100px){.burger{display:flex}.nav{position:fixed;inset:70px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:14px 20px 24px;display:none;max-height:calc(100vh - 70px);overflow-y:auto;box-shadow:0 20px 40px -24px rgb(0 0 0 / .3)}.nav.open{display:flex}.nav ul{flex-direction:column;width:100%;gap:0}.nav a{padding:14px 12px;font-size:16.5px;border-bottom:1px solid var(--line)}.nav ul ul{position:static;min-width:0;opacity:1;visibility:visible;transform:none;box-shadow:none;background:#fff0;border:0;padding:0 0 0 18px}}@media(max-width:600px){.nav{inset:64px 0 auto 0;max-height:calc(100vh - 64px)}}:root{--mut:#686874!important;--o-mut:#686874!important}.cdo-book{color:#141008!important}.ory-sf{max-width:640px}.ory-sf label{display:block;font-size:14px;font-weight:700;margin:0 0 6px;color:#3C3C46}.ory-sf input[type=text],.ory-sf input[type=email],.ory-sf textarea{width:100%;border:1px solid #D4CDC0;border-radius:10px;padding:12px 14px;font-size:16px;background:#fff;box-sizing:border-box}.ory-sf input:focus,.ory-sf textarea:focus{outline:2px solid #C2452D;outline-offset:1px}.ory-sf .ory-sf-ok label{font-weight:400;display:block;line-height:1.5}.ory-sf .ory-sf-ok input{margin:0 8px 0 0;vertical-align:-2px}.ory-sf button{border:0;cursor:pointer;font-size:16px}.page-id-23292 #comments,.page-id-23292 .comments-area,.page-id-23291 #comments,.page-id-23291 .comments-area{display:none!important}.ory-legal,.ory-legal a,.ory-legal small,#toc_container .toc_title,.oh-rev cite,.ory-t3 li b,.ory-t3 small{color:#686874!important}.ory-ask .go{background:#0f7a3e!important}.oh{--mut:#686874!important}.destinos a i{opacity:1!important;color:#686874!important}#email-notes,.required-field-message,.comment-notes{color:#686874!important}.share a[href*="whatsapp"]{background:#0f7a3e!important}body .share a[href*="whatsapp"]{background:#0F7A3E!important;border-color:#0F7A3E!important}body .ory-new,body .ory-wa,body .ory-ask span.go{background:#0F7A3E!important}.ory-ask,.ory-wa,.ory-contact-btn.is-wa{display:none!important}</style> 
+</head>
+<body class="archive category category-dinamarca category-144 wp-embed-responsive wp-theme-ory-theme"> 
+<style media="all">.oh{--ink:#15151A;--ink2:#3C3C46;--mut:#7C7C8A;--line:#E6E1D8;--line2:#D4CDC0;--paper:#fff;--paper2:#FAF8F4;--paper3:#F1ECE4;--acc:#C2452D;--accd:#9E3623;--deep:#0E4F49;--gold:#A8842C;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--serif:Georgia,"Iowan Old Style","Times New Roman",serif;font-family:var(--sans);color:var(--ink);line-height:1.6}.oh *,.oh *::before,.oh *::after{box-sizing:border-box}.oh a{color:inherit;text-decoration:none}.oh img{max-width:100%;height:auto;display:block}.oh-w{max-width:1180px;margin:0 auto;padding:0 22px}@media(min-width:600px){.oh-w{padding:0 26px}}.oh h1,.oh h2,.oh h3{font-family:var(--serif);font-weight:700;letter-spacing:-.018em;line-height:1.1;margin:0}.oh-eye{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--acc);margin-bottom:14px}.oh-eye::before{content:"";width:24px;height:1.5px;background:var(--acc)}.oh-sec{padding:64px 0}@media(max-width:600px){.oh-sec{padding:46px 0}}.oh-band{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.oh-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:14px;border-bottom:1.5px solid var(--ink)}.oh-head h2{font-size:clamp(24px,3.2vw,36px)}.oh-more{font-size:13.5px;font-weight:700;color:var(--acc);white-space:nowrap}.oh-more:hover{text-decoration:underline;text-underline-offset:3px}.oh-lang{position:sticky;top:70px;z-index:60;display:flex;justify-content:center;padding:14px 0 0;pointer-events:none}.oh-lang-in{pointer-events:auto;display:inline-flex;background:rgb(255 255 255 / .92);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:100px;padding:4px;box-shadow:0 8px 24px -14px rgb(20 20 26 / .4)}.oh-lang button{border:0;background:none;cursor:pointer;font:700 13px/1 var(--sans);letter-spacing:.06em;color:var(--mut);padding:9px 18px;border-radius:100px;transition:.2s}.oh-lang button.on{background:var(--ink);color:#fff}@media(max-width:600px){.oh-lang{top:64px}}.oh-hero{padding:26px 0 8px}.oh-hero-grid{display:grid;gap:34px;grid-template-columns:1fr}@media(min-width:900px){.oh-hero-grid{grid-template-columns:1.05fr .95fr;align-items:center;gap:52px}}.oh-hero h1{font-size:clamp(34px,5.6vw,60px);line-height:1.03;margin-bottom:18px}.oh-hero h1 em{font-style:normal;color:var(--acc)}.oh-lead{font-size:clamp(17px,2vw,20px);color:var(--ink2);line-height:1.55;margin:0 0 26px;max-width:52ch}.oh-cta{display:flex;gap:12px;flex-wrap:wrap}.oh-btn{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-weight:700;font-size:15px;padding:15px 26px;border-radius:11px;transition:.18s;border:1.5px solid var(--ink);cursor:pointer;font-family:var(--sans)}.oh-btn:hover{background:var(--acc);border-color:var(--acc);transform:translateY(-2px)}.oh-btn.ghost{background:#fff0;color:var(--ink)}.oh-btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}.oh-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.oh-stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}.oh-stat b{display:block;font-family:var(--serif);font-size:clamp(24px,3vw,32px);line-height:1;color:var(--ink)}.oh-stat span{display:block;font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--mut);margin-top:7px;font-weight:600}.oh-hero-media{position:relative;border-radius:18px;overflow:hidden;background:var(--paper3);aspect-ratio:16/10}.oh-hero-media img{width:100%;height:100%;object-fit:cover}.oh-tag{position:absolute;left:14px;top:14px;background:var(--acc);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:100px}.oh-pod{display:grid;gap:30px;grid-template-columns:1fr;align-items:center}@media(min-width:860px){.oh-pod{grid-template-columns:1fr 1fr;gap:48px}}.oh-pod h2{font-size:clamp(25px,3.4vw,38px);margin-bottom:14px}.oh-pod p{color:var(--ink2);font-size:16.5px;margin:0 0 22px;max-width:48ch}.oh-pod-list{list-style:none;margin:0 0 26px;padding:0}.oh-pod-list li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink2)}.oh-pod-list li:last-child{border-bottom:0}.oh-pod-list svg{width:18px;height:18px;flex:0 0 auto;margin-top:2px;fill:none;stroke:var(--acc);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.oh-pod-media{border-radius:18px;overflow:hidden;background:var(--ink);aspect-ratio:16/10;display:grid;place-items:center;position:relative}.oh-pod-media a{display:grid;place-items:center;width:100%;height:100%;color:#fff;text-align:center;padding:26px;background:radial-gradient(circle at 50% 45%,#2A2A33,#121216)}.oh-pod-media .pl{width:64px;height:64px;border-radius:50%;border:2px solid rgb(255 255 255 / .8);display:grid;place-items:center;margin:0 auto 16px;transition:.2s}.oh-pod-media a:hover .pl{background:#fff;border-color:#fff}.oh-pod-media .pl svg{width:22px;height:22px;fill:#fff;stroke:none;margin-left:3px;transition:.2s}.oh-pod-media a:hover .pl svg{fill:var(--ink)}.oh-pod-media strong{display:block;font-family:var(--serif);font-size:21px;font-weight:700}.oh-pod-media span{display:block;font-size:13px;color:rgb(255 255 255 / .6);margin-top:6px}.oh-revs{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));margin-top:26px}.oh-rev{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px}.oh-rev q{display:block;quotes:none;font:italic 15.5px/1.6 var(--serif);color:#26262E;margin-bottom:12px}.oh-rev cite{display:flex;align-items:center;gap:9px;font-style:normal;font-size:12.5px;color:var(--mut)}.oh-rev cite b{color:var(--ink)}.oh-rev cite s{text-decoration:none;margin-left:auto;background:var(--deep);color:#fff;font-weight:700;font-size:12px;padding:4px 9px;border-radius:7px}.oh-projs{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(270px,100%),1fr))}.oh-proj{display:block;padding:26px 24px;border-radius:16px;background:var(--paper);border:1px solid var(--line);transition:.22s}.oh-proj:hover{transform:translateY(-3px);border-color:var(--line2);box-shadow:0 18px 40px -26px rgb(20 20 26 / .45)}.oh-proj .k{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:800}.oh-proj.give{border-color:rgb(14 79 73 / .34);background:linear-gradient(180deg,rgb(14 79 73 / .06),var(--paper) 70%)}.oh-proj.give .k{color:var(--deep)}.oh-proj h3{margin:11px 0 8px;font-size:20px}.oh-proj p{margin:0;font-size:14.5px;color:var(--mut);line-height:1.55}.oh-proj .go{margin-top:16px;font-size:13px;font-weight:700;display:inline-block;border-bottom:1.5px solid var(--acc);padding-bottom:2px}.oh-proj.give .go{border-color:var(--deep)}.oh-dest{display:flex;flex-wrap:wrap;gap:9px}.oh-dest a{display:inline-flex;align-items:baseline;gap:7px;padding:10px 18px;border-radius:100px;border:1px solid var(--line);font-size:14px;font-weight:600;transition:.18s;background:var(--paper)}.oh-dest a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}.oh-dest a i{font-style:normal;font-size:11.5px;opacity:.55}.oh-l[hidden]{display:none}</style> 
+<script>
+(function(){
+function boot(){
+if(!document.body||!document.body.classList.contains('home')||document.body.classList.contains('page')) return;
+var main=document.querySelector('main'), hero=document.querySelector('.hero');
+if(!main) return;
+/* ---------- diccionario EN ---------- */
+var EN={
+"Lo ultimo":"Latest writing","Lo último":"Latest writing","Destinos":"Destinations",
+"Ver todo →":"See all →","Recien salido":"Fresh out","Recién salido":"Fresh out",
+"Por donde empezar":"Where to start","Por dónde empezar":"Where to start",
+"Inicio":"Home","Europa":"Europe","Asia":"Asia","África":"Africa","America":"Americas","América":"Americas",
+"Oceanía":"Oceania","Consejos":"Tips","Ofertas de Viaje":"Travel deals","¿Quién soy?":"About me","Contacto":"Contact",
+"España":"Spain","Reino Unido":"United Kingdom","Italia":"Italy","Alemania":"Germany","Brasil":"Brazil",
+"Escocia":"Scotland","Londres":"London","Holanda":"Netherlands","Edimburgo":"Edinburgh","Florencia":"Florence",
+"Sin categoría":"Uncategorised","Explorar":"Explore","Buscar":"Search","Leer más":"Read more"
+};
+var TITLES={
+"/el-festival-de-la-luz-de-amsterdam/":["The Amsterdam Light Festival","Twenty light installations along the canals of the coldest, most electric city in northern Europe."],
+"/moda-sostenible-un-museo-en-amsterdam/":["Sustainable fashion, a museum in Amsterdam","The Dutch turned recycling into an art form. There is a museum to prove it."],
+"/san-nicolas/":["Sinterklaas, the Dutch Saint Nicholas","Every 5 December the Netherlands stops for a saint. What it is and why it matters there."],
+"/maison-amsterdam/":["Maison Amsterdam","A city with an infinite number of ways to spend an afternoon. Here is one of the best."],
+"/5-ferias-de-buenos-aires-que-tienes-que-conocer/":["5 Buenos Aires markets you have to see","The open-air markets are back. This city has more going on than almost any other."],
+"/el-barrio-chino-de-buenos-aires/":["Inside the Chinatown of Buenos Aires","One of the largest and most important communities in the city, in a handful of streets."],
+"/descubriendo-tenerife/":["Discovering Tenerife","Where to go when travel starts again and you have a list to work through."],
+"/pueblos-cerca-de-lisboa/":["4 towns near Lisbon worth falling for","Lisbon is wonderful. Just outside it there are four places that are better."],
+"/las-8-mejores-cafeterias-con-encanto-de-buenos-aires/":["The 8 loveliest cafes in Buenos Aires","Everyone thinks mate and asado. The coffee is the part nobody tells you about."],
+"/el-tango-en-los-paises-bajos/":["Tango in the Netherlands","A dance from the Rio de la Plata that somehow took root 11,000 km away."],
+"/parcela-sumba-curso-sevilla-venture-builder/":["A plot, two days with me, and a share of what we launch","Two places. Land in Sumba, two days building with me in Seville, and a percentage of the venture builder we plan to launch 100 projects a year from."],
+"/beachfront-town-sumba/":["Why we are building a beachfront town","Sumba is 400 km east of Bali and almost nobody has been. Why I stopped writing and started building."]
+};
+/* ---------- guardar originales ---------- */
+var NODES=[];
+function collect(sel){ document.querySelectorAll(sel).forEach(function(e){
+var i=e.querySelector('i');
+var t=i? (e.childNodes[0]?e.childNodes[0].textContent.trim():'') : e.textContent.trim();
+if(!t) return; NODES.push({e:e,es:e.textContent,key:t,txt:i?e.childNodes[0]:null}); }); }
+collect('.nav a');
+collect('.sec-head h2');
+collect('.eyebrow');
+collect('.more');
+collect('.foot-grid h4');
+collect('.foot-grid a');
+collect('.destinos a');
+var CARDS=[];
+document.querySelectorAll('.card').forEach(function(c){
+var a=c.querySelector('a[href]'); if(!a) return;
+var q=a.getAttribute('href').split('://').pop(); var p=q.substring(q.indexOf('/'));
+var h=c.querySelector('h3'), x=c.querySelector('.ex');
+if(TITLES[p]) CARDS.push({h:h,x:x,es:[h?h.textContent:'',x?x.textContent:''],en:TITLES[p]});
+});
+(function(){var c=document.querySelector('.hero-card'); if(!c) return; var a=c.querySelector('h1 a[href]'); if(!a) return; var q=a.getAttribute('href').split('://').pop(); var p=q.substring(q.indexOf('/')); var h=c.querySelector('h1 a'), x=c.querySelector('.dek'); if(TITLES[p]) CARDS.push({h:h,x:x,es:[h?h.textContent:'',x?x.textContent:''],en:TITLES[p]});})();
+function setLang(l){
+NODES.forEach(function(n){
+if(l==='es'){ if(n.txt){ n.txt.textContent=n.key+' '; } else { n.e.textContent=n.es; } return; }
+var t=n.key, tr=EN[t];
+if(!tr){ /* destinos llevan el numero dentro de un <i> */ }
+if(tr){ if(n.txt){ n.txt.textContent=tr+' '; } else { n.e.textContent=tr; } }
+});
+CARDS.forEach(function(c){
+if(c.h) c.h.textContent = l==='es'? c.es[0] : c.en[0];
+if(c.x) c.x.textContent = l==='es'? c.es[1] : c.en[1];
+});
+document.querySelectorAll('.oh [data-en]').forEach(function(e){ e.textContent=e.getAttribute('data-'+l); });
+document.querySelectorAll('.oh [data-en-html]').forEach(function(e){ e.innerHTML=e.getAttribute('data-'+l+'-html'); });
+document.querySelectorAll('.oh-lang button').forEach(function(b){ b.classList.toggle('on',b.getAttribute('data-lang')===l); });
+document.documentElement.setAttribute('data-oh-lang',l);
+try{ localStorage.setItem('oh-lang',l); }catch(e){}
+}
+/* ---------- barra de idioma ---------- */
+var lang=document.createElement('div');
+lang.className='oh oh-lang';
+lang.innerHTML='<div class="oh-lang-in"><button type="button" data-lang="en" class="on">EN</button><button type="button" data-lang="es">ES</button></div>';
+main.insertBefore(lang,main.firstChild);
+lang.querySelectorAll('button').forEach(function(b){ b.addEventListener('click',function(){ setLang(b.getAttribute('data-lang')); }); });
+/* ---------- bloques nuevos ---------- */
+var wrap2=document.createElement('div');
+wrap2.className='oh'; wrap2.id='oh-inject2';
+wrap2.innerHTML=
+'<section class="oh-sec"><div class="oh-w"><div class="oh-pod"><div>'
++'<span class="oh-eye" data-en="The podcast" data-es="El podcast"></span>'
++'<h2 data-en="Come and record with me" data-es="Ven a grabar conmigo"></h2>'
++'<p data-en="Long, unhurried conversations. No script, no promo, no thirty-second answers." data-es="Conversaciones largas y sin prisa. Sin guion, sin promo, sin respuestas de treinta segundos."></p>'
++'<ul class="oh-pod-list">'
++'<li><span data-en="People who build things nobody asked them to build" data-es="Gente que construye cosas que nadie le ha pedido"></span></li>'
++'<li><span data-en="Points and miles obsessives with a better trick than mine" data-es="Obsesos de los puntos con un truco mejor que el mío"></span></li>'
++'<li><span data-en="Anyone who moved somewhere unreasonable and made it work" data-es="Cualquiera que se haya mudado a un sitio poco razonable y le haya salido bien"></span></li></ul>'
++'<a class="oh-btn" href="https://cal.com/team/luxury-beach-residence/podcast" target="_blank" rel="noopener"><span data-en="Book time for the podcast" data-es="Reserva hora para el podcast"></span></a>'
++'</div><div class="oh-pod-media"><a href="https://www.youtube.com/@CarlosDeOry" target="_blank" rel="noopener"><div>'
++'<div class="pl"></div>'
++'<strong data-en="Watch on YouTube" data-es="Ver en YouTube"></strong><span>@CarlosDeOry</span>'
++'</div></a></div></div></div></section>'
++'<section class="oh-sec oh-band"><div class="oh-w"><div class="oh-head">'
++'<h2 data-en="I stopped writing about nice places" data-es="Dejé de escribir sobre sitios bonitos"></h2>'
++'<a class="oh-more" href="/beachfront-town-sumba/"><span data-en="Read the story →" data-es="Leer la historia →"></span></a></div>'
++'<p class="oh-lead" data-en="Sumba is 400 km east of Bali and almost nobody has been. We are building a town there: villas, a coworking space in front of the sea, Starlink that holds a video call. These are the first people who came and stayed." data-es="Sumba está 400 km al este de Bali y casi nadie ha estado. Estamos construyendo un pueblo allí: villas, un coworking frente al mar y Starlink que aguanta una videollamada. Estos son los primeros que vinieron y se quedaron."></p>'
++'<div class="oh-revs">'
++'<div class="oh-rev"><q data-en="One of the best places I have ever stayed. The enormous private beach and the feeling of being on a deserted island. The Starlink worked really well, even for video calls." data-es="Uno de los mejores sitios en los que he estado. La playa privada enorme y la sensación de estar en una isla desierta. El Starlink funcionó muy bien, incluso para videollamadas."></q><cite><b>Ignacio</b> &middot; Booking.com <s>10/10</s></cite></div>'
++'<div class="oh-rev"><q data-en="A little piece of paradise. It felt like a luxury safari camp in Africa, with a padel court right by the ocean. For less than $100 I got five-star service." data-es="Un pedacito de paraíso. Parecía un campamento de safari de lujo en África, con una pista de pádel junto al océano. Por menos de 100 dólares tuve un servicio de cinco estrellas."></q><cite><b>Xiaoli</b> &middot; Booking.com <s>10/10</s></cite></div>'
++'<div class="oh-rev"><q data-en="The beach is enormous and wonderfully peaceful. Above all, the team is the best part of this place." data-es="La playa es enorme y maravillosamente tranquila. Y por encima de todo, el equipo es lo mejor de este sitio."></q><cite><b>Luis</b> &middot; Booking.com <s>10/10</s></cite></div>'
++'</div></div></section>'
++'<section class="oh-sec"><div class="oh-w"><div class="oh-head"><h2 data-en="What I am building" data-es="Lo que estoy construyendo"></h2></div>'
++'<div class="oh-projs">'
++'<a class="oh-proj give" href="https://supportnear.com" target="_blank" rel="noopener"><span class="k" data-en="Non-profit · the one I am proudest of" data-es="Sin ánimo de lucro · de lo que más orgulloso estoy"></span><h3>SupportNear</h3><p data-en="Free food, shelter, showers and clothes on one live map. 37,000+ places in 147 countries. No account, no tracking, no cost." data-es="Comida, refugio, duchas y ropa gratis en un mapa. Más de 37.000 sitios en 147 países. Sin cuenta, sin rastreo, sin coste."></p><span class="go" data-en="Open the map →" data-es="Abrir el mapa →"></span></a>'
++'<a class="oh-proj" href="https://ecobeachcity.com" target="_blank" rel="noopener"><span class="k">Sumba, Indonesia</span><h3>Eco Beach City</h3><p data-en="A beachfront town from scratch. Land, villas and a coworking space in front of the sea." data-es="Un pueblo frente al mar desde cero. Terreno, villas y un coworking delante del agua."></p><span class="go" data-en="See it →" data-es="Verlo →"></span></a>'
++'<a class="oh-proj" href="https://happylowcost.com" target="_blank" rel="noopener"><span class="k" data-en="Where it started" data-es="Donde empezó todo"></span><h3>Happy Low Cost</h3><p data-en="The travel deals project that taught me everything about flying for less." data-es="El proyecto de ofertas de viaje que me enseñó todo sobre volar por menos."></p><span class="go" data-en="Visit →" data-es="Visitar →"></span></a>'
++'</div></div></section>';
+var dest=null;
+document.querySelectorAll('.sec').forEach(function(s){ if(s.querySelector('.destinos')) dest=s; });
+if(dest?dest.parentNode:null) dest.parentNode.insertBefore(wrap2,dest); else main.appendChild(wrap2);
+var saved='en'; try{ saved=localStorage.getItem('oh-lang')||'en'; }catch(e){}
+setLang(saved==='es'?'es':'en');
+}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot); else boot();
+})();
+</script>
+<div class="progress" id="ory-progress"></div> <a class="skip-link" href="#main">Saltar al contenido</a> <header class="site-head" id="ory-head"> <div class="head-in"> <a class="brand" href="https://www.carlosdeory.com/" rel="home"> Carlos de <span>Ory</span> </a> <button class="burger" id="ory-burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="ory-nav"><span></span></button> <nav class="nav" id="ory-nav" aria-label="Menu principal"> <ul id="menu-menu-1" class="menu"><li id="menu-item-953" class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-953"><a href="https://www.carlosdeory.com">Inicio</a></li> <li id="menu-item-1087" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1087"><a href="https://www.carlosdeory.com/category/europa">Europa</a> <ul class="sub-menu"> <li id="menu-item-1974" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1974"><a href="https://www.carlosdeory.com/espana/">España</a></li> <li id="menu-item-1980" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1980"><a href="https://www.carlosdeory.com/reinounido/">Reino Unido</a></li> <li id="menu-item-2555" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2555"><a href="https://www.carlosdeory.com/alemania/">Alemania</a></li> <li id="menu-item-2002" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2002"><a href="https://www.carlosdeory.com/francia/">Francia</a></li> <li id="menu-item-1981" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1981"><a href="https://www.carlosdeory.com/italia/">Italia</a></li> <li id="menu-item-1996" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1996"><a href="https://www.carlosdeory.com/portugal/">Portugal</a></li> <li id="menu-item-3097" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3097"><a href="https://www.carlosdeory.com/suiza/">Suiza</a></li> <li id="menu-item-6062" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6062"><a href="https://www.carlosdeory.com/holanda/">Holanda</a></li> <li id="menu-item-3711" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3711"><a href="https://www.carlosdeory.com/escocia/">Escocia</a></li> <li id="menu-item-15942" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15942"><a href="https://www.carlosdeory.com/hungria/">Hungría</a></li> <li id="menu-item-2463" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2463"><a href="https://www.carlosdeory.com/polonia/">Polonia</a></li> <li id="menu-item-2215" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-2215"><a href="https://www.carlosdeory.com/dinamarca/" aria-current="page">Dinamarca</a></li> <li id="menu-item-2863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2863"><a href="https://www.carlosdeory.com/rumania/">Rumania</a></li> <li id="menu-item-2214" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2214"><a href="https://www.carlosdeory.com/croacia/">Croacia</a></li> <li id="menu-item-2696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2696"><a href="https://www.carlosdeory.com/ucrania/">Ucrania</a></li> <li id="menu-item-1973" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1973"><a href="https://www.carlosdeory.com/turquia/">Turquía</a></li> <li id="menu-item-2013" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2013"><a href="https://www.carlosdeory.com/belgica/">Bélgica</a></li> <li id="menu-item-2485" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2485"><a href="https://www.carlosdeory.com/malta/">Malta</a></li> <li id="menu-item-2134" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2134"><a href="https://www.carlosdeory.com/republicacheca/">República Checa</a></li> <li id="menu-item-2220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2220"><a href="https://www.carlosdeory.com/irlanda/">Irlanda</a></li> </ul> </li> <li id="menu-item-1959" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1959"><a href="https://www.carlosdeory.com/asia/">Asia</a> <ul class="sub-menu"> <li id="menu-item-1960" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1960"><a href="https://www.carlosdeory.com/tailandia/">Tailandia</a></li> <li id="menu-item-1968" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1968"><a href="https://www.carlosdeory.com/indonesia/">Indonesia</a></li> <li id="menu-item-5493" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5493"><a href="https://www.carlosdeory.com/filipinas/">Filipinas</a></li> <li id="menu-item-2533" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2533"><a href="https://www.carlosdeory.com/china/">China</a></li> <li id="menu-item-4610" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4610"><a href="https://www.carlosdeory.com/india/">India</a></li> <li id="menu-item-4778" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4778"><a href="https://www.carlosdeory.com/corea-del-sur/">Corea del Sur</a></li> <li id="menu-item-2222" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2222"><a href="https://www.carlosdeory.com/hong-kong/">Hong Kong</a></li> <li id="menu-item-2155" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2155"><a href="https://www.carlosdeory.com/taiwan/">Taiwan</a></li> <li id="menu-item-7690" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7690"><a href="https://www.carlosdeory.com/camboya/">Camboya</a></li> </ul> </li> <li id="menu-item-1957" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1957"><a href="https://www.carlosdeory.com/africa/">África</a> <ul class="sub-menu"> <li id="menu-item-4424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4424"><a href="https://www.carlosdeory.com/sudafrica/">Sudáfrica</a></li> <li id="menu-item-1999" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1999"><a href="https://www.carlosdeory.com/marruecos/">Marruecos</a></li> </ul> </li> <li id="menu-item-1958" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1958"><a href="https://www.carlosdeory.com/america/">América</a> <ul class="sub-menu"> <li id="menu-item-1987" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1987"><a href="https://www.carlosdeory.com/estados-unidos/">Estados Unidos</a></li> <li id="menu-item-10004" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10004"><a href="https://www.carlosdeory.com/canada/">Canadá</a></li> <li id="menu-item-11340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11340"><a href="https://www.carlosdeory.com/peru/">Perú</a></li> <li id="menu-item-9546" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9546"><a href="https://www.carlosdeory.com/mexico/">México</a></li> <li id="menu-item-9957" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9957"><a href="https://www.carlosdeory.com/cuba/">Cuba</a></li> <li id="menu-item-3669" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3669"><a href="https://www.carlosdeory.com/argentina/">Argentina</a></li> <li id="menu-item-8082" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8082"><a href="https://www.carlosdeory.com/chile/">Chile</a></li> <li id="menu-item-10009" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10009"><a href="https://www.carlosdeory.com/costa-rica/">Costa Rica</a></li> <li id="menu-item-2127" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2127"><a href="https://www.carlosdeory.com/venezuela/">Venezuela</a></li> <li id="menu-item-2423" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2423"><a href="https://www.carlosdeory.com/brasil/">Brasil</a></li> <li id="menu-item-4606" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4606"><a href="https://www.carlosdeory.com/ecuador/">Ecuador</a></li> </ul> </li> <li id="menu-item-2018" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2018"><a href="https://www.carlosdeory.com/oceania/">Oceanía</a> <ul class="sub-menu"> <li id="menu-item-2019" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2019"><a href="https://www.carlosdeory.com/australia/">Australia</a></li> <li id="menu-item-2026" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2026"><a href="https://www.carlosdeory.com/nueva-zelanda/">Nueva Zelanda</a></li> </ul> </li> <li id="menu-item-8053" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8053"><a href="https://www.carlosdeory.com/digital-nomad/">Digital Nomad</a></li> <li id="menu-item-1002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002"><a href="https://www.carlosdeory.com/category/consejos/">Consejos</a></li> <li id="menu-item-1115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1115"><a href="https://www.carlosdeory.com/category/ofertas-de-viaje">Ofertas de Viaje</a></li> <li id="menu-item-1669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1669"><a href="https://www.carlosdeory.com/about-me/">¿Quién soy?</a></li> <li id="menu-item-10492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10492"><a href="https://www.carlosdeory.com/contacto/">Contacto</a></li> <li id="menu-item-22191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22191"><a href="https://www.carlosdeory.com/libro/">El libro</a></li> </ul> </nav> <a class="head-cta" href="#newsletter"> Newsletter </a> </div> </header> <main id="main"> <div class="wrap"> <div class="page-hero"> <span class="eyebrow">Archivo</span> <h1>Categoría: <span>Dinamarca</span></h1> </div> <div class="sec tight"> <div class="grid g3"> <article class="card post-19283 post type-post status-publish format-standard has-post-thumbnail hentry category-alemania category-argentina category-belgica category-copenhague category-dinamarca category-espana category-europa category-francia category-madrid category-mallorca category-paris category-portugal category-santiago-de-compostela category-zaragoza"> <div class="card-media"> <img width="450" height="450" src="https://www.carlosdeory.com/wp-content/uploads/2019/02/BMW.svg_.png" class="attachment-ory-card size-ory-card wp-post-image" alt="Viajando Música: De Argentina al mundo con su guitarra y bicicleta" decoding="async" fetchpriority="high" srcset="https://www.carlosdeory.com/wp-content/uploads/2019/02/BMW.svg_.png 900w, https://www.carlosdeory.com/wp-content/uploads/2019/02/BMW.svg_-150x150.png 150w, https://www.carlosdeory.com/wp-content/uploads/2019/02/BMW.svg_-300x300.png 300w, https://www.carlosdeory.com/wp-content/uploads/2019/02/BMW.svg_-768x768.png 768w, https://www.carlosdeory.com/wp-content/uploads/2019/02/BMW.svg_-585x585.png 585w" sizes="(max-width: 450px) 100vw, 450px" loading="eager" /> <span class="chip on-photo">Alemania</span> </div> <div class="card-body"> <h3>Viajando Música: De Argentina al mundo con su guitarra y bicicleta</h3> <p class="ex">Eran las cinco de la tarde cuando la plaza empezaba a brillar, sus dedos comenzaban hacer magia en las cuerdas&hellip;</p> <div class="meta"> <time datetime="2019-05-25T19:59:07+01:00">25 mayo, 2019</time> <span>&middot;</span> <span>5 min de lectura</span> </div> </div> <a class="stretch" href="https://www.carlosdeory.com/viajando-musica-de-argentina-al-mundo-con-su-guitarra-y-bicicleta/"> <span class="screen-reader-text">Viajando Música: De Argentina al mundo con su guitarra y bicicleta</span> </a> </article> <article class="card post-19261 post type-post status-publish format-standard has-post-thumbnail hentry category-copenhague category-dinamarca category-europa tag-dinamarca"> <div class="card-media"> <span class="chip on-photo">Copenhague</span> </div> <div class="card-body"> <h3>Copenhague, donde la vida pasa por la bici y el clima</h3> <p class="ex">De Dinamarca no tenía idea de nada, sólo sabía que empezaba con la letra “d” y por eso lo usaba&hellip;</p> <div class="meta"> <time datetime="2019-04-29T11:13:19+01:00">29 abril, 2019</time> <span>&middot;</span> <span>5 min de lectura</span> </div> </div> <a class="stretch" href="https://www.carlosdeory.com/copenhague-donde-la-vida-pasa-por-la-bici-y-el-clima/"> <span class="screen-reader-text">Copenhague, donde la vida pasa por la bici y el clima</span> </a> </article> </div> </div> <div class="sec"> <div class="news" id="newsletter"> <h2>La newsletter que sí abres</h2> <p>Te escribo cuando tengo algo que merece la pena: rutas, trucos de millas y lo que estoy construyendo. Apúntate y te llevas el Million Mile Playbook en PDF.</p> <p class="mut" style="font-size:14px"> <em>Pega la URL de tu formulario de Brevo en Personalizar &rarr; Ory: Newsletter para activar este bloque.</em> </p> <small>Sin spam. Te das de baja en un clic. Al apuntarte aceptas la <a href="/politica-de-privacidad/">política de privacidad</a>.</small> </div> </div> </div> </main> <footer class="site-foot"> <div class="wrap"> <div class="foot-grid"> <div> <div class="brand" style="font-size:22px;margin-bottom:12px"> Carlos de <span>Ory</span> </div> <p class="mut" style="max-width:44ch;font-size:15px"> Viajes, puntos y millas, y cómo monto empresas desde Sumba. </p> </div> <div> <h4>Explorar</h4> <ul id="menu-pie" class="menu"><li id="menu-item-22192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22192"><a href="https://www.carlosdeory.com/libro/">El libro</a></li> <li id="menu-item-22193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22193"><a href="https://www.carlosdeory.com/herramientas/">Mis herramientas de viaje</a></li> <li id="menu-item-22194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22194"><a href="https://www.carlosdeory.com/quien-soy/">Quién soy</a></li> <li id="menu-item-22195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22195"><a href="https://www.carlosdeory.com/prensa/">Prensa</a></li> <li id="menu-item-23293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23293"><a href="https://www.carlosdeory.com/cuentame-tu-viaje/">Cuéntame tu viaje</a></li> <li id="menu-item-22197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22197"><a href="https://www.carlosdeory.com/unete/">Únete al equipo</a></li> <li id="menu-item-22198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22198"><a href="https://www.carlosdeory.com/links/">Todos mis proyectos</a></li> <li id="menu-item-22199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22199"><a href="https://www.carlosdeory.com/contacto/">Contacto</a></li> </ul> </div> <div> <h4>Buscar</h4> <form role="search" method="get" class="searchform" action="https://www.carlosdeory.com/"> <label class="screen-reader-text" for="s-6ad616ea89018">Buscar</label> <input type="search" name="s" placeholder="Buscar un destino..." value=""> <button class="btn" type="submit">Buscar</button> </form> </div> </div> <div class="foot-bar"> <span>&copy; 2026 Carlos de Ory</span> <span>Algunos enlaces son de afiliado. No cambian el precio que pagas.</span> </div> </div> </footer> 
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ory-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<style media="all">.ory-podbar{background:#0E4F49;color:#F4F1EA;padding:26px 22px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}.ory-podbar-in{max-width:820px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.ory-podbar-t{margin:0;font:700 19px/1.25 Georgia,"Times New Roman",serif;color:#fff}.ory-podbar-s{margin:5px 0 0;font-size:14px;line-height:1.45;color:rgb(244 241 234 / .74)}.ory-podbar-a{display:inline-block;background:#fff;color:#0E4F49;font-weight:700;font-size:15px;padding:15px 28px;border-radius:10px;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s,transform .18s}.ory-podbar-a:hover{background:#C2452D;color:#fff;transform:translateY(-2px)}@media(max-width:640px){.ory-podbar{padding:24px 20px}.ory-podbar-in{flex-direction:column;align-items:stretch;text-align:center;gap:16px}.ory-podbar-t{font-size:18px}.ory-podbar-a{display:block;padding:15px 20px}}body.page-id-19755 .ory-podbar{display:none!important}</style> <div class="ory-podbar"><div class="ory-podbar-in"><div><p class="ory-podbar-t">Come on the podcast</p><p class="ory-podbar-s">Builders, travellers, points nerds. Pick a slot, we record remotely.</p></div><a class="ory-podbar-a" href="https://cal.com/team/luxury-beach-residence/podcast" target="_blank" rel="noopener">Book time for the podcast</a></div></div> 
+<style media="all">.ory-legal{max-width:1180px;margin:0 auto;padding:26px 22px 34px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:13.5px;color:#7C7C8A;text-align:center}.ory-legal a{color:#7C7C8A;text-decoration:none;margin:0 9px;line-height:2.2;white-space:nowrap}.ory-legal a:hover{color:#C2452D;text-decoration:underline}.ory-legal small{display:block;margin-top:12px;font-size:12px;color:#9A9AA4;line-height:1.6}</style> <div class="ory-legal"> <a href="/aviso-legal/">Aviso legal</a><a href="/politica-de-privacidad/">Privacidad</a><a href="/politica-de-cookies/">Cookies</a><a href="/terminos-y-condiciones/">Términos</a><a href="/transparencia/">Transparencia</a> <small>Equinox Investment Group LLC · 30 N Gould St, Ste N, Sheridan, WY 82801, United States</small> </div> 
+<style media="all">:root{--o-ink:#15151A;--o-ink2:#3C3C46;--o-mut:#7C7C8A;--o-line:#E6E1D8;--o-paper:#FAF8F4;--o-acc:#C2452D;--o-deep:#0E4F49}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--o-acc)!important;outline-offset:2px}@media(max-width:640px){.share a,.share button{min-height:44px;padding:11px 16px!important}.btn,.head-cta{min-height:44px}}@media(max-width:640px){.entry{font-size:18.5px;line-height:1.7}.entry h2{font-size:25px;line-height:1.2}.entry h3{font-size:21px}}.entry p:empty{display:none}.progress{height:4px!important;box-shadow:0 1px 4px rgb(194 69 45 / .35)}.share a[href*="whatsapp"]{background:#1FAF5A!important;border-color:#1FAF5A!important;color:#fff!important}.ory-tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 1.4em}.ory-tw table{min-width:520px;margin:0}.entry div[style*="#faf4de"] a{display:inline-block;background:var(--o-ink);color:#fff!important;text-decoration:none!important;border-radius:8px;padding:3px 11px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;font-weight:700;margin-left:2px}.entry div[style*="#faf4de"] a:hover{background:var(--o-acc)}.ory-old{max-width:680px;margin:14px auto 0;padding:10px 14px;border-radius:10px;background:var(--o-paper);border:1px solid var(--o-line);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--o-ink2);text-align:center}.ory-bc{font:12.5px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--o-mut);text-align:center;margin:0 0 12px}.ory-bc a{color:var(--o-mut);text-decoration:none}.ory-bc a:hover{color:var(--o-acc)}.ory-bc span{margin:0 6px}.ory-next{border:1px solid var(--o-line);border-radius:16px;padding:22px;margin:34px 0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.ory-next .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--o-acc);margin:0 0 12px}.ory-next .g{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}.ory-next a{display:block;border:1px solid #EFEAE2;border-radius:12px;padding:14px;text-decoration:none;color:var(--o-ink)}.ory-next a:hover{border-color:var(--o-acc)}.ory-next b{display:block;font:700 16.5px/1.25 Georgia,serif;margin:0 0 4px}.ory-next em{font-style:normal;font-size:13.5px;color:var(--o-mut)}.ory-top,.ory-tocb{position:fixed;z-index:90;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:var(--o-ink);color:#fff;font:700 18px/46px -apple-system,sans-serif;text-align:center;box-shadow:0 8px 22px -10px rgb(0 0 0 / .5);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s}.ory-top{right:18px}.ory-tocb{left:18px;width:auto;padding:0 16px;border-radius:24px;font-size:13.5px;letter-spacing:.06em}.ory-top.on,.ory-tocb.on{opacity:.92;pointer-events:auto}.ory-tocp{position:fixed;z-index:91;left:18px;bottom:74px;max-width:min(380px,calc(100vw - 36px));max-height:60vh;overflow:auto;background:#fff;border:1px solid var(--o-line);border-radius:14px;padding:14px 18px;box-shadow:0 18px 40px -18px rgb(0 0 0 / .45);font:14.5px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:none}.ory-tocp.on{display:block}.ory-tocp ul{list-style:none;margin:0;padding:0}.ory-tocp ul ul{padding-left:14px}.ory-tocp li{margin:6px 0}.ory-tocp a{color:var(--o-ink);text-decoration:none}.ory-tocp a:hover{color:var(--o-acc)}.ory-lb{position:fixed;inset:0;z-index:200;background:rgb(10 10 14 / .92);display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}.ory-lb.on{display:flex}.ory-lb img{max-width:100%;max-height:100%;border-radius:8px}.entry img{cursor:zoom-in}.ory-ccount{font:13px/1 -apple-system,sans-serif;color:var(--o-mut);text-decoration:none;margin-left:6px}.ory-new{display:inline-block;background:#1FAF5A;color:#fff;font:800 10px/1 -apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:5px 8px;border-radius:100px;margin-right:8px;vertical-align:2px}.ory-h{max-width:1180px;margin:0 auto;padding:46px 22px 6px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}.ory-h .eye{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--o-acc);margin:0 0 12px}.ory-h .eye::before{content:"";width:24px;height:1.5px;background:var(--o-acc)}.ory-h h2{font:700 clamp(24px,3.2vw,34px)/1.12 Georgia,serif;margin:0 0 22px;color:var(--o-ink)}.ory-doors{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.ory-door{display:block;border-radius:18px;padding:24px 22px;text-decoration:none;color:#fff;min-height:170px;position:relative;overflow:hidden}.ory-door:nth-child(1){background:#15151A}.ory-door:nth-child(2){background:#9E3623}.ory-door:nth-child(3){background:var(--o-deep)}.ory-door b{display:block;font:700 23px/1.15 Georgia,serif;margin:0 0 8px}.ory-door em{font-style:normal;font-size:15px;opacity:.85;display:block;max-width:34ch}.ory-door span{position:absolute;right:20px;bottom:18px;font-size:22px;opacity:.8}.ory-door:hover{transform:translateY(-2px);transition:transform .2s}.ory-start{display:grid;gap:10px;counter-reset:s}.ory-start a{display:flex;gap:14px;align-items:baseline;padding:14px 4px;border-bottom:1px solid var(--o-line);text-decoration:none;color:var(--o-ink)}.ory-start a::before{counter-increment:s;content:counter(s,decimal-leading-zero);font:700 14px/1 Georgia,serif;color:var(--o-acc);min-width:26px}.ory-start b{font:700 18px/1.3 Georgia,serif}.ory-start em{font-style:normal;color:var(--o-mut);font-size:14px;display:block;margin-top:3px}.ory-start a:hover b{color:var(--o-acc)}.ory-press-strip{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:center;padding:22px;border-top:1px solid var(--o-line);border-bottom:1px solid var(--o-line);margin:30px auto 0;max-width:1180px;font-family:-apple-system,sans-serif}.ory-press-strip span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--o-mut);font-weight:700}.ory-press-strip a{font:700 17px/1 Georgia,serif;color:var(--o-ink2);text-decoration:none}@media(max-width:640px){.destinos{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;padding-bottom:8px}.destinos a{flex:0 0 auto;scroll-snap-align:start}}.card .meta span:last-child,.post-meta span{font-weight:600;color:var(--o-ink2)}.oh-proj{position:relative;overflow:hidden}.oh-proj[href*="ecobeachcity"]::before{content:"";display:block;height:120px;margin:-24px -24px 16px;background-size:cover;background-position:center}.oh-proj[href*="ecobeachcity"]::before{background-image:url(/wp-content/uploads/2026/10/eco-beach-city-sumba-coworking-sunset.jpg)}@media (prefers-reduced-motion:no-preference){.card,.ory-door,.ory-tool,.ory-ep{animation:oryUp .5s ease both}@keyframes oryUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}}.ory-wa{position:fixed;right:18px;bottom:76px;z-index:89;width:50px;height:50px;border-radius:50%;background:#1FAF5A;color:#fff;display:none;align-items:center;justify-content:center;font:700 22px/1 -apple-system,sans-serif;text-decoration:none;box-shadow:0 10px 24px -10px rgb(0 0 0 / .5)}@media(max-width:820px){.ory-wa.on{display:flex}}.ory-ask{max-width:1180px;margin:30px auto 0;padding:0 22px}.ory-ask a{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid var(--o-line);border-radius:16px;padding:18px 20px;text-decoration:none;color:var(--o-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--o-paper)}.ory-ask b{font:700 19px/1.25 Georgia,serif;display:block}.ory-ask em{font-style:normal;color:var(--o-mut);font-size:14px}.ory-ask span.go{background:#1FAF5A;color:#fff;border-radius:10px;padding:10px 14px;font-weight:700;white-space:nowrap}.entry blockquote:not(.twitter-tweet){border-left:4px solid var(--o-acc);margin:1.6em 0;padding:.4em 0 .4em 1.1em;font-style:italic;font-size:1.08em;color:var(--o-ink2)}.comment-list .bypostauthor>article,.comment-list .bypostauthor>.comment-body{background:#FFF8EE;border-left:3px solid var(--o-acc);padding:12px 14px;border-radius:0 10px 10px 0}.ory-listen{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--o-line);background:#fff;border-radius:100px;padding:9px 16px;font:700 13.5px/1 -apple-system,sans-serif;color:var(--o-ink);cursor:pointer;margin:14px auto 0}.ory-listen.on{background:var(--o-ink);color:#fff}.btn,.oh-btn,.ory-cta,.ory-nl button{transition:transform .15s ease,background .15s ease}.btn:active,.oh-btn:active,.ory-cta:active,.ory-nl button:active{transform:scale(.97)}.entry a.ory-ep,.entry a.ory-tool,.entry a.ory-ep *,.entry a.ory-tool *{text-decoration:none!important}.entry a.ory-ep,.entry a.ory-ep b{color:var(--o-ink)!important}.ory-pg .ory-lead{font-size:1.15em;line-height:1.6}.ory-eps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:24px 0}.ory-ep{display:block;text-decoration:none;color:var(--o-ink);border:1px solid var(--o-line);border-radius:14px;overflow:hidden;background:#fff}.ory-ep img{width:100%;display:block;aspect-ratio:1200/630;object-fit:cover}.ory-ep .n{display:block;font:800 11px/1 -apple-system,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--o-acc);margin:14px 16px 6px}.ory-ep b{display:block;font:700 20px/1.2 Georgia,serif;margin:0 16px 6px}.ory-ep em{display:block;font-style:normal;font-size:14.5px;color:var(--o-mut);margin:0 16px 16px;font-family:-apple-system,sans-serif}.ory-count{font:13px/1.4 -apple-system,sans-serif;color:var(--o-mut)}.ory-tools{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:22px 0}.ory-tool{display:block;border:1px solid var(--o-line);border-radius:14px;padding:16px;text-decoration:none!important;color:var(--o-ink)!important;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.ory-tool:hover{border-color:var(--o-acc)}.ory-tool .k,.ory-press b{display:block}.ory-tool .k{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--o-acc);margin:0 0 6px}.ory-tool b{display:block;font:700 18px/1.2 Georgia,serif;margin:0 0 6px}.ory-tool em{font-style:normal;font-size:14px;color:var(--o-ink2);line-height:1.45;display:block}.ory-press{display:grid;gap:12px;margin:20px 0}.ory-press div{border-left:3px solid var(--o-acc);padding:6px 14px;background:var(--o-paper);border-radius:0 10px 10px 0}.ory-press b{font:700 17px/1.3 Georgia,serif}.ory-press span{display:block;font-size:15px;color:var(--o-ink2)}.ory-perks2{list-style:none;padding:0;display:grid;gap:8px}.ory-perks2 li{padding-left:22px;position:relative}.ory-perks2 li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:50%;background:#1FAF5A}.ory-sr{position:absolute;z-index:120;left:0;right:0;top:100%;margin-top:6px;background:#fff;border:1px solid var(--o-line);border-radius:12px;box-shadow:0 18px 40px -18px rgb(0 0 0 / .4);overflow:hidden;font:14.5px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:none;text-align:left}.ory-sr.on{display:block}.ory-sr a{display:block;padding:10px 14px;color:var(--o-ink);text-decoration:none;border-bottom:1px solid #F1ECE4}.ory-sr a:hover{background:var(--o-paper)}.ory-sr .all{font-weight:700;color:var(--o-acc)}.searchform{position:relative}.nav .searchform{margin:14px 18px 6px}@media(min-width:1025px){.nav>.searchform{display:none}}.ory-nlbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:95;max-width:720px;margin:0 auto;background:var(--o-ink);color:#fff;border-radius:16px;padding:14px 16px;display:none;gap:12px;align-items:center;justify-content:space-between;box-shadow:0 18px 40px -16px rgb(0 0 0 / .55);font:14.5px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.ory-nlbar.on{display:flex}.ory-nlbar a.go{background:var(--o-acc);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:10px 14px;white-space:nowrap}.ory-nlbar button{background:none;border:0;color:#fff;opacity:.7;font-size:20px;cursor:pointer;padding:0 4px}.ory-social{display:flex;gap:10px;margin-top:14px}.ory-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--o-line);color:var(--o-ink);text-decoration:none;font:700 13px/1 -apple-system,sans-serif}.ory-social a:hover{background:var(--o-ink);color:#fff;border-color:var(--o-ink)}.ory-404{max-width:720px;margin:10px auto 60px;padding:0 22px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.ory-404 h2{font:700 22px/1.2 Georgia,serif;text-align:center;margin:0 0 14px}@media print{.ory-top,.ory-tocb,.ory-tocp,.ory-nlbar,.ory-next,.ory-t3,.ory-lb{display:none!important}}.ory-cruise{display:flex;gap:14px;align-items:center;border:1px solid #E6E1D8;background:#F4F8FB;border-radius:16px;padding:16px 18px;margin:28px 0;text-decoration:none!important;color:#15151A!important}.ory-cruise .ic{font-size:30px;line-height:1}.ory-cruise b{display:block;font-size:16.5px;margin:0 0 3px}.ory-cruise em{font-style:normal;font-size:14px;color:#5B5B66}.ory-cruise .go{margin-left:auto;white-space:nowrap;font-weight:700;font-size:14px;background:#15151A;color:#fff;border-radius:10px;padding:10px 14px}.ory-cruise:hover .go{background:#C2452D}@media(max-width:560px){.ory-cruise{flex-wrap:wrap}.ory-cruise .go{margin-left:0}}.ory-qshare{position:absolute;z-index:9999;display:none;background:#15151A;color:#fff;border-radius:999px;padding:8px 14px;font:700 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;box-shadow:0 6px 20px rgb(0 0 0 / .25);border:0;cursor:pointer}.ory-qshare.on{display:block}.ory-qshare:hover{background:#C2452D}.entry blockquote .ory-qx{display:inline-block;margin-top:8px;font-size:13px;font-weight:700;color:#C2452D;text-decoration:none;font-style:normal}.ory-story{display:inline-block;margin:6px 6px 0;border:1px solid #D4CDC0;background:#fff;color:#15151A;border-radius:999px;padding:9px 16px;font:700 14px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;cursor:pointer}.ory-story:hover{border-color:#C2452D;color:#C2452D}</style> 
+<script>
+(function () {
+'use strict';
+var D = document, H = D.documentElement, B;
+function en() {
+if (B.classList.contains('home')) { var l = H.getAttribute('data-oh-lang'); if (!l) { try { l = localStorage.getItem('oh-lang'); } catch (e) {} } return l !== 'es'; }
+return (H.lang || '').toLowerCase().indexOf('en') === 0;
+}
+function el(tag, cls, html) { var e = D.createElement(tag); if (cls) { e.className = cls; } if (html !== undefined) { e.innerHTML = html; } return e; }
+function store(k, v) { try { if (v === undefined) { return localStorage.getItem(k); } localStorage.setItem(k, v); } catch (e) { return null; } return null; }
+/* ---------- portada ---------- */
+var START = [
+['/million-mile-playbook-revolut-ultra/', 'The Million Mile Playbook', 'The Million Mile Playbook', '21 tricks to fly business class for almost nothing', '21 trucos para volar en business casi gratis'],
+['/the-day-you-stop-waiting/', 'Episode 1: The Day You Stop Waiting', 'Episodio 1: El día que dejas de esperar', 'The first chapter of the book', 'El primer capítulo del libro', '/el-dia-que-dejas-de-esperar/'],
+['/sumba-vs-bali-honest-comparison/', 'Sumba vs Bali, the honest comparison', 'Sumba vs Bali, la comparación honesta', 'Prices, internet, hospitals and what is missing', 'Precios, internet, hospitales y lo que falta'],
+['/beachfront-town-sumba/', 'Why we are building a beachfront town', 'Por qué construimos un pueblo frente al mar', 'How I stopped writing about places and started building one', 'Cómo dejé de escribir sobre sitios y empecé a construir uno'],
+['/supportnear-free-help-map/', 'SupportNear: free help near you', 'SupportNear: ayuda gratis cerca de ti', 'The non-profit I am proudest of', 'El proyecto sin ánimo de lucro del que más orgulloso estoy']
+];
+function homeBlocks() {
+if (!B.classList.contains('home') || D.querySelector('.ory-h')) { return; }
+var E = en();
+var hero = D.querySelector('.hero'); if (!hero) { return; }
+var wrap = el('div', 'ory-h-wrap');
+var doors = el('section', 'ory-h');
+doors.innerHTML = '<p class="eye">' + (E ? 'Where to start' : 'Por dónde empezar') + '</p><h2>' + (E ? 'Three ways in' : 'Tres puertas') + '</h2><div class="ory-doors">' +
+'<a class="ory-door" href="/herramientas/"><b>' + (E ? 'Travel better' : 'Viajar mejor') + '</b><em>' + (E ? '1,200+ guides and the tools I actually use.' : 'Más de 1.200 guías y las herramientas que uso de verdad.') + '</em><span>→</span></a>' +
+'<a class="ory-door" href="/million-mile-playbook-revolut-ultra/"><b>' + (E ? 'Fly business for almost nothing' : 'Volar en business casi gratis') + '</b><em>' + (E ? 'The points and miles system, step by step.' : 'El sistema de puntos y millas, paso a paso.') + '</em><span>→</span></a>' +
+'<a class="ory-door" href="' + (E ? '/book/' : '/libro/') + '"><b>' + (E ? 'Build from an island' : 'Construir desde una isla') + '</b><em>' + (E ? 'The book I am writing and what I am building in Sumba.' : 'El libro que estoy escribiendo y lo que construyo en Sumba.') + '</em><span>→</span></a></div>';
+var start = el('section', 'ory-h');
+start.innerHTML = '<p class="eye">' + (E ? 'Start here' : 'Empieza aquí') + '</p><h2>' + (E ? 'Five pieces that explain what I do' : 'Cinco textos que explican lo que hago') + '</h2><div class="ory-start">' +
+START.map(function (s) { return '<a href="' + (!E && s[5] ? s[5] : s[0]) + '"><span><b>' + (E ? s[1] : s[2]) + '</b><em>' + (E ? s[3] : s[4]) + '</em></span></a>'; }).join('') + '</div>';
+var press = el('div', 'ory-press-strip', '<span>' + (E ? 'As seen in' : 'Han hablado de esto') + '</span><a href="/prensa/">Forbes España</a><a href="/prensa/">Antena 3</a><a href="/prensa/">Wwwhat\'s new</a><a href="/prensa/">El Referente</a>');
+wrap.appendChild(doors); wrap.appendChild(start); wrap.appendChild(press);
+hero.parentNode.insertBefore(wrap, hero.nextSibling);
+}
+function relabelHome() {
+var w = D.querySelector('.ory-h-wrap'); if (!w) { return; }
+w.parentNode.removeChild(w); homeBlocks(); askBlock();
+}
+/* etiqueta "Nuevo" y fecha relativa */
+function freshness() {
+var now = Date.now();
+D.querySelectorAll('.card').forEach(function (c) {
+var t = c.querySelector('time[datetime]'); if (!t || c.querySelector('.ory-new')) { return; }
+var d = new Date(t.getAttribute('datetime')).getTime(); if (isNaN(d)) { return; }
+var days = Math.floor((now - d) / 86400000);
+if (days >= 0 && String(days - 7).charAt(0) === '-') {
+var h3 = c.querySelector('h3'); if (h3) { h3.insertBefore(el('span', 'ory-new', en() ? 'New' : 'Nuevo'), h3.firstChild); }
+}
+});
+}
+/* ---------- articulos ---------- */
+function isPost() { return B.classList.contains('single-post'); }
+function crumbs() {
+if (!isPost() || D.querySelector('.ory-bc')) { return; }
+var chip = D.querySelector('.post-hero .chip'); var hero = D.querySelector('.post-hero .read');
+if (!chip || !hero) { return; }
+var nav = el('nav', 'ory-bc'); nav.setAttribute('aria-label', en() ? 'Breadcrumb' : 'Migas de pan');
+nav.innerHTML = '<a href="/">' + (en() ? 'Home' : 'Inicio') + '</a><span>›</span><a href="' + chip.getAttribute('href') + '">' + chip.textContent.trim() + '</a>';
+hero.insertBefore(nav, hero.firstChild);
+}
+function oldNotice() {
+if (!isPost() || D.querySelector('.ory-old')) { return; }
+var t = D.querySelector('.post-meta time[datetime]'); if (!t) { return; }
+var y = parseInt(t.getAttribute('datetime').slice(0, 4), 10);
+if (String(y - 2023).charAt(0) !== '-') { return; }
+var n = el('p', 'ory-old', en() ? ('Written in ' + y + '. Prices, opening hours and links may have changed since.') : ('Escrito en ' + y + '. Precios, horarios y enlaces pueden haber cambiado desde entonces.'));
+var pm = D.querySelector('.post-meta'); if (pm) { pm.parentNode.insertBefore(n, pm.nextSibling); }
+}
+function tables() { D.querySelectorAll('.entry table').forEach(function (t) { if (t.parentNode.classList.contains('ory-tw')) { return; } var w = el('div', 'ory-tw'); t.parentNode.insertBefore(w, t); w.appendChild(t); }); }
+function nbsp() { D.querySelectorAll('.entry p').forEach(function (p) { if (!p.querySelector('img,iframe,video') && /^[\s ]*$/.test(p.textContent)) { p.style.display = 'none'; } }); }
+function nextStep() {
+if (!isPost() || D.querySelector('.ory-next')) { return; }
+var entry = D.querySelector('article .entry'); if (!entry) { return; }
+var E = en();
+var box = el('div', 'ory-next');
+box.innerHTML = '<p class="k">' + (E ? 'What next' : 'Y ahora') + '</p><div class="g">' +
+'<a href="#newsletter" data-nl="1"><b>' + (E ? 'Get the Playbook' : 'Llévate el Playbook') + '</b><em>' + (E ? 'Free PDF when you join the newsletter' : 'PDF gratis al apuntarte a la newsletter') + '</em></a>' +
+'<a href="' + (E ? '/book/' : '/libro/') + '"><b>' + (E ? 'Read the book' : 'Lee el libro') + '</b><em>' + (E ? 'One chapter at a time, free' : 'Capítulo a capítulo, gratis') + '</em></a>' +
+'<a href="/herramientas/"><b>' + (E ? 'My travel tools' : 'Mis herramientas de viaje') + '</b><em>' + (E ? 'What I actually use' : 'Lo que uso de verdad') + '</em></a></div>';
+var after = entry.querySelector('.ory-t3') || entry.querySelector('div[style*="#faf4de"]');
+if (after) { entry.insertBefore(box, after); } else { entry.appendChild(box); }
+var nl = box.querySelector('[data-nl]');
+nl.addEventListener('click', function (e) { var n = D.querySelector('.news'); if (n) { e.preventDefault(); n.scrollIntoView({ behavior: 'smooth', block: 'center' }); var i = n.querySelector('input[type=email]'); if (i) { setTimeout(function () { i.focus(); }, 600); } } });
+}
+function commentCount() {
+if (!isPost() || D.querySelector('.ory-ccount')) { return; }
+var n = D.querySelectorAll('.comment-list li.comment').length; if (!n) { return; }
+var pm = D.querySelector('.post-meta'); if (!pm) { return; }
+var a = el('a', 'ory-ccount', '· ' + n + ' ' + (en() ? (n === 1 ? 'comment' : 'comments') : (n === 1 ? 'comentario' : 'comentarios'))); a.href = '#comments'; pm.appendChild(a);
+}
+function lightbox() {
+if (D.querySelector('.ory-lb')) { return; }
+var lb = el('div', 'ory-lb', '<img alt="">'); B.appendChild(lb);
+lb.addEventListener('click', function () { lb.classList.remove('on'); });
+D.addEventListener('keydown', function (e) { if (e.key === 'Escape') { lb.classList.remove('on'); } });
+D.querySelectorAll('.entry img').forEach(function (i) {
+if (i.closest('a') || i.naturalWidth === 1 || i.width === 0 || i.closest('.ory-ep')) { return; }
+i.addEventListener('click', function () { var s = (i.currentSrc || i.src).replace(/-\d+x\d+(\.\w+)$/, '$1'); lb.querySelector('img').src = s; lb.querySelector('img').alt = i.alt || ''; lb.classList.add('on'); });
+});
+}
+function floaters() {
+if (D.querySelector('.ory-top')) { return; }
+var top = el('button', 'ory-top', '↑'); top.type = 'button'; top.setAttribute('aria-label', en() ? 'Back to top' : 'Volver arriba'); B.appendChild(top);
+top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+var toc = D.querySelector('#toc_container ul');
+var tb = null, tp = null;
+if (toc && isPost()) {
+tb = el('button', 'ory-tocb', en() ? 'Contents' : 'Índice'); tb.type = 'button'; B.appendChild(tb);
+tp = el('div', 'ory-tocp'); tp.appendChild(toc.cloneNode(true)); B.appendChild(tp);
+tb.addEventListener('click', function () { tp.classList.toggle('on'); });
+tp.addEventListener('click', function (e) { if (e.target.tagName === 'A') { tp.classList.remove('on'); } });
+}
+window.addEventListener('scroll', function () {
+var on = window.scrollY > 900;
+top.classList.toggle('on', on); if (tb) { tb.classList.toggle('on', on); if (!on) { tp.classList.remove('on'); } }
+}, { passive: true });
+}
+/* ---------- buscador: dentro del menu movil y con resultados al escribir ---------- */
+function menuSearch() {
+var nav = D.getElementById('ory-nav'); if (!nav || nav.querySelector('.searchform')) { return; }
+var f = el('form', 'searchform'); f.setAttribute('role', 'search'); f.action = '/'; f.method = 'get';
+f.innerHTML = '<input type="search" name="s" placeholder="' + (en() ? 'Search a destination...' : 'Buscar un destino...') + '" aria-label="' + (en() ? 'Search' : 'Buscar') + '">';
+nav.insertBefore(f, nav.firstChild);
+}
+function liveSearch() {
+D.querySelectorAll('.searchform input[type=search]').forEach(function (inp) {
+if (inp.dataset.live) { return; } inp.dataset.live = '1'; inp.setAttribute('autocomplete', 'off');
+var box = el('div', 'ory-sr'); inp.parentNode.appendChild(box);
+var tmr = null, last = '';
+inp.addEventListener('input', function () {
+var q = inp.value.trim(); clearTimeout(tmr);
+if (q.length < 3) { box.classList.remove('on'); return; }
+tmr = setTimeout(function () {
+if (q === last) { return; } last = q;
+fetch('/wp-json/wp/v2/search?per_page=6' + String.fromCharCode(38) + 'search=' + encodeURIComponent(q)).then(function (r) { return r.json(); }).then(function (rs) {
+if (!rs || !rs.length) { box.innerHTML = '<a href="/?s=' + encodeURIComponent(q) + '">' + (en() ? 'No quick results. Search all →' : 'Sin resultados rápidos. Buscar en todo →') + '</a>'; box.classList.add('on'); return; }
+box.innerHTML = rs.map(function (r) { var t = el('div'); t.innerHTML = r.title; return '<a href="' + r.url + '">' + t.textContent + '</a>'; }).join('') + '<a class="all" href="/?s=' + encodeURIComponent(q) + '">' + (en() ? 'See all results →' : 'Ver todos los resultados →') + '</a>';
+box.classList.add('on');
+}).catch(function () {});
+}, 250);
+});
+D.addEventListener('click', function (e) { if (!box.contains(e.target) && e.target !== inp) { box.classList.remove('on'); } });
+});
+}
+/* ---------- 404 con lecturas ---------- */
+function page404() {
+if (!B.classList.contains('error404') || D.querySelector('.ory-404')) { return; }
+var E = en(), box = el('section', 'ory-404');
+box.innerHTML = '<h2>' + (E ? 'Or start with one of these' : 'O empieza por uno de estos') + '</h2><div class="ory-start">' +
+START.map(function (s) { return '<a href="' + (!E && s[5] ? s[5] : s[0]) + '"><span><b>' + (E ? s[1] : s[2]) + '</b><em>' + (E ? s[3] : s[4]) + '</em></span></a>'; }).join('') + '</div>';
+var main = D.getElementById('main'); if (main) { main.appendChild(box); }
+}
+/* ---------- barra de newsletter al bajar ---------- */
+function nlBar() {
+if (B.classList.contains('home') || D.querySelector('.ory-nlbar') || !D.querySelector('.news')) { return; }
+if (store('ory-nl-done') || (Number(store('ory-nlbar-x') || 0) - Date.now() > 0)) { return; }
+var E = en();
+var bar = el('div', 'ory-nlbar', '<span>' + (E ? 'Get the Million Mile Playbook, free.' : 'Llévate gratis el Million Mile Playbook.') + '</span><span style="display:flex;gap:8px;align-items:center"><a class="go" href="#newsletter">' + (E ? 'I want it' : 'Lo quiero') + '</a><button type="button" aria-label="' + (E ? 'Close' : 'Cerrar') + '">×</button></span>');
+B.appendChild(bar);
+var shown = false;
+window.addEventListener('scroll', function () {
+if (shown) { return; }
+var h = D.documentElement.scrollHeight - window.innerHeight;
+if (h > 0 && window.scrollY / h > 0.5) { shown = true; bar.classList.add('on'); }
+}, { passive: true });
+bar.querySelector('button').addEventListener('click', function () { bar.classList.remove('on'); store('ory-nlbar-x', String(Date.now() + 30 * 86400000)); });
+bar.querySelector('.go').addEventListener('click', function (e) { e.preventDefault(); bar.classList.remove('on'); var n = D.querySelector('.news'); if (n) { n.scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
+D.addEventListener('submit', function (e) { if (e.target.classList && e.target.classList.contains('ory-nl')) { store('ory-nl-done', '1'); bar.classList.remove('on'); } }, true);
+}
+/* ---------- pie: redes y enlaces en ingles ---------- */
+var FOOT_EN = { 'El libro': ['The book', '/book/'], 'Mis herramientas de viaje': ['My travel tools'], 'Quién soy': ['About me', '/about-me/'], 'Prensa': ['Press'], 'Trabaja conmigo': ['Work with me'], 'Únete al equipo': ['Join the team'], 'Todos mis proyectos': ['All my projects'], 'Contacto': ['Contact'] };
+function footer() {
+var g = D.querySelector('.foot-grid'); if (!g) { return; }
+var first = g.querySelector('div');
+if (first && !first.querySelector('.ory-social')) {
+first.appendChild(el('div', 'ory-social', '<a href="https://x.com/mrstartups" target="_blank" rel="noopener" aria-label="X">X</a><a href="https://www.linkedin.com/in/carlosdeory/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a><a href="https://www.youtube.com/@CarlosDeOry" target="_blank" rel="noopener" aria-label="YouTube">▶</a><a href="/links/" aria-label="' + (en() ? 'All links' : 'Todos los enlaces') + '">↗</a>'));
+}
+var E = en();
+g.querySelectorAll('li a').forEach(function (a) {
+if (!a.dataset.es) { a.dataset.es = a.textContent.trim(); a.dataset.esHref = a.getAttribute('href'); }
+var m = FOOT_EN[a.dataset.es];
+if (!m) { return; }
+a.textContent = E ? m[0] : a.dataset.es;
+a.setAttribute('href', E && m[1] ? m[1] : a.dataset.esHref);
+});
+}
+/* fecha relativa en lo reciente */
+function relDates() {
+var now = Date.now(), E = en();
+D.querySelectorAll('.card time[datetime]').forEach(function (t) {
+if (t.dataset.rel) { return; }
+var d = new Date(t.getAttribute('datetime')).getTime(); if (isNaN(d)) { return; }
+var days = Math.floor((now - d) / 86400000);
+if (days < 0 || String(days - 30).charAt(0) !== '-') { return; }
+t.dataset.rel = '1';
+var r = el('span', 'ory-rel'); r.dataset.days = String(days); t.style.display = 'none'; t.parentNode.insertBefore(r, t.nextSibling);
+relText(r);
+});
+}
+function relText(r) { var d = Number(r.dataset.days), E = en(); r.textContent = d === 0 ? (E ? 'today' : 'hoy') : d === 1 ? (E ? 'yesterday' : 'ayer') : (E ? d + ' days ago' : 'hace ' + d + ' días'); }
+/* WhatsApp flotante y bloque Preguntame */
+var WA = 'https://api.whatsapp.com/send?phone=34687358010' + String.fromCharCode(38) + 'text=';
+function whatsapp() {
+if (D.querySelector('.ory-wa')) { return; }
+var a = el('a', 'ory-wa', '✆'); a.href = WA + encodeURIComponent((en() ? 'Hi Carlos, I come from ' : 'Hola Carlos, vengo de ') + location.pathname); a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', 'WhatsApp');
+B.appendChild(a); setTimeout(function () { a.classList.add('on'); }, 30000);
+}
+function askBlock() {
+if (!B.classList.contains('home') || D.querySelector('.ory-ask')) { return; }
+var w = D.querySelector('.ory-h-wrap'); if (!w) { return; }
+var E = en(), box = el('div', 'ory-ask');
+box.innerHTML = '<a href="' + WA + encodeURIComponent(E ? 'Hi Carlos, I have a question: ' : 'Hola Carlos, tengo una pregunta: ') + '" target="_blank" rel="noopener"><span><b>' + (E ? 'Ask me anything' : 'Pregúntame lo que quieras') + '</b><em>' + (E ? 'Travel, miles, Sumba or starting a company. I answer myself.' : 'Viajes, millas, Sumba o montar una empresa. Te contesto yo.') + '</em></span><span class="go">WhatsApp</span></a>';
+w.appendChild(box);
+}
+/* escuchar los episodios del libro */
+function listen() {
+if (!(B.classList.contains('category-episodes') || B.classList.contains('category-episodios') || D.querySelector('article.category-episodes, article.category-episodios'))) { return; }
+if (!('speechSynthesis' in window) || D.querySelector('.ory-listen')) { return; }
+var E = (H.lang || '').toLowerCase().indexOf('en') === 0;
+var b = el('button', 'ory-listen', '🔊 ' + (E ? 'Listen to this chapter' : 'Escuchar el capítulo')); b.type = 'button';
+var pm = D.querySelector('.post-meta'); if (!pm) { return; }
+var wrap = el('div'); wrap.style.textAlign = 'center'; wrap.appendChild(b); pm.parentNode.insertBefore(wrap, pm.nextSibling);
+b.addEventListener('click', function () {
+var ss = window.speechSynthesis;
+if (ss.speaking) { ss.cancel(); b.classList.remove('on'); b.textContent = '🔊 ' + (E ? 'Listen to this chapter' : 'Escuchar el capítulo'); return; }
+var txt = [].map.call(D.querySelectorAll('.entry .ep p, .entry .ep h2, .entry .ep h3, .entry .ep li'), function (n) { return n.textContent; }).join('. ');
+if (!txt) { txt = (D.querySelector('.entry') || {}).textContent || ''; }
+var parts = txt.match(/[^.!?]+[.!?]*/g) || [txt];
+parts.forEach(function (p, i) { var u = new SpeechSynthesisUtterance(p); u.lang = E ? 'en-US' : 'es-ES'; u.rate = 1; if (i === parts.length - 1) { u.onend = function () { b.classList.remove('on'); b.textContent = '🔊 ' + (E ? 'Listen to this chapter' : 'Escuchar el capítulo'); }; } ss.speak(u); });
+b.classList.add('on'); b.textContent = '⏹ ' + (E ? 'Stop' : 'Parar');
+});
+}
+/* cruceros: enlace a mejorcrucero en los posts que hablan de cruceros */
+function cruise() {
+if (!isPost() || D.querySelector('.ory-cruise')) { return; }
+var en_ = D.querySelector('.entry'); if (!en_) { return; }
+if (en_.querySelector('a[href*="mejorcrucero"]')) { return; }
+var t = (en_.textContent || '') + ' ' + D.title;
+var strong = /cruceros|navieras?|cruise ships?|cruise lines?|cruises|crucero por el (mediterr|caribe|norte|b[aá]ltico)/i.test(t);
+var m = t.match(/crucero|cruise/gi) || [];
+if (/canal|fluvial|\br[ií]o\b|velero|barco por/i.test(D.title) || (!strong && m.length < 3)) { return; }
+var E = en();
+var a = el('a', 'ory-cruise');
+a.href = 'https://www.mejorcrucero.com/?utm_source=carlosdeory' + String.fromCharCode(38) + 'utm_medium=post' + String.fromCharCode(38) + 'utm_campaign=cruise-box';
+a.target = '_blank'; a.rel = 'noopener';
+a.innerHTML = '<span class="ic">🚢</span><span><b>' + (E ? 'Thinking about a cruise?' : '¿Estás pensando en un crucero?') + '</b><em>' + (E ? 'Compare routes, ships and prices from every cruise line on MejorCrucero.' : 'Compara rutas, barcos y precios de todas las navieras en MejorCrucero.') + '</em></span><span class="go">' + (E ? 'Compare cruises' : 'Comparar cruceros') + '</span>';
+var hs = en_.querySelectorAll(':scope > h2');
+if (hs.length >= 2) { en_.insertBefore(a, hs[1]); } else { en_.appendChild(a); }
+}
+function isEp() { return B.classList.contains('category-episodes') || B.classList.contains('category-episodios') || !!D.querySelector('article.category-episodes, article.category-episodios'); }
+function xUrl(q) {
+var u = location.origin + location.pathname;
+return 'https://x.com/intent/post?text=' + encodeURIComponent('"' + q + '" · Carlos de Ory') + String.fromCharCode(38) + 'url=' + encodeURIComponent(u);
+}
+/* compartir una cita en X: al seleccionar texto y en cada cita destacada */
+function quoteShare() {
+if (!isEp() || D.querySelector('.ory-qshare')) { return; }
+var en_ = D.querySelector('.entry'); if (!en_) { return; }
+var E = en();
+en_.querySelectorAll('blockquote').forEach(function (bq) {
+var q = (bq.textContent || '').trim(); if (q.length < 20 || q.length > 260) { return; }
+var a = el('a', 'ory-qx', (E ? 'Share on X →' : 'Compartir en X →')); a.href = xUrl(q); a.target = '_blank'; a.rel = 'noopener';
+bq.appendChild(D.createElement('br')); bq.appendChild(a);
+});
+var btn = el('button', 'ory-qshare', (E ? 'Share quote on X' : 'Compartir cita en X')); btn.type = 'button'; B.appendChild(btn);
+var cur = '';
+function hide() { btn.classList.remove('on'); }
+D.addEventListener('selectionchange', function () {
+var sel = window.getSelection(); var q = sel ? String(sel).trim() : '';
+if (q.length < 20 || q.length > 260 || !sel.rangeCount || !en_.contains(sel.anchorNode)) { hide(); return; }
+var r = sel.getRangeAt(0).getBoundingClientRect(); if (!r.width) { hide(); return; }
+cur = q;
+btn.style.top = (window.scrollY + r.top - 44) + 'px';
+btn.style.left = Math.max(10, Math.min(window.innerWidth - 200, window.scrollX + r.left + r.width / 2 - 80)) + 'px';
+btn.classList.add('on');
+});
+btn.addEventListener('mousedown', function (e) { e.preventDefault(); });
+btn.addEventListener('click', function () { if (cur) { window.open(xUrl(cur), '_blank', 'noopener'); } hide(); });
+}
+/* imagen para Instagram Stories (1080x1920) con la portada y una frase del capitulo */
+function storyCard() {
+if (!isEp() || D.querySelector('.ory-story')) { return; }
+var lb = D.querySelector('.ory-listen'); var host = lb ? lb.parentNode : null;
+var pm = D.querySelector('.post-meta');
+if (!host) { if (!pm) { return; } host = el('div'); host.style.textAlign = 'center'; pm.parentNode.insertBefore(host, pm.nextSibling); }
+var E = en();
+var b = el('button', 'ory-story', '📲 ' + (E ? 'Image for Stories' : 'Imagen para Stories')); b.type = 'button'; host.appendChild(b);
+function wrap(ctx, text, max) { var w = text.split(/\s+/), lines = [], l = ''; w.forEach(function (x) { var t = l ? l + ' ' + x : x; if (ctx.measureText(t).width > max) { if (l) { lines.push(l); } l = x; } else { l = t; } }); if (l) { lines.push(l); } return lines; }
+b.addEventListener('click', function () {
+var title = ((D.querySelector('h1') || {}).textContent || D.title).trim();
+var en_ = D.querySelector('.entry');
+var sel = String(window.getSelection() || '').trim();
+var q = sel.length >= 20 ? sel : '';
+if (!q && en_) { var bq = en_.querySelector('blockquote'); if (bq) { q = bq.firstChild ? (bq.textContent || '') : ''; } }
+if (!q && en_) { var ps = en_.querySelectorAll('p'); for (var i = 0; i < ps.length; i++) { var t = (ps[i].textContent || '').trim(); if (t.length > 60) { q = t; break; } } }
+q = q.replace(/(Share on X|Compartir en X) →/g, '').trim();
+if (q.length > 220) { q = q.slice(0, 217).replace(/\s+\S*$/, '') + '…'; }
+var cv = D.createElement('canvas'); cv.width = 1080; cv.height = 1920; var c = cv.getContext('2d');
+var g = c.createLinearGradient(0, 0, 0, 1920); g.addColorStop(0, '#16141a'); g.addColorStop(1, '#2a1f1b'); c.fillStyle = g; c.fillRect(0, 0, 1080, 1920);
+function finish() {
+c.fillStyle = '#C2452D'; c.font = '700 34px -apple-system,Segoe UI,Roboto,sans-serif'; c.fillText((E ? 'FROM THE BOOK' : 'DEL LIBRO').split('').join(String.fromCharCode(8202)), 90, 1060);
+c.fillStyle = '#fff'; c.font = '700 64px Georgia,serif';
+var y = 1150; wrap(c, title, 900).slice(0, 3).forEach(function (l) { c.fillText(l, 90, y); y += 78; });
+if (q) { c.fillStyle = 'rgba(255,255,255,.86)'; c.font = 'italic 44px Georgia,serif'; y += 30; wrap(c, '“' + q + '”', 900).slice(0, 7).forEach(function (l) { c.fillText(l, 90, y); y += 60; }); }
+c.fillStyle = '#fff'; c.font = '700 38px -apple-system,Segoe UI,Roboto,sans-serif'; c.fillText('carlosdeory.com', 90, 1800);
+c.fillStyle = 'rgba(255,255,255,.6)'; c.font = '400 30px -apple-system,Segoe UI,Roboto,sans-serif'; c.fillText('Carlos de Ory', 90, 1750);
+cv.toBlob(function (bl) { if (!bl) { return; } var a = D.createElement('a'); a.href = URL.createObjectURL(bl); a.download = (location.pathname.replace(/\W+/g, '-').replace(/^-|-$/g, '') || 'carlosdeory') + '-story.png'; D.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 2000); }, 'image/png');
+}
+var im = D.querySelector('meta[property="og:image"]'); var src = im ? im.content : '';
+if (!src || src.indexOf(location.host) < 0) { finish(); return; }
+var img = new Image(); img.crossOrigin = 'anonymous';
+img.onload = function () { try { var r = Math.min(1080 / img.width, 960 / img.height), w = img.width * r, h = img.height * r; c.drawImage(img, (1080 - w) / 2, (960 - h) / 2, w, h); var f = c.createLinearGradient(0, 700, 0, 980); f.addColorStop(0, 'rgba(22,20,26,0)'); f.addColorStop(1, '#16141a'); c.fillStyle = f; c.fillRect(0, 700, 1080, 280); } catch (e) {} finish(); };
+img.onerror = finish; img.src = src.replace(/^https?:\/\/[^/]+/, location.origin);
+});
+}
+function run() {
+B = D.body; if (!B) { return; }
+[homeBlocks, askBlock, freshness, relDates, listen, storyCard, quoteShare, cruise, crumbs, oldNotice, tables, nbsp, nextStep, commentCount, menuSearch, liveSearch, page404, footer].forEach(function (f) { try { f(); } catch (e) {} });
+}
+function boot() {
+run();
+try { lightbox(); } catch (e) {}
+try { floaters(); } catch (e) {}
+try { nlBar(); } catch (e) {}
+try { whatsapp(); } catch (e) {}
+try { new MutationObserver(function () { relabelHome(); D.querySelectorAll('.ory-new').forEach(function (n) { n.textContent = en() ? 'New' : 'Nuevo'; }); footer(); D.querySelectorAll('.ory-rel').forEach(relText); }).observe(H, { attributes: true, attributeFilter: ['data-oh-lang'] }); } catch (e) {}
+}
+if (D.readyState === 'loading') { D.addEventListener('DOMContentLoaded', boot); } else { boot(); }
+})();
+</script>
+<style media="all">.ory-legal{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 14px}.ory-legal a{margin:0;white-space:normal}.ory-legal small{flex-basis:100%}.post-meta span:last-child:empty,.meta span:last-child:empty{display:none}.category-episodes .card-media img,.category-episodios .card-media img{object-fit:contain;background:#16141a}.category-episodes .card-media,.category-episodios .card-media{background:#16141a}.entry span[style*="font-size: 18pt"],.entry span[style*="font-size:18pt"],.entry span[style*="font-size: 12pt"],.entry span[style*="font-size: 14pt"]{font-size:inherit!important}.entry div[style*="#faf4de"]{border-radius:14px;border-width:1px!important;border-color:#e9d9a6!important;padding:18px 20px!important;font-size:16px;line-height:1.6}.entry div[style*="#faf4de"] p{margin:0 0 8px}.entry div[style*="#faf4de"] p:first-child strong{font-size:18px}#toc_container{background:#FAF8F4!important;border:1px solid #E6E1D8!important;border-radius:14px;padding:16px 20px!important;width:auto!important;max-width:520px;font-size:15px;line-height:1.5}#toc_container .toc_title{font-weight:700;text-align:left!important;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#7C7C8A}#toc_container a{color:#15151A;text-decoration:none}#toc_container a:hover{color:#C2452D}#toc_container .toc_toggle a{color:#C2452D}.comment-form-url{display:none!important}.comment-form label{display:block;font-size:13px;font-weight:700;margin:0 0 6px;color:#3C3C46}.comment-form input[type=text],.comment-form input[type=email],.comment-form textarea{width:100%;border:1px solid #D4CDC0;border-radius:10px;padding:12px 14px;font:inherit;font-size:16px;background:#fff;box-sizing:border-box}.comment-form textarea{min-height:130px}.comment-form input:focus,.comment-form textarea:focus{outline:2px solid #C2452D;outline-offset:1px;border-color:#fff0}.comment-form p{margin:0 0 14px}.comment-form .comment-notes,.comment-form .logged-in-as{font-size:13.5px;color:#7C7C8A}.author-box img.avatar{border-radius:50%}.author-box .ory-initials{width:72px;height:72px;border-radius:50%;background:#15151A;color:#fff;display:grid;place-items:center;font:700 22px/1 Georgia,serif;flex:0 0 72px}.news .ory-nl{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:18px auto 10px;max-width:520px}.news .ory-nl input{flex:1 1 220px;border:1px solid #D4CDC0;border-radius:11px;padding:14px 16px;font:inherit;font-size:16px;background:#fff;color:#15151A}.news .ory-nl button{border:0;border-radius:11px;padding:14px 22px;font-weight:700;font-size:15px;background:#C2452D;color:#fff;cursor:pointer}.news .ory-nl button:hover{background:#9E3623}.news .ory-nl-ok{font-weight:700;color:#0E4F49;margin:14px 0 0}.news small a{color:inherit;text-decoration:underline}.page-id-21024 .entry div[style*="#faf4de"],.page-id-21025 .entry div[style*="#faf4de"]{display:none}.oh .oh-btn{color:#fff}.oh .oh-btn:hover{color:#fff}.oh .oh-btn.ghost{color:var(--ink)}.oh .oh-btn.ghost:hover{color:#fff}.oh-pod-media .pl::after{content:"";display:block;width:0;height:0;border-top:11px solid #fff0;border-bottom:11px solid #fff0;border-left:18px solid #fff;margin-left:5px}.oh-pod-media a:hover .pl::after{border-left-color:#15151A}.destinos a.ory-hide{display:none!important}.ory-t3{border:1px solid #E6E1D8;background:#fff;border-radius:16px;padding:20px 22px;margin:30px 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}.ory-t3 .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#C2452D;margin:0 0 6px}.ory-t3 h3{font:700 21px/1.2 Georgia,serif;margin:0 0 14px;color:#15151A}.ory-t3 ol{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:8px}.ory-t3 li a{display:flex;gap:12px;align-items:baseline;text-decoration:none;color:#15151A;padding:10px 12px;border:1px solid #EFEAE2;border-radius:10px}.ory-t3 li a:hover{border-color:#C2452D}.ory-t3 li b{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7C7C8A;min-width:118px}.ory-t3 .go{display:inline-block;font-weight:700;color:#fff;background:#15151A;border-radius:10px;padding:11px 18px;text-decoration:none;font-size:14.5px}.ory-t3 .go:hover{background:#C2452D}.ory-t3 small{display:block;margin-top:10px;color:#7C7C8A;font-size:12.5px}</style> 
+<script>
+(function () {
+'use strict';
+var D = document, H = D.documentElement;
+/* ---------- Booking.com por CJ (enlace de top3hotels) ---------- */
+var CJ = 'https://www.anrdoezrs.net/click-101900239-17293132?sid=carlosdeory&url=';
+function isBk(h) { return h === 'booking.com' || h.slice(-12) === '.booking.com'; }
+function toCJ(a) {
+try {
+var u = new URL(a.href);
+if (!isBk(u.hostname)) { return; }
+u.searchParams.delete('aid'); u.searchParams.delete('label');
+a.href = CJ + encodeURIComponent(u.toString());
+a.rel = 'sponsored noopener';
+} catch (e) {}
+}
+function cjAll() { D.querySelectorAll('a[href*="booking.com"]').forEach(toCJ); }
+['mousedown', 'touchstart', 'keydown', 'click'].forEach(function (t) {
+D.addEventListener(t, function (e) { var a = e.target && e.target.closest ? e.target.closest('a[href]') : null; if (a) { toCJ(a); } }, true);
+});
+/* ---------- idioma ---------- */
+function lang() {
+if (D.body && D.body.classList.contains('home')) {
+var l = H.getAttribute('data-oh-lang');
+if (!l) { try { l = localStorage.getItem('oh-lang'); } catch (e) {} }
+return l === 'es' ? 'es' : 'en';
+}
+return (H.lang || '').toLowerCase().indexOf('en') === 0 ? 'en' : 'es';
+}
+var ES2EN = {
+'Explorar': 'Explore', 'Buscar': 'Search', 'Compartir': 'Share', 'Copiar enlace': 'Copy link',
+'Sigue leyendo': 'Keep reading', 'Deja un comentario': 'Leave a comment', 'Publicar el comentario': 'Post comment',
+'Algunos enlaces son de afiliado. No cambian el precio que pagas.': 'Some links are affiliate links. They never change the price you pay.',
+'Aviso legal': 'Legal notice', 'Privacidad': 'Privacy', 'Cookies': 'Cookies', 'Términos': 'Terms', 'Transparencia': 'Transparency',
+'Leer la guia': 'Read it', 'Ver todo': 'See all', 'Viajes': 'Travel',
+'Europa': 'Europe', 'España': 'Spain', 'Emprender': 'Building', 'Puntos y millas': 'Points and miles', 'Reino Unido': 'United Kingdom', 'América': 'Americas', 'Asia': 'Asia', 'Italia': 'Italy'
+};
+var MES = { enero: 'January', febrero: 'February', marzo: 'March', abril: 'April', mayo: 'May', junio: 'June', julio: 'July', agosto: 'August', septiembre: 'September', octubre: 'October', noviembre: 'November', diciembre: 'December' };
+var ORIG = [];
+function swapText(el, en) {
+if (!el) { return; }
+var rec = null;
+ORIG.forEach(function (r) { if (r.el === el) { rec = r; } });
+if (!rec) { rec = { el: el, es: el.textContent }; ORIG.push(rec); }
+el.textContent = lang() === 'en' ? en : rec.es;
+}
+function trSimple() {
+D.querySelectorAll('.foot-grid h4, .foot-grid li a, .chip, .share span, .sec-head h2, .comment-reply-title, .ory-legal a, .foot-bar span, .hero-meta .btn, .more, #toc_container .toc_title').forEach(function (el) {
+var t = el.textContent.trim();
+var rec = null; ORIG.forEach(function (r) { if (r.el === el) { rec = r; } });
+var base = rec ? rec.es.trim() : t;
+if (ES2EN[base]) { swapText(el, ES2EN[base]); }
+var m = base.match(/^Todo sobre (.+?)\s*→?$/);
+if (m) { swapText(el, 'More on ' + m[1] + ' →'); }
+});
+var cp = D.getElementById('ory-copy'); if (cp) { swapText(cp, 'Copy link'); }
+D.querySelectorAll('.searchform button').forEach(function (b) { swapText(b, 'Search'); });
+D.querySelectorAll('.searchform input[type=search]').forEach(function (i) {
+if (!i.getAttribute('data-es')) { i.setAttribute('data-es', i.placeholder); }
+i.placeholder = lang() === 'en' ? 'Search a destination...' : i.getAttribute('data-es');
+});
+var desc = D.querySelector('.foot-grid .mut');
+if (desc) { swapText(desc, 'Travel, points and miles, and building companies from Sumba.'); }
+/* fechas y tiempo de lectura */
+D.querySelectorAll('.meta, .post-meta, .hero-meta').forEach(function (box) {
+box.querySelectorAll('time[datetime]').forEach(function (t) {
+var d = new Date(t.getAttribute('datetime'));
+if (isNaN(d)) { return; }
+swapText(t, d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+});
+box.querySelectorAll('span').forEach(function (s) {
+var rec = null; ORIG.forEach(function (r) { if (r.el === s) { rec = r; } });
+var base = (rec ? rec.es : s.textContent).trim();
+var m = base.match(/^(\d+) min de lectura$/);
+if (m) { swapText(s, m[1] + ' min read'); }
+var u = base.match(/^Actualizado el (\d+) (\w+), (\d{4})$/);
+if (u) { swapText(s, 'Updated ' + (MES[u[2]] || u[2]) + ' ' + u[1] + ', ' + u[3]); }
+});
+});
+}
+/* ---------- "Actualizado el" solo en articulos de 2026 en adelante ---------- */
+function updatedLine() {
+var pm = D.querySelector('.post-meta'); if (!pm) { return; }
+var t = pm.querySelector('time[datetime]'); if (!t) { return; }
+var y = parseInt(t.getAttribute('datetime').slice(0, 4), 10);
+if (String(y - 2026).charAt(0) !== '-') { return; }
+var sp = pm.querySelectorAll('span');
+sp.forEach(function (s, i) {
+if (/^Actualizado|^Updated/.test(s.textContent.trim())) {
+s.style.display = 'none';
+if (sp[i - 1]) { sp[i - 1].style.display = 'none'; }
+}
+});
+}
+/* ---------- bloques de la portada que se quedaban vacios ---------- */
+function fillOh() {
+var l = lang();
+D.querySelectorAll('.oh [data-en]').forEach(function (e) { var v = e.getAttribute('data-' + l); if (v !== null) { e.textContent = v; } });
+D.querySelectorAll('.oh [data-en-html]').forEach(function (e) { var v = e.getAttribute('data-' + l + '-html'); if (v !== null) { e.innerHTML = v; } });
+}
+/* episodios: en la portada en ingles solo los EN, en espanol solo los ES */
+var EPS_ES = ['/de-5-a-8-o-de-9-a-12/', '/el-dia-que-dejas-de-esperar/'];
+var EPS_EN = ['/5-to-8-or-9-to-12/', '/the-day-you-stop-waiting/'];
+function hasAny(h, arr) { var r = false; arr.forEach(function (p) { if (h.indexOf(p) !== -1) { r = true; } }); return r; }
+function dupEpisodes() {
+if (!D.body.classList.contains('home')) { return; }
+var l = lang();
+D.querySelectorAll('.card').forEach(function (c) {
+var a = c.querySelector('a.stretch') || c.querySelector('a[href]'); if (!a) { return; }
+var h = a.getAttribute('href') || '';
+var hide = l === 'en' ? hasAny(h, EPS_ES) : hasAny(h, EPS_EN);
+c.style.display = hide ? 'none' : '';
+});
+}
+/* destinos: fuera los cajones de sastre, 12 con sentido */
+var DEST = [
+['/espana/', 'España', 'Spain', 294], ['/italia/', 'Italia', 'Italy', 65], ['/reinounido/', 'Reino Unido', 'United Kingdom', 106],
+['/francia/', 'Francia', 'France', 34], ['/portugal/', 'Portugal', 'Portugal', 34], ['/alemania/', 'Alemania', 'Germany', 53],
+['/holanda/', 'Holanda', 'Netherlands', 39], ['/tailandia/', 'Tailandia', 'Thailand', 26], ['/bali/', 'Bali', 'Bali', 22],
+['/brasil/', 'Brasil', 'Brazil', 50], ['/america/', 'América', 'Americas', 78], ['/digital-nomad/', 'Digital Nomad', 'Digital Nomad', 17]
+];
+function junk(h) { return /\/1\/$|\/sin-categoria\/$|\/uncategorized\/$/.test(h || ''); }
+function destinos() {
+D.querySelectorAll('.foot-grid a, .destinos a').forEach(function (a) { if (junk(a.getAttribute('href'))) { var li = a.closest('li'); (li || a).classList.add('ory-hide'); (li || a).style.display = 'none'; } });
+var box = D.querySelector('.destinos'); if (!box) { return; }
+var l = lang();
+box.innerHTML = DEST.map(function (d) { return '<a href="https://www.carlosdeory.com' + d[0] + '">' + (l === 'en' ? d[2] : d[1]) + '<i>' + d[3] + '</i></a>'; }).join('');
+}
+/* ---------- newsletter: formulario propio ---------- */
+var NL_POST = 21025;
+var NL_T = {
+es: { t: 'La newsletter que sí abres', p: 'Te escribo cuando tengo algo que merece la pena: rutas, trucos de millas y lo que estoy construyendo. Apúntate y te llevas el Million Mile Playbook en PDF.', b: 'Quiero el Playbook', ph: 'tu@email.com', l: 'Sin spam. Te das de baja en un clic. Al apuntarte aceptas la <a href="/politica-de-privacidad/">política de privacidad</a>.', ok: 'Hecho. Te llevo al Playbook…', bad: 'Revisa el email, parece que falta algo.' },
+en: { t: 'The newsletter you will actually open', p: 'I write when I have something worth sending: routes, points tricks and what I am building. Sign up and get the Million Mile Playbook as a PDF.', b: 'Send me the Playbook', ph: 'you@email.com', l: 'No spam. Unsubscribe in one click. By signing up you accept the <a href="/politica-de-privacidad/">privacy policy</a>.', ok: 'Done. Taking you to the Playbook…', bad: 'Check the email, something is missing.' }
+};
+var t0 = Date.now();
+function newsletter() {
+D.querySelectorAll('.news').forEach(function (n) {
+var l = lang(), T = NL_T[l];
+var h2 = n.querySelector('h2'); if (h2) { h2.textContent = T.t; }
+var ps = n.querySelectorAll('p'); if (ps[0] && !ps[0].classList.contains('mut')) { ps[0].textContent = T.p; }
+var sm = n.querySelector('small'); if (sm) { sm.innerHTML = T.l; }
+var ph = n.querySelector('p.mut'); if (ph) { ph.remove(); }
+var f = n.querySelector('form.ory-nl, form.news-form');
+if (!f) {
+f = D.createElement('form'); f.className = 'ory-nl'; f.noValidate = true;
+f.innerHTML = '<input type="email" name="email" required autocomplete="email"><button type="submit"></button>';
+if (sm) { sm.parentNode.insertBefore(f, sm); } else { n.appendChild(f); }
+f.addEventListener('submit', function (e) {
+e.preventDefault();
+var L = NL_T[lang()], em = f.querySelector('input').value.trim();
+if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { f.querySelector('input').focus(); f.querySelector('input').setCustomValidity(L.bad); f.reportValidity(); return; }
+f.querySelector('input').setCustomValidity('');
+var btn = f.querySelector('button'); btn.disabled = true;
+var body = new URLSearchParams();
+body.set('comment_post_ID', String(NL_POST)); body.set('comment_parent', '0');
+body.set('author', em.split('@')[0]); body.set('email', em); body.set('url', '');
+body.set('comment', 'Newsletter · ' + location.pathname + ' · ' + lang());
+body.set('ak_js', String(t0));
+fetch('/wp-comments-post.php', { method: 'POST', body: body, credentials: 'same-origin', redirect: 'manual' })
+.catch(function () {})
+.then(function () {
+var ok = D.createElement('p'); ok.className = 'ory-nl-ok'; ok.textContent = L.ok; f.replaceWith(ok);
+setTimeout(function () { location.href = '/gracias-newsletter/'; }, 900);
+});
+});
+}
+var inp = f.querySelector('input'); if (inp) { inp.placeholder = T.ph; }
+var b = f.querySelector('button'); if (b) { b.textContent = T.b; }
+});
+}
+/* ---------- caja de autor sin foto ---------- */
+function authorBox() {
+D.querySelectorAll('.author-box').forEach(function (b) {
+var img = b.querySelector('img.avatar');
+var name = (b.querySelector('h4') || {}).textContent || '';
+if (img && /gravatar\.com\/avatar\/[0-9a-f]+\?s=\d+.*d=(mm|mystery|blank)/.test(img.src)) {
+var i = D.createElement('div'); i.className = 'ory-initials';
+i.textContent = name.trim().split(/\s+/).map(function (w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
+img.replaceWith(i);
+}
+});
+}
+/* ---------- caja "Te ayudo a ahorrar" en ingles en los posts EN ---------- */
+function savingsBox() {
+if (lang() !== 'en' || D.body.classList.contains('home')) { return; }
+D.querySelectorAll('.entry div[style*="#faf4de"]').forEach(function (box) {
+var t = box.textContent;
+if (t.indexOf('Te ayudo a ahorrar') === -1) { return; }
+var links = {};
+box.querySelectorAll('a[href]').forEach(function (a) {
+var h = a.href;
+if (h.indexOf('booking.com') !== -1 || h.indexOf('anrdoezrs') !== -1) { links.h = h; }
+else if (h.indexOf('seguro-viaje') !== -1) { links.s = h; }
+else if (h.indexOf('traslados') !== -1) { links.tr = h; }
+else if (h.indexOf('civitatis') !== -1) { links.t = h; }
+else if (h.indexOf('amzn') !== -1 || h.indexOf('amazon') !== -1) { links.g = h; }
+});
+function li(e, txt, h) { return h ? '<p>' + e + ' ' + txt + ' <a href="' + h + '" target="_blank" rel="noopener sponsored">here</a>.</p>' : ''; }
+box.innerHTML = '<p><strong>Save on your trip:</strong></p>' +
+li('🏨', 'The best <strong>hotels</strong> at the best price,', links.h) +
+li('💗', 'Book your <strong>travel insurance</strong>', links.s) +
+li('🚁', 'The best <strong>tours and excursions</strong>,', links.t) +
+li('🚀', 'Book your <strong>airport transfer</strong>', links.tr) +
+li('📖', 'The best <strong>travel guides</strong> on Amazon', links.g);
+});
+}
+/* ---------- Donde dormir en X: los 3 de top3hotels ---------- */
+var T3 = {"alicante":["Alicante","/es/alicante",["La Lonja","B&B HOTEL Alicante Centro","Eurostars Pórtico Alicante"]],"amsterdam":["Amsterdam","/es/amsterdam",["Tourist Inn One Amsterdam","Tourist Inn Hotel Amsterdam","Hotel TwentySeven - Small Luxury Hotels of the World"]],"avila":["Ávila","/es/avila",["Dorma Reina Isabel","Sofraga Palacio","La Casa del Presidente Small Luxury Hotels"]],"bali":["Bali","/es/bali",["Suka Beach Inn","Amnaya Resort Kuta","InterContinental Bali Resort by IHG"]],"barcelona":["Barcelona","/es/barcelona",["Hotel Nouvel","Olivia Plaza Hotel","ME by Meliá Barcelona"]],"berlin":["Berlín","/es/berlin",["ibis budget Berlin Alexanderplatz","Locke at East Side Gallery","Wilmina Hotel"]],"bilbao":["Bilbao","/es/bilbao",["Hotel Bilbao Plaza","Hotel Tayko Bilbao","The Artist Grand Hotel of Art"]],"bogota":["Bogotá","/es/bogota",["Hotel Boutique Quinta Camacho","ibis Bogota Museo","Cassa Luxury Homes"]],"boston":["Boston","/es/boston",["The Revolution Hotel","Hyatt Place Boston/Seaport District","The Langham, Boston"]],"brasilia":["Brasilia","/es/brasilia",["Ramada by Wyndham Brasilia Alvorada","Brasília Palace Hotel","Windsor Plaza Brasilia"]],"brisbane":["Brisbane","/es/brisbane",["Oaks Brisbane on Charlotte Suites","voco Brisbane City Centre by IHG","The Calile Hotel"]],"brujas":["Brujas","/es/bruges",["Flanders Hotel","Canal View Hotel Ter Brughe by CW Hotel Collection","Dukes' Palace Brugge - by Dukes' Hotel Collection"]],"bruselas":["Bruselas","/es/brussels",["Ibis Brussels City Centre","OPO Hotel","Hotel Amigo, a Rocco Forte Hotel"]],"bucarest":["Bucarest","/es/bucharest",["RHUM B07 - Old Town Courtyard","Hotel Epica","Corinthia Grand Hotel du Boulevard Bucharest"]],"budapest":["Budapest","/es/budapest",["AnVa House","Damas Suites Budapest","Aria Hotel Budapest by Library Hotel Collection"]],"buenos-aires":["Buenos Aires","/es/buenos-aires",["Up Laprida","Tanguero Hotel Boutique Antique","Four Seasons Hotel Buenos Aires"]],"burgos":["Burgos","/es/burgos",["RICE Palacio de los Blasones","Hotel Forum Evolución","Landa"]],"camberra":["Camberra","/es/canberra",["Quality Hotel Dickson","Knightsbridge Canberra","Meriton Suites Canberra"]],"cantabria":["Cantabria","/es/santander",["Citrea Santander","Gran Hotel Sardinero","Eurostars Hotel Real"]],"chiangmai":["Chiang Mai","/es/chiang-mai",["The Opium Chiang Mai","POR Santitham","Maladee Rendezvous Hotel Chiang Mai"]],"ciudad-del-cabo":["Ciudad del Cabo","/es/cape-town",["HAVN Aparthotel by Totalstay","Urban Elephant Hotels, The Rose","The Glen Boutique Hotel & Spa"]],"cluj-napoca":["Cluj-Napoca","/es/cluj-napoca",["Camino Home 2 Boutique Hotel","Syndicate Lodging Aparthotel","Hotel Vibre"]],"colonia":["Colonia","/es/cologne",["Steigenberger Hotel Köln","Hotel Allegro","Excelsior Hotel Ernst am Dom"]],"cracovia":["Cracovia","/es/krakow",["Pokoje Gościnne Św. Anny","Venetian House Market Square Aparthotel","H15 Palace, a Luxury Collection Hotel, Krakow"]],"dusseldorf":["Dusseldorf","/es/dusseldorf",["Premier Inn Düsseldorf City Friedrichstadt","Ruby Luna Hotel Dusseldorf by IHG","Hotel Kö59 Düsseldorf - Member of Hommage Luxury Hotels Collection"]],"edimburgo":["Edimburgo","/es/edinburgh",["KM Hotel","ibis Styles Edinburgh St Andrew Square","Gleneagles Townhouse"]],"estambul":["Estambul","/es/istanbul",["Sultanahmet inn Hotel","Old Harbour Hotel istanbul","Çırağan Palace Kempinski Istanbul"]],"florencia":["Florencia","/es/florence",["Hotel Kursaal & Ausonia","Hotel Orcagna","Golden Tower Hotel & Spa"]],"glasgow":["Glasgow","/es/glasgow",["Point A Hotel Glasgow","Aparthotel Adagio Glasgow Central","Dakota Glasgow"]],"gold-coast":["Gold Coast","/es/gold-coast",["voco Gold Coast by IHG","Nightelier Mermaid Waters","The Langham, Gold Coast and Jewel Residences"]],"hamburgo":["Hamburgo","/es/hamburg",["CAB20","Superbude Hamburg St Pauli","Fairmont Hotel Vier Jahreszeiten"]],"helmond":["Helmond","/es/eindhoven",["Queen Hotel","The Social Hub Eindhoven","NH Collection Eindhoven Centre"]],"hong-kong":["Hong Kong","/es/hong-kong",["Ibis Hong Kong Central & Sheung Wan","The Luxe Manor","Mondrian Hong Kong"]],"ibiza":["Ibiza","/es/ibiza",["Hotel Vibra Vila -3SUP- New Opening 2026","Sud Ibiza Suites","Montesol Experimental Ibiza"]],"inverness":["Inverness","/es/inverness",["B&B HOTEL Inverness","AC Hotel by Marriott Inverness","Ness Walk"]],"jaipur":["Jaipur","/es/jaipur",["Hotel Pearl Palace Jaipur","Hotel Arya Niwas","The Leela Palace Jaipur"]],"la-coruna":["La Coruña","/es/a-coruna",["Exe Coruña","Hotel Avenida","NH Collection A Coruña Finisterre"]],"leeds":["Leeds","/es/leeds",["ibis Leeds Centre Marlborough Street","The Met Hotel Leeds - Newly Refurbished","Dakota Leeds"]],"lille":["Lille","/es/lille",["Montempô Appart'hôtel Lille Gares","Hotel De La Paix","Hôtel Barrière Lille"]],"lisboa":["Lisboa","/es/lisbon",["Dom João Glamour Hotel","HF Fénix Music","EPIC SANA Lisboa Hotel"]],"liverpool":["Liverpool","/es/liverpool",["The Resident Liverpool","Citadines City Centre Liverpool","The Municipal Hotel Liverpool - MGallery Collection"]],"lodz":["Lodz","/es/lodz",["B&B Hotel Łódź Centrum","Hotel Pietryna","Grand Hotel"]],"londres":["Londres","/es/london",["The Z Hotel Leicester Square","Page8, Page Hotels","Haymarket Hotel, Firmdale Hotels"]],"lublin":["Lublin","/es/lublin",["B&B Hotel Lublin Centrum","Avatary Miasta","Hotel Alter - Adults Only"]],"madrid":["Madrid","/es/madrid",["B&B HOTEL Madrid Vallecas La Gavia","Aparto-Hotel Rosales","Relais & Châteaux Heritage Hotel"]],"malaga":["Málaga","/es/malaga",["Hostal Vidamia","LD Convento Cister","Vincci Selección Posada del Patio"]],"malta":["Malta","/es/valletta",["Paulos Valletta","Battery House","Iniala Valletta"]],"manchester":["Manchester","/es/manchester",["Roomzzz Manchester City","Cove Minshull Street","Dakota Manchester"]],"mexico":["México","/es/mexico-city",["Cadillac Hotel Boutique","Canada Central","Barceló Mexico Reforma"]],"milan":["Milán","/es/milan",["Aparthotel Dei Mercanti","Hotel Milano Castello","Park Hyatt Milano"]],"montpellier":["Montpellier","/es/montpellier",["Appart'City Confort Montpellier Saint Roch","Hôtel Royal - Centre Comédie","Domaine de Verchant & Spa - Relais & Châteaux"]],"montreal":["Montreal","/es/montreal",["Spark By Hilton Montreal Midtown","Manoir Sherbrooke","The Ritz-Carlton, Montreal"]],"munich":["Munich","/es/munich",["harry's home München hotel & apartments","MAXIMILIAN MUNICH Apartments & Hotel","Rosewood Munich"]],"niza":["Niza","/es/nice",["Hôtel Helvétique","Hotel Aparthotel AMMI Nice Lafayette","Maison Albar - Le Victoria"]],"nueva-delhi":["Nueva Delhi","/es/new-delhi",["Hotel Belwood By Signature StayZ Near Delhi Airport","Hotel Ajanta - Colonial Charm Award Winning Luxury Hotel in the Heart of the City","Taj Mahal, New Delhi"]],"nueva-york":["Nueva York","/es/new-york",["Pod Times Square","Hampton Inn Times Square Central","The Knickerbocker Hotel"]],"orlando":["Orlando","/es/orlando",["Fairfield Inn & Suites, Lake Buena Vista - Orlando Marriott Village - Trundle Bunkbed Suites!","Holiday Inn Orlando International Dr-ICON by IHG","ette hotel Orlando"]],"oslo":["Oslo","/es/oslo",["Scandic Go, Grensen 20","Hobo Oslo","Hotel Continental"]],"oviedo":["Oviedo","/es/oviedo",["Hotel Fruela","Exe Oviedo Centro","Eurostars Hotel de la Reconquista"]],"oxford":["Oxford","/es/oxford",["Royal Oxford Hotel","Cotswold Lodge Hotel","Old Bank Hotel"]],"pamplona":["Pamplona","/es/pamplona",["Kora Kiliki","Occidental Pamplona","Gran Hotel La Perla"]],"paris":["París","/es/paris",["Hotel Esmeralda","Nestay Les Halles","Le Grand Mazarin"]],"pekin":["Pekín","/es/beijing",["Zhong An Hotel Beijing Former Residence of Journalist Edgar Snow","Happy Dragon Alley Hotel Beijing Tian An Men Forbidden City","New World Beijing Hotel"]],"perth":["Perth","/es/perth",["Great Southern Hotel Perth","Quay Perth","The Ritz-Carlton, Perth"]],"playa-del-carmen":["Playa del Carmen","/es/playa-del-carmen",["Hotel Casa de las Flores","HM Playa del Carmen","Terasu Riviera Maya Hotel & Spa, en Xcaret"]],"poznan":["Poznan","/es/poznan",["B&B Hotel Poznań Old Town","PURO Poznań Stare Miasto","City Park Hotel & Residence"]],"praga":["Praga","/es/prague",["Hotel Prague Star","Grand Hotel International - Czech Leading Hotels","Old Royal Post Boutique Hotel & Premium Suites"]],"queenstown":["Queenstown","/es/queenstown",["Holiday Inn Queenstown Remarkables Park","mi-pad Queenstown","The Spire Hotel"]],"quito":["Quito","/es/quito",["Rincón Familiar Hotel Boutique","Chakana Hotel Boutique Centro","JW Marriott Quito"]],"rio-de-janeiro":["Rio de Janeiro","/es/rio-de-janeiro",["ibis Copacabana Posto 2","Vila Galé Rio de Janeiro","Copacabana Palace, A Belmond Hotel, Rio de Janeiro"]],"roma":["Roma","/es/rome",["Hotel Elide","Hotel Emona Aquaeductus","Harry's Bar Trevi Hotel & Restaurant"]],"rotterdam":["Rotterdam","/es/rotterdam",["Hotel Breitner","The James Rotterdam","Haven Hotel Rotterdam, Curio Collection by Hilton"]],"salvador":["Salvador","/es/salvador",["Pousada Colonial Chile","Hotel Casa do Amarelindo","Hotel Deville Prime Salvador"]],"san-francisco":["San Francisco","/es/san-francisco",["Beresford Arms","Orchard Hotel","Four Seasons Hotel San Francisco at Embarcadero"]],"santiago-de-compostela":["Santiago de Compostela","/es/santiago-de-compostela",["Hotel Universal","Hotel Altaïr","Hotel Palacio del Carmen, Autograph Collection"]],"saopaulo":["São Paulo","/es/sao-paulo",["Hotel Calstar","Sooz Hotel Collection","Hotel Unique - A Legend Preferred Hotel"]],"sevilla":["Sevilla","/es/seville",["Hotel Patio de las Cruces","Casa Señorial del Siglo XVIII","Only YOU Hotel Sevilla"]],"sidney":["Sidney","/es/sydney",["Macleay Hotel","Hyde Park Inn","Capella Sydney"]],"taipei":["Taipei","/es/taipei",["Queens Hotel II","Two Tails Hotel Taipei","Grand Mayfull Taipei"]],"tenerife":["Tenerife","/es/santa-cruz-de-tenerife",["Mapango Small Rooms","Emblemático F24-Only Adults B&B","Iberostar Heritage Grand Mencey"]],"turin":["Turín","/es/turin",["Hotel Cascina Fossata & Residence","Hotel Torino Porta Susa","Principi di Piemonte | UNA Esperienze | Preferred Hotels and Resorts"]],"utrech":["Utrech","/es/utrecht",["Bunk Hotel Utrecht","Hotel Mitland","Grand Hotel Karel V, WorldHotels Luxury"]],"venecia":["Venecia","/es/venice",["Hotel dalla Mora","B&B HOTEL Venezia Laguna","Hotel Gabrielli Venezia - Starhotels Collezione"]],"viena":["Viena","/es/vienna",["Bob W Vienna Döbling","Exe Vienna","Hotel Sacher Wien"]],"wellington":["Wellington","/es/wellington",["Naumi Studio Wellington","Oaks Wellington Hotel","InterContinental Wellington by IHG"]],"zaragoza":["Zaragoza","/es/zaragoza",["Hotel Hispania","Hotel Sauce","Hotel Palafox"]]};
+function whereToSleep() {
+var art = D.querySelector('article.post'); var entry = D.querySelector('article .entry');
+if (!art || !entry || D.querySelector('.ory-t3')) { return; }
+var hit = null;
+art.className.split(/\s+/).forEach(function (c) { if (!hit && c.indexOf('category-') === 0 && T3[c.slice(9)]) { hit = T3[c.slice(9)]; } });
+if (!hit) { return; }
+var en = lang() === 'en';
+var lab = en ? ['Budget', 'Best value', 'Luxury'] : ['Económico', 'Calidad-precio', 'Lujo'];
+var url = 'https://www.top3hotels.com' + (en ? hit[1].replace(/^\/es\//, '/') : hit[1]);
+var q = '?utm_source=carlosdeory';
+var box = D.createElement('div'); box.className = 'ory-t3';
+box.innerHTML = '<p class="k">' + (en ? 'Where to stay' : 'Dónde dormir') + '</p><h3>' + (en ? 'The 3 hotels I would pick in ' : 'Los 3 hoteles que elegiría en ') + hit[0] + '</h3><ol>' +
+hit[2].map(function (h, i) { return '<li><a href="' + url + q + '#hotel-' + i + '" target="_blank" rel="noopener"><b>' + lab[i] + '</b><span>' + h + '</span></a></li>'; }).join('') +
+'</ol><a class="go" href="' + url + q + '" target="_blank" rel="noopener">' + (en ? 'See prices and photos →' : 'Ver precios y fotos →') + '</a><small>' + (en ? 'Picked on Top3Hotels, my hotel guide. Booking through it supports this site at no extra cost.' : 'Elegidos en Top3Hotels, mi guía de hoteles. Reservar desde ahí ayuda a esta web y no te cuesta más.') + '</small>';
+var sav = entry.querySelector('div[style*="#faf4de"]');
+if (sav) { entry.insertBefore(box, sav); } else { entry.appendChild(box); }
+}
+/* portadas de episodios completas, sin recorte del servidor */
+function epCovers() {
+D.querySelectorAll('.category-episodes .card-media img, .category-episodios .card-media img').forEach(function (i) {
+var full = (i.getAttribute('src') || '').replace(/-\d+x\d+(\.\w+)$/, '$1');
+if (full && i.getAttribute('src') !== full) { i.removeAttribute('srcset'); i.removeAttribute('sizes'); i.setAttribute('src', full); }
+});
+}
+function run() {
+try { cjAll(); } catch (e) {}
+try { updatedLine(); } catch (e) {}
+try { fillOh(); } catch (e) {}
+try { dupEpisodes(); } catch (e) {}
+try { destinos(); } catch (e) {}
+try { newsletter(); } catch (e) {}
+try { authorBox(); } catch (e) {}
+try { savingsBox(); } catch (e) {}
+try { whereToSleep(); } catch (e) {}
+try { epCovers(); } catch (e) {}
+try { if (lang() === 'en' || ORIG.length) { trSimple(); } } catch (e) {}
+}
+function boot() {
+run();
+/* la portada cambia de idioma sin recargar: lo seguimos */
+try { new MutationObserver(function () { run(); }).observe(H, { attributes: true, attributeFilter: ['data-oh-lang'] }); } catch (e) {}
+setTimeout(run, 400);
+}
+if (D.readyState === 'loading') { D.addEventListener('DOMContentLoaded', boot); } else { boot(); }
+})();
+</script>
+<script id="wp-hooks-js" src="https://www.carlosdeory.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://www.carlosdeory.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://www.carlosdeory.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+localeData[""].domain = domain;
+wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-12-01 15:45:40+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+"api": {
+"root": "https:\/\/www.carlosdeory.com\/wp-json\/",
+"namespace": "contact-form-7\/v1"
+},
+"cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://www.carlosdeory.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7"></script>
+<script id="toc-front-js-extra">
+var tocplus = {"visibility_show":"Mostrar","visibility_hide":"Ocultar","toggle_style":"brackets","width":"Auto"};
+//# sourceURL=toc-front-js-extra
+</script>
+<script id="toc-front-js" src="https://www.carlosdeory.com/wp-content/plugins/table-of-contents-plus/assets/front.min.js?ver=202609.1"></script>
+<script id="ory-js" src="https://www.carlosdeory.com/wp-content/themes/ory-theme/assets/ory.js?ver=1787079692"></script>
+</body> 
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Almacenamiento en caché de páginas con Disk: Enhanced 
+
+Served from: www.carlosdeory.com @ 2026-10-19 14:11:06 by W3 Total Cache
+-->
