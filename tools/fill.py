@@ -12,6 +12,7 @@ for dp, _, fs in os.walk(root):
             vals = [m.group(1) or m.group(2) or '']
             if m.group(3): vals = [x.strip().split(' ')[0] for x in m.group(3).split(',')]
             for v in vals:
+                v = v.strip()
                 if not v or v.startswith(('http:', 'https:', '//', 'data:', 'mailto:', 'tel:', 'javascript:', '#')): continue
                 v = urllib.parse.unquote(v.split('?')[0])
                 if not re.search(r'\.(png|jpe?g|gif|webp|svg|ico|css|js|woff2?|ttf|eot|mp4|webm|pdf|json)$', v, re.I): continue
