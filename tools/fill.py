@@ -2,7 +2,7 @@
 """Descarga del original los recursos locales que faltan (favicons, srcset, url() de CSS...)."""
 import os, re, sys, urllib.request, urllib.parse
 root, origin = sys.argv[1], sys.argv[2].rstrip('/')
-pat = re.compile(r'''(?:src|href|data-src|content)=["']([^"'#]+)["']|url\(\s*["']?([^"')]+)["']?\s*\)|srcset=["']([^"']+)["']''')
+pat = re.compile(r'''(?:src|href|data-src|data-bgset|data-bg|data-lazy-src|data-original|data-background|content)=["']([^"'#]+)["']|url\(\s*["']?([^"')]+)["']?\s*\)|(?:data-)?srcset=["']([^"']+)["']''')
 miss = set()
 for dp, _, fs in os.walk(root):
     for f in fs:
