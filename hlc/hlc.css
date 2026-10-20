@@ -58,3 +58,7 @@ body.hlc-ck-open .hlc-bar{display:none}
 .hlc-foot a{color:#8a92a3!important;text-decoration:underline}
 /* El "me gusta" dependía de WordPress */
 .penci-post-like,.post-share-plike{display:none!important}
+/* Barra lateral CJ */
+.hlc-side{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:14px;background:#fafbfc;border:1px solid #eceef2}
+.hlc-side b{font-size:17px;margin-bottom:2px}
+.hlc-side .hlc-btn{justify-content:flex-start;font-size:14px}

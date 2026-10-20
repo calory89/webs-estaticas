@@ -2,17 +2,19 @@
 (function(){
   'use strict';
   var d=document, w=window;
-  var SKY=function(u){return 'https://skyscanner.pxf.io/c/2994331/1027991/13416?associateid=AFF_TRA_19354_00001&u='+encodeURIComponent(u);};
+  /* Solo enlaces de CJ (sitio Happy Low Cost, PID 101900924) */
+  var CJ=function(aid,u){return 'https://www.kqzyfj.com/click-101900924-'+aid+'?sid=happylowcost&url='+encodeURIComponent(u);};
+  var AID={hotel:'17288959',flight:'17288982',attr:'17288984',taxi:'17322565',car:'12506471',paris:'11585459'};
   var L={
-    vuelos: SKY('https://www.skyscanner.es/'),
-    hoteles: 'https://www.booking.com/index.es.html?aid=1137053',
-    coches: SKY('https://www.skyscanner.es/alquiler-de-coches'),
-    tours: 'https://www.civitatis.com/es/?aid=1793&cmp=happylowcost',
-    traslados: 'https://www.civitatis.com/es/traslados/?aid=1793&cmp=happylowcost',
-    seguro: 'https://clk.tradedoubler.com/click?p=281568&a=2430348&g=23945058',
+    vuelos: CJ(AID.flight,'https://www.booking.com/flights/index.es.html'),
+    hoteles: CJ(AID.hotel,'https://www.booking.com/index.es.html'),
+    coches: CJ(AID.car,'https://www.holidayautos.com/es/'),
+    tours: CJ(AID.attr,'https://www.booking.com/attractions/index.es.html'),
+    traslados: CJ(AID.taxi,'https://www.booking.com/taxi/index.es.html'),
+    paris: CJ(AID.paris,'https://www.pariscityvision.com/es'),
     fb: 'https://www.facebook.com/happylowcostofficialpage/'
   };
-  function hotelsIn(city){return city?'https://www.booking.com/searchresults.es.html?aid=1137053&ss='+encodeURIComponent(city):L.hoteles;}
+  function hotelsIn(city){return city?CJ(AID.hotel,'https://www.booking.com/searchresults.es.html?ss='+encodeURIComponent(city)):L.hoteles;}
   function a(href,txt,cls,ev){return '<a class="hlc-btn '+(cls||'')+'" href="'+href+'" target="_blank" rel="sponsored nofollow noopener" data-hlc="'+(ev||'')+'">'+txt+'</a>';}
   function track(name,label){try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_click',hlc_target:name,hlc_label:label||''});}catch(e){}}
 
@@ -67,7 +69,7 @@
     var c=d.querySelector('.inner-post-entry, .post-entry, .entry-content'); if(!c)return;
     if(/Te ayudamos a ahorrar/.test(c.textContent))return;
     var box=d.createElement('div');box.className='hlc-tools';
-    box.innerHTML='<h3>Organiza tu viaje y ahorra</h3><div class="hlc-grid">'+a(L.vuelos,'✈️ Vuelos','b','vuelos')+a(L.hoteles,'🏨 Hoteles','','hoteles')+a(L.tours,'🎟️ Excursiones','g','tours')+a(L.traslados,'🚐 Traslados','o','traslados')+a(L.coches,'🚗 Coches','o','coches')+a(L.seguro,'🛡️ Seguro de viaje','o','seguro')+'</div>';
+    box.innerHTML='<h3>Organiza tu viaje y ahorra</h3><div class="hlc-grid">'+a(L.vuelos,'✈️ Vuelos','b','vuelos')+a(L.hoteles,'🏨 Hoteles','','hoteles')+a(L.tours,'🎟️ Excursiones','g','tours')+a(L.traslados,'🚐 Traslados','o','traslados')+a(L.coches,'🚗 Coches','o','coches')+(/par[ií]s/i.test(d.title)?a(L.paris,'🗼 Tours en París','o','paris'):'')+'</div>';
     c.appendChild(box);
   }
 
@@ -98,7 +100,7 @@
     d.addEventListener('click',function(e){
       var el=e.target&&e.target.closest?e.target.closest('a[href]'):null; if(!el)return;
       var h=el.getAttribute('href')||'';
-      var t=el.getAttribute('data-hlc')||(/skyscanner/.test(h)?'skyscanner':/booking\.com/.test(h)?'booking':/civitatis/.test(h)?'civitatis':/tradedoubler/.test(h)?'seguro':/amzn|amazon/.test(h)?'amazon':/ecobeachcity/.test(h)?'ecobeachcity':'');
+      var t=el.getAttribute('data-hlc')||(/click-101900924-/.test(h)?'cj_'+(h.match(/click-101900924-(\d+)/)||[])[1]:/ecobeachcity/.test(h)?'ecobeachcity':'');
       if(t)track(t,location.pathname);
     },true);
   }
