@@ -122,6 +122,7 @@ document.documentElement.classList.add('hlc-js');
   /* ---------- Alertas ---------- */
   function alerts(){
     d.querySelectorAll('form[data-hlc-alert]').forEach(function(f){
+      try{var qd=new URLSearchParams(location.search).get('d');var di=f.querySelector('[name=destination]');if(qd&&di)di.value=qd.slice(0,60);}catch(e){}
       f.querySelectorAll('[data-chip]').forEach(function(c){c.addEventListener('click',function(){var on=c.getAttribute('aria-pressed')==='true';c.setAttribute('aria-pressed',on?'false':'true');});});
       f.querySelectorAll('[data-pick]').forEach(function(c){c.addEventListener('click',function(){var g=c.getAttribute('data-pick');f.querySelectorAll('[data-pick="'+g+'"]').forEach(function(x){x.setAttribute('aria-pressed','false');});c.setAttribute('aria-pressed','true');var ch=f.querySelector('[name=contact]');if(g==='channel'&&ch){var wa=c.getAttribute('data-v')==='whatsapp';ch.type=wa?'tel':'email';ch.placeholder=wa?'+34 600 000 000':'tu@email.com';var lb=f.querySelector('[data-contact-label]');if(lb)lb.textContent=wa?'Tu número de WhatsApp':'Tu email';}});});
       f.addEventListener('submit',function(e){

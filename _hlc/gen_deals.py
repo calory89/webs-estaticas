@@ -134,7 +134,7 @@ def og_image(photo, f, out):
 
 
 def head(**k):
-    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=5">', body_class='')
+    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=6">', body_class='')
     d.update(k)
     d.setdefault('og_title', d['title'])
     d.setdefault('og_alt', d['title'])
@@ -187,7 +187,7 @@ def main():
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": excerpt, "image": f"{url}og.jpg", "datePublished": x.get('approved_at'), "inLanguage": "es-ES",
               "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         page = head(title=e(title) + ' · Happy Low Cost', desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=5"><script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>', body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=6"><script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>', body_class='deal')
         page += f'''<main>
 <section class="deal-hero" style="{bg}"><div class="wrap">
 <div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (hora UTC)</div>

@@ -24,15 +24,20 @@ def credit(slug):
     return html.escape(f"{c.get('author') or 'Wikimedia Commons'} · {c.get('license','')}")
 
 # ---------- artículos recientes del blog (de la portada antigua) ----------
-old = subprocess.run(['git', 'show', 'HEAD~2:index.html'], capture_output=True).stdout.decode('utf-8', 'ignore') or open('index.html', encoding='utf-8').read()
+old = subprocess.run(['git', 'show', '22d7c41a:index.html'], capture_output=True).stdout.decode('utf-8', 'ignore') or open('index.html', encoding='utf-8').read()
 posts = []
 for m in re.finditer(r'data-bgset="([^"]+)"[^>]*href="(https://www\.happylowcost\.com/[^"]+)"[^>]*title="([^"]+)"', old):
     img, url, title = m.groups()
     if 'sumba' in url: continue
+    loc = re.sub(r'^(https?://(www\.)?happylowcost\.com)?/', '', img).split('?')[0]
+    if not os.path.exists(loc):
+        alt = re.sub(r'-\d+x\d+(\.\w+)$', r'\1', loc)
+        if not os.path.exists(alt): continue
+        img = '/' + alt
     posts.append((img, url.replace('https://www.happylowcost.com', ''), html.unescape(title)))
 posts = posts[:8]
 
-home_extra = '<link rel="stylesheet" href="/hlc/home.css?v=5"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
+home_extra = '<link rel="stylesheet" href="/hlc/home.css?v=6"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
  '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [
    {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2015", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"]},
    {"@type": "WebSite", "@id": "https://www.happylowcost.com/#web", "url": "https://www.happylowcost.com/", "name": "Happy Low Cost", "inLanguage": "es-ES", "publisher": {"@id": "https://www.happylowcost.com/#org"}}]}, ensure_ascii=False) + '</script>'
@@ -58,6 +63,24 @@ DEST = [('maldivas', 'Maldivas', 'Playas de postal', True), ('nueva-york', 'Nuev
         ('bangkok', 'Bangkok', 'Asia sin arruinarte', False), ('roma', 'Roma', 'Escapada de finde', False), ('punta-cana', 'Punta Cana', 'Caribe todo incluido', True),
         ('estambul', 'Estambul', 'Entre dos continentes', False), ('budapest', 'Budapest', 'Perla del Danubio', False), ('amsterdam', 'Ámsterdam', 'Canales y bicis', False), ('tenerife', 'Tenerife', 'Sol todo el año', False)]
 dest = ''.join(f'<a class="reveal{" big" if big else ""}" href="{CJ("17288959", "https://www.booking.com/searchresults.es.html?ss=" + name)}" {R} style="background-image:url(/hlc/img/cities/{s}{"" if big else "-800"}.jpg)"><span>{name}<small>{sub} · ver hoteles</small></span></a>' for s, name, sub, big in DEST)
+
+DJ = json.load(open('hlc/destinos.json', encoding='utf-8'))
+def map_block(full=False):
+    orig = ''.join(f'<option>{c}</option>' for c in ['Madrid', 'Barcelona', 'Málaga', 'Valencia', 'Sevilla', 'Bilbao', 'Alicante', 'Canarias', 'Palma'])
+    regs = ''.join(f'<button type="button" data-region="{r}" aria-pressed="false">{n}</button>' for r, n in [('europa', 'Europa'), ('mediterraneo', 'Mediterráneo'), ('america', 'América'), ('asia', 'Asia'), ('africa', 'África'), ('mundo', 'Mundo')])
+    fl = ''.join(f'<button type="button" class="chip" data-f="{f}" aria-pressed="{str(f == "todos").lower()}">{n}</button>' for f, n in [('todos', 'Todos'), ('deal', '🔥 Con chollo hoy'), ('playa', '🏝️ Playa'), ('ciudad', '🏙️ Ciudad'), ('naturaleza', '⛰️ Naturaleza'), ('europa', 'Europa'), ('america', 'América'), ('asia', 'Asia'), ('africa', 'África')])
+    cards = ''.join(f'<button type="button" class="mx-cd" data-s="{d["s"]}"><span class="mx-cd-ph" style="background-image:url(/hlc/img/cities/{d["s"]}-800.jpg)"></span><b>{html.escape(d["n"])}</b><small>{html.escape(d["c"])}</small></button>' for d in DJ)
+    return (f'<div class="mapx{" mapx-full" if full else ""} reveal" data-hlc-map>'
+            f'<div class="mapx-top"><label class="mapx-o">✈️ Desde <select data-map-origin aria-label="Ciudad de salida">{orig}</select></label><div class="mapx-reg" role="group" aria-label="Zona del mapa">{regs}</div></div>'
+            f'<svg class="mapx-svg" role="img" aria-label="Mapa de destinos de Happy Low Cost"></svg>'
+            f'<div class="mapx-zoom"><button type="button" data-zoom="1" aria-label="Acercar">+</button><button type="button" data-zoom="-1" aria-label="Alejar">−</button></div>'
+            f'<div class="mapx-hint" data-map-count>{len(DJ)} destinos</div>'
+            f'<div class="mapx-card" hidden aria-live="polite"></div>'
+            f'<div class="mapx-load">Cargando el mapa…</div></div>'
+            f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
+            f'<div class="mapx-strip" data-map-strip>{cards}</div>'
+            '<script src="/hlc/map.js?v=1" defer></script>')
+MAP = map_block()
 
 blog = ''.join(f'<a class="reveal" href="{u}"><div style="background-image:url({i})"></div><span>{html.escape(t)}</span></a>' for i, u, t in posts)
 
@@ -91,9 +114,9 @@ home += f'''
 <div class="steps">{steps}</div>
 </div></section>
 
-<section class="sec"><div class="wrap">
-<div class="sec-h reveal"><div><div class="kicker">Inspiración</div><h2>¿A dónde te escapas?</h2><p>Los destinos que más buscan nuestros viajeros. Toca uno para ver hoteles con buena nota.</p></div></div>
-<div class="dest">{dest}</div>
+<section class="sec mapx-sec" id="destinos"><div class="wrap">
+<div class="sec-h reveal"><div><div class="kicker">El mapa de los chollos</div><h2>¿A dónde te escapas?</h2><p>Toca un destino y te enseñamos la ruta desde tu ciudad, los vuelos, los hoteles y si hay chollo hoy.</p></div><a class="hlc-btn o" href="/destinos/">Mapa a pantalla completa</a></div>
+{MAP}
 </div></section>
 
 <section class="sec" id="alertas" style="padding-top:20px"><div class="alert-box reveal">
@@ -115,10 +138,20 @@ home += f'''
 </html>'''
 open('index.html', 'w', encoding='utf-8').write(home)
 
+# ---------- /destinos/ ----------
+os.makedirs('destinos', exist_ok=True)
+dp = head(title='Mapa de destinos y chollos de vuelos desde España · Happy Low Cost', desc=f'Explora {len(DJ)} destinos en un mapa interactivo: ruta desde tu ciudad, vuelos, hoteles y los chollos de hoy verificados.',
+          canonical='https://www.happylowcost.com/destinos/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=6">', body_class='destinos')
+dp += f'''<main class="sec" style="padding-top:28px"><div class="wrap">
+<div class="sec-h"><div><div class="kicker">El mapa de los chollos</div><h1 style="font:800 clamp(36px,5vw,60px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:8px 0 0">¿A dónde te escapas?</h1><p>Elige desde dónde vuelas y toca un destino: ruta, vuelos, hoteles y chollos de hoy.</p></div></div>
+{map_block(True)}
+</div></main></body></html>'''
+open('destinos/index.html', 'w', encoding='utf-8').write(dp)
+
 # ---------- /alertas/ ----------
 os.makedirs('alertas', exist_ok=True)
 al = head(title='Crea tu alerta de chollos de vuelos · Happy Low Cost', desc='Te avisamos gratis por email o WhatsApp cuando encontremos un vuelo barato desde tu aeropuerto. Máximo un aviso al día.',
-          canonical='https://www.happylowcost.com/alertas/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=5">', body_class='alertas')
+          canonical='https://www.happylowcost.com/alertas/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=6">', body_class='alertas')
 al += f'''<main class="sec"><div class="alert-box" style="max-width:1180px;margin:0 auto">
 <div><div class="kicker">Alertas gratis</div><h1 style="font:800 clamp(38px,5.6vw,64px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:10px 0 14px">Que el chollo te encuentre a ti.</h1><p>Elige tu aeropuerto, tu destino soñado y tu precio máximo. Cuando cacemos un vuelo que encaje, te avisamos. Sin spam: máximo un aviso al día y te das de baja con un clic.</p></div>
 {ALERT}
