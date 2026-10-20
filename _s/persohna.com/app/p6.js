@@ -1,8 +1,8 @@
 "use strict";
 // ---------- 11. v5: «Busca por mí» con ofertas y casas reales, opiniones compartidas y tareas en segundo plano ----------
 
-const JB = { url: "https://nhukaoufssgeyqtwfclt.supabase.co/rest/v1/rpc/", key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5odWthb3Vmc3NnZXlxdHdmY2x0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA4NjQ3MDgsImV4cCI6MjEwNjQ0MDcwOH0.hlMhvpXwRPU-Yaou9GfvQ661Bs-FnnWFrv_1S76kBUM" };
-const RH = { url: "https://nylmhdtlshhtjkuvfbms.supabase.co/rest/v1/rpc/", key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55bG1oZHRsc2hodGprdXZmYm1zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2MTg3MzMsImV4cCI6MjA4NzE5NDczM30.KHhGDOexuJeD-i4yyFWi7FInTfA2DIeAs8lpjD1f0Yc", site: "https://realhunt.co" };
+const JB = { url: "https://persohna.com/__sb/jobersity/rest/v1/rpc/", key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw" };
+const RH = { url: "https://persohna.com/__sb/realhunt/rest/v1/rpc/", key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw", site: "https://realhunt.co" };
 async function rpc(base, fn, body, timeout = 30000) {
   const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), timeout);
   try {
