@@ -1,0 +1,82 @@
+/* Portada y páginas nuevas de Happy Low Cost */
+.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--tinta)}
+.hero-img{position:absolute;inset:0;background:center/cover no-repeat;opacity:0;transform:scale(1.06);transition:opacity 1.6s ease,transform 7s ease}
+.hero-img.on{opacity:1;transform:scale(1)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,33,61,.15) 0%,rgba(20,33,61,.25) 40%,rgba(20,33,61,.88) 100%)}
+.hero-in{position:relative;z-index:2;max-width:1240px;margin:0 auto;width:100%;padding:140px 20px 56px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px}
+.hero h1{color:#fff!important;font:800 clamp(44px,8.2vw,104px)/.92 var(--fd)!important;letter-spacing:-.045em!important;margin:0!important;max-width:980px}
+.hero h1 em{font-style:normal;color:var(--sol)}
+.hero p.lead{font:500 clamp(17px,2vw,21px)/1.5 var(--fb);color:#EEF1F8;max-width:640px;margin:0}
+.hero .smile{width:min(420px,70vw);height:auto;margin:-6px 0 -4px}
+.hero .smile path.s{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.6s .4s ease forwards}
+.hero .smile g{opacity:0;animation:pop .4s 1.8s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{opacity:1}}
+.hero .chips .chip{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(6px)}
+.hero .chips .chip[aria-pressed=true]{background:#fff;color:var(--tinta);border-color:#fff}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.hero-proof{display:flex;gap:18px;flex-wrap:wrap;font:600 14px var(--fb);color:#D6DCEA}
+.hero-proof b{color:#fff}
+.hero-credit{position:absolute;right:12px;bottom:8px;z-index:2;font:11px var(--fb);color:rgba(255,255,255,.6)}
+.sec{padding:72px 0}
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.sec-h h2{margin:6px 0 0!important;font:800 clamp(32px,4.4vw,52px)/1 var(--fd)!important;letter-spacing:-.03em!important}
+.sec-h p{margin:8px 0 0;color:var(--gris);max-width:560px;font-size:17px;line-height:1.5}
+/* viaje */
+.journey{position:relative;background:var(--tinta);color:#fff;border-radius:36px;margin:0 12px;padding:80px 0;overflow:hidden}
+.journey h2{color:#fff!important}
+.journey .kicker{color:var(--sol)}
+.journey-path{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.steps{position:relative;display:flex;flex-direction:column;gap:64px;margin-top:40px}
+.step{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center}
+.step:nth-child(even) .step-img{order:2}
+.step-img{border-radius:28px;aspect-ratio:4/3;background:center/cover no-repeat;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.step-n{font:800 15px var(--fb);letter-spacing:.12em;color:var(--sol)}
+.step h3{color:#fff!important;font:800 clamp(28px,3.4vw,42px)/1.02 var(--fd)!important;margin:8px 0 12px!important}
+.step p{color:#C9D1E3;font-size:18px;line-height:1.6;margin:0 0 16px}
+@media (max-width:860px){.step{grid-template-columns:1fr;gap:18px}.step:nth-child(even) .step-img{order:0}.journey{margin:0;border-radius:0;padding:56px 0}.steps{gap:48px}}
+/* destinos */
+.dest{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:14px}
+.dest a{position:relative;border-radius:24px;overflow:hidden;background:center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;text-decoration:none!important;color:#fff!important}
+.dest a:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(20,33,61,.75));transition:background .3s}
+.dest a:hover:after{background:linear-gradient(180deg,rgba(255,90,54,.15) 0%,rgba(20,33,61,.8))}
+.dest a span{position:relative;z-index:1;font:800 26px/1 var(--fd);letter-spacing:-.02em}
+.dest a small{display:block;font:600 13px var(--fb);opacity:.9;margin-top:4px;letter-spacing:0}
+.dest a.big{grid-column:span 2;grid-row:span 2}.dest a.big span{font-size:40px}
+@media (max-width:860px){.dest{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px}.dest a.big{grid-column:span 2;grid-row:span 1}}
+/* alertas */
+.alert-box{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;background:var(--sol);border-radius:36px;padding:48px;margin:0 12px}
+.alert-box h2{font:800 clamp(34px,4.6vw,56px)/.98 var(--fd)!important;margin:10px 0 14px!important}
+.alert-box .kicker{color:var(--tinta)}
+.alert-box p{font-size:18px;line-height:1.55;margin:0}
+.alert-box .alert-form{background:#fff;border-radius:24px;padding:24px;box-shadow:var(--sh)}
+@media (max-width:860px){.alert-box{grid-template-columns:1fr;padding:28px 18px;border-radius:0;margin:0;gap:20px}}
+/* comunidad */
+.fbproof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.fbproof div{background:#fff;border-radius:24px;padding:28px;box-shadow:var(--sh)}
+.fbproof b{display:block;font:800 52px/1 var(--fd);color:var(--coral-d);letter-spacing:-.03em}
+.fbproof span{display:block;margin-top:8px;color:var(--gris);font-size:16px;line-height:1.5}
+@media (max-width:860px){.fbproof{grid-template-columns:1fr}}
+/* blog */
+.blog{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.blog a{display:block;background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--sh);text-decoration:none!important;color:var(--tinta)!important}
+.blog a div{height:150px;background:#ddd center/cover no-repeat}
+.blog a span{display:block;padding:14px 16px 18px;font:700 16px/1.3 var(--fb)}
+@media (max-width:1000px){.blog{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.blog{grid-template-columns:1fr}}
+/* página de chollo */
+.deal-hero{position:relative;min-height:min(70vh,640px);display:flex;align-items:flex-end;color:#fff;background:var(--tinta) center/cover no-repeat}
+.deal-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,33,61,.1) 30%,rgba(20,33,61,.9))}
+.deal-hero .wrap{position:relative;z-index:1;padding:120px 20px 40px;width:100%;box-sizing:border-box}
+.deal-hero h1{color:#fff!important;font:800 clamp(34px,5.6vw,68px)/.98 var(--fd)!important;margin:10px 0 0!important;max-width:900px}
+.price-tag{display:inline-flex;align-items:baseline;gap:8px;background:var(--sol);color:var(--tinta);padding:10px 18px;border-radius:16px;font:800 44px/1 var(--fd)}
+.price-tag small{font:700 14px var(--fb)}
+.deal-body{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:40px;padding:44px 0}
+.deal-body .txt{font-size:18px;line-height:1.7}
+.deal-card{position:sticky;top:90px;background:#fff;border-radius:24px;padding:24px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:14px;align-self:start}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.facts div{background:var(--crema);border-radius:14px;padding:12px}
+.facts small{display:block;font:600 12px var(--fb);color:var(--gris);text-transform:uppercase;letter-spacing:.06em}
+.facts b{font:700 16px var(--fb)}
+.share{display:flex;gap:8px;flex-wrap:wrap}
+.credit{font:12px var(--fb);color:var(--gris)}
+@media (max-width:900px){.deal-body{grid-template-columns:1fr}.deal-card{position:static}}

@@ -1,0 +1,110 @@
+{
+ "lisboa": {
+  "file": "File:View of Lisbon and Tejo - 01.jpg",
+  "author": "NorbertNagel",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Lisbon_and_Tejo_-_01.jpg"
+ },
+ "londres": {
+  "file": "File:View of Hermitage Riverside and City of London from the Thames. London.jpg",
+  "author": "Ввласенко",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Hermitage_Riverside_and_City_of_London_from_the_Thames._London.jpg"
+ },
+ "roma": {
+  "file": "File:Colosseo di Roma panoramic.jpg",
+  "author": "Paolo Costa Baldi",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Colosseo_di_Roma_panoramic.jpg"
+ },
+ "paris": {
+  "file": "File:Paris - The Eiffel Tower in spring - 2307.jpg",
+  "author": "Jorge Royan",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg"
+ },
+ "marrakech": {
+  "file": "File:Mosquée de la Koutoubia - marakesh.jpg",
+  "author": "Baca12",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg"
+ },
+ "nueva-york": {
+  "file": "File:Lower Manhattan from Jersey City September 2020 panorama.jpg",
+  "author": "King of Hearts",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_September_2020_panorama.jpg"
+ },
+ "bali": {
+  "file": "File:Bali, Rice fields, Rice terraces in East Bali, Indonesia.jpg",
+  "author": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bali,_Rice_fields,_Rice_terraces_in_East_Bali,_Indonesia.jpg"
+ },
+ "maldivas": {
+  "file": "File:Maldives, How blue can it be - Flickr - nattu.jpg",
+  "author": "Nattu from Male', Maldives",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maldives,_How_blue_can_it_be_-_Flickr_-_nattu.jpg"
+ },
+ "tokio": {
+  "file": "File:Minato City, Tokyo, Japan.jpg",
+  "author": "David Kernan",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Minato_City,_Tokyo,_Japan.jpg"
+ },
+ "copenhague": {
+  "file": "File:Kopenhagen (DK), Nyhavn -- 2017 -- 1711.jpg",
+  "author": "Dietmar Rabich",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kopenhagen_(DK),_Nyhavn_--_2017_--_1711.jpg"
+ },
+ "tenerife": {
+  "file": "File:Coast at Chinamada - Tenerife 04.jpg",
+  "author": "H. Zell",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coast_at_Chinamada_-_Tenerife_04.jpg"
+ },
+ "punta-cana": {
+  "file": "File:Punta Cana Beach 01.jpg",
+  "author": "NoonIcarus",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Punta_Cana_Beach_01.jpg"
+ },
+ "budapest": {
+  "file": "File:20190502 View from Buda Castle 1059 2025 DxO.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20190502_View_from_Buda_Castle_1059_2025_DxO.jpg"
+ },
+ "la-habana": {
+  "file": "File:El Capitolio Havana Cuba.jpg",
+  "author": "Nigel Pacquette",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:El_Capitolio_Havana_Cuba.jpg"
+ },
+ "bangkok": {
+  "file": "File:Bangkok - Rama VIII Bridge at sunrise Jan 2024.jpg",
+  "author": "Dominic Nelson",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Rama_VIII_Bridge_at_sunrise_Jan_2024.jpg"
+ },
+ "amsterdam": {
+  "file": "File:Colorful canal houses at golden hour in Damrak avenue Amsterdam the Netherlands.jpg",
+  "author": "Basile Morin",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Colorful_canal_houses_at_golden_hour_in_Damrak_avenue_Amsterdam_the_Netherlands.jpg"
+ },
+ "estambul": {
+  "file": "File:New Mosque, Istanbul, from Bosphorus.jpg",
+  "author": "Till Niermann",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:New_Mosque,_Istanbul,_from_Bosphorus.jpg"
+ },
+ "el-cairo": {
+  "file": "File:All Gizah Pyramids.jpg",
+  "author": "Ricardo Liberato",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg"
+ }
+}

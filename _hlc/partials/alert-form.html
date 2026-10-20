@@ -1,0 +1,36 @@
+<form class="alert-form" data-hlc-alert novalidate>
+<div class="af" style="display:flex;flex-direction:column;gap:20px">
+<fieldset class="fld"><legend>¿Desde dónde vuelas?</legend>
+<div class="chips">
+<button type="button" class="chip" data-chip data-v="Madrid" aria-pressed="true">Madrid</button>
+<button type="button" class="chip" data-chip data-v="Barcelona" aria-pressed="false">Barcelona</button>
+<button type="button" class="chip" data-chip data-v="Málaga" aria-pressed="false">Málaga</button>
+<button type="button" class="chip" data-chip data-v="Valencia" aria-pressed="false">Valencia</button>
+<button type="button" class="chip" data-chip data-v="Sevilla" aria-pressed="false">Sevilla</button>
+<button type="button" class="chip" data-chip data-v="Bilbao" aria-pressed="false">Bilbao</button>
+<button type="button" class="chip" data-chip data-v="Alicante" aria-pressed="false">Alicante</button>
+<button type="button" class="chip" data-chip data-v="Canarias" aria-pressed="false">Canarias</button>
+<button type="button" class="chip" data-chip data-v="Palma" aria-pressed="false">Palma</button>
+</div></fieldset>
+<div class="fld"><label for="af-dest">¿A dónde sueñas ir?</label><input id="af-dest" name="destination" type="text" placeholder="Japón, Nueva York, Bali… o «a cualquier sitio»" autocomplete="off"></div>
+<fieldset class="fld"><legend>Precio máximo (ida y vuelta)</legend>
+<div class="chips">
+<button type="button" class="chip" data-pick="price" data-v="100" aria-pressed="false">100 €</button>
+<button type="button" class="chip" data-pick="price" data-v="300" aria-pressed="true">300 €</button>
+<button type="button" class="chip" data-pick="price" data-v="600" aria-pressed="false">600 €</button>
+<button type="button" class="chip" data-pick="price" data-v="1000" aria-pressed="false">1.000 €</button>
+</div></fieldset>
+<fieldset class="fld"><legend>¿Cómo te avisamos?</legend>
+<div class="chips">
+<button type="button" class="chip" data-pick="channel" data-v="email" aria-pressed="true">Email</button>
+<button type="button" class="chip" data-pick="channel" data-v="whatsapp" aria-pressed="false">WhatsApp</button>
+</div>
+<label for="af-contact" data-contact-label style="font:600 14px Inter,sans-serif;color:#4A5468">Tu email</label>
+<input id="af-contact" name="contact" type="email" placeholder="tu@email.com" autocomplete="email" required style="min-height:52px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;color:#14213D;width:100%;box-sizing:border-box">
+</fieldset>
+<label class="consent"><input type="checkbox" name="consent" required><span>Acepto recibir avisos de chollos de Happy Low Cost (máximo uno al día) y la <a href="/aviso-legal-datos-cookies/">política de privacidad</a>. Me puedo dar de baja cuando quiera.</span></label>
+<button type="submit" class="hlc-btn" style="min-height:56px;font-size:17px">Activar mi alerta gratis</button>
+<div data-msg role="status" aria-live="polite"></div>
+</div>
+<div class="af-ok" data-ok hidden><b>¡Alerta activada! ✈️</b><span>Te avisaremos cuando encontremos un vuelo desde <strong data-sum></strong>.</span><a class="hlc-btn t" href="/chollos/">Ver los chollos de hoy</a></div>
+</form>
