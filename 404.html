@@ -1067,13 +1067,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   }
   function relText(r) { var d = Number(r.dataset.days), E = en(); r.textContent = d === 0 ? (E ? 'today' : 'hoy') : d === 1 ? (E ? 'yesterday' : 'ayer') : (E ? d + ' days ago' : 'hace ' + d + ' días'); }
   /* WhatsApp flotante y bloque Preguntame */
-  var WA = 'https://api.whatsapp.com/send?phone=34687358010' + String.fromCharCode(38) + 'text=';
-  function whatsapp() {
+  var WA = '';
+  function whatsapp() { return;
     if (D.querySelector('.ory-wa')) { return; }
     var a = el('a', 'ory-wa', '✆'); a.href = WA + encodeURIComponent((en() ? 'Hi Carlos, I come from ' : 'Hola Carlos, vengo de ') + location.pathname); a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', 'WhatsApp');
     B.appendChild(a); setTimeout(function () { a.classList.add('on'); }, 30000);
   }
-  function askBlock() {
+  function askBlock() { return;
     if (!B.classList.contains('home') || D.querySelector('.ory-ask')) { return; }
     var w = D.querySelector('.ory-h-wrap'); if (!w) { return; }
     var E = en(), box = el('div', 'ory-ask');
