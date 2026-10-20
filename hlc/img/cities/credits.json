@@ -84,10 +84,10 @@
   "page": "https://commons.wikimedia.org/wiki/File:El_Capitolio_Havana_Cuba.jpg"
  },
  "bangkok": {
-  "file": "File:Bangkok - Rama VIII Bridge at sunrise Jan 2024.jpg",
-  "author": "Dominic Nelson",
+  "file": "File:The sculptures of two mythical giant demons, Thotsakan and Sahatsadecha, guarding the eastern gate of the main chapel of Wat Arun, Bangkok.jpg",
+  "author": "BerryJ",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bangkok_-_Rama_VIII_Bridge_at_sunrise_Jan_2024.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:The_sculptures_of_two_mythical_giant_demons,_Thotsakan_and_Sahatsadecha,_guarding_the_eastern_gate_of_the_main_chapel_of_Wat_Arun,_Bangkok.jpg"
  },
  "amsterdam": {
   "file": "File:Colorful canal houses at golden hour in Damrak avenue Amsterdam the Netherlands.jpg",
@@ -106,5 +106,353 @@
   "author": "Ricardo Liberato",
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg"
+ },
+ "varsovia": {
+  "file": "File:Old Town Market Square, ..2026, Warsaw, Poland.jpg",
+  "author": "Igor123121",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Town_Market_Square,_..2026,_Warsaw,_Poland.jpg"
+ },
+ "praga": {
+  "file": "File:Prague 07-2016 View from Petrinska Tower img2.jpg",
+  "author": "A.Savin",
+  "license": "FAL",
+  "page": "https://commons.wikimedia.org/wiki/File:Prague_07-2016_View_from_Petrinska_Tower_img2.jpg"
+ },
+ "berlin": {
+  "file": "File:Berlin Mitte June 2023 01.jpg",
+  "author": "ArildV",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Berlin_Mitte_June_2023_01.jpg"
+ },
+ "venecia": {
+  "file": "File:Ponte di Rialto Venice 1.jpg",
+  "author": "kallerna",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ponte_di_Rialto_Venice_1.jpg"
+ },
+ "florencia": {
+  "file": "File:Florence Duomo from Michelangelo hill.jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg"
+ },
+ "atenas": {
+  "file": "File:Attica 06-13 Athens 50 View from Philopappos - Acropolis Hill.jpg",
+  "author": "A.Savin",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg"
+ },
+ "santorini": {
+  "file": "File:1000 Three domes of Oia in Santorini Photo by Giles Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1000_Three_domes_of_Oia_in_Santorini_Photo_by_Giles_Laurent.jpg"
+ },
+ "dubrovnik": {
+  "file": "File:Dubrovnik as seen from Srđ - September 2017.jpg",
+  "author": "Martin Falbisoner",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dubrovnik_as_seen_from_Sr%C4%91_-_September_2017.jpg"
+ },
+ "cracovia": {
+  "file": "File:Barbakan przed wschodem słońca.jpg",
+  "author": "Gswito",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Barbakan_przed_wschodem_s%C5%82o%C5%84ca.jpg"
+ },
+ "bruselas": {
+  "file": "File:Garden of Kunstberg viewed from Mont des Arts during nautical twilight (DSCF1028).jpg",
+  "author": "Trougnouf (Benoit Brummer)",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Garden_of_Kunstberg_viewed_from_Mont_des_Arts_during_nautical_twilight_(DSCF1028).jpg"
+ },
+ "brujas": {
+  "file": "File:Brugge Langerei R02.jpg",
+  "author": "Marc Ryckaert (MJJR)",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brugge_Langerei_R02.jpg"
+ },
+ "dublin": {
+  "file": "File:Long Room Interior, Trinity College Dublin, Ireland - Diliff.jpg",
+  "author": "Diliff",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Long_Room_Interior,_Trinity_College_Dublin,_Ireland_-_Diliff.jpg"
+ },
+ "oslo": {
+  "file": "File:Oslo Opera House - 2025.jpg",
+  "author": "Pierre Blaché",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oslo_Opera_House_-_2025.jpg"
+ },
+ "estocolmo": {
+  "file": "File:Storkyrkan and Kungliga slottet Stockholm 2016 01.jpg",
+  "author": "Julian Herzog (Website)",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Storkyrkan_and_Kungliga_slottet_Stockholm_2016_01.jpg"
+ },
+ "helsinki": {
+  "file": "File:Catedral Luterana de Helsinki, Finlandia, 2012-08-14, DD 14.JPG",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Catedral_Luterana_de_Helsinki,_Finlandia,_2012-08-14,_DD_14.JPG"
+ },
+ "reikiavik": {
+  "file": "File:Reynisfjara, Suðurland, Islandia, 2014-08-17, DD 164.JPG",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Reynisfjara,_Su%C3%B0urland,_Islandia,_2014-08-17,_DD_164.JPG"
+ },
+ "malta": {
+  "file": "File:Our Lady of Mount Carmel and St Pauls Pro-Cathedral.jpg",
+  "author": "This photo was taken by Anton Zelenov.\nPlease credit this with : Photo : Anton Z",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_Mount_Carmel_and_St_Pauls_Pro-Cathedral.jpg"
+ },
+ "munich": {
+  "file": "File:Stadtbild München.jpg",
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0 de",
+  "page": "https://commons.wikimedia.org/wiki/File:Stadtbild_M%C3%BCnchen.jpg"
+ },
+ "bucarest": {
+  "file": "File:Palacio CEC, Bucarest, Rumanía, 2016-05-29, DD 91-93 HDR.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Palacio_CEC,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_91-93_HDR.jpg"
+ },
+ "sofia": {
+  "file": "File:Alexander Nevsky Cathedral, Sofia (by Pudelek).JPG",
+  "author": "Pudelek (Marcin Szala)",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alexander_Nevsky_Cathedral,_Sofia_(by_Pudelek).JPG"
+ },
+ "fez": {
+  "file": "File:Bab Bou Jeloud Frame Minaret Fes Nov25 A7CR 09127-8 HDR3.jpg",
+  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but p",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bab_Bou_Jeloud_Frame_Minaret_Fes_Nov25_A7CR_09127-8_HDR3.jpg"
+ },
+ "dubai": {
+  "file": "File:Madinat Jumeirah-Dubai3303.JPG",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Madinat_Jumeirah-Dubai3303.JPG"
+ },
+ "cancun": {
+  "file": "File:Cancun Beach.jpg",
+  "author": "Keith Pomakis",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Cancun_Beach.jpg"
+ },
+ "ciudad-de-mexico": {
+  "file": "File:Mexico City Palacio de bellas artes.jpg",
+  "author": "Jeses",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Mexico_City_Palacio_de_bellas_artes.jpg"
+ },
+ "lima": {
+  "file": "File:Machu Picchu, Perú, 2015-07-30, DD 47.JPG",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG"
+ },
+ "buenos-aires": {
+  "file": "File:Casa Rosada, Buenos Aires, Argentina.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Casa_Rosada,_Buenos_Aires,_Argentina.jpg"
+ },
+ "rio-de-janeiro": {
+  "file": "File:Bell 206L-4 LongRanger IV over Botafogo Bay, Rio de Janeiro.jpg",
+  "author": "Wilfredor",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bell_206L-4_LongRanger_IV_over_Botafogo_Bay,_Rio_de_Janeiro.jpg"
+ },
+ "miami": {
+  "file": "File:Lifeguard stand, Miami Beach.jpg",
+  "author": "Radomianin",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lifeguard_stand,_Miami_Beach.jpg"
+ },
+ "los-angeles": {
+  "file": "File:Hollywood Sign.jpg",
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign.jpg"
+ },
+ "san-francisco": {
+  "file": "File:Golden Gate Bridge as seen from Marshall’s Beach, March 2018.jpg",
+  "author": "Frank Schulenburg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach,_March_2018.jpg"
+ },
+ "las-vegas": {
+  "file": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
+  "author": "Dietmar Rabich",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(Nevada,_USA),_The_Strip_--_2012_--_6232.jpg"
+ },
+ "phuket": {
+  "file": "File:Isla Tapu, Phuket, Tailandia, 2013-08-20, DD 36.JPG",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Isla_Tapu,_Phuket,_Tailandia,_2013-08-20,_DD_36.JPG"
+ },
+ "singapur": {
+  "file": "File:Puente Helix, museo ArtScience y hotel Marina Bay Sands, Marina Bay, Singapur, 2023-08-17, DD 67-69 HDR.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Puente_Helix,_museo_ArtScience_y_hotel_Marina_Bay_Sands,_Marina_Bay,_Singapur,_2023-08-17,_DD_67-69_HDR.jpg"
+ },
+ "hanoi": {
+  "file": "File:View of sea from Titov Island, Ha Long Bay, Vietnam, 20240128 1337 3732.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_sea_from_Titov_Island,_Ha_Long_Bay,_Vietnam,_20240128_1337_3732.jpg"
+ },
+ "seul": {
+  "file": "File:Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul.jpg",
+  "author": "Frank Schulenburg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg"
+ },
+ "kioto": {
+  "file": "File:Yasaka-dori early morning with street lanterns and the Tower of Yasaka (Hokan-ji Temple), Kyoto, Japan.jpg",
+  "author": "Basile Morin",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg"
+ },
+ "ciudad-del-cabo": {
+  "file": "File:Cape Town (ZA), Wale Street -- 2024 -- 3544.jpg",
+  "author": "Dietmar Rabich",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Wale_Street_--_2024_--_3544.jpg"
+ },
+ "sri-lanka": {
+  "file": "File:Sri Lankan elephant (Elephas maximus maximus) female and young 6.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sri_Lankan_elephant_(Elephas_maximus_maximus)_female_and_young_6.jpg"
+ },
+ "riga": {
+  "file": "File:House of Blackheads and St. Peter's Church Tower, Riga, Latvia - Diliff.jpg",
+  "author": "Diliff",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:House_of_Blackheads_and_St._Peter%27s_Church_Tower,_Riga,_Latvia_-_Diliff.jpg"
+ },
+ "tallin": {
+  "file": "File:Old town of Tallinn 06-03-2012.jpg",
+  "author": "Ivar Leidus (Iifar)",
+  "license": "CC BY-SA 3.0 ee",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_town_of_Tallinn_06-03-2012.jpg"
+ },
+ "vilna": {
+  "file": "File:Vilnius Modern Skyline At Dusk, Lithuania - Diliff.jpg",
+  "author": "Diliff",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vilnius_Modern_Skyline_At_Dusk,_Lithuania_-_Diliff.jpg"
+ },
+ "zurich": {
+  "file": "File:Zürich view Quaibrücke 20200702.jpg",
+  "author": "Daniel Kraft",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Z%C3%BCrich_view_Quaibr%C3%BCcke_20200702.jpg"
+ },
+ "bolonia": {
+  "file": "File:Bologna Panorama.jpg",
+  "author": "Ввласенко",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bologna_Panorama.jpg"
+ },
+ "salzburgo": {
+  "file": "File:2018 - May - Salzach River at night in Salzburg.jpg",
+  "author": "Max Dawncat",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2018_-_May_-_Salzach_River_at_night_in_Salzburg.jpg"
+ },
+ "hamburgo": {
+  "file": "File:Hamburg, Speicherstadt, Wasserschloss -- 2016 -- 3265-71.jpg",
+  "author": "Dietmar Rabich",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hamburg,_Speicherstadt,_Wasserschloss_--_2016_--_3265-71.jpg"
+ },
+ "mykonos": {
+  "file": "File:Sunset of Mykonos.jpg",
+  "author": "Roberto Faccenda",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunset_of_Mykonos.jpg"
+ },
+ "chipre": {
+  "file": "File:Sea caves Cape Greco 9.jpg",
+  "author": "kallerna",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sea_caves_Cape_Greco_9.jpg"
+ },
+ "belgrado": {
+  "file": "File:Church of Saint Sava (Belgrade, Serbia).jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Church_of_Saint_Sava_(Belgrade,_Serbia).jpg"
+ },
+ "viena": {
+  "file": "File:Schloss Schönbrunn Wien 2014 (Zuschnitt 1).jpg",
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0 de",
+  "page": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg"
+ },
+ "oporto": {
+  "file": "File:Rabelo boats and Ribeira seen from Cais de Gaia, 20250605 1623 9879.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rabelo_boats_and_Ribeira_seen_from_Cais_de_Gaia,_20250605_1623_9879.jpg"
+ },
+ "milan": {
+  "file": "File:Milano, Duomo, 2016-06 CN-05.jpg",
+  "author": "Steffen Schmitz",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Milano,_Duomo,_2016-06_CN-05.jpg"
+ },
+ "napoles": {
+  "file": "File:View of Naples with Vesuvio.jpg",
+  "author": "Livioandronico2013",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Naples_with_Vesuvio.jpg"
+ },
+ "edimburgo": {
+  "file": "File:Edinburgh Castle dec.23 (2).jpg",
+  "author": "Peulle",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_dec.23_(2).jpg"
+ },
+ "palermo": {
+  "file": "File:Palermo Cathedral BW 2025-04-29 11-14-42.jpg",
+  "author": "Berthold Werner",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Palermo_Cathedral_BW_2025-04-29_11-14-42.jpg"
+ },
+ "bogota": {
+  "file": "File:Capitalio National de Colombia, Bogotá.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Capitalio_National_de_Colombia,_Bogot%C3%A1.jpg"
+ },
+ "zanzibar": {
+  "file": "File:Dhow boat Zanzibar.jpg",
+  "author": "This photo was taken by Anton Zelenov.\nPlease credit this with : Photo : Anton Z",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dhow_boat_Zanzibar.jpg"
+ },
+ "cerdena": {
+  "file": "File:Sardinia Arbatax Rocce rosse-1464.jpg",
+  "author": "Isiwal",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sardinia_Arbatax_Rocce_rosse-1464.jpg"
+ },
+ "creta": {
+  "file": "File:Balos 1.jpg",
+  "author": "Olaf Tausch",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Balos_1.jpg"
  }
 }

@@ -2,7 +2,7 @@
 """Genera /chollos/ y /chollos/<slug>/ desde el agente (Supabase hlc-deals). Idempotente.
 Uso (desde la raíz de la rama pub/happylowcost.com): python3 _hlc/gen_deals.py
 """
-import os, re, json, html, unicodedata, urllib.request, io, datetime
+import os, re, json, html, unicodedata, urllib.request, urllib.parse, io, datetime
 from urllib.parse import quote
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -22,7 +22,14 @@ MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', '
 ALIAS = {'nueva-york': ['new-york', 'nueva-york', 'nyc'], 'la-habana': ['habana', 'la-habana'], 'el-cairo': ['cairo', 'el-cairo'], 'tokio': ['tokyo', 'tokio'],
          'estambul': ['istanbul', 'estambul'], 'copenhague': ['copenhagen', 'copenhague'], 'londres': ['london', 'londres'], 'paris': ['paris'], 'roma': ['rome', 'roma'],
          'maldivas': ['maldivas', 'male', 'maldives'], 'bali': ['bali', 'denpasar'], 'punta-cana': ['punta-cana'], 'amsterdam': ['amsterdam'], 'bangkok': ['bangkok'],
-         'budapest': ['budapest'], 'lisboa': ['lisboa', 'lisbon'], 'marrakech': ['marrakech', 'marrakesh'], 'tenerife': ['tenerife']}
+         'budapest': ['budapest'], 'lisboa': ['lisboa', 'lisbon'], 'marrakech': ['marrakech', 'marrakesh'], 'tenerife': ['tenerife'], 'varsovia': ['warsaw', 'warszawa'], 'praga': ['prague', 'praha'], 'viena': ['vienna', 'wien'], 'berlin': ['berlin'], 'oporto': ['porto'], 'milan': ['milano', 'milan'],
+         'venecia': ['venice', 'venezia'], 'florencia': ['florence', 'firenze'], 'napoles': ['naples', 'napoli'], 'atenas': ['athens'], 'cracovia': ['krakow', 'cracow'], 'bruselas': ['brussels', 'bruxelles'],
+         'brujas': ['bruges', 'brugge'], 'edimburgo': ['edinburgh'], 'estocolmo': ['stockholm'], 'reikiavik': ['reykjavik', 'reikiavic', 'islandia'], 'malta': ['la-valeta', 'valletta'],
+         'munich': ['munchen'], 'bucarest': ['bucharest'], 'sofia': ['sofia'], 'fez': ['fes'], 'dubai': ['dubai'], 'cancun': ['cancun'], 'ciudad-de-mexico': ['mexico-city', 'mexico-df', 'cdmx'],
+         'lima': ['lima', 'cusco', 'cuzco', 'machu-picchu'], 'buenos-aires': ['buenos-aires'], 'rio-de-janeiro': ['rio', 'rio-de-janeiro'], 'los-angeles': ['la', 'los-angeles'], 'san-francisco': ['san-francisco'],
+         'singapur': ['singapore', 'singapur'], 'hanoi': ['hanoi', 'ha-long'], 'seul': ['seoul', 'seul'], 'kioto': ['kyoto'], 'ciudad-del-cabo': ['cape-town'], 'sri-lanka': ['colombo'],
+         'tallin': ['tallinn'], 'vilna': ['vilnius'], 'zurich': ['zurich'], 'bolonia': ['bologna'], 'salzburgo': ['salzburg'], 'hamburgo': ['hamburg'], 'mykonos': ['miconos'], 'chipre': ['larnaca', 'pafos', 'paphos'],
+         'belgrado': ['belgrade'], 'cerdena': ['cagliari', 'olbia', 'alghero', 'sardinia'], 'creta': ['heraklion', 'chania', 'crete'], 'palermo': ['sicilia', 'catania'], 'bogota': ['bogota']}
 
 
 def slugify(s):
@@ -49,6 +56,31 @@ def lib_photo(dest):
             return os.path.join(LIB, slug + '.jpg'), CR.get(slug)
     p = os.path.join(LIB, k + '.jpg')
     return (p, CR.get(k)) if os.path.exists(p) else (None, None)
+
+
+def commons_photo(dest, country=''):
+    """Foto destacada o de calidad de Wikimedia Commons (horizontal, grande) para destinos fuera de la biblioteca."""
+    for q in (f'{dest} {country}'.strip(), dest):
+        for cat in ('Featured_pictures_on_Wikimedia_Commons', 'Quality_images'):
+            u = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'format': 'json', 'generator': 'search', 'gsrsearch': f'{q} incategory:{cat} filetype:bitmap', 'gsrnamespace': 6, 'gsrlimit': 15, 'prop': 'imageinfo', 'iiprop': 'url|size|extmetadata', 'iiurlwidth': 1600})
+            try:
+                j = json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40))
+            except Exception:
+                continue
+            for pg in sorted((j.get('query') or {}).get('pages', {}).values(), key=lambda p: p.get('index', 99)):
+                ii = (pg.get('imageinfo') or [{}])[0]
+                w, h = ii.get('width', 0), ii.get('height', 1)
+                if w < 1800 or not 1.3 <= w / h <= 2.6:
+                    continue
+                md = ii.get('extmetadata', {})
+                lic = re.sub('<[^>]+>', '', (md.get('LicenseShortName') or {}).get('value', ''))
+                if not re.search(r'cc|public domain|pd', lic, re.I):
+                    continue
+                im = fetch_img(ii.get('thumburl') or ii['url'])
+                if im:
+                    art = re.sub('<[^>]+>', '', (md.get('Artist') or {}).get('value', '')).strip()[:60] or 'Wikimedia Commons'
+                    return im, f'Foto: {art} · {lic} · Wikimedia Commons'
+    return None, ''
 
 
 def fetch_img(url):
@@ -130,9 +162,14 @@ def main():
         if lp:
             photo = Image.open(lp).convert('RGB')
             cred = f"Foto: {lc.get('author') or 'Wikimedia Commons'} · {lc.get('license', '')} · Wikimedia Commons" if lc else ''
-        elif x.get('image_url'):
-            photo = fetch_img(x['image_url'])
-            cred = x.get('image_credit') or ''
+        elif not os.path.exists(os.path.join(out, 'foto.jpg')):
+            photo, cred = commons_photo(f.get('destino', ''), f.get('pais', ''))
+            if not photo and x.get('image_url'):
+                photo, cred = fetch_img(x['image_url']), x.get('image_credit') or ''
+            if cred:
+                open(os.path.join(out, 'credito.txt'), 'w', encoding='utf-8').write(cred)
+        elif os.path.exists(os.path.join(out, 'credito.txt')):
+            cred = open(os.path.join(out, 'credito.txt'), encoding='utf-8').read().strip()
         if not os.path.exists(os.path.join(out, 'foto.jpg')) or not os.path.exists(os.path.join(out, 'og.jpg')):
             if photo:
                 p = photo.copy()

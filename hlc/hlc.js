@@ -103,7 +103,7 @@ document.documentElement.classList.add('hlc-js');
   function feed(){if(!feedP)feedP=fetch(API+'?action=feed').then(function(r){return r.json();}).catch(function(){return [];});return feedP;}
   function card(x){
     var f=x.facts||{};var img=x.image||('/chollos/'+x.slug+'/foto.jpg');
-    return '<a class="dc" href="/chollos/'+esc(x.slug)+'/"><div class="dc-img" style="background-image:url(\''+esc(img)+'\')"><span class="dc-ok">✓ Verificado hace '+ago(x.approved_at)+'</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
+    return '<a class="dc" href="/chollos/'+esc(x.slug)+'/"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)"><span class="dc-ok">✓ Verificado hace '+ago(x.approved_at)+'</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
       '<div class="dc-b"><div><div class="dc-r">'+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div><div class="dc-p">'+esc(x.price)+' €</div></div></a>';
   }
   function renderDeals(){
