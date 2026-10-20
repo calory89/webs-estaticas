@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /company/
+Disallow: /talent/dashboard
+Disallow: /talent/profile
+Disallow: /messages
+Disallow: /auth/callback
+Disallow: /reset-password
+
+Sitemap: https://reelrole.com/sitemap.xml
