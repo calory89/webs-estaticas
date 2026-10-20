@@ -110,7 +110,11 @@ def head(**k):
 
 
 def main():
-    deals = json.load(urllib.request.urlopen(urllib.request.Request(API, headers=UA), timeout=60))
+    raw = urllib.request.urlopen(urllib.request.Request(API, headers=UA), timeout=60).read()
+    deals = json.loads(raw)
+    os.makedirs('chollos', exist_ok=True)
+    import hashlib
+    open(os.path.join('chollos', 'feed.sha'), 'w').write(hashlib.sha256(raw).hexdigest() + '\n')
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts')]
     os.makedirs('chollos', exist_ok=True)
     cards = []
