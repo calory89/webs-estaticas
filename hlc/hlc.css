@@ -145,3 +145,7 @@ form.done>.af{display:none}
 .consent span{flex:1}
 
 .hx button.hx-burger,.hx button.hx-burger:hover,.hx button.hx-burger:focus{background:#fff!important;color:var(--tinta)!important;box-shadow:none!important;padding:0!important}
+/* «LOW COST» bajo el logo */
+.hx-logo i,.fx-logo i{display:block;font:800 12px/1 var(--fd);font-style:normal;text-transform:uppercase;letter-spacing:.34em;color:var(--coral-d,#E8431F);margin-top:3px;white-space:nowrap}
+.fx-logo i{font-size:14px;color:var(--sol);letter-spacing:.38em;margin-top:5px}
+@media (max-width:860px){.hx-logo i{font-size:10.5px;letter-spacing:.32em}}

@@ -9,6 +9,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 HERE = os.path.join(ROOT, '_hlc')
+import sys
+sys.path.insert(0, HERE)
 API = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed'
 SITE = 'https://www.happylowcost.com'
 UA = {'User-Agent': 'HappyLowCost/1.0 (carlos@equinoxinvestmentgroup.com)'}
@@ -92,9 +94,10 @@ def og_image(photo, f, out):
     d.rounded_rectangle((W - pw - 110, 44, W - 44, 44 + 128), radius=26, fill=(255, 197, 49))
     d.text((W - pw - 77, 52), price, font=pf, fill=(20, 33, 61))
     # logo
-    d.rounded_rectangle((44, 44, 44 + 250, 44 + 96), radius=22, fill=(255, 248, 238))
-    d.text((66, 46), 'happy', font=F('B800.woff', 58), fill=(20, 33, 61))
-    d.arc((72, 54, 250, 132), start=20, end=160, fill=(255, 90, 54), width=8)
+    import brand
+    lw, lh = brand.logo_size(56)
+    d.rounded_rectangle((44, 44, 44 + lw + 48, 44 + lh + 30), radius=22, fill=(255, 248, 238))
+    brand.draw_logo(d, 68, 62, 56, low=(232, 67, 31))
     base.save(out, 'JPEG', quality=86, optimize=True, progressive=True)
 
 
