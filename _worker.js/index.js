@@ -69,6 +69,7 @@ export default {
     if (host === 'top3hotels.com') return viaTop3(req, env, ctx);
     if (!SITES.has(host)) return new Response('Not found', { status: 404 });
     const pre = '/_s/' + host;
+    if (u.pathname.endsWith('/index.html')) return Response.redirect(new URL(u.pathname.slice(0, -10) + u.search, u).toString(), 301);
     if (u.pathname.startsWith('/_s/')) return new Response('Not found', { status: 404 });
     if (u.pathname === '/api/geo') { const c = req.cf || {}; return Response.json({ country: c.country || null, city: c.city || null, lat: c.latitude ? +c.latitude : null, lon: c.longitude ? +c.longitude : null }); }
     if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(null, { status: 204 });
