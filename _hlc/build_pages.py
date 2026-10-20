@@ -164,6 +164,7 @@ $('[data-v-t]').textContent=x.title||(f.origen+' → '+f.destino);$('[data-v-p]'
 ['[data-v-f]','[data-v-f2]'].forEach(function(q){$(q).href=x.cta_flight;});$('[data-v-h]').href=x.cta_hotel;$('[data-v-h]').textContent='🏨 Hoteles en '+(f.destino||'');
 var ph=window.HLC_photo(f.destino);if(ph)$('[data-v-hero]').style.backgroundImage='url('+ph.replace('-800','')+')';
 var b=String(x.body_html||'').replace(/<(?!\\/?p>)[^>]*>/g,'');$('[data-v-b]').innerHTML=b;
+fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed&full=1').then(function(r){return r.json();}).then(function(l2){var z=(l2||[]).filter(function(y){return y.slug===s;})[0];if(!z||!z.guide_html)return;var g=String(z.guide_html).replace(/<(?!\\/?(h2|h3|p|ul|li|strong)\\b)[^>]*>/gi,'');var sec=document.createElement('section');sec.className='guide';sec.innerHTML='<div class="kicker">Guía del destino</div><h2 class="guide-h">'+esc(z.seo_title||('Qué ver en '+f.destino))+'</h2>'+g;$('[data-v-b]').appendChild(sec);}).catch(function(){});
 $('[data-v-facts]').innerHTML=[['Desde',f.origen],['Destino',f.destino],['Precio',x.price+' €'],['Tipo',f.tipo],['Ida',f.ida],['Vuelta',f.vuelta||'—']].map(function(k){return '<div><small>'+k[0]+'</small><b>'+esc(k[1])+'</b></div>';}).join('');
 });}go();})();
 </script></body></html>'''

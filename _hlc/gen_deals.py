@@ -41,6 +41,16 @@ def e(s):
     return html.escape(str(s if s is not None else ''), quote=True)
 
 
+def guide_block(x):
+    g = x.get('guide_html') or ''
+    if not g:
+        return ''
+    g = re.sub(r'<(?!/?(h2|h3|p|ul|li|strong)\b)[^>]*>', '', g)
+    g = re.sub(r'<(h2|h3|p|ul|li|strong)\b[^>]*>', r'<\1>', g)
+    h = e(x.get('seo_title') or f"Qué ver en {x.get('facts', {}).get('destino', '')}")
+    return f'<section class="guide"><div class="kicker">Guía del destino</div><h2 class="guide-h">{h}</h2>{g}</section>'
+
+
 def fecha(iso):
     try:
         d = datetime.date.fromisoformat(iso[:10])
@@ -146,7 +156,7 @@ def head(**k):
 
 def main():
     raw = urllib.request.urlopen(urllib.request.Request(API, headers=UA), timeout=60).read()
-    deals = json.loads(raw)
+    deals = json.loads(urllib.request.urlopen(urllib.request.Request(API + '&full=1', headers=UA), timeout=90).read())
     os.makedirs('chollos', exist_ok=True)
     import hashlib
     open(os.path.join('chollos', 'feed.sha'), 'w').write(hashlib.sha256(raw).hexdigest() + '\n')
@@ -196,6 +206,7 @@ def main():
 </div></section>
 <div class="wrap"><div class="deal-body">
 <article class="txt">{x.get('body_html') or ''}
+{guide_block(x)}
 <p class="credit">{e(cred)}</p></article>
 <aside class="deal-card">
 <div class="facts">
