@@ -1,0 +1,60 @@
+/* Happy Low Cost — mejoras globales (oct-2026) */
+:root{--hlc-red:#e8423f;--hlc-red-d:#c9302d;--hlc-ink:#1d2433;--hlc-mut:#5b6475;--hlc-bg:#fff8ec;--hlc-line:#f1e2c3;--hlc-blue:#0770e3;--hlc-green:#0a8f5c}
+.hlc-btn{display:inline-flex;align-items:center;gap:.45em;padding:.75em 1.1em;border-radius:12px;font-weight:700;font-size:15px;line-height:1.2;text-decoration:none!important;color:#fff!important;background:var(--hlc-red);border:0;cursor:pointer;transition:transform .12s ease,background .12s ease;box-shadow:0 2px 0 rgba(0,0,0,.08)}
+.hlc-btn:hover{background:var(--hlc-red-d);transform:translateY(-1px)}
+.hlc-btn.b{background:var(--hlc-blue)}.hlc-btn.b:hover{background:#0559b5}
+.hlc-btn.g{background:var(--hlc-green)}.hlc-btn.g:hover{background:#077449}
+.hlc-btn.o{background:#fff;color:var(--hlc-ink)!important;border:1.5px solid #d9dde5}.hlc-btn.o:hover{background:#f5f6f8}
+
+/* Aviso en chollos antiguos */
+.hlc-old{margin:0 0 22px;padding:16px 18px;border-radius:14px;background:var(--hlc-bg);border:1.5px solid var(--hlc-line);font-size:15px;color:var(--hlc-ink);line-height:1.5}
+.hlc-old strong{color:var(--hlc-red-d)}
+.hlc-old .hlc-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.hlc-old .hlc-btn{font-size:14px;padding:.65em .95em}
+
+/* Caja de herramientas al final de los artículos */
+.hlc-tools{margin:26px 0;padding:18px;border-radius:14px;border:1.5px solid #e6e9ef;background:#fafbfc}
+.hlc-tools h3{margin:0 0 12px!important;font-size:19px!important}
+.hlc-tools .hlc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.hlc-tools .hlc-btn{justify-content:center;width:100%;box-sizing:border-box}
+
+/* Portada */
+.hlc-hero{background:linear-gradient(135deg,#fff3e0 0%,#ffe5e2 100%);border-radius:18px;padding:34px 26px 26px;margin:22px 0 26px;color:var(--hlc-ink)}
+.hlc-hero h1{font-size:34px!important;line-height:1.15!important;margin:0 0 10px!important;font-weight:800!important;letter-spacing:-.5px}
+.hlc-hero p.lead{font-size:17px;color:var(--hlc-mut);margin:0 0 20px;max-width:720px}
+.hlc-hero .hlc-cta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:18px}
+.hlc-hero .hlc-cta .hlc-btn{justify-content:center;font-size:16px;padding:1em .8em}
+.hlc-fb{display:flex;flex-wrap:wrap;align-items:center;gap:12px;background:#fff;border-radius:14px;padding:14px 16px;border:1px solid #f0d9d4}
+.hlc-fb b{font-size:16px}.hlc-fb span{color:var(--hlc-mut);font-size:14px;flex:1 1 260px}
+.hlc-fb .hlc-btn{background:#1877f2}.hlc-fb .hlc-btn:hover{background:#0f63d3}
+.hlc-sec{margin:0 0 26px}
+.hlc-sec h2{font-size:22px!important;margin:0 0 12px!important}
+.hlc-chips{display:flex;flex-wrap:wrap;gap:8px}
+.hlc-chips a{display:inline-block;padding:.5em .9em;border-radius:999px;background:#f3f4f7;color:var(--hlc-ink)!important;font-size:14px;font-weight:600;text-decoration:none!important}
+.hlc-chips a:hover{background:#e7e9ee}
+.hlc-how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hlc-how div{background:#fafbfc;border:1px solid #eceef2;border-radius:14px;padding:14px;font-size:14px;color:var(--hlc-mut);line-height:1.5}
+.hlc-how b{display:block;color:var(--hlc-ink);font-size:15px;margin-bottom:4px}
+.hlc-latest{font-size:20px!important;margin:6px 0 14px!important}
+
+/* Barra fija móvil */
+.hlc-bar{position:fixed;left:0;right:0;bottom:0;z-index:9998;display:none;gap:6px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #e6e9ef;box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.hlc-bar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:7px 4px;border-radius:10px;font-size:12px;font-weight:700;color:var(--hlc-ink)!important;text-decoration:none!important;background:#f3f4f7}
+.hlc-bar a i{font-style:normal;font-size:18px;line-height:1}
+.hlc-bar a.hot{background:var(--hlc-red);color:#fff!important}
+@media (max-width:767px){.hlc-bar{display:flex}body{padding-bottom:70px}.hlc-hero{padding:24px 16px 18px;border-radius:0;margin:0 -15px 20px}.hlc-hero h1{font-size:26px!important}.hlc-hero .hlc-cta{grid-template-columns:1fr 1fr}.hlc-how{grid-template-columns:1fr}}
+
+/* Cookies */
+.hlc-ck{position:fixed;z-index:10000;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;background:#fff;color:var(--hlc-ink);border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.18);padding:16px 18px;font-size:14px;line-height:1.5}
+.hlc-ck p{margin:0 0 12px}.hlc-ck a{color:var(--hlc-blue)}
+.hlc-ck .hlc-row{display:flex;gap:8px;flex-wrap:wrap}
+.hlc-ck .hlc-btn{flex:1;justify-content:center;font-size:14px;padding:.7em 1em;text-transform:none!important;letter-spacing:0!important;border-radius:12px!important;font-family:inherit!important;height:auto!important}
+.hlc-ck button.hlc-btn{background:var(--hlc-red)!important;color:#fff!important}
+.hlc-ck button.hlc-btn.o{background:#fff!important;color:var(--hlc-ink)!important;border:1.5px solid #d9dde5!important}
+body.hlc-ck-open .hlc-bar{display:none}
+
+/* Pie */
+.hlc-foot{max-width:900px;margin:18px auto 0;padding:0 15px;font-size:13px;color:#8a92a3;line-height:1.6;text-align:center}
+.hlc-foot a{color:#8a92a3!important;text-decoration:underline}
+/* El "me gusta" dependía de WordPress */
+.penci-post-like,.post-share-plike{display:none!important}
