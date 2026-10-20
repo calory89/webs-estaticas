@@ -10925,7 +10925,7 @@ ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="
 <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>${CSS}
 ${CSS_PLUS}
-${CSS_TRUST}
+${CSS_TRUST}${CSS_ALT}
 ${CSS_MORE}
 ${CSS_SOCIAL}
 ${CSS_DP}</style><link rel="manifest" href="/manifest.webmanifest">
@@ -10950,6 +10950,31 @@ var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") =
 		"cache-control": cache
 	}
 });
+var ALT_TXT = {
+	en: "Sold out on your dates? See the best available alternatives",
+	es: "¿Sin disponibilidad en tus fechas? Ver alternativas disponibles",
+	de: "An deinen Daten ausgebucht? Beste verfügbare Alternativen ansehen",
+	fr: "Complet à vos dates ? Voir les meilleures alternatives disponibles",
+	it: "Tutto esaurito nelle tue date? Vedi le migliori alternative disponibili",
+	pt: "Esgotado nas suas datas? Ver as melhores alternativas disponíveis",
+	da: "Udsolgt på dine datoer? Se de bedste ledige alternativer"
+};
+function altSearch(k, nightly, stars, city) {
+	const u = new URL("https://www.booking.com/searchresults.html");
+	u.searchParams.set("ss", `${city.city}, ${city.country}`);
+	u.searchParams.set("group_adults", "2");
+	u.searchParams.set("no_rooms", "1");
+	u.searchParams.set("group_children", "0");
+	u.searchParams.set("order", "bayesian_review_score");
+	const n = nightly && nightly > 0 ? nightly : 0;
+	let f = "";
+	if (k === "budget") f = `review_score=80${n ? `;price=EUR-0-${Math.ceil(n * 1.3)}-1` : ""}`;
+	else if (k === "value") f = `review_score=80${n ? `;price=EUR-${Math.floor(n * .7)}-${Math.ceil(n * 1.35)}-1` : ""}`;
+	else f = `review_score=80;class=5${(stars ?? 5) < 5 ? ";class=4" : ""}`;
+	u.searchParams.set("nflt", f);
+	return CJ_BOOKING(u.toString(), "t3alt");
+}
+var CSS_ALT = `.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
 function card(h, city, i, L, sights, cityImg) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
@@ -10988,7 +11013,7 @@ ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
-${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p>` : ""}
+${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
 <div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a><a class="report" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Correction: ${h.name} (${city.city})`)}">${esc(M[L].report)}</a></div>
 ${h.evidence?.reasons?.length ? `<details><summary>${esc(t.why(label(h, L)))}</summary><ul>${h.evidence.reasons.slice(0, 4).map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>` : ""}
 </div></article>`;
@@ -12321,7 +12346,7 @@ async function handleSeo(request, env) {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-Ugx7HjIz.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-ucyGQcD-.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
@@ -12349,7 +12374,7 @@ var server_default = { async fetch(request, env, ctx) {
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-ls7J2mrY.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-BbuBgX6A.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {

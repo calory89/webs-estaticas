@@ -339,27 +339,6 @@ function getObjectFlag(obj) {
 	if (Object.isExtensible(obj)) return 0;
 	return 1;
 }
-function getTypedArrayConstructor(name) {
-	switch (name) {
-		case "Int8Array": return Int8Array;
-		case "Int16Array": return Int16Array;
-		case "Int32Array": return Int32Array;
-		case "Uint8Array": return Uint8Array;
-		case "Uint16Array": return Uint16Array;
-		case "Uint32Array": return Uint32Array;
-		case "Uint8ClampedArray": return Uint8ClampedArray;
-		case "Float32Array": return Float32Array;
-		case "Float64Array": return Float64Array;
-		case "BigInt64Array": return BigInt64Array;
-		case "BigUint64Array": return BigUint64Array;
-		default: throw new SerovalUnknownTypedArrayError(name);
-	}
-}
-var typedArrayNameGetter;
-function getTypedArrayName(value) {
-	if (!typedArrayNameGetter) typedArrayNameGetter = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(Int8Array.prototype), Symbol.toStringTag).get;
-	return typedArrayNameGetter.call(value);
-}
 function createNumberNode(value) {
 	switch (value) {
 		case Number.POSITIVE_INFINITY: return INFINITY_NODE;
@@ -406,11 +385,11 @@ function createBoxedNode(id, boxed) {
 var MAX_TYPED_ARRAY_LENGTH = 1e6;
 function createTypedArrayNode(id, current, buffer) {
 	if (current.length > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
-	return createSerovalNode(15, id, void 0, getTypedArrayName(current), void 0, void 0, void 0, void 0, buffer, current.byteOffset, void 0, current.length);
+	return createSerovalNode(15, id, void 0, current.constructor.name, void 0, void 0, void 0, void 0, buffer, current.byteOffset, void 0, current.length);
 }
 function createBigIntTypedArrayNode(id, current, buffer) {
 	if (current.length > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
-	return createSerovalNode(16, id, void 0, getTypedArrayName(current), void 0, void 0, void 0, void 0, buffer, current.byteOffset, void 0, current.length);
+	return createSerovalNode(16, id, void 0, current.constructor.name, void 0, void 0, void 0, void 0, buffer, current.byteOffset, void 0, current.length);
 }
 function createDataViewNode(id, current, buffer) {
 	if (current.byteLength > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
@@ -658,26 +637,16 @@ var ARRAY_BUFFER_CONSTRUCTOR = (b64) => {
 	return arr.buffer;
 };
 var SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR = /* @__PURE__ */ ARRAY_BUFFER_CONSTRUCTOR.toString();
-/**
-* An internal class rather than a tagged POJO: identity is checked with
-* `instanceof`, which untrusted input cannot forge (the class is not exported).
-* The eval-based `deserialize` path still rebuilds a `{__SEROVAL_SEQUENCE__…}`
-* POJO from embedded source - it has no access to this class - so a value read
-* back through `deserialize` is not an instance and, by design, is not treated
-* as a genuine Sequence on re-serialization.
-*/
-var Sequence = class {
-	constructor(values, throwAt, doneAt) {
-		this.v = values;
-		this.t = throwAt;
-		this.d = doneAt;
-	}
-};
 function isSequence(value) {
-	return value instanceof Sequence;
+	return "__SEROVAL_SEQUENCE__" in value;
 }
 function createSequence(values, throwAt, doneAt) {
-	return new Sequence(values, throwAt, doneAt);
+	return {
+		__SEROVAL_SEQUENCE__: true,
+		v: values,
+		t: throwAt,
+		d: doneAt
+	};
 }
 function createSequenceFromIterable(source) {
 	const values = [];
@@ -693,9 +662,7 @@ function createSequenceFromIterable(source) {
 		}
 	} catch (error) {
 		throwsAt = values.length;
-		doneAt = throwsAt;
 		values.push(error);
-		break;
 	}
 	return createSequence(values, throwsAt, doneAt);
 }
@@ -724,86 +691,11 @@ var SPECIAL_REF_STRING = {
 	[4]: SERIALIZED_STREAM_CONSTRUCTOR,
 	[5]: SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR
 };
-/**
-* An internal class rather than a tagged POJO: identity is checked with
-* `instanceof`, which untrusted input cannot forge (the class is not exported).
-*
-* The behavior is intentionally duplicated from `STREAM_CONSTRUCTOR`. That
-* constructor's source is embedded verbatim into the eval-based `deserialize`
-* output, which has no access to this class, so the two cannot be shared. A
-* stream read back through `deserialize` is therefore a plain POJO and, by
-* design, is not treated as a genuine Stream on re-serialization. Keep the two
-* implementations in sync.
-*/
-var Stream = class {
-	constructor() {
-		this.buffer = [];
-		this.listeners = [];
-		this.alive = true;
-		this.success = false;
-		this.count = 0;
-	}
-	flush(value, mode) {
-		for (let x = 0; x < this.count; x++) {
-			var _this$listeners$x;
-			(_this$listeners$x = this.listeners[x]) === null || _this$listeners$x === void 0 || _this$listeners$x[mode](value);
-		}
-	}
-	replay(listener) {
-		for (let x = 0, z = this.buffer.length; x < z; x++) {
-			const current = this.buffer[x];
-			if (!this.alive && x === z - 1) listener[this.success ? "return" : "throw"](current);
-			else listener.next(current);
-		}
-	}
-	on(listener) {
-		let subscribed = this.alive;
-		let temp = 0;
-		if (subscribed) {
-			for (; temp < this.count; temp++) if (!this.listeners[temp]) break;
-			if (temp === this.count) this.count++;
-			this.listeners[temp] = listener;
-		}
-		this.replay(listener);
-		return () => {
-			if (this.alive && subscribed) {
-				subscribed = false;
-				this.listeners[temp] = void 0;
-				while (this.count > 0 && !this.listeners[this.count - 1]) this.count--;
-				this.listeners.length = this.count;
-			}
-		};
-	}
-	next(value) {
-		if (this.alive) {
-			this.buffer.push(value);
-			this.flush(value, "next");
-		}
-	}
-	throw(value) {
-		if (this.alive) {
-			this.buffer.push(value);
-			this.flush(value, "throw");
-			this.alive = false;
-			this.success = false;
-			this.listeners.length = 0;
-		}
-	}
-	return(value) {
-		if (this.alive) {
-			this.buffer.push(value);
-			this.flush(value, "return");
-			this.alive = false;
-			this.success = true;
-			this.listeners.length = 0;
-		}
-	}
-};
 function isStream(value) {
-	return value instanceof Stream;
+	return "__SEROVAL_STREAM__" in value;
 }
 function createStream() {
-	return new Stream();
+	return STREAM_CONSTRUCTOR();
 }
 function createStreamFromAsyncIterable(iterable, cleanups) {
 	const stream = createStream();
@@ -942,7 +834,8 @@ function createPromiseConstructorNode(ctx, id, resolver) {
 function getArrayBufferView(ctx, current) {
 	if (!ctx.compactArrayBufferViews) return current;
 	const buffer = new Uint8Array(current.buffer, current.byteOffset, current.byteLength).slice().buffer;
-	return new (current instanceof DataView ? DataView : getTypedArrayConstructor(getTypedArrayName(current)))(buffer);
+	const Constructor = current.constructor;
+	return new Constructor(buffer);
 }
 function encodeArrayBuffer(current) {
 	if (typeof Buffer !== "undefined") return Buffer.from(current).toString("base64");
@@ -1218,6 +1111,22 @@ function resolvePlugins(plugins) {
 		return [...deduped];
 	}
 }
+function getTypedArrayConstructor(name) {
+	switch (name) {
+		case "Int8Array": return Int8Array;
+		case "Int16Array": return Int16Array;
+		case "Int32Array": return Int32Array;
+		case "Uint8Array": return Uint8Array;
+		case "Uint16Array": return Uint16Array;
+		case "Uint32Array": return Uint32Array;
+		case "Uint8ClampedArray": return Uint8ClampedArray;
+		case "Float32Array": return Float32Array;
+		case "Float64Array": return Float64Array;
+		case "BigInt64Array": return BigInt64Array;
+		case "BigUint64Array": return BigUint64Array;
+		default: throw new SerovalUnknownTypedArrayError(name);
+	}
+}
 function isValidKey(key) {
 	switch (key) {
 		case "constructor":
@@ -1292,7 +1201,7 @@ function guardIndexedValue(ctx, id) {
 	if (ctx.refs.has(id)) throw new Error("Conflicted ref id: " + id);
 }
 function isThennable(value) {
-	return !!value && (typeof value === "object" || typeof value === "function") && "then" in value && typeof value.then === "function";
+	return !!value && typeof value === "object" && "then" in value && typeof value.then === "function";
 }
 function assignIndexedValueVanilla(ctx, id, value) {
 	guardIndexedValue(ctx.base, id);
@@ -1314,12 +1223,8 @@ function deserializeKnownValue(node, record, key) {
 function deserializeReference(ctx, node) {
 	return assignIndexedValue$1(ctx, node.i, getReference(deserializeString(node.s)));
 }
-function validateNodeList(node, list) {
-	if (!Array.isArray(list)) throw new SerovalMalformedNodeError(node);
-}
 function deserializeArray(ctx, depth, node) {
 	const items = node.a;
-	validateNodeList(node, items);
 	const len = items.length;
 	const result = assignIndexedValue$1(ctx, node.i, new Array(len));
 	for (let i = 0, item; i < len; i++) {
@@ -1361,8 +1266,6 @@ function validateNodeType(ctx, node, id, type) {
 }
 function deserializeProperties(ctx, depth, node, result) {
 	const keys = node.k;
-	validateNodeList(node, keys);
-	validateNodeList(node, node.v);
 	if (keys.length > 0) for (let i = 0, vals = node.v, len = keys.length; i < len; i++) assignProperty(ctx, depth, result, keys[i], vals[i]);
 	return result;
 }
@@ -1417,14 +1320,11 @@ function deserializeRegExp(ctx, node) {
 }
 function deserializeSet(ctx, depth, node) {
 	const result = assignIndexedValue$1(ctx, node.i, /* @__PURE__ */ new Set());
-	validateNodeList(node, node.a);
 	for (let i = 0, items = node.a, len = items.length; i < len; i++) result.add(deserialize$1(ctx, depth, items[i]));
 	return result;
 }
 function deserializeMap(ctx, depth, node) {
 	const result = assignIndexedValue$1(ctx, node.i, /* @__PURE__ */ new Map());
-	validateNodeList(node, node.e.k);
-	validateNodeList(node, node.e.v);
 	for (let i = 0, keys = node.e.k, vals = node.e.v, len = keys.length; i < len; i++) result.set(deserialize$1(ctx, depth, keys[i]), deserialize$1(ctx, depth, vals[i]));
 	return result;
 }
@@ -1515,20 +1415,21 @@ function deserializePromiseFulfill(ctx, depth, node) {
 function deserializeIteratorFactoryInstance(ctx, depth, node) {
 	deserialize$1(ctx, depth, node.a[0]);
 	const source = deserialize$1(ctx, depth, node.a[1]);
-	if (!isSequence(source)) throw new SerovalMalformedNodeError(node.a[1]);
+	validateNodeType(ctx, node, node.a[1].i, 35);
+	if (!source) throw new SerovalMalformedNodeError(node.a[1]);
 	return sequenceToIterator(source);
 }
 function deserializeAsyncIteratorFactoryInstance(ctx, depth, node) {
 	deserialize$1(ctx, depth, node.a[0]);
 	const source = deserialize$1(ctx, depth, node.a[1]);
-	if (!isStream(source)) throw new SerovalMalformedNodeError(node.a[1]);
+	validateNodeType(ctx, node, node.a[1].i, 31);
+	if (!source) throw new SerovalMalformedNodeError(node.a[1]);
 	return streamToAsyncIterable(source);
 }
 function deserializeStreamConstructor(ctx, depth, node) {
 	const result = assignIndexedValue$1(ctx, node.i, createStream());
 	assignNodeType(ctx, node.i, 31);
 	const items = node.a;
-	validateNodeList(node, items);
 	const len = items.length;
 	if (len) for (let i = 0; i < len; i++) deserialize$1(ctx, depth, items[i]);
 	return result;
@@ -1566,15 +1467,10 @@ function deserializeIteratorFactory(ctx, depth, node) {
 function deserializeAsyncIteratorFactory(ctx, depth, node) {
 	deserialize$1(ctx, depth, node.a[1]);
 }
-function isSequenceIndex(value, size) {
-	return Number.isInteger(value) && value >= -1 && value < size;
-}
 function deserializeSequence(ctx, depth, node) {
-	validateNodeList(node, node.a);
-	const size = node.a.length;
-	if (!(isSequenceIndex(node.s, size) && isSequenceIndex(node.l, size))) throw new SerovalMalformedNodeError(node);
 	const result = assignIndexedValue$1(ctx, node.i, createSequence([], node.s, node.l));
-	for (let i = 0; i < size; i++) result.v[i] = deserialize$1(ctx, depth, node.a[i]);
+	assignNodeType(ctx, node.i, 35);
+	for (let i = 0, len = node.a.length; i < len; i++) result.v[i] = deserialize$1(ctx, depth, node.a[i]);
 	return result;
 }
 function deserialize$1(ctx, depth, node) {
@@ -2049,10 +1945,7 @@ function serializeTemporal(ctx, node) {
 	throw new SerovalUnsupportedNodeError(node);
 }
 function serializeRegExp(ctx, node) {
-	if (ctx.base.features & 32) {
-		if (node.c.includes("\\x3C")) return "new RegExp(\"" + node.c + "\",\"" + node.m + "\")";
-		return "/" + deserializeString(node.c) + "/" + node.m;
-	}
+	if (ctx.base.features & 32) return "/" + deserializeString(node.c) + "/" + node.m;
 	throw new SerovalUnsupportedNodeError(node);
 }
 function serializeSetItem(ctx, id, item) {
@@ -3115,7 +3008,7 @@ var ShallowErrorPlugin = /* @__PURE__ */ createPlugin({
 	}
 });
 //#endregion
-//#region node_modules/seroval-plugins/dist/web-CDQeyEaf.js
+//#region node_modules/seroval-plugins/dist/web-CWqRG00W.js
 var READABLE_STREAM_FACTORY = {};
 var READABLE_STREAM_FACTORY_CONSTRUCTOR = (stream) => new ReadableStream({ start(controller) {
 	stream.on({
