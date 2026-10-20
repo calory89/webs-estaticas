@@ -1,5 +1,5 @@
 
-const SITES = new Set(["nomagua.com", "sumbasecrets.com", "supportnear.com", "tulumecocity.com", "venturebuilderschool.com", "levelshotels.com"]);
+const SITES = new Set(["nomagua.com", "sumbasecrets.com", "supportnear.com", "tulumecocity.com", "venturebuilderschool.com", "levelshotels.com", "persohna.com", "libro.carlosdeory.com"]);
 
 const SB = 'https://oykcsmextclpdnugixqz.supabase.co';
 const SB_HOST = 'oykcsmextclpdnugixqz.supabase.co';
