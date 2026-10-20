@@ -39,7 +39,7 @@
     var deals = {};
     feed.forEach(function (x) {
       var f = x.facts || {}; var k = slug(f.destino);
-      DEST.forEach(function (p) { if (p.s === k || slug(p.n) === k) { if (!deals[p.s] || x.price < deals[p.s].price) deals[p.s] = { price: x.price, slug: x.slug, o: f.origen }; } });
+      DEST.forEach(function (p) { if (p.s === k || slug(p.n) === k || (p.a || []).indexOf(k) >= 0) { if (!deals[p.s] || x.price < deals[p.s].price) deals[p.s] = { price: x.price, slug: x.slug, o: f.origen }; } });
     });
     var W = Math.max(320, BOX.clientWidth), H = Math.max(400, BOX.clientHeight);
     var svg = d3.select(svgEl).attr('viewBox', '0 0 ' + W + ' ' + H).attr('preserveAspectRatio', 'xMidYMid slice');

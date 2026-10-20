@@ -100,10 +100,14 @@ document.documentElement.classList.add('hlc-js');
 
   /* ---------- Chollos en vivo ---------- */
   var feedP=null;
-  function feed(){if(!feedP)feedP=fetch(API+'?action=feed').then(function(r){return r.json();}).catch(function(){return [];});return feedP;}
+  function feed(){if(!feedP)feedP=Promise.all([fetch(API+'?action=feed').then(function(r){return r.json();}).catch(function(){return [];}),fetch('/hlc/destinos.json').then(function(r){return r.json();}).catch(function(){return [];}),fetch('/chollos/hechos.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return [];})]).then(function(a){DESTS=a[1];HECHOS=a[2];return a[0];});return feedP;}
+  var DESTS=[],HECHOS=[];w.HLC_feed=function(){return feed();};
+  function sl(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
+  w.HLC_photo=function(dest){var k=sl(dest);for(var i=0;i<DESTS.length;i++){var p=DESTS[i];if(p.s===k||sl(p.n)===k||(p.a||[]).indexOf(k)>=0)return '/hlc/img/cities/'+p.s+'-800.jpg';}return null;};
+  function dealUrl(x){return HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/':'/chollos/ver/?s='+encodeURIComponent(x.slug);}
   function card(x){
-    var f=x.facts||{};var img=x.image||('/chollos/'+x.slug+'/foto.jpg');
-    return '<a class="dc" href="/chollos/'+esc(x.slug)+'/"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)"><span class="dc-ok">✓ Verificado hace '+ago(x.approved_at)+'</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
+    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/foto.jpg':(x.image_url||''));
+    return '<a class="dc" href="'+esc(dealUrl(x))+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)"><span class="dc-ok">✓ Verificado hace '+ago(x.approved_at)+'</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
       '<div class="dc-b"><div><div class="dc-r">'+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div><div class="dc-p">'+esc(x.price)+' €</div></div></a>';
   }
   function renderDeals(){

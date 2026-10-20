@@ -148,6 +148,27 @@ dp += f'''<main class="sec" style="padding-top:28px"><div class="wrap">
 </div></main></body></html>'''
 open('destinos/index.html', 'w', encoding='utf-8').write(dp)
 
+# ---------- /chollos/ver/ (chollo recién cazado, antes de tener página propia) ----------
+os.makedirs('chollos/ver', exist_ok=True)
+vp = head(title='Chollo de vuelo verificado · Happy Low Cost', desc='Chollo de vuelo desde España comprobado hoy por Happy Low Cost.', robots='noindex, follow',
+          canonical='https://www.happylowcost.com/chollos/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=6">', body_class='deal')
+vp += '''<main data-ver><section class="deal-hero" data-v-hero><div class="wrap"><div class="kicker" style="color:#FFC531">✓ Chollo verificado</div><h1 data-v-t>Cargando el chollo…</h1>
+<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px"><span class="price-tag" data-v-p></span><a class="hlc-btn" data-v-f rel="sponsored nofollow noopener" target="_blank" href="/chollos/">Ver vuelo y fechas ✈️</a></div></div></section>
+<div class="wrap deal-body"><div class="txt" data-v-b></div><aside class="deal-card"><div class="facts" data-v-facts></div><a class="hlc-btn" data-v-f2 rel="sponsored nofollow noopener" target="_blank" href="/chollos/">✈️ Ver vuelo</a><a class="hlc-btn t" data-v-h rel="sponsored nofollow noopener" target="_blank" href="/chollos/">🏨 Hoteles</a><a class="hlc-btn o" href="/alertas/">🔔 Crear alerta</a></aside></div></main>
+<script>
+(function(){var s=new URLSearchParams(location.search).get('s');var $=function(q){return document.querySelector(q);};
+function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function go(){if(!window.HLC_feed){return setTimeout(go,80);}window.HLC_feed().then(function(l){var x=(l||[]).filter(function(y){return y.slug===s;})[0];
+if(!x){location.replace('/chollos/');return;}var f=x.facts||{};document.title=(x.title||'Chollo')+' · Happy Low Cost';
+$('[data-v-t]').textContent=x.title||(f.origen+' → '+f.destino);$('[data-v-p]').innerHTML=esc(x.price)+' € <small>'+esc(f.tipo||'')+'</small>';
+['[data-v-f]','[data-v-f2]'].forEach(function(q){$(q).href=x.cta_flight;});$('[data-v-h]').href=x.cta_hotel;$('[data-v-h]').textContent='🏨 Hoteles en '+(f.destino||'');
+var ph=window.HLC_photo(f.destino);if(ph)$('[data-v-hero]').style.backgroundImage='url('+ph.replace('-800','')+')';
+var b=String(x.body_html||'').replace(/<(?!\\/?p>)[^>]*>/g,'');$('[data-v-b]').innerHTML=b;
+$('[data-v-facts]').innerHTML=[['Desde',f.origen],['Destino',f.destino],['Precio',x.price+' €'],['Tipo',f.tipo],['Ida',f.ida],['Vuelta',f.vuelta||'—']].map(function(k){return '<div><small>'+k[0]+'</small><b>'+esc(k[1])+'</b></div>';}).join('');
+});}go();})();
+</script></body></html>'''
+open('chollos/ver/index.html', 'w', encoding='utf-8').write(vp)
+
 # ---------- /alertas/ ----------
 os.makedirs('alertas', exist_ok=True)
 al = head(title='Crea tu alerta de chollos de vuelos · Happy Low Cost', desc='Te avisamos gratis por email o WhatsApp cuando encontremos un vuelo barato desde tu aeropuerto. Máximo un aviso al día.',

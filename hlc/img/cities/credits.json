@@ -54,10 +54,10 @@
   "page": "https://commons.wikimedia.org/wiki/File:Minato_City,_Tokyo,_Japan.jpg"
  },
  "copenhague": {
-  "file": "File:Kopenhagen (DK), Nyhavn -- 2017 -- 1711.jpg",
-  "author": "Dietmar Rabich",
+  "file": "File:2018 - Nyhavn on sunset.jpg",
+  "author": "Moahim",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kopenhagen_(DK),_Nyhavn_--_2017_--_1711.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:2018_-_Nyhavn_on_sunset.jpg"
  },
  "tenerife": {
   "file": "File:Coast at Chinamada - Tenerife 04.jpg",
@@ -454,5 +454,23 @@
   "author": "Olaf Tausch",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Balos_1.jpg"
+ },
+ "madeira": {
+  "file": "File:Ponta de São Lourenço, Madeira, Portugal, 2019-05-28, DD 31.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ponta_de_S%C3%A3o_Louren%C3%A7o,_Madeira,_Portugal,_2019-05-28,_DD_31.jpg"
+ },
+ "azores": {
+  "file": "File:Caldeira, isla de Fayal, Azores, Portugal, 2020-07-28, DD 25-30 PAN.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Caldeira,_isla_de_Fayal,_Azores,_Portugal,_2020-07-28,_DD_25-30_PAN.jpg"
+ },
+ "mauricio": {
+  "file": "File:Sunbathing at Le Morne Beach in Mauritius (53697787846).jpg",
+  "author": "\"dronepicr\"",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunbathing_at_Le_Morne_Beach_in_Mauritius_(53697787846).jpg"
  }
 }

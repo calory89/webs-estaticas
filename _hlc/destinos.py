@@ -51,11 +51,14 @@ D = {
  'riga': ('Riga', 'Letonia', 'RIX', 56.95, 24.11, 'europa', 'ciudad'),
  'vilna': ('Vilna', 'Lituania', 'VNO', 54.69, 25.28, 'europa', 'ciudad'),
  'reikiavik': ('Islandia', 'Islandia', 'KEF', 64.15, -21.94, 'europa', 'naturaleza'),
+ 'madeira': ('Madeira', 'Portugal', 'FNC', 32.65, -16.91, 'europa', 'naturaleza'),
+ 'azores': ('Azores', 'Portugal', 'PDL', 37.74, -25.67, 'europa', 'naturaleza'),
  'tenerife': ('Tenerife', 'España', 'TCI', 28.29, -16.63, 'europa', 'playa'),
  'marrakech': ('Marrakech', 'Marruecos', 'RAK', 31.63, -7.99, 'africa', 'ciudad'),
  'fez': ('Fez', 'Marruecos', 'FEZ', 34.03, -5.00, 'africa', 'ciudad'),
  'el-cairo': ('El Cairo', 'Egipto', 'CAI', 30.04, 31.24, 'africa', 'ciudad'),
  'zanzibar': ('Zanzíbar', 'Tanzania', 'ZNZ', -6.17, 39.20, 'africa', 'playa'),
+ 'mauricio': ('Isla Mauricio', 'Mauricio', 'MRU', -20.35, 57.55, 'africa', 'playa'),
  'ciudad-del-cabo': ('Ciudad del Cabo', 'Sudáfrica', 'CPT', -33.92, 18.42, 'africa', 'ciudad'),
  'dubai': ('Dubái', 'Emiratos', 'DXB', 25.20, 55.27, 'asia', 'ciudad'),
  'maldivas': ('Maldivas', 'Maldivas', 'MLE', 4.18, 73.51, 'asia', 'playa'),
@@ -82,12 +85,16 @@ D = {
  'rio-de-janeiro': ('Río de Janeiro', 'Brasil', 'RIO', -22.91, -43.17, 'america', 'playa'),
  'buenos-aires': ('Buenos Aires', 'Argentina', 'BUE', -34.60, -58.38, 'america', 'ciudad'),
 }
+import ast, re as _re
+_src = open(os.path.join(ROOT, '_hlc', 'gen_deals.py'), encoding='utf-8').read()
+_m = _re.search(r'ALIAS = (\{.*?\})\n\n', _src, _re.S)
+ALIAS = ast.literal_eval(_m.group(1)) if _m else {}
 lib = os.path.join(ROOT, 'hlc', 'img', 'cities')
 out = []
 for s, (n, c, i, la, lo, r, t) in D.items():
     if not os.path.exists(os.path.join(lib, s + '-800.jpg')):
         continue
-    out.append({'s': s, 'n': n, 'c': c, 'i': i, 'y': la, 'x': lo, 'r': r, 't': t})
+    out.append({'s': s, 'n': n, 'c': c, 'i': i, 'y': la, 'x': lo, 'r': r, 't': t, 'a': ALIAS.get(s, [])})
 missing = [f[:-8] for f in os.listdir(lib) if f.endswith('-800.jpg') and f[:-8] not in D]
 json.dump(out, open(os.path.join(ROOT, 'hlc', 'destinos.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 print(len(out), 'destinos; sin coordenadas:', missing)

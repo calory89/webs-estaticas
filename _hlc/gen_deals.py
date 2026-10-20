@@ -29,7 +29,7 @@ ALIAS = {'nueva-york': ['new-york', 'nueva-york', 'nyc'], 'la-habana': ['habana'
          'lima': ['lima', 'cusco', 'cuzco', 'machu-picchu'], 'buenos-aires': ['buenos-aires'], 'rio-de-janeiro': ['rio', 'rio-de-janeiro'], 'los-angeles': ['la', 'los-angeles'], 'san-francisco': ['san-francisco'],
          'singapur': ['singapore', 'singapur'], 'hanoi': ['hanoi', 'ha-long'], 'seul': ['seoul', 'seul'], 'kioto': ['kyoto'], 'ciudad-del-cabo': ['cape-town'], 'sri-lanka': ['colombo'],
          'tallin': ['tallinn'], 'vilna': ['vilnius'], 'zurich': ['zurich'], 'bolonia': ['bologna'], 'salzburgo': ['salzburg'], 'hamburgo': ['hamburg'], 'mykonos': ['miconos'], 'chipre': ['larnaca', 'pafos', 'paphos'],
-         'belgrado': ['belgrade'], 'cerdena': ['cagliari', 'olbia', 'alghero', 'sardinia'], 'creta': ['heraklion', 'chania', 'crete'], 'palermo': ['sicilia', 'catania'], 'bogota': ['bogota']}
+         'belgrado': ['belgrade'], 'cerdena': ['cagliari', 'olbia', 'alghero', 'sardinia'], 'creta': ['heraklion', 'chania', 'crete'], 'palermo': ['sicilia', 'catania'], 'bogota': ['bogota'], 'madeira': ['funchal', 'madeira'], 'azores': ['ponta-delgada', 'islas-azores', 'azores'], 'mauricio': ['isla-mauricio', 'mauritius', 'mauricio']}
 
 
 def slugify(s):
@@ -231,6 +231,7 @@ def main():
     if 'chollos-sitemap.xml' not in si:
         si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/chollos-sitemap.xml</loc>\n\t</sitemap>\n</sitemapindex>')
         open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
+    json.dump(sorted(d for d in os.listdir('chollos') if os.path.isfile(os.path.join('chollos', d, 'index.html')) and d != 'ver'), open(os.path.join('chollos', 'hechos.json'), 'w'))
     print('deals', len(deals))
 
 
