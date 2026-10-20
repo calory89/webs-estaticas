@@ -1,0 +1,35 @@
+name: top3-deploy-v18
+on:
+  push:
+    paths: ['.github/workflows/top3-deploy-v18.yml']
+permissions:
+  contents: write
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: pub/_lovable
+          path: site
+      - run: |
+          curl -sL 'https://n.uguu.se/TEMPftMv.txt' | base64 -d > /tmp/p.zip
+          echo 'fb14b5ce18b757554e2aec5fb45f3b2b  /tmp/p.zip' | md5sum -c
+          cd site
+          rm -rf _worker.js/top3
+          unzip -o -q /tmp/p.zip
+          git config user.name 'Carlos de Ory'
+          git config user.email 'rrppspain@gmail.com'
+          git add -A
+          git commit -q -m 'top3hotels v18: Plan B alternatives link on every hotel card'
+          for i in 1 2 3; do git pull -q --rebase origin pub/_lovable && git push -q origin HEAD:pub/_lovable && break; sleep 5; done
+      - uses: actions/checkout@v4
+        with:
+          path: m
+      - run: |
+          cd m
+          git config user.name 'Carlos de Ory'
+          git config user.email 'rrppspain@gmail.com'
+          git rm -q .github/workflows/top3-deploy-v18.yml
+          git commit -q -m 'remove one-shot top3 deploy workflow'
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
