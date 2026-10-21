@@ -39,7 +39,7 @@ posts = posts[:8]
 
 home_extra = '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/"><link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
  '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [
-   {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2015", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"]},
+   {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2012", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"]},
    {"@type": "WebSite", "@id": "https://www.happylowcost.com/#web", "url": "https://www.happylowcost.com/", "name": "Happy Low Cost", "inLanguage": "es-ES", "publisher": {"@id": "https://www.happylowcost.com/#org"}}]}, ensure_ascii=False) + '</script>'
 
 HERO_IMGS = ['lisboa', 'maldivas', 'nueva-york', 'bali', 'tokio', 'paris']
@@ -85,60 +85,79 @@ TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 
 
 blog = ''.join(f'<a class="reveal" href="{u}"><div style="background-image:url({i})"></div><span>{html.escape(t)}</span></a>' for i, u, t in posts)
 
-home = head(title='Happy Low Cost · Cazamos los vuelos más baratos del mundo',
-            desc='Chollos de vuelos baratos y errores de tarifa desde España, verificados antes de publicarlos. Más de 400.000 viajeros nos siguen. Crea tu alerta gratis.',
-            canonical='https://www.happylowcost.com/', extra_head=home_extra, body_class='home')
-home += f'''
-<main>
-<section class="hero" aria-labelledby="h1">{hero_imgs}
-<div class="hero-in">
-<div class="kicker" style="color:#FFC531">Chollos de vuelos desde España · verificados</div>
-<h1 id="h1">Cazamos los vuelos <em>más baratos</em> del mundo.</h1>
-<svg class="smile" viewBox="0 0 250 46" aria-hidden="true"><path class="s" d="M8 8 Q120 58 214 14" fill="none" stroke="#FF5A36" stroke-width="7" stroke-linecap="round"/><g transform="translate(214 12) rotate(-24)"><path d="M-2 0 L22 -1 L26 0 L22 1 Z M8 -1 L2 -11 L6 -11 L15 -1 Z M8 1 L2 11 L6 11 L15 1 Z" fill="#FF5A36"/></g></svg>
-<div class="hero-tk" data-hlc-ticker hidden></div>
-<p class="lead">Errores de tarifa y vuelos low cost en Europa, Asia, América, África y Oceanía. Los comprobamos antes de publicarlos; si mañana ya no están, los quitamos.</p>
-<div><div style="font:600 14px Inter,sans-serif;color:#D6DCEA;margin-bottom:8px">¿Desde dónde vuelas?</div><div class="chips">{chips}</div></div>
-<div class="hero-cta"><a class="hlc-btn" href="#hoy">Ver los chollos de hoy</a><a class="hlc-btn o" href="/alertas/">🔔 Crear alerta gratis</a></div>
-<div class="hero-proof"><span><b>400.000+</b> viajeros en Facebook</span><span><b>Desde 2015</b> cazando chollos</span><span><b>100%</b> precios comprobados</span></div>
-</div>
-<div class="hero-credit">Fotos: Wikimedia Commons</div>
-</section>
+PAST = [  # chollos reales que ya publicamos (enlazan al post original)
+ ('nueva-york', 'Madrid → Nueva York', '97 €', 'ida y vuelta · publicado en 2020', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
+ ('maldivas', 'España → Maldivas', '307 €', 'ida y vuelta · 2022', '/‼mas-barato-que-nunca‼-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
+ ('reikiavik', 'España → Islandia', '136 €', 'ida y vuelta · directo · 2022', '/vuelos-directos-a-islandia-desde-solo-136e-i-v/'),
+ ('tokio', 'España → Tokio', '387 €', 'ida y vuelta · 2020', '/ganga-vuelos-a-tokio-desde-solo-387e-i-v-en-septiembre/'),
+ ('miami', 'España → Miami', '167 €', 'ida y vuelta · 2020', '/vuelos-a-miami-por-solo-167e-ida-y-vuelta/'),
+ ('santorini', 'España → Santorini', '97 €', 'ida y vuelta · directo · 2023', '/vuelos-directos-a-santorini-en-julio-por-solo-97e-i-v/'),
+ ('bali', 'España → Bali', '420 €', 'ida y vuelta · 2020', '/chollo-vuelos-baratos-a-bali-desde-solo-420e-i-v/'),
+ ('san-francisco', 'España → San Francisco', '317 €', 'ida y vuelta · directo · 2021', '/chollo-vuelos-directos-a-san-francisco-por-317e-i-v/'),
+ ('ciudad-del-cabo', 'España → Sudáfrica', '311 €', 'ida y vuelta · 2022', '/‼chollo‼-vuelos-a-sudafrica-por-solo-311e-i-v/'),
+ ('punta-cana', 'España → Punta Cana', '351 €', 'ida y vuelta · 2021', '/wow-viajamos-a-punta-cana-vuelos-por-350e-i-v/'),
+ ('bangkok', 'España → Tailandia', '350 €', 'ida y vuelta · 2021', '/vuelos-a-tailandia-por-solo-350e-i-v/'),
+ ('ciudad-de-mexico', 'España → México', '370 €', 'ida y vuelta · directo · 2020', '/viva-mexico-vuelos-directos-por-solo-370e-i-v-en-octubre/'),
+]
+past_html = ''.join(f'<a class="pw" href="{u or "/chollos/"}"><span class="pw-ph" style="background-image:url(/hlc/img/cities/{sl}-800.jpg)"></span><span class="pw-b"><b>{r}</b><em>{pr}</em><small>{d}</small></span></a>' for sl, r, pr, d, u in PAST)
+AIRPORTS = '<optgroup label="España">' + ''.join(f'<option>{c}</option>' for c in ['Madrid', 'Barcelona', 'Málaga', 'Valencia', 'Sevilla', 'Bilbao', 'Alicante', 'Canarias', 'Palma', 'Santiago', 'Zaragoza', 'Ibiza']) + '</optgroup><optgroup label="Resto del mundo">' + ''.join(f'<option>{c}</option>' for c in ['Lisboa', 'Londres', 'París', 'Ámsterdam', 'Berlín', 'Roma', 'Dublín', 'Copenhague', 'Nueva York', 'Miami', 'Los Ángeles', 'Ciudad de México', 'Bogotá', 'Buenos Aires', 'Dubái', 'Singapur', 'Sídney']) + '</optgroup>'
+def quick_form(idx):
+    return f"""<form class="qf" data-hlc-quick novalidate>
+<div class="qf-row"><label class="qf-sel"><span>Vuelo desde</span><select name="origin" aria-label="Tu aeropuerto">{AIRPORTS}</select></label>
+<label class="qf-in"><span>Te aviso en</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="tu email o tu WhatsApp" aria-label="Email o WhatsApp" required></label>
+<button type="submit" class="hlc-btn qf-go">Avisarme gratis</button></div>
+<label class="qf-ok"><input type="checkbox" name="consent" required> Acepto recibir chollos de Happy Low Cost (máx. uno al día) y la <a href="/aviso-legal-datos-cookies/">privacidad</a>.</label>
+<div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>"""
 
-<section class="sec" id="hoy"><div class="wrap">
-<div class="sec-h reveal"><div><div class="kicker">Recién cazados en todo el mundo</div><h2>Los chollos de hoy</h2><p>Comprobados en el momento. Toca uno para ver las fechas y reservar.</p></div><a class="hlc-btn o" href="/chollos/">Ver todos y filtrar</a></div>
-<div class="chips tabs-c" data-hlc-tabs="#hoy-grid" role="group" aria-label="Continente">{TABS}</div>
-<div class="dc-grid" id="hoy-grid" data-hlc-deals data-filter data-max="8"><div class="dc-empty"><b>Cargando chollos…</b></div></div>
+home = head(title='Happy Low Cost · Vuelos a mitad de precio desde tu aeropuerto',
+            desc='Cazamos errores de tarifa y vuelos baratos desde tu aeropuerto y te avisamos gratis por email o WhatsApp. Más de 420.000 viajeros desde 2012.',
+            canonical='https://www.happylowcost.com/', extra_head=home_extra, body_class='home home2')
+home += f"""
+<main>
+<section class="h2-hero"><div class="wrap h2-grid">
+<div>
+<div class="h2-proof">★★★★★ <b>Más de 420.000 viajeros</b> desde 2012</div>
+<h1>Vuelos a <em>mitad de precio</em>, directos a tu móvil.</h1>
+<p class="h2-lead">Vigilamos aerolíneas de todo el mundo, comprobamos cada precio y te avisamos cuando sale un chollo desde tu aeropuerto. Gratis.</p>
+{quick_form(1)}
+</div>
+<div class="h2-phone" aria-hidden="true"><div class="h2-screen"><div class="h2-notif"><b>Happy Low Cost</b><span>ahora</span></div><div class="h2-deal" data-hlc-hero-deal><div class="h2-skel"></div></div><div class="h2-deal h2-deal2" data-hlc-hero-deal2></div></div></div>
 </div></section>
 
-<section class="journey" data-journey aria-labelledby="jh">
-<svg class="journey-path" viewBox="0 0 1000 1800" preserveAspectRatio="none" aria-hidden="true"><path data-journey-path d="M500 0 C 900 200, 100 420, 520 640 S 900 1050, 480 1260 S 100 1600, 520 1800" fill="none" stroke="rgba(255,197,49,.45)" stroke-width="3" stroke-dasharray="1 0" vector-effect="non-scaling-stroke"/><g data-journey-plane><path d="M-14 0 L14 -1 L18 0 L14 1 Z M2 -1 L-4 -12 L0 -12 L8 -1 Z M2 1 L-4 12 L0 12 L8 1 Z M-14 -1 L-18 -6 L-15 -6 L-10 -1 Z M-14 1 L-18 6 L-15 6 L-10 1 Z" fill="#FFC531"/></g></svg>
-<div class="wrap" style="position:relative">
-<div class="reveal"><div class="kicker">Así funciona</div><h2 id="jh" style="font:800 clamp(34px,5vw,60px)/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:8px 0 0;max-width:760px">Tu próximo viaje empieza aquí. Y acaba en la playa.</h2></div>
-<div class="steps">{steps}</div>
+<section class="sec h2-sec" id="hoy"><div class="wrap">
+<div class="h2-h"><h2>Así son los chollos de hoy</h2><p>Precio habitual de la ruta frente al precio que hemos cazado. Comprobado en el momento.</p></div>
+<div class="dc-grid h2-deals" id="hoy-grid" data-hlc-deals data-filter data-max="6" data-savings><div class="dc-empty"><b>Cargando chollos…</b></div></div>
+<div class="h2-more"><a class="hlc-btn o" href="/chollos/">Ver todos los chollos y filtrar</a></div>
+</div></section>
+
+<section class="sec h2-sec h2-how"><div class="wrap">
+<div class="h2-h"><h2>Cómo funciona</h2></div>
+<ol class="h2-steps">
+<li><b>1</b><h3>Dinos tu aeropuerto</h3><p>Y si prefieres email o WhatsApp.</p></li>
+<li><b>2</b><h3>Cazamos y comprobamos</h3><p>Errores de tarifa y ofertas relámpago, verificados antes de publicarlos.</p></li>
+<li><b>3</b><h3>Te avisamos y reservas</h3><p>Con las fechas exactas. Tú solo haces la maleta.</p></li>
+</ol>
+</div></section>
+
+<section class="sec h2-sec h2-wall"><div class="wrap">
+<div class="h2-big"><b>420.000+</b><span>viajeros nos siguen desde 2012</span></div>
+<div class="h2-h"><h2>Chollos que ya cazamos</h2><p>Algunos de los vuelos que publicamos estos años. Si no estabas, te los perdiste.</p></div>
+<div class="pw-grid">{past_html}</div>
+<div class="h2-cta2"><h3>Que el próximo no se te escape.</h3>{quick_form(2)}</div>
 </div></section>
 
 <section class="sec mapx-sec" id="destinos"><div class="wrap">
-<div class="sec-h reveal"><div><div class="kicker">El mapa de los chollos</div><h2>¿A dónde te escapas?</h2><p>Toca un destino y te enseñamos la ruta desde tu ciudad, los vuelos, los hoteles y si hay chollo hoy.</p></div><a class="hlc-btn o" href="/destinos/">Mapa a pantalla completa</a></div>
+<div class="h2-h"><h2>¿A dónde te escapas?</h2><p>Toca un destino: ruta desde tu ciudad, vuelos, hoteles y si hay chollo hoy.</p></div>
 {MAP}
 </div></section>
 
-<section class="sec" id="alertas" style="padding-top:20px"><div class="alert-box reveal">
-<div><div class="kicker">Alertas gratis</div><h2>Que el chollo te encuentre a ti.</h2><p>Dinos desde dónde vuelas, a dónde sueñas ir y cuánto quieres pagar. Te avisamos por email o WhatsApp en cuanto lo cacemos. Máximo un aviso al día.</p></div>
-{ALERT}
-</div></section>
-
-<section class="sec"><div class="wrap">
-<div class="sec-h reveal"><div><div class="kicker">La comunidad</div><h2>400.000 viajeros felices</h2></div><a class="hlc-btn b" href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Únete en Facebook</a></div>
-<div class="fbproof"><div class="reveal"><b>400K+</b><span>seguidores en Facebook que reciben nuestros chollos cada día.</span></div><div class="reveal"><b>2015</b><span>el año en que empezamos a cazar errores de tarifa desde España.</span></div><div class="reveal"><b>24/7</b><span>vigilando precios para que tú solo tengas que hacer la maleta.</span></div></div>
-</div></section>
-
 <section class="sec" style="padding-top:0"><div class="wrap">
-<div class="sec-h reveal"><div><div class="kicker">Del blog</div><h2>Ideas para tu próximo viaje</h2></div><a class="hlc-btn o" href="/guias-ciudades/">Todas las guías</a></div>
+<div class="h2-h"><h2>Ideas para tu próximo viaje</h2></div>
 <div class="blog">{blog}</div>
 </div></section>
 </main>
 </body>
-</html>'''
+</html>"""
 open('index.html', 'w', encoding='utf-8').write(home)
 
 # ---------- /destinos/ ----------

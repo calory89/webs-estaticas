@@ -89,7 +89,7 @@ HEADER = '''<header class="hx" id="hx"><div class="hx-in">
 </nav></div></header>'''
 FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
-<p>We hunt the cheapest flights in the world and check every price before we publish it. More than 400,000 travellers have followed us since 2015.</p></div>
+<p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
 <div><h4>Deals</h4><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/deals/?rt=1">Return flights</a></div>
 <div><h4>Explore</h4><a href="/en/destinations/">Destination guides</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="/">🇪🇸 Versión en español</a></div>
@@ -124,10 +124,10 @@ def card(x):
     q = slugify(' '.join([o, d, f.get('origen', ''), f.get('destino', ''), country(f, 'origen'), country(f, 'destino')]))
     return (f'<a class="dc" href="/en/deals/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(G.ago_iso(x.get("approved_at")))}" data-q="{e(q)}">'
-            f'<div class="dc-img" style="{bg}"><span class="dc-ok">✓ Verified</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok">✓ Verified</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(d)}</span>{f"<span class=dc-cont>{ce} {e(cn.replace("the ", "").title() if cn.startswith("the ") else cn)}</span>" if cs else ""}</div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(country(f, "origen"))}">{flag(f.get("origen_cc"))}</span> {e(o)} → {e(d)}</div>'
-            f'<div class="dc-m">{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""} · {e(date_en(f.get("ida", "")))}</div></div><div class="dc-p">€{e(x.get("price"))}</div></div></a>')
+            f'<div class="dc-m">{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""} · {e(date_en(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}</div></div></a>')
 
 
 def filters(deals):
@@ -215,7 +215,7 @@ def main():
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">✓ Deal verified on {e(date_en(verified))} at {e(verified[11:16])} (UTC)</div>
 <h1>{e(title)}</h1>
-<div class="deal-cta"><span class="price-tag">€{e(x.get('price'))} <small>{trip(f)}</small></span><a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
+<div class="deal-cta"><span class="price-tag">€{e(x.get('price'))} <small>{trip(f)}</small></span>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
@@ -259,17 +259,18 @@ def main():
 
     hero_imgs = [p for p in ('bali', 'tokio', 'nueva-york', 'santorini', 'maldivas', 'lisboa')]
     guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{s_}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
-    org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2015",
+    org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2012",
            "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/"]}
     web = {"@type": "WebSite", "url": f"{SITE}/en/", "name": "Happy Low Cost", "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"}}
     page = head('Happy Low Cost · We hunt the cheapest flights in the world', f"Verified cheap flight deals from every continent{f', from €{cheapest}' if cheapest else ''}. Error fares and flash sales, checked before we publish them.",
                 f'{SITE}/en/', f'{SITE}/', ld=[org, web, ldl[0]], body_class='home')
     page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{hero_imgs[0]}.jpg);min-height:min(78vh,680px)" data-photos="{'|'.join('/hlc/img/cities/' + s + '.jpg' for s in hero_imgs)}"><div class="wrap">
-<div class="kicker" style="color:#FFC531">✈️ Since 2015 · 420,000 travellers</div>
+<div class="kicker" style="color:#FFC531">★★★★★ 420,000+ travellers since 2012</div>
 <h1>We hunt the cheapest flights in the world</h1>
 <p style="font:500 clamp(17px,2.2vw,21px)/1.5 Inter,sans-serif;max-width:640px;margin:8px 0 18px">Error fares and flash sales from every continent. We check every price before publishing it, so you only see deals that are really there.</p>
-<div class="deal-cta"><a class="hlc-btn" href="#deals" style="min-height:56px;font-size:17px">See today's {len(deals)} deals</a><a class="hlc-btn o" href="/en/destinations/" style="background:#fff">🗺️ Destination guides</a></div>
+<form class="qf" data-hlc-quick novalidate style="color:#14213D"><div class="qf-row"><label class="qf-sel"><span>Flying from</span><select name="origin" aria-label="Your airport"><optgroup label="Europe"><option>London</option><option>Dublin</option><option>Paris</option><option>Amsterdam</option><option>Berlin</option><option>Rome</option><option>Lisbon</option><option>Copenhagen</option><option>Madrid</option><option>Barcelona</option></optgroup><optgroup label="Americas"><option>New York</option><option>Miami</option><option>Los Angeles</option><option>Toronto</option><option>Vancouver</option><option>Mexico City</option></optgroup><optgroup label="Asia & Oceania"><option>Singapore</option><option>Dubai</option><option>Hong Kong</option><option>Seoul</option><option>Tokyo</option><option>Sydney</option></optgroup></select></label><label class="qf-in"><span>Alert me at</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="your email or WhatsApp" aria-label="Email or WhatsApp" required></label><button type="submit" class="hlc-btn qf-go">Alert me free</button></div><label class="qf-ok"><input type="checkbox" name="consent" required> I agree to receive deal alerts from Happy Low Cost (max one a day) and the <a href="/aviso-legal-datos-cookies/">privacy policy</a>.</label><div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>
+<p style="margin:14px 0 0"><a href="#deals" style="color:#fff;font-weight:700;text-decoration:underline">Or see today's {len(deals)} deals ↓</a></p>
 </div></section>
 <section class="sec" id="deals"><div class="wrap">
 <div class="sec-h"><div><div class="kicker">Live now · sorted for you</div><h2>Today's flight deals</h2><p>{e(intro)}</p></div><a class="hlc-btn o" href="/en/deals/">Open the deal finder</a></div>

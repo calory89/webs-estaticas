@@ -8,7 +8,7 @@ V = '8'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
-files = [f for f in files if f]
+files = [f for f in files if f and not f.startswith('en/')]  # la versión en inglés la genera gen_en.py con su propia cabecera
 ONLY = os.environ.get('HLC_ONLY')
 if ONLY:
     files = [f for f in files if f.startswith(ONLY)]
@@ -32,7 +32,7 @@ HEADER = '<!--hlc-header-->' + open(os.path.join(PARTS, 'header.html'), encoding
 FOOTERX = '<!--hlc-footer-->' + open(os.path.join(PARTS, 'footer.html'), encoding='utf-8').read() + '<!--/hlc-footer-->'
 TAIL = f'<!--hlc-tail--><script src="/hlc/hlc.js?v={V}" defer></script><!--/hlc-tail-->'
 FOOT = (
-    '<!--hlc-foot--><div class="hlc-foot">Happy Low Cost busca chollos de vuelos, hoteles y viajes desde España desde 2015. '
+    '<!--hlc-foot--><div class="hlc-foot">Happy Low Cost busca chollos de vuelos, hoteles y viajes desde España desde 2012. '
     'Algunos enlaces son de afiliado: si reservas a través de ellos podemos recibir una pequeña comisión, sin coste extra para ti. '
     'Los precios publicados eran correctos en la fecha de cada oferta y pueden cambiar. '
     '<a href="/aviso-legal-datos-cookies/">Aviso legal, privacidad y cookies</a> · '

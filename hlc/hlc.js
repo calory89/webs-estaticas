@@ -131,10 +131,12 @@ document.documentElement.classList.add('hlc-js');
   function dealUrl(x){return HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/':'/chollos/ver/?s='+encodeURIComponent(x.slug);}
   function flag(cc){cc=(cc||'').toUpperCase();return cc.length===2?String.fromCodePoint(127462+cc.charCodeAt(0)-65,127462+cc.charCodeAt(1)-65):'✈️';}
   var CONT={'Europa':['europa','🇪🇺','Europa'],'Asia':['asia','🌏','Asia'],'Oriente Medio':['oriente-medio','🕌','Oriente Medio'],'Norteamérica':['norteamerica','🗽','Norteamérica'],'Centroamérica y Caribe':['caribe','🏝️','Caribe'],'Sudamérica':['sudamerica','🌎','Sudamérica'],'África':['africa','🌍','África'],'Oceanía':['oceania','🦘','Oceanía']};
+  function priceHtml(x){var f=x.facts||{};if(f.precio_normal&&f.precio_normal>x.price)return '<div class="dc-p"><s>'+esc(f.precio_normal)+' €</s>'+esc(x.price)+' €</div>';return '<div class="dc-p">'+esc(x.price)+' €</div>';}
   function card(x){
-    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'')||(HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/og.jpg':'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;
-    return '<a class="dc" href="'+esc(dealUrl(x))+'" data-cont="'+(c?c[0]:'')+'" data-slug="'+esc(x.slug)+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)"><span class="dc-ok">'+(fresh?'🔥 Nuevo · ':'✓ ')+'hace '+ago(x.approved_at)+'</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="'+esc(x.slug)+'">♡</span><span class="dc-city">'+esc(f.destino||'')+'</span>'+(c?'<span class="dc-cont">'+c[1]+' '+c[2]+'</span>':'')+'</div>'+
-      '<div class="dc-b"><div><div class="dc-r"><span class="dc-flag">'+flag(f.origen_cc)+'</span> '+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div><div class="dc-p">'+esc(x.price)+' €</div></div></a>';
+    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;
+    var save=f.ahorro_pct?'<span class="dc-save">−'+esc(f.ahorro_pct)+' %</span>':'';
+    return '<a class="dc" href="'+esc(dealUrl(x))+'" data-cont="'+(c?c[0]:'')+'" data-slug="'+esc(x.slug)+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)">'+save+'<span class="dc-ok">'+(fresh?'🔥 Nuevo':'✓ hace '+ago(x.approved_at))+'</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="'+esc(x.slug)+'">♡</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
+      '<div class="dc-b"><div><div class="dc-r"><span class="dc-flag">'+flag(f.origen_cc)+'</span> '+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div>'+priceHtml(x)+'</div></a>';
   }
   function renderDeals(){
     var boxes=d.querySelectorAll('[data-hlc-deals]');if(!boxes.length)return;
@@ -142,13 +144,13 @@ document.documentElement.classList.add('hlc-js');
       var td=new Date().toISOString().slice(0,10);list=(list||[]).filter(function(x){return x.slug&&x.price&&(!x.facts||!x.facts.ida||x.facts.ida>=td);});list=list.map(function(x,i){return [geoRank(x),i,x];}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1];}).map(function(a){return a[2];});
       boxes.forEach(function(box){
         var max=+box.getAttribute('data-max')||12;var o=ls('hlc_origin');
-        var l=list;if(o&&box.hasAttribute('data-filter')){var lo=list.filter(function(x){return (x.facts&&x.facts.origen)===o;});if(lo.length)l=lo;}
+        var l=list;if(box.hasAttribute('data-savings')){var sv=l.filter(function(x){return (x.facts||{}).ahorro_pct;});l=sv.concat(l.filter(function(x){return !(x.facts||{}).ahorro_pct;}));}if(o&&box.hasAttribute('data-filter')&&!box.hasAttribute('data-savings')){var lo=list.filter(function(x){return (x.facts&&x.facts.origen)===o;});if(lo.length)l=lo;}
         if(!l.length){box.innerHTML='<div class="dc-empty"><b>Estamos cazando los próximos chollos.</b><span>Crea una alerta y te avisamos en cuanto salga uno desde tu aeropuerto.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>';return;}
         var tab=box.getAttribute('data-tab')||'';if(tab){var lt=l.filter(function(x){var c=CONT[(x.facts||{}).continente];return c&&c[0]===tab;});l=lt;}
         if(!l.length){box.innerHTML='<div class="dc-empty"><b>Hoy no hay chollos en esta zona.</b><span>Mira otro continente o crea una alerta gratis.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>';return;}
         box.innerHTML=l.slice(0,max).map(card).join('');
       });
-      paintFavs();tabsCount(list);ticker(list);geoNote(list);
+      paintFavs();tabsCount(list);ticker(list);geoNote(list);heroDeal(list);
     });
   }
   function tabsCount(list){d.querySelectorAll('[data-hlc-tabs] [data-tab]').forEach(function(b){var t=b.getAttribute('data-tab');var n=t?list.filter(function(x){var c=CONT[(x.facts||{}).continente];return c&&c[0]===t;}).length:list.length;var sm=b.querySelector('small');if(sm)sm.textContent=n;if(t&&!n)b.hidden=true;});}
@@ -247,6 +249,33 @@ document.documentElement.classList.add('hlc-js');
     d.body.insertBefore(n,d.body.firstChild);
   }
 
+  /* ---------- Portada: alerta rápida (aeropuerto + email o WhatsApp) ---------- */
+  function quick(){
+    d.querySelectorAll('form[data-hlc-quick]').forEach(function(f){
+      var sel=f.querySelector('[name=origin]'),o=ls('hlc_origin');
+      if(sel&&o){for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===o){sel.selectedIndex=i;break;}}
+      if(sel)sel.addEventListener('change',function(){ls('hlc_origin',sel.value);try{w.dispatchEvent(new CustomEvent('hlc:origin',{detail:sel.value}));}catch(e){}});
+      f.addEventListener('submit',function(e){
+        e.preventDefault();var msg=f.querySelector('[data-msg]'),btn=f.querySelector('[type=submit]');
+        var c=(f.querySelector('[name=contact]').value||'').trim(),isMail=c.indexOf('@')>0,tel=c.replace(/[^\d+]/g,'');
+        if(!isMail&&tel.replace(/\D/g,'').length<8){msg.textContent=T('Escribe tu email o tu número de WhatsApp (con prefijo).','Enter your email or WhatsApp number (with country code).');return;}
+        if(!f.querySelector('[name=consent]').checked){msg.textContent=T('Marca la casilla para poder avisarte.','Tick the box so we can alert you.');return;}
+        var body={action:'alert',origins:[sel?sel.value:''],destination:'',max_price:null,channel:isMail?'email':'whatsapp',contact:isMail?c:(tel.charAt(0)==='+'?tel:'+'+tel),consent:true};
+        btn.disabled=true;msg.textContent=T('Guardando…','Saving…');
+        fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
+          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);track('alerta_rapida',body.channel);f.innerHTML='<div class="qf-done"><b>'+T('¡Hecho! ✈️','Done! ✈️')+'</b><span>'+T('Te avisaremos del próximo chollo desde ','We will alert you to the next deal from ')+esc(body.origins[0])+'.</span><a href="/chollos/">'+T('Mientras, mira los de hoy →','Meanwhile, see today\'s deals →')+'</a></div>';}
+          else{msg.textContent=j.error||T('No se ha podido guardar. Prueba otra vez.','Could not save. Try again.');btn.disabled=false;}
+        }).catch(function(){msg.textContent=T('Sin conexión. Prueba otra vez.','No connection. Try again.');btn.disabled=false;});
+      });
+    });
+  }
+  function heroDeal(list){
+    var a=d.querySelector('[data-hlc-hero-deal]');if(!a||a.dataset.done)return;a.dataset.done=1;
+    var withSave=list.filter(function(x){return (x.facts||{}).precio_normal;});var pool=(withSave.length?withSave:list);
+    var put=function(el,x){if(!el||!x)return;var f=x.facts||{};var ph=w.HLC_photo(f.destino)||'';el.innerHTML='<a href="'+esc(dealUrl(x))+'"><span class="h2-ph" style="background-image:url('+esc(ph)+')"></span><span class="h2-t"><b>✈️ '+esc(f.origen)+' → '+esc(f.destino)+'</b><span>'+(f.precio_normal?'<s>'+esc(f.precio_normal)+' €</s> ':'')+'<em>'+esc(x.price)+' €</em>'+(f.ahorro_pct?' <i>−'+esc(f.ahorro_pct)+' %</i>':'')+'</span><small>'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+'</small></span></a>';};
+    put(a,pool[0]);put(d.querySelector('[data-hlc-hero-deal2]'),pool[1]);
+  }
+
   /* ---------- Origen preferido (chips de la portada) ---------- */
   function origins(){
     d.querySelectorAll('[data-origin]').forEach(function(c){
@@ -281,7 +310,7 @@ document.documentElement.classList.add('hlc-js');
   }
 
   function init(){
-    [langSwitch,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
+    [langSwitch,quick,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();

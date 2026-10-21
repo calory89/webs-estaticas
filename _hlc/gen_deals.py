@@ -317,8 +317,6 @@ def photo_url(x):
         return f'/hlc/img/cities/{ls_}-800.jpg'
     if os.path.exists(os.path.join('chollos', x['slug'], 'foto.jpg')):
         return f"/chollos/{x['slug']}/foto.jpg"
-    if os.path.exists(os.path.join('chollos', x['slug'], 'og.jpg')):
-        return f"/chollos/{x['slug']}/og.jpg"
     return ''
 
 
@@ -330,10 +328,10 @@ def card(x):
     oc = slugify(f.get('origen_pais') or '')
     return (f'<a class="dc" href="/chollos/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(ago_iso(x.get("approved_at")))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
-            f'<div class="dc-img" style="{bg}"><span class="dc-ok">✓ Verificado</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
-            f'<span class="dc-city">{e(f.get("destino"))}</span>{f"<span class=dc-cont>{ce} {e(cn)}</span>" if cs else ""}</div>'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok">✓ Verificado</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
+            f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))}</div>'
-            f'<div class="dc-m">{e(f.get("tipo", ""))}{" · directo" if f.get("escalas") == 0 else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{e(x.get("price"))} €</div></div></a>')
+            f'<div class="dc-m">{e(f.get("tipo", ""))}{" · directo" if f.get("escalas") == 0 else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €</div></div></a>')
 
 
 def crumbs(items):
@@ -530,7 +528,7 @@ def main():
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""}</div>
 <h1>{e(title)}</h1>
-<div class="deal-cta"><span class="price-tag">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></span><a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
+<div class="deal-cta"><span class="price-tag">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></span>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
