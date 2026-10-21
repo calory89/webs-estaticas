@@ -8,7 +8,7 @@ V = '8'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
-files = [f for f in files if f and not f.startswith('en/')]  # la versión en inglés la genera gen_en.py con su propia cabecera
+files = [f for f in files if f and not f.startswith('en/') and os.path.exists(f)]  # la versión en inglés la genera gen_en.py con su propia cabecera
 ONLY = os.environ.get('HLC_ONLY')
 if ONLY:
     files = [f for f in files if f.startswith(ONLY)]
