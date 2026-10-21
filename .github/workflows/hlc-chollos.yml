@@ -20,7 +20,7 @@ jobs:
           B=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=dests" | sha256sum | cut -c1-16)
           NEW="$A$B"
           LIVE=$(curl -fsS "https://www.happylowcost.com/chollos/feed.sha?t=$(date +%s)" | tr -d '[:space:]' || true)
-          R=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-routes?action=feed" | sha256sum | cut -c1-16)
+          R=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-routes?action=stamp" | tr -d '[:space:]')
           RLIVE=$(curl -fsS "https://www.happylowcost.com/vuelos/feed.sha?t=$(date +%s)" | tr -d '[:space:]' || true)
           echo "new=$NEW live=$LIVE rutas=$R rlive=$RLIVE"
           if [ "$NEW" = "$LIVE" ] && [ "$R" = "$RLIVE" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
