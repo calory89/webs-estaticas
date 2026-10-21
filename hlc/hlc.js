@@ -263,7 +263,7 @@ document.documentElement.classList.add('hlc-js');
         var body={action:'alert',origins:[sel?sel.value:''],destination:'',max_price:null,channel:isMail?'email':'whatsapp',contact:isMail?c:(tel.charAt(0)==='+'?tel:'+'+tel),consent:true};
         btn.disabled=true;msg.textContent=T('Guardando…','Saving…');
         fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
-          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);track('alerta_rapida',body.channel);f.innerHTML='<div class="qf-done"><b>'+T('¡Hecho! ✈️','Done! ✈️')+'</b><span>'+T('Te avisaremos del próximo chollo desde ','We will alert you to the next deal from ')+esc(body.origins[0])+'.</span><a href="/chollos/">'+T('Mientras, mira los de hoy →','Meanwhile, see today\'s deals →')+'</a></div>';}
+          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);track('alerta_rapida',body.channel);f.innerHTML='<div class="qf-done"><b>'+T('¡Hecho! ✈️','Done! ✈️')+'</b><span>'+T('Te avisaremos del próximo chollo desde ','We will alert you to the next deal from ')+esc(body.origins[0])+'.</span><a href="'+T('/chollos/','/en/deals/')+'">'+T('Mientras, mira los de hoy →','Meanwhile, see today\'s deals →')+'</a></div>';}
           else{msg.textContent=j.error||T('No se ha podido guardar. Prueba otra vez.','Could not save. Try again.');btn.disabled=false;}
         }).catch(function(){msg.textContent=T('Sin conexión. Prueba otra vez.','No connection. Try again.');btn.disabled=false;});
       });

@@ -95,7 +95,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/aviso-legal-datos-cookies/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy & cookies</a> · © Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=9" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=10" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -263,29 +263,73 @@ def main():
            "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/"]}
     web = {"@type": "WebSite", "url": f"{SITE}/en/", "name": "Happy Low Cost", "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"}}
     page = head('Happy Low Cost · We hunt the cheapest flights in the world', f"Verified cheap flight deals from every continent{f', from €{cheapest}' if cheapest else ''}. Error fares and flash sales, checked before we publish them.",
-                f'{SITE}/en/', f'{SITE}/', ld=[org, web, ldl[0]], body_class='home')
+                f'{SITE}/en/', f'{SITE}/', ld=[org, web, ldl[0]], body_class='home home2')
+    PAST_EN = [('nueva-york', 'Spain → New York', '€97', 'return · 2020', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
+               ('maldivas', 'Spain → Maldives', '€307', 'return · 2022', '/‼mas-barato-que-nunca‼-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
+               ('reikiavik', 'Spain → Iceland', '€136', 'return · nonstop · 2022', '/vuelos-directos-a-islandia-desde-solo-136e-i-v/'),
+               ('tokio', 'Spain → Tokyo', '€387', 'return · 2020', '/ganga-vuelos-a-tokio-desde-solo-387e-i-v-en-septiembre/'),
+               ('miami', 'Spain → Miami', '€167', 'return · 2020', '/vuelos-a-miami-por-solo-167e-ida-y-vuelta/'),
+               ('santorini', 'Spain → Santorini', '€97', 'return · nonstop · 2023', '/vuelos-directos-a-santorini-en-julio-por-solo-97e-i-v/'),
+               ('bali', 'Spain → Bali', '€420', 'return · 2020', '/chollo-vuelos-baratos-a-bali-desde-solo-420e-i-v/'),
+               ('san-francisco', 'Spain → San Francisco', '€317', 'return · nonstop · 2021', '/chollo-vuelos-directos-a-san-francisco-por-317e-i-v/'),
+               ('ciudad-del-cabo', 'Spain → South Africa', '€311', 'return · 2022', '/‼chollo‼-vuelos-a-sudafrica-por-solo-311e-i-v/'),
+               ('punta-cana', 'Spain → Punta Cana', '€351', 'return · 2021', '/wow-viajamos-a-punta-cana-vuelos-por-350e-i-v/'),
+               ('bangkok', 'Spain → Thailand', '€350', 'return · 2021', '/vuelos-a-tailandia-por-solo-350e-i-v/'),
+               ('ciudad-de-mexico', 'Spain → Mexico', '€370', 'return · nonstop · 2020', '/viva-mexico-vuelos-directos-por-solo-370e-i-v-en-octubre/')]
+    past_html = ''.join(f'<a class="pw" href="{u}"><span class="pw-ph" style="background-image:url(/hlc/img/cities/{sl}-800.jpg)"></span><span class="pw-b"><b>{r}</b><em>{pr}</em><small>{dd}</small></span></a>' for sl, r, pr, dd, u in PAST_EN)
+    AIR = ('<optgroup label="Europe">' + ''.join(f'<option>{c}</option>' for c in ['London', 'Dublin', 'Paris', 'Amsterdam', 'Berlin', 'Rome', 'Lisbon', 'Copenhagen', 'Madrid', 'Barcelona', 'Málaga']) +
+           '</optgroup><optgroup label="Americas">' + ''.join(f'<option>{c}</option>' for c in ['New York', 'Miami', 'Los Angeles', 'Toronto', 'Vancouver', 'Mexico City', 'Bogotá', 'Buenos Aires']) +
+           '</optgroup><optgroup label="Asia &amp; Oceania">' + ''.join(f'<option>{c}</option>' for c in ['Singapore', 'Dubai', 'Hong Kong', 'Seoul', 'Tokyo', 'Bangkok', 'Sydney']) + '</optgroup>')
+    def qform():
+        return (f'<form class="qf" data-hlc-quick novalidate><div class="qf-row"><label class="qf-sel"><span>Flying from</span><select name="origin" aria-label="Your airport">{AIR}</select></label>'
+                '<label class="qf-in"><span>Alert me at</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="your email or WhatsApp" aria-label="Email or WhatsApp" required></label>'
+                '<button type="submit" class="hlc-btn qf-go">Alert me free</button></div>'
+                '<label class="qf-ok"><input type="checkbox" name="consent" required> I agree to receive deal alerts from Happy Low Cost (max one a day) and the <a href="/aviso-legal-datos-cookies/">privacy policy</a>.</label>'
+                '<div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>')
+    def phone_deal(x, cls='h2-deal'):
+        if not x:
+            return ''
+        f = x['facts']; o, dn = names(x)
+        was = f'<s>€{e(f.get("precio_normal"))}</s> ' if f.get('precio_normal') else ''
+        sv = f' <i>−{e(f.get("ahorro_pct"))} %</i>' if f.get('ahorro_pct') else ''
+        return (f'<div class="{cls}"><a href="/en/deals/{e(x["slug"])}/"><span class="h2-ph" style="background-image:url({e(G.photo_url(x))})"></span>'
+                f'<span class="h2-t"><b>✈️ {e(o)} → {e(dn)}</b><span>{was}<em>€{e(x.get("price"))}</em>{sv}</span><small>{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""}</small></span></a></div>')
+    pool = [x for x in deals if x['facts'].get('precio_normal')] or deals
+    top6 = sorted(deals, key=lambda x: -(x['facts'].get('ahorro_pct') or 0))[:6]
     page += f'''<main>
-<section class="deal-hero" style="background-image:url(/hlc/img/cities/{hero_imgs[0]}.jpg);min-height:min(78vh,680px)" data-photos="{'|'.join('/hlc/img/cities/' + s + '.jpg' for s in hero_imgs)}"><div class="wrap">
-<div class="kicker" style="color:#FFC531">★★★★★ 420,000+ travellers since 2012</div>
-<h1>We hunt the cheapest flights in the world</h1>
-<p style="font:500 clamp(17px,2.2vw,21px)/1.5 Inter,sans-serif;max-width:640px;margin:8px 0 18px">Error fares and flash sales from every continent. We check every price before publishing it, so you only see deals that are really there.</p>
-<form class="qf" data-hlc-quick novalidate style="color:#14213D"><div class="qf-row"><label class="qf-sel"><span>Flying from</span><select name="origin" aria-label="Your airport"><optgroup label="Europe"><option>London</option><option>Dublin</option><option>Paris</option><option>Amsterdam</option><option>Berlin</option><option>Rome</option><option>Lisbon</option><option>Copenhagen</option><option>Madrid</option><option>Barcelona</option></optgroup><optgroup label="Americas"><option>New York</option><option>Miami</option><option>Los Angeles</option><option>Toronto</option><option>Vancouver</option><option>Mexico City</option></optgroup><optgroup label="Asia & Oceania"><option>Singapore</option><option>Dubai</option><option>Hong Kong</option><option>Seoul</option><option>Tokyo</option><option>Sydney</option></optgroup></select></label><label class="qf-in"><span>Alert me at</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="your email or WhatsApp" aria-label="Email or WhatsApp" required></label><button type="submit" class="hlc-btn qf-go">Alert me free</button></div><label class="qf-ok"><input type="checkbox" name="consent" required> I agree to receive deal alerts from Happy Low Cost (max one a day) and the <a href="/aviso-legal-datos-cookies/">privacy policy</a>.</label><div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>
-<p style="margin:14px 0 0"><a href="#deals" style="color:#fff;font-weight:700;text-decoration:underline">Or see today's {len(deals)} deals ↓</a></p>
+<section class="h2-hero"><div class="wrap h2-grid">
+<div>
+<div class="h2-proof">★★★★★ <b>420,000+ travellers</b> since 2012</div>
+<h1>Flights at <em>half price</em>, straight to your phone.</h1>
+<p class="h2-lead">We watch airlines all over the world, check every price, and alert you when a deal leaves from your airport. Free.</p>
+{qform()}
+</div>
+<div class="h2-phone" aria-hidden="true"><div class="h2-screen"><div class="h2-notif"><b>Happy Low Cost</b><span>now</span></div>{phone_deal(pool[0] if pool else None)}{phone_deal(pool[1] if len(pool) > 1 else None, 'h2-deal h2-deal2')}</div></div>
 </div></section>
-<section class="sec" id="deals"><div class="wrap">
-<div class="sec-h"><div><div class="kicker">Live now · sorted for you</div><h2>Today's flight deals</h2><p>{e(intro)}</p></div><a class="hlc-btn o" href="/en/deals/">Open the deal finder</a></div>
-{filters(deals)}
-<div class="dc-grid" data-explorer-grid>{grid}</div>{empty}
+
+<section class="sec h2-sec" id="today"><div class="wrap">
+<div class="h2-h"><h2>This is what today's deals look like</h2><p>The usual price of the route next to the price we hunted. Checked live.</p></div>
+<div class="dc-grid h2-deals">{''.join(card(x) for x in top6) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'}</div>
+<div class="h2-more"><a class="hlc-btn o" href="/en/deals/">See all {len(deals)} deals and filter</a></div>
 </div></section>
-<section class="sec" style="padding-top:0"><div class="wrap">
-<div class="sec-h"><div><div class="kicker">How it works</div><h2>Three things we never skip</h2></div></div>
-<div class="dc-grid">
-<div class="dc-empty" style="text-align:left"><b>1 · We hunt</b><span>We watch airlines and deal sites around the world, 24/7. When a fare collapses, we jump on it.</span></div>
-<div class="dc-empty" style="text-align:left"><b>2 · We verify</b><span>Every price is checked live with real dates before it goes up. If it's gone tomorrow, we take it down.</span></div>
-<div class="dc-empty" style="text-align:left"><b>3 · You book</b><span>One click takes you to the exact dates we found, plus well-rated hotels at your destination.</span></div>
-</div></div></section>
+
+<section class="sec h2-sec h2-how"><div class="wrap">
+<div class="h2-h"><h2>How it works</h2></div>
+<ol class="h2-steps">
+<li><b>1</b><h3>Tell us your airport</h3><p>And whether you prefer email or WhatsApp.</p></li>
+<li><b>2</b><h3>We hunt and verify</h3><p>Error fares and flash sales, checked before we publish them.</p></li>
+<li><b>3</b><h3>We alert you, you book</h3><p>With the exact dates. You just pack your bag.</p></li>
+</ol>
+</div></section>
+
+<section class="sec h2-sec h2-wall"><div class="wrap">
+<div class="h2-big"><b>420,000+</b><span>travellers have followed us since 2012</span></div>
+<div class="h2-h"><h2>Deals we've already hunted</h2><p>A few of the fares we published over the years. If you weren't following, you missed them.</p></div>
+<div class="pw-grid">{past_html}</div>
+<div class="h2-cta2"><h3>Don't miss the next one.</h3>{qform()}</div>
+</div></section>
 {f'<section class="sec" style="padding-top:0"><div class="wrap"><section class="hub"><h2>Destination guides</h2><div class="hub-g">{guides_hub}</div></section></div></section>' if guides_hub else ''}
-</main><script src="/hlc/explorer.js?v=2" defer></script>{FOOTER}</body></html>'''
+</main>{FOOTER}</body></html>'''
     write('en', page)
 
     # ---------- destination guides ----------
