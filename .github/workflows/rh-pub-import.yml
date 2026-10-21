@@ -25,7 +25,7 @@ jobs:
         run: |
           set -e
           curl -fsSL -X POST "$URL" -o /tmp/in.tgz || curl -fsSL "$URL" -o /tmp/in.tgz
-          tar -tzf /tmp/in.tgz | grep -vE '^(\./)?(assets|_s/[^/]+)(/|$)' | head -5 > /tmp/bad.txt || true
+          tar -tzf /tmp/in.tgz | grep -vE '^(\./)?((assets|_s)(/|$)|_s/[^/]+(/|$)|$)' | head -5 > /tmp/bad.txt || true
           if [ -s /tmp/bad.txt ]; then echo 'unexpected paths:'; cat /tmp/bad.txt; exit 1; fi
           tar -xzf /tmp/in.tgz -C .
           git status --short | wc -l
@@ -35,4 +35,6 @@ jobs:
         run: |
           git config user.name "calory89"; git config user.email "rrppspain@gmail.com"
           git add -A
-          git diff --cached --quiet || (git commit -q -m "$MSG" && git push origin HEAD:pub/_lovable)
+          git diff --cached --quiet && exit 0
+          git commit -q -m "$MSG"
+          for i in 1 2 3 4 5; do git push origin HEAD:pub/_lovable && exit 0; git pull --rebase -q origin pub/_lovable; sleep 5; done; exit 1
