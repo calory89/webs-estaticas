@@ -73,6 +73,7 @@ export default {
     if (u.pathname.startsWith('/_s/')) return new Response('Not found', { status: 404 });
     if (u.pathname === '/api/geo') { const c = req.cf || {}; return Response.json({ country: c.country || null, city: c.city || null, lat: c.latitude ? +c.latitude : null, lon: c.longitude ? +c.longitude : null }); }
     if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(null, { status: 204 });
+    if (host === 'realhunt.co' && /^\/(finds|top|og)\/.+\.(webp|jpe?g|png)$/i.test(u.pathname)) { const m = await fetch('https://realhunt-media.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (m.status === 200) { const h = new Headers(m.headers); h.set('cache-control', 'public, max-age=86400'); return new Response(m.body, { status: 200, headers: h }); } }
     if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await env.ASSETS.fetch(new Request(new URL(pre + '/__q/' + k + '=' + v + '/', u), req)); if (q.status === 200) return q; } } }
     let r = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + u.search, u), req));
     if (r.status >= 300 && r.status < 400) {
