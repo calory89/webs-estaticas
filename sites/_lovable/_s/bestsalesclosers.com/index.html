@@ -1,293 +1,323 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkVeo - Video Talent Connector</title>
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="LinkVeo - Conecta con Talento a través de Video" />
-    <meta property="og:description" content="Plataforma revolucionaria para conectar empresas con talento a través de perfiles de video profesionales." />
-    <meta property="og:image" content="/lovable-uploads/93c50b1b-3543-47df-8945-a5f47a8b4bf8.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="LinkVeo - Conecta con Talento a través de Video" />
-    <meta property="twitter:description" content="Plataforma revolucionaria para conectar empresas con talento a través de perfiles de video profesionales." />
-    <meta property="twitter:image" content="/lovable-uploads/93c50b1b-3543-47df-8945-a5f47a8b4bf8.png" />
-    
-    <!-- Meta description for SEO -->
-    <meta name="description" content="LinkVeo - Plataforma revolucionaria para conectar empresas con talento a través de perfiles de video profesionales" />
-    
-    <!-- Force cache refresh -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <script type="module" crossorigin src="/assets/index-D6tWoT3V.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DYNnyzIm.css">
-  
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Best Sales Closers — The Annual Closers Retreat</title>
+<meta name="description" content="The world's largest sales closers agency. One retreat a year: 5 days of training and selection at Eco Beach City. Accommodation and buffet meals included. €1,500.">
+<link rel="canonical" href="https://bestsalesclosers.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bestsalesclosers.com/">
+<meta property="og:title" content="Best Sales Closers — 5-day Closers Retreat at Eco Beach City">
+<meta property="og:description" content="We only train and select the best closers in the world. One retreat a year. €1,500 all-in: 5 days, accommodation, buffet meals.">
+<meta property="og:image" content="https://oykcsmextclpdnugixqz.supabase.co/storage/v1/object/public/tour-videos/hero/hero-16x9.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Event","name":"Best Sales Closers Annual Retreat","description":"5 days of sales closer training and selection. Accommodation and buffet meals included.","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Eco Beach City","address":"Sumba, Indonesia","url":"https://ecobeachcity.com"},"organizer":{"@type":"Organization","name":"Best Sales Closers","url":"https://bestsalesclosers.com"},"offers":{"@type":"Offer","price":"1500","priceCurrency":"EUR","url":"https://bestsalesclosers.com/#apply","availability":"https://schema.org/LimitedAvailability"}}
+</script>
 <style>
-	#lovable-badge {
-		--badge-bg: #1b1b1b;
-		--badge-text: #c5c1b9;
-		--badge-text-hover: #dcdad5;
-		--badge-radius: 6px;
-		--badge-padding: 8px;
-		--badge-gap: 6px;
-		--badge-shadow: 
-			0 0 0 1px rgba(0, 0, 0, 0.88),
-			0 1px 0 0 rgba(0, 0, 0, 0.04),
-			0 2px 2px -1px rgba(0, 0, 0, 0.08),
-			0 4px 4px -2px rgba(0, 0, 0, 0.08),
-			0 8px 8px -4px rgba(0, 0, 0, 0.08),
-			0 16px 16px -8px rgba(0, 0, 0, 0.08);
-		--badge-transition-duration: 0.2s;
-		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
-		--focus-color: #575ECF;
-		--focus-offset: 2px;
-		--focus-width: 2px;
-		
-		position: fixed;
-		bottom: 12px;
-		right: 12px;
-		height: 24px;
-		display: flex;
-		align-items: center;
-		z-index: 1000000;
-		background-color: var(--badge-bg) !important;
-		color: var(--badge-text) !important;
-		border-radius: var(--badge-radius);
-		box-shadow: var(--badge-shadow) !important;
-		font-size: 12px;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-		font-weight: 400 !important;
-		text-transform: none !important;
-		font-feature-settings: normal !important;
-		transform: translateZ(0);
-		will-change: transform, opacity;
-		transition: opacity var(--badge-transition-duration) var(--badge-transition-easing);
-	}
-
-	#lovable-badge.closing {
-		opacity: 0;
-		pointer-events: none;
-	}
-
-	#lovable-badge-cta {
-		display: flex;
-		align-items: baseline;
-		gap: var(--badge-gap);
-		box-sizing: border-box;
-		padding: 4px var(--badge-padding) 0;
-		height: 100%;
-		color: inherit;
-		text-decoration: none;
-		white-space: nowrap;
-		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
-		transition: 
-			background-color var(--badge-transition-duration) ease,
-			color var(--badge-transition-duration) ease,
-			transform 0.1s ease;
-	}
-
-	#lovable-badge-cta:hover {
-		background: rgba(255, 255, 255, 0.04);
-		color: var(--badge-text-hover);
-	}
-
-	#lovable-badge-cta:active {
-		transform: scale(0.98);
-	}
-
-	#lovable-badge-cta:focus {
-		outline: none;
-	}
-
-	#lovable-badge-cta:focus-visible {
-		outline: var(--focus-width) solid var(--focus-color);
-		outline-offset: var(--focus-offset);
-		z-index: 1;
-	}
-
-	#lovable-badge-text {
-		line-height: 1;
-	}
-
-	/* The wordmark baseline sits at y=12 of the 16px logo; an empty 12px box
-	   makes that the flex baseline so the text aligns to it on any system font. */
-	#lovable-badge-logo {
-		position: relative;
-		display: block;
-		width: 52px;
-		height: 12px;
-	}
-
-	#lovable-badge-logo svg {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	#lovable-badge-divider {
-		width: 1px;
-		height: 24px;
-		background-color: rgba(255, 255, 255, 0.04);
-		flex-shrink: 0;
-	}
-
-	#lovable-badge-close {
-		width: 24px;
-		height: 24px;
-		min-width: 24px;
-		min-height: 24px;
-		cursor: pointer;
-		background: none;
-		border: none;
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
-		flex-shrink: 0;
-		transition: 
-			background-color var(--badge-transition-duration) ease,
-			transform 0.1s ease;
-	}
-
-	#lovable-badge-close:hover {
-		background: rgba(255, 255, 255, 0.04);
-	}
-
-	#lovable-badge-close:active {
-		transform: scale(0.92);
-	}
-
-	#lovable-badge-close:focus {
-		outline: none;
-	}
-
-	#lovable-badge-close:focus-visible {
-		outline: var(--focus-width) solid var(--focus-color);
-		outline-offset: calc(var(--focus-offset) * -1);
-		z-index: 1;
-	}
-
-	#lovable-badge-close svg path {
-		fill: var(--badge-text);
-		transition: fill var(--badge-transition-duration) ease;
-	}
-
-	#lovable-badge-close:hover svg path {
-		fill: var(--badge-text-hover);
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		#lovable-badge,
-		#lovable-badge-cta,
-		#lovable-badge-close,
-		#lovable-badge-close svg path {
-			transition: none;
-		}
-		
-		#lovable-badge-cta:active,
-		#lovable-badge-close:active {
-			transform: none;
-		}
-	}
-
-	@media (prefers-contrast: high) {
-		#lovable-badge {
-			--badge-bg: #000;
-			--badge-text: #fff;
-			--badge-text-hover: #fff;
-			border: 2px solid currentColor;
-		}
-		
-		#lovable-badge-cta:focus-visible,
-		#lovable-badge-close:focus-visible {
-			outline-width: 3px;
-		}
-	}
+:root{--bg:#0b0b0c;--fg:#f5f4f0;--mute:#a3a19a;--line:#26262a;--card:#141416;--gold:#e9c46a;--gold2:#f4d78c;--ok:#4ade80;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:20;background:rgba(11,11,12,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:17px}
+.logo b{color:var(--gold)}
+.nr{display:flex;align-items:center;gap:10px}
+.lang{background:none;border:1px solid var(--line);color:var(--mute);border-radius:999px;padding:6px 10px;font:600 12px Inter,sans-serif;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#111;border:0;border-radius:999px;padding:15px 26px;font:700 16px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s;min-height:48px}
+.btn:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn.sm{padding:9px 16px;font-size:14px;min-height:38px}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.hero{position:relative;min-height:calc(100svh - 60px);display:flex;align-items:flex-end;padding:80px 0 56px;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;background:url(https://oykcsmextclpdnugixqz.supabase.co/storage/v1/object/public/tour-videos/hero/hero-16x9.jpg) center/cover;z-index:-2}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.35) 0%,rgba(11,11,12,.55) 45%,var(--bg) 100%);z-index:-1}
+@media (max-aspect-ratio:3/4){.hero:before{background-image:url(https://oykcsmextclpdnugixqz.supabase.co/storage/v1/object/public/tour-videos/hero/hero-9x16.jpg)}}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;margin-bottom:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(74,222,128,.2)}
+h1{font-size:clamp(38px,7vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:800;max-width:14ch}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:clamp(17px,2.2vw,21px);color:#dedcd5;max-width:40ch;margin:18px 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+.price{font-size:15px;color:#dedcd5}
+.price b{font-size:22px;color:var(--fg)}
+section{padding:84px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4.4vw,44px);letter-spacing:-.03em;line-height:1.1;font-weight:800;max-width:20ch;margin-bottom:14px}
+.sub{color:var(--mute);max-width:56ch;margin-bottom:36px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stats div{background:var(--bg);padding:22px 18px}
+.stats b{display:block;font-size:clamp(24px,4vw,36px);letter-spacing:-.03em}
+.stats span{color:var(--mute);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card .i{font-size:26px;margin-bottom:12px}
+.card h3{font-size:18px;margin-bottom:6px;letter-spacing:-.01em}
+.card p{color:var(--mute);font-size:15px}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.step:before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--gold);color:#111;display:grid;place-items:center;font-weight:800}
+.step h3{font-size:17px;margin-bottom:2px}
+.step p{color:var(--mute);font-size:15px}
+.partners{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.partner{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:border-color .2s}
+.partner:hover{border-color:var(--gold)}
+.partner small{color:var(--gold);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.partner h3{font-size:24px;margin:8px 0 6px;letter-spacing:-.02em}
+.partner p{color:var(--mute);font-size:15px}
+.offer{background:linear-gradient(160deg,#1a1812,#0f0f10 60%);border:1px solid #3a3322;border-radius:22px;padding:34px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.offer .big{font-size:clamp(48px,8vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.offer ul{list-style:none;display:grid;gap:10px}
+.offer li{display:flex;gap:10px;color:#dedcd5}
+.offer li:before{content:"✓";color:var(--gold);font-weight:800}
+.note{color:var(--mute);font-size:13px;margin-top:14px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--gold);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--mute);margin-top:10px;max-width:70ch}
+footer{border-top:1px solid var(--line);padding:36px 0 110px;color:var(--mute);font-size:13px}
+footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(11,11,12,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky span{font-size:14px;color:#dedcd5}
+.sticky b{color:var(--fg)}
+@media(max-width:760px){.sticky{display:flex}.offer{grid-template-columns:1fr;padding:24px}.partners{grid-template-columns:1fr}section{padding:64px 0}.stats div{padding:16px 12px}.stats span{font-size:12px}.hide-m{display:none}}
+/* modal */
+.m{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.7);padding:16px}
+.m.on{display:flex}
+.mb{background:#121214;border:1px solid var(--line);border-radius:20px;width:100%;max-width:480px;max-height:92svh;overflow:auto;padding:26px}
+.mh{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.mh h3{font-size:22px;letter-spacing:-.02em}
+.x{background:none;border:0;color:var(--mute);font-size:28px;cursor:pointer;line-height:1;width:40px;height:40px}
+.prog{display:flex;gap:6px;margin:10px 0 20px}
+.prog i{flex:1;height:4px;border-radius:4px;background:var(--line)}
+.prog i.on{background:var(--gold)}
+label{display:block;font-size:13px;font-weight:600;color:#cfcdc6;margin:14px 0 6px}
+input,select,textarea{width:100%;background:#0b0b0c;border:1px solid #2f2f34;border-radius:12px;color:var(--fg);padding:13px 14px;font:16px Inter,sans-serif;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+textarea{min-height:84px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{background:#0b0b0c;border:1px solid #2f2f34;color:var(--fg);border-radius:999px;padding:10px 14px;font:600 14px Inter,sans-serif;cursor:pointer}
+.chips button.on{border-color:var(--gold);background:#231f14;color:var(--gold2)}
+.mb .btn{width:100%;margin-top:20px}
+.err{color:#f87171;font-size:13px;margin-top:10px;min-height:1em}
+.trust{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;color:var(--mute);font-size:12px;margin-top:12px}
+.banner{display:none;background:#10291a;border-bottom:1px solid #1f5130;color:#c9f7d6;text-align:center;padding:14px 16px;font-weight:600}
+.banner.on{display:block}
 </style>
-<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.4d3abd1f6b7321c2.js" data-artifact-kind="preview_commit_sha" data-artifact-id="d6d5695be75e62745798f9e2501d6fe4382618e2" data-commit-sha="d6d5695be75e62745798f9e2501d6fe4382618e2" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF81ejR5eWRwY2trOHFhOG14ZnFmNXhqNjJldiIsImFydGlmYWN0X2tpbmQiOiJwcmV2aWV3X2NvbW1pdF9zaGEiLCJhcnRpZmFjdF9pZCI6ImQ2ZDU2OTViZTc1ZTYyNzQ1Nzk4ZjllMjUwMWQ2ZmU0MzgyNjE4ZTIiLCJjb21taXRfc2hhIjoiZDZkNTY5NWJlNzVlNjI3NDU3OThmOWUyNTAxZDZmZTQzODI2MThlMiIsImV4cCI6MTc5NTAzMzAzM30.wHzBeFVv1nKZilb1zRF2qIYcE0GiGkPJzhyVjZ4__h4"></script></head>
-  <body>
-    <div id="root"></div>
-  
-<aside
-	id="lovable-badge"
-	role="complementary"
-	dir="ltr"
-	lang="en"
-	aria-label="Edit with Lovable">
-	<a
-		id="lovable-badge-cta" 
-		target="_blank" 
-		href="https://lovable.dev/projects/lovp_5z4yydpckk8qa8mxfqf5xj62ev?utm_source=lovable-badge"
-		rel="noopener nofollow"
-		aria-label="Edit with Lovable">
-		<span id="lovable-badge-text">Edit with</span>
-		<span id="lovable-badge-logo"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
-  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
-  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
-  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
-  <defs>
-    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
-      <stop offset=".106" stop-color="#FE7B02"/>
-      <stop offset=".394" stop-color="#FE3F21"/>
-      <stop offset=".608" stop-color="#F858BC"/>
-      <stop offset=".929" stop-color="#575ECF"/>
-    </radialGradient>
-  </defs>
-</svg>
+</head>
+<body>
+<div class="banner" id="paid" data-t="paid">🎉 Payment received — your seat is locked. We'll email you within 48 h with next steps.</div>
+<nav><div class="w">
+  <a class="logo" href="/">Best<b>Sales</b>Closers</a>
+  <div class="nr">
+    <button class="lang" id="lang" aria-label="Language">ES</button>
+    <button class="btn sm" data-apply data-t="nav_cta">Apply</button>
+  </div>
+</div></nav>
 
-</span>
-	</a>
-	
-	<span id="lovable-badge-divider" aria-hidden="true"></span>
-	
-	<button 
-		id="lovable-badge-close"
-		aria-label="Dismiss"
-		title="Dismiss"
-		type="button">
-		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
-			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
-		</svg>
-	</button>
-</aside>
+<header class="hero"><div class="w">
+  <div class="pill"><span class="dot"></span><span data-t="pill">Applications open · 1 retreat per year</span></div>
+  <h1 data-t="h1">The world's best closers are <em>made here.</em></h1>
+  <p class="lead" data-t="lead">The world's largest sales closers agency. We only train and select the best. 5 days at Eco Beach City — and the best of you join our roster.</p>
+  <div class="cta-row">
+    <button class="btn" data-apply data-t="cta">Apply for the retreat →</button>
+    <span class="price"><b>€1,500</b> <span data-t="allin">all-in · stay + meals</span></span>
+  </div>
+</div></header>
+
+<section style="border-top:0;padding-top:24px"><div class="w">
+  <div class="stats">
+    <div><b>1</b><span data-t="s1">retreat a year</span></div>
+    <div><b>5</b><span data-t="s2">days, full immersion</span></div>
+    <div><b>420K+</b><span data-t="s3">audience via Happy Low Cost</span></div>
+  </div>
+</div></section>
+
+<section id="what"><div class="w">
+  <h2 data-t="w_h">Not a course. A selection.</h2>
+  <p class="sub" data-t="w_p">We don't sell certificates. We put you in the room, push you for 5 days, and pick the closers we'd trust with our own deals.</p>
+  <div class="grid">
+    <div class="card"><div class="i">🎯</div><h3 data-t="c1h">Live closing training</h3><p data-t="c1p">Real scripts, real objections, real role-plays. High-ticket closing, the way it's done on the phone.</p></div>
+    <div class="card"><div class="i">🏆</div><h3 data-t="c2h">Selection, not attendance</h3><p data-t="c2p">You're scored every day. The top performers join the Best Sales Closers roster.</p></div>
+    <div class="card"><div class="i">🌴</div><h3 data-t="c3h">5 days at Eco Beach City</h3><p data-t="c3p">Oceanfront eco-resort in Sumba, Indonesia. Train in the morning, close the day at the beach.</p></div>
+    <div class="card"><div class="i">🍽️</div><h3 data-t="c4h">Stay + buffet included</h3><p data-t="c4p">Accommodation and buffet meals for all 5 days. You only bring your flight and your hunger to win.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="w">
+  <h2 data-t="h_h">How it works</h2>
+  <p class="sub" data-t="h_p">Three minutes to apply. One week that changes your career.</p>
+  <div class="steps">
+    <div class="step"><div><h3 data-t="st1h">Apply (2 min)</h3><p data-t="st1p">Tell us who you are and how you sell.</p></div></div>
+    <div class="step"><div><h3 data-t="st2h">Lock your seat — €1,500</h3><p data-t="st2p">Secure checkout. If we don't accept your application, you get a 100% refund.</p></div></div>
+    <div class="step"><div><h3 data-t="st3h">5 days at Eco Beach City</h3><p data-t="st3p">Training, live role-plays and daily scoring with stay and meals included.</p></div></div>
+    <div class="step"><div><h3 data-t="st4h">Get selected</h3><p data-t="st4p">The best closers join our roster and get put in front of companies that need closers.</p></div></div>
+  </div>
+</div></section>
+
+<section id="partners"><div class="w">
+  <h2 data-t="p_h">Our partners</h2>
+  <p class="sub" data-t="p_p">One location, one media partner. Both world-class.</p>
+  <div class="partners">
+    <a class="partner" href="https://ecobeachcity.com/?utm_source=bestsalesclosers&utm_medium=partner" target="_blank" rel="noopener">
+      <small data-t="p1s">Location partner</small><h3>Eco Beach City</h3>
+      <p data-t="p1p">The eco-luxury beach city in Sumba, Indonesia — your home for the 5 days.</p>
+    </a>
+    <a class="partner" href="https://happylowcost.com/?utm_source=bestsalesclosers&utm_medium=partner" target="_blank" rel="noopener">
+      <small data-t="p2s">Media partner</small><h3>Happy Low Cost</h3>
+      <p data-t="p2p">420,000+ travellers since 2012. Find your cheapest flight to the retreat here.</p>
+    </a>
+  </div>
+</div></section>
+
+<section id="apply"><div class="w">
+  <div class="offer">
+    <div>
+      <p data-t="o_k" style="color:var(--gold);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;margin-bottom:10px">The retreat</p>
+      <div class="big">€1,500</div>
+      <p data-t="o_p" style="color:#dedcd5;margin:12px 0 22px;max-width:36ch">Everything for 5 days. One payment. Full refund if you're not accepted.</p>
+      <button class="btn" data-apply data-t="cta">Apply for the retreat →</button>
+      <p class="note" data-t="o_n">Flights not included — use Happy Low Cost to find the cheapest one.</p>
+    </div>
+    <ul>
+      <li data-t="i1">5 days of live closer training</li>
+      <li data-t="i2">Accommodation at Eco Beach City</li>
+      <li data-t="i3">Buffet meals, every day</li>
+      <li data-t="i4">Daily scoring + selection</li>
+      <li data-t="i5">Roster spot for the top closers</li>
+      <li data-t="i6">Visibility with our media partner</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="faq"><div class="w">
+  <h2 data-t="f_h">Questions</h2>
+  <details><summary data-t="q1">Who is this for?</summary><p data-t="a1">Closers, setters and salespeople who want to close high-ticket deals for a living. Experience helps, hunger matters more.</p></details>
+  <details><summary data-t="q2">What's included in the €1,500?</summary><p data-t="a2">5 days of training and selection, accommodation at Eco Beach City and buffet meals. Flights and personal expenses are not included.</p></details>
+  <details><summary data-t="q3">What if I'm not accepted?</summary><p data-t="a3">We review every application. If we don't accept you, we refund 100% of your payment.</p></details>
+  <details><summary data-t="q4">When is it?</summary><p data-t="a4">We run one retreat per year. Exact dates are sent to every accepted applicant by email, with enough time to book flights.</p></details>
+  <details><summary data-t="q5">Where is Eco Beach City?</summary><p data-t="a5">On the island of Sumba, Indonesia — about an hour's flight from Bali.</p></details>
+  <details><summary data-t="q6">What happens after the retreat?</summary><p data-t="a6">The top performers join the Best Sales Closers roster and get introduced to companies looking for closers.</p></details>
+</div></section>
+
+<footer><div class="w">
+  <span>© <span id="y"></span> Best Sales Closers · <span data-t="op">Payments processed by Eco Beach City LTD (UK)</span></span>
+  <span><a href="/terms/" data-t="terms">Terms &amp; refunds</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="mailto:carlos@ecobeachcity.com">carlos@ecobeachcity.com</a></span>
+</div></footer>
+
+<div class="sticky" id="sticky"><span><b>€1,500</b> <span data-t="allin">all-in · stay + meals</span></span><button class="btn sm" data-apply data-t="nav_cta">Apply</button></div>
+
+<div class="m" id="m" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="mb">
+    <div class="mh"><h3 id="mt" data-t="m_t">Apply for the retreat</h3><button class="x" id="x" aria-label="Close">×</button></div>
+    <div class="prog"><i class="on" id="p1"></i><i id="p2"></i></div>
+    <form id="f1" novalidate>
+      <label for="name" data-t="l_name">Full name</label><input id="name" name="name" autocomplete="name" required>
+      <label for="email" data-t="l_email">Email</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+      <label for="wa" data-t="l_wa">WhatsApp</label><input id="wa" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="+44 7…">
+      <button class="btn" type="submit" data-t="next">Continue →</button>
+      <div class="err" id="e1"></div>
+    </form>
+    <form id="f2" novalidate hidden>
+      <label data-t="l_years">Years closing / in sales</label>
+      <div class="chips" data-name="years_closing"><button type="button">0–1</button><button type="button">1–3</button><button type="button">3–5</button><button type="button">5+</button></div>
+      <label for="country" data-t="l_country">Country you live in</label><input id="country" name="country" autocomplete="country-name">
+      <label for="why" data-t="l_why">Why should we pick you? (one line is fine)</label><textarea id="why" name="why"></textarea>
+      <button class="btn" type="submit" id="pay" data-t="pay">Lock my seat — €1,500 →</button>
+      <div class="trust"><span data-t="t1">🔒 Secure Stripe checkout</span><span data-t="t2">↩︎ 100% refund if not accepted</span></div>
+      <div class="err" id="e2"></div>
+    </form>
+  </div>
+</div>
+
 <script>
-	(() => {
-		if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
-			const badge = document.querySelector('#lovable-badge');
-			if (badge) {
-				badge.style.display = 'none';
-			}
-			return;
-		}
-
-		const closeButton = document.querySelector('#lovable-badge-close');
-		if (closeButton) {
-			closeButton.addEventListener('click', function(event) {
-				event.preventDefault();
-				event.stopPropagation();
-				const badge = document.querySelector('#lovable-badge');
-				if (badge) {
-					badge.classList.add('closing');
-					setTimeout(function() {
-						if (badge) {
-							badge.style.display = 'none';
-						}
-					}, 240);
-				}
-			});
-		}
-	})();
+(function(){
+var PAY="https://book.stripe.com/6oUdR93uG5Te2nXdeX7g407";
+var SB="https://mfyfqtlozspmiautbgef.supabase.co/rest/v1/retreat_applications";
+var KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1meWZxdGxvenNwbWlhdXRiZ2VmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc3MDc3NDksImV4cCI6MjA2MzI4Mzc0OX0.9R0vxQpI_lg3nrfImjxICw91RCTQNX9jmSj2SOsUAf8";
+var ES={
+paid:"🎉 Pago recibido: tu plaza está reservada. Te escribimos por email en menos de 48 h con los siguientes pasos.",
+nav_cta:"Aplicar",pill:"Inscripciones abiertas · 1 retiro al año",
+h1:"Los mejores closers del mundo <em>se hacen aquí.</em>",
+lead:"La agencia de sales closers más grande del mundo. Solo entrenamos y elegimos a los mejores. 5 días en Eco Beach City, y los mejores entráis en nuestro equipo.",
+cta:"Aplica al retiro →",allin:"todo incluido · alojamiento + comida",
+s1:"retiro al año",s2:"días de inmersión total",s3:"de audiencia con Happy Low Cost",
+w_h:"No es un curso. Es una selección.",w_p:"No vendemos diplomas. Te metemos en la sala, te exprimimos 5 días y elegimos a los closers a los que confiaríamos nuestras propias ventas.",
+c1h:"Entrenamiento de cierre en vivo",c1p:"Guiones reales, objeciones reales, role-plays reales. Cierre high-ticket, como se hace al teléfono.",
+c2h:"Selección, no asistencia",c2p:"Te puntuamos cada día. Los mejores entran en el equipo de Best Sales Closers.",
+c3h:"5 días en Eco Beach City",c3p:"Eco-resort frente al mar en Sumba, Indonesia. Entrenas por la mañana y cierras el día en la playa.",
+c4h:"Alojamiento + buffet incluidos",c4p:"Alojamiento y comida buffet los 5 días. Tú solo traes el vuelo y las ganas de ganar.",
+h_h:"Cómo funciona",h_p:"Tres minutos para aplicar. Una semana que cambia tu carrera.",
+st1h:"Aplica (2 min)",st1p:"Cuéntanos quién eres y cómo vendes.",
+st2h:"Reserva tu plaza — 1.500 €",st2p:"Pago seguro. Si no aceptamos tu candidatura, te devolvemos el 100 %.",
+st3h:"5 días en Eco Beach City",st3p:"Entrenamiento, role-plays en vivo y puntuación diaria, con alojamiento y comida incluidos.",
+st4h:"Sé elegido",st4p:"Los mejores closers entran en nuestro equipo y los presentamos a empresas que necesitan closers.",
+p_h:"Nuestros partners",p_p:"Una sede y un media partner. Los dos de primer nivel.",
+p1s:"Sede oficial",p1p:"La ciudad eco-lujo de playa en Sumba, Indonesia: tu casa durante los 5 días.",
+p2s:"Media partner",p2p:"Más de 420.000 viajeros desde 2012. Encuentra aquí el vuelo más barato al retiro.",
+o_k:"El retiro",o_p:"Todo para 5 días. Un solo pago. Devolución completa si no te aceptan.",
+o_n:"Vuelos no incluidos: usa Happy Low Cost para encontrar el más barato.",
+i1:"5 días de entrenamiento de closers en vivo",i2:"Alojamiento en Eco Beach City",i3:"Comida buffet todos los días",i4:"Puntuación diaria + selección",i5:"Plaza en el equipo para los mejores",i6:"Visibilidad con nuestro media partner",
+f_h:"Preguntas",
+q1:"¿Para quién es?",a1:"Closers, setters y comerciales que quieren vivir de cerrar ventas high-ticket. La experiencia ayuda; las ganas importan más.",
+q2:"¿Qué incluyen los 1.500 €?",a2:"5 días de entrenamiento y selección, alojamiento en Eco Beach City y comida buffet. No incluye vuelos ni gastos personales.",
+q3:"¿Y si no me aceptan?",a3:"Revisamos cada candidatura. Si no te aceptamos, te devolvemos el 100 % del pago.",
+q4:"¿Cuándo es?",a4:"Hacemos un único retiro al año. Las fechas exactas se envían por email a cada candidato aceptado, con tiempo para reservar vuelos.",
+q5:"¿Dónde está Eco Beach City?",a5:"En la isla de Sumba, Indonesia, a una hora de vuelo de Bali.",
+q6:"¿Qué pasa después del retiro?",a6:"Los mejores entran en el equipo de Best Sales Closers y los presentamos a empresas que buscan closers.",
+op:"Pagos gestionados por Eco Beach City LTD (Reino Unido)",terms:"Condiciones y devoluciones",privacy:"Privacidad",
+m_t:"Aplica al retiro",l_name:"Nombre completo",l_email:"Email",l_wa:"WhatsApp",next:"Continuar →",
+l_years:"Años como closer / en ventas",l_country:"País donde vives",l_why:"¿Por qué deberíamos elegirte? (con una frase vale)",
+pay:"Reservar mi plaza — 1.500 € →",t1:"🔒 Pago seguro con Stripe",t2:"↩︎ Devolución del 100 % si no te aceptan",
+err_req:"Pon tu nombre y un email válido.",err_net:"No se pudo guardar. Inténtalo de nuevo."
+};
+var EN={err_req:"Please add your name and a valid email.",err_net:"Couldn't save. Please try again."};
+var els=document.querySelectorAll("[data-t]");els.forEach(function(e){EN[e.dataset.t]=EN[e.dataset.t]||e.innerHTML});
+var q=new URLSearchParams(location.search),saved=null;
+try{saved=localStorage.getItem("bsc_lang")}catch(e){}
+var lang=q.get("lang")||saved||((navigator.language||"en").toLowerCase().indexOf("es")===0?"es":"en");
+function T(k){return (lang==="es"?ES:EN)[k]||EN[k]||""}
+function apply(){document.documentElement.lang=lang;els.forEach(function(e){var v=T(e.dataset.t);if(v)e.innerHTML=v});document.getElementById("lang").textContent=lang==="es"?"EN":"ES";
+document.title=lang==="es"?"Best Sales Closers — El retiro anual de closers":"Best Sales Closers — The Annual Closers Retreat";}
+apply();
+document.getElementById("lang").onclick=function(){lang=lang==="es"?"en":"es";try{localStorage.setItem("bsc_lang",lang)}catch(e){}apply()};
+document.getElementById("y").textContent=new Date().getFullYear();
+if(q.get("paid")==="1"){document.getElementById("paid").classList.add("on");try{localStorage.removeItem("bsc_app")}catch(e){}}
+var utm={};["utm_source","utm_medium","utm_campaign","utm_content","fbclid"].forEach(function(k){if(q.get(k))utm[k]=q.get(k)});
+// sticky
+var st=document.getElementById("sticky"),hero=document.querySelector(".hero");
+addEventListener("scroll",function(){st.classList.toggle("on",scrollY>hero.offsetHeight*.7)},{passive:true});
+// modal
+var m=document.getElementById("m"),f1=document.getElementById("f1"),f2=document.getElementById("f2"),data={};
+function open(){m.classList.add("on");document.body.style.overflow="hidden";setTimeout(function(){document.getElementById("name").focus()},50);track("Lead_Open")}
+function close(){m.classList.remove("on");document.body.style.overflow=""}
+document.querySelectorAll("[data-apply]").forEach(function(b){b.addEventListener("click",open)});
+document.getElementById("x").onclick=close;m.addEventListener("click",function(e){if(e.target===m)close()});
+addEventListener("keydown",function(e){if(e.key==="Escape")close()});
+if(location.hash==="#apply-now")open();
+document.querySelectorAll(".chips").forEach(function(c){c.addEventListener("click",function(e){if(e.target.tagName!=="BUTTON")return;c.querySelectorAll("button").forEach(function(b){b.classList.remove("on")});e.target.classList.add("on");data[c.dataset.name]=e.target.textContent})});
+f1.addEventListener("submit",function(e){e.preventDefault();var E=f1.elements,n=E.name.value.trim(),em=E.email.value.trim();
+ if(!n||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){document.getElementById("e1").textContent=T("err_req");return}
+ data.name=n;data.email=em;data.whatsapp=E.whatsapp.value.trim();f1.hidden=true;f2.hidden=false;document.getElementById("p2").classList.add("on");document.getElementById("country").focus();track("Lead")});
+function track(ev){try{window.dataLayer=window.dataLayer||[];dataLayer.push({event:"bsc_"+ev});if(window.fbq)fbq("track",ev==="Lead"?"Lead":"ViewContent")}catch(e){}}
+f2.addEventListener("submit",function(e){e.preventDefault();var b=document.getElementById("pay");b.disabled=true;b.style.opacity=.7;
+ data.country=f2.elements.country.value.trim();data.why=f2.elements.why.value.trim();data.lang=lang;data.utm=utm;
+ var go=function(){track("InitiateCheckout");location.href=PAY+"?prefilled_email="+encodeURIComponent(data.email)+"&locale="+(lang==="es"?"es":"en")};
+ var t=setTimeout(go,4000);
+ fetch(SB,{method:"POST",headers:{apikey:KEY,Authorization:"Bearer "+KEY,"Content-Type":"application/json",Prefer:"return=minimal"},body:JSON.stringify(data),keepalive:true})
+ .then(function(){clearTimeout(t);go()}).catch(function(){clearTimeout(t);go()});
+});
+})();
 </script>
 </body>
 </html>
