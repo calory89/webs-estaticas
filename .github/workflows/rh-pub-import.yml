@@ -1,0 +1,38 @@
+name: rh-pub-import
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL of a .tgz laid out like the pub/_lovable root"
+        required: true
+      message:
+        description: "Commit message"
+        default: "Publish bundle"
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: pub/_lovable
+          fetch-depth: 1
+      - name: Download and extract
+        env:
+          URL: ${{ github.event.inputs.url }}
+        run: |
+          set -e
+          curl -fsSL -X POST "$URL" -o /tmp/in.tgz || curl -fsSL "$URL" -o /tmp/in.tgz
+          tar -tzf /tmp/in.tgz | grep -vE '^(\./)?(assets|_s/[^/]+)(/|$)' | head -5 > /tmp/bad.txt || true
+          if [ -s /tmp/bad.txt ]; then echo 'unexpected paths:'; cat /tmp/bad.txt; exit 1; fi
+          tar -xzf /tmp/in.tgz -C .
+          git status --short | wc -l
+      - name: Commit
+        env:
+          MSG: ${{ github.event.inputs.message }}
+        run: |
+          git config user.name "calory89"; git config user.email "rrppspain@gmail.com"
+          git add -A
+          git diff --cached --quiet || (git commit -q -m "$MSG" && git push origin HEAD:pub/_lovable)
