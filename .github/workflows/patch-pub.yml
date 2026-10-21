@@ -1,0 +1,45 @@
+name: patch-pub
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        required: true
+      script:
+        required: true
+      message:
+        default: "Patch published sites"
+      dry_run:
+        default: "true"
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+          fetch-depth: 1
+      - name: Run patch
+        env:
+          SCRIPT: ${{ github.event.inputs.script }}
+        run: |
+          set -e
+          curl -fsSL -X POST "$SCRIPT" -o /tmp/patch.py || curl -fsSL "$SCRIPT" -o /tmp/patch.py
+          python3 /tmp/patch.py .
+          git status --porcelain | wc -l
+          git diff --stat | tail -5
+          git status --porcelain | cut -c4- | awk -F/ '{print $1"/"$2}' | sort | uniq -c | sort -rn | head -40
+          total=$(( $(git ls-files | wc -l) + $(git status --porcelain --untracked-files=all | grep -c '^??' || true) ))
+          echo "total=$total"
+          if [ "${{ github.event.inputs.branch }}" = "pub/_lovable" ] && [ $total -gt 19500 ]; then echo "too many files"; exit 1; fi
+      - name: Commit
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        env:
+          MSG: ${{ github.event.inputs.message }}
+        run: |
+          git config user.name "calory89"; git config user.email "rrppspain@gmail.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "$MSG"
+          for i in 1 2 3 4 5; do git push origin HEAD:${{ github.event.inputs.branch }} && exit 0; git pull --rebase -q origin ${{ github.event.inputs.branch }}; sleep 5; done; exit 1
