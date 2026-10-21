@@ -4,7 +4,7 @@ Uso: python3 hlc/build.py   (desde la raíz de la rama pub/happylowcost.com)
 """
 import os, re, subprocess, json
 
-V = '7'
+V = '8'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -23,7 +23,8 @@ HEAD = (
     "gtag('set','ads_data_redaction',g!=='granted');})();</script>"
     f'<link rel="stylesheet" href="/hlc/hlc.css?v={V}">'
     '<link rel="icon" href="/hlc/brand/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/hlc/brand/icon.svg">'
-    '<link rel="apple-touch-icon" href="/hlc/brand/icon-180.png">'
+    '<link rel="apple-touch-icon" href="/hlc/brand/icon-180.png"><link rel="manifest" href="/manifest.webmanifest">'
+    '<link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">'
     '<!--/hlc-head-->'
 )
 PARTS = os.environ.get('HLC_PARTIALS', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'partials'))
