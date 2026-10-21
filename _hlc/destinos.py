@@ -100,6 +100,20 @@ for s, (n, c, i, la, lo, r, t) in D.items():
     if not os.path.exists(os.path.join(lib, s + '-800.jpg')):
         continue
     out.append({'s': s, 'n': n, 'c': c, 'i': i, 'y': la, 'x': lo, 'r': r, 't': t, 'a': ALIAS.get(s, [])})
+# conserva los destinos que el generador añadió solo (auto) y cuenta las fotos extra de cada uno
+try:
+    prev = json.load(open(os.path.join(ROOT, 'hlc', 'destinos.json'), encoding='utf-8'))
+except Exception:
+    prev = []
+have = {o['s'] for o in out}
+out += [p for p in prev if p.get('auto') and p['s'] not in have and os.path.exists(os.path.join(lib, p['s'] + '-800.jpg'))]
+gflag = {p['s']: p.get('g', 0) for p in prev}
+for o in out:
+    n = 0
+    while os.path.exists(os.path.join(lib, f"{o['s']}-{n + 2}.jpg")):
+        n += 1
+    o['k'] = n
+    o['g'] = gflag.get(o['s'], 0)
 missing = [f[:-8] for f in os.listdir(lib) if f.endswith('-800.jpg') and f[:-8] not in D]
 json.dump(out, open(os.path.join(ROOT, 'hlc', 'destinos.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 print(len(out), 'destinos; sin coordenadas:', missing)

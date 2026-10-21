@@ -189,6 +189,52 @@ def lib_slug(f):
     return None
 
 
+REGION_OF = {'Europa': 'europa', 'Asia': 'asia', 'Oriente Medio': 'asia', 'Norteamérica': 'america', 'Centroamérica y Caribe': 'america', 'Sudamérica': 'america', 'África': 'africa', 'Oceanía': 'oceania'}
+try:
+    AIRPORTS = json.load(open(os.path.join('hlc', 'airports.json'), encoding='utf-8'))
+except Exception:
+    AIRPORTS = {}
+
+
+def n_extra(slug):
+    """Fotos extra de la biblioteca (<slug>-2.jpg, -3.jpg...) para que la imagen vaya cambiando."""
+    n = 0
+    while os.path.exists(os.path.join(LIB, f'{slug}-{n + 2}.jpg')):
+        n += 1
+    return n
+
+
+def photos_attr(slug):
+    """Atributo para que hlc.js vaya rotando las fotos del destino en la cabecera."""
+    if not slug or not n_extra(slug):
+        return ''
+    return ' data-photos="' + '|'.join([f'/hlc/img/cities/{slug}.jpg'] + [f'/hlc/img/cities/{slug}-{i + 2}.jpg' for i in range(n_extra(slug))]) + '"'
+
+
+def ensure_lib(f):
+    """Ningún destino sin foto: si un chollo va a un destino que no está en la biblioteca, lo añadimos
+    (foto de Wikipedia/Commons, coordenadas del aeropuerto, crédito) y queda para siempre."""
+    if lib_slug(f):
+        return lib_slug(f)
+    dest = (f.get('destino') or '').strip()
+    k = slugify(dest)
+    if not k:
+        return None
+    im, cred = commons_photo(dest, f.get('pais', ''))
+    if im is None:
+        return None
+    big = cover(im, 1600, 1000) if im.width >= 1600 else cover(im, im.width, int(im.width / 1.6))
+    big.save(os.path.join(LIB, k + '.jpg'), 'JPEG', quality=80, optimize=True, progressive=True)
+    cover(im, 800, 500).save(os.path.join(LIB, k + '-800.jpg'), 'JPEG', quality=78, optimize=True, progressive=True)
+    CR[k] = {'file': '', 'author': cred.replace('Foto: ', '').split(' · ')[0], 'license': (cred.split(' · ')[1] if cred.count(' · ') >= 2 else ''), 'page': ''}
+    json.dump(CR, open(os.path.join(LIB, 'credits.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    ap = AIRPORTS.get((f.get('destino_iata') or '').upper()) or []
+    DLIB.append({'s': k, 'n': dest, 'c': f.get('pais') or '', 'i': (f.get('destino_iata') or '').upper(), 'y': ap[0] if ap else None, 'x': ap[1] if ap else None,
+                 'r': REGION_OF.get(f.get('continente') or '', 'mundo'), 't': 'ciudad', 'a': [], 'auto': 1})
+    print('biblioteca: nuevo destino', k)
+    return k
+
+
 def cont_of(f):
     c = f.get('continente') or ''
     return CONT.get(c, ('', '', ''))
@@ -339,9 +385,16 @@ def main():
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html')}
 
-    # marca en destinos.json qué destinos tienen guía (lo usa el mapa)
+    # ningún destino sin foto: los nuevos entran en la biblioteca
+    for x in deals:
+        try:
+            ensure_lib(x['facts'])
+        except Exception as ex:
+            print('ensure_lib', ex)
+    # marca en destinos.json qué destinos tienen guía (lo usa el mapa) y cuántas fotos extra hay
     for p in DLIB:
         p['g'] = 1 if p['s'] in dmap else 0
+        p['k'] = n_extra(p['s'])
     json.dump(DLIB, open(os.path.join('hlc', 'destinos.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 
     origins, conts = {}, {}
@@ -411,7 +464,7 @@ def main():
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
                     extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + ld_script([art, cld, offer]), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
-<section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"><div class="wrap">
+<section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""}</div>
 <h1>{e(title)}</h1>
@@ -503,7 +556,7 @@ def main():
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
                     extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + ld_script([dest_ld, art, cld]), body_class='destino')
         page += f'''<main>
-<section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"><div class="wrap">
+<section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">Guía de viaje · {e(p['c'])}</div>
 <h1>{e(g.get('seo_title') or 'Qué ver en ' + p['n'])}</h1>

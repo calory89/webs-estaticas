@@ -26,6 +26,8 @@
     return CJ('17288982', 'https://flights.booking.com/flights/' + a + '-' + b + '/?type=ROUNDTRIP&adults=1&cabinClass=ECONOMY&from=' + a + '&to=' + b + '&depart=' + iso(30) + '&return=' + iso(37) + '&sort=CHEAPEST&locale=es&salesCurrency=EUR');
   }
   function hotels(n) { return CJ('17288959', 'https://www.booking.com/searchresults.es.html?ss=' + encodeURIComponent(n)); }
+  // foto al azar entre la principal y las extra: el mapa no se ve siempre igual
+  function libPh(p) { var n = Math.floor(Math.random() * ((p.k || 0) + 1)); return '/hlc/img/cities/' + p.s + (n ? '-' + (n + 1) : '-800') + '.jpg'; }
   function fdate(s) { try { return new Date(s).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' }); } catch (e) { return ''; } }
 
   var svgEl = BOX.querySelector('svg'), card = BOX.querySelector('.mapx-card'), sel = BOX.querySelector('[data-map-origin]');
@@ -41,6 +43,8 @@
     if (API.originChanged) API.originChanged();
   }
   if (sel) sel.addEventListener('change', function () { setOrigin(sel.value, true); });
+  // hlc.js (que carga después) fija el origen según la región del visitante: lo recogemos aquí
+  d.addEventListener('DOMContentLoaded', function () { var o = ls('hlc_origin'); if (ORIG[o] && o !== origin) setOrigin(o); });
   w.addEventListener('hlc:origin', function (e) { if (e.detail && ORIG[e.detail]) setOrigin(e.detail); });
 
   function start() {
@@ -62,7 +66,7 @@
     var today = new Date().toISOString().slice(0, 10);
     feed = feed.filter(function (x) { return !x.facts.ida || x.facts.ida >= today; });
     // puntos: destinos de la biblioteca + destinos de chollos que no están en ella
-    var P = LIB.map(function (p) { return { s: p.s, n: p.n, c: p.c, i: p.i, x: p.x, y: p.y, r: p.r, t: p.t, a: p.a || [], g: p.g, lib: true, deals: [] }; });
+    var P = LIB.filter(function (p) { return p.x != null && p.y != null; }).map(function (p) { return { s: p.s, n: p.n, c: p.c, i: p.i, x: p.x, y: p.y, r: p.r, t: p.t, a: p.a || [], g: p.g, k: p.k || 0, lib: true, deals: [] }; });
     function find(f) {
       var k = slug(f.destino);
       for (var i = 0; i < P.length; i++) { var p = P[i]; if (p.s === k || slug(p.n) === k || p.a.indexOf(k) >= 0 || (f.destino_iata && p.i === f.destino_iata)) return p; }
@@ -188,7 +192,7 @@
       var o = ORIG[origin][0];
       var mine = p.deals.filter(function (x) { return x.facts.origen_iata === o || slug(x.facts.origen) === slug(origin); });
       var list = mine.concat(p.deals.filter(function (x) { return mine.indexOf(x) < 0; })).slice(0, 4);
-      var ph = p.lib ? '/hlc/img/cities/' + p.s + '-800.jpg' : (w.HLC_photo && w.HLC_photo(p.n)) || '';
+      var ph = p.lib ? libPh(p) : (w.HLC_photo && w.HLC_photo(p.n)) || '';
       var dealsHtml = list.length ? '<div class="mx-deals">' + list.map(function (x) {
         var f = x.facts, m = mine.indexOf(x) >= 0;
         return '<a class="mx-dl' + (m ? ' me' : '') + '" href="/chollos/' + esc(x.slug) + '/"><span><b>' + esc(f.origen) + ' → ' + esc(f.destino) + '</b><small>' + esc(f.tipo || '') + (f.ida ? ' · ' + fdate(f.ida) : '') + (f.escalas === 0 ? ' · directo' : '') + '</small></span><i>' + esc(x.price) + ' €</i></a>';
@@ -226,7 +230,7 @@
         return bm - am || (a.best && b.best ? a.best.price - b.best.price : 0);
       });
       strip.innerHTML = order.map(function (p) {
-        var ph = p.lib ? '/hlc/img/cities/' + p.s + '-800.jpg' : '';
+        var ph = p.lib ? libPh(p) : '';
         return '<button type="button" class="mx-cd" data-s="' + esc(p.s) + '"' + (p.best ? ' data-deal="1"' : '') + (filterFn(p) ? '' : ' hidden') + '><span class="mx-cd-ph" style="' + (ph ? 'background-image:url(' + ph + ')' : 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)') + '">' + (p.best ? '<i>' + p.best.price + ' €</i>' : '') + '</span><b>' + esc(p.n) + '</b><small>' + esc(p.c) + (p.best ? ' · ' + p.deals.length + ' chollo' + (p.deals.length > 1 ? 's' : '') : '') + '</small></button>';
       }).join('');
     }

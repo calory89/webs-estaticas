@@ -22,6 +22,29 @@ document.documentElement.classList.add('hlc-js');
   function track(name,label){try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_click',hlc_target:name,hlc_label:label||''});}catch(e){}}
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
 
+  /* ---------- Región del visitante (zona horaria + idioma) ---------- */
+  var REGIONS={
+    es:{label:'España',cont:'Europa',cc:['ES'],chips:['Madrid','Barcelona','Málaga','Valencia','Sevilla','Bilbao','Canarias']},
+    eu:{label:'Europa',cont:'Europa',cc:['PT','GB','IE','FR','NL','BE','DE','AT','CH','IT','DK','SE','NO','FI','PL','CZ','HU','GR','RO','IS','LU'],chips:['Londres','París','Ámsterdam','Berlín','Roma','Milán','Lisboa','Dublín','Copenhague']},
+    na:{label:'Norteamérica',cont:'Norteamérica',cc:['US','CA'],chips:['Nueva York','Miami','Los Ángeles']},
+    la:{label:'Latinoamérica',cont:'Sudamérica',cc:['MX','CO','AR','CL','PE','EC','VE','UY','BR','PA','CR','DO','CU','PR','GT'],chips:['Ciudad de México','Bogotá','Buenos Aires','Miami']},
+    as:{label:'Asia',cont:'Asia',cc:['SG','TH','MY','ID','PH','VN','HK','CN','JP','KR','TW','IN','AE','QA','SA'],chips:['Singapur','Dubái']},
+    oc:{label:'Oceanía',cont:'Oceanía',cc:['AU','NZ'],chips:['Sídney']}
+  };
+  function detectGeo(){
+    var tz='',lang=(navigator.language||'es').toLowerCase();try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}
+    var T=[[/^(Europe\/Madrid|Africa\/Ceuta)$/,'es','Madrid'],[/^Atlantic\/Canary$/,'es','Canarias'],[/^Europe\/Lisbon|Atlantic\/(Madeira|Azores)/,'eu','Lisboa'],[/^Europe\/London/,'eu','Londres'],[/^Europe\/Dublin/,'eu','Dublín'],[/^Europe\/(Paris|Monaco|Luxembourg)/,'eu','París'],[/^Europe\/(Amsterdam|Brussels)/,'eu','Ámsterdam'],[/^Europe\/(Rome|Vatican|Malta)/,'eu','Roma'],[/^Europe\/(Copenhagen|Stockholm|Oslo|Helsinki)|Atlantic\/Reykjavik/,'eu','Copenhague'],[/^Europe\//,'eu','Berlín'],
+      [/^America\/(Los_Angeles|Vancouver|Phoenix|Denver|Boise|Edmonton|Anchorage)|^Pacific\/Honolulu/,'na','Los Ángeles'],[/^America\/(New_York|Toronto|Chicago|Detroit|Montreal|Halifax|Indiana|Kentucky|Winnipeg)/,'na','Nueva York'],
+      [/^America\/(Mexico_City|Monterrey|Cancun|Merida|Tijuana|Guatemala|El_Salvador|Tegucigalpa|Managua|Costa_Rica)/,'la','Ciudad de México'],[/^America\/(Puerto_Rico|Havana|Santo_Domingo|Panama|Jamaica)/,'la','Miami'],[/^America\/(Bogota|Lima|Guayaquil|Caracas|La_Paz)/,'la','Bogotá'],[/^America\/(Argentina|Buenos_Aires|Santiago|Montevideo|Sao_Paulo|Asuncion)/,'la','Buenos Aires'],
+      [/^(Australia|Pacific\/Auckland)/,'oc','Sídney'],[/^Asia\/(Dubai|Qatar|Riyadh|Kuwait|Bahrain|Muscat|Tehran|Karachi|Kolkata|Calcutta|Colombo|Kathmandu|Dhaka)/,'as','Dubái'],[/^Asia\//,'as','Singapur'],[/^Africa\/(Casablanca|Algiers|Tunis)/,'es','Madrid']];
+    for(var i=0;i<T.length;i++)if(T[i][0].test(tz))return {r:T[i][1],o:T[i][2],tz:tz};
+    return {r:/^es/.test(lang)?'es':'eu',o:'Madrid',tz:tz};
+  }
+  var GEO=detectGeo();GEO.reg=REGIONS[GEO.r];
+  if(!ls('hlc_origin')){ls('hlc_origin',GEO.o);ls('hlc_origin_auto','1');}
+  w.HLC_GEO=GEO;w.HLC_REGIONS=REGIONS;
+  function geoRank(x){var f=x.facts||{},o=ls('hlc_origin');if(o&&f.origen===o)return 0;if(GEO.reg.cc.indexOf(f.origen_cc)>=0)return 1;if(f.origen_continente===GEO.reg.cont)return 2;return 3;}
+
   /* ---------- Cookies (RGPD) + Consent Mode v2 ---------- */
   function store(v){ls('hlc_ck',v);try{d.cookie='hlc_ck='+v+';path=/;max-age=15552000;SameSite=Lax';}catch(e){}}
   function read(){var v=ls('hlc_ck');if(!v){var m=d.cookie.match(/(?:^|; )hlc_ck=(\w+)/);v=m&&m[1];}return v;}
@@ -103,19 +126,19 @@ document.documentElement.classList.add('hlc-js');
   function feed(){if(!feedP)feedP=Promise.all([fetch(API+'?action=feed').then(function(r){return r.json();}).catch(function(){return [];}),fetch('/hlc/destinos.json').then(function(r){return r.json();}).catch(function(){return [];}),fetch('/chollos/hechos.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return [];})]).then(function(a){DESTS=a[1];HECHOS=a[2];return a[0];});return feedP;}
   var DESTS=[],HECHOS=[];w.HLC_feed=function(){return feed();};
   function sl(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
-  w.HLC_photo=function(dest){var k=sl(dest);for(var i=0;i<DESTS.length;i++){var p=DESTS[i];if(p.s===k||sl(p.n)===k||(p.a||[]).indexOf(k)>=0)return '/hlc/img/cities/'+p.s+'-800.jpg';}return null;};
+  w.HLC_photo=function(dest){var k=sl(dest);for(var i=0;i<DESTS.length;i++){var p=DESTS[i];if(p.s===k||sl(p.n)===k||(p.a||[]).indexOf(k)>=0){var n=Math.floor(Math.random()*((p.k||0)+1));return '/hlc/img/cities/'+p.s+(n?'-'+(n+1):'-800')+'.jpg';}}return null;};
   function dealUrl(x){return HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/':'/chollos/ver/?s='+encodeURIComponent(x.slug);}
   function flag(cc){cc=(cc||'').toUpperCase();return cc.length===2?String.fromCodePoint(127462+cc.charCodeAt(0)-65,127462+cc.charCodeAt(1)-65):'✈️';}
   var CONT={'Europa':['europa','🇪🇺','Europa'],'Asia':['asia','🌏','Asia'],'Oriente Medio':['oriente-medio','🕌','Oriente Medio'],'Norteamérica':['norteamerica','🗽','Norteamérica'],'Centroamérica y Caribe':['caribe','🏝️','Caribe'],'Sudamérica':['sudamerica','🌎','Sudamérica'],'África':['africa','🌍','África'],'Oceanía':['oceania','🦘','Oceanía']};
   function card(x){
-    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;
+    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'')||(HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/og.jpg':'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;
     return '<a class="dc" href="'+esc(dealUrl(x))+'" data-cont="'+(c?c[0]:'')+'" data-slug="'+esc(x.slug)+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)"><span class="dc-ok">'+(fresh?'🔥 Nuevo · ':'✓ ')+'hace '+ago(x.approved_at)+'</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="'+esc(x.slug)+'">♡</span><span class="dc-city">'+esc(f.destino||'')+'</span>'+(c?'<span class="dc-cont">'+c[1]+' '+c[2]+'</span>':'')+'</div>'+
       '<div class="dc-b"><div><div class="dc-r"><span class="dc-flag">'+flag(f.origen_cc)+'</span> '+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div><div class="dc-p">'+esc(x.price)+' €</div></div></a>';
   }
   function renderDeals(){
     var boxes=d.querySelectorAll('[data-hlc-deals]');if(!boxes.length)return;
     feed().then(function(list){
-      var td=new Date().toISOString().slice(0,10);list=(list||[]).filter(function(x){return x.slug&&x.price&&(!x.facts||!x.facts.ida||x.facts.ida>=td);});
+      var td=new Date().toISOString().slice(0,10);list=(list||[]).filter(function(x){return x.slug&&x.price&&(!x.facts||!x.facts.ida||x.facts.ida>=td);});list=list.map(function(x,i){return [geoRank(x),i,x];}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1];}).map(function(a){return a[2];});
       boxes.forEach(function(box){
         var max=+box.getAttribute('data-max')||12;var o=ls('hlc_origin');
         var l=list;if(o&&box.hasAttribute('data-filter')){var lo=list.filter(function(x){return (x.facts&&x.facts.origen)===o;});if(lo.length)l=lo;}
@@ -124,7 +147,7 @@ document.documentElement.classList.add('hlc-js');
         if(!l.length){box.innerHTML='<div class="dc-empty"><b>Hoy no hay chollos en esta zona.</b><span>Mira otro continente o crea una alerta gratis.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>';return;}
         box.innerHTML=l.slice(0,max).map(card).join('');
       });
-      paintFavs();tabsCount(list);ticker(list);
+      paintFavs();tabsCount(list);ticker(list);geoNote(list);
     });
   }
   function tabsCount(list){d.querySelectorAll('[data-hlc-tabs] [data-tab]').forEach(function(b){var t=b.getAttribute('data-tab');var n=t?list.filter(function(x){var c=CONT[(x.facts||{}).continente];return c&&c[0]===t;}).length:list.length;var sm=b.querySelector('small');if(sm)sm.textContent=n;if(t&&!n)b.hidden=true;});}
@@ -180,6 +203,30 @@ document.documentElement.classList.add('hlc-js');
     });
   }
 
+  function geoNote(list){
+    var box=d.querySelector('[data-hlc-deals]');if(!box||d.querySelector('.geo-note'))return;var o=ls('hlc_origin')||GEO.o;
+    var mine=list.filter(function(x){return geoRank(x)<3;}).length;
+    var n=d.createElement('div');n.className='geo-note';
+    n.innerHTML=(mine?'📍 Te enseñamos primero los chollos con salida desde <b>'+esc(GEO.r==='es'?o:GEO.reg.label)+'</b>.':'📍 Hoy no hay chollos con salida desde <b>'+esc(GEO.reg.label)+'</b>: te enseñamos los mejores del mundo. <a href="/alertas/">Avísame cuando salga uno</a>.')+' <button type="button" class="geo-ch">Cambiar origen</button>';
+    box.parentNode.insertBefore(n,box);
+    n.querySelector('.geo-ch').addEventListener('click',function(){var t=d.querySelector('[data-origin]')||d.querySelector('[data-map-origin]');if(t){t.scrollIntoView({behavior:'smooth',block:'center'});try{t.focus();}catch(e){}}});
+  }
+  function regionChips(){
+    if(GEO.r==='es')return;var chips=d.querySelectorAll('.chip[data-origin]');if(!chips.length)return;var par=chips[0].parentNode,list=GEO.reg.chips.concat(['Madrid','Barcelona']);
+    chips.forEach(function(c){c.remove();});
+    list.forEach(function(o){var b=d.createElement('button');b.type='button';b.className='chip';b.setAttribute('data-origin',o);b.setAttribute('aria-pressed','false');b.textContent=o;par.appendChild(b);});
+  }
+
+  /* ---------- Cabeceras con varias fotos del destino ---------- */
+  function heroRotate(){
+    d.querySelectorAll('[data-photos]').forEach(function(el){
+      var L=el.getAttribute('data-photos').split('|').filter(Boolean);if(L.length<2)return;
+      for(var i=L.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));if(i>0&&j>0){var t=L[i];L[i]=L[j];L[j]=t;}}
+      var n=0;el.classList.add('ph-rot');
+      setInterval(function(){if(d.hidden)return;var nx=L[(n+1)%L.length],im=new Image();im.onload=function(){n=(n+1)%L.length;el.style.backgroundImage='url('+nx+')';};im.src=nx;},6000);
+    });
+  }
+
   /* ---------- Origen preferido (chips de la portada) ---------- */
   function origins(){
     d.querySelectorAll('[data-origin]').forEach(function(c){
@@ -214,7 +261,7 @@ document.documentElement.classList.add('hlc-js');
   }
 
   function init(){
-    [search,clicks,oldDealNotice,toolsBox,mobileBar,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop].forEach(function(f){try{f();}catch(e){}});
+    [search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();

@@ -33,7 +33,9 @@
         (!st.cont || c.dataset.cont === st.cont) && (+c.dataset.price <= lim) && (!st.dir || c.dataset.dir === '1') && (!st.rt || c.dataset.tipo === 'rt') && (!st.fav || f.indexOf(c.dataset.slug) >= 0);
       c.hidden = !ok; if (ok) n++;
     });
-    var key = { nuevo: function (c) { return -(Date.parse(c.dataset.ts) || 0); }, precio: function (c) { return +c.dataset.price; }, fecha: function (c) { return Date.parse(c.dataset.ida) || 9e15; } }[st.orden] || function () { return 0; };
+    var G = w.HLC_GEO, o = null; try { o = localStorage.getItem('hlc_origin'); } catch (e) {}
+    var rank = function (c) { if (!G) return 0; if (o && c.dataset.orig === o) return 0; return G.reg.cc.indexOf((c.dataset.occ || '').toUpperCase()) >= 0 ? 1 : 2; };
+    var key = { nuevo: function (c) { return rank(c) * 1e13 - (Date.parse(c.dataset.ts) || 0); }, precio: function (c) { return +c.dataset.price; }, fecha: function (c) { return Date.parse(c.dataset.ida) || 9e15; } }[st.orden] || function () { return 0; };
     cards.slice().sort(function (a, b) { return key(a) - key(b); }).forEach(function (c) { grid.appendChild(c); });
     if (count) count.textContent = n;
     if (empty) empty.hidden = n > 0;
@@ -60,4 +62,5 @@
   });
   w.addEventListener('hlc:favs', function () { if (st.fav) apply(false); });
   paint(); apply(false);
+  d.addEventListener('DOMContentLoaded', function () { apply(false); });
 })();
