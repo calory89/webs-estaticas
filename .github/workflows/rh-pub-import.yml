@@ -5,6 +5,9 @@ on:
       url:
         description: "URL of a .tgz laid out like the pub/_lovable root"
         required: true
+      allow_new:
+        description: "Space-separated paths that may be added (besides new assets/*). Other new files are skipped."
+        default: ""
       message:
         description: "Commit message"
         default: "Publish bundle"
@@ -19,16 +22,34 @@ jobs:
         with:
           ref: pub/_lovable
           fetch-depth: 1
-      - name: Download and extract
+      - name: Download and merge (only changed existing files, new hashed assets and allow-listed files)
         env:
           URL: ${{ github.event.inputs.url }}
+          ALLOW: ${{ github.event.inputs.allow_new }}
         run: |
           set -e
           curl -fsSL -X POST "$URL" -o /tmp/in.tgz || curl -fsSL "$URL" -o /tmp/in.tgz
-          tar -tzf /tmp/in.tgz | grep -vE '^(\./)?((assets|_s)(/|$)|_s/[^/]+(/|$)|$)' | head -5 > /tmp/bad.txt || true
-          if [ -s /tmp/bad.txt ]; then echo 'unexpected paths:'; cat /tmp/bad.txt; exit 1; fi
-          tar -xzf /tmp/in.tgz -C .
-          git status --short | wc -l
+          mkdir -p /tmp/x && tar -xzf /tmp/in.tgz -C /tmp/x
+          python3 - <<'PY'
+          import os, shutil, filecmp
+          allow = set(os.environ.get("ALLOW", "").split())
+          src = "/tmp/x"; upd = new_assets = added = skipped = 0
+          for root, _, files in os.walk(src):
+              for f in files:
+                  s = os.path.join(root, f); rel = os.path.relpath(s, src); d = rel
+                  if not (rel.startswith("assets/") or rel.startswith("_s/")): continue
+                  if os.path.exists(d):
+                      if not filecmp.cmp(s, d, shallow=False): shutil.copy2(s, d); upd += 1
+                  elif rel.startswith("assets/"):
+                      os.makedirs(os.path.dirname(d), exist_ok=True); shutil.copy2(s, d); new_assets += 1
+                  elif rel in allow:
+                      os.makedirs(os.path.dirname(d), exist_ok=True); shutil.copy2(s, d); added += 1
+                  else: skipped += 1
+          print(f"updated={upd} new_assets={new_assets} added={added} skipped_new={skipped}")
+          PY
+          echo "files in deploy: $(git ls-files | wc -l) + new $(git status --porcelain | grep -c '^??' || true)"
+          total=$(( $(git ls-files | wc -l) + $(git status --porcelain --untracked-files=all | grep -c '^??' || true) ))
+          echo "total=$total"; if [ $total -gt 19500 ]; then echo "too many files for Cloudflare Pages"; exit 1; fi
       - name: Commit
         env:
           MSG: ${{ github.event.inputs.message }}
