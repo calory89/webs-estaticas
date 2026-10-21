@@ -32,6 +32,7 @@ jobs:
         run: |
           pip install --quiet Pillow
           python3 _hlc/gen_deals.py
+          python3 _hlc/gen_en.py
           HLC_ONLY=chollos python3 _hlc/build.py
           HLC_ONLY=destinos python3 _hlc/build.py
       - name: Publicar
