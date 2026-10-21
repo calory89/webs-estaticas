@@ -2086,5 +2086,35 @@
   "author": "Wikipedia",
   "license": "",
   "page": ""
+ },
+ "nairobi": {
+  "file": "",
+  "author": "Daniel Case",
+  "license": "CC BY-SA 4.0",
+  "page": ""
+ },
+ "burbank": {
+  "file": "",
+  "author": "Junkyardsparkle",
+  "license": "CC0",
+  "page": ""
+ },
+ "nassau": {
+  "file": "",
+  "author": "Quintin Soloviev",
+  "license": "CC BY 4.0",
+  "page": ""
+ },
+ "agadir": {
+  "file": "",
+  "author": "Abdeaitali",
+  "license": "CC BY-SA 4.0",
+  "page": ""
+ },
+ "charleston": {
+  "file": "",
+  "author": "Chris Pruitt",
+  "license": "CC BY-SA 3.0",
+  "page": ""
  }
 }

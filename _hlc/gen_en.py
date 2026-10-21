@@ -179,7 +179,7 @@ def main():
     except Exception:
         dests = []
     today = datetime.date.today().isoformat()
-    deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and x.get('en') and (x['facts'].get('ida') or '9999') >= today]
+    deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and x.get('en') and (x['facts'].get('ida') or '9999') >= today and G.photo_url(x)]  # nunca sin foto
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html_en')}
     hechos = set()
@@ -196,7 +196,7 @@ def main():
         seo_t = en.get('seo_title') or f'Flights {o} → {d} for €{x["price"]} ({trip(f)}) · Verified deal'
         desc = en.get('meta_description') or en.get('excerpt') or title
         ls_ = G.lib_slug(f)
-        hero = f'/hlc/img/cities/{ls_}.jpg' if ls_ else (f'/chollos/{slug}/foto.jpg' if os.path.exists(f'chollos/{slug}/foto.jpg') else '')
+        hero = f'/hlc/img/cities/{ls_}.jpg' if ls_ else (f'/chollos/{slug}/foto.jpg' if os.path.exists(f'chollos/{slug}/foto.jpg') else (x.get('image_url') or ''))
         og = f'{SITE}/chollos/{slug}/og.jpg'
         verified = (x.get('approved_at') or '')[:16].replace('T', ' ')
         ch, cld = crumbs([('Home', '/en/'), ('Deals', '/en/deals/'), (f'{o} → {d}', None)])

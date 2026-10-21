@@ -276,6 +276,8 @@ def ensure_lib(f):
     if not k:
         return None
     im, cred = city_photo(dest, f.get('destino_iata', ''), f.get('pais', ''))
+    if im is None and f.get('_image_url'):
+        im, cred = fetch_img(f['_image_url']), f.get('_image_credit') or 'Foto: Wikimedia Commons'
     if im is None:
         return None
     big = cover(im, 1600, 1000) if im.width >= 1600 else cover(im, im.width, int(im.width / 1.6))
@@ -317,7 +319,7 @@ def photo_url(x):
         return f'/hlc/img/cities/{ls_}-800.jpg'
     if os.path.exists(os.path.join('chollos', x['slug'], 'foto.jpg')):
         return f"/chollos/{x['slug']}/foto.jpg"
-    return ''
+    return x.get('image_url') or ''
 
 
 def card(x):
@@ -444,6 +446,7 @@ def main():
     for x in deals:
         try:
             had = lib_slug(x['facts'])
+            x['facts']['_image_url'], x['facts']['_image_credit'] = x.get('image_url'), x.get('image_credit')
             if ensure_lib(x['facts']) and not had:
                 for fn in ('og.jpg', 'foto.jpg'):  # se rehacen con la foto nueva de la biblioteca
                     fp = os.path.join('chollos', x['slug'], fn)
@@ -451,6 +454,11 @@ def main():
                         os.remove(fp)
         except Exception as ex:
             print('ensure_lib', ex)
+    # regla: nunca enseñamos un chollo sin foto del destino
+    sin_foto = [x['slug'] for x in deals if not photo_url(x)]
+    if sin_foto:
+        print('sin foto, no se publican:', sin_foto)
+    deals = [x for x in deals if photo_url(x)]
     # marca en destinos.json qué destinos tienen guía (lo usa el mapa) y cuántas fotos extra hay
     for p in DLIB:
         p['g'] = 1 if p['s'] in dmap else 0
@@ -497,7 +505,7 @@ def main():
             og_image(photo, f, os.path.join(out, 'og.jpg'))
         if lp and os.path.exists(os.path.join(out, 'foto.jpg')):
             os.remove(os.path.join(out, 'foto.jpg'))  # la foto sale de la biblioteca: un fichero menos
-        hero = (f"/hlc/img/cities/{lib_slug(f)}.jpg" if lp else (f"/chollos/{slug}/foto.jpg" if os.path.exists(os.path.join(out, 'foto.jpg')) else ''))
+        hero = (f"/hlc/img/cities/{lib_slug(f)}.jpg" if lp else (f"/chollos/{slug}/foto.jpg" if os.path.exists(os.path.join(out, 'foto.jpg')) else (x.get('image_url') or '')))
         url = f'{SITE}/chollos/{slug}/'
         title = x.get('title') or f"{f.get('origen')} → {f.get('destino')} desde {f.get('precio')} €"
         seo_t = f"Vuelos {f.get('origen')} → {f.get('destino')} por {x.get('price')} € ({f.get('tipo', '')}) · Chollo verificado"

@@ -141,7 +141,7 @@ document.documentElement.classList.add('hlc-js');
   function renderDeals(){
     var boxes=d.querySelectorAll('[data-hlc-deals]');if(!boxes.length)return;
     feed().then(function(list){
-      var td=new Date().toISOString().slice(0,10);list=(list||[]).filter(function(x){return x.slug&&x.price&&(!x.facts||!x.facts.ida||x.facts.ida>=td);});list=list.map(function(x,i){return [geoRank(x),i,x];}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1];}).map(function(a){return a[2];});
+      var td=new Date().toISOString().slice(0,10);list=(list||[]).filter(function(x){return x.slug&&x.price&&(!x.facts||!x.facts.ida||x.facts.ida>=td)&&(w.HLC_photo((x.facts||{}).destino)||x.image_url);});list=list.map(function(x,i){return [geoRank(x),i,x];}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1];}).map(function(a){return a[2];});
       boxes.forEach(function(box){
         var max=+box.getAttribute('data-max')||12;var o=ls('hlc_origin');
         var l=list;if(box.hasAttribute('data-savings')){var sv=l.filter(function(x){return (x.facts||{}).ahorro_pct;});l=sv.concat(l.filter(function(x){return !(x.facts||{}).ahorro_pct;}));}if(o&&box.hasAttribute('data-filter')&&!box.hasAttribute('data-savings')){var lo=list.filter(function(x){return (x.facts&&x.facts.origen)===o;});if(lo.length)l=lo;}
@@ -272,7 +272,7 @@ document.documentElement.classList.add('hlc-js');
   function heroDeal(list){
     var a=d.querySelector('[data-hlc-hero-deal]');if(!a||a.dataset.done)return;a.dataset.done=1;
     var withSave=list.filter(function(x){return (x.facts||{}).precio_normal;});var pool=(withSave.length?withSave:list);
-    var put=function(el,x){if(!el||!x)return;var f=x.facts||{};var ph=w.HLC_photo(f.destino)||'';el.innerHTML='<a href="'+esc(dealUrl(x))+'"><span class="h2-ph" style="background-image:url('+esc(ph)+')"></span><span class="h2-t"><b>✈️ '+esc(f.origen)+' → '+esc(f.destino)+'</b><span>'+(f.precio_normal?'<s>'+esc(f.precio_normal)+' €</s> ':'')+'<em>'+esc(x.price)+' €</em>'+(f.ahorro_pct?' <i>−'+esc(f.ahorro_pct)+' %</i>':'')+'</span><small>'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+'</small></span></a>';};
+    var put=function(el,x){if(!el||!x)return;var f=x.facts||{};var ph=w.HLC_photo(f.destino)||x.image_url||'';el.innerHTML='<a href="'+esc(dealUrl(x))+'"><span class="h2-ph" style="background-image:url('+esc(ph)+')"></span><span class="h2-t"><b>✈️ '+esc(f.origen)+' → '+esc(f.destino)+'</b><span>'+(f.precio_normal?'<s>'+esc(f.precio_normal)+' €</s> ':'')+'<em>'+esc(x.price)+' €</em>'+(f.ahorro_pct?' <i>−'+esc(f.ahorro_pct)+' %</i>':'')+'</span><small>'+esc(f.tipo||'')+(f.escalas===0?' · directo':'')+'</small></span></a>';};
     put(a,pool[0]);put(d.querySelector('[data-hlc-hero-deal2]'),pool[1]);
   }
 
