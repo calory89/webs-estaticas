@@ -16,7 +16,9 @@ jobs:
       - name: Comprobar si hay chollos nuevos
         id: chk
         run: |
-          NEW=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed" | sha256sum | cut -d' ' -f1)
+          A=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed" | sha256sum | cut -d' ' -f1)
+          B=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=dests" | sha256sum | cut -c1-16)
+          NEW="$A$B"
           LIVE=$(curl -fsS "https://www.happylowcost.com/chollos/feed.sha?t=$(date +%s)" | tr -d '[:space:]' || true)
           echo "new=$NEW live=$LIVE"
           if [ "$NEW" = "$LIVE" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
@@ -31,12 +33,13 @@ jobs:
           pip install --quiet Pillow
           python3 _hlc/gen_deals.py
           HLC_ONLY=chollos python3 _hlc/build.py
+          HLC_ONLY=destinos python3 _hlc/build.py
       - name: Publicar
         if: steps.chk.outputs.go == 'yes'
         run: |
           git config user.name "happylowcost-bot"
           git config user.email "bot@happylowcost.com"
-          git add -A chollos chollos-sitemap.xml sitemap_index.xml
+          git add -A chollos destinos hlc/destinos.json chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "chollos: actualización automática"
           git push origin HEAD:pub/happylowcost.com
