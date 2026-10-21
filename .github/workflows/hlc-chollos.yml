@@ -20,8 +20,10 @@ jobs:
           B=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=dests" | sha256sum | cut -c1-16)
           NEW="$A$B"
           LIVE=$(curl -fsS "https://www.happylowcost.com/chollos/feed.sha?t=$(date +%s)" | tr -d '[:space:]' || true)
-          echo "new=$NEW live=$LIVE"
-          if [ "$NEW" = "$LIVE" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
+          R=$(curl -fsS "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-routes?action=feed" | sha256sum | cut -c1-16)
+          RLIVE=$(curl -fsS "https://www.happylowcost.com/vuelos/feed.sha?t=$(date +%s)" | tr -d '[:space:]' || true)
+          echo "new=$NEW live=$LIVE rutas=$R rlive=$RLIVE"
+          if [ "$NEW" = "$LIVE" ] && [ "$R" = "$RLIVE" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then echo "go=no" >> $GITHUB_OUTPUT; else echo "go=yes" >> $GITHUB_OUTPUT; fi
       - uses: actions/checkout@v4
         if: steps.chk.outputs.go == 'yes'
         with:
@@ -33,6 +35,8 @@ jobs:
           pip install --quiet Pillow
           python3 _hlc/gen_deals.py
           python3 _hlc/gen_en.py
+          python3 _hlc/gen_routes.py
+          HLC_ONLY=vuelos python3 _hlc/build.py
           HLC_ONLY=chollos python3 _hlc/build.py
           HLC_ONLY=destinos python3 _hlc/build.py
       - name: Publicar
@@ -40,7 +44,7 @@ jobs:
         run: |
           git config user.name "happylowcost-bot"
           git config user.email "bot@happylowcost.com"
-          git add -A chollos destinos en hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml en-sitemap.xml 2>/dev/null || git add -A chollos destinos hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
+          git add -A chollos destinos en vuelos vuelos-sitemap.xml flights-sitemap.xml hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml en-sitemap.xml 2>/dev/null || git add -A chollos destinos hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "chollos: actualización automática"
           for i in 1 2 3; do git push origin HEAD:pub/happylowcost.com && break; git fetch --depth=5 origin pub/happylowcost.com && git rebase -X theirs FETCH_HEAD; done
