@@ -1,0 +1,35 @@
+name: audit-lovable
+on:
+  workflow_dispatch:
+    inputs:
+      branches:
+        default: "pub/_lovable pub/_wp"
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BR: ${{ github.event.inputs.branches }}
+        run: |
+          set -e
+          git ls-remote --heads https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }} | awk '{print $2}' > /tmp/branches.txt
+          : > /tmp/report.txt
+          echo "BRANCHES:" >> /tmp/report.txt; cat /tmp/branches.txt >> /tmp/report.txt
+          for b in $BR; do
+            d=/tmp/r_$(echo $b | tr '/' '_')
+            git clone -q --depth 1 --branch "$b" https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }} $d
+            echo "=== $b" >> /tmp/report.txt
+            cd $d
+            grep -rIl -E "nylmhdtlshhtjkuvfbms|cddppqysrtwdlqfwbbvp|tgmmyisrvaoloovowhmp|vijqewdkyirfxwheljgz|nhukaoufssgeyqtwfclt|lovable-badge|cloud-auth-js|ai\.gateway\.lovable|lovable\.app|lovableproject\.com|gptengineer|cdn\.gpteng|lovable\.dev" . --exclude-dir=.git | while read f; do
+              m=$(grep -o -E "nylmhdtlshhtjkuvfbms|cddppqysrtwdlqfwbbvp|tgmmyisrvaoloovowhmp|vijqewdkyirfxwheljgz|nhukaoufssgeyqtwfclt|lovable-badge|cloud-auth-js|ai\.gateway\.lovable|lovable\.app|lovableproject\.com|gptengineer|cdn\.gpteng|lovable\.dev" "$f" | sort | uniq -c | tr -s ' ' | tr '\n' ';')
+              echo "$f|$m" >> /tmp/report.txt
+            done
+            cd /
+          done
+          wc -l /tmp/report.txt
+          URL=$(curl -s -F "file=@/tmp/report.txt" https://temp.sh/upload)
+          echo "REPORT_URL=$URL"
