@@ -103,23 +103,30 @@ def hub(rows, en):
     base = '/en/flights/' if en else '/vuelos/'
     secs = ''.join(f'<section class="hub"><h2>{"Cheap flights from" if en else "Vuelos baratos desde"} {e(o)}</h2><div class="hub-g">' + ''.join(
         f'<a class="hub-l" href="{base}{r["slug"]}/">{e(E.NAMES.get(r["dest_slug"], r["dest"]) if en else r["dest"])} · {r["price_from"]} €</a>' for r in sorted(lst, key=lambda x: x['price_from'])) + '</div></section>' for o, lst in sorted(by.items(), key=lambda kv: -len(kv[1])))
-    title = 'Cheap flights from Spain: every route with real prices · Happy Low Cost' if en else 'Vuelos baratos desde España: todas las rutas con precios reales · Happy Low Cost'
-    desc = (f'{len(rows)} routes from Spanish airports with real return prices, airlines and the best time to fly.' if en
-            else f'{len(rows)} rutas desde aeropuertos españoles con precios reales de ida y vuelta, aerolíneas y mejor época para volar.')
+    title = 'Cheap flights: every route with real prices · Happy Low Cost' if en else 'Vuelos baratos: todas las rutas con precios reales · Happy Low Cost'
+    desc = (f'{len(rows)} routes with real return prices, airlines and the best time to fly.' if en
+            else f'{len(rows)} rutas con precios reales de ida y vuelta, aerolíneas y mejor época para volar.')
     if en:
         h = E.head(title, desc, SITE + base, SITE + '/vuelos/', body_class='chollos')
     else:
         h = G.head(title=e(title), desc=e(desc), canonical=SITE + base, og_image=f'{SITE}/hlc/brand/og-default.jpg', og_type='website',
                    extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">', body_class='chollos')
     return h + f'''<main class="sec" style="padding-top:26px"><div class="wrap">
-<div class="sec-h"><div><div class="kicker">{"Real prices, checked on Kiwi.com" if en else "Precios reales, consultados en Kiwi.com"}</div><h1 class="x-h1">{"Cheap flights from Spain" if en else "Vuelos baratos desde España"}</h1><p>{e(desc)}</p></div></div>
+<div class="sec-h"><div><div class="kicker">{"Real prices, checked on Kiwi.com" if en else "Precios reales, consultados en Kiwi.com"}</div><h1 class="x-h1">{"Cheap flights, route by route" if en else "Vuelos baratos, ruta a ruta"}</h1><p>{e(desc)}</p></div></div>
 {secs}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
 
 
 def main():
-    raw = urllib.request.urlopen(urllib.request.Request(FEED, headers={'User-Agent': 'hlc-build'}), timeout=60).read()
-    rows = json.loads(raw)
+    rows, raw, off = [], b'', 0
+    while True:
+        chunk = urllib.request.urlopen(urllib.request.Request(f'{FEED}&offset={off}', headers={'User-Agent': 'hlc-build'}), timeout=90).read()
+        part = json.loads(chunk)
+        raw += chunk
+        rows += part
+        if len(part) < 500:
+            break
+        off += 500
     rows = [r for r in rows if r.get('content') and r['content'].get('es') and r['content'].get('en') and os.path.exists(f"hlc/img/cities/{r['dest_slug']}.jpg")]
     by_dest, by_orig = {}, {}
     for r in rows:
@@ -143,8 +150,8 @@ def main():
         if sm not in si:
             si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/{sm}</loc>\n\t</sitemap>\n</sitemapindex>')
     open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
-    import hashlib
-    open('vuelos/feed.sha', 'w').write(hashlib.sha256(raw).hexdigest()[:16])
+    stamp = urllib.request.urlopen(urllib.request.Request(FEED.replace('action=feed', 'action=stamp'), headers={'User-Agent': 'hlc-build'}), timeout=60).read().decode()
+    open('vuelos/feed.sha', 'w').write(stamp)
     print('rutas', len(rows))
 
 
