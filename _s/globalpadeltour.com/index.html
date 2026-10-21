@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+<title>Global Padel Tour · Own your city. Play the world.</title>
+<meta name="description" content="Global Padel Tour is an international amateur padel circuit. 100 founding cities, one Head per city. Bring your players, earn on every one of them, and play the final at Eco Beach City, Sumba.">
+<link rel="canonical" href="https://globalpadeltour.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://globalpadeltour.com/">
+<meta property="og:title" content="Global Padel Tour · 100 cities. One final on a cliff above the Indian Ocean.">
+<meta property="og:description" content="Claim your city. Bring your players. Earn on every one of them. Season 1 final at Eco Beach City, Sumba.">
+<meta property="og:image" content="https://globalpadeltour.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#07131a">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
+<style>
+:root{
+  --ink:#07131a; --ink2:#0c1f29; --ink3:#12303d; --line:rgba(255,255,255,.12);
+  --lime:#d9ff3c; --lime2:#b8e600; --sand:#f3ede2; --sea:#1fc8d6; --coral:#ff6a3d;
+  --txt:#eef4f2; --mut:#9db3b5; --r:22px;
+  --disp:'Anton',Impact,'Arial Narrow',sans-serif; --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--txt);font-family:var(--body);font-size:17px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime)}
+.disp{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.92}
+h2.disp{font-size:clamp(44px,7.4vw,104px)}
+.lead{font-size:clamp(18px,1.6vw,21px);color:#cfdcda;max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;font:700 16px/1 var(--body);padding:18px 26px;border-radius:999px;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-lime{background:var(--lime);color:#081014;box-shadow:0 10px 40px -10px rgba(217,255,60,.65)}
+.btn-lime:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(217,255,60,.85)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid var(--line);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn svg{width:18px;height:18px}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(7,19,26,.86);backdrop-filter:blur(14px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font-family:var(--disp);font-weight:400;font-size:22px;letter-spacing:.04em;line-height:1}
+.logo b span{color:var(--lime)}
+.nav-links{display:flex;gap:28px;font-size:14px;font-weight:600;color:#c9d6d4}
+.nav-links a{text-decoration:none}
+.nav-links a:hover{color:#fff}
+.nav-r{display:flex;align-items:center;gap:10px}
+.lang{background:none;border:1px solid var(--line);color:#fff;border-radius:999px;padding:9px 12px;font:600 12px var(--mono);cursor:pointer}
+.nav .btn{padding:12px 18px;font-size:14px}
+@media(max-width:900px){.nav-links{display:none}}
+@media(max-width:420px){.nav .btn{display:none}}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 56px;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%;transform:scale(1.06);animation:slow 22s ease-out forwards}
+@keyframes slow{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,19,26,.55) 0%,rgba(7,19,26,.1) 30%,rgba(7,19,26,.55) 62%,var(--ink) 100%),radial-gradient(120% 70% at 0% 100%,rgba(7,19,26,.85),transparent 60%)}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(7,19,26,.55);border:1px solid var(--line);backdrop-filter:blur(10px);font-size:13px;font-weight:600}
+.pill i{display:inline-grid;place-items:center;background:var(--lime);color:#081014;border-radius:999px;font:700 11px var(--mono);padding:4px 9px;font-style:normal}
+.hero h1{font-size:clamp(58px,11.5vw,180px);margin:22px 0 22px;max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero .lead{color:#e6eeec;text-shadow:0 1px 20px rgba(0,0,0,.4)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-meta{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:12px 40px;margin-top:46px;padding-top:24px;border-top:1px solid var(--line)}
+.hero-meta div{font-size:13px;color:var(--mut)}
+.hero-meta b{display:block;font-family:var(--disp);font-weight:400;font-size:clamp(30px,3.4vw,44px);color:#fff;line-height:1;margin-bottom:6px}
+@media(max-width:700px){.hero-meta{grid-template-columns:repeat(2,1fr)}}
+
+/* PARTNERS STRIP */
+.partners{border-block:1px solid var(--line);background:var(--ink2)}
+.partners .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 40px;padding:22px 0}
+.pt{display:flex;align-items:center;gap:14px;text-decoration:none}
+.pt small{display:block;font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.pt strong{font-size:17px}
+.pt .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.pt:hover strong{color:var(--lime)}
+
+/* MARQUEE */
+.marquee{overflow:hidden;padding:26px 0;border-bottom:1px solid var(--line);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:44px;width:max-content;animation:mq 80s linear infinite}
+.track span{font-family:var(--disp);font-size:clamp(28px,3.6vw,46px);text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.35);white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--lime);box-shadow:0 0 18px var(--lime)}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track,.hero-bg img{animation:none}}
+
+section{padding:clamp(80px,11vw,150px) 0}
+.sec-head{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:56px}
+.sec-head .eyebrow{margin-bottom:18px;display:block}
+@media(max-width:860px){.sec-head{grid-template-columns:1fr}}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{position:relative;background:linear-gradient(180deg,var(--ink2),var(--ink));border:1px solid var(--line);border-radius:var(--r);padding:30px 28px 32px;overflow:hidden}
+.step .n{font-family:var(--disp);font-size:120px;line-height:.8;color:var(--lime);opacity:.95}
+.step h3{font-size:24px;margin:22px 0 10px;letter-spacing:-.01em}
+.step p{color:var(--mut)}
+.step::after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;border:1px solid rgba(217,255,60,.18)}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+
+/* MONEY */
+.money{background:var(--sand);color:#0b1a20}
+.money .eyebrow{color:#5b7a12}
+.money .lead{color:#3b4b50}
+.calc{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+.panel{background:#fff;border-radius:var(--r);padding:32px;box-shadow:0 30px 80px -40px rgba(7,19,26,.35)}
+.panel.dark{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.field{margin-bottom:28px}
+.field label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:15px;margin-bottom:12px}
+.field label output{font:700 22px var(--mono);color:#0b1a20}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:9px;background:linear-gradient(90deg,#0b1a20 var(--p,50%),#e3ddd0 var(--p,50%));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:var(--lime);border:4px solid #0b1a20;cursor:grab}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--lime);border:4px solid #0b1a20;cursor:grab}
+.hint{font-size:13px;color:#6d7b7d;margin-top:8px}
+.big{font-family:var(--disp);font-size:clamp(64px,9vw,120px);line-height:.9;color:var(--lime)}
+.kv{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;color:#c8d6d4}
+.kv b{font-family:var(--mono);color:#fff}
+.bar{height:14px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden;margin:22px 0 10px;position:relative}
+.bar i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--sea),var(--lime));border-radius:9px;transition:width .35s}
+.bar s{position:absolute;top:-6px;bottom:-6px;width:2px;background:#fff;opacity:.7}
+.fine{font-size:12px;color:#8aa0a2;margin-top:18px}
+@media(max-width:900px){.calc{grid-template-columns:1fr}}
+
+/* INCLUDES */
+.inc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.inc div{background:var(--ink);padding:30px 28px;min-height:210px}
+.inc svg{width:30px;height:30px;color:var(--lime)}
+.inc h4{font-size:20px;margin:18px 0 8px}
+.inc p{color:var(--mut);font-size:15px}
+@media(max-width:900px){.inc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.inc{grid-template-columns:1fr}.inc div{min-height:0}}
+.price{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;margin-top:22px;padding:30px;border-radius:var(--r);background:linear-gradient(110deg,var(--lime),#9dff6a);color:#081014}
+.price .disp{font-size:clamp(48px,6vw,80px)}
+.price p{font-weight:600;max-width:440px}
+.price .btn{background:#081014;color:var(--lime)}
+
+/* FINAL */
+.final{position:relative;isolation:isolate;overflow:hidden;padding:0}
+.final .bg{position:absolute;inset:0;z-index:-1}
+.final .bg img{width:100%;height:100%;object-fit:cover}
+.final .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,19,26,.95) 0%,rgba(7,19,26,.7) 45%,rgba(7,19,26,.15) 100%)}
+.final .wrap{padding:clamp(90px,12vw,170px) 0;min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+.final h2{max-width:11ch}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,220px));gap:18px;margin-top:40px}
+.facts div{border-top:2px solid var(--lime);padding-top:14px;font-size:14px;color:#cfdcda}
+.facts b{display:block;font-size:18px;color:#fff;margin-bottom:4px}
+@media(max-width:700px){.facts{grid-template-columns:1fr}}
+.cap{position:absolute;right:16px;bottom:12px;font:500 11px var(--mono);color:rgba(255,255,255,.55)}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px;margin-top:56px}
+.gal figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--ink2)}
+.gal figure:first-child{aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:16px;bottom:14px;font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;background:rgba(7,19,26,.7);padding:7px 10px;border-radius:8px}
+@media(max-width:860px){.gal{grid-template-columns:1fr 1fr}.gal figure:first-child{grid-column:1/-1;aspect-ratio:16/10}}
+
+/* CITIES */
+.cities-top{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}
+.search{position:relative;flex:1;min-width:260px;max-width:460px}
+.search input{width:100%;padding:18px 20px 18px 50px;border-radius:999px;border:1px solid var(--line);background:var(--ink2);color:#fff;font:500 16px var(--body)}
+.search input:focus{outline:2px solid var(--lime);outline-offset:2px}
+.search svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--mut)}
+.counter{font:700 14px var(--mono);color:var(--mut)}
+.counter b{color:var(--lime);font-size:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.city{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:13px 14px;border-radius:12px;background:var(--ink2);border:1px solid var(--line);cursor:pointer;font-size:14px;font-weight:600;text-align:left;color:#fff;transition:border-color .2s,background .2s,transform .2s}
+.city:hover{border-color:var(--lime);transform:translateY(-2px)}
+.city em{font:700 10px var(--mono);font-style:normal;color:#081014;background:var(--lime);padding:3px 6px;border-radius:6px;letter-spacing:.06em}
+.city small{display:block;font:500 11px var(--mono);color:var(--mut);margin-top:2px}
+.nores{display:none;margin-top:16px;padding:22px;border-radius:var(--r);border:1px dashed rgba(217,255,60,.5);color:#dfe9e7}
+.nores b{color:var(--lime)}
+
+/* PARTNER CARDS */
+.pcards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pcard{border-radius:var(--r);padding:34px;border:1px solid var(--line);background:var(--ink2);text-decoration:none;display:flex;flex-direction:column;gap:14px;transition:border-color .2s,transform .2s;min-height:280px}
+.pcard:hover{border-color:var(--lime);transform:translateY(-3px)}
+.pcard .tag{font:700 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--lime)}
+.pcard h3{font-family:var(--disp);font-weight:400;font-size:clamp(36px,4vw,54px);text-transform:uppercase;line-height:.95}
+.pcard p{color:var(--mut)}
+.pcard .go{margin-top:auto;font-weight:700;display:flex;align-items:center;gap:8px}
+@media(max-width:760px){.pcards{grid-template-columns:1fr}}
+
+/* ROADMAP */
+.road{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.road div{padding:26px 22px 0 0;position:relative}
+.road div::before{content:"";position:absolute;top:-7px;left:0;width:13px;height:13px;border-radius:50%;background:var(--ink);border:2px solid var(--lime)}
+.road div.on::before{background:var(--lime);box-shadow:0 0 16px var(--lime)}
+.road small{font:700 12px var(--mono);color:var(--lime);letter-spacing:.12em;text-transform:uppercase}
+.road h4{font-size:20px;margin:8px 0 6px}
+.road p{color:var(--mut);font-size:15px}
+@media(max-width:860px){.road{grid-template-columns:1fr 1fr;row-gap:30px}}
+@media(max-width:520px){.road{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 44px 24px 0;font-size:19px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:18px;font:400 30px var(--body);color:var(--lime);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:#bccbca;padding:0 0 24px;max-width:720px}
+
+/* APPLY */
+.apply{background:radial-gradient(90% 60% at 100% 0%,rgba(31,200,214,.18),transparent 60%),radial-gradient(70% 60% at 0% 100%,rgba(217,255,60,.12),transparent 60%),var(--ink2)}
+.apply-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.apply-grid>*{min-width:0}
+@media(max-width:900px){.apply-grid{grid-template-columns:1fr;gap:36px}}
+.f select{max-width:100%}
+.checks{list-style:none;margin-top:28px;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;color:#d7e3e1}
+.checks li::before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23081014' stroke-width='3.2'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat;margin-top:2px}
+form{background:var(--ink);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3.4vw,38px);box-shadow:0 40px 120px -50px rgba(0,0,0,.8)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.f label{font-size:13px;font-weight:700;color:#c9d6d4}
+.f input,.f select,.f textarea{width:100%;padding:15px 16px;border-radius:14px;border:1px solid var(--line);background:var(--ink2);color:#fff;font:500 16px var(--body)}
+.f textarea{min-height:96px;resize:vertical}
+.f select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239db3b5' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:18px}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--lime);outline-offset:1px;border-color:transparent}
+.consent{display:flex;gap:10px;font-size:13px;color:var(--mut);margin:6px 0 20px;align-items:flex-start}
+.consent input{margin-top:3px;accent-color:var(--lime);width:18px;height:18px;flex:0 0 18px}
+form .btn{width:100%;justify-content:center;font-size:17px;padding:20px}
+.err{color:var(--coral);font-size:14px;margin-top:12px;display:none}
+.ok{display:none;text-align:center;padding:20px 6px}
+.ok .disp{font-size:clamp(46px,6vw,72px);color:var(--lime);margin:10px 0 14px}
+.ok p{color:#cfdcda;margin-bottom:24px}
+
+footer{border-top:1px solid var(--line);padding:46px 0 60px;color:var(--mut);font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:30px}
+footer a{color:#dfe9e7}
+footer .legal{font-size:12px;line-height:1.6}
+@media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.sticky-cta{position:fixed;left:16px;right:16px;bottom:14px;z-index:40;display:none}
+.sticky-cta .btn{width:100%;justify-content:center}
+@media(max-width:700px){.sticky-cta.show{display:block}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Global Padel Tour">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#d9ff3c"/><path d="M5 13c8 3 12 10 11 23M35 27c-8-3-12-10-11-23" stroke="#07131a" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>
+      <b>GLOBAL <span>PADEL</span> TOUR</b>
+    </a>
+    <nav class="nav-links">
+      <a href="#how" data-i18n="nav_how">How it works</a>
+      <a href="#money" data-i18n="nav_money">The numbers</a>
+      <a href="#final" data-i18n="nav_final">The final</a>
+      <a href="#cities" data-i18n="nav_cities">Cities</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-r">
+      <button class="lang" id="langBtn" type="button" aria-label="Change language">ES</button>
+      <a class="btn btn-lime" href="#apply" data-i18n="cta_claim">Claim your city</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="/img/hero.webp" alt="Glass padel court on a clifftop above the ocean at golden hour" fetchpriority="high"></div>
+  <div class="wrap">
+    <span class="pill"><i>S1</i><span data-i18n="hero_pill">Season 1 · Founding cities now open</span></span>
+    <h1 class="disp" data-i18n-html="hero_h1">Own your city. <em>Play the world.</em></h1>
+    <p class="lead" data-i18n="hero_lead">Global Padel Tour is an international amateur circuit with one Head per city. You bring your players. You earn on every one of them who plays the tour. The final is on a cliff above the Indian Ocean.</p>
+    <div class="hero-cta">
+      <a class="btn btn-lime" href="#apply"><span data-i18n="cta_claim">Claim your city</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="#money" data-i18n="cta_numbers">See the numbers</a>
+    </div>
+    <div class="hero-meta">
+      <div><b>100</b><span data-i18n="m_cities">founding cities</span></div>
+      <div><b>1</b><span data-i18n="m_head">Head per city</span></div>
+      <div><b data-i18n="m_price">€3,500</b><span data-i18n="m_once">once, founding price</span></div>
+      <div><b>Sumba</b><span data-i18n="m_final">Season 1 final</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS STRIP -->
+<div class="partners">
+  <div class="wrap">
+    <a class="pt" href="https://ecobeachcity.com" target="_blank" rel="noopener">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9ff3c" stroke-width="2"><path d="M3 20h18M5 20c1-6 4-10 7-10s6 4 7 10M12 10V3m0 0c2 1 4 1 6 0-2 2-4 2-6 2"/></svg></span>
+      <span><small data-i18n="p_loc">Partner location</small><strong>ecobeachcity.com</strong></span>
+    </a>
+    <a class="pt" href="https://happylowcost.com" target="_blank" rel="noopener">
+      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9ff3c" stroke-width="2"><path d="M2 16l20-7-4 10-5-3-3 4-1-5z"/></svg></span>
+      <span><small data-i18n="p_travel">Travel partner</small><strong>Happy Low Cost</strong></span>
+    </a>
+    <span class="pt"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9ff3c" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+      <span><small data-i18n="p_format">Format</small><strong data-i18n="p_format_v">Amateur · All levels · Mixed</strong></span></span>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<!-- HOW -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow" data-i18n="how_eye">How it works</span><h2 class="disp" data-i18n="how_h">Three moves. One tour.</h2></div>
+      <p class="lead" data-i18n="how_lead">Every founding city gets exactly one Head. That person is the tour in their city: they bring the players, and the tour pays them for every one.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3 data-i18n="s1_h">Claim your city</h3><p data-i18n="s1_p">One licence per city, exclusive. You become Head of Padel for Madrid, Milan, Dubai or wherever you play. Once a city is taken, it is gone.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3 data-i18n="s2_h">Bring your players</h3><p data-i18n="s2_p">Your club, your students, your WhatsApp group. Run official local qualifiers and send your best pairs to the tour stops and the final.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3 data-i18n="s3_h">Earn on every one</h3><p data-i18n="s3_p">Every player from your city who registers for a tour event earns you a commission. Your personal code makes it automatic. Season after season.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MONEY -->
+<section id="money" class="money">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow" data-i18n="mo_eye">The numbers</span><h2 class="disp" data-i18n="mo_h">Pays for itself. Then it pays you.</h2></div>
+      <p class="lead" data-i18n="mo_lead">Move the sliders. See how many players from your city it takes to earn back the €3,500, and what a season looks like after that.</p>
+    </div>
+    <div class="calc reveal">
+      <div class="panel">
+        <div class="field">
+          <label for="r1"><span data-i18n="c_players">Players from your city per season</span><output id="o1">20</output></label>
+          <input id="r1" type="range" min="2" max="80" value="20">
+          <div class="hint" data-i18n="c_players_h">A club owner or coach usually starts with their own players.</div>
+        </div>
+        <div class="field">
+          <label for="r2"><span data-i18n="c_pkg">Average tournament package</span><output id="o2">€1,500</output></label>
+          <input id="r2" type="range" min="500" max="3500" step="100" value="1500">
+          <div class="hint" data-i18n="c_pkg_h">Entry + stay at the tour destination. Flights are booked separately.</div>
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label for="r3"><span data-i18n="c_com">Your commission</span><output id="o3">15%</output></label>
+          <input id="r3" type="range" min="5" max="30" value="15">
+          <div class="hint" data-i18n="c_com_h">Set in your licence contract.</div>
+        </div>
+      </div>
+      <div class="panel dark">
+        <span class="eyebrow" data-i18n="c_year">You earn per season</span>
+        <div class="big" id="earn">€4,500</div>
+        <div class="bar"><i id="barI"></i><s id="barS"></s></div>
+        <div class="kv"><span data-i18n="c_per">Per player</span><b id="per">€225</b></div>
+        <div class="kv"><span data-i18n="c_back">Players to earn back €3,500</span><b id="back">16</b></div>
+        <div class="kv"><span data-i18n="c_net">Net after the licence, season 1</span><b id="net">€1,000</b></div>
+        <div class="kv" style="border:0"><span data-i18n="c_net2">Season 2 onwards (no licence to pay)</span><b id="net2">€4,500</b></div>
+        <p class="fine" data-i18n="c_fine">Illustrative example only, not a promise of income. Package prices and the commission rate are fixed in your licence contract. What you earn depends on the players you bring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDES -->
+<section id="licence">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow" data-i18n="in_eye">Your city licence</span><h2 class="disp" data-i18n="in_h">Everything a Head gets.</h2></div>
+      <p class="lead" data-i18n="in_lead">You are not buying a ticket. You are taking a seat at the table of a tour that is being built city by city.</p>
+    </div>
+    <div class="inc reveal">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><h4 data-i18n="i1_h">Your city, exclusive</h4><p data-i18n="i1_p">One Head per city. Nobody else can sell the tour where you live.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><h4 data-i18n="i2_h">Commission on every player</h4><p data-i18n="i2_p">Every player from your city who signs up for a tour event pays you, every season.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg><h4 data-i18n="i3_h">Official local qualifiers</h4><p data-i18n="i3_p">Run Global Padel Tour qualifiers at your club. You keep the entry fees and your local sponsors.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg><h4 data-i18n="i4_h">Your spot at the final</h4><p data-i18n="i4_p">A guaranteed place for you in the final and nights at Eco Beach City, Sumba.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg><h4 data-i18n="i5_h">The title</h4><p data-i18n="i5_p">Head of Padel · Your city. On the tour site, the rankings and the final.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16l20-7-4 10-5-3-3 4-1-5z"/></svg><h4 data-i18n="i6_h">Travel sorted</h4><p data-i18n="i6_p">Flight deals for your players from Happy Low Cost, our travel partner since 2012.</p></div>
+    </div>
+    <div class="price reveal">
+      <div><div class="disp">€3,500</div><p data-i18n="pr_p">One payment. Founding price for the first 100 cities. No yearly fee for the licence.</p></div>
+      <a class="btn" href="#apply"><span data-i18n="cta_claim">Claim your city</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section id="final" class="final">
+  <div class="bg"><img src="/img/resort.webp" alt="Aerial view of an island resort with padel courts next to the beach" loading="lazy"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="f_eye">Season 1 final</span>
+    <h2 class="disp reveal" style="margin-top:18px" data-i18n="f_h">The final is at Eco Beach City.</h2>
+    <p class="lead reveal" style="margin-top:24px" data-i18n="f_lead">Sumba, Indonesia. An island twice the size of Bali, between Bali and Australia, with empty beaches and almost no crowds. The best pairs of every city meet here for a week of padel, ocean and sunsets.</p>
+    <div class="facts reveal">
+      <div><b data-i18n="ff1_b">Partner location</b><span data-i18n="ff1">Eco Beach City, Sumba</span></div>
+      <div><b data-i18n="ff2_b">Courts built with the tour</b><span data-i18n="ff2">City licences fund new courts on site</span></div>
+      <div><b data-i18n="ff3_b">Then the world</b><span data-i18n="ff3">New destinations, chosen with the Heads</span></div>
+    </div>
+  </div>
+  <span class="cap" data-i18n="illus">Illustrative images</span>
+</section>
+
+<section id="vibe" style="padding-top:clamp(60px,8vw,110px)">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:0">
+      <div><span class="eyebrow" data-i18n="v_eye">The tour</span><h2 class="disp" data-i18n="v_h">Amateur level. Pro feeling.</h2></div>
+      <p class="lead" data-i18n="v_lead">Real rankings, real draws, a real final. For players who train three times a week and want something bigger to play for than the club ladder.</p>
+    </div>
+    <div class="gal">
+      <figure class="reveal"><img src="/img/night.webp" alt="Night padel match by the beach" loading="lazy"><figcaption data-i18n="g1">Night sessions</figcaption></figure>
+      <figure class="reveal"><img src="/img/action.webp" alt="Padel player smashing" loading="lazy"><figcaption data-i18n="g2">Qualifiers</figcaption></figure>
+      <figure class="reveal"><img src="/img/crew.webp" alt="Padel players celebrating at sunset" loading="lazy"><figcaption data-i18n="g3">The crew</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section id="cities" style="background:var(--ink2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow" data-i18n="ci_eye">Founding cities</span><h2 class="disp" data-i18n="ci_h">100 seats. Find yours.</h2></div>
+      <p class="lead" data-i18n="ci_lead">Tap a city to claim it. Not on the list? Type it. Any city with padel players can be a founding city.</p>
+    </div>
+    <div class="cities-top">
+      <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Search your city…" data-i18n-ph="ci_ph" autocomplete="off"></div>
+      <div class="counter"><b id="cnt">100</b> / 100 <span data-i18n="ci_open">open</span></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="nores" id="nores"><b id="nrCity"></b> <span data-i18n="ci_nr">is not on the list yet, and it can be yours.</span> <a href="#apply" id="nrLink" style="color:var(--lime);font-weight:700" data-i18n="ci_nr_a">Claim it →</a></div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow" data-i18n="pa_eye">Partners</span><h2 class="disp" data-i18n="pa_h">Where we play. How you get there.</h2></div>
+    </div>
+    <div class="pcards">
+      <a class="pcard reveal" href="https://ecobeachcity.com" target="_blank" rel="noopener">
+        <span class="tag" data-i18n="p_loc">Partner location</span>
+        <h3>Eco Beach City</h3>
+        <p data-i18n="pa1">Eco-resort on the coast of Sumba, Indonesia, welcoming guests for over a year. Home of the Season 1 final and the first tour courts.</p>
+        <span class="go">ecobeachcity.com <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="pcard reveal" href="https://happylowcost.com" target="_blank" rel="noopener">
+        <span class="tag" data-i18n="p_travel">Travel partner</span>
+        <h3>Happy Low Cost</h3>
+        <p data-i18n="pa2">Flight deals since 2012, followed by more than 420,000 travellers. Helps your players get to every tour stop for less.</p>
+        <span class="go">happylowcost.com <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="road" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><span class="eyebrow" data-i18n="ro_eye">Roadmap</span><h2 class="disp" data-i18n="ro_h">Built city by city.</h2></div></div>
+    <div class="road reveal">
+      <div class="on"><small data-i18n="r1_s">Now</small><h4 data-i18n="r1_h">Founding cities</h4><p data-i18n="r1_p">The first 100 Heads claim their cities at the founding price.</p></div>
+      <div><small data-i18n="r2_s">Next</small><h4 data-i18n="r2_h">Local qualifiers</h4><p data-i18n="r2_p">Heads run official qualifiers in their cities. Rankings go live.</p></div>
+      <div><small data-i18n="r3_s">Then</small><h4 data-i18n="r3_h">Season 1 final</h4><p data-i18n="r3_p">The best pairs fly to Eco Beach City, Sumba, on new courts paid for by the tour.</p></div>
+      <div><small data-i18n="r4_s">After</small><h4 data-i18n="r4_h">New destinations</h4><p data-i18n="r4_p">More courts, more stops around the world. Every Head earns at every one.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--ink2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><span class="eyebrow">FAQ</span><h2 class="disp" data-i18n="fq_h">Straight answers.</h2></div></div>
+    <div class="faq">
+      <details><summary data-i18n="q1">How exactly do I earn?</summary><p data-i18n="a1">You earn a commission on every player from your city who registers for a Global Padel Tour event. Each Head gets a personal code and link so every registration is tracked to the right city. The rate and how it is paid are written in your licence contract.</p></details>
+      <details><summary data-i18n="q2">Do I have to live in the city?</summary><p data-i18n="a2">No. You need to be able to bring players from it: club owners, coaches, organisers and well-connected players are the ideal Heads.</p></details>
+      <details><summary data-i18n="q3">What does the €3,500 pay for?</summary><p data-i18n="a3">Your exclusive city licence for the tour, your place in the final with nights at Eco Beach City, and the right to run official qualifiers. Licence money is used to build the courts and run the tour, starting at Eco Beach City.</p></details>
+      <details><summary data-i18n="q4">What if my city is already taken?</summary><p data-i18n="a4">Then pick a city nearby. There is room for many cities per country, and a big city can be split into areas if demand is there.</p></details>
+      <details><summary data-i18n="q5">Is this a professional tour?</summary><p data-i18n="a5">No. Global Padel Tour is an independent international amateur circuit for club players of all levels. It is not affiliated with the FIP, Premier Padel or any professional tour.</p></details>
+      <details><summary data-i18n="q6">What happens after I apply?</summary><p data-i18n="a6">We confirm your city is free, then you book a 15-minute call. If it is a fit, you get your licence contract and your city is yours once it is signed and paid.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" class="apply">
+  <div class="wrap apply-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="ap_eye">Apply</span>
+      <h2 class="disp" style="margin:18px 0 22px" data-i18n="ap_h">Claim your city.</h2>
+      <p class="lead" data-i18n="ap_lead">Two minutes. We check your city is free and send you the next step today.</p>
+      <ul class="checks">
+        <li data-i18n="ap1">One Head per city, first come, first served</li>
+        <li data-i18n="ap2">Commission on every player from your city</li>
+        <li data-i18n="ap3">Your place in the final at Eco Beach City</li>
+        <li data-i18n="ap4">€3,500 once, founding price</li>
+      </ul>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <div id="fbody">
+        <div class="row">
+          <div class="f"><label for="city" data-i18n="fl_city">Your city *</label><input id="city" name="city" required autocomplete="address-level2" placeholder="Madrid"></div>
+          <div class="f"><label for="country" data-i18n="fl_country">Country *</label><select id="country" name="country" required></select></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="name" data-i18n="fl_name">Full name *</label><input id="name" name="name" required autocomplete="name"></div>
+          <div class="f"><label for="email" data-i18n="fl_email">Email *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="phone" data-i18n="fl_phone">WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+34 …"></div>
+          <div class="f"><label for="profile" data-i18n="fl_profile">You are *</label>
+            <select id="profile" name="profile" required>
+              <option value="" data-i18n="op0">Choose one</option>
+              <option value="club_owner" data-i18n="op1">Club owner / manager</option>
+              <option value="coach" data-i18n="op2">Padel coach</option>
+              <option value="organiser" data-i18n="op3">Tournament organiser</option>
+              <option value="player" data-i18n="op4">Player with a big network</option>
+              <option value="other" data-i18n="op5">Other</option>
+            </select></div>
+        </div>
+        <div class="f"><label for="players" data-i18n="fl_players">Players you could bring per season</label>
+          <select id="players" name="players"><option>5–10</option><option selected>10–25</option><option>25–50</option><option>50–100</option><option>100+</option></select></div>
+        <div class="f"><label for="about" data-i18n="fl_about">Tell us about your padel world (optional)</label><textarea id="about" name="about" data-i18n-ph="fl_about_ph" placeholder="Club, students, groups, tournaments you run…"></textarea></div>
+        <label class="consent"><input type="checkbox" id="consent" required><span data-i18n="fl_consent">I agree to be contacted about Global Padel Tour by email and WhatsApp.</span></label>
+        <button class="btn btn-lime" type="submit" id="sub"><span data-i18n="fl_submit">Claim my city</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="err" id="err"></div>
+      </div>
+      <div class="ok" id="ok">
+        <svg width="64" height="64" viewBox="0 0 40 40" style="margin:auto"><circle cx="20" cy="20" r="18" fill="#d9ff3c"/><path d="M12 20.5l5 5 11-11" stroke="#07131a" stroke-width="3.4" fill="none" stroke-linecap="round"/></svg>
+        <div class="disp" id="okH">Madrid is on hold for you.</div>
+        <p data-i18n="ok_p">We got your application. Last step: book your 15-minute call so we can confirm your city.</p>
+        <a class="btn btn-lime" id="callBtn" href="https://cal.com/call-15-min/15min" target="_blank" rel="noopener"><span data-i18n="ok_btn">Book my 15-minute call</span></a>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#d9ff3c"/><path d="M5 13c8 3 12 10 11 23M35 27c-8-3-12-10-11-23" stroke="#07131a" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg><b>GLOBAL <span>PADEL</span> TOUR</b></a>
+      <p style="margin-top:14px"><span data-i18n="ft_contact">Contact:</span> <a href="mailto:carlos@ecobeachcity.com">carlos@ecobeachcity.com</a></p>
+      <p style="margin-top:6px"><span data-i18n="p_loc">Partner location</span>: <a href="https://ecobeachcity.com" target="_blank" rel="noopener">ecobeachcity.com</a> · <span data-i18n="p_travel">Travel partner</span>: <a href="https://happylowcost.com" target="_blank" rel="noopener">Happy Low Cost</a></p>
+    </div>
+    <p class="legal" data-i18n="ft_legal">Global Padel Tour is an independent international amateur padel circuit and is not affiliated with the International Padel Federation (FIP), Premier Padel or any professional tour. Figures on this page are illustrative and are not a promise of income. Licence terms, commission and payments are set out in each Head's contract. Images are illustrative.</p>
+  </div>
+  <div class="wrap" style="display:block;margin-top:26px;font-size:12px">© <span id="yr">2026</span> Global Padel Tour</div>
+</footer>
+
+<div class="sticky-cta" id="sticky"><a class="btn btn-lime" href="#apply" data-i18n="cta_claim">Claim your city</a></div>
+
+<script>
+(function(){
+var CITIES=[["Madrid","ES"],["Barcelona","ES"],["Málaga","ES"],["Marbella","ES"],["Valencia","ES"],["Seville","ES"],["Bilbao","ES"],["Palma","ES"],["Alicante","ES"],["Zaragoza","ES"],["Murcia","ES"],["Las Palmas","ES"],["Tenerife","ES"],["Granada","ES"],["A Coruña","ES"],["San Sebastián","ES"],["Lisbon","PT"],["Porto","PT"],["Faro","PT"],["Rome","IT"],["Milan","IT"],["Turin","IT"],["Naples","IT"],["Florence","IT"],["Bologna","IT"],["Paris","FR"],["Lyon","FR"],["Marseille","FR"],["Bordeaux","FR"],["Nice","FR"],["Toulouse","FR"],["London","GB"],["Manchester","GB"],["Edinburgh","GB"],["Birmingham","GB"],["Dublin","IE"],["Amsterdam","NL"],["Rotterdam","NL"],["Brussels","BE"],["Antwerp","BE"],["Berlin","DE"],["Munich","DE"],["Hamburg","DE"],["Düsseldorf","DE"],["Zurich","CH"],["Geneva","CH"],["Vienna","AT"],["Stockholm","SE"],["Gothenburg","SE"],["Malmö","SE"],["Copenhagen","DK"],["Aarhus","DK"],["Oslo","NO"],["Helsinki","FI"],["Warsaw","PL"],["Prague","CZ"],["Athens","GR"],["Limassol","CY"],["Valletta","MT"],["Dubai","AE"],["Abu Dhabi","AE"],["Doha","QA"],["Riyadh","SA"],["Jeddah","SA"],["Kuwait City","KW"],["Manama","BH"],["Cairo","EG"],["Marrakech","MA"],["Cape Town","ZA"],["Johannesburg","ZA"],["Buenos Aires","AR"],["Córdoba AR","AR"],["Rosario","AR"],["Mendoza","AR"],["Montevideo","UY"],["Santiago","CL"],["Asunción","PY"],["São Paulo","BR"],["Rio de Janeiro","BR"],["Mexico City","MX"],["Monterrey","MX"],["Guadalajara","MX"],["Cancún","MX"],["Miami","US"],["New York","US"],["Los Angeles","US"],["Austin","US"],["Toronto","CA"],["Panama City","PA"],["Bogotá","CO"],["Medellín","CO"],["Lima","PE"],["Sydney","AU"],["Melbourne","AU"],["Brisbane","AU"],["Perth","AU"],["Auckland","NZ"],["Singapore","SG"],["Bali","ID"],["Bangkok","TH"]];
+var COUNTRIES={ES:"Spain",PT:"Portugal",IT:"Italy",FR:"France",GB:"United Kingdom",IE:"Ireland",NL:"Netherlands",BE:"Belgium",DE:"Germany",CH:"Switzerland",AT:"Austria",SE:"Sweden",DK:"Denmark",NO:"Norway",FI:"Finland",PL:"Poland",CZ:"Czechia",GR:"Greece",CY:"Cyprus",MT:"Malta",AE:"United Arab Emirates",QA:"Qatar",SA:"Saudi Arabia",KW:"Kuwait",BH:"Bahrain",EG:"Egypt",MA:"Morocco",ZA:"South Africa",AR:"Argentina",UY:"Uruguay",CL:"Chile",PY:"Paraguay",BR:"Brazil",MX:"Mexico",US:"United States",CA:"Canada",PA:"Panama",CO:"Colombia",PE:"Peru",AU:"Australia",NZ:"New Zealand",SG:"Singapore",ID:"Indonesia",TH:"Thailand",EC:"Ecuador",CR:"Costa Rica",VE:"Venezuela",DO:"Dominican Republic",PR:"Puerto Rico",GT:"Guatemala",BO:"Bolivia",LU:"Luxembourg",EE:"Estonia",LV:"Latvia",LT:"Lithuania",HU:"Hungary",RO:"Romania",BG:"Bulgaria",HR:"Croatia",SI:"Slovenia",RS:"Serbia",TR:"Türkiye",IL:"Israel",IN:"India",JP:"Japan",CN:"China",HK:"Hong Kong",MY:"Malaysia",PH:"Philippines",VN:"Vietnam",KR:"South Korea",TN:"Tunisia",NG:"Nigeria",KE:"Kenya",OM:"Oman",JO:"Jordan",LB:"Lebanon",IS:"Iceland",AD:"Andorra",MC:"Monaco",GI:"Gibraltar",OT:"Other"};
+var FLAG=function(cc){if(cc==="OT")return"🌍";return cc.replace(/./g,function(c){return String.fromCodePoint(127397+c.charCodeAt())})};
+
+var ES={nav_how:"Cómo funciona",nav_money:"Los números",nav_final:"La final",nav_cities:"Ciudades",cta_claim:"Reclama tu ciudad",cta_numbers:"Ver los números",hero_pill:"Temporada 1 · Ciudades fundadoras abiertas",hero_h1:"Tu ciudad. <em>El mundo de pista.</em>",hero_lead:"Global Padel Tour es un circuito amateur internacional con un Head por ciudad. Tú traes a tus jugadores. Ganas con cada uno que juega el tour. La final, en un acantilado sobre el océano Índico.",m_cities:"ciudades fundadoras",m_head:"Head por ciudad",m_once:"pago único, precio fundador",m_final:"final de la Temporada 1",m_price:"3.500 €",p_loc:"Sede partner",p_travel:"Partner de viajes",p_format:"Formato",p_format_v:"Amateur · Todos los niveles · Mixto",how_eye:"Cómo funciona",how_h:"Tres jugadas. Un tour.",how_lead:"Cada ciudad fundadora tiene un solo Head. Esa persona es el tour en su ciudad: trae a los jugadores y el tour le paga por cada uno.",s1_h:"Reclama tu ciudad",s1_p:"Una licencia por ciudad, en exclusiva. Te conviertes en Head of Padel de Madrid, Milán, Dubái o donde juegues. Cuando una ciudad se coge, ya no vuelve.",s2_h:"Trae a tus jugadores",s2_p:"Tu club, tus alumnos, tu grupo de WhatsApp. Organiza clasificatorios oficiales y manda a tus mejores parejas a las pruebas del tour y a la final.",s3_h:"Gana con cada uno",s3_p:"Cada jugador de tu ciudad que se inscribe en un evento del tour te deja una comisión. Tu código personal lo hace automático. Temporada tras temporada.",mo_eye:"Los números",mo_h:"Se paga sola. Luego te paga a ti.",mo_lead:"Mueve los controles. Mira cuántos jugadores de tu ciudad hacen falta para recuperar los 3.500 € y cómo queda una temporada a partir de ahí.",c_players:"Jugadores de tu ciudad por temporada",c_players_h:"Un dueño de club o entrenador suele empezar con sus propios jugadores.",c_pkg:"Paquete medio de torneo",c_pkg_h:"Inscripción + estancia en el destino del tour. Los vuelos se reservan aparte.",c_com:"Tu comisión",c_com_h:"Fijada en tu contrato de licencia.",c_year:"Ganas por temporada",c_per:"Por jugador",c_back:"Jugadores para recuperar 3.500 €",c_net:"Neto tras la licencia, temporada 1",c_net2:"Desde la temporada 2 (sin licencia que pagar)",c_fine:"Ejemplo ilustrativo, no es una promesa de ingresos. El precio de los paquetes y la comisión se fijan en tu contrato de licencia. Lo que ganas depende de los jugadores que traigas.",in_eye:"Tu licencia de ciudad",in_h:"Todo lo que tiene un Head.",in_lead:"No compras una entrada. Te sientas en la mesa de un tour que se construye ciudad a ciudad.",i1_h:"Tu ciudad, en exclusiva",i1_p:"Un Head por ciudad. Nadie más puede vender el tour donde tú vives.",i2_h:"Comisión por cada jugador",i2_p:"Cada jugador de tu ciudad que se apunta a un evento del tour te paga, cada temporada.",i3_h:"Clasificatorios oficiales",i3_p:"Organiza clasificatorios de Global Padel Tour en tu club. Te quedas las inscripciones y tus sponsors locales.",i4_h:"Tu plaza en la final",i4_p:"Plaza garantizada para ti en la final y noches en Eco Beach City, Sumba.",i5_h:"El título",i5_p:"Head of Padel · Tu ciudad. En la web del tour, los rankings y la final.",i6_h:"Viajes resueltos",i6_p:"Chollos de vuelos para tus jugadores con Happy Low Cost, nuestro partner de viajes desde 2012.",pr_p:"Un solo pago. Precio fundador para las primeras 100 ciudades. Sin cuota anual por la licencia.",f_eye:"Final de la Temporada 1",f_h:"La final es en Eco Beach City.",f_lead:"Sumba, Indonesia. Una isla el doble de grande que Bali, entre Bali y Australia, con playas vacías y casi sin gente. Las mejores parejas de cada ciudad se juntan aquí para una semana de pádel, océano y atardeceres.",ff1_b:"Sede partner",ff1:"Eco Beach City, Sumba",ff2_b:"Pistas hechas con el tour",ff2:"Las licencias financian pistas nuevas allí",ff3_b:"Después, el mundo",ff3:"Nuevos destinos, elegidos con los Heads",illus:"Imágenes ilustrativas",v_eye:"El tour",v_h:"Nivel amateur. Sensación pro.",v_lead:"Rankings de verdad, cuadros de verdad, una final de verdad. Para jugadores que entrenan tres veces por semana y quieren jugar por algo más grande que la liguilla del club.",g1:"Sesiones nocturnas",g2:"Clasificatorios",g3:"La crew",ci_eye:"Ciudades fundadoras",ci_h:"100 plazas. Busca la tuya.",ci_lead:"Toca una ciudad para reclamarla. ¿No está en la lista? Escríbela. Cualquier ciudad con jugadores de pádel puede ser fundadora.",ci_ph:"Busca tu ciudad…",ci_open:"libres",ci_nr:"aún no está en la lista, y puede ser tuya.",ci_nr_a:"Reclámala →",pa_eye:"Partners",pa_h:"Dónde jugamos. Cómo llegas.",pa1:"Eco-resort en la costa de Sumba, Indonesia, recibiendo huéspedes desde hace más de un año. Sede de la final de la Temporada 1 y de las primeras pistas del tour.",pa2:"Chollos de vuelos desde 2012, con más de 420.000 viajeros. Ayuda a tus jugadores a llegar a cada parada del tour por menos.",ro_eye:"Hoja de ruta",ro_h:"Ciudad a ciudad.",r1_s:"Ahora",r1_h:"Ciudades fundadoras",r1_p:"Los primeros 100 Heads reclaman su ciudad a precio fundador.",r2_s:"Siguiente",r2_h:"Clasificatorios locales",r2_p:"Los Heads organizan clasificatorios oficiales en su ciudad. Arrancan los rankings.",r3_s:"Luego",r3_h:"Final Temporada 1",r3_p:"Las mejores parejas vuelan a Eco Beach City, Sumba, a pistas nuevas pagadas por el tour.",r4_s:"Después",r4_h:"Nuevos destinos",r4_p:"Más pistas, más paradas por el mundo. Cada Head gana en todas.",fq_h:"Respuestas claras.",q1:"¿Cómo gano exactamente?",a1:"Ganas una comisión por cada jugador de tu ciudad que se inscribe en un evento de Global Padel Tour. Cada Head tiene un código y un enlace personal para que cada inscripción quede asignada a su ciudad. El porcentaje y cómo se paga están en tu contrato de licencia.",q2:"¿Tengo que vivir en la ciudad?",a2:"No. Tienes que poder traer jugadores de ella: dueños de club, entrenadores, organizadores y jugadores con mucha red son los Heads ideales.",q3:"¿Qué pago con los 3.500 €?",a3:"Tu licencia exclusiva de ciudad para el tour, tu plaza en la final con noches en Eco Beach City y el derecho a organizar clasificatorios oficiales. El dinero de las licencias se usa para construir las pistas y montar el tour, empezando por Eco Beach City.",q4:"¿Y si mi ciudad ya está cogida?",a4:"Elige una ciudad cercana. Hay sitio para muchas ciudades por país, y una ciudad grande se puede dividir por zonas si hay demanda.",q5:"¿Es un circuito profesional?",a5:"No. Global Padel Tour es un circuito amateur internacional e independiente para jugadores de club de todos los niveles. No está afiliado a la FIP, Premier Padel ni a ningún circuito profesional.",q6:"¿Qué pasa cuando lo solicito?",a6:"Confirmamos que tu ciudad está libre y reservas una llamada de 15 minutos. Si encaja, recibes tu contrato de licencia y la ciudad es tuya cuando está firmado y pagado.",ap_eye:"Solicitud",ap_h:"Reclama tu ciudad.",ap_lead:"Dos minutos. Comprobamos que tu ciudad está libre y te mandamos el siguiente paso hoy.",ap1:"Un Head por ciudad, por orden de llegada",ap2:"Comisión por cada jugador de tu ciudad",ap3:"Tu plaza en la final en Eco Beach City",ap4:"3.500 € pago único, precio fundador",fl_city:"Tu ciudad *",fl_country:"País *",fl_name:"Nombre completo *",fl_email:"Email *",fl_phone:"WhatsApp",fl_profile:"Eres *",op0:"Elige una",op1:"Dueño / gerente de club",op2:"Entrenador de pádel",op3:"Organizador de torneos",op4:"Jugador con mucha red",op5:"Otro",fl_players:"Jugadores que podrías traer por temporada",fl_about:"Cuéntanos tu mundo del pádel (opcional)",fl_about_ph:"Club, alumnos, grupos, torneos que organizas…",fl_consent:"Acepto que me contacten sobre Global Padel Tour por email y WhatsApp.",fl_submit:"Reclamar mi ciudad",ok_p:"Hemos recibido tu solicitud. Último paso: reserva tu llamada de 15 minutos para confirmar tu ciudad.",ok_btn:"Reservar mi llamada de 15 min",ft_contact:"Contacto:",ft_legal:"Global Padel Tour es un circuito amateur internacional e independiente y no está afiliado a la Federación Internacional de Pádel (FIP), Premier Padel ni a ningún circuito profesional. Las cifras de esta página son ilustrativas y no son una promesa de ingresos. Las condiciones de la licencia, la comisión y los pagos se recogen en el contrato de cada Head. Imágenes ilustrativas."};
+ES.hero_h1="Tu ciudad. <em>Tu tour mundial.</em>";
+
+var EN={}; var lang="en";
+function snapEN(){document.querySelectorAll("[data-i18n]").forEach(function(e){EN[e.dataset.i18n]=e.textContent});document.querySelectorAll("[data-i18n-html]").forEach(function(e){EN[e.dataset.i18nHtml]=e.innerHTML});document.querySelectorAll("[data-i18n-ph]").forEach(function(e){EN[e.dataset.i18nPh]=e.placeholder})}
+function setLang(l){lang=l;var D=l==="es"?ES:EN;document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(function(e){var v=D[e.dataset.i18n];if(v!=null)e.textContent=v});
+  document.querySelectorAll("[data-i18n-html]").forEach(function(e){var v=D[e.dataset.i18nHtml];if(v!=null)e.innerHTML=v});
+  document.querySelectorAll("[data-i18n-ph]").forEach(function(e){var v=D[e.dataset.i18nPh];if(v!=null)e.placeholder=v});
+  document.getElementById("langBtn").textContent=l==="es"?"EN":"ES";
+  try{localStorage.setItem("gpt_lang",l)}catch(e){}
+  calc();
+}
+snapEN();
+var qs=new URLSearchParams(location.search);var saved=null;try{saved=localStorage.getItem("gpt_lang")}catch(e){}
+var start=qs.get("lang")||saved||((navigator.language||"").toLowerCase().indexOf("es")===0?"es":"en");
+document.getElementById("langBtn").onclick=function(){setLang(lang==="es"?"en":"es")};
+
+// marquee
+var tr=document.getElementById("track");var names=CITIES.map(function(c){return c[0].replace(" AR","")});
+var html=names.map(function(n){return"<span>"+n+"</span>"}).join("");tr.innerHTML=html+html;
+
+// cities grid
+var grid=document.getElementById("grid");
+grid.innerHTML=CITIES.map(function(c){var n=c[0].replace(" AR","");return'<button type="button" class="city" data-c="'+n+'" data-cc="'+c[1]+'"><span>'+FLAG(c[1])+" "+n+"<small>"+COUNTRIES[c[1]]+'</small></span><em>OPEN</em></button>'}).join("");
+grid.addEventListener("click",function(e){var b=e.target.closest(".city");if(!b)return;pick(b.dataset.c,b.dataset.cc)});
+function norm(s){return s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim()}
+var q=document.getElementById("q"),nores=document.getElementById("nores");
+q.addEventListener("input",function(){var v=norm(q.value),n=0;grid.querySelectorAll(".city").forEach(function(b){var m=!v||norm(b.dataset.c+" "+COUNTRIES[b.dataset.cc]).indexOf(v)>-1;b.style.display=m?"":"none";if(m)n++});
+  if(v&&n===0){nores.style.display="block";document.getElementById("nrCity").textContent=q.value.trim()}else nores.style.display="none"});
+document.getElementById("nrLink").addEventListener("click",function(){document.getElementById("city").value=q.value.trim()});
+function pick(city,cc){document.getElementById("city").value=city;if(cc)document.getElementById("country").value=cc;document.getElementById("apply").scrollIntoView({behavior:"smooth"});setTimeout(function(){document.getElementById("name").focus({preventScroll:true})},700)}
+
+// country select
+var sel=document.getElementById("country");var keys=Object.keys(COUNTRIES).filter(function(k){return k!=="OT"}).sort(function(a,b){return COUNTRIES[a].localeCompare(COUNTRIES[b])});keys.push("OT");
+sel.innerHTML='<option value="">—</option>'+keys.map(function(k){return'<option value="'+k+'">'+FLAG(k)+" "+COUNTRIES[k]+"</option>"}).join("");
+fetch("/api/geo").then(function(r){return r.json()}).then(function(g){if(g&&g.country&&COUNTRIES[g.country]&&!sel.value)sel.value=g.country}).catch(function(){});
+
+// calculator
+var r1=document.getElementById("r1"),r2=document.getElementById("r2"),r3=document.getElementById("r3");
+function eur(n){return"€"+Math.round(n).toLocaleString(lang==="es"?"es-ES":"en-GB")}
+function fill(r){r.style.setProperty("--p",((r.value-r.min)/(r.max-r.min)*100)+"%")}
+function calc(){var p=+r1.value,k=+r2.value,c=+r3.value/100,per=k*c,tot=per*p,back=Math.ceil(3500/per);
+  document.getElementById("o1").textContent=p;document.getElementById("o2").textContent=eur(k);document.getElementById("o3").textContent=r3.value+"%";
+  document.getElementById("earn").textContent=eur(tot);document.getElementById("per").textContent=eur(per);document.getElementById("back").textContent=back;
+  var net=tot-3500;document.getElementById("net").textContent=(net<0?"−":"")+eur(Math.abs(net));document.getElementById("net2").textContent=eur(tot);
+  var max=Math.max(tot,3500)*1.15;document.getElementById("barI").style.width=(tot/max*100)+"%";document.getElementById("barS").style.left=(3500/max*100)+"%";
+  [r1,r2,r3].forEach(fill)}
+[r1,r2,r3].forEach(function(r){r.addEventListener("input",calc)});
+
+setLang(start);
+
+// nav + reveal + sticky
+var nav=document.getElementById("nav"),sticky=document.getElementById("sticky"),ap=document.getElementById("apply");
+function onS(){var y=scrollY;nav.classList.toggle("solid",y>40);var a=ap.getBoundingClientRect();sticky.classList.toggle("show",y>innerHeight*.8&&(a.top>innerHeight||a.bottom<0))}
+addEventListener("scroll",onS,{passive:true});onS();
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"});document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)})}else document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in")});
+document.getElementById("yr").textContent=new Date().getFullYear();
+
+// form
+var SB="https://oykcsmextclpdnugixqz.supabase.co",KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw";
+var form=document.getElementById("form"),err=document.getElementById("err"),sub=document.getElementById("sub");
+function v(id){return document.getElementById(id).value.trim()}
+form.addEventListener("submit",function(e){e.preventDefault();err.style.display="none";
+  var es=lang==="es",city=v("city"),cc=v("country"),email=v("email"),name=v("name"),prof=v("profile");
+  var miss=!city?(es?"Escribe tu ciudad.":"Enter your city."):!cc?(es?"Elige tu país.":"Choose your country."):!name?(es?"Escribe tu nombre.":"Enter your name."):!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)?(es?"Revisa tu email.":"Check your email."):!prof?(es?"Dinos quién eres.":"Tell us who you are."):!document.getElementById("consent").checked?(es?"Marca la casilla para que podamos contactarte.":"Tick the box so we can contact you."):"";
+  if(miss){err.textContent=miss;err.style.display="block";return}
+  sub.disabled=true;sub.style.opacity=.6;
+  fetch(SB+"/rest/v1/rpc/gpt_apply",{method:"POST",headers:{"content-type":"application/json",apikey:KEY,authorization:"Bearer "+KEY},body:JSON.stringify({p_city:city,p_country:cc,p_name:name,p_email:email,p_phone:v("phone"),p_profile:prof,p_players:v("players"),p_about:v("about"),p_lang:lang,p_src:(location.pathname+location.search).slice(0,300)})})
+  .then(function(r){return r.json().then(function(j){if(!r.ok||!j||j.ok===false)throw new Error(j&&j.error||r.status);return j})})
+  .then(function(){
+    document.getElementById("fbody").style.display="none";var ok=document.getElementById("ok");ok.style.display="block";
+    document.getElementById("okH").textContent=es?(city+" está reservada para ti."):(city+" is on hold for you.");
+    var u="https://cal.com/call-15-min/15min?email="+encodeURIComponent(email)+"&name="+encodeURIComponent(name)+"&notes="+encodeURIComponent("Global Padel Tour · Head of "+city+" ("+cc+")")+"&src=globalpadeltour";
+    document.getElementById("callBtn").href=u;ok.scrollIntoView({behavior:"smooth",block:"center"});
+    try{if(window.fbq)fbq("track","Lead")}catch(e){}
+  })
+  .catch(function(){err.textContent=es?"No se ha podido enviar. Inténtalo otra vez o escribe a carlos@ecobeachcity.com":"Could not send. Try again or email carlos@ecobeachcity.com";err.style.display="block"})
+  .finally(function(){sub.disabled=false;sub.style.opacity=1});
+});
+if(qs.get("city"))document.getElementById("city").value=qs.get("city");
+})();
+</script>
+</body>
+</html>
