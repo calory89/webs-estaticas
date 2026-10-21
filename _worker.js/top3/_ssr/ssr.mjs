@@ -10915,7 +10915,7 @@ function page(o) {
 	const t = T[o.L];
 	const url = SITE + P(o.L, o.path);
 	const image = o.image ?? `https://www.top3hotels.com/og.png`;
-	const alt = o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
+	const alt = o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
 	const langSel = o.langs ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${LANGS.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T[l].name}</option>`).join("")}</select></label>` : "";
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
@@ -10975,7 +10975,7 @@ function altSearch(k, nightly, stars, city) {
 	return CJ_BOOKING(u.toString(), "t3alt");
 }
 var CSS_ALT = `.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
-function card(h, city, i, L, sights, cityImg) {
+function card(h, city, i, L, sights, cityImg, review) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
 	const img = h.gallery?.find((g) => g.src)?.src;
@@ -11014,6 +11014,7 @@ ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
 ${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
+${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
 <div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a><a class="report" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Correction: ${h.name} (${city.city})`)}">${esc(M[L].report)}</a></div>
 ${h.evidence?.reasons?.length ? `<details><summary>${esc(t.why(label(h, L)))}</summary><ul>${h.evidence.reasons.slice(0, 4).map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>` : ""}
 </div></article>`;
@@ -11039,6 +11040,7 @@ function mapScript(hs, sights) {
 <script>(function(){var P=${json(pts)},S=${json(ss)},el=document.getElementById('map');if(!el)return;var go=function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js';s.onload=function(){var dark=matchMedia('(prefers-color-scheme: dark)').matches;var m=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/'+(dark?'dark':'positron'),center:[P[0].lng,P[0].lat],zoom:12,attributionControl:{compact:true},cooperativeGestures:true});m.addControl(new maplibregl.NavigationControl({showCompass:false}));var b=new maplibregl.LngLatBounds();P.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:30px;height:30px;border-radius:50%;background:'+p.c+';color:#fff;font:700 14px system-ui;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 3px 10px #0005';d.textContent=p.n;new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:18}).setText(p.name)).addTo(m);b.extend([p.lng,p.lat])});var cx=P.reduce(function(t,p){return t+p.lng},0)/P.length,cy=P.reduce(function(t,p){return t+p.lat},0)/P.length;S.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:12px;height:12px;border-radius:50%;background:#46566a;border:2px solid #fff';new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:10}).setText(p.name)).addTo(m);var dk=Math.hypot((p.lng-cx)*Math.cos(cy*Math.PI/180),p.lat-cy)*111;if(dk<=3)b.extend([p.lng,p.lat])});m.fitBounds(b,{padding:50,maxZoom:15,duration:0})};document.head.appendChild(s)};if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();go()}},{rootMargin:'300px'});io.observe(el)}else go()})();<\/script>`;
 }
 async function cityPage(city, L) {
+	const hpLive = new Set((await hotelPagesList()).map((x) => x.slug));
 	const cd = await cityData(city.id);
 	if (!cd || cd.hotels?.length !== 3) return null;
 	const t = T[L];
@@ -11200,7 +11202,7 @@ async function cityPage(city, L) {
 			c: city.city
 		}))}"></span>
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
-<div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0)).join("")}</div>
+<div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(HP_LANGS.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
 <aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
 <p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · Booking.com · ${esc(checked)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
@@ -12088,6 +12090,94 @@ async function feedJson() {
 		"cache-control": "public, max-age=3600"
 	} });
 }
+var HP_API = "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/top3-seo-agent";
+var HP_LANGS = ["en", "es"];
+var hpSlugify = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+var hotelSlug = (name, citySlug) => `${hpSlugify(name)}-${citySlug}`.replace(/-+/g, "-");
+var hpCache;
+async function hotelPagesList() {
+  if (hpCache && Date.now() - hpCache.at < 18e5) return hpCache.rows;
+  try {
+    const r = await fetch(`${HP_API}?action=list`, { cf: { cacheTtl: 1800, cacheEverything: true } });
+    if (r.ok) hpCache = { at: Date.now(), rows: await r.json() };
+  } catch {}
+  return hpCache?.rows ?? [];
+}
+async function hotelPageData(slug) {
+  try {
+    const r = await fetch(`${HP_API}?action=get&slug=${encodeURIComponent(slug)}`, { cf: { cacheTtl: 3600, cacheEverything: true } });
+    return r.ok ? await r.json() : null;
+  } catch { return null; }
+}
+var HPT = {
+  en: { home: "Home", review: "Review", book: "Check prices on Booking.com", faq: "Questions travellers ask", others: "Our other two picks in", all: "See all three picks in", updated: "Updated", by: "By the Top3Hotels editorial team. Based on Booking.com guest scores and reviews, location data and reference prices. We did not stay at this hotel.", per: "per night (reference)", score: "Guest score", reviews: "reviews", cat_budget: "Budget pick", cat_value: "Best Value pick", cat_lux: "Luxury pick", from: "chosen from", hotels: "hotels compared", disc: "We may earn a commission if you book. It never changes our pick.", altl: "Sold out on your dates? See the best available alternatives" },
+  es: { home: "Inicio", review: "Análisis", book: "Ver precios en Booking.com", faq: "Preguntas frecuentes", others: "Nuestras otras dos elecciones en", all: "Ver los tres hoteles de", updated: "Actualizado", by: "Por el equipo editorial de Top3Hotels. Basado en puntuaciones y reseñas de Booking.com, datos de ubicación y precios de referencia. No nos hemos alojado en este hotel.", per: "por noche (referencia)", score: "Nota de huéspedes", reviews: "reseñas", cat_budget: "Elección económica", cat_value: "Elección calidad-precio", cat_lux: "Elección de lujo", from: "elegido entre", hotels: "hoteles comparados", disc: "Podemos ganar una comisión si reservas. Nunca cambia nuestra elección.", altl: "¿Sin disponibilidad en tus fechas? Ver alternativas disponibles" }
+};
+var CSS_HP = `.hp-facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 18px;font-size:15px;opacity:.9}.hp-facts b{font-weight:700}.hp-badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--pale,#eef3fa);margin:0 0 10px}
+.hp-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:6px 0 18px;background:#e5e8ee}.hp-verdict{font-size:19px;line-height:1.55;border-left:4px solid currentColor;padding:4px 0 4px 16px;margin:0 0 22px}
+.hp-cta{display:block;text-align:center;font-weight:700;padding:14px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;margin:18px 0 6px}.hp-small{font-size:13px;opacity:.7;text-align:center;margin:0 0 6px}.hp-alt{display:block;text-align:center;font-size:14px;margin:0 0 22px}
+.hp-faq details{border-top:1px solid rgba(127,127,127,.25);padding:12px 0}.hp-faq summary{font-weight:700;cursor:pointer;font-size:17px}.hp-others{display:grid;gap:10px;margin:10px 0 0;padding:0;list-style:none}.hp-others a{display:block;padding:12px 14px;border:1px solid rgba(127,127,127,.25);border-radius:12px;text-decoration:none}`;
+async function hotelPage(slug, L) {
+  if (!HP_LANGS.includes(L)) return null;
+  const d = await hotelPageData(slug);
+  const c = d?.content?.[L];
+  if (!d || !c) return null;
+  const f = d.facts ?? {};
+  const t = HPT[L];
+  const { bySlug } = await data();
+  const city = bySlug.get(d.city_slug);
+  const live = new Set((await hotelPagesList()).map((x) => x.slug));
+  const bk = f.booking_url ? CJ_BOOKING(String(f.booking_url), "t3hotel") : null;
+  const alt = altSearch(d.cat, f.nightly_eur, f.stars, { city: d.city, country: d.country });
+  const others = (f.other_picks ?? []).map((o) => {
+    const s2 = hotelSlug(o.name, d.city_slug);
+    const href = live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`);
+    return `<li><a href="${esc(href)}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
+  });
+  const upd = (d.updated_at || d.published_at || "").slice(0, 10);
+  const path = `/hotel/${slug}`;
+  const facts = [
+    f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
+    f.stars ? `<span>${"★".repeat(Number(f.stars))}</span>` : "",
+    f.nightly_eur ? `<span><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
+    f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
+    f.candidates_compared ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
+  ].filter(Boolean).join("");
+  const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p><a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : "";
+  const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
+<nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
+<span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
+<h1>${esc(f.name)}</h1>
+<p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
+${f.photo ? `<img class="hp-hero" src="${esc(f.photo)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+<div class="hp-facts">${facts}</div>
+<p class="hp-verdict">${esc(c.verdict)}</p>
+${cta}
+${(c.sections ?? []).map((x) => `<h2>${esc(x.h)}</h2>${(x.p ?? []).map((pp) => `<p>${esc(pp)}</p>`).join("")}`).join("\n")}
+${cta}
+<h2>${esc(t.faq)}</h2><div class="hp-faq">${(c.faq ?? []).map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
+<h2>${esc(t.others)} ${esc(d.city)}</h2><ul class="hp-others">${others.join("")}<li><a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(d.city)} →</a></li></ul>
+</article>`;
+  const ld = [
+    { "@context": "https://schema.org", "@type": "Hotel", name: f.name, url: SITE + P(L, path), ...(f.photo ? { image: f.photo } : {}),
+      address: { "@type": "PostalAddress", ...(f.address ? { streetAddress: f.address } : {}), addressLocality: d.city, addressCountry: city?.cc || d.country },
+      ...(f.lat ? { geo: { "@type": "GeoCoordinates", latitude: f.lat, longitude: f.lng } } : {}),
+      ...(f.stars ? { starRating: { "@type": "Rating", ratingValue: f.stars } } : {}),
+      ...(f.nightly_eur ? { priceRange: `€${Math.round(f.nightly_eur)} per night (reference)` } : {}) },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: (c.faq ?? []).map((q) => ({ "@type": "Question", name: q.q, acceptedAnswer: { "@type": "Answer", text: q.a } })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: t.home, item: SITE + P(L, "/") },
+      { "@type": "ListItem", position: 2, name: d.city, item: SITE + P(L, `/${d.city_slug}`) },
+      { "@type": "ListItem", position: 3, name: f.name, item: SITE + P(L, path) }
+    ] }
+  ];
+  return page({ L, title: `${c.title} | Top3Hotels`, description: c.meta, path, body, ld, alts: HP_LANGS, image: f.photo || void 0 });
+}
+async function hotelSitemap() {
+  const rows = await hotelPagesList();
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rows.flatMap((r) => HP_LANGS.map((L) => `<url><loc>${SITE}${P(L, `/hotel/${r.slug}`)}</loc><lastmod>${(r.published_at ?? "").slice(0, 10)}</lastmod>${HP_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, `/hotel/${r.slug}`)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`;
+}
+
 async function sitemapFor(L) {
 	const { index, byCountry } = await data();
 	const paths = [
@@ -12118,7 +12208,7 @@ async function sitemapFor(L) {
 	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${SNAPSHOT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}</url>`).join("\n")}\n${extra}</urlset>\n`;
 }
-var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${SNAPSHOT_DATE}</lastmod></sitemap>`).join("\n")}\n</sitemapindex>\n`;
+var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${SNAPSHOT_DATE}</lastmod></sitemap>`).join("\n")}\n<sitemap><loc>${SITE}/sitemap-hotels.xml</loc></sitemap>\n</sitemapindex>\n`;
 var ROBOTS = `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${SITE}/sitemap.xml\n`;
 function envVar(env, k) {
 	const v = env && env[k] || globalThis.process?.env?.[k];
@@ -12166,6 +12256,7 @@ async function handleSeo(request, env) {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
 	} });
+	if (p === "/sitemap-hotels.xml") return new Response(await hotelSitemap(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
 	const sm = p.match(/^\/sitemap-([a-z]{2})\.xml$/);
 	if (sm && isLang(sm[1])) return new Response(await sitemapFor(sm[1]), { headers: {
 		"content-type": "application/xml; charset=utf-8",
@@ -12322,6 +12413,12 @@ async function handleSeo(request, env) {
 		if (THEMES.includes(k)) return html(await themePage(k, L));
 		const ev = await eventPage(k, L);
 		return ev ? html(ev) : html(notFoundPage(p, L), 404, "no-store");
+	}
+	const hp = p.match(/^\/hotel\/([a-z0-9-]+)\/?$/);
+	if (hp) {
+		if (!HP_LANGS.includes(L)) return Response.redirect(`${SITE}/hotel/${hp[1]}`, 302);
+		const out = await hotelPage(hp[1], L);
+		return out ? html(out, 200, "public, max-age=1800, s-maxage=21600") : html(notFoundPage(p, L), 404, "no-store");
 	}
 	const country = p.match(/^\/country\/([a-z0-9-]+)\/?$/);
 	if (country) {
