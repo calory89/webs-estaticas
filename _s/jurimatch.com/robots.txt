@@ -28,6 +28,4 @@ Disallow: /case/
 Disallow: /auth
 Disallow: /reset-password
 
-Sitemap: https://ldmevkznlgptcinfweru.supabase.co/functions/v1/sitemap
-
-Sitemap: https://jurimatch.com/sitemap-seo.xml
+Sitemap: https://jurimatch.com/sitemap.xml
