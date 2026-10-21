@@ -1,0 +1,24 @@
+name: rh-pub-revert
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: "Commit to revert on pub/_lovable"
+        required: true
+permissions:
+  contents: write
+jobs:
+  revert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: pub/_lovable
+          fetch-depth: 20
+      - name: Revert
+        env:
+          SHA: ${{ github.event.inputs.sha }}
+        run: |
+          git config user.name "calory89"; git config user.email "rrppspain@gmail.com"
+          git revert --no-edit "$SHA"
+          for i in 1 2 3 4 5; do git push origin HEAD:pub/_lovable && exit 0; git pull --rebase -q origin pub/_lovable; sleep 5; done; exit 1
