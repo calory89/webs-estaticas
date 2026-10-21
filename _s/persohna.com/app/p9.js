@@ -26,94 +26,165 @@ function netErr(e) {
     : T("Algo ha fallado al buscar. Vuelve a intentarlo en un momento.", "Something failed while searching. Try again in a moment.");
 }
 
-// ---------- Paso 1: tu perfil ----------
-function openNet(start = "") {
+// ---------- Alta en 3 pasos: tu LinkedIn → quién eres → a quién quieres conocer ----------
+const NET_DETAIL = () => ({
+  clientes: [T("¿Qué vendes y a quién?", "What do you sell, and to whom?"), T("Ej.: marketing para hoteles boutique", "E.g. marketing for boutique hotels")],
+  trabajo: [T("¿Qué puesto buscas?", "What role are you after?"), T("Ej.: Head of Growth en una startup", "E.g. Head of Growth at a startup")],
+  inversion: [T("¿Para qué buscas inversión y cuánto?", "What are you raising for, and how much?"), T("Ej.: 500.000 € para un resort en Indonesia", "E.g. €500k for a resort in Indonesia")],
+  socios: [T("¿Qué perfil te falta?", "What profile are you missing?"), T("Ej.: un CTO que sepa de IA", "E.g. a CTO who knows AI")],
+  mentores: [T("¿En qué quieres mejorar?", "What do you want to get better at?"), T("Ej.: escalar ventas de 0 a 1 M€", "E.g. scaling sales from 0 to €1M")],
+  sector: [T("¿Qué sector o tema?", "Which industry or topic?"), T("Ej.: proptech en Málaga", "E.g. proptech in Málaga")],
+});
+const nameFromSlug = (u) => { const m = String(u || "").match(/linkedin\.com\/in\/([^/?#\s]+)/i); if (!m) return ""; let parts = decodeURIComponent(m[1]).split(/[-_]+/).filter((w) => w && !/\d/.test(w)); if (parts.length > 4) parts = parts.slice(0, 4); return parts.map((w) => w[0].toUpperCase() + w.slice(1).toLowerCase()).join(" "); };
+function cleanLinkedIn(v) {
+  let u = String(v || "").trim().replace(/^<|>$/g, "");
+  if (!u) return { err: "empty" };
+  if (/lnkd\.in\//i.test(u)) return { err: "short" };
+  if (/linkedin\.com\/(company|school|showcase)\//i.test(u)) return { err: "company" };
+  if (/^@?[a-z0-9][a-z0-9-]{2,99}$/i.test(u) && !/\./.test(u)) u = "linkedin.com/in/" + u.replace(/^@/, "");
+  if (!/^https?:\/\//i.test(u)) u = "https://" + u.replace(/^\/+/, "");
+  const m = u.match(/linkedin\.com\/(?:mwlite\/)?in\/([^/?#\s]+)/i);
+  if (!m) return { err: "bad_url" };
+  return { url: `https://www.linkedin.com/in/${m[1].replace(/\/+$/, "")}` };
+}
+function netDraft() {
   const n = NET();
-  if (n.profile && !start) { go("contactos"); return; }
-  NS.step = "link"; NS.err = ""; NS.busy = false; NS.draft = n.profile ? { ...n.profile } : null;
+  if (!NS.draft) {
+    const saved = S.netDraft || {};
+    NS.draft = { ...(n.profile || {}), wants: n.wants?.length ? [...n.wants] : n.want ? [n.want] : [], details: { ...(n.details || {}) }, where: n.where || "", lang: n.lang || "auto", ...saved };
+  }
+  const d = NS.draft;
+  d.wants ||= []; d.details ||= {};
+  if (!d.name) d.name = nameFromSlug(d.url) || S.me?.name || "";
+  return d;
+}
+function netKeep() { try { S.netDraft = { ...NS.draft, busy: undefined }; save(); } catch {} }
+function openNet(start = "", step = "") {
+  const n = NET();
+  if (n.profile && !start && !step) { go("contactos"); return; }
+  NS.draft = null; netDraft();
+  NS.step = step || "link"; NS.err = ""; NS.info = ""; NS.busy = false;
   closeAll(); openLayer(netSetupHTML(), { full: true, label: "net" });
   if (start) setTimeout(() => { const i = $("#net-url"); if (i) { i.value = start; netFromLink(); } }, 50);
 }
+function netProg() {
+  const i = { link: 1, who: 2, goal: 3 }[NS.step] || 1;
+  return `<div class="net-prog" aria-label="${T(`Paso ${i} de 3`, `Step ${i} of 3`)}"><span class="${i >= 1 ? "on" : ""}"></span><span class="${i >= 2 ? "on" : ""}"></span><span class="${i >= 3 ? "on" : ""}"></span><em>${T(`Paso ${i} de 3`, `Step ${i} of 3`)}</em></div>`;
+}
 function netSetupHTML() {
-  const n = NET(), d = NS.draft || {};
+  const d = netDraft();
   const head = sheetHead(T("Tus contactos", "Your contacts"));
+  const note = (t, kind = "info") => t ? `<p class="net-note ${kind}" role="${kind === "err" ? "alert" : "status"}">${ico(kind === "err" ? "info" : "sparkle")}<span>${esc(t)}</span></p>` : "";
   if (NS.step === "link") {
-    return `${head}<div class="sheet-body net-setup stack g5" data-view="net">
-      <div class="stack g2"><h3 class="net-h">${T("¿Quién eres?", "Who are you?")}</h3><p class="muted">${T("Pega el enlace de tu perfil de LinkedIn. Con eso busco gente que te conviene conocer.", "Paste your LinkedIn profile link. I'll use it to find people worth meeting.")}</p></div>
+    return `${head}<div class="sheet-body net-setup stack g5" data-view="net">${netProg()}
+      <div class="stack g2"><h3 class="net-h">${T("Empecemos por ti", "Let's start with you")}</h3><p class="muted">${T("Pega el enlace de tu perfil de LinkedIn. Leo lo que es público y en 10 segundos sé a quién presentarte.", "Paste your LinkedIn profile link. I read what's public and in 10 seconds I know who to introduce you to.")}</p></div>
+      ${NS.busy ? `<div class="net-reading" role="status"><span class="net-mono" style="background:${netHue(d.name)}">${esc(initials(d.name || "?"))}</span><div class="stack g1 grow"><strong>${esc(d.name || T("Leyendo tu perfil", "Reading your profile"))}</strong><span class="muted small">${T("Buscando tu perfil público, tu empresa y a qué te dedicas…", "Looking up your public profile, company and what you do…")}</span><span class="net-bar"><i></i></span></div></div>` : `
       <form class="stack g3" data-form="net-link" novalidate>
         <label class="sr" for="net-url">${T("Enlace de tu LinkedIn", "Your LinkedIn link")}</label>
-        <input class="input input-xl" id="net-url" type="url" inputmode="url" autocomplete="url" placeholder="linkedin.com/in/tu-nombre" value="${esc(n.profile?.url || "")}" ${NS.busy ? "disabled" : ""}>
-        <button class="btn btn-primary btn-big" type="submit" ${NS.busy ? "disabled" : ""}>${NS.busy ? `<span class="spinner" aria-hidden="true"></span>${T("Leyendo tu perfil…", "Reading your profile…")}` : T("Seguir", "Continue")}</button>
-        ${NS.err ? `<p class="err" role="alert">${esc(NS.err)}</p>` : ""}
+        <div class="net-start-row big"><span class="net-li" aria-hidden="true">in</span><input class="input" id="net-url" type="url" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="linkedin.com/in/tu-nombre" value="${esc(d.url || "")}"><button class="btn btn-ghost btn-sm net-paste" type="button" data-action="net-paste">${T("Pegar", "Paste")}</button></div>
+        <p class="hint" id="net-url-hint">${T("Lo encuentras en la app de LinkedIn: tu foto › Ver perfil › ··· › Compartir perfil › Copiar enlace.", "In the LinkedIn app: your photo › View profile › ··· › Share profile › Copy link.")}</p>
+        ${note(NS.err, "err")}
+        <button class="btn btn-primary btn-big" type="submit">${T("Seguir", "Continue")}</button>
       </form>
       <div class="net-or"><span>${T("o", "or")}</span></div>
       <div class="stack g2">
-        <label class="drop drop-sm">${ico("download", "rot180")}<strong>${T("Sube tu CV o el PDF de tu LinkedIn", "Upload your CV or LinkedIn PDF")}</strong><span class="muted small">${T("En LinkedIn: tu perfil › Más › Guardar en PDF", "On LinkedIn: your profile › More › Save to PDF")}</span><input type="file" id="net-file" accept=".pdf,.docx,.txt,.md,application/pdf" hidden></label>
+        <label class="drop drop-sm">${ico("download", "rot180")}<strong>${T("Sube tu CV o el PDF de tu LinkedIn", "Upload your CV or LinkedIn PDF")}</strong><span class="muted small">${T("En LinkedIn (ordenador): tu perfil › Más › Guardar en PDF", "On LinkedIn (desktop): your profile › More › Save to PDF")}</span><input type="file" id="net-file" accept=".pdf,.docx,.txt,.md,application/pdf" hidden></label>
         ${S.cv?.text ? `<button class="btn btn-secondary" type="button" data-action="net-usecv">${T("Usar el CV que ya me diste", "Use the CV you already gave me")}</button>` : ""}
         <button class="link-btn small" type="button" data-action="net-manual" style="align-self:flex-start">${T("Prefiero escribirlo yo", "I'd rather type it")}</button>
-      </div>
+      </div>`}
       <p class="hint">${ico("lock", "i16")} ${T("Solo leo lo que es público. Nunca escribo a nadie por ti: te dejo el mensaje listo y tú decides.", "I only read what's public. I never message anyone for you: I leave the message ready and you decide.")}</p>
     </div>`;
   }
-  // confirmar perfil y elegir qué buscas
-  const want = d.want || n.want || "";
-  return `${head}<div class="sheet-body net-setup stack g5" data-view="net">
-    <div class="net-me">
-      <span class="net-mono" style="background:${netHue(d.name)}">${esc(initials(d.name))}</span>
-      <div class="stack g2 grow">
-        <div class="field"><label for="net-name">${T("Tu nombre", "Your name")}</label><input class="input" id="net-name" maxlength="80" value="${esc(d.name || S.me?.name || "")}"></div>
-        <div class="field"><label for="net-head">${T("A qué te dedicas", "What you do")}</label><input class="input" id="net-head" maxlength="140" value="${esc(d.headline || "")}" placeholder="${T("Ej.: Fundador de una inmobiliaria en Málaga", "E.g. Founder of a real-estate agency in Málaga")}"></div>
+  if (NS.step === "who") {
+    const sugg = [...new Set([S.hunt?.profile?.headline, S.me?.bio, d.headline && null].filter((x) => x && x.length > 3))].slice(0, 3);
+    return `${head}<form class="sheet-body net-setup stack g5" data-view="net" data-form="net-who" novalidate>${netProg()}
+      <h3 class="net-h">${d.found ? T("¿Eres tú?", "Is this you?") : T("Cuéntame quién eres", "Tell me who you are")}</h3>
+      ${note(NS.info)}
+      <div class="net-me">
+        <span class="net-mono" id="net-mono" style="background:${netHue(d.name)}">${esc(initials(d.name || "?"))}</span>
+        <div class="stack g3 grow">
+          <div class="field"><label for="net-name">${T("Tu nombre", "Your name")}</label><input class="input" id="net-name" maxlength="80" autocomplete="name" value="${esc(d.name || "")}" required></div>
+          <div class="field"><label for="net-head">${T("A qué te dedicas", "What you do")}</label><input class="input" id="net-head" maxlength="160" value="${esc(d.headline || "")}" placeholder="${T("Ej.: Fundador de una inmobiliaria en Málaga", "E.g. Founder of a real-estate agency in Málaga")}" required>
+            ${sugg.length && !d.headline ? `<div class="chips">${sugg.map((x) => `<button class="chip" type="button" data-action="net-head-sug" data-v="${esc(x)}">${esc(x.slice(0, 60))}</button>`).join("")}</div>` : ""}</div>
+          <div class="row g2 wrap net-2col"><div class="field grow"><label for="net-company">${T("Empresa (opcional)", "Company (optional)")}</label><input class="input" id="net-company" maxlength="80" autocomplete="organization" value="${esc(d.company || "")}"></div><div class="field grow"><label for="net-city">${T("Ciudad (opcional)", "City (optional)")}</label><input class="input" id="net-city" maxlength="60" value="${esc(d.city || "")}"></div></div>
+        </div>
       </div>
-    </div>
-    ${d.summary ? `<p class="muted small">${esc(d.summary)}</p>` : ""}
-    <fieldset class="stack g3 plain-fs"><legend class="net-h">${T("¿A quién quieres conocer?", "Who do you want to meet?")}</legend>
-      <div class="net-wants">${NET_WANTS().map(([k, t, s]) => `<button type="button" class="net-want" data-action="net-want" data-v="${k}" aria-pressed="${want === k}"><strong>${t}</strong><span>${s}</span></button>`).join("")}</div>
-    </fieldset>
-    <div class="field"><label for="net-note">${T("Cuéntame un poco más (opcional)", "Tell me a bit more (optional)")}</label><input class="input" id="net-note" maxlength="200" value="${esc(d.note ?? n.note ?? "")}" placeholder="${T("Ej.: hoteles boutique que quieran vender en España", "E.g. boutique hotels that want to sell in Spain")}"></div>
-    <div class="field"><label for="net-where">${T("¿Dónde? (opcional)", "Where? (optional)")}</label><input class="input" id="net-where" maxlength="60" value="${esc(d.where ?? n.where ?? d.city ?? "")}" placeholder="${T("Ciudad, país o «en remoto»", "City, country or “remote”")}"></div>
-    ${NS.err ? `<p class="err" role="alert">${esc(NS.err)}</p>` : ""}
-  </div><div class="sheet-foot"><button class="btn btn-ghost" type="button" data-action="net-back" style="flex:0 0 auto">${T("Atrás", "Back")}</button><button class="btn btn-primary" type="button" data-action="net-go" ${NS.busy ? "disabled" : ""}>${T("Buscar mis 5 personas", "Find my 5 people")}</button></div>`;
+      ${d.skills?.length ? `<div class="stack g2"><span class="small muted">${T("Lo que sé hacer (toca para quitar)", "What you're good at (tap to remove)")}</span><div class="chips">${d.skills.slice(0, 10).map((x, i) => `<button class="chip on" type="button" data-action="net-skill-x" data-i="${i}">${esc(x)} ×</button>`).join("")}</div></div>` : ""}
+      ${d.summary ? `<p class="muted small">${esc(d.summary)}</p>` : ""}
+      ${note(NS.err, "err")}
+    </form><div class="sheet-foot"><button class="btn btn-ghost" type="button" data-action="net-back" style="flex:0 0 auto">${T("Atrás", "Back")}</button><button class="btn btn-primary" type="button" data-action="net-next">${T("Seguir", "Continue")}</button></div>`;
+  }
+  // paso 3: a quién quieres conocer (varias opciones)
+  const D = NET_DETAIL(), wants = d.wants;
+  const places = [...new Set([d.city, d.country, T("Remoto / online", "Remote / online"), T("España", "Spain"), T("Europa", "Europe"), T("Todo el mundo", "Anywhere")].filter(Boolean))].slice(0, 6);
+  return `${head}<div class="sheet-body net-setup stack g5" data-view="net">${netProg()}
+    <div class="stack g1"><h3 class="net-h">${T("¿A quién quieres conocer?", "Who do you want to meet?")}</h3><p class="muted small">${T("Elige hasta 3. Reparto tus 5 personas entre lo que elijas.", "Pick up to 3. I'll split your 5 people across them.")}</p></div>
+    <div class="net-wants">${NET_WANTS().map(([k, t, s]) => `<button type="button" class="net-want" data-action="net-want" data-v="${k}" aria-pressed="${wants.includes(k)}"><span class="net-check" aria-hidden="true">${wants.includes(k) ? ico("check") : ""}</span><strong>${t}</strong><span>${s}</span></button>`).join("")}</div>
+    ${wants.length ? `<div class="stack g3 net-details">${wants.map((k) => `<div class="field"><label for="nd-${k}">${D[k][0]} <span class="muted small">(${T("opcional", "optional")})</span></label><input class="input" id="nd-${k}" data-nd="${k}" maxlength="200" value="${esc(d.details[k] || (k === "trabajo" ? (S.hunt?.terms || [])[0] || "" : ""))}" placeholder="${esc(D[k][1])}"></div>`).join("")}</div>` : ""}
+    <div class="field"><label for="net-where">${T("¿Dónde?", "Where?")} <span class="muted small">(${T("opcional", "optional")})</span></label><input class="input" id="net-where" maxlength="60" value="${esc(d.where || "")}" placeholder="${T("Ciudad, país o «remoto»", "City, country or “remote”")}"><div class="chips">${places.map((x) => `<button class="chip ${d.where === x ? "on" : ""}" type="button" data-action="net-where" data-v="${esc(x)}">${esc(x)}</button>`).join("")}</div></div>
+    <div class="field"><span class="lbl" style="font-weight:700">${T("Escribirles en", "Write to them in")}</span><div class="seg seg-sm" role="radiogroup">${[["auto", T("Su idioma", "Their language")], ["es", "Español"], ["en", "English"]].map(([k, l]) => `<button type="button" role="radio" aria-checked="${(d.lang || "auto") === k}" data-action="net-lang" data-v="${k}">${l}</button>`).join("")}</div></div>
+    ${note(NS.err, "err")}
+  </div><div class="sheet-foot"><button class="btn btn-ghost" type="button" data-action="net-back" style="flex:0 0 auto">${T("Atrás", "Back")}</button><button class="btn btn-primary" type="button" data-action="net-go" ${wants.length ? "" : "aria-disabled=\"true\""}>${wants.length ? T("Buscar mis 5 personas", "Find my 5 people") : T("Elige al menos una", "Pick at least one")}</button></div>`;
+}
+function netRead() {
+  const d = netDraft(), v = (id) => ($("#" + id)?.value ?? null);
+  if (v("net-name") !== null) d.name = v("net-name").trim();
+  if (v("net-head") !== null) d.headline = v("net-head").trim();
+  if (v("net-company") !== null) d.company = v("net-company").trim();
+  if (v("net-city") !== null) d.city = v("net-city").trim();
+  if (v("net-where") !== null) d.where = v("net-where").trim();
+  document.querySelectorAll("[data-nd]").forEach((i) => { d.details[i.dataset.nd] = i.value.trim(); });
+  netKeep();
 }
 async function netFromLink() {
-  let url = ($("#net-url")?.value || "").trim();
-  if (!url) { NS.err = T("Pega el enlace de tu perfil.", "Paste your profile link."); setLayer(netSetupHTML()); return; }
-  if (!/^https?:\/\//i.test(url)) url = "https://" + url.replace(/^\/+/, "");
-  if (!/linkedin\.com\/in\/[^/?#\s]+/i.test(url)) { NS.err = netErr("bad_url"); setLayer(netSetupHTML()); return; }
+  const d = netDraft();
+  const c = cleanLinkedIn($("#net-url")?.value);
+  if (c.err) { NS.err = c.err === "empty" ? T("Pega el enlace de tu perfil.", "Paste your profile link.") : c.err === "short" ? T("Ese es un enlace corto (lnkd.in). Ábrelo y copia la dirección completa que empieza por linkedin.com/in/.", "That's a short link (lnkd.in). Open it and copy the full address starting with linkedin.com/in/.") : c.err === "company" ? T("Eso es una página de empresa. Pega tu perfil personal: linkedin.com/in/tu-nombre", "That's a company page. Paste your personal profile: linkedin.com/in/your-name") : netErr("bad_url"); setLayer(netSetupHTML()); return; }
+  d.url = c.url; if (!d.name || d.name === S.me?.name) d.name = nameFromSlug(c.url) || d.name;
   NS.busy = true; NS.err = ""; setLayer(netSetupHTML());
-  const r = await netCall("profile", { url });
+  const r = await netCall("profile", { url: c.url, hint: d.name });
   NS.busy = false;
   const p = r.profile || {};
-  NS.draft = { ...(NS.draft || {}), ...p, url: p.url || url };
-  if (r.error || !p.found) NS.err = r.error === "bad_url" ? netErr("bad_url") : T("No encuentro mucho de tu perfil en público. Escribe a qué te dedicas y seguimos.", "I can't find much of your profile publicly. Write what you do and let's go on.");
-  NS.step = "who"; setLayer(netSetupHTML());
-  if (!NS.err) $("#net-head")?.blur();
+  if (p.found) {
+    Object.assign(d, Object.fromEntries(Object.entries(p).filter(([, x]) => x && (!Array.isArray(x) || x.length))));
+    if (!d.wants.length && Array.isArray(p.wants)) d.wants = p.wants.filter((k) => NET_DETAIL()[k]).slice(0, 2);
+    NS.info = T("He encontrado tu perfil. Revisa que esté bien.", "Found your profile. Check it's right.");
+  } else NS.info = r.error === "timeout" || r.error === "network" ? T("No he podido leer tu perfil ahora mismo. Rellénalo en 10 segundos y seguimos.", "I couldn't read your profile right now. Fill it in in 10 seconds and let's go on.") : T("Tu perfil casi no se ve en público. Dime a qué te dedicas y seguimos.", "Your profile is barely visible publicly. Tell me what you do and let's go on.");
+  d.found = !!p.found; NS.step = "who"; netKeep(); setLayer(netSetupHTML());
+  if (!d.headline) setTimeout(() => $("#net-head")?.focus(), 80);
 }
-async function netFromText(text, name = "") {
+async function netFromText(text) {
+  const d = netDraft();
   NS.busy = true; NS.err = ""; NS.step = "link"; setLayer(netSetupHTML());
   const r = await netCall("profile", { text: text.slice(0, 20000) });
   NS.busy = false;
-  NS.draft = { ...(NS.draft || {}), ...(r.profile || {}) };
-  if (r.error || !r.profile?.found) NS.err = T("No he podido leer bien el archivo. Completa tus datos aquí.", "I couldn't read the file well. Fill in your details here.");
-  NS.step = "who"; setLayer(netSetupHTML());
+  const p = r.profile || {};
+  if (p.found) { Object.assign(d, Object.fromEntries(Object.entries(p).filter(([, x]) => x && (!Array.isArray(x) || x.length)))); if (!d.wants.length && Array.isArray(p.wants)) d.wants = p.wants.filter((k) => NET_DETAIL()[k]).slice(0, 2); NS.info = T("He leído tu CV. Revisa que esté bien.", "I read your CV. Check it's right."); }
+  else NS.info = T("No he podido leer bien el archivo. Completa tus datos aquí.", "I couldn't read the file well. Fill in your details here.");
+  d.found = !!p.found; NS.step = "who"; netKeep(); setLayer(netSetupHTML());
 }
-function netReadWho() {
-  const d = (NS.draft ||= {});
-  d.name = ($("#net-name")?.value || "").trim(); d.headline = ($("#net-head")?.value || "").trim();
-  d.note = ($("#net-note")?.value || "").trim(); d.where = ($("#net-where")?.value || "").trim();
+function netWhoNext() {
+  netRead(); const d = netDraft();
+  if (!d.name) { NS.err = T("Escribe tu nombre.", "Write your name."); setLayer(netSetupHTML()); $("#net-name")?.focus(); return; }
+  if (d.headline.length < 4) { NS.err = T("Dime a qué te dedicas: con eso elijo a quién presentarte.", "Tell me what you do: that's how I pick who to introduce you to."); setLayer(netSetupHTML()); $("#net-head")?.focus(); return; }
+  NS.err = ""; NS.info = ""; NS.step = "goal"; setLayer(netSetupHTML());
 }
 function netStart() {
-  netReadWho();
-  const d = NS.draft, n = NET();
-  if (!d.name || !d.headline) { NS.err = T("Pon tu nombre y a qué te dedicas.", "Add your name and what you do."); setLayer(netSetupHTML()); return; }
-  if (!d.want) { NS.err = T("Elige a quién quieres conocer.", "Pick who you want to meet."); setLayer(netSetupHTML()); return; }
+  netRead();
+  const d = netDraft(), n = NET();
+  if (!d.wants.length) { NS.err = T("Elige al menos a quién quieres conocer.", "Pick at least who you want to meet."); setLayer(netSetupHTML()); return; }
+  const changed = JSON.stringify([n.wants, n.details, n.where, n.profile?.headline]) !== JSON.stringify([d.wants, d.details, d.where, d.headline]);
   n.profile = { name: d.name, headline: d.headline, company: d.company || "", city: d.city || "", country: d.country || "", industry: d.industry || "", skills: (d.skills || []).slice(0, 10), summary: d.summary || "", url: d.url || "" };
-  n.want = d.want; n.note = d.note || ""; n.where = d.where || "";
-  // si es la primera vez, nace su Persohna con su nombre
+  n.wants = [...d.wants]; n.want = d.wants[0]; n.details = { ...d.details }; n.note = Object.values(d.details).filter(Boolean).join(" · "); n.where = d.where || ""; n.lang = d.lang || "auto";
   if (!S.me) {
     S.me = { name: d.name.split(/\s+/)[0], face: randomFace(), frame: "none", bio: d.headline.slice(0, 140), code: uid().slice(0, 6) };
     addHistory("Nació tu Persohna", "Your Persohna was born"); S.welcome = false; S.tourDone = true; touchStreak();
-  }
-  save(); closeAll(); netFind(true); go("contactos");
+  } else if (!S.me.bio) S.me.bio = d.headline.slice(0, 140);
+  delete S.netDraft; NS.draft = null;
+  save(); closeAll();
+  const fresh = !(n.day === today() && n.people.length);
+  if (fresh || changed) netFind(true);
+  go("contactos");
 }
 
 // ---------- Búsqueda (en segundo plano: puedes cerrar la app) ----------
@@ -121,9 +192,10 @@ async function netFind(force = false) {
   const n = NET(); if (!n.profile) return;
   if (n.job && Date.now() - n.jobAt < 6 * 60e3) { netWatch(); return; }
   if (!force && n.day === today() && n.people.length) return;
-  const companies = n.want === "trabajo" && S.hunt?.jobs ? [...new Set(S.hunt.jobs.filter((j) => (S.hunt.fits?.[j.id]?.fit || 0) >= 60).map((j) => j.company).filter(Boolean))].slice(0, 6) : [];
+  const wants = n.wants?.length ? n.wants : [n.want || "sector"];
+  const companies = wants.includes("trabajo") && S.hunt?.jobs ? [...new Set(S.hunt.jobs.filter((j) => (S.hunt.fits?.[j.id]?.fit || 0) >= 60).map((j) => j.company).filter(Boolean))].slice(0, 6) : [];
   n.err = ""; n.jobAt = Date.now(); n.job = "pending"; save(); netRefresh();
-  const r = await netCall("find", { profile: n.profile, want: n.want, note: n.note, where: n.where, companies, exclude: n.seen.slice(-120) });
+  const r = await netCall("find", { profile: n.profile, want: wants[0], wants, details: n.details || {}, note: n.note, where: n.where, msg_lang: n.lang || "auto", avoid: (n.avoid || []).slice(-10), companies, exclude: n.seen.slice(-120) });
   if (r.error || !r.job) { n.job = null; n.err = netErr(r.error); save(); netRefresh(); return; }
   n.job = r.job; save(); netWatch();
 }
@@ -178,7 +250,7 @@ function personCard(p, i) {
   return `<article class="pcard ${st.s ? "is-" + st.s : ""}" data-k="${esc(p.key)}" style="--hue:${netHue(p.name)}">
     <header class="pcard-top">
       <span class="net-mono">${esc(initials(p.name))}</span>
-      <div class="grow stack g1"><h3>${esc(p.name)}</h3><p class="muted small">${esc([p.role, p.company].filter(Boolean).join(" en "))}${p.place ? ` · ${esc(p.place)}` : ""}</p></div>
+      <div class="grow stack g1">${p.goal && NET_DETAIL()[p.goal] ? `<span class="pcard-goal">${esc(netWantLabel(p.goal))}</span>` : ""}<h3>${esc(p.name)}</h3><p class="muted small">${esc([p.role, p.company].filter(Boolean).join(" en "))}${p.place ? ` · ${esc(p.place)}` : ""}</p></div>
       <a class="icon-btn" href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="${isLinkedIn(p.url) ? T("Ver su perfil", "See their profile") : T("Ver dónde aparece", "See where they appear")}" title="${isLinkedIn(p.url) ? T("Ver su perfil", "See their profile") : T("Ver dónde aparece", "See where they appear")}" data-action="net-visit" data-k="${esc(p.key)}">${ico("share")}</a>
     </header>
     <div class="pcard-why"><p><strong>${T("Por qué te conviene", "Why it's worth it")}</strong>${esc(p.why)}</p>${p.hook ? `<p><strong>${T("Para romper el hielo", "To break the ice")}</strong>${esc(p.hook)}</p>` : ""}${com}</div>
@@ -190,7 +262,7 @@ function personCard(p, i) {
         <a class="btn btn-primary" href="${esc(open)}" target="_blank" rel="noopener" data-action="net-open" data-k="${esc(p.key)}" data-ch="${ch}">${openLbl}</a>
         ${st.s ? "" : `<button class="btn btn-secondary" type="button" data-action="net-st" data-k="${esc(p.key)}" data-v="sent">${ico("check")}${T("Ya se lo envié", "I sent it")}</button>`}
       </div>
-      ${st.s ? "" : `<button class="link-btn small net-skip" type="button" data-action="net-st" data-k="${esc(p.key)}" data-v="skip">${T("No me interesa", "Not interested")}</button>`}
+      ${st.s ? "" : `<button class="link-btn small net-skip" type="button" data-action="net-skipask" data-k="${esc(p.key)}">${T("No me interesa", "Not interested")}</button>`}
     </div>`}
     ${state}
   </article>`;
@@ -209,7 +281,7 @@ function viewContactos() {
   return `<div class="stack g5 net-page">
     <header class="net-head">
       <div class="grow stack g1"><h1 class="h-screen">${n.day === today() && todays.length ? T("Tus 5 de hoy", "Your 5 for today") : T("Contactos", "Contacts")}</h1>
-        <p class="muted small">${T("Buscas", "Looking for")}: <strong>${esc(netWantLabel(n.want))}</strong>${n.note ? ` · ${esc(n.note)}` : ""} <button class="link-btn small" type="button" data-action="net-edit">${T("Cambiar", "Change")}</button></p></div>
+        <p class="muted small">${T("Buscas", "Looking for")}: <strong>${esc((n.wants?.length ? n.wants : [n.want]).map(netWantLabel).join(", "))}</strong>${n.where ? ` · ${esc(n.where)}` : ""} <button class="link-btn small" type="button" data-action="net-edit" data-v="goal">${T("Cambiar", "Change")}</button></p></div>
       ${todays.length ? `<div class="net-count" aria-label="${T(`${done} de ${todays.length} escritos`, `${done} of ${todays.length} written`)}"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.5" class="t"/><circle cx="18" cy="18" r="15.5" class="v" style="stroke-dasharray:${(done / todays.length) * 97.4} 97.4"/></svg><span><strong>${done}</strong>/${todays.length}</span></div>` : ""}
     </header>
     ${loggedIn() ? "" : `<div class="net-save">${ico("lock")}<span class="grow">${T("Guarda tus contactos para verlos en el móvil y en el ordenador.", "Save your contacts to see them on your phone and computer.")}</span><button class="btn btn-primary btn-sm" type="button" data-action="net-account">${T("Guardar", "Save")}</button></div>`}
@@ -285,14 +357,22 @@ document.addEventListener("click", async (e) => {
   const a = b.dataset.action, n = NET();
   const find = (k) => n.people.find((p) => p.key === k) || n.all.find((p) => p.key === k);
   switch (a) {
-    case "net-open-setup": e.preventDefault(); NS.step = "link"; NS.err = ""; NS.busy = false; NS.draft = n.profile ? { ...n.profile } : null; closeAll(); openLayer(netSetupHTML(), { full: true, label: "net" }); break;
+    case "net-open-setup": e.preventDefault(); openNet("", "link"); break;
     case "net-usecv": netFromText(S.cv.text); break;
-    case "net-manual": NS.draft = { ...(NS.draft || {}), name: S.me?.name || "" }; NS.err = ""; NS.step = "who"; setLayer(netSetupHTML()); break;
-    case "net-want": netReadWho(); NS.draft.want = b.dataset.v; NS.err = ""; setLayer(netSetupHTML()); break;
-    case "net-back": netReadWho(); NS.step = "link"; NS.err = ""; setLayer(netSetupHTML()); break;
+    case "net-manual": netDraft(); NS.err = ""; NS.info = ""; NS.step = "who"; setLayer(netSetupHTML()); setTimeout(() => $(NS.draft.name ? "#net-head" : "#net-name")?.focus(), 80); break;
+    case "net-paste": { try { const t = await navigator.clipboard.readText(); const i = $("#net-url"); if (i && t) { i.value = t.trim(); const c = cleanLinkedIn(t); if (!c.err) netFromLink(); else { NS.err = netErr("bad_url"); setLayer(netSetupHTML()); } } } catch { toast(T("Mantén pulsado el campo y elige «Pegar».", "Long-press the field and choose “Paste”.")); $("#net-url")?.focus(); } break; }
+    case "net-want": { netRead(); const d = netDraft(), k = b.dataset.v; if (d.wants.includes(k)) d.wants = d.wants.filter((x) => x !== k); else if (d.wants.length >= 3) { toast(T("Máximo 3: quita una para elegir otra.", "Max 3: remove one to pick another.")); break; } else d.wants.push(k); NS.err = ""; netKeep(); setLayer(netSetupHTML()); if (d.wants.includes(k)) setTimeout(() => $("#nd-" + k)?.focus({ preventScroll: false }), 60); break; }
+    case "net-where": { netRead(); const d = netDraft(); d.where = d.where === b.dataset.v ? "" : b.dataset.v; netKeep(); setLayer(netSetupHTML()); break; }
+    case "net-lang": { netRead(); netDraft().lang = b.dataset.v; netKeep(); setLayer(netSetupHTML()); break; }
+    case "net-head-sug": { const i = $("#net-head"); if (i) { i.value = b.dataset.v; i.focus(); } break; }
+    case "net-skill-x": { netRead(); const d = netDraft(); d.skills.splice(+b.dataset.i, 1); netKeep(); setLayer(netSetupHTML()); break; }
+    case "net-next": netWhoNext(); break;
+    case "net-back": netRead(); NS.step = NS.step === "goal" ? "who" : "link"; NS.err = ""; NS.info = ""; setLayer(netSetupHTML()); break;
     case "net-go": netStart(); break;
-    case "net-edit": NS.step = "who"; NS.err = ""; NS.draft = { ...n.profile, want: n.want, note: n.note, where: n.where }; openLayer(netSetupHTML(), { full: true, label: "net" }); break;
+    case "net-edit": openNet("", b.dataset.v || "goal"); break;
     case "net-more": n.err = ""; netFind(true); break;
+    case "net-skipask": { const c = b.closest(".pcard"); if (!c || c.querySelector(".net-why")) break; b.insertAdjacentHTML("afterend", `<div class="net-why"><span class="small muted">${T("¿Por qué? Así afino la próxima vez", "Why? It helps me aim better next time")}</span><div class="chips">${[T("No encaja con lo que busco", "Not what I'm looking for"), T("Ya le conozco", "I already know them"), T("Otro país o sector", "Wrong country or industry"), T("Demasiado grande para mí", "Too big for me")].map((r) => `<button class="chip" type="button" data-action="net-skip" data-k="${esc(b.dataset.k)}" data-r="${esc(r)}">${esc(r)}</button>`).join("")}</div></div>`); b.remove(); break; }
+    case "net-skip": { const p = find(b.dataset.k); if (!p) return; const st = (n.st[p.key] ||= {}); st.s = "skip"; st.why = b.dataset.r; n.avoid = [...(n.avoid || []), `${p.name} (${p.role || ""}${p.company ? ", " + p.company : ""}): ${b.dataset.r}`].slice(-10); save(); netCall("outcome", { url: p.url, status: "skip" }); toast(T("Entendido. Lo tengo en cuenta para mañana.", "Got it. I'll keep it in mind tomorrow.")); render({ keepScroll: true }); break; }
     case "net-account": openAccount("signup"); break;
     case "net-ch": { const st = (n.st[b.dataset.k] ||= {}); st.ch = b.dataset.v; save(); render({ keepScroll: true }); break; }
     case "net-open": {
@@ -340,3 +420,10 @@ toolsCard = function () { return _toolsCard9().replace('<div class="tools">', `<
 // al abrir: seguir una búsqueda pendiente o traer las de hoy
 setTimeout(() => { const n = NET(); if (!S.me || !n.profile) return; if (n.job && n.job !== "pending") netWatch(); else if (n.job === "pending") { n.job = null; save(); } else if (n.day !== today()) netFind(); }, 1500);
 try { if (/^#\/contactos/.test(location.hash) || !S.me) render({ keepScroll: true }); } catch (e) { console.warn(e); }
+
+document.addEventListener("input", (e) => {
+  if (e.target.id === "net-name") { const m = $("#net-mono"); if (m) { m.textContent = initials(e.target.value || "?"); m.style.background = netHue(e.target.value); } }
+  if (e.target.id === "net-url") { const h = $("#net-url-hint"); const c = cleanLinkedIn(e.target.value); if (h && e.target.value.trim()) h.innerHTML = c.err ? T("Debe ser tu perfil: linkedin.com/in/tu-nombre", "It must be your profile: linkedin.com/in/your-name") : `<span class="ok-t">${ico("check", "i16")} ${T("Perfecto, es un perfil de LinkedIn", "Great, that's a LinkedIn profile")}</span>`; }
+});
+document.addEventListener("submit", (e) => { if (e.target.dataset?.form === "net-who") { e.preventDefault(); netWhoNext(); } }, true);
+document.addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.matches?.('[data-view="net"] [data-nd], #net-where') ) { e.preventDefault(); netStart(); } });

@@ -113,3 +113,37 @@
 .bottom a .nav-ico{width:46px}
 .net-ta{field-sizing:content;max-height:260px}
 .net-stack .net-mono{margin-left:-6px;font-size:12px}
+
+/* v9: alta en 3 pasos */
+.net-prog{display:flex;align-items:center;gap:6px}
+.net-prog span{flex:1;height:5px;border-radius:5px;background:var(--sunk)}
+.net-prog span.on{background:var(--act)}
+.net-prog em{font-style:normal;font-size:12.5px;color:var(--ink2);margin-left:6px;white-space:nowrap}
+.net-start-row.big{padding:8px}
+.net-start-row.big .input{font-size:17px;min-height:52px}
+.net-paste{flex:none;min-height:40px!important}
+.net-reading{display:flex;gap:14px;align-items:center;padding:16px;border-radius:20px;background:var(--card);border:1px solid var(--line)}
+.net-reading .net-mono{width:56px;height:56px;font-size:19px}
+.net-bar{display:block;height:6px;border-radius:6px;background:var(--sunk);overflow:hidden;margin-top:6px}
+.net-bar i{display:block;height:100%;width:35%;border-radius:6px;background:var(--act);animation:netbar 1.4s ease-in-out infinite}
+@keyframes netbar{0%{transform:translateX(-100%)}100%{transform:translateX(300%)}}
+@media (prefers-reduced-motion:reduce){.net-bar i{animation:none;width:60%}}
+.net-note{display:flex;gap:10px;align-items:flex-start;margin:0;padding:12px 14px;border-radius:14px;font-size:15px;line-height:1.4;background:var(--act-soft)}
+.net-note svg{color:var(--act);margin-top:1px}
+.net-note.err{background:var(--danger-soft);color:var(--danger)}
+.net-note.err svg{color:var(--danger)}
+.net-want{position:relative;padding-right:36px}
+.net-check{position:absolute;top:10px;right:10px;width:22px;height:22px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;background:var(--card)}
+.net-check svg{width:14px;height:14px;color:#fff}
+.net-want[aria-pressed="true"] .net-check{background:var(--act);border-color:var(--act)}
+.net-details{padding:14px;border-radius:18px;background:var(--sunk)}
+.net-setup .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.net-setup .chip,.net-why .chip{min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:14px;font-weight:600;cursor:pointer}
+.net-setup .chip.on{background:var(--act-soft);border-color:var(--act);color:var(--act)}
+.net-2col .field{min-width:140px}
+.ok-t{color:var(--act);font-weight:700;display:inline-flex;align-items:center;gap:4px}
+.pcard-goal{align-self:flex-start;font-size:12px;font-weight:700;color:var(--act);background:var(--card);border:1px solid var(--act-soft);border-radius:999px;padding:2px 9px;margin-bottom:2px}
+.net-why{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.net-why .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.net-setup .chips,.net-why .chips{margin:8px 0 0;padding:0;overflow:visible}
+.net-setup .chip,.net-why .chip{white-space:normal;text-align:left;line-height:1.25;padding:6px 12px}
