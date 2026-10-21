@@ -66,6 +66,7 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
+    if (host === 'go.realhunt.co') { const p = u.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'); return Response.redirect('https://realhunt.co' + (p || '/') + u.search, 301); }
     if (host === 'top3hotels.com') return viaTop3(req, env, ctx);
     if (!SITES.has(host)) return new Response('Not found', { status: 404 });
     const pre = '/_s/' + host;

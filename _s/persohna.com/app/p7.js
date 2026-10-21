@@ -240,7 +240,7 @@ async function pushSync(test = false) {
 }
 
 // ---------- Casas: pisos vistos por la comunidad, alquiler justo, guardar y bajadas de precio ----------
-const RS = { url: "https://nylmhdtlshhtjkuvfbms.supabase.co/rest/v1/rpc/", key: RH.key };
+const RS = { url: "https://realhunt.co/__sb/realhunt/rest/v1/rpc/", key: RH.key };
 const _homesLoad7 = homesLoad;
 homesLoad = async function (g) {
   const p = g?.prefs || {}, buy = /compr|buy/i.test(p.op || ""), max = +p.presupuesto || 0, zona = String(p.zona || "").split(/[,·]/)[0].trim();
