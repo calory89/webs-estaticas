@@ -317,6 +317,8 @@ def photo_url(x):
         return f'/hlc/img/cities/{ls_}-800.jpg'
     if os.path.exists(os.path.join('chollos', x['slug'], 'foto.jpg')):
         return f"/chollos/{x['slug']}/foto.jpg"
+    if os.path.exists(os.path.join('chollos', x['slug'], 'og.jpg')):
+        return f"/chollos/{x['slug']}/og.jpg"
     return ''
 
 
