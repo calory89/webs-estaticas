@@ -211,6 +211,61 @@ def photos_attr(slug):
     return ' data-photos="' + '|'.join([f'/hlc/img/cities/{slug}.jpg'] + [f'/hlc/img/cities/{slug}-{i + 2}.jpg' for i in range(n_extra(slug))]) + '"'
 
 
+def city_photo(dest, iata='', country=''):
+    """Foto fiable de una ciudad nueva: artículo de Wikipedia cuyas coordenadas están a menos de 80 km del aeropuerto
+    (evita confundir Phoenix con una marca o San Juan de Puerto Rico con otro San Juan)."""
+    import math
+    ap = AIRPORTS.get((iata or '').upper()) or []
+    if not ap:
+        return None, ''
+    la0, lo0 = ap[0], ap[1]
+    def dist(a, b):
+        p1, p2 = math.radians(a), math.radians(la0)
+        dl = math.radians(b - lo0)
+        return 6371 * math.acos(min(1, math.sin(p1) * math.sin(p2) + math.cos(p1) * math.cos(p2) * math.cos(dl)))
+    cands = []
+    for lang, q in (('en', dest), ('en', f'{dest} {country}'.strip()), ('es', dest)):
+        u = f'https://{lang}.wikipedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'format': 'json', 'generator': 'search', 'gsrsearch': q, 'gsrlimit': 6,
+                                                                                    'prop': 'pageimages|coordinates', 'piprop': 'original', 'colimit': 'max'})
+        try:
+            j = json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40))
+        except Exception:
+            continue
+        for pg in sorted((j.get('query') or {}).get('pages', {}).values(), key=lambda p: p.get('index', 99)):
+            co = (pg.get('coordinates') or [{}])[0]
+            o = pg.get('original') or {}
+            if not co.get('lat') or not o.get('source'):
+                continue
+            if dist(co['lat'], co['lon']) > 80 or re.search(r'airport|aeropuerto|aéroport|flughafen|airfield|air base|station|stadium|university|universidad|county|condado|metropolitan area|área metropolitana', pg.get('title', ''), re.I):
+                continue
+            src, w, h = o['source'].split('?')[0], o.get('width', 0), o.get('height', 1)
+            if not (src.lower().endswith('.svg') or re.search(r'(map|mapa|flag|bandera|coat|escudo|seal|logo|locator|location|montage|collage|airport|aeropuerto)', src, re.I) or w < 1000 or w / h < 1.2):
+                cands.append((src, pg.get('title', '')))
+                continue
+            # la imagen principal es un mosaico o un mapa: buscamos dentro del artículo una vista de la ciudad
+            try:
+                u2 = f'https://{lang}.wikipedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'format': 'json', 'generator': 'images', 'titles': pg['title'], 'gimlimit': 50,
+                                                                                            'prop': 'imageinfo', 'iiprop': 'url|size', 'iiurlwidth': 1600})
+                j2 = json.load(urllib.request.urlopen(urllib.request.Request(u2, headers=UA), timeout=40))
+                for ip in (j2.get('query') or {}).get('pages', {}).values():
+                    t2 = ip.get('title', '')
+                    ii = (ip.get('imageinfo') or [{}])[0]
+                    if not re.search(r'skyline|downtown|panorama|aerial|view|beach|bay|harbou?r|old town|city|centro|vista', t2, re.I) or re.search(r'map|flag|seal|logo|svg', t2, re.I):
+                        continue
+                    if ii.get('width', 0) >= 1400 and 1.3 <= ii['width'] / max(ii.get('height', 1), 1) <= 2.6:
+                        cands.append((ii.get('thumburl') or ii['url'], pg.get('title', '')))
+            except Exception:
+                pass
+        if cands:
+            break
+    for src, t in cands:
+        thumb = re.sub(r'/commons/(\w/\w\w)/', r'/commons/thumb/\1/', src) + '/1600px-' + src.rsplit('/', 1)[-1] if ('/commons/' in src and '/thumb/' not in src) else src
+        im = fetch_img(thumb) or fetch_img(src)
+        if im:
+            return im, f'Foto: Wikipedia · Wikimedia Commons ({t})'
+    return None, ''
+
+
 def ensure_lib(f):
     """Ningún destino sin foto: si un chollo va a un destino que no está en la biblioteca, lo añadimos
     (foto de Wikipedia/Commons, coordenadas del aeropuerto, crédito) y queda para siempre."""
@@ -220,7 +275,7 @@ def ensure_lib(f):
     k = slugify(dest)
     if not k:
         return None
-    im, cred = commons_photo(dest, f.get('pais', ''))
+    im, cred = city_photo(dest, f.get('destino_iata', ''), f.get('pais', ''))
     if im is None:
         return None
     big = cover(im, 1600, 1000) if im.width >= 1600 else cover(im, im.width, int(im.width / 1.6))
@@ -336,7 +391,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
     graph = [cld, {"@type": "CollectionPage", "name": h1, "url": canonical, "inLanguage": "es-ES", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     desc = intro[:155]
     page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else 'index, follow, max-image-preview:large',
-                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ld_script(graph), body_class='chollos')
+                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
     cards = ''.join(card(x) for x in deals) or EMPTY
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch}
@@ -388,7 +443,12 @@ def main():
     # ningún destino sin foto: los nuevos entran en la biblioteca
     for x in deals:
         try:
-            ensure_lib(x['facts'])
+            had = lib_slug(x['facts'])
+            if ensure_lib(x['facts']) and not had:
+                for fn in ('og.jpg', 'foto.jpg'):  # se rehacen con la foto nueva de la biblioteca
+                    fp = os.path.join('chollos', x['slug'], fn)
+                    if os.path.exists(fp):
+                        os.remove(fp)
         except Exception as ex:
             print('ensure_lib', ex)
     # marca en destinos.json qué destinos tienen guía (lo usa el mapa) y cuántas fotos extra hay
@@ -462,7 +522,7 @@ def main():
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + ld_script([art, cld, offer]), body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{slug}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -554,7 +614,7 @@ def main():
         side = ''.join(card(x) for x in sub[:3])
         page = head(title=e((g.get('seo_title') or f"Qué ver en {p['n']}") + ' · Happy Low Cost'), desc=e(g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."),
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + ld_script([dest_ld, art, cld]), body_class='destino')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{p['s']}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}

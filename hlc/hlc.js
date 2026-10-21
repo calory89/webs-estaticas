@@ -4,6 +4,7 @@ document.documentElement.classList.add('hlc-js');
   'use strict';
   var d=document, w=window;
   var API='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals';
+  var EN=(d.documentElement.lang||'').slice(0,2)==='en';function T(es,en){return EN?en:es;}
   /* Solo enlaces de CJ (sitio Happy Low Cost, PID 101900924) */
   var CJ=function(aid,u){return 'https://www.kqzyfj.com/click-101900924-'+aid+'?sid=happylowcost&url='+encodeURIComponent(u);};
   var AID={hotel:'17288959',flight:'17288982',attr:'17288984',taxi:'17322565',car:'12506471',paris:'11585459'};
@@ -52,7 +53,7 @@ document.documentElement.classList.add('hlc-js');
   function cookieBanner(){
     if(read())return;
     var b=d.createElement('div');b.className='hlc-ck';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookies');
-    b.innerHTML='<p>🍪 Usamos cookies propias y de terceros para medir visitas y enseñarte chollos que te interesen. Puedes aceptarlas o rechazarlas. <a href="/aviso-legal-datos-cookies/">Más información</a>.</p><div class="hlc-row"><button type="button" class="hlc-btn o" data-v="denied">Rechazar</button><button type="button" class="hlc-btn" data-v="granted">Aceptar</button></div>';
+    b.innerHTML=T('<p>🍪 Usamos cookies propias y de terceros para medir visitas y enseñarte chollos que te interesen. Puedes aceptarlas o rechazarlas. <a href="/aviso-legal-datos-cookies/">Más información</a>.</p><div class="hlc-row"><button type="button" class="hlc-btn o" data-v="denied">Rechazar</button><button type="button" class="hlc-btn" data-v="granted">Aceptar</button></div>','<p>🍪 We use our own and third-party cookies to measure visits and show you deals you might like. You can accept or reject them. <a href="/aviso-legal-datos-cookies/">More info</a>.</p><div class="hlc-row"><button type="button" class="hlc-btn o" data-v="denied">Reject</button><button type="button" class="hlc-btn" data-v="granted">Accept</button></div>');
     b.addEventListener('click',function(e){var v=e.target&&e.target.getAttribute('data-v');if(!v)return;store(v);consent(v);b.remove();d.body.classList.remove('hlc-ck-open');});
     d.body.appendChild(b);d.body.classList.add('hlc-ck-open');
   }
@@ -160,27 +161,27 @@ document.documentElement.classList.add('hlc-js');
   function toast(m){var t=d.querySelector('.hlc-toast');if(!t){t=d.createElement('div');t.className='hlc-toast';t.setAttribute('role','status');d.body.appendChild(t);}t.textContent=m;t.classList.add('on');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('on');},2200);}
   w.HLC_toast=toast;
   function favs(){
-    var h=function(e){var el=e.target.closest&&e.target.closest('[data-fav]');if(!el)return;if(e.type==='keydown'&&e.key!=='Enter'&&e.key!==' ')return;e.preventDefault();e.stopPropagation();var s=el.getAttribute('data-fav'),f=getFavs(),i=f.indexOf(s);if(i>=0){f.splice(i,1);toast('Quitado de favoritos');}else{f.unshift(s);toast('♥ Guardado en favoritos');track('favorito',s);}try{localStorage.setItem('hlc_favs',JSON.stringify(f.slice(0,100)));}catch(er){}paintFavs();w.dispatchEvent(new CustomEvent('hlc:favs'));};
+    var h=function(e){var el=e.target.closest&&e.target.closest('[data-fav]');if(!el)return;if(e.type==='keydown'&&e.key!=='Enter'&&e.key!==' ')return;e.preventDefault();e.stopPropagation();var s=el.getAttribute('data-fav'),f=getFavs(),i=f.indexOf(s);if(i>=0){f.splice(i,1);toast(T('Quitado de favoritos','Removed from favourites'));}else{f.unshift(s);toast(T('♥ Guardado en favoritos','♥ Saved to favourites'));track('favorito',s);}try{localStorage.setItem('hlc_favs',JSON.stringify(f.slice(0,100)));}catch(er){}paintFavs();w.dispatchEvent(new CustomEvent('hlc:favs'));};
     d.addEventListener('click',h,true);d.addEventListener('keydown',h,true);paintFavs();
   }
   /* ---------- Compartir / copiar ---------- */
   function share(){
     d.addEventListener('click',function(e){
       var s=e.target.closest&&e.target.closest('[data-share]');
-      if(s){e.preventDefault();var u=s.getAttribute('data-url')||location.href,t=s.getAttribute('data-title')||d.title;if(navigator.share){navigator.share({title:t,text:t,url:u}).catch(function(){});}else{navigator.clipboard&&navigator.clipboard.writeText(u);toast('Enlace copiado');}track('compartir',u);return;}
+      if(s){e.preventDefault();var u=s.getAttribute('data-url')||location.href,t=s.getAttribute('data-title')||d.title;if(navigator.share){navigator.share({title:t,text:t,url:u}).catch(function(){});}else{navigator.clipboard&&navigator.clipboard.writeText(u);toast(T('Enlace copiado','Link copied'));}track('compartir',u);return;}
       var c=e.target.closest&&e.target.closest('[data-copy]');
-      if(c){e.preventDefault();navigator.clipboard&&navigator.clipboard.writeText(c.getAttribute('data-copy'));toast('Enlace copiado ✓');track('copiar',c.getAttribute('data-copy'));}
+      if(c){e.preventDefault();navigator.clipboard&&navigator.clipboard.writeText(c.getAttribute('data-copy'));toast(T('Enlace copiado ✓','Link copied ✓'));track('copiar',c.getAttribute('data-copy'));}
     });
   }
   /* ---------- Página de chollo: días que faltan y aviso si caducó ---------- */
   function dealState(){
     var m=d.querySelector('[data-deal-slug]');if(!m)return;
     var ida=m.getAttribute('data-deal-ida'),el=d.querySelector('[data-days]');
-    if(ida&&el){var n=Math.ceil((Date.parse(ida)-Date.now())/864e5);if(n>=0)el.textContent=n===0?'✈️ Sale hoy':n===1?'✈️ Sale mañana':'✈️ Sale dentro de '+n+' días';}
-    feed().then(function(list){var s=m.getAttribute('data-deal-slug');if(!(list||[]).some(function(x){return x.slug===s;})||(ida&&ida<new Date().toISOString().slice(0,10))){var b=d.createElement('div');b.className='hlc-old';b.innerHTML='<b>⏰ Este chollo ya ha caducado.</b> Los precios cambian rápido. <a href="/chollos/">Mira los chollos de hoy</a> o <a href="/alertas/">crea una alerta</a> para el próximo.';var t=d.querySelector('.deal-body');if(t)t.parentNode.insertBefore(b,t);}});
+    if(ida&&el){var n=Math.ceil((Date.parse(ida)-Date.now())/864e5);if(n>=0)el.textContent=n===0?T('✈️ Sale hoy','✈️ Departs today'):n===1?T('✈️ Sale mañana','✈️ Departs tomorrow'):T('✈️ Sale dentro de '+n+' días','✈️ Departs in '+n+' days');}
+    feed().then(function(list){var s=m.getAttribute('data-deal-slug');if(!(list||[]).some(function(x){return x.slug===s;})||(ida&&ida<new Date().toISOString().slice(0,10))){var b=d.createElement('div');b.className='hlc-old';b.innerHTML=T('<b>⏰ Este chollo ya ha caducado.</b> Los precios cambian rápido. <a href="/chollos/">Mira los chollos de hoy</a> o <a href="/alertas/">crea una alerta</a> para el próximo.','<b>⏰ This deal has expired.</b> Prices move fast. <a href="/en/deals/">See today\'s deals</a>.');var t=d.querySelector('.deal-body');if(t)t.parentNode.insertBefore(b,t);}});
   }
   /* ---------- Volver arriba ---------- */
-  function toTop(){var b=d.createElement('button');b.className='hlc-top';b.type='button';b.setAttribute('aria-label','Volver arriba');b.textContent='↑';d.body.appendChild(b);b.onclick=function(){w.scrollTo({top:0,behavior:'smooth'});};w.addEventListener('scroll',function(){b.classList.toggle('on',w.scrollY>1200);},{passive:true});}
+  function toTop(){var b=d.createElement('button');b.className='hlc-top';b.type='button';b.setAttribute('aria-label',T('Volver arriba','Back to top'));b.textContent='↑';d.body.appendChild(b);b.onclick=function(){w.scrollTo({top:0,behavior:'smooth'});};w.addEventListener('scroll',function(){b.classList.toggle('on',w.scrollY>1200);},{passive:true});}
 
   /* ---------- Alertas ---------- */
   function alerts(){
@@ -227,6 +228,25 @@ document.documentElement.classList.add('hlc-js');
     });
   }
 
+  /* ---------- Idioma: inglés por defecto si el visitante no habla español ---------- */
+  function langSwitch(){
+    var bot=/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent)||navigator.webdriver;
+    var pref=ls('hlc_lang'),bl=(navigator.languages&&navigator.languages[0]||navigator.language||'es').toLowerCase();
+    var spanishWorld=GEO.r==='es'||GEO.r==='la'||/^es/.test(bl);
+    var alt=d.querySelector('link[rel=alternate][hreflang='+(EN?'es':'en')+']');
+    // botón de idioma en la cabecera
+    var nav=d.querySelector('.hx-nav');
+    if(nav&&!nav.querySelector('.hx-lang')){var a=d.createElement('a');a.className='hx-lang';a.href=alt?alt.getAttribute('href'):(EN?'/':'/en/');a.textContent=EN?'🇪🇸 Español':'🇬🇧 English';a.setAttribute('hreflang',EN?'es':'en');a.addEventListener('click',function(){ls('hlc_lang',EN?'es':'en');});nav.insertBefore(a,nav.lastElementChild);}
+    if(bot||EN)return;
+    if(pref==='es'||(!pref&&spanishWorld))return;
+    if(alt){location.replace(alt.getAttribute('href'));return;}
+    if(d.querySelector('.lang-note'))return;
+    var n=d.createElement('div');n.className='lang-note';n.innerHTML='🇬🇧 This page is in Spanish. <a href="/en/deals/">See today\'s flight deals in English →</a> <button type="button" aria-label="Close">✕</button>';
+    n.querySelector('button').onclick=function(){ls('hlc_lang','es');n.remove();};
+    n.querySelector('a').onclick=function(){ls('hlc_lang','en');};
+    d.body.insertBefore(n,d.body.firstChild);
+  }
+
   /* ---------- Origen preferido (chips de la portada) ---------- */
   function origins(){
     d.querySelectorAll('[data-origin]').forEach(function(c){
@@ -261,7 +281,7 @@ document.documentElement.classList.add('hlc-js');
   }
 
   function init(){
-    [search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
+    [langSwitch,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();

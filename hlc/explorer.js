@@ -1,7 +1,7 @@
 /* Happy Low Cost — explorador de chollos: filtros, orden, URL compartible y favoritos */
 (function () {
   'use strict';
-  var d = document, w = window;
+  var d = document, w = window, EN = (d.documentElement.lang || '').slice(0, 2) === 'en';
   var box = d.querySelector('[data-explorer-filters]'), grid = d.querySelector('[data-explorer-grid]');
   if (!box || !grid) return;
   var cards = [].slice.call(grid.querySelectorAll('.dc'));
@@ -22,7 +22,7 @@
 
   function paint() {
     if ($('q')) $('q').value = st.q; if ($('desde')) $('desde').value = st.desde; if ($('mes')) $('mes').value = st.mes; if ($('orden')) $('orden').value = st.orden;
-    if (rng) rng.value = st.max; var out = box.querySelector('[data-x-out="max"]'); if (out) out.textContent = (rng && st.max >= +rng.max) ? 'sin límite' : st.max + ' €';
+    if (rng) rng.value = st.max; var out = box.querySelector('[data-x-out="max"]'); if (out) out.textContent = (rng && st.max >= +rng.max) ? (EN ? 'no limit' : 'sin límite') : (EN ? '€' + st.max : st.max + ' €');
     ['dir', 'rt', 'fav'].forEach(function (k) { if ($(k)) $(k).checked = st[k]; });
     box.querySelectorAll('[data-cont]').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-cont') || '') === st.cont); });
   }
@@ -57,7 +57,7 @@
   });
   box.addEventListener('click', function (e) {
     var b = e.target.closest('[data-cont]'); if (b) { st.cont = b.getAttribute('data-cont') || ''; paint(); apply(true); return; }
-    var tg = e.target.closest('[data-x-toggle]'); if (tg) { var o = box.classList.toggle('open'); tg.setAttribute('aria-expanded', o); tg.textContent = o ? '✕ Menos filtros' : '⚙️ Más filtros'; return; }
+    var tg = e.target.closest('[data-x-toggle]'); if (tg) { var o = box.classList.toggle('open'); tg.setAttribute('aria-expanded', o); tg.textContent = o ? (EN ? '✕ Fewer filters' : '✕ Menos filtros') : (EN ? '⚙️ More filters' : '⚙️ Más filtros'); return; }
     if (e.target.closest('[data-x-clear]')) { st = { q: '', desde: '', mes: '', orden: 'nuevo', cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); }
   });
   w.addEventListener('hlc:favs', function () { if (st.fav) apply(false); });

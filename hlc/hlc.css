@@ -149,3 +149,7 @@ form.done>.af{display:none}
 .hx-logo i,.fx-logo i{display:block;font:800 12px/1 var(--fd);font-style:normal;text-transform:uppercase;letter-spacing:.34em;color:var(--coral-d,#E8431F);margin-top:3px;white-space:nowrap}
 .fx-logo i{font-size:14px;color:var(--sol);letter-spacing:.38em;margin-top:5px}
 @media (max-width:860px){.hx-logo i{font-size:10.5px;letter-spacing:.32em}}
+.lang-note{position:relative;z-index:60;display:flex;flex-wrap:wrap;gap:.4rem .8rem;align-items:center;justify-content:center;padding:.55rem 2.6rem .55rem 1rem;background:#14213D;color:#fff;font:600 14px/1.4 Inter,system-ui,sans-serif}
+.lang-note a{color:#FFC531;text-decoration:underline}
+.lang-note button{position:absolute;right:.6rem;top:50%;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:16px;cursor:pointer}
+.hx-lang{white-space:nowrap}

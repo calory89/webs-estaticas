@@ -37,7 +37,7 @@ for m in re.finditer(r'data-bgset="([^"]+)"[^>]*href="(https://www\.happylowcost
     posts.append((img, url.replace('https://www.happylowcost.com', ''), html.unescape(title)))
 posts = posts[:8]
 
-home_extra = '<link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
+home_extra = '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/"><link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
  '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [
    {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2015", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"]},
    {"@type": "WebSite", "@id": "https://www.happylowcost.com/#web", "url": "https://www.happylowcost.com/", "name": "Happy Low Cost", "inLanguage": "es-ES", "publisher": {"@id": "https://www.happylowcost.com/#org"}}]}, ensure_ascii=False) + '</script>'
@@ -144,7 +144,7 @@ open('index.html', 'w', encoding='utf-8').write(home)
 # ---------- /destinos/ ----------
 os.makedirs('destinos', exist_ok=True)
 dp = head(title='Mapa de destinos y chollos de vuelos desde España · Happy Low Cost', desc=f'Explora {len(DJ)} destinos en un mapa interactivo: ruta desde tu ciudad, vuelos, hoteles y los chollos de hoy verificados.',
-          canonical='https://www.happylowcost.com/destinos/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">', body_class='destinos')
+          canonical='https://www.happylowcost.com/destinos/', extra_head='<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/destinos/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/destinations/"><link rel="stylesheet" href="/hlc/home.css?v=7">', body_class='destinos')
 dp += f'''<main class="sec" style="padding-top:28px"><div class="wrap">
 <div class="sec-h"><div><div class="kicker">El mapa de los chollos</div><h1 style="font:800 clamp(36px,5vw,60px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:8px 0 0">¿A dónde te escapas?</h1><p>Elige desde dónde vuelas y toca un destino: ruta, vuelos, hoteles y chollos de hoy.</p></div></div>
 {map_block(True)}
