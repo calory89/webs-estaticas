@@ -664,6 +664,8 @@ Cell.prototype.step=function(speed){var self=this;if(this.cur===this.target)retu
  click();
  this.timer=setTimeout(function(){self.b.textContent=nx;self.cur=nx;if(self.cur!==self.target){self.step(speed);}},speed);};
 
+Cell.prototype.clear=function(){clearTimeout(this.timer);this.cur=" ";this.target=" ";this.t.textContent=" ";this.b.textContent=" ";this.ft.textContent=" ";this.fb.textContent=" ";};
+
 /* build board rows */
 var rowsEl=D.getElementById("rows"),ROWS=[],boardEl=D.querySelector(".board");
 for(var r=0;r<6;r++){var row=D.createElement("button");row.type="button";row.className="row";
@@ -689,18 +691,20 @@ function render(first){var items=PAGES[page];
   R.code.querySelector(".cv").textContent=it.code;R.code.querySelector(".cy").textContent=it.y;
   var pt=txt(it.p),dt=txt(it.d),stt=st[lang];
   R.sr.textContent=pt+", "+dt+", "+stt;R.el.setAttribute("aria-label",pt+". "+dt+". "+stt);
-  var base=first?400+ri*140:ri*90,sp=first?62:52;
+  if(!seen){return;}
+  var base=first?250+ri*140:ri*90,sp=first?62:52;
   R.cells.p.forEach(function(c,i){c.set(pt[i]||" ",base+i*28,sp);});
   R.cells.d.forEach(function(c,i){c.set(dt[i]||" ",base+120+i*28,sp);});
   R.cells.s.forEach(function(c,i){c.set(stt[i]||" ",base+240+i*28,sp);});
  });}
 
 /* paging */
+var seen=false,inView=false,awayAt=0;
 var PERIOD=14000,t0=performance.now(),paused=false,bar=D.getElementById("bar");
 boardEl.addEventListener("mouseenter",function(){paused=true;});boardEl.addEventListener("mouseleave",function(){paused=false;});
 boardEl.addEventListener("focusin",function(){paused=true;});boardEl.addEventListener("focusout",function(){paused=false;});
 var acc=0,last=performance.now();
-function tick(now){var dt=now-last;last=now;if(!paused&&!held&&!D.hidden){acc+=dt;}
+function tick(now){var dt=now-last;last=now;if(!paused&&!held&&!D.hidden&&seen&&inView){acc+=dt;}
  if(acc>=PERIOD){acc=0;page=(page+1)%PAGES.length;render(false);}
  bar.style.width=(acc/PERIOD*100)+"%";requestAnimationFrame(tick);}
 requestAnimationFrame(tick);
@@ -869,6 +873,15 @@ if(reel&&vb){var vs=vb.querySelector("span");
 
 sizeBoard();window.addEventListener("resize",sizeBoard);try{new ResizeObserver(sizeBoard).observe(rowsEl);}catch(e){}
 applyLang(true);
+
+/* the board flips in when the visitor reaches it, and again when they come back to it */
+function arrive(){acc=0;if(seen){ROWS.forEach(function(R){["p","d","s"].forEach(function(k){R.cells[k].forEach(function(c){c.clear();});});});}seen=true;render(true);}
+if("IntersectionObserver" in window){
+ new IntersectionObserver(function(es){es.forEach(function(en){
+  if(en.isIntersecting&&(en.intersectionRatio>=0.45||en.intersectionRect.height>=innerHeight*0.4)){if(!inView){inView=true;if(!seen||performance.now()-awayAt>6000){arrive();}}}
+  else if(!en.isIntersecting||en.intersectionRatio<0.05){if(inView){inView=false;awayAt=performance.now();}}
+ });},{threshold:[0,0.05,0.2,0.3,0.45,0.7]}).observe(boardEl);
+}else{inView=true;arrive();}
 })();
 </script>
 
