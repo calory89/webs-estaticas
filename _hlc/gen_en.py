@@ -295,7 +295,7 @@ def main():
         return (f'<div class="{cls}"><a href="/en/deals/{e(x["slug"])}/"><span class="h2-ph" style="background-image:url({e(G.photo_url(x))})"></span>'
                 f'<span class="h2-t"><b>✈️ {e(o)} → {e(dn)}</b><span>{was}<em>€{e(x.get("price"))}</em>{sv}</span><small>{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""}</small></span></a></div>')
     pool = [x for x in deals if x['facts'].get('precio_normal')] or deals
-    top6 = sorted(deals, key=lambda x: -(x['facts'].get('ahorro_pct') or 0))[:6]
+    top6 = deals[:6]
     page += f'''<main>
 <section class="h2-hero"><div class="wrap h2-grid">
 <div>

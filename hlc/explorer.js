@@ -35,7 +35,7 @@
     });
     var G = w.HLC_GEO, o = null; try { o = localStorage.getItem('hlc_origin'); } catch (e) {}
     var rank = function (c) { if (!G) return 0; if (o && c.dataset.orig === o) return 0; return G.reg.cc.indexOf((c.dataset.occ || '').toUpperCase()) >= 0 ? 1 : 2; };
-    var key = { nuevo: function (c) { return rank(c) * 1e13 - (Date.parse(c.dataset.ts) || 0); }, precio: function (c) { return +c.dataset.price; }, fecha: function (c) { return Date.parse(c.dataset.ida) || 9e15; } }[st.orden] || function () { return 0; };
+    var key = { nuevo: function (c) { var t = Date.parse(c.dataset.ts) || 0, h = (Date.now() - t) / 36e5; return (h < 12 ? 0 : h < 36 ? 1 : 2) * 1e14 + rank(c) * 1e13 - t; }, precio: function (c) { return +c.dataset.price; }, fecha: function (c) { return Date.parse(c.dataset.ida) || 9e15; } }[st.orden] || function () { return 0; };
     cards.slice().sort(function (a, b) { return key(a) - key(b); }).forEach(function (c) { grid.appendChild(c); });
     if (count) count.textContent = n;
     if (empty) empty.hidden = n > 0;
