@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Carlos de Ory · All my projects</title>
-<meta name="description" content="Every project Carlos de Ory is building right now: Eco Beach City, Top3Hotels, Linkveo, RealHunt, SupportNear, SurfRanking, MejorCrucero, Happy Low Cost and more. Book him for a talk or grow your company with his team.">
+<meta name="description" content="Every project Carlos de Ory is building right now: Eco Beach City, Top3Hotels, Linkveo, RealHunt, SupportNear, SurfRanking, MejorCrucero, Happy Low Cost, SuperTieso, Global Padel Tour and more. Book him for a talk or grow your company with his team.">
 <link rel="canonical" href="https://www.carlosdeory.com/links/">
 <link rel="alternate" hreflang="en" href="https://www.carlosdeory.com/links/">
 <link rel="alternate" hreflang="es" href="https://www.carlosdeory.com/links/?lang=es">
@@ -60,7 +60,8 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,46px);lin
 /* board */
 .board{background:var(--board);color:var(--chr);border-radius:24px;padding:16px 12px 8px;box-shadow:0 24px 60px -30px rgba(14,14,18,.55)}
 .bh{display:flex;align-items:center;gap:10px;padding:2px 6px 12px;border-bottom:1px solid #26252C}
-.bh .t{font:800 12px/1.2 var(--mono);letter-spacing:.18em;color:var(--amber)}
+.bh .t{font:800 12px/1.2 var(--mono);letter-spacing:.14em;color:var(--amber);white-space:nowrap;margin:0}
+@media (max-width:420px){.bh .t,.bh .clk{font-size:11px;letter-spacing:.08em}}
 .bh .clk{margin-left:auto;font:800 12px/1 var(--mono);letter-spacing:.12em;color:var(--chr)}
 .lamp{width:8px;height:8px;border-radius:50%;background:var(--go);box-shadow:0 0 10px var(--go);animation:pulse 1.6s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.35}}
@@ -88,6 +89,17 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,46px);lin
 .cell .h.b .ch,.cell .h.fb .ch{top:calc(var(--ch) * -0.5)}
 .cell::after{content:"";position:absolute;left:0;right:0;top:calc(50% - .5px);height:1px;background:#050507;z-index:3}
 .row.you .code{color:var(--hot)}
+.feat{position:relative;display:block;border-radius:24px;overflow:hidden;aspect-ratio:16/9;background:var(--board);text-decoration:none;color:#fff;margin:0 0 14px;box-shadow:0 24px 60px -30px rgba(14,14,18,.55)}
+.feat video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 78%}
+@media (max-width:520px){.feat{aspect-ratio:1/1}}
+.feat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,14,18,0) 35%,rgba(14,14,18,.85))}
+.feat-t{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;display:flex;flex-direction:column;gap:4px}
+.feat-t .eyebrow{color:var(--amber)}.feat-t b{font-family:var(--display);font-size:clamp(22px,5.5vw,32px);line-height:1.05;letter-spacing:-.02em}.feat-t span:last-child{font-size:14px;color:#E8E3D8}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:0 0 auto;font:700 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.row.off{display:none}
 /* sections */
 h2{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.02em;margin:0 0 12px}
 .sec{padding:30px 0 0}
@@ -136,8 +148,17 @@ footer a{color:var(--ink-2)}
  <a class="btn ghost" href="/#contact" data-i18n="cta_grow">Grow your company</a>
 </div>
 
+<a class="feat" href="https://ecobeachcity.com" target="_blank" rel="noopener">
+ <video id="reel" src="/assets/cdo/reel.mp4" poster="/assets/cdo/still1.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+ <span class="feat-t"><span class="eyebrow" data-i18n="feat_e">Now building</span><b data-i18n="feat_b">A town on the beach in Sumba</b><span data-i18n="feat_s">Eco Beach City, one hour from Bali. See the project ↗</span></span>
+</a>
+
+<div class="filters" role="group" aria-label="Filter projects">
+ <button type="button" data-f="all" aria-pressed="true" data-i18n="f_all">All</button><button type="button" data-f="travel" aria-pressed="false" data-i18n="f_travel">Travel</button><button type="button" data-f="ai" aria-pressed="false" data-i18n="f_ai">AI tools</button><button type="button" data-f="sumba" aria-pressed="false" data-i18n="f_sumba">Sumba</button><button type="button" data-f="business" aria-pressed="false" data-i18n="f_business">Business</button><button type="button" data-f="impact" aria-pressed="false" data-i18n="f_impact">Impact</button>
+</div>
+
 <section class="board" aria-labelledby="bt">
- <div class="bh"><span class="lamp" aria-hidden="true"></span><h2 class="t" id="bt" data-i18n="board">DEPARTURES · ALL PROJECTS</h2><span class="clk" id="clk"></span></div>
+ <div class="bh"><span class="lamp" aria-hidden="true"></span><h2 class="t" id="bt"><span data-i18n="board">DEPARTURES</span> · <span id="cnt"></span></h2><span class="clk" id="clk"></span></div>
  <div id="rows"></div>
 </section>
 <p class="fine" data-i18n="tap">Tap a flight to visit the project.</p>
@@ -172,21 +193,25 @@ footer a{color:var(--ink-2)}
 
 <script>
 (function(){"use strict";var D=document;
-var T={en:{eyebrow:"Gate 16 · Now boarding",h1:"Everything I am building.",lede:"First business at 16, more than 20 years building companies. These are the ones in the air right now.",chip1:"Forbes España top 100 creatives",chip2:"Speaker EN · ES",chip3:"Sumba · 1 h from Bali",cta_talk:"Book me for a talk",cta_grow:"Grow your company",board:"DEPARTURES · ALL PROJECTS",tap:"Tap a flight to visit the project.",read_h:"Read, listen and learn",c1_i:"THE BOOK",c1_b:"The day you stop waiting",c1_s:"Episode 1 of the book I am writing, free.",c2_i:"THE PLAYBOOK",c2_b:"Fly business class for about €100",c2_s:"1,000,000 miles without flying. The exact steps.",c3_i:"PODCAST",c3_b:"The podcast on YouTube",c3_s:"Points, travel and building a town from scratch.",c4_i:"BLOG",c4_b:"1,000+ travel guides",c4_s:"Cities, tips and deals from 20 years on the road.",follow_h:"Follow the journey",seen:"As seen in",home:"Home",contact:"Contact",legal:"Legal notice",privacy:"Privacy",clock:"SUMBA",go:"VISIT ↗",live:"IN FLIGHT",nw:"NEW",you:"BOARDING",title:"Carlos de Ory · All my projects"},
-es:{eyebrow:"Puerta 16 · Embarcando",h1:"Todo lo que estoy construyendo.",lede:"Primer negocio con 16 años y más de 20 años creando empresas. Estas son las que están volando ahora mismo.",chip1:"Forbes España: top 100 creativos",chip2:"Ponente EN · ES",chip3:"Sumba · a 1 h de Bali",cta_talk:"Contrátame para una ponencia",cta_grow:"Haz crecer tu empresa",board:"SALIDAS · TODOS LOS PROYECTOS",tap:"Toca un vuelo para visitar el proyecto.",read_h:"Lee, escucha y aprende",c1_i:"EL LIBRO",c1_b:"El día que dejas de esperar",c1_s:"El episodio 1 del libro que estoy escribiendo, gratis.",c2_i:"EL PLAYBOOK",c2_b:"Vuela en business por unos 100 €",c2_s:"1.000.000 de millas sin volar. Los pasos exactos.",c3_i:"PODCAST",c3_b:"El podcast en YouTube",c3_s:"Puntos, viajes y construir un pueblo desde cero.",c4_i:"BLOG",c4_b:"Más de 1.000 guías de viaje",c4_s:"Ciudades, consejos y ofertas de 20 años viajando.",follow_h:"Sigue el viaje",seen:"Visto en",home:"Inicio",contact:"Contacto",legal:"Aviso legal",privacy:"Privacidad",clock:"SUMBA",go:"VER ↗",live:"EN VUELO",nw:"NUEVO",you:"EMBARCANDO",title:"Carlos de Ory · Todos mis proyectos"}};
+var T={en:{eyebrow:"Gate 16 · Now boarding",h1:"Everything I am building.",lede:"First business at 16, more than 20 years building companies. These are the ones in the air right now.",chip1:"Forbes España top 100 creatives",chip2:"Speaker EN · ES",chip3:"Sumba · 1 h from Bali",cta_talk:"Book me for a talk",cta_grow:"Grow your company",board:"DEPARTURES",tap:"Tap a flight to visit the project.",read_h:"Read, listen and learn",c1_i:"THE BOOK",c1_b:"The day you stop waiting",c1_s:"Episode 1 of the book I am writing, free.",c2_i:"THE PLAYBOOK",c2_b:"Fly business class for about €100",c2_s:"1,000,000 miles without flying. The exact steps.",c3_i:"PODCAST",c3_b:"The podcast on YouTube",c3_s:"Points, travel and building a town from scratch.",c4_i:"BLOG",c4_b:"1,000+ travel guides",c4_s:"Cities, tips and deals from 20 years on the road.",follow_h:"Follow the journey",seen:"As seen in",home:"Home",contact:"Contact",legal:"Legal notice",privacy:"Privacy",clock:"SUMBA",go:"VISIT ↗",live:"IN FLIGHT",nw:"NEW",you:"BOARDING",title:"Carlos de Ory · All my projects",feat_e:"Now building",feat_b:"A town on the beach in Sumba",feat_s:"Eco Beach City, one hour from Bali. See the project ↗",f_all:"All",f_travel:"Travel",f_ai:"AI tools",f_sumba:"Sumba",f_business:"Business",f_impact:"Impact",cnt:"{n} IN FLIGHT"},
+es:{eyebrow:"Puerta 16 · Embarcando",h1:"Todo lo que estoy construyendo.",lede:"Primer negocio con 16 años y más de 20 años creando empresas. Estas son las que están volando ahora mismo.",chip1:"Forbes España: top 100 creativos",chip2:"Ponente EN · ES",chip3:"Sumba · a 1 h de Bali",cta_talk:"Contrátame para una ponencia",cta_grow:"Haz crecer tu empresa",board:"SALIDAS",tap:"Toca un vuelo para visitar el proyecto.",read_h:"Lee, escucha y aprende",c1_i:"EL LIBRO",c1_b:"El día que dejas de esperar",c1_s:"El episodio 1 del libro que estoy escribiendo, gratis.",c2_i:"EL PLAYBOOK",c2_b:"Vuela en business por unos 100 €",c2_s:"1.000.000 de millas sin volar. Los pasos exactos.",c3_i:"PODCAST",c3_b:"El podcast en YouTube",c3_s:"Puntos, viajes y construir un pueblo desde cero.",c4_i:"BLOG",c4_b:"Más de 1.000 guías de viaje",c4_s:"Ciudades, consejos y ofertas de 20 años viajando.",follow_h:"Sigue el viaje",seen:"Visto en",home:"Inicio",contact:"Contacto",legal:"Aviso legal",privacy:"Privacidad",clock:"SUMBA",go:"VER ↗",live:"EN VUELO",nw:"NUEVO",you:"EMBARCANDO",title:"Carlos de Ory · Todos mis proyectos",feat_e:"Construyendo ahora",feat_b:"Un pueblo en la playa de Sumba",feat_s:"Eco Beach City, a una hora de Bali. Ver el proyecto ↗",f_all:"Todos",f_travel:"Viajes",f_ai:"Herramientas IA",f_sumba:"Sumba",f_business:"Negocios",f_impact:"Impacto",cnt:"{n} EN VUELO"}};
 var P=[
- {c:"CO 023",n:"ECO BEACH CITY",u:"https://ecobeachcity.com",s:"live",d:{en:"SUMBA, INDONESIA",es:"SUMBA, INDONESIA"},x:{en:"A town by the sea on Sumba, one hour from Bali: coworking, padel, solar power and beach homes.",es:"Un pueblo junto al mar en Sumba, a una hora de Bali: coworking, pádel, energía solar y casas en la playa."}},
- {c:"CO 326",n:"TOP3HOTELS",u:"https://top3hotels.com",s:"nw",d:{en:"1,200+ CITIES",es:"1.200+ CIUDADES"},x:{en:"The 3 best hotels in every city: one budget, one best value, one luxury. Choose in one second.",es:"Los 3 mejores hoteles de cada ciudad: uno barato, uno calidad-precio y uno de lujo. Eliges en un segundo."}},
- {c:"CO 426",n:"LINKVEO",u:"https://linkveo.com",s:"nw",d:{en:"YOUTUBE IN 1 MINUTE",es:"YOUTUBE EN 1 MINUTO"},x:{en:"Paste any YouTube video and get its best ideas, plus a 7-day plan to apply them, in under a minute.",es:"Pega cualquier vídeo de YouTube y recibe sus mejores ideas y un plan de 7 días para aplicarlas, en menos de un minuto."}},
- {c:"CO 026",n:"REALHUNT",u:"https://realhunt.co",s:"live",d:{en:"BEST HOMES",es:"MEJORES CASAS"},x:{en:"The best homes in every country, scored and ranked, best first. New homes every day.",es:"Las mejores casas de cada país, puntuadas y ordenadas, las mejores primero. Casas nuevas cada día."}},
- {c:"CO 018",n:"SUPPORTNEAR",u:"https://supportnear.com",s:"live",d:{en:"166 COUNTRIES",es:"166 PAÍSES"},x:{en:"Free food, shelter, showers and help on one live map: 170,000+ places. Non-profit, no account, no tracking.",es:"Comida, refugio, duchas y ayuda gratis en un mapa: más de 170.000 lugares. Sin ánimo de lucro, sin cuenta, sin rastreo."}},
- {c:"CO 126",n:"SURFRANKING",u:"https://surfranking.com",s:"live",d:{en:"5,500+ SURF SPOTS",es:"5.500+ SPOTS"},x:{en:"Compare surf spots, seasons and access, with a live 7-day forecast.",es:"Compara spots de surf, temporadas y accesos, con la previsión de 7 días en directo."}},
- {c:"CO 226",n:"MEJORCRUCERO",u:"https://www.mejorcrucero.com",s:"live",d:{en:"800+ CRUISES",es:"800+ CRUCEROS"},x:{en:"Compare cruises with real prices and a score from 0 to 100 for every ship and deal.",es:"Compara cruceros con precio real y una nota de 0 a 100 para cada barco y oferta."}},
- {c:"CO 014",n:"HAPPY LOW COST",u:"https://happylowcost.com",s:"live",d:{en:"CHEAP FLIGHTS",es:"VUELOS BARATOS"},x:{en:"We hunt fare errors and cheap flights from your airport and send them to you for free.",es:"Cazamos errores de tarifa y vuelos baratos desde tu aeropuerto y te avisamos gratis."}},
- {c:"CO 526",n:"KLIPSTAY",u:"https://klipstay.com",s:"live",d:{en:"FREE TRAVEL",es:"VIAJA GRATIS"},x:{en:"Make short videos for hotels and travel brands and earn free stays. No followers needed.",es:"Haz vídeos cortos para hoteles y marcas de viaje y gana estancias gratis. Sin necesidad de seguidores."}},
- {c:"CO 626",n:"CIGARETTE INDEX",u:"https://thecigaretteindex.com",s:"live",d:{en:"430 CITIES",es:"430 CIUDADES"},x:{en:"How many cigarettes a year you smoke just by breathing your city's air. Find yours.",es:"Cuántos cigarrillos al año fumas solo por respirar el aire de tu ciudad. Busca la tuya."}},
- {c:"CO 726",n:"JOBERSITY",u:"https://jobersity.com",s:"live",d:{en:"JOB INTERVIEWS",es:"ENTREVISTAS"},x:{en:"Upload your CV and an AI agent finds jobs, prepares each application and applies for you.",es:"Sube tu CV y un agente con IA busca ofertas, prepara cada candidatura y aplica por ti."}},
- {c:"YOU 26",n:{en:"YOUR COMPANY",es:"TU EMPRESA"},u:"/#contact",s:"you",d:{en:"NEXT DEPARTURE",es:"PRÓXIMA SALIDA"},x:{en:"Want your project on this board? I help as a speaker or with my growth marketing team.",es:"¿Quieres tu proyecto en este panel? Te ayudo como ponente o con mi equipo de growth marketing."}}];
+ {c:"CO 023",g:"sumba",n:"ECO BEACH CITY",u:"https://ecobeachcity.com",s:"live",d:{en:"SUMBA, INDONESIA",es:"SUMBA, INDONESIA"},x:{en:"A town by the sea on Sumba, one hour from Bali: coworking, padel, solar power and beach homes.",es:"Un pueblo junto al mar en Sumba, a una hora de Bali: coworking, pádel, energía solar y casas en la playa."}},
+ {c:"CO 326",g:"travel",n:"TOP3HOTELS",u:"https://top3hotels.com",s:"nw",d:{en:"1,200+ CITIES",es:"1.200+ CIUDADES"},x:{en:"The 3 best hotels in every city: one budget, one best value, one luxury. Choose in one second.",es:"Los 3 mejores hoteles de cada ciudad: uno barato, uno calidad-precio y uno de lujo. Eliges en un segundo."}},
+ {c:"CO 426",g:"ai",n:"LINKVEO",u:"https://linkveo.com",s:"nw",d:{en:"YOUTUBE IN 1 MINUTE",es:"YOUTUBE EN 1 MINUTO"},x:{en:"Paste any YouTube video and get its best ideas, plus a 7-day plan to apply them, in under a minute.",es:"Pega cualquier vídeo de YouTube y recibe sus mejores ideas y un plan de 7 días para aplicarlas, en menos de un minuto."}},
+ {c:"CO 026",g:"ai",n:"REALHUNT",u:"https://realhunt.co",s:"live",d:{en:"BEST HOMES",es:"MEJORES CASAS"},x:{en:"The best homes in every country, scored and ranked, best first. New homes every day.",es:"Las mejores casas de cada país, puntuadas y ordenadas, las mejores primero. Casas nuevas cada día."}},
+ {c:"CO 018",g:"impact",n:"SUPPORTNEAR",u:"https://supportnear.com",s:"live",d:{en:"166 COUNTRIES",es:"166 PAÍSES"},x:{en:"Free food, shelter, showers and help on one live map: 170,000+ places. Non-profit, no account, no tracking.",es:"Comida, refugio, duchas y ayuda gratis en un mapa: más de 170.000 lugares. Sin ánimo de lucro, sin cuenta, sin rastreo."}},
+ {c:"CO 126",g:"travel",n:"SURFRANKING",u:"https://surfranking.com",s:"live",d:{en:"5,500+ SURF SPOTS",es:"5.500+ SPOTS"},x:{en:"Compare surf spots, seasons and access, with a live 7-day forecast.",es:"Compara spots de surf, temporadas y accesos, con la previsión de 7 días en directo."}},
+ {c:"CO 226",g:"travel",n:"MEJORCRUCERO",u:"https://www.mejorcrucero.com",s:"live",d:{en:"800+ CRUISES",es:"800+ CRUCEROS"},x:{en:"Compare cruises with real prices and a score from 0 to 100 for every ship and deal.",es:"Compara cruceros con precio real y una nota de 0 a 100 para cada barco y oferta."}},
+ {c:"CO 014",g:"travel",n:"HAPPY LOW COST",u:"https://happylowcost.com",s:"live",d:{en:"CHEAP FLIGHTS",es:"VUELOS BARATOS"},x:{en:"We hunt fare errors and cheap flights from your airport and send them to you for free.",es:"Cazamos errores de tarifa y vuelos baratos desde tu aeropuerto y te avisamos gratis."}},
+ {c:"CO 526",g:"travel",n:"KLIPSTAY",u:"https://klipstay.com",s:"live",d:{en:"FREE TRAVEL",es:"VIAJA GRATIS"},x:{en:"Make short videos for hotels and travel brands and earn free stays. No followers needed.",es:"Haz vídeos cortos para hoteles y marcas de viaje y gana estancias gratis. Sin necesidad de seguidores."}},
+ {c:"CO 626",g:"impact",n:"CIGARETTE INDEX",u:"https://thecigaretteindex.com",s:"live",d:{en:"430 CITIES",es:"430 CIUDADES"},x:{en:"How many cigarettes a year you smoke just by breathing your city's air. Find yours.",es:"Cuántos cigarrillos al año fumas solo por respirar el aire de tu ciudad. Busca la tuya."}},
+ {c:"CO 726",g:"ai business",n:"JOBERSITY",u:"https://jobersity.com",s:"live",d:{en:"JOB INTERVIEWS",es:"ENTREVISTAS"},x:{en:"Upload your CV and an AI agent finds jobs, prepares each application and applies for you.",es:"Sube tu CV y un agente con IA busca ofertas, prepara cada candidatura y aplica por ti."}},
+ {c:"CO 826",g:"ai travel",n:"SUPERTIESO",u:"https://supertieso.com",s:"nw",d:{en:"SAME, BUT CHEAPER",es:"LO MISMO, MÁS BARATO"},x:{en:"Paste the link of any hotel, flight or product and we tell you where the same thing is cheaper. Free.",es:"Pega el enlace de cualquier hotel, vuelo o producto y te decimos dónde está lo mismo más barato. Gratis."}},
+ {c:"CO 926",g:"sumba",n:"GLOBALPADELTOUR",u:"https://globalpadeltour.com",s:"nw",d:{en:"100 CITIES",es:"100 CIUDADES"},x:{en:"An international amateur padel circuit: 100 founding cities, one Head per city, and the final in Sumba.",es:"Un circuito internacional de pádel amateur: 100 ciudades fundadoras, un Head por ciudad y la final en Sumba."}},
+ {c:"CO 027",g:"sumba business",n:"CLOSERS RETREAT",u:"https://bestsalesclosers.com",s:"live",d:{en:"10 SEATS A YEAR",es:"10 PLAZAS AL AÑO"},x:{en:"Three days of high-ticket sales closer training, once a year, in Sumba or live online.",es:"Tres días de formación para closers de ventas high-ticket, una vez al año, en Sumba o en directo online."}},
+ {c:"CO 127",g:"business",n:"LEAD POOL CLUB",u:"https://leadpoolclub.com",s:"live",d:{en:"QUALIFIED BUYERS",es:"COMPRADORES"},x:{en:"Qualified buyer leads for companies that sell high-ticket products.",es:"Leads de compradores cualificados para empresas que venden productos de alto valor."}},
+ {c:"YOU 26",g:"all",n:{en:"YOUR COMPANY",es:"TU EMPRESA"},u:"/#contact",s:"you",d:{en:"NEXT DEPARTURE",es:"PRÓXIMA SALIDA"},x:{en:"Want your project on this board? I help as a speaker or with my growth marketing team.",es:"¿Quieres tu proyecto en este panel? Te ayudo como ponente o con mi equipo de growth marketing."}}];
 var lang="en";try{var sv=localStorage.getItem("cdo-lang");if(sv==="es"||sv==="en")lang=sv;}catch(e){}
 try{var qp=new URLSearchParams(location.search).get("lang");if(qp==="es"||qp==="en")lang=qp;}catch(e){}
 var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -202,6 +227,7 @@ Cell.prototype.step=function(speed){var s=this;if(this.cur===this.target)return;
  if(this.ftw.animate){this.ftw.animate([{transform:"rotateX(0deg)",filter:"brightness(1)"},{transform:"rotateX(-90deg)",filter:"brightness(.55)"}],{duration:h,easing:"ease-in",fill:"forwards"});
  this.fbw.animate([{transform:"rotateX(90deg)",filter:"brightness(1.4)"},{transform:"rotateX(0deg)",filter:"brightness(1)"}],{duration:h,delay:h,easing:"ease-out",fill:"forwards"});}
  this.timer=setTimeout(function(){s.b.textContent=nx;s.cur=nx;if(s.cur!==s.target)s.step(speed);},speed);};
+Cell.prototype.clear=function(){clearTimeout(this.timer);this.cur=this.target=" ";this.t.textContent=this.b.textContent=this.ft.textContent=this.fb.textContent=" ";};
 var rowsEl=D.getElementById("rows"),R=[];
 P.forEach(function(p,k){var a=D.createElement("a");a.className="row"+(p.s==="you"?" you":"");a.href=p.u;if(/^https?:/.test(p.u)){a.target="_blank";a.rel="noopener";}
  a.innerHTML='<span class="code"></span><span class="flaps"></span><span class="meta"><span class="dest"></span><span class="st"></span><span class="go"></span><span class="desc"></span></span><span class="sr"></span>';
@@ -217,10 +243,17 @@ function size(){var w=rowsEl.clientWidth-12-56-10;var cw=Math.floor(w/N)-2;cw=Ma
 function apply(){var t=T[lang];D.documentElement.lang=lang;D.title=t.title;
  D.querySelectorAll("[data-i18n]").forEach(function(el){var v=t[el.getAttribute("data-i18n")];if(v!=null)el.textContent=v;});
  D.querySelectorAll("[data-href-es]").forEach(function(el){if(!el.dataset.hrefEn)el.dataset.hrefEn=el.getAttribute("href");el.setAttribute("href",lang==="es"?el.dataset.hrefEs:el.dataset.hrefEn);});
- D.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-lang")===lang));});texts();clock();}
+ D.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-lang")===lang));});texts();clock();count();}
 D.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){lang=b.getAttribute("data-lang");try{localStorage.setItem("cdo-lang",lang);}catch(e){}apply();});});
 function clock(){var n=new Date(),u=n.getTime()+n.getTimezoneOffset()*60000,s=new Date(u+8*3600000);D.getElementById("clk").textContent=T[lang].clock+" "+String(s.getHours()).padStart(2,"0")+":"+String(s.getMinutes()).padStart(2,"0");}
 setInterval(clock,10000);
+var filt="all";
+function count(){var n=R.filter(function(r){return r.p.g!=="all"&&!r.a.classList.contains("off");}).length;D.getElementById("cnt").textContent=T[lang].cnt.replace("{n}",n);}
+D.querySelectorAll(".filters button").forEach(function(b){b.addEventListener("click",function(){filt=b.getAttribute("data-f");
+ D.querySelectorAll(".filters button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b));});
+ var i=0;R.forEach(function(r){var on=filt==="all"||r.p.g==="all"||r.p.g.split(" ").indexOf(filt)>=0;r.a.classList.toggle("off",!on);
+  if(on&&r.shown){r.cells.forEach(function(c){c.clear();});(function(rr,d){setTimeout(function(){fill(rr,true);},d);})(r,i*120);i++;}else if(on){show(r);}});count();});});
+var reel=D.getElementById("reel");if(reel&&!reduce&&"IntersectionObserver" in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var pr=reel.play();if(pr&&pr.catch)pr.catch(function(){});}else{reel.pause();}});}).observe(reel);}
 /* each row flips in as it scrolls into view, one after another */
 var queue=0,qt=0;
 function show(r){if(r.shown)return;r.shown=true;var now=performance.now();var wait=Math.max(0,qt-now);qt=Math.max(now,qt)+170;
