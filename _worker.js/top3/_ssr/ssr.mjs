@@ -10403,7 +10403,7 @@ async function cityData(id) {
 	const raw = packed.cities[id];
 	if (!raw) return null;
 	const city = unpack(packed, raw);
-	const ov = overrides_default[id];
+	const ov = overrides_default[id] ?? (id === "odense-denmark" ? { "Best Value": {"id": 22105, "name": "City Hotel Nattergalen", "area": "City centre", "address": "Hans Mules Gade 5", "lat": 55.399016, "lng": 10.394233, "url": "https://www.booking.com/hotel/dk/city-odense.html", "score": 7.9, "count": 2917, "stars": 3, "total": 255.48, "checked": "22 Oct 2026", "reason": "A central Odense hotel with a rooftop terrace, rated 7.9 from more than 2,900 Booking.com reviews, for well under the price of our upscale pick. Hosted stay: the hotel is hosting our team on 25 October 2026."} } : void 0);
 	if (ov) city.hotels = city.hotels.map((h) => {
 		const o = ov[h.category];
 		if (!o) return h;
@@ -10424,7 +10424,7 @@ async function cityData(id) {
 				count: o.count,
 				stars: o.stars,
 				url: o.url,
-				checked: "14 Oct 2026"
+				checked: o.checked ?? "14 Oct 2026"
 			},
 			offer: {
 				total: o.total,
@@ -10473,6 +10473,7 @@ async function cityData(id) {
 			if (p.stars) h.booking.stars = p.stars;
 		}
 	}
+	for (const h of city.hotels ?? []) if (typeof h.name === "string") h.name = h.name.replace(/\s+FREE PARKING[\s\S]*$/i, "").trim();
 	city.extras = cx[id] ?? {};
 	city.slug = byId.get(id)?.slug ?? id;
 	return city;
