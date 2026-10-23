@@ -10,6 +10,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 sys.path.insert(0, os.path.join(ROOT, '_hlc'))
 import gen_deals as G  # noqa: E402
+T3 = G.T3
 
 SITE, e, flag, slugify = G.SITE, G.e, G.flag, G.slugify
 API = G.API
@@ -106,7 +107,7 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     alt = f'<link rel="alternate" hreflang="en" href="{canonical}">'
     if es_url:
         alt += f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">'
-    extra = '<link rel="stylesheet" href="/hlc/home.css?v=8">' + alt + (G.ld_script(ld) if ld else '')
+    extra = '<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt + (G.ld_script(ld) if ld else '')
     for k, v in dict(title=e(title), desc=e(desc), canonical=canonical, robots=robots, og_type=og_type, og_title=e(title), og_alt=e(title),
                      og_image=og_image or f'{SITE}/hlc/brand/og-default.jpg', extra_head=extra, body_class=body_class).items():
         h = h.replace('{' + k + '}', v)
@@ -215,7 +216,7 @@ def main():
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">✓ Deal verified on {e(date_en(verified))} at {e(verified[11:16])} (UTC)</div>
 <h1>{e(title)}</h1>
-<div class="deal-cta"><span class="price-tag">€{e(x.get('price'))} <small>{trip(f)}</small></span>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
+<div class="deal-cta"><a class="price-tag" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio_en">€{e(x.get('price'))} <small>{trip(f)}</small></a>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
@@ -234,6 +235,7 @@ def main():
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Share</button><a class="hlc-btn o" href="https://wa.me/?text={share}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copy link</button></div>
 </aside>
 </div>
+{T3.block(d, *G.dest_ll(f), lang='en')}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">You might also like</div><h2>Similar deals</h2></div><a class="hlc-btn o" href="/en/deals/">See all</a></div><div class="dc-grid">{''.join(card(y) for y in rel)}</div></section>
 </div></main>{FOOTER}</body></html>'''
         write(f'en/deals/{slug}', page)

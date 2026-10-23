@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><!--hlc-head--><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}(function(){var v=null;try{v=localStorage.getItem('hlc_ck');}catch(e){}if(!v){var m=document.cookie.match(/(?:^|; )hlc_ck=(\w+)/);v=m&&m[1];}var g=v==='granted'?'granted':'denied';gtag('consent','default',{ad_storage:g,analytics_storage:g,ad_user_data:g,ad_personalization:g,wait_for_update:500});gtag('set','ads_data_redaction',g!=='granted');})();</script><link rel="stylesheet" href="/hlc/hlc.css?v=8"><link rel="icon" href="/hlc/brand/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/hlc/brand/icon.svg"><link rel="apple-touch-icon" href="/hlc/brand/icon-180.png"><link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml"><!--/hlc-head-->
+<meta charset="UTF-8"><!--hlc-head--><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}(function(){var v=null;try{v=localStorage.getItem('hlc_ck');}catch(e){}if(!v){var m=document.cookie.match(/(?:^|; )hlc_ck=(\w+)/);v=m&&m[1];}var g=v==='granted'?'granted':'denied';gtag('consent','default',{ad_storage:g,analytics_storage:g,ad_user_data:g,ad_personalization:g,wait_for_update:500});gtag('set','ads_data_redaction',g!=='granted');})();</script><link rel="stylesheet" href="/hlc/hlc.css?v=9"><link rel="icon" href="/hlc/brand/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/hlc/brand/icon.svg"><link rel="apple-touch-icon" href="/hlc/brand/icon-180.png"><link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml"><!--/hlc-head-->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Chollo de vuelo verificado · Happy Low Cost</title>
 <meta name="description" content="Chollo de vuelo desde España comprobado hoy por Happy Low Cost.">
@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#FFF8EE">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P57ZNGL');</script>
-<link rel="stylesheet" href="/hlc/home.css?v=8">
+<link rel="stylesheet" href="/hlc/home.css?v=9">
 </head>
 <body class="hlc-new deal"><!--hlc-header--><header class="hx" id="hx"><div class="hx-in">
 <a class="hx-logo" href="/" aria-label="Happy Low Cost, inicio"><b>happy</b><svg viewBox="0 0 250 46" aria-hidden="true"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FF5A36" stroke-width="11" stroke-linecap="round"/><g transform="translate(214 12) rotate(-24)"><path d="M-2 0 L22 -1 L26 0 L22 1 Z M8 -1 L2 -11 L6 -11 L15 -1 Z M8 1 L2 11 L6 11 L15 1 Z" fill="#FF5A36"/></g></svg><i>low cost</i></a>
@@ -38,7 +38,7 @@
 </nav></div></header>
 <!--/hlc-header-->
 <main data-ver><section class="deal-hero" data-v-hero><div class="wrap"><div class="kicker" style="color:#FFC531">✓ Chollo verificado</div><h1 data-v-t>Cargando el chollo…</h1>
-<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px"><span class="price-tag" data-v-p></span><a class="hlc-btn" data-v-f rel="sponsored nofollow noopener" target="_blank" href="/chollos/">Ver vuelo y fechas ✈️</a></div></div></section>
+<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px"><a class="price-tag" data-v-p data-v-f3 rel="sponsored nofollow noopener" target="_blank" href="/chollos/"></a><a class="hlc-btn" data-v-f rel="sponsored nofollow noopener" target="_blank" href="/chollos/">Ver vuelo y fechas ✈️</a></div></div></section>
 <div class="wrap deal-body"><div class="txt" data-v-b></div><aside class="deal-card"><div class="facts" data-v-facts></div><a class="hlc-btn" data-v-f2 rel="sponsored nofollow noopener" target="_blank" href="/chollos/">✈️ Ver vuelo</a><a class="hlc-btn t" data-v-h rel="sponsored nofollow noopener" target="_blank" href="/chollos/">🏨 Hoteles</a><a class="hlc-btn o" href="/alertas/">🔔 Crear alerta</a></aside></div></main>
 <script>
 (function(){var s=new URLSearchParams(location.search).get('s');var $=function(q){return document.querySelector(q);};
@@ -46,7 +46,7 @@ function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return
 function go(){if(!window.HLC_feed){return setTimeout(go,80);}window.HLC_feed().then(function(l){var x=(l||[]).filter(function(y){return y.slug===s;})[0];
 if(!x){location.replace('/chollos/');return;}var f=x.facts||{};document.title=(x.title||'Chollo')+' · Happy Low Cost';
 $('[data-v-t]').textContent=x.title||(f.origen+' → '+f.destino);$('[data-v-p]').innerHTML=esc(x.price)+' € <small>'+esc(f.tipo||'')+'</small>';
-['[data-v-f]','[data-v-f2]'].forEach(function(q){$(q).href=x.cta_flight;});$('[data-v-h]').href=x.cta_hotel;$('[data-v-h]').textContent='🏨 Hoteles en '+(f.destino||'');
+['[data-v-f]','[data-v-f2]','[data-v-f3]'].forEach(function(q){$(q).href=x.cta_flight;});$('[data-v-h]').href=x.cta_hotel;$('[data-v-h]').textContent='🏨 Hoteles en '+(f.destino||'');
 var ph=window.HLC_photo(f.destino);if(ph)$('[data-v-hero]').style.backgroundImage='url('+ph.replace('-800','')+')';
 var b=String(x.body_html||'').replace(/<(?!\/?p>)[^>]*>/g,'');$('[data-v-b]').innerHTML=b;
 fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed&full=1').then(function(r){return r.json();}).then(function(l2){var z=(l2||[]).filter(function(y){return y.slug===s;})[0];if(!z||!z.guide_html)return;var g=String(z.guide_html).replace(/<(?!\/?(h2|h3|p|ul|li|strong)\b)[^>]*>/gi,'');var sec=document.createElement('section');sec.className='guide';sec.innerHTML='<div class="kicker">Guía del destino</div><h2 class="guide-h">'+esc(z.seo_title||('Qué ver en '+f.destino))+'</h2>'+g;$('[data-v-b]').appendChild(sec);}).catch(function(){});
@@ -61,4 +61,4 @@ $('[data-v-facts]').innerHTML=[['Desde',f.origen],['Destino',f.destino],['Precio
 </div>
 <div class="fx-legal">Algunos enlaces son de afiliado: si reservas a través de ellos podemos recibir una pequeña comisión, sin coste extra para ti. Los precios se comprobaron en la fecha indicada en cada chollo y pueden cambiar. Fotos de destinos: Wikimedia Commons (créditos en cada página). <a href="/aviso-legal-datos-cookies/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Aviso legal, privacidad y cookies</a> · © Happy Low Cost</div>
 </footer>
-<!--/hlc-footer--><!--hlc-tail--><script src="/hlc/hlc.js?v=8" defer></script><!--/hlc-tail--></body></html>
+<!--/hlc-footer--><!--hlc-tail--><script src="/hlc/hlc.js?v=9" defer></script><!--/hlc-tail--></body></html>

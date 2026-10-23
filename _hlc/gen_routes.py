@@ -66,14 +66,14 @@ def page(r, lang, others):
         h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs), body_class='deal')
     else:
         h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article',
-                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
+                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" if en else "/vuelos/"}{o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     out = h + f'''<main>
 <section class="deal-hero" style="background-image:url({hero})"{G.photos_attr(ds)}><div class="wrap">
 <div class="kicker" style="color:#FFC531">{L("✓ Precios reales consultados el", "✓ Real prices checked on")} {e(f.get("consultado", ""))}</div>
 <h1>{e(c.get("h1", ""))}</h1>
-<div class="deal-cta"><span class="price-tag">{e(f.get("precio_desde_ida_y_vuelta_eur"))} € <small>{L("ida y vuelta", "return")}</small></span><span class="price-was">{L("Lo normal", "Typical price")}: {e(f.get("mediana_ida_y_vuelta_eur"))} €</span><a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos y fechas ✈️", "See flights and dates ✈️")}</a></div>
+<div class="deal-cta"><a class="price-tag" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_precio">{e(f.get("precio_desde_ida_y_vuelta_eur"))} € <small>{L("ida y vuelta", "return")}</small></a><span class="price-was">{L("Lo normal", "Typical price")}: {e(f.get("mediana_ida_y_vuelta_eur"))} €</span><a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos y fechas ✈️", "See flights and dates ✈️")}</a></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
 <article class="txt"><p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
@@ -91,6 +91,7 @@ def page(r, lang, others):
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(when)}</div>
 </aside>
 </div>
+{G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es")}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
     return out
@@ -110,7 +111,7 @@ def hub(rows, en):
         h = E.head(title, desc, SITE + base, SITE + '/vuelos/', body_class='chollos')
     else:
         h = G.head(title=e(title), desc=e(desc), canonical=SITE + base, og_image=f'{SITE}/hlc/brand/og-default.jpg', og_type='website',
-                   extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=8"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">', body_class='chollos')
+                   extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">', body_class='chollos')
     return h + f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 <div class="sec-h"><div><div class="kicker">{"Real prices, checked on Kiwi.com" if en else "Precios reales, consultados en Kiwi.com"}</div><h1 class="x-h1">{"Cheap flights, route by route" if en else "Vuelos baratos, ruta a ruta"}</h1><p>{e(desc)}</p></div></div>
 {secs}

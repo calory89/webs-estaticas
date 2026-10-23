@@ -97,7 +97,7 @@ body.hlc-ck-open .hlc-bar{display:none}
 .fx{background:var(--tinta);color:#D6DCEA;margin-top:60px;padding:56px 20px 40px}
 .fx-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
 .fx h4{color:#fff!important;font:800 18px var(--fd)!important;margin:0 0 12px}
-.fx a{color:#D6DCEA!important;text-decoration:none;display:block;padding:5px 0;font-size:15px}
+.fx a{color:#D6DCEA!important;text-decoration:none;display:table;padding:5px 0;font-size:15px}
 .fx a:hover{color:var(--sol)!important}
 .fx .fx-logo b{font:800 40px/.85 var(--fd);color:#fff;letter-spacing:-.045em}
 .fx p{font-size:14px;line-height:1.6;color:#AEB7CB;margin:12px 0 0}

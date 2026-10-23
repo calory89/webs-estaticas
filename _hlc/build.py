@@ -4,7 +4,7 @@ Uso: python3 hlc/build.py   (desde la raíz de la rama pub/happylowcost.com)
 """
 import os, re, subprocess, json
 
-V = '8'
+V = '9'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')

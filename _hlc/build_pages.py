@@ -37,7 +37,7 @@ for m in re.finditer(r'data-bgset="([^"]+)"[^>]*href="(https://www\.happylowcost
     posts.append((img, url.replace('https://www.happylowcost.com', ''), html.unescape(title)))
 posts = posts[:8]
 
-home_extra = '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/"><link rel="stylesheet" href="/hlc/home.css?v=8"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
+home_extra = '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/"><link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
  '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [
    {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2012", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"]},
    {"@type": "WebSite", "@id": "https://www.happylowcost.com/#web", "url": "https://www.happylowcost.com/", "name": "Happy Low Cost", "inLanguage": "es-ES", "publisher": {"@id": "https://www.happylowcost.com/#org"}}]}, ensure_ascii=False) + '</script>'
@@ -163,7 +163,7 @@ open('index.html', 'w', encoding='utf-8').write(home)
 # ---------- /destinos/ ----------
 os.makedirs('destinos', exist_ok=True)
 dp = head(title='Mapa de destinos y chollos de vuelos desde España · Happy Low Cost', desc=f'Explora {len(DJ)} destinos en un mapa interactivo: ruta desde tu ciudad, vuelos, hoteles y los chollos de hoy verificados.',
-          canonical='https://www.happylowcost.com/destinos/', extra_head='<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/destinos/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/destinations/"><link rel="stylesheet" href="/hlc/home.css?v=8">', body_class='destinos')
+          canonical='https://www.happylowcost.com/destinos/', extra_head='<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/destinos/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/destinations/"><link rel="stylesheet" href="/hlc/home.css?v=9">', body_class='destinos')
 dp += f'''<main class="sec" style="padding-top:28px"><div class="wrap">
 <div class="sec-h"><div><div class="kicker">El mapa de los chollos</div><h1 style="font:800 clamp(36px,5vw,60px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:8px 0 0">¿A dónde te escapas?</h1><p>Elige desde dónde vuelas y toca un destino: ruta, vuelos, hoteles y chollos de hoy.</p></div></div>
 {map_block(True)}
@@ -173,9 +173,9 @@ open('destinos/index.html', 'w', encoding='utf-8').write(dp)
 # ---------- /chollos/ver/ (chollo recién cazado, antes de tener página propia) ----------
 os.makedirs('chollos/ver', exist_ok=True)
 vp = head(title='Chollo de vuelo verificado · Happy Low Cost', desc='Chollo de vuelo desde España comprobado hoy por Happy Low Cost.', robots='noindex, follow',
-          canonical='https://www.happylowcost.com/chollos/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">', body_class='deal')
+          canonical='https://www.happylowcost.com/chollos/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">', body_class='deal')
 vp += '''<main data-ver><section class="deal-hero" data-v-hero><div class="wrap"><div class="kicker" style="color:#FFC531">✓ Chollo verificado</div><h1 data-v-t>Cargando el chollo…</h1>
-<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px"><span class="price-tag" data-v-p></span><a class="hlc-btn" data-v-f rel="sponsored nofollow noopener" target="_blank" href="/chollos/">Ver vuelo y fechas ✈️</a></div></div></section>
+<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px"><a class="price-tag" data-v-p data-v-f3 rel="sponsored nofollow noopener" target="_blank" href="/chollos/"></a><a class="hlc-btn" data-v-f rel="sponsored nofollow noopener" target="_blank" href="/chollos/">Ver vuelo y fechas ✈️</a></div></div></section>
 <div class="wrap deal-body"><div class="txt" data-v-b></div><aside class="deal-card"><div class="facts" data-v-facts></div><a class="hlc-btn" data-v-f2 rel="sponsored nofollow noopener" target="_blank" href="/chollos/">✈️ Ver vuelo</a><a class="hlc-btn t" data-v-h rel="sponsored nofollow noopener" target="_blank" href="/chollos/">🏨 Hoteles</a><a class="hlc-btn o" href="/alertas/">🔔 Crear alerta</a></aside></div></main>
 <script>
 (function(){var s=new URLSearchParams(location.search).get('s');var $=function(q){return document.querySelector(q);};
@@ -183,7 +183,7 @@ function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return
 function go(){if(!window.HLC_feed){return setTimeout(go,80);}window.HLC_feed().then(function(l){var x=(l||[]).filter(function(y){return y.slug===s;})[0];
 if(!x){location.replace('/chollos/');return;}var f=x.facts||{};document.title=(x.title||'Chollo')+' · Happy Low Cost';
 $('[data-v-t]').textContent=x.title||(f.origen+' → '+f.destino);$('[data-v-p]').innerHTML=esc(x.price)+' € <small>'+esc(f.tipo||'')+'</small>';
-['[data-v-f]','[data-v-f2]'].forEach(function(q){$(q).href=x.cta_flight;});$('[data-v-h]').href=x.cta_hotel;$('[data-v-h]').textContent='🏨 Hoteles en '+(f.destino||'');
+['[data-v-f]','[data-v-f2]','[data-v-f3]'].forEach(function(q){$(q).href=x.cta_flight;});$('[data-v-h]').href=x.cta_hotel;$('[data-v-h]').textContent='🏨 Hoteles en '+(f.destino||'');
 var ph=window.HLC_photo(f.destino);if(ph)$('[data-v-hero]').style.backgroundImage='url('+ph.replace('-800','')+')';
 var b=String(x.body_html||'').replace(/<(?!\\/?p>)[^>]*>/g,'');$('[data-v-b]').innerHTML=b;
 fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed&full=1').then(function(r){return r.json();}).then(function(l2){var z=(l2||[]).filter(function(y){return y.slug===s;})[0];if(!z||!z.guide_html)return;var g=String(z.guide_html).replace(/<(?!\\/?(h2|h3|p|ul|li|strong)\\b)[^>]*>/gi,'');var sec=document.createElement('section');sec.className='guide';sec.innerHTML='<div class="kicker">Guía del destino</div><h2 class="guide-h">'+esc(z.seo_title||('Qué ver en '+f.destino))+'</h2>'+g;$('[data-v-b]').appendChild(sec);}).catch(function(){});
@@ -195,7 +195,7 @@ open('chollos/ver/index.html', 'w', encoding='utf-8').write(vp)
 # ---------- /alertas/ ----------
 os.makedirs('alertas', exist_ok=True)
 al = head(title='Crea tu alerta de chollos de vuelos · Happy Low Cost', desc='Te avisamos gratis por email o WhatsApp cuando encontremos un vuelo barato desde tu aeropuerto. Máximo un aviso al día.',
-          canonical='https://www.happylowcost.com/alertas/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">', body_class='alertas')
+          canonical='https://www.happylowcost.com/alertas/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">', body_class='alertas')
 al += f'''<main class="sec"><div class="alert-box" style="max-width:1180px;margin:0 auto">
 <div><div class="kicker">Alertas gratis</div><h1 style="font:800 clamp(38px,5.6vw,64px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:10px 0 14px">Que el chollo te encuentre a ti.</h1><p>Elige tu aeropuerto, tu destino soñado y tu precio máximo. Cuando cacemos un vuelo que encaje, te avisamos. Sin spam: máximo un aviso al día y te das de baja con un clic.</p></div>
 {ALERT}

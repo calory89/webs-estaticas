@@ -11,6 +11,7 @@ os.chdir(ROOT)
 HERE = os.path.join(ROOT, '_hlc')
 import sys
 sys.path.insert(0, HERE)
+import top3 as T3
 API = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed'
 SITE = 'https://www.happylowcost.com'
 UA = {'User-Agent': 'HappyLowCost/1.0 (carlos@equinoxinvestmentgroup.com)'}
@@ -178,6 +179,24 @@ def flag(cc):
     return ''.join(chr(0x1F1E6 + ord(c) - 65) for c in cc) if len(cc) == 2 and cc.isalpha() else '✈️'
 
 
+def dest_ll(f):
+    """(lat, lng, nombres, nombre_aeropuerto) del destino para casar con top3hotels. Aeropuerto primero: la biblioteca a veces es un país entero."""
+    d0 = slugify(f.get('destino', ''))
+    k = next((p['s'] for p in DLIB if p['s'] == d0 or slugify(p['n']) == d0), None) or lib_slug(f)
+    names, weak = {d0}, set()
+    lat = lng = None
+    a = AIRPORTS.get((f.get('destino_iata') or '').upper()) if 'AIRPORTS' in globals() else None
+    if a:
+        lat, lng = a[0], a[1]
+        weak.add(slugify(a[2]))
+    for p in DLIB:
+        if p['s'] == k:
+            names.update(p.get('a') or [])
+            if lat is None:
+                lat, lng = p['y'], p['x']
+    return lat, lng, sorted(n for n in names if n), sorted(weak)
+
+
 def lib_slug(f):
     k = slugify(f.get('destino', ''))
     for p in DLIB:
@@ -302,7 +321,7 @@ def ago_iso(s):
 
 
 def head(**k):
-    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">', body_class='')
+    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">', body_class='')
     d.update(k)
     d.setdefault('og_title', d['title'])
     d.setdefault('og_alt', d['title'])
@@ -393,7 +412,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
     graph = [cld, {"@type": "CollectionPage", "name": h1, "url": canonical, "inLanguage": "es-ES", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     desc = intro[:155]
     page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else 'index, follow, max-image-preview:large',
-                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
+                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
     cards = ''.join(card(x) for x in deals) or EMPTY
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch}
@@ -530,13 +549,13 @@ def main():
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{slug}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{slug}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""}</div>
 <h1>{e(title)}</h1>
-<div class="deal-cta"><span class="price-tag">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></span>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
+<div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
@@ -558,6 +577,7 @@ def main():
 <a class="hlc-btn s" href="/alertas/?d={quote(f.get('destino', ''))}">🔔 Avísame de chollos a {e(f.get('destino'))}</a>
 </aside>
 </div>
+{T3.block(f.get('destino', ''), *dest_ll(f), lang='es')}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">También te puede interesar</div><h2>Chollos parecidos</h2></div><a class="hlc-btn o" href="/chollos/">Ver todos</a></div><div class="dc-grid">{rel_html}</div></section>
 </div></main></body></html>'''
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(page)
@@ -622,7 +642,7 @@ def main():
         side = ''.join(card(x) for x in sub[:3])
         page = head(title=e((g.get('seo_title') or f"Qué ver en {p['n']}") + ' · Happy Low Cost'), desc=e(g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."),
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{p['s']}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{p['s']}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
