@@ -1,0 +1,25 @@
+# carlosdeory.com (Cloudflare Pages). Formato: origen destino codigo
+/contacto /#contact 301
+/contacto/ /#contact 301
+/contact /#contact 301
+/contact/ /#contact 301
+/speaker /speaking/ 301
+/speaker/ /speaking/ 301
+/charlas /speaking/ 301
+/charlas/ /speaking/ 301
+/ponencias /speaking/ 301
+/ponencias/ /speaking/ 301
+/agencia /growth/ 301
+/agencia/ /growth/ 301
+/agency /growth/ 301
+/agency/ /growth/ 301
+/buscar /search/ 301
+/buscar/ /search/ 301
+/archivo /archive/ 301
+/archivo/ /archive/ 301
+/destinations /destinos/ 301
+/destinations/ /destinos/ 301
+/wp-admin/* / 301
+/wp-login.php / 301
+/feed /blog/ 301
+/feed/ /blog/ 301

@@ -1,8 +1,5 @@
-# START YOAST BLOCK
-# ---------------------------
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /search/
 
 Sitemap: https://www.carlosdeory.com/sitemap_index.xml
-# ---------------------------
-# END YOAST BLOCK

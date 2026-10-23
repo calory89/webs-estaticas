@@ -1,137 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.carlosdeory.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://www.carlosdeory.com/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/blog/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/projects/eco-beach-city/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/projects/supportnear/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/projects/realhunt/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/projects/surfranking/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/projects/mejorcrucero/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/projects/happy-low-cost/</loc>
-		<lastmod>2026-10-20T20:30:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/accelerator/</loc>
-		<lastmod>2026-09-18T21:25:57+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/09/Eco-Beach-City-ocean-pavilion.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/quien-soy/</loc>
-		<lastmod>2026-10-19T11:13:38+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/eco-beach-city-sumba-coworking-sunset.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/about-me/</loc>
-		<lastmod>2026-10-19T11:13:38+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/eco-beach-city-sumba-coworking-sunset.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/libro/</loc>
-		<lastmod>2026-10-19T11:13:39+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/eco-beach-city-sumba-coworking-sunset.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/09/el-dia-que-dejas-de-esperar-carlos-de-ory.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/de-5-a-8-o-de-9-a-12-carlos-de-ory.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/book/</loc>
-		<lastmod>2026-10-19T11:13:40+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/eco-beach-city-sumba-coworking-sunset.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/09/the-day-you-stop-waiting-carlos-de-ory.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/5-to-8-or-9-to-12-carlos-de-ory.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/herramientas/</loc>
-		<lastmod>2026-10-19T11:13:41+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/prensa/</loc>
-		<lastmod>2026-10-19T11:13:42+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/links/</loc>
-		<lastmod>2026-10-19T11:13:43+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/terminos-y-condiciones/</loc>
-		<lastmod>2026-10-19T11:26:59+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/transparencia/</loc>
-		<lastmod>2026-10-19T11:26:59+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/politica-de-privacidad/</loc>
-		<lastmod>2026-10-19T11:27:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/politica-de-cookies/</loc>
-		<lastmod>2026-10-19T11:27:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/aviso-legal/</loc>
-		<lastmod>2026-10-19T11:27:01+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/cuentame-tu-viaje/</loc>
-		<lastmod>2026-10-19T11:33:52+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/unete/</loc>
-		<lastmod>2026-10-19T11:44:07+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carlosdeory.com/wp-content/uploads/2026/10/eco-beach-city-sumba-coworking-sunset.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carlosdeory.com/contacto/</loc>
-		<lastmod>2026-10-19T11:44:09+00:00</lastmod>
-	</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://www.carlosdeory.com/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/about-me/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/archive/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/aviso-legal/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/blog/</loc></url>
+<url><loc>https://www.carlosdeory.com/book/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/cuentame-tu-viaje/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/destinos/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/growth/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/herramientas/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/libro/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/links/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/politica-de-cookies/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/politica-de-privacidad/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/prensa/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/projects/eco-beach-city/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/projects/happy-low-cost/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/projects/mejorcrucero/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/projects/realhunt/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/projects/supportnear/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/projects/surfranking/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/quien-soy/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/speaking/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://www.carlosdeory.com/terminos-y-condiciones/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/transparencia/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://www.carlosdeory.com/unete/</loc><lastmod>2026-10-19</lastmod></url>
 </urlset>
-<!-- XML Sitemap generated by Yoast SEO -->
-<!--
-Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
-
-Almacenamiento en caché de páginas con Disk: Enhanced 
-
-Served from: www.carlosdeory.com @ 2026-10-19 19:44:50 by W3 Total Cache
--->

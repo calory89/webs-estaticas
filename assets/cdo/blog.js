@@ -61,6 +61,61 @@
     });
   }
 
-  function boot() { try { comments(); } catch (e) {} }
+  /* Formularios antiguos que enviaban a /wp-comments-post.php (WordPress ya no existe):
+     parcela de Sumba (leads), candidaturas de marketing en remoto. Se reenvian a cdo-contact. */
+  function toPayload(body) {
+    var get = function (k) { try { return (body && body.get) ? (body.get(k) || '') : ''; } catch (e) { return ''; } };
+    var txt = String(get('comment'));
+    return {
+      name: String(get('author')).trim() || 'Web',
+      email: String(get('email')).trim(),
+      company: '',
+      message: '[' + location.pathname + ']\n' + txt,
+      kind: 'other',
+      lang: en() ? 'en' : 'es',
+      consent: true,
+      website: ''
+    };
+  }
+  if (window.fetch && !window.__cdoWpShim) {
+    window.__cdoWpShim = true;
+    var nativeFetch = window.fetch.bind(window);
+    window.fetch = function (input, init) {
+      var url = typeof input === 'string' ? input : (input && input.url) || '';
+      if (/\/wp-comments-post\.php(\?|$)/.test(url) && init && init.body) {
+        return nativeFetch(URL_FN, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(toPayload(init.body)) })
+          .then(function (r) {
+            if (r.ok) { return { ok: true, status: 0, type: 'opaqueredirect', redirected: true, json: function () { return Promise.resolve({ ok: true }); }, text: function () { return Promise.resolve(''); } }; }
+            return { ok: false, status: r.status || 500, type: 'basic', redirected: false, json: function () { return Promise.resolve({ ok: false }); }, text: function () { return Promise.resolve(''); } };
+          });
+      }
+      return nativeFetch(input, init);
+    };
+  }
+
+  /* "Cuentame tu viaje": formulario nativo que iba a WordPress */
+  function stories() {
+    var f = D.querySelector('form.ory-sf');
+    if (!f || f.dataset.ready) { return; }
+    f.dataset.ready = '1';
+    f.setAttribute('action', '#');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fd = new FormData(f);
+      var p = toPayload(fd);
+      if (!p.email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(p.email) || !String(fd.get('comment') || '').trim()) { f.reportValidity && f.reportValidity(); return; }
+      p.message = '[Historia de viaje ' + location.pathname + ']\n' + String(fd.get('comment') || '');
+      var b = f.querySelector('button[type=submit],input[type=submit]'); if (b) { b.disabled = true; }
+      fetch(URL_FN, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(p) })
+        .then(function (r) {
+          if (!r.ok) { throw new Error(String(r.status)); }
+          f.hidden = true;
+          var d = D.querySelector('.ory-sf-done'); if (d) { d.hidden = false; d.setAttribute('role', 'status'); }
+        })
+        .catch(function () { if (b) { b.disabled = false; } var m = D.createElement('p'); m.setAttribute('role', 'status'); m.textContent = en() ? 'It could not be sent. Try again in a minute.' : 'No se pudo enviar. Inténtalo de nuevo en un minuto.'; f.appendChild(m); });
+    });
+  }
+
+  function boot() { try { comments(); } catch (e) {} try { stories(); } catch (e) {} }
   if (D.readyState === 'loading') { D.addEventListener('DOMContentLoaded', boot); } else { boot(); }
 })();

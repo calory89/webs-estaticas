@@ -28,7 +28,7 @@
 <meta name="twitter:description" content="Carlos de Ory started his first business at 16 and has been building companies for more than 20 years. Book him as a speaker or grow your company with his growth marketing team.">
 <meta name="twitter:image" content="https://www.carlosdeory.com/assets/cdo/og-departures.jpg">
 <link rel="preload" as="image" href="/assets/cdo/carlos.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://www.carlosdeory.com/#carlos", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com/", "image": "https://www.carlosdeory.com/assets/cdo/carlos.jpg", "jobTitle": "Entrepreneur, speaker and growth marketer", "worksFor": {"@type": "Organization", "name": "Equinox Investment Group LLC"}, "knowsLanguage": ["en", "es"]}, {"@type": "WebSite", "@id": "https://www.carlosdeory.com/#site", "url": "https://www.carlosdeory.com/", "name": "Carlos de Ory", "inLanguage": ["en", "es"], "publisher": {"@id": "https://www.carlosdeory.com/#carlos"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://www.carlosdeory.com/#carlos", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com/", "image": "https://www.carlosdeory.com/assets/cdo/carlos.jpg", "jobTitle": "Entrepreneur, speaker and growth marketer", "worksFor": {"@type": "Organization", "name": "Equinox Investment Group LLC"}, "knowsLanguage": ["en", "es"], "sameAs": ["https://x.com/mrstartups"], "award": "Forbes España, 100 most creative people in business (2022)", "knowsAbout": ["Growth marketing", "Entrepreneurship", "Affiliate marketing", "Travel"]}, {"@type": "WebSite", "@id": "https://www.carlosdeory.com/#site", "url": "https://www.carlosdeory.com/", "name": "Carlos de Ory", "inLanguage": ["en", "es"], "publisher": {"@id": "https://www.carlosdeory.com/#carlos"}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&display=swap">
@@ -302,6 +302,14 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
 .x{background:none;border:0;color:var(--chr);font:700 12px/1 var(--mono);letter-spacing:.14em;cursor:pointer;padding:4px}
 
 @media (prefers-reduced-motion:reduce){.lamp{animation:none}.hero h1 .you::after{animation:none}}
+.nl-home{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center}
+.nl-home h2{font-weight:800;font-size:clamp(32px,3.6vw,52px);line-height:1;letter-spacing:-.04em;margin:12px 0}.nl-home p{color:var(--ink-2);margin:0;max-width:52ch}
+#hnl{display:flex;flex-direction:column;gap:12px}.hnl-row{display:flex;gap:10px}.hnl-row input{flex:1;min-width:0;font:inherit;padding:14px 16px;border:1.5px solid var(--ink);border-radius:12px;background:#fff;min-height:48px}
+#hnl .hnl-ok{display:flex;flex-direction:row;gap:10px;align-items:flex-start;font:400 15px/1.45 var(--body);letter-spacing:0;text-transform:none;color:var(--ink-2)}#hnl .hnl-ok input{margin-top:4px;width:auto;min-height:0}#hnl .lnk{font:inherit;text-transform:none;letter-spacing:0}
+.lnk-more{display:inline-block;margin-top:12px;font-weight:700}
+.ns-rows{list-style:none;margin:0;padding:12px 16px;display:grid;gap:8px}.ns-rows a{color:var(--chr)}
+.foot-more{display:flex;flex-wrap:wrap;gap:8px 18px}.foot-more a{text-decoration:none}.foot-more a:hover{text-decoration:underline}
+@media (max-width:820px){.nl-home{grid-template-columns:1fr;gap:20px}.hnl-row{flex-direction:column}}
 </style>
 </head>
 <body>
@@ -360,8 +368,8 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
       </span>
     </div>
     <div class="cols" aria-hidden="true"><span data-i18n="col_flight">Flight</span><span data-i18n="col_project">Project</span><span class="d" data-i18n="col_dest">Destination</span><span data-i18n="col_status">Status</span></div>
-    <div class="rows" id="rows"></div>
-    <div class="board-foot"><span class="hint" data-i18n="hint">Tap a flight</span><span class="bar" aria-hidden="true"><i id="bar"></i></span><span id="nextpg" data-i18n="next_page">Next page</span></div>
+    <div class="rows" id="rows"></div><noscript><ul class="ns-rows"><li><a href="/projects/eco-beach-city/">Eco Beach City</a></li><li><a href="/projects/realhunt/">RealHunt</a></li><li><a href="/projects/surfranking/">SurfRanking</a></li><li><a href="/projects/supportnear/">SupportNear</a></li><li><a href="/projects/mejorcrucero/">MejorCrucero</a></li><li><a href="/projects/happy-low-cost/">Happy Low Cost</a></li><li><a href="/links/">All projects</a></li></ul></noscript>
+    <div class="board-foot"><span class="hint" data-i18n="hint">Select a flight</span><span class="bar" aria-hidden="true"><i id="bar"></i></span><span id="nextpg" data-i18n="next_page">Next page</span></div>
   </div>
 </div>
 
@@ -393,7 +401,7 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
         <div class="pf"><span><small data-i18n="f_len">Length</small>30–60′</span><span><small data-i18n="f_for">For</small><em style="font-style:normal" data-i18n="t3_for">Founders</em></span><span><small data-i18n="f_lang">Lang</small>EN · ES</span></div>
       </article>
     </div>
-    <div class="ctas" style="margin-top:28px"><a class="btn solid" href="#contact" data-pick="talk" data-i18n="talk_cta">Check availability for your event</a></div>
+    <div class="ctas" style="margin-top:28px"><a class="btn solid" href="#contact" data-pick="talk" data-i18n="talk_cta">Check availability for your event</a><a class="btn ghost" href="/speaking/" data-i18n="talk_more">Speaker kit, bio and photos</a></div>
   </div>
 </section>
 
@@ -415,7 +423,7 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
         <div class="leg"><i>01</i><div><b data-i18n="l1_h">Check-in</b><span data-i18n="l1_p">A call to understand your company, your numbers and your goal.</span></div></div>
         <div class="leg"><i>02</i><div><b data-i18n="l2_h">Take-off</b><span data-i18n="l2_p">A plan with priorities and the first campaigns live.</span></div></div>
         <div class="leg"><i>03</i><div><b data-i18n="l3_h">Cruising altitude</b><span data-i18n="l3_p">Weekly tests and reports. We keep what works and scale it.</span></div></div>
-        <a class="btn ghost" href="#contact" data-pick="agency" data-i18n="ag_cta">Tell me about your company</a>
+        <a class="btn ghost" href="#contact" data-pick="agency" data-i18n="ag_cta">Tell me about your company</a> <a class="lnk-more" href="/growth/" data-i18n="ag_more">How we work →</a>
       </div>
     </div>
     <h3 class="cases-h" data-i18n="cases_h">Results from our own projects</h3>
@@ -424,7 +432,7 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
       <a class="case" href="/projects/realhunt/"><span class="eyebrow">RealHunt</span><b>73,500</b><span data-i18n="c2">page views in its first three weeks, from 21,800 visitors, with €0 spent on ads.</span></a>
       <a class="case" href="/projects/supportnear/"><span class="eyebrow">SupportNear</span><b>37,000+</b><span data-i18n="c3">places mapped in 147 countries where anyone can eat, sleep, shower or get help.</span></a>
     </div>
-    <p class="fine" data-i18n="cases_fine">Client case studies will appear here once each client approves them.</p>
+    <!-- HUECO: casos de clientes, cuando cada cliente lo apruebe (nombre, sector, reto, resultado con cifra y fecha). -->
   </div>
 </section>
 
@@ -499,13 +507,26 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
   </div>
 </section>
 
+<section class="band" id="newsletter">
+  <div class="wrap nl-home">
+    <div style="min-width:0"><span class="eyebrow" data-i18n="hnl_e">Newsletter</span><h2 data-i18n="hnl_h">Subscribe and win nights at my favourite hotel.</h2><p data-i18n="hnl_p">Every subscriber enters the draw. And in every email, what I am learning while building companies: growth, AI, travel and points.</p></div>
+    <form id="hnl" novalidate>
+      <label class="sr" for="hnl-email" data-i18n="hnl_label">Your email</label>
+      <div class="hnl-row"><input id="hnl-email" type="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required><button class="btn solid" type="submit" id="hnl-btn" data-i18n="hnl_btn">Subscribe</button></div>
+      <input type="text" id="hnl-web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+      <label class="hnl-ok"><input type="checkbox" id="hnl-ok"> <span><span data-i18n="hnl_ok">I want to receive the newsletter and I accept the</span> <button type="button" class="lnk" data-legal="privacy" data-i18n="privacy">Privacy policy</button>.</span></label>
+      <p class="fine" id="hnl-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <section class="band" id="contact">
   <div class="wrap contact">
     <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
       <span class="eyebrow"><span class="lamp" aria-hidden="true"></span><span data-i18n="ct_e">Final call</span></span>
       <h2 style="font-weight:800;font-size:clamp(44px,5vw,76px);line-height:.95;letter-spacing:-.045em" data-i18n="ct_h">Get your boarding pass.</h2>
       <p style="margin:0;color:var(--ink-2);font-size:18px;max-width:44ch" data-i18n="ct_p">Tell me what you need, a talk or growth for your company, and I will answer personally.</p>
-      <p class="fine" data-i18n="ct_fine">Your message goes straight to my inbox. I usually reply within a few days.</p>
+      <p class="fine" data-i18n="ct_fine">Your message goes straight to my inbox and I read every one.</p>
     </div>
     <form class="bp" id="bp" novalidate>
       <div class="ph"><span data-i18n="bp_t">Boarding pass</span><b id="bp-code">CO 2026</b></div>
@@ -526,7 +547,7 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
           <label class="hp" for="f-web" aria-hidden="true">Website<input id="f-web" name="website" tabindex="-1" autocomplete="off"></label>
           <label class="full ok" for="f-ok"><input type="checkbox" id="f-ok" name="consent"><span><span data-i18n="f_ok">I agree that Carlos de Ory stores my details to answer me, as described in the</span> <button type="button" class="lnk" data-legal="privacy" data-i18n="privacy">Privacy policy</button>.</span></label>
         </div>
-        <div class="sendrow"><p class="err" id="err" role="alert"></p><button class="btn solid" type="submit" id="f-send" data-i18n="f_send">Send and print my boarding pass</button></div>
+        <div class="sendrow"><p class="err" id="err" role="alert"></p><button class="btn solid" type="submit" id="f-send" data-i18n="f_send">Send and get my boarding pass</button></div>
       </div>
       <div class="ticket" id="ticket" aria-live="polite">
         <span class="eyebrow" data-i18n="tk_e">Boarding pass ready</span>
@@ -541,7 +562,7 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
 </section>
 </main>
 
-<footer><div class="wrap"><nav class="foot-proj" aria-label="Projects"><span data-i18n="nav_projects">Projects</span><a href="/projects/eco-beach-city/">Eco Beach City</a><a href="/projects/supportnear/">SupportNear</a><a href="/projects/realhunt/">RealHunt</a><a href="/projects/surfranking/">SurfRanking</a><a href="/projects/mejorcrucero/">MejorCrucero</a><a href="/projects/happy-low-cost/">Happy Low Cost</a><a href="/blog/" data-i18n="nav_blog">Blog</a></nav><span>© 2026 Carlos de Ory · Equinox Investment Group LLC</span>
+<footer><div class="wrap"><nav class="foot-proj" aria-label="Projects"><span data-i18n="nav_projects">Projects</span><a href="/projects/eco-beach-city/">Eco Beach City</a><a href="/projects/supportnear/">SupportNear</a><a href="/projects/realhunt/">RealHunt</a><a href="/projects/surfranking/">SurfRanking</a><a href="/projects/mejorcrucero/">MejorCrucero</a><a href="/projects/happy-low-cost/">Happy Low Cost</a><a href="/blog/" data-i18n="nav_blog">Blog</a></nav><nav class="foot-more" aria-label="More"><a href="/speaking/">Speaking</a><a href="/growth/">Growth marketing</a><a href="/book/">The book</a><a href="/destinos/">Travel guides</a><a href="/archive/">All articles</a><a href="/search/">Search</a><a href="/links/">All projects</a><a href="/prensa/">Press</a></nav><span>© 2026 Carlos de Ory · Equinox Investment Group LLC</span>
 <nav class="legal-links" aria-label="Legal"><button type="button" class="lnk" data-legal="legal" data-i18n="legal">Legal notice</button><button type="button" class="lnk" data-legal="privacy" data-i18n="privacy">Privacy policy</button><button type="button" class="lnk" data-legal="cookies" data-i18n="cookies">Cookie policy</button><button type="button" class="lnk" data-legal="affiliates" data-i18n="affiliates">Affiliate disclosure</button><button type="button" class="lnk" id="ck-open" data-i18n="ck_settings">Cookie settings</button><a href="https://x.com/mrstartups" target="_blank" rel="noopener">@mrstartups</a></nav></div></footer>
 
 <div class="cookie" id="cookie" role="region" aria-label="Cookies" hidden>
@@ -571,7 +592,7 @@ var D=document;
 var T={
 en:{nav_projects:"Projects",nav_talks:"Speaking",nav_agency:"Agency",nav_book:"Book",nav_about:"About",nav_cta:"Let's talk",
 eyebrow:"Gate 2013 · Now boarding",h1a:"Next departure:",h1b:"your company.",lede:"I have been launching companies since 2013. I can help you launch yours: on a stage, or with my growth marketing team.",cta_talk:"Book me for a talk",cta_agency:"Grow your company",seen:"As seen in Forbes España · Antena 3",
-board_desc:"Departures board listing Carlos de Ory's projects. Select a row to open its boarding pass.",b1:"Departures · Projects",b2:"Departed · Track record",sound:"Sound",col_flight:"Flight",col_project:"Project",col_dest:"Destination",col_status:"Status",hint:"Tap a flight",next_page:"Next page",
+board_desc:"Departures board listing Carlos de Ory's projects. Select a row to open its boarding pass.",b1:"Departures · Projects",b2:"Departed · Track record",sound:"Sound",col_flight:"Flight",col_project:"Project",col_dest:"Destination",col_status:"Status",hint:"Select a flight",next_page:"Next page",
 talks_h:"Talks that change how people work.",talks_p:"Keynotes for conferences, companies and universities, in English or Spanish. Real stories, no slides full of buzzwords.",pass_keynote:"Keynote",
 t1_h:"The day you stop waiting",t1_p:"Why most people don't fail for lack of talent, they fail because they wait too long to start. From my book.",t1_for:"Everyone",
 t2_h:"From zero to 300,000 flights",t2_p:"How Happy Low Cost grew a community past one million followers, and what it teaches about growth today.",t2_for:"Marketing",
@@ -591,7 +612,7 @@ m_hi:"Hi Carlos,",m_kind_talk:"I would like to book you for a talk.",m_kind_agen
 close:"Close ✕",visit:"Visit",cover_alt:"Cover of episode 1: The day you stop waiting",book_url:"https://www.carlosdeory.com/the-day-you-stop-waiting/",clock:"SUMBA",yours:"Book a call"},
 es:{nav_projects:"Proyectos",nav_talks:"Ponencias",nav_agency:"Agencia",nav_book:"Libro",nav_about:"Quién soy",nav_cta:"Hablemos",
 eyebrow:"Puerta 2013 · Embarcando",h1a:"Próxima salida:",h1b:"tu empresa.",lede:"Llevo desde 2013 lanzando empresas. Te ayudo a lanzar la tuya: en un escenario o con mi equipo de growth marketing.",cta_talk:"Contrátame para una ponencia",cta_agency:"Haz crecer tu empresa",seen:"Visto en Forbes España · Antena 3",
-board_desc:"Panel de salidas con los proyectos de Carlos de Ory. Elige una fila para abrir su tarjeta de embarque.",b1:"Salidas · Proyectos",b2:"Despegaron · Trayectoria",sound:"Sonido",col_flight:"Vuelo",col_project:"Proyecto",col_dest:"Destino",col_status:"Estado",hint:"Toca un vuelo",next_page:"Siguiente página",
+board_desc:"Panel de salidas con los proyectos de Carlos de Ory. Elige una fila para abrir su tarjeta de embarque.",b1:"Salidas · Proyectos",b2:"Despegaron · Trayectoria",sound:"Sonido",col_flight:"Vuelo",col_project:"Proyecto",col_dest:"Destino",col_status:"Estado",hint:"Elige un vuelo",next_page:"Siguiente página",
 talks_h:"Charlas que cambian cómo trabaja la gente.",talks_p:"Ponencias para congresos, empresas y universidades, en español o en inglés. Historias reales, sin diapositivas llenas de palabras de moda.",pass_keynote:"Ponencia",
 t1_h:"El día que dejas de esperar",t1_p:"Por qué la mayoría no fracasa por falta de talento, sino por esperar demasiado para empezar. De mi libro.",t1_for:"Todos",
 t2_h:"De cero a 300.000 vuelos",t2_p:"Cómo Happy Low Cost hizo crecer una comunidad de más de un millón de seguidores, y qué enseña sobre crecer hoy.",t2_for:"Marketing",
@@ -786,9 +807,9 @@ lg1y:"Age 16",lg1:"My first business",
 earn_h:"Earn money while you sleep.",earn_p:"Among other things, I teach people to build income with affiliate marketing: you recommend products you trust and earn a commission on every sale. It is how my travel sites, like Happy Low Cost, make money.",
 er_h:"How it works",e1_h:"Pick a niche and an audience",e1_p:"Travel, finance, tech: a topic where you can genuinely help people.",e2_h:"Join affiliate networks",e2_p:"Networks like CJ give you tracked links to brands such as Booking.com.",e3_h:"Publish useful content",e3_p:"Guides, deals and comparisons with your links. Each booking pays you a commission, even while you sleep.",
 e_fine:"No guarantees: what you earn depends on your audience and your work.",e_cta:"I want to learn this",ex_e:"Real examples I use on Happy Low Cost",aff_note:"These are affiliate links: if you book through them I may earn a commission, at no extra cost to you.",
-ct_p:"Tell me what you need, a talk, growth for your company or learning affiliate marketing, and I will answer personally.",ct_fine:"Your message goes straight to my inbox. I usually reply within a few days.",
+ct_p:"Tell me what you need, a talk, growth for your company or learning affiliate marketing, and I will answer personally.",ct_fine:"Your message goes straight to my inbox and I read every one.",
 k_aff:"Affiliate income",f_ok:"I agree that Carlos de Ory stores my details to answer me, as described in the",privacy:"Privacy policy",legal:"Legal notice",cookies:"Cookie policy",affiliates:"Affiliate disclosure",ck_settings:"Cookie settings",
-f_send:"Send and print my boarding pass",sending:"Sending…",e_ok:"Tick the box to accept the privacy policy.",e_send:"The message could not be sent. Check your connection and try again in a minute.",
+f_send:"Send and get my boarding pass",sending:"Sending…",e_ok:"Tick the box to accept the privacy policy.",e_send:"The message could not be sent. Check your connection and try again in a minute.",
 tk_e:"Boarding pass ready",tk_p:"Your message is on its way. I will answer personally.",tk_pax:"Passenger",tk_dest:"Destination",tk_gate:"Gate",tk_prev:"Preview: on carlosdeory.com this form sends your message to Carlos.",tk_again:"Send another",
 kind_talk:"A talk",kind_agency:"Growth",kind_affiliate:"Affiliates",kind_other:"Hello",
 ck_h:"Cookies",ck_p:"This site only uses what it needs to work, like remembering your language. With your permission we would also use anonymous analytics to improve it.",ck_more:"Read more",ck_no:"Only essential",ck_yes:"Accept"});
@@ -799,9 +820,9 @@ lg1y:"16 años",lg1:"Mi primer negocio",
 earn_h:"Gana dinero mientras duermes.",earn_p:"Entre otras cosas, enseño a la gente a crear ingresos con marketing de afiliación: recomiendas productos en los que confías y ganas una comisión por cada venta. Es como ganan dinero mis webs de viajes, como Happy Low Cost.",
 er_h:"Cómo funciona",e1_h:"Elige un nicho y un público",e1_p:"Viajes, finanzas, tecnología: un tema en el que de verdad puedas ayudar.",e2_h:"Únete a redes de afiliados",e2_p:"Redes como CJ te dan enlaces con seguimiento a marcas como Booking.com.",e3_h:"Publica contenido útil",e3_p:"Guías, chollos y comparativas con tus enlaces. Cada reserva te paga una comisión, también mientras duermes.",
 e_fine:"Sin garantías: lo que ganes depende de tu público y de tu trabajo.",e_cta:"Quiero aprender esto",ex_e:"Ejemplos reales que uso en Happy Low Cost",aff_note:"Son enlaces de afiliado: si reservas a través de ellos puedo ganar una comisión, sin que pagues nada más.",
-ct_p:"Cuéntame qué necesitas, una ponencia, hacer crecer tu empresa o aprender afiliación, y te contesto yo.",ct_fine:"Tu mensaje llega directo a mi bandeja. Suelo contestar en pocos días.",
+ct_p:"Cuéntame qué necesitas, una ponencia, hacer crecer tu empresa o aprender afiliación, y te contesto yo.",ct_fine:"Tu mensaje llega directo a mi bandeja y los leo todos.",
 k_aff:"Ingresos con afiliación",f_ok:"Acepto que Carlos de Ory guarde mis datos para contestarme, como explica la",privacy:"Política de privacidad",legal:"Aviso legal",cookies:"Política de cookies",affiliates:"Aviso de afiliados",ck_settings:"Ajustes de cookies",
-f_send:"Enviar e imprimir mi tarjeta",sending:"Enviando…",e_ok:"Marca la casilla para aceptar la política de privacidad.",e_send:"No se ha podido enviar el mensaje. Revisa tu conexión y vuelve a probar en un minuto.",
+f_send:"Enviar y recibir mi tarjeta",sending:"Enviando…",e_ok:"Marca la casilla para aceptar la política de privacidad.",e_send:"No se ha podido enviar el mensaje. Revisa tu conexión y vuelve a probar en un minuto.",
 tk_e:"Tarjeta de embarque lista",tk_p:"Tu mensaje va de camino. Te contesto yo.",tk_pax:"Pasajero",tk_dest:"Destino",tk_gate:"Puerta",tk_prev:"Vista previa: en carlosdeory.com este formulario envía tu mensaje a Carlos.",tk_again:"Enviar otro",
 kind_talk:"Ponencia",kind_agency:"Growth",kind_affiliate:"Afiliación",kind_other:"Hola",
 ck_h:"Cookies",ck_p:"Esta web solo usa lo necesario para funcionar, como recordar tu idioma. Con tu permiso usaríamos también analítica anónima para mejorarla.",ck_more:"Leer más",ck_no:"Solo las necesarias",ck_yes:"Aceptar"});
@@ -885,5 +906,25 @@ if("IntersectionObserver" in window){
 })();
 </script>
 
+<script>
+/* newsletter de la home: Supabase cdo-contact (type subscribe) */
+(function(){var D=document,f=D.getElementById("hnl");if(!f)return;
+var L={en:{hnl_e:"Newsletter",hnl_h:"Subscribe and win nights at my favourite hotel.",hnl_p:"Every subscriber enters the draw. And in every email, what I am learning while building companies: growth, AI, travel and points.",hnl_label:"Your email",hnl_btn:"Subscribe",hnl_ok:"I want to receive the newsletter and I accept the",bad:"Add a valid email, like name@email.com.",need:"Tick the box to accept the privacy policy.",ok:"You are on board. See you in your inbox.",err:"It could not be sent. Try again in a minute.",snd:"Sending…",talk_more:"Speaker kit, bio and photos",ag_more:"How we work →",ph:"you@email.com"},
+es:{hnl_e:"Newsletter",hnl_h:"Suscríbete y gana noches en mi hotel favorito.",hnl_p:"Cada suscriptor entra en el sorteo. Y en cada email, lo que voy aprendiendo montando empresas: crecimiento, IA, viajes y puntos.",hnl_label:"Tu email",hnl_btn:"Suscribirme",hnl_ok:"Quiero recibir la newsletter y acepto la",bad:"Escribe un email válido, como nombre@email.com.",need:"Marca la casilla para aceptar la política de privacidad.",ok:"Ya estás a bordo. Nos vemos en tu bandeja de entrada.",err:"No se pudo enviar. Inténtalo de nuevo en un minuto.",snd:"Enviando…",talk_more:"Kit de ponente, bio y fotos",ag_more:"Cómo trabajamos →",ph:"tu@email.com"}};
+function lg(){return (D.documentElement.lang||"en").indexOf("es")===0?"es":"en";}
+function paint(){var t=L[lg()];D.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(t[k]!=null&&/^(hnl_|talk_more|ag_more)/.test(k))el.textContent=t[k];});D.getElementById("hnl-email").placeholder=t.ph;}
+paint();try{new MutationObserver(paint).observe(D.documentElement,{attributes:true,attributeFilter:["lang"]});}catch(e){}
+var msg=D.getElementById("hnl-msg"),btn=D.getElementById("hnl-btn");
+f.addEventListener("submit",function(e){e.preventDefault();var t=L[lg()],em=D.getElementById("hnl-email").value.trim();
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){msg.textContent=t.bad;D.getElementById("hnl-email").focus();return;}
+if(!D.getElementById("hnl-ok").checked){msg.textContent=t.need;D.getElementById("hnl-ok").focus();return;}
+btn.disabled=true;msg.textContent=t.snd;
+fetch("https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({type:"subscribe",email:em,lang:lg(),source:"home",consent:true,website:D.getElementById("hnl-web").value})})
+.then(function(r){if(!r.ok)throw new Error("s");f.querySelector(".hnl-row").remove();D.getElementById("hnl-ok").parentNode.remove();msg.textContent=t.ok;})
+.catch(function(){btn.disabled=false;msg.textContent=t.err;});});
+/* contacto: preseleccionar tipo con ?kind=talk|agency|affiliate|other */
+try{var k=new URLSearchParams(location.search).get("kind");if(k){var r=D.getElementById("k-"+k);if(r)r.checked=true;}}catch(e){}
+})();
+</script>
 </body>
 </html>
