@@ -2,9 +2,11 @@
 """Aplica las mejoras de Happy Low Cost a todas las páginas estáticas (idempotente).
 Uso: python3 hlc/build.py   (desde la raíz de la rama pub/happylowcost.com)
 """
-import os, re, subprocess, json
+import os, re, subprocess, json, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import bk as BK
 
-V = '9'
+V = '11'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -94,8 +96,22 @@ for f in files:
     if c:
         t = t.replace(EBC_OLD, EBC_NEW)
         stats['ebc'] += c
+    # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
+    if 'searchresults' in t:
+        t = BK.fix_html(t)
     if t != t0:
         open(f, 'w', encoding='utf-8', errors='surrogateescape').write(t)
         stats['changed'] += 1
+
+# la versión en inglés (en/) no pasa por este script: arreglar sus enlaces de Booking aquí también
+EN_OF = {'chollos': 'en/deals', 'vuelos': 'en/flights', 'destinos': 'en/destinations'}
+en_pre = [EN_OF[ONLY]] if ONLY in EN_OF else (['en/'] if not ONLY else [])
+for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', 'en/*.html'], capture_output=True).stdout.decode().split('\0'):
+    if f and os.path.exists(f) and any(f.startswith(p_) for p_ in en_pre):
+        s0 = open(f, encoding='utf-8', errors='surrogateescape').read()
+        if 'searchresults' in s0:
+            s1 = BK.fix_html(s0)
+            if s1 != s0:
+                open(f, 'w', encoding='utf-8', errors='surrogateescape').write(s1); stats['bk_en'] = stats.get('bk_en', 0) + 1
 
 print(json.dumps(stats))
