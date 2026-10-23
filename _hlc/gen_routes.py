@@ -140,6 +140,7 @@ def main():
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(page(r, lang, others))
             urls.append(f"{SITE}/{base}/{r['slug']}/")
+    json.dump({r['slug']: r['price_from'] for r in rows}, open('vuelos/rutas.json', 'w'), separators=(',', ':'))
     for base, en in (('vuelos', False), ('en/flights', True)):
         os.makedirs(base, exist_ok=True)
         open(os.path.join(base, 'index.html'), 'w', encoding='utf-8').write(hub(rows, en))

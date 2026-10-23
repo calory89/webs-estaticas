@@ -13,6 +13,11 @@
     'Nueva York': ['NYC', 40.64, -73.78], 'Miami': ['MIA', 25.79, -80.29], 'Los Ángeles': ['LAX', 33.94, -118.41], 'Ciudad de México': ['MEX', 19.44, -99.07],
     'Bogotá': ['BOG', 4.70, -74.15], 'Buenos Aires': ['BUE', -34.82, -58.54], 'Sídney': ['SYD', -33.95, 151.18], 'Dubái': ['DXB', 25.25, 55.36], 'Singapur': ['SIN', 1.36, 103.99]
   };
+  var OCC = { 'Lisboa': 'PT', 'Oporto': 'PT', 'Londres': 'GB', 'París': 'FR', 'Ámsterdam': 'NL', 'Berlín': 'DE', 'Roma': 'IT', 'Milán': 'IT', 'Dublín': 'IE', 'Copenhague': 'DK', 'Nueva York': 'US', 'Miami': 'US', 'Los Ángeles': 'US', 'Ciudad de México': 'MX', 'Bogotá': 'CO', 'Buenos Aires': 'AR', 'Sídney': 'AU', 'Dubái': 'AE', 'Singapur': 'SG' };
+  var occ = function (o) { return OCC[o] || 'ES'; };
+  var RSLUG = { 'Canarias': 'gran-canaria' };
+  var ROUTES = {};
+  fetch('/vuelos/rutas.json').then(function (r) { return r.ok ? r.json() : {}; }).then(function (j) { ROUTES = j || {}; }).catch(function () {});
   var CITY = { LON: 1, PAR: 1, ROM: 1, MIL: 1, NYC: 1, TYO: 1, STO: 1, BUE: 1, RIO: 1, OSA: 1 };
   var REG = { mundo: [[-125, -40], [150, 66]], europa: [[-12, 34], [32, 61]], mediterraneo: [[-10, 33], [36, 46]], america: [[-125, -38], [-35, 47]], asia: [[50, -10], [142, 45]], africa: [[-18, -36], [52, 36]], oceania: [[110, -47], [180, -8]] };
   var CONT = { 'Europa': 'europa', 'Asia': 'asia', 'Oriente Medio': 'asia', 'Norteamérica': 'america', 'Centroamérica y Caribe': 'america', 'Sudamérica': 'america', 'África': 'africa', 'Oceanía': 'oceania' };
@@ -82,7 +87,15 @@
       }
       p.deals.push(x);
     });
-    P.forEach(function (p) { p.deals.sort(function (a, b) { return a.price - b.price; }); p.best = p.deals[0] || null; });
+    P.forEach(function (p) { p.deals.sort(function (a, b) { return a.price - b.price; }); });
+    function rel(p) {
+      var o = ORIG[origin][0], cc = occ(origin);
+      var mine = p.deals.filter(function (x) { return x.facts.origen_iata === o || slug(x.facts.origen) === slug(origin); });
+      var near = p.deals.filter(function (x) { return mine.indexOf(x) < 0 && (x.facts.origen_cc || '').toUpperCase() === cc; });
+      return { mine: mine, near: near, all: mine.concat(near) };
+    }
+    function setBest() { P.forEach(function (p) { var r = rel(p); p.best = r.all[0] || null; }); }
+    setBest();
 
     var W = Math.max(320, BOX.clientWidth), H = Math.max(400, BOX.clientHeight);
     var svg = d3.select(svgEl).attr('viewBox', '0 0 ' + W + ' ' + H).attr('preserveAspectRatio', 'xMidYMid slice');
@@ -109,6 +122,13 @@
     lab.append('text').attr('y', -16.5).text(function (p) { return p.best ? p.n + ' · ' + p.best.price + ' €' : p.n; });
     lab.each(function (p) { var t = this.querySelector('text'), r = this.querySelector('rect'); var bw = t.getComputedTextLength ? t.getComputedTextLength() + 16 : 60; p._bw = bw; r.setAttribute('width', bw); r.setAttribute('x', -bw / 2); t.setAttribute('x', 0); });
 
+    function repaint() {
+      setBest();
+      pins.attr('class', function (p) { return 'mx-pin' + (p.best ? ' deal' : '') + (p.lib ? '' : ' xd') + (p === cur ? ' on' : ''); })
+        .attr('aria-label', function (p) { return p.n + (p.best ? ', chollo desde ' + p.best.price + ' €' : ''); });
+      lab.select('text').text(function (p) { return p.best ? p.n + ' · ' + p.best.price + ' €' : p.n; });
+      lab.each(function (p) { var t = this.querySelector('text'), r = this.querySelector('rect'); var bw = t.getComputedTextLength ? t.getComputedTextLength() + 16 : 60; p._bw = bw; r.setAttribute('width', bw); r.setAttribute('x', -bw / 2); });
+    }
     var TOP = ['londres', 'paris', 'roma', 'lisboa', 'nueva-york', 'amsterdam', 'berlin', 'praga', 'atenas', 'estambul', 'marrakech', 'tokio', 'bangkok', 'cancun', 'dubai', 'bali', 'venecia', 'budapest', 'viena', 'santorini'];
     var rank = function (p) { return (p.best ? -100 : 0) + (p === cur ? -300 : 0) + (TOP.indexOf(p.s) >= 0 ? TOP.indexOf(p.s) - 50 : 0); };
     function labels() {
@@ -142,7 +162,7 @@
       g.append('text').attr('y', 26).text('✈ ' + origin);
     }
 
-    var zoom = d3.zoom().scaleExtent([1, 60]).translateExtent([[-200, -100], [W + 200, H + 100]])
+    var zoom = d3.zoom().clickDistance(10).tapDistance(14).scaleExtent([1, 60]).translateExtent([[-200, -100], [W + 200, H + 100]])
       .filter(function (e) { if (e.type === 'wheel') return e.ctrlKey || BOX.classList.contains('live'); return !e.button; })
       .on('zoom', function (e) { T = e.transform; k = T.k; root.attr('transform', T); place(); });
     svg.call(zoom).on('dblclick.zoom', null);
@@ -189,17 +209,21 @@
     }
     function pick(p, doFly) {
       cur = p; pins.classed('on', function (q) { return q === p; });
-      var o = ORIG[origin][0];
-      var mine = p.deals.filter(function (x) { return x.facts.origen_iata === o || slug(x.facts.origen) === slug(origin); });
-      var list = mine.concat(p.deals.filter(function (x) { return mine.indexOf(x) < 0; })).slice(0, 4);
+      var o = ORIG[origin][0], R = rel(p), mine = R.mine;
+      var list = R.all.slice(0, 4);
+      var rs = (RSLUG[origin] || slug(origin)) + '-' + p.s, rp = ROUTES[rs];
+      var top = list[0];
+      var main = top ? '<a class="mx-main" href="/chollos/' + esc(top.slug) + '/"><span>Ver el chollo<small>' + esc(top.facts.origen) + ' → ' + esc(top.facts.destino) + (top.facts.ida ? ' · ' + fdate(top.facts.ida) : '') + '</small></span><i>' + esc(top.price) + ' €</i></a>'
+        : (rp ? '<a class="mx-main" href="/vuelos/' + esc(rs) + '/"><span>Vuelos ' + esc(origin) + ' → ' + esc(p.n) + '<small>precio real de ida y vuelta, fechas y consejos</small></span><i>desde ' + esc(rp) + ' €</i></a>' : '');
+      var mainHref = top ? '/chollos/' + top.slug + '/' : (rp ? '/vuelos/' + rs + '/' : '');
       var ph = p.lib ? libPh(p) : (w.HLC_photo && w.HLC_photo(p.n)) || '';
-      var dealsHtml = list.length ? '<div class="mx-deals">' + list.map(function (x) {
+      var dealsHtml = list.length > 1 ? '<div class="mx-oth">Más chollos</div><div class="mx-deals">' + list.slice(1).map(function (x) {
         var f = x.facts, m = mine.indexOf(x) >= 0;
         return '<a class="mx-dl' + (m ? ' me' : '') + '" href="/chollos/' + esc(x.slug) + '/"><span><b>' + esc(f.origen) + ' → ' + esc(f.destino) + '</b><small>' + esc(f.tipo || '') + (f.ida ? ' · ' + fdate(f.ida) : '') + (f.escalas === 0 ? ' · directo' : '') + '</small></span><i>' + esc(x.price) + ' €</i></a>';
-      }).join('') + '</div>' : '<p class="mx-none">Hoy no hay chollo a ' + esc(p.n) + '. Crea una alerta y te avisamos cuando salga.</p>';
+      }).join('') + '</div>' : (top ? '' : '<p class="mx-none">Hoy no hay chollo a ' + esc(p.n) + ' desde ' + esc(origin) + '. ' + (rp ? '' : 'Crea una alerta y te avisamos cuando salga.') + '</p>');
       card.innerHTML = '<button type="button" class="mx-x" aria-label="Cerrar">×</button>' +
-        '<div class="mx-ph" style="' + (ph ? 'background-image:url(' + esc(ph) + ')' : 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)') + '">' + (p.best ? '<span class="mx-badge">🔥 ' + p.deals.length + ' chollo' + (p.deals.length > 1 ? 's' : '') + ' · desde ' + esc(p.best.price) + ' €</span>' : '') + '</div>' +
-        '<div class="mx-bd"><div class="mx-n">' + esc(p.n) + '</div><div class="mx-c">' + esc(p.c) + ' · ruta desde ' + esc(origin) + '</div>' + dealsHtml +
+        '<div class="mx-ph" style="' + (ph ? 'background-image:url(' + esc(ph) + ')' : 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)') + '">' + (p.best ? '<span class="mx-badge">🔥 ' + R.all.length + ' chollo' + (R.all.length > 1 ? 's' : '') + ' · desde ' + esc(p.best.price) + ' €</span>' : '') + '</div>' +
+        '<div class="mx-bd"><div class="mx-n">' + esc(p.n) + '</div><div class="mx-c">' + esc(p.c) + ' · desde ' + esc(origin) + '</div>' + main + dealsHtml +
         '<div class="mx-btns">' +
         '<a class="hlc-btn" rel="sponsored nofollow noopener" target="_blank" href="' + flights(o, p.i) + '">✈️ <span class="mx-l">Vuelos ' + esc(o) + ' → ' + esc(p.i) + '</span><span class="mx-s">Vuelos</span></a>' +
         '<a class="hlc-btn t" rel="sponsored nofollow noopener" target="_blank" href="' + hotels(p.n) + '">🏨 <span class="mx-l">Hoteles en ' + esc(p.n) + '</span><span class="mx-s">Hoteles</span></a>' +
@@ -208,6 +232,7 @@
       card.hidden = false;
       card.querySelector('.mx-x').onclick = function (e) { e.stopPropagation(); closeCard(); };
       card.onclick = function (e) { e.stopPropagation(); };
+      var phEl = card.querySelector('.mx-ph'); if (phEl && mainHref) phEl.onclick = function () { location.href = mainHref; };
       arcFrom(ORIG[origin], p);
       if (doFly) fly(p);
       clearTimeout(lt); lt = setTimeout(labels, 60);
@@ -216,6 +241,7 @@
     }
 
     API.originChanged = function () {
+      repaint();
       BOX.querySelectorAll('[data-region]').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
       place();
       if (cur) { pick(cur, true); }
@@ -231,7 +257,7 @@
       });
       strip.innerHTML = order.map(function (p) {
         var ph = p.lib ? libPh(p) : '';
-        return '<button type="button" class="mx-cd" data-s="' + esc(p.s) + '"' + (p.best ? ' data-deal="1"' : '') + (filterFn(p) ? '' : ' hidden') + '><span class="mx-cd-ph" style="' + (ph ? 'background-image:url(' + ph + ')' : 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)') + '">' + (p.best ? '<i>' + p.best.price + ' €</i>' : '') + '</span><b>' + esc(p.n) + '</b><small>' + esc(p.c) + (p.best ? ' · ' + p.deals.length + ' chollo' + (p.deals.length > 1 ? 's' : '') : '') + '</small></button>';
+        return '<button type="button" class="mx-cd" data-s="' + esc(p.s) + '"' + (p.best ? ' data-deal="1"' : '') + (filterFn(p) ? '' : ' hidden') + '><span class="mx-cd-ph" style="' + (ph ? 'background-image:url(' + ph + ')' : 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)') + '">' + (p.best ? '<i>' + p.best.price + ' €</i>' : '') + '</span><b>' + esc(p.n) + '</b><small>' + esc(p.c) + (p.best ? ' · ' + rel(p).all.length + ' chollo' + (rel(p).all.length > 1 ? 's' : '') : '') + '</small></button>';
       }).join('');
     }
     if (strip) renderStrip();
