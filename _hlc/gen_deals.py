@@ -199,8 +199,11 @@ def dest_ll(f):
 
 def lib_slug(f):
     k = slugify(f.get('destino', ''))
+    for p in DLIB:  # primero por nombre (Brujas no debe caer en Bruselas por compartir aeropuerto)
+        if p['s'] == k or slugify(p['n']) == k or k in (p.get('a') or []):
+            return p['s']
     for p in DLIB:
-        if p['s'] == k or slugify(p['n']) == k or k in (p.get('a') or []) or (f.get('destino_iata') and p['i'] == f.get('destino_iata')):
+        if f.get('destino_iata') and p['i'] == f.get('destino_iata'):
             return p['s']
     for s_, names in ALIAS.items():
         if k in names:
