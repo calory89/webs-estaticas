@@ -76,7 +76,19 @@ export default {
     if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(null, { status: 204 });
     if (host === 'realhunt.co' && /^\/(finds|top|og)\/.+\.(webp|jpe?g|png)$/i.test(u.pathname)) { const m = await fetch('https://realhunt-media.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (m.status === 200) { const h = new Headers(m.headers); h.set('cache-control', 'public, max-age=86400'); return new Response(m.body, { status: 200, headers: h }); } }
     if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await env.ASSETS.fetch(new Request(new URL(pre + '/__q/' + k + '=' + v + '/', u), req)); if (q.status === 200) return q; } } }
+    // realhunt.co: one URL per page, without the trailing slash, matching the canonical tags. "/about/" sends a 301 to
+    // "/about", and "/about" is served from the about/index.html file directly instead of redirecting to the folder.
+    if (host === 'realhunt.co' && u.pathname.length > 1 && u.pathname.endsWith('/')) {
+      return Response.redirect(new URL(u.pathname.replace(/\/+$/, '') + u.search, u).toString(), 301);
+    }
     let r = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + u.search, u), req));
+    if (host === 'realhunt.co' && r.status >= 300 && r.status < 400) {
+      const l = new URL(r.headers.get('location') || '', u);
+      if (l.pathname === pre + u.pathname + '/') {
+        const d = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + '/' + u.search, u), req));
+        if (d.status === 200) r = d;
+      }
+    }
     if (r.status >= 300 && r.status < 400) {
       const loc = r.headers.get('location') || '';
       const l = new URL(loc, u);
@@ -86,6 +98,17 @@ export default {
     if (r.status === 404 && NOSPA.has(host)) { const nf = await env.ASSETS.fetch(new Request(new URL(pre + '/404', u), req)); return new Response(nf.status === 200 ? nf.body : 'Not found', { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } }); }
     if (r.status === 404 && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
       const s = await env.ASSETS.fetch(new Request(new URL(pre + '/', u), req));
+      // realhunt.co: a path with no prerendered page (an account screen, a home added after the last build, a typo)
+      // still loads the app, but must not tell search engines it is the home page.
+      if (host === 'realhunt.co') {
+        const h = new Headers(s.headers); h.set('x-robots-tag', 'noindex');
+        const out = new HTMLRewriter()
+          .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+          .on('meta[name="robots"]', { element(e) { e.setAttribute('content', 'noindex, follow'); } })
+          .on('meta[property="og:url"]', { element(e) { e.setAttribute('content', 'https://realhunt.co' + u.pathname); } })
+          .transform(new Response(s.body, { status: 200, headers: h }));
+        return out;
+      }
       return new Response(s.body, { status: 200, headers: s.headers });
     }
     return r;
