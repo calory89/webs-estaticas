@@ -12,6 +12,7 @@ HERE = os.path.join(ROOT, '_hlc')
 import sys
 sys.path.insert(0, HERE)
 import top3 as T3
+import bk as BK
 API = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed'
 SITE = 'https://www.happylowcost.com'
 UA = {'User-Agent': 'HappyLowCost/1.0 (carlos@equinoxinvestmentgroup.com)'}
@@ -573,14 +574,14 @@ def main():
 <div><small>Aerolínea</small><b>{e(f.get('aerolinea') or 'Varias')}</b></div><div><small>Escalas</small><b>{'Directo' if f.get('escalas') == 0 else e(f.get('escalas'))}</b></div>
 </div>
 <a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo desde {e(f.get('precio'))} €</a>
-<a class="hlc-btn t" href="{e(x.get('cta_hotel', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel">🏨 Hoteles en {e(f.get('destino'))}</a>
+<a class="hlc-btn t" href="{e(BK.with_dates(x.get('cta_hotel', '#'), f.get('ida'), f.get('vuelta')))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel">🏨 Hoteles en {e(f.get('destino'))} en estas fechas</a>
 {guide_link}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Precio comprobado al publicar. Los vuelos baratos vuelan: si cambia, prueba fechas cercanas.</div>
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Compartir</button><a class="hlc-btn o" href="https://wa.me/?text={share_txt}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copiar enlace</button></div>
 <a class="hlc-btn s" href="/alertas/?d={quote(f.get('destino', ''))}">🔔 Avísame de chollos a {e(f.get('destino'))}</a>
 </aside>
 </div>
-{T3.block(f.get('destino', ''), *dest_ll(f), lang='es')}
+{T3.block(f.get('destino', ''), *dest_ll(f), lang='es', checkin=f.get('ida'), checkout=f.get('vuelta'))}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">También te puede interesar</div><h2>Chollos parecidos</h2></div><a class="hlc-btn o" href="/chollos/">Ver todos</a></div><div class="dc-grid">{rel_html}</div></section>
 </div></main></body></html>'''
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(page)

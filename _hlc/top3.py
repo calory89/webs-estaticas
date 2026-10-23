@@ -59,7 +59,7 @@ def _e(x):
     return html.escape(str(x if x is not None else ''))
 
 
-def block(city_name, lat, lng, names=(), weak=(), lang='es'):
+def block(city_name, lat, lng, names=(), weak=(), lang='es', checkin=None, checkout=None):
     c = find(lat, lng, names, weak)
     if not c:
         return ''
@@ -68,18 +68,23 @@ def block(city_name, lat, lng, names=(), weak=(), lang='es'):
     t3 = f'https://www.top3hotels.com/{"es/" if lang == "es" else ""}{slug}'
     cards = []
     for name, cat, area, score, cnt, stars, nightly, burl, img in hs:
-        href = CJ_HOTEL + quote(burl + ('?lang=es' if lang == 'es' else ''), safe='')
+        bu = burl.replace('.html', '.es.html' if lang == 'es' else '.en-gb.html')
+        if checkin:
+            import bk
+            bu = bk.with_dates(bu, checkin, checkout)
+        href = CJ_HOTEL + quote(bu, safe='')
         meta = []
         if score:
             meta.append(f'<b class="t3-sc">{score:.1f}</b>' + (f' <span>{cnt:,} {"opiniones" if lang == "es" else "reviews"}</span>'.replace(',', '.' if lang == 'es' else ',') if cnt else ''))
         price = (f'<div class="t3-pr">{"desde" if lang == "es" else "from"} <b>{nightly} €</b>/{"noche" if lang == "es" else "night"}</div>' if nightly else '')
+        go = ("Ver precio en tus fechas" if lang == "es" else "See price for your dates") if checkin else ("Ver hotel" if lang == "es" else "See hotel")
         cards.append(
             f'<a class="t3-c" href="{_e(href)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="top3_hotel">'
             + (f'<img src="{_e(img)}" alt="{_e(name)}" loading="lazy" width="500" height="333">' if img else '<div class="t3-noimg">🏨</div>')
             + f'<div class="t3-b"><span class="t3-cat t3-{cat}">{L[cat]}</span><strong>{_e(name)}</strong>'
             + f'<div class="t3-m">{"★" * int(stars or 0)}{(" · " if stars and area else "") + _e(area) if area else ""}</div>'
             + (f'<div class="t3-m">{" ".join(meta)}</div>' if meta else '') + price
-            + f'<span class="t3-go">{"Ver hotel" if lang == "es" else "See hotel"} →</span></div></a>')
+            + f'<span class="t3-go">{go} →</span></div></a>')
     if lang == 'es':
         h = f'Dónde dormir en {_e(city_name)}: los 3 mejores hoteles'
         k = 'Recomendados por top3hotels.com'

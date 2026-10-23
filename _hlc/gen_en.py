@@ -208,7 +208,7 @@ def main():
                "author": {"@type": "Organization", "name": "Happy Low Cost", "url": SITE + '/en/'}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         rel = G.related(x, deals)
         guide = f'<a class="hlc-btn o" href="/en/destinations/{ls_}/">📖 Full {e(NAMES.get(ls_, d))} travel guide</a>' if ls_ and ls_ in dmap else ''
-        fl, ht = to_en_link(x.get('cta_flight')), hotels(d)
+        fl, ht = to_en_link(x.get('cta_flight')), G.BK.with_dates(hotels(d), f.get('ida'), f.get('vuelta'))
         share = quote(f'{title} {url}')
         page = head(seo_t, desc, url, es_url, og, 'article', [art, cld, offer], body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
@@ -229,13 +229,13 @@ def main():
 <div><small>Airline</small><b>{e(f.get('aerolinea') or 'Various')}</b></div><div><small>Stops</small><b>{'Nonstop' if f.get('escalas') == 0 else e(f.get('escalas'))}</b></div>
 </div>
 <a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight from €{e(x.get('price'))}</a>
-<a class="hlc-btn t" href="{e(ht)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel_en">🏨 Hotels in {e(d)}</a>
+<a class="hlc-btn t" href="{e(ht)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel_en">🏨 Hotels in {e(d)} for these dates</a>
 {guide}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Price checked when published. Cheap fares go fast: if it has changed, try nearby dates.</div>
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Share</button><a class="hlc-btn o" href="https://wa.me/?text={share}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copy link</button></div>
 </aside>
 </div>
-{T3.block(d, *G.dest_ll(f), lang='en')}
+{T3.block(d, *G.dest_ll(f), lang='en', checkin=f.get('ida'), checkout=f.get('vuelta'))}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">You might also like</div><h2>Similar deals</h2></div><a class="hlc-btn o" href="/en/deals/">See all</a></div><div class="dc-grid">{''.join(card(y) for y in rel)}</div></section>
 </div></main>{FOOTER}</body></html>'''
         write(f'en/deals/{slug}', page)

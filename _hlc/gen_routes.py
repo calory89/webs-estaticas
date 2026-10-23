@@ -85,13 +85,13 @@ def page(r, lang, others):
 <div><small>{L("Aerolínea", "Airline")}</small><b>{e(f.get("aerolinea") or L("Varias", "Several"))}</b></div><div><small>{L("Escalas", "Stops")}</small><b>{e(stops_t)}</b></div>
 </div>
 <a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos desde", "Flights from")} {e(f.get("precio_desde_ida_y_vuelta_eur"))} €</a>
-<a class="hlc-btn t" href="{e(hotel_link(r["dest"], en))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_hotel">🏨 {L("Hoteles en", "Hotels in")} {e(dest)}</a>
+<a class="hlc-btn t" href="{e(G.BK.with_dates(hotel_link(r["dest"], en), f.get("ejemplo_ida"), f.get("ejemplo_vuelta")))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_hotel">🏨 {L("Hoteles en", "Hotels in")} {e(dest)}</a>
 {"" if en else f'<a class="hlc-btn s" href="/alertas/?d={quote(r["dest"])}">🔔 Avísame si baja de precio</a>'}
 <a class="hlc-btn o" href="{"/en/destinations/" if en else "/destinos/"}{e(ds)}/">📖 {L("Guía de", "Guide to")} {e(dest)}</a>
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(when)}</div>
 </aside>
 </div>
-{G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es")}
+{G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es", checkin=f.get("ejemplo_ida"), checkout=f.get("ejemplo_vuelta"))}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
     return out

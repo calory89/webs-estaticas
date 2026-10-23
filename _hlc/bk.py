@@ -37,6 +37,26 @@ def fix_booking(u):
     return f'{sp.scheme}://{sp.netloc}{sp.path}?{urlencode(q)}'
 
 
+def with_dates(u, checkin, checkout=None, adults=2):
+    """Añade las fechas del chollo (y 2 adultos, 1 habitación) a un enlace de Booking, directo o dentro del de CJ.
+    Sin vuelta (solo ida) se ponen 3 noches."""
+    import datetime
+    ci = (checkin or '')[:10]
+    if not re.match(r'\d{4}-\d{2}-\d{2}$', ci) or not u or 'booking.com' not in unquote(u):
+        return u
+    co = (checkout or '')[:10]
+    if not re.match(r'\d{4}-\d{2}-\d{2}$', co) or co <= ci:
+        co = (datetime.date.fromisoformat(ci) + datetime.timedelta(days=3)).isoformat()
+    m = re.match(r'(https://www\.[a-z]+\.com/click-\d+-\d+\?.*?url=)([^&]+)(.*)$', u)
+    if m:
+        return m.group(1) + quote(with_dates(unquote(m.group(2)), ci, co, adults), safe='') + m.group(3)
+    u = fix_booking(u)
+    sp = urlsplit(u)
+    q = dict(parse_qsl(sp.query))
+    q.update({'checkin': ci, 'checkout': co, 'group_adults': str(adults), 'no_rooms': '1', 'group_children': '0'})
+    return f'{sp.scheme}://{sp.netloc}{sp.path}?{urlencode(q)}'
+
+
 _CJ = re.compile(r'(https://www\.(?:kqzyfj|anrdoezrs|jdoqocy|tkqlhce|dpbolvw)\.com/click-\d+-\d+\?[^"\'\s<>]*?url=)([^"\'\s<>&]+)')
 
 
