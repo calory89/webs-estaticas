@@ -106,7 +106,7 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     alt = f'<link rel="alternate" hreflang="en" href="{canonical}">'
     if es_url:
         alt += f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">'
-    extra = '<link rel="stylesheet" href="/hlc/home.css?v=7">' + alt + (G.ld_script(ld) if ld else '')
+    extra = '<link rel="stylesheet" href="/hlc/home.css?v=8">' + alt + (G.ld_script(ld) if ld else '')
     for k, v in dict(title=e(title), desc=e(desc), canonical=canonical, robots=robots, og_type=og_type, og_title=e(title), og_alt=e(title),
                      og_image=og_image or f'{SITE}/hlc/brand/og-default.jpg', extra_head=extra, body_class=body_class).items():
         h = h.replace('{' + k + '}', v)

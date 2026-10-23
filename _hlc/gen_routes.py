@@ -66,7 +66,7 @@ def page(r, lang, others):
         h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs), body_class='deal')
     else:
         h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article',
-                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=7">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
+                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=8">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" if en else "/vuelos/"}{o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     out = h + f'''<main>
@@ -110,7 +110,7 @@ def hub(rows, en):
         h = E.head(title, desc, SITE + base, SITE + '/vuelos/', body_class='chollos')
     else:
         h = G.head(title=e(title), desc=e(desc), canonical=SITE + base, og_image=f'{SITE}/hlc/brand/og-default.jpg', og_type='website',
-                   extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=7"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">', body_class='chollos')
+                   extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=8"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">', body_class='chollos')
     return h + f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 <div class="sec-h"><div><div class="kicker">{"Real prices, checked on Kiwi.com" if en else "Precios reales, consultados en Kiwi.com"}</div><h1 class="x-h1">{"Cheap flights, route by route" if en else "Vuelos baratos, ruta a ruta"}</h1><p>{e(desc)}</p></div></div>
 {secs}
