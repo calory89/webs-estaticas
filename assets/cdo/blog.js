@@ -116,6 +116,39 @@
     });
   }
 
-  function boot() { try { comments(); } catch (e) {} try { stories(); } catch (e) {} }
+  /* Compartir en LinkedIn junto a X, WhatsApp y Facebook */
+  function linkedin() {
+    D.querySelectorAll('.share').forEach(function (box) {
+      if (box.querySelector('[data-li]')) { return; }
+      var fb = box.querySelector('a[href*="facebook.com/sharer"]');
+      var a = D.createElement('a');
+      a.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(location.origin + location.pathname);
+      a.target = '_blank'; a.rel = 'noopener nofollow'; a.textContent = 'LinkedIn'; a.setAttribute('data-li', '1');
+      if (fb && fb.parentNode === box) { box.insertBefore(a, fb.nextSibling); box.insertBefore(D.createTextNode(' '), a); } else { box.appendChild(a); }
+    });
+  }
+
+  /* Volver arriba en paginas largas */
+  function toTop() {
+    if (D.body.scrollHeight < window.innerHeight * 3 || D.getElementById('cdo-top')) { return; }
+    var b = D.createElement('button');
+    b.id = 'cdo-top'; b.type = 'button';
+    b.setAttribute('aria-label', en() ? 'Back to top' : 'Volver arriba');
+    b.textContent = '↑';
+    b.style.cssText = 'position:fixed;right:16px;bottom:88px;z-index:40;width:44px;height:44px;border-radius:50%;border:1.5px solid #121114;background:#fff;color:#121114;font:700 20px/1 system-ui;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.12);opacity:0;pointer-events:none;transition:opacity .2s';
+    b.addEventListener('click', function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      var h = D.querySelector('h1'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    });
+    D.body.appendChild(b);
+    var on = false;
+    window.addEventListener('scroll', function () {
+      var v = window.scrollY > window.innerHeight * 1.5;
+      if (v !== on) { on = v; b.style.opacity = v ? '1' : '0'; b.style.pointerEvents = v ? 'auto' : 'none'; }
+    }, { passive: true });
+  }
+
+  function boot() { try { comments(); } catch (e) {} try { stories(); } catch (e) {} try { linkedin(); } catch (e) {} try { toTop(); } catch (e) {} }
   if (D.readyState === 'loading') { D.addEventListener('DOMContentLoaded', boot); } else { boot(); }
 })();

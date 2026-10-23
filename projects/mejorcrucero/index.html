@@ -59,11 +59,13 @@ header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--pa
 .others{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:36px 0}.others span{font:700 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-right:6px}
 .others a{padding:9px 14px;border:1.5px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}.others a:hover{border-color:var(--ink)}
 footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:14px;color:var(--ink-2)}
+.menu{display:flex;gap:4px;margin:0 0 0 12px;padding:0;list-style:none}.menu a{display:block;padding:8px 10px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}.menu a:hover{background:var(--paper-2)}@media (max-width:900px){.menu{display:none}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap nav">
 <a class="logo" href="/" aria-label="Carlos de Ory, home"><span class="mk" aria-hidden="true"><span>C</span><span>O</span></span>Carlos de Ory</a>
+<ul class="menu"><li><a href="/speaking/">Talks</a></li><li><a href="/growth/">Growth</a></li><li><a href="/book/">The book</a></li><li><a href="/destinos/">Travel</a></li><li><a href="/blog/">Blog</a></li><li><a href="/links/">All projects</a></li></ul>
 <div class="tools"><div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div>
 <a class="btn solid sm" href="/#contact" data-k="talk">Let's talk</a></div></div></header>
 <main class="wrap">
