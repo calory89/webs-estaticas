@@ -39,6 +39,9 @@ jobs:
           HLC_ONLY=vuelos python3 _hlc/build.py
           HLC_ONLY=chollos python3 _hlc/build.py
           HLC_ONLY=destinos python3 _hlc/build.py
+      - name: Comprobar (enlaces, códigos de Booking, mínimos)
+        if: steps.chk.outputs.go == 'yes'
+        run: python3 _hlc/check.py
       - name: Publicar
         if: steps.chk.outputs.go == 'yes'
         run: |
