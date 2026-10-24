@@ -48,3 +48,10 @@ jobs:
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "chollos: actualización automática"
           for i in 1 2 3; do git push origin HEAD:pub/happylowcost.com && break; git fetch --depth=5 origin pub/happylowcost.com && git rebase -X theirs FETCH_HEAD; done
+      - name: Avisar a buscadores (IndexNow)
+        if: steps.chk.outputs.go == 'yes'
+        continue-on-error: true
+        run: |
+          URLS=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -E '^(chollos|en/deals|vuelos|en/flights)/[^/]+/index.html$' | sed 's#index.html$##; s#^#https://www.happylowcost.com/#' | head -500 | python3 -c "import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))")
+          echo "$URLS" | head -c 300
+          if [ "$URLS" != "[]" ]; then curl -sS -X POST https://api.indexnow.org/indexnow -H 'content-type: application/json' -d "{\"host\":\"www.happylowcost.com\",\"key\":\"dd9b8e6f028e89576c38388a0d7e3cd4\",\"keyLocation\":\"https://www.happylowcost.com/dd9b8e6f028e89576c38388a0d7e3cd4.txt\",\"urlList\":$URLS}" -w "\nindexnow %{http_code}\n"; fi
