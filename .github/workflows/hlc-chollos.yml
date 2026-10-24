@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "happylowcost-bot"
           git config user.email "bot@happylowcost.com"
-          git add -A index.html _redirects chollos destinos en vuelos vuelos-sitemap.xml flights-sitemap.xml hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml en-sitemap.xml 2>/dev/null || git add -A chollos destinos hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
+          git add -A index.html _redirects hlc/fx.json chollos destinos en vuelos vuelos-sitemap.xml flights-sitemap.xml hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml en-sitemap.xml 2>/dev/null || git add -A chollos destinos hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "chollos: actualización automática"
           for i in 1 2 3; do git push origin HEAD:pub/happylowcost.com && break; git fetch --depth=5 origin pub/happylowcost.com && git rebase -X theirs FETCH_HEAD; done
