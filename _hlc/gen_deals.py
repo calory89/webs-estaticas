@@ -426,7 +426,7 @@ def ago_iso(s):
 
 
 def head(**k):
-    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">', body_class='')
+    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='')
     d.update(k)
     d.setdefault('og_title', d['title'])
     d.setdefault('og_alt', d['title'])
@@ -559,7 +559,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
     graph = [cld, {"@type": "CollectionPage", "name": h1, "url": canonical, "inLanguage": "es-ES", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     desc = smart_desc(intro)
     page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else 'index, follow, max-image-preview:large',
-                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
+                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
     cards = ''.join(card(x) for x in deals) or EMPTY
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch}
@@ -716,7 +716,7 @@ def main():
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -907,7 +907,7 @@ def main():
         side = ''.join(card(x) for x in sub[:3])
         page = head(title=e((g.get('seo_title') or f"Qué ver en {p['n']}") + ' · Happy Low Cost'), desc=e(g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."),
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -940,7 +940,7 @@ def main():
     tiles = ''.join(f'<a class="dc" href="/destinos/{p["s"]}/#hoteles"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(p["n"])}</span></div><div class="dc-b"><div><div class="dc-r">3 hoteles en {e(p["n"])}</div><div class="dc-m">Económico · calidad-precio · lujo</div></div></div></a>' for p, c_ in hl)
     hp = head(title='Dónde dormir barato: los 3 mejores hoteles de cada destino · Happy Low Cost', desc=f'Un hotel económico, uno con la mejor calidad-precio y uno de lujo en {len(hl)} destinos, elegidos por nota real de huéspedes.',
               canonical=f'{SITE}/hoteles/', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=11"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/">', body_class='chollos')
+              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/">', body_class='chollos')
     hp += f'''<main class="sec" style="padding-top:26px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Hoteles</div><h1 class="x-h1">Dónde dormir en cada destino</h1><p>Para cada destino, 3 hoteles: el económico, el de mejor calidad-precio y uno de lujo, elegidos por top3hotels.com según la nota real de los huéspedes. {len(hl)} destinos.</p></div></div>
 <div class="dc-grid">{tiles}</div></div></main></body></html>'''
     os.makedirs('hoteles', exist_ok=True)
