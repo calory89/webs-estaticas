@@ -28,10 +28,15 @@ cats = sorted((v for v in A['cat'].values() if v['n'] >= 3), key=lambda v: v['pa
 open(os.path.join(ROOT, 'category-sitemap.xml'), 'w').write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     '\n'.join(f'<url><loc>{SITE}{x(v["path"])}</loc><lastmod>{TODAY}</lastmod></url>' for v in cats) + '\n</urlset>\n')
+import os as _os
+if _os.path.exists('/home/claude/tools/authors.json'):
+    AU = json.load(open('/home/claude/tools/authors.json'))
+    open(os.path.join(ROOT, 'author-sitemap.xml'), 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+        '\n'.join(f'<url><loc>{SITE}{x(p)}</loc><lastmod>{TODAY}</lastmod></url>' for p, n in sorted(AU.values()) if n >= 3) + '\n</urlset>\n')
 for name in ('sitemap_index.xml', 'sitemap.xml'):
     open(os.path.join(ROOT, name), 'w').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-        ''.join(f'<sitemap><loc>{SITE}/{s}</loc><lastmod>{TODAY}</lastmod></sitemap>\n' for s in ('page-sitemap.xml', 'post-sitemap.xml', 'category-sitemap.xml')) +
+        ''.join(f'<sitemap><loc>{SITE}/{s}</loc><lastmod>{TODAY}</lastmod></sitemap>\n' for s in ('page-sitemap.xml', 'post-sitemap.xml', 'category-sitemap.xml', 'author-sitemap.xml')) +
         '</sitemapindex>\n')
 # RSS
 items = []
