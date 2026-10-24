@@ -1,4 +1,4 @@
-# carlosdeory.com (Cloudflare Pages). Formato: origen destino codigo
+# carlosdeory.com (Cloudflare Pages). Formato: origen destino codigo. Estaticas primero, dinamicas al final.
 /contacto /#contact 301
 /contacto/ /#contact 301
 /contact /#contact 301
@@ -19,10 +19,7 @@
 /archivo/ /archive/ 301
 /destinations /destinos/ 301
 /destinations/ /destinos/ 301
-/wp-admin/* / 301
 /wp-login.php / 301
-
-# Archivos regenerados 24-oct-2026: paginas que ya no existen
 /cuba/page/2/ /cuba/ 301
 /category/lviv/ /destinos/ 301
 /malta/page/3/ /malta/ 301
@@ -109,8 +106,6 @@
 /filipinas/page/2/ /filipinas/ 301
 /australia/page/5/ /australia/ 301
 /australia/page/2/ /australia/ 301
-
-# Enlaces antiguos de WordPress (24-oct-2026)
 /category/madrid/ /madrid/ 301
 /category/vancouver/ /vancouver/ 301
 /category/costa-rica/ /costa-rica/ 301
@@ -125,10 +120,6 @@
 /feed /feed.xml 301
 /feed/ /feed.xml 301
 /comments/feed/ /feed.xml 301
-/:post/feed/ /:post/ 301
-/:post/embed/ /:post/ 301
-
-# Articulos que no se migraron: al articulo o destino mas cercano
 /10-cosas-que-hacer-en-londres-en-verano/ /londres/ 301
 /10-cosas-que-hacer-en-londres-gratis/ /londres/ 301
 /10-leyendas-de-dublin/ /dublin/ 301
@@ -292,3 +283,8 @@
 /visita-museos-en-la-ciudad-de-mexico/captura-de-pantalla-2019-05-27-a-las-14-45-47/ /visita-museos-en-la-ciudad-de-mexico/ 301
 /que-hacer-en-queretaro/45430638_276329022931576_910025730681356119_n/ /que-hacer-en-queretaro/ 301
 /castillo-de-edimburgo/castle-tour-3/ /castillo-de-edimburgo/ 301
+
+# Dinamicas
+/wp-admin/* / 301
+/:post/feed/ /:post/ 301
+/:post/embed/ /:post/ 301
