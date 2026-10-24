@@ -1,7 +1,7 @@
 {
   "name": "ReelRole",
   "short_name": "ReelRole",
-  "description": "Get hired through a short video. Free for talent; companies unlock candidates from €15.",
+  "description": "Get hired through a short video. Free for talent; companies unlock candidates from €5.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

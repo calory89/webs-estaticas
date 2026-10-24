@@ -33,6 +33,8 @@ const PAGES = {
 };
 // App screens: served normally but never indexed.
 const APP = /^\/(talent|company|admin|messages|auth|login|register|reset-password)(\/|$)/;
+// Invite links (/r/<code>) and sample reels (/v/preview-<slug>) are real app pages, never indexed.
+const NOINDEX_OK = /^\/(r\/[A-Za-z0-9_-]{2,32}|v\/preview-[a-z0-9-]{2,80})$/;
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const ld = (o) => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
@@ -95,6 +97,7 @@ export async function render(req, res, u, env, ctx) {
     if (page) return rewrite(res, { title: page[0], description: page[1], canonical: ORIGIN + (path === '/' ? '/' : path), robots: 'index, follow' });
 
     if (APP.test(path)) return rewrite(res, { robots: 'noindex, nofollow', canonical: null });
+    if (NOINDEX_OK.test(path)) return rewrite(res, { robots: 'noindex, follow', canonical: null });
 
     const jm = path.match(/^\/jobs\/([^/]+)$/);
     if (jm && UUID.test(jm[1])) {

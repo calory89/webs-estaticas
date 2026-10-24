@@ -1,13 +1,13 @@
 # ReelRole
 
-> ReelRole is a video-first hiring platform. Talent (including remote high-ticket sales closers) records a 30–90 second video instead of sending a CV. Companies browse video profiles for free and pay only to unlock contact details: €15 per unlock or €65/month for unlimited unlocks. Free for talent, always. Operated by Equinox Investment Group LLC.
+> ReelRole is a video-first hiring platform. Talent (including remote high-ticket sales closers) records a 30–90 second video instead of sending a CV. Companies browse video profiles for free and pay only to unlock contact details: €5 per unlock or €20/month for unlimited unlocks. Free for talent, always. Operated by Equinox Investment Group LLC.
 
 ## Key pages
 - [Home](https://reelrole.com/): what ReelRole is
 - [For Talent](https://reelrole.com/for-talent): how candidates create a video profile
 - [For Closers](https://reelrole.com/closers): remote high-ticket closer jobs and hiring closers by video
 - [For Companies](https://reelrole.com/for-companies): how companies find and unlock candidates
-- [Pricing](https://reelrole.com/pricing): Talent free · €15 per unlock · €65/month Premium
+- [Pricing](https://reelrole.com/pricing): Talent free · €5 per unlock · €20/month Premium
 - [Trending Talent](https://reelrole.com/trending): public video profiles
 - [Record a video](https://reelrole.com/guest-video-recording): start without an account
 - [Help](https://reelrole.com/help) · [Contact](https://reelrole.com/contact): hello@reelrole.com
