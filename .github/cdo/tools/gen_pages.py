@@ -4,6 +4,8 @@ Uso: python3 gen_pages.py <raiz>  (lee PAGES de pages_content.py)"""
 import os, re, sys, json, html
 sys.path.insert(0, '/home/claude/tools')
 from pages_content import PAGES
+from extra_pages import EXTRA
+PAGES = PAGES + EXTRA
 ROOT = sys.argv[1]
 SITE = 'https://www.carlosdeory.com'
 SRC = open(os.path.join(ROOT, 'growth/index.html')).read()
@@ -38,7 +40,7 @@ def page(p, lang, other):
             f'<meta property="og:image" content="{SITE}{og}">\n<meta property="og:locale" content="{"en_US" if lang == "en" else "es_ES"}">\n<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups">\n'
             '<link rel="preload" href="/assets/fonts/a972324267.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/dab710cf25.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/fonts/fonts.css?v=1">\n'
             + ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld) + STYLE +
-            '\n<link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="https://www.carlosdeory.com/feed.xml" />\n<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=2">\n</head>\n')
+            '\n<link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="https://www.carlosdeory.com/feed.xml" />\n<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=4">\n</head>\n')
     sec = t['section']  # 'speaking' o 'growth' para marcar el menu
     menu = ''.join(f'<li><a href="{hr}"{" aria-current=\"page\"" if (sec == "speaking" and k == 0) or (sec == "growth" and k == 1) else ""}>{e(n)}</a></li>' for k, (hr, n) in enumerate(NAV[lang]))
     langs = (f'<div class="lang" role="group" aria-label="Language"><a href="{(path if lang == "en" else alt) or "/"}" lang="en" class="lgbtn" aria-current="{"true" if lang == "en" else "false"}">EN</a>'
@@ -61,7 +63,7 @@ def page(p, lang, other):
     foot = ('<footer class="foot"><div class="wrap"><nav aria-label="Footer">' + ''.join(f'<a href="{hr}">{e(n)}</a>' for hr, n in FOOT[lang]) +
             '</nav>© 2026 Carlos de Ory · Equinox Investment Group LLC · <a href="https://x.com/mrstartups" rel="me noopener">@mrstartups</a></div></footer>\n'
             '<style>.lgbtn{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:32px;border-radius:100px;font:700 12px var(--mono,monospace);text-decoration:none;color:inherit}.lgbtn[aria-current="true"]{background:var(--ink,#141418);color:#fff}</style>\n'
-            '<script src="/assets/cdo/cdo-boost.js?v=7" defer></script>\n</body>\n</html>\n')
+            '<script src="/assets/cdo/cdo-boost.js?v=9" defer></script>\n</body>\n</html>\n')
     doc = head + header + f'<main id="main" class="wrap">\n{cr}\n{hero}\n{body}\n</main>\n' + foot
     fp = os.path.join(ROOT, path.strip('/'), 'index.html')
     os.makedirs(os.path.dirname(fp), exist_ok=True)

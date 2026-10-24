@@ -6,6 +6,7 @@ const KINDS: Record<string, string> = {
   talk: "Talk / Ponencia",
   agency: "Growth marketing",
   affiliate: "Affiliate income / Afiliación",
+  survey: "Encuesta de lectores",
   other: "Other / Otro",
 };
 
@@ -75,7 +76,7 @@ Deno.serve(async (req) => {
 
   // secuencia de bienvenida (drip) y aviso de episodios nuevos del libro: solo pg_cron con el secreto
   const qp = new URL(req.url).searchParams;
-  if (qp.get("drip") === "1" || qp.get("episodes") === "1") {
+  if (qp.get("drip") === "1" || qp.get("episodes") === "1" || qp.get("monthly") === "1") {
     if (!Deno.env.get("CDO_DIGEST_SECRET") || req.headers.get("x-cdo-digest") !== Deno.env.get("CDO_DIGEST_SECRET")) return json({ ok: false }, 401, h);
     const K = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, S = Deno.env.get("SUPABASE_URL")!;
     const rh = { apikey: K, Authorization: `Bearer ${K}`, "Content-Type": "application/json" };
@@ -107,6 +108,27 @@ Deno.serve(async (req) => {
         if (ok) { sent++; await fetch(`${S}/rest/v1/cdo_newsletter?email=eq.${encodeURIComponent(sub.email)}`, { method: "PATCH", headers: rh, body: JSON.stringify({ drip_step: step + 1, drip_last_at: new Date().toISOString() }) }); }
       }
       return json({ ok: true, sent }, 200, h);
+    }
+    // resumen mensual: articulos publicados en los ultimos 31 dias (sin episodios, que ya se envian solos)
+    if (qp.get("monthly") === "1") {
+      const feed = await (await fetch(`${SITE}/feed.xml?cb=${Date.now()}`)).text();
+      const since = Date.now() - 31 * 864e5;
+      const items = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1])
+        .filter((it) => !/<category>episod(ios|es)<\/category>/.test(it))
+        .map((it) => ({ t: ((it.match(/<title>([^<]+)<\/title>/) ?? [])[1] ?? "").replace(/&amp;/g, "&").replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"'), u: (it.match(/<link>([^<]+)<\/link>/) ?? [])[1], d: Date.parse((it.match(/<pubDate>([^<]+)<\/pubDate>/) ?? [])[1] ?? "") }))
+        .filter((x) => x.u && x.d >= since);
+      if (!items.length) return json({ ok: true, sent: 0, reason: "no new posts" }, 200, h);
+      const subs = await (await fetch(`${S}/rest/v1/cdo_newsletter?select=email,lang&unsubscribed_at=is.null&limit=5000`, { headers: rh })).json();
+      let n = 0;
+      for (const sub of subs) {
+        const es = sub.lang === "es", un = await unsubLink(sub.email);
+        const list = items.map((x) => `<li style="margin:0 0 10px"><a href="${x.u}">${esc(x.t)}</a></li>`).join("");
+        if (await send({ to: [sub.email], subject: es ? "Lo nuevo de este mes" : "New this month", html: shell(`<p>${es ? "Esto es lo que he publicado este mes:" : "This is what I published this month:"}</p><ul>${list}</ul><p>Carlos</p>`, ` · <a href="${un}" style="color:#888">${es ? "Darme de baja" : "Unsubscribe"}</a>`),
+          text: items.map((x) => `${x.t}: ${x.u}`).join("\n"), headers: { "List-Unsubscribe": `<${un}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" } })) n++;
+      }
+      const to = Deno.env.get("CDO_CONTACT_TO");
+      if (to) await send({ to: [to], subject: `[carlosdeory.com] Resumen mensual enviado a ${n} suscriptores`, html: shell(`<p>${items.length} artículos, ${n} envíos.</p>`), text: `${n}` });
+      return json({ ok: true, sent: n, posts: items.length }, 200, h);
     }
     // episodios nuevos del libro (feed RSS de la web)
     const feed = await (await fetch(`${SITE}/feed.xml?cb=${Date.now()}`)).text();
@@ -252,12 +274,16 @@ Deno.serve(async (req) => {
       body = es
         ? `<p>Hola ${first},</p><p>Gracias por contarme sobre ${company ? esc(company) : "tu empresa"}. He recibido tu mensaje y te contesto personalmente para proponerte una llamada.</p><p>En esa llamada miramos tus números, tu objetivo y cuánto te cuesta hoy un cliente. Si quieres adelantar, puedes probar la calculadora:</p>${btn(SITE + "/growth/#calc", "Calcular mi coste por cliente")}<p>Carlos</p>`
         : `<p>Hi ${first},</p><p>Thank you for telling me about ${company ? esc(company) : "your company"}. I have your message and I will answer personally to set up a call.</p><p>On that call we look at your numbers, your goal and what a customer costs you today. If you want a head start, try the calculator:</p>${btn(SITE + "/growth/#calc", "Work out my cost per customer")}<p>Carlos</p>`;
+    } else if (kind === "survey") {
+      body = es
+        ? `<p>Hola ${first},</p><p>Gracias por responder la encuesta. Leo todas las respuestas y con ellas decido qué escribo el próximo año.</p><p>Carlos</p>`
+        : `<p>Hi ${first},</p><p>Thank you for answering the survey. I read every answer and they decide what I write next year.</p><p>Carlos</p>`;
     } else {
       body = es
         ? `<p>Hola ${first},</p><p>Gracias por escribirme. He recibido tu mensaje y lo leo personalmente.</p><p>Carlos</p>`
         : `<p>Hi ${first},</p><p>Thank you for writing. I have your message and I read every one personally.</p><p>Carlos</p>`;
     }
-    const ok = await send({ to: [email], subject: es ? "He recibido tu mensaje" : "I have your message", html: shell(body), text: body.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim() });
+    const ok = await send({ to: [email], subject: kind === "survey" ? (es ? "Gracias por responder" : "Thank you for your answers") : (es ? "He recibido tu mensaje" : "I have your message"), html: shell(body), text: body.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim() });
     if (row?.id) await fetch(`${SB}/rest/v1/cdo_contact_messages?id=eq.${row.id}`, { method: "PATCH", headers: rest, body: JSON.stringify({ autoreplied: ok }) });
   }
   if (!row && !emailed) return json({ ok: false, error: "store" }, 502, h);

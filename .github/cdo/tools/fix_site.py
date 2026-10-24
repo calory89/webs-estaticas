@@ -12,7 +12,7 @@ CATP = {c: v['path'] for c, v in A['cat'].items()}
 CATN = {c: v['name'] for c, v in A['cat'].items()}
 CATCOUNT = {c: v['n'] for c, v in A['cat'].items()}
 REGIONS = {'europa', 'asia', 'america', 'africa', 'oceania'}
-NONTRAVEL = {'emprender', 'digital-nomad', 'puntos-y-millas', 'episodios', 'episodes', 'consejos', '1'}
+NONTRAVEL = {'growth-marketing', 'emprender', 'digital-nomad', 'puntos-y-millas', 'episodios', 'episodes', 'consejos', '1'}
 FEED = f'<link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="{SITE}/feed.xml" />'
 stats = collections.Counter()
 
@@ -154,6 +154,15 @@ def process(fp, rel):
     else:
         t = re.search(r'<h1[^>]*>(.*?)</h1>', h, re.S)
         h = alt_fill(h, html.unescape(re.sub('<[^>]+>', '', t.group(1))).strip() if t else 'Carlos de Ory')
+    # 12. pie: newsletter y growth marketing
+    if '<ul id="menu-pie" class="menu">' in h and 'menu-item-nl' not in h:
+        es_ = '<html lang="es' in h[:400]
+        add = (f'<li class="menu-item menu-item-nl"><a href="https://www.carlosdeory.com/{"newsletter" if es_ else "the-newsletter"}/">Newsletter</a></li> '
+               + ('<li class="menu-item menu-item-gm"><a href="https://www.carlosdeory.com/growth-marketing/">Growth marketing</a></li> ' if es_ else ''))
+        h = h.replace('<ul id="menu-pie" class="menu">', '<ul id="menu-pie" class="menu">' + add, 1)
+    # 11. biografia del autor en espanol en paginas en espanol
+    if '<html lang="es' in h[:400]:
+        h = h.replace('Founder since 2013. I write about travel, points and miles, and building companies from Sumba.', 'Fundador desde 2013. Escribo sobre viajes, puntos y millas, y sobre cómo monto empresas desde Sumba.')
     if h != o:
         open(fp, 'w').write(h); stats['files'] += 1
 

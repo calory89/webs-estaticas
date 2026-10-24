@@ -18,7 +18,7 @@ NAMES = {'pekin': 'Pekín', 'sidney': 'Sídney', 'camberra': 'Canberra', 'gold-c
  'estados-unidos': 'Estados Unidos', 'corea-del-sur': 'Corea del Sur', 'hong-kong': 'Hong Kong', 'espana': 'España',
  'sudafrica': 'Sudáfrica', 'peru': 'Perú', 'mexico': 'México', 'canada': 'Canadá', 'turquia': 'Turquía', 'rumania': 'Rumanía',
  'hungria': 'Hungría', 'belgica': 'Bélgica', 'america': 'América', 'africa': 'África', 'oceania': 'Oceanía'}
-NONTRAVEL = {'emprender', 'digital-nomad', 'puntos-y-millas', 'episodios', 'episodes', 'consejos', '1', 'sin-categoria'}
+NONTRAVEL = {'growth-marketing', 'emprender', 'digital-nomad', 'puntos-y-millas', 'episodios', 'episodes', 'consejos', '1', 'sin-categoria'}
 REGIONS = {'europa', 'asia', 'america', 'africa', 'oceania'}
 
 def cname(c):
@@ -143,6 +143,7 @@ def build(base, kind, slug, name, urls, desc, index, parent=None):
         head = re.sub(r'<meta property="og:url" content="[^"]*" />', f'<meta property="og:url" content="{SITE}{path}" />', head)
         head = re.sub(r'<link rel="alternate" type="application/rss\+xml"[^>]*>\s*', '', head)
         head = re.sub(r'<script type="application/ld\+json" class="yoast-schema-graph">.*?</script>', '', head, flags=re.S)
+        head = re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@graph": \[\{"@type": "CollectionPage".*?</script>\n?', '', head, flags=re.S)
         crumbs = [{'@type': 'ListItem', 'position': 1, 'name': 'Inicio', 'item': SITE + '/'}]
         if parent: crumbs.append({'@type': 'ListItem', 'position': 2, 'name': parent[1], 'item': SITE + parent[0]})
         crumbs.append({'@type': 'ListItem', 'position': len(crumbs) + 1, 'name': name, 'item': SITE + base})
@@ -184,7 +185,9 @@ for c, path in sorted(catpath.items()):
     if os.path.exists(fp):
         m = re.search(r'<meta name="description" content="([^"]*)"', open(fp, errors='ignore').read())
         old = html.unescape(m.group(1)) if m else ''
-    if c in NONTRAVEL and old:
+    if c == 'growth-marketing':
+        desc = f'Growth marketing explicado claro: coste por cliente, Google Ads, Meta Ads, SEO, landing pages y embudos. {len(urls)} artículos prácticos de Carlos de Ory.'
+    elif c in NONTRAVEL and old:
         desc = re.sub(r'\d[\d.]* artículos', f'{len(urls)} artículos', old)
     else:
         desc = f'Guías de viaje de {name}: qué ver, dónde comer, dónde dormir y trucos para ahorrar. {len(urls)} artículo{"s" if len(urls) != 1 else ""} para preparar tu viaje.'
