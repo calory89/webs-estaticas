@@ -12112,7 +12112,8 @@ ${socialPill(o.L)}<main>${o.body}</main>
 <div class="fine"><span>© 2026 Top3Hotels · ${BRAND.entity} (${BRAND.place})</span><span>${t.disclaimer}</span></div></footer>
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
-window.T3V=${json(M[o.L].voice)};${JS_MORE}<\/script><script>${JS_DP}<\/script></body></html>`;
+window.T3V=${json(M[o.L].voice)};${JS_MORE}
+${REPORT_JS}<\/script><script>${JS_DP}<\/script></body></html>`;
 }
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(body, {
 	status,
@@ -12182,6 +12183,58 @@ var NOTE = {
 		same: (c) => `Samme bygning eller adresse som vores ${c}-valg.`
 	}
 };
+var REP = {
+	en: {
+		ph: "What is wrong? (price, closed hotel, wrong photo…)",
+		mail: "Your email (optional, for a reply)",
+		send: "Send",
+		ok: "Thanks, we will review it.",
+		err: "Could not send. Please try again."
+	},
+	es: {
+		ph: "¿Qué está mal? (precio, hotel cerrado, foto equivocada…)",
+		mail: "Tu email (opcional, para responderte)",
+		send: "Enviar",
+		ok: "Gracias, lo revisaremos.",
+		err: "No se pudo enviar. Inténtalo de nuevo."
+	},
+	de: {
+		ph: "Was stimmt nicht? (Preis, Hotel geschlossen, falsches Foto…)",
+		mail: "Deine E-Mail (optional, für eine Antwort)",
+		send: "Senden",
+		ok: "Danke, wir prüfen es.",
+		err: "Senden fehlgeschlagen. Bitte erneut versuchen."
+	},
+	fr: {
+		ph: "Qu'est-ce qui ne va pas ? (prix, hôtel fermé, mauvaise photo…)",
+		mail: "Votre e-mail (facultatif, pour une réponse)",
+		send: "Envoyer",
+		ok: "Merci, nous allons vérifier.",
+		err: "Envoi impossible. Réessayez."
+	},
+	it: {
+		ph: "Cosa non va? (prezzo, hotel chiuso, foto sbagliata…)",
+		mail: "La tua email (facoltativa, per risponderti)",
+		send: "Invia",
+		ok: "Grazie, lo verificheremo.",
+		err: "Invio non riuscito. Riprova."
+	},
+	pt: {
+		ph: "O que está errado? (preço, hotel fechado, foto errada…)",
+		mail: "O seu email (opcional, para resposta)",
+		send: "Enviar",
+		ok: "Obrigado, vamos verificar.",
+		err: "Não foi possível enviar. Tente de novo."
+	},
+	da: {
+		ph: "Hvad er forkert? (pris, lukket hotel, forkert foto…)",
+		mail: "Din e-mail (valgfri, for svar)",
+		send: "Send",
+		ok: "Tak, vi kigger på det.",
+		err: "Kunne ikke sende. Prøv igen."
+	}
+};
+var REPORT_JS = `document.addEventListener('submit',function(e){var f=e.target;if(!f.dataset||!f.dataset.report)return;e.preventDefault();var m=f.querySelector('.repmsg'),b=f.querySelector('button');var d=JSON.parse(f.dataset.report);d.message=f.message.value.trim();d.email=f.email.value.trim()||null;b.disabled=true;fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_reports',{method:'POST',headers:{'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;m.textContent=m.dataset.ok;f.message.value='';try{t3track('report_sent',{city:d.city,category:d.category})}catch(_){}}).catch(function(){m.textContent=m.dataset.err;b.disabled=false})});`;
 var isHostel = (h) => /hostel|\bdorm|capsule|albergue|jugendherberge/i.test(`${h.name} ${h.booking?.url ?? ""}`);
 var addrKey = (a) => {
 	const first = (a ?? "").toLowerCase().split(",").find((x) => /\d/.test(x) && /[a-z\u00c0-\u024f]{3}/.test(x)) ?? "";
@@ -12189,7 +12242,7 @@ var addrKey = (a) => {
 	const num = (first.match(/\d+/) ?? [""])[0];
 	return street && num ? `${street}#${num}` : "";
 };
-var CSS_ALT = `.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
+var CSS_ALT = `.rep{margin:8px 0 0;font-size:13px}.rep summary{cursor:pointer;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.rep form{display:flex;flex-direction:column;gap:8px;margin-top:8px}.rep textarea,.rep input{font:inherit;font-size:16px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--paper);color:var(--ink)}.rep .btn{min-height:40px}.repmsg{margin:0;font-size:12.5px;color:var(--muted)}.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
 function card(h, city, i, L, sights, cityImg, review) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
@@ -12231,7 +12284,12 @@ ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}
 ${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
 ${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
 ${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
-<div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a><a class="report" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Correction: ${h.name} (${city.city})`)}">${esc(M[L].report)}</a></div>
+<div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a></div><details class="rep"><summary>${esc(M[L].report)}</summary><form data-report="${esc(JSON.stringify({
+		city: city.slug,
+		hotel: h.name,
+		category: k,
+		lang: L
+	}))}"><textarea name="message" required minlength="3" maxlength="2000" rows="3" aria-label="${esc(M[L].report)}" placeholder="${esc(REP[L].ph)}"></textarea><input name="email" type="email" maxlength="200" autocomplete="email" placeholder="${esc(REP[L].mail)}" aria-label="${esc(REP[L].mail)}"><button class="btn ghost" type="submit">${esc(REP[L].send)}</button><p class="repmsg" role="status" data-ok="${esc(REP[L].ok)}" data-err="${esc(REP[L].err)}"></p></form></details>
 ${h.evidence?.reasons?.length ? `<details><summary>${esc(t.why(label(h, L)))}</summary><ul>${h.evidence.reasons.slice(0, 4).map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>` : ""}
 </div></article>`;
 }
