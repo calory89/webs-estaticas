@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '26'
+V = '27'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -195,6 +195,168 @@ def legacy_clean(t):
     return t, total + nj + nj2
 
 
+# ---------- SEO y lectura de los posts antiguos (WordPress) ----------
+SITE = 'https://www.happylowcost.com'
+
+
+def _txt(h):
+    h = re.sub(r'<(script|style)\b.*?</\1>', ' ', h, flags=re.S)
+    h = _html.unescape(re.sub(r'<[^>]+>', ' ', h))
+    return re.sub(r'\s+', ' ', h).strip()
+
+
+def _cut(s, n=155):
+    s = s.strip()
+    if len(s) <= n:
+        return s
+    s = s[:n].rsplit(' ', 1)[0].rstrip(' ,.;:-')
+    return s + '…'
+
+
+def _vis(t, fn):
+    """Aplica fn solo al texto visible (fuera de script, style, head y atributos)."""
+    out, pos = [], 0
+    for m in re.finditer(r'<script\b.*?</script>|<style\b.*?</style>|<[^>]+>', t, flags=re.S):
+        out.append(fn(t[pos:m.start()]))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(fn(t[pos:]))
+    return ''.join(out)
+
+
+def _nodash(s):
+    s = re.sub(r'\s*—\s*(?=[A-Za-zÁÉÍÓÚÑáéíóúñ¿¡0-9])', ', ', s)
+    return s.replace('—', '-').replace('&mdash;', '-')
+
+
+_MD = re.compile(r'(<meta (?:name|property)="(?:description|og:description|twitter:description|og:title|twitter:title)" content=")([^"]*—[^"]*)(")')
+
+
+def dash_all(t):
+    t = _MD.sub(lambda m: m.group(1) + _nodash(m.group(2)) + m.group(3), t)
+    t = re.sub(r'(<title>)([^<]*—[^<]*)(</title>)', lambda m: m.group(1) + _nodash(m.group(2)) + m.group(3), t)
+    t = re.sub(r'(<script type="application/ld\+json">)(.*?)(</script>)', lambda m: m.group(1) + (_nodash(m.group(2)) if '—' in m.group(2) else m.group(2)) + m.group(3), t, flags=re.S)
+    b_ = t.find('<body')
+    return t[:b_] + _vis(t[b_:], _nodash) if b_ > 0 else t
+
+
+def legacy_seo(t):
+    if 'id="soledad_wrapper"' not in t:
+        return t
+    single = bool(re.search(r'<body[^>]*class="[^"]*\bsingle\b', t))
+    tm = re.search(r'<title>(.*?)</title>', t, re.S)
+    title = _html.unescape(tm.group(1)).strip() if tm else ''
+    short = re.sub(r'\s+[-–|·]\s+Happy Low Cost\s*$', '', title)
+    # título: Google ya añade el nombre del sitio; si es largo, fuera el sufijo
+    if tm and len(title) > 60 and short != title:
+        t = t[:tm.start(1)] + _html.escape(short, quote=False) + t[tm.end(1):]
+        t = re.sub(r'(<meta (?:property|name)="(?:og|twitter):title" content=")([^"]*?)\s+[-–|·]\s+Happy Low Cost(")', r'\1\2\3', t)
+    h1 = re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S)
+    name = _txt(h1.group(1)) if h1 else short
+    # descripción
+    if not re.search(r'<meta name=["\']description["\']', t):
+        og = re.search(r'<meta property="og:description" content="([^"]*)"', t)
+        desc = _html.unescape(og.group(1)) if og else ''
+        if len(desc) < 60:
+            ent = re.search(r'<div class="(?:inner-post-entry|post-entry|entry-content)[^>]*>(.*?)</div>', t, re.S)
+            body = _txt(ent.group(1)) if ent else ''
+            desc = (desc + ' ' + body).strip() if body else desc
+        desc = re.sub(r'^(Ver (Vuelos|Hotel(es)?|oferta)\s*:?\s*)', '', desc, flags=re.I)
+        desc = re.sub(r'\s+', ' ', desc).strip()
+        if len(desc) < 70:
+            cat = re.search(r'rel="category tag"><span[^>]*>([^<]+)<', t)
+            if single:
+                desc = f'{name}. ' + (desc + ' ' if desc else '') + 'En Happy Low Cost publicamos chollos de vuelos verificados cada día.'
+            else:
+                desc = f'{name}: chollos de vuelos, hoteles y guías de viaje de Happy Low Cost' + (f' sobre {cat.group(1).title()}' if cat else '') + '.'
+        desc = _cut(_nodash(desc))
+        desc = desc[:1].upper() + desc[1:]
+        if tm:
+            t = re.sub(r'(</title>)', lambda m: m.group(1) + '<meta name="description" content="' + _html.escape(desc) + '">', t, count=1)
+    # imágenes sociales con URL absoluta
+    t = re.sub(r'(<meta (?:property|name)="(?:og:image|twitter:image)" content=")/', r'\1' + SITE + '/', t)
+    # http → https
+    t = re.sub(r'(href|src)="http://(www\.)?happylowcost\.com', r'\1="https://www.happylowcost.com', t)
+    t = re.sub(r'src="http://', 'src="https://', t)
+    # imágenes con marcador SVG + data-src (lazy de la plantilla vieja): src real y lazy nativo, sin esperar al JS
+    def unlazy(m):
+        tag = m.group(0)
+        ds = re.search(r'\sdata-src="([^"]+)"', tag)
+        if not ds or not re.search(r'\ssrc="data:image/', tag):
+            return tag
+        tag = re.sub(r'\ssrc="data:image/[^"]*"', ' src="' + ds.group(1) + '"', tag)
+        tag = re.sub(r'\s(?:data-src|data-ll-status)="[^"]*"', '', tag)
+        tag = re.sub(r'\bpenci-lazy\b ?', '', tag)
+        if ' loading=' not in tag:
+            tag = tag[:4] + ' loading="lazy" decoding="async"' + tag[4:]
+        return tag
+    t = re.sub(r'<img\b[^>]*>', unlazy, t)
+    if single:
+        alt = _html.escape(name)
+        # foto principal: alt con el título y prioridad alta (es la imagen LCP)
+        def hero(m):
+            tag = m.group(0)
+            tag = re.sub(r'\salt=""', f' alt="{alt}"', tag) if ' alt=""' in tag else (tag if ' alt=' in tag else tag[:-1] + f' alt="{alt}">')
+            tag = re.sub(r'\sloading="lazy"', '', tag)
+            if 'fetchpriority' not in tag:
+                tag = tag[:-1].rstrip('/').rstrip() + ' fetchpriority="high">'
+            return tag
+        pm = re.search(r'<div class="post-image">', t)
+        if pm:
+            im = re.compile(r'<img\b[^>]*>').search(t, pm.end(), pm.end() + 1500)
+            if im:
+                t = t[:im.start()] + hero(im) + t[im.end():]
+        # imágenes del texto: diferidas y con alt
+        ent = re.search(r'<div class="inner-post-entry[^>]*>', t)
+        if ent:
+            head, rest = t[:ent.end()], t[ent.end():]
+            def lz(m):
+                tag = m.group(0)
+                if ' loading=' not in tag:
+                    tag = tag[:4] + ' loading="lazy" decoding="async"' + tag[4:]
+                if ' alt=""' in tag:
+                    tag = tag.replace(' alt=""', f' alt="{alt}"', 1)
+                elif ' alt=' not in tag:
+                    tag = tag[:4] + f' alt="{alt}"' + tag[4:]
+                return tag
+            rest = re.sub(r'<img\b[^>]*>', lz, rest)
+            # un solo h1 por página
+            rest = re.sub(r'<h1(\b[^>]*)>(.*?)</h1>', r'<h2\1>\2</h2>', rest, flags=re.S)
+            t = head + rest
+    return t
+
+
+def related_block(t):
+    """Al final de cada post antiguo: chollos de hoy al mismo destino (se rellenan en vivo) y enlaces a la guía."""
+    if 'id="soledad_wrapper"' not in t or not re.search(r'<body[^>]*class="[^"]*\bsingle\b', t):
+        return t
+    h = re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S)
+    title = _txt(h.group(1)) if h else ''
+    p = _dest_of(title)
+    links = []
+    if p:
+        if p['s'] in _GUIDES:
+            links.append(f'<a class="hlc-btn" href="/destinos/{p["s"]}/">Guía de {_html.escape(p["n"])}</a>')
+        links.append(f'<a class="hlc-btn o" href="/chollos/?q={_html.escape(_sl(p["n"]))}">Chollos a {_html.escape(p["n"])}</a>')
+    links.append('<a class="hlc-btn o" href="/chollos/">Todos los chollos de hoy</a>')
+    links.append('<a class="hlc-btn o" href="/alertas/">Crear alerta gratis</a>')
+    hd = f'Chollos de hoy a {_html.escape(p["n"])}' if p else 'Chollos verificados de hoy'
+    dest = f' data-dest="{_html.escape(p["s"])}" data-dest-c="{_html.escape(_sl(p.get("c", "")))}"' if p else ''
+    box = (f'<!--hlc-rel--><section class="hlc-rel" aria-label="{hd}"><h2 data-rel-h>{hd}</h2>'
+           f'<div class="dc-grid" data-hlc-deals data-max="4"{dest}></div><div class="hlc-row">{"".join(links)}</div></section><!--/hlc-rel-->')
+    m = re.search(r'<div class="inner-post-entry[^>]*>', t)
+    if not m:
+        return t
+    # cerrar al final de inner-post-entry (contando divs)
+    depth = 0
+    for x in re.finditer(r'<(/?)div\b[^>]*>', t[m.start():]):
+        depth += -1 if x.group(1) else 1
+        if depth == 0:
+            pos = m.start() + x.start()
+            return t[:pos] + box + t[pos:]
+    return t
+
+
 stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0, old=0, legacy=0)
 for f in files:
     stats['files'] += 1
@@ -202,6 +364,7 @@ for f in files:
     t = t0
     # limpiar inyecciones anteriores (idempotencia)
     t = strip_block(t, '<!--hlc-old-->', '<!--/hlc-old-->')
+    t = strip_block(t, '<!--hlc-rel-->', '<!--/hlc-rel-->')
     for a, b in (('<!--hlc-head-->', '<!--/hlc-head-->'), ('<!--hlc-tail-->', '<!--/hlc-tail-->'), ('<!--hlc-foot-->', '<!--/hlc-foot-->'), ('<!--hlc-header-->', '<!--/hlc-header-->'), ('<!--hlc-footer-->', '<!--/hlc-footer-->')):
         t = strip_block(t, a, b)
     t = re.sub(r'<link rel=["\'](?:icon|shortcut icon|apple-touch-icon)["\'][^>]*wp-content[^>]*>\s*', '', t)
@@ -232,6 +395,9 @@ for f in files:
     if t2 != t:
         stats['old'] += 1
     t = t2
+    t = related_block(legacy_seo(t))
+    if '—' in t and not re.search(r'[\u4e00-\u9fff]', t):
+        t = dash_all(t)
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
     if 'searchresults' in t:
         t = BK.fix_html(t)
@@ -245,9 +411,10 @@ en_pre = [EN_OF[ONLY]] if ONLY in EN_OF else (['en/'] if not ONLY else [])
 for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', 'en/*.html'], capture_output=True).stdout.decode().split('\0'):
     if f and os.path.exists(f) and any(f.startswith(p_) for p_ in en_pre):
         s0 = open(f, encoding='utf-8', errors='surrogateescape').read()
-        if 'searchresults' in s0:
-            s1 = BK.fix_html(s0)
-            if s1 != s0:
+        s1 = BK.fix_html(s0) if 'searchresults' in s0 else s0
+        if '—' in s1:
+            s1 = dash_all(s1)
+        if s1 != s0:
                 open(f, 'w', encoding='utf-8', errors='surrogateescape').write(s1); stats['bk_en'] = stats.get('bk_en', 0) + 1
 
 print(json.dumps(stats))

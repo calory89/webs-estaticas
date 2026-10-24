@@ -182,3 +182,11 @@ form.done>.af{display:none}
 
 a.chip{text-decoration:none!important;display:inline-flex;align-items:center}
 .rep{display:flex;flex-direction:column;gap:6px}.rep small{font:13px/1.4 Inter,sans-serif;color:#4A5468}
+.inner-post-entry,.inner-post-entry p,.inner-post-entry li{text-align:left!important;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.inner-post-entry img{max-width:100%;height:auto}
+.hlc-rel{margin:36px 0 8px;padding:22px 20px;border-radius:22px;background:#fff;border:1px solid var(--linea);box-shadow:var(--sh)}
+.hlc-rel h2{margin:0 0 16px!important;font-size:24px!important;line-height:1.2}
+.hlc-rel .dc-grid:empty{display:none}
+.hlc-rel .hlc-row{margin-top:16px}
+.hlc-rel a.dc{text-decoration:none}
+@media(max-width:640px){.inner-post-entry h2{font-size:24px!important}.hlc-rel{padding:18px 14px}}
