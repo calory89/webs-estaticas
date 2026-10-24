@@ -12143,7 +12143,51 @@ function altSearch(k, nightly, stars, city) {
 	u.searchParams.set("nflt", f);
 	return CJ_BOOKING(u.toString(), "t3alt");
 }
-var CSS_ALT = `.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
+var NOTE = {
+	en: {
+		past: (d) => `This price was seen for ${d}, a stay that has passed. Check today's price for your dates.`,
+		hostel: "Hostel-style property: check that you book a private room.",
+		same: (c) => `Same building or address as our ${c} pick.`
+	},
+	es: {
+		past: (d) => `Este precio se vio para ${d}, una estancia ya pasada. Consulta el precio de hoy para tus fechas.`,
+		hostel: "Alojamiento tipo albergue: comprueba que reservas habitación privada.",
+		same: (c) => `Mismo edificio o dirección que nuestra elección ${c}.`
+	},
+	de: {
+		past: (d) => `Dieser Preis galt für ${d}, ein vergangener Aufenthalt. Prüfe den heutigen Preis für deine Daten.`,
+		hostel: "Hostel-ähnliche Unterkunft: achte darauf, ein Privatzimmer zu buchen.",
+		same: (c) => `Gleiches Gebäude oder gleiche Adresse wie unsere Wahl ${c}.`
+	},
+	fr: {
+		past: (d) => `Ce prix a été relevé pour ${d}, un séjour déjà passé. Vérifiez le prix du jour pour vos dates.`,
+		hostel: "Établissement de type auberge : vérifiez que vous réservez une chambre privée.",
+		same: (c) => `Même bâtiment ou adresse que notre choix ${c}.`
+	},
+	it: {
+		past: (d) => `Questo prezzo è stato rilevato per ${d}, un soggiorno già passato. Controlla il prezzo di oggi per le tue date.`,
+		hostel: "Struttura tipo ostello: verifica di prenotare una camera privata.",
+		same: (c) => `Stesso edificio o indirizzo della nostra scelta ${c}.`
+	},
+	pt: {
+		past: (d) => `Este preço foi visto para ${d}, uma estadia já passada. Confirme o preço de hoje para as suas datas.`,
+		hostel: "Alojamento tipo hostel: confirme que reserva um quarto privado.",
+		same: (c) => `Mesmo edifício ou morada que a nossa escolha ${c}.`
+	},
+	da: {
+		past: (d) => `Prisen blev set for ${d}, et ophold der er overstået. Tjek dagens pris for dine datoer.`,
+		hostel: "Hostel-lignende sted: tjek at du booker et privat værelse.",
+		same: (c) => `Samme bygning eller adresse som vores ${c}-valg.`
+	}
+};
+var isHostel = (h) => /hostel|\bdorm|capsule|albergue|jugendherberge/i.test(`${h.name} ${h.booking?.url ?? ""}`);
+var addrKey = (a) => {
+	const first = (a ?? "").toLowerCase().split(",").find((x) => /\d/.test(x) && /[a-z\u00c0-\u024f]{3}/.test(x)) ?? "";
+	const street = first.replace(/\d[\s\S]*$/, "").replace(/[\s.\-\/]+/g, "") || first.replace(/[\d\s.\-\/]+/g, "");
+	const num = (first.match(/\d+/) ?? [""])[0];
+	return street && num ? `${street}#${num}` : "";
+};
+var CSS_ALT = `.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
 function card(h, city, i, L, sights, cityImg, review) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
@@ -12182,6 +12226,7 @@ ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
+${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
 ${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
 ${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
 <div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a><a class="report" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Correction: ${h.name} (${city.city})`)}">${esc(M[L].report)}</a></div>
@@ -12216,6 +12261,11 @@ async function cityPage(city, L) {
 	const hs = cd.hotels;
 	const [budget, value, lux] = hs;
 	if ((value.offer?.nightly ?? 0) > (lux.offer?.nightly ?? Infinity)) lux.deal = true;
+	hs.forEach((h, i) => {
+		const k = addrKey(h.address);
+		const j = k ? hs.findIndex((x, xi) => xi < i && addrKey(x.address) === k) : -1;
+		if (j >= 0) h.sameAs = label(hs[j], L);
+	});
 	const sights = cd.extras?.sights;
 	const hero = cd.extras?.hero;
 	const { bySlug, byCountry } = await data();
@@ -12247,7 +12297,7 @@ async function cityPage(city, L) {
 	];
 	const xt = X[L];
 	const updated = fmtDate(pageDate, L);
-	const areaBlock = `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(new Set(hs.map((h) => h.area)).size === 1 && hs[0].area ? xt.whereSame(hs[0].area) : xt.whereLead)}</p><div class="areas">${hs.map((h, i) => {
+	const areaBlock = new Set(hs.map((h) => h.area)).size === 1 && Boolean(hs[0].area) ? `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(xt.whereSame(hs[0].area))}</p><div class="areas"><div class="area"><h3>${esc(hs[0].area)}</h3>${hs.map((h, i) => `<p><b>${esc(label(h, L))}</b>: <a href="#${catKey(h)}">${esc(h.name)}</a>${walkText(h, sights, L) ? ` · ${esc(walkText(h, sights, L))}` : ""} · ${esc(bestFor(h, i, L, sights).join(", "))}</p>`).join("")}</div></div></section>` : `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(xt.whereLead)}</p><div class="areas">${hs.map((h, i) => {
 		const w = walkMinutes(h, sights);
 		const wt = walkText(h, sights, L);
 		return `<div class="area ${catKey(h)}"><p class="eyebrow">${esc(label(h, L))}</p><h3>${esc(h.area || city.city)}</h3><p><a href="#${catKey(h)}">${esc(h.name)}</a>${wt ? ` · ${esc(wt)}` : ""}</p><p style="margin-top:6px">${esc(xt.bestFor)}: ${esc(bestFor(h, i, L, sights).join(", "))}${w ? "" : ""}</p></div>`;
