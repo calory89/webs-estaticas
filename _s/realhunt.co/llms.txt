@@ -1,29 +1,37 @@
 # RealHunt
 
-> Independent AI analysis of real estate listings worldwide. Paste any property listing URL and get a 0-100 Global Score built from five forensic dimensions: ROI Potential, Market Stability, Demand Strength, Safety Score and Liquidity Outlook.
+> RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-RealHunt is not a broker and takes no commission on sales. Rankings carry no paid placement. Every published report is available at a public /r/:slug URL.
+Today: 506 homes in 18 countries. Updated 2026-10-24.
 
-## Pages
+## Key pages
 
-- [Home](/): Analyze any property listing URL and see the latest scored homes.
-- [Method](/method): Full public methodology — every dimension, weight, source and known limitation.
-- [Rankings](/rankings): Live global leaderboard of the highest-scoring analyzed properties.
-- [Discover](/discover): Feed of recently analyzed properties across all markets.
-- [Market directory](/market): Index of city and country market pages.
-- [Compare](/compare): Side-by-side comparison of up to four analyzed properties.
-- [Pricing](/pricing): Free, Pro and Agent plans.
-- [For agents](/for-agents): Branded client-ready reports and the Verified by RealHunt badge.
-- [Contact](/contact): How to reach the team.
+- [Best homes](https://realhunt.co/): all homes, best score first, with filters.
+- [How the score works](https://realhunt.co/method): the 11 sub-scores and what the grade means.
+- [New homes](https://realhunt.co/new) and [RSS](https://realhunt.co/feed.xml)
+- [Prices by country](https://realhunt.co/research/prices): median price and price per m² by country.
+- [Buying costs abroad](https://realhunt.co/costs)
+- [New builds Top 100](https://realhunt.co/top): Bali, Phuket, Tulum, Batumi, Koh Samui.
+- [Research and guides](https://realhunt.co/blog)
+- [Site map](https://realhunt.co/sitemap)
 
-## Examples
+## Countries
 
-- [Example report](/r/la-clinique-swiss): A full forensic report for a single listing.
-- [Best deals by country](/best-deals/spain): Country hub of top-scoring listings.
-- [City market page](/market/madrid): City-level scoring and price context.
-
-## Optional
-
-- [Privacy policy](/legal/privacy): How visitor and account data is handled.
-- [Terms](/legal/terms): Terms of service.
-- [Cookie policy](/legal/cookies): Cookie and tracking disclosure.
+- [Spain](https://realhunt.co/homes/spain): 161 homes
+- [Italy](https://realhunt.co/homes/italy): 52 homes
+- [Denmark](https://realhunt.co/homes/denmark): 45 homes
+- [Sweden](https://realhunt.co/homes/sweden): 36 homes
+- [France](https://realhunt.co/homes/france): 31 homes
+- [Poland](https://realhunt.co/homes/poland): 30 homes
+- [United States](https://realhunt.co/homes/united-states): 29 homes
+- [Japan](https://realhunt.co/homes/japan): 20 homes
+- [Germany](https://realhunt.co/homes/germany): 20 homes
+- [Netherlands](https://realhunt.co/homes/netherlands): 18 homes
+- [Greece](https://realhunt.co/homes/greece): 14 homes
+- [Mexico](https://realhunt.co/homes/mexico): 10 homes
+- [Switzerland](https://realhunt.co/homes/switzerland): 10 homes
+- [Canada](https://realhunt.co/homes/canada): 9 homes
+- [Bulgaria](https://realhunt.co/homes/bulgaria): 6 homes
+- [Dominican Republic](https://realhunt.co/homes/dominican-republic): 4 homes
+- [Cyprus](https://realhunt.co/homes/cyprus): 3 homes
+- [Portugal](https://realhunt.co/homes/portugal): 3 homes
