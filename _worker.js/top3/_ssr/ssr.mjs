@@ -11616,10 +11616,23 @@ async function cityData(id) {
 		tidyReasons(h);
 	}
 	for (const h of city.hotels ?? []) if (typeof h.name === "string") h.name = h.name.replace(/\s+FREE PARKING[\s\S]*$/i, "").trim();
+	for (const h of city.hotels ?? []) {
+		const fix = NAME_FIX[(h.gallery?.[0]?.source ?? "").replace(/^https?:\/\/[^/]+/, "")];
+		if (fix && !h.name) Object.assign(h, {
+			name: fix.name,
+			address: h.address || fix.address,
+			area: h.area || fix.area
+		});
+	}
 	city.extras = cx[id] ?? {};
 	city.slug = byId.get(id)?.slug ?? id;
 	return city;
 }
+var NAME_FIX = { "/hotel/us/resort-at-marina-village.html": {
+	name: "The Westin Cape Coral Resort at Marina Village",
+	address: "5951 Silver King Boulevard",
+	area: "Cape Harbour"
+} };
 /** Reasons were written at the first snapshot; rewrite numbers so they match what the card shows. */
 function tidyReasons(h) {
 	const ev = h.evidence;
