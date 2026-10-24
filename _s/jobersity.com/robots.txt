@@ -2,5 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /panel/
+Disallow: /cv/
+Disallow: /acceso
+Disallow: /login
 
 Sitemap: https://jobersity.com/sitemap.xml

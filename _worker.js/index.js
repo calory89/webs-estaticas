@@ -30,6 +30,7 @@ async function sbProxy(req, u) {
 }
 let top3 = null;
 let jm = null;
+let jb = null;
 let rr = null;
 const NOSPA = new Set(["grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 async function viaTop3(req, env, ctx) {
@@ -68,6 +69,14 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
+    // jobersity.com: 301 de URLs antiguas, HTML propio en cada /oferta/<id>, 404 reales y cabeceras (see jobersity.js).
+    if (host === 'jobersity.com' && req.method === 'GET') {
+      if (!jb) jb = await import('./jobersity.js');
+      const rd = await jb.redirect(u, env);
+      if (rd) return rd;
+      if (u.pathname.startsWith('/oferta/')) return jb.secure(u, await jb.render(req, await this.siteRaw(req, env, ctx, u, host), u, env, ctx));
+      return jb.secure(u, await jb.status(u, await this.siteRaw(req, env, ctx, u, host)));
+    }
     if (host === 'jurimatch.com' && req.method === 'GET' && u.pathname === '/sitemap.xml') { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
     const r = await this.siteRaw(req, env, ctx, u, host);
     // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).
