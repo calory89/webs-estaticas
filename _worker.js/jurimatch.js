@@ -194,6 +194,8 @@ function aliasTarget(path, m) {
 }
 
 export async function render(req, res, u, env, ctx) {
+  // One URL per page: "/pricing/" redirects to "/pricing" (canonical tags have no trailing slash).
+  if (u.pathname.length > 1 && u.pathname.endsWith('/')) return Response.redirect(ORIGIN + u.pathname.replace(/\/+$/, '') + u.search, 301);
   const ct = res.headers.get('content-type') || '';
   if (res.status !== 200 || !ct.includes('text/html')) return res;
   const m = await loadManifest(env, u);
