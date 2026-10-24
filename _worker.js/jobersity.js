@@ -184,7 +184,7 @@ export function secure(u, r) {
 }
 
 // Rutas que existen aunque no tengan HTML propio (las pinta la app en el navegador)
-const APP_ROUTES = /^\/(?:$|es$|en$|panel\/[^/]+$|cv\/[^/]+$|admin\/?$|acceso$|login$|oferta\/\d+$|empleo\/[a-z0-9-]+$|jobs\/[a-z0-9-]+$|bootcamp(?:\/.*)?$)/;
+const APP_ROUTES = /^\/(?:$|es$|en$|panel\/[^/]+$|cv\/[^/]+$|admin\/?$|acceso$|login$|guardadas$|saved$|oferta\/\d+$|empleo\/[a-z0-9-]+$|jobs\/[a-z0-9-]+$|bootcamp(?:\/.*)?$)/;
 
 // La app responde a cualquier URL con su HTML. Aquí: 404 de verdad para lo que no existe y noindex
 // para búsquedas libres sin página propia (/empleo/<algo> que no está en el catálogo).
