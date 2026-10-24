@@ -71,12 +71,15 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
-    // jobersity.com: 301 de URLs antiguas, HTML propio en cada /oferta/<id>, 404 reales y cabeceras (see jobersity.js).
+    // jobersity.com: 301, HTML propio en /oferta/<id> y /empresa|company/<slug>, sitemap de empresas, 404 reales y cabeceras (see jobersity.js).
     if (host === 'jobersity.com' && req.method === 'GET') {
       if (!jb) jb = await import('./jobersity.js');
       const rd = await jb.redirect(u, env);
       if (rd) return rd;
+      const sm = await jb.companiesSitemap(u, ctx);
+      if (sm) return sm;
       if (u.pathname.startsWith('/oferta/')) return jb.secure(u, await jb.render(req, await this.siteRaw(req, env, ctx, u, host), u, env, ctx));
+      if (/^\/(empresa|company)\//.test(u.pathname)) return jb.secure(u, await jb.company(req, await this.siteRaw(req, env, ctx, u, host), u, env, ctx));
       return jb.secure(u, await jb.status(u, await this.siteRaw(req, env, ctx, u, host)));
     }
     if (host === 'jurimatch.com' && req.method === 'GET' && /^\/(sitemap\.xml|login|signin|sign-in|firm-listing)\/?$/.test(u.pathname)) { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
