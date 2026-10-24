@@ -525,7 +525,7 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 <article class="card post-20076 post type-post status-publish format-standard has-post-thumbnail hentry category-episodes">
 
 			<div class="card-media">
-			<img width="720" height="450" src="/wp-content/uploads/2026/10/5-to-8-or-9-to-12-carlos-de-ory-720x450.jpg" class="attachment-ory-card size-ory-card wp-post-image" alt="Episode 2: 5 to 8 or 9 to 12, the Three Hours That Decide Your Life" decoding="async" />							<span class="chip on-photo">Episodes</span>
+			<img loading="lazy" width="720" height="450" src="/wp-content/uploads/2026/10/5-to-8-or-9-to-12-carlos-de-ory-720x450.jpg" class="attachment-ory-card size-ory-card wp-post-image" alt="Episode 2: 5 to 8 or 9 to 12, the Three Hours That Decide Your Life" decoding="async" />							<span class="chip on-photo">Episodes</span>
 					</div>
 	
 	<div class="card-body">
@@ -545,7 +545,7 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 <article class="card post-20055 post type-post status-publish format-standard has-post-thumbnail hentry category-episodios">
 
 			<div class="card-media">
-			<img width="720" height="450" src="/wp-content/uploads/2026/09/el-dia-que-dejas-de-esperar-carlos-de-ory-720x450.jpg" class="attachment-ory-card size-ory-card wp-post-image" alt="Episodio 1: El día que dejas de esperar" decoding="async" />							<span class="chip on-photo">Episodios</span>
+			<img loading="lazy" width="720" height="450" src="/wp-content/uploads/2026/09/el-dia-que-dejas-de-esperar-carlos-de-ory-720x450.jpg" class="attachment-ory-card size-ory-card wp-post-image" alt="Episodio 1: El día que dejas de esperar" decoding="async" />							<span class="chip on-photo">Episodios</span>
 					</div>
 	
 	<div class="card-body">
@@ -881,7 +881,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   }
   function lightbox() {
     if (D.querySelector('.ory-lb')) { return; }
-    var lb = el('div', 'ory-lb', '<img alt="Esta página se ha ido de viaje">'); B.appendChild(lb);
+    var lb = el('div', 'ory-lb', '<img decoding="async" loading="lazy" alt="Esta página se ha ido de viaje">'); B.appendChild(lb);
     lb.addEventListener('click', function () { lb.classList.remove('on'); });
     D.addEventListener('keydown', function (e) { if (e.key === 'Escape') { lb.classList.remove('on'); } });
     D.querySelectorAll('.entry img').forEach(function (i) {
