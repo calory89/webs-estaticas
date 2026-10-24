@@ -15,7 +15,7 @@ SITE = G.SITE
 OFFER_CATS = {'Ofertas de Vuelos', 'Ofertas de Hoteles', 'OTRAS OFERTAS'}
 OFFER_RX = re.compile(r'\d\s?€|€\s?\d|\bchollo|\bganga|por s[oó]lo|desde s[oó]lo|\bi/v\b|\bvuelos\b.*\bpor\b', re.I)
 # promociones de otros negocios (inversión, cursos, empleo): fuera del blog de viajes
-PROMO_RX = re.compile(r'trabajar con nosotros|abre un|open an|s[eé] due[ñn]o|aprende a programar|invierte|inversi[oó]n|compra (una )?casa|emprendedor|franquicia|\bsocios?\b|curso de|cursos de|real estate|school', re.I)
+PROMO_RX = re.compile(r'trabajar con nosotros|abre un|open an|s[eé] due[ñn]o|aprende a programar|invierte|inversi[oó]n|compra (una )?casa|emprendedor|franquicia|\bsocios?\b|curso de|cursos de|real estate|school|quieres (?:viajar por todo|ser director|trabajar)|trabajo garantizado|vente a trabajar|trabajar en bali|casa gratis|esto te interesa', re.I)
 MES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
 CAT_NAMES = {'GUÍAS CIUDADES': 'Guías de ciudades', 'TOP HOTELES': 'Hoteles', 'OTRAS OFERTAS': 'Otras ofertas'}
 
@@ -195,11 +195,106 @@ def search_pages():
             open('buscar/index.html', 'w', encoding='utf-8').write(pg)
 
 
+# ---------- enlazado interno: blog <-> guías de destino ----------
+import unicodedata as _ud
+
+
+def _sl(t):
+    t = _ud.normalize('NFD', t or '').encode('ascii', 'ignore').decode().lower()
+    return re.sub(r'[^a-z0-9]+', '-', t).strip('-')
+
+
+def _dest_of(title, dl):
+    t = '-' + _sl(title) + '-'
+    best = None
+    for p in dl:
+        for n in [p['s'], _sl(p['n'])] + list(p.get('a') or []):
+            if n and len(n) > 3 and f'-{n}-' in t and (best is None or len(n) > best[1]):
+                best = (p, len(n))
+    return best[0] if best else None
+
+
+def _strip(t, a, b):
+    return re.sub(re.escape(a) + '.*?' + re.escape(b), '', t, flags=re.S)
+
+
+def _li(p):
+    return f'<li><a href="/{p["s"]}/">{G.e(p["t"])}</a> <small>{fdate(p["d"])}</small></li>'
+
+
+def link_blocks(posts, arts):
+    dl = json.load(open('hlc/destinos.json', encoding='utf-8'))
+    dmap = {p['s']: _dest_of(p['t'], dl) for p in posts}
+    by_dest, by_cat = collections.defaultdict(list), collections.defaultdict(list)
+    for p in arts:
+        if dmap.get(p['s']):
+            by_dest[dmap[p['s']]['s']].append(p)
+        by_cat[p['c']].append(p)
+    n_post = n_dest = 0
+    for p in posts:
+        f = f'{p["s"]}/index.html'
+        t0 = open(f, encoding='utf-8', errors='surrogateescape').read()
+        t = _strip(t0, '<!--hlc-more-->', '<!--/hlc-more-->')
+        if p['promo']:
+            if t != t0:
+                open(f, 'w', encoding='utf-8', errors='surrogateescape').write(t)
+            continue
+        d = dmap.get(p['s'])
+        cand = [x for x in (by_dest.get(d['s'], []) if d else []) if x['s'] != p['s']][:4]
+        hd = f'Más artículos sobre {G.e(d["n"])}' if cand else 'Más artículos del blog'
+        if len(cand) < 4 and d:
+            # mismo país y luego misma región
+            for key in ('c', 'r'):
+                seen = {x['s'] for x in cand} | {p['s']}
+                more = [x for x in arts if x['s'] not in seen and dmap.get(x['s']) and dmap[x['s']].get(key) == d.get(key)]
+                if more and not cand:
+                    hd = f'Más artículos sobre {G.e(d["c"])}' if key == 'c' else 'Artículos de la zona'
+                cand += more[:4 - len(cand)]
+                if len(cand) >= 4:
+                    break
+        if len(cand) < 4 and not p['offer']:
+            seen = {x['s'] for x in cand} | {p['s']}
+            cand += [x for x in by_cat.get(p['c'], []) if x['s'] not in seen][:4 - len(cand)]
+        if cand:
+            box = (f'<!--hlc-more--><section class="hlc-more"><h2>{hd}</h2><ul>{"".join(_li(x) for x in cand)}</ul>'
+                   f'<p><a href="/blog/">Ver todos los artículos del blog</a></p></section><!--/hlc-more-->')
+            m = re.search(r'<div class="inner-post-entry[^>]*>', t)
+            if m:
+                depth = 0
+                for x in re.finditer(r'<(/?)div\b[^>]*>', t[m.start():]):
+                    depth += -1 if x.group(1) else 1
+                    if depth == 0:
+                        pos = m.start() + x.end()
+                        t = t[:pos] + box + t[pos:]
+                        n_post += 1
+                        break
+        if t != t0:
+            open(f, 'w', encoding='utf-8', errors='surrogateescape').write(t)
+    for s_, lst in by_dest.items():
+        f = f'destinos/{s_}/index.html'
+        if not os.path.isfile(f):
+            continue
+        t0 = open(f, encoding='utf-8', errors='surrogateescape').read()
+        t = _strip(t0, '<!--hlc-more-->', '<!--/hlc-more-->')
+        name = next((p['n'] for p in dl if p['s'] == s_), s_)
+        box = (f'<!--hlc-more--><section class="sec hlc-more" id="blog"><div class="wrap"><h2>Artículos sobre {G.e(name)}</h2><ul>{"".join(_li(x) for x in lst[:6])}</ul>'
+               f'<p><a href="/blog/">Ver todos los artículos del blog</a></p></div></section><!--/hlc-more-->')
+        i = t.rfind('</main>')
+        if i > 0:
+            t = t[:i] + box + t[i:]
+            n_dest += 1
+        if t != t0:
+            open(f, 'w', encoding='utf-8', errors='surrogateescape').write(t)
+    return n_post, n_dest
+
+
 def main():
     posts = legacy_posts()
     arts = blog_page(posts)
     es, en = search_index(posts)
     search_pages()
+    lk = link_blocks(posts, arts)
+    print('enlaces', lk)
     excl = [p['s'] for p in posts if p['promo']]
     print(json.dumps({'posts': len(posts), 'blog': len(arts), 'promo_fuera': len(excl), 'idx_es': {k: len(v) for k, v in es.items()}, 'idx_en': {k: len(v) for k, v in en.items()}}))
     return excl
