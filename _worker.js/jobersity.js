@@ -182,6 +182,7 @@ export function secure(u, r) {
   if (/^\/(panel|cv)\//.test(u.pathname)) { h.set('x-robots-tag', 'noindex, nofollow'); h.set('x-frame-options', 'DENY'); h.set('cache-control', 'no-store'); }
   else if (/^\/(admin|acceso|login)(\/|$)/.test(u.pathname)) h.set('x-robots-tag', 'noindex, nofollow');
   else if (/\.(js|css|woff2?)$/.test(u.pathname) && /^\/(assets|fonts)\//.test(u.pathname)) h.set('cache-control', 'public, max-age=31536000, immutable');
+  else if (/^\/(sitemap[\w-]*\.xml|salarios\.json|sueldos\.csv|fx\.json)$/.test(u.pathname)) { h.set('cache-control', 'public, max-age=3600'); if (!h.has('last-modified')) h.set('last-modified', new Date(Math.floor(Date.now() / 3600000) * 3600000).toUTCString()); }
   return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
 }
 
