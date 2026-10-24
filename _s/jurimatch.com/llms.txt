@@ -1,0 +1,63 @@
+# JuriMatch
+
+> Search engine for no-win-no-fee lawyers and litigation funders. 12,200 no-win-no-fee firms indexed in 180 countries, 204 hand-verified. JuriMatch is not a law firm and gives no legal advice.
+
+## Key pages
+- [How it works](https://jurimatch.com/how-it-works): search, see matched firms, contact them
+- [Pricing](https://jurimatch.com/pricing): free search; $65/month to unlock all matched firms
+- [Lawyers by case type and country](https://jurimatch.com/lawyers)
+- [How we verify firms](https://jurimatch.com/verification-policy): hand-verified vs indexed
+- [Glossary](https://jurimatch.com/glossary): contingency fee, CFA, DBA, cuota litis, litigation funding
+- [Open data](https://jurimatch.com/open-data): hand-verified firms as CSV (CC BY 4.0)
+- [Free tools](https://jurimatch.com/tools): limitation deadline checker, case value calculator
+
+## Claim guides
+- [Lost money to investment fraud? What to do first](https://jurimatch.com/claims/investment-fraud)
+- [Crypto scam recovery: first steps and how lawyers trace funds](https://jurimatch.com/claims/crypto-scam)
+- [Property and off-plan fraud: how to protect your claim](https://jurimatch.com/claims/property-fraud)
+- [Client won't pay? A guide to recovering unpaid invoices](https://jurimatch.com/claims/unpaid-invoices)
+- [When a business partner takes the money: your options](https://jurimatch.com/claims/business-partner-fraud)
+- [Romance and pig-butchering scams: what victims can do](https://jurimatch.com/claims/romance-scam)
+- [Insurance claim denied? How to challenge it](https://jurimatch.com/claims/insurance-claim-denied)
+- [Bad advice from a professional? Claiming for negligence](https://jurimatch.com/claims/professional-negligence)
+
+## Country guides
+- [No-win-no-fee claims in United States](https://jurimatch.com/guides/united-states)
+- [No-win-no-fee claims in United Kingdom](https://jurimatch.com/guides/united-kingdom)
+- [No-win-no-fee claims in Spain](https://jurimatch.com/guides/spain)
+- [No-win-no-fee claims in Germany](https://jurimatch.com/guides/germany)
+- [No-win-no-fee claims in France](https://jurimatch.com/guides/france)
+- [No-win-no-fee claims in Italy](https://jurimatch.com/guides/italy)
+- [No-win-no-fee claims in Portugal](https://jurimatch.com/guides/portugal)
+- [No-win-no-fee claims in Netherlands](https://jurimatch.com/guides/netherlands)
+- [No-win-no-fee claims in Ireland](https://jurimatch.com/guides/ireland)
+- [No-win-no-fee claims in Switzerland](https://jurimatch.com/guides/switzerland)
+- [No-win-no-fee claims in Belgium](https://jurimatch.com/guides/belgium)
+- [No-win-no-fee claims in Austria](https://jurimatch.com/guides/austria)
+- [No-win-no-fee claims in Luxembourg](https://jurimatch.com/guides/luxembourg)
+- [No-win-no-fee claims in Denmark](https://jurimatch.com/guides/denmark)
+- [No-win-no-fee claims in Sweden](https://jurimatch.com/guides/sweden)
+- [No-win-no-fee claims in Norway](https://jurimatch.com/guides/norway)
+- [No-win-no-fee claims in Finland](https://jurimatch.com/guides/finland)
+- [No-win-no-fee claims in Poland](https://jurimatch.com/guides/poland)
+- [No-win-no-fee claims in Greece](https://jurimatch.com/guides/greece)
+- [No-win-no-fee claims in Cyprus](https://jurimatch.com/guides/cyprus)
+- [No-win-no-fee claims in Malta](https://jurimatch.com/guides/malta)
+- [No-win-no-fee claims in Turkey](https://jurimatch.com/guides/turkey)
+- [No-win-no-fee claims in Canada](https://jurimatch.com/guides/canada)
+- [No-win-no-fee claims in Mexico](https://jurimatch.com/guides/mexico)
+- [No-win-no-fee claims in Brazil](https://jurimatch.com/guides/brazil)
+- [No-win-no-fee claims in Argentina](https://jurimatch.com/guides/argentina)
+- [No-win-no-fee claims in Colombia](https://jurimatch.com/guides/colombia)
+- [No-win-no-fee claims in Chile](https://jurimatch.com/guides/chile)
+- [No-win-no-fee claims in Panama](https://jurimatch.com/guides/panama)
+- [No-win-no-fee claims in United Arab Emirates](https://jurimatch.com/guides/united-arab-emirates)
+- [No-win-no-fee claims in Saudi Arabia](https://jurimatch.com/guides/saudi-arabia)
+- [No-win-no-fee claims in Israel](https://jurimatch.com/guides/israel)
+- [No-win-no-fee claims in Australia](https://jurimatch.com/guides/australia)
+- [No-win-no-fee claims in New Zealand](https://jurimatch.com/guides/new-zealand)
+- [No-win-no-fee claims in Singapore](https://jurimatch.com/guides/singapore)
+- [No-win-no-fee claims in Hong Kong](https://jurimatch.com/guides/hong-kong)
+- [No-win-no-fee claims in India](https://jurimatch.com/guides/india)
+- [No-win-no-fee claims in Malaysia](https://jurimatch.com/guides/malaysia)
+- [No-win-no-fee claims in South Africa](https://jurimatch.com/guides/south-africa)
