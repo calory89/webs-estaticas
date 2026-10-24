@@ -263,6 +263,11 @@ export async function render(req, res, u, env, ctx) {
   h.delete('content-length'); h.delete('etag');
   if (page.noindex) h.set('x-robots-tag', 'noindex'); else h.delete('x-robots-tag');
   h.set('content-language', lang);
+  // Security headers for every HTML page (no camera/mic/location use on the site; no framing by other sites).
+  h.set('strict-transport-security', 'max-age=31536000');
+  h.set('x-frame-options', 'SAMEORIGIN');
+  h.set('permissions-policy', 'camera=(), microphone=(), geolocation=(), usb=(), payment=(self "https://checkout.stripe.com")');
+  h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   const set = (attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
 
   return new HTMLRewriter()
