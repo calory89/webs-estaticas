@@ -158,3 +158,5 @@ form.done>.af{display:none}
 
 @media (min-width:861px){.hx .hx-burger,.hx .hx-bell{display:none!important}}
 .hlc-old-ssr{margin:18px 0 24px}
+
+.hlc-push{display:flex;flex-direction:column;gap:6px;margin-top:10px}.hlc-push .hlc-btn{min-height:44px;font-size:15px}.hlc-push small{font:13px/1.4 Inter,sans-serif;color:#4A5468}

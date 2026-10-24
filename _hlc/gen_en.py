@@ -86,7 +86,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=17" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=18" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -119,8 +119,8 @@ def card(x):
     oc = slugify(country(f, 'origen'))
     q = slugify(' '.join([o, d, f.get('origen', ''), f.get('destino', ''), country(f, 'origen'), country(f, 'destino')]))
     return (f'<a class="dc" href="/en/deals/{e(G.en_deal_slug(x))}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
-            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(G.ago_iso(x.get("approved_at")))}" data-q="{e(q)}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(x.get("approved_at") or ""))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
+            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(G.ago_iso(G.checked(x)))}" data-q="{e(q)}">'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(G.checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(d)}</span>{f"<span class=dc-cont>{ce} {e(cn.replace("the ", "").title() if cn.startswith("the ") else cn)}</span>" if cs else ""}</div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(country(f, "origen"))}">{flag(f.get("origen_cc"))}</span> {e(o)} → {e(d)}</div>'
             f'<div class="dc-m">{trip(f)} · {e(stops_en(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(date_en(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}{f'<small class="dc-loc">{e(G.local(x.get("price"), f.get("origen_cc"), True))}</small>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}</div></div></a>')
@@ -200,7 +200,7 @@ def main():
         ls_ = G.lib_slug(f)
         hero = f'/hlc/img/cities/{ls_}.jpg' if ls_ else (f'/chollos/{slug}/foto.jpg' if os.path.exists(f'chollos/{slug}/foto.jpg') else (x.get('image_url') or ''))
         og = f'{SITE}/chollos/{slug}/og.jpg'
-        verified = (x.get('approved_at') or '')[:16].replace('T', ' ')
+        verified = G.checked(x)[:16].replace('T', ' ')
         ch, cld = crumbs([('Home', '/en/'), ('Deals', '/en/deals/'), (f'{o} → {d}', None)])
         offer = {"@type": "Offer", "name": title, "url": url, "price": x.get('price'), "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validThrough": f.get('ida'),
                  "category": "Flight", "itemOffered": {"@type": "Flight", "name": f"{o} → {d}", "departureAirport": {"@type": "Airport", "iataCode": f.get('origen_iata'), "name": o},
@@ -215,7 +215,7 @@ def main():
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{G.photos_attr(ls_) if ls_ else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Deal verified on {e(date_en(verified))} at {e(verified[11:16])} (UTC) · <a href="/en/how-we-verify/" style="color:#FFC531;text-decoration:underline">how we check</a></div>
+<div class="kicker" style="color:#FFC531">✓ Price {"re-checked" if (x.get("facts") or {}).get("checked_at") else "verified"} on {e(date_en(verified))} at {e(verified[11:16])} (UTC) · <a href="/en/how-we-verify/" style="color:#FFC531;text-decoration:underline">how we check</a></div>
 <h1>{e(title)}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio_en">€{e(x.get('price'))} <small>{trip(f)}</small></a>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(G.local(x.get("price"), f.get("origen_cc"), True))} at today’s rate</span>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>

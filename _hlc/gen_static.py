@@ -113,6 +113,11 @@ g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody'
 </script></div></main></body></html>'''.replace('ANONKEY', ANON_KEY)
     os.makedirs('panel', exist_ok=True)
     open('panel/index.html', 'w', encoding='utf-8').write(ph)
+    pg = G.head(title='Sin conexión · Happy Low Cost', desc='Sin conexión.', canonical=f'{SITE}/offline/', robots='noindex, nofollow', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', body_class='offline')
+    pg += ('<main class="sec"><div class="wrap" style="max-width:640px;text-align:center"><h1 class="x-h1">Sin conexión</h1><p style="font-size:18px">No hay internet ahora mismo. '
+           'Los chollos que ya abriste siguen guardados en este móvil; vuelve a intentarlo en un momento para ver los de hoy.</p><p><a class="hlc-btn" href="/chollos/">Reintentar</a></p></div></main></body></html>')
+    os.makedirs('offline', exist_ok=True)
+    open('offline/index.html', 'w', encoding='utf-8').write(pg)
     print('static ok')
 
 

@@ -451,6 +451,12 @@ def stops_es(f):
     return 'directo' if n == 0 else (f'{n} escala' + ('s' if n and n > 1 else '') if isinstance(n, int) else 'con escalas')
 
 
+def checked(x):
+    """Última comprobación del precio: la revalidación diaria (facts.checked_at) o la publicación."""
+    a, c = x.get('approved_at') or '', (x.get('facts') or {}).get('checked_at') or ''
+    return max(a[:19], c[:19]) if c else a
+
+
 def card(x):
     f = x['facts']
     cs, cn, ce = cont_of(f)
@@ -458,8 +464,8 @@ def card(x):
     bg = f"background-image:url('{img}'),linear-gradient(135deg,#FF5A36,#2E6BF0)" if img else 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
     oc = slugify(f.get('origen_pais') or '')
     return (f'<a class="dc" href="/chollos/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
-            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(ago_iso(x.get("approved_at")))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(x.get("approved_at") or ""))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
+            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(ago_iso(checked(x)))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))}</div>'
             f'<div class="dc-m">{e(f.get("tipo", ""))} · {e(stops_es(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
@@ -649,7 +655,7 @@ def main():
         seo_t = f"Vuelos {f.get('origen')} → {f.get('destino')} por {x.get('price')} € ({f.get('tipo', '')}) · Chollo verificado"
         excerpt = x.get('excerpt') or f"Chollo de vuelo {f.get('origen')} - {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}, comprobado hoy."
         share_txt = quote(f"{title} {url}")
-        verified = x.get('approved_at', '')[:16].replace('T', ' ')
+        verified = checked(x)[:16].replace('T', ' ')
         cs, cn, ce = cont_of(f)
         oc = slugify(f.get('origen_pais') or '')
         dls = lib_slug(f)
@@ -672,7 +678,7 @@ def main():
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""} · <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></div>
+<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""} · <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></div>
 <h1>{e(title)}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(local(x.get("price"), f.get("origen_cc")))} al cambio de hoy</span>' if local(x.get("price"), f.get("origen_cc")) else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
@@ -703,6 +709,32 @@ def main():
 
     hub = hub_links(origins, conts, dests_with_deals)
     nconts = len({REAL_CONT.get(x['facts'].get('continente') or '') for x in deals} - {None, ''})
+    # ---------- chollos retirados (caducados o revalidados al alza): su página pasa a "caducado", noindex ----------
+    live = {x['slug'] for x in deals}
+    gone = 0
+    for d_ in os.listdir('chollos'):
+        p_ = os.path.join('chollos', d_, 'index.html')
+        if d_ in ('ver', 'desde', 'a') or d_ in live or not os.path.isfile(p_):
+            continue
+        old = open(p_, encoding='utf-8').read()
+        if 'data-expired' in old:
+            continue
+        m_ = re.search(r'<h1>(.*?)</h1>', old, re.S)
+        t_ = m_.group(1) if m_ else 'Este chollo'
+        mt = re.match(r'(.+?)-(\d+)-euros-', d_)
+        route = mt.group(1) if mt else ''
+        rlink = f'<a class="hlc-btn" href="/vuelos/{route}/">Precio de hoy en esta ruta</a>' if route and os.path.isdir(os.path.join('vuelos', route)) else ''
+        pg = head(title=f'{t_} · caducado · Happy Low Cost', desc='Este chollo ya no está disponible. Mira los chollos verificados de hoy.', canonical=f'{SITE}/chollos/{d_}/', robots='noindex, follow', og_image=f'{SITE}/hlc/brand/og-default.jpg', body_class='deal')
+        pg += (f'<main class="sec" data-expired style="padding-top:30px"><div class="wrap" style="max-width:760px"><div class="kicker">Chollo caducado</div><h1 class="x-h1">{t_}</h1>'
+               f'<p style="font-size:18px">Este precio ya no está disponible: o ha pasado la fecha o, al volver a comprobarlo, había subido. Los chollos vuelan, pero salen otros cada día.</p>'
+               f'<div style="display:flex;gap:10px;flex-wrap:wrap">{rlink}<a class="hlc-btn{" o" if rlink else ""}" href="/chollos/">Ver los chollos de hoy</a><a class="hlc-btn o" href="/alertas/">Crear alerta</a></div></div></main></body></html>')
+        open(p_, 'w', encoding='utf-8').write(pg)
+        for fn in ('og.jpg', 'foto.jpg', 'credito.txt'):
+            if os.path.exists(os.path.join('chollos', d_, fn)):
+                os.remove(os.path.join('chollos', d_, fn))
+        gone += 1
+    print('caducados', gone)
+
     # ---------- explorador /chollos/ ----------
     intro = (f"{len(deals)} chollos de vuelos activos ahora mismo, con salida desde {len(origins)} países y destinos en {nconts} continentes. "
              f"Cada precio se comprueba en Kiwi.com justo antes de publicarlo y mostramos la hora exacta de esa comprobación.")

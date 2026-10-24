@@ -130,9 +130,9 @@ document.documentElement.classList.add('hlc-js');
   var CONT={'Europa':['europa','🇪🇺','Europa'],'Asia':['asia','🌏','Asia'],'Oriente Medio':['oriente-medio','🕌','Oriente Medio'],'Norteamérica':['norteamerica','🗽','Norteamérica'],'Centroamérica y Caribe':['caribe','🏝️','Caribe'],'Sudamérica':['sudamerica','🌎','Sudamérica'],'África':['africa','🌍','África'],'Oceanía':['oceania','🦘','Oceanía']};
   function priceHtml(x){var f=x.facts||{};var l=loc(x.price,f.origen_cc);var lh=l?'<small class="dc-loc">'+esc(l)+'</small>':'';if(f.precio_normal&&f.precio_normal>x.price)return '<div class="dc-p"><s>'+esc(f.precio_normal)+' €</s>'+esc(x.price)+' €'+lh+'</div>';return '<div class="dc-p">'+esc(x.price)+' €'+lh+'</div>';}
   function card(x){
-    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;
+    var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;var ck=f.checked_at&&f.checked_at>x.approved_at?f.checked_at:x.approved_at;
     var save=f.ahorro_pct?'<span class="dc-save">−'+esc(f.ahorro_pct)+' %</span>':'';
-    return '<a class="dc" href="'+esc(dealUrl(x))+'" data-cont="'+(c?c[0]:'')+'" data-slug="'+esc(x.slug)+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)">'+save+'<span class="dc-ok">'+(fresh?'🔥 Nuevo':'✓ hace '+ago(x.approved_at))+'</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="'+esc(x.slug)+'">♡</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
+    return '<a class="dc" href="'+esc(dealUrl(x))+'" data-cont="'+(c?c[0]:'')+'" data-slug="'+esc(x.slug)+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)">'+save+'<span class="dc-ok">'+(fresh?'🔥 Nuevo':'✓ '+T('hace ','')+ago(ck)+T('',' ago'))+'</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="'+esc(x.slug)+'">♡</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
       '<div class="dc-b"><div><div class="dc-r"><span class="dc-flag">'+flag(f.origen_cc)+'</span> '+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+' · '+(f.escalas===0?'directo':(f.escalas>0?f.escalas+(f.escalas>1?' escalas':' escala'):'con escalas'))+(f.aerolinea?' · '+esc(f.aerolinea):'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div>'+priceHtml(x)+'</div></a>';
   }
   function renderDeals(){
@@ -322,9 +322,48 @@ document.documentElement.classList.add('hlc-js');
 
   function okStamps(){d.querySelectorAll('.dc[data-ts] [data-ok-ts]').forEach(function(el){var ts=el.closest('.dc').getAttribute('data-ts');if(!ts)return;var t=Date.parse(ts+(/Z|[+-]\d\d:?\d\d$/.test(ts)?'':'Z'));if(!t)return;var m=Math.max(1,Math.round((Date.now()-t)/6e4)),h=Math.round(m/60),dd=Math.round(h/24);var txt=m<60?(EN?m+' min ago':'hace '+m+' min'):h<48?(EN?h+' h ago':'hace '+h+' h'):(EN?dd+' days ago':'hace '+dd+' días');el.textContent=(EN?'✓ Verified ':'✓ Verificado ')+txt;el.title=new Date(t).toLocaleString(EN?'en-GB':'es-ES');});}
   function geoAirport(){try{if(ls('hlc_origin_auto')!=='1'||ls('hlc_geo'))return;ls('hlc_geo','1');var A=[["Madrid", "Madrid", 40.47, -3.56], ["Barcelona", "Barcelona", 41.3, 2.08], ["Málaga", "Málaga", 36.67, -4.5], ["Valencia", "Valencia", 39.49, -0.48], ["Sevilla", "Seville", 37.42, -5.89], ["Bilbao", "Bilbao", 43.3, -2.91], ["Alicante", "Alicante", 38.28, -0.56], ["Canarias", "Canarias", 28.05, -15.5], ["Palma", "Palma", 39.55, 2.74], ["Santiago", "Santiago", 42.9, -8.42], ["Zaragoza", "Zaragoza", 41.66, -1.04], ["Ibiza", "Ibiza", 38.87, 1.37], ["Lisboa", "Lisbon", 38.77, -9.13], ["Oporto", "Porto", 41.24, -8.68], ["Londres", "London", 51.47, -0.45], ["París", "Paris", 49.01, 2.55], ["Ámsterdam", "Amsterdam", 52.31, 4.76], ["Berlín", "Berlin", 52.36, 13.5], ["Roma", "Rome", 41.8, 12.25], ["Milán", "Milan", 45.63, 8.72], ["Dublín", "Dublin", 53.42, -6.27], ["Copenhague", "Copenhagen", 55.62, 12.65], ["Nueva York", "New York", 40.64, -73.78], ["Miami", "Miami", 25.79, -80.29], ["Los Ángeles", "Los Angeles", 33.94, -118.41], ["Toronto", "Toronto", 43.68, -79.63], ["Vancouver", "Vancouver", 49.19, -123.18], ["Ciudad de México", "Mexico City", 19.44, -99.07], ["Bogotá", "Bogotá", 4.7, -74.14], ["Buenos Aires", "Buenos Aires", -34.82, -58.54], ["Dubái", "Dubai", 25.25, 55.36], ["Singapur", "Singapore", 1.36, 103.99], ["Hong Kong", "Hong Kong", 22.31, 113.91], ["Seúl", "Seoul", 37.46, 126.44], ["Tokio", "Tokyo", 35.55, 139.78], ["Bangkok", "Bangkok", 13.69, 100.75], ["Sídney", "Sydney", -33.94, 151.18]];fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||g.lat==null)return;var opts=[].map.call(d.querySelectorAll('select[name=origin] option,select[data-map-origin] option'),function(o){return o.text;});var best=null,bd=1e9;A.forEach(function(a){var nm=EN?a[1]:a[0];if(opts.length&&opts.indexOf(nm)<0)return;var dl=(a[2]-g.lat)*Math.PI/180,dn=(a[3]-g.lon)*Math.PI/180;var h=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(g.lat*Math.PI/180)*Math.cos(a[2]*Math.PI/180)*Math.sin(dn/2)*Math.sin(dn/2);var km=12742*Math.asin(Math.sqrt(h));if(km<bd){bd=km;best=nm;}});if(!best||bd>450)return;ls('hlc_origin',best);d.querySelectorAll('select[name=origin],select[data-map-origin]').forEach(function(sel){for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===best){sel.selectedIndex=i;break;}});try{w.dispatchEvent(new CustomEvent('hlc:origin',{detail:best}));}catch(e){}renderDeals();track('origen_geo',best);}).catch(function(){});}catch(e){}}
+  function pushUI(){
+    var AP='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-alerts';
+    var ok=('serviceWorker' in navigator)&&('PushManager' in w)&&('Notification' in w);
+    if('serviceWorker' in navigator){try{navigator.serviceWorker.register('/sw.js').catch(function(){});}catch(e){}}
+    var forms=d.querySelectorAll('form[data-hlc-quick],form[data-hlc-alert]');if(!forms.length)return;
+    function b64(s){var p='='.repeat((4-s.length%4)%4),r=atob((s+p).replace(/-/g,'+').replace(/_/g,'/')),a=new Uint8Array(r.length);for(var i=0;i<r.length;i++)a[i]=r.charCodeAt(i);return a;}
+    forms.forEach(function(f){
+      if(f.querySelector('[data-hlc-push]'))return;
+      var box=d.createElement('div');box.className='hlc-push';
+      if(!ok){return;}
+      var already=ls('hlc_push')==='1'&&Notification.permission==='granted';
+      box.innerHTML='<button type="button" class="hlc-btn o" data-hlc-push>'+(already?T('🔔 Avisos activados en este navegador','🔔 Alerts on in this browser'):T('🔔 O avísame aquí, sin dar email','🔔 Or alert me here, no email needed'))+'</button><small data-push-msg role="status" aria-live="polite"></small>';
+      var anchor=f.querySelector('.qf-ok')||f.querySelector('[data-msg]');if(anchor&&anchor.parentNode)anchor.parentNode.insertBefore(box,anchor.nextSibling);else f.appendChild(box);
+      var btn=box.querySelector('button'),msg=box.querySelector('[data-push-msg]');
+      btn.addEventListener('click',function(){
+        var origins=[];var sel=f.querySelector('[name=origin]');if(sel)origins=[sel.value];
+        f.querySelectorAll('[data-chip][aria-pressed=true]').forEach(function(c){origins.push(c.getAttribute('data-v'));});
+        var pr=f.querySelector('[data-pick=price][aria-pressed=true]');
+        btn.disabled=true;msg.textContent=T('Pidiendo permiso…','Asking for permission…');
+        Notification.requestPermission().then(function(p){
+          if(p!=='granted')throw new Error(T('Has bloqueado las notificaciones. Puedes activarlas en los ajustes del navegador.','Notifications are blocked. You can allow them in your browser settings.'));
+          return navigator.serviceWorker.register('/sw.js').then(function(){return navigator.serviceWorker.ready;});
+        }).then(function(reg){
+          return fetch(AP+'?action=vapid').then(function(r){return r.json();}).then(function(k){
+            return reg.pushManager.getSubscription().then(function(s){return s||reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64(k.key)});});
+          });
+        }).then(function(sub){
+          var j=sub.toJSON();
+          return fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'subscribe',sub:j,origins:origins,max_price:pr?+pr.getAttribute('data-v'):null,lang:EN?'en':'es'})}).then(function(r){return r.json();}).then(function(x){
+            if(!x.ok)throw new Error(x.error||'error');
+            ls('hlc_push','1');if(origins[0])ls('hlc_origin',origins[0]);track('alerta_push',origins.join(','));
+            fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'test',endpoint:j.endpoint})}).catch(function(){});
+            btn.textContent=T('🔔 Avisos activados en este navegador','🔔 Alerts on in this browser');
+            msg.textContent=T('Listo: te llegará un aviso de prueba. Máximo uno al día, desde ','Done: a test alert is on its way. Max one a day, from ')+(origins.join(', ')||T('España','Spain'))+'.';
+          });
+        }).catch(function(e){msg.textContent=(e&&e.message)||T('No se ha podido activar.','Could not turn it on.');btn.disabled=false;});
+      });
+    });
+  }
   function lazyBg(){var l=d.querySelectorAll('[data-bg]');if(!l.length)return;var set=function(el){if(!el.getAttribute('data-bg'))return;el.style.backgroundImage='url('+el.getAttribute('data-bg')+')';el.removeAttribute('data-bg');};if(!('IntersectionObserver' in w)){l.forEach(set);return;}var o=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){set(en.target);o.unobserve(en.target);}});},{rootMargin:'300px'});l.forEach(function(el){o.observe(el);});}
   function init(){try{okStamps();}catch(e){}try{lazyBg();}catch(e){}
-    [bkLinks,langSwitch,quick,geoAirport,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
+    [bkLinks,langSwitch,quick,geoAirport,pushUI,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();
