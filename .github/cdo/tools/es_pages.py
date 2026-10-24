@@ -14,6 +14,8 @@ for en,es in PAIRS:
                     f'var D=document,lang="{lang}";')
         h=h.replace('D.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){lang=b.getAttribute("data-lang");try{localStorage.setItem("cdo-lang",lang);}catch(e){}apply();});});',
                     'D.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){var l=b.getAttribute("data-lang");if(l!==lang){try{localStorage.setItem("cdo-lang",l);}catch(e){}location.href="'+other+'"+location.hash;}});});')
+        h=h.replace('var D=document,lang="en";',f'var D=document,lang="{lang}";',1)
+        h=re.sub(r'location\.href="/[a-z]+/"\+location\.hash',f'location.href="{other}"+location.hash',h)
         return h
     def fix_head(h,lang,self_,other):
         h=re.sub(r'<link rel="alternate" hreflang="[^"]+" href="[^"]*">\s*','',h)
