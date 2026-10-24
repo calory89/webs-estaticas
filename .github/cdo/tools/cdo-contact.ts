@@ -51,6 +51,15 @@ async function send(p: { to: string[]; subject: string; html: string; text: stri
 function shell(body: string, foot = "") {
   return `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;margin:0 auto;color:#15151A;font-size:16px;line-height:1.6">${body}<p style="margin-top:28px;color:#888;font-size:12px;line-height:1.5">Carlos de Ory · Equinox Investment Group LLC · 30 N Gould St Ste N, Sheridan, WY 82801, USA${foot}</p></div>`;
 }
+const COURSE: [string, string, string][] = [
+  ["Lección 1 de 7: qué es el growth marketing (y qué no es)", "Empezamos por lo básico: growth marketing es una forma de trabajar con una sola pregunta en la cabeza, cuánto te cuesta conseguir un cliente y cómo bajarlo.", "/que-es-growth-marketing/"],
+  ["Lección 2 de 7: calcula tu coste por cliente", "Si no sabes cuánto pagas por cada cliente, no puedes decidir en qué canal invertir. Hoy lo calculas en cinco minutos.", "/como-calcular-coste-por-cliente/"],
+  ["Lección 3 de 7: cuánto puedes pagar por un cliente", "El coste por cliente solo tiene sentido al lado de lo que ese cliente te deja. Hoy comparamos los dos números.", "/cac-ltv-cuanto-pagar-por-un-cliente/"],
+  ["Lección 4 de 7: páginas que convierten", "La mayoría de anuncios no fallan por el anuncio, sino por la página a la que llevan. Lo que debe tener una página para convertir.", "/landing-pages-que-convierten/"],
+  ["Lección 5 de 7: responde en minutos, no en horas", "Un contacto que espera un día se enfría. Cómo responder rápido sin estar pegado al móvil.", "/responder-leads-en-minutos/"],
+  ["Lección 6 de 7: pruebas A/B sin estadístico", "Cómo probar cambios con poco tráfico y quedarte solo con lo que mejora los números.", "/pruebas-ab-sin-estadistico/"],
+  ["Lección 7 de 7: elige tu canal", "Última lección: cómo decidir dónde poner el dinero y el tiempo. Si quieres que lo miremos juntos para tu negocio, responde a este email.", "/como-elegir-canal-marketing/"],
+];
 function btn(href: string, label: string) {
   return `<p style="margin:22px 0"><a href="${href}" style="background:#C2452D;color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:10px;display:inline-block">${label}</a></p>`;
 }
@@ -59,6 +68,13 @@ async function sha(s: string) {
   return Array.from(new Uint8Array(b)).map((x) => x.toString(16).padStart(2, "0")).join("").slice(0, 32);
 }
 
+async function sendLesson(em: string, step: number) {
+  const [subj, txt, path] = COURSE[step];
+  const un = `${FN}?u=${encodeURIComponent(em)}&t=${await hmac(em)}`;
+  const extra = step === COURSE.length - 1 ? `<p>Y si prefieres hablarlo en una llamada, aquí tienes la agencia:</p>${btn(SITE + "/agencia/", "Ver cómo trabajamos")}` : `<p>Mañana, la lección ${step + 2}.</p>`;
+  return await send({ to: [em], subject: subj, html: shell(`<p>Hola,</p><p>${esc(txt)}</p>${btn(SITE + path + "?utm_source=curso&utm_medium=email", "Leer la lección")}${extra}<p>Carlos</p>`, ` · <a href="${un}" style="color:#888">Darme de baja</a>`),
+    text: `${txt}\n\n${SITE}${path}\n\nDarme de baja: ${un}`, headers: { "List-Unsubscribe": `<${un}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" } });
+}
 Deno.serve(async (req) => {
   const origin = req.headers.get("origin") ?? "";
   const h = cors(origin);
@@ -96,8 +112,13 @@ Deno.serve(async (req) => {
           ["The three hours that decide your life", "Episode 2 of the book: why 5 to 8 beats 9 to 12, and one action for tonight.", "/5-to-8-or-9-to-12/", "Read episode 2"],
           ["Five hours of sleep and three companies", "What a baby did to the way I work, and what I would tell any founder about time.", "/father-and-founder/", "Read the story"],
           ["If you want to work with me", "Besides writing, I give keynotes in English and Spanish and my team runs growth marketing for companies. If either fits, get in touch through the site.", "/speaking/", "See talks and agency"]]};
-      const subs = await (await fetch(`${S}/rest/v1/cdo_newsletter?select=email,lang,drip_step,created_at&unsubscribed_at=is.null&welcomed_at=not.is.null&drip_step=lt.5&limit=200`, { headers: rh })).json();
       let sent = 0;
+      const studs = await (await fetch(`${S}/rest/v1/cdo_newsletter?select=email,course_step,course_last_at&unsubscribed_at=is.null&course_step=gte.1&course_step=lt.${COURSE.length}&limit=300`, { headers: rh })).json();
+      for (const st of (Array.isArray(studs) ? studs : [])) {
+        if (Date.now() - new Date(st.course_last_at).getTime() < 20 * 3600e3) continue;
+        if (await sendLesson(st.email, st.course_step)) { sent++; await fetch(`${S}/rest/v1/cdo_newsletter?email=eq.${encodeURIComponent(st.email)}`, { method: "PATCH", headers: rh, body: JSON.stringify({ course_step: st.course_step + 1, course_last_at: new Date().toISOString() }) }); }
+      }
+      const subs = await (await fetch(`${S}/rest/v1/cdo_newsletter?select=email,lang,drip_step,created_at&unsubscribed_at=is.null&welcomed_at=not.is.null&drip_step=lt.5&or=(course_step.is.null,course_step.gte.${COURSE.length})&limit=200`, { headers: rh })).json();
       for (const sub of subs) {
         const step = Number(sub.drip_step || 0);
         if (Date.now() - new Date(sub.created_at).getTime() < DAYS[step] * 864e5) continue;
@@ -214,6 +235,16 @@ Deno.serve(async (req) => {
     });
     if (!r0.ok) return json({ ok: false, error: "store" }, 502, h);
     const created = await r0.json().catch(() => []);
+    if (clean(d.source, 120) === "curso:growth") {
+      const cur = await (await fetch(`${SB0}/rest/v1/cdo_newsletter?select=course_step&email=eq.${encodeURIComponent(em)}`, { headers: rest0 })).json().catch(() => []);
+      if (!cur[0] || cur[0].course_step == null) {
+        const okL = await sendLesson(em, 0);
+        if (okL) await fetch(`${SB0}/rest/v1/cdo_newsletter?email=eq.${encodeURIComponent(em)}`, { method: "PATCH", headers: rest0, body: JSON.stringify({ course_step: 1, course_last_at: new Date().toISOString(), welcomed_at: new Date().toISOString() }) });
+        const toC = Deno.env.get("CDO_CONTACT_TO");
+        if (toC) await send({ to: [toC], subject: `[carlosdeory.com] Alta en el curso de growth · ${em}`, html: shell(`<p>Nuevo alumno del curso de growth por email.</p><p><b>${esc(em)}</b></p>`), text: `Curso: ${em}` });
+      }
+      return json({ ok: true }, 200, h);
+    }
     if (Array.isArray(created) && created.length) {
       const es = d.lang === "es", pdf = `${SITE}/assets/cdo/million-mile-playbook-${es ? "es" : "en"}.pdf`;
       const gslug = (clean(d.source, 120).match(/^guide:([a-z0-9-]{2,40})$/) ?? [])[1];

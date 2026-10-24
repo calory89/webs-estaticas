@@ -92,8 +92,10 @@ def process(fp, rel):
     head_end = h.find('</head>')
     if head_end > 0:
         head = h[:head_end]
-        head2 = re.sub(r'<link rel="alternate" type="application/rss\+xml"[^>]*>\s*', '', head)
-        if FEED not in head2: head2 = head2.rstrip() + '\n' + FEED + '\n'
+        if head.count('application/rss+xml') == 1 and FEED in head: head2 = head
+        else:
+            head2 = re.sub(r'<link rel="alternate" type="application/rss\+xml"[^>]*>\s*', '', head)
+            if FEED not in head2: head2 = head2.rstrip() + '\n' + FEED + '\n'
         if head2 != head: h = head2 + h[head_end:]
     # 2. enlaces internos rotos y feeds
     h = fix_links(h)
@@ -159,6 +161,12 @@ def process(fp, rel):
         es_ = '<html lang="es' in h[:400]
         add = (f'<li class="menu-item menu-item-nl"><a href="https://www.carlosdeory.com/{"newsletter" if es_ else "the-newsletter"}/">Newsletter</a></li> '
                + ('<li class="menu-item menu-item-gm"><a href="https://www.carlosdeory.com/growth-marketing/">Growth marketing</a></li> ' if es_ else ''))
+        h = h.replace('<ul id="menu-pie" class="menu">', '<ul id="menu-pie" class="menu">' + add, 1)
+    # 13. pie: ahora y glosario
+    if '<ul id="menu-pie" class="menu">' in h and 'menu-item-now' not in h:
+        es_ = '<html lang="es' in h[:400]
+        add = (f'<li class="menu-item menu-item-now"><a href="https://www.carlosdeory.com/{"ahora" if es_ else "now"}/">{"Ahora" if es_ else "Now"}</a></li> '
+               f'<li class="menu-item menu-item-gl"><a href="https://www.carlosdeory.com/{"glosario-puntos-y-millas" if es_ else "points-and-miles-glossary"}/">{"Glosario de millas" if es_ else "Miles glossary"}</a></li> ')
         h = h.replace('<ul id="menu-pie" class="menu">', '<ul id="menu-pie" class="menu">' + add, 1)
     # 11. biografia del autor en espanol en paginas en espanol
     if '<html lang="es' in h[:400]:

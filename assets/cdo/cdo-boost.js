@@ -208,7 +208,8 @@
   D.querySelectorAll('.cdo-lead-box').forEach(function (box) {
     var f = box.querySelector('form'), pdf = box.getAttribute('data-pdf'), src = box.getAttribute('data-src');
     if (!f) { return; }
-    var dl = pdf ? '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the PDF' : 'Descargar el PDF') + '</a></div>' : '<p><b>' + (EN ? 'You are on the list.' : 'Ya estás en la lista.') + '</b></p>';
+    var okm = box.getAttribute('data-ok');
+    var dl = pdf ? '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the PDF' : 'Descargar el PDF') + '</a></div>' : '<p><b>' + (okm ? esc(okm) : (EN ? 'You are on the list.' : 'Ya estás en la lista.')) + '</b></p>';
     if (pdf && (ls('cdo-nl') === '1' || ls('ory-nl-done'))) { f.outerHTML = dl; return; }
     f.addEventListener('submit', function (e) {
       e.preventDefault();

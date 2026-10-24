@@ -35,6 +35,7 @@ for en,es in PAIRS:
         return m.group(1)+body+m.group(4)
     esh=re.sub(r'(<(\w+)\b[^>]*\bdata-k="([^"]+)"[^>]*>)(?:(?!<\2\b).)*?(</\2>)',rep,esh,flags=re.S)
     esh=re.sub(r'(<[^>]*\bdata-k="([^"]+)"[^>]*\bdata-ph[^>]*\bplaceholder=")[^"]*(")',lambda m:m.group(1)+html.escape(E.get(m.group(2),''))+m.group(3),esh)
+    esh=esh.replace('href="/press/"','href="/prensa/"')
     esh=re.sub(r'<html lang="[^"]*"','<html lang="es"',esh,count=1)
     esh=re.sub(r'<title>[^<]*</title>',f'<title>{html.escape(E["_title"])} · Carlos de Ory</title>',esh,count=1)
     for k in ('name="description"','property="og:description"'):
