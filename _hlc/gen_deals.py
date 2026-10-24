@@ -547,7 +547,7 @@ def filters_html(deals):
 <label class="xf-tg"><input type="checkbox" data-x="dir"> Solo directos</label>
 <label class="xf-tg"><input type="checkbox" data-x="rt"> Solo ida y vuelta</label>
 <label class="xf-tg"><input type="checkbox" data-x="fav"> ♥ Mis favoritos</label>
-<button type="button" class="hlc-btn o xf-clear" data-x-clear>Limpiar filtros</button>
+<button type="button" class="hlc-btn o xf-clear" data-x-clear>Limpiar filtros</button><button type="button" class="hlc-btn o" data-x-random>🎲 Sorpréndeme</button>
 </div>
 <div class="xf-count" aria-live="polite"><b data-x-count>{len(deals)}</b> chollos <button type="button" class="xf-tog" data-x-toggle aria-expanded="false">⚙️ Más filtros</button></div>
 </div>'''
@@ -569,7 +569,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
 <div class="dc-empty" data-x-empty hidden><b>Ningún chollo con esos filtros.</b><span>Prueba a quitar algún filtro o crea una alerta y te avisamos.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>
 {extra_links}
 {seo_html}
-</div></main>{'<script src="/hlc/explorer.js?v=3" defer></script>' if explorer else ''}</body></html>'''
+</div></main>{'<script src="/hlc/explorer.js?v=4" defer></script>' if explorer else ''}</body></html>'''
     os.makedirs(path, exist_ok=True)
     open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(page)
 
@@ -786,7 +786,7 @@ def main():
 
     # ---------- explorador /chollos/ ----------
     intro = (f"{len(deals)} chollos de vuelos activos ahora mismo, con salida desde {len(origins)} países y destinos en {nconts} continentes. "
-             f"Cada precio se comprueba en Kiwi.com justo antes de publicarlo y mostramos la hora exacta de esa comprobación.")
+             f"Cada precio se comprueba en Kiwi.com antes de publicarlo y otra vez cada día; si sube más de un 10 %, lo retiramos.")
     list_page('chollos', 'Chollos de vuelos de hoy en todo el mundo, verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
               f'{SITE}/chollos/', [('Inicio', '/'), ('Chollos', None)], extra_links=hub, explorer=True)
 

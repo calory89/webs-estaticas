@@ -58,6 +58,7 @@
   });
   box.addEventListener('click', function (e) {
     var b = e.target.closest('[data-cont]'); if (b) { st.cont = b.getAttribute('data-cont') || ''; paint(); apply(true); return; }
+    var rd = e.target.closest('[data-x-random]'); if (rd) { var vis = cards.filter(function (c) { return !c.hidden; }); if (vis.length) { var c = vis[Math.floor(Math.random() * vis.length)]; try { (w.dataLayer = w.dataLayer || []).push({ event: 'hlc_click', hlc_target: 'sorprendeme' }); } catch (er) {} location.href = c.getAttribute('href'); } return; }
     var tg = e.target.closest('[data-x-toggle]'); if (tg) { var o = box.classList.toggle('open'); tg.setAttribute('aria-expanded', o); tg.textContent = o ? (EN ? '✕ Fewer filters' : '✕ Menos filtros') : (EN ? '⚙️ More filters' : '⚙️ Más filtros'); return; }
     if (e.target.closest('[data-x-clear]')) { st = { q: '', desde: '', mes: '', orden: 'nuevo', cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); }
   });

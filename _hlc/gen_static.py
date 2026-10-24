@@ -26,8 +26,8 @@ ES_QA = [
     ('¿Cuánto tiene que bajar para ser un chollo?', 'Nuestro agente descarta todo lo que no esté al menos un 20 % por debajo del precio habitual, y en la web solo enseñamos los que bajan un 25 % o más.'),
     ('¿Publicáis vuelos solo de ida?', 'Casi nunca: publicamos ida y vuelta, salvo cuando es un error de tarifa claro.'),
     ('¿Qué pasa si el mismo vuelo ya estaba publicado?', 'Si ya teníamos esa ruta igual o más barata, el nuevo no se publica. Si el nuevo es más barato, sustituye al anterior.'),
-    ('¿Cuándo se comprobó cada chollo?', 'Cada chollo muestra la fecha y la hora exactas de la comprobación. Los precios de los vuelos cambian a menudo, a veces en horas: si al reservar ves otro precio, prueba fechas cercanas.'),
-    ('¿Cuándo desaparece un chollo?', 'Lo retiramos de la web cuando pasa su fecha de salida. Todavía no volvemos a comprobar cada precio a diario; por eso enseñamos siempre cuándo se comprobó.'),
+    ('¿Cuándo se comprobó cada chollo?', 'Cada chollo muestra la fecha y la hora exactas de la última comprobación. Los precios de los vuelos cambian a menudo, a veces en horas: si al reservar ves otro precio, prueba fechas cercanas.'),
+    ('¿Cuándo desaparece un chollo?', 'Volvemos a buscar cada chollo activo una vez al día, con la misma ruta y las mismas fechas. Si ya no aparece o ha subido más de un 10 %, lo retiramos y su página pasa a «caducado». También lo retiramos cuando pasa su fecha de salida.'),
     ('¿Por qué algunos precios aparecen en otra moneda?', 'Los precios se consultan en euros. Si sales de un país sin euro, añadimos el equivalente aproximado en tu moneda con el tipo de referencia del Banco Central Europeo del día. El precio final lo fija la web donde reserves.'),
     ('¿Ganáis dinero con los chollos?', 'Algunos enlaces son de afiliado: si reservas a través de ellos podemos recibir una pequeña comisión, sin coste extra para ti. Que un chollo tenga o no comisión no influye en si lo publicamos.'),
 ]
@@ -38,8 +38,8 @@ EN_QA = [
     ('How big does the drop have to be?', 'Our agent rejects anything that is not at least 20% below the usual price, and the website only shows deals that are 25% or more below it.'),
     ('Do you publish one-way flights?', 'Rarely: we publish return trips, except for clear error fares.'),
     ('What if the same flight was already published?', 'If we already had that route at the same price or cheaper, the new one is not published. If the new one is cheaper, it replaces the old one.'),
-    ('When was each deal checked?', 'Every deal shows the exact date and time of the check. Flight prices change often, sometimes within hours: if you see a different price when booking, try nearby dates.'),
-    ('When does a deal disappear?', 'We remove it from the site once its departure date has passed. We do not yet re-check every price daily, which is why we always show when it was checked.'),
+    ('When was each deal checked?', 'Every deal shows the exact date and time of the latest check. Flight prices change often, sometimes within hours: if you see a different price when booking, try nearby dates.'),
+    ('When does a deal disappear?', 'We search every live deal again once a day, same route and dates. If it is gone or has risen more than 10%, we pull it and its page is marked as expired. We also remove it once its departure date has passed.'),
     ('Why do some prices show another currency?', 'Prices are checked in euros. If you fly from a country without the euro, we add an approximate amount in your currency using the European Central Bank reference rate of the day. The final price is set by the site where you book.'),
     ('Do you make money from the deals?', 'Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Whether a deal pays a commission has no effect on whether we publish it.'),
 ]

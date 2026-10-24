@@ -173,7 +173,7 @@ def filters(deals):
 <label class="xf-tg"><input type="checkbox" data-x="dir"> Nonstop only</label>
 <label class="xf-tg"><input type="checkbox" data-x="rt"> Return only</label>
 <label class="xf-tg"><input type="checkbox" data-x="fav"> ♥ My favourites</label>
-<button type="button" class="hlc-btn o xf-clear" data-x-clear>Clear filters</button>
+<button type="button" class="hlc-btn o xf-clear" data-x-clear>Clear filters</button><button type="button" class="hlc-btn o" data-x-random>🎲 Surprise me</button>
 </div>
 <div class="xf-count" aria-live="polite"><b data-x-count>{len(deals)}</b> deals <button type="button" class="xf-tog" data-x-toggle aria-expanded="false">⚙️ More filters</button></div>
 </div>'''
@@ -269,7 +269,7 @@ def main():
     # ---------- explorer /en/deals/ and home /en/ ----------
     cheapest = min((x['price'] for x in deals), default=None)
     intro = (f"{len(deals)} flight deals live right now, departing from {len(origins)} countries to {nconts} continents. "
-             "We check every price on Kiwi.com right before publishing it and show exactly when.")
+             "We check every price on Kiwi.com before publishing it and again every day; if it rises more than 10%, we pull it.")
     grid = ''.join(card(x) for x in deals) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'
     empty = '<div class="dc-empty" data-x-empty hidden><b>No deals match those filters.</b><span>Try removing a filter.</span></div>'
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/deals/{G.en_deal_slug(x)}/", "name": x['en'].get('title', '')} for i, x in enumerate(deals[:50])]
@@ -281,7 +281,7 @@ def main():
 <div class="sec-h"><div><div class="kicker">Freshly hunted · verified</div><h1 class="x-h1">Today's flight deals</h1><p>{e(intro)}</p></div></div>
 {filters(deals)}
 <div class="dc-grid" data-explorer-grid>{grid}</div>{empty}
-</div></main><script src="/hlc/explorer.js?v=3" defer></script>{FOOTER}</body></html>'''
+</div></main><script src="/hlc/explorer.js?v=4" defer></script>{FOOTER}</body></html>'''
     write('en/deals', page)
 
     # ---------- ideas (EN) ----------
