@@ -179,3 +179,5 @@ form.done>.af{display:none}
 .howbook{background:#fff;border:1.5px solid var(--linea);border-radius:16px;padding:14px 18px;margin:0 0 20px;font-size:15px}.howbook ol{margin:8px 0 0 18px;padding:0}.howbook li{margin:4px 0}
 
 .dc-save~.dc-ok{top:46px!important;left:12px!important;right:auto!important}
+
+a.chip{text-decoration:none!important;display:inline-flex;align-items:center}
