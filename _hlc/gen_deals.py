@@ -446,6 +446,24 @@ def photo_url(x):
     return x.get('image_url') or ''
 
 
+def nights_of(f):
+    try:
+        return (datetime.date.fromisoformat(f['vuelta'][:10]) - datetime.date.fromisoformat(f['ida'][:10])).days
+    except Exception:
+        return ''
+
+
+def level_es(p):
+    return '' if not p else ('Excepcional' if p >= 50 else ('Muy bueno' if p >= 35 else 'Bueno'))
+
+
+def dates_es(f):
+    a, b = fecha(f.get('ida', '')), fecha(f.get('vuelta') or '')
+    if b and a and a.split()[-1] == b.split()[-1]:
+        a = ' '.join(a.split()[:2])
+    return f'{a} – {b}' if b else a
+
+
 def stops_es(f):
     n = f.get('escalas')
     return 'directo' if n == 0 else (f'{n} escala' + ('s' if n and n > 1 else '') if isinstance(n, int) else 'con escalas')
@@ -457,6 +475,11 @@ def checked(x):
     return max(a[:19], c[:19]) if c else a
 
 
+def route_cal_link(f):
+    slug_ = f"{slugify(f.get('origen') or '')}-{slugify(f.get('destino') or '')}"
+    return f'<a class="hlc-btn o" href="/vuelos/{slug_}/">📅 Precio de esta ruta mes a mes</a>' if os.path.isdir(os.path.join('vuelos', slug_)) else ''
+
+
 def card(x):
     f = x['facts']
     cs, cn, ce = cont_of(f)
@@ -464,11 +487,11 @@ def card(x):
     bg = f"background-image:url('{img}'),linear-gradient(135deg,#FF5A36,#2E6BF0)" if img else 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
     oc = slugify(f.get('origen_pais') or '')
     return (f'<a class="dc" href="/chollos/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
-            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(ago_iso(checked(x)))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
+            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-n="{nights_of(f)}" data-ts="{e(ago_iso(checked(x)))}" aria-label="{e(f.get("origen"))} a {e(f.get("destino"))}, {e(x.get("price"))} euros{(", antes " + e(f.get("precio_normal")) + " euros") if f.get("precio_normal") else ""}, {e(dates_es(f))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save title='{level_es(f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116)))}'>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} % · {level_es(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))}</div>'
-            f'<div class="dc-m">{e(f.get("tipo", ""))} · {e(stops_es(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
+            f'<div class="dc-m">{e(f.get("tipo", ""))} · {e(stops_es(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(dates_es(f))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
 
 
 def crumbs(items):
@@ -500,6 +523,12 @@ def filters_html(deals):
         if cs:
             conts.setdefault(cs, [cn, ce, 0])[2] += 1
     cchips = ''.join(f'<button type="button" class="chip" data-cont="{k}" aria-pressed="false">{v[1]} {e(v[0].replace("el Caribe y Centroamérica", "Caribe"))} <small>{v[2]}</small></button>' for k, v in sorted(conts.items(), key=lambda kv: -kv[1][2]))
+    ac = {}
+    for x in deals:
+        o_ = x['facts'].get('origen')
+        if o_:
+            ac[o_] = ac.get(o_, 0) + 1
+    aopts = ''.join(f'<option value="{slugify(k)}">{e(k)} ({v})</option>' for k, v in sorted(ac.items(), key=lambda kv: (-kv[1], kv[0])))
     months = sorted({(x['facts'].get('ida') or '')[:7] for x in deals if x['facts'].get('ida')})
     MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
     mopts = ''.join(f'<option value="{m}">{MES[int(m[5:7]) - 1]} {m[:4]}</option>' for m in months)
@@ -507,6 +536,8 @@ def filters_html(deals):
 <div class="xf-row">
 <label class="xf-search"><span aria-hidden="true">🔎</span><input type="search" data-x="q" placeholder="Busca un destino, ciudad o país" aria-label="Buscar chollos"></label>
 <label class="xf-sel"><span>Salida desde</span><select data-x="desde" aria-label="País de salida"><option value="">Todos los países</option>{opts}</select></label>
+<label class="xf-sel"><span>Aeropuerto</span><select data-x="aero" aria-label="Aeropuerto de salida"><option value="">Todos</option>{aopts}</select></label>
+<label class="xf-sel"><span>Duración</span><select data-x="dur" aria-label="Duración del viaje"><option value="">Cualquiera</option><option value="finde">Escapada (1-4 noches)</option><option value="semana">Una semana (5-9)</option><option value="largo">10 noches o más</option></select></label>
 <label class="xf-sel"><span>Mes</span><select data-x="mes" aria-label="Mes de salida"><option value="">Cualquier fecha</option>{mopts}</select></label>
 <label class="xf-sel"><span>Ordenar</span><select data-x="orden" aria-label="Ordenar"><option value="nuevo">Más recientes</option><option value="precio">Más baratos</option><option value="fecha">Salida más próxima</option></select></label>
 </div>
@@ -538,7 +569,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
 <div class="dc-empty" data-x-empty hidden><b>Ningún chollo con esos filtros.</b><span>Prueba a quitar algún filtro o crea una alerta y te avisamos.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>
 {extra_links}
 {seo_html}
-</div></main>{'<script src="/hlc/explorer.js?v=1" defer></script>' if explorer else ''}</body></html>'''
+</div></main>{'<script src="/hlc/explorer.js?v=3" defer></script>' if explorer else ''}</body></html>'''
     os.makedirs(path, exist_ok=True)
     open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(page)
 
@@ -672,6 +703,7 @@ def main():
         items = [('Inicio', '/'), ('Chollos', '/chollos/')]
         if oc:
             items.append((f"Desde {f.get('origen_pais')}", f'/chollos/desde/{oc}/'))
+            items.append((f"Desde {f.get('origen')}", f'/chollos/desde/{oc}/{slugify(f.get("origen") or "")}/'))
         items.append((f"{f.get('origen')} → {f.get('destino')}", None))
         ch, cld = crumbs(items)
         offer = {"@type": "Offer", "name": title, "url": url, "price": x.get('price'), "priceCurrency": "EUR", "availability": "https://schema.org/InStock",
@@ -694,7 +726,7 @@ def main():
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt">{x.get('body_html') or ''}
+<article class="txt"><div class="howbook"><b>Cómo reservarlo en 3 pasos</b><ol><li>Pulsa «Ver vuelo y fechas»: se abre la búsqueda con estas fechas.</li><li>Si el precio ha cambiado, prueba un día antes o después; suele haber fechas parecidas.</li><li>Antes de pagar, revisa qué equipaje incluye la tarifa.</li></ol></div>{x.get('body_html') or ''}
 {guide_block(x)}
 {f'<p>{guide_link}</p>' if guide_link else ''}
 <p class="credit">{e(cred)}</p></article>
@@ -707,7 +739,8 @@ def main():
 <a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo desde {e(f.get('precio'))} €</a>
 <a class="hlc-btn t" href="{e(BK.with_dates(x.get('cta_hotel', '#'), f.get('ida'), f.get('vuelta')))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel">🏨 Hoteles en {e(f.get('destino'))} en estas fechas</a>
 {guide_link}
-<div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Precio comprobado al publicar. Los vuelos baratos vuelan: si cambia, prueba fechas cercanas.</div>
+{route_cal_link(f)}<a class="hlc-btn o" href="/herramientas/equipaje/">🧳 ¿Cabe gratis tu maleta?</a>
+<div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Precio comprobado cada día. Los vuelos baratos vuelan: si cambia, prueba fechas cercanas.</div>
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Compartir</button><a class="hlc-btn o" href="https://wa.me/?text={share_txt}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copiar enlace</button></div>
 <a class="hlc-btn s" href="/alertas/?d={quote(f.get('destino', ''))}">🔔 Avísame de chollos a {e(f.get('destino'))}</a>
 </aside>
@@ -762,6 +795,7 @@ def main():
         pool = sorted(deals, key=lambda x: (0 if x['facts'].get('origen_cc') == 'ES' else 1, 0 if x['facts'].get('ahorro_pct') else 1, -(datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19]).timestamp())))
         top = pool[:6]
         ix = open('index.html', encoding='utf-8').read()
+        ix = re.sub(r'<!--ssr-count-->.*?<!--/ssr-count-->', f'<!--ssr-count-->{len(deals)} chollos activos ahora, desde {len(origins)} países. Precio comprobado cada día frente a lo que suele costar la ruta.<!--/ssr-count-->', ix, flags=re.S)
         if '<!--ssr-deals-->' in ix:
             ix = re.sub(r'<!--ssr-deals-->.*?<!--/ssr-deals-->', lambda m: '<!--ssr-deals-->' + (''.join(card(x) for x in top) or EMPTY) + '<!--/ssr-deals-->', ix, flags=re.S)
         def phone(x, cls, attr):

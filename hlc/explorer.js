@@ -8,20 +8,21 @@
   var empty = d.querySelector('[data-x-empty]'), count = d.querySelector('[data-x-count]');
   var $ = function (k) { return box.querySelector('[data-x="' + k + '"]'); };
   var favs = function () { try { return JSON.parse(localStorage.getItem('hlc_favs') || '[]'); } catch (e) { return []; } };
-  var st = { q: '', desde: '', mes: '', orden: 'nuevo', cont: '', max: 1500, dir: false, rt: false, fav: false };
+  var st = { q: '', desde: '', aero: '', dur: '', mes: '', orden: 'nuevo', cont: '', max: 1500, dir: false, rt: false, fav: false };
   var slug = function (s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); };
 
   // estado inicial desde la URL
   var u = new URLSearchParams(location.search);
-  ['q', 'desde', 'mes', 'orden', 'cont'].forEach(function (k) { if (u.get(k)) st[k] = u.get(k); });
+  ['q', 'desde', 'aero', 'dur', 'mes', 'orden', 'cont'].forEach(function (k) { if (u.get(k)) st[k] = u.get(k); });
   if (u.get('max')) st.max = +u.get('max') || 1500;
   ['dir', 'rt', 'fav'].forEach(function (k) { st[k] = u.get(k) === '1'; });
   // precio máximo según los chollos
   var maxP = Math.max.apply(null, cards.map(function (c) { return +c.dataset.price || 0; }).concat([100]));
   var rng = $('max'); if (rng) { rng.max = Math.ceil(maxP / 10) * 10; if (st.max > +rng.max) st.max = +rng.max; }
 
+  function durOk(n, d) { if (!n && n !== 0) return false; return d === 'finde' ? n >= 1 && n <= 4 : d === 'semana' ? n >= 5 && n <= 9 : d === 'largo' ? n >= 10 && n < 90 : true; }
   function paint() {
-    if ($('q')) $('q').value = st.q; if ($('desde')) $('desde').value = st.desde; if ($('mes')) $('mes').value = st.mes; if ($('orden')) $('orden').value = st.orden;
+    if ($('q')) $('q').value = st.q; if ($('desde')) $('desde').value = st.desde; if ($('aero')) $('aero').value = st.aero; if ($('dur')) $('dur').value = st.dur; if ($('mes')) $('mes').value = st.mes; if ($('orden')) $('orden').value = st.orden;
     if (rng) rng.value = st.max; var out = box.querySelector('[data-x-out="max"]'); if (out) out.textContent = (rng && st.max >= +rng.max) ? (EN ? 'no limit' : 'sin límite') : (EN ? '€' + st.max : st.max + ' €');
     ['dir', 'rt', 'fav'].forEach(function (k) { if ($(k)) $(k).checked = st[k]; });
     box.querySelectorAll('[data-cont]').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-cont') || '') === st.cont); });
@@ -29,7 +30,7 @@
   function apply(push) {
     var f = favs(), q = slug(st.q), lim = rng && st.max >= +rng.max ? Infinity : st.max, n = 0;
     cards.forEach(function (c) {
-      var ok = (!q || (c.dataset.q || '').indexOf(q) >= 0) && (!st.desde || c.dataset.oc === st.desde) && (!st.mes || (c.dataset.ida || '').slice(0, 7) === st.mes) &&
+      var ok = (!q || (c.dataset.q || '').indexOf(q) >= 0) && (!st.desde || c.dataset.oc === st.desde) && (!st.aero || slug(c.dataset.orig) === st.aero) && (!st.dur || durOk(+c.dataset.n, st.dur)) && (!st.mes || (c.dataset.ida || '').slice(0, 7) === st.mes) &&
         (!st.cont || c.dataset.cont === st.cont) && (+c.dataset.price <= lim) && (!st.dir || c.dataset.dir === '1') && (!st.rt || c.dataset.tipo === 'rt') && (!st.fav || f.indexOf(c.dataset.slug) >= 0);
       c.hidden = !ok; if (ok) n++;
     });
@@ -41,7 +42,7 @@
     if (empty) empty.hidden = n > 0;
     if (push) {
       var p = new URLSearchParams();
-      ['q', 'desde', 'mes', 'cont'].forEach(function (k) { if (st[k]) p.set(k, st[k]); });
+      ['q', 'desde', 'aero', 'dur', 'mes', 'cont'].forEach(function (k) { if (st[k]) p.set(k, st[k]); });
       if (st.orden !== 'nuevo') p.set('orden', st.orden);
       if (rng && st.max < +rng.max) p.set('max', st.max);
       ['dir', 'rt', 'fav'].forEach(function (k) { if (st[k]) p.set(k, '1'); });

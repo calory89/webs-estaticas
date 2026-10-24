@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '21'
+V = '22'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -154,9 +154,36 @@ LEGACY = [r'<div class="penci-header-wrap"', r'<nav id="sidebar-nav"', r'<div cl
           r'<aside id="block-\d+"', r'<div class="penci-single-link-pages"', r'<div class="post-pagination\b', r'<div class="tags-share-box\b']
 
 
+_EMO = re.compile('[\u203c\u2049\u2757\u2755\u2753\u2754\u2728\u2b50\u2708\ufe0f\u2600-\u27bf\U0001F1E6-\U0001F1FF\U0001F300-\U0001FAFF\u200b-\u200f\u202a-\u202e]+')
+
+
+def tidy_title(t):
+    """'‼CHOLLO‼ Vuelos a ISLAS MALDIVAS por solo 299€ I/V 😍' -> 'Chollo: vuelos a Islas Maldivas por solo 299€ I/V'"""
+    t0 = t
+    t = _EMO.sub(' ', t)
+    t = re.sub(r'!{2,}', '', t)
+    def cap(m):
+        w = m.group(0)
+        return w if len(w) < 3 or w in ('I/V', 'EEUU', 'USA', 'NYC', 'UK', 'VIP', 'TV', 'BBQ') else w[0] + w[1:].lower()
+    t = re.sub(r"\b[A-ZÁÉÍÓÚÑÜ]{3,}\b", cap, t)
+    t = re.sub(r'\s{2,}', ' ', t).strip(' -–·')
+    t = re.sub(r'^(Chollo|Chollazo|Ganga|Wow|Planazo|De lujo|Correee|Cuba linda)\s+(?![:-])', r'\1: ', t, flags=re.I)
+    return t or t0
+
+
+def _fix_titles(t):
+    t = re.sub(r'(<title>)(.*?)(</title>)', lambda m: m.group(1) + tidy_title(m.group(2)) + m.group(3), t, count=1, flags=re.S)
+    t = re.sub(r'(<h1 class="post-title[^"]*"[^>]*>)(.*?)(</h1>)', lambda m: m.group(1) + tidy_title(m.group(2)) + m.group(3), t, count=1, flags=re.S)
+    t = re.sub(r'(<meta (?:property|name)="(?:og|twitter):title" content=")([^"]*)(")', lambda m: m.group(1) + tidy_title(m.group(2)) + m.group(3), t)
+    return t
+
+
 def legacy_clean(t):
     if 'id="soledad_wrapper"' not in t:
         return t, 0
+    t = _fix_titles(t)
+    t = re.sub(r'<a [^>]*href="(?:https://www\.happylowcost\.com)?/tag/[^"]*"[^>]*>(.*?)</a>', r'\1', t, flags=re.S)
+    t = re.sub(r'<link[^>]+(?:/feed/|/feed/atom/|wp-json|xmlrpc\.php|wlwmanifest|EditURI|rsd\+xml)[^>]*>\s*', '', t)
     total = 0
     for rx in LEGACY:
         t, n = _drop(t, rx)

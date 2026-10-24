@@ -129,7 +129,7 @@ home += f"""
 </div></section>
 
 <section class="sec h2-sec" id="hoy"><div class="wrap">
-<div class="h2-h"><h2>Así son los chollos de hoy</h2><p>Precio habitual de la ruta frente al precio que hemos cazado. Comprobado en el momento.</p></div>
+<div class="h2-h"><h2>Así son los chollos de hoy</h2><p><!--ssr-count-->Precio habitual de la ruta frente al precio que hemos cazado.<!--/ssr-count--></p></div>
 <div class="dc-grid h2-deals" id="hoy-grid" data-hlc-deals data-filter data-max="6" data-savings><!--ssr-deals--><div class="dc-empty"><b>Cargando chollos…</b></div><!--/ssr-deals--></div>
 <div class="h2-more"><a class="hlc-btn o" href="/chollos/">Ver todos los chollos y filtrar</a></div>
 <div class="h2-h" style="margin-top:34px"><h2>Ideas para viajar barato</h2></div>

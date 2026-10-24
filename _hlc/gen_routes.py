@@ -75,6 +75,8 @@ def page(r, lang, others):
                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
+    gpath = f"en/destinations/{G.en_dest_slug(ds)}" if en else f"destinos/{ds}"
+    guide_btn = f'<a class="hlc-btn o" href="/{gpath}/">📖 {L("Guía de", "Guide to")} {e(dest)}</a>' if os.path.isfile(os.path.join(gpath, 'index.html')) else ''
     out = h + f'''<main>
 <section class="deal-hero" style="background-image:url({hero})"{G.photos_attr(ds)}><div class="wrap">
 <div class="kicker" style="color:#FFC531">{L("✓ Precios reales consultados el", "✓ Real prices checked on")} {e(f.get("consultado", ""))}</div>
@@ -93,7 +95,7 @@ def page(r, lang, others):
 <a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos desde", "Flights from")} {e(f.get("precio_desde_ida_y_vuelta_eur"))} €</a>
 <a class="hlc-btn t" href="{e(G.BK.with_dates(hotel_link(r["dest"], en), f.get("ejemplo_ida"), f.get("ejemplo_vuelta")))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_hotel">🏨 {L("Hoteles en", "Hotels in")} {e(dest)}</a>
 {"" if en else f'<a class="hlc-btn s" href="/alertas/?d={quote(r["dest"])}">🔔 Avísame si baja de precio</a>'}
-<a class="hlc-btn o" href="{"/en/destinations/" if en else "/destinos/"}{e(ds)}/">📖 {L("Guía de", "Guide to")} {e(dest)}</a>
+{guide_btn}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(when)}</div>
 </aside>
 </div>

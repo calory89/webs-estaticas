@@ -86,7 +86,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=21" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=22" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -104,6 +104,17 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     return h
 
 
+def dates_en(f):
+    a, b = date_en(f.get('ida', '')), date_en(f.get('vuelta') or '')
+    if b and a and a.split()[-1] == b.split()[-1]:
+        a = ' '.join(a.split()[:2])
+    return f'{a} – {b}' if b else a
+
+
+def level_en(p):
+    return '' if not p else ('Exceptional' if p >= 50 else ('Very good' if p >= 35 else 'Good'))
+
+
 def stops_en(f):
     n = f.get('escalas')
     return 'nonstop' if n == 0 else (f'{n} stop' + ('s' if n and n > 1 else '') if isinstance(n, int) else 'with stops')
@@ -119,11 +130,11 @@ def card(x):
     oc = slugify(country(f, 'origen'))
     q = slugify(' '.join([o, d, f.get('origen', ''), f.get('destino', ''), country(f, 'origen'), country(f, 'destino')]))
     return (f'<a class="dc" href="/en/deals/{e(G.en_deal_slug(x))}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
-            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(G.ago_iso(G.checked(x)))}" data-q="{e(q)}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(G.checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
+            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-n="{G.nights_of(f)}" data-ts="{e(G.ago_iso(G.checked(x)))}" aria-label="{e(o)} to {e(d)}, {e(x.get("price"))} euros{(", was " + e(f.get("precio_normal")) + " euros") if f.get("precio_normal") else ""}, {e(dates_en(f))}" data-q="{e(q)}">'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get('ahorro_pct')} % · {level_en(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(G.checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(d)}</span>{f"<span class=dc-cont>{ce} {e(cn.replace("the ", "").title() if cn.startswith("the ") else cn)}</span>" if cs else ""}</div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(country(f, "origen"))}">{flag(f.get("origen_cc"))}</span> {e(o)} → {e(d)}</div>'
-            f'<div class="dc-m">{trip(f)} · {e(stops_en(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(date_en(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}{f'<small class="dc-loc">{e(G.local(x.get("price"), f.get("origen_cc"), True))}</small>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}</div></div></a>')
+            f'<div class="dc-m">{trip(f)} · {e(stops_en(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(dates_en(f))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}{f'<small class="dc-loc">{e(G.local(x.get("price"), f.get("origen_cc"), True))}</small>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}</div></div></a>')
 
 
 def filters(deals):
@@ -138,12 +149,21 @@ def filters(deals):
             conts[cs] = conts.get(cs, 0) + 1
     opts = ''.join(f'<option value="{k}">{flag(v[1])} {e(v[0])} ({v[2]})</option>' for k, v in sorted(occ.items(), key=lambda kv: -kv[1][2]))
     chips = ''.join(f'<button type="button" class="chip" data-cont="{k}" aria-pressed="false">{CONT[k][1]} {e(CONT[k][0].replace("the ", "").replace(" & Central America", ""))} <small>{n}</small></button>' for k, n in sorted(conts.items(), key=lambda kv: -kv[1]) if k in CONT)
+    ac = {}
+    for x in deals:
+        o_ = x['facts'].get('origen')
+        if o_:
+            ac[o_] = ac.get(o_, 0) + 1
+    import en_names
+    aopts = ''.join(f'<option value="{slugify(k)}">{e(en_names.city_en(k))} ({v})</option>' for k, v in sorted(ac.items(), key=lambda kv: (-kv[1], kv[0])))
     months = sorted({(x['facts'].get('ida') or '')[:7] for x in deals if x['facts'].get('ida')})
     mopts = ''.join(f'<option value="{m}">{MONTHS[int(m[5:7]) - 1]} {m[:4]}</option>' for m in months)
     return f'''<div class="xf" data-explorer-filters>
 <div class="xf-row">
 <label class="xf-search"><span aria-hidden="true">🔎</span><input type="search" data-x="q" placeholder="Search a destination, city or country" aria-label="Search deals"></label>
 <label class="xf-sel"><span>Flying from</span><select data-x="desde" aria-label="Departure country"><option value="">All countries</option>{opts}</select></label>
+<label class="xf-sel"><span>Airport</span><select data-x="aero" aria-label="Departure airport"><option value="">All</option>{aopts}</select></label>
+<label class="xf-sel"><span>Trip length</span><select data-x="dur" aria-label="Trip length"><option value="">Any</option><option value="finde">Short break (1-4 nights)</option><option value="semana">A week (5-9)</option><option value="largo">10+ nights</option></select></label>
 <label class="xf-sel"><span>Month</span><select data-x="mes" aria-label="Departure month"><option value="">Any date</option>{mopts}</select></label>
 <label class="xf-sel"><span>Sort by</span><select data-x="orden" aria-label="Sort"><option value="nuevo">Best for you</option><option value="precio">Cheapest</option><option value="fecha">Soonest departure</option></select></label>
 </div>
@@ -261,7 +281,7 @@ def main():
 <div class="sec-h"><div><div class="kicker">Freshly hunted · verified</div><h1 class="x-h1">Today's flight deals</h1><p>{e(intro)}</p></div></div>
 {filters(deals)}
 <div class="dc-grid" data-explorer-grid>{grid}</div>{empty}
-</div></main><script src="/hlc/explorer.js?v=2" defer></script>{FOOTER}</body></html>'''
+</div></main><script src="/hlc/explorer.js?v=3" defer></script>{FOOTER}</body></html>'''
     write('en/deals', page)
 
     # ---------- ideas (EN) ----------

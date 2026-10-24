@@ -176,3 +176,4 @@ form.done>.af{display:none}
 
 :focus-visible{outline:3px solid #2E6BF0!important;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
+.howbook{background:#fff;border:1.5px solid var(--linea);border-radius:16px;padding:14px 18px;margin:0 0 20px;font-size:15px}.howbook ol{margin:8px 0 0 18px;padding:0}.howbook li{margin:4px 0}
