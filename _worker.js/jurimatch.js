@@ -71,6 +71,7 @@ function firmItem(f, verified) {
   const where = (f.countries_served || []).slice(0, 3).join(', ');
   const model = f.typical_model ? titleCaseLabel(f.typical_model) : '';
   return '<li>' + (verified ? '<a href="/firms/' + esc(slugify(f.firm_name)) + '">' + esc(f.firm_name) + '</a> (hand-verified)' : esc(f.firm_name) + ' (indexed, not verified)')
+    + (f.category === 'collection_agency' ? ', debt collection agency (not a law firm)' : '')
     + (where ? ', ' + esc(where) : '') + (model ? ', ' + esc(model) : '') + '</li>';
 }
 
