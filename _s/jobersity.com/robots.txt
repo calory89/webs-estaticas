@@ -1,3 +1,4 @@
+# Jobersity: ofertas de empleo y agente de empleo con IA
 User-agent: *
 Allow: /
 Disallow: /admin
@@ -5,5 +6,33 @@ Disallow: /panel/
 Disallow: /cv/
 Disallow: /acceso
 Disallow: /login
+Disallow: /__sb/
+Disallow: /api/
+# filtros de los listados: la misma página con otro orden o filtro
+Disallow: /*?*orden=
+Disallow: /*?*guardadas=
+Disallow: /*?*sin=
+
+# Buscadores y asistentes de IA: bienvenidos a las páginas públicas (ofertas, landings, guías)
+User-agent: GPTBot
+Allow: /
+Disallow: /panel/
+Disallow: /cv/
+Disallow: /admin
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /panel/
+Disallow: /cv/
+Disallow: /admin
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /panel/
+Disallow: /cv/
+Disallow: /admin
+
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: https://jobersity.com/sitemap.xml
