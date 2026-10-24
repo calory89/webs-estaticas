@@ -108,7 +108,10 @@
 /category/espana/ /espana/ 301
 /tag/2018/ /blog/ 301
 /tag/2019/ /blog/ 301
-/napoles-que-ver/2/ /napoles-que-ver/ 301
+/napoles-que-ver/2/ /que-ver/ 301
+/napoles-que-ver/ /que-ver/ 301
+/napoles-que-ver /que-ver/ 301
+/tag/destinos-culturales/ /italia/ 301
 /page/5/ /archive/ 301
 /visitar-chiang-rai/img_20190120_150036/ /visitar-chiang-rai/ 301
 /8-lugares-para-dar-un-paseo-en-lublin/embed/ /8-lugares-para-dar-un-paseo-en-lublin/ 301

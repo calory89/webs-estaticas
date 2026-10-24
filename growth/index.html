@@ -112,7 +112,7 @@ btn.disabled=true;msg.textContent=t('f_sending');
 fetch('https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:name,email:email,company:v('co'),message:'['+location.pathname+']\n'+body,kind:f.getAttribute('data-kind'),lang:window.cdoLang(),consent:true,website:D.getElementById('f-web').value})})
 .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.ok===false)throw new Error('send');});})
 .then(function(){f.reset();msg.textContent=t('f_done');}).catch(function(){msg.textContent=t('f_err');}).then(function(){btn.disabled=false;});});})();</script>
-<script src="/assets/cdo/cdo-boost.js?v=9" defer></script>
+<script src="/assets/cdo/cdo-boost.js?v=10" defer></script>
 <script>(function(){var D=document;function n(id){var v=parseFloat((D.getElementById(id).value||'').replace(',','.'));return isFinite(v)&&v>0?v:0}
 function f(x,d){return x.toLocaleString(D.documentElement.lang==='es'?'es-ES':'en-GB',{maximumFractionDigits:d,minimumFractionDigits:d})}
 function run(){var b=n('cb'),c=n('cc'),r=n('cr')/100,t=n('ct');var vis=c?b/c:0,cus=vis*r,cpa=cus?b/cus:0,roas=b?cus*t/b:0;

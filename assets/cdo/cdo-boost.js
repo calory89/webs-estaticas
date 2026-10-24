@@ -14,6 +14,13 @@
     try { if (W.clarity) { W.clarity('event', name); } } catch (e) {}
     try { if (W.zaraz && W.zaraz.track) { W.zaraz.track(name, data || {}); } } catch (e) {}
   }
+  /* pruebas A/B: variante fija por navegador, vistas, clics y conversiones a Supabase (resultados en el resumen semanal) */
+  function ab(t) { var k = 'cdo-ab-' + t, v = ls(k); if (v !== 'A' && v !== 'B') { v = Math.random() < 0.5 ? 'A' : 'B'; ls(k, v); } return v; }
+  function abLog(t, v, k) {
+    try { var sk = 'cdo-ab-' + t + '-' + k; if (k !== 'conv' && sessionStorage.getItem(sk)) { return; } sessionStorage.setItem(sk, '1'); } catch (e) {}
+    try { fetch(NL_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, keepalive: true, body: JSON.stringify({ type: 'ab', t: t, v: v, k: k, p: location.pathname }) }).catch(function () {}); } catch (e) {}
+    try { if (W.clarity) { W.clarity('set', 'ab_' + t, v); } } catch (e) {}
+  }
   function el(tag, cls, html) { var n = D.createElement(tag); if (cls) { n.className = cls; } if (html) { n.innerHTML = html; } return n; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
@@ -73,13 +80,14 @@
       var doc = D.documentElement, r = (W.scrollY + W.innerHeight) / doc.scrollHeight;
       if (r < 0.55) { return; }
       shown = true; W.removeEventListener('scroll', onScroll);
+      var abv = ab('nl_slide'); abLog('nl_slide', abv, 'view');
       var s = el('div', 'cdo-slide');
       s.setAttribute('role', 'dialog'); s.setAttribute('aria-label', 'Newsletter');
       s.innerHTML = '<button class="x" type="button" aria-label="' + (EN ? 'Close' : 'Cerrar') + '">&times;</button>' +
-        '<h3>' + (EN ? 'Get the Million Mile Playbook' : 'Llévate el Million Mile Playbook') + '</h3>' +
+        (abv === 'B' ? '<h3>' + (EN ? 'Fly business class for almost nothing' : 'Vuela en business casi gratis') + '</h3>' : '<h3>' + (EN ? 'Get the Million Mile Playbook' : 'Llévate el Million Mile Playbook') + '</h3>') +
         '<p>' + (EN ? '21 tricks to fly business class for almost nothing, as a free PDF. Plus one email when I have something worth sending.' : '21 trucos para volar en business casi gratis, en PDF y gratis. Y un email cuando tenga algo que merezca la pena.') + '</p>' +
         '<form novalidate><label class="sr-only" style="position:absolute;left:-9999px" for="cdo-sl-e">Email</label><input id="cdo-sl-e" type="email" autocomplete="email" inputmode="email" placeholder="' + (EN ? 'you@email.com' : 'tu@email.com') + '" required>' +
-        '<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">' + (EN ? 'Send it' : 'Lo quiero') + '</button></form>' +
+        '<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">' + (abv === 'B' ? (EN ? 'Send me the 21 tricks' : 'Quiero los 21 trucos') : (EN ? 'Send it' : 'Lo quiero')) + '</button></form>' +
         '<div class="m" role="status" aria-live="polite"></div>' +
         '<small>' + (EN ? 'No spam. Unsubscribe in one click. By signing up you accept the <a href="/politica-de-privacidad/">privacy policy</a>.' : 'Sin spam. Te das de baja en un clic. Al apuntarte aceptas la <a href="/politica-de-privacidad/">política de privacidad</a>.') + '</small>';
       B.appendChild(s); B.classList.add('cdo-slide-on');
@@ -95,7 +103,7 @@
         fetch(NL_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ type: 'subscribe', email: em, lang: EN ? 'en' : 'es', source: 'slide:' + location.pathname, consent: true, website: s.querySelector('input[name=website]').value }) })
           .then(function (r) {
             if (!r.ok) { throw new Error(String(r.status)); }
-            ls('cdo-nl', '1'); ls('ory-nl-done', '1'); ev('nl_subscribe', { source: 'slide' });
+            ls('cdo-nl', '1'); ls('ory-nl-done', '1'); ev('nl_subscribe', { source: 'slide' }); abLog('nl_slide', abv, 'conv');
             s.querySelector('form').remove();
             m.innerHTML = (EN ? 'You are on board. ' : 'Ya estás dentro. ') + '<a href="/assets/cdo/million-mile-playbook-' + (EN ? 'en' : 'es') + '.pdf" download>' + (EN ? 'Download the Playbook (PDF)' : 'Descarga el Playbook (PDF)') + '</a>';
           })
@@ -262,4 +270,15 @@
       });
     }
   }
+
+  /* 15. Prueba A/B del boton principal de /growth/ y /agencia/ */
+  (function () {
+    if (!/^\/(growth|agencia)\/$/.test(location.pathname)) { return; }
+    var b = D.querySelector('.hero a[data-k="cta1"]'); if (!b) { return; }
+    var v = ab('growth_cta'); abLog('growth_cta', v, 'view');
+    var es = D.documentElement.lang.indexOf('es') === 0;
+    if (v === 'B') { b.textContent = es ? 'Quiero más clientes' : 'I want more customers'; b.removeAttribute('data-k'); }
+    b.addEventListener('click', function () { abLog('growth_cta', v, 'click'); });
+    D.addEventListener('submit', function (e) { var f = e.target; if (f && f.closest && f.closest('#start')) { abLog('growth_cta', v, 'conv'); } }, true);
+  })();
 })();

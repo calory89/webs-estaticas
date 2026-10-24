@@ -170,9 +170,13 @@ Deno.serve(async (req) => {
     for (const s1 of subs) { const k = String(s1.source || "web").split(":")[0]; bySrc[k] = (bySrc[k] || 0) + 1; }
     const li = leads.map((l: Record<string, unknown>) => `<li>${l.priority ? "⭐ " : ""}<b>${esc(String(KINDS[String(l.kind)] ?? l.kind))}</b> · ${esc(String(l.name))}${l.company ? " · " + esc(String(l.company)) : ""} · ${esc(String(l.email))}</li>`).join("");
     const alert = !subs.length && !leads.length ? `<p style="color:#C2452D"><b>Ojo:</b> ninguna alta ni ningún mensaje en 7 días. Conviene probar los formularios.</p>` : "";
+    const abRows = await (await fetch(`${S}/rest/v1/cdo_ab_summary?select=test,variant,kind,n`, { headers: rh })).json().catch(() => []);
+    const AB: Record<string, Record<string, Record<string, number>>> = {};
+    for (const r of (Array.isArray(abRows) ? abRows : [])) { ((AB[r.test] ??= {})[r.variant] ??= {})[r.kind] = r.n; }
+    const abHtml = Object.keys(AB).length ? `<h3>Pruebas A/B (últimos 28 días)</h3><ul>${Object.entries(AB).map(([t, vs]) => `<li><b>${esc(t)}</b>: ${Object.entries(vs).sort().map(([v, k]) => { const vw = k.view || 0, cv = k.conv || 0, ck = k.click || 0; return `${esc(v)} ${vw} vistas, ${ck} clics, ${cv} conversiones (${vw ? (100 * cv / vw).toFixed(1) : "0.0"} %)`; }).join(" · ")}</li>`).join("")}</ul><p style="color:#666;font-size:13px">Cuando una variante tenga al menos 30 conversiones y le saque un 20 % a la otra, se puede dejar fija.</p>` : "";
     const to = Deno.env.get("CDO_CONTACT_TO");
     if (to) await send({ to: [to], subject: `[carlosdeory.com] Semana: ${subs.length} suscriptores, ${leads.length} mensajes`,
-      html: shell(`<h2>Resumen de la semana</h2>${alert}<p><b>${subs.length}</b> suscriptores nuevos (total activos: ${esc(String(total))}). Origen: ${Object.entries(bySrc).map(([k, v]) => `${esc(k)} ${v}`).join(", ") || "-"}.</p><p><b>${leads.length}</b> mensajes:</p><ul>${li || "<li>Ninguno</li>"}</ul>`),
+      html: shell(`<h2>Resumen de la semana</h2>${alert}<p><b>${subs.length}</b> suscriptores nuevos (total activos: ${esc(String(total))}). Origen: ${Object.entries(bySrc).map(([k, v]) => `${esc(k)} ${v}`).join(", ") || "-"}.</p><p><b>${leads.length}</b> mensajes:</p><ul>${li || "<li>Ninguno</li>"}</ul>${abHtml}`),
       text: `${subs.length} suscriptores, ${leads.length} mensajes` });
     return json({ ok: true, subs: subs.length, leads: leads.length }, 200, h);
   }
@@ -182,6 +186,16 @@ Deno.serve(async (req) => {
 
   const SB0 = Deno.env.get("SUPABASE_URL")!, KEY0 = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
   const rest0 = { apikey: KEY0, Authorization: `Bearer ${KEY0}`, "Content-Type": "application/json" };
+
+  // pruebas A/B: vistas, clics y conversiones por variante
+  if (d.type === "ab") {
+    const AB_TESTS = ["nl_slide", "growth_cta"];
+    const t = String(d.t ?? ""), v = String(d.v ?? ""), k = String(d.k ?? "");
+    if (!AB_TESTS.includes(t) || !["A", "B"].includes(v) || !["view", "click", "conv"].includes(k)) return json({ ok: false }, 422, h);
+    await fetch(`${SB0}/rest/v1/cdo_ab_events`, { method: "POST", headers: { ...rest0, Prefer: "return=minimal" },
+      body: JSON.stringify({ test: t, variant: v, kind: k, path: clean(d.p, 200), country: req.headers.get("cf-ipcountry") ?? "" }) });
+    return json({ ok: true }, 200, h);
+  }
 
   // newsletter sign-up (carlosdeory.com/links and the home page)
   if (d.type === "subscribe") {
