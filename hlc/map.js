@@ -59,7 +59,7 @@
     if (!w.topojson) need.push('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js');
     var j = function (u) { return fetch(u).then(function (r) { return r.json(); }); };
     var n = need.length, go = function () {
-      Promise.all([j('/hlc/world-50m.json'), j('/hlc/destinos.json'), j(API_URL).catch(function () { return []; }), j('/hlc/airports.json').catch(function () { return {}; })]).then(draw).catch(function () { BOX.classList.add('mapx-err'); });
+      Promise.all([j('/hlc/world-50m.json'), j('/hlc/destinos.json').then(function (l) { return (l || []).filter(function (p) { return !p.auto || p.g; }); }), j(API_URL).catch(function () { return []; }), j('/hlc/airports.json').catch(function () { return {}; })]).then(draw).catch(function () { BOX.classList.add('mapx-err'); });
     };
     if (!n) return go();
     need.forEach(function (u) { var s = d.createElement('script'); s.src = u; s.onload = function () { if (--n === 0) go(); }; d.head.appendChild(s); });

@@ -28,7 +28,7 @@ ALIAS = {'nueva-york': ['new-york', 'nueva-york', 'nyc'], 'la-habana': ['habana'
          'venecia': ['venice', 'venezia'], 'florencia': ['florence', 'firenze'], 'napoles': ['naples', 'napoli'], 'atenas': ['athens'], 'cracovia': ['krakow', 'cracow'], 'bruselas': ['brussels', 'bruxelles'],
          'brujas': ['bruges', 'brugge'], 'edimburgo': ['edinburgh'], 'estocolmo': ['stockholm'], 'reikiavik': ['reykjavik', 'reikiavic', 'islandia'], 'malta': ['la-valeta', 'valletta'],
          'munich': ['munchen'], 'bucarest': ['bucharest'], 'sofia': ['sofia'], 'fez': ['fes'], 'dubai': ['dubai'], 'cancun': ['cancun'], 'ciudad-de-mexico': ['mexico-city', 'mexico-df', 'cdmx'],
-         'lima': ['lima', 'cusco', 'cuzco', 'machu-picchu'], 'buenos-aires': ['buenos-aires'], 'rio-de-janeiro': ['rio', 'rio-de-janeiro'], 'los-angeles': ['la', 'los-angeles'], 'san-francisco': ['san-francisco'],
+         'lima': ['lima', 'cusco', 'cuzco', 'machu-picchu'], 'buenos-aires': ['buenos-aires'], 'rio-de-janeiro': ['rio', 'rio-de-janeiro'], 'los-angeles': ['la', 'los-angeles', 'burbank', 'long-beach'], 'san-francisco': ['san-francisco', 'san-jose-california', 'oakland'], 'miami': ['miami', 'fort-lauderdale'],
          'singapur': ['singapore', 'singapur'], 'hanoi': ['hanoi', 'ha-long'], 'seul': ['seoul', 'seul'], 'kioto': ['kyoto'], 'ciudad-del-cabo': ['cape-town'], 'sri-lanka': ['colombo'],
          'tallin': ['tallinn'], 'vilna': ['vilnius'], 'zurich': ['zurich'], 'bolonia': ['bologna'], 'salzburgo': ['salzburg'], 'hamburgo': ['hamburg'], 'mykonos': ['miconos'], 'chipre': ['larnaca', 'pafos', 'paphos'],
          'belgrado': ['belgrade'], 'cerdena': ['cagliari', 'olbia', 'alghero', 'sardinia'], 'creta': ['heraklion', 'chania', 'crete'], 'palermo': ['sicilia', 'catania'], 'bogota': ['bogota'], 'madeira': ['funchal', 'madeira'], 'azores': ['ponta-delgada', 'islas-azores', 'azores'], 'mauricio': ['isla-mauricio', 'mauritius', 'mauricio'], 'hong-kong': ['hong-kong', 'hongkong'], 'kuala-lumpur': ['kuala-lumpur'], 'manila': ['manila'], 'sal': ['sal', 'isla-de-sal', 'santa-maria'], 'portland': ['portland']}
@@ -36,6 +36,22 @@ ALIAS = {'nueva-york': ['new-york', 'nueva-york', 'nyc'], 'la-habana': ['habana'
 
 NORM_CITY = {'Las Palmas de Gran Canaria': 'Gran Canaria', 'Denpasar (Bali)': 'Bali', 'Denpasar': 'Bali', 'Abu Dhabi': 'Abu Dabi', 'Port Louis': 'Isla Mauricio'}
 NORM_C = {'EE. UU.': 'Estados Unidos', 'EEUU': 'Estados Unidos', 'EE.UU.': 'Estados Unidos', 'Emiratos': 'Emiratos Árabes Unidos', 'Rep. Dominicana': 'República Dominicana', 'Escocia': 'Reino Unido', 'Sicilia': 'Italia'}
+
+
+def en_dest_slug(s):
+    """Slug inglés de una guía: edimburgo -> edinburgh, maldivas -> maldives."""
+    import en_names
+    n = en_names.NAMES.get(s)
+    return re.sub(r'^the-', '', slugify(n)) if n else s
+
+
+def en_deal_slug(x):
+    """zaragoza-estocolmo-127-euros-2026-11-17 -> zaragoza-stockholm-127-eur-2026-11-17"""
+    import en_names
+    f, en = x['facts'], x.get('en') or {}
+    o = en.get('orig_en') or en_names.city_en(f.get('origen') or '')
+    d = en.get('dest_en') or en_names.NAMES.get(lib_slug(f) or '') or f.get('destino') or ''
+    return slugify(f"{o}-{re.sub(r'^the ', '', d, flags=re.I)}-{x.get('price')}-eur-{(f.get('ida') or '')[:10]}")
 
 
 def norm_deal(x):
@@ -548,6 +564,10 @@ def main():
     today = datetime.date.today().isoformat()
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and (x['facts'].get('ida') or '9999') >= today]
     deals = [norm_deal(x) for x in deals]
+    for x in deals:  # chollos por debajo del umbral: fuera también su página (la web y el JS los esconden)
+        if not keep_deal(x) and x.get('slug') and os.path.isdir(os.path.join('chollos', x['slug'])):
+            import shutil
+            shutil.rmtree(os.path.join('chollos', x['slug']))
     deals = [x for x in deals if keep_deal(x)]
     load_fx()
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
@@ -571,6 +591,7 @@ def main():
         print('sin foto, no se publican:', sin_foto)
     deals = [x for x in deals if photo_url(x)]
     # marca en destinos.json qué destinos tienen guía (lo usa el mapa) y cuántas fotos extra hay
+    DLIB[:] = [p for p in DLIB if not (p.get('auto') and p['s'] in ('burbank', 'fort-lauderdale', 'san-jose-california'))]
     for p in DLIB:
         p['c'] = NORM_C.get(p.get('c'), p.get('c'))
         p['g'] = 1 if p['s'] in dmap else 0
@@ -642,7 +663,7 @@ def main():
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{slug}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -753,7 +774,7 @@ def main():
         side = ''.join(card(x) for x in sub[:3])
         page = head(title=e((g.get('seo_title') or f"Qué ver en {p['n']}") + ' · Happy Low Cost'), desc=e(g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."),
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{p['s']}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}

@@ -65,6 +65,7 @@ DEST = [('maldivas', 'Maldivas', 'Playas de postal', True), ('nueva-york', 'Nuev
 dest = ''.join(f'<a class="reveal{" big" if big else ""}" href="{CJ("17288959", "https://www.booking.com/searchresults.es.html?ss=" + name)}" {R} style="background-image:url(/hlc/img/cities/{s}{"" if big else "-800"}.jpg)"><span>{name}<small>{sub} · ver hoteles</small></span></a>' for s, name, sub, big in DEST)
 
 DJ = json.load(open('hlc/destinos.json', encoding='utf-8'))
+DJ = [p for p in DJ if not p.get('auto') or p.get('g')]  # el mapa solo enseña destinos con guía o de la biblioteca curada
 def map_block(full=False):
     orig = '<optgroup label="España">' + ''.join(f'<option>{c}</option>' for c in ['Madrid', 'Barcelona', 'Málaga', 'Valencia', 'Sevilla', 'Bilbao', 'Alicante', 'Canarias', 'Palma']) + '</optgroup><optgroup label="Europa">' + ''.join(f'<option>{c}</option>' for c in ['Lisboa', 'Oporto', 'Londres', 'París', 'Ámsterdam', 'Berlín', 'Roma', 'Milán', 'Dublín', 'Copenhague']) + '</optgroup><optgroup label="Resto del mundo">' + ''.join(f'<option>{c}</option>' for c in ['Nueva York', 'Miami', 'Los Ángeles', 'Ciudad de México', 'Bogotá', 'Buenos Aires', 'Dubái', 'Singapur', 'Sídney']) + '</optgroup>'
     regs = ''.join(f'<button type="button" data-region="{r}" aria-pressed="false">{n}</button>' for r, n in [('mundo', 'Mundo'), ('europa', 'Europa'), ('mediterraneo', 'Mediterráneo'), ('america', 'América'), ('asia', 'Asia'), ('africa', 'África'), ('oceania', 'Oceanía')])
@@ -79,7 +80,7 @@ def map_block(full=False):
             f'<div class="mapx-load">Cargando el mapa…</div></div>'
             f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
             f'<div class="mapx-strip" data-map-strip>{cards}</div>'
-            '<script src="/hlc/map.js?v=3" defer></script>')
+            '<script src="/hlc/map.js?v=4" defer></script>')
 MAP = map_block()
 TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 Todo <small></small></button>' + ''.join(f'<button type="button" class="chip" data-tab="{k}" aria-pressed="false">{em} {n} <small></small></button>' for k, em, n in [('europa', '🇪🇺', 'Europa'), ('asia', '🌏', 'Asia'), ('norteamerica', '🗽', 'Norteamérica'), ('caribe', '🏝️', 'Caribe'), ('sudamerica', '🌎', 'Sudamérica'), ('africa', '🌍', 'África'), ('oceania', '🦘', 'Oceanía'), ('oriente-medio', '🕌', 'Oriente Medio')])
 
@@ -87,14 +88,14 @@ blog = ''.join(f'<a class="reveal" href="{u}"><div style="background-image:url({
 
 PAST = [  # chollos reales que ya publicamos (enlazan al post original)
  ('nueva-york', 'Madrid → Nueva York', '97 €', 'ida y vuelta · publicado en 2020 · vuelos en mayo 2021', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
- ('maldivas', 'España → Maldivas', '307 €', 'ida y vuelta · 2022', '/‼mas-barato-que-nunca‼-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
+ ('maldivas', 'España → Maldivas', '307 €', 'ida y vuelta · 2022', '/mas-barato-que-nunca-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
  ('reikiavik', 'España → Islandia', '136 €', 'ida y vuelta · directo · 2022', '/vuelos-directos-a-islandia-desde-solo-136e-i-v/'),
  ('tokio', 'España → Tokio', '387 €', 'ida y vuelta · 2020', '/ganga-vuelos-a-tokio-desde-solo-387e-i-v-en-septiembre/'),
  ('miami', 'España → Miami', '167 €', 'ida y vuelta · 2020', '/vuelos-a-miami-por-solo-167e-ida-y-vuelta/'),
  ('santorini', 'España → Santorini', '97 €', 'ida y vuelta · directo · 2023', '/vuelos-directos-a-santorini-en-julio-por-solo-97e-i-v/'),
  ('bali', 'España → Bali', '420 €', 'ida y vuelta · 2020', '/chollo-vuelos-baratos-a-bali-desde-solo-420e-i-v/'),
  ('san-francisco', 'España → San Francisco', '317 €', 'ida y vuelta · directo · 2021', '/chollo-vuelos-directos-a-san-francisco-por-317e-i-v/'),
- ('ciudad-del-cabo', 'España → Sudáfrica', '311 €', 'ida y vuelta · 2022', '/‼chollo‼-vuelos-a-sudafrica-por-solo-311e-i-v/'),
+ ('ciudad-del-cabo', 'España → Sudáfrica', '311 €', 'ida y vuelta · 2022', '/chollo-vuelos-a-sudafrica-por-solo-311e-i-v/'),
  ('punta-cana', 'España → Punta Cana', '351 €', 'ida y vuelta · 2021', '/wow-viajamos-a-punta-cana-vuelos-por-350e-i-v/'),
  ('bangkok', 'España → Tailandia', '350 €', 'ida y vuelta · 2021', '/vuelos-a-tailandia-por-solo-350e-i-v/'),
  ('ciudad-de-mexico', 'España → México', '370 €', 'ida y vuelta · directo · 2020', '/viva-mexico-vuelos-directos-por-solo-370e-i-v-en-octubre/'),

@@ -15,17 +15,7 @@ T3 = G.T3
 SITE, e, flag, slugify = G.SITE, G.e, G.flag, G.slugify
 API = G.API
 
-NAMES = {'lisboa': 'Lisbon', 'oporto': 'Porto', 'londres': 'London', 'edimburgo': 'Edinburgh', 'dublin': 'Dublin', 'paris': 'Paris', 'niza': 'Nice', 'roma': 'Rome', 'milan': 'Milan',
-         'venecia': 'Venice', 'florencia': 'Florence', 'bolonia': 'Bologna', 'napoles': 'Naples', 'palermo': 'Palermo', 'cerdena': 'Sardinia', 'malta': 'Malta', 'atenas': 'Athens',
-         'santorini': 'Santorini', 'mykonos': 'Mykonos', 'creta': 'Crete', 'chipre': 'Cyprus', 'dubrovnik': 'Dubrovnik', 'amsterdam': 'Amsterdam', 'bruselas': 'Brussels', 'brujas': 'Bruges',
-         'berlin': 'Berlin', 'hamburgo': 'Hamburg', 'munich': 'Munich', 'zurich': 'Zurich', 'viena': 'Vienna', 'salzburgo': 'Salzburg', 'praga': 'Prague', 'budapest': 'Budapest',
-         'cracovia': 'Krakow', 'varsovia': 'Warsaw', 'belgrado': 'Belgrade', 'bucarest': 'Bucharest', 'sofia': 'Sofia', 'estambul': 'Istanbul', 'copenhague': 'Copenhagen', 'oslo': 'Oslo',
-         'estocolmo': 'Stockholm', 'helsinki': 'Helsinki', 'tallin': 'Tallinn', 'riga': 'Riga', 'vilna': 'Vilnius', 'reikiavik': 'Iceland', 'madeira': 'Madeira', 'azores': 'The Azores',
-         'tenerife': 'Tenerife', 'marrakech': 'Marrakesh', 'fez': 'Fez', 'el-cairo': 'Cairo', 'zanzibar': 'Zanzibar', 'mauricio': 'Mauritius', 'sal': 'Sal Island', 'ciudad-del-cabo': 'Cape Town',
-         'hong-kong': 'Hong Kong', 'kuala-lumpur': 'Kuala Lumpur', 'manila': 'Manila', 'dubai': 'Dubai', 'maldivas': 'The Maldives', 'sri-lanka': 'Sri Lanka', 'bangkok': 'Bangkok',
-         'phuket': 'Phuket', 'hanoi': 'Vietnam', 'singapur': 'Singapore', 'bali': 'Bali', 'seul': 'Seoul', 'tokio': 'Tokyo', 'kioto': 'Kyoto', 'nueva-york': 'New York', 'miami': 'Miami',
-         'los-angeles': 'Los Angeles', 'san-francisco': 'San Francisco', 'portland': 'Portland', 'las-vegas': 'Las Vegas', 'cancun': 'Cancun', 'ciudad-de-mexico': 'Mexico City',
-         'la-habana': 'Havana', 'punta-cana': 'Punta Cana', 'bogota': 'Bogota', 'lima': 'Peru', 'rio-de-janeiro': 'Rio de Janeiro', 'buenos-aires': 'Buenos Aires'}
+from en_names import NAMES  # noqa: E402
 COUNTRIES = {'ES': 'Spain', 'PT': 'Portugal', 'GB': 'United Kingdom', 'IE': 'Ireland', 'FR': 'France', 'IT': 'Italy', 'DE': 'Germany', 'NL': 'Netherlands', 'BE': 'Belgium', 'CH': 'Switzerland',
              'AT': 'Austria', 'DK': 'Denmark', 'SE': 'Sweden', 'NO': 'Norway', 'FI': 'Finland', 'PL': 'Poland', 'CZ': 'Czechia', 'HU': 'Hungary', 'GR': 'Greece', 'RO': 'Romania', 'BG': 'Bulgaria',
              'HR': 'Croatia', 'RS': 'Serbia', 'TR': 'Turkey', 'IS': 'Iceland', 'MT': 'Malta', 'CY': 'Cyprus', 'EE': 'Estonia', 'LV': 'Latvia', 'LT': 'Lithuania', 'US': 'United States',
@@ -95,8 +85,8 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h4>Explore</h4><a href="/en/destinations/">Destination guides</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
-<div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/aviso-legal-datos-cookies/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy & cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=13" defer></script>'''
+<div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
+</footer><script src="/hlc/hlc.js?v=14" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -123,7 +113,7 @@ def card(x):
     cn, ce = CONT.get(cs, ('', ''))
     oc = slugify(country(f, 'origen'))
     q = slugify(' '.join([o, d, f.get('origen', ''), f.get('destino', ''), country(f, 'origen'), country(f, 'destino')]))
-    return (f'<a class="dc" href="/en/deals/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
+    return (f'<a class="dc" href="/en/deals/{e(G.en_deal_slug(x))}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(G.ago_iso(x.get("approved_at")))}" data-q="{e(q)}">'
             f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(x.get("approved_at") or ""))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(d)}</span>{f"<span class=dc-cont>{ce} {e(cn.replace("the ", "").title() if cn.startswith("the ") else cn)}</span>" if cs else ""}</div>'
@@ -188,6 +178,7 @@ def main():
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html_en')}
     hechos = set()
+    moved = {}
     origins = {slugify(country(x['facts'], 'origen')) for x in deals}
     nconts = len({G.REAL_CONT.get(x['facts'].get('continente') or '') for x in deals} - {None, ''})
 
@@ -195,7 +186,8 @@ def main():
     for x in deals:
         f, slug, en = x['facts'], x['slug'], x['en']
         o, d = names(x)
-        url = f'{SITE}/en/deals/{slug}/'
+        eslug = G.en_deal_slug(x)
+        url = f'{SITE}/en/deals/{eslug}/'
         es_url = f'{SITE}/chollos/{slug}/'
         title = en.get('title') or f'{o} → {d} from €{x["price"]} {trip(f)}'
         seo_t = en.get('seo_title') or f'Flights {o} → {d} for €{x["price"]} ({trip(f)}) · Verified deal'
@@ -211,7 +203,7 @@ def main():
         art = {"@type": "Article", "headline": title[:110], "description": desc, "image": og, "datePublished": x.get('approved_at'), "dateModified": x.get('approved_at'), "inLanguage": "en",
                "author": {"@type": "Organization", "name": "Happy Low Cost", "url": SITE + '/en/'}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         rel = G.related(x, deals)
-        guide = f'<a class="hlc-btn o" href="/en/destinations/{ls_}/">📖 Full {e(NAMES.get(ls_, d))} travel guide</a>' if ls_ and ls_ in dmap else ''
+        guide = f'<a class="hlc-btn o" href="/en/destinations/{G.en_dest_slug(ls_)}/">📖 Full {e(NAMES.get(ls_, d))} travel guide</a>' if ls_ and ls_ in dmap else ''
         fl, ht = to_en_link(x.get('cta_flight')), G.BK.with_dates(hotels(d), f.get('ida'), f.get('vuelta'))
         share = quote(f'{title} {url}')
         page = head(seo_t, desc, url, es_url, og, 'article', [art, cld, offer], body_class='deal')
@@ -242,8 +234,10 @@ def main():
 {T3.block(d, *G.dest_ll(f), lang='en', checkin=f.get('ida'), checkout=f.get('vuelta'))}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">You might also like</div><h2>Similar deals</h2></div><a class="hlc-btn o" href="/en/deals/">See all</a></div><div class="dc-grid">{''.join(card(y) for y in rel)}</div></section>
 </div></main>{FOOTER}</body></html>'''
-        write(f'en/deals/{slug}', page)
-        hechos.add(slug)
+        write(f'en/deals/{eslug}', page)
+        hechos.add(eslug)
+        if eslug != slug:
+            moved[f'/en/deals/{slug}/'] = f'/en/deals/{eslug}/'
 
     # ---------- explorer /en/deals/ and home /en/ ----------
     cheapest = min((x['price'] for x in deals), default=None)
@@ -251,7 +245,7 @@ def main():
              "We check every price on Kiwi.com right before publishing it and show exactly when.")
     grid = ''.join(card(x) for x in deals) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'
     empty = '<div class="dc-empty" data-x-empty hidden><b>No deals match those filters.</b><span>Try removing a filter.</span></div>'
-    items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/deals/{x['slug']}/", "name": x['en'].get('title', '')} for i, x in enumerate(deals[:50])]
+    items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/deals/{G.en_deal_slug(x)}/", "name": x['en'].get('title', '')} for i, x in enumerate(deals[:50])]
     ldl = [{"@type": "CollectionPage", "name": "Today's flight deals", "url": f"{SITE}/en/deals/", "inLanguage": "en", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     ch, cld = crumbs([('Home', '/en/'), ('Deals', None)])
     page = head("Today's cheap flight deals worldwide, verified · Happy Low Cost", G.smart_desc(intro), f'{SITE}/en/deals/', f'{SITE}/chollos/', ld=ldl + [cld], body_class='chollos')
@@ -264,21 +258,21 @@ def main():
     write('en/deals', page)
 
     hero_imgs = [p for p in ('bali', 'tokio', 'nueva-york', 'santorini', 'maldivas', 'lisboa')]
-    guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{s_}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
+    guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(s_)}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2012",
            "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/"]}
     web = {"@type": "WebSite", "url": f"{SITE}/en/", "name": "Happy Low Cost", "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"}}
     page = head('Happy Low Cost · We hunt the cheapest flights in the world', f"Verified cheap flight deals from every continent{f', from €{cheapest}' if cheapest else ''}. Error fares and flash sales, checked before we publish them.",
                 f'{SITE}/en/', f'{SITE}/', ld=[org, web, ldl[0]], body_class='home home2')
     PAST_EN = [('nueva-york', 'Madrid → New York', '€97', 'return · published 2020 · flights May 2021', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
-               ('maldivas', 'Spain → Maldives', '€307', 'return · 2022', '/‼mas-barato-que-nunca‼-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
+               ('maldivas', 'Spain → Maldives', '€307', 'return · 2022', '/mas-barato-que-nunca-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
                ('reikiavik', 'Spain → Iceland', '€136', 'return · nonstop · 2022', '/vuelos-directos-a-islandia-desde-solo-136e-i-v/'),
                ('tokio', 'Spain → Tokyo', '€387', 'return · 2020', '/ganga-vuelos-a-tokio-desde-solo-387e-i-v-en-septiembre/'),
                ('miami', 'Spain → Miami', '€167', 'return · 2020', '/vuelos-a-miami-por-solo-167e-ida-y-vuelta/'),
                ('santorini', 'Spain → Santorini', '€97', 'return · nonstop · 2023', '/vuelos-directos-a-santorini-en-julio-por-solo-97e-i-v/'),
                ('bali', 'Spain → Bali', '€420', 'return · 2020', '/chollo-vuelos-baratos-a-bali-desde-solo-420e-i-v/'),
                ('san-francisco', 'Spain → San Francisco', '€317', 'return · nonstop · 2021', '/chollo-vuelos-directos-a-san-francisco-por-317e-i-v/'),
-               ('ciudad-del-cabo', 'Spain → South Africa', '€311', 'return · 2022', '/‼chollo‼-vuelos-a-sudafrica-por-solo-311e-i-v/'),
+               ('ciudad-del-cabo', 'Spain → South Africa', '€311', 'return · 2022', '/chollo-vuelos-a-sudafrica-por-solo-311e-i-v/'),
                ('punta-cana', 'Spain → Punta Cana', '€351', 'return · 2021', '/wow-viajamos-a-punta-cana-vuelos-por-350e-i-v/'),
                ('bangkok', 'Spain → Thailand', '€350', 'return · 2021', '/vuelos-a-tailandia-por-solo-350e-i-v/'),
                ('ciudad-de-mexico', 'Spain → Mexico', '€370', 'return · nonstop · 2020', '/viva-mexico-vuelos-directos-por-solo-370e-i-v-en-octubre/')]
@@ -290,7 +284,7 @@ def main():
         return (f'<form class="qf" data-hlc-quick novalidate><div class="qf-row"><label class="qf-sel"><span>Flying from</span><select name="origin" aria-label="Your airport">{AIR}</select></label>'
                 '<label class="qf-in"><span>Alert me at</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="your email or WhatsApp" aria-label="Email or WhatsApp" required></label>'
                 '<button type="submit" class="hlc-btn qf-go">Alert me free</button></div>'
-                '<label class="qf-ok"><input type="checkbox" name="consent" required> I agree to receive deal alerts from Happy Low Cost (max one a day) and the <a href="/aviso-legal-datos-cookies/">privacy policy</a>.</label>'
+                '<label class="qf-ok"><input type="checkbox" name="consent" required> I agree to receive deal alerts from Happy Low Cost (max one a day) and the <a href="/en/legal/">privacy policy</a>.</label>'
                 '<div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>')
     def phone_deal(x, cls='h2-deal'):
         if not x:
@@ -298,7 +292,7 @@ def main():
         f = x['facts']; o, dn = names(x)
         was = f'<s>€{e(f.get("precio_normal"))}</s> ' if f.get('precio_normal') else ''
         sv = f' <i>−{e(f.get("ahorro_pct"))} %</i>' if f.get('ahorro_pct') else ''
-        return (f'<div class="{cls}"><a href="/en/deals/{e(x["slug"])}/"><span class="h2-ph" style="background-image:url({e(G.photo_url(x))})"></span>'
+        return (f'<div class="{cls}"><a href="/en/deals/{e(G.en_deal_slug(x))}/"><span class="h2-ph" style="background-image:url({e(G.photo_url(x))})"></span>'
                 f'<span class="h2-t"><b>✈️ {e(o)} → {e(dn)}</b><span>{was}<em>€{e(x.get("price"))}</em>{sv}</span><small>{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""}</small></span></a></div>')
     pool = [x for x in deals if x['facts'].get('precio_normal')] or deals
     top6 = deals[:6]
@@ -345,7 +339,7 @@ def main():
         if not g:
             continue
         n = NAMES.get(p['s'], p['n'])
-        url = f"{SITE}/en/destinations/{p['s']}/"
+        url = f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/"
         gh = re.sub(r'<(?!/?(h2|h3|p|ul|li|strong)\b)[^>]*>', '', g['guide_html_en'])
         sub = [x for x in deals if G.lib_slug(x['facts']) == p['s']]
         ch, cld = crumbs([('Home', '/en/'), ('Destinations', '/en/destinations/'), (n, None)])
@@ -374,13 +368,18 @@ def main():
 <a class="hlc-btn t" href="{hotels(n)}" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels in {e(n)}</a>
 <a class="hlc-btn o" href="/en/deals/">See all deals</a>
 </aside></div>
-<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">More inspiration</div><h2>Other destinations</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/en/destinations/{q["s"]}/">{e(NAMES.get(q["s"], q["n"]))}</a>' for q in G.DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
+<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">More inspiration</div><h2>Other destinations</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(q["s"])}/">{e(NAMES.get(q["s"], q["n"]))}</a>' for q in G.DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main>{FOOTER}</body></html>'''
-        write(f"en/destinations/{p['s']}", page)
+        write(f"en/destinations/{G.en_dest_slug(p['s'])}", page)
+        if G.en_dest_slug(p['s']) != p['s']:
+            moved[f"/en/destinations/{p['s']}/"] = f"/en/destinations/{G.en_dest_slug(p['s'])}/"
+            if os.path.isdir(f"en/destinations/{p['s']}"):
+                import shutil
+                shutil.rmtree(f"en/destinations/{p['s']}")
         dl.append((p, g))
     # index of guides
     ch, cld = crumbs([('Home', '/en/'), ('Destinations', None)])
-    tiles = ''.join(f'<a class="dc" href="/en/destinations/{p["s"]}/"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(NAMES.get(p["s"], p["n"]))}</span></div></a>' for p, g in dl)
+    tiles = ''.join(f'<a class="dc" href="/en/destinations/{G.en_dest_slug(p["s"])}/"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(NAMES.get(p["s"], p["n"]))}</span></div></a>' for p, g in dl)
     page = head('Travel guides: what to see, where to stay and what to eat · Happy Low Cost', 'Honest travel guides written by people who know each place: what to see, how many days, where to stay, what to eat and the cheapest flights.',
                 f'{SITE}/en/destinations/', f'{SITE}/destinos/', ld=[cld])
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">{ch}
@@ -391,9 +390,9 @@ def main():
 
     # ---------- RSS, sitemap, list of English pages ----------
     rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Happy Low Cost · Flight deals</title><link>' + SITE + '/en/deals/</link><description>Verified cheap flight deals worldwide</description><language>en</language>' +
-           ''.join(f'<item><title>{e(x["en"].get("title"))}</title><link>{SITE}/en/deals/{x["slug"]}/</link><guid>{SITE}/en/deals/{x["slug"]}/</guid><description>{e(x["en"].get("excerpt") or "")}</description></item>' for x in deals[:50]) + '</channel></rss>\n')
+           ''.join(f'<item><title>{e(x["en"].get("title"))}</title><link>{SITE}/en/deals/{G.en_deal_slug(x)}/</link><guid>{SITE}/en/deals/{G.en_deal_slug(x)}/</guid><description>{e(x["en"].get("excerpt") or "")}</description></item>' for x in deals[:50]) + '</channel></rss>\n')
     open('en/deals/feed.xml', 'w', encoding='utf-8').write(rss)
-    urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{p['s']}/" for p, g in dl]
+    urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/" for p, g in dl]
     open('en-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc></url>' for u in urls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()
     if 'en-sitemap.xml' not in si:
@@ -406,7 +405,8 @@ def main():
             if os.path.isdir(os.path.join('en/deals', d_)) and d_ not in hechos:
                 shutil.rmtree(os.path.join('en/deals', d_))
     json.dump({'deals': sorted(hechos), 'guides': [p['s'] for p, g in dl]}, open('en/pages.json', 'w'))
-    print('EN deals', len(hechos), 'guides', len(dl))
+    json.dump(moved, open('en/_map-deals.json', 'w'), separators=(',', ':'))
+    print('EN deals', len(hechos), 'guides', len(dl), 'moved', len(moved))
 
 
 if __name__ == '__main__':

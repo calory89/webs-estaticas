@@ -3,7 +3,7 @@
 El texto lo escribe la función hlc-routes de Supabase con la API de Claude (créditos de Carlos);
 este script solo descarga ese contenido y monta el HTML estático. Ejecutar desde la raíz de la rama pub/happylowcost.com,
 después de gen_deals.py y gen_en.py, y antes de `HLC_ONLY=vuelos python3 _hlc/build.py`."""
-import os, sys, json, html, urllib.request
+import os, sys, json, html, shutil, urllib.request
 from urllib.parse import quote
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gen_deals as G  # noqa: E402
@@ -47,13 +47,19 @@ def ld(c, url, crumbs):
     return [faq, bc]
 
 
+def en_slug(r):
+    """alicante-atenas -> alicante-athens (slug de la página inglesa)"""
+    import en_names
+    return G.slugify(en_names.city_en(r['origin'])) + '-' + G.en_dest_slug(r['dest_slug'])
+
+
 def page(r, lang, others):
     en = lang == 'en'
     c = dict(r['content'][lang]); c['_lang'] = lang
     f = r['facts']
     slug = r['slug']
-    url = f"{SITE}/en/flights/{slug}/" if en else f"{SITE}/vuelos/{slug}/"
-    es_url, en_url = f"{SITE}/vuelos/{slug}/", f"{SITE}/en/flights/{slug}/"
+    url = f"{SITE}/en/flights/{en_slug(r)}/" if en else f"{SITE}/vuelos/{slug}/"
+    es_url, en_url = f"{SITE}/vuelos/{slug}/", f"{SITE}/en/flights/{en_slug(r)}/"
     ds = r['dest_slug']
     hero = f'/hlc/img/cities/{ds}.jpg'
     dest = E.NAMES.get(ds, r['dest']) if en else r['dest']
@@ -67,7 +73,7 @@ def page(r, lang, others):
     else:
         h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article',
                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
-    rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" if en else "/vuelos/"}{o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
+    rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     out = h + f'''<main>
 <section class="deal-hero" style="background-image:url({hero})"{G.photos_attr(ds)}><div class="wrap">
@@ -103,7 +109,7 @@ def hub(rows, en):
         by.setdefault(r['origin'], []).append(r)
     base = '/en/flights/' if en else '/vuelos/'
     secs = ''.join(f'<section class="hub"><h2>{"Cheap flights from" if en else "Vuelos baratos desde"} {e(o)}</h2><div class="hub-g">' + ''.join(
-        f'<a class="hub-l" href="{base}{r["slug"]}/">{e(E.NAMES.get(r["dest_slug"], r["dest"]) if en else r["dest"])} · {r["price_from"]} €</a>' for r in sorted(lst, key=lambda x: x['price_from'])) + '</div></section>' for o, lst in sorted(by.items(), key=lambda kv: -len(kv[1])))
+        f'<a class="hub-l" href="{base}{en_slug(r) if en else r["slug"]}/">{e(E.NAMES.get(r["dest_slug"], r["dest"]) if en else r["dest"])} · {r["price_from"]} €</a>' for r in sorted(lst, key=lambda x: x['price_from'])) + '</div></section>' for o, lst in sorted(by.items(), key=lambda kv: -len(kv[1])))
     title = 'Cheap flights: every route with real prices · Happy Low Cost' if en else 'Vuelos baratos: todas las rutas con precios reales · Happy Low Cost'
     desc = (f'{len(rows)} routes with real return prices, airlines and the best time to fly.' if en
             else f'{len(rows)} rutas con precios reales de ida y vuelta, aerolíneas y mejor época para volar.')
@@ -134,13 +140,19 @@ def main():
         by_dest.setdefault(r['dest_slug'], []).append(r)
         by_orig.setdefault(r['origin'], []).append(r)
     urls_es, urls_en = [f'{SITE}/vuelos/'], [f'{SITE}/en/flights/']
+    moved = {}
     for r in rows:
         others = [o for o in by_dest[r['dest_slug']] if o['slug'] != r['slug']] + [o for o in sorted(by_orig[r['origin']], key=lambda x: x['price_from']) if o['slug'] != r['slug']]
         for lang, base, urls in (('es', 'vuelos', urls_es), ('en', 'en/flights', urls_en)):
-            d = os.path.join(base, r['slug'])
+            sl = en_slug(r) if lang == 'en' else r['slug']
+            d = os.path.join(base, sl)
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(page(r, lang, others))
-            urls.append(f"{SITE}/{base}/{r['slug']}/")
+            urls.append(f"{SITE}/{base}/{sl}/")
+            if lang == 'en' and sl != r['slug']:
+                moved[f"/en/flights/{r['slug']}/"] = f"/en/flights/{sl}/"
+                if os.path.isdir(os.path.join(base, r['slug'])):
+                    shutil.rmtree(os.path.join(base, r['slug']))
     json.dump({r['slug']: r['price_from'] for r in rows}, open('vuelos/rutas.json', 'w'), separators=(',', ':'))
     for base, en in (('vuelos', False), ('en/flights', True)):
         os.makedirs(base, exist_ok=True)
@@ -154,7 +166,8 @@ def main():
     open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
     stamp = urllib.request.urlopen(urllib.request.Request(FEED.replace('action=feed', 'action=stamp'), headers={'User-Agent': 'hlc-build'}), timeout=60).read().decode()
     open('vuelos/feed.sha', 'w').write(stamp)
-    print('rutas', len(rows))
+    json.dump(moved, open('en/_map-flights.json', 'w'), separators=(',', ':'))
+    print('rutas', len(rows), 'EN movidas', len(moved))
 
 
 if __name__ == '__main__':
