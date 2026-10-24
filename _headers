@@ -14,3 +14,9 @@
 
 /panel/*
   X-Robots-Tag: noindex, nofollow
+
+/hlc/*.js
+  Cache-Control: public, max-age=86400
+
+/hlc/*.css
+  Cache-Control: public, max-age=86400

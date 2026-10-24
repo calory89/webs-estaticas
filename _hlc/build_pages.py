@@ -77,7 +77,7 @@ def map_block(full=False):
             f'<div class="mapx-zoom"><button type="button" data-zoom="1" aria-label="Acercar">+</button><button type="button" data-zoom="-1" aria-label="Alejar">−</button></div>'
             f'<div class="mapx-hint" data-map-count>{len(DJ)} destinos</div>'
             f'<div class="mapx-card" hidden aria-live="polite"></div>'
-            f'<div class="mapx-load">Cargando el mapa…</div></div>'
+            f'<div class="mapx-load"><span class="sk" aria-hidden="true"></span><span class="hlc-sr">Cargando el mapa</span></div></div>'
             f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
             f'<div class="mapx-strip" data-map-strip>{cards}</div>'
             '<script src="/hlc/map.js?v=6" defer></script>')

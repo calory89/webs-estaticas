@@ -272,3 +272,19 @@ body.single time,body.single .post-tags,body.single .post-box-meta-single,body.s
 .xchips{margin:10px 0 14px}.xchips[hidden]{display:none}.xchips .chip.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
 .pm-bud{margin:0 0 18px}.pm-bud h3{font-size:18px;margin:0 0 8px}.pm-bud h3 small{color:#4A5468;font-weight:600}.pm-bud a.chip{text-decoration:none}
 .altbox li{font-size:15px;line-height:1.35}
+/* objetivos táctiles de 44 px en móvil (punto 146) */
+.dc-fav{width:44px!important;height:44px!important;border-radius:22px!important}
+@media (pointer:coarse),(max-width:860px){
+.chip,a.chip,button.chip{min-height:44px;display:inline-flex;align-items:center}
+a.hub-l{min-height:44px;display:inline-flex;align-items:center}
+.geo-ch{min-height:44px}
+.fx a{display:flex;align-items:center;min-height:44px;padding:0}
+.pm-t tbody th a{display:block;padding:12px 14px;margin:-11px -14px}
+input[type=checkbox]{width:22px;height:22px}
+.hlc-tabs button,[data-hlc-tabs] button{min-height:44px}
+}
+/* esqueleto de carga del mapa (punto 95) */
+.hlc-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.mapx-load .sk{display:block;width:72%;height:62%;border-radius:46%;background:linear-gradient(90deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.16) 40%,rgba(255,255,255,.05) 80%);background-size:200% 100%;animation:hlcsk 1.4s linear infinite}
+@keyframes hlcsk{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.mapx-load .sk{animation:none}}
