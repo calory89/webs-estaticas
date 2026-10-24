@@ -10,6 +10,8 @@ async function sbProxy(req, u) {
   const schema = m[1]; let path = m[2];
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': req.headers.get('origin') || '*', 'access-control-allow-headers': req.headers.get('access-control-request-headers') || '*', 'access-control-allow-methods': 'GET,POST,PUT,PATCH,DELETE,OPTIONS', 'access-control-max-age': '86400' } });
   const h = new Headers(req.headers); h.delete('host');
+  // Visitor IP for per-visitor limits in edge functions (Supabase otherwise sees this Worker's IP).
+  h.set('x-jm-client-ip', req.headers.get('cf-connecting-ip') || '');
   let body = (req.method === 'GET' || req.method === 'HEAD') ? null : await req.arrayBuffer();
   if (path.startsWith('/rest/v1/')) { h.set('accept-profile', schema); h.set('content-profile', schema); }
   else if (path.startsWith('/functions/v1/')) { path = path.replace(/^\/functions\/v1\/([^/?]+)/, (_, f) => '/functions/v1/' + (f.startsWith(schema + '-') ? f : schema + '-' + f)); }
