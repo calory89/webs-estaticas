@@ -58,7 +58,7 @@ footer.foot{border-top:1px solid var(--line);padding:28px 0 44px;font-size:14px;
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿En qué idiomas das las charlas?", "acceptedAnswer": {"@type": "Answer", "text": "En inglés o en español."}}, {"@type": "Question", "name": "¿Cuánto dura una conferencia?", "acceptedAnswer": {"@type": "Answer", "text": "Entre 30 y 60 minutos. Talleres, entrevistas en el escenario y mesas redondas se adaptan a tu programa."}}, {"@type": "Question", "name": "¿Puede ser online?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. En el escenario u online, desde Europa, Sumba o donde sea tu evento."}}, {"@type": "Question", "name": "¿Adaptas la charla a mi público?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La historia es la misma, ajustada a tu sector y a tu público. Cuéntame con qué quieres que se vaya la gente."}}, {"@type": "Question", "name": "¿Cómo consulto disponibilidad y honorarios?", "acceptedAnswer": {"@type": "Answer", "text": "Envía el formulario de abajo con la fecha, ciudad u online, tamaño del público y formato. Te contesto personalmente con disponibilidad y una propuesta."}}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="https://www.carlosdeory.com/feed.xml" />
-<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=2">
+<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=3">
 </head>
 <body>
 <a class="skip" href="#main" data-k="skip">Saltar al contenido</a>
@@ -131,7 +131,7 @@ btn.disabled=true;msg.textContent=t('f_sending');
 fetch('https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:name,email:email,company:v('co'),message:'['+location.pathname+']\n'+body,kind:f.getAttribute('data-kind'),lang:window.cdoLang(),consent:true,website:D.getElementById('f-web').value})})
 .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.ok===false)throw new Error('send');});})
 .then(function(){f.reset();msg.textContent=t('f_done');}).catch(function(){msg.textContent=t('f_err');}).then(function(){btn.disabled=false;});});})();</script><script>(function(){var b=document.getElementById('cp');b.addEventListener('click',function(){var t=document.getElementById('bio').textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent=window.cdoT('copied');setTimeout(function(){b.textContent=window.cdoT('copy');},1800);}).catch(function(){var r=document.createRange();r.selectNodeContents(document.getElementById('bio'));var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="/assets/cdo/cdo-boost.js?v=8" defer></script>
+<script src="/assets/cdo/cdo-boost.js?v=9" defer></script>
 <script>(function(){try{var t=new URLSearchParams(location.search).get("talk");var m={waiting:"t1",flights:"t2",town:"t3",podcast:"custom"};var s=document.getElementById("f-tl");if(t&&m[t]&&s){s.value=m[t];}if(t==="podcast"){var f=document.getElementById("f-fmt");if(f){f.value="fireside";}}}catch(e){}})();</script>
 </body>
 </html>

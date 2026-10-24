@@ -58,7 +58,7 @@ footer.foot{border-top:1px solid var(--line);padding:28px 0 44px;font-size:14px;
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué hace tu equipo?", "acceptedAnswer": {"@type": "Answer", "text": "Estrategia de crecimiento, anuncios en Meta y Google, SEO y contenido, y embudos con landing pages, email y seguimiento por WhatsApp."}}, {"@type": "Question", "name": "¿Cómo empezamos?", "acceptedAnswer": {"@type": "Answer", "text": "Con una llamada para entender tu empresa, tus números y tu objetivo. Después, un plan con prioridades y las primeras campañas en marcha."}}, {"@type": "Question", "name": "¿Cómo medís los resultados?", "acceptedAnswer": {"@type": "Answer", "text": "Por coste por cliente, no por clics. Pruebas e informes semanales: nos quedamos con lo que funciona y lo escalamos."}}, {"@type": "Question", "name": "¿Necesito presupuesto de anuncios?", "acceptedAnswer": {"@type": "Answer", "text": "No para empezar. El formulario pregunta tu presupuesto actual, desde sin anuncios hasta más de 5.000 € al mes, y el plan se ajusta."}}, {"@type": "Question", "name": "¿Qué resultados habéis tenido?", "acceptedAnswer": {"@type": "Answer", "text": "En nuestros propios proyectos: más de 300.000 vuelos reservados con las ofertas de Happy Low Cost y 73.500 páginas vistas en las tres primeras semanas de RealHunt sin gastar en anuncios."}}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="https://www.carlosdeory.com/feed.xml" />
-<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=2">
+<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=3">
 </head>
 <body>
 <a class="skip" href="#main" data-k="skip">Saltar al contenido</a>
@@ -112,7 +112,7 @@ btn.disabled=true;msg.textContent=t('f_sending');
 fetch('https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:name,email:email,company:v('co'),message:'['+location.pathname+']\n'+body,kind:f.getAttribute('data-kind'),lang:window.cdoLang(),consent:true,website:D.getElementById('f-web').value})})
 .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.ok===false)throw new Error('send');});})
 .then(function(){f.reset();msg.textContent=t('f_done');}).catch(function(){msg.textContent=t('f_err');}).then(function(){btn.disabled=false;});});})();</script>
-<script src="/assets/cdo/cdo-boost.js?v=8" defer></script>
+<script src="/assets/cdo/cdo-boost.js?v=9" defer></script>
 <script>(function(){var D=document;function n(id){var v=parseFloat((D.getElementById(id).value||'').replace(',','.'));return isFinite(v)&&v>0?v:0}
 function f(x,d){return x.toLocaleString(D.documentElement.lang==='es'?'es-ES':'en-GB',{maximumFractionDigits:d,minimumFractionDigits:d})}
 function run(){var b=n('cb'),c=n('cc'),r=n('cr')/100,t=n('ct');var vis=c?b/c:0,cus=vis*r,cpa=cus?b/cus:0,roas=b?cus*t/b:0;

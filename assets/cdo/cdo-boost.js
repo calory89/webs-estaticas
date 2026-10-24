@@ -212,4 +212,54 @@
         .catch(function () { b2.disabled = false; msg.textContent = EN ? 'It could not be sent. Try again in a minute.' : 'No se pudo enviar. Inténtalo de nuevo en un minuto.'; });
     });
   });
+  /* 13. Ver fotos de los posts a pantalla completa */
+  if (isPost) {
+    var ent2 = D.querySelector('article .entry');
+    if (ent2) {
+      ent2.addEventListener('click', function (e) {
+        var im = e.target.closest && e.target.closest('img');
+        if (!im || im.closest('a') || im.naturalWidth < 300) { return; }
+        var ov = el('div', 'cdo-lb'); ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', im.alt || 'Foto');
+        ov.innerHTML = '<img src="' + (im.currentSrc || im.src) + '" alt="' + esc(im.alt || '') + '"><button type="button" aria-label="' + (EN ? 'Close' : 'Cerrar') + '">&times;</button>';
+        var close = function () { ov.remove(); D.removeEventListener('keydown', key); };
+        var key = function (k) { if (k.key === 'Escape') { close(); } };
+        ov.addEventListener('click', close); D.addEventListener('keydown', key); B.appendChild(ov); ov.querySelector('button').focus();
+      });
+    }
+  }
+
+  /* 14. Guardar posts para luego (en este navegador) */
+  (function () {
+    var KEY = 'cdo-saved', saved = [];
+    try { saved = JSON.parse(ls(KEY) || '[]'); } catch (e) { saved = []; }
+    var shr = D.querySelector('.share');
+    if (isPost && shr && !shr.querySelector('.cdo-save')) {
+      var h1 = D.querySelector('h1'), me = { u: location.pathname, t: h1 ? h1.textContent.trim() : D.title };
+      var on = function () { return saved.some(function (x) { return x.u === me.u; }); };
+      var bt = el('button', 'cdo-nshare cdo-save'); bt.type = 'button';
+      var lab = function () { bt.textContent = on() ? (EN ? 'Saved ✓' : 'Guardado ✓') : (EN ? 'Save for later' : 'Guardar para luego'); bt.setAttribute('aria-pressed', String(on())); };
+      bt.addEventListener('click', function () { saved = on() ? saved.filter(function (x) { return x.u !== me.u; }) : [me].concat(saved).slice(0, 50); ls(KEY, JSON.stringify(saved)); lab(); ev('save_post'); });
+      lab(); shr.appendChild(bt);
+    }
+    var foot = D.querySelector('.cdo-topdest');
+    if (foot && saved.length) {
+      var box = el('div', 'cdo-saved', '<h2 class="fh" style="margin-top:22px">' + (EN ? 'Saved for later' : 'Tus guardados') + '</h2><p style="font-size:14px;line-height:1.9">' + saved.slice(0, 8).map(function (x) { return '<a href="' + esc(x.u) + '">' + esc(x.t) + '</a>'; }).join(' · ') + '</p>');
+      foot.parentNode.insertBefore(box, foot.nextSibling);
+    }
+  })();
+
+  /* 15. Filtro en /destinos/ */
+  if (/^\/destinos\/?$/.test(location.pathname) && !D.querySelector('.cdo-dfilter')) {
+    var grid = D.querySelector('main .grid');
+    if (grid) {
+      var fi = el('div', 'cdo-dfilter', '<label style="display:block;font-weight:700;margin:0 0 8px" for="cdo-df">' + (EN ? 'Filter destinations' : 'Filtra destinos') + '</label><input id="cdo-df" type="search" autocomplete="off" placeholder="' + (EN ? 'Italy, Bali, Malta…' : 'Italia, Bali, Malta…') + '" style="width:100%;max-width:420px;border:1px solid #E6E1D8;border-radius:100px;padding:11px 16px;font-size:16px;margin-bottom:22px">');
+      grid.parentNode.insertBefore(fi, grid);
+      var norm = function (x) { return x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+      fi.querySelector('input').addEventListener('input', function () {
+        var q = norm(this.value.trim());
+        grid.querySelectorAll('li').forEach(function (li) { li.style.display = !q || norm(li.textContent).indexOf(q) > -1 ? '' : 'none'; });
+        grid.querySelectorAll('section.card').forEach(function (sc) { var any = [].some.call(sc.querySelectorAll('li'), function (li) { return li.style.display !== 'none'; }); sc.style.display = any ? '' : 'none'; });
+      });
+    }
+  }
 })();
