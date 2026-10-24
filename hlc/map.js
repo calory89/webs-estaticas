@@ -249,7 +249,10 @@
       place();
       if (cur) { pick(cur, true); }
       else { var o = ORIG[origin]; svg.transition().duration(800).call(zoom.transform, bboxT([[o[2] - 14, o[1] - 9], [o[2] + 14, o[1] + 9]])); }
-      if (strip) renderStrip();
+      var lazyObs = ('IntersectionObserver' in w) ? new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { var el = en.target; el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')'; el.removeAttribute('data-bg'); lazyObs.unobserve(el); } }); }, { root: strip, rootMargin: '0px 400px' }) : null;
+    function lazyStrip() { strip.querySelectorAll('[data-bg]').forEach(function (el) { if (lazyObs) lazyObs.observe(el); else { el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')'; el.removeAttribute('data-bg'); } }); }
+    var _rs = renderStrip; renderStrip = function () { _rs(); lazyStrip(); };
+    if (strip) renderStrip();
     };
 
     function renderStrip() {
@@ -260,7 +263,7 @@
       });
       strip.innerHTML = order.map(function (p) {
         var ph = p.lib ? libPh(p) : '';
-        return '<button type="button" class="mx-cd" data-s="' + esc(p.s) + '"' + (p.best ? ' data-deal="1"' : '') + (filterFn(p) ? '' : ' hidden') + '><span class="mx-cd-ph" style="' + (ph ? 'background-image:url(' + ph + ')' : 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)') + '">' + (p.best ? '<i>' + p.best.price + ' €</i>' : '') + '</span><b>' + esc(p.n) + '</b><small>' + esc(p.c) + (p.best ? ' · ' + rel(p).all.length + ' chollo' + (rel(p).all.length > 1 ? 's' : '') : '') + '</small></button>';
+        return '<button type="button" class="mx-cd" data-s="' + esc(p.s) + '"' + (p.best ? ' data-deal="1"' : '') + (filterFn(p) ? '' : ' hidden') + '><span class="mx-cd-ph" ' + (ph ? 'data-bg="' + ph + '" style="background:#EADCC4"' : 'style="background:linear-gradient(135deg,#FF5A36,#2E6BF0)"') + '>' + (p.best ? '<i>' + p.best.price + ' €</i>' : '') + '</span><b>' + esc(p.n) + '</b><small>' + esc(p.c) + (p.best ? ' · ' + rel(p).all.length + ' chollo' + (rel(p).all.length > 1 ? 's' : '') : '') + '</small></button>';
       }).join('');
     }
     if (strip) renderStrip();

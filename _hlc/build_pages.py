@@ -70,7 +70,7 @@ def map_block(full=False):
     orig = '<optgroup label="España">' + ''.join(f'<option>{c}</option>' for c in ['Madrid', 'Barcelona', 'Málaga', 'Valencia', 'Sevilla', 'Bilbao', 'Alicante', 'Canarias', 'Palma']) + '</optgroup><optgroup label="Europa">' + ''.join(f'<option>{c}</option>' for c in ['Lisboa', 'Oporto', 'Londres', 'París', 'Ámsterdam', 'Berlín', 'Roma', 'Milán', 'Dublín', 'Copenhague']) + '</optgroup><optgroup label="Resto del mundo">' + ''.join(f'<option>{c}</option>' for c in ['Nueva York', 'Miami', 'Los Ángeles', 'Ciudad de México', 'Bogotá', 'Buenos Aires', 'Dubái', 'Singapur', 'Sídney']) + '</optgroup>'
     regs = ''.join(f'<button type="button" data-region="{r}" aria-pressed="false">{n}</button>' for r, n in [('mundo', 'Mundo'), ('europa', 'Europa'), ('mediterraneo', 'Mediterráneo'), ('america', 'América'), ('asia', 'Asia'), ('africa', 'África'), ('oceania', 'Oceanía')])
     fl = ''.join(f'<button type="button" class="chip" data-f="{f}" aria-pressed="{str(f == "todos").lower()}">{n}</button>' for f, n in [('todos', 'Todos'), ('deal', '🔥 Con chollo hoy'), ('mine', '✈️ Desde mi ciudad'), ('europa', 'Europa'), ('america', 'América'), ('asia', 'Asia'), ('africa', 'África'), ('oceania', 'Oceanía'), ('playa', '🏝️ Playa'), ('ciudad', '🏙️ Ciudad'), ('naturaleza', '⛰️ Naturaleza')])
-    cards = ''.join(f'<button type="button" class="mx-cd" data-s="{d["s"]}"><span class="mx-cd-ph" style="background-image:url(/hlc/img/cities/{d["s"]}-800.jpg)"></span><b>{html.escape(d["n"])}</b><small>{html.escape(d["c"])}</small></button>' for d in DJ)
+    cards = ''.join(f'<button type="button" class="mx-cd" data-s="{d["s"]}"><span class="mx-cd-ph" data-bg="/hlc/img/cities/{d["s"]}-800.jpg" style="background:#EADCC4"></span><b>{html.escape(d["n"])}</b><small>{html.escape(d["c"])}</small></button>' for d in DJ)
     return (f'<div class="mapx{" mapx-full" if full else ""} reveal" data-hlc-map>'
             f'<div class="mapx-top"><label class="mapx-o">✈️ Desde <select data-map-origin aria-label="Ciudad de salida">{orig}</select></label><div class="mapx-reg" role="group" aria-label="Zona del mapa">{regs}</div></div>'
             f'<svg class="mapx-svg" role="img" aria-label="Mapa de destinos de Happy Low Cost"></svg>'
@@ -80,7 +80,7 @@ def map_block(full=False):
             f'<div class="mapx-load">Cargando el mapa…</div></div>'
             f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
             f'<div class="mapx-strip" data-map-strip>{cards}</div>'
-            '<script src="/hlc/map.js?v=5" defer></script>')
+            '<script src="/hlc/map.js?v=6" defer></script>')
 MAP = map_block()
 TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 Todo <small></small></button>' + ''.join(f'<button type="button" class="chip" data-tab="{k}" aria-pressed="false">{em} {n} <small></small></button>' for k, em, n in [('europa', '🇪🇺', 'Europa'), ('asia', '🌏', 'Asia'), ('norteamerica', '🗽', 'Norteamérica'), ('caribe', '🏝️', 'Caribe'), ('sudamerica', '🌎', 'Sudamérica'), ('africa', '🌍', 'África'), ('oceania', '🦘', 'Oceanía'), ('oriente-medio', '🕌', 'Oriente Medio')])
 

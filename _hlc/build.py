@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '15'
+V = '16'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -119,7 +119,50 @@ def old_notice(t):
     return t[:m2.end()] + box + t[m2.end():]
 
 
-stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0, old=0)
+
+
+# ---------- restos de la plantilla WordPress (Soledad) en los posts antiguos ----------
+_TAG_RX = re.compile(r'<(/?)(div|nav|footer|aside|header|ul|section)\b[^>]*>', re.I)
+
+
+def _drop(t, start_rx):
+    """Quita el elemento que empieza en start_rx, contando etiquetas del mismo tipo (balanceado)."""
+    n = 0
+    while True:
+        m = re.search(start_rx, t)
+        if not m:
+            return t, n
+        tag = re.match(r'<(\w+)', m.group(0)).group(1).lower()
+        depth, pos = 0, m.start()
+        for x in _TAG_RX.finditer(t, m.start()):
+            if x.group(2).lower() != tag:
+                continue
+            depth += -1 if x.group(1) else 1
+            if depth == 0:
+                pos = x.end()
+                break
+        else:
+            return t, n
+        t = t[:m.start()] + t[pos:]
+        n += 1
+
+
+LEGACY = [r'<div class="penci-header-wrap"', r'<nav id="sidebar-nav"', r'<div class="post-author\b', r'<footer id="footer-section"', r'<div class="clear-footer"',
+          r'<aside id="block-\d+"', r'<div class="penci-single-link-pages"', r'<div class="post-pagination\b', r'<div class="tags-share-box\b']
+
+
+def legacy_clean(t):
+    if 'id="soledad_wrapper"' not in t:
+        return t, 0
+    total = 0
+    for rx in LEGACY:
+        t, n = _drop(t, rx)
+        total += n
+    t = re.sub(r'<a href="#" id="close-sidebar-nav"[^>]*>.*?</a>', '', t, flags=re.S)
+    return t, total
+
+
+stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0, old=0, legacy=0)
 for f in files:
     stats['files'] += 1
     t0 = open(f, encoding='utf-8', errors='surrogateescape').read()
@@ -150,6 +193,8 @@ for f in files:
     if c:
         t = t.replace(EBC_OLD, EBC_NEW)
         stats['ebc'] += c
+    t, nl = legacy_clean(t)
+    stats['legacy'] += 1 if nl else 0
     t2 = old_notice(t)
     if t2 != t:
         stats['old'] += 1

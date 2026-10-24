@@ -446,6 +446,11 @@ def photo_url(x):
     return x.get('image_url') or ''
 
 
+def stops_es(f):
+    n = f.get('escalas')
+    return 'directo' if n == 0 else (f'{n} escala' + ('s' if n and n > 1 else '') if isinstance(n, int) else 'con escalas')
+
+
 def card(x):
     f = x['facts']
     cs, cn, ce = cont_of(f)
@@ -457,7 +462,7 @@ def card(x):
             f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(x.get("approved_at") or ""))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))}</div>'
-            f'<div class="dc-m">{e(f.get("tipo", ""))}{" · directo" if f.get("escalas") == 0 else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
+            f'<div class="dc-m">{e(f.get("tipo", ""))} · {e(stops_es(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
 
 
 def crumbs(items):
