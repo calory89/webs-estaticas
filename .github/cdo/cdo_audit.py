@@ -16,7 +16,7 @@ for sm in re.findall(r'<loc>([^<]+)</loc>', idx):
 urls = list(dict.fromkeys(urls))
 problems = collections.defaultdict(list)
 titles = collections.defaultdict(list); descs = collections.defaultdict(list)
-internal = set(); external = set(); imgs = set()
+internal = set(); external = set(); imgs = set(); affiliate = set()
 def check(u):
     st, body, hd = get(u)
     return u, st, body.decode('utf-8', 'ignore')
@@ -36,6 +36,7 @@ with cf.ThreadPoolExecutor(8) as ex:
             if "'" in a or '+' in a or '/cdn-cgi/' in a: continue
             if a.startswith('/') and not a.startswith('//'): internal.add(SITE + a.split('?')[0])
             elif a.startswith(SITE): internal.add(a.split('?')[0])
+            if a.startswith('http') and re.search(r'anrdoezrs|civitatis\.com|amzn\.to', a): affiliate.add(a)
             elif a.startswith('http') and not re.search(r'anrdoezrs|booking|civitatis|amzn|amazon|skyscanner|airbnb|twitter|facebook|linkedin|whatsapp|wa\.me|x\.com|instagram|youtube|google', a): external.add(a)
         for i in re.findall(r'<img[^>]+src="(/wp-content/[^"]+)"', h): imgs.add(SITE + i)
 for t, us in titles.items():
@@ -49,6 +50,8 @@ with cf.ThreadPoolExecutor(8) as ex:
     sample = random.sample(sorted(external), min(150, len(external)))
     for u, st in ex.map(head, sample):
         if st in (404, 410) or st == 0: problems['Enlace externo caido (muestra de 150)'].append(f'{u} ({st})')
+    for u, st in ex.map(lambda x: (x, get(x, 'GET')[0]), random.sample(sorted(affiliate), min(60, len(affiliate)))):
+        if st >= 400 or st == 0: problems['Enlace de afiliado que falla (muestra de 60)'].append(f'{u} ({st})')
     for u in random.sample(sorted(imgs), min(200, len(imgs))):
         st, _, hd = get(u, 'HEAD')
         try:
