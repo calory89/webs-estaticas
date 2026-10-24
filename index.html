@@ -96,7 +96,7 @@ header.top.scrolled{border-bottom-color:var(--line)}
 @keyframes mark{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .hero p.lede{margin:0;font-size:19px;color:var(--ink-2);max-width:42ch}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
-.seen{font-family:var(--mono);font-size:13px;letter-spacing:.12em;color:var(--ink-2);text-transform:uppercase}
+.seen{font-family:var(--mono);font-size:13px;letter-spacing:.12em;color:var(--ink-2);text-transform:uppercase;flex-basis:100%}
 @media (max-width:980px){.hero-top{grid-template-columns:minmax(0,1fr);gap:22px}}
 
 /* board */
@@ -138,13 +138,14 @@ header.top.scrolled{border-bottom-color:var(--line)}
 @media (max-width:700px){.cols{display:none}.row{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"c s" "p p";row-gap:8px;column-gap:10px;padding-block:12px}.row .code{grid-area:c;flex-direction:row;gap:8px;align-items:baseline}.row .p{grid-area:p}.row .s{grid-area:s}.d{display:none!important}.board{padding:16px 14px;--gap:2px}.board-head{flex-wrap:wrap;row-gap:10px}}
 
 /* press */
-.press{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px}
+.press{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
 .pl{display:inline-flex;align-items:center;gap:7px;color:var(--ink);opacity:.82}
 .pl-forbes{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:25px;letter-spacing:-.02em;line-height:1}
 .pl-forbes small{font-family:var(--mono);font-size:9px;letter-spacing:.2em;margin-left:6px;font-weight:700;align-self:flex-end;padding-bottom:3px}
 .pl-a3{font-family:var(--body);font-weight:700;font-size:20px;letter-spacing:-.02em}
 .pl-a3 b{font-weight:800}
 .pl-a3 img{width:24px;height:24px}
+.pl-news{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:20px;letter-spacing:-.01em;line-height:1;white-space:nowrap}
 /* reel */
 .reel{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:16px;margin-bottom:28px}
 .reel figure{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--board);aspect-ratio:4/5}
@@ -352,7 +353,7 @@ dialog::backdrop{background:rgba(14,14,18,.6);backdrop-filter:blur(3px)}
         <a class="btn solid" href="#talks" data-i18n="cta_talk">Book me for a talk</a>
         <a class="btn ghost" href="#agency" data-i18n="cta_agency">Grow your company</a>
       </div>
-      <div class="press"><span class="seen" data-i18n="seen_l">As seen in</span><span class="pl pl-forbes" role="img" aria-label="Forbes España">Forbes<small>ESPAÑA</small></span><span class="pl pl-a3" role="img" aria-label="Antena 3"><img decoding="async" alt="Antena3" src="/assets/cdo/antena3.svg" width="24" height="24">antena<b>3</b></span></div>
+      <div class="press"><span class="seen" data-i18n="seen_l">As seen in</span><span class="pl pl-forbes" role="img" aria-label="Forbes España">Forbes<small>ESPAÑA</small></span><span class="pl pl-a3" role="img" aria-label="Antena 3"><img decoding="async" alt="Antena3" src="/assets/cdo/antena3.svg" width="24" height="24">antena<b>3</b></span><span class="pl pl-news" role="img" aria-label="El País">El País</span><span class="pl pl-news" role="img" aria-label="The Guardian">The Guardian</span></div>
     </div>
   </div>
 
