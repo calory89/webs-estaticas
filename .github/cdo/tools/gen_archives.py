@@ -56,6 +56,27 @@ MAIN_S = TPL.find('<main id="main">'); MAIN_E = TPL.find('</main>') + 7
 NEWS = re.search(r'<div class="sec"> <div class="news".*?</div> </div>', re.sub(r'\s+', ' ', TPL[MAIN_S:MAIN_E]))
 NEWS = NEWS.group(0) if NEWS else ''
 
+
+THEMES = [('Dónde dormir', r'dormir|hotel|alojamiento|hospedarse|hostel|albergue'),
+          ('Comer y beber', r'comer|restaurante|brunch|caf[eé]|cerveza|cervecer|vino|tapas|gastronom|platos|vegan|kebab|mercado'),
+          ('Cómo llegar y moverse', r'llegar|aeropuerto|transporte|moverte|moverse|coche|tren|bus|vuelo|visado|bici'),
+          ('Fiestas y temporadas', r'fiesta|festival|navidad|carnaval|oto[ñn]o|invierno|verano|primavera|marzo|diciembre|san valent|halloween'),
+          ('Vivir, estudiar y trabajar', r'vivir|estudiar|trabajar|mudar|n[oó]mada|idiomas|erasmus|empleo'),
+          ('Qué ver y qué hacer', r'qu[eé] ver|qu[eé] hacer|imprescindible|lugares|planes|cosas que|visitar|ruta|paseo|en un d[ií]a|en \d+ d[ií]as|museo|palacio|catedral|mezquita|templo|castillo|iglesia|parque|playa|barrio')]
+def guide_block(name, urls):
+    groups = []
+    used = set()
+    for label, rx in THEMES:
+        items = [u for u in urls if u not in used and re.search(rx, P[u]['h1'].lower())]
+        if len(items) >= 2:
+            items = items[:6]; used.update(items); groups.append((label, items))
+    groups.sort(key=lambda g: 0 if g[0].startswith('Qué ver') else 1)
+    if len(groups) < 2: return ''
+    cols = ''.join(f'<div><h3 style="font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px;color:var(--o-acc,#C2452D)">{esc(l)}</h3><ul style="list-style:none;padding:0;margin:0;display:grid;gap:8px">' +
+                   ''.join(f'<li><a href="{u}" style="color:inherit">{esc(P[u]["h1"])}</a></li>' for u in it) + '</ul></div>' for l, it in groups)
+    return (f'<div class="sec tight cdo-guide"><h2 style="margin:0 0 18px">Guía rápida de {esc(name)}</h2>'
+            f'<div style="display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">{cols}</div></div> ')
+
 def most_specific(r):
     cs = [c for c in r['cats'] if c not in REGIONS and c not in NONTRAVEL and c != '1']
     if cs: return cs[-1]
@@ -138,10 +159,11 @@ def build(base, kind, slug, name, urls, desc, index, parent=None):
         if i == 1 and cards:
             cards = cards.replace('loading="lazy"', 'loading="eager" fetchpriority="high"', 1)
         label = 'Categoría' if kind == 'cat' else 'Etiqueta'
+        h1html = (f'<span>{esc(name)}</span>: guías de viaje' if (kind == 'cat' and slug not in NONTRAVEL) else f'{label}: <span>{esc(name)}</span>')
         crumb_html = f'<a href="/">Inicio</a> &rsaquo; ' + (f'<a href="{parent[0]}">{esc(parent[1])}</a> &rsaquo; ' if parent else '') + esc(name)
         main = (f'<main id="main"> <div class="wrap"> <div class="page-hero"> <span class="eyebrow">{crumb_html}</span> '
-                f'<h1>{label}: <span>{esc(name)}</span></h1> <p>{esc(desc)}</p> </div> '
-                f'<div class="sec tight"> <div class="grid g3"> {cards} </div> {pagination(base, n, i)} </div> {NEWS} </div> </main>')
+                f'<h1>{h1html}</h1> <p>{esc(desc)}</p> </div> ' +
+                (guide_block(name, urls) if (kind == 'cat' and i == 1 and slug not in NONTRAVEL and len(urls) >= 6) else '') + f'<div class="sec tight"> <div class="grid g3"> {cards} </div> {pagination(base, n, i)} </div> {NEWS} </div> </main>')
         doc = head + rest + main + TPL[MAIN_E:]
         fp = os.path.join(ROOT, path.strip('/'), 'index.html')
         os.makedirs(os.path.dirname(fp), exist_ok=True)

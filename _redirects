@@ -284,6 +284,14 @@
 /que-hacer-en-queretaro/45430638_276329022931576_910025730681356119_n/ /que-hacer-en-queretaro/ 301
 /castillo-de-edimburgo/castle-tour-3/ /castillo-de-edimburgo/ 301
 
+/category/ofertas-de-viaje /destinos/ 301
+/category/ofertas-de-viaje.html /destinos/ 301
+/category/europa /europa/ 301
+/category/europa.html /europa/ 301
+/page/2/ /archive/ 301
+/page/3/ /archive/ 301
+/page/4/ /archive/ 301
+/el-top-3-del-centro-de-milan.html /el-top-3-del-centro-de-milan/ 301
 # Dinamicas
 /wp-admin/* / 301
 /:post/feed/ /:post/ 301
