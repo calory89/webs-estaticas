@@ -115,6 +115,8 @@ export async function render(req, r, u, env, ctx) {
   const desc = decodeEntities(j.description || '').trim();
   const posted = j.posted_at ? new Date(j.posted_at) : null;
   const old = posted && Date.now() - posted.getTime() > 60 * DAY;
+  // fichas casi vacías (sin descripción útil) no se indexan: contenido escaso
+  const thin = desc.replace(/\s+/g, ' ').length < 200;
   const fullTitle = `${title} · ${company}${j.location ? ' · ' + j.location : ''} | Jobersity`;
   const metaDesc = [`${title} ${es ? 'en' : 'at'} ${company}${j.location ? ` (${j.location})` : ''}.`, snippet(desc, 110)].filter(Boolean).join(' ').slice(0, 300);
 
@@ -149,7 +151,7 @@ export async function render(req, r, u, env, ctx) {
     .on('html', { element(e) { e.setAttribute('lang', lang); } })
     .on('title', { element(e) { e.setInnerContent(fullTitle); } })
     .on(...set('meta[name="description"]', 'content', metaDesc))
-    .on(...set('meta[name="robots"]', 'content', old ? 'noindex, follow' : 'index, follow, max-image-preview:large'))
+    .on(...set('meta[name="robots"]', 'content', old || thin ? 'noindex, follow' : 'index, follow, max-image-preview:large'))
     .on(...set('meta[property="og:title"]', 'content', fullTitle))
     .on(...set('meta[property="og:description"]', 'content', metaDesc))
     .on(...set('meta[property="og:url"]', 'content', url))
