@@ -13802,7 +13802,7 @@ var server_default = { async fetch(request, env, ctx) {
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-D0GkOeLM.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-ojFoXWiQ.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {
