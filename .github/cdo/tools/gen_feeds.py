@@ -45,7 +45,7 @@ for r in posts[:40]:
     except Exception: d = ''
     img = f'<enclosure url="{SITE}{x(r["img"])}" type="image/{"png" if r["img"].lower().endswith(".png") else "jpeg"}" length="0"/>' if r.get('img') else ''
     items.append(f'<item><title>{x(r["h1"])}</title><link>{SITE}{x(r["url"])}</link><guid isPermaLink="true">{SITE}{x(r["url"])}</guid>'
-                 f'<pubDate>{d}</pubDate><description>{x(r["desc"])}</description>{img}</item>')
+                 f'<pubDate>{d}</pubDate><description>{x(r["desc"])}</description>' + ''.join(f'<category>{x(c)}</category>' for c in r['cats']) + f'{img}</item>')
 open(os.path.join(ROOT, 'feed.xml'), 'w').write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n'
     f'<title>Carlos de Ory</title><link>{SITE}/</link><description>Viajes, puntos y millas, y cómo monto empresas desde Sumba.</description>'
