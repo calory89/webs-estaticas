@@ -1,0 +1,1 @@
+const o={name:"Equinox Investment Group LLC",address:"30 N Gould St Ste N, Sheridan, WY 82801, USA",state:"Wyoming, USA"},e={support:"carlos@equinoxinvestmentgroup.com",legal:"carlos@equinoxinvestmentgroup.com",dpo:"carlos@equinoxinvestmentgroup.com",security:"carlos@equinoxinvestmentgroup.com"};export{o as C,e as E};

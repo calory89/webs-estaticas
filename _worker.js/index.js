@@ -10,6 +10,8 @@ async function sbProxy(req, u) {
   const schema = m[1]; let path = m[2];
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': req.headers.get('origin') || '*', 'access-control-allow-headers': req.headers.get('access-control-request-headers') || '*', 'access-control-allow-methods': 'GET,POST,PUT,PATCH,DELETE,OPTIONS', 'access-control-max-age': '86400' } });
   const h = new Headers(req.headers); h.delete('host');
+  // Visitor IP for per-visitor limits in edge functions (Supabase otherwise sees this Worker's IP).
+  h.set('x-jm-client-ip', req.headers.get('cf-connecting-ip') || '');
   let body = (req.method === 'GET' || req.method === 'HEAD') ? null : await req.arrayBuffer();
   if (path.startsWith('/rest/v1/')) { h.set('accept-profile', schema); h.set('content-profile', schema); }
   else if (path.startsWith('/functions/v1/')) { path = path.replace(/^\/functions\/v1\/([^/?]+)/, (_, f) => '/functions/v1/' + (f.startsWith(schema + '-') ? f : schema + '-' + f)); }
@@ -30,6 +32,7 @@ async function sbProxy(req, u) {
 }
 let top3 = null;
 let jm = null;
+let jb = null;
 let rr = null;
 const NOSPA = new Set(["grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 async function viaTop3(req, env, ctx) {
@@ -68,7 +71,15 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
-    if (host === 'jurimatch.com' && req.method === 'GET' && u.pathname === '/sitemap.xml') { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
+    // jobersity.com: 301 de URLs antiguas, HTML propio en cada /oferta/<id>, 404 reales y cabeceras (see jobersity.js).
+    if (host === 'jobersity.com' && req.method === 'GET') {
+      if (!jb) jb = await import('./jobersity.js');
+      const rd = await jb.redirect(u, env);
+      if (rd) return rd;
+      if (u.pathname.startsWith('/oferta/')) return jb.secure(u, await jb.render(req, await this.siteRaw(req, env, ctx, u, host), u, env, ctx));
+      return jb.secure(u, await jb.status(u, await this.siteRaw(req, env, ctx, u, host)));
+    }
+    if (host === 'jurimatch.com' && req.method === 'GET' && /^\/(sitemap\.xml|login|signin|sign-in|firm-listing)\/?$/.test(u.pathname)) { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
     const r = await this.siteRaw(req, env, ctx, u, host);
     // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).
     if (host === 'jurimatch.com' && req.method === 'GET') { if (!jm) jm = await import('./jurimatch.js'); return jm.render(req, r, u, env, ctx); }
@@ -85,7 +96,7 @@ export default {
     if (u.pathname.startsWith('/_s/')) return new Response('Not found', { status: 404 });
     if (u.pathname === '/api/geo') { const c = req.cf || {}; return Response.json({ country: c.country || null, city: c.city || null, lat: c.latitude ? +c.latitude : null, lon: c.longitude ? +c.longitude : null }); }
     if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(null, { status: 204 });
-    if (host === 'realhunt.co' && /^\/(finds|top|og)\/.+\.(webp|jpe?g|png)$/i.test(u.pathname)) { const m = await fetch('https://realhunt-media.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (m.status === 200) { const h = new Headers(m.headers); h.set('cache-control', 'public, max-age=86400'); return new Response(m.body, { status: 200, headers: h }); } }
+    if (host === 'realhunt.co' && /^\/(?:(?:finds|top|og|images)\/.+|og-[\w-]+|icon-[\w-]+)\.(?:webp|jpe?g|png)$/i.test(u.pathname)) { const m = await fetch('https://realhunt-media.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); const img = (r) => r.status === 200 && /^image\//i.test(r.headers.get('content-type') || ''); const ok = (r) => { const h = new Headers(r.headers); h.set('cache-control', 'public, max-age=86400'); return new Response(r.body, { status: 200, headers: h }); }; if (img(m)) return ok(m); /* v2-src-media: images missing from realhunt-media come from the source repo's public/ folder (Pages project realhunt-top) */ const t = await fetch('https://realhunt-top.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (img(t)) return ok(t); if (u.pathname.startsWith('/top/')) { const t2 = await fetch('https://realhunt-top.pages.dev' + u.pathname.slice(4), { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (img(t2)) return ok(t2); } }
     if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await env.ASSETS.fetch(new Request(new URL(pre + '/__q/' + k + '=' + v + '/', u), req)); if (q.status === 200) return q; } } }
     // realhunt.co: one URL per page, without the trailing slash, matching the canonical tags. "/about/" sends a 301 to
     // "/about", and "/about" is served from the about/index.html file directly instead of redirecting to the folder.

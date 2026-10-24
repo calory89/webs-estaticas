@@ -28,10 +28,13 @@ const PAGES = {
   '/terms': ['Terms of Service | ReelRole', 'The terms for using ReelRole.'],
   '/cookies': ['Cookie Policy | ReelRole', 'How ReelRole uses cookies.'],
   '/gdpr': ['GDPR | ReelRole', 'Your rights under the GDPR and how to exercise them on ReelRole.'],
+  '/jobs': ['Jobs with video interviews | ReelRole', 'Open roles where you apply by answering short video questions. Free for candidates.'],
   '/guest-video-recording': ['Record Your Video | ReelRole', 'Record a short video profile in your browser. No account needed to start.'],
 };
 // App screens: served normally but never indexed.
 const APP = /^\/(talent|company|admin|messages|auth|login|register|reset-password)(\/|$)/;
+// Invite links (/r/<code>) and sample reels (/v/preview-<slug>) are real app pages, never indexed.
+const NOINDEX_OK = /^\/(r\/[A-Za-z0-9_-]{2,32}|v\/preview-[a-z0-9-]{2,80})$/;
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const ld = (o) => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
@@ -69,6 +72,21 @@ async function loadTalent(id, ctx) {
   return JSON.parse(body);
 }
 
+async function loadJob(id, ctx) {
+  const url = SB + 'job_posts?select=id,title,company_name,city,country,remote,employment_type,description,status,published_at&id=eq.' + id + '&limit=1';
+  const cache = caches.default;
+  const key = new Request('https://reelrole-edge-cache/job/' + id);
+  const hit = await cache.match(key);
+  if (hit) return hit.json();
+  const r = await fetch(url, { headers: { apikey: ANON, authorization: 'Bearer ' + ANON } });
+  if (!r.ok) return { error: true };
+  const rows = await r.json();
+  const j = Array.isArray(rows) && rows[0] ? rows[0] : null;
+  const body = JSON.stringify(j ? { job: j } : { missing: true });
+  ctx.waitUntil(cache.put(key, new Response(body, { headers: { 'cache-control': 'public, max-age=300' } })));
+  return JSON.parse(body);
+}
+
 export async function render(req, res, u, env, ctx) {
   try {
     const ct = res.headers.get('content-type') || '';
@@ -79,6 +97,21 @@ export async function render(req, res, u, env, ctx) {
     if (page) return rewrite(res, { title: page[0], description: page[1], canonical: ORIGIN + (path === '/' ? '/' : path), robots: 'index, follow' });
 
     if (APP.test(path)) return rewrite(res, { robots: 'noindex, nofollow', canonical: null });
+    if (NOINDEX_OK.test(path)) return rewrite(res, { robots: 'noindex, follow', canonical: null });
+
+    const jm = path.match(/^\/jobs\/([^/]+)$/);
+    if (jm && UUID.test(jm[1])) {
+      const data = await loadJob(jm[1].toLowerCase(), ctx);
+      if (data.error) return res;
+      const j = data.job;
+      if (!j || j.status !== 'open') {
+        return rewrite(res, { title: 'Job not found | ReelRole', robots: 'noindex, follow', canonical: null, status: 404 });
+      }
+      const place = j.remote ? 'Remote' : [j.city, j.country].filter(Boolean).map(clean).join(', ');
+      const title = `${clean(j.title)}${j.company_name ? ' at ' + clean(j.company_name) : ''}${place ? ', ' + place : ''} | ReelRole`;
+      const description = clean(j.description || '').replace(/\s+/g, ' ').slice(0, 155) || `Apply to ${clean(j.title)} with a short video on ReelRole.`;
+      return rewrite(res, { title, description, canonical: ORIGIN + '/jobs/' + jm[1].toLowerCase(), robots: 'index, follow' });
+    }
 
     const m = path.match(/^\/v\/([^/]+)$/);
     if (m && UUID.test(m[1])) {

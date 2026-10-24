@@ -8,5 +8,7 @@ Disallow: /auth
 Disallow: /reset-password
 Disallow: /payment-success
 Disallow: /my-data
+Disallow: /*?q=
+Disallow: /*&q=
 
 Sitemap: https://jurimatch.com/sitemap.xml

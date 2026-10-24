@@ -11,6 +11,8 @@ Today: 506 homes in 18 countries. Updated 2026-10-24.
 - [New homes](https://realhunt.co/new) and [RSS](https://realhunt.co/feed.xml)
 - [Prices by country](https://realhunt.co/research/prices): median price and price per m² by country.
 - [Buying costs abroad](https://realhunt.co/costs)
+- [Buying guides by country](https://realhunt.co/guide)
+- [Compare two countries](https://realhunt.co/countries)
 - [New builds Top 100](https://realhunt.co/top): Bali, Phuket, Tulum, Batumi, Koh Samui.
 - [Research and guides](https://realhunt.co/blog)
 - [Site map](https://realhunt.co/sitemap)
