@@ -262,3 +262,4 @@ body.single time,body.single .post-tags,body.single .post-box-meta-single,body.s
 .pm-card{display:flex;flex-direction:column;gap:4px;padding:18px 20px;border-radius:18px;background:#fff;border:1px solid var(--linea);text-decoration:none;color:var(--tinta);box-shadow:var(--sh)}
 .pm-card b{font:800 20px var(--fd)}.pm-card span{color:#4A5468}
 .pm-chips{flex-wrap:wrap}
+.hlc-ck .hlc-btn,.hlc-ck button{border-radius:14px!important}
