@@ -50,7 +50,7 @@ chips = ''.join(f'<button type="button" class="chip" data-origin="{o}" aria-pres
 STEPS = [
  ('lisboa', '01 · DESPEGA', 'Elige desde dónde vuelas', 'Madrid, Barcelona, Málaga, Valencia, Bilbao o Canarias. Te enseñamos primero lo que sale desde tu aeropuerto.', ('Ver chollos de hoy', '/chollos/', '')),
  ('maldivas', '02 · CAZAMOS', 'Rastreamos los errores de tarifa', 'Vigilamos aerolíneas y webs de chollos de todo el mundo, 24 horas al día. Cuando una tarifa se desploma, saltamos.', None),
- ('nueva-york', '03 · VERIFICAMOS', 'Comprobamos el precio antes de publicarlo', 'Solo publicamos si el precio sigue ahí en ese momento, con las fechas exactas. Si mañana ya no está, lo quitamos.', None),
+ ('nueva-york', '03 · VERIFICAMOS', 'Comprobamos el precio antes de publicarlo', 'Solo publicamos si el precio sigue ahí en ese momento, con las fechas exactas, y te decimos a qué hora lo comprobamos.', None),
  ('bali', '04 · RESERVA', 'Vuelo + hotel en dos clics', 'Te llevamos directo a las fechas encontradas y a hoteles con buena nota en tu destino. Sin dar vueltas.', ('Buscar hoteles', CJ('17288959', 'https://www.booking.com/index.es.html'), R)),
  ('tokio', '05 · DISFRUTA', 'Y vuelve con la cartera feliz', 'Más de 400.000 viajeros ya viajan así. Cuéntanos tu viaje en Facebook y ayuda al siguiente.', ('Síguenos en Facebook', 'https://www.facebook.com/happylowcostofficialpage/', 'target="_blank" rel="noopener"')),
 ]
@@ -86,7 +86,7 @@ TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 
 blog = ''.join(f'<a class="reveal" href="{u}"><div style="background-image:url({i})"></div><span>{html.escape(t)}</span></a>' for i, u, t in posts)
 
 PAST = [  # chollos reales que ya publicamos (enlazan al post original)
- ('nueva-york', 'Madrid → Nueva York', '97 €', 'ida y vuelta · publicado en 2020', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
+ ('nueva-york', 'Madrid → Nueva York', '97 €', 'ida y vuelta · publicado en 2020 · vuelos en mayo 2021', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
  ('maldivas', 'España → Maldivas', '307 €', 'ida y vuelta · 2022', '/‼mas-barato-que-nunca‼-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
  ('reikiavik', 'España → Islandia', '136 €', 'ida y vuelta · directo · 2022', '/vuelos-directos-a-islandia-desde-solo-136e-i-v/'),
  ('tokio', 'España → Tokio', '387 €', 'ida y vuelta · 2020', '/ganga-vuelos-a-tokio-desde-solo-387e-i-v-en-septiembre/'),

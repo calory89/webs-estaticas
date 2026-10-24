@@ -105,10 +105,7 @@ document.documentElement.classList.add('hlc-js');
   function mobileBar(){
     var p=location.pathname;
     var b=d.createElement('nav');b.className='hlc-bar';b.setAttribute('aria-label','Accesos rápidos');
-    b.innerHTML='<a class="'+(p==='/'||p.indexOf('/chollos')===0?'on':'')+'" href="/chollos/">'+IC.plane+'Chollos</a>'+
-      '<a class="'+(p.indexOf('/alertas')===0?'on':'')+'" href="/alertas/">'+IC.bell+'Alertas</a>'+
-      '<a href="'+L.hoteles+'" target="_blank" rel="sponsored nofollow noopener" data-hlc="bar_hoteles">'+IC.bed+'Hoteles</a>'+
-      '<a class="'+(p.indexOf('/guias')===0?'on':'')+'" href="/guias-ciudades/">'+IC.map+'Guías</a>';
+    b.innerHTML='<a class="'+(p==='/'||p==='/en/'||p.indexOf('/chollos')===0||p.indexOf('/en/deals')===0?'on':'')+'" href="'+T('/chollos/','/en/deals/')+'">'+IC.plane+T('Chollos','Deals')+'</a>'+'<a class="'+(p.indexOf('/vuelos')===0||p.indexOf('/en/flights')===0?'on':'')+'" href="'+T('/vuelos/','/en/flights/')+'">'+IC.bed.replace(/<path[\s\S]*$/,'')+'<path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/><circle cx="12" cy="12" r="9"/></svg>'+T('Rutas','Routes')+'</a>'+(EN?'':'<a class="'+(p.indexOf('/alertas')===0?'on':'')+'" href="/alertas/">'+IC.bell+'Alertas</a>')+'<a class="'+(p.indexOf('/destinos')===0||p.indexOf('/en/destinations')===0?'on':'')+'" href="'+T('/destinos/','/en/destinations/')+'">'+IC.map+T('Destinos','Guides')+'</a>';
     d.body.appendChild(b);
   }
 
@@ -124,14 +121,14 @@ document.documentElement.classList.add('hlc-js');
 
   /* ---------- Chollos en vivo ---------- */
   var feedP=null;
-  var NCITY={'Las Palmas de Gran Canaria':'Gran Canaria','Denpasar (Bali)':'Bali','Denpasar':'Bali','Abu Dhabi':'Abu Dabi','Port Louis':'Isla Mauricio'},NC={'EE. UU.':'Estados Unidos','EEUU':'Estados Unidos','EE.UU.':'Estados Unidos','Emiratos':'Emiratos Árabes Unidos','Rep. Dominicana':'República Dominicana','Escocia':'Reino Unido','Sicilia':'Italia'};function normDeal(x){var f=x&&x.facts;if(!f)return x;['origen','destino'].forEach(function(k){if(NCITY[f[k]])f[k]=NCITY[f[k]];});['origen_pais','pais'].forEach(function(k){if(NC[f[k]])f[k]=NC[f[k]];});if(typeof x.title==='string')Object.keys(NCITY).forEach(function(a){if(a!=='Denpasar')x.title=x.title.split(a).join(NCITY[a]);});return x;}function feed(){if(!feedP)feedP=Promise.all([fetch(API+'?action=feed').then(function(r){return r.json();}).then(function(l){return (l||[]).map(normDeal);}).catch(function(){return [];}),fetch('/hlc/destinos.json').then(function(r){return r.json();}).catch(function(){return [];}),fetch('/chollos/hechos.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return [];})]).then(function(a){DESTS=a[1];HECHOS=a[2];return a[0];});return feedP;}
-  var DESTS=[],HECHOS=[];w.HLC_feed=function(){return feed();};
+  var NCITY={'Las Palmas de Gran Canaria':'Gran Canaria','Denpasar (Bali)':'Bali','Denpasar':'Bali','Abu Dhabi':'Abu Dabi','Port Louis':'Isla Mauricio'},NC={'EE. UU.':'Estados Unidos','EEUU':'Estados Unidos','EE.UU.':'Estados Unidos','Emiratos':'Emiratos Árabes Unidos','Rep. Dominicana':'República Dominicana','Escocia':'Reino Unido','Sicilia':'Italia'};function normDeal(x){var f=x&&x.facts;if(!f)return x;['origen','destino'].forEach(function(k){if(NCITY[f[k]])f[k]=NCITY[f[k]];});['origen_pais','pais'].forEach(function(k){if(NC[f[k]])f[k]=NC[f[k]];});if(typeof x.title==='string')Object.keys(NCITY).forEach(function(a){if(a!=='Denpasar')x.title=x.title.split(a).join(NCITY[a]);});return x;}function feed(){if(!feedP)feedP=Promise.all([fetch(API+'?action=feed').then(function(r){return r.json();}).then(function(l){return (l||[]).map(normDeal);}).catch(function(){return [];}),fetch('/hlc/destinos.json').then(function(r){return r.json();}).catch(function(){return [];}),fetch('/chollos/hechos.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return [];}),fetch('/hlc/fx.json').then(function(r){return r.json();}).catch(function(){return null;})]).then(function(a){DESTS=a[1];HECHOS=a[2];FX=a[3];return (a[0]||[]).filter(function(x){var p=(x.facts||{}).ahorro_pct;return !p||p>=25;});});return feedP;}
+  var DESTS=[],HECHOS=[],FX=null;function loc(eur,cc){try{var c=FX&&FX.cc[(cc||'').toUpperCase()];if(!c||!eur||!FX.rates[c[0]])return '';var v=eur*FX.rates[c[0]];v=Math.round(v/(v>=20000?100:v>=2000?10:1))*(v>=20000?100:v>=2000?10:1);var n=v.toLocaleString(EN?'en-GB':'es-ES');return EN?'≈ '+c[1]+n:'≈ '+n+' '+c[1];}catch(e){return '';}}w.HLC_feed=function(){return feed();};
   function sl(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
   w.HLC_photo=function(dest){var k=sl(dest);for(var i=0;i<DESTS.length;i++){var p=DESTS[i];if(p.s===k||sl(p.n)===k||(p.a||[]).indexOf(k)>=0){var n=Math.floor(Math.random()*((p.k||0)+1));return '/hlc/img/cities/'+p.s+(n?'-'+(n+1):'-800')+'.jpg';}}return null;};
   function dealUrl(x){return HECHOS.indexOf(x.slug)>=0?'/chollos/'+x.slug+'/':'/chollos/ver/?s='+encodeURIComponent(x.slug);}
   function flag(cc){cc=(cc||'').toUpperCase();return cc.length===2?String.fromCodePoint(127462+cc.charCodeAt(0)-65,127462+cc.charCodeAt(1)-65):'✈️';}
   var CONT={'Europa':['europa','🇪🇺','Europa'],'Asia':['asia','🌏','Asia'],'Oriente Medio':['oriente-medio','🕌','Oriente Medio'],'Norteamérica':['norteamerica','🗽','Norteamérica'],'Centroamérica y Caribe':['caribe','🏝️','Caribe'],'Sudamérica':['sudamerica','🌎','Sudamérica'],'África':['africa','🌍','África'],'Oceanía':['oceania','🦘','Oceanía']};
-  function priceHtml(x){var f=x.facts||{};if(f.precio_normal&&f.precio_normal>x.price)return '<div class="dc-p"><s>'+esc(f.precio_normal)+' €</s>'+esc(x.price)+' €</div>';return '<div class="dc-p">'+esc(x.price)+' €</div>';}
+  function priceHtml(x){var f=x.facts||{};var l=loc(x.price,f.origen_cc);var lh=l?'<small class="dc-loc">'+esc(l)+'</small>':'';if(f.precio_normal&&f.precio_normal>x.price)return '<div class="dc-p"><s>'+esc(f.precio_normal)+' €</s>'+esc(x.price)+' €'+lh+'</div>';return '<div class="dc-p">'+esc(x.price)+' €'+lh+'</div>';}
   function card(x){
     var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;
     var save=f.ahorro_pct?'<span class="dc-save">−'+esc(f.ahorro_pct)+' %</span>':'';
@@ -319,7 +316,8 @@ document.documentElement.classList.add('hlc-js');
     },true);
   }
 
-  function init(){
+  function okStamps(){d.querySelectorAll('.dc[data-ts] [data-ok-ts]').forEach(function(el){var ts=el.closest('.dc').getAttribute('data-ts');if(!ts)return;var t=Date.parse(ts+(/Z|[+-]\d\d:?\d\d$/.test(ts)?'':'Z'));if(!t)return;var m=Math.max(1,Math.round((Date.now()-t)/6e4)),h=Math.round(m/60),dd=Math.round(h/24);var txt=m<60?(EN?m+' min ago':'hace '+m+' min'):h<48?(EN?h+' h ago':'hace '+h+' h'):(EN?dd+' days ago':'hace '+dd+' días');el.textContent=(EN?'✓ Verified ':'✓ Verificado ')+txt;el.title=new Date(t).toLocaleString(EN?'en-GB':'es-ES');});}
+  function init(){try{okStamps();}catch(e){}
     [bkLinks,langSwitch,quick,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();

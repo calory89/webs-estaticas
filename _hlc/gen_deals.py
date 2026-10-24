@@ -70,6 +70,50 @@ def smart_desc(t, n=155):
     return t[:n - 1].rsplit(' ', 1)[0].rstrip(',;:') + '…'
 
 
+MIN_SAVE = 25  # % mínimo frente al precio habitual para enseñar un chollo en la web (el agente exige 20 %)
+
+
+def keep_deal(x):
+    p = (x.get('facts') or {}).get('ahorro_pct')
+    return not p or p >= MIN_SAVE
+
+
+# moneda local del país de salida (tipos de referencia del BCE del día)
+CUR = {'US': ('USD', 'US$'), 'CA': ('CAD', 'CA$'), 'AU': ('AUD', 'AU$'), 'NZ': ('NZD', 'NZ$'), 'MX': ('MXN', 'MX$'), 'BR': ('BRL', 'R$'), 'GB': ('GBP', '£'),
+       'CH': ('CHF', 'CHF'), 'JP': ('JPY', '¥'), 'KR': ('KRW', '₩'), 'CN': ('CNY', 'CN¥'), 'HK': ('HKD', 'HK$'), 'SG': ('SGD', 'S$'), 'IN': ('INR', '₹'), 'ID': ('IDR', 'Rp'),
+       'MY': ('MYR', 'RM'), 'PH': ('PHP', '₱'), 'TH': ('THB', '฿'), 'ZA': ('ZAR', 'R'), 'TR': ('TRY', '₺'), 'PL': ('PLN', 'zł'), 'CZ': ('CZK', 'Kč'), 'HU': ('HUF', 'Ft'),
+       'RO': ('RON', 'lei'), 'SE': ('SEK', 'kr'), 'NO': ('NOK', 'kr'), 'DK': ('DKK', 'kr'), 'IS': ('ISK', 'kr'), 'IL': ('ILS', '₪')}
+FX = {}
+
+
+def load_fx():
+    """Tipos de cambio del BCE (euro = base). Se guardan en hlc/fx.json para el JavaScript."""
+    global FX
+    try:
+        x = urllib.request.urlopen(urllib.request.Request('https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml', headers=UA), timeout=30).read().decode()
+        FX = {m.group(1): float(m.group(2)) for m in re.finditer(r"currency='([A-Z]{3})' rate='([0-9.]+)'", x)}
+        dt = (re.search(r"time='([0-9-]+)'", x) or [None, ''])[1]
+        if FX:
+            json.dump({'date': dt, 'rates': FX, 'cc': {k: v for k, v in CUR.items()}}, open(os.path.join('hlc', 'fx.json'), 'w'), separators=(',', ':'))
+    except Exception as ex:
+        print('fx', ex)
+        try:
+            FX = json.load(open(os.path.join('hlc', 'fx.json')))['rates']
+        except Exception:
+            FX = {}
+
+
+def local(eur, cc, en=False):
+    """'≈ 553 US$' (o 'US$553' en inglés) si el país de salida no usa euro; '' si usa euro o no hay tipo."""
+    c = CUR.get((cc or '').upper())
+    if not c or not eur or c[0] not in FX:
+        return ''
+    v = float(eur) * FX[c[0]]
+    v = int(round(v, -2 if v >= 20000 else (-1 if v >= 2000 else 0)))
+    n = f'{v:,}'.replace(',', ',' if en else '.')
+    return f'≈ {c[1]}{n}' if en else f'≈ {n} {c[1]}'
+
+
 # continentes de verdad (Oriente Medio es Asia; Caribe y Centroamérica, América del Norte)
 REAL_CONT = {'Europa': 'Europa', 'Asia': 'Asia', 'Oriente Medio': 'Asia', 'Norteamérica': 'América del Norte', 'Centroamérica y Caribe': 'América del Norte',
              'Sudamérica': 'América del Sur', 'África': 'África', 'Oceanía': 'Oceanía'}
@@ -394,10 +438,10 @@ def card(x):
     oc = slugify(f.get('origen_pais') or '')
     return (f'<a class="dc" href="/chollos/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(ago_iso(x.get("approved_at")))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok">✓ Verificado</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(x.get("approved_at") or ""))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))}</div>'
-            f'<div class="dc-m">{e(f.get("tipo", ""))}{" · directo" if f.get("escalas") == 0 else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €</div></div></a>')
+            f'<div class="dc-m">{e(f.get("tipo", ""))}{" · directo" if f.get("escalas") == 0 else ""} · {e(fecha(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
 
 
 def crumbs(items):
@@ -504,6 +548,8 @@ def main():
     today = datetime.date.today().isoformat()
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and (x['facts'].get('ida') or '9999') >= today]
     deals = [norm_deal(x) for x in deals]
+    deals = [x for x in deals if keep_deal(x)]
+    load_fx()
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html')}
 
@@ -600,9 +646,9 @@ def main():
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""}</div>
+<div class="kicker" style="color:#FFC531">✓ Chollo verificado el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""} · <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></div>
 <h1>{e(title)}</h1>
-<div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
+<div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(local(x.get("price"), f.get("origen_cc")))} al cambio de hoy</span>' if local(x.get("price"), f.get("origen_cc")) else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
@@ -633,7 +679,7 @@ def main():
     nconts = len({REAL_CONT.get(x['facts'].get('continente') or '') for x in deals} - {None, ''})
     # ---------- explorador /chollos/ ----------
     intro = (f"{len(deals)} chollos de vuelos activos ahora mismo, con salida desde {len(origins)} países y destinos en {nconts} continentes. "
-             f"Cada precio se comprueba antes de publicarlo; si mañana ya no está, lo retiramos.")
+             f"Cada precio se comprueba en Kiwi.com justo antes de publicarlo y mostramos la hora exacta de esa comprobación.")
     list_page('chollos', 'Chollos de vuelos de hoy en todo el mundo, verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
               f'{SITE}/chollos/', [('Inicio', '/'), ('Chollos', None)], extra_links=hub, explorer=True)
 
@@ -667,7 +713,7 @@ def main():
         cheapest = min((x['price'] for x in sub), default=None)
         tops = ', '.join(dict.fromkeys(x['facts'].get('destino') for x in sub))
         intro = (f"{len(sub)} chollos de vuelos desde {pais} verificados hoy" + (f", desde {cheapest} €" if cheapest else "") + (f": {tops[:160]}." if tops else ".") +
-                 " Comprobamos cada precio antes de publicarlo y retiramos los que caducan.") if sub else f"Ahora mismo no hay chollos con salida desde {pais}. Vuelve pronto o crea una alerta gratis y te avisamos."
+                 " Comprobamos cada precio antes de publicarlo y mostramos cuándo.") if sub else f"Ahora mismo no hay chollos con salida desde {pais}. Vuelve pronto o crea una alerta gratis y te avisamos."
         list_page(f'chollos/desde/{k}', f'Chollos de vuelos desde {pais} hoy · Happy Low Cost', f'Chollos de vuelos desde {pais}', f'{flag(cc)} Salidas desde {pais}', intro, sub,
                   f'{SITE}/chollos/desde/{k}/', [('Inicio', '/'), ('Chollos', '/chollos/'), (f'Desde {pais}', None)], extra_links=hub, noindex=not sub)
         gen.add('desde/' + k)

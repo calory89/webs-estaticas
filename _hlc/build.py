@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '12'
+V = '13'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')

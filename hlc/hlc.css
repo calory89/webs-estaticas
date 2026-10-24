@@ -153,3 +153,5 @@ form.done>.af{display:none}
 .lang-note a{color:#FFC531;text-decoration:underline}
 .lang-note button{position:absolute;right:.6rem;top:50%;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:16px;cursor:pointer}
 .hx-lang{white-space:nowrap}
+
+.dc-p .dc-loc{display:block;font:600 13px/1.2 var(--fb,Inter,sans-serif);color:#4A5468;text-align:right;margin-top:3px;white-space:nowrap}

@@ -91,12 +91,12 @@ HEADER = '''<header class="hx" id="hx"><div class="hx-in">
 FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
 <p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
-<div><h4>Deals</h4><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a></div>
+<div><h4>Deals</h4><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a></div>
 <div><h4>Explore</h4><a href="/en/destinations/">Destination guides</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/aviso-legal-datos-cookies/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy & cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=12" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=13" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -125,10 +125,10 @@ def card(x):
     q = slugify(' '.join([o, d, f.get('origen', ''), f.get('destino', ''), country(f, 'origen'), country(f, 'destino')]))
     return (f'<a class="dc" href="/en/deals/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-ts="{e(G.ago_iso(x.get("approved_at")))}" data-q="{e(q)}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok">✓ Verified</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
+            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} %</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(x.get("approved_at") or ""))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(d)}</span>{f"<span class=dc-cont>{ce} {e(cn.replace("the ", "").title() if cn.startswith("the ") else cn)}</span>" if cs else ""}</div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(country(f, "origen"))}">{flag(f.get("origen_cc"))}</span> {e(o)} → {e(d)}</div>'
-            f'<div class="dc-m">{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""} · {e(date_en(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}</div></div></a>')
+            f'<div class="dc-m">{trip(f)}{" · nonstop" if f.get("escalas") == 0 else ""} · {e(date_en(f.get("ida", "")))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}{f'<small class="dc-loc">{e(G.local(x.get("price"), f.get("origen_cc"), True))}</small>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}</div></div></a>')
 
 
 def filters(deals):
@@ -182,6 +182,9 @@ def main():
     today = datetime.date.today().isoformat()
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and x.get('en') and (x['facts'].get('ida') or '9999') >= today and G.photo_url(x)]  # nunca sin foto
     deals = [G.norm_deal(x) for x in deals]
+    deals = [x for x in deals if G.keep_deal(x)]
+    if not G.FX:
+        G.load_fx()
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html_en')}
     hechos = set()
@@ -215,9 +218,9 @@ def main():
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{G.photos_attr(ls_) if ls_ else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Deal verified on {e(date_en(verified))} at {e(verified[11:16])} (UTC)</div>
+<div class="kicker" style="color:#FFC531">✓ Deal verified on {e(date_en(verified))} at {e(verified[11:16])} (UTC) · <a href="/en/how-we-verify/" style="color:#FFC531;text-decoration:underline">how we check</a></div>
 <h1>{e(title)}</h1>
-<div class="deal-cta"><a class="price-tag" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio_en">€{e(x.get('price'))} <small>{trip(f)}</small></a>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
+<div class="deal-cta"><a class="price-tag" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio_en">€{e(x.get('price'))} <small>{trip(f)}</small></a>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(G.local(x.get("price"), f.get("origen_cc"), True))} at today’s rate</span>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
@@ -245,7 +248,7 @@ def main():
     # ---------- explorer /en/deals/ and home /en/ ----------
     cheapest = min((x['price'] for x in deals), default=None)
     intro = (f"{len(deals)} flight deals live right now, departing from {len(origins)} countries to {nconts} continents. "
-             "We check every price before publishing it, and pull deals as soon as they expire.")
+             "We check every price on Kiwi.com right before publishing it and show exactly when.")
     grid = ''.join(card(x) for x in deals) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'
     empty = '<div class="dc-empty" data-x-empty hidden><b>No deals match those filters.</b><span>Try removing a filter.</span></div>'
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/deals/{x['slug']}/", "name": x['en'].get('title', '')} for i, x in enumerate(deals[:50])]
@@ -267,7 +270,7 @@ def main():
     web = {"@type": "WebSite", "url": f"{SITE}/en/", "name": "Happy Low Cost", "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"}}
     page = head('Happy Low Cost · We hunt the cheapest flights in the world', f"Verified cheap flight deals from every continent{f', from €{cheapest}' if cheapest else ''}. Error fares and flash sales, checked before we publish them.",
                 f'{SITE}/en/', f'{SITE}/', ld=[org, web, ldl[0]], body_class='home home2')
-    PAST_EN = [('nueva-york', 'Spain → New York', '€97', 'return · 2020', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
+    PAST_EN = [('nueva-york', 'Madrid → New York', '€97', 'return · published 2020 · flights May 2021', '/vuelos-a-nueva-york-por-solo-97e-ida-y-vuelta-desde-madrid-en-mayo-2021/'),
                ('maldivas', 'Spain → Maldives', '€307', 'return · 2022', '/‼mas-barato-que-nunca‼-vuelos-a-islas-maldivas-por-solo-307e-i-v/'),
                ('reikiavik', 'Spain → Iceland', '€136', 'return · nonstop · 2022', '/vuelos-directos-a-islandia-desde-solo-136e-i-v/'),
                ('tokio', 'Spain → Tokyo', '€387', 'return · 2020', '/ganga-vuelos-a-tokio-desde-solo-387e-i-v-en-septiembre/'),
