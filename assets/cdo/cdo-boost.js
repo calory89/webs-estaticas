@@ -110,4 +110,9 @@
     var f = e.target;
     if (f && (f.id === 'hnl' || f.closest('.news'))) { setTimeout(function () { if (D.querySelector('.ory-nl-ok') || /board|dentro|bordo/i.test(f.parentNode ? f.parentNode.textContent : '')) { ls('cdo-nl', '1'); ev('nl_subscribe', { source: 'inline' }); } }, 2500); }
   }, true);
+  /* 5. Envio de formularios de contacto, charla y agencia */
+  D.addEventListener('submit', function (e) {
+    var f = e.target; if (!f || !f.id) { return; }
+    if (f.id === 'cf' || f.id === 'bp') { ev('lead_submit_try', { kind: f.getAttribute('data-kind') || f.id, page: location.pathname }); }
+  }, true);
 })();
