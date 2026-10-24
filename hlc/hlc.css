@@ -4,7 +4,7 @@
    Bricolage Grotesque (títulos) + Inter (texto)
    ========================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap');
-:root{--coral:#FF5A36;--coral-d:#D9401F;--sol:#FFC531;--cielo:#2E6BF0;--tinta:#14213D;--crema:#FFF8EE;--linea:#EADCC4;--gris:#4A5468;--verde:#0B6B45;--r:20px;--sh:0 10px 30px rgba(20,33,61,.08);--fd:'Bricolage Grotesque',system-ui,sans-serif;--fb:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+:root{--coral:#FF5A36;--coral-d:#C93A1C;--sol:#FFC531;--cielo:#2E6BF0;--tinta:#14213D;--crema:#FFF8EE;--linea:#EADCC4;--gris:#4A5468;--verde:#0B6B45;--r:20px;--sh:0 10px 30px rgba(20,33,61,.08);--fd:'Bricolage Grotesque',system-ui,sans-serif;--fb:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
 html{scroll-behavior:smooth}
 body{background:var(--crema)!important;color:var(--tinta)!important;font-family:var(--fb)!important;-webkit-font-smoothing:antialiased}
 body,p,li,td{font-size:17px}
@@ -96,7 +96,7 @@ body.hlc-ck-open .hlc-bar{display:none}
 /* ---------- pie nuevo ---------- */
 .fx{background:var(--tinta);color:#D6DCEA;margin-top:60px;padding:56px 20px 40px}
 .fx-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
-.fx h4{color:#fff!important;font:800 18px var(--fd)!important;margin:0 0 12px}
+.fx h4,.fx h2.fx-h{color:#fff!important;font:800 18px var(--fd)!important;margin:0 0 12px;letter-spacing:0}
 .fx a{color:#D6DCEA!important;text-decoration:none;display:table;padding:5px 0;font-size:15px}
 .fx a:hover{color:var(--sol)!important}
 .fx .fx-logo b{font:800 40px/.85 var(--fd);color:#fff;letter-spacing:-.045em}
@@ -192,7 +192,7 @@ a.chip{text-decoration:none!important;display:inline-flex;align-items:center}
 @media(max-width:640px){.inner-post-entry h2{font-size:24px!important}.hlc-rel{padding:18px 14px}}
 /* tarjetas de chollo también fuera de la portada (posts antiguos, guías) */
 .dc[hidden],.dc-empty[hidden]{display:none!important}
-.dc-fav{position:absolute;top:10px;right:10px;z-index:2;width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;font:700 20px/1 Inter,sans-serif;color:#D9401F;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.18);transition:transform .15s}
+.dc-fav{position:absolute;top:10px;right:10px;z-index:2;width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;font:700 20px/1 Inter,sans-serif;color:#C93A1C;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.18);transition:transform .15s}
 .dc-fav:hover{transform:scale(1.1)}.dc-fav.on{background:#FF5A36;color:#fff}
 .dc-flag{font-size:15px}
 .dc-p s{display:block;font:600 14px var(--fb);color:#9aa3b5;text-align:right;margin-bottom:2px}

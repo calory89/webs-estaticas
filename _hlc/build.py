@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '31'
+V = '32'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -274,6 +274,8 @@ def legacy_seo(t):
         if tm:
             t = re.sub(r'(</title>)', lambda m: m.group(1) + '<meta name="description" content="' + _html.escape(desc) + '">', t, count=1)
     t = t.replace('https:\\/\\/www.happylowcost.com\\/?s={search_term_string}', 'https:\\/\\/www.happylowcost.com\\/buscar\\/?q={search_term_string}')
+    t = re.sub(r'<div class="container container-single([^"]*)">', r'<div class="container container-single\1" role="main">', t, count=1)
+    t = re.sub(r'<h([2-6])[^>]*>(?:\s|&nbsp;|<br\s*/?>)*</h\1>', '', t)
     # imágenes sociales con URL absoluta
     t = re.sub(r'(<meta (?:property|name)="(?:og:image|twitter:image)" content=")/', r'\1' + SITE + '/', t)
     # http → https
@@ -358,6 +360,20 @@ def related_block(t):
     return t
 
 
+_DCI = re.compile(r'<div class="dc-img" style="background-image:url\(\'([^\']+)\'\),(linear-gradient\([^)]*\))">')
+
+
+def lazy_cards(t):
+    """Tarjetas de chollo: las 4 primeras con foto inmediata, el resto se cargan al acercarse (hlc.js lazyBg)."""
+    n = [0]
+    def r(m):
+        n[0] += 1
+        if n[0] <= 4:
+            return m.group(0)
+        return f'<div class="dc-img" data-bg="{m.group(1)}" style="background:{m.group(2)}">'
+    return _DCI.sub(r, t) if t.count('class="dc-img"') > 4 else t
+
+
 stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0, old=0, legacy=0)
 for f in files:
     stats['files'] += 1
@@ -396,7 +412,7 @@ for f in files:
     if t2 != t:
         stats['old'] += 1
     t = t2
-    t = related_block(legacy_seo(t))
+    t = lazy_cards(related_block(legacy_seo(t)))
     if '—' in t and not re.search(r'[\u4e00-\u9fff]', t):
         t = dash_all(t)
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
@@ -413,6 +429,7 @@ for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '
     if f and os.path.exists(f) and any(f.startswith(p_) for p_ in en_pre):
         s0 = open(f, encoding='utf-8', errors='surrogateescape').read()
         s1 = BK.fix_html(s0) if 'searchresults' in s0 else s0
+        s1 = lazy_cards(s1)
         if '—' in s1:
             s1 = dash_all(s1)
         if s1 != s0:

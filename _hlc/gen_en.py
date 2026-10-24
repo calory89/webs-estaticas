@@ -82,12 +82,12 @@ HEADER = '''<header class="hx" id="hx"><div class="hx-in">
 FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
 <p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
-<div><h4>Deals</h4><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
-<div><h4>Explore</h4><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
-<div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
+<div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
+<div><h2 class="fx-h">Explore</h2><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
+<div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=31" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=32" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -98,7 +98,7 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     alt = f'<link rel="alternate" hreflang="en" href="{canonical}">'
     if es_url:
         alt += f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">'
-    extra = '<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt + (G.ld_script(ld) if ld else '')
+    extra = '<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt + (G.ld_script(ld) if ld else '')
     for k, v in dict(title=e(title), desc=e(desc), canonical=canonical, robots=robots, og_type=og_type, og_title=e(title), og_alt=e(title),
                      og_image=og_image or f'{SITE}/hlc/brand/og-default.jpg', extra_head=extra, body_class=body_class).items():
         h = h.replace('{' + k + '}', v)
