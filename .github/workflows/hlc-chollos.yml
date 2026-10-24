@@ -36,9 +36,12 @@ jobs:
           python3 _hlc/gen_deals.py
           python3 _hlc/gen_en.py
           python3 _hlc/gen_routes.py
+          python3 _hlc/gen_blog.py
           HLC_ONLY=vuelos python3 _hlc/build.py
           HLC_ONLY=chollos python3 _hlc/build.py
           HLC_ONLY=destinos python3 _hlc/build.py
+          HLC_ONLY=blog python3 _hlc/build.py
+          HLC_ONLY=buscar python3 _hlc/build.py
       - name: Comprobar (enlaces, códigos de Booking, mínimos)
         if: steps.chk.outputs.go == 'yes'
         run: python3 _hlc/check.py
@@ -47,7 +50,7 @@ jobs:
         run: |
           git config user.name "happylowcost-bot"
           git config user.email "bot@happylowcost.com"
-          git add -A index.html _redirects hlc/fx.json hoteles chollos destinos en vuelos vuelos-sitemap.xml flights-sitemap.xml hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml en-sitemap.xml 2>/dev/null || git add -A chollos destinos hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
+          git add -A index.html _redirects hlc/fx.json hlc/search-es.json hlc/search-en.json blog buscar hoteles chollos destinos en vuelos vuelos-sitemap.xml flights-sitemap.xml hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml en-sitemap.xml 2>/dev/null || git add -A chollos destinos hlc/destinos.json hlc/img/cities chollos-sitemap.xml destinos-sitemap.xml sitemap_index.xml
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "chollos: actualización automática"
           for i in 1 2 3; do git push origin HEAD:pub/happylowcost.com && break; git fetch --depth=5 origin pub/happylowcost.com && git rebase -X theirs FETCH_HEAD; done
