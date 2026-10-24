@@ -69,7 +69,7 @@
     if (last && Date.now() - last < 14 * 864e5) { return; }
     var shown = false;
     function onScroll() {
-      if (shown) { return; }
+      if (shown || D.querySelector('.cdo-ck')) { return; }
       var doc = D.documentElement, r = (W.scrollY + W.innerHeight) / doc.scrollHeight;
       if (r < 0.55) { return; }
       shown = true; W.removeEventListener('scroll', onScroll);
@@ -176,5 +176,19 @@
           .catch(function () { b2.disabled = false; msg.textContent = EN ? 'It could not be sent. Try again in a minute.' : 'No se pudo enviar. Inténtalo de nuevo en un minuto.'; });
       });
     }).catch(function () {});
+  })();
+  /* 11. Consentimiento de analitica: Clarity funciona sin cookies hasta que el visitante acepta */
+  (function () {
+    function grant() { var n = 0; (function t() { if (W.clarity) { try { W.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' }); } catch (e) {} } else if (n++ < 20) { setTimeout(t, 500); } })(); }
+    var c = ls('cdo-consent');
+    if (c === 'granted') { grant(); }
+    D.addEventListener('click', function (e) { var t = e.target; if (t && t.id === 'ck-yes') { grant(); } }, true);
+    if (c || B.classList.contains('home') || D.getElementById('cookie')) { return; }
+    var bn = el('div', 'cdo-ck'); bn.setAttribute('role', 'region'); bn.setAttribute('aria-label', 'Cookies');
+    bn.innerHTML = '<p>' + (EN ? '<b>Cookies.</b> This site only uses what it needs to work. With your permission it also uses anonymous analytics to improve. ' : '<b>Cookies.</b> Esta web solo usa lo necesario para funcionar. Con tu permiso también usa analítica anónima para mejorar. ') + '<a href="/politica-de-cookies/">' + (EN ? 'Read more' : 'Más información') + '</a></p><div><button type="button" class="n">' + (EN ? 'Only essential' : 'Solo esenciales') + '</button><button type="button" class="y">' + (EN ? 'Accept' : 'Aceptar') + '</button></div>';
+    D.head.appendChild(el('style', '', '.cdo-ck{position:fixed;left:16px;bottom:16px;z-index:9992;max-width:min(420px,calc(100vw - 32px));background:#15151A;color:#F4F1EA;border-radius:16px;padding:16px 18px;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 18px 50px rgb(0 0 0 / .25)}.cdo-ck p{margin:0 0 12px}.cdo-ck a{color:#F2C14E}.cdo-ck div{display:flex;gap:8px}.cdo-ck button{border-radius:100px;padding:9px 16px;font-weight:700;cursor:pointer;border:1px solid #F4F1EA;background:none;color:#F4F1EA}.cdo-ck .y{background:#F2C14E;border-color:#F2C14E;color:#15151A}'));
+    B.appendChild(bn);
+    bn.querySelector('.y').addEventListener('click', function () { ls('cdo-consent', 'granted'); grant(); bn.remove(); });
+    bn.querySelector('.n').addEventListener('click', function () { ls('cdo-consent', 'denied'); bn.remove(); });
   })();
 })();

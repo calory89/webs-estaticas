@@ -132,6 +132,6 @@ btn.disabled=true;msg.textContent=t('f_sending');
 fetch('https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:name,email:email,company:v('co'),message:'['+location.pathname+']\n'+body,kind:f.getAttribute('data-kind'),lang:window.cdoLang(),consent:true,website:D.getElementById('f-web').value})})
 .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.ok===false)throw new Error('send');});})
 .then(function(){f.reset();msg.textContent=t('f_done');}).catch(function(){msg.textContent=t('f_err');}).then(function(){btn.disabled=false;});});})();</script><script>(function(){var b=document.getElementById('cp');b.addEventListener('click',function(){var t=document.getElementById('bio').textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent=window.cdoT('copied');setTimeout(function(){b.textContent=window.cdoT('copy');},1800);}).catch(function(){var r=document.createRange();r.selectNodeContents(document.getElementById('bio'));var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="/assets/cdo/cdo-boost.js?v=4" defer></script>
+<script src="/assets/cdo/cdo-boost.js?v=5" defer></script>
 </body>
 </html>
