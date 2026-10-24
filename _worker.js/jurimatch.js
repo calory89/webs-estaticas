@@ -31,6 +31,22 @@ const ld = (o) => '<script type="application/ld+json">' + JSON.stringify(o).repl
 const slugify = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const clean = (s) => String(s || '').replace(/\s+—\s+/g, ': ').replace(/—/g, ', ');
 const titleCaseLabel = (s) => clean(s).replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
+// Same canonical fee labels as src/lib/labels.ts in the app.
+const FEE_RULES = [
+  [/no[\s-]*win[\s,-]*no[\s-]*fee|pay only if you win|only pay if you win|no recovery,?\s*no fee|no cure,?\s*no pay|no success,?\s*no fee|no collection,?\s*no (fee|cost|commission)/i, 'No win, no fee'],
+  [/conditional fee/i, 'Conditional fee agreement (CFA)'],
+  [/damages[\s-]*based/i, 'Damages-based agreement (DBA)'],
+  [/cuota\s*litis/i, 'Cuota litis (success fee)'],
+  [/quota\s*litis/i, 'Quota litis (success fee)'],
+  [/erfolgshonorar/i, 'Erfolgshonorar (success fee)'],
+  [/contingen/i, 'Contingency fee'],
+  [/hybrid/i, 'Hybrid (fixed fee plus success fee)'],
+  [/success[\s_-]*fee|honorarios?\s+de\s+[ée]xito|result[\s-]*based|results[\s-]*only/i, 'Success fee'],
+  [/third[\s_-]*party|litigation[\s_-]*fund|non[\s-]*recourse|claim purchase|buys?\/?funds? claims/i, 'Litigation funding'],
+  [/commission/i, 'Commission on recovery'],
+];
+const feeLabel = (raw) => { const s = titleCaseLabel(raw); if (!s) return ''; for (const [re, l] of FEE_RULES) if (re.test(s)) return l; return s.length <= 40 ? s.charAt(0).toUpperCase() + s.slice(1).toLowerCase() : ''; };
+const INDEXED_NOTE = "Indexed from public research. Our team has not confirmed this firm's fee terms; check them with the firm.";
 
 export function normPath(p) {
   let x = p || '/';
@@ -69,7 +85,7 @@ async function listFirms(list, ctx) {
 
 function firmItem(f, verified) {
   const where = (f.countries_served || []).slice(0, 3).join(', ');
-  const model = f.typical_model ? titleCaseLabel(f.typical_model) : '';
+  const model = f.typical_model ? feeLabel(f.typical_model) : '';
   return '<li>' + (verified ? '<a href="/firms/' + esc(slugify(f.firm_name)) + '">' + esc(f.firm_name) + '</a> (hand-verified)' : esc(f.firm_name) + ' (indexed, not verified)')
     + (f.category === 'collection_agency' ? ', debt collection agency (not a law firm)' : '')
     + (where ? ', ' + esc(where) : '') + (model ? ', ' + esc(model) : '') + '</li>';
@@ -83,14 +99,17 @@ async function dynamicPage(path, m, ctx) {
   let mm;
   if ((mm = path.match(/^\/firms\/([a-z0-9-]+)$/))) {
     const slug = mm[1];
-    const pattern = '*' + slug.split('-').filter(Boolean).map((w) => w.replace(/[aeiouync]/g, '_')).join('*') + '*';
-    const rows = await sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&firm_name=ilike.' + encodeURIComponent(pattern) + '&limit=50', ctx);
+    const words = slug.split('-').filter(Boolean);
+    const look = (re) => sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&firm_name=ilike.' + encodeURIComponent('*' + words.map((w) => w.replace(re, '_')).join('*') + '*') + '&limit=200', ctx);
+    let rows = await look(/[aeiou]/g);
+    if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouync]/g);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
     const hand = f.source === CURATED;
     const where = (f.countries_served || []).slice(0, 3).join(', ');
-    const d = clean(f.description) || (f.firm_name + ' offers ' + (f.typical_model ? titleCaseLabel(f.typical_model) : 'no-win-no-fee') + ' legal services' + (where ? ' in ' + where : '') + '.');
+    // Only descriptions our team checked are shown; indexed firms get a factual note.
+    const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.')) : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
     return {
       t: f.firm_name + ': No-Win-No-Fee Firm Profile | JuriMatch',
       d: d.length > 300 ? d.slice(0, 297) + '...' : d,
@@ -99,8 +118,8 @@ async function dynamicPage(path, m, ctx) {
       facts: [
         ['Status', hand ? 'Hand-verified by JuriMatch' + (f.last_verified_at ? ' on ' + String(f.last_verified_at).slice(0, 10) : '') : 'Indexed from public research, not verified by our team'],
         ['Countries', where],
-        ['Fee model', f.typical_model ? titleCaseLabel(f.typical_model) : ''],
-        ['Case types', (f.case_types || []).slice(0, 6).map(titleCaseLabel).join(', ')],
+        ['Fee model', hand && f.typical_model ? feeLabel(f.typical_model) : ''],
+        ['Case types', (f.case_types || []).slice(0, 6).map((x) => { const t = titleCaseLabel(x).toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); }).join(', ').replace(/\bchf\b/gi, 'CHF')],
       ].filter((x) => x[1]),
       crumbs: [['Home', '/'], ['Firms', '/firms'], [f.firm_name, path]],
       extraLd: [{ '@context': 'https://schema.org', '@type': 'LegalService', name: f.firm_name, url: ORIGIN + path, ...(f.website ? { sameAs: [f.website] } : {}), ...(where ? { areaServed: (f.countries_served || []).slice(0, 5) } : {}), description: d.slice(0, 300) }],
