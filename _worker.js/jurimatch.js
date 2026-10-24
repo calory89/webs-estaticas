@@ -151,6 +151,7 @@ async function dynamicPage(path, m, ctx) {
     const p = rows[0];
     if (!p) return { t: 'Article not found | JuriMatch', d: 'This article is not available.', noindex: true, status: 404 };
     return {
+      noindex: (m.blogNoindex || []).includes(p.slug),
       t: clean(p.title) + ' | JuriMatch', d: clean(p.excerpt || p.title), h1: clean(p.title), lead: clean(p.excerpt), article: true,
       image: p.image_url || null, published: p.published_at || p.created_at,
       crumbs: [['Home', '/'], ['Blog', '/blog'], [clean(p.title), path]],
@@ -178,7 +179,8 @@ export async function route(req, u, env, ctx) {
   ]);
   const seen = new Set();
   for (const f of firms || []) { const s = slugify(f.firm_name); if (s && !seen.has(s)) { seen.add(s); urls.push([ORIGIN + '/firms/' + s, String(f.last_verified_at || day).slice(0, 10)]); } }
-  for (const p of posts || []) if (p.slug) urls.push([ORIGIN + '/blog/' + p.slug, String(p.published_at || p.created_at || day).slice(0, 10)]);
+  const dupes = m.blogRedirects || {}; const offTopic = new Set(m.blogNoindex || []);
+  for (const p of posts || []) if (p.slug && !dupes[p.slug] && !offTopic.has(p.slug)) urls.push([ORIGIN + '/blog/' + p.slug, String(p.published_at || p.created_at || day).slice(0, 10)]);
   const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + urls.map(([loc, mod]) => '  <url><loc>' + esc(loc) + '</loc><lastmod>' + mod + '</lastmod></url>').join('\n') + '\n</urlset>\n';
   return new Response(xml, { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
@@ -224,6 +226,10 @@ export async function render(req, res, u, env, ctx) {
   if (!page) {
     const alias = aliasTarget(path, m);
     if (alias) return Response.redirect(ORIGIN + alias + u.search, 301);
+    // Near-duplicate blog articles point to the kept article on the same subject.
+    const bm = path.match(/^\/blog\/([a-z0-9-]+)$/);
+    const keep = bm && (m.blogRedirects || {})[bm[1]];
+    if (keep) return Response.redirect(ORIGIN + '/blog/' + keep, 301);
   }
   if (!page) {
     try { page = await dynamicPage(path, m, ctx); } catch (e) { page = null; }
