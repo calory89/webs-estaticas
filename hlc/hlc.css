@@ -288,3 +288,4 @@ input[type=checkbox]{width:22px;height:22px}
 .mapx-load .sk{display:block;width:72%;height:62%;border-radius:46%;background:linear-gradient(90deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.16) 40%,rgba(255,255,255,.05) 80%);background-size:200% 100%;animation:hlcsk 1.4s linear infinite}
 @keyframes hlcsk{to{background-position:-200% 0}}
 @media (prefers-reduced-motion:reduce){.mapx-load .sk{animation:none}}
+@media (pointer:coarse),(max-width:860px){.mapx-reg button,.chips button{min-height:44px}}
