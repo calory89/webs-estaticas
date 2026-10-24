@@ -13672,6 +13672,8 @@ async function handleSeo(request, env) {
 	let p = url.pathname;
 	if (p === "/api/alerts") return alerts(request, env);
 	if (request.method !== "GET" && request.method !== "HEAD") return null;
+	const enx = p.match(/^\/en(\/.*)?$/i);
+	if (enx) return Response.redirect(`${SITE}${enx[1] && enx[1] !== "/" ? enx[1] : "/"}${url.search}`, 301);
 	if (p === "/sitemap.xml") return new Response(sitemapIndex(), { headers: {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
