@@ -47,6 +47,13 @@ function originMatches(subOrigins: string[], f: any) {
   return subOrigins.some((x) => { const k = sl(x); return k === o || (ORIGIN_ALIAS[k] || []).includes(o); });
 }
 
+function destMatches(want: string | null, f: any) {
+  const w = sl(want || "");
+  if (!w || /^(cualquier|cualquier-sitio|a-cualquier-sitio|anywhere|any|todo|todos)$/.test(w)) return true;
+  const hay = [f.destino, f.pais, f.continente, f.destino_iata].map(sl);
+  return hay.some((h) => h && (h === w || h.includes(w) || w.includes(h)));
+}
+
 const MIN_SAVE = 25;
 async function activeDeals(sinceHours = 0) {
   const today = new Date().toISOString().slice(0, 10);
@@ -89,7 +96,7 @@ async function send() {
   let n = 0, off = 0;
   for (const s of subs || []) {
     if (s.last_sent_at && Date.now() - Date.parse(s.last_sent_at) < 20 * 36e5) continue; // máximo un aviso al día
-    const cand = deals.filter((r: any) => originMatches(s.origins, r.post.facts) && (!s.max_price || r.post.facts.precio <= s.max_price) && !sent.has(`${s.id}|${r.slug}`))
+    const cand = deals.filter((r: any) => originMatches(s.origins, r.post.facts) && destMatches(s.destination, r.post.facts) && (!s.max_price || r.post.facts.precio <= s.max_price) && !sent.has(`${s.id}|${r.slug}`))
       .sort((a: any, b: any) => (b.post.facts.ahorro_pct || 0) - (a.post.facts.ahorro_pct || 0));
     if (!cand.length) continue;
     const r = cand[0];
@@ -154,11 +161,46 @@ async function revalidate(n: number) {
   return { pending: deals.length, checked: out.length, out };
 }
 
+
+// ---------- calendario: vuelo más barato por mes en una ruta (caché 3 días) ----------
+async function calendar(slug: string) {
+  if (!/^[a-z0-9-]{3,80}$/.test(slug)) return { error: "ruta" };
+  const route = (await db(`hlc_routes?select=slug,origin_iata,dest_iata,facts&slug=eq.${slug}&limit=1`))?.[0];
+  if (!route) return { error: "ruta" };
+  const cached = await db(`hlc_route_cal?select=month,price,depart,ret,airline,stops,checked_at&slug=eq.${slug}&order=month.asc`);
+  const fresh = (cached || []).filter((c: any) => Date.now() - Date.parse(c.checked_at) < 3 * 864e5);
+  const hist = await db(`hlc_route_hist?select=day,price&slug=eq.${slug}&order=day.asc&limit=400`);
+  if (fresh.length >= 5) return { months: fresh, hist };
+  // límite global: no más de 40 rutas calculadas por hora
+  const recent = await db(`hlc_route_cal?select=slug&checked_at=gt.${new Date(Date.now() - 36e5).toISOString()}&limit=400`);
+  if (new Set((recent || []).map((r: any) => r.slug)).size >= 40) return { months: cached || [], hist, busy: true };
+  const f = route.facts || {};
+  const len = f.ejemplo_ida && f.ejemplo_vuelta ? Math.max(2, Math.round((Date.parse(f.ejemplo_vuelta) - Date.parse(f.ejemplo_ida)) / 864e5)) : 4;
+  const now = new Date();
+  const months = [...Array(6)].map((_, i) => new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + i + (now.getUTCDate() > 20 ? 1 : 0), 1)));
+  const rows = await Promise.all(months.map(async (m) => {
+    const mid = new Date(m.getTime() + 14 * 864e5);
+    const iso = (d: Date) => d.toISOString().slice(0, 10);
+    try {
+      const its = await kiwi({ flyFrom: route.origin_iata, flyTo: route.dest_iata, departureDate: dmy(iso(mid)), departureDateFlexDays: 3, returnDate: dmy(iso(new Date(mid.getTime() + len * 864e5))), returnDateFlexDays: 3 });
+      let best: any = null;
+      for (const i of its) if (i.price > 0 && (!best || i.price < best.price)) best = i;
+      return { slug, month: iso(m).slice(0, 7), price: best ? Math.floor(best.price) : null, depart: best?.outbound?.departureTime?.slice(0, 10) || null,
+        ret: best?.inbound?.departureTime?.slice(0, 10) || null, airline: best?.outbound?.segments?.[0]?.carrierName || null, stops: best?.outbound?.stops ?? null, checked_at: new Date().toISOString() };
+    } catch {
+      return { slug, month: iso(m).slice(0, 7), price: null, depart: null, ret: null, airline: null, stops: null, checked_at: new Date().toISOString() };
+    }
+  }));
+  await db("hlc_route_cal?on_conflict=slug,month", { method: "POST", headers: { prefer: "return=minimal,resolution=merge-duplicates" }, body: JSON.stringify(rows) });
+  return { months: rows.map(({ slug: _s, ...r }) => r), hist };
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: H });
   const u = new URL(req.url);
   try {
     if (req.method === "GET" && u.searchParams.get("action") === "vapid") return json({ key: VPUB });
+    if (req.method === "GET" && u.searchParams.get("action") === "calendar") { const r = await calendar(String(u.searchParams.get("slug") || "")); return new Response(JSON.stringify(r), { status: 200, headers: { ...H, "cache-control": "public, max-age=3600" } }); }
     if (req.method !== "POST") return json({ error: "method" }, 405);
     const b = await req.json().catch(() => ({}));
     if (b.action === "subscribe") {
@@ -166,7 +208,7 @@ Deno.serve(async (req) => {
       if (!/^https:\/\//.test(s.endpoint || "") || !s.keys?.p256dh || !s.keys?.auth) return json({ error: "Suscripción no válida" }, 400);
       const origins = (Array.isArray(b.origins) ? b.origins : []).map((x: unknown) => String(x).slice(0, 40)).filter(Boolean).slice(0, 12);
       const row = { endpoint: String(s.endpoint).slice(0, 700), p256dh: String(s.keys.p256dh).slice(0, 200), auth: String(s.keys.auth).slice(0, 100), origins,
-        max_price: Math.min(Number(b.max_price) || 0, 5000) || null, lang: b.lang === "en" ? "en" : "es", active: true, fails: 0 };
+        max_price: Math.min(Number(b.max_price) || 0, 5000) || null, destination: String(b.destination || "").slice(0, 60) || null, lang: b.lang === "en" ? "en" : "es", active: true, fails: 0 };
       await db("hlc_push_subs?on_conflict=endpoint", { method: "POST", headers: { prefer: "return=minimal,resolution=merge-duplicates" }, body: JSON.stringify(row) });
       return json({ ok: true });
     }

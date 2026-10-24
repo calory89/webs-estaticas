@@ -924,11 +924,28 @@ def main():
 <a class="hlc-btn t" href="{CJ_H(p['n'])}" target="_blank" rel="sponsored nofollow noopener">🏨 Hoteles en {e(p['n'])}</a>
 <a class="hlc-btn o" href="/chollos/">Ver todos los chollos</a>
 </aside></div>
+<div id="hoteles">{T3.block(p['n'], p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='es')}</div>
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Más inspiración</div><h2>Otros destinos</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/destinos/{q["s"]}/">{e(q["n"])}</a>' for q in DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main></body></html>'''
         os.makedirs(os.path.join('destinos', p['s']), exist_ok=True)
         open(os.path.join('destinos', p['s'], 'index.html'), 'w', encoding='utf-8').write(page)
         dlinks.append((p, g))
+    # ---------- /hoteles/: los 3 hoteles de cada destino con guía ----------
+    hl = []
+    for p, g in dlinks:
+        c_ = T3.find(p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), ())
+        if c_:
+            hl.append((p, c_))
+    tiles = ''.join(f'<a class="dc" href="/destinos/{p["s"]}/#hoteles"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(p["n"])}</span></div><div class="dc-b"><div><div class="dc-r">3 hoteles en {e(p["n"])}</div><div class="dc-m">Económico · calidad-precio · lujo</div></div></div></a>' for p, c_ in hl)
+    hp = head(title='Dónde dormir barato: los 3 mejores hoteles de cada destino · Happy Low Cost', desc=f'Un hotel económico, uno con la mejor calidad-precio y uno de lujo en {len(hl)} destinos, elegidos por nota real de huéspedes.',
+              canonical=f'{SITE}/hoteles/', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/">', body_class='chollos')
+    hp += f'''<main class="sec" style="padding-top:26px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Hoteles</div><h1 class="x-h1">Dónde dormir en cada destino</h1><p>Para cada destino, 3 hoteles: el económico, el de mejor calidad-precio y uno de lujo, elegidos por top3hotels.com según la nota real de los huéspedes. {len(hl)} destinos.</p></div></div>
+<div class="dc-grid">{tiles}</div></div></main></body></html>'''
+    os.makedirs('hoteles', exist_ok=True)
+    open('hoteles/index.html', 'w', encoding='utf-8').write(hp)
+    json.dump([p['s'] for p, c_ in hl], open('hoteles/destinos.json', 'w'))
+
     # índice de guías dentro de /destinos/
     if os.path.exists('destinos/index.html'):
         di = open('destinos/index.html', encoding='utf-8').read()

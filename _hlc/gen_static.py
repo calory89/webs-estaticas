@@ -243,7 +243,7 @@ g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody'
     open('offline/index.html', 'w', encoding='utf-8').write(pg)
     tools_pages()
     pages = ['/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
-             '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
+             '/hoteles/', '/en/hotels/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')

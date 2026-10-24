@@ -370,7 +370,7 @@ document.documentElement.classList.add('hlc-js');
           });
         }).then(function(sub){
           var j=sub.toJSON();
-          return fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'subscribe',sub:j,origins:origins,max_price:pr?+pr.getAttribute('data-v'):null,lang:EN?'en':'es'})}).then(function(r){return r.json();}).then(function(x){
+          return fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'subscribe',sub:j,origins:origins,destination:((f.querySelector('[name=destination]')||{}).value||'').slice(0,60),max_price:pr?+pr.getAttribute('data-v'):null,lang:EN?'en':'es'})}).then(function(r){return r.json();}).then(function(x){
             if(!x.ok)throw new Error(x.error||'error');
             ls('hlc_push','1');if(origins[0])ls('hlc_origin',origins[0]);track('alerta_push',origins.join(','));
             fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'test',endpoint:j.endpoint})}).catch(function(){});
