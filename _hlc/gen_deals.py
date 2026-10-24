@@ -527,6 +527,15 @@ def route_cal_link(f):
     return f'<a class="hlc-btn o" href="/vuelos/{slug_}/">📅 Precio de esta ruta mes a mes</a>' if os.path.isdir(os.path.join('vuelos', slug_)) else ''
 
 
+def clase_of(f):
+    """playa | ciudad | naturaleza (biblioteca de destinos)"""
+    ls_ = lib_slug(f)
+    for p in DLIB:
+        if p['s'] == ls_:
+            return p.get('t') or ''
+    return ''
+
+
 def _age_bucket(x):
     """0: menos de 12 h, 1: menos de 36 h, 2: más antiguo (los más nuevos primero, como en hlc.js)"""
     try:
@@ -543,10 +552,10 @@ def card(x):
     bg = f"background-image:url('{img}'),linear-gradient(135deg,#FF5A36,#2E6BF0)" if img else 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
     oc = slugify(f.get('origen_pais') or '')
     return (f'<a class="dc" href="/chollos/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
-            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-n="{nights_of(f)}" data-ts="{e(ago_iso(checked(x)))}" aria-label="{e(f.get("origen"))} a {e(f.get("destino"))}, {e(x.get("price"))} euros{(", antes " + e(f.get("precio_normal")) + " euros") if f.get("precio_normal") else ""}, {e(dates_es(f))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
+            f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-clase="{e(clase_of(f))}" data-n="{nights_of(f)}" data-ts="{e(ago_iso(checked(x)))}" aria-label="{e(f.get("origen"))} a {e(f.get("destino"))}, {e(x.get("price"))} euros{(", antes " + e(f.get("precio_normal")) + " euros") if f.get("precio_normal") else ""}, {e(dates_es(f))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
             f'<div class="dc-img" style="{bg}">{f"<span class=dc-save title='{level_es(f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116)))}'>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} % · {level_es(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
-            f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))}</div>'
+            f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))} <span class="dc-flag" title="{e(f.get("pais") or "")}">{flag(f.get("destino_cc"))}</span></div>'
             f'<div class="dc-m">{e(f.get("tipo", ""))} · {e(stops_es(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(dates_es(f))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
 
 
@@ -593,6 +602,7 @@ def filters_html(deals):
 <label class="xf-search"><span aria-hidden="true">🔎</span><input type="search" data-x="q" placeholder="Busca un destino, ciudad o país" aria-label="Buscar chollos"></label>
 <label class="xf-sel"><span>Salida desde</span><select data-x="desde" aria-label="País de salida"><option value="">Todos los países</option>{opts}</select></label>
 <label class="xf-sel"><span>Aeropuerto</span><select data-x="aero" aria-label="Aeropuerto de salida"><option value="">Todos</option>{aopts}</select></label>
+<label class="xf-sel"><span>Tipo de destino</span><select data-x="clase" aria-label="Tipo de destino"><option value="">Todos</option><option value="playa">Playa</option><option value="ciudad">Ciudad</option><option value="naturaleza">Naturaleza</option></select></label>
 <label class="xf-sel"><span>Duración</span><select data-x="dur" aria-label="Duración del viaje"><option value="">Cualquiera</option><option value="finde">Escapada (1-4 noches)</option><option value="semana">Una semana (5-9)</option><option value="largo">10 noches o más</option></select></label>
 <label class="xf-sel"><span>Mes</span><select data-x="mes" aria-label="Mes de salida"><option value="">Cualquier fecha</option>{mopts}</select></label>
 <label class="xf-sel"><span>Ordenar</span><select data-x="orden" aria-label="Ordenar"><option value="nuevo">Más recientes</option><option value="precio">Más baratos</option><option value="fecha">Salida más próxima</option></select></label>
@@ -625,7 +635,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
 <div class="dc-empty" data-x-empty hidden><b>Ningún chollo con esos filtros.</b><span>Prueba a quitar algún filtro o crea una alerta y te avisamos.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>
 {extra_links}
 {seo_html}
-</div></main>{'<script src="/hlc/explorer.js?v=5" defer></script>' if explorer else ''}</body></html>'''
+</div></main>{'<script src="/hlc/explorer.js?v=6" defer></script>' if explorer else ''}</body></html>'''
     os.makedirs(path, exist_ok=True)
     open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(page)
 

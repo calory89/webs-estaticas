@@ -133,7 +133,7 @@ document.documentElement.classList.add('hlc-js');
     var f=x.facts||{};var lib=w.HLC_photo(f.destino);var img=lib||(x.image_url||'');var c=CONT[f.continente]||null;var fresh=(Date.now()-Date.parse(x.approved_at))<12*36e5;var ck=f.checked_at&&f.checked_at>x.approved_at?f.checked_at:x.approved_at;
     var save=f.ahorro_pct?'<span class="dc-save">−'+esc(f.ahorro_pct)+' %</span>':'';
     return '<a class="dc" href="'+esc(dealUrl(x))+'" data-cont="'+(c?c[0]:'')+'" data-slug="'+esc(x.slug)+'"><div class="dc-img" style="background-image:url(\''+esc(img)+'\'),linear-gradient(135deg,#FF5A36,#2E6BF0)">'+save+'<span class="dc-ok">'+(fresh?'🔥 Nuevo':'✓ '+T('hace ','')+ago(ck)+T('',' ago'))+'</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="'+esc(x.slug)+'">♡</span><span class="dc-city">'+esc(f.destino||'')+'</span></div>'+
-      '<div class="dc-b"><div><div class="dc-r"><span class="dc-flag">'+flag(f.origen_cc)+'</span> '+esc(f.origen||'')+' → '+esc(f.destino||'')+'</div><div class="dc-m">'+esc(f.tipo||'')+' · '+(f.escalas===0?'directo':(f.escalas>0?f.escalas+(f.escalas>1?' escalas':' escala'):'con escalas'))+(f.aerolinea?' · '+esc(f.aerolinea):'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div>'+priceHtml(x)+'</div></a>';
+      '<div class="dc-b"><div><div class="dc-r"><span class="dc-flag">'+flag(f.origen_cc)+'</span> '+esc(f.origen||'')+' → '+esc(f.destino||'')+(f.destino_cc?' <span class="dc-flag">'+flag(f.destino_cc)+'</span>':'')+'</div><div class="dc-m">'+esc(f.tipo||'')+' · '+(f.escalas===0?'directo':(f.escalas>0?f.escalas+(f.escalas>1?' escalas':' escala'):'con escalas'))+(f.aerolinea?' · '+esc(f.aerolinea):'')+(f.ida?' · '+new Date(f.ida).toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'')+'</div></div>'+priceHtml(x)+'</div></a>';
   }
   function renderDeals(){
     var boxes=d.querySelectorAll('[data-hlc-deals]');if(!boxes.length)return;
@@ -189,8 +189,13 @@ document.documentElement.classList.add('hlc-js');
       try{var qd=new URLSearchParams(location.search).get('d');var di=f.querySelector('[name=destination]');if(qd&&di)di.value=qd.slice(0,60);}catch(e){}
       f.querySelectorAll('[data-chip]').forEach(function(c){c.addEventListener('click',function(){var on=c.getAttribute('aria-pressed')==='true';c.setAttribute('aria-pressed',on?'false':'true');});});
       f.querySelectorAll('[data-pick]').forEach(function(c){c.addEventListener('click',function(){var g=c.getAttribute('data-pick');f.querySelectorAll('[data-pick="'+g+'"]').forEach(function(x){x.setAttribute('aria-pressed','false');});c.setAttribute('aria-pressed','true');var ch=f.querySelector('[name=contact]');if(g==='channel'&&ch){var wa=c.getAttribute('data-v')==='whatsapp';ch.type=wa?'tel':'email';ch.placeholder=wa?'+34 600 000 000':'tu@email.com';var lb=f.querySelector('[data-contact-label]');if(lb)lb.textContent=wa?'Tu número de WhatsApp':'Tu email';}});});
+      var ci=f.querySelector('[name=contact]'),cm=f.querySelector('[data-msg]');
+      var valid=function(){var v=(ci.value||'').trim();if(!v)return null;var wa=ci.type==='tel';return wa?/^\+?[0-9 ]{8,16}$/.test(v):/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);};
+      var check=function(final){if(!ci)return true;var ok=valid();if(ok===false||(final&&ok===null)){ci.setAttribute('aria-invalid','true');if(cm)cm.textContent=ci.type==='tel'?'Revisa el número: con prefijo, por ejemplo +34 600 000 000.':'Revisa el email: debe parecerse a nombre@dominio.com.';return false;}ci.removeAttribute('aria-invalid');if(cm&&/^Revisa/.test(cm.textContent))cm.textContent='';return true;};
+      if(ci){ci.addEventListener('blur',function(){check(false);});ci.addEventListener('input',function(){if(ci.getAttribute('aria-invalid'))check(false);});}
       f.addEventListener('submit',function(e){
         e.preventDefault();
+        if(!check(true))return;
         var msg=f.querySelector('[data-msg]');var btn=f.querySelector('[type=submit]');
         var origins=[].map.call(f.querySelectorAll('[data-chip][aria-pressed=true]'),function(c){return c.getAttribute('data-v');});
         var pr=f.querySelector('[data-pick=price][aria-pressed=true]');var chn=f.querySelector('[data-pick=channel][aria-pressed=true]');
@@ -261,7 +266,7 @@ document.documentElement.classList.add('hlc-js');
         var body={action:'alert',origins:[sel?sel.value:''],destination:'',max_price:null,channel:isMail?'email':'whatsapp',contact:isMail?c:(tel.charAt(0)==='+'?tel:'+'+tel),consent:true};
         btn.disabled=true;msg.textContent=T('Guardando…','Saving…');
         fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
-          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);track('alerta_rapida',body.channel);f.innerHTML='<div class="qf-done"><b>'+T('¡Hecho! ✈️','Done! ✈️')+'</b><span>'+T('Te avisaremos del próximo chollo desde ','We will alert you to the next deal from ')+esc(body.origins[0])+'.</span><a href="'+T('/chollos/','/en/deals/')+'">'+T('Mientras, mira los de hoy →','Meanwhile, see today\'s deals →')+'</a></div>';}
+          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);track('alerta_rapida',body.channel);f.innerHTML='<div class="qf-done"><b>'+T('¡Apuntado! ✈️','You are on the list! ✈️')+'</b><span>'+T('Los avisos por '+(isMail?'email':'WhatsApp')+' empiezan en cuanto activemos ese envío. Para recibir desde hoy los chollos desde '+esc(body.origins[0])+', activa los avisos en este navegador:','Alerts by '+(isMail?'email':'WhatsApp')+' start as soon as we switch that channel on. To get deals from '+esc(body.origins[0])+' from today, turn on alerts in this browser:')+'</span><input type="hidden" name="origin" value="'+esc(body.origins[0])+'"><div data-msg></div><a href="'+T('/chollos/','/en/deals/')+'">'+T('Mientras, mira los de hoy →','Meanwhile, see today\'s deals →')+'</a></div>';try{pushUI();}catch(er){}}
           else{msg.textContent=j.error||T('No se ha podido guardar. Prueba otra vez.','Could not save. Try again.');btn.disabled=false;}
         }).catch(function(){msg.textContent=T('Sin conexión. Prueba otra vez.','No connection. Try again.');btn.disabled=false;});
       });

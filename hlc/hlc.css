@@ -271,3 +271,4 @@ body.single time,body.single .post-tags,body.single .post-box-meta-single,body.s
 .altbox>a{font-weight:700}.altbox small{color:#4A5468;font-size:13px}
 .xchips{margin:10px 0 14px}.xchips[hidden]{display:none}.xchips .chip.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
 .pm-bud{margin:0 0 18px}.pm-bud h3{font-size:18px;margin:0 0 8px}.pm-bud h3 small{color:#4A5468;font-weight:600}.pm-bud a.chip{text-decoration:none}
+.altbox li{font-size:15px;line-height:1.35}

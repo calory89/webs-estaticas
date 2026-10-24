@@ -8,12 +8,12 @@
   var empty = d.querySelector('[data-x-empty]'), count = d.querySelector('[data-x-count]');
   var $ = function (k) { return box.querySelector('[data-x="' + k + '"]'); };
   var favs = function () { try { return JSON.parse(localStorage.getItem('hlc_favs') || '[]'); } catch (e) { return []; } };
-  var st = { q: '', desde: '', aero: '', dur: '', mes: '', orden: 'nuevo', cont: '', max: 1500, dir: false, rt: false, fav: false };
+  var st = { q: '', desde: '', aero: '', dur: '', clase: '', mes: '', orden: 'nuevo', cont: '', max: 1500, dir: false, rt: false, fav: false };
   var slug = function (s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); };
 
   // estado inicial desde la URL
   var u = new URLSearchParams(location.search);
-  ['q', 'desde', 'aero', 'dur', 'mes', 'orden', 'cont'].forEach(function (k) { if (u.get(k)) st[k] = u.get(k); });
+  ['q', 'desde', 'aero', 'dur', 'clase', 'mes', 'orden', 'cont'].forEach(function (k) { if (u.get(k)) st[k] = u.get(k); });
   if (u.get('max')) st.max = +u.get('max') || 1500;
   ['dir', 'rt', 'fav'].forEach(function (k) { st[k] = u.get(k) === '1'; });
   // precio máximo según los chollos
@@ -22,7 +22,7 @@
 
   function durOk(n, d) { if (!n && n !== 0) return false; return d === 'finde' ? n >= 1 && n <= 4 : d === 'semana' ? n >= 5 && n <= 9 : d === 'largo' ? n >= 10 && n < 90 : true; }
   function paint() {
-    if ($('q')) $('q').value = st.q; if ($('desde')) $('desde').value = st.desde; if ($('aero')) $('aero').value = st.aero; if ($('dur')) $('dur').value = st.dur; if ($('mes')) $('mes').value = st.mes; if ($('orden')) $('orden').value = st.orden;
+    if ($('q')) $('q').value = st.q; if ($('desde')) $('desde').value = st.desde; if ($('aero')) $('aero').value = st.aero; if ($('dur')) $('dur').value = st.dur; if ($('clase')) $('clase').value = st.clase || ''; if ($('mes')) $('mes').value = st.mes; if ($('orden')) $('orden').value = st.orden;
     if (rng) rng.value = st.max; var out = box.querySelector('[data-x-out="max"]'); if (out) out.textContent = (rng && st.max >= +rng.max) ? (EN ? 'no limit' : 'sin límite') : (EN ? '€' + st.max : st.max + ' €');
     ['dir', 'rt', 'fav'].forEach(function (k) { if ($(k)) $(k).checked = st[k]; });
     box.querySelectorAll('[data-cont]').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-cont') || '') === st.cont); });
@@ -30,7 +30,7 @@
   function apply(push) {
     var f = favs(), q = slug(st.q), lim = rng && st.max >= +rng.max ? Infinity : st.max, n = 0;
     cards.forEach(function (c) {
-      var ok = (!q || (c.dataset.q || '').indexOf(q) >= 0) && (!st.desde || c.dataset.oc === st.desde) && (!st.aero || slug(c.dataset.orig) === st.aero) && (!st.dur || durOk(+c.dataset.n, st.dur)) && (!st.mes || (c.dataset.ida || '').slice(0, 7) === st.mes) &&
+      var ok = (!q || (c.dataset.q || '').indexOf(q) >= 0) && (!st.desde || c.dataset.oc === st.desde) && (!st.aero || slug(c.dataset.orig) === st.aero) && (!st.dur || durOk(+c.dataset.n, st.dur)) && (!st.clase || c.dataset.clase === st.clase) && (!st.mes || (c.dataset.ida || '').slice(0, 7) === st.mes) &&
         (!st.cont || c.dataset.cont === st.cont) && (+c.dataset.price <= lim) && (!st.dir || c.dataset.dir === '1') && (!st.rt || c.dataset.tipo === 'rt') && (!st.fav || f.indexOf(c.dataset.slug) >= 0);
       c.hidden = !ok; if (ok) n++;
     });
@@ -43,7 +43,7 @@
     if (empty) empty.hidden = n > 0;
     if (push) {
       var p = new URLSearchParams();
-      ['q', 'desde', 'aero', 'dur', 'mes', 'cont'].forEach(function (k) { if (st[k]) p.set(k, st[k]); });
+      ['q', 'desde', 'aero', 'dur', 'clase', 'mes', 'cont'].forEach(function (k) { if (st[k]) p.set(k, st[k]); });
       if (st.orden !== 'nuevo') p.set('orden', st.orden);
       if (rng && st.max < +rng.max) p.set('max', st.max);
       ['dir', 'rt', 'fav'].forEach(function (k) { if (st[k]) p.set(k, '1'); });
@@ -54,21 +54,21 @@
 
   // filtros activos como chips con "x" para quitarlos uno a uno
   var esc = function (x) { return String(x == null ? '' : x).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
-  var DEF = { q: '', desde: '', aero: '', dur: '', mes: '', cont: '', dir: false, rt: false, fav: false };
+  var DEF = { q: '', desde: '', aero: '', dur: '', clase: '', mes: '', cont: '', dir: false, rt: false, fav: false };
   function chips() {
     var c = d.querySelector('[data-x-chips]');
     if (!c) { c = d.createElement('div'); c.setAttribute('data-x-chips', ''); c.className = 'chips xchips'; c.setAttribute('aria-label', EN ? 'Active filters' : 'Filtros activos'); box.parentNode.insertBefore(c, box.nextSibling);
       c.addEventListener('click', function (e) { var b = e.target.closest('[data-x-rm]'); if (!b) return; var k = b.getAttribute('data-x-rm'); if (k === 'max') st.max = rng ? +rng.max : 1500; else st[k] = DEF[k]; paint(); apply(true); }); }
     var lab = function (k) { var el = $(k); if (el && el.tagName === 'SELECT' && el.selectedIndex >= 0) return el.options[el.selectedIndex].text; return st[k]; };
     var L = [];
-    ['q', 'desde', 'aero', 'dur', 'mes'].forEach(function (k) { if (st[k]) L.push([k, k === 'q' ? '“' + st[k] + '”' : lab(k)]); });
+    ['q', 'desde', 'aero', 'dur', 'clase', 'mes'].forEach(function (k) { if (st[k]) L.push([k, k === 'q' ? '“' + st[k] + '”' : lab(k)]); });
     if (st.cont) { var bc = box.querySelector('[data-cont="' + st.cont + '"]'); L.push(['cont', bc ? bc.textContent.replace(/\s*\d+\s*$/, '').trim() : st.cont]); }
     if (rng && st.max < +rng.max) L.push(['max', EN ? 'up to €' + st.max : 'hasta ' + st.max + ' €']);
     ['dir', 'rt', 'fav'].forEach(function (k) { if (st[k]) { var el = $(k), lb = el && el.closest('label'); L.push([k, lb ? lb.textContent.trim() : k]); } });
     c.innerHTML = L.map(function (x) { return '<button type="button" class="chip on" data-x-rm="' + x[0] + '" aria-label="' + (EN ? 'Remove filter: ' : 'Quitar filtro: ') + esc(x[1]) + '">' + esc(x[1]) + ' <span aria-hidden="true">✕</span></button>'; }).join('') +
       (L.length > 1 ? '<button type="button" class="chip" data-x-rmall>' + (EN ? 'Clear all' : 'Quitar todos') + '</button>' : '');
     c.hidden = !L.length;
-    var all = c.querySelector('[data-x-rmall]'); if (all) all.onclick = function () { st = { q: '', desde: '', aero: '', dur: '', mes: '', orden: st.orden, cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); };
+    var all = c.querySelector('[data-x-rmall]'); if (all) all.onclick = function () { st = { q: '', desde: '', aero: '', dur: '', clase: '', mes: '', orden: st.orden, cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); };
   }
   var t;
   box.addEventListener('input', function (e) {
@@ -80,7 +80,7 @@
     var b = e.target.closest('[data-cont]'); if (b) { st.cont = b.getAttribute('data-cont') || ''; paint(); apply(true); return; }
     var rd = e.target.closest('[data-x-random]'); if (rd) { var vis = cards.filter(function (c) { return !c.hidden; }); if (vis.length) { var c = vis[Math.floor(Math.random() * vis.length)]; try { (w.dataLayer = w.dataLayer || []).push({ event: 'hlc_click', hlc_target: 'sorprendeme' }); } catch (er) {} location.href = c.getAttribute('href'); } return; }
     var tg = e.target.closest('[data-x-toggle]'); if (tg) { var o = box.classList.toggle('open'); tg.setAttribute('aria-expanded', o); tg.textContent = o ? (EN ? '✕ Fewer filters' : '✕ Menos filtros') : (EN ? '⚙️ More filters' : '⚙️ Más filtros'); return; }
-    if (e.target.closest('[data-x-clear]')) { st = { q: '', desde: '', aero: '', dur: '', mes: '', orden: 'nuevo', cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); }
+    if (e.target.closest('[data-x-clear]')) { st = { q: '', desde: '', aero: '', dur: '', clase: '', mes: '', orden: 'nuevo', cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); }
   });
   w.addEventListener('hlc:favs', function () { if (st.fav) apply(false); });
   paint(); apply(false);
