@@ -236,7 +236,7 @@ function prepareResponse(val, event, config, nested) {
 		const errHeaders = event[kEventRes]?.[kEventResErrHeaders];
 		if (onError && !nested) return Promise.resolve().then(() => onError(error, event)).catch(toError).then((newVal) => prepareResponse(newVal ?? val, event, config, true));
 		event[kEventRes] = void 0;
-		return errorResponse(error, config.debug, errHeaders);
+		val = errorResponse(error, config.debug, errHeaders);
 	}
 	const preparedRes = event[kEventRes];
 	let preparedHeaders = preparedRes?.[kEventResHeaders];

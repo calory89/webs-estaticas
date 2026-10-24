@@ -125,11 +125,11 @@ var en$1 = {
 	fromNav: "Direct flights from Denmark",
 	fromTitle: (a) => `Direct flights from ${a}: the 3 best hotels in every destination | Top3Hotels`,
 	fromH1: (a) => `Fly direct from ${a}`,
-	fromLead: (a, n) => `${n} destinations with direct flights from ${a} Airport. For each one: one Budget, one Best Value and one Luxury hotel. Pick in 1 second.`,
+	fromLead: (a, n) => `${n} destinations with direct flights from ${a} Airport. For each one: one Budget, one Best Value and one Luxury hotel. Sourced scores and reference prices.`,
 	popular: "Popular destinations",
 	homeH1: "Top 3 hotels in every city",
 	title: (c) => `Best Hotels in ${c} (2026): Budget, Best Value & Luxury | Top3Hotels`,
-	desc: (c, co, b, v, l) => `The 3 best hotels in ${c}, ${co}: ${b} (budget), ${v} (best value) and ${l} (luxury). Picked in 1 second.`,
+	desc: (c, co, b, v, l) => `The 3 best hotels in ${c}, ${co}: ${b} (budget), ${v} (best value) and ${l} (luxury). Sourced guest scores and reference prices.`,
 	h1: (c) => `The 3 best hotels in ${c}`,
 	lead: (n) => `One Budget, one Best Value, one Luxury${n ? `, chosen from ${n} hotels Booking.com returned for the same stay` : ""}. No endless list: pick your style and book.`,
 	checkIn: "Check in",
@@ -171,12 +171,12 @@ var en$1 = {
 	near: (c) => `Near ${c}`,
 	moreIn: (c) => `More in ${c}`,
 	allIn: (c) => `All ${c} destinations →`,
-	footer: "The best hotel in every city, picked in 1 second.",
+	footer: "Three hotels per city, chosen by public rules.",
 	disclaimer: "Independent guide. Booking links may earn us a commission at no cost to you. Reference prices, not live quotes.",
 	countryTitle: (c, n) => `Best Hotels in ${c}: ${n} Cities, 3 Picks Each | Top3Hotels`,
 	countryH1: (c) => `The best hotels in ${c}`,
 	countryLead: (n) => `${n} destinations. Three picks in each: Budget, Best Value and Luxury.`,
-	destTitle: (n) => `All ${n} Destinations — Best Hotels by City | Top3Hotels`,
+	destTitle: (n) => `All ${n} Destinations: Best Hotels by City | Top3Hotels`,
 	destH1: (n) => `All ${n} destinations`,
 	destLead: (n) => `Every city has exactly three hotels: Budget, Best Value and Luxury. ${n} countries.`,
 	notFound: "We're not in that city yet",
@@ -260,11 +260,11 @@ var T = {
 		fromNav: "Vuelos directos desde Dinamarca",
 		fromTitle: (a) => `Vuelos directos desde ${a}: los 3 mejores hoteles de cada destino | Top3Hotels`,
 		fromH1: (a) => `Vuela directo desde ${a}`,
-		fromLead: (a, n) => `${n} destinos con vuelo directo desde el aeropuerto de ${a}. En cada uno: un hotel económico, uno calidad-precio y uno de lujo. Elige en 1 segundo.`,
+		fromLead: (a, n) => `${n} destinos con vuelo directo desde el aeropuerto de ${a}. En cada uno: un hotel económico, uno calidad-precio y uno de lujo. Notas con fuente y precios de referencia.`,
 		popular: "Destinos populares",
 		homeH1: "Los 3 mejores hoteles de cada ciudad",
 		title: (c) => `Los 3 mejores hoteles de ${c} (2026): económico, calidad-precio y lujo | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Los 3 mejores hoteles de ${c}, ${co}: ${b} (económico), ${v} (calidad-precio) y ${l} (lujo). Elegidos en 1 segundo.`,
+		desc: (c, co, b, v, l) => `Los 3 mejores hoteles de ${c}, ${co}: ${b} (económico), ${v} (calidad-precio) y ${l} (lujo). Notas de huéspedes con fuente y precios de referencia.`,
 		h1: (c) => `Los 3 mejores hoteles de ${c}`,
 		lead: (n) => `Uno económico, uno calidad-precio y uno de lujo${n ? `, elegidos entre ${n} hoteles de Booking.com para la misma estancia` : ""}. Sin listas infinitas: elige tu estilo y reserva.`,
 		checkIn: "Entrada",
@@ -306,12 +306,12 @@ var T = {
 		near: (c) => `Cerca de ${c}`,
 		moreIn: (c) => `Más en ${c}`,
 		allIn: (c) => `Todos los destinos de ${c} →`,
-		footer: "El mejor hotel de cada ciudad, elegido en 1 segundo.",
+		footer: "Tres hoteles por ciudad, elegidos con reglas públicas.",
 		disclaimer: "Guía independiente. Los enlaces de reserva pueden darnos una comisión sin coste para ti. Precios de referencia, no en tiempo real.",
 		countryTitle: (c, n) => `Mejores hoteles de ${c}: ${n} ciudades, 3 opciones en cada una | Top3Hotels`,
 		countryH1: (c) => `Los mejores hoteles de ${c}`,
 		countryLead: (n) => `${n} destinos. Tres opciones en cada uno: económico, calidad-precio y lujo.`,
-		destTitle: (n) => `Los ${n} destinos — Mejores hoteles por ciudad | Top3Hotels`,
+		destTitle: (n) => `Los ${n} destinos: Mejores hoteles por ciudad | Top3Hotels`,
 		destH1: (n) => `Los ${n} destinos`,
 		destLead: (n) => `Cada ciudad tiene exactamente tres hoteles: económico, calidad-precio y lujo. ${n} países.`,
 		notFound: "Aún no tenemos esa ciudad",
@@ -397,7 +397,7 @@ var T = {
 		popular: "Beliebte Reiseziele",
 		homeH1: "Die 3 besten Hotels jeder Stadt",
 		title: (c) => `Die besten Hotels in ${c} (2026): günstig, Preis-Leistung & Luxus | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Die 3 besten Hotels in ${c}, ${co}: ${b} (günstig), ${v} (Preis-Leistung) und ${l} (Luxus). In 1 Sekunde gewählt.`,
+		desc: (c, co, b, v, l) => `Die 3 besten Hotels in ${c}, ${co}: ${b} (günstig), ${v} (Preis-Leistung) und ${l} (Luxus). Bewertungen mit Quelle und Referenzpreise.`,
 		h1: (c) => `Die 3 besten Hotels in ${c}`,
 		lead: (n) => `Ein günstiges, eines mit bestem Preis-Leistungs-Verhältnis und ein Luxushotel${n ? ` – ausgewählt aus ${n} Hotels, die Booking.com für denselben Aufenthalt anzeigte` : ""}. Keine endlose Liste.`,
 		checkIn: "Anreise",
@@ -439,12 +439,12 @@ var T = {
 		near: (c) => `In der Nähe von ${c}`,
 		moreIn: (c) => `Mehr in ${c}`,
 		allIn: (c) => `Alle Reiseziele in ${c} →`,
-		footer: "Das beste Hotel jeder Stadt, in 1 Sekunde gewählt.",
+		footer: "Drei Hotels pro Stadt, nach öffentlichen Regeln gewählt.",
 		disclaimer: "Unabhängiger Ratgeber. Buchungslinks können uns eine Provision bringen, ohne Kosten für Sie. Referenzpreise, keine Live-Angebote.",
 		countryTitle: (c, n) => `Die besten Hotels in ${c}: ${n} Städte, je 3 Tipps | Top3Hotels`,
 		countryH1: (c) => `Die besten Hotels in ${c}`,
 		countryLead: (n) => `${n} Reiseziele. Jeweils drei Tipps: günstig, Preis-Leistung und Luxus.`,
-		destTitle: (n) => `Alle ${n} Reiseziele — die besten Hotels nach Stadt | Top3Hotels`,
+		destTitle: (n) => `Alle ${n} Reiseziele: die besten Hotels nach Stadt | Top3Hotels`,
 		destH1: (n) => `Alle ${n} Reiseziele`,
 		destLead: (n) => `Jede Stadt hat genau drei Hotels: günstig, Preis-Leistung und Luxus. ${n} Länder.`,
 		notFound: "Diese Stadt haben wir noch nicht",
@@ -530,7 +530,7 @@ var T = {
 		popular: "Destinations populaires",
 		homeH1: "Les 3 meilleurs hôtels de chaque ville",
 		title: (c) => `Meilleurs hôtels à ${c} (2026) : petit budget, qualité-prix et luxe | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Les 3 meilleurs hôtels à ${c}, ${co} : ${b} (petit budget), ${v} (qualité-prix) et ${l} (luxe). Choisis en 1 seconde.`,
+		desc: (c, co, b, v, l) => `Les 3 meilleurs hôtels à ${c}, ${co} : ${b} (petit budget), ${v} (qualité-prix) et ${l} (luxe). Notes sourcées et prix de référence.`,
 		h1: (c) => `Les 3 meilleurs hôtels à ${c}`,
 		lead: (n) => `Un petit budget, un meilleur rapport qualité-prix et un luxe${n ? `, choisis parmi ${n} hôtels proposés par Booking.com pour le même séjour` : ""}. Pas de liste interminable.`,
 		checkIn: "Arrivée",
@@ -572,12 +572,12 @@ var T = {
 		near: (c) => `Près de ${c}`,
 		moreIn: (c) => `Plus en ${c}`,
 		allIn: (c) => `Toutes les destinations en ${c} →`,
-		footer: "Le meilleur hôtel de chaque ville, choisi en 1 seconde.",
+		footer: "Trois hôtels par ville, choisis selon des règles publiques.",
 		disclaimer: "Guide indépendant. Les liens de réservation peuvent nous rapporter une commission, sans frais pour vous. Prix de référence, pas en temps réel.",
 		countryTitle: (c, n) => `Meilleurs hôtels en ${c} : ${n} villes, 3 choix chacune | Top3Hotels`,
 		countryH1: (c) => `Les meilleurs hôtels en ${c}`,
 		countryLead: (n) => `${n} destinations. Trois choix dans chacune : petit budget, qualité-prix et luxe.`,
-		destTitle: (n) => `Les ${n} destinations — meilleurs hôtels par ville | Top3Hotels`,
+		destTitle: (n) => `Les ${n} destinations: meilleurs hôtels par ville | Top3Hotels`,
 		destH1: (n) => `Les ${n} destinations`,
 		destLead: (n) => `Chaque ville a exactement trois hôtels : petit budget, qualité-prix et luxe. ${n} pays.`,
 		notFound: "Nous ne couvrons pas encore cette ville",
@@ -663,7 +663,7 @@ var T = {
 		popular: "Destinazioni popolari",
 		homeH1: "I 3 migliori hotel di ogni città",
 		title: (c) => `I migliori hotel a ${c} (2026): economico, qualità-prezzo e lusso | Top3Hotels`,
-		desc: (c, co, b, v, l) => `I 3 migliori hotel a ${c}, ${co}: ${b} (economico), ${v} (qualità-prezzo) e ${l} (lusso). Scelti in 1 secondo.`,
+		desc: (c, co, b, v, l) => `I 3 migliori hotel a ${c}, ${co}: ${b} (economico), ${v} (qualità-prezzo) e ${l} (lusso). Punteggi con fonte e prezzi di riferimento.`,
 		h1: (c) => `I 3 migliori hotel a ${c}`,
 		lead: (n) => `Uno economico, uno qualità-prezzo e uno di lusso${n ? `, scelti tra ${n} hotel proposti da Booking.com per lo stesso soggiorno` : ""}. Nessuna lista infinita.`,
 		checkIn: "Arrivo",
@@ -705,12 +705,12 @@ var T = {
 		near: (c) => `Vicino a ${c}`,
 		moreIn: (c) => `Altro in ${c}`,
 		allIn: (c) => `Tutte le destinazioni in ${c} →`,
-		footer: "Il miglior hotel di ogni città, scelto in 1 secondo.",
+		footer: "Tre hotel per città, scelti con regole pubbliche.",
 		disclaimer: "Guida indipendente. I link di prenotazione possono farci guadagnare una commissione senza costi per te. Prezzi di riferimento, non in tempo reale.",
 		countryTitle: (c, n) => `I migliori hotel in ${c}: ${n} città, 3 scelte ciascuna | Top3Hotels`,
 		countryH1: (c) => `I migliori hotel in ${c}`,
 		countryLead: (n) => `${n} destinazioni. Tre scelte in ognuna: economico, qualità-prezzo e lusso.`,
-		destTitle: (n) => `Tutte le ${n} destinazioni — i migliori hotel per città | Top3Hotels`,
+		destTitle: (n) => `Tutte le ${n} destinazioni: i migliori hotel per città | Top3Hotels`,
 		destH1: (n) => `Tutte le ${n} destinazioni`,
 		destLead: (n) => `Ogni città ha esattamente tre hotel: economico, qualità-prezzo e lusso. ${n} paesi.`,
 		notFound: "Non copriamo ancora questa città",
@@ -796,7 +796,7 @@ var T = {
 		popular: "Destinos populares",
 		homeH1: "Os 3 melhores hotéis de cada cidade",
 		title: (c) => `Os melhores hotéis em ${c} (2026): económico, qualidade-preço e luxo | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Os 3 melhores hotéis em ${c}, ${co}: ${b} (económico), ${v} (qualidade-preço) e ${l} (luxo). Escolhidos em 1 segundo.`,
+		desc: (c, co, b, v, l) => `Os 3 melhores hotéis em ${c}, ${co}: ${b} (económico), ${v} (qualidade-preço) e ${l} (luxo). Notas com fonte e preços de referência.`,
 		h1: (c) => `Os 3 melhores hotéis em ${c}`,
 		lead: (n) => `Um económico, um de melhor qualidade-preço e um de luxo${n ? `, escolhidos entre ${n} hotéis do Booking.com para a mesma estadia` : ""}. Sem listas intermináveis.`,
 		checkIn: "Entrada",
@@ -838,12 +838,12 @@ var T = {
 		near: (c) => `Perto de ${c}`,
 		moreIn: (c) => `Mais em ${c}`,
 		allIn: (c) => `Todos os destinos em ${c} →`,
-		footer: "O melhor hotel de cada cidade, escolhido em 1 segundo.",
+		footer: "Três hotéis por cidade, escolhidos com regras públicas.",
 		disclaimer: "Guia independente. Os links de reserva podem render-nos uma comissão sem custo para si. Preços de referência, não em tempo real.",
 		countryTitle: (c, n) => `Melhores hotéis em ${c}: ${n} cidades, 3 escolhas em cada | Top3Hotels`,
 		countryH1: (c) => `Os melhores hotéis em ${c}`,
 		countryLead: (n) => `${n} destinos. Três escolhas em cada: económico, qualidade-preço e luxo.`,
-		destTitle: (n) => `Os ${n} destinos — melhores hotéis por cidade | Top3Hotels`,
+		destTitle: (n) => `Os ${n} destinos: melhores hotéis por cidade | Top3Hotels`,
 		destH1: (n) => `Os ${n} destinos`,
 		destLead: (n) => `Cada cidade tem exatamente três hotéis: económico, qualidade-preço e luxo. ${n} países.`,
 		notFound: "Ainda não temos essa cidade",
@@ -925,11 +925,11 @@ var T = {
 		fromNav: "Direkte fly fra Danmark",
 		fromTitle: (a) => `Direkte fly fra ${a}: de 3 bedste hoteller på hver destination | Top3Hotels`,
 		fromH1: (a) => `Flyv direkte fra ${a}`,
-		fromLead: (a, n) => `${n} destinationer med direkte fly fra ${a} Lufthavn. For hver: ét budgethotel, ét med mest for pengene og ét luksushotel. Vælg på 1 sekund.`,
+		fromLead: (a, n) => `${n} destinationer med direkte fly fra ${a} Lufthavn. For hver: ét budgethotel, ét med mest for pengene og ét luksushotel. Kilder til bedømmelser og referencepriser.`,
 		popular: "Populære destinationer",
 		homeH1: "De 3 bedste hoteller i hver by",
 		title: (c) => `De 3 bedste hoteller i ${c} (2026): budget, mest for pengene og luksus | Top3Hotels`,
-		desc: (c, co, b, v, l) => `De 3 bedste hoteller i ${c}, ${co}: ${b} (budget), ${v} (mest for pengene) og ${l} (luksus). Valgt på 1 sekund.`,
+		desc: (c, co, b, v, l) => `De 3 bedste hoteller i ${c}, ${co}: ${b} (budget), ${v} (mest for pengene) og ${l} (luksus). Gæsteanmeldelser med kilde og referencepriser.`,
 		h1: (c) => `De 3 bedste hoteller i ${c}`,
 		lead: (n) => `Ét budgethotel, ét med mest for pengene og ét luksushotel${n ? ` – valgt blandt ${n} hoteller, som Booking.com viste for samme ophold` : ""}. Ingen endeløs liste: vælg din stil og book.`,
 		checkIn: "Indtjekning",
@@ -971,12 +971,12 @@ var T = {
 		near: (c) => `Nær ${c}`,
 		moreIn: (c) => `Mere i ${c}`,
 		allIn: (c) => `Alle destinationer i ${c} →`,
-		footer: "Det bedste hotel i hver by, valgt på 1 sekund.",
+		footer: "Tre hoteller i hver by, valgt efter offentlige regler.",
 		disclaimer: "Uafhængig guide. Bookinglinks kan give os en provision uden ekstra omkostning for dig. Referencepriser, ikke live-tilbud.",
 		countryTitle: (c, n) => `De bedste hoteller i ${c}: ${n} byer, 3 valg i hver | Top3Hotels`,
 		countryH1: (c) => `De bedste hoteller i ${c}`,
 		countryLead: (n) => `${n} destinationer. Tre valg i hver: budget, mest for pengene og luksus.`,
-		destTitle: (n) => `Alle ${n} destinationer — de bedste hoteller efter by | Top3Hotels`,
+		destTitle: (n) => `Alle ${n} destinationer: de bedste hoteller efter by | Top3Hotels`,
 		destH1: (n) => `Alle ${n} destinationer`,
 		destLead: (n) => `Hver by har præcis tre hoteller: budget, mest for pengene og luksus. ${n} lande.`,
 		notFound: "Den by har vi ikke endnu",
@@ -1370,7 +1370,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 from ${n} guest reviews`,
 		whyFrom: (n) => `Chosen from ${n} hotels`,
-		in1: "In 1 second",
+		in1: "At a glance",
 		jHotels: "Hotels",
 		jWhere: "Where to stay",
 		jMap: "Map",
@@ -1421,7 +1421,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 con ${n} opiniones`,
 		whyFrom: (n) => `Elegido entre ${n} hoteles`,
-		in1: "En 1 segundo",
+		in1: "De un vistazo",
 		jHotels: "Hoteles",
 		jWhere: "Dónde alojarse",
 		jMap: "Mapa",
@@ -1472,7 +1472,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 aus ${n} Gästebewertungen`,
 		whyFrom: (n) => `Ausgewählt aus ${n} Hotels`,
-		in1: "In 1 Sekunde",
+		in1: "Auf einen Blick",
 		jHotels: "Hotels",
 		jWhere: "Wo übernachten",
 		jMap: "Karte",
@@ -1523,7 +1523,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 sur ${n} avis clients`,
 		whyFrom: (n) => `Choisi parmi ${n} hôtels`,
-		in1: "En 1 seconde",
+		in1: "En un coup d'œil",
 		jHotels: "Hôtels",
 		jWhere: "Où dormir",
 		jMap: "Carte",
@@ -1574,7 +1574,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 su ${n} recensioni`,
 		whyFrom: (n) => `Scelto tra ${n} hotel`,
-		in1: "In 1 secondo",
+		in1: "A colpo d'occhio",
 		jHotels: "Hotel",
 		jWhere: "Dove dormire",
 		jMap: "Mappa",
@@ -1625,7 +1625,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 em ${n} avaliações`,
 		whyFrom: (n) => `Escolhido entre ${n} hotéis`,
-		in1: "Em 1 segundo",
+		in1: "Num relance",
 		jHotels: "Hotéis",
 		jWhere: "Onde ficar",
 		jMap: "Mapa",
@@ -1676,7 +1676,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 fra ${n} gæsteanmeldelser`,
 		whyFrom: (n) => `Valgt blandt ${n} hoteller`,
-		in1: "På 1 sekund",
+		in1: "Overblik",
 		jHotels: "Hoteller",
 		jWhere: "Hvor skal man bo",
 		jMap: "Kort",
@@ -10101,6 +10101,1146 @@ var overrides_default = {
 		"stars": 2,
 		"total": 184.48,
 		"reason": "The cheapest well-reviewed private room we found in central Lisbon: rated 8.0 from more than 2,800 reviews, a short metro ride from Baixa."
+	} },
+	"odense-denmark": { "Best Value": {
+		"id": 22105,
+		"name": "City Hotel Nattergalen",
+		"area": "City centre",
+		"address": "Hans Mules Gade 5",
+		"lat": 55.399016,
+		"lng": 10.394233,
+		"url": "https://www.booking.com/hotel/dk/city-odense.html",
+		"score": 7.9,
+		"count": 2917,
+		"stars": 3,
+		"total": 255.48,
+		"checked": "22 Oct 2026",
+		"reason": "A central Odense hotel with a rooftop terrace, rated 7.9 from more than 2,900 Booking.com reviews, for well under the price of our upscale pick. Hosted stay: the hotel is hosting our team on 25 October 2026."
+	} },
+	"georgetown-guyana": { "Luxury": {
+		"id": 1286824,
+		"name": "Guyana Marriott Hotel Georgetown",
+		"area": "Georgetown",
+		"address": "Block Alpha , Battery Road, Kingston",
+		"lat": 6.825619,
+		"lng": -58.164282,
+		"url": "https://www.booking.com/hotel/gy/guyana-marriott-georgetown-georgetown.html",
+		"score": 7.5,
+		"count": 107,
+		"stars": 5,
+		"total": 873.52,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Georgetown on Booking.com: 7.5/10 from 107 guest reviews."
+	} },
+	"canggu-indonesia": { "Luxury": {
+		"id": 12900339,
+		"name": "TUI BLUE Berawa Hotel and Villas",
+		"area": "Canggu",
+		"address": "No.101 Jalan Pantai Berawa",
+		"lat": -8.660864,
+		"lng": 115.140206,
+		"url": "https://www.booking.com/hotel/id/berawa-amp-villas.html",
+		"score": 9.1,
+		"count": 799,
+		"stars": 5,
+		"total": 222.66,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Canggu on Booking.com: 9.1/10 from 799 guest reviews."
+	} },
+	"dakar-senegal": { "Luxury": {
+		"id": 98428,
+		"name": "Pullman Dakar Teranga",
+		"area": "Dakar",
+		"address": "10 Rue Colbert",
+		"lat": 14.667689,
+		"lng": -17.430656,
+		"url": "https://www.booking.com/hotel/sn/dakar-teranga.html",
+		"score": 8.1,
+		"count": 265,
+		"stars": 5,
+		"total": 1207.4,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."
+	} },
+	"mahon-spain": { "Luxury": {
+		"id": 6375718,
+		"name": "Cristine Bedfor Mahon Boutique Hotel",
+		"area": "Mahón",
+		"address": "19 Carrer de la Infanta",
+		"lat": 39.887369,
+		"lng": 4.265355,
+		"url": "https://www.booking.com/hotel/es/cristine-bedfor.html",
+		"score": 9.2,
+		"count": 232,
+		"stars": 5,
+		"total": 400.72,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Mahón on Booking.com: 9.2/10 from 232 guest reviews."
+	} },
+	"indianapolis-united-states": { "Luxury": {
+		"id": 42842,
+		"name": "Conrad Indianapolis",
+		"area": "Indianapolis",
+		"address": "50 West Washington Street",
+		"lat": 39.767259,
+		"lng": -86.159345,
+		"url": "https://www.booking.com/hotel/us/conrad-indianapolis.html",
+		"score": 8.3,
+		"count": 131,
+		"stars": 5,
+		"total": 607.57,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."
+	} },
+	"iasi-romania": { "Luxury": {
+		"id": 178950,
+		"name": "Pleiada Boutique Hotel & Spa",
+		"area": "Iași",
+		"address": "Soseaua Bucium nr. 18",
+		"lat": 47.13434,
+		"lng": 27.607629,
+		"url": "https://www.booking.com/hotel/ro/pleiada-boutique-hotel-and-spa.html",
+		"score": 9.3,
+		"count": 1385,
+		"stars": 5,
+		"total": 216.58,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Iași on Booking.com: 9.3/10 from 1,385 guest reviews."
+	} },
+	"hurghada-egypt": { "Luxury": {
+		"id": 8985201,
+		"name": "Pickalbatros Blu Spa Resort - Adults Friendly 16 Years Plus - Couples Only - Ultra All-Inclusive",
+		"area": "Hurghada",
+		"address": "El Corniche St., Al Mamsha El Seyahi,  . Village Road , Hurghada , Red Sea",
+		"lat": 27.182645,
+		"lng": 33.824915,
+		"url": "https://www.booking.com/hotel/eg/pickalbatros-blu-spa-resort-adults-friendly-16-years-plus.html",
+		"score": 9.6,
+		"count": 3565,
+		"stars": 5,
+		"total": 697.42,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Hurghada on Booking.com: 9.6/10 from 3,565 guest reviews."
+	} },
+	"taranto-italy": { "Luxury": {
+		"id": 14678,
+		"name": "Relais Histò San Pietro Sul Mar Piccolo",
+		"area": "Taranto",
+		"address": "Via Sant'Andrea, Circummarpiccolo",
+		"lat": 40.508399,
+		"lng": 17.316234,
+		"url": "https://www.booking.com/hotel/it/histo-san-pietro-sul-mar-piccolo.html",
+		"score": 9.3,
+		"count": 119,
+		"stars": 5,
+		"total": 873.68,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Taranto on Booking.com: 9.3/10 from 119 guest reviews."
+	} },
+	"olsztyn-poland": { "Luxury": {
+		"id": 546134,
+		"name": "Hotel Marina Club",
+		"area": "Olsztyn",
+		"address": "Siła 100",
+		"lat": 53.710222,
+		"lng": 20.376903,
+		"url": "https://www.booking.com/hotel/pl/marina-golf-club.html",
+		"score": 9.4,
+		"count": 2028,
+		"stars": 5,
+		"total": 329.39,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Olsztyn on Booking.com: 9.4/10 from 2,028 guest reviews."
+	} },
+	"obidos-portugal": { "Luxury": {
+		"id": 536563,
+		"name": "The Beachfront - Praia D'El Rey Golf & Beach Resort",
+		"area": "Óbidos",
+		"address": "Avenida D. Pedro I, nº30",
+		"lat": 39.399169,
+		"lng": -9.273866,
+		"url": "https://www.booking.com/hotel/pt/the-beachfront-praia-d-el-rey-golf-beach-resort.html",
+		"score": 9,
+		"count": 373,
+		"stars": 5,
+		"total": 408.6,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Óbidos on Booking.com: 9.0/10 from 373 guest reviews."
+	} },
+	"sunderland-united-kingdom": { "Luxury": {
+		"id": 13545644,
+		"name": "The Beach House Boutique Hotel",
+		"area": "Sunderland",
+		"address": "1 Roker Terrace, Sunderland.",
+		"lat": 54.921596,
+		"lng": -1.365956,
+		"url": "https://www.booking.com/hotel/gb/one-roker-terrace-tyne-and-wear.html",
+		"score": 9.4,
+		"count": 245,
+		"stars": 5,
+		"total": 498.89,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Sunderland on Booking.com: 9.4/10 from 245 guest reviews."
+	} },
+	"anaheim-united-states": { "Luxury": {
+		"id": 5770520,
+		"name": "JW Marriott, Anaheim Resort",
+		"area": "Anaheim",
+		"address": "1775 South Clementine Street",
+		"lat": 33.806258,
+		"lng": -117.910233,
+		"url": "https://www.booking.com/hotel/us/jw-marriott-anaheim-resort.html",
+		"score": 8.8,
+		"count": 378,
+		"stars": 5,
+		"total": 876.1,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Anaheim on Booking.com: 8.8/10 from 378 guest reviews."
+	} },
+	"oklahoma-city-united-states": { "Luxury": {
+		"id": 13468127,
+		"name": "Citizen House Hotel",
+		"area": "Oklahoma City",
+		"address": "600 N Robinson Ave",
+		"lat": 35.473045,
+		"lng": -97.51608,
+		"url": "https://www.booking.com/hotel/us/citizen-house.html",
+		"score": 9.3,
+		"count": 43,
+		"stars": 5,
+		"total": 441.71,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Oklahoma City on Booking.com: 9.3/10 from 43 guest reviews."
+	} },
+	"bastia-france": { "Luxury": {
+		"id": 15825050,
+		"name": "ROSEMARY hôtel",
+		"area": "Bastia",
+		"address": "21 boulevard Hyacinthe de Montera",
+		"lat": 42.699275,
+		"lng": 9.446208,
+		"url": "https://www.booking.com/hotel/fr/rosemary.html",
+		"score": 9.5,
+		"count": 36,
+		"stars": 5,
+		"total": 747.2,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Bastia on Booking.com: 9.5/10 from 36 guest reviews."
+	} },
+	"campeche-mexico": { "Luxury": {
+		"id": 326487,
+		"name": "Hotel Boutique Casa Don Gustavo, Campeche",
+		"area": "Campeche",
+		"address": "calle 59 No. 4",
+		"lat": 19.845383,
+		"lng": -90.538209,
+		"url": "https://www.booking.com/hotel/mx/casa-don-gustavo-boutique.html",
+		"score": 8.9,
+		"count": 121,
+		"stars": 5,
+		"total": 602.76,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Campeche on Booking.com: 8.9/10 from 121 guest reviews."
+	} },
+	"haarlem-netherlands": { "Luxury": {
+		"id": 303428,
+		"name": "Brasss Hotel Suites",
+		"area": "Haarlem",
+		"address": "Korte Veerstraat 1",
+		"lat": 52.379734,
+		"lng": 4.637507,
+		"url": "https://www.booking.com/hotel/nl/lambermon-s-suites.html",
+		"score": 9,
+		"count": 1119,
+		"stars": 5,
+		"total": 473.6,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Haarlem on Booking.com: 9.0/10 from 1,119 guest reviews."
+	} },
+	"salalah-oman": { "Luxury": {
+		"id": 2014752,
+		"name": "Al Baleed Resort Salalah by Anantara",
+		"area": "Salalah",
+		"address": "P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman",
+		"lat": 17.009874,
+		"lng": 54.146817,
+		"url": "https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html",
+		"score": 8.9,
+		"count": 337,
+		"stars": 5,
+		"total": 724.38,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."
+	} },
+	"ponte-de-lima-portugal": { "Luxury": {
+		"id": 367480,
+		"name": "Carmo's Boutique Hotel - Small Luxury Hotels of the World",
+		"area": "Ponte de Lima",
+		"address": "Rua Santiago da Gemieira, nº 10, Gemieira",
+		"lat": 41.775439,
+		"lng": -8.534009,
+		"url": "https://www.booking.com/hotel/pt/carmo-s-boutique.html",
+		"score": 8.8,
+		"count": 227,
+		"stars": 5,
+		"total": 460.8,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Ponte de Lima on Booking.com: 8.8/10 from 227 guest reviews."
+	} },
+	"constanta-romania": { "Luxury": {
+		"id": 1889286,
+		"name": "Belle Epoque Boutique (Adult Only)",
+		"area": "Constanta",
+		"address": "Bulevardul Tomis 16",
+		"lat": 44.175427,
+		"lng": 28.656297,
+		"url": "https://www.booking.com/hotel/ro/belle-epoque-boutique-villa.html",
+		"score": 9.7,
+		"count": 118,
+		"stars": 5,
+		"total": 336.56,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Constanta on Booking.com: 9.7/10 from 118 guest reviews."
+	} },
+	"alanya-turkiye": { "Luxury": {
+		"id": 1328377,
+		"name": "Day One Beach Resort & SPA - Adult Only",
+		"area": "Alanya",
+		"address": "Cumhuriyet Mah. Sanat Okulu Cad. Alanya",
+		"lat": 36.538978,
+		"lng": 32.026461,
+		"url": "https://www.booking.com/hotel/tr/banana-otel.html",
+		"score": 8.8,
+		"count": 787,
+		"stars": 5,
+		"total": 324.48,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Alanya on Booking.com: 8.8/10 from 787 guest reviews."
+	} },
+	"gaborone-botswana": { "Luxury": {
+		"id": 1168032,
+		"name": "Grand Palm Hotel, Gaborone",
+		"area": "Gaborone",
+		"address": "Bonnington Farm, Molepolole Road",
+		"lat": -24.640255,
+		"lng": 25.877409,
+		"url": "https://www.booking.com/hotel/bw/peermont-walmont.html",
+		"score": 7.5,
+		"count": 69,
+		"stars": 5,
+		"total": 273.83,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Gaborone on Booking.com: 7.5/10 from 69 guest reviews."
+	} },
+	"st-john-s-canada": { "Luxury": {
+		"id": 2641413,
+		"name": "Ryan Mansion",
+		"area": "St. John's",
+		"address": "21 Rennies Mill Road",
+		"lat": 47.569655,
+		"lng": -52.709049,
+		"url": "https://www.booking.com/hotel/ca/ryan-mansion.html",
+		"score": 8.3,
+		"count": 112,
+		"stars": 5,
+		"total": 285.4,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in St. John's on Booking.com: 8.3/10 from 112 guest reviews."
+	} },
+	"tours-france": { "Luxury": {
+		"id": 7842552,
+		"name": "Les Trésorières",
+		"area": "Tours",
+		"address": "2 Place Jean Meunier",
+		"lat": 47.390539,
+		"lng": .681483,
+		"url": "https://www.booking.com/hotel/fr/les-tresorieres.html",
+		"score": 9.2,
+		"count": 310,
+		"stars": 5,
+		"total": 670.84,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Tours on Booking.com: 9.2/10 from 310 guest reviews."
+	} },
+	"legian-indonesia": { "Luxury": {
+		"id": 402556,
+		"name": "The Magani Hotel and Spa",
+		"area": "Legian",
+		"address": "Jalan Melasti, Legian Kelod",
+		"lat": -8.708689,
+		"lng": 115.170053,
+		"url": "https://www.booking.com/hotel/id/the-magani-amp-spa.html",
+		"score": 9.1,
+		"count": 1597,
+		"stars": 5,
+		"total": 257.3,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Legian on Booking.com: 9.1/10 from 1,597 guest reviews."
+	} },
+	"torquay-unitedkingdom": { "Luxury": {
+		"id": 1759331,
+		"name": "Cary Arms & Spa",
+		"area": "Torquay",
+		"address": "Beach Road",
+		"lat": 50.478859,
+		"lng": -3.508822,
+		"url": "https://www.booking.com/hotel/gb/cary-arms-babbacombe-torquay.html",
+		"score": 9.3,
+		"count": 266,
+		"stars": 5,
+		"total": 572.89,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Torquay on Booking.com: 9.3/10 from 266 guest reviews."
+	} },
+	"bentonville-united-states": { "Luxury": {
+		"id": 14258020,
+		"name": "The Compton",
+		"area": "Bentonville",
+		"address": "200 E Central Ave",
+		"lat": 36.372007,
+		"lng": -94.207705,
+		"url": "https://www.booking.com/hotel/us/the-compton.html",
+		"score": 9.4,
+		"count": 32,
+		"stars": 5,
+		"total": 1749.71,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Bentonville on Booking.com: 9.4/10 from 32 guest reviews."
+	} },
+	"phoenix-united-states": { "Luxury": {
+		"id": 263665,
+		"name": "JW Marriott Phoenix Desert Ridge Resort & Spa",
+		"area": "Phoenix",
+		"address": "5350 East Marriott Drive",
+		"lat": 33.683452,
+		"lng": -111.966063,
+		"url": "https://www.booking.com/hotel/us/jw-marriott-phoenix-desert-ridge-resort.html",
+		"score": 8.6,
+		"count": 70,
+		"stars": 5,
+		"total": 1638.87,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Phoenix on Booking.com: 8.6/10 from 70 guest reviews."
+	} },
+	"mytilene-greece": { "Luxury": {
+		"id": 265824,
+		"name": "Elysion Hotel",
+		"area": "Mytilene",
+		"address": "Neapoli",
+		"lat": 39.068865,
+		"lng": 26.593861,
+		"url": "https://www.booking.com/hotel/gr/elysion.html",
+		"score": 8.9,
+		"count": 482,
+		"stars": 5,
+		"total": 228.8,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Mytilene on Booking.com: 8.9/10 from 482 guest reviews."
+	} },
+	"balneario-camboriu-brazil": { "Luxury": {
+		"id": 11387136,
+		"name": "Morada Pedra Branca boutique Hotel",
+		"area": "Balneario Camboriu",
+		"address": "Rua Morro da Pedra Branca",
+		"lat": -27.031859,
+		"lng": -48.613443,
+		"url": "https://www.booking.com/hotel/br/morada-pedra-branca.html",
+		"score": 8.9,
+		"count": 35,
+		"stars": 5,
+		"total": 227.68,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Balneario Camboriu on Booking.com: 8.9/10 from 35 guest reviews."
+	} },
+	"whistler-canada": { "Luxury": {
+		"id": 446327,
+		"name": "Four Seasons Resort Whistler",
+		"area": "Whistler",
+		"address": "4591 Blackcomb Way",
+		"lat": 50.119017,
+		"lng": -122.944345,
+		"url": "https://www.booking.com/hotel/ca/four-seasons-whistler.html",
+		"score": 9.5,
+		"count": 382,
+		"stars": 5,
+		"total": 738.17,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Whistler on Booking.com: 9.5/10 from 382 guest reviews."
+	} },
+	"valence-france": { "Luxury": {
+		"id": 44887,
+		"name": "Maison Pic",
+		"area": "Valence",
+		"address": "285 Avenue Victor Hugo",
+		"lat": 44.917659,
+		"lng": 4.885483,
+		"url": "https://www.booking.com/hotel/fr/maison-pic.html",
+		"score": 9.4,
+		"count": 160,
+		"stars": 5,
+		"total": 881.6,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Valence on Booking.com: 9.4/10 from 160 guest reviews."
+	} },
+	"nafplio-greece": { "Luxury": {
+		"id": 238954,
+		"name": "Amphitryon Hotel",
+		"area": "Nafplio",
+		"address": "3-5, Spiliadou Str",
+		"lat": 37.565807,
+		"lng": 22.794421,
+		"url": "https://www.booking.com/hotel/gr/amphitryon.html",
+		"score": 7.7,
+		"count": 153,
+		"stars": 5,
+		"total": 418,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Nafplio on Booking.com: 7.7/10 from 153 guest reviews."
+	} },
+	"nusa-penida-indonesia": { "Luxury": {
+		"id": 12077759,
+		"name": "Semaya Beach Resort",
+		"area": "Nusa Penida",
+		"address": "7J39+J3F, Suana, Nusa Penida, Klungkung Regency, Bali 80771",
+		"lat": -8.745938,
+		"lng": 115.617672,
+		"url": "https://www.booking.com/hotel/id/nusa-penida-beach-resort.html",
+		"score": 9.5,
+		"count": 775,
+		"stars": 5,
+		"total": 391.09,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Nusa Penida on Booking.com: 9.5/10 from 775 guest reviews."
+	} },
+	"colima-mexico": { "Luxury": {
+		"id": 398386,
+		"name": "Hotel Boutique Hacienda del Gobernador",
+		"area": "Colima",
+		"address": "Calle Gildardo Gomez, 128. Colonia Centro",
+		"lat": 19.242987,
+		"lng": -103.730848,
+		"url": "https://www.booking.com/hotel/mx/boutique-hacienda-del-gobernador.html",
+		"score": 8.1,
+		"count": 74,
+		"stars": 5,
+		"total": 140.24,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Colima on Booking.com: 8.1/10 from 74 guest reviews."
+	} },
+	"horta-portugal": { "Luxury": {
+		"id": 16663552,
+		"name": "The Book Hotel",
+		"area": "Horta",
+		"address": "Largo do Bpo. Dom Alexandre 8",
+		"lat": 38.540761,
+		"lng": -28.623989,
+		"url": "https://www.booking.com/hotel/pt/the-book.html",
+		"score": 9.6,
+		"count": 38,
+		"stars": 5,
+		"total": 306,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."
+	} },
+	"apia-samoa": { "Luxury": {
+		"id": 353054,
+		"name": "Sheraton Samoa Aggie Grey's Hotel & Bungalows",
+		"area": "Apia",
+		"address": "Main Beach Road, Vaisigano",
+		"lat": -13.831538,
+		"lng": -171.760168,
+		"url": "https://www.booking.com/hotel/ws/sheraton-samoa-aggie-greys-hotel-and-bungalows.html",
+		"score": 7.8,
+		"count": 1104,
+		"stars": 5,
+		"total": 275.36,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Apia on Booking.com: 7.8/10 from 1,104 guest reviews."
+	} },
+	"monterey-united-states": { "Luxury": {
+		"id": 59154,
+		"name": "Monterey Plaza Hotel & Spa",
+		"area": "Monterey",
+		"address": "400 Cannery Row",
+		"lat": 36.611925,
+		"lng": -121.898164,
+		"url": "https://www.booking.com/hotel/us/monterey-park-spa.html",
+		"score": 9.1,
+		"count": 530,
+		"stars": 5,
+		"total": 759.14,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Monterey on Booking.com: 9.1/10 from 530 guest reviews."
+	} },
+	"kelowna-canada": { "Luxury": {
+		"id": 266244,
+		"name": "Delta Hotels by Marriott Grand Okanagan Resort",
+		"area": "Kelowna",
+		"address": "1310 Water Street",
+		"lat": 49.891548,
+		"lng": -119.497578,
+		"url": "https://www.booking.com/hotel/ca/delta-grand-okanagan-resort.html",
+		"score": 8.3,
+		"count": 452,
+		"stars": 5,
+		"total": 343.99,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Kelowna on Booking.com: 8.3/10 from 452 guest reviews."
+	} },
+	"annecy-france": { "Luxury": {
+		"id": 888936,
+		"name": "Les Loges Annecy Vieille Ville",
+		"area": "Annecy",
+		"address": "35 rue Sainte Claire",
+		"lat": 45.898026,
+		"lng": 6.123658,
+		"url": "https://www.booking.com/hotel/fr/les-loges-annecy-vieille-ville.html",
+		"score": 8.6,
+		"count": 599,
+		"stars": 5,
+		"total": 630,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Annecy on Booking.com: 8.6/10 from 599 guest reviews."
+	} },
+	"brescia-italy": { "Luxury": {
+		"id": 41871,
+		"name": "Hotel Vittoria",
+		"area": "Brescia",
+		"address": "Via X Giornate 20",
+		"lat": 45.538354,
+		"lng": 10.220166,
+		"url": "https://www.booking.com/hotel/it/vittoria-brescia.html",
+		"score": 7.9,
+		"count": 1535,
+		"stars": 5,
+		"total": 244,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Brescia on Booking.com: 7.9/10 from 1,535 guest reviews."
+	} },
+	"ferrara-italy": { "Luxury": {
+		"id": 1132168,
+		"name": "Hotel & SPA Duchessa Isabella Collection by GSA Hotels",
+		"area": "Ferrara",
+		"address": "Via Palestro 70",
+		"lat": 44.840356,
+		"lng": 11.624745,
+		"url": "https://www.booking.com/hotel/it/duchessa-isabella.html",
+		"score": 8.5,
+		"count": 528,
+		"stars": 5,
+		"total": 332,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Ferrara on Booking.com: 8.5/10 from 528 guest reviews."
+	} },
+	"conwy-united-kingdom": { "Luxury": {
+		"id": 11956279,
+		"name": "The Manor Boutique Hotel Restaurant and Bar",
+		"area": "Conwy",
+		"address": "the manor, gorse hill caravan park, trefriw road, conwy",
+		"lat": 53.259653,
+		"lng": -3.831228,
+		"url": "https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html",
+		"score": 9,
+		"count": 546,
+		"stars": 5,
+		"total": 325.83,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."
+	} },
+	"preston-united-kingdom": { "Luxury": {
+		"id": 1970305,
+		"name": "No.10 Preston",
+		"area": "Preston",
+		"address": "10 Theatre Street",
+		"lat": 53.75702,
+		"lng": -2.704263,
+		"url": "https://www.booking.com/hotel/gb/10-theatre-street-apartment.html",
+		"score": 8.8,
+		"count": 478,
+		"stars": 5,
+		"total": 191.2,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Preston on Booking.com: 8.8/10 from 478 guest reviews."
+	} },
+	"naples-florida-united-states": { "Luxury": {
+		"id": 188256,
+		"name": "The Ritz-Carlton Naples",
+		"area": "Naples, Florida",
+		"address": "280 Vanderbilt Beach Road",
+		"lat": 26.251951,
+		"lng": -81.821301,
+		"url": "https://www.booking.com/hotel/us/ritz-carlton-naples.html",
+		"score": 9.3,
+		"count": 81,
+		"stars": 5,
+		"total": 3051.2,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Naples, Florida on Booking.com: 9.3/10 from 81 guest reviews."
+	} },
+	"mui-ne-vietnam": { "Luxury": {
+		"id": 9194505,
+		"name": "The Anam Mui Ne",
+		"area": "Mui Ne",
+		"address": "18 Nguyen Dinh Chieu, Mui Ne",
+		"lat": 10.942592,
+		"lng": 108.194609,
+		"url": "https://www.booking.com/hotel/vn/the-anam-mui-ne.html",
+		"score": 9.5,
+		"count": 546,
+		"stars": 5,
+		"total": 550.65,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Mui Ne on Booking.com: 9.5/10 from 546 guest reviews."
+	} },
+	"menton-france": { "Luxury": {
+		"id": 51527,
+		"name": "Hotel Napoléon",
+		"area": "Menton",
+		"address": "29 Porte de France",
+		"lat": 43.782683,
+		"lng": 7.512074,
+		"url": "https://www.booking.com/hotel/fr/hotelnapolmenton.html",
+		"score": 8.6,
+		"count": 742,
+		"stars": 4,
+		"total": 214.4,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Menton, so this is our upscale alternative: a 4-star rated 8.6/10 from 742 Booking.com reviews."
+	} },
+	"ierapetra-greece": { "Luxury": {
+		"id": 26834,
+		"name": "Petra Mare",
+		"area": "Ierapetra",
+		"address": "Filotheou A' 6",
+		"lat": 35.009836,
+		"lng": 25.751106,
+		"url": "https://www.booking.com/hotel/gr/petra-mare.html",
+		"score": 9.4,
+		"count": 388,
+		"stars": 4,
+		"total": 398.04,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Ierapetra, so this is our upscale alternative: a 4-star rated 9.4/10 from 388 Booking.com reviews."
+	} },
+	"grosseto-italy": { "Luxury": {
+		"id": 365654,
+		"name": "Hotel Airone",
+		"area": "Grosseto",
+		"address": "Via Senese 35",
+		"lat": 42.766834,
+		"lng": 11.118105,
+		"url": "https://www.booking.com/hotel/it/airone-grosseto.html",
+		"score": 8.6,
+		"count": 1026,
+		"stars": 4,
+		"total": 264,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Grosseto, so this is our upscale alternative: a 4-star rated 8.6/10 from 1,026 Booking.com reviews."
+	} },
+	"bristol-unitedkingdom": { "Luxury": {
+		"id": 6929449,
+		"name": "Leonardo Hotel Bristol City",
+		"area": "Bristol",
+		"address": "3 Temple Way",
+		"lat": 51.4538,
+		"lng": -2.583211,
+		"url": "https://www.booking.com/hotel/gb/leonardo-hotel-bristol-city.html",
+		"score": 9,
+		"count": 7006,
+		"stars": 4,
+		"total": 494.12,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Bristol, so this is our upscale alternative: a 4-star rated 9.0/10 from 7,006 Booking.com reviews."
+	} },
+	"oban-unitedkingdom": { "Luxury": {
+		"id": 6560432,
+		"name": "No.26 By The Sea",
+		"area": "Oban",
+		"address": "No 26 by The Sea Corran Esplanade",
+		"lat": 56.421421,
+		"lng": -5.482255,
+		"url": "https://www.booking.com/hotel/gb/no-26-by-the-sea.html",
+		"score": 9.5,
+		"count": 487,
+		"stars": 4,
+		"total": 393.86,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Oban, so this is our upscale alternative: a 4-star rated 9.5/10 from 487 Booking.com reviews."
+	} },
+	"whitstable-united-kingdom": { "Luxury": {
+		"id": 10447450,
+		"name": "Duke of Cumberland",
+		"area": "Whitstable",
+		"address": "High Street",
+		"lat": 51.360378,
+		"lng": 1.024129,
+		"url": "https://www.booking.com/hotel/gb/duke-of-cumberland.html",
+		"score": 8.9,
+		"count": 592,
+		"stars": 4,
+		"total": 411.77,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Whitstable, so this is our upscale alternative: a 4-star rated 8.9/10 from 592 Booking.com reviews."
+	} },
+	"boca-raton-united-states": { "Luxury": {
+		"id": 58151,
+		"name": "Renaissance Boca Raton Hotel",
+		"area": "Boca Raton",
+		"address": "2000 Northwest 19th Street",
+		"lat": 26.366204,
+		"lng": -80.124184,
+		"url": "https://www.booking.com/hotel/us/renaissance-boca-raton.html",
+		"score": 8.6,
+		"count": 125,
+		"stars": 4,
+		"total": 600.8,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Boca Raton, so this is our upscale alternative: a 4-star rated 8.6/10 from 125 Booking.com reviews."
+	} },
+	"dalat-vietnam": { "Luxury": {
+		"id": 1561468,
+		"name": "Swiss-Belresort Tuyen Lam",
+		"area": "Dalat",
+		"address": "Zone 7&8, Tuyen Lam Lake Tourist Area, Ward 3",
+		"lat": 11.882835,
+		"lng": 108.451771,
+		"url": "https://www.booking.com/hotel/vn/swiss-belresort-tuyen-lam.html",
+		"score": 8.9,
+		"count": 256,
+		"stars": 4,
+		"total": 125.62,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Dalat, so this is our upscale alternative: a 4-star rated 8.9/10 from 256 Booking.com reviews."
+	} },
+	"quimper-france": { "Luxury": {
+		"id": 3411582,
+		"name": "Hôtel Ginkgo - SPA Biloba",
+		"area": "Quimper",
+		"address": "1 rue du Chanoine Moreau",
+		"lat": 47.98837,
+		"lng": -4.111989,
+		"url": "https://www.booking.com/hotel/fr/ginkgo.html",
+		"score": 8.7,
+		"count": 543,
+		"stars": 4,
+		"total": 332,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Quimper, so this is our upscale alternative: a 4-star rated 8.7/10 from 543 Booking.com reviews."
+	} },
+	"arezzo-italy": { "Luxury": {
+		"id": 243257,
+		"name": "Graziella Patio Hotel",
+		"area": "Arezzo",
+		"address": "Via Cavour 23",
+		"lat": 43.464523,
+		"lng": 11.881523,
+		"url": "https://www.booking.com/hotel/it/graziella-patio.html",
+		"score": 8.7,
+		"count": 279,
+		"stars": 4,
+		"total": 393.08,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Arezzo, so this is our upscale alternative: a 4-star rated 8.7/10 from 279 Booking.com reviews."
+	} },
+	"pompei-italy": { "Luxury": {
+		"id": 7013109,
+		"name": "HABITA79, Pompeii, a Tribute Portfolio Hotel",
+		"area": "Pompei",
+		"address": "Via Roma 10",
+		"lat": 40.749527,
+		"lng": 14.498717,
+		"url": "https://www.booking.com/hotel/it/habita79-pompeii-a-tribute-portfolio-hotel.html",
+		"score": 9.1,
+		"count": 380,
+		"stars": 4,
+		"total": 402,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Pompei, so this is our upscale alternative: a 4-star rated 9.1/10 from 380 Booking.com reviews."
+	} },
+	"lugo-spain": { "Luxury": {
+		"id": 13285,
+		"name": "Hotel Monumento Pazo de Orbán",
+		"area": "Lugo",
+		"address": "Travesía do Miño, 6",
+		"lat": 43.010193,
+		"lng": -7.560256,
+		"url": "https://www.booking.com/hotel/es/monumento-pazo-de-orban.html",
+		"score": 9.1,
+		"count": 803,
+		"stars": 4,
+		"total": 220,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Lugo, so this is our upscale alternative: a 4-star rated 9.1/10 from 803 Booking.com reviews."
+	} },
+	"boise-united-states": { "Luxury": {
+		"id": 909801,
+		"name": "The Anniversary Inn - Boise",
+		"area": "Boise",
+		"address": "1575 South Lusk Avenue",
+		"lat": 43.604001,
+		"lng": -116.214841,
+		"url": "https://www.booking.com/hotel/us/the-anniversary-inn-boise.html",
+		"score": 8.7,
+		"count": 101,
+		"stars": 4,
+		"total": 380.45,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."
+	} },
+	"carmel-united-states": { "Luxury": {
+		"id": 423881,
+		"name": "La Playa Hotel",
+		"area": "Carmel",
+		"address": "Camino Real at Eighth Avenue",
+		"lat": 36.552305,
+		"lng": -121.926274,
+		"url": "https://www.booking.com/hotel/us/la-playa-carmel.html",
+		"score": 9.1,
+		"count": 174,
+		"stars": 4,
+		"total": 1424.48,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Carmel, so this is our upscale alternative: a 4-star rated 9.1/10 from 174 Booking.com reviews."
+	} },
+	"quedlinburg-germany": { "Luxury": {
+		"id": 72323,
+		"name": "Romantik Hotel am Brühl",
+		"area": "Quedlinburg",
+		"address": "Billungstr. 11",
+		"lat": 51.784172,
+		"lng": 11.137218,
+		"url": "https://www.booking.com/hotel/de/romantik-am-bruhl.html",
+		"score": 8.6,
+		"count": 802,
+		"stars": 4,
+		"total": 363,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Quedlinburg, so this is our upscale alternative: a 4-star rated 8.6/10 from 802 Booking.com reviews."
+	} },
+	"miskolc-hungary": { "Luxury": {
+		"id": 7162239,
+		"name": "Premier Hotel Miskolc",
+		"area": "Miskolc",
+		"address": "Arany Janos tér 1 MIskolc, Arany Janos ter 1",
+		"lat": 48.10773,
+		"lng": 20.787909,
+		"url": "https://www.booking.com/hotel/hu/premier-miskolc.html",
+		"score": 8.9,
+		"count": 1323,
+		"stars": 4,
+		"total": 305.05,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."
+	} },
+	"den-bosch-netherlands": { "Luxury": {
+		"id": 171136,
+		"name": "Good Seasons Hotel Den Bosch",
+		"area": "Den Bosch",
+		"address": "Kerkstraat 56",
+		"lat": 51.687979,
+		"lng": 5.306792,
+		"url": "https://www.booking.com/hotel/nl/eurohotel-den-bosch.html",
+		"score": 8.5,
+		"count": 2929,
+		"stars": 4,
+		"total": 471.72,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Den Bosch, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,929 Booking.com reviews."
+	} },
+	"chernivtsi-ukraine": { "Luxury": {
+		"id": 453381,
+		"name": "Bukovyna Hotel",
+		"area": "Chernivtsi",
+		"address": "Golovna Street, 141",
+		"lat": 48.277467,
+		"lng": 25.943356,
+		"url": "https://www.booking.com/hotel/ua/tourist-complex-bukovyna.html",
+		"score": 8.6,
+		"count": 2748,
+		"stars": 4,
+		"total": 124.64,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Chernivtsi, so this is our upscale alternative: a 4-star rated 8.6/10 from 2,748 Booking.com reviews."
+	} },
+	"chattanooga-united-states": { "Luxury": {
+		"id": 14064860,
+		"name": "Embassy Suites By Hilton Chattanooga Downtown",
+		"area": "Chattanooga",
+		"address": "345 Broad Street",
+		"lat": 35.052546,
+		"lng": -85.311075,
+		"url": "https://www.booking.com/hotel/us/embassy-suites-by-hilton-chattanooga-downtown.html",
+		"score": 9,
+		"count": 247,
+		"stars": 4,
+		"total": 454.97,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Chattanooga, so this is our upscale alternative: a 4-star rated 9.0/10 from 247 Booking.com reviews."
+	} },
+	"innsbruck-austria": { "Luxury": {
+		"id": 70101,
+		"name": "Hotel Das Innsbruck",
+		"area": "Innsbruck",
+		"address": "Innrain 3",
+		"lat": 47.267913,
+		"lng": 11.391312,
+		"url": "https://www.booking.com/hotel/at/hotelinnsbruck.html",
+		"score": 9.1,
+		"count": 5270,
+		"stars": 4,
+		"total": 564.21,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Innsbruck, so this is our upscale alternative: a 4-star rated 9.1/10 from 5,270 Booking.com reviews."
+	} },
+	"cordoba-mexico": { "Luxury": {
+		"id": 5442760,
+		"name": "Hotel Boutique Casa Zevallos",
+		"area": "Cordoba",
+		"address": "101 Avenida 1 101, planta alta",
+		"lat": 18.894549,
+		"lng": -96.934654,
+		"url": "https://www.booking.com/hotel/mx/casa-zevallos.html",
+		"score": 9.5,
+		"count": 117,
+		"stars": 4,
+		"total": 262.27,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Cordoba, so this is our upscale alternative: a 4-star rated 9.5/10 from 117 Booking.com reviews."
+	} },
+	"kosice-slovakia": { "Luxury": {
+		"id": 43539,
+		"name": "Hotel Yasmin Košice",
+		"area": "Kosice",
+		"address": "Tyršovo Nábrežie 1",
+		"lat": 48.729583,
+		"lng": 21.256995,
+		"url": "https://www.booking.com/hotel/sk/yasmin-kosice.html",
+		"score": 8.6,
+		"count": 812,
+		"stars": 4,
+		"total": 356,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Kosice, so this is our upscale alternative: a 4-star rated 8.6/10 from 812 Booking.com reviews."
+	} },
+	"malmo-sweden": { "Luxury": {
+		"id": 15253709,
+		"name": "Home Hotel Baltzar",
+		"area": "Malmö",
+		"address": "Baltzarsgatan 43",
+		"lat": 55.604686,
+		"lng": 13.00192,
+		"url": "https://www.booking.com/hotel/se/home-baltzar.html",
+		"score": 9,
+		"count": 175,
+		"stars": 4,
+		"total": 387.02,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Malmö, so this is our upscale alternative: a 4-star rated 9.0/10 from 175 Booking.com reviews."
+	} },
+	"klagenfurt-austria": { "Luxury": {
+		"id": 70529,
+		"name": "Hotel Dermuth Klagenfurt",
+		"area": "Klagenfurt",
+		"address": "Kohldorfer Straße 52",
+		"lat": 46.624714,
+		"lng": 14.274703,
+		"url": "https://www.booking.com/hotel/at/restaurant-dermuth.html",
+		"score": 8.8,
+		"count": 1456,
+		"stars": 4,
+		"total": 324,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Klagenfurt, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,456 Booking.com reviews."
+	} },
+	"bauru-brazil": { "Luxury": {
+		"id": 1116429,
+		"name": "Blue Tree Towers Bauru",
+		"area": "Bauru",
+		"address": "Rua Julio de Mesquita Filho, 1036",
+		"lat": -22.337173,
+		"lng": -49.051527,
+		"url": "https://www.booking.com/hotel/br/blue-tree-towers-bauru.html",
+		"score": 8.8,
+		"count": 1800,
+		"stars": 4,
+		"total": 152.09,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Bauru, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,800 Booking.com reviews."
+	} },
+	"olomouc-czechia": { "Luxury": {
+		"id": 7440169,
+		"name": "HERBARIUM boutique hotel",
+		"area": "Olomouc",
+		"address": "Dobrovského 16b",
+		"lat": 49.599087,
+		"lng": 17.258571,
+		"url": "https://www.booking.com/hotel/cz/herbarium-boutique.html",
+		"score": 9.5,
+		"count": 602,
+		"stars": 4,
+		"total": 332.64,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Olomouc, so this is our upscale alternative: a 4-star rated 9.5/10 from 602 Booking.com reviews."
+	} },
+	"ascona-switzerland": { "Luxury": {
+		"id": 329916,
+		"name": "Hotel Ascovilla Charming Hideway",
+		"area": "Ascona",
+		"address": "Via Albarelle 37/Via Lido 20",
+		"lat": 46.150872,
+		"lng": 8.774726,
+		"url": "https://www.booking.com/hotel/ch/ascovilla.html",
+		"score": 9.2,
+		"count": 246,
+		"stars": 4,
+		"total": 522.14,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Ascona, so this is our upscale alternative: a 4-star rated 9.2/10 from 246 Booking.com reviews."
+	} },
+	"basingstoke-united-kingdom": { "Luxury": {
+		"id": 5641844,
+		"name": "Village Hotel Basingstoke",
+		"area": "Basingstoke",
+		"address": "Basing View",
+		"lat": 51.268084,
+		"lng": -1.077534,
+		"url": "https://www.booking.com/hotel/gb/village-basingstoke.html",
+		"score": 8.5,
+		"count": 2554,
+		"stars": 4,
+		"total": 620.63,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."
+	} },
+	"tartu-estonia": { "Luxury": {
+		"id": 1995331,
+		"name": "V Spa & Conference Hotel",
+		"area": "Tartu",
+		"address": "Riia 2",
+		"lat": 58.376425,
+		"lng": 26.728768,
+		"url": "https://www.booking.com/hotel/ee/v-spa-amp-conference.html",
+		"score": 9.2,
+		"count": 3777,
+		"stars": 4,
+		"total": 340,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Tartu, so this is our upscale alternative: a 4-star rated 9.2/10 from 3,777 Booking.com reviews."
+	} },
+	"soria-spain": { "Luxury": {
+		"id": 9832126,
+		"name": "Noctis Hotel",
+		"area": "Soria",
+		"address": "Paraje Calle San Marcos 13",
+		"lat": 41.733817,
+		"lng": -2.495941,
+		"url": "https://www.booking.com/hotel/es/noctis.html",
+		"score": 9.6,
+		"count": 244,
+		"stars": 4,
+		"total": 429.6,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews."
 	} }
 };
 var blog_default = /*#__PURE__*/ JSON.parse("[{\"slug\":\"where-to-stay-in-odense\",\"city\":\"odense\",\"title\":\"Where to stay in Odense (2026): 3 hotels and the best area\",\"description\":\"Odense is small, so the hotel matters more than the neighbourhood. Our three picks for 2026 (budget, best value and upscale) with real prices, plus which part of town suits your trip.\",\"h1\":\"Where to stay in Odense\",\"dek\":\"Three hotels, one for each budget, and the only area questions that actually matter in a city you can cross on foot in twenty minutes.\",\"tags\":[\"Denmark\",\"City guide\"],\"body\":\"\\n<p>Odense is Denmark's third-largest city, but the centre is compact: from the station to H.C. Andersen's House is a ten-minute walk,\\nand the whole old town fits inside a loop you can do before lunch. That changes how you should choose a hotel. You don't need to\\nagonise over neighbourhoods the way you would in Copenhagen or Hamburg. The real questions are simpler:</p>\\n<ul>\\n<li><b>Are you arriving by car?</b> Then free parking is worth more than being two streets closer to the cathedral.</li>\\n<li><b>Are you here for H.C. Andersen and the old town?</b> Then stay within walking distance of the centre and leave the car at home.</li>\\n<li><b>Is it a concert, a conference or a match?</b> Then check where the event is first. Odense is easy to get around, but not at 11 pm in the rain.</li>\\n</ul>\\n<p>With that in mind, here are the three hotels we would book in Odense right now.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>Hotel Odeon</h3></div>\\n<ul class=\\\"facts\\\"><li>4-star (no five-star hotel in Odense met our bar)</li><li>8.5/10 from 2,756 guest reviews</li><li>About 500 m from the town hall</li><li><b>€222</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Hotel Odeon sits right next to ODEON, the city's concert and conference house, between the railway station and H.C. Andersen's House. If you are coming for a show, a congress or simply want to walk everywhere, it's hard to beat the location.</p><p>Odense has no five-star hotel that passes our review threshold, so our 'luxury' pick here is the best-reviewed upscale four-star. Nearly 2,800 reviews averaging 8.5 is a strong, stable signal: you know what you are getting.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's a big, modern city hotel rather than a characterful boutique. If you want small and personal, look at our Best Value pick.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/odeon.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Villa A Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>3-star</li><li>8.6/10 from 668 guest reviews</li><li>About 800 m south-west of the town hall</li><li>Free parking</li><li><b>€137</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Villa A is a small hotel on a quiet residential street, around a ten-to-fifteen-minute walk from the centre. It has the best guest score of every hotel we compared in Odense, at a price close to the city average.</p><p>That combination (top reviews, normal price, free parking, walkable) is exactly what 'best value' means to us. It works for couples, for a weekend without the car, and for business trips where you don't need a conference floor.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's small and simple: no restaurant, no spa. Book early for weekends.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/ansgarhus-motel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>Nice Nest Boutique Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>8.4/10 from 109 guest reviews</li><li>About 1.6 km east of the town hall</li><li>Free parking, hot tub, garden</li><li><b>€98</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Nice Nest is the cheapest well-reviewed private room we found in Odense: every room has its own bathroom, and there's free parking on site. It's about twenty minutes on foot from the centre, or a few minutes by car or bus.</p><p>If you are driving in from Jutland or Zealand and want a clean, calm base without paying city-centre prices, this is the one.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it has far fewer reviews than the other two, so there's less certainty, and it isn't in the old town. Fine with a car, less ideal without one.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/nice-nest.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which part of Odense should you stay in?</h2>\\n<h3>The old town and the H.C. Andersen Quarter</h3>\\n<p>Cobbled lanes, half-timbered houses, the cathedral of St Canute and the new H.C. Andersen's House museum. This is where most visitors spend their time,\\nand the best area for a first trip without a car. Hotels here are few and fill up fast on summer weekends and during the Christmas market season.</p>\\n<h3>Around the station and Kongens Have</h3>\\n<p>The most practical area if you arrive by train: Odense sits on the main line between Copenhagen and Jutland, and the station is a short walk from\\nthe centre. Hotel Odeon and several chain hotels are here. The King's Garden park is right in front of the station.</p>\\n<h3>Outside the centre, with parking</h3>\\n<p>Along the ring roads and towards the motorway you'll find hotels with free parking and lower prices, including our budget pick.\\nGood for drivers, families and anyone combining Odense with Egeskov Castle or a drive around Funen.</p>\\n<h2>Getting there</h2>\\n<ul>\\n<li><b>By train:</b> direct trains from Copenhagen Central take a little over an hour and a quarter; there are also direct trains from Copenhagen Airport.</li>\\n<li><b>By plane:</b> Billund Airport is about an hour away by car. Copenhagen Airport is the bigger hub, with a direct train.</li>\\n<li><b>In town:</b> walk. For longer hops, the Odense light rail runs north–south through the city.</li>\\n</ul>\\n<h2>When prices go up</h2>\\n<p>Odense is mostly a business and short-break city, so prices move with events: big conferences, concerts, the summer holidays and December,\\nwhen the Christmas markets bring a lot of weekend visitors. A mid-week stay in November is about as cheap as Odense gets.\\nOur prices above are from exactly that kind of week, so expect more on a summer Saturday.</p>\\n<h2>Coming soon: the film</h2>\\n<p>We're planning to film our Odense picks this autumn. When the video is ready, it will be on this page and on the <a href=\\\"/odense\\\">Odense hotels page</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":970,\"mins\":4},{\"slug\":\"where-to-stay-in-hamburg\",\"city\":\"hamburg\",\"title\":\"Where to stay in Hamburg (2026): 3 hotels and the right area for you\",\"description\":\"Hamburg is big and every area feels different. Our three hotel picks for 2026 (budget, best value and luxury) with real prices, and a no-nonsense guide to St. Pauli, St. Georg, HafenCity and the Alster.\",\"h1\":\"Where to stay in Hamburg\",\"dek\":\"A €60 room by the station, a €130 room in the Schanze and a €600 grand hotel on the Alster. Here's who each one is for, and which area fits your trip.\",\"tags\":[\"Germany\",\"City guide\"],\"body\":\"\\n<p>Hamburg is not a city you see in one walk. The old merchant centre around the Rathaus, the port and the Elbphilharmonie, the Reeperbahn,\\nthe cafés of the Schanze and the lakes of the Alster are all different places, and where you sleep decides what your evenings feel like.\\nSo in Hamburg we'd pick the area first and the hotel second. The good news: the S-Bahn and U-Bahn are fast, and almost everything below is\\nwithin 20 minutes of everything else.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>Fairmont Hotel Vier Jahreszeiten</h3></div>\\n<ul class=\\\"facts\\\"><li>5-star</li><li>9.5/10 from 1,299 guest reviews</li><li>On the Binnenalster, about 600 m from the Rathaus</li><li><b>€608</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>The Vier Jahreszeiten has been Hamburg's grand hotel for more than a century, and it sits on the best address in town: the Neuer Jungfernstieg, looking straight over the Binnenalster. Shopping streets on one side, the lake on the other, the Rathaus five minutes away.</p><p>A 9.5 average across almost 1,300 reviews is remarkable for a hotel this size. This is the one for an anniversary, a proposal or a 'once a year' trip.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> the price. Mid-week in November it was around €600 a night; weekends and December cost more.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/raffleshotelvierjahreszeiten.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Superbude Hamburg St. Pauli</h3></div>\\n<ul class=\\\"facts\\\"><li>8.9/10 from 1,523 guest reviews</li><li>Edge of the Schanzenviertel, about 2.5 km from the Rathaus</li><li>Pets allowed</li><li><b>€132</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Superbude is playful, design-led and very Hamburg: recycled furniture, a busy lobby bar, and rooms that are small but clever. It sits on the edge of the Schanze, so you have the city's best cafés and bars on your doorstep and St. Pauli a short walk away.</p><p>Guests rate it higher than most hotels that cost twice as much. That's why it is our best value pick.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's a hotel-hostel hybrid with a young, social crowd. Make sure you book a private room with its own bathroom, and don't expect silence on a Saturday.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/superbude-hostel-st-pauli.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>CAB20</h3></div>\\n<ul class=\\\"facts\\\"><li>8.5/10 from 12,776 guest reviews</li><li>St. Georg, about an 8-minute walk from the Hauptbahnhof</li><li>Bar, terrace, 24-hour reception</li><li><b>€60</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>CAB20 is about as cheap as a good private room gets in Hamburg. More than 12,000 reviews averaging 8.5 means this isn't luck: rooms are compact but clean, the location by the main station is perfect if you arrive by train, and the Alster is a ten-minute walk away.</p><p>If you'll only sleep in the room and spend the day out, this is the smart choice.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> rooms are small (the name is a hint), and the streets right behind the station are lively and a bit scruffy late at night.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/cab20.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which area of Hamburg is right for you?</h2>\\n<h3>Altstadt, Neustadt and the Binnenalster: first visit, shopping</h3>\\n<p>The Rathaus, the Jungfernstieg, the shopping streets and the lake. Central, elegant and easy, and quiet at night. Our luxury pick is here.</p>\\n<h3>HafenCity and the Speicherstadt: architecture and the Elbphilharmonie</h3>\\n<p>Red-brick warehouses on the canals (a UNESCO World Heritage site), Miniatur Wunderland and the Elbphilharmonie. Modern hotels, great for a concert trip; a bit empty after dark outside the main squares.</p>\\n<h3>St. Pauli and the Reeperbahn: nightlife</h3>\\n<p>Bars, clubs, music venues and the harbour at Landungsbrücken. Go early on a Sunday for the Fischmarkt. Brilliant if you want to go out, loud if you want to sleep.</p>\\n<h3>Sternschanze: cafés, food and a local feel</h3>\\n<p>Independent shops, brunch spots and bars that are busy every night. A good compromise: lively, but more 'neighbourhood' than the Reeperbahn. Our best value pick is on its edge.</p>\\n<h3>St. Georg: by the station and the Außenalster</h3>\\n<p>The most practical base if you come by train. Lange Reihe is one of the city's nicest streets for dinner, and the big lake is minutes away. The streets right next to the station are rougher; a few blocks makes a big difference.</p>\\n<h3>Altona and Ottensen: calmer and local</h3>\\n<p>Further west, with its own station, the Elbe beaches nearby and lots of restaurants. Good for longer stays and repeat visitors.</p>\\n<h2>Getting there and around</h2>\\n<ul>\\n<li><b>From the airport:</b> the S-Bahn runs from the terminals to the Hauptbahnhof in about 25 minutes.</li>\\n<li><b>By train:</b> the Hauptbahnhof is one of Germany's busiest stations, with direct trains from Berlin, Copenhagen, Amsterdam and most big German cities.</li>\\n<li><b>Around town:</b> S-Bahn, U-Bahn and the harbour ferries, which are part of the normal public-transport network. The ferry from Landungsbrücken is one of the cheapest harbour tours anywhere.</li>\\n</ul>\\n<h2>When prices go up</h2>\\n<p>Hamburg hotel prices jump during big trade fairs, the Harbour Birthday in May, major concerts and the Christmas markets from late November.\\nA quiet mid-week in November or January is when even the grand hotels come down. If your dates are flexible, move them by a few days and compare.</p>\\n<p>We're planning to film our Hamburg picks this autumn. The video will go on this page and on the <a href=\\\"/hamburg\\\">Hamburg hotels page</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":940,\"mins\":4},{\"slug\":\"where-to-stay-in-copenhagen\",\"city\":\"copenhagen\",\"title\":\"Where to stay in Copenhagen (2026): 3 hotels and the best neighbourhoods\",\"description\":\"Copenhagen is expensive, so the right hotel saves real money. Our three picks for 2026 (budget, best value and luxury) with real prices, and which neighbourhood suits you: Indre By, Christianshavn, Vesterbro or Nørrebro.\",\"h1\":\"Where to stay in Copenhagen\",\"dek\":\"One of Europe's most expensive hotel cities. Here's where €100, €200 and €300 a night get you the most.\",\"tags\":[\"Denmark\",\"City guide\"],\"body\":\"\\n<p>Copenhagen is small, flat and made for walking and cycling, but it is not cheap: a perfectly normal hotel can easily cost €200 a night.\\nThat's why picking well matters more here than almost anywhere else in Europe. Get it right and you can be ten minutes from Nyhavn for\\naround €100. Get it wrong and you pay luxury prices for a small room by a ring road.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>1 Hotel Copenhagen</h3></div>\\n<ul class=\\\"facts\\\"><li>5-star</li><li>9.1/10 from 702 guest reviews</li><li>Latin Quarter, about 550 m from the City Hall Square</li><li><b>€301</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>1 Hotel Copenhagen is in the old Latin Quarter, a few steps from the Round Tower and the main pedestrian street. The brand is built around nature and sustainability: lots of wood and plants, and a calm, Scandinavian feel rather than gold and marble.</p><p>It has the best review score among the five-star hotels we compared, in the most walkable spot in the city.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> around €300 a night mid-week in November, and more in summer. Copenhagen luxury is never cheap.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/1-hotel-copenhagen.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Kanalhuset</h3></div>\\n<ul class=\\\"facts\\\"><li>9.4/10 from 869 guest reviews</li><li>On the canal in Christianshavn</li><li>Restaurant on site</li><li><b>€207</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Kanalhuset is a small hotel right on one of Christianshavn's canals: houseboats outside the window, cobbles and cafés all around, and the metro station a short walk away (it runs straight to the airport).</p><p>It has the highest guest score of the 40 Copenhagen hotels we compared, at a price only a little above the city's middle. For a couple's weekend, it's the one we'd book.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's small, so it sells out early, and the rooms vary. Read the room descriptions before you book.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/kanalhuset.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>Wakeup Copenhagen Borgergade</h3></div>\\n<ul class=\\\"facts\\\"><li>8.0/10 from 16,572 guest reviews</li><li>Between Kongens Have and Nyhavn</li><li>24-hour reception, bar</li><li><b>€101</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Wakeup Borgergade is the cheapest good private room in central Copenhagen. Rooms are compact and simple, but with over 16,000 reviews you know exactly what you're getting, and the location is excellent: Nyhavn, Rosenborg Castle and Kongens Nytorv are all on foot.</p><p>If you plan to spend your money on food, Tivoli or a canal tour rather than on the room, start here.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> small rooms and no frills. An 8.0 average is 'very good', not 'wow'. That's the trade-off for this price in this city.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/wakeup-copenhagen-borgergade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which neighbourhood?</h2>\\n<h3>Indre By (the old centre): first visit</h3>\\n<p>Strøget, the Latin Quarter, Nyhavn, the palaces and the main sights. Everything is walkable. Expensive, busy in summer, and the best choice for a short first trip.</p>\\n<h3>Christianshavn: canals and character</h3>\\n<p>Canals, houseboats, the Church of Our Saviour and Christiania. Calm, beautiful and one metro stop from the centre. Our best value pick is here.</p>\\n<h3>Vesterbro: by Central Station, food and bars</h3>\\n<p>The Meatpacking District (Kødbyen), Istedgade and lots of good, younger restaurants. Practical if you arrive by train. Prices tend to be a little lower than in the old centre.</p>\\n<h3>Nørrebro and Østerbro: local life</h3>\\n<p>Nørrebro is diverse, lively and full of small places to eat; Østerbro is green, residential and family-friendly. Both are a short bike ride from the centre.</p>\\n<h3>Ørestad and near the airport: cheaper beds</h3>\\n<p>Modern hotels by the metro line, often much cheaper. Fine for a short stopover or a conference at Bella Center, less charming for a city break.</p>\\n<h2>Getting there and around</h2>\\n<ul>\\n<li><b>From the airport:</b> the metro runs to Kongens Nytorv and Christianshavn in roughly 15 minutes; trains run to Central Station in about the same.</li>\\n<li><b>Around town:</b> walk, or rent a bike. Copenhagen is one of the easiest cities in the world to cycle in.</li>\\n</ul>\\n<h2>Saving money in Copenhagen</h2>\\n<ul>\\n<li>Check whether breakfast is included. In Denmark it often isn't, and it can add a lot per person.</li>\\n<li>Sunday to Thursday is usually cheaper than Friday and Saturday, except during big conferences.</li>\\n<li>Summer and the weeks before Christmas (Tivoli's Christmas season) are the most expensive times. November and January–March are the cheapest.</li>\\n</ul>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":785,\"mins\":4},{\"slug\":\"cheapest-5-star-hotels-in-europe\",\"city\":null,\"title\":\"The 20 cheapest 5-star hotels in Europe (prices checked October 2026)\",\"description\":\"Real five-star hotels rated 8.5+ by guests, from about €92 a night. Every price checked on Booking.com for the same mid-week dates. Prague, the Algarve, Poland and more.\",\"h1\":\"The 20 cheapest five-star hotels in Europe\",\"dek\":\"Officially five stars, rated 8.5+ by guests, from about €92 a night. Every price checked for the same dates.\",\"tags\":[\"Europe\",\"Data\"],\"body\":\"\\n<p>In Paris or London, the five-star hotels we recommend cost well over €700 a night. In the places below, a real five-star hotel,\\nofficially rated and loved by guests, costs less than a standard room in central Copenhagen.</p>\\n<p>We took every European five-star hotel in our database, kept only those with an <b>official five-star rating</b> and a <b>guest score of 8.5 or higher</b>,\\nand checked the price for the same dates on Booking.com: 10–12 November 2026 (Tuesday to Thursday), two adults, one room, checked on 15 October 2026. Then we sorted by price.</p>\\n<aside class=\\\"method\\\"><b>Read this first.</b> Hotel prices change every day. These are real prices for one specific week in low season, not a promise.\\nUse the list to find places where luxury is cheap, then check your own dates. Prices are per night (the two-night total divided by two) as shown on Booking.com, and may exclude local tourist taxes.</aside>\\n<h2>The list</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Where</th><th>Guests</th><th>Per night</th></tr></thead><tbody><tr><td>1</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/hotelsrealsantaeulalia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grande Real Santa Eulália Resort &amp; Hotel Spa</a></td><td><a href=\\\"/albufeira\\\">Albufeira</a>, Portugal</td><td>8.5/10 <small>(4,041)</small></td><td><b>€92</b></td></tr><tr><td>2</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Residence Promenade</a></td><td><a href=\\\"/burgas\\\">Burgas</a>, Bulgaria</td><td>9.5/10 <small>(1,005)</small></td><td><b>€99</b></td></tr><tr><td>3</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/nhgranhotelcasinodeextremadura.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">NH Gran Hotel Casino de Extremadura</a></td><td><a href=\\\"/badajoz\\\">Badajoz</a>, Spain</td><td>9.2/10 <small>(2,451)</small></td><td><b>€104</b></td></tr><tr><td>4</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/old-royal-post-apartments.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Old Royal Post Boutique Hotel</a></td><td><a href=\\\"/prague\\\">Prague</a>, Czechia</td><td>9.6/10 <small>(2,457)</small></td><td><b>€104</b></td></tr><tr><td>5</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/the-bridge-wroclaw-mgallery-by-sofitel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">The Bridge Wrocław – MGallery</a></td><td><a href=\\\"/wroclaw\\\">Wrocław</a>, Poland</td><td>9.4/10 <small>(2,927)</small></td><td><b>€107</b></td></tr><tr><td>6</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/radisson-blu-residence-zakopane.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Blu Hotel &amp; Residences</a></td><td><a href=\\\"/zakopane\\\">Zakopane</a>, Poland</td><td>8.8/10 <small>(6,434)</small></td><td><b>€110</b></td></tr><tr><td>7</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/gdansk_podewils.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Podewils Old Town</a></td><td><a href=\\\"/gdansk\\\">Gdańsk</a>, Poland</td><td>9.2/10 <small>(552)</small></td><td><b>€116</b></td></tr><tr><td>8</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Promenade Hotel Liepāja</a></td><td><a href=\\\"/liepaja\\\">Liepāja</a>, Latvia</td><td>9.2/10 <small>(2,167)</small></td><td><b>€117</b></td></tr><tr><td>9</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/real-marina-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Real Marina Hotel &amp; Spa</a></td><td><a href=\\\"/olhao\\\">Olhão</a>, Portugal</td><td>8.7/10 <small>(2,713)</small></td><td><b>€119</b></td></tr><tr><td>10</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/montebelo-e-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Montebelo Viseu Congress Hotel &amp; Spa</a></td><td><a href=\\\"/viseu\\\">Viseu</a>, Portugal</td><td>9.1/10 <small>(973)</small></td><td><b>€121</b></td></tr><tr><td>11</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ba/mepas-mostar.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Mepas</a></td><td><a href=\\\"/mostar\\\">Mostar</a>, Bosnia and Herzegovina</td><td>9.2/10 <small>(2,115)</small></td><td><b>€122</b></td></tr><tr><td>12</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/acores-atlantico.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grand Hotel Açores Atlântico</a></td><td><a href=\\\"/ponta-delgada\\\">Ponta Delgada</a>, Portugal</td><td>9.2/10 <small>(865)</small></td><td><b>€123</b></td></tr><tr><td>13</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/prezident.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Prezident Luxury Hotel</a></td><td><a href=\\\"/novi-sad\\\">Novi Sad</a>, Serbia</td><td>9.3/10 <small>(869)</small></td><td><b>€126</b></td></tr><tr><td>14</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/10gr.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">10GR Boutique Hotel &amp; Wine Bar</a></td><td><a href=\\\"/rhodes\\\">Rhodes</a>, Greece</td><td>9.5/10 <small>(706)</small></td><td><b>€134</b></td></tr><tr><td>15</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/palacio-de-aviles-by-melia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Palacio de Avilés</a></td><td><a href=\\\"/aviles\\\">Avilés</a>, Spain</td><td>9.2/10 <small>(1,515)</small></td><td><b>€135</b></td></tr><tr><td>16</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/aureaconventocapuchinosbyeurostarshotelcompany.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Áurea Convento Capuchinos</a></td><td><a href=\\\"/segovia\\\">Segovia</a>, Spain</td><td>9.1/10 <small>(2,532)</small></td><td><b>€144</b></td></tr><tr><td>17</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/radisson-sas-tallinn.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Collection Hotel</a></td><td><a href=\\\"/tallinn\\\">Tallinn</a>, Estonia</td><td>9.4/10 <small>(6,055)</small></td><td><b>€146</b></td></tr><tr><td>18</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/intercontinentalwarsaw.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">InterContinental Warszawa</a></td><td><a href=\\\"/warsaw\\\">Warsaw</a>, Poland</td><td>9.1/10 <small>(10,072)</small></td><td><b>€147</b></td></tr><tr><td>19</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/eurostars-hotel-de-la-reconquista.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Eurostars Hotel de la Reconquista</a></td><td><a href=\\\"/oviedo\\\">Oviedo</a>, Spain</td><td>9.1/10 <small>(1,547)</small></td><td><b>€150</b></td></tr><tr><td>20</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/meliameridaboutiquehotel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Ilunion Mérida Palace</a></td><td><a href=\\\"/merida-spain\\\">Mérida</a>, Spain</td><td>9.0/10 <small>(6,151)</small></td><td><b>€153</b></td></tr></tbody></table></div>\\n<h2>What makes each one worth it</h2>\\n<ol class=\\\"notes\\\"><li><b>Grande Real Santa Eulália Resort &amp; Hotel Spa, Albufeira (€92).</b> A beachfront resort on the Algarve with indoor and outdoor pools and a spa. November is low season, which is exactly why it's this cheap.</li><li><b>Hotel Residence Promenade, Burgas (€99).</b> On the Black Sea seafront in central Burgas, with one of the highest scores on this list.</li><li><b>NH Gran Hotel Casino de Extremadura, Badajoz (€104).</b> A five-star with its own casino, close to the Portuguese border. A great stop on a road trip between Madrid and Lisbon.</li><li><b>Old Royal Post Boutique Hotel, Prague (€104).</b> In the Lesser Quarter (Malá Strana), below the castle and a few minutes from the Charles Bridge. The best location on this list.</li><li><b>The Bridge Wrocław – MGallery, Wrocław (€107).</b> On Cathedral Island, the oldest part of Wrocław, with a spa and sauna. Five-star polish at a three-star price.</li><li><b>Radisson Blu Hotel &amp; Residences, Zakopane (€110).</b> A mountain resort in the Tatras with an indoor pool and spa. Over 6,000 reviews, and very family-friendly.</li><li><b>Podewils Old Town, Gdańsk (€116).</b> A small, classic hotel on the river, facing Gdańsk's old town. Fewer reviews than most here, but consistently excellent.</li><li><b>Promenade Hotel Liepāja, Liepāja (€117).</b> On the harbour canal in Latvia's coastal music city. Free parking and a spa.</li><li><b>Real Marina Hotel &amp; Spa, Olhão (€119).</b> On the Ria Formosa lagoon in the eastern Algarve, with indoor and outdoor pools. A quieter, more local alternative to Albufeira.</li><li><b>Montebelo Viseu Congress Hotel &amp; Spa, Viseu (€121).</b> A spa hotel with pools in the heart of the Dão wine region. Pair it with a few wineries.</li><li><b>Hotel Mepas, Mostar (€122).</b> A modern five-star with an indoor pool and spa, a short drive from the famous Old Bridge.</li><li><b>Grand Hotel Açores Atlântico, Ponta Delgada (€123).</b> On the seafront avenue of São Miguel's main town, with an indoor pool. The base for crater lakes and hot springs.</li><li><b>Prezident Luxury Hotel, Novi Sad (€126).</b> A spa hotel with indoor and outdoor pools in Serbia's second city.</li><li><b>10GR Boutique Hotel &amp; Wine Bar, Rhodes (€134).</b> An adults-only boutique hotel inside the medieval Old Town of Rhodes, with its own wine bar.</li><li><b>Palacio de Avilés, Avilés (€135).</b> A historic palace on the main square of Avilés, on Spain's green north coast.</li><li><b>Áurea Convento Capuchinos, Segovia (€144).</b> A converted convent with a spa, walking distance from the Roman aqueduct. Easy day trip from Madrid.</li><li><b>Radisson Collection Hotel, Tallinn (€146).</b> A tower hotel with views over the old town, a pool and a spa. Over 6,000 reviews averaging 9.4.</li><li><b>InterContinental Warszawa, Warsaw (€147).</b> A big-city five-star with a high-floor pool and more than 10,000 reviews. The cheapest capital-city luxury on this list.</li><li><b>Eurostars Hotel de la Reconquista, Oviedo (€150).</b> Oviedo's landmark hotel in a historic building in the centre.</li><li><b>Hotel Ilunion Mérida Palace, Mérida (€153).</b> On Mérida's Plaza de España, with a rooftop pool, a short walk from the Roman theatre.</li></ol>\\n<h2>The pattern: where luxury is cheap in Europe</h2>\\n<ul>\\n<li><b>Second cities, not capitals.</b> Wrocław, Gdańsk, Oviedo, Mérida, Viseu, Novi Sad: excellent hotels built for business and weddings, with far less tourist demand than the big names.</li>\\n<li><b>Beach resorts out of season.</b> The Algarve, the Black Sea and Rhodes in November cost a fraction of their August prices, and the weather is often still good for walking.</li>\\n<li><b>Poland, Portugal and inland Spain.</b> Three countries make up more than half of this list.</li>\\n<li><b>The two great exceptions: Prague and Warsaw.</b> Capital-city five-stars, in great locations, for under €150.</li>\\n</ul>\\n<h2>How to find cheap luxury yourself</h2>\\n<ol>\\n<li><b>Stay mid-week.</b> Business hotels drop on weekends; leisure hotels drop Sunday to Thursday. Check both.</li>\\n<li><b>Look one city over.</b> Segovia instead of Madrid, Olhão instead of Faro, Wrocław instead of Kraków.</li>\\n<li><b>Ignore the star rating on its own.</b> Plenty of 'five-star' hotels score 7.5. Our rule: official five stars <i>and</i> 8.5+ from guests.</li>\\n<li><b>Count the extras.</b> Breakfast, parking and city tax can add €30–€60 a night. Compare the total, not the headline.</li>\\n</ol>\\n<p>Every city on this list has its own page with our three picks (budget, best value and luxury), so you can compare the five-star\\nwith cheaper options before you book. Start with <a href=\\\"/prague\\\">Prague</a>, <a href=\\\"/wroclaw\\\">Wrocław</a> or <a href=\\\"/albufeira\\\">Albufeira</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":1088,\"mins\":5},{\"slug\":\"how-to-choose-a-hotel\",\"city\":null,\"title\":\"How to choose a hotel in 5 minutes (without reading 500 listings)\",\"description\":\"A simple, repeatable way to pick a hotel fast: decide your budget level, pick the area, read reviews the right way and compare the real total price. The same method we use for every city on Top3Hotels.\",\"h1\":\"How to choose a hotel in five minutes\",\"dek\":\"The booking sites show you 500 options. You need one. Here's the method we use for every city.\",\"tags\":[\"Tips\",\"Method\"],\"body\":\"\\n<p>Most people spend more time choosing a hotel than choosing the city. You open a booking site, see hundreds of options, sort by price, then by\\nrating, open twenty tabs, and an hour later you book the one you saw first. The problem isn't a lack of choice. It's too much of it.</p>\\n<p>This is the five-minute method we use to pick three hotels in every city on Top3Hotels. It works just as well for your own trips.</p>\\n<h2>1. Decide your level before you look</h2>\\n<p>Before you see a single photo, decide which of three trips this is:</p>\\n<ul>\\n<li><b>Budget:</b> you just need a clean private room with its own bathroom in a safe, practical spot. You'll be out all day.</li>\\n<li><b>Best value:</b> you want a place you'll actually enjoy, with great reviews, at a normal price for the city.</li>\\n<li><b>Luxury:</b> the hotel is part of the trip. An anniversary, a treat, a 'once a year'.</li>\\n</ul>\\n<p>This one decision removes about 80% of the listings. It's also why we show exactly one hotel at each level, not a long list.</p>\\n<h2>2. Pick the area, then the hotel</h2>\\n<p>A great hotel in the wrong place ruins a city break. Find the one or two neighbourhoods that match your trip (first visit, nightlife,\\nfood, quiet, near the station), then only look at hotels there. In small cities (Odense, Bruges, Salzburg) this barely matters;\\nin big ones (London, Paris, Hamburg) it matters more than anything else.</p>\\n<h2>3. Read the score and the number of reviews together</h2>\\n<p>A 9.6 from 12 reviews tells you very little. An 8.6 from 2,000 reviews tells you a lot. Our rule of thumb:</p>\\n<ul>\\n<li>Under 100 reviews: treat the score as a hint, not a fact.</li>\\n<li>Several hundred reviews and 8.5+: you can trust it.</li>\\n<li>Thousands of reviews and 8.0+: a very safe bet, even if it isn't exciting.</li>\\n</ul>\\n<h2>4. Read three bad reviews, not thirty good ones</h2>\\n<p>Sort by the lowest scores and read the three most recent. You're looking for patterns that would bother <i>you</i>: noise, small rooms,\\na broken lift, a building site next door. A complaint about the breakfast doesn't matter if you never eat breakfast.</p>\\n<h2>5. Compare the real total</h2>\\n<p>The headline price is rarely what you pay. Add breakfast, parking and city tax, and check the cancellation terms. A room that's €15 cheaper\\nbut non-refundable isn't always the better deal.</p>\\n<h2>6. Book, and stop looking</h2>\\n<p>Once a hotel passes all five steps, book it. Prices on good hotels in good areas tend to go up, not down, as the dates get closer.</p>\\n<h2>Or skip the five minutes</h2>\\n<p>That's exactly what Top3Hotels does for you: in every city we compare the well-reviewed hotels on the same dates and keep three, the best\\nbudget room, the best value and the best luxury hotel. <a href=\\\"/destinations\\\">Pick a city</a> and you'll see them in one screen.\\nRead the full <a href=\\\"/how-we-choose\\\">method</a>, or see which cities have the <a href=\\\"/guides/cheapest-5-star-hotels-in-europe\\\">cheapest five-star hotels in Europe</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":495,\"mins\":3}]");
@@ -10271,7 +11411,7 @@ e.respondWith(fetch(r).then(res=>{if(res.ok){const cp=res.clone();caches.open(C)
 var MANIFEST = JSON.stringify({
 	name: "Top3Hotels",
 	short_name: "Top3Hotels",
-	description: "The best hotel in every city, picked in 1 second: budget, mid-range and upscale.",
+	description: "Three hotels per city, chosen by public rules: budget, best value and luxury.",
 	start_url: "/?source=pwa",
 	scope: "/",
 	display: "standalone",
@@ -10320,8 +11460,9 @@ var fmtDate = (iso, L) => {
 		return new Intl.DateTimeFormat(L, {
 			day: "numeric",
 			month: "long",
-			year: "numeric"
-		}).format(new Date(iso));
+			year: "numeric",
+			timeZone: "UTC"
+		}).format(new Date(/^\d{4}-\d{2}-\d{2}$/.test(iso) ? `${iso}T12:00:00Z` : iso));
 	} catch {
 		return iso;
 	}
@@ -10398,26 +11539,15 @@ var hotelKey = (h) => {
 	}
 };
 /** One destination, unpacked and enriched (used by the pages and by /api/catalogue/<id>). */
-var autoReason = (cat, b, cityName) => { const sc = `${b.score}/10 from ${Number(b.count ?? 0).toLocaleString("en-US")} guest reviews`; if (cat === "Budget") return `A well-rated hotel at one of the lowest prices we found in ${cityName} on Booking.com: ${sc}.`; if (cat === "Best Value") return `The best balance of guest score and price we found in ${cityName} on Booking.com: ${sc}.`; return (b.stars ?? 0) >= 5 ? `The best-rated official 5-star hotel we found in ${cityName} on Booking.com: ${sc}.` : `The most upscale well-rated hotel we found in ${cityName} on Booking.com (${b.stars}-star): ${sc}.`; };
-var LUX5 = {"georgetown-guyana":{"Luxury":{"id":1286824,"name":"Guyana Marriott Hotel Georgetown","area":"Georgetown","address":"Block Alpha , Battery Road, Kingston","lat":6.825619,"lng":-58.164282,"url":"https://www.booking.com/hotel/gy/guyana-marriott-georgetown-georgetown.html","score":7.5,"count":107,"stars":5,"total":873.52,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Georgetown on Booking.com: 7.5/10 from 107 guest reviews."}},"canggu-indonesia":{"Luxury":{"id":12900339,"name":"TUI BLUE Berawa Hotel and Villas","area":"Canggu","address":"No.101 Jalan Pantai Berawa","lat":-8.660864,"lng":115.140206,"url":"https://www.booking.com/hotel/id/berawa-amp-villas.html","score":9.1,"count":799,"stars":5,"total":222.66,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Canggu on Booking.com: 9.1/10 from 799 guest reviews."}},"dakar-senegal":{"Luxury":{"id":98428,"name":"Pullman Dakar Teranga","area":"Dakar","address":"10 Rue Colbert","lat":14.667689,"lng":-17.430656,"url":"https://www.booking.com/hotel/sn/dakar-teranga.html","score":8.1,"count":265,"stars":5,"total":1207.4,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."}},"mahon-spain":{"Luxury":{"id":6375718,"name":"Cristine Bedfor Mahon Boutique Hotel","area":"Mahón","address":"19 Carrer de la Infanta","lat":39.887369,"lng":4.265355,"url":"https://www.booking.com/hotel/es/cristine-bedfor.html","score":9.2,"count":232,"stars":5,"total":400.72,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Mahón on Booking.com: 9.2/10 from 232 guest reviews."}},"indianapolis-united-states":{"Luxury":{"id":42842,"name":"Conrad Indianapolis","area":"Indianapolis","address":"50 West Washington Street","lat":39.767259,"lng":-86.159345,"url":"https://www.booking.com/hotel/us/conrad-indianapolis.html","score":8.3,"count":131,"stars":5,"total":607.57,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."}},"iasi-romania":{"Luxury":{"id":178950,"name":"Pleiada Boutique Hotel & Spa","area":"Iași","address":"Soseaua Bucium nr. 18","lat":47.13434,"lng":27.607629,"url":"https://www.booking.com/hotel/ro/pleiada-boutique-hotel-and-spa.html","score":9.3,"count":1385,"stars":5,"total":216.58,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Iași on Booking.com: 9.3/10 from 1,385 guest reviews."},"Budget":{"id":326680,"name":"Hotel La Castel Iasi","address":"Aleea Mihail Sadoveanu Nr. 54","lat":47.210386,"lng":27.53294,"url":"ro/restaurant.html","score":9.2,"count":135,"stars":3,"total":84.17}},"hurghada-egypt":{"Luxury":{"id":8985201,"name":"Pickalbatros Blu Spa Resort - Adults Friendly 16 Years Plus - Couples Only - Ultra All-Inclusive","area":"Hurghada","address":"El Corniche St., Al Mamsha El Seyahi,  . Village Road , Hurghada , Red Sea","lat":27.182645,"lng":33.824915,"url":"https://www.booking.com/hotel/eg/pickalbatros-blu-spa-resort-adults-friendly-16-years-plus.html","score":9.6,"count":3565,"stars":5,"total":697.42,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Hurghada on Booking.com: 9.6/10 from 3,565 guest reviews."}},"taranto-italy":{"Luxury":{"id":14678,"name":"Relais Histò San Pietro Sul Mar Piccolo","area":"Taranto","address":"Via Sant'Andrea, Circummarpiccolo","lat":40.508399,"lng":17.316234,"url":"https://www.booking.com/hotel/it/histo-san-pietro-sul-mar-piccolo.html","score":9.3,"count":119,"stars":5,"total":873.68,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Taranto on Booking.com: 9.3/10 from 119 guest reviews."}},"olsztyn-poland":{"Luxury":{"id":546134,"name":"Hotel Marina Club","area":"Olsztyn","address":"Siła 100","lat":53.710222,"lng":20.376903,"url":"https://www.booking.com/hotel/pl/marina-golf-club.html","score":9.4,"count":2028,"stars":5,"total":329.39,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Olsztyn on Booking.com: 9.4/10 from 2,028 guest reviews."}},"obidos-portugal":{"Luxury":{"id":536563,"name":"The Beachfront - Praia D'El Rey Golf & Beach Resort","area":"Óbidos","address":"Avenida D. Pedro I, nº30","lat":39.399169,"lng":-9.273866,"url":"https://www.booking.com/hotel/pt/the-beachfront-praia-d-el-rey-golf-beach-resort.html","score":9.0,"count":373,"stars":5,"total":408.6,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Óbidos on Booking.com: 9.0/10 from 373 guest reviews."}},"sunderland-united-kingdom":{"Luxury":{"id":13545644,"name":"The Beach House Boutique Hotel","area":"Sunderland","address":"1 Roker Terrace, Sunderland.","lat":54.921596,"lng":-1.365956,"url":"https://www.booking.com/hotel/gb/one-roker-terrace-tyne-and-wear.html","score":9.4,"count":245,"stars":5,"total":498.89,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Sunderland on Booking.com: 9.4/10 from 245 guest reviews."}},"anaheim-united-states":{"Luxury":{"id":5770520,"name":"JW Marriott, Anaheim Resort","area":"Anaheim","address":"1775 South Clementine Street","lat":33.806258,"lng":-117.910233,"url":"https://www.booking.com/hotel/us/jw-marriott-anaheim-resort.html","score":8.8,"count":378,"stars":5,"total":876.1,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Anaheim on Booking.com: 8.8/10 from 378 guest reviews."}},"oklahoma-city-united-states":{"Luxury":{"id":13468127,"name":"Citizen House Hotel","area":"Oklahoma City","address":"600 N Robinson Ave","lat":35.473045,"lng":-97.51608,"url":"https://www.booking.com/hotel/us/citizen-house.html","score":9.3,"count":43,"stars":5,"total":441.71,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Oklahoma City on Booking.com: 9.3/10 from 43 guest reviews."}},"bastia-france":{"Luxury":{"id":15825050,"name":"ROSEMARY hôtel","area":"Bastia","address":"21 boulevard Hyacinthe de Montera","lat":42.699275,"lng":9.446208,"url":"https://www.booking.com/hotel/fr/rosemary.html","score":9.5,"count":36,"stars":5,"total":747.2,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Bastia on Booking.com: 9.5/10 from 36 guest reviews."}},"campeche-mexico":{"Luxury":{"id":326487,"name":"Hotel Boutique Casa Don Gustavo, Campeche","area":"Campeche","address":"calle 59 No. 4","lat":19.845383,"lng":-90.538209,"url":"https://www.booking.com/hotel/mx/casa-don-gustavo-boutique.html","score":8.9,"count":121,"stars":5,"total":602.76,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Campeche on Booking.com: 8.9/10 from 121 guest reviews."}},"haarlem-netherlands":{"Luxury":{"id":303428,"name":"Brasss Hotel Suites","area":"Haarlem","address":"Korte Veerstraat 1","lat":52.379734,"lng":4.637507,"url":"https://www.booking.com/hotel/nl/lambermon-s-suites.html","score":9.0,"count":1119,"stars":5,"total":473.6,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Haarlem on Booking.com: 9.0/10 from 1,119 guest reviews."}},"salalah-oman":{"Luxury":{"id":2014752,"name":"Al Baleed Resort Salalah by Anantara","area":"Salalah","address":"P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman","lat":17.009874,"lng":54.146817,"url":"https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html","score":8.9,"count":337,"stars":5,"total":724.38,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."},"Budget":{"id":5249566,"name":"Atana Stay Salalah","address":"P. O. BOX 130","lat":17.10114,"lng":54.152055,"url":"om/atana-stay-salalah.html","score":8.4,"count":509,"stars":3,"total":71.81}},"ponte-de-lima-portugal":{"Luxury":{"id":367480,"name":"Carmo's Boutique Hotel - Small Luxury Hotels of the World","area":"Ponte de Lima","address":"Rua Santiago da Gemieira, nº 10, Gemieira","lat":41.775439,"lng":-8.534009,"url":"https://www.booking.com/hotel/pt/carmo-s-boutique.html","score":8.8,"count":227,"stars":5,"total":460.8,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Ponte de Lima on Booking.com: 8.8/10 from 227 guest reviews."}},"constanta-romania":{"Luxury":{"id":1889286,"name":"Belle Epoque Boutique (Adult Only)","area":"Constanta","address":"Bulevardul Tomis 16","lat":44.175427,"lng":28.656297,"url":"https://www.booking.com/hotel/ro/belle-epoque-boutique-villa.html","score":9.7,"count":118,"stars":5,"total":336.56,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Constanta on Booking.com: 9.7/10 from 118 guest reviews."}},"alanya-turkiye":{"Luxury":{"id":1328377,"name":"Day One Beach Resort & SPA - Adult Only","area":"Alanya","address":"Cumhuriyet Mah. Sanat Okulu Cad. Alanya","lat":36.538978,"lng":32.026461,"url":"https://www.booking.com/hotel/tr/banana-otel.html","score":8.8,"count":787,"stars":5,"total":324.48,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Alanya on Booking.com: 8.8/10 from 787 guest reviews."}},"gaborone-botswana":{"Luxury":{"id":1168032,"name":"Grand Palm Hotel, Gaborone","area":"Gaborone","address":"Bonnington Farm, Molepolole Road","lat":-24.640255,"lng":25.877409,"url":"https://www.booking.com/hotel/bw/peermont-walmont.html","score":7.5,"count":69,"stars":5,"total":273.83,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Gaborone on Booking.com: 7.5/10 from 69 guest reviews."}},"st-john-s-canada":{"Luxury":{"id":2641413,"name":"Ryan Mansion","area":"St. John's","address":"21 Rennies Mill Road","lat":47.569655,"lng":-52.709049,"url":"https://www.booking.com/hotel/ca/ryan-mansion.html","score":8.3,"count":112,"stars":5,"total":285.4,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in St. John's on Booking.com: 8.3/10 from 112 guest reviews."}},"tours-france":{"Luxury":{"id":7842552,"name":"Les Trésorières","area":"Tours","address":"2 Place Jean Meunier","lat":47.390539,"lng":0.681483,"url":"https://www.booking.com/hotel/fr/les-tresorieres.html","score":9.2,"count":310,"stars":5,"total":670.84,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Tours on Booking.com: 9.2/10 from 310 guest reviews."}},"legian-indonesia":{"Luxury":{"id":402556,"name":"The Magani Hotel and Spa","area":"Legian","address":"Jalan Melasti, Legian Kelod","lat":-8.708689,"lng":115.170053,"url":"https://www.booking.com/hotel/id/the-magani-amp-spa.html","score":9.1,"count":1597,"stars":5,"total":257.3,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Legian on Booking.com: 9.1/10 from 1,597 guest reviews."}},"torquay-unitedkingdom":{"Luxury":{"id":1759331,"name":"Cary Arms & Spa","area":"Torquay","address":"Beach Road","lat":50.478859,"lng":-3.508822,"url":"https://www.booking.com/hotel/gb/cary-arms-babbacombe-torquay.html","score":9.3,"count":266,"stars":5,"total":572.89,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Torquay on Booking.com: 9.3/10 from 266 guest reviews."}},"bentonville-united-states":{"Luxury":{"id":14258020,"name":"The Compton","area":"Bentonville","address":"200 E Central Ave","lat":36.372007,"lng":-94.207705,"url":"https://www.booking.com/hotel/us/the-compton.html","score":9.4,"count":32,"stars":5,"total":1749.71,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Bentonville on Booking.com: 9.4/10 from 32 guest reviews."}},"phoenix-united-states":{"Luxury":{"id":263665,"name":"JW Marriott Phoenix Desert Ridge Resort & Spa","area":"Phoenix","address":"5350 East Marriott Drive","lat":33.683452,"lng":-111.966063,"url":"https://www.booking.com/hotel/us/jw-marriott-phoenix-desert-ridge-resort.html","score":8.6,"count":70,"stars":5,"total":1638.87,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Phoenix on Booking.com: 8.6/10 from 70 guest reviews."}},"mytilene-greece":{"Luxury":{"id":265824,"name":"Elysion Hotel","area":"Mytilene","address":"Neapoli","lat":39.068865,"lng":26.593861,"url":"https://www.booking.com/hotel/gr/elysion.html","score":8.9,"count":482,"stars":5,"total":228.8,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Mytilene on Booking.com: 8.9/10 from 482 guest reviews."},"Best Value":{"id":237359,"name":"Lesvion Hotel","address":"P. Kountourioti 27A","lat":39.106087,"lng":26.555983,"url":"gr/lesvion.html","score":9.1,"count":1764,"stars":3,"total":201}},"balneario-camboriu-brazil":{"Luxury":{"id":11387136,"name":"Morada Pedra Branca boutique Hotel","area":"Balneario Camboriu","address":"Rua Morro da Pedra Branca","lat":-27.031859,"lng":-48.613443,"url":"https://www.booking.com/hotel/br/morada-pedra-branca.html","score":8.9,"count":35,"stars":5,"total":227.68,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Balneario Camboriu on Booking.com: 8.9/10 from 35 guest reviews."}},"whistler-canada":{"Luxury":{"id":446327,"name":"Four Seasons Resort Whistler","area":"Whistler","address":"4591 Blackcomb Way","lat":50.119017,"lng":-122.944345,"url":"https://www.booking.com/hotel/ca/four-seasons-whistler.html","score":9.5,"count":382,"stars":5,"total":738.17,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Whistler on Booking.com: 9.5/10 from 382 guest reviews."}},"valence-france":{"Luxury":{"id":44887,"name":"Maison Pic","area":"Valence","address":"285 Avenue Victor Hugo","lat":44.917659,"lng":4.885483,"url":"https://www.booking.com/hotel/fr/maison-pic.html","score":9.4,"count":160,"stars":5,"total":881.6,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Valence on Booking.com: 9.4/10 from 160 guest reviews."}},"nafplio-greece":{"Luxury":{"id":238954,"name":"Amphitryon Hotel","area":"Nafplio","address":"3-5, Spiliadou Str","lat":37.565807,"lng":22.794421,"url":"https://www.booking.com/hotel/gr/amphitryon.html","score":7.7,"count":153,"stars":5,"total":418.0,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Nafplio on Booking.com: 7.7/10 from 153 guest reviews."}},"nusa-penida-indonesia":{"Luxury":{"id":12077759,"name":"Semaya Beach Resort","area":"Nusa Penida","address":"7J39+J3F, Suana, Nusa Penida, Klungkung Regency, Bali 80771","lat":-8.745938,"lng":115.617672,"url":"https://www.booking.com/hotel/id/nusa-penida-beach-resort.html","score":9.5,"count":775,"stars":5,"total":391.09,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Nusa Penida on Booking.com: 9.5/10 from 775 guest reviews."}},"colima-mexico":{"Luxury":{"id":398386,"name":"Hotel Boutique Hacienda del Gobernador","area":"Colima","address":"Calle Gildardo Gomez, 128. Colonia Centro","lat":19.242987,"lng":-103.730848,"url":"https://www.booking.com/hotel/mx/boutique-hacienda-del-gobernador.html","score":8.1,"count":74,"stars":5,"total":140.24,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Colima on Booking.com: 8.1/10 from 74 guest reviews."},"Best Value":{"id":6833275,"name":"Hotel Morelos Colima","address":"Calle Morelos 132","lat":19.240484,"lng":-103.726971,"url":"mx/morelos-colima-colima.html","score":8.4,"count":100,"stars":3,"total":93.11}},"horta-portugal":{"Luxury":{"id":16663552,"name":"The Book Hotel","area":"Horta","address":"Largo do Bpo. Dom Alexandre 8","lat":38.540761,"lng":-28.623989,"url":"https://www.booking.com/hotel/pt/the-book.html","score":9.6,"count":38,"stars":5,"total":306.0,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."},"Budget":{"id":40514,"name":"Azoris Faial Garden – Resort Hotel","address":"Rua Consul Dabney","lat":38.53074,"lng":-28.627726,"url":"pt/fayal-resort.html","score":8.1,"count":1081,"stars":4,"total":117.3}},"apia-samoa":{"Luxury":{"id":353054,"name":"Sheraton Samoa Aggie Grey's Hotel & Bungalows","area":"Apia","address":"Main Beach Road, Vaisigano","lat":-13.831538,"lng":-171.760168,"url":"https://www.booking.com/hotel/ws/sheraton-samoa-aggie-greys-hotel-and-bungalows.html","score":7.8,"count":1104,"stars":5,"total":275.36,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Apia on Booking.com: 7.8/10 from 1,104 guest reviews."}},"monterey-united-states":{"Luxury":{"id":59154,"name":"Monterey Plaza Hotel & Spa","area":"Monterey","address":"400 Cannery Row","lat":36.611925,"lng":-121.898164,"url":"https://www.booking.com/hotel/us/monterey-park-spa.html","score":9.1,"count":530,"stars":5,"total":759.14,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Monterey on Booking.com: 9.1/10 from 530 guest reviews."}},"kelowna-canada":{"Luxury":{"id":266244,"name":"Delta Hotels by Marriott Grand Okanagan Resort","area":"Kelowna","address":"1310 Water Street","lat":49.891548,"lng":-119.497578,"url":"https://www.booking.com/hotel/ca/delta-grand-okanagan-resort.html","score":8.3,"count":452,"stars":5,"total":343.99,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Kelowna on Booking.com: 8.3/10 from 452 guest reviews."}},"annecy-france":{"Luxury":{"id":888936,"name":"Les Loges Annecy Vieille Ville","area":"Annecy","address":"35 rue Sainte Claire","lat":45.898026,"lng":6.123658,"url":"https://www.booking.com/hotel/fr/les-loges-annecy-vieille-ville.html","score":8.6,"count":599,"stars":5,"total":630.0,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Annecy on Booking.com: 8.6/10 from 599 guest reviews."}},"brescia-italy":{"Luxury":{"id":41871,"name":"Hotel Vittoria","area":"Brescia","address":"Via X Giornate 20","lat":45.538354,"lng":10.220166,"url":"https://www.booking.com/hotel/it/vittoria-brescia.html","score":7.9,"count":1535,"stars":5,"total":244.0,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Brescia on Booking.com: 7.9/10 from 1,535 guest reviews."}},"ferrara-italy":{"Luxury":{"id":1132168,"name":"Hotel & SPA Duchessa Isabella Collection by GSA Hotels","area":"Ferrara","address":"Via Palestro 70","lat":44.840356,"lng":11.624745,"url":"https://www.booking.com/hotel/it/duchessa-isabella.html","score":8.5,"count":528,"stars":5,"total":332.0,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Ferrara on Booking.com: 8.5/10 from 528 guest reviews."}},"conwy-united-kingdom":{"Luxury":{"id":11956279,"name":"The Manor Boutique Hotel Restaurant and Bar","area":"Conwy","address":"the manor, gorse hill caravan park, trefriw road, conwy","lat":53.259653,"lng":-3.831228,"url":"https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html","score":9.0,"count":546,"stars":5,"total":325.83,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."}},"preston-united-kingdom":{"Luxury":{"id":1970305,"name":"No.10 Preston","area":"Preston","address":"10 Theatre Street","lat":53.75702,"lng":-2.704263,"url":"https://www.booking.com/hotel/gb/10-theatre-street-apartment.html","score":8.8,"count":478,"stars":5,"total":191.2,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Preston on Booking.com: 8.8/10 from 478 guest reviews."}},"naples-florida-united-states":{"Luxury":{"id":188256,"name":"The Ritz-Carlton Naples","area":"Naples, Florida","address":"280 Vanderbilt Beach Road","lat":26.251951,"lng":-81.821301,"url":"https://www.booking.com/hotel/us/ritz-carlton-naples.html","score":9.3,"count":81,"stars":5,"total":3051.2,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Naples, Florida on Booking.com: 9.3/10 from 81 guest reviews."}},"mui-ne-vietnam":{"Luxury":{"id":9194505,"name":"The Anam Mui Ne","area":"Mui Ne","address":"18 Nguyen Dinh Chieu, Mui Ne","lat":10.942592,"lng":108.194609,"url":"https://www.booking.com/hotel/vn/the-anam-mui-ne.html","score":9.5,"count":546,"stars":5,"total":550.65,"checked":"23 Oct 2026","reason":"The best-rated official 5-star hotel we found in Mui Ne on Booking.com: 9.5/10 from 546 guest reviews."}},"menton-france":{"Luxury":{"id":51527,"name":"Hotel Napoléon","area":"Menton","address":"29 Porte de France","lat":43.782683,"lng":7.512074,"url":"https://www.booking.com/hotel/fr/hotelnapolmenton.html","score":8.6,"count":742,"stars":4,"total":214.4,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Menton, so this is our upscale alternative: a 4-star rated 8.6/10 from 742 Booking.com reviews."}},"ierapetra-greece":{"Luxury":{"id":26834,"name":"Petra Mare","area":"Ierapetra","address":"Filotheou A' 6","lat":35.009836,"lng":25.751106,"url":"https://www.booking.com/hotel/gr/petra-mare.html","score":9.4,"count":388,"stars":4,"total":398.04,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Ierapetra, so this is our upscale alternative: a 4-star rated 9.4/10 from 388 Booking.com reviews."}},"grosseto-italy":{"Luxury":{"id":365654,"name":"Hotel Airone","area":"Grosseto","address":"Via Senese 35","lat":42.766834,"lng":11.118105,"url":"https://www.booking.com/hotel/it/airone-grosseto.html","score":8.6,"count":1026,"stars":4,"total":264.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Grosseto, so this is our upscale alternative: a 4-star rated 8.6/10 from 1,026 Booking.com reviews."}},"bristol-unitedkingdom":{"Luxury":{"id":6929449,"name":"Leonardo Hotel Bristol City","area":"Bristol","address":"3 Temple Way","lat":51.4538,"lng":-2.583211,"url":"https://www.booking.com/hotel/gb/leonardo-hotel-bristol-city.html","score":9.0,"count":7006,"stars":4,"total":494.12,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Bristol, so this is our upscale alternative: a 4-star rated 9.0/10 from 7,006 Booking.com reviews."}},"oban-unitedkingdom":{"Luxury":{"id":6560432,"name":"No.26 By The Sea","area":"Oban","address":"No 26 by The Sea Corran Esplanade","lat":56.421421,"lng":-5.482255,"url":"https://www.booking.com/hotel/gb/no-26-by-the-sea.html","score":9.5,"count":487,"stars":4,"total":393.86,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Oban, so this is our upscale alternative: a 4-star rated 9.5/10 from 487 Booking.com reviews."}},"whitstable-united-kingdom":{"Luxury":{"id":10447450,"name":"Duke of Cumberland","area":"Whitstable","address":"High Street","lat":51.360378,"lng":1.024129,"url":"https://www.booking.com/hotel/gb/duke-of-cumberland.html","score":8.9,"count":592,"stars":4,"total":411.77,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Whitstable, so this is our upscale alternative: a 4-star rated 8.9/10 from 592 Booking.com reviews."}},"boca-raton-united-states":{"Luxury":{"id":58151,"name":"Renaissance Boca Raton Hotel","area":"Boca Raton","address":"2000 Northwest 19th Street","lat":26.366204,"lng":-80.124184,"url":"https://www.booking.com/hotel/us/renaissance-boca-raton.html","score":8.6,"count":125,"stars":4,"total":600.8,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Boca Raton, so this is our upscale alternative: a 4-star rated 8.6/10 from 125 Booking.com reviews."}},"dalat-vietnam":{"Luxury":{"id":1561468,"name":"Swiss-Belresort Tuyen Lam","area":"Dalat","address":"Zone 7&8, Tuyen Lam Lake Tourist Area, Ward 3","lat":11.882835,"lng":108.451771,"url":"https://www.booking.com/hotel/vn/swiss-belresort-tuyen-lam.html","score":8.9,"count":256,"stars":4,"total":125.62,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Dalat, so this is our upscale alternative: a 4-star rated 8.9/10 from 256 Booking.com reviews."}},"quimper-france":{"Luxury":{"id":3411582,"name":"Hôtel Ginkgo - SPA Biloba","area":"Quimper","address":"1 rue du Chanoine Moreau","lat":47.98837,"lng":-4.111989,"url":"https://www.booking.com/hotel/fr/ginkgo.html","score":8.7,"count":543,"stars":4,"total":332.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Quimper, so this is our upscale alternative: a 4-star rated 8.7/10 from 543 Booking.com reviews."}},"arezzo-italy":{"Luxury":{"id":243257,"name":"Graziella Patio Hotel","area":"Arezzo","address":"Via Cavour 23","lat":43.464523,"lng":11.881523,"url":"https://www.booking.com/hotel/it/graziella-patio.html","score":8.7,"count":279,"stars":4,"total":393.08,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Arezzo, so this is our upscale alternative: a 4-star rated 8.7/10 from 279 Booking.com reviews."}},"pompei-italy":{"Luxury":{"id":7013109,"name":"HABITA79, Pompeii, a Tribute Portfolio Hotel","area":"Pompei","address":"Via Roma 10","lat":40.749527,"lng":14.498717,"url":"https://www.booking.com/hotel/it/habita79-pompeii-a-tribute-portfolio-hotel.html","score":9.1,"count":380,"stars":4,"total":402.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Pompei, so this is our upscale alternative: a 4-star rated 9.1/10 from 380 Booking.com reviews."}},"lugo-spain":{"Luxury":{"id":13285,"name":"Hotel Monumento Pazo de Orbán","area":"Lugo","address":"Travesía do Miño, 6","lat":43.010193,"lng":-7.560256,"url":"https://www.booking.com/hotel/es/monumento-pazo-de-orban.html","score":9.1,"count":803,"stars":4,"total":220.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Lugo, so this is our upscale alternative: a 4-star rated 9.1/10 from 803 Booking.com reviews."}},"boise-united-states":{"Luxury":{"id":909801,"name":"The Anniversary Inn - Boise","area":"Boise","address":"1575 South Lusk Avenue","lat":43.604001,"lng":-116.214841,"url":"https://www.booking.com/hotel/us/the-anniversary-inn-boise.html","score":8.7,"count":101,"stars":4,"total":380.45,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."}},"carmel-united-states":{"Luxury":{"id":423881,"name":"La Playa Hotel","area":"Carmel","address":"Camino Real at Eighth Avenue","lat":36.552305,"lng":-121.926274,"url":"https://www.booking.com/hotel/us/la-playa-carmel.html","score":9.1,"count":174,"stars":4,"total":1424.48,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Carmel, so this is our upscale alternative: a 4-star rated 9.1/10 from 174 Booking.com reviews."}},"quedlinburg-germany":{"Luxury":{"id":72323,"name":"Romantik Hotel am Brühl","area":"Quedlinburg","address":"Billungstr. 11","lat":51.784172,"lng":11.137218,"url":"https://www.booking.com/hotel/de/romantik-am-bruhl.html","score":8.6,"count":802,"stars":4,"total":363.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Quedlinburg, so this is our upscale alternative: a 4-star rated 8.6/10 from 802 Booking.com reviews."}},"miskolc-hungary":{"Luxury":{"id":7162239,"name":"Premier Hotel Miskolc","area":"Miskolc","address":"Arany Janos tér 1 MIskolc, Arany Janos ter 1","lat":48.10773,"lng":20.787909,"url":"https://www.booking.com/hotel/hu/premier-miskolc.html","score":8.9,"count":1323,"stars":4,"total":305.05,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."},"Budget":{"id":75550,"name":"Hotel Pannonia","address":"Kossuth u. 2","lat":48.102995,"lng":20.781707,"url":"hu/pannonia.html","score":8.3,"count":516,"stars":2,"total":162.8}},"den-bosch-netherlands":{"Luxury":{"id":171136,"name":"Good Seasons Hotel Den Bosch","area":"Den Bosch","address":"Kerkstraat 56","lat":51.687979,"lng":5.306792,"url":"https://www.booking.com/hotel/nl/eurohotel-den-bosch.html","score":8.5,"count":2929,"stars":4,"total":471.72,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Den Bosch, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,929 Booking.com reviews."}},"chernivtsi-ukraine":{"Luxury":{"id":453381,"name":"Bukovyna Hotel","area":"Chernivtsi","address":"Golovna Street, 141","lat":48.277467,"lng":25.943356,"url":"https://www.booking.com/hotel/ua/tourist-complex-bukovyna.html","score":8.6,"count":2748,"stars":4,"total":124.64,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Chernivtsi, so this is our upscale alternative: a 4-star rated 8.6/10 from 2,748 Booking.com reviews."}},"chattanooga-united-states":{"Luxury":{"id":14064860,"name":"Embassy Suites By Hilton Chattanooga Downtown","area":"Chattanooga","address":"345 Broad Street","lat":35.052546,"lng":-85.311075,"url":"https://www.booking.com/hotel/us/embassy-suites-by-hilton-chattanooga-downtown.html","score":9.0,"count":247,"stars":4,"total":454.97,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Chattanooga, so this is our upscale alternative: a 4-star rated 9.0/10 from 247 Booking.com reviews."}},"innsbruck-austria":{"Luxury":{"id":70101,"name":"Hotel Das Innsbruck","area":"Innsbruck","address":"Innrain 3","lat":47.267913,"lng":11.391312,"url":"https://www.booking.com/hotel/at/hotelinnsbruck.html","score":9.1,"count":5270,"stars":4,"total":564.21,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Innsbruck, so this is our upscale alternative: a 4-star rated 9.1/10 from 5,270 Booking.com reviews."}},"cordoba-mexico":{"Luxury":{"id":5442760,"name":"Hotel Boutique Casa Zevallos","area":"Cordoba","address":"101 Avenida 1 101, planta alta","lat":18.894549,"lng":-96.934654,"url":"https://www.booking.com/hotel/mx/casa-zevallos.html","score":9.5,"count":117,"stars":4,"total":262.27,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Cordoba, so this is our upscale alternative: a 4-star rated 9.5/10 from 117 Booking.com reviews."}},"kosice-slovakia":{"Luxury":{"id":43539,"name":"Hotel Yasmin Košice","area":"Kosice","address":"Tyršovo Nábrežie 1","lat":48.729583,"lng":21.256995,"url":"https://www.booking.com/hotel/sk/yasmin-kosice.html","score":8.6,"count":812,"stars":4,"total":356.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Kosice, so this is our upscale alternative: a 4-star rated 8.6/10 from 812 Booking.com reviews."}},"malmo-sweden":{"Luxury":{"id":15253709,"name":"Home Hotel Baltzar","area":"Malmö","address":"Baltzarsgatan 43","lat":55.604686,"lng":13.00192,"url":"https://www.booking.com/hotel/se/home-baltzar.html","score":9.0,"count":175,"stars":4,"total":387.02,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Malmö, so this is our upscale alternative: a 4-star rated 9.0/10 from 175 Booking.com reviews."}},"klagenfurt-austria":{"Luxury":{"id":70529,"name":"Hotel Dermuth Klagenfurt","area":"Klagenfurt","address":"Kohldorfer Straße 52","lat":46.624714,"lng":14.274703,"url":"https://www.booking.com/hotel/at/restaurant-dermuth.html","score":8.8,"count":1456,"stars":4,"total":324.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Klagenfurt, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,456 Booking.com reviews."}},"bauru-brazil":{"Luxury":{"id":1116429,"name":"Blue Tree Towers Bauru","area":"Bauru","address":"Rua Julio de Mesquita Filho, 1036","lat":-22.337173,"lng":-49.051527,"url":"https://www.booking.com/hotel/br/blue-tree-towers-bauru.html","score":8.8,"count":1800,"stars":4,"total":152.09,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Bauru, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,800 Booking.com reviews."}},"olomouc-czechia":{"Luxury":{"id":7440169,"name":"HERBARIUM boutique hotel","area":"Olomouc","address":"Dobrovského 16b","lat":49.599087,"lng":17.258571,"url":"https://www.booking.com/hotel/cz/herbarium-boutique.html","score":9.5,"count":602,"stars":4,"total":332.64,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Olomouc, so this is our upscale alternative: a 4-star rated 9.5/10 from 602 Booking.com reviews."}},"ascona-switzerland":{"Luxury":{"id":329916,"name":"Hotel Ascovilla Charming Hideway","area":"Ascona","address":"Via Albarelle 37/Via Lido 20","lat":46.150872,"lng":8.774726,"url":"https://www.booking.com/hotel/ch/ascovilla.html","score":9.2,"count":246,"stars":4,"total":522.14,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Ascona, so this is our upscale alternative: a 4-star rated 9.2/10 from 246 Booking.com reviews."}},"basingstoke-united-kingdom":{"Luxury":{"id":5641844,"name":"Village Hotel Basingstoke","area":"Basingstoke","address":"Basing View","lat":51.268084,"lng":-1.077534,"url":"https://www.booking.com/hotel/gb/village-basingstoke.html","score":8.5,"count":2554,"stars":4,"total":620.63,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."}},"tartu-estonia":{"Luxury":{"id":1995331,"name":"V Spa & Conference Hotel","area":"Tartu","address":"Riia 2","lat":58.376425,"lng":26.728768,"url":"https://www.booking.com/hotel/ee/v-spa-amp-conference.html","score":9.2,"count":3777,"stars":4,"total":340.0,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Tartu, so this is our upscale alternative: a 4-star rated 9.2/10 from 3,777 Booking.com reviews."}},"soria-spain":{"Luxury":{"id":9832126,"name":"Noctis Hotel","area":"Soria","address":"Paraje Calle San Marcos 13","lat":41.733817,"lng":-2.495941,"url":"https://www.booking.com/hotel/es/noctis.html","score":9.6,"count":244,"stars":4,"total":429.6,"checked":"23 Oct 2026","reason":"No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews."}},"paris":{"Best Value":{"id":1286042,"name":"The One Alma Paris","address":"10-12 rue Cognacq Jay","lat":48.861796,"lng":2.304262,"url":"fr/le-juliana.html","score":8.7,"count":729,"stars":5,"total":640.8}},"london-canada":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"sarande-albania":{"Budget":{"id":10759453,"name":"Hoteleks Inn & Suites","address":"Rruga 17 Shkurti","lat":39.87032,"lng":19.999786,"url":"al/hoteleks.html","score":8.8,"count":123,"stars":3,"total":66}},"tirana-albania":{"Budget":{"id":14228513,"name":"Arbnor Boutique Hotel","address":"Rruga Artan Lenja 24","lat":41.328776,"lng":19.79964,"url":"al/arbnor-boutique.html","score":9.5,"count":821,"stars":4,"total":110}},"santa-fe-argentina":{"Best Value":{"id":1675980,"name":"Hotel Riogrande","address":"San Jerónimo 2580","lat":-31.645603,"lng":-60.707832,"url":"ar/riogrande.html","score":8,"count":368,"stars":4,"total":139.17}},"geelong-australia":{"Luxury":{"id":9864852,"name":"Quest Geelong Central","address":"71-77 Gheringhap Street","lat":-38.149931,"lng":144.356979,"url":"au/quest-geelong-central.html","score":9.2,"count":1599,"stars":4,"total":551.03}},"bad-ischl-austria":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"kitzbuhel-austria":{"Best Value":{"id":70624,"name":"Hotel Rasmushof Kitzbühel","address":"Hermann-Reisch-Weg 15","lat":47.445,"lng":12.385392,"url":"at/golf-rasmushof.html","score":9.1,"count":249,"stars":4,"total":453.16}},"linz-austria":{"Best Value":{"id":243211,"name":"Hotel Schwarzer Bär","address":"Herrenstraße 9-11","lat":48.302728,"lng":14.286253,"url":"at/zum-schwarzen-baeren-linz.html","score":8.5,"count":2527,"stars":4,"total":248.72}},"wels-austria":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"bridgetown-barbados":{"Budget":{"id":284456,"name":"Courtyard by Marriott Bridgetown, Barbados","address":"The Garrison Historic Area, Hastings Christ Church","lat":13.076312,"lng":-59.601941,"url":"bb/courtyard-bridgetown.html","score":7.8,"count":148,"stars":3,"total":499.45}},"aalst-belgium":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"},"Budget":{"id":174732,"name":"Hotel Royal Astrid","address":"Keizersplein 27","lat":50.936861,"lng":4.035512,"url":"be/royal-astrid.html","score":8.7,"count":359,"stars":3,"total":250}},"banja-luka-bosnia-and-herzegovina":{"Best Value":{"id":7999748,"name":"Zlatna Kruna","address":"100 Knjaza Miloša","lat":44.802804,"lng":17.208368,"url":"ba/zlatna-kruna.html","score":9.2,"count":1017,"stars":4,"total":133.02}},"mostar-bosniaandherzegovina":{"Best Value":{"id":14649769,"name":"Hotel Spa Olive","address":"Oručevića 40","lat":43.328348,"lng":17.816084,"url":"ba/spa-olive.html","score":9.4,"count":546,"stars":4,"total":172.26}},"barueri-brazil":{"Best Value":{"id":14341563,"name":"Hotel & Residência Alphaville Flat","address":"Avenida Cauaxi, 223","lat":-23.494456,"lng":-46.851134,"url":"br/amp-residencia-alphaville-flat.html","score":8.4,"count":118,"stars":4,"total":201.87}},"caldas-novas-brazil":{"Luxury":{"id":557729,"name":"Lagoa Quente Hotel - LAGOA OFICIAL","address":"Av. Lagoa Quente, n. 5","lat":-17.693042,"lng":-48.584049,"url":"br/lagoa-quente-flat.html","score":8.8,"count":1403,"stars":4,"total":155.76},"Budget":{"id":8369173,"name":"Suíte Hot Springs B3 Hotéis Hospedagem","address":"R. Dona Francisca Alla Cunha, 152 - Do Turista, Caldas Novas - GO Quarto 130","lat":-17.738289,"lng":-48.627181,"url":"br/hot-springs-b3-caldas-novas1234.html","score":8.4,"count":142,"stars":4,"total":63.75}},"cuiaba-brazil":{"Best Value":{"id":292085,"name":"Amazon Plaza Hotel","address":"Av Getulio Vargas, 600","lat":-15.594931,"lng":-56.098761,"url":"br/amazon-plaza.html","score":8.8,"count":1684,"stars":4,"total":175.7}},"salvador-brazil":{"Best Value":{"id":44534,"name":"CASA Di VINA Boutique Hotel","address":"Rua Flamengo, 44, Farol de Itapua","lat":-12.954442,"lng":-38.352744,"url":"br/mar-brasil.html","score":9.1,"count":2021,"stars":4,"total":242.6}},"battambang-cambodia":{"Best Value":{"id":8806537,"name":"Oh Battambang Boutique Hotel","address":"Street 513, Chrey Kaoung Village, Ek Phnom District ","lat":13.114811,"lng":103.200806,"url":"kh/ohbattambang-boutique.html","score":9.1,"count":305,"stars":4,"total":101.67}},"yaounde-cameroon":{"Luxury":{"id":5482731,"name":"Boun's Hotel","address":"Rue De Narvik","lat":3.86586,"lng":11.518625,"url":"cm/boun-39-s.html","score":7.6,"count":54,"stars":4,"total":271.36}},"airdrie-canada":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"niagara-falls-canada":{"Luxury":{"id":76336,"name":"Tower Hotel at Fallsview","address":"6732 Fallsview Boulevard","lat":43.079048,"lng":-79.082178,"url":"ca/r-plaza-fallsview.html","score":8.8,"count":3227,"stars":4,"total":312.21}},"concepcion-chile":{"Budget":{"id":92121,"name":"Hotel Alborada","address":"Barros Arana 457","lat":-36.827351,"lng":-73.053117,"url":"cl/alborada.html","score":8.3,"count":2260,"stars":4,"total":119.67}},"punta-arenas-chile":{"Luxury":{"id":14460883,"name":"Almasur Punta Arenas","address":"Armando Sanhueza 965","lat":-53.160433,"lng":-70.910784,"url":"cl/almasur-clasico.html","score":8.7,"count":260,"stars":4,"total":349.19}},"santiago-chile":{"Best Value":{"id":2992831,"name":"Wyndham Santiago Aeropuerto","address":"AV. Américo Vespucio 1284, Pudahuel","lat":-33.431114,"lng":-70.785462,"url":"cl/lq-by-la-quinta-santiago-aeropuerto.html","score":9,"count":18128,"stars":5,"total":214.33}},"shanghai-china":{"Budget":{"id":3854254,"name":"Manli Hotel Shanghai Pudong Airport Branch","address":"No. 68 Lane 409 Jianghui Road, Pudong New Area","lat":31.171563,"lng":121.740443,"url":"cn/shang-hai-pu-dong-ji-chang-jiang-zhen-ya-duo-sjiu-dian.html","score":8.8,"count":1060,"stars":4,"total":93.5}},"san-jose-costarica":{"Luxury":{"id":330658,"name":"Hyatt Centric San José Escazú","address":"Plaza Tempo, Autopista Próspero Fernández","lat":9.945542,"lng":-84.145212,"url":"cr/holiday-inn-san-jose-escazu.html","score":9.0,"count":504,"stars":5,"total":361.78}},"opatija-croatia":{"Best Value":{"id":4794272,"name":"Hotel Paris","address":"Ulica Vladimira Nazora 1","lat":45.336,"lng":14.307303,"url":"hr/paris.html","score":8.7,"count":3918,"stars":4,"total":206}},"vodice-croatia":{"Best Value":{"id":325209,"name":"Hotel Stella Maris - Style & Comfort","address":"Put Vatroslava Lisinskog 28a","lat":43.752077,"lng":15.79183,"url":"hr/hotel-stella-maris.html","score":8.8,"count":665,"stars":3,"total":177.59}},"limassol-cyprus":{"Budget":{"id":11600095,"name":"La Hacienda Cyprus","address":"13 Pafsaniou Street Agios Athanasios","lat":34.710082,"lng":33.050433,"url":"cy/la-hacienda-cyprus-limassol2.html","score":7.8,"count":442,"stars":4,"total":144}},"paphos-cyprus":{"Budget":{"id":251891,"name":"Veronica Hotel","address":"20 Danaes Street","lat":34.749507,"lng":32.428476,"url":"cy/veronica.html","score":7.9,"count":3018,"stars":3,"total":144}},"santo-domingo-dominicanrepublic":{"Best Value":{"id":13022740,"name":"Honky Tonk Colonial","address":"Calle Arzobispo Portes 11","lat":18.471513,"lng":-69.882713,"url":"do/honky-tonk-colonial.html","score":8.9,"count":320,"stars":3,"total":151.47}},"vaasa-finland":{"Best Value":{"id":37046,"name":"Original Sokos Hotel Vaakuna Vaasa","address":"Rewell Center 101","lat":63.095341,"lng":21.614871,"url":"fi/sokos-vaakuna.html","score":8.6,"count":641,"stars":4,"total":280}},"angers-france":{"Best Value":{"id":224512,"name":"Hotel Continental","address":"14 Rue Louis De Romain","lat":47.470344,"lng":-0.552239,"url":"fr/hotel-continental.html","score":8.6,"count":1851,"stars":3,"total":180.6}},"clermont-ferrand-france":{"Best Value":{"id":277102,"name":"Hotel Clermont Estaing","address":"61 Rue Du Ressort","lat":45.788407,"lng":3.113846,"url":"fr/ace-chu-estaing.html","score":8.5,"count":4258,"stars":3,"total":160.6}},"compiegne-france":{"Best Value":{"id":53122,"name":"Campanile NATURE - Compiegne","address":"70 Avenue De Huy","lat":49.397555,"lng":2.808187,"url":"fr/hotelgrilcampanilecompiegne.html","score":8.0,"count":1856,"stars":3,"total":179.56}},"le-mans-france":{"Best Value":{"id":221502,"name":"ibis Le Mans Centre Gare Nord","address":"39 Boulevard Robert Jarry","lat":47.9958,"lng":0.1932,"url":"fr/minotelgalaxie.html","score":8.3,"count":314,"stars":3,"total":187.67}},"nice-france":{"Best Value":{"id":266329,"name":"Maison Durante","address":"16 Avenue Durante","lat":43.703183,"lng":7.263106,"url":"fr/durante-nice.html","score":8.8,"count":1304,"stars":4,"total":169.32}},"trouville-sur-mer-france":{"Best Value":{"id":1379184,"name":"Les Embruns","address":"22 Place Foch","lat":49.366611,"lng":0.078404,"url":"fr/les-embruns-trouville-sur-mer.html","score":8.3,"count":1419,"stars":3,"total":286.8}},"troyes-france":{"Best Value":{"id":13733803,"name":"OKKO Hotels Troyes Centre","address":"14 Boulevard Carnot","lat":48.296601,"lng":4.066442,"url":"fr/okko-hotels-troyes-centre.html","score":8.9,"count":1469,"stars":4,"total":229.04}},"vannes-france":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"epinal-france":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"batumi-georgia":{"Luxury":{"id":1053022,"name":"Hotel London 1889 & Casino","address":"Zhordania/Z. Gamsakhurdia Str 8/15","lat":41.650945,"lng":41.64139,"url":"ge/divan-suites-batumi.html","score":8.8,"count":574,"stars":5,"total":170.91}},"bielefeld-germany":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"cottbus-germany":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"duisburg-germany":{"Best Value":{"id":283289,"name":"Hotel Ramor Garni","address":"Angermunderstrasse 37- 39","lat":51.362108,"lng":6.779679,"url":"de/ramor-garni.html","score":8.9,"count":3119,"stars":3,"total":156.64}},"garmisch-partenkirchen-germany":{"Best Value":{"id":61409,"name":"Hotel Rheinischer Hof","address":"Zugspitzstr. 76","lat":47.488278,"lng":11.071923,"url":"de/rheinischerhofgarmischpartenkirchen.html","score":8.9,"count":2745,"stars":4,"total":260.6}},"heidelberg-germany":{"Best Value":{"id":9464637,"name":"ATLANTIC Hotel Heidelberg","address":"Europaplatz 1","lat":49.403328,"lng":8.673722,"url":"de/atlantic-heidelberg.html","score":8.8,"count":4508,"stars":4,"total":295.24}},"heilbronn-germany":{"Best Value":{"id":60850,"name":"hogh Hotel Heilbronn","address":"Jakobgasse 9","lat":49.144205,"lng":9.222145,"url":"de/selectnestorheilbronn.html","score":8.2,"count":1460,"stars":3,"total":192}},"kaiserslautern-germany":{"Best Value":{"id":61106,"name":"Hotel-Restaurant Fröhlich","address":"Dansenberger Str. 10","lat":49.406458,"lng":7.72359,"url":"de/akzenthotelfroehlichkaiserslauterngermany.html","score":8.3,"count":461,"stars":3,"total":212.8}},"leipzig-germany":{"Best Value":{"id":16549258,"name":"Me and All Hotel Leipzig, by Hyatt","address":"Wintergartenstraße 15/17","lat":51.343719,"lng":12.385615,"url":"de/me-and-all-leipzig.html","score":8.9,"count":266,"stars":4,"total":216.3}},"mannheim-germany":{"Best Value":{"id":8862518,"name":"Motel One Mannheim","address":"Paradeplatz 02, 1-10","lat":49.487226,"lng":8.466178,"url":"de/motel-one-mannheim.html","score":8.6,"count":4262,"stars":3,"total":207.37}},"munich-germany":{"Best Value":{"id":2419678,"name":"BEYOND by Geisel","address":"Marienplatz 22","lat":48.136946,"lng":11.575321,"url":"de/beyond-by-geisel.html","score":9.2,"count":481,"stars":5,"total":1649},"Budget":{"id":8321949,"name":"WunderLocke Munich","address":"27 Gmunder Strasse 81379 Munich Germany","lat":48.097305,"lng":11.52836,"url":"de/wunderlocke.html","score":8.4,"count":8944,"stars":4,"total":541}},"munster-germany":{"Best Value":{"id":291286,"name":"Hotel Jellentrup - Adults Only","address":"Hüfferstr. 52","lat":51.96086,"lng":7.605197,"url":"de/jellentrup.html","score":9,"count":1860,"stars":3,"total":271.7}},"offenbach-germany":{"Best Value":{"id":181571,"name":"Hotel Karl","address":"Ziegelstr. 4-6","lat":50.105979,"lng":8.764904,"url":"de/graf.html","score":8.3,"count":446,"stars":3,"total":148.4}},"osnabruck-germany":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"potsdam-germany":{"Best Value":{"id":71749,"name":"Hotel am Katharinenholz","address":"Amundsenstraße 24d","lat":52.417914,"lng":13.020836,"url":"de/am-katharinenholz.html","score":9.4,"count":440,"stars":3,"total":254.68}},"rostock-germany":{"Best Value":{"id":185028,"name":"Stadtperle Rostock","address":"Rosa Luxemburg Str. 32","lat":54.080241,"lng":12.135948,"url":"de/stadtperle-rostock.html","score":8.7,"count":1619,"stars":3,"total":180}},"timmendorfer-strand-germany":{"Best Value":{"id":63230,"name":"Fuchsbau Romantik Hotel & SPA Restaurant & FOX Bar","address":"Dorfstr. 9-11","lat":53.987831,"lng":10.748155,"url":"de/landidyll-fuchsbau.html","score":9.0,"count":2428,"stars":4,"total":298}},"tubingen-germany":{"Best Value":{"id":7186909,"name":"KONCEPT HOTEL Neue Horizonte","address":"16 Horemer","lat":48.540467,"lng":9.053476,"url":"de/koncept-neue-horizonte.html","score":8.6,"count":1257,"stars":3,"total":364.5}},"wismar-germany":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"hersonissos-greece":{"Budget":{"id":10563453,"name":"San Antonio Boutique Hotel & Spa","address":"137 Eleftheriou Venizelou","lat":35.314137,"lng":25.395187,"url":"gr/san-antonio-boutique.html","score":8.9,"count":269,"stars":4,"total":141.2}},"reykjavik-iceland":{"Best Value":{"from":"Budget"},"Budget":{"from":"Best Value"}},"bhopal-india":{"Best Value":{"id":474183,"name":"Courtyard by Marriott Bhopal","address":"DB City , Arera Hills","lat":23.233178,"lng":77.429329,"url":"in/courtyard-bhopal.html","score":8.2,"count":300,"stars":5,"total":118.66},"Budget":{"id":7698674,"name":"Radisson Bhopal","address":"OPP. SAVOY COMPLEX, ISHWA E-8","lat":23.193617,"lng":77.4375,"url":"in/radisson-bhopal.html","score":8.6,"count":535,"stars":5,"total":108.76}},"alba-italy":{"Best Value":{"id":12893,"name":"Hotel Medea","address":"Corso Unità d'Italia 64/D","lat":44.703852,"lng":7.981637,"url":"it/medea.html","score":8.5,"count":378,"stars":3,"total":196},"Budget":{"id":12537247,"name":"B&B HOTEL Alba","address":"C.so Asti, 5","lat":44.710961,"lng":8.027645,"url":"it/b-amp-b-alba-alba.html","score":8.1,"count":1491,"stars":3,"total":162.31}},"alessandria-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"benevento-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"brindisi-italy":{"Best Value":{"id":15969898,"name":"Hotiday Brindisi Vittoria","address":"Via Pozzo Traiano, 24","lat":40.63697,"lng":17.946589,"url":"it/hotiday-brindisi-vittoria.html","score":9,"count":110,"stars":4,"total":190.06}},"carpi-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"caserta-italy":{"Best Value":{"id":83649,"name":"Hotel Regina","address":"Via Nazionale Appia, 34","lat":41.072989,"lng":14.315457,"url":"it/regina-caserta-casagiove.html","score":8.4,"count":2594,"stars":3,"total":178.1}},"cesena-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"cosenza-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"cuneo-italy":{"Best Value":{"id":337152,"name":"Hotel Victoria","address":"Via Antonio Meucci 36","lat":44.386145,"lng":7.537922,"url":"it/fiamma.html","score":8.8,"count":979,"stars":3,"total":206}},"desenzano-del-garda-italy":{"Budget":{"id":186240,"name":"Hotel Benaco","address":"Viale Cavour 32","lat":45.46473,"lng":10.536331,"url":"it/benaco-desenzano-del-garda.html","score":8.8,"count":1764,"stars":3,"total":210}},"foggia-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"gallipoli-italy":{"Best Value":{"id":8827386,"name":"POPULA - The Lifestyle Hotel","address":"Via Gian Giacomo Lazzari","lat":40.056165,"lng":17.990851,"url":"it/popula-rooms.html","score":9.5,"count":1268,"stars":4,"total":250.34}},"imola-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"imperia-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"la-spezia-italy":{"Best Value":{"id":338551,"name":"Hotel Venezia","address":"Via Paleocapa 8","lat":44.110453,"lng":9.815758,"url":"it/albergo-venezia.html","score":8.8,"count":657,"stars":3,"total":195.3}},"lecce-italy":{"Budget":{"id":243795,"name":"Arthotel & Park Lecce","address":"Via Giorgio De Chirico 1","lat":40.335014,"lng":18.193188,"url":"it/choice-clarion-collection-arthotel-park-lecce.html","score":8.3,"count":1411,"stars":4,"total":179.2}},"milan-italy":{"Budget":{"id":80528,"name":"c-hotels Atlantic","address":"Via Napo Torriani 24","lat":45.483163,"lng":9.203268,"url":"it/c-hotels-atlantic.html","score":9,"count":3402,"stars":4,"total":324.59}},"modica-italy":{"Best Value":{"id":187313,"name":"Pietre Nere Resort & Spa","address":"Via Pietre Nere Cava Ispica 142","lat":36.850159,"lng":14.829639,"url":"it/pietre-nere-resort.html","score":8.8,"count":443,"stars":4,"total":180}},"monopoli-italy":{"Best Value":{"id":439864,"name":"Palazzo Indelli","address":"Piazza Garibaldi 27","lat":40.953004,"lng":17.303622,"url":"it/palazzo-indelli.html","score":8.5,"count":836,"stars":4,"total":357}},"naples-italy":{"Best Value":{"id":247399,"name":"LHP Napoli Palace & SPA","address":"Viale Augusto 74","lat":40.826394,"lng":14.199824,"url":"it/lhp-napoli-palace-spa.html","score":8.8,"count":1535,"stars":5,"total":284.82}},"orvieto-italy":{"Budget":{"id":89936,"name":"Hotel Picchio","address":"Via Giovanni Salvatori","lat":42.721811,"lng":12.126401,"url":"it/picchio.html","score":8.5,"count":1404,"stars":3,"total":189.2}},"parma-italy":{"Best Value":{"id":225847,"name":"Novotel Parma Centro","address":"Via Trento 9","lat":44.80916,"lng":10.330172,"url":"it/astoriaexecutivehotel.html","score":8.3,"count":2887,"stars":4,"total":231}},"pescara-italy":{"Best Value":{"id":19327,"name":"Hotel Alba","address":"Via M.Forti 14","lat":42.471076,"lng":14.206361,"url":"it/alba-pescara.html","score":8.8,"count":566,"stars":3,"total":188}},"pordenone-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"ragusa-italy":{"Best Value":{"id":423276,"name":"La Dimora di Spartivento","address":"S.S.115  Km 323","lat":36.87911,"lng":14.695831,"url":"it/la-dimora-di-spartivento.html","score":9,"count":224,"stars":3,"total":192}},"stresa-italy":{"Budget":{"id":15950842,"name":"Hotel Luina","address":"Via Giuseppe Garibaldi, 21","lat":45.883534,"lng":8.541483,"url":"it/luina-stresa.html","score":8.2,"count":93,"stars":2,"total":244}},"trani-italy":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"trapani-italy":{"Budget":{"id":83154,"name":"B&B HOTEL Trapani Crystal","address":"Piazza Umberto I°","lat":38.017787,"lng":12.519028,"url":"it/crystal.html","score":8.3,"count":953,"stars":4,"total":105.73}},"trieste-italy":{"Budget":{"id":226088,"name":"NH Trieste","address":"Corso Cavour 7","lat":45.655126,"lng":13.770998,"url":"it/jollytrieste.html","score":8.6,"count":2322,"stars":4,"total":255.2}},"verona-italy":{"Best Value":{"id":80663,"name":"Hotel Giberti & Spa","address":"Via Gian Matteo Giberti 7","lat":45.434055,"lng":10.986427,"url":"it/hotelgibertiverona.html","score":8.9,"count":1968,"stars":4,"total":354},"Budget":{"id":80193,"name":"Hotel Palace Verona","address":"Via Luigi Galvani 19","lat":45.445005,"lng":10.968659,"url":"it/hotelpalace.html","score":8.4,"count":5317,"stars":4,"total":192.9}},"aomori-japan":{"Best Value":{"id":904886,"name":"HOTEL MYSTAYS Aomori Station","address":"Shinmachi 1-8-6 ","lat":40.826933,"lng":140.737437,"url":"jp/hyper-hotels-passage.html","score":8.2,"count":2271,"stars":3,"total":128.83}},"matsue-japan":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"toyama-japan":{"Best Value":{"id":14710497,"name":"ホテルエノエ富山","address":"荒町６-1","lat":36.691568,"lng":137.215376,"url":"jp/hoteruenoefu-shan.html","score":8.7,"count":201,"stars":3,"total":145.7}},"yamagata-japan":{"Best Value":{"id":7862978,"name":"Toyoko Inn Yamagata-eki Nishi-guchi","address":"Jonan-machi 1-18-13","lat":38.250234,"lng":140.323851,"url":"jp/toyoko-inn-yamagata-eki-nishi-guchi.html","score":8.2,"count":492,"stars":3,"total":143.15}},"liepaja-latvia":{"Budget":{"id":13422903,"name":"Roze Kurmajas Hotel","address":"Kūrmājas prospekts 7","lat":56.510359,"lng":21.003038,"url":"lv/roze-kurmajas.html","score":9.1,"count":671,"stars":4,"total":100}},"riga-latvia":{"Best Value":{"id":26051,"name":"Eurostars Metropole","address":"Aspazijas bulvāris 36/38 ","lat":56.946917,"lng":24.11488,"url":"lv/metropole.html","score":9.0,"count":2985,"stars":4,"total":116}},"comitan-mexico":{"Best Value":{"id":12695515,"name":"Hotel Casa Rus","address":"Primera Avenida Poniente Sur 61","lat":16.246815,"lng":-92.133601,"url":"mx/casa-rus.html","score":8.9,"count":184,"stars":3,"total":64.18}},"mazatlan-mexico":{"Best Value":{"id":79659,"name":"Hotel La Siesta Malecón","address":"Olas Altas No. 11 Sur Centro","lat":23.198348,"lng":-106.427157,"url":"mx/la-siesta.html","score":8.9,"count":380,"stars":3,"total":145.35}},"morelia-mexico":{"Best Value":{"id":325764,"name":"Hotel Mesón de los Remedios","address":"Abasolo 556 Col Centro","lat":19.697913,"lng":-101.194256,"url":"mx/meson-de-los-remedios.html","score":9,"count":1134,"stars":4,"total":144.35}},"swakopmund-namibia":{"Best Value":{"id":628048,"name":"Hansa Hotel Swakopmund","address":"3 Hendrik Witbooi Street","lat":-22.677085,"lng":14.5262,"url":"na/hansa-swakopmund.html","score":9,"count":470,"stars":4,"total":324.67}},"amersfoort-netherlands":{"Best Value":{"id":10538,"name":"DoubleTree by Hilton Royal Parc Soestduinen","address":"Van Weerden Poelmanweg 4-6","lat":52.1422,"lng":5.293114,"url":"nl/hisoestduinen.html","score":8.1,"count":2447,"stars":4,"total":273.38}},"amstelveen-the-netherlands":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"breda-netherlands":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"deventer-netherlands":{"Best Value":{"id":4857332,"name":"FINCH Boutique Hotel, downtown","address":"20 Keizerstraat","lat":52.25457,"lng":6.16073,"url":"nl/finch.html","score":9.1,"count":2280,"stars":4,"total":280}},"leeuwarden-netherlands":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"valkenburg-netherlands":{"Best Value":{"id":11749755,"name":"Boutique Hotel Omnia","address":"12 De Guascostraat","lat":50.862886,"lng":5.832257,"url":"nl/boutiquehotel-omnia-valkenburg.html","score":8.8,"count":506,"stars":4,"total":236}},"wellington-newzealand":{"Budget":{"id":336352,"name":"U Boutique Hotel, SureStay Collection by BW","address":"25 Frederick Street","lat":-41.296477,"lng":174.777884,"url":"nz/gourmet-stay.html","score":7.5,"count":646,"stars":3.5,"total":148.49}},"abuja-nigeria":{"Best Value":{"id":9341511,"name":"Wali's Suites","address":"21 Monrovia Street","lat":9.080733,"lng":7.471629,"url":"ng/wali-39-s-suites.html","score":8,"count":410,"stars":4,"total":137.33},"Budget":{"id":15792910,"name":"Presken Hotels Abuja Jabi","address":"6 Ebitu Ukiwe Street","lat":9.063539,"lng":7.423809,"url":"ng/presken-hotels-abuja-jabi.html","score":8.3,"count":96,"stars":3,"total":72.34}},"lagos-nigeria":{"Budget":{"id":11382767,"name":"Presken Hotel Ikoyi, lagos","address":"5 Bose Enenmoh Close","lat":6.441576,"lng":3.443031,"url":"ng/presken-lagos.html","score":8.0,"count":230,"stars":3,"total":124.31}},"bitola-north-macedonia":{"Best Value":{"id":3466010,"name":"Hotel Kiko","address":"24 1-vi Maj Boulevard HOTEL KIKO","lat":41.032729,"lng":21.319094,"url":"mk/kiko-bitola.html","score":9,"count":116,"stars":3,"total":120}},"troms-norway":{"Best Value":{"id":242388,"name":"First Hotel Backpack","address":"Parkgata 4","lat":69.648809,"lng":18.949921,"url":"no/abc-hotell-nord.html","score":8.4,"count":1948,"stars":3,"total":525.14}},"alesund-norway":{"Best Value":{"id":249559,"name":"Hotel Noreg","address":"Kongensgate 27","lat":62.475558,"lng":6.156136,"url":"no/hotel-noreg.html","score":8.5,"count":2780,"stars":4,"total":272.21}},"iquitos-peru":{"Best Value":{"id":2120722,"name":"Hotel Jungle House","address":"Calle Pevas 133","lat":-3.747808,"lng":-73.242104,"url":"pe/garden-house.html","score":8.9,"count":768,"stars":3,"total":89.31}},"puerto-princesa-philippines":{"Budget":{"id":437180,"name":"Go Hotels Puerto Princesa","address":"North Road, Barangay San Manuel, Palawan","lat":9.767649,"lng":118.74775,"url":"ph/go-hotels-puerto-princesa.html","score":7.7,"count":432,"stars":2,"total":39.53}},"bielsko-biaa-poland":{"Best Value":{"id":412799,"name":"Hotel Szyndzielnia","address":"al. Armii Krajowej 220","lat":49.7839,"lng":19.025611,"url":"pl/debowiec.html","score":8.6,"count":560,"stars":3,"total":152.21}},"bytom-poland":{"Best Value":{"id":483420,"name":"B&B HOTEL Bytom","address":"ul. Strzelców Bytomskich 87","lat":50.372317,"lng":18.89403,"url":"pl/prime.html","score":8.6,"count":1180,"stars":3,"total":125.2}},"czestochowa-poland":{"Best Value":{"id":373632,"name":"Hotel Wenecki","address":"ul. Berka Joselewicza 12","lat":50.813448,"lng":19.126528,"url":"pl/hotel-wenecki-czestochowa.html","score":8.7,"count":1927,"stars":3,"total":132.56}},"gliwice-poland":{"Best Value":{"id":11597295,"name":"Hotel Malinowski Leśny","address":"137 Toszecka","lat":50.329511,"lng":18.651717,"url":"pl/malinowski-lesny.html","score":9,"count":431,"stars":3,"total":150.84}},"krakow-poland":{"Best Value":{"id":173353,"name":"Hotel Polski Pod Białym Orłem","address":"ul. Pijarska 17","lat":50.064808,"lng":19.94088,"url":"pl/polski-pod-bialym-orlem.html","score":9.2,"count":3800,"stars":5,"total":224.2},"Budget":{"id":6678267,"name":"Hotel Estera","address":"Ul. Estery 6","lat":50.052341,"lng":19.945165,"url":"pl/estera.html","score":8.8,"count":2603,"stars":4,"total":134.89}},"miedzyzdroje-poland":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"opole-poland":{"Best Value":{"id":891346,"name":"Hotel Opole Centrum","address":"ul. Waryńskiego 17","lat":50.672667,"lng":17.92413,"url":"pl/opole-centrum.html","score":8.7,"count":1217,"stars":3,"total":134.52}},"poznan-poland":{"Best Value":{"id":363924,"name":"City Solei Boutique Hotel","address":"ul. Wenecjańska 10","lat":52.408756,"lng":16.940328,"url":"pl/city-solei-boutique-poznan.html","score":9.5,"count":1690,"stars":4,"total":179.53}},"rzeszow-poland":{"Budget":{"id":311358,"name":"Hotel Iskra","address":"ul. Dąbrowskiego 75","lat":50.024044,"lng":21.987454,"url":"pl/hotel-iskra-rzeszow.html","score":8.1,"count":898,"stars":2,"total":100.1}},"sopot-poland":{"Budget":{"id":87410,"name":"Hotel Aqua Sopot - Destigo Hotels","address":"ul. Zamkowa Góra 35","lat":54.458961,"lng":18.556182,"url":"pl/villaaquasopot.html","score":8.8,"count":1181,"stars":3,"total":153.74}},"warsaw-poland":{"Budget":{"id":9848847,"name":"Barceló Warsaw Powiśle","address":"43A Wybrzeże Kościuszkowskie","lat":52.240145,"lng":21.029483,"url":"pl/barcelo-warsaw-powisle.html","score":9,"count":6780,"stars":4,"total":166.59}},"albufeira-portugal":{"Budget":{"id":39889,"name":"KR Hotels - Albufeira Lounge","address":"Avenida Infante D. Henrique Nº38","lat":37.088531,"lng":-8.234148,"url":"pt/kr-albufeira-lounge.html","score":8.2,"count":1209,"stars":3,"total":70.14}},"cascais-portugal":{"Budget":{"id":2134772,"name":"Eurostars Cascais","address":"Travessa da Republica, 35-35A","lat":38.695693,"lng":-9.435725,"url":"pt/eurostars-cascais.html","score":8.8,"count":2503,"stars":4,"total":198.99}},"nazare-portugal":{"Best Value":{"id":417975,"name":"Hotel Magic","address":"Rua Mouzinho de Albuquerque, nr 58","lat":39.601611,"lng":-9.071525,"url":"pt/magic.html","score":9.1,"count":1979,"stars":3,"total":204}},"olhao-portugal":{"Best Value":{"id":11131089,"name":"B&B HOTEL Olhão Algarve","address":"100 Avenida Dom João VI","lat":37.034119,"lng":-7.839762,"url":"pt/b-amp-b-olhao-algarve.html","score":8.3,"count":2086,"stars":3,"total":121}},"portimao-portugal":{"Best Value":{"id":2383741,"name":"Jupiter Marina Hotel - Couples & Spa","address":"Estrada da Rocha nº 2, Sítio de São Francisco","lat":37.128656,"lng":-8.533754,"url":"pt/jupiter-marina.html","score":8.9,"count":1086,"stars":4,"total":162}},"porto-portugal":{"Best Value":{"id":9718092,"name":"Timbre Virtudes","address":"60 Rua São Pedro de Miragaia","lat":41.143765,"lng":-8.619791,"url":"pt/das-virtudes.html","score":9.3,"count":1774,"stars":5,"total":300.99}},"porto-moniz-portugal":{"Best Value":{"from":"Budget"},"Budget":{"id":38921,"name":"Hotel Euro Moniz","address":"Rua das Alfarrobeiras, 4","lat":32.867152,"lng":-17.169037,"url":"pt/euromoniz.html","score":8.6,"count":1785,"stars":4,"total":322.56}},"vila-real-portugal":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"cluj-napoca-romania":{"Best Value":{"id":11052940,"name":"Siesta Boutique Smart Suites","address":"6 Strada Gheorghe Șincai","lat":46.7687,"lng":23.585816,"url":"ro/siesta-boutique-smart-suites.html","score":9.6,"count":974,"stars":4,"total":212.03},"Budget":{"id":15689783,"name":"Palazzo Bellariva Dimora","address":"Piața Ștefan cel Mare 18","lat":46.770088,"lng":23.5968,"url":"ro/palazzo-bellariva-dimora.html","score":8.7,"count":345,"stars":3,"total":115.51}},"ta-if-saudi-arabia":{"Best Value":{"id":5447311,"name":"Remaj Hotel","address":"Wadi Waj Road","lat":21.289472,"lng":40.428543,"url":"sa/fndq-rmj.html","score":8.8,"count":1513,"stars":4,"total":144.25}},"bratislava-slovakia":{"Best Value":{"id":367419,"name":"Hotel Saffron","address":"Radlinského 27","lat":48.152287,"lng":17.117364,"url":"sk/saffron.html","score":8.9,"count":9009,"stars":4,"total":256}},"bled-slovenia":{"Best Value":{"id":536953,"name":"Penzion Kaps","address":"Želeška cesta 22","lat":46.364748,"lng":14.10961,"url":"si/penzion-kaps.html","score":9.7,"count":1024,"stars":3,"total":275}},"cape-town-southafrica":{"Budget":{"id":258207,"name":"9 On Barrack","address":"9 Barrack Street","lat":-33.926757,"lng":18.421392,"url":"za/parliament.html","score":8.5,"count":496,"stars":4,"total":190.08}},"seoul-southkorea":{"Budget":{"id":14909331,"name":"THE EXTAY Lounge Jongno","address":"4-7F, 91, Supyo-ro, Jongno-gu","lat":37.569404,"lng":126.989294,"url":"kr/the-extay-lounge.html","score":8.7,"count":345,"stars":3,"total":125.69}},"albacete-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"aranjuez-spain":{"Best Value":{"id":15938,"name":"Hotel Jardín de Aranjuez","address":"Avenida Principe, 26","lat":40.035566,"lng":-3.600917,"url":"es/jardin-de-aranjuez.html","score":8.6,"count":3473,"stars":3,"total":226}},"baeza-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"castelldefels-spain":{"Best Value":{"id":18530,"name":"Hotel Flora Parc","address":"Avenida de la Constitución, 44","lat":41.286006,"lng":1.986465,"url":"es/flora-parc.html","score":8.6,"count":2846,"stars":3,"total":178.64},"Budget":{"id":97435,"name":"Corona Hotel Canal Olimpic","address":"Ginesta, 13","lat":41.270726,"lng":1.988772,"url":"es/barcelona-classic.html","score":8.3,"count":2568,"stars":3,"total":122.32}},"castellon-de-la-plana-spain":{"Budget":{"id":291885,"name":"Hotel Rostits","address":"Avenida Alcora, 73","lat":39.9865,"lng":-0.05771,"url":"es/rostits.html","score":8.4,"count":1595,"stars":2,"total":118}},"getafe-spain":{"Luxury":{"id":45850,"name":"Ramada by Wyndham Madrid Getafe","address":"Avenida Lovelace, 23","lat":40.290206,"lng":-3.695719,"url":"es/amura-getafe.html","score":8.6,"count":1552,"stars":4,"total":490}},"guadalajara-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"jaca-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"jaen-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"las-palmas-de-gran-canaria-spain":{"Budget":{"id":3092758,"name":"Maresía Canteras Urban Hotel","address":"León Tolstoi, 1","lat":28.136437,"lng":-15.436946,"url":"es/the-maresia-urban.html","score":9.2,"count":1129,"stars":3,"total":241}},"llanes-spain":{"Luxury":{"id":189321,"name":"Indiana Boutique Hotel","address":"Barrio la concha, s/n","lat":43.400074,"lng":-4.736974,"url":"es/indiana-golf.html","score":8.8,"count":479,"stars":4,"total":177},"Budget":{"id":1359715,"name":"La Posada del Rey","address":"Calle Mayor, 13","lat":43.420631,"lng":-4.753945,"url":"es/la-posada-del-rey.html","score":8.6,"count":369,"stars":2,"total":130}},"madrid-spain":{"Best Value":{"id":93360,"name":"Barceló Imagine","address":"Agustin de Foxa, 32","lat":40.470392,"lng":-3.685184,"url":"es/barcelo-imagine.html","score":9.1,"count":2124,"stars":5,"total":449.65}},"motril-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"malaga-spain":{"Budget":{"id":481353,"name":"Hotel Plaza Del Castillo","address":"Calle de Fedra","lat":36.704569,"lng":-4.512945,"url":"es/plaza-del-castillo.html","score":8.4,"count":5300,"stars":4,"total":204}},"palma-spain":{"Best Value":{"id":4569987,"name":"Hotel Antigua Palma - Casa Noble","address":"Carrer del Sol 1","lat":39.568172,"lng":2.65172,"url":"es/antigua-palma.html","score":9.3,"count":838,"stars":5,"total":469.03},"Budget":{"id":5547322,"name":"Nou Baleares","address":"Plaza de las Columnas s/n","lat":39.573215,"lng":2.661264,"url":"es/nou-baleares.html","score":9.1,"count":1859,"stars":4,"total":238.68}},"plasencia-spain":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"sabadell-spain":{"Best Value":{"id":91626,"name":"Hotel Urpí","address":"Sant Matíes, 5","lat":41.553127,"lng":2.105746,"url":"es/urpisabadell.html","score":7.6,"count":1252,"stars":3,"total":227.92}},"salou-spain":{"Best Value":{"id":94642,"name":"4R Casablanca Playa","address":"Paseo Miramar, 12","lat":41.075568,"lng":1.128943,"url":"es/casablanca-playa.html","score":8.5,"count":2722,"stars":4,"total":156.32},"Budget":{"id":12597,"name":"Hotel Best Da Vinci","address":"Mayor, 53-55","lat":41.075979,"lng":1.14117,"url":"es/da-vinci-royal.html","score":8.4,"count":2012,"stars":4,"total":148.68}},"santa-cruz-de-tenerife-spain":{"Best Value":{"id":11971,"name":"Barceló Santa Cruz Contemporáneo","address":"Rambla de Santa Cruz 116","lat":28.474101,"lng":-16.252922,"url":"es/contemporaneo-s-l.html","score":9.2,"count":553,"stars":4,"total":261},"Budget":{"id":18590,"name":"Hotel Nautico","address":"Avenida Profesor Peraza de Ayala, 13","lat":28.479733,"lng":-16.245946,"url":"es/nautico.html","score":8,"count":1211,"stars":2,"total":147.78}},"torrevieja-spain":{"Best Value":{"id":93391,"name":"Torrejoven","address":"Calle Arrecife, 7","lat":37.948577,"lng":-0.713403,"url":"es/torrejoven.html","score":8,"count":2529,"stars":3,"total":160.65}},"vitoria-gasteiz-spain":{"Best Value":{"id":393781,"name":"Hotel Araba","address":"Avenida de los Huetos, 17","lat":42.853839,"lng":-2.700625,"url":"es/araba.html","score":8.8,"count":944,"stars":3,"total":170}},"colombo-srilanka":{"Best Value":{"id":14743242,"name":"Seilan","address":"101, 2 Hunupitiya Lake Road","lat":6.915766,"lng":79.857016,"url":"lk/seilan.html","score":8.9,"count":321,"stars":4,"total":155.55}},"lund-sweden":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"fribourg-switzerland":{"Best Value":{"id":65279,"name":"Hôtel de la Rose","address":"Murtengasse 1","lat":46.806567,"lng":7.161292,"url":"ch/roserribourgschweizswitzerland.html","score":8,"count":1789,"stars":3,"total":302.33}},"locarno-switzerland":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"chiang-rai-thailand":{"Best Value":{"id":395495,"name":"Rasa Boutique Hotel Chiang Rai","address":"789/7, Paholyothin Rd., T.Wiang, A. Muang","lat":19.912141,"lng":99.84086,"url":"th/rasa-boutique-chiang-rai.html","score":8.8,"count":141,"stars":4,"total":82.86}},"pattaya-thailand":{"Best Value":{"id":14148713,"name":"LK Grand Empire","address":"63/63 Moo 10 nongprue banglamung","lat":12.920459,"lng":100.89311,"url":"th/lk-grand-empire.html","score":8.7,"count":483,"stars":5,"total":95.33}},"corlu-turkiye":{"Budget":{"id":7424193,"name":"Çorlu Dem Hotel","address":"282 Salih Omurtak Caddesi","lat":41.162889,"lng":27.79743,"url":"tr/corlu-dem.html","score":8,"count":193,"stars":3,"total":114.46}},"diyarbakr-turkiye":{"Best Value":{"id":2277236,"name":"Radisson Blu Hotel, Diyarbakir","address":"Firat Mahallesi Urfa Bulvarı No:170, Kayapinar Merkez","lat":37.921582,"lng":40.147357,"url":"tr/radisson-blu-diyarbakir.html","score":8.3,"count":209,"stars":5,"total":242.94}},"kemer-turkiye":{"Best Value":{"id":1281938,"name":"Seven Seas Hotel Life","address":"Göynük Mevkii","lat":36.666942,"lng":30.562522,"url":"tr/otium-life.html","score":9.1,"count":482,"stars":5,"total":315},"Budget":{"id":7176481,"name":"Elijah Hotel","address":"merkez mahallesi 165 sokak 12/1","lat":36.593103,"lng":30.57189,"url":"tr/elijah.html","score":8.6,"count":226,"stars":3,"total":73.04}},"marmaris-turkiye":{"Budget":{"id":10178584,"name":"FIFTY5 Suite Hotel","address":"Çıldır mahallesi 107/1 sok no 7 marmaris","lat":36.850658,"lng":28.26402,"url":"tr/fifty5-suite.html","score":8.1,"count":465,"stars":3,"total":120}},"samsun-turkiye":{"Budget":{"id":282516,"name":"Kent Hotel","address":"Pazar Mah.Necipbey Cad No:14","lat":41.294178,"lng":36.331339,"url":"tr/kent-otel.html","score":7.7,"count":81,"stars":3,"total":120}},"trabzon-turkiye":{"Best Value":{"id":7111249,"name":"Holiday Inn - Trabzon-East by IHG","address":"Sancak Mahallesi No:63 Devlet Karayolu Üzeri","lat":40.959936,"lng":39.847702,"url":"tr/hero-39-s.html","score":8.7,"count":1570,"stars":4,"total":119.84}},"canakkale-turkiye":{"Best Value":{"id":6328210,"name":"Avec Hotel","address":"KARACAÖREN  TESTİCİKIRI 2.SK NO:2/1","lat":40.154715,"lng":26.458124,"url":"tr/avec.html","score":8.9,"count":487,"stars":4,"total":203.04}},"cherkasy-ukraine":{"Luxury":{"id":375500,"name":"Hotel Selena Family Resort","address":"Dakhnivs'ka Street 21","lat":49.504322,"lng":31.961728,"url":"ua/selena-hotel.html","score":9,"count":1307,"stars":4,"total":169.48}},"ajman-united-arab-emirates":{"Best Value":{"id":460665,"name":"Ramada by Wyndham Beach Hotel Ajman","address":"Sheikh Humaid Bin Rashid Al Nuaimi street","lat":25.408295,"lng":55.432591,"url":"ae/ramada-beach-ajman.html","score":8.6,"count":2303,"stars":4,"total":333.06}},"belfast-unitedkingdom":{"Luxury":{"id":127217,"name":"The Culloden Estate and Spa","address":"Bangor Road, Holywood","lat":54.651522,"lng":-5.801672,"url":"gb/culloden.html","score":9.2,"count":1280,"stars":5,"total":537.09}},"birmingham-united-kingdom":{"Best Value":{"id":1739068,"name":"Saint Pauls House","address":"Saint Pauls Square,","lat":52.485698,"lng":-1.905222,"url":"gb/saint-pauls-house.html","score":8.1,"count":1081,"stars":4,"total":360.92}},"blackpool-united-kingdom":{"Best Value":{"id":2464017,"name":"ParkRoyal Blackpool","address":"39 Station Road","lat":53.79564,"lng":-3.0526,"url":"gb/parkroyal-blackpool.html","score":9.4,"count":205,"stars":4,"total":167.09}},"bournemouth-united-kingdom":{"Budget":{"id":103890,"name":"Norfolk Royale Hotel","address":"Richmond Hill","lat":50.721321,"lng":-1.878909,"url":"gb/norfolkroyaleclassic.html","score":8,"count":1519,"stars":4,"total":176.52}},"bridgwater-united-kingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"crawley-united-kingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"dundee-united-kingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"durham-united-kingdom":{"Best Value":{"id":36079,"name":"Bowburn Hall Hotel","address":"Bowburn","lat":54.740804,"lng":-1.519611,"url":"gb/bowburn-hall.html","score":8.2,"count":1291,"stars":3,"total":236.32}},"farnborough-united-kingdom":{"Best Value":{"id":34283,"name":"Holiday Inn Farnborough by IHG","address":"Lynchford Road","lat":51.273907,"lng":-0.756045,"url":"gb/holiday-inn-farnborough.html","score":8.5,"count":943,"stars":4,"total":498.89}},"glasgow-unitedkingdom":{"Best Value":{"id":11175053,"name":"The Social Hub Glasgow","address":"15 Candleriggs","lat":55.857849,"lng":-4.245929,"url":"gb/the-social-hub-glasgow.html","score":8.8,"count":10364,"stars":4,"total":255.89}},"guildford-unitedkingdom":{"Best Value":{"id":321340,"name":"Asperion Hillside Hotel","address":"Perry Hill, A322","lat":51.277183,"lng":-0.609586,"url":"gb/asperion-hillside.html","score":8.6,"count":606,"stars":4,"total":286.45}},"ipswich-united-kingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"leicester-unitedkingdom":{"Best Value":{"id":37565,"name":"ibis Leicester","address":"St. George's Way, Constitution Hill","lat":52.633535,"lng":-1.123958,"url":"gb/ibis-leicester.html","score":7.7,"count":2372,"stars":3,"total":231.95}},"lincoln-unitedkingdom":{"Best Value":{"id":44775,"name":"Garner Hotel Lincoln by IHG","address":"A46, Off Runcorn Road","lat":53.200872,"lng":-0.615992,"url":"gb/garner-hotel-lincoln.html","score":8.6,"count":303,"stars":3,"total":164.71}},"maidstone-unitedkingdom":{"Best Value":{"id":231624,"name":"The Black Horse Inn","address":"Pilgrims Way, Thurnham, Nr Maidstone","lat":51.291313,"lng":0.589426,"url":"gb/theblackhorse-inn.html","score":8.8,"count":1504,"stars":4,"total":259.95}},"middlesbrough-united-kingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"milton-keynes-unitedkingdom":{"Best Value":{"id":218052,"name":"Novotel Milton Keynes","address":"Layburn Court, Saxon Street, Heelands","lat":52.053058,"lng":-0.770647,"url":"gb/novotel.html","score":8.2,"count":2389,"stars":3,"total":299.57}},"nottingham-united-kingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"royal-tunbridge-wells-unitedkingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"tenby-united-kingdom":{"Best Value":{"id":178933,"name":"The Park Hotel","address":"North Cliff","lat":51.679396,"lng":-4.701478,"url":"gb/the-park-tenby.html","score":9,"count":2302,"stars":3,"total":282.63}},"truro-unitedkingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"watford-unitedkingdom":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"akron-united-states":{"Luxury":{"from":"Budget"},"Budget":{"from":"Luxury"}},"altoona-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"id":1509809,"name":"Microtel Inn & Suites by Wyndham Altoona","address":"1601 Valley View Blvd.","lat":40.500857,"lng":-78.388215,"url":"us/microtel-inn-suites-by-wyndham-altoona.html","score":8.6,"count":521,"stars":3,"total":194.64},"Budget":{"from":"Luxury"}},"amarillo-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"ames-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"asheville-united-states":{"Best Value":{"id":320317,"name":"Country Inn & Suites by Radisson, Asheville","address":"845 Brevard Road","lat":35.53133,"lng":-82.605553,"url":"us/asheville-845-brevard-road.html","score":8.6,"count":620,"stars":5,"total":193}},"atlantic-city-united-states":{"Best Value":{"id":13821589,"name":"The Seahaus Hotel","address":"110 South Morris Avenue","lat":39.3515,"lng":-74.44653,"url":"us/the-seahaus.html","score":8.6,"count":301,"stars":4,"total":223.01}},"auburn-alabama-united-states":{"Best Value":{"id":188328,"name":"Hampton Inn Auburn","address":"2430 South College Street","lat":32.556057,"lng":-85.508487,"url":"us/hampton-inn-auburn.html","score":8.7,"count":150,"stars":3,"total":206.05}},"austin-unitedstates":{"Best Value":{"id":41907,"name":"Hampton Inn Austin North","address":"7619 I-35 North","lat":30.337547,"lng":-97.700326,"url":"us/hampton-inn-austin-north.html","score":8.6,"count":363,"stars":3,"total":193.62}},"bakersfield-united-states":{"Best Value":{"id":489108,"name":"Comfort Suites Bakersfield","address":"3115 Camino Del Rio Court","lat":35.381132,"lng":-119.047666,"url":"us/hotel-camino-del-rio-court-bakersfield.html","score":8.6,"count":333,"stars":4,"total":223.8}},"baltimore-united-states":{"Best Value":{"id":520978,"name":"Delta Hotels by Marriott Baltimore North","address":"5100 Falls Road","lat":39.355135,"lng":-76.645851,"url":"us/delta-by-marriott-hotels-baltimore-north.html","score":8.2,"count":154,"stars":4,"total":262.55}},"bismarck-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"bossier-city-united-states":{"Luxury":{"from":"Budget"},"Budget":{"from":"Luxury"}},"bowie-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"bowling-green-united-states":{"Best Value":{"id":490143,"name":"Best Western Plus Bowling Green","address":"1940 Mel Browning Street ","lat":36.930588,"lng":-86.418392,"url":"us/hotel-mel-browning-street-bowling-green.html","score":8.1,"count":457,"stars":3,"total":154.97}},"bradenton-united-states":{"Best Value":{"id":4797696,"name":"SpringHill Suites by Marriott Bradenton Downtown/Riverfront","address":"102 12th Street West","lat":27.498839,"lng":-82.573767,"url":"us/springhill-suites-by-marriott-bradenton-downtown-riverfront.html","score":9.1,"count":301,"stars":3,"total":332.82}},"brentwood-united-states":{"Best Value":{"id":339913,"name":"Best Western Brentwood","address":"5581 Franklin Pike Circle","lat":36.041221,"lng":-86.780991,"url":"us/brentwood-5581-franklin-pike-circle.html","score":8.2,"count":702,"stars":3,"total":192.12}},"brooklyn-united-states":{"Best Value":{"id":8328938,"name":"Liberty View Brooklyn Hotel","address":"826 4th Avenue Liberty View Brooklyn Hotel","lat":40.658476,"lng":-74.000525,"url":"us/liberty-view-brooklyn.html","score":8.3,"count":2381,"stars":3,"total":418.27}},"bryan-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"buena-park-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"casper-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"cheyenne-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"chicago-unitedstates":{"Best Value":{"from":"Budget"},"Budget":{"from":"Best Value"}},"chula-vista-united-states":{"Best Value":{"id":181116,"name":"El Primero Hotel","address":"416 Third Avenue","lat":32.637381,"lng":-117.078696,"url":"us/el-primero-boutique-bed-breakfast.html","score":8.6,"count":286,"stars":3,"total":273.1}},"daytona-beach-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"detroit-united-states":{"Best Value":{"id":9699325,"name":"Cambria Hotel Detroit Downtown","address":"600 West Lafayette","lat":42.329087,"lng":-83.055255,"url":"us/cambria-detroit-downtown.html","score":8.9,"count":911,"stars":4,"total":420.53}},"huntsville-united-states":{"Luxury":{"id":304791,"name":"Embassy Suites Huntsville","address":"800 Monroe Street Southwest","lat":34.72496,"lng":-86.589708,"url":"us/embassy-suites-huntsville.html","score":8.8,"count":638,"stars":4,"total":348.22}},"livermore-united-states":{"Best Value":{"id":489120,"name":"Quality Inn & Suites Livermore Wine Country","address":"5959 Preston Avenue","lat":37.705704,"lng":-121.723716,"url":"us/hotel-preston-avenue-livermore.html","score":8.3,"count":253,"stars":4,"total":216.83}},"madison-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"sierra-vista-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Budget"},"Budget":{"from":"Luxury"}},"st-augustine-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"tampa-united-states":{"Best Value":{"id":268355,"name":"MainStay Suites Tampa Moffitt-USF","address":"6800 Woodstork Road","lat":28.067544,"lng":-82.371482,"url":"us/towneplace-suites-tampa-n-fletcher.html","score":8.7,"count":434,"stars":4,"total":222.41}},"valdosta-united-states":{"Luxury":{"from":"Best Value"},"Best Value":{"from":"Luxury"}},"valencia-united-states":{"Best Value":{"id":265687,"name":"Courtyard by Marriott Santa Clarita Valencia","address":"28523 Westinghouse Place","lat":34.442962,"lng":-118.601419,"url":"us/courtyard-santa-clarita-valencia.html","score":9,"count":482,"stars":3,"total":256.27}},"hanoi-vietnam":{"Budget":{"id":13839302,"name":"Hanoi View Hotel","address":"48 B Ngõ Ngô Sỹ Liên Thanh Xuân","lat":21.027746,"lng":105.839252,"url":"vn/sense-ha-noi-madelises.html","score":8.2,"count":114,"stars":4,"total":51.74}},"nha-trang-vietnam":{"Best Value":{"id":3654837,"name":"Libra Hotel Nha Trang","address":"04 Hung Vuong, Loc Tho ward ","lat":12.241562,"lng":109.194858,"url":"vn/libra-nha-trang.html","score":8.7,"count":1290,"stars":5,"total":49.75}},"chania-greece":{"Best Value":{"id":13160638,"name":"Nearchou Boutique Hotel","address":"Νεάρχου 10","lat":35.51009,"lng":24.024759,"url":"gr/nearchou-boutique.html","score":9.8,"count":360,"stars":5,"total":263.5}},"corfu-greece":{"Best Value":{"id":14441893,"name":"Albergo Botti","address":"Ιrinis Dendrinou 1","lat":39.621486,"lng":19.923706,"url":"gr/albergo-botti.html","score":9.6,"count":316,"stars":3,"total":306.18},"Budget":{"id":318112,"name":"Cavalieri Hotel","address":"4, Capodistriou Street","lat":39.621545,"lng":19.923728,"url":"gr/cavalieri.html","score":8.3,"count":1911,"stars":4,"total":230}},"nuuk-greenland":{"Luxury":{"id":6155366,"name":"Hotel Hans Egede","address":"Aqqusinersuaq","lat":64.17452,"lng":-51.737093,"url":"gl/hans-egede-nuuk.html","score":7.8,"count":314,"stars":4,"total":1037.7}},"billund-denmark":{"Budget":{"id":22127,"name":"Airport Hotel, Billund","address":"Passager Terminalen 4","lat":55.745963,"lng":9.142049,"url":"dk/billund-airport-hotel.html","score":8.1,"count":5316,"stars":3,"total":348.96}},"lefkada-greece":{"Luxury":{"id":265267,"name":"Thomais Boutique Hotel","address":"Episkopos - Nikiana","lat":38.770438,"lng":20.721679,"url":"gr/villa-thomais.html","score":8.9,"count":95,"stars":4,"total":263.76},"Budget":{"id":8985916,"name":"Allure Wellness Retreat","address":"Αγία Μαρίνα Λευκάδας 00","lat":38.833394,"lng":20.687059,"url":"gr/allure-wellness-retreat-leukada-pole.html","score":7.8,"count":462,"stars":4,"total":97.8}}};
 async function cityData(id) {
 	const { packed, hx, cx, byId } = await data();
 	const raw = packed.cities[id];
 	if (!raw) return null;
 	const city = unpack(packed, raw);
-	const ov0 = overrides_default[id] ?? (id === "odense-denmark" ? { "Best Value": {"id": 22105, "name": "City Hotel Nattergalen", "area": "City centre", "address": "Hans Mules Gade 5", "lat": 55.399016, "lng": 10.394233, "url": "https://www.booking.com/hotel/dk/city-odense.html", "score": 7.9, "count": 2917, "stars": 3, "total": 255.48, "checked": "22 Oct 2026", "reason": "A central Odense hotel with a rooftop terrace, rated 7.9 from more than 2,900 Booking.com reviews, for well under the price of our upscale pick. Hosted stay: the hotel is hosting our team on 25 October 2026."} } : void 0);
-	const ov = (ov0 || LUX5[id]) ? { ...(LUX5[id] ?? {}), ...(ov0 ?? {}) } : void 0;
+	const ov = overrides_default[id];
 	if (ov) city.hotels = city.hotels.map((h) => {
-		const o0 = ov[h.category];
-		if (!o0) return h;
-		if (o0.from) {
-			const s = city.hotels.find((x) => x.category === o0.from);
-			if (!s) return h;
-			const R = autoReason(h.category, s.booking ?? {}, city.city);
-			return { ...s, category: h.category, tag: h.tag, reason: R, evidence: { ...s.evidence ?? {}, shortReason: R, reasons: [R, ...(s.evidence?.reasons ?? []).filter((t) => !/ choice:/.test(t))] } };
-		}
-		const nu = !String(o0.url).startsWith("http");
-		const o = { ...o0, area: o0.area ?? city.city, url: nu ? "https://www.booking.com/hotel/" + o0.url : o0.url, checked: o0.checked ?? (nu ? "23 Oct 2026" : void 0), reason: o0.reason ?? autoReason(h.category, o0, city.city) };
+		const o = ov[h.category];
+		if (!o) return h;
 		return {
 			id: o.id,
 			name: o.name,
@@ -10429,7 +11559,7 @@ async function cityData(id) {
 				latitude: o.lat,
 				longitude: o.lng
 			},
-			gallery: city.hotels.find((x) => x.id === o.id)?.gallery ?? [],
+			gallery: [],
 			booking: {
 				score: o.score,
 				count: o.count,
@@ -10483,11 +11613,42 @@ async function cityData(id) {
 			if (p.count) h.booking.count = p.count;
 			if (p.stars) h.booking.stars = p.stars;
 		}
+		tidyReasons(h);
 	}
 	for (const h of city.hotels ?? []) if (typeof h.name === "string") h.name = h.name.replace(/\s+FREE PARKING[\s\S]*$/i, "").trim();
 	city.extras = cx[id] ?? {};
 	city.slug = byId.get(id)?.slug ?? id;
 	return city;
+}
+/** Reasons were written at the first snapshot; rewrite numbers so they match what the card shows. */
+function tidyReasons(h) {
+	const ev = h.evidence;
+	if (!ev?.reasons) return;
+	const n = h.offer?.nightly;
+	const cnt = h.booking?.count;
+	ev.reasons = ev.reasons.filter((r) => !(h.live && /^Price context:/.test(r))).map((r) => {
+		let x = r;
+		if (cnt) x = x.replace(/from [\d,.]+ guest reviews/g, `from ${cnt.toLocaleString("en-US")} guest reviews`);
+		if (h.live && n && /^Budget choice:/.test(x)) x = x.replace(/€[\d,]+\.\d{2} per night/, `€${n.toFixed(2)} per night`);
+		x = x.replace(/(\d+)% above the median/g, (_m, p) => {
+			const k = 1 + Number(p) / 100;
+			return k >= 2 ? `${k.toFixed(1)}× the median` : `${p}% above the median`;
+		});
+		x = x.replace("Walking times and distances to attractions have not been verified.", "Walking times are estimates from map distance.");
+		x = x.replace("Walking times are straight-line estimates.", "Walking times are estimates from map distance.");
+		return x;
+	});
+}
+/** Parse "14 Oct 2026" or "2026-10-14" as that calendar day, independent of the server time zone. */
+var dayMs = (s) => {
+	if (!s) return NaN;
+	return Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(s) ? `${s}T12:00:00Z` : `${s} 12:00:00 UTC`);
+};
+var isoDay = (s) => new Date(Number.isNaN(dayMs(s)) ? dayMs(SNAPSHOT_DATE) : dayMs(s)).toISOString().slice(0, 10);
+/** One date for the whole page: the most recent check across the three picks. */
+function cityChecked(hs) {
+	const ts = hs.map((h) => dayMs(h.booking?.checked)).filter((t) => !Number.isNaN(t));
+	return ts.length ? new Date(Math.max(...ts)).toISOString().slice(0, 10) : SNAPSHOT_DATE;
 }
 var fmtLive = (d) => {
 	const x = /* @__PURE__ */ new Date(d + "T12:00:00Z");
@@ -10545,7 +11706,7 @@ map.on('mouseenter','c',function(){map.getCanvas().style.cursor='pointer'});map.
 map.on('click','c',function(e){var p=e.features[0].properties,price=p.p?' · '+FROM+' '+new Intl.NumberFormat(document.documentElement.lang,{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(p.p):'';var d=document.createElement('div');d.innerHTML='<strong></strong><br><small></small><br><a></a>';d.querySelector('strong').textContent=p.c;d.querySelector('small').textContent=p.k+price;var a=d.querySelector('a');a.href=pre+'/'+p.s;a.textContent=OPEN+' →';new maplibregl.Popup({offset:8}).setLngLat(e.features[0].geometry.coordinates).setDOMContent(d).addTo(map)})})})})();<\/script>`;
 	return page({
 		L,
-		title: `${m.mapTitle} — Top3Hotels`,
+		title: `${m.mapTitle} | Top3Hotels`,
 		description: m.mapLead,
 		path: "/map",
 		body,
@@ -10565,7 +11726,7 @@ async function pressPage() {
 	const row = (x, i) => `<tr><td>${i + 1}</td><td><a href="/${x.c.slug}">${esc(x.c.city)}</a></td><td>${esc(x.c.country)}</td><td>${money(x.v)}</td></tr>`;
 	return page({
 		L: "en",
-		title: "Press & data — Top3Hotels",
+		title: "Press & data | Top3Hotels",
 		description: "Hotel price data and rankings from Top3Hotels: the cheapest and most expensive cities for a good hotel, free to quote.",
 		path: "/press",
 		body: `<h1>Press &amp; data<em>.</em></h1><p class="lead">Top3Hotels picks three hotels in every city: the best budget stay, the best mid-range hotel and the best upscale hotel. Free to quote with a link to top3hotels.com.</p>
@@ -10600,7 +11761,7 @@ var guideFor = (slug) => POSTS.find((p) => p.city === slug);
 function guidesIndex() {
 	return page({
 		L: "en",
-		title: "Hotel guides: where to stay and how to choose — Top3Hotels",
+		title: "Hotel guides: where to stay and how to choose | Top3Hotels",
 		description: "Long-form hotel guides from Top3Hotels: where to stay in Odense, Hamburg and Copenhagen, the cheapest five-star hotels in Europe and how to choose a hotel in five minutes.",
 		path: "/guides",
 		body: `<style>${CSS_BLOG}</style><div class="post" style="max-width:1000px"><h1>Hotel guides<em>.</em></h1><p class="dek">Where to stay, which area to pick and where luxury is cheap. Written by people, with real prices checked on the same dates.</p>
@@ -10695,6 +11856,7 @@ var CSS_SOCIAL = `.t3-sp{display:flex;justify-content:center;margin:10px 0 0}.t3
 .t3-social:hover{border-color:#1877f2}.t3-social .av{display:inline-flex;flex:none}.t3-social .av img{width:24px;height:24px;border-radius:50%;border:2px solid var(--bg,#fff);object-fit:cover;margin-left:-8px;background:#ddd}.t3-social .av img:first-child{margin-left:0}
 .t3-social b{font-weight:700}.t3-social .fb{color:#1877f2;font-weight:600}@media(max-width:520px){.t3-social{font-size:12px;white-space:nowrap}.t3-social .pre,.t3-social .av img:nth-child(4){display:none}}header.top nav a{white-space:nowrap}@media(max-width:1380px){.hide-md{display:none!important}}`;
 var socialPill = (L) => {
+	if (L !== "es") return "";
 	const [a, b] = SOCIAL_TXT[L] ?? SOCIAL_TXT["en"];
 	return `<div class="t3-sp"><a class="t3-social" href="https://www.facebook.com/happylowcostofficialpage" target="_blank" rel="noopener" data-t="social_fb"><span class="av" aria-hidden="true"><img src="/social/hlc-logo.webp" alt="" width="24" height="24"><img src="/social/hlc-1.webp" alt="" width="24" height="24" loading="lazy"><img src="/social/hlc-2.webp" alt="" width="24" height="24" loading="lazy"><img src="/social/hlc-3.webp" alt="" width="24" height="24" loading="lazy"></span><span><span class="pre">${esc(a)} </span><b>Happy Low Cost</b> · <b>420K+</b> ${esc(b)} <span class="fb">Facebook</span></span></a></div>`;
 };
@@ -10724,10 +11886,6 @@ var range = (a, b) => {
 var json = (o) => JSON.stringify(o).replace(/</g, "\\u003c");
 var catKey = (h) => h.category === "Budget" ? "budget" : h.category === "Best Value" ? "value" : "lux";
 var label = (h, L) => h.category === "Luxury" && (h.booking?.stars ?? 5) < 5 ? T[L].cat.Upscale : T[L].cat[h.category];
-var daysSince = (s) => {
-	const t = Date.parse(s ?? "");
-	return Number.isFinite(t) ? Math.max(0, Math.floor((Date.now() - t) / 864e5)) : 0;
-};
 var km = (a, b) => {
 	const r = (x) => x * Math.PI / 180;
 	const x = Math.sin(r(b.lat - a.lat) / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(r(b.lng - a.lng) / 2) ** 2;
@@ -10774,8 +11932,7 @@ function bestFor(h, i, L, sights) {
 		"family",
 		"spa",
 		"beach",
-		"pool",
-		"pets"
+		"pool"
 	]) if (tags.includes(k)) out.push(f[k]);
 	const w = walkMinutes(h, sights);
 	if (w && w.min <= 15) out.push(f["central"]);
@@ -10947,7 +12104,7 @@ ${consentScript(Z[o.L])}</head><body><div class="wrap">
 <header class="top"><a class="logo" href="${P(o.L, "/")}">${LOGO}<span>top3hotels<em>.</em></span></a><nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="/guides">Guides</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
 ${socialPill(o.L)}<main>${o.body}</main>
 <footer><div class="cols"><div><a class="logo" href="${P(o.L, "/")}" style="font-size:20px">${LOGO}<span>top3hotels<em>.</em></span></a><p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li><li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="/press">Press &amp; data</a></li><li><a href="/guides">Guides</a></li></ul></div>
+<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="/press">Press &amp; data</a></li><li><a href="/guides">Guides</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="/how-we-choose">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="/contact">${X[o.L].contact}</a></li></ul></div>
 <div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure">Affiliate disclosure</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
 <div class="fine"><span>© 2026 Top3Hotels · ${BRAND.entity} (${BRAND.place})</span><span>${t.disclaimer}</span></div></footer>
@@ -11016,12 +12173,12 @@ function card(h, city, i, L, sights, cityImg, review) {
 	return `<article class="card ${k}" id="${k}">
 <div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(city.city)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
 <div class="badge"><span><i class="ico" aria-hidden="true">${k === "budget" ? "€" : k === "value" ? "★" : "♛"}</i>${esc(label(h, L))}</span>${i === 1 ? `<span class="pick">★ ${esc(t.ourPick)}</span>` : ""}${h.deal ? `<span class="pick deal">🔥 ${esc(M[L].deal)}</span>` : ""}</div>
-<div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(SNAPSHOT_DATE, L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
+<div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
 <div class="body"><h2 class="hname">${esc(h.name)}</h2>
 <div class="meta">${b.stars ? `<span class="stars" aria-label="${b.stars} stars">${"★".repeat(b.stars)}</span>` : ""}<span>${esc(h.area ?? city.city)}</span></div>
 <p class="bestfor"><b>${esc(X[L].bestFor)}</b>${esc(bestFor(h, i, L, sights).join(" · "))}</p>
 ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}
-<div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}${h.live ? `<span class="live">${esc(M[L].live(b.checked ?? ""))}</span>` : `<span>${esc(t.checked(daysSince(b.checked)))}</span>`}</div>
+<div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
@@ -11069,7 +12226,9 @@ async function cityPage(city, L) {
 	const description = t.desc(city.city, cname, budget.name, value.name, lux.name);
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
 	const dates = range(o0.checkin, o0.checkout);
-	const checked = t.checked(daysSince(budget.booking?.checked)).toLowerCase();
+	const pageDate = cityChecked(hs);
+	const days = [...new Set(hs.map((h) => isoDay(h.booking?.checked)))].sort();
+	const checkedText = M[L].live(days.length > 1 ? `${fmtLive(days[0])} – ${fmtLive(days[days.length - 1])}` : fmtLive(days[0] ?? pageDate));
 	const ans = (h) => `${h.name}${h.area ? ` (${h.area})` : ""}: ${h.booking?.score ?? "–"}/10 · ${fmtInt(h.booking?.count)} ${t.reviews} · ${money(h.offer?.nightly)} ${t.perNight}${h.extras?.pros?.[0] ? ` · ${t.guestsSay}: “${h.extras.pros[0]}”` : ""}`;
 	const faq = [
 		[t.faq.budget(city.city), ans(budget)],
@@ -11084,10 +12243,10 @@ async function cityPage(city, L) {
 			it: "il",
 			pt: "em",
 			da: "den"
-		}[L]} ${fmtDate(budget.booking?.checked || SNAPSHOT_DATE, L)}`)]
+		}[L]} ${fmtDate(pageDate, L)}`)]
 	];
 	const xt = X[L];
-	const updated = fmtDate(SNAPSHOT_DATE, L);
+	const updated = fmtDate(pageDate, L);
 	const areaBlock = `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(new Set(hs.map((h) => h.area)).size === 1 && hs[0].area ? xt.whereSame(hs[0].area) : xt.whereLead)}</p><div class="areas">${hs.map((h, i) => {
 		const w = walkMinutes(h, sights);
 		const wt = walkText(h, sights, L);
@@ -11096,7 +12255,7 @@ async function cityPage(city, L) {
 	const near = city.near.map((s) => bySlug.get(s)).filter(Boolean);
 	const y = Y[L];
 	const aps = Object.entries(await airports()).filter(([, a]) => a.dest.some(([id]) => id === city.id));
-	const flights = aps.length ? `<p class="flights"><span>✈ ${esc(y.flights)}</span>${aps.map(([k, a]) => `<a href="${P(L, `/from/${k}`)}">${esc(a.name)} (${esc(a.iata)})</a>`).join("")}</p>` : "";
+	const flights = aps.length && L === "da" ? `<p class="flights"><span>✈ ${esc(y.flights)}</span>${aps.map(([k, a]) => `<a href="${P(L, `/from/${k}`)}">${esc(a.name)} (${esc(a.iata)})</a>`).join("")}</p>` : "";
 	const in1 = `<p class="in1h">${esc(y.in1)}</p><div class="in1">${hs.map((h) => `<a class="${catKey(h)}" href="#${catKey(h)}"><small>${esc(label(h, L))}</small><strong>${esc(h.name)}</strong><span>${h.booking?.score ? h.booking.score.toFixed(1) + "/10 · " : ""}<span data-eur="${h.offer?.nightly ?? ""}"><span class="v">${money(h.offer?.nightly)}</span></span> ${esc(t.perNight)}</span></a>`).join("")}</div>`;
 	const jump = `<nav class="jump" aria-label="${esc(y.jHotels)}"><a href="#hotels">${esc(y.jHotels)}</a><a href="#where">${esc(y.jWhere)}</a><a href="#maph">${esc(y.jMap)}</a><a href="#cmp">${esc(y.jCompare)}</a><a href="#faq">${esc(y.jFaq)}</a></nav>`;
 	const curSel = `<label>${esc(y.currency)}<select data-cur aria-label="${esc(y.currency)}">${[
@@ -11154,7 +12313,7 @@ async function cityPage(city, L) {
 			"@context": "https://schema.org",
 			"@type": "ItemList",
 			name: t.h1(city.city),
-			dateModified: SNAPSHOT_DATE,
+			dateModified: pageDate,
 			author: {
 				"@type": "Organization",
 				name: "Top3Hotels",
@@ -11216,7 +12375,7 @@ async function cityPage(city, L) {
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(HP_LANGS.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
 <aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
-<p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · Booking.com · ${esc(checked)}.</p>
+<p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · ${esc(checkedText)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
 			slug: city.slug,
 			city: city.city,
@@ -11238,7 +12397,7 @@ ${hs.map((h) => `<tr><td>${esc(label(h, L))}</td><td>${esc(h.name)}</td><td>${es
 </tbody></table></div></section>
 <section aria-labelledby="faq"><h2 id="faq">${esc(t.faqTitle(city.city))}</h2><dl class="faq">${faq.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join("")}</dl></section>
 <section aria-labelledby="how"><h2 id="how">${esc(t.howTitle)}</h2><p class="lead">${esc(t.howText)} <a href="/how-we-choose">${esc(t.how)} →</a></p></section>
-<section aria-labelledby="src"><h2 id="src">${esc(xt.sources)}</h2><p class="sources">${esc(xt.sourcesText)} ${esc(t.checked(daysSince(budget.booking?.checked)))}.</p>
+<section aria-labelledby="src"><h2 id="src">${esc(xt.sources)}</h2><p class="sources">${esc(xt.sourcesText)} ${esc(checkedText)}.</p>
 <div class="forhotels"><h3 class="serif" style="font-size:22px;margin:0 0 6px">${esc(xt.badgeQ)}</h3><p style="margin:0;font-size:14px;color:var(--muted)">${esc(xt.badgeHow)}</p>${hs.map((h) => `<p style="margin:12px 0 0;font-weight:600">${esc(h.name)}</p><code>${esc(`<a href="${SITE}/${city.slug}" target="_blank" rel="noopener" title="Top3Hotels ${label(h, "en")} pick in ${city.city}"><img src="${SITE}/badge/${city.slug}/${catKey(h)}.svg" width="180" height="60" alt="Top 3 ${label(h, "en")} pick in ${city.city} 2026 · Top3Hotels"></a>`)}</code>`).join("")}<p style="margin:0;font-size:13px"><a href="/partners">${esc(xt.forHotels)} →</a></p><h3 class="serif" style="font-size:22px;margin:22px 0 6px">${esc(y.embedTitle)}</h3><p style="margin:0;font-size:14px;color:var(--muted)">${esc(y.embedHow)} <a href="/embed/${esc(city.slug)}" target="_blank" rel="noopener">Preview ↗</a></p><code>${esc(embed)}</code></div></section>
 ${near.length ? `<section aria-labelledby="near"><h2 id="near">${esc(t.near(city.city))}</h2><ul class="grid">${near.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)} <span>${esc(countryName(c, L))}</span></a></li>`).join("")}</ul><p class="note" style="margin-top:14px">${esc(y.compareWith(city.city))}: ${POPULAR.filter((s) => s !== city.slug).slice(0, 6).map((s) => bySlug.get(s)).filter((c) => Boolean(c)).map((c) => `<a href="${P(L, `/compare/${city.slug}/${c.slug}`)}" rel="nofollow">${esc(c.city)}</a>`).join(" · ")}</p></section>` : ""}
 ${hotelsBlock(city, L)}
@@ -11574,7 +12733,7 @@ function notFoundPage(path, L) {
 	const t = T[L];
 	return page({
 		L,
-		title: `${t.notFound} — Top3Hotels`,
+		title: `${t.notFound} | Top3Hotels`,
 		description: t.destLead(119),
 		path,
 		noindex: true,
@@ -11590,14 +12749,14 @@ async function stats() {
 		langs: LANGS.length
 	};
 }
-var pillars = (n) => `<div class="pillars"><div class="pillar"><b>${n.cities.toLocaleString("en-US")}</b><span>destinations, three hotels each</span></div><div class="pillar"><b>${n.hotels.toLocaleString("en-US")}</b><span>picks — Budget, Best Value, Luxury — chosen by public rules</span></div><div class="pillar"><b>${n.countries}</b><span>countries</span></div><div class="pillar"><b>${n.langs}</b><span>languages: EN · ES · DE · FR · IT · PT · DA</span></div></div>`;
+var pillars = (n) => `<div class="pillars"><div class="pillar"><b>${n.cities.toLocaleString("en-US")}</b><span>destinations, three hotels each</span></div><div class="pillar"><b>${n.hotels.toLocaleString("en-US")}</b><span>picks, Budget, Best Value, Luxury, chosen by public rules</span></div><div class="pillar"><b>${n.countries}</b><span>countries</span></div><div class="pillar"><b>${n.langs}</b><span>languages: EN · ES · DE · FR · IT · PT · DA</span></div></div>`;
 var mail = (subject, text = BRAND.email) => `<a href="mailto:${BRAND.email}?subject=${encodeURIComponent(subject)}">${esc(text)}</a>`;
 var crumbsEn = (name) => `<p class="crumbs"><a href="/">Home</a> › ${esc(name)}</p>`;
 async function aboutPage() {
 	const n = await stats();
 	return page({
 		L: "en",
-		title: "About Top3Hotels — the best hotel in every city, picked in 1 second",
+		title: "About Top3Hotels: three hotels per city, chosen by public rules",
 		description: "Who we are, why we show only three hotels per city, and how Top3Hotels stays independent.",
 		path: "/about",
 		body: `${crumbsEn("About us")}<h1>Top 3 hotels in every city<em>.</em></h1>
@@ -11615,7 +12774,7 @@ ${pillars(n)}
 async function methodPage() {
 	return page({
 		L: "en",
-		title: "How we choose the three hotels — Top3Hotels methodology",
+		title: "How we choose the three hotels | Top3Hotels methodology",
 		description: "The transparent rules behind every Budget, Best Value and Luxury pick on Top3Hotels.",
 		path: "/how-we-choose",
 		body: `${crumbsEn("How we choose")}<h1>How we choose the three<em>.</em></h1>
@@ -11623,7 +12782,7 @@ async function methodPage() {
 <div class="prose">
 <h2>1. The sample</h2><p>For each destination we take the hotels Booking.com returns for the same reference stay: two adults, one room, two mid-week nights in November 2026. For major destinations we use up to 40 hotels closest to the centre, so every pick is well located.</p>
 <h2>2. Eligibility</h2><p>A hotel needs a real track record: at least 15 guest reviews and a guest score of 7.0 or more (8.0 for large samples). When a city has enough proper hotels, private apartments are left out.</p>
-<h2>3. The three picks</h2><ul><li><b>Budget</b> — the lowest eligible reference price.</li><li><b>Best Value</b> — the strongest review-confidence score at or near the sample's median price. Review confidence weighs the score by the number of reviews, so a 9.4 from 4,000 guests beats a 9.8 from 12.</li><li><b>Luxury</b> — the best-reviewed five-star hotel. If no five-star qualifies, a four-star rated 8.5+ is shown and clearly labelled as an upscale alternative.</li></ul>
+<h2>3. The three picks</h2><ul><li><b>Budget</b>: the lowest eligible reference price.</li><li><b>Best Value</b>: the strongest review-confidence score at or near the sample's median price. Review confidence weighs the score by the number of reviews, so a 9.4 from 4,000 guests beats a 9.8 from 12.</li><li><b>Luxury</b>: the best-reviewed five-star hotel. If no five-star qualifies, a four-star rated 8.5+ is shown and clearly labelled as an upscale alternative.</li></ul>
 <h2>4. What we show for each hotel</h2><p>Guest score and review count, reference price, star classification, location score, what guests praise and criticise, facilities, walking time to the best-known sights (straight-line estimate) and who the hotel suits best.</p>
 <h2>5. Freshness and corrections</h2><p>Every page shows when prices were checked. Prices are reference rates, not live quotes; the booking link always shows the current price for your dates. Spotted something wrong? ${mail("Correction request")}. We aim to review corrections within a few working days.</p>
 <h2>6. Independence</h2><p>Some links earn us a commission. That never changes the selection, the order or the text. Hotels cannot buy a place in the three picks, our scores or reviews. A hotel can appear as a clearly labelled <em>Featured partner</em> (for example after a filmed stay); those features are always marked and kept separate from the picks. Read our <a href="/affiliate-disclosure">affiliate disclosure</a>.</p>
@@ -11634,7 +12793,7 @@ async function partnersPage() {
 	const n = await stats();
 	return page({
 		L: "en",
-		title: "For hotels & partners — Top3Hotels",
+		title: "For hotels & partners | Top3Hotels",
 		description: "Badges for selected hotels, destination and route guides, co-branded content. Independent picks that travellers trust.",
 		path: "/partners",
 		body: `${crumbsEn("For hotels & partners")}<h1>Work with Top3Hotels<em>.</em></h1>
@@ -11657,7 +12816,7 @@ async function mediaKitPage() {
 		description: "Top3Hotels in numbers, product, principles and partnership formats.",
 		path: "/partners/media-kit",
 		body: `<p class="eyebrow" style="margin-top:28px">Media kit · ${fmtDate(SNAPSHOT_DATE, "en")}</p><h1>Top3Hotels<em>.</em></h1>
-<p class="lead">The best hotel in every city, picked in 1 second. One Budget, one Best Value and one Luxury hotel per destination, with sourced scores and reference prices.</p>
+<p class="lead">Three hotels per city, chosen by public rules. One Budget, one Best Value and one Luxury hotel per destination, with sourced scores and reference prices.</p>
 ${pillars(n)}
 <div class="prose"><h2>The product</h2><ul><li>${n.cities.toLocaleString("en-US")} destination pages in ${n.langs} languages, each with three hotels, map, walking times to sights and guest feedback.</li><li>Country pages, themed lists (beach, pool, pets, family, spa, budget, luxury) and event guides.</li><li>Route pages for direct flights from Billund, Aalborg and Aarhus.</li></ul>
 <h2>Why travellers trust it</h2><ul><li>Rule-based, public methodology. No paid rankings.</li><li>Every number shows its source and the date it was checked.</li><li>Fast and accessible: Lighthouse 100 for accessibility, best practices and SEO.</li></ul>
@@ -11669,7 +12828,7 @@ ${pillars(n)}
 async function contactPage() {
 	return page({
 		L: "en",
-		title: "Contact — Top3Hotels",
+		title: "Contact | Top3Hotels",
 		description: "Contact Top3Hotels for partnerships, corrections and press.",
 		path: "/contact",
 		body: `${crumbsEn("Contact")}<h1>Contact us<em>.</em></h1><p class="lead">We usually reply within two working days.</p>
@@ -11703,7 +12862,7 @@ function legalPage(kind) {
 	const path = `/${kind}`;
 	return page({
 		L: "en",
-		title: `${title} — Top3Hotels`,
+		title: `${title} | Top3Hotels`,
 		description: `${title} of Top3Hotels (${BRAND.entity}).`,
 		path,
 		body: `${crumbsEn(title)}<h1>${esc(title)}<em>.</em></h1><div class="prose">${html2}</div>`
@@ -11906,13 +13065,13 @@ async function landingPage(L) {
 	}));
 	const aps = Object.entries(await airports());
 	const body = `<h1 style="margin-top:28px">${esc(t.homeH1)}<em>.</em></h1><p class="lead">${esc(t.lead())}</p>
-<form class="find" action="/" method="get" role="search"><label><span>${esc(t.search)}</span><input name="city" required autocomplete="off" placeholder="London, Paris, Billund…"></label><button class="btn" type="submit">${esc(t.seeDates)}</button></form>
+<form class="find" action="/" method="get" role="search"><label><span>${esc(t.search)}</span><input name="city" required autocomplete="off" placeholder="London, Paris, Tokyo…"></label><button class="btn" type="submit">${esc(t.seeDates)}</button></form>
 <section><h2>${esc(t.popular)}</h2><div class="tiles">${tiles.join("")}</div></section>
 <section><h2>${esc(t.fromNav)}</h2><ul class="grid">${aps.map(([k, a]) => `<li><a href="${P(L, `/from/${k}`)}">${esc(t.fromH1(a.name))} <span>${esc(a.iata)}</span></a></li>`).join("")}</ul></section>
 <section><h2>${esc(t.lists)}</h2><ul class="grid">${THEMES.map((th) => `<li><a href="${P(L, `/lists/${th}`)}">${esc(t.themes[th].title)}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, "/destinations")}">${esc(t.destH1(byCountry.size))} →</a></p></section>`;
 	return page({
 		L,
-		title: `Top3Hotels — ${t.footer}`,
+		title: `Top3Hotels | ${t.footer}`,
 		description: t.lead(),
 		path: "/",
 		body,
@@ -11931,7 +13090,7 @@ function guideBlock(city, L) {
 function filmingBlock(city, L) {
 	const z = Z[L];
 	if (!guides_default[city.slug]?.filming) return "";
-	return `<section><div class="collab"><div><h2>🎬 ${esc(z.filming(city.city))}</h2><p>${esc(z.filmingLead)}</p></div><a class="btn" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Top3Hotels ${city.city} filming — partnership`)}" data-t="collab_cta" data-city="${esc(city.slug)}">${esc(z.hotelsCta)} →</a></div></section>`;
+	return `<section><div class="collab"><div><h2>🎬 ${esc(z.filming(city.city))}</h2><p>${esc(z.filmingLead)}</p></div><a class="btn" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Top3Hotels ${city.city} filming, partnership`)}" data-t="collab_cta" data-city="${esc(city.slug)}">${esc(z.hotelsCta)} →</a></div></section>`;
 }
 function hotelsBlock(city, L) {
 	const z = Z[L];
@@ -11940,7 +13099,7 @@ function hotelsBlock(city, L) {
 function disclosurePage() {
 	return page({
 		L: "en",
-		title: "Affiliate disclosure — Top3Hotels",
+		title: "Affiliate disclosure | Top3Hotels",
 		description: "How Top3Hotels earns money: booking-partner commissions and labelled partner features. Our picks are never for sale.",
 		path: "/affiliate-disclosure",
 		body: `${crumbsEn("Affiliate disclosure")}<h1>Affiliate disclosure<em>.</em></h1><div class="prose">
@@ -11961,7 +13120,7 @@ function savedPage(L) {
 	const y = Y[L];
 	return page({
 		L,
-		title: `${y.savedTitle} — Top3Hotels`,
+		title: `${y.savedTitle} | Top3Hotels`,
 		description: y.savedLead,
 		path: "/saved",
 		noindex: true,
@@ -12038,7 +13197,7 @@ ${rows.map(({ c, b, v }, i) => `<tr data-price="${b.offer.nightly}"><td>${i + 1}
 	}];
 	return page({
 		L,
-		title: `${y.cheapTitle} (2026) — Top3Hotels`,
+		title: `${y.cheapTitle} (2026) | Top3Hotels`,
 		description: y.cheapLead(rows.length),
 		path: "/cheap-cities",
 		body,
@@ -12057,7 +13216,7 @@ async function comparePage(a, b, L) {
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(y.jCompare)}</p><h1>${esc(y.vsTitle(ca.city, cb.city))}<em>.</em></h1><p class="lead">${esc(y.vsLead(ca.city, cb.city))}</p><section style="margin-top:26px"><div class="vs">${col(ca, da)}${col(cb, db)}</div></section>`;
 	return page({
 		L,
-		title: `${y.vsTitle(ca.city, cb.city)} — Top3Hotels`,
+		title: `${y.vsTitle(ca.city, cb.city)} | Top3Hotels`,
 		description: y.vsLead(ca.city, cb.city),
 		path: `/compare/${a}/${b}`,
 		body,
@@ -12108,55 +13267,107 @@ var hpSlugify = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().
 var hotelSlug = (name, citySlug) => `${hpSlugify(name)}-${citySlug}`.replace(/-+/g, "-");
 var hpCache;
 async function hotelPagesList() {
-  if (hpCache && Date.now() - hpCache.at < 18e5) return hpCache.rows;
-  try {
-    const r = await fetch(`${HP_API}?action=list`, { cf: { cacheTtl: 1800, cacheEverything: true } });
-    if (r.ok) hpCache = { at: Date.now(), rows: await r.json() };
-  } catch {}
-  return hpCache?.rows ?? [];
+	if (hpCache && Date.now() - hpCache.at < 18e5) return hpCache.rows;
+	try {
+		const r = await fetch(`${HP_API}?action=list`, { cf: {
+			cacheTtl: 1800,
+			cacheEverything: true
+		} });
+		if (r.ok) hpCache = {
+			at: Date.now(),
+			rows: await r.json()
+		};
+	} catch {}
+	return hpCache?.rows ?? [];
 }
 async function hotelPageData(slug) {
-  try {
-    const r = await fetch(`${HP_API}?action=get&slug=${encodeURIComponent(slug)}`, { cf: { cacheTtl: 3600, cacheEverything: true } });
-    return r.ok ? await r.json() : null;
-  } catch { return null; }
+	try {
+		const r = await fetch(`${HP_API}?action=get&slug=${encodeURIComponent(slug)}`, { cf: {
+			cacheTtl: 3600,
+			cacheEverything: true
+		} });
+		return r.ok ? await r.json() : null;
+	} catch {
+		return null;
+	}
 }
 var HPT = {
-  en: { home: "Home", review: "Review", book: "Check prices on Booking.com", faq: "Questions travellers ask", others: "Our other two picks in", all: "See all three picks in", updated: "Updated", by: "By the Top3Hotels editorial team. Based on Booking.com guest scores and reviews, location data and reference prices. We did not stay at this hotel.", per: "per night (reference)", score: "Guest score", reviews: "reviews", cat_budget: "Budget pick", cat_value: "Best Value pick", cat_lux: "Luxury pick", from: "chosen from", hotels: "hotels compared", disc: "We may earn a commission if you book. It never changes our pick.", altl: "Sold out on your dates? See the best available alternatives" },
-  es: { home: "Inicio", review: "Análisis", book: "Ver precios en Booking.com", faq: "Preguntas frecuentes", others: "Nuestras otras dos elecciones en", all: "Ver los tres hoteles de", updated: "Actualizado", by: "Por el equipo editorial de Top3Hotels. Basado en puntuaciones y reseñas de Booking.com, datos de ubicación y precios de referencia. No nos hemos alojado en este hotel.", per: "por noche (referencia)", score: "Nota de huéspedes", reviews: "reseñas", cat_budget: "Elección económica", cat_value: "Elección calidad-precio", cat_lux: "Elección de lujo", from: "elegido entre", hotels: "hoteles comparados", disc: "Podemos ganar una comisión si reservas. Nunca cambia nuestra elección.", altl: "¿Sin disponibilidad en tus fechas? Ver alternativas disponibles" }
+	en: {
+		home: "Home",
+		review: "Review",
+		book: "Check prices on Booking.com",
+		faq: "Questions travellers ask",
+		others: "Our other two picks in",
+		all: "See all three picks in",
+		updated: "Updated",
+		by: "By the Top3Hotels editorial team. Based on Booking.com guest scores and reviews, location data and reference prices. We did not stay at this hotel.",
+		per: "per night (reference)",
+		score: "Guest score",
+		reviews: "reviews",
+		cat_budget: "Budget pick",
+		cat_value: "Best Value pick",
+		cat_lux: "Luxury pick",
+		from: "chosen from",
+		hotels: "hotels compared",
+		disc: "We may earn a commission if you book. It never changes our pick.",
+		altl: "Sold out on your dates? See the best available alternatives"
+	},
+	es: {
+		home: "Inicio",
+		review: "Análisis",
+		book: "Ver precios en Booking.com",
+		faq: "Preguntas frecuentes",
+		others: "Nuestras otras dos elecciones en",
+		all: "Ver los tres hoteles de",
+		updated: "Actualizado",
+		by: "Por el equipo editorial de Top3Hotels. Basado en puntuaciones y reseñas de Booking.com, datos de ubicación y precios de referencia. No nos hemos alojado en este hotel.",
+		per: "por noche (referencia)",
+		score: "Nota de huéspedes",
+		reviews: "reseñas",
+		cat_budget: "Elección económica",
+		cat_value: "Elección calidad-precio",
+		cat_lux: "Elección de lujo",
+		from: "elegido entre",
+		hotels: "hoteles comparados",
+		disc: "Podemos ganar una comisión si reservas. Nunca cambia nuestra elección.",
+		altl: "¿Sin disponibilidad en tus fechas? Ver alternativas disponibles"
+	}
 };
 var CSS_HP = `.hp-facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 18px;font-size:15px;opacity:.9}.hp-facts b{font-weight:700}.hp-badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--pale,#eef3fa);margin:0 0 10px}
 .hp-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:6px 0 18px;background:#e5e8ee}.hp-verdict{font-size:19px;line-height:1.55;border-left:4px solid currentColor;padding:4px 0 4px 16px;margin:0 0 22px}
 .hp-cta{display:block;text-align:center;font-weight:700;padding:14px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;margin:18px 0 6px}.hp-small{font-size:13px;opacity:.7;text-align:center;margin:0 0 6px}.hp-alt{display:block;text-align:center;font-size:14px;margin:0 0 22px}
 .hp-faq details{border-top:1px solid rgba(127,127,127,.25);padding:12px 0}.hp-faq summary{font-weight:700;cursor:pointer;font-size:17px}.hp-others{display:grid;gap:10px;margin:10px 0 0;padding:0;list-style:none}.hp-others a{display:block;padding:12px 14px;border:1px solid rgba(127,127,127,.25);border-radius:12px;text-decoration:none}`;
 async function hotelPage(slug, L) {
-  if (!HP_LANGS.includes(L)) return null;
-  const d = await hotelPageData(slug);
-  const c = d?.content?.[L];
-  if (!d || !c) return null;
-  const f = d.facts ?? {};
-  const t = HPT[L];
-  const { bySlug } = await data();
-  const city = bySlug.get(d.city_slug);
-  const live = new Set((await hotelPagesList()).map((x) => x.slug));
-  const bk = f.booking_url ? CJ_BOOKING(String(f.booking_url), "t3hotel") : null;
-  const alt = altSearch(d.cat, f.nightly_eur, f.stars, { city: d.city, country: d.country });
-  const others = (f.other_picks ?? []).map((o) => {
-    const s2 = hotelSlug(o.name, d.city_slug);
-    const href = live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`);
-    return `<li><a href="${esc(href)}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
-  });
-  const upd = (d.updated_at || d.published_at || "").slice(0, 10);
-  const path = `/hotel/${slug}`;
-  const facts = [
-    f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
-    f.stars ? `<span>${"★".repeat(Number(f.stars))}</span>` : "",
-    f.nightly_eur ? `<span><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
-    f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
-    f.candidates_compared ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
-  ].filter(Boolean).join("");
-  const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p><a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : "";
-  const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
+	if (!HP_LANGS.includes(L)) return null;
+	const d = await hotelPageData(slug);
+	const c = d?.content?.[L];
+	if (!d || !c) return null;
+	const f = d.facts ?? {};
+	const t = HPT[L];
+	const { bySlug } = await data();
+	const city = bySlug.get(d.city_slug);
+	const list = await hotelPagesList();
+	const live = new Set(list.map((x) => x.slug));
+	const bk = f.booking_url ? CJ_BOOKING(String(f.booking_url), "t3hotel") : null;
+	const alt = altSearch(d.cat, f.nightly_eur, f.stars, {
+		city: d.city,
+		country: d.country
+	});
+	const others = (f.other_picks ?? []).map((o) => {
+		const s2 = hotelSlug(o.name, d.city_slug);
+		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
+	});
+	const upd = (d.updated_at || d.published_at || "").slice(0, 10);
+	const path = `/hotel/${slug}`;
+	const facts = [
+		f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
+		f.stars ? `<span>${"★".repeat(Number(f.stars))}</span>` : "",
+		f.nightly_eur ? `<span><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
+		f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
+		f.candidates_compared ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
+	].filter(Boolean).join("");
+	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p><a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : "";
+	const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
 <nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
 <span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
 <h1>${esc(f.name)}</h1>
@@ -12170,26 +13381,81 @@ ${cta}
 <h2>${esc(t.faq)}</h2><div class="hp-faq">${(c.faq ?? []).map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
 <h2>${esc(t.others)} ${esc(d.city)}</h2><ul class="hp-others">${others.join("")}<li><a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(d.city)} →</a></li></ul>
 </article>`;
-  const ld = [
-    { "@context": "https://schema.org", "@type": "Hotel", name: f.name, url: SITE + P(L, path), ...(f.photo ? { image: f.photo } : {}),
-      address: { "@type": "PostalAddress", ...(f.address ? { streetAddress: f.address } : {}), addressLocality: d.city, addressCountry: city?.cc || d.country },
-      ...(f.lat ? { geo: { "@type": "GeoCoordinates", latitude: f.lat, longitude: f.lng } } : {}),
-      ...(f.stars ? { starRating: { "@type": "Rating", ratingValue: f.stars } } : {}),
-      ...(f.nightly_eur ? { priceRange: `€${Math.round(f.nightly_eur)} per night (reference)` } : {}) },
-    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: (c.faq ?? []).map((q) => ({ "@type": "Question", name: q.q, acceptedAnswer: { "@type": "Answer", text: q.a } })) },
-    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: t.home, item: SITE + P(L, "/") },
-      { "@type": "ListItem", position: 2, name: d.city, item: SITE + P(L, `/${d.city_slug}`) },
-      { "@type": "ListItem", position: 3, name: f.name, item: SITE + P(L, path) }
-    ] }
-  ];
-  return page({ L, title: `${c.title} | Top3Hotels`, description: c.meta, path, body, ld, alts: HP_LANGS, image: f.photo || void 0 });
+	const ld = [
+		{
+			"@context": "https://schema.org",
+			"@type": "Hotel",
+			name: f.name,
+			url: SITE + P(L, path),
+			...f.photo ? { image: f.photo } : {},
+			address: {
+				"@type": "PostalAddress",
+				...f.address ? { streetAddress: f.address } : {},
+				addressLocality: d.city,
+				addressCountry: city?.cc || d.country
+			},
+			...f.lat ? { geo: {
+				"@type": "GeoCoordinates",
+				latitude: f.lat,
+				longitude: f.lng
+			} } : {},
+			...f.stars ? { starRating: {
+				"@type": "Rating",
+				ratingValue: f.stars
+			} } : {},
+			...f.nightly_eur ? { priceRange: `€${Math.round(f.nightly_eur)} per night (reference)` } : {}
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			mainEntity: (c.faq ?? []).map((q) => ({
+				"@type": "Question",
+				name: q.q,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: q.a
+				}
+			}))
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: t.home,
+					item: SITE + P(L, "/")
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: d.city,
+					item: SITE + P(L, `/${d.city_slug}`)
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: f.name,
+					item: SITE + P(L, path)
+				}
+			]
+		}
+	];
+	return page({
+		L,
+		title: `${c.title} | Top3Hotels`,
+		description: c.meta,
+		path,
+		body,
+		ld,
+		alts: HP_LANGS,
+		image: f.photo || void 0
+	});
 }
 async function hotelSitemap() {
-  const rows = await hotelPagesList();
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rows.flatMap((r) => HP_LANGS.map((L) => `<url><loc>${SITE}${P(L, `/hotel/${r.slug}`)}</loc><lastmod>${(r.published_at ?? "").slice(0, 10)}</lastmod>${HP_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, `/hotel/${r.slug}`)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`;
+	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${(await hotelPagesList()).flatMap((r) => HP_LANGS.map((L) => `<url><loc>${SITE}${P(L, `/hotel/${r.slug}`)}</loc><lastmod>${(r.published_at ?? "").slice(0, 10)}</lastmod>${HP_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, `/hotel/${r.slug}`)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`;
 }
-
 async function sitemapFor(L) {
 	const { index, byCountry } = await data();
 	const paths = [
@@ -12268,7 +13534,10 @@ async function handleSeo(request, env) {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
 	} });
-	if (p === "/sitemap-hotels.xml") return new Response(await hotelSitemap(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
+	if (p === "/sitemap-hotels.xml") return new Response(await hotelSitemap(), { headers: {
+		"content-type": "application/xml; charset=utf-8",
+		"cache-control": "public, max-age=3600"
+	} });
 	const sm = p.match(/^\/sitemap-([a-z]{2})\.xml$/);
 	if (sm && isLang(sm[1])) return new Response(await sitemapFor(sm[1]), { headers: {
 		"content-type": "application/xml; charset=utf-8",
@@ -12455,7 +13724,7 @@ async function handleSeo(request, env) {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-ucyGQcD-.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-CbvFkyG6.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
@@ -12483,7 +13752,7 @@ var server_default = { async fetch(request, env, ctx) {
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-BbuBgX6A.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-D0GkOeLM.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {

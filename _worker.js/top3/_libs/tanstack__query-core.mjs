@@ -8,7 +8,7 @@ var defaultTimeoutProvider = {
 /**
 * Allows customization of how timeouts are created.
 *
-* @tanstack/query-core makes liberal use of timeouts to implement `staleTime`
+* `@tanstack/query-core` makes liberal use of timeouts to implement `staleTime`
 * and `gcTime`. The default TimeoutManager provider uses the platform's global
 * `setTimeout` implementation, which is known to have scalability issues with
 * thousands of timeouts on the event loop.
@@ -33,7 +33,7 @@ var TimeoutManager = class {
 	* QueryClient or queries, so that the same provider is used consistently
 	* for all timers in the application, since different TimeoutProviders
 	* cannot cancel each others' timers.
-	*
+	* @param provider - The `TimeoutProvider` to use for all timers from now on.
 	* @example
 	* ```ts
 	* import { timeoutManager, QueryClient } from '@tanstack/query-core'
@@ -54,7 +54,9 @@ var TimeoutManager = class {
 	*
 	* It returns a timer ID, which may be a number or an object that can be
 	* coerced to a number via `Symbol.toPrimitive`.
-	*
+	* @param callback - The function to call when the timeout elapses.
+	* @param delay - The time to wait before calling `callback`, in milliseconds.
+	* @returns The timer ID, to pass to {@link TimeoutManager#clearTimeout}.
 	* @example
 	* ```ts
 	* import { timeoutManager } from '@tanstack/query-core'
@@ -74,7 +76,7 @@ var TimeoutManager = class {
 	* `clearTimeout` cancels a timeout callback scheduled with `setTimeout`,
 	* like the global `clearTimeout` function. It should be called with a
 	* timer ID returned by `setTimeout`.
-	*
+	* @param timeoutId - The timer ID returned by `setTimeout`, or `undefined`.
 	* @example
 	* ```ts
 	* import { timeoutManager } from '@tanstack/query-core'
@@ -96,7 +98,9 @@ var TimeoutManager = class {
 	*
 	* Like `setTimeout`, it returns a timer ID, which may be a number or an
 	* object that can be coerced to a number via `Symbol.toPrimitive`.
-	*
+	* @param callback - The function to call on every interval.
+	* @param delay - The time between calls, in milliseconds.
+	* @returns The timer ID, to pass to {@link TimeoutManager#clearInterval}.
 	* @example
 	* ```ts
 	* import { timeoutManager } from '@tanstack/query-core'
@@ -114,7 +118,7 @@ var TimeoutManager = class {
 	* `clearInterval` can be used to cancel an interval, like the global
 	* `clearInterval` function. It should be called with an interval ID
 	* returned by `setInterval`.
-	*
+	* @param intervalId - The timer ID returned by `setInterval`, or `undefined`.
 	* @example
 	* ```ts
 	* import { timeoutManager } from '@tanstack/query-core'
@@ -141,33 +145,62 @@ var timeoutManager = new TimeoutManager();
 *
 * This function is provided to make auditing the `tanstack/query-core` for
 * incorrect use of system `setTimeout` easier.
+* @param callback - The function to call on the next event loop tick.
 */
 function systemSetTimeoutZero(callback) {
 	setTimeout(callback, 0);
 }
 //#endregion
 //#region node_modules/@tanstack/query-core/build/modern/utils.js
-/** @deprecated
-* use `environmentManager.isServer()` instead.
+/**
+* @deprecated use `environmentManager.isServer()` instead.
 */
 var isServer$1 = typeof window === "undefined" || "Deno" in globalThis;
 function noop() {}
+/**
+* Resolves an {@link Updater}: calls it with `input` if it is a function, otherwise returns it as
+* is.
+* @param updater - The new value, or a function that receives `input` and returns the new value.
+* @param input - The current value, passed to `updater` if it is a function.
+* @returns The new value.
+*/
 function functionalUpdate(updater, input) {
 	return typeof updater === "function" ? updater(input) : updater;
 }
+/**
+* Checks whether a value can be used as a timeout: a non-negative, finite number.
+* @param value - The value to check.
+* @returns `true` if `value` is a number that is `>= 0` and not `Infinity`.
+*/
 function isValidTimeout(value) {
 	return typeof value === "number" && value >= 0 && value !== Infinity;
 }
+/**
+* Calculates how long until data updated at `updatedAt` becomes stale.
+* @param updatedAt - The timestamp, in milliseconds, at which the data was last updated.
+* @param staleTime - The time, in milliseconds, after which data is considered stale. Defaults to
+* `0`.
+* @returns The remaining time in milliseconds, or `0` if the data is already stale.
+*/
 function timeUntilStale(updatedAt, staleTime) {
 	return Math.max(updatedAt + (staleTime || 0) - Date.now(), 0);
 }
+/**
+* Resolves an option that can be given either as a value or as a function of the query, such as
+* `staleTime`.
+* @param value - The option value, or a function that receives `query` and returns the value.
+* @param query - The query passed to `value` if it is a function.
+* @returns The resolved value, or `undefined` if `value` is `undefined`.
+*/
 function resolveQueryValue(value, query) {
 	return typeof value === "function" ? value(query) : value;
 }
 /**
 * Checks whether a query matches the given {@link QueryFilters}.
 * Every filter that is specified must match; filters that are left unspecified are ignored.
-*
+* @param filters - The filters to check the query against.
+* @param query - The query to check.
+* @returns `true` if the query matches every specified filter.
 * @example
 * ```ts
 * const queryCache = queryClient.getQueryCache()
@@ -198,7 +231,9 @@ function matchQuery(filters, query) {
 * Checks whether a mutation matches the given {@link MutationFilters}.
 * Every filter that is specified must match; filters that are left unspecified are ignored.
 * If a `mutationKey` filter is provided but the mutation has no `mutationKey` of its own, it does not match.
-*
+* @param filters - The filters to check the mutation against.
+* @param mutation - The mutation to check.
+* @returns `true` if the mutation matches every specified filter.
 * @example
 * ```ts
 * const mutationCache = queryClient.getMutationCache()
@@ -220,13 +255,20 @@ function matchMutation(filters, mutation) {
 	if (predicate && !predicate(mutation)) return false;
 	return true;
 }
+/**
+* Hashes a query key with the query's `queryKeyHashFn` option, falling back to {@link hashKey}.
+* @param queryKey - The query key to hash.
+* @param options - The query options that may provide a custom `queryKeyHashFn`.
+* @returns The query hash, a string that identifies the query in the cache.
+*/
 function hashQueryKeyByOptions(queryKey, options) {
 	return (options?.queryKeyHashFn || hashKey)(queryKey);
 }
 /**
 * Default query & mutation keys hash function.
 * Hashes the value into a stable hash.
-*
+* @param queryKey - The query or mutation key to hash.
+* @returns The stable hash of the key, as a JSON string.
 * @example
 * ```ts
 * // Object keys are sorted, so key order doesn't affect the hash:
@@ -284,9 +326,20 @@ function replaceEqualDeep(a, b, depth = 0) {
 	}
 	return aSize === bSize && equalItems === aSize ? a : copy;
 }
+/**
+* Checks whether a value is an array with no holes and no extra properties.
+* @param value - The value to check.
+* @returns `true` if `value` is an array whose number of own keys equals its `length`.
+*/
 function isPlainArray(value) {
 	return Array.isArray(value) && value.length === Object.keys(value).length;
 }
+/**
+* Checks whether a value is a plain object, e.g. created with an object literal or
+* `Object.create(null)`.
+* @param o - The value to check.
+* @returns `true` if `o` is a plain object.
+*/
 function isPlainObject(o) {
 	if (!hasObjectPrototype(o)) return false;
 	const objectPrototype = Object.getPrototypeOf(o);
@@ -299,23 +352,61 @@ function isPlainObject(o) {
 	if (objectPrototype !== Object.prototype) return false;
 	return true;
 }
+/**
+* Checks whether a value's `Object.prototype.toString` tag is `[object Object]`.
+* @param o - The value to check.
+* @returns `true` if the tag is `[object Object]`.
+*/
 function hasObjectPrototype(o) {
 	return Object.prototype.toString.call(o) === "[object Object]";
 }
+/**
+* Waits for the given time, using the configured {@link timeoutManager}.
+* @param timeout - The time to wait, in milliseconds.
+* @returns A promise that resolves after `timeout` milliseconds.
+*/
 function sleep(timeout) {
 	return new Promise((resolve) => {
 		timeoutManager.setTimeout(resolve, timeout);
 	});
 }
+/**
+* Applies a query's `structuralSharing` option when writing new data.
+* @param prevData - The previously cached data.
+* @param data - The new data.
+* @param options - The query options, whose `structuralSharing` decides how the data is merged.
+* @returns The result of a custom `structuralSharing` function, `data` with its unchanged parts
+* replaced by those of `prevData` by default, or `data` as is if `structuralSharing` is `false`.
+* @throws {Error} The error from the default structural sharing, e.g. when the data is not JSON serializable.
+* Outside production, it is also logged to the console.
+*/
 function replaceData(prevData, data, options) {
 	if (typeof options.structuralSharing === "function") return options.structuralSharing(prevData, data);
 	else if (options.structuralSharing !== false) return replaceEqualDeep(prevData, data);
 	return data;
 }
+/**
+* Returns a new array with `item` added at the end. If that makes the array longer than `max`,
+* the first item is dropped. Only one item is dropped, so the result can still exceed `max` if
+* `items` already did.
+* @param items - The current items.
+* @param item - The value to append.
+* @param max - The length above which an item is dropped. `0` (the default) means no limit.
+* @returns A new array with `item` added.
+*/
 function addToEnd(items, item, max = 0) {
 	const newItems = [...items, item];
 	return max && newItems.length > max ? newItems.slice(1) : newItems;
 }
+/**
+* Returns a new array with `item` added at the start. If that makes the array longer than `max`,
+* the last item is dropped. Only one item is dropped, so the result can still exceed `max` if
+* `items` already did.
+* @param items - The current items.
+* @param item - The value to prepend.
+* @param max - The length above which an item is dropped. `0` (the default) means no limit.
+* @returns A new array with `item` added.
+*/
 function addToStart(items, item, max = 0) {
 	const newItems = [item, ...items];
 	return max && newItems.length > max ? newItems.slice(0, -1) : newItems;
@@ -324,7 +415,6 @@ function addToStart(items, item, max = 0) {
 * Sentinel value that can be passed as a query's `queryFn` to conditionally disable the query (equivalent
 * to `enabled: false`) while preserving full type inference for the query's data. Unlike `enabled: false`,
 * a query disabled via `skipToken` cannot be triggered with `refetch`.
-*
 * @example
 * ```ts
 * new QueryObserver(queryClient, {
@@ -334,11 +424,28 @@ function addToStart(items, item, max = 0) {
 * ```
 */
 var skipToken = Symbol();
+/**
+* Returns the function to call for a fetch. If there is no `queryFn` but the fetch was started from
+* an `initialPromise`, that promise is returned instead. If there is no usable `queryFn` (missing or
+* {@link skipToken}), the returned function rejects with a `Missing queryFn` error.
+* @param options - The query options with the `queryFn`, and the `queryHash` used in error messages.
+* @param fetchOptions - The fetch options, which may carry an `initialPromise`.
+* @returns The function to call for the fetch.
+*/
 function ensureQueryFn(options, fetchOptions) {
 	if (!options.queryFn && fetchOptions?.initialPromise) return () => fetchOptions.initialPromise;
 	if (!options.queryFn || options.queryFn === skipToken) return () => Promise.reject(/* @__PURE__ */ new Error(`Missing queryFn: '${options.queryHash}'`));
 	return options.queryFn;
 }
+/**
+* Adds a lazy `signal` getter to an object, such as a query function context. The first time
+* `signal` is read, `onCancelled` is registered for the signal's `abort` event (or called right
+* away if it is already aborted), so cancellation is only tracked when the signal is actually used.
+* @param object - The object to add the `signal` property to.
+* @param getSignal - Returns the `AbortSignal`. Called once, when `signal` is first read.
+* @param onCancelled - Called when the signal is aborted, if `signal` was read.
+* @returns The same object, with the `signal` property added.
+*/
 function addConsumeAwareSignal(object, getSignal, onCancelled) {
 	let consumed = false;
 	let signal;
@@ -360,15 +467,36 @@ function addConsumeAwareSignal(object, getSignal, onCancelled) {
 var isServerFn = () => isServer$1;
 /**
 * Returns whether the current runtime should be treated as a server environment.
+* @returns `true` if the runtime is treated as a server.
 */
 var isServer = () => isServerFn();
 //#endregion
 //#region node_modules/@tanstack/query-core/build/modern/subscribable.js
+/**
+* The base class behind everything in Query that you can subscribe to: `QueryCache`, `MutationCache`,
+* the observers, and the `FocusManager`/`OnlineManager` behind `focusManager` and `onlineManager`.
+* Subclasses decide what a listener receives and when it is called.
+*/
 var Subscribable = class {
 	constructor() {
 		this.listeners = /* @__PURE__ */ new Set();
 		this.subscribe = this.subscribe.bind(this);
 	}
+	/**
+	* Registers a listener to be called on every update this object notifies about. Returns a function
+	* that removes the listener again — call it to stop listening. The base class never drops a listener
+	* on its own, though some subclasses clear all of theirs in `destroy()`.
+	* @param listener - Called on each update, with whatever the subclass passes to its subscribers.
+	* @returns A function that removes the listener.
+	* @example
+	* ```ts
+	* const unsubscribe = subscribable.subscribe(() => {
+	*   // react to the update
+	* })
+	*
+	* unsubscribe()
+	* ```
+	*/
 	subscribe(listener) {
 		this.listeners.add(listener);
 		this.onSubscribe();
@@ -377,10 +505,22 @@ var Subscribable = class {
 			this.onUnsubscribe();
 		};
 	}
+	/**
+	* Returns `true` while at least one listener is registered, `false` once they have all unsubscribed.
+	* @returns `true` if at least one listener is registered.
+	*/
 	hasListeners() {
 		return this.listeners.size > 0;
 	}
+	/**
+	* Called after a listener is added. Does nothing here; subclasses override it, e.g. to start
+	* tracking what they observe once the first listener subscribes.
+	*/
 	onSubscribe() {}
+	/**
+	* Called after a listener is removed. Does nothing here; subclasses override it, e.g. to clean up
+	* once the last listener unsubscribes.
+	*/
 	onUnsubscribe() {}
 };
 //#endregion
@@ -421,7 +561,8 @@ var FocusManager = class extends Subscribable {
 	* receives a `setFocused` callback: call it with a `boolean` to manually
 	* set the focus state, or with no arguments to re-evaluate the current
 	* focus state and notify subscribers.
-	*
+	* @param setup - Receives the `setFocused` callback, registers the event listener, and may return
+	* a cleanup function that is called when the listener is replaced or no longer needed.
 	* @example
 	* ```ts
 	* import { focusManager } from '@tanstack/query-core'
@@ -451,7 +592,7 @@ var FocusManager = class extends Subscribable {
 	/**
 	* `setFocused` can be used to manually set the focus state. Set `undefined`
 	* to fall back to the default focus check.
-	*
+	* @param focused - The focus state, or `undefined` to use the default focus check.
 	* @example
 	* ```ts
 	* import { focusManager } from '@tanstack/query-core'
@@ -483,6 +624,7 @@ var FocusManager = class extends Subscribable {
 	}
 	/**
 	* `isFocused` can be used to get the current focus state.
+	* @returns The focus state set with `setFocused`, or otherwise whether the document is visible.
 	*/
 	isFocused() {
 		if (typeof this.#focused === "boolean") return this.#focused;
@@ -500,6 +642,11 @@ var focusManager = new FocusManager();
 * Schedules the callback with the system's `setTimeout(callback, 0)`.
 */
 var defaultScheduler = systemSetTimeoutZero;
+/**
+* Creates a notify manager, which schedules and batches notifications to subscribers. Query uses a
+* single instance of it, exported as {@link notifyManager}.
+* @returns A new notify manager.
+*/
 function createNotifyManager() {
 	let queue = [];
 	let transactions = 0;
@@ -533,6 +680,8 @@ function createNotifyManager() {
 		* This is mainly used internally to optimize query client updating.
 		* Batches can be nested; the queue is only flushed once the outermost `batch` call finishes.
 		* The return value of `callback` is passed through.
+		* @param callback - The function to run in the batch.
+		* @returns The return value of `callback`.
 		*/
 		batch: (callback) => {
 			let result;
@@ -547,6 +696,8 @@ function createNotifyManager() {
 		},
 		/**
 		* All calls to the wrapped function will be batched.
+		* @param callback - The function to wrap.
+		* @returns A function that schedules a call to `callback` with the given arguments.
 		*/
 		batchCalls: (callback) => {
 			return (...args) => {
@@ -563,6 +714,7 @@ function createNotifyManager() {
 		/**
 		* Use this method to set a custom notify function.
 		* This can be used to for example wrap notifications with `React.act` while running tests.
+		* @param fn - Receives each notification callback and must call it.
 		*/
 		setNotifyFunction: (fn) => {
 			notifyFn = fn;
@@ -571,7 +723,7 @@ function createNotifyManager() {
 		* Use this method to set a custom function to batch notifications together into a single tick.
 		* Framework adapters use this to plug in their own batching primitive, so that a single query
 		* update only triggers one re-render instead of one per subscriber.
-		*
+		* @param fn - Receives a function that runs a batch of notifications and must call it.
 		* @example
 		* ```ts
 		* import { notifyManager } from '@tanstack/query-core'
@@ -586,7 +738,7 @@ function createNotifyManager() {
 		/**
 		* Configures a custom callback that schedules when the next batch runs.
 		* The default behavior is `setTimeout(callback, 0)`.
-		*
+		* @param fn - Receives a callback that runs the next batch, and schedules it.
 		* @example
 		* ```ts
 		* import { notifyManager } from '@tanstack/query-core'
@@ -654,7 +806,8 @@ var OnlineManager = class extends Subscribable {
 	* be used to determine the online state. The provided `setup` function
 	* receives a `setOnline` callback that should be called with a `boolean`
 	* whenever the online state changes.
-	*
+	* @param setup - Receives the `setOnline` callback, registers the event listener, and may return
+	* a cleanup function that is called when the listener is replaced or no longer needed.
 	* @example
 	* ```ts
 	* import NetInfo from '@react-native-community/netinfo'
@@ -674,7 +827,7 @@ var OnlineManager = class extends Subscribable {
 	}
 	/**
 	* `setOnline` can be used to manually set the online state.
-	*
+	* @param online - The online state.
 	* @example
 	* ```ts
 	* import { onlineManager } from '@tanstack/query-core'
@@ -696,6 +849,7 @@ var OnlineManager = class extends Subscribable {
 	}
 	/**
 	* `isOnline` can be used to get the current online state.
+	* @returns `true` if online.
 	*/
 	isOnline() {
 		return this.#online;
@@ -707,9 +861,19 @@ var OnlineManager = class extends Subscribable {
 var onlineManager = new OnlineManager();
 //#endregion
 //#region node_modules/@tanstack/query-core/build/modern/retryer.js
+/**
+* The default `retryDelay`: doubles with every failure, starting at 1 second, up to 30 seconds.
+* @param failureCount - The number of failures so far.
+* @returns The delay before the next retry, in milliseconds.
+*/
 function defaultRetryDelay(failureCount) {
 	return Math.min(1e3 * 2 ** failureCount, 3e4);
 }
+/**
+* Checks whether a fetch can run for the given network mode.
+* @param networkMode - The `networkMode` option. Defaults to `'online'`.
+* @returns `true` if the network mode is not `'online'`, or if it is and the client is online.
+*/
 function canFetch(networkMode) {
 	return (networkMode ?? "online") === "online" ? onlineManager.isOnline() : true;
 }
@@ -738,6 +902,15 @@ var CancelledError = class extends Error {
 		this.silent = options?.silent;
 	}
 };
+/**
+* Creates a retryer, which runs a function and retries it on failure according to the `retry` and
+* `retryDelay` options. It pauses while the network mode doesn't allow fetching or `canRun` returns
+* `false`, and can be cancelled. Queries and mutations use it to run their `queryFn` and
+* `mutationFn`.
+* @param config - The function to run, the retry options, and the callbacks for failures, pausing,
+* continuing, and cancellation.
+* @returns The retryer, whose `promise` settles with the result of the function.
+*/
 function createRetryer(config) {
 	let isRetryCancelled = false;
 	let failureCount = 0;
@@ -780,10 +953,10 @@ function createRetryer(config) {
 			promiseReject(value);
 		}
 	};
-	const pause = () => {
+	const pause = (canResume) => {
 		return new Promise((continueResolve) => {
 			continueFn = (value) => {
-				if (isResolved() || canContinue()) continueResolve(value);
+				if (isResolved() || canResume()) continueResolve(value);
 			};
 			config.onPause?.();
 		}).then(() => {
@@ -813,7 +986,7 @@ function createRetryer(config) {
 			failureCount++;
 			config.onFail?.(failureCount, error);
 			sleep(delay).then(() => {
-				return canContinue() ? void 0 : pause();
+				return canContinue() ? void 0 : pause(canContinue);
 			}).then(() => {
 				if (isRetryCancelled) reject(error);
 				else run();
@@ -833,27 +1006,48 @@ function createRetryer(config) {
 		canStart,
 		start: () => {
 			if (canStart()) run();
-			else pause().then(run);
+			else pause(canStart).then(run);
 			return promise;
 		}
 	};
 }
 //#endregion
 //#region node_modules/@tanstack/query-core/build/modern/removable.js
+/**
+* The base class for cache entries that are garbage collected once nothing is using them —
+* `Query` and `Mutation` both extend it. `gcTime` controls how long an unused entry is kept.
+*/
 var Removable = class {
 	#gcTimeout;
+	/**
+	* Clears the pending garbage collection timeout, so the entry is no longer scheduled for removal.
+	* A subclass may override this to release what it holds on to as well — `Query` also cancels any
+	* in-flight fetch.
+	*/
 	destroy() {
 		this.clearGcTimeout();
 	}
+	/**
+	* Schedules the entry to be removed from its cache after `gcTime`, replacing any timeout scheduled
+	* before. Nothing is scheduled if `gcTime` is `Infinity`.
+	*/
 	scheduleGc() {
 		this.clearGcTimeout();
 		if (isValidTimeout(this.gcTime)) this.#gcTimeout = timeoutManager.setTimeout(() => {
 			this.optionalRemove();
 		}, this.gcTime);
 	}
+	/**
+	* Updates `gcTime`, keeping the longest one seen so far. Without a value, it defaults to 5 minutes
+	* on the client and `Infinity` on the server.
+	* @param newGcTime - The `gcTime` from the latest options, if any.
+	*/
 	updateGcTime(newGcTime) {
 		this.gcTime = Math.max(this.gcTime || 0, newGcTime ?? (isServer() ? Infinity : 3e5));
 	}
+	/**
+	* Cancels the scheduled removal, if there is one.
+	*/
 	clearGcTimeout() {
 		if (this.#gcTimeout !== void 0) {
 			timeoutManager.clearTimeout(this.#gcTimeout);
@@ -863,6 +1057,14 @@ var Removable = class {
 };
 //#endregion
 //#region node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js
+/**
+* Creates the behavior that fetches the pages of an infinite query: the next or previous page for
+* `fetchNextPage`/`fetchPreviousPage`, or all pages again from the start on a refetch.
+* @param pages - The number of pages to fetch from the start when all pages are fetched again,
+* e.g. from the `pages` option of `queryClient.infiniteQuery`. Defaults to the number of cached
+* pages.
+* @returns The query behavior to set on an infinite query.
+*/
 function infiniteQueryBehavior(pages) {
 	return { onFetch: (context, query) => {
 		const options = context.options;
@@ -914,7 +1116,7 @@ function infiniteQueryBehavior(pages) {
 			} else {
 				const remainingPages = pages ?? oldPages.length;
 				do {
-					const param = currentPage === 0 ? oldPageParams[0] ?? options.initialPageParam : getNextPageParam(options, result);
+					const param = currentPage === 0 ? oldPageParams[0] === void 0 ? options.initialPageParam : oldPageParams[0] : getNextPageParam(options, result);
 					if (currentPage > 0 && param == null) break;
 					result = await fetchPage(result, param);
 					currentPage++;
@@ -933,10 +1135,24 @@ function infiniteQueryBehavior(pages) {
 		else context.fetchFn = fetchFn;
 	} };
 }
+/**
+* Computes the page param of the page after the last one, with the `getNextPageParam` option.
+* @param options - The infinite query options.
+* @param data - The current pages and page params.
+* @returns The next page param, or `undefined` if there are no pages yet.
+*/
 function getNextPageParam(options, { pages, pageParams }) {
 	const lastIndex = pages.length - 1;
 	return pages.length > 0 ? options.getNextPageParam(pages[lastIndex], pages, pageParams[lastIndex], pageParams) : void 0;
 }
+/**
+* Computes the page param of the page before the first one, with the `getPreviousPageParam`
+* option.
+* @param options - The infinite query options.
+* @param data - The current pages and page params.
+* @returns The previous page param, or `undefined` if there are no pages yet or no
+* `getPreviousPageParam` option.
+*/
 function getPreviousPageParam(options, { pages, pageParams }) {
 	return pages.length > 0 ? options.getPreviousPageParam?.(pages[0], pages, pageParams[0], pageParams) : void 0;
 }
@@ -950,7 +1166,6 @@ function getPreviousPageParam(options, { pages, pageParams }) {
 * code typically interacts with queries indirectly through `QueryClient` or
 * a framework hook like `useQuery`. Direct access to a `Query` instance is
 * possible via `queryCache.find()`/`findAll()` for inspecting cache state.
-*
 * @example
 * ```ts
 * const queryCache = queryClient.getQueryCache()
@@ -986,22 +1201,33 @@ var Query = class extends Removable {
 	}
 	/**
 	* The `meta` object passed in the query's options, if any.
+	* @returns The query's `meta`, or `undefined` if none was set.
 	*/
 	get meta() {
 		return this.options.meta;
 	}
-	/** @internal */
+	/**
+	* `'infinite'` for an infinite query, otherwise `undefined`.
+	* @internal
+	* @returns The type of the query, set from the `_type` option (e.g. `'infinite'`).
+	*/
 	get queryType() {
 		return this.#queryType;
 	}
 	/**
 	* The promise for the currently in-flight fetch, if the query is fetching.
 	* `undefined` when the query is not fetching.
+	* @returns The promise of the in-flight fetch, or `undefined`.
 	*/
 	get promise() {
 		return this.#retryer?.promise;
 	}
-	/** @internal */
+	/**
+	* Replaces the query's options and applies their `gcTime`. If the query has no data yet, it gets
+	* the `initialData` from the new options, if any.
+	* @internal
+	* @param options - The new query options, merged on top of the query's default options.
+	*/
 	setOptions(options) {
 		this.options = {
 			...this.#defaultOptions,
@@ -1020,7 +1246,14 @@ var Query = class extends Removable {
 	optionalRemove() {
 		if (!this.observers.length && this.state.fetchStatus === "idle") this.#cache.remove(this);
 	}
-	/** @internal */
+	/**
+	* Writes new data to the query and marks it as successfully fetched.
+	* @internal
+	* @param newData - The data to write. Structural sharing with the current data is applied.
+	* @param options - Set `updatedAt` to override the timestamp, and `manual` to mark the write as
+	* manual (e.g. from `queryClient.setQueryData`).
+	* @returns The data that was written.
+	*/
 	setData(newData, options) {
 		const data = replaceData(this.state.data, newData, this.options);
 		this.#dispatch({
@@ -1035,6 +1268,7 @@ var Query = class extends Removable {
 	* Merges the given partial state directly into this query's state, notifying observers. Used
 	* by persistence and broadcast plugins to restore a state snapshot, and by devtools to let a
 	* user manually trigger a loading/error state or edit the cached data.
+	* @param state - The partial state to merge into the query's state.
 	*/
 	setState(state) {
 		this.#dispatch({
@@ -1046,7 +1280,9 @@ var Query = class extends Removable {
 	* Cancels the query's currently in-flight fetch, if any.
 	* - Returns a promise that resolves once the cancellation has settled.
 	* - If no fetch is in progress, resolves immediately.
-	*
+	* @param options - Set `revert` to restore the state from before the fetch started, and `silent`
+	* to suppress the cancellation error when a new fetch replaces the cancelled one.
+	* @returns A promise that resolves once the cancellation has settled.
 	* @example
 	* ```ts
 	* await query.cancel()
@@ -1061,14 +1297,17 @@ var Query = class extends Removable {
 	* Clears the query's garbage collection timeout and silently cancels any
 	* in-flight fetch. Called by `QueryCache` when the query is removed from
 	* the cache.
-	*
 	* @see {@link Query#cancel}
 	*/
 	destroy() {
 		super.destroy();
 		this.cancel({ silent: true });
 	}
-	/** @internal */
+	/**
+	* The state the query was created with.
+	* @internal
+	* @returns The state the query had when it was first created, used by {@link Query#reset}.
+	*/
 	get resetState() {
 		return this.#initialState;
 	}
@@ -1084,6 +1323,7 @@ var Query = class extends Removable {
 	/**
 	* Returns `true` if the query has at least one observer for which `enabled`
 	* does not resolve to `false`.
+	* @returns `true` if the query has an enabled observer.
 	*/
 	isActive() {
 		return this.observers.some((observer) => resolveQueryValue(observer.options.enabled, this) !== false);
@@ -1095,6 +1335,7 @@ var Query = class extends Removable {
 	*   (see `isActive`).
 	* - If the query has no observers, it is disabled when its `queryFn` is
 	*   `skipToken` or it has never been fetched.
+	* @returns `true` if the query is disabled.
 	*/
 	isDisabled() {
 		if (this.getObserversCount() > 0) return !this.isActive();
@@ -1103,6 +1344,7 @@ var Query = class extends Removable {
 	/**
 	* Returns `true` if the query has been fetched, i.e. it has resolved with
 	* either data or an error at least once.
+	* @returns `true` if the query has been fetched.
 	*/
 	isFetched() {
 		return this.state.dataUpdateCount + this.state.errorUpdateCount > 0;
@@ -1110,6 +1352,7 @@ var Query = class extends Removable {
 	/**
 	* Returns `true` if the query has at least one observer configured with
 	* `staleTime: 'static'`, meaning it is treated as never stale.
+	* @returns `true` if the query is static.
 	*/
 	isStatic() {
 		if (this.getObserversCount() > 0) return this.observers.some((observer) => resolveQueryValue(observer.options.staleTime, this) === "static");
@@ -1122,7 +1365,7 @@ var Query = class extends Removable {
 	*   `staleTime` and `enabled` state).
 	* - If the query has no observers, it is considered stale when it has no
 	*   data or has been invalidated.
-	*
+	* @returns `true` if the query is stale.
 	* @see {@link Query#isStaleByTime}
 	* @example
 	* ```ts
@@ -1142,7 +1385,9 @@ var Query = class extends Removable {
 	* - `staleTime: 'static'` is never stale.
 	* - An invalidated query is always stale.
 	* - Otherwise, staleness is based on elapsed time since `dataUpdatedAt`.
-	*
+	* @param staleTime - The time, in milliseconds, after which data is considered stale, or
+	* `'static'` to never treat existing data as stale. A query without data is stale either way.
+	* @returns `true` if the query's data is stale.
 	* @see {@link Query#isStale}
 	* @example
 	* ```ts
@@ -1155,17 +1400,30 @@ var Query = class extends Removable {
 		if (this.state.isInvalidated) return true;
 		return !timeUntilStale(this.state.dataUpdatedAt, staleTime);
 	}
-	/** @internal */
+	/**
+	* Refetches the query when the window regains focus, if an observer wants that, and continues a
+	* paused fetch.
+	* @internal
+	*/
 	onFocus() {
 		this.observers.find((x) => x.shouldFetchOnWindowFocus())?.refetch({ cancelRefetch: false });
 		this.#retryer?.continue();
 	}
-	/** @internal */
+	/**
+	* Refetches the query when the app reconnects, if an observer wants that, and continues a paused
+	* fetch.
+	* @internal
+	*/
 	onOnline() {
 		this.observers.find((x) => x.shouldFetchOnReconnect())?.refetch({ cancelRefetch: false });
 		this.#retryer?.continue();
 	}
-	/** @internal */
+	/**
+	* Subscribes an observer to the query and stops its garbage collection.
+	* @internal
+	* @param observer - The observer to add. Adding an observer that is already subscribed does
+	* nothing.
+	*/
 	addObserver(observer) {
 		if (!this.observers.includes(observer)) {
 			this.observers.push(observer);
@@ -1177,7 +1435,13 @@ var Query = class extends Removable {
 			});
 		}
 	}
-	/** @internal */
+	/**
+	* Unsubscribes an observer from the query.
+	* @internal
+	* @param observer - The observer to remove. When the last observer is removed, the in-flight
+	* fetch is cancelled if its abort signal was consumed (otherwise only its retries are stopped),
+	* and garbage collection is scheduled.
+	*/
 	removeObserver(observer) {
 		const index = this.observers.indexOf(observer);
 		if (index !== -1) {
@@ -1196,7 +1460,7 @@ var Query = class extends Removable {
 	}
 	/**
 	* Returns the number of observers currently subscribed to this query.
-	*
+	* @returns The number of observers.
 	* @example
 	* ```ts
 	* if (query.getObserversCount() === 0) {
@@ -1211,7 +1475,6 @@ var Query = class extends Removable {
 	* Marks the query as invalidated, unless it is already invalidated. This
 	* updates `state.isInvalidated` and notifies observers, but does not by
 	* itself trigger a refetch.
-	*
 	* @example
 	* ```ts
 	* query.invalidate()
@@ -1229,6 +1492,13 @@ var Query = class extends Removable {
 	*   cancelled first.
 	* - If `options` is passed, it replaces the query's current options
 	*   before fetching.
+	* @param options - Query options that replace the query's current options before fetching. They
+	* are not applied when an in-flight fetch is reused.
+	* @param fetchOptions - Set `cancelRefetch` to cancel an in-flight fetch first (only if the query
+	* already has data), and `meta` to pass extra information to the query's behavior.
+	* @returns A promise that resolves with the fetched data, or rejects with the fetch error. If the
+	* fetch is cancelled with `revert` while the query has data, it resolves with the restored data
+	* instead.
 	*/
 	async fetch(options, fetchOptions) {
 		if (this.state.fetchStatus !== "idle" && this.#retryer?.status() !== "rejected") {
@@ -1413,6 +1683,14 @@ var Query = class extends Removable {
 		});
 	}
 };
+/**
+* Returns the state changes applied when a query starts fetching.
+* @param data - The query's current data. If it is `undefined`, the query is also reset to
+* `'pending'` with no error.
+* @param options - The query options, whose `networkMode` decides whether the query is `'fetching'`
+* or `'paused'`.
+* @returns The partial query state for a starting fetch.
+*/
 function fetchState(data, options) {
 	return {
 		fetchFailureCount: 0,
@@ -1424,6 +1702,12 @@ function fetchState(data, options) {
 		}
 	};
 }
+/**
+* Returns the state changes applied when a query receives data.
+* @param data - The new data.
+* @param dataUpdatedAt - The timestamp the data is recorded with. Defaults to the current time.
+* @returns The partial query state for a successful update.
+*/
 function successState(data, dataUpdatedAt) {
 	return {
 		data,
@@ -1433,6 +1717,12 @@ function successState(data, dataUpdatedAt) {
 		status: "success"
 	};
 }
+/**
+* Returns the initial state of a query, based on its `initialData` and `initialDataUpdatedAt`
+* options.
+* @param options - The query options.
+* @returns The initial query state: `'success'` if `initialData` is set, otherwise `'pending'`.
+*/
 function getDefaultState$1(options) {
 	const data = typeof options.initialData === "function" ? options.initialData() : options.initialData;
 	const hasData = data !== void 0;
@@ -1463,7 +1753,6 @@ function getDefaultState$1(options) {
 * code typically interacts with mutations indirectly through `QueryClient` or
 * a framework hook like `useMutation`. Direct access to a `Mutation` instance
 * is possible via `mutationCache.find()`/`getAll()` for inspecting cache state.
-*
 * @example
 * ```ts
 * const mutationCache = queryClient.getMutationCache()
@@ -1486,18 +1775,28 @@ var Mutation = class extends Removable {
 		this.setOptions(config.options);
 		this.scheduleGc();
 	}
-	/** @internal */
+	/**
+	* Replaces the mutation's options and applies their `gcTime`.
+	* @internal
+	* @param options - The new mutation options.
+	*/
 	setOptions(options) {
 		this.options = options;
 		this.updateGcTime(this.options.gcTime);
 	}
 	/**
 	* The `meta` object passed in the mutation's options, if any.
+	* @returns The mutation's `meta`, or `undefined` if none was set.
 	*/
 	get meta() {
 		return this.options.meta;
 	}
-	/** @internal */
+	/**
+	* Subscribes an observer to the mutation and stops its garbage collection.
+	* @internal
+	* @param observer - The observer to add. Adding an observer that is already subscribed does
+	* nothing.
+	*/
 	addObserver(observer) {
 		if (!this.#observers.includes(observer)) {
 			this.#observers.push(observer);
@@ -1509,7 +1808,11 @@ var Mutation = class extends Removable {
 			});
 		}
 	}
-	/** @internal */
+	/**
+	* Unsubscribes an observer from the mutation.
+	* @internal
+	* @param observer - The observer to remove. Garbage collection is scheduled afterwards.
+	*/
 	removeObserver(observer) {
 		this.#observers = this.#observers.filter((x) => x !== observer);
 		this.scheduleGc();
@@ -1534,15 +1837,15 @@ var Mutation = class extends Removable {
 	*   this instance), `execute` is called again with the last known variables.
 	* - Otherwise the mutation has already settled and this resolves immediately
 	*   without running anything again.
-	*
+	* @returns A promise that settles with the resumed mutation: it rejects if the mutation fails.
+	* It resolves immediately if the mutation has already settled.
+	* @see {@link Mutation#execute}
 	* @example
 	* ```ts
 	* // typically driven by reconnect handling, e.g. queryClient.resumePausedMutations()
 	* const mutation = mutationCache.find({ mutationKey: ['addPost'] })
 	* await mutation?.continue()
 	* ```
-	*
-	* @see {@link Mutation#execute}
 	*/
 	continue() {
 		return this.#retryer?.continue() ?? (this.state.status === "pending" ? this.execute(this.state.variables) : Promise.resolve());
@@ -1567,15 +1870,15 @@ var Mutation = class extends Removable {
 	* those four callbacks is individually caught so that a throwing callback
 	* cannot mask the original error; an `error` action is then dispatched and
 	* the original error is re-thrown.
-	*
+	* @param variables - The variables passed to the `mutationFn`.
+	* @returns A promise that resolves with the mutation's data, or rejects with its error.
+	* @see {@link Mutation#continue}
 	* @example
 	* ```ts
 	* // Called internally by `MutationObserver.mutate` and `Mutation.continue` —
 	* // applications normally trigger mutations through those, not this method.
 	* const data = await mutation.execute(variables)
 	* ```
-	*
-	* @see {@link Mutation#continue}
 	*/
 	async execute(variables) {
 		const onContinue = () => {
@@ -1728,6 +2031,10 @@ var Mutation = class extends Removable {
 		});
 	}
 };
+/**
+* Returns the initial state of a mutation: `'idle'`, with no data, error, or variables.
+* @returns The initial mutation state.
+*/
 function getDefaultState() {
 	return {
 		context: void 0,
@@ -1749,7 +2056,6 @@ function getDefaultState() {
 * Normally, you will not interact with the `MutationCache` directly and instead use a
 * `QueryClient`. You can subscribe to it (inherited from `Subscribable`) to be informed of
 * safe/known updates to the cache, such as mutations being added, removed, or updated.
-*
 * @example
 * ```ts
 * const unsubscribe = mutationCache.subscribe((event) => {
@@ -1768,7 +2074,15 @@ var MutationCache = class extends Subscribable {
 		this.#scopes = /* @__PURE__ */ new Map();
 		this.#mutationId = 0;
 	}
-	/** @internal */
+	/**
+	* Creates a mutation and adds it to the cache.
+	* @internal
+	* @param client - The client the mutation belongs to, used to default its options.
+	* @param options - The mutation options. They are defaulted with {@link
+	* QueryClient#defaultMutationOptions}.
+	* @param state - The initial state of the mutation, e.g. when restoring a dehydrated mutation.
+	* @returns The new mutation, already added to the cache.
+	*/
 	build(client, options, state) {
 		const mutation = new Mutation({
 			client,
@@ -1780,7 +2094,11 @@ var MutationCache = class extends Subscribable {
 		this.add(mutation);
 		return mutation;
 	}
-	/** @internal */
+	/**
+	* Adds a mutation to the cache.
+	* @internal
+	* @param mutation - The mutation to add. If it has a `scope`, it is queued in that scope.
+	*/
 	add(mutation) {
 		this.#mutations.add(mutation);
 		const scope = scopeFor(mutation);
@@ -1794,7 +2112,11 @@ var MutationCache = class extends Subscribable {
 			mutation
 		});
 	}
-	/** @internal */
+	/**
+	* Removes a mutation from the cache.
+	* @internal
+	* @param mutation - The mutation to remove, also from its scope's queue.
+	*/
 	remove(mutation) {
 		if (this.#mutations.delete(mutation)) {
 			const scope = scopeFor(mutation);
@@ -1813,7 +2135,13 @@ var MutationCache = class extends Subscribable {
 			mutation
 		});
 	}
-	/** @internal */
+	/**
+	* Checks whether a mutation can run now, given the other mutations in its `scope`.
+	* @internal
+	* @param mutation - The mutation to check.
+	* @returns `true` if the mutation has no `scope`, or no other mutation in its scope is pending
+	* ahead of it.
+	*/
 	canRun(mutation) {
 		const scope = scopeFor(mutation);
 		if (typeof scope === "string") {
@@ -1821,7 +2149,13 @@ var MutationCache = class extends Subscribable {
 			return !firstPendingMutation || firstPendingMutation === mutation;
 		} else return true;
 	}
-	/** @internal */
+	/**
+	* Continues the next paused mutation in the same `scope` after a mutation finishes.
+	* @internal
+	* @param mutation - The mutation that finished.
+	* @returns A promise that resolves once the next paused mutation in the same scope has continued,
+	* or immediately if there is none.
+	*/
 	runNext(mutation) {
 		const scope = scopeFor(mutation);
 		if (typeof scope === "string") return (this.#scopes.get(scope)?.find((m) => m !== mutation && m.state.isPaused))?.continue() ?? Promise.resolve();
@@ -1829,7 +2163,6 @@ var MutationCache = class extends Subscribable {
 	}
 	/**
 	* Removes all mutations from the cache.
-	*
 	* @example
 	* ```ts
 	* const mutationCache = queryClient.getMutationCache()
@@ -1839,14 +2172,15 @@ var MutationCache = class extends Subscribable {
 	*/
 	clear() {
 		notifyManager.batch(() => {
-			this.#mutations.forEach((mutation) => {
+			const mutations = this.getAll();
+			this.#mutations.clear();
+			this.#scopes.clear();
+			mutations.forEach((mutation) => {
 				this.notify({
 					type: "removed",
 					mutation
 				});
 			});
-			this.#mutations.clear();
-			this.#scopes.clear();
 		});
 	}
 	/**
@@ -1854,7 +2188,7 @@ var MutationCache = class extends Subscribable {
 	*
 	* This is not typically needed for most applications, but can come in handy when needing more
 	* information about a mutation in rare scenarios.
-	*
+	* @returns Every mutation in the cache.
 	* @example
 	* ```ts
 	* const mutationCache = queryClient.getMutationCache()
@@ -1871,7 +2205,8 @@ var MutationCache = class extends Subscribable {
 	*
 	* This is not typically needed for most applications, but can come in handy when needing more
 	* information about a mutation in rare scenarios.
-	*
+	* @param filters - The filters to match. `exact` defaults to `true`.
+	* @returns The first matching mutation, or `undefined`.
 	* @see {@link MutationCache#findAll}
 	* @example
 	* ```ts
@@ -1893,7 +2228,8 @@ var MutationCache = class extends Subscribable {
 	*
 	* This is not typically needed for most applications, but can come in handy when needing more
 	* information about mutations in rare scenarios.
-	*
+	* @param filters - The filters to match. Without filters, every mutation is returned.
+	* @returns The matching mutations.
 	* @see {@link MutationCache#find}
 	* @example
 	* ```ts
@@ -1905,7 +2241,11 @@ var MutationCache = class extends Subscribable {
 	findAll(filters = {}) {
 		return this.getAll().filter((mutation) => matchMutation(filters, mutation));
 	}
-	/** @internal */
+	/**
+	* Notifies every cache listener of an event, in one batch.
+	* @internal
+	* @param event - The event passed to every listener.
+	*/
 	notify(event) {
 		notifyManager.batch(() => {
 			this.listeners.forEach((listener) => {
@@ -1913,12 +2253,21 @@ var MutationCache = class extends Subscribable {
 			});
 		});
 	}
-	/** @internal */
+	/**
+	* Continues every paused mutation, e.g. when the app comes back online.
+	* @internal
+	* @returns A promise that resolves once every paused mutation has continued and settled.
+	*/
 	resumePausedMutations() {
 		const pausedMutations = this.getAll().filter((x) => x.state.isPaused);
 		return notifyManager.batch(() => Promise.all(pausedMutations.map((mutation) => mutation.continue().catch(noop))));
 	}
 };
+/**
+* Returns the scope id of a mutation, used to run mutations with the same scope one after another.
+* @param mutation - The mutation to read the scope of.
+* @returns The mutation's `scope.id`, or `undefined` if it has no scope.
+*/
 function scopeFor(mutation) {
 	return mutation.options.scope?.id;
 }
@@ -1933,7 +2282,6 @@ function scopeFor(mutation) {
 * safe/known updates to the cache, such as queries being added, removed, or updated — updates made
 * outside of the cache's own tracked mechanisms (e.g. mutating a query's state object directly) do
 * not notify subscribers.
-*
 * @example
 * ```ts
 * const unsubscribe = queryCache.subscribe((event) => {
@@ -1953,7 +2301,12 @@ var QueryCache = class extends Subscribable {
 	* builds and adds a new one to the cache if none exists yet. Used by framework adapters and
 	* plugins (e.g. broadcast/persistence) that need to get-or-create a `Query` directly, bypassing
 	* the reactive `QueryObserver` machinery.
-	*
+	* @param client - The client the query belongs to, used to default its options.
+	* @param options - The query options, including the `queryKey`. A new query is created with the
+	* options defaulted by {@link QueryClient#defaultQueryOptions}.
+	* @param state - The initial state of a newly created query, e.g. when hydrating. Ignored if the
+	* query already exists.
+	* @returns The existing or newly created query.
 	* @example
 	* ```ts
 	* const queryCache = queryClient.getQueryCache()
@@ -1981,7 +2334,12 @@ var QueryCache = class extends Subscribable {
 		}
 		return query;
 	}
-	/** @internal */
+	/**
+	* Adds a query to the cache.
+	* @internal
+	* @param query - The query to add. If a query with the same hash is already cached, nothing
+	* happens.
+	*/
 	add(query) {
 		if (!this.#queries.has(query.queryHash)) {
 			this.#queries.set(query.queryHash, query);
@@ -1996,7 +2354,7 @@ var QueryCache = class extends Subscribable {
 	* `'removed'` event. A no-op if the query is no longer the one currently stored under its hash
 	* (e.g. it was already replaced). Used by plugins (e.g. the broadcast client) that mirror
 	* removals across `QueryCache` instances.
-	*
+	* @param query - The query to remove.
 	* @example
 	* ```ts
 	* const queryCache = queryClient.getQueryCache()
@@ -2019,7 +2377,6 @@ var QueryCache = class extends Subscribable {
 	}
 	/**
 	* Removes all queries from the cache.
-	*
 	* @example
 	* ```ts
 	* const queryCache = queryClient.getQueryCache()
@@ -2039,7 +2396,8 @@ var QueryCache = class extends Subscribable {
 	* exists. Unlike {@link QueryCache#find}, this looks up by the already-computed hash rather
 	* than by `QueryFilters`. Used by plugins (e.g. broadcast/hydration) that already have a hash
 	* to look up directly.
-	*
+	* @param queryHash - The hash of the query to look up.
+	* @returns The query stored under the hash, or `undefined`.
 	* @example
 	* ```ts
 	* const queryCache = queryClient.getQueryCache()
@@ -2053,7 +2411,7 @@ var QueryCache = class extends Subscribable {
 	}
 	/**
 	* Returns all queries within the cache.
-	*
+	* @returns Every query in the cache.
 	* @example
 	* ```ts
 	* const queryCache = queryClient.getQueryCache()
@@ -2073,7 +2431,9 @@ var QueryCache = class extends Subscribable {
 	* This is not typically needed for most applications, but can come in handy when needing more
 	* information about a query in rare scenarios (e.g. looking at `query.state.dataUpdatedAt` to
 	* decide whether a query is fresh enough to be used as an initial value).
-	*
+	* @param filters - The filters to match, including the required `queryKey`. `exact` defaults to
+	* `true`.
+	* @returns The first matching query, or `undefined`.
 	* @see {@link QueryCache#findAll}
 	* @example
 	* ```ts
@@ -2095,7 +2455,8 @@ var QueryCache = class extends Subscribable {
 	*
 	* This is not typically needed for most applications, but can come in handy when needing more
 	* information about queries in rare scenarios.
-	*
+	* @param filters - The filters to match. Without filters, every query is returned.
+	* @returns The matching queries.
 	* @see {@link QueryCache#find}
 	* @example
 	* ```ts
@@ -2108,7 +2469,11 @@ var QueryCache = class extends Subscribable {
 		const queries = this.getAll();
 		return Object.keys(filters).length > 0 ? queries.filter((query) => matchQuery(filters, query)) : queries;
 	}
-	/** @internal */
+	/**
+	* Notifies every cache listener of an event, in one batch.
+	* @internal
+	* @param event - The event passed to every listener.
+	*/
 	notify(event) {
 		notifyManager.batch(() => {
 			this.listeners.forEach((listener) => {
@@ -2116,7 +2481,10 @@ var QueryCache = class extends Subscribable {
 			});
 		});
 	}
-	/** @internal */
+	/**
+	* Calls {@link Query#onFocus} on every cached query, in one batch.
+	* @internal
+	*/
 	onFocus() {
 		notifyManager.batch(() => {
 			this.getAll().forEach((query) => {
@@ -2124,7 +2492,10 @@ var QueryCache = class extends Subscribable {
 			});
 		});
 	}
-	/** @internal */
+	/**
+	* Calls {@link Query#onOnline} on every cached query, in one batch.
+	* @internal
+	*/
 	onOnline() {
 		notifyManager.batch(() => {
 			this.getAll().forEach((query) => {
@@ -2139,7 +2510,6 @@ var QueryCache = class extends Subscribable {
 * `QueryClient` is used to interact with a cache of queries and mutations. It owns a
 * `QueryCache` and a `MutationCache` (creating default ones if none are passed in) and holds
 * the default options that are applied to queries and mutations created through it.
-*
 * @example
 * ```ts
 * const queryClient = new QueryClient({
@@ -2209,7 +2579,9 @@ var QueryClient = class {
 	* Returns the number of queries in the cache that are currently fetching, optionally
 	* matching a set of filters. This includes background-fetching, loading new pages, and
 	* loading more infinite query results.
-	*
+	* @param filters - Narrows down which fetching queries are counted. Without filters, every
+	* fetching query is counted.
+	* @returns The number of matching queries whose `fetchStatus` is `'fetching'`.
 	* @example
 	* ```ts
 	* if (queryClient.isFetching()) {
@@ -2226,7 +2598,9 @@ var QueryClient = class {
 	/**
 	* Returns the number of mutations in the cache that are currently pending, optionally
 	* matching a set of filters.
-	*
+	* @param filters - Narrows down which pending mutations are counted. Without filters, every
+	* pending mutation is counted.
+	* @returns The number of matching mutations whose `status` is `'pending'`.
 	* @example
 	* ```ts
 	* if (queryClient.isMutating()) {
@@ -2246,7 +2620,8 @@ var QueryClient = class {
 	*
 	* Hint: Do not use this function inside a component, because it won't receive updates.
 	* Use `useQuery` to create a `QueryObserver` that subscribes to changes.
-	*
+	* @param queryKey - The query key of the query to read.
+	* @returns The cached data for the query, or `undefined` if no query with this key has been observed yet.
 	* @see {@link QueryClient#getQueriesData}
 	*/
 	getQueryData(queryKey) {
@@ -2254,6 +2629,12 @@ var QueryClient = class {
 		return this.#queryCache.get(options.queryHash)?.state.data;
 	}
 	/**
+	* Returns the cached data of a query, or fetches it if there is none. With `revalidateIfStale`,
+	* stale cached data is also refetched in the background.
+	* @param options - The query options. If the query has no cached data yet, it is fetched with
+	* these options.
+	* @returns A promise that resolves to the cached data, or to the fetched data if nothing was
+	* cached yet.
 	* @deprecated Use queryClient.query({ ...options, staleTime: 'static' }) instead. This method will be removed in the next major version.
 	*/
 	ensureQueryData(options) {
@@ -2274,7 +2655,8 @@ var QueryClient = class {
 	* than being inferred. Passing a more specific type is a convenience for call sites that know
 	* every matched query holds the same shape — it is not checked against the actual cache
 	* contents.
-	*
+	* @param filters - The filters that select which queries to read.
+	* @returns An array of query key and data pairs. The data is `undefined` for a query with no cached data.
 	* @see {@link QueryClient#getQueryData}
 	* @example
 	* ```ts
@@ -2294,11 +2676,12 @@ var QueryClient = class {
 	*
 	* Updates must be performed immutably: do not mutate `oldData`, or data previously retrieved
 	* via {@link QueryClient#getQueryData}, in place.
-	*
 	* @param queryKey - The query key to set data for.
 	* @param updater - Either the new data, or a function that receives the current data (which
 	* may be `undefined`) and returns the new data.
-	*
+	* @param options - Set `updatedAt` to override the timestamp the written data is recorded with.
+	* @returns The data that was written, or `undefined` if the updater returned `undefined` — in that case
+	* the write is skipped and the cache is left unchanged.
 	* @example
 	* ```ts
 	* queryClient.setQueryData(['posts'], newPosts)
@@ -2322,7 +2705,12 @@ var QueryClient = class {
 	* filters or partial query key matching. Only queries that already exist and match the given
 	* filters are updated; no new cache entries are created. Internally this calls
 	* {@link QueryClient#setQueryData} for each matching query.
-	*
+	* @param filters - The filters that select which existing queries to update.
+	* @param updater - Either the new data, or a function that receives each matched query's current
+	* data (which may be `undefined`) and returns the new data.
+	* @param options - Set `updatedAt` to override the timestamp the written data is recorded with.
+	* @returns One `[queryKey, data]` tuple per matched query, in the same shape and with the same
+	* `undefined` case as {@link QueryClient#setQueryData}.
 	* @example
 	* ```ts
 	* queryClient.setQueriesData({ queryKey: ['posts'] }, (oldPosts) =>
@@ -2336,7 +2724,8 @@ var QueryClient = class {
 	/**
 	* Imperative (non-reactive) way to retrieve an existing query's state. If the query does not
 	* exist, `undefined` is returned.
-	*
+	* @param queryKey - The query key of the query to read.
+	* @returns The query's state, or `undefined` if no query with this key exists.
 	* @example
 	* ```ts
 	* const state = queryClient.getQueryState(['posts'])
@@ -2352,7 +2741,8 @@ var QueryClient = class {
 	* {@link QueryClient#invalidateQueries} or {@link QueryClient#refetchQueries}, this removes
 	* matching queries from the cache instead of refetching them. Without filters, every query in
 	* the cache is removed.
-	*
+	* @param filters - The filters that select which queries to remove. Without filters, every query
+	* is removed.
 	* @example
 	* ```ts
 	* queryClient.removeQueries({ queryKey: ['posts'], exact: true })
@@ -2370,7 +2760,11 @@ var QueryClient = class {
 	* Resets queries matching the given filters back to their initial state (e.g. any
 	* `initialData`), notifying subscribers rather than removing them. Active queries among the
 	* matched set are then refetched, and the returned promise resolves once that refetch settles.
-	*
+	* @param filters - The filters that select which queries to reset. Without filters, every query
+	* is reset.
+	* @param options - Passed to the refetch of the active matched queries, e.g. `cancelRefetch` and
+	* `throwOnError`.
+	* @returns A promise that resolves once the refetch of the active matched queries settles.
 	* @example
 	* ```ts
 	* await queryClient.resetQueries({ queryKey: ['posts'], exact: true })
@@ -2397,7 +2791,11 @@ var QueryClient = class {
 	* reverted to its state before the outgoing fetch started.
 	*
 	* The returned promise never rejects, even if individual cancellations fail.
-	*
+	* @param filters - The filters that select which queries to cancel. Without filters, every query
+	* is cancelled.
+	* @param cancelOptions - Passed to each matched query's cancellation. `revert` defaults to
+	* `true`.
+	* @returns A promise that resolves once every cancellation has settled.
 	* @example
 	* ```ts
 	* await queryClient.cancelQueries({ queryKey: ['posts'], exact: true })
@@ -2418,7 +2816,12 @@ var QueryClient = class {
 	* Unless `filters.refetchType` is `'none'`, matching queries are then refetched via
 	* {@link QueryClient#refetchQueries}, using `filters.refetchType` if set, otherwise
 	* `filters.type`, otherwise `'active'`.
-	*
+	* @param filters - The filters that select which queries to invalidate, plus `refetchType` to
+	* control which of them to refetch afterwards. Without filters, every query is invalidated.
+	* @param options - Passed to {@link QueryClient#refetchQueries}, e.g. `cancelRefetch` and
+	* `throwOnError`.
+	* @returns A promise that resolves once the refetch settles, or immediately if `refetchType` is
+	* `'none'`.
 	* @example
 	* ```ts
 	* await queryClient.invalidateQueries({ queryKey: ['posts'], refetchType: 'active' })
@@ -2444,7 +2847,11 @@ var QueryClient = class {
 	* By default (`cancelRefetch: true`), a currently running fetch is cancelled before the new
 	* one starts. The returned promise resolves once all matching queries have settled; it does
 	* not reject on individual query failures unless `throwOnError` is set.
-	*
+	* @param filters - The filters that select which queries to refetch. Without filters, every query
+	* in the cache is included.
+	* @param options - Set `cancelRefetch` to `false` to keep a running fetch instead of cancelling
+	* it, and `throwOnError` to `true` to reject when a refetch fails.
+	* @returns A promise that resolves once every matched query has settled.
 	* @example
 	* ```ts
 	* // refetch all active queries partially matching a query key:
@@ -2484,7 +2891,10 @@ var QueryClient = class {
 	*
 	* This method replaces the deprecated `fetchQuery`, and — combined with
 	* `{ staleTime: 'static' }` — the deprecated `ensureQueryData`.
-	*
+	* @param options - The query options, including the `queryKey` and the `queryFn` used if the
+	* query needs to fetch.
+	* @returns A promise that resolves to the data, or to the result of `select` if provided. It
+	* rejects with the error from the fetch or from `select`.
 	* @example
 	* ```ts
 	* try {
@@ -2504,6 +2914,12 @@ var QueryClient = class {
 		return queryData;
 	}
 	/**
+	* Fetches and caches a query, or returns its cached data if it isn't stale. Unlike in observers,
+	* the fetch isn't retried unless `retry` is set.
+	* @param options - The query options, including the `queryKey` and the `queryFn` used if the
+	* query needs to fetch.
+	* @returns A promise that resolves to the cached or fetched data, or rejects with the fetch
+	* error.
 	* @deprecated Use queryClient.query(options) instead. This method will be removed in the next major version.
 	*/
 	fetchQuery(options) {
@@ -2513,6 +2929,11 @@ var QueryClient = class {
 		return query.isStaleByTime(resolveQueryValue(defaultedOptions.staleTime, query)) ? query.fetch(defaultedOptions) : Promise.resolve(query.state.data);
 	}
 	/**
+	* Fetches and caches a query like {@link QueryClient#fetchQuery}, but ignores the result and any
+	* error.
+	* @param options - The query options, including the `queryKey` and the `queryFn` used if the
+	* query needs to fetch.
+	* @returns A promise that resolves once the fetch settles. It never rejects.
 	* @deprecated Use queryClient.query(options) instead. You can swallow errors with `.catch(noop)`. This method will be removed in the next major version.
 	*/
 	prefetchQuery(options) {
@@ -2528,7 +2949,10 @@ var QueryClient = class {
 	*
 	* This method replaces the deprecated `fetchInfiniteQuery`, and — combined with
 	* `{ staleTime: 'static' }` — the deprecated `ensureInfiniteQueryData`.
-	*
+	* @param options - The infinite query options, including the `queryKey`, the `queryFn`, and the
+	* `initialPageParam`.
+	* @returns A promise that resolves to the {@link InfiniteData}, or to the result of `select` if
+	* provided. It rejects with the error from the fetch or from `select`.
 	* @example
 	* ```ts
 	* try {
@@ -2544,6 +2968,11 @@ var QueryClient = class {
 		return this.query(options);
 	}
 	/**
+	* Fetches and caches an infinite query, or returns its cached data if it isn't stale.
+	* @param options - The infinite query options, including the `queryKey`, the `queryFn`, and the
+	* `initialPageParam`.
+	* @returns A promise that resolves to the cached or fetched {@link InfiniteData}, or rejects with
+	* the fetch error.
 	* @deprecated Use queryClient.infiniteQuery(options) instead. This method will be removed in the next major version.
 	*/
 	fetchInfiniteQuery(options) {
@@ -2551,12 +2980,23 @@ var QueryClient = class {
 		return this.fetchQuery(options);
 	}
 	/**
+	* Fetches and caches an infinite query like {@link QueryClient#fetchInfiniteQuery}, but ignores
+	* the result and any error.
+	* @param options - The infinite query options, including the `queryKey`, the `queryFn`, and the
+	* `initialPageParam`.
+	* @returns A promise that resolves once the fetch settles. It never rejects.
 	* @deprecated Use queryClient.infiniteQuery(options) instead. You can swallow errors with `.catch(noop)`. This method will be removed in the next major version.
 	*/
 	prefetchInfiniteQuery(options) {
 		return this.fetchInfiniteQuery(options).then(noop).catch(noop);
 	}
 	/**
+	* Returns the cached data of an infinite query, or fetches it if there is none. With
+	* `revalidateIfStale`, stale cached data is also refetched in the background.
+	* @param options - The infinite query options. If the query has no cached data yet, it is fetched
+	* with these options.
+	* @returns A promise that resolves to the cached {@link InfiniteData}, or to the fetched data if
+	* nothing was cached yet.
 	* @deprecated Use queryClient.infiniteQuery({ ...options, staleTime: 'static' }) instead. This method will be removed in the next major version.
 	*/
 	ensureInfiniteQueryData(options) {
@@ -2566,7 +3006,7 @@ var QueryClient = class {
 	/**
 	* Resumes mutations that were paused because there was no network connection. Does nothing
 	* (resolving immediately) if the client is currently offline.
-	*
+	* @returns A promise that resolves once the resumed mutations have settled.
 	* @example
 	* ```ts
 	* import { QueryClient } from '@tanstack/query-core'
@@ -2581,7 +3021,7 @@ var QueryClient = class {
 	}
 	/**
 	* Returns the query cache this client is connected to.
-	*
+	* @returns The {@link QueryCache} instance.
 	* @example
 	* ```ts
 	* import { QueryClient } from '@tanstack/query-core'
@@ -2596,7 +3036,7 @@ var QueryClient = class {
 	}
 	/**
 	* Returns the mutation cache this client is connected to.
-	*
+	* @returns The {@link MutationCache} instance.
 	* @example
 	* ```ts
 	* import { QueryClient } from '@tanstack/query-core'
@@ -2612,7 +3052,7 @@ var QueryClient = class {
 	/**
 	* Returns the default options that were set when creating the client, or via
 	* {@link QueryClient#setDefaultOptions}.
-	*
+	* @returns The client's current default options.
 	* @example
 	* ```ts
 	* import { QueryClient } from '@tanstack/query-core'
@@ -2627,7 +3067,7 @@ var QueryClient = class {
 	/**
 	* Dynamically sets the default options for this client, overwriting any previously defined
 	* default options.
-	*
+	* @param options - The new default options for queries and mutations.
 	* @see {@link QueryClient#getDefaultOptions}
 	* @example
 	* ```ts
@@ -2651,7 +3091,8 @@ var QueryClient = class {
 	* registration order by {@link QueryClient#getQueryDefaults}, so register defaults from the
 	* most generic key to the least generic one — more specific defaults should be registered
 	* after more generic ones so they take precedence.
-	*
+	* @param queryKey - The query key that query keys are partially matched against.
+	* @param options - The default options applied to matching queries.
 	* @example
 	* ```ts
 	* queryClient.setQueryDefaults(['posts'], { queryFn: fetchPosts })
@@ -2669,7 +3110,9 @@ var QueryClient = class {
 	* Returns the default options registered for queries whose query key partially matches the
 	* given `queryKey`, via {@link QueryClient#setQueryDefaults}. If multiple registered defaults
 	* match, they are merged together in registration order.
-	*
+	* @param queryKey - The query key to look up registered defaults for.
+	* @returns The merged default options of every registration that matches, or an empty object if
+	* none match.
 	* @example
 	* ```ts
 	* const defaultOptions = queryClient.getQueryDefaults(['posts'])
@@ -2687,7 +3130,8 @@ var QueryClient = class {
 	* Sets default options for mutations whose mutation key partially matches the given
 	* `mutationKey`. As with {@link QueryClient#setQueryDefaults}, the order of registration
 	* matters when several registered defaults match the same mutation key.
-	*
+	* @param mutationKey - The mutation key that mutation keys are partially matched against.
+	* @param options - The default options applied to matching mutations.
 	* @see {@link QueryClient#getMutationDefaults}
 	* @example
 	* ```ts
@@ -2704,7 +3148,9 @@ var QueryClient = class {
 	* Returns the default options registered for mutations whose mutation key partially matches
 	* the given `mutationKey`, via {@link QueryClient#setMutationDefaults}. If multiple registered
 	* defaults match, they are merged together in registration order.
-	*
+	* @param mutationKey - The mutation key to look up registered defaults for.
+	* @returns The merged default options of every registration that matches, or an empty object if
+	* none match.
 	* @example
 	* ```ts
 	* const defaultOptions = queryClient.getMutationDefaults(['addPost'])
@@ -2720,9 +3166,12 @@ var QueryClient = class {
 	}
 	/**
 	* Called by framework adapters (e.g. inside `useQuery`) to resolve the options passed by the
-	* caller into their final, defaulted form: merging `queryClient.setQueryDefaults` for the
-	* given `queryKey`, then the client's own `defaultOptions.queries`, then the caller's options
-	* on top. A no-op if the options are already defaulted (`_defaulted: true`).
+	* caller into their final, defaulted form: merging the client's own `defaultOptions.queries`,
+	* then `queryClient.setQueryDefaults` for the given `queryKey`, then the caller's options on
+	* top. A no-op if the options are already defaulted (`_defaulted: true`).
+	* @param options - The query options passed by the caller.
+	* @returns The defaulted options, with `queryHash` and dependent defaults (e.g.
+	* `refetchOnReconnect`) filled in.
 	*/
 	defaultQueryOptions(options) {
 		if (options._defaulted) return options;
@@ -2741,9 +3190,11 @@ var QueryClient = class {
 	}
 	/**
 	* The mutation counterpart of {@link QueryClient#defaultQueryOptions}. Called by framework
-	* adapters (e.g. inside `useMutation`) to merge `queryClient.setMutationDefaults` for the
-	* given `mutationKey`, then the client's `defaultOptions.mutations`, then the caller's options
-	* on top. A no-op if the options are already defaulted (`_defaulted: true`).
+	* adapters (e.g. inside `useMutation`) to merge the client's `defaultOptions.mutations`, then
+	* `queryClient.setMutationDefaults` for the given `mutationKey`, then the caller's options on
+	* top. A no-op if the options are already defaulted (`_defaulted: true`).
+	* @param options - The mutation options passed by the caller.
+	* @returns The defaulted options.
 	*/
 	defaultMutationOptions(options) {
 		if (options?._defaulted) return options;
@@ -2756,7 +3207,6 @@ var QueryClient = class {
 	}
 	/**
 	* Clears both the query cache and the mutation cache this client is connected to.
-	*
 	* @example
 	* ```ts
 	* import { QueryClient } from '@tanstack/query-core'
