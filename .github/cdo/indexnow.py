@@ -2,10 +2,8 @@
 import os, sys, subprocess, json, urllib.request
 SITE = 'https://www.carlosdeory.com'; KEY = os.environ['INDEXNOW_KEY']
 before, after = sys.argv[1], sys.argv[2]
-try:
-    out = subprocess.check_output(['git', 'diff', '--name-only', '--diff-filter=AM', before, after], text=True)
-except Exception:
-    out = subprocess.check_output(['git', 'show', '--name-only', '--pretty=', after], text=True)
+# todo lo cambiado en las ultimas 6 horas (si una ejecucion se cancela por otra, la siguiente lo cubre)
+out = subprocess.check_output(['git', 'log', '--since=6 hours ago', '--name-only', '--diff-filter=AM', '--pretty=format:'], text=True)
 urls = []
 for f in out.split():
     if not f.endswith('.html') or f.startswith('.') or '/page/' in f or f.startswith('tag/'): continue

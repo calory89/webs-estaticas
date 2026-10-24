@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 2 }
+        with: { fetch-depth: 60 }
       - name: Esperar al despliegue de Cloudflare Pages
         run: sleep 240
       - name: Comprobar paginas clave
