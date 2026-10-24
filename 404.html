@@ -16,8 +16,6 @@
 	<!-- / Yoast SEO plugin. -->
 
 
-<link rel="alternate" type="application/rss+xml" title="Carlos de Ory &raquo; Feed" href="https://www.carlosdeory.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Carlos de Ory &raquo; Feed de los comentarios" href="https://www.carlosdeory.com/comments/feed/" />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -239,6 +237,7 @@ body .ory-new,body .ory-wa,body .ory-ask span.go{background:#0F7A3E!important}
 .ory-ask,.ory-wa,.ory-contact-btn.is-wa{display:none!important}
 
 </style>
+<link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="https://www.carlosdeory.com/feed.xml" />
 </head>
 
 <body class="error404 wp-embed-responsive wp-theme-ory-theme">
@@ -655,6 +654,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* cajas de afiliado: enlaces como botones */
 .entry div[style*="#faf4de"] a{display:inline-block;background:var(--o-ink);color:#fff!important;text-decoration:none!important;border-radius:8px;padding:3px 11px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;font-weight:700;margin-left:2px}
 .entry div[style*="#faf4de"] a:hover{background:var(--o-acc)}
+.entry div[style*="#faf4de"] a *{color:inherit!important}
 /* aviso de articulo antiguo */
 .ory-old{max-width:680px;margin:14px auto 0;padding:10px 14px;border-radius:10px;background:var(--o-paper);border:1px solid var(--o-line);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--o-ink2);text-align:center}
 /* migas de pan */
@@ -662,7 +662,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .ory-bc a{color:var(--o-mut);text-decoration:none}.ory-bc a:hover{color:var(--o-acc)}
 .ory-bc span{margin:0 6px}
 /* siguiente paso al final del articulo */
-.ory-next{border:1px solid var(--o-line);border-radius:16px;padding:22px;margin:34px 0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.ory-next{border:1px solid var(--o-line);border-radius:16px;padding:22px;margin:34px auto;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .ory-next .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--o-acc);margin:0 0 12px}
 .ory-next .g{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .ory-next a{display:block;border:1px solid #EFEAE2;border-radius:12px;padding:14px;text-decoration:none;color:var(--o-ink)}
@@ -881,7 +881,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   }
   function lightbox() {
     if (D.querySelector('.ory-lb')) { return; }
-    var lb = el('div', 'ory-lb', '<img alt="">'); B.appendChild(lb);
+    var lb = el('div', 'ory-lb', '<img alt="Esta pagina se ha ido de viaje">'); B.appendChild(lb);
     lb.addEventListener('click', function () { lb.classList.remove('on'); });
     D.addEventListener('keydown', function (e) { if (e.key === 'Escape') { lb.classList.remove('on'); } });
     D.querySelectorAll('.entry img').forEach(function (i) {
