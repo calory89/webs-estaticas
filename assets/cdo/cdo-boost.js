@@ -21,7 +21,7 @@
     '.cdo-plan{width:min(100% - (var(--gut,20px) * 2),var(--read,700px));margin:28px auto;border:1px solid #E6E1D8;border-radius:16px;padding:18px 20px;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}' +
     '.cdo-plan p{margin:0 0 12px;font-size:15px;color:#15151A}.cdo-plan p b{font-size:16px}.cdo-plan .r{display:flex;flex-wrap:wrap;gap:8px}' +
     '.cdo-plan a{display:inline-flex;align-items:center;gap:6px;border-radius:100px;padding:9px 15px;font-size:14px;font-weight:700;text-decoration:none!important;border:1px solid #15151A;color:#15151A!important;background:#fff}' +
-    '.cdo-plan a.p{background:#15151A;color:#fff!important}.cdo-plan a:hover{border-color:#C2452D}.cdo-plan small{display:block;margin-top:10px;color:#7C7C8A;font-size:12px}' +
+    '.cdo-plan small a{display:inline;border:0;padding:0;background:none;font-weight:400;text-decoration:underline!important;color:inherit!important}.cdo-plan a.p{background:#15151A;color:#fff!important}.cdo-plan a:hover{border-color:#C2452D}.cdo-plan small{display:block;margin-top:10px;color:#7C7C8A;font-size:12px}' +
     '.cdo-slide{position:fixed;right:16px;bottom:16px;z-index:9990;width:min(360px,calc(100vw - 32px));background:#0E4F49;color:#F4F1EA;border-radius:16px;padding:20px 20px 18px;box-shadow:0 18px 50px rgb(0 0 0 / .25);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;transform:translateY(130%);transition:transform .45s cubic-bezier(.2,.9,.3,1)}' +
     '.cdo-slide.on{transform:none}.cdo-slide h3{margin:0 30px 6px 0;font:700 19px/1.2 Georgia,serif;color:#fff}.cdo-slide p{margin:0 0 12px;font-size:14px;line-height:1.5;color:rgb(244 241 234 / .88)}' +
     '.cdo-slide form{display:flex;gap:8px}.cdo-slide input{flex:1;min-width:0;border:0;border-radius:10px;padding:11px 12px;font-size:15px}.cdo-slide button[type=submit]{border:0;border-radius:10px;padding:0 14px;background:#C2452D;color:#fff;font-weight:700;font-size:14px;cursor:pointer}' +
@@ -149,4 +149,32 @@
     var li = el('li', 'menu-item cdo-search-link', '<a href="/search/" aria-label="' + (EN ? 'Search' : 'Buscar') + '">' + (EN ? 'Search' : 'Buscar') + '</a>');
     nav.appendChild(li);
   }
+  /* 10. Guia del destino en PDF a cambio del email (posts y categorias con guia) */
+  (function () {
+    var slug = B.getAttribute('data-guide');
+    if (!slug) { var m = (B.className || '').match(/\bcategory-([a-z0-9-]+)\b/); if (m && B.classList.contains('archive')) { slug = m[1]; } }
+    if (!slug || D.querySelector('.cdo-guide-box')) { return; }
+    fetch('/assets/cdo/guias/guias.json').then(function (r) { return r.ok ? r.json() : {}; }).then(function (G) {
+      var g = G[slug]; if (!g) { return; }
+      var pdf = '/assets/cdo/guias/guia-' + slug + '.pdf';
+      var box = el('aside', 'cdo-plan cdo-guide-box');
+      var done = ls('cdo-nl') === '1' || ls('ory-nl-done');
+      box.innerHTML = '<p><b>' + (EN ? 'Free PDF guide: ' : 'Guía gratis en PDF: ') + esc(g.name) + '</b> ' + (EN ? '(' + g.n + ' articles in one file, to read offline).' : '(' + g.n + ' artículos en un solo archivo, para leer sin conexión).') + '</p>' +
+        (done ? '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the guide' : 'Descargar la guía') + '</a></div>'
+          : '<form class="r" novalidate><label style="position:absolute;left:-9999px" for="cdo-g-e">Email</label><input id="cdo-g-e" type="email" autocomplete="email" inputmode="email" required placeholder="' + (EN ? 'you@email.com' : 'tu@email.com') + '" style="flex:1;min-width:180px;border:1px solid #E6E1D8;border-radius:100px;padding:9px 15px;font-size:15px"><input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button class="p" type="submit" style="border:0;border-radius:100px;padding:9px 16px;font-weight:700;background:#15151A;color:#fff;cursor:pointer">' + (EN ? 'Send me the guide' : 'Quiero la guía') + '</button></form><small class="m" role="status" aria-live="polite"></small><small>' + (EN ? 'You also join the newsletter. Unsubscribe in one click. ' : 'También te apuntas a la newsletter. Te das de baja en un clic. ') + '<a href="/politica-de-privacidad/">' + (EN ? 'Privacy' : 'Privacidad') + '</a></small>');
+      var anchor = D.querySelector('.cdo-plan:not(.cdo-guide-box)');
+      if (anchor) { anchor.parentNode.insertBefore(box, anchor.nextSibling); }
+      else { var hero = D.querySelector('.page-hero'); if (hero) { hero.parentNode.insertBefore(box, hero.nextSibling); box.style.margin = '0 auto 30px'; } else { return; } }
+      var f = box.querySelector('form'); if (!f) { return; }
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var inp = f.querySelector('input[type=email]'), msg = box.querySelector('.m'), em = (inp.value || '').trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) { msg.textContent = EN ? 'Add a valid email.' : 'Escribe un email válido.'; inp.focus(); return; }
+        var b2 = f.querySelector('button'); b2.disabled = true; msg.textContent = EN ? 'Sending…' : 'Enviando…';
+        fetch(NL_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ type: 'subscribe', email: em, lang: EN ? 'en' : 'es', source: 'guide:' + slug, consent: true, website: f.querySelector('input[name=website]').value }) })
+          .then(function (r) { if (!r.ok) { throw new Error('x'); } ls('cdo-nl', '1'); ls('ory-nl-done', '1'); ev('guide_download', { guide: slug }); f.outerHTML = '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the guide' : 'Descargar la guía') + '</a></div>'; msg.textContent = EN ? 'Done. We also sent it to your inbox.' : 'Listo. También te la hemos enviado al email.'; })
+          .catch(function () { b2.disabled = false; msg.textContent = EN ? 'It could not be sent. Try again in a minute.' : 'No se pudo enviar. Inténtalo de nuevo en un minuto.'; });
+      });
+    }).catch(function () {});
+  })();
 })();
