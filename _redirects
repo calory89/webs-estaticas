@@ -5,12 +5,8 @@
 /contact/ /#contact 301
 /speaker /speaking/ 301
 /speaker/ /speaking/ 301
-/charlas /speaking/ 301
-/charlas/ /speaking/ 301
-/ponencias /speaking/ 301
-/ponencias/ /speaking/ 301
-/agencia /growth/ 301
-/agencia/ /growth/ 301
+/ponencias /charlas/ 301
+/ponencias/ /charlas/ 301
 /agency /growth/ 301
 /agency/ /growth/ 301
 /buscar /search/ 301

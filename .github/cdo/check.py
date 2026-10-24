@@ -1,7 +1,7 @@
 """Comprueba que las paginas clave de carlosdeory.com responden 200 y que las redirecciones clave funcionan. Falla el job si no."""
 import urllib.request, sys
 SITE = 'https://www.carlosdeory.com'
-OK = ['/', '/blog/', '/speaking/', '/growth/', '/europa/', '/destinos/', '/archive/', '/feed.xml', '/sitemap_index.xml', '/post-sitemap.xml',
+OK = ['/', '/blog/', '/speaking/', '/growth/', '/charlas/', '/agencia/', '/europa/', '/destinos/', '/archive/', '/feed.xml', '/sitemap_index.xml', '/post-sitemap.xml',
       '/llms.txt', '/assets/cdo/cdo-boost.js', '/assets/cdo/million-mile-playbook-es.pdf', '/assets/cdo/carlos-de-ory-speaker-kit-en.pdf', '/million-mile-playbook-revolut-ultra/']
 REDIR = {'/feed/': '/feed.xml', '/contacto/': '/#contact', '/suiza/': '/europa/'}
 class NoRedirect(urllib.request.HTTPRedirectHandler):
