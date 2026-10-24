@@ -12,7 +12,7 @@ CATP = {c: v['path'] for c, v in A['cat'].items()}
 CATN = {c: v['name'] for c, v in A['cat'].items()}
 CATCOUNT = {c: v['n'] for c, v in A['cat'].items()}
 REGIONS = {'europa', 'asia', 'america', 'africa', 'oceania'}
-NONTRAVEL = {'growth-marketing', 'emprender', 'digital-nomad', 'puntos-y-millas', 'episodios', 'episodes', 'consejos', '1'}
+NONTRAVEL = {'travel-guides', 'growth-marketing', 'emprender', 'digital-nomad', 'puntos-y-millas', 'episodios', 'episodes', 'consejos', '1'}
 FEED = f'<link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="{SITE}/feed.xml" />'
 stats = collections.Counter()
 

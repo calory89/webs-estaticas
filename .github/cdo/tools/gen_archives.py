@@ -44,7 +44,7 @@ for u, r in P.items():
     for t in r['tags']: posts_by_tag.setdefault(t, []).append(u)
 catpath = {}
 for c in posts_by_cat:
-    if c in ('1',): continue
+    if c in ('1', 'travel-guides'): continue
     if c == 'consejos': catpath[c] = '/consejos/'; continue
     if c in existing: catpath[c] = existing[c]; continue
     cand = '/' + c + '/'

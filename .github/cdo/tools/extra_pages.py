@@ -247,3 +247,20 @@ def _calc(lang):
       end_h=T('Want more from your list?', '¿Quieres sacar más a tu lista?'), end_p=T('My team sets up sequences, offers and the ads that feed them, measured every week.', 'Mi equipo monta secuencias, ofertas y los anuncios que las alimentan, medido cada semana.'),
       end_href=T('/growth/#start', '/agencia/#start'), end_cta=T('Tell me about your company', 'Cuéntame tu empresa'))
 EXTRA.append({'en': _calc('en'), 'es': _calc('es')})
+
+# ---------- Hub de guias en ingles ----------
+import os as _os, json as _json
+if _os.path.exists('/home/claude/tools/en_posts.json'):
+    _EN = _json.load(open('/home/claude/tools/en_posts.json'))
+    def _hub():
+        cards = ''.join(f'<a class="card" href="{x["en"]}" style="display:grid;gap:10px;padding:0;overflow:hidden;text-decoration:none;color:inherit">'
+                        + (f'<img src="{x["img"]}" alt="" width="720" height="450" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover">' if x.get('img') else '')
+                        + f'<span style="padding:0 18px 18px;display:grid;gap:6px"><b style="font-size:19px;line-height:1.3">{html.escape(x["title"])}</b><span style="color:var(--ink-2);font-size:15px">{html.escape(x["desc"])}</span></span></a>' for x in sorted(_EN, key=lambda x: x['title']))
+        return '<div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">' + cards + '</div>'
+    import html
+    EXTRA.append({'en': dict(path='/travel-guides/', section='other', title='Travel guides in English', og='/assets/cdo/og-blog.jpg',
+        desc=f'{len(_EN)} of my most read travel guides, now in English: Rome, Prague, Budapest, Lisbon, Edinburgh, Madrid, Seville, Venice, Bali and more.',
+        eyebrow='Travel', h1='Travel guides in English.', lead='The most read guides from the blog, translated. More than a thousand more are in Spanish.',
+        crumbs=[('/', 'Carlos de Ory'), (None, 'Travel guides')], ctas=[('/destinos/', 'All destinations (Spanish)')],
+        sections=[{'h': 'Guides', 'html': _hub()}],
+        end_h='Want the points tricks too?', end_p='Join the newsletter and get the Million Mile Playbook in PDF.', end_href='/the-newsletter/', end_cta='Get the Playbook')})

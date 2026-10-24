@@ -2,7 +2,7 @@ import os,re,json,html,collections
 D=json.load(open('/home/claude/tools/data.json')); P=D['posts']
 A=json.load(open('/home/claude/tools/archives.json'))
 CATN={c:v['name'] for c,v in A['cat'].items()}; CNT={c:v['n'] for c,v in A['cat'].items()}
-REG={'europa','asia','america','africa','oceania'}; NT={'growth-marketing','emprender','digital-nomad','puntos-y-millas','episodios','episodes','consejos','1'}
+REG={'europa','asia','america','africa','oceania'}; NT={'travel-guides','growth-marketing','emprender','digital-nomad','puntos-y-millas','episodios','episodes','consejos','1'}
 def spec(r):
     cs=[c for c in r['cats'] if c in CATN and c not in REG and c not in NT]; cs.sort(key=lambda c:CNT[c])
     if cs: return CATN[cs[0]]
