@@ -60,6 +60,10 @@ def warm(rows, meses, n):
                 order.append(cand[lvl]['slug'])
     now = datetime.datetime.utcnow()
     todo = [s for s in order if s not in meses or (now - datetime.datetime.fromisoformat(meses[s]['t'][:19])).days >= 4]
+    # rotar: cada pasada empieza en un punto distinto, para no preguntar siempre por las mismas rutas
+    if todo:
+        k = (now.hour * 37 + now.day * 11) % len(todo)
+        todo = todo[k:] + todo[:k]
     done = 0
     for s in todo[:n]:
         try:
@@ -255,7 +259,7 @@ def orig_page(o, lst, en, en_slug):
             f'<div class="kicker">{T("Precios reales, consultados en Kiwi.com", "Real prices, checked on Kiwi.com")}</div><h1 class="x-h1">{e(title)}</h1>'
             f'<p style="font-size:18px;max-width:820px">{e(lead)}</p>'
             f'<div class="pm-stats"><div><b>{lst[0]["price_from"]} €</b><span>{T("el destino más barato", "cheapest destination")}</span></div><div><b>{len(under)}</b><span>{T("destinos por menos de 100 €", "destinations under 100 €")}</span></div><div><b>{len(direct)}</b><span>{T("con vuelo directo", "with direct flights")}</span></div><div><b>{len(lst)}</b><span>{T("destinos", "destinations")}</span></div></div>'
-            f'<div class="hlc-row" style="margin:18px 0 6px"><a class="hlc-btn o" href="{T("/chollos/?aero=" + os_, "/en/deals/")}">{T("Chollos de hoy desde " + oname, "Today’s deals")}</a><a class="hlc-btn o" href="{T("/alertas/", "/en/deals/")}">{T("Crear alerta gratis", "See all deals")}</a></div>'
+            f'<div class="hlc-row" style="margin:18px 0 6px"><a class="hlc-btn o" href="{T("/chollos/?aero=" + os_, "/en/deals/")}">{T("Chollos de hoy desde " + oname, "Today’s deals")}</a>' + ('' if en else '<a class="hlc-btn o" href="/alertas/">Crear alerta gratis</a>') + '</div>'
             f'<h2>{T("Precio a cada destino", "Price to each destination")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por destino", "Filter by destination")}" aria-label="{T("Filtrar", "Filter")}">'
             + table(lst, en, T('Destino', 'Destination'), dname, link)
             + f'<p class="pm-note">{e(T(f"Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com (última consulta: {fd(checked)}). Habitual es la mediana de los precios que vimos. Los precios cambian cada día.", f"Return prices in economy for 1 adult, checked on Kiwi.com (last search: {fd(checked, True)}). Usual is the median of the prices we saw. Prices change every day."))}</p>'
