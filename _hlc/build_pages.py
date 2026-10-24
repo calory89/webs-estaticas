@@ -39,8 +39,8 @@ posts = posts[:8]
 
 home_extra = '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/"><link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="preload" as="image" href="/hlc/img/cities/lisboa.jpg">' + \
  '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [
-   {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2012", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"]},
-   {"@type": "WebSite", "@id": "https://www.happylowcost.com/#web", "url": "https://www.happylowcost.com/", "name": "Happy Low Cost", "inLanguage": "es-ES", "publisher": {"@id": "https://www.happylowcost.com/#org"}}]}, ensure_ascii=False) + '</script>'
+   {"@type": "Organization", "@id": "https://www.happylowcost.com/#org", "name": "Happy Low Cost", "url": "https://www.happylowcost.com/", "foundingDate": "2012", "logo": "https://www.happylowcost.com/hlc/brand/icon-512.png", "slogan": "Cazamos los vuelos más baratos del mundo", "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "info@happylowcost.com", "availableLanguage": ["es", "en"]}, "publishingPrinciples": "https://www.happylowcost.com/como-verificamos/"},
+   {"@type": "WebSite", "@id": "https://www.happylowcost.com/#web", "url": "https://www.happylowcost.com/", "name": "Happy Low Cost", "inLanguage": "es-ES", "publisher": {"@id": "https://www.happylowcost.com/#org"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.happylowcost.com/chollos/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]}, ensure_ascii=False) + '</script>'
 
 HERO_IMGS = ['lisboa', 'maldivas', 'nueva-york', 'bali', 'tokio', 'paris']
 hero_imgs = ''.join(f'<div class="hero-img{" on" if i == 0 else ""}" data-hero-img style="background-image:url(/hlc/img/cities/{s}.jpg)" role="img" aria-label="{s.replace("-", " ").title()}"></div>' for i, s in enumerate(HERO_IMGS))
@@ -80,7 +80,7 @@ def map_block(full=False):
             f'<div class="mapx-load">Cargando el mapa…</div></div>'
             f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
             f'<div class="mapx-strip" data-map-strip>{cards}</div>'
-            '<script src="/hlc/map.js?v=4" defer></script>')
+            '<script src="/hlc/map.js?v=5" defer></script>')
 MAP = map_block()
 TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 Todo <small></small></button>' + ''.join(f'<button type="button" class="chip" data-tab="{k}" aria-pressed="false">{em} {n} <small></small></button>' for k, em, n in [('europa', '🇪🇺', 'Europa'), ('asia', '🌏', 'Asia'), ('norteamerica', '🗽', 'Norteamérica'), ('caribe', '🏝️', 'Caribe'), ('sudamerica', '🌎', 'Sudamérica'), ('africa', '🌍', 'África'), ('oceania', '🦘', 'Oceanía'), ('oriente-medio', '🕌', 'Oriente Medio')])
 

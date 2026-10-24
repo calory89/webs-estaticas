@@ -20,7 +20,7 @@ document.documentElement.classList.add('hlc-js');
   function hotelsIn(city){return city?CJ(AID.hotel,'https://www.booking.com/searchresults.es.html?ss='+encodeURIComponent(city)):L.hoteles;}
   function a(href,txt,cls,ev){return '<a class="hlc-btn '+(cls||'')+'" href="'+href+'" target="_blank" rel="sponsored nofollow noopener" data-hlc="'+(ev||'')+'">'+txt+'</a>';}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function track(name,label){try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_click',hlc_target:name,hlc_label:label||''});}catch(e){}}
+  function track(name,label){try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_click',hlc_target:name,hlc_label:label||''});}catch(e){}if(/^alerta/.test(name))logClick(name,'');}
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
 
   /* ---------- Región del visitante (zona horaria + idioma) ---------- */
@@ -74,7 +74,7 @@ document.documentElement.classList.add('hlc-js');
 
   /* ---------- Aviso en chollos antiguos ---------- */
   function oldDealNotice(){
-    var body=d.body;if(!body.classList.contains('single'))return;
+    var body=d.body;if(!body.classList.contains('single')||d.querySelector('.hlc-old-ssr'))return;
     var meta=d.querySelector('meta[property="article:published_time"]');if(!meta)return;
     var pub=new Date(meta.getAttribute('content'));if(isNaN(pub))return;
     if((Date.now()-pub.getTime())/864e5<21)return;
@@ -307,12 +307,16 @@ document.documentElement.classList.add('hlc-js');
   function bkLinks(){var h=function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href]');if(!a)return;var u=a.getAttribute('href'),f=bkFix(u);if(f!==u)a.setAttribute('href',f);};
     ['mousedown','touchstart','click','auxclick','keydown'].forEach(function(t){d.addEventListener(t,h,{capture:true,passive:true});});}
   /* ---------- Medición de clics de afiliado ---------- */
+  function logClick(kind,slug){try{fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/hlc_clicks',{method:'POST',keepalive:true,headers:{'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','content-type':'application/json','prefer':'return=minimal'},body:JSON.stringify({kind:String(kind).slice(0,40),slug:slug?String(slug).slice(0,120):null,lang:EN?'en':'es',path:location.pathname.slice(0,200)})}).catch(function(){});}catch(e){}}
   function clicks(){
     d.addEventListener('click',function(e){
       var el=e.target&&e.target.closest?e.target.closest('a[href]'):null;if(!el)return;
       var h=el.getAttribute('href')||'';
       var t=el.getAttribute('data-hlc')||(/click-101900924-/.test(h)?'cj_'+(h.match(/click-101900924-(\d+)/)||[])[1]:/ecobeachcity/.test(h)?'ecobeachcity':'');
       if(t)track(t,location.pathname);
+      var ds=d.querySelector('[data-deal-slug]');var slug=ds?ds.getAttribute('data-deal-slug'):'';
+      if(/click-101900924-/.test(h)&&slug){el.href=h.replace(/([?&]sid=)[^&]*/,'$1'+((EN?'hlcen-':'hlc-')+slug).slice(0,64));}
+      if(t)logClick(t,slug);
     },true);
   }
 

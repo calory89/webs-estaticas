@@ -69,7 +69,7 @@
     var world = res[0], LIB = res[1], feed = (res[2] || []).filter(function (x) { return x.slug && x.facts; }), AP = res[3] || {};
     var d3 = w.d3;
     var today = new Date().toISOString().slice(0, 10);
-    feed = feed.filter(function (x) { return !x.facts.ida || x.facts.ida >= today; });
+    feed = feed.filter(function (x) { var sv = x.facts.ahorro_pct; return (!x.facts.ida || x.facts.ida >= today) && (!sv || sv >= 25); });
     // puntos: destinos de la biblioteca + destinos de chollos que no están en ella
     var P = LIB.filter(function (p) { return p.x != null && p.y != null; }).map(function (p) { return { s: p.s, n: p.n, c: p.c, i: p.i, x: p.x, y: p.y, r: p.r, t: p.t, a: p.a || [], g: p.g, k: p.k || 0, lib: true, deals: [] }; });
     function find(f) {
@@ -80,10 +80,13 @@
     feed.forEach(function (x) {
       var f = x.facts, p = find(f);
       if (!p) {
+        // sin destino propio en el mapa: lo agrupamos en la ciudad grande más cercana (Burbank -> Los Ángeles); si no hay ninguna a menos de 250 km, no se pinta
         var ap = AP[f.destino_iata];
         if (!ap) return;
-        p = { s: 'x-' + slug(f.destino), n: f.destino, c: f.pais || '', i: f.destino_iata, x: ap[1], y: ap[0], r: CONT[f.continente] || 'mundo', t: 'ciudad', a: [], lib: false, deals: [] };
-        P.push(p);
+        var best = null, bd = 250;
+        P.forEach(function (q) { if (!q.lib) return; var r = Math.PI / 180, dl = (q.y - ap[0]) * r, dn = (q.x - ap[1]) * r, h = Math.sin(dl / 2) * Math.sin(dl / 2) + Math.cos(ap[0] * r) * Math.cos(q.y * r) * Math.sin(dn / 2) * Math.sin(dn / 2), km = 12742 * Math.asin(Math.sqrt(h)); if (km < bd) { bd = km; best = q; } });
+        if (!best) return;
+        p = best;
       }
       p.deals.push(x);
     });

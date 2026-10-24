@@ -103,6 +103,42 @@ def page(r, lang, others):
     return out
 
 
+def search_form(rows, en):
+    """Buscador de rutas: origen + destino + mes. Va a la página de la ruta si existe; si no, a los chollos filtrados."""
+    import en_names
+    origins = sorted({r['origin'] for r in rows})
+    dests = sorted({(E.NAMES.get(r['dest_slug'], r['dest']) if en else r['dest']) for r in rows})
+    MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] if en else ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
+    import datetime
+    t = datetime.date.today().replace(day=1)
+    months = []
+    for i in range(12):
+        y, m = t.year + (t.month - 1 + i) // 12, (t.month - 1 + i) % 12 + 1
+        months.append((f'{y}-{m:02d}', f'{MON[m - 1]} {y}'))
+    L = (lambda a, b: b if en else a)
+    oo = ''.join(f'<option value="{e(o)}">{e(en_names.city_en(o) if en else o)}</option>' for o in origins)
+    dd = ''.join(f'<option value="{e(d)}"></option>' for d in dests)
+    mm = ''.join(f'<option value="{k}">{v}</option>' for k, v in months)
+    return f'''<form class="xf" data-route-search style="margin-bottom:26px" role="search" aria-label="{L("Buscar ruta", "Search a route")}">
+<div class="xf-row">
+<label class="xf-sel"><span>{L("Desde", "From")}</span><select name="o" aria-label="{L("Aeropuerto de salida", "Departure airport")}">{oo}</select></label>
+<label class="xf-search"><span aria-hidden="true">✈️</span><input name="d" list="rs-dests" placeholder="{L("¿A dónde? Roma, Tokio, Nueva York…", "Where to? Rome, Tokyo, New York…")}" aria-label="{L("Destino", "Destination")}" autocomplete="off" required></label>
+<datalist id="rs-dests">{dd}</datalist>
+<label class="xf-sel"><span>{L("Mes", "Month")}</span><select name="m" aria-label="{L("Mes del viaje", "Travel month")}"><option value="">{L("Cualquier fecha", "Any date")}</option>{mm}</select></label>
+<button type="submit" class="hlc-btn">{L("Buscar", "Search")}</button>
+</div><div data-rs-msg role="status" aria-live="polite" style="font:14px Inter,sans-serif;color:#4A5468;margin-top:8px"></div></form>
+<script>
+(function(){{var f=document.querySelector('[data-route-search]');if(!f)return;var EN={'true' if en else 'false'};
+var sl=function(s){{return String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}};
+try{{var o=localStorage.getItem('hlc_origin');if(o)for(var i=0;i<f.o.options.length;i++)if(f.o.options[i].value===o||f.o.options[i].text===o){{f.o.selectedIndex=i;break;}}}}catch(e){{}}
+var IDX=null;fetch('/vuelos/rutas-idx.json').then(function(r){{return r.json();}}).then(function(j){{IDX=j;}}).catch(function(){{IDX=[];}});
+f.addEventListener('submit',function(ev){{ev.preventDefault();var o=f.o.value,d=sl(f.d.value),m=f.m.value;if(!d)return;
+var hit=(IDX||[]).filter(function(r){{return r[2]===o&&(sl(r[3])===d||sl(r[4])===d||r[5]===d);}})[0];
+if(hit){{location.href=(EN?'/en/flights/'+hit[1]:'/vuelos/'+hit[0])+'/'+(m?'?mes='+m:'');return;}}
+location.href=(EN?'/en/deals/':'/chollos/')+'?q='+encodeURIComponent(d)+(m?'&mes='+m:'');}});}})();
+</script>'''
+
+
 def hub(rows, en):
     by = {}
     for r in rows:
@@ -116,10 +152,12 @@ def hub(rows, en):
     if en:
         h = E.head(title, desc, SITE + base, SITE + '/vuelos/', body_class='chollos')
     else:
+        il = {"@type": "ItemList", "name": title, "numberOfItems": len(rows), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/vuelos/{r['slug']}/", "name": f"{r['origin']} → {r['dest']}"} for i, r in enumerate(sorted(rows, key=lambda x: x['price_from'])[:100])]}
         h = G.head(title=e(title), desc=e(desc), canonical=SITE + base, og_image=f'{SITE}/hlc/brand/og-default.jpg', og_type='website',
-                   extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">', body_class='chollos')
+                   extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">' + G.ld_script([il]), body_class='chollos')
     return h + f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 <div class="sec-h"><div><div class="kicker">{"Real prices, checked on Kiwi.com" if en else "Precios reales, consultados en Kiwi.com"}</div><h1 class="x-h1">{"Cheap flights, route by route" if en else "Vuelos baratos, ruta a ruta"}</h1><p>{e(desc)}</p></div></div>
+{search_form(rows, en)}
 {secs}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
 
@@ -154,6 +192,8 @@ def main():
                 if os.path.isdir(os.path.join(base, r['slug'])):
                     shutil.rmtree(os.path.join(base, r['slug']))
     json.dump({r['slug']: r['price_from'] for r in rows}, open('vuelos/rutas.json', 'w'), separators=(',', ':'))
+    import en_names
+    json.dump([[r['slug'], en_slug(r), r['origin'], r['dest'], E.NAMES.get(r['dest_slug'], r['dest']), r['dest_slug'], r['price_from']] for r in rows], open('vuelos/rutas-idx.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     for base, en in (('vuelos', False), ('en/flights', True)):
         os.makedirs(base, exist_ok=True)
         open(os.path.join(base, 'index.html'), 'w', encoding='utf-8').write(hub(rows, en))

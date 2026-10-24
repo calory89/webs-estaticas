@@ -11,6 +11,7 @@ import gen_deals as G  # noqa: E402
 import gen_en as E  # noqa: E402
 
 SITE = G.SITE
+ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4'  # clave pública (anon) de Supabase gmdalf: solo deja leer el panel agregado e insertar clics
 FOOT_ES = '<!--hlc-footer-->' + open(os.path.join(ROOT, '_hlc', 'partials', 'footer.html'), encoding='utf-8').read() + '<!--/hlc-footer-->'
 
 
@@ -91,6 +92,27 @@ def main():
              f'<article class="txt guide">{items}</article><p style="color:#4A5468">Last updated: 24 October 2026.</p></div></main>') + E.FOOTER + '</body></html>'
     os.makedirs('en/legal', exist_ok=True)
     open('en/legal/index.html', 'w', encoding='utf-8').write(page)
+
+    # ---------- panel semanal (interno, sin indexar): alertas, chollos publicados y clics a reserva ----------
+    ph = G.head(title='Panel semanal · Happy Low Cost', desc='Panel interno.', canonical=f'{SITE}/panel/', robots='noindex, nofollow', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">', body_class='panel')
+    ph += '''<main class="sec" style="padding-top:26px"><div class="wrap">
+<div class="kicker">Interno</div><h1 class="x-h1">Panel semanal</h1>
+<p style="color:#4A5468">Altas de alerta, chollos publicados y clics a reservar por semana (lunes a domingo, hora UTC). Los ingresos de afiliado salen en el informe de CJ: cada clic desde una ficha lleva el SID <code>hlc-&lt;chollo&gt;</code> (o <code>hlcen-</code> en inglés), así que CJ desglosa la comisión por chollo.</p>
+<div style="overflow-x:auto"><table id="t" style="width:100%;border-collapse:collapse;font:15px Inter,sans-serif;background:#fff;border-radius:14px"><thead><tr style="text-align:left"><th>Semana</th><th>Alertas</th><th>Email</th><th>WhatsApp</th><th>Chollos publicados</th><th>Clics vuelo</th><th>Clics hotel</th><th>Clics total</th></tr></thead><tbody><tr><td colspan="8">Cargando…</td></tr></tbody></table></div>
+<h2 style="margin-top:34px">Chollos con más clics (7 días)</h2>
+<div style="overflow-x:auto"><table id="top" style="width:100%;border-collapse:collapse;font:15px Inter,sans-serif;background:#fff"><thead><tr style="text-align:left"><th>Chollo</th><th>Clics vuelo</th><th>Clics hotel</th><th>Total</th></tr></thead><tbody></tbody></table></div>
+<style>#t td,#t th,#top td,#top th{padding:10px 12px;border-bottom:1px solid #EADCC4;white-space:nowrap}</style>
+<script>
+(function(){var K='ANONKEY',U='https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/';
+function g(p){return fetch(U+p,{headers:{apikey:K}}).then(function(r){return r.json();});}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+g('hlc_panel_semanal?select=*').then(function(l){document.querySelector('#t tbody').innerHTML=(l||[]).map(function(r){return '<tr><td>'+esc(r.semana)+'</td><td>'+r.alertas+'</td><td>'+r.alertas_email+'</td><td>'+r.alertas_whatsapp+'</td><td>'+r.chollos_publicados+'</td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.clics_total+'</td></tr>';}).join('');}).catch(function(){document.querySelector('#t tbody').innerHTML='<tr><td colspan="8">No se ha podido cargar.</td></tr>';});
+g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody').innerHTML=(l||[]).map(function(r){return '<tr><td><a href="/chollos/'+esc(r.slug)+'/">'+esc(r.slug)+'</a></td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.total+'</td></tr>';}).join('')||'<tr><td colspan="4">Aún no hay clics registrados.</td></tr>';});
+})();
+</script></div></main></body></html>'''.replace('ANONKEY', ANON_KEY)
+    os.makedirs('panel', exist_ok=True)
+    open('panel/index.html', 'w', encoding='utf-8').write(ph)
     print('static ok')
 
 

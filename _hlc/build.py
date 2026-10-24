@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '14'
+V = '15'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -66,12 +66,66 @@ def fix_rel(m):
     return tag[:-1].rstrip('/').rstrip() + ' rel="sponsored nofollow">'
 
 
-stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0)
+
+
+# ---------- chollos antiguos: aviso de caducado en el HTML (Google y usuarios sin JS lo ven) ----------
+import datetime, html as _html, unicodedata as _ud
+MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+try:
+    _DL = json.load(open('hlc/destinos.json', encoding='utf-8'))
+except Exception:
+    _DL = []
+_GUIDES = {p['s'] for p in _DL if p.get('g')}
+OFFER_RX = re.compile(r'\d\s?€|€\s?\d|\bchollo|\bganga|por s[oó]lo|desde s[oó]lo|\bi/v\b', re.I)
+
+
+def _sl(t):
+    t = _ud.normalize('NFD', t or '').encode('ascii', 'ignore').decode().lower()
+    return re.sub(r'[^a-z0-9]+', '-', t).strip('-')
+
+
+def _dest_of(title):
+    t = '-' + _sl(title) + '-'
+    best = None
+    for p in _DL:
+        for n in [p['s'], _sl(p['n'])] + list(p.get('a') or []):
+            if n and len(n) > 3 and f'-{n}-' in t and (best is None or len(n) > best[1]):
+                best = (p, len(n))
+    return best[0] if best else None
+
+
+def old_notice(t):
+    m = re.search(r'article:published_time" content="(\d{4}-\d{2}-\d{2})', t)
+    if not m or 'hlc-old-ssr' in t:
+        return t
+    pub = datetime.date.fromisoformat(m.group(1))
+    if (datetime.date.today() - pub).days < 21:
+        return t
+    h = re.search(r'<h1[^>]*>([^<]+)', t)
+    title = _html.unescape(h.group(1)) if h else ''
+    if not OFFER_RX.search(title):
+        return t
+    p = _dest_of(title)
+    links = '<a class="hlc-btn" href="/chollos/">Ver los chollos verificados de hoy</a>'
+    if p:
+        if p['s'] in _GUIDES:
+            links = f'<a class="hlc-btn" href="/destinos/{p["s"]}/#chollos">Chollos de hoy a {_html.escape(p["n"])}</a>' + links.replace('class="hlc-btn"', 'class="hlc-btn o"')
+        links += f'<a class="hlc-btn o" href="/chollos/?q={_html.escape(_sl(p["n"]))}">Buscar {_html.escape(p["n"])} en los chollos</a>'
+    box = (f'<!--hlc-old--><div class="hlc-old hlc-old-ssr" role="note">🕒 <strong>Oferta caducada.</strong> Este chollo se publicó el {pub.day} de {MES[pub.month - 1]} de {pub.year} '
+           f'y su precio ya no está disponible. <div class="hlc-row">{links}</div></div><!--/hlc-old-->')
+    m2 = re.search(r'<div class="inner-post-entry[^>]*>|<div class="(?:post-entry|entry-content)[^>]*>', t)
+    if not m2:
+        return t
+    return t[:m2.end()] + box + t[m2.end():]
+
+
+stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0, old=0)
 for f in files:
     stats['files'] += 1
     t0 = open(f, encoding='utf-8', errors='surrogateescape').read()
     t = t0
     # limpiar inyecciones anteriores (idempotencia)
+    t = strip_block(t, '<!--hlc-old-->', '<!--/hlc-old-->')
     for a, b in (('<!--hlc-head-->', '<!--/hlc-head-->'), ('<!--hlc-tail-->', '<!--/hlc-tail-->'), ('<!--hlc-foot-->', '<!--/hlc-foot-->'), ('<!--hlc-header-->', '<!--/hlc-header-->'), ('<!--hlc-footer-->', '<!--/hlc-footer-->')):
         t = strip_block(t, a, b)
     t = re.sub(r'<link rel=["\'](?:icon|shortcut icon|apple-touch-icon)["\'][^>]*wp-content[^>]*>\s*', '', t)
@@ -96,6 +150,10 @@ for f in files:
     if c:
         t = t.replace(EBC_OLD, EBC_NEW)
         stats['ebc'] += c
+    t2 = old_notice(t)
+    if t2 != t:
+        stats['old'] += 1
+    t = t2
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
     if 'searchresults' in t:
         t = BK.fix_html(t)
