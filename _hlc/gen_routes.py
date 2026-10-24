@@ -24,7 +24,7 @@ def flight_link(f, locale):
     dep, ret = (f.get('ejemplo_ida') or '')[:10], (f.get('ejemplo_vuelta') or '')[:10]
     u = (f'https://flights.booking.com/flights/{o}.AIRPORT-{d}.AIRPORT/?type=ROUNDTRIP&adults=1&cabinClass=ECONOMY&from={o}.AIRPORT&to={d}.AIRPORT'
          f'&depart={dep}&return={ret}&sort=CHEAPEST&locale={locale}&salesCurrency=EUR')
-    return cj('17288982', u)
+    return G.BK.fix_flight(cj('17288982', u))
 
 
 def hotel_link(city, en):

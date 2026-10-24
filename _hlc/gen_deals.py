@@ -583,6 +583,8 @@ def main():
     today = datetime.date.today().isoformat()
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and (x['facts'].get('ida') or '9999') >= today]
     deals = [norm_deal(x) for x in deals]
+    for x in deals:
+        x['cta_flight'] = BK.fix_flight(x.get('cta_flight'))
     for x in deals:  # chollos por debajo del umbral: fuera también su página (la web y el JS los esconden)
         if not keep_deal(x) and x.get('slug') and os.path.isdir(os.path.join('chollos', x['slug'])):
             import shutil

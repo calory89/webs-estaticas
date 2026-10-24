@@ -1,3 +1,4 @@
+import re
 """Booking: una búsqueda solo con ?ss=<ciudad> falla a muchos usuarios ("nuestro sistema no reconoce este nombre"
 o 0 resultados). Con dest_id + dest_type funciona siempre. Este módulo añade el dest_id a cualquier enlace de búsqueda
 de Booking (directo o envuelto en el deep link de CJ). Ids en _hlc/booking_dest.json (sacados de Booking)."""
@@ -91,3 +92,24 @@ if __name__ == '__main__':  # python3 _hlc/bk.py [prefijos...]  -> arregla todo 
         if t != s:
             open(f, 'w', encoding='utf-8', errors='surrogateescape').write(t); n += 1
     print('booking dest_id:', n, 'archivos')
+
+
+# Booking.com vuelos: los códigos de ciudad con varios aeropuertos (ROM, LON, PAR...) van como .CITY; con .AIRPORT Booking entiende otra cosa (ROM -> Rumanía)
+METRO = set("LON MIL NYC PAR ROM STO BUE RIO TYO OSA YTO TCI WAS CHI SEL BJS SHA MOW BUH SAO YMQ JKT REK DTT QDF HOU YEA".split())
+_FL = re.compile(r'\b([A-Z]{3})\.AIRPORT\b')
+
+
+def fix_flight(u):
+    if not u:
+        return u
+    from urllib.parse import unquote, quote
+    def rep(t):
+        return _FL.sub(lambda m: m.group(1) + ('.CITY' if m.group(1) in METRO else '.AIRPORT'), t)
+    if 'url=' in u:
+        head, _, enc = u.partition('url=')
+        tail = ''
+        if '&' in enc and not enc.startswith('http'):
+            enc, _, tail = enc.partition('&')
+            tail = '&' + tail if tail else ''
+        return head + 'url=' + quote(rep(unquote(enc)), safe='') + tail
+    return rep(u)
