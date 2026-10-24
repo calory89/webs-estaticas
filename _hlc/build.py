@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '16'
+V = '17'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -113,6 +113,9 @@ def old_notice(t):
         links += f'<a class="hlc-btn o" href="/chollos/?q={_html.escape(_sl(p["n"]))}">Buscar {_html.escape(p["n"])} en los chollos</a>'
     box = (f'<!--hlc-old--><div class="hlc-old hlc-old-ssr" role="note">🕒 <strong>Oferta caducada.</strong> Este chollo se publicó el {pub.day} de {MES[pub.month - 1]} de {pub.year} '
            f'y su precio ya no está disponible. <div class="hlc-row">{links}</div></div><!--/hlc-old-->')
+    m1 = re.search(r'<div class="post-image\b', t)
+    if m1:
+        return t[:m1.start()] + box + t[m1.start():]
     m2 = re.search(r'<div class="inner-post-entry[^>]*>|<div class="(?:post-entry|entry-content)[^>]*>', t)
     if not m2:
         return t
