@@ -18,7 +18,7 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
     
     <!-- SEO -->
-    <title>ReelRole — Get Hired Through Video | AI-Powered Recruitment</title>
+    <title>ReelRole: Get Hired Through Video · AI-Powered Recruitment</title>
     <meta name="description" content="Record a short video and let top companies discover you. ReelRole is the video-first hiring platform: free for talent, companies pay only to unlock the candidates they want." />
     <link rel="canonical" href="https://reelrole.com/" />
     <meta name="robots" content="index, follow" />
@@ -27,7 +27,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://reelrole.com/" />
-    <meta property="og:title" content="ReelRole — Get Hired Through Video | AI-Powered Recruitment" />
+    <meta property="og:title" content="ReelRole: Get Hired Through Video · AI-Powered Recruitment" />
     <meta property="og:description" content="Record a short video and let top companies discover you. Free for talent. Companies unlock candidates from €15." />
     <meta property="og:image" content="https://reelrole.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -37,79 +37,62 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ReelRole — Get Hired Through Video" />
+    <meta name="twitter:title" content="ReelRole: Get Hired Through Video" />
     <meta name="twitter:description" content="Record a short video and let top companies discover you. AI-powered video hiring." />
     <meta name="twitter:image" content="https://reelrole.com/og-image.png" />
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "ReelRole",
-      "url": "https://reelrole.com",
-      "description": "AI-powered video hiring platform. Record a short video and get hired by top companies.",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "description": "Free for job seekers. Companies pay €15 per candidate unlock or €65/month for unlimited unlocks."
-      },
-      "creator": {
-        "@type": "Organization",
-        "name": "Equinox Investment Group LLC",
-        "url": "https://reelrole.com"
-      }
-    }
-    </script>
+    <!-- JSON-LD (Organization + WebApplication) is injected by the home page only. -->
 
     <!-- Critical CSS -->
     <style>
       html { font-family: 'Inter', system-ui, sans-serif; }
       body { margin: 0; padding: 0; background: #fff; }
       #root { min-height: 100vh; }
+      /* Generic app-shell skeleton (header bar + text lines); matches the app theme. */
       .initial-skeleton {
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        background: #fff; z-index: 9999;
-        display: flex; flex-direction: column; align-items: center;
-        justify-content: flex-start; padding-top: 120px;
+        --sk-bg: #fff; --sk-a: #f3f4f6; --sk-b: #e5e7eb;
+        position: fixed; inset: 0; background: var(--sk-bg); z-index: 9999;
+        display: flex; flex-direction: column; align-items: center; padding-top: 112px;
       }
-      .skeleton-hero { width: 90%; max-width: 800px; text-align: center; margin-bottom: 48px; }
-      .skeleton-title {
-        width: 100%; height: 48px;
-        background: linear-gradient(90deg, #f3f4f6, #e5e7eb, #f3f4f6);
+      .initial-skeleton.sk-dark { --sk-bg: #0b0b0f; --sk-a: #1c1c22; --sk-b: #2a2a32; }
+      .sk-bar { position: absolute; top: 0; left: 0; right: 0; height: 64px; border-bottom: 1px solid var(--sk-a); }
+      .sk-wrap { width: 90%; max-width: 720px; }
+      .sk-line {
+        height: 20px; border-radius: 8px; margin: 0 auto 16px;
+        background: linear-gradient(90deg, var(--sk-a), var(--sk-b), var(--sk-a));
         background-size: 200% 100%; animation: shimmer 1.5s infinite;
-        border-radius: 8px; margin-bottom: 24px;
       }
-      .skeleton-video {
-        width: 90%; max-width: 400px; height: 600px;
-        background: linear-gradient(90deg, #f3f4f6, #e5e7eb, #f3f4f6);
-        background-size: 200% 100%; animation: shimmer 1.5s infinite;
-        border-radius: 16px; margin: 0 auto;
-      }
+      .sk-line.sk-title { height: 40px; margin-bottom: 24px; }
+      @media (prefers-reduced-motion: reduce) { .sk-line { animation: none; } }
       @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
     </style>
-    <script type="module" crossorigin src="/assets/index-wNWb7ipG.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-C7GLl8Yh.js">
-    <link rel="modulepreload" crossorigin href="/assets/ui-CDUtf7I6.js">
-    <link rel="modulepreload" crossorigin href="/assets/video-CtjqpEbr.js">
-    <link rel="modulepreload" crossorigin href="/assets/utils-C8IdxI6Z.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-DcQCJk4c.css">
+    <script type="module" crossorigin src="/assets/index-BPnIVbiK.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-B6qc8Li7.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-B0svJ6YN.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-Cx6NOHcv.css">
   </head>
   <body>
-    <div class="initial-skeleton" id="initial-skeleton">
-      <div class="skeleton-hero">
-        <div class="skeleton-title"></div>
-        <div class="skeleton-title" style="width: 80%; margin: 0 auto;"></div>
+    <div class="initial-skeleton" id="initial-skeleton" aria-hidden="true">
+      <div class="sk-bar"></div>
+      <div class="sk-wrap">
+        <div class="sk-line sk-title" style="width: 70%"></div>
+        <div class="sk-line" style="width: 90%"></div>
+        <div class="sk-line" style="width: 80%"></div>
+        <div class="sk-line" style="width: 40%; height: 44px; margin-top: 32px; border-radius: 999px"></div>
       </div>
-      <div class="skeleton-video"></div>
     </div>
-    
+    <script>
+      // Scroll-reveal may hide content only when JS is running (see .reveal in index.css).
+      document.documentElement.classList.add('js-reveal');
+      // Match the theme next-themes will apply (light by default, dark only if chosen).
+      try { if (localStorage.getItem('theme') === 'dark') document.getElementById('initial-skeleton').classList.add('sk-dark'); } catch (e) {}
+    </script>
+    <!-- Without JS the skeleton must not cover the fallback content below. -->
+    <noscript><style>.initial-skeleton { display: none !important; }</style></noscript>
+
     <noscript>
       <div style="max-width:720px;margin:40px auto;padding:0 16px;font-family:system-ui,sans-serif;color:#111">
-        <h1>ReelRole — Get hired through video</h1>
+        <h1>ReelRole: Get hired through video</h1>
         <p>Record a short video introduction and let companies discover you. Free for talent. Companies browse video profiles and pay only to unlock the candidates they want to contact (€15 per unlock, or €65/month for unlimited unlocks).</p>
         <ul>
           <li><a href="/for-talent">For talent</a></li>
