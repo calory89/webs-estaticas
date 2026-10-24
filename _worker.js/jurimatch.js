@@ -119,6 +119,26 @@ async function dynamicPage(path, m, ctx) {
   return null;
 }
 
+// /sitemap.xml built from the manifest (indexable pages only) plus hand-verified firm profiles
+// and blog posts from the database. Cached 1 h at the edge.
+export async function route(req, u, env, ctx) {
+  if (u.pathname !== '/sitemap.xml') return null;
+  const m = await loadManifest(env, u);
+  if (!m) return null;
+  const day = (m.generatedAt || new Date().toISOString()).slice(0, 10);
+  const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path]) => [ORIGIN + path, day]);
+  const [firms, posts] = await Promise.all([
+    sb('lawyers?select=firm_name,last_verified_at&status=eq.active&verified=is.true&source=eq.' + CURATED + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000', ctx),
+    sb('blog_posts?select=slug,published_at,created_at&order=published_at.desc&limit=2000', ctx),
+  ]);
+  const seen = new Set();
+  for (const f of firms || []) { const s = slugify(f.firm_name); if (s && !seen.has(s)) { seen.add(s); urls.push([ORIGIN + '/firms/' + s, String(f.last_verified_at || day).slice(0, 10)]); } }
+  for (const p of posts || []) if (p.slug) urls.push([ORIGIN + '/blog/' + p.slug, String(p.published_at || p.created_at || day).slice(0, 10)]);
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + urls.map(([loc, mod]) => '  <url><loc>' + esc(loc) + '</loc><lastmod>' + mod + '</lastmod></url>').join('\n') + '\n</urlset>\n';
+  return new Response(xml, { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+}
+
 export async function render(req, res, u, env, ctx) {
   const ct = res.headers.get('content-type') || '';
   if (res.status !== 200 || !ct.includes('text/html')) return res;

@@ -1,31 +1,12 @@
-User-agent: Googlebot
-Allow: /
-Disallow: /admin
-Disallow: /dashboard
-Disallow: /case/
-Disallow: /auth
-Disallow: /reset-password
-
-User-agent: Bingbot
-Allow: /
-Disallow: /admin
-Disallow: /dashboard
-Disallow: /case/
-Disallow: /auth
-Disallow: /reset-password
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /dashboard
 Disallow: /case/
+Disallow: /lawyer/case/
 Disallow: /auth
 Disallow: /reset-password
+Disallow: /payment-success
+Disallow: /my-data
 
 Sitemap: https://jurimatch.com/sitemap.xml
