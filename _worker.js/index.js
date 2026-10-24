@@ -30,6 +30,7 @@ async function sbProxy(req, u) {
 }
 let top3 = null;
 let jm = null;
+let rr = null;
 const NOSPA = new Set(["grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
@@ -70,6 +71,8 @@ export default {
     const r = await this.siteRaw(req, env, ctx, u, host);
     // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).
     if (host === 'jurimatch.com' && req.method === 'GET') { if (!jm) jm = await import('./jurimatch.js'); return jm.render(req, r, u, env, ctx); }
+    // reelrole.com: per-URL meta, candidate pages and real 404s (see reelrole.js).
+    if (host === 'reelrole.com' && req.method === 'GET') { try { if (!rr) rr = await import('./reelrole.js'); return await rr.render(req, r, u, env, ctx); } catch (e) { return r; } }
     return r;
   },
   async siteRaw(req, env, ctx, u, host) {
