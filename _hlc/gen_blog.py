@@ -81,7 +81,7 @@ def blog_page(posts):
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f'{SITE}/{p["s"]}/', "name": p['t']} for i, p in enumerate(arts[:30])]}},
           {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE + '/'}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": url}]}]
     pg = G.head(title='Blog de viajes low cost: guías de ciudades y trucos · Happy Low Cost', desc=G.e(G.smart_desc(lead)), canonical=url, og_type='website',
-                og_image=f'{SITE}/hlc/brand/og-default.jpg', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + G.ld_script(ld), body_class='blog')
+                og_image=f'{SITE}/hlc/brand/og-default.jpg', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + G.ld_script(ld), body_class='hblog')
     pg += (f'<main class="sec" style="padding-top:26px"><div class="wrap"><nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a> › Blog</nav>'
            f'<div class="kicker">Blog</div><h1 class="x-h1">Blog de viajes low cost</h1><p style="font-size:18px;max-width:760px">{G.e(lead)}</p>'
            f'<h2 style="margin-top:28px">Guías prácticas</h2><div class="bl-gs">{gh}</div>'
