@@ -116,17 +116,17 @@ home += f"""
 <main>
 <section class="h2-hero"><div class="wrap h2-grid">
 <div>
-<div class="h2-proof">★★★★★ <b>Más de 420.000 viajeros</b> desde 2012</div>
+<div class="h2-proof"><b>Más de 420.000 viajeros</b> nos siguen desde 2012</div>
 <h1>Vuelos a <em>mitad de precio</em>, directos a tu móvil.</h1>
 <p class="h2-lead">Vigilamos aerolíneas de todo el mundo, comprobamos cada precio y te avisamos cuando sale un chollo desde tu aeropuerto. Gratis.</p>
 {quick_form(1)}
 </div>
-<div class="h2-phone" aria-hidden="true"><div class="h2-screen"><div class="h2-notif"><b>Happy Low Cost</b><span>ahora</span></div><div class="h2-deal" data-hlc-hero-deal><div class="h2-skel"></div></div><div class="h2-deal h2-deal2" data-hlc-hero-deal2></div></div></div>
+<div class="h2-phone" aria-hidden="true"><div class="h2-screen"><div class="h2-notif"><b>Happy Low Cost</b><span>ahora</span></div><!--ssr-hero--><div class="h2-deal" data-hlc-hero-deal><div class="h2-skel"></div></div><div class="h2-deal h2-deal2" data-hlc-hero-deal2></div><!--/ssr-hero--></div></div>
 </div></section>
 
 <section class="sec h2-sec" id="hoy"><div class="wrap">
 <div class="h2-h"><h2>Así son los chollos de hoy</h2><p>Precio habitual de la ruta frente al precio que hemos cazado. Comprobado en el momento.</p></div>
-<div class="dc-grid h2-deals" id="hoy-grid" data-hlc-deals data-filter data-max="6" data-savings><div class="dc-empty"><b>Cargando chollos…</b></div></div>
+<div class="dc-grid h2-deals" id="hoy-grid" data-hlc-deals data-filter data-max="6" data-savings><!--ssr-deals--><div class="dc-empty"><b>Cargando chollos…</b></div><!--/ssr-deals--></div>
 <div class="h2-more"><a class="hlc-btn o" href="/chollos/">Ver todos los chollos y filtrar</a></div>
 </div></section>
 

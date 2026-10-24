@@ -86,7 +86,6 @@ HEADER = '''<header class="hx" id="hx"><div class="hx-in">
 <a href="/en/deals/">Today's deals</a>
 <a href="/en/flights/">Flight routes</a>
 <a href="/en/destinations/">Destination guides</a>
-<a href="/" hreflang="es" lang="es">Español</a>
 <a class="hx-cta" href="/en/deals/">✈️ Find a deal</a>
 </nav></div></header>'''
 FOOTER = '''<footer class="fx"><div class="fx-in">
@@ -97,7 +96,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/aviso-legal-datos-cookies/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy & cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=11" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=12" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -182,11 +181,12 @@ def main():
         dests = []
     today = datetime.date.today().isoformat()
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and x.get('en') and (x['facts'].get('ida') or '9999') >= today and G.photo_url(x)]  # nunca sin foto
+    deals = [G.norm_deal(x) for x in deals]
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html_en')}
     hechos = set()
     origins = {slugify(country(x['facts'], 'origen')) for x in deals}
-    nconts = len({G.cont_of(x['facts'])[0] for x in deals})
+    nconts = len({G.REAL_CONT.get(x['facts'].get('continente') or '') for x in deals} - {None, ''})
 
     # ---------- deal pages ----------
     for x in deals:
@@ -251,7 +251,7 @@ def main():
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/deals/{x['slug']}/", "name": x['en'].get('title', '')} for i, x in enumerate(deals[:50])]
     ldl = [{"@type": "CollectionPage", "name": "Today's flight deals", "url": f"{SITE}/en/deals/", "inLanguage": "en", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     ch, cld = crumbs([('Home', '/en/'), ('Deals', None)])
-    page = head("Today's cheap flight deals worldwide, verified · Happy Low Cost", intro[:155], f'{SITE}/en/deals/', f'{SITE}/chollos/', ld=ldl + [cld], body_class='chollos')
+    page = head("Today's cheap flight deals worldwide, verified · Happy Low Cost", G.smart_desc(intro), f'{SITE}/en/deals/', f'{SITE}/chollos/', ld=ldl + [cld], body_class='chollos')
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch}
 <div class="sec-h"><div><div class="kicker">Freshly hunted · verified</div><h1 class="x-h1">Today's flight deals</h1><p>{e(intro)}</p></div></div>
@@ -302,7 +302,7 @@ def main():
     page += f'''<main>
 <section class="h2-hero"><div class="wrap h2-grid">
 <div>
-<div class="h2-proof">★★★★★ <b>420,000+ travellers</b> since 2012</div>
+<div class="h2-proof"><b>420,000+ travellers</b> have followed us since 2012</div>
 <h1>Flights at <em>half price</em>, straight to your phone.</h1>
 <p class="h2-lead">We watch airlines all over the world, check every price, and alert you when a deal leaves from your airport. Free.</p>
 {qform()}

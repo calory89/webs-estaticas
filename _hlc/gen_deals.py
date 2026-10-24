@@ -34,6 +34,47 @@ ALIAS = {'nueva-york': ['new-york', 'nueva-york', 'nyc'], 'la-habana': ['habana'
          'belgrado': ['belgrade'], 'cerdena': ['cagliari', 'olbia', 'alghero', 'sardinia'], 'creta': ['heraklion', 'chania', 'crete'], 'palermo': ['sicilia', 'catania'], 'bogota': ['bogota'], 'madeira': ['funchal', 'madeira'], 'azores': ['ponta-delgada', 'islas-azores', 'azores'], 'mauricio': ['isla-mauricio', 'mauritius', 'mauricio'], 'hong-kong': ['hong-kong', 'hongkong'], 'kuala-lumpur': ['kuala-lumpur'], 'manila': ['manila'], 'sal': ['sal', 'isla-de-sal', 'santa-maria'], 'portland': ['portland']}
 
 
+NORM_CITY = {'Las Palmas de Gran Canaria': 'Gran Canaria', 'Denpasar (Bali)': 'Bali', 'Denpasar': 'Bali', 'Abu Dhabi': 'Abu Dabi', 'Port Louis': 'Isla Mauricio'}
+NORM_C = {'EE. UU.': 'Estados Unidos', 'EEUU': 'Estados Unidos', 'EE.UU.': 'Estados Unidos', 'Emiratos': 'Emiratos Árabes Unidos', 'Rep. Dominicana': 'República Dominicana', 'Escocia': 'Reino Unido', 'Sicilia': 'Italia'}
+
+
+def norm_deal(x):
+    """Un mismo sitio, un mismo nombre (Abu Dabi, Gran Canaria, Bali, Estados Unidos...) en tarjetas, títulos y filtros."""
+    f = x.get('facts') or {}
+    for k in ('origen', 'destino'):
+        if f.get(k) in NORM_CITY:
+            f[k] = NORM_CITY[f[k]]
+    for k in ('origen_pais', 'pais'):
+        if f.get(k) in NORM_C:
+            f[k] = NORM_C[f[k]]
+    for k in ('title', 'excerpt', 'seo_title', 'meta_description', 'body_html'):
+        if isinstance(x.get(k), str):
+            for a, b in NORM_CITY.items():
+                if a != 'Denpasar':
+                    x[k] = x[k].replace(a, b)
+    return x
+
+
+def smart_desc(t, n=155):
+    """Meta description sin cortes a media frase: frases enteras hasta n caracteres; si no cabe ni una, corte por palabra con puntos suspensivos."""
+    t = ' '.join((t or '').split())
+    if len(t) <= n:
+        return t
+    out = ''
+    for sent in re.split(r'(?<=[.!?])\s+', t):
+        if len(out) + len(sent) + (1 if out else 0) > n:
+            break
+        out = (out + ' ' + sent).strip()
+    if out:
+        return out
+    return t[:n - 1].rsplit(' ', 1)[0].rstrip(',;:') + '…'
+
+
+# continentes de verdad (Oriente Medio es Asia; Caribe y Centroamérica, América del Norte)
+REAL_CONT = {'Europa': 'Europa', 'Asia': 'Asia', 'Oriente Medio': 'Asia', 'Norteamérica': 'América del Norte', 'Centroamérica y Caribe': 'América del Norte',
+             'Sudamérica': 'América del Sur', 'África': 'África', 'Oceanía': 'Oceanía'}
+
+
 def slugify(s):
     s = unicodedata.normalize('NFD', s or '').encode('ascii', 'ignore').decode()
     return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
@@ -414,7 +455,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
     ch, cld = crumbs(crumb_items)
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/chollos/{x['slug']}/", "name": x.get('title') or ''} for i, x in enumerate(deals[:50])]
     graph = [cld, {"@type": "CollectionPage", "name": h1, "url": canonical, "inLanguage": "es-ES", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
-    desc = intro[:155]
+    desc = smart_desc(intro)
     page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else 'index, follow, max-image-preview:large',
                 extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
     cards = ''.join(card(x) for x in deals) or EMPTY
@@ -462,6 +503,7 @@ def main():
     open(os.path.join('chollos', 'feed.sha'), 'w').write(hashlib.sha256(raw).hexdigest() + hashlib.sha256(raw_d).hexdigest()[:16] + '\n')
     today = datetime.date.today().isoformat()
     deals = [x for x in deals if x.get('slug') and x.get('price') and x.get('facts') and (x['facts'].get('ida') or '9999') >= today]
+    deals = [norm_deal(x) for x in deals]
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
     dmap = {g['slug']: g for g in dests if g.get('guide_html')}
 
@@ -484,6 +526,7 @@ def main():
     deals = [x for x in deals if photo_url(x)]
     # marca en destinos.json qué destinos tienen guía (lo usa el mapa) y cuántas fotos extra hay
     for p in DLIB:
+        p['c'] = NORM_C.get(p.get('c'), p.get('c'))
         p['g'] = 1 if p['s'] in dmap else 0
         p['k'] = n_extra(p['s'])
     json.dump(DLIB, open(os.path.join('hlc', 'destinos.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
@@ -587,12 +630,30 @@ def main():
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(page)
 
     hub = hub_links(origins, conts, dests_with_deals)
-    nconts = len(conts)
+    nconts = len({REAL_CONT.get(x['facts'].get('continente') or '') for x in deals} - {None, ''})
     # ---------- explorador /chollos/ ----------
     intro = (f"{len(deals)} chollos de vuelos activos ahora mismo, con salida desde {len(origins)} países y destinos en {nconts} continentes. "
              f"Cada precio se comprueba antes de publicarlo; si mañana ya no está, lo retiramos.")
     list_page('chollos', 'Chollos de vuelos de hoy en todo el mundo, verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
               f'{SITE}/chollos/', [('Inicio', '/'), ('Chollos', None)], extra_links=hub, explorer=True)
+
+    # ---------- portada: chollos en el HTML (Google y móviles lentos los ven sin esperar al JavaScript) ----------
+    if os.path.exists('index.html'):
+        pool = sorted(deals, key=lambda x: (0 if x['facts'].get('origen_cc') == 'ES' else 1, 0 if x['facts'].get('ahorro_pct') else 1, -(datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19]).timestamp())))
+        top = pool[:6]
+        ix = open('index.html', encoding='utf-8').read()
+        if '<!--ssr-deals-->' in ix:
+            ix = re.sub(r'<!--ssr-deals-->.*?<!--/ssr-deals-->', lambda m: '<!--ssr-deals-->' + (''.join(card(x) for x in top) or EMPTY) + '<!--/ssr-deals-->', ix, flags=re.S)
+        def phone(x, cls, attr):
+            f = x['facts']
+            was = f'<s>{e(f.get("precio_normal"))} €</s> ' if f.get('precio_normal') else ''
+            sv = f' <i>−{e(f.get("ahorro_pct"))} %</i>' if f.get('ahorro_pct') else ''
+            return (f'<div class="{cls}" {attr}><a href="/chollos/{e(x["slug"])}/"><span class="h2-ph" style="background-image:url({e(photo_url(x))})"></span>'
+                    f'<span class="h2-t"><b>✈️ {e(f.get("origen"))} → {e(f.get("destino"))}</b><span>{was}<em>{e(x.get("price"))} €</em>{sv}</span><small>{e(f.get("tipo", ""))}{" · directo" if f.get("escalas") == 0 else ""}</small></span></a></div>')
+        sv_pool = [x for x in pool if x['facts'].get('precio_normal')] or pool
+        if '<!--ssr-hero-->' in ix and len(sv_pool) >= 2:
+            ix = re.sub(r'<!--ssr-hero-->.*?<!--/ssr-hero-->', lambda m: '<!--ssr-hero-->' + phone(sv_pool[0], 'h2-deal', 'data-hlc-hero-deal') + phone(sv_pool[1], 'h2-deal h2-deal2', 'data-hlc-hero-deal2') + '<!--/ssr-hero-->', ix, flags=re.S)
+        open('index.html', 'w', encoding='utf-8').write(ix)
 
     # ---------- landings por país de salida ----------
     known = set(json.load(open('chollos/landings.json'))) if os.path.exists('chollos/landings.json') else set()
