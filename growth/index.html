@@ -113,5 +113,6 @@ btn.disabled=true;msg.textContent=t('f_sending');
 fetch('https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:name,email:email,company:v('co'),message:'['+location.pathname+']\n'+body,kind:f.getAttribute('data-kind'),lang:window.cdoLang(),consent:true,website:D.getElementById('f-web').value})})
 .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.ok===false)throw new Error('send');});})
 .then(function(){f.reset();msg.textContent=t('f_done');}).catch(function(){msg.textContent=t('f_err');}).then(function(){btn.disabled=false;});});})();</script>
+<script src="/assets/cdo/cdo-boost.js?v=1" defer></script>
 </body>
 </html>
