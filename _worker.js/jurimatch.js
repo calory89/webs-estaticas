@@ -164,6 +164,32 @@ export async function route(req, u, env, ctx) {
   return new Response(xml, { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 
+// /lawyers/<alias>[/<alias>] and /claims/<alias> -> canonical URL (same alias tables as the app).
+function aliasTarget(path, m) {
+  const A = m.aliases || {};
+  const norm = (x) => String(x || '').trim().toLowerCase().replace(/_/g, '-');
+  let mm;
+  if ((mm = path.match(/^\/lawyers\/([^/]+)(?:\/([^/]+))?$/i))) {
+    const t0 = norm(mm[1]); const c0 = mm[2] ? norm(mm[2]) : null;
+    const t = m.pages['/lawyers/' + t0] ? t0 : (A.type || {})[t0];
+    const c = c0 === null ? null : (m.pages['/lawyers/' + (t || t0) + '/' + c0] ? c0 : (A.country || {})[c0]);
+    if (!t || (c0 !== null && !c)) return null;
+    const to = '/lawyers/' + t + (c ? '/' + c : '');
+    return to !== path && m.pages[to] ? to : null;
+  }
+  if ((mm = path.match(/^\/claims\/([^/]+)$/i))) {
+    const g0 = norm(mm[1]); const g = m.pages['/claims/' + g0] ? g0 : (A.claim || {})[g0];
+    const to = g ? '/claims/' + g : null;
+    return to && to !== path && m.pages[to] ? to : null;
+  }
+  if ((mm = path.match(/^\/guides\/([^/]+)$/i))) {
+    const c0 = norm(mm[1]); const c = m.pages['/guides/' + c0] ? c0 : (A.country || {})[c0];
+    const to = c ? '/guides/' + c : null;
+    return to && to !== path && m.pages[to] ? to : null;
+  }
+  return null;
+}
+
 export async function render(req, res, u, env, ctx) {
   const ct = res.headers.get('content-type') || '';
   if (res.status !== 200 || !ct.includes('text/html')) return res;
@@ -174,10 +200,22 @@ export async function render(req, res, u, env, ctx) {
   let status = 200;
   if (!page && path.startsWith('/community')) page = { ...m.pages['/community'] };
   if (!page) {
+    const alias = aliasTarget(path, m);
+    if (alias) return Response.redirect(ORIGIN + alias + u.search, 301);
+  }
+  if (!page) {
     try { page = await dynamicPage(path, m, ctx); } catch (e) { page = null; }
     if (page && page.status) status = page.status;
   }
-  if (!page) return res;
+  if (!page && (m.appPatterns || []).some((p) => new RegExp(p).test(path))) {
+    // A real screen of the app (a case, a shared score...): served as is, never indexed.
+    page = { t: 'JuriMatch', d: 'JuriMatch account area.', noindex: true };
+  }
+  if (!page) {
+    // Not a page of the site: the app shows its "not found" screen, and the status says so.
+    page = { t: 'Page not found | JuriMatch', d: "This page doesn't exist on JuriMatch.", noindex: true, h1: 'Page not found', links: [{ href: '/', text: 'Home' }, { href: '/lawyers', text: 'Lawyers by case type and country' }] };
+    status = 404;
+  }
 
   const url = ORIGIN + path;
   const lang = page.lang || 'en';
