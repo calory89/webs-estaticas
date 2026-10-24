@@ -170,18 +170,20 @@ try{(window.dataLayer=window.dataLayer||[]).push({event:'hlc_search',hlc_q:q.sli
 var tm;inp.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,150);});
 document.getElementById('sf').addEventListener('submit',function(e){e.preventDefault();run();});
 var q0=new URLSearchParams(location.search).get('q');if(q0)inp.value=q0;run();
-fetch(EN?'/hlc/search-en.json':'/hlc/search-es.json').then(function(r){return r.json();}).then(function(j){IDX=j;run();}).catch(function(){out.innerHTML='<p class="sr-hint">'+T('No se ha podido cargar el buscador.','Search could not load.')+'</p>';});
+fetch((EN?'/hlc/search-en.json':'/hlc/search-es.json')+'?v=IDXV').then(function(r){return r.json();}).then(function(j){IDX=j;run();}).catch(function(){out.innerHTML='<p class="sr-hint">'+T('No se ha podido cargar el buscador.','Search could not load.')+'</p>';});
 var tries=0;(function wait(){if(window.HLC_feed){window.HLC_feed().then(function(l){DEALS=l||[];fetch('/chollos/hechos.json').then(function(r){return r.json();}).then(function(h){DEALS.forEach(function(x){if(h.indexOf(x.slug)>=0)x._u='/chollos/'+x.slug+'/';});run();}).catch(run);});}else if(tries++<40)setTimeout(wait,150);})();
 })();</script>'''
 
 
 def search_pages():
+    import hashlib
     for en in (False, True):
+        ver = hashlib.md5(open('hlc/search-en.json' if en else 'hlc/search-es.json', 'rb').read()).hexdigest()[:8]
         L = (lambda a, b: b if en else a)
         url = f'{SITE}/en/search/' if en else f'{SITE}/buscar/'
         body = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:860px"><h1 class="x-h1">{L("Buscar en Happy Low Cost", "Search Happy Low Cost")}</h1>'
                 f'<form id="sf" class="sr-f" role="search"><input id="sq" type="search" name="q" autocomplete="off" autofocus placeholder="{L("Ciudad, país, aeropuerto o tema", "City, country, airport or topic")}" aria-label="{L("Buscar", "Search")}">'
-                f'<button class="hlc-btn" type="submit">{L("Buscar", "Search")}</button></form><div id="sr" aria-live="polite"></div></div></main>' + SEARCH_JS)
+                f'<button class="hlc-btn" type="submit">{L("Buscar", "Search")}</button></form><div id="sr" aria-live="polite"></div></div></main>' + SEARCH_JS.replace('IDXV', ver))
         if en:
             pg = E.head('Search · Happy Low Cost', 'Search flight deals, routes, destinations and guides on Happy Low Cost.', url, f'{SITE}/buscar/', robots='noindex, follow', body_class='search') + body + E.FOOTER + '</body></html>'
             os.makedirs('en/search', exist_ok=True)
