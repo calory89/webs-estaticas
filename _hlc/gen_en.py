@@ -87,7 +87,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=36" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=37" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -255,7 +255,7 @@ def main():
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt"><div class="howbook"><b>How to book it in 3 steps</b><ol><li>Tap “See flight & dates”: the search opens with these dates.</li><li>If the price has changed, try a day earlier or later; similar dates are usually there.</li><li>Before paying, check which baggage the fare includes.</li></ol></div>{en.get('body_html') or ''}
+<article class="txt"><div class="howbook"><b>How to book it in 3 steps</b><ol><li>Tap “See flight & dates”: the search opens with these dates.</li><li>If the price has changed, try a day earlier or later; similar dates are usually there.</li><li>Before paying, check which baggage the fare includes.</li></ol></div>{G.bag_box(f, True)}{en.get('body_html') or ''}
 {f'<p>{guide}</p>' if guide else ''}</article>
 <aside class="deal-card">
 <div class="facts">
@@ -267,6 +267,7 @@ def main():
 <a class="hlc-btn t" href="{e(ht)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel_en">🏨 Hotels in {e(d)} for these dates</a>
 {guide}
 {route_cal_en(f)}<a class="hlc-btn o" href="/en/tools/baggage/">🧳 Does your bag fly free?</a>
+{G.alt_box(f, True)}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Price re-checked every day. Cheap fares go fast: if it has changed, try nearby dates.</div>
 <div class="rep"><button type="button" class="hlc-btn o" data-hlc-report="{e(slug)}">⚠️ Price gone? Tell us</button><small data-report-msg role="status" aria-live="polite"></small></div>
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Share</button><a class="hlc-btn o" href="https://wa.me/?text={share}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copy link</button></div>
@@ -295,7 +296,7 @@ def main():
 <div class="sec-h"><div><div class="kicker">Freshly hunted · verified</div><h1 class="x-h1">Today's flight deals</h1><p>{e(intro)}</p></div></div>
 {filters(deals)}
 <div class="dc-grid" data-explorer-grid>{grid}</div>{empty}
-</div></main><script src="/hlc/explorer.js?v=4" defer></script>{FOOTER}</body></html>'''
+</div></main><script src="/hlc/explorer.js?v=5" defer></script>{FOOTER}</body></html>'''
     write('en/deals', page)
 
     # ---------- landings by departure city (EN) ----------

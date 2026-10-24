@@ -263,3 +263,11 @@ body.single time,body.single .post-tags,body.single .post-box-meta-single,body.s
 .pm-card b{font:800 20px var(--fd)}.pm-card span{color:#4A5468}
 .pm-chips{flex-wrap:wrap}
 .hlc-ck .hlc-btn,.hlc-ck button{border-radius:14px!important}
+.bagbox{margin:0 0 22px;padding:14px 16px;border-radius:16px;background:#FFF6EC;border:1px solid var(--linea);font-size:15px;line-height:1.5}
+.bagbox b{display:block;margin-bottom:4px}.bagbox p{margin:0!important;font-size:15px!important}
+.altbox{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid var(--linea);font-size:15px}
+.altbox ul{list-style:none;margin:0;padding:0}.altbox li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #F1E8DA}
+.altbox li:last-child{border-bottom:0}.altbox li a{color:var(--tinta);font-weight:700;text-decoration:none}.altbox li span{color:#C93A1C;font-weight:700;white-space:nowrap}
+.altbox>a{font-weight:700}.altbox small{color:#4A5468;font-size:13px}
+.xchips{margin:10px 0 14px}.xchips[hidden]{display:none}.xchips .chip.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.pm-bud{margin:0 0 18px}.pm-bud h3{font-size:18px;margin:0 0 8px}.pm-bud h3 small{color:#4A5468;font-weight:600}.pm-bud a.chip{text-decoration:none}

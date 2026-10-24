@@ -39,6 +39,7 @@
     var key = { nuevo: function (c) { var t = Date.parse(c.dataset.ts) || 0, h = (Date.now() - t) / 36e5; return (h < 12 ? 0 : h < 36 ? 1 : 2) * 1e14 + rank(c) * 1e13 - t; }, precio: function (c) { return +c.dataset.price; }, fecha: function (c) { return Date.parse(c.dataset.ida) || 9e15; } }[st.orden] || function () { return 0; };
     cards.slice().sort(function (a, b) { return key(a) - key(b); }).forEach(function (c) { grid.appendChild(c); });
     if (count) count.textContent = n;
+    try { chips(); } catch (er) {}
     if (empty) empty.hidden = n > 0;
     if (push) {
       var p = new URLSearchParams();
@@ -50,6 +51,25 @@
       try { (w.dataLayer = w.dataLayer || []).push({ event: 'hlc_filtro', filtros: qs }); } catch (e) {}
     }
   }
+
+  // filtros activos como chips con "x" para quitarlos uno a uno
+  var esc = function (x) { return String(x == null ? '' : x).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var DEF = { q: '', desde: '', aero: '', dur: '', mes: '', cont: '', dir: false, rt: false, fav: false };
+  function chips() {
+    var c = d.querySelector('[data-x-chips]');
+    if (!c) { c = d.createElement('div'); c.setAttribute('data-x-chips', ''); c.className = 'chips xchips'; c.setAttribute('aria-label', EN ? 'Active filters' : 'Filtros activos'); box.parentNode.insertBefore(c, box.nextSibling);
+      c.addEventListener('click', function (e) { var b = e.target.closest('[data-x-rm]'); if (!b) return; var k = b.getAttribute('data-x-rm'); if (k === 'max') st.max = rng ? +rng.max : 1500; else st[k] = DEF[k]; paint(); apply(true); }); }
+    var lab = function (k) { var el = $(k); if (el && el.tagName === 'SELECT' && el.selectedIndex >= 0) return el.options[el.selectedIndex].text; return st[k]; };
+    var L = [];
+    ['q', 'desde', 'aero', 'dur', 'mes'].forEach(function (k) { if (st[k]) L.push([k, k === 'q' ? '“' + st[k] + '”' : lab(k)]); });
+    if (st.cont) { var bc = box.querySelector('[data-cont="' + st.cont + '"]'); L.push(['cont', bc ? bc.textContent.replace(/\s*\d+\s*$/, '').trim() : st.cont]); }
+    if (rng && st.max < +rng.max) L.push(['max', EN ? 'up to €' + st.max : 'hasta ' + st.max + ' €']);
+    ['dir', 'rt', 'fav'].forEach(function (k) { if (st[k]) { var el = $(k), lb = el && el.closest('label'); L.push([k, lb ? lb.textContent.trim() : k]); } });
+    c.innerHTML = L.map(function (x) { return '<button type="button" class="chip on" data-x-rm="' + x[0] + '" aria-label="' + (EN ? 'Remove filter: ' : 'Quitar filtro: ') + esc(x[1]) + '">' + esc(x[1]) + ' <span aria-hidden="true">✕</span></button>'; }).join('') +
+      (L.length > 1 ? '<button type="button" class="chip" data-x-rmall>' + (EN ? 'Clear all' : 'Quitar todos') + '</button>' : '');
+    c.hidden = !L.length;
+    var all = c.querySelector('[data-x-rmall]'); if (all) all.onclick = function () { st = { q: '', desde: '', aero: '', dur: '', mes: '', orden: st.orden, cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); };
+  }
   var t;
   box.addEventListener('input', function (e) {
     var k = e.target.getAttribute('data-x'); if (!k) return;
@@ -60,7 +80,7 @@
     var b = e.target.closest('[data-cont]'); if (b) { st.cont = b.getAttribute('data-cont') || ''; paint(); apply(true); return; }
     var rd = e.target.closest('[data-x-random]'); if (rd) { var vis = cards.filter(function (c) { return !c.hidden; }); if (vis.length) { var c = vis[Math.floor(Math.random() * vis.length)]; try { (w.dataLayer = w.dataLayer || []).push({ event: 'hlc_click', hlc_target: 'sorprendeme' }); } catch (er) {} location.href = c.getAttribute('href'); } return; }
     var tg = e.target.closest('[data-x-toggle]'); if (tg) { var o = box.classList.toggle('open'); tg.setAttribute('aria-expanded', o); tg.textContent = o ? (EN ? '✕ Fewer filters' : '✕ Menos filtros') : (EN ? '⚙️ More filters' : '⚙️ Más filtros'); return; }
-    if (e.target.closest('[data-x-clear]')) { st = { q: '', desde: '', mes: '', orden: 'nuevo', cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); }
+    if (e.target.closest('[data-x-clear]')) { st = { q: '', desde: '', aero: '', dur: '', mes: '', orden: 'nuevo', cont: '', max: rng ? +rng.max : 1500, dir: false, rt: false, fav: false }; paint(); apply(true); }
   });
   w.addEventListener('hlc:favs', function () { if (st.fav) apply(false); });
   paint(); apply(false);

@@ -225,6 +225,19 @@ def dest_page(d, lst, meses, en, en_slug, guide):
 
 
 # ---------- origen ----------
+def budget_blocks(lst, en, dname, link):
+    out = ''
+    for lo, hi in ((0, 50), (50, 100), (100, 300)):
+        g = [r for r in lst if lo <= r['price_from'] < hi]
+        if not g:
+            continue
+        h = (f'Under €{hi}' if lo == 0 else f'€{lo} to €{hi}') if en else (f'Por menos de {hi} €' if lo == 0 else f'De {lo} a {hi} €')
+        out += (f'<div class="pm-bud"><h3 id="{"under" if en else "menos"}-{hi}">{h} <small>{len(g)}</small></h3><div class="chips">'
+                + ''.join(f'<a class="chip" href="{link(r)}">{e(dname(r))} · {("€" + str(r["price_from"])) if en else (str(r["price_from"]) + " €")}</a>' for r in g[:24]) + '</div></div>')
+    return f'<h2>{"By budget" if en else "Por presupuesto"}</h2>{out}' if out else ''
+
+
+
 def orig_page(o, lst, en, en_slug):
     lst = sorted(lst, key=lambda r: r['price_from'])
     oname = en_names.city_en(o) if en else o
@@ -260,7 +273,8 @@ def orig_page(o, lst, en, en_slug):
             f'<p style="font-size:18px;max-width:820px">{e(lead)}</p>'
             f'<div class="pm-stats"><div><b>{lst[0]["price_from"]} €</b><span>{T("el destino más barato", "cheapest destination")}</span></div><div><b>{len(under)}</b><span>{T("destinos por menos de 100 €", "destinations under 100 €")}</span></div><div><b>{len(direct)}</b><span>{T("con vuelo directo", "with direct flights")}</span></div><div><b>{len(lst)}</b><span>{T("destinos", "destinations")}</span></div></div>'
             f'<div class="hlc-row" style="margin:18px 0 6px"><a class="hlc-btn o" href="{T("/chollos/?aero=" + os_, "/en/deals/")}">{T("Chollos de hoy desde " + oname, "Today’s deals")}</a>' + ('' if en else '<a class="hlc-btn o" href="/alertas/">Crear alerta gratis</a>') + '</div>'
-            f'<h2>{T("Precio a cada destino", "Price to each destination")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por destino", "Filter by destination")}" aria-label="{T("Filtrar", "Filter")}">'
+            + budget_blocks(lst, en, dname, link)
+            + f'<h2>{T("Precio a cada destino", "Price to each destination")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por destino", "Filter by destination")}" aria-label="{T("Filtrar", "Filter")}">'
             + table(lst, en, T('Destino', 'Destination'), dname, link)
             + f'<p class="pm-note">{e(T(f"Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com (última consulta: {fd(checked)}). Habitual es la mediana de los precios que vimos. Los precios cambian cada día.", f"Return prices in economy for 1 adult, checked on Kiwi.com (last search: {fd(checked, True)}). Usual is the median of the prices we saw. Prices change every day."))}</p>'
             + f'<h2>{T("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">' + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qas) + '</div>'
@@ -318,8 +332,17 @@ def build(rows, en_slug):
     for d, lst in by_dest.items():
         if len(lst) >= 3:
             low = min(x['price_from'] for x in lst)
-            _inject(f'destinos/{d}/index.html', f'<section class="sec" style="padding-top:0"><div class="wrap"><a class="pm-card" href="/vuelos/a/{d}/"><b>Precios de vuelos a {e(lst[0]["dest"])}</b><span>Desde {len(lst)} ciudades, desde {low} € ida y vuelta, con el mes más barato</span></a></div></section>')
-            _inject(f'en/destinations/{G.en_dest_slug(d)}/index.html', f'<section class="sec" style="padding-top:0"><div class="wrap"><a class="pm-card" href="/en/flights/to/{G.en_dest_slug(d)}/"><b>Flight prices to {e(E.NAMES.get(d, lst[0]["dest"]))}</b><span>From {len(lst)} cities, from {low} € return</span></a></div></section>')
+            top = sorted(lst, key=lambda r: (PREF.index(r['origin']) if r['origin'] in PREF else 99, r['price_from']))[:6]
+            top.sort(key=lambda r: r['price_from'])
+            rows_es = ''.join(f'<tr><th scope="row"><a href="/vuelos/{r["slug"]}/">{e(r["origin"])}</a></th><td class="pm-p">{r["price_from"]} €</td><td>{e(stops((r.get("facts") or {}).get("escalas_ida")))}</td></tr>' for r in top)
+            rows_en = ''.join(f'<tr><th scope="row"><a href="/en/flights/{en_slug(r)}/">{e(en_names.city_en(r["origin"]))}</a></th><td class="pm-p">€{r["price_from"]}</td><td>{e(stops((r.get("facts") or {}).get("escalas_ida"), True))}</td></tr>' for r in top)
+            dname, dname_en = lst[0]['dest'], E.NAMES.get(d, lst[0]['dest'])
+            _inject(f'destinos/{d}/index.html', f'<section class="sec" style="padding-top:0" id="precios"><div class="wrap"><h2>Cuánto cuesta volar a {e(dname)}</h2><p>Lo más barato que encontramos desde las ciudades principales, ida y vuelta (desde {low} €).</p>'
+                    f'<div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">Salida</th><th scope="col">Más barato</th><th scope="col">Escalas</th></tr></thead><tbody>{rows_es}</tbody></table></div>'
+                    f'<p style="margin-top:12px"><a class="hlc-btn o" href="/vuelos/a/{d}/">Precios desde las {len(lst)} ciudades y el mes más barato</a></p></div></section>')
+            _inject(f'en/destinations/{G.en_dest_slug(d)}/index.html', f'<section class="sec" style="padding-top:0" id="prices"><div class="wrap"><h2>How much it costs to fly to {e(dname_en)}</h2><p>Cheapest return price we found from the main cities (from €{low}).</p>'
+                    f'<div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">From</th><th scope="col">Lowest</th><th scope="col">Stops</th></tr></thead><tbody>{rows_en}</tbody></table></div>'
+                    f'<p style="margin-top:12px"><a class="hlc-btn o" href="/en/flights/to/{G.en_dest_slug(d)}/">Prices from all {len(lst)} cities</a></p></div></section>')
     ds = sorted(by_dest.items(), key=lambda kv: kv[1][0]['dest'])
     os_ = sorted(by_orig.items())
     for en, path in ((False, 'vuelos/index.html'), (True, 'en/flights/index.html')):

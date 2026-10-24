@@ -478,6 +478,50 @@ def checked(x):
     return max(a[:19], c[:19]) if c else a
 
 
+def bag_box(f, en=False):
+    """Equipaje de mano de la aerolínea del chollo (datos de _hlc/bags.py, con fuente)."""
+    import bags
+    row = bags.bag_of(f.get('aerolinea'))
+    if not row:
+        return ''
+    name, free, kg, cab, price = row
+    src = bags.BAG_SRC[0]
+    if en:
+        cabin = (f' A cabin bag ({bags.cm(cab)}) costs {price.replace("incluida en tarifa", "included in the").replace("incluida", "included")}.' if cab and price else '')
+        return (f'<div class="bagbox"><b>🧳 Baggage with {e(name)}</b><p>Free: one personal item of {bags.cm(free)}{(" up to " + kg) if kg else ""} under the seat.{e(cabin)} '
+                f'Check your fare before paying. <a href="/en/tools/baggage/">Compare airlines</a> · source: <a href="{src[1]}" rel="nofollow noopener" target="_blank">{e(src[0])}</a></p></div>')
+    cabin = (f' La maleta de cabina ({bags.cm(cab)}) cuesta {price}.' if cab and price else '')
+    return (f'<div class="bagbox"><b>🧳 Equipaje con {e(name)}</b><p>Gratis: un bolso de {bags.cm(free)}{(" y hasta " + kg) if kg else ""} bajo el asiento.{e(cabin)} '
+            f'Revisa tu tarifa antes de pagar. <a href="/herramientas/equipaje/">Comparar aerolíneas</a> · fuente: <a href="{src[1]}" rel="nofollow noopener" target="_blank">{e(src[0])}</a></p></div>')
+
+
+_RIDX = None
+
+
+def alt_box(f, en=False):
+    """El mismo destino desde otras ciudades, con el precio más bajo que encontramos (vuelos/rutas-idx.json)."""
+    global _RIDX
+    if _RIDX is None:
+        try:
+            _RIDX = json.load(open('vuelos/rutas-idx.json', encoding='utf-8'))
+        except Exception:
+            _RIDX = []
+    d = lib_slug(f)
+    if not d:
+        return ''
+    rows = sorted([r for r in _RIDX if r[5] == d and r[2] != f.get('origen') and r[6]], key=lambda r: r[6])
+    if len(rows) < 3:
+        return ''
+    import en_names
+    if en:
+        lis = ''.join(f'<li><a href="/en/flights/{r[1]}/">{e(en_names.city_en(r[2]))} → {e(r[4])}</a> <span>from €{r[6]}</span></li>' for r in rows[:5])
+        return (f'<div class="altbox"><b>Same destination from other cities</b><ul>{lis}</ul>'
+                f'<a href="/en/flights/to/{en_dest_slug(d)}/">All {len(rows) + 1} departure cities to {e(rows[0][4])}</a><small>Lowest return price we found in our last search; it changes every day.</small></div>')
+    lis = ''.join(f'<li><a href="/vuelos/{r[0]}/">{e(r[2])} → {e(r[3])}</a> <span>desde {r[6]} €</span></li>' for r in rows[:5])
+    return (f'<div class="altbox"><b>El mismo destino desde otras ciudades</b><ul>{lis}</ul>'
+            f'<a href="/vuelos/a/{d}/">Las {len(rows) + 1} ciudades de salida a {e(rows[0][3])}</a><small>Precio de ida y vuelta más bajo que encontramos en nuestra última consulta; cambia cada día.</small></div>')
+
+
 def route_cal_link(f):
     slug_ = f"{slugify(f.get('origen') or '')}-{slugify(f.get('destino') or '')}"
     return f'<a class="hlc-btn o" href="/vuelos/{slug_}/">📅 Precio de esta ruta mes a mes</a>' if os.path.isdir(os.path.join('vuelos', slug_)) else ''
@@ -581,7 +625,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
 <div class="dc-empty" data-x-empty hidden><b>Ningún chollo con esos filtros.</b><span>Prueba a quitar algún filtro o crea una alerta y te avisamos.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>
 {extra_links}
 {seo_html}
-</div></main>{'<script src="/hlc/explorer.js?v=4" defer></script>' if explorer else ''}</body></html>'''
+</div></main>{'<script src="/hlc/explorer.js?v=5" defer></script>' if explorer else ''}</body></html>'''
     os.makedirs(path, exist_ok=True)
     open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(page)
 
@@ -738,7 +782,7 @@ def main():
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt"><div class="howbook"><b>Cómo reservarlo en 3 pasos</b><ol><li>Pulsa «Ver vuelo y fechas»: se abre la búsqueda con estas fechas.</li><li>Si el precio ha cambiado, prueba un día antes o después; suele haber fechas parecidas.</li><li>Antes de pagar, revisa qué equipaje incluye la tarifa.</li></ol></div>{x.get('body_html') or ''}
+<article class="txt"><div class="howbook"><b>Cómo reservarlo en 3 pasos</b><ol><li>Pulsa «Ver vuelo y fechas»: se abre la búsqueda con estas fechas.</li><li>Si el precio ha cambiado, prueba un día antes o después; suele haber fechas parecidas.</li><li>Antes de pagar, revisa qué equipaje incluye la tarifa.</li></ol></div>{bag_box(f)}{x.get('body_html') or ''}
 {guide_block(x)}
 {f'<p>{guide_link}</p>' if guide_link else ''}
 <p class="credit">{e(cred)}</p></article>
@@ -752,6 +796,7 @@ def main():
 <a class="hlc-btn t" href="{e(BK.with_dates(x.get('cta_hotel', '#'), f.get('ida'), f.get('vuelta')))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel">🏨 Hoteles en {e(f.get('destino'))} en estas fechas</a>
 {guide_link}
 {route_cal_link(f)}<a class="hlc-btn o" href="/herramientas/equipaje/">🧳 ¿Cabe gratis tu maleta?</a>
+{alt_box(f)}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Precio comprobado cada día. Los vuelos baratos vuelan: si cambia, prueba fechas cercanas.</div>
 <div class="rep"><button type="button" class="hlc-btn o" data-hlc-report="{e(slug)}">⚠️ ¿Ya no está a este precio? Avísanos</button><small data-report-msg role="status" aria-live="polite"></small></div>
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Compartir</button><a class="hlc-btn o" href="https://wa.me/?text={share_txt}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copiar enlace</button></div>
