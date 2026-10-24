@@ -1,0 +1,1 @@
+import"./index-CGWidWVL.js";import{i as s}from"./utils-A7usExra.js";const t={label:"Subtitles",show:"Show subtitles",hide:"Hide subtitles",short:"CC"},o={captions:t},e={label:"Subtítulos",show:"Mostrar subtítulos",hide:"Ocultar subtítulos",short:"CC"},a={captions:e};s.addResourceBundle("en","translation",o,!0,!1);s.addResourceBundle("es","translation",a,!0,!1);
