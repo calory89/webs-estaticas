@@ -118,7 +118,7 @@ f.addEventListener('input',run);run();}})();
             open('en/tools/baggage/index.html', 'w', encoding='utf-8').write(pg)
         else:
             pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc=G.e(desc), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt, body_class='tool') + body + '</body></html>'
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + alt, body_class='tool') + body + '</body></html>'
             os.makedirs('herramientas/equipaje', exist_ok=True)
             open('herramientas/equipaje/index.html', 'w', encoding='utf-8').write(pg)
 
@@ -156,7 +156,7 @@ o.innerHTML='<div class="dc-empty" style="text-align:left"><b>'+v+'</b><span>'+(
             open('en/tools/is-it-a-good-price/index.html', 'w', encoding='utf-8').write(pg)
         else:
             pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc=G.e(desc), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt, body_class='tool') + body + '</body></html>'
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + alt, body_class='tool') + body + '</body></html>'
             os.makedirs('herramientas/es-buen-precio', exist_ok=True)
             open('herramientas/es-buen-precio/index.html', 'w', encoding='utf-8').write(pg)
 
@@ -179,7 +179,7 @@ o.innerHTML='<div class="dc-empty" style="text-align:left"><b>'+v+'</b><span>'+(
             open('en/tools/index.html', 'w', encoding='utf-8').write(pg)
         else:
             pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc='Herramientas gratis para viajar barato: equipaje de mano, si un precio es bueno y calendarios de precios.', canonical=url, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                        extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=10"><link rel="alternate" hreflang="es" href="{SITE}/herramientas/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/">', body_class='tool') + body + '</body></html>'
+                        extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=11"><link rel="alternate" hreflang="es" href="{SITE}/herramientas/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/">', body_class='tool') + body + '</body></html>'
             os.makedirs('herramientas', exist_ok=True)
             open('herramientas/index.html', 'w', encoding='utf-8').write(pg)
 
@@ -219,7 +219,7 @@ def extra_pages():
             os.makedirs('en/contact', exist_ok=True); open('en/contact/index.html', 'w', encoding='utf-8').write(pg)
         else:
             pg = G.head(title='Contacto · Happy Low Cost', desc='Escribe a Happy Low Cost: chollos que ya no están, errores en la web o ideas.', canonical=url, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt, body_class='contact') + body + '</body></html>'
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + alt, body_class='contact') + body + '</body></html>'
             os.makedirs('contacto', exist_ok=True); open('contacto/index.html', 'w', encoding='utf-8').write(pg)
         # guía de errores de tarifa
         qas = ERR_EN if en else ERR_ES
@@ -235,7 +235,7 @@ def extra_pages():
             os.makedirs('en/guides/error-fares', exist_ok=True); open('en/guides/error-fares/index.html', 'w', encoding='utf-8').write(pg)
         else:
             pg = G.head(title='Errores de tarifa: qué son y qué hacer si te los cancelan · Happy Low Cost', desc=G.e(G.smart_desc(lead)), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt + G.ld_script([faq_ld(qas, 'es-ES')]), body_class='guide') + body + '</body></html>'
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + alt + G.ld_script([faq_ld(qas, 'es-ES')]), body_class='guide') + body + '</body></html>'
             os.makedirs('guias/errores-de-tarifa', exist_ok=True); open('guias/errores-de-tarifa/index.html', 'w', encoding='utf-8').write(pg)
 
 
@@ -253,7 +253,7 @@ def main():
     t = 'Cómo verificamos cada chollo de vuelo · Happy Low Cost'
     lead = 'Un chollo solo se publica si el precio existe de verdad en el momento de publicarlo y está muy por debajo de lo que suele costar esa ruta. Así lo comprobamos, sin letra pequeña.'
     page = G.head(title=G.e(t), desc=G.e(G.smart_desc(lead)), canonical=es_url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                  extra_head='<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt + G.ld_script([faq_ld(ES_QA, 'es-ES')]), body_class='metodo')
+                  extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">' + alt + G.ld_script([faq_ld(ES_QA, 'es-ES')]), body_class='metodo')
     page += body(ES_QA, 'Metodología', 'Cómo verificamos cada chollo', lead, 'Ver los chollos de hoy', '/chollos/') + '</body></html>'
     os.makedirs('como-verificamos', exist_ok=True)
     open('como-verificamos/index.html', 'w', encoding='utf-8').write(page)
@@ -274,7 +274,7 @@ def main():
 
     # ---------- panel semanal (interno, sin indexar): alertas, chollos publicados y clics a reserva ----------
     ph = G.head(title='Panel semanal · Happy Low Cost', desc='Panel interno.', canonical=f'{SITE}/panel/', robots='noindex, nofollow', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=10">', body_class='panel')
+                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=11">', body_class='panel')
     ph += '''<main class="sec" style="padding-top:26px"><div class="wrap">
 <div class="kicker">Interno</div><h1 class="x-h1">Panel semanal</h1>
 <p style="color:#4A5468">Altas de alerta, chollos publicados y clics a reservar por semana (lunes a domingo, hora UTC). Los ingresos de afiliado salen en el informe de CJ: cada clic desde una ficha lleva el SID <code>hlc-&lt;chollo&gt;</code> (o <code>hlcen-</code> en inglés), así que CJ desglosa la comisión por chollo.</p>

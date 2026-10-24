@@ -87,7 +87,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=32" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=33" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -98,7 +98,7 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     alt = f'<link rel="alternate" hreflang="en" href="{canonical}">'
     if es_url:
         alt += f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">'
-    extra = '<link rel="stylesheet" href="/hlc/home.css?v=10">' + alt + (G.ld_script(ld) if ld else '')
+    extra = '<link rel="stylesheet" href="/hlc/home.css?v=11">' + alt + (G.ld_script(ld) if ld else '')
     for k, v in dict(title=e(title), desc=e(desc), canonical=canonical, robots=robots, og_type=og_type, og_title=e(title), og_alt=e(title),
                      og_image=og_image or f'{SITE}/hlc/brand/og-default.jpg', extra_head=extra, body_class=body_class).items():
         h = h.replace('{' + k + '}', v)

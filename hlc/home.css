@@ -233,7 +233,7 @@ body.home2{background:#fff!important}
 .home2 .hx{background:#fff}
 .h2-hero{padding:clamp(28px,6vw,72px) 0 clamp(30px,5vw,60px);background:linear-gradient(180deg,#FFF8EE 0%,#fff 100%)}
 .h2-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,64px);align-items:center}
-.h2-proof{display:inline-flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 14px var(--fb);color:#B07A00;background:#FFF1C9;border-radius:999px;padding:7px 14px;margin-bottom:18px}
+.h2-proof{display:inline-flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 14px var(--fb);color:#7A5500;background:#FFF1C9;border-radius:999px;padding:7px 14px;margin-bottom:18px}
 .h2-proof b{color:var(--tinta)}
 .h2-hero h1{font:800 clamp(40px,6.4vw,78px)/.98 var(--fd)!important;letter-spacing:-.04em;margin:0 0 18px}
 .h2-hero h1 em{font-style:normal;color:var(--coral);background:linear-gradient(transparent 70%,#FFE08A 70%)}
