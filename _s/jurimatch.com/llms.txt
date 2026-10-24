@@ -8,6 +8,9 @@
 - [Lawyers by case type and country](https://jurimatch.com/lawyers)
 - [How we verify firms](https://jurimatch.com/verification-policy): hand-verified vs indexed
 - [Glossary](https://jurimatch.com/glossary): contingency fee, CFA, DBA, cuota litis, litigation funding
+- [Conditional fee agreement (CFA) vs Damages-based agreement (DBA)](https://jurimatch.com/fees/cfa-vs-dba)
+- [Contingency fee vs Litigation funding](https://jurimatch.com/fees/contingency-fee-vs-litigation-funding)
+- [No win, no fee vs Hourly fees](https://jurimatch.com/fees/no-win-no-fee-vs-hourly-fees)
 - [Open data](https://jurimatch.com/open-data): hand-verified firms as CSV (CC BY 4.0)
 - [Free tools](https://jurimatch.com/tools): limitation deadline checker, case value calculator
 
