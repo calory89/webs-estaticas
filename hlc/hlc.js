@@ -205,7 +205,7 @@ document.documentElement.classList.add('hlc-js');
   }
 
   function geoNote(list){
-    var box=d.querySelector('[data-hlc-deals]');if(!box||d.querySelector('.geo-note'))return;var o=ls('hlc_origin')||GEO.o;
+    var box=d.querySelector('[data-hlc-deals]:not([data-dest])');if(!box||box.closest('.hlc-rel')||d.querySelector('.geo-note'))return;var o=ls('hlc_origin')||GEO.o;
     var mine=list.filter(function(x){return geoRank(x)<3;}).length;
     var n=d.createElement('div');n.className='geo-note';
     n.innerHTML=(mine?'📍 Te enseñamos primero los chollos con salida desde <b>'+esc(GEO.r==='es'?o:GEO.reg.label)+'</b>.':'📍 Hoy no hay chollos con salida desde <b>'+esc(GEO.reg.label)+'</b>: te enseñamos los mejores del mundo. <a href="/alertas/">Avísame cuando salga uno</a>.')+' <button type="button" class="geo-ch">Cambiar origen</button>';

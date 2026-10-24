@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '27'
+V = '28'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -352,7 +352,7 @@ def related_block(t):
     for x in re.finditer(r'<(/?)div\b[^>]*>', t[m.start():]):
         depth += -1 if x.group(1) else 1
         if depth == 0:
-            pos = m.start() + x.start()
+            pos = m.start() + x.end()
             return t[:pos] + box + t[pos:]
     return t
 
