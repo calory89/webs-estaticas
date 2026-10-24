@@ -342,6 +342,19 @@ document.documentElement.classList.add('hlc-js');
     }).catch(function(){bars.innerHTML='<div class="dc-empty"><b>'+T('Sin conexión con el buscador de precios.','Could not reach the price search.')+'</b></div>';});}
     if(io)io.observe(box);else go();
   }
+  function reportUI(){
+    var AP='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-alerts';
+    d.querySelectorAll('[data-hlc-report]').forEach(function(b){b.addEventListener('click',function(){
+      var m=b.parentNode.querySelector('[data-report-msg]');b.disabled=true;if(m)m.textContent=T('Comprobando el precio ahora…','Checking the price now…');
+      fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'report',slug:b.getAttribute('data-hlc-report'),page:location.pathname,lang:EN?'en':'es'})}).then(function(r){return r.json();}).then(function(j){
+        var r=(j&&j.result)||'';var t=/retirado/.test(r)?T('Gracias: ya no está a ese precio y lo hemos retirado.','Thanks: it is no longer at that price and we have pulled it.'):/sigue a/.test(r)?T('Gracias. Lo acabamos de comprobar y sigue disponible ('+r.replace('sigue a ','')+'). Prueba fechas cercanas si no te sale.','Thanks. We just checked and it is still available ('+r.replace('sigue a ','')+'). Try nearby dates if you do not see it.'):/hace poco/.test(r)?T('Gracias. Lo comprobamos hace menos de 2 horas; lo revisaremos de nuevo.','Thanks. It was checked less than 2 hours ago; we will review it again.'):(j&&j.error)||T('Gracias por avisar.','Thanks for letting us know.');
+        if(m)m.textContent=t;track('aviso_precio',r);}).catch(function(){if(m)m.textContent=T('Sin conexión. Prueba otra vez.','No connection. Try again.');b.disabled=false;});
+    });});
+    d.querySelectorAll('form[data-hlc-contact]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var m=f.querySelector('[data-msg]'),btn=f.querySelector('[type=submit]');btn.disabled=true;m.textContent=T('Enviando…','Sending…');
+      fetch(AP,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'contact',email:f.email.value,message:f.message.value,page:location.pathname,lang:EN?'en':'es'})}).then(function(r){return r.json();}).then(function(j){
+        if(j.ok){f.innerHTML='<div class="dc-empty"><b>'+T('Mensaje recibido. Gracias.','Message received. Thank you.')+'</b><span>'+T('Si nos has dejado tu email, te contestamos allí.','If you left your email, we will reply there.')+'</span></div>';track('contacto','');}
+        else{m.textContent=j.error||T('No se ha podido enviar.','Could not send.');btn.disabled=false;}}).catch(function(){m.textContent=T('Sin conexión. Prueba otra vez.','No connection. Try again.');btn.disabled=false;});});});
+  }
   function pushUI(){
     var AP='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-alerts';
     var ok=('serviceWorker' in navigator)&&('PushManager' in w)&&('Notification' in w);
@@ -383,7 +396,7 @@ document.documentElement.classList.add('hlc-js');
   }
   function lazyBg(){var l=d.querySelectorAll('[data-bg]');if(!l.length)return;var set=function(el){if(!el.getAttribute('data-bg'))return;el.style.backgroundImage='url('+el.getAttribute('data-bg')+')';el.removeAttribute('data-bg');};if(!('IntersectionObserver' in w)){l.forEach(set);return;}var o=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){set(en.target);o.unobserve(en.target);}});},{rootMargin:'300px'});l.forEach(function(el){o.observe(el);});}
   function init(){try{okStamps();}catch(e){}try{lazyBg();}catch(e){}
-    [bkLinks,langSwitch,quick,geoAirport,pushUI,routeCal,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
+    [bkLinks,langSwitch,quick,geoAirport,pushUI,reportUI,routeCal,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();

@@ -195,6 +195,30 @@ async function calendar(slug: string) {
   return { months: rows.map(({ slug: _s, ...r }) => r), hist };
 }
 
+
+// ---------- contacto y "este precio ya no está" ----------
+async function rateOk(ip: string, kind: string, max: number) {
+  const r = await db(`hlc_contact?select=id&ip=eq.${encodeURIComponent(ip)}&kind=eq.${kind}&ts=gt.${new Date(Date.now() - 36e5).toISOString()}`);
+  return (r || []).length < max;
+}
+async function reportDeal(slug: string) {
+  const rows = await db(`hlc_deals?select=id,slug,post,approved_at,status&slug=eq.${encodeURIComponent(slug)}&status=in.(approved,web_live,fb_posted)&limit=1`);
+  if (!rows?.length) return "ya retirado";
+  const r = rows[0], f = r.post?.facts || {};
+  if (f.checked_at && Date.now() - Date.parse(f.checked_at) < 2 * 36e5) return "comprobado hace poco";
+  const args: Record<string, unknown> = { flyFrom: f.origen_iata, flyTo: f.destino_iata, departureDate: dmy(f.ida), departureDateFlexDays: 1 };
+  if (f.vuelta) { args.returnDate = dmy(f.vuelta); args.returnDateFlexDays = 1; }
+  const its = await kiwi(args);
+  const now = Math.floor(Math.min(...its.map((i: any) => i.price).filter((x: number) => x > 0)));
+  const facts = { ...f, checked_at: new Date().toISOString(), precio_hoy: isFinite(now) ? now : null };
+  if (!isFinite(now) || now > f.precio * 1.10) {
+    await db(`hlc_deals?id=eq.${r.id}`, { method: "PATCH", headers: { prefer: "return=minimal" }, body: JSON.stringify({ status: "expired", reason: `revalidado por aviso: ${isFinite(now) ? now + " €" : "sin resultados"}`, post: { ...r.post, facts } }) });
+    return "retirado";
+  }
+  await db(`hlc_deals?id=eq.${r.id}`, { method: "PATCH", headers: { prefer: "return=minimal" }, body: JSON.stringify({ post: { ...r.post, facts } }) });
+  return `sigue a ${now} €`;
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: H });
   const u = new URL(req.url);
@@ -211,6 +235,16 @@ Deno.serve(async (req) => {
         max_price: Math.min(Number(b.max_price) || 0, 5000) || null, destination: String(b.destination || "").slice(0, 60) || null, lang: b.lang === "en" ? "en" : "es", active: true, fails: 0 };
       await db("hlc_push_subs?on_conflict=endpoint", { method: "POST", headers: { prefer: "return=minimal,resolution=merge-duplicates" }, body: JSON.stringify(row) });
       return json({ ok: true });
+    }
+    if (b.action === "contact" || b.action === "report") {
+      const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "";
+      if (!(await rateOk(ip, b.action, b.action === "contact" ? 5 : 10))) return json({ error: b.lang === "en" ? "Too many messages, try later." : "Demasiados mensajes seguidos, prueba más tarde." }, 429);
+      const email = String(b.email || "").trim().slice(0, 120), msg = String(b.message || "").trim().slice(0, 3000), slug = String(b.slug || "").slice(0, 120);
+      if (b.action === "contact" && (msg.length < 5 || (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)))) return json({ error: b.lang === "en" ? "Write a message (and a valid email if you want a reply)." : "Escribe un mensaje (y un email válido si quieres respuesta)." }, 400);
+      let result = "";
+      if (b.action === "report" && /^[a-z0-9-]{5,120}$/.test(slug)) { try { result = await reportDeal(slug); } catch (e: any) { result = "error " + String(e?.message || e).slice(0, 80); } }
+      await db("hlc_contact", { method: "POST", headers: { prefer: "return=minimal" }, body: JSON.stringify({ kind: b.action, email: email || null, message: msg || null, slug: slug || null, page: String(b.page || "").slice(0, 200), lang: b.lang === "en" ? "en" : "es", ip, result }) });
+      return json({ ok: true, result });
     }
     if (b.action === "unsubscribe") {
       await db(`hlc_push_subs?endpoint=eq.${encodeURIComponent(String(b.endpoint || ""))}`, { method: "PATCH", headers: { prefer: "return=minimal" }, body: JSON.stringify({ active: false }) });

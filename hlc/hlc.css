@@ -181,3 +181,4 @@ form.done>.af{display:none}
 .dc-save~.dc-ok{top:46px!important;left:12px!important;right:auto!important}
 
 a.chip{text-decoration:none!important;display:inline-flex;align-items:center}
+.rep{display:flex;flex-direction:column;gap:6px}.rep small{font:13px/1.4 Inter,sans-serif;color:#4A5468}

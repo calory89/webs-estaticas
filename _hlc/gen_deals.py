@@ -741,6 +741,7 @@ def main():
 {guide_link}
 {route_cal_link(f)}<a class="hlc-btn o" href="/herramientas/equipaje/">🧳 ¿Cabe gratis tu maleta?</a>
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Precio comprobado cada día. Los vuelos baratos vuelan: si cambia, prueba fechas cercanas.</div>
+<div class="rep"><button type="button" class="hlc-btn o" data-hlc-report="{e(slug)}">⚠️ ¿Ya no está a este precio? Avísanos</button><small data-report-msg role="status" aria-live="polite"></small></div>
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Compartir</button><a class="hlc-btn o" href="https://wa.me/?text={share_txt}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copiar enlace</button></div>
 <a class="hlc-btn s" href="/alertas/?d={quote(f.get('destino', ''))}">🔔 Avísame de chollos a {e(f.get('destino'))}</a>
 </aside>

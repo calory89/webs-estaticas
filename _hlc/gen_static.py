@@ -167,7 +167,8 @@ o.innerHTML='<div class="dc-empty" style="text-align:left"><b>'+v+'</b><span>'+(
                  (L('/herramientas/es-buen-precio/', '/en/tools/is-it-a-good-price/'), L('¿Es buen precio?', 'Is it a good price?'), L('Compara un precio con lo normal en su ruta.', 'Compare a fare with the usual price.')),
                  (L('/vuelos/', '/en/flights/'), L('Calendario de precios por ruta', 'Price calendar by route'), L('El mes más barato para volar, en más de 3.000 rutas.', 'The cheapest month to fly, on 3,000+ routes.')),
                  (L('/chollos/ideas/fin-de-semana/', '/en/deals/'), L('Escapadas de fin de semana', 'Today’s deals'), L('Chollos de 2 a 4 noches.', 'Verified flight deals.')),
-                 (L('/como-verificamos/', '/en/how-we-verify/'), L('Cómo verificamos', 'How we verify'), L('El método detrás de cada chollo.', 'The method behind every deal.'))]
+                 (L('/como-verificamos/', '/en/how-we-verify/'), L('Cómo verificamos', 'How we verify'), L('El método detrás de cada chollo.', 'The method behind every deal.')),
+                 (L('/guias/errores-de-tarifa/', '/en/guides/error-fares/'), L('Errores de tarifa', 'Error fares'), L('Qué hacer si te cancelan el vuelo.', 'What to do if the airline cancels.'))]
         cards = ''.join(f'<a class="hub-l" href="{u}" style="display:block;padding:16px"><b style="display:block;font-size:17px">{G.e(t)}</b><small style="font-size:14px">{G.e(dsc)}</small></a>' for u, t, dsc in items)
         url = f"{SITE}/en/tools/" if en else f"{SITE}/herramientas/"
         title = L('Herramientas para viajar barato', 'Tools to travel cheap')
@@ -181,6 +182,61 @@ o.innerHTML='<div class="dc-empty" style="text-align:left"><b>'+v+'</b><span>'+(
                         extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="es" href="{SITE}/herramientas/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/">', body_class='tool') + body + '</body></html>'
             os.makedirs('herramientas', exist_ok=True)
             open('herramientas/index.html', 'w', encoding='utf-8').write(pg)
+
+
+ERR_ES = [
+    ('¿Qué es un error de tarifa?', 'Un precio publicado por equivocación: una aerolínea o agencia se olvida de un recargo, aplica mal una moneda o carga una tarifa con un cero de menos. Suelen durar horas y se pueden reservar con normalidad mientras están a la venta.'),
+    ('¿Me pueden cancelar el billete?', 'Sí, puede pasar. Algunas aerolíneas respetan el precio y otras cancelan la reserva y devuelven el dinero. Lo habitual es que, si cancelan, reembolsen el importe completo.'),
+    ('Qué hacer al reservar uno', 'Resérvalo rápido, porque suelen desaparecer en horas. Espera unos días a que la aerolínea emita el billete antes de pagar hoteles u otros gastos no reembolsables, y no llames a la aerolínea para preguntar por el precio.'),
+    ('Si te lo cancelan', 'Pide el reembolso completo si no te lo hacen solos. Si habías pagado un hotel con cancelación gratuita, cancélalo. Por eso recomendamos reservar hoteles con cancelación gratis hasta que el vuelo esté confirmado.'),
+    ('¿Cómo distinguimos un error de tarifa de un chollo normal?', 'En Happy Low Cost marcamos el ahorro frente al precio habitual de la ruta. Un descuento del 50 % o más suele ser una oferta excepcional o un error; lo llamamos «Excepcional» en la tarjeta del chollo.'),
+]
+ERR_EN = [
+    ('What is an error fare?', 'A price published by mistake: an airline or agency forgets a surcharge, applies the wrong currency or loads a fare with a missing zero. They usually last hours and can be booked normally while on sale.'),
+    ('Can they cancel my ticket?', 'Yes, it can happen. Some airlines honour the price and others cancel the booking and refund it. If they cancel, they normally refund the full amount.'),
+    ('What to do when you book one', 'Book fast, as they tend to disappear within hours. Wait a few days for the airline to issue the ticket before paying for hotels or other non-refundable costs, and do not call the airline to ask about the price.'),
+    ('If it gets cancelled', 'Ask for a full refund if it is not issued automatically. If you paid a hotel with free cancellation, cancel it. That is why we recommend booking hotels with free cancellation until the flight is confirmed.'),
+    ('How do we tell an error fare from a normal deal?', 'At Happy Low Cost we show the saving against the usual price of the route. A discount of 50% or more is usually an exceptional offer or an error; we label it “Exceptional” on the deal card.'),
+]
+
+
+def extra_pages():
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        # contacto
+        url = f"{SITE}/en/contact/" if en else f"{SITE}/contacto/"
+        body = f"""<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:720px">
+<div class="kicker">{L("Contacto", "Contact")}</div><h1 class="x-h1">{L("Escríbenos", "Write to us")}</h1>
+<p style="font-size:18px">{L("¿Un chollo que ya no está, un error en la web o una idea? Cuéntanoslo. Deja tu email si quieres respuesta.", "A deal that is gone, a mistake on the site or an idea? Tell us. Leave your email if you want a reply.")}</p>
+<form class="alert-form" data-hlc-contact novalidate><div class="af" style="display:flex;flex-direction:column;gap:16px">
+<div class="fld"><label for="ct-e">{L("Tu email (opcional)", "Your email (optional)")}</label><input id="ct-e" name="email" type="email" autocomplete="email" placeholder="{L("tu@email.com", "you@email.com")}" style="min-height:52px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;width:100%;box-sizing:border-box"></div>
+<div class="fld"><label for="ct-m">{L("Mensaje", "Message")}</label><textarea id="ct-m" name="message" rows="6" required style="border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:12px 16px;font:16px/1.5 Inter,sans-serif;width:100%;box-sizing:border-box"></textarea></div>
+<button type="submit" class="hlc-btn" style="min-height:52px">{L("Enviar", "Send")}</button><div data-msg role="status" aria-live="polite"></div>
+<p style="font-size:13px;color:#4A5468;margin:0">{L("Guardamos tu mensaje y tu email solo para contestarte.", "We keep your message and email only to reply to you.")} <a href="{L("/aviso-legal-datos-cookies/", "/en/legal/")}">{L("Privacidad", "Privacy")}</a></p></div></form></div></main>"""
+        alt = f'<link rel="alternate" hreflang="es" href="{SITE}/contacto/"><link rel="alternate" hreflang="en" href="{SITE}/en/contact/">'
+        if en:
+            pg = E.head('Contact · Happy Low Cost', 'Write to Happy Low Cost: deals that are gone, mistakes on the site or ideas.', url, f'{SITE}/contacto/', body_class='contact') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/contact', exist_ok=True); open('en/contact/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            pg = G.head(title='Contacto · Happy Low Cost', desc='Escribe a Happy Low Cost: chollos que ya no están, errores en la web o ideas.', canonical=url, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt, body_class='contact') + body + '</body></html>'
+            os.makedirs('contacto', exist_ok=True); open('contacto/index.html', 'w', encoding='utf-8').write(pg)
+        # guía de errores de tarifa
+        qas = ERR_EN if en else ERR_ES
+        url = f"{SITE}/en/guides/error-fares/" if en else f"{SITE}/guias/errores-de-tarifa/"
+        alt = f'<link rel="alternate" hreflang="es" href="{SITE}/guias/errores-de-tarifa/"><link rel="alternate" hreflang="en" href="{SITE}/en/guides/error-fares/">'
+        lead = L('Qué son, cómo aprovecharlos y qué hacer si la aerolínea los cancela, sin perder dinero en hoteles.', 'What they are, how to make the most of them and what to do if the airline cancels, without losing money on hotels.')
+        body = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">{L("Guías para volar barato", "Guides to fly cheap")}</div>'
+                f'<h1 class="x-h1">{L("Errores de tarifa: guía práctica", "Error fares: a practical guide")}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p>'
+                f'<article class="txt guide">{"".join(f"<h2>{G.e(q)}</h2><p>{G.e(a)}</p>" for q, a in qas)}</article>'
+                f'<p style="margin-top:24px"><a class="hlc-btn" href="{L("/chollos/ideas/menos-de-100-euros/", "/en/deals/ideas/under-100/")}">{L("Ver chollos de hoy", "See today’s deals")}</a></p></div></main>')
+        if en:
+            pg = E.head('Error fares: what they are and what to do if cancelled · Happy Low Cost', G.smart_desc(lead), url, f'{SITE}/guias/errores-de-tarifa/', ld=[faq_ld(qas, 'en')], og_type='article', body_class='guide') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/guides/error-fares', exist_ok=True); open('en/guides/error-fares/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            pg = G.head(title='Errores de tarifa: qué son y qué hacer si te los cancelan · Happy Low Cost', desc=G.e(G.smart_desc(lead)), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt + G.ld_script([faq_ld(qas, 'es-ES')]), body_class='guide') + body + '</body></html>'
+            os.makedirs('guias/errores-de-tarifa', exist_ok=True); open('guias/errores-de-tarifa/index.html', 'w', encoding='utf-8').write(pg)
 
 
 def body(qas, kicker, h1, lead, cta, cta_href):
@@ -242,8 +298,9 @@ g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody'
     os.makedirs('offline', exist_ok=True)
     open('offline/index.html', 'w', encoding='utf-8').write(pg)
     tools_pages()
+    extra_pages()
     pages = ['/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
-             '/hoteles/', '/en/hotels/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
+             '/hoteles/', '/en/hotels/', '/contacto/', '/en/contact/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')
