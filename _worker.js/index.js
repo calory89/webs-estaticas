@@ -1,5 +1,5 @@
 
-const SITES = new Set(["52startupsin52weeks.com", "bestsalesclosers.com", "biohackingisland.com", "collectivecolab.com", "createats.com", "equinoxinvestmentgroup.com", "felicityisland.com", "founderspassport.com", "gayrail.com", "jobersity.com", "jurimatch.com", "kindaoclub.com", "kingofstreets.com", "klipstay.com", "kolaboro.com", "landbanky.com", "landstockmarket.com", "leadpoolclub.com", "luxurybeachresidence.com", "monkeyranking.com", "nomadsseasons.com", "persohna.com", "publicscores.com", "reelrole.com", "sevenfounders.com", "sovereign195.com", "thecoreisland.com", "transparently.us", "usersland.com", "voyanoble.com", "yogaecocity.com", "realhunt.co", "lacliniqueswiss.com", "thecigaretteindex.com", "theglampings.com", "sportpassportclub.com", "surfranking.com", "longevityisland.org", "walkwar.com", "voxera.app", "grownomads.com"]);
+const SITES = new Set(["52startupsin52weeks.com", "bestsalesclosers.com", "biohackingisland.com", "collectivecolab.com", "createats.com", "equinoxinvestmentgroup.com", "felicityisland.com", "founderspassport.com", "gayrail.com", "jobersity.com", "jurimatch.com", "kindaoclub.com", "kingofstreets.com", "klipstay.com", "kolaboro.com", "landbanky.com", "landstockmarket.com", "leadpoolclub.com", "luxurybeachresidence.com", "monkeyranking.com", "nomadsseasons.com", "persohna.com", "publicscores.com", "reelrole.com", "sevenfounders.com", "sovereign195.com", "thecoreisland.com", "transparently.us", "usersland.com", "voyanoble.com", "yogaecocity.com", "realhunt.co", "lacliniqueswiss.com", "thecigaretteindex.com", "theglampings.com", "sportpassportclub.com", "surfranking.com", "longevityisland.org", "walkwar.com", "voxera.app", "grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 
 const SB = 'https://oykcsmextclpdnugixqz.supabase.co';
 const SB_HOST = 'oykcsmextclpdnugixqz.supabase.co';
@@ -29,7 +29,9 @@ async function sbProxy(req, u) {
   return new Response(r.body, { status: r.status, headers: rh });
 }
 let top3 = null;
-const NOSPA = new Set(['grownomads.com']);
+let jm = null;
+let rr = null;
+const NOSPA = new Set(["grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
   const cacheable = req.method === 'GET' && !u.pathname.startsWith('/api/geo') && !u.pathname.startsWith('/api/alerts');
@@ -66,6 +68,16 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
+    if (host === 'jurimatch.com' && req.method === 'GET' && u.pathname === '/sitemap.xml') { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
+    const r = await this.siteRaw(req, env, ctx, u, host);
+    // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).
+    if (host === 'jurimatch.com' && req.method === 'GET') { if (!jm) jm = await import('./jurimatch.js'); return jm.render(req, r, u, env, ctx); }
+    // reelrole.com: per-URL meta, candidate pages and real 404s (see reelrole.js).
+    if (host === 'reelrole.com' && req.method === 'GET') { try { if (!rr) rr = await import('./reelrole.js'); return await rr.render(req, r, u, env, ctx); } catch (e) { return r; } }
+    return r;
+  },
+  async siteRaw(req, env, ctx, u, host) {
+    if (host === 'go.realhunt.co') { const p = u.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'); return Response.redirect('https://realhunt.co' + (p || '/') + u.search, 301); }
     if (host === 'top3hotels.com') return viaTop3(req, env, ctx);
     if (!SITES.has(host)) return new Response('Not found', { status: 404 });
     const pre = '/_s/' + host;
@@ -73,8 +85,21 @@ export default {
     if (u.pathname.startsWith('/_s/')) return new Response('Not found', { status: 404 });
     if (u.pathname === '/api/geo') { const c = req.cf || {}; return Response.json({ country: c.country || null, city: c.city || null, lat: c.latitude ? +c.latitude : null, lon: c.longitude ? +c.longitude : null }); }
     if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(null, { status: 204 });
+    if (host === 'realhunt.co' && /^\/(finds|top|og)\/.+\.(webp|jpe?g|png)$/i.test(u.pathname)) { const m = await fetch('https://realhunt-media.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (m.status === 200) { const h = new Headers(m.headers); h.set('cache-control', 'public, max-age=86400'); return new Response(m.body, { status: 200, headers: h }); } }
     if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await env.ASSETS.fetch(new Request(new URL(pre + '/__q/' + k + '=' + v + '/', u), req)); if (q.status === 200) return q; } } }
+    // realhunt.co: one URL per page, without the trailing slash, matching the canonical tags. "/about/" sends a 301 to
+    // "/about", and "/about" is served from the about/index.html file directly instead of redirecting to the folder.
+    if (host === 'realhunt.co' && u.pathname.length > 1 && u.pathname.endsWith('/')) {
+      return Response.redirect(new URL(u.pathname.replace(/\/+$/, '') + u.search, u).toString(), 301);
+    }
     let r = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + u.search, u), req));
+    if (host === 'realhunt.co' && r.status >= 300 && r.status < 400) {
+      const l = new URL(r.headers.get('location') || '', u);
+      if (l.pathname === pre + u.pathname + '/') {
+        const d = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + '/' + u.search, u), req));
+        if (d.status === 200) r = d;
+      }
+    }
     if (r.status >= 300 && r.status < 400) {
       const loc = r.headers.get('location') || '';
       const l = new URL(loc, u);
@@ -84,6 +109,17 @@ export default {
     if (r.status === 404 && NOSPA.has(host)) { const nf = await env.ASSETS.fetch(new Request(new URL(pre + '/404', u), req)); return new Response(nf.status === 200 ? nf.body : 'Not found', { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } }); }
     if (r.status === 404 && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
       const s = await env.ASSETS.fetch(new Request(new URL(pre + '/', u), req));
+      // realhunt.co: a path with no prerendered page (an account screen, a home added after the last build, a typo)
+      // still loads the app, but must not tell search engines it is the home page.
+      if (host === 'realhunt.co') {
+        const h = new Headers(s.headers); h.set('x-robots-tag', 'noindex');
+        const out = new HTMLRewriter()
+          .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+          .on('meta[name="robots"]', { element(e) { e.setAttribute('content', 'noindex, follow'); } })
+          .on('meta[property="og:url"]', { element(e) { e.setAttribute('content', 'https://realhunt.co' + u.pathname); } })
+          .transform(new Response(s.body, { status: 200, headers: h }));
+        return out;
+      }
       return new Response(s.body, { status: 200, headers: s.headers });
     }
     return r;

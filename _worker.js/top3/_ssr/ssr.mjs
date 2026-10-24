@@ -125,11 +125,11 @@ var en$1 = {
 	fromNav: "Direct flights from Denmark",
 	fromTitle: (a) => `Direct flights from ${a}: the 3 best hotels in every destination | Top3Hotels`,
 	fromH1: (a) => `Fly direct from ${a}`,
-	fromLead: (a, n) => `${n} destinations with direct flights from ${a} Airport. For each one: one Budget, one Best Value and one Luxury hotel. Pick in 1 second.`,
+	fromLead: (a, n) => `${n} destinations with direct flights from ${a} Airport. For each one: one Budget, one Best Value and one Luxury hotel. Sourced scores and reference prices.`,
 	popular: "Popular destinations",
 	homeH1: "Top 3 hotels in every city",
 	title: (c) => `Best Hotels in ${c} (2026): Budget, Best Value & Luxury | Top3Hotels`,
-	desc: (c, co, b, v, l) => `The 3 best hotels in ${c}, ${co}: ${b} (budget), ${v} (best value) and ${l} (luxury). Picked in 1 second.`,
+	desc: (c, co, b, v, l) => `The 3 best hotels in ${c}, ${co}: ${b} (budget), ${v} (best value) and ${l} (luxury). Sourced guest scores and reference prices.`,
 	h1: (c) => `The 3 best hotels in ${c}`,
 	lead: (n) => `One Budget, one Best Value, one Luxury${n ? `, chosen from ${n} hotels Booking.com returned for the same stay` : ""}. No endless list: pick your style and book.`,
 	checkIn: "Check in",
@@ -171,12 +171,12 @@ var en$1 = {
 	near: (c) => `Near ${c}`,
 	moreIn: (c) => `More in ${c}`,
 	allIn: (c) => `All ${c} destinations →`,
-	footer: "The best hotel in every city, picked in 1 second.",
+	footer: "Three hotels per city, chosen by public rules.",
 	disclaimer: "Independent guide. Booking links may earn us a commission at no cost to you. Reference prices, not live quotes.",
 	countryTitle: (c, n) => `Best Hotels in ${c}: ${n} Cities, 3 Picks Each | Top3Hotels`,
 	countryH1: (c) => `The best hotels in ${c}`,
 	countryLead: (n) => `${n} destinations. Three picks in each: Budget, Best Value and Luxury.`,
-	destTitle: (n) => `All ${n} Destinations — Best Hotels by City | Top3Hotels`,
+	destTitle: (n) => `All ${n} Destinations: Best Hotels by City | Top3Hotels`,
 	destH1: (n) => `All ${n} destinations`,
 	destLead: (n) => `Every city has exactly three hotels: Budget, Best Value and Luxury. ${n} countries.`,
 	notFound: "We're not in that city yet",
@@ -260,11 +260,11 @@ var T = {
 		fromNav: "Vuelos directos desde Dinamarca",
 		fromTitle: (a) => `Vuelos directos desde ${a}: los 3 mejores hoteles de cada destino | Top3Hotels`,
 		fromH1: (a) => `Vuela directo desde ${a}`,
-		fromLead: (a, n) => `${n} destinos con vuelo directo desde el aeropuerto de ${a}. En cada uno: un hotel económico, uno calidad-precio y uno de lujo. Elige en 1 segundo.`,
+		fromLead: (a, n) => `${n} destinos con vuelo directo desde el aeropuerto de ${a}. En cada uno: un hotel económico, uno calidad-precio y uno de lujo. Notas con fuente y precios de referencia.`,
 		popular: "Destinos populares",
 		homeH1: "Los 3 mejores hoteles de cada ciudad",
 		title: (c) => `Los 3 mejores hoteles de ${c} (2026): económico, calidad-precio y lujo | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Los 3 mejores hoteles de ${c}, ${co}: ${b} (económico), ${v} (calidad-precio) y ${l} (lujo). Elegidos en 1 segundo.`,
+		desc: (c, co, b, v, l) => `Los 3 mejores hoteles de ${c}, ${co}: ${b} (económico), ${v} (calidad-precio) y ${l} (lujo). Notas de huéspedes con fuente y precios de referencia.`,
 		h1: (c) => `Los 3 mejores hoteles de ${c}`,
 		lead: (n) => `Uno económico, uno calidad-precio y uno de lujo${n ? `, elegidos entre ${n} hoteles de Booking.com para la misma estancia` : ""}. Sin listas infinitas: elige tu estilo y reserva.`,
 		checkIn: "Entrada",
@@ -306,12 +306,12 @@ var T = {
 		near: (c) => `Cerca de ${c}`,
 		moreIn: (c) => `Más en ${c}`,
 		allIn: (c) => `Todos los destinos de ${c} →`,
-		footer: "El mejor hotel de cada ciudad, elegido en 1 segundo.",
+		footer: "Tres hoteles por ciudad, elegidos con reglas públicas.",
 		disclaimer: "Guía independiente. Los enlaces de reserva pueden darnos una comisión sin coste para ti. Precios de referencia, no en tiempo real.",
 		countryTitle: (c, n) => `Mejores hoteles de ${c}: ${n} ciudades, 3 opciones en cada una | Top3Hotels`,
 		countryH1: (c) => `Los mejores hoteles de ${c}`,
 		countryLead: (n) => `${n} destinos. Tres opciones en cada uno: económico, calidad-precio y lujo.`,
-		destTitle: (n) => `Los ${n} destinos — Mejores hoteles por ciudad | Top3Hotels`,
+		destTitle: (n) => `Los ${n} destinos: Mejores hoteles por ciudad | Top3Hotels`,
 		destH1: (n) => `Los ${n} destinos`,
 		destLead: (n) => `Cada ciudad tiene exactamente tres hoteles: económico, calidad-precio y lujo. ${n} países.`,
 		notFound: "Aún no tenemos esa ciudad",
@@ -397,7 +397,7 @@ var T = {
 		popular: "Beliebte Reiseziele",
 		homeH1: "Die 3 besten Hotels jeder Stadt",
 		title: (c) => `Die besten Hotels in ${c} (2026): günstig, Preis-Leistung & Luxus | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Die 3 besten Hotels in ${c}, ${co}: ${b} (günstig), ${v} (Preis-Leistung) und ${l} (Luxus). In 1 Sekunde gewählt.`,
+		desc: (c, co, b, v, l) => `Die 3 besten Hotels in ${c}, ${co}: ${b} (günstig), ${v} (Preis-Leistung) und ${l} (Luxus). Bewertungen mit Quelle und Referenzpreise.`,
 		h1: (c) => `Die 3 besten Hotels in ${c}`,
 		lead: (n) => `Ein günstiges, eines mit bestem Preis-Leistungs-Verhältnis und ein Luxushotel${n ? ` – ausgewählt aus ${n} Hotels, die Booking.com für denselben Aufenthalt anzeigte` : ""}. Keine endlose Liste.`,
 		checkIn: "Anreise",
@@ -439,12 +439,12 @@ var T = {
 		near: (c) => `In der Nähe von ${c}`,
 		moreIn: (c) => `Mehr in ${c}`,
 		allIn: (c) => `Alle Reiseziele in ${c} →`,
-		footer: "Das beste Hotel jeder Stadt, in 1 Sekunde gewählt.",
+		footer: "Drei Hotels pro Stadt, nach öffentlichen Regeln gewählt.",
 		disclaimer: "Unabhängiger Ratgeber. Buchungslinks können uns eine Provision bringen, ohne Kosten für Sie. Referenzpreise, keine Live-Angebote.",
 		countryTitle: (c, n) => `Die besten Hotels in ${c}: ${n} Städte, je 3 Tipps | Top3Hotels`,
 		countryH1: (c) => `Die besten Hotels in ${c}`,
 		countryLead: (n) => `${n} Reiseziele. Jeweils drei Tipps: günstig, Preis-Leistung und Luxus.`,
-		destTitle: (n) => `Alle ${n} Reiseziele — die besten Hotels nach Stadt | Top3Hotels`,
+		destTitle: (n) => `Alle ${n} Reiseziele: die besten Hotels nach Stadt | Top3Hotels`,
 		destH1: (n) => `Alle ${n} Reiseziele`,
 		destLead: (n) => `Jede Stadt hat genau drei Hotels: günstig, Preis-Leistung und Luxus. ${n} Länder.`,
 		notFound: "Diese Stadt haben wir noch nicht",
@@ -530,7 +530,7 @@ var T = {
 		popular: "Destinations populaires",
 		homeH1: "Les 3 meilleurs hôtels de chaque ville",
 		title: (c) => `Meilleurs hôtels à ${c} (2026) : petit budget, qualité-prix et luxe | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Les 3 meilleurs hôtels à ${c}, ${co} : ${b} (petit budget), ${v} (qualité-prix) et ${l} (luxe). Choisis en 1 seconde.`,
+		desc: (c, co, b, v, l) => `Les 3 meilleurs hôtels à ${c}, ${co} : ${b} (petit budget), ${v} (qualité-prix) et ${l} (luxe). Notes sourcées et prix de référence.`,
 		h1: (c) => `Les 3 meilleurs hôtels à ${c}`,
 		lead: (n) => `Un petit budget, un meilleur rapport qualité-prix et un luxe${n ? `, choisis parmi ${n} hôtels proposés par Booking.com pour le même séjour` : ""}. Pas de liste interminable.`,
 		checkIn: "Arrivée",
@@ -572,12 +572,12 @@ var T = {
 		near: (c) => `Près de ${c}`,
 		moreIn: (c) => `Plus en ${c}`,
 		allIn: (c) => `Toutes les destinations en ${c} →`,
-		footer: "Le meilleur hôtel de chaque ville, choisi en 1 seconde.",
+		footer: "Trois hôtels par ville, choisis selon des règles publiques.",
 		disclaimer: "Guide indépendant. Les liens de réservation peuvent nous rapporter une commission, sans frais pour vous. Prix de référence, pas en temps réel.",
 		countryTitle: (c, n) => `Meilleurs hôtels en ${c} : ${n} villes, 3 choix chacune | Top3Hotels`,
 		countryH1: (c) => `Les meilleurs hôtels en ${c}`,
 		countryLead: (n) => `${n} destinations. Trois choix dans chacune : petit budget, qualité-prix et luxe.`,
-		destTitle: (n) => `Les ${n} destinations — meilleurs hôtels par ville | Top3Hotels`,
+		destTitle: (n) => `Les ${n} destinations: meilleurs hôtels par ville | Top3Hotels`,
 		destH1: (n) => `Les ${n} destinations`,
 		destLead: (n) => `Chaque ville a exactement trois hôtels : petit budget, qualité-prix et luxe. ${n} pays.`,
 		notFound: "Nous ne couvrons pas encore cette ville",
@@ -663,7 +663,7 @@ var T = {
 		popular: "Destinazioni popolari",
 		homeH1: "I 3 migliori hotel di ogni città",
 		title: (c) => `I migliori hotel a ${c} (2026): economico, qualità-prezzo e lusso | Top3Hotels`,
-		desc: (c, co, b, v, l) => `I 3 migliori hotel a ${c}, ${co}: ${b} (economico), ${v} (qualità-prezzo) e ${l} (lusso). Scelti in 1 secondo.`,
+		desc: (c, co, b, v, l) => `I 3 migliori hotel a ${c}, ${co}: ${b} (economico), ${v} (qualità-prezzo) e ${l} (lusso). Punteggi con fonte e prezzi di riferimento.`,
 		h1: (c) => `I 3 migliori hotel a ${c}`,
 		lead: (n) => `Uno economico, uno qualità-prezzo e uno di lusso${n ? `, scelti tra ${n} hotel proposti da Booking.com per lo stesso soggiorno` : ""}. Nessuna lista infinita.`,
 		checkIn: "Arrivo",
@@ -705,12 +705,12 @@ var T = {
 		near: (c) => `Vicino a ${c}`,
 		moreIn: (c) => `Altro in ${c}`,
 		allIn: (c) => `Tutte le destinazioni in ${c} →`,
-		footer: "Il miglior hotel di ogni città, scelto in 1 secondo.",
+		footer: "Tre hotel per città, scelti con regole pubbliche.",
 		disclaimer: "Guida indipendente. I link di prenotazione possono farci guadagnare una commissione senza costi per te. Prezzi di riferimento, non in tempo reale.",
 		countryTitle: (c, n) => `I migliori hotel in ${c}: ${n} città, 3 scelte ciascuna | Top3Hotels`,
 		countryH1: (c) => `I migliori hotel in ${c}`,
 		countryLead: (n) => `${n} destinazioni. Tre scelte in ognuna: economico, qualità-prezzo e lusso.`,
-		destTitle: (n) => `Tutte le ${n} destinazioni — i migliori hotel per città | Top3Hotels`,
+		destTitle: (n) => `Tutte le ${n} destinazioni: i migliori hotel per città | Top3Hotels`,
 		destH1: (n) => `Tutte le ${n} destinazioni`,
 		destLead: (n) => `Ogni città ha esattamente tre hotel: economico, qualità-prezzo e lusso. ${n} paesi.`,
 		notFound: "Non copriamo ancora questa città",
@@ -796,7 +796,7 @@ var T = {
 		popular: "Destinos populares",
 		homeH1: "Os 3 melhores hotéis de cada cidade",
 		title: (c) => `Os melhores hotéis em ${c} (2026): económico, qualidade-preço e luxo | Top3Hotels`,
-		desc: (c, co, b, v, l) => `Os 3 melhores hotéis em ${c}, ${co}: ${b} (económico), ${v} (qualidade-preço) e ${l} (luxo). Escolhidos em 1 segundo.`,
+		desc: (c, co, b, v, l) => `Os 3 melhores hotéis em ${c}, ${co}: ${b} (económico), ${v} (qualidade-preço) e ${l} (luxo). Notas com fonte e preços de referência.`,
 		h1: (c) => `Os 3 melhores hotéis em ${c}`,
 		lead: (n) => `Um económico, um de melhor qualidade-preço e um de luxo${n ? `, escolhidos entre ${n} hotéis do Booking.com para a mesma estadia` : ""}. Sem listas intermináveis.`,
 		checkIn: "Entrada",
@@ -838,12 +838,12 @@ var T = {
 		near: (c) => `Perto de ${c}`,
 		moreIn: (c) => `Mais em ${c}`,
 		allIn: (c) => `Todos os destinos em ${c} →`,
-		footer: "O melhor hotel de cada cidade, escolhido em 1 segundo.",
+		footer: "Três hotéis por cidade, escolhidos com regras públicas.",
 		disclaimer: "Guia independente. Os links de reserva podem render-nos uma comissão sem custo para si. Preços de referência, não em tempo real.",
 		countryTitle: (c, n) => `Melhores hotéis em ${c}: ${n} cidades, 3 escolhas em cada | Top3Hotels`,
 		countryH1: (c) => `Os melhores hotéis em ${c}`,
 		countryLead: (n) => `${n} destinos. Três escolhas em cada: económico, qualidade-preço e luxo.`,
-		destTitle: (n) => `Os ${n} destinos — melhores hotéis por cidade | Top3Hotels`,
+		destTitle: (n) => `Os ${n} destinos: melhores hotéis por cidade | Top3Hotels`,
 		destH1: (n) => `Os ${n} destinos`,
 		destLead: (n) => `Cada cidade tem exatamente três hotéis: económico, qualidade-preço e luxo. ${n} países.`,
 		notFound: "Ainda não temos essa cidade",
@@ -925,11 +925,11 @@ var T = {
 		fromNav: "Direkte fly fra Danmark",
 		fromTitle: (a) => `Direkte fly fra ${a}: de 3 bedste hoteller på hver destination | Top3Hotels`,
 		fromH1: (a) => `Flyv direkte fra ${a}`,
-		fromLead: (a, n) => `${n} destinationer med direkte fly fra ${a} Lufthavn. For hver: ét budgethotel, ét med mest for pengene og ét luksushotel. Vælg på 1 sekund.`,
+		fromLead: (a, n) => `${n} destinationer med direkte fly fra ${a} Lufthavn. For hver: ét budgethotel, ét med mest for pengene og ét luksushotel. Kilder til bedømmelser og referencepriser.`,
 		popular: "Populære destinationer",
 		homeH1: "De 3 bedste hoteller i hver by",
 		title: (c) => `De 3 bedste hoteller i ${c} (2026): budget, mest for pengene og luksus | Top3Hotels`,
-		desc: (c, co, b, v, l) => `De 3 bedste hoteller i ${c}, ${co}: ${b} (budget), ${v} (mest for pengene) og ${l} (luksus). Valgt på 1 sekund.`,
+		desc: (c, co, b, v, l) => `De 3 bedste hoteller i ${c}, ${co}: ${b} (budget), ${v} (mest for pengene) og ${l} (luksus). Gæsteanmeldelser med kilde og referencepriser.`,
 		h1: (c) => `De 3 bedste hoteller i ${c}`,
 		lead: (n) => `Ét budgethotel, ét med mest for pengene og ét luksushotel${n ? ` – valgt blandt ${n} hoteller, som Booking.com viste for samme ophold` : ""}. Ingen endeløs liste: vælg din stil og book.`,
 		checkIn: "Indtjekning",
@@ -971,12 +971,12 @@ var T = {
 		near: (c) => `Nær ${c}`,
 		moreIn: (c) => `Mere i ${c}`,
 		allIn: (c) => `Alle destinationer i ${c} →`,
-		footer: "Det bedste hotel i hver by, valgt på 1 sekund.",
+		footer: "Tre hoteller i hver by, valgt efter offentlige regler.",
 		disclaimer: "Uafhængig guide. Bookinglinks kan give os en provision uden ekstra omkostning for dig. Referencepriser, ikke live-tilbud.",
 		countryTitle: (c, n) => `De bedste hoteller i ${c}: ${n} byer, 3 valg i hver | Top3Hotels`,
 		countryH1: (c) => `De bedste hoteller i ${c}`,
 		countryLead: (n) => `${n} destinationer. Tre valg i hver: budget, mest for pengene og luksus.`,
-		destTitle: (n) => `Alle ${n} destinationer — de bedste hoteller efter by | Top3Hotels`,
+		destTitle: (n) => `Alle ${n} destinationer: de bedste hoteller efter by | Top3Hotels`,
 		destH1: (n) => `Alle ${n} destinationer`,
 		destLead: (n) => `Hver by har præcis tre hoteller: budget, mest for pengene og luksus. ${n} lande.`,
 		notFound: "Den by har vi ikke endnu",
@@ -1370,7 +1370,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 from ${n} guest reviews`,
 		whyFrom: (n) => `Chosen from ${n} hotels`,
-		in1: "In 1 second",
+		in1: "At a glance",
 		jHotels: "Hotels",
 		jWhere: "Where to stay",
 		jMap: "Map",
@@ -1421,7 +1421,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 con ${n} opiniones`,
 		whyFrom: (n) => `Elegido entre ${n} hoteles`,
-		in1: "En 1 segundo",
+		in1: "De un vistazo",
 		jHotels: "Hoteles",
 		jWhere: "Dónde alojarse",
 		jMap: "Mapa",
@@ -1472,7 +1472,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 aus ${n} Gästebewertungen`,
 		whyFrom: (n) => `Ausgewählt aus ${n} Hotels`,
-		in1: "In 1 Sekunde",
+		in1: "Auf einen Blick",
 		jHotels: "Hotels",
 		jWhere: "Wo übernachten",
 		jMap: "Karte",
@@ -1523,7 +1523,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 sur ${n} avis clients`,
 		whyFrom: (n) => `Choisi parmi ${n} hôtels`,
-		in1: "En 1 seconde",
+		in1: "En un coup d'œil",
 		jHotels: "Hôtels",
 		jWhere: "Où dormir",
 		jMap: "Carte",
@@ -1574,7 +1574,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 su ${n} recensioni`,
 		whyFrom: (n) => `Scelto tra ${n} hotel`,
-		in1: "In 1 secondo",
+		in1: "A colpo d'occhio",
 		jHotels: "Hotel",
 		jWhere: "Dove dormire",
 		jMap: "Mappa",
@@ -1625,7 +1625,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 em ${n} avaliações`,
 		whyFrom: (n) => `Escolhido entre ${n} hotéis`,
-		in1: "Em 1 segundo",
+		in1: "Num relance",
 		jHotels: "Hotéis",
 		jWhere: "Onde ficar",
 		jMap: "Mapa",
@@ -1676,7 +1676,7 @@ var Y = {
 		}),
 		whyScore: (s, n) => `${s}/10 fra ${n} gæsteanmeldelser`,
 		whyFrom: (n) => `Valgt blandt ${n} hoteller`,
-		in1: "På 1 sekund",
+		in1: "Overblik",
 		jHotels: "Hoteller",
 		jWhere: "Hvor skal man bo",
 		jMap: "Kort",
@@ -10101,6 +10101,1146 @@ var overrides_default = {
 		"stars": 2,
 		"total": 184.48,
 		"reason": "The cheapest well-reviewed private room we found in central Lisbon: rated 8.0 from more than 2,800 reviews, a short metro ride from Baixa."
+	} },
+	"odense-denmark": { "Best Value": {
+		"id": 22105,
+		"name": "City Hotel Nattergalen",
+		"area": "City centre",
+		"address": "Hans Mules Gade 5",
+		"lat": 55.399016,
+		"lng": 10.394233,
+		"url": "https://www.booking.com/hotel/dk/city-odense.html",
+		"score": 7.9,
+		"count": 2917,
+		"stars": 3,
+		"total": 255.48,
+		"checked": "22 Oct 2026",
+		"reason": "A central Odense hotel with a rooftop terrace, rated 7.9 from more than 2,900 Booking.com reviews, for well under the price of our upscale pick. Hosted stay: the hotel is hosting our team on 25 October 2026."
+	} },
+	"georgetown-guyana": { "Luxury": {
+		"id": 1286824,
+		"name": "Guyana Marriott Hotel Georgetown",
+		"area": "Georgetown",
+		"address": "Block Alpha , Battery Road, Kingston",
+		"lat": 6.825619,
+		"lng": -58.164282,
+		"url": "https://www.booking.com/hotel/gy/guyana-marriott-georgetown-georgetown.html",
+		"score": 7.5,
+		"count": 107,
+		"stars": 5,
+		"total": 873.52,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Georgetown on Booking.com: 7.5/10 from 107 guest reviews."
+	} },
+	"canggu-indonesia": { "Luxury": {
+		"id": 12900339,
+		"name": "TUI BLUE Berawa Hotel and Villas",
+		"area": "Canggu",
+		"address": "No.101 Jalan Pantai Berawa",
+		"lat": -8.660864,
+		"lng": 115.140206,
+		"url": "https://www.booking.com/hotel/id/berawa-amp-villas.html",
+		"score": 9.1,
+		"count": 799,
+		"stars": 5,
+		"total": 222.66,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Canggu on Booking.com: 9.1/10 from 799 guest reviews."
+	} },
+	"dakar-senegal": { "Luxury": {
+		"id": 98428,
+		"name": "Pullman Dakar Teranga",
+		"area": "Dakar",
+		"address": "10 Rue Colbert",
+		"lat": 14.667689,
+		"lng": -17.430656,
+		"url": "https://www.booking.com/hotel/sn/dakar-teranga.html",
+		"score": 8.1,
+		"count": 265,
+		"stars": 5,
+		"total": 1207.4,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."
+	} },
+	"mahon-spain": { "Luxury": {
+		"id": 6375718,
+		"name": "Cristine Bedfor Mahon Boutique Hotel",
+		"area": "Mahón",
+		"address": "19 Carrer de la Infanta",
+		"lat": 39.887369,
+		"lng": 4.265355,
+		"url": "https://www.booking.com/hotel/es/cristine-bedfor.html",
+		"score": 9.2,
+		"count": 232,
+		"stars": 5,
+		"total": 400.72,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Mahón on Booking.com: 9.2/10 from 232 guest reviews."
+	} },
+	"indianapolis-united-states": { "Luxury": {
+		"id": 42842,
+		"name": "Conrad Indianapolis",
+		"area": "Indianapolis",
+		"address": "50 West Washington Street",
+		"lat": 39.767259,
+		"lng": -86.159345,
+		"url": "https://www.booking.com/hotel/us/conrad-indianapolis.html",
+		"score": 8.3,
+		"count": 131,
+		"stars": 5,
+		"total": 607.57,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."
+	} },
+	"iasi-romania": { "Luxury": {
+		"id": 178950,
+		"name": "Pleiada Boutique Hotel & Spa",
+		"area": "Iași",
+		"address": "Soseaua Bucium nr. 18",
+		"lat": 47.13434,
+		"lng": 27.607629,
+		"url": "https://www.booking.com/hotel/ro/pleiada-boutique-hotel-and-spa.html",
+		"score": 9.3,
+		"count": 1385,
+		"stars": 5,
+		"total": 216.58,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Iași on Booking.com: 9.3/10 from 1,385 guest reviews."
+	} },
+	"hurghada-egypt": { "Luxury": {
+		"id": 8985201,
+		"name": "Pickalbatros Blu Spa Resort - Adults Friendly 16 Years Plus - Couples Only - Ultra All-Inclusive",
+		"area": "Hurghada",
+		"address": "El Corniche St., Al Mamsha El Seyahi,  . Village Road , Hurghada , Red Sea",
+		"lat": 27.182645,
+		"lng": 33.824915,
+		"url": "https://www.booking.com/hotel/eg/pickalbatros-blu-spa-resort-adults-friendly-16-years-plus.html",
+		"score": 9.6,
+		"count": 3565,
+		"stars": 5,
+		"total": 697.42,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Hurghada on Booking.com: 9.6/10 from 3,565 guest reviews."
+	} },
+	"taranto-italy": { "Luxury": {
+		"id": 14678,
+		"name": "Relais Histò San Pietro Sul Mar Piccolo",
+		"area": "Taranto",
+		"address": "Via Sant'Andrea, Circummarpiccolo",
+		"lat": 40.508399,
+		"lng": 17.316234,
+		"url": "https://www.booking.com/hotel/it/histo-san-pietro-sul-mar-piccolo.html",
+		"score": 9.3,
+		"count": 119,
+		"stars": 5,
+		"total": 873.68,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Taranto on Booking.com: 9.3/10 from 119 guest reviews."
+	} },
+	"olsztyn-poland": { "Luxury": {
+		"id": 546134,
+		"name": "Hotel Marina Club",
+		"area": "Olsztyn",
+		"address": "Siła 100",
+		"lat": 53.710222,
+		"lng": 20.376903,
+		"url": "https://www.booking.com/hotel/pl/marina-golf-club.html",
+		"score": 9.4,
+		"count": 2028,
+		"stars": 5,
+		"total": 329.39,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Olsztyn on Booking.com: 9.4/10 from 2,028 guest reviews."
+	} },
+	"obidos-portugal": { "Luxury": {
+		"id": 536563,
+		"name": "The Beachfront - Praia D'El Rey Golf & Beach Resort",
+		"area": "Óbidos",
+		"address": "Avenida D. Pedro I, nº30",
+		"lat": 39.399169,
+		"lng": -9.273866,
+		"url": "https://www.booking.com/hotel/pt/the-beachfront-praia-d-el-rey-golf-beach-resort.html",
+		"score": 9,
+		"count": 373,
+		"stars": 5,
+		"total": 408.6,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Óbidos on Booking.com: 9.0/10 from 373 guest reviews."
+	} },
+	"sunderland-united-kingdom": { "Luxury": {
+		"id": 13545644,
+		"name": "The Beach House Boutique Hotel",
+		"area": "Sunderland",
+		"address": "1 Roker Terrace, Sunderland.",
+		"lat": 54.921596,
+		"lng": -1.365956,
+		"url": "https://www.booking.com/hotel/gb/one-roker-terrace-tyne-and-wear.html",
+		"score": 9.4,
+		"count": 245,
+		"stars": 5,
+		"total": 498.89,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Sunderland on Booking.com: 9.4/10 from 245 guest reviews."
+	} },
+	"anaheim-united-states": { "Luxury": {
+		"id": 5770520,
+		"name": "JW Marriott, Anaheim Resort",
+		"area": "Anaheim",
+		"address": "1775 South Clementine Street",
+		"lat": 33.806258,
+		"lng": -117.910233,
+		"url": "https://www.booking.com/hotel/us/jw-marriott-anaheim-resort.html",
+		"score": 8.8,
+		"count": 378,
+		"stars": 5,
+		"total": 876.1,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Anaheim on Booking.com: 8.8/10 from 378 guest reviews."
+	} },
+	"oklahoma-city-united-states": { "Luxury": {
+		"id": 13468127,
+		"name": "Citizen House Hotel",
+		"area": "Oklahoma City",
+		"address": "600 N Robinson Ave",
+		"lat": 35.473045,
+		"lng": -97.51608,
+		"url": "https://www.booking.com/hotel/us/citizen-house.html",
+		"score": 9.3,
+		"count": 43,
+		"stars": 5,
+		"total": 441.71,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Oklahoma City on Booking.com: 9.3/10 from 43 guest reviews."
+	} },
+	"bastia-france": { "Luxury": {
+		"id": 15825050,
+		"name": "ROSEMARY hôtel",
+		"area": "Bastia",
+		"address": "21 boulevard Hyacinthe de Montera",
+		"lat": 42.699275,
+		"lng": 9.446208,
+		"url": "https://www.booking.com/hotel/fr/rosemary.html",
+		"score": 9.5,
+		"count": 36,
+		"stars": 5,
+		"total": 747.2,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Bastia on Booking.com: 9.5/10 from 36 guest reviews."
+	} },
+	"campeche-mexico": { "Luxury": {
+		"id": 326487,
+		"name": "Hotel Boutique Casa Don Gustavo, Campeche",
+		"area": "Campeche",
+		"address": "calle 59 No. 4",
+		"lat": 19.845383,
+		"lng": -90.538209,
+		"url": "https://www.booking.com/hotel/mx/casa-don-gustavo-boutique.html",
+		"score": 8.9,
+		"count": 121,
+		"stars": 5,
+		"total": 602.76,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Campeche on Booking.com: 8.9/10 from 121 guest reviews."
+	} },
+	"haarlem-netherlands": { "Luxury": {
+		"id": 303428,
+		"name": "Brasss Hotel Suites",
+		"area": "Haarlem",
+		"address": "Korte Veerstraat 1",
+		"lat": 52.379734,
+		"lng": 4.637507,
+		"url": "https://www.booking.com/hotel/nl/lambermon-s-suites.html",
+		"score": 9,
+		"count": 1119,
+		"stars": 5,
+		"total": 473.6,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Haarlem on Booking.com: 9.0/10 from 1,119 guest reviews."
+	} },
+	"salalah-oman": { "Luxury": {
+		"id": 2014752,
+		"name": "Al Baleed Resort Salalah by Anantara",
+		"area": "Salalah",
+		"address": "P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman",
+		"lat": 17.009874,
+		"lng": 54.146817,
+		"url": "https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html",
+		"score": 8.9,
+		"count": 337,
+		"stars": 5,
+		"total": 724.38,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."
+	} },
+	"ponte-de-lima-portugal": { "Luxury": {
+		"id": 367480,
+		"name": "Carmo's Boutique Hotel - Small Luxury Hotels of the World",
+		"area": "Ponte de Lima",
+		"address": "Rua Santiago da Gemieira, nº 10, Gemieira",
+		"lat": 41.775439,
+		"lng": -8.534009,
+		"url": "https://www.booking.com/hotel/pt/carmo-s-boutique.html",
+		"score": 8.8,
+		"count": 227,
+		"stars": 5,
+		"total": 460.8,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Ponte de Lima on Booking.com: 8.8/10 from 227 guest reviews."
+	} },
+	"constanta-romania": { "Luxury": {
+		"id": 1889286,
+		"name": "Belle Epoque Boutique (Adult Only)",
+		"area": "Constanta",
+		"address": "Bulevardul Tomis 16",
+		"lat": 44.175427,
+		"lng": 28.656297,
+		"url": "https://www.booking.com/hotel/ro/belle-epoque-boutique-villa.html",
+		"score": 9.7,
+		"count": 118,
+		"stars": 5,
+		"total": 336.56,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Constanta on Booking.com: 9.7/10 from 118 guest reviews."
+	} },
+	"alanya-turkiye": { "Luxury": {
+		"id": 1328377,
+		"name": "Day One Beach Resort & SPA - Adult Only",
+		"area": "Alanya",
+		"address": "Cumhuriyet Mah. Sanat Okulu Cad. Alanya",
+		"lat": 36.538978,
+		"lng": 32.026461,
+		"url": "https://www.booking.com/hotel/tr/banana-otel.html",
+		"score": 8.8,
+		"count": 787,
+		"stars": 5,
+		"total": 324.48,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Alanya on Booking.com: 8.8/10 from 787 guest reviews."
+	} },
+	"gaborone-botswana": { "Luxury": {
+		"id": 1168032,
+		"name": "Grand Palm Hotel, Gaborone",
+		"area": "Gaborone",
+		"address": "Bonnington Farm, Molepolole Road",
+		"lat": -24.640255,
+		"lng": 25.877409,
+		"url": "https://www.booking.com/hotel/bw/peermont-walmont.html",
+		"score": 7.5,
+		"count": 69,
+		"stars": 5,
+		"total": 273.83,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Gaborone on Booking.com: 7.5/10 from 69 guest reviews."
+	} },
+	"st-john-s-canada": { "Luxury": {
+		"id": 2641413,
+		"name": "Ryan Mansion",
+		"area": "St. John's",
+		"address": "21 Rennies Mill Road",
+		"lat": 47.569655,
+		"lng": -52.709049,
+		"url": "https://www.booking.com/hotel/ca/ryan-mansion.html",
+		"score": 8.3,
+		"count": 112,
+		"stars": 5,
+		"total": 285.4,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in St. John's on Booking.com: 8.3/10 from 112 guest reviews."
+	} },
+	"tours-france": { "Luxury": {
+		"id": 7842552,
+		"name": "Les Trésorières",
+		"area": "Tours",
+		"address": "2 Place Jean Meunier",
+		"lat": 47.390539,
+		"lng": .681483,
+		"url": "https://www.booking.com/hotel/fr/les-tresorieres.html",
+		"score": 9.2,
+		"count": 310,
+		"stars": 5,
+		"total": 670.84,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Tours on Booking.com: 9.2/10 from 310 guest reviews."
+	} },
+	"legian-indonesia": { "Luxury": {
+		"id": 402556,
+		"name": "The Magani Hotel and Spa",
+		"area": "Legian",
+		"address": "Jalan Melasti, Legian Kelod",
+		"lat": -8.708689,
+		"lng": 115.170053,
+		"url": "https://www.booking.com/hotel/id/the-magani-amp-spa.html",
+		"score": 9.1,
+		"count": 1597,
+		"stars": 5,
+		"total": 257.3,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Legian on Booking.com: 9.1/10 from 1,597 guest reviews."
+	} },
+	"torquay-unitedkingdom": { "Luxury": {
+		"id": 1759331,
+		"name": "Cary Arms & Spa",
+		"area": "Torquay",
+		"address": "Beach Road",
+		"lat": 50.478859,
+		"lng": -3.508822,
+		"url": "https://www.booking.com/hotel/gb/cary-arms-babbacombe-torquay.html",
+		"score": 9.3,
+		"count": 266,
+		"stars": 5,
+		"total": 572.89,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Torquay on Booking.com: 9.3/10 from 266 guest reviews."
+	} },
+	"bentonville-united-states": { "Luxury": {
+		"id": 14258020,
+		"name": "The Compton",
+		"area": "Bentonville",
+		"address": "200 E Central Ave",
+		"lat": 36.372007,
+		"lng": -94.207705,
+		"url": "https://www.booking.com/hotel/us/the-compton.html",
+		"score": 9.4,
+		"count": 32,
+		"stars": 5,
+		"total": 1749.71,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Bentonville on Booking.com: 9.4/10 from 32 guest reviews."
+	} },
+	"phoenix-united-states": { "Luxury": {
+		"id": 263665,
+		"name": "JW Marriott Phoenix Desert Ridge Resort & Spa",
+		"area": "Phoenix",
+		"address": "5350 East Marriott Drive",
+		"lat": 33.683452,
+		"lng": -111.966063,
+		"url": "https://www.booking.com/hotel/us/jw-marriott-phoenix-desert-ridge-resort.html",
+		"score": 8.6,
+		"count": 70,
+		"stars": 5,
+		"total": 1638.87,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Phoenix on Booking.com: 8.6/10 from 70 guest reviews."
+	} },
+	"mytilene-greece": { "Luxury": {
+		"id": 265824,
+		"name": "Elysion Hotel",
+		"area": "Mytilene",
+		"address": "Neapoli",
+		"lat": 39.068865,
+		"lng": 26.593861,
+		"url": "https://www.booking.com/hotel/gr/elysion.html",
+		"score": 8.9,
+		"count": 482,
+		"stars": 5,
+		"total": 228.8,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Mytilene on Booking.com: 8.9/10 from 482 guest reviews."
+	} },
+	"balneario-camboriu-brazil": { "Luxury": {
+		"id": 11387136,
+		"name": "Morada Pedra Branca boutique Hotel",
+		"area": "Balneario Camboriu",
+		"address": "Rua Morro da Pedra Branca",
+		"lat": -27.031859,
+		"lng": -48.613443,
+		"url": "https://www.booking.com/hotel/br/morada-pedra-branca.html",
+		"score": 8.9,
+		"count": 35,
+		"stars": 5,
+		"total": 227.68,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Balneario Camboriu on Booking.com: 8.9/10 from 35 guest reviews."
+	} },
+	"whistler-canada": { "Luxury": {
+		"id": 446327,
+		"name": "Four Seasons Resort Whistler",
+		"area": "Whistler",
+		"address": "4591 Blackcomb Way",
+		"lat": 50.119017,
+		"lng": -122.944345,
+		"url": "https://www.booking.com/hotel/ca/four-seasons-whistler.html",
+		"score": 9.5,
+		"count": 382,
+		"stars": 5,
+		"total": 738.17,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Whistler on Booking.com: 9.5/10 from 382 guest reviews."
+	} },
+	"valence-france": { "Luxury": {
+		"id": 44887,
+		"name": "Maison Pic",
+		"area": "Valence",
+		"address": "285 Avenue Victor Hugo",
+		"lat": 44.917659,
+		"lng": 4.885483,
+		"url": "https://www.booking.com/hotel/fr/maison-pic.html",
+		"score": 9.4,
+		"count": 160,
+		"stars": 5,
+		"total": 881.6,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Valence on Booking.com: 9.4/10 from 160 guest reviews."
+	} },
+	"nafplio-greece": { "Luxury": {
+		"id": 238954,
+		"name": "Amphitryon Hotel",
+		"area": "Nafplio",
+		"address": "3-5, Spiliadou Str",
+		"lat": 37.565807,
+		"lng": 22.794421,
+		"url": "https://www.booking.com/hotel/gr/amphitryon.html",
+		"score": 7.7,
+		"count": 153,
+		"stars": 5,
+		"total": 418,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Nafplio on Booking.com: 7.7/10 from 153 guest reviews."
+	} },
+	"nusa-penida-indonesia": { "Luxury": {
+		"id": 12077759,
+		"name": "Semaya Beach Resort",
+		"area": "Nusa Penida",
+		"address": "7J39+J3F, Suana, Nusa Penida, Klungkung Regency, Bali 80771",
+		"lat": -8.745938,
+		"lng": 115.617672,
+		"url": "https://www.booking.com/hotel/id/nusa-penida-beach-resort.html",
+		"score": 9.5,
+		"count": 775,
+		"stars": 5,
+		"total": 391.09,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Nusa Penida on Booking.com: 9.5/10 from 775 guest reviews."
+	} },
+	"colima-mexico": { "Luxury": {
+		"id": 398386,
+		"name": "Hotel Boutique Hacienda del Gobernador",
+		"area": "Colima",
+		"address": "Calle Gildardo Gomez, 128. Colonia Centro",
+		"lat": 19.242987,
+		"lng": -103.730848,
+		"url": "https://www.booking.com/hotel/mx/boutique-hacienda-del-gobernador.html",
+		"score": 8.1,
+		"count": 74,
+		"stars": 5,
+		"total": 140.24,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Colima on Booking.com: 8.1/10 from 74 guest reviews."
+	} },
+	"horta-portugal": { "Luxury": {
+		"id": 16663552,
+		"name": "The Book Hotel",
+		"area": "Horta",
+		"address": "Largo do Bpo. Dom Alexandre 8",
+		"lat": 38.540761,
+		"lng": -28.623989,
+		"url": "https://www.booking.com/hotel/pt/the-book.html",
+		"score": 9.6,
+		"count": 38,
+		"stars": 5,
+		"total": 306,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."
+	} },
+	"apia-samoa": { "Luxury": {
+		"id": 353054,
+		"name": "Sheraton Samoa Aggie Grey's Hotel & Bungalows",
+		"area": "Apia",
+		"address": "Main Beach Road, Vaisigano",
+		"lat": -13.831538,
+		"lng": -171.760168,
+		"url": "https://www.booking.com/hotel/ws/sheraton-samoa-aggie-greys-hotel-and-bungalows.html",
+		"score": 7.8,
+		"count": 1104,
+		"stars": 5,
+		"total": 275.36,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Apia on Booking.com: 7.8/10 from 1,104 guest reviews."
+	} },
+	"monterey-united-states": { "Luxury": {
+		"id": 59154,
+		"name": "Monterey Plaza Hotel & Spa",
+		"area": "Monterey",
+		"address": "400 Cannery Row",
+		"lat": 36.611925,
+		"lng": -121.898164,
+		"url": "https://www.booking.com/hotel/us/monterey-park-spa.html",
+		"score": 9.1,
+		"count": 530,
+		"stars": 5,
+		"total": 759.14,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Monterey on Booking.com: 9.1/10 from 530 guest reviews."
+	} },
+	"kelowna-canada": { "Luxury": {
+		"id": 266244,
+		"name": "Delta Hotels by Marriott Grand Okanagan Resort",
+		"area": "Kelowna",
+		"address": "1310 Water Street",
+		"lat": 49.891548,
+		"lng": -119.497578,
+		"url": "https://www.booking.com/hotel/ca/delta-grand-okanagan-resort.html",
+		"score": 8.3,
+		"count": 452,
+		"stars": 5,
+		"total": 343.99,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Kelowna on Booking.com: 8.3/10 from 452 guest reviews."
+	} },
+	"annecy-france": { "Luxury": {
+		"id": 888936,
+		"name": "Les Loges Annecy Vieille Ville",
+		"area": "Annecy",
+		"address": "35 rue Sainte Claire",
+		"lat": 45.898026,
+		"lng": 6.123658,
+		"url": "https://www.booking.com/hotel/fr/les-loges-annecy-vieille-ville.html",
+		"score": 8.6,
+		"count": 599,
+		"stars": 5,
+		"total": 630,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Annecy on Booking.com: 8.6/10 from 599 guest reviews."
+	} },
+	"brescia-italy": { "Luxury": {
+		"id": 41871,
+		"name": "Hotel Vittoria",
+		"area": "Brescia",
+		"address": "Via X Giornate 20",
+		"lat": 45.538354,
+		"lng": 10.220166,
+		"url": "https://www.booking.com/hotel/it/vittoria-brescia.html",
+		"score": 7.9,
+		"count": 1535,
+		"stars": 5,
+		"total": 244,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Brescia on Booking.com: 7.9/10 from 1,535 guest reviews."
+	} },
+	"ferrara-italy": { "Luxury": {
+		"id": 1132168,
+		"name": "Hotel & SPA Duchessa Isabella Collection by GSA Hotels",
+		"area": "Ferrara",
+		"address": "Via Palestro 70",
+		"lat": 44.840356,
+		"lng": 11.624745,
+		"url": "https://www.booking.com/hotel/it/duchessa-isabella.html",
+		"score": 8.5,
+		"count": 528,
+		"stars": 5,
+		"total": 332,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Ferrara on Booking.com: 8.5/10 from 528 guest reviews."
+	} },
+	"conwy-united-kingdom": { "Luxury": {
+		"id": 11956279,
+		"name": "The Manor Boutique Hotel Restaurant and Bar",
+		"area": "Conwy",
+		"address": "the manor, gorse hill caravan park, trefriw road, conwy",
+		"lat": 53.259653,
+		"lng": -3.831228,
+		"url": "https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html",
+		"score": 9,
+		"count": 546,
+		"stars": 5,
+		"total": 325.83,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."
+	} },
+	"preston-united-kingdom": { "Luxury": {
+		"id": 1970305,
+		"name": "No.10 Preston",
+		"area": "Preston",
+		"address": "10 Theatre Street",
+		"lat": 53.75702,
+		"lng": -2.704263,
+		"url": "https://www.booking.com/hotel/gb/10-theatre-street-apartment.html",
+		"score": 8.8,
+		"count": 478,
+		"stars": 5,
+		"total": 191.2,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Preston on Booking.com: 8.8/10 from 478 guest reviews."
+	} },
+	"naples-florida-united-states": { "Luxury": {
+		"id": 188256,
+		"name": "The Ritz-Carlton Naples",
+		"area": "Naples, Florida",
+		"address": "280 Vanderbilt Beach Road",
+		"lat": 26.251951,
+		"lng": -81.821301,
+		"url": "https://www.booking.com/hotel/us/ritz-carlton-naples.html",
+		"score": 9.3,
+		"count": 81,
+		"stars": 5,
+		"total": 3051.2,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Naples, Florida on Booking.com: 9.3/10 from 81 guest reviews."
+	} },
+	"mui-ne-vietnam": { "Luxury": {
+		"id": 9194505,
+		"name": "The Anam Mui Ne",
+		"area": "Mui Ne",
+		"address": "18 Nguyen Dinh Chieu, Mui Ne",
+		"lat": 10.942592,
+		"lng": 108.194609,
+		"url": "https://www.booking.com/hotel/vn/the-anam-mui-ne.html",
+		"score": 9.5,
+		"count": 546,
+		"stars": 5,
+		"total": 550.65,
+		"checked": "23 Oct 2026",
+		"reason": "The best-rated official 5-star hotel we found in Mui Ne on Booking.com: 9.5/10 from 546 guest reviews."
+	} },
+	"menton-france": { "Luxury": {
+		"id": 51527,
+		"name": "Hotel Napoléon",
+		"area": "Menton",
+		"address": "29 Porte de France",
+		"lat": 43.782683,
+		"lng": 7.512074,
+		"url": "https://www.booking.com/hotel/fr/hotelnapolmenton.html",
+		"score": 8.6,
+		"count": 742,
+		"stars": 4,
+		"total": 214.4,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Menton, so this is our upscale alternative: a 4-star rated 8.6/10 from 742 Booking.com reviews."
+	} },
+	"ierapetra-greece": { "Luxury": {
+		"id": 26834,
+		"name": "Petra Mare",
+		"area": "Ierapetra",
+		"address": "Filotheou A' 6",
+		"lat": 35.009836,
+		"lng": 25.751106,
+		"url": "https://www.booking.com/hotel/gr/petra-mare.html",
+		"score": 9.4,
+		"count": 388,
+		"stars": 4,
+		"total": 398.04,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Ierapetra, so this is our upscale alternative: a 4-star rated 9.4/10 from 388 Booking.com reviews."
+	} },
+	"grosseto-italy": { "Luxury": {
+		"id": 365654,
+		"name": "Hotel Airone",
+		"area": "Grosseto",
+		"address": "Via Senese 35",
+		"lat": 42.766834,
+		"lng": 11.118105,
+		"url": "https://www.booking.com/hotel/it/airone-grosseto.html",
+		"score": 8.6,
+		"count": 1026,
+		"stars": 4,
+		"total": 264,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Grosseto, so this is our upscale alternative: a 4-star rated 8.6/10 from 1,026 Booking.com reviews."
+	} },
+	"bristol-unitedkingdom": { "Luxury": {
+		"id": 6929449,
+		"name": "Leonardo Hotel Bristol City",
+		"area": "Bristol",
+		"address": "3 Temple Way",
+		"lat": 51.4538,
+		"lng": -2.583211,
+		"url": "https://www.booking.com/hotel/gb/leonardo-hotel-bristol-city.html",
+		"score": 9,
+		"count": 7006,
+		"stars": 4,
+		"total": 494.12,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Bristol, so this is our upscale alternative: a 4-star rated 9.0/10 from 7,006 Booking.com reviews."
+	} },
+	"oban-unitedkingdom": { "Luxury": {
+		"id": 6560432,
+		"name": "No.26 By The Sea",
+		"area": "Oban",
+		"address": "No 26 by The Sea Corran Esplanade",
+		"lat": 56.421421,
+		"lng": -5.482255,
+		"url": "https://www.booking.com/hotel/gb/no-26-by-the-sea.html",
+		"score": 9.5,
+		"count": 487,
+		"stars": 4,
+		"total": 393.86,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Oban, so this is our upscale alternative: a 4-star rated 9.5/10 from 487 Booking.com reviews."
+	} },
+	"whitstable-united-kingdom": { "Luxury": {
+		"id": 10447450,
+		"name": "Duke of Cumberland",
+		"area": "Whitstable",
+		"address": "High Street",
+		"lat": 51.360378,
+		"lng": 1.024129,
+		"url": "https://www.booking.com/hotel/gb/duke-of-cumberland.html",
+		"score": 8.9,
+		"count": 592,
+		"stars": 4,
+		"total": 411.77,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Whitstable, so this is our upscale alternative: a 4-star rated 8.9/10 from 592 Booking.com reviews."
+	} },
+	"boca-raton-united-states": { "Luxury": {
+		"id": 58151,
+		"name": "Renaissance Boca Raton Hotel",
+		"area": "Boca Raton",
+		"address": "2000 Northwest 19th Street",
+		"lat": 26.366204,
+		"lng": -80.124184,
+		"url": "https://www.booking.com/hotel/us/renaissance-boca-raton.html",
+		"score": 8.6,
+		"count": 125,
+		"stars": 4,
+		"total": 600.8,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Boca Raton, so this is our upscale alternative: a 4-star rated 8.6/10 from 125 Booking.com reviews."
+	} },
+	"dalat-vietnam": { "Luxury": {
+		"id": 1561468,
+		"name": "Swiss-Belresort Tuyen Lam",
+		"area": "Dalat",
+		"address": "Zone 7&8, Tuyen Lam Lake Tourist Area, Ward 3",
+		"lat": 11.882835,
+		"lng": 108.451771,
+		"url": "https://www.booking.com/hotel/vn/swiss-belresort-tuyen-lam.html",
+		"score": 8.9,
+		"count": 256,
+		"stars": 4,
+		"total": 125.62,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Dalat, so this is our upscale alternative: a 4-star rated 8.9/10 from 256 Booking.com reviews."
+	} },
+	"quimper-france": { "Luxury": {
+		"id": 3411582,
+		"name": "Hôtel Ginkgo - SPA Biloba",
+		"area": "Quimper",
+		"address": "1 rue du Chanoine Moreau",
+		"lat": 47.98837,
+		"lng": -4.111989,
+		"url": "https://www.booking.com/hotel/fr/ginkgo.html",
+		"score": 8.7,
+		"count": 543,
+		"stars": 4,
+		"total": 332,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Quimper, so this is our upscale alternative: a 4-star rated 8.7/10 from 543 Booking.com reviews."
+	} },
+	"arezzo-italy": { "Luxury": {
+		"id": 243257,
+		"name": "Graziella Patio Hotel",
+		"area": "Arezzo",
+		"address": "Via Cavour 23",
+		"lat": 43.464523,
+		"lng": 11.881523,
+		"url": "https://www.booking.com/hotel/it/graziella-patio.html",
+		"score": 8.7,
+		"count": 279,
+		"stars": 4,
+		"total": 393.08,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Arezzo, so this is our upscale alternative: a 4-star rated 8.7/10 from 279 Booking.com reviews."
+	} },
+	"pompei-italy": { "Luxury": {
+		"id": 7013109,
+		"name": "HABITA79, Pompeii, a Tribute Portfolio Hotel",
+		"area": "Pompei",
+		"address": "Via Roma 10",
+		"lat": 40.749527,
+		"lng": 14.498717,
+		"url": "https://www.booking.com/hotel/it/habita79-pompeii-a-tribute-portfolio-hotel.html",
+		"score": 9.1,
+		"count": 380,
+		"stars": 4,
+		"total": 402,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Pompei, so this is our upscale alternative: a 4-star rated 9.1/10 from 380 Booking.com reviews."
+	} },
+	"lugo-spain": { "Luxury": {
+		"id": 13285,
+		"name": "Hotel Monumento Pazo de Orbán",
+		"area": "Lugo",
+		"address": "Travesía do Miño, 6",
+		"lat": 43.010193,
+		"lng": -7.560256,
+		"url": "https://www.booking.com/hotel/es/monumento-pazo-de-orban.html",
+		"score": 9.1,
+		"count": 803,
+		"stars": 4,
+		"total": 220,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Lugo, so this is our upscale alternative: a 4-star rated 9.1/10 from 803 Booking.com reviews."
+	} },
+	"boise-united-states": { "Luxury": {
+		"id": 909801,
+		"name": "The Anniversary Inn - Boise",
+		"area": "Boise",
+		"address": "1575 South Lusk Avenue",
+		"lat": 43.604001,
+		"lng": -116.214841,
+		"url": "https://www.booking.com/hotel/us/the-anniversary-inn-boise.html",
+		"score": 8.7,
+		"count": 101,
+		"stars": 4,
+		"total": 380.45,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."
+	} },
+	"carmel-united-states": { "Luxury": {
+		"id": 423881,
+		"name": "La Playa Hotel",
+		"area": "Carmel",
+		"address": "Camino Real at Eighth Avenue",
+		"lat": 36.552305,
+		"lng": -121.926274,
+		"url": "https://www.booking.com/hotel/us/la-playa-carmel.html",
+		"score": 9.1,
+		"count": 174,
+		"stars": 4,
+		"total": 1424.48,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Carmel, so this is our upscale alternative: a 4-star rated 9.1/10 from 174 Booking.com reviews."
+	} },
+	"quedlinburg-germany": { "Luxury": {
+		"id": 72323,
+		"name": "Romantik Hotel am Brühl",
+		"area": "Quedlinburg",
+		"address": "Billungstr. 11",
+		"lat": 51.784172,
+		"lng": 11.137218,
+		"url": "https://www.booking.com/hotel/de/romantik-am-bruhl.html",
+		"score": 8.6,
+		"count": 802,
+		"stars": 4,
+		"total": 363,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Quedlinburg, so this is our upscale alternative: a 4-star rated 8.6/10 from 802 Booking.com reviews."
+	} },
+	"miskolc-hungary": { "Luxury": {
+		"id": 7162239,
+		"name": "Premier Hotel Miskolc",
+		"area": "Miskolc",
+		"address": "Arany Janos tér 1 MIskolc, Arany Janos ter 1",
+		"lat": 48.10773,
+		"lng": 20.787909,
+		"url": "https://www.booking.com/hotel/hu/premier-miskolc.html",
+		"score": 8.9,
+		"count": 1323,
+		"stars": 4,
+		"total": 305.05,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."
+	} },
+	"den-bosch-netherlands": { "Luxury": {
+		"id": 171136,
+		"name": "Good Seasons Hotel Den Bosch",
+		"area": "Den Bosch",
+		"address": "Kerkstraat 56",
+		"lat": 51.687979,
+		"lng": 5.306792,
+		"url": "https://www.booking.com/hotel/nl/eurohotel-den-bosch.html",
+		"score": 8.5,
+		"count": 2929,
+		"stars": 4,
+		"total": 471.72,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Den Bosch, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,929 Booking.com reviews."
+	} },
+	"chernivtsi-ukraine": { "Luxury": {
+		"id": 453381,
+		"name": "Bukovyna Hotel",
+		"area": "Chernivtsi",
+		"address": "Golovna Street, 141",
+		"lat": 48.277467,
+		"lng": 25.943356,
+		"url": "https://www.booking.com/hotel/ua/tourist-complex-bukovyna.html",
+		"score": 8.6,
+		"count": 2748,
+		"stars": 4,
+		"total": 124.64,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Chernivtsi, so this is our upscale alternative: a 4-star rated 8.6/10 from 2,748 Booking.com reviews."
+	} },
+	"chattanooga-united-states": { "Luxury": {
+		"id": 14064860,
+		"name": "Embassy Suites By Hilton Chattanooga Downtown",
+		"area": "Chattanooga",
+		"address": "345 Broad Street",
+		"lat": 35.052546,
+		"lng": -85.311075,
+		"url": "https://www.booking.com/hotel/us/embassy-suites-by-hilton-chattanooga-downtown.html",
+		"score": 9,
+		"count": 247,
+		"stars": 4,
+		"total": 454.97,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Chattanooga, so this is our upscale alternative: a 4-star rated 9.0/10 from 247 Booking.com reviews."
+	} },
+	"innsbruck-austria": { "Luxury": {
+		"id": 70101,
+		"name": "Hotel Das Innsbruck",
+		"area": "Innsbruck",
+		"address": "Innrain 3",
+		"lat": 47.267913,
+		"lng": 11.391312,
+		"url": "https://www.booking.com/hotel/at/hotelinnsbruck.html",
+		"score": 9.1,
+		"count": 5270,
+		"stars": 4,
+		"total": 564.21,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Innsbruck, so this is our upscale alternative: a 4-star rated 9.1/10 from 5,270 Booking.com reviews."
+	} },
+	"cordoba-mexico": { "Luxury": {
+		"id": 5442760,
+		"name": "Hotel Boutique Casa Zevallos",
+		"area": "Cordoba",
+		"address": "101 Avenida 1 101, planta alta",
+		"lat": 18.894549,
+		"lng": -96.934654,
+		"url": "https://www.booking.com/hotel/mx/casa-zevallos.html",
+		"score": 9.5,
+		"count": 117,
+		"stars": 4,
+		"total": 262.27,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Cordoba, so this is our upscale alternative: a 4-star rated 9.5/10 from 117 Booking.com reviews."
+	} },
+	"kosice-slovakia": { "Luxury": {
+		"id": 43539,
+		"name": "Hotel Yasmin Košice",
+		"area": "Kosice",
+		"address": "Tyršovo Nábrežie 1",
+		"lat": 48.729583,
+		"lng": 21.256995,
+		"url": "https://www.booking.com/hotel/sk/yasmin-kosice.html",
+		"score": 8.6,
+		"count": 812,
+		"stars": 4,
+		"total": 356,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Kosice, so this is our upscale alternative: a 4-star rated 8.6/10 from 812 Booking.com reviews."
+	} },
+	"malmo-sweden": { "Luxury": {
+		"id": 15253709,
+		"name": "Home Hotel Baltzar",
+		"area": "Malmö",
+		"address": "Baltzarsgatan 43",
+		"lat": 55.604686,
+		"lng": 13.00192,
+		"url": "https://www.booking.com/hotel/se/home-baltzar.html",
+		"score": 9,
+		"count": 175,
+		"stars": 4,
+		"total": 387.02,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Malmö, so this is our upscale alternative: a 4-star rated 9.0/10 from 175 Booking.com reviews."
+	} },
+	"klagenfurt-austria": { "Luxury": {
+		"id": 70529,
+		"name": "Hotel Dermuth Klagenfurt",
+		"area": "Klagenfurt",
+		"address": "Kohldorfer Straße 52",
+		"lat": 46.624714,
+		"lng": 14.274703,
+		"url": "https://www.booking.com/hotel/at/restaurant-dermuth.html",
+		"score": 8.8,
+		"count": 1456,
+		"stars": 4,
+		"total": 324,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Klagenfurt, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,456 Booking.com reviews."
+	} },
+	"bauru-brazil": { "Luxury": {
+		"id": 1116429,
+		"name": "Blue Tree Towers Bauru",
+		"area": "Bauru",
+		"address": "Rua Julio de Mesquita Filho, 1036",
+		"lat": -22.337173,
+		"lng": -49.051527,
+		"url": "https://www.booking.com/hotel/br/blue-tree-towers-bauru.html",
+		"score": 8.8,
+		"count": 1800,
+		"stars": 4,
+		"total": 152.09,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Bauru, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,800 Booking.com reviews."
+	} },
+	"olomouc-czechia": { "Luxury": {
+		"id": 7440169,
+		"name": "HERBARIUM boutique hotel",
+		"area": "Olomouc",
+		"address": "Dobrovského 16b",
+		"lat": 49.599087,
+		"lng": 17.258571,
+		"url": "https://www.booking.com/hotel/cz/herbarium-boutique.html",
+		"score": 9.5,
+		"count": 602,
+		"stars": 4,
+		"total": 332.64,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Olomouc, so this is our upscale alternative: a 4-star rated 9.5/10 from 602 Booking.com reviews."
+	} },
+	"ascona-switzerland": { "Luxury": {
+		"id": 329916,
+		"name": "Hotel Ascovilla Charming Hideway",
+		"area": "Ascona",
+		"address": "Via Albarelle 37/Via Lido 20",
+		"lat": 46.150872,
+		"lng": 8.774726,
+		"url": "https://www.booking.com/hotel/ch/ascovilla.html",
+		"score": 9.2,
+		"count": 246,
+		"stars": 4,
+		"total": 522.14,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Ascona, so this is our upscale alternative: a 4-star rated 9.2/10 from 246 Booking.com reviews."
+	} },
+	"basingstoke-united-kingdom": { "Luxury": {
+		"id": 5641844,
+		"name": "Village Hotel Basingstoke",
+		"area": "Basingstoke",
+		"address": "Basing View",
+		"lat": 51.268084,
+		"lng": -1.077534,
+		"url": "https://www.booking.com/hotel/gb/village-basingstoke.html",
+		"score": 8.5,
+		"count": 2554,
+		"stars": 4,
+		"total": 620.63,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."
+	} },
+	"tartu-estonia": { "Luxury": {
+		"id": 1995331,
+		"name": "V Spa & Conference Hotel",
+		"area": "Tartu",
+		"address": "Riia 2",
+		"lat": 58.376425,
+		"lng": 26.728768,
+		"url": "https://www.booking.com/hotel/ee/v-spa-amp-conference.html",
+		"score": 9.2,
+		"count": 3777,
+		"stars": 4,
+		"total": 340,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Tartu, so this is our upscale alternative: a 4-star rated 9.2/10 from 3,777 Booking.com reviews."
+	} },
+	"soria-spain": { "Luxury": {
+		"id": 9832126,
+		"name": "Noctis Hotel",
+		"area": "Soria",
+		"address": "Paraje Calle San Marcos 13",
+		"lat": 41.733817,
+		"lng": -2.495941,
+		"url": "https://www.booking.com/hotel/es/noctis.html",
+		"score": 9.6,
+		"count": 244,
+		"stars": 4,
+		"total": 429.6,
+		"checked": "23 Oct 2026",
+		"reason": "No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews."
 	} }
 };
 var blog_default = /*#__PURE__*/ JSON.parse("[{\"slug\":\"where-to-stay-in-odense\",\"city\":\"odense\",\"title\":\"Where to stay in Odense (2026): 3 hotels and the best area\",\"description\":\"Odense is small, so the hotel matters more than the neighbourhood. Our three picks for 2026 (budget, best value and upscale) with real prices, plus which part of town suits your trip.\",\"h1\":\"Where to stay in Odense\",\"dek\":\"Three hotels, one for each budget, and the only area questions that actually matter in a city you can cross on foot in twenty minutes.\",\"tags\":[\"Denmark\",\"City guide\"],\"body\":\"\\n<p>Odense is Denmark's third-largest city, but the centre is compact: from the station to H.C. Andersen's House is a ten-minute walk,\\nand the whole old town fits inside a loop you can do before lunch. That changes how you should choose a hotel. You don't need to\\nagonise over neighbourhoods the way you would in Copenhagen or Hamburg. The real questions are simpler:</p>\\n<ul>\\n<li><b>Are you arriving by car?</b> Then free parking is worth more than being two streets closer to the cathedral.</li>\\n<li><b>Are you here for H.C. Andersen and the old town?</b> Then stay within walking distance of the centre and leave the car at home.</li>\\n<li><b>Is it a concert, a conference or a match?</b> Then check where the event is first. Odense is easy to get around, but not at 11 pm in the rain.</li>\\n</ul>\\n<p>With that in mind, here are the three hotels we would book in Odense right now.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>Hotel Odeon</h3></div>\\n<ul class=\\\"facts\\\"><li>4-star (no five-star hotel in Odense met our bar)</li><li>8.5/10 from 2,756 guest reviews</li><li>About 500 m from the town hall</li><li><b>€222</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Hotel Odeon sits right next to ODEON, the city's concert and conference house, between the railway station and H.C. Andersen's House. If you are coming for a show, a congress or simply want to walk everywhere, it's hard to beat the location.</p><p>Odense has no five-star hotel that passes our review threshold, so our 'luxury' pick here is the best-reviewed upscale four-star. Nearly 2,800 reviews averaging 8.5 is a strong, stable signal: you know what you are getting.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's a big, modern city hotel rather than a characterful boutique. If you want small and personal, look at our Best Value pick.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/odeon.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Villa A Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>3-star</li><li>8.6/10 from 668 guest reviews</li><li>About 800 m south-west of the town hall</li><li>Free parking</li><li><b>€137</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Villa A is a small hotel on a quiet residential street, around a ten-to-fifteen-minute walk from the centre. It has the best guest score of every hotel we compared in Odense, at a price close to the city average.</p><p>That combination (top reviews, normal price, free parking, walkable) is exactly what 'best value' means to us. It works for couples, for a weekend without the car, and for business trips where you don't need a conference floor.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's small and simple: no restaurant, no spa. Book early for weekends.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/ansgarhus-motel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>Nice Nest Boutique Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>8.4/10 from 109 guest reviews</li><li>About 1.6 km east of the town hall</li><li>Free parking, hot tub, garden</li><li><b>€98</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Nice Nest is the cheapest well-reviewed private room we found in Odense: every room has its own bathroom, and there's free parking on site. It's about twenty minutes on foot from the centre, or a few minutes by car or bus.</p><p>If you are driving in from Jutland or Zealand and want a clean, calm base without paying city-centre prices, this is the one.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it has far fewer reviews than the other two, so there's less certainty, and it isn't in the old town. Fine with a car, less ideal without one.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/nice-nest.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which part of Odense should you stay in?</h2>\\n<h3>The old town and the H.C. Andersen Quarter</h3>\\n<p>Cobbled lanes, half-timbered houses, the cathedral of St Canute and the new H.C. Andersen's House museum. This is where most visitors spend their time,\\nand the best area for a first trip without a car. Hotels here are few and fill up fast on summer weekends and during the Christmas market season.</p>\\n<h3>Around the station and Kongens Have</h3>\\n<p>The most practical area if you arrive by train: Odense sits on the main line between Copenhagen and Jutland, and the station is a short walk from\\nthe centre. Hotel Odeon and several chain hotels are here. The King's Garden park is right in front of the station.</p>\\n<h3>Outside the centre, with parking</h3>\\n<p>Along the ring roads and towards the motorway you'll find hotels with free parking and lower prices, including our budget pick.\\nGood for drivers, families and anyone combining Odense with Egeskov Castle or a drive around Funen.</p>\\n<h2>Getting there</h2>\\n<ul>\\n<li><b>By train:</b> direct trains from Copenhagen Central take a little over an hour and a quarter; there are also direct trains from Copenhagen Airport.</li>\\n<li><b>By plane:</b> Billund Airport is about an hour away by car. Copenhagen Airport is the bigger hub, with a direct train.</li>\\n<li><b>In town:</b> walk. For longer hops, the Odense light rail runs north–south through the city.</li>\\n</ul>\\n<h2>When prices go up</h2>\\n<p>Odense is mostly a business and short-break city, so prices move with events: big conferences, concerts, the summer holidays and December,\\nwhen the Christmas markets bring a lot of weekend visitors. A mid-week stay in November is about as cheap as Odense gets.\\nOur prices above are from exactly that kind of week, so expect more on a summer Saturday.</p>\\n<h2>Coming soon: the film</h2>\\n<p>We're planning to film our Odense picks this autumn. When the video is ready, it will be on this page and on the <a href=\\\"/odense\\\">Odense hotels page</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":970,\"mins\":4},{\"slug\":\"where-to-stay-in-hamburg\",\"city\":\"hamburg\",\"title\":\"Where to stay in Hamburg (2026): 3 hotels and the right area for you\",\"description\":\"Hamburg is big and every area feels different. Our three hotel picks for 2026 (budget, best value and luxury) with real prices, and a no-nonsense guide to St. Pauli, St. Georg, HafenCity and the Alster.\",\"h1\":\"Where to stay in Hamburg\",\"dek\":\"A €60 room by the station, a €130 room in the Schanze and a €600 grand hotel on the Alster. Here's who each one is for, and which area fits your trip.\",\"tags\":[\"Germany\",\"City guide\"],\"body\":\"\\n<p>Hamburg is not a city you see in one walk. The old merchant centre around the Rathaus, the port and the Elbphilharmonie, the Reeperbahn,\\nthe cafés of the Schanze and the lakes of the Alster are all different places, and where you sleep decides what your evenings feel like.\\nSo in Hamburg we'd pick the area first and the hotel second. The good news: the S-Bahn and U-Bahn are fast, and almost everything below is\\nwithin 20 minutes of everything else.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>Fairmont Hotel Vier Jahreszeiten</h3></div>\\n<ul class=\\\"facts\\\"><li>5-star</li><li>9.5/10 from 1,299 guest reviews</li><li>On the Binnenalster, about 600 m from the Rathaus</li><li><b>€608</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>The Vier Jahreszeiten has been Hamburg's grand hotel for more than a century, and it sits on the best address in town: the Neuer Jungfernstieg, looking straight over the Binnenalster. Shopping streets on one side, the lake on the other, the Rathaus five minutes away.</p><p>A 9.5 average across almost 1,300 reviews is remarkable for a hotel this size. This is the one for an anniversary, a proposal or a 'once a year' trip.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> the price. Mid-week in November it was around €600 a night; weekends and December cost more.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/raffleshotelvierjahreszeiten.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Superbude Hamburg St. Pauli</h3></div>\\n<ul class=\\\"facts\\\"><li>8.9/10 from 1,523 guest reviews</li><li>Edge of the Schanzenviertel, about 2.5 km from the Rathaus</li><li>Pets allowed</li><li><b>€132</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Superbude is playful, design-led and very Hamburg: recycled furniture, a busy lobby bar, and rooms that are small but clever. It sits on the edge of the Schanze, so you have the city's best cafés and bars on your doorstep and St. Pauli a short walk away.</p><p>Guests rate it higher than most hotels that cost twice as much. That's why it is our best value pick.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's a hotel-hostel hybrid with a young, social crowd. Make sure you book a private room with its own bathroom, and don't expect silence on a Saturday.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/superbude-hostel-st-pauli.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>CAB20</h3></div>\\n<ul class=\\\"facts\\\"><li>8.5/10 from 12,776 guest reviews</li><li>St. Georg, about an 8-minute walk from the Hauptbahnhof</li><li>Bar, terrace, 24-hour reception</li><li><b>€60</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>CAB20 is about as cheap as a good private room gets in Hamburg. More than 12,000 reviews averaging 8.5 means this isn't luck: rooms are compact but clean, the location by the main station is perfect if you arrive by train, and the Alster is a ten-minute walk away.</p><p>If you'll only sleep in the room and spend the day out, this is the smart choice.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> rooms are small (the name is a hint), and the streets right behind the station are lively and a bit scruffy late at night.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/cab20.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which area of Hamburg is right for you?</h2>\\n<h3>Altstadt, Neustadt and the Binnenalster: first visit, shopping</h3>\\n<p>The Rathaus, the Jungfernstieg, the shopping streets and the lake. Central, elegant and easy, and quiet at night. Our luxury pick is here.</p>\\n<h3>HafenCity and the Speicherstadt: architecture and the Elbphilharmonie</h3>\\n<p>Red-brick warehouses on the canals (a UNESCO World Heritage site), Miniatur Wunderland and the Elbphilharmonie. Modern hotels, great for a concert trip; a bit empty after dark outside the main squares.</p>\\n<h3>St. Pauli and the Reeperbahn: nightlife</h3>\\n<p>Bars, clubs, music venues and the harbour at Landungsbrücken. Go early on a Sunday for the Fischmarkt. Brilliant if you want to go out, loud if you want to sleep.</p>\\n<h3>Sternschanze: cafés, food and a local feel</h3>\\n<p>Independent shops, brunch spots and bars that are busy every night. A good compromise: lively, but more 'neighbourhood' than the Reeperbahn. Our best value pick is on its edge.</p>\\n<h3>St. Georg: by the station and the Außenalster</h3>\\n<p>The most practical base if you come by train. Lange Reihe is one of the city's nicest streets for dinner, and the big lake is minutes away. The streets right next to the station are rougher; a few blocks makes a big difference.</p>\\n<h3>Altona and Ottensen: calmer and local</h3>\\n<p>Further west, with its own station, the Elbe beaches nearby and lots of restaurants. Good for longer stays and repeat visitors.</p>\\n<h2>Getting there and around</h2>\\n<ul>\\n<li><b>From the airport:</b> the S-Bahn runs from the terminals to the Hauptbahnhof in about 25 minutes.</li>\\n<li><b>By train:</b> the Hauptbahnhof is one of Germany's busiest stations, with direct trains from Berlin, Copenhagen, Amsterdam and most big German cities.</li>\\n<li><b>Around town:</b> S-Bahn, U-Bahn and the harbour ferries, which are part of the normal public-transport network. The ferry from Landungsbrücken is one of the cheapest harbour tours anywhere.</li>\\n</ul>\\n<h2>When prices go up</h2>\\n<p>Hamburg hotel prices jump during big trade fairs, the Harbour Birthday in May, major concerts and the Christmas markets from late November.\\nA quiet mid-week in November or January is when even the grand hotels come down. If your dates are flexible, move them by a few days and compare.</p>\\n<p>We're planning to film our Hamburg picks this autumn. The video will go on this page and on the <a href=\\\"/hamburg\\\">Hamburg hotels page</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":940,\"mins\":4},{\"slug\":\"where-to-stay-in-copenhagen\",\"city\":\"copenhagen\",\"title\":\"Where to stay in Copenhagen (2026): 3 hotels and the best neighbourhoods\",\"description\":\"Copenhagen is expensive, so the right hotel saves real money. Our three picks for 2026 (budget, best value and luxury) with real prices, and which neighbourhood suits you: Indre By, Christianshavn, Vesterbro or Nørrebro.\",\"h1\":\"Where to stay in Copenhagen\",\"dek\":\"One of Europe's most expensive hotel cities. Here's where €100, €200 and €300 a night get you the most.\",\"tags\":[\"Denmark\",\"City guide\"],\"body\":\"\\n<p>Copenhagen is small, flat and made for walking and cycling, but it is not cheap: a perfectly normal hotel can easily cost €200 a night.\\nThat's why picking well matters more here than almost anywhere else in Europe. Get it right and you can be ten minutes from Nyhavn for\\naround €100. Get it wrong and you pay luxury prices for a small room by a ring road.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>1 Hotel Copenhagen</h3></div>\\n<ul class=\\\"facts\\\"><li>5-star</li><li>9.1/10 from 702 guest reviews</li><li>Latin Quarter, about 550 m from the City Hall Square</li><li><b>€301</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>1 Hotel Copenhagen is in the old Latin Quarter, a few steps from the Round Tower and the main pedestrian street. The brand is built around nature and sustainability: lots of wood and plants, and a calm, Scandinavian feel rather than gold and marble.</p><p>It has the best review score among the five-star hotels we compared, in the most walkable spot in the city.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> around €300 a night mid-week in November, and more in summer. Copenhagen luxury is never cheap.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/1-hotel-copenhagen.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Kanalhuset</h3></div>\\n<ul class=\\\"facts\\\"><li>9.4/10 from 869 guest reviews</li><li>On the canal in Christianshavn</li><li>Restaurant on site</li><li><b>€207</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Kanalhuset is a small hotel right on one of Christianshavn's canals: houseboats outside the window, cobbles and cafés all around, and the metro station a short walk away (it runs straight to the airport).</p><p>It has the highest guest score of the 40 Copenhagen hotels we compared, at a price only a little above the city's middle. For a couple's weekend, it's the one we'd book.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's small, so it sells out early, and the rooms vary. Read the room descriptions before you book.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/kanalhuset.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>Wakeup Copenhagen Borgergade</h3></div>\\n<ul class=\\\"facts\\\"><li>8.0/10 from 16,572 guest reviews</li><li>Between Kongens Have and Nyhavn</li><li>24-hour reception, bar</li><li><b>€101</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Wakeup Borgergade is the cheapest good private room in central Copenhagen. Rooms are compact and simple, but with over 16,000 reviews you know exactly what you're getting, and the location is excellent: Nyhavn, Rosenborg Castle and Kongens Nytorv are all on foot.</p><p>If you plan to spend your money on food, Tivoli or a canal tour rather than on the room, start here.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> small rooms and no frills. An 8.0 average is 'very good', not 'wow'. That's the trade-off for this price in this city.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/wakeup-copenhagen-borgergade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which neighbourhood?</h2>\\n<h3>Indre By (the old centre): first visit</h3>\\n<p>Strøget, the Latin Quarter, Nyhavn, the palaces and the main sights. Everything is walkable. Expensive, busy in summer, and the best choice for a short first trip.</p>\\n<h3>Christianshavn: canals and character</h3>\\n<p>Canals, houseboats, the Church of Our Saviour and Christiania. Calm, beautiful and one metro stop from the centre. Our best value pick is here.</p>\\n<h3>Vesterbro: by Central Station, food and bars</h3>\\n<p>The Meatpacking District (Kødbyen), Istedgade and lots of good, younger restaurants. Practical if you arrive by train. Prices tend to be a little lower than in the old centre.</p>\\n<h3>Nørrebro and Østerbro: local life</h3>\\n<p>Nørrebro is diverse, lively and full of small places to eat; Østerbro is green, residential and family-friendly. Both are a short bike ride from the centre.</p>\\n<h3>Ørestad and near the airport: cheaper beds</h3>\\n<p>Modern hotels by the metro line, often much cheaper. Fine for a short stopover or a conference at Bella Center, less charming for a city break.</p>\\n<h2>Getting there and around</h2>\\n<ul>\\n<li><b>From the airport:</b> the metro runs to Kongens Nytorv and Christianshavn in roughly 15 minutes; trains run to Central Station in about the same.</li>\\n<li><b>Around town:</b> walk, or rent a bike. Copenhagen is one of the easiest cities in the world to cycle in.</li>\\n</ul>\\n<h2>Saving money in Copenhagen</h2>\\n<ul>\\n<li>Check whether breakfast is included. In Denmark it often isn't, and it can add a lot per person.</li>\\n<li>Sunday to Thursday is usually cheaper than Friday and Saturday, except during big conferences.</li>\\n<li>Summer and the weeks before Christmas (Tivoli's Christmas season) are the most expensive times. November and January–March are the cheapest.</li>\\n</ul>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":785,\"mins\":4},{\"slug\":\"cheapest-5-star-hotels-in-europe\",\"city\":null,\"title\":\"The 20 cheapest 5-star hotels in Europe (prices checked October 2026)\",\"description\":\"Real five-star hotels rated 8.5+ by guests, from about €92 a night. Every price checked on Booking.com for the same mid-week dates. Prague, the Algarve, Poland and more.\",\"h1\":\"The 20 cheapest five-star hotels in Europe\",\"dek\":\"Officially five stars, rated 8.5+ by guests, from about €92 a night. Every price checked for the same dates.\",\"tags\":[\"Europe\",\"Data\"],\"body\":\"\\n<p>In Paris or London, the five-star hotels we recommend cost well over €700 a night. In the places below, a real five-star hotel,\\nofficially rated and loved by guests, costs less than a standard room in central Copenhagen.</p>\\n<p>We took every European five-star hotel in our database, kept only those with an <b>official five-star rating</b> and a <b>guest score of 8.5 or higher</b>,\\nand checked the price for the same dates on Booking.com: 10–12 November 2026 (Tuesday to Thursday), two adults, one room, checked on 15 October 2026. Then we sorted by price.</p>\\n<aside class=\\\"method\\\"><b>Read this first.</b> Hotel prices change every day. These are real prices for one specific week in low season, not a promise.\\nUse the list to find places where luxury is cheap, then check your own dates. Prices are per night (the two-night total divided by two) as shown on Booking.com, and may exclude local tourist taxes.</aside>\\n<h2>The list</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Where</th><th>Guests</th><th>Per night</th></tr></thead><tbody><tr><td>1</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/hotelsrealsantaeulalia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grande Real Santa Eulália Resort &amp; Hotel Spa</a></td><td><a href=\\\"/albufeira\\\">Albufeira</a>, Portugal</td><td>8.5/10 <small>(4,041)</small></td><td><b>€92</b></td></tr><tr><td>2</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Residence Promenade</a></td><td><a href=\\\"/burgas\\\">Burgas</a>, Bulgaria</td><td>9.5/10 <small>(1,005)</small></td><td><b>€99</b></td></tr><tr><td>3</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/nhgranhotelcasinodeextremadura.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">NH Gran Hotel Casino de Extremadura</a></td><td><a href=\\\"/badajoz\\\">Badajoz</a>, Spain</td><td>9.2/10 <small>(2,451)</small></td><td><b>€104</b></td></tr><tr><td>4</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/old-royal-post-apartments.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Old Royal Post Boutique Hotel</a></td><td><a href=\\\"/prague\\\">Prague</a>, Czechia</td><td>9.6/10 <small>(2,457)</small></td><td><b>€104</b></td></tr><tr><td>5</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/the-bridge-wroclaw-mgallery-by-sofitel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">The Bridge Wrocław – MGallery</a></td><td><a href=\\\"/wroclaw\\\">Wrocław</a>, Poland</td><td>9.4/10 <small>(2,927)</small></td><td><b>€107</b></td></tr><tr><td>6</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/radisson-blu-residence-zakopane.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Blu Hotel &amp; Residences</a></td><td><a href=\\\"/zakopane\\\">Zakopane</a>, Poland</td><td>8.8/10 <small>(6,434)</small></td><td><b>€110</b></td></tr><tr><td>7</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/gdansk_podewils.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Podewils Old Town</a></td><td><a href=\\\"/gdansk\\\">Gdańsk</a>, Poland</td><td>9.2/10 <small>(552)</small></td><td><b>€116</b></td></tr><tr><td>8</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Promenade Hotel Liepāja</a></td><td><a href=\\\"/liepaja\\\">Liepāja</a>, Latvia</td><td>9.2/10 <small>(2,167)</small></td><td><b>€117</b></td></tr><tr><td>9</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/real-marina-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Real Marina Hotel &amp; Spa</a></td><td><a href=\\\"/olhao\\\">Olhão</a>, Portugal</td><td>8.7/10 <small>(2,713)</small></td><td><b>€119</b></td></tr><tr><td>10</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/montebelo-e-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Montebelo Viseu Congress Hotel &amp; Spa</a></td><td><a href=\\\"/viseu\\\">Viseu</a>, Portugal</td><td>9.1/10 <small>(973)</small></td><td><b>€121</b></td></tr><tr><td>11</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ba/mepas-mostar.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Mepas</a></td><td><a href=\\\"/mostar\\\">Mostar</a>, Bosnia and Herzegovina</td><td>9.2/10 <small>(2,115)</small></td><td><b>€122</b></td></tr><tr><td>12</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/acores-atlantico.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grand Hotel Açores Atlântico</a></td><td><a href=\\\"/ponta-delgada\\\">Ponta Delgada</a>, Portugal</td><td>9.2/10 <small>(865)</small></td><td><b>€123</b></td></tr><tr><td>13</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/prezident.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Prezident Luxury Hotel</a></td><td><a href=\\\"/novi-sad\\\">Novi Sad</a>, Serbia</td><td>9.3/10 <small>(869)</small></td><td><b>€126</b></td></tr><tr><td>14</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/10gr.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">10GR Boutique Hotel &amp; Wine Bar</a></td><td><a href=\\\"/rhodes\\\">Rhodes</a>, Greece</td><td>9.5/10 <small>(706)</small></td><td><b>€134</b></td></tr><tr><td>15</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/palacio-de-aviles-by-melia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Palacio de Avilés</a></td><td><a href=\\\"/aviles\\\">Avilés</a>, Spain</td><td>9.2/10 <small>(1,515)</small></td><td><b>€135</b></td></tr><tr><td>16</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/aureaconventocapuchinosbyeurostarshotelcompany.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Áurea Convento Capuchinos</a></td><td><a href=\\\"/segovia\\\">Segovia</a>, Spain</td><td>9.1/10 <small>(2,532)</small></td><td><b>€144</b></td></tr><tr><td>17</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/radisson-sas-tallinn.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Collection Hotel</a></td><td><a href=\\\"/tallinn\\\">Tallinn</a>, Estonia</td><td>9.4/10 <small>(6,055)</small></td><td><b>€146</b></td></tr><tr><td>18</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/intercontinentalwarsaw.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">InterContinental Warszawa</a></td><td><a href=\\\"/warsaw\\\">Warsaw</a>, Poland</td><td>9.1/10 <small>(10,072)</small></td><td><b>€147</b></td></tr><tr><td>19</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/eurostars-hotel-de-la-reconquista.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Eurostars Hotel de la Reconquista</a></td><td><a href=\\\"/oviedo\\\">Oviedo</a>, Spain</td><td>9.1/10 <small>(1,547)</small></td><td><b>€150</b></td></tr><tr><td>20</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/meliameridaboutiquehotel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Ilunion Mérida Palace</a></td><td><a href=\\\"/merida-spain\\\">Mérida</a>, Spain</td><td>9.0/10 <small>(6,151)</small></td><td><b>€153</b></td></tr></tbody></table></div>\\n<h2>What makes each one worth it</h2>\\n<ol class=\\\"notes\\\"><li><b>Grande Real Santa Eulália Resort &amp; Hotel Spa, Albufeira (€92).</b> A beachfront resort on the Algarve with indoor and outdoor pools and a spa. November is low season, which is exactly why it's this cheap.</li><li><b>Hotel Residence Promenade, Burgas (€99).</b> On the Black Sea seafront in central Burgas, with one of the highest scores on this list.</li><li><b>NH Gran Hotel Casino de Extremadura, Badajoz (€104).</b> A five-star with its own casino, close to the Portuguese border. A great stop on a road trip between Madrid and Lisbon.</li><li><b>Old Royal Post Boutique Hotel, Prague (€104).</b> In the Lesser Quarter (Malá Strana), below the castle and a few minutes from the Charles Bridge. The best location on this list.</li><li><b>The Bridge Wrocław – MGallery, Wrocław (€107).</b> On Cathedral Island, the oldest part of Wrocław, with a spa and sauna. Five-star polish at a three-star price.</li><li><b>Radisson Blu Hotel &amp; Residences, Zakopane (€110).</b> A mountain resort in the Tatras with an indoor pool and spa. Over 6,000 reviews, and very family-friendly.</li><li><b>Podewils Old Town, Gdańsk (€116).</b> A small, classic hotel on the river, facing Gdańsk's old town. Fewer reviews than most here, but consistently excellent.</li><li><b>Promenade Hotel Liepāja, Liepāja (€117).</b> On the harbour canal in Latvia's coastal music city. Free parking and a spa.</li><li><b>Real Marina Hotel &amp; Spa, Olhão (€119).</b> On the Ria Formosa lagoon in the eastern Algarve, with indoor and outdoor pools. A quieter, more local alternative to Albufeira.</li><li><b>Montebelo Viseu Congress Hotel &amp; Spa, Viseu (€121).</b> A spa hotel with pools in the heart of the Dão wine region. Pair it with a few wineries.</li><li><b>Hotel Mepas, Mostar (€122).</b> A modern five-star with an indoor pool and spa, a short drive from the famous Old Bridge.</li><li><b>Grand Hotel Açores Atlântico, Ponta Delgada (€123).</b> On the seafront avenue of São Miguel's main town, with an indoor pool. The base for crater lakes and hot springs.</li><li><b>Prezident Luxury Hotel, Novi Sad (€126).</b> A spa hotel with indoor and outdoor pools in Serbia's second city.</li><li><b>10GR Boutique Hotel &amp; Wine Bar, Rhodes (€134).</b> An adults-only boutique hotel inside the medieval Old Town of Rhodes, with its own wine bar.</li><li><b>Palacio de Avilés, Avilés (€135).</b> A historic palace on the main square of Avilés, on Spain's green north coast.</li><li><b>Áurea Convento Capuchinos, Segovia (€144).</b> A converted convent with a spa, walking distance from the Roman aqueduct. Easy day trip from Madrid.</li><li><b>Radisson Collection Hotel, Tallinn (€146).</b> A tower hotel with views over the old town, a pool and a spa. Over 6,000 reviews averaging 9.4.</li><li><b>InterContinental Warszawa, Warsaw (€147).</b> A big-city five-star with a high-floor pool and more than 10,000 reviews. The cheapest capital-city luxury on this list.</li><li><b>Eurostars Hotel de la Reconquista, Oviedo (€150).</b> Oviedo's landmark hotel in a historic building in the centre.</li><li><b>Hotel Ilunion Mérida Palace, Mérida (€153).</b> On Mérida's Plaza de España, with a rooftop pool, a short walk from the Roman theatre.</li></ol>\\n<h2>The pattern: where luxury is cheap in Europe</h2>\\n<ul>\\n<li><b>Second cities, not capitals.</b> Wrocław, Gdańsk, Oviedo, Mérida, Viseu, Novi Sad: excellent hotels built for business and weddings, with far less tourist demand than the big names.</li>\\n<li><b>Beach resorts out of season.</b> The Algarve, the Black Sea and Rhodes in November cost a fraction of their August prices, and the weather is often still good for walking.</li>\\n<li><b>Poland, Portugal and inland Spain.</b> Three countries make up more than half of this list.</li>\\n<li><b>The two great exceptions: Prague and Warsaw.</b> Capital-city five-stars, in great locations, for under €150.</li>\\n</ul>\\n<h2>How to find cheap luxury yourself</h2>\\n<ol>\\n<li><b>Stay mid-week.</b> Business hotels drop on weekends; leisure hotels drop Sunday to Thursday. Check both.</li>\\n<li><b>Look one city over.</b> Segovia instead of Madrid, Olhão instead of Faro, Wrocław instead of Kraków.</li>\\n<li><b>Ignore the star rating on its own.</b> Plenty of 'five-star' hotels score 7.5. Our rule: official five stars <i>and</i> 8.5+ from guests.</li>\\n<li><b>Count the extras.</b> Breakfast, parking and city tax can add €30–€60 a night. Compare the total, not the headline.</li>\\n</ol>\\n<p>Every city on this list has its own page with our three picks (budget, best value and luxury), so you can compare the five-star\\nwith cheaper options before you book. Start with <a href=\\\"/prague\\\">Prague</a>, <a href=\\\"/wroclaw\\\">Wrocław</a> or <a href=\\\"/albufeira\\\">Albufeira</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":1088,\"mins\":5},{\"slug\":\"how-to-choose-a-hotel\",\"city\":null,\"title\":\"How to choose a hotel in 5 minutes (without reading 500 listings)\",\"description\":\"A simple, repeatable way to pick a hotel fast: decide your budget level, pick the area, read reviews the right way and compare the real total price. The same method we use for every city on Top3Hotels.\",\"h1\":\"How to choose a hotel in five minutes\",\"dek\":\"The booking sites show you 500 options. You need one. Here's the method we use for every city.\",\"tags\":[\"Tips\",\"Method\"],\"body\":\"\\n<p>Most people spend more time choosing a hotel than choosing the city. You open a booking site, see hundreds of options, sort by price, then by\\nrating, open twenty tabs, and an hour later you book the one you saw first. The problem isn't a lack of choice. It's too much of it.</p>\\n<p>This is the five-minute method we use to pick three hotels in every city on Top3Hotels. It works just as well for your own trips.</p>\\n<h2>1. Decide your level before you look</h2>\\n<p>Before you see a single photo, decide which of three trips this is:</p>\\n<ul>\\n<li><b>Budget:</b> you just need a clean private room with its own bathroom in a safe, practical spot. You'll be out all day.</li>\\n<li><b>Best value:</b> you want a place you'll actually enjoy, with great reviews, at a normal price for the city.</li>\\n<li><b>Luxury:</b> the hotel is part of the trip. An anniversary, a treat, a 'once a year'.</li>\\n</ul>\\n<p>This one decision removes about 80% of the listings. It's also why we show exactly one hotel at each level, not a long list.</p>\\n<h2>2. Pick the area, then the hotel</h2>\\n<p>A great hotel in the wrong place ruins a city break. Find the one or two neighbourhoods that match your trip (first visit, nightlife,\\nfood, quiet, near the station), then only look at hotels there. In small cities (Odense, Bruges, Salzburg) this barely matters;\\nin big ones (London, Paris, Hamburg) it matters more than anything else.</p>\\n<h2>3. Read the score and the number of reviews together</h2>\\n<p>A 9.6 from 12 reviews tells you very little. An 8.6 from 2,000 reviews tells you a lot. Our rule of thumb:</p>\\n<ul>\\n<li>Under 100 reviews: treat the score as a hint, not a fact.</li>\\n<li>Several hundred reviews and 8.5+: you can trust it.</li>\\n<li>Thousands of reviews and 8.0+: a very safe bet, even if it isn't exciting.</li>\\n</ul>\\n<h2>4. Read three bad reviews, not thirty good ones</h2>\\n<p>Sort by the lowest scores and read the three most recent. You're looking for patterns that would bother <i>you</i>: noise, small rooms,\\na broken lift, a building site next door. A complaint about the breakfast doesn't matter if you never eat breakfast.</p>\\n<h2>5. Compare the real total</h2>\\n<p>The headline price is rarely what you pay. Add breakfast, parking and city tax, and check the cancellation terms. A room that's €15 cheaper\\nbut non-refundable isn't always the better deal.</p>\\n<h2>6. Book, and stop looking</h2>\\n<p>Once a hotel passes all five steps, book it. Prices on good hotels in good areas tend to go up, not down, as the dates get closer.</p>\\n<h2>Or skip the five minutes</h2>\\n<p>That's exactly what Top3Hotels does for you: in every city we compare the well-reviewed hotels on the same dates and keep three, the best\\nbudget room, the best value and the best luxury hotel. <a href=\\\"/destinations\\\">Pick a city</a> and you'll see them in one screen.\\nRead the full <a href=\\\"/how-we-choose\\\">method</a>, or see which cities have the <a href=\\\"/guides/cheapest-5-star-hotels-in-europe\\\">cheapest five-star hotels in Europe</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":495,\"mins\":3}]");
@@ -10271,7 +11411,7 @@ e.respondWith(fetch(r).then(res=>{if(res.ok){const cp=res.clone();caches.open(C)
 var MANIFEST = JSON.stringify({
 	name: "Top3Hotels",
 	short_name: "Top3Hotels",
-	description: "The best hotel in every city, picked in 1 second: budget, mid-range and upscale.",
+	description: "Three hotels per city, chosen by public rules: budget, best value and luxury.",
 	start_url: "/?source=pwa",
 	scope: "/",
 	display: "standalone",
@@ -10320,8 +11460,9 @@ var fmtDate = (iso, L) => {
 		return new Intl.DateTimeFormat(L, {
 			day: "numeric",
 			month: "long",
-			year: "numeric"
-		}).format(new Date(iso));
+			year: "numeric",
+			timeZone: "UTC"
+		}).format(new Date(/^\d{4}-\d{2}-\d{2}$/.test(iso) ? `${iso}T12:00:00Z` : iso));
 	} catch {
 		return iso;
 	}
@@ -10424,7 +11565,7 @@ async function cityData(id) {
 				count: o.count,
 				stars: o.stars,
 				url: o.url,
-				checked: "14 Oct 2026"
+				checked: o.checked ?? "14 Oct 2026"
 			},
 			offer: {
 				total: o.total,
@@ -10472,10 +11613,42 @@ async function cityData(id) {
 			if (p.count) h.booking.count = p.count;
 			if (p.stars) h.booking.stars = p.stars;
 		}
+		tidyReasons(h);
 	}
+	for (const h of city.hotels ?? []) if (typeof h.name === "string") h.name = h.name.replace(/\s+FREE PARKING[\s\S]*$/i, "").trim();
 	city.extras = cx[id] ?? {};
 	city.slug = byId.get(id)?.slug ?? id;
 	return city;
+}
+/** Reasons were written at the first snapshot; rewrite numbers so they match what the card shows. */
+function tidyReasons(h) {
+	const ev = h.evidence;
+	if (!ev?.reasons) return;
+	const n = h.offer?.nightly;
+	const cnt = h.booking?.count;
+	ev.reasons = ev.reasons.filter((r) => !(h.live && /^Price context:/.test(r))).map((r) => {
+		let x = r;
+		if (cnt) x = x.replace(/from [\d,.]+ guest reviews/g, `from ${cnt.toLocaleString("en-US")} guest reviews`);
+		if (h.live && n && /^Budget choice:/.test(x)) x = x.replace(/€[\d,]+\.\d{2} per night/, `€${n.toFixed(2)} per night`);
+		x = x.replace(/(\d+)% above the median/g, (_m, p) => {
+			const k = 1 + Number(p) / 100;
+			return k >= 2 ? `${k.toFixed(1)}× the median` : `${p}% above the median`;
+		});
+		x = x.replace("Walking times and distances to attractions have not been verified.", "Walking times are estimates from map distance.");
+		x = x.replace("Walking times are straight-line estimates.", "Walking times are estimates from map distance.");
+		return x;
+	});
+}
+/** Parse "14 Oct 2026" or "2026-10-14" as that calendar day, independent of the server time zone. */
+var dayMs = (s) => {
+	if (!s) return NaN;
+	return Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(s) ? `${s}T12:00:00Z` : `${s} 12:00:00 UTC`);
+};
+var isoDay = (s) => new Date(Number.isNaN(dayMs(s)) ? dayMs(SNAPSHOT_DATE) : dayMs(s)).toISOString().slice(0, 10);
+/** One date for the whole page: the most recent check across the three picks. */
+function cityChecked(hs) {
+	const ts = hs.map((h) => dayMs(h.booking?.checked)).filter((t) => !Number.isNaN(t));
+	return ts.length ? new Date(Math.max(...ts)).toISOString().slice(0, 10) : SNAPSHOT_DATE;
 }
 var fmtLive = (d) => {
 	const x = /* @__PURE__ */ new Date(d + "T12:00:00Z");
@@ -10533,7 +11706,7 @@ map.on('mouseenter','c',function(){map.getCanvas().style.cursor='pointer'});map.
 map.on('click','c',function(e){var p=e.features[0].properties,price=p.p?' · '+FROM+' '+new Intl.NumberFormat(document.documentElement.lang,{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(p.p):'';var d=document.createElement('div');d.innerHTML='<strong></strong><br><small></small><br><a></a>';d.querySelector('strong').textContent=p.c;d.querySelector('small').textContent=p.k+price;var a=d.querySelector('a');a.href=pre+'/'+p.s;a.textContent=OPEN+' →';new maplibregl.Popup({offset:8}).setLngLat(e.features[0].geometry.coordinates).setDOMContent(d).addTo(map)})})})})();<\/script>`;
 	return page({
 		L,
-		title: `${m.mapTitle} — Top3Hotels`,
+		title: `${m.mapTitle} | Top3Hotels`,
 		description: m.mapLead,
 		path: "/map",
 		body,
@@ -10553,7 +11726,7 @@ async function pressPage() {
 	const row = (x, i) => `<tr><td>${i + 1}</td><td><a href="/${x.c.slug}">${esc(x.c.city)}</a></td><td>${esc(x.c.country)}</td><td>${money(x.v)}</td></tr>`;
 	return page({
 		L: "en",
-		title: "Press & data — Top3Hotels",
+		title: "Press & data | Top3Hotels",
 		description: "Hotel price data and rankings from Top3Hotels: the cheapest and most expensive cities for a good hotel, free to quote.",
 		path: "/press",
 		body: `<h1>Press &amp; data<em>.</em></h1><p class="lead">Top3Hotels picks three hotels in every city: the best budget stay, the best mid-range hotel and the best upscale hotel. Free to quote with a link to top3hotels.com.</p>
@@ -10588,7 +11761,7 @@ var guideFor = (slug) => POSTS.find((p) => p.city === slug);
 function guidesIndex() {
 	return page({
 		L: "en",
-		title: "Hotel guides: where to stay and how to choose — Top3Hotels",
+		title: "Hotel guides: where to stay and how to choose | Top3Hotels",
 		description: "Long-form hotel guides from Top3Hotels: where to stay in Odense, Hamburg and Copenhagen, the cheapest five-star hotels in Europe and how to choose a hotel in five minutes.",
 		path: "/guides",
 		body: `<style>${CSS_BLOG}</style><div class="post" style="max-width:1000px"><h1>Hotel guides<em>.</em></h1><p class="dek">Where to stay, which area to pick and where luxury is cheap. Written by people, with real prices checked on the same dates.</p>
@@ -10683,6 +11856,7 @@ var CSS_SOCIAL = `.t3-sp{display:flex;justify-content:center;margin:10px 0 0}.t3
 .t3-social:hover{border-color:#1877f2}.t3-social .av{display:inline-flex;flex:none}.t3-social .av img{width:24px;height:24px;border-radius:50%;border:2px solid var(--bg,#fff);object-fit:cover;margin-left:-8px;background:#ddd}.t3-social .av img:first-child{margin-left:0}
 .t3-social b{font-weight:700}.t3-social .fb{color:#1877f2;font-weight:600}@media(max-width:520px){.t3-social{font-size:12px;white-space:nowrap}.t3-social .pre,.t3-social .av img:nth-child(4){display:none}}header.top nav a{white-space:nowrap}@media(max-width:1380px){.hide-md{display:none!important}}`;
 var socialPill = (L) => {
+	if (L !== "es") return "";
 	const [a, b] = SOCIAL_TXT[L] ?? SOCIAL_TXT["en"];
 	return `<div class="t3-sp"><a class="t3-social" href="https://www.facebook.com/happylowcostofficialpage" target="_blank" rel="noopener" data-t="social_fb"><span class="av" aria-hidden="true"><img src="/social/hlc-logo.webp" alt="" width="24" height="24"><img src="/social/hlc-1.webp" alt="" width="24" height="24" loading="lazy"><img src="/social/hlc-2.webp" alt="" width="24" height="24" loading="lazy"><img src="/social/hlc-3.webp" alt="" width="24" height="24" loading="lazy"></span><span><span class="pre">${esc(a)} </span><b>Happy Low Cost</b> · <b>420K+</b> ${esc(b)} <span class="fb">Facebook</span></span></a></div>`;
 };
@@ -10712,10 +11886,6 @@ var range = (a, b) => {
 var json = (o) => JSON.stringify(o).replace(/</g, "\\u003c");
 var catKey = (h) => h.category === "Budget" ? "budget" : h.category === "Best Value" ? "value" : "lux";
 var label = (h, L) => h.category === "Luxury" && (h.booking?.stars ?? 5) < 5 ? T[L].cat.Upscale : T[L].cat[h.category];
-var daysSince = (s) => {
-	const t = Date.parse(s ?? "");
-	return Number.isFinite(t) ? Math.max(0, Math.floor((Date.now() - t) / 864e5)) : 0;
-};
 var km = (a, b) => {
 	const r = (x) => x * Math.PI / 180;
 	const x = Math.sin(r(b.lat - a.lat) / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(r(b.lng - a.lng) / 2) ** 2;
@@ -10758,13 +11928,14 @@ function bestFor(h, i, L, sights) {
 		"value",
 		"lux"
 	][i]]];
+	const guestText = [...h.extras?.pros ?? [], ...h.extras?.cons ?? []].join(" ");
+	const famOk = /famil|kid|child|niñ|enfant|kinder|bambin|crian|børn/i.test(guestText);
 	for (const k of [
 		"family",
 		"spa",
 		"beach",
-		"pool",
-		"pets"
-	]) if (tags.includes(k)) out.push(f[k]);
+		"pool"
+	]) if (tags.includes(k) && (k !== "family" || famOk)) out.push(f[k]);
 	const w = walkMinutes(h, sights);
 	if (w && w.min <= 15) out.push(f["central"]);
 	return [...new Set(out)].slice(0, 3);
@@ -10915,7 +12086,7 @@ function page(o) {
 	const t = T[o.L];
 	const url = SITE + P(o.L, o.path);
 	const image = o.image ?? `https://www.top3hotels.com/og.png`;
-	const alt = o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
+	const alt = o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
 	const langSel = o.langs ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${LANGS.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T[l].name}</option>`).join("")}</select></label>` : "";
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
@@ -10925,7 +12096,7 @@ ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="
 <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>${CSS}
 ${CSS_PLUS}
-${CSS_TRUST}
+${CSS_TRUST}${CSS_ALT}
 ${CSS_MORE}
 ${CSS_SOCIAL}
 ${CSS_DP}</style><link rel="manifest" href="/manifest.webmanifest">
@@ -10935,13 +12106,14 @@ ${consentScript(Z[o.L])}</head><body><div class="wrap">
 <header class="top"><a class="logo" href="${P(o.L, "/")}">${LOGO}<span>top3hotels<em>.</em></span></a><nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="/guides">Guides</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
 ${socialPill(o.L)}<main>${o.body}</main>
 <footer><div class="cols"><div><a class="logo" href="${P(o.L, "/")}" style="font-size:20px">${LOGO}<span>top3hotels<em>.</em></span></a><p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li><li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="/press">Press &amp; data</a></li><li><a href="/guides">Guides</a></li></ul></div>
+<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="/press">Press &amp; data</a></li><li><a href="/guides">Guides</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="/how-we-choose">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="/contact">${X[o.L].contact}</a></li></ul></div>
 <div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure">Affiliate disclosure</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
 <div class="fine"><span>© 2026 Top3Hotels · ${BRAND.entity} (${BRAND.place})</span><span>${t.disclaimer}</span></div></footer>
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
-window.T3V=${json(M[o.L].voice)};${JS_MORE}<\/script><script>${JS_DP}<\/script></body></html>`;
+window.T3V=${json(M[o.L].voice)};${JS_MORE}
+${REPORT_JS}<\/script><script>${JS_DP}<\/script></body></html>`;
 }
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(body, {
 	status,
@@ -10950,7 +12122,128 @@ var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") =
 		"cache-control": cache
 	}
 });
-function card(h, city, i, L, sights, cityImg) {
+var ALT_TXT = {
+	en: "Sold out on your dates? See the best available alternatives",
+	es: "¿Sin disponibilidad en tus fechas? Ver alternativas disponibles",
+	de: "An deinen Daten ausgebucht? Beste verfügbare Alternativen ansehen",
+	fr: "Complet à vos dates ? Voir les meilleures alternatives disponibles",
+	it: "Tutto esaurito nelle tue date? Vedi le migliori alternative disponibili",
+	pt: "Esgotado nas suas datas? Ver as melhores alternativas disponíveis",
+	da: "Udsolgt på dine datoer? Se de bedste ledige alternativer"
+};
+function altSearch(k, nightly, stars, city) {
+	const u = new URL("https://www.booking.com/searchresults.html");
+	u.searchParams.set("ss", `${city.city}, ${city.country}`);
+	u.searchParams.set("group_adults", "2");
+	u.searchParams.set("no_rooms", "1");
+	u.searchParams.set("group_children", "0");
+	u.searchParams.set("order", "bayesian_review_score");
+	const n = nightly && nightly > 0 ? nightly : 0;
+	let f = "";
+	if (k === "budget") f = `review_score=80${n ? `;price=EUR-0-${Math.ceil(n * 1.3)}-1` : ""}`;
+	else if (k === "value") f = `review_score=80${n ? `;price=EUR-${Math.floor(n * .7)}-${Math.ceil(n * 1.35)}-1` : ""}`;
+	else f = `review_score=80;class=5${(stars ?? 5) < 5 ? ";class=4" : ""}`;
+	u.searchParams.set("nflt", f);
+	return CJ_BOOKING(u.toString(), "t3alt");
+}
+var NOTE = {
+	en: {
+		past: (d) => `This price was seen for ${d}, a stay that has passed. Check today's price for your dates.`,
+		hostel: "Hostel-style property: check that you book a private room.",
+		same: (c) => `Same building or address as our ${c} pick.`
+	},
+	es: {
+		past: (d) => `Este precio se vio para ${d}, una estancia ya pasada. Consulta el precio de hoy para tus fechas.`,
+		hostel: "Alojamiento tipo albergue: comprueba que reservas habitación privada.",
+		same: (c) => `Mismo edificio o dirección que nuestra elección ${c}.`
+	},
+	de: {
+		past: (d) => `Dieser Preis galt für ${d}, ein vergangener Aufenthalt. Prüfe den heutigen Preis für deine Daten.`,
+		hostel: "Hostel-ähnliche Unterkunft: achte darauf, ein Privatzimmer zu buchen.",
+		same: (c) => `Gleiches Gebäude oder gleiche Adresse wie unsere Wahl ${c}.`
+	},
+	fr: {
+		past: (d) => `Ce prix a été relevé pour ${d}, un séjour déjà passé. Vérifiez le prix du jour pour vos dates.`,
+		hostel: "Établissement de type auberge : vérifiez que vous réservez une chambre privée.",
+		same: (c) => `Même bâtiment ou adresse que notre choix ${c}.`
+	},
+	it: {
+		past: (d) => `Questo prezzo è stato rilevato per ${d}, un soggiorno già passato. Controlla il prezzo di oggi per le tue date.`,
+		hostel: "Struttura tipo ostello: verifica di prenotare una camera privata.",
+		same: (c) => `Stesso edificio o indirizzo della nostra scelta ${c}.`
+	},
+	pt: {
+		past: (d) => `Este preço foi visto para ${d}, uma estadia já passada. Confirme o preço de hoje para as suas datas.`,
+		hostel: "Alojamento tipo hostel: confirme que reserva um quarto privado.",
+		same: (c) => `Mesmo edifício ou morada que a nossa escolha ${c}.`
+	},
+	da: {
+		past: (d) => `Prisen blev set for ${d}, et ophold der er overstået. Tjek dagens pris for dine datoer.`,
+		hostel: "Hostel-lignende sted: tjek at du booker et privat værelse.",
+		same: (c) => `Samme bygning eller adresse som vores ${c}-valg.`
+	}
+};
+var REP = {
+	en: {
+		ph: "What is wrong? (price, closed hotel, wrong photo…)",
+		mail: "Your email (optional, for a reply)",
+		send: "Send",
+		ok: "Thanks, we will review it.",
+		err: "Could not send. Please try again."
+	},
+	es: {
+		ph: "¿Qué está mal? (precio, hotel cerrado, foto equivocada…)",
+		mail: "Tu email (opcional, para responderte)",
+		send: "Enviar",
+		ok: "Gracias, lo revisaremos.",
+		err: "No se pudo enviar. Inténtalo de nuevo."
+	},
+	de: {
+		ph: "Was stimmt nicht? (Preis, Hotel geschlossen, falsches Foto…)",
+		mail: "Deine E-Mail (optional, für eine Antwort)",
+		send: "Senden",
+		ok: "Danke, wir prüfen es.",
+		err: "Senden fehlgeschlagen. Bitte erneut versuchen."
+	},
+	fr: {
+		ph: "Qu'est-ce qui ne va pas ? (prix, hôtel fermé, mauvaise photo…)",
+		mail: "Votre e-mail (facultatif, pour une réponse)",
+		send: "Envoyer",
+		ok: "Merci, nous allons vérifier.",
+		err: "Envoi impossible. Réessayez."
+	},
+	it: {
+		ph: "Cosa non va? (prezzo, hotel chiuso, foto sbagliata…)",
+		mail: "La tua email (facoltativa, per risponderti)",
+		send: "Invia",
+		ok: "Grazie, lo verificheremo.",
+		err: "Invio non riuscito. Riprova."
+	},
+	pt: {
+		ph: "O que está errado? (preço, hotel fechado, foto errada…)",
+		mail: "O seu email (opcional, para resposta)",
+		send: "Enviar",
+		ok: "Obrigado, vamos verificar.",
+		err: "Não foi possível enviar. Tente de novo."
+	},
+	da: {
+		ph: "Hvad er forkert? (pris, lukket hotel, forkert foto…)",
+		mail: "Din e-mail (valgfri, for svar)",
+		send: "Send",
+		ok: "Tak, vi kigger på det.",
+		err: "Kunne ikke sende. Prøv igen."
+	}
+};
+var REPORT_JS = `document.addEventListener('submit',function(e){var f=e.target;if(!f.dataset||!f.dataset.report)return;e.preventDefault();var m=f.querySelector('.repmsg'),b=f.querySelector('button');var d=JSON.parse(f.dataset.report);d.message=f.message.value.trim();d.email=f.email.value.trim()||null;b.disabled=true;fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_reports',{method:'POST',headers:{'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;m.textContent=m.dataset.ok;f.message.value='';try{t3track('report_sent',{city:d.city,category:d.category})}catch(_){}}).catch(function(){m.textContent=m.dataset.err;b.disabled=false})});`;
+var isHostel = (h) => /hostel|\bdorm|capsule|albergue|jugendherberge/i.test(`${h.name} ${h.booking?.url ?? ""}`);
+var addrKey = (a) => {
+	const first = (a ?? "").toLowerCase().split(",").find((x) => /\d/.test(x) && /[a-z\u00c0-\u024f]{3}/.test(x)) ?? "";
+	const street = first.replace(/\d[\s\S]*$/, "").replace(/[\s.\-\/]+/g, "") || first.replace(/[\d\s.\-\/]+/g, "");
+	const num = (first.match(/\d+/) ?? [""])[0];
+	return street && num ? `${street}#${num}` : "";
+};
+var CSS_ALT = `.rep{margin:8px 0 0;font-size:13px}.rep summary{cursor:pointer;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.rep form{display:flex;flex-direction:column;gap:8px;margin-top:8px}.rep textarea,.rep input{font:inherit;font-size:16px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--paper);color:var(--ink)}.rep .btn{min-height:40px}.repmsg{margin:0;font-size:12.5px;color:var(--muted)}.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
+function card(h, city, i, L, sights, cityImg, review) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
 	const img = h.gallery?.find((g) => g.src)?.src;
@@ -10979,17 +12272,24 @@ function card(h, city, i, L, sights, cityImg) {
 	return `<article class="card ${k}" id="${k}">
 <div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(city.city)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
 <div class="badge"><span><i class="ico" aria-hidden="true">${k === "budget" ? "€" : k === "value" ? "★" : "♛"}</i>${esc(label(h, L))}</span>${i === 1 ? `<span class="pick">★ ${esc(t.ourPick)}</span>` : ""}${h.deal ? `<span class="pick deal">🔥 ${esc(M[L].deal)}</span>` : ""}</div>
-<div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(SNAPSHOT_DATE, L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
+<div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
 <div class="body"><h2 class="hname">${esc(h.name)}</h2>
 <div class="meta">${b.stars ? `<span class="stars" aria-label="${b.stars} stars">${"★".repeat(b.stars)}</span>` : ""}<span>${esc(h.area ?? city.city)}</span></div>
 <p class="bestfor"><b>${esc(X[L].bestFor)}</b>${esc(bestFor(h, i, L, sights).join(" · "))}</p>
 ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}
-<div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}${h.live ? `<span class="live">${esc(M[L].live(b.checked ?? ""))}</span>` : `<span>${esc(t.checked(daysSince(b.checked)))}</span>`}</div>
+<div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
-${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p>` : ""}
-<div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a><a class="report" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Correction: ${h.name} (${city.city})`)}">${esc(M[L].report)}</a></div>
+${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
+${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
+${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
+<div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a></div><details class="rep"><summary>${esc(M[L].report)}</summary><form data-report="${esc(JSON.stringify({
+		city: city.slug,
+		hotel: h.name,
+		category: k,
+		lang: L
+	}))}"><textarea name="message" required minlength="3" maxlength="2000" rows="3" aria-label="${esc(M[L].report)}" placeholder="${esc(REP[L].ph)}"></textarea><input name="email" type="email" maxlength="200" autocomplete="email" placeholder="${esc(REP[L].mail)}" aria-label="${esc(REP[L].mail)}"><button class="btn ghost" type="submit">${esc(REP[L].send)}</button><p class="repmsg" role="status" data-ok="${esc(REP[L].ok)}" data-err="${esc(REP[L].err)}"></p></form></details>
 ${h.evidence?.reasons?.length ? `<details><summary>${esc(t.why(label(h, L)))}</summary><ul>${h.evidence.reasons.slice(0, 4).map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>` : ""}
 </div></article>`;
 }
@@ -11014,12 +12314,18 @@ function mapScript(hs, sights) {
 <script>(function(){var P=${json(pts)},S=${json(ss)},el=document.getElementById('map');if(!el)return;var go=function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js';s.onload=function(){var dark=matchMedia('(prefers-color-scheme: dark)').matches;var m=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/'+(dark?'dark':'positron'),center:[P[0].lng,P[0].lat],zoom:12,attributionControl:{compact:true},cooperativeGestures:true});m.addControl(new maplibregl.NavigationControl({showCompass:false}));var b=new maplibregl.LngLatBounds();P.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:30px;height:30px;border-radius:50%;background:'+p.c+';color:#fff;font:700 14px system-ui;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 3px 10px #0005';d.textContent=p.n;new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:18}).setText(p.name)).addTo(m);b.extend([p.lng,p.lat])});var cx=P.reduce(function(t,p){return t+p.lng},0)/P.length,cy=P.reduce(function(t,p){return t+p.lat},0)/P.length;S.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:12px;height:12px;border-radius:50%;background:#46566a;border:2px solid #fff';new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:10}).setText(p.name)).addTo(m);var dk=Math.hypot((p.lng-cx)*Math.cos(cy*Math.PI/180),p.lat-cy)*111;if(dk<=3)b.extend([p.lng,p.lat])});m.fitBounds(b,{padding:50,maxZoom:15,duration:0})};document.head.appendChild(s)};if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();go()}},{rootMargin:'300px'});io.observe(el)}else go()})();<\/script>`;
 }
 async function cityPage(city, L) {
+	const hpLive = new Set((await hotelPagesList()).map((x) => x.slug));
 	const cd = await cityData(city.id);
 	if (!cd || cd.hotels?.length !== 3) return null;
 	const t = T[L];
 	const hs = cd.hotels;
 	const [budget, value, lux] = hs;
 	if ((value.offer?.nightly ?? 0) > (lux.offer?.nightly ?? Infinity)) lux.deal = true;
+	hs.forEach((h, i) => {
+		const k = addrKey(h.address);
+		const j = k ? hs.findIndex((x, xi) => xi < i && addrKey(x.address) === k) : -1;
+		if (j >= 0) h.sameAs = label(hs[j], L);
+	});
 	const sights = cd.extras?.sights;
 	const hero = cd.extras?.hero;
 	const { bySlug, byCountry } = await data();
@@ -11030,7 +12336,9 @@ async function cityPage(city, L) {
 	const description = t.desc(city.city, cname, budget.name, value.name, lux.name);
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
 	const dates = range(o0.checkin, o0.checkout);
-	const checked = t.checked(daysSince(budget.booking?.checked)).toLowerCase();
+	const pageDate = cityChecked(hs);
+	const days = [...new Set(hs.map((h) => isoDay(h.booking?.checked)))].sort();
+	const checkedText = M[L].live(days.length > 1 ? `${fmtLive(days[0])} – ${fmtLive(days[days.length - 1])}` : fmtLive(days[0] ?? pageDate));
 	const ans = (h) => `${h.name}${h.area ? ` (${h.area})` : ""}: ${h.booking?.score ?? "–"}/10 · ${fmtInt(h.booking?.count)} ${t.reviews} · ${money(h.offer?.nightly)} ${t.perNight}${h.extras?.pros?.[0] ? ` · ${t.guestsSay}: “${h.extras.pros[0]}”` : ""}`;
 	const faq = [
 		[t.faq.budget(city.city), ans(budget)],
@@ -11045,11 +12353,11 @@ async function cityPage(city, L) {
 			it: "il",
 			pt: "em",
 			da: "den"
-		}[L]} ${fmtDate(budget.booking?.checked || SNAPSHOT_DATE, L)}`)]
+		}[L]} ${fmtDate(pageDate, L)}`)]
 	];
 	const xt = X[L];
-	const updated = fmtDate(SNAPSHOT_DATE, L);
-	const areaBlock = `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(new Set(hs.map((h) => h.area)).size === 1 && hs[0].area ? xt.whereSame(hs[0].area) : xt.whereLead)}</p><div class="areas">${hs.map((h, i) => {
+	const updated = fmtDate(pageDate, L);
+	const areaBlock = new Set(hs.map((h) => h.area)).size === 1 && Boolean(hs[0].area) ? `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(xt.whereSame(hs[0].area))}</p><div class="areas"><div class="area"><h3>${esc(hs[0].area)}</h3>${hs.map((h, i) => `<p><b>${esc(label(h, L))}</b>: <a href="#${catKey(h)}">${esc(h.name)}</a>${walkText(h, sights, L) ? ` · ${esc(walkText(h, sights, L))}` : ""} · ${esc(bestFor(h, i, L, sights).join(", "))}</p>`).join("")}</div></div></section>` : `<section aria-labelledby="where"><h2 id="where">${esc(xt.whereStay(city.city))}</h2><p class="lead" style="margin-bottom:18px">${esc(xt.whereLead)}</p><div class="areas">${hs.map((h, i) => {
 		const w = walkMinutes(h, sights);
 		const wt = walkText(h, sights, L);
 		return `<div class="area ${catKey(h)}"><p class="eyebrow">${esc(label(h, L))}</p><h3>${esc(h.area || city.city)}</h3><p><a href="#${catKey(h)}">${esc(h.name)}</a>${wt ? ` · ${esc(wt)}` : ""}</p><p style="margin-top:6px">${esc(xt.bestFor)}: ${esc(bestFor(h, i, L, sights).join(", "))}${w ? "" : ""}</p></div>`;
@@ -11057,7 +12365,7 @@ async function cityPage(city, L) {
 	const near = city.near.map((s) => bySlug.get(s)).filter(Boolean);
 	const y = Y[L];
 	const aps = Object.entries(await airports()).filter(([, a]) => a.dest.some(([id]) => id === city.id));
-	const flights = aps.length ? `<p class="flights"><span>✈ ${esc(y.flights)}</span>${aps.map(([k, a]) => `<a href="${P(L, `/from/${k}`)}">${esc(a.name)} (${esc(a.iata)})</a>`).join("")}</p>` : "";
+	const flights = aps.length && L === "da" ? `<p class="flights"><span>✈ ${esc(y.flights)}</span>${aps.map(([k, a]) => `<a href="${P(L, `/from/${k}`)}">${esc(a.name)} (${esc(a.iata)})</a>`).join("")}</p>` : "";
 	const in1 = `<p class="in1h">${esc(y.in1)}</p><div class="in1">${hs.map((h) => `<a class="${catKey(h)}" href="#${catKey(h)}"><small>${esc(label(h, L))}</small><strong>${esc(h.name)}</strong><span>${h.booking?.score ? h.booking.score.toFixed(1) + "/10 · " : ""}<span data-eur="${h.offer?.nightly ?? ""}"><span class="v">${money(h.offer?.nightly)}</span></span> ${esc(t.perNight)}</span></a>`).join("")}</div>`;
 	const jump = `<nav class="jump" aria-label="${esc(y.jHotels)}"><a href="#hotels">${esc(y.jHotels)}</a><a href="#where">${esc(y.jWhere)}</a><a href="#maph">${esc(y.jMap)}</a><a href="#cmp">${esc(y.jCompare)}</a><a href="#faq">${esc(y.jFaq)}</a></nav>`;
 	const curSel = `<label>${esc(y.currency)}<select data-cur aria-label="${esc(y.currency)}">${[
@@ -11115,7 +12423,7 @@ async function cityPage(city, L) {
 			"@context": "https://schema.org",
 			"@type": "ItemList",
 			name: t.h1(city.city),
-			dateModified: SNAPSHOT_DATE,
+			dateModified: pageDate,
 			author: {
 				"@type": "Organization",
 				name: "Top3Hotels",
@@ -11175,9 +12483,9 @@ async function cityPage(city, L) {
 			c: city.city
 		}))}"></span>
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
-<div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0)).join("")}</div>
+<div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(HP_LANGS.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
 <aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
-<p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · Booking.com · ${esc(checked)}.</p>
+<p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · ${esc(checkedText)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
 			slug: city.slug,
 			city: city.city,
@@ -11199,7 +12507,7 @@ ${hs.map((h) => `<tr><td>${esc(label(h, L))}</td><td>${esc(h.name)}</td><td>${es
 </tbody></table></div></section>
 <section aria-labelledby="faq"><h2 id="faq">${esc(t.faqTitle(city.city))}</h2><dl class="faq">${faq.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join("")}</dl></section>
 <section aria-labelledby="how"><h2 id="how">${esc(t.howTitle)}</h2><p class="lead">${esc(t.howText)} <a href="/how-we-choose">${esc(t.how)} →</a></p></section>
-<section aria-labelledby="src"><h2 id="src">${esc(xt.sources)}</h2><p class="sources">${esc(xt.sourcesText)} ${esc(t.checked(daysSince(budget.booking?.checked)))}.</p>
+<section aria-labelledby="src"><h2 id="src">${esc(xt.sources)}</h2><p class="sources">${esc(xt.sourcesText)} ${esc(checkedText)}.</p>
 <div class="forhotels"><h3 class="serif" style="font-size:22px;margin:0 0 6px">${esc(xt.badgeQ)}</h3><p style="margin:0;font-size:14px;color:var(--muted)">${esc(xt.badgeHow)}</p>${hs.map((h) => `<p style="margin:12px 0 0;font-weight:600">${esc(h.name)}</p><code>${esc(`<a href="${SITE}/${city.slug}" target="_blank" rel="noopener" title="Top3Hotels ${label(h, "en")} pick in ${city.city}"><img src="${SITE}/badge/${city.slug}/${catKey(h)}.svg" width="180" height="60" alt="Top 3 ${label(h, "en")} pick in ${city.city} 2026 · Top3Hotels"></a>`)}</code>`).join("")}<p style="margin:0;font-size:13px"><a href="/partners">${esc(xt.forHotels)} →</a></p><h3 class="serif" style="font-size:22px;margin:22px 0 6px">${esc(y.embedTitle)}</h3><p style="margin:0;font-size:14px;color:var(--muted)">${esc(y.embedHow)} <a href="/embed/${esc(city.slug)}" target="_blank" rel="noopener">Preview ↗</a></p><code>${esc(embed)}</code></div></section>
 ${near.length ? `<section aria-labelledby="near"><h2 id="near">${esc(t.near(city.city))}</h2><ul class="grid">${near.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)} <span>${esc(countryName(c, L))}</span></a></li>`).join("")}</ul><p class="note" style="margin-top:14px">${esc(y.compareWith(city.city))}: ${POPULAR.filter((s) => s !== city.slug).slice(0, 6).map((s) => bySlug.get(s)).filter((c) => Boolean(c)).map((c) => `<a href="${P(L, `/compare/${city.slug}/${c.slug}`)}" rel="nofollow">${esc(c.city)}</a>`).join(" · ")}</p></section>` : ""}
 ${hotelsBlock(city, L)}
@@ -11535,7 +12843,7 @@ function notFoundPage(path, L) {
 	const t = T[L];
 	return page({
 		L,
-		title: `${t.notFound} — Top3Hotels`,
+		title: `${t.notFound} | Top3Hotels`,
 		description: t.destLead(119),
 		path,
 		noindex: true,
@@ -11551,14 +12859,14 @@ async function stats() {
 		langs: LANGS.length
 	};
 }
-var pillars = (n) => `<div class="pillars"><div class="pillar"><b>${n.cities.toLocaleString("en-US")}</b><span>destinations, three hotels each</span></div><div class="pillar"><b>${n.hotels.toLocaleString("en-US")}</b><span>picks — Budget, Best Value, Luxury — chosen by public rules</span></div><div class="pillar"><b>${n.countries}</b><span>countries</span></div><div class="pillar"><b>${n.langs}</b><span>languages: EN · ES · DE · FR · IT · PT · DA</span></div></div>`;
+var pillars = (n) => `<div class="pillars"><div class="pillar"><b>${n.cities.toLocaleString("en-US")}</b><span>destinations, three hotels each</span></div><div class="pillar"><b>${n.hotels.toLocaleString("en-US")}</b><span>picks, Budget, Best Value, Luxury, chosen by public rules</span></div><div class="pillar"><b>${n.countries}</b><span>countries</span></div><div class="pillar"><b>${n.langs}</b><span>languages: EN · ES · DE · FR · IT · PT · DA</span></div></div>`;
 var mail = (subject, text = BRAND.email) => `<a href="mailto:${BRAND.email}?subject=${encodeURIComponent(subject)}">${esc(text)}</a>`;
 var crumbsEn = (name) => `<p class="crumbs"><a href="/">Home</a> › ${esc(name)}</p>`;
 async function aboutPage() {
 	const n = await stats();
 	return page({
 		L: "en",
-		title: "About Top3Hotels — the best hotel in every city, picked in 1 second",
+		title: "About Top3Hotels: three hotels per city, chosen by public rules",
 		description: "Who we are, why we show only three hotels per city, and how Top3Hotels stays independent.",
 		path: "/about",
 		body: `${crumbsEn("About us")}<h1>Top 3 hotels in every city<em>.</em></h1>
@@ -11576,7 +12884,7 @@ ${pillars(n)}
 async function methodPage() {
 	return page({
 		L: "en",
-		title: "How we choose the three hotels — Top3Hotels methodology",
+		title: "How we choose the three hotels | Top3Hotels methodology",
 		description: "The transparent rules behind every Budget, Best Value and Luxury pick on Top3Hotels.",
 		path: "/how-we-choose",
 		body: `${crumbsEn("How we choose")}<h1>How we choose the three<em>.</em></h1>
@@ -11584,7 +12892,7 @@ async function methodPage() {
 <div class="prose">
 <h2>1. The sample</h2><p>For each destination we take the hotels Booking.com returns for the same reference stay: two adults, one room, two mid-week nights in November 2026. For major destinations we use up to 40 hotels closest to the centre, so every pick is well located.</p>
 <h2>2. Eligibility</h2><p>A hotel needs a real track record: at least 15 guest reviews and a guest score of 7.0 or more (8.0 for large samples). When a city has enough proper hotels, private apartments are left out.</p>
-<h2>3. The three picks</h2><ul><li><b>Budget</b> — the lowest eligible reference price.</li><li><b>Best Value</b> — the strongest review-confidence score at or near the sample's median price. Review confidence weighs the score by the number of reviews, so a 9.4 from 4,000 guests beats a 9.8 from 12.</li><li><b>Luxury</b> — the best-reviewed five-star hotel. If no five-star qualifies, a four-star rated 8.5+ is shown and clearly labelled as an upscale alternative.</li></ul>
+<h2>3. The three picks</h2><ul><li><b>Budget</b>: the lowest eligible reference price.</li><li><b>Best Value</b>: the strongest review-confidence score at or near the sample's median price. Review confidence weighs the score by the number of reviews, so a 9.4 from 4,000 guests beats a 9.8 from 12.</li><li><b>Luxury</b>: the best-reviewed five-star hotel. If no five-star qualifies, a four-star rated 8.5+ is shown and clearly labelled as an upscale alternative.</li></ul>
 <h2>4. What we show for each hotel</h2><p>Guest score and review count, reference price, star classification, location score, what guests praise and criticise, facilities, walking time to the best-known sights (straight-line estimate) and who the hotel suits best.</p>
 <h2>5. Freshness and corrections</h2><p>Every page shows when prices were checked. Prices are reference rates, not live quotes; the booking link always shows the current price for your dates. Spotted something wrong? ${mail("Correction request")}. We aim to review corrections within a few working days.</p>
 <h2>6. Independence</h2><p>Some links earn us a commission. That never changes the selection, the order or the text. Hotels cannot buy a place in the three picks, our scores or reviews. A hotel can appear as a clearly labelled <em>Featured partner</em> (for example after a filmed stay); those features are always marked and kept separate from the picks. Read our <a href="/affiliate-disclosure">affiliate disclosure</a>.</p>
@@ -11595,7 +12903,7 @@ async function partnersPage() {
 	const n = await stats();
 	return page({
 		L: "en",
-		title: "For hotels & partners — Top3Hotels",
+		title: "For hotels & partners | Top3Hotels",
 		description: "Badges for selected hotels, destination and route guides, co-branded content. Independent picks that travellers trust.",
 		path: "/partners",
 		body: `${crumbsEn("For hotels & partners")}<h1>Work with Top3Hotels<em>.</em></h1>
@@ -11618,7 +12926,7 @@ async function mediaKitPage() {
 		description: "Top3Hotels in numbers, product, principles and partnership formats.",
 		path: "/partners/media-kit",
 		body: `<p class="eyebrow" style="margin-top:28px">Media kit · ${fmtDate(SNAPSHOT_DATE, "en")}</p><h1>Top3Hotels<em>.</em></h1>
-<p class="lead">The best hotel in every city, picked in 1 second. One Budget, one Best Value and one Luxury hotel per destination, with sourced scores and reference prices.</p>
+<p class="lead">Three hotels per city, chosen by public rules. One Budget, one Best Value and one Luxury hotel per destination, with sourced scores and reference prices.</p>
 ${pillars(n)}
 <div class="prose"><h2>The product</h2><ul><li>${n.cities.toLocaleString("en-US")} destination pages in ${n.langs} languages, each with three hotels, map, walking times to sights and guest feedback.</li><li>Country pages, themed lists (beach, pool, pets, family, spa, budget, luxury) and event guides.</li><li>Route pages for direct flights from Billund, Aalborg and Aarhus.</li></ul>
 <h2>Why travellers trust it</h2><ul><li>Rule-based, public methodology. No paid rankings.</li><li>Every number shows its source and the date it was checked.</li><li>Fast and accessible: Lighthouse 100 for accessibility, best practices and SEO.</li></ul>
@@ -11630,7 +12938,7 @@ ${pillars(n)}
 async function contactPage() {
 	return page({
 		L: "en",
-		title: "Contact — Top3Hotels",
+		title: "Contact | Top3Hotels",
 		description: "Contact Top3Hotels for partnerships, corrections and press.",
 		path: "/contact",
 		body: `${crumbsEn("Contact")}<h1>Contact us<em>.</em></h1><p class="lead">We usually reply within two working days.</p>
@@ -11664,7 +12972,7 @@ function legalPage(kind) {
 	const path = `/${kind}`;
 	return page({
 		L: "en",
-		title: `${title} — Top3Hotels`,
+		title: `${title} | Top3Hotels`,
 		description: `${title} of Top3Hotels (${BRAND.entity}).`,
 		path,
 		body: `${crumbsEn(title)}<h1>${esc(title)}<em>.</em></h1><div class="prose">${html2}</div>`
@@ -11867,13 +13175,13 @@ async function landingPage(L) {
 	}));
 	const aps = Object.entries(await airports());
 	const body = `<h1 style="margin-top:28px">${esc(t.homeH1)}<em>.</em></h1><p class="lead">${esc(t.lead())}</p>
-<form class="find" action="/" method="get" role="search"><label><span>${esc(t.search)}</span><input name="city" required autocomplete="off" placeholder="London, Paris, Billund…"></label><button class="btn" type="submit">${esc(t.seeDates)}</button></form>
+<form class="find" action="/" method="get" role="search"><label><span>${esc(t.search)}</span><input name="city" required autocomplete="off" placeholder="London, Paris, Tokyo…"></label><button class="btn" type="submit">${esc(t.seeDates)}</button></form>
 <section><h2>${esc(t.popular)}</h2><div class="tiles">${tiles.join("")}</div></section>
 <section><h2>${esc(t.fromNav)}</h2><ul class="grid">${aps.map(([k, a]) => `<li><a href="${P(L, `/from/${k}`)}">${esc(t.fromH1(a.name))} <span>${esc(a.iata)}</span></a></li>`).join("")}</ul></section>
 <section><h2>${esc(t.lists)}</h2><ul class="grid">${THEMES.map((th) => `<li><a href="${P(L, `/lists/${th}`)}">${esc(t.themes[th].title)}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, "/destinations")}">${esc(t.destH1(byCountry.size))} →</a></p></section>`;
 	return page({
 		L,
-		title: `Top3Hotels — ${t.footer}`,
+		title: `Top3Hotels | ${t.footer}`,
 		description: t.lead(),
 		path: "/",
 		body,
@@ -11892,7 +13200,7 @@ function guideBlock(city, L) {
 function filmingBlock(city, L) {
 	const z = Z[L];
 	if (!guides_default[city.slug]?.filming) return "";
-	return `<section><div class="collab"><div><h2>🎬 ${esc(z.filming(city.city))}</h2><p>${esc(z.filmingLead)}</p></div><a class="btn" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Top3Hotels ${city.city} filming — partnership`)}" data-t="collab_cta" data-city="${esc(city.slug)}">${esc(z.hotelsCta)} →</a></div></section>`;
+	return `<section><div class="collab"><div><h2>🎬 ${esc(z.filming(city.city))}</h2><p>${esc(z.filmingLead)}</p></div><a class="btn" href="mailto:${BRAND.email}?subject=${encodeURIComponent(`Top3Hotels ${city.city} filming, partnership`)}" data-t="collab_cta" data-city="${esc(city.slug)}">${esc(z.hotelsCta)} →</a></div></section>`;
 }
 function hotelsBlock(city, L) {
 	const z = Z[L];
@@ -11901,7 +13209,7 @@ function hotelsBlock(city, L) {
 function disclosurePage() {
 	return page({
 		L: "en",
-		title: "Affiliate disclosure — Top3Hotels",
+		title: "Affiliate disclosure | Top3Hotels",
 		description: "How Top3Hotels earns money: booking-partner commissions and labelled partner features. Our picks are never for sale.",
 		path: "/affiliate-disclosure",
 		body: `${crumbsEn("Affiliate disclosure")}<h1>Affiliate disclosure<em>.</em></h1><div class="prose">
@@ -11922,7 +13230,7 @@ function savedPage(L) {
 	const y = Y[L];
 	return page({
 		L,
-		title: `${y.savedTitle} — Top3Hotels`,
+		title: `${y.savedTitle} | Top3Hotels`,
 		description: y.savedLead,
 		path: "/saved",
 		noindex: true,
@@ -11999,7 +13307,7 @@ ${rows.map(({ c, b, v }, i) => `<tr data-price="${b.offer.nightly}"><td>${i + 1}
 	}];
 	return page({
 		L,
-		title: `${y.cheapTitle} (2026) — Top3Hotels`,
+		title: `${y.cheapTitle} (2026) | Top3Hotels`,
 		description: y.cheapLead(rows.length),
 		path: "/cheap-cities",
 		body,
@@ -12018,7 +13326,7 @@ async function comparePage(a, b, L) {
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(y.jCompare)}</p><h1>${esc(y.vsTitle(ca.city, cb.city))}<em>.</em></h1><p class="lead">${esc(y.vsLead(ca.city, cb.city))}</p><section style="margin-top:26px"><div class="vs">${col(ca, da)}${col(cb, db)}</div></section>`;
 	return page({
 		L,
-		title: `${y.vsTitle(ca.city, cb.city)} — Top3Hotels`,
+		title: `${y.vsTitle(ca.city, cb.city)} | Top3Hotels`,
 		description: y.vsLead(ca.city, cb.city),
 		path: `/compare/${a}/${b}`,
 		body,
@@ -12063,6 +13371,201 @@ async function feedJson() {
 		"cache-control": "public, max-age=3600"
 	} });
 }
+var HP_API = "https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/top3-seo-agent";
+var HP_LANGS = ["en", "es"];
+var hpSlugify = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+var hotelSlug = (name, citySlug) => `${hpSlugify(name)}-${citySlug}`.replace(/-+/g, "-");
+var hpCache;
+async function hotelPagesList() {
+	if (hpCache && Date.now() - hpCache.at < 18e5) return hpCache.rows;
+	try {
+		const r = await fetch(`${HP_API}?action=list`, { cf: {
+			cacheTtl: 1800,
+			cacheEverything: true
+		} });
+		if (r.ok) hpCache = {
+			at: Date.now(),
+			rows: await r.json()
+		};
+	} catch {}
+	return hpCache?.rows ?? [];
+}
+async function hotelPageData(slug) {
+	try {
+		const r = await fetch(`${HP_API}?action=get&slug=${encodeURIComponent(slug)}`, { cf: {
+			cacheTtl: 3600,
+			cacheEverything: true
+		} });
+		return r.ok ? await r.json() : null;
+	} catch {
+		return null;
+	}
+}
+var HPT = {
+	en: {
+		home: "Home",
+		review: "Review",
+		book: "Check prices on Booking.com",
+		faq: "Questions travellers ask",
+		others: "Our other two picks in",
+		all: "See all three picks in",
+		updated: "Updated",
+		by: "By the Top3Hotels editorial team. Based on Booking.com guest scores and reviews, location data and reference prices. We did not stay at this hotel.",
+		per: "per night (reference)",
+		score: "Guest score",
+		reviews: "reviews",
+		cat_budget: "Budget pick",
+		cat_value: "Best Value pick",
+		cat_lux: "Luxury pick",
+		from: "chosen from",
+		hotels: "hotels compared",
+		disc: "We may earn a commission if you book. It never changes our pick.",
+		altl: "Sold out on your dates? See the best available alternatives"
+	},
+	es: {
+		home: "Inicio",
+		review: "Análisis",
+		book: "Ver precios en Booking.com",
+		faq: "Preguntas frecuentes",
+		others: "Nuestras otras dos elecciones en",
+		all: "Ver los tres hoteles de",
+		updated: "Actualizado",
+		by: "Por el equipo editorial de Top3Hotels. Basado en puntuaciones y reseñas de Booking.com, datos de ubicación y precios de referencia. No nos hemos alojado en este hotel.",
+		per: "por noche (referencia)",
+		score: "Nota de huéspedes",
+		reviews: "reseñas",
+		cat_budget: "Elección económica",
+		cat_value: "Elección calidad-precio",
+		cat_lux: "Elección de lujo",
+		from: "elegido entre",
+		hotels: "hoteles comparados",
+		disc: "Podemos ganar una comisión si reservas. Nunca cambia nuestra elección.",
+		altl: "¿Sin disponibilidad en tus fechas? Ver alternativas disponibles"
+	}
+};
+var CSS_HP = `.hp-facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 18px;font-size:15px;opacity:.9}.hp-facts b{font-weight:700}.hp-badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--pale,#eef3fa);margin:0 0 10px}
+.hp-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:6px 0 18px;background:#e5e8ee}.hp-verdict{font-size:19px;line-height:1.55;border-left:4px solid currentColor;padding:4px 0 4px 16px;margin:0 0 22px}
+.hp-cta{display:block;text-align:center;font-weight:700;padding:14px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;margin:18px 0 6px}.hp-small{font-size:13px;opacity:.7;text-align:center;margin:0 0 6px}.hp-alt{display:block;text-align:center;font-size:14px;margin:0 0 22px}
+.hp-faq details{border-top:1px solid rgba(127,127,127,.25);padding:12px 0}.hp-faq summary{font-weight:700;cursor:pointer;font-size:17px}.hp-others{display:grid;gap:10px;margin:10px 0 0;padding:0;list-style:none}.hp-others a{display:block;padding:12px 14px;border:1px solid rgba(127,127,127,.25);border-radius:12px;text-decoration:none}`;
+async function hotelPage(slug, L) {
+	if (!HP_LANGS.includes(L)) return null;
+	const d = await hotelPageData(slug);
+	const c = d?.content?.[L];
+	if (!d || !c) return null;
+	const f = d.facts ?? {};
+	const t = HPT[L];
+	const { bySlug } = await data();
+	const city = bySlug.get(d.city_slug);
+	const list = await hotelPagesList();
+	const live = new Set(list.map((x) => x.slug));
+	const bk = f.booking_url ? CJ_BOOKING(String(f.booking_url), "t3hotel") : null;
+	const alt = altSearch(d.cat, f.nightly_eur, f.stars, {
+		city: d.city,
+		country: d.country
+	});
+	const others = (f.other_picks ?? []).map((o) => {
+		const s2 = hotelSlug(o.name, d.city_slug);
+		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
+	});
+	const upd = (d.updated_at || d.published_at || "").slice(0, 10);
+	const path = `/hotel/${slug}`;
+	const facts = [
+		f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
+		f.stars ? `<span>${"★".repeat(Number(f.stars))}</span>` : "",
+		f.nightly_eur ? `<span><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
+		f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
+		f.candidates_compared ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
+	].filter(Boolean).join("");
+	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p><a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : "";
+	const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
+<nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
+<span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
+<h1>${esc(f.name)}</h1>
+<p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
+${f.photo ? `<img class="hp-hero" src="${esc(f.photo)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+<div class="hp-facts">${facts}</div>
+<p class="hp-verdict">${esc(c.verdict)}</p>
+${cta}
+${(c.sections ?? []).map((x) => `<h2>${esc(x.h)}</h2>${(x.p ?? []).map((pp) => `<p>${esc(pp)}</p>`).join("")}`).join("\n")}
+${cta}
+<h2>${esc(t.faq)}</h2><div class="hp-faq">${(c.faq ?? []).map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
+<h2>${esc(t.others)} ${esc(d.city)}</h2><ul class="hp-others">${others.join("")}<li><a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(d.city)} →</a></li></ul>
+</article>`;
+	const ld = [
+		{
+			"@context": "https://schema.org",
+			"@type": "Hotel",
+			name: f.name,
+			url: SITE + P(L, path),
+			...f.photo ? { image: f.photo } : {},
+			address: {
+				"@type": "PostalAddress",
+				...f.address ? { streetAddress: f.address } : {},
+				addressLocality: d.city,
+				addressCountry: city?.cc || d.country
+			},
+			...f.lat ? { geo: {
+				"@type": "GeoCoordinates",
+				latitude: f.lat,
+				longitude: f.lng
+			} } : {},
+			...f.stars ? { starRating: {
+				"@type": "Rating",
+				ratingValue: f.stars
+			} } : {},
+			...f.nightly_eur ? { priceRange: `€${Math.round(f.nightly_eur)} per night (reference)` } : {}
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			mainEntity: (c.faq ?? []).map((q) => ({
+				"@type": "Question",
+				name: q.q,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: q.a
+				}
+			}))
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: t.home,
+					item: SITE + P(L, "/")
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: d.city,
+					item: SITE + P(L, `/${d.city_slug}`)
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: f.name,
+					item: SITE + P(L, path)
+				}
+			]
+		}
+	];
+	return page({
+		L,
+		title: `${c.title} | Top3Hotels`,
+		description: c.meta,
+		path,
+		body,
+		ld,
+		alts: HP_LANGS,
+		image: f.photo || void 0
+	});
+}
+async function hotelSitemap() {
+	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${(await hotelPagesList()).flatMap((r) => HP_LANGS.map((L) => `<url><loc>${SITE}${P(L, `/hotel/${r.slug}`)}</loc><lastmod>${(r.published_at ?? "").slice(0, 10)}</lastmod>${HP_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, `/hotel/${r.slug}`)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`;
+}
 async function sitemapFor(L) {
 	const { index, byCountry } = await data();
 	const paths = [
@@ -12093,7 +13596,7 @@ async function sitemapFor(L) {
 	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${SNAPSHOT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}</url>`).join("\n")}\n${extra}</urlset>\n`;
 }
-var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${SNAPSHOT_DATE}</lastmod></sitemap>`).join("\n")}\n</sitemapindex>\n`;
+var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${SNAPSHOT_DATE}</lastmod></sitemap>`).join("\n")}\n<sitemap><loc>${SITE}/sitemap-hotels.xml</loc></sitemap>\n</sitemapindex>\n`;
 var ROBOTS = `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${SITE}/sitemap.xml\n`;
 function envVar(env, k) {
 	const v = env && env[k] || globalThis.process?.env?.[k];
@@ -12138,6 +13641,10 @@ async function handleSeo(request, env) {
 	if (p === "/api/alerts") return alerts(request, env);
 	if (request.method !== "GET" && request.method !== "HEAD") return null;
 	if (p === "/sitemap.xml") return new Response(sitemapIndex(), { headers: {
+		"content-type": "application/xml; charset=utf-8",
+		"cache-control": "public, max-age=3600"
+	} });
+	if (p === "/sitemap-hotels.xml") return new Response(await hotelSitemap(), { headers: {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
 	} });
@@ -12298,6 +13805,12 @@ async function handleSeo(request, env) {
 		const ev = await eventPage(k, L);
 		return ev ? html(ev) : html(notFoundPage(p, L), 404, "no-store");
 	}
+	const hp = p.match(/^\/hotel\/([a-z0-9-]+)\/?$/);
+	if (hp) {
+		if (!HP_LANGS.includes(L)) return Response.redirect(`${SITE}/hotel/${hp[1]}`, 302);
+		const out = await hotelPage(hp[1], L);
+		return out ? html(out, 200, "public, max-age=1800, s-maxage=21600") : html(notFoundPage(p, L), 404, "no-store");
+	}
 	const country = p.match(/^\/country\/([a-z0-9-]+)\/?$/);
 	if (country) {
 		const out = await countryPage(country[1], L);
@@ -12321,7 +13834,7 @@ async function handleSeo(request, env) {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-Ugx7HjIz.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-CbvFkyG6.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
@@ -12349,7 +13862,7 @@ var server_default = { async fetch(request, env, ctx) {
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-ls7J2mrY.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-ojFoXWiQ.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {
