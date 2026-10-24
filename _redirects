@@ -288,3 +288,4 @@
 /wp-admin/* / 301
 /:post/feed/ /:post/ 301
 /:post/embed/ /:post/ 301
+/.github/* / 301

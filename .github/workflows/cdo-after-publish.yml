@@ -1,0 +1,23 @@
+# carlosdeory.com: tras cada publicacion en esta rama, avisa a buscadores (IndexNow)
+# de las paginas cambiadas y comprueba que la web responde. Sin secretos.
+name: cdo-after-publish
+on:
+  push:
+    branches: ["pub/carlosdeory.com"]
+  workflow_dispatch:
+concurrency: { group: cdo-after-publish, cancel-in-progress: false }
+permissions: { contents: read }
+jobs:
+  after:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: Esperar al despliegue de Cloudflare Pages
+        run: sleep 240
+      - name: Comprobar paginas clave
+        run: python3 .github/cdo/check.py
+      - name: Avisar a buscadores (IndexNow)
+        env: { INDEXNOW_KEY: "d5b05b0831e5e26470cfc38de441792f" }
+        run: python3 .github/cdo/indexnow.py "${{ github.event.before }}" "${{ github.sha }}"
