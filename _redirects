@@ -152,7 +152,6 @@
 /como-moverse-por-florencia/ /florencia/ 301
 /comprar-en-malta-las-mejores-tiendas/ /malta/ 301
 /consejos-utiles-florencia/ /florencia/ 301
-/consejos/ /category/consejos/ 301
 /cual-es-la-mejor-isla-de-filipinas/ /filipinas/ 301
 /cuando-ir-a-florencia/ /florencia/ 301
 /curiosidades-de-estambul/ /estambul/ 301
@@ -292,6 +291,14 @@
 /page/3/ /archive/ 301
 /page/4/ /archive/ 301
 /el-top-3-del-centro-de-milan.html /el-top-3-del-centro-de-milan/ 301
+/category/consejos/ /consejos/ 301
+/category/consejos /consejos/ 301
+/category/consejos/page/2/ /consejos/ 301
+/category/consejos/page/3/ /consejos/ 301
+/category/consejos/page/4/ /consejos/ 301
+/category/consejos/page/5/ /consejos/ 301
+/category/consejos/page/6/ /consejos/ 301
+/category/consejos/page/7/ /consejos/ 301
 # Dinamicas
 /wp-admin/* / 301
 /:post/feed/ /:post/ 301

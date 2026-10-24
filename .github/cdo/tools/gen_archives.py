@@ -45,6 +45,7 @@ for u, r in P.items():
 catpath = {}
 for c in posts_by_cat:
     if c in ('1',): continue
+    if c == 'consejos': catpath[c] = '/consejos/'; continue
     if c in existing: catpath[c] = existing[c]; continue
     cand = '/' + c + '/'
     if cand in P: continue
