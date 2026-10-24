@@ -69,7 +69,9 @@ async function sb(path, ctx) {
   return data;
 }
 
-const FIRM_COLS = 'id,firm_name,description,category,typical_model,countries_served,case_types,source,website,last_verified_at';
+const FIRM_COLS = 'id,firm_name,description,category,typical_model,countries_served,case_types,source,website,last_verified_at,verification_source_url';
+// Hand-verified = fee terms confirmed by our team on the firm's own site, less than 12 months ago.
+const isHand = (f) => f.source === CURATED && !!f.last_verified_at && Date.now() - Date.parse(f.last_verified_at) < 365 * 864e5;
 const pgArr = (vals) => '{' + vals.map((v) => '"' + String(v).replace(/(["\\])/g, '\\$1') + '"').join(',') + '}';
 
 async function listFirms(list, ctx) {
@@ -106,7 +108,7 @@ async function dynamicPage(path, m, ctx) {
     if (!rows) return null; // database unreachable: serve the page unchanged
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
-    const hand = f.source === CURATED;
+    const hand = isHand(f);
     const where = (f.countries_served || []).slice(0, 3).join(', ');
     // Only descriptions our team checked are shown; indexed firms get a factual note.
     const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.')) : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
@@ -117,6 +119,7 @@ async function dynamicPage(path, m, ctx) {
       lead: d,
       facts: [
         ['Status', hand ? 'Hand-verified by JuriMatch' + (f.last_verified_at ? ' on ' + String(f.last_verified_at).slice(0, 10) : '') : 'Indexed from public research, not verified by our team'],
+        ['Fee terms read on', hand && f.verification_source_url ? f.verification_source_url : ''],
         ['Countries', where],
         ['Fee model', hand && f.typical_model ? feeLabel(f.typical_model) : ''],
         ['Case types', (f.case_types || []).slice(0, 6).map((x) => { const t = titleCaseLabel(x).toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); }).join(', ').replace(/\bchf\b/gi, 'CHF')],
@@ -243,7 +246,7 @@ export async function render(req, res, u, env, ctx) {
   if (page.list) {
     try {
       const { verified, indexed } = await listFirms(page.list, ctx);
-      if (verified.length) body += '<h2>Hand-verified firms</h2><ul>' + verified.map((f) => firmItem(f, true)).join('') + '</ul>';
+      if (verified.length) body += '<h2>Hand-verified firms</h2><ul>' + verified.map((f) => firmItem(f, isHand(f))).join('') + '</ul>';
       if (indexed.length) body += '<h2>More firms from our index</h2><ul>' + indexed.map((f) => firmItem(f, false)).join('') + '</ul>';
       if (verified.length) lds.push({ '@context': 'https://schema.org', '@type': 'ItemList', name: page.h1, itemListElement: verified.map((f, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + '/firms/' + slugify(f.firm_name), name: f.firm_name })) });
     } catch (e) { /* summary without the list */ }
