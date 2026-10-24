@@ -28,6 +28,7 @@
     '.cdo-slide .x{position:absolute;top:10px;right:10px;width:32px;height:32px;border:0;border-radius:50%;background:rgb(255 255 255 / .12);color:#fff;font-size:18px;line-height:1;cursor:pointer}' +
     '.cdo-slide small{display:block;margin-top:9px;font-size:11.5px;color:rgb(244 241 234 / .7)}.cdo-slide small a{color:inherit}.cdo-slide .m{min-height:1em;font-size:13px;margin-top:8px}.cdo-slide .m a{color:#fff;font-weight:700}' +
     'body.cdo-slide-on .ory-nlbar{display:none!important}' +
+    '.cdo-prog{position:fixed;left:0;top:0;height:3px;width:100%;background:#C2452D;transform-origin:0 50%;transform:scaleX(0);z-index:9991;pointer-events:none}.cdo-nshare{border:1px solid #E6E1D8;background:#fff;border-radius:100px;padding:8px 14px;font:600 13px -apple-system,sans-serif;cursor:pointer}.cdo-age{color:#7C7C8A}' +
     '@media(prefers-reduced-motion:reduce){.cdo-slide{transition:none}}@media print{.cdo-slide,.cdo-plan{display:none!important}}';
   D.head.appendChild(el('style', '', css));
 
@@ -115,4 +116,37 @@
     var f = e.target; if (!f || !f.id) { return; }
     if (f.id === 'cf' || f.id === 'bp') { ev('lead_submit_try', { kind: f.getAttribute('data-kind') || f.id, page: location.pathname }); }
   }, true);
+  /* 6. Barra de progreso de lectura en posts */
+  if (isPost) {
+    var bar = el('div', 'cdo-prog'); bar.setAttribute('aria-hidden', 'true'); B.appendChild(bar);
+    var ent = D.querySelector('article .entry');
+    var upd = function () {
+      if (!ent) { return; }
+      var r = ent.getBoundingClientRect(), tot = r.height - W.innerHeight * 0.6, done = Math.min(1, Math.max(0, -r.top / (tot > 0 ? tot : 1)));
+      bar.style.transform = 'scaleX(' + done.toFixed(3) + ')';
+    };
+    W.addEventListener('scroll', upd, { passive: true }); upd();
+  }
+
+  /* 7. Compartir nativo en movil */
+  var sh = D.querySelector('.share');
+  if (sh && navigator.share && !sh.querySelector('.cdo-nshare')) {
+    var nb = el('button', 'cdo-nshare'); nb.type = 'button'; nb.textContent = EN ? 'Share…' : 'Compartir…';
+    nb.addEventListener('click', function () { navigator.share({ title: D.title, url: location.href }).then(function () { ev('share_native'); }).catch(function () {}); });
+    var lab = sh.querySelector('span'); if (lab && lab.nextSibling) { sh.insertBefore(nb, lab.nextSibling); } else { sh.appendChild(nb); }
+  }
+
+  /* 8. Antiguedad del post junto a la fecha */
+  var tm = isPost && D.querySelector('.post-meta time[datetime]');
+  if (tm && !D.querySelector('.cdo-age')) {
+    var yrs = Math.floor((Date.now() - new Date(tm.getAttribute('datetime')).getTime()) / (365.25 * 864e5));
+    if (yrs >= 1) { var ag = el('span', 'cdo-age'); ag.textContent = ' (' + (EN ? (yrs === 1 ? '1 year ago' : yrs + ' years ago') : (yrs === 1 ? 'hace 1 año' : 'hace ' + yrs + ' años')) + ')'; tm.parentNode.insertBefore(ag, tm.nextSibling); }
+  }
+
+  /* 9. Buscar en la cabecera de posts y archivos */
+  var nav = D.querySelector('header .menu, header nav ul, #menu ul');
+  if (nav && !D.querySelector('.cdo-search-link') && !B.classList.contains('home')) {
+    var li = el('li', 'menu-item cdo-search-link', '<a href="/search/" aria-label="' + (EN ? 'Search' : 'Buscar') + '">' + (EN ? 'Search' : 'Buscar') + '</a>');
+    nav.appendChild(li);
+  }
 })();
