@@ -2,7 +2,7 @@
 import urllib.request, sys
 SITE = 'https://www.carlosdeory.com'
 OK = ['/', '/blog/', '/speaking/', '/growth/', '/europa/', '/destinos/', '/archive/', '/feed.xml', '/sitemap_index.xml', '/post-sitemap.xml',
-      '/llms.txt', '/assets/cdo/cdo-boost.js', '/assets/cdo/million-mile-playbook-es.pdf', '/million-mile-playbook-revolut-ultra/']
+      '/llms.txt', '/assets/cdo/cdo-boost.js', '/assets/cdo/million-mile-playbook-es.pdf', '/assets/cdo/carlos-de-ory-speaker-kit-en.pdf', '/million-mile-playbook-revolut-ultra/']
 REDIR = {'/feed/': '/feed.xml', '/contacto/': '/#contact', '/suiza/': '/europa/'}
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, *a, **k): return None
