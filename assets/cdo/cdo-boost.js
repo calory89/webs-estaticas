@@ -199,16 +199,16 @@
   /* 12. Cajas de descarga a cambio del email (checklists y otros PDF): <aside class="cdo-lead-box" data-pdf data-src> */
   D.querySelectorAll('.cdo-lead-box').forEach(function (box) {
     var f = box.querySelector('form'), pdf = box.getAttribute('data-pdf'), src = box.getAttribute('data-src');
-    if (!f || !pdf) { return; }
-    var dl = '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the PDF' : 'Descargar el PDF') + '</a></div>';
-    if (ls('cdo-nl') === '1' || ls('ory-nl-done')) { f.outerHTML = dl; return; }
+    if (!f) { return; }
+    var dl = pdf ? '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the PDF' : 'Descargar el PDF') + '</a></div>' : '<p><b>' + (EN ? 'You are on the list.' : 'Ya estás en la lista.') + '</b></p>';
+    if (pdf && (ls('cdo-nl') === '1' || ls('ory-nl-done'))) { f.outerHTML = dl; return; }
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       var inp = f.querySelector('input[type=email]'), msg = box.querySelector('.m'), em = (inp.value || '').trim();
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) { msg.textContent = EN ? 'Add a valid email.' : 'Escribe un email válido.'; inp.focus(); return; }
       var b2 = f.querySelector('button'); b2.disabled = true; msg.textContent = EN ? 'Sending…' : 'Enviando…';
       fetch(NL_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ type: 'subscribe', email: em, lang: EN ? 'en' : 'es', source: src, consent: true, website: (f.querySelector('input[name=website]') || {}).value || '' }) })
-        .then(function (r) { if (!r.ok) { throw new Error('x'); } ls('cdo-nl', '1'); ls('ory-nl-done', '1'); ev('lead_magnet', { src: src }); f.outerHTML = dl; msg.textContent = EN ? 'Done. We also sent it to your inbox.' : 'Listo. También te lo hemos enviado al email.'; })
+        .then(function (r) { if (!r.ok) { throw new Error('x'); } ls('cdo-nl', '1'); ls('ory-nl-done', '1'); ev('lead_magnet', { src: src }); f.outerHTML = dl; msg.textContent = pdf ? (EN ? 'Done. We also sent it to your inbox.' : 'Listo. También te lo hemos enviado al email.') : ''; })
         .catch(function () { b2.disabled = false; msg.textContent = EN ? 'It could not be sent. Try again in a minute.' : 'No se pudo enviar. Inténtalo de nuevo en un minuto.'; });
     });
   });
