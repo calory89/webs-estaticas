@@ -38,7 +38,7 @@ function cleanTitle(t) {
   let s = String(t || '').replace(/\s+/g, ' ').trim();
   s = s.replace(/\s*[([]\s*(m|f|w|h|d|x|v)\s*(\/\s*(m|f|w|h|d|x|v)\s*)+[)\]]\s*/gi, ' ').trim();
   const letters = s.replace(/[^A-Za-zÀ-ÿ]/g, '');
-  if (letters.length > 6 && letters === letters.toUpperCase()) s = s.toLowerCase().replace(/(^|[\s/(-])([a-zà-ÿ])/g, (_m, a, b) => a + b.toUpperCase());
+  if (letters.length > 6 && letters.replace(/[^A-ZÀ-Þ]/g, '').length / letters.length > 0.7) s = s.toLowerCase().replace(/(^|[\s(-])([a-zà-ÿ])/g, (_m, a, b) => a + b.toUpperCase());
   return s.replace(/\s+/g, ' ').trim();
 }
 function cleanCompany(c) {
