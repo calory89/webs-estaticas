@@ -151,10 +151,6 @@ home += f"""
 {MAP}
 </div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap">
-<div class="h2-h"><h2>Ideas para tu próximo viaje</h2></div>
-<div class="blog">{blog}</div>
-</div></section>
 </main>
 </body>
 </html>"""

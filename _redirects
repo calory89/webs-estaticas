@@ -1,0 +1,9 @@
+# Happy Low Cost: redirecciones (Cloudflare Pages). Estáticas primero, splats después.
+/vuelosofertas-de-vuelos /chollos/ 301
+/vuelosofertas-de-vuelos/ /chollos/ 301
+/vuelosofertas-de-vuelos/* /chollos/ 301
+/guias-ciudades /destinos/ 301
+/guias-ciudades/ /destinos/ 301
+/guias-ciudades/* /destinos/ 301
+/invierte-con-nosotros-en-una-isla-paradisiaca-y-consigue-un-50-previsto-de-retorno-anual/ / 301
+/invierte-con-nosotros-en-una-isla-paradisiaca-y-consigue-un-50-previsto-de-retorno-anual / 301

@@ -34,7 +34,7 @@ HEADER = '<!--hlc-header-->' + open(os.path.join(PARTS, 'header.html'), encoding
 FOOTERX = '<!--hlc-footer-->' + open(os.path.join(PARTS, 'footer.html'), encoding='utf-8').read() + '<!--/hlc-footer-->'
 TAIL = f'<!--hlc-tail--><script src="/hlc/hlc.js?v={V}" defer></script><!--/hlc-tail-->'
 FOOT = (
-    '<!--hlc-foot--><div class="hlc-foot">Happy Low Cost busca chollos de vuelos, hoteles y viajes desde España desde 2012. '
+    '<!--hlc-foot--><div class="hlc-foot">Happy Low Cost caza chollos de vuelos con salida desde todo el mundo desde 2012. '
     'Algunos enlaces son de afiliado: si reservas a través de ellos podemos recibir una pequeña comisión, sin coste extra para ti. '
     'Los precios publicados eran correctos en la fecha de cada oferta y pueden cambiar. '
     '<a href="/aviso-legal-datos-cookies/">Aviso legal, privacidad y cookies</a> · '
