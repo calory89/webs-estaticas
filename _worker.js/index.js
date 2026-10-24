@@ -29,6 +29,7 @@ async function sbProxy(req, u) {
   return new Response(r.body, { status: r.status, headers: rh });
 }
 let top3 = null;
+let jm = null;
 const NOSPA = new Set(["grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
@@ -66,6 +67,12 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
+    const r = await this.siteRaw(req, env, ctx, u, host);
+    // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).
+    if (host === 'jurimatch.com' && req.method === 'GET') { if (!jm) jm = await import('./jurimatch.js'); return jm.render(req, r, u, env, ctx); }
+    return r;
+  },
+  async siteRaw(req, env, ctx, u, host) {
     if (host === 'go.realhunt.co') { const p = u.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'); return Response.redirect('https://realhunt.co' + (p || '/') + u.search, 301); }
     if (host === 'top3hotels.com') return viaTop3(req, env, ctx);
     if (!SITES.has(host)) return new Response('Not found', { status: 404 });
