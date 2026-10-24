@@ -150,7 +150,7 @@ def _drop(t, start_rx):
         n += 1
 
 
-LEGACY = [r'<div class="penci-header-wrap"', r'<nav id="sidebar-nav"', r'<div class="post-author\b', r'<footer id="footer-section"', r'<div class="clear-footer"',
+LEGACY = [r'<div class="pcrlt-style-1 post-related"', r'<div class="penci-header-wrap"', r'<nav id="sidebar-nav"', r'<div class="post-author\b', r'<footer id="footer-section"', r'<div class="clear-footer"',
           r'<aside id="block-\d+"', r'<div class="penci-single-link-pages"', r'<div class="post-pagination\b', r'<div class="tags-share-box\b']
 
 
@@ -178,9 +178,17 @@ def _fix_titles(t):
     return t
 
 
+HLC_LEGACY_CSS = '/wp-content/cache/fvm/min/1787084351-cssbc6f8b6689c0efdeb323aed2a81ecfc3403aa0a5c855e54d66da102695409.css'
+LEGACY_CSS_NEW = '/hlc/wp-legacy.css?v=1'  # misma hoja depurada (1,1 MB -> 134 KB), ver _hlc/tools/purge-legacy.js
+
+
 def legacy_clean(t):
+    if HLC_LEGACY_CSS in t:
+        t = t.replace(HLC_LEGACY_CSS, LEGACY_CSS_NEW)
     if 'id="soledad_wrapper"' not in t:
         return t, 0
+    # jQuery y scripts del tema sin bloquear el pintado (defer mantiene el orden)
+    t = re.sub(r'<script (id=["\'](?:jquery-core|jquery-migrate|toc-front|pc-lazy)-js["\'][^>]*?)(?<!defer)>', r'<script \1 defer>', t)
     t = _fix_titles(t)
     t = re.sub(r'<a [^>]*href="(?:https://www\.happylowcost\.com)?/tag/[^"]*"[^>]*>(.*?)</a>', r'\1', t, flags=re.S)
     t = re.sub(r'<link[^>]+(?:/feed/|/feed/atom/|wp-json|xmlrpc\.php|wlwmanifest|EditURI|rsd\+xml)[^>]*>\s*', '', t)
