@@ -35,14 +35,14 @@ const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').
 
 // misma limpieza que src/lib/clean.ts
 function cleanTitle(t) {
-  let s = String(t || '').replace(/\s+/g, ' ').trim();
+  let s = decodeEntities(String(t || '')).replace(/\s+/g, ' ').trim();
   s = s.replace(/\s*[([]\s*(m|f|w|h|d|x|v)\s*(\/\s*(m|f|w|h|d|x|v)\s*)+[)\]]\s*/gi, ' ').trim();
   const letters = s.replace(/[^A-Za-zÀ-ÿ]/g, '');
   if (letters.length > 6 && letters.replace(/[^A-ZÀ-Þ]/g, '').length / letters.length > 0.7) s = s.toLowerCase().replace(/(^|[\s(-])([a-zà-ÿ])/g, (_m, a, b) => a + b.toUpperCase());
   return s.replace(/\s+/g, ' ').trim();
 }
 function cleanCompany(c) {
-  return String(c || '').replace(/\s+/g, ' ').trim().replace(/^\d{2,}\s+(?=[A-Za-zÀ-ÿ])/, '').replace(/\s+(company|compañía|empresa)$/i, '').replace(/[,\s]+$/g, '');
+  return decodeEntities(String(c || '')).replace(/\s+/g, ' ').trim().replace(/^\d{2,}\s+(?=[A-Za-zÀ-ÿ])/, '').replace(/\s+(company|compañía|empresa)$/i, '').replace(/[,\s]+$/g, '');
 }
 function decodeEntities(s) {
   return String(s || '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#(\d+);/g, (_m, n) => String.fromCharCode(+n));
@@ -240,6 +240,7 @@ export async function company(req, r, u, env, ctx) {
       .on('meta[name="robots"]', { element(e) { e.setAttribute('content', 'noindex, follow'); } })
       .transform(new Response(r.body, { status: 404, headers: h }));
   }
+  c.name = decodeEntities(c.name);
   const year = new Date().getUTCFullYear();
   const cities = (c.cities || []).filter((x) => x && !NOT_CITY.test(x.trim())).slice(0, 4);
   const path = (es ? '/empresa/' : '/company/') + c.slug;
