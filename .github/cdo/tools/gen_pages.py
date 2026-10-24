@@ -61,7 +61,7 @@ def page(p, lang, other):
     foot = ('<footer class="foot"><div class="wrap"><nav aria-label="Footer">' + ''.join(f'<a href="{hr}">{e(n)}</a>' for hr, n in FOOT[lang]) +
             '</nav>© 2026 Carlos de Ory · Equinox Investment Group LLC · <a href="https://x.com/mrstartups" rel="me noopener">@mrstartups</a></div></footer>\n'
             '<style>.lgbtn{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:32px;border-radius:100px;font:700 12px var(--mono,monospace);text-decoration:none;color:inherit}.lgbtn[aria-current="true"]{background:var(--ink,#141418);color:#fff}</style>\n'
-            '<script src="/assets/cdo/cdo-boost.js?v=6" defer></script>\n</body>\n</html>\n')
+            '<script src="/assets/cdo/cdo-boost.js?v=7" defer></script>\n</body>\n</html>\n')
     doc = head + header + f'<main id="main" class="wrap">\n{cr}\n{hero}\n{body}\n</main>\n' + foot
     fp = os.path.join(ROOT, path.strip('/'), 'index.html')
     os.makedirs(os.path.dirname(fp), exist_ok=True)

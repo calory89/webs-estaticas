@@ -253,3 +253,18 @@ PAGES += [
              {'h': 'Bio corta para leer en antena', 'html': para('Carlos de Ory montó su primer negocio con 16 años y lleva más de 20 años creando empresas, de Happy Low Cost a Eco Beach City en Sumba. En 2022 Forbes España lo incluyó entre las 100 personas más creativas de los negocios. Está escribiendo un libro sobre crear empresas y una vida elegida.')}],
    faq=None, end_h='Reserva una entrevista', end_p='Cuéntame el nombre del podcast, el público y algunas fechas posibles.', end_href='/charlas/?talk=podcast#request', end_cta='Invitarme')},
 ]
+
+# ---------- LEAD MAGNET: checklist de embudo ----------
+def leadbox(lang, pdf, src, title, sub):
+    en = lang == 'en'
+    return (f'<aside class="cdo-plan cdo-lead-box" data-pdf="{pdf}" data-src="{src}" style="margin:0"><p><b>{title}</b> {sub}</p>'
+            f'<form class="r" novalidate><label style="position:absolute;left:-9999px" for="lb-{src.replace(":","-")}">Email</label><input id="lb-{src.replace(":","-")}" type="email" autocomplete="email" inputmode="email" required placeholder="{"you@email.com" if en else "tu@email.com"}" style="flex:1;min-width:180px;border:1px solid #E6E1D8;border-radius:100px;padding:9px 15px;font-size:15px">'
+            f'<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button class="p" type="submit" style="border:0;border-radius:100px;padding:9px 16px;font-weight:700;background:#15151A;color:#fff;cursor:pointer">{"Send me the checklist" if en else "Quiero la checklist"}</button></form>'
+            f'<small class="m" role="status" aria-live="polite"></small><small>{"You also join the newsletter. Unsubscribe in one click. " if en else "También te apuntas a la newsletter. Te das de baja en un clic. "}<a href="/politica-de-privacidad/">{"Privacy policy" if en else "Política de privacidad"}</a></small></aside>')
+LB_EN = leadbox('en', '/assets/cdo/checklist-embudo-en.pdf', 'checklist:embudo', 'Free checklist: 25 leaks in a sales funnel.', 'Review your funnel in 20 minutes.')
+LB_ES = leadbox('es', '/assets/cdo/checklist-embudo-es.pdf', 'checklist:embudo', 'Checklist gratis: 25 fugas de un embudo de ventas.', 'Revisa tu embudo en 20 minutos.')
+for _p in PAGES:
+    for _l in ('en', 'es'):
+        _t = _p.get(_l)
+        if _t and _t['path'] in ('/growth/funnels/', '/agencia/embudos/', '/growth/google-ads/', '/agencia/google-ads/', '/growth/meta-ads/', '/agencia/meta-ads/'):
+            _t['sections'].insert(1, {'h': 'Free checklist' if _l == 'en' else 'Checklist gratis', 'html': LB_EN if _l == 'en' else LB_ES})
