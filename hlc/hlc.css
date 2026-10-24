@@ -171,3 +171,8 @@ form.done>.af{display:none}
 .rcal-b em{position:absolute;top:-10px;left:50%;transform:translateX(-50%);font:700 11px/1 var(--fb,Inter,sans-serif);font-style:normal;background:var(--coral);color:#fff;padding:4px 8px;border-radius:10px;white-space:nowrap}
 .rcal-note{font:15px/1.5 var(--fb,Inter,sans-serif);color:#4A5468;margin:14px 0 0}.rcal-spark{width:100%;height:80px;display:block;background:#fff;border-radius:12px;border:1.5px solid var(--linea)}
 @media (max-width:560px){.rcal-g{grid-template-columns:repeat(3,1fr)}.rcal-b{height:170px}}
+
+.xf-sel input{min-height:44px;border-radius:12px;border:1.5px solid #EADCC4;background:#fff;padding:0 10px;font:600 15px Inter,sans-serif;color:#14213D;text-transform:none;letter-spacing:0;width:100%;box-sizing:border-box}
+
+:focus-visible{outline:3px solid #2E6BF0!important;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}

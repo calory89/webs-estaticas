@@ -120,7 +120,7 @@ def search_form(rows, en):
     oo = ''.join(f'<option value="{e(o)}">{e(en_names.city_en(o) if en else o)}</option>' for o in origins)
     dd = ''.join(f'<option value="{e(d)}"></option>' for d in dests)
     mm = ''.join(f'<option value="{k}">{v}</option>' for k, v in months)
-    return f'''<form class="xf" data-route-search style="margin-bottom:26px" role="search" aria-label="{L("Buscar ruta", "Search a route")}">
+    return f'''<form class="xf open" data-route-search style="margin-bottom:26px" role="search" aria-label="{L("Buscar ruta", "Search a route")}">
 <div class="xf-row">
 <label class="xf-sel"><span>{L("Desde", "From")}</span><select name="o" aria-label="{L("Aeropuerto de salida", "Departure airport")}">{oo}</select></label>
 <label class="xf-search"><span aria-hidden="true">✈️</span><input name="d" list="rs-dests" placeholder="{L("¿A dónde? Roma, Tokio, Nueva York…", "Where to? Rome, Tokyo, New York…")}" aria-label="{L("Destino", "Destination")}" autocomplete="off" required></label>

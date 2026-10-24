@@ -91,7 +91,7 @@ def tools_pages():
         body = f'''<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:900px">
 <div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{L("¿Cabe gratis tu equipaje?", "Does your bag fly free?")}</h1>
 <p style="font-size:18px">{L("Pon las medidas de tu mochila o maleta, en centímetros y con asas y ruedas incluidas.", "Enter your bag size in centimetres, including handles and wheels.")}</p>
-<form class="xf" data-bag style="margin:18px 0"><div class="xf-row">
+<form class="xf open" data-bag style="margin:18px 0"><div class="xf-row">
 <label class="xf-sel"><span>{L("Alto", "Height")} (cm)</span><input type="number" inputmode="numeric" name="a" min="5" max="120" value="40" required></label>
 <label class="xf-sel"><span>{L("Ancho", "Width")} (cm)</span><input type="number" inputmode="numeric" name="b" min="5" max="120" value="30" required></label>
 <label class="xf-sel"><span>{L("Fondo", "Depth")} (cm)</span><input type="number" inputmode="numeric" name="c" min="3" max="80" value="20" required></label>
@@ -132,7 +132,7 @@ f.addEventListener('input',run);run();}})();
         body = f'''<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px">
 <div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{L("¿Es buen precio?", "Is it a good price?")}</h1>
 <p style="font-size:18px">{L("Compara el precio de ida y vuelta que has visto con lo que suele costar esa ruta en nuestras consultas a Kiwi.com.", "Compare the return fare you saw with what that route usually costs in our Kiwi.com checks.")}</p>
-<form class="xf" data-gp style="margin:18px 0"><div class="xf-row">
+<form class="xf open" data-gp style="margin:18px 0"><div class="xf-row">
 <label class="xf-search"><span aria-hidden="true">🛫</span><input name="o" list="gp-o" placeholder="{L("Desde (Madrid, Barcelona…)", "From (London, Madrid…)")}" required autocomplete="off"></label><datalist id="gp-o"></datalist>
 <label class="xf-search"><span aria-hidden="true">🛬</span><input name="d" list="gp-d" placeholder="{L("A (Roma, Tokio…)", "To (Rome, Tokyo…)")}" required autocomplete="off"></label><datalist id="gp-d"></datalist>
 <label class="xf-sel"><span>{L("Precio ida y vuelta (€)", "Return price (€)")}</span><input type="number" name="p" min="5" max="9999" inputmode="numeric" required></label>
@@ -222,7 +222,7 @@ def main():
     ph += '''<main class="sec" style="padding-top:26px"><div class="wrap">
 <div class="kicker">Interno</div><h1 class="x-h1">Panel semanal</h1>
 <p style="color:#4A5468">Altas de alerta, chollos publicados y clics a reservar por semana (lunes a domingo, hora UTC). Los ingresos de afiliado salen en el informe de CJ: cada clic desde una ficha lleva el SID <code>hlc-&lt;chollo&gt;</code> (o <code>hlcen-</code> en inglés), así que CJ desglosa la comisión por chollo.</p>
-<div style="overflow-x:auto"><table id="t" style="width:100%;border-collapse:collapse;font:15px Inter,sans-serif;background:#fff;border-radius:14px"><thead><tr style="text-align:left"><th>Semana</th><th>Alertas</th><th>Email</th><th>WhatsApp</th><th>Chollos publicados</th><th>Clics vuelo</th><th>Clics hotel</th><th>Clics total</th></tr></thead><tbody><tr><td colspan="8">Cargando…</td></tr></tbody></table></div>
+<div style="overflow-x:auto"><table id="t" style="width:100%;border-collapse:collapse;font:15px Inter,sans-serif;background:#fff;border-radius:14px"><thead><tr style="text-align:left"><th>Semana</th><th>Alertas</th><th>Email</th><th>WhatsApp</th><th>Push</th><th>Push enviados</th><th>Chollos publicados</th><th>Retirados al recomprobar</th><th>Clics vuelo</th><th>Clics hotel</th><th>Clics total</th></tr></thead><tbody><tr><td colspan="11">Cargando…</td></tr></tbody></table></div>
 <h2 style="margin-top:34px">Chollos con más clics (7 días)</h2>
 <div style="overflow-x:auto"><table id="top" style="width:100%;border-collapse:collapse;font:15px Inter,sans-serif;background:#fff"><thead><tr style="text-align:left"><th>Chollo</th><th>Clics vuelo</th><th>Clics hotel</th><th>Total</th></tr></thead><tbody></tbody></table></div>
 <style>#t td,#t th,#top td,#top th{padding:10px 12px;border-bottom:1px solid #EADCC4;white-space:nowrap}</style>
@@ -230,7 +230,7 @@ def main():
 (function(){var K='ANONKEY',U='https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/';
 function g(p){return fetch(U+p,{headers:{apikey:K}}).then(function(r){return r.json();});}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-g('hlc_panel_semanal?select=*').then(function(l){document.querySelector('#t tbody').innerHTML=(l||[]).map(function(r){return '<tr><td>'+esc(r.semana)+'</td><td>'+r.alertas+'</td><td>'+r.alertas_email+'</td><td>'+r.alertas_whatsapp+'</td><td>'+r.chollos_publicados+'</td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.clics_total+'</td></tr>';}).join('');}).catch(function(){document.querySelector('#t tbody').innerHTML='<tr><td colspan="8">No se ha podido cargar.</td></tr>';});
+g('hlc_panel_semanal?select=*').then(function(l){document.querySelector('#t tbody').innerHTML=(l||[]).map(function(r){return '<tr><td>'+esc(r.semana)+'</td><td>'+r.alertas+'</td><td>'+r.alertas_email+'</td><td>'+r.alertas_whatsapp+'</td><td>'+r.alertas_push+'</td><td>'+r.push_enviados+'</td><td>'+r.chollos_publicados+'</td><td>'+r.retirados_revalidacion+'</td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.clics_total+'</td></tr>';}).join('');}).catch(function(){document.querySelector('#t tbody').innerHTML='<tr><td colspan="11">No se ha podido cargar.</td></tr>';});
 g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody').innerHTML=(l||[]).map(function(r){return '<tr><td><a href="/chollos/'+esc(r.slug)+'/">'+esc(r.slug)+'</a></td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.total+'</td></tr>';}).join('')||'<tr><td colspan="4">Aún no hay clics registrados.</td></tr>';});
 })();
 </script></div></main></body></html>'''.replace('ANONKEY', ANON_KEY)

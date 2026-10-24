@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '20'
+V = '21'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -162,7 +162,10 @@ def legacy_clean(t):
         t, n = _drop(t, rx)
         total += n
     t = re.sub(r'<a href="#" id="close-sidebar-nav"[^>]*>.*?</a>', '', t, flags=re.S)
-    return t, total
+    # JavaScript de la plantilla vieja que ya no hace nada (menús, me gusta, compartir, comentarios)
+    t, nj = re.subn(r'<script[^>]*id=["\'](?:gtm4wp-form-move-tracker|js-cookies|penci_ajax_like_post|comment-reply|jquery\.inview|penci-sticky-share|main-scripts|penci-libs-js)-js["\'][^>]*>\s*</script>\s*', '', t)
+    t, nj2 = re.subn(r'<script[^>]*id=["\'](?:penci_ajax_like_post|main-scripts|penci-libs-js|penci-sticky-share)-js-(?:extra|before|after)["\'][^>]*>.*?</script>\s*', '', t, flags=re.S)
+    return t, total + nj + nj2
 
 
 stats = dict(files=0, changed=0, gtm=0, rel=0, ebc=0, old=0, legacy=0)

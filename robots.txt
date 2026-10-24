@@ -2,5 +2,10 @@ User-agent: *
 Allow: /
 Disallow: /wp-admin/
 Disallow: /panel/
+Disallow: /*?orden=
+Disallow: /*?rt=
+Disallow: /*?cont=
+Disallow: /chollos/ver/
+Disallow: /offline/
 
 Sitemap: https://www.happylowcost.com/sitemap_index.xml

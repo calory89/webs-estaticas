@@ -86,7 +86,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=20" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=21" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -264,6 +264,37 @@ def main():
 </div></main><script src="/hlc/explorer.js?v=2" defer></script>{FOOTER}</body></html>'''
     write('en/deals', page)
 
+    # ---------- ideas (EN) ----------
+    def nights(f_):
+        try:
+            return (datetime.date.fromisoformat(f_['vuelta'][:10]) - datetime.date.fromisoformat(f_['ida'][:10])).days
+        except Exception:
+            return 99
+    IDEAS_EN = [
+        ('weekend-getaways', 'Weekend getaways', 'Trips of 2 to 4 nights leaving on a Thursday, Friday or Saturday.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
+        ('under-50', 'Flights under €50', 'Return deals for €50 or less.', lambda f_: (f_.get('precio') or 999) <= 50),
+        ('under-100', 'Flights under €100', 'Return deals for €100 or less.', lambda f_: (f_.get('precio') or 999) <= 100),
+        ('long-haul', 'Long-haul under €600', 'Deals to another continent for €600 or less, return.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and G.REAL_CONT.get(f_.get('continente')) != G.REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
+        ('nonstop', 'Nonstop flight deals', 'Only flights with no stops.', lambda f_: f_.get('escalas') == 0),
+        ('christmas-2026', 'Christmas and New Year 2026', 'Deals departing between 18 December 2026 and 6 January 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
+    ]
+    ideas_en = []
+    for k_, h1_, desc_, fn_ in IDEAS_EN:
+        sub = [x for x in deals if fn_(x['facts'])]
+        cheapest = min((x['price'] for x in sub), default=None)
+        intro_ = (f"{desc_} {len(sub)} deals right now" + (f", from €{cheapest}." if cheapest else ".") + " Prices re-checked every day.") if sub else f"{desc_} None right now: new fares land every hour."
+        ch_, cld_ = crumbs([('Home', '/en/'), ('Deals', '/en/deals/'), (h1_, None)])
+        pg = head(f'{h1_}: cheap flight deals · Happy Low Cost', G.smart_desc(intro_), f'{SITE}/en/deals/ideas/{k_}/', None, ld=[cld_], body_class='chollos',
+                  robots='index, follow, max-image-preview:large' if sub else 'noindex, follow')
+        pg += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
+{ch_}
+<div class="sec-h"><div><div class="kicker">Ideas for cheap travel</div><h1 class="x-h1">{e(h1_)}</h1><p>{e(intro_)}</p></div></div>
+<div class="dc-grid">{''.join(card(x) for x in sub) or '<div class="dc-empty"><b>No deals here right now.</b><span>Check all of today’s deals.</span><a class="hlc-btn" href="/en/deals/">Today’s deals</a></div>'}</div>
+</div></main>{FOOTER}</body></html>'''
+        write(f'en/deals/ideas/{k_}', pg)
+        ideas_en.append((k_, h1_, len(sub)))
+    json.dump(ideas_en, open('en/ideas.json', 'w'), ensure_ascii=False)
+
     hero_imgs = [p for p in ('bali', 'tokio', 'nueva-york', 'santorini', 'maldivas', 'lisboa')]
     guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(s_)}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2012",
@@ -320,6 +351,8 @@ def main():
 <div class="h2-h"><h2>This is what today's deals look like</h2><p>The usual price of the route next to the price we hunted. Checked live.</p></div>
 <div class="dc-grid h2-deals">{''.join(card(x) for x in top6) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'}</div>
 <div class="h2-more"><a class="hlc-btn o" href="/en/deals/">See all {len(deals)} deals and filter</a></div>
+<div class="h2-h" style="margin-top:34px"><h2>Ideas for cheap travel</h2></div>
+<div class="chips" style="flex-wrap:wrap">{''.join(f'<a class="chip" href="/en/deals/ideas/{k}/">{e(n)}</a>' for k, n, c in ideas_en if c)}<a class="chip" href="/en/tools/">🧰 Tools</a></div>
 </div></section>
 
 <section class="sec h2-sec h2-how"><div class="wrap">
@@ -401,7 +434,7 @@ def main():
     rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Happy Low Cost · Flight deals</title><link>' + SITE + '/en/deals/</link><description>Verified cheap flight deals worldwide</description><language>en</language>' +
            ''.join(f'<item><title>{e(x["en"].get("title"))}</title><link>{SITE}/en/deals/{G.en_deal_slug(x)}/</link><guid>{SITE}/en/deals/{G.en_deal_slug(x)}/</guid><description>{e(x["en"].get("excerpt") or "")}</description></item>' for x in deals[:50]) + '</channel></rss>\n')
     open('en/deals/feed.xml', 'w', encoding='utf-8').write(rss)
-    urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/" for p, g in dl]
+    urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/ideas/{k}/' for k, n, c in ideas_en if c] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/" for p, g in dl]
     open('en-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc></url>' for u in urls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()
     if 'en-sitemap.xml' not in si:
@@ -411,7 +444,7 @@ def main():
     if os.path.isdir('en/deals'):
         import shutil
         for d_ in os.listdir('en/deals'):
-            if os.path.isdir(os.path.join('en/deals', d_)) and d_ not in hechos:
+            if os.path.isdir(os.path.join('en/deals', d_)) and d_ not in hechos and d_ != 'ideas':
                 shutil.rmtree(os.path.join('en/deals', d_))
     json.dump({'deals': sorted(hechos), 'guides': [p['s'] for p, g in dl]}, open('en/pages.json', 'w'))
     json.dump(moved, open('en/_map-deals.json', 'w'), separators=(',', ':'))
