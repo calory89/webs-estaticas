@@ -90,7 +90,10 @@ MIN_SAVE = 25  # % mínimo frente al precio habitual para enseñar un chollo en 
 
 
 def keep_deal(x):
-    p = (x.get('facts') or {}).get('ahorro_pct')
+    f = x.get('facts') or {}
+    if not f.get('vuelta'):  # solo ida y vuelta, sin excepciones
+        return False
+    p = f.get('ahorro_pct')
     return not p or p >= MIN_SAVE
 
 
@@ -480,6 +483,15 @@ def route_cal_link(f):
     return f'<a class="hlc-btn o" href="/vuelos/{slug_}/">📅 Precio de esta ruta mes a mes</a>' if os.path.isdir(os.path.join('vuelos', slug_)) else ''
 
 
+def _age_bucket(x):
+    """0: menos de 12 h, 1: menos de 36 h, 2: más antiguo (los más nuevos primero, como en hlc.js)"""
+    try:
+        h = (datetime.datetime.utcnow() - datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19])).total_seconds() / 3600
+    except Exception:
+        return 2
+    return 0 if h < 12 else 1 if h < 36 else 2
+
+
 def card(x):
     f = x['facts']
     cs, cn, ce = cont_of(f)
@@ -793,7 +805,7 @@ def main():
 
     # ---------- portada: chollos en el HTML (Google y móviles lentos los ven sin esperar al JavaScript) ----------
     if os.path.exists('index.html'):
-        pool = sorted(deals, key=lambda x: (0 if x['facts'].get('origen_cc') == 'ES' else 1, 0 if x['facts'].get('ahorro_pct') else 1, -(datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19]).timestamp())))
+        pool = sorted(deals, key=lambda x: (_age_bucket(x), 0 if x['facts'].get('origen_cc') == 'ES' else 1, 0 if x['facts'].get('ahorro_pct') else 1, -(datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19]).timestamp())))
         top = pool[:6]
         ix = open('index.html', encoding='utf-8').read()
         ix = re.sub(r'<!--ssr-count-->.*?<!--/ssr-count-->', f'<!--ssr-count-->{len(deals)} chollos activos ahora, desde {len(origins)} países. Precio comprobado cada día frente a lo que suele costar la ruta.<!--/ssr-count-->', ix, flags=re.S)

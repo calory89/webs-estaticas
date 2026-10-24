@@ -1,6 +1,6 @@
 /* Happy Low Cost: avisos push de chollos y copia offline de lo último visto */
 const CACHE = 'hlc-v1';
-self.addEventListener('install', (e) => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/offline/', '/hlc/hlc.css?v=35', '/hlc/brand/icon-192.png']).catch(() => {}))); });
+self.addEventListener('install', (e) => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/offline/', '/hlc/hlc.css?v=36', '/hlc/brand/icon-192.png']).catch(() => {}))); });
 self.addEventListener('activate', (e) => { e.waitUntil(self.clients.claim()); });
 self.addEventListener('fetch', (e) => {
   const r = e.request;
