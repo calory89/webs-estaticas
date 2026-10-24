@@ -11928,12 +11928,14 @@ function bestFor(h, i, L, sights) {
 		"value",
 		"lux"
 	][i]]];
+	const guestText = [...h.extras?.pros ?? [], ...h.extras?.cons ?? []].join(" ");
+	const famOk = /famil|kid|child|niñ|enfant|kinder|bambin|crian|børn/i.test(guestText);
 	for (const k of [
 		"family",
 		"spa",
 		"beach",
 		"pool"
-	]) if (tags.includes(k)) out.push(f[k]);
+	]) if (tags.includes(k) && (k !== "family" || famOk)) out.push(f[k]);
 	const w = walkMinutes(h, sights);
 	if (w && w.min <= 15) out.push(f["central"]);
 	return [...new Set(out)].slice(0, 3);
