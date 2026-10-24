@@ -74,15 +74,32 @@ const FIRM_COLS = 'id,firm_name,description,category,typical_model,countries_ser
 const isHand = (f) => f.source === CURATED && !!f.last_verified_at && Date.now() - Date.parse(f.last_verified_at) < 365 * 864e5;
 const pgArr = (vals) => '{' + vals.map((v) => '"' + String(v).replace(/(["\\])/g, '\\$1') + '"').join(',') + '}';
 
+// Row count for a PostgREST filter (HEAD + Prefer: count=exact), cached at the edge for an hour.
+async function sbCount(path, ctx) {
+  const url = SB + path;
+  const cache = caches.default;
+  const key = new Request('https://jurimatch-edge-cache.internal/count/' + encodeURIComponent(url));
+  const hit = await cache.match(key);
+  if (hit) return Number(await hit.text());
+  const r = await fetch(url, { method: 'HEAD', headers: { apikey: ANON, authorization: 'Bearer ' + ANON, 'accept-profile': 'jurimatch', prefer: 'count=exact' } });
+  const m = (r.headers.get('content-range') || '').match(/\/(\d+)$/);
+  if (!m) return null;
+  ctx.waitUntil(cache.put(key, new Response(m[1], { headers: { 'cache-control': 'public, max-age=3600' } })));
+  return Number(m[1]);
+}
+
 async function listFirms(list, ctx) {
   const base = 'lawyers?select=' + FIRM_COLS + '&status=eq.active&quarantine_reason=is.null&domain_resolves=is.true&is_winwin=is.true&accepting_cases=not.is.false&listing_tier=in.(partner,verified_listing)'
     + (list.types ? '&case_types=ov.' + encodeURIComponent(pgArr(list.types)) : '')
     + (list.country ? '&countries_norm=cs.' + encodeURIComponent(pgArr([list.country])) : '');
-  const [v, ix] = await Promise.all([
+  const countBase = base.replace('select=' + FIRM_COLS, 'select=id');
+  const [v, ix, nv, ni] = await Promise.all([
     sb(base + '&source=eq.' + CURATED + '&order=firm_name&limit=20', ctx),
     sb(base + '&or=(source.is.null,source.neq.' + CURATED + ')&limit=10', ctx),
+    sbCount(countBase + '&source=eq.' + CURATED + '&limit=1', ctx).catch(() => null),
+    sbCount(countBase + '&or=(source.is.null,source.neq.' + CURATED + ')&limit=1', ctx).catch(() => null),
   ]);
-  return { verified: v || [], indexed: ix || [] };
+  return { verified: v || [], indexed: ix || [], nVerified: nv, nIndexed: ni };
 }
 
 function firmItem(f, verified) {
@@ -247,7 +264,8 @@ export async function render(req, res, u, env, ctx) {
   if (page.facts) body += '<dl>' + page.facts.map(([k, v]) => '<dt>' + esc(k) + '</dt><dd>' + esc(v) + '</dd>').join('') + '</dl>';
   if (page.list) {
     try {
-      const { verified, indexed } = await listFirms(page.list, ctx);
+      const { verified, indexed, nVerified, nIndexed } = await listFirms(page.list, ctx);
+      if (nVerified !== null && nIndexed !== null) body += '<p><strong>On JuriMatch today:</strong> ' + nVerified + ' hand-verified firm' + (nVerified === 1 ? '' : 's') + ' and ' + nIndexed + ' more from our index (not verified) list this kind of case' + (page.list.country ? ' here' : '') + '.</p>';
       if (verified.length) body += '<h2>Hand-verified firms</h2><ul>' + verified.map((f) => firmItem(f, isHand(f))).join('') + '</ul>';
       if (indexed.length) body += '<h2>More firms from our index</h2><ul>' + indexed.map((f) => firmItem(f, false)).join('') + '</ul>';
       if (verified.length) lds.push({ '@context': 'https://schema.org', '@type': 'ItemList', name: page.h1, itemListElement: verified.map((f, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + '/firms/' + slugify(f.firm_name), name: f.firm_name })) });
