@@ -60,6 +60,129 @@ LEGAL_EN = [
 ]
 
 
+BAGS = [  # (aerolínea, artículo gratis cm, peso gratis, maleta de cabina cm, precio maleta de cabina) · fuente: Ulysse News 11-feb-2026 y Público 11-ene-2026
+    ('Ryanair', (40, 30, 20), '', (55, 40, 20), '6-20 € (Priority)'),
+    ('Vueling', (40, 30, 20), '', (55, 40, 20), '10-59 €'),
+    ('easyJet', (45, 36, 20), '15 kg', (56, 45, 25), '23-35 €'),
+    ('Wizz Air', (40, 30, 20), '10 kg', (55, 40, 23), '10-35 € (Priority)'),
+    ('Volotea', (40, 30, 20), '10 kg', (55, 40, 20), '9-30 €'),
+    ('Transavia', (40, 30, 20), '10 kg', (55, 40, 25), '23-65 €'),
+    ('Norwegian', (40, 30, 20), '10 kg', None, ''),
+    ('Eurowings', (40, 30, 25), '', (55, 40, 23), 'incluida en tarifa SMART'),
+    ('Iberia Express', (40, 30, 15), '', (56, 40, 25), ''),
+    ('Air Europa', (40, 30, 15), '10 kg', (55, 35, 25), 'incluida'),
+    ('Air France', (40, 30, 15), '12 kg (total)', (55, 35, 25), 'incluida'),
+]
+BAG_SRC = [('Ulysse News, 11 feb 2026', 'https://ulysse.com/news/bagages-cabine-europe-norme-40x30x15-2026'), ('Público, 11 ene 2026', 'https://www.publico.es/en-ruta/medidas-equipaje-mano-2026-gratis.html')]
+
+
+def tools_pages():
+    import json as _j
+    data = _j.dumps([[a, f, w, c, p] for a, f, w, c, p in BAGS], ensure_ascii=False)
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        url = f"{SITE}/en/tools/baggage/" if en else f"{SITE}/herramientas/equipaje/"
+        alt = f'<link rel="alternate" hreflang="es" href="{SITE}/herramientas/equipaje/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/baggage/">'
+        rows = ''.join(f'<tr><td><b>{G.e(a)}</b></td><td>{f[0]}×{f[1]}×{f[2]}</td><td>{G.e(w) or "—"}</td><td>{(f"{c[0]}×{c[1]}×{c[2]}") if c else "—"}</td><td>{G.e(p) or "—"}</td></tr>' for a, f, w, c, p in BAGS)
+        src = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{G.e(t)}</a>' for t, u in BAG_SRC)
+        title = L('Calculadora de equipaje de mano low cost 2026: ¿cabe gratis tu mochila?', 'Low-cost hand luggage checker 2026: does your bag fly free?')
+        desc = L('Mete las medidas de tu mochila o maleta y mira en qué aerolíneas low cost viaja gratis: Ryanair, Vueling, easyJet, Wizz Air, Volotea y más.',
+                 'Enter your bag size and see which low-cost airlines let it fly free: Ryanair, Vueling, easyJet, Wizz Air, Volotea and more.')
+        body = f'''<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:900px">
+<div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{L("¿Cabe gratis tu equipaje?", "Does your bag fly free?")}</h1>
+<p style="font-size:18px">{L("Pon las medidas de tu mochila o maleta, en centímetros y con asas y ruedas incluidas.", "Enter your bag size in centimetres, including handles and wheels.")}</p>
+<form class="xf" data-bag style="margin:18px 0"><div class="xf-row">
+<label class="xf-sel"><span>{L("Alto", "Height")} (cm)</span><input type="number" inputmode="numeric" name="a" min="5" max="120" value="40" required></label>
+<label class="xf-sel"><span>{L("Ancho", "Width")} (cm)</span><input type="number" inputmode="numeric" name="b" min="5" max="120" value="30" required></label>
+<label class="xf-sel"><span>{L("Fondo", "Depth")} (cm)</span><input type="number" inputmode="numeric" name="c" min="3" max="80" value="20" required></label>
+</div></form>
+<div data-bag-out aria-live="polite"></div>
+<h2 style="margin-top:34px">{L("Medidas por aerolínea", "Sizes by airline")}</h2>
+<div style="overflow-x:auto"><table class="bagt"><thead><tr><th>{L("Aerolínea", "Airline")}</th><th>{L("Bulto gratis (cm)", "Free item (cm)")}</th><th>{L("Peso", "Weight")}</th><th>{L("Maleta de cabina (cm)", "Cabin bag (cm)")}</th><th>{L("Precio maleta de cabina", "Cabin bag price")}</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p style="color:#4A5468;font-size:14px">{L("Datos publicados en", "Data published in")} {src}. {L("Las aerolíneas cambian sus normas y precios: confírmalo siempre en su web antes de volar.", "Airlines change rules and prices: always confirm on their website before flying.")}</p>
+<style>.bagt{{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;font:15px Inter,sans-serif}}.bagt td,.bagt th{{padding:10px 12px;border-bottom:1px solid #EADCC4;text-align:left;white-space:nowrap}}
+.bag-r{{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}}.bag-c{{background:#fff;border:1.5px solid #EADCC4;border-radius:14px;padding:12px 14px;font:15px/1.4 Inter,sans-serif}}.bag-c b{{display:block;font-size:16px}}.bag-c.ok{{border-color:#1F9D55}}.bag-c.ok i{{color:#1F9D55}}.bag-c.mid i{{color:#B7791F}}.bag-c.no i{{color:#C53030}}.bag-c i{{font-style:normal;font-weight:700}}</style>
+<script>
+(function(){{var D={data},EN={'true' if en else 'false'},f=document.querySelector('[data-bag]'),o=document.querySelector('[data-bag-out]');
+function fits(x,l){{if(!l)return false;var a=x.slice().sort(function(p,q){{return q-p;}}),b=l.slice().sort(function(p,q){{return q-p;}});return a[0]<=b[0]&&a[1]<=b[1]&&a[2]<=b[2];}}
+function run(){{var x=[+f.a.value||0,+f.b.value||0,+f.c.value||0];var free=0;
+o.innerHTML='<div class="bag-r">'+D.map(function(r){{var a=fits(x,r[1]),c=!a&&fits(x,r[3]);if(a)free++;var cls=a?'ok':(c?'mid':'no');
+var t=a?(EN?'Free':'Gratis'):(c?(EN?'Paid cabin bag':'Maleta de cabina')+(r[4]?' · '+r[4]:''):(EN?'Must be checked in':'Tiene que facturarse'));
+return '<div class="bag-c '+cls+'"><b>'+r[0]+'</b><i>'+t+'</i></div>';}}).join('')+'</div><p style="font:16px Inter,sans-serif"><b>'+free+'</b> '+(EN?'of':'de')+' '+D.length+' '+(EN?'airlines let it fly free.':'aerolíneas la llevan gratis.')+'</p>';}}
+f.addEventListener('input',run);run();}})();
+</script>
+<p style="margin-top:26px"><a class="hlc-btn" href="{L("/chollos/", "/en/deals/")}">{L("Ver los chollos de hoy", "See today’s deals")}</a></p></div></main>'''
+        if en:
+            pg = E.head(title + ' · Happy Low Cost', desc, url, f"{SITE}/herramientas/equipaje/", og_type='article', body_class='tool') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/tools/baggage', exist_ok=True)
+            open('en/tools/baggage/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc=G.e(desc), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt, body_class='tool') + body + '</body></html>'
+            os.makedirs('herramientas/equipaje', exist_ok=True)
+            open('herramientas/equipaje/index.html', 'w', encoding='utf-8').write(pg)
+
+    # ¿es buen precio?
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        url = f"{SITE}/en/tools/is-it-a-good-price/" if en else f"{SITE}/herramientas/es-buen-precio/"
+        alt = f'<link rel="alternate" hreflang="es" href="{SITE}/herramientas/es-buen-precio/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/is-it-a-good-price/">'
+        title = L('¿Es buen precio este vuelo? Compáralo con lo normal en su ruta', 'Is this flight a good price? Compare it with the usual fare')
+        desc = L('Escribe origen, destino y el precio que has visto: te decimos si es un chollo comparado con el precio habitual de esa ruta.', 'Enter origin, destination and the price you saw: we tell you if it is a deal compared with the usual fare on that route.')
+        body = f'''<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px">
+<div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{L("¿Es buen precio?", "Is it a good price?")}</h1>
+<p style="font-size:18px">{L("Compara el precio de ida y vuelta que has visto con lo que suele costar esa ruta en nuestras consultas a Kiwi.com.", "Compare the return fare you saw with what that route usually costs in our Kiwi.com checks.")}</p>
+<form class="xf" data-gp style="margin:18px 0"><div class="xf-row">
+<label class="xf-search"><span aria-hidden="true">🛫</span><input name="o" list="gp-o" placeholder="{L("Desde (Madrid, Barcelona…)", "From (London, Madrid…)")}" required autocomplete="off"></label><datalist id="gp-o"></datalist>
+<label class="xf-search"><span aria-hidden="true">🛬</span><input name="d" list="gp-d" placeholder="{L("A (Roma, Tokio…)", "To (Rome, Tokyo…)")}" required autocomplete="off"></label><datalist id="gp-d"></datalist>
+<label class="xf-sel"><span>{L("Precio ida y vuelta (€)", "Return price (€)")}</span><input type="number" name="p" min="5" max="9999" inputmode="numeric" required></label>
+<button class="hlc-btn" type="submit">{L("Comprobar", "Check")}</button></div></form>
+<div data-gp-out aria-live="polite"></div></div></main>
+<script>
+(function(){{var EN={'true' if en else 'false'},f=document.querySelector('[data-gp]'),o=document.querySelector('[data-gp-out]'),I=[];
+var sl=function(s){{return String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}};
+fetch('/vuelos/rutas-idx.json').then(function(r){{return r.json();}}).then(function(j){{I=j;var os={{}},ds={{}};j.forEach(function(r){{os[r[2]]=1;ds[EN?r[4]:r[3]]=1;}});
+document.getElementById('gp-o').innerHTML=Object.keys(os).sort().map(function(x){{return '<option value="'+x+'">';}}).join('');document.getElementById('gp-d').innerHTML=Object.keys(ds).sort().map(function(x){{return '<option value="'+x+'">';}}).join('');}});
+f.addEventListener('submit',function(e){{e.preventDefault();var on=sl(f.o.value),dn=sl(f.d.value),p=+f.p.value;
+var r=I.filter(function(x){{return sl(x[2])===on&&(sl(x[3])===dn||sl(x[4])===dn||x[5]===dn);}})[0];
+if(!r){{o.innerHTML='<div class="dc-empty"><b>'+(EN?'We do not track that route yet.':'Todavía no seguimos esa ruta.')+'</b><span>'+(EN?'Check the routes we track or create an alert.':'Mira las rutas que seguimos o crea una alerta.')+'</span><a class="hlc-btn" href="'+(EN?'/en/flights/':'/vuelos/')+'">'+(EN?'Routes':'Rutas')+'</a></div>';return;}}
+var med=r[7]||r[6],low=r[6],diff=Math.round((1-p/med)*100);
+var v=p<=low?(EN?'Excellent: at or below the lowest fare we found.':'Excelente: igual o por debajo del más barato que encontramos.'):diff>=25?(EN?'Great deal: '+diff+'% below the usual price.':'Chollo: un '+diff+' % por debajo de lo normal.'):diff>=10?(EN?'Good price: '+diff+'% below usual.':'Buen precio: un '+diff+' % por debajo de lo normal.'):diff>-10?(EN?'Normal price for this route.':'Precio normal para esta ruta.'):(EN?'Expensive: '+(-diff)+'% above the usual price.':'Caro: un '+(-diff)+' % por encima de lo normal.');
+o.innerHTML='<div class="dc-empty" style="text-align:left"><b>'+v+'</b><span>'+(EN?'Usual price':'Lo normal')+': '+med+' € · '+(EN?'cheapest we found':'el más barato que encontramos')+': '+low+' €.</span><a class="hlc-btn" href="'+(EN?'/en/flights/'+r[1]:'/vuelos/'+r[0])+'/">'+(EN?'See the price calendar':'Ver el calendario de precios')+'</a></div>';}});}})();
+</script>'''
+        if en:
+            pg = E.head(title + ' · Happy Low Cost', desc, url, f"{SITE}/herramientas/es-buen-precio/", og_type='article', body_class='tool') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/tools/is-it-a-good-price', exist_ok=True)
+            open('en/tools/is-it-a-good-price/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc=G.e(desc), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=9">' + alt, body_class='tool') + body + '</body></html>'
+            os.makedirs('herramientas/es-buen-precio', exist_ok=True)
+            open('herramientas/es-buen-precio/index.html', 'w', encoding='utf-8').write(pg)
+
+    # índice de herramientas
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        items = [(L('/herramientas/equipaje/', '/en/tools/baggage/'), L('¿Cabe gratis tu equipaje?', 'Does your bag fly free?'), L('Medidas de 11 aerolíneas y comprobador.', 'Sizes for 11 airlines and a checker.')),
+                 (L('/herramientas/es-buen-precio/', '/en/tools/is-it-a-good-price/'), L('¿Es buen precio?', 'Is it a good price?'), L('Compara un precio con lo normal en su ruta.', 'Compare a fare with the usual price.')),
+                 (L('/vuelos/', '/en/flights/'), L('Calendario de precios por ruta', 'Price calendar by route'), L('El mes más barato para volar, en más de 3.000 rutas.', 'The cheapest month to fly, on 3,000+ routes.')),
+                 (L('/chollos/ideas/fin-de-semana/', '/en/deals/'), L('Escapadas de fin de semana', 'Today’s deals'), L('Chollos de 2 a 4 noches.', 'Verified flight deals.')),
+                 (L('/como-verificamos/', '/en/how-we-verify/'), L('Cómo verificamos', 'How we verify'), L('El método detrás de cada chollo.', 'The method behind every deal.'))]
+        cards = ''.join(f'<a class="hub-l" href="{u}" style="display:block;padding:16px"><b style="display:block;font-size:17px">{G.e(t)}</b><small style="font-size:14px">{G.e(dsc)}</small></a>' for u, t, dsc in items)
+        url = f"{SITE}/en/tools/" if en else f"{SITE}/herramientas/"
+        title = L('Herramientas para viajar barato', 'Tools to travel cheap')
+        body = f'<main class="sec" style="padding-top:26px"><div class="wrap"><div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{title}</h1><div class="hub-g" style="margin-top:20px">{cards}</div></div></main>'
+        if en:
+            pg = E.head(title + ' · Happy Low Cost', 'Free tools for cheap travel: baggage checker, good-price checker and price calendars.', url, f"{SITE}/herramientas/", body_class='tool') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/tools', exist_ok=True)
+            open('en/tools/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc='Herramientas gratis para viajar barato: equipaje de mano, si un precio es bueno y calendarios de precios.', canonical=url, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="es" href="{SITE}/herramientas/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/">', body_class='tool') + body + '</body></html>'
+            os.makedirs('herramientas', exist_ok=True)
+            open('herramientas/index.html', 'w', encoding='utf-8').write(pg)
+
+
 def body(qas, kicker, h1, lead, cta, cta_href):
     items = ''.join(f'<h2>{G.e(q)}</h2><p>{G.e(a)}</p>' for q, a in qas)
     return (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px">'
@@ -118,6 +241,16 @@ g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody'
            'Los chollos que ya abriste siguen guardados en este móvil; vuelve a intentarlo en un momento para ver los de hoy.</p><p><a class="hlc-btn" href="/chollos/">Reintentar</a></p></div></main></body></html>')
     os.makedirs('offline', exist_ok=True)
     open('offline/index.html', 'w', encoding='utf-8').write(pg)
+    tools_pages()
+    pages = ['/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
+             '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
+    import datetime as _dt
+    today = _dt.date.today().isoformat()
+    open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')
+    si = open('sitemap_index.xml', encoding='utf-8').read()
+    if 'paginas-sitemap.xml' not in si:
+        si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/paginas-sitemap.xml</loc>\n\t</sitemap>\n</sitemapindex>')
+        open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
     print('static ok')
 
 

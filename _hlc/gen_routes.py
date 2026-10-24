@@ -97,6 +97,7 @@ def page(r, lang, others):
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(when)}</div>
 </aside>
 </div>
+<section class="sec rcal" data-route-cal data-slug="{e(slug)}" data-o="{e(r["origin_iata"])}" data-d="{e(r["dest_iata"])}"><div class="sec-h"><div><div class="kicker">{L("Calendario de precios", "Price calendar")}</div><h2>{L("El mes más barato para volar de", "The cheapest month to fly from")} {e(r["origin"])} {L("a", "to")} {e(dest)}</h2><p>{L("Vuelo de ida y vuelta más barato que encontramos en cada mes, consultado en Kiwi.com (se actualiza cada 3 días). Toca un mes para ver esas fechas.", "Cheapest return flight we found in each month, checked on Kiwi.com (refreshed every 3 days). Tap a month to see those dates.")}</p></div></div><div class="rcal-bars" data-rcal-bars><div class="dc-empty"><b>{L("Consultando precios…", "Checking prices…")}</b></div></div><div data-rcal-hist></div></section>
 {G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es", checkin=f.get("ejemplo_ida"), checkout=f.get("ejemplo_vuelta"))}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
@@ -193,7 +194,7 @@ def main():
                     shutil.rmtree(os.path.join(base, r['slug']))
     json.dump({r['slug']: r['price_from'] for r in rows}, open('vuelos/rutas.json', 'w'), separators=(',', ':'))
     import en_names
-    json.dump([[r['slug'], en_slug(r), r['origin'], r['dest'], E.NAMES.get(r['dest_slug'], r['dest']), r['dest_slug'], r['price_from']] for r in rows], open('vuelos/rutas-idx.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+    json.dump([[r['slug'], en_slug(r), r['origin'], r['dest'], E.NAMES.get(r['dest_slug'], r['dest']), r['dest_slug'], r['price_from'], (r.get('facts') or {}).get('mediana_ida_y_vuelta_eur')] for r in rows], open('vuelos/rutas-idx.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     for base, en in (('vuelos', False), ('en/flights', True)):
         os.makedirs(base, exist_ok=True)
         open(os.path.join(base, 'index.html'), 'w', encoding='utf-8').write(hub(rows, en))

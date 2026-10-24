@@ -543,11 +543,19 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
     open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(page)
 
 
-def hub_links(origins, conts, dests_with_deals):
+IDEA_NAMES = [('fin-de-semana', 'Escapadas de fin de semana'), ('menos-de-50-euros', 'Menos de 50 €'), ('menos-de-100-euros', 'Menos de 100 €'), ('larga-distancia', 'Larga distancia'),
+              ('directos', 'Solo directos'), ('puente-diciembre-2026', 'Puente de diciembre'), ('navidad-2026', 'Navidad 2026'), ('semana-santa-2027', 'Semana Santa 2027')]
+
+
+def hub_links(origins, conts, dests_with_deals, cities=None):
     o = ''.join(f'<a class="hub-l" href="/chollos/desde/{k}/">{flag(v[1])} {e(v[0])} <small>{v[2]}</small></a>' for k, v in sorted(origins.items(), key=lambda kv: -kv[1][2]))
     c = ''.join(f'<a class="hub-l" href="/chollos/a/{k}/">{CONT_BY_SLUG[k][2]} {e(CONT_BY_SLUG[k][1])} <small>{v}</small></a>' for k, v in sorted(conts.items(), key=lambda kv: -kv[1]))
     dd = ''.join(f'<a class="hub-l" href="/destinos/{s_}/">{e(n)}</a>' for s_, n in dests_with_deals[:24])
-    return f'''<section class="hub"><h2>Chollos por país de salida</h2><div class="hub-g">{o}</div>
+    ci = ''.join(f'<a class="hub-l" href="/chollos/desde/{pk}/{ck}/">{e(n)} <small>{c}</small></a>' for (pk, ck), (n, c) in sorted((cities or {}).items(), key=lambda kv: -kv[1][1])[:40])
+    ide = ''.join(f'<a class="hub-l" href="/chollos/ideas/{k}/">{e(n)}</a>' for k, n in IDEA_NAMES)
+    return f'''<section class="hub"><h2>Ideas para viajar barato</h2><div class="hub-g">{ide}</div>
+<h2>Chollos por ciudad de salida</h2><div class="hub-g">{ci}</div>
+<h2>Chollos por país de salida</h2><div class="hub-g">{o}</div>
 <h2>Chollos por continente de destino</h2><div class="hub-g">{c}</div>
 {f'<h2>Guías de los destinos con chollo</h2><div class="hub-g">{dd}</div>' if dd else ''}</section>'''
 
@@ -707,7 +715,13 @@ def main():
 </div></main></body></html>'''
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(page)
 
-    hub = hub_links(origins, conts, dests_with_deals)
+    cities_ = {}
+    for x in deals:
+        f_ = x['facts']
+        k_ = (slugify(f_.get('origen_pais') or ''), slugify(f_.get('origen') or ''))
+        if all(k_):
+            cities_.setdefault(k_, [f_.get('origen'), 0])[1] += 1
+    hub = hub_links(origins, conts, dests_with_deals, cities_)
     nconts = len({REAL_CONT.get(x['facts'].get('continente') or '') for x in deals} - {None, ''})
     # ---------- chollos retirados (caducados o revalidados al alza): su página pasa a "caducado", noindex ----------
     live = {x['slug'] for x in deals}
@@ -787,6 +801,51 @@ def main():
         list_page(f'chollos/a/{cs}', f'Chollos de vuelos a {cname} · Happy Low Cost', f'Chollos de vuelos a {cname}', f'{cemoji} Destinos en {cname}', intro, sub,
                   f'{SITE}/chollos/a/{cs}/', [('Inicio', '/'), ('Chollos', '/chollos/'), (f'A {cname}', None)], extra_links=hub, noindex=not sub)
         gen.add('a/' + cs)
+    # ---------- landings por ciudad de salida (chollos/desde/<pais>/<ciudad>/) ----------
+    bycity = {}
+    for x in deals:
+        f_ = x['facts']
+        pk, ck = slugify(f_.get('origen_pais') or ''), slugify(f_.get('origen') or '')
+        if pk and ck:
+            bycity.setdefault((pk, ck), [f_.get('origen'), f_.get('origen_pais'), f_.get('origen_cc'), []])[3].append(x)
+    for k_ in [k for k in known if k.startswith('desde/') and k.count('/') == 2]:
+        _, pk, ck = k_.split('/')
+        bycity.setdefault((pk, ck), [ck.replace('-', ' ').title(), pk.replace('-', ' ').title(), '', []])
+    for (pk, ck), (city, pais, cc, sub) in bycity.items():
+        cheapest = min((x['price'] for x in sub), default=None)
+        tops = ', '.join(dict.fromkeys(x['facts'].get('destino') for x in sub))
+        intro = (f"{len(sub)} chollos de vuelos desde {city} comprobados" + (f", desde {cheapest} €" if cheapest else "") + (f": {tops[:150]}." if tops else ".") +
+                 " Cada precio se comprueba antes de publicarlo y se vuelve a comprobar cada día.") if sub else f"Ahora mismo no hay chollos desde {city}. Crea una alerta gratis y te avisamos en cuanto salga uno."
+        list_page(f'chollos/desde/{pk}/{ck}', f'Vuelos baratos desde {city}: chollos de hoy · Happy Low Cost', f'Chollos de vuelos desde {city}', f'{flag(cc)} Salidas desde {city}', intro, sub,
+                  f'{SITE}/chollos/desde/{pk}/{ck}/', [('Inicio', '/'), ('Chollos', '/chollos/'), (f'Desde {pais}', f'/chollos/desde/{pk}/'), (city, None)], extra_links=hub, noindex=not sub)
+        gen.add(f'desde/{pk}/{ck}')
+
+    # ---------- ideas: temporadas, puentes y presupuestos (se actualizan solas) ----------
+    def nights(f_):
+        try:
+            return (datetime.date.fromisoformat(f_['vuelta'][:10]) - datetime.date.fromisoformat(f_['ida'][:10])).days
+        except Exception:
+            return 99
+    IDEAS = [
+        ('puente-diciembre-2026', 'Puente de diciembre 2026', 'Chollos para el puente de la Constitución y la Inmaculada, con salida entre el 3 y el 8 de diciembre de 2026.', lambda f_: '2026-12-03' <= (f_.get('ida') or '')[:10] <= '2026-12-08'),
+        ('navidad-2026', 'Navidad y fin de año 2026', 'Chollos de vuelos con salida entre el 18 de diciembre de 2026 y el 6 de enero de 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
+        ('semana-santa-2027', 'Semana Santa 2027', 'Chollos con salida entre el 19 y el 28 de marzo de 2027 (Semana Santa: 25 al 28 de marzo).', lambda f_: '2027-03-19' <= (f_.get('ida') or '')[:10] <= '2027-03-28'),
+        ('fin-de-semana', 'Escapadas de fin de semana', 'Viajes de 2 a 4 noches con salida jueves, viernes o sábado.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
+        ('menos-de-50-euros', 'Vuelos por menos de 50 €', 'Chollos de ida y vuelta por 50 € o menos.', lambda f_: (f_.get('precio') or 999) <= 50),
+        ('menos-de-100-euros', 'Vuelos por menos de 100 €', 'Chollos de ida y vuelta por 100 € o menos.', lambda f_: (f_.get('precio') or 999) <= 100),
+        ('larga-distancia', 'Larga distancia por menos de 600 €', 'Chollos a otro continente por 600 € o menos, ida y vuelta.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and REAL_CONT.get(f_.get('continente')) != REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
+        ('directos', 'Chollos de vuelos directos', 'Solo vuelos sin escalas.', lambda f_: f_.get('escalas') == 0),
+    ]
+    ideas_links = []
+    for k_, h1_, desc_, fn_ in IDEAS:
+        sub = [x for x in deals if fn_(x['facts'])]
+        cheapest = min((x['price'] for x in sub), default=None)
+        intro = (f"{desc_} {len(sub)} chollos ahora mismo" + (f", desde {cheapest} €." if cheapest else ".") + " Precios comprobados cada día.") if sub else f"{desc_} Ahora mismo no hay ninguno: crea una alerta y te avisamos."
+        list_page(f'chollos/ideas/{k_}', f'{h1_}: chollos de vuelos · Happy Low Cost', h1_, 'Ideas para viajar barato', intro, sub, f'{SITE}/chollos/ideas/{k_}/',
+                  [('Inicio', '/'), ('Chollos', '/chollos/'), (h1_, None)], extra_links=hub, noindex=not sub)
+        gen.add(f'ideas/{k_}')
+        ideas_links.append((k_, h1_, len(sub)))
+    json.dump(ideas_links, open('chollos/ideas.json', 'w', encoding='utf-8'), ensure_ascii=False)
     json.dump(sorted(gen | known), open('chollos/landings.json', 'w'))
 
     # ---------- guías de destino /destinos/<slug>/ ----------
@@ -859,6 +918,8 @@ def main():
     lm0 = deals[0]['approved_at'] if deals else today
     urls = [u(f'{SITE}/chollos/', lm0)] + [u(f"{SITE}/chollos/{x['slug']}/", x.get('approved_at')) for x in deals]
     urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if (k.startswith('desde/') and k[6:] in origins) or (k.startswith('a/') and k[2:] in conts)]
+    _live = {f'desde/{slugify(x["facts"].get("origen_pais") or "")}/{slugify(x["facts"].get("origen") or "")}' for x in deals} | {f'ideas/{k}' for k, h, n in ideas_links if n}
+    urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if k in _live]
     open('chollos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(urls) + '</urlset>\n')
     durls = [u(f'{SITE}/destinos/')] + [u(f"{SITE}/destinos/{p['s']}/", g.get('updated_at')) for p, g in dlinks]
     open('destinos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(durls) + '</urlset>\n')
