@@ -42,7 +42,7 @@ def exists(path):
 
 
 scope = ['index.html', 'chollos/index.html', 'destinos/index.html', 'vuelos/index.html', 'alertas/index.html', 'como-verificamos/index.html', 'herramientas/index.html', 'en/index.html',
-         'en/deals/index.html', 'en/flights/index.html', 'en/destinations/index.html', 'en/legal/index.html', 'en/tools/index.html', '404.html']
+         'en/deals/index.html', 'en/flights/index.html', 'en/destinations/index.html', 'en/legal/index.html', 'en/tools/index.html', '404.html', 'blog/index.html', 'buscar/index.html', 'en/search/index.html']
 scope += glob.glob('chollos/*/index.html') + glob.glob('chollos/desde/*/index.html') + glob.glob('chollos/desde/*/*/index.html') + glob.glob('chollos/a/*/index.html') + glob.glob('chollos/ideas/*/index.html')
 scope += glob.glob('en/deals/*/index.html') + glob.glob('en/deals/ideas/*/index.html') + glob.glob('destinos/*/index.html') + glob.glob('en/destinations/*/index.html') + glob.glob('herramientas/*/index.html') + glob.glob('en/tools/*/index.html')
 rutas = sorted(glob.glob('vuelos/*/index.html'))

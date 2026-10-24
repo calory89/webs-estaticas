@@ -115,7 +115,7 @@ document.documentElement.classList.add('hlc-js');
       var f=e.target;if(!f||!f.querySelector)return;
       var i=f.querySelector('input[name="s"]');if(!i)return;
       e.preventDefault();var q=(i.value||'').trim();if(!q)return;track('buscar',q);
-      w.location.href='https://www.google.com/search?q='+encodeURIComponent(q+' site:happylowcost.com');
+      w.location.href=T('/buscar/','/en/search/')+'?q='+encodeURIComponent(q);
     },true);
   }
 

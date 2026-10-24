@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><!--hlc-head--><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}(function(){var v=null;try{v=localStorage.getItem('hlc_ck');}catch(e){}if(!v){var m=document.cookie.match(/(?:^|; )hlc_ck=(\w+)/);v=m&&m[1];}var g=v==='granted'?'granted':'denied';gtag('consent','default',{ad_storage:g,analytics_storage:g,ad_user_data:g,ad_personalization:g,wait_for_update:500});gtag('set','ads_data_redaction',g!=='granted');})();</script><link rel="stylesheet" href="/hlc/hlc.css?v=30"><link rel="icon" href="/hlc/brand/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/hlc/brand/icon.svg"><link rel="apple-touch-icon" href="/hlc/brand/icon-180.png"><link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" type="application/rss+xml" title="Happy Low Cost deals" href="/en/deals/feed.xml"><!--/hlc-head-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Search · Happy Low Cost</title>
+<meta name="description" content="Search flight deals, routes, destinations and guides on Happy Low Cost.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.happylowcost.com/en/search/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Happy Low Cost">
+<meta property="og:title" content="Search · Happy Low Cost">
+<meta property="og:description" content="Search flight deals, routes, destinations and guides on Happy Low Cost.">
+<meta property="og:url" content="https://www.happylowcost.com/en/search/">
+<meta property="og:image" content="https://www.happylowcost.com/hlc/brand/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Search · Happy Low Cost">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@happylowcost">
+<meta name="theme-color" content="#FFF8EE">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P57ZNGL');</script>
+<link rel="stylesheet" href="/hlc/home.css?v=9"><link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/search/"><link rel="alternate" hreflang="es" href="https://www.happylowcost.com/buscar/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/buscar/">
+</head>
+<body class="hlc-new search"><!--hlc-header--><header class="hx" id="hx"><div class="hx-in">
+<a class="hx-logo" href="/en/" aria-label="Happy Low Cost, home"><b>happy</b><svg viewBox="0 0 250 46" aria-hidden="true"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FF5A36" stroke-width="11" stroke-linecap="round"/><g transform="translate(214 12) rotate(-24)"><path d="M-2 0 L22 -1 L26 0 L22 1 Z M8 -1 L2 -11 L6 -11 L15 -1 Z M8 1 L2 11 L6 11 L15 1 Z" fill="#FF5A36"/></g></svg><i>low cost</i></a>
+<a class="hx-srch" href="/en/search/" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+<button class="hx-burger" type="button" aria-label="Open menu" aria-expanded="false" onclick="var h=document.getElementById('hx');var o=h.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav class="hx-nav" aria-label="Main">
+<a href="/en/deals/">Today's deals</a>
+<a href="/en/flights/">Flight routes</a>
+<a href="/en/destinations/">Destination guides</a>
+<a class="hx-cta" href="/en/deals/">✈️ Find a deal</a>
+</nav></div></header><!--/hlc-header-->
+<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:860px"><h1 class="x-h1">Search Happy Low Cost</h1><form id="sf" class="sr-f" role="search"><input id="sq" type="search" name="q" autocomplete="off" autofocus placeholder="City, country, airport or topic" aria-label="Search"><button class="hlc-btn" type="submit">Search</button></form><div id="sr" aria-live="polite"></div></div></main><script>(function(){var EN=document.documentElement.lang==='en',T=function(a,b){return EN?b:a;};
+var inp=document.getElementById('sq'),out=document.getElementById('sr'),IDX=null,DEALS=[];
+function sl(s){return String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function score(text,ws){var t=' '+sl(text)+' ',s=0;for(var i=0;i<ws.length;i++){var w=ws[i];if(t.indexOf(' '+w+' ')>=0)s+=3;else if(t.indexOf(' '+w)>=0)s+=2;else if(t.indexOf(w)>=0)s+=1;else return 0;}return s;}
+function grp(h,items,more){if(!items.length)return '';return '<section class="sr-g"><h2>'+h+' <small>'+items.length+'</small></h2><ul>'+items.slice(0,more||8).map(function(x){return '<li><a href="'+esc(x[1])+'">'+x[0]+'</a></li>';}).join('')+'</ul>'+(items.length>(more||8)?'<button type="button" class="hlc-btn o sr-more">'+T('Ver los ','See all ')+items.length+'</button>':'')+'</section>';}
+function run(){var q=inp.value.trim();var ws=sl(q).split(' ').filter(function(w){return w.length>1||/\d/.test(w);});
+try{history.replaceState(null,'',q?'?q='+encodeURIComponent(q):location.pathname);}catch(e){}
+if(!ws.length){out.innerHTML='<p class="sr-hint">'+T('Escribe una ciudad, un país, un aeropuerto o un tema: «Lisboa», «Japón», «Madrid Roma», «equipaje».','Type a city, country, airport or topic: “Lisbon”, “Japan”, “London Rome”, “baggage”.')+'</p>';return;}
+if(!IDX){out.innerHTML='<p class="sr-hint">'+T('Cargando…','Loading…')+'</p>';return;}
+var rank=function(list,fn){return list.map(function(x){return [score(fn(x),ws),x];}).filter(function(a){return a[0]>0;}).sort(function(a,b){return b[0]-a[0];}).map(function(a){return a[1];});};
+var dl=rank(DEALS,function(x){var f=x.facts||{};return [f.origen,f.destino,f.pais,f.origen_pais,f.continente,x.title].join(' ');}).map(function(x){var f=x.facts||{};return ['<b>'+esc(f.origen)+' → '+esc(f.destino)+'</b> · '+esc(x.price)+' €'+(f.ahorro_pct?' <span class="sr-s">−'+esc(f.ahorro_pct)+' %</span>':''),EN?'/en/deals/':(x._u||'/chollos/?q='+encodeURIComponent(sl(f.destino).replace(/ /g,'-')))];});
+var d=rank(IDX.d,function(x){return x[0]+' '+x[2]+' '+x[3];}).map(function(x){return ['<b>'+esc(x[0])+'</b> <small>'+esc(x[2])+'</small>',x[1]];});
+var r=rank(IDX.r,function(x){return x[0];}).map(function(x){return [esc(x[0])+(x[2]?' <small>'+T('desde ','from ')+esc(x[2])+' €</small>':''),x[1]];});
+var g=rank(IDX.g,function(x){return x[0];}).map(function(x){return [esc(x[0]),x[1]];});
+var p=IDX.p?rank(IDX.p.filter(function(x){return !x[3];}),function(x){return x[0];}).map(function(x){return [esc(x[0])+' <small>'+esc(x[2])+'</small>',x[1]];}):[];
+var o=IDX.p?rank(IDX.p.filter(function(x){return x[3];}),function(x){return x[0];}).map(function(x){return [esc(x[0])+' <small>'+esc(x[2])+'</small>',x[1]];}):[];
+var h=grp(T('Chollos de hoy','Today’s deals'),dl,6)+grp(T('Destinos y guías','Destinations'),d)+grp(T('Rutas de vuelo','Flight routes'),r)+grp(T('Herramientas y páginas','Tools and pages'),g)+grp(T('Blog','Blog'),p)+grp(T('Chollos antiguos (caducados)','Old deals (expired)'),o,5);
+out.innerHTML=h||'<div class="dc-empty"><b>'+T('No hemos encontrado nada con «','Nothing found for “')+esc(q)+T('».','”.')+'</b><span>'+T('Prueba con el nombre de la ciudad o del país, o crea una alerta y te avisamos.','Try the city or country name, or create an alert.')+'</span><a class="hlc-btn" href="'+T('/alertas/','/en/deals/')+'">'+T('Crear alerta gratis','See today’s deals')+'</a></div>';
+[].forEach.call(out.querySelectorAll('.sr-more'),function(b){b.addEventListener('click',function(){var s=b.closest('.sr-g'),k=s.querySelector('h2').firstChild.textContent.trim();var all={};all[T('Chollos de hoy','Today’s deals')]=dl;all[T('Destinos y guías','Destinations')]=d;all[T('Rutas de vuelo','Flight routes')]=r;all[T('Herramientas y páginas','Tools and pages')]=g;all.Blog=p;all[T('Chollos antiguos (caducados)','Old deals (expired)')]=o;var it=all[k]||[];s.querySelector('ul').innerHTML=it.slice(0,200).map(function(x){return '<li><a href="'+esc(x[1])+'">'+x[0]+'</a></li>';}).join('');b.remove();});});
+try{(window.dataLayer=window.dataLayer||[]).push({event:'hlc_search',hlc_q:q.slice(0,60)});}catch(e){}}
+var tm;inp.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,150);});
+document.getElementById('sf').addEventListener('submit',function(e){e.preventDefault();run();});
+var q0=new URLSearchParams(location.search).get('q');if(q0)inp.value=q0;run();
+fetch(EN?'/hlc/search-en.json':'/hlc/search-es.json').then(function(r){return r.json();}).then(function(j){IDX=j;run();}).catch(function(){out.innerHTML='<p class="sr-hint">'+T('No se ha podido cargar el buscador.','Search could not load.')+'</p>';});
+var tries=0;(function wait(){if(window.HLC_feed){window.HLC_feed().then(function(l){DEALS=l||[];fetch('/chollos/hechos.json').then(function(r){return r.json();}).then(function(h){DEALS.forEach(function(x){if(h.indexOf(x.slug)>=0)x._u='/chollos/'+x.slug+'/';});run();}).catch(run);});}else if(tries++<40)setTimeout(wait,150);})();
+})();</script><footer class="fx"><div class="fx-in">
+<div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
+<p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
+<div><h4>Deals</h4><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
+<div><h4>Explore</h4><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
+<div><h4>Follow us</h4><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
+</div>
+<div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
+</footer><script src="/hlc/hlc.js?v=30" defer></script></body></html>

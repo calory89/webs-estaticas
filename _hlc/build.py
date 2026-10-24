@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '29'
+V = '30'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -273,6 +273,7 @@ def legacy_seo(t):
         desc = desc[:1].upper() + desc[1:]
         if tm:
             t = re.sub(r'(</title>)', lambda m: m.group(1) + '<meta name="description" content="' + _html.escape(desc) + '">', t, count=1)
+    t = t.replace('https:\\/\\/www.happylowcost.com\\/?s={search_term_string}', 'https:\\/\\/www.happylowcost.com\\/buscar\\/?q={search_term_string}')
     # imágenes sociales con URL absoluta
     t = re.sub(r'(<meta (?:property|name)="(?:og:image|twitter:image)" content=")/', r'\1' + SITE + '/', t)
     # http → https
