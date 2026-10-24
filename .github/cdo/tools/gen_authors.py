@@ -10,7 +10,7 @@ for u in P:
     h=open('.'+u+'index.html').read()
     m=re.search(r'<div class="author-box">(.*?)</div>\s*</div>',h,re.S)
     if not m: continue
-    n=re.search(r'<h4>(.*?)</h4>',m.group(1)); p=re.search(r'<p>\s*(.*?)\s*</p>',m.group(1),re.S)
+    n=re.search(r"<h[24][^>]*>(.*?)</h[24]>",m.group(1)); p=re.search(r'<p>\s*(.*?)\s*</p>',m.group(1),re.S)
     if not n: continue
     name=html.unescape(re.sub('<[^>]+>','',n.group(1))).strip()
     by[name].append(u)

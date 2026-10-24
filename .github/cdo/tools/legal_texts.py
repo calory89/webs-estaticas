@@ -71,7 +71,7 @@ PRIV_EN = """<section class="bl-l" data-l="en" hidden> <div class="lg-meta"><spa
 <p>If something important changes, we will update this page and the date above.</p> </section>"""
 
 COOK_ES = """<section class="bl-l" data-l="es"> <div class="lg-meta"><span>Última actualización: 24 de octubre de 2026</span><span>Versión 2.0</span></div>
-<div class="lg-tldr"><p><b>En pocas líneas</b></p><p>Sin tu permiso, esta web no instala cookies de analítica ni de publicidad. La analítica funciona en modo sin cookies. Si pulsas \"Aceptar\" en el aviso, Microsoft Clarity puede usar sus cookies para medir mejor cómo se usa la web.</p></div>
+<div class="lg-tldr"><p><b>En pocas líneas</b></p><p>Esta web no usa cookies de publicidad. Para medir cómo se usa, carga Microsoft Clarity en modo de consentimiento denegado: sin tu permiso no usa sus cookies de analítica (_clck, _clsk), aunque Microsoft puede crear algunas cookies en su propio dominio (CLID, MUID, SM). Si pulsas \"Aceptar\" en el aviso, Clarity también usa las de analítica.</p></div>
 <h2 id="c1">1. Qué es una cookie</h2>
 <p>Un archivo pequeño que una web guarda en tu navegador para recordar algo. El almacenamiento local del navegador (localStorage) cumple una función parecida y aquí lo tratamos igual.</p>
 <h2 id="c2">2. Qué usamos</h2>
@@ -79,7 +79,7 @@ COOK_ES = """<section class="bl-l" data-l="es"> <div class="lg-meta"><span>Últi
 <tr><td>cdo-consent</td><td>Propia (localStorage)</td><td>Recordar si aceptaste o rechazaste la analítica</td><td>Al elegir en el aviso</td></tr>
 <tr><td>cdo-lang, oh-lang</td><td>Propia (localStorage)</td><td>Recordar tu idioma</td><td>Al cambiar de idioma</td></tr>
 <tr><td>cdo-nl, ory-nl-done, cdo-slide-x, ory-nlbar-x</td><td>Propia (localStorage)</td><td>No volver a ofrecerte la newsletter si ya te apuntaste o la cerraste</td><td>Al apuntarte o cerrar el aviso</td></tr>
-<tr><td>_clck, _clsk, CLID, MUID</td><td>Microsoft Clarity (tercero)</td><td>Analítica de uso: páginas, clics y desplazamiento, de forma agregada</td><td>Solo si aceptas</td></tr>
+<tr><td>_clck, _clsk</td><td>Microsoft Clarity (tercero)</td><td>Analítica de uso: páginas, clics y desplazamiento, de forma agregada</td><td>Solo si aceptas</td></tr><tr><td>CLID, MUID, SM</td><td>Microsoft (tercero, dominio clarity.ms)</td><td>Funcionamiento del servicio de Clarity</td><td>Al cargar la página</td></tr>
 <tr><td>Cloudflare (técnicas, por ejemplo __cf_bm)</td><td>Cloudflare (tercero)</td><td>Seguridad y protección frente a bots</td><td>Cuando hace falta proteger la web</td></tr>
 </tbody></table>
 <p>Cloudflare Web Analytics no usa cookies. Los vídeos de YouTube incrustados se cargan desde youtube-nocookie.com.</p>
@@ -89,7 +89,7 @@ COOK_ES = """<section class="bl-l" data-l="es"> <div class="lg-meta"><span>Últi
 <p>Al pulsar un enlace a otra web, incluidos los de afiliado, esa web decide sus cookies y te pedirá su propio consentimiento. Más detalle en la <a href=\"/politica-de-privacidad/\">política de privacidad</a>.</p> </section>"""
 
 COOK_EN = """<section class="bl-l" data-l="en" hidden> <div class="lg-meta"><span>Last updated: 24 October 2026</span><span>Version 2.0</span></div>
-<div class="lg-tldr"><p><b>In short</b></p><p>Without your permission this site sets no analytics or advertising cookies. Analytics runs in cookieless mode. If you click \"Accept\" in the notice, Microsoft Clarity may use its cookies to measure how the site is used.</p></div>
+<div class="lg-tldr"><p><b>In short</b></p><p>This site uses no advertising cookies. To measure how it is used, it loads Microsoft Clarity in consent-denied mode: without your permission Clarity does not use its analytics cookies (_clck, _clsk), although Microsoft may set some cookies on its own domain (CLID, MUID, SM). If you click \"Accept\" in the notice, Clarity also uses its analytics cookies.</p></div>
 <h2 id="d1">1. What a cookie is</h2>
 <p>A small file a website stores in your browser to remember something. The browser's local storage does a similar job and we treat it the same way.</p>
 <h2 id="d2">2. What we use</h2>
@@ -97,7 +97,7 @@ COOK_EN = """<section class="bl-l" data-l="en" hidden> <div class="lg-meta"><spa
 <tr><td>cdo-consent</td><td>Ours (localStorage)</td><td>Remember whether you accepted or declined analytics</td><td>When you choose in the notice</td></tr>
 <tr><td>cdo-lang, oh-lang</td><td>Ours (localStorage)</td><td>Remember your language</td><td>When you switch language</td></tr>
 <tr><td>cdo-nl, ory-nl-done, cdo-slide-x, ory-nlbar-x</td><td>Ours (localStorage)</td><td>Not offer you the newsletter again once you joined or closed it</td><td>When you join or close the notice</td></tr>
-<tr><td>_clck, _clsk, CLID, MUID</td><td>Microsoft Clarity (third party)</td><td>Usage analytics: pages, clicks and scrolling, in aggregate</td><td>Only if you accept</td></tr>
+<tr><td>_clck, _clsk</td><td>Microsoft Clarity (third party)</td><td>Usage analytics: pages, clicks and scrolling, in aggregate</td><td>Only if you accept</td></tr><tr><td>CLID, MUID, SM</td><td>Microsoft (third party, clarity.ms domain)</td><td>Running the Clarity service</td><td>When the page loads</td></tr>
 <tr><td>Cloudflare (technical, for example __cf_bm)</td><td>Cloudflare (third party)</td><td>Security and bot protection</td><td>When the site needs protecting</td></tr>
 </tbody></table>
 <p>Cloudflare Web Analytics uses no cookies. Embedded YouTube videos load from youtube-nocookie.com.</p>

@@ -41,7 +41,7 @@ async def main():
             posts=''
             for u in urls:
                 h=open(ROOT+u+'index.html').read()
-                au=re.search(r'<div class="author-box">.*?<h4>(?:<a[^>]*>)?([^<]*)',h,re.S)
+                au=re.search(r'<div class="author-box">.*?<h[24][^>]*>(?:<a[^>]*>)?([^<]*)',h,re.S)
                 posts+=f'<section class="post"><h2 class="t">{html.escape(P[u]["h1"])}</h2><div class="meta">{html.escape(P[u]["datefmt"])}{" · "+html.escape(html.unescape(au.group(1))) if au else ""} · carlosdeory.com{u}</div>{clean_entry(h)}</section>'
             doc=(f'<!doctype html><html lang="es"><meta charset="utf-8"><style>{CSS}</style><div class="cover"><div><div class="k">Guía gratis · carlosdeory.com</div><h1>Guía de viaje de {html.escape(name)}</h1>'
                  f'<p style="font:13pt -apple-system,sans-serif;color:#555">{len(urls)} artículos para preparar tu viaje, reunidos en un solo PDF.</p></div>'

@@ -21,7 +21,7 @@
     '.cdo-plan{width:min(100% - (var(--gut,20px) * 2),var(--read,700px));margin:28px auto;border:1px solid #E6E1D8;border-radius:16px;padding:18px 20px;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}' +
     '.cdo-plan p{margin:0 0 12px;font-size:15px;color:#15151A}.cdo-plan p b{font-size:16px}.cdo-plan .r{display:flex;flex-wrap:wrap;gap:8px}' +
     '.cdo-plan a{display:inline-flex;align-items:center;gap:6px;border-radius:100px;padding:9px 15px;font-size:14px;font-weight:700;text-decoration:none!important;border:1px solid #15151A;color:#15151A!important;background:#fff}' +
-    '.cdo-plan small a{display:inline;border:0;padding:0;background:none;font-weight:400;text-decoration:underline!important;color:inherit!important}.cdo-plan a.p{background:#15151A;color:#fff!important}.cdo-plan a:hover{border-color:#C2452D}.cdo-plan small{display:block;margin-top:10px;color:#7C7C8A;font-size:12px}' +
+    '.cdo-plan small a{display:inline;border:0;padding:0;background:none;font-weight:400;text-decoration:underline!important;color:inherit!important}.cdo-plan a.p{background:#15151A;color:#fff!important}.cdo-plan a:hover{border-color:#C2452D}.cdo-plan small{display:block;margin-top:10px;color:#5F5F6B;font-size:12px}' +
     '.cdo-slide{position:fixed;right:16px;bottom:16px;z-index:9990;width:min(360px,calc(100vw - 32px));background:#0E4F49;color:#F4F1EA;border-radius:16px;padding:20px 20px 18px;box-shadow:0 18px 50px rgb(0 0 0 / .25);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;transform:translateY(130%);transition:transform .45s cubic-bezier(.2,.9,.3,1)}' +
     '.cdo-slide.on{transform:none}.cdo-slide h3{margin:0 30px 6px 0;font:700 19px/1.2 Georgia,serif;color:#fff}.cdo-slide p{margin:0 0 12px;font-size:14px;line-height:1.5;color:rgb(244 241 234 / .88)}' +
     '.cdo-slide form{display:flex;gap:8px}.cdo-slide input{flex:1;min-width:0;border:0;border-radius:10px;padding:11px 12px;font-size:15px}.cdo-slide button[type=submit]{border:0;border-radius:10px;padding:0 14px;background:#C2452D;color:#fff;font-weight:700;font-size:14px;cursor:pointer}' +
@@ -153,11 +153,15 @@
   (function () {
     var slug = B.getAttribute('data-guide');
     if (!slug) { var m = (B.className || '').match(/\bcategory-([a-z0-9-]+)\b/); if (m && B.classList.contains('archive')) { slug = m[1]; } }
-    if (!slug || D.querySelector('.cdo-guide-box')) { return; }
-    fetch('/assets/cdo/guias/guias.json').then(function (r) { return r.ok ? r.json() : {}; }).then(function (G) {
+    if (!slug) { return; }
+    var pre = D.querySelector('.cdo-guide-box');
+    var load = pre ? Promise.resolve(null) : fetch('/assets/cdo/guias/guias.json').then(function (r) { return r.ok ? r.json() : {}; });
+    load.then(function (G) {
+      var pdf = '/assets/cdo/guias/guia-' + slug + '.pdf', box;
+      if (pre) { box = pre; if (ls('cdo-nl') === '1' || ls('ory-nl-done')) { var ff = box.querySelector('form'); if (ff) { ff.outerHTML = '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the guide' : 'Descargar la guía') + '</a></div>'; } } }
+      else {
       var g = G[slug]; if (!g) { return; }
-      var pdf = '/assets/cdo/guias/guia-' + slug + '.pdf';
-      var box = el('aside', 'cdo-plan cdo-guide-box');
+      box = el('aside', 'cdo-plan cdo-guide-box');
       var done = ls('cdo-nl') === '1' || ls('ory-nl-done');
       box.innerHTML = '<p><b>' + (EN ? 'Free PDF guide: ' : 'Guía gratis en PDF: ') + esc(g.name) + '</b> ' + (EN ? '(' + g.n + ' articles in one file, to read offline).' : '(' + g.n + ' artículos en un solo archivo, para leer sin conexión).') + '</p>' +
         (done ? '<div class="r"><a class="p" href="' + pdf + '" download>' + (EN ? 'Download the guide' : 'Descargar la guía') + '</a></div>'
@@ -165,6 +169,7 @@
       var anchor = D.querySelector('.cdo-plan:not(.cdo-guide-box)');
       if (anchor) { anchor.parentNode.insertBefore(box, anchor.nextSibling); }
       else { var hero = D.querySelector('.page-hero'); if (hero) { hero.parentNode.insertBefore(box, hero.nextSibling); box.style.margin = '0 auto 30px'; } else { return; } }
+      }
       var f = box.querySelector('form'); if (!f) { return; }
       f.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -185,8 +190,8 @@
     D.addEventListener('click', function (e) { var t = e.target; if (t && t.id === 'ck-yes') { grant(); } }, true);
     if (c || B.classList.contains('home') || D.getElementById('cookie')) { return; }
     var bn = el('div', 'cdo-ck'); bn.setAttribute('role', 'region'); bn.setAttribute('aria-label', 'Cookies');
-    bn.innerHTML = '<p>' + (EN ? '<b>Cookies.</b> This site only uses what it needs to work. With your permission it also uses anonymous analytics to improve. ' : '<b>Cookies.</b> Esta web solo usa lo necesario para funcionar. Con tu permiso también usa analítica anónima para mejorar. ') + '<a href="/politica-de-cookies/">' + (EN ? 'Read more' : 'Más información') + '</a></p><div><button type="button" class="n">' + (EN ? 'Only essential' : 'Solo esenciales') + '</button><button type="button" class="y">' + (EN ? 'Accept' : 'Aceptar') + '</button></div>';
-    D.head.appendChild(el('style', '', '.cdo-ck{position:fixed;left:16px;bottom:16px;z-index:9992;max-width:min(420px,calc(100vw - 32px));background:#15151A;color:#F4F1EA;border-radius:16px;padding:16px 18px;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 18px 50px rgb(0 0 0 / .25)}.cdo-ck p{margin:0 0 12px}.cdo-ck a{color:#F2C14E}.cdo-ck div{display:flex;gap:8px}.cdo-ck button{border-radius:100px;padding:9px 16px;font-weight:700;cursor:pointer;border:1px solid #F4F1EA;background:none;color:#F4F1EA}.cdo-ck .y{background:#F2C14E;border-color:#F2C14E;color:#15151A}'));
+    bn.innerHTML = '<p>' + (EN ? '<b>Cookies.</b> This site only uses what it needs to work. With your permission it also uses anonymous analytics to improve. ' : '<b>Cookies.</b> Esta web solo usa lo necesario para funcionar. Con tu permiso también usa analítica anónima para mejorar. ') + '<a href="/politica-de-cookies/">' + (EN ? 'More about cookies' : 'Más sobre cookies') + '</a></p><div><button type="button" class="n">' + (EN ? 'Only essential' : 'Solo esenciales') + '</button><button type="button" class="y">' + (EN ? 'Accept' : 'Aceptar') + '</button></div>';
+    D.head.appendChild(el('style', '', '.cdo-ck{position:fixed;left:16px;bottom:16px;z-index:9992;max-width:min(420px,calc(100vw - 32px));background:#15151A;color:#F4F1EA;border-radius:16px;padding:16px 18px;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 18px 50px rgb(0 0 0 / .25)}.cdo-ck p{margin:0 0 12px}.cdo-ck a{color:#F2C14E;text-decoration:underline}.cdo-ck div{display:flex;gap:8px}.cdo-ck button{border-radius:100px;padding:9px 16px;font-weight:700;cursor:pointer;border:1px solid #F4F1EA;background:none;color:#F4F1EA}.cdo-ck .y{background:#F2C14E;border-color:#F2C14E;color:#15151A}'));
     B.appendChild(bn);
     bn.querySelector('.y').addEventListener('click', function () { ls('cdo-consent', 'granted'); grant(); bn.remove(); });
     bn.querySelector('.n').addEventListener('click', function () { ls('cdo-consent', 'denied'); bn.remove(); });

@@ -60,6 +60,7 @@ footer.foot{border-top:1px solid var(--line);padding:28px 0 44px;font-size:14px;
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does your team do?", "acceptedAnswer": {"@type": "Answer", "text": "Growth strategy, Meta and Google ads, SEO and content, and funnels with landing pages, email and WhatsApp follow-ups."}}, {"@type": "Question", "name": "How do we start?", "acceptedAnswer": {"@type": "Answer", "text": "With a call to understand your company, your numbers and your goal. Then a plan with priorities and the first campaigns live."}}, {"@type": "Question", "name": "How do you measure results?", "acceptedAnswer": {"@type": "Answer", "text": "By cost per customer, not clicks. Weekly tests and reports: we keep what works and scale it."}}, {"@type": "Question", "name": "Do I need an ad budget?", "acceptedAnswer": {"@type": "Answer", "text": "Not to start. The form asks for your current budget, from no ads yet to more than €5,000 a month, so the plan fits it."}}, {"@type": "Question", "name": "What results have you had?", "acceptedAnswer": {"@type": "Answer", "text": "On our own projects: 300,000+ flights booked through Happy Low Cost deals and 73,500 page views in RealHunt's first three weeks with €0 spent on ads."}}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Carlos de Ory" href="https://www.carlosdeory.com/feed.xml" />
+<link rel="stylesheet" href="/assets/cdo/cdo-boost.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main" data-k="skip">Skip to content</a>
@@ -113,7 +114,7 @@ btn.disabled=true;msg.textContent=t('f_sending');
 fetch('https://oykcsmextclpdnugixqz.supabase.co/functions/v1/cdo-contact',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:name,email:email,company:v('co'),message:'['+location.pathname+']\n'+body,kind:f.getAttribute('data-kind'),lang:window.cdoLang(),consent:true,website:D.getElementById('f-web').value})})
 .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.ok===false)throw new Error('send');});})
 .then(function(){f.reset();msg.textContent=t('f_done');}).catch(function(){msg.textContent=t('f_err');}).then(function(){btn.disabled=false;});});})();</script>
-<script src="/assets/cdo/cdo-boost.js?v=5" defer></script>
+<script src="/assets/cdo/cdo-boost.js?v=6" defer></script>
 <script>(function(){var D=document;function n(id){var v=parseFloat((D.getElementById(id).value||'').replace(',','.'));return isFinite(v)&&v>0?v:0}
 function f(x,d){return x.toLocaleString(D.documentElement.lang==='es'?'es-ES':'en-GB',{maximumFractionDigits:d,minimumFractionDigits:d})}
 function run(){var b=n('cb'),c=n('cc'),r=n('cr')/100,t=n('ct');var vis=c?b/c:0,cus=vis*r,cpa=cus?b/cus:0,roas=b?cus*t/b:0;
