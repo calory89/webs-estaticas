@@ -242,3 +242,23 @@ a.chip{text-decoration:none!important;display:inline-flex;align-items:center}
 .hlc-ck .hlc-btn.o,button.hlc-btn.o{background:#fff!important;color:var(--tinta)!important}
 body.single .inner-post-entry a:not(.hlc-btn),body.single .item-related a,body.single .post-entry a:not(.hlc-btn){color:#1A6CA3}
 body.single time,body.single .post-tags,body.single .post-box-meta-single,body.single .post-box-meta-single span{color:#5F6570!important}
+/* páginas de precios */
+.pm-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.pm-stats div{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:14px 16px}
+.pm-stats b{display:block;font:800 28px/1.1 var(--fd);color:var(--tinta)}.pm-stats span{font-size:14px;color:#4A5468}
+.pm-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:16px;border:1px solid var(--linea);background:#fff}
+.pm-t{width:100%;border-collapse:collapse;font:15px/1.4 var(--fb)}
+.pm-t th,.pm-t td{padding:11px 14px;text-align:left;border-bottom:1px solid #F1E8DA;white-space:nowrap}
+.pm-t thead th{font:700 13px var(--fb);color:#4A5468;background:#FFF8EE}
+.pm-t tbody tr:last-child th,.pm-t tbody tr:last-child td{border-bottom:0}
+.pm-t tbody th a{font-weight:700;color:var(--tinta);text-decoration:none}.pm-t tbody th a:hover{text-decoration:underline}
+.pm-t tr[hidden]{display:none}
+.pm-p{font-weight:800;color:#C93A1C}
+.pm-m td.pm-best{font-weight:800;color:#0B6B45;background:#EAF6EF}
+.pm-note{font-size:14px;color:#4A5468;margin:10px 0 0}
+.pm-q{min-height:48px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;width:100%;max-width:420px;box-sizing:border-box;margin:0 0 12px}
+.pm-links{display:flex;flex-wrap:wrap;gap:10px;margin:22px auto}
+.pm-links a{display:inline-flex;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--linea);font-weight:700;text-decoration:none;color:var(--tinta)}
+.pm-card{display:flex;flex-direction:column;gap:4px;padding:18px 20px;border-radius:18px;background:#fff;border:1px solid var(--linea);text-decoration:none;color:var(--tinta);box-shadow:var(--sh)}
+.pm-card b{font:800 20px var(--fd)}.pm-card span{color:#4A5468}
+.pm-chips{flex-wrap:wrap}

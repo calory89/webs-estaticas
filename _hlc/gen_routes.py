@@ -194,12 +194,16 @@ def main():
                 moved[f"/en/flights/{r['slug']}/"] = f"/en/flights/{sl}/"
                 if os.path.isdir(os.path.join(base, r['slug'])):
                     shutil.rmtree(os.path.join(base, r['slug']))
-    json.dump({r['slug']: r['price_from'] for r in rows}, open('vuelos/rutas.json', 'w'), separators=(',', ':'))
-    import en_names
-    json.dump([[r['slug'], en_slug(r), r['origin'], r['dest'], E.NAMES.get(r['dest_slug'], r['dest']), r['dest_slug'], r['price_from'], (r.get('facts') or {}).get('mediana_ida_y_vuelta_eur')] for r in rows], open('vuelos/rutas-idx.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     for base, en in (('vuelos', False), ('en/flights', True)):
         os.makedirs(base, exist_ok=True)
         open(os.path.join(base, 'index.html'), 'w', encoding='utf-8').write(hub(rows, en))
+    import gen_prices
+    pu_es, pu_en = gen_prices.build(rows, en_slug)
+    urls_es += pu_es
+    urls_en += pu_en
+    json.dump({r['slug']: r['price_from'] for r in rows}, open('vuelos/rutas.json', 'w'), separators=(',', ':'))
+    import en_names
+    json.dump([[r['slug'], en_slug(r), r['origin'], r['dest'], E.NAMES.get(r['dest_slug'], r['dest']), r['dest_slug'], r['price_from'], (r.get('facts') or {}).get('mediana_ida_y_vuelta_eur')] for r in rows], open('vuelos/rutas-idx.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     for name, urls in (('vuelos-sitemap.xml', urls_es), ('flights-sitemap.xml', urls_en)):
         open(name, 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc></url>' for u in urls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()
