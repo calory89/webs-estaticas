@@ -2,3 +2,4 @@
 .author-box h2.ab{margin:0 0 6px;font-size:19px}
 .foot-grid h2.fh{font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin:0 0 16px;font-weight:800;line-height:1.1}
 .cdo-lb{position:fixed;inset:0;z-index:9995;background:rgb(10 10 12 / .92);display:flex;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}.cdo-lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px}.cdo-lb button{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}.entry img{cursor:zoom-in}.entry a img{cursor:pointer}
+.hero>.eyebrow{color:#A93A1C!important}
