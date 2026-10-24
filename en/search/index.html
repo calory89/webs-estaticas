@@ -44,10 +44,10 @@ function run(){var q=inp.value.trim();var ws=sl(q).split(' ').filter(function(w)
 try{history.replaceState(null,'',q?'?q='+encodeURIComponent(q):location.pathname);}catch(e){}
 if(!ws.length){out.innerHTML='<p class="sr-hint">'+T('Escribe una ciudad, un país, un aeropuerto o un tema: «Lisboa», «Japón», «Madrid Roma», «equipaje».','Type a city, country, airport or topic: “Lisbon”, “Japan”, “London Rome”, “baggage”.')+'</p>';return;}
 if(!IDX){out.innerHTML='<p class="sr-hint">'+T('Cargando…','Loading…')+'</p>';return;}
-var rank=function(list,fn){return list.map(function(x){return [score(fn(x),ws),x];}).filter(function(a){return a[0]>0;}).sort(function(a,b){return b[0]-a[0];}).map(function(a){return a[1];});};
+var org='';try{org=sl(localStorage.getItem('hlc_origin')||'');}catch(e){}var rank=function(list,fn,tb){return list.map(function(x,i){return [score(fn(x),ws),x,tb?tb(x):i];}).filter(function(a){return a[0]>0;}).sort(function(a,b){return b[0]-a[0]||a[2]-b[2];}).map(function(a){return a[1];});};
 var dl=rank(DEALS,function(x){var f=x.facts||{};return [f.origen,f.destino,f.pais,f.origen_pais,f.continente,x.title].join(' ');}).map(function(x){var f=x.facts||{};return ['<b>'+esc(f.origen)+' → '+esc(f.destino)+'</b> · '+esc(x.price)+' €'+(f.ahorro_pct?' <span class="sr-s">−'+esc(f.ahorro_pct)+' %</span>':''),EN?'/en/deals/':(x._u||'/chollos/?q='+encodeURIComponent(sl(f.destino).replace(/ /g,'-')))];});
-var d=rank(IDX.d,function(x){return x[0]+' '+x[2]+' '+x[3];}).map(function(x){return ['<b>'+esc(x[0])+'</b> <small>'+esc(x[2])+'</small>',x[1]];});
-var r=rank(IDX.r,function(x){return x[0];}).map(function(x){return [esc(x[0])+(x[2]?' <small>'+T('desde ','from ')+esc(x[2])+' €</small>':''),x[1]];});
+var d=rank(IDX.d,function(x){return x[0]+' '+x[2]+' '+x[3];}).map(function(x){return ['<b>'+esc(x[0])+'</b>'+(x[2]&&x[2]!==x[0]?' <small>'+esc(x[2])+'</small>':''),x[1]];});
+var r=rank(IDX.r,function(x){return x[0];},function(x){return (org&&sl(x[0].split('→')[0])===org?-1e6:0)+(x[2]||1e5);}).map(function(x){return [esc(x[0])+(x[2]?' <small>'+T('desde ','from ')+esc(x[2])+' €</small>':''),x[1]];});
 var g=rank(IDX.g,function(x){return x[0];}).map(function(x){return [esc(x[0]),x[1]];});
 var p=IDX.p?rank(IDX.p.filter(function(x){return !x[3];}),function(x){return x[0];}).map(function(x){return [esc(x[0])+' <small>'+esc(x[2])+'</small>',x[1]];}):[];
 var o=IDX.p?rank(IDX.p.filter(function(x){return x[3];}),function(x){return x[0];}).map(function(x){return [esc(x[0])+' <small>'+esc(x[2])+'</small>',x[1]];}):[];
