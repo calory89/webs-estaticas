@@ -1,7 +1,7 @@
 /* SupportNear service worker.
    Goal: someone installs the app on a library wifi and it still works all week
    with no data. The page itself is cached; map tiles are cached as they are seen. */
-const V = 'sn-v15';
+const V = 'sn-v16';
 const APP = V + '-app';
 const TILES = V + '-tiles';
 // Lo que el usuario ha guardado a proposito para usarlo sin internet.
@@ -35,8 +35,8 @@ self.addEventListener('install', e => {
   // La tabla de emergencias entra en la cache a proposito: es lo unico que hay
   // que poder abrir con el movil sin saldo en mitad de la noche.
   e.waitUntil(caches.open(APP)
-    .then(c => c.addAll(['./', './index.html', './instalar.html', './emergency-numbers.csv']))
-    .catch(() => caches.open(APP).then(c => c.addAll(['./', './index.html'])))
+    .then(c => c.addAll(['./', './instalar', './emergency-numbers.csv']))
+    .catch(() => caches.open(APP).then(c => c.addAll(['./'])))
     .then(() => self.skipWaiting()));
 });
 
@@ -140,7 +140,7 @@ self.addEventListener('fetch', e => {
         // Sin red: la copia guardada vale aunque la URL lleve la huella del build
         // (instalar.html?v=abc123 y instalar.html son la misma pagina).
         .catch(() => caches.match(req, { ignoreSearch: true })
-          .then(r => r || caches.match('./index.html')))
+          .then(r => r || caches.match('./')).then(r => (r && r.redirected) ? new Response(r.body, {status: r.status, statusText: r.statusText, headers: r.headers}) : r))
     );
   }
   // everything else (Overpass, Nominatim) goes straight to the network

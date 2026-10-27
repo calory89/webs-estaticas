@@ -1,7 +1,7 @@
 {
   "name": "SupportNear — free help near you",
   "short_name": "SupportNear",
-  "description": "Free food, a bed for tonight, showers, clothes, doctors and legal help on one map, from wherever you are. No account, 13 languages, works with no signal.",
+  "description": "Free food, a bed for tonight, showers, clothes, doctors and legal help on one map, from wherever you are. No account, 20 languages, works with no signal.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
