@@ -1,0 +1,55 @@
+# Lo que se descarga de OpenStreetMap (gigabytes) y lo que se genera solo.
+# El codigo cabe en unos megas; los datos se vuelven a bajar con fetch_planet.py
+# y todo lo demas lo rehace build.py + pages.py + city_pages.py.
+raw_*.json
+wb_raw.json
+emg_raw.json
+meta.json
+snapshot.json
+all_ids.json
+towns.json
+land_cells.json
+cities_new*.json
+cities300.json
+cities_cc*.json
+cities_need.json
+need_top.json
+empty_cities.json
+legacy_cc.json
+iso2to3.json
+
+# generado
+index.html
+index.full.html
+/c/
+/t/
+/d/
+/l/
+_out/
+_src/
+__pycache__/
+*.pyc
+*.zip
+*.log
+
+# capturas de trabajo
+shot*.png
+m[0-9]-*.png
+p[0-9]*.png
+u[0-9]-*.png
+ig-*.png
+chip-*.png
+brand-*.png
+embed.png
+
+# nunca
+.env
+*.key
+
+# foto de los datos publicados (se baja de la web)
+snapshot_live.json
+/d/
+vendor/*.map
+social/map_*.png
+social/map_*.n
+social/card_*.html

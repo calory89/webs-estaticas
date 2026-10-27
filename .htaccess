@@ -1,0 +1,19 @@
+# El servidor manda todo con Cache-Control de 10 anos. Para las imagenes del mapa
+# eso viene bien, pero para el HTML es un desastre: si manana cambia una cifra,
+# cierra un albergue o se corrige un texto, el navegador de quien ya visito la
+# pagina seguiria ensenando la version vieja durante una decada.
+#
+# El mapa (index.html) se salva porque se pide como directorio, pero prensa.html,
+# incrustar.html e instalar.html no. Aqui se corrige solo para el HTML.
+<IfModule mod_expires.c>
+  <FilesMatch "\.(html|webmanifest)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 0 seconds"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|webmanifest)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+    Header unset Expires
+  </FilesMatch>
+</IfModule>

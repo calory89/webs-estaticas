@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Actualiza tu ficha · SupportNear</title>
+<meta name="description" content="Confirma o corrige en un minuto el horario, el teléfono y las condiciones de tu comedor, albergue, ducha o punto de ayuda en el mapa de SupportNear y en OpenStreetMap.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0B7A63">
+<style>
+:root{--paper:#FBF8F3;--paper-2:#fff;--paper-3:#F3EEE5;--ink:#14110E;--ink-2:#4A443C;--ink-3:#7A7168;--line:#E6DFD3;--brand:#0B7A63;--brand-soft:#E4F2EE;--alert:#C8351B}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:640px;margin:0 auto;padding:22px 18px 60px}
+h1{font-size:26px;line-height:1.15;margin:8px 0 6px}h2{font-size:17px;margin:26px 0 8px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--brand);text-decoration:none}
+.brand i{width:30px;height:30px;border-radius:9px;background:var(--brand);display:inline-grid;place-items:center}.brand svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round}
+.card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 4px}small{color:var(--ink-3);font-weight:400}
+input,textarea,select{width:100%;font:inherit;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper-2)}
+textarea{min-height:80px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips label{margin:0;font-weight:500;border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.chips input{width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:12px;border:1.5px solid var(--brand);background:var(--brand);color:#fff;font:inherit;font-weight:700;cursor:pointer;width:100%;margin-top:16px}
+.btn[disabled]{opacity:.5}
+.ok{background:var(--brand-soft);border-color:#9dcdb8}.err{color:var(--alert)}
+.muted{color:var(--ink-3);font-size:14px}
+.lang{float:right;font-size:13px}.lang a{margin-inline-start:8px}
+</style></head>
+<body><div class="wrap">
+<a class="brand" href="./"><i><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></i>SupportNear</a>
+<div class="lang"><a href="#" data-l="es">ES</a><a href="#" data-l="en">EN</a><a href="#" data-l="fr">FR</a></div>
+<h1 data-t="h1">Actualiza la ficha de tu entidad</h1>
+<p class="muted" data-t="lede">Un minuto. Lo que escribas aquí se envía como nota pública a OpenStreetMap, de donde salen los datos del mapa, y lo revisa una persona. Así queda corregido para todos, no solo para esta web.</p>
+
+<div class="card" id="place"><p class="muted" data-t="loading">Cargando la ficha…</p></div>
+
+<form id="f" class="card" hidden>
+  <h2 data-t="h2">Datos correctos hoy</h2>
+  <label data-t="l.name">Nombre <input name="name"></label>
+  <label><span data-t="l.hours">Horario de atención</span> <small data-t="l.hours2">(por ejemplo: lunes a viernes 9:00–13:00; sábados 10:00–12:00)</small><input name="hours"></label>
+  <label><span data-t="l.phone">Teléfono para el público</span><input name="phone" inputmode="tel"></label>
+  <label><span data-t="l.web">Web</span><input name="website" inputmode="url"></label>
+  <label><span data-t="l.for">Atendéis a</span></label>
+  <div class="chips">
+    <label><input type="checkbox" name="for" value="everyone"><span data-t="c.all">todo el mundo</span></label>
+    <label><input type="checkbox" name="for" value="homeless"><span data-t="c.homeless">personas sin hogar</span></label>
+    <label><input type="checkbox" name="for" value="women"><span data-t="c.women">mujeres</span></label>
+    <label><input type="checkbox" name="for" value="families"><span data-t="c.families">familias</span></label>
+    <label><input type="checkbox" name="for" value="migrants"><span data-t="c.migrants">migrantes y refugiados</span></label>
+    <label><input type="checkbox" name="for" value="youth"><span data-t="c.youth">jóvenes</span></label>
+  </div>
+  <label><span data-t="l.req">Para entrar hace falta</span></label>
+  <div class="chips">
+    <label><input type="radio" name="req" value="open" checked><span data-t="r.open">nada, se entra</span></label>
+    <label><input type="radio" name="req" value="appt"><span data-t="r.appt">cita previa</span></label>
+    <label><input type="radio" name="req" value="ref"><span data-t="r.ref">derivación de servicios sociales</span></label>
+    <label><input type="radio" name="req" value="fee"><span data-t="r.fee">un pago</span></label>
+  </div>
+  <label><span data-t="l.langs">Idiomas en los que atendéis</span> <small data-t="l.langs2">(separados por comas)</small><input name="langs" placeholder="español, árabe, francés"></label>
+  <label><span data-t="l.note">Cualquier otra cosa útil</span> <small data-t="l.note2">(qué hay que llevar, si hay que llegar antes, si ha cerrado…)</small><textarea name="note"></textarea></label>
+  <label><span data-t="l.email">Tu correo</span> <small data-t="l.email2">(opcional, solo para avisarte cuando esté corregido; no se publica)</small><input name="email" inputmode="email"></label>
+  <button class="btn" type="submit" data-t="send">Enviar la actualización</button>
+  <p class="muted" data-t="priv">No hace falta cuenta. La nota se publica en openstreetmap.org con este texto, sin tu correo.</p>
+</form>
+<div class="card ok" id="done" hidden><b data-t="done.h">Recibido, gracias.</b> <span data-t="done.p">La corrección aparecerá en OpenStreetMap en cuanto la revise un voluntario, y en SupportNear en la siguiente actualización mensual del mapa.</span> <a id="doneLink" href="#" rel="noopener" data-t="done.link">Ver la nota</a></div>
+
+<script>
+const T={
+ es:{},
+ en:{h1:'Update your organisation’s listing',lede:'One minute. What you write here is posted as a public note on OpenStreetMap, where the map data comes from, and a person reviews it. That way it is fixed for everyone, not only for this site.',loading:'Loading the listing…',h2:'Correct details today','l.name':'Name','l.hours':'Opening hours','l.hours2':'(e.g. Monday to Friday 9:00–13:00; Saturday 10:00–12:00)','l.phone':'Public phone number','l.web':'Website','l.for':'You serve','c.all':'everyone','c.homeless':'people who are homeless','c.women':'women','c.families':'families','c.migrants':'migrants and refugees','c.youth':'young people','l.req':'To get in you need','r.open':'nothing, walk in','r.appt':'an appointment','r.ref':'a referral from social services','r.fee':'a payment','l.langs':'Languages you speak','l.langs2':'(comma separated)','l.note':'Anything else useful','l.note2':'(what to bring, arrive early, closed down…)','l.email':'Your email','l.email2':'(optional, only to tell you when it is fixed; not published)',send:'Send the update',priv:'No account needed. The note is published on openstreetmap.org with this text, without your email.','done.h':'Received, thank you.','done.p':'The correction appears on OpenStreetMap once a volunteer reviews it, and on SupportNear with the next monthly map update.','done.link':'See the note',notfound:'We could not load this listing. Check the link, or write to rrppspain@gmail.com.',err:'It could not be sent. Try again in a minute, or write to rrppspain@gmail.com.'},
+ fr:{h1:'Mettez à jour la fiche de votre structure',lede:'Une minute. Ce que vous écrivez ici est publié comme note publique sur OpenStreetMap, d’où viennent les données de la carte, et une personne la vérifie. La correction vaut ainsi pour tout le monde, pas seulement pour ce site.',loading:'Chargement de la fiche…',h2:'Informations correctes aujourd’hui','l.name':'Nom','l.hours':'Horaires d’ouverture','l.hours2':'(par ex. lundi à vendredi 9h–13h ; samedi 10h–12h)','l.phone':'Téléphone pour le public','l.web':'Site web','l.for':'Vous accueillez','c.all':'tout le monde','c.homeless':'personnes sans abri','c.women':'femmes','c.families':'familles','c.migrants':'migrants et réfugiés','c.youth':'jeunes','l.req':'Pour entrer il faut','r.open':'rien, entrée libre','r.appt':'un rendez-vous','r.ref':'une orientation des services sociaux','r.fee':'un paiement','l.langs':'Langues parlées','l.langs2':'(séparées par des virgules)','l.note':'Autre chose d’utile','l.note2':'(quoi apporter, arriver tôt, fermé définitivement…)','l.email':'Votre e-mail','l.email2':'(facultatif, seulement pour vous prévenir quand c’est corrigé ; non publié)',send:'Envoyer la mise à jour',priv:'Pas de compte nécessaire. La note est publiée sur openstreetmap.org avec ce texte, sans votre e-mail.','done.h':'Bien reçu, merci.','done.p':'La correction apparaît sur OpenStreetMap dès qu’un bénévole la vérifie, et sur SupportNear à la prochaine mise à jour mensuelle.','done.link':'Voir la note',notfound:'Impossible de charger cette fiche. Vérifiez le lien ou écrivez à rrppspain@gmail.com.',err:'Envoi impossible. Réessayez dans une minute, ou écrivez à rrppspain@gmail.com.'}
+};
+T.es.notfound='No hemos podido cargar esta ficha. Revisa el enlace, o escribe a rrppspain@gmail.com.'; T.es.err='No se ha podido enviar. Prueba en un minuto, o escribe a rrppspain@gmail.com.';
+let L=(new URLSearchParams(location.search).get('lang')||navigator.language||'es').slice(0,2); if(!T[L]) L='es';
+const ES={}; document.querySelectorAll('[data-t]').forEach(e=>ES[e.dataset.t]=e.textContent);
+function setL(l){ L=T[l]?l:'es'; document.documentElement.lang=L; document.querySelectorAll('[data-t]').forEach(e=>{ const v=(T[L]&&T[L][e.dataset.t])||ES[e.dataset.t]; if(v) e.textContent=v; }); }
+document.querySelectorAll('.lang a').forEach(a=>a.onclick=e=>{ e.preventDefault(); setL(a.dataset.l); });
+setL(L);
+const id=(new URLSearchParams(location.search).get('id')||'').trim();
+const m=id.match(/^(node|way|relation)\/(\d{1,12})$/);
+let P=null;
+async function load(){
+  const box=document.getElementById('place');
+  if(!m){ box.innerHTML='<p class="err">'+T[L].notfound+'</p>'; return; }
+  try{
+    const r=await fetch('https://api.openstreetmap.org/api/0.6/'+m[1]+'/'+m[2]+'.json'); if(!r.ok) throw 0;
+    const j=await r.json(); const el=(j.elements||[])[0]; if(!el) throw 0;
+    const t=el.tags||{}; P={el,t};
+    let la=el.lat, lo=el.lon;
+    if(la==null && el.type==='way'){ const r2=await fetch('https://api.openstreetmap.org/api/0.6/way/'+m[2]+'/full.json'); const j2=await r2.json(); const nd=(j2.elements||[]).filter(x=>x.type==='node'); if(nd.length){ la=nd.reduce((a,b)=>a+b.lat,0)/nd.length; lo=nd.reduce((a,b)=>a+b.lon,0)/nd.length; } }
+    P.lat=la; P.lon=lo;
+    const rows=[['Nombre / Name',t.name],['Tipo',t.amenity||t.social_facility||t.shop||t.office||''],['Dirección',[t['addr:street'],t['addr:housenumber'],t['addr:city']].filter(Boolean).join(' ')],['Horario',t.opening_hours],['Teléfono',t.phone||t['contact:phone']],['Web',t.website||t['contact:website']]];
+    box.innerHTML='<h2 style="margin-top:0">'+esc(t.name||id)+'</h2>'+rows.filter(x=>x[1]).map(x=>'<div><b>'+x[0]+':</b> '+esc(x[1])+'</div>').join('')+'<p class="muted"><a href="https://www.openstreetmap.org/'+id+'" rel="noopener">openstreetmap.org/'+id+'</a></p>';
+    const f=document.getElementById('f'); f.hidden=false;
+    f.name.value=t.name||''; f.hours.value=t.opening_hours||''; f.phone.value=t.phone||t['contact:phone']||''; f.website.value=t.website||t['contact:website']||'';
+  }catch(e){ box.innerHTML='<p class="err">'+T[L].notfound+'</p>'; }
+}
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+document.getElementById('f').onsubmit=async e=>{
+  e.preventDefault(); const f=e.target; const b=f.querySelector('button'); b.disabled=true;
+  const fors=[...f.querySelectorAll('input[name=for]:checked')].map(x=>x.value).join(', ');
+  const req=(f.querySelector('input[name=req]:checked')||{}).value||'';
+  const lines=['Update from the organisation itself via supportnear.com/actualizar ('+id+')','',
+    'name: '+f.name.value.trim(), 'opening_hours (as written by them): '+f.hours.value.trim(), 'phone: '+f.phone.value.trim(), 'website: '+f.website.value.trim(),
+    'serves: '+fors, 'access: '+({open:'walk in',appt:'appointment needed',ref:'referral from social services needed',fee:'fee'}[req]||req),
+    'languages: '+f.langs.value.trim(), 'note: '+f.note.value.trim(), '', 'Please update the tags accordingly (opening_hours, phone, website, social_facility:for, language:*). Thank you.'];
+  const text=lines.join('\n');
+  try{
+    const url='https://api.openstreetmap.org/api/0.6/notes.json?lat='+encodeURIComponent((P&&P.lat||0).toFixed(6))+'&lon='+encodeURIComponent((P&&P.lon||0).toFixed(6))+'&text='+encodeURIComponent(text);
+    const r=await fetch(url,{method:'POST'}); if(!r.ok) throw 0;
+    const j=await r.json(); const nid=j&&j.properties&&j.properties.id;
+    // copia para nosotros, si el worker de avisos esta configurado (mismo dominio del meta sn-reports en el index)
+    try{ const em=f.email.value.trim(); const w=localStorage.getItem('sn_reports')||''; if(w) fetch(w+'/claim',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,email:em,note:nid,text})}); }catch(x){}
+    document.getElementById('f').hidden=true; const d=document.getElementById('done'); d.hidden=false; if(nid) document.getElementById('doneLink').href='https://www.openstreetmap.org/note/'+nid; else document.getElementById('doneLink').hidden=true;
+    window.scrollTo(0,0);
+  }catch(err){ b.disabled=false; alert(T[L].err); }
+};
+load();
+</script>
+</div></body></html>

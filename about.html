@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quién está detrás · SupportNear</title>
+<meta name="description" content="SupportNear es un mapa de ayuda gratuita sin ánimo de lucro, hecho por Carlos de Ory con datos de OpenStreetMap. Sin cuenta, sin coste, sin publicidad, sin rastreo.">
+<link rel="canonical" href="https://supportnear.com/about.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SupportNear"><meta property="og:url" content="https://supportnear.com/about.html">
+<meta property="og:title" content="Quién está detrás · SupportNear"><meta property="og:description" content="Un mapa de ayuda gratuita sin ánimo de lucro. Quién lo hace, de dónde salen los datos y qué medimos.">
+<meta property="og:image" content="https://supportnear.com/social.jpg?v=a6ffe875"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:image" content="https://supportnear.com/social.jpg?v=a6ffe875">
+<link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#0B7A63">
+<style>:root{
+  --paper:#FBF8F3; --paper-2:#FFFFFF; --paper-3:#F3EEE5;
+  --ink:#14110E; --ink-2:#4A443C; --ink-3:#7A7168;
+  --line:#E6DFD3; --brand:#0B7A63; --brand-soft:#E4F2EE; --alert:#C8351B;
+  --ui:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  --display:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#0A0E14; --paper-2:#121821; --paper-3:#1A222D;
+    --ink:#F2F5F7; --ink-2:#B3BDC7; --ink-3:#8592A0;
+    --line:#232C38; --brand:#3ECFA9; --brand-soft:#0F2A25; --alert:#FF7A63;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
+  font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 90px}
+a{color:var(--brand)}
+.top{display:flex;align-items:center;gap:11px;padding:26px 0 34px}
+.logo{width:38px;height:38px;border-radius:11px;background:var(--brand);display:grid;place-items:center;flex:none}
+.logo svg{width:21px;height:21px;stroke:var(--paper-2);stroke-width:2.1;fill:none;stroke-linecap:round}
+.top b{font-size:19px;letter-spacing:-.01em}
+.top a{margin-left:auto;font-size:14.5px;font-weight:600;text-decoration:none}
+h1{font-family:var(--display);font-size:clamp(32px,5.4vw,46px);line-height:1.08;
+  letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink-2);margin:0 0 34px;max-width:60ch}
+h2{font-size:22px;letter-spacing:-.015em;margin:44px 0 14px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:16px;margin:26px 0 8px}
+p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}
+p strong,li strong{color:var(--ink)}
+ul,ol{margin:0 0 16px;padding-left:1.2em;color:var(--ink-2)}
+li{margin-bottom:7px;max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 30px}
+.stats div{background:var(--paper-2);padding:16px 18px}
+.stats b{display:block;font-size:27px;line-height:1.1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.stats span{font-size:13px;color:var(--ink-3)}
+.card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 16px}
+.card p:last-child{margin-bottom:0}
+pre{background:var(--paper-3);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.6;margin:0 0 16px}
+code{font-family:var(--mono);font-size:.92em;background:var(--paper-3);padding:1px 5px;border-radius:4px}
+pre code{background:none;padding:0}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:600;
+  text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
+  border-radius:10px;padding:10px 16px;cursor:pointer}
+.btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+figure{margin:0 0 22px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
+figcaption{font-size:13px;color:var(--ink-3);margin-top:7px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){ .two{grid-template-columns:1fr} }
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 18px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:600}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow-x:auto}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-3)}
+.mail{font-family:var(--mono);font-size:15px;color:var(--ink);user-select:all}
+
+section+section{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)} h2{font-size:17px;margin:20px 0 6px} p{line-height:1.7}</style></head>
+<body><div class="wrap"><a class="backlink" href="./">&larr; Abrir el mapa · Open the map</a>
+<section lang="es">
+<h1>Quién está detrás de SupportNear</h1>
+<p class="lede">SupportNear es un proyecto sin ánimo de lucro: un mapa de ayuda gratuita (comida, cama, ducha, ropa, médico, papeles) para quien lo necesita hoy. Sin cuenta, sin coste, sin publicidad, sin rastreo.</p>
+<h2>La persona</h2>
+<p>Lo hace <strong>Carlos de Ory</strong>, emprendedor español, en su tiempo libre y con su propio dinero. No hay empresa detrás, ni inversores, ni subvención, ni patrocinadores. Si un día los hubiera, se dirá aquí.</p>
+<p>Contacto: <a href="mailto:rrppspain@gmail.com">rrppspain@gmail.com</a> · <a href="https://x.com/mrstartups" rel="noopener">@mrstartups</a> · Respondemos en español, inglés y francés.</p>
+<h2>De dónde salen los datos</h2>
+<p>De <a href="https://www.openstreetmap.org" rel="noopener">OpenStreetMap</a>, el mapa libre que mantienen voluntarios de todo el mundo (licencia ODbL), más los teléfonos de emergencia de Wikidata revisados a mano. Hoy: <strong>171,872</strong> sitios en <strong>1,221</strong> ciudades de <strong>166</strong> países. Cuando un dato está mal, se corrige en OpenStreetMap y así lo aprovecha todo el mundo, no solo esta web.</p>
+<h2>Qué medimos</h2>
+<p>Solo recuentos anónimos: visitas, idioma, ciudad y qué se buscó sin encontrarlo. Sin cookies, sin dirección IP, sin identificador del móvil. Si tu navegador pide no ser rastreado, no contamos nada.</p>
+<h2 id="security">Seguridad</h2>
+<p>Si encuentras un fallo de seguridad, escribe a <a href="mailto:rrppspain@gmail.com">rrppspain@gmail.com</a>. No hay cuentas ni datos personales que robar, pero un fallo que enseñe información equivocada a alguien en la calle también es grave para nosotros. (<a href="/.well-known/security.txt">security.txt</a>)</p>
+<h2>Cómo ayudar</h2>
+<p>Comprueba un sitio que conozcas y corrige el horario o el teléfono en OpenStreetMap; imprime el cartel de tu ciudad y pégalo donde haga falta; enséñale la web a alguien que la necesite. Si eres una entidad, puedes <a href="incrustar.html">incrustar el mapa</a> en tu web gratis.</p>
+</section>
+<section lang="en">
+<h1>Who is behind SupportNear</h1>
+<p class="lede">SupportNear is a non-profit project: a map of free help (food, a bed, a shower, clothes, a doctor, paperwork) for whoever needs it today. No account, no cost, no ads, no tracking.</p>
+<h2>The person</h2>
+<p>It is made by <strong>Carlos de Ory</strong>, a Spanish entrepreneur, in his own time and with his own money. There is no company behind it, no investors, no grant, no sponsors. If one day there are, it will be said here.</p>
+<p>Contact: <a href="mailto:rrppspain@gmail.com">rrppspain@gmail.com</a> · <a href="https://x.com/mrstartups" rel="noopener">@mrstartups</a> · We answer in Spanish, English and French.</p>
+<h2>Where the data comes from</h2>
+<p>From <a href="https://www.openstreetmap.org" rel="noopener">OpenStreetMap</a>, the free map maintained by volunteers worldwide (ODbL licence), plus emergency numbers from Wikidata reviewed by hand. Today: <strong>171,872</strong> places in <strong>1,221</strong> cities across <strong>166</strong> countries. When something is wrong, it gets fixed in OpenStreetMap, so everyone benefits, not only this site.</p>
+<h2>What we measure</h2>
+<p>Only anonymous counts: visits, language, city and what was searched without success. No cookies, no IP address, no device identifier. If your browser asks not to be tracked, we count nothing.</p>
+<h2 id="security">Security</h2>
+<p>If you find a security issue, write to <a href="mailto:rrppspain@gmail.com">rrppspain@gmail.com</a>. There are no accounts or personal data to steal, but a bug that shows wrong information to someone on the street is just as serious to us. (<a href="/.well-known/security.txt">security.txt</a>)</p>
+<h2>How to help</h2>
+<p>Check a place you know and fix its hours or phone on OpenStreetMap; print your city poster and put it up where it is needed; show the site to someone who needs it. If you are an organisation, you can <a href="incrustar.html">embed the map</a> on your website for free.</p>
+</section>
+<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</div></body></html>

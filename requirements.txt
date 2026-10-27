@@ -1,0 +1,4 @@
+# lo que hace falta para construir SupportNear (ademas de node, terser y csso-cli)
+qrcode
+pillow
+playwright

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Qué le falta a SupportNear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+
+<style>
+  :root{
+    --paper:#F2F5F3;
+    --card:#FFFFFF;
+    --ink:#0E1A15;
+    --ink-2:#33443C;
+    --muted:#5A6B64;
+    --green:#0D6B57;
+    --green-soft:#CFE3DB;
+    --rust:#9C3D1A;
+    --rust-soft:#EDD5C8;
+    --line:#DCE4E0;
+    --shadow:0 1px 2px rgba(14,26,21,.05), 0 8px 24px -16px rgba(14,26,21,.28);
+
+    --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+    --body:'Source Serif 4',Georgia,'Times New Roman',serif;
+    --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0D1310;
+      --card:#151D19;
+      --ink:#E6EDE9;
+      --ink-2:#BCCAC3;
+      --muted:#93A39B;
+      --green:#45B294;
+      --green-soft:#1E3A31;
+      --rust:#E08355;
+      --rust-soft:#3B2418;
+      --line:#243029;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0D1310;
+    --card:#151D19;
+    --ink:#E6EDE9;
+    --ink-2:#BCCAC3;
+    --muted:#93A39B;
+    --green:#45B294;
+    --green-soft:#1E3A31;
+    --rust:#E08355;
+    --rust-soft:#3B2418;
+    --line:#243029;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.9);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:17px;
+    line-height:1.62;
+    margin:0;
+    padding:0 20px 96px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+
+  /* ---------- cabecera ---------- */
+  header{padding:72px 0 0}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;font-weight:500;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--green);
+    display:flex;gap:10px;align-items:center;margin:0 0 22px;
+  }
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+  h1{
+    font-family:var(--display);font-weight:800;font-size:clamp(38px,6.4vw,62px);
+    line-height:1.02;letter-spacing:-.028em;margin:0 0 8px;text-wrap:balance;
+  }
+  .sub{
+    font-family:var(--display);font-weight:500;font-size:clamp(19px,2.6vw,24px);
+    line-height:1.25;letter-spacing:-.012em;color:var(--muted);margin:0 0 40px;
+    max-width:26ch;text-wrap:balance;
+  }
+
+  .thesis{
+    display:flex;flex-direction:column;gap:18px;
+    border-top:2px solid var(--ink);padding-top:26px;margin-bottom:14px;
+  }
+  .thesis p{margin:0;max-width:66ch}
+  .thesis strong{font-weight:600;color:var(--ink)}
+  .pull{
+    font-family:var(--display);font-weight:600;font-size:22px;line-height:1.3;
+    letter-spacing:-.015em;color:var(--green);max-width:24ch;
+    border-left:3px solid var(--green);padding-left:18px;margin:8px 0;
+  }
+
+  /* ---------- bandas ---------- */
+  .band{margin-top:64px}
+  .band-head{
+    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+    padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:6px;
+  }
+  .band-range{
+    font-family:var(--mono);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;
+    color:var(--paper);background:var(--ink);padding:3px 9px;border-radius:3px;
+  }
+  .band-name{
+    font-family:var(--display);font-weight:700;font-size:clamp(20px,3vw,26px);
+    letter-spacing:-.02em;margin:0;
+  }
+  .band-note{font-size:15.5px;color:var(--muted);margin:0;flex-basis:100%;max-width:60ch;padding-top:2px}
+
+  /* ---------- items ---------- */
+  .item{
+    display:grid;grid-template-columns:82px 1fr;gap:26px;
+    padding:26px 0;border-bottom:1px solid var(--line);
+  }
+  .item:last-child{border-bottom:none}
+
+  .score{padding-top:5px}
+  .score b{
+    display:block;font-family:var(--mono);font-weight:600;font-size:30px;
+    line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--green);
+  }
+  .bar{height:3px;background:var(--green-soft);border-radius:2px;margin-top:9px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--green);border-radius:2px}
+
+  .item.risk .score b{color:var(--rust)}
+  .item.risk .bar{background:var(--rust-soft)}
+  .item.risk .bar i{background:var(--rust)}
+
+  .item h3{
+    font-family:var(--display);font-weight:600;font-size:20.5px;line-height:1.28;
+    letter-spacing:-.017em;margin:0 0 9px;text-wrap:balance;
+  }
+  .item p{margin:0;color:var(--ink-2);max-width:62ch}
+  .item p + p{margin-top:11px}
+  .do{
+    display:block;margin-top:13px;font-family:var(--mono);font-size:13.5px;
+    line-height:1.5;color:var(--ink);background:var(--card);
+    border:1px solid var(--line);border-left:3px solid var(--green);
+    border-radius:0 4px 4px 0;padding:10px 13px;max-width:62ch;box-shadow:var(--shadow);
+  }
+  .item.risk .do{border-left-color:var(--rust)}
+  .do span{color:var(--muted)}
+
+  /* ---------- cierre ---------- */
+  .close{
+    margin-top:72px;background:var(--card);border:1px solid var(--line);
+    border-radius:6px;padding:32px 34px;box-shadow:var(--shadow);
+  }
+  .close h2{
+    font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:-.02em;
+    margin:0 0 16px;
+  }
+  .close ol{margin:0;padding-left:1.15em}
+  .close li{margin-bottom:10px;color:var(--ink-2);max-width:60ch}
+  .close li b{color:var(--ink);font-weight:600}
+  .foot{
+    margin-top:34px;font-family:var(--mono);font-size:12.5px;line-height:1.7;
+    color:var(--muted);border-top:1px solid var(--line);padding-top:18px;
+  }
+
+  @media (max-width:620px){
+    body{font-size:16.5px;padding:0 16px 72px}
+    header{padding-top:48px}
+    .item{grid-template-columns:1fr;gap:14px}
+    .score{display:flex;align-items:center;gap:12px;padding-top:0}
+    .score b{font-size:26px}
+    .bar{flex:1;margin-top:0;max-width:160px}
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    .band,.thesis,.close{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+    .band:nth-of-type(2){animation-delay:.04s}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">SupportNear · 458 ciudades · 128 países</p>
+    <h1>Qué le falta<br>a SupportNear</h1>
+    <p class="sub">22 cosas para salir en prensa y crecer, de la más urgente a la que puede esperar.</p>
+  </header>
+
+  <section class="thesis">
+    <p><strong>Quien usa el mapa y quien lo comparte no son la misma persona.</strong> Alguien que duerme en la calle en Nairobi no va a hacer que esto se viralice. Quien comparte es el trabajador social, el voluntario, el donante, el periodista y el vecino al que le sorprende el dato. Ahora mismo la web está construida entera para el primero y no tiene nada para los segundos.</p>
+
+    <p class="pull">La prensa antes de verificar los datos no es una oportunidad. Es un riesgo.</p>
+
+    <p>Los 34.580 sitios salen de OpenStreetMap y no los ha comprobado nadie. Si un medio publica y alguien va a un albergue que cerró hace dos años, la historia deja de ser <em>«un mapa que ayuda»</em> y pasa a ser <em>«un mapa que manda a gente sin techo a puertas cerradas»</em>. Esa historia se escribe sola y no se borra. Por eso los cuatro primeros puntos de esta lista van antes que cualquier lanzamiento.</p>
+
+    <p>Y una cosa más, dicha claramente: <strong>esta categoría casi nunca se viraliza sola.</strong> Se viraliza pegada a algo — una ola de frío, un informe, una historia personal, un hilo técnico en Hacker News. Lo que se construye es la munición; el disparo depende del día.</p>
+  </section>
+
+  <section class="band">
+    <div class="band-head">
+      <span class="band-range">90–100</span>
+      <h2 class="band-name">Antes de que te escriba un periodista</h2>
+      <p class="band-note">Esto no hace crecer nada. Evita que crecer te salga caro.</p>
+    </div>
+
+    <div class="item risk">
+      <div class="score"><b>98</b><div class="bar"><i style="width:98%"></i></div></div>
+      <div>
+        <h3>Un nombre y una cara detrás del proyecto</h3>
+        <p>Hoy la web es anónima. Ningún periodista publica un proyecto sin alguien a quien citar y fotografiar, y ninguna fundación da dinero a una web sin dueño. Es el bloqueo más barato de quitar y el que más veces mata una historia antes de empezar.</p>
+        <span class="do">Página «Quién está detrás»: tu nombre, por qué lo hiciste, una foto, y un correo que contestas el mismo día.</span>
+      </div>
+    </div>
+
+    <div class="item risk">
+      <div class="score"><b>96</b><div class="bar"><i style="width:96%"></i></div></div>
+      <div>
+        <h3>Verificar una muestra antes de que llegue el tráfico</h3>
+        <p>No hace falta comprobar 34.580 sitios. Hace falta poder decir con la cara seria que los de las ciudades donde vas a lanzar están comprobados. Es trabajo de teléfono, no de código.</p>
+        <span class="do">Llama a 100 sitios de 5 ciudades: comedores y albergues primero. En cada ficha, «comprobado el 12 sep 2026».</span>
+      </div>
+    </div>
+
+    <div class="item risk">
+      <div class="score"><b>92</b><div class="bar"><i style="width:92%"></i></div></div>
+      <div>
+        <h3>Decir de dónde sale cada dato y cuándo se miró</h3>
+        <p>Casi todas las fichas dicen «Hours unknown». Eso hoy parece dejadez. Con una fuente y una fecha visibles pasa a ser honestidad, que es justo lo que un periodista quiere poder escribir sobre ti.</p>
+        <span class="do">En cada ficha: «OpenStreetMap · revisado el —» y un enlace al punto original en OSM.</span>
+      </div>
+    </div>
+
+    <div class="item risk">
+      <div class="score"><b>90</b><div class="bar"><i style="width:90%"></i></div></div>
+      <div>
+        <h3>Entidad legal de verdad</h3>
+        <p>Llamarlo ONG sin estar registrado es lo primero que comprueba un periodista serio y lo primero que te tumba una solicitud de subvención. Una asociación en España es barata y se monta en semanas.</p>
+        <span class="do">Asociación sin ánimo de lucro, CIF, cuenta bancaria. El número de registro, visible en la web.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band-head">
+      <span class="band-range">76–89</span>
+      <h2 class="band-name">Lo que de verdad trae gente</h2>
+      <p class="band-note">Los canales. Sin esto, publicar en un medio da un pico de dos días y se acabó.</p>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>89</b><div class="bar"><i style="width:89%"></i></div></div>
+      <div>
+        <h3>Una página por ciudad que Google pueda leer</h3>
+        <p>«comedor social gratis Madrid», «free showers London», «duchas gratis Barcelona»: eso se busca todos los días, todo el año, y no depende de que ningún medio te haga caso. Hoy SupportNear es una sola página; Google no tiene nada que indexar por ciudad.</p>
+        <p>Tienes 458 ciudades y los datos ya generados en ficheros. Es trabajo mecánico y es, con diferencia, el mayor canal de crecimiento que tienes disponible.</p>
+        <span class="do">458 páginas estáticas: los 20 mejores sitios en texto plano, dirección y horario, y un botón al mapa.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>86</b><div class="bar"><i style="width:86%"></i></div></div>
+      <div>
+        <h3>«Falta un sitio» / «esto ya no existe»</h3>
+        <p>Este es el bucle. Convierte a quien usa el mapa en quien lo arregla, hace que los datos se curen solos en vez de envejecer, y te da el ángulo que a la prensa le encanta: <em>lo mantiene la gente</em>.</p>
+        <p>Además resuelve el punto 96 poco a poco y gratis, que es como se resuelve de verdad.</p>
+        <span class="do">Dos botones en cada ficha. Al principio pueden abrir el editor de OpenStreetMap; no hace falta backend.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>84</b><div class="bar"><i style="width:84%"></i></div></div>
+      <div>
+        <h3>Tres historias de personas reales</h3>
+        <p>La prensa no cubre bases de datos, cubre personas. Tres historias verificadas de alguien que encontró una cama, una ducha o una comida gracias al mapa valen más, para un periodista, que las 34.580 cifras juntas.</p>
+        <span class="do">Pídelas a una entidad que ya atienda gente. Con consentimiento por escrito y, si hace falta, sin apellido.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>82</b><div class="bar"><i style="width:82%"></i></div></div>
+      <div>
+        <h3>Kit de prensa en una URL</h3>
+        <p>Un periodista con dos horas de plazo escribe sobre quien se lo pone fácil. Que no tenga que pedirte nada por correo y esperar.</p>
+        <span class="do">supportnear.com/prensa: logo, capturas, las cifras, un párrafo de 50 palabras, otro de 200, tu foto, tu teléfono.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>80</b><div class="bar"><i style="width:80%"></i></div></div>
+      <div>
+        <h3>Un mapa que se pueda incrustar</h3>
+        <p>Un ayuntamiento, una universidad, una parroquia o un albergue pone el mapa de su ciudad dentro de su propia web. Cada uno es distribución permanente y un enlace que a Google le importa mucho.</p>
+        <span class="do">&lt;iframe src="supportnear.com/embed?city=Sevilla"&gt; y una página que lo explique en cuatro líneas.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>78</b><div class="bar"><i style="width:78%"></i></div></div>
+      <div>
+        <h3>Una alianza con un nombre que la gente reconozca</h3>
+        <p>Cáritas, Cruz Roja, Ejército de Salvación, un banco de alimentos. Una sola te da tres cosas de golpe: credibilidad, datos ya verificados y una frase que el periodista puede citar sin arriesgarse.</p>
+        <span class="do">Empieza por la delegación local de tu ciudad, no por la sede nacional. Contestan.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>76</b><div class="bar"><i style="width:76%"></i></div></div>
+      <div>
+        <h3>Medir, sin rastrear a nadie</h3>
+        <p>Hoy no sabes si lo usa alguien. Y «12.000 personas buscaron ayuda este mes» es exactamente la frase que se convierte en titular. Sin ese número no tienes historia, solo tienes producto.</p>
+        <span class="do">Contador por país y por categoría, sin cookies y sin identificar a nadie. Encaja con la promesa de no rastrear; dilo en la propia web.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band-head">
+      <span class="band-range">56–75</span>
+      <h2 class="band-name">Lo que hace que se queden y que te crean</h2>
+      <p class="band-note">No traen visitas por sí solos. Deciden si la visita sirvió de algo.</p>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>72</b><div class="bar"><i style="width:72%"></i></div></div>
+      <div>
+        <h3>Horarios de verdad, aunque sean pocos</h3>
+        <p>Alguien con hambre a las nueve de la noche necesita saber si abre. «Hours unknown» en casi todas las fichas es, ahora mismo, el mayor agujero de utilidad que tiene el mapa.</p>
+        <span class="do">Comedores y albergues de 10 ciudades. Nada más. Se nota inmediatamente.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>70</b><div class="bar"><i style="width:70%"></i></div></div>
+      <div>
+        <h3>Un momento que se comparta, no un botón de compartir</h3>
+        <p>Nadie comparte una herramienta. Se comparte un dato que sorprende. «A 800 metros de ti hay 6 duchas gratis» es lo que alguien pega en WhatsApp; «Compartir SupportNear» no lo es.</p>
+        <span class="do">Genera una imagen con esa frase y el nombre de la ciudad de quien la comparte.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>68</b><div class="bar"><i style="width:68%"></i></div></div>
+      <div>
+        <h3>Números de emergencia correctos en cada país</h3>
+        <p>El botón rojo tiene que dar el número que funciona en Nairobi, no el de España. Cuesta poco y es exactamente el tipo de detalle que un periodista comprueba antes de publicar.</p>
+        <span class="do">Tabla por código de país, con la fuente de cada número.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>66</b><div class="bar"><i style="width:66%"></i></div></div>
+      <div>
+        <h3>Datos abiertos y una API</h3>
+        <p>«El mayor conjunto de datos abierto de ayuda gratuita en 128 países» es, por sí solo, una historia de periodismo de datos. Y te trae desarrolladores que construyen encima sin que les pagues.</p>
+        <span class="do">Los ficheros ya existen. Solo falta documentarlos y ponerles licencia.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>62</b><div class="bar"><i style="width:62%"></i></div></div>
+      <div>
+        <h3>Qué necesitas para entrar</h3>
+        <p>Quien nunca ha ido a un comedor social no sabe si le van a pedir DNI, cita previa o empadronamiento, y ese miedo hace que no vaya. Un párrafo por país, escrito con una entidad local, ayuda más que 100 sitios nuevos.</p>
+        <span class="do">Empieza por España, Francia, Reino Unido, México y Kenia.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>58</b><div class="bar"><i style="width:58%"></i></div></div>
+      <div>
+        <h3>Que se sepa que funciona sin conexión</h3>
+        <p>La app ya se guarda entera y funciona sin datos. Es una de las mejores cosas que tiene y prácticamente nadie lo sabe, ni los usuarios ni la prensa.</p>
+        <span class="do">Un aviso discreto la primera vez, y una línea en el kit de prensa.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>56</b><div class="bar"><i style="width:56%"></i></div></div>
+      <div>
+        <h3>Accesibilidad revisada de verdad</h3>
+        <p>Lector de pantalla, contraste, navegación con teclado. Es lo correcto, y además en varios países es requisito para que una administración pública pueda enlazarte desde su web.</p>
+        <span class="do">Una auditoría con axe y una pasada real con VoiceOver o NVDA.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band-head">
+      <span class="band-range">30–55</span>
+      <h2 class="band-name">Después</h2>
+      <p class="band-note">Buenas ideas que, hechas antes de tiempo, no rinden.</p>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>50</b><div class="bar"><i style="width:50%"></i></div></div>
+      <div>
+        <h3>Prensa local, en idioma local</h3>
+        <p>Una pieza en el <em>Nation</em> de Kenia o en un diario regional español rinde más que perseguir al <em>Guardian</em>, y además es de donde luego los grandes copian. Los medios nacionales cubren lo que ya se ha publicado abajo.</p>
+        <span class="do">Escribe a 20 redacciones locales de las ciudades donde mejores datos tengas.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>46</b><div class="bar"><i style="width:46%"></i></div></div>
+      <div>
+        <h3>Esperar al día adecuado</h3>
+        <p>La primera ola de frío, un informe de FEANTSA, el día de las personas sin hogar, una crisis de refugiados. Tener el kit listo y no lanzarlo hasta que haya un motivo de actualidad multiplica lo mismo por diez.</p>
+        <span class="do">Ten todo preparado en octubre. Dispara con el primer temporal.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>42</b><div class="bar"><i style="width:42%"></i></div></div>
+      <div>
+        <h3>Lanzamiento coordinado en un solo día</h3>
+        <p>El ángulo técnico funciona muy bien en Hacker News: «un mapa de 128 países en un solo fichero HTML, sin base de datos, que abre en 200 ms». De ahí saltan a los medios generalistas más veces de las que parece.</p>
+        <span class="do">Hacker News y Product Hunt el mismo día, más los Reddit locales de tus mejores ciudades.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="score"><b>34</b><div class="bar"><i style="width:34%"></i></div></div>
+      <div>
+        <h3>SMS o versión de consumo mínimo</h3>
+        <p>Buena parte de la gente a la que sirves tiene un móvil básico o le queda medio giga al mes. Es caro, es lento de montar, y es la clase de detalle que hace que alguien escriba sobre ti. Pero no antes que nada de lo de arriba.</p>
+        <span class="do">Un número al que mandas tu ciudad y te contesta con los 3 sitios más cercanos.</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="close">
+    <h2>Si solo haces cinco cosas</h2>
+    <ol>
+      <li><b>Pon tu nombre y tu cara</b> en la web. Una tarde.</li>
+      <li><b>Llama a 100 sitios</b> de cinco ciudades y marca la fecha en la ficha. Una semana.</li>
+      <li><b>Genera las 458 páginas por ciudad.</b> Es mecánico y es tu único canal que no depende de nadie.</li>
+      <li><b>Añade «falta un sitio» y «esto ya no existe».</b> A partir de ahí los datos mejoran solos.</li>
+      <li><b>Monta el kit de prensa</b> y guárdalo hasta que haya un motivo de actualidad.</li>
+    </ol>
+    <p class="foot">
+      Sobre el titular: el mapa internacional más grande que he encontrado es RefAid, con 41 países.<br>
+      Ask Izzy tiene unos 370.000 servicios, muchos más que nosotros, pero en un solo país.<br>
+      «128 países» aguanta que lo comprueben. «El mapa más grande» no, y si un periodista lo verifica y falla, se cae contigo todo lo demás.
+    </p>
+  </div>
+
+</div>

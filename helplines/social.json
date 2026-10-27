@@ -1,0 +1,661 @@
+{
+ "ES": {
+  "national": [
+   {
+    "n": "012",
+    "label_en": "Regional citizen line, ask for social services",
+    "label_es": "Información de tu comunidad, pide servicios sociales",
+    "label_fr": "Ligne régionale d’information, demandez les services sociaux",
+    "free": false,
+    "h24": false,
+    "url": "https://administracion.gob.es/pag_Home/atencionCiudadana/telefonos-interes.html",
+    "weak": true
+   }
+  ],
+  "cities": {
+   "Madrid": [
+    {
+     "n": "91 480 20 20",
+     "label_en": "SAMUR Social city emergency team",
+     "label_es": "SAMUR Social, emergencia social municipal",
+     "label_fr": "SAMUR Social, urgence sociale municipale",
+     "free": false,
+     "h24": true,
+     "url": "https://gestiona3.madrid.org/bvirtual/BVCM051446.pdf"
+    }
+   ],
+   "Barcelona": [
+    {
+     "n": "900 703 030",
+     "label_en": "CUESB social emergency centre",
+     "label_es": "CUESB, urgencias y emergencias sociales",
+     "label_fr": "CUESB, urgences sociales de Barcelone",
+     "free": true,
+     "h24": true,
+     "url": "https://ajuntament.barcelona.cat/serveissocials/es/canal/urgencies-i-emergencies-socials"
+    }
+   ]
+  }
+ },
+ "FR": {
+  "national": [
+   {
+    "n": "115",
+    "label_en": "Samu social homelessness emergency line",
+    "label_es": "Samu social, urgencia para personas sin hogar",
+    "label_fr": "Samu social, urgence hébergement sans-abri",
+    "free": true,
+    "h24": true,
+    "url": "https://lannuaire.service-public.gouv.fr/centres-contact/R20687"
+   }
+  ],
+  "cities": {}
+ },
+ "GB": {
+  "national": [
+   {
+    "n": "0300 500 0914",
+    "label_en": "StreetLink, connects rough sleepers to help",
+    "label_es": "StreetLink, ayuda a personas que duermen en la calle",
+    "label_fr": "StreetLink, aide aux personnes dormant dans la rue",
+    "free": false,
+    "h24": false,
+    "url": "https://homeless.org.uk/knowledge-hub/how-do-i-help-someone-who-is-sleeping-rough/"
+   },
+   {
+    "n": "0808 800 4444",
+    "label_en": "Shelter free housing and homelessness helpline",
+    "label_es": "Shelter, línea gratuita de vivienda y sinhogarismo",
+    "label_fr": "Shelter, ligne gratuite logement et sans-abrisme",
+    "free": true,
+    "h24": false,
+    "url": "https://england.shelter.org.uk/get_help/helpline"
+   }
+  ],
+  "cities": {}
+ },
+ "IE": {
+  "national": [],
+  "cities": {
+   "Dublin": [
+    {
+     "n": "1800 707 707",
+     "label_en": "Dublin homeless freephone, emergency accommodation",
+     "label_es": "Teléfono gratuito de alojamiento de emergencia, Dublín",
+     "label_fr": "Numéro gratuit hébergement d'urgence, Dublin",
+     "free": true,
+     "h24": false,
+     "url": "https://www.homelessdublin.ie/contact"
+    }
+   ]
+  }
+ },
+ "PT": {
+  "national": [
+   {
+    "n": "144",
+    "label_en": "National social emergency line",
+    "label_es": "Línea nacional de emergencia social",
+    "label_fr": "Ligne nationale d'urgence sociale",
+    "free": true,
+    "h24": true,
+    "url": "https://www.gov.pt/pt/linhas-uteis"
+   }
+  ],
+  "cities": {}
+ },
+ "IT": {
+  "national": [],
+  "cities": {
+   "Roma": [
+    {
+     "n": "800 440 022",
+     "label_en": "Rome social emergency operations room",
+     "label_es": "Sala operativa de emergencia social de Roma",
+     "label_fr": "Salle d'urgence sociale de Rome",
+     "free": true,
+     "h24": true,
+     "url": "https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF38628"
+    }
+   ],
+   "Milano": [
+    {
+     "n": "02 8844 7646",
+     "label_en": "Milan homelessness street alert line",
+     "label_es": "Aviso por personas sin hogar en Milán",
+     "label_fr": "Signalement des sans-abri à Milan",
+     "free": false,
+     "h24": true,
+     "url": "https://www.comune.milano.it/-/milano-aiuta.-riparte-il-piano-freddo-per-i-cittadini-senza-dimora"
+    }
+   ]
+  }
+ },
+ "DE": {
+  "national": [],
+  "cities": {
+   "Berlin": [
+    {
+     "n": "030 690 333 690",
+     "label_en": "Berlin cold bus for homeless people",
+     "label_es": "Autobús del frío para personas sin hogar, Berlín",
+     "label_fr": "Bus du froid pour sans-abri, Berlin",
+     "free": true,
+     "h24": false,
+     "url": "https://www.berlin.de/sen/soziales/besondere-lebenssituationen/wohnungslose/notversorgung/kaeltehilfe-1293250.php"
+    },
+    {
+     "n": "030 34 39 71 40",
+     "label_en": "Berlin cold aid telephone, winter shelter",
+     "label_es": "Teléfono de ayuda invernal, alojamiento Berlín",
+     "label_fr": "Téléphone aide hivernale, hébergement Berlin",
+     "free": true,
+     "h24": false,
+     "url": "https://www.berlin.de/sen/soziales/besondere-lebenssituationen/wohnungslose/notversorgung/kaeltehilfe-1293250.php"
+    }
+   ],
+   "Hamburg": [
+    {
+     "n": "040 428 28 5000",
+     "label_en": "Hamburg hotline to report homeless people",
+     "label_es": "Línea de Hamburgo para avisar de personas sin hogar",
+     "label_fr": "Ligne de Hambourg pour signaler des sans-abri",
+     "free": false,
+     "h24": false,
+     "url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/sozialbehoerde/themen/soziales/obdachlosigkeit/fragen-antworten-42894"
+    }
+   ],
+   "München": [
+    {
+     "n": "089 233 40105",
+     "label_en": "Munich office for homeless people",
+     "label_es": "Oficina municipal para personas sin hogar, Múnich",
+     "label_fr": "Bureau municipal pour sans-abri, Munich",
+     "free": false,
+     "h24": false,
+     "url": "https://stadt.muenchen.de/infos/bestehende_wohnungslosigkeit.html"
+    }
+   ]
+  }
+ },
+ "AT": {
+  "national": [],
+  "cities": {
+   "Wien": [
+    {
+     "n": "01 480 45 53",
+     "label_en": "Vienna cold telephone for homeless people",
+     "label_es": "Teléfono del frío para personas sin hogar, Viena",
+     "label_fr": "Téléphone du froid pour sans-abri, Vienne",
+     "free": false,
+     "h24": true,
+     "url": "https://www.caritas-wien.at/hilfe-angebote/obdach-wohnen/mobile-notversorgung/kaeltetelefon/"
+    }
+   ]
+  }
+ },
+ "CH": {
+  "national": [],
+  "cities": {
+   "Genève": [
+    {
+     "n": "0800 22 22 10",
+     "label_en": "Geneva emergency accommodation solidarity hotline",
+     "label_es": "Línea gratuita de alojamiento de urgencia, Ginebra",
+     "label_fr": "Hotline solidarité hébergement d'urgence, Genève",
+     "free": true,
+     "h24": false,
+     "url": "https://www.geneve.ch/themes/social/precarite-abri/hebergements-urgence"
+    }
+   ]
+  }
+ },
+ "BE": {
+  "national": [],
+  "cities": {
+   "Bruxelles": [
+    {
+     "n": "0800 99 340",
+     "label_en": "Brussels Samusocial emergency shelter line",
+     "label_es": "Samusocial de Bruselas, alojamiento de urgencia",
+     "label_fr": "Samusocial de Bruxelles, mise à l'abri d'urgence",
+     "free": true,
+     "h24": true,
+     "url": "https://samusocial.be/missions-et-dispositifs/la-permanence-telephonique-le-numero-vert-0800-99-340/"
+    }
+   ]
+  }
+ },
+ "NL": {
+  "national": [],
+  "cities": {
+   "Amsterdam": [
+    {
+     "n": "020 555 5996",
+     "label_en": "Amsterdam central access for homeless people",
+     "label_es": "Acceso central para personas sin hogar, Ámsterdam",
+     "label_fr": "Accès central pour sans-abri, Amsterdam",
+     "free": false,
+     "h24": false,
+     "url": "https://www.ggd.amsterdam.nl/vangnet/dakloosheid-toegang/centrale-toegang/"
+    }
+   ],
+   "Den Haag": [
+    {
+     "n": "070 353 72 91",
+     "label_en": "The Hague homeless service desk",
+     "label_es": "Ventanilla para personas sin hogar, La Haya",
+     "label_fr": "Guichet pour sans-abri, La Haye",
+     "free": false,
+     "h24": false,
+     "url": "https://www.denhaag.nl/nl/zorg-en-ondersteuning/daklozenloket-hulp-voor-dakloze-mensen/"
+    }
+   ]
+  }
+ },
+ "PL": {
+  "national": [],
+  "cities": {
+   "Warszawa": [
+    {
+     "n": "987",
+     "label_en": "Free 24h helpline for homeless people",
+     "label_es": "Línea gratuita 24h para personas sin hogar",
+     "label_fr": "Ligne gratuite 24h pour personnes sans abri",
+     "free": true,
+     "h24": true,
+     "url": "https://www.gov.pl/web/uw-mazowiecki/mazowiecka-infolinia-987--pomoc-dla-osob-bezdomnych"
+    }
+   ]
+  }
+ },
+ "RO": {
+  "national": [],
+  "cities": {
+   "București": [
+    {
+     "n": "021 9524",
+     "label_en": "Bucharest social emergency service",
+     "label_es": "Servicio de urgencias sociales de Bucarest",
+     "label_fr": "Service d'urgence sociale de Bucarest",
+     "free": false,
+     "h24": true,
+     "url": "https://www.dgas.ro/project/serviciul-urgente-sociale/"
+    }
+   ]
+  }
+ },
+ "CZ": {
+  "national": [],
+  "cities": {
+   "Praha": [
+    {
+     "n": "+420 778 971 055",
+     "label_en": "Naděje street outreach for homeless people",
+     "label_es": "Equipo de calle Naděje para personas sin hogar",
+     "label_fr": "Maraude Naděje pour personnes sans abri",
+     "free": false,
+     "h24": false,
+     "url": "https://nadeje.cz/praha/phpomocvulicich/"
+    }
+   ]
+  }
+ },
+ "GR": {
+  "national": [
+   {
+    "n": "197",
+    "label_en": "National immediate social support line",
+    "label_es": "Línea nacional de apoyo social inmediato",
+    "label_fr": "Ligne nationale d'aide sociale immédiate",
+    "free": true,
+    "h24": true,
+    "url": "https://oikogeneia.gov.gr/programs/tilefoniki-grammi-amesis-koinonikis-voitheias-197/"
+   }
+  ],
+  "cities": {}
+ },
+ "SE": {
+  "national": [],
+  "cities": {
+   "Stockholm": [
+    {
+     "n": "08-508 40 000",
+     "label_en": "Stockholm social duty officer, emergency shelter",
+     "label_es": "Guardia social de Estocolmo, alojamiento de urgencia",
+     "label_fr": "Permanence sociale de Stockholm, hébergement d'urgence",
+     "free": false,
+     "h24": false,
+     "url": "https://socialtstod.stockholm/stod-till-hemlosa/"
+    }
+   ]
+  }
+ },
+ "DK": {
+  "national": [],
+  "cities": {
+   "København": [
+    {
+     "n": "33 17 33 33",
+     "label_en": "Copenhagen 24-hour social emergency service",
+     "label_es": "Guardia social 24 horas de Copenhague",
+     "label_fr": "Permanence sociale 24h de Copenhague",
+     "free": false,
+     "h24": true,
+     "url": "https://www.kk.dk/borger/udsatte-og-socialpsykiatri/hjemloese/bekymret-for-en-hjemloes"
+    }
+   ]
+  }
+ },
+ "FI": {
+  "national": [],
+  "cities": {
+   "Helsinki": [
+    {
+     "n": "0206 96006",
+     "label_en": "Helsinki emergency social services, round the clock",
+     "label_es": "Servicios sociales de urgencia de Helsinki, 24 horas",
+     "label_fr": "Services sociaux d'urgence d'Helsinki, 24h/24",
+     "free": false,
+     "h24": true,
+     "url": "https://www.hel.fi/en/health-and-social-services/social-support-and-financial-assistance/guidance-and-advice/emergency-social-services"
+    }
+   ]
+  }
+ },
+ "US": {
+  "national": [
+   {
+    "n": "211",
+    "label_en": "211 free helpline for housing and food",
+    "label_es": "211, línea gratuita de vivienda y comida",
+    "label_fr": "211, ligne gratuite logement et alimentation",
+    "free": true,
+    "h24": true,
+    "url": "https://www.unitedway.org/our-impact/community-resiliency/211-connecting-people-to-local-resources"
+   }
+  ],
+  "cities": {}
+ },
+ "CA": {
+  "national": [
+   {
+    "n": "211",
+    "label_en": "211 free helpline for shelter and food",
+    "label_es": "211, línea gratuita de albergue y comida",
+    "label_fr": "211, ligne gratuite hébergement et alimentation",
+    "free": true,
+    "h24": true,
+    "url": "http://211.ca/about/"
+   }
+  ],
+  "cities": {}
+ },
+ "MX": {
+  "national": [],
+  "cities": {
+   "Ciudad de México": [
+    {
+     "n": "55 5658 1111",
+     "label_en": "Locatel, 24-hour city social assistance line",
+     "label_es": "Locatel, atención social 24 horas de la ciudad",
+     "label_fr": "Locatel, aide sociale municipale 24h/24",
+     "free": false,
+     "h24": true,
+     "url": "https://infocdmx.org.mx/personasituacioncalle/"
+    }
+   ]
+  }
+ },
+ "AR": {
+  "national": [],
+  "cities": {
+   "Buenos Aires": [
+    {
+     "n": "108",
+     "label_en": "Immediate social assistance for street homelessness",
+     "label_es": "Atención social inmediata, personas en situación de calle",
+     "label_fr": "Aide sociale immédiate pour personnes à la rue",
+     "free": true,
+     "h24": true,
+     "url": "https://www.buenosaires.gob.ar/desarrollohumanoyhabitat/linea-108-atencion-social-inmediata"
+    },
+    {
+     "n": "0800 666 7232",
+     "label_en": "Buenos Aires Province street homelessness line",
+     "label_es": "Línea provincial para personas en situación de calle",
+     "label_fr": "Ligne provinciale pour personnes à la rue",
+     "free": true,
+     "h24": true,
+     "url": "https://www.gba.gob.ar/desarrollo_de_la_comunidad/noticias/l%C3%ADnea_gratuita_de_atenci%C3%B3n_para_personas_en_situaci%C3%B3n_de_calle"
+    }
+   ]
+  }
+ },
+ "CL": {
+  "national": [
+   {
+    "n": "800 104 777",
+    "label_en": "Fono Calle, help for street homelessness",
+    "label_es": "Fono Calle, ayuda a personas en situación de calle",
+    "label_fr": "Fono Calle, aide aux personnes à la rue",
+    "free": true,
+    "h24": false,
+    "url": "https://codigoazul.ministeriodesarrollosocial.gob.cl/como-ayudar"
+   }
+  ],
+  "cities": {}
+ },
+ "CO": {
+  "national": [],
+  "cities": {
+   "Bogotá": [
+    {
+     "n": "195",
+     "label_en": "Bogotá city line, social services referral",
+     "label_es": "Línea 195 de Bogotá, orientación a servicios sociales",
+     "label_fr": "Ligne 195 de Bogota, orientation services sociaux",
+     "free": false,
+     "h24": true,
+     "url": "https://bogota.gov.co/servicios/canales-de-servicio-la-ciudadania-en-bogota/linea-195"
+    }
+   ]
+  }
+ },
+ "BR": {
+  "national": [
+   {
+    "n": "100",
+    "label_en": "Disque 100, human rights and street population",
+    "label_es": "Disque 100, derechos humanos y población en calle",
+    "label_fr": "Disque 100, droits humains et personnes à la rue",
+    "free": true,
+    "h24": true,
+    "url": "https://agenciagov.ebc.com.br/noticias/202609/pessoas-em-situacao-de-rua-saiba-como-acessar-servicos-publicos-e-onde-buscar-atendimento"
+   }
+  ],
+  "cities": {
+   "São Paulo": [
+    {
+     "n": "156",
+     "label_en": "São Paulo 24-hour social outreach service",
+     "label_es": "Atención social en calle 24 horas, São Paulo",
+     "label_fr": "Maraude sociale 24h/24, São Paulo",
+     "free": true,
+     "h24": true,
+     "url": "https://prefeitura.sp.gov.br/w/noticia/saiba-como-ajudar-pessoas-em-situacao-de-rua-nos-dias-frios"
+    }
+   ]
+  }
+ },
+ "UY": {
+  "national": [
+   {
+    "n": "0800 8798",
+    "label_en": "MIDES line for people living on the street",
+    "label_es": "Línea MIDES para personas en situación de calle",
+    "label_fr": "Ligne MIDES pour personnes vivant dans la rue",
+    "free": true,
+    "h24": false,
+    "url": "https://www.gub.uy/presidencia/comunicacion/noticias/mides-recuerda-poblacion-linea-gratuita-0800-8798-para-llamar-ante-casos"
+   }
+  ],
+  "cities": {}
+ },
+ "AU": {
+  "national": [],
+  "cities": {
+   "Sydney": [
+    {
+     "n": "1800 152 152",
+     "label_en": "Link2home NSW homelessness line, 24 hours",
+     "label_es": "Link2home NSW, línea de sinhogarismo 24 horas",
+     "label_fr": "Link2home NSW, ligne sans-abrisme 24h/24",
+     "free": true,
+     "h24": true,
+     "url": "https://www.nsw.gov.au/housing-and-construction/if-you-need-emergency-accommodation"
+    }
+   ],
+   "Melbourne": [
+    {
+     "n": "1800 825 955",
+     "label_en": "Victoria after-hours homelessness and crisis accommodation",
+     "label_es": "Victoria, alojamiento de crisis fuera de horario",
+     "label_fr": "Victoria, hébergement de crise hors horaires",
+     "free": true,
+     "h24": false,
+     "url": "https://services.dffh.vic.gov.au/getting-help"
+    }
+   ],
+   "Brisbane": [
+    {
+     "n": "1800 474 753",
+     "label_en": "Queensland Homeless Hotline, 24 hours",
+     "label_es": "Línea de sinhogarismo de Queensland, 24 horas",
+     "label_fr": "Ligne sans-abrisme du Queensland, 24h/24",
+     "free": true,
+     "h24": true,
+     "url": "https://www.qld.gov.au/housing/emergency-temporary-housing/homeless-persons-information-qld"
+    }
+   ]
+  }
+ },
+ "NZ": {
+  "national": [
+   {
+    "n": "0800 559 009",
+    "label_en": "Work and Income emergency housing line",
+    "label_es": "Línea de vivienda de emergencia, Work and Income",
+    "label_fr": "Ligne logement d'urgence, Work and Income",
+    "free": true,
+    "h24": false,
+    "url": "https://www.workandincome.govt.nz/housing/nowhere-to-stay/emergency-housing/apply.html"
+   }
+  ],
+  "cities": {}
+ },
+ "IN": {
+  "national": [],
+  "cities": {
+   "Delhi": [
+    {
+     "n": "14461",
+     "label_en": "DUSIB toll-free night shelter helpline",
+     "label_es": "Línea gratuita de albergues nocturnos, Delhi",
+     "label_fr": "Ligne gratuite hébergements de nuit, Delhi",
+     "free": true,
+     "h24": false,
+     "url": "https://delhishelterboard.in/main/"
+    }
+   ]
+  }
+ },
+ "PH": {
+  "national": [
+   {
+    "n": "(02) 8962 2813",
+    "label_en": "DSWD crisis assistance for individuals",
+    "label_es": "DSWD, ayuda a personas en situación de crisis",
+    "label_fr": "DSWD, aide aux personnes en situation de crise",
+    "free": false,
+    "h24": false,
+    "url": "https://aics.dswd.gov.ph/contact-us/"
+   }
+  ],
+  "cities": {}
+ },
+ "JP": {
+  "national": [],
+  "cities": {
+   "Tokyo": [
+    {
+     "n": "0120 874 225",
+     "label_en": "TOKYO Challenge Net, housing and living advice",
+     "label_es": "TOKYO Challenge Net, asesoría de vivienda y vida",
+     "label_fr": "TOKYO Challenge Net, conseil logement et vie",
+     "free": true,
+     "h24": false,
+     "url": "https://www.fukushi.metro.tokyo.lg.jp/seikatsu/teisyotokusyataisaku/tokyochallenge"
+    }
+   ]
+  }
+ },
+ "KR": {
+  "national": [
+   {
+    "n": "129",
+    "label_en": "Health and welfare call centre, emergency support",
+    "label_es": "Centro de bienestar 129, apoyo urgente",
+    "label_fr": "Centre d'aide sociale 129, soutien d'urgence",
+    "free": true,
+    "h24": false,
+    "url": "https://www.129.go.kr/counsel/counsel01.do"
+   }
+  ],
+  "cities": {}
+ },
+ "TR": {
+  "national": [
+   {
+    "n": "183",
+    "label_en": "Alo 183 social support line",
+    "label_es": "Alo 183, línea de apoyo social",
+    "label_fr": "Alo 183, ligne de soutien social",
+    "free": true,
+    "h24": true,
+    "url": "https://www.aile.gov.tr/sss/engelli-ve-yasli-hizmetleri-genel-mudurlugu/alo-183-sosyal-destek/"
+   }
+  ],
+  "cities": {}
+ },
+ "RU": {
+  "national": [],
+  "cities": {
+   "Москва": [
+    {
+     "n": "+7 499 357-01-80",
+     "label_en": "Moscow Social Patrol for homeless people",
+     "label_es": "Patrulla Social de Moscú para personas sin hogar",
+     "label_fr": "Patrouille sociale de Moscou pour sans-abri",
+     "free": false,
+     "h24": true,
+     "url": "https://www.mos.ru/otvet-socialnaya-podderjka/kak-pomoch-bezdomnomu/"
+    }
+   ]
+  }
+ },
+ "IL": {
+  "national": [
+   {
+    "n": "118",
+    "label_en": "Ministry of Welfare hotline, social support",
+    "label_es": "Línea del Ministerio de Bienestar, apoyo social",
+    "label_fr": "Ligne du ministère du Bien-être, aide sociale",
+    "free": true,
+    "h24": true,
+    "url": "https://www.kolzchut.org.il/he/%D7%9E%D7%95%D7%A7%D7%93_%D7%A8%D7%95%D7%95%D7%97%D7%94"
+   }
+  ],
+  "cities": {}
+ }
+}

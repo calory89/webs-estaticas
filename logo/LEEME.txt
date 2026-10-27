@@ -1,0 +1,29 @@
+SupportNear · logo
+==================
+
+Marca (icono): cuadrado verde redondeado con un pin blanco y una cruz.
+Verde SupportNear: #0B7A63   (RGB 11, 122, 99)
+Tinta:            #14110E
+Papel:            #FAF7F2
+
+Ficheros
+--------
+supportnear-mark.svg            marca en color, fondo transparente (vectorial, escala sin perder)
+supportnear-mark-square.svg     marca con esquinas rectas (para redes que recortan en circulo/cuadrado)
+supportnear-mark-white.svg      marca en blanco (para fondos oscuros o de color)
+supportnear-mark-black.svg      marca en negro (para impresion a una tinta)
+supportnear-mark-green.svg      pin verde sin cuadrado (para fondos claros)
+supportnear-mark-256/512/1024/2048.png   la marca en PNG, fondo transparente
+supportnear-wordmark*.svg/.png  marca + nombre "SupportNear" (normal, sobre fondo claro, sobre fondo oscuro)
+favicon.ico, icon-48.png        iconos de navegador (ya puestos en la web)
+supportnear-social-1200x630.png la tarjeta que sale al compartir el enlace (WhatsApp, X, LinkedIn, Facebook)
+
+Reglas
+------
+- Espacio libre alrededor: al menos la mitad del ancho de la marca.
+- Tamano minimo: 24 px en pantalla, 8 mm en papel.
+- No estirar, no girar, no cambiar el verde, no anadir sombras.
+- Sobre foto o color: usar la version blanca.
+
+Perfil de redes: supportnear-mark-1024.png (cuadrada, fondo transparente)
+Cabecera de X/LinkedIn: supportnear-wordmark-dark-bg-2480.png o -light-bg-
