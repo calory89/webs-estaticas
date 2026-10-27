@@ -22,7 +22,7 @@ try: SV = '?v=' + _hl.sha1(open('social.jpg','rb').read()).hexdigest()[:8]
 except Exception: SV = PV
 
 
-RTL = {'ar', 'fa', 'ur'}
+RTL = {'ar', 'fa', 'ur', 'ps'}
 LANGS = [l['code'] for l in
          [{'code': c} for c in re.findall(r"code:'(\w+)'",
           re.search(r'const LANGS = \[(.*?)\n\];', h, re.S).group(1))]]
@@ -30,7 +30,7 @@ LANGS = [l['code'] for l in
 # Los numeros se escriben como se escriben en cada idioma.
 def places(lang):
     n = ST['places']
-    if lang in ('es', 'pt', 'ro', 'ar', 'fa', 'ur', 'pl'):
+    if lang in ('es', 'pt', 'ro', 'ar', 'fa', 'ur', 'pl', 'tr'):
         return format(n, ',d').replace(',', '.')
     if lang in ('fr', 'ru', 'uk'):
         return format(n, ',d').replace(',', ' ')
@@ -106,9 +106,9 @@ var FB = {wo:'fr', bm:'fr'};
 function apply(l){
   if(!T[l]) l = 'en';
   var d = document.documentElement;
-  /* En wolof y bambara los textos son los franceses: se declara frances para que
-     un lector de pantalla no intente leerlos como si fueran otra lengua. */
-  d.lang = FB[l] || l;
+  /* Desde la ronda 19 los 20 idiomas tienen sus textos (wolof y bambara ya no
+     son los franceses), asi que se declara el idioma de verdad. */
+  d.lang = l;
   d.dir = RTL.indexOf(l) > -1 ? 'rtl' : 'ltr';
   var t = T[l];
   document.querySelectorAll('[data-t]').forEach(function(e){

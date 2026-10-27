@@ -73,3 +73,19 @@ comprueba byte a byte contra el fichero local. Nunca Lovable.
   existe ya no abre otra ciudad (deja el nombre en el buscador). `indexnow.py`
   envia en tandas de 1.000 (con 7.000 de golpe IndexNow responde 403) y
   `urls_all.txt` sale del sitemap publicado (URLs sin `.html`).
+
+## Ronda 19 (27-oct-2026)
+- `faq.a8` dice la verdad (lo paga Carlos de Ory de su bolsillo; sin
+  subvenciones ni patrocinadores), igual que `/about`, en los 20 idiomas.
+- `/prensa`, `/incrustar` e `/instalar` en los 20 idiomas (`i18n_pages.py`,
+  bloques «Ronda 19»); `pages.py` declara el idioma real (wo/bm ya no son fr) y
+  el pastun va de derecha a izquierda.
+- Tiendas solidarias: la etiqueta dice que venden barato y no son gratis. Quitarlas
+  del mapa (17.835 sitios) es decision de Carlos (`build.py` ya las quita al rehacer los datos).
+- `notHelp()` en la app quita lo que no es ayuda y sigue en los datos publicados
+  (comedor historico, sindicatos, fraternidad, piscinas puestas como duchas).
+- Teselas: si una tesela de Esri tarda mucho con la red bien, se pide a OSM.
+- Movil apaisado: el sitio elegido se centra en la parte del mapa que se ve.
+- Cloudflare: Email Address Obfuscation desactivado en la zona. HSTS
+  includeSubDomains NO: ftp/imap/mail/pop/smtp siguen apuntando al servidor viejo
+  sin HTTPS valido.
