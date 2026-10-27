@@ -37,6 +37,16 @@
 - [Lesson 9: Ethics and independence](https://kolaboro.com/academy/9/)
 - [Lesson 10: Working with buyers](https://kolaboro.com/academy/10/)
 - [Agent entry exam](https://kolaboro.com/academy/exam/)
+- [Demo: a Kolaboro check in 30 seconds](https://kolaboro.com/demo/)
+- [Contract first pass for off-plan buyers](https://kolaboro.com/tools/contract-scan/)
+- [Off-plan payment plan checker](https://kolaboro.com/tools/payment-plan/)
+- [Developer self-check: estimate your Trust Score](https://kolaboro.com/developers/self-check/)
+- [About Kolaboro](https://kolaboro.com/about/)
+- [Roadmap](https://kolaboro.com/roadmap/)
+- [Changelog](https://kolaboro.com/changelog/)
+- [Press kit](https://kolaboro.com/press/)
+- [Glossary for buying property abroad](https://kolaboro.com/glossary/)
+- [Pricing](https://kolaboro.com/pricing/)
 
 ## Facts
 - Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
