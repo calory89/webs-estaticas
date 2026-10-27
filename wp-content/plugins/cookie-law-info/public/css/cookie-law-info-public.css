@@ -121,3 +121,5 @@
 .cli-plugin-main-link.cli-plugin-button {
 	margin-left: 5px;
 }
+
+/* 27-oct-2026 CLS saluddiez (0,39 -> 0,07): altura reservada al carrusel, cabecera movil fija y aviso de cookies flotando */.featured-area{min-height:272px}@media(max-width:767px){.inner-header{height:123px!important;overflow:hidden}}#cookie-law-info-bar{position:fixed!important;bottom:0!important;top:auto!important}
