@@ -82,6 +82,13 @@ def gyg_transfer(city=None, lang='es', checkin=None):
     return gyg(q, lang, checkin, None, 'happylowcost-traslado')
 
 
+# ---------- DiscoverCars (alquiler de coches, afiliado directo happylowcost) ----------
+def dc(lang='es', sid='happylowcost'):
+    """Enlace de afiliado de DiscoverCars (Post Affiliate Pro: a_aid + data1 como subid)."""
+    base = 'https://www.discovercars.com/es' if lang == 'es' else 'https://www.discovercars.com/'
+    return f'{base}?{urlencode({"a_aid": "happylowcost", "data1": sid})}'
+
+
 _OLD_ATTR = re.compile(r'https://www\.kqzyfj\.com/click-101900924-17288984\?[^"\'\s<>]*')
 _OLD_TAXI = re.compile(r'https://www\.kqzyfj\.com/click-101900924-17322565\?[^"\'\s<>]*')
 

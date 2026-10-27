@@ -11,7 +11,7 @@ document.documentElement.classList.add('hlc-js');
   var L={
     vuelos: CJ(AID.flight,'https://www.booking.com/flights/index.es.html'),
     hoteles: CJ(AID.hotel,'https://www.booking.com/index.es.html'),
-    coches: CJ(AID.car,'https://www.holidayautos.com/es/'),
+    coches: 'https://www.discovercars.com/'+(EN?'':'es')+'?a_aid=happylowcost&data1=happylowcost-box',
     tours: CJ(EN?'15084019':'15084034',EN?'https://www.getyourguide.com/':'https://www.getyourguide.es/'),
     traslados: CJ(EN?'15084019':'15084034',EN?'https://www.getyourguide.com/s/?q=airport%20transfer':'https://www.getyourguide.es/s/?q=traslado%20aeropuerto'),
     paris: CJ(AID.paris,'https://www.pariscityvision.com/es')

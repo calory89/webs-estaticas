@@ -96,6 +96,7 @@ def page(r, lang, others):
 <a class="hlc-btn t" href="{e(G.BK.with_dates(hotel_link(r["dest"], en), f.get("ejemplo_ida"), f.get("ejemplo_vuelta")))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_hotel" data-tvcity="{e(dest)}">🏨 {L("Hoteles en", "Hotels in")} {e(dest)}</a>
 <a class="hlc-btn g" href="{e(G.BK.gyg(dest, "en" if en else "es", f.get("ejemplo_ida"), f.get("ejemplo_vuelta"), "happylowcost-rutas"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_gyg">🎟️ {L("Qué hacer en", "Things to do in")} {e(dest)}</a>
 <a class="hlc-btn o" href="{e(G.BK.gyg_transfer(dest, "en" if en else "es", f.get("ejemplo_ida")))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_traslado">🚕 {L("Traslado del aeropuerto", "Airport transfer")}</a>
+<a class="hlc-btn o" href="{e(G.BK.dc("en" if en else "es", "happylowcost-rutas"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_coche">🚗 {L("Alquiler de coche en", "Car hire in")} {e(dest)}</a>
 {"" if en else f'<a class="hlc-btn s" href="/alertas/?d={quote(r["dest"])}">🔔 Avísame si baja de precio</a>'}
 {guide_btn}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(when)}</div>

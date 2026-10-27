@@ -112,7 +112,7 @@ def quick_form(idx):
 
 _IDEAS = [('fin-de-semana', '🧳 Escapadas de fin de semana'), ('menos-de-50-euros', '💶 Menos de 50 €'), ('menos-de-100-euros', '💶 Menos de 100 €'), ('larga-distancia', '🌏 Larga distancia'),
           ('directos', '✈️ Solo directos'), ('puente-diciembre-2026', '🗓️ Puente de diciembre'), ('navidad-2026', '🎄 Navidad 2026'), ('semana-santa-2027', '🌸 Semana Santa 2027')]
-IDEAS_CHIPS = ''.join(f'<a class="chip" href="/chollos/ideas/{k}/">{n}</a>' for k, n in _IDEAS) + '<a class="chip" href="/herramientas/">🧰 Herramientas</a>'
+IDEAS_CHIPS = ''.join(f'<a class="chip" href="/chollos/ideas/{k}/">{n}</a>' for k, n in _IDEAS) + '<a class="chip" href="/herramientas/">🧰 Herramientas</a>' + '<a class="chip" href="https://www.discovercars.com/es?a_aid=happylowcost&amp;data1=happylowcost-home" target="_blank" rel="sponsored nofollow noopener" data-hlc="home_coche">🚗 Alquiler de coches</a>'
 home = head(title='Happy Low Cost · Vuelos a mitad de precio desde tu aeropuerto',
             desc='Cazamos errores de tarifa y vuelos baratos desde tu aeropuerto y te avisamos gratis por email o WhatsApp. Más de 420.000 viajeros desde 2012.',
             canonical='https://www.happylowcost.com/', extra_head=home_extra, body_class='home home2')

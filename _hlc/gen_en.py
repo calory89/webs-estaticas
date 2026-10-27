@@ -87,7 +87,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=41" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=42" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -268,6 +268,7 @@ def main():
 <a class="hlc-btn t" href="{e(ht)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel_en" data-tvcity="{e(d)}">🏨 Hotels in {e(d)} for these dates</a>
 <a class="hlc-btn g" href="{e(G.BK.gyg(d, 'en', f.get('ida'), f.get('vuelta'), 'happylowcost-en'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_gyg_en">🎟️ Things to do in {e(d)}: tours and tickets</a>
 <a class="hlc-btn o" href="{e(G.BK.gyg_transfer(d, 'en', f.get('ida')))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_traslado_en">🚕 Airport transfer in {e(d)}</a>
+<a class="hlc-btn o" href="{e(G.BK.dc('en', 'happylowcost-en'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_coche_en">🚗 Car hire in {e(d)}</a>
 {guide}
 {route_cal_en(f)}<a class="hlc-btn o" href="/en/tools/baggage/">🧳 Does your bag fly free?</a>
 {G.alt_box(f, True)}
@@ -417,7 +418,7 @@ def main():
 <div class="dc-grid h2-deals">{''.join(card(x) for x in top6) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'}</div>
 <div class="h2-more"><a class="hlc-btn o" href="/en/deals/">See all {len(deals)} deals and filter</a></div>
 <div class="h2-h" style="margin-top:34px"><h2>Ideas for cheap travel</h2></div>
-<div class="chips" style="flex-wrap:wrap">{''.join(f'<a class="chip" href="/en/deals/ideas/{k}/">{e(n)}</a>' for k, n, c in ideas_en if c)}<a class="chip" href="/en/tools/">🧰 Tools</a></div>
+<div class="chips" style="flex-wrap:wrap">{''.join(f'<a class="chip" href="/en/deals/ideas/{k}/">{e(n)}</a>' for k, n, c in ideas_en if c)}<a class="chip" href="/en/tools/">🧰 Tools</a><a class="chip" href="{e(G.BK.dc('en', 'happylowcost-home-en'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="home_coche_en">🚗 Car hire</a></div>
 </div></section>
 
 <section class="sec h2-sec h2-how"><div class="wrap">

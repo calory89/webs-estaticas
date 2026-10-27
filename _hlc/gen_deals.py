@@ -806,6 +806,7 @@ def main():
 <a class="hlc-btn t" href="{e(BK.with_dates(x.get('cta_hotel', '#'), f.get('ida'), f.get('vuelta')))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_hotel" data-tvcity="{e(f.get('destino'))}">🏨 Hoteles en {e(f.get('destino'))} en estas fechas</a>
 <a class="hlc-btn g" href="{e(BK.gyg(f.get('destino'), 'es', f.get('ida'), f.get('vuelta'), 'happylowcost-chollo'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_gyg">🎟️ Qué hacer en {e(f.get('destino'))}: tours y entradas</a>
 <a class="hlc-btn o" href="{e(BK.gyg_transfer(f.get('destino'), 'es', f.get('ida')))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_traslado">🚕 Traslado del aeropuerto en {e(f.get('destino'))}</a>
+<a class="hlc-btn o" href="{e(BK.dc('es', 'happylowcost-chollo'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_coche">🚗 Alquiler de coche en {e(f.get('destino'))}</a>
 {guide_link}
 {route_cal_link(f)}<a class="hlc-btn o" href="/herramientas/equipaje/">🧳 ¿Cabe gratis tu maleta?</a>
 {alt_box(f)}
