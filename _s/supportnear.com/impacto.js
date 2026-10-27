@@ -2,8 +2,8 @@
 // personales). Nunca el texto que la gente escribe en el buscador.
 (function(){
   var es = /[?&]lang=es\b/.test(location.search) || (!/[?&]lang=/.test(location.search) && /^es\b/i.test(navigator.language||''));
-  var L = es ? {h:'A cuánta gente ayuda SupportNear',p:'Recuentos agregados, sin cookies ni datos personales: no sabemos quién entra, solo cuántas veces y en qué idioma.',m:'Últimos 3 meses',views:'Visitas',langs:'Idiomas',cc:'Países (código)',need:'Lo que se busca',sos:'Veces que se abrió Emergencias',off:'Usos sin conexión',inst:'Instalaciones',share:'Veces compartido',empty:'Búsquedas sin nada cerca (falta en el mapa)',back:'Volver al mapa',none:'Todavía no hay datos.',err:'No se han podido cargar los datos. Prueba más tarde.',other:'English',note:'Los datos del mapa son de OpenStreetMap. Desde el 27 de octubre de 2026 el contador está en Supabase; lo anterior se perdió con el cambio de servidor.'}
-         : {h:'How many people SupportNear helps',p:'Aggregate counts, no cookies and no personal data: we do not know who visits, only how often and in which language.',m:'Last 3 months',views:'Visits',langs:'Languages',cc:'Countries (code)',need:'What people look for',sos:'Times Emergency was opened',off:'Uses with no connection',inst:'Installs',share:'Times shared',empty:'Searches with nothing nearby (missing on the map)',back:'Back to the map',none:'No data yet.',err:'Could not load the data. Try again later.',other:'Español',note:'Map data from OpenStreetMap. Since 27 October 2026 the counter runs on Supabase; earlier counts were lost when the server changed.'};
+  var L = es ? {h:'A cuánta gente ayuda SupportNear',p:'Recuentos agregados, sin cookies ni datos personales: no sabemos quién entra, solo cuántas veces y en qué idioma.',m:'Últimos 3 meses',d30:'Visitas por día (últimos 30 días)',views:'Visitas',langs:'Idiomas',cc:'Países (código)',need:'Lo que se busca',sos:'Veces que se abrió Emergencias',off:'Usos sin conexión',inst:'Instalaciones',share:'Veces compartido',empty:'Búsquedas sin nada cerca (falta en el mapa)',back:'Volver al mapa',none:'Todavía no hay datos.',err:'No se han podido cargar los datos. Prueba más tarde.',other:'English',note:'Los datos del mapa son de OpenStreetMap. Desde el 27 de octubre de 2026 el contador está en Supabase; lo anterior se perdió con el cambio de servidor.'}
+         : {h:'How many people SupportNear helps',p:'Aggregate counts, no cookies and no personal data: we do not know who visits, only how often and in which language.',m:'Last 3 months',d30:'Visits per day (last 30 days)',views:'Visits',langs:'Languages',cc:'Countries (code)',need:'What people look for',sos:'Times Emergency was opened',off:'Uses with no connection',inst:'Installs',share:'Times shared',empty:'Searches with nothing nearby (missing on the map)',back:'Back to the map',none:'No data yet.',err:'Could not load the data. Try again later.',other:'Español',note:'Map data from OpenStreetMap. Since 27 October 2026 the counter runs on Supabase; earlier counts were lost when the server changed.'};
   document.documentElement.lang = es ? 'es' : 'en';
   document.title = L.h + ' · SupportNear';
   var w = document.getElementById('w');
@@ -31,6 +31,15 @@
      [['views','view'],['sos','sos'],['off','offline'],['share','share'],['inst','install']].forEach(function(c){
        var d=el('div'); d.appendChild(el('b',big(tot[c[1]]&&tot[c[1]]._all))); d.appendChild(el('span',L[c[0]])); k.appendChild(d); });
      w.appendChild(k);
+     var days=(j&&j.days)||[];
+     if(days.length){
+       var mx=Math.max.apply(null,days.map(function(d){return d[1];}).concat([1]));
+       w.appendChild(el('h2',L.d30));
+       var ch=el('div',null,'ch'); ch.setAttribute('role','img'); ch.setAttribute('aria-label',L.d30+': '+days.map(function(d){return d[0]+' '+d[1];}).join(', '));
+       days.forEach(function(d){ var bar=el('span'); bar.style.height=Math.max(2,Math.round(d[1]/mx*100))+'%'; bar.title=d[0]+': '+big(d[1]); ch.appendChild(bar); });
+       w.appendChild(ch);
+       var ax=el('div',null,'ax'); ax.appendChild(el('small',days[0][0])); ax.appendChild(el('small',days[days.length-1][0])); w.appendChild(ax);
+     }
      var g=el('div',null,'g');
      [['langs','lang'],['cc','cc'],['need','need'],['empty','empty']].forEach(function(c){ var t=tbl(tot[c[1]]); if(!t) return; var d=el('div'); d.appendChild(el('h2',L[c[0]])); d.appendChild(t); g.appendChild(d); });
      w.appendChild(g);
