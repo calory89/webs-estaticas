@@ -23,6 +23,8 @@ HEAD = (
     "var g=v==='granted'?'granted':'denied';"
     "gtag('consent','default',{ad_storage:g,analytics_storage:g,ad_user_data:g,ad_personalization:g,wait_for_update:500});"
     "gtag('set','ads_data_redaction',g!=='granted');})();</script>"
+    '<script async src="https://www.googletagmanager.com/gtag/js?id=G-WFHBB8PHZJ"></script><script>gtag(\'js\',new Date());gtag(\'config\',\'G-WFHBB8PHZJ\');</script>'
+    '<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4dzg5ivay");</script>'
     f'<link rel="stylesheet" href="/hlc/hlc.css?v={V}">'
     '<link rel="icon" href="/hlc/brand/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/hlc/brand/icon.svg">'
     '<link rel="apple-touch-icon" href="/hlc/brand/icon-180.png"><link rel="manifest" href="/manifest.webmanifest">'
