@@ -39,10 +39,11 @@ async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
   const cacheable = req.method === 'GET' && !u.pathname.startsWith('/api/geo') && !u.pathname.startsWith('/api/alerts');
   const cache = caches.default;
-  if (cacheable) { const hit = await cache.match(req); if (hit) return hit; }
+  const ck = new Request(u.origin + u.pathname + u.search + (u.search ? '&' : '?') + '__v=' + ((env && env.CF_PAGES_COMMIT_SHA) || 'x'), { method: 'GET', headers: req.headers });
+  if (cacheable) { const hit = await cache.match(ck); if (hit) { const hh = new Headers(hit.headers); hh.set('cache-control', 'public, max-age=0, must-revalidate'); return new Response(hit.body, { status: hit.status, headers: hh }); } }
   if (!top3) top3 = (await import('./top3/index.js')).default;
   const r = await top3.fetch(req, env, ctx);
-  if (cacheable && r.status === 200) { const c = r.clone(); const h = new Headers(c.headers); h.set('cache-control', 'public, max-age=3600'); ctx.waitUntil(cache.put(req, new Response(c.body, { status: 200, headers: h }))); }
+  if (cacheable && r.status === 200) { const c = r.clone(); const h = new Headers(c.headers); h.set('cache-control', 'public, max-age=1800'); ctx.waitUntil(cache.put(ck, new Response(c.body, { status: 200, headers: h }))); }
   return r;
 }
 export default {
