@@ -13484,8 +13484,7 @@ let ccTimer = null, ccLast = null;
 const OVP = [
   'https://overpass-api.de/api/interpreter',
   'https://overpass.kumi.systems/api/interpreter',
-  'https://overpass.private.coffee/api/interpreter',
-  'https://maps.mail.ru/osm/tools/overpass/api/interpreter'
+  'https://overpass.private.coffee/api/interpreter'
 ];
 function qCore(lat,lon,r){
   const a='(around:'+r+','+lat+','+lon+')';
@@ -18020,7 +18019,10 @@ on('#zhint','click',()=>{ if(map) map.setZoom(8); });
     const c=pickCity(qcity,qcc,qll);
     if(c){ goCity(c); }
     // «?city=Мадрид»: los nombres traducidos llegan con el idioma
-    else if(!byLL()) Promise.resolve(typeof ensureLang==='function' ? ensureLang(LANG) : 0).then(()=>{ const c2=pickCity(qcity,qcc,qll); if(c2) goCity(c2); }).catch(()=>{});
+    // y si no se encuentra, no se abre otra ciudad en silencio: se deja el
+    // nombre en el buscador, con sus sugerencias, para que la persona elija
+    else if(!byLL()) Promise.resolve(typeof ensureLang==='function' ? ensureLang(LANG) : 0).then(()=>{ const c2=pickCity(qcity,qcc,qll); if(c2) goCity(c2);
+      else { const q=$('#q'); if(q){ q.value=String(qcity).slice(0,60); try{ q.focus(); }catch(e){} try{ showAc(null, q.value); }catch(e){} } } }).catch(()=>{});
   }
   if(hp){
     // La lista se centra en el sitio compartido, pero con su nombre arriba

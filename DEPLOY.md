@@ -69,3 +69,7 @@ comprueba byte a byte contra el fichero local. Nunca Lovable.
 - Privacidad: los textos ya no dicen que la ubicacion «no sale del movil» (va a
   Overpass, Open-Meteo y al servidor de rutas). Ver `qa_r18/privacy_i18n.json`.
 - `falta.html` (nota interna) ya no se publica: esta en `docs/internal/`.
+- R18b: sin `maps.mail.ru` entre los servidores Overpass; un `?city=` que no
+  existe ya no abre otra ciudad (deja el nombre en el buscador). `indexnow.py`
+  envia en tandas de 1.000 (con 7.000 de golpe IndexNow responde 403) y
+  `urls_all.txt` sale del sitemap publicado (URLs sin `.html`).
