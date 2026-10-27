@@ -1,0 +1,84 @@
+{
+  "name": "SupportNear — free help near you",
+  "short_name": "SupportNear",
+  "description": "Free food, a bed for tonight, showers, clothes, doctors and legal help on one map, from wherever you are. No account, 13 languages, works with no signal.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FBF8F3",
+  "theme_color": "#0B7A63",
+  "lang": "en",
+  "categories": [
+    "social",
+    "navigation",
+    "health"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B7A63'/%3E%3Cpath d='M32 14c-8.3 0-15 6.5-15 14.6C17 39.6 32 52 32 52s15-12.4 15-23.4C47 20.5 40.3 14 32 14z' fill='%23fff'/%3E%3Cpath d='M32 21v15M24.5 28.5h15' stroke='%230B7A63' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/",
+  "shortcuts": [
+    {
+      "name": "Emergency numbers",
+      "short_name": "Emergency",
+      "url": "./?sos=1",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Open right now",
+      "short_name": "Right now",
+      "url": "./?now=1",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "u1-home.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Nearby help on the map"
+    },
+    {
+      "src": "u2-ficha.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "A place: hours, phone, how to get there"
+    }
+  ]
+}
