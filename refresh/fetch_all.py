@@ -229,7 +229,7 @@ BIG = 25000
 
 def run_planet():
     have = load('planet')
-    land = [tuple(x) for x in json.load(open(os.path.join(ROOT, 'refresh', 'land_cells.json')))]
+    land = [tuple(x) for x in json.load(open(os.path.join(ROOT, 'refresh', 'cells_land.json')))]
     done_cover = []
     for k in have:
         s0, w0, sz = map(float, k.split('_'))
@@ -318,7 +318,7 @@ if __name__ == '__main__':
     st = {l: len(load(l)) for l in ('nat', 'cities', 'planet')}
     nat_ok = len(NAT_JOBS) + sum(1 for c in cities if c['es'])
     cit_ok = sum(1 for c in cities if not c['es'])
-    land = [tuple(x) for x in json.load(open(os.path.join(ROOT, 'refresh', 'land_cells.json')))]
+    land = [tuple(x) for x in json.load(open(os.path.join(ROOT, 'refresh', 'cells_land.json')))]
     cov = [tuple(map(float, k.split('_'))) for k in load('planet')]
     def _cov_area(s, w):
         # parte de la celda de 5 grados que ya esta bajada (0..1)
