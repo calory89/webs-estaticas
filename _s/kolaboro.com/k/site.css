@@ -391,3 +391,30 @@ footer{padding:56px 0 40px;font-size:.92rem;color:var(--muted);border-top:1px so
 @media print{.nav,.mcta,footer,.no-print,.banner{display:none!important}body{background:#fff}.report{border:0;padding:0}}
 
 @media (max-width:640px){.scorehead{grid-template-columns:1fr}}
+
+/* round 3 */
+.news label{font-size:.9rem;color:var(--ink-2)}
+.news .qform input{padding:11px 16px;font-size:.95rem;flex-basis:180px}
+.nmsg{font-size:.85rem;margin-top:6px;min-height:1.2em}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative;cursor:pointer}
+.opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opt span{display:block;padding:11px 16px;border:2px solid #B9B7AF;border-radius:999px;font-weight:600;font-size:.95rem;background:#fff;transition:all .15s}
+.opt input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.opt input:focus-visible+span{outline:3px solid var(--hivis);outline-offset:2px}
+.lessons{list-style:none;display:grid;gap:0}
+.lessons li{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.lessons h3{margin-bottom:6px}
+.lessons p{color:var(--ink-2)}
+.lessons a{font-weight:700;text-decoration-color:var(--hivis);text-decoration-thickness:2px;text-underline-offset:3px}
+.cmp td:last-child,.cmp th:last-child{background:var(--paper)}
+.cmp th:last-child{color:var(--hivis-ink)}
+@media (max-width:640px){.cmp{font-size:.9rem}.cmp td,.cmp th{padding:10px 6px}}
+.exit{position:fixed;inset:0;background:rgba(23,33,43,.55);display:none;align-items:center;justify-content:center;z-index:60;padding:16px}
+.exit.on{display:flex}
+.exit .box{background:var(--paper);border:2px solid var(--ink);border-radius:24px;max-width:520px;padding:32px;position:relative}
+.exit .box h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+.exit .box p{margin-top:12px;color:var(--ink-2)}
+.exit .x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);background:none;font-size:1.2rem;cursor:pointer}
+.links a.btn-hi{color:#170800}
+.st.s-ok{color:#08603F}

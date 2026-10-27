@@ -1,0 +1,34 @@
+# Kolaboro
+
+> Kolaboro is a network of local buyer's agents for overseas property. Agents are trained by AI, work only for the buyer, verify land titles, permits and developers, film every construction milestone with GPS-stamped video and tell buyers when each payment is safe. Kolaboro also publishes a 0-100 Trust Score for projects and developers. Launching in Bali.
+
+## Key pages
+- [Kolaboro: never buy property abroad alone](https://kolaboro.com/)
+- [Check a property project](https://kolaboro.com/check/)
+- [Sample site inspection report](https://kolaboro.com/report/sample/)
+- [How the Kolaboro Trust Score works](https://kolaboro.com/how-we-score/)
+- [Become a Kolaboro agent](https://kolaboro.com/agents/)
+- [Get your project verified](https://kolaboro.com/developers/)
+- [Investors](https://kolaboro.com/investors/)
+- [Rental yield check for off-plan property](https://kolaboro.com/tools/yield-check/)
+- [Before-you-sign checklist for buying property abroad](https://kolaboro.com/checklist/)
+- [Buying property in Bali as a foreigner](https://kolaboro.com/bali/)
+- [Bali land titles explained for foreign buyers](https://kolaboro.com/guides/bali-land-titles/)
+- [How to structure off-plan property payments safely](https://kolaboro.com/guides/off-plan-payments/)
+- [Privacy policy](https://kolaboro.com/legal/privacy/)
+- [Terms](https://kolaboro.com/legal/terms/)
+- [Buying property in Dubai: what to check](https://kolaboro.com/dubai/)
+- [Buying property in Phuket: what to check](https://kolaboro.com/phuket/)
+- [Buying property in Tulum: what to check](https://kolaboro.com/tulum/)
+- [Buying property in the Algarve: what to check](https://kolaboro.com/algarve/)
+- [Buying property in Lombok: what to check](https://kolaboro.com/lombok/)
+- [Destinations](https://kolaboro.com/destinations/)
+- [Off-plan risk calculator](https://kolaboro.com/tools/risk/)
+- [Buyer survey: what scares you about buying abroad?](https://kolaboro.com/survey/)
+- [Agent academy](https://kolaboro.com/academy/)
+- [Corrections](https://kolaboro.com/corrections/)
+
+## Facts
+- Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
+- Agents are never paid by developers. Paying for verification never changes a Trust Score.
+- Kolaboro does not currently hold client money and does not give legal or financial advice.

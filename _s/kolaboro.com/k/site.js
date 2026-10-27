@@ -154,3 +154,39 @@
     if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { fill(); io.disconnect(); } }, { threshold: .4 }); io.observe(d); } else fill();
   });
 })();
+
+/* newsletter + exit offer (round 3) */
+(function () {
+  var URL_ = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
+  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  document.querySelectorAll('form[data-news]').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault(); var m = f.querySelector('.nmsg'), em = (f.email.value || '').trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = 'Add a valid email address.'; m.style.color = 'var(--hivis-ink)'; return; }
+      m.textContent = 'Subscribing…'; m.style.color = '';
+      fetch(URL_, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_name: 'Newsletter subscriber', p_email: em, p_country: '', p_phone: '', p_who: 'newsletter | ' + location.pathname,
+          p_bring: 'Subscribed to the monthly newsletter from ' + location.pathname, p_learn: '', p_week: '', p_lang: 'en', p_source: 'yc-newsletter', p_plan: 'yc-newsletter' }) })
+        .then(function (r) { return r.json(); }).then(function (d) {
+          if (d === 'ok' || d === 'too_many') { m.textContent = "You're subscribed."; f.email.value = ''; if (window.kbEvent) kbEvent('newsletter_signup'); return; }
+          throw 0; }).catch(function () { m.textContent = 'Could not subscribe. Try again.'; m.style.color = 'var(--hivis-ink)'; });
+    });
+  });
+
+  // exit offer: desktop only, once per browser, never on pages with forms already filled
+  var st = null; try { st = localStorage; } catch (e) {}
+  if (!window.matchMedia('(pointer:fine)').matches || (st && st.getItem('kb-exit'))) return;
+  if (/^\/(checklist|survey|legal)/.test(location.pathname)) return;
+  var shown = false, armed = false; setTimeout(function () { armed = true; }, 8000);
+  document.addEventListener('mouseout', function (e) {
+    if (shown || !armed || e.relatedTarget || e.clientY > 10) return;
+    shown = true; try { st && st.setItem('kb-exit', '1'); } catch (x) {}
+    var d = document.createElement('div'); d.className = 'exit on'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-modal', 'true'); d.setAttribute('aria-label', 'Free checklist');
+    d.innerHTML = '<div class="box"><button class="x" aria-label="Close">×</button><h2>Before you go: the free 20-point checklist</h2><p>What to check on the land, permits, developer, contract and payments before you send a deposit.</p><p style="margin-top:20px"><a class="btn btn-hi" href="/checklist" data-ev="exit_checklist">Open the checklist</a></p></div>';
+    document.body.appendChild(d); d.querySelector('.x').focus();
+    function close() { d.remove(); }
+    d.addEventListener('click', function (x) { if (x.target === d || x.target.classList.contains('x')) close(); });
+    document.addEventListener('keydown', function k(x) { if (x.key === 'Escape') { close(); document.removeEventListener('keydown', k); } });
+    if (window.kbEvent) kbEvent('exit_offer_shown');
+  });
+})();

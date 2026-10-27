@@ -1,0 +1,89 @@
+{
+ "updated": "2026-10-27",
+ "projects": [
+  {
+   "slug": "sample",
+   "name": "Sample Residences",
+   "place": "Canggu, Bali",
+   "developer": "Sample Developer Ltd.",
+   "score": 59,
+   "verified": "2026-10-21",
+   "fictional": true,
+   "url": "https://kolaboro.com/score/sample/",
+   "checks": [
+    {
+     "name": "Title and land",
+     "weight": 15,
+     "score": 92,
+     "reason": "Certificate checked at the land registry; seller matches the title",
+     "evidence": "Registry extract, notary letter",
+     "verified": "2026-10-02"
+    },
+    {
+     "name": "Permits",
+     "weight": 12,
+     "score": 70,
+     "reason": "Building permit issued; licence for rentals still pending",
+     "evidence": "Building approval (PBG) copy",
+     "verified": "2026-10-02"
+    },
+    {
+     "name": "Delivery record",
+     "weight": 15,
+     "score": 38,
+     "reason": "2 of 6 past projects handed over on time",
+     "evidence": "Site visits to 6 past projects, buyer records",
+     "verified": "2026-09-18"
+    },
+    {
+     "name": "Progress vs. plan",
+     "weight": 12,
+     "score": 45,
+     "reason": "Milestone 3 verified on site, 5 months behind schedule",
+     "evidence": "GPS-stamped site video, 14 photos",
+     "verified": "2026-10-21"
+    },
+    {
+     "name": "Money safety",
+     "weight": 14,
+     "score": 55,
+     "reason": "Payments go to the contracting company, but no escrow",
+     "evidence": "Payment receipts from 4 buyers",
+     "verified": "2026-10-10"
+    },
+    {
+     "name": "Contract fairness",
+     "weight": 10,
+     "score": 60,
+     "reason": "Refund clause included; no penalty for late delivery",
+     "evidence": "Contract review by Kolaboro AI + agent",
+     "verified": "2026-09-30"
+    },
+    {
+     "name": "Transparency",
+     "weight": 8,
+     "score": 72,
+     "reason": "Named directors and registered company; accounts not public",
+     "evidence": "Company registry extract",
+     "verified": "2026-09-30"
+    },
+    {
+     "name": "Buyer voice",
+     "weight": 8,
+     "score": 48,
+     "reason": "Mixed verified reviews from 31 buyers; 2 open complaints",
+     "evidence": "Verified buyer survey",
+     "verified": "2026-10-15"
+    },
+    {
+     "name": "Realistic promises",
+     "weight": 6,
+     "score": 35,
+     "reason": "Advertised rental yield is double the local average",
+     "evidence": "Yield check vs. local rental data",
+     "verified": "2026-10-12"
+    }
+   ]
+  }
+ ]
+}
