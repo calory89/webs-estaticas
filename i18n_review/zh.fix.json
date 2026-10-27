@@ -1,0 +1,42 @@
+{
+ "strings": {
+  "guess.p": "正在显示{c}：你的手机显示你在这里。不在这里吗？",
+  "ui.opennow": "只看现在开着的",
+  "note.wrong": "还有别的错误",
+  "ui.nonep": "这个区域可能还没有标注数据，或者你的筛选范围太窄。试试打开更多类别，或者移动地图再搜一次。",
+  "ui.away": "远",
+  "cat.shelter.n": "收容所",
+  "dl.auto": "已保存{p}周边区域，没网也能用（用 Wi‑Fi 下载）。",
+  "band.far": "更远",
+  "grp.near": "最近 {d}",
+  "ui.found": "找到 {n} 个地点 · 最近 {d}",
+  "who.p": "很少有地方注明接待谁。如果筛选后什么都没有，就关掉筛选——他们可能仍然会接待你。",
+  "menu.nd": "用我的文字写数字",
+  "ui.mic": "用说的",
+  "plan.dp": "按顺序：吃饭、洗漱、衣服、能帮忙的人、今晚的床位。每一步都是最近的地点，知道开放时间的话，优先显示开着的。",
+  "plan.p": "按顺序：吃饭、洗漱、睡觉。每一步都是最近的地点，知道开放时间的话，优先显示开着的。",
+  "kiosk.menu": "公共屏幕模式（图书馆或收容所的屏幕）"
+ },
+ "plural": {
+  "grp.n#other": "{n} 个地点",
+  "ui.found#other": "找到 {n} 个地点 · 最近 {d}",
+  "ui.results#other": "{n} 个地点",
+  "ver.days#other": "{n} 天前",
+  "open.hidden#other": "有 {n} 个地点被隐藏了，因为我们不知道它们的开放时间——不是因为它们关门了。",
+  "share.line#other": "离这里 {d} 以内有 {n} 个免费地点",
+  "rep.shut#other": "本周有 {n} 人发现它关着",
+  "rep.open#other": "本周有 {n} 人看到它开着",
+  "ui.nearby#other": "500 米内还有 {n} 个同类地点",
+  "grp.rest#other": "地图上还有 {n} 个——放大就能看到。"
+ },
+ "sub": {
+  "outreach": "街头外展服务"
+ },
+ "lbl": {},
+ "for": {
+  "orphan": "孤儿",
+  "drug_addicted": "药物成瘾者",
+  "juvenile": "青少年"
+ },
+ "notes": "High-quality, plain and warm translation already; few fixes. Fixed: note.wrong ('别的地方有错' meant 'another place is wrong'), filters 'too narrow' (太少→太窄), guess.p wording, open-now filter label made consistent with 开着/关着, ui.away 距离→远 (it follows the distance), shelter category unified to 收容所, Wi‑Fi spelling unified, plan text clarified, 'for' dictionary: orphan/juvenile/less stigmatising wording for drug users, outreach sub-category. Chinese has only the 'other' plural category: #other set to the (unchanged) base for all 10 plural keys."
+}

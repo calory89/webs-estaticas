@@ -1,0 +1,59 @@
+{
+ "strings": {
+  "guess.p": "Waxaan ku tusaynaa {c}: telefoonkaagu wuxuu sheegayaa inaad halkaas joogto. Halkaas ma joogtid?",
+  "mynote.h": "Qoraalkayga (telefoonkan oo keliya)",
+  "mynote.p": "Waxa lagu kaydiyaa telefoonkan oo keliya. Qof kale ma arki karo.",
+  "openalarm.btn": "I ogeysii marka ay furanto",
+  "openalarm.set": "Waan ku ogeysiin doonaa marka ay furanto",
+  "openalarm.note": "Waxaan ku ogeysiin karaa oo keliya haddii SupportNear uu ku furnaado telefoonkaaga.",
+  "openalarm.now": "{p} hadda ayay furanaysaa.",
+  "dl.auto": "Aagga ku hareeraysan {p} waa la kaydiyay (wifi), si aad internet la'aan ugu isticmaasho.",
+  "ui.opennow": "Kuwa hadda furan oo keliya",
+  "oh.ph": "fasaxyada dadweynaha",
+  "ui.wheellim": "Qayb ahaan waa la geli karaa kursiga gaariga",
+  "ui.wheel": "Jaranjaro la'aan / kursiga gaariga waa la geli karaa",
+  "ui.nowheel": "Kursiga gaariga lama geli karo",
+  "ui.cap": "Meelo: {n}",
+  "wel.city": "Ama qor magaaladayda",
+  "grp.rest": "Iyo {n} kale oo khariidadda ku jira — soo dhowee si aad u aragto.",
+  "req.title": "Waxa loo baahan yahay si aad u gasho",
+  "req.private": "Uma furna dadweynaha",
+  "req.g.legal": "Talada sharci ee bilaashka ah badanaa waxay u baahan tahay ballan. Weydii adeegyada bulshada inay kuu qabtaan.",
+  "req.g.health": "Xaalad degdeg ah waxay ku daaweeyaan waraaqo la'aan iyo lacag la'aan. Si aad ballan u hesho, waxaa laga yaabaa inaad u baahato kaarka caafimaadka.",
+  "tip.legal.p": "Waddamada badankood caawimaadda sharci ee bilaashka ah waxaa lagu codsadaa ururka qareennada ee deegaanka (qareenka bilaashka ah ee la magacaabo) ama adeegyada bulshada ee dowladda hoose, ma aha cinwaan la iska galo. Waddada ugu dhakhsaha badan: tag mid ka mid ah goobaha <b>Caawimaad bulsho</b> ee khariidaddan oo weydii inay ku gudbiyaan. Maalin kasta ayay sameeyaan.",
+  "faq.a2": "Marnaba. Akoon iyo foom midna ma jiro. Khariidaddu isla markiiba way furantaa. Ma naqaanno cidda aad tahay, waxaanan u naqshadaynay si aynaan u ogaan karin.",
+  "im.s3": "kharash ah qofka isticmaala, hay'adda ku qoran, iyo magaalada la wadaagta xogteeda. Had iyo jeer.",
+  "dl.free": "{s} ayaa bannaan qalabkan",
+  "priv.2": "<ul style=\"padding-inline-start:20px;margin:14px 0;display:grid;gap:9px\"><li><b>Akoon ma jiro, marnaba.</b> Magac ma jiro, iimayl ma jiro, lambar telefoon ma jiro, aqoonsi ma jiro.</li><li><b>Cookies ma jiraan, raadraac ma jiro.</b> Waxaan kaliya tirinnaa si aan magac lahayn: booqasho, luqadda, magaalada iyo wixii la raadiyay oo aan la helin. Cinwaanka IP ma jiro, aqoonsiga qalabka ma jiro, wax sheegaya cidda aad tahay ma jiro; waxba haba yaraatee haddii browser-kaagu codsado in aan la raadraacin.</li><li><b>Goobtaada GPS waxay ku jirtaa qalabkaaga.</b> Waxaa lagu isticmaalaa browser-kaaga si natiijooyinka loogu kala sooco masaafada.</li><li><b>Aagga raadinta oo kaliya.</b> Si aan meelaha u helno, waxaan server-yada dadweynaha ee OpenStreetMap wax ka weydiinaa aag, ma aha adiga. Server-yadaasi waxay arkaan codsi ka yimid browser aan la aqoon, sida khariidad kasta oo kale.</li><li><b>Waxba laguma kaydiyo dhinacayaga.</b> Natiijooyinkaagii dhowaa waxaa lagu hayaa browser-kaaga si app-ku u shaqeeyo xitaa haddii shabakaddu kaa go'do. Tirtiridda xogta browser-kaaga ayaa tirtirta.</li></ul>"
+ },
+ "plural": {
+  "grp.n#one": "{n} meel",
+  "grp.n#other": "{n} meelood",
+  "ui.found#one": "{n} meel ayaa la helay · {d} u jirta",
+  "ui.found#other": "{n} meelood ayaa la helay · ugu dhow {d}",
+  "ui.results#one": "{n} meel",
+  "ui.results#other": "{n} meelood",
+  "ver.days#one": "{n} maalin ka hor",
+  "ver.days#other": "{n} maalmood ka hor",
+  "open.hidden#one": "{n} meel waa la qariyay sababtoo ah ma naqaanno saacadaheeda — ma aha inay xiran tahay.",
+  "open.hidden#other": "{n} meelood waa la qariyay sababtoo ah ma naqaanno saacadahooda — ma aha inay xiran yihiin.",
+  "share.line#one": "{n} meel bilaash ah oo halkan {d} u jirta",
+  "share.line#other": "{n} meelood oo bilaash ah oo halkan {d} u jira",
+  "rep.shut#one": "{n} ayaa xiran ku helay toddobaadkan",
+  "rep.shut#other": "{n} ayaa xiran ku helay toddobaadkan",
+  "rep.open#one": "{n} ayaa furan ku arkay toddobaadkan",
+  "rep.open#other": "{n} ayaa furan ku arkay toddobaadkan",
+  "ui.nearby#one": "{n} kale oo noocan ah 500 m gudahood",
+  "ui.nearby#other": "{n} kale oo noocan ah 500 m gudahood",
+  "grp.rest#one": "Iyo {n} kale oo khariidadda ku jira — soo dhowee si aad u aragto.",
+  "grp.rest#other": "Iyo {n} kale oo khariidadda ku jira — soo dhowee si aad u aragto."
+ },
+ "sub": {
+  "device_charging_station": "Meel telefoon lagu dallaco"
+ },
+ "lbl": {},
+ "for": {
+  "orphan": "carruurta agoonta ah"
+ },
+ "notes": "Overall good quality. Unified 'phone' as telefoon (was mixed taleefan/telefoon), 'place' as meel/meelo (ui.cap used 'boosas'), wheelchair as 'kursiga gaariga' (was 'kursiga curyaanka', stigmatising), public holiday wording, opens-verb gender aligned with 'meel'. Fixed guess.p meaning ('Not here?'), 'Never'/'Forever' wording, req.title/req.private/legal/health phrasing, zoom-in verb, orphan label. Plurals filled for one/other."
+}

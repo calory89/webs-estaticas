@@ -1,0 +1,32 @@
+{
+ "strings": {
+  "ui.found": "{n} sitios · el más cercano, a {d}",
+  "grp.near": "el más cercano, a {d}",
+  "now.h": "Son las {time}. Este es el sitio más cercano que todavía puede estar abierto esta noche.",
+  "tip.legal.p": "En la mayoría de países la asistencia jurídica gratuita se pide en el colegio de abogados (turno de oficio) o en los servicios sociales del ayuntamiento, no en una dirección a la que entras sin más. La vía más rápida: ve a uno de los puntos de <b>Atención social</b> del mapa y pide que te deriven. Lo hacen todos los días.",
+  "req.c.GB": "En Reino Unido: los bancos de alimentos suelen pedir un vale del médico, el colegio, Citizens Advice o el ayuntamiento; los centros de día y las soup runs son sin cita. Llama a StreetLink (o usa su app) para que te encuentre un equipo de calle.",
+  "req.c.IT": "En Italia: las mense de Caritas son sin cita; los dormitorios suelen pedir una tessera del centro di ascolto o de servicios sociales. En urgencias te atienden gratis y sin papeles.",
+  "ui.unknown": "Horario desconocido",
+  "wx.severe": "Temperatura peligrosa. Métete bajo techo, o llama a la línea gratuita de abajo.",
+  "geo.n.why": "Este navegador no tiene función de ubicación.",
+  "dl.z1d": "unos 4 km de ancho",
+  "dl.z2d": "unos 12 km de ancho",
+  "dl.z3d": "unos 25 km de ancho"
+ },
+ "plural": {
+  "grp.n#one": "{n} sitio", "grp.n#many": "{n} sitios", "grp.n#other": "{n} sitios",
+  "ui.found#one": "{n} sitio · a {d}", "ui.found#many": "{n} sitios · el más cercano, a {d}", "ui.found#other": "{n} sitios · el más cercano, a {d}",
+  "ui.results#one": "{n} sitio", "ui.results#many": "{n} sitios", "ui.results#other": "{n} sitios",
+  "ver.days#one": "hace {n} día", "ver.days#many": "hace {n} días", "ver.days#other": "hace {n} días",
+  "open.hidden#one": "Escondemos {n} sitio porque no sabemos su horario, no porque esté cerrado.",
+  "open.hidden#many": "Escondemos {n} sitios porque no sabemos su horario, no porque estén cerrados.",
+  "open.hidden#other": "Escondemos {n} sitios porque no sabemos su horario, no porque estén cerrados.",
+  "share.line#one": "{n} sitio gratis a menos de {d} de aquí", "share.line#many": "{n} sitios gratis a menos de {d} de aquí", "share.line#other": "{n} sitios gratis a menos de {d} de aquí",
+  "rep.shut#one": "{n} lo encontró cerrado esta semana", "rep.shut#many": "{n} lo encontraron cerrado esta semana", "rep.shut#other": "{n} lo encontraron cerrado esta semana",
+  "rep.open#one": "{n} lo vio abierto esta semana", "rep.open#many": "{n} lo vieron abierto esta semana", "rep.open#other": "{n} lo vieron abierto esta semana",
+  "ui.nearby#one": "{n} más de este tipo a menos de 500 m", "ui.nearby#many": "{n} más de este tipo a menos de 500 m", "ui.nearby#other": "{n} más de este tipo a menos de 500 m",
+  "grp.rest#one": "Y {n} más en el mapa: acércate para verlo.", "grp.rest#many": "Y {n} más en el mapa: acércate para verlos.", "grp.rest#other": "Y {n} más en el mapa: acércate para verlos."
+ },
+ "sub": {}, "lbl": {}, "for": {},
+ "notes": "Mature, natural tú/vosotros Spanish. Fixed: ungrammatical 'el más cerca a {d}' (ui.found, grp.near); now.h mistranslated; tip.legal.p wrongly localised to Spain only (app is used by Spanish speakers in every country) and had 3 <b> tags vs 1 in EN; req.c.GB dropped 'call StreetLink'; req.c.IT dropped 'free'; ui.unknown said 'unconfirmed' not 'unknown'; 'a la redonda' (radius) for 'across' in dl.z*d; geo.n.why used 'localización' vs 'ubicación' everywhere else; vague wx.severe. Filled all plural categories (many=other). ui.away left empty as in source (unused, intentional)."
+}

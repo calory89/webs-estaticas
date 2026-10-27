@@ -1,0 +1,72 @@
+{
+ "strings": {
+  "guess.p": "{c} ነርእየካ ኣለና፤ ተሌፎንካ ኣብኡ ከም ዘለኻ ይብል። ኣብዚ ኣይኮንካን?",
+  "mynote.h": "ናተይ መዘኻኸሪ (ኣብዚ ተሌፎን ጥራይ)",
+  "mynote.p": "ኣብዚ ተሌፎን ጥራይ ይዕቀብ። ካልእ ሰብ ክርእዮ ኣይክእልን።",
+  "openalarm.note": "ክነግረካ ዝኽእል SupportNear ኣብ ተሌፎንካ ክፉት እንተ ጸኒሑ ጥራይ እዩ።",
+  "wx.severe": "ሓደገኛ መጠን ሙቐት። ናብ ውሽጢ ኣቱ፣ ወይ ናብቲ ኣብ ታሕቲ ዘሎ ነጻ መስመር ደውል።",
+  "plan.route": "መንገዲ ብእግሪ፣ ኩሎም ቦታታት",
+  "kb.tip2": "1–9 ምድባት ቀይር",
+  "ui.soon": "ኣብ ቀረባ ይኽፈት",
+  "menu.lite": "ባትሪን ዳታን ቁጠብ",
+  "note.p": "ብቐጥታ ናብ OpenStreetMap ይኸይድ፣ እቲ SupportNear ዝሰርሓሉ ክፉት ካርታ። ዝሕልውዎ ወለንተኛታት ይርእይዎ ይእርምዎን። ኣካውንት ኣየድልን።",
+  "gap.p": "ናብ OpenStreetMap ይኸይድ፣ እቲ SupportNear ዝሰርሓሉ ክፉት ካርታ። ዝኾነ ሰብ ክእርሞ ይኽእል፣ ኩሉ ሰብ ድማ ነቲ ምእራም ይርእዮ።",
+  "how.p": "ብህጹጽ ሓገዝ ዘድልዮም መብዛሕትኦም ሰባት ፕሪንተር፣ ቆጸራ፣ ወይ ትርፊ ዳታ የብሎምን። SupportNear ነዚ ኩነታት ብምግንዛብ እዩ ተሰሪሑ፦ ኣብ ካልኢታት ይኽፈት፣ ኣብ ኣረጊት ተሌፎን ይሰርሕ፣ መን ምዃንካ ድማ ፈጺሙ ኣይሓትን።",
+  "im.s1": "ሰብ ኣብ ዓለም ብሕጊ ዝግብኦ መሰረታዊ ኣገልግሎታት ክረክብ ኣይክእልን፣ ኣበይ ከም ዘለዉ ዝነገሮ ሰብ ስለ ዘየለ ጥራይ።",
+  "im.n1": "ካብ 4 ሓደ",
+  "orgs.p2": "SupportNear ነቲ ክፍተት ብህዝባዊ ክፉት ሓበሬታ ይዓጽዎ። ዝግጠም የለን፣ ውዕል የለን፣ ናይ ነፍሲ ወከፍ ተጠቃሚ ፍቓድ የለን። ኣገልግሎትኩም ኣብ OpenStreetMap እንተ ኣሎ፣ ድሮ ኣብዚ ኣሎ። እንተ ዘየሎ፣ ኣብ ሓደ ድሕሪ ቀትሪ ከተእትውዎ ክንሕግዘኩም ኢና — ድሕሪኡ ኣብ ኩሎም ካልኦት ነዚ ክፉት ካርታ ዝጥቀሙ ኣፕታት እውን ክረአ እዩ።",
+  "foot.l6": "ብሕትውና",
+  "ui.offline": "መራኸቢ የለን፦ ጎደናታት ኣይርአዩን፣ ቦታታትን ርሕቀትን ግን ልክዕ እዮም።",
+  "req.g.shelter": "ብዙሓት መሕደሪታት ብዕለቱ ዓራት ክትሕዝ፣ ወይ ብማሕበራዊ ኣገልግሎት ክትለኣኽ ይሓቱ። ቅድሚ ምኻድካ ደውል።",
+  "geo.u.fix": "ኣብ ምድላዋት (settings) ተሌፎንካ ቦታ (location) ኣብርህ፣ እንተ ኽኢልካ ድማ ንሒደት ካልኢታት ናብ መስኮት ቅረብ ወይ ናብ ደገ ውጻእ።",
+  "off.how": "ከመይ ጌርካ ኣብ ተሌፎንካ ተእትዎ",
+  "by.p": "ነዚ ፕሮጀክት ብኻልእ ስማት ኣብ 2007 እየ ጀሚረዮ፣ 18 ዓመት ዝመላእኩላ ዓመት። ንዓመታት ነቶም ቦታታት ሓደ ብሓደ ብኢደይ እየ ወሲኸዮም። ብሓገዝ ካልኦት መሳርሒታት ኣብ መወዳእታ ናብ ምሉእ ዓለም ከስፍሖ ክኢለ። ገንዘብ ኣይረብሕን፣ ኣብ መጻኢ እውን ኣይክረብሕን እዩ። ሓደ ማዕከን ዜና ክጽብጽቦ እንተ ደለየ፣ ክሕግዝ ሕጉስ እየ — ብX ጽሓፉለይ።",
+  "gap.gone": "እዚ ቦታ ደጊም የለን",
+  "faq.q5": "ኣብ ካርታ ዘሎ ሓደ ቦታ ዕጹው ነይሩ ወይ ደጊም የለን። እንታይ እገብር?",
+  "ui.note": "<b>እንተ ኽኢልካ ቅድሚ ምኻድካ ኩሉ ግዜ ደውል</b>። ሰዓታት ስራሕ ይቕየር፣ ገሊኦም ቦታታት ድማ ኣብ ዝተወሰነ ሰዓት ክትመጽእ ይሓቱ። እዚ ሓበሬታ ብወለንተኛታት ዝሕሎ እዩ፣ ዘይተሓደሰ ክኸውን ይኽእል — ጌጋ እንተ ረኺብካ፣ ንኹሉ ሰብ ክተእርሞ ትኽእል።",
+  "faq.a2": "ፈጺሙ ኣይኮነን። ኣካውንት የለን፣ ፎርም የለን። ካርታ ብቐጥታ ይኽፈት። መን ምዃንካ ኣይንፈልጥን፣ ክንፈልጥ ከይንኽእል ድማ ገይርና ኢና ሰሪሕናዮ።",
+  "lite.bat": "ባትሪ ትሑት እዩ፦ ናይ ምቑጣብ ኣገባብ በሪሁ ኣሎ። ካብ መምረጺ ከተጥፍኦ ትኽእል ኢኻ።",
+  "me.wait": "ጎደናኻ ይድለ ኣሎ…",
+  "ui.locating": "ቦታኻ ይድለ ኣሎ…",
+  "ui.addrwait": "ጎደና ይድለ ኣሎ…",
+  "ui.loading": "ኣብ ከባቢኻ ሓገዝ ይድለ ኣሎ…",
+  "far.searching": "ኣብ ከባቢኻ ይድለ ኣሎ…",
+  "ui.searching": "ይድለ ኣሎ…",
+  "ui.nonep": "ነዚ ከባቢ ገና ዝተሰነደ ሓበሬታ ዘየለ ይኸውን፣ ወይ መጻረዪታትካ ኣዝዮም ጸቢቦም። ተወሰኽቲ ምድባት ኣብርህ፣ ወይ ካርታ ኣንቀሳቕስ እሞ ደጊምካ ድለ።",
+  "wel.city": "ኣብ ክንዲኡ ስም ከተማይ ክጽሕፍ",
+  "ui.recent": "ናይ ቀረባ እዋን"
+ },
+ "plural": {
+  "grp.n#other": "{n} ቦታታት",
+  "ui.found#other": "{n} ቦታታት ተረኺቦም · ዝቐረበ {d}",
+  "ui.results#other": "{n} ቦታታት",
+  "ver.days#other": "ቅድሚ {n} መዓልታት",
+  "open.hidden#other": "ሰዓታቶም ስለ ዘይንፈልጥ {n} ቦታታት ተሓቢኦም ኣለዉ — ዕጹዋት ስለ ዝኾኑ ኣይኮነን።",
+  "share.line#other": "ካብዚ ኣብ ውሽጢ {d} {n} ነጻ ቦታታት",
+  "rep.shut#other": "ኣብዚ ሰሙን {n} ሰባት ዕጹው ረኺቦምዎ",
+  "rep.open#other": "ኣብዚ ሰሙን {n} ሰባት ክፉት ርእዮምዎ",
+  "ui.nearby#other": "ኣብ ውሽጢ 500 m ካብዚ ዓይነት {n} ተወሰኽቲ",
+  "grp.rest#other": "ኣብ ካርታ ድማ {n} ተወሰኽቲ ኣለዉ — ንምርኣዮም ካርታ ኣቕርብ።",
+  "grp.n#one": "{n} ቦታ",
+  "ui.results#one": "{n} ቦታ",
+  "ui.found#one": "{n} ቦታ ተረኺቡ · {d} ርሒቑ",
+  "ver.days#one": "ቅድሚ {n} መዓልቲ",
+  "open.hidden#one": "ሰዓታቱ ስለ ዘይንፈልጥ {n} ቦታ ተሓቢኡ ኣሎ — ዕጹው ስለ ዝኾነ ኣይኮነን።",
+  "share.line#one": "ካብዚ ኣብ ውሽጢ {d} {n} ነጻ ቦታ",
+  "rep.shut#one": "ኣብዚ ሰሙን {n} ሰብ ዕጹው ረኺቡዎ",
+  "rep.open#one": "ኣብዚ ሰሙን {n} ሰብ ክፉት ርእዩዎ",
+  "ui.nearby#one": "ኣብ ውሽጢ 500 m ካብዚ ዓይነት {n} ተወሳኺ",
+  "grp.rest#one": "ኣብ ካርታ ድማ {n} ተወሳኺ ኣሎ — ንምርኣዩ ካርታ ኣቕርብ።"
+ },
+ "sub": {
+  "device_charging_station": "መምልኢ ተሌፎን"
+ },
+ "lbl": {
+  "intl": "ካብ ዝኾነ ተሌፎን፣ ኣብ ምሉእ ዓለም ይሰርሕ"
+ },
+ "for": {
+  "disabled": "ስንክልና ዘለዎም ሰባት",
+  "orphan": "ዘኽታማት ቆልዑ"
+ },
+ "notes": "Overall a solid, natural Tigrinya translation with no missing strings. Fixed: inconsistent 'phone' (ስልኪ vs ተሌፎን, unified to ተሌፎን incl. sub/lbl); mistranslated 'the open map this runs on' (note.p, gap.p) and 'nothing to install' (ዝጽዓን=load -> ዝግጠም); 'opens soon' rendered as 'opens quickly'; 'dangerous temperature' rendered as 'dangerous heat' (also shown for cold); awkward grammar in how.p, ui.offline, req.g.shelter ('same day', 'referred'), im.s1 (1 in 4 agreement), by.p ('never will'), faq.a2 ('Never'); typo ክተርሞ in ui.note; 'any more' (ድሕሪ ሕጂ=from now on -> ደጊም); mixed English in geo.u.fix; archaic ቍ spelling; 'searching' progress messages switched to passive ይድለ; respectful 'people with disabilities' in for-dict; Privacy -> ብሕትውና. Plurals: filled 'other' for all 10 keys and 'one' for the 4 that lacked it."
+}

@@ -993,11 +993,11 @@ def _csp(h):
     for m in _re.finditer(r'<script(?![^>]*\bsrc=)(?![^>]*application/ld\+json)[^>]*>(.*?)</script>', h, flags=_re.S):
         hs.append("'sha256-%s'" % _b64.b64encode(_hl.sha256(m.group(1).encode('utf-8')).digest()).decode())
     tiles='https://server.arcgisonline.com https://tile.openstreetmap.org'
-    pol=("default-src 'self'; script-src 'self' %s; style-src 'self' 'unsafe-inline'; "
+    pol=("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com %s; style-src 'self' 'unsafe-inline'; "
          "img-src 'self' data: blob: %s https://commons.wikimedia.org https://upload.wikimedia.org; "
          "connect-src 'self' %s https://nominatim.openstreetmap.org https://photon.komoot.io https://overpass-api.de "
          "https://overpass.kumi.systems https://overpass.private.coffee https://api.openstreetmap.org https://api.open-meteo.com "
-         "https://routing.openstreetmap.de; font-src 'self' data:; worker-src 'self'; manifest-src 'self'; media-src 'self' blob:; "
+         "https://routing.openstreetmap.de https://cloudflareinsights.com; font-src 'self' data:; worker-src 'self'; manifest-src 'self'; media-src 'self' blob:; "
          "object-src 'none'; base-uri 'self'; form-action 'self'") % (' '.join(hs), tiles, tiles)
     tag='<meta http-equiv="Content-Security-Policy" content="%s">' % pol
     return h.replace('<meta charset="utf-8">', '<meta charset="utf-8">'+tag, 1) if '<meta charset="utf-8">' in h else _re.sub(r'(<head[^>]*>)', r'\1'+tag, h, count=1)

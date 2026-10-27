@@ -1,0 +1,54 @@
+{
+ "strings": {
+  "ui.sos": "የአደጋ ጊዜ",
+  "foot.osm": "የካርታ መረጃ © የOpenStreetMap አበርካቾች፣ ODbL። የመሠረት ካርታ © Esri።",
+  "note.closed": "በቋሚነት ተዘግቷል",
+  "orgs.p1": "ሰዎች ሦስት መንገድ ርቀው ውጭ እያደሩ ከተሞች በግማሽ ባዶ የሚሰሩ መጠለያዎችን በገንዘብ ይደግፋሉ። ቤተሰቦች ምግብ ሳያገኙ እየቀሩ የምግብ ባንኮች ክምችት ይጥላሉ። ክፍተቱ ሁልጊዜ ማለት ይቻላል ገንዘብ አይደለም — የሚያስፈልገው ሰው ጋር፣ በሚያነበው ቋንቋ፣ በሚፈልገው ሰዓት የማይደርስ መረጃ ነው።",
+  "im.s3": "ክፍያ፦ ለተጠቃሚው ሰው፣ በላዩ ለተዘረዘረው ድርጅትና መረጃውን ለሚያጋራው ከተማ። ለዘላለም።",
+  "ui.cap": "ቦታዎች፦ {n}",
+  "hol.p": "ዛሬ የሕዝብ በዓል ነው፤ የሥራ ሰዓት ሊለያይ ይችላል። ከቻልክ ከመሄድህ በፊት ደውል።",
+  "menu.priv": "ስለ አንተ የምናውቀው፦ ከሞላ ጎደል ምንም",
+  "priv.h": "ስለ አንተ የምናውቀው፦ ከሞላ ጎደል ምንም",
+  "far.p": "OpenStreetMap እዚህ አካባቢ እስካሁን ከሞላ ጎደል ምንም አልመዘገበም። የምናውቀው በጣም ቅርብ ቦታ {d} ይርቃል። አቅራቢያ ያለ ከተማ ተመልከት፣ ወይም ቀጣዩ ሰው እንዲያገኘው የምታውቀውን ቦታ ጨምር፦",
+  "req.ref": "የመላኪያ ደብዳቤ ያስፈልጋል",
+  "req.open": "ያለ ቀጠሮ ግባ",
+  "ui.office": "ቢሮ ነው፣ ያለ ቀጠሮ ለሚመጡ ላያገለግል ይችላል",
+  "by.p": "ይህን ፕሮጀክት በሌሎች ስሞች በ2007 (እ.ኤ.አ.) ጀመርኩት፣ 18 ዓመት በሞላኝ ዓመት። ለዓመታት ቦታዎቹን አንድ በአንድ በእጄ ጨመርኩ። በሌሎች መሣሪያዎች እርዳታ በመጨረሻ ወደ መላው ዓለም ማስፋት ችያለሁ። ምንም ገንዘብ አያስገኝም፣ ወደፊትም አያስገኝም። አንድ የዜና ክፍል ሊዘግበው ከፈለገ ለመርዳት ደስተኛ ነኝ — በ X ላይ ጻፉልኝ።",
+  "tip.hygiene": "ከቻልክ የራስህን ፎጣ ይዘህ ሂድ፤ ብዙ ቦታዎች ሳሙና ያውሳሉ። እዚህ ነፃ የሚል ምልክት ያላቸው የሕዝብ መጸዳጃ ቤቶች ምንም አያስከፍሉም።",
+  "who.homeless": "ቤት የሌላቸው ሰዎች",
+  "faq.q1": "ክፍያ አለው?",
+  "faq.q3": "ያለሁበት ቦታ ወደ ሌላ ቦታ ይላካል?",
+  "what.p": "እያንዳንዱ ነጥብ የሚመጣው ከ OpenStreetMap ነው፤ ይህ በመቶ ሺዎች በሚቆጠሩ በጎ ፈቃደኞች፣ የከተማ አስተዳደሮችና የእርዳታ ድርጅቶች የሚተዳደር የዓለም ክፍት ካርታ ነው። ሕዝባዊ ነው፣ ነፃ ነው፣ ማንም ሊያስተካክለው ይችላል — አንተም ጭምር።",
+  "ui.note": "<b>ከቻልክ ከመጓዝህ በፊት ሁልጊዜ ደውል</b>። የሥራ ሰዓቶች ይቀየራሉ፣ አንዳንድ ቦታዎችም በተወሰነ ሰዓት እንድትደርስ ይጠይቃሉ። ይህ መረጃ በበጎ ፈቃደኞች የሚተዳደር ስለሆነ ጊዜው ያለፈበት ሊሆን ይችላል — ስህተት ካገኘህ ለሁሉም ማስተካከል ትችላለህ።"
+ },
+ "plural": {
+  "grp.n#other": "{n} ቦታዎች",
+  "ui.found#other": "{n} ቦታዎች ተገኝተዋል · በጣም ቅርቡ {d}",
+  "ui.results#other": "{n} ቦታዎች",
+  "ver.days#other": "ከ{n} ቀናት በፊት",
+  "open.hidden#other": "{n} ቦታዎች ተደብቀዋል፣ ሰዓታቸውን ስለማናውቅ ነው — ስለተዘጉ አይደለም።",
+  "share.line#other": "ከዚህ በ{d} ውስጥ {n} ነፃ ቦታዎች",
+  "rep.shut#other": "በዚህ ሳምንት {n} ሰዎች ዝግ ሆኖ አግኝተውታል",
+  "rep.open#other": "በዚህ ሳምንት {n} ሰዎች ክፍት ሆኖ አይተውታል",
+  "ui.nearby#other": "በ500 ሜ ውስጥ ከዚህ ዓይነት {n} ተጨማሪ",
+  "grp.rest#other": "በካርታው ላይ ደግሞ {n} ተጨማሪ አሉ — ለማየት ካርታውን አጉላ።",
+  "grp.n#one": "{n} ቦታ",
+  "ui.results#one": "{n} ቦታ",
+  "ui.found#one": "{n} ቦታ ተገኝቷል · {d} ርቀት ላይ",
+  "ver.days#one": "ከ{n} ቀን በፊት",
+  "open.hidden#one": "{n} ቦታ ተደብቋል፣ ሰዓቱን ስለማናውቅ ነው — ስለተዘጋ አይደለም።",
+  "share.line#one": "ከዚህ በ{d} ውስጥ {n} ነፃ ቦታ",
+  "rep.shut#one": "በዚህ ሳምንት {n} ሰው ዝግ ሆኖ አግኝቶታል",
+  "rep.open#one": "በዚህ ሳምንት {n} ሰው ክፍት ሆኖ አይቶታል",
+  "ui.nearby#one": "በ500 ሜ ውስጥ ከዚህ ዓይነት {n} ተጨማሪ",
+  "grp.rest#one": "በካርታው ላይ ደግሞ {n} ተጨማሪ አለ — ለማየት ካርታውን አጉላ።"
+ },
+ "sub": {
+  "social_centre": "ማህበራዊ ማዕከል"
+ },
+ "lbl": {},
+ "for": {
+  "orphan": "ወላጅ አልባ ልጆች"
+ },
+ "notes": "Overall a good, natural translation with no missing strings. Fixed: ungrammatical 'Emergency' label (አደጋ ጊዜ -> የአደጋ ጊዜ); inconsistent OpenStreetMap 'contributors' term (unified to አበርካቾች); 'almost nothing' rendered as ምንም ማለት ይቻላል (-> ከሞላ ጎደል ምንም); wrong active verb form for 'maintained by' (-> የሚተዳደር); 'marked free' mistranslated as 'that looked free'; 'closed for good' wording; awkward 'skip meals'; English loan ሪፈራል in badge -> የመላኪያ ደብዳቤ; 'walk in' unified to ያለ ቀጠሮ; 2007 marked as Gregorian (እ.ኤ.አ.) to avoid Ethiopian-calendar confusion; ሥራ spelling consistency; more natural FAQ questions; orphan -> ወላጅ አልባ; redundant 'community social centre'. Added explicit #one/#other plural forms (singular noun/verb agreement for one)."
+}
