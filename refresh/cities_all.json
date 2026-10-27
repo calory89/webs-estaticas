@@ -1,0 +1,12212 @@
+[
+{
+"disp": "London",
+"lat": 51.5074,
+"lon": -0.1278,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "51.5074,-0.1278",
+"nkey": ""
+},
+{
+"disp": "Paris",
+"lat": 48.8566,
+"lon": 2.3522,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "48.8566,2.3522",
+"nkey": ""
+},
+{
+"disp": "New York",
+"lat": 40.7128,
+"lon": -74.006,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "40.7128,-74.0060",
+"nkey": ""
+},
+{
+"disp": "Mexico City",
+"lat": 19.4326,
+"lon": -99.1332,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "19.4326,-99.1332",
+"nkey": ""
+},
+{
+"disp": "Buenos Aires",
+"lat": -34.6037,
+"lon": -58.3816,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-34.6037,-58.3816",
+"nkey": ""
+},
+{
+"disp": "Bogotá",
+"lat": 4.711,
+"lon": -74.0721,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "4.7110,-74.0721",
+"nkey": ""
+},
+{
+"disp": "Cairo · القاهرة",
+"lat": 30.0444,
+"lon": 31.2357,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "30.0444,31.2357",
+"nkey": ""
+},
+{
+"disp": "Casablanca · الدار البيضاء",
+"lat": 33.5731,
+"lon": -7.5898,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "33.5731,-7.5898",
+"nkey": ""
+},
+{
+"disp": "Kyiv · Київ",
+"lat": 50.4501,
+"lon": 30.5234,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "50.4501,30.5234",
+"nkey": ""
+},
+{
+"disp": "Lisboa",
+"lat": 38.7223,
+"lon": -9.1393,
+"country": "Portugal",
+"cc": "PT",
+"es": false,
+"key": "38.7223,-9.1393",
+"nkey": ""
+},
+{
+"disp": "Berlin",
+"lat": 52.52,
+"lon": 13.405,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "52.5200,13.4050",
+"nkey": ""
+},
+{
+"disp": "Roma",
+"lat": 41.9028,
+"lon": 12.4964,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "41.9028,12.4964",
+"nkey": ""
+},
+{
+"disp": "Αθήνα · Athens",
+"lat": 37.9838,
+"lon": 23.7275,
+"country": "Greece",
+"cc": "GR",
+"es": false,
+"key": "37.9838,23.7275",
+"nkey": ""
+},
+{
+"disp": "Warszawa · Warsaw",
+"lat": 52.2297,
+"lon": 21.0122,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "52.2297,21.0122",
+"nkey": ""
+},
+{
+"disp": "İstanbul",
+"lat": 41.0082,
+"lon": 28.9784,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "41.0082,28.9784",
+"nkey": ""
+},
+{
+"disp": "Nairobi",
+"lat": -1.2864,
+"lon": 36.8172,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "-1.2864,36.8172",
+"nkey": ""
+},
+{
+"disp": "Johannesburg",
+"lat": -26.2041,
+"lon": 28.0473,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-26.2041,28.0473",
+"nkey": ""
+},
+{
+"disp": "São Paulo",
+"lat": -23.5505,
+"lon": -46.6333,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-23.5505,-46.6333",
+"nkey": ""
+},
+{
+"disp": "Lima",
+"lat": -12.0464,
+"lon": -77.0428,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-12.0464,-77.0428",
+"nkey": ""
+},
+{
+"disp": "București",
+"lat": 44.4268,
+"lon": 26.1025,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "44.4268,26.1025",
+"nkey": ""
+},
+{
+"disp": "Москва · Moscow",
+"lat": 55.7558,
+"lon": 37.6173,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "55.7558,37.6173",
+"nkey": ""
+},
+{
+"disp": "Rio de Janeiro",
+"lat": -22.9068,
+"lon": -43.1729,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-22.9068,-43.1729",
+"nkey": ""
+},
+{
+"disp": "کراچی · Karachi",
+"lat": 24.8607,
+"lon": 67.0011,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "24.8607,67.0011",
+"nkey": ""
+},
+{
+"disp": "تهران · Tehran",
+"lat": 35.6892,
+"lon": 51.389,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "35.6892,51.3890",
+"nkey": ""
+},
+{
+"disp": "Dakar",
+"lat": 14.7167,
+"lon": -17.4677,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.7167,-17.4677",
+"nkey": ""
+},
+{
+"disp": "Bamako",
+"lat": 12.6392,
+"lon": -8.0029,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "12.6392,-8.0029",
+"nkey": ""
+},
+{
+"disp": "Delhi · दिल्ली",
+"lat": 28.6139,
+"lon": 77.209,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "28.6139,77.2090",
+"nkey": ""
+},
+{
+"disp": "Manila",
+"lat": 14.5995,
+"lon": 120.9842,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "14.5995,120.9842",
+"nkey": ""
+},
+{
+"disp": "Lagos",
+"lat": 6.5244,
+"lon": 3.3792,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "6.5244,3.3792",
+"nkey": ""
+},
+{
+"disp": "मुंबई · Mumbai",
+"lat": 19.076,
+"lon": 72.8777,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "19.0760,72.8777",
+"nkey": ""
+},
+{
+"disp": "কলকাতা · Kolkata",
+"lat": 22.5726,
+"lon": 88.3639,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "22.5726,88.3639",
+"nkey": ""
+},
+{
+"disp": "ঢাকা · Dhaka",
+"lat": 23.8103,
+"lon": 90.4125,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "23.8103,90.4125",
+"nkey": ""
+},
+{
+"disp": "Kinshasa",
+"lat": -4.4419,
+"lon": 15.2663,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "-4.4419,15.2663",
+"nkey": ""
+},
+{
+"disp": "አዲስ አበባ · Addis Ababa",
+"lat": 9.032,
+"lon": 38.7469,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "9.0320,38.7469",
+"nkey": ""
+},
+{
+"disp": "Accra",
+"lat": 5.6037,
+"lon": -0.187,
+"country": "Ghana",
+"cc": "GH",
+"es": false,
+"key": "5.6037,-0.1870",
+"nkey": ""
+},
+{
+"disp": "Abidjan",
+"lat": 5.36,
+"lon": -4.0083,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "5.3600,-4.0083",
+"nkey": ""
+},
+{
+"disp": "Kampala",
+"lat": 0.3476,
+"lon": 32.5825,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "0.3476,32.5825",
+"nkey": ""
+},
+{
+"disp": "Dar es Salaam",
+"lat": -6.7924,
+"lon": 39.2083,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-6.7924,39.2083",
+"nkey": ""
+},
+{
+"disp": "عمّان · Amman",
+"lat": 31.9454,
+"lon": 35.9284,
+"country": "Jordan",
+"cc": "JO",
+"es": false,
+"key": "31.9454,35.9284",
+"nkey": ""
+},
+{
+"disp": "بيروت · Beirut",
+"lat": 33.8938,
+"lon": 35.5018,
+"country": "Lebanon",
+"cc": "LB",
+"es": false,
+"key": "33.8938,35.5018",
+"nkey": ""
+},
+{
+"disp": "بغداد · Baghdad",
+"lat": 33.3152,
+"lon": 44.3661,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "33.3152,44.3661",
+"nkey": ""
+},
+{
+"disp": "Caracas",
+"lat": 10.4806,
+"lon": -66.9036,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.4806,-66.9036",
+"nkey": ""
+},
+{
+"disp": "Ciudad de Guatemala",
+"lat": 14.6349,
+"lon": -90.5069,
+"country": "Guatemala",
+"cc": "GT",
+"es": false,
+"key": "14.6349,-90.5069",
+"nkey": ""
+},
+{
+"disp": "Port-au-Prince",
+"lat": 18.5944,
+"lon": -72.3074,
+"country": "Haiti",
+"cc": "HT",
+"es": false,
+"key": "18.5944,-72.3074",
+"nkey": ""
+},
+{
+"disp": "Santo Domingo",
+"lat": 18.4861,
+"lon": -69.9312,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "18.4861,-69.9312",
+"nkey": ""
+},
+{
+"disp": "Quito",
+"lat": -0.1807,
+"lon": -78.4678,
+"country": "Ecuador",
+"cc": "EC",
+"es": false,
+"key": "-0.1807,-78.4678",
+"nkey": ""
+},
+{
+"disp": "Napoli",
+"lat": 40.8518,
+"lon": 14.2681,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "40.8518,14.2681",
+"nkey": ""
+},
+{
+"disp": "Marseille",
+"lat": 43.2965,
+"lon": 5.3698,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "43.2965,5.3698",
+"nkey": ""
+},
+{
+"disp": "Los Angeles",
+"lat": 34.0522,
+"lon": -118.2437,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "34.0522,-118.2437",
+"nkey": ""
+},
+{
+"disp": "Chicago",
+"lat": 41.8781,
+"lon": -87.6298,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "41.8781,-87.6298",
+"nkey": ""
+},
+{
+"disp": "San Francisco",
+"lat": 37.7749,
+"lon": -122.4194,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "37.7749,-122.4194",
+"nkey": ""
+},
+{
+"disp": "Toronto",
+"lat": 43.6532,
+"lon": -79.3832,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "43.6532,-79.3832",
+"nkey": ""
+},
+{
+"disp": "Bruxelles · Brussel",
+"lat": 50.8503,
+"lon": 4.3517,
+"country": "Belgium",
+"cc": "BE",
+"es": false,
+"key": "50.8503,4.3517",
+"nkey": ""
+},
+{
+"disp": "Amsterdam",
+"lat": 52.3676,
+"lon": 4.9041,
+"country": "Kingdom of the Netherlands",
+"cc": "NL",
+"es": false,
+"key": "52.3676,4.9041",
+"nkey": ""
+},
+{
+"disp": "Wien",
+"lat": 48.2082,
+"lon": 16.3738,
+"country": "Austria",
+"cc": "AT",
+"es": false,
+"key": "48.2082,16.3738",
+"nkey": ""
+},
+{
+"disp": "Budapest",
+"lat": 47.4979,
+"lon": 19.0402,
+"country": "Hungary",
+"cc": "HU",
+"es": false,
+"key": "47.4979,19.0402",
+"nkey": ""
+},
+{
+"disp": "Beograd · Belgrade",
+"lat": 44.7866,
+"lon": 20.4489,
+"country": "Serbia",
+"cc": "RS",
+"es": false,
+"key": "44.7866,20.4489",
+"nkey": ""
+},
+{
+"disp": "София · Sofia",
+"lat": 42.6977,
+"lon": 23.3219,
+"country": "Bulgaria",
+"cc": "BG",
+"es": false,
+"key": "42.6977,23.3219",
+"nkey": ""
+},
+{
+"disp": "تونس · Tunis",
+"lat": 36.8065,
+"lon": 10.1815,
+"country": "Tunisia",
+"cc": "TN",
+"es": false,
+"key": "36.8065,10.1815",
+"nkey": ""
+},
+{
+"disp": "الجزائر · Alger",
+"lat": 36.7538,
+"lon": 3.0588,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "36.7538,3.0588",
+"nkey": ""
+},
+{
+"disp": "الخرطوم · Khartoum",
+"lat": 15.5007,
+"lon": 32.5599,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "15.5007,32.5599",
+"nkey": ""
+},
+{
+"disp": "دمشق · Damascus",
+"lat": 33.5138,
+"lon": 36.2765,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "33.5138,36.2765",
+"nkey": ""
+},
+{
+"disp": "کابل · Kabul",
+"lat": 34.5553,
+"lon": 69.2075,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "34.5553,69.2075",
+"nkey": ""
+},
+{
+"disp": "لاہور · Lahore",
+"lat": 31.5204,
+"lon": 74.3587,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "31.5204,74.3587",
+"nkey": ""
+},
+{
+"disp": "சென்னை · Chennai",
+"lat": 13.0827,
+"lon": 80.2707,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "13.0827,80.2707",
+"nkey": ""
+},
+{
+"disp": "Jakarta",
+"lat": -6.2088,
+"lon": 106.8456,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-6.2088,106.8456",
+"nkey": ""
+},
+{
+"disp": "กรุงเทพ · Bangkok",
+"lat": 13.7563,
+"lon": 100.5018,
+"country": "Thailand",
+"cc": "TH",
+"es": false,
+"key": "13.7563,100.5018",
+"nkey": ""
+},
+{
+"disp": "Medellín",
+"lat": 6.2442,
+"lon": -75.5812,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "6.2442,-75.5812",
+"nkey": ""
+},
+{
+"disp": "Santiago",
+"lat": -33.4489,
+"lon": -70.6693,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-33.4489,-70.6693",
+"nkey": ""
+},
+{
+"disp": "Cape Town",
+"lat": -33.9249,
+"lon": 18.4241,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-33.9249,18.4241",
+"nkey": ""
+},
+{
+"disp": "Durban",
+"lat": -29.8587,
+"lon": 31.0218,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-29.8587,31.0218",
+"nkey": ""
+},
+{
+"disp": "الإسكندرية · Alexandria",
+"lat": 31.2001,
+"lon": 29.9187,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "31.2001,29.9187",
+"nkey": ""
+},
+{
+"disp": "Luanda",
+"lat": -8.839,
+"lon": 13.2894,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-8.8390,13.2894",
+"nkey": ""
+},
+{
+"disp": "Maputo",
+"lat": -25.9692,
+"lon": 32.5732,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-25.9692,32.5732",
+"nkey": ""
+},
+{
+"disp": "Harare",
+"lat": -17.8252,
+"lon": 31.0335,
+"country": "Zimbabwe",
+"cc": "ZW",
+"es": false,
+"key": "-17.8252,31.0335",
+"nkey": ""
+},
+{
+"disp": "Lusaka",
+"lat": -15.3875,
+"lon": 28.3228,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-15.3875,28.3228",
+"nkey": ""
+},
+{
+"disp": "Kigali",
+"lat": -1.9441,
+"lon": 30.0619,
+"country": "Rwanda",
+"cc": "RW",
+"es": false,
+"key": "-1.9441,30.0619",
+"nkey": ""
+},
+{
+"disp": "Douala",
+"lat": 4.0511,
+"lon": 9.7679,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "4.0511,9.7679",
+"nkey": ""
+},
+{
+"disp": "Ouagadougou",
+"lat": 12.3714,
+"lon": -1.5197,
+"country": "Burkina Faso",
+"cc": "BF",
+"es": false,
+"key": "12.3714,-1.5197",
+"nkey": ""
+},
+{
+"disp": "Conakry",
+"lat": 9.6412,
+"lon": -13.5784,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "9.6412,-13.5784",
+"nkey": ""
+},
+{
+"disp": "Antananarivo",
+"lat": -18.8792,
+"lon": 47.5079,
+"country": "Madagascar",
+"cc": "MG",
+"es": false,
+"key": "-18.8792,47.5079",
+"nkey": ""
+},
+{
+"disp": "काठमाडौं · Kathmandu",
+"lat": 27.7172,
+"lon": 85.324,
+"country": "Nepal",
+"cc": "NP",
+"es": false,
+"key": "27.7172,85.3240",
+"nkey": ""
+},
+{
+"disp": "කොළඹ · Colombo",
+"lat": 6.9271,
+"lon": 79.8612,
+"country": "Sri Lanka",
+"cc": "LK",
+"es": false,
+"key": "6.9271,79.8612",
+"nkey": ""
+},
+{
+"disp": "ရန်ကုန် · Yangon",
+"lat": 16.8661,
+"lon": 96.1951,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "16.8661,96.1951",
+"nkey": ""
+},
+{
+"disp": "ភ្នំពេញ · Phnom Penh",
+"lat": 11.5564,
+"lon": 104.9282,
+"country": "Cambodia",
+"cc": "KH",
+"es": false,
+"key": "11.5564,104.9282",
+"nkey": ""
+},
+{
+"disp": "Hà Nội",
+"lat": 21.0278,
+"lon": 105.8342,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "21.0278,105.8342",
+"nkey": ""
+},
+{
+"disp": "Thành phố Hồ Chí Minh",
+"lat": 10.8231,
+"lon": 106.6297,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "10.8231,106.6297",
+"nkey": ""
+},
+{
+"disp": "Kuala Lumpur",
+"lat": 3.139,
+"lon": 101.6869,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "3.1390,101.6869",
+"nkey": ""
+},
+{
+"disp": "Улаанбаатар · Ulaanbaatar",
+"lat": 47.8864,
+"lon": 106.9057,
+"country": "Mongolia",
+"cc": "MN",
+"es": false,
+"key": "47.8864,106.9057",
+"nkey": ""
+},
+{
+"disp": "Toshkent · Tashkent",
+"lat": 41.2995,
+"lon": 69.2401,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "41.2995,69.2401",
+"nkey": ""
+},
+{
+"disp": "Алматы · Almaty",
+"lat": 43.222,
+"lon": 76.8512,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "43.2220,76.8512",
+"nkey": ""
+},
+{
+"disp": "თბილისი · Tbilisi",
+"lat": 41.7151,
+"lon": 44.8271,
+"country": "Georgia",
+"cc": "GE",
+"es": false,
+"key": "41.7151,44.8271",
+"nkey": ""
+},
+{
+"disp": "أربيل · Erbil",
+"lat": 36.1911,
+"lon": 44.0092,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "36.1911,44.0092",
+"nkey": ""
+},
+{
+"disp": "హైదరాబాద్ · Hyderabad",
+"lat": 17.385,
+"lon": 78.4867,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "17.3850,78.4867",
+"nkey": ""
+},
+{
+"disp": "ಬೆಂಗಳೂರು · Bangalore",
+"lat": 12.9716,
+"lon": 77.5946,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "12.9716,77.5946",
+"nkey": ""
+},
+{
+"disp": "Manchester",
+"lat": 53.4808,
+"lon": -2.2426,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "53.4808,-2.2426",
+"nkey": ""
+},
+{
+"disp": "Glasgow",
+"lat": 55.8642,
+"lon": -4.2518,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "55.8642,-4.2518",
+"nkey": ""
+},
+{
+"disp": "Dublin · Baile Átha Cliath",
+"lat": 53.3498,
+"lon": -6.2603,
+"country": "Ireland",
+"cc": "IE",
+"es": false,
+"key": "53.3498,-6.2603",
+"nkey": ""
+},
+{
+"disp": "Hamburg",
+"lat": 53.5511,
+"lon": 9.9937,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "53.5511,9.9937",
+"nkey": ""
+},
+{
+"disp": "München",
+"lat": 48.1351,
+"lon": 11.582,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "48.1351,11.5820",
+"nkey": ""
+},
+{
+"disp": "Milano",
+"lat": 45.4642,
+"lon": 9.19,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "45.4642,9.1900",
+"nkey": ""
+},
+{
+"disp": "Praha · Prague",
+"lat": 50.0755,
+"lon": 14.4378,
+"country": "Czech Republic",
+"cc": "CZ",
+"es": false,
+"key": "50.0755,14.4378",
+"nkey": ""
+},
+{
+"disp": "Θεσσαλονίκη · Thessaloniki",
+"lat": 40.6401,
+"lon": 22.9444,
+"country": "Greece",
+"cc": "GR",
+"es": false,
+"key": "40.6401,22.9444",
+"nkey": ""
+},
+{
+"disp": "Houston",
+"lat": 29.7604,
+"lon": -95.3698,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "29.7604,-95.3698",
+"nkey": ""
+},
+{
+"disp": "Miami",
+"lat": 25.7617,
+"lon": -80.1918,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "25.7617,-80.1918",
+"nkey": ""
+},
+{
+"disp": "Montréal",
+"lat": 45.5017,
+"lon": -73.5673,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "45.5017,-73.5673",
+"nkey": ""
+},
+{
+"disp": "Guadalajara",
+"lat": 20.6597,
+"lon": -103.3496,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "20.6597,-103.3496",
+"nkey": ""
+},
+{
+"disp": "Recife",
+"lat": -8.0476,
+"lon": -34.877,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-8.0476,-34.8770",
+"nkey": ""
+},
+{
+"disp": "La Paz",
+"lat": -16.4897,
+"lon": -68.1193,
+"country": "Bolivia",
+"cc": "BO",
+"es": false,
+"key": "-16.4897,-68.1193",
+"nkey": ""
+},
+{
+"disp": "Sydney",
+"lat": -33.8688,
+"lon": 151.2093,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-33.8688,151.2093",
+"nkey": ""
+},
+{
+"disp": "Melbourne",
+"lat": -37.8136,
+"lon": 144.9631,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-37.8136,144.9631",
+"nkey": ""
+},
+{
+"disp": "Shanghai · 上海市",
+"lat": 31.23234,
+"lon": 121.4691,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "31.2323,121.4691",
+"nkey": ""
+},
+{
+"disp": "Tokyo · 東京都",
+"lat": 35.67686,
+"lon": 139.76389,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "35.6769,139.7639",
+"nkey": ""
+},
+{
+"disp": "Seoul · 서울특별시",
+"lat": 37.56668,
+"lon": 126.97829,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "37.5667,126.9783",
+"nkey": ""
+},
+{
+"disp": "Surat",
+"lat": 21.20949,
+"lon": 72.83171,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "21.2095,72.8317",
+"nkey": ""
+},
+{
+"disp": "Ankara",
+"lat": 39.92078,
+"lon": 32.85405,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "39.9208,32.8541",
+"nkey": ""
+},
+{
+"disp": "Saint Petersburg · Санкт-Петербург",
+"lat": 59.93873,
+"lon": 30.31623,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "59.9387,30.3162",
+"nkey": ""
+},
+{
+"disp": "Singapore",
+"lat": 1.28992,
+"lon": 103.85191,
+"country": "Singapore",
+"cc": "SG",
+"es": false,
+"key": "1.2899,103.8519",
+"nkey": ""
+},
+{
+"disp": "Riyadh · الرياض",
+"lat": 24.63892,
+"lon": 46.71601,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "24.6389,46.7160",
+"nkey": ""
+},
+{
+"disp": "Haiphong · Hải Phòng",
+"lat": 20.8831,
+"lon": 106.67904,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "20.8831,106.6790",
+"nkey": ""
+},
+{
+"disp": "Dubai · دبي",
+"lat": 25.26472,
+"lon": 55.29241,
+"country": "United Arab Emirates",
+"cc": "AE",
+"es": false,
+"key": "25.2647,55.2924",
+"nkey": ""
+},
+{
+"disp": "New Taipei · 新北市",
+"lat": 25.012,
+"lon": 121.46566,
+"country": "Taiwan",
+"cc": "TW",
+"es": false,
+"key": "25.0120,121.4657",
+"nkey": ""
+},
+{
+"disp": "Pyongyang · 평양시",
+"lat": 39.01966,
+"lon": 125.75262,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "39.0197,125.7526",
+"nkey": ""
+},
+{
+"disp": "Guayaquil",
+"lat": -2.19006,
+"lon": -79.88687,
+"country": "Ecuador",
+"cc": "EC",
+"es": false,
+"key": "-2.1901,-79.8869",
+"nkey": ""
+},
+{
+"disp": "Faisalabad · فیصل آباد",
+"lat": 31.42206,
+"lon": 73.09233,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "31.4221,73.0923",
+"nkey": ""
+},
+{
+"disp": "Maroua",
+"lat": 10.60331,
+"lon": 14.32816,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "10.6033,14.3282",
+"nkey": ""
+},
+{
+"disp": "Ibadan · Ìbàdàn",
+"lat": 7.37837,
+"lon": 3.89723,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "7.3784,3.8972",
+"nkey": ""
+},
+{
+"disp": "Mashhad · مشهد",
+"lat": 36.29749,
+"lon": 59.60592,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "36.2975,59.6059",
+"nkey": ""
+},
+{
+"disp": "Brasília",
+"lat": -15.79399,
+"lon": -47.8828,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-15.7940,-47.8828",
+"nkey": ""
+},
+{
+"disp": "Surabaya",
+"lat": -7.24628,
+"lon": 112.73777,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-7.2463,112.7378",
+"nkey": ""
+},
+{
+"disp": "Mogadishu · Muqdisho مقديشو",
+"lat": 2.03493,
+"lon": 45.34192,
+"country": "Somalia",
+"cc": "SO",
+"es": false,
+"key": "2.0349,45.3419",
+"nkey": ""
+},
+{
+"disp": "Chattogram · চট্টগ্রাম",
+"lat": 22.33378,
+"lon": 91.83443,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "22.3338,91.8344",
+"nkey": ""
+},
+{
+"disp": "Valencia",
+"lat": 10.17003,
+"lon": -68.0004,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.1700,-68.0004",
+"nkey": ""
+},
+{
+"disp": "Brisbane",
+"lat": -27.46896,
+"lon": 153.0235,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-27.4690,153.0235",
+"nkey": ""
+},
+{
+"disp": "Cali",
+"lat": 3.452,
+"lon": -76.53253,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "3.4520,-76.5325",
+"nkey": ""
+},
+{
+"disp": "Basra · البصرة",
+"lat": 30.49524,
+"lon": 47.8091,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "30.4952,47.8091",
+"nkey": ""
+},
+{
+"disp": "Aleppo · حلب",
+"lat": 36.19924,
+"lon": 37.16373,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "36.1992,37.1637",
+"nkey": ""
+},
+{
+"disp": "Tripoli · ⵟⴰⵕⴰⴱⵍⵓⵙ طرابلس Tripoli",
+"lat": 32.89667,
+"lon": 13.17779,
+"country": "Libya",
+"cc": "LY",
+"es": false,
+"key": "32.8967,13.1778",
+"nkey": ""
+},
+{
+"disp": "Goma",
+"lat": -1.66657,
+"lon": 29.22565,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "-1.6666,29.2257",
+"nkey": ""
+},
+{
+"disp": "Minsk · Мінск",
+"lat": 53.90247,
+"lon": 27.56182,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "53.9025,27.5618",
+"nkey": ""
+},
+{
+"disp": "Davao City",
+"lat": 7.06483,
+"lon": 125.60806,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "7.0648,125.6081",
+"nkey": ""
+},
+{
+"disp": "Tijuana",
+"lat": 32.53174,
+"lon": -117.01953,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "32.5317,-117.0195",
+"nkey": ""
+},
+{
+"disp": "Havana",
+"lat": 23.1353,
+"lon": -82.35896,
+"country": "Cuba",
+"cc": "CU",
+"es": false,
+"key": "23.1353,-82.3590",
+"nkey": ""
+},
+{
+"disp": "Phoenix",
+"lat": 33.44844,
+"lon": -112.07414,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "33.4484,-112.0741",
+"nkey": ""
+},
+{
+"disp": "Cordoba · Córdoba",
+"lat": -31.41669,
+"lon": -64.18342,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-31.4167,-64.1834",
+"nkey": ""
+},
+{
+"disp": "Rabat · Rabat ⵔⴱⴰⵟ الرباط",
+"lat": 34.02185,
+"lon": -6.84089,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "34.0219,-6.8409",
+"nkey": ""
+},
+{
+"disp": "Astana · Астана",
+"lat": 51.12828,
+"lon": 71.43047,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "51.1283,71.4305",
+"nkey": ""
+},
+{
+"disp": "Santa Cruz de la Sierra",
+"lat": -17.78342,
+"lon": -63.18209,
+"country": "Bolivia",
+"cc": "BO",
+"es": false,
+"key": "-17.7834,-63.1821",
+"nkey": ""
+},
+{
+"disp": "Sana'a · صنعاء",
+"lat": 15.35386,
+"lon": 44.20588,
+"country": "Yemen",
+"cc": "YE",
+"es": false,
+"key": "15.3539,44.2059",
+"nkey": ""
+},
+{
+"disp": "Kumasi",
+"lat": 6.69856,
+"lon": -1.62331,
+"country": "Ghana",
+"cc": "GH",
+"es": false,
+"key": "6.6986,-1.6233",
+"nkey": ""
+},
+{
+"disp": "Auckland",
+"lat": -36.85209,
+"lon": 174.76318,
+"country": "New Zealand",
+"cc": "NZ",
+"es": false,
+"key": "-36.8521,174.7632",
+"nkey": ""
+},
+{
+"disp": "Kharkiv · Харків",
+"lat": 49.99232,
+"lon": 36.23101,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "49.9923,36.2310",
+"nkey": ""
+},
+{
+"disp": "Bishkek · Бишкек",
+"lat": 42.87614,
+"lon": 74.60367,
+"country": "Kyrgyzstan",
+"cc": "KG",
+"es": false,
+"key": "42.8761,74.6037",
+"nkey": ""
+},
+{
+"disp": "Doha · الدوحة",
+"lat": 25.28563,
+"lon": 51.52642,
+"country": "Qatar",
+"cc": "QA",
+"es": false,
+"key": "25.2856,51.5264",
+"nkey": ""
+},
+{
+"disp": "Montevideo",
+"lat": -34.90589,
+"lon": -56.19131,
+"country": "Uruguay",
+"cc": "UY",
+"es": false,
+"key": "-34.9059,-56.1913",
+"nkey": ""
+},
+{
+"disp": "Mombasa",
+"lat": -4.05052,
+"lon": 39.66717,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "-4.0505,39.6672",
+"nkey": ""
+},
+{
+"disp": "Calgary",
+"lat": 51.04561,
+"lon": -114.05754,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "51.0456,-114.0575",
+"nkey": ""
+},
+{
+"disp": "Mandalay · မန္တလေး",
+"lat": 21.95968,
+"lon": 96.09487,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "21.9597,96.0949",
+"nkey": ""
+},
+{
+"disp": "Dushanbe · Душанбе",
+"lat": 38.5767,
+"lon": 68.78543,
+"country": "Tajikistan",
+"cc": "TJ",
+"es": false,
+"key": "38.5767,68.7854",
+"nkey": ""
+},
+{
+"disp": "Tegucigalpa",
+"lat": 14.10581,
+"lon": -87.20471,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "14.1058,-87.2047",
+"nkey": ""
+},
+{
+"disp": "Oslo",
+"lat": 59.91333,
+"lon": 10.73897,
+"country": "Norway",
+"cc": "NO",
+"es": false,
+"key": "59.9133,10.7390",
+"nkey": ""
+},
+{
+"disp": "Yerevan · Երևան",
+"lat": 40.17771,
+"lon": 44.51262,
+"country": "Armenia",
+"cc": "AM",
+"es": false,
+"key": "40.1777,44.5126",
+"nkey": ""
+},
+{
+"disp": "Mwanza",
+"lat": -2.51969,
+"lon": 32.90144,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-2.5197,32.9014",
+"nkey": ""
+},
+{
+"disp": "N'Djamena · N'Djaména انجمينا",
+"lat": 12.11915,
+"lon": 15.05028,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "12.1191,15.0503",
+"nkey": ""
+},
+{
+"disp": "Panama City · Panamá",
+"lat": 8.97145,
+"lon": -79.53418,
+"country": "Panama",
+"cc": "PA",
+"es": false,
+"key": "8.9715,-79.5342",
+"nkey": ""
+},
+{
+"disp": "Cologne · Köln",
+"lat": 50.93836,
+"lon": 6.95997,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "50.9384,6.9600",
+"nkey": ""
+},
+{
+"disp": "Gqeberha",
+"lat": -33.96186,
+"lon": 25.61867,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-33.9619,25.6187",
+"nkey": ""
+},
+{
+"disp": "Birmingham",
+"lat": 52.4797,
+"lon": -1.90269,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "52.4797,-1.9027",
+"nkey": ""
+},
+{
+"disp": "Managua",
+"lat": 12.15471,
+"lon": -86.27372,
+"country": "Nicaragua",
+"cc": "NI",
+"es": false,
+"key": "12.1547,-86.2737",
+"nkey": ""
+},
+{
+"disp": "Ashgabat · Aşgabat",
+"lat": 37.94046,
+"lon": 58.38235,
+"country": "Turkmenistan",
+"cc": "TM",
+"es": false,
+"key": "37.9405,58.3824",
+"nkey": ""
+},
+{
+"disp": "Niamey",
+"lat": 13.52483,
+"lon": 2.10982,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "13.5248,2.1098",
+"nkey": ""
+},
+{
+"disp": "Monrovia",
+"lat": 6.32036,
+"lon": -10.80605,
+"country": "Liberia",
+"cc": "LR",
+"es": false,
+"key": "6.3204,-10.8061",
+"nkey": ""
+},
+{
+"disp": "Arequipa",
+"lat": -16.39887,
+"lon": -71.53696,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-16.3989,-71.5370",
+"nkey": ""
+},
+{
+"disp": "Pointe-Noire",
+"lat": -4.79754,
+"lon": 11.85033,
+"country": "Republic of the Congo",
+"cc": "CG",
+"es": false,
+"key": "-4.7975,11.8503",
+"nkey": ""
+},
+{
+"disp": "Blantyre",
+"lat": -15.78625,
+"lon": 35.00357,
+"country": "Malawi",
+"cc": "MW",
+"es": false,
+"key": "-15.7863,35.0036",
+"nkey": ""
+},
+{
+"disp": "Stockholm",
+"lat": 59.32512,
+"lon": 18.07109,
+"country": "Sweden",
+"cc": "SE",
+"es": false,
+"key": "59.3251,18.0711",
+"nkey": ""
+},
+{
+"disp": "Nouakchott · نواكشوط",
+"lat": 18.07924,
+"lon": -15.97801,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "18.0792,-15.9780",
+"nkey": ""
+},
+{
+"disp": "Sfax · صفاقس",
+"lat": 34.73944,
+"lon": 10.7604,
+"country": "Tunisia",
+"cc": "TN",
+"es": false,
+"key": "34.7394,10.7604",
+"nkey": ""
+},
+{
+"disp": "Freetown",
+"lat": 8.479,
+"lon": -13.26795,
+"country": "Sierra Leone",
+"cc": "SL",
+"es": false,
+"key": "8.4790,-13.2680",
+"nkey": ""
+},
+{
+"disp": "Wrocław",
+"lat": 51.10898,
+"lon": 17.03267,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "51.1090,17.0327",
+"nkey": ""
+},
+{
+"disp": "Turin",
+"lat": 45.06776,
+"lon": 7.68249,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "45.0678,7.6825",
+"nkey": ""
+},
+{
+"disp": "Oran · Oran ⵡⴰⵀⵔⴻⵏ وهران",
+"lat": 35.70444,
+"lon": -0.6503,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "35.7044,-0.6503",
+"nkey": ""
+},
+{
+"disp": "Libreville",
+"lat": 0.40865,
+"lon": 9.44188,
+"country": "Gabon",
+"cc": "GA",
+"es": false,
+"key": "0.4087,9.4419",
+"nkey": ""
+},
+{
+"disp": "Lomé",
+"lat": 6.13042,
+"lon": 1.21583,
+"country": "Togo",
+"cc": "TG",
+"es": false,
+"key": "6.1304,1.2158",
+"nkey": ""
+},
+{
+"disp": "Bouaké",
+"lat": 7.68902,
+"lon": -5.02836,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "7.6890,-5.0284",
+"nkey": ""
+},
+{
+"disp": "Lobito",
+"lat": -12.35069,
+"lon": 13.54643,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-12.3507,13.5464",
+"nkey": ""
+},
+{
+"disp": "George Town",
+"lat": 5.41416,
+"lon": 100.32874,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "5.4142,100.3287",
+"nkey": ""
+},
+{
+"disp": "Vientiane · ວຽງຈັນ",
+"lat": 17.9641,
+"lon": 102.61337,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "17.9641,102.6134",
+"nkey": ""
+},
+{
+"disp": "Jerusalem · ירושלים",
+"lat": 31.77885,
+"lon": 35.22579,
+"country": "Israel",
+"cc": "IL",
+"es": false,
+"key": "31.7788,35.2258",
+"nkey": ""
+},
+{
+"disp": "Cotonou",
+"lat": 6.3677,
+"lon": 2.42525,
+"country": "Benin",
+"cc": "BJ",
+"es": false,
+"key": "6.3677,2.4253",
+"nkey": ""
+},
+{
+"disp": "Chișinău",
+"lat": 47.02451,
+"lon": 28.83229,
+"country": "Moldova",
+"cc": "MD",
+"es": false,
+"key": "47.0245,28.8323",
+"nkey": ""
+},
+{
+"disp": "Asuncion · Asunción",
+"lat": -25.28005,
+"lon": -57.63438,
+"country": "Paraguay",
+"cc": "PY",
+"es": false,
+"key": "-25.2800,-57.6344",
+"nkey": ""
+},
+{
+"disp": "Bangui",
+"lat": 4.36351,
+"lon": 18.58359,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "4.3635,18.5836",
+"nkey": ""
+},
+{
+"disp": "Bobo-Dioulasso",
+"lat": 11.17658,
+"lon": -4.29614,
+"country": "Burkina Faso",
+"cc": "BF",
+"es": false,
+"key": "11.1766,-4.2961",
+"nkey": ""
+},
+{
+"disp": "Helsinki",
+"lat": 60.16662,
+"lon": 24.94354,
+"country": "Finland",
+"cc": "FI",
+"es": false,
+"key": "60.1666,24.9435",
+"nkey": ""
+},
+{
+"disp": "Namangan",
+"lat": 40.99965,
+"lon": 71.67262,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "40.9997,71.6726",
+"nkey": ""
+},
+{
+"disp": "Zagreb",
+"lat": 45.8131,
+"lon": 15.97728,
+"country": "Croatia",
+"cc": "HR",
+"es": false,
+"key": "45.8131,15.9773",
+"nkey": ""
+},
+{
+"disp": "Kingston",
+"lat": 17.97121,
+"lon": -76.79281,
+"country": "Jamaica",
+"cc": "JM",
+"es": false,
+"key": "17.9712,-76.7928",
+"nkey": ""
+},
+{
+"disp": "Bujumbura",
+"lat": -3.36381,
+"lon": 29.3675,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-3.3638,29.3675",
+"nkey": ""
+},
+{
+"disp": "Bulawayo",
+"lat": -20.15606,
+"lon": 28.58871,
+"country": "Zimbabwe",
+"cc": "ZW",
+"es": false,
+"key": "-20.1561,28.5887",
+"nkey": ""
+},
+{
+"disp": "Kuwait City · مدينة الكويت",
+"lat": 29.37965,
+"lon": 47.97342,
+"country": "Kuwait",
+"cc": "KW",
+"es": false,
+"key": "29.3797,47.9734",
+"nkey": ""
+},
+{
+"disp": "Copenhagen · København",
+"lat": 55.68672,
+"lon": 12.57007,
+"country": "Denmark",
+"cc": "DK",
+"es": false,
+"key": "55.6867,12.5701",
+"nkey": ""
+},
+{
+"disp": "Beijing · 北京市",
+"lat": 39.90571,
+"lon": 116.3913,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "39.9057,116.3913",
+"nkey": ""
+},
+{
+"disp": "Osaka · 大阪市",
+"lat": 34.69376,
+"lon": 135.50145,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "34.6938,135.5015",
+"nkey": ""
+},
+{
+"disp": "Busan · 부산광역시",
+"lat": 35.17995,
+"lon": 129.07524,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.1799,129.0752",
+"nkey": ""
+},
+{
+"disp": "Ahmedabad",
+"lat": 23.02154,
+"lon": 72.58006,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "23.0215,72.5801",
+"nkey": ""
+},
+{
+"disp": "İzmir",
+"lat": 38.41925,
+"lon": 27.12847,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "38.4192,27.1285",
+"nkey": ""
+},
+{
+"disp": "Novosibirsk · Новосибирск",
+"lat": 55.02883,
+"lon": 82.92269,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "55.0288,82.9227",
+"nkey": ""
+},
+{
+"disp": "Jeddah · جدة",
+"lat": 21.55044,
+"lon": 39.17424,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "21.5504,39.1742",
+"nkey": ""
+},
+{
+"disp": "Cần Thơ",
+"lat": 10.0362,
+"lon": 105.78727,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "10.0362,105.7873",
+"nkey": ""
+},
+{
+"disp": "Abu Dhabi · أبو ظبي",
+"lat": 24.45384,
+"lon": 54.3774,
+"country": "United Arab Emirates",
+"cc": "AE",
+"es": false,
+"key": "24.4538,54.3774",
+"nkey": ""
+},
+{
+"disp": "Kaohsiung · 高雄市",
+"lat": 22.62033,
+"lon": 120.31204,
+"country": "Taiwan",
+"cc": "TW",
+"es": false,
+"key": "22.6203,120.3120",
+"nkey": ""
+},
+{
+"disp": "Hamhung · 함흥시",
+"lat": 39.91655,
+"lon": 127.53843,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "39.9166,127.5384",
+"nkey": ""
+},
+{
+"disp": "Rawalpindi · راولپنڈی",
+"lat": 33.59154,
+"lon": 73.05372,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "33.5915,73.0537",
+"nkey": ""
+},
+{
+"disp": "Yaoundé",
+"lat": 3.86899,
+"lon": 11.52133,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "3.8690,11.5213",
+"nkey": ""
+},
+{
+"disp": "Kano",
+"lat": 11.994,
+"lon": 8.52197,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "11.9940,8.5220",
+"nkey": ""
+},
+{
+"disp": "Isfahan · اصفهان",
+"lat": 32.67079,
+"lon": 51.665,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "32.6708,51.6650",
+"nkey": ""
+},
+{
+"disp": "Fortaleza",
+"lat": -3.73045,
+"lon": -38.5218,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-3.7304,-38.5218",
+"nkey": ""
+},
+{
+"disp": "Bandung",
+"lat": -6.92185,
+"lon": 107.60708,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-6.9219,107.6071",
+"nkey": ""
+},
+{
+"disp": "Hargeisa · Hargeysa هرجيسا",
+"lat": 9.56173,
+"lon": 44.0618,
+"country": "Somalia",
+"cc": "SO",
+"es": false,
+"key": "9.5617,44.0618",
+"nkey": ""
+},
+{
+"disp": "Khulna · খুলনা",
+"lat": 22.81717,
+"lon": 89.56376,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "22.8172,89.5638",
+"nkey": ""
+},
+{
+"disp": "Maracaibo",
+"lat": 10.64981,
+"lon": -71.64436,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.6498,-71.6444",
+"nkey": ""
+},
+{
+"disp": "Perth",
+"lat": -31.9559,
+"lon": 115.86058,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-31.9559,115.8606",
+"nkey": ""
+},
+{
+"disp": "Barranquilla",
+"lat": 10.99386,
+"lon": -74.79261,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "10.9939,-74.7926",
+"nkey": ""
+},
+{
+"disp": "Mosul · الموصل",
+"lat": 36.34158,
+"lon": 43.12914,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "36.3416,43.1291",
+"nkey": ""
+},
+{
+"disp": "Homs · حمص",
+"lat": 34.73333,
+"lon": 36.71667,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "34.7333,36.7167",
+"nkey": ""
+},
+{
+"disp": "Benghazi · بنغازي",
+"lat": 32.12002,
+"lon": 20.08122,
+"country": "Libya",
+"cc": "LY",
+"es": false,
+"key": "32.1200,20.0812",
+"nkey": ""
+},
+{
+"disp": "Mbuji-Mayi",
+"lat": -6.12589,
+"lon": 23.59981,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "-6.1259,23.5998",
+"nkey": ""
+},
+{
+"disp": "Zamboanga City",
+"lat": 6.90469,
+"lon": 122.07649,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "6.9047,122.0765",
+"nkey": ""
+},
+{
+"disp": "León",
+"lat": 21.12196,
+"lon": -101.68298,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "21.1220,-101.6830",
+"nkey": ""
+},
+{
+"disp": "Philadelphia",
+"lat": 39.95272,
+"lon": -75.16353,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "39.9527,-75.1635",
+"nkey": ""
+},
+{
+"disp": "Rosario",
+"lat": -32.95936,
+"lon": -60.6617,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-32.9594,-60.6617",
+"nkey": ""
+},
+{
+"disp": "Fez · Fès ⴼⴰⵙ فاس",
+"lat": 34.03465,
+"lon": -5.01619,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "34.0346,-5.0162",
+"nkey": ""
+},
+{
+"disp": "Shymkent · Шымкент",
+"lat": 42.3147,
+"lon": 69.58833,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "42.3147,69.5883",
+"nkey": ""
+},
+{
+"disp": "Cochabamba",
+"lat": -17.39361,
+"lon": -66.1569,
+"country": "Bolivia",
+"cc": "BO",
+"es": false,
+"key": "-17.3936,-66.1569",
+"nkey": ""
+},
+{
+"disp": "Tamale",
+"lat": 9.4052,
+"lon": -0.8424,
+"country": "Ghana",
+"cc": "GH",
+"es": false,
+"key": "9.4052,-0.8424",
+"nkey": ""
+},
+{
+"disp": "Dnipro · Дніпро",
+"lat": 48.46802,
+"lon": 35.04177,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "48.4680,35.0418",
+"nkey": ""
+},
+{
+"disp": "Edmonton",
+"lat": 53.54621,
+"lon": -113.49124,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "53.5462,-113.4912",
+"nkey": ""
+},
+{
+"disp": "Nay Pyi Taw · နေပြည်တော်",
+"lat": 19.77533,
+"lon": 96.10326,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "19.7753,96.1033",
+"nkey": ""
+},
+{
+"disp": "San Pedro Sula",
+"lat": 15.50535,
+"lon": -88.02508,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "15.5053,-88.0251",
+"nkey": ""
+},
+{
+"disp": "Dodoma",
+"lat": -6.17912,
+"lon": 35.74682,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-6.1791,35.7468",
+"nkey": ""
+},
+{
+"disp": "Frankfurt",
+"lat": 50.11064,
+"lon": 8.68209,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "50.1106,8.6821",
+"nkey": ""
+},
+{
+"disp": "Pretoria",
+"lat": -25.74593,
+"lon": 28.18791,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-25.7459,28.1879",
+"nkey": ""
+},
+{
+"disp": "Leeds",
+"lat": 53.79742,
+"lon": -1.54379,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "53.7974,-1.5438",
+"nkey": ""
+},
+{
+"disp": "Trujillo",
+"lat": -8.11168,
+"lon": -79.02877,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-8.1117,-79.0288",
+"nkey": ""
+},
+{
+"disp": "Lilongwe",
+"lat": -13.98751,
+"lon": 33.76814,
+"country": "Malawi",
+"cc": "MW",
+"es": false,
+"key": "-13.9875,33.7681",
+"nkey": ""
+},
+{
+"disp": "Gothenburg · Göteborg",
+"lat": 57.70723,
+"lon": 11.96702,
+"country": "Sweden",
+"cc": "SE",
+"es": false,
+"key": "57.7072,11.9670",
+"nkey": ""
+},
+{
+"disp": "Krakow · Kraków",
+"lat": 50.06195,
+"lon": 19.93686,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "50.0620,19.9369",
+"nkey": ""
+},
+{
+"disp": "Palermo",
+"lat": 38.11123,
+"lon": 13.35244,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "38.1112,13.3524",
+"nkey": ""
+},
+{
+"disp": "Bouira · Bouira ⵝⵓⵠⵉⵔⴻⵜ البويرة",
+"lat": 36.3739,
+"lon": 3.9007,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "36.3739,3.9007",
+"nkey": ""
+},
+{
+"disp": "Lubango",
+"lat": -14.91956,
+"lon": 13.48975,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-14.9196,13.4898",
+"nkey": ""
+},
+{
+"disp": "Ipoh",
+"lat": 4.59868,
+"lon": 101.09002,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "4.5987,101.0900",
+"nkey": ""
+},
+{
+"disp": "Chengdu · 成都市",
+"lat": 30.65987,
+"lon": 104.06332,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "30.6599,104.0633",
+"nkey": ""
+},
+{
+"disp": "Nagoya · 名古屋市",
+"lat": 35.1851,
+"lon": 136.89984,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "35.1851,136.8998",
+"nkey": ""
+},
+{
+"disp": "Daegu · 대구광역시",
+"lat": 35.8713,
+"lon": 128.6018,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.8713,128.6018",
+"nkey": ""
+},
+{
+"disp": "Prayagraj",
+"lat": 25.43813,
+"lon": 81.8338,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "25.4381,81.8338",
+"nkey": ""
+},
+{
+"disp": "Bursa",
+"lat": 40.18257,
+"lon": 29.0675,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "40.1826,29.0675",
+"nkey": ""
+},
+{
+"disp": "Yekaterinburg · Екатеринбург",
+"lat": 56.83821,
+"lon": 60.60079,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "56.8382,60.6008",
+"nkey": ""
+},
+{
+"disp": "Mecca · مكة",
+"lat": 21.42085,
+"lon": 39.82687,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "21.4209,39.8269",
+"nkey": ""
+},
+{
+"disp": "Da Nang · Đà Nẵng",
+"lat": 16.0685,
+"lon": 108.22402,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "16.0685,108.2240",
+"nkey": ""
+},
+{
+"disp": "Al Ain · العين",
+"lat": 24.22487,
+"lon": 55.74522,
+"country": "United Arab Emirates",
+"cc": "AE",
+"es": false,
+"key": "24.2249,55.7452",
+"nkey": ""
+},
+{
+"disp": "Taichung · 臺中市",
+"lat": 24.16316,
+"lon": 120.64783,
+"country": "Taiwan",
+"cc": "TW",
+"es": false,
+"key": "24.1632,120.6478",
+"nkey": ""
+},
+{
+"disp": "Chŏngjin · 청진시",
+"lat": 41.78325,
+"lon": 129.82066,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "41.7833,129.8207",
+"nkey": ""
+},
+{
+"disp": "Gujranwala · گوجرانوالہ",
+"lat": 32.15253,
+"lon": 74.19337,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "32.1525,74.1934",
+"nkey": ""
+},
+{
+"disp": "Bamenda",
+"lat": 5.96141,
+"lon": 10.15165,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "5.9614,10.1517",
+"nkey": ""
+},
+{
+"disp": "Port Harcourt",
+"lat": 4.76766,
+"lon": 7.01885,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "4.7677,7.0188",
+"nkey": ""
+},
+{
+"disp": "Shiraz · شیراز",
+"lat": 29.60602,
+"lon": 52.5378,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "29.6060,52.5378",
+"nkey": ""
+},
+{
+"disp": "Salvador",
+"lat": -12.98225,
+"lon": -38.48128,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-12.9823,-38.4813",
+"nkey": ""
+},
+{
+"disp": "Medan",
+"lat": 3.58946,
+"lon": 98.67416,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "3.5895,98.6742",
+"nkey": ""
+},
+{
+"disp": "Maracay",
+"lat": 10.23751,
+"lon": -67.58902,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.2375,-67.5890",
+"nkey": ""
+},
+{
+"disp": "Adelaide",
+"lat": -34.92818,
+"lon": 138.59993,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-34.9282,138.5999",
+"nkey": ""
+},
+{
+"disp": "Cartagena",
+"lat": 10.42656,
+"lon": -75.54417,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "10.4266,-75.5442",
+"nkey": ""
+},
+{
+"disp": "Al Hillah · الحلة",
+"lat": 32.48224,
+"lon": 44.43281,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "32.4822,44.4328",
+"nkey": ""
+},
+{
+"disp": "Lubumbashi",
+"lat": -11.66423,
+"lon": 27.48263,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "-11.6642,27.4826",
+"nkey": ""
+},
+{
+"disp": "Cebu City",
+"lat": 10.29349,
+"lon": 123.90182,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "10.2935,123.9018",
+"nkey": ""
+},
+{
+"disp": "Puebla",
+"lat": 19.04372,
+"lon": -98.19815,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "19.0437,-98.1981",
+"nkey": ""
+},
+{
+"disp": "San Antonio",
+"lat": 29.4246,
+"lon": -98.49514,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "29.4246,-98.4951",
+"nkey": ""
+},
+{
+"disp": "Mendoza",
+"lat": -32.88942,
+"lon": -68.84462,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-32.8894,-68.8446",
+"nkey": ""
+},
+{
+"disp": "Marrakesh · Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش",
+"lat": 31.62583,
+"lon": -7.98916,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "31.6258,-7.9892",
+"nkey": ""
+},
+{
+"disp": "Odesa · Одеса",
+"lat": 46.4843,
+"lon": 30.73229,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "46.4843,30.7323",
+"nkey": ""
+},
+{
+"disp": "Ottawa",
+"lat": 45.42088,
+"lon": -75.69011,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "45.4209,-75.6901",
+"nkey": ""
+},
+{
+"disp": "Zanzibar City · Zanzibar City مدينة زنجبار",
+"lat": -6.16649,
+"lon": 39.20743,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-6.1665,39.2074",
+"nkey": ""
+},
+{
+"disp": "Leipzig",
+"lat": 51.34063,
+"lon": 12.37473,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "51.3406,12.3747",
+"nkey": ""
+},
+{
+"disp": "Polokwane",
+"lat": -23.90583,
+"lon": 29.46139,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-23.9058,29.4614",
+"nkey": ""
+},
+{
+"disp": "Łódź",
+"lat": 51.76873,
+"lon": 19.45699,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "51.7687,19.4570",
+"nkey": ""
+},
+{
+"disp": "Huambo",
+"lat": -12.77725,
+"lon": 15.73467,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-12.7773,15.7347",
+"nkey": ""
+},
+{
+"disp": "Seremban",
+"lat": 2.7231,
+"lon": 101.94006,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "2.7231,101.9401",
+"nkey": ""
+},
+{
+"disp": "Shenzhen · 深圳市",
+"lat": 22.54457,
+"lon": 114.05454,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "22.5446,114.0545",
+"nkey": ""
+},
+{
+"disp": "Sapporo · 札幌市",
+"lat": 43.06194,
+"lon": 141.35429,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "43.0619,141.3543",
+"nkey": ""
+},
+{
+"disp": "Gwangju · 광주",
+"lat": 35.15946,
+"lon": 126.8515,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.1595,126.8515",
+"nkey": ""
+},
+{
+"disp": "Lucknow",
+"lat": 26.8381,
+"lon": 80.9346,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "26.8381,80.9346",
+"nkey": ""
+},
+{
+"disp": "Antalya",
+"lat": 36.88657,
+"lon": 30.70302,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "36.8866,30.7030",
+"nkey": ""
+},
+{
+"disp": "Kazan · Казань",
+"lat": 55.79465,
+"lon": 49.1115,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "55.7946,49.1115",
+"nkey": ""
+},
+{
+"disp": "Medina · المدينة المنورة",
+"lat": 24.47115,
+"lon": 39.61112,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "24.4712,39.6111",
+"nkey": ""
+},
+{
+"disp": "Peshawar · پيښور",
+"lat": 34.01238,
+"lon": 71.57875,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "34.0124,71.5787",
+"nkey": ""
+},
+{
+"disp": "Garoua",
+"lat": 9.30707,
+"lon": 13.39345,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "9.3071,13.3934",
+"nkey": ""
+},
+{
+"disp": "Maiduguri",
+"lat": 11.83954,
+"lon": 13.15362,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "11.8395,13.1536",
+"nkey": ""
+},
+{
+"disp": "Tabriz · تبریز",
+"lat": 38.07386,
+"lon": 46.29788,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "38.0739,46.2979",
+"nkey": ""
+},
+{
+"disp": "Belo Horizonte",
+"lat": -19.92273,
+"lon": -43.94509,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-19.9227,-43.9451",
+"nkey": ""
+},
+{
+"disp": "Palembang",
+"lat": -2.98882,
+"lon": 104.75685,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-2.9888,104.7569",
+"nkey": ""
+},
+{
+"disp": "Ciudad Guayana",
+"lat": 8.32238,
+"lon": -62.68966,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "8.3224,-62.6897",
+"nkey": ""
+},
+{
+"disp": "Gold Coast",
+"lat": -28.00237,
+"lon": 153.4146,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-28.0024,153.4146",
+"nkey": ""
+},
+{
+"disp": "Cúcuta",
+"lat": 7.89715,
+"lon": -72.50804,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "7.8971,-72.5080",
+"nkey": ""
+},
+{
+"disp": "Al-Najaf · النجف",
+"lat": 32.00102,
+"lon": 44.32999,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "32.0010,44.3300",
+"nkey": ""
+},
+{
+"disp": "Cagayan de Oro",
+"lat": 8.47564,
+"lon": 124.64215,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "8.4756,124.6422",
+"nkey": ""
+},
+{
+"disp": "Ciudad Juárez",
+"lat": 31.6908,
+"lon": -106.42532,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "31.6908,-106.4253",
+"nkey": ""
+},
+{
+"disp": "Dallas",
+"lat": 32.77627,
+"lon": -96.79686,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "32.7763,-96.7969",
+"nkey": ""
+},
+{
+"disp": "La Plata",
+"lat": -34.92068,
+"lon": -57.95376,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-34.9207,-57.9538",
+"nkey": ""
+},
+{
+"disp": "Tangier · Tanger ⵟⴰⵏⵊⴰ طنجة",
+"lat": 35.76963,
+"lon": -5.80335,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "35.7696,-5.8034",
+"nkey": ""
+},
+{
+"disp": "Donetsk · Донецьк",
+"lat": 48.01588,
+"lon": 37.80134,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "48.0159,37.8013",
+"nkey": ""
+},
+{
+"disp": "Winnipeg",
+"lat": 49.89554,
+"lon": -97.13846,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "49.8955,-97.1385",
+"nkey": ""
+},
+{
+"disp": "Arusha",
+"lat": -3.36968,
+"lon": 36.68808,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-3.3697,36.6881",
+"nkey": ""
+},
+{
+"disp": "Stuttgart",
+"lat": 48.77845,
+"lon": 9.18001,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "48.7784,9.1800",
+"nkey": ""
+},
+{
+"disp": "Pietermaritzburg",
+"lat": -29.6,
+"lon": 30.37889,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-29.6000,30.3789",
+"nkey": ""
+},
+{
+"disp": "Uíge",
+"lat": -7.61173,
+"lon": 15.05635,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-7.6117,15.0564",
+"nkey": ""
+},
+{
+"disp": "Guangzhou · 广州市",
+"lat": 23.12884,
+"lon": 113.25896,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "23.1288,113.2590",
+"nkey": ""
+},
+{
+"disp": "Fukuoka · 福岡市",
+"lat": 33.5899,
+"lon": 130.40175,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "33.5899,130.4017",
+"nkey": ""
+},
+{
+"disp": "Daejeon · 대전광역시",
+"lat": 36.3497,
+"lon": 127.3849,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "36.3497,127.3849",
+"nkey": ""
+},
+{
+"disp": "Indore",
+"lat": 22.72036,
+"lon": 75.8682,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "22.7204,75.8682",
+"nkey": ""
+},
+{
+"disp": "Adana",
+"lat": 36.98636,
+"lon": 35.32529,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "36.9864,35.3253",
+"nkey": ""
+},
+{
+"disp": "Krasnoyarsk · Красноярск",
+"lat": 56.00912,
+"lon": 92.87259,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "56.0091,92.8726",
+"nkey": ""
+},
+{
+"disp": "Al Ahsa · الأحساء",
+"lat": 25.38776,
+"lon": 49.56266,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "25.3878,49.5627",
+"nkey": ""
+},
+{
+"disp": "Multan · ملتان",
+"lat": 30.19784,
+"lon": 71.47197,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "30.1978,71.4720",
+"nkey": ""
+},
+{
+"disp": "Buea",
+"lat": 4.15679,
+"lon": 9.23159,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "4.1568,9.2316",
+"nkey": ""
+},
+{
+"disp": "Benin City",
+"lat": 6.33306,
+"lon": 5.62211,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "6.3331,5.6221",
+"nkey": ""
+},
+{
+"disp": "Qazvin · قزوین",
+"lat": 36.26917,
+"lon": 50.00575,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "36.2692,50.0057",
+"nkey": ""
+},
+{
+"disp": "Manaus",
+"lat": -3.13163,
+"lon": -59.9825,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-3.1316,-59.9825",
+"nkey": ""
+},
+{
+"disp": "Semarang",
+"lat": -6.9904,
+"lon": 110.42291,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-6.9904,110.4229",
+"nkey": ""
+},
+{
+"disp": "Bucaramanga",
+"lat": 7.12746,
+"lon": -73.11913,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "7.1275,-73.1191",
+"nkey": ""
+},
+{
+"disp": "Kirkuk · كركوك - کەرکووك",
+"lat": 35.47193,
+"lon": 44.39539,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "35.4719,44.3954",
+"nkey": ""
+},
+{
+"disp": "General Santos",
+"lat": 6.11222,
+"lon": 125.17219,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "6.1122,125.1722",
+"nkey": ""
+},
+{
+"disp": "Monterrey",
+"lat": 25.6802,
+"lon": -100.31526,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "25.6802,-100.3153",
+"nkey": ""
+},
+{
+"disp": "San Jose",
+"lat": 37.33617,
+"lon": -121.89059,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "37.3362,-121.8906",
+"nkey": ""
+},
+{
+"disp": "Mar del Plata",
+"lat": -37.99762,
+"lon": -57.54821,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-37.9976,-57.5482",
+"nkey": ""
+},
+{
+"disp": "Meknes · Meknès ⴰⵎⴽⵏⴰⵙ مكناس",
+"lat": 33.89841,
+"lon": -5.53216,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "33.8984,-5.5322",
+"nkey": ""
+},
+{
+"disp": "Lviv · Львів",
+"lat": 49.84195,
+"lon": 24.03159,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "49.8419,24.0316",
+"nkey": ""
+},
+{
+"disp": "Vancouver",
+"lat": 49.26087,
+"lon": -123.11395,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "49.2609,-123.1140",
+"nkey": ""
+},
+{
+"disp": "Dortmund",
+"lat": 51.51423,
+"lon": 7.46528,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "51.5142,7.4653",
+"nkey": ""
+},
+{
+"disp": "Tianjin · 天津市",
+"lat": 39.08441,
+"lon": 117.19575,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "39.0844,117.1958",
+"nkey": ""
+},
+{
+"disp": "Hiroshima · 広島市",
+"lat": 34.39172,
+"lon": 132.45176,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "34.3917,132.4518",
+"nkey": ""
+},
+{
+"disp": "Ulsan · 울산광역시",
+"lat": 35.53917,
+"lon": 129.31191,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.5392,129.3119",
+"nkey": ""
+},
+{
+"disp": "Pune",
+"lat": 18.52137,
+"lon": 73.85451,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "18.5214,73.8545",
+"nkey": ""
+},
+{
+"disp": "Gaziantep",
+"lat": 37.06283,
+"lon": 37.37926,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.0628,37.3793",
+"nkey": ""
+},
+{
+"disp": "Nizhny Novgorod · Нижний Новгород",
+"lat": 56.32648,
+"lon": 44.00514,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "56.3265,44.0051",
+"nkey": ""
+},
+{
+"disp": "Dammam · الدمام",
+"lat": 26.43678,
+"lon": 50.104,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "26.4368,50.1040",
+"nkey": ""
+},
+{
+"disp": "Hyderabad · حیدرآباد",
+"lat": 25.38683,
+"lon": 68.3715,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "25.3868,68.3715",
+"nkey": ""
+},
+{
+"disp": "Ngaoundéré",
+"lat": 7.32115,
+"lon": 13.58782,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "7.3212,13.5878",
+"nkey": ""
+},
+{
+"disp": "Onitsha",
+"lat": 6.14616,
+"lon": 6.80191,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "6.1462,6.8019",
+"nkey": ""
+},
+{
+"disp": "Ahwaz · اهواز",
+"lat": 31.32306,
+"lon": 48.67932,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "31.3231,48.6793",
+"nkey": ""
+},
+{
+"disp": "Curitiba",
+"lat": -25.4296,
+"lon": -49.27127,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-25.4296,-49.2713",
+"nkey": ""
+},
+{
+"disp": "Makassar",
+"lat": -5.1343,
+"lon": 119.41243,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-5.1343,119.4124",
+"nkey": ""
+},
+{
+"disp": "Sulaymaniyah · سلێمانی",
+"lat": 35.55705,
+"lon": 45.4426,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "35.5570,45.4426",
+"nkey": ""
+},
+{
+"disp": "Bacolod",
+"lat": 10.67628,
+"lon": 122.95138,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "10.6763,122.9514",
+"nkey": ""
+},
+{
+"disp": "Chihuahua City",
+"lat": 28.63687,
+"lon": -106.07675,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "28.6369,-106.0768",
+"nkey": ""
+},
+{
+"disp": "Fort Worth",
+"lat": 32.75318,
+"lon": -97.33275,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "32.7532,-97.3328",
+"nkey": ""
+},
+{
+"disp": "Zaporizhzhia · Запоріжжя",
+"lat": 47.85079,
+"lon": 35.11829,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "47.8508,35.1183",
+"nkey": ""
+},
+{
+"disp": "Suzhou · 苏州市",
+"lat": 31.31112,
+"lon": 120.62129,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "31.3111,120.6213",
+"nkey": ""
+},
+{
+"disp": "Sendai · 仙台市",
+"lat": 38.26776,
+"lon": 140.86915,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "38.2678,140.8691",
+"nkey": ""
+},
+{
+"disp": "Cheonan · 천안시",
+"lat": 36.81503,
+"lon": 127.11407,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "36.8150,127.1141",
+"nkey": ""
+},
+{
+"disp": "Varanasi",
+"lat": 25.33565,
+"lon": 83.00763,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "25.3357,83.0076",
+"nkey": ""
+},
+{
+"disp": "Konya",
+"lat": 37.87273,
+"lon": 32.49244,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.8727,32.4924",
+"nkey": ""
+},
+{
+"disp": "Chelyabinsk · Челябинск",
+"lat": 55.15984,
+"lon": 61.40255,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "55.1598,61.4025",
+"nkey": ""
+},
+{
+"disp": "Bannu · بنوں",
+"lat": 32.9857,
+"lon": 70.6036,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "32.9857,70.6036",
+"nkey": ""
+},
+{
+"disp": "Ebolowa",
+"lat": 2.91938,
+"lon": 11.15166,
+"country": "Cameroon",
+"cc": "CM",
+"es": false,
+"key": "2.9194,11.1517",
+"nkey": ""
+},
+{
+"disp": "Ogbomosho",
+"lat": 8.133,
+"lon": 4.25,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "8.1330,4.2500",
+"nkey": ""
+},
+{
+"disp": "Qom · قم",
+"lat": 34.64229,
+"lon": 50.88012,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "34.6423,50.8801",
+"nkey": ""
+},
+{
+"disp": "Goiânia",
+"lat": -16.68088,
+"lon": -49.25327,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-16.6809,-49.2533",
+"nkey": ""
+},
+{
+"disp": "Pekanbaru",
+"lat": 0.52625,
+"lon": 101.45157,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "0.5262,101.4516",
+"nkey": ""
+},
+{
+"disp": "Nasiriyah · الناصرية",
+"lat": 31.044,
+"lon": 46.23994,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "31.0440,46.2399",
+"nkey": ""
+},
+{
+"disp": "Mérida",
+"lat": 20.96708,
+"lon": -89.62374,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "20.9671,-89.6237",
+"nkey": ""
+},
+{
+"disp": "Austin",
+"lat": 30.27113,
+"lon": -97.7437,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "30.2711,-97.7437",
+"nkey": ""
+},
+{
+"disp": "Kryvyi Rih · Кривий Ріг",
+"lat": 47.91027,
+"lon": 33.39177,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "47.9103,33.3918",
+"nkey": ""
+},
+{
+"disp": "Zhengzhou · 郑州市",
+"lat": 34.74725,
+"lon": 113.61932,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "34.7473,113.6193",
+"nkey": ""
+},
+{
+"disp": "Kitakyushu · 北九州市",
+"lat": 33.883,
+"lon": 130.8749,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "33.8830,130.8749",
+"nkey": ""
+},
+{
+"disp": "Jeonju · 전주시",
+"lat": 35.82376,
+"lon": 127.14728,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.8238,127.1473",
+"nkey": ""
+},
+{
+"disp": "Jaipur",
+"lat": 26.91546,
+"lon": 75.81898,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "26.9155,75.8190",
+"nkey": ""
+},
+{
+"disp": "Şanlıurfa",
+"lat": 37.15962,
+"lon": 38.79193,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.1596,38.7919",
+"nkey": ""
+},
+{
+"disp": "Ufa · Уфа",
+"lat": 54.72614,
+"lon": 55.9475,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "54.7261,55.9475",
+"nkey": ""
+},
+{
+"disp": "Quetta · کوئٹہ",
+"lat": 30.19577,
+"lon": 67.01724,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "30.1958,67.0172",
+"nkey": ""
+},
+{
+"disp": "Aba",
+"lat": 5.1128,
+"lon": 7.36514,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "5.1128,7.3651",
+"nkey": ""
+},
+{
+"disp": "Kermanshah · کرمانشاه",
+"lat": 34.32394,
+"lon": 47.07359,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "34.3239,47.0736",
+"nkey": ""
+},
+{
+"disp": "Porto Alegre",
+"lat": -30.0325,
+"lon": -51.23038,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-30.0325,-51.2304",
+"nkey": ""
+},
+{
+"disp": "Padang",
+"lat": -0.92476,
+"lon": 100.36326,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-0.9248,100.3633",
+"nkey": ""
+},
+{
+"disp": "Ad Diwaniyah · الديوانية",
+"lat": 31.98533,
+"lon": 44.92363,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "31.9853,44.9236",
+"nkey": ""
+},
+{
+"disp": "Cancún",
+"lat": 21.15275,
+"lon": -86.84258,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "21.1528,-86.8426",
+"nkey": ""
+},
+{
+"disp": "Jacksonville",
+"lat": 30.32622,
+"lon": -81.65792,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "30.3262,-81.6579",
+"nkey": ""
+},
+{
+"disp": "Wuhan · 武汉市",
+"lat": 30.57889,
+"lon": 114.29212,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "30.5789,114.2921",
+"nkey": ""
+},
+{
+"disp": "Niigata · 新潟市",
+"lat": 37.91638,
+"lon": 139.03651,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "37.9164,139.0365",
+"nkey": ""
+},
+{
+"disp": "Kanpur",
+"lat": 26.46091,
+"lon": 80.32176,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "26.4609,80.3218",
+"nkey": ""
+},
+{
+"disp": "Kocaeli",
+"lat": 40.76539,
+"lon": 29.94074,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "40.7654,29.9407",
+"nkey": ""
+},
+{
+"disp": "Krasnodar · Краснодар",
+"lat": 45.03515,
+"lon": 38.97724,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "45.0352,38.9772",
+"nkey": ""
+},
+{
+"disp": "Bahawalpur · بہاولپور",
+"lat": 29.39464,
+"lon": 71.66387,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "29.3946,71.6639",
+"nkey": ""
+},
+{
+"disp": "Jos",
+"lat": 9.91751,
+"lon": 8.89794,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "9.9175,8.8979",
+"nkey": ""
+},
+{
+"disp": "Zanjan · زنجان",
+"lat": 36.67,
+"lon": 48.47954,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "36.6700,48.4795",
+"nkey": ""
+},
+{
+"disp": "Belém",
+"lat": -1.45056,
+"lon": -48.46825,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-1.4506,-48.4682",
+"nkey": ""
+},
+{
+"disp": "Bandar Lampung",
+"lat": -5.44607,
+"lon": 105.26437,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-5.4461,105.2644",
+"nkey": ""
+},
+{
+"disp": "Saltillo",
+"lat": 25.42304,
+"lon": -100.99275,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "25.4230,-100.9928",
+"nkey": ""
+},
+{
+"disp": "Columbus",
+"lat": 39.96226,
+"lon": -83.00071,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "39.9623,-83.0007",
+"nkey": ""
+},
+{
+"disp": "Xi'an · 西安市",
+"lat": 34.261,
+"lon": 108.94234,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "34.2610,108.9423",
+"nkey": ""
+},
+{
+"disp": "Hamamatsu · 浜松市",
+"lat": 34.71098,
+"lon": 137.72594,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "34.7110,137.7259",
+"nkey": ""
+},
+{
+"disp": "Visakhapatnam",
+"lat": 17.69355,
+"lon": 83.29213,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "17.6935,83.2921",
+"nkey": ""
+},
+{
+"disp": "Diyarbakır",
+"lat": 37.91622,
+"lon": 40.23635,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.9162,40.2364",
+"nkey": ""
+},
+{
+"disp": "Samara · Самара",
+"lat": 53.19563,
+"lon": 50.10149,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "53.1956,50.1015",
+"nkey": ""
+},
+{
+"disp": "Sialkot · سیالکوٹ",
+"lat": 32.49449,
+"lon": 74.54156,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "32.4945,74.5416",
+"nkey": ""
+},
+{
+"disp": "Abeokuta",
+"lat": 7.161,
+"lon": 3.348,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "7.1610,3.3480",
+"nkey": ""
+},
+{
+"disp": "Urmia · ارومیه",
+"lat": 37.54834,
+"lon": 45.06671,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "37.5483,45.0667",
+"nkey": ""
+},
+{
+"disp": "Campinas",
+"lat": -22.90564,
+"lon": -47.05956,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-22.9056,-47.0596",
+"nkey": ""
+},
+{
+"disp": "Malang",
+"lat": -7.97713,
+"lon": 112.63403,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-7.9771,112.6340",
+"nkey": ""
+},
+{
+"disp": "Aguascalientes City",
+"lat": 21.88049,
+"lon": -102.29672,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "21.8805,-102.2967",
+"nkey": ""
+},
+{
+"disp": "Indianapolis",
+"lat": 39.76833,
+"lon": -86.15835,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "39.7683,-86.1583",
+"nkey": ""
+},
+{
+"disp": "Maseru",
+"lat": -29.31005,
+"lon": 27.47822,
+"country": "Lesotho",
+"cc": "LS",
+"es": false,
+"key": "-29.3101,27.4782",
+"nkey": ""
+},
+{
+"disp": "Honiara",
+"lat": -9.43108,
+"lon": 159.95526,
+"country": "Solomon Islands",
+"cc": "SB",
+"es": false,
+"key": "-9.4311,159.9553",
+"nkey": ""
+},
+{
+"disp": "Ayod · Yi̱o̱d",
+"lat": 8.1236,
+"lon": 31.4098,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "8.1236,31.4098",
+"nkey": ""
+},
+{
+"disp": "Liquiçá · Likisá",
+"lat": -8.58976,
+"lon": 125.34089,
+"country": "Timor-Leste",
+"cc": "TL",
+"es": false,
+"key": "-8.5898,125.3409",
+"nkey": ""
+},
+{
+"disp": "Kundiawa",
+"lat": -6.01903,
+"lon": 144.97225,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-6.0190,144.9723",
+"nkey": ""
+},
+{
+"disp": "Serrekunda",
+"lat": 13.43876,
+"lon": -16.67481,
+"country": "The Gambia",
+"cc": "GM",
+"es": false,
+"key": "13.4388,-16.6748",
+"nkey": ""
+},
+{
+"disp": "Manzini",
+"lat": -26.49764,
+"lon": 31.37508,
+"country": "Eswatini",
+"cc": "SZ",
+"es": false,
+"key": "-26.4976,31.3751",
+"nkey": ""
+},
+{
+"disp": "Nukuoro",
+"lat": 3.84055,
+"lon": 154.97318,
+"country": "Federated States of Micronesia",
+"cc": "FM",
+"es": false,
+"key": "3.8405,154.9732",
+"nkey": ""
+},
+{
+"disp": "Djibouti · Djibouti جيبوتي",
+"lat": 11.59369,
+"lon": 43.14727,
+"country": "Djibouti",
+"cc": "DJ",
+"es": false,
+"key": "11.5937,43.1473",
+"nkey": ""
+},
+{
+"disp": "Windhoek",
+"lat": -22.57761,
+"lon": 17.07727,
+"country": "Namibia",
+"cc": "NA",
+"es": false,
+"key": "-22.5776,17.0773",
+"nkey": ""
+},
+{
+"disp": "São Tomé",
+"lat": 0.33892,
+"lon": 6.7313,
+"country": "São Tomé and Príncipe",
+"cc": "ST",
+"es": false,
+"key": "0.3389,6.7313",
+"nkey": ""
+},
+{
+"disp": "Fomboni · فومبوني Fomboni",
+"lat": -12.28405,
+"lon": 43.74273,
+"country": "Comoros",
+"cc": "KM",
+"es": false,
+"key": "-12.2841,43.7427",
+"nkey": ""
+},
+{
+"disp": "Serowe",
+"lat": -22.39776,
+"lon": 26.70329,
+"country": "Botswana",
+"cc": "BW",
+"es": false,
+"key": "-22.3978,26.7033",
+"nkey": ""
+},
+{
+"disp": "Praia",
+"lat": 14.91628,
+"lon": -23.50951,
+"country": "Cape Verde",
+"cc": "CV",
+"es": false,
+"key": "14.9163,-23.5095",
+"nkey": ""
+},
+{
+"disp": "Apia",
+"lat": -13.83452,
+"lon": -171.7631,
+"country": "Samoa",
+"cc": "WS",
+"es": false,
+"key": "-13.8345,-171.7631",
+"nkey": ""
+},
+{
+"disp": "Kuajok",
+"lat": 8.30242,
+"lon": 27.97894,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "8.3024,27.9789",
+"nkey": ""
+},
+{
+"disp": "Gabu",
+"lat": 12.28195,
+"lon": -14.22608,
+"country": "Guinea-Bissau",
+"cc": "GW",
+"es": false,
+"key": "12.2820,-14.2261",
+"nkey": ""
+},
+{
+"disp": "South Tarawa",
+"lat": 1.34908,
+"lon": 173.03865,
+"country": "Kiribati",
+"cc": "KI",
+"es": false,
+"key": "1.3491,173.0386",
+"nkey": ""
+},
+{
+"disp": "Asmara · ኣስመራ Asmara أسمرة",
+"lat": 15.33897,
+"lon": 38.93268,
+"country": "Eritrea",
+"cc": "ER",
+"es": false,
+"key": "15.3390,38.9327",
+"nkey": ""
+},
+{
+"disp": "Karuzi",
+"lat": -3.10117,
+"lon": 30.16475,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-3.1012,30.1648",
+"nkey": ""
+},
+{
+"disp": "Nampula",
+"lat": -15.11941,
+"lon": 39.26159,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-15.1194,39.2616",
+"nkey": ""
+},
+{
+"disp": "Toamasina",
+"lat": -18.1554,
+"lon": 49.40984,
+"country": "Madagascar",
+"cc": "MG",
+"es": false,
+"key": "-18.1554,49.4098",
+"nkey": ""
+},
+{
+"disp": "Abdi · Abdi أبدي",
+"lat": 12.80816,
+"lon": 21.30444,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "12.8082,21.3044",
+"nkey": ""
+},
+{
+"disp": "Ayorou",
+"lat": 14.73352,
+"lon": 0.91945,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "14.7335,0.9194",
+"nkey": ""
+},
+{
+"disp": "Auki",
+"lat": -8.77061,
+"lon": 160.69927,
+"country": "Solomon Islands",
+"cc": "SB",
+"es": false,
+"key": "-8.7706,160.6993",
+"nkey": ""
+},
+{
+"disp": "Bissau",
+"lat": 11.86132,
+"lon": -15.58305,
+"country": "Guinea-Bissau",
+"cc": "GW",
+"es": false,
+"key": "11.8613,-15.5831",
+"nkey": ""
+},
+{
+"disp": "Gonaïves · Les Gonaïves",
+"lat": 19.44606,
+"lon": -72.68843,
+"country": "Haiti",
+"cc": "HT",
+"es": false,
+"key": "19.4461,-72.6884",
+"nkey": ""
+},
+{
+"disp": "Wolaita Sodo · ወላይታ ሶዶ Wolaita Sodo ولايتا سودو",
+"lat": 6.85775,
+"lon": 37.75785,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "6.8578,37.7578",
+"nkey": ""
+},
+{
+"disp": "Gbarnga",
+"lat": 6.99627,
+"lon": -9.47091,
+"country": "Liberia",
+"cc": "LR",
+"es": false,
+"key": "6.9963,-9.4709",
+"nkey": ""
+},
+{
+"disp": "Solwezi",
+"lat": -12.18206,
+"lon": 26.39907,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-12.1821,26.3991",
+"nkey": ""
+},
+{
+"disp": "Banamba",
+"lat": 13.54852,
+"lon": -7.44653,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "13.5485,-7.4465",
+"nkey": ""
+},
+{
+"disp": "Birao",
+"lat": 10.2962,
+"lon": 22.78099,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "10.2962,22.7810",
+"nkey": ""
+},
+{
+"disp": "Lorengau",
+"lat": -2.03296,
+"lon": 147.27892,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-2.0330,147.2789",
+"nkey": ""
+},
+{
+"disp": "Aden · عدن",
+"lat": 12.78959,
+"lon": 45.0285,
+"country": "Yemen",
+"cc": "YE",
+"es": false,
+"key": "12.7896,45.0285",
+"nkey": ""
+},
+{
+"disp": "Meru",
+"lat": 0.04998,
+"lon": 37.65001,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "0.0500,37.6500",
+"nkey": ""
+},
+{
+"disp": "Farafenni",
+"lat": 13.57212,
+"lon": -15.59795,
+"country": "The Gambia",
+"cc": "GM",
+"es": false,
+"key": "13.5721,-15.5980",
+"nkey": ""
+},
+{
+"disp": "Lénakel",
+"lat": -19.53158,
+"lon": 169.26776,
+"country": "Vanuatu",
+"cc": "VU",
+"es": false,
+"key": "-19.5316,169.2678",
+"nkey": ""
+},
+{
+"disp": "Ouèssè",
+"lat": 8.49193,
+"lon": 2.42584,
+"country": "Benin",
+"cc": "BJ",
+"es": false,
+"key": "8.4919,2.4258",
+"nkey": ""
+},
+{
+"disp": "Nyala · نيالا",
+"lat": 12.05051,
+"lon": 24.87951,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "12.0505,24.8795",
+"nkey": ""
+},
+{
+"disp": "Ali Sabieh · Ali Sabieh علي صبيح",
+"lat": 11.15605,
+"lon": 42.70451,
+"country": "Djibouti",
+"cc": "DJ",
+"es": false,
+"key": "11.1561,42.7045",
+"nkey": ""
+},
+{
+"disp": "Türkmenabat",
+"lat": 39.07338,
+"lon": 63.58316,
+"country": "Turkmenistan",
+"cc": "TM",
+"es": false,
+"key": "39.0734,63.5832",
+"nkey": ""
+},
+{
+"disp": "Rundu",
+"lat": -17.91372,
+"lon": 19.76725,
+"country": "Namibia",
+"cc": "NA",
+"es": false,
+"key": "-17.9137,19.7673",
+"nkey": ""
+},
+{
+"disp": "Boké",
+"lat": 10.95224,
+"lon": -14.27606,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "10.9522,-14.2761",
+"nkey": ""
+},
+{
+"disp": "Keren · ከረን Keren كرن",
+"lat": 15.78048,
+"lon": 38.45361,
+"country": "Eritrea",
+"cc": "ER",
+"es": false,
+"key": "15.7805,38.4536",
+"nkey": ""
+},
+{
+"disp": "Bakel",
+"lat": 14.90497,
+"lon": -12.45681,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.9050,-12.4568",
+"nkey": ""
+},
+{
+"disp": "Kandahar · کندهار",
+"lat": 31.62057,
+"lon": 65.71576,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "31.6206,65.7158",
+"nkey": ""
+},
+{
+"disp": "Santo António",
+"lat": 1.63815,
+"lon": 7.41978,
+"country": "São Tomé and Príncipe",
+"cc": "ST",
+"es": false,
+"key": "1.6381,7.4198",
+"nkey": ""
+},
+{
+"disp": "M'djoiezi Hambou مدجويزي هامبو",
+"lat": -11.83627,
+"lon": 43.31316,
+"country": "Comoros",
+"cc": "KM",
+"es": false,
+"key": "-11.8363,43.3132",
+"nkey": ""
+},
+{
+"disp": "Tsabong",
+"lat": -26.02175,
+"lon": 22.40101,
+"country": "Botswana",
+"cc": "BW",
+"es": false,
+"key": "-26.0218,22.4010",
+"nkey": ""
+},
+{
+"disp": "Aleg · Aleg ألاك",
+"lat": 17.05272,
+"lon": -13.91529,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "17.0527,-13.9153",
+"nkey": ""
+},
+{
+"disp": "Sokodé",
+"lat": 8.98343,
+"lon": 1.14376,
+"country": "Togo",
+"cc": "TG",
+"es": false,
+"key": "8.9834,1.1438",
+"nkey": ""
+},
+{
+"disp": "São Filipe",
+"lat": 14.8953,
+"lon": -24.49694,
+"country": "Cape Verde",
+"cc": "CV",
+"es": false,
+"key": "14.8953,-24.4969",
+"nkey": ""
+},
+{
+"disp": "Khujand · Хуҷанд",
+"lat": 40.28422,
+"lon": 69.61912,
+"country": "Tajikistan",
+"cc": "TJ",
+"es": false,
+"key": "40.2842,69.6191",
+"nkey": ""
+},
+{
+"disp": "Makin",
+"lat": 3.3637,
+"lon": 172.98376,
+"country": "Kiribati",
+"cc": "KI",
+"es": false,
+"key": "3.3637,172.9838",
+"nkey": ""
+},
+{
+"disp": "León",
+"lat": 12.43486,
+"lon": -86.87883,
+"country": "Nicaragua",
+"cc": "NI",
+"es": false,
+"key": "12.4349,-86.8788",
+"nkey": ""
+},
+{
+"disp": "Pokhara · पोखरा",
+"lat": 28.20954,
+"lon": 83.9914,
+"country": "Nepal",
+"cc": "NP",
+"es": false,
+"key": "28.2095,83.9914",
+"nkey": ""
+},
+{
+"disp": "Anouvong · ອະນຸວົງ",
+"lat": 18.89769,
+"lon": 103.09248,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "18.8977,103.0925",
+"nkey": ""
+},
+{
+"disp": "Santa Cruz Barillas",
+"lat": 15.80438,
+"lon": -91.31545,
+"country": "Guatemala",
+"cc": "GT",
+"es": false,
+"key": "15.8044,-91.3154",
+"nkey": ""
+},
+{
+"disp": "Tripoli · طرابلس",
+"lat": 34.43736,
+"lon": 35.83486,
+"country": "Lebanon",
+"cc": "LB",
+"es": false,
+"key": "34.4374,35.8349",
+"nkey": ""
+},
+{
+"disp": "Mayɔm",
+"lat": 9.22547,
+"lon": 29.16507,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "9.2255,29.1651",
+"nkey": ""
+},
+{
+"disp": "Mwaro",
+"lat": -3.51167,
+"lon": 29.705,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-3.5117,29.7050",
+"nkey": ""
+},
+{
+"disp": "Mobaye",
+"lat": 4.32544,
+"lon": 21.17781,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "4.3254,21.1778",
+"nkey": ""
+},
+{
+"disp": "Beira",
+"lat": -19.83407,
+"lon": 34.83581,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-19.8341,34.8358",
+"nkey": ""
+},
+{
+"disp": "Antsirabe",
+"lat": -19.8714,
+"lon": 47.03467,
+"country": "Madagascar",
+"cc": "MG",
+"es": false,
+"key": "-19.8714,47.0347",
+"nkey": ""
+},
+{
+"disp": "Buala",
+"lat": -8.14555,
+"lon": 159.59304,
+"country": "Solomon Islands",
+"cc": "SB",
+"es": false,
+"key": "-8.1456,159.5930",
+"nkey": ""
+},
+{
+"disp": "Balleyara",
+"lat": 13.7841,
+"lon": 2.95151,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "13.7841,2.9515",
+"nkey": ""
+},
+{
+"disp": "Aboudéïa · Aboudéïa أبو ضياء",
+"lat": 11.45062,
+"lon": 19.27761,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "11.4506,19.2776",
+"nkey": ""
+},
+{
+"disp": "Koudougou",
+"lat": 12.25149,
+"lon": -2.36523,
+"country": "Burkina Faso",
+"cc": "BF",
+"es": false,
+"key": "12.2515,-2.3652",
+"nkey": ""
+},
+{
+"disp": "Mafeteng",
+"lat": -29.82245,
+"lon": 27.23883,
+"country": "Lesotho",
+"cc": "LS",
+"es": false,
+"key": "-29.8224,27.2388",
+"nkey": ""
+},
+{
+"disp": "Bissorã",
+"lat": 12.22352,
+"lon": -15.45074,
+"country": "Guinea-Bissau",
+"cc": "GW",
+"es": false,
+"key": "12.2235,-15.4507",
+"nkey": ""
+},
+{
+"disp": "Iganga",
+"lat": 0.61549,
+"lon": 33.47946,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "0.6155,33.4795",
+"nkey": ""
+},
+{
+"disp": "Harbel City",
+"lat": 6.27674,
+"lon": -10.34472,
+"country": "Liberia",
+"cc": "LR",
+"es": false,
+"key": "6.2767,-10.3447",
+"nkey": ""
+},
+{
+"disp": "Abobo · Abobo/አቦቦ",
+"lat": 7.89794,
+"lon": 34.54081,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "7.8979,34.5408",
+"nkey": ""
+},
+{
+"disp": "Kitwe",
+"lat": -12.82037,
+"lon": 28.2156,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-12.8204,28.2156",
+"nkey": ""
+},
+{
+"disp": "Huye",
+"lat": -2.60534,
+"lon": 29.74015,
+"country": "Rwanda",
+"cc": "RW",
+"es": false,
+"key": "-2.6053,29.7401",
+"nkey": ""
+},
+{
+"disp": "Lospalos",
+"lat": -8.52461,
+"lon": 126.99727,
+"country": "Timor-Leste",
+"cc": "TL",
+"es": false,
+"key": "-8.5246,126.9973",
+"nkey": ""
+},
+{
+"disp": "Mendi",
+"lat": -6.13936,
+"lon": 143.65786,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-6.1394,143.6579",
+"nkey": ""
+},
+{
+"disp": "Bandiagara",
+"lat": 14.3505,
+"lon": -3.61128,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "14.3505,-3.6113",
+"nkey": ""
+},
+{
+"disp": "Ta'izz · تعز",
+"lat": 13.57522,
+"lon": 44.02153,
+"country": "Yemen",
+"cc": "YE",
+"es": false,
+"key": "13.5752,44.0215",
+"nkey": ""
+},
+{
+"disp": "Mutare",
+"lat": -18.97466,
+"lon": 32.67047,
+"country": "Zimbabwe",
+"cc": "ZW",
+"es": false,
+"key": "-18.9747,32.6705",
+"nkey": ""
+},
+{
+"disp": "Kara",
+"lat": 9.54888,
+"lon": 1.19775,
+"country": "Togo",
+"cc": "TG",
+"es": false,
+"key": "9.5489,1.1978",
+"nkey": ""
+},
+{
+"disp": "Liranga",
+"lat": -0.66215,
+"lon": 17.61075,
+"country": "Republic of the Congo",
+"cc": "CG",
+"es": false,
+"key": "-0.6622,17.6107",
+"nkey": ""
+},
+{
+"disp": "Simunye",
+"lat": -26.20845,
+"lon": 31.9195,
+"country": "Eswatini",
+"cc": "SZ",
+"es": false,
+"key": "-26.2084,31.9195",
+"nkey": ""
+},
+{
+"disp": "Basse Santa Su",
+"lat": 13.31004,
+"lon": -14.215,
+"country": "The Gambia",
+"cc": "GM",
+"es": false,
+"key": "13.3100,-14.2150",
+"nkey": ""
+},
+{
+"disp": "Luganville",
+"lat": -15.51211,
+"lon": 167.17844,
+"country": "Vanuatu",
+"cc": "VU",
+"es": false,
+"key": "-15.5121,167.1784",
+"nkey": ""
+},
+{
+"disp": "Dando",
+"lat": 24.9737,
+"lon": 68.76294,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "24.9737,68.7629",
+"nkey": ""
+},
+{
+"disp": "Port Sudan · بورتسودان",
+"lat": 19.61922,
+"lon": 37.21171,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "19.6192,37.2117",
+"nkey": ""
+},
+{
+"disp": "Port Vila",
+"lat": -17.7415,
+"lon": 168.31502,
+"country": "Vanuatu",
+"cc": "VU",
+"es": false,
+"key": "-17.7415,168.3150",
+"nkey": ""
+},
+{
+"disp": "Bukwo",
+"lat": 1.28902,
+"lon": 34.74101,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "1.2890,34.7410",
+"nkey": ""
+},
+{
+"disp": "Daşoguz",
+"lat": 41.83313,
+"lon": 59.97083,
+"country": "Turkmenistan",
+"cc": "TM",
+"es": false,
+"key": "41.8331,59.9708",
+"nkey": ""
+},
+{
+"disp": "Fatick",
+"lat": 14.33396,
+"lon": -16.40422,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.3340,-16.4042",
+"nkey": ""
+},
+{
+"disp": "Korhogo",
+"lat": 9.45807,
+"lon": -5.63163,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "9.4581,-5.6316",
+"nkey": ""
+},
+{
+"disp": "Burao · Burco برعو",
+"lat": 9.52773,
+"lon": 45.53802,
+"country": "Somalia",
+"cc": "SO",
+"es": false,
+"key": "9.5277,45.5380",
+"nkey": ""
+},
+{
+"disp": "Faranah",
+"lat": 10.04249,
+"lon": -10.74082,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "10.0425,-10.7408",
+"nkey": ""
+},
+{
+"disp": "Nacaome",
+"lat": 13.53255,
+"lon": -87.48814,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "13.5326,-87.4881",
+"nkey": ""
+},
+{
+"disp": "Asadabad · اسعد‌آباد",
+"lat": 34.8728,
+"lon": 71.15083,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "34.8728,71.1508",
+"nkey": ""
+},
+{
+"disp": "Mutsamudu · Mutsamudu موتسامودو",
+"lat": -12.16885,
+"lon": 44.39428,
+"country": "Comoros",
+"cc": "KM",
+"es": false,
+"key": "-12.1689,44.3943",
+"nkey": ""
+},
+{
+"disp": "Mzuzu",
+"lat": -11.46075,
+"lon": 34.02264,
+"country": "Malawi",
+"cc": "MW",
+"es": false,
+"key": "-11.4608,34.0226",
+"nkey": ""
+},
+{
+"disp": "Gaborone",
+"lat": -24.65814,
+"lon": 25.90885,
+"country": "Botswana",
+"cc": "BW",
+"es": false,
+"key": "-24.6581,25.9089",
+"nkey": ""
+},
+{
+"disp": "Mindelo",
+"lat": 16.88731,
+"lon": -24.98641,
+"country": "Cape Verde",
+"cc": "CV",
+"es": false,
+"key": "16.8873,-24.9864",
+"nkey": ""
+},
+{
+"disp": "Aoujeft · Aoujeft اوجفت",
+"lat": 20.02604,
+"lon": -13.05476,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "20.0260,-13.0548",
+"nkey": ""
+},
+{
+"disp": "Massawa · ምጽዋዕ Massawa مصوع",
+"lat": 15.60318,
+"lon": 39.4637,
+"country": "Eritrea",
+"cc": "ER",
+"es": false,
+"key": "15.6032,39.4637",
+"nkey": ""
+},
+{
+"disp": "Bokhtar · Бохтар",
+"lat": 37.83572,
+"lon": 68.7821,
+"country": "Tajikistan",
+"cc": "TJ",
+"es": false,
+"key": "37.8357,68.7821",
+"nkey": ""
+},
+{
+"disp": "Jinotega",
+"lat": 13.09202,
+"lon": -86.00318,
+"country": "Nicaragua",
+"cc": "NI",
+"es": false,
+"key": "13.0920,-86.0032",
+"nkey": ""
+},
+{
+"disp": "Dharan · धरान",
+"lat": 26.8129,
+"lon": 87.284,
+"country": "Nepal",
+"cc": "NP",
+"es": false,
+"key": "26.8129,87.2840",
+"nkey": ""
+},
+{
+"disp": "Houayxay · ຫ້ວຍຊາຍ",
+"lat": 20.27931,
+"lon": 100.41222,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "20.2793,100.4122",
+"nkey": ""
+},
+{
+"disp": "Concepción Tutuapa",
+"lat": 15.2397,
+"lon": -91.84427,
+"country": "Guatemala",
+"cc": "GT",
+"es": false,
+"key": "15.2397,-91.8443",
+"nkey": ""
+},
+{
+"disp": "Nabatieh · النبطية",
+"lat": 33.3812,
+"lon": 35.48253,
+"country": "Lebanon",
+"cc": "LB",
+"es": false,
+"key": "33.3812,35.4825",
+"nkey": ""
+},
+{
+"disp": "Ndélé",
+"lat": 8.41115,
+"lon": 20.64847,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "8.4111,20.6485",
+"nkey": ""
+},
+{
+"disp": "Nasir · Kuanylualthɔ̱än",
+"lat": 8.61541,
+"lon": 33.06049,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "8.6154,33.0605",
+"nkey": ""
+},
+{
+"disp": "Chiúre",
+"lat": -13.38268,
+"lon": 39.78847,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-13.3827,39.7885",
+"nkey": ""
+},
+{
+"disp": "Zomba",
+"lat": -15.38632,
+"lon": 35.32683,
+"country": "Malawi",
+"cc": "MW",
+"es": false,
+"key": "-15.3863,35.3268",
+"nkey": ""
+},
+{
+"disp": "Mahajanga",
+"lat": -15.71815,
+"lon": 46.31726,
+"country": "Madagascar",
+"cc": "MG",
+"es": false,
+"key": "-15.7181,46.3173",
+"nkey": ""
+},
+{
+"disp": "Taro",
+"lat": -6.71034,
+"lon": 156.39781,
+"country": "Solomon Islands",
+"cc": "SB",
+"es": false,
+"key": "-6.7103,156.3978",
+"nkey": ""
+},
+{
+"disp": "Addé أدي",
+"lat": 12.65951,
+"lon": 21.89361,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "12.6595,21.8936",
+"nkey": ""
+},
+{
+"disp": "Cap-Haitien · Cap-Haïtien",
+"lat": 19.75952,
+"lon": -72.20081,
+"country": "Haiti",
+"cc": "HT",
+"es": false,
+"key": "19.7595,-72.2008",
+"nkey": ""
+},
+{
+"disp": "Mohale's Hoek",
+"lat": -30.15163,
+"lon": 27.47701,
+"country": "Lesotho",
+"cc": "LS",
+"es": false,
+"key": "-30.1516,27.4770",
+"nkey": ""
+},
+{
+"disp": "Bafatá",
+"lat": 12.17234,
+"lon": -14.6555,
+"country": "Guinea-Bissau",
+"cc": "GW",
+"es": false,
+"key": "12.1723,-14.6555",
+"nkey": ""
+},
+{
+"disp": "Kanoni",
+"lat": 0.17265,
+"lon": 31.90647,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "0.1726,31.9065",
+"nkey": ""
+},
+{
+"disp": "Zwedru",
+"lat": 6.06872,
+"lon": -8.13427,
+"country": "Liberia",
+"cc": "LR",
+"es": false,
+"key": "6.0687,-8.1343",
+"nkey": ""
+},
+{
+"disp": "Chipata",
+"lat": -13.63913,
+"lon": 32.64584,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-13.6391,32.6458",
+"nkey": ""
+},
+{
+"disp": "Muhanga",
+"lat": -3.02822,
+"lon": 29.83272,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-3.0282,29.8327",
+"nkey": ""
+},
+{
+"disp": "Dikhil · Dikhil دخيل",
+"lat": 11.10711,
+"lon": 42.36874,
+"country": "Djibouti",
+"cc": "DJ",
+"es": false,
+"key": "11.1071,42.3687",
+"nkey": ""
+},
+{
+"disp": "Same",
+"lat": -9.00453,
+"lon": 125.64813,
+"country": "Timor-Leste",
+"cc": "TL",
+"es": false,
+"key": "-9.0045,125.6481",
+"nkey": ""
+},
+{
+"disp": "Tari",
+"lat": -5.84524,
+"lon": 142.94662,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-5.8452,142.9466",
+"nkey": ""
+},
+{
+"disp": "Bourem",
+"lat": 16.95753,
+"lon": -0.3468,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "16.9575,-0.3468",
+"nkey": ""
+},
+{
+"disp": "Hodeidah · الحديدة",
+"lat": 14.79787,
+"lon": 42.95449,
+"country": "Yemen",
+"cc": "YE",
+"es": false,
+"key": "14.7979,42.9545",
+"nkey": ""
+},
+{
+"disp": "Gweru",
+"lat": -19.46163,
+"lon": 29.8206,
+"country": "Zimbabwe",
+"cc": "ZW",
+"es": false,
+"key": "-19.4616,29.8206",
+"nkey": ""
+},
+{
+"disp": "Atakpamé",
+"lat": 7.53206,
+"lon": 1.12195,
+"country": "Togo",
+"cc": "TG",
+"es": false,
+"key": "7.5321,1.1220",
+"nkey": ""
+},
+{
+"disp": "Eldoret",
+"lat": 0.51983,
+"lon": 35.27155,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "0.5198,35.2715",
+"nkey": ""
+},
+{
+"disp": "Madingou",
+"lat": -4.16426,
+"lon": 13.55165,
+"country": "Republic of the Congo",
+"cc": "CG",
+"es": false,
+"key": "-4.1643,13.5517",
+"nkey": ""
+},
+{
+"disp": "Djougou",
+"lat": 9.71067,
+"lon": 1.66516,
+"country": "Benin",
+"cc": "BJ",
+"es": false,
+"key": "9.7107,1.6652",
+"nkey": ""
+},
+{
+"disp": "Walvis Bay",
+"lat": -22.95576,
+"lon": 14.50711,
+"country": "Namibia",
+"cc": "NA",
+"es": false,
+"key": "-22.9558,14.5071",
+"nkey": ""
+},
+{
+"disp": "Takoradi",
+"lat": 4.8874,
+"lon": -1.75193,
+"country": "Ghana",
+"cc": "GH",
+"es": false,
+"key": "4.8874,-1.7519",
+"nkey": ""
+},
+{
+"disp": "Tadjoura · Tadjoura تجرة",
+"lat": 11.78571,
+"lon": 42.88465,
+"country": "Djibouti",
+"cc": "DJ",
+"es": false,
+"key": "11.7857,42.8847",
+"nkey": ""
+},
+{
+"disp": "Kassala · كسلا",
+"lat": 15.45201,
+"lon": 36.37707,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "15.4520,36.3771",
+"nkey": ""
+},
+{
+"disp": "Mary",
+"lat": 37.59404,
+"lon": 61.83979,
+"country": "Turkmenistan",
+"cc": "TM",
+"es": false,
+"key": "37.5940,61.8398",
+"nkey": ""
+},
+{
+"disp": "Kaffrine",
+"lat": 14.10197,
+"lon": -15.54843,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.1020,-15.5484",
+"nkey": ""
+},
+{
+"disp": "Daloa",
+"lat": 6.88692,
+"lon": -6.45299,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "6.8869,-6.4530",
+"nkey": ""
+},
+{
+"disp": "Otjiwarongo",
+"lat": -20.46093,
+"lon": 16.65121,
+"country": "Namibia",
+"cc": "NA",
+"es": false,
+"key": "-20.4609,16.6512",
+"nkey": ""
+},
+{
+"disp": "Mamou",
+"lat": 10.37407,
+"lon": -12.08356,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "10.3741,-12.0836",
+"nkey": ""
+},
+{
+"disp": "Agordat · ኣቑርደት Akordat أغوردات",
+"lat": 15.55,
+"lon": 37.88633,
+"country": "Eritrea",
+"cc": "ER",
+"es": false,
+"key": "15.5500,37.8863",
+"nkey": ""
+},
+{
+"disp": "Nueva Ocotepeque",
+"lat": 14.43551,
+"lon": -89.18448,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "14.4355,-89.1845",
+"nkey": ""
+},
+{
+"disp": "Aybak · ایبک",
+"lat": 36.27307,
+"lon": 68.02185,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "36.2731,68.0219",
+"nkey": ""
+},
+{
+"disp": "Hpa-An · ဘားအံမြို့",
+"lat": 16.89026,
+"lon": 97.63627,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "16.8903,97.6363",
+"nkey": ""
+},
+{
+"disp": "Francistown",
+"lat": -21.16636,
+"lon": 27.50251,
+"country": "Botswana",
+"cc": "BW",
+"es": false,
+"key": "-21.1664,27.5025",
+"nkey": ""
+},
+{
+"disp": "Unpongor",
+"lat": -18.818,
+"lon": 169.01825,
+"country": "Vanuatu",
+"cc": "VU",
+"es": false,
+"key": "-18.8180,169.0182",
+"nkey": ""
+},
+{
+"disp": "Ayoun el Atrous · Aïoun El Atrouss العيون",
+"lat": 16.65977,
+"lon": -9.61788,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "16.6598,-9.6179",
+"nkey": ""
+},
+{
+"disp": "Ribeira Brava",
+"lat": 16.61573,
+"lon": -24.29825,
+"country": "Cape Verde",
+"cc": "CV",
+"es": false,
+"key": "16.6157,-24.2982",
+"nkey": ""
+},
+{
+"disp": "Latakia · اللاذقية",
+"lat": 35.52002,
+"lon": 35.7781,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "35.5200,35.7781",
+"nkey": ""
+},
+{
+"disp": "Kulob · Кӯлоб",
+"lat": 37.9081,
+"lon": 69.77395,
+"country": "Tajikistan",
+"cc": "TJ",
+"es": false,
+"key": "37.9081,69.7739",
+"nkey": ""
+},
+{
+"disp": "Luang Namtha · ຫຼວງນ້ຳທາ",
+"lat": 21.00722,
+"lon": 101.40764,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "21.0072,101.4076",
+"nkey": ""
+},
+{
+"disp": "Sylhet · সিলেট",
+"lat": 24.89922,
+"lon": 91.86853,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.8992,91.8685",
+"nkey": ""
+},
+{
+"disp": "Ghorahi · घोराही",
+"lat": 28.03936,
+"lon": 82.48669,
+"country": "Nepal",
+"cc": "NP",
+"es": false,
+"key": "28.0394,82.4867",
+"nkey": ""
+},
+{
+"disp": "Banfora",
+"lat": 10.6427,
+"lon": -4.75264,
+"country": "Burkina Faso",
+"cc": "BF",
+"es": false,
+"key": "10.6427,-4.7526",
+"nkey": ""
+},
+{
+"disp": "Quetzaltenango",
+"lat": 14.84646,
+"lon": -91.51942,
+"country": "Guatemala",
+"cc": "GT",
+"es": false,
+"key": "14.8465,-91.5194",
+"nkey": ""
+},
+{
+"disp": "Pibor",
+"lat": 6.80112,
+"lon": 33.12971,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "6.8011,33.1297",
+"nkey": ""
+},
+{
+"disp": "Zahle · زحلة",
+"lat": 33.84771,
+"lon": 35.9025,
+"country": "Lebanon",
+"cc": "LB",
+"es": false,
+"key": "33.8477,35.9025",
+"nkey": ""
+},
+{
+"disp": "Obo",
+"lat": 5.39409,
+"lon": 26.49272,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "5.3941,26.4927",
+"nkey": ""
+},
+{
+"disp": "Inchope",
+"lat": -19.20733,
+"lon": 33.93293,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-19.2073,33.9329",
+"nkey": ""
+},
+{
+"disp": "Giteranyi",
+"lat": -2.51728,
+"lon": 30.45861,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-2.5173,30.4586",
+"nkey": ""
+},
+{
+"disp": "Kasungu",
+"lat": -13.03955,
+"lon": 33.47841,
+"country": "Malawi",
+"cc": "MW",
+"es": false,
+"key": "-13.0396,33.4784",
+"nkey": ""
+},
+{
+"disp": "Kolwezi",
+"lat": -10.717,
+"lon": 25.46699,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "-10.7170,25.4670",
+"nkey": ""
+},
+{
+"disp": "Belbédji",
+"lat": 14.68151,
+"lon": 7.99478,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "14.6815,7.9948",
+"nkey": ""
+},
+{
+"disp": "Fianarantsoa",
+"lat": -21.45644,
+"lon": 47.08515,
+"country": "Madagascar",
+"cc": "MG",
+"es": false,
+"key": "-21.4564,47.0851",
+"nkey": ""
+},
+{
+"disp": "Arkoum · أركوم Arkoum",
+"lat": 13.19583,
+"lon": 21.7073,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "13.1958,21.7073",
+"nkey": ""
+},
+{
+"disp": "Ouahigouya",
+"lat": 13.58098,
+"lon": -2.4177,
+"country": "Burkina Faso",
+"cc": "BF",
+"es": false,
+"key": "13.5810,-2.4177",
+"nkey": ""
+},
+{
+"disp": "Port-de-Paix",
+"lat": 19.93899,
+"lon": -72.83081,
+"country": "Haiti",
+"cc": "HT",
+"es": false,
+"key": "19.9390,-72.8308",
+"nkey": ""
+},
+{
+"disp": "Addi Hamli",
+"lat": 13.62419,
+"lon": 37.27219,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "13.6242,37.2722",
+"nkey": ""
+},
+{
+"disp": "Farim",
+"lat": 12.48236,
+"lon": -15.21964,
+"country": "Guinea-Bissau",
+"cc": "GW",
+"es": false,
+"key": "12.4824,-15.2196",
+"nkey": ""
+},
+{
+"disp": "Pleebo",
+"lat": 4.58885,
+"lon": -7.67349,
+"country": "Liberia",
+"cc": "LR",
+"es": false,
+"key": "4.5888,-7.6735",
+"nkey": ""
+},
+{
+"disp": "Ndola",
+"lat": -12.96931,
+"lon": 28.63659,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-12.9693,28.6366",
+"nkey": ""
+},
+{
+"disp": "Masaka",
+"lat": -0.33903,
+"lon": 31.74658,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "-0.3390,31.7466",
+"nkey": ""
+},
+{
+"disp": "Awareh",
+"lat": 8.2591,
+"lon": 44.15878,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "8.2591,44.1588",
+"nkey": ""
+},
+{
+"disp": "Musanze",
+"lat": -1.50405,
+"lon": 29.63631,
+"country": "Rwanda",
+"cc": "RW",
+"es": false,
+"key": "-1.5041,29.6363",
+"nkey": ""
+},
+{
+"disp": "Ibb · إب",
+"lat": 13.97016,
+"lon": 44.17794,
+"country": "Yemen",
+"cc": "YE",
+"es": false,
+"key": "13.9702,44.1779",
+"nkey": ""
+},
+{
+"disp": "Port Moresby",
+"lat": -9.47433,
+"lon": 147.15995,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-9.4743,147.1600",
+"nkey": ""
+},
+{
+"disp": "Kwekwe",
+"lat": -18.92844,
+"lon": 29.814,
+"country": "Zimbabwe",
+"cc": "ZW",
+"es": false,
+"key": "-18.9284,29.8140",
+"nkey": ""
+},
+{
+"disp": "Kpalimé",
+"lat": 6.91066,
+"lon": 0.6324,
+"country": "Togo",
+"cc": "TG",
+"es": false,
+"key": "6.9107,0.6324",
+"nkey": ""
+},
+{
+"disp": "Suai",
+"lat": -9.3149,
+"lon": 125.2555,
+"country": "Timor-Leste",
+"cc": "TL",
+"es": false,
+"key": "-9.3149,125.2555",
+"nkey": ""
+},
+{
+"disp": "Dolisie",
+"lat": -4.20054,
+"lon": 12.67916,
+"country": "Republic of the Congo",
+"cc": "CG",
+"es": false,
+"key": "-4.2005,12.6792",
+"nkey": ""
+},
+{
+"disp": "Sunyani",
+"lat": 7.33844,
+"lon": -2.33092,
+"country": "Ghana",
+"cc": "GH",
+"es": false,
+"key": "7.3384,-2.3309",
+"nkey": ""
+},
+{
+"disp": "Banikoara",
+"lat": 11.30042,
+"lon": 2.43708,
+"country": "Benin",
+"cc": "BJ",
+"es": false,
+"key": "11.3004,2.4371",
+"nkey": ""
+},
+{
+"disp": "Janjanbureh",
+"lat": 13.53908,
+"lon": -14.76123,
+"country": "The Gambia",
+"cc": "GM",
+"es": false,
+"key": "13.5391,-14.7612",
+"nkey": ""
+},
+{
+"disp": "Yoboki · Yoboki يوبوكي",
+"lat": 11.50814,
+"lon": 42.10372,
+"country": "Djibouti",
+"cc": "DJ",
+"es": false,
+"key": "11.5081,42.1037",
+"nkey": ""
+},
+{
+"disp": "El-Obeid · الأبيض",
+"lat": 13.18337,
+"lon": 30.22256,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "13.1834,30.2226",
+"nkey": ""
+},
+{
+"disp": "Balkanabat",
+"lat": 39.51163,
+"lon": 54.35399,
+"country": "Turkmenistan",
+"cc": "TM",
+"es": false,
+"key": "39.5116,54.3540",
+"nkey": ""
+},
+{
+"disp": "Hama · حماة",
+"lat": 35.13434,
+"lon": 36.74963,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "35.1343,36.7496",
+"nkey": ""
+},
+{
+"disp": "M'bour",
+"lat": 14.42074,
+"lon": -16.97148,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.4207,-16.9715",
+"nkey": ""
+},
+{
+"disp": "San-Pédro",
+"lat": 4.759,
+"lon": -6.64639,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "4.7590,-6.6464",
+"nkey": ""
+},
+{
+"disp": "Oshakati",
+"lat": -17.78265,
+"lon": 15.6986,
+"country": "Namibia",
+"cc": "NA",
+"es": false,
+"key": "-17.7827,15.6986",
+"nkey": ""
+},
+{
+"disp": "Baidoa · Baydhabo بيدوا",
+"lat": 3.11995,
+"lon": 43.64446,
+"country": "Somalia",
+"cc": "SO",
+"es": false,
+"key": "3.1199,43.6445",
+"nkey": ""
+},
+{
+"disp": "Guéckédou",
+"lat": 8.56165,
+"lon": -10.13282,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "8.5617,-10.1328",
+"nkey": ""
+},
+{
+"disp": "Puerto Lempira",
+"lat": 15.26644,
+"lon": -83.77253,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "15.2664,-83.7725",
+"nkey": ""
+},
+{
+"disp": "Bamian · بامیان",
+"lat": 34.82238,
+"lon": 67.83683,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "34.8224,67.8368",
+"nkey": ""
+},
+{
+"disp": "Aungpan · အောင်ပန်း",
+"lat": 20.65998,
+"lon": 96.63295,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "20.6600,96.6329",
+"nkey": ""
+},
+{
+"disp": "Molepolole",
+"lat": -24.4058,
+"lon": 25.51516,
+"country": "Botswana",
+"cc": "BW",
+"es": false,
+"key": "-24.4058,25.5152",
+"nkey": ""
+},
+{
+"disp": "Bassiknou · Bassikounou باسكنو",
+"lat": 15.86493,
+"lon": -5.94885,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "15.8649,-5.9489",
+"nkey": ""
+},
+{
+"disp": "Kisumu",
+"lat": -0.10291,
+"lon": 34.75418,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "-0.1029,34.7542",
+"nkey": ""
+},
+{
+"disp": "Dioïla",
+"lat": 12.48638,
+"lon": -6.79488,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "12.4864,-6.7949",
+"nkey": ""
+},
+{
+"disp": "Gitega",
+"lat": -3.4285,
+"lon": 29.92497,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-3.4285,29.9250",
+"nkey": ""
+},
+{
+"disp": "Bor",
+"lat": 6.21087,
+"lon": 31.56144,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "6.2109,31.5614",
+"nkey": ""
+},
+{
+"disp": "Moroni · Moroni موروني",
+"lat": -11.70403,
+"lon": 43.25191,
+"country": "Comoros",
+"cc": "KM",
+"es": false,
+"key": "-11.7040,43.2519",
+"nkey": ""
+},
+{
+"disp": "Maradi",
+"lat": 13.50121,
+"lon": 7.10253,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "13.5012,7.1025",
+"nkey": ""
+},
+{
+"disp": "Dili",
+"lat": -8.55368,
+"lon": 125.57841,
+"country": "Timor-Leste",
+"cc": "TL",
+"es": false,
+"key": "-8.5537,125.5784",
+"nkey": ""
+},
+{
+"disp": "Berbérati",
+"lat": 4.25934,
+"lon": 15.78778,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "4.2593,15.7878",
+"nkey": ""
+},
+{
+"disp": "Mbarara",
+"lat": -0.61079,
+"lon": 30.65332,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "-0.6108,30.6533",
+"nkey": ""
+},
+{
+"disp": "Moundou · Moundou موندو",
+"lat": 8.56546,
+"lon": 16.07383,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "8.5655,16.0738",
+"nkey": ""
+},
+{
+"disp": "Byumba",
+"lat": -1.57921,
+"lon": 30.06777,
+"country": "Rwanda",
+"cc": "RW",
+"es": false,
+"key": "-1.5792,30.0678",
+"nkey": ""
+},
+{
+"disp": "Lae",
+"lat": -6.7302,
+"lon": 147.00081,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-6.7302,147.0008",
+"nkey": ""
+},
+{
+"disp": "Thiès",
+"lat": 14.8255,
+"lon": -17.09966,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.8255,-17.0997",
+"nkey": ""
+},
+{
+"disp": "Nouadhibou · Nouadhibou نواذيبو",
+"lat": 20.9127,
+"lon": -17.05031,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "20.9127,-17.0503",
+"nkey": ""
+},
+{
+"disp": "Pakse · ປາກເຊ",
+"lat": 15.12015,
+"lon": 105.8044,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "15.1202,105.8044",
+"nkey": ""
+},
+{
+"disp": "Bocaranga",
+"lat": 6.9959,
+"lon": 15.63884,
+"country": "Central African Republic",
+"cc": "CF",
+"es": false,
+"key": "6.9959,15.6388",
+"nkey": ""
+},
+{
+"disp": "Yei",
+"lat": 4.09417,
+"lon": 30.67569,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "4.0942,30.6757",
+"nkey": ""
+},
+{
+"disp": "Zinder",
+"lat": 13.80634,
+"lon": 8.98917,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "13.8063,8.9892",
+"nkey": ""
+},
+{
+"disp": "Sarh · Sarh سارة",
+"lat": 9.14065,
+"lon": 18.3938,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "9.1407,18.3938",
+"nkey": ""
+},
+{
+"disp": "Dire Dawa · Dirree Dhawaa / Dir Dhabe / ድሬዳዋ",
+"lat": 9.59134,
+"lon": 41.85661,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "9.5913,41.8566",
+"nkey": ""
+},
+{
+"disp": "Budaka",
+"lat": 1.01584,
+"lon": 33.94907,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "1.0158,33.9491",
+"nkey": ""
+},
+{
+"disp": "Juba",
+"lat": 4.84592,
+"lon": 31.59592,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "4.8459,31.5959",
+"nkey": ""
+},
+{
+"disp": "Ségou",
+"lat": 13.44152,
+"lon": -6.26815,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "13.4415,-6.2682",
+"nkey": ""
+},
+{
+"disp": "Ziguinchor",
+"lat": 12.56349,
+"lon": -16.27246,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "12.5635,-16.2725",
+"nkey": ""
+},
+{
+"disp": "Buka",
+"lat": -5.43242,
+"lon": 154.67018,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-5.4324,154.6702",
+"nkey": ""
+},
+{
+"disp": "Forécariah",
+"lat": 9.43246,
+"lon": -13.08072,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "9.4325,-13.0807",
+"nkey": ""
+},
+{
+"disp": "Herat · هرات",
+"lat": 34.34914,
+"lon": 62.21633,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "34.3491,62.2163",
+"nkey": ""
+},
+{
+"disp": "Rosso · روصو",
+"lat": 16.51325,
+"lon": -15.80997,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "16.5132,-15.8100",
+"nkey": ""
+},
+{
+"disp": "La Ceiba",
+"lat": 15.78337,
+"lon": -86.79177,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "15.7834,-86.7918",
+"nkey": ""
+},
+{
+"disp": "Bharatpur · भरतपुर",
+"lat": 27.68119,
+"lon": 84.43017,
+"country": "Nepal",
+"cc": "NP",
+"es": false,
+"key": "27.6812,84.4302",
+"nkey": ""
+},
+{
+"disp": "Savannakhet · ສະຫວັນນະເຂດ",
+"lat": 16.56991,
+"lon": 104.76569,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "16.5699,104.7657",
+"nkey": ""
+},
+{
+"disp": "Tyre · صور",
+"lat": 33.27212,
+"lon": 35.1964,
+"country": "Lebanon",
+"cc": "LB",
+"es": false,
+"key": "33.2721,35.1964",
+"nkey": ""
+},
+{
+"disp": "Renk",
+"lat": 11.75194,
+"lon": 32.80877,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "11.7519,32.8088",
+"nkey": ""
+},
+{
+"disp": "Tessaoua",
+"lat": 13.75551,
+"lon": 7.99046,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "13.7555,7.9905",
+"nkey": ""
+},
+{
+"disp": "Nacala",
+"lat": -14.55831,
+"lon": 40.68638,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-14.5583,40.6864",
+"nkey": ""
+},
+{
+"disp": "Sikasso",
+"lat": 11.31655,
+"lon": -5.67775,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "11.3165,-5.6777",
+"nkey": ""
+},
+{
+"disp": "Gulu",
+"lat": 2.77024,
+"lon": 32.30443,
+"country": "Uganda",
+"cc": "UG",
+"es": false,
+"key": "2.7702,32.3044",
+"nkey": ""
+},
+{
+"disp": "Bol · Bol بول",
+"lat": 13.46765,
+"lon": 14.71441,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "13.4677,14.7144",
+"nkey": ""
+},
+{
+"disp": "Adama",
+"lat": 8.54103,
+"lon": 39.27055,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "8.5410,39.2706",
+"nkey": ""
+},
+{
+"disp": "Nkayi",
+"lat": -4.1841,
+"lon": 13.28837,
+"country": "Republic of the Congo",
+"cc": "CG",
+"es": false,
+"key": "-4.1841,13.2884",
+"nkey": ""
+},
+{
+"disp": "Kayes",
+"lat": 14.44341,
+"lon": -11.43791,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "14.4434,-11.4379",
+"nkey": ""
+},
+{
+"disp": "Mount Hagen",
+"lat": -5.85878,
+"lon": 144.23164,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-5.8588,144.2316",
+"nkey": ""
+},
+{
+"disp": "Puerto Cortés",
+"lat": 15.85146,
+"lon": -87.94267,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "15.8515,-87.9427",
+"nkey": ""
+},
+{
+"disp": "Kissidougou",
+"lat": 9.19239,
+"lon": -10.09827,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "9.1924,-10.0983",
+"nkey": ""
+},
+{
+"disp": "Mazar-i-Sharif · مزار شريف",
+"lat": 36.70904,
+"lon": 67.11141,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "36.7090,67.1114",
+"nkey": ""
+},
+{
+"disp": "Saint-Louis",
+"lat": 16.02804,
+"lon": -16.50487,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "16.0280,-16.5049",
+"nkey": ""
+},
+{
+"disp": "Thakhek · ທ່າແຂກ",
+"lat": 17.39462,
+"lon": 104.80645,
+"country": "Laos",
+"cc": "LA",
+"es": false,
+"key": "17.3946,104.8064",
+"nkey": ""
+},
+{
+"disp": "Joub Jannine · جب جنين",
+"lat": 33.62628,
+"lon": 35.78401,
+"country": "Lebanon",
+"cc": "LB",
+"es": false,
+"key": "33.6263,35.7840",
+"nkey": ""
+},
+{
+"disp": "Malakal",
+"lat": 9.53885,
+"lon": 31.65842,
+"country": "South Sudan",
+"cc": "SS",
+"es": false,
+"key": "9.5389,31.6584",
+"nkey": ""
+},
+{
+"disp": "Rumonge",
+"lat": -3.97455,
+"lon": 29.43929,
+"country": "Burundi",
+"cc": "BI",
+"es": false,
+"key": "-3.9745,29.4393",
+"nkey": ""
+},
+{
+"disp": "Birni N'Konni",
+"lat": 13.79161,
+"lon": 5.24779,
+"country": "Niger",
+"cc": "NE",
+"es": false,
+"key": "13.7916,5.2478",
+"nkey": ""
+},
+{
+"disp": "Kiffa · Kiffa كيفة",
+"lat": 16.61616,
+"lon": -11.4002,
+"country": "Mauritania",
+"cc": "MR",
+"es": false,
+"key": "16.6162,-11.4002",
+"nkey": ""
+},
+{
+"disp": "Abéché · Abéché أبشي",
+"lat": 13.82803,
+"lon": 20.82837,
+"country": "Chad",
+"cc": "TD",
+"es": false,
+"key": "13.8280,20.8284",
+"nkey": ""
+},
+{
+"disp": "Gonder · ጎንደር",
+"lat": 12.61037,
+"lon": 37.46677,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "12.6104,37.4668",
+"nkey": ""
+},
+{
+"disp": "Butwal · बुटवल",
+"lat": 27.7004,
+"lon": 83.46577,
+"country": "Nepal",
+"cc": "NP",
+"es": false,
+"key": "27.7004,83.4658",
+"nkey": ""
+},
+{
+"disp": "Mopti",
+"lat": 14.48773,
+"lon": -4.18925,
+"country": "Mali",
+"cc": "ML",
+"es": false,
+"key": "14.4877,-4.1893",
+"nkey": ""
+},
+{
+"disp": "Parakou",
+"lat": 9.34002,
+"lon": 2.62783,
+"country": "Benin",
+"cc": "BJ",
+"es": false,
+"key": "9.3400,2.6278",
+"nkey": ""
+},
+{
+"disp": "Erigavo · Ceerigaabo عيرجابو",
+"lat": 10.61806,
+"lon": 47.37,
+"country": "Somalia",
+"cc": "SO",
+"es": false,
+"key": "10.6181,47.3700",
+"nkey": ""
+},
+{
+"disp": "Kaolack",
+"lat": 14.13881,
+"lon": -16.07639,
+"country": "Senegal",
+"cc": "SN",
+"es": false,
+"key": "14.1388,-16.0764",
+"nkey": ""
+},
+{
+"disp": "N'Zérékoré",
+"lat": 7.75899,
+"lon": -8.816,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "7.7590,-8.8160",
+"nkey": ""
+},
+{
+"disp": "Moma",
+"lat": -16.76276,
+"lon": 39.22169,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-16.7628,39.2217",
+"nkey": ""
+},
+{
+"disp": "Kunduz · کندوز",
+"lat": 36.71756,
+"lon": 68.86729,
+"country": "Afghanistan",
+"cc": "AF",
+"es": false,
+"key": "36.7176,68.8673",
+"nkey": ""
+},
+{
+"disp": "Wewak",
+"lat": -3.55422,
+"lon": 143.62709,
+"country": "Papua New Guinea",
+"cc": "PG",
+"es": false,
+"key": "-3.5542,143.6271",
+"nkey": ""
+},
+{
+"disp": "Berbera · Berbera بربرة",
+"lat": 10.43862,
+"lon": 45.0134,
+"country": "Somalia",
+"cc": "SO",
+"es": false,
+"key": "10.4386,45.0134",
+"nkey": ""
+},
+{
+"disp": "Mawlamyine · မော်လမြိုင်",
+"lat": 16.4908,
+"lon": 97.62848,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "16.4908,97.6285",
+"nkey": ""
+},
+{
+"disp": "Catacamas",
+"lat": 14.84838,
+"lon": -85.89356,
+"country": "Honduras",
+"cc": "HN",
+"es": false,
+"key": "14.8484,-85.8936",
+"nkey": ""
+},
+{
+"disp": "Balama",
+"lat": -13.34745,
+"lon": 38.57467,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-13.3475,38.5747",
+"nkey": ""
+},
+{
+"disp": "Bunia",
+"lat": 1.56205,
+"lon": 30.24788,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "1.5620,30.2479",
+"nkey": ""
+},
+{
+"disp": "Jimma · ጂማ / Jimma",
+"lat": 7.67562,
+"lon": 36.84788,
+"country": "Ethiopia",
+"cc": "ET",
+"es": false,
+"key": "7.6756,36.8479",
+"nkey": ""
+},
+{
+"disp": "Mumbwa",
+"lat": -14.985,
+"lon": 27.06138,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-14.9850,27.0614",
+"nkey": ""
+},
+{
+"disp": "Mbeya",
+"lat": -8.90651,
+"lon": 33.46867,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-8.9065,33.4687",
+"nkey": ""
+},
+{
+"disp": "Nakuru",
+"lat": -0.28027,
+"lon": 36.0712,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "-0.2803,36.0712",
+"nkey": ""
+},
+{
+"disp": "Ilorin · Ìlọrin",
+"lat": 8.49637,
+"lon": 4.54805,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "8.4964,4.5480",
+"nkey": ""
+},
+{
+"disp": "Luena",
+"lat": -11.77904,
+"lon": 19.91227,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-11.7790,19.9123",
+"nkey": ""
+},
+{
+"disp": "Tchaourou",
+"lat": 8.88817,
+"lon": 2.59611,
+"country": "Benin",
+"cc": "BJ",
+"es": false,
+"key": "8.8882,2.5961",
+"nkey": ""
+},
+{
+"disp": "Sargodha · سرگودھا",
+"lat": 32.08897,
+"lon": 72.67769,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "32.0890,72.6777",
+"nkey": ""
+},
+{
+"disp": "Kosti · كوستي",
+"lat": 13.15219,
+"lon": 32.67251,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "13.1522,32.6725",
+"nkey": ""
+},
+{
+"disp": "Ar-Raqqa · الرقة",
+"lat": 35.94968,
+"lon": 39.00892,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "35.9497,39.0089",
+"nkey": ""
+},
+{
+"disp": "Yamoussoukro",
+"lat": 6.82001,
+"lon": -5.2776,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "6.8200,-5.2776",
+"nkey": ""
+},
+{
+"disp": "Pita",
+"lat": 11.05646,
+"lon": -12.39505,
+"country": "Guinea",
+"cc": "GN",
+"es": false,
+"key": "11.0565,-12.3950",
+"nkey": ""
+},
+{
+"disp": "Pathein · ပုသိမ်မြို့",
+"lat": 16.78333,
+"lon": 94.73333,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "16.7833,94.7333",
+"nkey": ""
+},
+{
+"disp": "Tainan · 臺南市",
+"lat": 22.99123,
+"lon": 120.18498,
+"country": "Taiwan",
+"cc": "TW",
+"es": false,
+"key": "22.9912,120.1850",
+"nkey": ""
+},
+{
+"disp": "Laayoune · Laâyoune ⵍⵄⵢⵓⵏ العيون",
+"lat": 27.15451,
+"lon": -13.19539,
+"country": "Sahrawi Arab Democratic Republic",
+"cc": "EH",
+"es": false,
+"key": "27.1545,-13.1954",
+"nkey": ""
+},
+{
+"disp": "Rustenburg",
+"lat": -25.66566,
+"lon": 27.24145,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-25.6657,27.2415",
+"nkey": ""
+},
+{
+"disp": "Gaza · غزة",
+"lat": 31.51287,
+"lon": 34.45814,
+"country": "Palestinian Territories",
+"cc": "PS",
+"es": false,
+"key": "31.5129,34.4581",
+"nkey": ""
+},
+{
+"disp": "Rajshahi · রাজশাহী",
+"lat": 24.37155,
+"lon": 88.5921,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.3715,88.5921",
+"nkey": ""
+},
+{
+"disp": "Malabo",
+"lat": 3.74188,
+"lon": 8.77407,
+"country": "Equatorial Guinea",
+"cc": "GQ",
+"es": false,
+"key": "3.7419,8.7741",
+"nkey": ""
+},
+{
+"disp": "Nagpur",
+"lat": 21.14981,
+"lon": 79.08206,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "21.1498,79.0821",
+"nkey": ""
+},
+{
+"disp": "Osh · Ош",
+"lat": 40.51727,
+"lon": 72.80499,
+"country": "Kyrgyzstan",
+"cc": "KG",
+"es": false,
+"key": "40.5173,72.8050",
+"nkey": ""
+},
+{
+"disp": "Calamba",
+"lat": 14.20602,
+"lon": 121.15565,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "14.2060,121.1556",
+"nkey": ""
+},
+{
+"disp": "Agadir · Agadir ⴰⴳⴰⴷⵉⵔ أكادير",
+"lat": 30.42052,
+"lon": -9.58385,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "30.4205,-9.5838",
+"nkey": ""
+},
+{
+"disp": "Ciudad Bolivar · Ciudad Bolívar",
+"lat": 8.10285,
+"lon": -63.54696,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "8.1029,-63.5470",
+"nkey": ""
+},
+{
+"disp": "San Salvador",
+"lat": 13.69763,
+"lon": -89.19116,
+"country": "El Salvador",
+"cc": "SV",
+"es": false,
+"key": "13.6976,-89.1912",
+"nkey": ""
+},
+{
+"disp": "Villavicencio",
+"lat": 4.13476,
+"lon": -73.62015,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "4.1348,-73.6201",
+"nkey": ""
+},
+{
+"disp": "Oruro",
+"lat": -17.96984,
+"lon": -67.11483,
+"country": "Bolivia",
+"cc": "BO",
+"es": false,
+"key": "-17.9698,-67.1148",
+"nkey": ""
+},
+{
+"disp": "Samarkand",
+"lat": 39.655,
+"lon": 66.9757,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "39.6550,66.9757",
+"nkey": ""
+},
+{
+"disp": "Chiclayo",
+"lat": -6.77161,
+"lon": -79.83872,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-6.7716,-79.8387",
+"nkey": ""
+},
+{
+"disp": "Pati",
+"lat": -6.75341,
+"lon": 111.04,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-6.7534,111.0400",
+"nkey": ""
+},
+{
+"disp": "Cuenca",
+"lat": -2.89741,
+"lon": -79.00417,
+"country": "Ecuador",
+"cc": "EC",
+"es": false,
+"key": "-2.8974,-79.0042",
+"nkey": ""
+},
+{
+"disp": "Irbid · إربد",
+"lat": 32.55561,
+"lon": 35.8493,
+"country": "Jordan",
+"cc": "JO",
+"es": false,
+"key": "32.5556,35.8493",
+"nkey": ""
+},
+{
+"disp": "Jaffna",
+"lat": 9.66509,
+"lon": 80.0093,
+"country": "Sri Lanka",
+"cc": "LK",
+"es": false,
+"key": "9.6651,80.0093",
+"nkey": ""
+},
+{
+"disp": "Amarah · العمارة",
+"lat": 31.84977,
+"lon": 47.14965,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "31.8498,47.1497",
+"nkey": ""
+},
+{
+"disp": "Nampo · 남포시",
+"lat": 38.73674,
+"lon": 125.41153,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "38.7367,125.4115",
+"nkey": ""
+},
+{
+"disp": "Santiago de Cuba",
+"lat": 20.02143,
+"lon": -75.82949,
+"country": "Cuba",
+"cc": "CU",
+"es": false,
+"key": "20.0214,-75.8295",
+"nkey": ""
+},
+{
+"disp": "Sousse · سوسة",
+"lat": 35.82883,
+"lon": 10.64053,
+"country": "Tunisia",
+"cc": "TN",
+"es": false,
+"key": "35.8288,10.6405",
+"nkey": ""
+},
+{
+"disp": "Nha Trang",
+"lat": 12.24718,
+"lon": 109.18921,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "12.2472,109.1892",
+"nkey": ""
+},
+{
+"disp": "Rasht · رشت",
+"lat": 37.26976,
+"lon": 49.58949,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "37.2698,49.5895",
+"nkey": ""
+},
+{
+"disp": "Misrata · ⵎⵚⵔⴰⵜⴰ مصراتة Misrata",
+"lat": 32.37459,
+"lon": 15.09058,
+"country": "Libya",
+"cc": "LY",
+"es": false,
+"key": "32.3746,15.0906",
+"nkey": ""
+},
+{
+"disp": "Ciudad del Este",
+"lat": -25.5169,
+"lon": -54.61686,
+"country": "Paraguay",
+"cc": "PY",
+"es": false,
+"key": "-25.5169,-54.6169",
+"nkey": ""
+},
+{
+"disp": "Asyut · أسيوط",
+"lat": 27.18328,
+"lon": 31.18538,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "27.1833,31.1854",
+"nkey": ""
+},
+{
+"disp": "São Luís",
+"lat": -2.52953,
+"lon": -44.29639,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-2.5295,-44.2964",
+"nkey": ""
+},
+{
+"disp": "Paramaribo",
+"lat": 5.82476,
+"lon": -55.17039,
+"country": "Suriname",
+"cc": "SR",
+"es": false,
+"key": "5.8248,-55.1704",
+"nkey": ""
+},
+{
+"disp": "Constantine · قسنطينة ⵇⵙⵏⵟⵉⵏⴰ",
+"lat": 36.36416,
+"lon": 6.60843,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "36.3642,6.6084",
+"nkey": ""
+},
+{
+"disp": "Mykolaiv · Миколаїв",
+"lat": 46.97586,
+"lon": 31.99397,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "46.9759,31.9940",
+"nkey": ""
+},
+{
+"disp": "Skopje · Скопје",
+"lat": 41.99622,
+"lon": 21.43189,
+"country": "North Macedonia",
+"cc": "MK",
+"es": false,
+"key": "41.9962,21.4319",
+"nkey": ""
+},
+{
+"disp": "Batumi · ბათუმი",
+"lat": 41.65095,
+"lon": 41.63601,
+"country": "Georgia",
+"cc": "GE",
+"es": false,
+"key": "41.6510,41.6360",
+"nkey": ""
+},
+{
+"disp": "Hermosillo",
+"lat": 29.09482,
+"lon": -110.96922,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "29.0948,-110.9692",
+"nkey": ""
+},
+{
+"disp": "Sarajevo",
+"lat": 43.85707,
+"lon": 18.41261,
+"country": "Bosnia and Herzegovina",
+"cc": "BA",
+"es": false,
+"key": "43.8571,18.4126",
+"nkey": ""
+},
+{
+"disp": "San Juan de la Maguana",
+"lat": 18.80681,
+"lon": -71.2277,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "18.8068,-71.2277",
+"nkey": ""
+},
+{
+"disp": "Tirana · Tiranë",
+"lat": 41.32815,
+"lon": 19.81844,
+"country": "Albania",
+"cc": "AL",
+"es": false,
+"key": "41.3282,19.8184",
+"nkey": ""
+},
+{
+"disp": "Hangzhou · 杭州市",
+"lat": 30.24896,
+"lon": 120.20523,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "30.2490,120.2052",
+"nkey": ""
+},
+{
+"disp": "Salta",
+"lat": -24.78929,
+"lon": -65.41032,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-24.7893,-65.4103",
+"nkey": ""
+},
+{
+"disp": "Georgetown",
+"lat": 6.80326,
+"lon": -58.14554,
+"country": "Guyana",
+"cc": "GY",
+"es": false,
+"key": "6.8033,-58.1455",
+"nkey": ""
+},
+{
+"disp": "Novi Sad · Нови Сад",
+"lat": 45.25513,
+"lon": 19.84518,
+"country": "Serbia",
+"cc": "RS",
+"es": false,
+"key": "45.2551,19.8452",
+"nkey": ""
+},
+{
+"disp": "San José",
+"lat": 9.93277,
+"lon": -84.07961,
+"country": "Costa Rica",
+"cc": "CR",
+"es": false,
+"key": "9.9328,-84.0796",
+"nkey": ""
+},
+{
+"disp": "Colón",
+"lat": 9.3553,
+"lon": -79.89741,
+"country": "Panama",
+"cc": "PA",
+"es": false,
+"key": "9.3553,-79.8974",
+"nkey": ""
+},
+{
+"disp": "Homel · Гомель",
+"lat": 52.42389,
+"lon": 31.01317,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "52.4239,31.0132",
+"nkey": ""
+},
+{
+"disp": "Antofagasta",
+"lat": -23.64637,
+"lon": -70.398,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-23.6464,-70.3980",
+"nkey": ""
+},
+{
+"disp": "Varna · Варна",
+"lat": 43.20739,
+"lon": 27.91667,
+"country": "Bulgaria",
+"cc": "BG",
+"es": false,
+"key": "43.2074,27.9167",
+"nkey": ""
+},
+{
+"disp": "Nassau",
+"lat": 25.07823,
+"lon": -77.33834,
+"country": "The Bahamas",
+"cc": "BS",
+"es": false,
+"key": "25.0782,-77.3383",
+"nkey": ""
+},
+{
+"disp": "Kota Padawan",
+"lat": 1.42769,
+"lon": 110.3256,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "1.4277,110.3256",
+"nkey": ""
+},
+{
+"disp": "Seeb · السيب",
+"lat": 23.65478,
+"lon": 58.20584,
+"country": "Oman",
+"cc": "OM",
+"es": false,
+"key": "23.6548,58.2058",
+"nkey": ""
+},
+{
+"disp": "Patras · Πάτρα",
+"lat": 38.24624,
+"lon": 21.73508,
+"country": "Greece",
+"cc": "GR",
+"es": false,
+"key": "38.2462,21.7351",
+"nkey": ""
+},
+{
+"disp": "Aktobe · Ақтөбе",
+"lat": 50.28369,
+"lon": 57.22981,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "50.2837,57.2298",
+"nkey": ""
+},
+{
+"disp": "Mersin",
+"lat": 36.79784,
+"lon": 34.62984,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "36.7978,34.6298",
+"nkey": ""
+},
+{
+"disp": "Riga · Rīga",
+"lat": 56.9494,
+"lon": 24.10518,
+"country": "Latvia",
+"cc": "LV",
+"es": false,
+"key": "56.9494,24.1052",
+"nkey": ""
+},
+{
+"disp": "Debrecen",
+"lat": 47.5314,
+"lon": 21.62598,
+"country": "Hungary",
+"cc": "HU",
+"es": false,
+"key": "47.5314,21.6260",
+"nkey": ""
+},
+{
+"disp": "Bratislava",
+"lat": 48.1517,
+"lon": 17.10931,
+"country": "Slovakia",
+"cc": "SK",
+"es": false,
+"key": "48.1517,17.1093",
+"nkey": ""
+},
+{
+"disp": "Cluj-Napoca",
+"lat": 46.76938,
+"lon": 23.58995,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "46.7694,23.5900",
+"nkey": ""
+},
+{
+"disp": "Rostov-on-Don · Ростов-на-Дону",
+"lat": 47.22226,
+"lon": 39.71987,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "47.2223,39.7199",
+"nkey": ""
+},
+{
+"disp": "Kyoto · 京都市",
+"lat": 35.01158,
+"lon": 135.76814,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "35.0116,135.7681",
+"nkey": ""
+},
+{
+"disp": "Tallinn",
+"lat": 59.43724,
+"lon": 24.75727,
+"country": "Estonia",
+"cc": "EE",
+"es": false,
+"key": "59.4372,24.7573",
+"nkey": ""
+},
+{
+"disp": "Porto",
+"lat": 41.15022,
+"lon": -8.61035,
+"country": "Portugal",
+"cc": "PT",
+"es": false,
+"key": "41.1502,-8.6104",
+"nkey": ""
+},
+{
+"disp": "Vilnius",
+"lat": 54.68705,
+"lon": 25.28291,
+"country": "Lithuania",
+"cc": "LT",
+"es": false,
+"key": "54.6870,25.2829",
+"nkey": ""
+},
+{
+"disp": "Poznan · Poznań",
+"lat": 52.40827,
+"lon": 16.93352,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "52.4083,16.9335",
+"nkey": ""
+},
+{
+"disp": "Christchurch",
+"lat": -43.53095,
+"lon": 172.63643,
+"country": "New Zealand",
+"cc": "NZ",
+"es": false,
+"key": "-43.5309,172.6364",
+"nkey": ""
+},
+{
+"disp": "Tel Aviv · תל אביב–יפו",
+"lat": 32.0853,
+"lon": 34.78181,
+"country": "Israel",
+"cc": "IL",
+"es": false,
+"key": "32.0853,34.7818",
+"nkey": ""
+},
+{
+"disp": "Genoa",
+"lat": 44.40726,
+"lon": 8.93386,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "44.4073,8.9339",
+"nkey": ""
+},
+{
+"disp": "Ljubljana",
+"lat": 46.05003,
+"lon": 14.50693,
+"country": "Slovenia",
+"cc": "SI",
+"es": false,
+"key": "46.0500,14.5069",
+"nkey": ""
+},
+{
+"disp": "Brno",
+"lat": 49.19224,
+"lon": 16.61134,
+"country": "Czech Republic",
+"cc": "CZ",
+"es": false,
+"key": "49.1922,16.6113",
+"nkey": ""
+},
+{
+"disp": "Sheffield",
+"lat": 53.38066,
+"lon": -1.47023,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "53.3807,-1.4702",
+"nkey": ""
+},
+{
+"disp": "Yongin · 용인시",
+"lat": 37.24057,
+"lon": 127.17856,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "37.2406,127.1786",
+"nkey": ""
+},
+{
+"disp": "Lyon",
+"lat": 45.75781,
+"lon": 4.83201,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "45.7578,4.8320",
+"nkey": ""
+},
+{
+"disp": "Nicosia · Λευκωσία - Lefkoşa",
+"lat": 35.17465,
+"lon": 33.36388,
+"country": "Cyprus",
+"cc": "CY",
+"es": false,
+"key": "35.1746,33.3639",
+"nkey": ""
+},
+{
+"disp": "Tampere",
+"lat": 61.4978,
+"lon": 23.76163,
+"country": "Finland",
+"cc": "FI",
+"es": false,
+"key": "61.4978,23.7616",
+"nkey": ""
+},
+{
+"disp": "Hamilton",
+"lat": 43.25608,
+"lon": -79.87286,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "43.2561,-79.8729",
+"nkey": ""
+},
+{
+"disp": "Canberra",
+"lat": -35.29759,
+"lon": 149.10127,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-35.2976,149.1013",
+"nkey": ""
+},
+{
+"disp": "Dresden",
+"lat": 51.04933,
+"lon": 13.73814,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "51.0493,13.7381",
+"nkey": ""
+},
+{
+"disp": "Graz",
+"lat": 47.07087,
+"lon": 15.43828,
+"country": "Austria",
+"cc": "AT",
+"es": false,
+"key": "47.0709,15.4383",
+"nkey": ""
+},
+{
+"disp": "At Ta'if · الطائف",
+"lat": 21.27028,
+"lon": 40.41583,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "21.2703,40.4158",
+"nkey": ""
+},
+{
+"disp": "Antwerp",
+"lat": 51.22111,
+"lon": 4.39971,
+"country": "Belgium",
+"cc": "BE",
+"es": false,
+"key": "51.2211,4.3997",
+"nkey": ""
+},
+{
+"disp": "Ras Al Khaimah · رأس الخيمة",
+"lat": 25.77377,
+"lon": 55.93823,
+"country": "United Arab Emirates",
+"cc": "AE",
+"es": false,
+"key": "25.7738,55.9382",
+"nkey": ""
+},
+{
+"disp": "Aarhus",
+"lat": 56.14963,
+"lon": 10.2134,
+"country": "Denmark",
+"cc": "DK",
+"es": false,
+"key": "56.1496,10.2134",
+"nkey": ""
+},
+{
+"disp": "Charlotte",
+"lat": 35.22721,
+"lon": -80.84308,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "35.2272,-80.8431",
+"nkey": ""
+},
+{
+"disp": "Rotterdam",
+"lat": 51.92444,
+"lon": 4.47775,
+"country": "Kingdom of the Netherlands",
+"cc": "NL",
+"es": false,
+"key": "51.9244,4.4778",
+"nkey": ""
+},
+{
+"disp": "Zurich · Zürich",
+"lat": 47.37445,
+"lon": 8.54104,
+"country": "Switzerland",
+"cc": "CH",
+"es": false,
+"key": "47.3745,8.5410",
+"nkey": ""
+},
+{
+"disp": "Bergen",
+"lat": 60.39431,
+"lon": 5.32592,
+"country": "Norway",
+"cc": "NO",
+"es": false,
+"key": "60.3943,5.3259",
+"nkey": ""
+},
+{
+"disp": "Cork",
+"lat": 51.89851,
+"lon": -8.47264,
+"country": "Ireland",
+"cc": "IE",
+"es": false,
+"key": "51.8985,-8.4726",
+"nkey": ""
+},
+{
+"disp": "Chimoio",
+"lat": -19.14375,
+"lon": 33.47801,
+"country": "Mozambique",
+"cc": "MZ",
+"es": false,
+"key": "-19.1438,33.4780",
+"nkey": ""
+},
+{
+"disp": "Kalemie",
+"lat": -5.94602,
+"lon": 29.19672,
+"country": "Democratic Republic of the Congo",
+"cc": "CD",
+"es": false,
+"key": "-5.9460,29.1967",
+"nkey": ""
+},
+{
+"disp": "Kafue",
+"lat": -15.74451,
+"lon": 28.17552,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-15.7445,28.1755",
+"nkey": ""
+},
+{
+"disp": "Morogoro",
+"lat": -6.81616,
+"lon": 37.66939,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-6.8162,37.6694",
+"nkey": ""
+},
+{
+"disp": "Tala",
+"lat": -1.26814,
+"lon": 37.32439,
+"country": "Kenya",
+"cc": "KE",
+"es": false,
+"key": "-1.2681,37.3244",
+"nkey": ""
+},
+{
+"disp": "Abuja",
+"lat": 9.06433,
+"lon": 7.4893,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "9.0643,7.4893",
+"nkey": ""
+},
+{
+"disp": "Cabinda",
+"lat": -5.55764,
+"lon": 12.19195,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-5.5576,12.1920",
+"nkey": ""
+},
+{
+"disp": "Sukkur · سکھر",
+"lat": 27.69619,
+"lon": 68.85888,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "27.6962,68.8589",
+"nkey": ""
+},
+{
+"disp": "Wad Madanī · ود مدني",
+"lat": 14.39658,
+"lon": 33.53096,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "14.3966,33.5310",
+"nkey": ""
+},
+{
+"disp": "Deir ez-Zor · دير الزور",
+"lat": 35.33333,
+"lon": 40.15,
+"country": "Syria",
+"cc": "SY",
+"es": false,
+"key": "35.3333,40.1500",
+"nkey": ""
+},
+{
+"disp": "Divo",
+"lat": 5.84053,
+"lon": -5.3549,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "5.8405,-5.3549",
+"nkey": ""
+},
+{
+"disp": "Magway · မကွေး",
+"lat": 20.14915,
+"lon": 94.92135,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "20.1491,94.9214",
+"nkey": ""
+},
+{
+"disp": "Hsinchu · 新竹市",
+"lat": 24.80663,
+"lon": 120.96868,
+"country": "Taiwan",
+"cc": "TW",
+"es": false,
+"key": "24.8066,120.9687",
+"nkey": ""
+},
+{
+"disp": "Bloemfontein",
+"lat": -29.1164,
+"lon": 26.2155,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-29.1164,26.2155",
+"nkey": ""
+},
+{
+"disp": "Cumilla · কুমিল্লা",
+"lat": 23.46098,
+"lon": 91.18122,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "23.4610,91.1812",
+"nkey": ""
+},
+{
+"disp": "Bata",
+"lat": 1.86919,
+"lon": 9.77201,
+"country": "Equatorial Guinea",
+"cc": "GQ",
+"es": false,
+"key": "1.8692,9.7720",
+"nkey": ""
+},
+{
+"disp": "Ludhiana",
+"lat": 30.90902,
+"lon": 75.8516,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "30.9090,75.8516",
+"nkey": ""
+},
+{
+"disp": "Angeles",
+"lat": 15.13481,
+"lon": 120.59069,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "15.1348,120.5907",
+"nkey": ""
+},
+{
+"disp": "Oujda · Oujda ⵡⵊⴷⴰ وجدة",
+"lat": 34.67787,
+"lon": -1.92931,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "34.6779,-1.9293",
+"nkey": ""
+},
+{
+"disp": "Barcelona",
+"lat": 10.1326,
+"lon": -64.68196,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.1326,-64.6820",
+"nkey": ""
+},
+{
+"disp": "Ibagué",
+"lat": 4.4386,
+"lon": -75.21089,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "4.4386,-75.2109",
+"nkey": ""
+},
+{
+"disp": "Sucre",
+"lat": -19.04773,
+"lon": -65.25943,
+"country": "Bolivia",
+"cc": "BO",
+"es": false,
+"key": "-19.0477,-65.2594",
+"nkey": ""
+},
+{
+"disp": "Andijan",
+"lat": 40.78335,
+"lon": 72.35067,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "40.7833,72.3507",
+"nkey": ""
+},
+{
+"disp": "Piura",
+"lat": -5.19711,
+"lon": -80.62666,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-5.1971,-80.6267",
+"nkey": ""
+},
+{
+"disp": "Bogor",
+"lat": -6.59636,
+"lon": 106.79732,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-6.5964,106.7973",
+"nkey": ""
+},
+{
+"disp": "Quevedo",
+"lat": -1.02434,
+"lon": -79.46635,
+"country": "Ecuador",
+"cc": "EC",
+"es": false,
+"key": "-1.0243,-79.4664",
+"nkey": ""
+},
+{
+"disp": "Al-Kut · الكوت",
+"lat": 32.50103,
+"lon": 45.82963,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "32.5010,45.8296",
+"nkey": ""
+},
+{
+"disp": "Tanchon · 단천시",
+"lat": 40.45905,
+"lon": 128.90386,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "40.4590,128.9039",
+"nkey": ""
+},
+{
+"disp": "Camagüey",
+"lat": 21.37918,
+"lon": -77.91837,
+"country": "Cuba",
+"cc": "CU",
+"es": false,
+"key": "21.3792,-77.9184",
+"nkey": ""
+},
+{
+"disp": "Buon Ma Thuot · Buôn Ma Thuột",
+"lat": 12.6797,
+"lon": 108.04467,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "12.6797,108.0447",
+"nkey": ""
+},
+{
+"disp": "Arak · اراک",
+"lat": 34.08627,
+"lon": 49.68939,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "34.0863,49.6894",
+"nkey": ""
+},
+{
+"disp": "Al Zawiyah · الزاوية",
+"lat": 32.75967,
+"lon": 12.7356,
+"country": "Libya",
+"cc": "LY",
+"es": false,
+"key": "32.7597,12.7356",
+"nkey": ""
+},
+{
+"disp": "Port Said · بورسعيد",
+"lat": 31.26324,
+"lon": 32.3055,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "31.2632,32.3055",
+"nkey": ""
+},
+{
+"disp": "Maceió",
+"lat": -9.64768,
+"lon": -35.73393,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-9.6477,-35.7339",
+"nkey": ""
+},
+{
+"disp": "Batna · باتنة ⵜⴱⴰⵜⴻⵏⵜ",
+"lat": 35.55446,
+"lon": 6.1768,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "35.5545,6.1768",
+"nkey": ""
+},
+{
+"disp": "Sevastopol · Севастополь",
+"lat": 44.60544,
+"lon": 33.52208,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "44.6054,33.5221",
+"nkey": ""
+},
+{
+"disp": "Mexicali",
+"lat": 32.62453,
+"lon": -115.4526,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "32.6245,-115.4526",
+"nkey": ""
+},
+{
+"disp": "Santiago de los Caballeros",
+"lat": 19.45085,
+"lon": -70.69474,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "19.4508,-70.6947",
+"nkey": ""
+},
+{
+"disp": "Chongqing · 重庆市",
+"lat": 29.56567,
+"lon": 106.54792,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "29.5657,106.5479",
+"nkey": ""
+},
+{
+"disp": "San Miguel de Tucumán",
+"lat": -26.83037,
+"lon": -65.20381,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-26.8304,-65.2038",
+"nkey": ""
+},
+{
+"disp": "Vitsebsk · Віцебск",
+"lat": 55.19302,
+"lon": 30.20704,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "55.1930,30.2070",
+"nkey": ""
+},
+{
+"disp": "Viña del Mar",
+"lat": -33.02445,
+"lon": -71.55176,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-33.0245,-71.5518",
+"nkey": ""
+},
+{
+"disp": "Plovdiv · Пловдив",
+"lat": 42.14185,
+"lon": 24.74993,
+"country": "Bulgaria",
+"cc": "BG",
+"es": false,
+"key": "42.1418,24.7499",
+"nkey": ""
+},
+{
+"disp": "Kuantan",
+"lat": 3.79745,
+"lon": 103.32192,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "3.7974,103.3219",
+"nkey": ""
+},
+{
+"disp": "Salalah · صلالة",
+"lat": 17.01749,
+"lon": 54.10109,
+"country": "Oman",
+"cc": "OM",
+"es": false,
+"key": "17.0175,54.1011",
+"nkey": ""
+},
+{
+"disp": "Karaganda · Қарағанды",
+"lat": 49.81613,
+"lon": 73.10266,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "49.8161,73.1027",
+"nkey": ""
+},
+{
+"disp": "Hatay",
+"lat": 36.20255,
+"lon": 36.16029,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "36.2026,36.1603",
+"nkey": ""
+},
+{
+"disp": "Košice",
+"lat": 48.71723,
+"lon": 21.24968,
+"country": "Slovakia",
+"cc": "SK",
+"es": false,
+"key": "48.7172,21.2497",
+"nkey": ""
+},
+{
+"disp": "Timișoara",
+"lat": 45.75384,
+"lon": 21.22575,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "45.7538,21.2258",
+"nkey": ""
+},
+{
+"disp": "Omsk · Омск",
+"lat": 54.99137,
+"lon": 73.37153,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "54.9914,73.3715",
+"nkey": ""
+},
+{
+"disp": "Kumamoto · 熊本市",
+"lat": 32.80339,
+"lon": 130.70827,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "32.8034,130.7083",
+"nkey": ""
+},
+{
+"disp": "Kaunas",
+"lat": 54.89821,
+"lon": 23.90448,
+"country": "Lithuania",
+"cc": "LT",
+"es": false,
+"key": "54.8982,23.9045",
+"nkey": ""
+},
+{
+"disp": "Gdansk · Gdańsk",
+"lat": 54.34829,
+"lon": 18.65402,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "54.3483,18.6540",
+"nkey": ""
+},
+{
+"disp": "Wellington",
+"lat": -41.2888,
+"lon": 174.77721,
+"country": "New Zealand",
+"cc": "NZ",
+"es": false,
+"key": "-41.2888,174.7772",
+"nkey": ""
+},
+{
+"disp": "Haifa · חיפה",
+"lat": 32.81912,
+"lon": 34.99839,
+"country": "Israel",
+"cc": "IL",
+"es": false,
+"key": "32.8191,34.9984",
+"nkey": ""
+},
+{
+"disp": "Bologna",
+"lat": 44.49382,
+"lon": 11.34263,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "44.4938,11.3426",
+"nkey": ""
+},
+{
+"disp": "Ostrava",
+"lat": 49.8354,
+"lon": 18.29298,
+"country": "Czech Republic",
+"cc": "CZ",
+"es": false,
+"key": "49.8354,18.2930",
+"nkey": ""
+},
+{
+"disp": "Edinburgh",
+"lat": 55.95335,
+"lon": -3.18837,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "55.9534,-3.1884",
+"nkey": ""
+},
+{
+"disp": "Pohang · 포항시",
+"lat": 36.01893,
+"lon": 129.34294,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "36.0189,129.3429",
+"nkey": ""
+},
+{
+"disp": "Toulouse",
+"lat": 43.60446,
+"lon": 1.44424,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "43.6045,1.4442",
+"nkey": ""
+},
+{
+"disp": "Oulu",
+"lat": 65.01179,
+"lon": 25.4702,
+"country": "Finland",
+"cc": "FI",
+"es": false,
+"key": "65.0118,25.4702",
+"nkey": ""
+},
+{
+"disp": "Quebec · Québec",
+"lat": 46.81374,
+"lon": -71.20841,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "46.8137,-71.2084",
+"nkey": ""
+},
+{
+"disp": "Newcastle",
+"lat": -32.92729,
+"lon": 151.78125,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-32.9273,151.7812",
+"nkey": ""
+},
+{
+"disp": "Hanover",
+"lat": 52.37448,
+"lon": 9.73855,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "52.3745,9.7386",
+"nkey": ""
+},
+{
+"disp": "Linz",
+"lat": 48.30591,
+"lon": 14.2862,
+"country": "Austria",
+"cc": "AT",
+"es": false,
+"key": "48.3059,14.2862",
+"nkey": ""
+},
+{
+"disp": "Tabuk · تبوك",
+"lat": 28.40125,
+"lon": 36.56705,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "28.4013,36.5671",
+"nkey": ""
+},
+{
+"disp": "Ghent",
+"lat": 51.05383,
+"lon": 3.72501,
+"country": "Belgium",
+"cc": "BE",
+"es": false,
+"key": "51.0538,3.7250",
+"nkey": ""
+},
+{
+"disp": "Seattle",
+"lat": 47.60383,
+"lon": -122.33006,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "47.6038,-122.3301",
+"nkey": ""
+},
+{
+"disp": "Eindhoven",
+"lat": 51.43926,
+"lon": 5.47863,
+"country": "Kingdom of the Netherlands",
+"cc": "NL",
+"es": false,
+"key": "51.4393,5.4786",
+"nkey": ""
+},
+{
+"disp": "Stavanger",
+"lat": 58.96997,
+"lon": 5.73181,
+"country": "Norway",
+"cc": "NO",
+"es": false,
+"key": "58.9700,5.7318",
+"nkey": ""
+},
+{
+"disp": "Chingola",
+"lat": -12.54749,
+"lon": 27.86004,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-12.5475,27.8600",
+"nkey": ""
+},
+{
+"disp": "Kahama",
+"lat": -3.82899,
+"lon": 32.60116,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-3.8290,32.6012",
+"nkey": ""
+},
+{
+"disp": "Kaduna",
+"lat": 10.51829,
+"lon": 7.43599,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "10.5183,7.4360",
+"nkey": ""
+},
+{
+"disp": "Menongue",
+"lat": -14.66107,
+"lon": 17.68203,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-14.6611,17.6820",
+"nkey": ""
+},
+{
+"disp": "Larkana · لاڑکانہ",
+"lat": 27.55648,
+"lon": 68.21015,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "27.5565,68.2101",
+"nkey": ""
+},
+{
+"disp": "Al-Qadarif · القضارف",
+"lat": 14.04094,
+"lon": 35.39883,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "14.0409,35.3988",
+"nkey": ""
+},
+{
+"disp": "Gagnoa",
+"lat": 6.13348,
+"lon": -5.9511,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "6.1335,-5.9511",
+"nkey": ""
+},
+{
+"disp": "Bago · ပဲခူး",
+"lat": 17.33667,
+"lon": 96.47972,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "17.3367,96.4797",
+"nkey": ""
+},
+{
+"disp": "Chiayi · 嘉義市",
+"lat": 23.48111,
+"lon": 120.45354,
+"country": "Taiwan",
+"cc": "TW",
+"es": false,
+"key": "23.4811,120.4535",
+"nkey": ""
+},
+{
+"disp": "Bogura · বগুড়া",
+"lat": 24.85007,
+"lon": 89.37284,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.8501,89.3728",
+"nkey": ""
+},
+{
+"disp": "Kanyakumari",
+"lat": 8.07925,
+"lon": 77.54993,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "8.0793,77.5499",
+"nkey": ""
+},
+{
+"disp": "Iloilo City",
+"lat": 10.69329,
+"lon": 122.57326,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "10.6933,122.5733",
+"nkey": ""
+},
+{
+"disp": "Safi · Safi ⴰⵙⴼⵉ آسفي",
+"lat": 32.29942,
+"lon": -9.23953,
+"country": "Morocco",
+"cc": "MA",
+"es": false,
+"key": "32.2994,-9.2395",
+"nkey": ""
+},
+{
+"disp": "Maturin · Maturín",
+"lat": 9.74228,
+"lon": -63.18889,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "9.7423,-63.1889",
+"nkey": ""
+},
+{
+"disp": "Santa Marta",
+"lat": 11.23209,
+"lon": -74.19509,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "11.2321,-74.1951",
+"nkey": ""
+},
+{
+"disp": "Tarija",
+"lat": -21.53388,
+"lon": -64.73436,
+"country": "Bolivia",
+"cc": "BO",
+"es": false,
+"key": "-21.5339,-64.7344",
+"nkey": ""
+},
+{
+"disp": "Nukus · Nókis",
+"lat": 42.46002,
+"lon": 59.61766,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "42.4600,59.6177",
+"nkey": ""
+},
+{
+"disp": "Iquitos",
+"lat": -3.74937,
+"lon": -73.24441,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-3.7494,-73.2444",
+"nkey": ""
+},
+{
+"disp": "Denpasar",
+"lat": -8.66533,
+"lon": 115.21762,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-8.6653,115.2176",
+"nkey": ""
+},
+{
+"disp": "Santo Domingo de los Tsachilas · Santo Domingo de los Tsáchilas",
+"lat": -0.25462,
+"lon": -79.16867,
+"country": "Ecuador",
+"cc": "EC",
+"es": false,
+"key": "-0.2546,-79.1687",
+"nkey": ""
+},
+{
+"disp": "Samarra · سامراء",
+"lat": 34.2,
+"lon": 43.9,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "34.2000,43.9000",
+"nkey": ""
+},
+{
+"disp": "Wonsan · 원산시",
+"lat": 39.17259,
+"lon": 127.42842,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "39.1726,127.4284",
+"nkey": ""
+},
+{
+"disp": "Holguín",
+"lat": 20.88697,
+"lon": -76.2592,
+"country": "Cuba",
+"cc": "CU",
+"es": false,
+"key": "20.8870,-76.2592",
+"nkey": ""
+},
+{
+"disp": "Nam Định",
+"lat": 20.43221,
+"lon": 106.17443,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "20.4322,106.1744",
+"nkey": ""
+},
+{
+"disp": "Zahedan · زاهدان",
+"lat": 29.49069,
+"lon": 60.86354,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "29.4907,60.8635",
+"nkey": ""
+},
+{
+"disp": "Bayda · ⵍⴱⵉⴹⴰ البيضاء Bayda",
+"lat": 32.76095,
+"lon": 21.75772,
+"country": "Libya",
+"cc": "LY",
+"es": false,
+"key": "32.7610,21.7577",
+"nkey": ""
+},
+{
+"disp": "Suez · السويس",
+"lat": 29.9745,
+"lon": 32.53709,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "29.9745,32.5371",
+"nkey": ""
+},
+{
+"disp": "Campo Grande",
+"lat": -20.46402,
+"lon": -54.61629,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-20.4640,-54.6163",
+"nkey": ""
+},
+{
+"disp": "Djelfa · الجلفة ⵍⵊⴻⵍⴼⴰ",
+"lat": 34.67136,
+"lon": 3.25404,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "34.6714,3.2540",
+"nkey": ""
+},
+{
+"disp": "Mariupol · Маріуполь",
+"lat": 47.09576,
+"lon": 37.54996,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "47.0958,37.5500",
+"nkey": ""
+},
+{
+"disp": "San Luis Potosí City · San Luis Potosí",
+"lat": 22.15165,
+"lon": -100.9764,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "22.1517,-100.9764",
+"nkey": ""
+},
+{
+"disp": "Baní",
+"lat": 18.27772,
+"lon": -70.33207,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "18.2777,-70.3321",
+"nkey": ""
+},
+{
+"disp": "Shijiazhuang · 石家庄市",
+"lat": 38.04297,
+"lon": 114.50884,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "38.0430,114.5088",
+"nkey": ""
+},
+{
+"disp": "San Juan",
+"lat": -31.53709,
+"lon": -68.52518,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-31.5371,-68.5252",
+"nkey": ""
+},
+{
+"disp": "Hrodna · Гродна",
+"lat": 53.68346,
+"lon": 23.83426,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "53.6835,23.8343",
+"nkey": ""
+},
+{
+"disp": "Temuco",
+"lat": -38.73589,
+"lon": -72.59054,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-38.7359,-72.5905",
+"nkey": ""
+},
+{
+"disp": "Kota Kinabalu",
+"lat": 5.97801,
+"lon": 116.0729,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "5.9780,116.0729",
+"nkey": ""
+},
+{
+"disp": "Sohar · صحار",
+"lat": 24.34199,
+"lon": 56.72984,
+"country": "Oman",
+"cc": "OM",
+"es": false,
+"key": "24.3420,56.7298",
+"nkey": ""
+},
+{
+"disp": "Taraz · Тараз",
+"lat": 42.90159,
+"lon": 71.37693,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "42.9016,71.3769",
+"nkey": ""
+},
+{
+"disp": "Kayseri",
+"lat": 38.7219,
+"lon": 35.48732,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "38.7219,35.4873",
+"nkey": ""
+},
+{
+"disp": "Iași",
+"lat": 47.16156,
+"lon": 27.58378,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "47.1616,27.5838",
+"nkey": ""
+},
+{
+"disp": "Voronezh · Воронеж",
+"lat": 51.6606,
+"lon": 39.20059,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "51.6606,39.2006",
+"nkey": ""
+},
+{
+"disp": "Okayama · 岡山市",
+"lat": 34.65539,
+"lon": 133.91946,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "34.6554,133.9195",
+"nkey": ""
+},
+{
+"disp": "Szczecin",
+"lat": 53.43018,
+"lon": 14.55096,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "53.4302,14.5510",
+"nkey": ""
+},
+{
+"disp": "Beersheba · באר שבע",
+"lat": 31.24574,
+"lon": 34.79252,
+"country": "Israel",
+"cc": "IL",
+"es": false,
+"key": "31.2457,34.7925",
+"nkey": ""
+},
+{
+"disp": "Florence",
+"lat": 43.7698,
+"lon": 11.25564,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "43.7698,11.2556",
+"nkey": ""
+},
+{
+"disp": "Bristol",
+"lat": 51.4538,
+"lon": -2.5973,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "51.4538,-2.5973",
+"nkey": ""
+},
+{
+"disp": "Jeju · 제주시",
+"lat": 33.49983,
+"lon": 126.53139,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "33.4998,126.5314",
+"nkey": ""
+},
+{
+"disp": "Nice",
+"lat": 43.70094,
+"lon": 7.26839,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "43.7009,7.2684",
+"nkey": ""
+},
+{
+"disp": "Turku",
+"lat": 60.45159,
+"lon": 22.267,
+"country": "Finland",
+"cc": "FI",
+"es": false,
+"key": "60.4516,22.2670",
+"nkey": ""
+},
+{
+"disp": "London",
+"lat": 42.98367,
+"lon": -81.24961,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "42.9837,-81.2496",
+"nkey": ""
+},
+{
+"disp": "Gosford",
+"lat": -33.42502,
+"lon": 151.34173,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-33.4250,151.3417",
+"nkey": ""
+},
+{
+"disp": "Bremen",
+"lat": 53.07582,
+"lon": 8.80716,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "53.0758,8.8072",
+"nkey": ""
+},
+{
+"disp": "Buraydah · بريدة",
+"lat": 26.33167,
+"lon": 43.97167,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "26.3317,43.9717",
+"nkey": ""
+},
+{
+"disp": "Charleroi",
+"lat": 50.41162,
+"lon": 4.44453,
+"country": "Belgium",
+"cc": "BE",
+"es": false,
+"key": "50.4116,4.4445",
+"nkey": ""
+},
+{
+"disp": "Denver",
+"lat": 39.73924,
+"lon": -104.98486,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "39.7392,-104.9849",
+"nkey": ""
+},
+{
+"disp": "Groningen",
+"lat": 53.21907,
+"lon": 6.56801,
+"country": "Kingdom of the Netherlands",
+"cc": "NL",
+"es": false,
+"key": "53.2191,6.5680",
+"nkey": ""
+},
+{
+"disp": "Trondheim",
+"lat": 63.43045,
+"lon": 10.39521,
+"country": "Norway",
+"cc": "NO",
+"es": false,
+"key": "63.4305,10.3952",
+"nkey": ""
+},
+{
+"disp": "Mazabuka",
+"lat": -15.85848,
+"lon": 27.76131,
+"country": "Zambia",
+"cc": "ZM",
+"es": false,
+"key": "-15.8585,27.7613",
+"nkey": ""
+},
+{
+"disp": "Tanga",
+"lat": -5.0722,
+"lon": 39.09935,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-5.0722,39.0994",
+"nkey": ""
+},
+{
+"disp": "Oyo · Ọ̀yọ́",
+"lat": 7.84105,
+"lon": 3.93154,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "7.8411,3.9315",
+"nkey": ""
+},
+{
+"disp": "Matala",
+"lat": -14.73836,
+"lon": 15.02893,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-14.7384,15.0289",
+"nkey": ""
+},
+{
+"disp": "Sheikhupura · شیخوپورہ",
+"lat": 31.70853,
+"lon": 73.9864,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "31.7085,73.9864",
+"nkey": ""
+},
+{
+"disp": "Al-Fashir · الفاشر",
+"lat": 13.62382,
+"lon": 25.35556,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "13.6238,25.3556",
+"nkey": ""
+},
+{
+"disp": "Soubré",
+"lat": 5.78502,
+"lon": -6.59332,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "5.7850,-6.5933",
+"nkey": ""
+},
+{
+"disp": "Taunggyi · တောင်ကြီး",
+"lat": 20.78701,
+"lon": 97.03873,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "20.7870,97.0387",
+"nkey": ""
+},
+{
+"disp": "KuGompo City",
+"lat": -33.01916,
+"lon": 27.89986,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-33.0192,27.8999",
+"nkey": ""
+},
+{
+"disp": "Mymensingh · ময়মনসিংহ",
+"lat": 24.74821,
+"lon": 90.40992,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.7482,90.4099",
+"nkey": ""
+},
+{
+"disp": "Bhopal",
+"lat": 23.25849,
+"lon": 77.40199,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "23.2585,77.4020",
+"nkey": ""
+},
+{
+"disp": "Butuan",
+"lat": 8.94771,
+"lon": 125.54321,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "8.9477,125.5432",
+"nkey": ""
+},
+{
+"disp": "Cumana · Cumaná",
+"lat": 10.44957,
+"lon": -64.1578,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.4496,-64.1578",
+"nkey": ""
+},
+{
+"disp": "Valledupar",
+"lat": 10.46517,
+"lon": -73.25295,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "10.4652,-73.2529",
+"nkey": ""
+},
+{
+"disp": "Fergana",
+"lat": 40.37649,
+"lon": 71.79132,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "40.3765,71.7913",
+"nkey": ""
+},
+{
+"disp": "Cuzco",
+"lat": -13.51709,
+"lon": -71.97854,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-13.5171,-71.9785",
+"nkey": ""
+},
+{
+"disp": "Tasikmalaya",
+"lat": -7.32625,
+"lon": 108.22012,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-7.3262,108.2201",
+"nkey": ""
+},
+{
+"disp": "Manta",
+"lat": -0.94864,
+"lon": -80.71908,
+"country": "Ecuador",
+"cc": "EC",
+"es": false,
+"key": "-0.9486,-80.7191",
+"nkey": ""
+},
+{
+"disp": "Fallujah · الفلوجة",
+"lat": 33.35321,
+"lon": 43.78757,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "33.3532,43.7876",
+"nkey": ""
+},
+{
+"disp": "Kaechon · 개천시",
+"lat": 39.70347,
+"lon": 125.88881,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "39.7035,125.8888",
+"nkey": ""
+},
+{
+"disp": "Santa Clara",
+"lat": 22.40663,
+"lon": -79.9651,
+"country": "Cuba",
+"cc": "CU",
+"es": false,
+"key": "22.4066,-79.9651",
+"nkey": ""
+},
+{
+"disp": "Huế",
+"lat": 16.46393,
+"lon": 107.58634,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "16.4639,107.5863",
+"nkey": ""
+},
+{
+"disp": "Kerman · کرمان",
+"lat": 30.28522,
+"lon": 57.06484,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "30.2852,57.0648",
+"nkey": ""
+},
+{
+"disp": "Zliten · ⵣⵍⵉⵜⵏ زليتن Zliten",
+"lat": 32.46756,
+"lon": 14.56564,
+"country": "Libya",
+"cc": "LY",
+"es": false,
+"key": "32.4676,14.5656",
+"nkey": ""
+},
+{
+"disp": "Luxor · الأقصر",
+"lat": 25.7021,
+"lon": 32.64719,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "25.7021,32.6472",
+"nkey": ""
+},
+{
+"disp": "Teresina",
+"lat": -5.08746,
+"lon": -42.80496,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-5.0875,-42.8050",
+"nkey": ""
+},
+{
+"disp": "Setif · Setif;ⵚⵟⵉⴼ;سطيف",
+"lat": 36.18935,
+"lon": 5.40469,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "36.1893,5.4047",
+"nkey": ""
+},
+{
+"disp": "Luhansk · Луганськ",
+"lat": 48.57171,
+"lon": 39.29732,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "48.5717,39.2973",
+"nkey": ""
+},
+{
+"disp": "Culiacán",
+"lat": 24.7979,
+"lon": -107.39339,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "24.7979,-107.3934",
+"nkey": ""
+},
+{
+"disp": "San Francisco de Macorís",
+"lat": 19.29744,
+"lon": -70.25733,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "19.2974,-70.2573",
+"nkey": ""
+},
+{
+"disp": "Qingdao · 青岛市",
+"lat": 36.06632,
+"lon": 120.37777,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "36.0663,120.3778",
+"nkey": ""
+},
+{
+"disp": "Corrientes",
+"lat": -27.4687,
+"lon": -58.8312,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-27.4687,-58.8312",
+"nkey": ""
+},
+{
+"disp": "Mahilyow · Магілёў",
+"lat": 53.90902,
+"lon": 30.34298,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "53.9090,30.3430",
+"nkey": ""
+},
+{
+"disp": "Rancagua",
+"lat": -34.17024,
+"lon": -70.74072,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-34.1702,-70.7407",
+"nkey": ""
+},
+{
+"disp": "Malacca City",
+"lat": 2.19426,
+"lon": 102.24867,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "2.1943,102.2487",
+"nkey": ""
+},
+{
+"disp": "Öskemen · Өскемен",
+"lat": 49.94844,
+"lon": 82.62748,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "49.9484,82.6275",
+"nkey": ""
+},
+{
+"disp": "Samsun",
+"lat": 41.29461,
+"lon": 36.33206,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "41.2946,36.3321",
+"nkey": ""
+},
+{
+"disp": "Constanța",
+"lat": 44.17672,
+"lon": 28.65076,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "44.1767,28.6508",
+"nkey": ""
+},
+{
+"disp": "Perm · Пермь",
+"lat": 58.01085,
+"lon": 56.23185,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "58.0108,56.2319",
+"nkey": ""
+},
+{
+"disp": "Shizuoka · 静岡市",
+"lat": 34.9752,
+"lon": 138.38317,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "34.9752,138.3832",
+"nkey": ""
+},
+{
+"disp": "Lublin",
+"lat": 51.25056,
+"lon": 22.5701,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "51.2506,22.5701",
+"nkey": ""
+},
+{
+"disp": "Bari",
+"lat": 41.12578,
+"lon": 16.86203,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "41.1258,16.8620",
+"nkey": ""
+},
+{
+"disp": "Liverpool",
+"lat": 53.4072,
+"lon": -2.99168,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "53.4072,-2.9917",
+"nkey": ""
+},
+{
+"disp": "Jinju · 진주시",
+"lat": 35.18035,
+"lon": 128.108,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.1803,128.1080",
+"nkey": ""
+},
+{
+"disp": "Nantes",
+"lat": 47.21864,
+"lon": -1.55414,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "47.2186,-1.5541",
+"nkey": ""
+},
+{
+"disp": "Halifax",
+"lat": 44.64862,
+"lon": -63.58595,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "44.6486,-63.5859",
+"nkey": ""
+},
+{
+"disp": "Sunshine Coast",
+"lat": -26.65443,
+"lon": 153.09337,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-26.6544,153.0934",
+"nkey": ""
+},
+{
+"disp": "Nuremberg · Nürnberg",
+"lat": 49.45387,
+"lon": 11.0773,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "49.4539,11.0773",
+"nkey": ""
+},
+{
+"disp": "Khamis Mushayt · خميس مشيط",
+"lat": 18.3,
+"lon": 42.73333,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "18.3000,42.7333",
+"nkey": ""
+},
+{
+"disp": "Oklahoma City",
+"lat": 35.47299,
+"lon": -97.51705,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "35.4730,-97.5170",
+"nkey": ""
+},
+{
+"disp": "Geita",
+"lat": -2.87076,
+"lon": 32.23408,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-2.8708,32.2341",
+"nkey": ""
+},
+{
+"disp": "Enugu",
+"lat": 6.44965,
+"lon": 7.51369,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "6.4497,7.5137",
+"nkey": ""
+},
+{
+"disp": "Caluquembe",
+"lat": -13.78712,
+"lon": 14.6887,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-13.7871,14.6887",
+"nkey": ""
+},
+{
+"disp": "Surab · سوراب",
+"lat": 28.49454,
+"lon": 66.26402,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "28.4945,66.2640",
+"nkey": ""
+},
+{
+"disp": "El Geneina · الجنينة",
+"lat": 13.44202,
+"lon": 22.44598,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "13.4420,22.4460",
+"nkey": ""
+},
+{
+"disp": "Man",
+"lat": 7.41026,
+"lon": -7.55037,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "7.4103,-7.5504",
+"nkey": ""
+},
+{
+"disp": "Pantanaw · ပန်းတနော်မြို့",
+"lat": 16.98311,
+"lon": 95.46662,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "16.9831,95.4666",
+"nkey": ""
+},
+{
+"disp": "Kimberley",
+"lat": -28.7383,
+"lon": 24.76423,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-28.7383,24.7642",
+"nkey": ""
+},
+{
+"disp": "Sreemangal · শ্রীমঙ্গল",
+"lat": 24.30986,
+"lon": 91.73087,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.3099,91.7309",
+"nkey": ""
+},
+{
+"disp": "Madurai",
+"lat": 9.92612,
+"lon": 78.1141,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "9.9261,78.1141",
+"nkey": ""
+},
+{
+"disp": "Baguio",
+"lat": 16.41199,
+"lon": 120.59339,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "16.4120,120.5934",
+"nkey": ""
+},
+{
+"disp": "Punto Fijo",
+"lat": 11.69317,
+"lon": -70.19172,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "11.6932,-70.1917",
+"nkey": ""
+},
+{
+"disp": "Pereira",
+"lat": 4.81432,
+"lon": -75.69468,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "4.8143,-75.6947",
+"nkey": ""
+},
+{
+"disp": "Karshi",
+"lat": 38.83982,
+"lon": 65.79278,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "38.8398,65.7928",
+"nkey": ""
+},
+{
+"disp": "Huancayo",
+"lat": -12.0681,
+"lon": -75.2101,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-12.0681,-75.2101",
+"nkey": ""
+},
+{
+"disp": "Jambi",
+"lat": -1.62969,
+"lon": 103.60778,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-1.6297,103.6078",
+"nkey": ""
+},
+{
+"disp": "Baqubah · بعقوبة",
+"lat": 33.74474,
+"lon": 44.63285,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "33.7447,44.6328",
+"nkey": ""
+},
+{
+"disp": "Kaesong · 개성시",
+"lat": 37.9717,
+"lon": 126.55276,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "37.9717,126.5528",
+"nkey": ""
+},
+{
+"disp": "Guantanamo · Guantánamo",
+"lat": 20.14318,
+"lon": -75.20348,
+"country": "Cuba",
+"cc": "CU",
+"es": false,
+"key": "20.1432,-75.2035",
+"nkey": ""
+},
+{
+"disp": "Quy Nhon · Quy Nhơn",
+"lat": 13.77718,
+"lon": 109.22636,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "13.7772,109.2264",
+"nkey": ""
+},
+{
+"disp": "Bandar Abbas · بندرعباس",
+"lat": 27.1842,
+"lon": 56.28925,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "27.1842,56.2893",
+"nkey": ""
+},
+{
+"disp": "El Mahalla El Kubra · المحلة الكبرى",
+"lat": 30.97235,
+"lon": 31.1683,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "30.9723,31.1683",
+"nkey": ""
+},
+{
+"disp": "João Pessoa",
+"lat": -7.1216,
+"lon": -34.88203,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-7.1216,-34.8820",
+"nkey": ""
+},
+{
+"disp": "Annaba · عنابة ⵄⵏⵏⴰⴱⴰ",
+"lat": 36.89822,
+"lon": 7.75493,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "36.8982,7.7549",
+"nkey": ""
+},
+{
+"disp": "Vinnytsia · Вінниця",
+"lat": 49.23202,
+"lon": 28.46797,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "49.2320,28.4680",
+"nkey": ""
+},
+{
+"disp": "Santiago de Querétaro",
+"lat": 20.5923,
+"lon": -100.39174,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "20.5923,-100.3917",
+"nkey": ""
+},
+{
+"disp": "Higüey",
+"lat": 18.61313,
+"lon": -68.71145,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "18.6131,-68.7114",
+"nkey": ""
+},
+{
+"disp": "Hefei · 合肥市",
+"lat": 31.86657,
+"lon": 117.28143,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "31.8666,117.2814",
+"nkey": ""
+},
+{
+"disp": "Santa Fe",
+"lat": -31.6187,
+"lon": -60.70196,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-31.6187,-60.7020",
+"nkey": ""
+},
+{
+"disp": "Brest · Брэст",
+"lat": 52.09375,
+"lon": 23.68519,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "52.0938,23.6852",
+"nkey": ""
+},
+{
+"disp": "Concepción",
+"lat": -36.82707,
+"lon": -73.05021,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-36.8271,-73.0502",
+"nkey": ""
+},
+{
+"disp": "Sandakan",
+"lat": 5.83913,
+"lon": 118.11586,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "5.8391,118.1159",
+"nkey": ""
+},
+{
+"disp": "Pavlodar · Павлодар",
+"lat": 52.28576,
+"lon": 76.9455,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "52.2858,76.9455",
+"nkey": ""
+},
+{
+"disp": "Balıkesir",
+"lat": 39.64739,
+"lon": 27.88798,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "39.6474,27.8880",
+"nkey": ""
+},
+{
+"disp": "Craiova",
+"lat": 44.31902,
+"lon": 23.79656,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "44.3190,23.7966",
+"nkey": ""
+},
+{
+"disp": "Volgograd · Волгоград",
+"lat": 48.70819,
+"lon": 44.51534,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "48.7082,44.5153",
+"nkey": ""
+},
+{
+"disp": "Kagoshima · 鹿児島市",
+"lat": 31.59679,
+"lon": 130.55719,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "31.5968,130.5572",
+"nkey": ""
+},
+{
+"disp": "Bydgoszcz",
+"lat": 53.12196,
+"lon": 18.00025,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "53.1220,18.0003",
+"nkey": ""
+},
+{
+"disp": "Catania",
+"lat": 37.50236,
+"lon": 15.08737,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "37.5024,15.0874",
+"nkey": ""
+},
+{
+"disp": "Cardiff",
+"lat": 51.48165,
+"lon": -3.17919,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "51.4817,-3.1792",
+"nkey": ""
+},
+{
+"disp": "Wonju · 원주시",
+"lat": 37.3421,
+"lon": 127.91976,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "37.3421,127.9198",
+"nkey": ""
+},
+{
+"disp": "Montpellier",
+"lat": 43.61124,
+"lon": 3.87673,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "43.6112,3.8767",
+"nkey": ""
+},
+{
+"disp": "Saskatoon",
+"lat": 52.1318,
+"lon": -106.66077,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "52.1318,-106.6608",
+"nkey": ""
+},
+{
+"disp": "Wollongong",
+"lat": -34.42439,
+"lon": 150.89385,
+"country": "Australia",
+"cc": "AU",
+"es": false,
+"key": "-34.4244,150.8938",
+"nkey": ""
+},
+{
+"disp": "Duisburg",
+"lat": 51.435,
+"lon": 6.75956,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "51.4350,6.7596",
+"nkey": ""
+},
+{
+"disp": "Al Jubayl · الجبيل",
+"lat": 27.0007,
+"lon": 49.65322,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "27.0007,49.6532",
+"nkey": ""
+},
+{
+"disp": "Las Vegas",
+"lat": 36.16743,
+"lon": -115.14841,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "36.1674,-115.1484",
+"nkey": ""
+},
+{
+"disp": "Kongwa",
+"lat": -6.19257,
+"lon": 36.40724,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-6.1926,36.4072",
+"nkey": ""
+},
+{
+"disp": "Kazaure",
+"lat": 12.65382,
+"lon": 8.41481,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "12.6538,8.4148",
+"nkey": ""
+},
+{
+"disp": "Quipungo",
+"lat": -14.82563,
+"lon": 14.54879,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-14.8256,14.5488",
+"nkey": ""
+},
+{
+"disp": "Bhimber · بھمبر",
+"lat": 32.97406,
+"lon": 74.07385,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "32.9741,74.0738",
+"nkey": ""
+},
+{
+"disp": "Ad Da'ein · الضعين",
+"lat": 11.46117,
+"lon": 26.13109,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "11.4612,26.1311",
+"nkey": ""
+},
+{
+"disp": "Duekoue · Duékoué",
+"lat": 6.7453,
+"lon": -7.34327,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "6.7453,-7.3433",
+"nkey": ""
+},
+{
+"disp": "Kalay · ကလေးမြို့",
+"lat": 23.19584,
+"lon": 94.01458,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "23.1958,94.0146",
+"nkey": ""
+},
+{
+"disp": "Mthatha",
+"lat": -31.58959,
+"lon": 28.78777,
+"country": "South Africa",
+"cc": "ZA",
+"es": false,
+"key": "-31.5896,28.7878",
+"nkey": ""
+},
+{
+"disp": "Barishal · বরিশাল",
+"lat": 22.70475,
+"lon": 90.37073,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "22.7048,90.3707",
+"nkey": ""
+},
+{
+"disp": "Siliguri",
+"lat": 26.71641,
+"lon": 88.43099,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "26.7164,88.4310",
+"nkey": ""
+},
+{
+"disp": "Iligan",
+"lat": 8.22816,
+"lon": 124.24115,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "8.2282,124.2412",
+"nkey": ""
+},
+{
+"disp": "Mérida",
+"lat": 8.5817,
+"lon": -71.16581,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "8.5817,-71.1658",
+"nkey": ""
+},
+{
+"disp": "Montería",
+"lat": 8.75094,
+"lon": -75.87868,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "8.7509,-75.8787",
+"nkey": ""
+},
+{
+"disp": "Bukhara",
+"lat": 39.77598,
+"lon": 64.41515,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "39.7760,64.4151",
+"nkey": ""
+},
+{
+"disp": "Chimbote",
+"lat": -9.0745,
+"lon": -78.59361,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-9.0745,-78.5936",
+"nkey": ""
+},
+{
+"disp": "Samarinda",
+"lat": -0.50178,
+"lon": 117.13931,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-0.5018,117.1393",
+"nkey": ""
+},
+{
+"disp": "Tikrit · تكريت",
+"lat": 34.61581,
+"lon": 43.67861,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "34.6158,43.6786",
+"nkey": ""
+},
+{
+"disp": "Haeju · 해주시",
+"lat": 38.04215,
+"lon": 125.70844,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "38.0421,125.7084",
+"nkey": ""
+},
+{
+"disp": "Long Xuyên",
+"lat": 10.39035,
+"lon": 105.43444,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "10.3903,105.4344",
+"nkey": ""
+},
+{
+"disp": "Hamadan · همدان",
+"lat": 34.79929,
+"lon": 48.51525,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "34.7993,48.5153",
+"nkey": ""
+},
+{
+"disp": "Al Ismailiya · الإسماعيلية",
+"lat": 30.60438,
+"lon": 32.27708,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "30.6044,32.2771",
+"nkey": ""
+},
+{
+"disp": "Natal",
+"lat": -5.8054,
+"lon": -35.20809,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-5.8054,-35.2081",
+"nkey": ""
+},
+{
+"disp": "Sidi Bel Abbes · Sidi Bel Abbès ⵙⵉⴷⵉ ⴱⵍⵄⴰⴱⴰⵙ سيدي بلعباس",
+"lat": 35.19074,
+"lon": -0.63412,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "35.1907,-0.6341",
+"nkey": ""
+},
+{
+"disp": "Simferopol · Симферополь",
+"lat": 44.95215,
+"lon": 34.10249,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "44.9522,34.1025",
+"nkey": ""
+},
+{
+"disp": "Morelia",
+"lat": 19.70271,
+"lon": -101.19238,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "19.7027,-101.1924",
+"nkey": ""
+},
+{
+"disp": "San Pedro de Macorís",
+"lat": 18.46171,
+"lon": -69.30318,
+"country": "Dominican Republic",
+"cc": "DO",
+"es": false,
+"key": "18.4617,-69.3032",
+"nkey": ""
+},
+{
+"disp": "Nanjing · 南京市",
+"lat": 32.04383,
+"lon": 118.77886,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "32.0438,118.7789",
+"nkey": ""
+},
+{
+"disp": "Bahía Blanca",
+"lat": -38.71765,
+"lon": -62.26549,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-38.7176,-62.2655",
+"nkey": ""
+},
+{
+"disp": "Babruysk · Бабруйск",
+"lat": 53.14497,
+"lon": 29.22812,
+"country": "Belarus",
+"cc": "BY",
+"es": false,
+"key": "53.1450,29.2281",
+"nkey": ""
+},
+{
+"disp": "Talca",
+"lat": -35.42653,
+"lon": -71.66603,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-35.4265,-71.6660",
+"nkey": ""
+},
+{
+"disp": "Alor Setar",
+"lat": 6.12319,
+"lon": 100.3684,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "6.1232,100.3684",
+"nkey": ""
+},
+{
+"disp": "Atyrau · Атырау",
+"lat": 47.10672,
+"lon": 51.9139,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "47.1067,51.9139",
+"nkey": ""
+},
+{
+"disp": "Van",
+"lat": 38.50088,
+"lon": 43.39461,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "38.5009,43.3946",
+"nkey": ""
+},
+{
+"disp": "Brasov · Brașov",
+"lat": 45.65251,
+"lon": 25.61057,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "45.6525,25.6106",
+"nkey": ""
+},
+{
+"disp": "Saratov · Саратов",
+"lat": 51.53002,
+"lon": 46.03468,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "51.5300,46.0347",
+"nkey": ""
+},
+{
+"disp": "Hachioji · 八王子市",
+"lat": 35.66636,
+"lon": 139.31637,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "35.6664,139.3164",
+"nkey": ""
+},
+{
+"disp": "Białystok",
+"lat": 53.1324,
+"lon": 23.15917,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "53.1324,23.1592",
+"nkey": ""
+},
+{
+"disp": "Verona",
+"lat": 45.4385,
+"lon": 10.99241,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "45.4385,10.9924",
+"nkey": ""
+},
+{
+"disp": "Belfast",
+"lat": 54.59639,
+"lon": -5.93018,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "54.5964,-5.9302",
+"nkey": ""
+},
+{
+"disp": "Yeosu · 여수시",
+"lat": 34.75463,
+"lon": 127.65986,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "34.7546,127.6599",
+"nkey": ""
+},
+{
+"disp": "Strasbourg",
+"lat": 48.58461,
+"lon": 7.75071,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "48.5846,7.7507",
+"nkey": ""
+},
+{
+"disp": "Kitchener",
+"lat": 43.45129,
+"lon": -80.49278,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "43.4513,-80.4928",
+"nkey": ""
+},
+{
+"disp": "Bielefeld",
+"lat": 52.0191,
+"lon": 8.53101,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "52.0191,8.5310",
+"nkey": ""
+},
+{
+"disp": "Ha'il · حائل",
+"lat": 27.52087,
+"lon": 41.6986,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "27.5209,41.6986",
+"nkey": ""
+},
+{
+"disp": "Boston",
+"lat": 42.35883,
+"lon": -71.05783,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "42.3588,-71.0578",
+"nkey": ""
+},
+{
+"disp": "Songea",
+"lat": -10.67873,
+"lon": 35.64836,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-10.6787,35.6484",
+"nkey": ""
+},
+{
+"disp": "Lafia",
+"lat": 8.49605,
+"lon": 8.51476,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "8.4961,8.5148",
+"nkey": ""
+},
+{
+"disp": "Malanje",
+"lat": -9.5484,
+"lon": 16.34753,
+"country": "Angola",
+"cc": "AO",
+"es": false,
+"key": "-9.5484,16.3475",
+"nkey": ""
+},
+{
+"disp": "Rahim Yar Khan · رحیم یار خان",
+"lat": 28.41761,
+"lon": 70.30365,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "28.4176,70.3037",
+"nkey": ""
+},
+{
+"disp": "جبرة الشيخ",
+"lat": 14.55975,
+"lon": 30.75227,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "14.5597,30.7523",
+"nkey": ""
+},
+{
+"disp": "Bouaflé",
+"lat": 6.98018,
+"lon": -5.74583,
+"country": "Ivory Coast",
+"cc": "CI",
+"es": false,
+"key": "6.9802,-5.7458",
+"nkey": ""
+},
+{
+"disp": "Myeik · မြိတ်မြို့",
+"lat": 12.43196,
+"lon": 98.59557,
+"country": "Myanmar",
+"cc": "MM",
+"es": false,
+"key": "12.4320,98.5956",
+"nkey": ""
+},
+{
+"disp": "Sarishabari · সরিষাবাড়ী",
+"lat": 24.74995,
+"lon": 89.83317,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.7499,89.8332",
+"nkey": ""
+},
+{
+"disp": "Agra",
+"lat": 27.17526,
+"lon": 78.00982,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "27.1753,78.0098",
+"nkey": ""
+},
+{
+"disp": "Batangas City",
+"lat": 13.75526,
+"lon": 121.05908,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "13.7553,121.0591",
+"nkey": ""
+},
+{
+"disp": "Valera",
+"lat": 9.31482,
+"lon": -70.60817,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "9.3148,-70.6082",
+"nkey": ""
+},
+{
+"disp": "Pasto",
+"lat": 1.21403,
+"lon": -77.27851,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "1.2140,-77.2785",
+"nkey": ""
+},
+{
+"disp": "Kokand · Qo‘qon",
+"lat": 40.54085,
+"lon": 70.94739,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "40.5408,70.9474",
+"nkey": ""
+},
+{
+"disp": "Pucallpa",
+"lat": -8.38207,
+"lon": -74.53875,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-8.3821,-74.5387",
+"nkey": ""
+},
+{
+"disp": "Balikpapan",
+"lat": -1.23987,
+"lon": 116.85934,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-1.2399,116.8593",
+"nkey": ""
+},
+{
+"disp": "Al-Shatrah · الشطرة",
+"lat": 31.40989,
+"lon": 46.17558,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "31.4099,46.1756",
+"nkey": ""
+},
+{
+"disp": "Kanggye · 강계시",
+"lat": 40.97097,
+"lon": 126.59367,
+"country": "North Korea",
+"cc": "KP",
+"es": false,
+"key": "40.9710,126.5937",
+"nkey": ""
+},
+{
+"disp": "Pleiku",
+"lat": 13.97698,
+"lon": 108.00163,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "13.9770,108.0016",
+"nkey": ""
+},
+{
+"disp": "Yazd · یزد",
+"lat": 31.90522,
+"lon": 54.37012,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "31.9052,54.3701",
+"nkey": ""
+},
+{
+"disp": "Faiyum · الفيوم",
+"lat": 29.30741,
+"lon": 30.83997,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "29.3074,30.8400",
+"nkey": ""
+},
+{
+"disp": "Sorocaba",
+"lat": -23.50035,
+"lon": -47.45829,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-23.5004,-47.4583",
+"nkey": ""
+},
+{
+"disp": "Biskra · بسكرة ⵜⵉⴱⴻⵙⴽⴻⵔⵜ",
+"lat": 34.85088,
+"lon": 5.72907,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "34.8509,5.7291",
+"nkey": ""
+},
+{
+"disp": "Poltava · Полтава",
+"lat": 49.58974,
+"lon": 34.55079,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "49.5897,34.5508",
+"nkey": ""
+},
+{
+"disp": "Reynosa",
+"lat": 26.09284,
+"lon": -98.27795,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "26.0928,-98.2780",
+"nkey": ""
+},
+{
+"disp": "Wenzhou · 温州市",
+"lat": 27.99639,
+"lon": 120.69535,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "27.9964,120.6954",
+"nkey": ""
+},
+{
+"disp": "Neuquén",
+"lat": -38.95197,
+"lon": -68.05917,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-38.9520,-68.0592",
+"nkey": ""
+},
+{
+"disp": "Coquimbo",
+"lat": -29.95319,
+"lon": -71.33795,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-29.9532,-71.3380",
+"nkey": ""
+},
+{
+"disp": "Tawau",
+"lat": 4.24352,
+"lon": 117.88533,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "4.2435,117.8853",
+"nkey": ""
+},
+{
+"disp": "Semey · Семей",
+"lat": 50.40438,
+"lon": 80.24966,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "50.4044,80.2497",
+"nkey": ""
+},
+{
+"disp": "Aydin · Aydın",
+"lat": 37.84838,
+"lon": 27.84359,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.8484,27.8436",
+"nkey": ""
+},
+{
+"disp": "Galați",
+"lat": 45.43382,
+"lon": 28.05494,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "45.4338,28.0549",
+"nkey": ""
+},
+{
+"disp": "Tyumen · Тюмень",
+"lat": 57.15353,
+"lon": 65.54227,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "57.1535,65.5423",
+"nkey": ""
+},
+{
+"disp": "Himeji · 姫路市",
+"lat": 34.81535,
+"lon": 134.68548,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "34.8154,134.6855",
+"nkey": ""
+},
+{
+"disp": "Katowice",
+"lat": 50.2599,
+"lon": 19.02159,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "50.2599,19.0216",
+"nkey": ""
+},
+{
+"disp": "Messina",
+"lat": 38.19376,
+"lon": 15.55421,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "38.1938,15.5542",
+"nkey": ""
+},
+{
+"disp": "Newcastle upon Tyne",
+"lat": 54.97385,
+"lon": -1.61316,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "54.9738,-1.6132",
+"nkey": ""
+},
+{
+"disp": "Chuncheon · 춘천시",
+"lat": 37.88106,
+"lon": 127.72976,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "37.8811,127.7298",
+"nkey": ""
+},
+{
+"disp": "Bordeaux",
+"lat": 44.84123,
+"lon": -0.58004,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "44.8412,-0.5800",
+"nkey": ""
+},
+{
+"disp": "Regina",
+"lat": 50.44797,
+"lon": -104.61588,
+"country": "Canada",
+"cc": "CA",
+"es": false,
+"key": "50.4480,-104.6159",
+"nkey": ""
+},
+{
+"disp": "Münster",
+"lat": 51.96251,
+"lon": 7.62519,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "51.9625,7.6252",
+"nkey": ""
+},
+{
+"disp": "Najran · نجران",
+"lat": 17.54398,
+"lon": 44.22468,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "17.5440,44.2247",
+"nkey": ""
+},
+{
+"disp": "Detroit",
+"lat": 42.33155,
+"lon": -83.04664,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "42.3316,-83.0466",
+"nkey": ""
+},
+{
+"disp": "Bariadi",
+"lat": -2.80355,
+"lon": 33.98699,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-2.8035,33.9870",
+"nkey": ""
+},
+{
+"disp": "Ife · Ifẹ̀",
+"lat": 7.48282,
+"lon": 4.56045,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "7.4828,4.5605",
+"nkey": ""
+},
+{
+"disp": "Jhang · جھنگ",
+"lat": 31.27288,
+"lon": 72.31031,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "31.2729,72.3103",
+"nkey": ""
+},
+{
+"disp": "Ad-Damazin · الدمازين",
+"lat": 11.80736,
+"lon": 34.36563,
+"country": "Sudan",
+"cc": "SD",
+"es": false,
+"key": "11.8074,34.3656",
+"nkey": ""
+},
+{
+"disp": "Rangpur · রংপুর",
+"lat": 25.75698,
+"lon": 89.24146,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "25.7570,89.2415",
+"nkey": ""
+},
+{
+"disp": "Nashik",
+"lat": 20.01125,
+"lon": 73.79024,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "20.0113,73.7902",
+"nkey": ""
+},
+{
+"disp": "Cotabato City",
+"lat": 7.22376,
+"lon": 124.24671,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "7.2238,124.2467",
+"nkey": ""
+},
+{
+"disp": "Ciudad Ojeda",
+"lat": 10.20041,
+"lon": -71.31001,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "10.2004,-71.3100",
+"nkey": ""
+},
+{
+"disp": "Buenaventura",
+"lat": 3.88819,
+"lon": -77.07383,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "3.8882,-77.0738",
+"nkey": ""
+},
+{
+"disp": "Navoiy",
+"lat": 40.10346,
+"lon": 65.37342,
+"country": "Uzbekistan",
+"cc": "UZ",
+"es": false,
+"key": "40.1035,65.3734",
+"nkey": ""
+},
+{
+"disp": "Tacna",
+"lat": -18.01386,
+"lon": -70.2511,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-18.0139,-70.2511",
+"nkey": ""
+},
+{
+"disp": "Pontianak",
+"lat": -0.02269,
+"lon": 109.34475,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-0.0227,109.3448",
+"nkey": ""
+},
+{
+"disp": "As Samawah · السماوة",
+"lat": 31.30787,
+"lon": 45.28266,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "31.3079,45.2827",
+"nkey": ""
+},
+{
+"disp": "Mỹ Tho",
+"lat": 10.35853,
+"lon": 106.3643,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "10.3585,106.3643",
+"nkey": ""
+},
+{
+"disp": "Ardabil · اردبیل",
+"lat": 38.25158,
+"lon": 48.29724,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "38.2516,48.2972",
+"nkey": ""
+},
+{
+"disp": "Zagazig · الزقازيق",
+"lat": 30.58534,
+"lon": 31.50351,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "30.5853,31.5035",
+"nkey": ""
+},
+{
+"disp": "Uberlândia",
+"lat": -18.9188,
+"lon": -48.27678,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-18.9188,-48.2768",
+"nkey": ""
+},
+{
+"disp": "Tiaret · Tiaret ⵜⴰⵀⴻⵔⵜ تيارت",
+"lat": 35.36614,
+"lon": 1.31947,
+"country": "Algeria",
+"cc": "DZ",
+"es": false,
+"key": "35.3661,1.3195",
+"nkey": ""
+},
+{
+"disp": "Kherson · Херсон",
+"lat": 46.64013,
+"lon": 32.61439,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "46.6401,32.6144",
+"nkey": ""
+},
+{
+"disp": "Torreón",
+"lat": 25.5427,
+"lon": -103.41051,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "25.5427,-103.4105",
+"nkey": ""
+},
+{
+"disp": "Weifang · 潍坊市",
+"lat": 36.70746,
+"lon": 119.15582,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "36.7075,119.1558",
+"nkey": ""
+},
+{
+"disp": "Posadas",
+"lat": -27.36648,
+"lon": -55.89429,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-27.3665,-55.8943",
+"nkey": ""
+},
+{
+"disp": "Arica",
+"lat": -18.47853,
+"lon": -70.32114,
+"country": "Chile",
+"cc": "CL",
+"es": false,
+"key": "-18.4785,-70.3211",
+"nkey": ""
+},
+{
+"disp": "Batu Pahat",
+"lat": 1.84726,
+"lon": 102.93467,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "1.8473,102.9347",
+"nkey": ""
+},
+{
+"disp": "Kyzylorda · Қызылорда",
+"lat": 44.84268,
+"lon": 65.50362,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "44.8427,65.5036",
+"nkey": ""
+},
+{
+"disp": "Kahramanmaraş",
+"lat": 37.58127,
+"lon": 36.92751,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.5813,36.9275",
+"nkey": ""
+},
+{
+"disp": "Ploiești",
+"lat": 44.94175,
+"lon": 26.02365,
+"country": "Romania",
+"cc": "RO",
+"es": false,
+"key": "44.9417,26.0236",
+"nkey": ""
+},
+{
+"disp": "Tolyatti · Тольятти",
+"lat": 53.50988,
+"lon": 49.41892,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "53.5099,49.4189",
+"nkey": ""
+},
+{
+"disp": "Utsunomiya · 宇都宮市",
+"lat": 36.55497,
+"lon": 139.88288,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "36.5550,139.8829",
+"nkey": ""
+},
+{
+"disp": "Częstochowa",
+"lat": 50.81205,
+"lon": 19.11321,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "50.8120,19.1132",
+"nkey": ""
+},
+{
+"disp": "Padua",
+"lat": 45.40772,
+"lon": 11.87345,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "45.4077,11.8735",
+"nkey": ""
+},
+{
+"disp": "Leicester",
+"lat": 52.6362,
+"lon": -1.1332,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "52.6362,-1.1332",
+"nkey": ""
+},
+{
+"disp": "Gunsan · 군산시",
+"lat": 35.968,
+"lon": 126.7369,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "35.9680,126.7369",
+"nkey": ""
+},
+{
+"disp": "Lille",
+"lat": 50.63657,
+"lon": 3.06353,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "50.6366,3.0635",
+"nkey": ""
+},
+{
+"disp": "Mannheim",
+"lat": 49.48929,
+"lon": 8.46731,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "49.4893,8.4673",
+"nkey": ""
+},
+{
+"disp": "Hafar Al-Batin · حفر الباطن",
+"lat": 28.43281,
+"lon": 45.96275,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "28.4328,45.9627",
+"nkey": ""
+},
+{
+"disp": "Washington",
+"lat": 38.8951,
+"lon": -77.03638,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "38.8951,-77.0364",
+"nkey": ""
+},
+{
+"disp": "Kasulu",
+"lat": -4.5774,
+"lon": 30.09923,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-4.5774,30.0992",
+"nkey": ""
+},
+{
+"disp": "Makurdi",
+"lat": 7.73126,
+"lon": 8.53843,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "7.7313,8.5384",
+"nkey": ""
+},
+{
+"disp": "Dera Ghazi Khan · ڈیرہ غازی خان",
+"lat": 30.03214,
+"lon": 70.64011,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "30.0321,70.6401",
+"nkey": ""
+},
+{
+"disp": "Mohadevpur · মহাদেবপুর",
+"lat": 24.91737,
+"lon": 88.75178,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "24.9174,88.7518",
+"nkey": ""
+},
+{
+"disp": "Kurukshetra",
+"lat": 29.96937,
+"lon": 76.84828,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "29.9694,76.8483",
+"nkey": ""
+},
+{
+"disp": "Puerto Princesa",
+"lat": 9.73986,
+"lon": 118.74382,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "9.7399,118.7438",
+"nkey": ""
+},
+{
+"disp": "El Tigre",
+"lat": 8.88621,
+"lon": -64.24888,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "8.8862,-64.2489",
+"nkey": ""
+},
+{
+"disp": "Neiva",
+"lat": 2.9257,
+"lon": -75.28939,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "2.9257,-75.2894",
+"nkey": ""
+},
+{
+"disp": "Ica",
+"lat": -14.0641,
+"lon": -75.72909,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-14.0641,-75.7291",
+"nkey": ""
+},
+{
+"disp": "Banjarmasin",
+"lat": -3.31875,
+"lon": 114.59258,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-3.3188,114.5926",
+"nkey": ""
+},
+{
+"disp": "Kalar · کەلار",
+"lat": 34.63126,
+"lon": 45.31766,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "34.6313,45.3177",
+"nkey": ""
+},
+{
+"disp": "Rạch Giá",
+"lat": 10.01071,
+"lon": 105.08326,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "10.0107,105.0833",
+"nkey": ""
+},
+{
+"disp": "Parand · پرند",
+"lat": 35.47788,
+"lon": 50.94692,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "35.4779,50.9469",
+"nkey": ""
+},
+{
+"disp": "Damietta · دمياط",
+"lat": 31.41674,
+"lon": 31.82137,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "31.4167,31.8214",
+"nkey": ""
+},
+{
+"disp": "Ribeirão Preto",
+"lat": -21.17763,
+"lon": -47.8101,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-21.1776,-47.8101",
+"nkey": ""
+},
+{
+"disp": "Chernihiv · Чернігів",
+"lat": 51.4941,
+"lon": 31.29433,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "51.4941,31.2943",
+"nkey": ""
+},
+{
+"disp": "Acapulco",
+"lat": 16.86805,
+"lon": -99.89402,
+"country": "Mexico",
+"cc": "MX",
+"es": false,
+"key": "16.8681,-99.8940",
+"nkey": ""
+},
+{
+"disp": "Jinan · 济南市",
+"lat": 36.65198,
+"lon": 117.11385,
+"country": "People's Republic of China",
+"cc": "CN",
+"es": false,
+"key": "36.6520,117.1138",
+"nkey": ""
+},
+{
+"disp": "Santiago del Estero",
+"lat": -27.78771,
+"lon": -64.25951,
+"country": "Argentina",
+"cc": "AR",
+"es": false,
+"key": "-27.7877,-64.2595",
+"nkey": ""
+},
+{
+"disp": "Kota Bharu",
+"lat": 6.12479,
+"lon": 102.23781,
+"country": "Malaysia",
+"cc": "MY",
+"es": false,
+"key": "6.1248,102.2378",
+"nkey": ""
+},
+{
+"disp": "Aktau · Ақтау",
+"lat": 43.63534,
+"lon": 51.16822,
+"country": "Kazakhstan",
+"cc": "KZ",
+"es": false,
+"key": "43.6353,51.1682",
+"nkey": ""
+},
+{
+"disp": "Denizli",
+"lat": 37.78279,
+"lon": 29.09665,
+"country": "Turkey",
+"cc": "TR",
+"es": false,
+"key": "37.7828,29.0967",
+"nkey": ""
+},
+{
+"disp": "Barnaul · Барнаул",
+"lat": 53.34755,
+"lon": 83.77884,
+"country": "Russia",
+"cc": "RU",
+"es": false,
+"key": "53.3475,83.7788",
+"nkey": ""
+},
+{
+"disp": "Matsuyama · 松山市",
+"lat": 33.83952,
+"lon": 132.76535,
+"country": "Japan",
+"cc": "JP",
+"es": false,
+"key": "33.8395,132.7654",
+"nkey": ""
+},
+{
+"disp": "Radom",
+"lat": 51.40226,
+"lon": 21.15415,
+"country": "Poland",
+"cc": "PL",
+"es": false,
+"key": "51.4023,21.1542",
+"nkey": ""
+},
+{
+"disp": "Parma",
+"lat": 44.80153,
+"lon": 10.32798,
+"country": "Italy",
+"cc": "IT",
+"es": false,
+"key": "44.8015,10.3280",
+"nkey": ""
+},
+{
+"disp": "Plymouth",
+"lat": 50.37141,
+"lon": -4.14245,
+"country": "United Kingdom",
+"cc": "GB",
+"es": false,
+"key": "50.3714,-4.1425",
+"nkey": ""
+},
+{
+"disp": "Geoje · 거제시",
+"lat": 34.88047,
+"lon": 128.62121,
+"country": "South Korea",
+"cc": "KR",
+"es": false,
+"key": "34.8805,128.6212",
+"nkey": ""
+},
+{
+"disp": "Rennes",
+"lat": 48.11134,
+"lon": -1.68002,
+"country": "France",
+"cc": "FR",
+"es": false,
+"key": "48.1113,-1.6800",
+"nkey": ""
+},
+{
+"disp": "Augsburg",
+"lat": 48.36903,
+"lon": 10.89795,
+"country": "Germany",
+"cc": "DE",
+"es": false,
+"key": "48.3690,10.8979",
+"nkey": ""
+},
+{
+"disp": "Yanbu` · ينبع",
+"lat": 24.08902,
+"lon": 38.06871,
+"country": "Saudi Arabia",
+"cc": "SA",
+"es": false,
+"key": "24.0890,38.0687",
+"nkey": ""
+},
+{
+"disp": "Nashville",
+"lat": 36.16228,
+"lon": -86.7743,
+"country": "United States",
+"cc": "US",
+"es": false,
+"key": "36.1623,-86.7743",
+"nkey": ""
+},
+{
+"disp": "Moshi",
+"lat": -3.34865,
+"lon": 37.34352,
+"country": "Tanzania",
+"cc": "TZ",
+"es": false,
+"key": "-3.3487,37.3435",
+"nkey": ""
+},
+{
+"disp": "Ado Ekiti",
+"lat": 7.62325,
+"lon": 5.22274,
+"country": "Nigeria",
+"cc": "NG",
+"es": false,
+"key": "7.6232,5.2227",
+"nkey": ""
+},
+{
+"disp": "Gujrat · گجرات",
+"lat": 32.56868,
+"lon": 74.07148,
+"country": "Pakistan",
+"cc": "PK",
+"es": false,
+"key": "32.5687,74.0715",
+"nkey": ""
+},
+{
+"disp": "Jashore · যশোর",
+"lat": 23.16653,
+"lon": 89.20944,
+"country": "Bangladesh",
+"cc": "BD",
+"es": false,
+"key": "23.1665,89.2094",
+"nkey": ""
+},
+{
+"disp": "Bhubaneshwar",
+"lat": 20.2603,
+"lon": 85.83945,
+"country": "India",
+"cc": "IN",
+"es": false,
+"key": "20.2603,85.8394",
+"nkey": ""
+},
+{
+"disp": "Cabanatuan",
+"lat": 15.4905,
+"lon": 120.96843,
+"country": "Philippines",
+"cc": "PH",
+"es": false,
+"key": "15.4905,120.9684",
+"nkey": ""
+},
+{
+"disp": "Guanare",
+"lat": 9.04079,
+"lon": -69.74126,
+"country": "Venezuela",
+"cc": "VE",
+"es": false,
+"key": "9.0408,-69.7413",
+"nkey": ""
+},
+{
+"disp": "Popayán",
+"lat": 2.44223,
+"lon": -76.60724,
+"country": "Colombia",
+"cc": "CO",
+"es": false,
+"key": "2.4422,-76.6072",
+"nkey": ""
+},
+{
+"disp": "Juliaca",
+"lat": -15.49323,
+"lon": -70.13562,
+"country": "Peru",
+"cc": "PE",
+"es": false,
+"key": "-15.4932,-70.1356",
+"nkey": ""
+},
+{
+"disp": "Serang",
+"lat": -6.11697,
+"lon": 106.15181,
+"country": "Indonesia",
+"cc": "ID",
+"es": false,
+"key": "-6.1170,106.1518",
+"nkey": ""
+},
+{
+"disp": "Al Qurna · القرنة",
+"lat": 31.01492,
+"lon": 47.43349,
+"country": "Iraq",
+"cc": "IQ",
+"es": false,
+"key": "31.0149,47.4335",
+"nkey": ""
+},
+{
+"disp": "Cà Mau",
+"lat": 9.1762,
+"lon": 105.15084,
+"country": "Vietnam",
+"cc": "VN",
+"es": false,
+"key": "9.1762,105.1508",
+"nkey": ""
+},
+{
+"disp": "Sanandaj · سنندج",
+"lat": 35.31158,
+"lon": 46.99607,
+"country": "Iran",
+"cc": "IR",
+"es": false,
+"key": "35.3116,46.9961",
+"nkey": ""
+},
+{
+"disp": "Nag Hammadi · نجع حمادي",
+"lat": 26.04899,
+"lon": 32.24163,
+"country": "Egypt",
+"cc": "EG",
+"es": false,
+"key": "26.0490,32.2416",
+"nkey": ""
+},
+{
+"disp": "São José dos Campos",
+"lat": -23.18678,
+"lon": -45.88545,
+"country": "Brazil",
+"cc": "BR",
+"es": false,
+"key": "-23.1868,-45.8854",
+"nkey": ""
+},
+{
+"disp": "Cherkasy · Черкаси",
+"lat": 49.44471,
+"lon": 32.05881,
+"country": "Ukraine",
+"cc": "UA",
+"es": false,
+"key": "49.4447,32.0588",
+"nkey": ""
+},
+{
+"disp": "Madrid",
+"lat": 40.4168,
+"lon": -3.7038,
+"country": "Comunidad de Madrid",
+"cc": "ES",
+"es": true,
+"key": "40.4168,-3.7038",
+"nkey": "city:Madrid"
+},
+{
+"disp": "Barcelona",
+"lat": 41.3874,
+"lon": 2.1686,
+"country": "Catalunya",
+"cc": "ES",
+"es": true,
+"key": "41.3874,2.1686",
+"nkey": "city:Barcelona"
+},
+{
+"disp": "Valencia",
+"lat": 39.4699,
+"lon": -0.3763,
+"country": "Comunitat Valenciana",
+"cc": "ES",
+"es": true,
+"key": "39.4699,-0.3763",
+"nkey": "city:Valencia"
+},
+{
+"disp": "Sevilla",
+"lat": 37.3891,
+"lon": -5.9845,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "37.3891,-5.9845",
+"nkey": "city:Sevilla"
+},
+{
+"disp": "Zaragoza",
+"lat": 41.6488,
+"lon": -0.8891,
+"country": "Aragón",
+"cc": "ES",
+"es": true,
+"key": "41.6488,-0.8891",
+"nkey": "city:Zaragoza"
+},
+{
+"disp": "Málaga",
+"lat": 36.7213,
+"lon": -4.4213,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "36.7213,-4.4213",
+"nkey": "city:Malaga"
+},
+{
+"disp": "Murcia",
+"lat": 37.9922,
+"lon": -1.1307,
+"country": "Región de Murcia",
+"cc": "ES",
+"es": true,
+"key": "37.9922,-1.1307",
+"nkey": "city:Murcia"
+},
+{
+"disp": "Palma de Mallorca",
+"lat": 39.5696,
+"lon": 2.6502,
+"country": "Illes Balears",
+"cc": "ES",
+"es": true,
+"key": "39.5696,2.6502",
+"nkey": "city:Palma"
+},
+{
+"disp": "Las Palmas de Gran Canaria",
+"lat": 28.1235,
+"lon": -15.4363,
+"country": "Canarias",
+"cc": "ES",
+"es": true,
+"key": "28.1235,-15.4363",
+"nkey": "city:LasPalmas"
+},
+{
+"disp": "Bilbao",
+"lat": 43.263,
+"lon": -2.935,
+"country": "Euskadi",
+"cc": "ES",
+"es": true,
+"key": "43.2630,-2.9350",
+"nkey": "city:Bilbao"
+},
+{
+"disp": "Alicante",
+"lat": 38.3452,
+"lon": -0.481,
+"country": "Comunitat Valenciana",
+"cc": "ES",
+"es": true,
+"key": "38.3452,-0.4810",
+"nkey": "city:Alicante"
+},
+{
+"disp": "Córdoba",
+"lat": 37.8882,
+"lon": -4.7794,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "37.8882,-4.7794",
+"nkey": "city:Cordoba"
+},
+{
+"disp": "Valladolid",
+"lat": 41.6523,
+"lon": -4.7245,
+"country": "Castilla y León",
+"cc": "ES",
+"es": true,
+"key": "41.6523,-4.7245",
+"nkey": "city:Valladolid"
+},
+{
+"disp": "Vigo",
+"lat": 42.2406,
+"lon": -8.7207,
+"country": "Galicia",
+"cc": "ES",
+"es": true,
+"key": "42.2406,-8.7207",
+"nkey": "city:Vigo"
+},
+{
+"disp": "Gijón",
+"lat": 43.5322,
+"lon": -5.6611,
+"country": "Asturias",
+"cc": "ES",
+"es": true,
+"key": "43.5322,-5.6611",
+"nkey": "city:Gijon"
+},
+{
+"disp": "Vitoria-Gasteiz",
+"lat": 42.8467,
+"lon": -2.6716,
+"country": "Euskadi",
+"cc": "ES",
+"es": true,
+"key": "42.8467,-2.6716",
+"nkey": "city:Vitoria"
+},
+{
+"disp": "A Coruña",
+"lat": 43.3623,
+"lon": -8.4115,
+"country": "Galicia",
+"cc": "ES",
+"es": true,
+"key": "43.3623,-8.4115",
+"nkey": "city:Coruna"
+},
+{
+"disp": "Granada",
+"lat": 37.1773,
+"lon": -3.5986,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "37.1773,-3.5986",
+"nkey": "city:Granada"
+},
+{
+"disp": "Elche",
+"lat": 38.2699,
+"lon": -0.7126,
+"country": "Comunitat Valenciana",
+"cc": "ES",
+"es": true,
+"key": "38.2699,-0.7126",
+"nkey": "city:Elche"
+},
+{
+"disp": "Oviedo",
+"lat": 43.3619,
+"lon": -5.8494,
+"country": "Asturias",
+"cc": "ES",
+"es": true,
+"key": "43.3619,-5.8494",
+"nkey": "city:Oviedo"
+},
+{
+"disp": "Badalona",
+"lat": 41.45,
+"lon": 2.2474,
+"country": "Catalunya",
+"cc": "ES",
+"es": true,
+"key": "41.4500,2.2474",
+"nkey": "city:Badalona"
+},
+{
+"disp": "Cartagena",
+"lat": 37.6257,
+"lon": -0.9966,
+"country": "Región de Murcia",
+"cc": "ES",
+"es": true,
+"key": "37.6257,-0.9966",
+"nkey": "city:Cartagena"
+},
+{
+"disp": "Terrassa",
+"lat": 41.561,
+"lon": 2.0089,
+"country": "Catalunya",
+"cc": "ES",
+"es": true,
+"key": "41.5610,2.0089",
+"nkey": "city:Terrassa"
+},
+{
+"disp": "Jerez de la Frontera",
+"lat": 36.6866,
+"lon": -6.1367,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "36.6866,-6.1367",
+"nkey": "city:Jerez"
+},
+{
+"disp": "Sabadell",
+"lat": 41.5433,
+"lon": 2.1094,
+"country": "Catalunya",
+"cc": "ES",
+"es": true,
+"key": "41.5433,2.1094",
+"nkey": "city:Sabadell"
+},
+{
+"disp": "Móstoles",
+"lat": 40.3223,
+"lon": -3.8649,
+"country": "Comunidad de Madrid",
+"cc": "ES",
+"es": true,
+"key": "40.3223,-3.8649",
+"nkey": "city:Mostoles"
+},
+{
+"disp": "Santa Cruz de Tenerife",
+"lat": 28.4636,
+"lon": -16.2518,
+"country": "Canarias",
+"cc": "ES",
+"es": true,
+"key": "28.4636,-16.2518",
+"nkey": "city:SantaCruz"
+},
+{
+"disp": "Pamplona",
+"lat": 42.8125,
+"lon": -1.6458,
+"country": "Navarra",
+"cc": "ES",
+"es": true,
+"key": "42.8125,-1.6458",
+"nkey": "city:Pamplona"
+},
+{
+"disp": "Almería",
+"lat": 36.834,
+"lon": -2.4637,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "36.8340,-2.4637",
+"nkey": "city:Almeria"
+},
+{
+"disp": "Donostia-San Sebastián",
+"lat": 43.3183,
+"lon": -1.9812,
+"country": "Euskadi",
+"cc": "ES",
+"es": true,
+"key": "43.3183,-1.9812",
+"nkey": "city:Donostia"
+},
+{
+"disp": "Santander",
+"lat": 43.4623,
+"lon": -3.81,
+"country": "Cantabria",
+"cc": "ES",
+"es": true,
+"key": "43.4623,-3.8100",
+"nkey": "city:Santander"
+},
+{
+"disp": "Castellón de la Plana",
+"lat": 39.9864,
+"lon": -0.0513,
+"country": "Comunitat Valenciana",
+"cc": "ES",
+"es": true,
+"key": "39.9864,-0.0513",
+"nkey": "city:Castellon"
+},
+{
+"disp": "Burgos",
+"lat": 42.3439,
+"lon": -3.6969,
+"country": "Castilla y León",
+"cc": "ES",
+"es": true,
+"key": "42.3439,-3.6969",
+"nkey": "city:Burgos"
+},
+{
+"disp": "Albacete",
+"lat": 38.9942,
+"lon": -1.8585,
+"country": "Castilla-La Mancha",
+"cc": "ES",
+"es": true,
+"key": "38.9942,-1.8585",
+"nkey": "city:Albacete"
+},
+{
+"disp": "Salamanca",
+"lat": 40.9701,
+"lon": -5.6635,
+"country": "Castilla y León",
+"cc": "ES",
+"es": true,
+"key": "40.9701,-5.6635",
+"nkey": "city:Salamanca"
+},
+{
+"disp": "Logroño",
+"lat": 42.4627,
+"lon": -2.445,
+"country": "La Rioja",
+"cc": "ES",
+"es": true,
+"key": "42.4627,-2.4450",
+"nkey": "city:Logrono"
+},
+{
+"disp": "Huelva",
+"lat": 37.2614,
+"lon": -6.9447,
+"country": "Andalucía",
+"cc": "ES",
+"es": true,
+"key": "37.2614,-6.9447",
+"nkey": "city:Huelva"
+},
+{
+"disp": "Lleida",
+"lat": 41.6176,
+"lon": 0.62,
+"country": "Catalunya",
+"cc": "ES",
+"es": true,
+"key": "41.6176,0.6200",
+"nkey": "city:Lleida"
+},
+{
+"disp": "Tarragona",
+"lat": 41.1189,
+"lon": 1.2445,
+"country": "Catalunya",
+"cc": "ES",
+"es": true,
+"key": "41.1189,1.2445",
+"nkey": "city:Tarragona"
+},
+{
+"disp": "León",
+"lat": 42.5987,
+"lon": -5.5671,
+"country": "Castilla y León",
+"cc": "ES",
+"es": true,
+"key": "42.5987,-5.5671",
+"nkey": "city:Leon"
+},
+{
+"disp": "Toledo",
+"lat": 39.8628,
+"lon": -4.0273,
+"country": "Castilla-La Mancha",
+"cc": "ES",
+"es": true,
+"key": "39.8628,-4.0273",
+"nkey": "city:Toledo"
+},
+{
+"disp": "Cáceres",
+"lat": 39.4753,
+"lon": -6.3724,
+"country": "Extremadura",
+"cc": "ES",
+"es": true,
+"key": "39.4753,-6.3724",
+"nkey": "city:Cáceres"
+},
+{
+"disp": "Badajoz",
+"lat": 38.8794,
+"lon": -6.9707,
+"country": "Extremadura",
+"cc": "ES",
+"es": true,
+"key": "38.8794,-6.9707",
+"nkey": "city:Badajoz"
+},
+{
+"disp": "Ourense",
+"lat": 42.3358,
+"lon": -7.8639,
+"country": "Galicia",
+"cc": "ES",
+"es": true,
+"key": "42.3358,-7.8639",
+"nkey": "city:Ourense"
+},
+{
+"disp": "Santiago de Compostela",
+"lat": 42.8782,
+"lon": -8.5448,
+"country": "Galicia",
+"cc": "ES",
+"es": true,
+"key": "42.8782,-8.5448",
+"nkey": "city:Santiago"
+},
+{
+"disp": "Guadalajara",
+"lat": 40.6329,
+"lon": -3.1613,
+"country": "Castilla-La Mancha",
+"cc": "ES",
+"es": true,
+"key": "40.6329,-3.1613",
+"nkey": "city:Guadalajara"
+},
+{
+"disp": "Ceuta",
+"lat": 35.8894,
+"lon": -5.3213,
+"country": "Ceuta",
+"cc": "ES",
+"es": true,
+"key": "35.8894,-5.3213",
+"nkey": "city:Ceuta"
+},
+{
+"disp": "Melilla",
+"lat": 35.2923,
+"lon": -2.9381,
+"country": "Melilla",
+"cc": "ES",
+"es": true,
+"key": "35.2923,-2.9381",
+"nkey": "city:Melilla"
+}
+]

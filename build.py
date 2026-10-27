@@ -341,6 +341,19 @@ for _c in _new:
     _disp = _en if (not _loc or _loc == _en or _loc.isascii()) else _en + ' \u00b7 ' + _loc
     WORLD.append((_disp, _c.get('country') or _c['cc'], _c['lat'], _c['lon'], _en))
 
+# Refresco de octubre de 2026: la lista de ciudades sale de la web publicada
+# (refresh/cities_all.json, 1.221 ciudades) y no de cities_new*.json, que se
+# perdieron con los ficheros crudos de septiembre. Asi el mapa conserva
+# exactamente las mismas ciudades, con el mismo nombre y el mismo orden.
+_CALL = None
+try:
+    _CALL = json.load(open('refresh/cities_all.json', encoding='utf-8'))
+except Exception:
+    pass
+if _CALL:
+    WORLD = [(c['disp'], c['country'], c['lat'], c['lon'], c['disp']) for c in _CALL if not c['es']]
+    print('ciudades de refresh/cities_all.json:', len(WORLD), '+', sum(1 for c in _CALL if c['es']), 'de Espana')
+
 nat = json.load(open('raw_nat.json'))
 world = {}
 for _f in ('raw_world.json','raw_world2.json','raw_world3.json','raw_world4.json','raw_world5.json','raw_world6.json','raw_world7.json','raw_w300.json','raw_w200.json','raw_empty.json','raw_w500.json'):
@@ -500,7 +513,7 @@ for wname,wcountry,wlat,wlon,wkey in WORLD:
     # dos claves (nombre en ingles y nombre tal cual se ensena) y solo entra lo
     # que esta a menos de 60 km de la ciudad.
     _seen_el=set()
-    for _els in (world.get(wkey,[]), world.get(wname,[])):
+    for _els in (world.get('%.4f,%.4f' % (wlat, wlon), []), world.get(wkey,[]), world.get(wname,[])):
         for el in _els:
             _id=(el.get('type'),el.get('id'))
             if _id in _seen_el: continue
@@ -768,6 +781,8 @@ def _country_en(n, co, la, lo):
 def _cc_of(la,lo):
     _e = _cc_by_coord.get('%.4f,%.4f'%(la,lo)); return (_e or {}).get('cc','')
 cities=[[n,la,lo,_country_en(n,c,la,lo),_cc_of(la,lo)] for n,c,la,lo,_ in WORLD] + [[n,la,lo,reg,'ES'] for n,reg,la,lo in CITY_LIST]
+if _CALL:
+    cities=[[c['disp'],c['lat'],c['lon'],c['country'],c['cc']] for c in _CALL]
 cjson=json.dumps(cities,ensure_ascii=False,separators=(',',':'))
 # Poblaciones de 10.000 habitantes o mas (OSM, fetch_towns.py) para buscar el
 # pueblo de uno sin conexion. Se quitan las que ya son ciudad del mapa, y el
