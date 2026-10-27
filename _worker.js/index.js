@@ -39,10 +39,11 @@ async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
   const cacheable = req.method === 'GET' && !u.pathname.startsWith('/api/geo') && !u.pathname.startsWith('/api/alerts');
   const cache = caches.default;
-  if (cacheable) { const hit = await cache.match(req); if (hit) return hit; }
+  const ck = new Request(u.origin + u.pathname + u.search + (u.search ? '&' : '?') + '__v=' + ((env && env.CF_PAGES_COMMIT_SHA) || 'x'), { method: 'GET', headers: req.headers });
+  if (cacheable) { const hit = await cache.match(ck); if (hit) { const hh = new Headers(hit.headers); hh.set('cache-control', 'public, max-age=0, must-revalidate'); return new Response(hit.body, { status: hit.status, headers: hh }); } }
   if (!top3) top3 = (await import('./top3/index.js')).default;
   const r = await top3.fetch(req, env, ctx);
-  if (cacheable && r.status === 200) { const c = r.clone(); const h = new Headers(c.headers); h.set('cache-control', 'public, max-age=3600'); ctx.waitUntil(cache.put(req, new Response(c.body, { status: 200, headers: h }))); }
+  if (cacheable && r.status === 200) { const c = r.clone(); const h = new Headers(c.headers); h.set('cache-control', 'public, max-age=1800'); ctx.waitUntil(cache.put(ck, new Response(c.body, { status: 200, headers: h }))); }
   return r;
 }
 export default {
@@ -71,14 +72,19 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
-    // jobersity.com: 301 de URLs antiguas, HTML propio en cada /oferta/<id>, 404 reales y cabeceras (see jobersity.js).
+    // jobersity.com: 301, HTML propio en /oferta/<id> y /empresa|company/<slug>, sitemap de empresas, 404 reales y cabeceras (see jobersity.js).
     if (host === 'jobersity.com' && req.method === 'GET') {
       if (!jb) jb = await import('./jobersity.js');
       const rd = await jb.redirect(u, env);
       if (rd) return rd;
+      const sm = await jb.companiesSitemap(u, ctx);
+      if (sm) return sm;
       if (u.pathname.startsWith('/oferta/')) return jb.secure(u, await jb.render(req, await this.siteRaw(req, env, ctx, u, host), u, env, ctx));
+      if (/^\/(empresa|company)\//.test(u.pathname)) return jb.secure(u, await jb.company(req, await this.siteRaw(req, env, ctx, u, host), u, env, ctx));
       return jb.secure(u, await jb.status(u, await this.siteRaw(req, env, ctx, u, host)));
     }
+    // reelrole.com: candidate videos from the Cloudflare edge cache (see reelrole.js media()).
+    if (host === 'reelrole.com' && (req.method === 'GET' || req.method === 'HEAD') && u.pathname.startsWith('/stream/')) { if (!rr) rr = await import('./reelrole.js'); return rr.media(req, u, ctx); }
     if (host === 'jurimatch.com' && req.method === 'GET' && /^\/(sitemap\.xml|login|signin|sign-in|firm-listing)\/?$/.test(u.pathname)) { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
     const r = await this.siteRaw(req, env, ctx, u, host);
     // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).

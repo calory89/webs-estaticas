@@ -7,6 +7,7 @@
 
 const ORIGIN = 'https://reelrole.com';
 const SB = 'https://mfyfqtlozspmiautbgef.supabase.co/rest/v1/';
+const SB_URL = 'https://mfyfqtlozspmiautbgef.supabase.co';
 // Public anon key (already shipped in the site's JavaScript). Row-level security applies.
 const ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1meWZxdGxvenNwbWlhdXRiZ2VmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc3MDc3NDksImV4cCI6MjA2MzI4Mzc0OX0.9R0vxQpI_lg3nrfImjxICw91RCTQNX9jmSj2SOsUAf8';
 const OG_IMAGE = ORIGIN + '/og-image.png';
@@ -17,7 +18,7 @@ const PAGES = {
   '/for-talent': ['For Talent | ReelRole', 'Show who you are in a short video instead of a CV. Free for talent, always.'],
   '/for-companies': ['For Companies | ReelRole', 'Hear candidates before the first call. Browse video profiles for free and pay only to unlock the people you want to contact.'],
   '/companies': ['For Companies | ReelRole', 'Hear candidates before the first call. Browse video profiles for free and pay only to unlock the people you want to contact.'],
-  '/pricing': ['Pricing | ReelRole', 'Free for talent. Companies pay per unlock or choose a monthly plan for unlimited unlocks.'],
+  '/pricing': ['Pricing | ReelRole', 'Free for talent. Companies pay 5 euros per unlock, buy a pack or choose Premium for 20 euros a month.'],
   '/how-it-works': ['How It Works | ReelRole', 'Record your video, add your details and get discovered by companies.'],
   '/trending': ['Trending Talent | ReelRole', 'The most viewed and saved video profiles this week, plus the newest talent on ReelRole.'],
   '/closers': ['Sales Closers | ReelRole', 'Find sales closers through short video introductions.'],
@@ -30,6 +31,15 @@ const PAGES = {
   '/gdpr': ['GDPR | ReelRole', 'Your rights under the GDPR and how to exercise them on ReelRole.'],
   '/jobs': ['Jobs with video interviews | ReelRole', 'Open roles where you apply by answering short video questions. Free for candidates.'],
   '/guest-video-recording': ['Record Your Video | ReelRole', 'Record a short video profile in your browser. No account needed to start.'],
+  '/hire': ['Hire Sales Talent Through Video | ReelRole', 'Hire sales closers, SDRs, account executives and remote sales people. Watch their video first and unlock contact details for 5 euros.'],
+  '/hire/sales-closers': ['Hire Sales Closers | ReelRole', 'Watch sales closers pitch themselves on video before the first call. Unlock the ones you like for 5 euros each.'],
+  '/hire/sdr': ['Hire SDRs | ReelRole', 'Hear how SDR candidates open a conversation before you interview them. Browse video profiles free, unlock for 5 euros.'],
+  '/hire/account-executives': ['Hire Account Executives | ReelRole', 'See account executive candidates present themselves on video. Browse free and pay only to contact the ones you want.'],
+  '/hire/remote-sales': ['Hire Remote Sales People | ReelRole', 'Remote sales talent with short video introductions. Judge communication before the first call.'],
+  '/hire/spanish-speaking-sales': ['Hire Spanish-Speaking Sales People | ReelRole', 'Spanish-speaking sales candidates on video. Hear their Spanish before you call.'],
+  '/hire/english-speaking-sales': ['Hire English-Speaking Sales People | ReelRole', 'English-speaking sales candidates on video. Hear their English before you call.'],
+  '/hire/high-ticket-closers': ['Hire High-Ticket Closers | ReelRole', 'High-ticket closers pitching on video. See how they sell before you book a call.'],
+  '/hire/customer-success': ['Hire Customer Success People | ReelRole', 'Customer success candidates with short video introductions. Browse free, unlock for 5 euros.'],
 };
 // App screens: served normally but never indexed.
 const APP = /^\/(talent|company|admin|messages|auth|login|register|reset-password)(\/|$)/;
@@ -139,4 +149,27 @@ export async function render(req, res, u, env, ctx) {
   } catch (e) {
     return res;
   }
+}
+
+// /stream/talent_videos/<user id>/<file>: the public Supabase object, cached at the Cloudflare edge
+// for a year (file names carry a timestamp, so they never change). Range requests are answered from
+// the cache, so videos start fast in Europe and Supabase only serves each file once per edge.
+const MEDIA_RE = /^\/stream\/talent_videos\/([0-9a-f-]{36})\/([A-Za-z0-9._-]{1,120}\.(mp4|webm|mov|m4v|jpg|vtt))$/;
+const MEDIA_TYPES = { mp4: 'video/mp4', m4v: 'video/mp4', webm: 'video/webm', mov: 'video/quicktime', jpg: 'image/jpeg', vtt: 'text/vtt' };
+export async function media(req, u, ctx) {
+  const m = u.pathname.match(MEDIA_RE);
+  if (!m) return new Response('Not found', { status: 404 });
+  const origin = SB_URL + '/storage/v1/object/public/talent_videos/' + m[1] + '/' + m[2];
+  const h = new Headers();
+  const range = req.headers.get('range');
+  if (range) h.set('range', range);
+  const r = await fetch(origin, { method: req.method, headers: h, cf: { cacheEverything: true, cacheTtlByStatus: { '200-299': 31536000, '404': 0, '500-599': 0 } } });
+  const out = new Headers();
+  for (const k of ['content-length', 'content-range', 'accept-ranges', 'etag', 'last-modified']) { const v = r.headers.get(k); if (v) out.set(k, v); }
+  out.set('content-type', MEDIA_TYPES[m[3].toLowerCase()]);
+  out.set('access-control-allow-origin', '*');
+  out.set('x-robots-tag', 'noindex');
+  out.set('cache-control', r.ok ? 'public, max-age=31536000, immutable' : 'no-store');
+  if (!out.has('accept-ranges') && /^(mp4|webm|mov|m4v)$/i.test(m[3])) out.set('accept-ranges', 'bytes');
+  return new Response(r.body, { status: r.status === 206 || r.ok || r.status === 416 ? r.status : 404, headers: out });
 }

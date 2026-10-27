@@ -9,6 +9,7 @@
 - [Jobs by role and city](https://jobersity.com/jobs)
 - [Precios y garantía](https://jobersity.com/precios)
 - [Cómo enviamos las candidaturas](https://jobersity.com/como-aplicamos)
+- [Empresas que están contratando](https://jobersity.com/empresas-que-contratan): empresas con 5 o más ofertas recientes; cada una tiene su página /empresa/<nombre>
 - [Metodología de datos](https://jobersity.com/metodologia): de dónde salen las ofertas, cómo se limpian y cómo se calculan sueldos y recuentos
 
 ## Guías

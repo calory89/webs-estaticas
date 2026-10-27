@@ -35,14 +35,14 @@ const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').
 
 // misma limpieza que src/lib/clean.ts
 function cleanTitle(t) {
-  let s = String(t || '').replace(/\s+/g, ' ').trim();
+  let s = decodeEntities(String(t || '')).replace(/\s+/g, ' ').trim();
   s = s.replace(/\s*[([]\s*(m|f|w|h|d|x|v)\s*(\/\s*(m|f|w|h|d|x|v)\s*)+[)\]]\s*/gi, ' ').trim();
   const letters = s.replace(/[^A-Za-zÀ-ÿ]/g, '');
   if (letters.length > 6 && letters.replace(/[^A-ZÀ-Þ]/g, '').length / letters.length > 0.7) s = s.toLowerCase().replace(/(^|[\s(-])([a-zà-ÿ])/g, (_m, a, b) => a + b.toUpperCase());
   return s.replace(/\s+/g, ' ').trim();
 }
 function cleanCompany(c) {
-  return String(c || '').replace(/\s+/g, ' ').trim().replace(/^\d{2,}\s+(?=[A-Za-zÀ-ÿ])/, '').replace(/\s+(company|compañía|empresa)$/i, '').replace(/[,\s]+$/g, '');
+  return decodeEntities(String(c || '')).replace(/\s+/g, ' ').trim().replace(/^\d{2,}\s+(?=[A-Za-zÀ-ÿ])/, '').replace(/\s+(company|compañía|empresa)$/i, '').replace(/[,\s]+$/g, '');
 }
 function decodeEntities(s) {
   return String(s || '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#(\d+);/g, (_m, n) => String.fromCharCode(+n));
@@ -187,7 +187,7 @@ export function secure(u, r) {
 }
 
 // Rutas que existen aunque no tengan HTML propio (las pinta la app en el navegador)
-const APP_ROUTES = /^\/(?:$|es$|en$|panel\/[^/]+$|cv\/[^/]+$|admin\/?$|acceso$|login$|guardadas$|saved$|oferta\/\d+$|empleo\/[a-z0-9-]+$|jobs\/[a-z0-9-]+$|bootcamp(?:\/.*)?$)/;
+const APP_ROUTES = /^\/(?:$|es$|en$|panel\/[^/]+$|cv\/[^/]+$|admin\/?$|acceso$|login$|guardadas$|saved$|empresas-que-contratan$|companies-hiring$|empresa\/[a-z0-9-]+$|company\/[a-z0-9-]+$|oferta\/\d+$|empleo\/[a-z0-9-]+$|jobs\/[a-z0-9-]+$|bootcamp(?:\/.*)?$)/;
 
 // La app responde a cualquier URL con su HTML. Aquí: 404 de verdad para lo que no existe y noindex
 // para búsquedas libres sin página propia (/empleo/<algo> que no está en el catálogo).
@@ -205,4 +205,85 @@ export async function status(u, r) {
   }
   if (/^\/(empleo|jobs)\//.test(p)) h.set('x-robots-tag', 'noindex, follow');
   return new Response(html, { status: 200, headers: h });
+}
+
+// ---- Empresas: /empresa/<slug> (es) y /company/<slug> (en), y /sitemap-companies.xml ----
+async function rpcCached(fn, body, ctx, ttl = 3600) {
+  const cache = caches.default;
+  const key = new Request('https://jobersity-edge-cache.internal/' + fn + '/' + encodeURIComponent(JSON.stringify(body)));
+  const hit = await cache.match(key);
+  if (hit) return hit.json();
+  let data;
+  try {
+    const r = await fetch(SB + fn, { method: 'POST', headers: { apikey: ANON, authorization: 'Bearer ' + ANON, 'content-type': 'application/json', 'accept-profile': 'jobersity', 'content-profile': 'jobersity' }, body: JSON.stringify(body) });
+    if (!r.ok) return undefined;
+    data = await r.json();
+  } catch (e) { return undefined; }
+  ctx.waitUntil(cache.put(key, new Response(JSON.stringify(data), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=' + ttl } })));
+  return data;
+}
+
+const NOT_CITY = /^(h[ií]brido|hybrid|flexible.*|remote.*|remoto.*|worldwide|anywhere|espa[nñ]a|spain|united states|usa|uk|united kingdom|schweiz|deutschland|germany|france|europe|emea)$/i;
+
+export async function company(req, r, u, env, ctx) {
+  const m = u.pathname.match(/^\/(empresa|company)\/([a-z0-9-]{1,120})\/?$/);
+  if (!m || r.status !== 200) return r;
+  const es = m[1] === 'empresa';
+  const c = await rpcCached('jb_company_jobs', { p_slug: m[2], p_limit: 30 }, ctx);
+  if (c === undefined) return r;
+  const h = new Headers(r.headers); h.delete('content-length'); h.set('cache-control', 'public, max-age=600');
+  if (!c || !c.slug) {
+    h.set('x-robots-tag', 'noindex');
+    return new HTMLRewriter()
+      .on('title', { element(e) { e.setInnerContent(es ? 'Empresa no encontrada · Jobersity' : 'Company not found · Jobersity'); } })
+      .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+      .on('meta[name="robots"]', { element(e) { e.setAttribute('content', 'noindex, follow'); } })
+      .transform(new Response(r.body, { status: 404, headers: h }));
+  }
+  c.name = decodeEntities(c.name);
+  const year = new Date().getUTCFullYear();
+  const cities = (c.cities || []).filter((x) => x && !NOT_CITY.test(x.trim())).slice(0, 4);
+  const path = (es ? '/empresa/' : '/company/') + c.slug;
+  const url = ORIGIN + path;
+  const title = es ? `Empleo en ${c.name}: ${c.jobs} ofertas (${year}) | Jobersity` : `${c.name} jobs: ${c.jobs} open roles (${year}) | Jobersity`;
+  const desc = es
+    ? `${c.jobs} ofertas de ${c.name} de las últimas semanas${cities.length ? ` en ${cities.join(', ')}` : ''}${c.remote_pct ? `, el ${c.remote_pct} % en remoto` : ''}. Sube tu CV y tu agente aplica por ti.`
+    : `${c.jobs} ${c.name} jobs from recent weeks${cities.length ? ` in ${cities.join(', ')}` : ''}${c.remote_pct ? `, ${c.remote_pct}% remote` : ''}. Upload your CV and your agent applies for you.`;
+  const list = (c.list || []).map((j) => `<li>${j.source !== 'adzuna' ? `<a href="/oferta/${j.id}">${esc(cleanTitle(j.title))}</a>` : esc(cleanTitle(j.title))}${j.location ? ' · ' + esc(j.location) : ''}${j.remote ? (es ? ' · Remoto' : ' · Remote') : ''}</li>`).join('');
+  const body = `<div class="jb-pre" style="max-width:960px;margin:0 auto;padding:32px 16px;font-family:Inter,system-ui,sans-serif;color:#111827;line-height:1.5">`
+    + `<p><a href="${es ? '/empresas-que-contratan' : '/companies-hiring'}">${es ? 'Empresas que contratan' : 'Companies hiring'}</a> › ${esc(c.name)}</p>`
+    + `<h1>${esc(es ? `Empleo en ${c.name}` : `${c.name} jobs`)}</h1><p>${esc(desc)}</p><ul>${list}</ul></div>`;
+  const ldo = { '@context': 'https://schema.org', '@type': 'Organization', name: c.name, url };
+  const set = (sel, attr, val) => [sel, { element(e) { e.setAttribute(attr, val); } }];
+  return new HTMLRewriter()
+    .on('html', { element(e) { e.setAttribute('lang', es ? 'es' : 'en'); } })
+    .on('title', { element(e) { e.setInnerContent(title); } })
+    .on(...set('meta[name="description"]', 'content', desc))
+    .on(...set('meta[name="robots"]', 'content', c.jobs >= 5 ? 'index, follow, max-image-preview:large' : 'noindex, follow'))
+    .on(...set('meta[property="og:title"]', 'content', title))
+    .on(...set('meta[property="og:description"]', 'content', desc))
+    .on(...set('meta[property="og:url"]', 'content', url))
+    .on(...set('meta[property="og:locale"]', 'content', es ? 'es_ES' : 'en_GB'))
+    .on(...set('meta[name="twitter:title"]', 'content', title))
+    .on(...set('meta[name="twitter:description"]', 'content', desc))
+    .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+    .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on('script#jb-ld', { element(e) { e.remove(); } })
+    .on('head', { element(e) { e.append(`<link rel="canonical" href="${url}" /><link rel="alternate" hreflang="es" href="${ORIGIN}/empresa/${c.slug}" /><link rel="alternate" hreflang="en" href="${ORIGIN}/company/${c.slug}" /><link rel="alternate" hreflang="x-default" href="${ORIGIN}/empresa/${c.slug}" /><script type="application/ld+json" id="jb-ld">${JSON.stringify(ldo).replace(/</g, '\\u003c')}</script>`, { html: true }); } })
+    .on('div#root', { element(e) { e.setInnerContent(body, { html: true }); } })
+    .transform(new Response(r.body, { status: 200, headers: h }));
+}
+
+export async function companiesSitemap(u, ctx) {
+  if (u.pathname !== '/sitemap-companies.xml') return null;
+  const rows = await rpcCached('jb_companies_top', { p_limit: 5000 }, ctx);
+  if (!Array.isArray(rows)) return new Response('unavailable', { status: 503, headers: { 'retry-after': '600' } });
+  const day = new Date().toISOString().slice(0, 10);
+  const urls = rows.filter((x) => x.jobs >= 5).map((x) => {
+    const lm = (x.last_posted || day).slice(0, 10);
+    const alt = `<xhtml:link rel="alternate" hreflang="es" href="${ORIGIN}/empresa/${x.slug}"/><xhtml:link rel="alternate" hreflang="en" href="${ORIGIN}/company/${x.slug}"/>`;
+    return `  <url><loc>${ORIGIN}/empresa/${x.slug}</loc><lastmod>${lm}</lastmod>${alt}</url>\n  <url><loc>${ORIGIN}/company/${x.slug}</loc><lastmod>${lm}</lastmod>${alt}</url>`;
+  });
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`;
+  return new Response(xml, { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }

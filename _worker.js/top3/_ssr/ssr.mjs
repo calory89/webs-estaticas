@@ -11243,6 +11243,3140 @@ var overrides_default = {
 		"reason": "No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews."
 	} }
 };
+/* 27 Oct 2026: central replacements for airport / far-from-centre picks */
+var overrides_central_2710 = {
+	"albuquerque-united-states": {
+		"Luxury": {
+			"id": 293691,
+			"name": "Hotel Andaluz Albuquerque, Curio Collection By Hilton",
+			"area": "Downtown",
+			"address": "125 2nd St. NW",
+			"lat": 35.085002,
+			"lng": -106.649217,
+			"url": "https://www.booking.com/hotel/us/andaluz.html",
+			"score": 8.5,
+			"count": 120,
+			"stars": 4,
+			"total": 380.01,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown rated 8.5/10 from 120 Booking.com reviews."
+		}
+	},
+	"alnwick-united-kingdom": {
+		"Best Value": {
+			"id": 605942,
+			"name": "The Oaks Hotel",
+			"area": "Alnwick",
+			"address": "South Road",
+			"lat": 55.408385,
+			"lng": -1.693598,
+			"url": "https://www.booking.com/hotel/gb/the-oaks.html",
+			"score": 8.5,
+			"count": 1570,
+			"stars": 3,
+			"total": 262.7,
+			"checked": "27 Oct 2026",
+			"reason": "Central Alnwick hotel rated 8.5 from 1,570 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"amritsar-india": {
+		"Luxury": {
+			"id": 5922875,
+			"name": "Courtyard by Marriott Amritsar",
+			"area": "Mall Road",
+			"address": "52 Mall Road",
+			"lat": 31.639831,
+			"lng": 74.888578,
+			"url": "https://www.booking.com/hotel/in/courtyard-amritsar.html",
+			"score": 8.5,
+			"count": 869,
+			"stars": 5,
+			"total": 250.62,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Mall Road, rated 8.5 from 869 Booking.com reviews."
+		}
+	},
+	"aurangabad-india": {
+		"Best Value": {
+			"id": 74209,
+			"name": "Amarpreet, Chhatrapati Sambhajinagar - AM Hotel Kollection",
+			"area": "Jalna Road",
+			"address": "Amarpreet Chowk, Jalna Road",
+			"lat": 19.875677,
+			"lng": 75.334977,
+			"url": "https://www.booking.com/hotel/in/amarpreet.html",
+			"score": 7.6,
+			"count": 150,
+			"stars": 4,
+			"total": 128.26,
+			"checked": "27 Oct 2026",
+			"reason": "Central Jalna Road hotel rated 7.6 from 150 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"aurora-united-states": {
+		"Budget": {
+			"id": 391749,
+			"name": "La Quinta by Wyndham Denver Gateway Park",
+			"area": "Gateway Park",
+			"address": "4460 Peoria Street",
+			"lat": 39.777025,
+			"lng": -104.846129,
+			"url": "https://www.booking.com/hotel/us/laquinta-inn.html",
+			"score": 8.1,
+			"count": 1640,
+			"stars": 3,
+			"total": 197.16,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Gateway Park, rated 8.1 from 1,640 Booking.com reviews."
+		}
+	},
+	"austin-unitedstates": {
+		"Luxury": {
+			"id": 4671457,
+			"name": "Austin Proper Hotel, a Member of Design Hotels",
+			"area": "Downtown Austin",
+			"address": "600 West 2nd Street",
+			"lat": 30.266284,
+			"lng": -97.750106,
+			"url": "https://www.booking.com/hotel/us/austin-proper.html",
+			"score": 9.2,
+			"count": 96,
+			"stars": 5,
+			"total": 1927.36,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Austin, rated 9.2 from 96 Booking.com reviews."
+		}
+	},
+	"bandar-seri-begawan-brunei": {
+		"Luxury": {
+			"id": 250692,
+			"name": "Radisson Hotel Brunei Darussalam",
+			"area": "City centre",
+			"address": "Jalan Tasek",
+			"lat": 4.89478,
+			"lng": 114.942076,
+			"url": "https://www.booking.com/hotel/bn/radisson-brunei-darussalam.html",
+			"score": 8.5,
+			"count": 702,
+			"stars": 4,
+			"total": 322.64,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City centre rated 8.5/10 from 702 Booking.com reviews."
+		}
+	},
+	"bangkok-thailand": {
+		"Budget": {
+			"id": 2421306,
+			"name": "New Siam Palace Ville Hotel",
+			"area": "Bangkok Old Town",
+			"address": "56 Trok Rong Mhai, Chao Fa Rd",
+			"lat": 13.760169,
+			"lng": 100.493267,
+			"url": "https://www.booking.com/hotel/th/new-siam-palace-ville.html",
+			"score": 7.9,
+			"count": 6022,
+			"stars": 3,
+			"total": 174.14,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Bangkok Old Town, rated 7.9 from 6,022 Booking.com reviews."
+		}
+	},
+	"belem-brazil": {
+		"Best Value": {
+			"id": 292792,
+			"name": "Hotel Princesa Louçã",
+			"area": "City centre",
+			"address": "Avenida Presidente Vargas, 882",
+			"lat": -1.453572,
+			"lng": -48.494051,
+			"url": "https://www.booking.com/hotel/br/hotel-princesa-belem.html",
+			"score": 8.4,
+			"count": 4099,
+			"stars": 4,
+			"total": 174.63,
+			"checked": "27 Oct 2026",
+			"reason": "Central City centre hotel rated 8.4 from 4,099 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"bethlehem-united-states": {
+		"Best Value": {
+			"id": 321374,
+			"name": "Wind Creek Bethlehem Casino & Resort",
+			"area": "South Bethlehem",
+			"address": "77 Wind Creek Blvd",
+			"lat": 40.615496,
+			"lng": -75.359328,
+			"url": "https://www.booking.com/hotel/us/bethlehem-77-sands-boulevard.html",
+			"score": 8.7,
+			"count": 420,
+			"stars": 4,
+			"total": 450.71,
+			"checked": "27 Oct 2026",
+			"reason": "Central South Bethlehem hotel rated 8.7 from 420 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 187930,
+			"name": "Holiday Inn Express Hotel & Suites Bethlehem by IHG",
+			"area": "Bethlehem",
+			"address": "2201 Cherry Lane",
+			"lat": 40.593633,
+			"lng": -75.338455,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-bethlehem.html",
+			"score": 8.5,
+			"count": 418,
+			"stars": 2,
+			"total": 210.59,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Bethlehem, rated 8.5 from 418 Booking.com reviews."
+		}
+	},
+	"birmingham-alabama-united-states": {
+		"Luxury": {
+			"id": 11076295,
+			"name": "The Painted Lady",
+			"area": "Five Points South",
+			"address": "2143 2nd Avenue South",
+			"lat": 33.511777,
+			"lng": -86.80065,
+			"url": "https://www.booking.com/hotel/us/the-painted-lady-birmingham.html",
+			"score": 8.9,
+			"count": 197,
+			"stars": 4,
+			"total": 319.46,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Five Points South rated 8.9/10 from 197 Booking.com reviews."
+		}
+	},
+	"bogor-indonesia": {
+		"Best Value": {
+			"id": 1280257,
+			"name": "THE 1O1 Bogor Suryakancana",
+			"area": "Bogor Tengah",
+			"address": "Suryakancana 179-181",
+			"lat": -6.607262,
+			"lng": 106.801738,
+			"url": "https://www.booking.com/hotel/id/the-1o1-bogor-suryakancana.html",
+			"score": 8.3,
+			"count": 93,
+			"stars": 4,
+			"total": 136.72,
+			"checked": "27 Oct 2026",
+			"reason": "Central Bogor Tengah hotel rated 8.3 from 93 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"bogota-colombia": {
+		"Best Value": {
+			"id": 604400,
+			"name": "Hotel Estelar Calle 100",
+			"area": "Chapinero",
+			"address": "Calle 100 N° 14 46",
+			"lat": 4.684772,
+			"lng": -74.047055,
+			"url": "https://www.booking.com/hotel/co/estelar-calle-100.html",
+			"score": 9.0,
+			"count": 953,
+			"stars": 4,
+			"total": 172.44,
+			"checked": "27 Oct 2026",
+			"reason": "Central Chapinero hotel rated 9.0 from 953 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"bozeman-united-states": {
+		"Best Value": {
+			"id": 2234130,
+			"name": "SpringHill Suites by Marriott Bozeman",
+			"area": "Bozeman",
+			"address": "1601 Baxter Lane",
+			"lat": 45.698783,
+			"lng": -111.0542,
+			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-bozeman.html",
+			"score": 8.8,
+			"count": 223,
+			"stars": 3,
+			"total": 309.57,
+			"checked": "27 Oct 2026",
+			"reason": "Central Bozeman hotel rated 8.8 from 223 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"braga-portugal": {
+		"Luxury": {
+			"id": 235755,
+			"name": "Meliá Braga Hotel & Spa",
+			"area": "Braga",
+			"address": "Av. General Carrilho da Silva Pinto",
+			"lat": 41.556669,
+			"lng": -8.396623,
+			"url": "https://www.booking.com/hotel/pt/melia-braga-spa.html",
+			"score": 8.8,
+			"count": 1817,
+			"stars": 5,
+			"total": 308,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Braga, rated 8.8 from 1,817 Booking.com reviews."
+		}
+	},
+	"burbank-united-states": {
+		"Budget": {
+			"id": 56648,
+			"name": "Safari Inn Burbank-Universal, a Coast Hotel",
+			"area": "Burbank",
+			"address": "1911 Olive Avenue",
+			"lat": 34.165618,
+			"lng": -118.325018,
+			"url": "https://www.booking.com/hotel/us/safari-inn.html",
+			"score": 8.1,
+			"count": 130,
+			"stars": 3,
+			"total": 321.64,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Burbank, rated 8.1 from 130 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 183288,
+			"name": "Hotel Burbank",
+			"area": "Downtown Burbank",
+			"address": "150 East Angeleno",
+			"lat": 34.179423,
+			"lng": -118.308214,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-burbank-media-center.html",
+			"score": 8.5,
+			"count": 2259,
+			"stars": 3,
+			"total": 332.97,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Burbank hotel rated 8.5 from 2,259 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"busan-southkorea": {
+		"Luxury": {
+			"id": 246809,
+			"name": "Lotte Hotel Busan",
+			"area": "Seomyeon",
+			"address": "772, Gaya-daero, Busanjin-gu",
+			"lat": 35.157381,
+			"lng": 129.055501,
+			"url": "https://www.booking.com/hotel/kr/lotte-busan.html",
+			"score": 8.9,
+			"count": 2746,
+			"stars": 5,
+			"total": 449.96,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Seomyeon, rated 8.9 from 2,746 Booking.com reviews."
+		}
+	},
+	"cairo-egypt": {
+		"Luxury": {
+			"id": 247640,
+			"name": "Kempinski Nile Hotel, Cairo",
+			"area": "Garden City",
+			"address": "12 Ahmed Ragheb Street, Corniche El Nil",
+			"lat": 30.038658,
+			"lng": 31.230344,
+			"url": "https://www.booking.com/hotel/eg/kempinski-nile-cairo.html",
+			"score": 8.6,
+			"count": 2926,
+			"stars": 5,
+			"total": 647.21,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Garden City, rated 8.6 from 2,926 Booking.com reviews."
+		}
+	},
+	"calgary-canada": {
+		"Budget": {
+			"id": 285681,
+			"name": "Ramada Plaza by Wyndham Calgary Downtown",
+			"area": "Downtown Calgary",
+			"address": "708 8th Avenue Southwest",
+			"lat": 51.046053,
+			"lng": -114.076852,
+			"url": "https://www.booking.com/hotel/ca/ramada-downtown-calgary.html",
+			"score": 7.5,
+			"count": 2782,
+			"stars": 3,
+			"total": 240.88,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Calgary, rated 7.5 from 2,782 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 236229,
+			"name": "Calgary Marriott Downtown Hotel",
+			"area": "Downtown Calgary",
+			"address": "110 9 Avenue Southeast",
+			"lat": 51.044709,
+			"lng": -114.062239,
+			"url": "https://www.booking.com/hotel/ca/calgary-marriott.html",
+			"score": 8.1,
+			"count": 199,
+			"stars": 4,
+			"total": 396.93,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Calgary hotel rated 8.1 from 199 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"chula-vista-united-states": {
+		"Best Value": {
+			"id": 181361,
+			"name": "Best Western Plus Marina Gateway Hotel",
+			"area": "Bayfront",
+			"address": "800 Bay Marina Drive",
+			"lat": 32.658958,
+			"lng": -117.109567,
+			"url": "https://www.booking.com/hotel/us/best-western-marina-gateway.html",
+			"score": 8.8,
+			"count": 899,
+			"stars": 3,
+			"total": 299.93,
+			"checked": "27 Oct 2026",
+			"reason": "Central Bayfront hotel rated 8.8 from 899 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"cincinnati-united-states": {
+		"Budget": {
+			"id": 430946,
+			"name": "Hampton Inn & Suites Newport/Cincinnati, KY",
+			"area": "Cincinnati Riverfront",
+			"address": "275 Columbia Street",
+			"lat": 39.093041,
+			"lng": -84.498109,
+			"url": "https://www.booking.com/hotel/us/travelodge-newport1.html",
+			"score": 8.7,
+			"count": 905,
+			"stars": 3,
+			"total": 218.97,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Cincinnati Riverfront, rated 8.7 from 905 Booking.com reviews."
+		}
+	},
+	"colorado-springs-united-states": {
+		"Best Value": {
+			"id": 8154390,
+			"name": "SpringHill Suites by Marriott Colorado Springs Downtown",
+			"area": "Downtown Colorado Springs",
+			"address": "402 South Tejon Street",
+			"lat": 38.82828,
+			"lng": -104.82401,
+			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-colorado-springs-downtown.html",
+			"score": 8.0,
+			"count": 119,
+			"stars": 3,
+			"total": 331.69,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Colorado Springs hotel rated 8.0 from 119 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"conwy-united-kingdom": {
+		"Best Value": {
+			"id": 231069,
+			"name": "The Quay Hotel and Spa",
+			"area": "Deganwy",
+			"address": "Deganwy Quay",
+			"lat": 53.291156,
+			"lng": -3.82865,
+			"url": "https://www.booking.com/hotel/gb/thequayhotel.html",
+			"score": 8.9,
+			"count": 3103,
+			"stars": 4,
+			"total": 317.89,
+			"checked": "27 Oct 2026",
+			"reason": "Central Deganwy hotel rated 8.9 from 3,103 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"dakar-senegal": {
+		"Best Value": {
+			"id": 11110049,
+			"name": "Azalaï Hôtel Dakar",
+			"area": "Fann",
+			"address": "Route de la Corniche Ouest, Fann Résidence",
+			"lat": 14.678981,
+			"lng": -17.459454,
+			"url": "https://www.booking.com/hotel/sn/azalai-dakar.html",
+			"score": 8.1,
+			"count": 765,
+			"stars": 4,
+			"total": 514.36,
+			"checked": "27 Oct 2026",
+			"reason": "Central Fann hotel rated 8.1 from 765 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"dar-es-salaam-tanzania": {
+		"Best Value": {
+			"id": 4689454,
+			"name": "Crowne Plaza - Dar Es Salaam by IHG",
+			"area": "Upanga East",
+			"address": "Magore Street",
+			"lat": -6.8103,
+			"lng": 39.2853,
+			"url": "https://www.booking.com/hotel/tz/crowne-plaza-dar-es-salaam-an-ihg.html",
+			"score": 8.3,
+			"count": 929,
+			"stars": 4,
+			"total": 194.05,
+			"checked": "27 Oct 2026",
+			"reason": "Central Upanga East hotel rated 8.3 from 929 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"doha-qatar": {
+		"Budget": {
+			"id": 9147317,
+			"name": "ibis Doha",
+			"area": "Al Muntazah",
+			"address": "Badr Street, C Ring Road",
+			"lat": 25.270102,
+			"lng": 51.514096,
+			"url": "https://www.booking.com/hotel/qa/ibis-doha.html",
+			"score": 8.8,
+			"count": 3519,
+			"stars": 3,
+			"total": 114.87,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Al Muntazah, rated 8.8 from 3,519 Booking.com reviews."
+		}
+	},
+	"dubai": {
+		"Budget": {
+			"id": 7629108,
+			"name": "Rove City Walk",
+			"area": "Al Wasl",
+			"address": "Al Wasl and Al Safa Road junction",
+			"lat": 25.205344,
+			"lng": 55.268123,
+			"url": "https://www.booking.com/hotel/ae/rove-city-walk.html",
+			"score": 9.1,
+			"count": 8452,
+			"stars": 3,
+			"total": 207.16,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Al Wasl, rated 9.1 from 8,452 Booking.com reviews."
+		}
+	},
+	"durban-southafrica": {
+		"Luxury": {
+			"id": 15401,
+			"name": "Blue Waters Hotel",
+			"area": "Golden Mile",
+			"address": "175 Snell Parade",
+			"lat": -29.840074,
+			"lng": 31.035063,
+			"url": "https://www.booking.com/hotel/za/blue-waters.html",
+			"score": 8.5,
+			"count": 19528,
+			"stars": 4,
+			"total": 256.97,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Golden Mile rated 8.5/10 from 19,528 Booking.com reviews."
+		}
+	},
+	"durham-united-states": {
+		"Best Value": {
+			"id": 713937,
+			"name": "Hilton Garden Inn Durham-University Medical Center",
+			"area": "Duke / West Main",
+			"address": "2102 West Main Street",
+			"lat": 36.007086,
+			"lng": -78.924751,
+			"url": "https://www.booking.com/hotel/us/garden-inn-durham-university-medical-center.html",
+			"score": 8.6,
+			"count": 127,
+			"stars": 3,
+			"total": 331.25,
+			"checked": "27 Oct 2026",
+			"reason": "Central Duke / West Main hotel rated 8.6 from 127 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"enniskillen-united-kingdom": {
+		"Best Value": {
+			"id": 37570,
+			"name": "Westville Hotel",
+			"area": "Enniskillen",
+			"address": "14-20 Tempo Road",
+			"lat": 54.343028,
+			"lng": -7.627046,
+			"url": "https://www.booking.com/hotel/gb/westville.html",
+			"score": 8.8,
+			"count": 822,
+			"stars": 4,
+			"total": 300.91,
+			"checked": "27 Oct 2026",
+			"reason": "Central Enniskillen hotel rated 8.8 from 822 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"estepona-spain": {
+		"Budget": {
+			"id": 10773215,
+			"name": "Hotel Boutique La Brisa del Mar",
+			"area": "Old town",
+			"address": "78 Calle Málaga",
+			"lat": 36.426028,
+			"lng": -5.143604,
+			"url": "https://www.booking.com/hotel/es/boutique-la-brisa-del-mar.html",
+			"score": 9.1,
+			"count": 482,
+			"stars": 3,
+			"total": 230.84,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Old town, rated 9.1 from 482 Booking.com reviews."
+		}
+	},
+	"faro-portugal": {
+		"Budget": {
+			"id": 179196,
+			"name": "Hotel Made inn Faro",
+			"area": "Faro City Centre",
+			"address": "Rua Miguel Bombarda 64",
+			"lat": 37.020287,
+			"lng": -7.940137,
+			"url": "https://www.booking.com/hotel/pt/residencial-afonso-iii.html",
+			"score": 8.1,
+			"count": 5025,
+			"stars": 2,
+			"total": 134,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Faro City Centre, rated 8.1 from 5,025 Booking.com reviews."
+		}
+	},
+	"florianopolis-brazil": {
+		"Best Value": {
+			"id": 285396,
+			"name": "Faial Prime Suítes",
+			"area": "City Centre",
+			"address": "Rua Felipe Schmidt, 603",
+			"lat": -27.594539,
+			"lng": -48.555401,
+			"url": "https://www.booking.com/hotel/br/faial.html",
+			"score": 9.1,
+			"count": 2970,
+			"stars": 4,
+			"total": 235.05,
+			"checked": "27 Oct 2026",
+			"reason": "Central City Centre hotel rated 9.1 from 2,970 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"forli-italy": {
+		"Luxury": {
+			"id": 87527,
+			"name": "Best Western Hotel Globus City",
+			"area": "Forlì",
+			"address": "Via Traiano Imperatore 4",
+			"lat": 44.247328,
+			"lng": 12.079119,
+			"url": "https://www.booking.com/hotel/it/globus-city.html",
+			"score": 8.6,
+			"count": 482,
+			"stars": 4,
+			"total": 308.5,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Forlì rated 8.6/10 from 482 Booking.com reviews."
+		}
+	},
+	"foz-do-iguacu-brazil": {
+		"Luxury": {
+			"id": 244874,
+			"name": "Nadai Confort Hotel e Spa",
+			"area": "City Centre",
+			"address": "Av. República Argentina, 1332",
+			"lat": -25.534581,
+			"lng": -54.581183,
+			"url": "https://www.booking.com/hotel/br/nadai-confort.html",
+			"score": 8.8,
+			"count": 1043,
+			"stars": 4,
+			"total": 355.82,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City Centre rated 8.8/10 from 1,043 Booking.com reviews."
+		}
+	},
+	"geneva-switzerland": {
+		"Budget": {
+			"id": 182052,
+			"name": "ibis Genève Centre Gare",
+			"area": "Saint-Gervais / Les Grottes",
+			"address": "10 rue Voltaire",
+			"lat": 46.207756,
+			"lng": 6.138272,
+			"url": "https://www.booking.com/hotel/ch/geneve-centre-gare.html",
+			"score": 7.7,
+			"count": 2385,
+			"stars": 3,
+			"total": 314.64,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Saint-Gervais / Les Grottes, rated 7.7 from 2,385 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 65329,
+			"name": "Hotel Montbrillant",
+			"area": "Saint-Gervais / Les Grottes",
+			"address": "2 rue de Montbrillant",
+			"lat": 46.21118,
+			"lng": 6.141718,
+			"url": "https://www.booking.com/hotel/ch/hotelmontbrillant.html",
+			"score": 7.8,
+			"count": 2036,
+			"stars": 4,
+			"total": 420.52,
+			"checked": "27 Oct 2026",
+			"reason": "Central Saint-Gervais / Les Grottes hotel rated 7.8 from 2,036 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"hakodate-japan": {
+		"Luxury": {
+			"id": 8610484,
+			"name": "fav HAKODATE",
+			"area": "Bay area",
+			"address": "Otemachi 20-15",
+			"lat": 41.771382,
+			"lng": 140.725698,
+			"url": "https://www.booking.com/hotel/jp/fav-hakodate.html",
+			"score": 9.0,
+			"count": 1171,
+			"stars": 4,
+			"total": 351.98,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bay area rated 9.0/10 from 1,171 Booking.com reviews."
+		}
+	},
+	"hyderabad-india": {
+		"Luxury": {
+			"id": 237300,
+			"name": "Hyderabad Marriott Hotel & Convention Centre",
+			"area": "Hussain Sagar",
+			"address": "Tank Bund Road, opposite Hussain Sagar Lake",
+			"lat": 17.424116,
+			"lng": 78.487642,
+			"url": "https://www.booking.com/hotel/in/hyderabad-marriott-convention-centre.html",
+			"score": 8.2,
+			"count": 715,
+			"stars": 5,
+			"total": 188.52,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Hussain Sagar, rated 8.2 from 715 Booking.com reviews."
+		}
+	},
+	"indianapolis-united-states": {
+		"Budget": {
+			"id": 181273,
+			"name": "Holiday Inn - Indianapolis Downtown by IHG",
+			"area": "Downtown Indianapolis",
+			"address": "515 S West Street",
+			"lat": 39.760095,
+			"lng": -86.166916,
+			"url": "https://www.booking.com/hotel/us/comfort-suites-indianapolis-city-centre.html",
+			"score": 7.4,
+			"count": 501,
+			"stars": 3,
+			"total": 279.47,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Indianapolis, rated 7.4 from 501 Booking.com reviews."
+		}
+	},
+	"jaipur-india": {
+		"Luxury": {
+			"id": 74714,
+			"name": "Rambagh Palace",
+			"area": "Rambagh",
+			"address": "Bhawani Singh Road",
+			"lat": 26.898158,
+			"lng": 75.808089,
+			"url": "https://www.booking.com/hotel/in/rambagh-palace.html",
+			"score": 9.2,
+			"count": 131,
+			"stars": 5,
+			"total": 1929.59,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Rambagh, rated 9.2 from 131 Booking.com reviews."
+		}
+	},
+	"johannesburg-southafrica": {
+		"Budget": {
+			"id": 2849996,
+			"name": "Garden Court Milpark, Johannesburg",
+			"area": "Auckland Park",
+			"address": "Corner Owl & Empire Roads",
+			"lat": -26.183429,
+			"lng": 28.020762,
+			"url": "https://www.booking.com/hotel/za/garden-court-milpark-braamfontein.html",
+			"score": 8.0,
+			"count": 2826,
+			"stars": 3,
+			"total": 131.48,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Auckland Park, rated 8.0 from 2,826 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 1061887,
+			"name": "Four Seasons Hotel The Westcliff",
+			"area": "Westcliff",
+			"address": "67 Jan Smuts Avenue",
+			"lat": -26.171087,
+			"lng": 28.0327,
+			"url": "https://www.booking.com/hotel/za/four-seasons-the-westcliff.html",
+			"score": 9.1,
+			"count": 465,
+			"stars": 5,
+			"total": 995.54,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Westcliff, rated 9.1 from 465 Booking.com reviews."
+		}
+	},
+	"kolkata-india": {
+		"Luxury": {
+			"id": 788847,
+			"name": "The Lalit Great Eastern Kolkata",
+			"area": "BBD Bagh",
+			"address": "1, 2 & 3 Old Court House Street",
+			"lat": 22.56823,
+			"lng": 88.34935,
+			"url": "https://www.booking.com/hotel/in/the-lalit-great-eastern-kolkata.html",
+			"score": 8.1,
+			"count": 1055,
+			"stars": 5,
+			"total": 228.22,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in BBD Bagh, rated 8.1 from 1,055 Booking.com reviews."
+		}
+	},
+	"lijiang-china": {
+		"Luxury": {
+			"id": 738700,
+			"name": "Hotel Indigo Lijiang Ancient Town by IHG",
+			"area": "Dayan Old Town",
+			"address": "111 Xing Wen Alley, Qi Yi Street",
+			"lat": 26.865415,
+			"lng": 100.238987,
+			"url": "https://www.booking.com/hotel/cn/indigo-lijiang-ancient-town.html",
+			"score": 9.3,
+			"count": 77,
+			"stars": 5,
+			"total": 292.01,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Dayan Old Town, rated 9.3 from 77 Booking.com reviews."
+		}
+	},
+	"los-angeles-unitedstates": {
+		"Luxury": {
+			"id": 8114987,
+			"name": "Conrad Los Angeles",
+			"area": "Downtown Los Angeles",
+			"address": "100 South Grand Ave.",
+			"lat": 34.055678,
+			"lng": -118.248709,
+			"url": "https://www.booking.com/hotel/us/conrad-los-angeles.html",
+			"score": 8.7,
+			"count": 188,
+			"stars": 5,
+			"total": 902.16,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Los Angeles, rated 8.7 from 188 Booking.com reviews."
+		}
+	},
+	"louisville-united-states": {
+		"Budget": {
+			"id": 1534705,
+			"name": "Holiday Inn Express & Suites Downtown Louisville by IHG",
+			"area": "Downtown Louisville",
+			"address": "800 West Market Street",
+			"lat": 38.255759,
+			"lng": -85.763614,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-downtown-louisville.html",
+			"score": 8.4,
+			"count": 653,
+			"stars": 3,
+			"total": 261.05,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Louisville, rated 8.4 from 653 Booking.com reviews."
+		}
+	},
+	"lucca-italy": {
+		"Luxury": {
+			"id": 2523642,
+			"name": "Palazzo Dipinto",
+			"area": "Centro Storico",
+			"address": "Piazza del Palazzo Dipinto 27",
+			"lat": 43.843246,
+			"lng": 10.500416,
+			"url": "https://www.booking.com/hotel/it/palazzo-dipinto-lucca.html",
+			"score": 9.3,
+			"count": 641,
+			"stars": 4,
+			"total": 658,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Centro Storico rated 9.3/10 from 641 Booking.com reviews."
+		}
+	},
+	"luxembourg-city-luxembourg": {
+		"Budget": {
+			"id": 3634565,
+			"name": "Hôtel JJ32 Luxembourg Centre Gare",
+			"area": "Gare",
+			"address": "32 Rue Joseph Junck",
+			"lat": 49.600789,
+			"lng": 6.131015,
+			"url": "https://www.booking.com/hotel/lu/jj32.html",
+			"score": 8.1,
+			"count": 2026,
+			"stars": 3,
+			"total": 333.42,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Gare, rated 8.1 from 2,026 Booking.com reviews."
+		}
+	},
+	"lynchburg-united-states": {
+		"Luxury": {
+			"id": 3122705,
+			"name": "The Virginian Lynchburg, Curio Collection By Hilton",
+			"area": "Downtown Lynchburg",
+			"address": "712 Church Street",
+			"lat": 37.415424,
+			"lng": -79.14406,
+			"url": "https://www.booking.com/hotel/us/the-virginian-lynchburg-curio-collection-by-hilton.html",
+			"score": 9.2,
+			"count": 154,
+			"stars": 4,
+			"total": 444.97,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Lynchburg rated 9.2/10 from 154 Booking.com reviews."
+		}
+	},
+	"male-maldives": {
+		"Budget": {
+			"id": 9854862,
+			"name": "Beehive Premier",
+			"area": "Malé",
+			"address": "Raiyvilla Hingun",
+			"lat": 4.171398,
+			"lng": 73.516294,
+			"url": "https://www.booking.com/hotel/mv/beehive-premier-male.html",
+			"score": 8.0,
+			"count": 1081,
+			"stars": 3,
+			"total": 263.26,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Malé, rated 8.0 from 1,081 Booking.com reviews."
+		}
+	},
+	"medan-indonesia": {
+		"Budget": {
+			"id": 268642,
+			"name": "Swiss-Belinn Medan",
+			"area": "Medan",
+			"address": "Jalan Surabaya No. 88",
+			"lat": 3.583357,
+			"lng": 98.685146,
+			"url": "https://www.booking.com/hotel/id/my-dream.html",
+			"score": 8.0,
+			"count": 242,
+			"stars": 3,
+			"total": 59.27,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Medan, rated 8.0 from 242 Booking.com reviews."
+		}
+	},
+	"muscat-oman": {
+		"Best Value": {
+			"id": 6212367,
+			"name": "Ramada Encore by Wyndham Muscat Al-Ghubra",
+			"area": "Al Ghubra",
+			"address": "Sultan Qaboos Highway",
+			"lat": 23.586416,
+			"lng": 58.406358,
+			"url": "https://www.booking.com/hotel/om/ramada-encore-by-wyndham-muscat-al-ghubrah.html",
+			"score": 8.7,
+			"count": 6246,
+			"stars": 4,
+			"total": 177.59,
+			"checked": "27 Oct 2026",
+			"reason": "Central Al Ghubra hotel rated 8.7 from 6,246 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 254839,
+			"name": "The Chedi Muscat",
+			"area": "Al Ghubra",
+			"address": "North Ghubra 32, Way 3215",
+			"lat": 23.602072,
+			"lng": 58.399013,
+			"url": "https://www.booking.com/hotel/om/the-chedi-muscat.html",
+			"score": 9.2,
+			"count": 1377,
+			"stars": 5,
+			"total": 986.56,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Al Ghubra, rated 9.2 from 1,377 Booking.com reviews."
+		}
+	},
+	"nusa-penida-indonesia": {
+		"Luxury": {
+			"id": 9295885,
+			"name": "Deep Roots Dive & Yoga Resort",
+			"area": "Ped",
+			"address": "Dusun Pendem, Desa Ped",
+			"lat": -8.69052,
+			"lng": 115.513199,
+			"url": "https://www.booking.com/hotel/id/deep-roots-dive-amp-yoga-resort.html",
+			"score": 9.6,
+			"count": 269,
+			"stars": 4,
+			"total": 201.02,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Ped rated 9.6/10 from 269 Booking.com reviews."
+		}
+	},
+	"obidos-portugal": {
+		"Luxury": {
+			"id": 385501,
+			"name": "Pousada Castelo de Obidos",
+			"area": "Medieval town",
+			"address": "Paço Real",
+			"lat": 39.363278,
+			"lng": -9.157052,
+			"url": "https://www.booking.com/hotel/pt/pousada-de-abidos-castelo-de-abidos.html",
+			"score": 8.3,
+			"count": 713,
+			"stars": 4,
+			"total": 489.6,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Medieval town rated 8.3/10 from 713 Booking.com reviews."
+		}
+	},
+	"olsztyn-poland": {
+		"Luxury": {
+			"id": 440454,
+			"name": "Tiffi Boutique Hotel",
+			"area": "Olsztyn",
+			"address": "ul. Żeglarska 7",
+			"lat": 53.781582,
+			"lng": 20.450318,
+			"url": "https://www.booking.com/hotel/pl/yacht-club-tiffi-olsztyn.html",
+			"score": 9.0,
+			"count": 757,
+			"stars": 4,
+			"total": 227.84,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Olsztyn rated 9.0/10 from 757 Booking.com reviews."
+		}
+	},
+	"osijek-croatia": {
+		"Budget": {
+			"id": 174313,
+			"name": "Hotel Silver",
+			"area": "Osijek",
+			"address": "Martina Divalta 84",
+			"lat": 45.549896,
+			"lng": 18.703733,
+			"url": "https://www.booking.com/hotel/hr/silver.html",
+			"score": 8.2,
+			"count": 294,
+			"stars": 3,
+			"total": 177.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Osijek, rated 8.2 from 294 Booking.com reviews."
+		}
+	},
+	"queretaro-mexico": {
+		"Luxury": {
+			"id": 1843515,
+			"name": "Hotel Criol",
+			"area": "Historic centre",
+			"address": "Río de la Loza Norte 6, Centro",
+			"lat": 20.594386,
+			"lng": -100.388585,
+			"url": "https://www.booking.com/hotel/mx/criol.html",
+			"score": 9.0,
+			"count": 840,
+			"stars": 5,
+			"total": 166.78,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Historic centre, rated 9.0 from 840 Booking.com reviews."
+		}
+	},
+	"regina-canada": {
+		"Best Value": {
+			"id": 534332,
+			"name": "Fairfield by Marriott Regina",
+			"area": "Regina",
+			"address": "3915 Albert Street",
+			"lat": 50.416897,
+			"lng": -104.6178,
+			"url": "https://www.booking.com/hotel/ca/fairfield-inn-suites-by-marriott-regina.html",
+			"score": 8.7,
+			"count": 244,
+			"stars": 3,
+			"total": 234.91,
+			"checked": "27 Oct 2026",
+			"reason": "Central Regina hotel rated 8.7 from 244 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"samsun-turkiye": {
+		"Budget": {
+			"id": 282516,
+			"name": "Kent Hotel",
+			"area": "City Centre",
+			"address": "Pazar Mah. Necipbey Cad. No:14",
+			"lat": 41.294178,
+			"lng": 36.331339,
+			"url": "https://www.booking.com/hotel/tr/kent-otel.html",
+			"score": 7.7,
+			"count": 80,
+			"stars": 3,
+			"total": 120,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in City Centre, rated 7.7 from 80 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1741837,
+			"name": "Panaroma Damla Otel",
+			"area": "Canik",
+			"address": "Toptepe Mahallesi, Kırım Türkleri Sokak No:41, Canik",
+			"lat": 41.266859,
+			"lng": 36.377191,
+			"url": "https://www.booking.com/hotel/tr/panorama-damla-otel.html",
+			"score": 7.6,
+			"count": 270,
+			"stars": 3,
+			"total": 130,
+			"checked": "27 Oct 2026",
+			"reason": "Central Canik hotel rated 7.6 from 270 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"san-diego-unitedstates": {
+		"Luxury": {
+			"id": 3809134,
+			"name": "InterContinental San Diego by IHG",
+			"area": "Downtown San Diego",
+			"address": "901 Bayfront Court",
+			"lat": 32.716727,
+			"lng": -117.171387,
+			"url": "https://www.booking.com/hotel/us/intercontinental-hotels-san-diego.html",
+			"score": 8.2,
+			"count": 222,
+			"stars": 5,
+			"total": 1315.87,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown San Diego, rated 8.2 from 222 Booking.com reviews."
+		}
+	},
+	"san-jose-costarica": {
+		"Luxury": {
+			"id": 350607,
+			"name": "Radisson San Jose-Costa Rica",
+			"area": "Barrio Tournón",
+			"address": "Calle Central y Tercera Av 15, Barrio Tournón",
+			"lat": 9.943103,
+			"lng": -84.076918,
+			"url": "https://www.booking.com/hotel/cr/radisson-europa.html",
+			"score": 8.1,
+			"count": 2668,
+			"stars": 5,
+			"total": 283.56,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Barrio Tournón, rated 8.1 from 2,668 Booking.com reviews."
+		}
+	},
+	"san-jose-united-states": {
+		"Best Value": {
+			"id": 1948003,
+			"name": "AC Hotel by Marriott San Jose Downtown",
+			"area": "Downtown San Jose",
+			"address": "350 West Santa Clara Street",
+			"lat": 37.333222,
+			"lng": -121.896161,
+			"url": "https://www.booking.com/hotel/us/ac-by-marriott-san-jose-downtown.html",
+			"score": 8.7,
+			"count": 379,
+			"stars": 3,
+			"total": 623.51,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown San Jose hotel rated 8.7 from 379 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"santa-marta-colombia": {
+		"Luxury": {
+			"id": 539417,
+			"name": "Hotel Boutique Don Pepe",
+			"area": "Centro Histórico",
+			"address": "Calle 16 No. 1C-92",
+			"lat": 11.244136,
+			"lng": -74.213304,
+			"url": "https://www.booking.com/hotel/co/boutique-don-pepe.html",
+			"score": 8.6,
+			"count": 254,
+			"stars": 5,
+			"total": 426.04,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Centro Histórico, rated 8.6 from 254 Booking.com reviews."
+		}
+	},
+	"shanghai-china": {
+		"Budget": {
+			"id": 6973768,
+			"name": "Shanghai Fish Inn People Square",
+			"area": "Huangpu",
+			"address": "No.135 Jiangying Road",
+			"lat": 31.229366,
+			"lng": 121.468206,
+			"url": "https://www.booking.com/hotel/cn/shang-hai-zi-yu-ju-ren-min-yan-chang-dian-shanghai12.html",
+			"score": 8.8,
+			"count": 300,
+			"stars": 2,
+			"total": 116.99,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Huangpu, rated 8.8 from 300 Booking.com reviews."
+		}
+	},
+	"sihanoukville-cambodia": {
+		"Luxury": {
+			"id": 1569085,
+			"name": "Queenco Entertainment Resort",
+			"area": "Victory Beach",
+			"address": "Victory Beach, Mohavithey Krong",
+			"lat": 10.637393,
+			"lng": 103.501208,
+			"url": "https://www.booking.com/hotel/kh/queenco-amp-casino-tower.html",
+			"score": 9.4,
+			"count": 193,
+			"stars": 5,
+			"total": 478.26,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Victory Beach, rated 9.4 from 193 Booking.com reviews."
+		}
+	},
+	"spokane-united-states": {
+		"Luxury": {
+			"id": 1240331,
+			"name": "The Davenport Grand, Autograph Collection",
+			"area": "Downtown Spokane",
+			"address": "333 West Spokane Falls Boulevard",
+			"lat": 47.659977,
+			"lng": -117.416864,
+			"url": "https://www.booking.com/hotel/us/the-davenport-grand-autograph-collection.html",
+			"score": 8.7,
+			"count": 553,
+			"stars": 4,
+			"total": 316.95,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Spokane rated 8.7/10 from 553 Booking.com reviews."
+		}
+	},
+	"taipei-taiwan": {
+		"Best Value": {
+			"id": 73014,
+			"name": "les suites taipei ching cheng",
+			"area": "Songshan",
+			"address": "No.12, Chingcheng Street",
+			"lat": 25.052679,
+			"lng": 121.545112,
+			"url": "https://www.booking.com/hotel/tw/lessuitescc.html",
+			"score": 9.0,
+			"count": 477,
+			"stars": 4,
+			"total": 399.93,
+			"checked": "27 Oct 2026",
+			"reason": "Central Songshan hotel rated 9.0 from 477 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"tilburg-netherlands": {
+		"Budget": {
+			"id": 10330,
+			"name": "ibis Tilburg",
+			"area": "Tilburg",
+			"address": "Dr. Hub van Doorneweg 105",
+			"lat": 51.541731,
+			"lng": 5.050849,
+			"url": "https://www.booking.com/hotel/nl/ibistilburg.html",
+			"score": 8.0,
+			"count": 493,
+			"stars": 3,
+			"total": 207.84,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Tilburg, rated 8.0 from 493 Booking.com reviews."
+		}
+	},
+	"toronto-canada": {
+		"Budget": {
+			"id": 13541170,
+			"name": "La TUMU",
+			"area": "Church-Wellesley Village",
+			"address": "29 Wellesley Street East",
+			"lat": 43.664923,
+			"lng": -79.382908,
+			"url": "https://www.booking.com/hotel/ca/la-tumu.html",
+			"score": 7.3,
+			"count": 103,
+			"stars": 3,
+			"total": 349.77,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Church-Wellesley Village, rated 7.3 from 103 Booking.com reviews."
+		}
+	},
+	"tucson-united-states": {
+		"Luxury": {
+			"id": 9027265,
+			"name": "The Leo Kent Hotel, Tucson, a Tribute Portfolio Hotel",
+			"area": "Downtown Tucson",
+			"address": "1 South Church Avenue",
+			"lat": 32.22149,
+			"lng": -110.9719,
+			"url": "https://www.booking.com/hotel/us/the-leo-kent-tucson-a-tribute-portfolio.html",
+			"score": 8.9,
+			"count": 129,
+			"stars": 4,
+			"total": 525.95,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tucson rated 8.9/10 from 129 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 48131,
+			"name": "Royal Sun Hotel & Suites",
+			"area": "Downtown Tucson",
+			"address": "1015 North Stone Avenue",
+			"lat": 32.234894,
+			"lng": -110.972019,
+			"url": "https://www.booking.com/hotel/us/best-western-royal-sun.html",
+			"score": 7.3,
+			"count": 407,
+			"stars": 3,
+			"total": 164.63,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Tucson, rated 7.3 from 407 Booking.com reviews."
+		}
+	},
+	"tulum-mexico": {
+		"Luxury": {
+			"id": 2003149,
+			"name": "Una Vida",
+			"area": "Tulum Centre",
+			"address": "Avenida Tulum",
+			"lat": 20.211295,
+			"lng": -87.47483,
+			"url": "https://www.booking.com/hotel/mx/una-vida.html",
+			"score": 9.1,
+			"count": 337,
+			"stars": 5,
+			"total": 365.89,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Tulum Centre, rated 9.1 from 337 Booking.com reviews."
+		}
+	},
+	"ulaanbaatar-mongolia": {
+		"Luxury": {
+			"id": 1316987,
+			"name": "Shangri-La Ulaanbaatar",
+			"area": "Sukhbaatar",
+			"address": "19 Olympic Street, Sukhbaatar District",
+			"lat": 47.913189,
+			"lng": 106.920396,
+			"url": "https://www.booking.com/hotel/mn/shangri-la-ulaanbaatar.html",
+			"score": 8.4,
+			"count": 118,
+			"stars": 5,
+			"total": 610.2,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Sukhbaatar, rated 8.4 from 118 Booking.com reviews."
+		}
+	},
+	"valdosta-united-states": {
+		"Budget": {
+			"id": 296306,
+			"name": "Holiday Inn Valdosta Conference Center by IHG",
+			"area": "Valdosta",
+			"address": "1805 West Hill Avenue",
+			"lat": 30.819673,
+			"lng": -83.311032,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-valdosta-hotels.html",
+			"score": 8.6,
+			"count": 238,
+			"stars": 3,
+			"total": 223.97,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Valdosta, rated 8.6 from 238 Booking.com reviews."
+		}
+	},
+	"winnipeg-canada": {
+		"Luxury": {
+			"id": 912926,
+			"name": "Inn at the Forks",
+			"area": "The Forks",
+			"address": "75 Forks Market Road",
+			"lat": 49.887908,
+			"lng": -97.129524,
+			"url": "https://www.booking.com/hotel/ca/inn-at-the-forks-winnipeg.html",
+			"score": 8.6,
+			"count": 210,
+			"stars": 4,
+			"total": 381.73,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in The Forks rated 8.6/10 from 210 Booking.com reviews."
+		}
+	},
+	"phoenix-united-states": {
+		"Budget": {
+			"id": 59801,
+			"name": "Best Western Downtown Phoenix",
+			"area": "Downtown Phoenix",
+			"address": "620 N 6th St",
+			"lat": 33.454982,
+			"lng": -112.066538,
+			"url": "https://www.booking.com/hotel/us/best-western-downtown-phoenix.html",
+			"score": 7.9,
+			"count": 379,
+			"stars": 3,
+			"total": 413.07,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Phoenix, rated 7.9 from 379 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 3206906,
+			"name": "Hampton Inn & Suites Phoenix Downtown",
+			"area": "Downtown Phoenix",
+			"address": "77 E Polk St",
+			"lat": 33.45213,
+			"lng": -112.072922,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-phoenix-downtown.html",
+			"score": 8.8,
+			"count": 766,
+			"stars": 3,
+			"total": 482.06,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Phoenix hotel rated 8.8 from 766 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"incheon-south-korea": {
+		"Best Value": {
+			"id": 1174077,
+			"name": "Holiday Inn Incheon Songdo by IHG",
+			"area": "Songdo",
+			"address": "251 Incheon Tower-daero, Yeonsu-gu",
+			"lat": 37.392922,
+			"lng": 126.632631,
+			"url": "https://www.booking.com/hotel/kr/holiday-inn-incheon-songdo.html",
+			"score": 8.7,
+			"count": 753,
+			"stars": 4,
+			"total": 307.91,
+			"checked": "27 Oct 2026",
+			"reason": "Central Songdo hotel rated 8.7 from 753 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"akron-united-states": {
+		"Best Value": {
+			"id": 1532200,
+			"name": "Courtyard by Marriott Akron Downtown",
+			"area": "Downtown Akron",
+			"address": "41 Furnace Street",
+			"lat": 41.0885,
+			"lng": -81.515,
+			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-akron-downtown.html",
+			"score": 8.1,
+			"count": 154,
+			"stars": 3,
+			"total": 392.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Akron hotel rated 8.1 from 154 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"boise-united-states": {
+		"Budget": {
+			"id": 185179,
+			"name": "Hampton Inn & Suites Boise-Downtown",
+			"area": "Downtown Boise",
+			"address": "495 South Capitol Boulevard",
+			"lat": 43.612172,
+			"lng": -116.205319,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-boise-downtown.html",
+			"score": 8.8,
+			"count": 465,
+			"stars": 3,
+			"total": 473.33,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Boise, rated 8.8 from 465 Booking.com reviews."
+		}
+	},
+	"des-moines-united-states": {
+		"Budget": {
+			"id": 1045780,
+			"name": "Hampton Inn & Suites Des Moines Downtown",
+			"area": "Downtown Des Moines",
+			"address": "120 South West Water Street",
+			"lat": 41.584195,
+			"lng": -93.617541,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-amp-suites-des-moines-downtown.html",
+			"score": 8.6,
+			"count": 279,
+			"stars": 3,
+			"total": 211.98,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Des Moines, rated 8.6 from 279 Booking.com reviews."
+		}
+	},
+	"houston-united-states": {
+		"Budget": {
+			"id": 512722,
+			"name": "Best Western Plus Downtown Inn & Suites",
+			"area": "Downtown Houston",
+			"address": "915 W Dallas Street",
+			"lat": 29.757684,
+			"lng": -95.377231,
+			"url": "https://www.booking.com/hotel/us/best-western-plus-downtown-inn-suites.html",
+			"score": 8.5,
+			"count": 902,
+			"stars": 3,
+			"total": 243.36,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Houston, rated 8.5 from 902 Booking.com reviews."
+		}
+	},
+	"miami-unitedstates": {
+		"Best Value": {
+			"id": 262683,
+			"name": "SpringHill Suites Miami Downtown/Medical Center",
+			"area": "Health District",
+			"address": "1311 Northwest 10th Avenue",
+			"lat": 25.786628,
+			"lng": -80.210453,
+			"url": "https://www.booking.com/hotel/us/springhill-suites-miami-arts-health-district.html",
+			"score": 7.1,
+			"count": 417,
+			"stars": 3,
+			"total": 363.12,
+			"checked": "27 Oct 2026",
+			"reason": "Central Health District hotel rated 7.1 from 417 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"tampa-united-states": {
+		"Best Value": {
+			"id": 4637640,
+			"name": "Hampton Inn Tampa Downtown Channel District",
+			"area": "Channel District",
+			"address": "1155 East Kennedy Boulevard",
+			"lat": 27.950163,
+			"lng": -82.44849,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tampa-downtown-channel-district-fl.html",
+			"score": 8.8,
+			"count": 1261,
+			"stars": 3,
+			"total": 592.83,
+			"checked": "27 Oct 2026",
+			"reason": "Central Channel District hotel rated 8.8 from 1,261 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"luton-unitedkingdom": {
+		"Best Value": {
+			"id": 2701360,
+			"name": "Linton Hotel Luton",
+			"area": "Luton",
+			"address": "136 Tennyson Road",
+			"lat": 51.867315,
+			"lng": -0.417531,
+			"url": "https://www.booking.com/hotel/gb/linton-luton.html",
+			"score": 7.2,
+			"count": 1377,
+			"stars": 3,
+			"total": 185.08,
+			"checked": "27 Oct 2026",
+			"reason": "Central Luton hotel rated 7.2 from 1,377 Booking.com reviews: good value close to the sights."
+		}
+	}
+};
+for (const [cid, v] of Object.entries(overrides_central_2710)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
+/* 27 Oct 2026 (round 2): airport-free and central replacements */
+var overrides_central_2710b = {
+	"crawley-united-kingdom": {
+		"Best Value": {
+			"id": 2055255,
+			"name": "The Maple Manor Hotel",
+			"area": "Ifield, Crawley",
+			"address": "Charlwood Road",
+			"lat": 51.143092,
+			"lng": -0.202582,
+			"url": "https://www.booking.com/hotel/gb/the-maple-manor.html",
+			"score": 8.2,
+			"count": 1449,
+			"stars": 4,
+			"total": 243.12,
+			"checked": "27 Oct 2026",
+			"reason": "Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 33888,
+			"name": "Alexander House Hotel & Utopia Spa",
+			"area": "Turners Hill",
+			"address": "East Street, Turners Hill",
+			"lat": 51.107166,
+			"lng": -0.06889,
+			"url": "https://www.booking.com/hotel/gb/alexander-house-and-utopia-spa.html",
+			"score": 7.8,
+			"count": 470,
+			"stars": 5,
+			"total": 568.39,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 33977,
+			"name": "Reigate Manor Hotel",
+			"area": "Reigate",
+			"address": "Reigate Hill",
+			"lat": 51.249812,
+			"lng": -0.202716,
+			"url": "https://www.booking.com/hotel/gb/best-western-reigate-manor.html",
+			"score": 7.7,
+			"count": 950,
+			"stars": 3,
+			"total": 238.82,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews."
+		}
+	},
+	"new-delhi-india": {
+		"Budget": {
+			"id": 546375,
+			"name": "Hotel Stay Well Dx",
+			"area": "Paharganj",
+			"address": "3499-3500, Desh Bandhu Gupta Road, Pahar Ganj",
+			"lat": 28.644162,
+			"lng": 77.215654,
+			"url": "https://www.booking.com/hotel/in/stay-well-dx.html",
+			"score": 8.8,
+			"count": 622,
+			"stars": 3,
+			"total": 42.74,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews."
+		}
+	},
+	"columbus-united-states": {
+		"Budget": {
+			"id": 184150,
+			"name": "Holiday Inn Columbus Dwtn-Capitol Square by IHG",
+			"area": "Downtown Columbus",
+			"address": "175 East Town Street",
+			"lat": 39.959098,
+			"lng": -82.994806,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-columbus-downtown-capital-square.html",
+			"score": 7.7,
+			"count": 585,
+			"stars": 3,
+			"total": 262.86,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews."
+		}
+	},
+	"accra-ghana": {
+		"Budget": {
+			"id": 16678074,
+			"name": "FLORIA - Sky Suites",
+			"area": "Labone",
+			"address": "Palace Mall",
+			"lat": 5.571351,
+			"lng": -0.167309,
+			"url": "https://www.booking.com/hotel/gh/floria-sky-suites.html",
+			"score": 8.5,
+			"count": 27,
+			"stars": 3,
+			"total": 144.48,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews."
+		}
+	},
+	"salt-lake-city-united-states": {
+		"Budget": {
+			"id": 283488,
+			"name": "SureStay by Best Western Salt Lake City Downtown",
+			"area": "Downtown Salt Lake City",
+			"address": "1009 S Main St",
+			"lat": 40.747105,
+			"lng": -111.890764,
+			"url": "https://www.booking.com/hotel/us/americas-best-inn-and-suites-salt-lake-city.html",
+			"score": 7.0,
+			"count": 502,
+			"stars": 2,
+			"total": 193.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 907790,
+			"name": "The Anniversary Inn - South Temple",
+			"area": "South Temple",
+			"address": "678 East South Temple",
+			"lat": 40.768961,
+			"lng": -111.871393,
+			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-salt-lake-city.html",
+			"score": 7.0,
+			"count": 121,
+			"stars": 4,
+			"total": 451.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"ta-if-saudi-arabia": {
+		"Best Value": {
+			"id": 312215,
+			"name": "Awaliv Hotel",
+			"area": "Shobra",
+			"address": "Abu Baker As Siddiq Street, Shobra",
+			"lat": 21.286953,
+			"lng": 40.41927,
+			"url": "https://www.booking.com/hotel/sa/awaliv-international.html",
+			"score": 9.0,
+			"count": 992,
+			"stars": 4,
+			"total": 212.61,
+			"checked": "27 Oct 2026",
+			"reason": "Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 9774303,
+			"name": "Le Reve Hotel Taif",
+			"area": "Shihar, Taif",
+			"address": "Shihar Road",
+			"lat": 21.248335,
+			"lng": 40.414011,
+			"url": "https://www.booking.com/hotel/sa/le-reve.html",
+			"score": 9.9,
+			"count": 1223,
+			"stars": 4,
+			"total": 310.31,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews."
+		}
+	},
+	"incheon-south-korea": {
+		"Budget": {
+			"id": 2914669,
+			"name": "Toyoko Inn Incheon Bupyeong",
+			"area": "Bupyeong-gu",
+			"address": "10, Gwangjang-ro, Bupyeong-gu",
+			"lat": 37.490371,
+			"lng": 126.722171,
+			"url": "https://www.booking.com/hotel/kr/toyoko-inn-incheon-bupyeong.html",
+			"score": 8.4,
+			"count": 2091,
+			"stars": 3,
+			"total": 114.46,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Bupyeong-gu, rated 8.4 from 2,091 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 466288,
+			"name": "Sheraton Grand Incheon Hotel",
+			"area": "Songdo",
+			"address": "153, Convensia-daero, Yeonsu-gu",
+			"lat": 37.390403,
+			"lng": 126.645595,
+			"url": "https://www.booking.com/hotel/kr/sheraton-incheon.html",
+			"score": 8.6,
+			"count": 366,
+			"stars": 5,
+			"total": 474.5,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Songdo, rated 8.6 from 366 Booking.com reviews."
+		}
+	},
+	"windsor-unitedkingdom": {
+		"Budget": {
+			"id": 6685415,
+			"name": "Goswell House Hotel central Windsor",
+			"area": "Windsor City Centre",
+			"address": "134 Peascod Street",
+			"lat": 51.482494,
+			"lng": -0.60773,
+			"url": "https://www.booking.com/hotel/gb/goswell-house.html",
+			"score": 8.6,
+			"count": 476,
+			"stars": 3,
+			"total": 297.98,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Windsor City Centre, rated 8.6 from 476 Booking.com reviews."
+		}
+	},
+	"sanford-united-states": {
+		"Luxury": {
+			"id": 252898,
+			"name": "The Westin Lake Mary, Orlando North",
+			"area": "Lake Mary",
+			"address": "2974 International Parkway",
+			"lat": 28.788446,
+			"lng": -81.358851,
+			"url": "https://www.booking.com/hotel/us/westin-lake-mary.html",
+			"score": 8.1,
+			"count": 184,
+			"stars": 4,
+			"total": 364.07,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews."
+		}
+	},
+	"slough-unitedkingdom": {
+		"Budget": {
+			"id": 200701,
+			"name": "Copthorne Hotel Slough-Windsor",
+			"area": "Slough",
+			"address": "Cippenham Lane",
+			"lat": 51.508937,
+			"lng": -0.614256,
+			"url": "https://www.booking.com/hotel/gb/copthornewindsor.html",
+			"score": 7.9,
+			"count": 3247,
+			"stars": 4,
+			"total": 161.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Slough, rated 7.9 from 3,247 Booking.com reviews."
+		}
+	},
+	"cedar-rapids-united-states": {
+		"Budget": {
+			"id": 42252,
+			"name": "Hampton Inn Cedar Rapids",
+			"area": "Southwest Cedar Rapids",
+			"address": "3265 6th Street Southwest",
+			"lat": 41.944801,
+			"lng": -91.675557,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-cedar-rapids.html",
+			"score": 7.7,
+			"count": 81,
+			"stars": 3,
+			"total": 438.88,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Southwest Cedar Rapids, rated 7.7 from 81 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 49438,
+			"name": "Hampton Inn & Suites Cedar Rapids",
+			"area": "Northeast Cedar Rapids",
+			"address": "1130 Park Place North East",
+			"lat": 42.030779,
+			"lng": -91.653496,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cedar-rapids.html",
+			"score": 8.2,
+			"count": 100,
+			"stars": 3,
+			"total": 497.29,
+			"checked": "27 Oct 2026",
+			"reason": "Central Northeast Cedar Rapids hotel rated 8.2 from 100 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"luton-unitedkingdom": {
+		"Budget": {
+			"id": 220889,
+			"name": "Thistle Express London Luton",
+			"area": "Luton Town Centre",
+			"address": "The Mall",
+			"lat": 51.879432,
+			"lng": -0.414616,
+			"url": "https://www.booking.com/hotel/gb/thistleluton.html",
+			"score": 7.8,
+			"count": 7010,
+			"stars": 3,
+			"total": 161.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 8712797,
+			"name": "Spark by Hilton Luton",
+			"area": "Luton Town Centre",
+			"address": "2/4 Mill Street",
+			"lat": 51.88262,
+			"lng": -0.417606,
+			"url": "https://www.booking.com/hotel/gb/sadie-best-western-at-luton.html",
+			"score": 8.4,
+			"count": 1747,
+			"stars": 4,
+			"total": 217.29,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews."
+		}
+	},
+	"namur-belgium": {
+		"Luxury": {
+			"id": 307315,
+			"name": "Les Tanneurs",
+			"area": "Namur Old Town",
+			"address": "Rue des Tanneries 13",
+			"lat": 50.464006,
+			"lng": 4.871782,
+			"url": "https://www.booking.com/hotel/be/les-tanneurs.html",
+			"score": 8.6,
+			"count": 2007,
+			"stars": 4,
+			"total": 278.9,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Namur Old Town rated 8.6/10 from 2,007 Booking.com reviews."
+		}
+	},
+	"cochabamba-bolivia": {
+		"Best Value": {
+			"id": 11325426,
+			"name": "Hotel Aranjuez Cochabamba",
+			"area": "Cochabamba",
+			"address": "563 Buenos Aires",
+			"lat": -17.374008,
+			"lng": -66.154396,
+			"url": "https://www.booking.com/hotel/bo/aranjuez-cochabamba.html",
+			"score": 8.4,
+			"count": 31,
+			"stars": 4,
+			"total": 161.03,
+			"checked": "27 Oct 2026",
+			"reason": "Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"salvador-brazil": {
+		"Luxury": {
+			"id": 1940259,
+			"name": "Fera Palace Hotel",
+			"area": "Historic Centre Salvador",
+			"address": "Rua Chile 20 - Centro Historico",
+			"lat": -12.975692,
+			"lng": -38.513394,
+			"url": "https://www.booking.com/hotel/br/fera-palace.html",
+			"score": 9.0,
+			"count": 659,
+			"stars": 5,
+			"total": 735.55,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Historic Centre Salvador, rated 9.0 from 659 Booking.com reviews."
+		}
+	},
+	"hamilton-canada": {
+		"Budget": {
+			"id": 410506,
+			"name": "Staybridge Suites Hamilton - Downtown by IHG",
+			"area": "Downtown Hamilton",
+			"address": "20 Caroline Street South",
+			"lat": 43.257911,
+			"lng": -79.876171,
+			"url": "https://www.booking.com/hotel/ca/staybridge-suites-hamilton-downtown.html",
+			"score": 8.0,
+			"count": 491,
+			"stars": 3,
+			"total": 236.82,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews."
+		}
+	},
+	"shenzhen-china": {
+		"Budget": {
+			"id": 12465143,
+			"name": "Shenzhen Jiangsu Hotel",
+			"area": "Futian",
+			"address": "2066 Caitian South Road, Futian",
+			"lat": 22.54446,
+			"lng": 114.068997,
+			"url": "https://www.booking.com/hotel/cn/shen-zhen-jiang-su-bin-guan.html",
+			"score": 8.5,
+			"count": 40,
+			"stars": 3,
+			"total": 125.58,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews."
+		}
+	},
+	"osijek-croatia": {
+		"Luxury": {
+			"id": 20789,
+			"name": "Hotel Waldinger",
+			"area": "Osijek Centre",
+			"address": "Zupanijska 8",
+			"lat": 45.558718,
+			"lng": 18.675948,
+			"url": "https://www.booking.com/hotel/hr/waldinger.html",
+			"score": 9.2,
+			"count": 398,
+			"stars": 4,
+			"total": 332.8,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews."
+		}
+	},
+	"hurghada-egypt": {
+		"Luxury": {
+			"id": 379692,
+			"name": "Sea Star Beau Rivage Hotel",
+			"area": "Dahar",
+			"address": "Al Hilal - Military Hospital Street",
+			"lat": 27.265616,
+			"lng": 33.804409,
+			"url": "https://www.booking.com/hotel/eg/sea-star-beau-rivage.html",
+			"score": 8.0,
+			"count": 230,
+			"stars": 5,
+			"total": 258.11,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews."
+		}
+	},
+	"narbonne-france": {
+		"Luxury": {
+			"id": 3679500,
+			"name": "Hôtel Le C - Boutique Hôtel",
+			"area": "Narbonne Centre",
+			"address": "15 Rue de Suffren",
+			"lat": 43.184197,
+			"lng": 3.010169,
+			"url": "https://www.booking.com/hotel/fr/le-c-boutique-narbonne.html",
+			"score": 8.8,
+			"count": 607,
+			"stars": 4,
+			"total": 263.24,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews."
+		}
+	},
+	"erfurt-germany": {
+		"Best Value": {
+			"id": 61323,
+			"name": "Hotel Alma Am Anger",
+			"area": "Erfurt Old Town",
+			"address": "Anger 50/51",
+			"lat": 50.975009,
+			"lng": 11.031769,
+			"url": "https://www.booking.com/hotel/de/erfuzumnordhotel.html",
+			"score": 8.5,
+			"count": 3211,
+			"stars": 4,
+			"total": 306.65,
+			"checked": "27 Oct 2026",
+			"reason": "Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"essen-germany": {
+		"Luxury": {
+			"id": 3256579,
+			"name": "NH Essen",
+			"area": "Stadtkern",
+			"address": "Am Porscheplatz 9",
+			"lat": 51.458189,
+			"lng": 7.014051,
+			"url": "https://www.booking.com/hotel/de/nh-essen-essen12.html",
+			"score": 8.6,
+			"count": 3015,
+			"stars": 4,
+			"total": 291.9,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews."
+		}
+	},
+	"chandigarh-india": {
+		"Budget": {
+			"id": 804216,
+			"name": "Hotel Icon",
+			"area": "Sector 8",
+			"address": "SCO 58-61, Sector 8C",
+			"lat": 30.734113,
+			"lng": 76.797215,
+			"url": "https://www.booking.com/hotel/in/icon.html",
+			"score": 7.8,
+			"count": 250,
+			"stars": 3,
+			"total": 110.13,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews."
+		}
+	},
+	"banyuwangi-indonesia": {
+		"Budget": {
+			"id": 1310599,
+			"name": "Hotel Blambangan",
+			"area": "Banyuwangi Centre",
+			"address": "Jl. Dr. Wahidin Sudirohusodo No. 4, Kepatihan",
+			"lat": -8.21323,
+			"lng": 114.375926,
+			"url": "https://www.booking.com/hotel/id/blambangan-banyuwangi.html",
+			"score": 7.7,
+			"count": 351,
+			"stars": 3,
+			"total": 51.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Banyuwangi Centre, rated 7.7 from 351 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1356633,
+			"name": "Hotel Santika Banyuwangi",
+			"area": "Banyuwangi",
+			"address": "Jl. Letjend S. Parman No. 15",
+			"lat": -8.244002,
+			"lng": 114.352073,
+			"url": "https://www.booking.com/hotel/id/santika-banyuwangi.html",
+			"score": 8.3,
+			"count": 157,
+			"stars": 3,
+			"total": 64.16,
+			"checked": "27 Oct 2026",
+			"reason": "Central Banyuwangi hotel rated 8.3 from 157 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 3149679,
+			"name": "Aston Banyuwangi Hotel and Conference Center",
+			"area": "Giri",
+			"address": "Jalan Brawijaya, Mojopanggung, Giri",
+			"lat": -8.219769,
+			"lng": 114.352788,
+			"url": "https://www.booking.com/hotel/id/aston-banyuwangi-city.html",
+			"score": 8.0,
+			"count": 201,
+			"stars": 4,
+			"total": 119.99,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Giri rated 8.0/10 from 201 Booking.com reviews."
+		}
+	},
+	"bogor-indonesia": {
+		"Luxury": {
+			"id": 6810833,
+			"name": "Swiss-Belinn Bogor",
+			"area": "Bogor Timur",
+			"address": "Jalan Pajajaran Indah V",
+			"lat": -6.611101,
+			"lng": 106.814593,
+			"url": "https://www.booking.com/hotel/id/swiss-belinn-bogor.html",
+			"score": 8.4,
+			"count": 106,
+			"stars": 4,
+			"total": 94.83,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews."
+		}
+	},
+	"ancona-italy": {
+		"Best Value": {
+			"id": 84473,
+			"name": "Grand Hotel Passetto",
+			"area": "Passetto",
+			"address": "Via Thaon De Revel 1",
+			"lat": 43.613899,
+			"lng": 13.534616,
+			"url": "https://www.booking.com/hotel/it/grand-passetto.html",
+			"score": 8.8,
+			"count": 967,
+			"stars": 4,
+			"total": 316.0,
+			"checked": "27 Oct 2026",
+			"reason": "Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"benevento-italy": {
+		"Budget": {
+			"id": 4797664,
+			"name": "Albergo Della Corte",
+			"area": "Benevento Centre",
+			"address": "Vico Papa Vittorio III 7",
+			"lat": 41.131624,
+			"lng": 14.781024,
+			"url": "https://www.booking.com/hotel/it/albergo-della-corte-benevento1.html",
+			"score": 7.9,
+			"count": 489,
+			"stars": 3,
+			"total": 170.0,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews."
+		}
+	},
+	"lamezia-terme-italy": {
+		"Best Value": {
+			"id": 12494,
+			"name": "Il Cantagalli",
+			"area": "Sambiase",
+			"address": "Via San Rocco 17/19",
+			"lat": 38.96641,
+			"lng": 16.280706,
+			"url": "https://www.booking.com/hotel/it/il-cantagalli.html",
+			"score": 8.1,
+			"count": 309,
+			"stars": 4,
+			"total": 180.0,
+			"checked": "27 Oct 2026",
+			"reason": "Central Sambiase hotel rated 8.1 from 309 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 83506,
+			"name": "Savant Hotel",
+			"area": "Nicastro",
+			"address": "Via Capitano Manfredi",
+			"lat": 38.972497,
+			"lng": 16.315784,
+			"url": "https://www.booking.com/hotel/it/savant.html",
+			"score": 8.0,
+			"count": 133,
+			"stars": 4,
+			"total": 220.0,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nicastro rated 8.0/10 from 133 Booking.com reviews."
+		}
+	},
+	"latina-italy": {
+		"Budget": {
+			"id": 567307,
+			"name": "Garden Hotel",
+			"area": "Latina",
+			"address": "Via Del Lido 129",
+			"lat": 41.448645,
+			"lng": 12.890028,
+			"url": "https://www.booking.com/hotel/it/garden-latina1.html",
+			"score": 7.2,
+			"count": 501,
+			"stars": 3,
+			"total": 196.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews."
+		}
+	},
+	"taranto-italy": {
+		"Luxury": {
+			"id": 332045,
+			"name": "Hotel Europa",
+			"area": "Taranto Old Town",
+			"address": "Via Roma 2",
+			"lat": 40.47474,
+			"lng": 17.236865,
+			"url": "https://www.booking.com/hotel/it/europa-taranto.html",
+			"score": 9.1,
+			"count": 1547,
+			"stars": 4,
+			"total": 246.0,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews."
+		}
+	},
+	"abidjan-ivory-coast": {
+		"Luxury": {
+			"id": 6958197,
+			"name": "Movenpick Hotel Abidjan",
+			"area": "Le Plateau",
+			"address": "Avenue Terrasson De Fougeres, Le Plateau",
+			"lat": 5.324071,
+			"lng": -4.018514,
+			"url": "https://www.booking.com/hotel/ci/movenpick-abidjan.html",
+			"score": 7.5,
+			"count": 123,
+			"stars": 5,
+			"total": 402.62,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Le Plateau, rated 7.5 from 123 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 1189478,
+			"name": "Hôtel Ivotel Abidjan",
+			"area": "Le Plateau",
+			"address": "Le Plateau",
+			"lat": 5.323134,
+			"lng": -4.018604,
+			"url": "https://www.booking.com/hotel/ci/ivotel-abidjan.html",
+			"score": 8.2,
+			"count": 481,
+			"stars": 3,
+			"total": 246.97,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Le Plateau, rated 8.2 from 481 Booking.com reviews."
+		}
+	},
+	"almaty-kazakhstan": {
+		"Luxury": {
+			"id": 299191,
+			"name": "Rahat Palace Hotel",
+			"area": "Bostandyk",
+			"address": "Akademik Satpaev Avenue 29/6",
+			"lat": 43.237153,
+			"lng": 76.916898,
+			"url": "https://www.booking.com/hotel/kz/rahat-palace.html",
+			"score": 8.9,
+			"count": 911,
+			"stars": 5,
+			"total": 469.99,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Bostandyk, rated 8.9 from 911 Booking.com reviews."
+		}
+	},
+	"mombasa-kenya": {
+		"Luxury": {
+			"id": 1137024,
+			"name": "Bahari Beach Hotel",
+			"area": "Nyali",
+			"address": "Mt Kenya Road, Nyali Beach",
+			"lat": -4.035322,
+			"lng": 39.71813,
+			"url": "https://www.booking.com/hotel/ke/bahari-beach.html",
+			"score": 8.4,
+			"count": 466,
+			"stars": 4,
+			"total": 501.43,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews."
+		}
+	},
+	"cancun-mexico": {
+		"Best Value": {
+			"id": 78143,
+			"name": "Adhara Hacienda Cancun",
+			"area": "Downtown Cancun",
+			"address": "Avenida Nader 1",
+			"lat": 21.168385,
+			"lng": -86.823943,
+			"url": "https://www.booking.com/hotel/mx/radisson-hacienda-cancun.html",
+			"score": 8.6,
+			"count": 4135,
+			"stars": 4,
+			"total": 190.78,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Cancun hotel rated 8.6 from 4,135 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 185872,
+			"name": "Presidente InterContinental Cancun Resort by IHG",
+			"area": "Zona Hotelera (north)",
+			"address": "Boulevard Kukulkan Km 7.5",
+			"lat": 21.135005,
+			"lng": -86.754259,
+			"url": "https://www.booking.com/hotel/mx/presidente-intercontinental-cancun-resort.html",
+			"score": 8.8,
+			"count": 3407,
+			"stars": 5,
+			"total": 463.13,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Zona Hotelera (north), rated 8.8 from 3,407 Booking.com reviews."
+		}
+	},
+	"swakopmund-namibia": {
+		"Luxury": {
+			"id": 628048,
+			"name": "Hansa Hotel Swakopmund",
+			"area": "Swakopmund Centre",
+			"address": "3 Hendrik Witbooi Street",
+			"lat": -22.677085,
+			"lng": 14.5262,
+			"url": "https://www.booking.com/hotel/na/hansa-swakopmund.html",
+			"score": 9.0,
+			"count": 472,
+			"stars": 4,
+			"total": 322.72,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews."
+		}
+	},
+	"lagos-nigeria": {
+		"Budget": {
+			"id": 12149479,
+			"name": "Presken Kuramo Waters, Victoria Island",
+			"area": "Victoria Island",
+			"address": "322a Akin Ogunlewe Road",
+			"lat": 6.425768,
+			"lng": 3.435874,
+			"url": "https://www.booking.com/hotel/ng/presken-kuramo-waters-lagos.html",
+			"score": 7.8,
+			"count": 245,
+			"stars": 3,
+			"total": 125.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews."
+		}
+	},
+	"krynica-zdroj-poland": {
+		"Budget": {
+			"id": 256614,
+			"name": "Hotel NAT Krynica Zdrój",
+			"area": "Krynica Zdrój Centre",
+			"address": "Ul. Pilsudskiego 24",
+			"lat": 49.425143,
+			"lng": 20.956485,
+			"url": "https://www.booking.com/hotel/pl/dwl-jagiellonka.html",
+			"score": 8.6,
+			"count": 463,
+			"stars": 3,
+			"total": 137.93,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews."
+		}
+	},
+	"braganca-portugal": {
+		"Luxury": {
+			"id": 264854,
+			"name": "Hotel Estalagem Turismo",
+			"area": "Braganca",
+			"address": "Cabeca Boa, Estrada De Turismo",
+			"lat": 41.788115,
+			"lng": -6.755613,
+			"url": "https://www.booking.com/hotel/pt/estalagem-turismo.html",
+			"score": 8.1,
+			"count": 1341,
+			"stars": 4,
+			"total": 140.0,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews."
+		}
+	},
+	"jeddah-saudiarabia": {
+		"Budget": {
+			"id": 8349726,
+			"name": "Romera Hotel",
+			"area": "Al Sharafiah",
+			"address": "Al Sharafiah",
+			"lat": 21.524118,
+			"lng": 39.18695,
+			"url": "https://www.booking.com/hotel/sa/rovotel-jeddah.html",
+			"score": 8.9,
+			"count": 955,
+			"stars": 3,
+			"total": 142.37,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Al Sharafiah, rated 8.9 from 955 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1640044,
+			"name": "Sunset Jeddah",
+			"area": "Al Rawda",
+			"address": "Prince Saud Al Faisal, Al-Rawdah",
+			"lat": 21.563761,
+			"lng": 39.169371,
+			"url": "https://www.booking.com/hotel/sa/sunset.html",
+			"score": 9.1,
+			"count": 2107,
+			"stars": 4,
+			"total": 196.65,
+			"checked": "27 Oct 2026",
+			"reason": "Central Al Rawda hotel rated 9.1 from 2,107 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"busan-southkorea": {
+		"Best Value": {
+			"id": 5129061,
+			"name": "Avani Central Busan",
+			"area": "Seomyeon",
+			"address": "133 Jeonpo-daero, Nam-gu",
+			"lat": 35.148606,
+			"lng": 129.065627,
+			"url": "https://www.booking.com/hotel/kr/avani-central-busan.html",
+			"score": 8.7,
+			"count": 888,
+			"stars": 4,
+			"total": 249.97,
+			"checked": "27 Oct 2026",
+			"reason": "Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"lleida-spain": {
+		"Luxury": {
+			"id": 90710,
+			"name": "NH Lleida Pirineos",
+			"area": "Lleida Centre",
+			"address": "Passeig de Ronda 63",
+			"lat": 41.617083,
+			"lng": 0.613266,
+			"url": "https://www.booking.com/hotel/es/nhpirineos.html",
+			"score": 8.5,
+			"count": 2644,
+			"stars": 4,
+			"total": 189.92,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews."
+		}
+	},
+	"dar-es-salaam-tanzania": {
+		"Budget": {
+			"id": 569734,
+			"name": "Tiffany Diamond Hotels Ltd - Indira Gandhi street",
+			"area": "Kisutu",
+			"address": "Indira Gandhi / Morogoro Road Junction",
+			"lat": -6.818325,
+			"lng": 39.28442,
+			"url": "https://www.booking.com/hotel/tz/tiffany-diamond.html",
+			"score": 8.1,
+			"count": 319,
+			"stars": 3,
+			"total": 169.08,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews."
+		}
+	},
+	"denizli-turkiye": {
+		"Luxury": {
+			"id": 328105,
+			"name": "North Point Hotel",
+			"area": "Denizli Centre",
+			"address": "Fevzi Cakmak Bulvari No:129",
+			"lat": 37.766049,
+			"lng": 29.100279,
+			"url": "https://www.booking.com/hotel/tr/north-point-denizli.html",
+			"score": 8.5,
+			"count": 86,
+			"stars": 4,
+			"total": 184.94,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews."
+		}
+	},
+	"trabzon-turkiye": {
+		"Best Value": {
+			"id": 1630673,
+			"name": "Funda Hotel",
+			"area": "Trabzon City Center",
+			"address": "Carsi Mah. Kazancilar Sokak No:1",
+			"lat": 41.008358,
+			"lng": 39.72488,
+			"url": "https://www.booking.com/hotel/tr/funda.html",
+			"score": 8.8,
+			"count": 1042,
+			"stars": 4,
+			"total": 136.99,
+			"checked": "27 Oct 2026",
+			"reason": "Central Trabzon City Center hotel rated 8.8 from 1,042 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"abu-dhabi-unitedarabemirates": {
+		"Best Value": {
+			"id": 1325511,
+			"name": "TRYP by Wyndham Abu Dhabi City Center",
+			"area": "Downtown Abu Dhabi",
+			"address": "Khalifah Bin Zayed The First Street",
+			"lat": 24.49565,
+			"lng": 54.366403,
+			"url": "https://www.booking.com/hotel/ae/tryp-by-wyndham-abu-dhabi.html",
+			"score": 8.2,
+			"count": 6090,
+			"stars": 4,
+			"total": 314.33,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Abu Dhabi hotel rated 8.2 from 6,090 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 72834,
+			"name": "Radisson Blu Hotel & Resort, Abu Dhabi Corniche",
+			"area": "Corniche",
+			"address": "Corniche Rd W, Al Khubeirah",
+			"lat": 24.463081,
+			"lng": 54.325437,
+			"url": "https://www.booking.com/hotel/ae/radisson-blu-hotel-and-resort-abu-dhabi-corniche.html",
+			"score": 9.1,
+			"count": 12559,
+			"stars": 5,
+			"total": 467.24,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Corniche, rated 9.1 from 12,559 Booking.com reviews."
+		}
+	},
+	"maidstone-unitedkingdom": {
+		"Budget": {
+			"id": 37351,
+			"name": "Orida Maidstone",
+			"area": "Weavering, Maidstone",
+			"address": "Bearsted Road, Weavering",
+			"lat": 51.285125,
+			"lng": 0.546114,
+			"url": "https://www.booking.com/hotel/gb/hilton-maidstone.html",
+			"score": 8.0,
+			"count": 5096,
+			"stars": 4,
+			"total": 271.89,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Weavering, Maidstone, rated 8.0 from 5,096 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 372817,
+			"name": "Miller & Carter Maidstone by Innkeeper's Collection",
+			"area": "Maidstone",
+			"address": "Sandling Road",
+			"lat": 51.279949,
+			"lng": 0.519793,
+			"url": "https://www.booking.com/hotel/gb/innkeeper-s-lodge-maidstone.html",
+			"score": 8.0,
+			"count": 1232,
+			"stars": 4,
+			"total": 334.34,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Maidstone rated 8.0/10 from 1,232 Booking.com reviews."
+		}
+	},
+	"norwich-united-kingdom": {
+		"Luxury": {
+			"id": 35715,
+			"name": "Holiday Inn Norwich, Ipswich Road by IHG",
+			"area": "Norwich",
+			"address": "Ipswich Road",
+			"lat": 52.600884,
+			"lng": 1.28098,
+			"url": "https://www.booking.com/hotel/gb/holiday-inn-norwich.html",
+			"score": 8.1,
+			"count": 1516,
+			"stars": 4,
+			"total": 339.12,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews."
+		}
+	},
+	"peterborough-unitedkingdom": {
+		"Luxury": {
+			"id": 222855,
+			"name": "The Bull Hotel; Sure Hotel Collection by Best Western",
+			"area": "Peterborough City Centre",
+			"address": "Westgate",
+			"lat": 52.574544,
+			"lng": -0.241957,
+			"url": "https://www.booking.com/hotel/gb/the-bullhotel.html",
+			"score": 8.4,
+			"count": 2405,
+			"stars": 4,
+			"total": 270.82,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews."
+		}
+	},
+	"southampton-united-kingdom": {
+		"Budget": {
+			"id": 177869,
+			"name": "The Elizabeth House Hotel",
+			"area": "Southampton",
+			"address": "42-44 The Avenue",
+			"lat": 50.919339,
+			"lng": -1.403879,
+			"url": "https://www.booking.com/hotel/gb/the-elizabeth-house.html",
+			"score": 8.1,
+			"count": 2920,
+			"stars": 3,
+			"total": 214.94,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews."
+		}
+	},
+	"doncaster-united-kingdom": {
+		"Budget": {
+			"id": 34495,
+			"name": "Regent Hotel Doncaster",
+			"area": "Doncaster Centre",
+			"address": "Regent Square",
+			"lat": 53.521831,
+			"lng": -1.127193,
+			"url": "https://www.booking.com/hotel/gb/regent-doncaster.html",
+			"score": 7.4,
+			"count": 559,
+			"stars": 3,
+			"total": 226.88,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews."
+		}
+	},
+	"akron-united-states": {
+		"Budget": {
+			"id": 1181735,
+			"name": "Hilton Garden Inn Akron",
+			"area": "East Akron",
+			"address": "1307 East Market Street",
+			"lat": 41.064962,
+			"lng": -81.480215,
+			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-akron.html",
+			"score": 8.3,
+			"count": 291,
+			"stars": 3,
+			"total": 400.92,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 5657933,
+			"name": "BLU-Tique, Akron, a Tribute Portfolio Hotel",
+			"area": "Downtown Akron",
+			"address": "1 S. Main Street",
+			"lat": 41.084908,
+			"lng": -81.516613,
+			"url": "https://www.booking.com/hotel/us/innquest-roommaster.html",
+			"score": 8.5,
+			"count": 58,
+			"stars": 4,
+			"total": 429.01,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews."
+		}
+	},
+	"atlanta-united-states": {
+		"Budget": {
+			"id": 28533,
+			"name": "Hampton Inn Atlanta-Georgia Tech-Downtown",
+			"area": "Downtown Atlanta",
+			"address": "244 North Avenue Northwest",
+			"lat": 33.770956,
+			"lng": -84.395728,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tech-downtown.html",
+			"score": 8.3,
+			"count": 432,
+			"stars": 3,
+			"total": 378.08,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews."
+		}
+	},
+	"bossier-city-united-states": {
+		"Luxury": {
+			"id": 183954,
+			"name": "Hilton Shreveport",
+			"area": "Downtown Shreveport",
+			"address": "104 Market Street, Shreveport",
+			"lat": 32.51747,
+			"lng": -93.751103,
+			"url": "https://www.booking.com/hotel/us/hilton-shreveport.html",
+			"score": 8.3,
+			"count": 284,
+			"stars": 4,
+			"total": 282.31,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews."
+		}
+	},
+	"bradenton-united-states": {
+		"Budget": {
+			"id": 192170,
+			"name": "Courtyard by Marriott Bradenton Sarasota/Riverfront",
+			"area": "Downtown Bradenton",
+			"address": "100 Riverfront Drive West",
+			"lat": 27.499283,
+			"lng": -82.565095,
+			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-bradenton-sarasota-riverfront.html",
+			"score": 8.2,
+			"count": 278,
+			"stars": 3,
+			"total": 221.69,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Bradenton, rated 8.2 from 278 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 713138,
+			"name": "Hampton Inn & Suites Bradenton",
+			"area": "Downtown Bradenton",
+			"address": "309 10th Street West",
+			"lat": 27.497067,
+			"lng": -82.571319,
+			"url": "https://www.booking.com/hotel/us/inn-amp-suites-bradenton.html",
+			"score": 8.6,
+			"count": 359,
+			"stars": 3,
+			"total": 340.78,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Bradenton hotel rated 8.6 from 359 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 11533728,
+			"name": "Palmetto Marriott Resort & Spa",
+			"area": "Palmetto riverfront",
+			"address": "600 US Hwy 41, Palmetto",
+			"lat": 27.521058,
+			"lng": -82.56048,
+			"url": "https://www.booking.com/hotel/us/palmetto-marriott-resort-spa.html",
+			"score": 8.8,
+			"count": 130,
+			"stars": 4,
+			"total": 431.3,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Palmetto riverfront rated 8.8/10 from 130 Booking.com reviews."
+		}
+	},
+	"bryan-united-states": {
+		"Best Value": {
+			"id": 334116,
+			"name": "Best Western Premier Bryan College Station",
+			"area": "Bryan",
+			"address": "1920 Austin's Colony Parkway",
+			"lat": 30.670329,
+			"lng": -96.334015,
+			"url": "https://www.booking.com/hotel/us/bryan-1920-austins-colony-parkway-texas.html",
+			"score": 8.5,
+			"count": 182,
+			"stars": 3,
+			"total": 209.48,
+			"checked": "27 Oct 2026",
+			"reason": "Central Bryan hotel rated 8.5 from 182 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 252179,
+			"name": "The LaSalle Hotel, Bryan College Station, a Tribute Portfolio Hotel",
+			"area": "Downtown Bryan",
+			"address": "120 South Main Street",
+			"lat": 30.67312,
+			"lng": -96.37381,
+			"url": "https://www.booking.com/hotel/us/lasalle-bryan-by-magnolia-hotels.html",
+			"score": 9.3,
+			"count": 29,
+			"stars": 3,
+			"total": 359.93,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Bryan rated 9.3/10 from 29 Booking.com reviews."
+		}
+	},
+	"cape-coral-united-states": {
+		"Best Value": {
+			"id": 181379,
+			"name": "Hampton Inn & Suites Cape Coral / Fort Myers",
+			"area": "Cape Coral",
+			"address": "619 South East 47th Terrace",
+			"lat": 26.563971,
+			"lng": -81.960074,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cape-coral.html",
+			"score": 7.8,
+			"count": 285,
+			"stars": 3,
+			"total": 248.43,
+			"checked": "27 Oct 2026",
+			"reason": "Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"columbia-united-states": {
+		"Budget": {
+			"id": 13206666,
+			"name": "Tru By Hilton Columbia Downtown",
+			"area": "Downtown Columbia",
+			"address": "400 Gervais Street",
+			"lat": 33.996891,
+			"lng": -81.045771,
+			"url": "https://www.booking.com/hotel/us/tru-by-hilton-columbia-downtown.html",
+			"score": 9.0,
+			"count": 281,
+			"stars": 3,
+			"total": 232.75,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews."
+		}
+	},
+	"dayton-united-states": {
+		"Best Value": {
+			"id": 263428,
+			"name": "Marriott at the University of Dayton",
+			"area": "University of Dayton",
+			"address": "1414 South Patterson Boulevard",
+			"lat": 39.737332,
+			"lng": -84.191194,
+			"url": "https://www.booking.com/hotel/us/dayton-marriott.html",
+			"score": 9.0,
+			"count": 139,
+			"stars": 3,
+			"total": 314.75,
+			"checked": "27 Oct 2026",
+			"reason": "Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"daytona-beach-united-states": {
+		"Budget": {
+			"id": 300526,
+			"name": "Hampton Inn Daytona Beach/Beachfront",
+			"area": "Daytona Beach Shores",
+			"address": "1024 North Atlantic Avenue",
+			"lat": 29.244627,
+			"lng": -81.016166,
+			"url": "https://www.booking.com/hotel/us/ocean-sands.html",
+			"score": 8.6,
+			"count": 411,
+			"stars": 3,
+			"total": 212.92,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Daytona Beach Shores, rated 8.6 from 411 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 7034376,
+			"name": "Nautilus Inn - Daytona Beach",
+			"area": "Daytona Beach oceanfront",
+			"address": "1515 South Atlantic Avenue",
+			"lat": 29.208419,
+			"lng": -80.998601,
+			"url": "https://www.booking.com/hotel/us/nautilus-inn-d.html",
+			"score": 8.6,
+			"count": 1807,
+			"stars": 4,
+			"total": 197.46,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Daytona Beach oceanfront rated 8.6/10 from 1,807 Booking.com reviews."
+		}
+	},
+	"fort-lauderdale-united-states": {
+		"Budget": {
+			"id": 1059164,
+			"name": "Victoria Park Hotel",
+			"area": "Victoria Park",
+			"address": "855 Northeast 20th Avenue",
+			"lat": 26.135904,
+			"lng": -80.119753,
+			"url": "https://www.booking.com/hotel/us/the-victoria-park.html",
+			"score": 8.6,
+			"count": 994,
+			"stars": 3,
+			"total": 289.32,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews."
+		}
+	},
+	"madison-united-states": {
+		"Budget": {
+			"id": 727789,
+			"name": "Hampton Inn & Suites Madison Downtown",
+			"area": "Downtown Madison",
+			"address": "440 West Johnson Street",
+			"lat": 43.073007,
+			"lng": -89.393299,
+			"url": "https://www.booking.com/hotel/us/johnson-street-suites-madison-downtown.html",
+			"score": 9.0,
+			"count": 477,
+			"stars": 3,
+			"total": 252.49,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Madison, rated 9.0 from 477 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 1116510,
+			"name": "The Edgewater",
+			"area": "Downtown Madison",
+			"address": "1001 Wisconsin Place",
+			"lat": 43.079214,
+			"lng": -89.390035,
+			"url": "https://www.booking.com/hotel/us/the-edgewater-madison1.html",
+			"score": 8.8,
+			"count": 148,
+			"stars": 4,
+			"total": 658.51,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Madison rated 8.8/10 from 148 Booking.com reviews."
+		}
+	},
+	"melbourne-united-states": {
+		"Budget": {
+			"id": 289964,
+			"name": "Hilton Melbourne, FL",
+			"area": "Melbourne",
+			"address": "200 Rialto Place",
+			"lat": 28.089916,
+			"lng": -80.625873,
+			"url": "https://www.booking.com/hotel/us/hilton-melbourne-rialto-place.html",
+			"score": 8.2,
+			"count": 273,
+			"stars": 3,
+			"total": 264.87,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Melbourne, rated 8.2 from 273 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 6956408,
+			"name": "Hotel Melby Downtown Melbourne Tapestry Collection By Hilton",
+			"area": "Downtown Melbourne",
+			"address": "801 E Strawbridge Ave.",
+			"lat": 28.079149,
+			"lng": -80.607313,
+			"url": "https://www.booking.com/hotel/us/melby-downtown-melbourne-tapestry-collection-by-hilton.html",
+			"score": 8.6,
+			"count": 404,
+			"stars": 4,
+			"total": 310.57,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Melbourne hotel rated 8.6 from 404 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"naples-florida-united-states": {
+		"Luxury": {
+			"id": 251000,
+			"name": "Naples Bay Resort and Marina",
+			"area": "Downtown Naples",
+			"address": "1500 5th Avenue South",
+			"lat": 26.138815,
+			"lng": -81.785397,
+			"url": "https://www.booking.com/hotel/us/naples-bay-resort.html",
+			"score": 9.1,
+			"count": 261,
+			"stars": 4,
+			"total": 1144.26,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 456800,
+			"name": "La Quinta by Wyndham Naples Downtown",
+			"area": "Downtown Naples",
+			"address": "1555 5th Avenue South",
+			"lat": 26.139511,
+			"lng": -81.783377,
+			"url": "https://www.booking.com/hotel/us/la-quinta-naples-downtown.html",
+			"score": 8.0,
+			"count": 2232,
+			"stars": 3,
+			"total": 190.66,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1067830,
+			"name": "Naples Park Central Hotel",
+			"area": "Downtown Naples",
+			"address": "40 Tamiami Trail North",
+			"lat": 26.147763,
+			"lng": -81.795395,
+			"url": "https://www.booking.com/hotel/us/naples-park-central.html",
+			"score": 8.8,
+			"count": 2388,
+			"stars": 3,
+			"total": 266.33,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"phoenix-united-states": {
+		"Luxury": {
+			"id": 358629,
+			"name": "Renaissance Phoenix Downtown Hotel",
+			"area": "Downtown Phoenix",
+			"address": "100 N 1st St",
+			"lat": 33.44936,
+			"lng": -112.07322,
+			"url": "https://www.booking.com/hotel/us/phoenix-50-eastadams.html",
+			"score": 7.6,
+			"count": 100,
+			"stars": 5,
+			"total": 993.56,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews."
+		}
+	},
+	"richmond-united-states": {
+		"Budget": {
+			"id": 298371,
+			"name": "Holiday Inn Express - Richmond Downtown by IHG",
+			"area": "Downtown Richmond",
+			"address": "201 East Cary Street",
+			"lat": 37.540739,
+			"lng": -77.443267,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-express-richmond-downtown.html",
+			"score": 8.0,
+			"count": 633,
+			"stars": 2,
+			"total": 264.23,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Richmond, rated 8.0 from 633 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 8931296,
+			"name": "Moxy Richmond Downtown",
+			"area": "Downtown Richmond",
+			"address": "501 East Franklin Street",
+			"lat": 37.541082,
+			"lng": -77.438903,
+			"url": "https://www.booking.com/hotel/us/moxy-richmond-downtown.html",
+			"score": 8.0,
+			"count": 215,
+			"stars": 3,
+			"total": 298.87,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Richmond hotel rated 8.0 from 215 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"tampa-united-states": {
+		"Budget": {
+			"id": 4637639,
+			"name": "Home2 Suites By Hilton Tampa Downtown Channel District",
+			"area": "Channel District",
+			"address": "1155 East Kennedy Boulevard",
+			"lat": 27.950163,
+			"lng": -82.44849,
+			"url": "https://www.booking.com/hotel/us/home2-suites-by-hilton-tampa-downtown-channel-district.html",
+			"score": 8.9,
+			"count": 503,
+			"stars": 3,
+			"total": 591.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 522035,
+			"name": "Hotel Flor Tampa Downtown, Tapestry Collection By Hilton",
+			"area": "Downtown Tampa",
+			"address": "905 N. Florida Ave",
+			"lat": 27.95203,
+			"lng": -82.4586,
+			"url": "https://www.booking.com/hotel/us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton.html",
+			"score": 8.1,
+			"count": 235,
+			"stars": 4,
+			"total": 671.53,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews."
+		}
+	},
+	"taos-united-states": {
+		"Best Value": {
+			"id": 301489,
+			"name": "Hilton Tapestry Collection, Hotel Don Fernando De Taos",
+			"area": "Taos",
+			"address": "1005 Paseo Del Pueblo Sur",
+			"lat": 36.385403,
+			"lng": -105.5851,
+			"url": "https://www.booking.com/hotel/us/don-fernando.html",
+			"score": 8.0,
+			"count": 243,
+			"stars": 4,
+			"total": 230.94,
+			"checked": "27 Oct 2026",
+			"reason": "Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"tucson-united-states": {
+		"Best Value": {
+			"id": 7609839,
+			"name": "Hampton Inn Tucson Downtown, Az",
+			"area": "Downtown Tucson",
+			"address": "141 South Stone Ave.",
+			"lat": 32.219838,
+			"lng": -110.970627,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tucson-downtown-az.html",
+			"score": 8.8,
+			"count": 242,
+			"stars": 3,
+			"total": 284.99,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"dalat-vietnam": {
+		"Luxury": {
+			"id": 265264,
+			"name": "Dalat Palace Heritage Hotel",
+			"area": "Da Lat Centre",
+			"address": "02 Tran Phu, Ward 3",
+			"lat": 11.93671,
+			"lng": 108.440353,
+			"url": "https://www.booking.com/hotel/vn/dalat-palace.html",
+			"score": 8.7,
+			"count": 177,
+			"stars": 5,
+			"total": 198.31,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews."
+		}
+	},
+	"pune-india": {
+		"Budget": {
+			"id": 1060462,
+			"name": "Hotel Shreyas",
+			"area": "Deccan Gymkhana",
+			"address": "1242 B, Apte Road, Deccan Gymkhana",
+			"lat": 18.518179,
+			"lng": 73.84297,
+			"url": "https://www.booking.com/hotel/in/shreyas-pune.html",
+			"score": 7.9,
+			"count": 127,
+			"stars": 3,
+			"total": 68.58,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews."
+		}
+	},
+	"chesterfield-united-kingdom": {
+		"Budget": {
+			"id": 569844,
+			"name": "Olde House, Chesterfield by Marston's Inns",
+			"area": "Chesterfield",
+			"address": "Loundsley Green Road",
+			"lat": 53.251587,
+			"lng": -1.452727,
+			"url": "https://www.booking.com/hotel/gb/olde-house-by-marstons-inns.html",
+			"score": 8.3,
+			"count": 995,
+			"stars": 3,
+			"total": 260.91,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Chesterfield, rated 8.3 from 995 Booking.com reviews."
+		}
+	}
+};
+for (const [cid, v] of Object.entries(overrides_central_2710b)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
 var PICKS;
 function allPicks() {
 	if (!PICKS) PICKS = (async () => {
@@ -11607,6 +14741,384 @@ ${top.map((s) => `- [${s.city}, ${s.country}](${SITE}/${s.slug})`).join("\n")}
 
 Please credit "Top3Hotels (top3hotels.com)" with a link when you use these picks or numbers.
 `;
+}
+var TT = {
+	en: {
+		b_t: "Best hotels under your budget",
+		b_d: "Pick a nightly budget and get the best-rated hotels in our picks that fit it, worldwide.",
+		b_h: "What does your budget buy?",
+		b_lead: "Set a nightly budget. We list the best-rated hotels from our picks in 1,295 cities that cost less, highest guest score first.",
+		max: "Max per night",
+		cat: "Type",
+		any: "Any",
+		go: "Show hotels",
+		share: "Share",
+		found: (n, m) => `${n} hotels rated 8+ under ${m} € a night`,
+		e_t: "Escape: a random city with a great hotel under your budget",
+		e_d: "Spin and get a random destination with a well-rated hotel under your budget.",
+		e_h: "Where should you escape to?",
+		e_lead: "One click, one random city, one well-rated hotel that fits your budget.",
+		spin: "Spin again",
+		see: "See the three picks",
+		s_t: "Split the hotel bill",
+		s_d: "Split a hotel stay between friends: price per person and per night.",
+		s_h: "Split the hotel bill",
+		price: "Price per night (€)",
+		nights: "Nights",
+		people: "People",
+		pp: "per person in total",
+		ppn: "per person per night",
+		a_t: "Top3Hotels Pick badge for hotels",
+		a_d: "Hotels chosen as one of the three best in their city can show the official Top3Hotels Pick badge for free.",
+		a_h: "For hotels: show your Top3Hotels Pick badge",
+		a_lead: "If your hotel is one of our three picks in its city, you can show the official badge on your website, booking pages and social channels. It is free and links back to your city page.",
+		a_how: "How to get your code",
+		a_how_p: "Open your city page, scroll to the bottom and copy the badge code for your category (Budget, Best Value or Luxury). Or paste the code below and change the city and category.",
+		a_find: "Find your city"
+	},
+	es: {
+		b_t: "Los mejores hoteles por tu presupuesto",
+		b_d: "Elige un presupuesto por noche y te mostramos los hoteles mejor valorados de nuestras elecciones que entran en él, en todo el mundo.",
+		b_h: "¿Qué te da tu presupuesto?",
+		b_lead: "Pon un presupuesto por noche. Te listamos los hoteles mejor valorados de nuestras elecciones en 1.295 ciudades que cuestan menos, primero los de mejor nota.",
+		max: "Máximo por noche",
+		cat: "Tipo",
+		any: "Cualquiera",
+		go: "Ver hoteles",
+		share: "Compartir",
+		found: (n, m) => `${n} hoteles con nota 8 o más por menos de ${m} € la noche`,
+		e_t: "Escápate: una ciudad al azar con un gran hotel dentro de tu presupuesto",
+		e_d: "Gira la ruleta y te damos un destino al azar con un hotel bien valorado por debajo de tu presupuesto.",
+		e_h: "¿A dónde te escapas?",
+		e_lead: "Un clic, una ciudad al azar y un hotel bien valorado que cabe en tu presupuesto.",
+		spin: "Otra vez",
+		see: "Ver los tres hoteles",
+		s_t: "Divide la cuenta del hotel",
+		s_d: "Reparte un hotel entre amigos: precio por persona y por noche.",
+		s_h: "Divide la cuenta del hotel",
+		price: "Precio por noche (€)",
+		nights: "Noches",
+		people: "Personas",
+		pp: "por persona en total",
+		ppn: "por persona y noche",
+		a_t: "Insignia Top3Hotels Pick para hoteles",
+		a_d: "Los hoteles elegidos entre los tres mejores de su ciudad pueden mostrar gratis la insignia oficial Top3Hotels Pick.",
+		a_h: "Para hoteles: muestra tu insignia Top3Hotels Pick",
+		a_lead: "Si tu hotel es uno de nuestros tres elegidos en su ciudad, puedes mostrar la insignia oficial en tu web, páginas de reserva y redes. Es gratis y enlaza a la página de tu ciudad.",
+		a_how: "Cómo conseguir tu código",
+		a_how_p: "Abre la página de tu ciudad, baja al final y copia el código de la insignia de tu categoría (económico, calidad-precio o lujo). O copia el código de abajo y cambia la ciudad y la categoría.",
+		a_find: "Busca tu ciudad"
+	}
+};
+var tt = (L) => TT[L] ?? TT.en;
+var CATS = [
+	["budget", "Budget"],
+	["value", "Best Value"],
+	["lux", "Luxury"]
+];
+var shareBar = (url, text, label) => `<p class="note">${esc(label)}: <a href="https://wa.me/?text=${encodeURIComponent(text + " " + url)}" rel="nofollow noopener" target="_blank">WhatsApp</a> · <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}" rel="nofollow noopener" target="_blank">X</a> · <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" rel="nofollow noopener" target="_blank">Facebook</a> · <a href="https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}" rel="nofollow noopener" target="_blank">Telegram</a></p>`;
+async function budgetPage(L, q) {
+	const t = tt(L);
+	const max = Math.max(10, Math.min(1e3, Math.round(Number(q.get("max")) || 60)));
+	const cat = CATS.find(([k]) => k === q.get("cat"))?.[1];
+	const rows = (await allPicks()).filter((r) => r.nightly && r.nightly <= max && (r.score ?? 0) >= 8 && (!cat || r.cat === cat)).sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || (b.reviews ?? 0) - (a.reviews ?? 0)).slice(0, 100);
+	const path = "/budget";
+	const url = `${SITE}${P(L, path)}?max=${max}${cat ? `&cat=${q.get("cat")}` : ""}`;
+	const form = `<form method="get" action="${P(L, path)}" class="plan" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin:14px 0 6px"><label>${t.max}<br><input name="max" type="number" min="10" max="1000" step="5" value="${max}" style="width:110px"></label><label>${t.cat}<br><select name="cat"><option value="">${t.any}</option>${CATS.map(([k]) => `<option value="${k}"${q.get("cat") === k ? " selected" : ""}>${tx(L)[k]}</option>`).join("")}</select></label><button class="dl" type="submit">${t.go}</button></form>`;
+	const body = `${CSS$1}<main class="gw"><h1>${t.b_h}</h1><p class="lead">${esc(t.b_lead)}</p>${form}<p><b>${esc(t.found(rows.length === 100 ? 100 : rows.length, max))}</b></p>${shareBar(url, t.found(rows.length, max), t.share)}
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${tx(L).city}</th><th>${tx(L).score}</th><th>${tx(L).night}</th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.name)} <small>${esc(r.cat)}${r.stars ? ` · ${r.stars}★` : ""}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString("en-GB")}</small></td><td><b>${fmt(r.nightly)}</b></td></tr>`).join("")}</tbody></table></div><p class="note">${esc(tx(L).od_p3)}</p></main>`;
+	return page({
+		L,
+		title: `${t.b_t} | Top3Hotels`,
+		description: t.b_d,
+		path,
+		body,
+		alts: GROWTH_LANGS,
+		noindex: q.has("max") || q.has("cat")
+	});
+}
+async function escapePage(L, q) {
+	const t = tt(L);
+	const max = Math.max(20, Math.min(1e3, Math.round(Number(q.get("max")) || 80)));
+	const pool = (await allPicks()).filter((r) => r.nightly && r.nightly <= max && (r.score ?? 0) >= 8.5);
+	const r = pool[Math.floor(Math.random() * pool.length)];
+	const path = "/escape";
+	const url = r ? `${SITE}${P(L, "/" + r.slug)}` : `${SITE}${P(L, path)}`;
+	const txt = r ? L === "es" ? `Me escapo a ${r.city}: ${r.name}, nota ${sc(r.score)}, ${fmt(r.nightly)} la noche` : `Escaping to ${r.city}: ${r.name}, rated ${sc(r.score)}, ${fmt(r.nightly)} a night` : "";
+	const body = `${CSS$1}<main class="gw" style="text-align:center"><h1>${t.e_h}</h1><p class="lead" style="margin:0 auto">${esc(t.e_lead)}</p>
+<form method="get" action="${P(L, path)}" style="margin:18px 0"><label>${t.max} <input name="max" type="number" min="20" max="1000" step="5" value="${max}" style="width:110px"></label> <button class="dl" type="submit">${t.spin}</button></form>
+${r ? `<div style="border:1px solid rgba(127,127,127,.25);border-radius:18px;padding:26px 18px;max-width:560px;margin:10px auto"><p style="font-size:14px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin:0">${esc(r.country)}</p><p style="font-size:42px;font-weight:800;margin:4px 0 10px">${esc(r.city)}</p><p style="font-size:18px;margin:0 0 6px"><b>${esc(r.name)}</b></p><p style="margin:0 0 16px">${sc(r.score)}/10 · ${(r.reviews ?? 0).toLocaleString("en-GB")} ${tx(L).reviews} · <b>${fmt(r.nightly)}</b> ${tx(L).night}</p><a class="dl" href="${P(L, "/" + r.slug)}">${t.see}</a></div>${shareBar(url, txt, t.share)}` : ""}
+<p class="note">${esc(tx(L).od_p3)}</p></main>`;
+	return page({
+		L,
+		title: `${t.e_t} | Top3Hotels`,
+		description: t.e_d,
+		path,
+		body,
+		alts: GROWTH_LANGS,
+		noindex: q.has("max")
+	});
+}
+function splitPage(L) {
+	const t = tt(L);
+	const body = `${CSS$1}<main class="gw"><h1>${t.s_h}</h1><p class="lead">${esc(t.s_d)}</p>
+<form id="spl" style="display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:16px 0"><label>${t.price}<br><input name="p" type="number" min="0" step="1" value="120" style="width:130px"></label><label>${t.nights}<br><input name="n" type="number" min="1" step="1" value="2" style="width:90px"></label><label>${t.people}<br><input name="k" type="number" min="1" step="1" value="2" style="width:90px"></label></form>
+<p style="font-size:30px;font-weight:800;margin:6px 0" id="splA"></p><p style="font-size:18px;margin:0" id="splB"></p>
+<script>(function(){var f=document.getElementById('spl');function u(){var p=+f.p.value||0,n=Math.max(1,+f.n.value||1),k=Math.max(1,+f.k.value||1);var tot=p*n/k;document.getElementById('splA').textContent=tot.toFixed(2).replace('.',${L === "es" ? "','" : "'.'"})+' € ${t.pp}';document.getElementById('splB').textContent=(p/k).toFixed(2).replace('.',${L === "es" ? "','" : "'.'"})+' € ${t.ppn}'}f.addEventListener('input',u);u()})();<\/script></main>`;
+	return page({
+		L,
+		title: `${t.s_t} | Top3Hotels`,
+		description: t.s_d,
+		path: "/split",
+		body,
+		alts: GROWTH_LANGS
+	});
+}
+async function awardsPage(L) {
+	const t = tt(L);
+	const st = (await cityStats()).sort((a, b) => b.pop - a.pop);
+	const code = `<a href="${SITE}/rome" title="Top3Hotels Pick"><img src="${SITE}/badge/rome/lux.svg" alt="Top3Hotels Pick 2026" width="160" height="160"></a>`;
+	const body = `${CSS$1}<main class="gw"><h1>${t.a_h}</h1><p class="lead">${esc(t.a_lead)}</p>
+<p><img src="/badge/rome/lux.svg" alt="Top3Hotels Pick" width="140" height="140"> <img src="/badge/rome/value.svg" alt="Top3Hotels Pick" width="140" height="140"> <img src="/badge/rome/budget.svg" alt="Top3Hotels Pick" width="140" height="140"></p>
+<h2>${t.a_how}</h2><p>${esc(t.a_how_p)}</p><pre style="white-space:pre-wrap;background:rgba(127,127,127,.12);padding:12px;border-radius:10px;font-size:13px">${esc(code)}</pre>
+<h2>${t.a_find}</h2><p>${st.slice(0, 300).map((s) => `<a href="${P(L, "/" + s.slug)}">${esc(s.city)}</a>`).join(" · ")} · <a href="${P(L, "/destinations")}">…</a></p></main>`;
+	return page({
+		L,
+		title: `${t.a_t} | Top3Hotels`,
+		description: t.a_d,
+		path: "/awards",
+		body,
+		alts: GROWTH_LANGS
+	});
+}
+var slugify = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+var km$1 = (a, b) => {
+	const R = 6371, dLa = (b.lat - a.lat) * Math.PI / 180, dLo = (b.lng - a.lng) * Math.PI / 180;
+	const x = Math.sin(dLa / 2) ** 2 + Math.cos(a.lat * Math.PI / 180) * Math.cos(b.lat * Math.PI / 180) * Math.sin(dLo / 2) ** 2;
+	return 2 * R * Math.asin(Math.sqrt(x));
+};
+var TD = {
+	en: {
+		cmp_t: (c) => `${c} hotels: budget vs mid-range vs luxury compared`,
+		cmp_d: (c) => `Our three hotel picks in ${c} side by side: guest score, reviews, stars, area and reference price per night.`,
+		cmp_h: (c) => `${c}: our three hotels side by side`,
+		row_score: "Guest score",
+		row_rev: "Reviews",
+		row_stars: "Stars",
+		row_area: "Area",
+		row_price: "Reference price per night",
+		row_pros: "Guests like",
+		row_cons: "Guests mention",
+		row_tags: "Good for",
+		pick: "Which one?",
+		pick_p: (b, v, l) => `Choose ${b} if price matters most, ${v} for the best balance of score and price, and ${l} if you want the best-reviewed upscale stay.`,
+		near_t: (s, c) => `Hotels near ${s}, ${c}: our picks and distances`,
+		near_d: (s, c) => `How far our three hotel picks in ${c} are from ${s}, with straight-line distance and an estimated walk.`,
+		near_h: (s) => `Hotels near ${s}`,
+		near_lead: (s, c) => `Our three picks in ${c}, sorted by distance to ${s}. Distances are straight-line from map coordinates; real walking routes are longer.`,
+		dist: "Distance",
+		walk: "Walk (estimate)",
+		min: "min",
+		closest: "Closest of our picks",
+		far: "Far on foot: plan public transport or a taxi.",
+		nearby: "Other sights",
+		all: "See all three picks"
+	},
+	es: {
+		cmp_t: (c) => `Hoteles en ${c}: económico, calidad-precio y lujo comparados`,
+		cmp_d: (c) => `Nuestros tres hoteles en ${c} uno al lado del otro: nota de huéspedes, reseñas, estrellas, zona y precio de referencia por noche.`,
+		cmp_h: (c) => `${c}: nuestros tres hoteles comparados`,
+		row_score: "Nota de huéspedes",
+		row_rev: "Reseñas",
+		row_stars: "Estrellas",
+		row_area: "Zona",
+		row_price: "Precio de referencia por noche",
+		row_pros: "A los huéspedes les gusta",
+		row_cons: "Los huéspedes comentan",
+		row_tags: "Bueno para",
+		pick: "¿Cuál elegir?",
+		pick_p: (b, v, l) => `Elige ${b} si lo que más importa es el precio, ${v} para el mejor equilibrio entre nota y precio, y ${l} si quieres la estancia superior mejor valorada.`,
+		near_t: (s, c) => `Hoteles cerca de ${s}, ${c}: nuestras elecciones y distancias`,
+		near_d: (s, c) => `A qué distancia están nuestros tres hoteles de ${c} de ${s}, en línea recta y con un paseo estimado.`,
+		near_h: (s) => `Hoteles cerca de ${s}`,
+		near_lead: (s, c) => `Nuestros tres hoteles en ${c}, ordenados por distancia a ${s}. Las distancias son en línea recta según coordenadas; a pie el camino real es más largo.`,
+		dist: "Distancia",
+		walk: "A pie (estimado)",
+		min: "min",
+		closest: "El más cercano de nuestros hoteles",
+		far: "Lejos a pie: mejor transporte público o taxi.",
+		nearby: "Otros lugares",
+		all: "Ver los tres hoteles"
+	}
+};
+var td = (L) => TD[L] ?? TD.en;
+var CATL = (L, c) => L === "es" ? {
+	Budget: "Económico",
+	"Best Value": "Calidad-precio",
+	Luxury: "Lujo"
+}[c] ?? c : c;
+async function cityFull(slug) {
+	const { bySlug } = await data();
+	const ix = bySlug.get(slug);
+	if (!ix) return null;
+	const cd = await cityData(ix.id);
+	if (!cd) return null;
+	return {
+		ix,
+		cd,
+		hotels: cd.hotels.filter((h) => h.name)
+	};
+}
+async function comparePicksPage(L, slug) {
+	const f = await cityFull(slug);
+	if (!f || f.hotels.length < 3) return null;
+	const t = td(L);
+	const c = f.ix.city;
+	const hs = f.hotels;
+	const row = (label, fn) => `<tr><th scope="row">${label}</th>${hs.map((h) => `<td>${fn(h)}</td>`).join("")}</tr>`;
+	const list = (a) => a?.length ? `<ul style="margin:0;padding-left:18px">${a.slice(0, 3).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+	const body = `${CSS$1}<main class="gw"><h1>${esc(t.cmp_h(c))}</h1><p class="lead">${esc(t.cmp_d(c))}</p>
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th></th>${hs.map((h) => `<th>${esc(CATL(L, h.category))}<br><span style="text-transform:none;font-size:15px;opacity:1"><b>${esc(h.name)}</b></span></th>`).join("")}</tr></thead><tbody>
+${row(t.row_score, (h) => h.booking?.score ? `<b>${sc(h.booking.score)}</b>/10` : "")}
+${row(t.row_rev, (h) => (h.booking?.count ?? 0).toLocaleString("en-GB"))}
+${row(t.row_stars, (h) => h.booking?.stars ? "★".repeat(h.booking.stars) : "")}
+${row(t.row_area, (h) => esc(h.area ?? ""))}
+${row(t.row_price, (h) => h.offer?.nightly ? `<b>${fmt(h.offer.nightly)}</b>` : "")}
+${row(t.row_pros, (h) => list(h.extras?.pros))}
+${row(t.row_cons, (h) => list(h.extras?.cons))}
+${row(t.row_tags, (h) => esc((h.extras?.tags ?? []).join(", ")))}
+</tbody></table></div><h2>${t.pick}</h2><p>${esc(t.pick_p(hs.find((h) => h.category === "Budget")?.name ?? "", hs.find((h) => h.category === "Best Value")?.name ?? "", hs.find((h) => h.category === "Luxury")?.name ?? ""))}</p>
+<p><a class="dl" href="${P(L, "/" + slug)}">${t.all}</a></p><p class="note">${esc(tx(L).od_p3)}</p></main>`;
+	return page({
+		L,
+		title: `${t.cmp_t(c)} | Top3Hotels`,
+		description: t.cmp_d(c),
+		path: `/compare-picks/${slug}`,
+		body,
+		alts: GROWTH_LANGS
+	});
+}
+async function nearPage(L, slug, sight) {
+	const f = await cityFull(slug);
+	if (!f) return null;
+	const sights = f.cd.extras?.sights ?? [];
+	const s = sights.find((x) => slugify(x.name) === sight);
+	if (!s) return null;
+	const t = td(L);
+	const c = f.ix.city;
+	const rows = f.hotels.filter((h) => h.coordinates).map((h) => ({
+		h,
+		d: km$1(s, {
+			lat: h.coordinates.latitude,
+			lng: h.coordinates.longitude
+		})
+	})).sort((a, b) => a.d - b.d);
+	if (!rows.length) return null;
+	const walk = (d) => Math.round(d * 1.3 * 60 / 4.8);
+	const body = `${CSS$1}<main class="gw"><h1>${esc(t.near_h(s.name))}</h1><p class="lead">${esc(t.near_lead(s.name, c))}</p>
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>Hotel</th><th>${t.dist}</th><th>${t.walk}</th><th>${tx(L).score}</th><th>${tx(L).night}</th></tr></thead><tbody>${rows.map(({ h, d }) => `<tr><td><b>${esc(h.name)}</b> <small>${esc(CATL(L, h.category))}</small></td><td>${d < 1 ? Math.round(d * 1e3) + " m" : d.toFixed(1).replace(".", L === "es" ? "," : ".") + " km"}</td><td>${walk(d) > 45 ? `<small>${t.far}</small>` : `${walk(d)} ${t.min}`}</td><td>${h.booking?.score ? sc(h.booking.score) : ""}</td><td>${h.offer?.nightly ? `<b>${fmt(h.offer.nightly)}</b>` : ""}</td></tr>`).join("")}</tbody></table></div>
+<p>${t.closest}: <b>${esc(rows[0].h.name)}</b>.</p>
+<h2>${t.nearby}</h2><p>${sights.filter((x) => x !== s).map((x) => `<a href="${P(L, `/near/${slug}/${slugify(x.name)}`)}">${esc(x.name)}</a>`).join(" · ")}</p>
+<p><a class="dl" href="${P(L, "/" + slug)}">${t.all}</a> <a class="dl" href="${P(L, "/compare-picks/" + slug)}">${td(L).cmp_h(c)}</a></p><p class="note">${esc(tx(L).od_p3)}</p></main>`;
+	return page({
+		L,
+		title: `${t.near_t(s.name, c)} | Top3Hotels`,
+		description: t.near_d(s.name, c),
+		path: `/near/${slug}/${sight}`,
+		body,
+		alts: GROWTH_LANGS
+	});
+}
+async function seoPaths() {
+	const { index, cx } = await data();
+	const out = [];
+	for (const c of index) {
+		out.push(`/compare-picks/${c.slug}`);
+		for (const s of cx[c.id]?.sights ?? []) out.push(`/near/${c.slug}/${slugify(s.name)}`);
+	}
+	return out;
+}
+var TF = {
+	en: {
+		nm_t: "Best hotels near me",
+		nm_d: "Find the three best hotels in the city closest to you, using your location (it never leaves your browser).",
+		nm_h: "The three best hotels near you",
+		nm_lead: "Tap the button. Your browser tells us roughly where you are, we open the closest city we cover. Your location is not stored or sent to us.",
+		nm_btn: "Use my location",
+		nm_err: "Location not available. Pick a city instead:",
+		b100_t: "The 100 best value hotels in the world (2026)",
+		b100_d: "Our 100 best value hotels worldwide: the highest guest scores for the lowest reference prices, from our picks in 1,295 cities.",
+		b100_h: "The 100 best value hotels in the world, 2026",
+		b100_lead: "Ranked by guest score adjusted for the number of reviews, divided by the reference price. Every hotel here is one of our three picks in its city.",
+		vote_q: "Do you agree with our three picks?",
+		yes: "Yes",
+		no: "Not really",
+		thanks: "Thanks, noted."
+	},
+	es: {
+		nm_t: "Los mejores hoteles cerca de mí",
+		nm_d: "Encuentra los tres mejores hoteles de la ciudad más cercana usando tu ubicación (no sale de tu navegador).",
+		nm_h: "Los tres mejores hoteles cerca de ti",
+		nm_lead: "Pulsa el botón. Tu navegador nos dice más o menos dónde estás y abrimos la ciudad más cercana que cubrimos. Tu ubicación no se guarda ni se nos envía.",
+		nm_btn: "Usar mi ubicación",
+		nm_err: "Ubicación no disponible. Elige una ciudad:",
+		b100_t: "Los 100 hoteles con mejor relación calidad-precio del mundo (2026)",
+		b100_d: "Nuestros 100 hoteles con mejor calidad-precio del mundo: las mejores notas por los precios de referencia más bajos, de nuestras elecciones en 1.295 ciudades.",
+		b100_h: "Los 100 hoteles con mejor calidad-precio del mundo, 2026",
+		b100_lead: "Ordenados por la nota de huéspedes ajustada por número de reseñas, dividida entre el precio de referencia. Todos son uno de nuestros tres hoteles en su ciudad.",
+		vote_q: "¿Estás de acuerdo con nuestros tres hoteles?",
+		yes: "Sí",
+		no: "No mucho",
+		thanks: "Gracias, lo tenemos en cuenta."
+	}
+};
+var tf = (L) => TF[L] ?? TF.en;
+function nearMePage(L) {
+	const t = tf(L);
+	const body = `${CSS$1}<main class="gw" style="text-align:center"><h1>${t.nm_h}</h1><p class="lead" style="margin:0 auto 18px">${esc(t.nm_lead)}</p><button class="dl" id="nmb" type="button">${t.nm_btn}</button><p id="nme" class="note" hidden>${esc(t.nm_err)} <a href="${P(L, "/destinations")}">→</a></p>
+<script>(function(){var b=document.getElementById('nmb');b.onclick=function(){if(!navigator.geolocation){document.getElementById('nme').hidden=false;return}b.disabled=true;navigator.geolocation.getCurrentPosition(function(pos){fetch('/api/cities.json').then(function(r){return r.json()}).then(function(cs){var la=pos.coords.latitude,lo=pos.coords.longitude,best=null,bd=1e9;cs.forEach(function(c){var x=c.lat,y=c.lng;if(x==null)return;var d=(x-la)*(x-la)+((y-lo)*Math.cos(la*Math.PI/180))*((y-lo)*Math.cos(la*Math.PI/180));if(d<bd){bd=d;best=c}});if(best){try{t3track('near_me',{city:best.slug})}catch(_){}location.href=${JSON.stringify(L === "en" ? "" : "/" + L)}+'/'+best.slug}else{document.getElementById('nme').hidden=false;b.disabled=false}})},function(){document.getElementById('nme').hidden=false;b.disabled=false},{maximumAge:600000,timeout:10000})}})();<\/script></main>`;
+	return page({
+		L,
+		title: `${t.nm_t} | Top3Hotels`,
+		description: t.nm_d,
+		path: "/near-me",
+		body,
+		alts: GROWTH_LANGS
+	});
+}
+async function best100Page(L) {
+	const t = tf(L);
+	const adj = (r) => ((r.score ?? 0) * (r.reviews ?? 0) + 800) / ((r.reviews ?? 0) + 100);
+	const rows = (await allPicks()).filter((r) => r.nightly && (r.score ?? 0) >= 8.5 && (r.reviews ?? 0) >= 200).map((r) => ({
+		r,
+		v: adj(r) / Math.log(r.nightly + 20)
+	})).sort((a, b) => b.v - a.v).slice(0, 100).map((x) => x.r);
+	const body = `${CSS$1}<main class="gw"><h1>${t.b100_h}</h1><p class="lead">${esc(t.b100_lead)}</p>
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${tx(L).city}</th><th>${tx(L).score}</th><th>${tx(L).night}</th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td><b>${esc(r.name)}</b> <small>${esc(CATL(L, r.cat))}${r.stars ? ` · ${r.stars}★` : ""}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString("en-GB")}</small></td><td><b>${fmt(r.nightly)}</b></td></tr>`).join("")}</tbody></table></div><p class="note">${esc(tx(L).od_p3)}</p><p class="note">${esc(tx(L).cite)}</p></main>`;
+	const ld = [{
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: t.b100_h,
+		itemListElement: rows.map((r, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: `${r.name}, ${r.city}`,
+			url: `${SITE}${P(L, "/" + r.slug)}`
+		}))
+	}];
+	return page({
+		L,
+		title: `${t.b100_t} | Top3Hotels`,
+		description: t.b100_d,
+		path: "/best-value-hotels-2026",
+		body,
+		ld,
+		alts: GROWTH_LANGS
+	});
+}
+function voteWidget(L, slug) {
+	const t = tf(L);
+	return `<div class="vote" data-vote="${esc(slug)}" style="margin:18px 0;padding:14px 16px;border:1px solid rgba(127,127,127,.25);border-radius:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><b style="margin-right:6px">${esc(t.vote_q)}</b><button type="button" class="btn ghost" data-v="1">👍 ${t.yes}</button><button type="button" class="btn ghost" data-v="-1">👎 ${t.no}</button><span class="vmsg" data-ok="${esc(t.thanks)}" role="status"></span></div>`;
 }
 var blog_default = /*#__PURE__*/ JSON.parse("[{\"slug\":\"where-to-stay-in-odense\",\"city\":\"odense\",\"title\":\"Where to stay in Odense (2026): 3 hotels and the best area\",\"description\":\"Odense is small, so the hotel matters more than the neighbourhood. Our three picks for 2026 (budget, best value and upscale) with real prices, plus which part of town suits your trip.\",\"h1\":\"Where to stay in Odense\",\"dek\":\"Three hotels, one for each budget, and the only area questions that actually matter in a city you can cross on foot in twenty minutes.\",\"tags\":[\"Denmark\",\"City guide\"],\"body\":\"\\n<p>Odense is Denmark's third-largest city, but the centre is compact: from the station to H.C. Andersen's House is a ten-minute walk,\\nand the whole old town fits inside a loop you can do before lunch. That changes how you should choose a hotel. You don't need to\\nagonise over neighbourhoods the way you would in Copenhagen or Hamburg. The real questions are simpler:</p>\\n<ul>\\n<li><b>Are you arriving by car?</b> Then free parking is worth more than being two streets closer to the cathedral.</li>\\n<li><b>Are you here for H.C. Andersen and the old town?</b> Then stay within walking distance of the centre and leave the car at home.</li>\\n<li><b>Is it a concert, a conference or a match?</b> Then check where the event is first. Odense is easy to get around, but not at 11 pm in the rain.</li>\\n</ul>\\n<p>With that in mind, here are the three hotels we would book in Odense right now.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>Hotel Odeon</h3></div>\\n<ul class=\\\"facts\\\"><li>4-star (no five-star hotel in Odense met our bar)</li><li>8.5/10 from 2,756 guest reviews</li><li>About 500 m from the town hall</li><li><b>€222</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Hotel Odeon sits right next to ODEON, the city's concert and conference house, between the railway station and H.C. Andersen's House. If you are coming for a show, a congress or simply want to walk everywhere, it's hard to beat the location.</p><p>Odense has no five-star hotel that passes our review threshold, so our 'luxury' pick here is the best-reviewed upscale four-star. Nearly 2,800 reviews averaging 8.5 is a strong, stable signal: you know what you are getting.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's a big, modern city hotel rather than a characterful boutique. If you want small and personal, look at our Best Value pick.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/odeon.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Villa A Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>3-star</li><li>8.6/10 from 668 guest reviews</li><li>About 800 m south-west of the town hall</li><li>Free parking</li><li><b>€137</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Villa A is a small hotel on a quiet residential street, around a ten-to-fifteen-minute walk from the centre. It has the best guest score of every hotel we compared in Odense, at a price close to the city average.</p><p>That combination (top reviews, normal price, free parking, walkable) is exactly what 'best value' means to us. It works for couples, for a weekend without the car, and for business trips where you don't need a conference floor.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's small and simple: no restaurant, no spa. Book early for weekends.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/ansgarhus-motel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>Nice Nest Boutique Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>8.4/10 from 109 guest reviews</li><li>About 1.6 km east of the town hall</li><li>Free parking, hot tub, garden</li><li><b>€98</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Nice Nest is the cheapest well-reviewed private room we found in Odense: every room has its own bathroom, and there's free parking on site. It's about twenty minutes on foot from the centre, or a few minutes by car or bus.</p><p>If you are driving in from Jutland or Zealand and want a clean, calm base without paying city-centre prices, this is the one.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it has far fewer reviews than the other two, so there's less certainty, and it isn't in the old town. Fine with a car, less ideal without one.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/nice-nest.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/odense\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which part of Odense should you stay in?</h2>\\n<h3>The old town and the H.C. Andersen Quarter</h3>\\n<p>Cobbled lanes, half-timbered houses, the cathedral of St Canute and the new H.C. Andersen's House museum. This is where most visitors spend their time,\\nand the best area for a first trip without a car. Hotels here are few and fill up fast on summer weekends and during the Christmas market season.</p>\\n<h3>Around the station and Kongens Have</h3>\\n<p>The most practical area if you arrive by train: Odense sits on the main line between Copenhagen and Jutland, and the station is a short walk from\\nthe centre. Hotel Odeon and several chain hotels are here. The King's Garden park is right in front of the station.</p>\\n<h3>Outside the centre, with parking</h3>\\n<p>Along the ring roads and towards the motorway you'll find hotels with free parking and lower prices, including our budget pick.\\nGood for drivers, families and anyone combining Odense with Egeskov Castle or a drive around Funen.</p>\\n<h2>Getting there</h2>\\n<ul>\\n<li><b>By train:</b> direct trains from Copenhagen Central take a little over an hour and a quarter; there are also direct trains from Copenhagen Airport.</li>\\n<li><b>By plane:</b> Billund Airport is about an hour away by car. Copenhagen Airport is the bigger hub, with a direct train.</li>\\n<li><b>In town:</b> walk. For longer hops, the Odense light rail runs north–south through the city.</li>\\n</ul>\\n<h2>When prices go up</h2>\\n<p>Odense is mostly a business and short-break city, so prices move with events: big conferences, concerts, the summer holidays and December,\\nwhen the Christmas markets bring a lot of weekend visitors. A mid-week stay in November is about as cheap as Odense gets.\\nOur prices above are from exactly that kind of week, so expect more on a summer Saturday.</p>\\n<h2>Coming soon: the film</h2>\\n<p>We're planning to film our Odense picks this autumn. When the video is ready, it will be on this page and on the <a href=\\\"/odense\\\">Odense hotels page</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":970,\"mins\":4,\"lang\":\"en\",\"alt\":\"donde-dormir-en-odense\"},{\"slug\":\"where-to-stay-in-hamburg\",\"city\":\"hamburg\",\"title\":\"Where to stay in Hamburg (2026): 3 hotels and the right area for you\",\"description\":\"Hamburg is big and every area feels different. Our three hotel picks for 2026 (budget, best value and luxury) with real prices, and a no-nonsense guide to St. Pauli, St. Georg, HafenCity and the Alster.\",\"h1\":\"Where to stay in Hamburg\",\"dek\":\"A €60 room by the station, a €130 room in the Schanze and a €600 grand hotel on the Alster. Here's who each one is for, and which area fits your trip.\",\"tags\":[\"Germany\",\"City guide\"],\"body\":\"\\n<p>Hamburg is not a city you see in one walk. The old merchant centre around the Rathaus, the port and the Elbphilharmonie, the Reeperbahn,\\nthe cafés of the Schanze and the lakes of the Alster are all different places, and where you sleep decides what your evenings feel like.\\nSo in Hamburg we'd pick the area first and the hotel second. The good news: the S-Bahn and U-Bahn are fast, and almost everything below is\\nwithin 20 minutes of everything else.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>Fairmont Hotel Vier Jahreszeiten</h3></div>\\n<ul class=\\\"facts\\\"><li>5-star</li><li>9.5/10 from 1,299 guest reviews</li><li>On the Binnenalster, about 600 m from the Rathaus</li><li><b>€608</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>The Vier Jahreszeiten has been Hamburg's grand hotel for more than a century, and it sits on the best address in town: the Neuer Jungfernstieg, looking straight over the Binnenalster. Shopping streets on one side, the lake on the other, the Rathaus five minutes away.</p><p>A 9.5 average across almost 1,300 reviews is remarkable for a hotel this size. This is the one for an anniversary, a proposal or a 'once a year' trip.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> the price. Mid-week in November it was around €600 a night; weekends and December cost more.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/raffleshotelvierjahreszeiten.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Superbude Hamburg St. Pauli</h3></div>\\n<ul class=\\\"facts\\\"><li>8.9/10 from 1,523 guest reviews</li><li>Edge of the Schanzenviertel, about 2.5 km from the Rathaus</li><li>Pets allowed</li><li><b>€132</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Superbude is playful, design-led and very Hamburg: recycled furniture, a busy lobby bar, and rooms that are small but clever. It sits on the edge of the Schanze, so you have the city's best cafés and bars on your doorstep and St. Pauli a short walk away.</p><p>Guests rate it higher than most hotels that cost twice as much. That's why it is our best value pick.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's a hotel-hostel hybrid with a young, social crowd. Make sure you book a private room with its own bathroom, and don't expect silence on a Saturday.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/superbude-hostel-st-pauli.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>CAB20</h3></div>\\n<ul class=\\\"facts\\\"><li>8.5/10 from 12,776 guest reviews</li><li>St. Georg, about an 8-minute walk from the Hauptbahnhof</li><li>Bar, terrace, 24-hour reception</li><li><b>€60</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>CAB20 is about as cheap as a good private room gets in Hamburg. More than 12,000 reviews averaging 8.5 means this isn't luck: rooms are compact but clean, the location by the main station is perfect if you arrive by train, and the Alster is a ten-minute walk away.</p><p>If you'll only sleep in the room and spend the day out, this is the smart choice.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> rooms are small (the name is a hint), and the streets right behind the station are lively and a bit scruffy late at night.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/cab20.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/hamburg\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which area of Hamburg is right for you?</h2>\\n<h3>Altstadt, Neustadt and the Binnenalster: first visit, shopping</h3>\\n<p>The Rathaus, the Jungfernstieg, the shopping streets and the lake. Central, elegant and easy, and quiet at night. Our luxury pick is here.</p>\\n<h3>HafenCity and the Speicherstadt: architecture and the Elbphilharmonie</h3>\\n<p>Red-brick warehouses on the canals (a UNESCO World Heritage site), Miniatur Wunderland and the Elbphilharmonie. Modern hotels, great for a concert trip; a bit empty after dark outside the main squares.</p>\\n<h3>St. Pauli and the Reeperbahn: nightlife</h3>\\n<p>Bars, clubs, music venues and the harbour at Landungsbrücken. Go early on a Sunday for the Fischmarkt. Brilliant if you want to go out, loud if you want to sleep.</p>\\n<h3>Sternschanze: cafés, food and a local feel</h3>\\n<p>Independent shops, brunch spots and bars that are busy every night. A good compromise: lively, but more 'neighbourhood' than the Reeperbahn. Our best value pick is on its edge.</p>\\n<h3>St. Georg: by the station and the Außenalster</h3>\\n<p>The most practical base if you come by train. Lange Reihe is one of the city's nicest streets for dinner, and the big lake is minutes away. The streets right next to the station are rougher; a few blocks makes a big difference.</p>\\n<h3>Altona and Ottensen: calmer and local</h3>\\n<p>Further west, with its own station, the Elbe beaches nearby and lots of restaurants. Good for longer stays and repeat visitors.</p>\\n<h2>Getting there and around</h2>\\n<ul>\\n<li><b>From the airport:</b> the S-Bahn runs from the terminals to the Hauptbahnhof in about 25 minutes.</li>\\n<li><b>By train:</b> the Hauptbahnhof is one of Germany's busiest stations, with direct trains from Berlin, Copenhagen, Amsterdam and most big German cities.</li>\\n<li><b>Around town:</b> S-Bahn, U-Bahn and the harbour ferries, which are part of the normal public-transport network. The ferry from Landungsbrücken is one of the cheapest harbour tours anywhere.</li>\\n</ul>\\n<h2>When prices go up</h2>\\n<p>Hamburg hotel prices jump during big trade fairs, the Harbour Birthday in May, major concerts and the Christmas markets from late November.\\nA quiet mid-week in November or January is when even the grand hotels come down. If your dates are flexible, move them by a few days and compare.</p>\\n<p>We're planning to film our Hamburg picks this autumn. The video will go on this page and on the <a href=\\\"/hamburg\\\">Hamburg hotels page</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":940,\"mins\":4,\"lang\":\"en\",\"alt\":\"donde-dormir-en-hamburgo\"},{\"slug\":\"where-to-stay-in-copenhagen\",\"city\":\"copenhagen\",\"title\":\"Where to stay in Copenhagen (2026): 3 hotels and the best neighbourhoods\",\"description\":\"Copenhagen is expensive, so the right hotel saves real money. Our three picks for 2026 (budget, best value and luxury) with real prices, and which neighbourhood suits you: Indre By, Christianshavn, Vesterbro or Nørrebro.\",\"h1\":\"Where to stay in Copenhagen\",\"dek\":\"One of Europe's most expensive hotel cities. Here's where €100, €200 and €300 a night get you the most.\",\"tags\":[\"Denmark\",\"City guide\"],\"body\":\"\\n<p>Copenhagen is small, flat and made for walking and cycling, but it is not cheap: a perfectly normal hotel can easily cost €200 a night.\\nThat's why picking well matters more here than almost anywhere else in Europe. Get it right and you can be ten minutes from Nyhavn for\\naround €100. Get it wrong and you pay luxury prices for a small room by a ring road.</p>\\n<aside class=\\\"method\\\"><b>How we pick.</b> For every city we compare well-reviewed hotels on the same dates and keep three:\\nthe cheapest good private room (own bathroom, solid reviews, no dorms), the best reviews at a normal price, and the best-reviewed five-star\\n(or a four-star scoring 8.5+ when no five-star qualifies). Prices below were checked on Booking.com on 15 October 2026 for 10–12 November 2026 (Tuesday to Thursday), two adults, one room.\\nThey will be different for your dates. <a href=\\\"/how-we-choose\\\">Full method</a>.</aside>\\n<h2>The three hotels we'd book</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Luxury</span><h3>1 Hotel Copenhagen</h3></div>\\n<ul class=\\\"facts\\\"><li>5-star</li><li>9.1/10 from 702 guest reviews</li><li>Latin Quarter, about 550 m from the City Hall Square</li><li><b>€301</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>1 Hotel Copenhagen is in the old Latin Quarter, a few steps from the Round Tower and the main pedestrian street. The brand is built around nature and sustainability: lots of wood and plants, and a calm, Scandinavian feel rather than gold and marble.</p><p>It has the best review score among the five-star hotels we compared, in the most walkable spot in the city.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> around €300 a night mid-week in November, and more in summer. Copenhagen luxury is never cheap.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/1-hotel-copenhagen.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Best Value</span><h3>Kanalhuset</h3></div>\\n<ul class=\\\"facts\\\"><li>9.4/10 from 869 guest reviews</li><li>On the canal in Christianshavn</li><li>Restaurant on site</li><li><b>€207</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Kanalhuset is a small hotel right on one of Christianshavn's canals: houseboats outside the window, cobbles and cafés all around, and the metro station a short walk away (it runs straight to the airport).</p><p>It has the highest guest score of the 40 Copenhagen hotels we compared, at a price only a little above the city's middle. For a couple's weekend, it's the one we'd book.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> it's small, so it sells out early, and the rooms vary. Read the room descriptions before you book.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/kanalhuset.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Budget</span><h3>Wakeup Copenhagen Borgergade</h3></div>\\n<ul class=\\\"facts\\\"><li>8.0/10 from 16,572 guest reviews</li><li>Between Kongens Have and Nyhavn</li><li>24-hour reception, bar</li><li><b>€101</b> a night<small> · 10–12 November 2026</small></li></ul>\\n<p>Wakeup Borgergade is the cheapest good private room in central Copenhagen. Rooms are compact and simple, but with over 16,000 reviews you know exactly what you're getting, and the location is excellent: Nyhavn, Rosenborg Castle and Kongens Nytorv are all on foot.</p><p>If you plan to spend your money on food, Tivoli or a canal tour rather than on the room, start here.</p>\\n<p class=\\\"catch\\\"><b>The catch:</b> small rooms and no frills. An 8.0 average is 'very good', not 'wow'. That's the trade-off for this price in this city.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/wakeup-copenhagen-borgergade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">See prices on Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/copenhagen\\\">All three picks in one page →</a></p>\\n</article>\\n<h2>Which neighbourhood?</h2>\\n<h3>Indre By (the old centre): first visit</h3>\\n<p>Strøget, the Latin Quarter, Nyhavn, the palaces and the main sights. Everything is walkable. Expensive, busy in summer, and the best choice for a short first trip.</p>\\n<h3>Christianshavn: canals and character</h3>\\n<p>Canals, houseboats, the Church of Our Saviour and Christiania. Calm, beautiful and one metro stop from the centre. Our best value pick is here.</p>\\n<h3>Vesterbro: by Central Station, food and bars</h3>\\n<p>The Meatpacking District (Kødbyen), Istedgade and lots of good, younger restaurants. Practical if you arrive by train. Prices tend to be a little lower than in the old centre.</p>\\n<h3>Nørrebro and Østerbro: local life</h3>\\n<p>Nørrebro is diverse, lively and full of small places to eat; Østerbro is green, residential and family-friendly. Both are a short bike ride from the centre.</p>\\n<h3>Ørestad and near the airport: cheaper beds</h3>\\n<p>Modern hotels by the metro line, often much cheaper. Fine for a short stopover or a conference at Bella Center, less charming for a city break.</p>\\n<h2>Getting there and around</h2>\\n<ul>\\n<li><b>From the airport:</b> the metro runs to Kongens Nytorv and Christianshavn in roughly 15 minutes; trains run to Central Station in about the same.</li>\\n<li><b>Around town:</b> walk, or rent a bike. Copenhagen is one of the easiest cities in the world to cycle in.</li>\\n</ul>\\n<h2>Saving money in Copenhagen</h2>\\n<ul>\\n<li>Check whether breakfast is included. In Denmark it often isn't, and it can add a lot per person.</li>\\n<li>Sunday to Thursday is usually cheaper than Friday and Saturday, except during big conferences.</li>\\n<li>Summer and the weeks before Christmas (Tivoli's Christmas season) are the most expensive times. November and January–March are the cheapest.</li>\\n</ul>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":785,\"mins\":4,\"lang\":\"en\",\"alt\":\"donde-dormir-en-copenhague\"},{\"slug\":\"cheapest-5-star-hotels-in-europe\",\"city\":null,\"title\":\"The 20 cheapest 5-star hotels in Europe (prices checked October 2026)\",\"description\":\"Real five-star hotels rated 8.5+ by guests, from about €92 a night. Every price checked on Booking.com for the same mid-week dates. Prague, the Algarve, Poland and more.\",\"h1\":\"The 20 cheapest five-star hotels in Europe\",\"dek\":\"Officially five stars, rated 8.5+ by guests, from about €92 a night. Every price checked for the same dates.\",\"tags\":[\"Europe\",\"Data\"],\"body\":\"\\n<p>In Paris or London, the five-star hotels we recommend cost well over €700 a night. In the places below, a real five-star hotel,\\nofficially rated and loved by guests, costs less than a standard room in central Copenhagen.</p>\\n<p>We took every European five-star hotel in our database, kept only those with an <b>official five-star rating</b> and a <b>guest score of 8.5 or higher</b>,\\nand checked the price for the same dates on Booking.com: 10–12 November 2026 (Tuesday to Thursday), two adults, one room, checked on 15 October 2026. Then we sorted by price.</p>\\n<aside class=\\\"method\\\"><b>Read this first.</b> Hotel prices change every day. These are real prices for one specific week in low season, not a promise.\\nUse the list to find places where luxury is cheap, then check your own dates. Prices are per night (the two-night total divided by two) as shown on Booking.com, and may exclude local tourist taxes.</aside>\\n<h2>The list</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Where</th><th>Guests</th><th>Per night</th></tr></thead><tbody><tr><td>1</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/hotelsrealsantaeulalia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grande Real Santa Eulália Resort &amp; Hotel Spa</a></td><td><a href=\\\"/albufeira\\\">Albufeira</a>, Portugal</td><td>8.5/10 <small>(4,041)</small></td><td><b>€92</b></td></tr><tr><td>2</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Residence Promenade</a></td><td><a href=\\\"/burgas\\\">Burgas</a>, Bulgaria</td><td>9.5/10 <small>(1,005)</small></td><td><b>€99</b></td></tr><tr><td>3</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/nhgranhotelcasinodeextremadura.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">NH Gran Hotel Casino de Extremadura</a></td><td><a href=\\\"/badajoz\\\">Badajoz</a>, Spain</td><td>9.2/10 <small>(2,451)</small></td><td><b>€104</b></td></tr><tr><td>4</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/old-royal-post-apartments.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Old Royal Post Boutique Hotel</a></td><td><a href=\\\"/prague\\\">Prague</a>, Czechia</td><td>9.6/10 <small>(2,457)</small></td><td><b>€104</b></td></tr><tr><td>5</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/the-bridge-wroclaw-mgallery-by-sofitel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">The Bridge Wrocław – MGallery</a></td><td><a href=\\\"/wroclaw\\\">Wrocław</a>, Poland</td><td>9.4/10 <small>(2,927)</small></td><td><b>€107</b></td></tr><tr><td>6</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/radisson-blu-residence-zakopane.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Blu Hotel &amp; Residences</a></td><td><a href=\\\"/zakopane\\\">Zakopane</a>, Poland</td><td>8.8/10 <small>(6,434)</small></td><td><b>€110</b></td></tr><tr><td>7</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/gdansk_podewils.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Podewils Old Town</a></td><td><a href=\\\"/gdansk\\\">Gdańsk</a>, Poland</td><td>9.2/10 <small>(552)</small></td><td><b>€116</b></td></tr><tr><td>8</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Promenade Hotel Liepāja</a></td><td><a href=\\\"/liepaja\\\">Liepāja</a>, Latvia</td><td>9.2/10 <small>(2,167)</small></td><td><b>€117</b></td></tr><tr><td>9</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/real-marina-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Real Marina Hotel &amp; Spa</a></td><td><a href=\\\"/olhao\\\">Olhão</a>, Portugal</td><td>8.7/10 <small>(2,713)</small></td><td><b>€119</b></td></tr><tr><td>10</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/montebelo-e-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Montebelo Viseu Congress Hotel &amp; Spa</a></td><td><a href=\\\"/viseu\\\">Viseu</a>, Portugal</td><td>9.1/10 <small>(973)</small></td><td><b>€121</b></td></tr><tr><td>11</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ba/mepas-mostar.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Mepas</a></td><td><a href=\\\"/mostar\\\">Mostar</a>, Bosnia and Herzegovina</td><td>9.2/10 <small>(2,115)</small></td><td><b>€122</b></td></tr><tr><td>12</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/acores-atlantico.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grand Hotel Açores Atlântico</a></td><td><a href=\\\"/ponta-delgada\\\">Ponta Delgada</a>, Portugal</td><td>9.2/10 <small>(865)</small></td><td><b>€123</b></td></tr><tr><td>13</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/prezident.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Prezident Luxury Hotel</a></td><td><a href=\\\"/novi-sad\\\">Novi Sad</a>, Serbia</td><td>9.3/10 <small>(869)</small></td><td><b>€126</b></td></tr><tr><td>14</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/10gr.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">10GR Boutique Hotel &amp; Wine Bar</a></td><td><a href=\\\"/rhodes\\\">Rhodes</a>, Greece</td><td>9.5/10 <small>(706)</small></td><td><b>€134</b></td></tr><tr><td>15</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/palacio-de-aviles-by-melia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Palacio de Avilés</a></td><td><a href=\\\"/aviles\\\">Avilés</a>, Spain</td><td>9.2/10 <small>(1,515)</small></td><td><b>€135</b></td></tr><tr><td>16</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/aureaconventocapuchinosbyeurostarshotelcompany.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Áurea Convento Capuchinos</a></td><td><a href=\\\"/segovia\\\">Segovia</a>, Spain</td><td>9.1/10 <small>(2,532)</small></td><td><b>€144</b></td></tr><tr><td>17</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/radisson-sas-tallinn.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Collection Hotel</a></td><td><a href=\\\"/tallinn\\\">Tallinn</a>, Estonia</td><td>9.4/10 <small>(6,055)</small></td><td><b>€146</b></td></tr><tr><td>18</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/intercontinentalwarsaw.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">InterContinental Warszawa</a></td><td><a href=\\\"/warsaw\\\">Warsaw</a>, Poland</td><td>9.1/10 <small>(10,072)</small></td><td><b>€147</b></td></tr><tr><td>19</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/eurostars-hotel-de-la-reconquista.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Eurostars Hotel de la Reconquista</a></td><td><a href=\\\"/oviedo\\\">Oviedo</a>, Spain</td><td>9.1/10 <small>(1,547)</small></td><td><b>€150</b></td></tr><tr><td>20</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/meliameridaboutiquehotel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Ilunion Mérida Palace</a></td><td><a href=\\\"/merida-spain\\\">Mérida</a>, Spain</td><td>9.0/10 <small>(6,151)</small></td><td><b>€153</b></td></tr></tbody></table></div>\\n<h2>What makes each one worth it</h2>\\n<ol class=\\\"notes\\\"><li><b>Grande Real Santa Eulália Resort &amp; Hotel Spa, Albufeira (€92).</b> A beachfront resort on the Algarve with indoor and outdoor pools and a spa. November is low season, which is exactly why it's this cheap.</li><li><b>Hotel Residence Promenade, Burgas (€99).</b> On the Black Sea seafront in central Burgas, with one of the highest scores on this list.</li><li><b>NH Gran Hotel Casino de Extremadura, Badajoz (€104).</b> A five-star with its own casino, close to the Portuguese border. A great stop on a road trip between Madrid and Lisbon.</li><li><b>Old Royal Post Boutique Hotel, Prague (€104).</b> In the Lesser Quarter (Malá Strana), below the castle and a few minutes from the Charles Bridge. The best location on this list.</li><li><b>The Bridge Wrocław – MGallery, Wrocław (€107).</b> On Cathedral Island, the oldest part of Wrocław, with a spa and sauna. Five-star polish at a three-star price.</li><li><b>Radisson Blu Hotel &amp; Residences, Zakopane (€110).</b> A mountain resort in the Tatras with an indoor pool and spa. Over 6,000 reviews, and very family-friendly.</li><li><b>Podewils Old Town, Gdańsk (€116).</b> A small, classic hotel on the river, facing Gdańsk's old town. Fewer reviews than most here, but consistently excellent.</li><li><b>Promenade Hotel Liepāja, Liepāja (€117).</b> On the harbour canal in Latvia's coastal music city. Free parking and a spa.</li><li><b>Real Marina Hotel &amp; Spa, Olhão (€119).</b> On the Ria Formosa lagoon in the eastern Algarve, with indoor and outdoor pools. A quieter, more local alternative to Albufeira.</li><li><b>Montebelo Viseu Congress Hotel &amp; Spa, Viseu (€121).</b> A spa hotel with pools in the heart of the Dão wine region. Pair it with a few wineries.</li><li><b>Hotel Mepas, Mostar (€122).</b> A modern five-star with an indoor pool and spa, a short drive from the famous Old Bridge.</li><li><b>Grand Hotel Açores Atlântico, Ponta Delgada (€123).</b> On the seafront avenue of São Miguel's main town, with an indoor pool. The base for crater lakes and hot springs.</li><li><b>Prezident Luxury Hotel, Novi Sad (€126).</b> A spa hotel with indoor and outdoor pools in Serbia's second city.</li><li><b>10GR Boutique Hotel &amp; Wine Bar, Rhodes (€134).</b> An adults-only boutique hotel inside the medieval Old Town of Rhodes, with its own wine bar.</li><li><b>Palacio de Avilés, Avilés (€135).</b> A historic palace on the main square of Avilés, on Spain's green north coast.</li><li><b>Áurea Convento Capuchinos, Segovia (€144).</b> A converted convent with a spa, walking distance from the Roman aqueduct. Easy day trip from Madrid.</li><li><b>Radisson Collection Hotel, Tallinn (€146).</b> A tower hotel with views over the old town, a pool and a spa. Over 6,000 reviews averaging 9.4.</li><li><b>InterContinental Warszawa, Warsaw (€147).</b> A big-city five-star with a high-floor pool and more than 10,000 reviews. The cheapest capital-city luxury on this list.</li><li><b>Eurostars Hotel de la Reconquista, Oviedo (€150).</b> Oviedo's landmark hotel in a historic building in the centre.</li><li><b>Hotel Ilunion Mérida Palace, Mérida (€153).</b> On Mérida's Plaza de España, with a rooftop pool, a short walk from the Roman theatre.</li></ol>\\n<h2>The pattern: where luxury is cheap in Europe</h2>\\n<ul>\\n<li><b>Second cities, not capitals.</b> Wrocław, Gdańsk, Oviedo, Mérida, Viseu, Novi Sad: excellent hotels built for business and weddings, with far less tourist demand than the big names.</li>\\n<li><b>Beach resorts out of season.</b> The Algarve, the Black Sea and Rhodes in November cost a fraction of their August prices, and the weather is often still good for walking.</li>\\n<li><b>Poland, Portugal and inland Spain.</b> Three countries make up more than half of this list.</li>\\n<li><b>The two great exceptions: Prague and Warsaw.</b> Capital-city five-stars, in great locations, for under €150.</li>\\n</ul>\\n<h2>How to find cheap luxury yourself</h2>\\n<ol>\\n<li><b>Stay mid-week.</b> Business hotels drop on weekends; leisure hotels drop Sunday to Thursday. Check both.</li>\\n<li><b>Look one city over.</b> Segovia instead of Madrid, Olhão instead of Faro, Wrocław instead of Kraków.</li>\\n<li><b>Ignore the star rating on its own.</b> Plenty of 'five-star' hotels score 7.5. Our rule: official five stars <i>and</i> 8.5+ from guests.</li>\\n<li><b>Count the extras.</b> Breakfast, parking and city tax can add €30–€60 a night. Compare the total, not the headline.</li>\\n</ol>\\n<p>Every city on this list has its own page with our three picks (budget, best value and luxury), so you can compare the five-star\\nwith cheaper options before you book. Start with <a href=\\\"/prague\\\">Prague</a>, <a href=\\\"/wroclaw\\\">Wrocław</a> or <a href=\\\"/albufeira\\\">Albufeira</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":1088,\"mins\":5,\"lang\":\"en\",\"alt\":\"hoteles-5-estrellas-mas-baratos-de-europa\"},{\"slug\":\"how-to-choose-a-hotel\",\"city\":null,\"title\":\"How to choose a hotel in 5 minutes (without reading 500 listings)\",\"description\":\"A simple, repeatable way to pick a hotel fast: decide your budget level, pick the area, read reviews the right way and compare the real total price. The same method we use for every city on Top3Hotels.\",\"h1\":\"How to choose a hotel in five minutes\",\"dek\":\"The booking sites show you 500 options. You need one. Here's the method we use for every city.\",\"tags\":[\"Tips\",\"Method\"],\"body\":\"\\n<p>Most people spend more time choosing a hotel than choosing the city. You open a booking site, see hundreds of options, sort by price, then by\\nrating, open twenty tabs, and an hour later you book the one you saw first. The problem isn't a lack of choice. It's too much of it.</p>\\n<p>This is the five-minute method we use to pick three hotels in every city on Top3Hotels. It works just as well for your own trips.</p>\\n<h2>1. Decide your level before you look</h2>\\n<p>Before you see a single photo, decide which of three trips this is:</p>\\n<ul>\\n<li><b>Budget:</b> you just need a clean private room with its own bathroom in a safe, practical spot. You'll be out all day.</li>\\n<li><b>Best value:</b> you want a place you'll actually enjoy, with great reviews, at a normal price for the city.</li>\\n<li><b>Luxury:</b> the hotel is part of the trip. An anniversary, a treat, a 'once a year'.</li>\\n</ul>\\n<p>This one decision removes about 80% of the listings. It's also why we show exactly one hotel at each level, not a long list.</p>\\n<h2>2. Pick the area, then the hotel</h2>\\n<p>A great hotel in the wrong place ruins a city break. Find the one or two neighbourhoods that match your trip (first visit, nightlife,\\nfood, quiet, near the station), then only look at hotels there. In small cities (Odense, Bruges, Salzburg) this barely matters;\\nin big ones (London, Paris, Hamburg) it matters more than anything else.</p>\\n<h2>3. Read the score and the number of reviews together</h2>\\n<p>A 9.6 from 12 reviews tells you very little. An 8.6 from 2,000 reviews tells you a lot. Our rule of thumb:</p>\\n<ul>\\n<li>Under 100 reviews: treat the score as a hint, not a fact.</li>\\n<li>Several hundred reviews and 8.5+: you can trust it.</li>\\n<li>Thousands of reviews and 8.0+: a very safe bet, even if it isn't exciting.</li>\\n</ul>\\n<h2>4. Read three bad reviews, not thirty good ones</h2>\\n<p>Sort by the lowest scores and read the three most recent. You're looking for patterns that would bother <i>you</i>: noise, small rooms,\\na broken lift, a building site next door. A complaint about the breakfast doesn't matter if you never eat breakfast.</p>\\n<h2>5. Compare the real total</h2>\\n<p>The headline price is rarely what you pay. Add breakfast, parking and city tax, and check the cancellation terms. A room that's €15 cheaper\\nbut non-refundable isn't always the better deal.</p>\\n<h2>6. Book, and stop looking</h2>\\n<p>Once a hotel passes all five steps, book it. Prices on good hotels in good areas tend to go up, not down, as the dates get closer.</p>\\n<h2>Or skip the five minutes</h2>\\n<p>That's exactly what Top3Hotels does for you: in every city we compare the well-reviewed hotels on the same dates and keep three, the best\\nbudget room, the best value and the best luxury hotel. <a href=\\\"/destinations\\\">Pick a city</a> and you'll see them in one screen.\\nRead the full <a href=\\\"/how-we-choose\\\">method</a>, or see which cities have the <a href=\\\"/guides/cheapest-5-star-hotels-in-europe\\\">cheapest five-star hotels in Europe</a>.</p>\\n\",\"date\":\"2026-10-15\",\"updated\":\"2026-10-15\",\"author\":\"Carlos de Ory\",\"words\":495,\"mins\":3,\"lang\":\"en\",\"alt\":\"como-elegir-hotel\"},{\"lang\":\"es\",\"alt\":\"where-to-stay-in-odense\",\"slug\":\"donde-dormir-en-odense\",\"city\":\"odense\",\"title\":\"Dónde dormir en Odense (2026): 3 hoteles y la mejor zona\",\"description\":\"Odense es pequeña, así que importa más el hotel que el barrio. Nuestras tres opciones para 2026 (económica, calidad-precio y lujo) con precios reales.\",\"h1\":\"Dónde dormir en Odense\",\"dek\":\"Tres hoteles, uno para cada presupuesto, y las únicas preguntas sobre la zona que importan en una ciudad que cruzas a pie en veinte minutos.\",\"tags\":[\"Dinamarca\",\"Guía de ciudad\"],\"body\":\"\\n<p>Odense es la tercera ciudad de Dinamarca, pero el centro es compacto: de la estación a la Casa de H.C. Andersen hay diez minutos a pie,\\ny todo el casco antiguo cabe en un paseo que terminas antes de comer. Eso cambia la forma de elegir hotel. No hace falta\\ndarle mil vueltas al barrio como harías en Copenhague o Hamburgo. Las preguntas que de verdad importan son más sencillas:</p>\\n<ul>\\n<li><b>¿Llegas en coche?</b> Entonces el parking gratis vale más que estar dos calles más cerca de la catedral.</li>\\n<li><b>¿Vienes por H.C. Andersen y el casco antiguo?</b> Entonces duerme a distancia de paseo del centro y deja el coche en casa.</li>\\n<li><b>¿Es un concierto, un congreso o un partido?</b> Entonces mira primero dónde es el evento. Odense es fácil de recorrer, pero no a las once de la noche bajo la lluvia.</li>\\n</ul>\\n<p>Con eso claro, estos son los tres hoteles que reservaríamos hoy en Odense.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> En cada ciudad comparamos hoteles con buenas opiniones para las mismas fechas y nos quedamos con tres:\\nla habitación privada buena más barata (baño propio, opiniones sólidas, sin dormitorios compartidos), la mejor puntuada a un precio normal y el cinco estrellas\\nmejor valorado (o un cuatro estrellas con 8,5 o más si ningún cinco estrellas cumple). Los precios de abajo los consultamos en Booking.com el 15 de octubre de 2026 para el 10 al 12 de noviembre de 2026 (de martes a jueves), dos adultos, una habitación.\\nPara tus fechas serán distintos, así que mira el precio de hoy antes de reservar. <a href=\\\"/how-we-choose\\\">Método completo</a>.</aside>\\n<h2>Los tres hoteles que reservaríamos</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Lujo</span><h3>Hotel Odeon</h3></div>\\n<ul class=\\\"facts\\\"><li>4 estrellas (ningún cinco estrellas de Odense llegó a nuestro listón)</li><li>8,5/10 con 2.756 opiniones</li><li>A unos 500 m del ayuntamiento</li><li><b>222 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>El Hotel Odeon está pegado a ODEON, el auditorio y palacio de congresos de la ciudad, entre la estación de tren y la Casa de H.C. Andersen. Si vienes a un espectáculo, a un congreso o simplemente quieres ir andando a todas partes, la ubicación es difícil de superar.</p><p>Odense no tiene ningún cinco estrellas que supere nuestro filtro de opiniones, así que aquí nuestra opción de «lujo» es el cuatro estrellas superior mejor valorado. Casi 2.800 opiniones con una media de 8,5 son una señal fuerte y estable: sabes lo que vas a encontrar.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> es un hotel urbano grande y moderno, no un boutique con personalidad. Si buscas algo pequeño y cercano, mira nuestra opción de mejor relación calidad-precio.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/odeon.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/odense\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Calidad-precio</span><h3>Villa A Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>3 estrellas</li><li>8,6/10 con 668 opiniones</li><li>A unos 800 m al suroeste del ayuntamiento</li><li>Parking gratis</li><li><b>137 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>Villa A es un hotel pequeño en una calle residencial tranquila, a unos diez o quince minutos andando del centro. Tiene la mejor nota de todos los hoteles que comparamos en Odense, con un precio cercano a la media de la ciudad.</p><p>Esa combinación (las mejores opiniones, precio normal, parking gratis y todo a pie) es justo lo que para nosotros significa buena relación calidad-precio. Sirve para parejas, para un fin de semana sin coche y para viajes de trabajo en los que no necesitas salas de reuniones.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> es pequeño y sencillo: no tiene restaurante ni spa. Reserva con tiempo si vas en fin de semana.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/ansgarhus-motel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/odense\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Económico</span><h3>Nice Nest Boutique Hotel</h3></div>\\n<ul class=\\\"facts\\\"><li>8,4/10 con 109 opiniones</li><li>A unos 1,6 km al este del ayuntamiento</li><li>Parking gratis, bañera de hidromasaje, jardín</li><li><b>98 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>Nice Nest es la habitación privada bien valorada más barata que encontramos en Odense: todas las habitaciones tienen baño propio y hay parking gratis en el mismo hotel. Está a unos veinte minutos a pie del centro, o a pocos minutos en coche o en autobús.</p><p>Si llegas en coche desde Jutlandia o Selandia y quieres una base limpia y tranquila sin pagar precios de centro, este es el tuyo.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> tiene muchas menos opiniones que los otros dos, así que hay menos certeza, y no está en el casco antiguo. Bien si tienes coche, no tanto si no.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/nice-nest.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/odense\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<h2>¿En qué zona de Odense alojarte?</h2>\\n<h3>El casco antiguo y el barrio de H.C. Andersen</h3>\\n<p>Callejuelas empedradas, casas con entramado de madera, la catedral de San Canuto y el nuevo museo Casa de H.C. Andersen. Aquí pasa la mayor parte de su tiempo casi todo el que visita la ciudad,\\ny es la mejor zona para una primera visita sin coche. Hay pocos hoteles y se llenan rápido los fines de semana de verano y en temporada de mercadillos navideños.</p>\\n<h3>Alrededor de la estación y Kongens Have</h3>\\n<p>La zona más práctica si llegas en tren: Odense está en la línea principal entre Copenhague y Jutlandia, y la estación queda a un paseo corto\\ndel centro. Aquí están el Hotel Odeon y varios hoteles de cadena. El parque del Jardín del Rey está justo enfrente de la estación.</p>\\n<h3>Fuera del centro, con parking</h3>\\n<p>En las rondas y hacia la autopista encontrarás hoteles con parking gratis y precios más bajos, entre ellos nuestra opción económica.\\nBuena idea si vas en coche, con familia o si combinas Odense con el castillo de Egeskov o una ruta por Fionia.</p>\\n<h2>Cómo llegar</h2>\\n<ul>\\n<li><b>En tren:</b> los trenes directos desde la estación central de Copenhague tardan algo más de una hora y cuarto; también hay trenes directos desde el aeropuerto de Copenhague.</li>\\n<li><b>En avión:</b> el aeropuerto de Billund está a una hora en coche, más o menos. El de Copenhague es el más grande y tiene tren directo.</li>\\n<li><b>Por la ciudad:</b> a pie. Para trayectos más largos, el tranvía de Odense cruza la ciudad de norte a sur.</li>\\n</ul>\\n<h2>Cuándo suben los precios</h2>\\n<p>Odense es sobre todo una ciudad de negocios y escapadas cortas, así que los precios se mueven con los eventos: grandes congresos, conciertos, las vacaciones de verano y diciembre,\\ncuando los mercadillos navideños atraen a mucha gente el fin de semana. Una estancia entre semana en noviembre es de lo más barato que vas a encontrar en Odense.\\nNuestros precios son justo de una semana así, de modo que cuenta con pagar más un sábado de verano.</p>\\n<h2>Próximamente: el vídeo</h2>\\n<p>Queremos grabar nuestras opciones de Odense este otoño. Cuando el vídeo esté listo lo pondremos en esta página y en la <a href=\\\"/es/odense\\\">página de hoteles de Odense</a>.</p>\\n\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1101,\"mins\":6},{\"lang\":\"es\",\"alt\":\"where-to-stay-in-hamburg\",\"slug\":\"donde-dormir-en-hamburgo\",\"city\":\"hamburg\",\"title\":\"Dónde dormir en Hamburgo (2026): 3 hoteles y la zona ideal\",\"description\":\"Hamburgo es grande y cada zona es distinta. Tres hoteles para 2026 (económico, calidad-precio y lujo) con precios reales y una guía clara de sus barrios.\",\"h1\":\"Dónde dormir en Hamburgo\",\"dek\":\"Una habitación de 60 € junto a la estación, otra de 130 € en la Schanze y un gran hotel de 600 € en el Alster. Para quién es cada uno y qué zona encaja con tu viaje.\",\"tags\":[\"Alemania\",\"Guía de ciudad\"],\"body\":\"\\n<p>Hamburgo no se ve en un solo paseo. El viejo centro mercantil alrededor del Rathaus, el puerto y la Elbphilharmonie, el Reeperbahn,\\nlos cafés de la Schanze y los lagos del Alster son lugares muy distintos, y dónde duermas decide cómo serán tus noches.\\nPor eso en Hamburgo elegiríamos primero la zona y después el hotel. La buena noticia: el S-Bahn y el U-Bahn son rápidos, y casi todo lo que verás abajo está\\na menos de 20 minutos de lo demás.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> En cada ciudad comparamos hoteles con buenas opiniones para las mismas fechas y nos quedamos con tres:\\nla habitación privada buena más barata (baño propio, opiniones sólidas, sin dormitorios compartidos), la mejor puntuada a un precio normal y el cinco estrellas\\nmejor valorado (o un cuatro estrellas con 8,5 o más si ningún cinco estrellas cumple). Los precios de abajo los consultamos en Booking.com el 15 de octubre de 2026 para el 10 al 12 de noviembre de 2026 (de martes a jueves), dos adultos, una habitación.\\nPara tus fechas serán distintos, así que mira el precio de hoy antes de reservar. <a href=\\\"/how-we-choose\\\">Método completo</a>.</aside>\\n<h2>Los tres hoteles que reservaríamos</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Lujo</span><h3>Fairmont Hotel Vier Jahreszeiten</h3></div>\\n<ul class=\\\"facts\\\"><li>5 estrellas</li><li>9,5/10 con 1.299 opiniones</li><li>Junto al Binnenalster, a unos 600 m del Rathaus</li><li><b>608 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>El Vier Jahreszeiten lleva más de un siglo siendo el gran hotel de Hamburgo, y ocupa la mejor dirección de la ciudad: el Neuer Jungfernstieg, mirando de frente al Binnenalster. Calles comerciales a un lado, el lago al otro y el Rathaus a cinco minutos.</p><p>Una media de 9,5 con casi 1.300 opiniones es algo excepcional para un hotel de este tamaño. Es el indicado para un aniversario, una pedida de mano o ese viaje de «una vez al año».</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> el precio. Entre semana en noviembre rondaba los 600 € la noche; los fines de semana y diciembre salen más caros.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/raffleshotelvierjahreszeiten.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/hamburg\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Calidad-precio</span><h3>Superbude Hamburg St. Pauli</h3></div>\\n<ul class=\\\"facts\\\"><li>8,9/10 con 1.523 opiniones</li><li>En el límite del Schanzenviertel, a unos 2,5 km del Rathaus</li><li>Se admiten mascotas</li><li><b>132 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>Superbude es desenfadado, cuidado en el diseño y muy de Hamburgo: muebles reciclados, un bar en el vestíbulo siempre con gente y habitaciones pequeñas pero bien pensadas. Está en el borde de la Schanze, así que tienes los mejores cafés y bares de la ciudad en la puerta y St. Pauli a un paseo corto.</p><p>Los huéspedes lo puntúan por encima de muchos hoteles que cuestan el doble. Por eso es nuestra opción de mejor relación calidad-precio.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> es un híbrido entre hotel y hostel con un público joven y sociable. Asegúrate de reservar una habitación privada con baño propio y no esperes silencio un sábado.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/superbude-hostel-st-pauli.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/hamburg\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Económico</span><h3>CAB20</h3></div>\\n<ul class=\\\"facts\\\"><li>8,5/10 con 12.776 opiniones</li><li>St. Georg, a unos 8 minutos andando de la Hauptbahnhof</li><li>Bar, terraza, recepción 24 horas</li><li><b>60 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>CAB20 es de lo más barato que vas a encontrar en Hamburgo en una habitación privada buena. Más de 12.000 opiniones con una media de 8,5 indican que no es casualidad: las habitaciones son compactas pero limpias, la ubicación junto a la estación central es perfecta si llegas en tren y el Alster queda a diez minutos andando.</p><p>Si solo vas a dormir en la habitación y pasar el día fuera, es la elección sensata.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> las habitaciones son pequeñas (el nombre ya da una pista), y las calles justo detrás de la estación tienen mucho movimiento y están algo descuidadas de noche.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/cab20.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/hamburg\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<h2>¿Qué zona de Hamburgo te conviene?</h2>\\n<h3>Altstadt, Neustadt y el Binnenalster: primera visita y compras</h3>\\n<p>El Rathaus, el Jungfernstieg, las calles comerciales y el lago. Céntrico, elegante, cómodo y tranquilo de noche. Aquí está nuestra opción de lujo.</p>\\n<h3>HafenCity y la Speicherstadt: arquitectura y la Elbphilharmonie</h3>\\n<p>Almacenes de ladrillo rojo junto a los canales (Patrimonio de la Humanidad de la UNESCO), el Miniatur Wunderland y la Elbphilharmonie. Hoteles modernos, ideales para un viaje con concierto; algo vacío al anochecer fuera de las plazas principales.</p>\\n<h3>St. Pauli y el Reeperbahn: vida nocturna</h3>\\n<p>Bares, discotecas, salas de música y el puerto en Landungsbrücken. Ve temprano un domingo al Fischmarkt. Genial si quieres salir, ruidoso si quieres dormir.</p>\\n<h3>Sternschanze: cafés, comida y ambiente de barrio</h3>\\n<p>Tiendas independientes, sitios de brunch y bares llenos todas las noches. Un buen término medio: animado, pero más «de barrio» que el Reeperbahn. Nuestra opción de calidad-precio está en su límite.</p>\\n<h3>St. Georg: junto a la estación y el Außenalster</h3>\\n<p>La base más práctica si vienes en tren. Lange Reihe es una de las calles más agradables de la ciudad para cenar, y el lago grande está a pocos minutos. Las calles pegadas a la estación son más duras; unas pocas manzanas marcan mucha diferencia.</p>\\n<h3>Altona y Ottensen: más tranquilo y local</h3>\\n<p>Más al oeste, con estación propia, las playas del Elba cerca y muchos restaurantes. Bien para estancias largas y para quien repite visita.</p>\\n<h2>Cómo llegar y moverte</h2>\\n<ul>\\n<li><b>Desde el aeropuerto:</b> el S-Bahn va de las terminales a la Hauptbahnhof en unos 25 minutos.</li>\\n<li><b>En tren:</b> la Hauptbahnhof es una de las estaciones con más tráfico de Alemania, con trenes directos desde Berlín, Copenhague, Ámsterdam y la mayoría de grandes ciudades alemanas.</li>\\n<li><b>Por la ciudad:</b> S-Bahn, U-Bahn y los ferris del puerto, que forman parte de la red normal de transporte público. El ferry desde Landungsbrücken es uno de los paseos por un puerto más baratos que existen.</li>\\n</ul>\\n<h2>Cuándo suben los precios</h2>\\n<p>Los hoteles de Hamburgo se disparan durante las grandes ferias, el Cumpleaños del Puerto en mayo, los conciertos importantes y los mercadillos navideños desde finales de noviembre.\\nUna semana tranquila de noviembre o enero es cuando incluso los grandes hoteles bajan. Si tus fechas son flexibles, muévelas unos días y compara.</p>\\n<p>Queremos grabar nuestras opciones de Hamburgo este otoño. El vídeo irá en esta página y en la <a href=\\\"/es/hamburg\\\">página de hoteles de Hamburgo</a>.</p>\\n\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1037,\"mins\":5},{\"lang\":\"es\",\"alt\":\"where-to-stay-in-copenhagen\",\"slug\":\"donde-dormir-en-copenhague\",\"city\":\"copenhagen\",\"title\":\"Dónde dormir en Copenhague (2026): 3 hoteles y qué barrio elegir\",\"description\":\"Copenhague es cara y acertar con el hotel ahorra dinero. Tres opciones para 2026 (económica, calidad-precio y lujo) con precios reales y qué barrio elegir.\",\"h1\":\"Dónde dormir en Copenhague\",\"dek\":\"Una de las ciudades más caras de Europa para dormir. Aquí te contamos dónde rinden más 100 €, 200 € y 300 € la noche.\",\"tags\":[\"Dinamarca\",\"Guía de ciudad\"],\"body\":\"\\n<p>Copenhague es pequeña, llana y está hecha para caminar e ir en bici, pero no es barata: un hotel normal y corriente puede costar 200 € la noche sin problema.\\nPor eso aquí elegir bien importa más que en casi cualquier otra ciudad de Europa. Si aciertas, puedes dormir a diez minutos de Nyhavn por\\nunos 100 €. Si fallas, pagas precio de lujo por una habitación pequeña junto a una ronda de circunvalación.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> En cada ciudad comparamos hoteles con buenas opiniones para las mismas fechas y nos quedamos con tres:\\nla habitación privada buena más barata (baño propio, opiniones sólidas, sin dormitorios compartidos), la mejor puntuada a un precio normal y el cinco estrellas\\nmejor valorado (o un cuatro estrellas con 8,5 o más si ningún cinco estrellas cumple). Los precios de abajo los consultamos en Booking.com el 15 de octubre de 2026 para el 10 al 12 de noviembre de 2026 (de martes a jueves), dos adultos, una habitación.\\nPara tus fechas serán distintos, así que mira el precio de hoy antes de reservar. <a href=\\\"/how-we-choose\\\">Método completo</a>.</aside>\\n<h2>Los tres hoteles que reservaríamos</h2>\\n<article class=\\\"pick pick-lux\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">♛ Lujo</span><h3>1 Hotel Copenhagen</h3></div>\\n<ul class=\\\"facts\\\"><li>5 estrellas</li><li>9,1/10 con 702 opiniones</li><li>Barrio Latino, a unos 550 m de la plaza del Ayuntamiento</li><li><b>301 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>1 Hotel Copenhagen está en el antiguo Barrio Latino, a unos pasos de la Torre Redonda y de la principal calle peatonal. La marca gira en torno a la naturaleza y la sostenibilidad: mucha madera, muchas plantas y un ambiente escandinavo y sereno en lugar de oro y mármol.</p><p>Tiene la mejor nota de los cinco estrellas que comparamos, en el punto más cómodo para recorrer la ciudad a pie.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> unos 300 € la noche entre semana en noviembre, y más en verano. El lujo en Copenhague nunca sale barato.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/1-hotel-copenhagen.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/copenhagen\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<article class=\\\"pick pick-value\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">★ Calidad-precio</span><h3>Kanalhuset</h3></div>\\n<ul class=\\\"facts\\\"><li>9,4/10 con 869 opiniones</li><li>Junto al canal en Christianshavn</li><li>Restaurante propio</li><li><b>207 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>Kanalhuset es un hotel pequeño a orillas de uno de los canales de Christianshavn: casas flotantes bajo la ventana, adoquines y cafés alrededor, y la estación de metro a un paseo corto (va directa al aeropuerto).</p><p>Tiene la nota más alta de los 40 hoteles de Copenhague que comparamos, con un precio solo un poco por encima de la media de la ciudad. Para un fin de semana en pareja, es el que reservaríamos.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> es pequeño, así que se agota pronto, y las habitaciones son bastante distintas entre sí. Lee bien la descripción de cada una antes de reservar.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/kanalhuset.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"value\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/copenhagen\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<article class=\\\"pick pick-budget\\\">\\n<div class=\\\"pick-h\\\"><span class=\\\"chip\\\">€ Económico</span><h3>Wakeup Copenhagen Borgergade</h3></div>\\n<ul class=\\\"facts\\\"><li>8,0/10 con 16.572 opiniones</li><li>Entre Kongens Have y Nyhavn</li><li>Recepción 24 horas, bar</li><li><b>101 €</b> la noche<small> · 10–12 de noviembre de 2026</small></li></ul>\\n<p>Wakeup Borgergade es la habitación privada buena más barata del centro de Copenhague. Las habitaciones son compactas y sencillas, pero con más de 16.000 opiniones sabes exactamente lo que te espera, y la ubicación es excelente: Nyhavn, el castillo de Rosenborg y Kongens Nytorv están a pie.</p><p>Si prefieres gastarte el dinero en comer, en el Tívoli o en un paseo por los canales antes que en la habitación, empieza por aquí.</p>\\n<p class=\\\"catch\\\"><b>La pega:</b> habitaciones pequeñas y nada de extras. Un 8,0 de media es «muy bueno», no «espectacular». Es lo que hay a este precio en esta ciudad.</p>\\n<p class=\\\"ctas\\\"><a class=\\\"btn\\\" rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/wakeup-copenhagen-borgergade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"budget\\\">Ver precios en Booking.com</a> <a class=\\\"btn ghost\\\" href=\\\"/es/copenhagen\\\">Las tres opciones en una página →</a></p>\\n</article>\\n<h2>¿Qué barrio elegir?</h2>\\n<h3>Indre By (el centro histórico): primera visita</h3>\\n<p>Strøget, el Barrio Latino, Nyhavn, los palacios y los principales monumentos. Todo se hace a pie. Caro, lleno de gente en verano y la mejor opción para una primera visita corta.</p>\\n<h3>Christianshavn: canales y carácter</h3>\\n<p>Canales, casas flotantes, la iglesia de Nuestro Salvador y Christiania. Tranquilo, precioso y a una parada de metro del centro. Aquí está nuestra opción de calidad-precio.</p>\\n<h3>Vesterbro: junto a la estación central, comida y bares</h3>\\n<p>El antiguo barrio de los mataderos (Kødbyen), Istedgade y muchos restaurantes buenos y más jóvenes. Práctico si llegas en tren. Los precios suelen ser algo más bajos que en el centro histórico.</p>\\n<h3>Nørrebro y Østerbro: vida de barrio</h3>\\n<p>Nørrebro es diverso, animado y está lleno de sitios pequeños para comer; Østerbro es verde, residencial y muy familiar. Los dos quedan a un trayecto corto en bici del centro.</p>\\n<h3>Ørestad y cerca del aeropuerto: camas más baratas</h3>\\n<p>Hoteles modernos junto a la línea de metro, a menudo mucho más baratos. Bien para una escala corta o un congreso en el Bella Center, con menos encanto para una escapada urbana.</p>\\n<h2>Cómo llegar y moverte</h2>\\n<ul>\\n<li><b>Desde el aeropuerto:</b> el metro llega a Kongens Nytorv y Christianshavn en unos 15 minutos; el tren a la estación central tarda más o menos lo mismo.</li>\\n<li><b>Por la ciudad:</b> a pie, o alquila una bici. Copenhague es una de las ciudades del mundo donde más fácil resulta pedalear.</li>\\n</ul>\\n<h2>Cómo ahorrar en Copenhague</h2>\\n<ul>\\n<li>Comprueba si el desayuno está incluido. En Dinamarca a menudo no lo está, y puede sumar bastante por persona.</li>\\n<li>De domingo a jueves suele ser más barato que viernes y sábado, salvo cuando hay grandes congresos.</li>\\n<li>El verano y las semanas antes de Navidad (la temporada navideña del Tívoli) son las épocas más caras. Noviembre y de enero a marzo, las más baratas.</li>\\n</ul>\\n\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":903,\"mins\":5},{\"lang\":\"es\",\"alt\":\"cheapest-5-star-hotels-in-europe\",\"slug\":\"hoteles-5-estrellas-mas-baratos-de-europa\",\"city\":null,\"title\":\"Los 20 hoteles de 5 estrellas más baratos de Europa (2026)\",\"description\":\"Cinco estrellas de verdad con nota de 8,5 o más, desde unos 92 € la noche. Precios de Booking.com para las mismas fechas. Praga, el Algarve, Polonia y más.\",\"h1\":\"Los 20 hoteles de cinco estrellas más baratos de Europa\",\"dek\":\"Cinco estrellas oficiales, nota de 8,5 o más y desde unos 92 € la noche. Todos los precios consultados para las mismas fechas.\",\"tags\":[\"Europa\",\"Datos\"],\"body\":\"\\n<p>En París o Londres, los cinco estrellas que recomendamos cuestan bastante más de 700 € la noche. En los lugares de abajo, un cinco estrellas de verdad,\\ncon categoría oficial y muy bien valorado por sus huéspedes, cuesta menos que una habitación estándar en el centro de Copenhague.</p>\\n<p>Tomamos todos los hoteles de cinco estrellas de Europa de nuestra base de datos, nos quedamos solo con los que tienen <b>cinco estrellas oficiales</b> y una <b>nota de los huéspedes de 8,5 o más</b>,\\ny consultamos el precio para las mismas fechas en Booking.com: del 10 al 12 de noviembre de 2026 (de martes a jueves), dos adultos, una habitación, consultado el 15 de octubre de 2026. Después los ordenamos por precio.</p>\\n<aside class=\\\"method\\\"><b>Lee esto primero.</b> Los precios de los hoteles cambian cada día. Son precios reales de una semana concreta de temporada baja, no una promesa.\\nUsa la lista para encontrar sitios donde el lujo sale barato y luego mira el precio de hoy para tus fechas. Son precios por noche (el total de dos noches dividido entre dos) tal como aparecían en Booking.com, y puede que no incluyan las tasas turísticas locales.</aside>\\n<h2>La lista</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Dónde</th><th>Huéspedes</th><th>Por noche</th></tr></thead><tbody><tr><td>1</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/hotelsrealsantaeulalia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grande Real Santa Eulália Resort &amp; Hotel Spa</a></td><td><a href=\\\"/es/albufeira\\\">Albufeira</a>, Portugal</td><td>8,5/10 <small>(4.041)</small></td><td><b>92 €</b></td></tr><tr><td>2</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Residence Promenade</a></td><td><a href=\\\"/es/burgas\\\">Burgas</a>, Bulgaria</td><td>9,5/10 <small>(1.005)</small></td><td><b>99 €</b></td></tr><tr><td>3</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/nhgranhotelcasinodeextremadura.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">NH Gran Hotel Casino de Extremadura</a></td><td><a href=\\\"/es/badajoz\\\">Badajoz</a>, España</td><td>9,2/10 <small>(2.451)</small></td><td><b>104 €</b></td></tr><tr><td>4</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/old-royal-post-apartments.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Old Royal Post Boutique Hotel</a></td><td><a href=\\\"/es/prague\\\">Praga</a>, Chequia</td><td>9,6/10 <small>(2.457)</small></td><td><b>104 €</b></td></tr><tr><td>5</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/the-bridge-wroclaw-mgallery-by-sofitel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">The Bridge Wrocław – MGallery</a></td><td><a href=\\\"/es/wroclaw\\\">Breslavia</a>, Polonia</td><td>9,4/10 <small>(2.927)</small></td><td><b>107 €</b></td></tr><tr><td>6</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/radisson-blu-residence-zakopane.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Blu Hotel &amp; Residences</a></td><td><a href=\\\"/es/zakopane\\\">Zakopane</a>, Polonia</td><td>8,8/10 <small>(6.434)</small></td><td><b>110 €</b></td></tr><tr><td>7</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/gdansk_podewils.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Podewils Old Town</a></td><td><a href=\\\"/es/gdansk\\\">Gdansk</a>, Polonia</td><td>9,2/10 <small>(552)</small></td><td><b>116 €</b></td></tr><tr><td>8</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/promenade.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Promenade Hotel Liepāja</a></td><td><a href=\\\"/es/liepaja\\\">Liepāja</a>, Letonia</td><td>9,2/10 <small>(2.167)</small></td><td><b>117 €</b></td></tr><tr><td>9</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/real-marina-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Real Marina Hotel &amp; Spa</a></td><td><a href=\\\"/es/olhao\\\">Olhão</a>, Portugal</td><td>8,7/10 <small>(2.713)</small></td><td><b>119 €</b></td></tr><tr><td>10</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/montebelo-e-spa.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Montebelo Viseu Congress Hotel &amp; Spa</a></td><td><a href=\\\"/es/viseu\\\">Viseu</a>, Portugal</td><td>9,1/10 <small>(973)</small></td><td><b>121 €</b></td></tr><tr><td>11</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ba/mepas-mostar.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Mepas</a></td><td><a href=\\\"/es/mostar\\\">Mostar</a>, Bosnia y Herzegovina</td><td>9,2/10 <small>(2.115)</small></td><td><b>122 €</b></td></tr><tr><td>12</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/acores-atlantico.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Grand Hotel Açores Atlântico</a></td><td><a href=\\\"/es/ponta-delgada\\\">Ponta Delgada</a>, Portugal</td><td>9,2/10 <small>(865)</small></td><td><b>123 €</b></td></tr><tr><td>13</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/prezident.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Prezident Luxury Hotel</a></td><td><a href=\\\"/es/novi-sad\\\">Novi Sad</a>, Serbia</td><td>9,3/10 <small>(869)</small></td><td><b>126 €</b></td></tr><tr><td>14</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/10gr.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">10GR Boutique Hotel &amp; Wine Bar</a></td><td><a href=\\\"/es/rhodes\\\">Rodas</a>, Grecia</td><td>9,5/10 <small>(706)</small></td><td><b>134 €</b></td></tr><tr><td>15</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/palacio-de-aviles-by-melia.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Palacio de Avilés</a></td><td><a href=\\\"/es/aviles\\\">Avilés</a>, España</td><td>9,2/10 <small>(1.515)</small></td><td><b>135 €</b></td></tr><tr><td>16</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/aureaconventocapuchinosbyeurostarshotelcompany.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Áurea Convento Capuchinos</a></td><td><a href=\\\"/es/segovia\\\">Segovia</a>, España</td><td>9,1/10 <small>(2.532)</small></td><td><b>144 €</b></td></tr><tr><td>17</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/radisson-sas-tallinn.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Radisson Collection Hotel</a></td><td><a href=\\\"/es/tallinn\\\">Tallin</a>, Estonia</td><td>9,4/10 <small>(6.055)</small></td><td><b>146 €</b></td></tr><tr><td>18</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/intercontinentalwarsaw.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">InterContinental Warszawa</a></td><td><a href=\\\"/es/warsaw\\\">Varsovia</a>, Polonia</td><td>9,1/10 <small>(10,072)</small></td><td><b>147 €</b></td></tr><tr><td>19</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/eurostars-hotel-de-la-reconquista.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Eurostars Hotel de la Reconquista</a></td><td><a href=\\\"/es/oviedo\\\">Oviedo</a>, España</td><td>9,1/10 <small>(1.547)</small></td><td><b>150 €</b></td></tr><tr><td>20</td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/meliameridaboutiquehotel.html}}\\\" data-t=\\\"guide_booking\\\" data-cat=\\\"lux\\\">Hotel Ilunion Mérida Palace</a></td><td><a href=\\\"/es/merida-spain\\\">Mérida</a>, España</td><td>9,0/10 <small>(6.151)</small></td><td><b>153 €</b></td></tr></tbody></table></div>\\n<h2>Por qué merece la pena cada uno</h2>\\n<ol class=\\\"notes\\\"><li><b>Grande Real Santa Eulália Resort &amp; Hotel Spa, Albufeira (92 €).</b> Un resort en primera línea de playa en el Algarve, con piscinas interior y exterior y spa. Noviembre es temporada baja, y justo por eso sale tan barato.</li><li><b>Hotel Residence Promenade, Burgas (99 €).</b> En el paseo marítimo del mar Negro, en el centro de Burgas, y con una de las notas más altas de la lista.</li><li><b>NH Gran Hotel Casino de Extremadura, Badajoz (104 €).</b> Un cinco estrellas con casino propio, cerca de la frontera con Portugal. Una parada estupenda en un viaje por carretera entre Madrid y Lisboa.</li><li><b>Old Royal Post Boutique Hotel, Praga (104 €).</b> En Malá Strana, a los pies del castillo y a pocos minutos del puente de Carlos. La mejor ubicación de la lista.</li><li><b>The Bridge Wrocław – MGallery, Breslavia (107 €).</b> En la isla de la Catedral, la parte más antigua de Breslavia, con spa y sauna. Acabado de cinco estrellas a precio de tres.</li><li><b>Radisson Blu Hotel &amp; Residences, Zakopane (110 €).</b> Un resort de montaña en los Tatras con piscina cubierta y spa. Más de 6.000 opiniones y muy pensado para familias.</li><li><b>Podewils Old Town, Gdansk (116 €).</b> Un hotel pequeño y clásico junto al río, frente al casco antiguo de Gdansk. Tiene menos opiniones que la mayoría de esta lista, pero son excelentes de forma constante.</li><li><b>Promenade Hotel Liepāja, Liepāja (117 €).</b> Junto al canal del puerto en la ciudad costera y musical de Letonia. Parking gratis y spa.</li><li><b>Real Marina Hotel &amp; Spa, Olhão (119 €).</b> Frente a la laguna de la Ría Formosa, en el Algarve oriental, con piscinas interior y exterior. Una alternativa más tranquila y local que Albufeira.</li><li><b>Montebelo Viseu Congress Hotel &amp; Spa, Viseu (121 €).</b> Un hotel con spa y piscinas en plena región vinícola del Dão. Combínalo con la visita a algunas bodegas.</li><li><b>Hotel Mepas, Mostar (122 €).</b> Un cinco estrellas moderno con piscina cubierta y spa, a poca distancia en coche del famoso Puente Viejo.</li><li><b>Grand Hotel Açores Atlântico, Ponta Delgada (123 €).</b> En la avenida marítima de la capital de São Miguel, con piscina cubierta. La base para ver lagos de cráter y aguas termales.</li><li><b>Prezident Luxury Hotel, Novi Sad (126 €).</b> Un hotel con spa y piscinas interior y exterior en la segunda ciudad de Serbia.</li><li><b>10GR Boutique Hotel &amp; Wine Bar, Rodas (134 €).</b> Un hotel boutique solo para adultos dentro de la ciudad medieval de Rodas, con bar de vinos propio.</li><li><b>Palacio de Avilés, Avilés (135 €).</b> Un palacio histórico en la plaza mayor de Avilés, en la costa verde del norte de España.</li><li><b>Áurea Convento Capuchinos, Segovia (144 €).</b> Un antiguo convento reconvertido, con spa y a un paseo del acueducto romano. Excursión fácil desde Madrid.</li><li><b>Radisson Collection Hotel, Tallin (146 €).</b> Un hotel en torre con vistas al casco antiguo, piscina y spa. Más de 6.000 opiniones con una media de 9,4.</li><li><b>InterContinental Warszawa, Varsovia (147 €).</b> Un cinco estrellas de gran ciudad, con piscina en una planta alta y más de 10.000 opiniones. El lujo de capital más barato de la lista.</li><li><b>Eurostars Hotel de la Reconquista, Oviedo (150 €).</b> El hotel emblemático de Oviedo, en un edificio histórico del centro.</li><li><b>Hotel Ilunion Mérida Palace, Mérida (153 €).</b> En la plaza de España de Mérida, con piscina en la azotea y a un paseo corto del teatro romano.</li></ol>\\n<h2>El patrón: dónde sale barato el lujo en Europa</h2>\\n<ul>\\n<li><b>Segundas ciudades, no capitales.</b> Breslavia, Gdansk, Oviedo, Mérida, Viseu, Novi Sad: hoteles excelentes pensados para negocios y bodas, con mucha menos demanda turística que los grandes nombres.</li>\\n<li><b>Destinos de playa fuera de temporada.</b> El Algarve, el mar Negro y Rodas en noviembre cuestan una fracción de lo que piden en agosto, y el tiempo a menudo sigue siendo bueno para pasear.</li>\\n<li><b>Polonia, Portugal y la España interior.</b> Estos tres países suman más de la mitad de la lista.</li>\\n<li><b>Las dos grandes excepciones: Praga y Varsovia.</b> Cinco estrellas en capitales, con muy buena ubicación, por menos de 150 €.</li>\\n</ul>\\n<h2>Cómo encontrar lujo barato por tu cuenta</h2>\\n<ol>\\n<li><b>Alójate entre semana.</b> Los hoteles de negocios bajan el fin de semana; los vacacionales bajan de domingo a jueves. Mira las dos opciones.</li>\\n<li><b>Busca en la ciudad de al lado.</b> Segovia en lugar de Madrid, Olhão en lugar de Faro, Breslavia en lugar de Cracovia.</li>\\n<li><b>No te fíes solo de las estrellas.</b> Hay muchos «cinco estrellas» con un 7,5. Nuestra regla: cinco estrellas oficiales <i>y</i> 8,5 o más de los huéspedes.</li>\\n<li><b>Suma los extras.</b> Desayuno, parking y tasa turística pueden añadir de 30 a 60 € por noche. Compara el total, no el precio del titular.</li>\\n</ol>\\n<p>Cada ciudad de esta lista tiene su propia página con nuestras tres opciones (económica, calidad-precio y lujo), para que compares el cinco estrellas\\ncon alternativas más baratas antes de reservar. Empieza por <a href=\\\"/es/prague\\\">Praga</a>, <a href=\\\"/es/wroclaw\\\">Breslavia</a> o <a href=\\\"/es/albufeira\\\">Albufeira</a>.</p>\\n\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1267,\"mins\":6},{\"lang\":\"es\",\"alt\":\"how-to-choose-a-hotel\",\"slug\":\"como-elegir-hotel\",\"city\":null,\"title\":\"Cómo elegir hotel en 5 minutos (sin leer 500 anuncios)\",\"description\":\"Elige hotel rápido: decide tu nivel, elige la zona, lee bien las opiniones y compara el precio total real. El mismo método que usamos en Top3Hotels.\",\"h1\":\"Cómo elegir hotel en cinco minutos\",\"dek\":\"Las webs de reservas te enseñan 500 opciones. Tú necesitas una. Este es el método que usamos en cada ciudad.\",\"tags\":[\"Consejos\",\"Método\"],\"body\":\"\\n<p>Mucha gente dedica más tiempo a elegir el hotel que a elegir la ciudad. Abres una web de reservas, ves cientos de opciones, ordenas por precio, luego por\\nnota, abres veinte pestañas y una hora después reservas el primero que viste. El problema no es que falten opciones. Es que sobran.</p>\\n<p>Este es el método de cinco minutos que usamos para elegir tres hoteles en cada ciudad de Top3Hotels. Te sirve igual para tus propios viajes.</p>\\n<h2>1. Decide tu nivel antes de mirar</h2>\\n<p>Antes de ver una sola foto, decide cuál de estos tres viajes es:</p>\\n<ul>\\n<li><b>Económico:</b> solo necesitas una habitación privada limpia, con baño propio, en un sitio seguro y práctico. Vas a pasar el día fuera.</li>\\n<li><b>Calidad-precio:</b> quieres un sitio que de verdad disfrutes, con opiniones muy buenas, a un precio normal para la ciudad.</li>\\n<li><b>Lujo:</b> el hotel forma parte del viaje. Un aniversario, un capricho, un «una vez al año».</li>\\n</ul>\\n<p>Esta sola decisión elimina alrededor del 80% de los anuncios. También es la razón por la que mostramos exactamente un hotel por nivel, y no una lista larga.</p>\\n<h2>2. Elige la zona y luego el hotel</h2>\\n<p>Un hotel estupendo en el sitio equivocado te estropea una escapada. Busca uno o dos barrios que encajen con tu viaje (primera visita, vida nocturna,\\ncomida, tranquilidad, cerca de la estación) y mira solo hoteles ahí. En ciudades pequeñas (Odense, Brujas, Salzburgo) casi da igual;\\nen las grandes (Londres, París, Hamburgo) importa más que cualquier otra cosa.</p>\\n<h2>3. Lee la nota y el número de opiniones a la vez</h2>\\n<p>Un 9,6 con 12 opiniones dice muy poco. Un 8,6 con 2.000 opiniones dice mucho. Nuestra regla práctica:</p>\\n<ul>\\n<li>Menos de 100 opiniones: toma la nota como una pista, no como un dato.</li>\\n<li>Varios cientos de opiniones y 8,5 o más: te puedes fiar.</li>\\n<li>Miles de opiniones y 8,0 o más: una apuesta muy segura, aunque no sea emocionante.</li>\\n</ul>\\n<h2>4. Lee tres opiniones malas, no treinta buenas</h2>\\n<p>Ordena por las notas más bajas y lee las tres más recientes. Buscas patrones que te molestarían <i>a ti</i>: ruido, habitaciones pequeñas,\\nun ascensor estropeado, una obra al lado. Una queja sobre el desayuno da igual si nunca desayunas.</p>\\n<h2>5. Compara el total real</h2>\\n<p>El precio que ves primero casi nunca es lo que pagas. Suma desayuno, parking y tasa turística, y revisa las condiciones de cancelación. Una habitación 15 € más barata\\npero sin reembolso no siempre es mejor negocio.</p>\\n<h2>6. Reserva y deja de mirar</h2>\\n<p>Cuando un hotel supera los cinco pasos, resérvalo. Los precios de los buenos hoteles en buenas zonas suelen subir, no bajar, a medida que se acercan las fechas.</p>\\n<h2>O sáltate los cinco minutos</h2>\\n<p>Eso es justo lo que Top3Hotels hace por ti: en cada ciudad comparamos los hoteles bien valorados para las mismas fechas y nos quedamos con tres, la mejor\\nhabitación económica, la mejor calidad-precio y el mejor hotel de lujo. <a href=\\\"/es/destinations\\\">Elige una ciudad</a> y los verás en una sola pantalla.\\nLee el <a href=\\\"/how-we-choose\\\">método completo</a> o mira qué ciudades tienen los <a href=\\\"/es/guides/hoteles-5-estrellas-mas-baratos-de-europa\\\">cinco estrellas más baratos de Europa</a>.</p>\\n\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":511,\"mins\":3},{\"lang\":\"en\",\"alt\":\"mejores-hoteles-baratos-menos-de-60-nota-9\",\"slug\":\"best-budget-hotels-under-60-rated-9\",\"city\":null,\"title\":\"Best budget hotels under €60, rated 9+ by guests (2026)\",\"description\":\"15 budget hotels under €60 a night with a guest score of 9 or more, from €19 in the Philippines to €60 in Bulgaria. Real prices for November 2026.\",\"h1\":\"Best budget hotels under €60 a night, rated 9+ by guests\",\"dek\":\"Only 15 of our budget picks cost €60 or less and score 9 or higher. Here they are, with the trade-offs.\",\"tags\":[\"Data\",\"Budget\"],\"body\":\"<p>A guest score of 9 or more on Booking.com is hard to earn. Most hotels never get there, and the ones that do usually charge for it. We wanted to know how many hotels in our database pass that bar while still costing less than €60 a night. The answer is a short list: <b>15 hotels</b> in 15 different cities, from Cambodia to Mexico.</p>\\n<p>All prices are reference prices seen on Booking.com for a two-night stay from 10 to 12 November 2026, two adults, one room, shown per night. Prices move every day, so check today's price for your own dates before you book.</p>\\n<aside class=\\\"method\\\"><b>How we picked.</b> We started from the budget pick in every city we cover: the cheapest good private room, with its own bathroom and solid reviews, no dorms. From those, we kept only hotels priced at €60 a night or less and with a guest score of 9.0 or higher. 15 of the 15 hotels in this set qualify, so every one of them made the list. They are ranked by guest score, and by price when two scores tie.</aside>\\n<h2>The 15 hotels that qualify</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>City</th><th>Score (reviews)</th><th>Per night</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/siem-reap\\\">Mango Kesararam</a></td><td>Siem Reap, Cambodia</td><td>9.9 <small>(757)</small></td><td><b>€26</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/maison-kesararam.html}}\\\">See prices</a></td></tr><tr><td>2</td><td><a href=\\\"/cluj-napoca\\\">Camino Home 2 Boutique Hotel</a></td><td>Cluj-Napoca, Romania</td><td>9.6 <small>(364)</small></td><td><b>€56</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/camino-home-2.html}}\\\">See prices</a></td></tr><tr><td>3</td><td><a href=\\\"/hoi-an\\\">Serene Nature Boutique Resort &amp; Spa</a></td><td>Hoi An, Vietnam</td><td>9.5 <small>(1,152)</small></td><td><b>€22</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/serene-nature-amp-spa.html}}\\\">See prices</a></td></tr><tr><td>4</td><td><a href=\\\"/udaipur\\\">Madri Haveli</a></td><td>Udaipur, India</td><td>9.5 <small>(699)</small></td><td><b>€41</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/madri-haveli.html}}\\\">See prices</a></td></tr><tr><td>5</td><td><a href=\\\"/batumi\\\">Hotel Park</a></td><td>Batumi, Georgia</td><td>9.5 <small>(825)</small></td><td><b>€45</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ge/park-batumi12.html}}\\\">See prices</a></td></tr><tr><td>6</td><td><a href=\\\"/culiacan\\\">Neo Business Hotel</a></td><td>Culiacan, Mexico</td><td>9.4 <small>(328)</small></td><td><b>€40</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mx/santa-fe-express.html}}\\\">See prices</a></td></tr><tr><td>7</td><td><a href=\\\"/conil-de-la-frontera\\\">Hotel Leonor Conil</a></td><td>Conil de la Frontera, Spain</td><td>9.4 <small>(819)</small></td><td><b>€55</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/leonor-conil.html}}\\\">See prices</a></td></tr><tr><td>8</td><td><a href=\\\"/suzhou\\\">Cendre Hotel (Lingering Garden and Tiger Hill)</a></td><td>Suzhou, China</td><td>9.3 <small>(560)</small></td><td><b>€22</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xin-de-jing-pin-jiu-dian-su-zhou-dian.html}}\\\">See prices</a></td></tr><tr><td>9</td><td><a href=\\\"/can-tho\\\">LION 11 Can Tho Hotel</a></td><td>Can Tho, Vietnam</td><td>9.3 <small>(811)</small></td><td><b>€22</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/lion-11-can-tho.html}}\\\">See prices</a></td></tr><tr><td>10</td><td><a href=\\\"/liepaja\\\">Roze Kurmajas Apartments</a></td><td>Liepaja, Latvia</td><td>9.3 <small>(747)</small></td><td><b>€50</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/roze-kurmajas-apartments.html}}\\\">See prices</a></td></tr><tr><td>11</td><td><a href=\\\"/puerto-princesa\\\">Mongki's Pension House</a></td><td>Puerto Princesa, Philippines</td><td>9.2 <small>(1,331)</small></td><td><b>€19</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ph/mongkis-pensionhouse.html}}\\\">See prices</a></td></tr><tr><td>12</td><td><a href=\\\"/guilin\\\">O-LIVE Social Hotel Downtown Guilin</a></td><td>Guilin, China</td><td>9.2 <small>(520)</small></td><td><b>€35</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/gui-lin-di-zhong-hai-jiu-dian.html}}\\\">See prices</a></td></tr><tr><td>13</td><td><a href=\\\"/hangzhou\\\">Hangzhou Lanshe hotel</a></td><td>Hangzhou, China</td><td>9.2 <small>(888)</small></td><td><b>€37</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/chi-chi-yi-zhu-jiu-dian.html}}\\\">See prices</a></td></tr><tr><td>14</td><td><a href=\\\"/almaty\\\">D'Rami</a></td><td>Almaty, Kazakhstan</td><td>9.2 <small>(633)</small></td><td><b>€39</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kz/rami.html}}\\\">See prices</a></td></tr><tr><td>15</td><td><a href=\\\"/burgas\\\">Hotel Luxor</a></td><td>Burgas, Bulgaria</td><td>9.2 <small>(387)</small></td><td><b>€60</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/luxor.html}}\\\">See prices</a></td></tr></tbody></table></div>\\n<h2>What the numbers say</h2>\\n<p>The average price across the 15 hotels is about €38 a night, and the average guest score is 9.4. The cheapest room on the list costs €19. The most expensive sits right on the limit at €60. Every hotel has at least 328 reviews, so none of these scores rests on a handful of opinions.</p>\\n<p>Geography explains most of the prices. Nine of the 15 hotels are in Asia, and the five cheapest rooms are all there. Europe and the Caucasus have five: Cluj-Napoca, Conil de la Frontera, Liepāja, Burgas and Batumi. They cost more, between €45 and €60, but they are still rated 9.2 or higher. Mexico has one, in Culiacán.</p>\\n<h2>The standouts</h2>\\n<h3>Highest score: Mango Kesararam, Siem Reap</h3>\\n<p><a href=\\\"/siem-reap\\\">Mango Kesararam</a> is the top-rated hotel on the list at 9.9 from 757 reviews, and it costs €26 a night. A 9.9 is close to the ceiling of the scale. With more than 750 reviews behind it, that is a strong signal, not a lucky streak. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/maison-kesararam.html}}\\\">See prices</a>.</p>\\n<h3>Cheapest: Mongki's Pension House, Puerto Princesa</h3>\\n<p><a href=\\\"/puerto-princesa\\\">Mongki's Pension House</a> costs €19 a night and has the most reviews in this group, 1,331, with a score of 9.2. The word \\\"pension\\\" in the name is a fair hint: expect a simple guesthouse rather than a full-service hotel. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ph/mongkis-pensionhouse.html}}\\\">See prices</a>.</p>\\n<h3>Four stars for about €22: Serene Nature, Hoi An</h3>\\n<p><a href=\\\"/hoi-an\\\">Serene Nature Boutique Resort &amp; Spa</a> combines a 9.5 score, 1,152 reviews and a four-star rating for €22 a night. The trade-off is location: it is listed in Cam Thanh, not in the old town, so check the map against your plans. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/serene-nature-amp-spa.html}}\\\">See prices</a>.</p>\\n<h3>Best in Europe: Camino Home 2, Cluj-Napoca</h3>\\n<p><a href=\\\"/cluj-napoca\\\">Camino Home 2 Boutique Hotel</a> scores 9.6 from 364 reviews at €56. It has no official star rating on Booking.com, so do not use stars to judge it. The guest score is the better guide here. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/camino-home-2.html}}\\\">See prices</a>.</p>\\n<h3>Spain: Hotel Leonor Conil</h3>\\n<p><a href=\\\"/conil-de-la-frontera\\\">Hotel Leonor Conil</a> is the only Spanish hotel on the list: 9.4 from 819 reviews at €55 a night. It is a two-star, so keep expectations on facilities modest. Guests clearly rate what it does offer. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/leonor-conil.html}}\\\">See prices</a>.</p>\\n<h2>The trade-offs to know</h2>\\n<ul>\\n<li><b>Review counts vary.</b> The range runs from 328 reviews (<a href=\\\"/culiacan\\\">Neo Business Hotel</a>) to 1,331. A 9.4 from 328 guests is still solid, but it moves faster than a score built on a thousand reviews.</li>\\n<li><b>Stars and scores do not match.</b> Two hotels here are two-stars and one has no star rating at all. Five are four-stars. A high score means guests were happy with what they paid for. It does not mean a bigger room or a pool.</li>\\n<li><b>Not every pick is a classic hotel.</b> <a href=\\\"/liepaja\\\">Roze Kurmajas Apartments</a> is an apartment property, according to its name. That can mean more space, but check how check-in works.</li>\\n<li><b>Location is not always central.</b> Some area labels are a district or a street address, not the old town. Look at the map before you book.</li>\\n<li><b>The €60 line is tight.</b> <a href=\\\"/burgas\\\">Hotel Luxor</a> is at exactly €60 on our dates. On other nights it may cost more.</li>\\n</ul>\\n<h2>Where €60 goes furthest</h2>\\n<p>China has three entries: <a href=\\\"/suzhou\\\">Cendre Hotel (Lingering Garden and Tiger Hill)</a> at €22, <a href=\\\"/guilin\\\">O-LIVE Social Hotel Downtown Guilin</a> at €35 and <a href=\\\"/hangzhou\\\">Hangzhou Lanshe hotel</a> at €37. All three are four-stars with scores of 9.2 or 9.3. Vietnam has two: Serene Nature in Hoi An and <a href=\\\"/can-tho\\\">LION 11 Can Tho Hotel</a> at €22 with 811 reviews. In these cities, €60 buys far more than a basic room. In Suzhou or Can Tho it would cover two nights.</p>\\n<p>Further west the money buys less, but the quality bar is the same. <a href=\\\"/batumi\\\">Hotel Park</a> in Georgia scores 9.5 from 825 reviews at €45, and <a href=\\\"/almaty\\\">D'Rami</a> in Kazakhstan scores 9.2 at €39. <a href=\\\"/udaipur\\\">Madri Haveli</a> in India sits in between at €41, with 9.5 from 699 reviews.</p>\\n<h2>How to use this list</h2><p>Treat it as a shortlist, not a booking order. Open the city page to see the other two hotels we picked there, then check the price for your own dates. Read the most recent reviews, look at the map and compare the total price with taxes. You can read the full method on <a href=\\\"/how-we-choose\\\">how we choose hotels</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1088,\"mins\":5},{\"lang\":\"es\",\"alt\":\"best-budget-hotels-under-60-rated-9\",\"slug\":\"mejores-hoteles-baratos-menos-de-60-nota-9\",\"city\":null,\"title\":\"Hoteles baratos por menos de 60 € con nota de 9+ (2026)\",\"description\":\"15 hoteles económicos por menos de 60 € la noche y con nota de 9 o más, de 19 € en Filipinas a 60 € en Bulgaria. Precios reales de noviembre de 2026.\",\"h1\":\"Los mejores hoteles baratos por menos de 60 € la noche con nota de 9 o más\",\"dek\":\"Solo 15 de nuestras opciones económicas cuestan 60 € o menos y sacan un 9 o más. Aquí las tienes, con sus pegas.\",\"tags\":[\"Data\",\"Económico\"],\"body\":\"<p>Una nota de 9 o más en Booking.com cuesta mucho de conseguir. La mayoría de los hoteles nunca llegan, y los que llegan suelen cobrarlo. Quisimos saber cuántos hoteles de nuestra base de datos superan ese listón y aun así cuestan menos de 60 € la noche. La respuesta es una lista corta: <b>15 hoteles</b> en 15 ciudades distintas, de Camboya a México.</p>\\n<p>Todos los precios son de referencia: los vimos en Booking.com para una estancia de dos noches, del 10 al 12 de noviembre de 2026, dos adultos y una habitación, y los mostramos por noche. Cambian a diario, así que mira el precio de hoy para tus fechas antes de reservar.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> Partimos de la opción económica de cada ciudad que cubrimos: la habitación privada buena más barata, con baño propio y buenas opiniones, sin dormitorios compartidos. De ahí nos quedamos solo con los hoteles a 60 € la noche o menos y con una nota de 9,0 o más. Cumplen 15 de los 15 hoteles de este grupo, así que entran todos. Los ordenamos por nota y, si empatan, por precio.</aside>\\n<h2>Los 15 hoteles que cumplen</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Ciudad</th><th>Nota (opiniones)</th><th>Por noche</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/es/siem-reap\\\">Mango Kesararam</a></td><td>Siem Reap, Cambodia</td><td>9,9 <small>(757)</small></td><td><b>26 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/maison-kesararam.html}}\\\">Ver precios</a></td></tr><tr><td>2</td><td><a href=\\\"/es/cluj-napoca\\\">Camino Home 2 Boutique Hotel</a></td><td>Cluj-Napoca, Romania</td><td>9,6 <small>(364)</small></td><td><b>56 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/camino-home-2.html}}\\\">Ver precios</a></td></tr><tr><td>3</td><td><a href=\\\"/es/hoi-an\\\">Serene Nature Boutique Resort &amp; Spa</a></td><td>Hoi An, Vietnam</td><td>9,5 <small>(1.152)</small></td><td><b>22 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/serene-nature-amp-spa.html}}\\\">Ver precios</a></td></tr><tr><td>4</td><td><a href=\\\"/es/udaipur\\\">Madri Haveli</a></td><td>Udaipur, India</td><td>9,5 <small>(699)</small></td><td><b>41 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/madri-haveli.html}}\\\">Ver precios</a></td></tr><tr><td>5</td><td><a href=\\\"/es/batumi\\\">Hotel Park</a></td><td>Batumi, Georgia</td><td>9,5 <small>(825)</small></td><td><b>45 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ge/park-batumi12.html}}\\\">Ver precios</a></td></tr><tr><td>6</td><td><a href=\\\"/es/culiacan\\\">Neo Business Hotel</a></td><td>Culiacan, Mexico</td><td>9,4 <small>(328)</small></td><td><b>40 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mx/santa-fe-express.html}}\\\">Ver precios</a></td></tr><tr><td>7</td><td><a href=\\\"/es/conil-de-la-frontera\\\">Hotel Leonor Conil</a></td><td>Conil de la Frontera, Spain</td><td>9,4 <small>(819)</small></td><td><b>55 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/leonor-conil.html}}\\\">Ver precios</a></td></tr><tr><td>8</td><td><a href=\\\"/es/suzhou\\\">Cendre Hotel (Lingering Garden and Tiger Hill)</a></td><td>Suzhou, China</td><td>9,3 <small>(560)</small></td><td><b>22 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xin-de-jing-pin-jiu-dian-su-zhou-dian.html}}\\\">Ver precios</a></td></tr><tr><td>9</td><td><a href=\\\"/es/can-tho\\\">LION 11 Can Tho Hotel</a></td><td>Can Tho, Vietnam</td><td>9,3 <small>(811)</small></td><td><b>22 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/lion-11-can-tho.html}}\\\">Ver precios</a></td></tr><tr><td>10</td><td><a href=\\\"/es/liepaja\\\">Roze Kurmajas Apartments</a></td><td>Liepaja, Latvia</td><td>9,3 <small>(747)</small></td><td><b>50 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/roze-kurmajas-apartments.html}}\\\">Ver precios</a></td></tr><tr><td>11</td><td><a href=\\\"/es/puerto-princesa\\\">Mongki's Pension House</a></td><td>Puerto Princesa, Philippines</td><td>9,2 <small>(1.331)</small></td><td><b>19 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ph/mongkis-pensionhouse.html}}\\\">Ver precios</a></td></tr><tr><td>12</td><td><a href=\\\"/es/guilin\\\">O-LIVE Social Hotel Downtown Guilin</a></td><td>Guilin, China</td><td>9,2 <small>(520)</small></td><td><b>35 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/gui-lin-di-zhong-hai-jiu-dian.html}}\\\">Ver precios</a></td></tr><tr><td>13</td><td><a href=\\\"/es/hangzhou\\\">Hangzhou Lanshe hotel</a></td><td>Hangzhou, China</td><td>9,2 <small>(888)</small></td><td><b>37 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/chi-chi-yi-zhu-jiu-dian.html}}\\\">Ver precios</a></td></tr><tr><td>14</td><td><a href=\\\"/es/almaty\\\">D'Rami</a></td><td>Almaty, Kazakhstan</td><td>9,2 <small>(633)</small></td><td><b>39 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kz/rami.html}}\\\">Ver precios</a></td></tr><tr><td>15</td><td><a href=\\\"/es/burgas\\\">Hotel Luxor</a></td><td>Burgas, Bulgaria</td><td>9,2 <small>(387)</small></td><td><b>60 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/luxor.html}}\\\">Ver precios</a></td></tr></tbody></table></div>\\n<h2>Lo que dicen los números</h2>\\n<p>El precio medio de los 15 hoteles ronda los 38 € la noche y la nota media es de 9,4. La habitación más barata cuesta 19 €. La más cara se queda justo en el límite, con 60 €. Todos tienen al menos 328 opiniones, así que ninguna nota depende de cuatro comentarios.</p>\\n<p>La geografía explica casi todo. Nueve de los 15 hoteles están en Asia, y ahí están también las cinco habitaciones más baratas. Europa y el Cáucaso aportan cinco: Cluj-Napoca, Conil de la Frontera, Liepāja, Burgas y Batumi. Cuestan más, entre 45 y 60 €, pero todos tienen un 9,2 o más. México tiene uno, en Culiacán.</p>\\n<h2>Los que destacan</h2>\\n<h3>La nota más alta: Mango Kesararam, Siem Reap</h3>\\n<p><a href=\\\"/es/siem-reap\\\">Mango Kesararam</a> es el mejor valorado de la lista, con un 9,9 sobre 757 opiniones, y cuesta 26 € la noche. Un 9,9 está casi en el techo de la escala. Con más de 750 opiniones detrás, es una señal fiable y no una racha de suerte. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/maison-kesararam.html}}\\\">Ver precios</a>.</p>\\n<h3>El más barato: Mongki's Pension House, Puerto Princesa</h3>\\n<p><a href=\\\"/es/puerto-princesa\\\">Mongki's Pension House</a> cuesta 19 € la noche y es el que más opiniones tiene del grupo, 1.331, con un 9,2. La palabra \\\"pension\\\" del nombre ya te da una pista: cuenta con una casa de huéspedes sencilla, no con un hotel de servicio completo. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ph/mongkis-pensionhouse.html}}\\\">Ver precios</a>.</p>\\n<h3>Cuatro estrellas por unos 22 €: Serene Nature, Hoi An</h3>\\n<p><a href=\\\"/es/hoi-an\\\">Serene Nature Boutique Resort &amp; Spa</a> junta un 9,5, 1.152 opiniones y cuatro estrellas por 22 € la noche. La pega es la ubicación: aparece en Cam Thanh, no en el casco antiguo, así que mira el mapa antes de decidir. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/serene-nature-amp-spa.html}}\\\">Ver precios</a>.</p>\\n<h3>El mejor de Europa: Camino Home 2, Cluj-Napoca</h3>\\n<p><a href=\\\"/es/cluj-napoca\\\">Camino Home 2 Boutique Hotel</a> saca un 9,6 sobre 364 opiniones por 56 €. No tiene categoría oficial de estrellas en Booking.com, así que no te fíes de las estrellas para juzgarlo. Aquí la nota de los huéspedes dice más. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/camino-home-2.html}}\\\">Ver precios</a>.</p>\\n<h3>España: Hotel Leonor Conil</h3>\\n<p><a href=\\\"/es/conil-de-la-frontera\\\">Hotel Leonor Conil</a> es el único hotel español de la lista: un 9,4 sobre 819 opiniones a 55 € la noche. Es un dos estrellas, así que no esperes grandes instalaciones. Lo que ofrece, los huéspedes lo valoran mucho. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/leonor-conil.html}}\\\">Ver precios</a>.</p>\\n<h2>Lo que conviene saber</h2>\\n<ul>\\n<li><b>El número de opiniones cambia mucho.</b> Va de 328 (<a href=\\\"/es/culiacan\\\">Neo Business Hotel</a>) a 1.331. Un 9,4 de 328 huéspedes sigue siendo sólido, pero se mueve más rápido que una nota construida con mil opiniones.</li>\\n<li><b>Estrellas y nota no van de la mano.</b> Aquí hay dos hoteles de dos estrellas y uno sin categoría. Cinco son de cuatro estrellas. Una nota alta significa que la gente quedó contenta con lo que pagó. No significa una habitación más grande ni piscina.</li>\\n<li><b>No todo es un hotel clásico.</b> <a href=\\\"/es/liepaja\\\">Roze Kurmajas Apartments</a> son apartamentos, según su propio nombre. Eso puede darte más espacio, pero revisa cómo funciona la llegada.</li>\\n<li><b>No siempre está en el centro.</b> Algunas zonas son un distrito o una dirección, no el casco antiguo. Mira el mapa antes de reservar.</li>\\n<li><b>El límite de 60 € es justo.</b> <a href=\\\"/es/burgas\\\">Hotel Luxor</a> sale exactamente a 60 € en nuestras fechas. Otras noches puede costar más.</li>\\n</ul>\\n<h2>Dónde rinden más 60 €</h2>\\n<p>China tiene tres hoteles: <a href=\\\"/es/suzhou\\\">Cendre Hotel (Lingering Garden and Tiger Hill)</a> a 22 €, <a href=\\\"/es/guilin\\\">O-LIVE Social Hotel Downtown Guilin</a> a 35 € y <a href=\\\"/es/hangzhou\\\">Hangzhou Lanshe hotel</a> a 37 €. Los tres son de cuatro estrellas y tienen un 9,2 o un 9,3. Vietnam tiene dos: Serene Nature en Hoi An y <a href=\\\"/es/can-tho\\\">LION 11 Can Tho Hotel</a>, a 22 € con 811 opiniones. En estas ciudades, con 60 € pagas mucho más que una habitación básica. En Suzhou o Can Tho te llega para dos noches.</p>\\n<p>Más al oeste el dinero da para menos, pero el listón de calidad es el mismo. <a href=\\\"/es/batumi\\\">Hotel Park</a>, en Georgia, tiene un 9,5 sobre 825 opiniones a 45 €, y <a href=\\\"/es/almaty\\\">D'Rami</a>, en Kazajistán, un 9,2 a 39 €. <a href=\\\"/es/udaipur\\\">Madri Haveli</a>, en la India, queda en medio con 41 € y un 9,5 sobre 699 opiniones.</p>\\n<h2>Cómo usar esta lista</h2><p>Tómala como una lista corta, no como una orden de reserva. Abre la página de la ciudad para ver los otros dos hoteles que elegimos allí y mira el precio para tus fechas. Lee las opiniones más recientes, mira el mapa y compara el precio total con tasas. Tienes el método completo en <a href=\\\"/how-we-choose\\\">cómo elegimos los hoteles</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1141,\"mins\":6},{\"lang\":\"en\",\"alt\":\"hoteles-con-nota-9-por-menos-de-100-euros\",\"slug\":\"hotels-rated-9-plus-under-100-a-night\",\"city\":null,\"title\":\"Hotels rated 9+ for under €100 a night (2026)\",\"description\":\"15 hotels with a guest score of 9 or more, all well under €100 a night: from €23 in Kathmandu to €42 in Xi'an. Prices for November 2026.\",\"h1\":\"Hotels rated 9+ for under €100 a night\",\"dek\":\"The limit was €100. None of these costs more than €43, and every one scores 9 or higher.\",\"tags\":[\"Data\",\"Best value\"],\"body\":\"<p>The title says under €100 a night, but the real story is how far under. The most expensive hotel on this list costs €42. The cheapest costs €23. Every one of the 15 hotels has a guest score of 9.0 or higher, and most of them have well over a thousand reviews.</p>\\n<p>All prices are reference prices seen on Booking.com for a two-night stay from 10 to 12 November 2026, two adults, one room, shown per night. Prices move every day, so check today's price for your own dates before you book.</p>\\n<aside class=\\\"method\\\"><b>How we picked.</b> For each city we cover, our Best Value pick is the hotel with the best reviews at a normal price. From those picks we kept hotels scoring 9.0 or more and costing under €100 a night, then sorted them from cheapest to most expensive. The 15 below are the cheapest hotels in our database that pass both tests.</aside>\\n<h2>The list</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>City</th><th>Score (reviews)</th><th>Per night</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/kathmandu\\\">Kathmandu Eco Hotel</a></td><td>Kathmandu, Nepal</td><td>9.0 <small>(1,007)</small></td><td><b>€23</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/np/kathmandu-eco.html}}\\\">See prices</a></td></tr><tr><td>2</td><td><a href=\\\"/ha-long\\\">Ha Long Essence Hotel</a></td><td>Ha Long, Vietnam</td><td>9.7 <small>(1,533)</small></td><td><b>€24</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/ha-long-essence.html}}\\\">See prices</a></td></tr><tr><td>3</td><td><a href=\\\"/nha-trang\\\">Azura Gold Hotel &amp; Apartment</a></td><td>Nha Trang, Vietnam</td><td>9.2 <small>(3,925)</small></td><td><b>€27</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/ha-thu.html}}\\\">See prices</a></td></tr><tr><td>4</td><td><a href=\\\"/ubud\\\">The Iyang Ubud</a></td><td>Ubud, Indonesia</td><td>9.1 <small>(307)</small></td><td><b>€27</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/the-iyang-ubud-kabupaten-gianyar1.html}}\\\">See prices</a></td></tr><tr><td>5</td><td><a href=\\\"/hue\\\">Jade Scene Hotel</a></td><td>Hue, Vietnam</td><td>9.2 <small>(2,963)</small></td><td><b>€28</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/jade-scene.html}}\\\">See prices</a></td></tr><tr><td>6</td><td><a href=\\\"/qingdao\\\">Qingdao Kaiyue Hotel Zhongshan Road</a></td><td>Qingdao, China</td><td>9.2 <small>(317)</small></td><td><b>€30</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/kaiyue-international-youth.html}}\\\">See prices</a></td></tr><tr><td>7</td><td><a href=\\\"/kaohsiung\\\">Legend Hotel Kaohsiung Pier2</a></td><td>Kaohsiung, Taiwan</td><td>9.0 <small>(4,321)</small></td><td><b>€31</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/tw/li-xin-lu-dian-bo-er-guan.html}}\\\">See prices</a></td></tr><tr><td>8</td><td><a href=\\\"/hanoi\\\">Sao Mai Boutique Hotel</a></td><td>Hanoi, Vietnam</td><td>9.4 <small>(2,241)</small></td><td><b>€33</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/sao-mai-boutique.html}}\\\">See prices</a></td></tr><tr><td>9</td><td><a href=\\\"/hoi-an\\\">Silk River Hoi An Retreat</a></td><td>Hoi An, Vietnam</td><td>9.8 <small>(1,663)</small></td><td><b>€35</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/silk-river-hoi-an-hotel-spa.html}}\\\">See prices</a></td></tr><tr><td>10</td><td><a href=\\\"/siem-reap\\\">The Urban</a></td><td>Siem Reap, Cambodia</td><td>9.6 <small>(4,568)</small></td><td><b>€36</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/the-urban.html}}\\\">See prices</a></td></tr><tr><td>11</td><td><a href=\\\"/pokhara\\\">Hotel Middle Path &amp; Spa</a></td><td>Pokhara, Nepal</td><td>9.4 <small>(2,343)</small></td><td><b>€36</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/np/hotel-middle-path-and-spa.html}}\\\">See prices</a></td></tr><tr><td>12</td><td><a href=\\\"/agra\\\">The Taj Vista Agra</a></td><td>Agra, India</td><td>9.4 <small>(499)</small></td><td><b>€37</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/sunder-niwas.html}}\\\">See prices</a></td></tr><tr><td>13</td><td><a href=\\\"/quy-nhon\\\">Sala Quy Nhon Beach Hotel</a></td><td>Quy Nhon, Vietnam</td><td>9.4 <small>(419)</small></td><td><b>€37</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/sala-quynhon-beach.html}}\\\">See prices</a></td></tr><tr><td>14</td><td><a href=\\\"/sarande\\\">Hotel Lili-1</a></td><td>Sarandë, Albania</td><td>9.3 <small>(721)</small></td><td><b>€41</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/al/lili-1.html}}\\\">See prices</a></td></tr><tr><td>15</td><td><a href=\\\"/xian\\\">Center Hotel Xi'an Bell Tower</a></td><td>Xi’an, China</td><td>9.1 <small>(527)</small></td><td><b>€42</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xi-an-sen-de-jiu-dian.html}}\\\">See prices</a></td></tr></tbody></table></div>\\n<h2>The pattern: Asia, and Vietnam in particular</h2>\\n<p>Fourteen of the 15 hotels are in Asia. Six are in Vietnam alone: <a href=\\\"/ha-long\\\">Ha Long Essence Hotel</a>, <a href=\\\"/nha-trang\\\">Azura Gold Hotel &amp; Apartment</a>, <a href=\\\"/hue\\\">Jade Scene Hotel</a>, <a href=\\\"/hanoi\\\">Sao Mai Boutique Hotel</a>, <a href=\\\"/hoi-an\\\">Silk River Hoi An Retreat</a> and <a href=\\\"/quy-nhon\\\">Sala Quy Nhon Beach Hotel</a>. Nepal has two, China two, and India, Cambodia, Indonesia and Taiwan one each. The only European entry is <a href=\\\"/sarande\\\">Hotel Lili-1</a> in Albania, at €41.</p>\\n<p>That does not mean Europe has no good hotels under €100. It means that once you sort by price, the cheapest 9-plus hotels are almost all in places where hotel prices in general are low. If you are travelling in Southeast Asia, the bar for a good hotel is simply set higher at every price.</p>\\n<h2>Five worth a closer look</h2>\\n<h3>The best score: Silk River Hoi An Retreat</h3>\\n<p><a href=\\\"/hoi-an\\\">Silk River Hoi An Retreat</a> scores 9.8 from 1,663 reviews, the highest on the list, and it is a four-star at €35 a night. Like many Hoi An hotels, it is listed outside the old town, in Cam Chau. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/silk-river-hoi-an-hotel-spa.html}}\\\">See prices</a>.</p>\\n<h3>The most proven: The Urban, Siem Reap</h3>\\n<p><a href=\\\"/siem-reap\\\">The Urban</a> has 4,568 reviews and a 9.6. That is the largest review base here, with a score that has held up across all of them. It costs €36. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/the-urban.html}}\\\">See prices</a>.</p>\\n<h3>The cheapest: Kathmandu Eco Hotel</h3>\\n<p><a href=\\\"/kathmandu\\\">Kathmandu Eco Hotel</a> costs €23 in Thamel, with 1,007 reviews. Its score is 9.0, the lowest allowed on this list. You are paying very little, and guests are happy, but it is not in the same tier as the 9.6 to 9.8 hotels. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/np/kathmandu-eco.html}}\\\">See prices</a>.</p>\\n<h3>The big one in Taiwan: Legend Hotel Kaohsiung Pier2</h3>\\n<p><a href=\\\"/kaohsiung\\\">Legend Hotel Kaohsiung Pier2</a> has 4,321 reviews and a 9.0 at €31. Same score as Kathmandu, but with four times the reviews behind it. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/tw/li-xin-lu-dian-bo-er-guan.html}}\\\">See prices</a>.</p>\\n<h3>Europe's entry: Hotel Lili-1, Sarandë</h3>\\n<p><a href=\\\"/sarande\\\">Hotel Lili-1</a> scores 9.3 from 721 reviews at €41. It is the only hotel outside Asia that made the cut. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/al/lili-1.html}}\\\">See prices</a>.</p>\\n<h2>The trade-offs</h2>\\n<ul>\\n<li><b>Fewer reviews on a few picks.</b> <a href=\\\"/ubud\\\">The Iyang Ubud</a> has 307 reviews, <a href=\\\"/qingdao\\\">Qingdao Kaiyue Hotel Zhongshan Road</a> 317 and <a href=\\\"/quy-nhon\\\">Sala Quy Nhon Beach Hotel</a> 419. Their scores are still high, but a few bad stays would move them more than they would move The Urban.</li>\\n<li><b>A 9.0 and a 9.8 are not the same.</b> Both pass the bar. If you can spend €10 more, the jump from 9.0 to 9.4 or higher is often available in the same region.</li>\\n<li><b>Stars do not track value.</b> Seven hotels here are four-stars and eight are three-stars. A three-star at 9.7, like <a href=\\\"/ha-long\\\">Ha Long Essence Hotel</a>, can be a better stay than a four-star at 9.1.</li>\\n<li><b>Location labels are vague.</b> Several hotels list \\\"The Top-rated Area\\\" rather than a district. Open the map before booking, especially in spread-out places like <a href=\\\"/ubud\\\">The Iyang Ubud</a> or <a href=\\\"/pokhara\\\">Hotel Middle Path &amp; Spa</a>.</li>\\n<li><b>Long names, simple promises.</b> <a href=\\\"/agra\\\">The Taj Vista Agra</a> puts \\\"walking distance to Taj Mahal\\\" in its listing name. We have not checked that claim. Measure it on the map.</li>\\n</ul>\\n<h2>What this means for your budget</h2>\\n<p>The average price on this list is about €32 a night. That is a third of the €100 limit. In these cities you do not need to choose between a cheap room and a well-reviewed one. Start from the score you want, 9.4 or higher for example, and you will still pay less than €40 in <a href=\\\"/hanoi\\\">Sao Mai Boutique Hotel</a>, <a href=\\\"/pokhara\\\">Hotel Middle Path &amp; Spa</a> or <a href=\\\"/agra\\\">The Taj Vista Agra</a>.</p>\\n<p>The flip side is that these prices are for mid-November. In peak season for each region, prices can be very different. Check your own dates.</p>\\n<h2>How to use this list</h2><p>Treat it as a shortlist, not a booking order. Open the city page to see the other two hotels we picked there, then check the price for your own dates. Read the most recent reviews, look at the map and compare the total price with taxes. You can read the full method on <a href=\\\"/how-we-choose\\\">how we choose hotels</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1030,\"mins\":5},{\"lang\":\"es\",\"alt\":\"hotels-rated-9-plus-under-100-a-night\",\"slug\":\"hoteles-con-nota-9-por-menos-de-100-euros\",\"city\":null,\"title\":\"Hoteles con nota de 9+ por menos de 100 € la noche (2026)\",\"description\":\"15 hoteles con nota de 9 o más, todos muy por debajo de 100 € la noche: de 23 € en Katmandú a 42 € en Xi'an. Precios de noviembre de 2026.\",\"h1\":\"Hoteles con nota de 9 o más por menos de 100 € la noche\",\"dek\":\"El límite era 100 €. Ninguno pasa de 43 €, y todos sacan un 9 o más.\",\"tags\":[\"Data\",\"Calidad-precio\"],\"body\":\"<p>El título dice menos de 100 € la noche, pero lo interesante es cuánto menos. El hotel más caro de esta lista cuesta 42 €. El más barato, 23 €. Los 15 hoteles tienen una nota de 9,0 o más, y la mayoría pasa de mil opiniones.</p>\\n<p>Todos los precios son de referencia: los vimos en Booking.com para una estancia de dos noches, del 10 al 12 de noviembre de 2026, dos adultos y una habitación, y los mostramos por noche. Cambian a diario, así que mira el precio de hoy para tus fechas antes de reservar.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> En cada ciudad que cubrimos, nuestra opción de mejor relación calidad-precio es el hotel con mejores opiniones a un precio normal. De esas opciones nos quedamos con las que sacan un 9,0 o más y cuestan menos de 100 € la noche, y las ordenamos de más barata a más cara. Estos 15 son los hoteles más baratos de nuestra base de datos que pasan las dos pruebas.</aside>\\n<h2>La lista</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Ciudad</th><th>Nota (opiniones)</th><th>Por noche</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/es/kathmandu\\\">Kathmandu Eco Hotel</a></td><td>Kathmandu, Nepal</td><td>9,0 <small>(1.007)</small></td><td><b>23 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/np/kathmandu-eco.html}}\\\">Ver precios</a></td></tr><tr><td>2</td><td><a href=\\\"/es/ha-long\\\">Ha Long Essence Hotel</a></td><td>Ha Long, Vietnam</td><td>9,7 <small>(1.533)</small></td><td><b>24 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/ha-long-essence.html}}\\\">Ver precios</a></td></tr><tr><td>3</td><td><a href=\\\"/es/nha-trang\\\">Azura Gold Hotel &amp; Apartment</a></td><td>Nha Trang, Vietnam</td><td>9,2 <small>(3.925)</small></td><td><b>27 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/ha-thu.html}}\\\">Ver precios</a></td></tr><tr><td>4</td><td><a href=\\\"/es/ubud\\\">The Iyang Ubud</a></td><td>Ubud, Indonesia</td><td>9,1 <small>(307)</small></td><td><b>27 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/the-iyang-ubud-kabupaten-gianyar1.html}}\\\">Ver precios</a></td></tr><tr><td>5</td><td><a href=\\\"/es/hue\\\">Jade Scene Hotel</a></td><td>Hue, Vietnam</td><td>9,2 <small>(2.963)</small></td><td><b>28 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/jade-scene.html}}\\\">Ver precios</a></td></tr><tr><td>6</td><td><a href=\\\"/es/qingdao\\\">Qingdao Kaiyue Hotel Zhongshan Road</a></td><td>Qingdao, China</td><td>9,2 <small>(317)</small></td><td><b>30 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/kaiyue-international-youth.html}}\\\">Ver precios</a></td></tr><tr><td>7</td><td><a href=\\\"/es/kaohsiung\\\">Legend Hotel Kaohsiung Pier2</a></td><td>Kaohsiung, Taiwan</td><td>9,0 <small>(4.321)</small></td><td><b>31 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/tw/li-xin-lu-dian-bo-er-guan.html}}\\\">Ver precios</a></td></tr><tr><td>8</td><td><a href=\\\"/es/hanoi\\\">Sao Mai Boutique Hotel</a></td><td>Hanoi, Vietnam</td><td>9,4 <small>(2.241)</small></td><td><b>33 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/sao-mai-boutique.html}}\\\">Ver precios</a></td></tr><tr><td>9</td><td><a href=\\\"/es/hoi-an\\\">Silk River Hoi An Retreat</a></td><td>Hoi An, Vietnam</td><td>9,8 <small>(1.663)</small></td><td><b>35 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/silk-river-hoi-an-hotel-spa.html}}\\\">Ver precios</a></td></tr><tr><td>10</td><td><a href=\\\"/es/siem-reap\\\">The Urban</a></td><td>Siem Reap, Cambodia</td><td>9,6 <small>(4.568)</small></td><td><b>36 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/the-urban.html}}\\\">Ver precios</a></td></tr><tr><td>11</td><td><a href=\\\"/es/pokhara\\\">Hotel Middle Path &amp; Spa</a></td><td>Pokhara, Nepal</td><td>9,4 <small>(2.343)</small></td><td><b>36 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/np/hotel-middle-path-and-spa.html}}\\\">Ver precios</a></td></tr><tr><td>12</td><td><a href=\\\"/es/agra\\\">The Taj Vista Agra</a></td><td>Agra, India</td><td>9,4 <small>(499)</small></td><td><b>37 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/sunder-niwas.html}}\\\">Ver precios</a></td></tr><tr><td>13</td><td><a href=\\\"/es/quy-nhon\\\">Sala Quy Nhon Beach Hotel</a></td><td>Quy Nhon, Vietnam</td><td>9,4 <small>(419)</small></td><td><b>37 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/sala-quynhon-beach.html}}\\\">Ver precios</a></td></tr><tr><td>14</td><td><a href=\\\"/es/sarande\\\">Hotel Lili-1</a></td><td>Sarandë, Albania</td><td>9,3 <small>(721)</small></td><td><b>41 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/al/lili-1.html}}\\\">Ver precios</a></td></tr><tr><td>15</td><td><a href=\\\"/es/xian\\\">Center Hotel Xi'an Bell Tower</a></td><td>Xi’an, China</td><td>9,1 <small>(527)</small></td><td><b>42 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xi-an-sen-de-jiu-dian.html}}\\\">Ver precios</a></td></tr></tbody></table></div>\\n<h2>El patrón: Asia, y sobre todo Vietnam</h2>\\n<p>Catorce de los 15 hoteles están en Asia. Seis solo en Vietnam: <a href=\\\"/es/ha-long\\\">Ha Long Essence Hotel</a>, <a href=\\\"/es/nha-trang\\\">Azura Gold Hotel &amp; Apartment</a>, <a href=\\\"/es/hue\\\">Jade Scene Hotel</a>, <a href=\\\"/es/hanoi\\\">Sao Mai Boutique Hotel</a>, <a href=\\\"/es/hoi-an\\\">Silk River Hoi An Retreat</a> y <a href=\\\"/es/quy-nhon\\\">Sala Quy Nhon Beach Hotel</a>. Nepal tiene dos, China dos, y la India, Camboya, Indonesia y Taiwán uno cada uno. El único europeo es <a href=\\\"/es/sarande\\\">Hotel Lili-1</a>, en Albania, a 41 €.</p>\\n<p>Eso no quiere decir que en Europa no haya buenos hoteles por menos de 100 €. Quiere decir que, al ordenar por precio, los hoteles de 9 o más más baratos están casi todos en sitios donde el hotel en general es barato. Si viajas por el sudeste asiático, el listón de un buen hotel está más alto a cualquier precio.</p>\\n<h2>Cinco que merecen un vistazo</h2>\\n<h3>La mejor nota: Silk River Hoi An Retreat</h3>\\n<p><a href=\\\"/es/hoi-an\\\">Silk River Hoi An Retreat</a> saca un 9,8 sobre 1.663 opiniones, la nota más alta de la lista, y es un cuatro estrellas a 35 € la noche. Como muchos hoteles de Hoi An, está fuera del casco antiguo, en Cam Chau. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/silk-river-hoi-an-hotel-spa.html}}\\\">Ver precios</a>.</p>\\n<h3>El más contrastado: The Urban, Siem Reap</h3>\\n<p><a href=\\\"/es/siem-reap\\\">The Urban</a> tiene 4.568 opiniones y un 9,6. Es la mayor base de opiniones de la lista, con una nota que se mantiene en todas ellas. Cuesta 36 €. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/kh/the-urban.html}}\\\">Ver precios</a>.</p>\\n<h3>El más barato: Kathmandu Eco Hotel</h3>\\n<p><a href=\\\"/es/kathmandu\\\">Kathmandu Eco Hotel</a> cuesta 23 € en Thamel, con 1.007 opiniones. Su nota es un 9,0, el mínimo para entrar. Pagas muy poco y la gente sale contenta, pero no está al nivel de los hoteles con 9,6 a 9,8. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/np/kathmandu-eco.html}}\\\">Ver precios</a>.</p>\\n<h3>El grande de Taiwán: Legend Hotel Kaohsiung Pier2</h3>\\n<p><a href=\\\"/es/kaohsiung\\\">Legend Hotel Kaohsiung Pier2</a> suma 4.321 opiniones y un 9,0 a 31 €. La misma nota que Katmandú, pero con cuatro veces más opiniones detrás. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/tw/li-xin-lu-dian-bo-er-guan.html}}\\\">Ver precios</a>.</p>\\n<h3>El europeo: Hotel Lili-1, Sarandë</h3>\\n<p><a href=\\\"/es/sarande\\\">Hotel Lili-1</a> saca un 9,3 sobre 721 opiniones a 41 €. Es el único hotel fuera de Asia que entra en la lista. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/al/lili-1.html}}\\\">Ver precios</a>.</p>\\n<h2>Las pegas</h2>\\n<ul>\\n<li><b>Algunos tienen menos opiniones.</b> <a href=\\\"/es/ubud\\\">The Iyang Ubud</a> tiene 307, <a href=\\\"/es/qingdao\\\">Qingdao Kaiyue Hotel Zhongshan Road</a> 317 y <a href=\\\"/es/quy-nhon\\\">Sala Quy Nhon Beach Hotel</a> 419. Sus notas siguen siendo altas, pero unas pocas estancias malas las moverían más que a The Urban.</li>\\n<li><b>Un 9,0 no es un 9,8.</b> Los dos pasan el corte. Si puedes gastar 10 € más, en la misma zona suele haber algo de 9,4 o más.</li>\\n<li><b>Las estrellas no miden el valor.</b> Aquí hay siete hoteles de cuatro estrellas y ocho de tres. Un tres estrellas con un 9,7, como <a href=\\\"/es/ha-long\\\">Ha Long Essence Hotel</a>, puede ser mejor estancia que un cuatro estrellas con un 9,1.</li>\\n<li><b>La zona a veces es imprecisa.</b> Varios hoteles indican \\\"The Top-rated Area\\\" en lugar de un barrio. Abre el mapa antes de reservar, sobre todo en sitios dispersos como <a href=\\\"/es/ubud\\\">The Iyang Ubud</a> o <a href=\\\"/es/pokhara\\\">Hotel Middle Path &amp; Spa</a>.</li>\\n<li><b>Nombres largos, promesas sencillas.</b> <a href=\\\"/es/agra\\\">The Taj Vista Agra</a> pone \\\"walking distance to Taj Mahal\\\" en el nombre del anuncio. No lo hemos comprobado. Mídelo en el mapa.</li>\\n</ul>\\n<h2>Qué significa para tu presupuesto</h2>\\n<p>El precio medio de esta lista ronda los 32 € la noche, un tercio del límite de 100 €. En estas ciudades no tienes que elegir entre una habitación barata y una bien valorada. Empieza por la nota que quieres, por ejemplo 9,4 o más, y aun así pagarás menos de 40 € en <a href=\\\"/es/hanoi\\\">Sao Mai Boutique Hotel</a>, <a href=\\\"/es/pokhara\\\">Hotel Middle Path &amp; Spa</a> o <a href=\\\"/es/agra\\\">The Taj Vista Agra</a>.</p>\\n<p>La otra cara es que estos precios son de mediados de noviembre. En temporada alta de cada zona pueden cambiar mucho. Mira tus fechas.</p>\\n<h2>Cómo usar esta lista</h2><p>Tómala como una lista corta, no como una orden de reserva. Abre la página de la ciudad para ver los otros dos hoteles que elegimos allí y mira el precio para tus fechas. Lee las opiniones más recientes, mira el mapa y compara el precio total con tasas. Tienes el método completo en <a href=\\\"/how-we-choose\\\">cómo elegimos los hoteles</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1063,\"mins\":5},{\"lang\":\"en\",\"alt\":\"ciudades-mas-baratas-y-mas-caras-hotel-economico\",\"slug\":\"cheapest-and-most-expensive-cities-for-a-budget-hotel\",\"city\":null,\"title\":\"Cheapest and priciest cities for a budget hotel (2026)\",\"description\":\"A good budget room costs €11 a night in Vientiane and €337 in Nuremberg. The 15 cheapest and 15 most expensive cities, with real November 2026 prices.\",\"h1\":\"The cheapest and most expensive cities for a good budget hotel\",\"dek\":\"Same rules, same dates: the cheapest good private room in 30 cities, from €11 to €337 a night.\",\"tags\":[\"Data\",\"Budget\"],\"body\":\"<p>Our budget pick in each city is the cheapest good private room we can find: own bathroom, solid reviews, no dorms. Line those picks up side by side and the gap is huge. In Vientiane, that room costs €11 a night. In Nuremberg, it costs €337. Same rules, same dates, thirty times the price.</p>\\n<p>All prices are reference prices seen on Booking.com for a two-night stay from 10 to 12 November 2026, two adults, one room, shown per night. Prices move every day, so check today's price for your own dates before you book.</p>\\n<aside class=\\\"method\\\"><b>How we picked.</b> For every city we cover, we picked one budget hotel: the cheapest well-reviewed private room. Then we sorted all cities by the price of that budget pick. Below are the 15 cities where it is cheapest and the 15 where it is most expensive. The price is for the hotel we picked, not a city average. Note that the high prices on our dates can reflect events, such as trade fairs, as much as the city itself.</aside>\\n<h2>The 15 cheapest cities for a good budget hotel</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>City</th><th>Score (reviews)</th><th>Per night</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/vientiane\\\">Mixay Paradise Hotel</a></td><td>Vientiane, Laos</td><td>8.2 <small>(656)</small></td><td><b>€11</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/la/mixay-paradise.html}}\\\">See prices</a></td></tr><tr><td>2</td><td><a href=\\\"/pune\\\">Super Collection O Pashan-Sus Road Baner</a></td><td>Pune, India</td><td>8.6 <small>(105)</small></td><td><b>€11</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/collection-o-grey-stone.html}}\\\">See prices</a></td></tr><tr><td>3</td><td><a href=\\\"/chandigarh\\\">JB Residency Hotel &amp; Banquets</a></td><td>Chandigarh, India</td><td>9.2 <small>(91)</small></td><td><b>€13</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/the-magnum-inn-amritsar.html}}\\\">See prices</a></td></tr><tr><td>4</td><td><a href=\\\"/solo\\\">Solo Grand City</a></td><td>Solo, Indonesia</td><td>8.0 <small>(67)</small></td><td><b>€13</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/solo-grand-city.html}}\\\">See prices</a></td></tr><tr><td>5</td><td><a href=\\\"/dalat\\\">Otel Hotel Dalat</a></td><td>Dalat, Vietnam</td><td>8.5 <small>(64)</small></td><td><b>€14</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/da-lat-otel-thanh-pho-da-lat1.html}}\\\">See prices</a></td></tr><tr><td>6</td><td><a href=\\\"/hue\\\">Vina Boutique Hotel</a></td><td>Hue, Vietnam</td><td>8.7 <small>(232)</small></td><td><b>€14</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/vina-boutique.html}}\\\">See prices</a></td></tr><tr><td>7</td><td><a href=\\\"/siliguri\\\">Super Hotel O Bidhan Market Siliguri</a></td><td>Siliguri, India</td><td>8.7 <small>(54)</small></td><td><b>€14</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/o-bidhan-market-siliguri-formerly-florence.html}}\\\">See prices</a></td></tr><tr><td>8</td><td><a href=\\\"/dambulla\\\">Evergreen Hotel Dambulla</a></td><td>Dambulla, Sri Lanka</td><td>8.9 <small>(465)</small></td><td><b>€14</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lk/evergreen-dambulla.html}}\\\">See prices</a></td></tr><tr><td>9</td><td><a href=\\\"/new-delhi\\\">Hotel Belwood by Signature StayZ</a></td><td>New Delhi, India</td><td>9.0 <small>(85)</small></td><td><b>€14</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/rahul-inn-new-delhi2.html}}\\\">See prices</a></td></tr><tr><td>10</td><td><a href=\\\"/hurghada\\\">Canary Hotel</a></td><td>Hurghada, Egypt</td><td>8.3 <small>(569)</small></td><td><b>€15</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/eg/canary.html}}\\\">See prices</a></td></tr><tr><td>11</td><td><a href=\\\"/amritsar\\\">City View With Garden</a></td><td>Amritsar, India</td><td>8.6 <small>(416)</small></td><td><b>€16</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/city-view-b-amp-b.html}}\\\">See prices</a></td></tr><tr><td>12</td><td><a href=\\\"/semarang\\\">The Ryokan Semarang</a></td><td>Semarang, Indonesia</td><td>8.3 <small>(64)</small></td><td><b>€17</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/the-ryokan-semarang-kota-semarang.html}}\\\">See prices</a></td></tr><tr><td>13</td><td><a href=\\\"/chiang-rai\\\">Ariya inn Chiangrai</a></td><td>Chiang Rai, Thailand</td><td>8.5 <small>(224)</small></td><td><b>€17</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/th/ariya-inn-chiangrai.html}}\\\">See prices</a></td></tr><tr><td>14</td><td><a href=\\\"/agra\\\">Amar Singh Palace by Signature Stayz</a></td><td>Agra, India</td><td>8.0 <small>(120)</small></td><td><b>€18</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/shiva-palace-agra.html}}\\\">See prices</a></td></tr><tr><td>15</td><td><a href=\\\"/jodhpur\\\">Corsican Haveli</a></td><td>Jodhpur, India</td><td>8.5 <small>(344)</small></td><td><b>€18</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/corsican-haveli-jodhpur1.html}}\\\">See prices</a></td></tr></tbody></table></div>\\n<p>All 15 are in Asia or Egypt, and India alone has seven: <a href=\\\"/pune\\\">Super Collection O Pashan-Sus Road Baner</a>, <a href=\\\"/chandigarh\\\">JB Residency Hotel &amp; Banquets</a>, <a href=\\\"/siliguri\\\">Super Hotel O Bidhan Market Siliguri</a>, <a href=\\\"/new-delhi\\\">Hotel Belwood by Signature StayZ</a>, <a href=\\\"/amritsar\\\">City View With Garden</a>, <a href=\\\"/agra\\\">Amar Singh Palace by Signature Stayz</a> and <a href=\\\"/jodhpur\\\">Corsican Haveli</a>. The average price across the 15 is about €15 a night.</p>\\n<h2>The 15 most expensive cities for a good budget hotel</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>City</th><th>Score (reviews)</th><th>Per night</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/nuremberg\\\">Sorat Hotel Saxx Nürnberg</a></td><td>Nuremberg, Germany</td><td>8.8 <small>(2,025)</small></td><td><b>€337</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/sorat-saxx-nuernberg.html}}\\\">See prices</a></td></tr><tr><td>2</td><td><a href=\\\"/pontresina\\\">Hotel Saratz Pontresina Mountain Resort &amp; Spa</a></td><td>Pontresina, Switzerland</td><td>8.7 <small>(304)</small></td><td><b>€335</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/saratz.html}}\\\">See prices</a></td></tr><tr><td>3</td><td><a href=\\\"/munich\\\">harry's home München hotel &amp; apartments</a></td><td>Munich, Germany</td><td>8.6 <small>(1,744)</small></td><td><b>€331</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/harrys-home-munchen.html}}\\\">See prices</a></td></tr><tr><td>4</td><td><a href=\\\"/grindelwald\\\">Sunstar Hotel &amp; SPA Grindelwald</a></td><td>Grindelwald, Switzerland</td><td>8.6 <small>(1,439)</small></td><td><b>€328</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/sunstar-grindelwald.html}}\\\">See prices</a></td></tr><tr><td>5</td><td><a href=\\\"/cupertino\\\">Hilton Garden Inn Cupertino</a></td><td>Cupertino, United States</td><td>8.3 <small>(279)</small></td><td><b>€293</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/hilton-garden-inn-cupertino.html}}\\\">See prices</a></td></tr><tr><td>6</td><td><a href=\\\"/bologna\\\">Almarossa</a></td><td>Bologna, Italy</td><td>8.9 <small>(1,307)</small></td><td><b>€293</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/almarossa.html}}\\\">See prices</a></td></tr><tr><td>7</td><td><a href=\\\"/london\\\">The Z Hotel Leicester Square</a></td><td>London, United Kingdom</td><td>8.5 <small>(1,936)</small></td><td><b>€287</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/the-z-leicester-square.html}}\\\">See prices</a></td></tr><tr><td>8</td><td><a href=\\\"/maspalomas\\\">Mirador Maspalomas by Dunas</a></td><td>Maspalomas, Spain</td><td>8.5 <small>(744)</small></td><td><b>€280</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/dunas-mirador-maspalomas.html}}\\\">See prices</a></td></tr><tr><td>9</td><td><a href=\\\"/queenstown\\\">Holiday Inn Queenstown Remarkables Park</a></td><td>Queenstown, New Zealand</td><td>8.8 <small>(2,402)</small></td><td><b>€261</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nz/holiday-inn-queenstown-remarkables-park.html}}\\\">See prices</a></td></tr><tr><td>10</td><td><a href=\\\"/brookline\\\">Homewood Suites by Hilton Boston Brookline-Longwood Medical</a></td><td>Brookline, United States</td><td>8.5 <small>(229)</small></td><td><b>€256</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/homewood-suites-by-hilton-boston-brookline.html}}\\\">See prices</a></td></tr><tr><td>11</td><td><a href=\\\"/stamford\\\">Hampton Inn &amp; Suites Stamford</a></td><td>Stamford, United States</td><td>8.7 <small>(337)</small></td><td><b>€250</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/hampton-inn-suites-stamford.html}}\\\">See prices</a></td></tr><tr><td>12</td><td><a href=\\\"/tromso\\\">Moxy Tromso</a></td><td>Tromsø, Norway</td><td>8.6 <small>(4,503)</small></td><td><b>€249</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/moxy-tromso.html}}\\\">See prices</a></td></tr><tr><td>13</td><td><a href=\\\"/chicago\\\">Club Quarters Hotel Central Loop, Chicago</a></td><td>Chicago, United States</td><td>8.2 <small>(5,335)</small></td><td><b>€244</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/club-quarters-central-loop.html}}\\\">See prices</a></td></tr><tr><td>14</td><td><a href=\\\"/new-york\\\">Pod Times Square</a></td><td>New York, United States</td><td>8.6 <small>(16,603)</small></td><td><b>€244</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/pod-times-square.html}}\\\">See prices</a></td></tr><tr><td>15</td><td><a href=\\\"/seefeld-in-tirol\\\">Krumers Alpin</a></td><td>Seefeld in Tirol, Austria</td><td>8.6 <small>(1,918)</small></td><td><b>€241</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/hotelundspaseefeld.html}}\\\">See prices</a></td></tr></tbody></table></div>\\n<p>The expensive end is spread across Europe, North America and New Zealand. The United States has five cities, Germany two, Switzerland two. The average price here is about €282 a night, for the cheapest good room we could find.</p>\\n<h2>What stands out</h2>\\n<h3>Cheap does not mean poorly rated</h3>\\n<p>The cheapest list has an average score of 8.5, and the expensive list 8.6. You are not trading quality for price in the cheap cities. <a href=\\\"/chandigarh\\\">JB Residency Hotel &amp; Banquets</a> scores 9.2 at €13 and <a href=\\\"/new-delhi\\\">Hotel Belwood by Signature StayZ</a> scores 9.0 at €14. Both are higher than any hotel on the expensive list.</p>\\n<h3>But the cheap list has fewer reviews</h3>\\n<p>This is the real trade-off. Six of the cheapest picks have fewer than 100 reviews: Siliguri (54), Dalat (64), Semarang (64), Solo (67), New Delhi (85) and Chandigarh (91). Pune has 105 and Agra 120. A 9.2 from 91 reviews is a much weaker signal than an 8.6 from 16,603, which is what <a href=\\\"/new-york\\\">Pod Times Square</a> has. On the expensive list, the smallest review count is 229.</p>\\n<h3>Location trade-offs</h3>\\n<p>Some cheap picks sit away from the main sights. <a href=\\\"/new-delhi\\\">Hotel Belwood by Signature StayZ</a> is in Aerocity, by the airport, which suits a short stopover more than a sightseeing stay. <a href=\\\"/chandigarh\\\">JB Residency Hotel &amp; Banquets</a> lists an address in Zirakpur. On the expensive side, <a href=\\\"/munich\\\">harry's home München hotel &amp; apartments</a> is in Moosach, not the old town, and still costs €331.</p>\\n<h3>The German surprise</h3>\\n<p><a href=\\\"/nuremberg\\\">Sorat Hotel Saxx Nürnberg</a> tops the expensive list at €337, above London and New York. That is unusual for a city of its size, and it is a good example of why our dates matter. When demand spikes, even simple hotels can reach these prices. Check other dates before you rule the city out.</p>\\n<h3>Mountain resorts</h3>\\n<p>Three of the expensive cities are Alpine resorts: <a href=\\\"/pontresina\\\">Hotel Saratz Pontresina Mountain Resort &amp; Spa</a>, <a href=\\\"/grindelwald\\\">Sunstar Hotel &amp; SPA Grindelwald</a> and <a href=\\\"/seefeld-in-tirol\\\">Krumers Alpin</a>. Our budget pick in each is a four-star, and it is still the cheapest good room we found there. If your budget is tight, these are places to visit on a day trip from a cheaper base.</p>\\n<h2>How big is the gap?</h2>\\n<ul>\\n<li>One night at <a href=\\\"/nuremberg\\\">Sorat Hotel Saxx Nürnberg</a> costs about the same as 30 nights at <a href=\\\"/vientiane\\\">Mixay Paradise Hotel</a>.</li>\\n<li>The budget pick in <a href=\\\"/new-york\\\">Pod Times Square</a>, €244, would pay for about 14 nights at <a href=\\\"/jodhpur\\\">Corsican Haveli</a>.</li>\\n<li>The cheapest city on the expensive list, <a href=\\\"/seefeld-in-tirol\\\">Krumers Alpin</a> at €241, still costs more than 13 times the most expensive city on the cheap list.</li>\\n</ul>\\n<h2>Who each list is for</h2>\\n<p>If your trip is flexible and you want your money to last, the cheap list shows where a good room is almost a non-issue. Pick by score and reviews, not by price. Favour the hotels with hundreds of reviews, like <a href=\\\"/vientiane\\\">Mixay Paradise Hotel</a> (656), <a href=\\\"/hurghada\\\">Canary Hotel</a> (569) or <a href=\\\"/dambulla\\\">Evergreen Hotel Dambulla</a> (465).</p>\\n<p>If you have to go to one of the expensive cities, plan early and look hard at your dates. Moving a trip by a week can matter more than any hotel choice. And remember that our budget pick is already the cheapest good room we found. Going cheaper usually means shared bathrooms, dorms or a long commute.</p>\\n<h2>How to use this list</h2><p>Treat it as a shortlist, not a booking order. Open the city page to see the other two hotels we picked there, then check the price for your own dates. Read the most recent reviews, look at the map and compare the total price with taxes. You can read the full method on <a href=\\\"/how-we-choose\\\">how we choose hotels</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1252,\"mins\":6},{\"lang\":\"es\",\"alt\":\"cheapest-and-most-expensive-cities-for-a-budget-hotel\",\"slug\":\"ciudades-mas-baratas-y-mas-caras-hotel-economico\",\"city\":null,\"title\":\"Ciudades más baratas y más caras para un hotel barato (2026)\",\"description\":\"Una buena habitación económica cuesta 11 € la noche en Vientián y 337 € en Núremberg. Las 15 ciudades más baratas y las 15 más caras, con precios reales.\",\"h1\":\"Las ciudades más baratas y más caras para un buen hotel económico\",\"dek\":\"Mismas reglas y mismas fechas: la habitación privada buena más barata en 30 ciudades, de 11 a 337 € la noche.\",\"tags\":[\"Data\",\"Económico\"],\"body\":\"<p>Nuestra opción económica en cada ciudad es la habitación privada buena más barata que encontramos: baño propio, buenas opiniones y nada de dormitorios compartidos. Si pones esas opciones una al lado de otra, la diferencia es enorme. En Vientián, esa habitación cuesta 11 € la noche. En Núremberg, 337 €. Mismas reglas, mismas fechas y treinta veces el precio.</p>\\n<p>Todos los precios son de referencia: los vimos en Booking.com para una estancia de dos noches, del 10 al 12 de noviembre de 2026, dos adultos y una habitación, y los mostramos por noche. Cambian a diario, así que mira el precio de hoy para tus fechas antes de reservar.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> En cada ciudad que cubrimos elegimos un hotel económico: la habitación privada bien valorada más barata. Después ordenamos todas las ciudades por el precio de esa opción. Aquí tienes las 15 ciudades donde sale más barata y las 15 donde sale más cara. El precio es el del hotel elegido, no una media de la ciudad. Ten en cuenta que los precios altos en nuestras fechas pueden deberse a ferias o eventos tanto como a la ciudad.</aside>\\n<h2>Las 15 ciudades más baratas para un buen hotel económico</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Ciudad</th><th>Nota (opiniones)</th><th>Por noche</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/es/vientiane\\\">Mixay Paradise Hotel</a></td><td>Vientiane, Laos</td><td>8,2 <small>(656)</small></td><td><b>11 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/la/mixay-paradise.html}}\\\">Ver precios</a></td></tr><tr><td>2</td><td><a href=\\\"/es/pune\\\">Super Collection O Pashan-Sus Road Baner</a></td><td>Pune, India</td><td>8,6 <small>(105)</small></td><td><b>11 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/collection-o-grey-stone.html}}\\\">Ver precios</a></td></tr><tr><td>3</td><td><a href=\\\"/es/chandigarh\\\">JB Residency Hotel &amp; Banquets</a></td><td>Chandigarh, India</td><td>9,2 <small>(91)</small></td><td><b>13 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/the-magnum-inn-amritsar.html}}\\\">Ver precios</a></td></tr><tr><td>4</td><td><a href=\\\"/es/solo\\\">Solo Grand City</a></td><td>Solo, Indonesia</td><td>8,0 <small>(67)</small></td><td><b>13 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/solo-grand-city.html}}\\\">Ver precios</a></td></tr><tr><td>5</td><td><a href=\\\"/es/dalat\\\">Otel Hotel Dalat</a></td><td>Dalat, Vietnam</td><td>8,5 <small>(64)</small></td><td><b>14 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/da-lat-otel-thanh-pho-da-lat1.html}}\\\">Ver precios</a></td></tr><tr><td>6</td><td><a href=\\\"/es/hue\\\">Vina Boutique Hotel</a></td><td>Hue, Vietnam</td><td>8,7 <small>(232)</small></td><td><b>14 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/vina-boutique.html}}\\\">Ver precios</a></td></tr><tr><td>7</td><td><a href=\\\"/es/siliguri\\\">Super Hotel O Bidhan Market Siliguri</a></td><td>Siliguri, India</td><td>8,7 <small>(54)</small></td><td><b>14 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/o-bidhan-market-siliguri-formerly-florence.html}}\\\">Ver precios</a></td></tr><tr><td>8</td><td><a href=\\\"/es/dambulla\\\">Evergreen Hotel Dambulla</a></td><td>Dambulla, Sri Lanka</td><td>8,9 <small>(465)</small></td><td><b>14 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lk/evergreen-dambulla.html}}\\\">Ver precios</a></td></tr><tr><td>9</td><td><a href=\\\"/es/new-delhi\\\">Hotel Belwood by Signature StayZ</a></td><td>New Delhi, India</td><td>9,0 <small>(85)</small></td><td><b>14 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/rahul-inn-new-delhi2.html}}\\\">Ver precios</a></td></tr><tr><td>10</td><td><a href=\\\"/es/hurghada\\\">Canary Hotel</a></td><td>Hurghada, Egypt</td><td>8,3 <small>(569)</small></td><td><b>15 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/eg/canary.html}}\\\">Ver precios</a></td></tr><tr><td>11</td><td><a href=\\\"/es/amritsar\\\">City View With Garden</a></td><td>Amritsar, India</td><td>8,6 <small>(416)</small></td><td><b>16 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/city-view-b-amp-b.html}}\\\">Ver precios</a></td></tr><tr><td>12</td><td><a href=\\\"/es/semarang\\\">The Ryokan Semarang</a></td><td>Semarang, Indonesia</td><td>8,3 <small>(64)</small></td><td><b>17 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/the-ryokan-semarang-kota-semarang.html}}\\\">Ver precios</a></td></tr><tr><td>13</td><td><a href=\\\"/es/chiang-rai\\\">Ariya inn Chiangrai</a></td><td>Chiang Rai, Thailand</td><td>8,5 <small>(224)</small></td><td><b>17 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/th/ariya-inn-chiangrai.html}}\\\">Ver precios</a></td></tr><tr><td>14</td><td><a href=\\\"/es/agra\\\">Amar Singh Palace by Signature Stayz</a></td><td>Agra, India</td><td>8,0 <small>(120)</small></td><td><b>18 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/shiva-palace-agra.html}}\\\">Ver precios</a></td></tr><tr><td>15</td><td><a href=\\\"/es/jodhpur\\\">Corsican Haveli</a></td><td>Jodhpur, India</td><td>8,5 <small>(344)</small></td><td><b>18 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/corsican-haveli-jodhpur1.html}}\\\">Ver precios</a></td></tr></tbody></table></div>\\n<p>Las 15 están en Asia o en Egipto, y la India sola pone siete: <a href=\\\"/es/pune\\\">Super Collection O Pashan-Sus Road Baner</a>, <a href=\\\"/es/chandigarh\\\">JB Residency Hotel &amp; Banquets</a>, <a href=\\\"/es/siliguri\\\">Super Hotel O Bidhan Market Siliguri</a>, <a href=\\\"/es/new-delhi\\\">Hotel Belwood by Signature StayZ</a>, <a href=\\\"/es/amritsar\\\">City View With Garden</a>, <a href=\\\"/es/agra\\\">Amar Singh Palace by Signature Stayz</a> y <a href=\\\"/es/jodhpur\\\">Corsican Haveli</a>. El precio medio de las 15 ronda los 15 € la noche.</p>\\n<h2>Las 15 ciudades más caras para un buen hotel económico</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Ciudad</th><th>Nota (opiniones)</th><th>Por noche</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/es/nuremberg\\\">Sorat Hotel Saxx Nürnberg</a></td><td>Nuremberg, Germany</td><td>8,8 <small>(2.025)</small></td><td><b>337 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/sorat-saxx-nuernberg.html}}\\\">Ver precios</a></td></tr><tr><td>2</td><td><a href=\\\"/es/pontresina\\\">Hotel Saratz Pontresina Mountain Resort &amp; Spa</a></td><td>Pontresina, Switzerland</td><td>8,7 <small>(304)</small></td><td><b>335 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/saratz.html}}\\\">Ver precios</a></td></tr><tr><td>3</td><td><a href=\\\"/es/munich\\\">harry's home München hotel &amp; apartments</a></td><td>Munich, Germany</td><td>8,6 <small>(1.744)</small></td><td><b>331 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/harrys-home-munchen.html}}\\\">Ver precios</a></td></tr><tr><td>4</td><td><a href=\\\"/es/grindelwald\\\">Sunstar Hotel &amp; SPA Grindelwald</a></td><td>Grindelwald, Switzerland</td><td>8,6 <small>(1.439)</small></td><td><b>328 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/sunstar-grindelwald.html}}\\\">Ver precios</a></td></tr><tr><td>5</td><td><a href=\\\"/es/cupertino\\\">Hilton Garden Inn Cupertino</a></td><td>Cupertino, United States</td><td>8,3 <small>(279)</small></td><td><b>293 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/hilton-garden-inn-cupertino.html}}\\\">Ver precios</a></td></tr><tr><td>6</td><td><a href=\\\"/es/bologna\\\">Almarossa</a></td><td>Bologna, Italy</td><td>8,9 <small>(1.307)</small></td><td><b>293 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/almarossa.html}}\\\">Ver precios</a></td></tr><tr><td>7</td><td><a href=\\\"/es/london\\\">The Z Hotel Leicester Square</a></td><td>London, United Kingdom</td><td>8,5 <small>(1.936)</small></td><td><b>287 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/the-z-leicester-square.html}}\\\">Ver precios</a></td></tr><tr><td>8</td><td><a href=\\\"/es/maspalomas\\\">Mirador Maspalomas by Dunas</a></td><td>Maspalomas, Spain</td><td>8,5 <small>(744)</small></td><td><b>280 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/dunas-mirador-maspalomas.html}}\\\">Ver precios</a></td></tr><tr><td>9</td><td><a href=\\\"/es/queenstown\\\">Holiday Inn Queenstown Remarkables Park</a></td><td>Queenstown, New Zealand</td><td>8,8 <small>(2.402)</small></td><td><b>261 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nz/holiday-inn-queenstown-remarkables-park.html}}\\\">Ver precios</a></td></tr><tr><td>10</td><td><a href=\\\"/es/brookline\\\">Homewood Suites by Hilton Boston Brookline-Longwood Medical</a></td><td>Brookline, United States</td><td>8,5 <small>(229)</small></td><td><b>256 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/homewood-suites-by-hilton-boston-brookline.html}}\\\">Ver precios</a></td></tr><tr><td>11</td><td><a href=\\\"/es/stamford\\\">Hampton Inn &amp; Suites Stamford</a></td><td>Stamford, United States</td><td>8,7 <small>(337)</small></td><td><b>250 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/hampton-inn-suites-stamford.html}}\\\">Ver precios</a></td></tr><tr><td>12</td><td><a href=\\\"/es/tromso\\\">Moxy Tromso</a></td><td>Tromsø, Norway</td><td>8,6 <small>(4.503)</small></td><td><b>249 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/moxy-tromso.html}}\\\">Ver precios</a></td></tr><tr><td>13</td><td><a href=\\\"/es/chicago\\\">Club Quarters Hotel Central Loop, Chicago</a></td><td>Chicago, United States</td><td>8,2 <small>(5.335)</small></td><td><b>244 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/club-quarters-central-loop.html}}\\\">Ver precios</a></td></tr><tr><td>14</td><td><a href=\\\"/es/new-york\\\">Pod Times Square</a></td><td>New York, United States</td><td>8,6 <small>(16.603)</small></td><td><b>244 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/us/pod-times-square.html}}\\\">Ver precios</a></td></tr><tr><td>15</td><td><a href=\\\"/es/seefeld-in-tirol\\\">Krumers Alpin</a></td><td>Seefeld in Tirol, Austria</td><td>8,6 <small>(1.918)</small></td><td><b>241 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/hotelundspaseefeld.html}}\\\">Ver precios</a></td></tr></tbody></table></div>\\n<p>El extremo caro se reparte entre Europa, Norteamérica y Nueva Zelanda. Estados Unidos pone cinco ciudades, Alemania dos y Suiza dos. El precio medio aquí ronda los 282 € la noche, y es la habitación buena más barata que encontramos.</p>\\n<h2>Lo que llama la atención</h2>\\n<h3>Barato no significa mal valorado</h3>\\n<p>La lista barata tiene una nota media de 8,5 y la cara, de 8,6. En las ciudades baratas no cambias calidad por precio. <a href=\\\"/es/chandigarh\\\">JB Residency Hotel &amp; Banquets</a> saca un 9,2 a 13 € y <a href=\\\"/es/new-delhi\\\">Hotel Belwood by Signature StayZ</a> un 9,0 a 14 €. Los dos superan a cualquier hotel de la lista cara.</p>\\n<h3>Pero la lista barata tiene menos opiniones</h3>\\n<p>Esta es la pega de verdad. Seis de las opciones baratas tienen menos de 100 opiniones: Siliguri (54), Dalat (64), Semarang (64), Solo (67), Nueva Delhi (85) y Chandigarh (91). Pune tiene 105 y Agra 120. Un 9,2 sobre 91 opiniones es una señal mucho más débil que un 8,6 sobre 16.603, que es lo que tiene <a href=\\\"/es/new-york\\\">Pod Times Square</a>. En la lista cara, el que menos opiniones tiene suma 229.</p>\\n<h3>La ubicación también cuenta</h3>\\n<p>Algunas opciones baratas quedan lejos de lo que vas a ver. <a href=\\\"/es/new-delhi\\\">Hotel Belwood by Signature StayZ</a> está en Aerocity, junto al aeropuerto: sirve para una escala más que para hacer turismo. <a href=\\\"/es/chandigarh\\\">JB Residency Hotel &amp; Banquets</a> da una dirección en Zirakpur. En el lado caro, <a href=\\\"/es/munich\\\">harry's home München hotel &amp; apartments</a> está en Moosach, no en el casco antiguo, y aun así cuesta 331 €.</p>\\n<h3>La sorpresa alemana</h3>\\n<p><a href=\\\"/es/nuremberg\\\">Sorat Hotel Saxx Nürnberg</a> encabeza la lista cara con 337 €, por encima de Londres y Nueva York. Muestra por qué las fechas importan tanto. Cuando la demanda se dispara, hasta los hoteles sencillos llegan a estos precios. Mira otras fechas antes de descartar la ciudad.</p>\\n<h3>Estaciones de montaña</h3>\\n<p>Tres de las ciudades caras son estaciones alpinas: <a href=\\\"/es/pontresina\\\">Hotel Saratz Pontresina Mountain Resort &amp; Spa</a>, <a href=\\\"/es/grindelwald\\\">Sunstar Hotel &amp; SPA Grindelwald</a> y <a href=\\\"/es/seefeld-in-tirol\\\">Krumers Alpin</a>. Nuestra opción económica en cada una es un cuatro estrellas, y aun así es la habitación buena más barata que encontramos allí. Si vas justo de presupuesto, son sitios para visitar en el día desde una base más barata.</p>\\n<h2>¿Cuánta diferencia hay?</h2>\\n<ul>\\n<li>Una noche en <a href=\\\"/es/nuremberg\\\">Sorat Hotel Saxx Nürnberg</a> cuesta más o menos lo mismo que 30 noches en <a href=\\\"/es/vientiane\\\">Mixay Paradise Hotel</a>.</li>\\n<li>La opción económica de <a href=\\\"/es/new-york\\\">Pod Times Square</a>, 244 €, te pagaría unas 14 noches en <a href=\\\"/es/jodhpur\\\">Corsican Haveli</a>.</li>\\n<li>La ciudad más barata de la lista cara, <a href=\\\"/es/seefeld-in-tirol\\\">Krumers Alpin</a> con 241 €, cuesta más de 13 veces lo que la más cara de la lista barata.</li>\\n</ul>\\n<h2>Para quién es cada lista</h2>\\n<p>Si tu viaje es flexible y quieres que el dinero dure, la lista barata te enseña dónde una buena habitación casi deja de ser un problema. Elige por nota y número de opiniones, no por precio. Prioriza los que tienen cientos de opiniones: <a href=\\\"/es/vientiane\\\">Mixay Paradise Hotel</a> (656), <a href=\\\"/es/hurghada\\\">Canary Hotel</a> (569) o <a href=\\\"/es/dambulla\\\">Evergreen Hotel Dambulla</a> (465).</p>\\n<p>Si vas a una ciudad cara, planifica pronto y mira bien las fechas. Mover el viaje una semana puede pesar más que cualquier elección de hotel. Nuestra opción económica ya es la habitación buena más barata que encontramos.</p>\\n<h2>Cómo usar esta lista</h2><p>Tómala como una lista corta, no como una orden de reserva. Abre la página de la ciudad para ver los otros dos hoteles que elegimos allí y mira el precio para tus fechas. Lee las opiniones más recientes, mira el mapa y compara el precio total con tasas. Tienes el método completo en <a href=\\\"/how-we-choose\\\">cómo elegimos los hoteles</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1294,\"mins\":6},{\"lang\":\"en\",\"alt\":\"hoteles-cinco-estrellas-mas-baratos-del-mundo\",\"slug\":\"cheapest-five-star-hotels-in-the-world\",\"city\":null,\"title\":\"The cheapest five-star hotels in the world (2026)\",\"description\":\"The 15 cheapest five-star hotels in our database, from €40 a night in Brazil to €72 in India, with guest scores and review counts. November 2026 prices.\",\"h1\":\"The cheapest five-star hotels in the world\",\"dek\":\"Officially five stars, from €40 a night. Here are the 15 cheapest, with their scores and the ones with too few reviews to trust blindly.\",\"tags\":[\"Data\",\"Luxury\"],\"body\":\"<p>A five-star hotel for €40 a night sounds like a typo. It is not. On our November dates, the cheapest officially five-star hotel in our database costs €40, and the most expensive of the 15 below costs €72. That is less than many simple city hotels in Western Europe charge.</p>\\n<p>All prices are reference prices seen on Booking.com for a two-night stay from 10 to 12 November 2026, two adults, one room, shown per night. Prices move every day, so check today's price for your own dates before you book.</p>\\n<aside class=\\\"method\\\"><b>How we picked.</b> For each city we cover, our Luxury pick is the best-reviewed five-star hotel. We took every pick with an official five-star rating, sorted them by price and kept the 15 cheapest. We show the guest score and the number of reviews for each, because a five-star label alone tells you little. Stars on Booking.com describe facilities. The score tells you how guests felt.</aside>\\n<h2>The 15 cheapest five-star hotels</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>City</th><th>Score (reviews)</th><th>Per night</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/caldas-novas\\\">OFICIAL Evian Thermas Residence by Trul Hoteis</a></td><td>Caldas Novas, Brazil</td><td>8.5 <small>(532)</small></td><td><b>€40</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/br/evian-thermas-residence-caldas-novas215.html}}\\\">See prices</a></td></tr><tr><td>2</td><td><a href=\\\"/quy-nhon\\\">Grand Hyams Hotel - Quy Nhon Beach</a></td><td>Quy Nhon, Vietnam</td><td>9.1 <small>(714)</small></td><td><b>€48</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/grand-hyams-quy-nhon-beach-quy-nhon1.html}}\\\">See prices</a></td></tr><tr><td>3</td><td><a href=\\\"/nha-trang\\\">Adamas Boutique Hotel Nha Trang</a></td><td>Nha Trang, Vietnam</td><td>9.2 <small>(794)</small></td><td><b>€49</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/adamas-boutique.html}}\\\">See prices</a></td></tr><tr><td>4</td><td><a href=\\\"/cairo\\\">Flower Pyramids Inn</a></td><td>Cairo, Egypt</td><td>8.8 <small>(494)</small></td><td><b>€49</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/eg/flower-pyramids-inn.html}}\\\">See prices</a></td></tr><tr><td>5</td><td><a href=\\\"/guangzhou\\\">Arthur Hotel Liwan COCO Park</a></td><td>Guangzhou, China</td><td>9.1 <small>(458)</small></td><td><b>€53</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/qi-shi-wu-yu-jiu-dian-li-wan-jian-kang-gang-dian.html}}\\\">See prices</a></td></tr><tr><td>6</td><td><a href=\\\"/xian\\\">Eastern House Xi'an</a></td><td>Xi’an, China</td><td>9.2 <small>(1,940)</small></td><td><b>€58</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xi-an-dong-she-jiu-dian.html}}\\\">See prices</a></td></tr><tr><td>7</td><td><a href=\\\"/chiang-rai\\\">The Heritage Chiang Rai Hotel and Convention</a></td><td>Chiang Rai, Thailand</td><td>8.7 <small>(1,169)</small></td><td><b>€63</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/th/the-heritage-chiang-rai.html}}\\\">See prices</a></td></tr><tr><td>8</td><td><a href=\\\"/ha-long\\\">The Watson Premium HaLong Hotel</a></td><td>Ha Long, Vietnam</td><td>9.3 <small>(1,105)</small></td><td><b>€63</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/the-watson-ha-long-thanh-pho-ha-long.html}}\\\">See prices</a></td></tr><tr><td>9</td><td><a href=\\\"/kuta\\\">Rama Beach Resort and Villas</a></td><td>Kuta, Indonesia</td><td>9.0 <small>(901)</small></td><td><b>€66</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/rama-beach-resort.html}}\\\">See prices</a></td></tr><tr><td>10</td><td><a href=\\\"/siliguri\\\">Courtyard by Marriott Siliguri</a></td><td>Siliguri, India</td><td>9.0 <small>(575)</small></td><td><b>€67</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/courtyard-by-marriott-siliguri.html}}\\\">See prices</a></td></tr><tr><td>11</td><td><a href=\\\"/yangon\\\">Meliá Yangon</a></td><td>Yangon, Myanmar</td><td>9.1 <small>(222)</small></td><td><b>€67</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mm/melia-yangon.html}}\\\">See prices</a></td></tr><tr><td>12</td><td><a href=\\\"/guilin\\\">Aroma Tea House Formula Museum Hotel Guilin</a></td><td>Guilin, China</td><td>9.3 <small>(1,641)</small></td><td><b>€68</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/gui-lin-shi-jing-guan-ming-lou-du-jia-jiu-dian.html}}\\\">See prices</a></td></tr><tr><td>13</td><td><a href=\\\"/lovina\\\">Maha Hills Resort by Mahaprana Experience</a></td><td>Lovina, Indonesia</td><td>9.1 <small>(797)</small></td><td><b>€70</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/maha-hills-resort-sambangan.html}}\\\">See prices</a></td></tr><tr><td>14</td><td><a href=\\\"/kunming\\\">Moon and Chalice Boutique Hotel</a></td><td>Kunming, China</td><td>9.0 <small>(203)</small></td><td><b>€71</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/kun-ming-ruo-an-dui-yue-lou-jiu-dian.html}}\\\">See prices</a></td></tr><tr><td>15</td><td><a href=\\\"/coimbatore\\\">O by Tamara Coimbatore</a></td><td>Coimbatore, India</td><td>9.2 <small>(482)</small></td><td><b>€72</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/o-by-tamara-coimbatore.html}}\\\">See prices</a></td></tr></tbody></table></div>\\n<h2>Read the scores, not just the stars</h2>\\n<p>All 15 hotels are five-stars, but their guest scores range from 8.5 to 9.3. The average is 9.0. That spread matters more than it looks. A 9.3 means guests found very little to complain about. An 8.5 is good, but it usually means more mixed experiences.</p>\\n<p>The two cheapest hotels show this well. <a href=\\\"/caldas-novas\\\">OFICIAL Evian Thermas Residence by Trul Hoteis</a> is the cheapest at €40, but its 8.5 is the lowest score on the list. It is listed as a residence, so expect something closer to an apartment complex than a classic grand hotel. For about €7 more, <a href=\\\"/quy-nhon\\\">Grand Hyams Hotel - Quy Nhon Beach</a> scores 9.1 from 714 reviews. And <a href=\\\"/nha-trang\\\">Adamas Boutique Hotel Nha Trang</a> scores 9.2 at €49.</p>\\n<h2>Flag: the hotels with fewer reviews</h2>\\n<p>Thirteen of the 15 hotels have more than 450 reviews. Two have far fewer, and one has a name worth checking. Read these three with more care:</p>\\n<ul>\\n<li><b><a href=\\\"/kunming\\\">Moon and Chalice Boutique Hotel</a></b>: 9.0 from just 203 reviews, at €71. The lowest review count on the list.</li>\\n<li><b><a href=\\\"/yangon\\\">Meliá Yangon</a></b>: 9.1 from 222 reviews, at €67. A small sample of guests for a hotel of this category.</li>\\n<li><b><a href=\\\"/cairo\\\">Flower Pyramids Inn</a></b>: 8.8 from 494 reviews. More reviews, but the name says \\\"Inn\\\", which is unusual for a five-star. Check what the rooms and facilities actually are before you assume a full-service hotel.</li>\\n</ul>\\n<p>Fewer reviews do not mean a hotel is bad. They mean a score can change faster, and a few unhappy guests have more weight.</p>\\n<h2>The most solid picks</h2>\\n<h3>Eastern House Xi'an</h3>\\n<p><a href=\\\"/xian\\\">Eastern House Xi'an</a> has the most reviews on the list, 1,940, with a 9.2 at €58. That is the best combination of a high score and a large review base here. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xi-an-dong-she-jiu-dian.html}}\\\">See prices</a>.</p>\\n<h3>Aroma Tea House Formula Museum Hotel Guilin</h3>\\n<p><a href=\\\"/guilin\\\">Aroma Tea House Formula Museum Hotel Guilin</a> shares the top score of 9.3 with 1,641 reviews, at €68. It is listed in Xiangshan district. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/gui-lin-shi-jing-guan-ming-lou-du-jia-jiu-dian.html}}\\\">See prices</a>.</p>\\n<h3>The Watson Premium HaLong Hotel</h3>\\n<p><a href=\\\"/ha-long\\\">The Watson Premium HaLong Hotel</a> also scores 9.3, from 1,105 reviews, at €63. It is in Bai Chay. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/the-watson-ha-long-thanh-pho-ha-long.html}}\\\">See prices</a>.</p>\\n<h3>The Heritage Chiang Rai</h3>\\n<p><a href=\\\"/chiang-rai\\\">The Heritage Chiang Rai Hotel and Convention</a> has 1,169 reviews but a lower 8.7, at €63. The address is in Sansai, Mueang Chiang Rai, and the name includes \\\"Convention\\\". It may suit groups and events more than a quiet break. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/th/the-heritage-chiang-rai.html}}\\\">See prices</a>.</p>\\n<h2>Where the cheap five-stars are</h2>\\n<p>China and Vietnam dominate. China has four: <a href=\\\"/guangzhou\\\">Arthur Hotel Liwan COCO Park</a>, Xi'an, Guilin and Kunming. Vietnam has three: Quy Nhon, Nha Trang and Ha Long. Indonesia has two, <a href=\\\"/kuta\\\">Rama Beach Resort and Villas</a> and <a href=\\\"/lovina\\\">Maha Hills Resort by Mahaprana Experience</a>, both on Bali. India has two, <a href=\\\"/siliguri\\\">Courtyard by Marriott Siliguri</a> and <a href=\\\"/coimbatore\\\">O by Tamara Coimbatore</a>. Brazil, Egypt, Thailand and Myanmar have one each. No European city makes this list.</p>\\n<h2>Trade-offs to keep in mind</h2>\\n<ul>\\n<li><b>Five stars are not a global standard.</b> Star ratings depend on local rules and on what the property declares. Use the score and recent reviews to judge.</li>\\n<li><b>Location varies a lot.</b> <a href=\\\"/lovina\\\">Maha Hills Resort by Mahaprana Experience</a> lists an address in Sambangan, Sukasada, not in Lovina town itself. <a href=\\\"/cairo\\\">Flower Pyramids Inn</a> is in Giza. Check the map against what you plan to see.</li>\\n<li><b>Low season helps.</b> Mid-November is quiet in some of these places and busy in others. A price this low may not hold over a holiday weekend.</li>\\n<li><b>Extras can add up.</b> At these prices, breakfast, transfers or spa use may be extra. Read what is included.</li>\\n</ul>\\n<h2>How to use this list</h2><p>Treat it as a shortlist, not a booking order. Open the city page to see the other two hotels we picked there, then check the price for your own dates. Read the most recent reviews, look at the map and compare the total price with taxes. You can read the full method on <a href=\\\"/how-we-choose\\\">how we choose hotels</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1029,\"mins\":5},{\"lang\":\"es\",\"alt\":\"cheapest-five-star-hotels-in-the-world\",\"slug\":\"hoteles-cinco-estrellas-mas-baratos-del-mundo\",\"city\":null,\"title\":\"Los hoteles de cinco estrellas más baratos del mundo (2026)\",\"description\":\"Los 15 cinco estrellas más baratos de nuestra base de datos, de 40 € la noche en Brasil a 72 € en la India, con nota y opiniones. Noviembre de 2026.\",\"h1\":\"Los hoteles de cinco estrellas más baratos del mundo\",\"dek\":\"Cinco estrellas oficiales desde 40 € la noche. Estos son los 15 más baratos, con su nota y los que tienen pocas opiniones para fiarse a ciegas.\",\"tags\":[\"Data\",\"Lujo\"],\"body\":\"<p>Un cinco estrellas por 40 € la noche parece un error. No lo es. En nuestras fechas de noviembre, el hotel de cinco estrellas oficiales más barato de nuestra base de datos cuesta 40 €, y el más caro de los 15 de abajo, 72 €. Es menos de lo que piden muchos hoteles urbanos sencillos en Europa occidental.</p>\\n<p>Todos los precios son de referencia: los vimos en Booking.com para una estancia de dos noches, del 10 al 12 de noviembre de 2026, dos adultos y una habitación, y los mostramos por noche. Cambian a diario, así que mira el precio de hoy para tus fechas antes de reservar.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> En cada ciudad que cubrimos, nuestra opción de lujo es el cinco estrellas mejor valorado. Tomamos todas las opciones con categoría oficial de cinco estrellas, las ordenamos por precio y nos quedamos con las 15 más baratas. Para cada una damos la nota y el número de opiniones, porque la etiqueta de cinco estrellas por sí sola dice poco. Las estrellas en Booking.com describen instalaciones. La nota dice cómo se sintieron los huéspedes.</aside>\\n<h2>Los 15 hoteles de cinco estrellas más baratos</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Hotel</th><th>Ciudad</th><th>Nota (opiniones)</th><th>Por noche</th><th></th></tr></thead><tbody><tr><td>1</td><td><a href=\\\"/es/caldas-novas\\\">OFICIAL Evian Thermas Residence by Trul Hoteis</a></td><td>Caldas Novas, Brazil</td><td>8,5 <small>(532)</small></td><td><b>40 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/br/evian-thermas-residence-caldas-novas215.html}}\\\">Ver precios</a></td></tr><tr><td>2</td><td><a href=\\\"/es/quy-nhon\\\">Grand Hyams Hotel - Quy Nhon Beach</a></td><td>Quy Nhon, Vietnam</td><td>9,1 <small>(714)</small></td><td><b>48 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/grand-hyams-quy-nhon-beach-quy-nhon1.html}}\\\">Ver precios</a></td></tr><tr><td>3</td><td><a href=\\\"/es/nha-trang\\\">Adamas Boutique Hotel Nha Trang</a></td><td>Nha Trang, Vietnam</td><td>9,2 <small>(794)</small></td><td><b>49 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/adamas-boutique.html}}\\\">Ver precios</a></td></tr><tr><td>4</td><td><a href=\\\"/es/cairo\\\">Flower Pyramids Inn</a></td><td>Cairo, Egypt</td><td>8,8 <small>(494)</small></td><td><b>49 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/eg/flower-pyramids-inn.html}}\\\">Ver precios</a></td></tr><tr><td>5</td><td><a href=\\\"/es/guangzhou\\\">Arthur Hotel Liwan COCO Park</a></td><td>Guangzhou, China</td><td>9,1 <small>(458)</small></td><td><b>53 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/qi-shi-wu-yu-jiu-dian-li-wan-jian-kang-gang-dian.html}}\\\">Ver precios</a></td></tr><tr><td>6</td><td><a href=\\\"/es/xian\\\">Eastern House Xi'an</a></td><td>Xi’an, China</td><td>9,2 <small>(1.940)</small></td><td><b>58 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xi-an-dong-she-jiu-dian.html}}\\\">Ver precios</a></td></tr><tr><td>7</td><td><a href=\\\"/es/chiang-rai\\\">The Heritage Chiang Rai Hotel and Convention</a></td><td>Chiang Rai, Thailand</td><td>8,7 <small>(1.169)</small></td><td><b>63 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/th/the-heritage-chiang-rai.html}}\\\">Ver precios</a></td></tr><tr><td>8</td><td><a href=\\\"/es/ha-long\\\">The Watson Premium HaLong Hotel</a></td><td>Ha Long, Vietnam</td><td>9,3 <small>(1.105)</small></td><td><b>63 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/the-watson-ha-long-thanh-pho-ha-long.html}}\\\">Ver precios</a></td></tr><tr><td>9</td><td><a href=\\\"/es/kuta\\\">Rama Beach Resort and Villas</a></td><td>Kuta, Indonesia</td><td>9,0 <small>(901)</small></td><td><b>66 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/rama-beach-resort.html}}\\\">Ver precios</a></td></tr><tr><td>10</td><td><a href=\\\"/es/siliguri\\\">Courtyard by Marriott Siliguri</a></td><td>Siliguri, India</td><td>9,0 <small>(575)</small></td><td><b>67 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/courtyard-by-marriott-siliguri.html}}\\\">Ver precios</a></td></tr><tr><td>11</td><td><a href=\\\"/es/yangon\\\">Meliá Yangon</a></td><td>Yangon, Myanmar</td><td>9,1 <small>(222)</small></td><td><b>67 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mm/melia-yangon.html}}\\\">Ver precios</a></td></tr><tr><td>12</td><td><a href=\\\"/es/guilin\\\">Aroma Tea House Formula Museum Hotel Guilin</a></td><td>Guilin, China</td><td>9,3 <small>(1.641)</small></td><td><b>68 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/gui-lin-shi-jing-guan-ming-lou-du-jia-jiu-dian.html}}\\\">Ver precios</a></td></tr><tr><td>13</td><td><a href=\\\"/es/lovina\\\">Maha Hills Resort by Mahaprana Experience</a></td><td>Lovina, Indonesia</td><td>9,1 <small>(797)</small></td><td><b>70 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/id/maha-hills-resort-sambangan.html}}\\\">Ver precios</a></td></tr><tr><td>14</td><td><a href=\\\"/es/kunming\\\">Moon and Chalice Boutique Hotel</a></td><td>Kunming, China</td><td>9,0 <small>(203)</small></td><td><b>71 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/kun-ming-ruo-an-dui-yue-lou-jiu-dian.html}}\\\">Ver precios</a></td></tr><tr><td>15</td><td><a href=\\\"/es/coimbatore\\\">O by Tamara Coimbatore</a></td><td>Coimbatore, India</td><td>9,2 <small>(482)</small></td><td><b>72 €</b></td><td><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/in/o-by-tamara-coimbatore.html}}\\\">Ver precios</a></td></tr></tbody></table></div>\\n<h2>Mira la nota, no solo las estrellas</h2>\\n<p>Los 15 son de cinco estrellas, pero sus notas van de 8,5 a 9,3. La media es 9,0. Esa diferencia pesa más de lo que parece. Un 9,3 significa que los huéspedes encontraron muy poco que criticar. Un 8,5 está bien, pero suele indicar experiencias más desiguales.</p>\\n<p>Los dos más baratos lo muestran bien. <a href=\\\"/es/caldas-novas\\\">OFICIAL Evian Thermas Residence by Trul Hoteis</a> es el más barato, a 40 €, pero su 8,5 es la nota más baja de la lista. Aparece como residence, así que cuenta con algo más parecido a un complejo de apartamentos que a un gran hotel clásico. Por unos 7 € más, <a href=\\\"/es/quy-nhon\\\">Grand Hyams Hotel - Quy Nhon Beach</a> saca un 9,1 sobre 714 opiniones. Y <a href=\\\"/es/nha-trang\\\">Adamas Boutique Hotel Nha Trang</a> tiene un 9,2 a 49 €.</p>\\n<h2>Ojo: los que tienen menos opiniones</h2>\\n<p>Trece de los 15 hoteles pasan de 450 opiniones. Dos tienen muchas menos, y uno tiene un nombre que conviene revisar. Lee estos tres con más cuidado:</p>\\n<ul>\\n<li><b><a href=\\\"/es/kunming\\\">Moon and Chalice Boutique Hotel</a></b>: un 9,0 sobre solo 203 opiniones, a 71 €. Es el que menos tiene de la lista.</li>\\n<li><b><a href=\\\"/es/yangon\\\">Meliá Yangon</a></b>: un 9,1 sobre 222 opiniones, a 67 €. Pocos huéspedes opinando para un hotel de esta categoría.</li>\\n<li><b><a href=\\\"/es/cairo\\\">Flower Pyramids Inn</a></b>: un 8,8 sobre 494 opiniones. Tiene más, pero el nombre dice \\\"Inn\\\", algo raro para un cinco estrellas. Revisa cómo son de verdad las habitaciones y las instalaciones antes de dar por hecho un hotel de servicio completo.</li>\\n</ul>\\n<p>Pocas opiniones no quieren decir que el hotel sea malo. Quieren decir que la nota puede cambiar más rápido y que unos pocos clientes descontentos pesan más.</p>\\n<h2>Las opciones más sólidas</h2>\\n<h3>Eastern House Xi'an</h3>\\n<p><a href=\\\"/es/xian\\\">Eastern House Xi'an</a> es el que más opiniones tiene, 1.940, con un 9,2 a 58 €. Es la mejor combinación de nota alta y muchas opiniones de la lista. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/xi-an-dong-she-jiu-dian.html}}\\\">Ver precios</a>.</p>\\n<h3>Aroma Tea House Formula Museum Hotel Guilin</h3>\\n<p><a href=\\\"/es/guilin\\\">Aroma Tea House Formula Museum Hotel Guilin</a> comparte la nota más alta, un 9,3, con 1.641 opiniones, a 68 €. Está en el distrito de Xiangshan. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cn/gui-lin-shi-jing-guan-ming-lou-du-jia-jiu-dian.html}}\\\">Ver precios</a>.</p>\\n<h3>The Watson Premium HaLong Hotel</h3>\\n<p><a href=\\\"/es/ha-long\\\">The Watson Premium HaLong Hotel</a> también saca un 9,3, sobre 1.105 opiniones, a 63 €. Está en Bai Chay. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/vn/the-watson-ha-long-thanh-pho-ha-long.html}}\\\">Ver precios</a>.</p>\\n<h3>The Heritage Chiang Rai</h3>\\n<p><a href=\\\"/es/chiang-rai\\\">The Heritage Chiang Rai Hotel and Convention</a> tiene 1.169 opiniones pero un 8,7, más bajo, a 63 €. La dirección está en Sansai, Mueang Chiang Rai, y el nombre incluye \\\"Convention\\\". Puede encajar mejor con grupos y eventos que con una escapada tranquila. <a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/th/the-heritage-chiang-rai.html}}\\\">Ver precios</a>.</p>\\n<h2>Dónde están los cinco estrellas baratos</h2>\\n<p>Vietnam y China mandan. Vietnam pone tres: Quy Nhon, Nha Trang y Ha Long. China pone cuatro: <a href=\\\"/es/guangzhou\\\">Arthur Hotel Liwan COCO Park</a>, Xi'an, Guilin y Kunming. Indonesia tiene dos, <a href=\\\"/es/kuta\\\">Rama Beach Resort and Villas</a> y <a href=\\\"/es/lovina\\\">Maha Hills Resort by Mahaprana Experience</a>, los dos en Bali. La India tiene otros dos, <a href=\\\"/es/siliguri\\\">Courtyard by Marriott Siliguri</a> y <a href=\\\"/es/coimbatore\\\">O by Tamara Coimbatore</a>. Brasil, Egipto, Tailandia y Myanmar tienen uno cada uno. Ninguna ciudad europea entra.</p>\\n<h2>Pegas que debes tener en cuenta</h2>\\n<ul>\\n<li><b>Cinco estrellas no es un estándar mundial.</b> La categoría depende de normas locales y de lo que declara el propio alojamiento. Juzga por la nota y las opiniones recientes.</li>\\n<li><b>La ubicación cambia mucho.</b> <a href=\\\"/es/lovina\\\">Maha Hills Resort by Mahaprana Experience</a> da una dirección en Sambangan, Sukasada, no en el propio Lovina. <a href=\\\"/es/cairo\\\">Flower Pyramids Inn</a> está en Guiza. Compara el mapa con lo que quieres ver.</li>\\n<li><b>La temporada baja ayuda.</b> Mediados de noviembre es tranquilo en algunos de estos sitios y no en otros. Un precio tan bajo puede no mantenerse en un puente.</li>\\n<li><b>Los extras suman.</b> A estos precios, el desayuno, los traslados o el spa pueden ir aparte. Lee qué incluye.</li>\\n</ul>\\n<h2>Cómo usar esta lista</h2><p>Tómala como una lista corta, no como una orden de reserva. Abre la página de la ciudad para ver los otros dos hoteles que elegimos allí y mira el precio para tus fechas. Lee las opiniones más recientes, mira el mapa y compara el precio total con tasas. Tienes el método completo en <a href=\\\"/how-we-choose\\\">cómo elegimos los hoteles</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1108,\"mins\":6},{\"lang\":\"en\",\"alt\":\"precio-hotel-capitales-europeas-economico-lujo\",\"slug\":\"hotel-prices-europe-capitals-budget-value-luxury\",\"city\":null,\"title\":\"Hotel prices in Europe's capitals: 3 levels (2026)\",\"description\":\"Budget, best value and luxury hotel prices in 29 European capitals, from €29 in Riga to €910 in Amsterdam. Real prices for November 2026.\",\"h1\":\"What a hotel costs in Europe's capitals: budget, best value and luxury\",\"dek\":\"Three hotels in each of 29 capitals, on the same dates. Where luxury is cheap, where even budget is not, and the trade-offs.\",\"tags\":[\"Data\",\"Europe\"],\"body\":\"<p>We pick three hotels in every city we cover. Here they are for 29 European capitals, side by side. The cheapest budget room is €29 in Riga. The most expensive luxury room is €910 in Amsterdam.</p>\\n<p>All prices are reference prices seen on Booking.com for a two-night stay from 10 to 12 November 2026, two adults, one room, shown per night. Prices move every day, so check today's price for your own dates before you book.</p>\\n<aside class=\\\"method\\\"><b>How we picked.</b> Budget is the cheapest good private room: own bathroom, solid reviews, no dorms. Best value is the hotel with the best reviews at a normal price. Luxury is the best-reviewed five-star. Each cell shows the hotel, price per night, score and reviews. Capitals are sorted by the best value price, from cheapest to most expensive.</aside>\\n<h2>All three levels, capital by capital</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Capital</th><th>Budget</th><th>Best value</th><th>Luxury</th></tr></thead><tbody><tr><td>1</td><td>Riga</td><td><a href=\\\"/riga\\\">Old Riga Plaza Hotel</a><br><b>€29</b> <small>8.1 (2,949)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/aparthotel-plaza-kg.html}}\\\">See prices</a></td><td><a href=\\\"/riga\\\">Carillon Aparthotel, Keystone Collection</a><br><b>€67</b> <small>9.6 (469)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/carillon-aparthotel-keystone-collection.html}}\\\">See prices</a></td><td><a href=\\\"/riga\\\">Grand Poet Hotel</a><br><b>€108</b> <small>9.4 (4,248)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/grand-poet-by-semarah.html}}\\\">See prices</a></td></tr><tr><td>2</td><td>Belgrade</td><td><a href=\\\"/belgrade\\\">Centar Forever</a><br><b>€42</b> <small>8.2 (1,381)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/guest-house-center.html}}\\\">See prices</a></td><td><a href=\\\"/belgrade\\\">Hotel Skadarlija NB</a><br><b>€75</b> <small>9.2 (1,668)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/skadarlija-nb.html}}\\\">See prices</a></td><td><a href=\\\"/belgrade\\\">Prezident Palace Belgrade</a><br><b>€248</b> <small>9.6 (827)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/prezident-palace-belgrade.html}}\\\">See prices</a></td></tr><tr><td>3</td><td>Tallinn</td><td><a href=\\\"/tallinn\\\">Rija Old Town Hotel</a><br><b>€53</b> <small>8.5 (3,484)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/meriton-old-town.html}}\\\">See prices</a></td><td><a href=\\\"/tallinn\\\">Hyatt Place Tallinn</a><br><b>€76</b> <small>9.2 (1,342)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/hyatt-place-tallinn.html}}\\\">See prices</a></td><td><a href=\\\"/tallinn\\\">Radisson Collection Tallinn</a><br><b>€166</b> <small>9.4 (6,127)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/radisson-sas-tallinn.html}}\\\">See prices</a></td></tr><tr><td>4</td><td>Prague</td><td><a href=\\\"/prague\\\">Hotel Prague Star</a><br><b>€52</b> <small>8.4 (6,396)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/magic-centre-prague-accommodation.html}}\\\">See prices</a></td><td><a href=\\\"/prague\\\">Grand Hotel International</a><br><b>€80</b> <small>9.2 (18,993)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/hotel-international-prague.html}}\\\">See prices</a></td><td><a href=\\\"/prague\\\">Old Royal Post</a><br><b>€104</b> <small>9.6 (2,457)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/old-royal-post-apartments.html}}\\\">See prices</a></td></tr><tr><td>5</td><td>Vienna</td><td><a href=\\\"/vienna\\\">Bob W Vienna Döbling</a><br><b>€87</b> <small>9.1 (156)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/bob-w-vienna-dobling.html}}\\\">See prices</a></td><td><a href=\\\"/vienna\\\">Exe Vienna</a><br><b>€89</b> <small>8.7 (4,066)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/eurostars-vienna.html}}\\\">See prices</a></td><td><a href=\\\"/vienna\\\">Hotel Sacher Wien</a><br><b>€769</b> <small>9.6 (1,022)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/sacher-wien.html}}\\\">See prices</a></td></tr><tr><td>6</td><td>Vilnius</td><td><a href=\\\"/vilnius\\\">CATHEDRAL Old Town Suites</a><br><b>€64</b> <small>8.9 (4,178)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lt/cathedral-apart.html}}\\\">See prices</a></td><td><a href=\\\"/vilnius\\\">CALVARY Hotel</a><br><b>€92</b> <small>9.3 (3,497)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lt/calvary-amp-restaurant-vilnius.html}}\\\">See prices</a></td><td><a href=\\\"/vilnius\\\">Stikliai Hotel</a><br><b>€208</b> <small>9.4 (1,515)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lt/stikliai.html}}\\\">See prices</a></td></tr><tr><td>7</td><td>Bucharest</td><td><a href=\\\"/bucharest\\\">RHUM B07 Old Town Courtyard</a><br><b>€49</b> <small>8.1 (131)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/old-town-courtyard-by-rh-reserve.html}}\\\">See prices</a></td><td><a href=\\\"/bucharest\\\">Hotel Epica</a><br><b>€98</b> <small>9.4 (526)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/epica.html}}\\\">See prices</a></td><td><a href=\\\"/bucharest\\\">Corinthia Bucharest</a><br><b>€399</b> <small>9.7 (180)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/corinthia-bucharest.html}}\\\">See prices</a></td></tr><tr><td>8</td><td>Ljubljana</td><td><a href=\\\"/ljubljana\\\">Holiday Inn Express Ljubljana</a><br><b>€78</b> <small>8.8 (5,525)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/si/holiday-inn-express-ljubljana.html}}\\\">See prices</a></td><td><a href=\\\"/ljubljana\\\">Atelier Hotel</a><br><b>€98</b> <small>8.9 (6,246)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/si/atelier.html}}\\\">See prices</a></td><td><a href=\\\"/ljubljana\\\">Zlata Ladjica Boutique Hotel</a><br><b>€420</b> <small>9.7 (277)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/si/zlata-ladjica-boutique-ljubljana.html}}\\\">See prices</a></td></tr><tr><td>9</td><td>Sofia</td><td><a href=\\\"/sofia\\\">Aurora Sofia Hotel</a><br><b>€84</b> <small>9.3 (2,256)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/aurora-sofia.html}}\\\">See prices</a></td><td><a href=\\\"/sofia\\\">Sentro Boutique Hotel</a><br><b>€98</b> <small>9.6 (1,783)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/sentro.html}}\\\">See prices</a></td><td><a href=\\\"/sofia\\\">Grand Hotel Millennium Sofia</a><br><b>€278</b> <small>9.2 (4,290)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/grand-millennium-sofia.html}}\\\">See prices</a></td></tr><tr><td>10</td><td>Athens</td><td><a href=\\\"/athens\\\">Casual Kubic Athens</a><br><b>€63</b> <small>8.3 (1,377)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/kubic-athens-athina12345678.html}}\\\">See prices</a></td><td><a href=\\\"/athens\\\">Evripides Hotel</a><br><b>€101</b> <small>9.0 (4,405)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/evripides.html}}\\\">See prices</a></td><td><a href=\\\"/athens\\\">The Pinnacle Athens</a><br><b>€191</b> <small>9.5 (997)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/the-pinnacle-athens.html}}\\\">See prices</a></td></tr><tr><td>11</td><td>Bratislava</td><td><a href=\\\"/bratislava\\\">Falkensteiner Hotel Bratislava</a><br><b>€118</b> <small>8.9 (6,096)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/sk/falkensteiner-bratislava-besitz-s-r-o.html}}\\\">See prices</a></td><td><a href=\\\"/bratislava\\\">LOFT Hotel Bratislava</a><br><b>€129</b> <small>9.4 (8,370)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/sk/loft-hotel-bratislava.html}}\\\">See prices</a></td><td><a href=\\\"/bratislava\\\">Marrol's Boutique Hotel</a><br><b>€159</b> <small>9.2 (4,660)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/sk/marrol-s.html}}\\\">See prices</a></td></tr><tr><td>12</td><td>Helsinki</td><td><a href=\\\"/helsinki\\\">Senate Hotel</a><br><b>€100</b> <small>8.0 (826)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fi/senate.html}}\\\">See prices</a></td><td><a href=\\\"/helsinki\\\">Hotel Bastian</a><br><b>€133</b> <small>9.2 (685)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fi/hotelli-bastian.html}}\\\">See prices</a></td><td><a href=\\\"/helsinki\\\">Lapland Hotels Bulevardi</a><br><b>€266</b> <small>9.4 (2,242)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fi/lapland-hotels-bulevardi.html}}\\\">See prices</a></td></tr><tr><td>13</td><td>Reykjavík</td><td><a href=\\\"/reykjavik\\\">Hotel Vera</a><br><b>€173</b> <small>8.4 (1,103)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/is/vera.html}}\\\">See prices</a></td><td><a href=\\\"/reykjavik\\\">CityHub Reykjavik</a><br><b>€137</b> <small>9.1 (1,665)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/is/cityhub-reykjavik.html}}\\\">See prices</a></td><td><a href=\\\"/reykjavik\\\">Reykjavik Konsulat Hotel</a><br><b>€353</b> <small>9.0 (364)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/is/consulate-reykjavik-curio-collection-by-hilton.html}}\\\">See prices</a></td></tr><tr><td>14</td><td>Warsaw</td><td><a href=\\\"/warsaw\\\">Level Rooms</a><br><b>€69</b> <small>8.1 (1,854)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/level-rooms.html}}\\\">See prices</a></td><td><a href=\\\"/warsaw\\\">PURO Warszawa Centrum</a><br><b>€139</b> <small>9.4 (4,084)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/puro-warszawa-centrum.html}}\\\">See prices</a></td><td><a href=\\\"/warsaw\\\">InterContinental Warszawa</a><br><b>€147</b> <small>9.1 (10,072)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/intercontinentalwarsaw.html}}\\\">See prices</a></td></tr><tr><td>15</td><td>Budapest</td><td><a href=\\\"/budapest\\\">AnVa House</a><br><b>€55</b> <small>8.0 (4,246)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hu/anva-house.html}}\\\">See prices</a></td><td><a href=\\\"/budapest\\\">Damas Suites Budapest</a><br><b>€144</b> <small>9.4 (709)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hu/jumeirah-suites-budapest.html}}\\\">See prices</a></td><td><a href=\\\"/budapest\\\">Aria Hotel Budapest</a><br><b>€417</b> <small>9.6 (1,056)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hu/aria-budapest.html}}\\\">See prices</a></td></tr><tr><td>16</td><td>Berlin</td><td><a href=\\\"/berlin\\\">ibis budget Berlin Alexanderplatz</a><br><b>€92</b> <small>8.0 (5,598)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/ibis-budget-berlin-alexanderplatz.html}}\\\">See prices</a></td><td><a href=\\\"/berlin\\\">Locke at East Side Gallery</a><br><b>€151</b> <small>8.9 (3,489)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/locke-at-east-side-gallery.html}}\\\">See prices</a></td><td><a href=\\\"/berlin\\\">Wilmina Hotel</a><br><b>€183</b> <small>9.4 (1,047)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/wilmina.html}}\\\">See prices</a></td></tr><tr><td>17</td><td>Zagreb</td><td><a href=\\\"/zagreb\\\">Art Hotel Like</a><br><b>€100</b> <small>8.0 (3,749)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hr/art-hotel-like.html}}\\\">See prices</a></td><td><a href=\\\"/zagreb\\\">Hotel Capital</a><br><b>€151</b> <small>9.1 (1,187)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hr/amadria-park-capital.html}}\\\">See prices</a></td><td><a href=\\\"/zagreb\\\">art'otel Zagreb</a><br><b>€162</b> <small>9.3 (2,494)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hr/art-otel-zagreb.html}}\\\">See prices</a></td></tr><tr><td>18</td><td>Amsterdam</td><td><a href=\\\"/amsterdam\\\">Tourist Inn One Amsterdam</a><br><b>€110</b> <small>8.0 (1,862)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nl/tourist-inn.html}}\\\">See prices</a></td><td><a href=\\\"/amsterdam\\\">Tourist Inn Hotel Amsterdam</a><br><b>€152</b> <small>8.8 (3,371)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nl/hostel-tourist-inn.html}}\\\">See prices</a></td><td><a href=\\\"/amsterdam\\\">Hotel TwentySeven</a><br><b>€910</b> <small>9.4 (203)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nl/twentyseven-amsterdam.html}}\\\">See prices</a></td></tr><tr><td>19</td><td>Rome</td><td><a href=\\\"/rome\\\">Hotel Elide</a><br><b>€40</b> <small>8.1 (1,491)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/eliderome.html}}\\\">See prices</a></td><td><a href=\\\"/rome\\\">Hotel Emona Aquaeductus</a><br><b>€154</b> <small>9.0 (1,857)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/emona-aquaeductus.html}}\\\">See prices</a></td><td><a href=\\\"/rome\\\">Harry's Bar Trevi</a><br><b>€652</b> <small>9.3 (1,082)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/harry-39-s-bar-trevi-amp-restaurant.html}}\\\">See prices</a></td></tr><tr><td>20</td><td>Lisbon</td><td><a href=\\\"/lisbon\\\">Dom João Glamour Hotel</a><br><b>€92</b> <small>8.0 (2,828)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/residencial-dom-joao.html}}\\\">See prices</a></td><td><a href=\\\"/lisbon\\\">HF Fénix Music</a><br><b>€172</b> <small>9.0 (3,059)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/hf-fenix-music.html}}\\\">See prices</a></td><td><a href=\\\"/lisbon\\\">EPIC SANA Lisboa Hotel</a><br><b>€232</b> <small>9.3 (2,733)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/epic-sana-lisboa.html}}\\\">See prices</a></td></tr><tr><td>21</td><td>Brussels</td><td><a href=\\\"/brussels\\\">Ibis Brussels City Centre</a><br><b>€146</b> <small>8.1 (6,655)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/be/ibisstcatherine.html}}\\\">See prices</a></td><td><a href=\\\"/brussels\\\">OPO Hotel</a><br><b>€178</b> <small>9.2 (3,090)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/be/opo-bruxelles3.html}}\\\">See prices</a></td><td><a href=\\\"/brussels\\\">Hotel Amigo</a><br><b>€448</b> <small>9.4 (638)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/be/amigo.html}}\\\">See prices</a></td></tr><tr><td>22</td><td>Valletta</td><td><a href=\\\"/valletta\\\">Paulos Valletta</a><br><b>€118</b> <small>8.8 (1,181)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mt/paulos-valletta.html}}\\\">See prices</a></td><td><a href=\\\"/valletta\\\">Battery House</a><br><b>€198</b> <small>9.3 (531)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mt/battery-house-il-belt-valletta2.html}}\\\">See prices</a></td><td><a href=\\\"/valletta\\\">Iniala Valletta</a><br><b>€428</b> <small>9.6 (190)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mt/the-hideaway.html}}\\\">See prices</a></td></tr><tr><td>23</td><td>Madrid</td><td><a href=\\\"/madrid\\\">B&amp;B HOTEL Madrid Vallecas La Gavia</a><br><b>€77</b> <small>8.8 (1,147)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/b-amp-b-madrid-vallecas-la-gavia.html}}\\\">See prices</a></td><td><a href=\\\"/madrid\\\">Aparto-Hotel Rosales</a><br><b>€200</b> <small>9.0 (3,424)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/aparto-rosales.html}}\\\">See prices</a></td><td><a href=\\\"/madrid\\\">Relais &amp; Châteaux Heritage Hotel</a><br><b>€432</b> <small>9.3 (1,223)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/heritage-madrid.html}}\\\">See prices</a></td></tr><tr><td>24</td><td>Copenhagen</td><td><a href=\\\"/copenhagen\\\">Wakeup Copenhagen - Borgergade</a><br><b>€101</b> <small>8.0 (16,568)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/wakeup-copenhagen-borgergade.html}}\\\">See prices</a></td><td><a href=\\\"/copenhagen\\\">Kanalhuset</a><br><b>€207</b> <small>9.4 (869)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/kanalhuset.html}}\\\">See prices</a></td><td><a href=\\\"/copenhagen\\\">1 Hotel Copenhagen</a><br><b>€301</b> <small>9.1 (702)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/1-hotel-copenhagen.html}}\\\">See prices</a></td></tr><tr><td>25</td><td>Bern</td><td><a href=\\\"/bern\\\">ibis Styles Bern City</a><br><b>€171</b> <small>8.5 (3,908)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/hotel-astoria.html}}\\\">See prices</a></td><td><a href=\\\"/bern\\\">Swissôtel Kursaal Bern</a><br><b>€219</b> <small>8.8 (2,923)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/allegro.html}}\\\">See prices</a></td><td><a href=\\\"/bern\\\">Hotel Schweizerhof Bern</a><br><b>€743</b> <small>9.0 (1,267)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/schweizerhof-bern.html}}\\\">See prices</a></td></tr><tr><td>26</td><td>Oslo</td><td><a href=\\\"/oslo\\\">Scandic Go, Grensen 20</a><br><b>€126</b> <small>8.1 (1,796)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/scandic-grensen.html}}\\\">See prices</a></td><td><a href=\\\"/oslo\\\">Hobo Oslo</a><br><b>€226</b> <small>8.9 (1,697)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/hobo-oslo.html}}\\\">See prices</a></td><td><a href=\\\"/oslo\\\">Hotel Continental</a><br><b>€476</b> <small>9.1 (667)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/continental.html}}\\\">See prices</a></td></tr><tr><td>27</td><td>Stockholm</td><td><a href=\\\"/stockholm\\\">ProfilHotels Riddargatan</a><br><b>€231</b> <small>8.3 (3,781)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/se/riddargatan.html}}\\\">See prices</a></td><td><a href=\\\"/stockholm\\\">Thon Hotel Vasa</a><br><b>€313</b> <small>8.9 (684)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/se/terminus-stockholm.html}}\\\">See prices</a></td><td><a href=\\\"/stockholm\\\">Bank Hotel</a><br><b>€371</b> <small>9.0 (1,383)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/se/bank.html}}\\\">See prices</a></td></tr><tr><td>28</td><td>Paris</td><td><a href=\\\"/paris\\\">Hotel Esmeralda</a><br><b>€220</b> <small>8.0 (1,632)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fr/esmeralda.html}}\\\">See prices</a></td><td><a href=\\\"/paris\\\">Nestay Les Halles</a><br><b>€328</b> <small>9.4 (1,191)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fr/nestay-les-halles.html}}\\\">See prices</a></td><td><a href=\\\"/paris\\\">Le Grand Mazarin</a><br><b>€759</b> <small>9.3 (361)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fr/le-grand-mazarin.html}}\\\">See prices</a></td></tr><tr><td>29</td><td>London</td><td><a href=\\\"/london\\\">The Z Hotel Leicester Square</a><br><b>€287</b> <small>8.5 (1,936)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/the-z-leicester-square.html}}\\\">See prices</a></td><td><a href=\\\"/london\\\">Page8, Page Hotels</a><br><b>€456</b> <small>9.2 (4,214)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/page-8.html}}\\\">See prices</a></td><td><a href=\\\"/london\\\">Haymarket Hotel</a><br><b>€781</b> <small>9.6 (494)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/haymarket.html}}\\\">See prices</a></td></tr></tbody></table></div>\\n<h2>The middle price in each level</h2>\\n<p>Across the 29 capitals, the median price is about €92 for budget, €144 for best value and €353 for luxury.</p>\\n<h2>Where luxury is cheap</h2>\\n<p><a href=\\\"/prague\\\">Old Royal Post</a> is the standout. Its five-star pick scores 9.6 from 2,457 reviews and costs €104. That is less than the budget pick in London, Paris, Stockholm, Bern, Reykjavík, Brussels, Bratislava, Valletta, Amsterdam and Oslo. Riga (€108), Warsaw (€147), Bratislava (€159) and Zagreb (€162) follow. In Zagreb and Bratislava, the gap between best value and luxury is small, so the upgrade costs little.</p>\\n<h2>Where everything is expensive</h2>\\n<p>London is the most expensive capital at the budget and best value levels: €287 and €456. Paris and Stockholm are close behind. In Stockholm the spread is narrow. Budget is €231 and luxury is €371, so if you are paying that much anyway, the step up is relatively small.</p>\\n<h2>The biggest jumps</h2>\\n<p>In some capitals the luxury pick costs many times the budget one. In Rome it is about 16 times: €40 against €652. Vienna, Amsterdam, Bucharest and Budapest all have a gap of seven to nine times. In these cities, the best value pick is where most travellers should look first.</p>\\n<h2>The trade-offs in the table</h2>\\n<ul>\\n<li><b>One budget pick costs more than best value.</b> In Reykjavík, the budget pick is €173 and best value is €137. On these dates, best value is the cheaper choice there.</li>\\n<li><b>Few reviews on some picks.</b> <a href=\\\"/bucharest\\\">RHUM B07 Old Town Courtyard</a> has 131 reviews, <a href=\\\"/vienna\\\">Bob W Vienna Döbling</a> 156, <a href=\\\"/bucharest\\\">Corinthia Bucharest</a> 180, <a href=\\\"/valletta\\\">Iniala Valletta</a> 190 and <a href=\\\"/amsterdam\\\">Hotel TwentySeven</a> 203. Scores built on so few reviews can move.</li>\\n<li><b>Budget is not always central.</b> In Madrid, the budget pick is in Vallecas La Gavia, and in Vienna it is in Döbling. You save money and spend time on transport.</li>\\n<li><b>Riga's best value pick is new.</b> Its listing says it opened in December 2025, so its 469 reviews cover less than a year.</li>\\n</ul>\\n<h2>How to use this list</h2><p>Treat it as a shortlist, not a booking order. Open the city page to see the other two hotels we picked there, then check the price for your own dates. Read the most recent reviews, look at the map and compare the total price with taxes. You can read the full method on <a href=\\\"/how-we-choose\\\">how we choose hotels</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1281,\"mins\":6},{\"lang\":\"es\",\"alt\":\"hotel-prices-europe-capitals-budget-value-luxury\",\"slug\":\"precio-hotel-capitales-europeas-economico-lujo\",\"city\":null,\"title\":\"Precio de hotel en capitales europeas: 3 niveles (2026)\",\"description\":\"Precios de hotel económico, calidad-precio y lujo en 29 capitales europeas, de 29 € en Riga a 910 € en Ámsterdam. Precios reales de noviembre de 2026.\",\"h1\":\"Cuánto cuesta un hotel en las capitales europeas: económico, calidad-precio y lujo\",\"dek\":\"Tres hoteles en cada una de 29 capitales, en las mismas fechas. Dónde el lujo sale barato, dónde ni lo económico lo es, y sus pegas.\",\"tags\":[\"Data\",\"Europa\"],\"body\":\"<p>En cada ciudad que cubrimos elegimos tres hoteles. Aquí los tienes para 29 capitales europeas, una al lado de otra. La habitación económica más barata cuesta 29 € en Riga. La de lujo más cara, 910 € en Ámsterdam.</p>\\n<p>Todos los precios son de referencia: los vimos en Booking.com para una estancia de dos noches, del 10 al 12 de noviembre de 2026, dos adultos y una habitación, y los mostramos por noche. Cambian a diario, así que mira el precio de hoy para tus fechas antes de reservar.</p>\\n<aside class=\\\"method\\\"><b>Cómo elegimos.</b> Económico es la habitación privada buena más barata: baño propio, buenas opiniones y nada de dormitorios compartidos. Calidad-precio es el hotel con mejores opiniones a un precio normal. Lujo es el cinco estrellas mejor valorado. Cada celda muestra hotel, precio por noche, nota y opiniones. Ordenamos las capitales por el precio de calidad-precio.</aside>\\n<h2>Los tres niveles, capital por capital</h2>\\n<div class=\\\"tablewrap\\\"><table><thead><tr><th>#</th><th>Capital</th><th>Económico</th><th>Calidad-precio</th><th>Lujo</th></tr></thead><tbody><tr><td>1</td><td>Riga</td><td><a href=\\\"/es/riga\\\">Old Riga Plaza Hotel</a><br><b>29 €</b> <small>8,1 (2.949)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/aparthotel-plaza-kg.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/riga\\\">Carillon Aparthotel, Keystone Collection</a><br><b>67 €</b> <small>9,6 (469)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/carillon-aparthotel-keystone-collection.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/riga\\\">Grand Poet Hotel</a><br><b>108 €</b> <small>9,4 (4.248)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lv/grand-poet-by-semarah.html}}\\\">Ver precios</a></td></tr><tr><td>2</td><td>Belgrado</td><td><a href=\\\"/es/belgrade\\\">Centar Forever</a><br><b>42 €</b> <small>8,2 (1.381)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/guest-house-center.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/belgrade\\\">Hotel Skadarlija NB</a><br><b>75 €</b> <small>9,2 (1.668)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/skadarlija-nb.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/belgrade\\\">Prezident Palace Belgrade</a><br><b>248 €</b> <small>9,6 (827)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/rs/prezident-palace-belgrade.html}}\\\">Ver precios</a></td></tr><tr><td>3</td><td>Tallin</td><td><a href=\\\"/es/tallinn\\\">Rija Old Town Hotel</a><br><b>53 €</b> <small>8,5 (3.484)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/meriton-old-town.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/tallinn\\\">Hyatt Place Tallinn</a><br><b>76 €</b> <small>9,2 (1.342)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/hyatt-place-tallinn.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/tallinn\\\">Radisson Collection Tallinn</a><br><b>166 €</b> <small>9,4 (6.127)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ee/radisson-sas-tallinn.html}}\\\">Ver precios</a></td></tr><tr><td>4</td><td>Praga</td><td><a href=\\\"/es/prague\\\">Hotel Prague Star</a><br><b>52 €</b> <small>8,4 (6.396)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/magic-centre-prague-accommodation.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/prague\\\">Grand Hotel International</a><br><b>80 €</b> <small>9,2 (18.993)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/hotel-international-prague.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/prague\\\">Old Royal Post</a><br><b>104 €</b> <small>9,6 (2.457)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/cz/old-royal-post-apartments.html}}\\\">Ver precios</a></td></tr><tr><td>5</td><td>Viena</td><td><a href=\\\"/es/vienna\\\">Bob W Vienna Döbling</a><br><b>87 €</b> <small>9,1 (156)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/bob-w-vienna-dobling.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/vienna\\\">Exe Vienna</a><br><b>89 €</b> <small>8,7 (4.066)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/eurostars-vienna.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/vienna\\\">Hotel Sacher Wien</a><br><b>769 €</b> <small>9,6 (1.022)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/at/sacher-wien.html}}\\\">Ver precios</a></td></tr><tr><td>6</td><td>Vilna</td><td><a href=\\\"/es/vilnius\\\">CATHEDRAL Old Town Suites</a><br><b>64 €</b> <small>8,9 (4.178)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lt/cathedral-apart.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/vilnius\\\">CALVARY Hotel</a><br><b>92 €</b> <small>9,3 (3.497)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lt/calvary-amp-restaurant-vilnius.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/vilnius\\\">Stikliai Hotel</a><br><b>208 €</b> <small>9,4 (1.515)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/lt/stikliai.html}}\\\">Ver precios</a></td></tr><tr><td>7</td><td>Bucarest</td><td><a href=\\\"/es/bucharest\\\">RHUM B07 Old Town Courtyard</a><br><b>49 €</b> <small>8,1 (131)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/old-town-courtyard-by-rh-reserve.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/bucharest\\\">Hotel Epica</a><br><b>98 €</b> <small>9,4 (526)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/epica.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/bucharest\\\">Corinthia Bucharest</a><br><b>399 €</b> <small>9,7 (180)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ro/corinthia-bucharest.html}}\\\">Ver precios</a></td></tr><tr><td>8</td><td>Liubliana</td><td><a href=\\\"/es/ljubljana\\\">Holiday Inn Express Ljubljana</a><br><b>78 €</b> <small>8,8 (5.525)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/si/holiday-inn-express-ljubljana.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/ljubljana\\\">Atelier Hotel</a><br><b>98 €</b> <small>8,9 (6.246)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/si/atelier.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/ljubljana\\\">Zlata Ladjica Boutique Hotel</a><br><b>420 €</b> <small>9,7 (277)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/si/zlata-ladjica-boutique-ljubljana.html}}\\\">Ver precios</a></td></tr><tr><td>9</td><td>Sofía</td><td><a href=\\\"/es/sofia\\\">Aurora Sofia Hotel</a><br><b>84 €</b> <small>9,3 (2.256)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/aurora-sofia.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/sofia\\\">Sentro Boutique Hotel</a><br><b>98 €</b> <small>9,6 (1.783)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/sentro.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/sofia\\\">Grand Hotel Millennium Sofia</a><br><b>278 €</b> <small>9,2 (4.290)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/bg/grand-millennium-sofia.html}}\\\">Ver precios</a></td></tr><tr><td>10</td><td>Atenas</td><td><a href=\\\"/es/athens\\\">Casual Kubic Athens</a><br><b>63 €</b> <small>8,3 (1.377)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/kubic-athens-athina12345678.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/athens\\\">Evripides Hotel</a><br><b>101 €</b> <small>9,0 (4.405)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/evripides.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/athens\\\">The Pinnacle Athens</a><br><b>191 €</b> <small>9,5 (997)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gr/the-pinnacle-athens.html}}\\\">Ver precios</a></td></tr><tr><td>11</td><td>Bratislava</td><td><a href=\\\"/es/bratislava\\\">Falkensteiner Hotel Bratislava</a><br><b>118 €</b> <small>8,9 (6.096)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/sk/falkensteiner-bratislava-besitz-s-r-o.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/bratislava\\\">LOFT Hotel Bratislava</a><br><b>129 €</b> <small>9,4 (8.370)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/sk/loft-hotel-bratislava.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/bratislava\\\">Marrol's Boutique Hotel</a><br><b>159 €</b> <small>9,2 (4.660)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/sk/marrol-s.html}}\\\">Ver precios</a></td></tr><tr><td>12</td><td>Helsinki</td><td><a href=\\\"/es/helsinki\\\">Senate Hotel</a><br><b>100 €</b> <small>8,0 (826)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fi/senate.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/helsinki\\\">Hotel Bastian</a><br><b>133 €</b> <small>9,2 (685)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fi/hotelli-bastian.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/helsinki\\\">Lapland Hotels Bulevardi</a><br><b>266 €</b> <small>9,4 (2.242)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fi/lapland-hotels-bulevardi.html}}\\\">Ver precios</a></td></tr><tr><td>13</td><td>Reikiavik</td><td><a href=\\\"/es/reykjavik\\\">Hotel Vera</a><br><b>173 €</b> <small>8,4 (1.103)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/is/vera.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/reykjavik\\\">CityHub Reykjavik</a><br><b>137 €</b> <small>9,1 (1.665)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/is/cityhub-reykjavik.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/reykjavik\\\">Reykjavik Konsulat Hotel</a><br><b>353 €</b> <small>9,0 (364)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/is/consulate-reykjavik-curio-collection-by-hilton.html}}\\\">Ver precios</a></td></tr><tr><td>14</td><td>Varsovia</td><td><a href=\\\"/es/warsaw\\\">Level Rooms</a><br><b>69 €</b> <small>8,1 (1.854)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/level-rooms.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/warsaw\\\">PURO Warszawa Centrum</a><br><b>139 €</b> <small>9,4 (4.084)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/puro-warszawa-centrum.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/warsaw\\\">InterContinental Warszawa</a><br><b>147 €</b> <small>9,1 (10.072)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pl/intercontinentalwarsaw.html}}\\\">Ver precios</a></td></tr><tr><td>15</td><td>Budapest</td><td><a href=\\\"/es/budapest\\\">AnVa House</a><br><b>55 €</b> <small>8,0 (4.246)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hu/anva-house.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/budapest\\\">Damas Suites Budapest</a><br><b>144 €</b> <small>9,4 (709)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hu/jumeirah-suites-budapest.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/budapest\\\">Aria Hotel Budapest</a><br><b>417 €</b> <small>9,6 (1.056)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hu/aria-budapest.html}}\\\">Ver precios</a></td></tr><tr><td>16</td><td>Berlín</td><td><a href=\\\"/es/berlin\\\">ibis budget Berlin Alexanderplatz</a><br><b>92 €</b> <small>8,0 (5.598)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/ibis-budget-berlin-alexanderplatz.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/berlin\\\">Locke at East Side Gallery</a><br><b>151 €</b> <small>8,9 (3.489)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/locke-at-east-side-gallery.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/berlin\\\">Wilmina Hotel</a><br><b>183 €</b> <small>9,4 (1.047)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/de/wilmina.html}}\\\">Ver precios</a></td></tr><tr><td>17</td><td>Zagreb</td><td><a href=\\\"/es/zagreb\\\">Art Hotel Like</a><br><b>100 €</b> <small>8,0 (3.749)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hr/art-hotel-like.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/zagreb\\\">Hotel Capital</a><br><b>151 €</b> <small>9,1 (1.187)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hr/amadria-park-capital.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/zagreb\\\">art'otel Zagreb</a><br><b>162 €</b> <small>9,3 (2.494)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/hr/art-otel-zagreb.html}}\\\">Ver precios</a></td></tr><tr><td>18</td><td>Ámsterdam</td><td><a href=\\\"/es/amsterdam\\\">Tourist Inn One Amsterdam</a><br><b>110 €</b> <small>8,0 (1.862)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nl/tourist-inn.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/amsterdam\\\">Tourist Inn Hotel Amsterdam</a><br><b>152 €</b> <small>8,8 (3.371)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nl/hostel-tourist-inn.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/amsterdam\\\">Hotel TwentySeven</a><br><b>910 €</b> <small>9,4 (203)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/nl/twentyseven-amsterdam.html}}\\\">Ver precios</a></td></tr><tr><td>19</td><td>Roma</td><td><a href=\\\"/es/rome\\\">Hotel Elide</a><br><b>40 €</b> <small>8,1 (1.491)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/eliderome.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/rome\\\">Hotel Emona Aquaeductus</a><br><b>154 €</b> <small>9,0 (1.857)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/emona-aquaeductus.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/rome\\\">Harry's Bar Trevi</a><br><b>652 €</b> <small>9,3 (1.082)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/it/harry-39-s-bar-trevi-amp-restaurant.html}}\\\">Ver precios</a></td></tr><tr><td>20</td><td>Lisboa</td><td><a href=\\\"/es/lisbon\\\">Dom João Glamour Hotel</a><br><b>92 €</b> <small>8,0 (2.828)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/residencial-dom-joao.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/lisbon\\\">HF Fénix Music</a><br><b>172 €</b> <small>9,0 (3.059)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/hf-fenix-music.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/lisbon\\\">EPIC SANA Lisboa Hotel</a><br><b>232 €</b> <small>9,3 (2.733)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/pt/epic-sana-lisboa.html}}\\\">Ver precios</a></td></tr><tr><td>21</td><td>Bruselas</td><td><a href=\\\"/es/brussels\\\">Ibis Brussels City Centre</a><br><b>146 €</b> <small>8,1 (6.655)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/be/ibisstcatherine.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/brussels\\\">OPO Hotel</a><br><b>178 €</b> <small>9,2 (3.090)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/be/opo-bruxelles3.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/brussels\\\">Hotel Amigo</a><br><b>448 €</b> <small>9,4 (638)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/be/amigo.html}}\\\">Ver precios</a></td></tr><tr><td>22</td><td>La Valeta</td><td><a href=\\\"/es/valletta\\\">Paulos Valletta</a><br><b>118 €</b> <small>8,8 (1.181)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mt/paulos-valletta.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/valletta\\\">Battery House</a><br><b>198 €</b> <small>9,3 (531)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mt/battery-house-il-belt-valletta2.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/valletta\\\">Iniala Valletta</a><br><b>428 €</b> <small>9,6 (190)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/mt/the-hideaway.html}}\\\">Ver precios</a></td></tr><tr><td>23</td><td>Madrid</td><td><a href=\\\"/es/madrid\\\">B&amp;B HOTEL Madrid Vallecas La Gavia</a><br><b>77 €</b> <small>8,8 (1.147)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/b-amp-b-madrid-vallecas-la-gavia.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/madrid\\\">Aparto-Hotel Rosales</a><br><b>200 €</b> <small>9,0 (3.424)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/aparto-rosales.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/madrid\\\">Relais &amp; Châteaux Heritage Hotel</a><br><b>432 €</b> <small>9,3 (1.223)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/es/heritage-madrid.html}}\\\">Ver precios</a></td></tr><tr><td>24</td><td>Copenhague</td><td><a href=\\\"/es/copenhagen\\\">Wakeup Copenhagen - Borgergade</a><br><b>101 €</b> <small>8,0 (16.568)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/wakeup-copenhagen-borgergade.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/copenhagen\\\">Kanalhuset</a><br><b>207 €</b> <small>9,4 (869)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/kanalhuset.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/copenhagen\\\">1 Hotel Copenhagen</a><br><b>301 €</b> <small>9,1 (702)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/dk/1-hotel-copenhagen.html}}\\\">Ver precios</a></td></tr><tr><td>25</td><td>Berna</td><td><a href=\\\"/es/bern\\\">ibis Styles Bern City</a><br><b>171 €</b> <small>8,5 (3.908)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/hotel-astoria.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/bern\\\">Swissôtel Kursaal Bern</a><br><b>219 €</b> <small>8,8 (2.923)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/allegro.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/bern\\\">Hotel Schweizerhof Bern</a><br><b>743 €</b> <small>9,0 (1.267)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/ch/schweizerhof-bern.html}}\\\">Ver precios</a></td></tr><tr><td>26</td><td>Oslo</td><td><a href=\\\"/es/oslo\\\">Scandic Go, Grensen 20</a><br><b>126 €</b> <small>8,1 (1.796)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/scandic-grensen.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/oslo\\\">Hobo Oslo</a><br><b>226 €</b> <small>8,9 (1.697)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/hobo-oslo.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/oslo\\\">Hotel Continental</a><br><b>476 €</b> <small>9,1 (667)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/no/continental.html}}\\\">Ver precios</a></td></tr><tr><td>27</td><td>Estocolmo</td><td><a href=\\\"/es/stockholm\\\">ProfilHotels Riddargatan</a><br><b>231 €</b> <small>8,3 (3.781)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/se/riddargatan.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/stockholm\\\">Thon Hotel Vasa</a><br><b>313 €</b> <small>8,9 (684)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/se/terminus-stockholm.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/stockholm\\\">Bank Hotel</a><br><b>371 €</b> <small>9,0 (1.383)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/se/bank.html}}\\\">Ver precios</a></td></tr><tr><td>28</td><td>París</td><td><a href=\\\"/es/paris\\\">Hotel Esmeralda</a><br><b>220 €</b> <small>8,0 (1.632)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fr/esmeralda.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/paris\\\">Nestay Les Halles</a><br><b>328 €</b> <small>9,4 (1.191)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fr/nestay-les-halles.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/paris\\\">Le Grand Mazarin</a><br><b>759 €</b> <small>9,3 (361)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/fr/le-grand-mazarin.html}}\\\">Ver precios</a></td></tr><tr><td>29</td><td>Londres</td><td><a href=\\\"/es/london\\\">The Z Hotel Leicester Square</a><br><b>287 €</b> <small>8,5 (1.936)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/the-z-leicester-square.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/london\\\">Page8, Page Hotels</a><br><b>456 €</b> <small>9,2 (4.214)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/page-8.html}}\\\">Ver precios</a></td><td><a href=\\\"/es/london\\\">Haymarket Hotel</a><br><b>781 €</b> <small>9,6 (494)</small><br><a rel=\\\"sponsored nofollow\\\" target=\\\"_blank\\\" href=\\\"{{bk:https://www.booking.com/hotel/gb/haymarket.html}}\\\">Ver precios</a></td></tr></tbody></table></div>\\n<h2>El precio intermedio de cada nivel</h2>\\n<p>En las 29 capitales, la mediana ronda los 92 € en económico, 144 € en calidad-precio y 353 € en lujo.</p>\\n<h2>Dónde el lujo sale barato</h2>\\n<p><a href=\\\"/es/prague\\\">Old Royal Post</a> es el caso más claro. Su cinco estrellas saca un 9,6 sobre 2.457 opiniones y cuesta 104 €. Menos que el económico de Londres o París. Le siguen Riga, Varsovia, Bratislava y Zagreb, todos por debajo de 165 €.</p>\\n<h2>Dónde todo es caro</h2>\\n<p>Londres es la capital más cara en económico y en calidad-precio: 287 € y 456 €.  En Estocolmo, del económico (231 €) al lujo (371 €) hay poco salto.</p>\\n<h2>Los saltos más grandes</h2>\\n<p>En Roma, el lujo cuesta unas 16 veces el económico: 40 € frente a 652 €. En Viena, Ámsterdam, Bucarest y Budapest, entre siete y nueve veces. Aquí, mira primero la de calidad-precio.</p>\\n<h2>Las pegas de la tabla</h2>\\n<ul>\\n<li><b>Un económico cuesta más que el de calidad-precio.</b> En Reikiavik, el económico sale a 173 € y el de calidad-precio a 137 €. Allí conviene más el segundo.</li>\\n<li><b>Pocas opiniones en algunos.</b> <a href=\\\"/es/bucharest\\\">RHUM B07 Old Town Courtyard</a> tiene 131 opiniones, <a href=\\\"/es/vienna\\\">Bob W Vienna Döbling</a> 156, <a href=\\\"/es/bucharest\\\">Corinthia Bucharest</a> 180, <a href=\\\"/es/valletta\\\">Iniala Valletta</a> 190 y <a href=\\\"/es/amsterdam\\\">Hotel TwentySeven</a> 203.</li>\\n<li><b>El económico no siempre es céntrico.</b> En Madrid está en Vallecas La Gavia y en Viena, en Döbling.</li>\\n<li><b>Riga, calidad-precio:</b> abrió en diciembre de 2025, según su anuncio. Sus 469 opiniones cubren menos de un año.</li>\\n</ul>\\n<h2>Cómo usar esta lista</h2><p>Tómala como una lista corta, no como una orden de reserva. Abre la página de la ciudad para ver los otros dos hoteles que elegimos allí y mira el precio para tus fechas. Lee las opiniones más recientes, mira el mapa y compara el precio total con tasas. Tienes el método completo en <a href=\\\"/how-we-choose\\\">cómo elegimos los hoteles</a>.</p>\",\"date\":\"2026-10-24\",\"updated\":\"2026-10-24\",\"author\":\"Carlos de Ory\",\"words\":1293,\"mins\":6}]");
 var M = {
@@ -12523,7 +16035,7 @@ ${socialPill(o.L)}<main>${o.body}</main>
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
 window.T3V=${json(M[o.L].voice)};${JS_MORE}
-${REPORT_JS}${INSTALL_JS}<\/script><script>${JS_DP}<\/script></body></html>`;
+${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script></body></html>`;
 }
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(body, {
 	status,
@@ -12644,6 +16156,7 @@ var REP = {
 		err: "Kunne ikke sende. Prøv igen."
 	}
 };
+var VOTE_JS = `document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-vote] [data-v]");if(!b)return;var w=b.closest("[data-vote]"),k="t3v_"+w.dataset.vote;try{if(localStorage.getItem(k))return}catch(_){}w.querySelectorAll("button").forEach(function(x){x.disabled=true});var a="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4";fetch("https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_votes",{method:"POST",headers:{apikey:a,Authorization:"Bearer "+a,"Content-Type":"application/json",Prefer:"return=minimal"},body:JSON.stringify({city_slug:w.dataset.vote,vote:+b.dataset.v,lang:window.T3L||null})}).then(function(){var m=w.querySelector(".vmsg");m.textContent=m.dataset.ok;try{localStorage.setItem(k,"1");t3track("vote",{city:w.dataset.vote,v:+b.dataset.v})}catch(_){}})});`;
 var INSTALL_JS = `(function(){var ev;window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();ev=e;if(document.getElementById("t3inst"))return;var b=document.createElement("button");b.id="t3inst";b.type="button";var L=window.T3L||"en";b.textContent={es:"Instalar app",de:"App installieren",fr:"Installer l\u2019app",it:"Installa l\u2019app",pt:"Instalar app",da:"Installer app"}[L]||"Install app";b.style.cssText="position:fixed;right:14px;bottom:14px;z-index:60;padding:11px 16px;border-radius:999px;border:0;background:#0b3b8c;color:#fff;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer";b.onclick=function(){if(!ev)return;ev.prompt();ev.userChoice.then(function(c){try{t3track("pwa_install",{outcome:c.outcome})}catch(_){}b.remove();ev=null})};document.body.appendChild(b)})})();`;
 var REPORT_JS = `document.addEventListener('submit',function(e){var f=e.target;if(!f.dataset||!f.dataset.report)return;e.preventDefault();var m=f.querySelector('.repmsg'),b=f.querySelector('button');var d=JSON.parse(f.dataset.report);d.message=f.message.value.trim();d.email=f.email.value.trim()||null;b.disabled=true;fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_reports',{method:'POST',headers:{'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;m.textContent=m.dataset.ok;f.message.value='';try{t3track('report_sent',{city:d.city,category:d.category})}catch(_){}}).catch(function(){m.textContent=m.dataset.err;b.disabled=false})});`;
 var isHostel = (h) => /hostel|\bdorm|capsule|albergue|jugendherberge/i.test(`${h.name} ${h.booking?.url ?? ""}`);
@@ -12897,6 +16410,7 @@ async function cityPage(city, L) {
 		}))}"></span>
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
+<p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${L === "es" ? "Comparar los tres hoteles" : "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${L === "es" ? "Hoteles cerca de" : "Hotels near"}: ${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
 <aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
 <p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · ${esc(checkedText)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
@@ -14120,6 +17634,13 @@ async function sitemapFor(L) {
 		"/open-data",
 		"/hotel-price-index",
 		"/rated-9-under-60",
+		"/budget",
+		"/escape",
+		"/split",
+		"/awards",
+		"/near-me",
+		"/best-value-hotels-2026",
+		...await seoPaths(),
 		...(await countryValueSlugs()).map((c) => `/best-value/${c}`)
 	].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${SNAPSHOT_DATE}</lastmod>${GROWTH_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, x)}"/>`).join("")}</url>`).join("\n") + "\n" : "";
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${SNAPSHOT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}</url>`).join("\n")}\n${extra}${growth}</urlset>\n`;
@@ -14333,12 +17854,23 @@ async function handleSeo(request, env) {
 		}
 	}
 	{
-		const gp = p === "/open-data" ? "od" : p === "/hotel-price-index" ? "idx" : p === "/rated-9-under-60" ? "nine" : p.startsWith("/best-value/") ? "bv" : "";
+		const gp = p === "/open-data" ? "od" : p === "/hotel-price-index" ? "idx" : p === "/rated-9-under-60" ? "nine" : p.startsWith("/best-value/") ? "bv" : p === "/budget" ? "bud" : p === "/escape" ? "esc" : p === "/split" ? "spl" : p === "/awards" ? "aw" : p === "/near-me" ? "nm" : p === "/best-value-hotels-2026" ? "b100" : /^\/compare-picks\/[a-z0-9-]+\/?$/.test(p) ? "cmp" : /^\/near\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(p) ? "near" : "";
 		if (gp) {
 			if (!GROWTH_LANGS.includes(L)) return Response.redirect(`${SITE}${p}`, 302);
 			if (gp === "od") return html(await openDataPage(L));
 			if (gp === "idx") return html(await priceIndexPage(L));
 			if (gp === "nine") return html(await ninePage(L));
+			if (gp === "bud") return html(await budgetPage(L, url.searchParams), 200, url.search ? "public, max-age=300" : void 0);
+			if (gp === "esc") return html(await escapePage(L, url.searchParams), 200, "no-store");
+			if (gp === "spl") return html(splitPage(L));
+			if (gp === "aw") return html(await awardsPage(L));
+			if (gp === "nm") return html(nearMePage(L));
+			if (gp === "b100") return html(await best100Page(L));
+			if (gp === "cmp" || gp === "near") {
+				const seg = p.split("/").filter(Boolean);
+				const out = gp === "cmp" ? await comparePicksPage(L, seg[1] ?? "") : await nearPage(L, seg[1] ?? "", seg[2] ?? "");
+				return out ? html(out) : html(notFoundPage(p, L), 404, "no-store");
+			}
 			const out = await countryValuePage(L, p.slice(12).replace(/\/$/, ""));
 			return out ? html(out) : html(notFoundPage(p, L), 404, "no-store");
 		}

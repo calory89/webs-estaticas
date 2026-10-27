@@ -102,11 +102,11 @@ async function listFirms(list, ctx) {
   return { verified: v || [], indexed: ix || [], nVerified: nv, nIndexed: ni };
 }
 
-function firmItem(f, verified) {
+function firmItem(f, verified, es) {
   const where = (f.countries_served || []).slice(0, 3).join(', ');
   const model = f.typical_model ? feeLabel(f.typical_model) : '';
-  return '<li>' + (verified ? '<a href="/firms/' + esc(slugify(f.firm_name)) + '">' + esc(f.firm_name) + '</a> (hand-verified)' : esc(f.firm_name) + ' (indexed, not verified)')
-    + (f.category === 'collection_agency' ? ', debt collection agency (not a law firm)' : '')
+  return '<li>' + (verified ? '<a href="/firms/' + esc(slugify(f.firm_name)) + '">' + esc(f.firm_name) + '</a> (' + (es ? 'verificado a mano' : 'hand-verified') + ')' : esc(f.firm_name) + (es ? ' (indexado, sin verificar)' : ' (indexed, not verified)'))
+    + (f.category === 'collection_agency' ? (es ? ', agencia de recobro (no es un despacho)' : ', debt collection agency (not a law firm)') : '')
     + (where ? ', ' + esc(where) : '') + (model ? ', ' + esc(model) : '') + '</li>';
 }
 
@@ -122,6 +122,8 @@ async function dynamicPage(path, m, ctx) {
     const look = (re) => sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&firm_name=ilike.' + encodeURIComponent('*' + words.map((w) => w.replace(re, '_')).join('*') + '*') + '&limit=200', ctx);
     let rows = await look(/[aeiou]/g);
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouync]/g);
+    // Polish, Czech, Turkish... letters with accents on consonants (ś, ź, ż, ł, ř, ş, ğ).
+    if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouyncszlrtdgk]/g);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
@@ -271,9 +273,12 @@ export async function render(req, res, u, env, ctx) {
   if (page.list) {
     try {
       const { verified, indexed, nVerified, nIndexed } = await listFirms(page.list, ctx);
-      if (nVerified !== null && nIndexed !== null) body += '<p><strong>On JuriMatch today:</strong> ' + nVerified + ' hand-verified firm' + (nVerified === 1 ? '' : 's') + ' and ' + nIndexed + ' more from our index (not verified) list this kind of case' + (page.list.country ? ' here' : '') + '.</p>';
-      if (verified.length) body += '<h2>Hand-verified firms</h2><ul>' + verified.map((f) => firmItem(f, isHand(f))).join('') + '</ul>';
-      if (indexed.length) body += '<h2>More firms from our index</h2><ul>' + indexed.map((f) => firmItem(f, false)).join('') + '</ul>';
+      const es = lang === 'es';
+      if (nVerified !== null && nIndexed !== null) body += es
+        ? '<p><strong>Hoy en JuriMatch:</strong> ' + nVerified + ' despacho' + (nVerified === 1 ? '' : 's') + ' verificado' + (nVerified === 1 ? '' : 's') + ' a mano y ' + nIndexed + ' más de nuestro índice (sin verificar) llevan este tipo de caso aquí.</p>'
+        : '<p><strong>On JuriMatch today:</strong> ' + nVerified + ' hand-verified firm' + (nVerified === 1 ? '' : 's') + ' and ' + nIndexed + ' more from our index (not verified) list this kind of case' + (page.list.country ? ' here' : '') + '.</p>';
+      if (verified.length) body += '<h2>' + (es ? 'Despachos verificados a mano' : 'Hand-verified firms') + '</h2><ul>' + verified.map((f) => firmItem(f, isHand(f), es)).join('') + '</ul>';
+      if (indexed.length) body += '<h2>' + (es ? 'Más despachos de nuestro índice' : 'More firms from our index') + '</h2><ul>' + indexed.map((f) => firmItem(f, false, es)).join('') + '</ul>';
       if (verified.length) lds.push({ '@context': 'https://schema.org', '@type': 'ItemList', name: page.h1, itemListElement: verified.map((f, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + '/firms/' + slugify(f.firm_name), name: f.firm_name })) });
     } catch (e) { /* summary without the list */ }
   }
