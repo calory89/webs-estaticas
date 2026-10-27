@@ -1,0 +1,73 @@
+{
+ "min": 20,
+ "final": false,
+ "stored": {
+  "nat": 33,
+  "cities": 0,
+  "planet": 19
+ },
+ "stats": {
+  "ok": 48,
+  "fail": 337,
+  "gaveup": 0,
+  "els": 17786
+ },
+ "queue": 2287,
+ "eps": {
+  "overpass-api.de": {
+   "slots": 2,
+   "busy": 1,
+   "ok": 3,
+   "fail": 20,
+   "tope": 0,
+   "429": 0,
+   "streak": 3,
+   "cool": 1793131506,
+   "secs": 134
+  },
+  "overpass.private.coffee": {
+   "slots": 1,
+   "busy": 1,
+   "ok": 1,
+   "fail": 5,
+   "tope": 0,
+   "429": 0,
+   "streak": 0,
+   "cool": 1793131221,
+   "secs": 94
+  },
+  "overpass.kumi.systems": {
+   "slots": 1,
+   "busy": 1,
+   "ok": 3,
+   "fail": 4,
+   "tope": 0,
+   "429": 0,
+   "streak": 4,
+   "cool": 1793131326,
+   "secs": 266
+  },
+  "overpass.openstreetmap.fr": {
+   "slots": 1,
+   "busy": 1,
+   "ok": 40,
+   "fail": 1,
+   "tope": 395,
+   "429": 0,
+   "streak": 0,
+   "cool": 0,
+   "secs": 498
+  },
+  "maps.mail.ru": {
+   "slots": 1,
+   "busy": 0,
+   "ok": 1,
+   "fail": 12,
+   "tope": 0,
+   "429": 0,
+   "streak": 11,
+   "cool": 1793131528,
+   "secs": 18
+  }
+ }
+}
