@@ -50,7 +50,7 @@ def head(title, desc, path, extra_ld=None, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/k/site.css?v=4">
+<link rel="stylesheet" href="/k/site.css?v=5">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 {GA}
 </head>'''
@@ -91,10 +91,14 @@ def footer(mcta=True, mcta_href='/#start'):
       </div>
       <div><h4>Buyers</h4><ul>
         <li><a href="/check">Check a project</a></li>
+        <li><a href="/demo">30-second demo</a></li>
+        <li><a href="/pricing">Pricing</a></li>
         <li><a href="/report/sample">Sample inspection report</a></li>
         <li><a href="/checklist">Before-you-sign checklist</a></li>
         <li><a href="/tools/yield-check">Rental yield check</a></li>
         <li><a href="/tools/risk">How much are you risking?</a></li>
+        <li><a href="/tools/payment-plan">Payment plan checker</a></li>
+        <li><a href="/tools/contract-scan">Contract first pass</a></li>
         <li><a href="/destinations">Destinations</a></li></ul></div>
       <div><h4>Trust Score</h4><ul>
         <li><a href="/how-we-score">How we score</a></li>
@@ -102,11 +106,17 @@ def footer(mcta=True, mcta_href='/#start'):
         <li><a href="/developers">For developers</a></li>
         <li><a href="/guides/bali-land-titles">Guide: land titles</a></li>
         <li><a href="/guides/off-plan-payments">Guide: safe payments</a></li>
-        <li><a href="/corrections">Corrections</a></li></ul></div>
+        <li><a href="/corrections">Corrections</a></li>
+        <li><a href="/glossary">Glossary</a></li>
+        <li><a href="/developers/self-check">Developer self-check</a></li></ul></div>
       <div><h4>Kolaboro</h4><ul>
         <li><a href="/agents">Become an agent</a></li>
         <li><a href="/academy">Agent academy</a></li>
         <li><a href="/survey">Buyer survey</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/roadmap">Roadmap</a></li>
+        <li><a href="/changelog">Changelog</a></li>
+        <li><a href="/press">Press</a></li>
         <li><a href="/investors">Investors</a></li>
         <li><a href="/legal/privacy">Privacy</a></li>
         <li><a href="/legal/terms">Terms</a></li>
@@ -115,7 +125,7 @@ def footer(mcta=True, mcta_href='/#start'):
     <p class="fine">© 2026 Kolaboro, operated by {ENTITY}. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=4" defer></script>
+<script src="/k/site.js?v=5" defer></script>
 {CLARITY}'''
 
 def page(path, title, desc, body, extra_ld=None, noindex=False, mcta=True, extra_js=''):
@@ -724,6 +734,7 @@ def build_404():
 
 exec(open(os.path.join(HERE, 'r3.py')).read())
 exec(open(os.path.join(HERE, 'r4.py')).read())
+exec(open(os.path.join(HERE, 'r5.py')).read())
 
 def main():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -737,6 +748,7 @@ def main():
              build_investors(), build_yield(), build_checklist(), build_bali()] + build_guides() + build_legal()
     paths += build_round3()
     paths += build_round4()
+    paths += build_round5()
     build_404()
     idx = [p for p in paths if p not in ('/score/sample',)]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(

@@ -208,3 +208,33 @@
     if (window.kbEvent) kbEvent('exit_offer_shown');
   });
 })();
+
+/* round 5: table of contents, reading bar, share and helpful widgets on long pages */
+(function () {
+  var prose = document.querySelector('.prose');
+  if (!prose || location.pathname === '/' ) return;
+  var hs = prose.querySelectorAll('h2');
+  function slug(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+  if (hs.length >= 3) {
+    var toc = document.createElement('nav'); toc.className = 'toc'; toc.setAttribute('aria-label', 'On this page');
+    var ol = '<b>On this page</b><ol>';
+    hs.forEach(function (h) { if (!h.id) h.id = slug(h.textContent); ol += '<li><a href="#' + h.id + '">' + h.textContent + '</a></li>'; });
+    toc.innerHTML = ol + '</ol>'; prose.insertBefore(toc, prose.firstChild);
+    var bar = document.createElement('div'); bar.className = 'readbar'; document.body.appendChild(bar);
+    addEventListener('scroll', function () {
+      var r = prose.getBoundingClientRect(), h = r.height - innerHeight; bar.style.width = (h > 0 ? Math.min(100, Math.max(0, -r.top / h * 100)) : 100) + '%';
+    }, { passive: true });
+  }
+  if (!/^\/(guides|academy\/\d|how-we-score|dubai|phuket|tulum|algarve|lombok|bali|glossary)/.test(location.pathname)) return;
+  var url = encodeURIComponent(location.href.split('#')[0]), title = encodeURIComponent(document.title);
+  var sh = document.createElement('div'); sh.className = 'share';
+  sh.innerHTML = 'Share: <a href="https://wa.me/?text=' + title + '%20' + url + '" target="_blank" rel="noopener" data-ev="share_whatsapp">WhatsApp</a>' +
+    '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + url + '" target="_blank" rel="noopener" data-ev="share_linkedin">LinkedIn</a>' +
+    '<a href="https://twitter.com/intent/tweet?url=' + url + '&text=' + title + '" target="_blank" rel="noopener" data-ev="share_x">X</a>' +
+    '<button type="button" data-ev="share_copy">Copy link</button>';
+  sh.querySelector('button').addEventListener('click', function (e) { try { navigator.clipboard.writeText(location.href.split('#')[0]); e.target.textContent = 'Copied'; } catch (x) {} });
+  var hp = document.createElement('div'); hp.className = 'helpful';
+  hp.innerHTML = 'Was this useful? <button type="button" data-v="yes">Yes</button><button type="button" data-v="no">No</button>';
+  hp.addEventListener('click', function (e) { var v = e.target.dataset && e.target.dataset.v; if (!v) return; if (window.kbEvent) kbEvent('helpful_' + v, { page: location.pathname }); hp.textContent = 'Thanks for telling us.'; });
+  prose.appendChild(sh); prose.appendChild(hp);
+})();
