@@ -283,3 +283,10 @@
     D.addEventListener('submit', function (e) { var f = e.target; if (f && f.closest && f.closest('#start')) { abLog('growth_cta', v, 'conv'); } }, true);
   })();
 })();
+
+/* 16. Afiliados de la portada (seccion Earn): programas reales de CJ, trivago por pais y anatomia de un enlace */
+(function () {
+  var D = document;
+  if (!D.getElementById('earn') || !D.getElementById('aff')) { return; }
+  var s = D.createElement('script'); s.src = '/assets/cdo/cdo-earn.js?v=1'; s.async = true; D.body.appendChild(s);
+})();
