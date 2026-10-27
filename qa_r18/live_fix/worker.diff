@@ -1,0 +1,42 @@
+--- /home/claude/sn/worker_wp.js	2026-10-27 13:00:24.040141935 +0000
++++ sample/_worker.js/index.js	2026-10-27 16:36:54.650305929 +0000
+@@ -40,9 +40,31 @@
+   if (cacheable && r.status === 200) { const c = r.clone(); const h = new Headers(c.headers); h.set('cache-control', 'public, max-age=3600'); ctx.waitUntil(cache.put(req, new Response(c.body, { status: 200, headers: h }))); }
+   return r;
+ }
++// supportnear-only (QA 27-oct-2026): browser caching for supportnear.com assets (m5) and the Google
++// verification file served at its .html URL instead of the clean-URL 308 (p6).
++const SN_IMM = 'public, max-age=31536000, immutable';
++async function snFinish(req, u, r, env) {
++  const p = u.pathname, get = req.method === 'GET' || req.method === 'HEAD';
++  if (get && r.status === 308 && /^\/google[0-9a-f]{8,40}\.html$/.test(p)) {
++    const g = await env.ASSETS.fetch(new Request(new URL('/_s/supportnear.com' + p.slice(0, -5), u), req));
++    return g.status === 200 ? g : r;
++  }
++  if (!get || r.status !== 200) return r;
++  const v = u.searchParams.has('v');
++  let cc = null;
++  if (/^\/[dl]\/[^/]+\.json$/.test(p)) cc = v ? SN_IMM : 'public, max-age=3600';
++  else if (/^\/social[\w-]*\.(?:jpg|png)$/.test(p)) cc = v ? SN_IMM : 'public, max-age=86400';
++  else if (/\.(?:png|jpe?g|webp|gif|svg|ico|woff2?)$/i.test(p)) cc = 'public, max-age=86400, stale-while-revalidate=604800';
++  else if (/\.(?:json|csv|js)$/i.test(p) && p !== '/sw.js') cc = v ? 'public, max-age=86400' : 'public, max-age=3600';
++  if (!cc) return r;
++  const h = new Headers(r.headers); h.set('cache-control', cc);
++  return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
++}
+ export default {
+   async fetch(req, env, ctx) {
+     const u = new URL(req.url);
++    // supportnear-only (QA 27-oct-2026), M6: one canonical host, one 301 hop, same path and query
++    if (u.hostname === 'www.supportnear.com') return Response.redirect('https://supportnear.com' + u.pathname + u.search, (req.method === 'GET' || req.method === 'HEAD') ? 301 : 308);
+     let host = u.hostname.replace(/^www\./, '');
+     if (host.endsWith('.pages.dev')) {
+       const q = u.searchParams.get('__site');
+@@ -63,6 +85,7 @@
+       }
+     }
+     if (u.pathname.startsWith('/__sb/')) return sbProxy(req, u);
++    if (host === 'supportnear.com') return snFinish(req, u, await this.site(req, env, ctx, u, host), env);  // supportnear-only (QA 27-oct-2026)
+     return this.site(req, env, ctx, u, host);
+   },
+   async site(req, env, ctx, u, host) {

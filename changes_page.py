@@ -6,9 +6,10 @@
 # Sale sola, sin escribir nada, y es el tipo de dato con el que alguien hace una
 # pieza («la ciudad que perdio doce comedores este ano»). La primera vez solo
 # guarda la foto; a partir de la segunda, compara.
-import io, json, os, re, math, html as H
+import io, json, os, re, math, hashlib, html as H
 from datetime import date
 from collections import Counter
+from seo_common import finalize
 
 h = io.open('index.full.html' if __import__('os').path.exists('index.full.html') else 'index.html', encoding='utf-8').read()
 STR = json.loads(re.search(r'const STR = /\*__STR__\*/(\[.*?\]);', h, re.S).group(1))
@@ -39,9 +40,24 @@ for f in sorted(os.listdir('d')):
         oid = ('way/%d' % -oid if oid < 0 else 'node/%d' % oid) if isinstance(oid, int) else oid
         now[oid] = (S_(r[0]), CATIDS[r[3]], la / 1e5, lo / 1e5)
 
-SNAP = 'snapshot.json'
-prev = json.load(io.open(SNAP, encoding='utf-8')) if os.path.exists(SNAP) else None
+# Dos fotos: la de los datos de ahora (snapshot_now.json, con la fecha en que
+# los datos cambiaron por ultima vez) y la de los datos anteriores DISTINTOS
+# (snapshot.json). Antes se guardaba una foto en cada publicacion y se comparaba
+# con la ultima: si se publicaba dos veces con los mismos datos, la pagina
+# anunciaba «0 nuevos · 0 desaparecidos» como si fuera noticia (QA m7).
+SNAP, NOW = 'snapshot.json', 'snapshot_now.json'
 today = date.today().isoformat()
+_h = hashlib.sha1(json.dumps(sorted((k, v[0], v[1]) for k, v in now.items()), ensure_ascii=False).encode('utf-8')).hexdigest()
+cur = json.load(io.open(NOW, encoding='utf-8')) if os.path.exists(NOW) else None
+prev = json.load(io.open(SNAP, encoding='utf-8')) if os.path.exists(SNAP) else None
+if cur and cur.get('hash') != _h:
+    prev = cur                                    # los datos cambiaron: lo de ahora pasa a ser lo anterior
+    json.dump(prev, io.open(SNAP, 'w', encoding='utf-8'), ensure_ascii=False)
+    cur = None
+if not cur:
+    cur = {'date': today, 'hash': _h, 'places': {k: [v[0], v[1], v[2], v[3]] for k, v in now.items()}}
+    json.dump(cur, io.open(NOW, 'w', encoding='utf-8'), ensure_ascii=False)
+data_date = cur['date']
 
 
 def nearest_city(la, lo):
@@ -54,7 +70,10 @@ def nearest_city(la, lo):
 
 
 body_rows = ''
-if prev:
+if prev and not (set(prev['places']) ^ set(now)):
+    body_rows = ('<div class="card"><p>The data of %s and of %s contain the same places, so there is nothing new to list. '
+                 'The comparison is made again with each data update from OpenStreetMap.</p></div>' % (prev['date'], data_date))
+elif prev:
     pids = set(prev['places']); nids = set(now)
     added = nids - pids; gone = pids - nids
     by_city_add = Counter(nearest_city(*now[i][2:]) for i in added)
@@ -63,7 +82,7 @@ if prev:
     body_rows = (
         '<div class="statbar"><div><b>%d</b><span>new places</span></div><div><b>%d</b><span>gone</span></div>'
         '<div><b>%+d</b><span>net</span></div><div><b>%s</b><span>since</span></div></div>' % (len(added), len(gone), len(added) - len(gone), prev['date'])
-        + '<h2>By kind of help</h2><ul>' + ''.join('<li><strong>%s</strong>: +%d / &minus;%d</li>' % (CATNAME[c], cat_add[c], cat_gone[c]) for c in CATIDS if cat_add[c] or cat_gone[c]) + '</ul>'
+        + '<h2>By kind of help</h2><ul>' + ''.join('<li><strong>%s</strong>: +%d / &minus;%d</li>' % (H.escape(CATNAME[c]), cat_add[c], cat_gone[c]) for c in CATIDS if cat_add[c] or cat_gone[c]) + '</ul>'
         + '<h2>Cities that grew most</h2><ul>' + ''.join('<li><strong>%s</strong>: +%d</li>' % (H.escape(c or 'elsewhere'), n) for c, n in by_city_add.most_common(15)) + '</ul>'
         + '<h2>Cities that lost places</h2><ul>' + ''.join('<li><strong>%s</strong>: &minus;%d</li>' % (H.escape(c or 'elsewhere'), n) for c, n in by_city_gone.most_common(15)) + '</ul>'
         + '<h2>Some of the new places</h2><ul>' + ''.join('<li><a href="./#p=%s@%.5f,%.5f">%s</a> <small>%s · %s</small></li>'
@@ -73,8 +92,8 @@ if prev:
           'or that our filters stopped counting it (for example, it started charging). It does not always mean it closed.</p>'
     )
 else:
-    body_rows = ('<div class="card"><p>This is the first snapshot (%s). From the next update on, this page shows what appeared, '
-                 'what disappeared and which cities changed most.</p></div>' % today)
+    body_rows = ('<div class="card"><p>This is the first snapshot (%s). From the next data update on, this page shows what appeared, '
+                 'what disappeared and which cities changed most.</p></div>' % data_date)
 
 import hashlib
 SV = '?v=' + hashlib.sha1(open('social.jpg','rb').read()).hexdigest()[:8]
@@ -85,15 +104,14 @@ GAPS = ('<h2>Where people found nothing</h2><p>When someone widens the search an
         '<div id="gaps" class="card"><p>Loading…</p></div>'
         '<script>fetch("%s/gaps").then(r=>r.json()).then(l=>{const e=document.getElementById("gaps");if(!l.length){e.innerHTML="<p>Nothing reported yet.</p>";return;}'
         'e.innerHTML="<ul>"+l.slice(0,60).map(g=>"<li><b>"+(g.city||(g.lat+", "+g.lon))+"</b>"+(g.cc?" ("+g.cc+")":"")+(g.cat?" · "+g.cat:"")+" · "+g.n+"×"+(g.t?" · "+g.t:"")+"</li>").join("")+"</ul>";}).catch(()=>{document.getElementById("gaps").innerHTML="<p>Could not load.</p>";});</script>' % REPORTS_URL) if REPORTS_URL else \
-       ('<h2>Where people found nothing</h2><p>When someone widens the search and still finds nothing, the app lets them say what they were looking for (only the area, the city and the need). '
-        'The shared list appears here once the reports worker is deployed (see <code>worker/reports.js</code>).</p>')
+       ''   # sin el worker de avisos no hay lista que ensenar (antes salia aqui una nota interna)
 page = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>What changed · SupportNear</title>
 <meta name="description" content="What changed on the free-help map since the last update: new places, places gone, cities that grew.">
-<link rel="canonical" href="https://supportnear.com/cambios.html">
+<link rel="canonical" href="https://supportnear.com/cambios">
 <meta property="og:type" content="website"><meta property="og:site_name" content="SupportNear">
-<meta property="og:url" content="https://supportnear.com/cambios.html"><meta property="og:title" content="What changed &middot; SupportNear"><meta property="og:description" content="What changed on the free-help map since the last update: new places, places gone, cities that grew.">
+<meta property="og:url" content="https://supportnear.com/cambios"><meta property="og:title" content="What changed &middot; SupportNear"><meta property="og:description" content="What changed on the free-help map since the last update: new places, places gone, cities that grew.">
 <meta property="og:image" content="https://supportnear.com/social.jpg{SV}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="SupportNear: free help, mapped in 166 countries. Food, a bed, a shower, clothes, a doctor.">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:title" content="What changed &middot; SupportNear"><meta name="twitter:description" content="What changed on the free-help map since the last update: new places, places gone, cities that grew."><meta name="twitter:image" content="https://supportnear.com/social.jpg{SV}">
@@ -104,15 +122,11 @@ page = f'''<!DOCTYPE html>
 ul{{padding-inline-start:20px;line-height:1.7}}</style></head>
 <body><div class="wrap"><a class="backlink" href="./">&larr; Open the map</a>
 <h1>What changed</h1>
-<p class="lede">The map has {STATS["places"]:,} places in {STATS["cities"]} cities across {STATS["countries"]} countries. Updated {today}. This page is generated from the data itself each time it is published.</p>
+<p class="lede">The map has {STATS["places"]:,} places in {STATS["cities"]} cities across {STATS["countries"]} countries. Data from {data_date}. This page is generated from the data itself each time the data is updated.</p>
 {body_rows}
 <h2>How to use this</h2>
 <p>Every number here is checkable: each new place links to its card, and each card links to the OpenStreetMap element it comes from. If you write about it, the <a href="prensa.html">press kit</a> has the figures and screenshots.</p>
 {GAPS}
 <footer>SupportNear &middot; OpenStreetMap (ODbL)</footer></div></body></html>'''
-io.open('cambios.html', 'w', encoding='utf-8').write(page)
-
-# la foto de hoy, para la proxima vez (si hoy ya se guardo, se conserva la de hoy)
-if not prev or prev.get('date') != today or os.environ.get('SNAP_NOW'):
-    json.dump({'date': today, 'places': {k: [v[0], v[1], v[2], v[3]] for k, v in now.items()}}, io.open(SNAP, 'w', encoding='utf-8'), ensure_ascii=False)
+io.open('cambios.html', 'w', encoding='utf-8').write(finalize(page))
 print('cambios.html', 'con comparacion desde ' + prev['date'] if prev else 'primera foto', '|', len(now), 'sitios')

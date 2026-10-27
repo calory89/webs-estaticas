@@ -7,6 +7,7 @@
 # el mapa, estas paginas salen en ese idioma.
 import io, json, os, re
 from i18n_pages import TR, FALLBACK
+from seo_common import finalize
 
 CSS = io.open('page.css.txt', encoding='utf-8').read()
 h = io.open('index.full.html' if __import__('os').path.exists('index.full.html') else 'index.html', encoding='utf-8').read()
@@ -45,11 +46,14 @@ def T(lang, key):
 
 
 def build_strings():
-    """Solo se incrustan los idiomas que existen de verdad; wo y bm van al frances."""
+    """Solo se incrustan los idiomas que tienen traduccion propia. Antes iban los
+    20 y nueve eran copias exactas del ingles o del frances: unos 90 KB de mas en
+    cada pagina (QA p2). wo y bm siguen saliendo en frances: lo resuelve FB en
+    pick(); los demas, en ingles, igual que antes."""
     out = {}
     for lang in LANGS:
-        src = lang if lang in TR else FALLBACK.get(lang, 'en')
-        out[lang] = {k: T(src, k) for k in TR['en']}
+        if lang in TR:
+            out[lang] = {k: T(lang, k) for k in TR['en']}
     return out
 
 
@@ -89,11 +93,12 @@ var T = %s;
 var RTL = %s;
 function pick(){
   try{ var s = JSON.parse(localStorage.getItem('sn.lang')||'null');
-       if(s && T[s]) return s; }catch(e){}
+       if(s && T[s]) return s; if(s && T[FB[s]]) return FB[s]; }catch(e){}
   var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language||'en'];
   for(var i=0;i<list.length;i++){
     var c = String(list[i]).toLowerCase().split('-')[0];
     if(T[c]) return c;
+    if(T[FB[c]]) return FB[c];
   }
   return 'en';
 }
@@ -159,7 +164,12 @@ def page(fname, title_key, desc, body, strings):
             '<span data-t="foot.b">%s</span></footer></div>'
             % (T('en', 'foot.a'), T('en', 'foot.b'))
             + script(strings, LANGS) + '</body></html>')
-    io.open(fname, 'w', encoding='utf-8').write(html)
+    if fname == 'incrustar.html':
+        html = html.replace('</body></html>', '<script id="sn-city">' + EMBED_JS + '</script></body></html>')
+    # URL limpia en canonical y og:url (Cloudflare responde 308 de x.html a x)
+    html = html.replace('content="https://supportnear.com/%s"' % fname, 'content="https://supportnear.com/%s"' % fname[:-5])
+    html = html.replace('href="https://supportnear.com/%s"' % fname, 'href="https://supportnear.com/%s"' % fname[:-5])
+    io.open(fname, 'w', encoding='utf-8').write(finalize(html))
     print(fname, os.path.getsize(fname), 'bytes')
 
 
@@ -232,10 +242,10 @@ prensa = (
  + el('h2', 'p.hlinks') + el('p', 'p.links')
  + '<pre tabindex="0"><code>supportnear.com/?city=Nairobi     <span data-t="l.city">%s</span>\n'
    'supportnear.com/#p=node/123456    <span data-t="l.place">%s</span>\n'
-   'supportnear.com/prensa.html       <span data-t="l.press">%s</span>\n'
-   'supportnear.com/incrustar.html    <span data-t="l.embed">%s</span>\n'
+   'supportnear.com/prensa            <span data-t="l.press">%s</span>\n'
+   'supportnear.com/incrustar         <span data-t="l.embed">%s</span>\n'
    'supportnear.com/c/                 <span data-t="l.cities">%s</span>\n'
-   'supportnear.com/cambios.html       <span data-t="l.changes">%s</span></code></pre>'
+   'supportnear.com/cambios            <span data-t="l.changes">%s</span></code></pre>'
    % (T('en', 'l.city'), T('en', 'l.place'), T('en', 'l.press'), T('en', 'l.embed'), T('en', 'l.cities'), T('en', 'l.changes'))
  + el('h2', 'p.hverify')
  + '<ul>%s%s%s <a href="emergency-numbers.csv" download data-t="b.csv">%s</a></li>%s</ul>'
@@ -253,23 +263,24 @@ incrustar = (
    '        loading="lazy" title="SupportNear"&gt;\n&lt;/iframe&gt;</code></pre>'
  + el('p', 'e.city')
  + el('h2', 'e.hlook')
- + '<figure><iframe src="index.html?embed=1&amp;city=Sevilla" width="100%%" height="520" '
+ + '<figure><iframe src="./?embed=1&amp;city=Sevilla" width="100%%" height="520" '
    'style="border:1px solid var(--line);border-radius:12px" loading="lazy" title="SupportNear"></iframe>'
    '%s</figure>' % el('figcaption', 'e.cap')
  + el('h2', 'e.hopts')
  + '<div class="tw"><table><tr>%s%s</tr>'
    '<tr><td class="n">?embed=1</td>%s</tr>'
    '<tr><td class="n">&amp;city=Sevilla</td>%s</tr>'
+   '<tr><td class="n">&amp;cc=GB</td>%s</tr>'
    '<tr><td class="n">&amp;need=food</td>%s</tr>'
    '<tr><td class="n">&amp;color=0B7A63</td>%s</tr></table></div>'
-   % (el('th', 'e.thp'), el('th', 'e.thw'), el('td', 'e.o1'), el('td', 'e.o2'), el('td', 'e.o3'), el('td', 'e.o4'))
+   % (el('th', 'e.thp'), el('th', 'e.thw'), el('td', 'e.o1'), el('td', 'e.o2'), el('td', 'e.o5'), el('td', 'e.o3'), el('td', 'e.o4'))
  + el('h2', 'e.hdoes')
  + '<ul>%s%s%s%s</ul>' % (el('li', 'e.d1'), el('li', 'e.d2'), el('li', 'e.d3'), el('li', 'e.d4'))
  + el('h2', 'e.hadd') + el('p', 'e.add')
  + '<div class="btns"><a class="btn btn--p" href="https://www.openstreetmap.org/note/new" '
    'target="_blank" rel="noopener" data-t="e.bosm">%s</a>'
-   '<a class="btn" href="prensa.html%s" data-t="p.title">%s</a></div>'
-   % (T('en', 'e.bosm'), PV, T('en', 'p.title'))
+   '<a class="btn" href="prensa" data-t="p.title">%s</a></div>'
+   % (T('en', 'e.bosm'), T('en', 'p.title'))
  + '<p><span data-t="e.send">%s</span> '
    '<a class="btn" href="%s" target="_blank" rel="noopener" data-t="b.write" '
    'style="margin-inline-start:8px">%s</a></p>'
@@ -295,9 +306,14 @@ instalar = (
       el('td', 'i.w3'), el('td', 'i.n3'))
  + el('h2', 'i.hwhy') + el('p', 'i.why')
  + '<div class="btns"><a class="btn btn--p" href="./" data-t="i.bopen">%s</a>'
-   '<a class="btn" href="prensa.html%s" data-t="p.title">%s</a></div>'
-   % (T('en', 'i.bopen'), PV, T('en', 'p.title'))
+   '<a class="btn" href="prensa" data-t="p.title">%s</a></div>'
+   % (T('en', 'i.bopen'), T('en', 'p.title'))
 )
+
+# Quien llega desde la pagina de una ciudad (/incrustar?city=London&cc=GB) ve
+# ya el codigo de su ciudad, con el pais si el nombre se repite (QA C1).
+EMBED_JS = r"""(function(){var q=new URLSearchParams(location.search),c=(q.get('city')||'').trim().slice(0,80),cc=(q.get('cc')||'').trim().toUpperCase();if(!c)return;if(!/^[A-Z]{2}$/.test(cc))cc='';var p='?embed=1&city='+encodeURIComponent(c)+(cc?'&cc='+cc:'');function fix(){var k=document.querySelector('pre code');if(k)k.textContent='<iframe src="https://supportnear.com/'+p+'"\n        width="100%" height="600" style="border:0;border-radius:12px"\n        loading="lazy" title="SupportNear">\n</iframe>';var f=document.querySelector('figure iframe');if(f&&f.getAttribute('src')!=='./'+p)f.setAttribute('src','./'+p);var e=document.querySelector('[data-t="e.city"] code');if(e)e.textContent=c;}fix();if(typeof apply==='function'){var a=apply;apply=function(l){a(l);fix();};}})();"""
+
 
 page('prensa.html', 'p.title',
      'Figures, screenshots, contact and checkable sources for SupportNear: free help in %d cities across %d countries.' % (C, K),

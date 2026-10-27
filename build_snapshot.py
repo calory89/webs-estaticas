@@ -42,7 +42,7 @@ tail = tail.replace("datav = hashlib.sha1((data + sjson + chunks_json).encode('u
 assert ("datav = %r" % snap['DATA_V']) in tail
 # enlaces a ciudades de la bienvenida: los de la web
 tail = re.sub(r"try:\n    _cnt=\{\}.*?except Exception as _ex: print\('citylinks:', _ex\)",
-              "html=html.replace('<!--__CITYLINKS__-->', %r, 1)" % snap['CITYLINKS'], tail, count=1, flags=re.S)
+              "html=html.replace('<!--__CITYLINKS__-->', %r, 1)" % re.sub(r'href="(c/[^"]+)\.html"', r'href="\1"', snap['CITYLINKS']), tail, count=1, flags=re.S)
 assert '<!--__CITYLINKS__-->' in tail and '_cnt' not in tail.split("html=html.replace('<!--__CITYLINKS__-->'")[0][-200:]
 tail = tail.replace("c=Counter(CATIDS[p[3]] for p in places)", "c=Counter()")
 exec(compile(tail, 'build.py(tail)', 'exec'))

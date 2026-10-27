@@ -1,0 +1,25 @@
+{
+ "_note": "Proposed replacements only (not part of the 4-key task). note.priv: a 'missing place' note is posted publicly to OpenStreetMap at the map centre, which is usually the user's own GPS position.",
+ "note.priv": {
+  "en": "Sent without your name. Only the spot on the map and what you wrote. Notes on OpenStreetMap are public.",
+  "es": "Se envía sin tu nombre. Solo el punto del mapa y lo que escribas. Las notas de OpenStreetMap son públicas.",
+  "fr": "Envoyé sans ton nom. Seulement le point sur la carte et ce que tu écris. Les notes OpenStreetMap sont publiques.",
+  "ar": "يُرسل بدون اسمك. فقط النقطة على الخريطة وما كتبته. ملاحظات OpenStreetMap علنية.",
+  "uk": "Надсилається без твого імені. Лише точка на карті і те, що ти написав. Нотатки в OpenStreetMap публічні.",
+  "ro": "Se trimite fără numele tău. Doar punctul de pe hartă și ce scrii. Notele de pe OpenStreetMap sunt publice.",
+  "pl": "Wysyłane bez twojego imienia. Tylko punkt na mapie i to, co napiszesz. Notatki w OpenStreetMap są publiczne.",
+  "ru": "Отправляется без твоего имени. Только точка на карте и то, что ты написал. Заметки в OpenStreetMap публичные.",
+  "pt": "Vai sem o teu nome. Só o ponto no mapa e o que escreveres. As notas do OpenStreetMap são públicas.",
+  "ur": "آپ کے نام کے بغیر بھیجا جاتا ہے۔ صرف نقشے پر جگہ اور جو آپ لکھیں۔ OpenStreetMap پر نوٹس سب کو نظر آتے ہیں۔",
+  "fa": "بدون نام تو فرستاده می‌شود. فقط آن نقطه روی نقشه و آنچه نوشتی. یادداشت‌های OpenStreetMap عمومی‌اند.",
+  "wo": "Dinañu ko yónnee te dunu yokk sa tur. Bérab bi ci kaart bi rekk ak li nga bind. Li ñu bind ci OpenStreetMap, ñépp mën nañu ko gis.",
+  "bm": "A bɛ ci i tɔgɔ tɛ a la. Karti kan yɔrɔ in dɔrɔn ni i ye min sɛbɛn. OpenStreetMap kan sɛbɛnniw bɛɛ bɛ se k'u ye.",
+  "ti": "ብዘይ ስምካ እዩ ዝለኣኽ። እታ ኣብ ካርታ ዘላ ነጥብን ዝጸሓፍካዮን ጥራይ። ኣብ OpenStreetMap ዝጽሓፉ መዘኻኸሪታት ንኹሉ ዝርአዩ እዮም።",
+  "ps": "بې له ستا نومه لېږل کېږي. یوازې پر نقشه هغه ټکی او هغه څه چې تا لیکلي. په OpenStreetMap کې یادښتونه عامه دي.",
+  "so": "Waxaa la diraa magacaaga la'aan. Kaliya barta khariidadda iyo waxaad qortay. Qoraallada OpenStreetMap waa kuwo dadweyne.",
+  "am": "ያለ ስምህ ይላካል። በካርታው ላይ ያለው ነጥብና የጻፍከው ብቻ። በ OpenStreetMap ላይ ያሉ ማስታወሻዎች ለሁሉም ይታያሉ።",
+  "tr": "Adın olmadan gönderilir. Sadece haritadaki nokta ve yazdığın. OpenStreetMap notları herkese açıktır.",
+  "bn": "তোমার নাম ছাড়াই পাঠানো হয়। শুধু ম্যাপের বিন্দুটা আর তুমি যা লিখেছ। OpenStreetMap-এর নোট সবাই দেখতে পায়।",
+  "zh": "发送时不带你的名字。只有地图上的这个点和你写的内容。OpenStreetMap 上的备注是公开的。"
+ }
+}

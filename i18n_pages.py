@@ -33,7 +33,7 @@ TR['en'] = {
  'p.h200': 'In 200 words',
  'p.t200': '<p>SupportNear is a map of free help for people who need it right now. You open it and, with no sign-up and nothing to install, it shows the nearest places that serve food, where you can sleep, where there is a shower, clothes, a doctor, or someone who helps with paperwork.</p>'
            '<p>It covers <strong>{P} places in {C} cities across {K} countries</strong>. The data comes from OpenStreetMap, the open map kept up by volunteers, councils and humanitarian teams, and anyone can correct it from the site itself: one button reports a missing place, another reports one that has closed.</p>'
-           '<p>It is built for the cheapest phone and the worst connection. The page opens in under a quarter of a second, saves itself onto the phone and keeps working with no data. A whole city can be downloaded for offline use. No account, no record of who you are, no advertising and no third-party analytics.</p>'
+           '<p>It is built for the cheapest phone and the worst connection. The page is light, saves itself onto the phone and keeps working with no data. A whole city can be downloaded for offline use. No account, no record of who you are, no advertising and no cookies.</p>'
            '<p>It is a non-profit project.</p>',
  'p.hwho': 'Who is behind it',
  'p.who': "<p>I started this project, under other names, back in <strong>2007</strong>, the year I turned 18. For years I added the places one by one, by hand.</p><p>With the help of other tools I have finally been able to grow it to the whole world: {P} places in {K} countries. It has no profit motive and it never will.</p><p>If any newsroom wants to cover it, I am glad to help. Write to me on X.</p>"
@@ -57,7 +57,7 @@ TR['en'] = {
  'v1': 'Places come from <strong>OpenStreetMap</strong> (ODbL). Every entry links to the original point.',
  'v2': 'The city list comes from OpenStreetMap and each country from Nominatim. No coordinate is typed by hand.',
  'v3': 'Emergency numbers for 227 countries come from <strong>Wikidata</strong> (property P2852).',
- 'v4': 'The site opens in <strong>under 250 ms</strong> and loads nothing from third parties: no fonts, no analytics, no libraries.',
+ 'v4': 'The site uses no external fonts, no code libraries from other sites, no advertising and no cookies. The map images and live data come from public map services (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Download the full table (CSV)',
  'p.hnot': 'What we do not claim',
  'p.not': '<p>The data comes from an open map and is not verified one by one. A place may have closed. That is why the site always says to call before walking there, and why there is a button to report that something no longer exists.</p>'
@@ -75,11 +75,12 @@ TR['en'] = {
  'e.o2': 'Opens centred on that city instead of asking for a location.',
  'e.o3': 'Opens already filtered: food, shelter, hygiene, clothes, social, legal, health, water or warm.',
  'e.o4': 'Your organisation&rsquo;s colour (a hex code without #) for the buttons and links.',
+ 'e.o5': 'Two-letter country code (GB, CA, ES…). Add it when the city name exists in more than one country: London, Valencia, León…',
  'e.hdoes': 'What it does and does not do',
  'e.d1': 'It does not ask your visitors for their location unless they press the crosshair button.',
- 'e.d2': 'No cookies, no pixels, nothing from third parties. There is nothing to consent to.',
+ 'e.d2': 'No cookies and no advertising pixels. There is nothing to consent to.',
  'e.d3': 'It works with no connection once it has loaded.',
- 'e.d4': 'It is light: the page opens in under 250 ms and only downloads the piece of map in view.',
+ 'e.d4': 'It is light: it only downloads the piece of map in view.',
  'e.hadd': 'If you want your services on it',
  'e.add': 'The map is fed by OpenStreetMap. If your soup kitchen, shelter or clothing bank is not on it, add it there and at the next update it will be here &mdash; and on every other site and app that uses that map, not just this one.',
  'e.bosm': 'Add a place on OpenStreetMap',
@@ -105,7 +106,7 @@ TR['en'] = {
  'i.w3': 'Areas you have already browsed with a connection, and the closest places to each of the {C} cities, which travel inside the page itself.',
  'i.n3': 'Updates to the data.',
  'i.hwhy': 'Why it is built this way',
- 'i.why': 'Whoever needs this map the most usually has the cheapest phone, the worst connection and the least credit. So the page loads no external fonts, no libraries and no analytics: everything travels inside it, it opens in under 250 ms, and map data comes down in pieces &mdash; only the square you are looking at.',
+ 'i.why': 'Whoever needs this map the most usually has the cheapest phone, the worst connection and the least credit. So the page loads no external fonts and no code libraries: everything travels inside it, and map data comes down in pieces &mdash; only the square you are looking at.',
  'i.bopen': 'Open the map',
 }
 
@@ -130,7 +131,7 @@ TR['es'] = {
  'p.h200': 'En 200 palabras',
  'p.t200': '<p>SupportNear es un mapa de ayuda gratuita para quien la necesita ahora mismo. Se abre y, sin registrarse ni instalar nada, ense&ntilde;a los sitios m&aacute;s cercanos donde dan de comer, donde se puede dormir, donde hay una ducha, ropa, un m&eacute;dico o alguien que ayude con los papeles.</p>'
            '<p>Cubre <strong>{P} sitios en {C} ciudades de {K} pa&iacute;ses</strong>. Los datos salen de OpenStreetMap, el mapa abierto que mantienen voluntarios, ayuntamientos y equipos humanitarios, y cualquiera puede corregirlos desde la propia web: un bot&oacute;n avisa de que falta un sitio y otro de que ha cerrado.</p>'
-           '<p>Est&aacute; pensado para el m&oacute;vil m&aacute;s barato y la peor conexi&oacute;n. La p&aacute;gina abre en menos de un cuarto de segundo, se guarda sola en el tel&eacute;fono y sigue funcionando sin datos. Se puede descargar una ciudad entera para usarla sin internet. No pide cuenta, no guarda qui&eacute;n eres y no lleva publicidad ni anal&iacute;tica de terceros.</p>'
+           '<p>Está pensado para el móvil más barato y la peor conexión. La página pesa poco, se guarda sola en el teléfono y sigue funcionando sin datos. Se puede descargar una ciudad entera para usarla sin internet. No pide cuenta, no guarda quién eres, no lleva publicidad ni pone cookies.</p>'
            '<p>Es un proyecto sin &aacute;nimo de lucro.</p>',
  'p.hwho': 'Qui&eacute;n est&aacute; detr&aacute;s',
  'p.who': "<p>Empec&eacute; este proyecto, con otros nombres, en <strong>2007</strong>, el a&ntilde;o que cumpl&iacute; 18. Durante a&ntilde;os fui a&ntilde;adiendo los sitios a mano, uno a uno.</p><p>Con la ayuda de otras herramientas por fin he podido ampliarlo a todo el mundo: {P} sitios en {K} pa&iacute;ses. No tiene &aacute;nimo de lucro y no lo va a tener.</p><p>Si alg&uacute;n medio quiere hacerse eco, encantado de ayudar. Escr&iacute;beme por X.</p>"
@@ -154,7 +155,7 @@ TR['es'] = {
  'v1': 'Los sitios salen de <strong>OpenStreetMap</strong> (licencia ODbL). Cada ficha enlaza al punto original.',
  'v2': 'La lista de ciudades sale de OpenStreetMap y el pa&iacute;s de cada una, de Nominatim. Ninguna coordenada est&aacute; escrita a mano.',
  'v3': 'Los n&uacute;meros de emergencia de 227 pa&iacute;ses salen de <strong>Wikidata</strong> (propiedad P2852).',
- 'v4': 'La web abre en <strong>menos de 250 ms</strong> y no carga nada de terceros: ni tipograf&iacute;as, ni anal&iacute;tica, ni librer&iacute;as.',
+ 'v4': 'La web no usa tipografías de fuera, ni librerías de código de otros sitios, ni publicidad, ni cookies. Las imágenes del mapa y los datos en directo vienen de servicios públicos de mapas (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Descargar la tabla completa (CSV)',
  'p.hnot': 'Lo que no decimos',
  'p.not': '<p>Los datos vienen de un mapa abierto y no est&aacute;n verificados uno a uno. Un sitio puede haber cerrado. Por eso la web dice siempre que se llame antes de andar hasta all&iacute;, y por eso hay un bot&oacute;n para avisar de que algo ya no existe.</p>'
@@ -170,11 +171,12 @@ TR['es'] = {
  'e.o2': 'Abre centrado en esa ciudad en vez de pedir la ubicaci&oacute;n.',
  'e.o3': 'Abre ya filtrado: food, shelter, hygiene, clothes, social, legal, health, water o warm.',
  'e.o4': 'El color de tu entidad (un c&oacute;digo hex sin #) para los botones y los enlaces.',
+ 'e.o5': 'Código de país de dos letras (GB, CA, ES…). Añádelo si el nombre de la ciudad existe en más de un país: London, Valencia, León…',
  'e.hdoes': 'Lo que hace y lo que no',
  'e.d1': 'No pide la ubicaci&oacute;n a quien visita tu web salvo que pulse el bot&oacute;n de centrar.',
- 'e.d2': 'No pone cookies, ni p&iacute;xeles, ni nada de terceros. No hay nada que consentir.',
+ 'e.d2': 'No pone cookies ni píxeles de publicidad. No hay nada que consentir.',
  'e.d3': 'Funciona sin conexi&oacute;n una vez cargado.',
- 'e.d4': 'Pesa poco: la p&aacute;gina abre en menos de 250 ms y solo baja los datos del trozo de mapa que se ve.',
+ 'e.d4': 'Pesa poco: solo baja el trozo de mapa que se ve.',
  'e.hadd': 'Si quieres que tus servicios salgan',
  'e.add': 'El mapa se alimenta de OpenStreetMap. Si tu comedor, tu albergue o tu ropero no aparece, a&ntilde;&aacute;delo all&iacute; y en la siguiente actualizaci&oacute;n estar&aacute; aqu&iacute; y en todas las dem&aacute;s webs y apps que usan ese mapa, no solo en esta.',
  'e.bosm': 'A&ntilde;adir un sitio en OpenStreetMap',
@@ -198,7 +200,7 @@ TR['es'] = {
  'i.w3': 'Las zonas que ya hayas mirado con conexi&oacute;n, y los sitios m&aacute;s cercanos a cada una de las {C} ciudades, que van dentro de la propia p&aacute;gina.',
  'i.n3': 'Las actualizaciones de los datos.',
  'i.hwhy': 'Por qu&eacute; est&aacute; hecho as&iacute;',
- 'i.why': 'Quien m&aacute;s necesita este mapa suele tener el m&oacute;vil m&aacute;s barato, la conexi&oacute;n m&aacute;s mala y el saldo m&aacute;s justo. Por eso la p&aacute;gina no carga tipograf&iacute;as de fuera, ni librer&iacute;as, ni anal&iacute;tica: todo va dentro, abre en menos de 250 ms y los datos del mapa se bajan por trozos, solo el cuadrado que est&aacute;s mirando.',
+ 'i.why': 'Quien más necesita este mapa suele tener el móvil más barato, la conexión más mala y el saldo más justo. Por eso la página no carga tipografías de fuera ni librerías: todo va dentro, y los datos del mapa se bajan por trozos, solo el cuadrado que estás mirando.',
  'i.bopen': 'Abrir el mapa',
 }
 
@@ -223,7 +225,7 @@ TR['fr'] = {
  'p.h200': 'En 200 mots',
  'p.t200': '<p>SupportNear est une carte de l&rsquo;aide gratuite pour celles et ceux qui en ont besoin maintenant. On l&rsquo;ouvre et, sans inscription et sans rien installer, elle montre les lieux les plus proches o&ugrave; l&rsquo;on sert &agrave; manger, o&ugrave; dormir, o&ugrave; se doucher, trouver des v&ecirc;tements, un m&eacute;decin ou quelqu&rsquo;un pour aider avec les papiers.</p>'
            '<p>Elle couvre <strong>{P} lieux dans {C} villes de {K} pays</strong>. Les donn&eacute;es viennent d&rsquo;OpenStreetMap, la carte ouverte tenue &agrave; jour par des b&eacute;n&eacute;voles, des collectivit&eacute;s et des &eacute;quipes humanitaires, et chacun peut les corriger depuis le site : un bouton signale un lieu manquant, un autre un lieu ferm&eacute;.</p>'
-           '<p>Elle est faite pour le t&eacute;l&eacute;phone le moins cher et la pire connexion. La page s&rsquo;ouvre en moins d&rsquo;un quart de seconde, s&rsquo;enregistre sur le t&eacute;l&eacute;phone et continue de fonctionner sans donn&eacute;es. On peut t&eacute;l&eacute;charger une ville enti&egrave;re pour l&rsquo;utiliser hors ligne. Sans compte, sans trace de qui vous &ecirc;tes, sans publicit&eacute; ni mesure d&rsquo;audience tierce.</p>'
+           '<p>Elle est faite pour le téléphone le moins cher et la pire connexion. La page est légère, s’enregistre sur le téléphone et continue de fonctionner sans données. On peut télécharger une ville entière pour l’utiliser hors ligne. Sans compte, sans trace de qui vous êtes, sans publicité et sans cookies.</p>'
            '<p>C&rsquo;est un projet &agrave; but non lucratif.</p>',
  'p.hwho': 'Qui est derri&egrave;re',
  'p.who': "<p>J&rsquo;ai commenc&eacute; ce projet, sous d&rsquo;autres noms, en <strong>2007</strong>, l&rsquo;ann&eacute;e de mes 18 ans. Pendant des ann&eacute;es j&rsquo;ai ajout&eacute; les lieux un par un, &agrave; la main.</p><p>Avec l&rsquo;aide d&rsquo;autres outils, j&rsquo;ai enfin pu l&rsquo;&eacute;tendre au monde entier : {P} lieux dans {K} pays. Il n&rsquo;a aucun but lucratif et n&rsquo;en aura jamais.</p><p>Si une r&eacute;daction souhaite en parler, c&rsquo;est avec plaisir. &Eacute;crivez-moi sur X.</p>"
@@ -247,7 +249,7 @@ TR['fr'] = {
  'v1': 'Les lieux viennent d&rsquo;<strong>OpenStreetMap</strong> (ODbL). Chaque fiche renvoie au point d&rsquo;origine.',
  'v2': 'La liste des villes vient d&rsquo;OpenStreetMap et le pays de chacune, de Nominatim. Aucune coordonn&eacute;e n&rsquo;est saisie &agrave; la main.',
  'v3': 'Les num&eacute;ros d&rsquo;urgence de 227 pays viennent de <strong>Wikidata</strong> (propri&eacute;t&eacute; P2852).',
- 'v4': 'Le site s&rsquo;ouvre en <strong>moins de 250 ms</strong> et ne charge rien de tiers : ni polices, ni mesure d&rsquo;audience, ni biblioth&egrave;ques.',
+ 'v4': 'Le site n’utilise ni polices externes, ni bibliothèques de code d’autres sites, ni publicité, ni cookies. Les images de la carte et les données en direct viennent de services cartographiques publics (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'T&eacute;l&eacute;charger le tableau complet (CSV)',
  'p.hnot': 'Ce que nous ne disons pas',
  'p.not': '<p>Les donn&eacute;es viennent d&rsquo;une carte ouverte et ne sont pas v&eacute;rifi&eacute;es une par une. Un lieu peut avoir ferm&eacute;. C&rsquo;est pourquoi le site dit toujours d&rsquo;appeler avant de s&rsquo;y rendre &agrave; pied, et pourquoi il existe un bouton pour signaler qu&rsquo;un lieu n&rsquo;existe plus.</p>'
@@ -261,11 +263,12 @@ TR['fr'] = {
  'e.hopts': 'Options', 'e.thp': 'Param&egrave;tre', 'e.thw': 'Ce que &ccedil;a fait',
  'e.o1': 'Masque l&rsquo;en-t&ecirc;te et ne laisse que la carte. C&rsquo;est ce qui en fait un widget.',
  'e.o2': 'Ouvre centr&eacute; sur cette ville au lieu de demander la localisation.',
+ 'e.o5': 'Code pays à deux lettres (GB, CA, ES…). À ajouter quand le nom de la ville existe dans plusieurs pays : London, Valencia, León…',
  'e.hdoes': 'Ce que &ccedil;a fait et ne fait pas',
  'e.d1': 'Ne demande pas la localisation &agrave; vos visiteurs, sauf s&rsquo;ils appuient sur le bouton de centrage.',
- 'e.d2': 'Pas de cookies, pas de pixels, rien de tiers. Il n&rsquo;y a rien &agrave; accepter.',
+ 'e.d2': 'Pas de cookies, pas de pixels publicitaires. Il n’y a rien à accepter.',
  'e.d3': 'Fonctionne sans connexion une fois charg&eacute;.',
- 'e.d4': 'C&rsquo;est l&eacute;ger : la page s&rsquo;ouvre en moins de 250 ms et ne t&eacute;l&eacute;charge que le morceau de carte visible.',
+ 'e.d4': 'C’est léger : la page ne télécharge que le morceau de carte visible.',
  'e.hadd': 'Si vous voulez y voir vos services',
  'e.add': 'La carte est aliment&eacute;e par OpenStreetMap. Si votre soupe populaire, votre h&eacute;bergement ou votre vestiaire n&rsquo;y figure pas, ajoutez-le l&agrave;-bas : &agrave; la mise &agrave; jour suivante il sera ici &mdash; et sur tous les autres sites et applications qui utilisent cette carte, pas seulement celui-ci.',
  'e.bosm': 'Ajouter un lieu sur OpenStreetMap',
@@ -289,7 +292,7 @@ TR['fr'] = {
  'i.w3': 'Les zones d&eacute;j&agrave; parcourues avec une connexion, et les lieux les plus proches de chacune des {C} villes, qui voyagent dans la page elle-m&ecirc;me.',
  'i.n3': 'Les mises &agrave; jour des donn&eacute;es.',
  'i.hwhy': 'Pourquoi c&rsquo;est fait comme &ccedil;a',
- 'i.why': 'Celui qui a le plus besoin de cette carte a souvent le t&eacute;l&eacute;phone le moins cher, la pire connexion et le moins de cr&eacute;dit. C&rsquo;est pourquoi la page ne charge ni polices externes, ni biblioth&egrave;ques, ni mesure d&rsquo;audience : tout voyage &agrave; l&rsquo;int&eacute;rieur, elle s&rsquo;ouvre en moins de 250 ms, et les donn&eacute;es de la carte arrivent par morceaux &mdash; seulement le carr&eacute; que vous regardez.',
+ 'i.why': 'Celui qui a le plus besoin de cette carte a souvent le téléphone le moins cher, la pire connexion et le moins de crédit. C’est pourquoi la page ne charge ni polices externes ni bibliothèques : tout voyage à l’intérieur, et les données de la carte arrivent par morceaux &mdash; seulement le carré que vous regardez.',
  'i.bopen': 'Ouvrir la carte',
 }
 
@@ -309,7 +312,7 @@ TR['pt'] = {
  'p.h200': 'Em 200 palavras',
  'p.t200': '<p>O SupportNear &eacute; um mapa de ajuda gratuita para quem precisa dela agora. Abre-se e, sem registo e sem instalar nada, mostra os locais mais pr&oacute;ximos onde d&atilde;o de comer, onde se pode dormir, onde h&aacute; um duche, roupa, um m&eacute;dico ou algu&eacute;m que ajude com os pap&eacute;is.</p>'
            '<p>Cobre <strong>{P} locais em {C} cidades de {K} pa&iacute;ses</strong>. Os dados v&ecirc;m do OpenStreetMap, o mapa aberto mantido por volunt&aacute;rios, c&acirc;maras e equipas humanit&aacute;rias, e qualquer pessoa pode corrigi-los a partir do pr&oacute;prio site: um bot&atilde;o avisa que falta um local, outro que fechou.</p>'
-           '<p>Foi feito para o telem&oacute;vel mais barato e a pior liga&ccedil;&atilde;o. A p&aacute;gina abre em menos de um quarto de segundo, guarda-se sozinha no telem&oacute;vel e continua a funcionar sem dados. Pode descarregar-se uma cidade inteira para usar sem internet. Sem conta, sem registo de quem &eacute;, sem publicidade nem anal&iacute;tica de terceiros.</p>'
+           '<p>Foi feito para o telemóvel mais barato e a pior ligação. A página é leve, guarda-se sozinha no telemóvel e continua a funcionar sem dados. Pode descarregar-se uma cidade inteira para usar sem internet. Sem conta, sem registo de quem é, sem publicidade e sem cookies.</p>'
            '<p>&Eacute; um projeto sem fins lucrativos.</p>',
  'p.hwho': 'Quem est&aacute; por tr&aacute;s',
  'p.who': "<p>Comecei este projeto, com outros nomes, em <strong>2007</strong>, o ano em que fiz 18. Durante anos fui acrescentando os locais &agrave; m&atilde;o, um a um.</p><p>Com a ajuda de outras ferramentas consegui finalmente alarg&aacute;-lo ao mundo inteiro: {P} locais em {K} pa&iacute;ses. N&atilde;o tem fins lucrativos e nunca ter&aacute;.</p><p>Se alguma reda&ccedil;&atilde;o quiser falar disto, ajudo com gosto. Escreva-me no X.</p>"
@@ -333,7 +336,7 @@ TR['pt'] = {
  'v1': 'Os locais v&ecirc;m do <strong>OpenStreetMap</strong> (ODbL). Cada ficha liga ao ponto original.',
  'v2': 'A lista de cidades vem do OpenStreetMap e o pa&iacute;s de cada uma do Nominatim. Nenhuma coordenada &eacute; escrita &agrave; m&atilde;o.',
  'v3': 'Os n&uacute;meros de emerg&ecirc;ncia de 227 pa&iacute;ses v&ecirc;m da <strong>Wikidata</strong> (propriedade P2852).',
- 'v4': 'O site abre em <strong>menos de 250 ms</strong> e n&atilde;o carrega nada de terceiros: nem tipos de letra, nem anal&iacute;tica, nem bibliotecas.',
+ 'v4': 'O site não usa tipos de letra externos, nem bibliotecas de código de outros sites, nem publicidade, nem cookies. As imagens do mapa e os dados em direto vêm de serviços públicos de mapas (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Descarregar a tabela completa (CSV)',
  'p.hnot': 'O que n&atilde;o dizemos',
  'p.not': '<p>Os dados v&ecirc;m de um mapa aberto e n&atilde;o est&atilde;o verificados um a um. Um local pode ter fechado. Por isso o site diz sempre para telefonar antes de ir a p&eacute;, e por isso h&aacute; um bot&atilde;o para avisar que algo j&aacute; n&atilde;o existe.</p>'
@@ -347,11 +350,12 @@ TR['pt'] = {
  'e.hopts': 'Op&ccedil;&otilde;es', 'e.thp': 'Par&acirc;metro', 'e.thw': 'O que faz',
  'e.o1': 'Tira o cabe&ccedil;alho e deixa s&oacute; o mapa. &Eacute; o que o transforma num widget.',
  'e.o2': 'Abre centrado nessa cidade em vez de pedir a localiza&ccedil;&atilde;o.',
+ 'e.o5': 'Código de país de duas letras (GB, CA, ES…). Junte-o quando o nome da cidade existe em mais de um país: London, Valencia, León…',
  'e.hdoes': 'O que faz e o que n&atilde;o faz',
  'e.d1': 'N&atilde;o pede a localiza&ccedil;&atilde;o a quem visita o seu site, a n&atilde;o ser que carregue no bot&atilde;o de centrar.',
- 'e.d2': 'Sem cookies, sem p&iacute;xeis, sem nada de terceiros. N&atilde;o h&aacute; nada para consentir.',
+ 'e.d2': 'Sem cookies nem píxeis de publicidade. Não há nada para consentir.',
  'e.d3': 'Funciona sem liga&ccedil;&atilde;o depois de carregado.',
- 'e.d4': 'Pesa pouco: a p&aacute;gina abre em menos de 250 ms e s&oacute; descarrega o peda&ccedil;o de mapa vis&iacute;vel.',
+ 'e.d4': 'Pesa pouco: só descarrega o pedaço de mapa visível.',
  'e.hadd': 'Se quer os seus servi&ccedil;os no mapa',
  'e.add': 'O mapa alimenta-se do OpenStreetMap. Se a sua cantina social, o seu abrigo ou o seu roupeiro n&atilde;o aparece, acrescente-o l&aacute; e na atualiza&ccedil;&atilde;o seguinte estar&aacute; aqui &mdash; e em todos os outros sites e apps que usam esse mapa, n&atilde;o s&oacute; neste.',
  'e.bosm': 'Acrescentar um local no OpenStreetMap',
@@ -375,7 +379,7 @@ TR['pt'] = {
  'i.w3': 'As zonas que j&aacute; viu com liga&ccedil;&atilde;o, e os locais mais pr&oacute;ximos de cada uma das {C} cidades, que v&atilde;o dentro da pr&oacute;pria p&aacute;gina.',
  'i.n3': 'As atualiza&ccedil;&otilde;es dos dados.',
  'i.hwhy': 'Porque est&aacute; feito assim',
- 'i.why': 'Quem mais precisa deste mapa costuma ter o telem&oacute;vel mais barato, a pior liga&ccedil;&atilde;o e menos saldo. Por isso a p&aacute;gina n&atilde;o carrega tipos de letra externos, nem bibliotecas, nem anal&iacute;tica: vai tudo dentro, abre em menos de 250 ms e os dados do mapa descarregam-se aos peda&ccedil;os &mdash; s&oacute; o quadrado que est&aacute; a ver.',
+ 'i.why': 'Quem mais precisa deste mapa costuma ter o telemóvel mais barato, a pior ligação e menos saldo. Por isso a página não carrega tipos de letra externos nem bibliotecas: vai tudo dentro, e os dados do mapa descarregam-se aos pedaços &mdash; só o quadrado que está a ver.',
  'i.bopen': 'Abrir o mapa',
 }
 
@@ -391,11 +395,11 @@ TR['ar'] = {
  'st.places': 'أماكن مساعدة مجانية', 'st.cities': 'مدينة', 'st.countries': 'دولة',
  'st.langs': 'لغة', 'st.free': 'وبلا حساب',
  'p.h50': 'في خمسين كلمة',
- 'p.t50': '<p>SupportNear خريطة مجانية تدلّك على أماكن الطعام والمبيت والاستحمام والملابس والدعم الاجتماعي والرعاية الصحية والاستشارة القانونية المجانية، انطلاقاً من مكان وقوفك بالضبط. تغطي {P} مكاناً في {C} مدينة عبر {K} دولة، بثلاث عشرة لغة. بلا حساب، وبلا تتبّع، وتعمل بلا تغطية.</p>',
+ 'p.t50': '<p>SupportNear خريطة مجانية تدلّك على أماكن الطعام والمبيت والاستحمام والملابس والدعم الاجتماعي والرعاية الصحية والاستشارة القانونية المجانية، انطلاقاً من مكان وقوفك بالضبط. تغطي {P} مكاناً في {C} مدينة عبر {K} دولة، بعشرين لغة. بلا حساب، وبلا تتبّع، وتعمل بلا تغطية.</p>',
  'p.h200': 'في مئتَي كلمة',
  'p.t200': '<p>SupportNear خريطة للمساعدة المجانية لمن يحتاجها الآن. تفتحها فتُظهر لك، بلا تسجيل وبلا تثبيت أي شيء، أقرب الأماكن التي تقدّم الطعام، وأين يمكن أن تنام، وأين يوجد دُش أو ملابس أو طبيب أو من يساعدك في الأوراق.</p>'
            '<p>تغطي <strong>{P} مكاناً في {C} مدينة عبر {K} دولة</strong>. البيانات من OpenStreetMap، الخريطة المفتوحة التي يحدّثها متطوعون وبلديات وفرق إنسانية، ويستطيع أي شخص تصحيحها من الموقع نفسه: زر يبلّغ عن مكان ناقص، وآخر عن مكان أُغلق.</p>'
-           '<p>مصمَّمة لأرخص هاتف وأسوأ اتصال. تفتح الصفحة في أقل من ربع ثانية، وتُحفَظ في الهاتف، وتستمر في العمل بلا إنترنت. ويمكن تنزيل مدينة كاملة لاستخدامها دون اتصال. بلا حساب، وبلا تسجيل لهويتك، وبلا إعلانات ولا تحليلات من طرف ثالث.</p>'
+           '<p>مصمَّمة لأرخص هاتف وأسوأ اتصال. الصفحة خفيفة، وتُحفَظ في الهاتف، وتستمر في العمل بلا إنترنت. ويمكن تنزيل مدينة كاملة لاستخدامها دون اتصال. بلا حساب، وبلا تسجيل لهويتك، وبلا إعلانات ولا كوكيز.</p>'
            '<p>هذا مشروع غير ربحي.</p>',
  'p.hwho': 'من وراء المشروع',
  'p.who': "<p>بدأتُ هذا المشروع، بأسماء أخرى، في <strong>2007</strong>، العام الذي بلغت فيه الثامنة عشرة. وظللت سنوات أضيف الأماكن واحداً واحداً بيدي.</p><p>وبمساعدة أدوات أخرى استطعت أخيراً توسيعه ليشمل العالم كله: {P} مكاناً في {K} دولة. لا ربح فيه ولن يكون.</p><p>إن أرادت أي غرفة أخبار تغطيته فيسعدني أن أساعد. اكتب لي على X.</p>"
@@ -419,7 +423,7 @@ TR['ar'] = {
  'v1': 'الأماكن من <strong>OpenStreetMap</strong> (رخصة ODbL). كل بطاقة ترتبط بالنقطة الأصلية.',
  'v2': 'قائمة المدن من OpenStreetMap، وبلد كل مدينة من Nominatim. ولا إحداثية مكتوبة باليد.',
  'v3': 'أرقام الطوارئ لـ٢٢٧ دولة من <strong>ويكي بيانات</strong> (الخاصية P2852).',
- 'v4': 'يفتح الموقع في <strong>أقل من ٢٥٠ جزءاً من الثانية</strong> ولا يحمّل شيئاً من طرف ثالث: لا خطوط ولا تحليلات ولا مكتبات.',
+ 'v4': 'لا يستخدم الموقع خطوطاً خارجية ولا مكتبات برمجية من مواقع أخرى ولا إعلانات ولا كوكيز. صور الخريطة والبيانات المباشرة تأتي من خدمات خرائط عامة (Esri وOpenStreetMap وOpen-Meteo).',
  'b.csv': 'نزّل الجدول كاملاً (CSV)',
  'p.hnot': 'ما لا نقوله',
  'p.not': '<p>البيانات تأتي من خريطة مفتوحة وليست مُتحقَّقاً منها واحدة واحدة. قد يكون مكان ما قد أُغلق. لذلك يقول الموقع دائماً اتصل قبل أن تمشي إلى هناك، ولذلك يوجد زر للتبليغ بأن مكاناً لم يعد موجوداً.</p>'
@@ -433,11 +437,12 @@ TR['ar'] = {
  'e.hopts': 'الخيارات', 'e.thp': 'المعامل', 'e.thw': 'ماذا يفعل',
  'e.o1': 'يخفي الشريط العلوي ويترك الخريطة وحدها. هذا ما يحوّلها إلى أداة مدمجة.',
  'e.o2': 'يفتحها على تلك المدينة بدل طلب الموقع.',
+ 'e.o5': 'رمز البلد من حرفين (GB، CA، ES…). أضفه إذا كان اسم المدينة موجوداً في أكثر من بلد: London، Valencia، León…',
  'e.hdoes': 'ماذا يفعل وماذا لا يفعل',
  'e.d1': 'لا يطلب الموقع من زوّار صفحتك إلا إذا ضغطوا زر التوسيط.',
- 'e.d2': 'بلا كوكيز ولا بكسلات ولا شيء من طرف ثالث. لا شيء يحتاج موافقة.',
+ 'e.d2': 'بلا كوكيز ولا بكسلات إعلانية. لا شيء يحتاج موافقة.',
  'e.d3': 'يعمل بلا اتصال بعد أول تحميل.',
- 'e.d4': 'خفيف: تفتح الصفحة في أقل من ٢٥٠ جزءاً من الثانية ولا تنزّل إلا الجزء الظاهر من الخريطة.',
+ 'e.d4': 'خفيف: لا ينزّل إلا الجزء الظاهر من الخريطة.',
  'e.hadd': 'إن أردت أن تظهر خدماتك',
  'e.add': 'الخريطة تتغذى من OpenStreetMap. إن لم يظهر مطعمك الخيري أو مأواك أو مستودع ملابسك، أضفه هناك وفي التحديث التالي سيكون هنا &mdash; وفي كل المواقع والتطبيقات الأخرى التي تستخدم تلك الخريطة، لا هنا وحده.',
  'e.bosm': 'أضف مكاناً في OpenStreetMap',
@@ -461,7 +466,7 @@ TR['ar'] = {
  'i.w3': 'المناطق التي تصفحتها وأنت متصل، وأقرب الأماكن لكل مدينة من المدن الـ{C}، وهي محفوظة داخل الصفحة نفسها.',
  'i.n3': 'تحديثات البيانات.',
  'i.hwhy': 'لماذا صُنعت هكذا',
- 'i.why': 'من يحتاج هذه الخريطة أكثر من غيره غالباً ما يملك أرخص هاتف وأسوأ اتصال وأقل رصيد. لذلك لا تحمّل الصفحة خطوطاً خارجية ولا مكتبات ولا تحليلات: كل شيء بداخلها، وتفتح في أقل من ٢٥٠ جزءاً من الثانية، وبيانات الخريطة تنزل على أجزاء &mdash; المربع الذي تنظر إليه فقط.',
+ 'i.why': 'من يحتاج هذه الخريطة أكثر من غيره غالباً ما يملك أرخص هاتف وأسوأ اتصال وأقل رصيد. لذلك لا تحمّل الصفحة خطوطاً خارجية ولا مكتبات: كل شيء بداخلها، وبيانات الخريطة تنزل على أجزاء &mdash; المربع الذي تنظر إليه فقط.',
  'i.bopen': 'افتح الخريطة',
 }
 
@@ -481,7 +486,7 @@ TR['uk'] = {
  'p.h200': 'У 200 словах',
  'p.t200': '<p>SupportNear — карта безкоштовної допомоги для тих, кому вона потрібна просто зараз. Відкриваєте — і без реєстрації та без встановлення чогось вона показує найближчі місця, де годують, де можна переночувати, де є душ, одяг, лікар або хтось, хто допоможе з документами.</p>'
            '<p>Охоплює <strong>{P} місць у {C} містах {K} країн</strong>. Дані з OpenStreetMap — відкритої карти, яку ведуть волонтери, громади та гуманітарні команди, і будь-хто може виправити їх просто із сайту: одна кнопка повідомляє про відсутнє місце, інша — про закрите.</p>'
-           '<p>Зроблено для найдешевшого телефона й найгіршого зв’язку. Сторінка відкривається менш ніж за чверть секунди, зберігається в телефоні й далі працює без інтернету. Ціле місто можна завантажити для роботи офлайн. Без акаунта, без записів про те, хто ви, без реклами й без сторонньої аналітики.</p>'
+           '<p>Зроблено для найдешевшого телефона й найгіршого зв’язку. Сторінка легка, зберігається в телефоні й далі працює без інтернету. Ціле місто можна завантажити для роботи офлайн. Без акаунта, без записів про те, хто ви, без реклами й без кук.</p>'
            '<p>Це неприбутковий проєкт.</p>',
  'p.hwho': 'Хто за цим стоїть',
  'p.who': "<p>Я почав цей проєкт, під іншими назвами, ще у <strong>2007</strong> році, коли мені виповнилося 18. Роками я додавав місця вручну, одне за одним.</p><p>За допомогою інших інструментів я нарешті зміг розширити його на весь світ: {P} місць у {K} країнах. Прибутку тут немає й не буде.</p><p>Якщо якась редакція захоче про це написати, радо допоможу. Напишіть мені в X.</p>"
@@ -505,7 +510,7 @@ TR['uk'] = {
  'v1': 'Місця беруться з <strong>OpenStreetMap</strong> (ODbL). Кожна картка веде до вихідної точки.',
  'v2': 'Список міст — з OpenStreetMap, країна кожного — з Nominatim. Жодна координата не вписана вручну.',
  'v3': 'Номери екстрених служб 227 країн — із <strong>Вікіданих</strong> (властивість P2852).',
- 'v4': 'Сайт відкривається <strong>менш ніж за 250 мс</strong> і не завантажує нічого стороннього: ні шрифтів, ні аналітики, ні бібліотек.',
+ 'v4': 'Сайт не використовує зовнішніх шрифтів, бібліотек коду з інших сайтів, реклами чи кук. Зображення карти та живі дані надходять від публічних картографічних сервісів (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Завантажити повну таблицю (CSV)',
  'p.hnot': 'Чого ми не стверджуємо',
  'p.not': '<p>Дані походять з відкритої карти й не перевірені по одному. Місце могло зачинитися. Тому сайт завжди радить зателефонувати, перш ніж іти туди пішки, і тому є кнопка повідомити, що місця вже немає.</p>'
@@ -519,11 +524,12 @@ TR['uk'] = {
  'e.hopts': 'Параметри', 'e.thp': 'Параметр', 'e.thw': 'Що робить',
  'e.o1': 'Ховає шапку й лишає саму карту. Саме це робить із неї віджет.',
  'e.o2': 'Відкриває на цьому місті замість того, щоб питати місцеперебування.',
+ 'e.o5': 'Дволітерний код країни (GB, CA, ES…). Додайте його, якщо таке місто є в кількох країнах: London, Valencia, León…',
  'e.hdoes': 'Що робить і чого не робить',
  'e.d1': 'Не питає місцеперебування у ваших відвідувачів, доки вони не натиснуть кнопку центрування.',
- 'e.d2': 'Без кук, без пікселів, без нічого стороннього. Погоджуватися ні на що не треба.',
+ 'e.d2': 'Без кук і без рекламних пікселів. Погоджуватися ні на що не треба.',
  'e.d3': 'Після першого завантаження працює без інтернету.',
- 'e.d4': 'Легка: сторінка відкривається менш ніж за 250 мс і завантажує лише видимий шматок карти.',
+ 'e.d4': 'Легка: завантажує лише видимий шматок карти.',
  'e.hadd': 'Якщо хочете, щоб там були ваші послуги',
  'e.add': 'Карту живить OpenStreetMap. Якщо вашої їдальні, притулку чи пункту видачі одягу там немає — додайте їх туди, і при наступному оновленні вони будуть тут &mdash; і на всіх інших сайтах і застосунках, що користуються цією картою, а не лише тут.',
  'e.bosm': 'Додати місце в OpenStreetMap',
@@ -547,7 +553,7 @@ TR['uk'] = {
  'i.w3': 'Зони, які ви вже переглядали з інтернетом, і найближчі місця до кожного з {C} міст — вони їдуть усередині самої сторінки.',
  'i.n3': 'Оновлення даних.',
  'i.hwhy': 'Чому зроблено саме так',
- 'i.why': 'У того, кому ця карта потрібна найбільше, зазвичай найдешевший телефон, найгірший зв’язок і найменше грошей на рахунку. Тому сторінка не вантажить ні зовнішніх шрифтів, ні бібліотек, ні аналітики: усе всередині, відкривається менш ніж за 250 мс, а дані карти приходять шматками &mdash; лише той квадрат, на який ви дивитеся.',
+ 'i.why': 'У того, кому ця карта потрібна найбільше, зазвичай найдешевший телефон, найгірший зв’язок і найменше грошей на рахунку. Тому сторінка не вантажить ні зовнішніх шрифтів, ні бібліотек: усе всередині, а дані карти приходять шматками &mdash; лише той квадрат, на який ви дивитеся.',
  'i.bopen': 'Відкрити карту',
 }
 
@@ -567,7 +573,7 @@ TR['ru'] = {
  'p.h200': 'В 200 словах',
  'p.t200': '<p>SupportNear — карта бесплатной помощи для тех, кому она нужна прямо сейчас. Открываете — и без регистрации и без установки чего-либо она показывает ближайшие места, где кормят, где можно переночевать, где есть душ, одежда, врач или тот, кто поможет с документами.</p>'
            '<p>Охватывает <strong>{P} мест в {C} городах {K} стран</strong>. Данные из OpenStreetMap — открытой карты, которую ведут волонтёры, муниципалитеты и гуманитарные команды, и любой может исправить их прямо с сайта: одна кнопка сообщает о недостающем месте, другая — о закрывшемся.</p>'
-           '<p>Сделано для самого дешёвого телефона и худшей связи. Страница открывается меньше чем за четверть секунды, сохраняется в телефоне и продолжает работать без интернета. Целый город можно скачать для работы офлайн. Без аккаунта, без записей о том, кто вы, без рекламы и без сторонней аналитики.</p>'
+           '<p>Сделано для самого дешёвого телефона и худшей связи. Страница лёгкая, сохраняется в телефоне и продолжает работать без интернета. Целый город можно скачать для работы офлайн. Без аккаунта, без записей о том, кто вы, без рекламы и без кук.</p>'
            '<p>Это некоммерческий проект.</p>',
  'p.hwho': 'Кто за этим стоит',
  'p.who': "<p>Я начал этот проект, под другими названиями, ещё в <strong>2007</strong> году, когда мне исполнилось 18. Годами я добавлял места вручную, одно за другим.</p><p>С помощью других инструментов я наконец смог расширить его на весь мир: {P} мест в {K} странах. Прибыли здесь нет и не будет.</p><p>Если какая-то редакция захочет об этом написать, рад помочь. Напишите мне в X.</p>"
@@ -591,7 +597,7 @@ TR['ru'] = {
  'v1': 'Места берутся из <strong>OpenStreetMap</strong> (ODbL). Каждая карточка ведёт к исходной точке.',
  'v2': 'Список городов — из OpenStreetMap, страна каждого — из Nominatim. Ни одна координата не вписана вручную.',
  'v3': 'Номера экстренных служб 227 стран — из <strong>Викиданных</strong> (свойство P2852).',
- 'v4': 'Сайт открывается <strong>меньше чем за 250 мс</strong> и не загружает ничего стороннего: ни шрифтов, ни аналитики, ни библиотек.',
+ 'v4': 'Сайт не использует внешних шрифтов, библиотек кода с других сайтов, рекламы и кук. Изображения карты и данные в реальном времени приходят от публичных картографических сервисов (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Скачать полную таблицу (CSV)',
  'p.hnot': 'Чего мы не утверждаем',
  'p.not': '<p>Данные взяты из открытой карты и не проверены по одному. Место могло закрыться. Поэтому сайт всегда советует позвонить, прежде чем идти туда пешком, и поэтому есть кнопка сообщить, что места больше нет.</p>'
@@ -605,11 +611,12 @@ TR['ru'] = {
  'e.hopts': 'Параметры', 'e.thp': 'Параметр', 'e.thw': 'Что делает',
  'e.o1': 'Прячет шапку и оставляет только карту. Именно это превращает её в виджет.',
  'e.o2': 'Открывает на этом городе вместо запроса местоположения.',
+ 'e.o5': 'Двухбуквенный код страны (GB, CA, ES…). Добавьте его, если город с таким названием есть в нескольких странах: London, Valencia, León…',
  'e.hdoes': 'Что делает и чего не делает',
  'e.d1': 'Не спрашивает местоположение у ваших посетителей, пока они не нажмут кнопку центрирования.',
- 'e.d2': 'Без кук, без пикселей, без всего стороннего. Соглашаться не с чем.',
+ 'e.d2': 'Без кук и без рекламных пикселей. Соглашаться не с чем.',
  'e.d3': 'После первой загрузки работает без интернета.',
- 'e.d4': 'Лёгкая: страница открывается меньше чем за 250 мс и качает только видимый кусок карты.',
+ 'e.d4': 'Лёгкая: качает только видимый кусок карты.',
  'e.hadd': 'Если хотите, чтобы там были ваши услуги',
  'e.add': 'Карту питает OpenStreetMap. Если вашей столовой, приюта или пункта выдачи одежды там нет — добавьте их туда, и при следующем обновлении они появятся здесь &mdash; и на всех других сайтах и приложениях, которые используют эту карту, а не только здесь.',
  'e.bosm': 'Добавить место в OpenStreetMap',
@@ -633,7 +640,7 @@ TR['ru'] = {
  'i.w3': 'Зоны, которые вы уже смотрели с интернетом, и ближайшие места к каждому из {C} городов — они едут внутри самой страницы.',
  'i.n3': 'Обновления данных.',
  'i.hwhy': 'Почему сделано именно так',
- 'i.why': 'У того, кому эта карта нужнее всего, обычно самый дешёвый телефон, худшая связь и меньше всего денег на счету. Поэтому страница не грузит ни внешних шрифтов, ни библиотек, ни аналитики: всё внутри, открывается меньше чем за 250 мс, а данные карты приходят кусками &mdash; только тот квадрат, на который вы смотрите.',
+ 'i.why': 'У того, кому эта карта нужнее всего, обычно самый дешёвый телефон, худшая связь и меньше всего денег на счету. Поэтому страница не грузит ни внешних шрифтов, ни библиотек: всё внутри, а данные карты приходят кусками &mdash; только тот квадрат, на который вы смотрите.',
  'i.bopen': 'Открыть карту',
 }
 
@@ -653,7 +660,7 @@ TR['pl'] = {
  'p.h200': 'W 200 słowach',
  'p.t200': '<p>SupportNear to mapa bezpłatnej pomocy dla tych, kt&oacute;rzy potrzebują jej teraz. Otwierasz i &mdash; bez rejestracji i bez instalowania czegokolwiek &mdash; widzisz najbliższe miejsca, gdzie wydają jedzenie, gdzie można przespać noc, gdzie jest prysznic, ubrania, lekarz albo ktoś, kto pomoże z dokumentami.</p>'
            '<p>Obejmuje <strong>{P} miejsc w {C} miastach w {K} krajach</strong>. Dane pochodzą z OpenStreetMap, otwartej mapy prowadzonej przez wolontariuszy, samorządy i zespoły humanitarne, i każdy może je poprawić z samej strony: jeden przycisk zgłasza brakujące miejsce, drugi &mdash; zamknięte.</p>'
-           '<p>Zrobione z myślą o najtańszym telefonie i najgorszym połączeniu. Strona otwiera się w niecałą ćwierć sekundy, zapisuje się w telefonie i działa dalej bez internetu. Całe miasto można pobrać do użytku offline. Bez konta, bez zapisu tego, kim jesteś, bez reklam i bez zewnętrznej analityki.</p>'
+           '<p>Zrobione z myślą o najtańszym telefonie i najgorszym połączeniu. Strona jest lekka, zapisuje się w telefonie i działa dalej bez internetu. Całe miasto można pobrać do użytku offline. Bez konta, bez zapisu tego, kim jesteś, bez reklam i bez ciasteczek.</p>'
            '<p>To projekt non-profit.</p>',
  'p.hwho': 'Kto za tym stoi',
  'p.who': "<p>Zacząłem ten projekt, pod innymi nazwami, w <strong>2007</strong> roku, w roku moich 18. urodzin. Przez lata dodawałem miejsca ręcznie, jedno po drugim.</p><p>Z pomocą innych narzędzi udało mi się wreszcie rozszerzyć go na cały świat: {P} miejsc w {K} krajach. Nie ma tu zysku i nie będzie.</p><p>Jeśli jakaś redakcja zechce o tym napisać, chętnie pomogę. Napisz do mnie na X.</p>"
@@ -677,7 +684,7 @@ TR['pl'] = {
  'v1': 'Miejsca pochodzą z <strong>OpenStreetMap</strong> (ODbL). Każda karta prowadzi do punktu źr&oacute;dłowego.',
  'v2': 'Lista miast pochodzi z OpenStreetMap, a kraj każdego z nich z Nominatim. Żadna wsp&oacute;łrzędna nie jest wpisana ręcznie.',
  'v3': 'Numery alarmowe 227 kraj&oacute;w pochodzą z <strong>Wikidanych</strong> (właściwość P2852).',
- 'v4': 'Strona otwiera się w <strong>mniej niż 250 ms</strong> i nie ładuje niczego z zewnątrz: ani czcionek, ani analityki, ani bibliotek.',
+ 'v4': 'Strona nie używa zewnętrznych czcionek, bibliotek kodu z innych stron, reklam ani ciasteczek. Obrazy mapy i dane na żywo pochodzą z publicznych serwisów mapowych (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Pobierz pełną tabelę (CSV)',
  'p.hnot': 'Czego nie twierdzimy',
  'p.not': '<p>Dane pochodzą z otwartej mapy i nie są sprawdzone jedno po drugim. Miejsce mogło zostać zamknięte. Dlatego strona zawsze radzi zadzwonić, zanim się tam pójdzie, i dlatego jest przycisk do zgłoszenia, że czegoś już nie ma.</p>'
@@ -691,11 +698,12 @@ TR['pl'] = {
  'e.hopts': 'Opcje', 'e.thp': 'Parametr', 'e.thw': 'Co robi',
  'e.o1': 'Ukrywa nagł&oacute;wek i zostawia samą mapę. To właśnie zamienia ją w widżet.',
  'e.o2': 'Otwiera na tym mieście zamiast pytać o lokalizację.',
+ 'e.o5': 'Dwuliterowy kod kraju (GB, CA, ES…). Dodaj go, gdy nazwa miasta występuje w kilku krajach: London, Valencia, León…',
  'e.hdoes': 'Co robi, a czego nie',
  'e.d1': 'Nie pyta odwiedzających o lokalizację, dop&oacute;ki nie naciśnie się przycisku centrowania.',
- 'e.d2': 'Bez ciasteczek, bez pikseli, bez niczego z zewnątrz. Nie ma na co się zgadzać.',
+ 'e.d2': 'Bez ciasteczek i bez pikseli reklamowych. Nie ma na co się zgadzać.',
  'e.d3': 'Po pierwszym wczytaniu działa bez połączenia.',
- 'e.d4': 'Lekka: strona otwiera się w mniej niż 250 ms i pobiera tylko widoczny fragment mapy.',
+ 'e.d4': 'Lekka: pobiera tylko widoczny fragment mapy.',
  'e.hadd': 'Jeśli chcesz, żeby były tam Twoje usługi',
  'e.add': 'Mapę zasila OpenStreetMap. Jeśli Twojej jadłodajni, schroniska albo punktu z odzieżą tam nie ma &mdash; dodaj je tam, a przy następnej aktualizacji będą tutaj &mdash; i na wszystkich innych stronach i aplikacjach korzystających z tej mapy, nie tylko na tej.',
  'e.bosm': 'Dodaj miejsce w OpenStreetMap',
@@ -719,7 +727,7 @@ TR['pl'] = {
  'i.w3': 'Obszary już przeglądane z internetem oraz najbliższe miejsca dla każdego z {C} miast &mdash; te jadą w samej stronie.',
  'i.n3': 'Aktualizacje danych.',
  'i.hwhy': 'Dlaczego zrobione właśnie tak',
- 'i.why': 'Ten, kto najbardziej potrzebuje tej mapy, ma zwykle najtańszy telefon, najgorsze połączenie i najmniej doładowania. Dlatego strona nie ładuje zewnętrznych czcionek, bibliotek ani analityki: wszystko jest w środku, otwiera się w mniej niż 250 ms, a dane mapy przychodzą kawałkami &mdash; tylko ten kwadrat, na kt&oacute;ry patrzysz.',
+ 'i.why': 'Ten, kto najbardziej potrzebuje tej mapy, ma zwykle najtańszy telefon, najgorsze połączenie i najmniej doładowania. Dlatego strona nie ładuje zewnętrznych czcionek ani bibliotek: wszystko jest w środku, a dane mapy przychodzą kawałkami &mdash; tylko ten kwadrat, na który patrzysz.',
  'i.bopen': 'Otw&oacute;rz mapę',
 }
 
@@ -739,7 +747,7 @@ TR['ro'] = {
  'p.h200': '&Icirc;n 200 de cuvinte',
  'p.t200': '<p>SupportNear este o hart&#259; a ajutorului gratuit pentru cine are nevoie de el chiar acum. O deschizi &#537;i, f&#259;r&#259; &icirc;nregistrare &#537;i f&#259;r&#259; s&#259; instalezi nimic, arat&#259; cele mai apropiate locuri unde se d&#259; de m&acirc;ncare, unde po&#539;i dormi, unde e un du&#537;, haine, un medic sau cineva care ajut&#259; cu actele.</p>'
            '<p>Acoper&#259; <strong>{P} locuri &icirc;n {C} ora&#537;e din {K} &#539;&#259;ri</strong>. Datele vin din OpenStreetMap, harta deschis&#259; &#539;inut&#259; la zi de voluntari, prim&#259;rii &#537;i echipe umanitare, &#537;i oricine le poate corecta chiar de pe site: un buton semnaleaz&#259; un loc lips&#259;, altul unul &icirc;nchis.</p>'
-           '<p>E f&#259;cut&#259; pentru cel mai ieftin telefon &#537;i cea mai proast&#259; conexiune. Pagina se deschide &icirc;n mai pu&#539;in de un sfert de secund&#259;, se salveaz&#259; singur&#259; &icirc;n telefon &#537;i merge mai departe f&#259;r&#259; internet. Un ora&#537; &icirc;ntreg poate fi desc&#259;rcat pentru folosire offline. F&#259;r&#259; cont, f&#259;r&#259; &icirc;nregistr&#259;ri despre cine e&#537;ti, f&#259;r&#259; reclame &#537;i f&#259;r&#259; analiz&#259; de la ter&#539;i.</p>'
+           '<p>E făcută pentru cel mai ieftin telefon și cea mai proastă conexiune. Pagina e ușoară, se salvează singură în telefon și merge mai departe fără internet. Un oraș întreg poate fi descărcat pentru folosire offline. Fără cont, fără înregistrări despre cine ești, fără reclame și fără cookie-uri.</p>'
            '<p>Este un proiect f&#259;r&#259; scop lucrativ.</p>',
  'p.hwho': 'Cine e &icirc;n spate',
  'p.who': "<p>Am &icirc;nceput acest proiect, sub alte nume, &icirc;n <strong>2007</strong>, anul &icirc;n care am &icirc;mplinit 18 ani. Ani la r&acirc;nd am ad&#259;ugat locurile unul c&acirc;te unul, de m&acirc;n&#259;.</p><p>Cu ajutorul altor unelte am reu&#537;it &icirc;n sf&acirc;r&#537;it s&#259;-l extind la toat&#259; lumea: {P} locuri &icirc;n {K} &#539;&#259;ri. Nu are scop lucrativ &#537;i nu va avea.</p><p>Dac&#259; vreo redac&#539;ie vrea s&#259; scrie despre asta, ajut cu pl&#259;cere. Scrie&#539;i-mi pe X.</p>"
@@ -763,7 +771,7 @@ TR['ro'] = {
  'v1': 'Locurile vin din <strong>OpenStreetMap</strong> (ODbL). Fiecare fi&#537;&#259; duce la punctul original.',
  'v2': 'Lista ora&#537;elor vine din OpenStreetMap, iar &#539;ara fiec&#259;ruia din Nominatim. Nicio coordonat&#259; nu e scris&#259; de m&acirc;n&#259;.',
  'v3': 'Numerele de urgen&#539;&#259; din 227 de &#539;&#259;ri vin din <strong>Wikidata</strong> (proprietatea P2852).',
- 'v4': 'Site-ul se deschide &icirc;n <strong>mai pu&#539;in de 250 ms</strong> &#537;i nu &icirc;ncarc&#259; nimic de la ter&#539;i: nici fonturi, nici analiz&#259;, nici biblioteci.',
+ 'v4': 'Site-ul nu folosește fonturi externe, biblioteci de cod de pe alte site-uri, reclame sau cookie-uri. Imaginile hărții și datele în timp real vin de la servicii publice de hărți (Esri, OpenStreetMap, Open-Meteo).',
  'b.csv': 'Desc&#259;rca&#539;i tabelul complet (CSV)',
  'p.hnot': 'Ce nu sus&#539;inem',
  'p.not': '<p>Datele vin dintr-o hart&#259; deschis&#259; &#537;i nu sunt verificate unul c&acirc;te unul. Un loc poate s&#259; se fi &icirc;nchis. De aceea site-ul spune mereu s&#259; suni &icirc;nainte s&#259; mergi pe jos p&acirc;n&#259; acolo, &#537;i de aceea exist&#259; un buton prin care semnalezi c&#259; ceva nu mai exist&#259;.</p>'
@@ -777,11 +785,12 @@ TR['ro'] = {
  'e.hopts': 'Op&#539;iuni', 'e.thp': 'Parametru', 'e.thw': 'Ce face',
  'e.o1': 'Ascunde antetul &#537;i las&#259; doar harta. Asta o transform&#259; &icirc;n widget.',
  'e.o2': 'Deschide centrat pe acel ora&#537; &icirc;n loc s&#259; cear&#259; loca&#539;ia.',
+ 'e.o5': 'Codul de țară din două litere (GB, CA, ES…). Adaugă-l când numele orașului există în mai multe țări: London, Valencia, León…',
  'e.hdoes': 'Ce face &#537;i ce nu face',
  'e.d1': 'Nu cere loca&#539;ia vizitatorilor dumneavoastr&#259; dec&acirc;t dac&#259; apas&#259; butonul de centrare.',
- 'e.d2': 'F&#259;r&#259; cookie-uri, f&#259;r&#259; pixeli, f&#259;r&#259; nimic de la ter&#539;i. Nu e nimic de acceptat.',
+ 'e.d2': 'Fără cookie-uri și fără pixeli de reclamă. Nu e nimic de acceptat.',
  'e.d3': 'Func&#539;ioneaz&#259; f&#259;r&#259; conexiune odat&#259; &icirc;nc&#259;rcat&#259;.',
- 'e.d4': 'E u&#537;oar&#259;: pagina se deschide &icirc;n mai pu&#539;in de 250 ms &#537;i descarc&#259; doar bucata de hart&#259; vizibil&#259;.',
+ 'e.d4': 'E ușoară: descarcă doar bucata de hartă vizibilă.',
  'e.hadd': 'Dac&#259; vre&#539;i ca serviciile dumneavoastr&#259; s&#259; apar&#259;',
  'e.add': 'Harta e alimentat&#259; de OpenStreetMap. Dac&#259; cantina, ad&#259;postul sau punctul de haine nu apare, ad&#259;uga&#539;i-l acolo &#537;i la urm&#259;toarea actualizare va fi aici &mdash; &#537;i pe toate celelalte site-uri &#537;i aplica&#539;ii care folosesc acea hart&#259;, nu doar aici.',
  'e.bosm': 'Ad&#259;uga&#539;i un loc &icirc;n OpenStreetMap',
@@ -805,7 +814,7 @@ TR['ro'] = {
  'i.w3': 'Zonele parcurse deja cu internet &#537;i cele mai apropiate locuri de fiecare dintre cele {C} ora&#537;e, care c&#259;l&#259;toresc &icirc;n pagina &icirc;ns&#259;&#537;i.',
  'i.n3': 'Actualiz&#259;rile datelor.',
  'i.hwhy': 'De ce e f&#259;cut a&#537;a',
- 'i.why': 'Cine are cea mai mare nevoie de aceast&#259; hart&#259; are de obicei cel mai ieftin telefon, cea mai proast&#259; conexiune &#537;i cel mai pu&#539;in credit. De aceea pagina nu &icirc;ncarc&#259; fonturi externe, biblioteci sau analiz&#259;: totul c&#259;l&#259;tore&#537;te &icirc;n&#259;untru, se deschide &icirc;n mai pu&#539;in de 250 ms, iar datele h&#259;r&#539;ii vin pe buc&#259;&#539;i &mdash; doar p&#259;tratul la care te ui&#539;i.',
+ 'i.why': 'Cine are cea mai mare nevoie de această hartă are de obicei cel mai ieftin telefon, cea mai proastă conexiune și cel mai puțin credit. De aceea pagina nu încarcă fonturi externe sau biblioteci: totul călătorește înăuntru, iar datele hărții vin pe bucăți &mdash; doar pătratul la care te uiți.',
  'i.bopen': 'Deschide harta',
 }
 
@@ -821,11 +830,11 @@ TR['fa'] = {
  'st.places': 'مکان کمک رایگان', 'st.cities': 'شهر', 'st.countries': 'کشور',
  'st.langs': 'زبان', 'st.free': 'و بدون حساب کاربری',
  'p.h50': 'در پنجاه کلمه',
- 'p.t50': '<p>SupportNear نقشه‌ای رایگان است که نشان می‌دهد کجا غذا، تخت خواب، دوش، لباس، کمک اجتماعی، خدمات درمانی و مشاوره حقوقی رایگان هست؛ درست از همان‌جا که ایستاده‌اید. {P} مکان در {C} شهر از {K} کشور، به سیزده زبان. بدون حساب، بدون ردیابی، و بدون آنتن هم کار می‌کند.</p>',
+ 'p.t50': '<p>SupportNear نقشه‌ای رایگان است که نشان می‌دهد کجا غذا، تخت خواب، دوش، لباس، کمک اجتماعی، خدمات درمانی و مشاوره حقوقی رایگان هست؛ درست از همان‌جا که ایستاده‌اید. {P} مکان در {C} شهر از {K} کشور، به بیست زبان. بدون حساب، بدون ردیابی، و بدون آنتن هم کار می‌کند.</p>',
  'p.h200': 'در دویست کلمه',
  'p.t200': '<p>SupportNear نقشه کمک رایگان است برای کسی که همین حالا به آن نیاز دارد. بازش می‌کنید و بدون ثبت‌نام و بدون نصب چیزی، نزدیک‌ترین جاهایی را نشان می‌دهد که غذا می‌دهند، جایی برای خواب دارند، دوش، لباس، پزشک یا کسی که در کارهای اداری کمک کند.</p>'
            '<p><strong>{P} مکان در {C} شهر از {K} کشور</strong> را پوشش می‌دهد. داده‌ها از OpenStreetMap می‌آید، نقشه بازی که داوطلبان، شهرداری‌ها و تیم‌های بشردوستانه نگه می‌دارند، و هر کسی می‌تواند از خود سایت اصلاحش کند: یک دکمه مکان جاافتاده را گزارش می‌کند و دکمه دیگر مکانی را که بسته شده.</p>'
-           '<p>برای ارزان‌ترین گوشی و بدترین اینترنت ساخته شده. صفحه در کمتر از یک‌چهارم ثانیه باز می‌شود، خودش را در گوشی ذخیره می‌کند و بدون اینترنت هم کار می‌کند. می‌شود یک شهر کامل را برای استفاده آفلاین دانلود کرد. بدون حساب، بدون ثبت اینکه چه کسی هستید، بدون تبلیغات و بدون آمارگیری شخص ثالث.</p>'
+           '<p>برای ارزان‌ترین گوشی و بدترین اینترنت ساخته شده. صفحه سبک است، خودش را در گوشی ذخیره می‌کند و بدون اینترنت هم کار می‌کند. می‌شود یک شهر کامل را برای استفاده آفلاین دانلود کرد. بدون حساب، بدون ثبت اینکه چه کسی هستید، بدون تبلیغات و بدون کوکی.</p>'
            '<p>این یک پروژه غیرانتفاعی است.</p>',
  'p.hwho': 'چه کسی پشت آن است',
  'p.who': "<p>این پروژه را با نام‌های دیگر در سال <strong>2007</strong> شروع کردم، همان سالی که هجده ساله شدم. سال‌ها مکان‌ها را یکی‌یکی با دست اضافه کردم.</p><p>با کمک ابزارهای دیگر بالاخره توانستم آن را به همه دنیا گسترش دهم: {P} مکان در {K} کشور. سودی در کار نیست و نخواهد بود.</p><p>اگر رسانه‌ای بخواهد درباره‌اش بنویسد، با خوشحالی کمک می‌کنم. در X برایم بنویسید.</p>"
@@ -849,7 +858,7 @@ TR['fa'] = {
  'v1': 'مکان‌ها از <strong>OpenStreetMap</strong> (پروانه ODbL) می‌آید. هر کارت به نقطه اصلی پیوند دارد.',
  'v2': 'فهرست شهرها از OpenStreetMap و کشور هر کدام از Nominatim می‌آید. هیچ مختصاتی با دست نوشته نشده است.',
  'v3': 'شماره‌های اضطراری ۲۲۷ کشور از <strong>ویکی‌داده</strong> (ویژگی P2852) می‌آید.',
- 'v4': 'سایت در <strong>کمتر از ۲۵۰ میلی‌ثانیه</strong> باز می‌شود و هیچ چیز از شخص ثالث بار نمی‌کند: نه قلم، نه آمارگیری، نه کتابخانه.',
+ 'v4': 'سایت از قلم بیرونی، کتابخانه کد از سایت‌های دیگر، تبلیغات یا کوکی استفاده نمی‌کند. تصاویر نقشه و داده‌های زنده از سرویس‌های عمومی نقشه می‌آیند (Esri، OpenStreetMap، Open-Meteo).',
  'b.csv': 'دانلود جدول کامل (CSV)',
  'p.hnot': 'آنچه ادعا نمی‌کنیم',
  'p.not': '<p>داده‌ها از یک نقشه باز می‌آید و یکی‌یکی راستی‌آزمایی نشده است. ممکن است جایی بسته شده باشد. برای همین سایت همیشه می‌گوید پیش از راه افتادن تماس بگیرید، و برای همین دکمه‌ای هست که بگویید فلان جا دیگر وجود ندارد.</p>'
@@ -863,11 +872,12 @@ TR['fa'] = {
  'e.hopts': 'گزینه‌ها', 'e.thp': 'پارامتر', 'e.thw': 'چه می‌کند',
  'e.o1': 'سربرگ را پنهان می‌کند و فقط نقشه می‌ماند. همین آن را به ابزارک تبدیل می‌کند.',
  'e.o2': 'به جای پرسیدن موقعیت، روی آن شهر باز می‌شود.',
+ 'e.o5': 'کد دوحرفی کشور (GB، CA، ES…). اگر نام شهر در بیش از یک کشور هست، آن را اضافه کنید: London، Valencia، León…',
  'e.hdoes': 'چه می‌کند و چه نمی‌کند',
  'e.d1': 'از بازدیدکنندگان سایت شما موقعیت نمی‌پرسد مگر دکمه مرکز را بزنند.',
- 'e.d2': 'بدون کوکی، بدون پیکسل، بدون هیچ چیز از شخص ثالث. چیزی برای پذیرفتن نیست.',
+ 'e.d2': 'بدون کوکی و بدون پیکسل تبلیغاتی. چیزی برای پذیرفتن نیست.',
  'e.d3': 'پس از اولین بارگذاری بدون اینترنت کار می‌کند.',
- 'e.d4': 'سبک است: صفحه در کمتر از ۲۵۰ میلی‌ثانیه باز می‌شود و فقط همان تکه‌ای از نقشه را که دیده می‌شود دانلود می‌کند.',
+ 'e.d4': 'سبک است: فقط همان تکه‌ای از نقشه را که دیده می‌شود دانلود می‌کند.',
  'e.hadd': 'اگر می‌خواهید خدمات شما در آن باشد',
  'e.add': 'نقشه از OpenStreetMap تغذیه می‌شود. اگر آشپزخانه، سرپناه یا انبار لباس شما در آن نیست، آن را همان‌جا اضافه کنید؛ در به‌روزرسانی بعدی اینجا خواهد بود &mdash; و در همه سایت‌ها و برنامه‌های دیگری که از آن نقشه استفاده می‌کنند، نه فقط اینجا.',
  'e.bosm': 'افزودن مکان در OpenStreetMap',
@@ -891,7 +901,7 @@ TR['fa'] = {
  'i.w3': 'محدوده‌هایی که با اینترنت دیده‌اید، و نزدیک‌ترین مکان‌ها به هر یک از {C} شهر، که داخل خود صفحه همراه می‌آیند.',
  'i.n3': 'به‌روزرسانی داده‌ها.',
  'i.hwhy': 'چرا این‌طور ساخته شده',
- 'i.why': 'کسی که بیش از همه به این نقشه نیاز دارد معمولاً ارزان‌ترین گوشی، بدترین اینترنت و کمترین شارژ را دارد. برای همین صفحه نه قلم بیرونی بار می‌کند، نه کتابخانه و نه آمارگیری: همه چیز داخل خودش است، در کمتر از ۲۵۰ میلی‌ثانیه باز می‌شود، و داده نقشه تکه‌تکه می‌آید &mdash; فقط همان مربعی که نگاه می‌کنید.',
+ 'i.why': 'کسی که بیش از همه به این نقشه نیاز دارد معمولاً ارزان‌ترین گوشی، بدترین اینترنت و کمترین شارژ را دارد. برای همین صفحه نه قلم بیرونی بار می‌کند و نه کتابخانه: همه چیز داخل خودش است، و داده نقشه تکه‌تکه می‌آید &mdash; فقط همان مربعی که نگاه می‌کنید.',
  'i.bopen': 'باز کردن نقشه',
 }
 
@@ -907,11 +917,11 @@ TR['ur'] = {
  'st.places': 'مفت مدد کی جگہیں', 'st.cities': 'شہر', 'st.countries': 'ممالک',
  'st.langs': 'زبانیں', 'st.free': 'اور بغیر اکاؤنٹ',
  'p.h50': 'پچاس الفاظ میں',
- 'p.t50': '<p>SupportNear ایک مفت نقشہ ہے جو بتاتا ہے کہ کھانا، بستر، غسل، کپڑے، سماجی مدد، طبی نگہداشت اور مفت قانونی مشورہ کہاں ملتا ہے &mdash; بالکل وہیں سے جہاں آپ کھڑے ہیں۔ {K} ممالک کے {C} شہروں میں {P} جگہیں، تیرہ زبانوں میں۔ نہ اکاؤنٹ، نہ نگرانی، اور سگنل کے بغیر بھی چلتا ہے۔</p>',
+ 'p.t50': '<p>SupportNear ایک مفت نقشہ ہے جو بتاتا ہے کہ کھانا، بستر، غسل، کپڑے، سماجی مدد، طبی نگہداشت اور مفت قانونی مشورہ کہاں ملتا ہے &mdash; بالکل وہیں سے جہاں آپ کھڑے ہیں۔ {K} ممالک کے {C} شہروں میں {P} جگہیں، بیس زبانوں میں۔ نہ اکاؤنٹ، نہ نگرانی، اور سگنل کے بغیر بھی چلتا ہے۔</p>',
  'p.h200': 'دو سو الفاظ میں',
  'p.t200': '<p>SupportNear اُن لوگوں کے لیے مفت مدد کا نقشہ ہے جنہیں ابھی اس کی ضرورت ہے۔ آپ کھولتے ہیں اور بغیر رجسٹریشن اور بغیر کچھ نصب کیے قریب ترین وہ جگہیں دکھاتا ہے جہاں کھانا ملتا ہے، جہاں سویا جا سکتا ہے، جہاں غسل، کپڑے، ڈاکٹر یا کاغذات میں مدد کرنے والا کوئی ہے۔</p>'
            '<p>یہ <strong>{K} ممالک کے {C} شہروں میں {P} جگہیں</strong> شامل کرتا ہے۔ ڈیٹا OpenStreetMap سے آتا ہے، وہ کھلا نقشہ جسے رضاکار، بلدیات اور امدادی ٹیمیں سنبھالتی ہیں، اور کوئی بھی اسی سائٹ سے اسے درست کر سکتا ہے: ایک بٹن بتاتا ہے کہ کوئی جگہ چھوٹ گئی ہے، دوسرا کہ بند ہو گئی ہے۔</p>'
-           '<p>یہ سب سے سستے فون اور بدترین کنکشن کے لیے بنایا گیا ہے۔ صفحہ ایک سیکنڈ کے چوتھائی سے کم میں کھلتا ہے، خود فون میں محفوظ ہو جاتا ہے اور انٹرنیٹ کے بغیر بھی چلتا رہتا ہے۔ پورا شہر آف لائن استعمال کے لیے ڈاؤن لوڈ کیا جا سکتا ہے۔ نہ اکاؤنٹ، نہ اس کا ریکارڈ کہ آپ کون ہیں، نہ اشتہار اور نہ کسی تیسرے فریق کا تجزیہ۔</p>'
+           '<p>یہ سب سے سستے فون اور بدترین کنکشن کے لیے بنایا گیا ہے۔ صفحہ ہلکا ہے، خود فون میں محفوظ ہو جاتا ہے اور انٹرنیٹ کے بغیر بھی چلتا رہتا ہے۔ پورا شہر آف لائن استعمال کے لیے ڈاؤن لوڈ کیا جا سکتا ہے۔ نہ اکاؤنٹ، نہ اس کا ریکارڈ کہ آپ کون ہیں، نہ اشتہار اور نہ کوکیز۔</p>'
            '<p>یہ ایک غیر منافع بخش منصوبہ ہے۔</p>',
  'p.hwho': 'اس کے پیچھے کون ہے',
  'p.who': "<p>یہ منصوبہ میں نے، دوسرے ناموں سے، <strong>2007</strong> میں شروع کیا، جس سال میں اٹھارہ برس کا ہوا۔ برسوں میں ایک ایک جگہ ہاتھ سے شامل کرتا رہا۔</p><p>دوسرے اوزاروں کی مدد سے میں آخرکار اسے پوری دنیا تک پھیلا سکا: {K} ممالک میں {P} جگہیں۔ اس میں نفع نہیں ہے اور نہ ہوگا۔</p><p>اگر کوئی ادارہ اس پر لکھنا چاہے تو مجھے مدد کرکے خوشی ہوگی۔ مجھے X پر لکھیے۔</p>"
@@ -935,7 +945,7 @@ TR['ur'] = {
  'v1': 'جگہیں <strong>OpenStreetMap</strong> (ODbL) سے آتی ہیں۔ ہر اندراج اصل نقطے سے جڑا ہے۔',
  'v2': 'شہروں کی فہرست OpenStreetMap سے اور ہر ایک کا ملک Nominatim سے آتا ہے۔ کوئی مقام ہاتھ سے نہیں لکھا گیا۔',
  'v3': '۲۲۷ ممالک کے ہنگامی نمبر <strong>ویکی ڈیٹا</strong> (خاصیت P2852) سے آتے ہیں۔',
- 'v4': 'سائٹ <strong>۲۵۰ ملی سیکنڈ سے کم</strong> میں کھلتی ہے اور کسی تیسرے فریق سے کچھ نہیں اٹھاتی: نہ فونٹ، نہ تجزیہ، نہ لائبریری۔',
+ 'v4': 'سائٹ نہ باہر کے فونٹ استعمال کرتی ہے، نہ دوسری سائٹوں کی کوڈ لائبریریاں، نہ اشتہار، نہ کوکیز۔ نقشے کی تصویریں اور تازہ ڈیٹا عوامی نقشہ سروسز (Esri، OpenStreetMap، Open-Meteo) سے آتے ہیں۔',
  'b.csv': 'مکمل جدول ڈاؤن لوڈ کریں (CSV)',
  'p.hnot': 'جو ہم نہیں کہتے',
  'p.not': '<p>ڈیٹا ایک کھلے نقشے سے آتا ہے اور ایک ایک کر کے تصدیق شدہ نہیں ہے۔ ہو سکتا ہے کوئی جگہ بند ہو چکی ہو۔ اسی لیے سائٹ ہمیشہ کہتی ہے کہ پیدل جانے سے پہلے فون کریں، اور اسی لیے ایک بٹن ہے کہ بتائیں فلاں جگہ اب نہیں رہی۔</p>'
@@ -949,11 +959,12 @@ TR['ur'] = {
  'e.hopts': 'اختیارات', 'e.thp': 'پیرامیٹر', 'e.thw': 'کیا کرتا ہے',
  'e.o1': 'اوپر کی پٹی چھپا دیتا ہے اور صرف نقشہ چھوڑتا ہے۔ یہی اسے ویجٹ بناتا ہے۔',
  'e.o2': 'مقام پوچھنے کے بجائے اسی شہر پر کھلتا ہے۔',
+ 'e.o5': 'ملک کا دو حرفی کوڈ (GB، CA، ES…)۔ اگر شہر کا نام ایک سے زیادہ ملکوں میں ہو تو اسے شامل کریں: London، Valencia، León…',
  'e.hdoes': 'کیا کرتا ہے اور کیا نہیں',
  'e.d1': 'آپ کے آنے والوں سے مقام نہیں پوچھتا، جب تک وہ مرکز والا بٹن نہ دبائیں۔',
- 'e.d2': 'نہ کوکیز، نہ پکسل، نہ کسی تیسرے فریق کا کچھ۔ اجازت دینے کو کچھ نہیں۔',
+ 'e.d2': 'نہ کوکیز، نہ اشتہاری پکسل۔ اجازت دینے کو کچھ نہیں۔',
  'e.d3': 'ایک بار لوڈ ہونے کے بعد بغیر انٹرنیٹ چلتا ہے۔',
- 'e.d4': 'ہلکا ہے: صفحہ ۲۵۰ ملی سیکنڈ سے کم میں کھلتا ہے اور صرف نظر آنے والا حصہ اتارتا ہے۔',
+ 'e.d4': 'ہلکا ہے: صرف نظر آنے والا حصہ اتارتا ہے۔',
  'e.hadd': 'اگر آپ چاہتے ہیں کہ آپ کی خدمات اس میں ہوں',
  'e.add': 'نقشہ OpenStreetMap سے چلتا ہے۔ اگر آپ کا لنگر، پناہ گاہ یا کپڑوں کا مرکز اس میں نہیں ہے تو اسے وہاں شامل کریں؛ اگلی تازہ کاری میں یہاں ہوگا &mdash; اور ان تمام دوسری سائٹوں اور ایپس میں بھی جو وہی نقشہ استعمال کرتی ہیں، صرف یہاں نہیں۔',
  'e.bosm': 'OpenStreetMap میں جگہ شامل کریں',
@@ -977,6 +988,6 @@ TR['ur'] = {
  'i.w3': 'وہ علاقے جو آپ انٹرنیٹ کے ساتھ دیکھ چکے ہیں، اور {C} شہروں میں سے ہر ایک کے قریب ترین مقامات، جو خود صفحے کے اندر ساتھ آتے ہیں۔',
  'i.n3': 'ڈیٹا کی تازہ کاری۔',
  'i.hwhy': 'یہ اس طرح کیوں بنا ہے',
- 'i.why': 'جسے اس نقشے کی سب سے زیادہ ضرورت ہے، اس کے پاس عموماً سب سے سستا فون، بدترین کنکشن اور سب سے کم بیلنس ہوتا ہے۔ اسی لیے صفحہ نہ باہر کے فونٹ اٹھاتا ہے، نہ لائبریریاں، نہ تجزیہ: سب کچھ اندر ہی ہے، ۲۵۰ ملی سیکنڈ سے کم میں کھلتا ہے، اور نقشے کا ڈیٹا ٹکڑوں میں آتا ہے &mdash; صرف وہی حصہ جو آپ دیکھ رہے ہیں۔',
+ 'i.why': 'جسے اس نقشے کی سب سے زیادہ ضرورت ہے، اس کے پاس عموماً سب سے سستا فون، بدترین کنکشن اور سب سے کم بیلنس ہوتا ہے۔ اسی لیے صفحہ نہ باہر کے فونٹ اٹھاتا ہے، نہ لائبریریاں: سب کچھ اندر ہی ہے، اور نقشے کا ڈیٹا ٹکڑوں میں آتا ہے &mdash; صرف وہی حصہ جو آپ دیکھ رہے ہیں۔',
  'i.bopen': 'نقشہ کھولیں',
 }

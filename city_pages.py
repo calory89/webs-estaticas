@@ -14,6 +14,7 @@ from datetime import date
 import io, json, os, re, math, html as H
 from urllib.parse import quote as Q
 from collections import Counter
+from seo_common import finalize, display_name, hreflang_links, SITE, LANGS as ALL_LANGS
 
 h = io.open('index.full.html' if __import__('os').path.exists('index.full.html') else 'index.html', encoding='utf-8').read()
 STR = json.loads(re.search(r'const STR = /\*__STR__\*/(\[.*?\]);', h, re.S).group(1))
@@ -34,6 +35,15 @@ def social_img(lang):
         return 'https://supportnear.com/%s?v=%s' % (f, _hl.sha1(open(f, 'rb').read()).hexdigest()[:8])
     return 'https://supportnear.com/social.jpg' + SV
 CATIDS = ['food', 'shelter', 'hygiene', 'clothes', 'social', 'legal', 'health', 'water', 'warm']
+NLANG = len(ALL_LANGS)          # «en 13 idiomas» se quedo viejo: ahora sale de la lista
+# build.py corta la salud, los sitios donde estar y el agua de las ciudades del
+# mundo en 21, 13 y 24 (W_HEALTH, W_WARM, W_WATER). Si la cuenta da justo eso,
+# lo honrado es «21+», no «21» (QA m1).
+CAPS = {'health': 21, 'warm': 13, 'water': 24}
+
+
+def fmt_n(cat, n):
+    return '%d+' % n if CAPS.get(cat) == n else str(n)
 CATNAME = {'food': 'Food', 'shelter': 'Shelter and beds', 'hygiene': 'Showers and toilets',
            'clothes': 'Free clothes', 'social': 'Social help', 'legal': 'Legal aid',
            'health': 'Health care', 'water': 'Drinking water', 'warm': 'A warm place to be'}
@@ -80,11 +90,11 @@ def TT(lang, key, **kw):
 # «1 sitios donde estar»: con un solo sitio la frase va en singular. Los
 # idiomas eslavos ya escriben «{need} ({n})», que no necesita concordar.
 SG = {
-    'en': {'food': 'free food place', 'shelter': 'shelter', 'hygiene': 'free shower', 'clothes': 'free clothes point', 'social': 'social service', 'legal': 'free legal aid point', 'health': 'free clinic', 'water': 'drinking water point', 'warm': 'warm place to sit'},
-    'es': {'food': 'comedor social', 'shelter': 'albergue', 'hygiene': 'ducha pública', 'clothes': 'ropero', 'social': 'servicio social', 'legal': 'punto de asistencia jurídica gratuita', 'health': 'centro de salud gratuito', 'water': 'fuente de agua potable', 'warm': 'sitio donde estar'},
-    'fr': {'food': 'distribution de repas', 'shelter': 'hébergement d’urgence', 'hygiene': 'douche gratuite', 'clothes': 'vestiaire solidaire', 'social': 'service social', 'legal': 'point d’aide juridique gratuite', 'health': 'lieu de soins gratuits', 'water': 'point d’eau potable', 'warm': 'lieu où se poser au chaud'},
-    'pt': {'food': 'refeitório social', 'shelter': 'albergue', 'hygiene': 'ducha pública', 'clothes': 'roupeiro solidário', 'social': 'serviço social', 'legal': 'ponto de apoio jurídico gratuito', 'health': 'centro de saúde gratuito', 'water': 'ponto de água potável', 'warm': 'sítio onde estar'},
-    'ro': {'food': 'cantină socială', 'shelter': 'adăpost', 'hygiene': 'duș gratuit', 'clothes': 'punct de haine gratuite', 'social': 'serviciu social', 'legal': 'punct de asistență juridică gratuită', 'health': 'punct de îngrijiri medicale gratuite', 'water': 'punct de apă potabilă', 'warm': 'loc cald unde să stai'},
+    'en': {'food': 'free food place', 'shelter': 'shelter', 'hygiene': 'free shower', 'clothes': 'free clothes point', 'social': 'social service', 'legal': 'free legal aid point', 'health': 'clinic or hospital', 'water': 'drinking water point', 'warm': 'warm place to sit'},
+    'es': {'food': 'comedor social', 'shelter': 'albergue', 'hygiene': 'ducha pública', 'clothes': 'ropero', 'social': 'servicio social', 'legal': 'punto de asistencia jurídica gratuita', 'health': 'centro de salud u hospital', 'water': 'fuente de agua potable', 'warm': 'sitio donde estar'},
+    'fr': {'food': 'distribution de repas', 'shelter': 'hébergement d’urgence', 'hygiene': 'douche gratuite', 'clothes': 'vestiaire solidaire', 'social': 'service social', 'legal': 'point d’aide juridique gratuite', 'health': 'lieu de soins', 'water': 'point d’eau potable', 'warm': 'lieu où se poser au chaud'},
+    'pt': {'food': 'refeitório social', 'shelter': 'albergue', 'hygiene': 'ducha pública', 'clothes': 'roupeiro solidário', 'social': 'serviço social', 'legal': 'ponto de apoio jurídico gratuito', 'health': 'centro de saúde ou hospital', 'water': 'ponto de água potável', 'warm': 'sítio onde estar'},
+    'ro': {'food': 'cantină socială', 'shelter': 'adăpost', 'hygiene': 'duș gratuit', 'clothes': 'punct de haine gratuite', 'social': 'serviciu social', 'legal': 'punct de asistență juridică gratuită', 'health': 'punct de îngrijiri medicale', 'water': 'punct de apă potabilă', 'warm': 'loc cald unde să stai'},
 }
 def need_word(lang, c, n):
     if n == 1 and c in SG.get(lang, {}):
@@ -127,10 +137,13 @@ def qr_svg(url):
     return raw[raw.index('<svg'):]
 
 # pais (ISO) de cada ciudad, para el numero de emergencias
+# Desde octubre CITIES ya trae el pais (c[4]); los ficheros viejos solo si estan.
 CC = {}
-for k, v in json.load(open('legacy_cc.json')).items():
-    la, lo = k.split(','); CC[(round(float(la), 3), round(float(lo), 3))] = v['cc']
+if os.path.exists('legacy_cc.json'):
+    for k, v in json.load(open('legacy_cc.json')).items():
+        la, lo = k.split(','); CC[(round(float(la), 3), round(float(lo), 3))] = v['cc']
 for f in ('cities_new300.json', 'cities_new200.json', 'cities_new500.json'):
+    if not os.path.exists(f): continue
     for c in json.load(io.open(f, encoding='utf-8')):
         CC[(round(c['lat'], 3), round(c['lon'], 3))] = c.get('cc', '')
 
@@ -210,6 +223,25 @@ def split_name(raw):
 
 LDESC = '<' + chr(92) + '/'
 
+# Fecha de cada pagina: solo cambia si cambia lo que dice (no cada vez que se
+# genera). La usan el JSON-LD (dateModified) y el sitemap (lastmod).
+DATEMARK = '1970-01-01'
+_LM_FILE = 'pages_lastmod.json'
+_LM_OLD = json.load(io.open(_LM_FILE, encoding='utf-8')) if os.path.exists(_LM_FILE) else {}
+LASTMOD = {}
+
+
+def stamp(url, body):
+    h = _hl.sha1(body.encode('utf-8')).hexdigest()[:16]
+    old = _LM_OLD.get(url)
+    d = old[1] if (old and old[0] == h) else date.today().isoformat()
+    LASTMOD[url] = [h, d]
+    return finalize(body.replace(DATEMARK, d))
+
+
+def save(path, url, body):
+    io.open(path, 'w', encoding='utf-8').write(stamp(url, body) if url else finalize(body))
+
 # Orden en el que se nombran las necesidades: primero lo que aprieta esta noche.
 # No por cantidad: en casi toda ciudad hay mas fuentes que comedores, y una
 # lista encabezada por «412 fuentes de agua potable» es verdad y no sirve.
@@ -222,7 +254,7 @@ def need_list(cnt, lang, maxn=3):
     tops = [c for c in NEED_ORDER if cnt.get(c)][:maxn]
     if not tops:
         return ''
-    frags = [TT(lang, 'cp.frag', n=cnt[c], need=need_word(lang, c, cnt[c])) for c in tops]
+    frags = [TT(lang, 'cp.frag', n=fmt_n(c, cnt[c]), need=need_word(lang, c, cnt[c])) for c in tops]
     if len(frags) == 1:
         return frags[0]
     # en polaco, ucraniano y ruso los fragmentos van «sustantivo (n)» y no
@@ -315,11 +347,13 @@ ul.cnt li{background:var(--paper-2);border:1px solid var(--line);border-radius:1
 ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 """
 
-def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, sl=None, needs=(), main_lang=None):
+def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, sl=None, needs=(), main_lang=None, amb=False):
     # En la pagina en arabe, ucraniano, ruso, farsi o urdu, la ciudad se llama
     # por su nombre local («الدار البيضاء», no «Casablanca») y el latino va al lado.
-    if lang != 'en' and local:
-        city, local = local, city
+    # En ingles, «Vienna (Wien)» y no «Wien» (p5). El parametro ?city= sigue
+    # llevando el nombre latino de la lista, que es el que entiende la app.
+    latin = city
+    city, local = display_name(latin, local, lang)
     if near is None:
         near = around(lat, lon, 10)
     cnt = Counter(p['cat'] for _, p in near)
@@ -331,15 +365,19 @@ def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, 
     # sociales y 16 albergues» es la misma verdad, util, y ademas es lo que la
     # gente escribe en Google.
     lst2, lst3 = need_list(cnt, lang, 2), need_list(cnt, lang, 3)
-    title = TT(lang, 'cp.titleN', city=city, list=lst2) if lst2 else TT(lang, 'cp.title', city=city)
+    # Una ciudad que se llama igual que otra (London, Valencia, Leon...) lleva
+    # el pais en el titulo: si no, Google ve dos titulos identicos (QA m2).
+    tcity = '%s (%s)' % (city, country) if amb else city
+    title = TT(lang, 'cp.titleN', city=tcity, list=lst2) if lst2 else TT(lang, 'cp.title', city=tcity)
     desc = TT(lang, 'cp.descN', list=cap(lst3), city=city, country=country) if lst3 else TT(lang, 'cp.desc', n=total, city=city, country=country)
     emg = EMG_N.get(cc)
     emgnum = emg[0] if emg else ''
     if sl is None:
-        sl = slug(local if (lang != 'en' and local) else city)
+        sl = slug(latin)
     # el enlace al mapa lleva el nombre latino aunque el titulo vaya en el local:
-    # es un parametro de URL, no texto, y el latino lo resuelve cualquier teclado
-    qcity = local if (lang != 'en' and local) else city
+    # es un parametro de URL, no texto, y el latino lo resuelve cualquier teclado.
+    # Y el pais: «London» a secas abria London (Canada) desde EE. UU. (QA C1).
+    qcity = Q(latin) + ('&amp;cc=' + cc if cc else '')
     subs = SUB_EN
     try:
         if lang != 'en':
@@ -353,22 +391,22 @@ def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, 
            H.escape(subs.get(p['sub'], '') or cn[p['cat']]), H.escape(TT(lang, 'cp.from', d=km(d))),
            ('<span class="ad">%s</span>' % H.escape(p['addr'])) if p['addr'] else '')
         for d, p in named)
-    counts = ''.join('<li><b>%d</b> %s</li>' % (cnt[c], H.escape(cn[c].lower() if lang not in RTL else cn[c])) for c in CATIDS if cnt[c])
+    counts = ''.join('<li><b>%s</b> %s</li>' % (fmt_n(c, cnt[c]), H.escape(cn[c].lower() if lang not in RTL else cn[c])) for c in CATIDS if cnt[c])
     # Quien busca «comedor social Madrid» no busca «ayuda en Madrid». Cada
     # necesidad con sitios de sobra tiene su propia pagina, y desde aqui se
     # llega a ella: es lo unico que hace que Google la encuentre.
-    needlinks = ''.join('<a href="%s-%s.html">%s</a>' % (sl, c, H.escape(TT(lang, 'cp.frag', n=k, need=need_word(lang, c, k)))) for c, k in needs)
+    needlinks = ''.join('<a href="%s-%s.html">%s</a>' % (sl, c, H.escape(TT(lang, 'cp.frag', n=fmt_n(c, k), need=need_word(lang, c, k)))) for c, k in needs)
     few = total < 15
     dir_attr = ' dir="rtl"' if lang in RTL else ''
     # La version inglesa de una ciudad no inglesa (sl.en.html) es una pagina
     # propia: canonical a si misma y hreflang reciproco. Antes apuntaba a la
     # local y Google la descartaba (675 paginas).
     home = main_lang or lang
-    self_url = 'https://supportnear.com/c/%s%s.html' % (sl, '.en' if (main_lang and main_lang != 'en') else '')
-    alts = '<link rel="alternate" hreflang="%s" href="https://supportnear.com/c/%s.html">' % (home, sl)
+    self_url = 'https://supportnear.com/c/%s%s' % (sl, '.en' if (main_lang and main_lang != 'en') else '')
+    alts = '<link rel="alternate" hreflang="%s" href="https://supportnear.com/c/%s">' % (home, sl)
     if home != 'en':
-        alts += '<link rel="alternate" hreflang="en" href="https://supportnear.com/c/%s.en.html">' % sl
-    alts += '<link rel="alternate" hreflang="x-default" href="https://supportnear.com/c/%s.html">' % sl
+        alts += '<link rel="alternate" hreflang="en" href="https://supportnear.com/c/%s.en">' % sl
+    alts += '<link rel="alternate" hreflang="x-default" href="https://supportnear.com/c/%s">' % sl
     body = f'''<!DOCTYPE html>
 <html lang="{lang}"{dir_attr}>
 <head>
@@ -397,12 +435,12 @@ def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, 
     "url": self_url,
     "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"},
     "about": {"@type": "City", "name": city, "containedInPlace": {"@type": "Country", "name": country}},
-    "dateModified": date.today().isoformat()
+    "dateModified": DATEMARK
   }, {
     "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"},
       {"@type": "ListItem", "position": 2, "name": TT(lang, 'cp.cities'), "item": "https://supportnear.com/c/"},
-      {"@type": "ListItem", "position": 3, "name": city, "item": "https://supportnear.com/c/%s.html" % sl}]
+      {"@type": "ListItem", "position": 3, "name": city, "item": "https://supportnear.com/c/%s" % sl}]
   }, {
     "@context": "https://schema.org", "@type": "ItemList", "name": TT(lang, 'cp.closest'),
     "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "Place", "name": p['name'],
@@ -413,11 +451,11 @@ def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, 
 </head>
 <body>
 <div class="wrap">
-{header('../?city=' + Q(qcity), TT(lang, 'cp.open', city=city))}
+{header('../?city=' + qcity, TT(lang, 'cp.open', city=city))}
 <h1>{H.escape(TT(lang, 'cp.h1', city=city))}{(' <small style="font-weight:400;color:var(--ink-3)">· ' + H.escape(local) + '</small>') if local else ''}</h1>
 <p class="lede">{H.escape(TT(lang, 'cp.ledeN', list=cap(lst3), city=city, country=country) if lst3 else TT(lang, 'cp.lede', n=total, city=city, country=country))}{(' ' + H.escape(TT(lang, 'cp.few'))) if few else ''}</p>
-<div class="btns"><a class="btn btn--p" href="../?city={Q(qcity)}">{H.escape(TT(lang, 'cp.btn', city=city))}</a>
-<a class="btn" href="../instalar.html?v={PAGES_V}">{H.escape(TT(lang, 'cp.offline'))}</a></div>
+<div class="btns"><a class="btn btn--p" href="../?city={qcity}">{H.escape(TT(lang, 'cp.btn', city=city))}</a>
+<a class="btn" href="../instalar">{H.escape(TT(lang, 'cp.offline'))}</a></div>
 {('<div class="emg"><strong>%s</strong> %s</div>' % (H.escape(TT(lang, 'cp.emg', country=country, n=emgnum)), H.escape(TT(lang, 'cp.emg2')))) if emgnum else ''}
 <h2>{H.escape(TT(lang, 'cp.what'))}</h2>
 <ul class="cnt">{counts}</ul>
@@ -426,11 +464,11 @@ def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, 
 <p>{H.escape(TT(lang, 'cp.closest2'))}</p>
 <ul class="pl">{rows}</ul>
 <h2>{H.escape(TT(lang, 'cp.how'))}</h2>
-<p>{H.escape(TT(lang, 'cp.how2', C=STATS["cities"], K=STATS["countries"]))}</p>
-<div class="btns"><a class="btn btn--p" href="../?city={Q(qcity)}">{H.escape(TT(lang, 'cp.btn', city=city))}</a>
+<p>{H.escape(TT(lang, 'cp.how2', C=STATS["cities"], K=STATS["countries"], L=NLANG))}</p>
+<div class="btns"><a class="btn btn--p" href="../?city={qcity}">{H.escape(TT(lang, 'cp.btn', city=city))}</a>
 <a class="btn" href="{sl}.cartel.html">{H.escape(TT(lang, 'cp.poster'))}</a>
-<a class="btn" href="../incrustar.html?v={PAGES_V}&amp;city={Q(qcity)}">&lt;/&gt; {H.escape(TT(lang, 'cp.embed'))}</a>
-<a class="btn" href="../prensa.html?v={PAGES_V}">{H.escape(TT(lang, 'cp.press'))}</a>
+<a class="btn" href="../incrustar?city={qcity}">&lt;/&gt; {H.escape(TT(lang, 'cp.embed'))}</a>
+<a class="btn" href="../prensa">{H.escape(TT(lang, 'cp.press'))}</a>
 <a class="btn" href="./">{H.escape(TT(lang, 'cp.cities'))}</a>
 <a class="btn" href="../t/{sl}.html">{H.escape(TT(lang, 'cp.lite'))}</a></div>
 <footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
@@ -440,11 +478,14 @@ def page(city, country, lat, lon, cc, local='', raw_q='', lang='en', near=None, 
     return body, total
 
 
-def poster(city, country, cc, lang, sl, lat=None, lon=None):
+def poster(city, country, cc, lang, sl, lat=None, lon=None, local=''):
     """Cartel A4 para imprimir y pegar en una pared: donde no llega una app, llega
     un papel. QR grande, cuatro palabras, el numero de emergencias del pais."""
     cn = CATN.get(lang, CATNAME)
-    url = 'https://supportnear.com/?city=' + Q(city)
+    # el QR lleva el pais: un cartel de London (Canada) leido con un movil con
+    # SIM britanica abria Londres (QA C1)
+    url = 'https://supportnear.com/?city=' + Q(city) + ('&cc=' + cc if cc else '')
+    city = display_name(city, local, lang)[0]
     emg = EMG_N.get(cc); emgnum = emg[0] if emg else ''
     dir_attr = ' dir="rtl"' if lang in RTL else ''
     icons = {'food': '<path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M17 3c-2 0-3 3-3 6v3h3v9"/>',
@@ -518,7 +559,7 @@ h1{{font-size:58px;line-height:1.02;letter-spacing:-.03em;margin:14mm 0 6mm;font
 <div><div class="scan">{H.escape(TT(lang, 'po.scan'))}<small>{H.escape(TT(lang, 'po.or'))}</small></div>
 <div class="url">supportnear.com</div></div></div>
 {five_html}
-<div class="free">{H.escape(TT(lang, 'po.free'))} · {H.escape(TT(lang, 'po.lang'))}</div>
+<div class="free">{H.escape(TT(lang, 'po.free'))} · {H.escape(TT(lang, 'po.lang', L=NLANG))}</div>
 {('<div class="emg">%s</div>' % H.escape(TT(lang, 'po.emg', n=emgnum))) if emgnum else ''}
 <p class="foot">{H.escape(TT(lang, 'po.foot', C=STATS['cities'], K=STATS['countries']))}</p>
 </div>
@@ -535,19 +576,22 @@ h1{{font-size:58px;line-height:1.02;letter-spacing:-.03em;margin:14mm 0 6mm;font
 NEED_MIN = 3
 
 
-def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_lang=None):
+def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_lang=None, amb=False):
     cn = CATN.get(lang, CATNAME)
+    latin = local or city
+    city = display_name(latin, city if city != latin else '', lang)[0]
     word = TT(lang, 'pl.' + cat)
     all_c = [(d, q) for d, q in near if q['cat'] == cat]
     items = [(d, q) for d, q in all_c if q['name']][:40]
     ncat = len(all_c)
     h1 = TT(lang, 'cn.h1', need=cap(word), city=city)
-    desc = TT(lang, 'cn.desc', n=ncat, city=city, country=country)
-    url = 'https://supportnear.com/c/%s-%s%s.html' % (sl, cat, '.en' if main_lang else '')
+    th1 = TT(lang, 'cn.h1', need=cap(word), city='%s (%s)' % (city, country)) if amb else h1
+    desc = TT(lang, 'cn.desc', n=fmt_n(cat, ncat), city=city, country=country)
+    url = 'https://supportnear.com/c/%s-%s%s' % (sl, cat, '.en' if main_lang else '')
     home = main_lang or lang
-    alts_n = ('<link rel="alternate" hreflang="%s" href="https://supportnear.com/c/%s-%s.html">' % (home, sl, cat)
-              + (('<link rel="alternate" hreflang="en" href="https://supportnear.com/c/%s-%s.en.html">' % (sl, cat)) if (main_lang or NEED_EN.get((sl, cat))) and home != 'en' else '')
-              + '<link rel="alternate" hreflang="x-default" href="https://supportnear.com/c/%s-%s.html">' % (sl, cat))
+    alts_n = ('<link rel="alternate" hreflang="%s" href="https://supportnear.com/c/%s-%s">' % (home, sl, cat)
+              + (('<link rel="alternate" hreflang="en" href="https://supportnear.com/c/%s-%s.en">' % (sl, cat)) if (main_lang or NEED_EN.get((sl, cat))) and home != 'en' else '')
+              + '<link rel="alternate" hreflang="x-default" href="https://supportnear.com/c/%s-%s">' % (sl, cat))
     emg = EMG_N.get(cc); emgnum = emg[0] if emg else ''
     dir_attr = ' dir="rtl"' if lang in RTL else ''
     subs = SUB_EN
@@ -569,15 +613,15 @@ def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_la
                      for c in NEED_ORDER if c != cat and sum(1 for _, q in near if q['cat'] == c and q['name']) >= NEED_MIN)
     named_n = sum(1 for _, q in all_c if q['name'])
     ld = json.dumps(ld_clean([{
-        "@context": "https://schema.org", "@type": "WebPage", "name": h1, "description": desc,
+        "@context": "https://schema.org", "@type": "WebPage", "name": th1, "description": desc,
         "inLanguage": lang, "url": url,
         "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"},
         "about": {"@type": "City", "name": city, "containedInPlace": {"@type": "Country", "name": country}},
-        "dateModified": date.today().isoformat()
+        "dateModified": DATEMARK
     }, {
         "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"},
-            {"@type": "ListItem", "position": 2, "name": city, "item": "https://supportnear.com/c/%s.html" % sl},
+            {"@type": "ListItem", "position": 2, "name": city, "item": "https://supportnear.com/c/%s" % sl},
             {"@type": "ListItem", "position": 3, "name": h1, "item": url}]
     }, {
         "@context": "https://schema.org", "@type": "ItemList", "name": h1,
@@ -588,17 +632,17 @@ def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_la
             "url": "https://supportnear.com/#p=%s@%.5f,%.5f" % (q['id'], q['lat'], q['lon'])}}
             for i, (_, q) in enumerate(items[:10])]
     }]), ensure_ascii=False).replace('</', LDESC)
-    qcity = Q(local if (lang != 'en' and local) else city)
+    qcity = Q(latin) + ('&amp;cc=' + cc if cc else '')
     return f"""<!DOCTYPE html>
 <html lang="{lang}"{dir_attr}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{H.escape(h1)} · SupportNear</title>
+<title>{H.escape(th1)} · SupportNear</title>
 <meta name="description" content="{H.escape(desc)}">
 <link rel="canonical" href="{url}">
 {alts_n}
-<meta property="og:title" content="{H.escape(h1)}">
+<meta property="og:title" content="{H.escape(th1)}">
 <meta property="og:description" content="{H.escape(desc)}">
 <meta property="og:image" content="{social_img(lang)}"><meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -606,7 +650,7 @@ def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_la
 <meta property="og:type" content="website"><meta property="og:site_name" content="SupportNear">
 <meta property="og:url" content="{url}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups">
-<meta name="twitter:title" content="{H.escape(h1)}"><meta name="twitter:description" content="{H.escape(desc)}">
+<meta name="twitter:title" content="{H.escape(th1)}"><meta name="twitter:description" content="{H.escape(desc)}">
 <meta name="twitter:image" content="{social_img(lang)}">
 <meta name="theme-color" content="#0B7A63">
 <link rel="icon" href="../favicon.ico" sizes="32x32"><link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -618,9 +662,9 @@ def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_la
 <div class="wrap">
 {header(sl + ('.en' if main_lang else '') + '.html', TT(lang, 'cn.all', city=city))}
 <h1>{H.escape(h1)}</h1>
-<p class="lede">{H.escape(TT(lang, 'cn.lede', n=ncat, city=city))}</p>
+<p class="lede">{H.escape(TT(lang, 'cn.lede', n=fmt_n(cat, ncat), city=city))}</p>
 <div class="btns"><a class="btn btn--p" href="../?city={qcity}&amp;need={cat}">{H.escape(TT(lang, 'cn.btn', city=city))}</a>
-<a class="btn" href="../instalar.html?v={PAGES_V}">{H.escape(TT(lang, 'cp.offline'))}</a></div>
+<a class="btn" href="../instalar">{H.escape(TT(lang, 'cp.offline'))}</a></div>
 {('<div class="emg"><strong>%s</strong> %s</div>' % (H.escape(TT(lang, 'cp.emg', country=country, n=emgnum)), H.escape(TT(lang, 'cp.emg2')))) if emgnum else ''}
 <h2>{H.escape(TT(lang, 'cn.list'))}</h2>
 <p class="note">{H.escape(TT(lang, 'cn.check'))}</p>
@@ -628,7 +672,7 @@ def need_page(city, country, cc, lang, sl, cat, near, local='', total=0, main_la
 {('<p class="note">' + H.escape(TT(lang, 'cn.unnamed', k=ncat - named_n)) + '</p>') if ncat - named_n >= 3 else ''}
 {('<h2>' + H.escape(TT(lang, 'cn.other', city=city)) + '</h2><p class="needs">' + others + '</p>') if others else ''}
 <h2>{H.escape(TT(lang, 'cp.how'))}</h2>
-<p>{H.escape(TT(lang, 'cp.how2', C=STATS["cities"], K=STATS["countries"]))}</p>
+<p>{H.escape(TT(lang, 'cp.how2', C=STATS["cities"], K=STATS["countries"], L=NLANG))}</p>
 <div class="btns"><a class="btn btn--p" href="../?city={qcity}&amp;need={cat}">{H.escape(TT(lang, 'cn.btn', city=city))}</a>
 <a class="btn" href="{sl}.cartel.html">{H.escape(TT(lang, 'cp.poster'))}</a>
 <a class="btn" href="./">{H.escape(TT(lang, 'cp.cities'))}</a></div>
@@ -645,7 +689,7 @@ for f in os.listdir('t'):
 lite_idx = []
 
 
-def lite(city, country, lat, lon, cc, lang, sl, near=None, index=True):
+def lite(city, country, lat, lon, cc, lang, sl, near=None, index=True, local='', amb=False):
     """Version de texto: menos de 5 KB, sin CSS que importe, sin script. Para un
     Nokia con Opera Mini, un movil de 2012 o una conexion que se cae. Diez
     sitios con calle, telefono y horario, y el numero de emergencias.
@@ -658,6 +702,19 @@ def lite(city, country, lat, lon, cc, lang, sl, near=None, index=True):
         near = around(lat, lon, 10)
     near = [(d, q) for d, q in near if q['name']][:10]
     cn = CATN.get(lang, CATNAME)
+    # el nombre como en la pagina de la ciudad: «Миколаїв», no «Mykolaiv», en la
+    # version ucraniana (QA m10); y el pais si el nombre se repite (m2)
+    city = display_name(city, local, lang)[0]
+    tcity = '%s (%s)' % (city, country) if amb else city
+    url = 'https://supportnear.com/t/%s' % sl
+    ld = json.dumps([{"@context": "https://schema.org", "@type": "WebPage", "name": TT(lang, 'cp.h1', city=tcity),
+                      "description": TT(lang, 'cn.desc', n=len(near), city=city, country=country), "inLanguage": lang, "url": url,
+                      "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"},
+                      "about": {"@type": "City", "name": city}, "dateModified": DATEMARK},
+                     {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                         {"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"},
+                         {"@type": "ListItem", "position": 2, "name": TT(lang, 'cp.lite'), "item": "https://supportnear.com/t/"},
+                         {"@type": "ListItem", "position": 3, "name": city, "item": url}]}], ensure_ascii=False).replace('</', LDESC)
     subs = SUB_EN
     try:
         if lang != 'en': subs = json.load(io.open('l/%s.json' % lang, encoding='utf-8')).get('sub', SUB_EN)
@@ -670,14 +727,16 @@ def lite(city, country, lat, lon, cc, lang, sl, near=None, index=True):
         (' - <a href="tel:%s">%s</a>' % (H.escape(re.sub(r'[^+\d]', '', q['phone'])), H.escape(q['phone']))) if q.get('phone') else '',
         (' - ' + H.escape(oh_human(q['oh'], lang))) if q.get('oh') else '', H.escape(km(d))) for d, q in near)
     return ('<!DOCTYPE html><html lang="%s"%s><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            '<title>%s - SupportNear</title><meta name="robots" content="%s"><link rel="canonical" href="https://supportnear.com/t/%s.html">'
+            '<title>%s · SupportNear</title><meta name="robots" content="%s"><link rel="canonical" href="https://supportnear.com/t/%s">'
+            '<link rel="alternate" hreflang="' + lang + '" href="' + url + '"><link rel="alternate" hreflang="x-default" href="' + url + '">'
+            '<script type="application/ld+json">' + ld + '</script>'
             '<meta name="description" content="%s">'
-            '<meta property="og:title" content="%s"><meta property="og:image" content="%s"><meta property="og:url" content="https://supportnear.com/t/%s.html"><meta name="twitter:card" content="summary_large_image">'
+            '<meta property="og:title" content="%s"><meta property="og:image" content="%s"><meta property="og:url" content="https://supportnear.com/t/%s"><meta name="twitter:card" content="summary_large_image">'
             '<style>body{font:16px/1.5 sans-serif;margin:12px;max-width:40em}li{margin:0 0 10px}small{color:#555}</style></head><body>'
             '<p><b>SupportNear</b> - %s</p><h1>%s</h1>%s<ol>%s</ol>'
             '<p><a href="../c/%s.html">%s</a> - <a href="../">supportnear.com</a> - <a href="./">%s</a></p>'
             '<p><small>OpenStreetMap (ODbL)</small></p></body></html>') % (
-        lang, dir_attr, H.escape(TT(lang, 'cp.h1', city=city)),
+        lang, dir_attr, H.escape(TT(lang, 'cp.h1', city=tcity)),
         'index,follow' if index else 'noindex,follow', sl,
         H.escape(TT(lang, 'cn.desc', n=len(near), city=city, country=country)),
         H.escape(TT(lang, 'cp.h1', city=city)), social_img(lang), sl, H.escape(TT(lang, 'po.free')),
@@ -701,9 +760,9 @@ CINFO = []
 for c in CITIES:
     raw, lat, lon, country = c[0], c[1], c[2], c[3] or ''
     name, local = split_name(raw)
-    cc = CC.get((round(lat, 3), round(lon, 3)), '')
-    if not cc and ((35.0 <= lat <= 44.0 and -9.5 <= lon <= 4.5) or (27.5 <= lat <= 29.5 and -18.5 <= lon <= -13.3)):
-        cc = 'ES'          # las 48 ciudades espanolas vienen sin pais: llevan la comunidad
+    cc = (c[4] if len(c) > 4 and c[4] else '') or CC.get((round(lat, 3), round(lon, 3)), '')
+    if cc == 'ES' or (not cc and ((35.0 <= lat <= 44.0 and -9.5 <= lon <= 4.5) or (27.5 <= lat <= 29.5 and -18.5 <= lon <= -13.3))):
+        cc = 'ES'          # las 48 ciudades espanolas vienen con la comunidad en vez del pais
         country = 'España'
     CINFO.append({'raw': raw, 'name': name, 'local': local, 'lat': lat, 'lon': lon,
                   'country': country, 'cc': cc, 'near': around(lat, lon, 10)})
@@ -711,12 +770,29 @@ for c in CITIES:
 _by = {}
 for i, ci in enumerate(CINFO):
     _by.setdefault(slug(ci['name']), []).append(i)
+# Las URL ya publicadas de los nombres repetidos no se mueven aunque cambien los
+# datos (antes la limpia se la quedaba la que mas sitios tuviera ese dia).
+PINNED = {('london', 'GB'): 'london', ('london', 'CA'): 'london-canada', ('hyderabad', 'IN'): 'hyderabad',
+          ('hyderabad', 'PK'): 'hyderabad-pakistan', ('guadalajara', 'MX'): 'guadalajara', ('guadalajara', 'ES'): 'guadalajara-espana',
+          ('valencia', 'ES'): 'valencia', ('valencia', 'VE'): 'valencia-venezuela', ('tripoli', 'LY'): 'tripoli',
+          ('tripoli', 'LB'): 'tripoli-lebanon', ('cordoba', 'AR'): 'cordoba', ('cordoba', 'ES'): 'cordoba-espana',
+          ('leon', 'MX'): 'leon', ('leon', 'NI'): 'leon-nicaragua', ('leon', 'ES'): 'leon-espana',
+          ('cartagena', 'ES'): 'cartagena', ('cartagena', 'CO'): 'cartagena-colombia', ('san-jose', 'US'): 'san-jose',
+          ('san-jose', 'CR'): 'san-jose-costa-rica', ('merida', 'VE'): 'merida', ('merida', 'MX'): 'merida-mexico',
+          ('barcelona', 'ES'): 'barcelona', ('barcelona', 'VE'): 'barcelona-venezuela'}
+AMB = set()
 _dups = 0
 for base, idxs in _by.items():
     if len(idxs) == 1:
         CINFO[idxs[0]]['sl'] = base
         continue
     _dups += 1
+    for i in idxs:
+        AMB.add(i)
+    if all((base, CINFO[i]['cc']) in PINNED for i in idxs) and len({CINFO[i]['cc'] for i in idxs}) == len(idxs):
+        for i in idxs:
+            CINFO[i]['sl'] = PINNED[(base, CINFO[i]['cc'])]
+        continue
     idxs.sort(key=lambda i: (-len(CINFO[i]['near']), CINFO[i]['country']))
     CINFO[idxs[0]]['sl'] = base
     taken = set(_by)
@@ -739,44 +815,45 @@ for _ci in CINFO:
     for _c in NEED_ORDER:
         if _nc[_c] >= 8: NEED_EN[(_ci['sl'], _c)] = 1
 needs_en = 0
-for ci in CINFO:
+for _i, ci in enumerate(CINFO):
     name, local, lat, lon = ci['name'], ci['local'], ci['lat'], ci['lon']
     country, cc, sl, near = ci['country'], ci['cc'], ci['sl'], ci['near']
+    amb = _i in AMB
     lang = LANG_BY_CC.get(cc, 'en')
     country_en = country
     country = country_in(cc, lang, country)
     ncnt = Counter(q['cat'] for _, q in near if q['name'])
     acnt = Counter(q['cat'] for _, q in near)
     needs = [(c, acnt[c]) for c in NEED_ORDER if ncnt[c] >= NEED_MIN]
-    body, total = page(name, country, lat, lon, cc, local, ci['raw'], lang, near, sl, needs)
+    body, total = page(name, country, lat, lon, cc, local, ci['raw'], lang, near, sl, needs, amb=amb)
     if total == 0:
         empty += 1
-    io.open(os.path.join('c', sl + '.html'), 'w', encoding='utf-8').write(body)
-    urls.append(('https://supportnear.com/c/%s.html' % sl, 0.6 if total >= 15 else 0.4))
+    save(os.path.join('c', sl + '.html'), 'https://supportnear.com/c/%s' % sl, body)
+    urls.append(('https://supportnear.com/c/%s' % sl, 0.6 if total >= 15 else 0.4))
     if lang != 'en':
         # la version inglesa tambien, para quien llega de fuera
-        body_en, _ = page(name, country_en, lat, lon, cc, local, ci['raw'], 'en', near, sl, needs, main_lang=lang)
-        io.open(os.path.join('c', sl + '.en.html'), 'w', encoding='utf-8').write(body_en)
-        urls.append(('https://supportnear.com/c/%s.en.html' % sl, 0.3))
+        body_en, _ = page(name, country_en if cc != 'ES' else 'Spain', lat, lon, cc, local, ci['raw'], 'en', near, sl, needs, main_lang=lang, amb=amb)
+        save(os.path.join('c', sl + '.en.html'), 'https://supportnear.com/c/%s.en' % sl, body_en)
+        urls.append(('https://supportnear.com/c/%s.en' % sl, 0.3))
     # una pagina por necesidad: «comedores sociales en Madrid», «albergues en
     # Barcelona». Es la busqueda que existe de verdad.
     cname = local if (lang != 'en' and local) else name
     for cat, k in needs:
-        io.open(os.path.join('c', '%s-%s.html' % (sl, cat)), 'w', encoding='utf-8').write(
-            need_page(cname, country, cc, lang, sl, cat, near, name, total))
-        urls.append(('https://supportnear.com/c/%s-%s.html' % (sl, cat), 0.7 if k >= 8 else 0.5))
+        save(os.path.join('c', '%s-%s.html' % (sl, cat)), 'https://supportnear.com/c/%s-%s' % (sl, cat),
+             need_page(cname, country, cc, lang, sl, cat, near, name, total, amb=amb))
+        urls.append(('https://supportnear.com/c/%s-%s' % (sl, cat), 0.7 if k >= 8 else 0.5))
         needs_made += 1
         if NEED_EN.get((sl, cat)):
-            io.open(os.path.join('c', '%s-%s.en.html' % (sl, cat)), 'w', encoding='utf-8').write(
-                need_page(name, country_en, cc, 'en', sl, cat, near, name, total, main_lang=lang))
-            urls.append(('https://supportnear.com/c/%s-%s.en.html' % (sl, cat), 0.4))
+            save(os.path.join('c', '%s-%s.en.html' % (sl, cat)), 'https://supportnear.com/c/%s-%s.en' % (sl, cat),
+                 need_page(name, country_en if cc != 'ES' else 'Spain', cc, 'en', sl, cat, near, name, total, main_lang=lang, amb=amb))
+            urls.append(('https://supportnear.com/c/%s-%s.en' % (sl, cat), 0.4))
             needs_en += 1
-    io.open(os.path.join('c', sl + '.cartel.html'), 'w', encoding='utf-8').write(poster(name, country, cc, lang, sl, lat, lon))
+    save(os.path.join('c', sl + '.cartel.html'), None, poster(name, country, cc, lang, sl, lat, lon, local))
     nlite = sum(1 for _, q in near if q['name'])
-    io.open(os.path.join('t', sl + '.html'), 'w', encoding='utf-8').write(
-        lite(name, country, lat, lon, cc, lang, sl, near, nlite >= 5))
+    save(os.path.join('t', sl + '.html'), 'https://supportnear.com/t/%s' % sl,
+         lite(name, country, lat, lon, cc, lang, sl, near, nlite >= 5, local, amb))
     if nlite >= 5:
-        urls.append(('https://supportnear.com/t/%s.html' % sl, 0.3))
+        urls.append(('https://supportnear.com/t/%s' % sl, 0.3))
     lite_idx.append((country, name, sl))
 print('paginas ciudad x necesidad:', needs_made, '| en ingles:', needs_en)
 
@@ -791,13 +868,13 @@ for ci in CINFO:
     if miss: _gap_rows.append((len(miss), ci['country'], ci['name'], ci['sl'], miss, ci['lat'], ci['lon']))
 _gap_rows.sort(key=lambda r: (-r[0], r[1], r[2]))
 _GN = {'food': 'free food', 'shelter': 'shelter', 'hygiene': 'showers / toilets', 'health': 'free clinic'}
-_gtab = ''.join('<tr><td><a href="%s.html">%s</a></td><td>%s</td><td>%s</td><td><a href="https://www.openstreetmap.org/edit#map=14/%.4f/%.4f" target="_blank" rel="noopener">edit map</a></td></tr>'
+_gtab = ''.join('<tr><td><a href="c/%s">%s</a></td><td>%s</td><td>%s</td><td><a href="https://www.openstreetmap.org/edit#map=14/%.4f/%.4f" target="_blank" rel="noopener">edit map</a></td></tr>'
                 % (sl, H.escape(n), H.escape(co), H.escape(', '.join(_GN[g] for g in m)), la, lo) for _, co, n, sl, m, la, lo in _gap_rows)
-io.open('huecos.html', 'w', encoding='utf-8').write(f"""<!DOCTYPE html>
+save('huecos.html', 'https://supportnear.com/huecos', f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Where free help is missing on the map · SupportNear</title>
 <meta name="description" content="{len(_gap_rows)} cities with no free food, shelter, showers or clinic mapped within 10 km. Help fix the open map.">
-<link rel="canonical" href="https://supportnear.com/huecos.html">
+<link rel="canonical" href="https://supportnear.com/huecos">
 <meta property="og:title" content="Where free help is missing on the map"><meta property="og:image" content="https://supportnear.com/social.jpg{SV}">
 <link rel="icon" href="favicon.ico" sizes="32x32"><meta name="theme-color" content="#0B7A63">
 <style>{CSS}{EXTRA_CSS}
@@ -808,9 +885,9 @@ table{{width:100%;border-collapse:collapse;font-size:14.5px}} td,th{{border-bott
 <p class="lede">These {len(_gap_rows)} cities have <b>nothing</b> mapped within 10 km for at least one basic need. Often the help exists but nobody has put it on OpenStreetMap. If you know a soup kitchen, a shelter, public showers or a free clinic in one of them, add it — it will show up here, and in every other app that uses the open map.</p>
 <p><a class="btn btn--p" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">How to add a place on OpenStreetMap</a></p>
 <div class="tw"><table><tr><th>City</th><th>Country</th><th>Missing within 10 km</th><th></th></tr>{_gtab}</table></div>
-<footer>SupportNear &middot; a non-profit project &middot; data from OpenStreetMap (ODbL) &middot; updated {date.today().isoformat()}</footer>
+<footer>SupportNear &middot; a non-profit project &middot; data from OpenStreetMap (ODbL) &middot; updated {DATEMARK}</footer>
 </div></body></html>""")
-urls.append(('https://supportnear.com/huecos.html', 0.5))
+urls.append(('https://supportnear.com/huecos', 0.5))
 print('huecos:', len(_gap_rows), 'ciudades')
 
 # indice de la version de texto: una lista, nada mas
@@ -820,9 +897,12 @@ for country, name, sl in lite_idx:
     if country != _last:
         _li += '<h2>%s</h2>' % H.escape(country or '-'); _last = country
     _li += '<a href="%s.html">%s</a> ' % (sl, H.escape(name))
-io.open('t/index.html', 'w', encoding='utf-8').write(
+save('t/index.html', 'https://supportnear.com/t/',
     '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
     '<title>Free help by city, text only · SupportNear</title><meta name="robots" content="index,follow">'
+    '<meta property="og:type" content="website"><meta property="og:site_name" content="SupportNear">'
+    '<meta property="og:title" content="Free help by city, text only"><meta property="og:url" content="https://supportnear.com/t/">'
+    '<meta property="og:image" content="https://supportnear.com/social.jpg' + SV + '"><meta name="twitter:card" content="summary_large_image">'
     '<link rel="canonical" href="https://supportnear.com/t/">'
     '<meta name="description" content="Free food, shelter, showers and clothes, city by city, in plain text: under 5 KB a page, for an old phone or a connection that keeps dropping.">'
     '<style>body{font:16px/1.6 sans-serif;margin:12px;max-width:40em}h2{font-size:17px;margin:14px 0 2px}a{display:inline-block;margin:0 8px 2px 0;padding:6px 2px;min-height:32px}</style></head><body>'
@@ -843,7 +923,7 @@ document.getElementById('f').addEventListener('input',function(e){var q=e.target
 document.querySelectorAll('section[data-c]').forEach(function(s){var hit=!q||s.dataset.c.indexOf(q)>=0;var any=false;
 s.querySelectorAll('a').forEach(function(a){var m=hit||a.textContent.toLowerCase().indexOf(q)>=0;a.style.display=m?'':'none';if(m)any=true;});
 s.style.display=any?'':'none';});});</script>""")
-io.open('c/index.html', 'w', encoding='utf-8').write(f"""<!DOCTYPE html>
+save('c/index.html', 'https://supportnear.com/c/', f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Free help by city · SupportNear</title>
 <meta name="description" content="Free food, shelter, showers and help in {format(len(CITIES), ',d')} cities across {STATS['countries']} countries. Pick your city.">
@@ -864,8 +944,10 @@ h2{{font-size:17px;margin:22px 0 6px;padding-top:16px}} p{{line-height:1.9}}</st
 </div></body></html>""")
 
 main = [('https://supportnear.com/', 1.0), ('https://supportnear.com/c/', 0.8), ('https://supportnear.com/t/', 0.5),
-        ('https://supportnear.com/cambios.html', 0.7), ('https://supportnear.com/prensa.html', 0.7),
-        ('https://supportnear.com/incrustar.html', 0.6), ('https://supportnear.com/instalar.html', 0.6)]
+        ('https://supportnear.com/cambios', 0.7), ('https://supportnear.com/prensa', 0.7),
+        ('https://supportnear.com/incrustar', 0.6), ('https://supportnear.com/instalar', 0.6),
+        ('https://supportnear.com/about', 0.6), ('https://supportnear.com/impacto', 0.6)]
+main += [('https://supportnear.com/%s/' % _c, 0.8) for _c, _ in ALL_LANGS if _c != 'en']
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 # lastmod: la fecha de hoy para lo que se regenera (todo lo que hay aqui sale de
 # este mismo script o del build de hoy), asi Google sabe que hay algo nuevo que
@@ -873,7 +955,8 @@ sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitem
 import datetime as _dt
 _today = _dt.date.today().isoformat()
 for u, pr in main + urls:
-    sm.append('<url><loc>%s</loc><lastmod>%s</lastmod><priority>%.1f</priority></url>' % (H.escape(u), _today, pr))
+    sm.append('<url><loc>%s</loc><lastmod>%s</lastmod><priority>%.1f</priority></url>' % (H.escape(u), LASTMOD.get(u, [0, _today])[1], pr))
+json.dump(LASTMOD, io.open(_LM_FILE, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
 io.open('urls_all.txt', 'w', encoding='utf-8').write('\n'.join(u for u, _ in main + urls))
 sm.append('</urlset>')
 io.open('sitemap.xml', 'w', encoding='utf-8').write('\n'.join(sm))

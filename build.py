@@ -30,6 +30,7 @@ NOTHELP = re.compile(u'|'.join([
     u'veterans of foreign wars', u'elks lodge', u'moose lodge', u'odd fellows',
     u'knights of columbus', u'masonic', u'freemason', u'rotary club', u'lions club',
     u'club de leones', u'kiwanis',
+    u'trades? union', u'union congress', u'gewerkschaft', u'^syndicat ', u'fraternity', u'sorority',
     u'hogar del (pensionista|jubilado)', u'llar del (pensionista|jubilat)', u'centro de mayores',
     u'casa de la cultura', u'casa de cultura', u'casa de la juventud',
     # animales: bancos de comida y refugios para mascotas
@@ -40,6 +41,9 @@ NOTHELP = re.compile(u'|'.join([
     u'refugio de monta', u'refugio antia[\u00e9e]reo',
     # sitios cerrados: mandar a alguien sin techo a una puerta tapiada es peor que no decir nada
     u'^former ', u'^antiguo ', u'^antigua ', u'^ex-', u'desaparecid',
+    # «old jewish soup kitchen»: un edificio historico (cerro en los 90, hoy son
+    # pisos) que salia como el unico comedor del cartel de Londres (QA M7)
+    u'^old ', u'^ehemalige', u'^ancien(ne)? ',
     u'\\(cerrado\\)', u'\\(closed\\)', u'\u5ec3\u696d', u'\u9589\u5e97', u'\\(\u8de1\\)',
 ]), re.I)
 AIDORG = re.compile(r'social|ayuda|solidari|acogida|acollida|inmigra|immigra|refugiad|refugee|sin hogar|'
@@ -62,7 +66,6 @@ def anchored(g):
     if g.get('social_facility') or g.get('social_facility:for'): return True
     if g.get('amenity') in ('social_facility','social_centre','community_centre'): return True
     if g.get('office') in ('ngo','association','charity','government'): return True
-    if g.get('shop')=='charity': return True
     return bool(re.search(r'c[áa]ritas|caritas|cruz roja|creu roja|red cross|banco de alimentos|'
         r'banc dels aliments|ayuntamiento|ajuntament|cabildo|diputaci|generalitat|junta de|consell|'
         r'fundaci|asociaci|associaci|parroquia|obra social|san juan de dios|mensajeros de la paz|'
@@ -81,7 +84,7 @@ REJECT_A = {'animal_shelter','recycling','restaurant','bar','cafe','fast_food','
 # Nombres que delatan un bano de pago o una piscina, no una ducha gratis.
 # El sufijo japones 湯 es un sento: se paga sobre 500 yenes, y en OSM la mitad
 # estan puestos como 'shower'.
-POOLNAME = re.compile(r'pool|piscin|schwimmbad|zwembad|nataci[óo]n|zona de bany|banys|プール|温泉|銭湯|サウナ|湯$|の湯|spa\b|thermal|termas|balneari|hammam|حمام', re.I)
+POOLNAME = re.compile(r'pool|lido\b|piscin|schwimmbad|zwembad|nataci[óo]n|zona de bany|banys|プール|温泉|銭湯|サウナ|湯$|の湯|spa\b|thermal|termas|balneari|hammam|حمام', re.I)
 
 PRIVATEOP = re.compile(r'private practice|private institution|private limited|pvt\.? ?ltd', re.I)
 
@@ -91,6 +94,14 @@ def classify(g):
     sf=g.get('social_facility'); am=g.get('amenity'); sh=g.get('shop'); of=g.get('office')
     if sf in SKIP_SF: return None
     if not am and not sf and not sh and not of and any(k.startswith('disused:') or k.startswith('was:') for k in g):
+        return None
+    # QA M7 (27-oct): lo que no es ayuda gratis no entra, aunque tenga una
+    # etiqueta que se le parezca.
+    #  - historico, en desuso o abandonado: un sitio de museo, no una puerta abierta
+    if g.get('historic') or any(k.split(':')[0] in ('disused', 'abandoned', 'was', 'demolished', 'removed') for k in g):
+        return None
+    #  - sindicatos, partidos, clubes y fraternidades: atienden a sus socios
+    if of in ('trade_union', 'political_party', 'union') or g.get('club') or g.get('fraternity'):
         return None
     if NOTHELP.search(txt(g)): return None
     who=g.get('social_facility:for','')
@@ -112,6 +123,9 @@ def classify(g):
     # o si es un servicio social. Y una ducha con precio tampoco es gratis.
     fee = (g.get('fee') or '').strip().lower()
     paid = fee not in ('', 'no', 'yes') or fee == 'yes'
+    #  - una piscina o un lido no es una ducha gratis (London Fields Lido)
+    if g.get('leisure') in ('swimming_pool', 'water_park', 'sports_centre', 'swimming_area') or g.get('sport') == 'swimming':
+        if am in ('shower', 'public_bath', 'toilets') and sf != 'hygiene': return None
     if am == 'shower' or sf == 'hygiene':
         if sf == 'hygiene': return 'hygiene'
         if paid: return None
@@ -131,7 +145,8 @@ def classify(g):
             if h=='legal' and of=='lawyer' and not FREELEGAL.search(txt(g)): return None
             return h
     if am=='toilets': return 'hygiene'
-    if sh=='charity': return 'clothes'
+    # una tienda solidaria (Oxfam, Mind, Salvation Army) vende: no es ropa gratis
+    if sh=='charity': return None
     if of=='lawyer': return 'legal' if FREELEGAL.search(txt(g)) else None
     if g.get('government')=='social_welfare': return 'legal'
     # Un hospital privado no es ayuda gratuita. OSM lo dice de dos maneras: con
@@ -777,6 +792,9 @@ try:
                     if d<nd: nd=d; near=c
         if near and nd<15: continue            # ya es ciudad del mapa
         _cc = cc.upper()[:2] if cc else (near[4] if near and nd<400 else '')
+        # Trinidad y Tobago no tiene ciudad en el mapa y la mas cercana es de
+        # Venezuela: Port of Spain salia como VE (y SOS con el 911 venezolano)
+        if (not cc) and 10.0 < la < 11.45 and -61.93 < lo < -60.4: _cc = 'TT'
         towns.append([nm, en if en and en!=nm else '', round(la,4), round(lo,4), _cc])
     towns.sort(key=lambda x:x[0])
     open('towns.json','w',encoding='utf-8').write(json.dumps(towns,ensure_ascii=False,separators=(',',':')))
@@ -819,7 +837,7 @@ def _tget(k):
     return _html.unescape(re.sub(r'<[^>]+>', '', m.group(2))).replace('\\u2019', '’').replace("\\'", "'") if m else ''
 _faq = [{'@type':'Question','name':_tget('faq.q%d'%i),'acceptedAnswer':{'@type':'Answer','text':_tget('faq.a%d'%i)}} for i in range(1,9) if _tget('faq.q%d'%i)]
 _ld = [
-  {'@context':'https://schema.org','@type':'WebSite','name':'SupportNear','url':'https://supportnear.com/','inLanguage':['en','es','fr','ar','uk','ro','pl','ru','pt','ur','fa','wo','bm'],
+  {'@context':'https://schema.org','@type':'WebSite','name':'SupportNear','url':'https://supportnear.com/','inLanguage':['en','es','fr','ar','uk','ro','pl','ru','pt','ur','fa','wo','bm','ti','ps','so','am','tr','bn','zh'],
    'description': meta_desc, 'publisher': {'@type':'Organization','name':'SupportNear','url':'https://supportnear.com/','logo':'https://supportnear.com/icon-512.png','sameAs':['https://x.com/mrstartups']}},
   {'@context':'https://schema.org','@type':'WebApplication','name':'SupportNear','url':'https://supportnear.com/','applicationCategory':'UtilitiesApplication','operatingSystem':'Any',
    'offers':{'@type':'Offer','price':'0','priceCurrency':'EUR'},'isAccessibleForFree':True,'browserRequirements':'Any modern browser; works offline once opened',
@@ -978,7 +996,7 @@ try:
         nm = parts[0] if len(parts)==1 else (lat_[0] if len(lat_)==1 else parts[-1])
         sl=_slug(nm)
         if sl in _seen: continue
-        _seen.add(sl); _links.append('<a href="c/%s.html">%s</a>' % (sl, nm))
+        _seen.add(sl); _links.append('<a href="c/%s">%s</a>' % (sl, nm))   # URL limpia: x.html responde 308
     html=html.replace('<!--__CITYLINKS__-->', ' '.join(_links), 1)
 except Exception as _ex: print('citylinks:', _ex)
 open('index.full.html','w',encoding='utf-8').write(html)   # sin minificar: lo leen pages.py, city_pages.py, social.py...

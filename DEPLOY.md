@@ -54,3 +54,18 @@ Después: `python3 indexnow.py --send`.
 
 **Reglas que no se saltan.** Nada de contraseñas en formularios. Cada subida se
 comprueba byte a byte contra el fichero local. Nunca Lovable.
+
+## Ronda 18 (27-oct-2026)
+
+- Mapa: `.clus` es `position:absolute` (con `relative` los grupos se pintaban
+  desplazados y «caian al mar» al alejar); el grupo se coloca en el sitio real
+  mas cercano al centro (medoide); no se repinta a mitad de una animacion de zoom.
+  Prueba: `python3 tools/seatest.py <url>` (ningun icono a mas de 30 px de su punto).
+- `qa_r18/`: informes de QA (mapa, lista, UI, web publicada) y lo que se arreglo.
+- `qa_r18/live_fix/patch_live.py` se paso sobre `pub/_wp` (idempotente). Mete en
+  `_worker.js/index.js` tres bloques que solo actuan para supportnear.com:
+  www -> 301 al dominio sin www, cabeceras de cache y el fichero de Google.
+  Los generadores (`city_pages.py`, `lang_pages.py`, `pages.py`...) ya producen lo mismo.
+- Privacidad: los textos ya no dicen que la ubicacion «no sale del movil» (va a
+  Overpass, Open-Meteo y al servidor de rutas). Ver `qa_r18/privacy_i18n.json`.
+- `falta.html` (nota interna) ya no se publica: esta en `docs/internal/`.
