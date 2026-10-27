@@ -50,7 +50,7 @@ def head(title, desc, path, extra_ld=None, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/k/site.css?v=3">
+<link rel="stylesheet" href="/k/site.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 {GA}
 </head>'''
@@ -115,7 +115,7 @@ def footer(mcta=True, mcta_href='/#start'):
     <p class="fine">© 2026 Kolaboro, operated by {ENTITY}. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=3" defer></script>
+<script src="/k/site.js?v=4" defer></script>
 {CLARITY}'''
 
 def page(path, title, desc, body, extra_ld=None, noindex=False, mcta=True, extra_js=''):
@@ -135,12 +135,18 @@ def lead_form(fid, role='buyer', roles=('buyer', 'agent', 'developer'), source='
             f'<label><input type="radio" name="role" value="{r}"{" checked" if r == role else ""}><span>{names[r]}</span></label>' for r in roles) + '</div>'
     else:
         seg = f'<input type="hidden" name="role" value="{roles[0]}">'
-    return f'''<form id="{fid}" data-lead data-role="{role}" data-source="{source}" novalidate>
+    return f'''<form id="{fid}" data-lead data-default-role="{role}" data-source="{source}" novalidate>
   {seg}
+  <div class="perk perk-buyer"><b>What you get:</b> the land title, permits and developer checked by a local agent, GPS-stamped video before every payment, and a clear "safe to pay" or "hold". From €490.</div>
+  <div class="perk perk-agent"><b>What you earn:</b> a fee for every inspection and report you deliver, plus a share of the buyer's agent fee on every purchase you work on. Paid by Kolaboro, never by developers. Free AI training, no degree needed. <a href="/agents">How agents work</a></div>
+  <div class="perk perk-developer"><b>What you get:</b> an independent Trust Score page, a live "Verified by Kolaboro" badge for your website and listings, and visibility to international buyers who check projects on Kolaboro. Paying never changes your Score. <a href="/developers">How verification works</a></div>
+  <div class="perk perk-investor"><b>We reply personally</b> with our deck and latest numbers.</div>
   <div class="two">
     <label class="f">Name<input name="name" autocomplete="name" maxlength="120" required><small class="fe"></small></label>
     <label class="f">Email<input name="email" type="email" autocomplete="email" maxlength="200" required><small class="fe"></small></label>
   </div>
+  <button class="btn btn-hi step-next" type="button">Continue</button>
+  <div class="step2">
   <div class="two">
     <label class="f"><span data-l="place">Where are you buying?</span><input name="place" maxlength="120" required><small class="fe"></small></label>
     <label class="f"><span data-l="project">Project name or link</span><input name="project" maxlength="300"><small class="fe"></small></label>
@@ -156,6 +162,7 @@ def lead_form(fid, role='buyer', roles=('buyer', 'agent', 'developer'), source='
   <label class="consent"><input type="checkbox" name="consent" required><span>I agree that Kolaboro can contact me by email about this request. See our <a href="/legal/privacy">privacy policy</a>.</span></label>
   <p class="err" role="alert"></p>
   <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><button class="btn btn-hi" type="submit">{button}</button><span class="saved" aria-live="polite"></span></div>
+  </div>
 </form>
 <div class="ok" role="status" tabindex="-1">
   <h3>Sent. We'll be in touch.</h3>
@@ -716,6 +723,7 @@ def build_404():
     page('/404.html', 'Page not found | Kolaboro', 'Page not found.', body, noindex=True)
 
 exec(open(os.path.join(HERE, 'r3.py')).read())
+exec(open(os.path.join(HERE, 'r4.py')).read())
 
 def main():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -728,6 +736,7 @@ def main():
     paths = [build_home(), build_check(), build_report(), build_score(), build_method(), build_agents(), build_devs(),
              build_investors(), build_yield(), build_checklist(), build_bali()] + build_guides() + build_legal()
     paths += build_round3()
+    paths += build_round4()
     build_404()
     idx = [p for p in paths if p not in ('/score/sample',)]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(
@@ -735,6 +744,7 @@ def main():
     open(os.path.join(OUT, 'sitemap.xml'), 'w').write(sm)
     finish_round3(paths)
     open(os.path.join(OUT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /old/\nSitemap: {SITE}/sitemap.xml\n')
+    self_host_fonts()
     print('built', len(paths) + 1, 'pages; sample score', SAMPLE_SCORE)
 
 if __name__ == '__main__':
