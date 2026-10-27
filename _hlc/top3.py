@@ -79,7 +79,7 @@ def block(city_name, lat, lng, names=(), weak=(), lang='es', checkin=None, check
         price = (f'<div class="t3-pr">{"desde" if lang == "es" else "from"} <b>{nightly} €</b>/{"noche" if lang == "es" else "night"}</div>' if nightly else '')
         go = ("Ver precio en tus fechas" if lang == "es" else "See price for your dates") if checkin else ("Ver hotel" if lang == "es" else "See hotel")
         cards.append(
-            f'<a class="t3-c" href="{_e(href)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="top3_hotel">'
+            f'<a class="t3-c" href="{_e(href)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="top3_hotel" data-tvcity="{_e(city_name)}">'
             + (f'<img src="{_e(img)}" alt="{_e(name)}" loading="lazy" width="500" height="333">' if img else '<div class="t3-noimg">🏨</div>')
             + f'<div class="t3-b"><span class="t3-cat t3-{cat}">{L[cat]}</span><strong>{_e(name)}</strong>'
             + f'<div class="t3-m">{"★" * int(stars or 0)}{(" · " if stars and area else "") + _e(area) if area else ""}</div>'

@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '40'
+V = '41'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -426,6 +426,9 @@ for f in files:
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
     if 'searchresults' in t:
         t = BK.fix_html(t)
+    # excursiones y traslados -> GetYourGuide
+    if '17288984' in t or '17322565' in t or 'Hoteles en Booking.com' in t:
+        t = BK.fix_gyg(t)
     if t != t0:
         open(f, 'w', encoding='utf-8', errors='surrogateescape').write(t)
         stats['changed'] += 1
@@ -437,6 +440,7 @@ for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '
     if f and os.path.exists(f) and any(f.startswith(p_) for p_ in en_pre):
         s0 = open(f, encoding='utf-8', errors='surrogateescape').read()
         s1 = BK.fix_html(s0) if 'searchresults' in s0 else s0
+        s1 = BK.fix_gyg(s1, 'en') if ('17288984' in s1 or '17322565' in s1) else s1
         s1 = lazy_cards(s1)
         if '—' in s1:
             s1 = dash_all(s1)

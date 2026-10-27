@@ -58,6 +58,41 @@ def with_dates(u, checkin, checkout=None, adults=2):
     return f'{sp.scheme}://{sp.netloc}{sp.path}?{urlencode(q)}'
 
 
+# ---------- GetYourGuide (actividades y traslados, por CJ) ----------
+GYG_LINK = {'es': '15084034', 'en': '15084019'}
+
+
+def gyg(q=None, lang='es', checkin=None, checkout=None, sid='happylowcost'):
+    """Enlace de GetYourGuide por CJ: búsqueda de actividades (o traslados) en la ciudad, con fechas si las hay."""
+    base = 'https://www.getyourguide.es' if lang == 'es' else 'https://www.getyourguide.com'
+    if q:
+        qs = {'q': q}
+        if checkin and re.match(r'\d{4}-\d{2}-\d{2}', checkin or ''):
+            qs['date_from'] = checkin[:10]
+            if checkout and re.match(r'\d{4}-\d{2}-\d{2}', checkout) and checkout[:10] > checkin[:10]:
+                qs['date_to'] = checkout[:10]
+        u = f'{base}/s/?{urlencode(qs)}'
+    else:
+        u = base + '/'
+    return f'https://www.kqzyfj.com/click-101900924-{GYG_LINK[lang]}?sid={sid}&url={quote(u, safe="")}'
+
+
+def gyg_transfer(city=None, lang='es', checkin=None):
+    q = (f'{city} traslado aeropuerto' if lang == 'es' else f'{city} airport transfer') if city else ('traslado aeropuerto' if lang == 'es' else 'airport transfer')
+    return gyg(q, lang, checkin, None, 'happylowcost-traslado')
+
+
+_OLD_ATTR = re.compile(r'https://www\.kqzyfj\.com/click-101900924-17288984\?[^"\'\s<>]*')
+_OLD_TAXI = re.compile(r'https://www\.kqzyfj\.com/click-101900924-17322565\?[^"\'\s<>]*')
+
+
+def fix_gyg(s, lang='es'):
+    """Excursiones y traslados de Booking -> GetYourGuide."""
+    s = _OLD_ATTR.sub(lambda m: gyg(None, lang).replace('&', '&amp;') if '&amp;' in m.group(0) else gyg(None, lang), s)
+    s = _OLD_TAXI.sub(lambda m: gyg_transfer(None, lang).replace('&', '&amp;') if '&amp;' in m.group(0) else gyg_transfer(None, lang), s)
+    return s.replace('🏨 Hoteles en Booking.com', '🏨 Hoteles')
+
+
 _CJ = re.compile(r'(https://www\.(?:kqzyfj|anrdoezrs|jdoqocy|tkqlhce|dpbolvw)\.com/click-\d+-\d+\?[^"\'\s<>]*?url=)([^"\'\s<>&]+)')
 
 
