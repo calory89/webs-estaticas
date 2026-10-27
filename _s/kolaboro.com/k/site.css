@@ -1,3 +1,5 @@
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(/k/fonts/archivo-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(/k/fonts/archivo-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 :root{
   --concrete:#E3E2DD; --paper:#F6F6F3; --ink:#17212B; --ink-2:#2A3541; --muted:#59626B;
@@ -418,3 +420,12 @@ footer{padding:56px 0 40px;font-size:.92rem;color:var(--muted);border-top:1px so
 .exit .x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);background:none;font-size:1.2rem;cursor:pointer}
 .links a.btn-hi{color:#170800}
 .st.s-ok{color:#08603F}
+
+/* round 4: role perks + two-step form */
+.perk{display:none;border-radius:14px;padding:14px 16px;background:#fff;border:2px solid var(--line);font-size:.95rem;color:var(--ink-2)}
+.perk b{color:var(--ink)}
+.perk a{font-weight:700;text-decoration-color:var(--hivis);text-decoration-thickness:2px;text-underline-offset:3px}
+form[data-r=buyer] .perk-buyer,form[data-r=agent] .perk-agent,form[data-r=developer] .perk-developer,form[data-r=investor] .perk-investor{display:block}
+.step2{display:none;gap:18px}
+.step2.on{display:grid}
+.step-next{justify-self:start;min-width:180px}

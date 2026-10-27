@@ -58,6 +58,14 @@
     developer: ['Where is your project?', 'e.g. Uluwatu, Bali', 'Project name and website', 'So we can start the review', 'Tell us about the project you would like verified.'],
     investor: ['Where are you based?', 'e.g. San Francisco', 'Fund or company (optional)', 'Your fund, company or angel profile', 'What would you like to know?']
   };
+  var ES = (document.documentElement.lang || '').indexOf('es') === 0;
+  if (ES) COPY = {
+    buyer: ['¿Dónde compras?', 'ej. Canggu, Bali', 'Nombre o enlace del proyecto', 'ej. la web del promotor o del proyecto', '¿En qué punto estás y qué te preocupa más?'],
+    agent: ['¿En qué ciudad vives?', 'ej. Ubud, Bali', 'LinkedIn o web (opcional)', 'Algo que muestre tu trabajo', '¿A qué te dedicas y por qué serías un gran agente?'],
+    developer: ['¿Dónde está tu proyecto?', 'ej. Uluwatu, Bali', 'Nombre y web del proyecto', 'Para empezar la revisión', 'Cuéntanos el proyecto que quieres verificar.'],
+    investor: COPY.investor };
+  var MSG = ES ? { name: 'Añade tu nombre.', email: 'Añade un email válido.', place: 'Añade una ciudad o lugar.', msg: 'Añade un mensaje corto para saber cómo ayudarte.', check: 'Revisa los campos marcados.', consent: 'Marca la casilla para que podamos responderte por email.', bot: 'Algo ha fallado. Inténtalo en unos segundos.', dup: 'Ya tenemos una solicitud con este email. Te responderemos pronto.', fields: 'Revisa los campos e inténtalo de nuevo.', net: 'No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.', sending: 'Enviando…', saved: 'Borrador guardado en este dispositivo.' }
+    : { name: 'Add your name.', email: 'Add a valid email address.', place: 'Add a city or place.', msg: 'Add a short message so we know how to help.', check: 'Check the highlighted fields.', consent: 'Tick the box so we can reply to you by email.', bot: 'Something went wrong. Try again in a few seconds.', dup: 'We already have a request from this email. We will reply soon.', fields: 'Check the fields and try again.', net: 'Your message could not be sent. Check your connection and try again.', sending: 'Sending…', saved: 'Draft saved on this device.' };
   function store() { try { return window.localStorage; } catch (e) { return null; } }
 
   document.querySelectorAll('form[data-lead]').forEach(function (form) {
@@ -68,7 +76,7 @@
     var draftKey = 'kb-draft-' + (form.id || 'f');
     var lbl = function (n) { return form.querySelector('[data-l="' + n + '"]'); };
 
-    function role() { var r = form.querySelector('input[name=role]:checked'); return r ? r.value : (form.dataset.role || 'buyer'); }
+    function role() { var r = form.querySelector('input[name=role]:checked'); return r ? r.value : (form.dataset.defaultRole || 'buyer'); }
     function setRole(r) {
       var c = COPY[r] || COPY.buyer;
       var el = form.querySelector('input[name=role][value="' + r + '"]'); if (el) el.checked = true;
@@ -76,9 +84,10 @@
       if (lbl('project')) lbl('project').textContent = c[2]; if (form.project) form.project.placeholder = c[3];
       if (lbl('msg')) lbl('msg').textContent = c[4];
       if (quiz) quiz.classList.toggle('on', r === 'agent');
+      form.setAttribute('data-r', r);
     }
     form.addEventListener('change', function (e) { if (e.target.name === 'role') setRole(e.target.value); });
-    document.querySelectorAll('[data-role]').forEach(function (a) { a.addEventListener('click', function () { setRole(a.dataset.role); }); });
+    document.querySelectorAll('a[data-role],button[data-role]').forEach(function (a) { a.addEventListener('click', function () { setRole(a.dataset.role); }); });
 
     // prefill from URL (?role=&project=&place=) and from saved draft
     var qs = new URLSearchParams(location.search);
@@ -94,9 +103,18 @@
     form.addEventListener('input', function () {
       if (!st) return;
       var d = { role: role() }; ['name', 'email', 'place', 'phone', 'project', 'msg'].forEach(function (k) { if (form[k]) d[k] = form[k].value; });
-      try { st.setItem(draftKey, JSON.stringify(d)); if (saved) saved.textContent = 'Draft saved on this device.'; } catch (e) {}
+      try { st.setItem(draftKey, JSON.stringify(d)); if (saved) saved.textContent = MSG.saved; } catch (e) {}
     });
 
+    var step2 = form.querySelector('.step2'), next = form.querySelector('.step-next');
+    function openStep2(focus) { if (!step2) return; step2.classList.add('on'); if (next) next.style.display = 'none'; if (focus && form.place) form.place.focus(); }
+    if (qs.get('project') || (draft && (draft.place || draft.msg))) openStep2(false);
+    if (next) next.addEventListener('click', function () {
+      var ok1 = true; fieldErr('name', ''); fieldErr('email', '');
+      if (!form.name.value.trim()) { fieldErr('name', MSG.name); ok1 = false; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email.value.trim())) { fieldErr('email', MSG.email); ok1 = false; }
+      if (!ok1) return; ev('form_step1', { role: role() }); openStep2(true);
+    });
     function fieldErr(name, msg) {
       var el = form[name]; if (!el) return;
       el.setAttribute('aria-invalid', msg ? 'true' : 'false');
@@ -104,23 +122,23 @@
     }
 
     form.addEventListener('submit', function (e) {
-      e.preventDefault(); err.textContent = '';
+      e.preventDefault(); err.textContent = ''; openStep2(false);
       var f = new FormData(form), g = function (k) { return String(f.get(k) || '').trim(); };
       var r = role(), bad = null;
       ['name', 'email', 'place', 'msg'].forEach(function (k) { fieldErr(k, ''); });
-      if (!g('name')) { fieldErr('name', 'Add your name.'); bad = bad || 'name'; }
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(g('email'))) { fieldErr('email', 'Add a valid email address.'); bad = bad || 'email'; }
-      if (g('place').length < 2) { fieldErr('place', 'Add a city or place.'); bad = bad || 'place'; }
-      if (g('msg').length < 3) { fieldErr('msg', 'Add a short message so we know how to help.'); bad = bad || 'msg'; }
-      if (bad) { form[bad].focus(); err.textContent = 'Check the highlighted fields.'; return; }
-      if (!f.get('consent')) { err.textContent = 'Tick the box so we can reply to you by email.'; return; }
-      if (g('company') || Date.now() - started < 2500) { err.textContent = 'Something went wrong. Try again in a few seconds.'; return; }
+      if (!g('name')) { fieldErr('name', MSG.name); bad = bad || 'name'; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(g('email'))) { fieldErr('email', MSG.email); bad = bad || 'email'; }
+      if (g('place').length < 2) { fieldErr('place', MSG.place); bad = bad || 'place'; }
+      if (g('msg').length < 3) { fieldErr('msg', MSG.msg); bad = bad || 'msg'; }
+      if (bad) { form[bad].focus(); err.textContent = MSG.check; return; }
+      if (!f.get('consent')) { err.textContent = MSG.consent; return; }
+      if (g('company') || Date.now() - started < 2500) { err.textContent = MSG.bot; return; }
 
       var extra = [];
       if (g('project')) extra.push('Project: ' + g('project'));
       if (r === 'agent' && quiz) ['q_live', 'q_bg', 'q_lang'].forEach(function (k) { if (g(k)) extra.push(k.replace('q_', '') + ': ' + g(k)); });
       var source = [form.dataset.source || 'yc-home', qs.get('utm_source'), qs.get('utm_campaign'), document.referrer && new URL(document.referrer).host].filter(Boolean).join(' | ').slice(0, 200);
-      send.disabled = true; var label = send.textContent; send.textContent = 'Sending…';
+      send.disabled = true; var label = send.textContent; send.textContent = MSG.sending;
       fetch(URL_, {
         method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
         body: JSON.stringify({ p_name: g('name'), p_email: g('email'), p_country: g('place'), p_phone: g('phone'),
@@ -132,10 +150,10 @@
           if (ok) { ok.style.display = 'block'; ok.focus(); }
           ev('generate_lead', { role: r }); return;
         }
-        if (d === 'too_many') throw new Error('We already have a request from this email. We will reply soon.');
-        throw new Error('Check the fields and try again.');
+        if (d === 'too_many') throw new Error(MSG.dup);
+        throw new Error(MSG.fields);
       }).catch(function (x) {
-        err.textContent = (x && x.message && x.message.indexOf('fetch') < 0) ? x.message : 'Your message could not be sent. Check your connection and try again.';
+        err.textContent = (x && x.message && x.message.indexOf('fetch') < 0) ? x.message : MSG.net;
         send.disabled = false; send.textContent = label;
       });
     });
@@ -162,7 +180,7 @@
   document.querySelectorAll('form[data-news]').forEach(function (f) {
     f.addEventListener('submit', function (e) {
       e.preventDefault(); var m = f.querySelector('.nmsg'), em = (f.email.value || '').trim();
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = 'Add a valid email address.'; m.style.color = 'var(--hivis-ink)'; return; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = MSG.email; m.style.color = 'var(--hivis-ink)'; return; }
       m.textContent = 'Subscribing…'; m.style.color = '';
       fetch(URL_, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
         body: JSON.stringify({ p_name: 'Newsletter subscriber', p_email: em, p_country: '', p_phone: '', p_who: 'newsletter | ' + location.pathname,
