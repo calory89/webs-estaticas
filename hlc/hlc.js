@@ -20,7 +20,7 @@ document.documentElement.classList.add('hlc-js');
   function hotelsIn(city){return city?CJ(AID.hotel,'https://www.booking.com/searchresults.es.html?ss='+encodeURIComponent(city)):L.hoteles;}
   function a(href,txt,cls,ev){return '<a class="hlc-btn '+(cls||'')+'" href="'+href+'" target="_blank" rel="sponsored nofollow noopener" data-hlc="'+(ev||'')+'">'+txt+'</a>';}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function track(name,label){try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_click',hlc_target:name,hlc_label:label||''});}catch(e){}if(/^alerta/.test(name))logClick(name,'');}
+  function track(name,label){try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_click',hlc_target:name,hlc_label:label||''});}catch(e){}try{w.gtag&&w.gtag('event','hlc_click',{hlc_target:name,hlc_label:String(label||'').slice(0,100),page_path:location.pathname});w.clarity&&w.clarity('event','click_'+name);}catch(e){}if(/^alerta/.test(name))logClick(name,'');}
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
 
   /* ---------- Región del visitante (zona horaria + idioma) ---------- */
