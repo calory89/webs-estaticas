@@ -153,6 +153,12 @@ p{max-width:62ch}
 .bar i{display:block;height:100%;border-radius:6px;background:var(--ink)}
 .bar i.warn{background:var(--hivis)}
 .row b{font-variant-numeric:tabular-nums}
+.row small{grid-column:1/-1;font-size:.82rem;color:var(--muted);margin-top:-2px}
+.rows{gap:16px}
+.rules{margin-top:30px;display:grid;gap:14px;list-style:none;max-width:52ch}
+.rules li{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:1rem;color:var(--ink-2)}
+.rules li::before{content:"";width:12px;height:12px;margin-top:7px;border-radius:3px;background:var(--hivis)}
+.rules b{color:var(--ink)}
 .card .note{margin-top:20px;font-size:.82rem;color:var(--muted)}
 
 /* agents */
@@ -183,13 +189,16 @@ p{max-width:62ch}
 .founder{padding:clamp(72px,10vw,140px) 0}
 .f-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,90px)}
 @media (max-width:860px){.f-grid{grid-template-columns:1fr}}
-.figure{font-stretch:125%;font-weight:850;font-size:clamp(4.4rem,11vw,9.5rem);letter-spacing:-.05em;line-height:.85}
+.figure{font-stretch:125%;font-weight:850;font-size:clamp(4rem,8.6vw,8rem);letter-spacing:-.05em;line-height:.85}
 .figure-cap{margin-top:16px;color:var(--muted);max-width:26ch}
 .founder ol{list-style:none;counter-reset:l;display:grid;gap:18px;margin:26px 0}
 .founder ol li{counter-increment:l;display:grid;grid-template-columns:40px 1fr;gap:12px;font-size:1.1rem}
 .founder ol li::before{content:counter(l);width:32px;height:32px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-weight:800;font-size:.9rem}
 .founder .sig{margin-top:26px;font-weight:700}
 .founder .sig span{display:block;font-weight:400;color:var(--muted)}
+.asks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
+.asks li{background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:14px 16px;font-weight:700;font-stretch:110%;font-size:1.02rem;line-height:1.3}
+@media (max-width:560px){.asks{grid-template-columns:1fr}}
 .founder .close{font-stretch:118%;font-weight:750;font-size:1.3rem;line-height:1.3}
 
 /* finale */
@@ -236,7 +245,7 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
-</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script></head>
 <body>
 
 <header class="nav" id="top">
@@ -349,21 +358,32 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
   <div class="wrap score-grid">
     <div>
       <h2>Every buyer makes the next buyer safer.</h2>
-      <p class="lead">That's the idea behind the name. Every inspection, every delay and every finished home feeds the Kolaboro Score: the first public record of which developers deliver what they promise.</p>
+      <p class="lead">That's the idea behind the name. Every inspection, every delay and every finished home feeds the Kolaboro Trust Score: a public 0 to 100 rating of every project and developer, built on proof instead of price tags.</p>
       <p class="quote">Developers can't buy it. Marketing can't fake it. Only buildings can earn it.</p>
+      <ul class="rules" aria-label="How the Score works">
+        <li><span><b>Nine checks, one number.</b> Title, permits, delivery record, progress, money safety, contract, transparency, buyer voice and realistic promises, each scored 0 to 100.</span></li>
+        <li><span><b>Every point has evidence.</b> A registry document, a GPS-stamped site video or a verified buyer record. You can open the reason behind each score.</span></li>
+        <li><span><b>Red flags cap the Score.</b> If the land title can't be verified, the project can't score above 40, however good it looks.</span></li>
+        <li><span><b>Developers can reply.</b> They can add documents and fix what's missing. Where we don't have enough data, we say so instead of guessing.</span></li>
+      </ul>
     </div>
     <div class="card" aria-label="Illustrative Kolaboro Score card for a fictional developer">
       <div class="card-h">
-        <div><h3>Sample Developer Ltd.</h3><p>6 projects tracked by Kolaboro agents</p></div>
+        <div><h3>Sample Developer Ltd.</h3><p>Kolaboro Trust Score across 9 checks</p></div>
         <div class="dial"><svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="#DCDAD3" stroke-width="9"/><circle id="dialArc" cx="48" cy="48" r="40" fill="none" stroke="#FF5B14" stroke-width="9" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/></svg><b id="dialNum">0</b></div>
       </div>
       <div class="rows">
-        <div class="row"><span>Milestones delivered on time</span><b>11 of 24</b><div class="bar"><i style="width:46%"></i></div></div>
-        <div class="row"><span>Homes handed over as promised</span><b>2 of 6</b><div class="bar"><i style="width:33%"></i></div></div>
-        <div class="row"><span>Average delay per milestone</span><b>7.5 months</b><div class="bar"><i class="warn" style="width:62%"></i></div></div>
-        <div class="row"><span>Title and permits verified</span><b>6 of 6</b><div class="bar"><i style="width:100%"></i></div></div>
+        <div class="row"><span>Title and land</span><b>92</b><div class="bar"><i style="width:92%"></i></div><small>Certificate checked at the land registry; seller matches the title</small></div>
+        <div class="row"><span>Permits</span><b>70</b><div class="bar"><i style="width:70%"></i></div><small>Building permit issued; licence for rentals still pending</small></div>
+        <div class="row"><span>Delivery record</span><b>38</b><div class="bar"><i class="warn" style="width:38%"></i></div><small>2 of 6 past projects handed over on time</small></div>
+        <div class="row"><span>Progress vs. plan</span><b>45</b><div class="bar"><i class="warn" style="width:45%"></i></div><small>Milestone 3 verified on site, 5 months behind schedule</small></div>
+        <div class="row"><span>Money safety</span><b>55</b><div class="bar"><i style="width:55%"></i></div><small>Payments go to the contracting company, but no escrow</small></div>
+        <div class="row"><span>Contract fairness</span><b>60</b><div class="bar"><i style="width:60%"></i></div><small>Refund clause included; no penalty for late delivery</small></div>
+        <div class="row"><span>Transparency</span><b>72</b><div class="bar"><i style="width:72%"></i></div><small>Named directors and registered company; accounts not public</small></div>
+        <div class="row"><span>Buyer voice</span><b>48</b><div class="bar"><i class="warn" style="width:48%"></i></div><small>Mixed verified reviews from 31 buyers; 2 open complaints</small></div>
+        <div class="row"><span>Realistic promises</span><b>35</b><div class="bar"><i class="warn" style="width:35%"></i></div><small>Advertised rental yield is double the local average</small></div>
       </div>
-      <p class="note">Illustrative example with a fictional developer.</p>
+      <p class="note">Illustrative example with a fictional developer and made-up data.</p>
     </div>
   </div>
 </section>
@@ -395,17 +415,19 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
 <section class="founder" id="why">
   <div class="wrap f-grid">
     <div>
-      <p class="figure">€15M</p>
-      <p class="figure-cap">in land our founder sold abroad to buyers who never visited the site.</p>
+      <p class="figure">€15M+</p>
+      <p class="figure-cap">in real estate our founder has sold to international buyers.</p>
     </div>
     <div>
-      <h2 style="font-size:clamp(1.9rem,3.6vw,3rem)">Why we're building this</h2>
-      <p class="lead" style="margin-top:20px">Selling land on an island in Indonesia to buyers around the world taught our founder two things the hard way:</p>
-      <ol>
-        <li>People everywhere are ready to buy property abroad, remotely, at scale.</li>
-        <li>When construction slips, nothing and no one protects them.</li>
-      </ol>
-      <p class="close">Kolaboro is the system that should have existed from day one.</p>
+      <h2 style="font-size:clamp(1.9rem,3.6vw,3rem)">Built from the questions every buyer asks</h2>
+      <p class="lead" style="margin-top:20px">Our founder has spent years selling property abroad to buyers from all over the world. Almost every one of them asked the same things before saying yes:</p>
+      <ul class="asks">
+        <li>Is the land really the seller's?</li>
+        <li>Are the permits real?</li>
+        <li>Will it be built on time?</li>
+        <li>Where exactly does my money go?</li>
+      </ul>
+      <p class="close">Those doubts are the biggest reason people don't buy abroad, and nobody independent answers them. Kolaboro does.</p>
       <p class="sig">Carlos de Ory<span>Founder</span></p>
     </div>
   </div>
@@ -494,7 +516,7 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
   }
 
   // score dial, when visible
-  var arc = document.getElementById('dialArc'), num = document.getElementById('dialNum'), target = 41;
+  var arc = document.getElementById('dialArc'), num = document.getElementById('dialNum'), target = 59;
   function fill(){ arc.style.transition = reduce ? 'none' : 'stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)';
     arc.style.strokeDashoffset = 251.3 * (1 - target/100);
     if (reduce) { num.textContent = target; return; }
@@ -543,8 +565,6 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
   });
 })();
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>
-<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
 </body>
 </html>
