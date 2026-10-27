@@ -39,6 +39,15 @@ def take_meta(d):
 
 
 nat, cities, planet = load('nat'), load('cities'), load('planet')
+# España por celdas (es:<s>_<w>_<tamaño>) -> una sola lista, sin repetidos; las
+# claves de pais entero de la primera vuelta (social_facility, orgs...) se suman.
+_es, _seen = [], set()
+for k in list(nat):
+    if k.startswith('es:') or k in ('social_facility', 'amenities', 'orgs', 'hospital', 'healthcentre', 'named'):
+        for e in nat.pop(k):
+            if (e['type'], e['id']) not in _seen:
+                _seen.add((e['type'], e['id'])); _es.append(e)
+nat['named'] = _es
 for d in (nat, cities, planet):
     take_meta(d)
 os.chdir(ROOT)
