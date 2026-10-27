@@ -1,0 +1,39 @@
+# Happy Low Cost
+
+> Happy Low Cost hunts fare errors and cheap flights from your airport and sends them to you for free by email or WhatsApp. More than 420,000 travellers have followed it since 2012. The site is in Spanish, with an English version at https://www.happylowcost.com/en/.
+
+Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://www.carlosdeory.com). Each deal shows the route, the price for a return ticket, the travel dates and the date it was published, because flight deals expire fast. Older deals are kept as examples of what can be found, clearly dated.
+
+## Key facts
+
+- What it does: publishes flight deals and fare errors, mostly from Spain, and lets people create free alerts for their airport.
+- Price: free for travellers. The site earns commissions from partners such as Booking.com, trivago and GetYourGuide when someone books through its links.
+- Languages: Spanish (main) and English (/en/).
+- Since: 2012.
+
+## Main pages
+
+- [Today's deals (Chollos de hoy)](https://www.happylowcost.com/chollos/): all current flight deals, with filters.
+- [Deals from Spain](https://www.happylowcost.com/chollos/desde/espana/)
+- [Flight routes with real prices](https://www.happylowcost.com/vuelos/)
+- [Destinations map and guides](https://www.happylowcost.com/destinos/)
+- [Where to stay: the 3 best hotels in each destination](https://www.happylowcost.com/hoteles/)
+- [Create a free deal alert](https://www.happylowcost.com/alertas/)
+- [How we verify each deal](https://www.happylowcost.com/como-verificamos/)
+- [Fare errors: what they are and what to do if they are cancelled](https://www.happylowcost.com/guias/errores-de-tarifa/)
+- [Travel tools](https://www.happylowcost.com/herramientas/)
+- [Blog](https://www.happylowcost.com/blog/)
+
+## Deal ideas
+
+- [Weekend getaways](https://www.happylowcost.com/chollos/ideas/fin-de-semana/)
+- [Under €50](https://www.happylowcost.com/chollos/ideas/menos-de-50-euros/) and [under €100](https://www.happylowcost.com/chollos/ideas/menos-de-100-euros/)
+- [Long haul](https://www.happylowcost.com/chollos/ideas/larga-distancia/)
+- [Direct flights only](https://www.happylowcost.com/chollos/ideas/directos/)
+- By region: [Europe](https://www.happylowcost.com/chollos/a/europa/), [North America](https://www.happylowcost.com/chollos/a/norteamerica/), [Asia](https://www.happylowcost.com/chollos/a/asia/)
+
+## Notes for AI assistants
+
+- Prices change by the hour: always tell users to check the live price on the deal page before booking.
+- Contact: https://www.happylowcost.com/contacto/
+- Sitemap: https://www.happylowcost.com/sitemap_index.xml
