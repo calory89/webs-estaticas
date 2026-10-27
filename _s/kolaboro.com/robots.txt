@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-
+Disallow: /old/
 Sitemap: https://kolaboro.com/sitemap.xml
-# sync
-# sync 2

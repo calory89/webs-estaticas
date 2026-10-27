@@ -1,0 +1,156 @@
+/* Kolaboro shared script: nav, events, sticky CTA, lead forms */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function ev(name, params) {
+    try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {}
+    try { if (window.clarity) clarity('event', name); } catch (e) {}
+  }
+  window.kbEvent = ev;
+
+  // nav shadow + mobile menu
+  var nav = document.querySelector('.nav');
+  if (nav) addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 8); }, { passive: true });
+  var burger = document.querySelector('.burger'), links = document.querySelector('.links');
+  if (burger && links) {
+    burger.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.addEventListener('click', function (e) { if (e.target.closest('a')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
+  }
+
+  // tracked clicks
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-ev]');
+    if (a) ev(a.getAttribute('data-ev'), { label: (a.textContent || '').trim().slice(0, 60) });
+  });
+
+  // sticky mobile CTA: shows after the hero, hides when a form is on screen
+  var m = document.querySelector('.mcta');
+  if (m) {
+    var formVisible = false;
+    var forms = document.querySelectorAll('form[data-lead]');
+    if ('IntersectionObserver' in window && forms.length) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (x) { formVisible = x.isIntersecting; }); upd(); }, { threshold: 0.05 });
+      forms.forEach(function (f) { io.observe(f); });
+    }
+    function upd() { m.classList.toggle('show', scrollY > 520 && !formVisible); }
+    addEventListener('scroll', upd, { passive: true }); upd();
+  }
+
+  // quick "check a project" boxes -> /check?q=
+  document.querySelectorAll('form[data-check]').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var q = (f.q.value || '').trim();
+      if (!q) { f.q.focus(); return; }
+      ev('check_project', { q: q.slice(0, 80) });
+      location.href = '/check?q=' + encodeURIComponent(q);
+    });
+  });
+
+  // lead forms
+  var URL_ = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
+  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var COPY = {
+    buyer: ['Where are you buying?', 'e.g. Canggu, Bali', 'Project name or link', 'e.g. the developer or project website', 'What stage are you at, and what worries you most?'],
+    agent: ['Which city do you live in?', 'e.g. Ubud, Bali', 'LinkedIn or website (optional)', 'Anything that shows your work', 'What do you do today, and why would you be a great agent?'],
+    developer: ['Where is your project?', 'e.g. Uluwatu, Bali', 'Project name and website', 'So we can start the review', 'Tell us about the project you would like verified.'],
+    investor: ['Where are you based?', 'e.g. San Francisco', 'Fund or company (optional)', 'Your fund, company or angel profile', 'What would you like to know?']
+  };
+  function store() { try { return window.localStorage; } catch (e) { return null; } }
+
+  document.querySelectorAll('form[data-lead]').forEach(function (form) {
+    var started = Date.now();
+    var err = form.querySelector('.err'), send = form.querySelector('[type=submit]');
+    var ok = form.nextElementSibling && form.nextElementSibling.classList.contains('ok') ? form.nextElementSibling : null;
+    var quiz = form.querySelector('.quiz');
+    var draftKey = 'kb-draft-' + (form.id || 'f');
+    var lbl = function (n) { return form.querySelector('[data-l="' + n + '"]'); };
+
+    function role() { var r = form.querySelector('input[name=role]:checked'); return r ? r.value : (form.dataset.role || 'buyer'); }
+    function setRole(r) {
+      var c = COPY[r] || COPY.buyer;
+      var el = form.querySelector('input[name=role][value="' + r + '"]'); if (el) el.checked = true;
+      if (lbl('place')) lbl('place').textContent = c[0]; if (form.place) form.place.placeholder = c[1];
+      if (lbl('project')) lbl('project').textContent = c[2]; if (form.project) form.project.placeholder = c[3];
+      if (lbl('msg')) lbl('msg').textContent = c[4];
+      if (quiz) quiz.classList.toggle('on', r === 'agent');
+    }
+    form.addEventListener('change', function (e) { if (e.target.name === 'role') setRole(e.target.value); });
+    document.querySelectorAll('[data-role]').forEach(function (a) { a.addEventListener('click', function () { setRole(a.dataset.role); }); });
+
+    // prefill from URL (?role=&project=&place=) and from saved draft
+    var qs = new URLSearchParams(location.search);
+    var st = store(), draft = null;
+    try { draft = st && JSON.parse(st.getItem(draftKey) || 'null'); } catch (e) {}
+    ['name', 'email', 'place', 'phone', 'project', 'msg'].forEach(function (k) {
+      if (!form[k]) return;
+      if (qs.get(k)) form[k].value = qs.get(k);
+      else if (draft && draft[k]) form[k].value = draft[k];
+    });
+    setRole(qs.get('role') || (draft && draft.role) || role());
+    var saved = form.querySelector('.saved');
+    form.addEventListener('input', function () {
+      if (!st) return;
+      var d = { role: role() }; ['name', 'email', 'place', 'phone', 'project', 'msg'].forEach(function (k) { if (form[k]) d[k] = form[k].value; });
+      try { st.setItem(draftKey, JSON.stringify(d)); if (saved) saved.textContent = 'Draft saved on this device.'; } catch (e) {}
+    });
+
+    function fieldErr(name, msg) {
+      var el = form[name]; if (!el) return;
+      el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      var fe = el.parentNode.querySelector('.fe'); if (fe) fe.textContent = msg || '';
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); err.textContent = '';
+      var f = new FormData(form), g = function (k) { return String(f.get(k) || '').trim(); };
+      var r = role(), bad = null;
+      ['name', 'email', 'place', 'msg'].forEach(function (k) { fieldErr(k, ''); });
+      if (!g('name')) { fieldErr('name', 'Add your name.'); bad = bad || 'name'; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(g('email'))) { fieldErr('email', 'Add a valid email address.'); bad = bad || 'email'; }
+      if (g('place').length < 2) { fieldErr('place', 'Add a city or place.'); bad = bad || 'place'; }
+      if (g('msg').length < 3) { fieldErr('msg', 'Add a short message so we know how to help.'); bad = bad || 'msg'; }
+      if (bad) { form[bad].focus(); err.textContent = 'Check the highlighted fields.'; return; }
+      if (!f.get('consent')) { err.textContent = 'Tick the box so we can reply to you by email.'; return; }
+      if (g('company') || Date.now() - started < 2500) { err.textContent = 'Something went wrong. Try again in a few seconds.'; return; }
+
+      var extra = [];
+      if (g('project')) extra.push('Project: ' + g('project'));
+      if (r === 'agent' && quiz) ['q_live', 'q_bg', 'q_lang'].forEach(function (k) { if (g(k)) extra.push(k.replace('q_', '') + ': ' + g(k)); });
+      var source = [form.dataset.source || 'yc-home', qs.get('utm_source'), qs.get('utm_campaign'), document.referrer && new URL(document.referrer).host].filter(Boolean).join(' | ').slice(0, 200);
+      send.disabled = true; var label = send.textContent; send.textContent = 'Sending…';
+      fetch(URL_, {
+        method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_name: g('name'), p_email: g('email'), p_country: g('place'), p_phone: g('phone'),
+          p_who: r + ' | ' + g('place'), p_bring: (g('msg') + (extra.length ? '\n\n' + extra.join('\n') : '')).slice(0, 4000),
+          p_learn: g('project').slice(0, 300), p_week: '', p_lang: 'en', p_source: source, p_plan: ('yc-' + r).slice(0, 20) })
+      }).then(function (res) { return res.json(); }).then(function (d) {
+        if (d === 'ok') {
+          form.classList.add('sent'); try { st && st.removeItem(draftKey); } catch (e) {}
+          if (ok) { ok.style.display = 'block'; ok.focus(); }
+          ev('generate_lead', { role: r }); return;
+        }
+        if (d === 'too_many') throw new Error('We already have a request from this email. We will reply soon.');
+        throw new Error('Check the fields and try again.');
+      }).catch(function (x) {
+        err.textContent = (x && x.message && x.message.indexOf('fetch') < 0) ? x.message : 'Your message could not be sent. Check your connection and try again.';
+        send.disabled = false; send.textContent = label;
+      });
+    });
+  });
+
+  // dials that fill when visible: <svg data-dial="59"> with a circle.arc and a <b>
+  document.querySelectorAll('[data-dial]').forEach(function (d) {
+    var target = +d.getAttribute('data-dial'), arc = d.querySelector('.arc'), num = d.querySelector('b');
+    var len = +arc.getAttribute('stroke-dasharray');
+    function fill() {
+      arc.style.transition = reduce ? 'none' : 'stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)';
+      arc.style.strokeDashoffset = len * (1 - target / 100);
+      if (reduce) { num.textContent = target; return; }
+      var s = performance.now(); (function n(t) { var k = Math.min(1, (t - s) / 1200); num.textContent = Math.round(target * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(n); })(s);
+    }
+    if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { fill(); io.disconnect(); } }, { threshold: .4 }); io.observe(d); } else fill();
+  });
+})();
