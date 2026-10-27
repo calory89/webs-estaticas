@@ -12776,6 +12776,1607 @@ var overrides_central_2710 = {
 	}
 };
 for (const [cid, v] of Object.entries(overrides_central_2710)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
+/* 27 Oct 2026 (round 2): airport-free and central replacements */
+var overrides_central_2710b = {
+	"crawley-united-kingdom": {
+		"Best Value": {
+			"id": 2055255,
+			"name": "The Maple Manor Hotel",
+			"area": "Ifield, Crawley",
+			"address": "Charlwood Road",
+			"lat": 51.143092,
+			"lng": -0.202582,
+			"url": "https://www.booking.com/hotel/gb/the-maple-manor.html",
+			"score": 8.2,
+			"count": 1449,
+			"stars": 4,
+			"total": 243.12,
+			"checked": "27 Oct 2026",
+			"reason": "Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 33888,
+			"name": "Alexander House Hotel & Utopia Spa",
+			"area": "Turners Hill",
+			"address": "East Street, Turners Hill",
+			"lat": 51.107166,
+			"lng": -0.06889,
+			"url": "https://www.booking.com/hotel/gb/alexander-house-and-utopia-spa.html",
+			"score": 7.8,
+			"count": 470,
+			"stars": 5,
+			"total": 568.39,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 33977,
+			"name": "Reigate Manor Hotel",
+			"area": "Reigate",
+			"address": "Reigate Hill",
+			"lat": 51.249812,
+			"lng": -0.202716,
+			"url": "https://www.booking.com/hotel/gb/best-western-reigate-manor.html",
+			"score": 7.7,
+			"count": 950,
+			"stars": 3,
+			"total": 238.82,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews."
+		}
+	},
+	"new-delhi-india": {
+		"Budget": {
+			"id": 546375,
+			"name": "Hotel Stay Well Dx",
+			"area": "Paharganj",
+			"address": "3499-3500, Desh Bandhu Gupta Road, Pahar Ganj",
+			"lat": 28.644162,
+			"lng": 77.215654,
+			"url": "https://www.booking.com/hotel/in/stay-well-dx.html",
+			"score": 8.8,
+			"count": 622,
+			"stars": 3,
+			"total": 42.74,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews."
+		}
+	},
+	"columbus-united-states": {
+		"Budget": {
+			"id": 184150,
+			"name": "Holiday Inn Columbus Dwtn-Capitol Square by IHG",
+			"area": "Downtown Columbus",
+			"address": "175 East Town Street",
+			"lat": 39.959098,
+			"lng": -82.994806,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-columbus-downtown-capital-square.html",
+			"score": 7.7,
+			"count": 585,
+			"stars": 3,
+			"total": 262.86,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews."
+		}
+	},
+	"accra-ghana": {
+		"Budget": {
+			"id": 16678074,
+			"name": "FLORIA - Sky Suites",
+			"area": "Labone",
+			"address": "Palace Mall",
+			"lat": 5.571351,
+			"lng": -0.167309,
+			"url": "https://www.booking.com/hotel/gh/floria-sky-suites.html",
+			"score": 8.5,
+			"count": 27,
+			"stars": 3,
+			"total": 144.48,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews."
+		}
+	},
+	"salt-lake-city-united-states": {
+		"Budget": {
+			"id": 283488,
+			"name": "SureStay by Best Western Salt Lake City Downtown",
+			"area": "Downtown Salt Lake City",
+			"address": "1009 S Main St",
+			"lat": 40.747105,
+			"lng": -111.890764,
+			"url": "https://www.booking.com/hotel/us/americas-best-inn-and-suites-salt-lake-city.html",
+			"score": 7.0,
+			"count": 502,
+			"stars": 2,
+			"total": 193.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 907790,
+			"name": "The Anniversary Inn - South Temple",
+			"area": "South Temple",
+			"address": "678 East South Temple",
+			"lat": 40.768961,
+			"lng": -111.871393,
+			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-salt-lake-city.html",
+			"score": 7.0,
+			"count": 121,
+			"stars": 4,
+			"total": 451.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"ta-if-saudi-arabia": {
+		"Best Value": {
+			"id": 312215,
+			"name": "Awaliv Hotel",
+			"area": "Shobra",
+			"address": "Abu Baker As Siddiq Street, Shobra",
+			"lat": 21.286953,
+			"lng": 40.41927,
+			"url": "https://www.booking.com/hotel/sa/awaliv-international.html",
+			"score": 9.0,
+			"count": 992,
+			"stars": 4,
+			"total": 212.61,
+			"checked": "27 Oct 2026",
+			"reason": "Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 9774303,
+			"name": "Le Reve Hotel Taif",
+			"area": "Shihar, Taif",
+			"address": "Shihar Road",
+			"lat": 21.248335,
+			"lng": 40.414011,
+			"url": "https://www.booking.com/hotel/sa/le-reve.html",
+			"score": 9.9,
+			"count": 1223,
+			"stars": 4,
+			"total": 310.31,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews."
+		}
+	},
+	"incheon-south-korea": {
+		"Budget": {
+			"id": 2914669,
+			"name": "Toyoko Inn Incheon Bupyeong",
+			"area": "Bupyeong-gu",
+			"address": "10, Gwangjang-ro, Bupyeong-gu",
+			"lat": 37.490371,
+			"lng": 126.722171,
+			"url": "https://www.booking.com/hotel/kr/toyoko-inn-incheon-bupyeong.html",
+			"score": 8.4,
+			"count": 2091,
+			"stars": 3,
+			"total": 114.46,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Bupyeong-gu, rated 8.4 from 2,091 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 466288,
+			"name": "Sheraton Grand Incheon Hotel",
+			"area": "Songdo",
+			"address": "153, Convensia-daero, Yeonsu-gu",
+			"lat": 37.390403,
+			"lng": 126.645595,
+			"url": "https://www.booking.com/hotel/kr/sheraton-incheon.html",
+			"score": 8.6,
+			"count": 366,
+			"stars": 5,
+			"total": 474.5,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Songdo, rated 8.6 from 366 Booking.com reviews."
+		}
+	},
+	"windsor-unitedkingdom": {
+		"Budget": {
+			"id": 6685415,
+			"name": "Goswell House Hotel central Windsor",
+			"area": "Windsor City Centre",
+			"address": "134 Peascod Street",
+			"lat": 51.482494,
+			"lng": -0.60773,
+			"url": "https://www.booking.com/hotel/gb/goswell-house.html",
+			"score": 8.6,
+			"count": 476,
+			"stars": 3,
+			"total": 297.98,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Windsor City Centre, rated 8.6 from 476 Booking.com reviews."
+		}
+	},
+	"sanford-united-states": {
+		"Luxury": {
+			"id": 252898,
+			"name": "The Westin Lake Mary, Orlando North",
+			"area": "Lake Mary",
+			"address": "2974 International Parkway",
+			"lat": 28.788446,
+			"lng": -81.358851,
+			"url": "https://www.booking.com/hotel/us/westin-lake-mary.html",
+			"score": 8.1,
+			"count": 184,
+			"stars": 4,
+			"total": 364.07,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews."
+		}
+	},
+	"slough-unitedkingdom": {
+		"Budget": {
+			"id": 200701,
+			"name": "Copthorne Hotel Slough-Windsor",
+			"area": "Slough",
+			"address": "Cippenham Lane",
+			"lat": 51.508937,
+			"lng": -0.614256,
+			"url": "https://www.booking.com/hotel/gb/copthornewindsor.html",
+			"score": 7.9,
+			"count": 3247,
+			"stars": 4,
+			"total": 161.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Slough, rated 7.9 from 3,247 Booking.com reviews."
+		}
+	},
+	"cedar-rapids-united-states": {
+		"Budget": {
+			"id": 42252,
+			"name": "Hampton Inn Cedar Rapids",
+			"area": "Southwest Cedar Rapids",
+			"address": "3265 6th Street Southwest",
+			"lat": 41.944801,
+			"lng": -91.675557,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-cedar-rapids.html",
+			"score": 7.7,
+			"count": 81,
+			"stars": 3,
+			"total": 438.88,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Southwest Cedar Rapids, rated 7.7 from 81 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 49438,
+			"name": "Hampton Inn & Suites Cedar Rapids",
+			"area": "Northeast Cedar Rapids",
+			"address": "1130 Park Place North East",
+			"lat": 42.030779,
+			"lng": -91.653496,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cedar-rapids.html",
+			"score": 8.2,
+			"count": 100,
+			"stars": 3,
+			"total": 497.29,
+			"checked": "27 Oct 2026",
+			"reason": "Central Northeast Cedar Rapids hotel rated 8.2 from 100 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"luton-unitedkingdom": {
+		"Budget": {
+			"id": 220889,
+			"name": "Thistle Express London Luton",
+			"area": "Luton Town Centre",
+			"address": "The Mall",
+			"lat": 51.879432,
+			"lng": -0.414616,
+			"url": "https://www.booking.com/hotel/gb/thistleluton.html",
+			"score": 7.8,
+			"count": 7010,
+			"stars": 3,
+			"total": 161.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 8712797,
+			"name": "Spark by Hilton Luton",
+			"area": "Luton Town Centre",
+			"address": "2/4 Mill Street",
+			"lat": 51.88262,
+			"lng": -0.417606,
+			"url": "https://www.booking.com/hotel/gb/sadie-best-western-at-luton.html",
+			"score": 8.4,
+			"count": 1747,
+			"stars": 4,
+			"total": 217.29,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews."
+		}
+	},
+	"namur-belgium": {
+		"Luxury": {
+			"id": 307315,
+			"name": "Les Tanneurs",
+			"area": "Namur Old Town",
+			"address": "Rue des Tanneries 13",
+			"lat": 50.464006,
+			"lng": 4.871782,
+			"url": "https://www.booking.com/hotel/be/les-tanneurs.html",
+			"score": 8.6,
+			"count": 2007,
+			"stars": 4,
+			"total": 278.9,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Namur Old Town rated 8.6/10 from 2,007 Booking.com reviews."
+		}
+	},
+	"cochabamba-bolivia": {
+		"Best Value": {
+			"id": 11325426,
+			"name": "Hotel Aranjuez Cochabamba",
+			"area": "Cochabamba",
+			"address": "563 Buenos Aires",
+			"lat": -17.374008,
+			"lng": -66.154396,
+			"url": "https://www.booking.com/hotel/bo/aranjuez-cochabamba.html",
+			"score": 8.4,
+			"count": 31,
+			"stars": 4,
+			"total": 161.03,
+			"checked": "27 Oct 2026",
+			"reason": "Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"salvador-brazil": {
+		"Luxury": {
+			"id": 1940259,
+			"name": "Fera Palace Hotel",
+			"area": "Historic Centre Salvador",
+			"address": "Rua Chile 20 - Centro Historico",
+			"lat": -12.975692,
+			"lng": -38.513394,
+			"url": "https://www.booking.com/hotel/br/fera-palace.html",
+			"score": 9.0,
+			"count": 659,
+			"stars": 5,
+			"total": 735.55,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Historic Centre Salvador, rated 9.0 from 659 Booking.com reviews."
+		}
+	},
+	"hamilton-canada": {
+		"Budget": {
+			"id": 410506,
+			"name": "Staybridge Suites Hamilton - Downtown by IHG",
+			"area": "Downtown Hamilton",
+			"address": "20 Caroline Street South",
+			"lat": 43.257911,
+			"lng": -79.876171,
+			"url": "https://www.booking.com/hotel/ca/staybridge-suites-hamilton-downtown.html",
+			"score": 8.0,
+			"count": 491,
+			"stars": 3,
+			"total": 236.82,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews."
+		}
+	},
+	"shenzhen-china": {
+		"Budget": {
+			"id": 12465143,
+			"name": "Shenzhen Jiangsu Hotel",
+			"area": "Futian",
+			"address": "2066 Caitian South Road, Futian",
+			"lat": 22.54446,
+			"lng": 114.068997,
+			"url": "https://www.booking.com/hotel/cn/shen-zhen-jiang-su-bin-guan.html",
+			"score": 8.5,
+			"count": 40,
+			"stars": 3,
+			"total": 125.58,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews."
+		}
+	},
+	"osijek-croatia": {
+		"Luxury": {
+			"id": 20789,
+			"name": "Hotel Waldinger",
+			"area": "Osijek Centre",
+			"address": "Zupanijska 8",
+			"lat": 45.558718,
+			"lng": 18.675948,
+			"url": "https://www.booking.com/hotel/hr/waldinger.html",
+			"score": 9.2,
+			"count": 398,
+			"stars": 4,
+			"total": 332.8,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews."
+		}
+	},
+	"hurghada-egypt": {
+		"Luxury": {
+			"id": 379692,
+			"name": "Sea Star Beau Rivage Hotel",
+			"area": "Dahar",
+			"address": "Al Hilal - Military Hospital Street",
+			"lat": 27.265616,
+			"lng": 33.804409,
+			"url": "https://www.booking.com/hotel/eg/sea-star-beau-rivage.html",
+			"score": 8.0,
+			"count": 230,
+			"stars": 5,
+			"total": 258.11,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews."
+		}
+	},
+	"narbonne-france": {
+		"Luxury": {
+			"id": 3679500,
+			"name": "Hôtel Le C - Boutique Hôtel",
+			"area": "Narbonne Centre",
+			"address": "15 Rue de Suffren",
+			"lat": 43.184197,
+			"lng": 3.010169,
+			"url": "https://www.booking.com/hotel/fr/le-c-boutique-narbonne.html",
+			"score": 8.8,
+			"count": 607,
+			"stars": 4,
+			"total": 263.24,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews."
+		}
+	},
+	"erfurt-germany": {
+		"Best Value": {
+			"id": 61323,
+			"name": "Hotel Alma Am Anger",
+			"area": "Erfurt Old Town",
+			"address": "Anger 50/51",
+			"lat": 50.975009,
+			"lng": 11.031769,
+			"url": "https://www.booking.com/hotel/de/erfuzumnordhotel.html",
+			"score": 8.5,
+			"count": 3211,
+			"stars": 4,
+			"total": 306.65,
+			"checked": "27 Oct 2026",
+			"reason": "Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"essen-germany": {
+		"Luxury": {
+			"id": 3256579,
+			"name": "NH Essen",
+			"area": "Stadtkern",
+			"address": "Am Porscheplatz 9",
+			"lat": 51.458189,
+			"lng": 7.014051,
+			"url": "https://www.booking.com/hotel/de/nh-essen-essen12.html",
+			"score": 8.6,
+			"count": 3015,
+			"stars": 4,
+			"total": 291.9,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews."
+		}
+	},
+	"chandigarh-india": {
+		"Budget": {
+			"id": 804216,
+			"name": "Hotel Icon",
+			"area": "Sector 8",
+			"address": "SCO 58-61, Sector 8C",
+			"lat": 30.734113,
+			"lng": 76.797215,
+			"url": "https://www.booking.com/hotel/in/icon.html",
+			"score": 7.8,
+			"count": 250,
+			"stars": 3,
+			"total": 110.13,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews."
+		}
+	},
+	"banyuwangi-indonesia": {
+		"Budget": {
+			"id": 1310599,
+			"name": "Hotel Blambangan",
+			"area": "Banyuwangi Centre",
+			"address": "Jl. Dr. Wahidin Sudirohusodo No. 4, Kepatihan",
+			"lat": -8.21323,
+			"lng": 114.375926,
+			"url": "https://www.booking.com/hotel/id/blambangan-banyuwangi.html",
+			"score": 7.7,
+			"count": 351,
+			"stars": 3,
+			"total": 51.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Banyuwangi Centre, rated 7.7 from 351 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1356633,
+			"name": "Hotel Santika Banyuwangi",
+			"area": "Banyuwangi",
+			"address": "Jl. Letjend S. Parman No. 15",
+			"lat": -8.244002,
+			"lng": 114.352073,
+			"url": "https://www.booking.com/hotel/id/santika-banyuwangi.html",
+			"score": 8.3,
+			"count": 157,
+			"stars": 3,
+			"total": 64.16,
+			"checked": "27 Oct 2026",
+			"reason": "Central Banyuwangi hotel rated 8.3 from 157 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 3149679,
+			"name": "Aston Banyuwangi Hotel and Conference Center",
+			"area": "Giri",
+			"address": "Jalan Brawijaya, Mojopanggung, Giri",
+			"lat": -8.219769,
+			"lng": 114.352788,
+			"url": "https://www.booking.com/hotel/id/aston-banyuwangi-city.html",
+			"score": 8.0,
+			"count": 201,
+			"stars": 4,
+			"total": 119.99,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Giri rated 8.0/10 from 201 Booking.com reviews."
+		}
+	},
+	"bogor-indonesia": {
+		"Luxury": {
+			"id": 6810833,
+			"name": "Swiss-Belinn Bogor",
+			"area": "Bogor Timur",
+			"address": "Jalan Pajajaran Indah V",
+			"lat": -6.611101,
+			"lng": 106.814593,
+			"url": "https://www.booking.com/hotel/id/swiss-belinn-bogor.html",
+			"score": 8.4,
+			"count": 106,
+			"stars": 4,
+			"total": 94.83,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews."
+		}
+	},
+	"ancona-italy": {
+		"Best Value": {
+			"id": 84473,
+			"name": "Grand Hotel Passetto",
+			"area": "Passetto",
+			"address": "Via Thaon De Revel 1",
+			"lat": 43.613899,
+			"lng": 13.534616,
+			"url": "https://www.booking.com/hotel/it/grand-passetto.html",
+			"score": 8.8,
+			"count": 967,
+			"stars": 4,
+			"total": 316.0,
+			"checked": "27 Oct 2026",
+			"reason": "Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"benevento-italy": {
+		"Budget": {
+			"id": 4797664,
+			"name": "Albergo Della Corte",
+			"area": "Benevento Centre",
+			"address": "Vico Papa Vittorio III 7",
+			"lat": 41.131624,
+			"lng": 14.781024,
+			"url": "https://www.booking.com/hotel/it/albergo-della-corte-benevento1.html",
+			"score": 7.9,
+			"count": 489,
+			"stars": 3,
+			"total": 170.0,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews."
+		}
+	},
+	"lamezia-terme-italy": {
+		"Best Value": {
+			"id": 12494,
+			"name": "Il Cantagalli",
+			"area": "Sambiase",
+			"address": "Via San Rocco 17/19",
+			"lat": 38.96641,
+			"lng": 16.280706,
+			"url": "https://www.booking.com/hotel/it/il-cantagalli.html",
+			"score": 8.1,
+			"count": 309,
+			"stars": 4,
+			"total": 180.0,
+			"checked": "27 Oct 2026",
+			"reason": "Central Sambiase hotel rated 8.1 from 309 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 83506,
+			"name": "Savant Hotel",
+			"area": "Nicastro",
+			"address": "Via Capitano Manfredi",
+			"lat": 38.972497,
+			"lng": 16.315784,
+			"url": "https://www.booking.com/hotel/it/savant.html",
+			"score": 8.0,
+			"count": 133,
+			"stars": 4,
+			"total": 220.0,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nicastro rated 8.0/10 from 133 Booking.com reviews."
+		}
+	},
+	"latina-italy": {
+		"Budget": {
+			"id": 567307,
+			"name": "Garden Hotel",
+			"area": "Latina",
+			"address": "Via Del Lido 129",
+			"lat": 41.448645,
+			"lng": 12.890028,
+			"url": "https://www.booking.com/hotel/it/garden-latina1.html",
+			"score": 7.2,
+			"count": 501,
+			"stars": 3,
+			"total": 196.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews."
+		}
+	},
+	"taranto-italy": {
+		"Luxury": {
+			"id": 332045,
+			"name": "Hotel Europa",
+			"area": "Taranto Old Town",
+			"address": "Via Roma 2",
+			"lat": 40.47474,
+			"lng": 17.236865,
+			"url": "https://www.booking.com/hotel/it/europa-taranto.html",
+			"score": 9.1,
+			"count": 1547,
+			"stars": 4,
+			"total": 246.0,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews."
+		}
+	},
+	"abidjan-ivory-coast": {
+		"Luxury": {
+			"id": 6958197,
+			"name": "Movenpick Hotel Abidjan",
+			"area": "Le Plateau",
+			"address": "Avenue Terrasson De Fougeres, Le Plateau",
+			"lat": 5.324071,
+			"lng": -4.018514,
+			"url": "https://www.booking.com/hotel/ci/movenpick-abidjan.html",
+			"score": 7.5,
+			"count": 123,
+			"stars": 5,
+			"total": 402.62,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Le Plateau, rated 7.5 from 123 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 1189478,
+			"name": "Hôtel Ivotel Abidjan",
+			"area": "Le Plateau",
+			"address": "Le Plateau",
+			"lat": 5.323134,
+			"lng": -4.018604,
+			"url": "https://www.booking.com/hotel/ci/ivotel-abidjan.html",
+			"score": 8.2,
+			"count": 481,
+			"stars": 3,
+			"total": 246.97,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Le Plateau, rated 8.2 from 481 Booking.com reviews."
+		}
+	},
+	"almaty-kazakhstan": {
+		"Luxury": {
+			"id": 299191,
+			"name": "Rahat Palace Hotel",
+			"area": "Bostandyk",
+			"address": "Akademik Satpaev Avenue 29/6",
+			"lat": 43.237153,
+			"lng": 76.916898,
+			"url": "https://www.booking.com/hotel/kz/rahat-palace.html",
+			"score": 8.9,
+			"count": 911,
+			"stars": 5,
+			"total": 469.99,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Bostandyk, rated 8.9 from 911 Booking.com reviews."
+		}
+	},
+	"mombasa-kenya": {
+		"Luxury": {
+			"id": 1137024,
+			"name": "Bahari Beach Hotel",
+			"area": "Nyali",
+			"address": "Mt Kenya Road, Nyali Beach",
+			"lat": -4.035322,
+			"lng": 39.71813,
+			"url": "https://www.booking.com/hotel/ke/bahari-beach.html",
+			"score": 8.4,
+			"count": 466,
+			"stars": 4,
+			"total": 501.43,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews."
+		}
+	},
+	"cancun-mexico": {
+		"Best Value": {
+			"id": 78143,
+			"name": "Adhara Hacienda Cancun",
+			"area": "Downtown Cancun",
+			"address": "Avenida Nader 1",
+			"lat": 21.168385,
+			"lng": -86.823943,
+			"url": "https://www.booking.com/hotel/mx/radisson-hacienda-cancun.html",
+			"score": 8.6,
+			"count": 4135,
+			"stars": 4,
+			"total": 190.78,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Cancun hotel rated 8.6 from 4,135 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 185872,
+			"name": "Presidente InterContinental Cancun Resort by IHG",
+			"area": "Zona Hotelera (north)",
+			"address": "Boulevard Kukulkan Km 7.5",
+			"lat": 21.135005,
+			"lng": -86.754259,
+			"url": "https://www.booking.com/hotel/mx/presidente-intercontinental-cancun-resort.html",
+			"score": 8.8,
+			"count": 3407,
+			"stars": 5,
+			"total": 463.13,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Zona Hotelera (north), rated 8.8 from 3,407 Booking.com reviews."
+		}
+	},
+	"swakopmund-namibia": {
+		"Luxury": {
+			"id": 628048,
+			"name": "Hansa Hotel Swakopmund",
+			"area": "Swakopmund Centre",
+			"address": "3 Hendrik Witbooi Street",
+			"lat": -22.677085,
+			"lng": 14.5262,
+			"url": "https://www.booking.com/hotel/na/hansa-swakopmund.html",
+			"score": 9.0,
+			"count": 472,
+			"stars": 4,
+			"total": 322.72,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews."
+		}
+	},
+	"lagos-nigeria": {
+		"Budget": {
+			"id": 12149479,
+			"name": "Presken Kuramo Waters, Victoria Island",
+			"area": "Victoria Island",
+			"address": "322a Akin Ogunlewe Road",
+			"lat": 6.425768,
+			"lng": 3.435874,
+			"url": "https://www.booking.com/hotel/ng/presken-kuramo-waters-lagos.html",
+			"score": 7.8,
+			"count": 245,
+			"stars": 3,
+			"total": 125.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews."
+		}
+	},
+	"krynica-zdroj-poland": {
+		"Budget": {
+			"id": 256614,
+			"name": "Hotel NAT Krynica Zdrój",
+			"area": "Krynica Zdrój Centre",
+			"address": "Ul. Pilsudskiego 24",
+			"lat": 49.425143,
+			"lng": 20.956485,
+			"url": "https://www.booking.com/hotel/pl/dwl-jagiellonka.html",
+			"score": 8.6,
+			"count": 463,
+			"stars": 3,
+			"total": 137.93,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews."
+		}
+	},
+	"braganca-portugal": {
+		"Luxury": {
+			"id": 264854,
+			"name": "Hotel Estalagem Turismo",
+			"area": "Braganca",
+			"address": "Cabeca Boa, Estrada De Turismo",
+			"lat": 41.788115,
+			"lng": -6.755613,
+			"url": "https://www.booking.com/hotel/pt/estalagem-turismo.html",
+			"score": 8.1,
+			"count": 1341,
+			"stars": 4,
+			"total": 140.0,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews."
+		}
+	},
+	"jeddah-saudiarabia": {
+		"Budget": {
+			"id": 8349726,
+			"name": "Romera Hotel",
+			"area": "Al Sharafiah",
+			"address": "Al Sharafiah",
+			"lat": 21.524118,
+			"lng": 39.18695,
+			"url": "https://www.booking.com/hotel/sa/rovotel-jeddah.html",
+			"score": 8.9,
+			"count": 955,
+			"stars": 3,
+			"total": 142.37,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Al Sharafiah, rated 8.9 from 955 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1640044,
+			"name": "Sunset Jeddah",
+			"area": "Al Rawda",
+			"address": "Prince Saud Al Faisal, Al-Rawdah",
+			"lat": 21.563761,
+			"lng": 39.169371,
+			"url": "https://www.booking.com/hotel/sa/sunset.html",
+			"score": 9.1,
+			"count": 2107,
+			"stars": 4,
+			"total": 196.65,
+			"checked": "27 Oct 2026",
+			"reason": "Central Al Rawda hotel rated 9.1 from 2,107 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"busan-southkorea": {
+		"Best Value": {
+			"id": 5129061,
+			"name": "Avani Central Busan",
+			"area": "Seomyeon",
+			"address": "133 Jeonpo-daero, Nam-gu",
+			"lat": 35.148606,
+			"lng": 129.065627,
+			"url": "https://www.booking.com/hotel/kr/avani-central-busan.html",
+			"score": 8.7,
+			"count": 888,
+			"stars": 4,
+			"total": 249.97,
+			"checked": "27 Oct 2026",
+			"reason": "Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"lleida-spain": {
+		"Luxury": {
+			"id": 90710,
+			"name": "NH Lleida Pirineos",
+			"area": "Lleida Centre",
+			"address": "Passeig de Ronda 63",
+			"lat": 41.617083,
+			"lng": 0.613266,
+			"url": "https://www.booking.com/hotel/es/nhpirineos.html",
+			"score": 8.5,
+			"count": 2644,
+			"stars": 4,
+			"total": 189.92,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews."
+		}
+	},
+	"dar-es-salaam-tanzania": {
+		"Budget": {
+			"id": 569734,
+			"name": "Tiffany Diamond Hotels Ltd - Indira Gandhi street",
+			"area": "Kisutu",
+			"address": "Indira Gandhi / Morogoro Road Junction",
+			"lat": -6.818325,
+			"lng": 39.28442,
+			"url": "https://www.booking.com/hotel/tz/tiffany-diamond.html",
+			"score": 8.1,
+			"count": 319,
+			"stars": 3,
+			"total": 169.08,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews."
+		}
+	},
+	"denizli-turkiye": {
+		"Luxury": {
+			"id": 328105,
+			"name": "North Point Hotel",
+			"area": "Denizli Centre",
+			"address": "Fevzi Cakmak Bulvari No:129",
+			"lat": 37.766049,
+			"lng": 29.100279,
+			"url": "https://www.booking.com/hotel/tr/north-point-denizli.html",
+			"score": 8.5,
+			"count": 86,
+			"stars": 4,
+			"total": 184.94,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews."
+		}
+	},
+	"trabzon-turkiye": {
+		"Best Value": {
+			"id": 1630673,
+			"name": "Funda Hotel",
+			"area": "Trabzon City Center",
+			"address": "Carsi Mah. Kazancilar Sokak No:1",
+			"lat": 41.008358,
+			"lng": 39.72488,
+			"url": "https://www.booking.com/hotel/tr/funda.html",
+			"score": 8.8,
+			"count": 1042,
+			"stars": 4,
+			"total": 136.99,
+			"checked": "27 Oct 2026",
+			"reason": "Central Trabzon City Center hotel rated 8.8 from 1,042 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"abu-dhabi-unitedarabemirates": {
+		"Best Value": {
+			"id": 1325511,
+			"name": "TRYP by Wyndham Abu Dhabi City Center",
+			"area": "Downtown Abu Dhabi",
+			"address": "Khalifah Bin Zayed The First Street",
+			"lat": 24.49565,
+			"lng": 54.366403,
+			"url": "https://www.booking.com/hotel/ae/tryp-by-wyndham-abu-dhabi.html",
+			"score": 8.2,
+			"count": 6090,
+			"stars": 4,
+			"total": 314.33,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Abu Dhabi hotel rated 8.2 from 6,090 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 72834,
+			"name": "Radisson Blu Hotel & Resort, Abu Dhabi Corniche",
+			"area": "Corniche",
+			"address": "Corniche Rd W, Al Khubeirah",
+			"lat": 24.463081,
+			"lng": 54.325437,
+			"url": "https://www.booking.com/hotel/ae/radisson-blu-hotel-and-resort-abu-dhabi-corniche.html",
+			"score": 9.1,
+			"count": 12559,
+			"stars": 5,
+			"total": 467.24,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Corniche, rated 9.1 from 12,559 Booking.com reviews."
+		}
+	},
+	"maidstone-unitedkingdom": {
+		"Budget": {
+			"id": 37351,
+			"name": "Orida Maidstone",
+			"area": "Weavering, Maidstone",
+			"address": "Bearsted Road, Weavering",
+			"lat": 51.285125,
+			"lng": 0.546114,
+			"url": "https://www.booking.com/hotel/gb/hilton-maidstone.html",
+			"score": 8.0,
+			"count": 5096,
+			"stars": 4,
+			"total": 271.89,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Weavering, Maidstone, rated 8.0 from 5,096 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 372817,
+			"name": "Miller & Carter Maidstone by Innkeeper's Collection",
+			"area": "Maidstone",
+			"address": "Sandling Road",
+			"lat": 51.279949,
+			"lng": 0.519793,
+			"url": "https://www.booking.com/hotel/gb/innkeeper-s-lodge-maidstone.html",
+			"score": 8.0,
+			"count": 1232,
+			"stars": 4,
+			"total": 334.34,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Maidstone rated 8.0/10 from 1,232 Booking.com reviews."
+		}
+	},
+	"norwich-united-kingdom": {
+		"Luxury": {
+			"id": 35715,
+			"name": "Holiday Inn Norwich, Ipswich Road by IHG",
+			"area": "Norwich",
+			"address": "Ipswich Road",
+			"lat": 52.600884,
+			"lng": 1.28098,
+			"url": "https://www.booking.com/hotel/gb/holiday-inn-norwich.html",
+			"score": 8.1,
+			"count": 1516,
+			"stars": 4,
+			"total": 339.12,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews."
+		}
+	},
+	"peterborough-unitedkingdom": {
+		"Luxury": {
+			"id": 222855,
+			"name": "The Bull Hotel; Sure Hotel Collection by Best Western",
+			"area": "Peterborough City Centre",
+			"address": "Westgate",
+			"lat": 52.574544,
+			"lng": -0.241957,
+			"url": "https://www.booking.com/hotel/gb/the-bullhotel.html",
+			"score": 8.4,
+			"count": 2405,
+			"stars": 4,
+			"total": 270.82,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews."
+		}
+	},
+	"southampton-united-kingdom": {
+		"Budget": {
+			"id": 177869,
+			"name": "The Elizabeth House Hotel",
+			"area": "Southampton",
+			"address": "42-44 The Avenue",
+			"lat": 50.919339,
+			"lng": -1.403879,
+			"url": "https://www.booking.com/hotel/gb/the-elizabeth-house.html",
+			"score": 8.1,
+			"count": 2920,
+			"stars": 3,
+			"total": 214.94,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews."
+		}
+	},
+	"doncaster-united-kingdom": {
+		"Budget": {
+			"id": 34495,
+			"name": "Regent Hotel Doncaster",
+			"area": "Doncaster Centre",
+			"address": "Regent Square",
+			"lat": 53.521831,
+			"lng": -1.127193,
+			"url": "https://www.booking.com/hotel/gb/regent-doncaster.html",
+			"score": 7.4,
+			"count": 559,
+			"stars": 3,
+			"total": 226.88,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews."
+		}
+	},
+	"akron-united-states": {
+		"Budget": {
+			"id": 1181735,
+			"name": "Hilton Garden Inn Akron",
+			"area": "East Akron",
+			"address": "1307 East Market Street",
+			"lat": 41.064962,
+			"lng": -81.480215,
+			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-akron.html",
+			"score": 8.3,
+			"count": 291,
+			"stars": 3,
+			"total": 400.92,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 5657933,
+			"name": "BLU-Tique, Akron, a Tribute Portfolio Hotel",
+			"area": "Downtown Akron",
+			"address": "1 S. Main Street",
+			"lat": 41.084908,
+			"lng": -81.516613,
+			"url": "https://www.booking.com/hotel/us/innquest-roommaster.html",
+			"score": 8.5,
+			"count": 58,
+			"stars": 4,
+			"total": 429.01,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews."
+		}
+	},
+	"atlanta-united-states": {
+		"Budget": {
+			"id": 28533,
+			"name": "Hampton Inn Atlanta-Georgia Tech-Downtown",
+			"area": "Downtown Atlanta",
+			"address": "244 North Avenue Northwest",
+			"lat": 33.770956,
+			"lng": -84.395728,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tech-downtown.html",
+			"score": 8.3,
+			"count": 432,
+			"stars": 3,
+			"total": 378.08,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews."
+		}
+	},
+	"bossier-city-united-states": {
+		"Luxury": {
+			"id": 183954,
+			"name": "Hilton Shreveport",
+			"area": "Downtown Shreveport",
+			"address": "104 Market Street, Shreveport",
+			"lat": 32.51747,
+			"lng": -93.751103,
+			"url": "https://www.booking.com/hotel/us/hilton-shreveport.html",
+			"score": 8.3,
+			"count": 284,
+			"stars": 4,
+			"total": 282.31,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews."
+		}
+	},
+	"bradenton-united-states": {
+		"Budget": {
+			"id": 192170,
+			"name": "Courtyard by Marriott Bradenton Sarasota/Riverfront",
+			"area": "Downtown Bradenton",
+			"address": "100 Riverfront Drive West",
+			"lat": 27.499283,
+			"lng": -82.565095,
+			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-bradenton-sarasota-riverfront.html",
+			"score": 8.2,
+			"count": 278,
+			"stars": 3,
+			"total": 221.69,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Bradenton, rated 8.2 from 278 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 713138,
+			"name": "Hampton Inn & Suites Bradenton",
+			"area": "Downtown Bradenton",
+			"address": "309 10th Street West",
+			"lat": 27.497067,
+			"lng": -82.571319,
+			"url": "https://www.booking.com/hotel/us/inn-amp-suites-bradenton.html",
+			"score": 8.6,
+			"count": 359,
+			"stars": 3,
+			"total": 340.78,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Bradenton hotel rated 8.6 from 359 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 11533728,
+			"name": "Palmetto Marriott Resort & Spa",
+			"area": "Palmetto riverfront",
+			"address": "600 US Hwy 41, Palmetto",
+			"lat": 27.521058,
+			"lng": -82.56048,
+			"url": "https://www.booking.com/hotel/us/palmetto-marriott-resort-spa.html",
+			"score": 8.8,
+			"count": 130,
+			"stars": 4,
+			"total": 431.3,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Palmetto riverfront rated 8.8/10 from 130 Booking.com reviews."
+		}
+	},
+	"bryan-united-states": {
+		"Best Value": {
+			"id": 334116,
+			"name": "Best Western Premier Bryan College Station",
+			"area": "Bryan",
+			"address": "1920 Austin's Colony Parkway",
+			"lat": 30.670329,
+			"lng": -96.334015,
+			"url": "https://www.booking.com/hotel/us/bryan-1920-austins-colony-parkway-texas.html",
+			"score": 8.5,
+			"count": 182,
+			"stars": 3,
+			"total": 209.48,
+			"checked": "27 Oct 2026",
+			"reason": "Central Bryan hotel rated 8.5 from 182 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 252179,
+			"name": "The LaSalle Hotel, Bryan College Station, a Tribute Portfolio Hotel",
+			"area": "Downtown Bryan",
+			"address": "120 South Main Street",
+			"lat": 30.67312,
+			"lng": -96.37381,
+			"url": "https://www.booking.com/hotel/us/lasalle-bryan-by-magnolia-hotels.html",
+			"score": 9.3,
+			"count": 29,
+			"stars": 3,
+			"total": 359.93,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Bryan rated 9.3/10 from 29 Booking.com reviews."
+		}
+	},
+	"cape-coral-united-states": {
+		"Best Value": {
+			"id": 181379,
+			"name": "Hampton Inn & Suites Cape Coral / Fort Myers",
+			"area": "Cape Coral",
+			"address": "619 South East 47th Terrace",
+			"lat": 26.563971,
+			"lng": -81.960074,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cape-coral.html",
+			"score": 7.8,
+			"count": 285,
+			"stars": 3,
+			"total": 248.43,
+			"checked": "27 Oct 2026",
+			"reason": "Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"columbia-united-states": {
+		"Budget": {
+			"id": 13206666,
+			"name": "Tru By Hilton Columbia Downtown",
+			"area": "Downtown Columbia",
+			"address": "400 Gervais Street",
+			"lat": 33.996891,
+			"lng": -81.045771,
+			"url": "https://www.booking.com/hotel/us/tru-by-hilton-columbia-downtown.html",
+			"score": 9.0,
+			"count": 281,
+			"stars": 3,
+			"total": 232.75,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews."
+		}
+	},
+	"dayton-united-states": {
+		"Best Value": {
+			"id": 263428,
+			"name": "Marriott at the University of Dayton",
+			"area": "University of Dayton",
+			"address": "1414 South Patterson Boulevard",
+			"lat": 39.737332,
+			"lng": -84.191194,
+			"url": "https://www.booking.com/hotel/us/dayton-marriott.html",
+			"score": 9.0,
+			"count": 139,
+			"stars": 3,
+			"total": 314.75,
+			"checked": "27 Oct 2026",
+			"reason": "Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"daytona-beach-united-states": {
+		"Budget": {
+			"id": 300526,
+			"name": "Hampton Inn Daytona Beach/Beachfront",
+			"area": "Daytona Beach Shores",
+			"address": "1024 North Atlantic Avenue",
+			"lat": 29.244627,
+			"lng": -81.016166,
+			"url": "https://www.booking.com/hotel/us/ocean-sands.html",
+			"score": 8.6,
+			"count": 411,
+			"stars": 3,
+			"total": 212.92,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Daytona Beach Shores, rated 8.6 from 411 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 7034376,
+			"name": "Nautilus Inn - Daytona Beach",
+			"area": "Daytona Beach oceanfront",
+			"address": "1515 South Atlantic Avenue",
+			"lat": 29.208419,
+			"lng": -80.998601,
+			"url": "https://www.booking.com/hotel/us/nautilus-inn-d.html",
+			"score": 8.6,
+			"count": 1807,
+			"stars": 4,
+			"total": 197.46,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Daytona Beach oceanfront rated 8.6/10 from 1,807 Booking.com reviews."
+		}
+	},
+	"fort-lauderdale-united-states": {
+		"Budget": {
+			"id": 1059164,
+			"name": "Victoria Park Hotel",
+			"area": "Victoria Park",
+			"address": "855 Northeast 20th Avenue",
+			"lat": 26.135904,
+			"lng": -80.119753,
+			"url": "https://www.booking.com/hotel/us/the-victoria-park.html",
+			"score": 8.6,
+			"count": 994,
+			"stars": 3,
+			"total": 289.32,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews."
+		}
+	},
+	"madison-united-states": {
+		"Budget": {
+			"id": 727789,
+			"name": "Hampton Inn & Suites Madison Downtown",
+			"area": "Downtown Madison",
+			"address": "440 West Johnson Street",
+			"lat": 43.073007,
+			"lng": -89.393299,
+			"url": "https://www.booking.com/hotel/us/johnson-street-suites-madison-downtown.html",
+			"score": 9.0,
+			"count": 477,
+			"stars": 3,
+			"total": 252.49,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Madison, rated 9.0 from 477 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 1116510,
+			"name": "The Edgewater",
+			"area": "Downtown Madison",
+			"address": "1001 Wisconsin Place",
+			"lat": 43.079214,
+			"lng": -89.390035,
+			"url": "https://www.booking.com/hotel/us/the-edgewater-madison1.html",
+			"score": 8.8,
+			"count": 148,
+			"stars": 4,
+			"total": 658.51,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Madison rated 8.8/10 from 148 Booking.com reviews."
+		}
+	},
+	"melbourne-united-states": {
+		"Budget": {
+			"id": 289964,
+			"name": "Hilton Melbourne, FL",
+			"area": "Melbourne",
+			"address": "200 Rialto Place",
+			"lat": 28.089916,
+			"lng": -80.625873,
+			"url": "https://www.booking.com/hotel/us/hilton-melbourne-rialto-place.html",
+			"score": 8.2,
+			"count": 273,
+			"stars": 3,
+			"total": 264.87,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Melbourne, rated 8.2 from 273 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 6956408,
+			"name": "Hotel Melby Downtown Melbourne Tapestry Collection By Hilton",
+			"area": "Downtown Melbourne",
+			"address": "801 E Strawbridge Ave.",
+			"lat": 28.079149,
+			"lng": -80.607313,
+			"url": "https://www.booking.com/hotel/us/melby-downtown-melbourne-tapestry-collection-by-hilton.html",
+			"score": 8.6,
+			"count": 404,
+			"stars": 4,
+			"total": 310.57,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Melbourne hotel rated 8.6 from 404 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"naples-florida-united-states": {
+		"Luxury": {
+			"id": 251000,
+			"name": "Naples Bay Resort and Marina",
+			"area": "Downtown Naples",
+			"address": "1500 5th Avenue South",
+			"lat": 26.138815,
+			"lng": -81.785397,
+			"url": "https://www.booking.com/hotel/us/naples-bay-resort.html",
+			"score": 9.1,
+			"count": 261,
+			"stars": 4,
+			"total": 1144.26,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 456800,
+			"name": "La Quinta by Wyndham Naples Downtown",
+			"area": "Downtown Naples",
+			"address": "1555 5th Avenue South",
+			"lat": 26.139511,
+			"lng": -81.783377,
+			"url": "https://www.booking.com/hotel/us/la-quinta-naples-downtown.html",
+			"score": 8.0,
+			"count": 2232,
+			"stars": 3,
+			"total": 190.66,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1067830,
+			"name": "Naples Park Central Hotel",
+			"area": "Downtown Naples",
+			"address": "40 Tamiami Trail North",
+			"lat": 26.147763,
+			"lng": -81.795395,
+			"url": "https://www.booking.com/hotel/us/naples-park-central.html",
+			"score": 8.8,
+			"count": 2388,
+			"stars": 3,
+			"total": 266.33,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"phoenix-united-states": {
+		"Luxury": {
+			"id": 358629,
+			"name": "Renaissance Phoenix Downtown Hotel",
+			"area": "Downtown Phoenix",
+			"address": "100 N 1st St",
+			"lat": 33.44936,
+			"lng": -112.07322,
+			"url": "https://www.booking.com/hotel/us/phoenix-50-eastadams.html",
+			"score": 7.6,
+			"count": 100,
+			"stars": 5,
+			"total": 993.56,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews."
+		}
+	},
+	"richmond-united-states": {
+		"Budget": {
+			"id": 298371,
+			"name": "Holiday Inn Express - Richmond Downtown by IHG",
+			"area": "Downtown Richmond",
+			"address": "201 East Cary Street",
+			"lat": 37.540739,
+			"lng": -77.443267,
+			"url": "https://www.booking.com/hotel/us/holiday-inn-express-richmond-downtown.html",
+			"score": 8.0,
+			"count": 633,
+			"stars": 2,
+			"total": 264.23,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Richmond, rated 8.0 from 633 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 8931296,
+			"name": "Moxy Richmond Downtown",
+			"area": "Downtown Richmond",
+			"address": "501 East Franklin Street",
+			"lat": 37.541082,
+			"lng": -77.438903,
+			"url": "https://www.booking.com/hotel/us/moxy-richmond-downtown.html",
+			"score": 8.0,
+			"count": 215,
+			"stars": 3,
+			"total": 298.87,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Richmond hotel rated 8.0 from 215 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"tampa-united-states": {
+		"Budget": {
+			"id": 4637639,
+			"name": "Home2 Suites By Hilton Tampa Downtown Channel District",
+			"area": "Channel District",
+			"address": "1155 East Kennedy Boulevard",
+			"lat": 27.950163,
+			"lng": -82.44849,
+			"url": "https://www.booking.com/hotel/us/home2-suites-by-hilton-tampa-downtown-channel-district.html",
+			"score": 8.9,
+			"count": 503,
+			"stars": 3,
+			"total": 591.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 522035,
+			"name": "Hotel Flor Tampa Downtown, Tapestry Collection By Hilton",
+			"area": "Downtown Tampa",
+			"address": "905 N. Florida Ave",
+			"lat": 27.95203,
+			"lng": -82.4586,
+			"url": "https://www.booking.com/hotel/us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton.html",
+			"score": 8.1,
+			"count": 235,
+			"stars": 4,
+			"total": 671.53,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews."
+		}
+	},
+	"taos-united-states": {
+		"Best Value": {
+			"id": 301489,
+			"name": "Hilton Tapestry Collection, Hotel Don Fernando De Taos",
+			"area": "Taos",
+			"address": "1005 Paseo Del Pueblo Sur",
+			"lat": 36.385403,
+			"lng": -105.5851,
+			"url": "https://www.booking.com/hotel/us/don-fernando.html",
+			"score": 8.0,
+			"count": 243,
+			"stars": 4,
+			"total": 230.94,
+			"checked": "27 Oct 2026",
+			"reason": "Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"tucson-united-states": {
+		"Best Value": {
+			"id": 7609839,
+			"name": "Hampton Inn Tucson Downtown, Az",
+			"area": "Downtown Tucson",
+			"address": "141 South Stone Ave.",
+			"lat": 32.219838,
+			"lng": -110.970627,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tucson-downtown-az.html",
+			"score": 8.8,
+			"count": 242,
+			"stars": 3,
+			"total": 284.99,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"dalat-vietnam": {
+		"Luxury": {
+			"id": 265264,
+			"name": "Dalat Palace Heritage Hotel",
+			"area": "Da Lat Centre",
+			"address": "02 Tran Phu, Ward 3",
+			"lat": 11.93671,
+			"lng": 108.440353,
+			"url": "https://www.booking.com/hotel/vn/dalat-palace.html",
+			"score": 8.7,
+			"count": 177,
+			"stars": 5,
+			"total": 198.31,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews."
+		}
+	},
+	"pune-india": {
+		"Budget": {
+			"id": 1060462,
+			"name": "Hotel Shreyas",
+			"area": "Deccan Gymkhana",
+			"address": "1242 B, Apte Road, Deccan Gymkhana",
+			"lat": 18.518179,
+			"lng": 73.84297,
+			"url": "https://www.booking.com/hotel/in/shreyas-pune.html",
+			"score": 7.9,
+			"count": 127,
+			"stars": 3,
+			"total": 68.58,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews."
+		}
+	},
+	"chesterfield-united-kingdom": {
+		"Budget": {
+			"id": 569844,
+			"name": "Olde House, Chesterfield by Marston's Inns",
+			"area": "Chesterfield",
+			"address": "Loundsley Green Road",
+			"lat": 53.251587,
+			"lng": -1.452727,
+			"url": "https://www.booking.com/hotel/gb/olde-house-by-marstons-inns.html",
+			"score": 8.3,
+			"count": 995,
+			"stars": 3,
+			"total": 260.91,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Chesterfield, rated 8.3 from 995 Booking.com reviews."
+		}
+	}
+};
+for (const [cid, v] of Object.entries(overrides_central_2710b)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
 var PICKS;
 function allPicks() {
 	if (!PICKS) PICKS = (async () => {
