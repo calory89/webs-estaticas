@@ -36,12 +36,12 @@ var KB = (function(){
 
 (function(){
   var f = document.getElementById('lf'), e = document.getElementById('le'); KB.pwToggle(f);
-  if (KB.get('kb-token')) KB.rpc('kolaboro_portal', { p_token: KB.get('kb-token') }).then(function(d){ if (d.user) location.href = '/portal'; });
+  if (KB.get('kb-token')) { if (KB.get('kb-role') === 'agent') location.href = '/agents/me'; else KB.rpc('kolaboro_portal', { p_token: KB.get('kb-token') }).then(function(d){ if (d.user) location.href = '/portal'; }); }
   f.addEventListener('submit', function(ev){
     ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
     KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){
       b.disabled = false;
-      if (d.token) { KB.set('kb-token', d.token); location.href = '/portal'; return; }
+      if (d.token) { KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
       e.textContent = d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : 'Wrong email or password.';
     }).catch(function(){ b.disabled = false; e.textContent = 'Network error. Try again.'; });
   });

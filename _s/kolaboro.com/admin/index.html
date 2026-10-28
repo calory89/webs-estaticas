@@ -30,12 +30,18 @@ input,select,textarea{font:inherit;padding:8px 10px;border:1px solid var(--line)
 .cl-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.cl-grid label{font-size:.8rem;font-weight:700;display:block}.cl-grid input,.cl-grid select,.cl-grid textarea{width:100%;margin-top:3px}
 .chat{max-height:320px;overflow:auto;display:flex;flex-direction:column;gap:8px;margin:10px 0}.chat div{padding:8px 11px;border-radius:12px;max-width:85%;white-space:pre-wrap;font-size:.9rem}.chat .a{background:#17212B;color:#fff;align-self:flex-end}.chat .u{background:#F2F1EC;align-self:flex-start}.chat small{display:block;opacity:.6;font-size:.7rem}
 @media (max-width:900px){.cl-wrap{grid-template-columns:1fr}.cl-grid{grid-template-columns:1fr}}
+
+.ag-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:12px}
+.ag-c{border:1px solid var(--line);border-radius:16px;padding:14px;background:#fff}.ag-c.review{border-color:#FF5B14;box-shadow:0 0 0 2px #FFE6D9}
+.ag-top{display:flex;gap:12px;align-items:center}.ag-top img{width:56px;height:56px;border-radius:50%;object-fit:cover}
+.ag-st{font-size:.72rem;font-weight:800;text-transform:uppercase;border-radius:999px;padding:2px 8px;background:#EEE}.ag-st.review{background:#FF5B14;color:#111}.ag-st.active{background:#1E9E6A;color:#fff}.ag-st.test{background:#FFF0C7}.ag-st.rejected{background:#FDE2D6}
+.ag-thumbs{display:flex;gap:6px;margin-top:8px}.ag-thumbs img{width:31%;border-radius:8px;cursor:zoom-in}
 </style></head><body>
 <div id="login"><h1 style="margin:0">Kolaboro admin</h1><p class="muted">Private dashboard. Enter the admin password.</p>
 <form id="lf"><input id="pw" type="password" autocomplete="current-password" placeholder="Password" required><button class="btn" style="width:100%">Open dashboard</button><p id="le" style="color:var(--bad)"></p></form></div>
 <div id="app" class="hide">
 <header><a href="/" style="background:none;padding:0;display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.1rem"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>Kolaboro admin</a><span class="muted" id="upd" style="color:#9fb0bf"></span><span class="sp"></span><button id="rf">Refresh</button><a href="/" target="_blank">Site ↗</a><button id="lo">Log out</button></header>
-<nav class="tabs"><button data-t="ov" class="on">Overview</button><button data-t="clients">Clients <span id="unr" class="pill" style="background:#FF5B14;color:#111;display:none"></span></button><button data-t="leads">Leads & emails</button><button data-t="pay">Payments</button><button data-t="tests">Tests & health</button><button data-t="tools">Analytics & tools</button></nav>
+<nav class="tabs"><button data-t="ov" class="on">Overview</button><button data-t="clients">Clients <span id="unr" class="pill" style="background:#FF5B14;color:#111;display:none"></span></button><button data-t="agents">Agents <span id="agn" class="pill" style="background:#FFE6D9;display:none"></span></button><button data-t="leads">Leads & emails</button><button data-t="pay">Payments</button><button data-t="tests">Tests & health</button><button data-t="tools">Analytics & tools</button></nav>
 <main>
 <section id="t-ov">
   <div class="kpis" id="kpis"></div>
@@ -47,6 +53,10 @@ input,select,textarea{font:inherit;padding:8px 10px;border:1px solid var(--line)
   <div class="kpis" id="ck"></div>
   <div class="cl-wrap"><div class="card cl-list"><div class="row"><input id="cq" placeholder="Search clients…" style="flex:1"></div><div id="clist"></div></div>
   <div class="card cl-detail" id="cdet"><p class="muted">Select a case.</p></div></div>
+</section>
+<section id="t-agents" class="hide">
+  <div class="kpis" id="agk"></div>
+  <div class="card"><div class="row"><input id="agq" placeholder="Search agents…" style="flex:1"><select id="agf"><option value="">All statuses</option><option>academy</option><option>test</option><option>review</option><option>active</option><option>rejected</option></select></div><div id="agl" class="ag-cards"></div></div>
 </section>
 <section id="t-leads" class="hide">
   <div class="card"><div class="row"><input id="q" placeholder="Search name, email, URL…" style="flex:1;min-width:200px"><select id="pf"><option value="">All types</option></select><select id="sf"><option value="">Any status</option><option>new</option><option>contacted</option><option>paid</option><option>no</option></select><button class="btn2" id="csv">Export CSV</button></div>
@@ -75,7 +85,7 @@ function when(t){var d=new Date(t),s=(Date.now()-d)/1000;if(s<3600)return Math.m
 function load(){ $('upd').textContent='Loading…'; return rpc('kolaboro_admin',{p_key:PW}).then(function(d){ if(d.error){ st('kb-admin',null); $('app').classList.add('hide'); $('login').classList.remove('hide'); $('le').textContent='Wrong password.'; return;} D=d; $('login').classList.add('hide'); $('app').classList.remove('hide'); render(); $('upd').textContent='Updated '+new Date().toTimeString().slice(0,5); })}
 $('lf').addEventListener('submit',function(e){e.preventDefault();PW=$('pw').value;st('kb-admin',PW);load()});
 $('lo').onclick=function(){st('kb-admin',null);location.reload()}; $('rf').onclick=load;
-document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','clients','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
+document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','clients','agents','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
 function cnt(f){return D.leads.filter(f).length}
 function ev(k){return D.events.filter(function(e){return e.kind===k}).length}
 function render(){
@@ -91,7 +101,7 @@ function render(){
   var act=L.slice(0,8).map(function(l){return {t:l.created_at,k:'Lead · '+(l.plan||'other'),x:l.email+(l.learn?' · '+l.learn:'')}}).concat(D.events.slice(0,8).map(function(e){return {t:e.created_at,k:'Event · '+e.kind,x:(e.ref||'')+' '+(e.page||'')}})).sort(function(a,b){return b.t<a.t?-1:1}).slice(0,12);
   $('act').innerHTML='<tr><th>When</th><th>What</th><th>Detail</th></tr>'+act.map(function(a){return '<tr><td>'+when(a.t)+'</td><td>'+esc(a.k)+'</td><td>'+esc(a.x).slice(0,160)+'</td></tr>'}).join('');
   var plans={};L.forEach(function(l){plans[l.plan||'other']=1});$('pf').innerHTML='<option value="">All types</option>'+Object.keys(plans).map(function(p){return '<option>'+esc(p)+'</option>'}).join('');
-  leads(); pays(); clients();
+  leads(); pays(); clients(); agLoad();
 }
 function flt(){var q=$('q').value.toLowerCase(),p=$('pf').value,s=$('sf').value;return D.leads.filter(function(l){return (!p||(l.plan||'other')===p)&&(!s||(l.status||'new')===s)&&(!q||JSON.stringify(l).toLowerCase().indexOf(q)>=0)})}
 function leads(){var r=flt();$('lt').innerHTML='<tr><th>When</th><th>Type</th><th>Name / email</th><th>Status</th><th>Country</th><th>Project / URL</th><th>Details</th></tr>'+r.map(function(l){var url=/^https?:/.test(l.learn||'')?'<a href="'+esc(l.learn)+'" target="_blank" rel="noopener">'+esc(l.learn.replace(/^https?:\/\/(www\.)?/,'').slice(0,40))+'</a>':esc(l.learn);
@@ -104,7 +114,7 @@ function pays(){var P=D.payments,tot={};P.forEach(function(p){tot[p.currency]=(t
   $('ptab').innerHTML='<tr><th>Date</th><th>Name / email</th><th>Amount</th><th>Product</th><th>PayPal ID</th><th></th></tr>'+P.map(function(p){return '<tr><td>'+esc(p.paid_at)+'</td><td>'+esc(p.name)+'<br>'+esc(p.email)+'</td><td><b>'+esc(p.currency)+' '+esc(p.amount)+'</b></td><td>'+esc(p.product)+'</td><td>'+esc(p.ref)+'</td><td><button class="btn2" data-del="'+p.id+'">Delete</button></td></tr>'}).join('')||'<tr><td>No payments recorded yet.</td></tr>';
   $('ptab').querySelectorAll('[data-del]').forEach(function(b){b.onclick=function(){if(confirm('Delete this payment?'))rpc('kolaboro_admin',{p_key:PW,p_action:'del_payment',p_payload:{id:b.dataset.del}}).then(load)}})}
 $('pform').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target),o={};f.forEach(function(v,k){if(v)o[k]=v});rpc('kolaboro_admin',{p_key:PW,p_action:'add_payment',p_payload:o}).then(function(){e.target.reset();load()})});
-var PAGES=['/','/check','/cases','/agents','/agents/visit','/developers','/research','/pricing','/yc','/portal/demo','/thanks','/login','/portal','/sitemap.xml','/robots.txt','/k/kolaboro-demo.mp4','/cases/files/kolaboro-report-example-safe-to-pay.pdf'];
+var PAGES=['/','/check','/cases','/agents','/agents/visit','/developers','/research','/pricing','/yc','/portal/demo','/thanks','/login','/portal','/agents/apply','/copilot','/sitemap.xml','/robots.txt','/k/kolaboro-demo.mp4','/cases/files/kolaboro-report-example-safe-to-pay.pdf'];
 function row(n,ok,d,ms){return '<tr><td><span class="st"><span class="dot '+(ok===true?'g':ok===false?'r':'y')+'"></span>'+esc(n)+'</span></td><td>'+d+'</td><td>'+(ms!=null?ms+' ms':'')+'</td></tr>'}
 function runTests(){var out=[],T=$('tt');T.innerHTML='<tr><td>Running…</td></tr>';
   var jobs=PAGES.map(function(p){var t0=performance.now();return fetch(p,{method:p.indexOf('.mp4')>0||p.indexOf('.pdf')>0?'HEAD':'GET',cache:'no-store'}).then(function(r){out.push(row('Page '+p,r.ok,'HTTP '+r.status,Math.round(performance.now()-t0)))}).catch(function(){out.push(row('Page '+p,false,'failed'))})});
@@ -147,6 +157,27 @@ function detail(u,c){ var r=(c.desk&&c.desk.report)||null;
   $('udel').onclick=function(){if(confirm('Delete '+u.email+' and all their cases? This cannot be undone.'))rpc('kolaboro_admin',{p_key:PW,p_action:'delete_user',p_payload:{user_id:u.id}}).then(function(){CSEL=null;load()})};
 }
 $('cq').addEventListener('input',clients);
+
+var AG = [];
+function agLoad(a, p){ return rpc('kolaboro_admin_agents', { p_key: PW, p_action: a || 'list', p_payload: p || {} }).then(function(d){ if (d.agents) { AG = d.agents; agRender(); } }); }
+function agRender(){
+  var q = ($('agq').value || '').toLowerCase(), f = $('agf').value, n = function(s){ return AG.filter(function(a){ return a.status === s; }).length; };
+  $('agn').style.display = n('review') ? 'inline-block' : 'none'; $('agn').textContent = n('review');
+  $('agk').innerHTML = [['Applicants', AG.length], ['In academy', n('academy')], ['Test visit', n('test')], ['To review', n('review')], ['Active', n('active')]].map(function(k){ return '<div class="kpi"><span>' + k[0] + '</span><b>' + k[1] + '</b></div>'; }).join('');
+  $('agl').innerHTML = AG.filter(function(a){ return (!f || a.status === f) && (!q || JSON.stringify([a.name, a.email, a.city, a.area, a.languages]).toLowerCase().indexOf(q) >= 0); }).map(function(a){
+    var av = a.availability || {}, wa = (a.phone || '').replace(/[^\d]/g, '');
+    return '<div class="ag-c ' + esc(a.status) + '"><div class="ag-top"><img src="' + esc(a.photo) + '" alt=""><div style="flex:1"><b>' + esc(a.name) + '</b> <span class="ag-st ' + esc(a.status) + '">' + esc(a.status) + '</span><br><small class="muted">' + esc(a.city) + (a.area ? ' · ' + esc(a.area) : '') + '</small></div></div>' +
+      '<p style="font-size:.85rem;margin:8px 0 0">' + esc(a.languages) + ' · ' + esc(a.transport) + ' · ' + esc(a.background) + '<br>' + (a.days_per_week || '?') + ' days/week · ' + esc((av.days || []).join(' ')) + ' ' + esc((av.slots || []).join(', ')) + (a.start_date ? ' · from ' + esc(a.start_date) : '') +
+      '<br>Exam: ' + (a.exam_score != null ? '<b>' + a.exam_score + '/' + a.exam_total + '</b>' : '—') + ' · joined ' + when(a.since) + (a.lat ? ' · <a target="_blank" href="https://maps.google.com/?q=' + a.lat + ',' + a.lng + '">map</a>' : '') + '</p>' +
+      (a.why ? '<details><summary style="font-size:.85rem">Why them</summary><p style="font-size:.85rem">' + esc(a.why) + '</p></details>' : '') +
+      (a.test_photos ? '<div class="ag-thumbs">' + a.test_photos.map(function(p){ return '<img src="' + esc(p.img) + '" title="' + esc(p.label + ' · ' + p.gps + ' · ' + p.at + ' · ±' + p.acc + 'm') + '" onclick="window.open().document.write(\'<img src=&quot;\'+this.src+\'&quot; style=max-width:100%>\')">'; }).join('') + '</div>' : '') +
+      '<div class="row" style="margin-top:10px"><a class="btn2" href="mailto:' + esc(a.email) + '">Email</a>' + (wa ? '<a class="btn2" target="_blank" href="https://wa.me/' + wa + '">WhatsApp</a>' : '') +
+      (a.status !== 'active' ? '<button class="btn" data-ag="' + a.id + '" data-s="active">Approve</button>' : '') + (a.status !== 'rejected' ? '<button class="btn2" data-ag="' + a.id + '" data-s="rejected">Reject</button>' : '') + (a.status === 'review' ? '<button class="btn2" data-ag="' + a.id + '" data-s="test">Ask new test</button>' : '') + '</div></div>';
+  }).join('') || '<p class="muted">No agent applications yet. They arrive from kolaboro.com/agents/apply.</p>';
+  $('agl').querySelectorAll('[data-ag]').forEach(function(b){ b.onclick = function(){ agLoad('set', { user_id: b.dataset.ag, status: b.dataset.s }); }; });
+}
+$('agq').addEventListener('input', agRender); $('agf').addEventListener('change', agRender);
+
 
 var LK=[['Google Analytics 4','https://analytics.google.com/analytics/web/','Traffic, sources, events (G-FJKJE77K4V)'],['Microsoft Clarity','https://clarity.microsoft.com/projects/view/z4eqcmaic7/dashboard','Recordings and heatmaps'],['Google Search Console','https://search.google.com/search-console?resource_id=sc-domain%3Akolaboro.com','Indexing, queries, sitemap'],['PayPal activity','https://www.paypal.com/myaccount/activities/','See payments, then record them here'],['Supabase (data)','https://supabase.com/dashboard/project/oykcsmextclpdnugixqz/editor','Tables kolaboro_applications, _events, _payments'],['Cloudflare Pages','https://dash.cloudflare.com/d275d2609c10aa655477fd7a47e9b443/pages/view/web-lovable','Deploys, secret ANTHROPIC_API_KEY'],['GitHub repo','https://github.com/calory89/webs-estaticas/tree/main/tools/kolaboro-site','Site source and worker'],['Research agent runs','https://github.com/calory89/webs-estaticas/actions/workflows/kolaboro-agent.yml','Weekly run, Mondays 06:17 UTC'],['Anthropic console','https://console.anthropic.com/settings/usage','AI cost of desk reviews'],['Desk review (live)','/check#analyze','Try the funnel yourself'],['Product tour','/yc','What YC sees'],['Buyer portal demo','/portal/demo','Demo data']];
 $('links').innerHTML=LK.map(function(l){return '<a href="'+l[1]+'" target="_blank" rel="noopener"><b>'+l[0]+' ↗</b><small>'+l[2]+'</small></a>'}).join('');

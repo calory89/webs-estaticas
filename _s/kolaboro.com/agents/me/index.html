@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agent dashboard | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=15">
+<script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+</head><body>
+<header class="ap-top"><div class="ap-top-in"><a class="ap-brand" href="/agents/me"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro <span style="font-weight:600;color:#FFB596;font-size:.85rem">agents</span></a><span class="ap-sp"></span><a class="ap-chip" href="/copilot">Copilot</a><a class="ap-chip" href="/agents/visit">Field app</a><button class="ap-chip" id="out">Log out</button></div></header>
+<main class="ap-main" id="app"><div class="ap-card"><div class="ap-skel" style="width:40%"></div><div class="ap-skel"></div></div></main>
+<script>
+var KB = (function(){
+  var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/', K = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  function rpc(fn, body){ return fetch(SB + fn, { method:'POST', headers:{ apikey:K, Authorization:'Bearer '+K, 'Content-Type':'application/json' }, body: JSON.stringify(body) }).then(function(r){ return r.json(); }); }
+  function get(k){ try { return sessionStorage.getItem(k) || localStorage.getItem(k); } catch(e){ return null; } }
+  function set(k, v, session){ try { (session ? sessionStorage : localStorage).setItem(k, v); } catch(e){} }
+  function del(k){ try { localStorage.removeItem(k); sessionStorage.removeItem(k); } catch(e){} }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function toast(t){ var d = document.createElement('div'); d.className = 'ap-toast'; d.textContent = t; document.body.appendChild(d); setTimeout(function(){ d.classList.add('on'); }, 10); setTimeout(function(){ d.classList.remove('on'); setTimeout(function(){ d.remove(); }, 400); }, 2600); }
+  function pwToggle(root){ (root || document).querySelectorAll('.ap-pw button').forEach(function(b){ b.onclick = function(){ var i = b.previousElementSibling; i.type = i.type === 'password' ? 'text' : 'password'; b.textContent = i.type === 'password' ? 'Show' : 'Hide'; }; }); }
+  function meter(inp, bar){ inp.addEventListener('input', function(){ var v = inp.value, s = 0; if (v.length >= 8) s++; if (v.length >= 12) s++; if (/[A-Z]/.test(v) && /[a-z]/.test(v)) s++; if (/\d/.test(v)) s++; if (/[^\w]/.test(v)) s++; bar.style.width = (s * 20) + '%'; bar.style.background = s < 2 ? '#B42318' : s < 4 ? '#B7791F' : '#0B7A55'; }); }
+  return { rpc:rpc, get:get, set:set, del:del, esc:esc, toast:toast, pwToggle:pwToggle, meter:meter };
+})();
+
+function kbResize(file, max, q){ return new Promise(function(res, rej){ var r = new FileReader(); r.onload = function(){ var im = new Image(); im.onload = function(){ var s = Math.min(1, max / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); res({ canvas: c, url: c.toDataURL('image/jpeg', q || .78) }); }; im.onerror = rej; im.src = r.result; }; r.onerror = rej; r.readAsDataURL(file); }); }
+
+(function(){
+  var TOKEN = KB.get('kb-token'); if (!TOKEN) { location.href = '/login'; return; }
+  var $ = function(i){ return document.getElementById(i); }, esc = KB.esc, A = null, q = new URLSearchParams(location.search);
+  var FLOW = [['applied','Applied'],['academy','Academy & exam'],['test','Test visit'],['review','Review'],['active','Active']];
+  function call(a, p){ return KB.rpc('kolaboro_agent', { p_token: TOKEN, p_action: a || 'me', p_payload: p || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); location.href = '/login'; } return d; }); }
+  function load(a, p){ return call(a, p).then(function(d){ if (d.error) { KB.toast(d.error === 'photos' ? 'Take all 3 photos first' : 'Could not save'); return; } A = d.agent; render(); }); }
+  function idx(s){ return s === 'rejected' ? -1 : FLOW.map(function(x){ return x[0]; }).indexOf(s); }
+  function render(){
+    var a = A, i = idx(a.status), h = '';
+    if (q.get('welcome')) h += '<div class="ap-banner ok">✓ Your agent account is ready. Next: the free academy and a 10-question exam.</div>';
+    h += '<div class="ap-grid"><div class="ap-col">';
+    h += '<section class="ap-card ap-hero"><div style="display:flex;gap:16px;align-items:center;position:relative;z-index:1"><img src="' + esc(a.photo) + '" alt="" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #FF5B14"><div><p class="ap-k">Kolaboro agent · ' + esc(a.city) + (a.area ? ' · ' + esc(a.area) : '') + '</p><h1 style="margin:2px 0">' + esc(a.name) + '</h1></div></div>' +
+      '<ol class="ap-steps" style="grid-template-columns:repeat(5,1fr)">' + FLOW.map(function(f, k){ return '<li class="' + (k < i || (k === i && f[0] === 'active') ? 'done' : k === i ? 'now' : '') + '">' + f[1] + '</li>'; }).join('') + '</ol>' +
+      '<div class="ap-now"><span class="ap-k">Your next step</span><div style="margin-top:4px">' + next(a) + '</div></div></section>';
+    h += taskCard(a);
+    h += '</div><div class="ap-col">';
+    h += '<section class="ap-card"><h2>How you earn</h2><p>€40 per site visit and €150 per full pre-purchase check. Active agents typically do 6–20 visits a month: roughly €300–€1,200 a month, paid by Kolaboro, never by developers.</p><p class="ap-small ap-muted">Paid monthly by bank transfer or Wise. Agents are paid the same whatever they find.</p></section>';
+    h += '<section class="ap-card"><h2>Your availability</h2><form id="avf" class="ap-form"><label>Days a week<select name="days_per_week">' + [1,2,3,4,5,6,7].map(function(n){ return '<option' + (n == a.days_per_week ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select></label><label>WhatsApp<input name="phone" value="' + esc(a.phone) + '"></label>' +
+      '<div class="full ag-chips" style="margin:0">' + ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(function(d){ var on = a.availability && (a.availability.days || []).indexOf(d) >= 0; return '<label><input type="checkbox" name="day" value="' + d + '"' + (on ? ' checked' : '') + '><span>' + d + '</span></label>'; }).join('') + '</div>' +
+      '<label class="full">Area<input name="area" value="' + esc(a.area) + '"></label><div class="full"><button class="ap-btn" type="submit">Save</button></div></form></section>';
+    h += '<section class="ap-card"><h2>Your profile</h2><p class="ap-small">' + esc(a.email) + '<br>' + esc(a.languages) + ' · ' + esc(a.transport) + '<br>' + esc(a.background) + '</p>' + (a.exam_score != null ? '<p class="ap-small">Exam: <b>' + a.exam_score + '/' + a.exam_total + '</b></p>' : '') + '</section>';
+    h += '</div></div>';
+    $('app').innerHTML = h;
+    $('avf').onsubmit = function(ev){ ev.preventDefault(); var f = ev.target; load('update', { days_per_week: f.days_per_week.value, phone: f.phone.value, area: f.area.value, city: a.city, languages: a.languages, transport: a.transport, availability: { days: [].map.call(f.querySelectorAll('input[name=day]:checked'), function(x){ return x.value; }), slots: (a.availability || {}).slots || [] } }).then(function(){ KB.toast('Saved'); }); };
+    bindTest();
+  }
+  function next(a){
+    return { academy: 'Read the 10 short lessons, then pass the exam (7 of 10). Your result is saved here automatically.', test: 'You passed the exam. Do one test visit: 3 GPS-stamped photos of any construction site near you.', review: 'We are reviewing your test visit. Usually within 2 working days.', active: 'You are active. We send you cases in ' + esc(a.city) + ' by WhatsApp and email.', rejected: 'Thank you for applying. We can\'t offer you cases right now.' }[a.status] || 'Next: the academy.';
+  }
+  function taskCard(a){
+    if (a.status === 'academy') return '<section class="ap-card"><h2>Academy</h2><p>Ten lessons on land titles, permits, payment plans and red flags. About 2 hours in total.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="ap-btn" href="/academy/1">Start lesson 1</a><a class="ap-btn2" href="/academy/exam">Take the exam</a></div>' + (a.exam_score != null ? '<p class="ap-small ap-muted">Best score so far: ' + a.exam_score + '/' + a.exam_total + '. You need 7.</p>' : '') + '</section>';
+    if (a.status === 'test') return '<section class="ap-card" id="tst"><h2>Test visit</h2><p>Go to any construction site near you (from the street is fine; don\'t enter without permission). Take these 3 photos. We stamp each one with GPS, time and a fingerprint.</p>' +
+      ['Wide shot of the whole site','A detail of the structure (columns, walls or roof)','Any sign, plot marker or permit board'].map(function(t, k){ return '<label class="ag-shot"><input type="file" accept="image/*" capture="environment" data-k="' + k + '" hidden><span class="ag-n">' + (k + 1) + '</span><span class="ag-t">' + t + '</span><img alt="" hidden></label>'; }).join('') +
+      '<p class="ap-small ap-muted" id="tgeo">We ask for your location when you take the first photo.</p><button class="ap-btn" id="tsend" disabled>Send my test visit</button></section>';
+    if (a.status === 'review' || a.status === 'active') return a.test_photos ? '<section class="ap-card"><h2>Your test visit</h2><div class="ag-grid">' + a.test_photos.map(function(p){ return '<figure><img src="' + esc(p.img) + '" alt=""><figcaption>' + esc(p.label) + '<br><small>' + esc(p.gps) + ' · ' + esc(p.at) + '</small></figcaption></figure>'; }).join('') + '</div></section>' : '';
+    return '';
+  }
+  function bindTest(){
+    var shots = [], pos = null, inputs = document.querySelectorAll('.ag-shot input'); if (!inputs.length) return;
+    var labels = ['Wide shot','Structure detail','Sign or marker'];
+    function getPos(){ return new Promise(function(res){ if (pos) return res(pos); if (!navigator.geolocation) return res(null); navigator.geolocation.getCurrentPosition(function(p){ pos = p.coords; $('tgeo').textContent = '📍 ' + pos.latitude.toFixed(5) + ', ' + pos.longitude.toFixed(5) + ' ±' + Math.round(pos.accuracy) + ' m'; res(pos); }, function(){ $('tgeo').textContent = 'Location blocked: allow it in your browser so the photos carry GPS proof.'; res(null); }, { enableHighAccuracy:true, timeout:15000 }); }); }
+    inputs.forEach(function(inp){ inp.onchange = function(){ var fl = inp.files[0]; if (!fl) return; var k = +inp.dataset.k; getPos().then(function(p){ return kbResize(fl, 1280, .72).then(function(r){
+      var c = r.canvas, x = c.getContext('2d'), at = new Date().toISOString().replace('T',' ').slice(0,19) + ' UTC', gps = p ? p.latitude.toFixed(5) + ', ' + p.longitude.toFixed(5) : 'no GPS';
+      x.fillStyle = 'rgba(23,33,43,.78)'; x.fillRect(0, c.height - 46, c.width, 46); x.fillStyle = '#fff'; x.font = 'bold 18px sans-serif'; x.fillText('KOLABORO · ' + gps + ' · ' + at, 12, c.height - 17);
+      var img = c.toDataURL('image/jpeg', .72);
+      return crypto.subtle.digest('SHA-256', new TextEncoder().encode(img)).then(function(hb){ var hx = [].map.call(new Uint8Array(hb), function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+        shots[k] = { img: img, label: labels[k], gps: gps, at: at, sha256: hx, acc: p ? Math.round(p.accuracy) : null };
+        var im = inp.parentNode.querySelector('img'); im.src = img; im.hidden = false; inp.parentNode.classList.add('done');
+        $('tsend').disabled = shots.filter(Boolean).length < 3; });
+    }); }); }; });
+    $('tsend').onclick = function(){ var b = this; b.disabled = true; b.textContent = 'Sending…'; load('test', { photos: shots }).then(function(){ KB.toast('Test visit sent'); }); };
+  }
+  $('out').onclick = function(){ call('logout').then(function(){ KB.del('kb-token'); KB.del('kb-role'); location.href = '/login'; }); };
+  load('me');
+})();
+</script></body></html>

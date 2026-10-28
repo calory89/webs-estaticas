@@ -30,6 +30,7 @@ var KB = (function(){
   if (q.get('as')) { KB.set('kb-token-as', q.get('as'), true); history.replaceState(null, '', '/portal'); }
   var TOKEN = KB.get('kb-token-as') || KB.get('kb-token'), D = null, CUR = null, deskBusy = {};
   if (!TOKEN) { location.href = '/login'; return; }
+  if (!KB.get('kb-token-as') && KB.get('kb-role') === 'agent') { location.href = '/agents/me'; return; }
   var $ = function(i){ return document.getElementById(i); }, esc = KB.esc;
   function call(action, payload){ return KB.rpc('kolaboro_portal', { p_token: TOKEN, p_action: action || 'me', p_payload: payload || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; } return d; }); }
   function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(undefined, { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
