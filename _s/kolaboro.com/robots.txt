@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /admin
 Allow: /
 Disallow: /old/
 Sitemap: https://kolaboro.com/sitemap.xml
