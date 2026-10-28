@@ -187,13 +187,16 @@ def build_about():
       <li><b>Honest developers deserve to win.</b> A public record rewards the ones who build what they sell.</li></ul>
   </div>
   <div>
-    <div class="tile"><h3>Founder</h3><p style="font-weight:700;color:var(--ink);margin-top:6px">Carlos de Ory</p>
+    <div class="tile"><h3>Founders</h3><p style="font-weight:700;color:var(--ink);margin-top:6px">Carlos de Ory, CEO</p>
       <ul><li>Has sold over €15M of real estate to international buyers</li><li>11 years building online businesses in affiliate and performance marketing</li><li>Runs travel media with more than 400,000 followers</li><li>Started his career in talent acquisition at Robert Half and Kraft Heinz</li></ul>
-      <p>Spanish, based in Denmark, working across Europe and Indonesia.</p></div>
-    <div class="note-box" style="margin-top:20px"><b>Want to help build this?</b> We're looking for local agents, a co-founder with legal or fintech experience, and investors. <a href="/investors">Talk to us</a></div>
+      <p>Spanish, based in Denmark. Leads product, AI and growth.</p>
+      <p style="font-weight:700;color:var(--ink);margin-top:18px">Lisa Mikolajewicz, co-founder</p>
+      <ul><li>10 years in recruiting, hiring and managing teams</li><li>Leads how we find, vet and train local agents in every new city</li><li>Leads partnerships with developers</li></ul>
+      <p>Danish, based in Denmark. Carlos and Lisa met at the hackathons for entrepreneurs he organizes.</p></div>
+    <div class="note-box" style="margin-top:20px"><b>Want to help build this?</b> We're looking for local agents in Bali and Mexico, and for investors. <a href="/investors">Talk to us</a></div>
   </div>
 </div></section>'''
-    return page('/about', 'About Kolaboro', "Kolaboro's mission, beliefs and founder: making it safe to buy property anywhere on Earth.", body)
+    return page('/about', 'About Kolaboro', "Kolaboro's mission, beliefs and founders: making it safe to buy property anywhere on Earth.", body)
 
 def build_roadmap():
     cols = [("Now", ["Bali launch: first verified projects", "Recruiting and training our first agents", "Pre-purchase checks and construction monitoring", "Public Trust Score method"]),
