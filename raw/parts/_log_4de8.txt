@@ -12,3 +12,6 @@
   26.5 min | europe/belgium bajado: 0.65 GB en 179 s (libres 12.1 GB)
   27.1 min | europe/belgium 31723 elementos
   27.1 min | parte europe/belgium 30301 elementos
+  29.2 min | north-america/us/virginia bajado: 0.40 GB en 94 s (libres 12.3 GB)
+  29.7 min | north-america/us/virginia 13038 elementos
+  29.7 min | parte north-america/us/virginia 11774 elementos
