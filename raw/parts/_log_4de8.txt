@@ -1,0 +1,4 @@
+   0.2 min | osmium osmium version 1.16.0 | disco /mnt/osm 13 GB libres
+   5.8 min | russia bajado: 3.90 GB en 337 s (libres 9.1 GB)
+   9.7 min | russia 202888 elementos
+   9.7 min | parte russia 186001 elementos
