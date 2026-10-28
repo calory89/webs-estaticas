@@ -47,3 +47,6 @@
   26.4 min | asia/lebanon bajado: 0.05 GB en 23 s (libres 12.7 GB)
   26.4 min | asia/lebanon 2362 elementos
   26.4 min | parte asia/lebanon 2347 elementos
+  26.8 min | europe/luxembourg bajado: 0.04 GB en 5 s (libres 12.7 GB)
+  26.9 min | europe/luxembourg 2210 elementos
+  26.9 min | parte europe/luxembourg 2083 elementos
