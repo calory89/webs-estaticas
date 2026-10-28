@@ -36,3 +36,6 @@
   39.2 min | north-america/us/nevada bajado: 0.12 GB en 30 s (libres 12.6 GB)
   39.3 min | north-america/us/nevada 4445 elementos
   39.3 min | parte north-america/us/nevada 3923 elementos
+  44.3 min | north-america/us/kansas bajado: 0.11 GB en 9 s (libres 12.6 GB)
+  44.4 min | north-america/us/kansas 5543 elementos
+  44.4 min | parte north-america/us/kansas 5359 elementos
