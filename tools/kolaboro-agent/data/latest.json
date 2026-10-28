@@ -5,16 +5,17 @@
   "claims": {
    "price_from": null,
    "currency": null,
-   "title_type": "leasehold",
-   "lease_years_base": 40,
-   "extension_promised": true,
-   "guaranteed_language": true,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "completion_year": null,
    "permit_claim": false,
    "quotes": []
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "4f5ec144d3068dd5",
   "checked": "2026-10-28"
  },
  "nara-villas": {
@@ -33,7 +34,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "suku-residences": {
   "name": "Suku Residences",
@@ -51,7 +53,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "oasis-iii": {
   "name": "Oasis III",
@@ -59,16 +62,21 @@
   "claims": {
    "price_from": 360000,
    "currency": "USD",
-   "title_type": "leasehold",
-   "lease_years_base": 30,
-   "extension_promised": false,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 12,
    "completion_year": 2026,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Price from 360,000 USD ROI forecast 12–14% Handover Q4 2026",
+    "An intimate complex of apartments and smart villas in Berawa, Canggu.",
+    "A format for personal residence, holidays or rental, just minutes from the beach"
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "4cbf217ea06f2317",
   "checked": "2026-10-28"
  },
  "elysium-eco-city": {
@@ -87,7 +95,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "magnum-resort-sanur": {
   "name": "Magnum Resort Sanur",
@@ -105,7 +114,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "amani-melasti": {
   "name": "Amani Melasti by Wyndham",
@@ -123,7 +133,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "lyvin-uluwatu": {
   "name": "Lyvin Uluwatu Apartments",
@@ -138,9 +149,14 @@
    "advertised_yield_pct": null,
    "completion_year": 2028,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "the land is held on a 35-years leasehold, with a priority right to extend for a further 20 years",
+    "Completion: Q4 2028.",
+    "Properties are acquired on a long-term sublease basis."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "930b39a2b6a54985",
   "checked": "2026-10-28"
  },
  "temple-heights": {
@@ -159,7 +175,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "serenity-village": {
   "name": "Serenity Village",
@@ -174,9 +191,14 @@
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Same risk insurance and notarized 30-year leasehold (with extension rights) as in our premium products.",
+    "Serenity Village 25 villas — a comfortable entry point into Bali yield-generating real estate.",
+    "Q3 2027 Handover from Rp 2.27B"
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "41dfd3ac4f6061ef",
   "checked": "2026-10-28"
  },
  "manta-livin": {
@@ -189,12 +211,17 @@
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 22,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Starting from $95,000",
+    "Completion is scheduled for the fourth quarter of 2027 on a leasehold basis",
+    "with a developer-projected 22 percent annual return"
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "af98b696d9486627",
   "checked": "2026-10-28"
  },
  "prive-pererenan": {
@@ -213,42 +240,53 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "core-villas": {
   "name": "Core Villas",
   "url": "https://www.coreconceptliving.com",
   "claims": {
-   "price_from": 246000,
-   "currency": "USD",
-   "title_type": "leasehold",
-   "lease_years_base": 27,
-   "extension_promised": false,
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "completion_year": null,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "The final Phase 1 villas are selling now. See plots, pricing & returns",
+    "Long-stay residences, opening Q3 2027. Join the residence waitlist",
+    "For homeowners, a lasting investment."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "7d8b8fbf1fc5b71b",
   "checked": "2026-10-28"
  },
  "segara": {
   "name": "Segara",
   "url": "https://axoradevelopments.com",
   "claims": {
-   "price_from": 79000,
-   "currency": "USD",
+   "price_from": null,
+   "currency": null,
    "title_type": "leasehold",
-   "lease_years_base": 34,
+   "lease_years_base": null,
    "extension_promised": true,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "completion_year": null,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Segara is held under a secure leasehold-with-extension structure managed by Axora and your appointed notary",
+    "with the option of a PT PMA company for full freehold-style control",
+    "Segara is a lifestyle you own, and an income you keep."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "a0a759ba633b6b05",
   "checked": "2026-10-28"
  },
  "coco-hills": {
@@ -267,7 +305,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "vodopad": {
   "name": "VODOPAD",
@@ -278,21 +317,26 @@
    "title_type": "leasehold",
    "lease_years_base": 30,
    "extension_promised": true,
-   "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 14,
    "completion_year": 2026,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Работающий актив - от 14% в год.",
+    "LEASEHOLD 30 ЛЕТ · ПРОДЛЕНИЕ +25",
+    "Капитал размещён - доходность обеспечена."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "22dc088f84b5aae7",
   "checked": "2026-10-28"
  },
  "aravita-residence": {
   "name": "Aravita Residence",
   "url": "https://aravitaresidence.com",
   "claims": {
-   "price_from": 175000,
-   "currency": "USD",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
@@ -300,9 +344,14 @@
    "advertised_yield_pct": null,
    "completion_year": 2028,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Construction completion Q3 2028",
+    "Interest-free installment plan from the developer",
+    "Commissioning is scheduled for Q3 2028, with construction starting in Q1 2026."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "00a9ba16a0b904c0",
   "checked": "2026-10-28"
  },
  "natha-loka": {
@@ -313,14 +362,19 @@
    "currency": "USD",
    "title_type": "leasehold",
    "lease_years_base": 30,
-   "extension_promised": false,
+   "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "advertised_yield_pct": 14,
+   "completion_year": null,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Starting from $191,000",
+    "The developer forecasts a 14 to 17 percent return",
+    "Held on a 30-year leasehold with transferable ownership and flexible payment options."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "d0ad707521017c6c",
   "checked": "2026-10-28"
  },
  "biom": {
@@ -331,14 +385,19 @@
    "currency": "USD",
    "title_type": "leasehold",
    "lease_years_base": 50,
-   "extension_promised": false,
+   "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 12,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Est. ROI 12%",
+    "Priced from 145,000 dollars with a projected 12 percent return.",
+    "Handover is scheduled for the fourth quarter of 2027 on a 50-year leasehold"
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "4d62160c3c4a9db8",
   "checked": "2026-10-28"
  },
  "anjuna-bay": {
@@ -357,7 +416,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  },
  "octasun": {
   "name": "OctaSun Residence",
@@ -369,12 +429,17 @@
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 12,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "The developer projects up to 12 percent annual return in dollars.",
+    "Pre-sale is open, with completion in 2027 on a leasehold basis.",
+    "Priced from 273,000 dollars."
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "91b8f2078ee2e7e8",
   "checked": "2026-10-28"
  },
  "j-hills": {
@@ -390,9 +455,14 @@
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Delivery is scheduled for the second quarter of 2027 on a leasehold basis.",
+    "Priced from 99,900 dollars.",
+    "Est. ROI On request"
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "ee48f9370c0df60c",
   "checked": "2026-10-28"
  },
  "secret-inshi": {
@@ -408,9 +478,14 @@
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Starting from $95,400",
+    "Delivery is scheduled for the first quarter of 2027 on a leasehold basis.",
+    "Est. ROI On request"
+   ]
   },
-  "source": "seed",
+  "source": "ai",
+  "hash": "c725189697bee53e",
   "checked": "2026-10-28"
  },
  "bingin-ocean-villas": {
@@ -429,6 +504,7 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-10-28"
+  "checked": "2026-10-28",
+  "last_error": "no JSON in answer"
  }
 }
