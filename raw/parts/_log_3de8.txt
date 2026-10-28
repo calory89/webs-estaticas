@@ -24,3 +24,6 @@
   12.4 min | north-america/us/oregon bajado: 0.24 GB en 14 s (libres 12.6 GB)
   12.7 min | north-america/us/oregon 12431 elementos
   12.7 min | parte north-america/us/oregon 12003 elementos
+  12.8 min | north-america/us/oklahoma bajado: 0.16 GB en 10 s (libres 12.7 GB)
+  13.0 min | north-america/us/oklahoma 4807 elementos
+  13.0 min | parte north-america/us/oklahoma 4706 elementos
