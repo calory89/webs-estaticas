@@ -205,7 +205,8 @@ def build_roadmap():
     body += f'<section class="sec"><div class="wrap grid3">{html_}</div></section>'
     return page('/roadmap', 'Roadmap | Kolaboro', "Kolaboro's public roadmap: what we're building now, next and later.", body)
 
-CHANGELOG = [("28 Oct 2026", ["Agent pay and developer fees published, with an earnings estimator", "Agent recruitment page in Bahasa Indonesia", "Guides: 20 questions to ask a developer, and seven contract clauses that protect buyers", "Cookie choice for visitors in Europe"]),
+CHANGELOG = [("28 Oct 2026", ["Kolaboro Research Agent: our own AI agent, built on Claude, tracks what Bali developers advertise", "Bali now, Mexico next", "Share any tool result as an image"]),
+             ("28 Oct 2026", ["Agent pay and developer fees published, with an earnings estimator", "Agent recruitment page in Bahasa Indonesia", "Guides: 20 questions to ask a developer, and seven contract clauses that protect buyers", "Cookie choice for visitors in Europe"]),
              ("27 Oct 2026", ["Two-step form, role-specific benefits and a fix for the role buttons on mobile", "Spanish home page", "Full agent academy with ten lessons and an entry exam", "Interactive demo, contract first pass, payment plan checker and developer self-check", "About, roadmap, press kit and glossary"]),
              ("27 Oct 2026", ["Five destination guides: Dubai, Phuket, Tulum, the Algarve and Lombok", "Off-plan risk calculator and buyer survey", "Embeddable Trust Score badge and public projects data file"]),
              ("27 Oct 2026", ["Trust Score method with nine weighted checks and red-flag caps", "Sample project page and sample inspection report", "Pricing, FAQ and the 20-point checklist"]),

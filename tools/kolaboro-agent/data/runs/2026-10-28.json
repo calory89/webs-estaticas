@@ -1,0 +1,445 @@
+{
+ "run": {
+  "date": "2026-10-28",
+  "mode": "seed",
+  "pages_ok": 0,
+  "pages_failed": 0,
+  "changes": 0,
+  "model": null,
+  "usd_estimate": 0.0
+ },
+ "latest": {
+  "every-bali": {
+   "name": "EVERY Bali",
+   "url": "https://every-bali.com",
+   "claims": {
+    "price_from": null,
+    "currency": null,
+    "title_type": "leasehold",
+    "lease_years_base": 40,
+    "extension_promised": true,
+    "guaranteed_language": true,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "nara-villas": {
+   "name": "Nara Villas",
+   "url": "https://www.balitecture.com/developments/nara-villas",
+   "claims": {
+    "price_from": 269000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 30,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "suku-residences": {
+   "name": "Suku Residences",
+   "url": "https://www.balitecture.com/developments/suku-residences",
+   "claims": {
+    "price_from": 355000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 30,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "oasis-iii": {
+   "name": "Oasis III",
+   "url": "https://breig-property.com/projects",
+   "claims": {
+    "price_from": 360000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 30,
+    "extension_promised": false,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2026,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "elysium-eco-city": {
+   "name": "ELYSIUM Eco City",
+   "url": "https://breig-property.com/projects/elysium-eco-city",
+   "claims": {
+    "price_from": 97000,
+    "currency": "USD",
+    "title_type": null,
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2028,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "magnum-resort-sanur": {
+   "name": "Magnum Resort Sanur",
+   "url": "https://magnumestate.com/sanur",
+   "claims": {
+    "price_from": 531000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "amani-melasti": {
+   "name": "Amani Melasti by Wyndham",
+   "url": "https://www.teus-group.com",
+   "claims": {
+    "price_from": 96000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "lyvin-uluwatu": {
+   "name": "Lyvin Uluwatu Apartments",
+   "url": "https://lyvinproperties.co/uluwatu",
+   "claims": {
+    "price_from": 396000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 35,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2028,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "temple-heights": {
+   "name": "Temple Heights",
+   "url": "https://investlandbali.com",
+   "claims": {
+    "price_from": 182000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 25,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": null,
+    "permit_claim": true,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "serenity-village": {
+   "name": "Serenity Village",
+   "url": "https://www.globalbalihome.com",
+   "claims": {
+    "price_from": 2270000000,
+    "currency": "IDR",
+    "title_type": "leasehold",
+    "lease_years_base": 30,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "manta-livin": {
+   "name": "Manta Livin",
+   "url": "https://offplan.so/projects/manta-livin-uluwatu",
+   "claims": {
+    "price_from": 95000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "prive-pererenan": {
+   "name": "Privé Pererenan",
+   "url": "https://urbanescape.id/prive",
+   "claims": {
+    "price_from": 248000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 32,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "core-villas": {
+   "name": "Core Villas",
+   "url": "https://www.coreconceptliving.com",
+   "claims": {
+    "price_from": 246000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 27,
+    "extension_promised": false,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "segara": {
+   "name": "Segara",
+   "url": "https://axoradevelopments.com",
+   "claims": {
+    "price_from": 79000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 34,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "coco-hills": {
+   "name": "COCO Hills Resort",
+   "url": "https://cocodevelopmentgroup.com",
+   "claims": {
+    "price_from": 131967,
+    "currency": "EUR",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "vodopad": {
+   "name": "VODOPAD",
+   "url": "https://movepropertygroup.com",
+   "claims": {
+    "price_from": 69000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 30,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2026,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "aravita-residence": {
+   "name": "Aravita Residence",
+   "url": "https://aravitaresidence.com",
+   "claims": {
+    "price_from": 175000,
+    "currency": "USD",
+    "title_type": null,
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2028,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "natha-loka": {
+   "name": "Natha Loka Eco Village",
+   "url": "https://offplan.so/projects/natha-loka-tabanan",
+   "claims": {
+    "price_from": 191000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 30,
+    "extension_promised": false,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "biom": {
+   "name": "Biom",
+   "url": "https://offplan.so/projects/biom-nuanu",
+   "claims": {
+    "price_from": 145000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": 50,
+    "extension_promised": false,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "anjuna-bay": {
+   "name": "The Anjuna Bay",
+   "url": "https://offplan.so/projects/the-anjuna-bay-uluwatu",
+   "claims": {
+    "price_from": 190000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": true,
+    "advertised_yield_pct": null,
+    "completion_year": null,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "octasun": {
+   "name": "OctaSun Residence",
+   "url": "https://offplan.so/projects/octa-sun-residence-pandawa",
+   "claims": {
+    "price_from": 273000,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "j-hills": {
+   "name": "J-Hills",
+   "url": "https://offplan.so/projects/j-hills-jimbaran",
+   "claims": {
+    "price_from": 99900,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "secret-inshi": {
+   "name": "SECRET by INSHI",
+   "url": "https://offplan.so/projects/secret-by-inshi-ubud",
+   "claims": {
+    "price_from": 95400,
+    "currency": "USD",
+    "title_type": "leasehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  },
+  "bingin-ocean-villas": {
+   "name": "Bingin Ocean Villas",
+   "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas",
+   "claims": {
+    "price_from": null,
+    "currency": null,
+    "title_type": "leasehold",
+    "lease_years_base": 29,
+    "extension_promised": true,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "quotes": []
+   },
+   "source": "seed",
+   "checked": "2026-10-28"
+  }
+ }
+}

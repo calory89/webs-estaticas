@@ -1,0 +1,55 @@
+name: Kolaboro research agent
+# Weekly: reads what Bali developers advertise, extracts it with the Claude API, logs changes
+# (internal, this private repo) and publishes aggregates only to kolaboro.com/data/bali-claims.json.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      max_calls:
+        description: "Max Claude API calls this run"
+        default: "30"
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-agent
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Run the agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KB_MAX_CALLS: ${{ github.event.inputs.max_calls || '30' }}
+          KB_MAX_USD: '3'
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY secret is not set: rebuilding aggregates from seed data only"; fi
+          python3 tools/kolaboro-agent/agent.py "$RUNNER_TEMP/bali-claims.json"
+      - name: Save internal data on main
+        run: |
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/data
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro agent: run $(date -u +%F)"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1
+      - name: Publish aggregates to kolaboro.com
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/bali-claims.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/bali-claims.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: research agent data $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1

@@ -238,3 +238,36 @@
   hp.addEventListener('click', function (e) { var v = e.target.dataset && e.target.dataset.v; if (!v) return; if (window.kbEvent) kbEvent('helpful_' + v, { page: location.pathname }); hp.textContent = 'Thanks for telling us.'; });
   prose.appendChild(sh); prose.appendChild(hp);
 })();
+
+/* round 7: share a tool result as an image */
+(function () {
+  var outs = document.querySelectorAll('.out');
+  if (!outs.length || !document.createElement('canvas').getContext) return;
+  function wrap(ctx, text, x, y, maxW, lh) {
+    var words = text.split(' '), line = '', lines = [];
+    words.forEach(function (w) { var t = line ? line + ' ' + w : w; if (ctx.measureText(t).width > maxW && line) { lines.push(line); line = w; } else line = t; });
+    if (line) lines.push(line); lines.slice(0, 3).forEach(function (l, i) { ctx.fillText(l, x, y + i * lh); }); return lines.length;
+  }
+  outs.forEach(function (out) {
+    var num = out.querySelector('.num'); if (!num) return;
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'share-res'; b.textContent = 'Share this result';
+    b.setAttribute('data-ev', 'share_result_image'); out.appendChild(b);
+    b.addEventListener('click', function () {
+      var c = document.createElement('canvas'); c.width = 1200; c.height = 630; var x = c.getContext('2d');
+      x.fillStyle = '#17212B'; x.fillRect(0, 0, 1200, 630);
+      x.fillStyle = '#FF5B14'; x.beginPath(); x.arc(84, 84, 14, 0, 7); x.fill();
+      x.fillStyle = '#F6F6F3'; x.font = '800 34px Archivo, Arial, sans-serif'; x.fillText('kolaboro', 112, 96);
+      var title = (document.querySelector('h1') || {}).textContent || 'Kolaboro';
+      var label = (out.querySelector('p') || {}).textContent || '';
+      x.fillStyle = '#AEB6BE'; x.font = '600 34px Archivo, Arial, sans-serif'; wrap(x, title, 72, 190, 1056, 44);
+      x.fillStyle = '#F6F6F3'; x.font = '800 150px Archivo, Arial, sans-serif'; x.fillText((num.textContent || '').trim().slice(0, 14), 66, 420);
+      x.fillStyle = '#AEB6BE'; x.font = '500 32px Archivo, Arial, sans-serif'; wrap(x, label, 72, 480, 1056, 40);
+      x.fillStyle = '#FF5B14'; x.font = '700 28px Archivo, Arial, sans-serif'; x.fillText('Check yours free at kolaboro.com' + location.pathname.replace(/\/$/, ''), 72, 584);
+      c.toBlob(function (blob) {
+        var file = new File([blob], 'kolaboro-result.png', { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) { navigator.share({ files: [file], title: 'Kolaboro', url: location.href }).catch(function () {}); }
+        else { var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'kolaboro-result.png'; document.body.appendChild(a); a.click(); a.remove(); }
+      }, 'image/png');
+    });
+  });
+})();

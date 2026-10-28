@@ -1,0 +1,54 @@
+{
+ "updated": "2026-10-28",
+ "market": "Bali",
+ "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+ "projects": 24,
+ "title": {
+  "leasehold": 22,
+  "known": 22
+ },
+ "lease": {
+  "known": 14,
+  "median": 30.0,
+  "min": 25,
+  "max": 50,
+  "hist": {
+   "under 30": 3,
+   "30 to 34": 8,
+   "35 to 39": 1,
+   "40 or more": 2
+  }
+ },
+ "extension_promised": {
+  "yes": 10,
+  "known": 14
+ },
+ "guaranteed_language": 2,
+ "permit_claims": 1,
+ "price_usd": {
+  "known": 22,
+  "median": 178000.0,
+  "min": 69000.0,
+  "max": 531000.0
+ },
+ "yield": {
+  "known": 0,
+  "median": null,
+  "max": null
+ },
+ "completion": {
+  "2026": 2,
+  "2027": 17,
+  "2028": 3,
+  "unknown": 2
+ },
+ "runs": [
+  {
+   "date": "2026-10-28",
+   "mode": "seed",
+   "pages_ok": 0,
+   "pages_failed": 0,
+   "changes": 0
+  }
+ ]
+}
