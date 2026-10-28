@@ -59,3 +59,6 @@
   39.3 min | europe/guernsey-jersey bajado: 0.00 GB en 2 s (libres 12.4 GB)
   39.3 min | europe/guernsey-jersey 516 elementos
   39.3 min | parte europe/guernsey-jersey 493 elementos
+  39.3 min | asia/maldives bajado: 0.00 GB en 2 s (libres 12.4 GB)
+  39.4 min | asia/maldives 606 elementos
+  39.4 min | parte asia/maldives 588 elementos
