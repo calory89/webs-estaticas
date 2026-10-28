@@ -132,7 +132,7 @@ async function dynamicPage(path, m, ctx) {
     // Only descriptions our team checked are shown; indexed firms get a factual note.
     const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.')) : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
     return {
-      t: f.firm_name + ': No-Win-No-Fee Firm Profile | JuriMatch',
+      t: (() => { const t = f.firm_name + ': No-Win-No-Fee Firm Profile'; return (t + ' | JuriMatch').length <= 62 ? t + ' | JuriMatch' : t.length <= 62 ? t : f.firm_name + ' | JuriMatch'; })(),
       d: d.length > 300 ? d.slice(0, 297) + '...' : d,
       h1: f.firm_name,
       lead: d,
