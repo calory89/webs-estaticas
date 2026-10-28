@@ -24,3 +24,6 @@
   35.0 min | europe/slovenia bajado: 0.29 GB en 52 s (libres 12.4 GB)
   35.2 min | europe/slovenia 5540 elementos
   35.2 min | parte europe/slovenia 5182 elementos
+  36.2 min | north-america/us/connecticut bajado: 0.20 GB en 52 s (libres 12.5 GB)
+  36.4 min | north-america/us/connecticut 4380 elementos
+  36.4 min | parte north-america/us/connecticut 4113 elementos
