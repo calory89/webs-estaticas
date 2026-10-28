@@ -21,3 +21,6 @@
   28.6 min | north-america/us/south-carolina bajado: 0.15 GB en 13 s (libres 12.6 GB)
   28.7 min | north-america/us/south-carolina 6489 elementos
   28.7 min | parte north-america/us/south-carolina 6405 elementos
+  29.0 min | europe/bosnia-herzegovina bajado: 0.15 GB en 12 s (libres 12.6 GB)
+  29.1 min | europe/bosnia-herzegovina 4222 elementos
+  29.1 min | parte europe/bosnia-herzegovina 4087 elementos
