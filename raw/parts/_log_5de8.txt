@@ -1,0 +1,4 @@
+   0.3 min | osmium osmium version 1.16.0 | disco /mnt/osm 13 GB libres
+   5.5 min | south-america bajado: 3.87 GB en 310 s (libres 10.1 GB)
+   9.3 min | south-america 234272 elementos
+   9.3 min | parte south-america 224935 elementos
