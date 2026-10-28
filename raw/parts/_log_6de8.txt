@@ -56,3 +56,6 @@
   27.1 min | europe/malta bajado: 0.01 GB en 3 s (libres 12.7 GB)
   27.1 min | europe/malta 718 elementos
   27.1 min | parte europe/malta 688 elementos
+  27.1 min | europe/isle-of-man bajado: 0.01 GB en 3 s (libres 12.7 GB)
+  27.2 min | europe/isle-of-man 457 elementos
+  27.2 min | parte europe/isle-of-man 400 elementos
