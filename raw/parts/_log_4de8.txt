@@ -42,3 +42,6 @@
   44.6 min | asia/syria bajado: 0.08 GB en 11 s (libres 12.6 GB)
   44.7 min | asia/syria 4370 elementos
   44.7 min | parte asia/syria 4272 elementos
+  44.9 min | europe/iceland bajado: 0.06 GB en 7 s (libres 12.6 GB)
+  45.0 min | europe/iceland 1976 elementos
+  45.0 min | parte europe/iceland 1943 elementos
