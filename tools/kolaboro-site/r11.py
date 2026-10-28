@@ -79,7 +79,20 @@ def build_cases():
   <div class="cfilter" role="group" aria-label="Filter by area"><button type="button" class="on" data-r="">All areas</button></div>
   <div class="cgrid" id="cgrid" aria-live="polite"></div>
 </div></section>
-<section class="sec alt"><div class="wrap grid2">
+<section class="sec alt" id="files"><div class="wrap">
+  <h2>Case files</h2>
+  <p class="lead">Full reports you can download. Real projects from the public record, a live case from our pipeline, and an example of a project that passes.</p>
+  <div class="files">
+    <a class="file pr" href="/cases/files/kolaboro-case-bingin-beach-bali-2025.pdf" data-ev="case_pdf"><span>Public record · Bali</span><b>Bingin Beach: 48 buildings demolished on the cliff</b><small>State land, protected coast, no permits. 3 of our checks would have flagged it.</small></a>
+    <a class="file pr" href="/cases/files/kolaboro-case-ocean-tulum-mexico.pdf" data-ev="case_pdf"><span>Public record · Tulum</span><b>Ocean Tulum: buyers report 3+ years waiting</b><small>Fully paid, still raw concrete. Milestone checks would have stopped the payments.</small></a>
+    <a class="file pr" href="/cases/files/kolaboro-case-menese-tulum-playa.pdf" data-ev="case_pdf"><span>Public record · Tulum and Playa</span><b>Menese: apartments bought in 2023 not handed over</b><small>Deadlines moved, disputes in court. The contract decides who carries the delay.</small></a>
+    <a class="file pr" href="/cases/files/kolaboro-case-bali-villa-share-scam.pdf" data-ev="case_pdf"><span>Public record · Bali</span><b>The villa that didn't exist: $126,000+ lost</b><small>False contracts and locations. One GPS visit would have ended it.</small></a>
+    <a class="file live" href="/cases/files/kolaboro-live-case-BALI-014.pdf" data-ev="case_pdf"><span>Live case · stage 2 of 5</span><b>BALI-014: off-plan villas, Bukit peninsula</b><small>What the developer advertises, and the 5 questions our agent will answer on site.</small></a>
+    <a class="file ex" href="/cases/files/kolaboro-example-passing-project.pdf" data-ev="case_pdf"><span>Example · fictional</span><b>What a project that passes looks like</b><small>Trust Score 84, milestone 3 verified, safe to pay.</small></a>
+  </div>
+  <p class="muted" style="font-size:.85rem;margin-top:14px">Public-record case studies summarise what the cited sources published. Buyers' statements are allegations, not findings; Kolaboro has not inspected those projects.</p>
+</div></section>
+<section class="sec"><div class="wrap grid2">
   <div><h2>Buying one of these?</h2><p class="lead">If you're about to sign or pay for a project in Bali, we'll move it to the front of the queue.</p></div>
   <div><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cases_book">Book a €490 check</a> <a class="btn btn-line" href="/developers" data-ev="cases_dev">I'm the developer</a></div>
 </div></section>'''
@@ -114,6 +127,15 @@ def build_cases():
                 'Every off-plan project Kolaboro tracks in Bali and where its verification stands: promises read by our AI agent, developers invited, registry checks and site visits.', body, extra_js=js)
 
 CASES_CSS = '''
+.files{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:26px}
+.file{display:block;text-decoration:none;background:var(--paper);border-radius:20px;padding:18px 18px 18px 64px;position:relative;border:1px solid var(--line);transition:transform .15s,box-shadow .15s}
+.file:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(0,0,0,.4)}
+.file::before{content:"PDF";position:absolute;left:16px;top:18px;width:36px;height:44px;border-radius:6px;background:var(--ink);color:#fff;font-size:.62rem;font-weight:800;display:grid;place-items:end center;padding-bottom:6px}
+.file.pr::before{background:#B83A05}.file.live::before{background:#0B7A55}
+.file span{font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.file b{display:block;font-size:1.02rem;line-height:1.25;margin-top:4px}
+.file small{display:block;font-size:.86rem;color:var(--ink-2);margin-top:6px;line-height:1.35}
+
 .pipe{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;counter-reset:p}
 .pipe li{background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:16px;position:relative}
 .pipe li b{display:block;font-size:2.2rem;font-stretch:120%;line-height:1;font-variant-numeric:tabular-nums}
@@ -151,6 +173,11 @@ HOME_CASES = '''<section class="checkbar" aria-label="Live cases"><div class="wr
 '''
 
 def r11_inject():
+    src = os.path.join(HERE, 'cases_pdf'); dst = os.path.join(OUT, 'cases', 'files')
+    if os.path.isdir(src):
+        os.makedirs(dst, exist_ok=True)
+        for f in os.listdir(src):
+            if f.endswith('.pdf'): shutil.copy(os.path.join(src, f), os.path.join(dst, f))
     open(os.path.join(OUT, 'k', 'site.css'), 'a').write(CASES_CSS)
     fp = os.path.join(OUT, 'index.html'); s = open(fp).read()
     if 'aria-label="Live cases"' not in s:
