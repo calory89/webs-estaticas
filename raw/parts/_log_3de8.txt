@@ -45,3 +45,6 @@
   14.8 min | asia/cambodia bajado: 0.04 GB en 4 s (libres 12.8 GB)
   14.8 min | asia/cambodia 2379 elementos
   14.8 min | parte asia/cambodia 2364 elementos
+  14.9 min | north-america/us/hawaii bajado: 0.03 GB en 3 s (libres 12.8 GB)
+  14.9 min | north-america/us/hawaii 2400 elementos
+  14.9 min | parte north-america/us/hawaii 2361 elementos
