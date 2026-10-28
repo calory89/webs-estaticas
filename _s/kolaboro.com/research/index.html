@@ -49,6 +49,13 @@
     <li><div class="node">4</div><h3>Hands over</h3><p>Our agents on the ground get the list of promises to verify. What they find becomes the Trust Score.</p></li>
   </ol>
 </div></section>
+<section class="sec" id="markets"><div class="wrap">
+  <h2>What developers publish, by market</h2>
+  <p class="lead">Our agent re-reads every project's own website each week. The question that matters: can a buyer check the permit from the developer's site? Almost never.</p>
+  <div class="mk-kpis" id="mkk"></div>
+  <div class="tw" style="overflow:auto;margin-top:18px"><table class="mk-t" id="mkt"><thead><tr><th>Market</th><th>Projects</th><th>Permit number published</th><th>Plans published</th><th>"Guaranteed" returns</th><th>Median price</th></tr></thead><tbody><tr><td colspan="6">Loading…</td></tr></tbody></table></div>
+  <p class="muted" style="font-size:.85rem;margin-top:10px">Advertised claims read from developers' own pages (and, in Dubai, the broker pages that show the permit). Not verified facts. <span id="mku"></span></p>
+</div></section>
 <section class="sec alt" id="data"><div class="wrap">
   <h2>What Bali developers advertise</h2>
   <p class="lead">Aggregate data from the projects we track. These are advertised claims, not verified facts, and we don't name projects until they are verified. <span id="rdate"></span></p>
@@ -64,7 +71,7 @@
   <figure class="balimap"><svg viewBox="0 0 400 250" role="img" aria-label="Map of Bali with the number of tracked projects by area">
     <rect width="400" height="250" rx="18" fill="#DCE8EE"/>
     <polygon points="14.3,14.7 48.6,23.5 105.7,32.4 154.3,38.2 191.4,20.6 211.4,14.7 248.6,20.6 285.7,29.4 320.0,50.0 348.6,73.5 377.1,94.1 380.0,108.8 354.3,126.5 334.3,135.3 314.3,144.1 291.4,150.0 274.3,161.8 257.1,179.4 251.4,191.2 245.7,202.9 240.0,208.8 242.9,217.6 240.0,229.4 228.6,235.3 211.4,235.3 202.9,229.4 202.9,220.6 214.3,214.7 222.9,208.8 225.7,200.0 220.0,191.2 214.3,179.4 205.7,173.5 191.4,167.6 162.9,152.9 120.0,126.5 77.1,105.9 40.0,85.3 20.0,58.8 14.3,29.4" fill="#EFE9DC" stroke="#B9AE97" stroke-width="1.5" stroke-linejoin="round"/>
-    <circle cx="221.4" cy="225.0" r="18.2" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Bukit peninsula: 12 projects</title></circle><circle cx="217.1" cy="175.0" r="11.6" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Canggu coast: 6 projects</title></circle><circle cx="251.4" cy="135.3" r="8.3" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Ubud: 3 projects</title></circle><circle cx="194.3" cy="157.4" r="7.2" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Tabanan: 2 projects</title></circle><circle cx="250.0" cy="186.8" r="6.1" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Sanur: 1 projects</title></circle><text x="245.60000000000002" y="229.0" text-anchor="start" font-size="11" font-weight="700" fill="#17212B">Bukit peninsula · 12</text><text x="199.5" y="179.0" text-anchor="end" font-size="11" font-weight="700" fill="#17212B">Canggu coast · 6</text><text x="265.7" y="139.3" text-anchor="start" font-size="11" font-weight="700" fill="#17212B">Ubud · 3</text><text x="181.10000000000002" y="151.4" text-anchor="end" font-size="11" font-weight="700" fill="#17212B">Tabanan · 2</text><text x="262.1" y="190.8" text-anchor="start" font-size="11" font-weight="700" fill="#17212B">Sanur · 1</text>
+    <circle cx="221.4" cy="225.0" r="21.5" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Bukit peninsula: 15 projects</title></circle><circle cx="217.1" cy="175.0" r="17.1" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Canggu coast: 11 projects</title></circle><circle cx="251.4" cy="135.3" r="12.7" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Ubud: 7 projects</title></circle><circle cx="194.3" cy="157.4" r="8.3" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Tabanan: 3 projects</title></circle><circle cx="250.0" cy="186.8" r="7.2" fill="#FF5B14" fill-opacity=".85" stroke="#fff" stroke-width="2"><title>Sanur: 2 projects</title></circle><text x="248.9" y="229.0" text-anchor="start" font-size="11" font-weight="700" fill="#17212B">Bukit peninsula · 15</text><text x="194.0" y="179.0" text-anchor="end" font-size="11" font-weight="700" fill="#17212B">Canggu coast · 11</text><text x="270.1" y="139.3" text-anchor="start" font-size="11" font-weight="700" fill="#17212B">Ubud · 7</text><text x="180.0" y="151.4" text-anchor="end" font-size="11" font-weight="700" fill="#17212B">Tabanan · 3</text><text x="263.2" y="190.8" text-anchor="start" font-size="11" font-weight="700" fill="#17212B">Sanur · 2</text>
   </svg><figcaption>Number of tracked projects per area. Areas, not project names: we name projects only after we verify them.</figcaption></figure>
 </div></section>
 <section class="sec"><div class="wrap grid2">
@@ -185,6 +192,18 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+  fetch('/data/world-claims.json', { cache:'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(w){
+    if (!w || !w.markets) return;
+    var rows = Object.keys(w.markets).map(function(k){ var m = w.markets[k]; return { k:k, n:m.projects, p:m.permit_numbers_published || 0, pl:m.plans_published || 0, g:m.guaranteed_language || 0, med:(m.price_usd || {}).median }; }).sort(function(a,b){ return b.n - a.n; });
+    var tot = rows.reduce(function(a,r){ return a + r.n; }, 0), per = rows.reduce(function(a,r){ return a + r.p; }, 0), gu = rows.reduce(function(a,r){ return a + r.g; }, 0);
+    document.getElementById('mkk').innerHTML = [[tot,'projects tracked in ' + rows.length + ' markets'],[per,'have a permit number we could find online'],[Math.round(100 - per / Math.max(tot,1) * 100) + '%','give buyers nothing to check'],[gu,'promise "guaranteed" returns']].map(function(x){ return '<div><b>' + x[0] + '</b><span>' + x[1] + '</span></div>'; }).join('');
+    document.querySelector('#mkt tbody').innerHTML = rows.map(function(r){ return '<tr><td><b>' + r.k + '</b></td><td>' + r.n + '</td><td>' + r.p + '</td><td>' + r.pl + '</td><td>' + r.g + '</td><td>' + (r.med ? '$' + Math.round(r.med / 1000) + 'k' : '—') + '</td></tr>'; }).join('');
+    document.getElementById('mku').textContent = 'Updated ' + w.updated + '.';
+  }).catch(function(){});
 })();
 </script>
 </body>

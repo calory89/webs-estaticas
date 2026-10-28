@@ -761,3 +761,12 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .cobanner ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.cobanner li{background:#22303C;border-radius:16px;padding:14px}.cobanner li b{display:block;color:#fff}.cobanner li span{color:#AEB9C2;font-size:.88rem}
 .indep{display:inline-flex;gap:6px;align-items:center;font-weight:700;font-size:.85rem;margin-left:10px}
 @media (max-width:900px){.cp-grid,.cobanner .wrap{grid-template-columns:1fr}.cp-out{position:static}.cp-steps,.cobanner ol{grid-template-columns:1fr 1fr}.cp-ab{grid-template-columns:1fr}}
+
+.mk-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:22px}
+.mk-kpis div{background:#fff;padding:18px}.mk-kpis b{display:block;font-size:2rem;letter-spacing:-.02em}.mk-kpis span{color:var(--muted);font-size:.9rem}
+.mk-t{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}.mk-t th,.mk-t td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left}.mk-t th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.cmk{display:inline-block;font-size:.72rem;font-weight:800;border-radius:999px;padding:2px 8px;background:#E3E8FF;margin-left:6px}.cdoc{display:inline-block;font-size:.72rem;font-weight:800;border-radius:999px;padding:2px 8px;background:#DDEFE7;color:#0B5A40;margin-left:6px}
+.scale-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.scale-grid>div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.scale-bars{display:grid;gap:8px;margin-top:12px}.scale-bars div{display:grid;grid-template-columns:110px 1fr 52px;gap:10px;align-items:center;font-size:.9rem}.scale-bars i{display:block;height:12px;border-radius:6px;background:var(--hivis)}
+.verts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.verts span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600;font-size:.9rem;background:#F6F6F3}.verts span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+@media (max-width:820px){.mk-kpis{grid-template-columns:1fr 1fr}.scale-grid{grid-template-columns:1fr}}
