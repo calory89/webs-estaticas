@@ -26,3 +26,6 @@
   25.7 min | north-america/us/wisconsin bajado: 0.27 GB en 21 s (libres 12.2 GB)
   26.0 min | north-america/us/wisconsin 12693 elementos
   26.0 min | parte north-america/us/wisconsin 11472 elementos
+  26.5 min | europe/serbia bajado: 0.22 GB en 18 s (libres 12.3 GB)
+  26.7 min | europe/serbia 8192 elementos
+  26.7 min | parte europe/serbia 7828 elementos
