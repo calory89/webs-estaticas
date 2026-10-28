@@ -34,6 +34,7 @@ let top3 = null;
 let jm = null;
 let jb = null;
 let rr = null;
+let kb = null;
 const NOSPA = new Set(["grownomads.com", "kolaboro.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com"]);
 async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
@@ -72,6 +73,8 @@ export default {
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
+    // kolaboro.com: desk-review API (see kolaboro.js).
+    if (host === 'kolaboro.com' && u.pathname.startsWith('/api/kb/')) { if (!kb) kb = await import('./kolaboro.js'); return kb.api(req, u, env, ctx); }
     // jobersity.com: 301, HTML propio en /oferta/<id> y /empresa|company/<slug>, sitemap de empresas, 404 reales y cabeceras (see jobersity.js).
     if (host === 'jobersity.com' && req.method === 'GET') {
       if (!jb) jb = await import('./jobersity.js');

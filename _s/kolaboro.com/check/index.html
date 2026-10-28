@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/check.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=13">
+<link rel="stylesheet" href="/k/site.css?v=14">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Check a property project", "item": "https://kolaboro.com/check/"}]}</script>
@@ -40,9 +40,41 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Check a project</p><h1>Check a project before you pay a cent.</h1><p class="lead">Tell us the project or developer. If we've verified it, you'll see its Trust Score. If we haven't yet, a local agent will check it for you.</p></div></section><section class="sec"><div class="wrap grid2">
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Check a project</p><h1>Check a project before you pay a cent.</h1><p class="lead">Tell us the project or developer. If we've verified it, you'll see its Trust Score. If we haven't yet, a local agent will check it for you.</p></div></section>
+<section class="sec" id="analyze"><div class="wrap">
+  <div class="az" id="az">
+    <div class="az-step on" id="az-1">
+      <p class="az-k">Free desk review · about a minute</p>
+      <h2>Paste the project's website</h2>
+      <p class="lead">Our research agent reads what the developer promises and tells you exactly what to verify before you pay.</p>
+      <form id="az-f1" class="qform light" onsubmit="return false"><input id="az-url" name="url" inputmode="url" autocomplete="url" placeholder="e.g. the developer's page for the villa" aria-label="Project website"><button class="btn btn-hi" type="submit">Analyse this project</button></form>
+      <p class="fe" id="az-e1" role="alert"></p>
+    </div>
+    <div class="az-step" id="az-2">
+      <p class="az-k" id="az-host"></p>
+      <h2>Where should we send your desk review?</h2>
+      <p class="lead">We start reading the website now. You'll see the results here, and we'll follow up by email.</p>
+      <form id="az-f2" onsubmit="return false">
+        <label class="f">Email<input id="az-email" type="email" autocomplete="email" required></label>
+        <label class="hp" aria-hidden="true">Company<input id="az-co" tabindex="-1" autocomplete="off"></label>
+        <label class="consent"><input type="checkbox" id="az-ok" required><span>I agree that Kolaboro can email me about this request. <a href="/legal/privacy">Privacy</a>.</span></label>
+        <button class="btn btn-hi" type="submit">Start the analysis</button>
+        <p class="fe" id="az-e2" role="alert"></p>
+      </form>
+    </div>
+    <div class="az-step" id="az-3" aria-live="polite">
+      <p class="az-k" id="az-first"></p>
+      <h2>Analysing the project</h2>
+      <ol class="az-prog" id="az-prog">
+        <li>Reading the developer's website</li><li>Extracting what they promise</li><li>Checking title, lease and permit claims</li><li>Writing the questions you must ask</li>
+      </ol>
+    </div>
+    <div class="az-step" id="az-4"></div>
+  </div>
+</div></section>
+<section class="sec"><div class="wrap grid2">
   <div>
-    <form class="qform light" id="cq" role="search" onsubmit="return false"><datalist id="cqlist"><option value="Sample Residences"><option value="Sample Developer"><option value="Projects in Bali"><option value="Projects in Lombok"><option value="Projects in Dubai"><option value="Projects in Phuket"><option value="Projects in Tulum"><option value="Projects in the Algarve"></datalist><input id="cqi" name="q" list="cqlist" autocomplete="off" placeholder="Project name, developer or link" aria-label="Project name, developer or link"><button class="btn btn-hi" type="submit" id="cqb">Check project</button></form>
+    <form class="qform light" id="cq" role="search" onsubmit="return false"><datalist id="cqlist"><option value="Sample Residences"><option value="Sample Developer"><option value="Projects in Bali"><option value="Projects in Lombok"><option value="Projects in Dubai"><option value="Projects in Phuket"><option value="Projects in Tulum"><option value="Projects in the Algarve"></datalist><input id="cqi" name="q" list="cqlist" autocomplete="off" placeholder="Project website, name or developer" aria-label="Project name, developer or link"><button class="btn btn-hi" type="submit" id="cqb">Check project</button></form>
     <div id="cres" style="margin-top:28px" aria-live="polite"></div>
   </div>
   <div class="note-box"><b>What a check covers.</b> Title and land, permits, the developer's delivery record, progress on site, where your money goes, the contract, transparency, what other buyers say and whether the promised returns are realistic. <a href="/how-we-score">See the method</a>.</div>
@@ -144,7 +176,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=13" defer></script>
+<script src="/k/site.js?v=14" defer></script>
 <script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script><script>
 (function(){
   var KNOWN = { 'sample residences': '/score/sample', 'sample developer': '/score/sample' };
@@ -176,6 +208,65 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+  var $ = function(i){ return document.getElementById(i); };
+  var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
+  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var PAY = 'https://www.paypal.com/ncp/payment/32ENX4QK833GE';
+  var url = '';
+  function show(n){ ['az-1','az-2','az-3','az-4'].forEach(function(id, i){ $(id).classList.toggle('on', i === n - 1); }); $('az').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  function ev(n, p){ if (window.kbEvent) kbEvent(n, p || {}); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
+  function step1(){ var v = norm($('az-url').value); if (!v) { $('az-e1').textContent = 'Paste the full website address of the project.'; return; }
+    url = v; $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); show(2); $('az-email').focus(); ev('desk_url'); }
+  $('az-f1').addEventListener('submit', step1);
+  var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); }
+  function save(email, note){ try { fetch(SB, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ p_name: 'Desk review request', p_email: email, p_country: '', p_phone: '', p_who: 'buyer | desk review', p_bring: note.slice(0, 4000), p_learn: url.slice(0, 300), p_week: '', p_lang: 'en', p_source: 'yc-desk | ' + location.pathname, p_plan: 'yc-desk' }) }); } catch (e) {} }
+  $('az-f2').addEventListener('submit', function(){
+    var email = $('az-email').value.trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { $('az-e2').textContent = 'Add a valid email address.'; return; }
+    if (!$('az-ok').checked) { $('az-e2').textContent = 'Tick the box so we can email you.'; return; }
+    $('az-e2').textContent = ''; show(3); ev('generate_lead', { role: 'desk' });
+    var lis = $('az-prog').querySelectorAll('li'), i = 0; lis[0].classList.add('run');
+    var tick = setInterval(function(){ if (i < lis.length - 1) { lis[i].classList.remove('run'); lis[i].classList.add('ok2'); i++; lis[i].classList.add('run'); } }, 6000);
+    $('az-first').textContent = 'Starting…';
+    fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email, company: $('az-co').value }) })
+      .then(function(r){ return r.json().then(function(d){ return [r.status, d]; }); })
+      .then(function(x){ clearInterval(tick); var s = x[0], d = x[1];
+        lis.forEach(function(l){ l.classList.remove('run'); l.classList.add('ok2'); });
+        if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); return; }
+        save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
+        setTimeout(function(){ render(d); }, 500);
+      }).catch(function(){ clearInterval(tick); render_err('network'); save(email, 'Desk review failed: network'); });
+    setTimeout(function(){ if ($('az-first').textContent === 'Starting…') $('az-first').textContent = 'Reading the website now'; }, 1200);
+  });
+  function render_err(e){
+    var m = e === 'rate' ? 'You have run several reviews in the last hour. Try again later, or book a full check below.'
+      : e === 'fetch' || e === 'empty' ? 'This website blocks automatic reading. Your request is saved and a person on our team will review it within 24 hours.'
+      : 'Something went wrong on our side. Your request is saved and we will email you within 24 hours.';
+    $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>We will take it from here</h2><p class="lead">' + m + '</p>' + cta();
+    show(4); ev('desk_error', { e: e || '' });
+  }
+  function cta(){ return '<div class="az-cta"><div><b>Get the full check: €490</b><p>Land certificate checked at the land office, building permit confirmed in the official system, site visit with GPS-stamped video and a contract review. Written report in 7 days. Full refund if we can\'t take your case.</p></div><a class="btn btn-hi" href="' + PAY + '" rel="noopener" data-ev="pay_check_desk">Book the full check</a></div>'; }
+  function render(d){
+    var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
+    var facts = [['Project', r.project], ['Developer', r.developer], ['Location', r.location], ['Price from', r.price_from], ['Title', r.title_type], ['Lease', r.lease_years], ['Completion', r.completion], ['Return advertised', r.advertised_return], ['Permit claim', r.permit_claim]].filter(function(f){ return f[1]; });
+    var first = d.first ? 'Nobody had asked us about this project before. Your review is the first one.' : (d.tracked ? 'Our agent already follows this project.' : 'Desk review');
+    $('az-4').innerHTML = '<p class="az-k">' + esc(first) + '</p><h2>Desk review: ' + esc(r.project || d.host) + '</h2>' +
+      '<p><span class="az-att ' + esc(att) + '">' + (att === 'high' ? 'High attention needed' : att === 'low' ? 'Low attention needed' : 'Medium attention needed') + '</span></p>' +
+      '<p class="lead" style="margin-top:12px">' + esc(r.summary) + '</p>' +
+      (facts.length ? '<div class="az-facts">' + facts.map(function(f){ return '<div><span>' + f[0] + '</span><b>' + esc(f[1]) + '</b></div>'; }).join('') + '</div>' : '') +
+      '<div class="az-res"><div class="az-box"><h3>Ask these before you pay</h3><ol>' + (r.questions || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
+      '<div class="az-box"><h3>What the website promises</h3><ul>' + (r.promises || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' +
+      ((r.missing || []).length ? '<h3 style="margin-top:14px">What it doesn\'t say</h3><ul>' + r.missing.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' : '') + '</div></div>' +
+      cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer.</p>';
+    show(4); ev('desk_done', { att: att, first: !!d.first });
+  }
 })();
 </script>
 </body>
