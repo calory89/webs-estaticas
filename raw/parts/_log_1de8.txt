@@ -27,3 +27,6 @@
   43.0 min | north-america/us/missouri bajado: 0.19 GB en 25 s (libres 12.5 GB)
   43.2 min | north-america/us/missouri 9299 elementos
   43.2 min | parte north-america/us/missouri 9033 elementos
+  44.3 min | asia/sri-lanka bajado: 0.13 GB en 64 s (libres 12.5 GB)
+  44.4 min | asia/sri-lanka 17085 elementos
+  44.4 min | parte asia/sri-lanka 17040 elementos
