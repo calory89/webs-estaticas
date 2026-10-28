@@ -47,3 +47,6 @@
   38.1 min | asia/laos bajado: 0.05 GB en 36 s (libres 12.4 GB)
   38.1 min | asia/laos 1846 elementos
   38.1 min | parte asia/laos 1841 elementos
+  38.5 min | asia/tajikistan bajado: 0.05 GB en 9 s (libres 12.4 GB)
+  38.5 min | asia/tajikistan 2123 elementos
+  38.5 min | parte asia/tajikistan 2106 elementos
