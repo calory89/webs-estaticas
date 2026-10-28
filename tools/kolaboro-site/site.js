@@ -148,6 +148,7 @@
         if (d === 'ok') {
           form.classList.add('sent'); try { st && st.removeItem(draftKey); } catch (e) {}
           if (ok) { ok.style.display = 'block'; ok.focus(); }
+          if (ok) { var pn = ok.querySelector('.paynow'); if (pn) pn.hidden = r !== 'buyer'; }
           ev('generate_lead', { role: r }); return;
         }
         if (d === 'too_many') throw new Error(MSG.dup);

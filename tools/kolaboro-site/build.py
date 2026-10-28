@@ -50,7 +50,7 @@ def head(title, desc, path, extra_ld=None, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/k/site.css?v=7">
+<link rel="stylesheet" href="/k/site.css?v=8">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 {GA}
 </head>'''
@@ -127,7 +127,7 @@ def footer(mcta=True, mcta_href='/#start'):
     <p class="fine">© 2026 Kolaboro, operated by {ENTITY}. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=7" defer></script>
+<script src="/k/site.js?v=8" defer></script>
 {CLARITY}'''
 
 def page(path, title, desc, body, extra_ld=None, noindex=False, mcta=True, extra_js=''):
@@ -739,6 +739,7 @@ exec(open(os.path.join(HERE, 'r4.py')).read())
 exec(open(os.path.join(HERE, 'r5.py')).read())
 exec(open(os.path.join(HERE, 'r6.py')).read())
 exec(open(os.path.join(HERE, 'r7.py')).read())
+exec(open(os.path.join(HERE, 'r8.py')).read())
 
 def main():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -755,9 +756,11 @@ def main():
     paths += build_round5()
     paths += build_round6()
     paths += build_round7()
+    paths += build_round8()
     build_404()
     finish_round6()
     r7_fixes()
+    print('r8 pages changed', r8_fixes())
     idx = [p for p in paths if p not in ('/score/sample',)]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(
         f'<url><loc>{SITE}{p if p == "/" else p + "/"}</loc><lastmod>{TODAY}</lastmod></url>' for p in idx) + '</urlset>\n'
