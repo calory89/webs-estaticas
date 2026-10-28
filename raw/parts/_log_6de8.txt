@@ -35,3 +35,6 @@
   21.9 min | north-america/us/alaska bajado: 0.13 GB en 12 s (libres 12.7 GB)
   22.0 min | north-america/us/alaska 2367 elementos
   22.0 min | parte north-america/us/alaska 2262 elementos
+  22.3 min | asia/uzbekistan bajado: 0.12 GB en 10 s (libres 12.7 GB)
+  22.4 min | asia/uzbekistan 9706 elementos
+  22.4 min | parte asia/uzbekistan 9187 elementos
