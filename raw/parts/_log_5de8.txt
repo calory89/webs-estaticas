@@ -8,3 +8,6 @@
   14.3 min | europe/norway bajado: 1.28 GB en 73 s (libres 12.5 GB)
   15.4 min | europe/norway 15422 elementos
   15.4 min | parte europe/norway 15195 elementos
+  16.4 min | europe/turkey bajado: 0.61 GB en 40 s (libres 13.1 GB)
+  17.0 min | europe/turkey 51889 elementos
+  17.0 min | parte europe/turkey 51274 elementos
