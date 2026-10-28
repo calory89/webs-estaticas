@@ -467,3 +467,23 @@ form[data-r=buyer] .perk-buyer,form[data-r=agent] .perk-agent,form[data-r=develo
 .cc[hidden]{display:none}
 .cc div{display:flex;gap:8px}
 pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff;border:2px solid var(--line);border-radius:14px;padding:18px;color:var(--ink-2)}
+
+/* round 7 */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}}
+.stat{background:var(--paper);border:2px solid var(--ink);border-radius:18px;padding:16px 18px}
+.sec.alt .stat{background:#fff}
+.stat b{display:block;font-stretch:125%;font-weight:850;font-size:clamp(1.5rem,2.6vw,2.2rem);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat span{font-size:.9rem;color:var(--muted)}
+.stats.mini{margin-top:0;grid-template-columns:repeat(3,auto);align-items:center}
+.stats.mini .stat{background:transparent;border-color:#3A4652;color:var(--paper)}
+.stats.mini .stat span{color:#AEB6BE}
+.stats.mini .stat:last-child{border:0;padding:0}
+@media (max-width:760px){.stats.mini{grid-template-columns:1fr 1fr}.stats.mini .stat:last-child{grid-column:1/-1}}
+.hbars{display:grid;gap:10px;margin-top:14px}
+.hb{display:grid;grid-template-columns:90px 1fr 32px;gap:10px;align-items:center;font-size:.92rem}
+.hb i{display:block;height:14px;border-radius:7px;background:var(--ink);min-width:4px}
+.hb b{text-align:right;font-variant-numeric:tabular-nums}
+.share-res{margin-top:12px;background:none;border:2px solid #AEB6BE;color:var(--paper);font:inherit;font-weight:700;font-size:.9rem;padding:9px 14px;border-radius:999px;cursor:pointer}
+.share-res:hover{border-color:var(--paper)}
+@media (max-width:1100px) and (min-width:901px){.links{gap:18px}.links a:not(.btn){font-size:.88rem}}
