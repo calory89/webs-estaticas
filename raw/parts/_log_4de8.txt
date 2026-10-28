@@ -30,3 +30,6 @@
   37.4 min | europe/croatia bajado: 0.19 GB en 50 s (libres 12.5 GB)
   37.6 min | europe/croatia 9566 elementos
   37.6 min | parte europe/croatia 9319 elementos
+  38.3 min | north-america/us/louisiana bajado: 0.14 GB en 25 s (libres 12.5 GB)
+  38.4 min | north-america/us/louisiana 3293 elementos
+  38.4 min | parte north-america/us/louisiana 3232 elementos
