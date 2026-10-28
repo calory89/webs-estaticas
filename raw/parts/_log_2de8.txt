@@ -57,3 +57,4 @@
   41.6 min | europe/monaco bajado: 0.00 GB en 1 s (libres 12.4 GB)
   41.6 min | europe/monaco 121 elementos
   41.6 min | parte europe/monaco 121 elementos
+  41.6 min | RESUMEN job 2/8 hecho
