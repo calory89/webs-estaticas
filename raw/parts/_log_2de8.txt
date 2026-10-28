@@ -12,3 +12,6 @@
   23.6 min | asia/philippines bajado: 0.57 GB en 31 s (libres 12.0 GB)
   24.3 min | asia/philippines 40704 elementos
   24.3 min | parte asia/philippines 39354 elementos
+  27.3 min | europe/portugal bajado: 0.40 GB en 165 s (libres 12.1 GB)
+  27.8 min | europe/portugal 46949 elementos
+  27.8 min | parte europe/portugal 37388 elementos
