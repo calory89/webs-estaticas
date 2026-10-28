@@ -1,0 +1,353 @@
+{
+ "updated": "2026-10-28",
+ "note": "Anonymised until verification is complete. Advertised claims, not verified facts.",
+ "cases": [
+  {
+   "id": "BALI-014",
+   "region": "Bukit peninsula",
+   "band": "$200k to $400k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": "28 Oct 2026",
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-022",
+   "region": "Bukit peninsula",
+   "band": "$200k to $400k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": "28 Oct 2026",
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-007",
+   "region": "Canggu coast",
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": "28 Oct 2026",
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-018",
+   "region": "Canggu coast",
+   "band": "$200k to $400k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": "28 Oct 2026",
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-023",
+   "region": "Canggu coast",
+   "band": "$100k to $200k",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": "28 Oct 2026",
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ]
+  },
+  {
+   "id": "BALI-021",
+   "region": "Ubud",
+   "band": "$100k to $200k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": "28 Oct 2026",
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-001",
+   "region": "Bukit peninsula",
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-002",
+   "region": "Bukit peninsula",
+   "band": "$100k to $200k",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-003",
+   "region": "Bukit peninsula",
+   "band": "Price not stated",
+   "done": 2028,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-004",
+   "region": "Bukit peninsula",
+   "band": "Price not stated",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-006",
+   "region": "Bukit peninsula",
+   "band": "$100k to $200k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-009",
+   "region": "Bukit peninsula",
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-010",
+   "region": "Bukit peninsula",
+   "band": "Under $100k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-011",
+   "region": "Bukit peninsula",
+   "band": "$200k to $400k",
+   "done": 2028,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-013",
+   "region": "Bukit peninsula",
+   "band": "Under $100k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-017",
+   "region": "Bukit peninsula",
+   "band": "$200k to $400k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-008",
+   "region": "Canggu coast",
+   "band": "Under $100k",
+   "done": 2028,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-016",
+   "region": "Canggu coast",
+   "band": "$200k to $400k",
+   "done": 2026,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-020",
+   "region": "Canggu coast",
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-012",
+   "region": "Sanur",
+   "band": "$400k and up",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-005",
+   "region": "Tabanan",
+   "band": "$100k to $200k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-015",
+   "region": "Tabanan",
+   "band": "$100k to $200k",
+   "done": null,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  },
+  {
+   "id": "BALI-019",
+   "region": "Ubud",
+   "band": "Under $100k",
+   "done": 2027,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit (PBG) mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
+  },
+  {
+   "id": "BALI-024",
+   "region": "Ubud",
+   "band": "Under $100k",
+   "done": 2026,
+   "read": true,
+   "checked": "28 Oct 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit (PBG) mentioned: ask for the number before paying."
+   ]
+  }
+ ]
+}
