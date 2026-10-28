@@ -48,3 +48,6 @@
   41.2 min | north-america/us/south-dakota bajado: 0.05 GB en 4 s (libres 12.4 GB)
   41.3 min | north-america/us/south-dakota 2119 elementos
   41.3 min | parte north-america/us/south-dakota 1991 elementos
+  41.4 min | antarctica bajado: 0.03 GB en 5 s (libres 12.4 GB)
+  41.4 min | antarctica 62 elementos
+  41.4 min | parte antarctica 62 elementos
