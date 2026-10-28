@@ -45,6 +45,7 @@
       var q = (f.q.value || '').trim();
       if (!q) { f.q.focus(); return; }
       ev('check_project', { q: q.slice(0, 80) });
+      if (/^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(q)) { location.href = '/check?url=' + encodeURIComponent(q) + '#analyze'; return; }
       location.href = '/check?q=' + encodeURIComponent(q);
     });
   });
