@@ -30,3 +30,6 @@
   44.3 min | asia/sri-lanka bajado: 0.13 GB en 64 s (libres 12.5 GB)
   44.4 min | asia/sri-lanka 17085 elementos
   44.4 min | parte asia/sri-lanka 17040 elementos
+  45.0 min | europe/estonia bajado: 0.12 GB en 13 s (libres 12.6 GB)
+  45.2 min | europe/estonia 3638 elementos
+  45.2 min | parte europe/estonia 3499 elementos
