@@ -15,3 +15,6 @@
   29.2 min | north-america/us/virginia bajado: 0.40 GB en 94 s (libres 12.3 GB)
   29.7 min | north-america/us/virginia 13038 elementos
   29.7 min | parte north-america/us/virginia 11774 elementos
+  31.2 min | north-america/us/georgia bajado: 0.33 GB en 21 s (libres 12.4 GB)
+  31.6 min | north-america/us/georgia 11040 elementos
+  31.6 min | parte north-america/us/georgia 10828 elementos
