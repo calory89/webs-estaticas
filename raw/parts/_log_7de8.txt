@@ -8,3 +8,6 @@
   12.1 min | asia/china bajado: 1.51 GB en 112 s (libres 11.1 GB)
   13.4 min | asia/china 77430 elementos
   13.4 min | parte asia/china 75855 elementos
+  14.7 min | europe/czech-republic bajado: 0.89 GB en 65 s (libres 11.7 GB)
+  15.5 min | europe/czech-republic 20831 elementos
+  15.5 min | parte europe/czech-republic 19168 elementos
