@@ -5,7 +5,7 @@
 ## Key pages
 - [Kolaboro: never buy property abroad alone](https://kolaboro.com/)
 - [Check a property project](https://kolaboro.com/check/)
-- [Sample site inspection report](https://kolaboro.com/report/sample/)
+- [Sample client report: Villa Kenanga (fictional)](https://kolaboro.com/report/sample/)
 - [How the Kolaboro Trust Score works](https://kolaboro.com/how-we-score/)
 - [Become a Kolaboro agent](https://kolaboro.com/agents/)
 - [Get your project verified](https://kolaboro.com/developers/)
@@ -59,6 +59,7 @@
 - [Buyer portal demo](https://kolaboro.com/portal/demo/)
 - [Agent copilot: how local people verify property with AI](https://kolaboro.com/copilot/)
 - [Independence](https://kolaboro.com/independence/)
+- [Sample client report: Villa Kenanga (fictional)](https://kolaboro.com/report/sample/)
 
 ## Facts
 - Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
