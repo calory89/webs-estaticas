@@ -11,3 +11,6 @@
   14.4 min | europe/sweden bajado: 0.88 GB en 73 s (libres 12.0 GB)
   15.1 min | europe/sweden 23645 elementos
   15.1 min | parte europe/sweden 22705 elementos
+  16.3 min | north-america/us/texas bajado: 0.68 GB en 54 s (libres 12.2 GB)
+  16.9 min | north-america/us/texas 26817 elementos
+  16.9 min | parte north-america/us/texas 26155 elementos
