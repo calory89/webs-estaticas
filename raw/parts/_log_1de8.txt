@@ -12,3 +12,6 @@
   28.5 min | asia/nepal bajado: 0.39 GB en 99 s (libres 12.3 GB)
   28.9 min | asia/nepal 16873 elementos
   28.9 min | parte asia/nepal 15448 elementos
+  29.7 min | europe/belarus bajado: 0.33 GB en 24 s (libres 12.4 GB)
+  30.1 min | europe/belarus 23305 elementos
+  30.1 min | parte europe/belarus 21713 elementos
