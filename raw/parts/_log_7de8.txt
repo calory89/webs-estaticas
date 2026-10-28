@@ -11,3 +11,6 @@
   14.7 min | europe/czech-republic bajado: 0.89 GB en 65 s (libres 11.7 GB)
   15.5 min | europe/czech-republic 20831 elementos
   15.5 min | parte europe/czech-republic 19168 elementos
+  16.8 min | europe/finland bajado: 0.72 GB en 54 s (libres 11.8 GB)
+  17.5 min | europe/finland 18952 elementos
+  17.5 min | parte europe/finland 17888 elementos
