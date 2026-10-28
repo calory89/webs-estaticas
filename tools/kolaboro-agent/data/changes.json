@@ -1,1 +1,17 @@
-[]
+[
+ {
+  "date": "2026-10-28",
+  "slug": "elysium-eco-city",
+  "name": "ELYSIUM Eco City",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ }
+]
