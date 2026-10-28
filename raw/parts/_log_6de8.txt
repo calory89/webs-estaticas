@@ -32,3 +32,6 @@
   21.4 min | north-america/us/indiana bajado: 0.19 GB en 15 s (libres 12.6 GB)
   21.5 min | north-america/us/indiana 8401 elementos
   21.5 min | parte north-america/us/indiana 7967 elementos
+  21.9 min | north-america/us/alaska bajado: 0.13 GB en 12 s (libres 12.7 GB)
+  22.0 min | north-america/us/alaska 2367 elementos
+  22.0 min | parte north-america/us/alaska 2262 elementos
