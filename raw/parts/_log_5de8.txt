@@ -26,3 +26,6 @@
   21.1 min | north-america/us/maryland bajado: 0.20 GB en 13 s (libres 13.5 GB)
   21.3 min | north-america/us/maryland 7853 elementos
   21.3 min | parte north-america/us/maryland 7487 elementos
+  21.6 min | north-america/us/tennessee bajado: 0.18 GB en 11 s (libres 13.5 GB)
+  21.8 min | north-america/us/tennessee 6319 elementos
+  21.8 min | parte north-america/us/tennessee 6094 elementos
