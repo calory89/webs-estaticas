@@ -36,3 +36,6 @@
   30.1 min | europe/albania bajado: 0.05 GB en 5 s (libres 12.7 GB)
   30.1 min | europe/albania 2885 elementos
   30.1 min | parte europe/albania 2767 elementos
+  30.2 min | north-america/us/rhode-island bajado: 0.05 GB en 5 s (libres 12.7 GB)
+  30.2 min | north-america/us/rhode-island 924 elementos
+  30.2 min | parte north-america/us/rhode-island 912 elementos
