@@ -33,3 +33,6 @@
   13.8 min | europe/latvia bajado: 0.13 GB en 8 s (libres 12.7 GB)
   13.9 min | europe/latvia 5316 elementos
   13.9 min | parte europe/latvia 4842 elementos
+  14.2 min | north-america/us/arkansas bajado: 0.09 GB en 7 s (libres 12.8 GB)
+  14.3 min | north-america/us/arkansas 3762 elementos
+  14.3 min | parte north-america/us/arkansas 3615 elementos
