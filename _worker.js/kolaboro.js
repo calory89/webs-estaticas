@@ -105,7 +105,42 @@ async function analyze(req, env, ctx) {
   return json({ ...res, cached: false, first: !tracked, tracked });
 }
 
+
+const COPILOT_PROMPT = `You are the Kolaboro agent copilot. Kolaboro trains local people (not lawyers) to verify off-plan property for overseas buyers. A junior agent pastes text from documents about ONE property (land certificate, brochure, contract, permit, developer messages). Your job: tell the agent exactly what is inconsistent, what to ask for, what to check on site, and when to escalate to a notary or lawyer. Be concrete and short. Never give legal conclusions; flag and route.
+Reply with ONLY one JSON object:
+{
+ "inconsistencies": [{"topic": string, "a": string, "b": string, "severity": "low"|"medium"|"high", "why": string}],
+ "ask_for": [up to 6 precise documents or answers the agent must request, each naming who to ask],
+ "check_on_site": [up to 6 things to verify physically, each measurable],
+ "escalate": {"needed": true|false, "to": "notary"|"lawyer"|"surveyor"|"none", "why": string},
+ "status": "go"|"hold"|"stop_and_escalate",
+ "summary": "two sentences for the agent"
+}
+Use the documents' own words in "a" and "b". Keep every string under 30 words.`;
+
+async function copilot(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  if (b.company) return json({ error: 'bad_request' }, 400);
+  const docs = (Array.isArray(b.docs) ? b.docs : []).slice(0, 5).map(d => ({ label: String(d.label || 'Document').slice(0, 60), text: String(d.text || '').slice(0, 5000) })).filter(d => d.text.trim().length > 20);
+  if (docs.length < 1) return json({ error: 'empty' }, 400);
+  const body = docs.map((d, i) => `### Document ${i + 1}: ${d.label}\n${d.text}`).join('\n\n');
+  const ck = new Request('https://kolaboro.com/__kb_cop/' + await sha(body));
+  const hit = await caches.default.match(ck);
+  if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
+  if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
+  let out;
+  try { out = await claude(env, COPILOT_PROMPT + '\n\nMilestone or stage: ' + String(b.stage || 'pre-purchase').slice(0, 60) + '\n\n' + body); }
+  catch (e) { return json({ error: 'model' }, 503); }
+  const res = { analysed: new Date().toISOString(), copilot: out };
+  ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
+  return json({ ...res, cached: false });
+}
+
+async function sha(t) { const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)); return [...new Uint8Array(h)].map(x => x.toString(16).padStart(2, '0')).join(''); }
+
 export async function api(req, u, env, ctx) {
+  if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return copilot(req, env, ctx);
   if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return analyze(req, env, ctx);
   if (u.pathname === '/api/kb/health') return json({ ok: true, configured: !!env.ANTHROPIC_API_KEY });
   return json({ error: 'not_found' }, 404);

@@ -25,7 +25,7 @@ var KB = (function(){
   var PAY = 'https://www.paypal.com/ncp/payment/32ENX4QK833GE';
   var STAGES = ['Case opened','Documents','Land & title','Building permit','Site visit','Report'];
   var STAGE_HELP = ['We confirm your payment and the project details.','We collect the contract, brochure and what you were promised.','Your agent checks the land certificate at the land office.','We confirm the building permit (PBG) in the official system.','Your agent visits the site: GPS-stamped photos and video.','Your written report with a clear verdict.'];
-  var VERD = { pending:['In progress','pending'], safe:['Safe to pay','safe'], hold:['Hold payments','hold'], stop:['Stop paying','stop'] };
+  var VERD = { pending:['In progress','pending'], safe:['No red flags','safe'], hold:['Hold payments','hold'], stop:["Don't pay yet",'stop'] };
   var q = new URLSearchParams(location.search);
   if (q.get('as')) { KB.set('kb-token-as', q.get('as'), true); history.replaceState(null, '', '/portal'); }
   var TOKEN = KB.get('kb-token-as') || KB.get('kb-token'), D = null, CUR = null, deskBusy = {};
@@ -71,7 +71,7 @@ var KB = (function(){
     // money
     if (c.next_payment_date) { var dd = days(c.next_payment_date), before = c.eta && new Date(c.next_payment_date) < new Date(c.eta) && !c.report_url;
       h += '<section class="ap-card"><p class="ap-k">Your next payment</p><div class="ap-money"><b>' + esc(c.next_payment_amount || '—') + '</b><span class="ap-muted">' + fmt(c.next_payment_date) + (dd >= 0 ? ' · in ' + dd + ' days' : ' · overdue') + '</span></div>' +
-      (before ? '<div class="ap-banner warn" style="margin:12px 0 0">This payment is due before our report. Ask the developer for a few extra days, or tell us in the chat and we prioritise your case.</div>' : (c.verdict === 'safe' ? '<div class="ap-banner ok" style="margin:12px 0 0">Our verdict: safe to pay this instalment.</div>' : '<p class="ap-small ap-muted" style="margin-bottom:0">We\'ll tell you here if it\'s safe to pay.</p>')) + '</section>'; }
+      (before ? '<div class="ap-banner warn" style="margin:12px 0 0">This payment is due before our report. Ask the developer for a few extra days, or tell us in the chat and we prioritise your case.</div>' : (c.verdict === 'safe' ? '<div class="ap-banner ok" style="margin:12px 0 0">No red flags at this milestone: the evidence supports paying this instalment.</div>' : '<p class="ap-small ap-muted" style="margin-bottom:0">We\'ll tell you here if it\'s OK to pay, based on the evidence.</p>')) + '</section>'; }
     // chat
     h += '<section class="ap-card"><h2>Messages' + (unread ? ' <span class="ap-att high">' + unread + ' new</span>' : '') + '</h2><p class="ap-small ap-muted" style="margin:0">With the Kolaboro team and your local agent. We reply within one working day.</p><div class="ap-chat" id="chat">' +
       c.messages.map(function(m){ var mine = u.admin_view ? m.admin : !m.admin; return '<div class="ap-msg ' + (mine ? 'me' : 'them') + '">' + esc(m.body) + '<small>' + (m.admin ? 'Kolaboro' : (u.admin_view ? esc(u.name) : 'You')) + ' · ' + fmt(m.at, true) + '</small></div>'; }).join('') +
