@@ -17,3 +17,6 @@
   18.3 min | europe/switzerland bajado: 0.51 GB en 39 s (libres 12.0 GB)
   18.8 min | europe/switzerland 42045 elementos
   18.8 min | parte europe/switzerland 40559 elementos
+  19.5 min | north-america/us/colorado bajado: 0.36 GB en 27 s (libres 12.2 GB)
+  19.9 min | north-america/us/colorado 13795 elementos
+  19.9 min | parte north-america/us/colorado 12855 elementos
