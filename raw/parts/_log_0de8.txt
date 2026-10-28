@@ -11,3 +11,6 @@
   17.9 min | europe/hungary bajado: 0.31 GB en 22 s (libres 12.5 GB)
   18.1 min | europe/hungary 38582 elementos
   18.1 min | parte europe/hungary 37080 elementos
+  18.9 min | asia/south-korea bajado: 0.27 GB en 20 s (libres 12.5 GB)
+  19.1 min | asia/south-korea 41213 elementos
+  19.1 min | parte asia/south-korea 40819 elementos
