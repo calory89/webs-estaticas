@@ -1,0 +1,101 @@
+{
+ "bingin": {
+  "title": "File:Bingin Beach.PNG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Gsarwa",
+  "date": "2011-06-07",
+  "page": "https://commons.wikimedia.org/wiki/File:Bingin_Beach.PNG",
+  "desc": "Bingin Beach just 1 kilometer from New Kuta Beach",
+  "file": "bingin.jpg"
+ },
+ "bingin2": {
+  "title": "File:The Perfect Sunset.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Tuwuh",
+  "date": "2011-07-03 18:12:58",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Perfect_Sunset.jpg",
+  "desc": "The sun plunges into the water in a cloudless sunset at Bingin beach, Bali, Indonesia.",
+  "file": "bingin2.jpg"
+ },
+ "uluwatu": {
+  "title": "File:Cliffs of Uluwatu, Bali, Indonesia, 20220826 1006 1038.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Jakub Hałun",
+  "date": "2022-08-26 10:06:36",
+  "page": "https://commons.wikimedia.org/wiki/File:Cliffs_of_Uluwatu,_Bali,_Indonesia,_20220826_1006_1038.jpg",
+  "desc": "Cliffs of Uluwatu with Luhur Uluwatu temple, Bali, Indonesia",
+  "file": "uluwatu.jpg"
+ },
+ "idconstr": {
+  "title": "File:Building under construction (Indonesia).jpg",
+  "license": "CC BY 4.0",
+  "artist": "Fitrah 9131",
+  "date": "2025-10-03 11:15:00",
+  "page": "https://commons.wikimedia.org/wiki/File:Building_under_construction_(Indonesia).jpg",
+  "desc": "This is a building in my town that's currently undergoing renovations. It was once abandoned and left to decay. Now, however, it's undergoing renovations. The exterior of the second and third floors h",
+  "file": "idconstr.jpg"
+ },
+ "obranegra": {
+  "title": "File:Obra negra.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Oscar J Duran",
+  "date": "2022-09-04 18:00:11",
+  "page": "https://commons.wikimedia.org/wiki/File:Obra_negra.jpg",
+  "desc": "Obra negra es la etapa inicial de una construcción sin acabados.",
+  "file": "obranegra.jpg"
+ },
+ "mxconstr": {
+  "title": "File:Edificio en construcción en Magdalena, Veracruz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Isaacvp",
+  "date": "2021-04-11 16:42:11",
+  "page": "https://commons.wikimedia.org/wiki/File:Edificio_en_construcci%C3%B3n_en_Magdalena,_Veracruz.jpg",
+  "desc": "Edificio en construcción en Magdalena, Veracruz",
+  "file": "mxconstr.jpg"
+ },
+ "tulum": {
+  "title": "File:Mexico - beach by Tulum, 2022.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mikkie27",
+  "date": "2022-03-10 12:20:12",
+  "page": "https://commons.wikimedia.org/wiki/File:Mexico_-_beach_by_Tulum,_2022.jpg",
+  "desc": "One of the beautiful beaches of the Gulf of Mexico.",
+  "file": "tulum.jpg"
+ },
+ "tulum2": {
+  "title": "File:Tulum Beach I Quintana Roo June 2024.jpg",
+  "license": "CC BY 2.0",
+  "artist": "edenpictures",
+  "date": "2024-06-22 14:30:02",
+  "page": "https://commons.wikimedia.org/wiki/File:Tulum_Beach_I_Quintana_Roo_June_2024.jpg",
+  "desc": "Tulum, Quintana Roo, Mexico",
+  "file": "tulum2.jpg"
+ },
+ "playa": {
+  "title": "File:Playa del Carmen, Quintana Roo, Mexico - Playacar.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Sharon Hahn Darlin",
+  "date": "2021-05-23 18:00:00",
+  "page": "https://commons.wikimedia.org/wiki/File:Playa_del_Carmen,_Quintana_Roo,_Mexico_-_Playacar.jpg",
+  "desc": "Playa del Carmen, QR Mexico",
+  "file": "playa.jpg"
+ },
+ "balivilla": {
+  "title": "File:The Villas at Villa Campuhan in Bali (19604714236).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Brett Morrison from Los Angeles, CA, USA",
+  "date": "2015-07-12 06:00",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Villas_at_Villa_Campuhan_in_Bali_(19604714236).jpg",
+  "desc": "The Villas at Villa Campuhan in Bali",
+  "file": "balivilla.jpg"
+ },
+ "villa700": {
+  "title": "File:This villa with 700$ per month. -bali (6294109563).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Jadi from Iran",
+  "date": "2011-10-30 14:58",
+  "page": "https://commons.wikimedia.org/wiki/File:This_villa_with_700$_per_month._-bali_(6294109563).jpg",
+  "desc": "This villa with 700$ per month. #bali",
+  "file": "villa700.jpg"
+ }
+}

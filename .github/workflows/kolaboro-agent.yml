@@ -47,6 +47,8 @@ jobs:
             export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
             H=$(git hash-object -w "$RUNNER_TEMP/bali-claims.json")
             git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/bali-claims.json
+            H2=$(git hash-object -w "$RUNNER_TEMP/bali-cases.json")
+            git update-index --add --cacheinfo 100644,$H2,_s/kolaboro.com/data/bali-cases.json
             T=$(git write-tree); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: research agent data $(date -u +%F)")

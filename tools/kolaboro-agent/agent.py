@@ -120,6 +120,52 @@ def aggregates(latest, runs):
         "runs": runs[-12:],
     }
 
+
+REGIONS = [('Bukit peninsula', ['Ungasan','Uluwatu','Pecatu','Bingin','Jimbaran','Bukit Pandawa','Nusa Dua']),
+           ('Canggu coast', ['Berawa','Pererenan','Padonan','Munggu','Seseh']), ('Ubud', ['Ubud']), ('Tabanan', ['Tabanan']), ('Sanur', ['Sanur'])]
+
+def _region(area):
+    for r, keys in REGIONS:
+        if any(k.lower() in area.lower() for k in keys): return r
+    return 'Bali'
+
+def _band(c):
+    p, cur = c.get('price_from'), c.get('currency')
+    if not isinstance(p, (int, float)) or cur not in FX: return 'Price not stated'
+    v = p * FX[cur]
+    if v < 10000: return 'Price not stated'
+    return 'Under $100k' if v < 100000 else '$100k to $200k' if v < 200000 else '$200k to $400k' if v < 400000 else '$400k and up'
+
+def _date(iso):
+    try:
+        return datetime.strptime(iso, '%Y-%m-%d').strftime('%-d %b %Y')
+    except Exception:
+        return iso or ''
+
+def _questions(c):
+    q = []
+    t = c.get('title_type')
+    if t == 'leasehold': q.append('Leasehold: is the lease registered, and is the base term the one advertised?')
+    elif not t: q.append('Title type not stated: leasehold, freehold or a company structure?')
+    if c.get('extension_promised'): q.append('An extension is promised: is it a binding clause with a fixed price, or only a promise?')
+    y = c.get('advertised_yield_pct')
+    if isinstance(y, (int, float)) and y >= 12: q.append('Advertised rental yield of 12% or more: does real occupancy nearby support it?')
+    if c.get('guaranteed_language'): q.append('"Guaranteed" returns: who guarantees them, and what happens if they can\'t pay?')
+    if c.get('permit_claim'): q.append('A building permit is claimed: does it exist in the official system and match this plot?')
+    else: q.append('No building permit (PBG) mentioned: ask for the number before paying.')
+    if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
+    return q[:5]
+
+def public_cases(projects, latest):
+    out = []
+    for i, p in enumerate(sorted(projects, key=lambda x: x['slug'])):
+        rec = latest.get(p['slug'], {}); c = rec.get('claims') or {}; read = rec.get('source') == 'ai'
+        out.append({'id': 'BALI-%03d' % (i + 1), 'region': _region(p['area']), 'band': _band(c), 'done': c.get('completion_year'),
+                    'read': read, 'checked': _date(rec.get('checked', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
+                    'q': _questions(c) if read else []})
+    out.sort(key=lambda c: (0 if c['invited'] else 1, c['region'], c['id']))
+    return {'updated': TODAY, 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
+
 def main():
     public_out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA, 'public-bali-claims.json')
     os.makedirs(os.path.join(DATA, 'runs'), exist_ok=True)
@@ -162,6 +208,7 @@ def main():
     agg = aggregates(latest, [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs])
     os.makedirs(os.path.dirname(os.path.abspath(public_out)), exist_ok=True)
     json.dump(agg, open(public_out, 'w'), ensure_ascii=False, indent=1)
+    json.dump(public_cases(projects, latest), open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'bali-cases.json'), 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(run))
 
 if __name__ == '__main__':

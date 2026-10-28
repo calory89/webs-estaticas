@@ -5,6 +5,19 @@ import os, sys, json, html as H
 OUT = sys.argv[1] if len(sys.argv) > 1 else 'cases_html'
 os.makedirs(OUT, exist_ok=True)
 
+PHOTOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'photos')
+PMETA = json.load(open(os.path.join(PHOTOS, 'meta.json'))) if os.path.exists(os.path.join(PHOTOS, 'meta.json')) else {}
+
+def purl(k):
+    return 'file://' + os.path.abspath(os.path.join(PHOTOS, PMETA[k]['file']))
+
+def credit(k):
+    m = PMETA[k]; return f"{H.escape(m['artist'])}, {H.escape(m['license'])}, via Wikimedia Commons"
+
+def figure(k, cap, h=62):
+    if k not in PMETA: return ''
+    return f'<figure class="ph"><div class="img" style="height:{h}mm;background-image:url({purl(k)})"></div><figcaption><b>{H.escape(cap)}</b> Photo: {credit(k)}.</figcaption></figure>'
+
 DIMS = ['Land title', 'Zoning and coastal rules', 'Building permits', 'Developer track record', 'Progress on site',
         'Where the money goes', 'Contract protections', 'Transparency', 'Realistic promises']
 
@@ -12,7 +25,7 @@ CSS = '''
 @page{size:A4;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Archivo,Helvetica,Arial,sans-serif;color:#17212B;font-size:10.5pt;line-height:1.5;background:#fff}
-.pg{width:210mm;min-height:297mm;padding:16mm 16mm 14mm;position:relative;page-break-after:always}
+.pg{width:210mm;height:297mm;overflow:hidden;padding:14mm 15mm 14mm;position:relative;page-break-after:always}
 .pg:last-child{page-break-after:auto}
 .top{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #17212B;padding-bottom:8px}
 .logo{font-weight:800;font-size:14pt;letter-spacing:-.02em;display:flex;align-items:center;gap:7px}
@@ -36,18 +49,28 @@ li{margin-top:3px}
 .tl li.bad::before{background:#D9480F}
 .tl b{font-variant-numeric:tabular-nums}
 table{width:100%;border-collapse:collapse;margin-top:8px;font-size:9.5pt}
-th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #E6E4DE;vertical-align:top}
+th,td{text-align:left;padding:4px 8px;border-bottom:1px solid #E6E4DE;vertical-align:top}
 th{font-size:8pt;text-transform:uppercase;letter-spacing:.05em;color:#59626B}
 .st{display:inline-block;font-size:8pt;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap}
 .s-red{background:#FDE2D6;color:#9A2E06}.s-amb{background:#FFF0C7;color:#7A5300}.s-grn{background:#DDEFE7;color:#0B5A40}.s-gry{background:#ECEBE6;color:#59626B}
-.callout{background:#17212B;color:#F6F6F3;border-radius:14px;padding:12px 14px;margin-top:12px}
+.callout{background:#17212B;color:#F6F6F3;border-radius:14px;padding:10px 13px;margin-top:10px;font-size:10pt}
 .callout b{color:#FFB48F}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.src{font-size:8.5pt;color:#2A3541;word-break:break-all}
+.src{font-size:7.2pt;line-height:1.35;color:#2A3541;word-break:break-all}
 .foot{position:absolute;left:16mm;right:16mm;bottom:9mm;font-size:7.5pt;color:#8A949E;display:flex;justify-content:space-between;border-top:1px solid #E6E4DE;padding-top:5px}
 .score{display:flex;gap:14px;align-items:center;margin-top:10px}
 .dial{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:22pt}
 .photo{height:120px;border-radius:12px;background:linear-gradient(180deg,#7FA6C4,#E9D9BE 60%,#9C8463 60.5%);position:relative;overflow:hidden}
+.cover{height:92mm;border-radius:16px;background-size:cover;background-position:center;position:relative;margin-top:12px;overflow:hidden}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,16,22,0) 30%,rgba(10,16,22,.88) 100%)}
+.cover .in{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;color:#fff}
+.cover h1{color:#fff;margin-top:6px;font-size:22pt}
+.cover .badge{margin-top:0}
+.cover small{display:block;font-size:7pt;opacity:.8;margin-top:6px}
+.ph{margin-top:10px}
+.ph .img{border-radius:12px;background-size:cover;background-position:center}
+.ph figcaption{font-size:7.5pt;color:#59626B;margin-top:4px}
+.ph figcaption b{color:#17212B}
 .photo span{position:absolute;left:8px;bottom:6px;font-size:7.5pt;color:#fff;text-shadow:0 1px 2px #000}
 '''
 
@@ -60,18 +83,19 @@ def checks_table(rows):
     return f'<table><tr><th style="width:28%">Check</th><th style="width:15%">Result</th><th>Why</th></tr>{tr}</table>'
 
 def public_case(c):
-    head = f'''<span class="badge b-pub">Public-record case study</span>
-<h1>{H.escape(c["title"])}</h1><p class="sub">{H.escape(c["sub"])}</p>
+    ck, ccap = c['cover']
+    head = f'''<div class="cover" style="background-image:url({purl(ck)})"><div class="in"><span class="badge b-pub">Public-record case study</span>
+<h1>{H.escape(c["title"])}</h1><small>{H.escape(ccap)} Photo: {credit(ck)}.</small></div></div><p class="sub" style="margin-top:10px">{H.escape(c["sub"])}</p>
 <div class="kv">{''.join(f'<div><span>{k}</span><b>{H.escape(v)}</b></div>' for k, v in c["kv"])}</div>
 <h2>What happened</h2><p>{c["what"]}</p>
 <h2>Timeline</h2><ul class="tl">{''.join(f'<li class="{"bad" if bad else ""}"><b>{d}</b> · {H.escape(t)}</li>' for d, t, bad in c["timeline"])}</ul>
 <div class="callout"><b>The lesson.</b> {c["lesson"]}</div>'''
-    p2 = f'''<h2 style="margin-top:14px">Which Kolaboro checks would have caught it</h2>
+    p2 = f'''{figure(c['photo2'][0], c['photo2'][1], 40) if c.get('photo2') else ''}<h2 style="margin-top:12px">Which Kolaboro checks would have caught it</h2>
 {checks_table(c["checks"])}
 <h2>What a buyer could have done before paying</h2><ol>{''.join(f'<li>{H.escape(x)}</li>' for x in c["todo"])}</ol>
 <div class="two" style="margin-top:12px"><div class="callout"><b>Cost of a Kolaboro check</b><br>€490 before signing, then €99 a month during construction.</div><div class="callout"><b>What was at stake</b><br>{c["stake"]}</div></div>
-<h2>Sources</h2><ul class="src">{''.join(f'<li>{H.escape(t)}: {u}</li>' for t, u in c["sources"])}</ul>
-<p style="font-size:8.5pt;color:#59626B;margin-top:10px">{c["disclaimer"]}</p>'''
+<h2>Sources</h2><ul class="src">{''.join(f'<li>{H.escape(t)}: {u}</li>' for t, u in c["sources"])}{''.join(f'<li>Photo: {H.escape(PMETA[k]["title"].replace("File:", ""))}, {credit(k)}: {PMETA[k]["page"]}</li>' for k in [c['cover'][0]] + ([c['photo2'][0]] if c.get('photo2') else []) if k in PMETA)}</ul>
+<p style="font-size:7.5pt;color:#59626B;margin-top:6px;line-height:1.35">{c["disclaimer"]}</p>'''
     note = 'Public-record case study. Not a Kolaboro verification of this project.'
     return page(head, c['ref'], note) + page(p2, c['ref'], note)
 
@@ -80,7 +104,7 @@ DISC = ('This case study summarises what was published by the sources listed, on
         'The developer is entitled to reply, and we will add any reply we receive.')
 
 CASES = [
- dict(slug='bingin-beach-bali-2025', ref='Case PR-01 · Bali, Indonesia',
+ dict(cover=('bingin','Bingin Beach in 2011, with buildings on the cliff behind the sand.'), photo2=('uluwatu','The protected cliff coastline of the Bukit peninsula, Uluwatu (2022). Location photo, not one of the demolished buildings.'), slug='bingin-beach-bali-2025', ref='Case PR-01 · Bali, Indonesia',
   title='Bingin Beach, Bali: 48 buildings demolished on the cliff',
   sub='Restaurants, homestays and surf businesses built on state-owned coastal land without valid permits. Some were backed by foreign investors.',
   kv=[('Where','Bingin, Uluwatu'),('When','21 July 2025'),('Structures','48 demolished'),('Foreign-backed','At least 7')],
@@ -106,7 +130,7 @@ CASES = [
   sources=[('Honeycombers Bali, "Bingin Beach demolition and rebuild", 24 Jun 2026','https://thehoneycombers.com/bali/bingin-beach-demolition-rebuild/'),
            ('Bukit Vista, "Bingin Cliff Demolitions", 10 Sep 2025','https://www.bukitvista.com/?p=109437')],
   disclaimer='This case study summarises reporting on government enforcement, as published by the sources listed. Kolaboro has not inspected any of the properties involved.'),
- dict(slug='ocean-tulum-mexico', ref='Case PR-02 · Tulum, Mexico',
+ dict(cover=('tulum2','Tulum, Quintana Roo (June 2024). Location photo, not the project.'), photo2=('mxconstr','What "raw concrete stage" (obra negra) looks like: a building frame without finishes, Mexico. Illustrative photo, not the project.'), slug='ocean-tulum-mexico', ref='Case PR-02 · Tulum, Mexico',
   title='Ocean Tulum: buyers report waiting over three years for their condos',
   sub='Buyers say they made every payment, but the building is unfinished and there is no firm delivery date.',
   kv=[('Where','Tulum, Quintana Roo'),('Developer (per source)','Grupo VINSA'),('Purchases from','2022'),('Status (Jun 2026)','Not delivered')],
@@ -131,7 +155,7 @@ CASES = [
   sources=[('Riviera Maya News, "Buyers Report Over Three-Year Delays in Delivery of Tulum Condos", 17 Jun 2026','https://www.rivieramayanews.mx/buyers-report-over-three-year-delays-in-delivery-of-tulum-condos/'),
            ('Tulum Times, "Ocean Tulum buyers accuse Grupo Vinsa of unfulfilled deliveries and refunds"','https://tulumtimes.com/ocean-tulum-buyers-accuse-grupo-vinsa-of-unfulfilled-deliveries-and-refunds')],
   disclaimer=DISC),
- dict(slug='menese-tulum-playa', ref='Case PR-03 · Tulum and Playa del Carmen, Mexico',
+ dict(cover=('playa','Playa del Carmen, Quintana Roo (2021). Location photo, not the project.'), photo2=('obranegra','An unfinished block wall without render: the stage buyers are told is "almost done". Illustrative photo, not the project.'), slug='menese-tulum-playa', ref='Case PR-03 · Tulum and Playa del Carmen, Mexico',
   title='Menese: buyers say apartments bought in 2023 have not been handed over',
   sub='One buyer is gathering others for a collective complaint; another dispute over a delayed unit is in the courts.',
   kv=[('Where','Tulum and Playa del Carmen'),('Developer (per source)','Menese'),('One unit paid','$97,000'),('Status (Aug 2026)','Disputed')],
@@ -155,7 +179,7 @@ CASES = [
   stake='$97,000 for a single unit, plus years of delay and legal costs.',
   sources=[('Riviera Maya News, "Buyer Seeks Collective Action Over Undelivered Menese Apartments", 20 Aug 2026','https://www.rivieramayanews.mx/buyer-seeks-collective-action-over-undelivered-menese-apartments/')],
   disclaimer=DISC),
- dict(slug='bali-villa-share-scam', ref='Case PR-04 · Badung, Bali',
+ dict(photo2=('balivilla','A real, finished villa resort in Bali. The difference between this and a scam is a land certificate and a visit. Illustrative photo, not related to the case.'), cover=('villa700','Villas in Bali\'s green hills. Illustrative photo: not the villas in this case, which did not exist as described.'), slug='bali-villa-share-scam', ref='Case PR-04 · Badung, Bali',
   title='The Bali villa that didn\'t exist: over $126,000 lost by Australian investors',
   sub='Investors paid for half-shares in villas with promised monthly income. The contracts and locations were false.',
   kv=[('Where','Badung, Bali'),('Reported','Mar 2024 (ABC)'),('Half share price','$66,000'),('Reported losses','$126,000+')],
@@ -189,8 +213,8 @@ def live_case():
             ('Contract protections','Check','A lease extension is advertised. Next: is it a binding clause with a fixed price?'),
             ('Transparency','Pass','Price, title type, lease term and completion year are published on the developer\'s site.'),
             ('Realistic promises','Check','Projected annual return of 10 to 13%: compare with real occupancy and rates nearby.')]
-    p1 = f'''<span class="badge b-live">Live case · stage 2 of 5</span>
-<h1>BALI-014: off-plan villas, Bukit peninsula</h1><p class="sub">A real project in our pipeline. We name it only after the verification is complete and the developer has had 10 working days to reply.</p>
+    p1 = f'''<div class="cover" style="height:70mm;background-image:url({purl('uluwatu')})"><div class="in"><span class="badge b-live">Live case · stage 2 of 5</span>
+<h1>BALI-014: off-plan villas, Bukit peninsula</h1><small>The Bukit peninsula, Bali. Location photo, not the project. Photo: {credit('uluwatu')}.</small></div></div><p class="sub">A real project in our pipeline. We name it only after the verification is complete and the developer has had 10 working days to reply.</p>
 <div class="kv"><div><span>Area</span><b>Bukit peninsula</b></div><div><span>Price range</span><b>$200k to $400k</b></div><div><span>Title advertised</span><b>Leasehold</b></div><div><span>Completion advertised</span><b>2027</b></div></div>
 <h2>Where this case stands</h2>
 <ul class="tl"><li><b>28 Oct 2026</b> · Promises read by our AI agent from the developer's own pages</li><li><b>28 Oct 2026</b> · Developer invited to a free verification</li><li class="" style="opacity:.55"><b>Next</b> · Registry checks: land certificate, lease registration, building permit</li><li style="opacity:.55"><b>Next</b> · Site visit with GPS- and time-stamped video</li><li style="opacity:.55"><b>Then</b> · Trust Score published with evidence and the developer's reply</li></ul>

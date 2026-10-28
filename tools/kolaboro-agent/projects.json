@@ -2,29 +2,419 @@
  "updated": "2026-10-28",
  "note": "Internal research list. Advertised claims only, not verified facts. Never publish per-project data without verification.",
  "projects": [
-  {"slug": "every-bali", "name": "EVERY Bali", "developer": "PT Bali Sunlit Commune", "area": "Ungasan", "url": "https://every-bali.com", "seed": {"price": null, "currency": null, "title": "leasehold", "lease_base": 40, "extension": true, "guaranteed_language": true, "completion": "2027", "permit_claim": false}},
-  {"slug": "nara-villas", "name": "Nara Villas", "developer": "Balitecture", "area": "Uluwatu", "url": "https://www.balitecture.com/developments/nara-villas", "seed": {"price": 269000, "currency": "USD", "title": "leasehold", "lease_base": 30, "extension": true, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "suku-residences", "name": "Suku Residences", "developer": "Balitecture", "area": "Uluwatu", "url": "https://www.balitecture.com/developments/suku-residences", "seed": {"price": 355000, "currency": "USD", "title": "leasehold", "lease_base": 30, "extension": true, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "oasis-iii", "name": "Oasis III", "developer": "BREIG Property", "area": "Berawa, Canggu", "url": "https://breig-property.com/projects", "seed": {"price": 360000, "currency": "USD", "title": "leasehold", "lease_base": 30, "extension": false, "guaranteed_language": false, "completion": "2026", "permit_claim": false}},
-  {"slug": "elysium-eco-city", "name": "ELYSIUM Eco City", "developer": "BREIG Property", "area": "Pererenan", "url": "https://breig-property.com/projects/elysium-eco-city", "seed": {"price": 97000, "currency": "USD", "title": null, "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2028", "permit_claim": false}},
-  {"slug": "magnum-resort-sanur", "name": "Magnum Resort Sanur", "developer": "Magnum Estate", "area": "Sanur", "url": "https://magnumestate.com/sanur", "seed": {"price": 531000, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "amani-melasti", "name": "Amani Melasti by Wyndham", "developer": "TEUS Group", "area": "Ungasan", "url": "https://www.teus-group.com", "seed": {"price": 96000, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "lyvin-uluwatu", "name": "Lyvin Uluwatu Apartments", "developer": "Lyvin Properties", "area": "Pecatu", "url": "https://lyvinproperties.co/uluwatu", "seed": {"price": 396000, "currency": "USD", "title": "leasehold", "lease_base": 35, "extension": true, "guaranteed_language": false, "completion": "2028", "permit_claim": false}},
-  {"slug": "temple-heights", "name": "Temple Heights", "developer": "Investland Bali", "area": "Padonan, Canggu", "url": "https://investlandbali.com", "seed": {"price": 182000, "currency": "USD", "title": "leasehold", "lease_base": 25, "extension": true, "guaranteed_language": false, "completion": null, "permit_claim": true}},
-  {"slug": "serenity-village", "name": "Serenity Village", "developer": "Global Bali Home", "area": "Ubud", "url": "https://www.globalbalihome.com", "seed": {"price": 2270000000, "currency": "IDR", "title": "leasehold", "lease_base": 30, "extension": true, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "manta-livin", "name": "Manta Livin", "developer": "Big Bali Group", "area": "Uluwatu", "url": "https://offplan.so/projects/manta-livin-uluwatu", "seed": {"price": 95000, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "prive-pererenan", "name": "Privé Pererenan", "developer": "Urban Escape", "area": "Pererenan", "url": "https://urbanescape.id/prive", "seed": {"price": 248000, "currency": "USD", "title": "leasehold", "lease_base": 32, "extension": true, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "core-villas", "name": "Core Villas", "developer": "CORE Concept Living", "area": "Munggu / Seseh", "url": "https://www.coreconceptliving.com", "seed": {"price": 246000, "currency": "USD", "title": "leasehold", "lease_base": 27, "extension": false, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "segara", "name": "Segara", "developer": "Axora Developments", "area": "Seseh", "url": "https://axoradevelopments.com", "seed": {"price": 79000, "currency": "USD", "title": "leasehold", "lease_base": 34, "extension": true, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "coco-hills", "name": "COCO Hills Resort", "developer": "COCO Development Group", "area": "Bingin", "url": "https://cocodevelopmentgroup.com", "seed": {"price": 131967, "currency": "EUR", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "vodopad", "name": "VODOPAD", "developer": "MOVE Property Group", "area": "Ubud", "url": "https://movepropertygroup.com", "seed": {"price": 69000, "currency": "USD", "title": "leasehold", "lease_base": 30, "extension": true, "guaranteed_language": false, "completion": "2026", "permit_claim": false}},
-  {"slug": "aravita-residence", "name": "Aravita Residence", "developer": "unknown", "area": "Nusa Dua", "url": "https://aravitaresidence.com", "seed": {"price": 175000, "currency": "USD", "title": null, "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2028", "permit_claim": false}},
-  {"slug": "natha-loka", "name": "Natha Loka Eco Village", "developer": "Seven Stones Indonesia", "area": "Tabanan", "url": "https://offplan.so/projects/natha-loka-tabanan", "seed": {"price": 191000, "currency": "USD", "title": "leasehold", "lease_base": 30, "extension": false, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "biom", "name": "Biom", "developer": "Biom Development", "area": "Tabanan", "url": "https://offplan.so/projects/biom-nuanu", "seed": {"price": 145000, "currency": "USD", "title": "leasehold", "lease_base": 50, "extension": false, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "anjuna-bay", "name": "The Anjuna Bay", "developer": "Anjuna Bay", "area": "Uluwatu", "url": "https://offplan.so/projects/the-anjuna-bay-uluwatu", "seed": {"price": 190000, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": true, "completion": null, "permit_claim": false}},
-  {"slug": "octasun", "name": "OctaSun Residence", "developer": "Seven Sky", "area": "Bukit Pandawa", "url": "https://offplan.so/projects/octa-sun-residence-pandawa", "seed": {"price": 273000, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "j-hills", "name": "J-Hills", "developer": "Homevibe Development Group", "area": "Jimbaran", "url": "https://offplan.so/projects/j-hills-jimbaran", "seed": {"price": 99900, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "secret-inshi", "name": "SECRET by INSHI", "developer": "INSHI Development", "area": "Ubud", "url": "https://offplan.so/projects/secret-by-inshi-ubud", "seed": {"price": 95400, "currency": "USD", "title": "leasehold", "lease_base": null, "extension": null, "guaranteed_language": false, "completion": "2027", "permit_claim": false}},
-  {"slug": "bingin-ocean-villas", "name": "Bingin Ocean Villas", "developer": "Bingin Ocean Villas Private Ltd.", "area": "Bingin", "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas", "seed": {"price": null, "currency": null, "title": "leasehold", "lease_base": 29, "extension": true, "guaranteed_language": false, "completion": "2027", "permit_claim": false}}
+  {
+   "slug": "every-bali",
+   "name": "EVERY Bali",
+   "developer": "PT Bali Sunlit Commune",
+   "area": "Ungasan",
+   "url": "https://every-bali.com",
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "leasehold",
+    "lease_base": 40,
+    "extension": true,
+    "guaranteed_language": true,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "nara-villas",
+   "name": "Nara Villas",
+   "developer": "Balitecture",
+   "area": "Uluwatu",
+   "url": "https://www.balitecture.com/developments/nara-villas",
+   "seed": {
+    "price": 269000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "suku-residences",
+   "name": "Suku Residences",
+   "developer": "Balitecture",
+   "area": "Uluwatu",
+   "url": "https://www.balitecture.com/developments/suku-residences",
+   "seed": {
+    "price": 355000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "oasis-iii",
+   "name": "Oasis III",
+   "developer": "BREIG Property",
+   "area": "Berawa, Canggu",
+   "url": "https://breig-property.com/projects",
+   "seed": {
+    "price": 360000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "elysium-eco-city",
+   "name": "ELYSIUM Eco City",
+   "developer": "BREIG Property",
+   "area": "Pererenan",
+   "url": "https://breig-property.com/projects/elysium-eco-city",
+   "seed": {
+    "price": 97000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "magnum-resort-sanur",
+   "name": "Magnum Resort Sanur",
+   "developer": "Magnum Estate",
+   "area": "Sanur",
+   "url": "https://magnumestate.com/sanur",
+   "seed": {
+    "price": 531000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "amani-melasti",
+   "name": "Amani Melasti by Wyndham",
+   "developer": "TEUS Group",
+   "area": "Ungasan",
+   "url": "https://www.teus-group.com",
+   "seed": {
+    "price": 96000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "lyvin-uluwatu",
+   "name": "Lyvin Uluwatu Apartments",
+   "developer": "Lyvin Properties",
+   "area": "Pecatu",
+   "url": "https://lyvinproperties.co/uluwatu",
+   "seed": {
+    "price": 396000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 35,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "temple-heights",
+   "name": "Temple Heights",
+   "developer": "Investland Bali",
+   "area": "Padonan, Canggu",
+   "url": "https://investlandbali.com",
+   "seed": {
+    "price": 182000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 25,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": true
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "serenity-village",
+   "name": "Serenity Village",
+   "developer": "Global Bali Home",
+   "area": "Ubud",
+   "url": "https://www.globalbalihome.com",
+   "seed": {
+    "price": 2270000000,
+    "currency": "IDR",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "manta-livin",
+   "name": "Manta Livin",
+   "developer": "Big Bali Group",
+   "area": "Uluwatu",
+   "url": "https://offplan.so/projects/manta-livin-uluwatu",
+   "seed": {
+    "price": 95000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "prive-pererenan",
+   "name": "Privé Pererenan",
+   "developer": "Urban Escape",
+   "area": "Pererenan",
+   "url": "https://urbanescape.id/prive",
+   "seed": {
+    "price": 248000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 32,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "core-villas",
+   "name": "Core Villas",
+   "developer": "CORE Concept Living",
+   "area": "Munggu / Seseh",
+   "url": "https://www.coreconceptliving.com",
+   "seed": {
+    "price": 246000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 27,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "segara",
+   "name": "Segara",
+   "developer": "Axora Developments",
+   "area": "Seseh",
+   "url": "https://axoradevelopments.com",
+   "seed": {
+    "price": 79000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 34,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "coco-hills",
+   "name": "COCO Hills Resort",
+   "developer": "COCO Development Group",
+   "area": "Bingin",
+   "url": "https://cocodevelopmentgroup.com",
+   "seed": {
+    "price": 131967,
+    "currency": "EUR",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "vodopad",
+   "name": "VODOPAD",
+   "developer": "MOVE Property Group",
+   "area": "Ubud",
+   "url": "https://movepropertygroup.com",
+   "seed": {
+    "price": 69000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "aravita-residence",
+   "name": "Aravita Residence",
+   "developer": "unknown",
+   "area": "Nusa Dua",
+   "url": "https://aravitaresidence.com",
+   "seed": {
+    "price": 175000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "natha-loka",
+   "name": "Natha Loka Eco Village",
+   "developer": "Seven Stones Indonesia",
+   "area": "Tabanan",
+   "url": "https://offplan.so/projects/natha-loka-tabanan",
+   "seed": {
+    "price": 191000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "biom",
+   "name": "Biom",
+   "developer": "Biom Development",
+   "area": "Tabanan",
+   "url": "https://offplan.so/projects/biom-nuanu",
+   "seed": {
+    "price": 145000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 50,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "anjuna-bay",
+   "name": "The Anjuna Bay",
+   "developer": "Anjuna Bay",
+   "area": "Uluwatu",
+   "url": "https://offplan.so/projects/the-anjuna-bay-uluwatu",
+   "seed": {
+    "price": 190000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "completion": null,
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "octasun",
+   "name": "OctaSun Residence",
+   "developer": "Seven Sky",
+   "area": "Bukit Pandawa",
+   "url": "https://offplan.so/projects/octa-sun-residence-pandawa",
+   "seed": {
+    "price": 273000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "j-hills",
+   "name": "J-Hills",
+   "developer": "Homevibe Development Group",
+   "area": "Jimbaran",
+   "url": "https://offplan.so/projects/j-hills-jimbaran",
+   "seed": {
+    "price": 99900,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "secret-inshi",
+   "name": "SECRET by INSHI",
+   "developer": "INSHI Development",
+   "area": "Ubud",
+   "url": "https://offplan.so/projects/secret-by-inshi-ubud",
+   "seed": {
+    "price": 95400,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "bingin-ocean-villas",
+   "name": "Bingin Ocean Villas",
+   "developer": "Bingin Ocean Villas Private Ltd.",
+   "area": "Bingin",
+   "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas",
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "leasehold",
+    "lease_base": 29,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  }
  ]
 }
