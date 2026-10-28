@@ -6,3 +6,6 @@
    6.1 min | europe/ukraine bajado: 0.82 GB en 68 s (libres 12.2 GB)
    6.9 min | europe/ukraine 60136 elementos
    6.9 min | parte europe/ukraine 56504 elementos
+   7.7 min | north-america/us/florida bajado: 0.61 GB en 34 s (libres 12.4 GB)
+   8.3 min | north-america/us/florida 19549 elementos
+   8.3 min | parte north-america/us/florida 18753 elementos
