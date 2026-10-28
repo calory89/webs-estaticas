@@ -50,7 +50,7 @@ def head(title, desc, path, extra_ld=None, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/k/site.css?v=5">
+<link rel="stylesheet" href="/k/site.css?v=6">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 {GA}
 </head>'''
@@ -106,6 +106,8 @@ def footer(mcta=True, mcta_href='/#start'):
         <li><a href="/developers">For developers</a></li>
         <li><a href="/guides/bali-land-titles">Guide: land titles</a></li>
         <li><a href="/guides/off-plan-payments">Guide: safe payments</a></li>
+        <li><a href="/guides/questions-to-ask-a-developer">20 questions for developers</a></li>
+        <li><a href="/guides/contract-clauses">Contract clauses to ask for</a></li>
         <li><a href="/corrections">Corrections</a></li>
         <li><a href="/glossary">Glossary</a></li>
         <li><a href="/developers/self-check">Developer self-check</a></li></ul></div>
@@ -735,6 +737,7 @@ def build_404():
 exec(open(os.path.join(HERE, 'r3.py')).read())
 exec(open(os.path.join(HERE, 'r4.py')).read())
 exec(open(os.path.join(HERE, 'r5.py')).read())
+exec(open(os.path.join(HERE, 'r6.py')).read())
 
 def main():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -749,7 +752,9 @@ def main():
     paths += build_round3()
     paths += build_round4()
     paths += build_round5()
+    paths += build_round6()
     build_404()
+    finish_round6()
     idx = [p for p in paths if p not in ('/score/sample',)]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(
         f'<url><loc>{SITE}{p if p == "/" else p + "/"}</loc><lastmod>{TODAY}</lastmod></url>' for p in idx) + '</urlset>\n'
