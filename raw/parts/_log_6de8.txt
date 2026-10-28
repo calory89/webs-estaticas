@@ -59,3 +59,6 @@
   27.1 min | europe/isle-of-man bajado: 0.01 GB en 3 s (libres 12.7 GB)
   27.2 min | europe/isle-of-man 457 elementos
   27.2 min | parte europe/isle-of-man 400 elementos
+  27.2 min | europe/andorra bajado: 0.00 GB en 2 s (libres 12.7 GB)
+  27.2 min | europe/andorra 208 elementos
+  27.2 min | parte europe/andorra 208 elementos
