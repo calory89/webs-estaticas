@@ -51,3 +51,6 @@
   41.4 min | antarctica bajado: 0.03 GB en 5 s (libres 12.4 GB)
   41.4 min | antarctica 62 elementos
   41.4 min | parte antarctica 62 elementos
+  41.5 min | europe/azores bajado: 0.02 GB en 6 s (libres 12.4 GB)
+  41.5 min | europe/azores 1450 elementos
+  41.5 min | parte europe/azores 1401 elementos
