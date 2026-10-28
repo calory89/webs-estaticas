@@ -18,3 +18,6 @@
   31.2 min | north-america/us/georgia bajado: 0.33 GB en 21 s (libres 12.4 GB)
   31.6 min | north-america/us/georgia 11040 elementos
   31.6 min | parte north-america/us/georgia 10828 elementos
+  33.5 min | asia/taiwan bajado: 0.31 GB en 109 s (libres 12.4 GB)
+  34.0 min | asia/taiwan 30069 elementos
+  34.0 min | parte asia/taiwan 29469 elementos
