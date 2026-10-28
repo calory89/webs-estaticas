@@ -30,3 +30,6 @@
   13.2 min | north-america/us/kentucky bajado: 0.14 GB en 9 s (libres 12.7 GB)
   13.3 min | north-america/us/kentucky 4763 elementos
   13.3 min | parte north-america/us/kentucky 4365 elementos
+  13.8 min | europe/latvia bajado: 0.13 GB en 8 s (libres 12.7 GB)
+  13.9 min | europe/latvia 5316 elementos
+  13.9 min | parte europe/latvia 4842 elementos
