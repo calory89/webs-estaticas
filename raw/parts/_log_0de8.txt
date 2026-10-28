@@ -30,3 +30,6 @@
   29.7 min | north-america/us/nebraska bajado: 0.09 GB en 8 s (libres 12.6 GB)
   29.7 min | north-america/us/nebraska 3643 elementos
   29.7 min | parte north-america/us/nebraska 3433 elementos
+  29.9 min | asia/north-korea bajado: 0.09 GB en 8 s (libres 12.6 GB)
+  30.0 min | asia/north-korea 840 elementos
+  30.0 min | parte asia/north-korea 827 elementos
