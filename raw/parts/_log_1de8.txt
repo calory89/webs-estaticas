@@ -6,3 +6,6 @@
   22.8 min | central-america bajado: 0.74 GB en 51 s (libres 12.0 GB)
   23.6 min | central-america 49825 elementos
   23.6 min | parte central-america 48837 elementos
+  25.8 min | north-america/mexico bajado: 0.60 GB en 44 s (libres 12.1 GB)
+  26.4 min | north-america/mexico 47393 elementos
+  26.4 min | parte north-america/mexico 46523 elementos
