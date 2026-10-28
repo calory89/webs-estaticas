@@ -14,3 +14,6 @@
   16.3 min | north-america/us/texas bajado: 0.68 GB en 54 s (libres 12.2 GB)
   16.9 min | north-america/us/texas 26817 elementos
   16.9 min | parte north-america/us/texas 26155 elementos
+  17.5 min | north-america/us/north-carolina bajado: 0.40 GB en 29 s (libres 12.4 GB)
+  17.8 min | north-america/us/north-carolina 11450 elementos
+  17.8 min | parte north-america/us/north-carolina 11089 elementos
