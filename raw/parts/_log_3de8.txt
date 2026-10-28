@@ -21,3 +21,6 @@
   11.9 min | asia/gcc-states bajado: 0.24 GB en 14 s (libres 12.6 GB)
   12.2 min | asia/gcc-states 15443 elementos
   12.2 min | parte asia/gcc-states 14852 elementos
+  12.4 min | north-america/us/oregon bajado: 0.24 GB en 14 s (libres 12.6 GB)
+  12.7 min | north-america/us/oregon 12431 elementos
+  12.7 min | parte north-america/us/oregon 12003 elementos
