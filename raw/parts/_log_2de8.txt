@@ -42,3 +42,6 @@
   40.8 min | north-america/us/wyoming bajado: 0.09 GB en 19 s (libres 12.3 GB)
   40.9 min | north-america/us/wyoming 1919 elementos
   40.9 min | parte north-america/us/wyoming 1893 elementos
+  41.1 min | asia/armenia bajado: 0.05 GB en 8 s (libres 12.4 GB)
+  41.1 min | asia/armenia 5215 elementos
+  41.1 min | parte asia/armenia 5154 elementos
