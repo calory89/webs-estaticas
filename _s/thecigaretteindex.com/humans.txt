@@ -1,0 +1,6 @@
+The Cigarette Index - thecigaretteindex.com
+Air quality in cigarettes, after Muller & Muller (Berkeley Earth).
+430 cities and 225,000 towns and villages. Compare any two, share your number. Data: annual mean PM2.5. Corrections welcome via /contact.
+Operated by Equinox Investment Group LLC. X: @mrstartups
+Data: WHO Ambient Air Quality Database v8 (2026), WHO GHO, GeoNames. Updated 2026-10-13.
+Places: ACAG SatPM2.5 V6.GL.03 2024 (calibrated to WHO monitors), GeoNames cities500, source mix McDuffie et al. 2021. Updated 2026-10-16.
