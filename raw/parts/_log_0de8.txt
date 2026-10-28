@@ -24,3 +24,6 @@
   29.0 min | europe/bosnia-herzegovina bajado: 0.15 GB en 12 s (libres 12.6 GB)
   29.1 min | europe/bosnia-herzegovina 4222 elementos
   29.1 min | parte europe/bosnia-herzegovina 4087 elementos
+  29.3 min | north-america/us/iowa bajado: 0.12 GB en 10 s (libres 12.6 GB)
+  29.4 min | north-america/us/iowa 6945 elementos
+  29.4 min | parte north-america/us/iowa 6762 elementos
