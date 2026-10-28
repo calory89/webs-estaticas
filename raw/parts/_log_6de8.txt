@@ -62,3 +62,4 @@
   27.2 min | europe/andorra bajado: 0.00 GB en 2 s (libres 12.7 GB)
   27.2 min | europe/andorra 208 elementos
   27.2 min | parte europe/andorra 208 elementos
+  27.2 min | RESUMEN job 6/8 hecho
