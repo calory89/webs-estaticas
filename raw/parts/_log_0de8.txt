@@ -5,3 +5,6 @@
   15.9 min | europe/ireland-and-northern-ireland bajado: 0.39 GB en 27 s (libres 12.4 GB)
   16.2 min | europe/ireland-and-northern-ireland 19267 elementos
   16.2 min | parte europe/ireland-and-northern-ireland 18164 elementos
+  17.0 min | north-america/us/illinois bajado: 0.34 GB en 24 s (libres 12.5 GB)
+  17.3 min | north-america/us/illinois 17079 elementos
+  17.3 min | parte north-america/us/illinois 16102 elementos
