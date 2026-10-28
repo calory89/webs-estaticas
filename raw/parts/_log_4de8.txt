@@ -39,3 +39,6 @@
   44.3 min | north-america/us/kansas bajado: 0.11 GB en 9 s (libres 12.6 GB)
   44.4 min | north-america/us/kansas 5543 elementos
   44.4 min | parte north-america/us/kansas 5359 elementos
+  44.6 min | asia/syria bajado: 0.08 GB en 11 s (libres 12.6 GB)
+  44.7 min | asia/syria 4370 elementos
+  44.7 min | parte asia/syria 4272 elementos
