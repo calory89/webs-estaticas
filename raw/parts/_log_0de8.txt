@@ -33,3 +33,6 @@
   29.9 min | asia/north-korea bajado: 0.09 GB en 8 s (libres 12.6 GB)
   30.0 min | asia/north-korea 840 elementos
   30.0 min | parte asia/north-korea 827 elementos
+  30.1 min | europe/albania bajado: 0.05 GB en 5 s (libres 12.7 GB)
+  30.1 min | europe/albania 2885 elementos
+  30.1 min | parte europe/albania 2767 elementos
