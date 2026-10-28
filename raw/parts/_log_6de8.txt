@@ -53,3 +53,6 @@
   27.0 min | europe/montenegro bajado: 0.03 GB en 5 s (libres 12.7 GB)
   27.0 min | europe/montenegro 4008 elementos
   27.0 min | parte europe/montenegro 3989 elementos
+  27.1 min | europe/malta bajado: 0.01 GB en 3 s (libres 12.7 GB)
+  27.1 min | europe/malta 718 elementos
+  27.1 min | parte europe/malta 688 elementos
