@@ -11,3 +11,6 @@
   16.4 min | europe/turkey bajado: 0.61 GB en 40 s (libres 13.1 GB)
   17.0 min | europe/turkey 51889 elementos
   17.0 min | parte europe/turkey 51274 elementos
+  18.0 min | europe/denmark bajado: 0.46 GB en 27 s (libres 13.2 GB)
+  18.4 min | europe/denmark 19268 elementos
+  18.4 min | parte europe/denmark 18599 elementos
