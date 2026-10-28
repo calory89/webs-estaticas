@@ -15,3 +15,6 @@
   27.3 min | europe/portugal bajado: 0.40 GB en 165 s (libres 12.1 GB)
   27.8 min | europe/portugal 46949 elementos
   27.8 min | parte europe/portugal 37388 elementos
+  29.8 min | asia/bangladesh bajado: 0.33 GB en 102 s (libres 12.1 GB)
+  30.2 min | asia/bangladesh 20501 elementos
+  30.2 min | parte asia/bangladesh 20368 elementos
