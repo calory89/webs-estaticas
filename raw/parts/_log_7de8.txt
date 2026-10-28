@@ -44,3 +44,6 @@
   37.2 min | north-america/us/west-virginia bajado: 0.09 GB en 17 s (libres 12.3 GB)
   37.3 min | north-america/us/west-virginia 3435 elementos
   37.3 min | parte north-america/us/west-virginia 3340 elementos
+  38.1 min | asia/laos bajado: 0.05 GB en 36 s (libres 12.4 GB)
+  38.1 min | asia/laos 1846 elementos
+  38.1 min | parte asia/laos 1841 elementos
