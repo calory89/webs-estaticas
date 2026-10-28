@@ -34,7 +34,8 @@ PROMPT = """You are Kolaboro's research agent. Kolaboro protects people who buy 
 Below is the text of a public web page about an off-plan property project in Bali.
 Extract ONLY what the page itself advertises. Do not guess. Use null when the page doesn't say.
 
-Return a single JSON object with exactly these keys:
+Reply with ONLY a single JSON object, no other text before or after it. If the page has little or no information, still return the object with null values.
+The JSON object has exactly these keys:
 - price_from: number (the lowest advertised price) or null
 - currency: "USD" | "EUR" | "IDR" | "AUD" | null
 - title_type: "leasehold" | "freehold" | "hgb" | "hak_pakai" | "pt_pma" | null
@@ -65,7 +66,7 @@ def claude(prompt):
     if spent['in'] * PRICE_IN + spent['out'] * PRICE_OUT > MAX_USD: raise RuntimeError('spend budget reached')
     last = None
     for model in MODELS:
-        body = json.dumps({"model": model, "max_tokens": 900, "messages": [{"role": "user", "content": prompt}]}).encode()
+        body = json.dumps({"model": model, "max_tokens": 1500, "messages": [{"role": "user", "content": prompt}]}).encode()
         req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
             'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
         try:
