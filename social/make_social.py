@@ -104,7 +104,7 @@ def card_html(lang, map_png):
     ff = FONT.get(lang, "'Inter'")
     chips = ''.join(
         '<span class="chip"><i style="background:%s"><svg viewBox="0 0 24 24">%s</svg></i>%s</span>' % (COLOR[c], ICON[c], lab)
-        for c, lab in zip(['food', 'shelter', 'hygiene', 'clothes', 'health'], t['cats']))
+        for c, lab in zip(['food', 'shelter', 'hygiene', 'clothes', 'health'], t['cats']) if c != 'clothes')   # R20: sin tiendas solidarias, Ropa casi no tiene sitios
     bg = base64.b64encode(open(map_png, 'rb').read()).decode()
     stat = t['stat'].format(p=num(STATS['places'], lang), k=STATS['countries'])
     lh = '1.35' if lang == 'ur' else ('1.18' if rtl else '1.06')

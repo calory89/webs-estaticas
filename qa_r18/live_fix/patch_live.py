@@ -377,15 +377,28 @@ BLOCK_NAMES = {'old jewish soup kitchen', 'London Fields Lido', 'Trades Union Co
 # ======================================================================
 # CSP for the static pages (p1). Pages that already carry one are left alone.
 # ======================================================================
-CSP_BASE = ("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com{H}; "
-            "style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; "
+# R20: GA4 + Clarity sin cookies (copia de analytics_snip.py de la rama src)
+AN_GA = 'G-FJKJE77K4V'
+AN_SNIP = "<script>(function(w,d,n){if(n.doNotTrack=='1'||w.doNotTrack=='1'||n.globalPrivacyControl||/[?&]embed=1/.test(location.search)||location.protocol=='file:'||(n.connection&&(n.connection.saveData||/2g/.test(n.connection.effectiveType||''))))return;w.dataLayer=w.dataLayer||[];function g(){dataLayer.push(arguments)}w.gtag=g;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});g('js',new Date());g('config','G-FJKJE77K4V',{allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location.origin+location.pathname+location.search});w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};w.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'denied'});w.clarity('set','site','supportnear');d.documentElement.setAttribute('data-clarity-mask','True');function a(s){var e=d.createElement('script');e.async=1;e.src=s;d.head.appendChild(e)}function go(){a('https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V');a('https://www.clarity.ms/tag/z4eqcmaic7')}if(d.readyState=='complete')setTimeout(go,1500);else w.addEventListener('load',function(){setTimeout(go,1500)})})(window,document,navigator);</script>"
+CSP_BASE = ("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms{H}; "
+            "style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; "
             "frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'")
 CSP_MARK = 'data-sn="csp"'
+
+
+def an_add(s):
+    if AN_GA in s or '<head' not in s:
+        return s
+    m = re.search(r'<meta charset="utf-8">', s, re.I)
+    if m:
+        return s[:m.end()] + AN_SNIP + s[m.end():]
+    return re.sub(r'(<head[^>]*>)', lambda x: x.group(1) + AN_SNIP, s, count=1)
 
 
 def set_csp(s):
     if 'http-equiv="Content-Security-Policy"' in s and CSP_MARK not in s:
         return s                      # the page has its own CSP
+    s = an_add(s)
     hashes = []
     for m in re.finditer(r'<script(?![^>]*\bsrc=)(?![^>]*ld\+json)[^>]*>(.*?)</script>', s, re.S):
         hashes.append("'sha256-%s'" % base64.b64encode(hashlib.sha256(m.group(1).encode('utf-8')).digest()).decode())
@@ -665,7 +678,7 @@ RTL = {'ar', 'ur', 'fa', 'ps'}
 EN = {'wel.h': 'Free help near you', 'brand.tag': 'Free food, a bed, a shower, a doctor — near you',
       'pass.txt': 'Free map of free help near you: food, a bed, showers, doctors, clothes. No account, works with no signal, in 20 languages.',
       'wel.p': 'Food, a bed for tonight, a shower, a doctor, clothes, legal help: on one map, from wherever you are standing. Free, no account, in 20 languages, and it keeps working with no signal.',
-      'wel.trust': 'No account · No cost · No tracking · Works offline', 'cta.open': 'Open the map',
+      'wel.trust': 'No account · No cost · No ads · Works offline', 'cta.open': 'Open the map',
       'cta.emergency': 'Emergency numbers', 'menu.cities': 'All cities'}
 ALTS = ('<link rel="alternate" hreflang="x-default" href="https://supportnear.com/">'
         '<link rel="alternate" hreflang="en" href="https://supportnear.com/">'
@@ -816,6 +829,8 @@ def fix_info_page(s, name):
             s = s.replace("if(s && T[s]) return s; }catch(e){}", "if(s && T[s]) return s; if(s && T[FB[s]]) return FB[s]; }catch(e){}", 1)
         # the English text written in the HTML
         for k, v in CLAIMS['full']['en'].items():
+            if k == 'v4':
+                continue        # R20: lo escribe ya i18n_pages.py (GA4 + Clarity)
             s2 = re.sub(r'(<(\w+)[^>]*\bdata-t="%s"[^>]*>)(.*?)(</\2>)' % re.escape(k), lambda x: x.group(1) + v + x.group(4), s, flags=re.S)
             if s2 != s:
                 s = s2

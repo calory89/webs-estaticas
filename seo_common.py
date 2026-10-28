@@ -71,8 +71,9 @@ def clean_abs(u):
 
 
 # ---------------------------------------------------------------- CSP
-CSP_BASE = ("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com{H}; "
-            "style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; "
+import analytics_snip as _an
+CSP_BASE = ("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com " + _an.CSP_SCRIPT + "{H}; "
+            "style-src 'self' 'unsafe-inline'; img-src 'self' data: " + _an.CSP_IMG + "; connect-src 'self' https://cloudflareinsights.com " + _an.CSP_CONNECT + "; "
             "frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'")
 CSP_MARK = 'data-sn="csp"'
 
@@ -80,6 +81,7 @@ CSP_MARK = 'data-sn="csp"'
 def set_csp(s):
     if 'http-equiv="Content-Security-Policy"' in s and CSP_MARK not in s:
         return s
+    s = _an.add(s)                      # GA4 + Clarity (R20)
     hashes = ["'sha256-%s'" % base64.b64encode(hashlib.sha256(m.group(1).encode('utf-8')).digest()).decode()
               for m in re.finditer(r'<script(?![^>]*\bsrc=)(?![^>]*ld\+json)[^>]*>(.*?)</script>', s, re.S)]
     tag = '<meta http-equiv="Content-Security-Policy" %s content="%s">' % (CSP_MARK, CSP_BASE.replace('{H}', ''.join(' ' + h for h in hashes)))

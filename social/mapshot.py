@@ -6,7 +6,8 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     c = b.new_context(viewport={'width': 1200, 'height': 630}, device_scale_factor=2, locale='en-GB', color_scheme='light')
     pg = c.new_page()
-    pg.goto('https://supportnear.com/?city=' + city, wait_until='domcontentloaded')
+    import os
+    pg.goto(os.environ.get('SN_BASE', 'https://supportnear.com/') + '?city=' + city, wait_until='domcontentloaded')
     pg.wait_for_timeout(5000)
     pg.evaluate("""()=>{ try{closeWelcome()}catch(e){}
       // el mapa pasa a ser lo unico que hay en la pagina: todo lo demas fuera

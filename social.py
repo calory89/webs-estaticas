@@ -41,7 +41,7 @@ d.text((72, 186), 'Free help, mapped in', font=serif(66), fill=INK)
 d.text((72, 268), '%d countries.' % STATS['countries'], font=serif(66), fill=GREEN)
 
 d.text((72, 372), 'Food · a bed · a shower · clothes · a doctor', font=sansr(28), fill=MUTED)
-d.text((72, 412), 'No account. No tracking. No cost.', font=sansr(28), fill=MUTED)
+d.text((72, 412), 'No account. No ads. No cost.', font=sansr(28), fill=MUTED)
 
 d.line([72, 500, W - 72, 500], fill='#ded7cc', width=2)
 cells = [(format(STATS['places'], ',d'), 'places'), (format(STATS['cities'], ',d'), 'cities'),

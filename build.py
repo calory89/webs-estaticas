@@ -168,6 +168,7 @@ def classify(g):
         if fee == 'no' or sf or g.get('social_facility:for'): return 'hygiene'
         return None
     if sf=='clothing_bank': return 'clothes'
+    if sh=='charity' and not sf: return None      # vende, aunque se llame «Ropero» o «Cáritas»
     if anchored(g):
         h=hint(g)
         if h=='shelter' and TOURIST.search(txt(g)): h=None
@@ -176,9 +177,8 @@ def classify(g):
             return h
     if am=='toilets': return 'hygiene'
     # una tienda solidaria (Oxfam, Mind, Salvation Army) vende: no es ropa gratis.
-    # Sale en Ropa con la etiqueta «Tienda solidaria · barato, no gratis» (R19);
-    # quitarlas del mapa es decision de Carlos, pendiente (no se hace sin el).
-    if sh=='charity': return 'clothes'
+    # Fuera del mapa (Carlos, 28-oct-2026).
+    if sh=='charity': return None
     if of=='lawyer': return 'legal' if FREELEGAL.search(txt(g)) else None
     if g.get('government')=='social_welfare': return 'legal'
     # Un hospital privado no es ayuda gratuita. OSM lo dice de dos maneras: con
@@ -800,6 +800,8 @@ chunks_json=json.dumps(sorted(buckets.keys()),separators=(',',':'))
 try: _lcc = json.load(open('legacy_cc.json'))
 except Exception: _lcc = {}
 _cc_by_coord = dict(_lcc)
+if _CALL:
+    for _c in _CALL: _cc_by_coord['%.4f,%.4f' % (_c['lat'], _c['lon'])] = {'cc': _c['cc']}
 for _c in _new: _cc_by_coord['%.4f,%.4f'%(_c['lat'],_c['lon'])] = {'cc':_c['cc']}
 _ccset = {'ES'}                                    # España va aparte, en CITY_LIST
 _unknown = []
@@ -868,7 +870,7 @@ ncities = len(WORLD) + len(CITY_LIST)
 # codigo ISO, resuelto desde las coordenadas.
 stats = {'places': len(places), 'cities': ncities, 'countries': countries}
 meta_desc = ('Free food, shelter, showers, clothes and help on one live map. %s places in %s cities '
-             'across %s countries, in 20 languages. No account, no tracking, no cost.'
+             'across %s countries, in 20 languages. No account, no ads, no cost.'
              % (format(len(places), ',d'), format(ncities, ',d'), countries))
 import datetime as _dt
 html=html.replace("const BUILT = /*__BUILT__*/'';", "const BUILT = /*__BUILT__*/'%s';" % _dt.date.today().isoformat(), 1)
@@ -1065,14 +1067,17 @@ def _csp(h):
     for m in _re.finditer(r'<script(?![^>]*\bsrc=)(?![^>]*application/ld\+json)[^>]*>(.*?)</script>', h, flags=_re.S):
         hs.append("'sha256-%s'" % _b64.b64encode(_hl.sha256(m.group(1).encode('utf-8')).digest()).decode())
     tiles='https://server.arcgisonline.com https://tile.openstreetmap.org'
-    pol=("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com %s; style-src 'self' 'unsafe-inline'; "
-         "img-src 'self' data: blob: %s https://commons.wikimedia.org https://upload.wikimedia.org; "
+    import analytics_snip as _an
+    pol=("default-src 'self'; script-src 'self' https://static.cloudflareinsights.com "+_an.CSP_SCRIPT+" %s; style-src 'self' 'unsafe-inline'; "
+         "img-src 'self' data: blob: %s https://commons.wikimedia.org https://upload.wikimedia.org "+_an.CSP_IMG+"; "
          "connect-src 'self' %s https://nominatim.openstreetmap.org https://photon.komoot.io https://overpass-api.de "
          "https://overpass.kumi.systems https://overpass.private.coffee https://api.openstreetmap.org https://api.open-meteo.com "
-         "https://routing.openstreetmap.de https://cloudflareinsights.com; font-src 'self' data:; worker-src 'self'; manifest-src 'self'; media-src 'self' blob:; "
+         "https://routing.openstreetmap.de https://cloudflareinsights.com "+_an.CSP_CONNECT+"; font-src 'self' data:; worker-src 'self'; manifest-src 'self'; media-src 'self' blob:; "
          "object-src 'none'; base-uri 'self'; form-action 'self'") % (' '.join(hs), tiles, tiles)
     tag='<meta http-equiv="Content-Security-Policy" content="%s">' % pol
     return h.replace('<meta charset="utf-8">', '<meta charset="utf-8">'+tag, 1) if '<meta charset="utf-8">' in h else _re.sub(r'(<head[^>]*>)', r'\1'+tag, h, count=1)
+import analytics_snip as _an
+html=_an.add(html)                   # GA4 + Clarity (R20)
 if not os.environ.get('NO_CSP'): html=_csp(html)
 open('index.html','w',encoding='utf-8').write(html)
 

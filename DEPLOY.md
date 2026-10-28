@@ -124,3 +124,27 @@ spending limit needs to be increased»). Se publicó con la API de Git (Composio
 ~3 MB por llamada da 413), borrados con `sha: null`, comprobación de que cada blob tiene
 el sha1 esperado y que no cambia nada fuera de `_s/supportnear.com/`, `create commit`
 con el padre actual y `update ref` sin force. Cloudflare Pages despliega solo (~2 min).
+
+## Ronda 20 (28-oct-2026)
+- **Tiendas solidarias fuera** (`shop=charity` sin `social_facility`): en `build.py` y en el
+  clasificador del cliente; ya no se piden a Overpass. 159.430 sitios. Las 147 páginas
+  `c/<ciudad>-clothes` que solo tenían tiendas se cambiaron por una redirección (meta refresh,
+  noindex, canonical) a la página de la ciudad.
+- **GA4 (G-FJKJE77K4V) + Microsoft Clarity (z4eqcmaic7)**: `analytics_snip.py`, un `<script>`
+  en línea en el `<head>` de cada página (lo meten `build.py`, `seo_common.set_csp` y
+  `patch_live.set_csp`; 404/impacto/actualizar llevan copia). Lleva el id de GA y
+  `clarity.ms/tag`, así el worker `analytics-all` de Cloudflare no mete el suyo.
+  No carga con DNT/GPC, en `?embed=1`, con «ahorro de datos» o en 2G, y espera 1,5 s tras
+  `load`. GA4 con su cookie `_ga` (sin ella no da datos), sin señales de Google ni anuncios
+  y sin el `#fragmento` de la URL. Clarity sin cookies propias (consentv2) y todo el texto
+  enmascarado (`data-clarity-mask`). La CSP permite googletagmanager, *.google-analytics,
+  *.analytics.google, *.clarity.ms y c.bing.com.
+- **Textos de privacidad veraces en 20 idiomas** (ya no dicen «sin rastreo» ni «sin
+  cookies»): `wel.trust`, `hero.m2`, `foot.tag`, `share.text`, `priv.2`, `orgs.b3p`,
+  `cat.clothes.d`; en las páginas de información `p.t50`, `p.t200`, `v4`; /about.
+  `qa_r18/patch_r20_text.py` + `patch_r20b_cookies.py`.
+- **Accesibilidad**: las etiquetas para lector de pantalla (cerrar, buscar, zoom, lista...)
+  salen en el idioma elegido (claves `a11y.*`, `qa_r18/patch_r20_a11y.py`).
+- En móvil la atribución del mapa ya no ocupa dos líneas (sin el prefijo de Leaflet).
+- Imágenes sociales nuevas (cifra nueva, sin la pastilla de Ropa): `social/make_social.py`
+  con `SN_BASE=http://127.0.0.1:8952/` para fotografiar el mapa desde el build local.
