@@ -56,3 +56,6 @@
   39.2 min | europe/faroe-islands bajado: 0.01 GB en 3 s (libres 12.4 GB)
   39.2 min | europe/faroe-islands 223 elementos
   39.2 min | parte europe/faroe-islands 215 elementos
+  39.3 min | europe/guernsey-jersey bajado: 0.00 GB en 2 s (libres 12.4 GB)
+  39.3 min | europe/guernsey-jersey 516 elementos
+  39.3 min | parte europe/guernsey-jersey 493 elementos
