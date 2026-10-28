@@ -565,6 +565,15 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .totop.on{opacity:1;pointer-events:auto}
 @media print{header,footer,.mcta,.totop,.cookie,.exit,.share,nav{display:none!important}body{background:#fff}.sec,.phero{padding:16px 0!important}a{text-decoration:none}}
 
+.files{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:26px}
+.file{display:block;text-decoration:none;background:var(--paper);border-radius:20px;padding:18px 18px 18px 64px;position:relative;border:1px solid var(--line);transition:transform .15s,box-shadow .15s}
+.file:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(0,0,0,.4)}
+.file::before{content:"PDF";position:absolute;left:16px;top:18px;width:36px;height:44px;border-radius:6px;background:var(--ink);color:#fff;font-size:.62rem;font-weight:800;display:grid;place-items:end center;padding-bottom:6px}
+.file.pr::before{background:#B83A05}.file.live::before{background:#0B7A55}
+.file span{font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.file b{display:block;font-size:1.02rem;line-height:1.25;margin-top:4px}
+.file small{display:block;font-size:.86rem;color:var(--ink-2);margin-top:6px;line-height:1.35}
+
 .pipe{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;counter-reset:p}
 .pipe li{background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:16px;position:relative}
 .pipe li b{display:block;font-size:2.2rem;font-stretch:120%;line-height:1;font-variant-numeric:tabular-nums}
