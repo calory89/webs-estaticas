@@ -11,10 +11,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": "28 Oct 2026",
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-022",
@@ -25,10 +30,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": "28 Oct 2026",
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-007",
@@ -37,12 +47,15 @@
    "region": "Canggu coast",
    "docs": false,
    "plans": false,
-   "band": "$200k to $400k",
-   "done": 2027,
-   "read": false,
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": "28 Oct 2026",
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-018",
@@ -53,10 +66,16 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": "28 Oct 2026",
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-023",
@@ -67,10 +86,13 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": "28 Oct 2026",
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ]
   },
   {
    "id": "BALI-021",
@@ -81,10 +103,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": "28 Oct 2026",
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-025",
@@ -95,10 +122,16 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-028",
@@ -109,10 +142,14 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ]
   },
   {
    "id": "BALI-031",
@@ -120,13 +157,17 @@
    "country": "Indonesia",
    "region": "Bali",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-032",
@@ -134,13 +175,17 @@
    "country": "Indonesia",
    "region": "Bali",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-034",
@@ -151,10 +196,14 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-035",
@@ -165,10 +214,13 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-037",
@@ -179,10 +231,13 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-044",
@@ -190,13 +245,17 @@
    "country": "Indonesia",
    "region": "Bali",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-045",
@@ -207,10 +266,14 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-048",
@@ -221,10 +284,13 @@
    "plans": false,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-049",
@@ -235,10 +301,14 @@
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-001",
@@ -247,12 +317,15 @@
    "region": "Bukit peninsula",
    "docs": false,
    "plans": false,
-   "band": "Under $100k",
-   "done": 2027,
-   "read": false,
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-002",
@@ -263,10 +336,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-003",
@@ -275,12 +353,16 @@
    "region": "Bukit peninsula",
    "docs": false,
    "plans": false,
-   "band": "$100k to $200k",
+   "band": "Price not stated",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-004",
@@ -291,10 +373,15 @@
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-006",
@@ -305,10 +392,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-009",
@@ -318,11 +410,14 @@
    "docs": false,
    "plans": false,
    "band": "Price not stated",
-   "done": 2027,
-   "read": false,
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-010",
@@ -333,10 +428,14 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-011",
@@ -347,10 +446,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-013",
@@ -361,10 +465,15 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-017",
@@ -375,10 +484,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-029",
@@ -389,10 +503,16 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-038",
@@ -400,13 +520,16 @@
    "country": "Indonesia",
    "region": "Bukit peninsula",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-039",
@@ -414,13 +537,16 @@
    "country": "Indonesia",
    "region": "Bukit peninsula",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-008",
@@ -428,13 +554,18 @@
    "country": "Indonesia",
    "region": "Canggu coast",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-016",
@@ -445,10 +576,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-020",
@@ -457,12 +593,16 @@
    "region": "Canggu coast",
    "docs": false,
    "plans": false,
-   "band": "Under $100k",
-   "done": 2027,
-   "read": false,
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-026",
@@ -473,10 +613,16 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-027",
@@ -484,13 +630,18 @@
    "country": "Indonesia",
    "region": "Canggu coast",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$100k to $200k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-036",
@@ -501,10 +652,13 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-040",
@@ -515,10 +669,16 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-042",
@@ -529,10 +689,16 @@
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-012",
@@ -542,11 +708,14 @@
    "docs": false,
    "plans": false,
    "band": "$400k and up",
-   "done": 2027,
-   "read": false,
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-030",
@@ -554,13 +723,16 @@
    "country": "Indonesia",
    "region": "Sanur",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-005",
@@ -571,10 +743,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-015",
@@ -584,11 +761,15 @@
    "docs": false,
    "plans": false,
    "band": "$100k to $200k",
-   "done": 2027,
-   "read": false,
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-046",
@@ -597,12 +778,14 @@
    "region": "Tabanan",
    "docs": false,
    "plans": false,
-   "band": "$400k and up",
-   "done": 2027,
-   "read": false,
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-019",
@@ -613,10 +796,14 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-024",
@@ -627,10 +814,16 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-033",
@@ -638,13 +831,17 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": true,
-   "band": "Under $100k",
+   "plans": false,
+   "band": "Price not stated",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-041",
@@ -655,10 +852,16 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "BALI-043",
@@ -669,10 +872,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "BALI-047",
@@ -683,10 +891,14 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "ALG-001",
@@ -697,24 +909,31 @@
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "ALG-002",
    "market": "Algarve",
    "country": "Portugal",
    "region": "Algarve",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit RNET Nº 10685 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "ALG-003",
@@ -725,10 +944,13 @@
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "CDS-001",
@@ -739,10 +961,14 @@
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-002",
@@ -753,10 +979,14 @@
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-003",
@@ -767,10 +997,14 @@
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-004",
@@ -781,10 +1015,14 @@
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-005",
@@ -795,10 +1033,14 @@
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-006",
@@ -809,10 +1051,14 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-007",
@@ -823,10 +1069,14 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "CDS-008",
@@ -837,10 +1087,13 @@
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "CDS-009",
@@ -851,10 +1104,13 @@
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "CDS-010",
@@ -865,10 +1121,13 @@
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "DXB-001",
@@ -876,13 +1135,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0252170317 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-002",
@@ -890,13 +1154,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1840600281 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-003",
@@ -907,10 +1176,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1171263439 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-004",
@@ -921,10 +1195,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0384665583 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-005",
@@ -935,10 +1214,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2030,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0590901977 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-006",
@@ -946,13 +1230,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1052956813 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-007",
@@ -960,13 +1249,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1876838264 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-008",
@@ -977,10 +1271,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1912998345 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-009",
@@ -988,13 +1287,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$200k to $400k",
    "done": 2030,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1175304075 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-010",
@@ -1002,13 +1306,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2030,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0290353681 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-011",
@@ -1016,13 +1325,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0413141765 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-012",
@@ -1030,13 +1344,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 2079306084 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-013",
@@ -1047,10 +1366,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0064157958 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-014",
@@ -1061,10 +1385,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 71646300344 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-015",
@@ -1072,13 +1401,18 @@
    "country": "UAE",
    "region": "Dubai",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1029097304 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-016",
@@ -1089,10 +1423,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1707143558 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-017",
@@ -1103,10 +1442,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0767549096 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-018",
@@ -1117,10 +1461,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1739915121 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-019",
@@ -1131,10 +1480,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1098259952 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-020",
@@ -1145,10 +1499,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 2094833993 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-021",
@@ -1159,10 +1518,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit Permit No: 1982041975 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-022",
@@ -1173,10 +1537,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1579183201 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-023",
@@ -1187,10 +1556,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 1480538491 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-024",
@@ -1201,10 +1575,15 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0445836457 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "DXB-025",
@@ -1215,10 +1594,15 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Permit 0013517309 is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "KSM-001",
@@ -1226,13 +1610,17 @@
    "country": "Thailand",
    "region": "Koh Samui",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$200k to $400k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "KSM-002",
@@ -1240,13 +1628,16 @@
    "country": "Thailand",
    "region": "Koh Samui",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$200k to $400k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "KSM-003",
@@ -1254,13 +1645,16 @@
    "country": "Thailand",
    "region": "Koh Samui",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$200k to $400k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "KSM-004",
@@ -1268,13 +1662,17 @@
    "country": "Thailand",
    "region": "Koh Samui",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Price not stated",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "LOM-001",
@@ -1285,10 +1683,16 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "LOM-002",
@@ -1299,10 +1703,15 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "LOM-003",
@@ -1313,10 +1722,14 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "LOM-004",
@@ -1327,10 +1740,13 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "LOM-005",
@@ -1341,10 +1757,13 @@
    "plans": true,
    "band": "Under $100k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "LOM-006",
@@ -1353,12 +1772,15 @@
    "region": "Lombok",
    "docs": false,
    "plans": true,
-   "band": "Price not stated",
+   "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "LOM-007",
@@ -1369,10 +1791,13 @@
    "plans": false,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "LOM-008",
@@ -1380,13 +1805,16 @@
    "country": "Indonesia",
    "region": "Lombok",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "LOM-009",
@@ -1397,10 +1825,14 @@
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ]
   },
   {
    "id": "PAT-001",
@@ -1411,10 +1843,13 @@
    "plans": true,
    "band": "Price not stated",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "PAT-002",
@@ -1425,10 +1860,14 @@
    "plans": true,
    "band": "Price not stated",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "PAT-003",
@@ -1439,10 +1878,13 @@
    "plans": false,
    "band": "Price not stated",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "PAT-004",
@@ -1453,10 +1895,13 @@
    "plans": false,
    "band": "Price not stated",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "PAT-005",
@@ -1467,10 +1912,12 @@
    "plans": true,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "PHK-001",
@@ -1481,10 +1928,14 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "PHK-002",
@@ -1495,10 +1946,13 @@
    "plans": true,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "PHK-003",
@@ -1506,13 +1960,17 @@
    "country": "Thailand",
    "region": "Phuket",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Price not stated",
    "done": 2026,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ]
   },
   {
    "id": "PHK-004",
@@ -1523,10 +1981,14 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "PHK-005",
@@ -1537,10 +1999,13 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "PHK-006",
@@ -1551,10 +2016,14 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ]
   },
   {
    "id": "PHK-007",
@@ -1565,10 +2034,13 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2029,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?"
+   ]
   },
   {
    "id": "RMY-001",
@@ -1579,10 +2051,13 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-002",
@@ -1593,10 +2068,13 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-003",
@@ -1604,13 +2082,16 @@
    "country": "Mexico",
    "region": "Riviera Maya",
    "docs": false,
-   "plans": true,
-   "band": "$100k to $200k",
-   "done": 2025,
-   "read": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-004",
@@ -1621,10 +2102,13 @@
    "plans": true,
    "band": "$400k and up",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-005",
@@ -1635,10 +2119,13 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-006",
@@ -1649,10 +2136,13 @@
    "plans": false,
    "band": "Under $100k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-007",
@@ -1661,12 +2151,15 @@
    "region": "Riviera Maya",
    "docs": false,
    "plans": false,
-   "band": "Under $100k",
+   "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-008",
@@ -1677,10 +2170,13 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-009",
@@ -1691,10 +2187,14 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   },
   {
    "id": "RMY-010",
@@ -1705,10 +2205,13 @@
    "plans": false,
    "band": "Price not stated",
    "done": null,
-   "read": false,
+   "read": true,
    "checked": "28 Oct 2026",
    "invited": null,
-   "q": []
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying."
+   ]
   }
  ]
 }

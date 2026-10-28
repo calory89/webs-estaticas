@@ -9,7 +9,7 @@
    "projects": 3,
    "title": {
     "leasehold": 0,
-    "known": 3
+    "known": 0
    },
    "lease": {
     "known": 0,
@@ -29,7 +29,7 @@
    },
    "guaranteed_language": 0,
    "permit_claims": 0,
-   "permit_numbers_published": 0,
+   "permit_numbers_published": 1,
    "plans_published": 3,
    "price_usd": {
     "known": 3,
@@ -55,10 +55,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -68,45 +82,45 @@
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 49,
    "title": {
-    "leasehold": 33,
-    "known": 35
+    "leasehold": 27,
+    "known": 28
    },
    "lease": {
-    "known": 23,
+    "known": 19,
     "median": 30,
     "min": 25,
     "max": 50,
     "hist": {
-     "under 30": 6,
-     "30 to 34": 13,
+     "under 30": 4,
+     "30 to 34": 11,
      "35 to 39": 1,
      "40 or more": 3
     }
    },
    "extension_promised": {
-    "yes": 19,
-    "known": 23
+    "yes": 17,
+    "known": 17
    },
    "guaranteed_language": 4,
-   "permit_claims": 3,
+   "permit_claims": 6,
    "permit_numbers_published": 0,
-   "plans_published": 9,
+   "plans_published": 8,
    "price_usd": {
-    "known": 42,
+    "known": 36,
     "median": 146000.0,
     "min": 69000.0,
     "max": 531000.0
    },
    "yield": {
-    "known": 0,
-    "median": null,
-    "max": null
+    "known": 27,
+    "median": 12,
+    "max": 22
    },
    "completion": {
     "2026": 6,
-    "2027": 22,
+    "2027": 15,
     "2028": 7,
-    "unknown": 14
+    "unknown": 21
    },
    "runs": [
     {
@@ -118,10 +132,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -132,7 +160,7 @@
    "projects": 10,
    "title": {
     "leasehold": 0,
-    "known": 10
+    "known": 0
    },
    "lease": {
     "known": 0,
@@ -180,10 +208,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -194,7 +236,7 @@
    "projects": 25,
    "title": {
     "leasehold": 0,
-    "known": 25
+    "known": 0
    },
    "lease": {
     "known": 0,
@@ -215,7 +257,7 @@
    "guaranteed_language": 0,
    "permit_claims": 25,
    "permit_numbers_published": 25,
-   "plans_published": 8,
+   "plans_published": 1,
    "price_usd": {
     "known": 25,
     "median": 490000.0,
@@ -243,10 +285,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -256,17 +312,17 @@
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
    "title": {
-    "leasehold": 1,
-    "known": 3
+    "leasehold": 4,
+    "known": 4
    },
    "lease": {
-    "known": 1,
+    "known": 3,
     "median": 30,
     "min": 30,
     "max": 30,
     "hist": {
      "under 30": 0,
-     "30 to 34": 1,
+     "30 to 34": 3,
      "35 to 39": 0,
      "40 or more": 0
     }
@@ -278,7 +334,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 0,
    "price_usd": {
     "known": 3,
     "median": 232000.0,
@@ -304,10 +360,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -333,23 +403,23 @@
     }
    },
    "extension_promised": {
-    "yes": 1,
-    "known": 1
+    "yes": 0,
+    "known": 2
    },
    "guaranteed_language": 1,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 5,
+   "plans_published": 6,
    "price_usd": {
-    "known": 5,
-    "median": 179000.0,
+    "known": 6,
+    "median": 170000.0,
     "min": 41000.0,
     "max": 275000.0
    },
    "yield": {
-    "known": 0,
-    "median": null,
-    "max": null
+    "known": 3,
+    "median": 13,
+    "max": 15
    },
    "completion": {
     "2027": 3,
@@ -366,10 +436,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -380,7 +464,7 @@
    "projects": 5,
    "title": {
     "leasehold": 0,
-    "known": 5
+    "known": 4
    },
    "lease": {
     "known": 0,
@@ -428,10 +512,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -460,10 +558,10 @@
     "yes": 0,
     "known": 0
    },
-   "guaranteed_language": 1,
+   "guaranteed_language": 0,
    "permit_claims": 3,
    "permit_numbers_published": 0,
-   "plans_published": 5,
+   "plans_published": 4,
    "price_usd": {
     "known": 5,
     "median": 126000.0,
@@ -471,9 +569,9 @@
     "max": 216000.0
    },
    "yield": {
-    "known": 0,
-    "median": null,
-    "max": null
+    "known": 3,
+    "median": 8.5,
+    "max": 11
    },
    "completion": {
     "2026": 2,
@@ -491,10 +589,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   },
@@ -505,7 +617,7 @@
    "projects": 10,
    "title": {
     "leasehold": 0,
-    "known": 3
+    "known": 0
    },
    "lease": {
     "known": 0,
@@ -526,11 +638,11 @@
    "guaranteed_language": 1,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 3,
    "price_usd": {
-    "known": 9,
-    "median": 150000.0,
-    "min": 67000.0,
+    "known": 7,
+    "median": 155000.0,
+    "min": 78000.0,
     "max": 598000.0
    },
    "yield": {
@@ -539,8 +651,7 @@
     "max": null
    },
    "completion": {
-    "2025": 1,
-    "unknown": 9
+    "unknown": 10
    },
    "runs": [
     {
@@ -552,10 +663,24 @@
     },
     {
      "date": "2026-10-28",
-     "mode": "seed",
-     "pages_ok": 0,
+     "mode": "ai",
+     "pages_ok": 14,
+     "pages_failed": 10,
+     "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 24,
      "pages_failed": 0,
      "changes": 0
+    },
+    {
+     "date": "2026-10-28",
+     "mode": "ai",
+     "pages_ok": 122,
+     "pages_failed": 0,
+     "changes": 1
     }
    ]
   }

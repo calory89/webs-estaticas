@@ -2,45 +2,47 @@
  "updated": "2026-10-28",
  "market": "Bali",
  "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
- "projects": 24,
+ "projects": 49,
  "title": {
-  "leasehold": 15,
-  "known": 15
+  "leasehold": 27,
+  "known": 28
  },
  "lease": {
-  "known": 10,
-  "median": 30.0,
-  "min": 29,
+  "known": 19,
+  "median": 30,
+  "min": 25,
   "max": 50,
   "hist": {
-   "under 30": 1,
-   "30 to 34": 6,
+   "under 30": 4,
+   "30 to 34": 11,
    "35 to 39": 1,
-   "40 or more": 2
+   "40 or more": 3
   }
  },
  "extension_promised": {
-  "yes": 8,
-  "known": 8
+  "yes": 17,
+  "known": 17
  },
- "guaranteed_language": 2,
- "permit_claims": 5,
+ "guaranteed_language": 4,
+ "permit_claims": 6,
+ "permit_numbers_published": 0,
+ "plans_published": 8,
  "price_usd": {
-  "known": 19,
-  "median": 182000.0,
-  "min": 0.0,
+  "known": 36,
+  "median": 146000.0,
+  "min": 69000.0,
   "max": 531000.0
  },
  "yield": {
-  "known": 13,
+  "known": 27,
   "median": 12,
   "max": 22
  },
  "completion": {
-  "2026": 2,
-  "2027": 11,
-  "2028": 3,
-  "unknown": 8
+  "2026": 6,
+  "2027": 15,
+  "2028": 7,
+  "unknown": 21
  },
  "runs": [
   {
@@ -63,6 +65,13 @@
    "pages_ok": 24,
    "pages_failed": 0,
    "changes": 0
+  },
+  {
+   "date": "2026-10-28",
+   "mode": "ai",
+   "pages_ok": 122,
+   "pages_failed": 0,
+   "changes": 1
   }
  ]
 }
