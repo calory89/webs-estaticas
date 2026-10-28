@@ -64,7 +64,7 @@ async function claude(env, prompt) {
       body: JSON.stringify({ model, max_tokens: 1400, messages: [{ role: 'user', content: prompt }] })
     });
     if (r.status === 400 || r.status === 404) { last = model + ' ' + r.status; continue; }
-    if (!r.ok) throw new Error('model ' + r.status);
+    if (!r.ok) { const t = await r.text(); throw new Error('model ' + r.status + ' ' + t.slice(0, 160)); }
     const d = await r.json();
     const t = (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
     const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
@@ -98,7 +98,7 @@ async function analyze(req, env, ctx) {
   if (text.length < 200) return json({ error: 'empty' }, 422);
   let out;
   try { out = await claude(env, PROMPT + '\n\nURL: ' + u.toString() + '\nPage text:\n<<<\n' + text + '\n>>>'); }
-  catch (e) { return json({ error: 'model' }, 502); }
+  catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
   const res = { url: u.toString(), host, analysed: new Date().toISOString(), report: out };
   ctx.waitUntil(cache.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
   return json({ ...res, cached: false, first: !tracked, tracked });
