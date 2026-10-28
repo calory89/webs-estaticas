@@ -2,3 +2,6 @@
    5.5 min | south-america bajado: 3.87 GB en 310 s (libres 10.1 GB)
    9.3 min | south-america 234272 elementos
    9.3 min | parte south-america 224935 elementos
+  11.0 min | asia/indonesia bajado: 1.62 GB en 90 s (libres 12.2 GB)
+  12.7 min | asia/indonesia 42105 elementos
+  12.7 min | parte asia/indonesia 41173 elementos
