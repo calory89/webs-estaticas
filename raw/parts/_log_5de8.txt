@@ -14,3 +14,6 @@
   18.0 min | europe/denmark bajado: 0.46 GB en 27 s (libres 13.2 GB)
   18.4 min | europe/denmark 19268 elementos
   18.4 min | parte europe/denmark 18599 elementos
+  18.9 min | europe/slovakia bajado: 0.32 GB en 20 s (libres 13.4 GB)
+  19.2 min | europe/slovakia 14367 elementos
+  19.2 min | parte europe/slovakia 13297 elementos
