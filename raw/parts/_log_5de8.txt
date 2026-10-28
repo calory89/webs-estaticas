@@ -20,3 +20,6 @@
   19.6 min | north-america/us/michigan bajado: 0.29 GB en 18 s (libres 13.4 GB)
   19.9 min | north-america/us/michigan 16852 elementos
   19.9 min | parte north-america/us/michigan 16100 elementos
+  20.3 min | asia/myanmar bajado: 0.27 GB en 16 s (libres 13.4 GB)
+  20.6 min | asia/myanmar 11654 elementos
+  20.6 min | parte asia/myanmar 10768 elementos
