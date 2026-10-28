@@ -50,13 +50,13 @@ def head(title, desc, path, extra_ld=None, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/k/site.css?v=10">
+<link rel="stylesheet" href="/k/site.css?v=11">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 {GA}
 </head>'''
 
 NAV = [('/#how', 'How it works'), ('/how-we-score', 'Trust Score'), ('/check', 'Check a project'),
-       ('/agents', 'Become an agent'), ('/developers', 'Developers'), ('/research', 'AI agent')]
+       ('/cases', 'Live cases'), ('/agents', 'Agents'), ('/developers', 'Developers'), ('/research', 'AI agent')]
 
 def header(cta_href='/#start'):
     links = ''.join(f'<a href="{h}">{t}</a>' for h, t in NAV)
@@ -127,7 +127,7 @@ def footer(mcta=True, mcta_href='/#start'):
     <p class="fine">© 2026 Kolaboro, operated by {ENTITY}. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=10" defer></script>
+<script src="/k/site.js?v=11" defer></script>
 {CLARITY}'''
 
 def page(path, title, desc, body, extra_ld=None, noindex=False, mcta=True, extra_js=''):
@@ -742,6 +742,7 @@ exec(open(os.path.join(HERE, 'r7.py')).read())
 exec(open(os.path.join(HERE, 'r8.py')).read())
 exec(open(os.path.join(HERE, 'r9.py')).read())
 exec(open(os.path.join(HERE, 'r10.py')).read())
+exec(open(os.path.join(HERE, 'r11.py')).read())
 
 def main():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -759,6 +760,7 @@ def main():
     paths += build_round6()
     paths += build_round7()
     paths += build_round8()
+    paths += [build_cases()]
     build_404()
     finish_round6()
     r7_fixes()
@@ -774,6 +776,7 @@ def main():
     r9_band()
     r10_meta()
     r10_inject()
+    r11_inject()
     print('built', len(paths) + 1, 'pages; sample score', SAMPLE_SCORE)
 
 if __name__ == '__main__':
