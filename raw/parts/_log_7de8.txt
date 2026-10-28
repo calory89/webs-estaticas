@@ -50,3 +50,6 @@
   38.5 min | asia/tajikistan bajado: 0.05 GB en 9 s (libres 12.4 GB)
   38.5 min | asia/tajikistan 2123 elementos
   38.5 min | parte asia/tajikistan 2106 elementos
+  38.9 min | europe/cyprus bajado: 0.04 GB en 12 s (libres 12.4 GB)
+  39.0 min | europe/cyprus 3389 elementos
+  39.0 min | parte europe/cyprus 3348 elementos
