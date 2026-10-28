@@ -9,3 +9,6 @@
   22.0 min | north-america/us/california bajado: 1.24 GB en 72 s (libres 11.5 GB)
   23.3 min | north-america/us/california 52028 elementos
   23.3 min | parte north-america/us/california 49994 elementos
+  26.5 min | europe/belgium bajado: 0.65 GB en 179 s (libres 12.1 GB)
+  27.1 min | europe/belgium 31723 elementos
+  27.1 min | parte europe/belgium 30301 elementos
