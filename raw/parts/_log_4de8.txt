@@ -45,3 +45,6 @@
   44.9 min | europe/iceland bajado: 0.06 GB en 7 s (libres 12.6 GB)
   45.0 min | europe/iceland 1976 elementos
   45.0 min | parte europe/iceland 1943 elementos
+  45.1 min | north-america/us/vermont bajado: 0.04 GB en 7 s (libres 12.6 GB)
+  45.2 min | north-america/us/vermont 1822 elementos
+  45.2 min | parte north-america/us/vermont 1782 elementos
