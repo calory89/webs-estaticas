@@ -5,3 +5,7 @@
   12.5 min | europe/netherlands bajado: 1.31 GB en 74 s (libres 11.3 GB)
   13.8 min | europe/netherlands 30300 elementos
   13.8 min | parte europe/netherlands 29399 elementos
+  21.5 min | AVISO: no se pudo subir SupportNear OSM: europe/netherlands
+  22.2 min | europe/austria bajado: 0.76 GB en 43 s (libres 11.8 GB)
+  23.0 min | europe/austria 43570 elementos
+  23.0 min | parte europe/austria 41316 elementos
