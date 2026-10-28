@@ -24,3 +24,6 @@
   36.9 min | asia/kazakhstan bajado: 0.21 GB en 38 s (libres 12.5 GB)
   37.1 min | asia/kazakhstan 11105 elementos
   37.1 min | parte asia/kazakhstan 10601 elementos
+  43.0 min | north-america/us/missouri bajado: 0.19 GB en 25 s (libres 12.5 GB)
+  43.2 min | north-america/us/missouri 9299 elementos
+  43.2 min | parte north-america/us/missouri 9033 elementos
