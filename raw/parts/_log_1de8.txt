@@ -48,3 +48,6 @@
   46.9 min | north-america/greenland bajado: 0.02 GB en 4 s (libres 12.6 GB)
   46.9 min | north-america/greenland 382 elementos
   46.9 min | parte north-america/greenland 378 elementos
+  47.0 min | asia/bhutan bajado: 0.02 GB en 4 s (libres 12.7 GB)
+  47.0 min | asia/bhutan 898 elementos
+  47.0 min | parte asia/bhutan 897 elementos
