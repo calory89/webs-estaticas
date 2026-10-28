@@ -2,3 +2,6 @@
    3.8 min | asia/japan bajado: 2.39 GB en 212 s (libres 10.7 GB)
    5.7 min | asia/japan 247201 elementos
    5.7 min | parte asia/japan 244047 elementos
+   8.3 min | europe/poland bajado: 1.97 GB en 142 s (libres 11.0 GB)
+   9.8 min | europe/poland 80593 elementos
+   9.8 min | parte europe/poland 74719 elementos
