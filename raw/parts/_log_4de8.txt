@@ -27,3 +27,6 @@
   36.2 min | north-america/us/connecticut bajado: 0.20 GB en 52 s (libres 12.5 GB)
   36.4 min | north-america/us/connecticut 4380 elementos
   36.4 min | parte north-america/us/connecticut 4113 elementos
+  37.4 min | europe/croatia bajado: 0.19 GB en 50 s (libres 12.5 GB)
+  37.6 min | europe/croatia 9566 elementos
+  37.6 min | parte europe/croatia 9319 elementos
