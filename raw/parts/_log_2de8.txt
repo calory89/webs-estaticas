@@ -30,3 +30,6 @@
   37.9 min | europe/bulgaria bajado: 0.16 GB en 30 s (libres 12.3 GB)
   38.1 min | europe/bulgaria 15614 elementos
   38.1 min | parte europe/bulgaria 15336 elementos
+  38.8 min | asia/pakistan bajado: 0.15 GB en 35 s (libres 12.3 GB)
+  38.9 min | asia/pakistan 9302 elementos
+  38.9 min | parte asia/pakistan 9218 elementos
