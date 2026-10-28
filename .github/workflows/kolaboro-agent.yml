@@ -4,11 +4,14 @@ name: Kolaboro research agent
 on:
   schedule:
     - cron: '17 6 * * 1'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/projects.json', 'tools/kolaboro-agent/projects-world.json']
   workflow_dispatch:
     inputs:
       max_calls:
         description: "Max Claude API calls this run"
-        default: "30"
+        default: "160"
 permissions:
   contents: write
 concurrency:
@@ -17,7 +20,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,8 +29,8 @@ jobs:
       - name: Run the agent
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_MAX_CALLS: ${{ github.event.inputs.max_calls || '30' }}
-          KB_MAX_USD: '3'
+          KB_MAX_CALLS: ${{ github.event.inputs.max_calls || '160' }}
+          KB_MAX_USD: '6'
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY secret is not set: rebuilding aggregates from seed data only"; fi
           python3 tools/kolaboro-agent/agent.py "$RUNNER_TEMP/bali-claims.json"
@@ -49,6 +52,8 @@ jobs:
             git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/bali-claims.json
             H2=$(git hash-object -w "$RUNNER_TEMP/bali-cases.json")
             git update-index --add --cacheinfo 100644,$H2,_s/kolaboro.com/data/bali-cases.json
+            H3=$(git hash-object -w "$RUNNER_TEMP/world-claims.json")
+            git update-index --add --cacheinfo 100644,$H3,_s/kolaboro.com/data/world-claims.json
             T=$(git write-tree); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: research agent data $(date -u +%F)")

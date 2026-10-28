@@ -25,29 +25,32 @@ MAX_CALLS = int(os.environ.get('KB_MAX_CALLS', '30'))
 MAX_USD = float(os.environ.get('KB_MAX_USD', '3'))
 PRICE_IN, PRICE_OUT = 1.0 / 1e6, 5.0 / 1e6   # conservative USD per token estimate used only as a spending guard
 spent = {'in': 0, 'out': 0, 'calls': 0}
-FX = {'USD': 1.0, 'EUR': 1.08, 'IDR': 1 / 16000.0, 'AUD': 0.65}  # rough, for the public median only
+FX = {'USD': 1.0, 'EUR': 1.08, 'IDR': 1 / 16000.0, 'AUD': 0.65, 'AED': 0.2723, 'THB': 1 / 34.0, 'MXN': 1 / 18.5, 'GBP': 1.27}  # rough, for the public median only
 
 FIELDS = ["price_from", "currency", "title_type", "lease_years_base", "extension_promised", "guaranteed_language",
-          "advertised_yield_pct", "completion_year", "permit_claim", "quotes"]
+          "advertised_yield_pct", "completion_year", "permit_claim", "permit_number", "plans_published", "escrow_or_guarantee", "quotes"]
 
 PROMPT = """You are Kolaboro's research agent. Kolaboro protects people who buy property abroad.
-Below is the text of a public web page about an off-plan property project in Bali.
+Below is the text of a public web page about an off-plan property project in {market}, {country}.
 Extract ONLY what the page itself advertises. Do not guess. Use null when the page doesn't say.
 
 Reply with ONLY a single JSON object, no other text before or after it. If the page has little or no information, still return the object with null values.
 The JSON object has exactly these keys:
 - price_from: number (the lowest advertised price) or null
-- currency: "USD" | "EUR" | "IDR" | "AUD" | null
-- title_type: "leasehold" | "freehold" | "hgb" | "hak_pakai" | "pt_pma" | null
+- currency: "USD" | "EUR" | "IDR" | "AUD" | "AED" | "THB" | "MXN" | "GBP" | null
+- title_type: "leasehold" | "freehold" | "hgb" | "hak_pakai" | "pt_pma" | "fideicomiso" | null
 - lease_years_base: number of years of the base lease, or null
 - extension_promised: true if an extension or renewal of the lease is promised, false if the page says none, null if not mentioned
 - guaranteed_language: true if the page uses words like "guaranteed" about returns, rental income, extensions or buy-back
 - advertised_yield_pct: the advertised yearly rental yield or ROI in percent (number), or null
 - completion_year: year of completion or handover as a number, or null
-- permit_claim: true if the page claims building permits or approvals (PBG, IMB, licence) are obtained
+- permit_claim: true if the page claims building permits or approvals (PBG, IMB, RERA/DLD, EIA, licencia, alvara, licence) are obtained
+- permit_number: the permit / registration number exactly as written on the page (e.g. PBG no., RERA project no., licence no.), or null
+- plans_published: true if the page shows or links site plans or floor plans
+- escrow_or_guarantee: escrow account, bank guarantee or trust (fideicomiso) details as written, or null
 - quotes: up to 3 short verbatim quotes (max 20 words each) from the page that support the claims above
 
-Project: {name} by {developer} in {area}
+Project: {name} by {developer} in {area}, {market}
 Page text:
 <<<
 {text}
@@ -92,10 +95,11 @@ def from_seed(seed):
             "lease_years_base": seed.get('lease_base'), "extension_promised": seed.get('extension'),
             "guaranteed_language": seed.get('guaranteed_language'), "advertised_yield_pct": None,
             "completion_year": int(seed['completion']) if seed.get('completion') else None,
-            "permit_claim": seed.get('permit_claim'), "quotes": []}
+            "permit_claim": seed.get('permit_claim'), "permit_number": seed.get('permit_number'), "plans_published": seed.get('plans_published'),
+            "escrow_or_guarantee": seed.get('escrow'), "quotes": []}
 
-def aggregates(latest, runs):
-    rows = [r['claims'] for r in latest.values() if r.get('claims')]
+def aggregates(latest, runs, market='Bali'):
+    rows = [r['claims'] for r in latest.values() if r.get('claims') and r.get('market', 'Bali') == market]
     lease = [r['lease_years_base'] for r in rows if isinstance(r.get('lease_years_base'), (int, float))]
     usd = [v for v in (r['price_from'] * FX[r['currency']] for r in rows if isinstance(r.get('price_from'), (int, float)) and r.get('currency') in FX) if v >= 10000]
     yields = [r['advertised_yield_pct'] for r in rows if isinstance(r.get('advertised_yield_pct'), (int, float))]
@@ -107,13 +111,15 @@ def aggregates(latest, runs):
         hist["under 30" if y < 30 else "30 to 34" if y < 35 else "35 to 39" if y < 40 else "40 or more"] += 1
     ext_known = [r for r in rows if r.get('extension_promised') is not None]
     return {
-        "updated": TODAY, "market": "Bali", "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+        "updated": TODAY, "market": market, "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
         "projects": len(rows),
         "title": {"leasehold": sum(1 for r in rows if r.get('title_type') == 'leasehold'), "known": sum(1 for r in rows if r.get('title_type'))},
         "lease": {"known": len(lease), "median": statistics.median(lease) if lease else None, "min": min(lease) if lease else None, "max": max(lease) if lease else None, "hist": hist},
         "extension_promised": {"yes": sum(1 for r in ext_known if r['extension_promised']), "known": len(ext_known)},
         "guaranteed_language": sum(1 for r in rows if r.get('guaranteed_language')),
         "permit_claims": sum(1 for r in rows if r.get('permit_claim')),
+        "permit_numbers_published": sum(1 for r in rows if r.get('permit_number')),
+        "plans_published": sum(1 for r in rows if r.get('plans_published')),
         "price_usd": {"known": len(usd), "median": round(statistics.median(usd), -3) if usd else None, "min": round(min(usd), -3) if usd else None, "max": round(max(usd), -3) if usd else None},
         "yield": {"known": len(yields), "median": statistics.median(yields) if yields else None, "max": max(yields) if yields else None},
         "completion": dict(sorted(comp.items())),
@@ -152,24 +158,29 @@ def _questions(c):
     if isinstance(y, (int, float)) and y >= 12: q.append('Advertised rental yield of 12% or more: does real occupancy nearby support it?')
     if c.get('guaranteed_language'): q.append('"Guaranteed" returns: who guarantees them, and what happens if they can\'t pay?')
     if c.get('permit_claim'): q.append('A building permit is claimed: does it exist in the official system and match this plot?')
-    else: q.append('No building permit (PBG) mentioned: ask for the number before paying.')
+    else: q.append('No building permit mentioned: ask for the number before paying.')
+    if c.get('permit_number'): q.insert(0, 'Permit %s is published: does it exist in the official register and match this plot?' % str(c['permit_number'])[:60])
     if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
     return q[:5]
 
+PREFIX = {'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS'}
+
 def public_cases(projects, latest):
-    out = []
-    for i, p in enumerate(sorted(projects, key=lambda x: x['slug'])):
+    out = []; n = {}
+    for p in sorted(projects, key=lambda x: x.get('market', 'Bali') != 'Bali'):  # stable: file order keeps IDs fixed
+        mk = p.get('market', 'Bali'); n[mk] = n.get(mk, 0) + 1; i = n[mk] - 1
         rec = latest.get(p['slug'], {}); c = rec.get('claims') or {}; read = rec.get('source') == 'ai'
-        out.append({'id': 'BALI-%03d' % (i + 1), 'region': _region(p['area']), 'band': _band(c), 'done': c.get('completion_year'),
+        out.append({'id': '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
+                    'docs': bool(c.get('permit_number')) or bool(p.get('permit_number')), 'plans': bool(c.get('plans_published')), 'band': _band(c), 'done': c.get('completion_year'),
                     'read': read, 'checked': _date(rec.get('checked', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
                     'q': _questions(c) if read else []})
-    out.sort(key=lambda c: (0 if c['invited'] else 1, c['region'], c['id']))
+    out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
     return {'updated': TODAY, 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
 
 def main():
     public_out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA, 'public-bali-claims.json')
     os.makedirs(os.path.join(DATA, 'runs'), exist_ok=True)
-    projects = load(os.path.join(HERE, 'projects.json'), {})['projects']
+    projects = load(os.path.join(HERE, 'projects.json'), {})['projects'] + load(os.path.join(HERE, 'projects-world.json'), {}).get('projects', [])
     latest = load(os.path.join(DATA, 'latest.json'), {})
     changes = load(os.path.join(DATA, 'changes.json'), [])
     runs = load(os.path.join(DATA, 'runs.json'), [])
@@ -177,13 +188,13 @@ def main():
     for p in projects:
         prev = latest.get(p['slug'], {})
         if not KEY:
-            if not prev.get('claims'): latest[p['slug']] = {"name": p['name'], "url": p['url'], "claims": from_seed(p['seed']), "source": "seed", "checked": TODAY}
+            if not prev.get('claims'): latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": from_seed(p['seed']), "source": "seed", "checked": TODAY}
             continue
         try:
             text = fetch(p['url']); h = hashlib.sha256(text.encode()).hexdigest()[:16]
             if prev.get('hash') == h and prev.get('source') == 'ai':
                 prev['checked'] = TODAY; run['pages_ok'] += 1; continue
-            claims, model = claude(PROMPT.format(name=p['name'], developer=p['developer'], area=p['area'], text=text[:14000]))
+            claims, model = claude(PROMPT.format(name=p['name'], developer=p.get('developer') or 'unknown developer', area=p['area'], market=p.get('market', 'Bali'), country=p.get('country', 'Indonesia'), text=text[:14000]))
             run['model'] = model
             if not claims: raise RuntimeError('no JSON in answer')
             claims = {k: claims.get(k) for k in FIELDS}
@@ -191,11 +202,11 @@ def main():
             diff = {k: [old.get(k), claims.get(k)] for k in FIELDS if k != 'quotes' and prev.get('source') == 'ai' and old.get(k) != claims.get(k)}
             if diff:
                 changes.append({"date": TODAY, "slug": p['slug'], "name": p['name'], "changed": diff}); run['changes'] += 1
-            latest[p['slug']] = {"name": p['name'], "url": p['url'], "claims": claims, "source": "ai", "hash": h, "checked": TODAY}
+            latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": claims, "source": "ai", "hash": h, "checked": TODAY}
             run['pages_ok'] += 1
         except Exception as e:
             run['pages_failed'] += 1
-            latest.setdefault(p['slug'], {"name": p['name'], "url": p['url'], "claims": from_seed(p['seed']), "source": "seed"})['last_error'] = str(e)[:200]
+            latest.setdefault(p['slug'], {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": from_seed(p['seed']), "source": "seed"})['last_error'] = str(e)[:200]
             print('!', p['slug'], e, file=sys.stderr)
             if 'budget' in str(e): break
         time.sleep(1)
@@ -208,6 +219,10 @@ def main():
     agg = aggregates(latest, [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs])
     os.makedirs(os.path.dirname(os.path.abspath(public_out)), exist_ok=True)
     json.dump(agg, open(public_out, 'w'), ensure_ascii=False, indent=1)
+    for slug, rec in latest.items(): rec.setdefault('market', next((p.get('market', 'Bali') for p in projects if p['slug'] == slug), 'Bali'))
+    markets = sorted({p.get('market', 'Bali') for p in projects})
+    runs_pub = [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs]
+    json.dump({"updated": TODAY, "projects": len(projects), "markets": {m: aggregates(latest, runs_pub, m) for m in markets}}, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'world-claims.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(public_cases(projects, latest), open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'bali-cases.json'), 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(run))
 

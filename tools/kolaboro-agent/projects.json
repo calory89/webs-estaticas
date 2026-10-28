@@ -3,74 +3,124 @@
  "note": "Internal research list. Advertised claims only, not verified facts. Never publish per-project data without verification.",
  "projects": [
   {
-   "slug": "every-bali",
-   "name": "EVERY Bali",
-   "developer": "PT Bali Sunlit Commune",
+   "slug": "amani-melasti",
+   "name": "Amani Melasti by Wyndham",
+   "developer": "TEUS Group",
    "area": "Ungasan",
-   "url": "https://every-bali.com",
+   "url": "https://www.teus-group.com",
+   "seed": {
+    "price": 96000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "anjuna-bay",
+   "name": "The Anjuna Bay",
+   "developer": "Anjuna Bay",
+   "area": "Uluwatu",
+   "url": "https://offplan.so/projects/the-anjuna-bay-uluwatu",
+   "seed": {
+    "price": 190000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "completion": null,
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "aravita-residence",
+   "name": "Aravita Residence",
+   "developer": "unknown",
+   "area": "Nusa Dua",
+   "url": "https://aravitaresidence.com",
+   "seed": {
+    "price": 175000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "bingin-ocean-villas",
+   "name": "Bingin Ocean Villas",
+   "developer": "Bingin Ocean Villas Private Ltd.",
+   "area": "Bingin",
+   "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas",
    "seed": {
     "price": null,
     "currency": null,
     "title": "leasehold",
-    "lease_base": 40,
+    "lease_base": 29,
     "extension": true,
-    "guaranteed_language": true,
+    "guaranteed_language": false,
     "completion": "2027",
     "permit_claim": false
    }
   },
   {
-   "slug": "nara-villas",
-   "name": "Nara Villas",
-   "developer": "Balitecture",
-   "area": "Uluwatu",
-   "url": "https://www.balitecture.com/developments/nara-villas",
+   "slug": "biom",
+   "name": "Biom",
+   "developer": "Biom Development",
+   "area": "Tabanan",
+   "url": "https://offplan.so/projects/biom-nuanu",
    "seed": {
-    "price": 269000,
+    "price": 145000,
     "currency": "USD",
     "title": "leasehold",
-    "lease_base": 30,
-    "extension": true,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false
-   },
-   "invited": "2026-10-28"
-  },
-  {
-   "slug": "suku-residences",
-   "name": "Suku Residences",
-   "developer": "Balitecture",
-   "area": "Uluwatu",
-   "url": "https://www.balitecture.com/developments/suku-residences",
-   "seed": {
-    "price": 355000,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": 30,
-    "extension": true,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false
-   },
-   "invited": "2026-10-28"
-  },
-  {
-   "slug": "oasis-iii",
-   "name": "Oasis III",
-   "developer": "BREIG Property",
-   "area": "Berawa, Canggu",
-   "url": "https://breig-property.com/projects",
-   "seed": {
-    "price": 360000,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": 30,
+    "lease_base": 50,
     "extension": false,
     "guaranteed_language": false,
-    "completion": "2026",
+    "completion": "2027",
     "permit_claim": false
    }
+  },
+  {
+   "slug": "coco-hills",
+   "name": "COCO Hills Resort",
+   "developer": "COCO Development Group",
+   "area": "Bingin",
+   "url": "https://cocodevelopmentgroup.com",
+   "seed": {
+    "price": 131967,
+    "currency": "EUR",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "core-villas",
+   "name": "Core Villas",
+   "developer": "CORE Concept Living",
+   "area": "Munggu / Seseh",
+   "url": "https://www.coreconceptliving.com",
+   "seed": {
+    "price": 246000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 27,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
   },
   {
    "slug": "elysium-eco-city",
@@ -90,30 +140,30 @@
    }
   },
   {
-   "slug": "magnum-resort-sanur",
-   "name": "Magnum Resort Sanur",
-   "developer": "Magnum Estate",
-   "area": "Sanur",
-   "url": "https://magnumestate.com/sanur",
+   "slug": "every-bali",
+   "name": "EVERY Bali",
+   "developer": "PT Bali Sunlit Commune",
+   "area": "Ungasan",
+   "url": "https://every-bali.com",
    "seed": {
-    "price": 531000,
-    "currency": "USD",
+    "price": null,
+    "currency": null,
     "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
-    "guaranteed_language": false,
+    "lease_base": 40,
+    "extension": true,
+    "guaranteed_language": true,
     "completion": "2027",
     "permit_claim": false
    }
   },
   {
-   "slug": "amani-melasti",
-   "name": "Amani Melasti by Wyndham",
-   "developer": "TEUS Group",
-   "area": "Ungasan",
-   "url": "https://www.teus-group.com",
+   "slug": "j-hills",
+   "name": "J-Hills",
+   "developer": "Homevibe Development Group",
+   "area": "Jimbaran",
+   "url": "https://offplan.so/projects/j-hills-jimbaran",
    "seed": {
-    "price": 96000,
+    "price": 99900,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": null,
@@ -141,32 +191,48 @@
    }
   },
   {
-   "slug": "temple-heights",
-   "name": "Temple Heights",
-   "developer": "Investland Bali",
-   "area": "Padonan, Canggu",
-   "url": "https://investlandbali.com",
+   "slug": "magnum-resort-sanur",
+   "name": "Magnum Resort Sanur",
+   "developer": "Magnum Estate",
+   "area": "Sanur",
+   "url": "https://magnumestate.com/sanur",
    "seed": {
-    "price": 182000,
+    "price": 531000,
     "currency": "USD",
     "title": "leasehold",
-    "lease_base": 25,
-    "extension": true,
+    "lease_base": null,
+    "extension": null,
     "guaranteed_language": false,
-    "completion": null,
-    "permit_claim": true
-   },
-   "invited": "2026-10-28"
+    "completion": "2027",
+    "permit_claim": false
+   }
   },
   {
-   "slug": "serenity-village",
-   "name": "Serenity Village",
-   "developer": "Global Bali Home",
-   "area": "Ubud",
-   "url": "https://www.globalbalihome.com",
+   "slug": "manta-livin",
+   "name": "Manta Livin",
+   "developer": "Big Bali Group",
+   "area": "Uluwatu",
+   "url": "https://offplan.so/projects/manta-livin-uluwatu",
    "seed": {
-    "price": 2270000000,
-    "currency": "IDR",
+    "price": 95000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "nara-villas",
+   "name": "Nara Villas",
+   "developer": "Balitecture",
+   "area": "Uluwatu",
+   "url": "https://www.balitecture.com/developments/nara-villas",
+   "seed": {
+    "price": 269000,
+    "currency": "USD",
     "title": "leasehold",
     "lease_base": 30,
     "extension": true,
@@ -177,13 +243,47 @@
    "invited": "2026-10-28"
   },
   {
-   "slug": "manta-livin",
-   "name": "Manta Livin",
-   "developer": "Big Bali Group",
-   "area": "Uluwatu",
-   "url": "https://offplan.so/projects/manta-livin-uluwatu",
+   "slug": "natha-loka",
+   "name": "Natha Loka Eco Village",
+   "developer": "Seven Stones Indonesia",
+   "area": "Tabanan",
+   "url": "https://offplan.so/projects/natha-loka-tabanan",
    "seed": {
-    "price": 95000,
+    "price": 191000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "oasis-iii",
+   "name": "Oasis III",
+   "developer": "BREIG Property",
+   "area": "Berawa, Canggu",
+   "url": "https://breig-property.com/projects",
+   "seed": {
+    "price": 360000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": false,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": false
+   }
+  },
+  {
+   "slug": "octasun",
+   "name": "OctaSun Residence",
+   "developer": "Seven Sky",
+   "area": "Bukit Pandawa",
+   "url": "https://offplan.so/projects/octa-sun-residence-pandawa",
+   "seed": {
+    "price": 273000,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": null,
@@ -212,22 +312,21 @@
    "invited": "2026-10-28"
   },
   {
-   "slug": "core-villas",
-   "name": "Core Villas",
-   "developer": "CORE Concept Living",
-   "area": "Munggu / Seseh",
-   "url": "https://www.coreconceptliving.com",
+   "slug": "secret-inshi",
+   "name": "SECRET by INSHI",
+   "developer": "INSHI Development",
+   "area": "Ubud",
+   "url": "https://offplan.so/projects/secret-by-inshi-ubud",
    "seed": {
-    "price": 246000,
+    "price": 95400,
     "currency": "USD",
     "title": "leasehold",
-    "lease_base": 27,
-    "extension": false,
+    "lease_base": null,
+    "extension": null,
     "guaranteed_language": false,
     "completion": "2027",
     "permit_claim": false
-   },
-   "invited": "2026-10-28"
+   }
   },
   {
    "slug": "segara",
@@ -247,21 +346,58 @@
    }
   },
   {
-   "slug": "coco-hills",
-   "name": "COCO Hills Resort",
-   "developer": "COCO Development Group",
-   "area": "Bingin",
-   "url": "https://cocodevelopmentgroup.com",
+   "slug": "serenity-village",
+   "name": "Serenity Village",
+   "developer": "Global Bali Home",
+   "area": "Ubud",
+   "url": "https://www.globalbalihome.com",
    "seed": {
-    "price": 131967,
-    "currency": "EUR",
+    "price": 2270000000,
+    "currency": "IDR",
     "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
+    "lease_base": 30,
+    "extension": true,
     "guaranteed_language": false,
     "completion": "2027",
     "permit_claim": false
-   }
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "suku-residences",
+   "name": "Suku Residences",
+   "developer": "Balitecture",
+   "area": "Uluwatu",
+   "url": "https://www.balitecture.com/developments/suku-residences",
+   "seed": {
+    "price": 355000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false
+   },
+   "invited": "2026-10-28"
+  },
+  {
+   "slug": "temple-heights",
+   "name": "Temple Heights",
+   "developer": "Investland Bali",
+   "area": "Padonan, Canggu",
+   "url": "https://investlandbali.com",
+   "seed": {
+    "price": 182000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 25,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": true
+   },
+   "invited": "2026-10-28"
   },
   {
    "slug": "vodopad",
@@ -281,139 +417,781 @@
    }
   },
   {
-   "slug": "aravita-residence",
-   "name": "Aravita Residence",
-   "developer": "unknown",
-   "area": "Nusa Dua",
-   "url": "https://aravitaresidence.com",
+   "slug": "avalon-om-club-house",
+   "name": "OM Club House",
+   "developer": "AVALON (Avalon Bali)",
+   "area": "Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://avalonbali.com/projects/om",
+   "docs_url": "https://avalonbali.com/news/permit-granted",
+   "permit_number": null,
+   "docs_listed": [
+    "Building permit granted news (22 Oct 2023, no number shown)",
+    "Notary transaction-registered news (12 Jul 2023)",
+    "Land document verification news (25 Jun 2023)",
+    "Construction progress news posts (concrete frame, glazing, final checks)",
+    "25+25 years leasehold stated"
+   ],
+   "note": "Project page shows 18 apartments, 25+25-year leasehold, 2026 completion, from $240,000 (3.9B IDR), 90% complete, with a dated news log including permit granted, notary registration and construction updates.",
+   "added": "2026-10-28",
    "seed": {
-    "price": 175000,
+    "price": 240000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 25,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "avalon-buddha-club-house",
+   "name": "Buddha Club House",
+   "developer": "AVALON (Avalon Bali)",
+   "area": "Berawa, Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://avalonbali.com/projects/buddha",
+   "docs_url": "https://avalonbali.com/news/buddha-club-house-latest-construction-update",
+   "permit_number": null,
+   "docs_listed": [
+    "Construction update news (secondary piles, capping beam, on-site concrete tests)",
+    "Pre-construction ceremony news",
+    "32+32 years leasehold stated",
+    "Investment calculator"
+   ],
+   "note": "130-unit apart-hotel from $128,000 (2.1B IDR), 32+32-year leasehold, 2028 completion, with dated construction-update posts on the developer's news page.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 128000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 32,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "amari-villas-iii",
+   "name": "Amari Villas III",
+   "developer": "Investland Bali",
+   "area": "Padonan, Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://investlandbali.com/listing/amari-villas-iii",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Unit availability table with floor-plan column",
+    "Project timeline (60%)",
+    "Master plan described (25 units on 2,573 sqm) in brochure",
+    "25+15 years leasehold"
+   ],
+   "note": "Page shows 1-bed loft villas from $171,360, 25+15-year leasehold, a unit-by-unit sold/booked table and a timeline at 60% with handover in Q2 2026.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 171360,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 25,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "element-residence-bali",
+   "name": "Element Residence Bali",
+   "developer": "Investland Bali Properties (with Wahi Group)",
+   "area": "Nelayan, Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://investlandbali.com/listing/element-residence-bali",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "'Building Permit (PBG) Obtained' claim (no number shown)",
+    "30+20 years leasehold",
+    "Payment plan",
+    "Investor brochure"
+   ],
+   "note": "Listing claims PBG obtained, 30+20-year leasehold, from $167,637 (2.97B IDR) and a 'contractual 10% net annual return for the first five years'; no permit number is published.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 167637,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": true,
+    "completion": null,
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "the-one-by-almal-nusa-dua",
+   "name": "The One by Almal Bali Nusa Dua",
+   "developer": "Almal Real Estate Development / PT. Magical Bali Villas",
+   "area": "Nusa Dua (Benoa)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://www.theonebyalmal.com/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Brochure PDF downloads",
+    "Plot specifications (10,000 m2 land, 13,100 m2 built-up, G+3)",
+    "25+15 years leasehold",
+    "Developer entity named (PT. Magical Bali Villas)"
+   ],
+   "note": "Site shows 12 villas, 30 townhouses and 112 apartments from USD 100,000, 25+15-year leasehold, 2028 handover and a 17-22% ROI claim; no permit number shown.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 100000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 25,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "sanuuri-riverside-residences",
+   "name": "Sanuuri Riverside Residences",
+   "developer": "Investland Bali",
+   "area": "Sanur",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://investlandbali.com/listing/sanuuri",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Master plan section",
+    "Floor plans for all unit types (brochure)",
+    "50-year leasehold stated"
+   ],
+   "note": "Serviced apartments and pool villas near Sanur beach from $147,725 under a 50-year leasehold, with a master plan section and floor plans offered in the brochure.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 147725,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 50,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "breig-edem-i-villas",
+   "name": "EDEM I Villas",
+   "developer": "BREIG Property Development (PT Next Level Group)",
+   "area": "Benoa, Kuta Selatan",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://breig-property.com/projects/edem-i-villas",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Legal documents (developer contracts and licences) on request",
+    "Floor plans on request",
+    "Financial model",
+    "Company NIB 0106220001589 in footer"
+   ],
+   "note": "Villas under construction from $357,500 with Q3 2027 completion and 30% down payment; legal documents, plans and financial model are offered behind request buttons.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 357500,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "breig-edem-ii-santorini",
+   "name": "EDEM II Santorini Residences",
+   "developer": "BREIG Property Development (PT Next Level Group)",
+   "area": "Benoa, Kuta Selatan",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://breig-property.com/projects/edem-ii-santorini",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Legal documents (developer contracts and licences) on request",
+    "Floor plans on request",
+    "Availability chart",
+    "Company NIB 0106220001589 in footer"
+   ],
+   "note": "Sales-launch condo villas, apartments and villas from $94,950 with completion Q1-Q4 2028 and 11-14% ROI forecast; documents on request.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 94950,
     "currency": "USD",
     "title": null,
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
     "completion": "2028",
-    "permit_claim": false
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
    }
   },
   {
-   "slug": "natha-loka",
-   "name": "Natha Loka Eco Village",
-   "developer": "Seven Stones Indonesia",
-   "area": "Tabanan",
-   "url": "https://offplan.so/projects/natha-loka-tabanan",
+   "slug": "lb-ubud-dream",
+   "name": "Ubud Dream",
+   "developer": "LOYO & BONDAR (LB Group)",
+   "area": "Ubud",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://ubuddream.com/",
+   "docs_url": "https://loyobondar.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "Payment schedule tied to construction",
+    "Layouts list (18-103 m2 units)",
+    "Showroom visits"
+   ],
+   "note": "41 villas and apartments with Q3 2027 completion and a staged payment schedule; LB homepage lists apartments from 1.1 BLN IDR.",
+   "added": "2026-10-28",
    "seed": {
-    "price": 191000,
+    "price": 1100000000,
+    "currency": "IDR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "lb-xo-pandawa",
+   "name": "XO Pandawa",
+   "developer": "LOYO & BONDAR (LB Group)",
+   "area": "Pandawa, Bukit",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://xo-project.com/pandawa",
+   "docs_url": "https://loyobondar.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "Master plan (genplan) section",
+    "3D tour",
+    "Freehold claim"
+   ],
+   "note": "42 one-bed apartments and 3 two-bed villas, apartments from 1.8 BLN IDR, 14% yield claim, master plan section; developer markets it as freehold.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 1800000000,
+    "currency": "IDR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "kaluna-umalas-reserve",
+   "name": "Umalas Reserve",
+   "developer": "Kaluna Development",
+   "area": "Umalas",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://kalunadevelopment.com/projects/umalas-reserve/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Floor layouts (ground/first floor)",
+    "Bank guarantee sample (OCBC) offered",
+    "Payment/instalment calculator"
+   ],
+   "note": "Off-plan 4-bed villa at $380,000 with published floor layout, 60% payable until handover and a per-unit bank guarantee offered via OCBC.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 380000,
     "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "kaluna-berawa-signature",
+   "name": "Berawa Signature",
+   "developer": "Kaluna Development",
+   "area": "Berawa, Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://kalunadevelopment.com/projects/berawa-signature/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Floor layouts per unit type",
+    "Bank guarantee sample (OCBC) offered",
+    "Payment/instalment calculator"
+   ],
+   "note": "Loft villas from $136,500 (1-3 bed) with published floor layouts and 60%-until-handover payment terms.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 136500,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "kaluna-tumbak-signature",
+   "name": "Tumbak Signature",
+   "developer": "Kaluna Development",
+   "area": "Tumbak Bayuh, Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://kalunadevelopment.com/projects/tumbak-signature/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Floor layouts per unit",
+    "Unit list",
+    "Bank guarantee sample (OCBC) offered"
+   ],
+   "note": "Loft villas from IDR 1,890,000,000 with unit-level floor layouts and 60%-until-handover payment terms.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 1890000000,
+    "currency": "IDR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "samani-villa-pecatu-phase-2",
+   "name": "Samani Villa Pecatu (Phase 2)",
+   "developer": "Miraland",
+   "area": "Pecatu, Uluwatu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://samanivillapecatu.com/",
+   "docs_url": "https://samanivillapecatu.com/wp-content/uploads/2025/03/Roadmap-Proses-pembelian-properti-Update.pdf",
+   "permit_number": null,
+   "docs_listed": [
+    "Unit floor plans (denah)",
+    "Pricelist & site plan section",
+    "Purchase-process roadmap PDF"
+   ],
+   "note": "Phase 2 launch of 7 Modern and 3 Luxury villas with unit floor plans, site plan/pricelist section and a purchase roadmap PDF; no title or permit details in text.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "bocoa-jimbaran",
+   "name": "Bocoa Jimbaran",
+   "developer": "Wahi Group",
+   "area": "Jimbaran",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://bocoajimbaran.com/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Unit sizes (63-147 m2 buildings, 173-313 m2 land)",
+    "Floor plans in brochure",
+    "Live availability"
+   ],
+   "note": "Four private-pool villas 5 minutes' walk from Jimbaran beach with building/land sizes and brochure floor plans; no price, tenure or permit shown.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "avalon-tao-club-house",
+   "name": "TAO Club House",
+   "developer": "AVALON (Avalon Bali)",
+   "area": "Pererenan",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://avalonbali.com/projects/tao",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "32+32 years leasehold stated",
+    "Project presentation news post",
+    "Investment calculator"
+   ],
+   "note": "129 smart apartments in Pererenan from $89,000 (1.4B IDR), 32+32-year leasehold, 2028 completion, managed by Ribas Hotels.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 89000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 32,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "serenity-estates-ubud",
+   "name": "Serenity Estates",
+   "developer": "Global Bali Home",
+   "area": "Ubud",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://www.globalbalihome.com/project-serenity-estates.html",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Unit-by-unit price and availability table",
+    "30-year lease + 30-year extension, notarized in English and Bahasa",
+    "Construction insurance claim"
+   ],
+   "note": "4 villas on 3.5-14 are plots from Rp 5.34B, Q1 2027 handover, 30+30-year notarized lease and insured construction; no permit data shown.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 5340000000,
+    "currency": "IDR",
     "title": "leasehold",
     "lease_base": 30,
-    "extension": false,
+    "extension": true,
     "guaranteed_language": false,
     "completion": "2027",
-    "permit_claim": false
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
    }
   },
   {
-   "slug": "biom",
-   "name": "Biom",
-   "developer": "Biom Development",
-   "area": "Tabanan",
-   "url": "https://offplan.so/projects/biom-nuanu",
-   "seed": {
-    "price": 145000,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": 50,
-    "extension": false,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false
-   }
-  },
-  {
-   "slug": "anjuna-bay",
-   "name": "The Anjuna Bay",
-   "developer": "Anjuna Bay",
-   "area": "Uluwatu",
-   "url": "https://offplan.so/projects/the-anjuna-bay-uluwatu",
-   "seed": {
-    "price": 190000,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
-    "guaranteed_language": true,
-    "completion": null,
-    "permit_claim": false
-   }
-  },
-  {
-   "slug": "octasun",
-   "name": "OctaSun Residence",
-   "developer": "Seven Sky",
-   "area": "Bukit Pandawa",
-   "url": "https://offplan.so/projects/octa-sun-residence-pandawa",
-   "seed": {
-    "price": 273000,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false
-   }
-  },
-  {
-   "slug": "j-hills",
-   "name": "J-Hills",
-   "developer": "Homevibe Development Group",
-   "area": "Jimbaran",
-   "url": "https://offplan.so/projects/j-hills-jimbaran",
-   "seed": {
-    "price": 99900,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false
-   }
-  },
-  {
-   "slug": "secret-inshi",
-   "name": "SECRET by INSHI",
-   "developer": "INSHI Development",
-   "area": "Ubud",
-   "url": "https://offplan.so/projects/secret-by-inshi-ubud",
-   "seed": {
-    "price": 95400,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false
-   }
-  },
-  {
-   "slug": "bingin-ocean-villas",
-   "name": "Bingin Ocean Villas",
-   "developer": "Bingin Ocean Villas Private Ltd.",
-   "area": "Bingin",
-   "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas",
+   "slug": "addressbali-pererenan",
+   "name": "ADDRESSBALI",
+   "developer": "ADDRESSBALI",
+   "area": "Pererenan (Lima Beach)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://addressbali.com/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Brochure download",
+    "ROI calculator",
+    "Leasehold-extendable statement"
+   ],
+   "note": "Beachfront studios to penthouses with delivery date 'Aug 27' and extendable leasehold; numeric lease term and price not rendered in page text.",
+   "added": "2026-10-28",
    "seed": {
     "price": null,
     "currency": null,
     "title": "leasehold",
-    "lease_base": 29,
+    "lease_base": null,
     "extension": true,
     "guaranteed_language": false,
     "completion": "2027",
-    "permit_claim": false
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "bali-benefit-reimagined-villas-ubud-2",
+   "name": "Re:Imagined Villas Ubud 2",
+   "developer": "Bali Benefit",
+   "area": "Ubud",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://balibenefit.com/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "30+25 years leasehold",
+    "Delay penalty 1% per month on paid amount (FAQ)",
+    "Financial model on request"
+   ],
+   "note": "Villas from $140,000 with 30+25-year leasehold and 12% ROI claim; FAQ states a 1%-per-month delay penalty and notarized lease after handover.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 140000,
+    "currency": "USD",
+    "title": "leasehold",
+    "lease_base": 30,
+    "extension": true,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "lb-pandawa-dream",
+   "name": "Pandawa Dream",
+   "developer": "LOYO & BONDAR (LB Group)",
+   "area": "Pandawa, Bukit",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://lb-dreams.com/pandawadream",
+   "docs_url": "https://loyobondar.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "Price per m2 (IDR 36.9M)",
+    "Instalment until construction completion",
+    "Unit types with sizes"
+   ],
+   "note": "Smart villas from 1.4 BLN IDR, apartments, villas and penthouses with instalments until completion; page advertises '8% guaranteed yield when buying 2 units'.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 1400000000,
+    "currency": "IDR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "loyo-melasti-arcade",
+   "name": "Melasti Arcade Apartments",
+   "developer": "Loyo Development (LOYO & BONDAR)",
+   "area": "Melasti, Bukit",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://loyo-development.com/melastiarcade",
+   "docs_url": "https://loyobondar.com/en/",
+   "permit_number": null,
+   "docs_listed": [
+    "Construction progress videos on LB homepage (Oct 2026: basement waterproofing)",
+    "Unit sizes and prices"
+   ],
+   "note": "13 apartments and 6 penthouses from 1.8 bln IDR with 17% forecast ROI; the developer homepage posts dated construction-progress videos for this project.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 1800000000,
+    "currency": "IDR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "618-flower-estate",
+   "name": "Flower Estate",
+   "developer": "618 Development",
+   "area": "Nuanu, Beraban, Tabanan",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://618development.com/projects/flower-estate",
+   "docs_url": "https://618development.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "Pre-sale pricing (IDR 8.1B)",
+    "Freehold ownership claim (for Indonesian citizens)"
+   ],
+   "note": "20 villas (2-3 bed) inside Nuanu with pre-sale pricing from IDR 8,100,000,000 and completion Q1 2027 per the developer's project list; no permit data shown.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 8100000000,
+    "currency": "IDR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "serenity-villas-ubud",
+   "name": "Serenity Villas",
+   "developer": "Global Bali Home",
+   "area": "Ubud",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://www.globalbalihome.com/project-serenity-villas.html",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Unit-by-unit price and availability table",
+    "Construction insurance claim"
+   ],
+   "note": "12 villas with Q2 2026 handover, 10-15% projected yield and per-unit price table (headline from Rp 5.77B, 3 of 12 units available).",
+   "added": "2026-10-28",
+   "seed": {
+    "price": 5770000000,
+    "currency": "IDR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "alex-villas-laguna-complex-7",
+   "name": "Laguna - Complex 7",
+   "developer": "Alex Villas Group",
+   "area": "Canggu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://alexvillasgroup.com/developments/complex-7",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "Explicit statement that completion depends on PBG issuance (not yet issued)",
+    "Unit list with sizes"
+   ],
+   "note": "327-unit project (87 villas, 240 apartments) on 25,871 m2; page states delivery is 'subject to permit issuance' and no completion date will be published until the PBG is issued.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
+   }
+  },
+  {
+   "slug": "lb-pandawa-hills",
+   "name": "Pandawa Hills",
+   "developer": "LOYO & BONDAR (LB Group)",
+   "area": "Pandawa, Bukit",
+   "country": "Indonesia",
+   "market": "Bali",
+   "url": "https://pandawahills.com/en",
+   "docs_url": "https://loyobondar.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "3D tour",
+    "Completion date stated"
+   ],
+   "note": "Villas and apartments near Pandawa Beach with completion Q4 2026, rooftop amenities and in-house management; no price or permit data on page.",
+   "added": "2026-10-28",
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null
    }
   }
  ]
