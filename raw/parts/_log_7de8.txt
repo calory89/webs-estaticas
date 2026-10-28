@@ -62,3 +62,6 @@
   39.3 min | asia/maldives bajado: 0.00 GB en 2 s (libres 12.4 GB)
   39.4 min | asia/maldives 606 elementos
   39.4 min | parte asia/maldives 588 elementos
+  39.4 min | north-america/us/us-virgin-islands bajado: 0.00 GB en 2 s (libres 12.4 GB)
+  39.4 min | north-america/us/us-virgin-islands 79 elementos
+  39.4 min | parte north-america/us/us-virgin-islands 79 elementos
