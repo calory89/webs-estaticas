@@ -53,3 +53,6 @@
   24.0 min | asia/east-timor bajado: 0.02 GB en 3 s (libres 13.6 GB)
   24.0 min | asia/east-timor 866 elementos
   24.0 min | parte asia/east-timor 861 elementos
+  24.1 min | europe/liechtenstein bajado: 0.00 GB en 2 s (libres 13.6 GB)
+  24.1 min | europe/liechtenstein 217 elementos
+  24.1 min | parte europe/liechtenstein 204 elementos
