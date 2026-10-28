@@ -23,3 +23,6 @@
   22.4 min | europe/romania bajado: 0.31 GB en 107 s (libres 12.2 GB)
   22.7 min | europe/romania 18287 elementos
   22.7 min | parte europe/romania 17487 elementos
+  25.7 min | north-america/us/wisconsin bajado: 0.27 GB en 21 s (libres 12.2 GB)
+  26.0 min | north-america/us/wisconsin 12693 elementos
+  26.0 min | parte north-america/us/wisconsin 11472 elementos
