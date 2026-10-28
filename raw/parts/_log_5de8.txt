@@ -17,3 +17,6 @@
   18.9 min | europe/slovakia bajado: 0.32 GB en 20 s (libres 13.4 GB)
   19.2 min | europe/slovakia 14367 elementos
   19.2 min | parte europe/slovakia 13297 elementos
+  19.6 min | north-america/us/michigan bajado: 0.29 GB en 18 s (libres 13.4 GB)
+  19.9 min | north-america/us/michigan 16852 elementos
+  19.9 min | parte north-america/us/michigan 16100 elementos
