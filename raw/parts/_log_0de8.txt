@@ -14,3 +14,7 @@
   18.9 min | asia/south-korea bajado: 0.27 GB en 20 s (libres 12.5 GB)
   19.1 min | asia/south-korea 41213 elementos
   19.1 min | parte asia/south-korea 40819 elementos
+  27.5 min | AVISO: no se pudo subir SupportNear OSM: asia/south-korea
+  27.8 min | asia/malaysia-singapore-brunei bajado: 0.24 GB en 17 s (libres 12.5 GB)
+  28.0 min | asia/malaysia-singapore-brunei 19047 elementos
+  28.0 min | parte asia/malaysia-singapore-brunei 18548 elementos
