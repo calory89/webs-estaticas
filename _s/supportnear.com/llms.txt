@@ -1,6 +1,6 @@
 # SupportNear
 
-> SupportNear is a free, non-profit live map of places where anyone can get free food, a bed, a shower, clothes, a doctor or other help nearby: 177,667 places in 1,221 cities across 166 countries, in 20 languages. No account, no tracking, no cost.
+> SupportNear is a free, non-profit live map of places where anyone can get free food, a bed, a shower, clothes, a doctor or other help nearby: 159,430 places in 1,221 cities across 166 countries, in 20 languages. No account, no tracking, no cost.
 
 ## Who it is for
 
