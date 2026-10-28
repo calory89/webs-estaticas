@@ -44,3 +44,6 @@
   23.2 min | north-america/us/maine bajado: 0.08 GB en 8 s (libres 12.7 GB)
   23.2 min | north-america/us/maine 2964 elementos
   23.2 min | parte north-america/us/maine 2904 elementos
+  26.4 min | asia/lebanon bajado: 0.05 GB en 23 s (libres 12.7 GB)
+  26.4 min | asia/lebanon 2362 elementos
+  26.4 min | parte asia/lebanon 2347 elementos
