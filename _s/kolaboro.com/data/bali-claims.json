@@ -4,43 +4,43 @@
  "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
  "projects": 24,
  "title": {
-  "leasehold": 22,
-  "known": 22
+  "leasehold": 19,
+  "known": 19
  },
  "lease": {
-  "known": 14,
+  "known": 10,
   "median": 30.0,
   "min": 25,
   "max": 50,
   "hist": {
-   "under 30": 3,
-   "30 to 34": 8,
+   "under 30": 2,
+   "30 to 34": 6,
    "35 to 39": 1,
-   "40 or more": 2
+   "40 or more": 1
   }
  },
  "extension_promised": {
-  "yes": 10,
-  "known": 14
+  "yes": 9,
+  "known": 9
  },
  "guaranteed_language": 2,
  "permit_claims": 1,
  "price_usd": {
-  "known": 22,
-  "median": 178000.0,
+  "known": 19,
+  "median": 182000.0,
   "min": 69000.0,
   "max": 531000.0
  },
  "yield": {
-  "known": 0,
-  "median": null,
-  "max": null
+  "known": 6,
+  "median": 13.0,
+  "max": 22
  },
  "completion": {
   "2026": 2,
-  "2027": 17,
+  "2027": 13,
   "2028": 3,
-  "unknown": 2
+  "unknown": 6
  },
  "runs": [
   {
@@ -48,6 +48,13 @@
    "mode": "seed",
    "pages_ok": 0,
    "pages_failed": 0,
+   "changes": 0
+  },
+  {
+   "date": "2026-10-28",
+   "mode": "ai",
+   "pages_ok": 14,
+   "pages_failed": 10,
    "changes": 0
   }
  ]
