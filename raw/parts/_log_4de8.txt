@@ -33,3 +33,6 @@
   38.3 min | north-america/us/louisiana bajado: 0.14 GB en 25 s (libres 12.5 GB)
   38.4 min | north-america/us/louisiana 3293 elementos
   38.4 min | parte north-america/us/louisiana 3232 elementos
+  39.2 min | north-america/us/nevada bajado: 0.12 GB en 30 s (libres 12.6 GB)
+  39.3 min | north-america/us/nevada 4445 elementos
+  39.3 min | parte north-america/us/nevada 3923 elementos
