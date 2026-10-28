@@ -2,3 +2,6 @@
    6.6 min | europe/france bajado: 4.76 GB en 380 s (libres 8.0 GB)
   11.0 min | europe/france 276473 elementos
   11.0 min | parte europe/france 257122 elementos
+  12.5 min | europe/netherlands bajado: 1.31 GB en 74 s (libres 11.3 GB)
+  13.8 min | europe/netherlands 30300 elementos
+  13.8 min | parte europe/netherlands 29399 elementos
