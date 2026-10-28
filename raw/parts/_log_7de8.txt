@@ -5,3 +5,6 @@
    8.0 min | europe/great-britain bajado: 2.04 GB en 175 s (libres 10.7 GB)
   10.0 min | europe/great-britain 150615 elementos
   10.0 min | parte europe/great-britain 137505 elementos
+  12.1 min | asia/china bajado: 1.51 GB en 112 s (libres 11.1 GB)
+  13.4 min | asia/china 77430 elementos
+  13.4 min | parte asia/china 75855 elementos
