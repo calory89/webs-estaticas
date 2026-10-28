@@ -27,3 +27,6 @@
   12.8 min | north-america/us/oklahoma bajado: 0.16 GB en 10 s (libres 12.7 GB)
   13.0 min | north-america/us/oklahoma 4807 elementos
   13.0 min | parte north-america/us/oklahoma 4706 elementos
+  13.2 min | north-america/us/kentucky bajado: 0.14 GB en 9 s (libres 12.7 GB)
+  13.3 min | north-america/us/kentucky 4763 elementos
+  13.3 min | parte north-america/us/kentucky 4365 elementos
