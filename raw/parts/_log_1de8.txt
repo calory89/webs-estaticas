@@ -42,3 +42,6 @@
   46.5 min | north-america/us/puerto-rico bajado: 0.07 GB en 10 s (libres 12.6 GB)
   46.6 min | north-america/us/puerto-rico 2784 elementos
   46.6 min | parte north-america/us/puerto-rico 2766 elementos
+  46.7 min | asia/yemen bajado: 0.04 GB en 8 s (libres 12.6 GB)
+  46.8 min | asia/yemen 5124 elementos
+  46.8 min | parte asia/yemen 5084 elementos
