@@ -28,14 +28,18 @@
    "lease_years_base": 30,
    "extension_promised": true,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 10,
    "completion_year": 2027,
-   "permit_claim": false,
-   "quotes": []
+   "permit_claim": true,
+   "quotes": [
+    "Lease 30 + 30 years",
+    "Pink Zone - legally licensed for short-term rentals",
+    "10 to 13% projected annual return"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "026619ceb2e3013c",
+  "checked": "2026-10-28"
  },
  "suku-residences": {
   "name": "Suku Residences",
@@ -47,14 +51,18 @@
    "lease_years_base": 30,
    "extension_promised": true,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 10,
    "completion_year": 2027,
-   "permit_claim": false,
-   "quotes": []
+   "permit_claim": true,
+   "quotes": [
+    "Pink Zone - legally licensed for short-term rentals",
+    "The standard structure is a 30-year leasehold with a 30-year extension option - 60 years total",
+    "10-14% Suku Residences, Bali Projected return, after fees"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "43c40a6dc3fe967a",
+  "checked": "2026-10-28"
  },
  "oasis-iii": {
   "name": "Oasis III",
@@ -89,14 +97,18 @@
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 12,
    "completion_year": 2028,
-   "permit_claim": false,
-   "quotes": []
+   "permit_claim": true,
+   "quotes": [
+    "Price per unit from 97,000 USD",
+    "Annual yield (ROI) 12%",
+    "Developer contracts and licences"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "0538bb1ae2f16117",
+  "checked": "2026-10-28"
  },
  "magnum-resort-sanur": {
   "name": "Magnum Resort Sanur",
@@ -104,37 +116,43 @@
   "claims": {
    "price_from": 531000,
    "currency": "USD",
-   "title_type": "leasehold",
-   "lease_years_base": null,
+   "title_type": null,
+   "lease_years_base": 50,
    "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "advertised_yield_pct": 11.6,
+   "completion_year": null,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "From $531,000",
+    "ROI ramps from 9.5% in year 1 to 13.5% by year 5 — an average of ≈11.6% per year",
+    "Property Ownership Term 50 years"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "645933dde6ab9808",
+  "checked": "2026-10-28"
  },
  "amani-melasti": {
   "name": "Amani Melasti by Wyndham",
   "url": "https://www.teus-group.com",
   "claims": {
-   "price_from": 96000,
-   "currency": "USD",
-   "title_type": "leasehold",
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "completion_year": null,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "AMANI Melasti is a boutique hotel located just a minute from Bali's most Instagrammable beach, Melasti."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "51fed30cbf65f2fd",
+  "checked": "2026-10-28"
  },
  "lyvin-uluwatu": {
   "name": "Lyvin Uluwatu Apartments",
@@ -165,18 +183,22 @@
   "claims": {
    "price_from": 182000,
    "currency": "USD",
-   "title_type": "leasehold",
-   "lease_years_base": 25,
-   "extension_promised": true,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": null,
    "permit_claim": true,
-   "quotes": []
+   "quotes": [
+    "Temple Heights Starting From $182,000 3,22 Billion IDR Status Under Construction",
+    "Investland Bali conducts comprehensive due diligence on every property, secures all permits before construction",
+    "We handle due diligence, permits, contracts, and compliance so your investment is protected."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "0a44034e71e3a6cd",
+  "checked": "2026-10-28"
  },
  "serenity-village": {
   "name": "Serenity Village",
@@ -228,20 +250,24 @@
   "name": "Privé Pererenan",
   "url": "https://urbanescape.id/prive",
   "claims": {
-   "price_from": 248000,
-   "currency": "USD",
+   "price_from": 4400000000,
+   "currency": "IDR",
    "title_type": "leasehold",
    "lease_years_base": 32,
    "extension_promised": true,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 12,
    "completion_year": 2027,
-   "permit_claim": false,
-   "quotes": []
+   "permit_claim": true,
+   "quotes": [
+    "Полная окупаемость при ROI 12%",
+    "32 года Лизхолд после получения ключей +25 лет с правом приоритетного продления",
+    "Строительство ведётся на основе выданного государством разрешения PBG"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "34869ddf71bc0305",
+  "checked": "2026-10-28"
  },
  "core-villas": {
   "name": "Core Villas",
@@ -293,20 +319,24 @@
   "name": "COCO Hills Resort",
   "url": "https://cocodevelopmentgroup.com",
   "claims": {
-   "price_from": 131967,
+   "price_from": 131966.56,
    "currency": "EUR",
-   "title_type": "leasehold",
+   "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 15,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Opening August 2027 Bingin, Uluwatu, Bali Coco Hills Resort 15-20% ANNUAL ROI ESTIMATED",
+    "PRICE FROM €131966.56 Taxes included",
+    "Based on our experience, we can predict an increase in property values by 25% after the construction is completed."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "b1d606ffb009238f",
+  "checked": "2026-10-28"
  },
  "vodopad": {
   "name": "VODOPAD",
@@ -410,14 +440,18 @@
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": true,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 17.5,
    "completion_year": null,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "Priced from 190,000 dollars, with developer-projected returns of 17.5 to 18 percent.",
+    "The Palms collection carries a Bank BRI guarantee offering a full refund if the property is not delivered on time.",
+    "Held on a leasehold basis, with gated 24/7 security, full property management and direct beach access."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "63244e8043bf4a45",
+  "checked": "2026-10-28"
  },
  "octasun": {
   "name": "OctaSun Residence",
@@ -492,8 +526,8 @@
   "name": "Bingin Ocean Villas",
   "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas",
   "claims": {
-   "price_from": null,
-   "currency": null,
+   "price_from": 180000,
+   "currency": "IDR",
    "title_type": "leasehold",
    "lease_years_base": 29,
    "extension_promised": true,
@@ -501,10 +535,14 @@
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
-   "quotes": []
+   "quotes": [
+    "59-Year Leasehold Title",
+    "29-year primary lease term and a 30-year extension option",
+    "Completion is scheduled for Q1 2027."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-10-28",
-  "last_error": "no JSON in answer"
+  "source": "ai",
+  "hash": "a6abbc2815e0706e",
+  "checked": "2026-10-28"
  }
 }
