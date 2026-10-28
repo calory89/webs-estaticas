@@ -39,3 +39,6 @@
   30.2 min | north-america/us/rhode-island bajado: 0.05 GB en 5 s (libres 12.7 GB)
   30.2 min | north-america/us/rhode-island 924 elementos
   30.2 min | parte north-america/us/rhode-island 912 elementos
+  30.4 min | asia/jordan bajado: 0.03 GB en 9 s (libres 12.7 GB)
+  30.4 min | asia/jordan 2673 elementos
+  30.4 min | parte asia/jordan 2575 elementos
