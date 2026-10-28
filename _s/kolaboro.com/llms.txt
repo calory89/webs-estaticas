@@ -55,6 +55,8 @@
 - [Live verification pipeline: Bali off-plan projects](https://kolaboro.com/cases/)
 - [Kolaboro site visit: the agent field tool](https://kolaboro.com/agents/visit/)
 - [How Kolaboro chooses and pays its agents](https://kolaboro.com/agents/how-we-choose/)
+- [Kolaboro product tour](https://kolaboro.com/yc/)
+- [Buyer portal demo](https://kolaboro.com/portal/demo/)
 
 ## Facts
 - Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
