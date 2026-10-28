@@ -2,3 +2,7 @@
    8.5 min | north-america/canada bajado: 6.07 GB en 501 s (libres 7.0 GB)
   13.5 min | north-america/canada 81573 elementos
   13.5 min | parte north-america/canada 78206 elementos
+  21.9 min | AVISO: no se pudo subir SupportNear OSM: north-america/canada
+  22.8 min | central-america bajado: 0.74 GB en 51 s (libres 12.0 GB)
+  23.6 min | central-america 49825 elementos
+  23.6 min | parte central-america 48837 elementos
