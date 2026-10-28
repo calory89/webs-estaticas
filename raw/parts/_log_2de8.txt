@@ -33,3 +33,6 @@
   38.8 min | asia/pakistan bajado: 0.15 GB en 35 s (libres 12.3 GB)
   38.9 min | asia/pakistan 9302 elementos
   38.9 min | parte asia/pakistan 9218 elementos
+  39.8 min | north-america/us/new-mexico bajado: 0.13 GB en 32 s (libres 12.3 GB)
+  39.9 min | north-america/us/new-mexico 5614 elementos
+  39.9 min | parte north-america/us/new-mexico 5367 elementos
