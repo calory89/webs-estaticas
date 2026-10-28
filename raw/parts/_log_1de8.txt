@@ -33,3 +33,6 @@
   45.0 min | europe/estonia bajado: 0.12 GB en 13 s (libres 12.6 GB)
   45.2 min | europe/estonia 3638 elementos
   45.2 min | parte europe/estonia 3499 elementos
+  45.5 min | asia/israel-and-palestine bajado: 0.11 GB en 9 s (libres 12.6 GB)
+  45.6 min | asia/israel-and-palestine 11199 elementos
+  45.6 min | parte asia/israel-and-palestine 10933 elementos
