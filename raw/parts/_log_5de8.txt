@@ -50,3 +50,6 @@
   23.9 min | europe/kosovo bajado: 0.03 GB en 3 s (libres 13.6 GB)
   23.9 min | europe/kosovo 2379 elementos
   23.9 min | parte europe/kosovo 2351 elementos
+  24.0 min | asia/east-timor bajado: 0.02 GB en 3 s (libres 13.6 GB)
+  24.0 min | asia/east-timor 866 elementos
+  24.0 min | parte asia/east-timor 861 elementos
