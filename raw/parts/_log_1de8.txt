@@ -39,3 +39,6 @@
   46.2 min | asia/kyrgyzstan bajado: 0.07 GB en 10 s (libres 12.6 GB)
   46.3 min | asia/kyrgyzstan 3704 elementos
   46.3 min | parte asia/kyrgyzstan 3648 elementos
+  46.5 min | north-america/us/puerto-rico bajado: 0.07 GB en 10 s (libres 12.6 GB)
+  46.6 min | north-america/us/puerto-rico 2784 elementos
+  46.6 min | parte north-america/us/puerto-rico 2766 elementos
