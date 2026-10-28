@@ -97,7 +97,7 @@ def from_seed(seed):
 def aggregates(latest, runs):
     rows = [r['claims'] for r in latest.values() if r.get('claims')]
     lease = [r['lease_years_base'] for r in rows if isinstance(r.get('lease_years_base'), (int, float))]
-    usd = [r['price_from'] * FX[r['currency']] for r in rows if isinstance(r.get('price_from'), (int, float)) and r.get('currency') in FX]
+    usd = [v for v in (r['price_from'] * FX[r['currency']] for r in rows if isinstance(r.get('price_from'), (int, float)) and r.get('currency') in FX) if v >= 10000]
     yields = [r['advertised_yield_pct'] for r in rows if isinstance(r.get('advertised_yield_pct'), (int, float))]
     comp = {}
     for r in rows:
