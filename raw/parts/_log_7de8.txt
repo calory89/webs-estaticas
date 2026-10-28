@@ -41,3 +41,6 @@
   36.5 min | europe/moldova bajado: 0.09 GB en 18 s (libres 12.3 GB)
   36.7 min | europe/moldova 9063 elementos
   36.7 min | parte europe/moldova 8709 elementos
+  37.2 min | north-america/us/west-virginia bajado: 0.09 GB en 17 s (libres 12.3 GB)
+  37.3 min | north-america/us/west-virginia 3435 elementos
+  37.3 min | parte north-america/us/west-virginia 3340 elementos
