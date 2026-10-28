@@ -50,7 +50,8 @@ AIDORG = re.compile(r'social|ayuda|solidari|acogida|acollida|inmigra|immigra|ref
  r'sinhogar|exclusi|infancia|menores|mujer|dona |discapac|voluntari|asistencia|humanitari|alimento|'
  r'c[áa]ritas|caritas|cruz roja|creu roja|pobreza|vivienda|habitatge|adicc|drogodepend|salud mental|'
  r'integraci|inserci|acompa[ñn]amiento|emergencia|red cross|charity|aid|relief|ong|fundaci[oó]n|'
- r'asociaci[oó]n|associaci[oó]',re.I)
+ r'asociaci[oó]n|associaci[oó]|shelter|h[ée]bergement|orphel|restos du c|banco alimentare|'
+ r'banque alimentaire|food ?bank|tafel|voedselbank',re.I)
 TOURIST = re.compile(r'juvenil|juventud|peregrin|camino de santiago|tur[ií]stic|scout|monta[ñn]|hostel|'
  r'casa rural|camping|alberg de|xarxa',re.I)
 SENIORCARE = re.compile(r'senior|child|juvenile|disabled',re.I)
@@ -90,6 +91,30 @@ PRIVATEOP = re.compile(r'private practice|private institution|private limited|pv
 
 FREESOCIAL = re.compile(u'social|humanit|refug|migra|solidar|caritas|croix|cruz|crescent|red cross|secours|entraide|welfare|relief|orphan|women|femme|mujer|jeun|youth|handicap|disab|sida|hiv|ong\b|ngo\b|asbl|assoc', re.I)
 
+# historic=* que dicen que el sitio YA NO es lo que era (ruina, monumento, recuerdo)
+HIST_GONE = {'memorial','monument','ruins','archaeological_site','wayside_shrine','wayside_cross','tomb',
+ 'boundary_stone','milestone','stone','plaque','battlefield','aircraft','ship','tank','cannon','locomotive'}
+LIFECYCLE = ('disused', 'abandoned', 'was', 'demolished', 'removed', 'razed', 'destroyed')
+WATERISH = {'drinking_water','water_point','fountain'}
+def _closed(g):
+    h = (g.get('historic') or '').strip().lower()
+    if h and h != 'no':
+        if h in HIST_GONE: return True
+        # una fuente o un pozo historico no se sabe si da agua potable
+        if g.get('amenity') in WATERISH or g.get('man_made') in ('water_well','water_tap'): return True
+    if g.get('disused') == 'yes' or g.get('abandoned') == 'yes': return True
+    for k, v in g.items():
+        p, _, base = k.partition(':')
+        if p not in LIFECYCLE or not base: continue
+        if base == 'building' and p in ('demolished','razed','destroyed','removed'): return True
+        # la MISMA etiqueta viva y en desuso: lo que la hacia ayuda ya no esta
+        if g.get(base) == v and base in ('amenity','social_facility','shop','office','healthcare','tourism'): return True
+    # sin etiqueta viva y con etiquetas de lo que fue: cerrado
+    if not any(g.get(x) for x in ('amenity','social_facility','shop','office','healthcare','man_made')) and \
+       any(k.partition(':')[0] in LIFECYCLE for k in g):
+        return True
+    return False
+
 def classify(g):
     sf=g.get('social_facility'); am=g.get('amenity'); sh=g.get('shop'); of=g.get('office')
     if sf in SKIP_SF: return None
@@ -97,8 +122,13 @@ def classify(g):
         return None
     # QA M7 (27-oct): lo que no es ayuda gratis no entra, aunque tenga una
     # etiqueta que se le parezca.
-    #  - historico, en desuso o abandonado: un sitio de museo, no una puerta abierta
-    if g.get('historic') or any(k.split(':')[0] in ('disused', 'abandoned', 'was', 'demolished', 'removed') for k in g):
+    #  - historico, en desuso o abandonado: un sitio de museo, no una puerta abierta.
+    #    Pero una biblioteca o un centro que funciona en un edificio historico
+    #    (historic=building/heritage/castle...) o con la etiqueta de lo que fue antes
+    #    (disused:amenity=hospital en lo que hoy es una biblioteca) SI esta abierto:
+    #    el refresco del 28-oct perdia asi 600 sitios activos (Carnegie Public
+    #    Library, Cape Town Central Library...).
+    if _closed(g):
         return None
     #  - sindicatos, partidos, clubes y fraternidades: atienden a sus socios
     if of in ('trade_union', 'political_party', 'union') or g.get('club') or g.get('fraternity'):
@@ -145,8 +175,10 @@ def classify(g):
             if h=='legal' and of=='lawyer' and not FREELEGAL.search(txt(g)): return None
             return h
     if am=='toilets': return 'hygiene'
-    # una tienda solidaria (Oxfam, Mind, Salvation Army) vende: no es ropa gratis
-    if sh=='charity': return None
+    # una tienda solidaria (Oxfam, Mind, Salvation Army) vende: no es ropa gratis.
+    # Sale en Ropa con la etiqueta «Tienda solidaria · barato, no gratis» (R19);
+    # quitarlas del mapa es decision de Carlos, pendiente (no se hace sin el).
+    if sh=='charity': return 'clothes'
     if of=='lawyer': return 'legal' if FREELEGAL.search(txt(g)) else None
     if g.get('government')=='social_welfare': return 'legal'
     # Un hospital privado no es ayuda gratuita. OSM lo dice de dos maneras: con
@@ -476,7 +508,7 @@ def add(el):
     # 160 caracteres, sin saltos. Y la capacidad de los albergues («camas: 120»).
     _desc = (g.get('description') or g.get('note') or '').replace('\n', ' ').strip()
     if len(_desc) > 160: _desc = _desc[:157].rsplit(' ', 1)[0] + '…'
-    _cap = ''.join(ch for ch in (g.get('capacity') or '') if ch.isdigit())[:5]
+    _cap = ''.join(ch for ch in (g.get('capacity') or '') if ch in '0123456789')[:5]   # isdigit() deja pasar «³»
     _cap = int(_cap) if _cap else ''
     _phone = g.get('phone') or g.get('contact:phone') or g.get('contact:mobile') or g.get('mobile') or ''
     _web = g.get('website') or g.get('contact:website') or ''
@@ -555,6 +587,13 @@ for _cell, _els in _planet.items():
         cat = classify(el.get('tags') or {})
         if cat in PLANET_CATS and add(el): _np += 1
 print('planeta:', len(_planet), 'celdas |', _np, 'sitios nuevos')
+
+# ---- lo que ya estaba publicado y sigue en OpenStreetMap (refresh/keep_layer.py) ----
+# Al final: si ya entro por otra capa, add() lo descarta (mismo nombre y sitio).
+_nk = 0
+for el in nat.get('keep', []):
+    if add(el): _nk += 1
+print('ya publicados que vuelven a entrar:', _nk, 'de', len(nat.get('keep', [])))
 
 # per-city capped extras: drinking water, free toilets, libraries
 WATER_CAP=26; WARM_CAP=12

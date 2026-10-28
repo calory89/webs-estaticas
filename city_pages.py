@@ -960,7 +960,11 @@ json.dump(LASTMOD, io.open(_LM_FILE, 'w', encoding='utf-8'), ensure_ascii=False,
 io.open('urls_all.txt', 'w', encoding='utf-8').write('\n'.join(u for u, _ in main + urls))
 sm.append('</urlset>')
 io.open('sitemap.xml', 'w', encoding='utf-8').write('\n'.join(sm))
-io.open('robots.txt', 'w', encoding='utf-8').write('User-agent: *\nAllow: /\nSitemap: https://supportnear.com/sitemap.xml\n')
+# robots.txt es fichero propio (con la seccion de asistentes de IA, 27-oct): no se
+# pisa. Solo se crea si no existe.
+import os as _os
+if not _os.path.exists('robots.txt'):
+    io.open('robots.txt', 'w', encoding='utf-8').write('User-agent: *\nAllow: /\nSitemap: https://supportnear.com/sitemap.xml\n')
 sz = sum(os.path.getsize(os.path.join('c', f)) for f in os.listdir('c'))
 from collections import Counter as _C
 print('paginas: %d | sin ningun sitio a 10 km: %d | %.1f MB en total | sitemap con %d urls' % (len(urls), empty, sz / 1e6, len(main) + len(urls)))

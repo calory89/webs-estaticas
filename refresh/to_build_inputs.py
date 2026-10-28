@@ -39,6 +39,7 @@ def take_meta(d):
 
 
 nat, cities, planet = load('nat'), load('cities'), load('planet')
+nat.update(load('keep'))       # refresh/keep_layer.py: lo ya publicado que sigue en OSM
 # España por celdas (es:<s>_<w>_<tamaño>) -> una sola lista, sin repetidos; las
 # claves de pais entero de la primera vuelta (social_facility, orgs...) se suman.
 _es, _seen = [], set()

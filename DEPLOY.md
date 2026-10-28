@@ -89,3 +89,38 @@ comprueba byte a byte contra el fichero local. Nunca Lovable.
 - Cloudflare: Email Address Obfuscation desactivado en la zona. HSTS
   includeSubDomains NO: ftp/imap/mail/pop/smtp siguen apuntando al servidor viejo
   sin HTTPS valido.
+
+## Refresco de datos de OpenStreetMap (28-oct-2026)
+
+Overpass no sirve para el mundo entero (el 27-oct fallaban 9 de cada 10 consultas).
+Se hace con los extractos de Geofabrik y osmium, en GitHub Actions:
+
+1. `refresh/regions.json`: 149 extractos (continentes pequeños enteros; Europa, Asia y
+   Norteamérica país a país o estado a estado). Ninguno pasa de 7,5 GB: el disco de un
+   runner tiene ~14 GB (por continentes, los jobs murieron sin disco).
+2. 8 trabajadores en paralelo: `patch-pub` con `branch=src/supportnear` y un script que
+   llama a `refresh/from_pbf_parts.py` con `JOB=k/8 NO_ASSEMBLE=1`. Cada extracto se
+   guarda en `raw/parts/<region>.jsonl.gz` y se sube al acabarlo; el log de cada
+   trabajador queda en `raw/parts/_log_kde8.txt`. ~45 min en total.
+3. Juntar: `python3 refresh/from_pbf_parts.py .` (sin JOB) -> `raw/{nat,cities,planet}.jsonl.gz`.
+4. **Capa keep** (imprescindible): `python3 refresh/keep_layer.py . <snapshot de lo publicado>
+   [relaciones_overpass.json]` -> `raw/keep.jsonl.gz`. Sin ella se perdían ~25.000 sitios
+   que siguen en OSM (los datos publicados vienen de varias descargas con radios más
+   amplios). Las relaciones que osmium no sabe dibujar (multipolígonos rotos en el borde
+   de un extracto, `type=site`) se bajan aparte de Overpass por id (`rel(id:...);out center tags meta;`).
+5. `tools/rebuild_osm.sh` (to_build_inputs + build + páginas) y
+   `tools/compare_data.py <publicado> <nuevo>`: no se publica si un país pierde >10 % o
+   una ciudad >25 % sin explicación.
+6. `qa/live_fix/patch_live.py` sobre el árbol generado: debe cambiar 0 ficheros en la
+   segunda pasada.
+
+`robots.txt` ya no lo escribe `city_pages.py` si existe (tiene la sección de
+asistentes de IA). `llms.txt` lleva la cifra de sitios a mano.
+
+### Publicar sin GitHub Actions
+El 28-oct Actions dejó de arrancar jobs («recent account payments have failed or your
+spending limit needs to be increased»). Se publicó con la API de Git (Composio):
+`create tree` en tandas de 200 ficheros con `content` y `base_tree` encadenado (más de
+~3 MB por llamada da 413), borrados con `sha: null`, comprobación de que cada blob tiene
+el sha1 esperado y que no cambia nada fuera de `_s/supportnear.com/`, `create commit`
+con el padre actual y `update ref` sin force. Cloudflare Pages despliega solo (~2 min).
