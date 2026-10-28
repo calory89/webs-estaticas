@@ -35,3 +35,6 @@
   22.5 min | north-america/us/north-dakota bajado: 0.12 GB en 10 s (libres 13.5 GB)
   22.6 min | north-america/us/north-dakota 1083 elementos
   22.6 min | parte north-america/us/north-dakota 1049 elementos
+  23.0 min | europe/georgia bajado: 0.10 GB en 16 s (libres 13.6 GB)
+  23.1 min | europe/georgia 8329 elementos
+  23.1 min | parte europe/georgia 8215 elementos
