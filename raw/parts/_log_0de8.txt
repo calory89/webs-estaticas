@@ -8,3 +8,6 @@
   17.0 min | north-america/us/illinois bajado: 0.34 GB en 24 s (libres 12.5 GB)
   17.3 min | north-america/us/illinois 17079 elementos
   17.3 min | parte north-america/us/illinois 16102 elementos
+  17.9 min | europe/hungary bajado: 0.31 GB en 22 s (libres 12.5 GB)
+  18.1 min | europe/hungary 38582 elementos
+  18.1 min | parte europe/hungary 37080 elementos
