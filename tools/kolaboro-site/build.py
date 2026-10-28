@@ -50,7 +50,7 @@ def head(title, desc, path, extra_ld=None, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/k/site.css?v=14">
+<link rel="stylesheet" href="/k/site.css?v=15">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 {GA}
 </head>'''
@@ -127,7 +127,7 @@ def footer(mcta=True, mcta_href='/#start'):
     <p class="fine">© 2026 Kolaboro, operated by {ENTITY}. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=14" defer></script>
+<script src="/k/site.js?v=15" defer></script>
 {CLARITY}'''
 
 def page(path, title, desc, body, extra_ld=None, noindex=False, mcta=True, extra_js=''):
@@ -746,6 +746,7 @@ exec(open(os.path.join(HERE, 'r11.py')).read())
 exec(open(os.path.join(HERE, 'r12.py')).read())
 exec(open(os.path.join(HERE, 'r13.py')).read())
 exec(open(os.path.join(HERE, 'r14.py')).read())
+exec(open(os.path.join(HERE, 'r15.py')).read())
 
 def main():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -785,6 +786,10 @@ def main():
     r12_inject()
     r13_inject()
     r14_inject()
+    r14_admin()
+    r15_inject()
+    r15_sitemap()
+    r15_home()
     print('built', len(paths) + 1, 'pages; sample score', SAMPLE_SCORE)
 
 if __name__ == '__main__':
