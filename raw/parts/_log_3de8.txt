@@ -42,3 +42,6 @@
   14.6 min | north-america/us/new-hampshire bajado: 0.07 GB en 5 s (libres 12.8 GB)
   14.7 min | north-america/us/new-hampshire 3038 elementos
   14.7 min | parte north-america/us/new-hampshire 2920 elementos
+  14.8 min | asia/cambodia bajado: 0.04 GB en 4 s (libres 12.8 GB)
+  14.8 min | asia/cambodia 2379 elementos
+  14.8 min | parte asia/cambodia 2364 elementos
