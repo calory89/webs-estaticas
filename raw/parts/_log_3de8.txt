@@ -9,3 +9,6 @@
    7.7 min | north-america/us/florida bajado: 0.61 GB en 34 s (libres 12.4 GB)
    8.3 min | north-america/us/florida 19549 elementos
    8.3 min | parte north-america/us/florida 18753 elementos
+   8.8 min | north-america/us/new-york bajado: 0.46 GB en 27 s (libres 12.5 GB)
+   9.3 min | north-america/us/new-york 21967 elementos
+   9.3 min | parte north-america/us/new-york 21251 elementos
