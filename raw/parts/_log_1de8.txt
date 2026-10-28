@@ -18,3 +18,6 @@
   33.9 min | asia/vietnam bajado: 0.31 GB en 80 s (libres 12.4 GB)
   34.3 min | asia/vietnam 13601 elementos
   34.3 min | parte asia/vietnam 13222 elementos
+  35.6 min | north-america/us/arizona bajado: 0.28 GB en 67 s (libres 12.4 GB)
+  35.9 min | north-america/us/arizona 13608 elementos
+  35.9 min | parte north-america/us/arizona 13227 elementos
