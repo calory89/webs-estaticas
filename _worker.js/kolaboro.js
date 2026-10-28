@@ -24,6 +24,7 @@ Reply with ONLY one JSON object, no other text:
  "attention": "low"|"medium"|"high",
  "summary": "two sentences, neutral, for the buyer: what is advertised and what most needs checking"
 }
+Keep every string under 25 words. Output the JSON only, starting with { and ending with }.
 "attention" reflects how much must be verified before paying (unverifiable guarantees, very high returns, missing title or permit info), not a judgement of honesty.`;
 
 function json(o, s = 200) {
@@ -61,13 +62,13 @@ async function claude(env, prompt) {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model, max_tokens: 1400, messages: [{ role: 'user', content: prompt }] })
+      body: JSON.stringify({ model, max_tokens: 3000, messages: [{ role: 'user', content: prompt }] })
     });
     if (r.status === 400 || r.status === 404) { last = model + ' ' + r.status; continue; }
     if (!r.ok) { const t = await r.text(); throw new Error('model ' + r.status + ' ' + t.slice(0, 160)); }
     const d = await r.json();
     const t = (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
-    const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
+    const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json ' + d.stop_reason + ' ' + t.slice(0, 120));
     return JSON.parse(m[0]);
   }
   throw new Error(last || 'no model');
