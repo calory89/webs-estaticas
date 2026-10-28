@@ -12,3 +12,6 @@
    8.8 min | north-america/us/new-york bajado: 0.46 GB en 27 s (libres 12.5 GB)
    9.3 min | north-america/us/new-york 21967 elementos
    9.3 min | parte north-america/us/new-york 21251 elementos
+   9.6 min | north-america/us/pennsylvania bajado: 0.33 GB en 18 s (libres 12.6 GB)
+  10.0 min | north-america/us/pennsylvania 18156 elementos
+  10.0 min | parte north-america/us/pennsylvania 17161 elementos
