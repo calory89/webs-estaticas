@@ -18,3 +18,6 @@
   29.8 min | asia/bangladesh bajado: 0.33 GB en 102 s (libres 12.1 GB)
   30.2 min | asia/bangladesh 20501 elementos
   30.2 min | parte asia/bangladesh 20368 elementos
+  33.1 min | asia/thailand bajado: 0.31 GB en 100 s (libres 12.1 GB)
+  33.4 min | asia/thailand 16585 elementos
+  33.4 min | parte asia/thailand 16264 elementos
