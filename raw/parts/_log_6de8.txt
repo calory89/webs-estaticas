@@ -17,3 +17,6 @@
   17.5 min | north-america/us/north-carolina bajado: 0.40 GB en 29 s (libres 12.4 GB)
   17.8 min | north-america/us/north-carolina 11450 elementos
   17.8 min | parte north-america/us/north-carolina 11089 elementos
+  18.4 min | north-america/us/washington bajado: 0.34 GB en 27 s (libres 12.5 GB)
+  18.7 min | north-america/us/washington 22330 elementos
+  18.7 min | parte north-america/us/washington 21073 elementos
