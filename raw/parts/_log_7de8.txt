@@ -35,3 +35,6 @@
   35.2 min | north-america/us/new-jersey bajado: 0.15 GB en 36 s (libres 12.3 GB)
   35.4 min | north-america/us/new-jersey 8925 elementos
   35.4 min | parte north-america/us/new-jersey 8589 elementos
+  35.9 min | north-america/us/idaho bajado: 0.12 GB en 22 s (libres 12.3 GB)
+  36.1 min | north-america/us/idaho 4882 elementos
+  36.1 min | parte north-america/us/idaho 4782 elementos
