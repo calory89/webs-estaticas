@@ -26,3 +26,6 @@
   20.0 min | north-america/us/minnesota bajado: 0.27 GB en 21 s (libres 12.5 GB)
   20.2 min | north-america/us/minnesota 11131 elementos
   20.2 min | parte north-america/us/minnesota 10702 elementos
+  20.6 min | asia/iran bajado: 0.21 GB en 18 s (libres 12.6 GB)
+  20.8 min | asia/iran 32914 elementos
+  20.8 min | parte asia/iran 31799 elementos
