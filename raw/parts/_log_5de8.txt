@@ -29,3 +29,6 @@
   21.6 min | north-america/us/tennessee bajado: 0.18 GB en 11 s (libres 13.5 GB)
   21.8 min | north-america/us/tennessee 6319 elementos
   21.8 min | parte north-america/us/tennessee 6094 elementos
+  22.1 min | north-america/us/alabama bajado: 0.14 GB en 9 s (libres 13.5 GB)
+  22.2 min | north-america/us/alabama 4603 elementos
+  22.2 min | parte north-america/us/alabama 4455 elementos
