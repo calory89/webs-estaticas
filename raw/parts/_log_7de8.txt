@@ -38,3 +38,6 @@
   35.9 min | north-america/us/idaho bajado: 0.12 GB en 22 s (libres 12.3 GB)
   36.1 min | north-america/us/idaho 4882 elementos
   36.1 min | parte north-america/us/idaho 4782 elementos
+  36.5 min | europe/moldova bajado: 0.09 GB en 18 s (libres 12.3 GB)
+  36.7 min | europe/moldova 9063 elementos
+  36.7 min | parte europe/moldova 8709 elementos
