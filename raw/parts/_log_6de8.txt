@@ -23,3 +23,6 @@
   19.3 min | europe/greece bajado: 0.32 GB en 25 s (libres 12.5 GB)
   19.5 min | europe/greece 20078 elementos
   19.5 min | parte europe/greece 19641 elementos
+  20.0 min | north-america/us/minnesota bajado: 0.27 GB en 21 s (libres 12.5 GB)
+  20.2 min | north-america/us/minnesota 11131 elementos
+  20.2 min | parte north-america/us/minnesota 10702 elementos
