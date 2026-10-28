@@ -28,15 +28,32 @@ RAW = os.path.join(ROOT, 'raw')
 T0 = time.time()
 UA = 'SupportNear-data-refresh/1.0 (+https://supportnear.com/about)'
 GF = 'https://download.geofabrik.de/'
-REGIONS = ['europe/spain', 'africa', 'antarctica', 'asia', 'australia-oceania', 'central-america',
-           'south-america', 'north-america', 'russia', 'europe']
-ALL_REGIONS = list(REGIONS)          # para juntar hacen falta todas, se baje lo que se baje en este job
+# Extractos de Geofabrik: continentes pequeños enteros y los grandes (Europa, Asia,
+# Norteamerica) pais a pais o estado a estado: el disco de un runner tiene unos 14 GB
+# y europe-latest pesa 33 (el 28-oct los jobs por continente murieron sin disco).
+_R = json.load(open(os.path.join(ROOT, 'refresh', 'regions.json'), encoding='utf-8'))
+SIZE_GB = {r: s for r, s in _R}
+ALL_REGIONS = ['europe/spain'] + [r for r, _ in _R if r != 'europe/spain']   # España primero (mas etiquetas)
+REGIONS = list(ALL_REGIONS)
 if os.environ.get('REGIONS'):
     REGIONS = os.environ['REGIONS'].split(',')
+elif os.environ.get('JOB'):              # JOB=k/N: reparto por tamaño en N cajas parecidas
+    k, N = map(int, os.environ['JOB'].split('/'))
+    bins = [[0.0, []] for _ in range(N)]
+    for r in sorted(ALL_REGIONS, key=lambda r: (-SIZE_GB[r], r)):
+        b = min(bins, key=lambda b: b[0]); b[0] += SIZE_GB[r]; b[1].append(r)
+    REGIONS = bins[k][1]
+LOGF = os.path.join(RAW, 'parts', '_log_%s.txt' % os.environ.get('JOB', 'x').replace('/', 'de'))
 
 
 def log(*a):
-    print('%6.1f min |' % ((time.time() - T0) / 60), *a, flush=True)
+    line = '%6.1f min | %s' % ((time.time() - T0) / 60, ' '.join(str(x) for x in a))
+    print(line, flush=True)
+    try:
+        os.makedirs(os.path.dirname(LOGF), exist_ok=True)
+        open(LOGF, 'a').write(line + '\n')     # va a git con cada parte: si el runner muere, queda
+    except Exception:
+        pass
 
 
 def sh(cmd, **kw):
@@ -73,16 +90,19 @@ open(FILTER_ES, 'w').write(open(FILTER).read() + 'nwr/amenity\nnwr/office\nnwr/t
 
 def elements(region, filt):
     """Baja el extracto, filtra, exporta y va dando (tipo, id, lat, lon, tags, fecha)."""
-    name = region.split('/')[-1]
+    name = region.replace('/', '_')       # europe/georgia y us/georgia no chocan
     pbf = os.path.join(WORK, name + '.osm.pbf')
     flt = os.path.join(WORK, name + '.f.pbf')
     geo = os.path.join(WORK, name + '.geojsonseq')
     url = GF + region + '-latest.osm.pbf'
     t = time.time()
+    free = shutil.disk_usage(WORK).free / 2**30
+    if free < SIZE_GB.get(region, 5) * 1.6 + 1:
+        raise SystemExit('sin disco para %s: %.1f GB libres' % (region, free))
     if not os.path.exists(pbf):          # (en las pruebas el fichero ya esta)
         sh('curl -fsSL -A "%s" --retry 5 --retry-delay 20 -o %s %s' % (UA, pbf, url))
     size = os.path.getsize(pbf)
-    log(region, 'bajado: %.1f GB en %.0f s' % (size / 2**30, time.time() - t))
+    log(region, 'bajado: %.2f GB en %.0f s (libres %.1f GB)' % (size / 2**30, time.time() - t, shutil.disk_usage(WORK).free / 2**30))
     sh('osmium tags-filter --overwrite -e %s -o %s %s' % (filt, flt, pbf))
     os.remove(pbf)
     # geometrias rotas (multipoligonos a medias en los bordes del extracto) dan
@@ -209,8 +229,6 @@ def capped(lst, n):
 PARTS = os.path.join(RAW, 'parts')
 os.makedirs(PARTS, exist_ok=True)
 BUDGET = float(os.environ.get('BUDGET_MIN', '320')) * 60
-SIZE_GB = {'europe/spain': 1.3, 'africa': 7, 'antarctica': 0.1, 'asia': 14, 'australia-oceania': 1.3,
-           'central-america': 0.8, 'south-america': 3.5, 'north-america': 16, 'russia': 4, 'europe': 31}
 
 
 def git_save(msg):
@@ -218,13 +236,13 @@ def git_save(msg):
     # trae lo de los otros y se reintenta
     subprocess.run('git add raw && git -c user.name=calory89 -c user.email=rrppspain@gmail.com commit -q -m "%s"' % msg,
                    shell=True, cwd=ROOT)
-    for k in range(6):
+    for k in range(14):
         r = subprocess.run('git push -q origin HEAD:$(git branch --show-current)', shell=True, cwd=ROOT)
         if r.returncode == 0:
             return
         subprocess.run('git -c user.name=calory89 -c user.email=rrppspain@gmail.com pull -q --rebase origin '
                        '$(git branch --show-current)', shell=True, cwd=ROOT)
-        time.sleep(5 + 5 * k)
+        time.sleep(3 + 4 * k + (os.getpid() % 7))
     log('AVISO: no se pudo subir', msg)
 
 
@@ -234,22 +252,34 @@ for region in REGIONS:
     if os.path.exists(part):
         log('ya estaba', region); continue
     # sin tiempo para una region grande: se deja para la siguiente vuelta
-    if (time.time() - T0) + SIZE_GB.get(region, 5) * 6 * 60 > BUDGET:
+    if (time.time() - T0) + (2 + SIZE_GB.get(region, 5) * 4) * 60 > BUDGET:
         log('sin tiempo para', region, '-> siguiente vuelta'); continue
     es = region == 'europe/spain'
     n = 0
     tmp = part + '.tmp'
-    with gzip.open(tmp, 'wt', encoding='utf-8', compresslevel=6) as f:
-        for typ, oid, lat, lon, t, ts in elements(region, FILTER_ES if es else FILTER):
-            if not (is_planet(t) or is_water(t) or is_help(t) or is_wide(t) or is_wide_water(t)
-                    or (es and (is_es(t) or t.get('amenity') == 'library'))):
-                continue
-            f.write(json.dumps([typ, oid, lat, lon, t, ts], ensure_ascii=False, separators=(',', ':')) + '\n')
-            n += 1
+    try:
+        with gzip.open(tmp, 'wt', encoding='utf-8', compresslevel=6) as f:
+            for typ, oid, lat, lon, t, ts in elements(region, FILTER_ES if es else FILTER):
+                if not (is_planet(t) or is_water(t) or is_help(t) or is_wide(t) or is_wide_water(t)
+                        or (es and (is_es(t) or t.get('amenity') == 'library'))):
+                    continue
+                f.write(json.dumps([typ, oid, lat, lon, t, ts], ensure_ascii=False, separators=(',', ':')) + '\n')
+                n += 1
+    except (SystemExit, Exception) as e:
+        log('FALLO', region, repr(e)[:300])
+        for x in os.listdir(WORK):            # que no se quede el disco lleno
+            if x.endswith(('.pbf', '.geojsonseq')):
+                os.remove(os.path.join(WORK, x))
+        if os.path.exists(tmp):
+            os.remove(tmp)
+        git_save('SupportNear OSM: fallo %s' % region)
+        continue
     os.replace(tmp, part)
     log('parte', region, n, 'elementos')
     git_save('SupportNear OSM: %s' % region)
 
+if os.environ.get('NO_ASSEMBLE'):
+    log('RESUMEN job', os.environ.get('JOB'), 'hecho'); git_save('SupportNear OSM: log %s' % os.environ.get('JOB')); sys.exit(0)
 missing = [r for r in ALL_REGIONS if not os.path.exists(os.path.join(PARTS, r.replace('/', '_') + '.jsonl.gz'))]
 if missing:
     log('RESUMEN faltan', missing, '-> relanzar'); sys.exit(0)
