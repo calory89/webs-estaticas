@@ -83,6 +83,7 @@ def report(r):
 <h1>{E(r["title"])}</h1>
 <div class="for">{''.join(f'<div><span>{E(k)}</span><b>{E(v)}</b></div>' for k, v in r["facts"])}</div>
 <div class="verdict {vcls}"><div class="big"><small>Our advice</small>{E(r["verdict"])}</div><p>{r["verdict_why"]}</p></div>
+<p style="font-size:7.5pt;color:#5E6872;margin:6px 2px 0">Evidence, not a guarantee: this advice reflects what was verified on the date shown. A check lowers your risk; it cannot remove it.</p>
 <div class="sum">
   <div class="box"><h3>What this means for you</h3><ul>{''.join(f'<li>{x}</li>' for x in r["means"])}</ul></div>
   <div class="box"><h3>Risk level</h3><div class="risk {rcls}">{bars}</div><p style="font-size:9pt">{E(r["risk_label"])}</p>
@@ -144,7 +145,7 @@ REPORTS = [
  dict(slug='ocean-tulum', no='KB-S-0002', date='28 Oct 2026', kind='Construction monitoring report · sample, desk review',
   title='Condo at Ocean Tulum, Tulum (Grupo VINSA, per source)',
   facts=[('Prepared for', 'Sample client'), ('Location', 'Tulum, Quintana Roo'), ('Bought', '2022 (per buyers)'), ('Next payment', 'Hold')],
-  level='red', risk=5, verdict='Stop paying', risk_label='Very high: buyers report 3+ years of delay and unfinished work.',
+  level='red', risk=5, verdict='Pause payments', risk_label='Very high: buyers report 3+ years of delay and unfinished work.',
   verdict_why='Buyers who bought from 2022 report that they have <b>paid in full</b> and still have <b>no unit and no firm delivery date</b>. Parts of the building are reported at the <b>raw concrete stage</b>, and updates talk about new financing and bridge loans. Do not send another instalment until the work is verified on site.',
   means=['Your payments are ahead of the building.', 'Talk of bridge loans means the project may be short of money to finish.', 'Without a delivery penalty in your contract, the delay costs you, not the developer.'],
   money='Typical exposure: <b>everything paid so far</b>, for a unit that cannot be lived in or rented yet.',
@@ -252,8 +253,8 @@ REPORTS = [
 REPORTS.append(dict(slug='example-safe-to-pay', no='KB-EX-0084', date='28 Oct 2026', kind='Construction monitoring report · illustrative example, fictional project',
   title='Villa Kenanga (fictional), Canggu coast, Bali',
   facts=[('Prepared for', 'Sample client'), ('Price', '€240,000'), ('Milestone', '3 of 6: roof structure'), ('Next payment', '€48,000')],
-  level='grn', risk=1, verdict='Safe to pay', risk_label='Low: milestone verified on site; two items to watch.',
-  verdict_why='Our agent visited on 27 October with GPS-stamped photos and video. <b>The roof structure is complete and matches the drawings</b>, the permit matches the plot and the developer answered every question. You can pay instalment 3 of 6.',
+  level='grn', risk=1, verdict='No red flags', risk_label='Low: milestone verified on site; two items to watch.',
+  verdict_why='Our agent visited on 27 October with GPS-stamped photos and video. <b>The roof structure is complete and matches the drawings</b>, the permit matches the plot and the developer answered every question. The evidence supports paying instalment 3 of 6.',
   means=['What you are paying for exists and matches the plans.', 'The contract protects you: a 1% monthly delay penalty and a refund right after 6 months.', 'Two items to watch: payments are not in escrow, and the 8% yield assumes 70% occupancy.'],
   money='After this payment you will have paid <b>60%</b> for a villa that is about <b>60% built</b>: your money follows the concrete.',
   photo1=('balivilla', 'Illustrative photo for a fictional project.'), p1h=88,
@@ -271,7 +272,7 @@ REPORTS.append(dict(slug='example-safe-to-pay', no='KB-EX-0084', date='28 Oct 20
            ('Next visit: milestone 4, finishes.', 'Expected in about four months; we will tell you before the invoice arrives.')],
   evidence_intro='Illustrative example with a fictional project, developer and figures, to show what a finished Kolaboro report looks like.',
   photos=[('idconstr', 'Illustrative photo.')],
-  timeline=[('Mar 2026', 'Pre-purchase check passed (score 81)'), ('Jun 2026', 'Milestone 2 verified, safe to pay'), ('27 Oct 2026', 'Milestone 3 verified, safe to pay')],
+  timeline=[('Mar 2026', 'Pre-purchase check passed (score 81)'), ('Jun 2026', 'Milestone 2 verified, supported by the evidence'), ('27 Oct 2026', 'Milestone 3 verified, supported by the evidence')],
   scope='<b>Illustrative example.</b> Project, developer, people and figures are fictional.', footnote='Illustrative example. Fictional project and data.', sources=[]))
 
 def doc(body):
