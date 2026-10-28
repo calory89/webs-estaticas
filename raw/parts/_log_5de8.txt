@@ -32,3 +32,6 @@
   22.1 min | north-america/us/alabama bajado: 0.14 GB en 9 s (libres 13.5 GB)
   22.2 min | north-america/us/alabama 4603 elementos
   22.2 min | parte north-america/us/alabama 4455 elementos
+  22.5 min | north-america/us/north-dakota bajado: 0.12 GB en 10 s (libres 13.5 GB)
+  22.6 min | north-america/us/north-dakota 1083 elementos
+  22.6 min | parte north-america/us/north-dakota 1049 elementos
