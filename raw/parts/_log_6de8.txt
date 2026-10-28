@@ -38,3 +38,6 @@
   22.3 min | asia/uzbekistan bajado: 0.12 GB en 10 s (libres 12.7 GB)
   22.4 min | asia/uzbekistan 9706 elementos
   22.4 min | parte asia/uzbekistan 9187 elementos
+  22.8 min | asia/afghanistan bajado: 0.10 GB en 17 s (libres 12.7 GB)
+  22.9 min | asia/afghanistan 2187 elementos
+  22.9 min | parte asia/afghanistan 2146 elementos
