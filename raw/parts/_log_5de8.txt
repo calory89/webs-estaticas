@@ -5,3 +5,6 @@
   11.0 min | asia/indonesia bajado: 1.62 GB en 90 s (libres 12.2 GB)
   12.7 min | asia/indonesia 42105 elementos
   12.7 min | parte asia/indonesia 41173 elementos
+  14.3 min | europe/norway bajado: 1.28 GB en 73 s (libres 12.5 GB)
+  15.4 min | europe/norway 15422 elementos
+  15.4 min | parte europe/norway 15195 elementos
