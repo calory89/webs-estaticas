@@ -1,5 +1,8 @@
 User-agent: *
 Disallow: /admin
+Disallow: /portal
+Disallow: /login
+Disallow: /thanks
 Allow: /
 Disallow: /old/
 Sitemap: https://kolaboro.com/sitemap.xml

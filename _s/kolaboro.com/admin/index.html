@@ -23,18 +23,30 @@ input,select,textarea{font:inherit;padding:8px 10px;border:1px solid var(--line)
 #login{max-width:380px;margin:12vh auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}#login input{width:100%;margin:12px 0}
 .hide{display:none!important}.muted{color:var(--muted)}details summary{cursor:pointer}
 @media (max-width:640px){main{padding:12px}th:nth-child(n+5),td:nth-child(n+5){display:none}}
+
+.cl-wrap{display:grid;grid-template-columns:340px 1fr;gap:14px;align-items:start}.cl-wrap .card{margin-top:14px}
+.cl-item{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 12px;margin-top:8px;cursor:pointer}.cl-item.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.cl-item small{color:var(--muted)}.cl-steps{display:flex;gap:3px;margin-top:6px}.cl-steps i{flex:1;height:4px;border-radius:3px;background:#E6E4DD}.cl-steps i.d{background:#1E9E6A}.cl-steps i.n{background:#FF5B14}
+.cl-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.cl-grid label{font-size:.8rem;font-weight:700;display:block}.cl-grid input,.cl-grid select,.cl-grid textarea{width:100%;margin-top:3px}
+.chat{max-height:320px;overflow:auto;display:flex;flex-direction:column;gap:8px;margin:10px 0}.chat div{padding:8px 11px;border-radius:12px;max-width:85%;white-space:pre-wrap;font-size:.9rem}.chat .a{background:#17212B;color:#fff;align-self:flex-end}.chat .u{background:#F2F1EC;align-self:flex-start}.chat small{display:block;opacity:.6;font-size:.7rem}
+@media (max-width:900px){.cl-wrap{grid-template-columns:1fr}.cl-grid{grid-template-columns:1fr}}
 </style></head><body>
 <div id="login"><h1 style="margin:0">Kolaboro admin</h1><p class="muted">Private dashboard. Enter the admin password.</p>
 <form id="lf"><input id="pw" type="password" autocomplete="current-password" placeholder="Password" required><button class="btn" style="width:100%">Open dashboard</button><p id="le" style="color:var(--bad)"></p></form></div>
 <div id="app" class="hide">
-<header><b>Kolaboro admin</b><span class="muted" id="upd" style="color:#9fb0bf"></span><span class="sp"></span><button id="rf">Refresh</button><a href="/" target="_blank">Site ↗</a><button id="lo">Log out</button></header>
-<nav class="tabs"><button data-t="ov" class="on">Overview</button><button data-t="leads">Leads & emails</button><button data-t="pay">Payments</button><button data-t="tests">Tests & health</button><button data-t="tools">Analytics & tools</button></nav>
+<header><a href="/" style="background:none;padding:0;display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.1rem"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>Kolaboro admin</a><span class="muted" id="upd" style="color:#9fb0bf"></span><span class="sp"></span><button id="rf">Refresh</button><a href="/" target="_blank">Site ↗</a><button id="lo">Log out</button></header>
+<nav class="tabs"><button data-t="ov" class="on">Overview</button><button data-t="clients">Clients <span id="unr" class="pill" style="background:#FF5B14;color:#111;display:none"></span></button><button data-t="leads">Leads & emails</button><button data-t="pay">Payments</button><button data-t="tests">Tests & health</button><button data-t="tools">Analytics & tools</button></nav>
 <main>
 <section id="t-ov">
   <div class="kpis" id="kpis"></div>
   <div class="card"><h2>Funnel: desk review → payment</h2><div class="funnel" id="funnel"></div><p class="muted" style="margin:8px 0 0;font-size:.85rem">Desk reviews and leads come from the database. "Clicked pay" and "Back from PayPal" are logged by the site. Payments are the ones you confirm in the Payments tab.</p></div>
   <div class="card"><h2>Leads per day (last 30 days)</h2><div class="bars" id="bars"></div></div>
   <div class="card"><h2>Latest activity</h2><div class="tw"><table id="act"></table></div></div>
+</section>
+<section id="t-clients" class="hide">
+  <div class="kpis" id="ck"></div>
+  <div class="cl-wrap"><div class="card cl-list"><div class="row"><input id="cq" placeholder="Search clients…" style="flex:1"></div><div id="clist"></div></div>
+  <div class="card cl-detail" id="cdet"><p class="muted">Select a case.</p></div></div>
 </section>
 <section id="t-leads" class="hide">
   <div class="card"><div class="row"><input id="q" placeholder="Search name, email, URL…" style="flex:1;min-width:200px"><select id="pf"><option value="">All types</option></select><select id="sf"><option value="">Any status</option><option>new</option><option>contacted</option><option>paid</option><option>no</option></select><button class="btn2" id="csv">Export CSV</button></div>
@@ -63,7 +75,7 @@ function when(t){var d=new Date(t),s=(Date.now()-d)/1000;if(s<3600)return Math.m
 function load(){ $('upd').textContent='Loading…'; return rpc('kolaboro_admin',{p_key:PW}).then(function(d){ if(d.error){ st('kb-admin',null); $('app').classList.add('hide'); $('login').classList.remove('hide'); $('le').textContent='Wrong password.'; return;} D=d; $('login').classList.add('hide'); $('app').classList.remove('hide'); render(); $('upd').textContent='Updated '+new Date().toTimeString().slice(0,5); })}
 $('lf').addEventListener('submit',function(e){e.preventDefault();PW=$('pw').value;st('kb-admin',PW);load()});
 $('lo').onclick=function(){st('kb-admin',null);location.reload()}; $('rf').onclick=load;
-document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
+document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','clients','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
 function cnt(f){return D.leads.filter(f).length}
 function ev(k){return D.events.filter(function(e){return e.kind===k}).length}
 function render(){
@@ -79,7 +91,7 @@ function render(){
   var act=L.slice(0,8).map(function(l){return {t:l.created_at,k:'Lead · '+(l.plan||'other'),x:l.email+(l.learn?' · '+l.learn:'')}}).concat(D.events.slice(0,8).map(function(e){return {t:e.created_at,k:'Event · '+e.kind,x:(e.ref||'')+' '+(e.page||'')}})).sort(function(a,b){return b.t<a.t?-1:1}).slice(0,12);
   $('act').innerHTML='<tr><th>When</th><th>What</th><th>Detail</th></tr>'+act.map(function(a){return '<tr><td>'+when(a.t)+'</td><td>'+esc(a.k)+'</td><td>'+esc(a.x).slice(0,160)+'</td></tr>'}).join('');
   var plans={};L.forEach(function(l){plans[l.plan||'other']=1});$('pf').innerHTML='<option value="">All types</option>'+Object.keys(plans).map(function(p){return '<option>'+esc(p)+'</option>'}).join('');
-  leads(); pays();
+  leads(); pays(); clients();
 }
 function flt(){var q=$('q').value.toLowerCase(),p=$('pf').value,s=$('sf').value;return D.leads.filter(function(l){return (!p||(l.plan||'other')===p)&&(!s||(l.status||'new')===s)&&(!q||JSON.stringify(l).toLowerCase().indexOf(q)>=0)})}
 function leads(){var r=flt();$('lt').innerHTML='<tr><th>When</th><th>Type</th><th>Name / email</th><th>Status</th><th>Country</th><th>Project / URL</th><th>Details</th></tr>'+r.map(function(l){var url=/^https?:/.test(l.learn||'')?'<a href="'+esc(l.learn)+'" target="_blank" rel="noopener">'+esc(l.learn.replace(/^https?:\/\/(www\.)?/,'').slice(0,40))+'</a>':esc(l.learn);
@@ -92,7 +104,7 @@ function pays(){var P=D.payments,tot={};P.forEach(function(p){tot[p.currency]=(t
   $('ptab').innerHTML='<tr><th>Date</th><th>Name / email</th><th>Amount</th><th>Product</th><th>PayPal ID</th><th></th></tr>'+P.map(function(p){return '<tr><td>'+esc(p.paid_at)+'</td><td>'+esc(p.name)+'<br>'+esc(p.email)+'</td><td><b>'+esc(p.currency)+' '+esc(p.amount)+'</b></td><td>'+esc(p.product)+'</td><td>'+esc(p.ref)+'</td><td><button class="btn2" data-del="'+p.id+'">Delete</button></td></tr>'}).join('')||'<tr><td>No payments recorded yet.</td></tr>';
   $('ptab').querySelectorAll('[data-del]').forEach(function(b){b.onclick=function(){if(confirm('Delete this payment?'))rpc('kolaboro_admin',{p_key:PW,p_action:'del_payment',p_payload:{id:b.dataset.del}}).then(load)}})}
 $('pform').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target),o={};f.forEach(function(v,k){if(v)o[k]=v});rpc('kolaboro_admin',{p_key:PW,p_action:'add_payment',p_payload:o}).then(function(){e.target.reset();load()})});
-var PAGES=['/','/check','/cases','/agents','/agents/visit','/developers','/research','/pricing','/yc','/portal/demo','/thanks','/sitemap.xml','/robots.txt','/k/kolaboro-demo.mp4','/cases/files/kolaboro-report-example-safe-to-pay.pdf'];
+var PAGES=['/','/check','/cases','/agents','/agents/visit','/developers','/research','/pricing','/yc','/portal/demo','/thanks','/login','/portal','/sitemap.xml','/robots.txt','/k/kolaboro-demo.mp4','/cases/files/kolaboro-report-example-safe-to-pay.pdf'];
 function row(n,ok,d,ms){return '<tr><td><span class="st"><span class="dot '+(ok===true?'g':ok===false?'r':'y')+'"></span>'+esc(n)+'</span></td><td>'+d+'</td><td>'+(ms!=null?ms+' ms':'')+'</td></tr>'}
 function runTests(){var out=[],T=$('tt');T.innerHTML='<tr><td>Running…</td></tr>';
   var jobs=PAGES.map(function(p){var t0=performance.now();return fetch(p,{method:p.indexOf('.mp4')>0||p.indexOf('.pdf')>0?'HEAD':'GET',cache:'no-store'}).then(function(r){out.push(row('Page '+p,r.ok,'HTTP '+r.status,Math.round(performance.now()-t0)))}).catch(function(){out.push(row('Page '+p,false,'failed'))})});
@@ -103,6 +115,39 @@ function runTests(){var out=[],T=$('tt');T.innerHTML='<tr><td>Running…</td></t
   fetch('/data/bali-claims.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){var run=(d.runs||[]).slice(-1)[0]||{},dt=run.date||d.updated||'';var age=dt?(Date.now()-new Date(dt))/864e5:99;
     $('agent').innerHTML='<p><span class="st"><span class="dot '+(age<8?'g':'r')+'"></span><b>Last run '+esc(dt||'unknown')+'</b></span> '+(age<8?'(on schedule, weekly on Mondays)':'(older than a week: check GitHub Actions)')+'</p><p>Projects tracked: <b>'+(typeof d.projects==='number'?d.projects:(d.projects||[]).length)+'</b> · runs: <b>'+(d.runs||[]).length+'</b>'+(run.pages_ok!=null?' · pages read: <b>'+run.pages_ok+'</b>'+(run.pages_failed?' · failed: '+run.pages_failed:''):'')+'</p><p><a href="https://github.com/calory89/webs-estaticas/actions/workflows/kolaboro-agent.yml" target="_blank" rel="noopener">Open the agent in GitHub Actions ↗</a></p>'}).catch(function(){$('agent').textContent='Could not read /data/bali-claims.json'})}
 $('run').onclick=runTests;
+
+var STG=['Case opened','Documents','Land & title','Building permit','Site visit','Report'], CSEL=null;
+function clients(){ var U=D.users||[], all=[]; U.forEach(function(u){ u.cases.forEach(function(c){ all.push({u:u,c:c}); }); });
+  var unread=all.reduce(function(a,x){ return a+x.c.messages.filter(function(m){ return !m.admin&&!m.read; }).length; },0);
+  $('unr').style.display=unread?'inline-block':'none'; $('unr').textContent=unread;
+  $('ck').innerHTML=[['Clients',U.length],['Active (paid)',U.filter(function(u){return u.status==='active'}).length],['Cases in progress',all.filter(function(x){return x.c.paid&&!x.c.report_url}).length],['Reports delivered',all.filter(function(x){return x.c.report_url}).length],['Unread messages',unread],['Due in 3 days',all.filter(function(x){return x.c.eta&&!x.c.report_url&&(new Date(x.c.eta)-Date.now())<3*864e5}).length]].map(function(k){return '<div class="kpi"><span>'+k[0]+'</span><b>'+k[1]+'</b></div>'}).join('');
+  var q=($('cq').value||'').toLowerCase();
+  $('clist').innerHTML=all.filter(function(x){ return !q||JSON.stringify([x.u.email,x.u.name,x.c.code,x.c.project_name,x.c.project_url]).toLowerCase().indexOf(q)>=0; }).map(function(x){ var c=x.c,un=c.messages.filter(function(m){return !m.admin&&!m.read}).length;
+    return '<button class="cl-item'+(CSEL===c.id?' on':'')+'" data-cs="'+c.id+'"><b>'+esc(c.project_name||c.code)+'</b> '+(un?'<span class="pill" style="background:#FF5B14">'+un+'</span>':'')+(c.paid?'':' <span class="pill" style="background:#FFF0C7">unpaid</span>')+'<br><small>'+esc(x.u.name)+' · '+esc(x.u.email)+' · '+esc(c.code)+'</small><div class="cl-steps">'+STG.map(function(s,i){return '<i class="'+(i<c.stage?'d':i===c.stage?'n':'')+'"></i>'}).join('')+'</div></button>'; }).join('')||'<p class="muted">No clients yet. They appear here after paying and creating an account on /thanks.</p>';
+  $('clist').querySelectorAll('[data-cs]').forEach(function(b){ b.onclick=function(){ CSEL=b.dataset.cs; clients(); }; });
+  var sel=all.filter(function(x){return x.c.id===CSEL})[0]; if(sel) detail(sel.u,sel.c);
+}
+function detail(u,c){ var r=(c.desk&&c.desk.report)||null;
+  $('cdet').innerHTML='<div class="row"><div style="flex:1"><span class="muted">'+esc(c.code)+' · opened '+when(c.created_at)+'</span><h2 style="margin:2px 0">'+esc(c.project_name||c.project_url||c.code)+'</h2><span class="muted">'+esc(u.name)+' · <a href="mailto:'+esc(u.email)+'">'+esc(u.email)+'</a> · account '+esc(u.status)+(u.paypal_ref?' · PayPal '+esc(u.paypal_ref):'')+'</span></div><button class="btn2" id="asu">View as client ↗</button></div>'+
+  '<div class="cl-grid" style="margin-top:12px"><div><b>Project</b><p class="muted" style="margin:4px 0">'+esc([c.developer,c.location,c.price_text].filter(Boolean).join(' · ')||'No details yet')+'</p>'+(c.project_url?'<a href="'+esc(c.project_url)+'" target="_blank">'+esc(c.project_url)+'</a><br>':'')+(c.contract_url?'<a href="'+esc(c.contract_url)+'" target="_blank">Contract ↗</a><br>':'')+(c.next_payment_date?'Next payment: <b>'+esc(c.next_payment_amount||'')+'</b> on '+esc(c.next_payment_date):'')+(c.user_notes?'<p style="background:#F2F1EC;border-radius:10px;padding:8px">'+esc(c.user_notes)+'</p>':'')+
+  (r?'<p><b>Desk review</b> · '+esc(r.attention)+' attention<br><span class="muted">'+esc(r.summary)+'</span></p>':'')+'</div>'+
+  '<form id="cf" class="cl-grid" style="grid-template-columns:1fr 1fr;align-content:start"><label>Stage<select name="stage">'+STG.map(function(s,i){return '<option value="'+i+'"'+(i===c.stage?' selected':'')+'>'+i+'. '+s+'</option>'}).join('')+'</select></label><label>Verdict<select name="verdict">'+[['pending','In progress'],['safe','Safe to pay'],['hold','Hold payments'],['stop','Stop paying']].map(function(v){return '<option value="'+v[0]+'"'+(v[0]===c.verdict?' selected':'')+'>'+v[1]+'</option>'}).join('')+'</select></label>'+
+  '<label>Report due<input type="date" name="eta" value="'+esc(c.eta||'')+'"></label><label>Paid<select name="paid"><option value="true"'+(c.paid?' selected':'')+'>Yes</option><option value="false"'+(c.paid?'':' selected')+'>No</option></select></label>'+
+  '<label style="grid-column:1/-1">"Now" note the client sees<textarea name="stage_note" rows="2">'+esc(c.stage_note||'')+'</textarea></label><label style="grid-column:1/-1">Report URL (PDF)<input name="report_url" value="'+esc(c.report_url||'')+'" placeholder="https://kolaboro.com/…pdf"></label><label style="grid-column:1/-1">Timeline entry (optional)<input name="log_note" placeholder="e.g. Land certificate checked at BPN Badung"></label><div style="grid-column:1/-1"><button class="btn">Save case</button></div></form></div>'+
+  '<h3 style="margin:16px 0 0">Messages</h3><div class="chat" id="cchat">'+c.messages.map(function(m){return '<div class="'+(m.admin?'a':'u')+'">'+esc(m.body)+'<small>'+(m.admin?'Kolaboro':esc(u.name))+' · '+when(m.at)+'</small></div>'}).join('')+'</div>'+
+  '<form id="cmf" class="row"><textarea name="body" rows="2" style="flex:1" placeholder="Reply to '+esc(u.name)+'…"></textarea><button class="btn">Send</button></form>'+
+  '<details style="margin-top:14px"><summary>Timeline ('+c.log.length+') and account actions</summary><ul>'+c.log.map(function(l){return '<li>'+when(l.at)+' · '+STG[l.stage]+(l.note?' · '+esc(l.note):'')+'</li>'}).join('')+'</ul><div class="row"><button class="btn2" id="uact">'+(u.status==='active'?'Mark account pending':'Mark account active (paid)')+'</button><button class="btn2" id="urp">Set new password</button><button class="btn2" id="udel" style="color:#C9341A">Delete client</button></div></details>';
+  var ch=$('cchat'); ch.scrollTop=ch.scrollHeight;
+  if (c.messages.some(function(m){return !m.admin&&!m.read})) rpc('kolaboro_admin',{p_key:PW,p_action:'mark_read',p_payload:{case_id:c.id}});
+  $('cf').onsubmit=function(e){e.preventDefault();var o={id:c.id};new FormData(e.target).forEach(function(v,k){o[k]=v});if(+o.stage===c.stage&&!o.log_note)delete o.stage;rpc('kolaboro_admin',{p_key:PW,p_action:'case_update',p_payload:o}).then(load)};
+  $('cmf').onsubmit=function(e){e.preventDefault();var t=e.target.body.value.trim();if(!t)return;rpc('kolaboro_admin',{p_key:PW,p_action:'admin_message',p_payload:{case_id:c.id,body:t}}).then(load)};
+  $('asu').onclick=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'impersonate',p_payload:{user_id:u.id}}).then(function(d){if(d.token)window.open('/portal?as='+d.token,'_blank')})};
+  $('uact').onclick=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'set_user',p_payload:{id:u.id,status:u.status==='active'?'pending':'active'}}).then(load)};
+  $('urp').onclick=function(){var p=prompt('New password for '+u.email+' (min 8). Send it to them by email.');if(p)rpc('kolaboro_admin',{p_key:PW,p_action:'reset_password',p_payload:{user_id:u.id,password:p}}).then(function(d){alert(d.error?'Too short':'Password changed')})};
+  $('udel').onclick=function(){if(confirm('Delete '+u.email+' and all their cases? This cannot be undone.'))rpc('kolaboro_admin',{p_key:PW,p_action:'delete_user',p_payload:{user_id:u.id}}).then(function(){CSEL=null;load()})};
+}
+$('cq').addEventListener('input',clients);
+
 var LK=[['Google Analytics 4','https://analytics.google.com/analytics/web/','Traffic, sources, events (G-FJKJE77K4V)'],['Microsoft Clarity','https://clarity.microsoft.com/projects/view/z4eqcmaic7/dashboard','Recordings and heatmaps'],['Google Search Console','https://search.google.com/search-console?resource_id=sc-domain%3Akolaboro.com','Indexing, queries, sitemap'],['PayPal activity','https://www.paypal.com/myaccount/activities/','See payments, then record them here'],['Supabase (data)','https://supabase.com/dashboard/project/oykcsmextclpdnugixqz/editor','Tables kolaboro_applications, _events, _payments'],['Cloudflare Pages','https://dash.cloudflare.com/d275d2609c10aa655477fd7a47e9b443/pages/view/web-lovable','Deploys, secret ANTHROPIC_API_KEY'],['GitHub repo','https://github.com/calory89/webs-estaticas/tree/main/tools/kolaboro-site','Site source and worker'],['Research agent runs','https://github.com/calory89/webs-estaticas/actions/workflows/kolaboro-agent.yml','Weekly run, Mondays 06:17 UTC'],['Anthropic console','https://console.anthropic.com/settings/usage','AI cost of desk reviews'],['Desk review (live)','/check#analyze','Try the funnel yourself'],['Product tour','/yc','What YC sees'],['Buyer portal demo','/portal/demo','Demo data']];
 $('links').innerHTML=LK.map(function(l){return '<a href="'+l[1]+'" target="_blank" rel="noopener"><b>'+l[0]+' ↗</b><small>'+l[2]+'</small></a>'}).join('');
 PW=st('kb-admin')||''; if(PW)load();
