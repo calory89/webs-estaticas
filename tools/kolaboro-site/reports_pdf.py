@@ -251,7 +251,7 @@ REPORTS = [
 
 REPORTS.append(dict(slug='example-safe-to-pay', no='KB-EX-0084', date='28 Oct 2026', kind='Construction monitoring report · illustrative example, fictional project',
   title='Villa Kenanga (fictional), Canggu coast, Bali',
-  facts=[('Prepared for', 'Sample client'), ('Price', '$310,000'), ('Milestone', '3 of 6: roof structure'), ('Next payment', '€48,000')],
+  facts=[('Prepared for', 'Sample client'), ('Price', '€240,000'), ('Milestone', '3 of 6: roof structure'), ('Next payment', '€48,000')],
   level='grn', risk=1, verdict='Safe to pay', risk_label='Low: milestone verified on site; two items to watch.',
   verdict_why='Our agent visited on 27 October with GPS-stamped photos and video. <b>The roof structure is complete and matches the drawings</b>, the permit matches the plot and the developer answered every question. You can pay instalment 3 of 6.',
   means=['What you are paying for exists and matches the plans.', 'The contract protects you: a 1% monthly delay penalty and a refund right after 6 months.', 'Two items to watch: payments are not in escrow, and the 8% yield assumes 70% occupancy.'],
