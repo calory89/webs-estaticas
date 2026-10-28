@@ -32,3 +32,6 @@
   33.7 min | north-america/us/utah bajado: 0.16 GB en 29 s (libres 12.3 GB)
   33.9 min | north-america/us/utah 9138 elementos
   33.9 min | parte north-america/us/utah 8902 elementos
+  35.2 min | north-america/us/new-jersey bajado: 0.15 GB en 36 s (libres 12.3 GB)
+  35.4 min | north-america/us/new-jersey 8925 elementos
+  35.4 min | parte north-america/us/new-jersey 8589 elementos
