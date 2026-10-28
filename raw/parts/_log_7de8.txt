@@ -14,3 +14,6 @@
   16.8 min | europe/finland bajado: 0.72 GB en 54 s (libres 11.8 GB)
   17.5 min | europe/finland 18952 elementos
   17.5 min | parte europe/finland 17888 elementos
+  18.3 min | europe/switzerland bajado: 0.51 GB en 39 s (libres 12.0 GB)
+  18.8 min | europe/switzerland 42045 elementos
+  18.8 min | parte europe/switzerland 40559 elementos
