@@ -53,3 +53,6 @@
   38.9 min | europe/cyprus bajado: 0.04 GB en 12 s (libres 12.4 GB)
   39.0 min | europe/cyprus 3389 elementos
   39.0 min | parte europe/cyprus 3348 elementos
+  39.2 min | europe/faroe-islands bajado: 0.01 GB en 3 s (libres 12.4 GB)
+  39.2 min | europe/faroe-islands 223 elementos
+  39.2 min | parte europe/faroe-islands 215 elementos
