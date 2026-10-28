@@ -8,3 +8,6 @@
   11.9 min | australia-oceania bajado: 1.47 GB en 112 s (libres 11.4 GB)
   13.0 min | australia-oceania 104218 elementos
   13.0 min | parte australia-oceania 101819 elementos
+  14.4 min | europe/sweden bajado: 0.88 GB en 73 s (libres 12.0 GB)
+  15.1 min | europe/sweden 23645 elementos
+  15.1 min | parte europe/sweden 22705 elementos
