@@ -21,3 +21,6 @@
   35.6 min | north-america/us/arizona bajado: 0.28 GB en 67 s (libres 12.4 GB)
   35.9 min | north-america/us/arizona 13608 elementos
   35.9 min | parte north-america/us/arizona 13227 elementos
+  36.9 min | asia/kazakhstan bajado: 0.21 GB en 38 s (libres 12.5 GB)
+  37.1 min | asia/kazakhstan 11105 elementos
+  37.1 min | parte asia/kazakhstan 10601 elementos
