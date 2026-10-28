@@ -41,3 +41,6 @@
   23.3 min | north-america/us/mississippi bajado: 0.09 GB en 6 s (libres 13.6 GB)
   23.4 min | north-america/us/mississippi 1981 elementos
   23.4 min | parte north-america/us/mississippi 1933 elementos
+  23.6 min | asia/mongolia bajado: 0.06 GB en 6 s (libres 13.6 GB)
+  23.7 min | asia/mongolia 10754 elementos
+  23.7 min | parte asia/mongolia 10733 elementos
