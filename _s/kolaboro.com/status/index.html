@@ -111,7 +111,7 @@
   var rows = document.getElementById('stt');
   function row(name, ok, detail, ms){ var tr = document.createElement('tr'); tr.innerHTML = '<td><span class="st-dot ' + (ok === true ? 'up' : ok === false ? 'down' : 'warn') + '"></span>' + name + '</td><td>' + (ok === true ? 'Operational' : ok === false ? 'Down' : 'Degraded') + '</td><td>' + detail + '</td><td>' + (ms != null ? ms + ' ms' : '') + '</td>'; rows.appendChild(tr); }
   function timed(url, opts){ var t0 = performance.now(); return fetch(url, opts).then(function(r){ return r.json().then(function(d){ return { ok: r.ok, d: d, ms: Math.round(performance.now() - t0) }; }); }); }
-  function age(dstr){ var d = (Date.now() - new Date(dstr).getTime()) / 864e5; return d < 1 ? 'today' : Math.floor(d) + ' days ago'; }
+  function age(dstr){ var d = (Date.now() - new Date(dstr).getTime()) / 864e5; return d < 1 ? 'today' : Math.floor(d) === 1 ? 'yesterday' : Math.floor(d) + ' days ago'; }
   var jobs = [
     timed('/api/kb/health').then(function(x){ row('Edge API (Cloudflare Workers)', x.ok, 'All /api/kb endpoints', x.ms); row('Database (Postgres)', x.d.database === 'up', 'Accounts, cases, evidence ledger', x.d.db_ms); row('AI models', !!x.d.models_configured, 'Desk review, copilot, plan vs reality', null); }).catch(function(){ row('Edge API (Cloudflare Workers)', false, 'Unreachable', null); }),
     timed('/api/kb/stats').then(function(x){ var d = x.d; row('Bitcoin timestamping (OpenTimestamps)', true, d.stamps + ' fingerprints · ' + d.stamps_confirmed + ' confirmed' + (d.last_block ? ' · latest block #' + d.last_block.toLocaleString('en') : ''), x.ms); }).catch(function(){}),

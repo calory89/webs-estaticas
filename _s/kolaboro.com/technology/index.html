@@ -281,7 +281,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function set(k, v){ var e = box.querySelector('[data-k="' + k + '"]'); if (e && v != null) e.textContent = v; }
   fetch('/data/world-claims.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(w){ if (!w || !w.markets) return; var n = 0; Object.keys(w.markets).forEach(function(k){ n += w.markets[k].projects || 0; }); set('projects', n); set('markets', Object.keys(w.markets).length); }).catch(function(){});
   fetch('/data/satellite.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(s){ if (s && s.sites) set('sat', s.sites.length); }).catch(function(){});
-  fetch('/api/kb/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (!d) return; set('stamps', d.stamps); var r7 = d.runs_7d || {}, t = 0; ['analyze','copilot','progress'].forEach(function(k){ t += r7[k] || 0; }); set('runs', t);
+  fetch('/api/kb/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (!d) return; set('stamps', d.stamps); var r7 = d.runs_7d || {}, t = 0; ['analyze','copilot','progress'].forEach(function(k){ t += r7[k] || 0; }); if (t > 0) set('runs', t); else { var rc = box.querySelector('[data-k="runs"]'); if (rc) rc.parentNode.remove(); box.style.gridTemplateColumns = 'repeat(4,1fr)'; }
     if (d.last_block) { var s = box.querySelector('[data-k="stamps"]').nextElementSibling; s.textContent = 'evidence fingerprints timestamped · latest in Bitcoin block #' + d.last_block.toLocaleString('en'); } }).catch(function(){});
 })();
 </script>

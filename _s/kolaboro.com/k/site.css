@@ -844,5 +844,5 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .st-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;background:#B7791F}.st-dot.up{background:#0B7A55;box-shadow:0 0 0 4px #DDEFE7}.st-dot.down{background:#B42318}
 .api-b{background:var(--ink);color:#E6EAED;border-radius:16px;padding:16px;overflow-x:auto;font-family:ui-monospace,monospace;font-size:.84rem;white-space:pre}
 .pg-ex{border:1px dashed #8D9BA7;border-radius:14px;padding:6px 10px;color:#C9D0D6;font-size:.8rem;margin-bottom:10px;display:inline-block}
-@media (max-width:900px){.r21-try{grid-template-columns:1fr 1fr}.r21-cnt{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.r21-try{grid-template-columns:1fr 1fr}.r21-cnt{grid-template-columns:1fr 1fr!important}}
 @media (max-width:520px){.r21-try{grid-template-columns:1fr}.st-t td:nth-child(4),.st-t th:nth-child(4){display:none}}
