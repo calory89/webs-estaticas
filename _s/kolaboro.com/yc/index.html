@@ -40,14 +40,16 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Product tour</p><h1>Kolaboro in three minutes</h1><p class="lead">AI that turns local people into reliable property verifiers, starting with overseas buyers in Bali. Watch the demo, then open every part of the product yourself: nothing here is a mock-up except where it says so.</p></div></section><section class="sec"><div class="wrap">
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Product tour</p><h1>Kolaboro in three minutes</h1><p class="lead">AI that turns local people into reliable property verifiers, starting with overseas buyers in Bali. Watch the demo, then open every part of the product yourself: nothing here is a mock-up except where it says so.</p></div></section><section class="sec"><div class="wrap"><h2>Try every part yourself</h2><p class="lead">All of it runs in production. Nothing to install, no account needed.</p><div class="r21-try"><a href="/check#analyze"><i class="live">Live</i><b>Desk review</b><span class="d">Paste any off-plan project&#x27;s website. The AI reads it and lists every promise and what to verify. ~60 s.</span><em>Open →</em></a><a href="/copilot#try"><i class="live">Live</i><b>Agent copilot</b><span class="d">Three documents with a hidden contradiction. Watch the copilot quote it and decide: go, hold or escalate.</span><em>Open →</em></a><a href="/technology#progress"><i class="beta">Beta</i><b>Plan vs reality</b><span class="d">Site photos vs the developer&#x27;s claim and what has been paid. The sample is a trap: see if it notices.</span><em>Open →</em></a><a href="/technology#satellite"><i class="live">Live</i><b>Watched from space</b><span class="d">Sentinel-2 imagery of three Bali development areas, land cleared since 2023 in orange. Refreshed weekly.</span><em>Open →</em></a><a href="/verify?hash=141f25e228142d0878307c1f00119a025b823633e66c453ceca0c577f3a8dbfc"><i class="live">Live</i><b>Verify a photo</b><span class="d">A report photo whose fingerprint is anchored in a Bitcoin block. Check it yourself, without trusting us.</span><em>Open →</em></a><a href="/report/sample"><i class="sample">Sample</i><b>Full client report</b><span class="d">What a buyer receives before each payment: decision, money vs built, nine checks, evidence.</span><em>Open →</em></a><a href="/agents/apply"><i class="live">Live</i><b>Become an agent</b><span class="d">The automated onboarding a local goes through: application, academy, exam, GPS-stamped test visit.</span><em>Open →</em></a><a href="/status"><i class="live">Live</i><b>System status</b><span class="d">Every API, the database, the weekly agents and the Bitcoin anchoring, checked live from your browser.</span><em>Open →</em></a></div></div></section>
+<section class="sec alt"><div class="wrap">
   <div class="yc-video"><video controls preload="metadata" playsinline poster="/k/og.png" src="/k/kolaboro-demo.mp4"></video></div>
-  <div class="yc-live stats" id="yc-live" aria-live="polite">
-    <div class="stat"><b id="yl-p">24</b><span>off-plan projects tracked in Bali</span></div>
-    <div class="stat"><b id="yl-r">24/24</b><span>developer pages read by our AI agent last run</span></div>
-    <div class="stat"><b>6</b><span>projects whose developer we invited to verify</span></div>
-    <div class="stat"><b>€490</b><span>pre-purchase check, payments live</span></div>
-  </div>
+  <div class="r21-cnt" id="r21cnt" aria-live="polite">
+  <div><b data-k="projects">122</b><span>off-plan projects re-read every week</span></div>
+  <div><b data-k="markets">9</b><span>markets</span></div>
+  <div><b data-k="sat">3</b><span>areas watched by satellite</span></div>
+  <div><b data-k="stamps">–</b><span>evidence fingerprints anchored in Bitcoin</span></div>
+  <div><b data-k="runs">–</b><span>AI checks run in the last 7 days</span></div>
+</div>
 </div></section>
 <section class="sec alt"><div class="wrap">
   <div class="cobanner" style="border-radius:22px;margin:0 0 28px"><div class="wrap" style="padding:28px"><div><h2>The core: the agent copilot</h2><p>A local without credentials pastes the case documents. The copilot lists every inconsistency word for word, what to ask for, what to measure on site and when to stop and call a notary. A senior reviews every report until the agent has 10 clean ones.</p><a class="btn btn-hi" href="/copilot">Run it live</a></div><ol><li><b>Learn</b><span>Academy + exam</span></li><li><b>Copilot</b><span>Cross-check + escalation</span></li><li><b>Review</b><span>Senior sign-off</span></li><li><b>Prove it</b><span>GPS + SHA-256</span></li></ol></div></div><div id="scale" style="margin-bottom:34px">
@@ -119,6 +121,8 @@
         <li><a href="/copilot">Agent copilot</a></li>
         <li><a href="/technology">Technology</a></li>
         <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/status">System status</a></li>
+        <li><a href="/docs/api">Open data and API</a></li>
         <li><a href="/research">Research agent</a></li>
         <li><a href="/independence">Independence</a></li>
         <li><a href="/glossary">Glossary</a></li>
@@ -161,6 +165,16 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+  var box = document.getElementById('r21cnt'); if (!box) return;
+  function set(k, v){ var e = box.querySelector('[data-k="' + k + '"]'); if (e && v != null) e.textContent = v; }
+  fetch('/data/world-claims.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(w){ if (!w || !w.markets) return; var n = 0; Object.keys(w.markets).forEach(function(k){ n += w.markets[k].projects || 0; }); set('projects', n); set('markets', Object.keys(w.markets).length); }).catch(function(){});
+  fetch('/data/satellite.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(s){ if (s && s.sites) set('sat', s.sites.length); }).catch(function(){});
+  fetch('/api/kb/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (!d) return; set('stamps', d.stamps); var r7 = d.runs_7d || {}, t = 0; ['analyze','copilot','progress'].forEach(function(k){ t += r7[k] || 0; }); set('runs', t);
+    if (d.last_block) { var s = box.querySelector('[data-k="stamps"]').nextElementSibling; s.textContent = 'evidence fingerprints timestamped · latest in Bitcoin block #' + d.last_block.toLocaleString('en'); } }).catch(function(){});
 })();
 </script>
 </body>

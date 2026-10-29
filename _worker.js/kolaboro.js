@@ -139,12 +139,37 @@ async function copilot(req, env, ctx) {
 
 async function sha(t) { const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)); return [...new Uint8Array(h)].map(x => x.toString(16).padStart(2, '0')).join(''); }
 
+async function logged(kind, fn, ctx) {
+  const t0 = Date.now(); const r = await fn(); const ms = Date.now() - t0;
+  try {
+    const d = await r.clone().json();
+    const k = kind === 'stamp' ? (d.found !== undefined ? 'stamp_lookup' : 'stamp_new') : kind;
+    if (d.error !== 'rate' && d.error !== 'bad_request') ctx.waitUntil(rpc('kolaboro_api_log', { p_kind: k, p_ok: r.ok, p_cached: !!(d.cached || d.existing), p_ms: ms }).catch(() => {}));
+  } catch (e) {}
+  const h = new Headers(r.headers); h.set('server-timing', 'app;dur=' + ms);
+  return new Response(r.body, { status: r.status, headers: h });
+}
+
+async function stats(ctx) {
+  const ck = new Request('https://kolaboro.com/__kb_stats');
+  const hit = await caches.default.match(ck); if (hit) return json(await hit.json());
+  try { const d = await rpc('kolaboro_public_stats', {}); delete d.agent_applications; ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=60' } }))); return json(d); }
+  catch (e) { return json({ error: 'db' }, 503); }
+}
+
+async function health(env) {
+  const t0 = Date.now(); let db = false;
+  try { await rpc('kolaboro_public_stats', {}); db = true; } catch (e) {}
+  return json({ ok: true, api: 'up', models_configured: !!env.ANTHROPIC_API_KEY, database: db ? 'up' : 'down', db_ms: Date.now() - t0, time: new Date().toISOString() });
+}
+
 export async function api(req, u, env, ctx) {
-  if (u.pathname === '/api/kb/progress' && req.method === 'POST') return progress(req, env, ctx);
-  if (u.pathname === '/api/kb/stamp' && (req.method === 'POST' || req.method === 'GET')) return stamp(req, env, ctx);
-  if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return copilot(req, env, ctx);
-  if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return analyze(req, env, ctx);
-  if (u.pathname === '/api/kb/health') return json({ ok: true, configured: !!env.ANTHROPIC_API_KEY });
+  if (u.pathname === '/api/kb/progress' && req.method === 'POST') return logged('progress', () => progress(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/stamp' && (req.method === 'POST' || req.method === 'GET')) return logged('stamp', () => stamp(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return logged('copilot', () => copilot(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return logged('analyze', () => analyze(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/stats') return stats(ctx);
+  if (u.pathname === '/api/kb/health') return health(env);
   return json({ error: 'not_found' }, 404);
 }
 

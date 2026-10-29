@@ -89,6 +89,8 @@
         <li><a href="/copilot">Agent copilot</a></li>
         <li><a href="/technology">Technology</a></li>
         <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/status">System status</a></li>
+        <li><a href="/docs/api">Open data and API</a></li>
         <li><a href="/research">Research agent</a></li>
         <li><a href="/independence">Independence</a></li>
         <li><a href="/glossary">Glossary</a></li>
@@ -155,7 +157,7 @@
     function show(h, d, canStamp){
       if (d && d.stamp) {
         var st = d.stamp, when = new Date(st.created_at), url = 'data:application/octet-stream;base64,' + st.ots;
-        vo.innerHTML = '<div class="vf-ok"><b>✓ Timestamped ' + when.toUTCString().replace(' GMT',' UTC') + '</b><p>Fingerprint <code>' + h.slice(0,16) + '…' + h.slice(-8) + '</code> was submitted to ' + (st.calendars || []).length + ' independent calendars and is anchored, or being anchored, in Bitcoin.</p><div class="row"><a class="btn btn-hi" download="' + h.slice(0,12) + '.ots" href="' + url + '">Download the proof (.ots)</a><a class="btn btn-line" href="https://opentimestamps.org" target="_blank" rel="noopener">Verify it on opentimestamps.org</a></div></div>';
+        vo.innerHTML = '<div class="vf-ok"><b>✓ Timestamped ' + when.toUTCString().replace(' GMT',' UTC') + '</b><p>Fingerprint <code>' + h.slice(0,16) + '…' + h.slice(-8) + '</code> was submitted to ' + (st.calendars || []).length + ' independent calendars' + (st.bitcoin_block ? ' and <b>confirmed in Bitcoin block <a href="https://mempool.space/block/' + st.bitcoin_block + '" target="_blank" rel="noopener">#' + st.bitcoin_block.toLocaleString('en') + '</a></b>. Nobody can change or backdate it now.' : '; Bitcoin confirmation usually follows within a few hours.') + '</p><div class="row"><a class="btn btn-hi" download="' + h.slice(0,12) + '.ots" href="' + url + '">Download the proof (.ots)</a><a class="btn btn-line" href="https://opentimestamps.org" target="_blank" rel="noopener">Verify it on opentimestamps.org</a></div></div>';
       } else {
         vo.innerHTML = '<div class="vf-no"><b>No timestamp for this fingerprint</b><p>It isn\'t a file from a Kolaboro report, or it was changed. Even one pixel gives a completely different fingerprint.</p>' + (canStamp ? '<button class="btn btn-line" type="button" id="vfstamp">Timestamp this file now</button>' : '') + '</div>';
         var sb = $('vfstamp'); if (sb) sb.onclick = function(){ sb.disabled = true; sb.textContent = 'Submitting to calendars…'; fetch('/api/kb/stamp', { method:'POST', headers:{ 'content-type':'application/json' }, body: JSON.stringify({ hash: h, source: 'verify-page' }) }).then(function(r){ return r.json(); }).then(function(d2){ if (window.kbEvent) kbEvent('stamp_new'); show(h, d2, false); }).catch(function(){ sb.textContent = 'Try again'; sb.disabled = false; }); };

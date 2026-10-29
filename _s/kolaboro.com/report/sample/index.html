@@ -168,6 +168,8 @@
         <li><a href="/copilot">Agent copilot</a></li>
         <li><a href="/technology">Technology</a></li>
         <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/status">System status</a></li>
+        <li><a href="/docs/api">Open data and API</a></li>
         <li><a href="/research">Research agent</a></li>
         <li><a href="/independence">Independence</a></li>
         <li><a href="/glossary">Glossary</a></li>
@@ -197,7 +199,7 @@
     fetch(b.dataset.src, { cache:'no-store' }).then(function(r){ return r.arrayBuffer(); }).then(function(buf){ return crypto.subtle.digest('SHA-256', buf); }).then(function(h){
       var hx = [].map.call(new Uint8Array(h), function(x){ return x.toString(16).padStart(2,'0'); }).join('');
       var ok = hx === b.dataset.sha; b.textContent = ok ? '✓ Matches' : '✗ Changed'; b.className = 'rp-verify ' + (ok ? 'yes' : 'no');
-      if (window.kbEvent) kbEvent('report_verify', { ok: ok }); if (ok) fetch('/api/kb/stamp?hash=' + hx).then(function(r){ return r.json(); }).then(function(d){ if (!d.stamp) return; var a = document.createElement('a'); a.className = 'rp-anch'; a.href = '/verify?hash=' + hx; a.textContent = '⛓ Timestamped in Bitcoin · ' + d.stamp.created_at.slice(0,10) + ' · proof'; b.parentNode.parentNode.appendChild(a); });
+      if (window.kbEvent) kbEvent('report_verify', { ok: ok }); if (ok) fetch('/api/kb/stamp?hash=' + hx).then(function(r){ return r.json(); }).then(function(d){ if (!d.stamp) return; var a = document.createElement('a'); a.className = 'rp-anch'; a.href = '/verify?hash=' + hx; a.textContent = d.stamp.bitcoin_block ? '⛓ In Bitcoin block #' + d.stamp.bitcoin_block.toLocaleString('en') + ' · proof' : '⛓ Timestamped ' + d.stamp.created_at.slice(0,10) + ' · Bitcoin confirmation pending'; b.parentNode.parentNode.appendChild(a); });
     }).catch(function(){ b.textContent = 'Try again'; b.disabled = false; });
   }); });
   var nav = document.querySelectorAll('.rp-nav a'), secs = [].map.call(nav, function(a){ return document.querySelector(a.getAttribute('href')); });

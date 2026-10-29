@@ -40,7 +40,31 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Technology</p><h1>The verification engine.</h1><p class="lead">Kolaboro turns a local person with a phone into evidence a buyer, a bank or a court can trust. Here is what runs today, what is in beta and what we are building, with two parts you can try right now.</p><div class="hero-cta"><a class="btn btn-hi" href="#progress">Try plan vs reality</a><a class="btn btn-line" href="#satellite">Watched from space</a><a class="btn btn-line" href="#verify">Verify evidence</a></div></div></section><section class="sec"><div class="wrap"><h2>What runs today, and what's next</h2>
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Technology</p><h1>The verification engine.</h1><p class="lead">Kolaboro turns a local person with a phone into evidence a buyer, a bank or a court can trust. Here is what runs today, what is in beta and what we are building, with two parts you can try right now.</p><div class="hero-cta"><a class="btn btn-hi" href="#progress">Try plan vs reality</a><a class="btn btn-line" href="#satellite">Watched from space</a><a class="btn btn-line" href="#verify">Verify evidence</a></div></div></section><section class="sec" style="padding-top:0"><div class="wrap"><div class="r21-cnt" id="r21cnt" aria-live="polite">
+  <div><b data-k="projects">122</b><span>off-plan projects re-read every week</span></div>
+  <div><b data-k="markets">9</b><span>markets</span></div>
+  <div><b data-k="sat">3</b><span>areas watched by satellite</span></div>
+  <div><b data-k="stamps">–</b><span>evidence fingerprints anchored in Bitcoin</span></div>
+  <div><b data-k="runs">–</b><span>AI checks run in the last 7 days</span></div>
+</div></div></section><section class="sec alt" id="architecture"><div class="wrap"><h2>How a check flows through the engine</h2>
+<p class="lead">Every arrow is running code. Grey boxes are people, orange boxes are our models, dark boxes are the evidence chain.</p>
+<div class="r21-arch" role="img" aria-label="Diagram: buyer request, desk review, copilot, agent visit with GPS and fingerprints, Bitcoin timestamp, satellite watch and plan-vs-reality, senior review, buyer decision">
+<svg viewBox="0 0 1100 290" xmlns="http://www.w3.org/2000/svg" font-family="inherit" font-size="13">
+ <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#17212B"/></marker></defs>
+ <g stroke="#17212B" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+  <path d="M170,70 H212"/><path d="M392,70 H434"/><path d="M614,70 H656"/><path d="M836,70 H878"/><path d="M968,105 V172"/>
+  <path d="M878,210 H792"/><path d="M560,210 H504"/><path d="M290,210 H234"/>
+ </g>
+ <rect x="20" y="35" width="150" height="70" rx="14" fill="#E9E9E4"/><text x="95" y="66" text-anchor="middle" font-weight="800">1 · Buyer</text><text x="95" y="85" text-anchor="middle" fill="#55616C">pastes a project</text>
+ <rect x="212" y="35" width="180" height="70" rx="14" fill="#FF5B14"/><text x="302" y="66" text-anchor="middle" font-weight="800" fill="#111">2 · Desk review</text><text x="302" y="85" text-anchor="middle" fill="#111">LLM reads the developer's site</text>
+ <rect x="434" y="35" width="180" height="70" rx="14" fill="#FF5B14"/><text x="524" y="66" text-anchor="middle" font-weight="800" fill="#111">3 · Copilot</text><text x="524" y="85" text-anchor="middle" fill="#111">cross-checks the documents</text>
+ <rect x="656" y="35" width="180" height="70" rx="14" fill="#E9E9E4"/><text x="746" y="66" text-anchor="middle" font-weight="800">4 · Local agent</text><text x="746" y="85" text-anchor="middle" fill="#55616C">land office + site visit</text>
+ <rect x="878" y="35" width="180" height="70" rx="14" fill="#17212B"/><text x="968" y="66" text-anchor="middle" font-weight="800" fill="#fff">5 · Field app</text><text x="968" y="85" text-anchor="middle" fill="#C9D0D6">GPS + SHA-256 per photo</text>
+ <rect x="878" y="172" width="180" height="76" rx="14" fill="#17212B"/><text x="968" y="203" text-anchor="middle" font-weight="800" fill="#fff">6 · Bitcoin timestamp</text><text x="968" y="222" text-anchor="middle" fill="#C9D0D6">OpenTimestamps proof</text>
+ <rect x="560" y="160" width="232" height="100" rx="14" fill="#FF5B14"/><text x="676" y="190" text-anchor="middle" font-weight="800" fill="#111">7 · Automated cross-checks</text><text x="676" y="210" text-anchor="middle" fill="#111">plan vs reality (vision)</text><text x="676" y="228" text-anchor="middle" fill="#111">satellite watch (Sentinel-2)</text><text x="676" y="246" text-anchor="middle" fill="#111">claims history (crawler)</text>
+ <rect x="290" y="172" width="214" height="76" rx="14" fill="#E9E9E4"/><text x="397" y="203" text-anchor="middle" font-weight="800">8 · Senior review</text><text x="397" y="222" text-anchor="middle" fill="#55616C">corrections train the copilot</text>
+ <rect x="20" y="172" width="214" height="76" rx="14" fill="#0B7A55"/><text x="127" y="203" text-anchor="middle" font-weight="800" fill="#fff">9 · Buyer decision</text><text x="127" y="222" text-anchor="middle" fill="#DDEFE7">no red flags · hold · don't pay yet</text>
+</svg></div></div></section><section class="sec"><div class="wrap"><h2>What runs today, and what's next</h2>
   <p class="lead">We label everything honestly: <b>live</b> is in production, <b>beta</b> works but is still being tuned with reviewers, <b>building</b> is in development now, <b>next</b> is planned.</p>
   <div class="t20-grid"><div class="t20-c"><span class="t20-pill live">Live</span><h3>Desk review of any project website</h3><p>Reads the developer&#x27;s own pages and extracts every promise, missing permit and question to ask. About 60 seconds.</p><a href="/check#analyze">See it →</a></div><div class="t20-c"><span class="t20-pill live">Live</span><h3>Agent copilot</h3><p>Cross-reads land certificate, brochure, contract and permit, quotes the contradictions and decides: go, hold, or stop and escalate.</p><a href="/copilot">See it →</a></div><div class="t20-c"><span class="t20-pill live">Live</span><h3>GPS-stamped field app</h3><p>Every photo is stamped with GPS, accuracy and time on the agent&#x27;s phone and fingerprinted with SHA-256 before upload.</p><a href="/agents/visit">See it →</a></div><div class="t20-c"><span class="t20-pill live">New · live</span><h3>Public timestamping of evidence</h3><p>Each fingerprint is submitted to independent OpenTimestamps calendars and anchored in the Bitcoin blockchain. Anyone can prove a photo existed on that date and hasn&#x27;t changed, without trusting us.</p><a href="#verify">See it →</a></div><div class="t20-c"><span class="t20-pill beta">New · beta</span><h3>Plan vs reality</h3><p>Computer vision compares the agent&#x27;s site photos with what was sold and what has been paid: share actually built, elements that differ, and photos to retake.</p><a href="#progress">See it →</a></div><div class="t20-c"><span class="t20-pill live">Live</span><h3>Weekly claims crawler</h3><p>122 off-plan projects in 9 markets re-read every week. Every change in a developer&#x27;s promises is logged.</p><a href="/research#markets">See it →</a></div><div class="t20-c"><span class="t20-pill live">Live</span><h3>Automated agent onboarding</h3><p>Application, academy, auto-graded exam, GPS-stamped test visit and review queue, with no human in the loop until review.</p><a href="/agents/apply">See it →</a></div><div class="t20-c"><span class="t20-pill build">Building</span><h3>Agent quality scores</h3><p>Every senior-review correction is stored against the agent and the copilot rule that missed it. Scores decide who still needs review, and the corrections become test cases for the copilot.</p></div><div class="t20-c"><span class="t20-pill live">New · live</span><h3>Satellite watch</h3><p>Cloud-free Sentinel-2 composites, refreshed weekly, showing where land has been cleared and built since 2023. Development areas in Bali today; each client&#x27;s plot is added with the buyer&#x27;s consent.</p><a href="#satellite">See it →</a></div><div class="t20-c"><span class="t20-pill build">Building</span><h3>Developer risk graph</h3><p>Companies, directors, domains and projects linked across markets, so a developer behind stalled projects is visible before you sign.</p></div><div class="t20-c"><span class="t20-pill next">Next</span><h3>Official land-registry checks</h3><p>Matching the certificate&#x27;s parcel number and area against the government land map. Today our agents check it by hand on every case; we are working towards official data access.</p></div><div class="t20-c"><span class="t20-pill next">Next</span><h3>Content credentials on capture</h3><p>C2PA signatures from the agent&#x27;s device, so a photo carries its own tamper-evident history from the moment it is taken.</p></div><div class="t20-c"><span class="t20-pill next">Next</span><h3>Trust API</h3><p>The same verified evidence for banks, insurers and property portals that need to know a project is real.</p></div></div></div></section><section class="sec" id="progress"><div class="wrap">
   <div class="cp-head"><p class="eyebrow">Live demo · beta · runs our real model</p><h2>Plan vs reality: is the building where the invoice says it is?</h2>
@@ -120,6 +144,8 @@
         <li><a href="/copilot">Agent copilot</a></li>
         <li><a href="/technology">Technology</a></li>
         <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/status">System status</a></li>
+        <li><a href="/docs/api">Open data and API</a></li>
         <li><a href="/research">Research agent</a></li>
         <li><a href="/independence">Independence</a></li>
         <li><a href="/glossary">Glossary</a></li>
@@ -157,7 +183,7 @@
     function thumbs(){ $('pgth').innerHTML = photos.map(function(p){ return '<img src="' + p + '" alt="">'; }).join(''); $('pgplt').innerHTML = plan ? '<img src="' + plan + '" alt="">' : ''; btn.disabled = !photos.length; }
     $('pgph').onchange = function(){ var fs = [].slice.call(this.files, 0, 4); Promise.all(fs.map(function(f){ return fileUrl(f).then(function(u){ return resize(u, 1024); }); })).then(function(a){ photos = a; thumbs(); }); };
     $('pgpl').onchange = function(){ var f = this.files[0]; if (!f) return; fileUrl(f).then(function(u){ return resize(u, 1024); }).then(function(a){ plan = a; thumbs(); }); };
-    $('pgsample').onclick = function(){ Promise.all(['idconstr','mxconstr','obranegra'].map(function(k){ return resize('/k/cases/' + k + '.jpg', 1024); })).then(function(a){ photos = a; plan = null; thumbs(); if (window.kbEvent) kbEvent('progress_sample'); }); };
+    $('pgsample').onclick = function(){ if (!window.__pgx) { window.__pgx = 1; fetch('/data/progress-sample.json').then(function(r){ return r.json(); }).then(function(d){ if (d && d.progress && !out.querySelector('.cp-status')) { window.__pgshow && window.__pgshow(d, true); } }); } Promise.all(['idconstr','mxconstr','obranegra'].map(function(k){ return resize('/k/cases/' + k + '.jpg', 1024); })).then(function(a){ photos = a; plan = null; thumbs(); if (window.kbEvent) kbEvent('progress_sample'); }); };
     var SIG = { consistent:['Payments consistent with works','go'], ahead_of_works:['Paid ahead of the works','stop'], cannot_tell:['Cannot tell from these photos','hold'] };
     var ST = { matches:'✓', differs:'≠', missing:'✗', 'not visible':'?' };
     pf.addEventListener('submit', function(e){
@@ -165,8 +191,10 @@
       out.innerHTML = '<div class="cp-load"><i></i><i></i><i></i><p>Comparing ' + photos.length + ' photo' + (photos.length > 1 ? 's' : '') + ' with the claim…</p></div>';
       if (window.kbEvent) kbEvent('progress_run');
       fetch('/api/kb/progress', { method:'POST', headers:{ 'content-type':'application/json' }, body: JSON.stringify({ photos: photos, plan: plan, claim: $('pgcl').value, paid_pct: $('pgpaid').value, company: pf.company.value }) })
-        .then(function(r){ return r.json(); }).then(function(d){
-          btn.disabled = false; btn.textContent = 'Check the photos';
+        .then(function(r){ return r.json(); }).then(function(d){ window.__pgshow(d); }).catch(function(){ btn.disabled = false; btn.textContent = 'Check the photos'; err.textContent = 'Network error. Try again.'; });
+    });
+    window.__pgshow = function(d, example){
+          btn.disabled = !photos.length; btn.textContent = 'Check the photos';
           if (!d.progress) { out.innerHTML = ''; err.textContent = d.error === 'rate' ? 'You have run several checks this hour. Try again later.' : 'The check could not run right now. Try again in a minute.'; return; }
           var p = d.progress, s = SIG[p.pay_signal] || SIG.cannot_tell, paid = d.paid_pct || 0, built = Math.max(0, Math.min(100, +p.built_pct || 0));
           out.innerHTML = '<div class="cp-status ' + s[1] + '"><span>Signal before paying</span><b>' + s[0] + '</b><p>' + esc(p.summary) + '</p></div>' +
@@ -176,8 +204,8 @@
             ((p.discrepancies || []).length ? '<h3>Raise with the developer</h3><ol>' + p.discrepancies.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>' : '') +
             ((p.retake || []).length ? '<h3>Photos the agent should take next</h3><ol>' + p.retake.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>' : '') +
             '<p class="muted" style="font-size:.8rem;margin-top:12px">A model estimate from photos, not a survey. In a Kolaboro check it guides the agent on site and a senior reviewer signs off.</p>';
-        }).catch(function(){ btn.disabled = false; btn.textContent = 'Check the photos'; err.textContent = 'Network error. Try again.'; });
-    });
+          if (example) out.insertAdjacentHTML('afterbegin', '<span class="pg-ex">Example result from ' + String(d.analysed).slice(0,10) + '. Press "Check the photos" to run it live.</span>');
+    };
   }
 
   // ---- verify evidence ----
@@ -186,7 +214,7 @@
     function show(h, d, canStamp){
       if (d && d.stamp) {
         var st = d.stamp, when = new Date(st.created_at), url = 'data:application/octet-stream;base64,' + st.ots;
-        vo.innerHTML = '<div class="vf-ok"><b>✓ Timestamped ' + when.toUTCString().replace(' GMT',' UTC') + '</b><p>Fingerprint <code>' + h.slice(0,16) + '…' + h.slice(-8) + '</code> was submitted to ' + (st.calendars || []).length + ' independent calendars and is anchored, or being anchored, in Bitcoin.</p><div class="row"><a class="btn btn-hi" download="' + h.slice(0,12) + '.ots" href="' + url + '">Download the proof (.ots)</a><a class="btn btn-line" href="https://opentimestamps.org" target="_blank" rel="noopener">Verify it on opentimestamps.org</a></div></div>';
+        vo.innerHTML = '<div class="vf-ok"><b>✓ Timestamped ' + when.toUTCString().replace(' GMT',' UTC') + '</b><p>Fingerprint <code>' + h.slice(0,16) + '…' + h.slice(-8) + '</code> was submitted to ' + (st.calendars || []).length + ' independent calendars' + (st.bitcoin_block ? ' and <b>confirmed in Bitcoin block <a href="https://mempool.space/block/' + st.bitcoin_block + '" target="_blank" rel="noopener">#' + st.bitcoin_block.toLocaleString('en') + '</a></b>. Nobody can change or backdate it now.' : '; Bitcoin confirmation usually follows within a few hours.') + '</p><div class="row"><a class="btn btn-hi" download="' + h.slice(0,12) + '.ots" href="' + url + '">Download the proof (.ots)</a><a class="btn btn-line" href="https://opentimestamps.org" target="_blank" rel="noopener">Verify it on opentimestamps.org</a></div></div>';
       } else {
         vo.innerHTML = '<div class="vf-no"><b>No timestamp for this fingerprint</b><p>It isn\'t a file from a Kolaboro report, or it was changed. Even one pixel gives a completely different fingerprint.</p>' + (canStamp ? '<button class="btn btn-line" type="button" id="vfstamp">Timestamp this file now</button>' : '') + '</div>';
         var sb = $('vfstamp'); if (sb) sb.onclick = function(){ sb.disabled = true; sb.textContent = 'Submitting to calendars…'; fetch('/api/kb/stamp', { method:'POST', headers:{ 'content-type':'application/json' }, body: JSON.stringify({ hash: h, source: 'verify-page' }) }).then(function(r){ return r.json(); }).then(function(d2){ if (window.kbEvent) kbEvent('stamp_new'); show(h, d2, false); }).catch(function(){ sb.textContent = 'Try again'; sb.disabled = false; }); };
@@ -245,6 +273,16 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+  var box = document.getElementById('r21cnt'); if (!box) return;
+  function set(k, v){ var e = box.querySelector('[data-k="' + k + '"]'); if (e && v != null) e.textContent = v; }
+  fetch('/data/world-claims.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(w){ if (!w || !w.markets) return; var n = 0; Object.keys(w.markets).forEach(function(k){ n += w.markets[k].projects || 0; }); set('projects', n); set('markets', Object.keys(w.markets).length); }).catch(function(){});
+  fetch('/data/satellite.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(s){ if (s && s.sites) set('sat', s.sites.length); }).catch(function(){});
+  fetch('/api/kb/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (!d) return; set('stamps', d.stamps); var r7 = d.runs_7d || {}, t = 0; ['analyze','copilot','progress'].forEach(function(k){ t += r7[k] || 0; }); set('runs', t);
+    if (d.last_block) { var s = box.querySelector('[data-k="stamps"]').nextElementSibling; s.textContent = 'evidence fingerprints timestamped · latest in Bitcoin block #' + d.last_block.toLocaleString('en'); } }).catch(function(){});
 })();
 </script>
 </body>
