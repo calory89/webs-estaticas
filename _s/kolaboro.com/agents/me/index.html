@@ -68,7 +68,7 @@ function kbResize(file, max, q){ return new Promise(function(res, rej){ var r = 
       x.fillStyle = 'rgba(23,33,43,.78)'; x.fillRect(0, c.height - 46, c.width, 46); x.fillStyle = '#fff'; x.font = 'bold 18px sans-serif'; x.fillText('KOLABORO · ' + gps + ' · ' + at, 12, c.height - 17);
       var img = c.toDataURL('image/jpeg', .72);
       return crypto.subtle.digest('SHA-256', new TextEncoder().encode(img)).then(function(hb){ var hx = [].map.call(new Uint8Array(hb), function(b){ return b.toString(16).padStart(2,'0'); }).join('');
-        shots[k] = { img: img, label: labels[k], gps: gps, at: at, sha256: hx, acc: p ? Math.round(p.accuracy) : null };
+        shots[k] = { img: img, label: labels[k], gps: gps, at: at, sha256: hx, acc: p ? Math.round(p.accuracy) : null }; fetch('/api/kb/stamp', { method:'POST', headers:{ 'content-type':'application/json' }, body: JSON.stringify({ hash: hx, source: 'agent-test-visit' }) }).catch(function(){});
         var im = inp.parentNode.querySelector('img'); im.src = img; im.hidden = false; inp.parentNode.classList.add('done');
         $('tsend').disabled = shots.filter(Boolean).length < 3; });
     }); }); }; });

@@ -113,7 +113,7 @@ export default {
       return Response.redirect(new URL(u.pathname.replace(/\/+$/, '') + u.search, u).toString(), 301);
     }
     let r = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + u.search, u), req));
-    if ((host === 'realhunt.co' || host === 'thecigaretteindex.com') && r.status >= 300 && r.status < 400) {
+    if (host === 'realhunt.co' && r.status >= 300 && r.status < 400) {
       const l = new URL(r.headers.get('location') || '', u);
       if (l.pathname === pre + u.pathname + '/') {
         const d = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + '/' + u.search, u), req));

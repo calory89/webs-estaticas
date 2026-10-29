@@ -140,8 +140,120 @@ async function copilot(req, env, ctx) {
 async function sha(t) { const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)); return [...new Uint8Array(h)].map(x => x.toString(16).padStart(2, '0')).join(''); }
 
 export async function api(req, u, env, ctx) {
+  if (u.pathname === '/api/kb/progress' && req.method === 'POST') return progress(req, env, ctx);
+  if (u.pathname === '/api/kb/stamp' && (req.method === 'POST' || req.method === 'GET')) return stamp(req, env, ctx);
   if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return copilot(req, env, ctx);
   if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return analyze(req, env, ctx);
   if (u.pathname === '/api/kb/health') return json({ ok: true, configured: !!env.ANTHROPIC_API_KEY });
   return json({ error: 'not_found' }, 404);
+}
+
+// ---------- Plan vs reality: vision check of site photos against what was sold ----------
+const PROGRESS_PROMPT = `You are the Kolaboro progress checker. A local agent photographed an off-plan construction site before the buyer pays the next instalment. You get the site photos, optionally a render or plan from the developer's brochure, and what the developer claims about the current stage.
+Judge ONLY what is visible. Never guess about things you cannot see; say so instead.
+Reply with ONLY one JSON object:
+{
+ "observed_stage": "land clearing"|"foundations"|"structure"|"roof"|"walls and openings"|"finishes"|"complete"|"unclear",
+ "built_pct": integer 0-100 (your estimate of physical completion of the whole building from the photos),
+ "confidence": "low"|"medium"|"high",
+ "elements": [{"item": string, "expected": string, "observed": string, "status": "matches"|"differs"|"missing"|"not visible"}],
+ "discrepancies": [up to 5 concrete differences between what is sold or claimed and what is visible],
+ "pay_signal": "consistent"|"ahead_of_works"|"cannot_tell",
+ "retake": [up to 4 specific photos the agent should take to raise confidence, each naming angle and subject],
+ "summary": "two sentences for the buyer"
+}
+pay_signal compares the share already paid (if given) to built_pct: "ahead_of_works" when payments exceed visible works by more than 15 points. Keep strings under 25 words.`;
+
+async function claudeVision(env, content) {
+  let last = '';
+  for (const model of ['claude-sonnet-5-5', 'claude-haiku-5-5']) {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model, max_tokens: 2500, messages: [{ role: 'user', content }] })
+    });
+    if (r.status === 404 || (r.status === 400 && !last)) { last = model + ' ' + r.status + ' ' + (await r.text()).slice(0, 200); continue; }
+    if (!r.ok) throw new Error('model ' + r.status + ' ' + (await r.text()).slice(0, 160));
+    const d = await r.json();
+    const t = (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+    const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
+    return JSON.parse(m[0]);
+  }
+  throw new Error(last || 'no model');
+}
+
+async function progress(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  const raw = await req.text();
+  if (raw.length > 4500000) return json({ error: 'too_big' }, 413);
+  let b; try { b = JSON.parse(raw); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  if (b.company) return json({ error: 'bad_request' }, 400);
+  const img = x => { const m = /^data:(image\/(jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/.exec(String(x || '')); return m ? { type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } } : null; };
+  const photos = (Array.isArray(b.photos) ? b.photos : []).slice(0, 4).map(img).filter(Boolean);
+  if (!photos.length) return json({ error: 'photos' }, 400);
+  const plan = img(b.plan);
+  const claim = String(b.claim || '').slice(0, 1500), paid = Math.max(0, Math.min(100, parseInt(b.paid_pct, 10) || 0));
+  const key = await sha(JSON.stringify([b.photos, b.plan || '', claim, paid]));
+  const ck = new Request('https://kolaboro.com/__kb_prog/' + key);
+  const hit = await caches.default.match(ck);
+  if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
+  if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
+  const content = [];
+  photos.forEach((p, i) => { content.push({ type: 'text', text: 'Site photo ' + (i + 1) + ':' }); content.push(p); });
+  if (plan) { content.push({ type: 'text', text: 'Render or plan from the developer brochure:' }); content.push(plan); }
+  content.push({ type: 'text', text: PROGRESS_PROMPT + '\n\nDeveloper claim about this stage: ' + (claim || 'not given') + '\nShare of the price already paid by the buyer: ' + (paid ? paid + '%' : 'not given') });
+  let out;
+  try { out = await claudeVision(env, content); }
+  catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
+  const res = { analysed: new Date().toISOString(), photos: photos.length, plan: !!plan, paid_pct: paid || null, progress: out };
+  ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
+  return json({ ...res, cached: false });
+}
+
+// ---------- Public timestamping of evidence fingerprints (OpenTimestamps, anchored in Bitcoin) ----------
+const SB_RPC = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/';
+const SB_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+const CALENDARS = ['https://a.pool.opentimestamps.org', 'https://b.pool.opentimestamps.org', 'https://a.pool.eternitywall.com'];
+const OTS_MAGIC = [0x00, 0x4f, 0x70, 0x65, 0x6e, 0x54, 0x69, 0x6d, 0x65, 0x73, 0x74, 0x61, 0x6d, 0x70, 0x73, 0x00, 0x00, 0x50, 0x72, 0x6f, 0x6f, 0x66, 0x00, 0xbf, 0x89, 0xe2, 0xe8, 0x84, 0xe8, 0x92, 0x94];
+
+async function rpc(fn, args) {
+  const r = await fetch(SB_RPC + fn, { method: 'POST', headers: { apikey: SB_ANON, authorization: 'Bearer ' + SB_ANON, 'content-type': 'application/json' }, body: JSON.stringify(args) });
+  if (!r.ok) throw new Error('db ' + r.status);
+  return r.json();
+}
+function hexBytes(h) { const a = new Uint8Array(h.length / 2); for (let i = 0; i < a.length; i++) a[i] = parseInt(h.substr(i * 2, 2), 16); return a; }
+function b64(u8) { let s = ''; for (let i = 0; i < u8.length; i += 8192) s += String.fromCharCode.apply(null, u8.subarray(i, i + 8192)); return btoa(s); }
+
+async function stamp(req, env, ctx) {
+  const u = new URL(req.url);
+  if (req.method === 'GET') {
+    const h = String(u.searchParams.get('hash') || '').toLowerCase();
+    if (!/^[0-9a-f]{64}$/.test(h)) return json({ error: 'hash' }, 400);
+    try { const d = await rpc('kolaboro_stamp_get', { p_hash: h }); return json({ found: !!d, stamp: d || null }); }
+    catch (e) { return json({ error: 'db' }, 503); }
+  }
+  let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  const h = String(b.hash || '').toLowerCase();
+  if (!/^[0-9a-f]{64}$/.test(h)) return json({ error: 'hash' }, 400);
+  try { const d = await rpc('kolaboro_stamp_get', { p_hash: h }); if (d) return json({ stamp: d, existing: true }); } catch (e) {}
+  const ip = req.headers.get('cf-connecting-ip') || 'x', hour = new Date().toISOString().slice(0, 13);
+  const rk = new Request('https://kolaboro.com/__rls/' + encodeURIComponent(ip) + '/' + hour); const rh = await caches.default.match(rk);
+  const n = rh ? (+(await rh.text()) || 0) : 0; if (n >= 60) return json({ error: 'rate' }, 429);
+  ctx.waitUntil(caches.default.put(rk, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3600' } })));
+  const digest = hexBytes(h);
+  const res = await Promise.all(CALENDARS.map(async c => {
+    try {
+      const r = await fetch(c + '/digest', { method: 'POST', headers: { accept: 'application/vnd.opentimestamps.v1', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'kolaboro-stamper/1.0' }, body: digest });
+      if (!r.ok) return null; const a = new Uint8Array(await r.arrayBuffer()); return a.length > 0 && a.length < 10000 ? { c, a } : null;
+    } catch (e) { return null; }
+  }));
+  const ok = res.filter(Boolean);
+  if (!ok.length) return json({ error: 'calendars' }, 503);
+  const parts = [...OTS_MAGIC, 0x01, 0x08, ...digest];
+  ok.forEach((x, i) => { if (i < ok.length - 1) parts.push(0xff); parts.push(...x.a); });
+  const ots = b64(new Uint8Array(parts));
+  try {
+    const d = await rpc('kolaboro_stamp_put', { p_hash: h, p_ots: ots, p_calendars: ok.map(x => x.c), p_source: String(b.source || 'web').slice(0, 40) });
+    return json({ stamp: d, existing: false });
+  } catch (e) { return json({ stamp: { hash: h, ots, calendars: ok.map(x => x.c), created_at: new Date().toISOString() }, stored: false }); }
 }

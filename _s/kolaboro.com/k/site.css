@@ -807,3 +807,23 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 @media (max-width:980px){.rp-head,.rp-visit{grid-template-columns:1fr}.rp-photos{grid-template-columns:1fr 1fr}.rp-flags{grid-template-columns:1fr 1fr}.rp-pays,.rp-sign{grid-template-columns:1fr}.rk summary{grid-template-columns:28px 1fr 70px}.rk-bar,.rk-sc{display:none}.rk-body{padding-left:16px}}
 @media (max-width:560px){.rp-verdict{padding-right:22px}.rp-t th,.rp-t td{padding:8px 6px;font-size:.85rem}.rp-mstat{grid-template-columns:1fr}.rp-photos{grid-template-columns:1fr}.rp-gauge{position:static;margin-top:12px}}
 @media print{.rp-nav,.rp-banner,.hero-cta{display:none}}
+
+.t20-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.t20-c{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.t20-c h3{margin:0;font-size:1.05rem}.t20-c p{margin:0;color:var(--muted);font-size:.92rem}.t20-c a{font-weight:700;font-size:.88rem;margin-top:auto}
+.t20-pill{align-self:flex-start;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:3px 9px}
+.t20-pill.live{background:#DDEFE7;color:#0B5A40}.t20-pill.beta{background:#FFE7D6;color:#9A3A00}.t20-pill.build{background:#E3E8FF;color:#2A3A8F}.t20-pill.next{background:#EEE;color:#555}
+.t20-moat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}.t20-moat div{background:var(--ink);color:#fff;border-radius:18px;padding:18px}.t20-moat b{display:block;margin-bottom:6px}.t20-moat span{color:#C9D0D6;font-size:.9rem}
+.pg-drop{border:2px dashed var(--line);border-radius:16px;padding:12px;margin-bottom:12px;background:#fff}.pg-drop label{display:block;cursor:pointer}.pg-drop b{display:block}.pg-drop span{color:var(--muted);font-size:.85rem}.pg-drop input{margin-top:8px;max-width:100%}
+.pg-thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.pg-thumbs img{width:76px;height:76px;object-fit:cover;border-radius:10px}
+.pg-l{display:block;margin-bottom:12px}.pg-l span{display:block;font-weight:800;font-size:.85rem;margin-bottom:6px}.pg-l textarea{width:100%;font:inherit;font-size:.92rem;border:2px solid var(--line);border-radius:14px;padding:12px;background:#fff}
+.pg-paid input{width:90px;font:inherit;border:2px solid var(--line);border-radius:12px;padding:8px;background:#fff}
+.pg-bars{display:grid;gap:8px;margin:14px 0 6px}.pg-bars div{display:grid;grid-template-columns:90px 1fr 48px;gap:10px;align-items:center;font-size:.9rem}.pg-bars i{display:block;height:12px;border-radius:6px;background:#2B3743;overflow:hidden}.pg-bars em{display:block;height:100%;background:#FF5B14}.pg-bars em.b{background:#2FB27E}
+.pg-el{display:grid;gap:6px}.pg-el div{background:#22303C;border-radius:12px;padding:8px 10px;border-left:4px solid #8D9BA7}.pg-el .matches{border-color:#2FB27E}.pg-el .differs,.pg-el .missing{border-color:#FF5B14}.pg-el small{display:block;color:#AEB9C2;margin-top:2px}
+.vf-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;margin-top:22px;max-width:860px}
+.vf-drop{display:block;border:2px dashed var(--line);border-radius:18px;padding:26px;text-align:center;cursor:pointer;margin-bottom:12px}.vf-drop.on{border-color:var(--hivis);background:#FFF6EF}.vf-drop input{display:none}.vf-drop b{display:block;font-size:1.1rem}.vf-drop span{color:var(--muted)}
+.vf-box .row{display:flex;gap:10px;flex-wrap:wrap}.vf-box #vfhash{flex:1;min-width:220px;font:inherit;font-family:ui-monospace,monospace;font-size:.85rem;border:2px solid var(--line);border-radius:14px;padding:10px}
+.vf-out{margin-top:14px}.vf-ok,.vf-no{border-radius:16px;padding:14px 16px}.vf-ok{background:#DDEFE7}.vf-no{background:#FDECEA}.vf-ok p,.vf-no p{margin:6px 0 10px}.vf-out .cp-load p{color:var(--ink)}
+.rp-anch{display:block;font-size:.72rem;margin-top:4px;color:#0B5A40;font-weight:700}
+@media (max-width:900px){.t20-grid{grid-template-columns:1fr 1fr}.t20-moat{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.t20-grid,.t20-moat{grid-template-columns:1fr}}
