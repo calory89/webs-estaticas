@@ -50,6 +50,14 @@ async function snFinish(req, u, r, env) {
     return g.status === 200 ? g : r;
   }
   if (!get || r.status !== 200) return r;
+  // supportnear-only (R21, 29-oct-2026): no se puede meter la web dentro de otra (clickjacking),
+  // salvo el mapa incrustable (?embed=1); y el navegador solo deja pedir ubicacion y micro.
+  if ((r.headers.get('content-type') || '').includes('text/html')) {
+    const hh = new Headers(r.headers);
+    if (!u.searchParams.has('embed')) { hh.set('x-frame-options', 'SAMEORIGIN'); hh.set('content-security-policy', "frame-ancestors 'self'"); }
+    hh.set('permissions-policy', 'geolocation=(self), microphone=(self), camera=(), payment=(), usb=(), browsing-topics=()');
+    return new Response(r.body, { status: r.status, statusText: r.statusText, headers: hh });
+  }
   const v = u.searchParams.has('v');
   let cc = null;
   if (/^\/[dl]\/[^/]+\.json$/.test(p)) cc = v ? SN_IMM : 'public, max-age=3600';
