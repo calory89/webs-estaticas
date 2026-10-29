@@ -1,0 +1,29 @@
+name: Kolaboro Bitcoin proof upgrades
+# Every 3 hours: completes pending OpenTimestamps proofs once Bitcoin has confirmed them and records the block height.
+on:
+  schedule:
+    - cron: '23 */3 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/ots_upgrade.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: kolaboro-ots
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Upgrade proofs
+        env:
+          KB_STAMP_UPGRADE_KEY: ${{ secrets.KB_STAMP_UPGRADE_KEY }}
+        run: |
+          pip install -q opentimestamps-client
+          python3 tools/kolaboro-agent/ots_upgrade.py
