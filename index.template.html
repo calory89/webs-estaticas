@@ -16177,7 +16177,9 @@ function buildPriv(){
      +'</div>'
     +'<p style="margin-bottom:14px">'+esc(t('hero.lede'))+'</p>'
     +'<button class="btn btn--primary btn--block" id="shareApp" style="margin-bottom:18px">'+esc(t('share.btn'))+'</button>'
-    +t('priv.1')+t('priv.2')+t('priv.3')
+    +t('priv.1')+t('priv.2')
+    +'<button type="button" class="btn btn--ghost btn--block" data-sn-cookies style="margin:-2px 0 14px" hidden></button>'
+    +t('priv.3')
     +'<h3 style="margin:22px 0 10px;font-size:17px;color:var(--ink)">'+esc(t('orgs.kicker'))+'</h3>'
     +'<p>'+esc(t('orgs.p2'))+'</p>'
     +'<div class="actions" style="margin-top:16px">'
@@ -16197,6 +16199,8 @@ function buildPriv(){
       +'<a class="btn btn--ghost" href="'+pg('instalar.html')+'">'+esc(t('off.how'))+'</a>'
     +'</div>'
     +'<p style="font-size:12.5px;color:var(--ink-3);margin-top:18px">'+esc(t('foot.osm'))+'</p>';
+  // R21: el boton «Configurar cookies» lo rellena y enlaza el script de medicion
+  { const ck=$('#privBody [data-sn-cookies]'); if(ck && window.snBind){ ck.hidden=false; snBind(); } }
   const sa=$('#shareApp'); if(sa) sa.onclick=async()=>{
     tally('share','app');
     const txt=t('share.text',{c:STATS.cities,n:STATS.places.toLocaleString(LANG)});

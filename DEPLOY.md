@@ -148,3 +148,17 @@ con el padre actual y `update ref` sin force. Cloudflare Pages despliega solo (~
 - En móvil la atribución del mapa ya no ocupa dos líneas (sin el prefijo de Leaflet).
 - Imágenes sociales nuevas (cifra nueva, sin la pastilla de Ropa): `social/make_social.py`
   con `SN_BASE=http://127.0.0.1:8952/` para fotografiar el mapa desde el build local.
+
+## Ronda 21 (29-oct-2026)
+- **Aviso de cookies** (en `analytics_snip.py`, mismo `<script>` de medición): en Europa (zona
+  horaria Europe/*, Canarias, Azores, Madeira, Islandia, Feroe o desconocida) GA4 no se carga
+  hasta «Aceptar»; con «Rechazar» nunca, y se borran las cookies `_ga` si se retira el permiso.
+  Fuera de Europa se carga sin preguntar. Elección en localStorage `sn.ck`. Clarity va siempre
+  sin cookies propias y con el texto oculto. El aviso va por debajo de los cuadros de la app
+  (z-index 1900) salvo cuando se abre desde «Configurar cookies» (2600). Textos en 20 idiomas.
+  Botón «Configurar cookies»: cualquier elemento `data-sn-cookies` (en /about y en «Lo que
+  sabemos de ti»).
+- **Cabeceras de seguridad** en el worker de `pub/_wp` (`snFinish`, solo supportnear.com, HTML):
+  `X-Frame-Options: SAMEORIGIN` y `Content-Security-Policy: frame-ancestors 'self'` salvo con
+  `?embed=1` (el mapa incrustable), y `Permissions-Policy` (ubicación y micro solo la propia web).
+  Copia del worker en `worker/pub_wp_worker_index.js`.
