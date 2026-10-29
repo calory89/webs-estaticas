@@ -1,0 +1,178 @@
+{
+ "updated": "2026-10-29",
+ "source": "Copernicus Sentinel-2 L2A, Copernicus Data Space Ecosystem",
+ "processing_units": 167.7,
+ "sites": [
+  {
+   "id": "bali-seseh",
+   "kind": "area",
+   "label": "Seseh coast, Bali",
+   "lat": -8.638,
+   "lng": 115.115,
+   "box_km": 1.1,
+   "periods": [
+    {
+     "label": "2023 dry season",
+     "key": "dry2023",
+     "from": "2023-04-01",
+     "to": "2023-09-30",
+     "vegetation_pct": 74.9,
+     "clear_pct": 100
+    },
+    {
+     "label": "2024 dry season",
+     "key": "dry2024",
+     "from": "2024-04-01",
+     "to": "2024-09-30",
+     "vegetation_pct": 70.2,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 8.8,
+     "changed_since_previous_pct": 13.7
+    },
+    {
+     "label": "2025 dry season",
+     "key": "dry2025",
+     "from": "2025-04-01",
+     "to": "2025-09-30",
+     "vegetation_pct": 57.1,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 15.8,
+     "changed_since_previous_pct": 11.1
+    },
+    {
+     "label": "2026 dry season",
+     "key": "dry2026",
+     "from": "2026-04-01",
+     "to": "2026-09-30",
+     "vegetation_pct": 63.4,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 14.6,
+     "changed_since_previous_pct": 8.3
+    },
+    {
+     "label": "Last 120 days",
+     "key": "latest",
+     "from": "2026-07-01",
+     "to": "2026-10-29",
+     "vegetation_pct": 70.7,
+     "clear_pct": 100
+    }
+   ],
+   "activity": "active"
+  },
+  {
+   "id": "bali-ungasan",
+   "kind": "area",
+   "label": "Ungasan, Bukit peninsula, Bali",
+   "lat": -8.825,
+   "lng": 115.17,
+   "box_km": 1.1,
+   "periods": [
+    {
+     "label": "2023 dry season",
+     "key": "dry2023",
+     "from": "2023-04-01",
+     "to": "2023-09-30",
+     "vegetation_pct": 56.5,
+     "clear_pct": 100
+    },
+    {
+     "label": "2024 dry season",
+     "key": "dry2024",
+     "from": "2024-04-01",
+     "to": "2024-09-30",
+     "vegetation_pct": 43.8,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 5.7,
+     "changed_since_previous_pct": 6.0
+    },
+    {
+     "label": "2025 dry season",
+     "key": "dry2025",
+     "from": "2025-04-01",
+     "to": "2025-09-30",
+     "vegetation_pct": 57.1,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 6.4,
+     "changed_since_previous_pct": 13.8
+    },
+    {
+     "label": "2026 dry season",
+     "key": "dry2026",
+     "from": "2026-04-01",
+     "to": "2026-09-30",
+     "vegetation_pct": 39.8,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 12.7,
+     "changed_since_previous_pct": 17.1
+    },
+    {
+     "label": "Last 120 days",
+     "key": "latest",
+     "from": "2026-07-01",
+     "to": "2026-10-29",
+     "vegetation_pct": 13.9,
+     "clear_pct": 100
+    }
+   ],
+   "activity": "active"
+  },
+  {
+   "id": "bali-pererenan",
+   "kind": "area",
+   "label": "Pererenan, Bali",
+   "lat": -8.6416,
+   "lng": 115.1286,
+   "box_km": 1.1,
+   "periods": [
+    {
+     "label": "2023 dry season",
+     "key": "dry2023",
+     "from": "2023-04-01",
+     "to": "2023-09-30",
+     "vegetation_pct": 52.9,
+     "clear_pct": 100
+    },
+    {
+     "label": "2024 dry season",
+     "key": "dry2024",
+     "from": "2024-04-01",
+     "to": "2024-09-30",
+     "vegetation_pct": 50.8,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 6.7,
+     "changed_since_previous_pct": 8.3
+    },
+    {
+     "label": "2025 dry season",
+     "key": "dry2025",
+     "from": "2025-04-01",
+     "to": "2025-09-30",
+     "vegetation_pct": 56.1,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 6.5,
+     "changed_since_previous_pct": 5.2
+    },
+    {
+     "label": "2026 dry season",
+     "key": "dry2026",
+     "from": "2026-04-01",
+     "to": "2026-09-30",
+     "vegetation_pct": 47.4,
+     "clear_pct": 100,
+     "cleared_since_first_pct": 10.7,
+     "changed_since_previous_pct": 6.4
+    },
+    {
+     "label": "Last 120 days",
+     "key": "latest",
+     "from": "2026-07-01",
+     "to": "2026-10-29",
+     "vegetation_pct": 46.4,
+     "clear_pct": 100
+    }
+   ],
+   "activity": "active"
+  }
+ ]
+}
