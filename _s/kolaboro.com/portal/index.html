@@ -32,7 +32,7 @@ var KB = (function(){
   if (!TOKEN) { location.href = '/login'; return; }
   if (!KB.get('kb-token-as') && KB.get('kb-role') === 'agent') { location.href = '/agents/me'; return; }
   var $ = function(i){ return document.getElementById(i); }, esc = KB.esc;
-  function call(action, payload){ return KB.rpc('kolaboro_portal', { p_token: TOKEN, p_action: action || 'me', p_payload: payload || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; } return d; }); }
+  function call(action, payload){ if (D && D.user && D.user.demo && ['me','read','logout'].indexOf(action || 'me') < 0) { KB.toast('This is the demo account: nothing is saved. Create your own case to try it for real.'); return Promise.resolve(D); } return KB.rpc('kolaboro_portal', { p_token: TOKEN, p_action: action || 'me', p_payload: payload || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; } return d; }); }
   function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(undefined, { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
   function days(t){ return Math.ceil((new Date(t) - new Date()) / 864e5); }
   function load(action, payload){ return call(action, payload).then(function(d){ if (d.error) { KB.toast('Could not save: ' + d.error); return; } D = d; if (!CUR || !D.cases.some(function(c){ return c.id === CUR; })) CUR = D.cases[0] && D.cases[0].id; render(); }); }
@@ -41,6 +41,7 @@ var KB = (function(){
     var u = D.user, c = D.cases.filter(function(x){ return x.id === CUR; })[0];
     $('who').textContent = u.name + ' · ' + u.email;
     var h = '';
+    if (u.demo) h += '<div class="ap-banner ok" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between"><span>👋 <b>Demo account.</b> This is the real client portal with a fictional case, so you can see what a buyer sees. Nothing you type here is saved.</span><a class="btn btn-hi" href="/check#analyze" style="padding:8px 14px">Start my own case</a></div>';
     if (u.admin_view) h += '<div class="ap-banner admin">👁 Admin view: you are seeing exactly what ' + esc(u.email) + ' sees. Messages you send here appear as the Kolaboro team.</div>';
     if (q.get('welcome')) h += '<div class="ap-banner ok">✓ Your account is ready and your case is open. Add your project details below so your agent can start.</div>';
     if (u.status !== 'active') h += '<div class="ap-banner warn">⏳ We are confirming your PayPal payment. It usually takes a few hours. You can already add your project details and write to us.</div>';
@@ -111,7 +112,7 @@ var KB = (function(){
       .then(function(r){ return r.json(); }).then(function(d){ var desk = d.report ? { report: d.report, analysed: d.analysed, url: d.url } : { error: d.error || 'failed' }; return load('save_desk', { case_id: c.id, desk: desk }); })
       .catch(function(){});
   }
-  $('out').onclick = function(){ call('logout').then(function(){ KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; }); };
+  $('out').onclick = function(){ if (D && D.user && D.user.demo) { KB.del('kb-token-as'); location.href = '/'; return; } call('logout').then(function(){ KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; }); };
   $('pwb').onclick = function(){ var o = prompt('Current password'); if (!o) return; var n = prompt('New password (at least 8 characters)'); if (!n) return; call('password', { old: o, 'new': n }).then(function(d){ KB.toast(d.error ? (d.error === 'wrong' ? 'Current password is wrong' : 'Use at least 8 characters') : 'Password changed'); }); };
   function newCase(){ var u = prompt('Website of the project you want us to check'); if (!u) return; load('new_case', { project_url: u }).then(function(){ CUR = D.cases[0].id; render(); KB.toast('New case opened'); }); }
   $('newc').onclick = newCase; document.addEventListener('click', function(e){ if (e.target.id === 'nc2') newCase(); });

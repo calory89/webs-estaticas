@@ -17,7 +17,7 @@
     <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required><button type="button">Show</button></span></label>
     <button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Log in</button>
     <p class="ap-err" id="le" role="alert"></p>
-    <p class="ap-small ap-muted">Forgot your password? <a href="mailto:carlos@equinoxinvestmentgroup.com?subject=Kolaboro%20password%20reset">Email us</a> and we reset it the same day.<br>No account yet? <a href="/check#analyze">Start with a free desk review</a>.</p>
+    <p class="ap-small ap-muted">Forgot your password? <a href="mailto:support@kolaboro.com?subject=Kolaboro%20password%20reset">Email us</a> and we reset it the same day.<br>No account yet? <a href="/check#analyze">Start with a free desk review</a>.</p>
   </form>
 </div></div></div>
 <script>
@@ -41,7 +41,7 @@ var KB = (function(){
     ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
     KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){
       b.disabled = false;
-      if (d.token) { KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
+      if (d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
       e.textContent = d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : 'Wrong email or password.';
     }).catch(function(){ b.disabled = false; e.textContent = 'Network error. Try again.'; });
   });
