@@ -1,0 +1,8 @@
+{
+ "note": "Sites watched from space. 'area' = a development area, not a specific project. 'plot' = a case plot (coordinates from the agent's GPS), published only with the buyer's consent.",
+ "sites": [
+  {"id": "bali-seseh", "kind": "area", "label": "Seseh coast, Bali", "lat": -8.6380, "lng": 115.1150},
+  {"id": "bali-ungasan", "kind": "area", "label": "Ungasan, Bukit peninsula, Bali", "lat": -8.8250, "lng": 115.1700},
+  {"id": "bali-pererenan", "kind": "area", "label": "Pererenan, Bali", "lat": -8.6416, "lng": 115.1286}
+ ]
+}
