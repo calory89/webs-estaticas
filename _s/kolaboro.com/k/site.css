@@ -852,4 +852,7 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .az-done b{display:block;color:#fff;font-size:1.2rem}.az-done ol{color:#D7DDE2;margin:10px 0 14px 1.1em;padding:0;display:grid;gap:6px}.az-done .row{display:flex;gap:10px;flex-wrap:wrap}.az-done .az-k{color:#FF8A57}
 .f-ph{width:200px;height:200px;object-fit:cover;border-radius:28px;display:block}.f-ini{display:grid;place-items:center;background:var(--hivis);color:#111;font-size:6rem;font-weight:800}
 .r21-try a{min-height:170px}
+
+.ct-f{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:12px 0}.ct-f div{background:#22303C;border-radius:10px;padding:8px 10px}.ct-f span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#8D9BA7}.ct-f b{color:#fff;font-size:.92rem}
+.vf-no ul{margin:6px 0 8px 1.1em;padding:0}
 .az-done .btn-line{color:#fff;border-color:#fff}.az-done .row{margin-top:4px}

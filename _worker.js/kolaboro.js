@@ -168,6 +168,7 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/stamp' && (req.method === 'POST' || req.method === 'GET')) return logged('stamp', () => stamp(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return logged('copilot', () => copilot(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return logged('analyze', () => analyze(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/certificate' && req.method === 'POST') return logged('certificate', () => certificate(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
   if (u.pathname === '/api/kb/health') return health(env);
   return json({ error: 'not_found' }, 404);
@@ -281,4 +282,42 @@ async function stamp(req, env, ctx) {
     const d = await rpc('kolaboro_stamp_put', { p_hash: h, p_ots: ots, p_calendars: ok.map(x => x.c), p_source: String(b.source || 'web').slice(0, 40) });
     return json({ stamp: d, existing: false });
   } catch (e) { return json({ stamp: { hash: h, ots, calendars: ok.map(x => x.c), created_at: new Date().toISOString() }, stored: false }); }
+}
+
+// ---------- Land certificate reader (Indonesian SHM / SHGB / Hak Pakai) ----------
+const CERT_PROMPT = `You read photos of Indonesian land certificates (Sertipikat Hak Milik, Hak Guna Bangunan, Hak Pakai) for Kolaboro, which protects foreign property buyers. Transcribe only what is legible; never invent. Then compare with the buyer's claim text if given.
+Reply with ONLY one JSON object:
+{
+ "document_type": "SHM"|"SHGB"|"Hak Pakai"|"Hak Sewa"|"not a land certificate"|"unclear",
+ "certificate_number": string|null, "nib": string|null, "surat_ukur": string|null,
+ "area_m2": number|null, "village": string|null, "district": string|null, "regency": string|null, "province": string|null,
+ "holder": string|null, "holder_type": "individual"|"company"|"unclear",
+ "issued": string|null, "expires": string|null,
+ "encumbrances": [strings: e.g. Hak Tanggungan (mortgage), blokir, notes in the endorsement pages],
+ "legibility": "good"|"partial"|"poor",
+ "mismatches": [{"field": string, "certificate": string, "claim": string, "severity": "low"|"medium"|"high"}],
+ "flags": [up to 6 plain-English risk notes for a foreign buyer, each tied to what is on the document],
+ "next_checks": [up to 5 things the agent must verify at the land office (BPN) or with a notary],
+ "summary": "two sentences for the buyer"
+}
+Rules for flags: foreigners cannot hold SHM; SHGB and Hak Pakai expire and need extension; a company holder needs its deed and NIB checked; a mortgage (Hak Tanggungan) must be lifted before transfer. Keep strings under 30 words.`;
+
+async function certificate(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  const raw = await req.text(); if (raw.length > 4500000) return json({ error: 'too_big' }, 413);
+  let b; try { b = JSON.parse(raw); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  if (b.company) return json({ error: 'bad_request' }, 400);
+  const m = /^data:(image\/(jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/.exec(String(b.image || ''));
+  if (!m) return json({ error: 'image' }, 400);
+  const claim = String(b.claim || '').slice(0, 2000);
+  const key = await sha(m[3].slice(0, 200000) + '|' + claim);
+  const ck = new Request('https://kolaboro.com/__kb_cert/' + key);
+  const hit = await caches.default.match(ck); if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
+  if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
+  let out;
+  try { out = await claudeVision(env, [{ type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } }, { type: 'text', text: CERT_PROMPT + '\n\nWhat the developer or brochure claims about this land: ' + (claim || 'not given') }]); }
+  catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
+  const res = { analysed: new Date().toISOString(), certificate: out };
+  ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
+  return json({ ...res, cached: false });
 }
