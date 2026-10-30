@@ -25,7 +25,9 @@ MAX_CALLS = int(os.environ.get('KB_MAX_CALLS', '30'))
 MAX_USD = float(os.environ.get('KB_MAX_USD', '3'))
 PRICE_IN, PRICE_OUT = 1.0 / 1e6, 5.0 / 1e6   # conservative USD per token estimate used only as a spending guard
 spent = {'in': 0, 'out': 0, 'calls': 0}
-FX = {'USD': 1.0, 'EUR': 1.08, 'IDR': 1 / 16000.0, 'AUD': 0.65, 'AED': 0.2723, 'THB': 1 / 34.0, 'MXN': 1 / 18.5, 'GBP': 1.27}  # rough, for the public median only
+FX = {'USD': 1.0, 'EUR': 1.08, 'IDR': 1 / 16000.0, 'AUD': 0.65, 'AED': 0.2723, 'THB': 1 / 34.0, 'MXN': 1 / 18.5, 'GBP': 1.27,
+      'OMR': 2.6, 'TRY': 1 / 41.0, 'EGP': 1 / 48.0, 'GEL': 0.37, 'COP': 1 / 4000.0, 'BRL': 0.18, 'DOP': 1 / 62.0, 'VND': 1 / 26000.0, 'PHP': 1 / 58.0,
+      'MYR': 0.23, 'LKR': 1 / 300.0, 'JPY': 1 / 150.0, 'CRC': 1 / 510.0, 'KHR': 1 / 4050.0, 'SAR': 0.2667, 'QAR': 0.2747}  # rough, for the public median only
 
 FIELDS = ["price_from", "currency", "title_type", "lease_years_base", "extension_promised", "guaranteed_language",
           "advertised_yield_pct", "completion_year", "permit_claim", "permit_number", "plans_published", "escrow_or_guarantee", "quotes"]
@@ -37,7 +39,7 @@ Extract ONLY what the page itself advertises. Do not guess. Use null when the pa
 Reply with ONLY a single JSON object, no other text before or after it. If the page has little or no information, still return the object with null values.
 The JSON object has exactly these keys:
 - price_from: number (the lowest advertised price) or null
-- currency: "USD" | "EUR" | "IDR" | "AUD" | "AED" | "THB" | "MXN" | "GBP" | null
+- currency: the ISO currency code of the price as written (e.g. "USD", "EUR", "AED", "THB", "TRY", "EGP", "VND", "PHP", "MYR") or null
 - title_type: "leasehold" | "freehold" | "hgb" | "hak_pakai" | "pt_pma" | "fideicomiso" | null
 - lease_years_base: number of years of the base lease, or null
 - extension_promised: true if an extension or renewal of the lease is promised, false if the page says none, null if not mentioned
@@ -90,11 +92,15 @@ def load(path, default):
     try: return json.load(open(path))
     except Exception: return default
 
+def _year(v):
+    m = re.search(r'(20[2-4]\d)', str(v or ''))
+    return int(m.group(1)) if m else None
+
 def from_seed(seed):
     return {"price_from": seed.get('price'), "currency": seed.get('currency'), "title_type": seed.get('title'),
             "lease_years_base": seed.get('lease_base'), "extension_promised": seed.get('extension'),
             "guaranteed_language": seed.get('guaranteed_language'), "advertised_yield_pct": None,
-            "completion_year": int(seed['completion']) if seed.get('completion') else None,
+            "completion_year": _year(seed.get('completion')),
             "permit_claim": seed.get('permit_claim'), "permit_number": seed.get('permit_number'), "plans_published": seed.get('plans_published'),
             "escrow_or_guarantee": seed.get('escrow'), "quotes": []}
 
@@ -163,19 +169,64 @@ def _questions(c):
     if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
     return q[:5]
 
-PREFIX = {'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS'}
+PREFIX = {'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
+          'Abu Dhabi': 'AUH', 'Ras Al Khaimah': 'RAK', 'Oman': 'OMN', 'Istanbul': 'IST', 'Antalya': 'AYT', 'Egypt': 'EGY', 'Cyprus': 'CYP', 'Northern Cyprus': 'NCY', 'Greece': 'GRC',
+          'Montenegro': 'MNE', 'Croatia': 'HRV', 'Georgia': 'GEO', 'Spain': 'ESP', 'Portugal': 'PRT', 'Los Cabos': 'CAB', 'Puerto Vallarta': 'PVR', 'Mérida': 'MID', 'Costa Rica': 'CRI',
+          'Panama': 'PAN', 'Dominican Republic': 'DOM', 'Colombia': 'COL', 'Brazil': 'BRA', 'Miami': 'MIA', 'Vietnam': 'VNM', 'Philippines': 'PHL', 'Malaysia': 'MYS', 'Cambodia': 'KHM',
+          'Sri Lanka': 'LKA', 'Bangkok': 'BKK', 'Hua Hin': 'HHQ', 'Krabi': 'KBV', 'Chiang Mai': 'CNX', 'Niseko': 'NSK', 'Labuan Bajo': 'LBJ'}
+
+FLAG_CATS = [('Fraud complaints reported', r'fraud|prosecutor|criminal|sentenced|charges'), ('Legal dispute reported', r'sued|court|judgment|lawsuit|litigation|legal action|arbitration'),
+             ('Developer in financial trouble', r'bankrupt|insolven|missed .{0,40}(?:interest|bond|payment)|accumulated losses|debt obligations|stop paying'),
+             ('Construction stalled', r'halt|stall|abandon|suspended|work stopped|no visible construction progress|only about .{0,20} built'),
+             ('Regulator action reported', r'regulator|superintendencia|ruled against|probe|government said|lien'),
+             ('Reported delays', r'significant delays|missed completion|overdue|has passed|years? late|delay(?:s|ed) in')]
+NOTE_CATS = [('Inconsistent figures on the listing', r'inconsistent|conflicting|do not reconcile|differ|incompatible|without explaining|unlabelled|two different|three different'),
+             ('Return projections without a stated basis', r'projected|projects a|appreciation|growth after completion|return on your investment|yield figure')]
+
+def _flag_cats(flags, cats=None):
+    out = []
+    for f in flags or []:
+        t = (f.get('text') if isinstance(f, dict) else str(f)).lower()
+        cat = next((c for c, rx in (cats or FLAG_CATS) if re.search(rx, t)), None)
+        if cat and cat not in out: out.append(cat)
+    return out
+
+def _checks(p, c, s):
+    pn = c.get('permit_number') or p.get('permit_number') or s.get('permit_number')
+    permit = 2 if pn else (1 if (c.get('permit_claim') or s.get('permit_claim')) else 0)
+    esc = c.get('escrow_or_guarantee') if c.get('escrow_or_guarantee') not in (None, '') else s.get('escrow')
+    gl = c.get('guaranteed_language') if c.get('guaranteed_language') is not None else s.get('guaranteed_language')
+    return {'permit': permit, 'escrow': None if esc is None else bool(esc), 'progress': s.get('progress_pct'),
+            'plans': bool(c.get('plans_published') or s.get('plans_published')), 'record': bool(s.get('developer_delivered')), "returns_ok": gl is False}
 
 def public_cases(projects, latest):
     out = []; n = {}
     for p in sorted(projects, key=lambda x: x.get('market', 'Bali') != 'Bali'):  # stable: file order keeps IDs fixed
         mk = p.get('market', 'Bali'); n[mk] = n.get(mk, 0) + 1; i = n[mk] - 1
         rec = latest.get(p['slug'], {}); c = rec.get('claims') or {}; read = rec.get('source') == 'ai'
+        s = p.get('seed') or {}; sc = from_seed(s); m = dict(sc); m.update({k: v for k, v in c.items() if v not in (None, '', [])})
+        ck = _checks(p, m, s); gl = m.get('guaranteed_language')
+        ck['returns_ok'] = gl is False
+        if any(re.search(r'guarantee', (f.get('text') or '').lower()) and re.search(r'return|rental|yield|income', (f.get('text') or '').lower()) for f in (p.get('flags') or []) if isinstance(f, dict)): ck['returns_ok'] = False
+        deep = bool(p.get('sources'))   # researched in depth: escrow, progress and track record were looked for too
+        ck['researched'] = ['permit', 'escrow', 'progress', 'plans', 'record', 'returns_ok'] if deep else ['permit', 'plans', 'returns_ok']
+        if not deep: ck['escrow'] = None; ck['progress'] = None; ck['record'] = None
+        score = (ck['permit'] == 2) + (ck['escrow'] is True) + (ck['progress'] is not None) + bool(ck['plans']) + bool(ck['record']) + bool(ck['returns_ok'])
+        mx = len(ck['researched']); r = score / mx
+        fl = _flag_cats(p.get('flags')); notes = [n for n in _flag_cats(p.get('flags'), NOTE_CATS) if not fl]
+        tier = 'caution' if fl or score <= 1 else 'clear' if score >= (3 if mx == 3 else 4) else 'mixed'
+        q = _questions(m)
+        if ck['escrow'] is not True: q.append('No deposit protection published: will your payments go into an escrow or trust account in your name?')
+        for f in fl[:2]: q.insert(0, f + ' in public sources: ask the developer for the current status, in writing.')
+        for f in notes[:1]: q.insert(0, f + ': ask for the correct figures in writing before paying.')
         out.append({'id': '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
-                    'docs': bool(c.get('permit_number')) or bool(p.get('permit_number')), 'plans': bool(c.get('plans_published')), 'band': _band(c), 'done': c.get('completion_year'),
-                    'read': read, 'checked': _date(rec.get('checked', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
-                    'q': _questions(c) if read else []})
+                    'docs': ck['permit'] == 2, 'plans': ck['plans'], 'band': _band(m), 'done': m.get('completion_year'),
+                    'title': m.get('title_type'), 'lease': m.get('lease_years_base'), 'yield': m.get('advertised_yield_pct') or s.get('yield_pct'), 'units': s.get('units'),
+                    'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,
+                    'read': read or bool(p.get('sources')), 'checked': _date(rec.get('checked', '') or p.get('added', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
+                    'q': q[:6]})
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
-    return {'updated': TODAY, 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
+    return {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
 
 def main():
     public_out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA, 'public-bali-claims.json')
