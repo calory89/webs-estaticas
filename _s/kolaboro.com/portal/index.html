@@ -84,7 +84,7 @@ var KB = (function(){
     // timeline
     h += '<section class="ap-card"><h2>Case timeline</h2><ul class="ap-tl">' + c.log.slice().reverse().map(function(l){ return '<li><b>' + STAGES[l.stage] + '</b><div class="ap-small ap-muted">' + fmt(l.at, true) + '</div>' + (l.note ? '<div>' + esc(l.note) + '</div>' : '') + '</li>'; }).join('') + '</ul></section>';
     h += '</div></div>';
-    $('app').innerHTML = h;
+    $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN);
     var ch = $('chat'); if (ch) ch.scrollTop = ch.scrollHeight;
     document.querySelectorAll('[data-c]').forEach(function(b){ b.onclick = function(){ CUR = b.dataset.c; render(); }; });
     $('df').addEventListener('submit', function(e){ e.preventDefault(); var o = { case_id: c.id }; new FormData(e.target).forEach(function(v, k){ o[k] = v; }); load('update_case', o).then(function(){ KB.toast('Saved'); }); });
@@ -119,4 +119,5 @@ var KB = (function(){
   load('me');
   setInterval(function(){ if (!document.hidden && !document.activeElement.closest('form')) load('me'); }, 45000);
 })();
-</script></body></html>
+</script><script src="/k/case.js?v=4d4d2b969f"></script>
+</body></html>

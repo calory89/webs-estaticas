@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/verify.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=8531760cc6">
+<link rel="stylesheet" href="/k/site.css?v=cb0accf678">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Verify evidence", "item": "https://kolaboro.com/verify/"}]}</script>
@@ -50,7 +50,19 @@
     <p class="muted" style="font-size:.82rem;margin:12px 0 0">How it works: each fingerprint is submitted to independent OpenTimestamps calendars (run by the OpenTimestamps project and Eternity Wall). They aggregate it into a Bitcoin transaction within hours. After that, nobody, including us, can backdate or alter the evidence without it showing.</p>
   </div>
 </div></section>
-</main>
+<section class="sec alt" id="chain"><div class="wrap"><div class="cp-head"><p class="eyebrow">For clients and their lawyers</p><h2>Check a whole case file</h2>
+<p class="lead">In the client portal, "Evidence data" downloads every fingerprint in a case. Drop that file here: your browser recomputes the chain item by item and tells you if anything was changed, removed or reordered.</p></div>
+<div class="vf-box"><label class="vf-drop"><input type="file" id="chfile" accept="application/json,.json"><b>Drop the evidence file (.json)</b><span>Nothing is uploaded</span></label><div id="chout" class="vf-out" aria-live="polite"></div></div></div></section>
+<script>(function(){
+function hex(b){ return [].map.call(new Uint8Array(b), function(x){ return ('0' + x.toString(16)).slice(-2); }).join(''); }
+function sha(t){ return crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)).then(hex); }
+function iso(t){ return t ? new Date(t).toISOString().slice(0, 19) + 'Z' : ''; }
+var o = document.getElementById('chout');
+document.getElementById('chfile').onchange = function(){ var f = this.files[0]; if (!f) return; f.text().then(function(s){ var d = JSON.parse(s), ev = d.evidence || [], prev = null, bad = [], i = 0;
+  function step(){ if (i >= ev.length) return Promise.resolve(); var e = ev[i]; return sha((prev || 'genesis:' + d.case_id) + '|' + e.sha256 + '|' + e.kind + '|' + iso(e.taken_at)).then(function(h){ if (h !== e.chain || (e.prev || null) !== prev) bad.push((i + 1) + '. ' + (e.title || e.kind)); prev = e.chain; i++; return step(); }); }
+  return step().then(function(){ o.innerHTML = bad.length ? '<div class="vf-no"><b>' + bad.length + ' item(s) do not match</b><p>' + bad.join('<br>') + '</p></div>' : '<div class="vf-ok"><b>✓ All ' + ev.length + ' items chain correctly</b><p>Case ' + (d.case || '') + '. Last fingerprint <code style="word-break:break-all">' + prev + '</code>. <a href="/verify/?hash=' + prev + '">See its timestamp</a>.</p></div>'; });
+}).catch(function(){ o.innerHTML = '<div class="vf-no"><b>That file isn\'t a Kolaboro evidence file</b></div>'; }); };
+})();</script></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
   <div class="wrap">

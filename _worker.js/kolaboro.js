@@ -3,7 +3,7 @@
 
 const MODELS = ['claude-haiku-5-5', 'claude-sonnet-5-5'];
 const MAX_TEXT = 14000;
-const PER_IP_HOUR = 6;
+const PER_IP_HOUR = 12;
 const TRACKED = ['every-bali.com', 'balitecture.com', 'breig-property.com', 'magnumestate.com', 'teus-group.com', 'lyvinproperties.co',
   'investlandbali.com', 'globalbalihome.com', 'urbanescape.id', 'coreconceptliving.com', 'axoradevelopments.com', 'cocodevelopmentgroup.com',
   'movepropertygroup.com', 'aravitaresidence.com'];
@@ -169,6 +169,7 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return logged('copilot', () => copilot(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return logged('analyze', () => analyze(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/certificate' && req.method === 'POST') return logged('certificate', () => certificate(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/document' && req.method === 'POST') return logged('document', () => documentRead(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
   if (u.pathname === '/api/kb/health') return health(env);
   return json({ error: 'not_found' }, 404);
@@ -309,15 +310,72 @@ async function certificate(req, env, ctx) {
   if (b.company) return json({ error: 'bad_request' }, 400);
   const m = /^data:(image\/(jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/.exec(String(b.image || ''));
   if (!m) return json({ error: 'image' }, 400);
-  const claim = String(b.claim || '').slice(0, 2000);
-  const key = await sha(m[3].slice(0, 200000) + '|' + claim);
+  const claim = String(b.claim || '').slice(0, 2000), lang = LANGS[b.lang] ? b.lang : 'en';
+  const key = await sha(m[3].slice(0, 200000) + '|' + claim + '|' + lang);
   const ck = new Request('https://kolaboro.com/__kb_cert/' + key);
   const hit = await caches.default.match(ck); if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
   if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
   let out;
-  try { out = await claudeVision(env, [{ type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } }, { type: 'text', text: CERT_PROMPT + '\n\nWhat the developer or brochure claims about this land: ' + (claim || 'not given') }]); }
+  try { out = await claudeVision(env, [{ type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } }, { type: 'text', text: CERT_PROMPT + langRule(lang) + '\n\nWhat the developer or brochure claims about this land: ' + (claim || 'not given') }]); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
   const res = { analysed: new Date().toISOString(), certificate: out };
+  ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
+  return json({ ...res, cached: false });
+}
+
+
+// ---------- Any property document: permit (PBG/IMB/SLF), sale contract (PPJB/AJB), company deed (Akta/NIB), invoice or receipt ----------
+const LANGS = { en: 'English', es: 'Spanish', de: 'German', fr: 'French', nl: 'Dutch', ru: 'Russian', zh: 'Simplified Chinese', id: 'Indonesian' };
+function langRule(l) { return l && l !== 'en' ? '\n\nWrite every explanation (summary, flags, risks, next checks, mismatch descriptions) in ' + LANGS[l] + '. Keep transcribed values (names, numbers, dates, legal terms) exactly as written on the document.' : ''; }
+const DOC_TYPES = {
+  permit: 'a building permit or related approval (Indonesia: PBG, old IMB, SLF, KKPR/zoning; elsewhere the local equivalent). Extract permit number, holder, address/plot, permitted use, floors, building area, issue date, issuing office. Flag: holder differs from the developer, use not residential/tourism as sold, more floors/units sold than permitted, permit for a different plot, SLF (fit-for-use) missing for a finished building.',
+  contract: 'a property sale or reservation contract (Indonesia: PPJB, AJB, lease agreement; or any off-plan SPA). Extract parties, property, price, payment schedule, completion date, title type, lease term and extension, penalties for late delivery, refund rights, governing law, who holds the title until transfer. In "clauses" list the clauses that put the buyer at risk (unilateral date changes, no penalty for delay, payments not tied to construction milestones, nominee structures, forfeit of all payments on buyer default, extension "promised" without fixed price, dispute forum far from the buyer).',
+  company: 'a company deed or registration (Indonesia: Akta Pendirian/Perubahan, SK Kemenkumham/AHU, NIB/OSS, PT PMA). Extract company name, deed number and notary, registration numbers, shareholders, directors, authorised business lines (KBLI), capital. Flag: business lines that do not allow selling or renting property, shareholders that look like nominees, company younger than the project it sells, directors who are not the people you deal with.',
+  invoice: 'an invoice, payment request or receipt from a developer or contractor. Extract issuer, bank account holder, amounts, currency, what is being paid for (which milestone), dates. Flag: bank account holder differs from the contracting company, milestone billed that the buyer cannot verify on site, amounts that do not match the payment schedule, personal accounts, crypto or cash requests.',
+  certificate: 'an Indonesian land certificate (SHM, SHGB, Hak Pakai). Extract right type, certificate number, NIB, Surat Ukur, area, location, holder, dates, encumbrances (Hak Tanggungan, blokir). Flag: foreigners cannot hold SHM; SHGB/Hak Pakai expire; mortgages must be lifted before transfer.',
+  auto: 'any document used when buying property abroad. First decide what it is, then extract what matters for a buyer.'
+};
+const DOC_PROMPT = (t) => `You read documents for Kolaboro, which protects people who buy property abroad. The buyer uploaded ${DOC_TYPES[t]}
+Transcribe only what is legible; never invent a value. If a page is unreadable, say so in "legibility".
+Reply with ONLY one JSON object:
+{
+ "document_kind": short name of what this document is,
+ "language": language of the document,
+ "fields": [{"label": string, "value": string}] up to 16 most important facts as written,
+ "parties": [{"role": string, "name": string}],
+ "amounts": [{"label": string, "value": string}],
+ "dates": [{"label": string, "value": string}],
+ "clauses": [{"clause": string (short quote or reference), "risk": "low"|"medium"|"high", "why": string}],
+ "mismatches": [{"field": string, "document": string, "claim": string, "severity": "low"|"medium"|"high"}],
+ "flags": [up to 6 risk notes for the buyer, each tied to what is on the document],
+ "next_checks": [up to 5 things to verify with the issuing office, a notary or on site],
+ "legibility": "good"|"partial"|"poor",
+ "summary": "two or three sentences for the buyer"
+}
+"mismatches" compares the document with the buyer's claim text when given. Keep strings under 35 words. This is not legal advice: route legal conclusions to a notary or lawyer.`;
+
+async function documentRead(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  const raw = await req.text(); if (raw.length > 7000000) return json({ error: 'too_big' }, 413);
+  let b; try { b = JSON.parse(raw); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  if (b.company) return json({ error: 'bad_request' }, 400);
+  const type = DOC_TYPES[b.type] ? b.type : 'auto', lang = LANGS[b.lang] ? b.lang : 'en', claim = String(b.claim || '').slice(0, 2500);
+  const files = (Array.isArray(b.files) ? b.files : [b.file]).filter(Boolean).slice(0, 6), content = [];
+  for (const f of files) {
+    const m = /^data:(image\/(jpeg|png|webp)|application\/pdf);base64,([A-Za-z0-9+/=]+)$/.exec(String(f));
+    if (!m) return json({ error: 'file' }, 400);
+    content.push(m[1] === 'application/pdf' ? { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: m[3] } } : { type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } });
+  }
+  if (!content.length) return json({ error: 'file' }, 400);
+  const key = await sha(files.map(f => String(f).slice(-120000)).join('|') + '|' + type + '|' + lang + '|' + claim);
+  const ck = new Request('https://kolaboro.com/__kb_doc/' + key);
+  const hit = await caches.default.match(ck); if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
+  if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
+  content.push({ type: 'text', text: DOC_PROMPT(type) + langRule(lang) + '\n\nWhat the buyer was told (developer, brochure or agent): ' + (claim || 'not given') });
+  let out;
+  try { out = await claudeVision(env, content); }
+  catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
+  const res = { analysed: new Date().toISOString(), type, lang, pages: files.length, document: out };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
   return json({ ...res, cached: false });
 }

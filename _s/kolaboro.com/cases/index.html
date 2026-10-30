@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/cases.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=8531760cc6">
+<link rel="stylesheet" href="/k/site.css?v=cb0accf678">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Live verification pipeline: off-plan projects in 9 markets", "item": "https://kolaboro.com/cases/"}]}</script>
@@ -150,6 +150,27 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+  var AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'; function rpc(fn, body){ return fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/' + fn, { method:'POST', headers:{ apikey: AK, Authorization: 'Bearer ' + AK, 'content-type':'application/json' }, body: JSON.stringify(body) }).then(function(r){ return r.json(); }); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  var g = document.getElementById('cgrid'); if (!g) return;
+  var F = { done: 'Completion year', band: 'Price band', docs: 'Permit number published', plans: 'Plans published' };
+  function deco(){ g.querySelectorAll('article.case').forEach(function(a){ if (a.querySelector('.cfol')) return; var id = (a.querySelector('.cid') || {}).textContent; if (!id) return; a.id = id;
+    var d = document.createElement('div'); d.className = 'cfol'; d.innerHTML = '<button class="cfollow" data-ref="' + esc(id) + '">🔔 Follow</button><button class="chist" data-h="' + esc(id) + '">History</button>'; a.appendChild(d); }); }
+  new MutationObserver(deco).observe(g, { childList: true }); deco();
+  g.addEventListener('click', function(e){
+    var f = e.target.closest('.cfollow'), h = e.target.closest('.chist');
+    if (f) { var em = prompt('Get an email when the developer of ' + f.dataset.ref + ' changes its completion date, price band or published documents. Your email:'); if (!em) return;
+      rpc('kolaboro_follow', { p_email: em, p_ref: f.dataset.ref }).then(function(r){ if (r.error) { alert(r.error === 'input' ? 'That email doesn\'t look right.' : 'Too many requests today.'); return; } f.textContent = r.confirmed ? '✓ Following' : '✓ Check your inbox to confirm'; f.disabled = true; if (window.kbEvent) kbEvent('case_follow', f.dataset.ref); }); }
+    if (h) { var box = h.parentNode.querySelector('.chl'); if (box) { box.remove(); return; }
+      rpc('kolaboro_history', { p_ref: h.dataset.h }).then(function(rows){ var by = {}, out = []; (rows || []).forEach(function(r){ (by[r.field] = by[r.field] || []).push(r); });
+        Object.keys(by).forEach(function(k){ var l = by[k]; if (l.length > 1) l.slice(1).forEach(function(r, i){ out.push('<li>' + new Date(r.at).toLocaleDateString() + ': ' + F[k] + ' ' + esc(l[i].value) + ' → ' + esc(r.value) + '</li>'); }); });
+        var first = (rows || [])[0]; var ul = document.createElement('ul'); ul.className = 'chl'; ul.innerHTML = out.length ? out.join('') : '<li>No changes since we started tracking' + (first ? ' on ' + new Date(first.at).toLocaleDateString() : '') + '. We check every day.</li>'; h.parentNode.appendChild(ul); }); }
+  });
+  if (location.hash) setTimeout(function(){ var a = document.getElementById(location.hash.slice(1)); if (a) a.scrollIntoView({ block: 'center' }); }, 800);
 })();
 </script>
 </body>
