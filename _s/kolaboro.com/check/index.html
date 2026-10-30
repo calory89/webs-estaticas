@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/check.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=ea1b658954">
+<link rel="stylesheet" href="/k/site.css?v=634ea99dc0">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Check a property project", "item": "https://kolaboro.com/check/"}]}</script>
@@ -122,7 +122,7 @@
     <div class="fgrid">
       <div>
         <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
-        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Agents in Bali; research in 9 markets.</p>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Agents in Bali; research in 43 markets.</p>
         <form class="news" data-news novalidate><label for="nl-email">Monthly research notes: what developers promise, and what changed.</label>
           <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
           <p class="nmsg" aria-live="polite"></p></form>
@@ -156,7 +156,7 @@
   </div>
 </footer>
 <script src="/k/site.js?v=4a8bde86eb" defer></script>
-<script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
 fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
@@ -183,29 +183,38 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
   function step1(){ var v = norm($('az-url').value); if (!v) { $('az-e1').textContent = 'Paste the full website address of the project.'; return; }
-    url = v; try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); show(2); $('az-email').focus(); ev('desk_url'); }
+    url = v; try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
   $('az-f1').addEventListener('submit', step1);
   var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); }
-  function save(email, note){ try { fetch(SB, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
+  function save(email, note){ if (!email) return; try { fetch(SB, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({ p_name: 'Desk review request', p_email: email, p_country: '', p_phone: '', p_who: 'buyer | desk review', p_bring: note.slice(0, 4000), p_learn: url.slice(0, 300), p_week: '', p_lang: 'en', p_source: 'yc-desk | ' + location.pathname, p_plan: 'yc-desk' }) }); } catch (e) {} }
-  $('az-f2').addEventListener('submit', function(){
-    var email = $('az-email').value.trim();
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { $('az-e2').textContent = 'Add a valid email address.'; return; }
-    if (!$('az-ok').checked) { $('az-e2').textContent = 'Tick the box so we can email you.'; return; }
-    $('az-e2').textContent = ''; try { localStorage.setItem('kb-desk-email', email); } catch(x){} show(3); ev('generate_lead', { role: 'desk' });
+  function run(email){
+    show(3);
     var lis = $('az-prog').querySelectorAll('li'), i = 0; lis[0].classList.add('run');
     var tick = setInterval(function(){ if (i < lis.length - 1) { lis[i].classList.remove('run'); lis[i].classList.add('ok2'); i++; lis[i].classList.add('run'); } }, 6000);
     $('az-first').textContent = 'Starting…';
-    fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email, company: $('az-co').value }) })
+    fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) })
       .then(function(r){ return r.json().then(function(d){ return [r.status, d]; }); })
       .then(function(x){ clearInterval(tick); var s = x[0], d = x[1];
         lis.forEach(function(l){ l.classList.remove('run'); l.classList.add('ok2'); });
         if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
-        setTimeout(function(){ render(d); }, 500);
+        setTimeout(function(){ render(d); if (!email) copyBox(d.report.summary); }, 500);
       }).catch(function(){ clearInterval(tick); render_err('network'); save(email, 'Desk review failed: network'); });
     setTimeout(function(){ if ($('az-first').textContent === 'Starting…') $('az-first').textContent = 'Reading the website now'; }, 1200);
-  });
+   }
+  $('az-f2').addEventListener('submit', function(){ var em = $('az-email').value.trim(); if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) run(em); });
+  function copyBox(sum){
+    var box = $('az-4'); if (!box || $('az-cp')) return; var known = ''; try { known = localStorage.getItem('kb-desk-email') || ''; } catch (e) {}
+    var f = document.createElement('form'); f.id = 'az-cp'; f.className = 'az-cp'; f.setAttribute('novalidate', '');
+    f.innerHTML = '<label for="az-cpe"><b>Want us to follow up?</b> <span>Leave your email and a person on our team replies within one working day.</span></label><div><input type="email" id="az-cpe" autocomplete="email" placeholder="you@email.com" value="' + esc(known) + '"><button class="btn btn-line" type="submit">Send</button></div><p class="fe" id="az-cpx" role="alert"></p>';
+    box.insertBefore(f, box.children[2] || null);
+    f.addEventListener('submit', function(e){ e.preventDefault(); var em = $('az-cpe').value.trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { $('az-cpx').textContent = 'Add a valid email address.'; return; }
+      try { localStorage.setItem('kb-desk-email', em); } catch (x) {} save(em, 'Desk review copy requested: ' + (sum || '')); ev('generate_lead', { role: 'desk' });
+      f.innerHTML = '<p style="margin:0"><b>✓ Thanks.</b> We reply to ' + esc(em) + ' within one working day.</p>'; });
+  }
+
   function render_err(e){
     var m = e === 'rate' ? 'You have run several reviews in the last hour. Try again later, or book a full check below.'
       : e === 'fetch' || e === 'empty' ? 'This website blocks automatic reading. Your request is saved and a person on our team will review it within 24 hours.'
@@ -233,6 +242,26 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
         '<p class="muted" style="font-size:.82rem;margin:10px 0 0">PayPal or card. Full refund if we can\'t take your case. Keep your reference: ' + ref + '.</p></div>';
     };
   }; }
+
+  function bench(r){
+    var el = $('az-bench'); if (!el) return;
+    var pc = String(r.permit_claim || ''), ok = [
+      ['Permit or registration number', /\d{3,}/.test(pc)], ['Title type stated', !!r.title_type], ['Completion date stated', !!r.completion],
+      ['Payment plan stated', !!r.payment_plan], ['No "guaranteed" returns', r.guaranteed_language === false || r.guaranteed_language === 'false'],
+      ['Deposit protection mentioned', /escrow|trust|fideicomiso|guarantee|garant/i.test(JSON.stringify(r.promises || []) + ' ' + (r.payment_plan || '')) && !/escrow/i.test(JSON.stringify(r.missing || []))]];
+    var sc = ok.filter(function(x){ return x[1]; }).length;
+    el.innerHTML = '<div class="az-bx"><div><h3>' + sc + ' of 6 things a buyer needs are on this page</h3><ul class="k6">' + ok.map(function(x){ return '<li class="' + (x[1] ? 'y' : 'n') + '"><i>' + (x[1] ? '✓' : '✗') + '</i>' + x[0] + '</li>'; }).join('') + '</ul></div><div id="az-mk"></div></div>';
+    fetch('/data/bali-cases.json').then(function(x){ return x.json(); }).then(function(d){
+      var C = (d && d.cases) || [], loc = ((r.location || '') + ' ' + (r.country || '')).toLowerCase();
+      var mk = null; C.forEach(function(c){ if (!mk && (loc.indexOf(c.market.toLowerCase()) >= 0 || (c.region && loc.indexOf(String(c.region).toLowerCase()) >= 0))) mk = c.market; });
+      if (!mk) C.forEach(function(c){ if (!mk && loc.indexOf(String(c.country).toLowerCase()) >= 0) mk = c.market; });
+      var L = C.filter(function(c){ return mk ? c.market === mk : true; }); if (!L.length) return;
+      function pct(f){ return Math.round(L.filter(f).length / L.length * 100) + '%'; }
+      $('az-mk').innerHTML = '<h3>Compared with ' + L.length + ' projects we track' + (mk ? ' in ' + esc(mk) : ' worldwide') + '</h3><ul class="az-cmp"><li><b>' + pct(function(c){ return c.docs; }) + '</b> publish a permit or licence number</li>' +
+        (L[0].checks ? '<li><b>' + pct(function(c){ return c.checks && c.checks.escrow === true; }) + '</b> say how deposits are protected</li><li><b>' + pct(function(c){ return (c.flags || []).length; }) + '</b> have problems in public reports</li>' : '') +
+        '<li><b>' + pct(function(c){ return c.plans; }) + '</b> publish plans</li></ul><p class="muted" style="font-size:.8rem;margin:6px 0 0"><a href="/cases' + (mk ? '#' : '') + '">See them on the live map →</a></p>';
+    }).catch(function(){});
+  }
   function render(d){
     var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
     var facts = [['Project', r.project], ['Developer', r.developer], ['Location', r.location], ['Price from', r.price_from], ['Title', r.title_type], ['Lease', r.lease_years], ['Completion', r.completion], ['Return advertised', r.advertised_return], ['Permit claim', r.permit_claim]].filter(function(f){ return f[1]; });
@@ -241,11 +270,11 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
       '<p><span class="az-att ' + esc(att) + '">' + (att === 'high' ? 'High attention needed' : att === 'low' ? 'Low attention needed' : 'Medium attention needed') + '</span></p>' +
       '<p class="lead" style="margin-top:12px">' + esc(r.summary) + '</p>' +
       (facts.length ? '<div class="az-facts">' + facts.map(function(f){ return '<div><span>' + f[0] + '</span><b>' + esc(f[1]) + '</b></div>'; }).join('') + '</div>' : '') +
-      '<div class="az-res"><div class="az-box"><h3>Ask these before you pay</h3><ol>' + (r.questions || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
+      '<div id="az-bench"></div>' + '<div class="az-res"><div class="az-box"><h3>Ask these before you pay</h3><ol>' + (r.questions || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
       '<div class="az-box"><h3>What the website promises</h3><ul>' + (r.promises || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' +
       ((r.missing || []).length ? '<h3 style="margin-top:14px">What it doesn\'t say</h3><ul>' + r.missing.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' : '') + '</div></div>' +
       cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer.</p>';
-    show(4); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
+    show(4); bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
   }
 })();
 </script>

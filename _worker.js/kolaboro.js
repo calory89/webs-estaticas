@@ -83,7 +83,7 @@ async function analyze(req, env, ctx) {
   let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
   if (b.company) return json({ error: 'bad_request' }, 400);
   const email = String(b.email || '').trim();
-  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: 'email' }, 400);
+  if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: 'email' }, 400);
   const u = okUrl(String(b.url || '').trim().slice(0, 500));
   if (!u) return json({ error: 'url' }, 400);
   const host = u.hostname.replace(/^www\./, '');

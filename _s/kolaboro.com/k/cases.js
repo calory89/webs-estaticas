@@ -1,0 +1,90 @@
+/* Kolaboro live cases: every tracked off-plan project worldwide, with a public-transparency scorecard, map and filters */
+(function(){
+  var D = window.KB_CASES || { cases: [] }, C = D.cases;
+  var CENT = { 'Bali':[-8.65,115.2], 'Lombok':[-8.65,116.3], 'Labuan Bajo':[-8.5,119.9], 'Phuket':[7.88,98.39], 'Koh Samui':[9.5,100.0], 'Pattaya':[12.93,100.88], 'Bangkok':[13.75,100.5], 'Hua Hin':[12.57,99.96], 'Krabi':[8.09,98.9], 'Chiang Mai':[18.79,98.98],
+    'Dubai':[25.2,55.27], 'Abu Dhabi':[24.45,54.38], 'Ras Al Khaimah':[25.79,55.94], 'Oman':[23.59,58.41], 'Istanbul':[41.01,28.98], 'Antalya':[36.9,30.7], 'Egypt':[30.0,31.2], 'Cyprus':[34.7,33.0], 'Northern Cyprus':[35.33,33.32],
+    'Greece':[37.98,23.73], 'Montenegro':[42.29,18.84], 'Croatia':[45.1,13.9], 'Georgia':[41.64,41.63], 'Spain':[38.35,-0.48], 'Costa del Sol':[36.51,-4.88], 'Portugal':[38.72,-9.14], 'Algarve':[37.09,-8.25],
+    'Riviera Maya':[20.63,-87.07], 'Los Cabos':[22.89,-109.92], 'Puerto Vallarta':[20.65,-105.23], 'Mérida':[20.97,-89.62], 'Costa Rica':[10.6,-85.6], 'Panama':[8.98,-79.52], 'Dominican Republic':[18.58,-68.4], 'Colombia':[6.24,-75.58],
+    'Brazil':[-3.73,-38.52], 'Miami':[25.76,-80.19], 'Vietnam':[16.05,108.2], 'Philippines':[10.32,123.89], 'Malaysia':[3.14,101.69], 'Cambodia':[11.56,104.92], 'Sri Lanka':[6.93,79.85], 'Niseko':[42.8,140.69] };
+  var TIER = { clear: ['Strong public disclosure','#0B7A55'], mixed: ['Some gaps','#B7791F'], caution: ['Check carefully','#B42318'] };
+  var CK = [['permit','Permit or licence number published'],['escrow','Deposit protection (escrow, bank guarantee or trust)'],['progress','Construction progress published'],['plans','Site or floor plans published'],['record','Developer track record stated'],['returns_ok','No "guaranteed" return language']];
+  function $(i){ return document.getElementById(i); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function n(x){ return (+x || 0).toLocaleString('en'); }
+  var S = { m: '', t: '', q: '', sort: 'best', lim: 24 };
+  function stat(){
+    var mk = {}, ct = {}; C.forEach(function(c){ mk[c.market] = 1; ct[c.country] = 1; });
+    var permit = C.filter(function(c){ return c.checks && c.checks.permit === 2; }).length, escw = C.filter(function(c){ return c.checks && c.checks.escrow === true; }).length,
+        fl = C.filter(function(c){ return (c.flags || []).length; }).length, inv = C.filter(function(c){ return c.invited; }).length, clear = C.filter(function(c){ return c.tier === 'clear'; }).length;
+    $('kst').innerHTML = [[n(C.length),'off-plan projects tracked'],[Object.keys(mk).length + ' · ' + Object.keys(ct).length,'markets · countries'],[Math.round(permit / C.length * 100) + '%','publish a permit or licence number'],[Math.round(escw / C.length * 100) + '%','say how your deposit is protected'],[n(fl),'with problems reported in public sources'],[n(clear),'with strong public disclosure'],[n(inv),'developers invited to verify']]
+      .map(function(x){ return '<div><b>' + x[0] + '</b><span>' + x[1] + '</span></div>'; }).join('');
+    var opts = Object.keys(mk).sort().map(function(m){ return '<option value="' + esc(m) + '">' + esc(m) + ' (' + C.filter(function(c){ return c.market === m; }).length + ')</option>'; }).join('');
+    $('kmk').innerHTML = '<option value="">All markets (' + C.length + ')</option>' + opts;
+  }
+  function list(){
+    var q = S.q.toLowerCase();
+    var L = C.filter(function(c){ return (!S.m || c.market === S.m) && (!S.t || c.tier === S.t) && (!q || JSON.stringify(c).toLowerCase().indexOf(q) >= 0); });
+    var ord = { clear: 0, mixed: 1, caution: 2 };
+    if (S.sort === 'best') L.sort(function(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (a.flags || []).length - (b.flags || []).length; });
+    if (S.sort === 'worst') L.sort(function(a, b){ return ord[b.tier] - ord[a.tier] || (a.score || 0) / (a.max || 6) - (b.score || 0) / (b.max || 6); });
+    if (S.sort === 'market') L.sort(function(a, b){ return a.market < b.market ? -1 : a.market > b.market ? 1 : a.id < b.id ? -1 : 1; });
+    return L;
+  }
+  function card(c){
+    var t = TIER[c.tier] || TIER.mixed, ck = c.checks || {};
+    var meta = [c.band, c.title ? c.title.replace('_', ' ') + (c.lease ? ' ' + c.lease + ' yrs' : '') : null, c.done ? 'completion ' + c.done : 'no completion date', c.yield ? c.yield + '% yield advertised' : null].filter(Boolean).join(' · ');
+    var R = ck.researched || CK.map(function(k){ return k[0]; }), mx = c.max || R.length;
+    var ticks = CK.map(function(k){ if (R.indexOf(k[0]) < 0) return ''; var v = ck[k[0]], ok = k[0] === 'permit' ? v === 2 : k[0] === 'progress' ? v != null : v === true;
+      var half = k[0] === 'permit' && v === 1, txt = k[0] === 'progress' && v != null ? 'Construction progress published (' + v + '%)' : half ? 'Permit claimed, number not published' : k[1];
+      return '<li class="' + (ok ? 'y' : half ? 'h' : 'n') + '"><i aria-hidden="true">' + (ok ? '✓' : half ? '~' : '✗') + '</i>' + esc(txt) + '</li>'; }).join('') + (R.length < 6 ? '<li class="u"><i aria-hidden="true">·</i><em>Deposit protection, progress and track record: being researched</em></li>' : '');
+    var steps = [['Promises read by AI', c.read, c.read ? c.checked : 'Queued'], ['Developer invited', !!c.invited, c.invited || 'Next'], ['Registry check', false, 'Pending'], ['Site visit with GPS video', false, 'Pending'], ['Verified and published', false, 'Pending']];
+    return '<article class="case kc t-' + esc(c.tier || 'mixed') + '"><header><span class="cid">' + esc(c.id) + '</span><span class="kt" style="color:' + t[1] + ';border-color:' + t[1] + '">' + t[0] + '</span></header>' +
+      '<h3>Off-plan project · ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + '<small> · ' + esc(c.country) + '</small></h3><p class="cmeta">' + esc(meta) + '</p>' +
+      '<div class="ksc"><b>' + (c.score || 0) + '/' + mx + '</b><span>public checks' + (mx < 6 ? ' (deeper research pending)' : '') + '</span><i style="width:' + ((c.score || 0) / mx * 100) + '%;background:' + t[1] + '"></i></div><ul class="k6">' + ticks + '</ul>' +
+      ((c.flags || []).length ? '<p class="kfl">' + c.flags.map(function(f){ return '<span>⚠ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
+      ((c.notes || []).length ? '<p class="kfl kno">' + c.notes.map(function(f){ return '<span>ℹ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
+      '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      '<ol class="csteps">' + steps.map(function(x){ return '<li class="' + (x[1] ? 'ok1' : '') + '"><span>' + x[0] + '</span><small>' + esc(x[2]) + '</small></li>'; }).join('') + '</ol>' +
+      '<p class="kfoll"><a href="/check#analyze">Buying here? Get a free desk review →</a></p></details></article>';
+  }
+  function render(){
+    var L = list(); $('kn').textContent = L.length + ' project' + (L.length === 1 ? '' : 's');
+    $('cgrid').innerHTML = (L.length ? L.slice(0, S.lim).map(card).join('') : '<p class="muted">No project matches. Try another market or clear the search.</p>') + (L.length > S.lim ? '<button class="btn btn-line cmore" type="button">Show more (' + (L.length - S.lim) + ' left)</button>' : '');
+    mapDots();
+  }
+  var MAP = null, LAYER = null;
+  function mapInit(){
+    if (!window.L || MAP) return;
+    MAP = L.map('kmap', { scrollWheelZoom: false, worldCopyJump: true, attributionControl: true }).setView([18, 40], 2);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', { attribution: 'Tiles © Esri', maxZoom: 8 }).addTo(MAP);
+    LAYER = L.layerGroup().addTo(MAP); mapDots();
+  }
+  function mapDots(){
+    if (!MAP) return; LAYER.clearLayers(); var g = {};
+    C.forEach(function(c){ if (S.t && c.tier !== S.t) return; (g[c.market] = g[c.market] || []).push(c); });
+    Object.keys(g).forEach(function(m){ var ll = CENT[m]; if (!ll) return; var a = g[m], bad = a.filter(function(c){ return c.tier === 'caution'; }).length, good = a.filter(function(c){ return c.tier === 'clear'; }).length;
+      var col = bad / a.length > .5 ? '#B42318' : good / a.length > .3 ? '#0B7A55' : '#FF5B14';
+      L.circleMarker(ll, { radius: 6 + Math.sqrt(a.length) * 3, color: S.m === m ? '#17212B' : '#fff', weight: S.m === m ? 3 : 1.5, fillColor: col, fillOpacity: .85 })
+        .bindTooltip('<b>' + esc(m) + '</b><br>' + a.length + ' projects · ' + good + ' with strong disclosure · ' + bad + ' to check carefully')
+        .on('click', function(){ S.m = S.m === m ? '' : m; $('kmk').value = S.m; S.lim = 24; render(); $('kfil').scrollIntoView({ behavior: 'smooth', block: 'start' }); }).addTo(LAYER); });
+  }
+  function bind(){
+    $('kmk').onchange = function(){ S.m = this.value; S.lim = 24; render(); };
+    $('ksort').onchange = function(){ S.sort = this.value; render(); };
+    $('kq').oninput = function(){ S.q = this.value.trim(); S.lim = 24; render(); };
+    $('ktier').onclick = function(e){ var b = e.target.closest('button'); if (!b) return; S.t = b.dataset.t; S.lim = 24; this.querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', x === b); }); render(); };
+    $('cgrid').addEventListener('click', function(e){
+      if (e.target.closest('.cmore')) { S.lim += 24; render(); return; }
+    });
+  }
+  function start(){
+    stat(); bind(); render();
+    var s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'; s.onload = mapInit; document.head.appendChild(s);
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'; document.head.appendChild(l);
+  }
+  start();
+  // the research agent republishes the data every week: use the newest copy if it has the scorecard
+  fetch('/data/bali-cases.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+    if (!d || !d.cases || !d.cases.length || !d.cases[0].checks || d.cases.length < C.length) return; D = d; C = d.cases; stat(); render();
+  }).catch(function(){});
+})();
