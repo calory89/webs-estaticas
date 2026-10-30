@@ -87,7 +87,7 @@
     var ev = x.evidence || [];
     if ($('xchk')) KBChain(c.id, ev).then(function(r){ $('xchk').innerHTML = r.ok ? '✓ chain verified in your browser' : '⚠ ' + r.bad.length + ' item(s) do not match'; $('xchk').style.color = r.ok ? '#1F8A5B' : '#B42318'; });
     document.querySelectorAll('[data-v]').forEach(function(btn){ btn.onclick = function(){ view(token, c.id, +btn.dataset.v); }; });
-    $('xadd').onclick = function(){ if (demo) return KB.toast('This is the demo account: nothing is saved.'); addDoc(c, token); };
+    $('xadd').onclick = function(){ addDoc(c, token, demo); };
     $('xjson').onclick = function(){ var blob = new Blob([JSON.stringify({ case: c.code, case_id: c.id, exported: new Date().toISOString(), formula: "chain = sha256((prev or 'genesis:' + case_id) + '|' + sha256 + '|' + kind + '|' + taken_at as YYYY-MM-DDTHH:MM:SSZ)", evidence: ev.map(function(e){ return { id: e.id, kind: e.kind, title: e.title, sha256: e.sha256, prev: e.prev, chain: e.chain, taken_at: e.taken_at, lat: e.lat, lng: e.lng, by: e.by, status: e.status }; }) }, null, 2)], { type: 'application/json' }); var u = URL.createObjectURL(blob), l = document.createElement('a'); l.href = u; l.download = 'kolaboro-' + c.code + '-evidence.json'; l.click(); };
     $('xpdf').onclick = function(){ pdf(c, x, token); };
     $('xpref').onsubmit = function(e){ e.preventDefault(); if (demo) return KB.toast('This is the demo account: nothing is saved.'); rpc(token, 'prefs', { case_id: c.id, lang: this.lang.value, watch: this.watch.checked }).then(function(d){ if (d.case) { CACHE[c.id] = d.case; KB.toast('Saved'); } }); };
@@ -108,12 +108,12 @@
     return { el: w, body: w.querySelector('.x-body'), close: close };
   }
 
-  function addDoc(c, token){
+  function addDoc(c, token, demo){
     var m = modal('<h2 style="margin-top:0">Add a document</h2><p class="ap-small ap-muted">A photo of each page, or the PDF. We read it, compare it with what you were told, and keep the original in your case.</p>' +
       '<form id="xdf" class="ap-form"><label class="full">What is it?<select name="type">' + DOCT.map(function(t){ return '<option value="' + t[0] + '">' + t[1] + '</option>'; }).join('') + '</select></label>' +
       '<label class="full">Pages (photos or one PDF, up to 6)<input type="file" name="f" accept="image/*,application/pdf" multiple required></label>' +
       '<label class="full">What were you told about it? (optional)<textarea name="claim" rows="3" placeholder="e.g. Freehold, 300 m², permit approved, no debts">' + esc(c.user_notes || '') + '</textarea></label>' +
-      '<div class="full"><button class="ap-btn" type="submit">Read and add to my case</button></div><p class="full cp-err" id="xerr"></p></form><div id="xres"></div>');
+      (demo ? '<p class="full ap-banner ok" style="margin:0">Demo account: try the reader with any document (or <a href="/k/cases/cert-sample.jpg" download>download our sample certificate</a>). The result is shown here but not saved.</p>' : '') + '<div class="full"><button class="ap-btn" type="submit">' + (demo ? 'Read it' : 'Read and add to my case') + '</button></div><p class="full cp-err" id="xerr"></p></form><div id="xres"></div>');
     var f = m.body.querySelector('#xdf');
     f.onsubmit = function(e){
       e.preventDefault(); var files = [].slice.call(f.f.files, 0, 6); if (!files.length) return;
@@ -128,13 +128,14 @@
           var res = r.result || null, title = res ? (res.document_kind || (res.document_type ? 'Land certificate (' + res.document_type + ')' : 'Document')) : files[0].name;
           // keep each page as its own item, the reading result on the first page
           var chain = Promise.resolve();
+          if (demo) return chain.then(function(){ return res; });
           urls.forEach(function(u, i){ chain = chain.then(function(){ return rpc(token, 'add_doc', { case_id: c.id, title: title + (urls.length > 1 ? ' · page ' + (i + 1) : ''), file: u, meta: i === 0 ? { type: type, claim: f.claim.value, result: res, read_error: r.error || null } : { type: type, page: i + 1 } }).then(function(d){ if (d.error) throw new Error(d.error === 'too_big' ? 'File too big' : 'Could not save: ' + d.error); if (d.case) CACHE[c.id] = d.case; }); }); });
           return chain.then(function(){ return res; });
         });
       }).then(function(res){
-        m.body.querySelector('#xres').innerHTML = res ? resultHtml(res) : '<div class="ap-banner warn">Saved to your case. We couldn\'t read it automatically, so the team will review it by hand.</div>';
-        f.remove(); KB.toast('Added to your case'); if (window.KBXrefresh) KBXrefresh();
-      }).catch(function(err){ btn.disabled = false; btn.textContent = 'Read and add to my case'; $('xerr').textContent = err.message || 'Something went wrong'; });
+        m.body.querySelector('#xres').innerHTML = res ? resultHtml(res) : demo ? '<div class="ap-banner warn">We couldn\'t read it automatically. Try a clearer photo.</div>' : '<div class="ap-banner warn">Saved to your case. We couldn\'t read it automatically, so the team will review it by hand.</div>';
+        f.remove(); if (!demo) { KB.toast('Added to your case'); if (window.KBXrefresh) KBXrefresh(); }
+      }).catch(function(err){ btn.disabled = false; btn.textContent = demo ? 'Read it' : 'Read and add to my case'; $('xerr').textContent = err.message || 'Something went wrong'; });
     };
   }
   function resultHtml(r){

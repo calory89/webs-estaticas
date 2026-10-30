@@ -30,7 +30,7 @@
   function earnings(){
     var e = D.earnings || {}, q = D.quality || {};
     return '<div class="f-kpis"><div><span>To be paid</span><b>€' + (+e.approved_unpaid || 0) + '</b></div><div><span>In review</span><b>€' + (+e.pending_review || 0) + '</b></div><div><span>Paid so far</span><b>€' + (+e.paid || 0) + '</b></div><div><span>Quality score</span><b>' + (q.score == null ? '—' : q.score + '/100') + '</b></div></div>' +
-      (q.score != null ? '<p class="ap-small ap-muted" style="margin:6px 0 0">' + q.photos_ok + ' of ' + q.photos + ' photos accepted · ' + q.on_time + ' of ' + q.tasks_submitted + ' visits on time · ' + q.approved + ' approved' + (q.returned ? ', ' + q.returned + ' returned' : '') + '. Agents with higher scores get visits first.</p>' : '');
+      (q.score != null ? '<p class="ap-small ap-muted" style="margin:6px 0 0">' + q.photos_ok + ' of ' + q.photos + ' photos accepted' + (q.tasks_submitted ? ' · ' + q.on_time + ' of ' + q.tasks_submitted + ' visits on time · ' + q.approved + ' approved' + (q.returned ? ', ' + q.returned + ' returned' : '') : '') + '. Agents with higher scores get visits first.</p>' : '');
   }
   function list(){
     if (!D.tasks.length) return '<div class="ap-empty">No visits assigned yet. When the team assigns you a visit you get an email and it appears here, with the address, the checklist and the questions to ask.</div>';
