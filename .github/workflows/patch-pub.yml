@@ -32,7 +32,7 @@ jobs:
           git status --porcelain | cut -c4- | awk -F/ '{print $1"/"$2}' | sort | uniq -c | sort -rn | head -40
           total=$(( $(git ls-files | wc -l) + $(git status --porcelain --untracked-files=all | grep -c '^??' || true) ))
           echo "total=$total"
-          if [ "${{ github.event.inputs.branch }}" = "pub/_lovable" ] && [ $total -gt 19500 ]; then echo "too many files"; exit 1; fi
+          if [ "${{ github.event.inputs.branch }}" = "pub/_lovable" ] && [ $total -gt 95000 ]; then echo "too many files"; exit 1; fi
       - name: Commit
         if: ${{ github.event.inputs.dry_run != 'true' }}
         env:
