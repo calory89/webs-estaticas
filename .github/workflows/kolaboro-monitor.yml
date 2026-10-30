@@ -1,0 +1,23 @@
+name: Kolaboro monitor
+# Every two hours: pages, API and database; emails hello@kolaboro.com on failure.
+on:
+  schedule:
+    - cron: '7 */2 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/monitor.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools/kolaboro-agent
+      - name: Check kolaboro.com
+        env:
+          KB_MACHINE_KEY: ${{ secrets.KB_MACHINE_KEY }}
+        run: python3 tools/kolaboro-agent/monitor.py

@@ -1,0 +1,30 @@
+name: Kolaboro plot watch
+# Daily: Sentinel-2 (or Sentinel-1 radar under clouds) comparison for every client plot on the map; result sealed into the case.
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/plots.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: kolaboro-plots
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools/kolaboro-agent
+      - name: Compare plots
+        env:
+          CDSE_CLIENT_ID: ${{ secrets.CDSE_CLIENT_ID }}
+          CDSE_CLIENT_SECRET: ${{ secrets.CDSE_CLIENT_SECRET }}
+          KB_MACHINE_KEY: ${{ secrets.KB_MACHINE_KEY }}
+        run: |
+          pip install -q pillow
+          python3 tools/kolaboro-agent/plots.py

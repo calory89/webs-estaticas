@@ -1,0 +1,34 @@
+name: Kolaboro backup
+# Daily: database snapshot (30 kept) and every evidence file, by SHA-256, into this private repo.
+on:
+  schedule:
+    - cron: '37 2 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/backup.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-backup
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Back up
+        env:
+          KB_MACHINE_KEY: ${{ secrets.KB_MACHINE_KEY }}
+        run: python3 tools/kolaboro-agent/backup.py tools/kolaboro-agent/backups
+      - name: Save
+        run: |
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add -A tools/kolaboro-agent/backups
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro backup $(date -u +%F)"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done; exit 1

@@ -1,0 +1,43 @@
+name: Kolaboro render index
+# Weekly: perceptual hashes of every image on the tracked project websites, published to kolaboro.com/data/image-index.json.
+on:
+  schedule:
+    - cron: '51 4 * * 0'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/image_index.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-images
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Build index
+        run: |
+          pip install -q pillow imagehash
+          python3 tools/kolaboro-agent/image_index.py "$RUNNER_TEMP/image-index.json"
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/image-index.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/image-index.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: render index $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
