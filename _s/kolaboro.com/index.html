@@ -33,7 +33,7 @@
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
     </div>
     <nav class="links" id="menu" aria-label="Main">
-      <a href="/#how">How it works</a><a href="/technology">Technology</a><a href="/check">Check a project</a><a href="/cases">Live cases</a><a href="/agents">Agents</a><a href="/developers">Developers</a><a href="/copilot">Copilot</a>
+      <a href="/#how">How it works</a><a href="/check">Check a project</a><a href="/pricing">Pricing</a><a href="/cases">Live cases</a><a href="/about">About</a>
       <a class="btn btn-hi btn-sm" href="/#start" data-role="buyer" data-ev="cta_nav">Protect my purchase</a>
     </nav>
   </div>
@@ -47,8 +47,12 @@
       <p class="lead">In Bali, someone who lives where you're buying checks the land title, the permits and the building before each payment, and tells you whether to pay. You pay us. The developer never does.</p>
       <div class="hero-cta">
         <a class="btn btn-hi" href="#start" data-role="buyer" data-ev="cta_hero">Protect my purchase</a>
-        <a class="btn btn-line" href="/agents" data-ev="cta_hero_agent">Become an agent</a>
       </div>
+      <form class="hero-check" action="/check" method="get" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;max-width:520px" data-ev="hero_check_form">
+        <label for="hero-url" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Project website</label>
+        <input id="hero-url" name="url" type="url" inputmode="url" required placeholder="Paste the project's website" style="flex:1 1 240px;min-width:0;padding:12px 14px;border:1px solid #C9D0D6;border-radius:10px;font:inherit">
+        <button class="btn btn-hi" type="submit">Check it free</button>
+      </form>
       <p class="launch"><i aria-hidden="true"></i>Launching in Bali <span aria-hidden="true">·</span> <a href="/independence" class="indep">Developers never pay us</a> · <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>
     </div>
 
@@ -129,7 +133,7 @@
         </div>
         <div class="toast" id="toast" role="status"><b>To the buyer, in Austin, Texas</b><span>Milestone 3 verified with 14 photos and 2 videos. No red flags.</span></div>
       </figure>
-      <p class="example" style="position:static;text-align:right;margin-top:10px"><a href="/report/sample" data-ev="hero_sample_report">Illustrative example · open the sample report</a></p>
+      <p class="example" style="position:static;text-align:right;margin-top:10px"><a href="/report/sample" data-ev="hero_sample_report">Illustrative example, fictional project · open the sample report</a></p>
       <ol class="insp-legend" aria-label="How it works">
         <li><b>1</b>A local agent visits the site</li>
         <li><b>2</b>Every milestone filmed with GPS proof</li>
