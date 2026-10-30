@@ -13,5 +13,118 @@
     true
    ]
   }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "coco-hills",
+  "name": "COCO Hills Resort",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "every-bali",
+  "name": "EVERY Bali",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "oasis-iii",
+  "name": "Oasis III",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "the-one-by-almal-nusa-dua",
+  "name": "The One by Almal Bali Nusa Dua",
+  "changed": {
+   "price_from": [
+    100000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "lease_years_base": [
+    25,
+    null
+   ],
+   "extension_promised": [
+    true,
+    null
+   ],
+   "advertised_yield_pct": [
+    17,
+    null
+   ],
+   "completion_year": [
+    2028,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "breig-edem-i-villas",
+  "name": "EDEM I Villas",
+  "changed": {
+   "price_from": [
+    357500,
+    327500
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "lb-xo-pandawa",
+  "name": "XO Pandawa",
+  "changed": {
+   "price_from": [
+    1800000000,
+    null
+   ],
+   "currency": [
+    "IDR",
+    null
+   ],
+   "advertised_yield_pct": [
+    14,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "vilamoura-terracota",
+  "name": "Terracota",
+  "changed": {
+   "price_from": [
+    660000,
+    700000
+   ]
+  }
  }
 ]
