@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/technology.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=dfe55d4911">
+<link rel="stylesheet" href="/k/site.css?v=8531760cc6">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Technology: the verification engine", "item": "https://kolaboro.com/technology/"}]}</script>
@@ -88,7 +88,7 @@
   <p class="muted" style="font-size:.8rem;margin-top:10px">Contains modified Copernicus Sentinel data, processed by Kolaboro. 10 m resolution: it shows land being cleared and built, not the details of a single villa. Change is measured within the same dry season each year, so it isn't confused with the rains. <span id="satu"></span></p>
 </div></section><section class="sec" id="certificate"><div class="wrap">
   <div class="cp-head"><p class="eyebrow">Live · reads Indonesian land certificates</p><h2>Read a land certificate</h2>
-  <p class="lead">Upload a photo of the certificate (SHM, SHGB or Hak Pakai) and paste what the developer told you. We transcribe it, compare it with the claim and list what to check at the land office. The sample is fictional and has two traps.</p></div>
+  <p class="lead">Upload a photo of the certificate (SHM, SHGB or Hak Pakai) and paste what the developer told you. We transcribe it, compare it with the claim and list what to check at the land office. The sample is fictional and has three traps.</p></div>
   <div class="cp-grid">
     <form id="ctf" class="cp-in">
       <div class="pg-drop"><label><b>Certificate photo</b><span>A clear photo of the first page and any endorsement pages.</span><input type="file" id="ctimg" accept="image/*"></label><div class="pg-thumbs" id="ctth"></div></div>
@@ -169,7 +169,7 @@
   var pf = $('pgf');
   if (pf) {
     var photos = [], plan = null, btn = pf.querySelector('button[type=submit]'), out = $('pgout'), err = $('pgerr');
-    function thumbs(){ $('pgth').innerHTML = photos.map(function(p){ return '<img src="' + p + '" alt="">'; }).join(''); $('pgplt').innerHTML = plan ? '<img src="' + plan + '" alt="">' : ''; btn.disabled = !photos.length; }
+    function thumbs(){ $('pgth').innerHTML = photos.map(function(p){ return '<img src="' + p + '" alt="Site photo">'; }).join(''); $('pgplt').innerHTML = plan ? '<img src="' + plan + '" alt="Payment schedule">' : ''; btn.disabled = !photos.length; }
     $('pgph').onchange = function(){ var fs = [].slice.call(this.files, 0, 4); Promise.all(fs.map(function(f){ return fileUrl(f).then(function(u){ return resize(u, 1024); }); })).then(function(a){ photos = a; thumbs(); }); };
     $('pgpl').onchange = function(){ var f = this.files[0]; if (!f) return; fileUrl(f).then(function(u){ return resize(u, 1024); }).then(function(a){ plan = a; thumbs(); }); };
     $('pgsample').onclick = function(){ if (!window.__pgx) { window.__pgx = 1; fetch('/data/progress-sample.json').then(function(r){ return r.json(); }).then(function(d){ if (d && d.progress && !out.querySelector('.cp-status')) { window.__pgshow && window.__pgshow(d, true); } }); } Promise.all(['idconstr','mxconstr','obranegra'].map(function(k){ return resize('/k/cases/' + k + '.jpg', 1024); })).then(function(a){ photos = a; plan = null; thumbs(); if (window.kbEvent) kbEvent('progress_sample'); }); };
@@ -233,7 +233,7 @@
     document.getElementById('satu').textContent = 'Updated ' + d.updated + '.';
     g.innerHTML = d.sites.map(function(s, i){
       var ps = s.periods, last = ps.filter(function(p){ return p.cleared_since_first_pct != null; }).pop() || {};
-      return '<div class="sat-c" data-i="' + i + '"><div class="sat-img"><img alt="Satellite view of ' + esc(s.label) + '" src="/k/sat/' + s.id + '/' + ps[ps.length-1].key + '.jpg"><img class="sat-ov" alt="" hidden></div>' +
+      return '<div class="sat-c" data-i="' + i + '"><div class="sat-img"><img alt="Satellite view of ' + esc(s.label) + '" src="/k/sat/' + s.id + '/' + ps[ps.length-1].key + '.jpg"><img class="sat-ov" alt="Areas where vegetation was cleared between the two dates" hidden></div>' +
         '<div class="sat-tabs">' + ps.map(function(p, k){ return '<button type="button" data-k="' + k + '"' + (k === ps.length-1 ? ' class="on"' : '') + '>' + esc(p.key === 'latest' ? 'Latest' : p.key.replace('dry','')) + '</button>'; }).join('') + '</div>' +
         '<label class="sat-tg"><input type="checkbox"> Show land changed since ' + esc(ps[0].key.replace('dry','')) + '</label>' +
         '<h3>' + esc(s.label) + '</h3><p class="muted" style="margin:0;font-size:.85rem">' + (s.kind === 'area' ? 'Development area' : 'Client plot') + ' · ' + s.box_km + ' × ' + s.box_km + ' km</p>' +
