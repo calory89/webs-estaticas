@@ -51,7 +51,7 @@ jobs:
           PY
           echo "files in deploy: $(git ls-files | wc -l) + new $(git status --porcelain | grep -c '^??' || true)"
           total=$(( $(git ls-files | wc -l) + $(git status --porcelain --untracked-files=all | grep -c '^??' || true) ))
-          echo "total=$total"; if [ $total -gt 19500 ]; then echo "too many files for Cloudflare Pages"; exit 1; fi
+          echo "total=$total"; if [ $total -gt 95000 ]; then echo "too many files for Cloudflare Pages"; exit 1; fi
       - name: Commit
         env:
           MSG: ${{ github.event.inputs.message }}
