@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/status.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=8e91d31d72">
+<link rel="stylesheet" href="/k/site.css?v=0a641043a0">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Status", "item": "https://kolaboro.com/status/"}]}</script>
@@ -42,7 +42,7 @@
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Status</p><h1>System status</h1><p class="lead">Every part of the Kolaboro engine, checked live from your browser right now.</p></div></section><section class="sec"><div class="wrap"><table class="st-t"><thead><tr><th>Component</th><th>State</th><th>Detail</th><th>Latency</th></tr></thead><tbody id="stt"></tbody></table>
 <p class="muted" style="font-size:.85rem;margin-top:10px" id="stu">Checking…</p>
-<p class="muted" style="font-size:.85rem">Scheduled jobs: research agent every Monday 06:17 UTC, satellite watch every Monday 07:41 UTC, Bitcoin proof upgrades every 3 hours. <a href="/docs/api">Open data and API</a>.</p></div></section>
+<p class="muted" style="font-size:.85rem">Scheduled jobs: research agent every Monday 06:17 UTC, area satellite watch every Monday 07:41 UTC, client plot satellite watch daily 06:23 UTC, project change tracking daily 05:43 UTC, render index every Sunday, Bitcoin proof upgrades every 3 hours, backups daily, uptime checks every 2 hours. <a href="/docs/api">Open data and API</a>.</p></div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
@@ -78,7 +78,7 @@
         <li><a href="/legal/privacy">Privacy</a></li>
         <li><a href="/legal/terms">Terms</a></li></ul></div>
     </div>
-    <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Trust Scores are opinions based on the evidence listed on each page.</p>
+    <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
 <script src="/k/site.js?v=f84cde6f0e" defer></script>
@@ -92,6 +92,11 @@
     timed('/api/kb/health').then(function(x){ row('Edge API (Cloudflare Workers)', x.ok, 'All /api/kb endpoints', x.ms); row('Database (Postgres)', x.d.database === 'up', 'Accounts, cases, evidence ledger', x.d.db_ms); row('AI models', !!x.d.models_configured, 'Desk review, copilot, plan vs reality', null); }).catch(function(){ row('Edge API (Cloudflare Workers)', false, 'Unreachable', null); }),
     timed('/api/kb/stats').then(function(x){ var d = x.d; row('Bitcoin timestamping (OpenTimestamps)', true, d.stamps + ' fingerprints · ' + d.stamps_confirmed + ' confirmed' + (d.last_block ? ' · latest block #' + d.last_block.toLocaleString('en') : ''), x.ms); }).catch(function(){}),
     timed('/data/world-claims.json').then(function(x){ var n = 0; Object.keys(x.d.markets || {}).forEach(function(k){ n += x.d.markets[k].projects; }); var fresh = (Date.now() - new Date(x.d.updated).getTime()) / 864e5 < 9; row('Research agent (weekly crawler)', fresh ? true : null, n + ' projects · last run ' + age(x.d.updated), x.ms); }).catch(function(){}),
+    fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_health_public', { method:'POST', headers:{ apikey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw', Authorization:'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw', 'content-type':'application/json' }, body:'{}' }).then(function(r){ return r.json(); }).then(function(h){
+      row('Email notifications', h.mail_failed_24h ? null : true, (h.mail_last_at ? 'last sent ' + age(h.mail_last_at) : 'none sent yet') + (h.mail_queued ? ' · ' + h.mail_queued + ' queued' : '') + (h.mail_failed_24h ? ' · ' + h.mail_failed_24h + ' failed today' : ''), null);
+      row('Client plot satellite watch', true, h.plots_watched + ' plot' + (h.plots_watched === 1 ? '' : 's') + ' watched' + (h.plots_last_at ? ' · last comparison ' + age(h.plots_last_at) : ''), null);
+    }).catch(function(){}),
+    timed('/data/image-index.json').then(function(x){ var fresh = (Date.now() - new Date(x.d.updated).getTime()) / 864e5 < 9; row('Render reuse index', fresh ? true : null, x.d.images.toLocaleString('en') + ' images · ' + x.d.sites + ' sites · updated ' + age(x.d.updated), x.ms); }).catch(function(){}),
     timed('/data/satellite.json').then(function(x){ var fresh = (Date.now() - new Date(x.d.updated).getTime()) / 864e5 < 9; row('Satellite watch (Sentinel-2)', fresh ? true : null, x.d.sites.length + ' sites · last run ' + age(x.d.updated) + ' · ' + x.d.processing_units + ' PU', x.ms); }).catch(function(){})
   ];
   Promise.all(jobs).then(function(){ document.getElementById('stu').textContent = 'Checked live from your browser at ' + new Date().toLocaleTimeString() + '.'; });
