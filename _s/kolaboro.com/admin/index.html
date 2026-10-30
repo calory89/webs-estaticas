@@ -82,11 +82,12 @@ var $=function(i){return document.getElementById(i)}, D=null, PW='';
 function st(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function rpc(fn,body){return fetch(SB+fn,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+KEY,'Content-Type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json()})}
+window.KBADM = { rpc: function(f, b){ return rpc(f, b); }, pw: function(){ return PW; } };
 function when(t){var d=new Date(t),s=(Date.now()-d)/1000;if(s<3600)return Math.max(1,Math.round(s/60))+' min ago';if(s<86400)return Math.round(s/3600)+' h ago';return d.toLocaleDateString(undefined,{day:'numeric',month:'short'})+' '+d.toTimeString().slice(0,5)}
 function load(){ $('upd').textContent='Loading…'; return rpc('kolaboro_admin',{p_key:PW}).then(function(d){ if(d.error){ st('kb-admin',null); $('app').classList.add('hide'); $('login').classList.remove('hide'); $('le').textContent='Wrong password.'; return;} D=d; $('login').classList.add('hide'); $('app').classList.remove('hide'); render(); $('upd').textContent='Updated '+new Date().toTimeString().slice(0,5); })}
 $('lf').addEventListener('submit',function(e){e.preventDefault();PW=$('pw').value;st('kb-admin',PW);load()});
 $('lo').onclick=function(){st('kb-admin',null);location.reload()}; $('rf').onclick=load;
-document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','clients','agents','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
+document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','ops','clients','agents','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
 function cnt(f){return D.leads.filter(f).length}
 function ev(k){return D.events.filter(function(e){return e.kind===k}).length}
 function render(){
@@ -184,5 +185,5 @@ var LK=[['Google Analytics 4','https://analytics.google.com/analytics/web/','Tra
 $('links').innerHTML=LK.map(function(l){return '<a href="'+l[1]+'" target="_blank" rel="noopener"><b>'+l[0]+' ↗</b><small>'+l[2]+'</small></a>'}).join('');
 PW=st('kb-admin')||''; if(PW)load();
 })();
-</script><script src="/k/ops.js?v=6345c377f9"></script>
+</script><script src="/k/ops.js?v=cff90ae77e"></script>
 </body></html>

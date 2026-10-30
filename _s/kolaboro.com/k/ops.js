@@ -3,7 +3,7 @@
   var O = null;
   function $(i){ return document.getElementById(i); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
-  function ops(a, p){ return rpc('kolaboro_ops', { p_key: PW, p_action: a, p_payload: p || {} }); }
+  function ops(a, p){ return KBADM.rpc('kolaboro_ops', { p_key: KBADM.pw(), p_action: a, p_payload: p || {} }); }
   function d(t){ return t ? new Date(t).toLocaleString(undefined, { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' }) : '—'; }
   var STG = ['Case opened','Documents','Land & title','Building permit','Site visit','Report'];
   function render(){
