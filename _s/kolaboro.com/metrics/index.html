@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Open metrics | Kolaboro</title>
+<meta name="description" content="Kolaboro's weekly numbers, live from the database: visits, leads, paid checks, sealed site photos, reviewer corrections and agent audits, including the zeros.">
+
+<link rel="canonical" href="https://kolaboro.com/metrics/">
+<link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#17212B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kolaboro">
+<meta property="og:title" content="Open metrics | Kolaboro">
+<meta property="og:description" content="Kolaboro's weekly numbers, live from the database: visits, leads, paid checks, sealed site photos, reviewer corrections and agent audits, including the zeros.">
+<meta property="og:url" content="https://kolaboro.com/metrics/">
+<meta property="og:image" content="https://kolaboro.com/k/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kolaboro.com/k/og.png">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/k/site.css?v=ea1b658954">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
+<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Status", "item": "https://kolaboro.com/metrics/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="Kolaboro home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+    <div class="nav-right">
+      <a class="btn btn-hi btn-sm nav-cta-m" href="/#start" data-role="buyer" data-ev="cta_nav_mobile">Protect my purchase</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="/#how">How it works</a><a href="/technology">Technology</a><a href="/check">Check a project</a><a href="/cases">Live cases</a><a href="/agents">Agents</a><a href="/developers">Developers</a><a href="/copilot">Copilot</a>
+      <a class="btn btn-hi btn-sm" href="/#start" data-role="buyer" data-ev="cta_nav">Protect my purchase</a>
+    </nav>
+  </div>
+</header>
+<main id="main"><section class="phero"><div class="wrap"><p class="eyebrow">Open metrics · live from our database</p><h1>Kolaboro in numbers, every week</h1>
+<p class="lead">The same numbers we look at, published as they are, including the zeros. Our own tests, team accounts and the demo case are left out.</p><p class="muted" id="mtu" style="font-size:.85rem">Loading…</p>
+<div class="mt-tiles" id="mtt"></div></div></section>
+<section class="sec alt"><div class="wrap"><h2>Last 12 weeks</h2><div class="mt-grid" id="mtg"></div>
+<p class="muted" style="font-size:.85rem;margin-top:16px">Weeks start on Monday (UTC). Visits are counted once per browser session, without cookies. Desk reviews and documents count only fresh runs, not cached answers. "Report corrections" counts every change our reviewers made to the model's draft before a report was sent. <a href="/status">System status</a> · <a href="/changelog">What changed</a> · <a href="/independence">Who pays us</a>.</p></div></section>
+<script>
+(function(){
+  var AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_metrics_public', { method:'POST', headers:{ apikey:AK, Authorization:'Bearer ' + AK, 'content-type':'application/json' }, body:'{}' }).then(function(r){ return r.json(); }).then(function(M){
+    var T = M.totals || {}, W = M.weeks || [];
+    function n(x){ return (+x || 0).toLocaleString('en'); }
+    document.getElementById('mtu').textContent = 'Updated ' + new Date(M.generated).toLocaleString(undefined, { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' }) + ' · refreshes every time you open this page';
+    document.getElementById('mtt').innerHTML = [['Paid checks', n(T.paid_checks), '€' + n(T.revenue_eur) + ' revenue'], ['Leads', n(T.leads), 'people who asked for something'], ['Open cases', n(T.cases_open), 'buyers with a case'], ['Agents active', n(T.agents_active), n(T.agents_applied) + ' applied'],
+      ['Followers', n(T.followers), 'emailed when a project changes'], ['Bitcoin timestamps', n(T.stamps), n(T.stamps_confirmed) + ' confirmed in a block'], ['Reports published', n(T.reports_published), n(T.report_corrections) + ' reviewer corrections'], ['Agent audits', n(T.audits), n(T.audits_failed) + ' found a mismatch'], ['API pilot keys', n(T.api_keys), 'agencies, lenders, lawyers']]
+      .map(function(t){ return '<div><span>' + t[0] + '</span><b>' + t[1] + '</b><small>' + t[2] + '</small></div>'; }).join('');
+    var S = [['visits','Visits','Browser sessions on kolaboro.com'], ['desk_reviews','Desk reviews','Project websites read by the research agent'], ['documents_read','Documents and photos read','Certificates, contracts, permits and site photos'], ['leads','Leads','Forms sent by real people'], ['check_requests','Check requests','People asking for a full check'], ['paid_checks','Paid checks','Payments received'], ['revenue_eur','Revenue (€)','Before fees'], ['agent_applicants','Agent applications','Locals applying to verify for buyers'], ['site_photos','Sealed site photos and videos','Accepted by the field tool on real cases'], ['stamps','Bitcoin timestamps','Fingerprints sent to OpenTimestamps']];
+    document.getElementById('mtg').innerHTML = S.map(function(s){
+      var v = W.map(function(w){ return +w[s[0]] || 0; }), mx = Math.max.apply(null, v.concat([1])), bw = 300 / v.length, tot = v.reduce(function(a, b){ return a + b; }, 0), last = v[v.length - 1];
+      var bars = v.map(function(x, i){ var h = x / mx * 96; return '<rect x="' + (i * bw + 2) + '" y="' + (104 - h) + '" width="' + (bw - 4) + '" height="' + Math.max(h, x ? 2 : 1) + '" rx="2" fill="' + (i === v.length - 1 ? '#FF5B14' : x ? '#17212B' : '#E1E4DF') + '"><title>Week of ' + W[i].week + ': ' + x + '</title></rect>'; }).join('');
+      var lab = '<text x="2" y="122" font-size="10" fill="#6B7480">' + (W[0] ? W[0].week.slice(5) : '') + '</text><text x="298" y="122" font-size="10" fill="#6B7480" text-anchor="end">this week</text>';
+      return '<div class="mt-c"><h3>' + s[1] + ' · <span style="color:#FF5B14">' + n(last) + '</span> <small style="font-weight:400;color:#6B7480">this week, ' + n(tot) + ' in 12 weeks</small></h3><p>' + s[2] + '</p><svg viewBox="0 0 300 126" role="img" aria-label="' + s[1] + ' per week">' + bars + lab + '</svg></div>';
+    }).join('');
+  }).catch(function(){ document.getElementById('mtu').textContent = 'Could not load the numbers right now. Try again in a minute.'; });
+})();
+</script></main>
+<div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Agents in Bali; research in 9 markets.</p>
+        <form class="news" data-news novalidate><label for="nl-email">Monthly research notes: what developers promise, and what changed.</label>
+          <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
+          <p class="nmsg" aria-live="polite"></p></form>
+      </div>
+      <div><h4>Buyers</h4><ul>
+        <li><a href="/check">Check a project</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/report/sample">Sample inspection report</a></li>
+        <li><a href="/checklist">Before-you-sign checklist</a></li>
+        <li><a href="/destinations">Destinations</a></li></ul></div>
+      <div><h4>How we work</h4><ul>
+        <li><a href="/how-we-score">How we score</a></li>
+        <li><a href="/developers">For developers</a></li>
+        <li><a href="/corrections">Corrections</a></li>
+        <li><a href="/cases">Live cases</a></li>
+        <li><a href="/technology">Technology</a></li>
+        <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/status">System status</a></li>
+        <li><a href="/metrics">Open metrics</a></li>
+        <li><a href="/api-pilot">API for partners</a></li>
+        <li><a href="/independence">Independence</a></li></ul></div>
+      <div><h4>Kolaboro</h4><ul>
+        <li><a href="/agents">Become an agent</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/changelog">Changelog</a></li>
+        <li><a href="/login">Client login</a></li>
+        <li><a href="/legal/privacy">Privacy</a></li>
+        <li><a href="/legal/terms">Terms</a></li></ul></div>
+    </div>
+    <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
+  </div>
+</footer>
+<script src="/k/site.js?v=4a8bde86eb" defer></script>
+<script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+<div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
+<script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
+fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
+b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
+if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.clarity)clarity('consent');}b.hidden=true;});}).catch(function(){});})();</script>
+<script>
+(function(){
+  if (document.body.scrollHeight < window.innerHeight * 3) return;
+  var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
+  document.body.appendChild(b);
+  b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+</body>
+</html>

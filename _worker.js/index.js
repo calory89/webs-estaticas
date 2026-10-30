@@ -47,6 +47,20 @@ async function viaTop3(req, env, ctx) {
   if (cacheable && r.status === 200) { const c = r.clone(); const h = new Headers(c.headers); h.set('cache-control', 'public, max-age=1800'); ctx.waitUntil(cache.put(ck, new Response(c.body, { status: 200, headers: h }))); }
   return r;
 }
+// kolaboro.com: browser security headers (no framing of private pages, camera and location only for our own pages)
+function kbHeaders(r, u) {
+  const ct = r.headers.get('content-type') || '';
+  if (!/text\/html/.test(ct)) return r;
+  const h = new Headers(r.headers);
+  const priv = /^\/(admin|portal|login|agents\/me|agents\/apply)(\/|$)/.test(u.pathname);
+  h.set('x-frame-options', priv ? 'DENY' : 'SAMEORIGIN');
+  h.set('content-security-policy', "frame-ancestors " + (priv ? "'none'" : "'self'") + "; base-uri 'self'; object-src 'none'; form-action 'self' https://www.paypal.com");
+  h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), interest-cohort=()');
+  h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
+  if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
+  h.delete('access-control-allow-origin');
+  return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+}
 export default {
   async fetch(req, env, ctx) {
     const u = new URL(req.url);
@@ -70,11 +84,12 @@ export default {
       }
     }
     if (u.pathname.startsWith('/__sb/')) return sbProxy(req, u);
+    if (host === 'kolaboro.com') return kbHeaders(await this.site(req, env, ctx, u, host), u);
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
     // kolaboro.com: desk-review API (see kolaboro.js).
-    if (host === 'kolaboro.com' && u.pathname.startsWith('/api/kb/')) { if (!kb) kb = await import('./kolaboro.js'); return kb.api(req, u, env, ctx); }
+    if (host === 'kolaboro.com' && (u.pathname.startsWith('/api/kb/') || u.pathname === '/api/v1' || u.pathname.startsWith('/api/v1/'))) { if (!kb) kb = await import('./kolaboro.js'); return kb.api(req, u, env, ctx); }
     // jobersity.com: 301, HTML propio en /oferta/<id> y /empresa|company/<slug>, sitemap de empresas, 404 reales y cabeceras (see jobersity.js).
     if (host === 'jobersity.com' && req.method === 'GET') {
       if (!jb) jb = await import('./jobersity.js');

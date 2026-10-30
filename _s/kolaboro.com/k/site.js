@@ -281,3 +281,43 @@
   document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href*="paypal.com"]'); if (a) log('pay_click', a.getAttribute('data-ev') || a.textContent.trim().slice(0,60)); }, true);
   if (/^\/thanks/.test(location.pathname)) { try { if (!sessionStorage.getItem('kb-pr')) { sessionStorage.setItem('kb-pr','1'); log('paypal_return', location.search.slice(0,200)); } } catch(e){ log('paypal_return'); } }
 })();
+
+/* r27: first-touch attribution, referral codes, one visit event per session */
+(function(){
+  try {
+    var K = 'kb-attr', q = new URLSearchParams(location.search), a = null;
+    try { a = JSON.parse(localStorage.getItem(K) || 'null'); } catch (e) {}
+    var rh = ''; try { if (document.referrer) { var ru = new URL(document.referrer); if (ru.hostname.replace(/^www\./, '') !== location.hostname.replace(/^www\./, '')) rh = ru.hostname.replace(/^www\./, ''); } } catch (e) {}
+    var se = /(^|\.)(google|bing|duckduckgo|yahoo|ecosia|yandex|baidu|brave|startpage)\./.test(rh), so = /(facebook|instagram|t\.co|twitter|x\.com|linkedin|reddit|tiktok|youtube|whatsapp|telegram)/.test(rh);
+    function clean(x){ return String(x || '').replace(/[|\/]/g, '-').slice(0, 60); }
+    if (!a || q.get('utm_source') || q.get('gclid') || q.get('fbclid')) {
+      a = { src: clean(q.get('utm_source') || (q.get('gclid') ? 'google' : q.get('fbclid') ? 'facebook' : rh ? (se ? rh.split('.').slice(-2, -1)[0] : rh) : 'direct')),
+            medium: clean(q.get('utm_medium') || (q.get('gclid') || q.get('fbclid') ? 'cpc' : se ? 'organic' : so ? 'social' : rh ? 'referral' : '')),
+            campaign: clean(q.get('utm_campaign')), ref: clean(rh), land: location.pathname.replace(/[|\s]/g, '').slice(0, 80) || '/', at: Date.now(), code: a && a.code };
+      try { localStorage.setItem(K, JSON.stringify(a)); } catch (e) {}
+    }
+    var code = (q.get('ref') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 8);
+    var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/', AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+    function rpc(fn, b){ return fetch(SB + fn, { method: 'POST', headers: { apikey: AK, Authorization: 'Bearer ' + AK, 'content-type': 'application/json' }, body: JSON.stringify(b) }).then(function(r){ return r.json(); }); }
+    if (code) rpc('kolaboro_ref_check', { p_code: code }).then(function(ok){
+      if (ok !== true) return; a.code = code; try { localStorage.setItem(K, JSON.stringify(a)); } catch (e) {}
+      try { if (sessionStorage.getItem('kb-refbar')) return; sessionStorage.setItem('kb-refbar', '1'); } catch (e) {}
+      var b = document.createElement('div'); b.className = 'ref-bar'; b.setAttribute('role', 'status');
+      b.innerHTML = 'A Kolaboro client sent you here: <b>€50 off</b> your first check. Code <b>' + code + '</b> is saved and applied when you request a check. <button aria-label="Close">×</button>';
+      b.querySelector('button').onclick = function(){ b.remove(); }; document.body.appendChild(b);
+    }).catch(function(){});
+    var of = window.fetch;
+    window.fetch = function(u, o){
+      try {
+        if (typeof u === 'string' && u.indexOf('rpc/kolaboro_apply') > 0 && o && typeof o.body === 'string') {
+          var x = JSON.parse(localStorage.getItem(K) || 'null') || a, b = JSON.parse(o.body);
+          b.p_source = String(b.p_source || '').split(' | ')[0] + ' | src=' + [x.src, x.medium, x.campaign].join('/') + (x.ref ? ' | ref=' + x.ref : '') + ' | land=' + x.land + (x.code ? ' | code=' + x.code : '');
+          o = Object.assign({}, o, { body: JSON.stringify(b) });
+        }
+      } catch (e) {}
+      return of.call(this, u, o);
+    };
+    var seen = false; try { seen = !!sessionStorage.getItem('kb-visit'); sessionStorage.setItem('kb-visit', '1'); } catch (e) { seen = true; }
+    if (!seen && !/^\/(admin|portal|agents\/me)/.test(location.pathname) && !/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)) rpc('kolaboro_event', { p_kind: 'visit', p_page: location.pathname.slice(0, 200), p_data: { src: a.src, medium: a.medium, campaign: a.campaign, ref: a.ref } }).catch(function(){});
+  } catch (e) {}
+})();

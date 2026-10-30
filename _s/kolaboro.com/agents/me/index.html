@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Agent dashboard | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
-<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=5972c5d404">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=c20f3234be">
 <script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
-</head><body>
+<link rel="manifest" href="/agents/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png"></head><body>
 <header class="ap-top"><div class="ap-top-in"><a class="ap-brand" href="/agents/me"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro <span style="font-weight:600;color:#FFB596;font-size:.85rem">agents</span></a><span class="ap-sp"></span><a class="ap-chip" href="/copilot">Copilot</a><a class="ap-chip" href="/agents/visit">Field app</a><button class="ap-chip" id="out">Log out</button></div></header>
 <main class="ap-main" id="app"><div class="ap-card"><div class="ap-skel" style="width:40%"></div><div class="ap-skel"></div></div></main>
 <script>
@@ -77,5 +77,6 @@ function kbResize(file, max, q){ return new Promise(function(res, rej){ var r = 
   $('out').onclick = function(){ call('logout').then(function(){ KB.del('kb-token'); KB.del('kb-role'); location.href = '/login'; }); };
   load('me');
 })();
-</script><script src="/k/field.js?v=0695a378ed"></script>
+</script><script src="/k/field.js?v=67a490650b"></script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/agents/sw.js", { scope: "/agents/" }).catch(function(){});</script>
 </body></html>

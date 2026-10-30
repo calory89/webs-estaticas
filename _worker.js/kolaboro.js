@@ -45,7 +45,11 @@ function textOf(html) {
     .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
 }
 
+const PILOT = new WeakSet();
+// identifies this worker to the database for usage logging and timestamp storage (private: the worker source is not served)
+const WKEY = 'kbw_05b9a76d1e8195c0d4b0ef74e8d01b5d16b0276008bbc0d0';
 async function rateLimited(req, ctx) {
+  if (PILOT.has(req)) return false;
   const ip = req.headers.get('cf-connecting-ip') || 'x';
   const hour = new Date().toISOString().slice(0, 13);
   const k = new Request('https://kolaboro.com/__rl/' + encodeURIComponent(ip) + '/' + hour);
@@ -144,7 +148,7 @@ async function logged(kind, fn, ctx) {
   try {
     const d = await r.clone().json();
     const k = kind === 'stamp' ? (d.found !== undefined ? 'stamp_lookup' : 'stamp_new') : kind;
-    if (d.error !== 'rate' && d.error !== 'bad_request') ctx.waitUntil(rpc('kolaboro_api_log', { p_kind: k, p_ok: r.ok, p_cached: !!(d.cached || d.existing), p_ms: ms }).catch(() => {}));
+    if (d.error !== 'rate' && d.error !== 'bad_request') ctx.waitUntil(rpc('kolaboro_api_log', { p_kind: k, p_ok: r.ok, p_cached: !!(d.cached || d.existing), p_ms: ms, p_wkey: WKEY }).catch(() => {}));
   } catch (e) {}
   const h = new Headers(r.headers); h.set('server-timing', 'app;dur=' + ms);
   return new Response(r.body, { status: r.status, headers: h });
@@ -170,6 +174,8 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return logged('analyze', () => analyze(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/certificate' && req.method === 'POST') return logged('certificate', () => certificate(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/document' && req.method === 'POST') return logged('document', () => documentRead(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/report-draft' && req.method === 'POST') return logged('report_draft', () => reportDraft(req, env, ctx), ctx);
+  if (u.pathname.startsWith('/api/v1')) return apiV1(req, u, env, ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
   if (u.pathname === '/api/kb/health') return health(env);
   return json({ error: 'not_found' }, 404);
@@ -286,7 +292,7 @@ async function stamp(req, env, ctx) {
   ok.forEach((x, i) => { if (i < ok.length - 1) parts.push(0xff); parts.push(...x.a); });
   const ots = b64(new Uint8Array(parts));
   try {
-    const d = await rpc('kolaboro_stamp_put', { p_hash: h, p_ots: ots, p_calendars: ok.map(x => x.c), p_source: String(b.source || 'web').slice(0, 40) });
+    const d = await rpc('kolaboro_stamp_put', { p_hash: h, p_ots: ots, p_calendars: ok.map(x => x.c), p_source: String(b.source || 'web').slice(0, 40), p_wkey: WKEY });
     return json({ stamp: d, existing: false });
   } catch (e) { return json({ stamp: { hash: h, ots, calendars: ok.map(x => x.c), created_at: new Date().toISOString() }, stored: false }); }
 }
@@ -384,4 +390,71 @@ async function documentRead(req, env, ctx) {
   const res = { analysed: new Date().toISOString(), type, lang, pages: files.length, document: out };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
   return json({ ...res, cached: false });
+}
+
+
+// ---------- Report draft from the evidence (reviewer edits and publishes it in the admin) ----------
+const REPORT_PROMPT = `You are the Kolaboro report writer. A buyer abroad paid us to check an off-plan property before paying. Below is everything in their case: what the developer advertises, the documents we read, the agent's site photos and notes (with GPS and time), satellite comparisons and the buyer's notes.
+Write the DRAFT of the final report. A human reviewer will edit it before it is sent, and every change they make is recorded.
+Rules: use only the evidence given; cite evidence ids in each finding; say "not checked yet" instead of guessing; never accuse anyone; plain English; the buyer is not a lawyer.
+Reply with ONLY one JSON object:
+{
+ "verdict": "safe"|"hold"|"stop",
+ "headline": "one sentence the buyer reads first",
+ "summary": "3 to 5 sentences",
+ "findings": [{"area": "title"|"permit"|"developer"|"progress"|"payments"|"contract"|"returns"|"other", "status": "ok"|"concern"|"red_flag"|"not_checked", "text": "what we found and why it matters, under 45 words", "evidence": [ids]}],
+ "before_next_payment": ["up to 5 concrete things to get or do before paying again"],
+ "questions_for_developer": ["up to 6 precise questions"],
+ "limits": "one sentence on what this check could not cover"
+}
+verdict: "safe" only when title, permit and progress are each supported by evidence and nothing is a red flag; "stop" when any red flag concerns title, permit, money or progress far behind payments; otherwise "hold".`;
+
+async function reportDraft(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  let input; try { input = await rpc('kolaboro_ops2', { p_key: String(b.key || ''), p_action: 'report_input', p_payload: { case_code: String(b.case_code || '') } }); } catch (e) { return json({ error: 'db' }, 503); }
+  if (input.error) return json({ error: input.error }, input.error === 'denied' ? 403 : 400);
+  const ev = (input.evidence || []).map(e => { const m = e.meta || {}; const r = m.result || {}; return { id: e.id, kind: e.kind, step: e.step, title: e.title, status: e.status, reason: e.reason, taken_at: e.taken_at, gps: e.lat ? [e.lat, e.lng] : null, by: e.by,
+    text: m.text || null, summary: r.summary || m.summary || null, flags: r.flags || null, mismatches: r.mismatches || null, area_m2: r.area_m2 || null, holder: r.holder || null, document_type: r.document_type || m.type || null, change: m.change, risky_clauses: r.risky_clauses || r.clauses || null }; });
+  const ctxt = JSON.stringify({ case: input.case, evidence: ev, tasks: (input.tasks || []).map(t => ({ kind: t.kind, status: t.status, agent_note: t.agent_note })) }).slice(0, 60000);
+  let out;
+  try { out = await claude(env, REPORT_PROMPT + '\n\nCASE FILE (JSON):\n' + ctxt); }
+  catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
+  if (!['safe', 'hold', 'stop'].includes(out.verdict)) out.verdict = 'hold';
+  let saved = {}; try { saved = await rpc('kolaboro_ops2', { p_key: String(b.key || ''), p_action: 'report_save', p_payload: { case_code: input.case.code, draft: out, model: MODELS.join('/') } }); } catch (e) {}
+  return json({ id: saved.id || null, draft: out, evidence: ev.length });
+}
+
+// ---------- Pilot API for agencies, lenders and lawyers ----------
+const API_DOC = { name: 'Kolaboro pilot API', version: 'v1', auth: 'Send your key in the x-api-key header. Get one at https://kolaboro.com/api-pilot', limits: '200 calls a day per key during the pilot',
+  endpoints: [
+    { method: 'GET', path: '/api/v1/markets', does: 'What developers advertise in each of the 9 markets we track: title types, lease terms, extension promises, guaranteed-return language, permit numbers published, price bands. Advertised claims, not verified facts.' },
+    { method: 'GET', path: '/api/v1/cases', does: 'Anonymised Bali cases our research agent is following, with the questions a buyer must get answered.' },
+    { method: 'POST', path: '/api/v1/projects/check', body: '{ "url": "https://developer-site/project" }', does: 'Desk review of a project page: what it promises, what it leaves out, what to ask before paying.' },
+    { method: 'POST', path: '/api/v1/documents/read', body: '{ "type": "auto|certificate|contract|permit|company|invoice", "files": ["data:image/jpeg;base64,…" or "data:application/pdf;base64,…"], "claim": "what the seller told the buyer", "lang": "en" }', does: 'Reads a land certificate, contract, permit, company deed or invoice and compares it with the claim.' },
+    { method: 'GET', path: '/api/v1/verify/{sha256}', does: 'Whether a file fingerprint has a Bitcoin timestamp (OpenTimestamps) and when.' },
+    { method: 'GET', path: '/api/v1/attestations/{share_token}', does: 'The status of a buyer\'s case they chose to share with you: stage, verdict, evidence counts, chain head and dates.' }
+  ] };
+function cors(r) { const h = new Headers(r.headers); h.set('access-control-allow-origin', '*'); h.set('access-control-allow-headers', 'x-api-key, content-type'); h.set('access-control-allow-methods', 'GET, POST, OPTIONS'); return new Response(r.body, { status: r.status, headers: h }); }
+async function apiV1(req, u, env, ctx) {
+  if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
+  const path = u.pathname.replace(/\/+$/, '');
+  if (path === '/api/v1' || path === '/api/v1/docs') return cors(json(API_DOC));
+  const key = req.headers.get('x-api-key') || u.searchParams.get('key') || '';
+  if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return cors(json({ error: 'missing_key', how: 'https://kolaboro.com/api-pilot' }, 401));
+  const ep = path.replace(/\/[0-9a-f]{64}$/, '/{sha256}').replace(/\/attestations\/[0-9a-f]+$/, '/attestations/{token}');
+  let a; try { a = await rpc('kolaboro_api_use', { p_key: key, p_endpoint: req.method + ' ' + ep }); } catch (e) { return cors(json({ error: 'db' }, 503)); }
+  if (a.error) return cors(json(a, a.error === 'rate_limited' ? 429 : 401));
+  const hdr = r => { const x = cors(r); x.headers.set('x-ratelimit-remaining', String(a.remaining)); return x; };
+  try {
+    if (path === '/api/v1/markets' && req.method === 'GET') { const r = await fetch('https://kolaboro.com/data/world-claims.json', { cf: { cacheTtl: 600 } }); return hdr(json({ source: 'Advertised claims on developer pages and portals, not verified facts.', data: await r.json() })); }
+    if (path === '/api/v1/cases' && req.method === 'GET') { const r = await fetch('https://kolaboro.com/data/bali-cases.json', { cf: { cacheTtl: 600 } }); return hdr(json(await r.json())); }
+    let m = path.match(/^\/api\/v1\/verify\/([0-9a-f]{64})$/);
+    if (m && req.method === 'GET') { const d = await rpc('kolaboro_stamp_get', { p_hash: m[1] }); return hdr(json({ sha256: m[1], timestamped: !!d, stamp: d ? { created_at: d.created_at, bitcoin_block: d.bitcoin_block || null, calendars: d.calendars, ots_base64: d.ots } : null, verify_by_hand: 'https://kolaboro.com/verify' })); }
+    m = path.match(/^\/api\/v1\/attestations\/([0-9a-f]{10,40})$/);
+    if (m && req.method === 'GET') { const d = await rpc('kolaboro_share_get', { p_token: m[1] }); if (d.error) return hdr(json({ error: 'not_found' }, 404)); delete d.ref_code; return hdr(json({ ...d, page: 'https://kolaboro.com/r/?t=' + m[1] })); }
+    if (path === '/api/v1/projects/check' && req.method === 'POST') { const r2 = new Request(req.url, { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': 'pilot-' + key.slice(9, 17) }, body: await req.text() }); PILOT.add(r2); return hdr(await analyze(r2, env, ctx)); }
+    if (path === '/api/v1/documents/read' && req.method === 'POST') { const r2 = new Request(req.url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: await req.text() }); PILOT.add(r2); return hdr(await documentRead(r2, env, ctx)); }
+  } catch (e) { return cors(json({ error: 'server', detail: String(e.message || e).slice(0, 120) }, 500)); }
+  return cors(json({ error: 'not_found', docs: 'https://kolaboro.com/api/v1' }, 404));
 }

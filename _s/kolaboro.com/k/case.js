@@ -66,6 +66,7 @@
   function sideHtml(c, x){
     return '<section class="ap-card" id="xreport"><h2>Case file</h2><p class="ap-small ap-muted" style="margin-top:0">A PDF of everything in your case today: status, documents read, photos with GPS and time, satellite results and the fingerprint chain, with a QR code anyone can scan to check it wasn\'t changed.</p>' +
       '<button class="ap-btn" id="xpdf">Download case file (PDF)</button> <button class="ap-btn x-line" id="xjson">Evidence data (JSON)</button></section>' +
+      '<section class="ap-card" id="xshare"><h2>Share your case</h2><p class="ap-small ap-muted" style="margin-top:0">A read-only page for your lawyer, bank or partner: stage, verdict, how many documents and photos are sealed, and the fingerprint chain. No documents, no personal details.</p><label class="ap-small" style="display:flex;gap:8px;align-items:center;margin:0 0 10px"><input type="checkbox" id="xshp" style="width:auto"> Show the project name and our note</label><button class="ap-btn x-sm" id="xshb">Create a share link</button><div id="xsho"></div></section>' +
       '<section class="ap-card"><h2>Emails</h2><form class="ap-form" id="xpref"><label>Language of your emails and reports<select name="lang">' + LANGS.map(function(l){ return '<option value="' + l[0] + '"' + (x.lang === l[0] ? ' selected' : '') + '>' + l[1] + '</option>'; }).join('') + '</select></label>' +
       '<label class="full" style="flex-direction:row;gap:8px;align-items:center;display:flex"><input type="checkbox" name="watch"' + (x.watch ? ' checked' : '') + ' style="width:auto"> Email me when the satellite sees changes on my plot</label><div class="full"><button class="ap-btn x-sm" type="submit">Save</button></div></form></section>';
   }
@@ -92,6 +93,33 @@
     $('xpdf').onclick = function(){ pdf(c, x, token); };
     $('xpref').onsubmit = function(e){ e.preventDefault(); if (demo) return KB.toast('This is the demo account: nothing is saved.'); rpc(token, 'prefs', { case_id: c.id, lang: this.lang.value, watch: this.watch.checked }).then(function(d){ if (d.case) { CACHE[c.id] = d.case; KB.toast('Saved'); } }); };
     mapInit(c, x, token, demo);
+    $('xshb').onclick = function(){
+      var b = this; b.disabled = true;
+      KB.rpc('kolaboro_case_share', { p_token: token, p_case_id: c.id, p_show_project: $('xshp').checked }).then(function(d){
+        b.disabled = false; if (!d || d.error) return KB.toast('Could not create the link');
+        var link = 'https://kolaboro.com/r/?t=' + d.token, ref = 'https://kolaboro.com/?ref=' + d.ref_code;
+        $('xsho').innerHTML = '<div class="x-share"><label>Read-only link</label><div class="x-copy"><input readonly value="' + esc(link) + '"><button class="ap-btn x-sm" data-cp="' + esc(link) + '">Copy</button><a class="ap-btn x-sm x-line" href="' + esc(link) + '" target="_blank" rel="noopener">Open</a></div>' +
+          '<label style="margin-top:12px">Recommend Kolaboro</label><p class="ap-small" style="margin:0 0 6px">Friends who use your link get <b>€50 off</b> their first check, and we refund you <b>€50</b> when they pay.</p><div class="x-copy"><input readonly value="' + esc(ref) + '"><button class="ap-btn x-sm" data-cp="' + esc(ref) + '">Copy</button></div><p class="ap-small ap-muted" style="margin:6px 0 0">' + d.referred + ' friend' + (d.referred === 1 ? '' : 's') + ' came with your link · ' + d.referred_paid + ' paid</p></div>';
+        $('xsho').querySelectorAll('[data-cp]').forEach(function(x){ x.onclick = function(){ (navigator.clipboard ? navigator.clipboard.writeText(x.dataset.cp) : Promise.reject()).then(function(){ KB.toast('Copied'); }).catch(function(){ x.previousSibling.select(); document.execCommand('copy'); KB.toast('Copied'); }); }; });
+      });
+    };
+    liveCheck(c, token);
+  }
+  var LIVE = null, LIVEC = null;
+  function liveCheck(c, token){
+    if (LIVEC === c.id) return; LIVEC = c.id;
+    KB.rpc('kolaboro_case_live', { p_token: token, p_action: 'get', p_payload: { case_id: c.id } }).then(function(d){
+      if (!d || !d.live) return;
+      var box = document.createElement('section'); box.className = 'ap-card lv-card'; box.id = 'live';
+      box.innerHTML = '<h2><span class="lv-dot"></span> Your agent is live from the site</h2><p class="ap-small ap-muted" style="margin-top:0">GPS and time are burned into the picture. The video is recorded on the agent\'s phone and sealed into your evidence when they stop.</p><div class="lv-stage lv-view" id="lvv"></div><p class="lv-st" id="lvvst">Connecting…</p>';
+      var col = document.querySelector('#app .ap-col'); if (!col) return; col.insertBefore(box, col.firstChild);
+      if (location.hash === '#live') box.scrollIntoView();
+      var s = document.createElement('script'); s.src = '/k/live.js?v=27'; s.onload = function(){
+        LIVE = KBLive.viewer({ stage: $('lvv'), status: function(t){ var e = $('lvvst'); if (e) e.textContent = t; },
+          get: function(p){ p.case_id = c.id; return KB.rpc('kolaboro_case_live', { p_token: token, p_action: 'get', p_payload: p }); },
+          answer: function(sdp){ return KB.rpc('kolaboro_case_live', { p_token: token, p_action: 'answer', p_payload: { case_id: c.id, sdp: sdp } }); } });
+      }; document.head.appendChild(s);
+    });
   }
 
   function view(token, cid, id){
