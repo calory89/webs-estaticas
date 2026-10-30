@@ -191,20 +191,26 @@ Reply with ONLY one JSON object:
 }
 pay_signal compares the share already paid (if given) to built_pct: "ahead_of_works" when payments exceed visible works by more than 15 points. Keep strings under 25 words.`;
 
-async function claudeVision(env, content) {
+function parseJson(t) {
+  const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
+  try { return JSON.parse(m[0]); } catch (e) {}
+  // light repair: smart quotes, trailing commas, raw newlines inside strings
+  const r = m[0].replace(/[\u201c\u201d]/g, '\\"').replace(/,\s*([}\]])/g, '$1').replace(/\n(?=[^"]*"\s*[,}\]])/g, ' ');
+  return JSON.parse(r);
+}
+async function claudeVision(env, content, maxTokens) {
   let last = '';
-  for (const model of ['claude-sonnet-5-5', 'claude-haiku-5-5']) {
+  for (const model of ['claude-sonnet-5-5', 'claude-haiku-5-5', 'claude-sonnet-5-5']) {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model, max_tokens: 2500, messages: [{ role: 'user', content }] })
+      body: JSON.stringify({ model, max_tokens: maxTokens || 2500, system: 'Reply with one valid JSON object only. Inside JSON strings never use unescaped double quotes: use single quotes or the typographic quotes the document uses.', messages: [{ role: 'user', content }] })
     });
     if (r.status === 404 || (r.status === 400 && !last)) { last = model + ' ' + r.status + ' ' + (await r.text()).slice(0, 200); continue; }
-    if (!r.ok) throw new Error('model ' + r.status + ' ' + (await r.text()).slice(0, 160));
+    if (!r.ok) { last = 'model ' + r.status + ' ' + (await r.text()).slice(0, 160); if (r.status >= 500 || r.status === 429) continue; throw new Error(last); }
     const d = await r.json();
     const t = (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
-    const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
-    return JSON.parse(m[0]);
+    try { return parseJson(t); } catch (e) { last = 'json: ' + e.message; continue; }
   }
   throw new Error(last || 'no model');
 }
@@ -373,7 +379,7 @@ async function documentRead(req, env, ctx) {
   if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
   content.push({ type: 'text', text: DOC_PROMPT(type) + langRule(lang) + '\n\nWhat the buyer was told (developer, brochure or agent): ' + (claim || 'not given') });
   let out;
-  try { out = await claudeVision(env, content); }
+  try { out = await claudeVision(env, content, 4000); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
   const res = { analysed: new Date().toISOString(), type, lang, pages: files.length, document: out };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
