@@ -197,10 +197,10 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
       .then(function(r){ return r.json().then(function(d){ return [r.status, d]; }); })
       .then(function(x){ clearInterval(tick); var s = x[0], d = x[1];
         lis.forEach(function(l){ l.classList.remove('run'); l.classList.add('ok2'); });
-        if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); return; }
+        if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
         setTimeout(function(){ render(d); if (!email) copyBox(d.report.summary); }, 500);
-      }).catch(function(){ clearInterval(tick); render_err('network'); save(email, 'Desk review failed: network'); });
+      }).catch(function(){ clearInterval(tick); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
     setTimeout(function(){ if ($('az-first').textContent === 'Starting…') $('az-first').textContent = 'Reading the website now'; }, 1200);
    }
   $('az-f2').addEventListener('submit', function(){ var em = $('az-email').value.trim(); if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) run(em); });
@@ -217,8 +217,8 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
 
   function render_err(e){
     var m = e === 'rate' ? 'You have run several reviews in the last hour. Try again later, or book a full check below.'
-      : e === 'fetch' || e === 'empty' ? 'This website blocks automatic reading. Your request is saved and a person on our team will review it within 24 hours.'
-      : 'Something went wrong on our side. Your request is saved and we will email you within 24 hours.';
+      : e === 'fetch' || e === 'empty' ? 'This website blocks automatic reading, so a person on our team will read it for you and reply by email within one working day.'
+      : 'Something went wrong on our side. A person on our team will look at it and reply by email within one working day.';
     $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>We will take it from here</h2><p class="lead">' + m + '</p>' + cta();
     show(4); ev('desk_error', { e: e || '' }); if (window.kbLog) kbLog('desk_error', url + ' | ' + (e || ''));
   }
@@ -262,6 +262,15 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
         '<li><b>' + pct(function(c){ return c.plans; }) + '</b> publish plans</li></ul><p class="muted" style="font-size:.8rem;margin:6px 0 0"><a href="/cases' + (mk ? '#' : '') + '">See them on the live map →</a></p>';
     }).catch(function(){});
   }
+
+  function isResale(r){
+    var t = [r.summary, r.project, r.title_type, r.completion].join(' ');
+    var src = ''; try { src = (JSON.parse(localStorage.getItem('kb-attr') || '{}').src || ''); } catch (e) {}
+    if (/off-?plan|under construction|pre-?sale|handover|completion in|launch/i.test(t)) return false;
+    return /resale|second-hand|secondhand|existing (home|house|apartment|flat|villa)|pre-owned|built in (1[89]|20)\d\d|renovat/i.test(t) || (src === 'realhunt' && !r.completion && !r.payment_plan);
+  }
+
+  function r29pos(){ var c = $('az-cp'), l = $('az-4') && $('az-4').querySelector('.lead'); if (c && l) l.parentNode.insertBefore(c, l.nextSibling); var b = c && c.querySelector('label'); if (b) b.innerHTML = '<b>Where should we send it?</b> <span>Your email, and we reply within one working day.</span>'; }
   function render(d){
     var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
     var facts = [['Project', r.project], ['Developer', r.developer], ['Location', r.location], ['Price from', r.price_from], ['Title', r.title_type], ['Lease', r.lease_years], ['Completion', r.completion], ['Return advertised', r.advertised_return], ['Permit claim', r.permit_claim]].filter(function(f){ return f[1]; });
@@ -274,9 +283,10 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
       '<div class="az-box"><h3>What the website promises</h3><ul>' + (r.promises || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' +
       ((r.missing || []).length ? '<h3 style="margin-top:14px">What it doesn\'t say</h3><ul>' + r.missing.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' : '') + '</div></div>' +
       cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer.</p>';
-    show(4); bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
+    show(4); if (!isResale(r)) bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
   }
 })();
 </script>
+<script>(function(){try{var a=JSON.parse(localStorage.getItem('kb-attr')||'{}');var q=new URLSearchParams(location.search);if(a.src!=='realhunt'&&q.get('utm_source')!=='realhunt')return;var h=document.querySelector('.phero h1'),l=document.querySelector('.phero .lead');if(h)h.textContent='Check this home before you pay a deposit.';if(l)l.textContent='We read the listing you came from and tell you what to verify: who is selling, the title and land register, charges and the building\'s condition. If you want certainty, a local agent checks it on site.';}catch(e){}})();</script>
 </body>
 </html>
