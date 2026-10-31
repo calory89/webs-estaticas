@@ -18,7 +18,7 @@
 <meta property="og:url" content="https://lacliniqueswiss.com/">
 <meta property="og:title" content="Add good years to your life. La Clinique Swiss">
 <meta property="og:description" content="Swiss-led longevity medicine on an island in Indonesia. From €6,500, once, for 50 years: 31 markers a year, six nights a year, a personal dietitian and coach. Transferable at the price you paid.">
-<meta property="og:image" content="https://lacliniqueswiss.com/og-image.png">
+<meta property="og:image" content="https://lacliniqueswiss.com/og-membership.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -438,6 +438,9 @@ footer .legal{max-width:90ch;line-height:1.55}
 body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!important}
 @media (min-width:821px){.faq-grid>div:first-child{position:sticky;top:6.5rem;align-self:start}}
 
+.quizbar{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1rem 1.4rem;border-top:1px solid var(--line);text-decoration:none;background:color-mix(in srgb,var(--red) 7%,transparent)}
+.quizbar b{color:var(--red);font-weight:500}
+
 /* reveal (always visible at rest; only moves) */
 .rv{transform:translateY(0);transition:transform 1s cubic-bezier(.2,.7,.2,1)}
 .js .rv.pre{transform:translateY(28px)}
@@ -560,6 +563,7 @@ body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!im
   <div class="report rv">
     <div class="report-top"><span>Annual longevity panel</span><span class="hint">Tap any marker to see what it tells you</span></div>
     <div class="groups" id="groups"></div>
+    <a class="quizbar" href="/quiz/" data-ev="quiz_teaser"><span>Not sure where you stand today?</span><b>Take the 2-minute test →</b></a>
     <div class="report-foot">Indicative panel. The final protocol is set by our medical director and may change as science moves.</div>
   </div>
 </section>
@@ -844,7 +848,7 @@ body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!im
 <footer>
   <div class="wrap">
     <div class="ft"><span>La Clinique Swiss · Karimunjawa, Indonesia</span><span>carlos@equinoxinvestmentgroup.com<button class="copy" type="button" id="cp">Copy</button></span></div>
-    <nav class="ftlinks" aria-label="More"><a href="/physicians/">For physicians</a><a href="/journal/">Journal</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+    <nav class="ftlinks" aria-label="More"><a href="/quiz/">How are you ageing?</a><a href="/for/parents/">For parents</a><a href="/for/couples/">For couples</a><a href="/for/founders/">For founders</a><a href="/ambassadors/">Ambassadors</a><a href="/physicians/">For physicians</a><a href="/journal/">Journal</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
     <p class="legal">Operated by Equinox Investment Group, LLC. La Clinique Swiss does not guarantee specific medical outcomes. Health services are delivered under qualified medical supervision. Future residences in Europe and Latin America are planned and not yet built; their locations and opening dates may change, and nights there are subject to availability once each one opens. The membership is not an investment and does not promise any return. Transfers depend on an interested buyer from the same country. Nothing on this page is medical, financial or legal advice.</p>
   </div>
 </footer>
