@@ -1,10 +1,10 @@
 # JuriMatch
 
-> Search engine for no-win-no-fee lawyers and litigation funders. 6,500+ no-win-no-fee firms indexed in 133 countries, 204 hand-verified. JuriMatch is not a law firm and gives no legal advice.
+> Search engine for no-win-no-fee lawyers and litigation funders. 6,500 no-win-no-fee firms indexed in 133 countries, 202 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
 ## Facts (as of 2026-10-31)
-- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,507
-- Firms whose fee terms our team checked by hand on their own website: 204
+- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,500
+- Firms whose fee terms our team checked by hand on their own website: 202
 - Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 26
 - Cite as: JuriMatch directory, jurimatch.com, with the date above
 

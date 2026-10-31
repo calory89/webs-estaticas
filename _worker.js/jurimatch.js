@@ -128,6 +128,8 @@ async function dynamicPage(path, m, ctx) {
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
     const hand = isHand(f);
+    // Item 056: per-firm link preview image, only where the build made one.
+    const ogImg = hand && Array.isArray(m && m.ogFirms) && m.ogFirms.includes(slug) ? ORIGIN + '/og/firms/' + slug + '.png' : null;
     const where = (f.countries_served || []).slice(0, 3).join(', ');
     // Only descriptions our team checked are shown; indexed firms get a factual note.
     const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.')) : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
@@ -136,6 +138,7 @@ async function dynamicPage(path, m, ctx) {
       d: d.length > 300 ? d.slice(0, 297) + '...' : d,
       h1: f.firm_name,
       lead: d,
+      ...(ogImg ? { image: ogImg } : {}),
       facts: [
         ['Status', hand ? 'Hand-verified by JuriMatch' + (f.last_verified_at ? ' on ' + String(f.last_verified_at).slice(0, 10) : '') : 'Indexed from public research, not verified by our team'],
         ['Fee terms read on', hand && f.verification_source_url ? f.verification_source_url : ''],
