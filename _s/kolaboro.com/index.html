@@ -48,11 +48,12 @@
       <div class="hero-cta">
         <a class="btn btn-hi" href="#start" data-role="buyer" data-ev="cta_hero">Protect my purchase</a>
       </div>
-      <form class="hero-check" action="/check" method="get" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;max-width:520px" data-ev="hero_check_form">
+      <form class="hero-check" data-check role="search" action="/check" method="get" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;max-width:520px" data-ev="hero_check_form">
         <label for="hero-url" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Project website</label>
-        <input id="hero-url" name="url" type="url" inputmode="url" required placeholder="Paste the project's website" style="flex:1 1 240px;min-width:0;padding:12px 14px;border:1px solid #C9D0D6;border-radius:10px;font:inherit">
-        <button class="btn btn-hi" type="submit">Check it free</button>
+        <input id="hero-url" name="q" type="text" inputmode="url" autocapitalize="off" spellcheck="false" enterkeyhint="go" required placeholder="Project website, name or developer" style="flex:1 1 240px;min-width:0;padding:12px 14px;border:1px solid #C9D0D6;border-radius:10px;font:inherit">
+        <button class="btn" type="submit" style="background:#17212B;color:#fff">Check it free</button>
       </form>
+      <p class="hero-sub" style="margin-top:8px;font-size:.88rem;color:#55606B">Free desk review, about 60 seconds, no card and no email. <a href="/report/sample" data-ev="hero_report">See what a full report looks like</a></p>
       <p class="launch"><i aria-hidden="true"></i>Launching in Bali <span aria-hidden="true">·</span> <a href="/independence" class="indep">Developers never pay us</a> · <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>
     </div>
 
@@ -144,12 +145,6 @@
   </div>
 </section><section class="r28-strip"><div class="wrap"><a href="/cases"><span class="r28-dot"></span><b>228 off-plan projects in 27 countries</b> tracked by our research agent · only <b>8%</b> of those researched in depth say how your deposit is protected · <b>16</b> have problems in public reports <em>See the map →</em></a></div></section>
 
-<section class="checkbar" aria-label="Check a project">
-  <div class="wrap checkbar-in">
-    <div><h2>Check any project before you pay.</h2><p>Paste the project's website: our research agent reads it in about a minute and tells you what to verify before you pay. This desk review is free, no card needed. The full check with a local agent on site is €490.</p></div>
-    <form class="qform" data-check role="search"><label class="hp" for="q1">Project</label><input id="q1" name="q" placeholder="Project website, name or developer" aria-label="Project name, developer or link"><button class="btn btn-hi" type="submit">Free desk review</button></form>
-  </div>
-</section>
 
 
 
@@ -176,12 +171,6 @@
     <figure class="prod-shot"><div class="prod-bar"><i></i><i></i><i></i><span>kolaboro.com/portal</span></div>
       <img src="/k/portal-shot.webp" width="1600" height="1000" loading="lazy" alt="Kolaboro client portal: case KB-1001 with six verification stages, the next payment and a chat with the Kolaboro team">
       <figcaption>The real client portal. Open it with our demo account, no sign-up needed.</figcaption></figure>
-    <ul class="prod-list">
-      <li><b>1 · Free desk review in about 60 seconds</b><span>Our agent reads the developer's own website and lists what must be proven with a document or a visit.</span></li>
-      <li><b>2 · Six stages, each with a date</b><span>Case opened, documents, land &amp; title, building permit, site visit, report. Nothing is "almost done".</span></li>
-      <li><b>3 · "Don't pay yet" alerts</b><span>Add your next instalment date. If it lands before our report, the portal tells you to hold.</span></li>
-      <li><b>4 · Evidence you can check</b><span>Site photos are GPS- and time-stamped with a SHA-256 fingerprint in our field app.</span></li>
-    </ul>
   </div>
   <div class="prod-cta"><a class="btn btn-hi" href="/check#analyze" data-ev="prod_desk">Try the free desk review</a><a class="btn btn-line" href="/portal/demo" data-ev="prod_demo">See the client portal (demo account)</a><a class="btn btn-line" href="/login">Client login</a></div>
   <div class="prod-stack">
@@ -212,6 +201,8 @@
         <div><span>Paid before the work exists</span><strong id="rk-max">€0</strong></div>
         <p id="rk-msg"></p>
       </div>
+      <p style="margin-top:14px"><a class="btn btn-hi" id="rk-cta" href="#start" data-role="buyer" data-ev="risk_cta">Protect my purchase</a></p>
+      <p class="risk-note">Real cases: <a href="/cases/files/kolaboro-report-bingin-cliff-bali.pdf">a cliffside business in Bingin, Bali, demolished in July 2025</a> and <a href="/cases/files/kolaboro-report-bali-villa-share.pdf">a villa-share offer matching a fraud reported by ABC</a>.</p>
       <p class="risk-note">Illustrative example: six payments of a typical off-plan plan (20/20/20/20/10/10%) where construction runs about six months behind the payment calendar.</p>
     </div>
   </div>
@@ -224,10 +215,11 @@
  <a href="/check#analyze"><b>Check a project's website</b><span class="d">Paste the link. In about a minute: what it promises, what it leaves out and what to ask before paying.</span><em>Paste a link</em></a>
  <a href="/technology#certificate"><b>Read a contract or certificate</b><span class="d">Photos or PDF, any language. Mismatches with what you were told and the clauses to worry about.</span><em>Read a document</em></a>
  <a href="/technology#price"><b>Is the price per m² normal?</b><span class="d">Compared with published data for the area and, in Bali, with what it costs to build.</span><em>Compare a price</em></a>
+</div><details class="r31-more"><summary>See all 6 tools</summary><div class="r21-try">
  <a href="/technology#progress"><b>Compare site photos with the invoice</b><span class="d">Photos of the building and what the developer says is done. See what doesn't match.</span><em>Upload photos</em></a>
  <a href="/technology#images"><b>Is that render from another project?</b><span class="d">Your browser compares it with 900+ images from developer websites. It never leaves your device.</span><em>Check an image</em></a>
  <a href="/cases"><b>Follow a project</b><span class="d">An email when the developer changes its completion date, price or published documents.</span><em>Live cases</em></a>
-</div></div></section>
+</div></details></div></section>
 
 
 
@@ -245,18 +237,18 @@
 
 <section class="sec alt" id="pricing">
   <div class="wrap">
-    <h2>Simple prices. Paid by you, never by the developer.</h2>
+    <h2>Simple prices, paid by you.</h2>
     <p class="lead">Launch prices for Bali. A €490 check is a small cost next to a deposit you can't get back.</p>
     <div style="margin-top:44px"><div class="grid3">
   <div class="tile"><h3>Pre-purchase check</h3><p>Before you sign or send a deposit.</p><p class="price">€490</p><p class="per">one-off, per property</p>
     <ul><li>Title and zoning verified</li><li>Permits and developer track record</li><li>Contract read for red flags</li><li>Site visit with GPS video</li><li>Written report, usually within 7 days</li></ul>
-    <a class="btn btn-line" href="/#start" data-role="buyer" data-ev="pricing_check">Book a check</a><p class="per" style="margin-top:10px">or <a href="https://www.paypal.com/ncp/payment/32ENX4QK833GE" rel="noopener" data-ev="pay_check_pricing">pay now by card or PayPal</a> (no PayPal account needed). Full refund if we can't take your case.</p></div>
+    <a class="btn btn-line" href="/#start" data-role="buyer" data-ev="pricing_check">Book my check, €490</a><p class="per" style="margin-top:10px">or <a href="https://www.paypal.com/ncp/payment/32ENX4QK833GE" rel="noopener" data-ev="pay_check_pricing">pay now by card or PayPal</a> (no PayPal account needed). Full refund if we can't take your case.</p></div>
   <div class="tile hot"><span class="tag">Recommended</span><h3>Construction monitoring</h3><p>From first payment to keys.</p><p class="price">€99</p><p class="per">per month, per property</p>
     <ul><li>Monthly GPS-stamped site visit</li><li>Milestone check before every payment</li><li>"Go" or "hold" advice, based on the evidence</li><li>Delay alerts by email</li><li>Final handover inspection</li></ul>
     <a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="pricing_monitor">Start monitoring</a></div>
   <div class="tile"><h3>Buyer's agent</h3><p>Someone on your side for the whole purchase.</p><p class="price">1%</p><p class="per">of the price, minimum €2,000</p>
     <ul><li>Everything in the check and monitoring</li><li>Shortlist of verified projects</li><li>Negotiation support</li><li>Coordinates your notary and lawyer</li><li>Never paid by the developer</li></ul>
-    <a class="btn btn-line" href="/#start" data-role="buyer" data-ev="pricing_agent">Talk to us</a></div>
+    <a class="btn btn-line" href="/#start" data-role="buyer" data-ev="pricing_agent">Talk to Carlos</a></div>
 </div></div>
   </div>
 </section>
@@ -461,6 +453,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     msg.textContent = mode === 'cal'
       ? 'Paying by the calendar, up to ' + fmt.format(Math.round(worst * P / 1000) * 1000) + ' is in the developer\'s hands for work that doesn\'t exist yet. If the project stalls, that is what you stand to lose.'
       : 'With an agent checking each milestone before you pay, your exposure stays close to one instalment: you only pay for what is already built.';
+    var rc = document.getElementById('rk-cta'); if (rc) rc.textContent = 'Protect ' + fmt.format(Math.round(worst * P / 1000) * 1000) + ' for €490';
   }
   r.addEventListener('input', draw);
   document.querySelectorAll('.risk-tog button').forEach(function(b){ b.addEventListener('click', function(){

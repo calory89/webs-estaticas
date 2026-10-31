@@ -973,3 +973,12 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 :focus-visible{outline:3px solid #FF5A1F;outline-offset:2px}
 .cfollow,.chist{min-height:44px;padding-left:14px;padding-right:14px}
 @media (pointer:coarse){.leaflet-touch .leaflet-bar a{width:44px;height:44px;line-height:44px}}
+/* r31b home: tools toggle, compact stats, comparison cards on mobile */
+.r31-more{margin-top:14px}.r31-more summary{cursor:pointer;font-weight:700;padding:12px 0;min-height:44px;list-style:none}.r31-more summary::after{content:" +"}.r31-more[open] summary::after{content:" −"}.r31-more summary::-webkit-details-marker{display:none}
+@media (max-width:700px){
+.prod-stack{grid-template-columns:repeat(2,1fr)!important}.prod-stack>div{padding:14px!important}.prod-stack b{font-size:1.5rem!important}
+.cmp thead{display:none}.cmp,.cmp tbody,.cmp tr,.cmp td{display:block;width:100%}.cmp tr{border:1px solid var(--line,#D5D3CC);border-radius:12px;padding:10px 12px;margin-bottom:10px;background:var(--paper,#fff)}
+.cmp td{border:0!important;padding:4px 0!important}.cmp td:first-child{font-weight:800;font-size:1rem}
+.cmp td:nth-child(2)::before{content:"Buying alone: ";color:#55606B;font-weight:600}.cmp td:nth-child(3)::before{content:"With Kolaboro: ";color:#C9461A;font-weight:700}
+}
+@media (max-width:700px){.how{padding:56px 0}.track{margin-top:28px;gap:18px}.track li{display:grid;grid-template-columns:44px 1fr;column-gap:14px}.track li .node{width:40px;height:40px;font-size:1rem;grid-row:span 2}.track h3{margin:6px 0 4px;font-size:1.1rem}.track p{font-size:.95rem}}
