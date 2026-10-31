@@ -1,7 +1,7 @@
 ## RealHunt AI score
-Scored now: 0 · total: 506 · approx cost (Haiku): $0.00
+Scored now: 6 · total: 512 · approx cost (Haiku): $0.04
 
-### Homes to review (309)
+### Homes to review (312)
 | home | beauty | condition | cover ok | keep | flags |
 |---|---|---|---|---|---|
 | [fr-esperaza-86k-sxd5p3](https://realhunt.co/deal/fr-esperaza-86k-sxd5p3) | 45 | 50 | False | False | dated kitchen cabinets and appliances, worn tile flooring throughout, cluttered, |
@@ -280,6 +280,7 @@ Scored now: 0 · total: 506 · approx cost (Haiku): $0.00
 | [it-umbria-citta-della-pieve-orchard-160k](https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k) | 72 | 75 | False | True | Photo 0 looks run-down and neglected, Ivy-covered walls appear unkempt, Mixed bu |
 | [it-tuscany-montemerano-saturnia-139k](https://realhunt.co/deal/it-tuscany-montemerano-saturnia-139k) | 72 | 68 | False | False | hedges overgrown and unkempt, needs landscaping work, dated interior fixtures vi |
 | [es-santomera-penthouse-145k-161987047](https://realhunt.co/deal/es-santomera-penthouse-145k-161987047) | 72 | 75 | False | False | dated furniture and decor in living areas, photo 0 looks dim and uninviting, bed |
+| [es-torrevieja-torresol-studio-pool-99k](https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k) | 72 | 75 | False | True | tiny 29m² studio, dated kitchen appliances, small living space, no bedroom |
 | [it-san-siro-95k-057133](https://realhunt.co/deal/it-san-siro-95k-057133) | 75 | 72 | False | True | exterior looks aged and weathered, overgrown vegetation and clutter in courtyard |
 | [dk-hurup-66k-a04f4a](https://realhunt.co/deal/dk-hurup-66k-a04f4a) | 75 | 78 | False | True | Cover photo out of focus with obstructed view, Historic 1850s building may feel  |
 | [dk-hygum-90k-715977](https://realhunt.co/deal/dk-hygum-90k-715977) | 75 | 80 | False | True | Photo 0 exterior looks dated and industrial, Brick facade shows weathering, Sett |
@@ -299,6 +300,8 @@ Scored now: 0 · total: 506 · approx cost (Haiku): $0.00
 | [es-vicar-82k-27426](https://realhunt.co/deal/es-vicar-82k-27426) | 75 | 80 | False | False | photo 0 shows run-down apartment complex exterior, dated building aesthetic, spa |
 | [es-murcia-99k-61734](https://realhunt.co/deal/es-murcia-99k-61734) | 75 | 80 | False | True | exterior photo is artificial/staged with fake backdrop, excessive black dragon d |
 | [gr-trikeri-sea-terrace-120k](https://realhunt.co/deal/gr-trikeri-sea-terrace-120k) | 75 | 70 | False | False | unfinished interior decoration, mismatched furniture and clutter, dated aestheti |
+| [se-gnarp-villa-glazed-porch-82k](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k) | 75 | 70 | False | True | cover photo looks dated and cluttered, exterior shows age and wear, modest curb  |
+| [es-los-urrutias-beachfront-tourist-licence-116k](https://realhunt.co/deal/es-los-urrutias-beachfront-tourist-licence-116k) | 75 | 70 | False | False | pink/red salt evaporation pools dominate photos 0-1, dated striped sofa in photo |
 | [lake-como-peglio-85000](https://realhunt.co/deal/lake-como-peglio-85000) | 78 | 75 | False | True | exterior arches appear aged and weathered, surrounding village looks somewhat ru |
 | [es-costa-del-silencio-239k-481637](https://realhunt.co/deal/es-costa-del-silencio-239k-481637) | 78 | 82 | False | True | Photo 0 shows dated complex architecture and cluttered pool area, Communal areas |
 | [us-dora-84k-329130](https://realhunt.co/deal/us-dora-84k-329130) | 78 | 82 | False | True | exterior siding appears dated and weathered, cover photo lacks curb appeal, mode |
