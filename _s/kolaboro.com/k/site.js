@@ -17,6 +17,7 @@
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
     links.addEventListener('click', function (e) { if (e.target.closest('a')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); } });
   }
 
   // tracked clicks
@@ -34,7 +35,11 @@
       var io = new IntersectionObserver(function (es) { es.forEach(function (x) { formVisible = x.isIntersecting; }); upd(); }, { threshold: 0.05 });
       forms.forEach(function (f) { io.observe(f); });
     }
-    function upd() { m.classList.toggle('show', scrollY > 520 && !formVisible); }
+    var hero = document.querySelector('.hero, .phero'), heroVisible = !!hero;
+    if (hero && 'IntersectionObserver' in window) { new IntersectionObserver(function (es) { heroVisible = es[0].isIntersecting; upd(); }, { threshold: 0 }).observe(hero); }
+    var hc = document.querySelectorAll('form.hero-check, #az-f1'), heroForm = false;
+    if (hc.length && 'IntersectionObserver' in window) { var hio = new IntersectionObserver(function (es) { es.forEach(function (x) { x.target._kbv = x.isIntersecting; }); heroForm = [].some.call(hc, function (f) { return f._kbv; }); upd(); }, { threshold: 0.05 }); hc.forEach(function (f) { hio.observe(f); }); }
+    function upd() { m.classList.toggle('show', scrollY > 520 && !heroVisible && !formVisible && !heroForm); }
     addEventListener('scroll', upd, { passive: true }); upd();
   }
 
