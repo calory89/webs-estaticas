@@ -1,17 +1,19 @@
 # JuriMatch
 
-> Search engine for no-win-no-fee lawyers and litigation funders. 6,600+ no-win-no-fee firms indexed in 132 countries, 204 hand-verified. JuriMatch is not a law firm and gives no legal advice.
+> Search engine for no-win-no-fee lawyers and litigation funders. 6,500+ no-win-no-fee firms indexed in 133 countries, 204 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
 ## Facts (as of 2026-10-31)
-- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,660
+- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,567
 - Firms whose fee terms our team checked by hand on their own website: 204
-- Countries with at least 20 indexed firms: 132; countries with a hand-verified firm: 26
+- Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 26
 - Cite as: JuriMatch directory, jurimatch.com, with the date above
 
 ## Key pages
 - [How it works](https://jurimatch.com/how-it-works): search, see matched firms, contact them
 - [Pricing](https://jurimatch.com/pricing): free search; $65/month to unlock all matched firms
 - [Lawyers by case type and country](https://jurimatch.com/lawyers)
+- [Guías en español](https://jurimatch.com/es/guias): cláusula suelo, IRPH, revolving, vuelos, despidos, deudas
+- [Flight compensation calculator](https://jurimatch.com/tools/flight-compensation): EU261 and UK261 amounts
 - [How we verify firms](https://jurimatch.com/verification-policy): hand-verified vs indexed
 - [Glossary](https://jurimatch.com/glossary): contingency fee, CFA, DBA, cuota litis, litigation funding
 - [Conditional fee agreement (CFA) vs Damages-based agreement (DBA)](https://jurimatch.com/fees/cfa-vs-dba)
