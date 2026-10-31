@@ -38,7 +38,7 @@
     var meta = [c.band, c.title ? c.title.replace('_', ' ') + (c.lease ? ' ' + c.lease + ' yrs' : '') : null, c.done ? 'completion ' + c.done : 'no completion date', c.yield ? c.yield + '% yield advertised' : null].filter(Boolean).join(' · ');
     var R = ck.researched || CK.map(function(k){ return k[0]; }), mx = c.max || R.length;
     var ticks = CK.map(function(k){ if (R.indexOf(k[0]) < 0) return ''; var v = ck[k[0]], ok = k[0] === 'permit' ? v === 2 : k[0] === 'progress' ? v != null : v === true;
-      var half = k[0] === 'permit' && v === 1, txt = k[0] === 'progress' && v != null ? 'Construction progress published (' + v + '%)' : half ? 'Permit claimed, number not published' : k[1];
+      var half = k[0] === 'permit' && v === 1, txt = k[0] === 'progress' && v != null ? (typeof v === 'number' ? 'Construction progress published (' + v + '%)' : 'Construction progress published (dated updates)') : half ? 'Permit claimed, number not published' : k[1];
       return '<li class="' + (ok ? 'y' : half ? 'h' : 'n') + '"><i aria-hidden="true">' + (ok ? '✓' : half ? '~' : '✗') + '</i>' + esc(txt) + '</li>'; }).join('') + (R.length < 6 ? '<li class="u"><i aria-hidden="true">·</i><em>Deposit protection, progress and track record: being researched</em></li>' : '');
     var steps = [['Promises read by AI', c.read, c.read ? c.checked : 'Queued'], ['Developer invited', !!c.invited, c.invited || 'Next'], ['Registry check', false, 'Pending'], ['Site visit with GPS video', false, 'Pending'], ['Verified and published', false, 'Pending']];
     return '<article class="case kc t-' + esc(c.tier || 'mixed') + '"><header><span class="cid">' + esc(c.id) + '</span><span class="kt" style="color:' + t[1] + ';border-color:' + t[1] + '">' + t[0] + '</span></header>' +
