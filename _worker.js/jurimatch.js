@@ -315,7 +315,8 @@ export async function render(req, res, u, env, ctx) {
   h.set('content-language', lang);
   // Security headers for every HTML page (no camera/mic/location use on the site; no framing by other sites).
   h.set('strict-transport-security', 'max-age=31536000');
-  h.set('x-frame-options', 'SAMEORIGIN');
+  // /embed/* is the search widget other sites embed in an iframe (item 141): framing allowed there only.
+  if (u.pathname.startsWith('/embed/')) h.delete('x-frame-options'); else h.set('x-frame-options', 'SAMEORIGIN');
   h.set('permissions-policy', 'camera=(), microphone=(), geolocation=(), usb=(), payment=(self "https://checkout.stripe.com")');
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   const set = (attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
