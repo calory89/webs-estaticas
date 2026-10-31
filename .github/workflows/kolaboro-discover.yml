@@ -1,0 +1,51 @@
+name: Kolaboro discovery agent
+# Daily: finds new off-plan and under-construction projects with the Claude API (web search + fetch),
+# validates them (2+ sources, live URL, no duplicates) and adds them to projects-world.json.
+# Spends at least KB_DISCOVER_MIN_USD and at most KB_DISCOVER_MAX_USD per run, then triggers the research agent.
+on:
+  schedule:
+    - cron: '41 3 * * *'
+  workflow_dispatch:
+    inputs:
+      min_usd:
+        description: "Minimum spend this run (USD)"
+        default: "2"
+      max_usd:
+        description: "Maximum spend this run (USD)"
+        default: "3"
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kolaboro-discover
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Discover new projects
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KB_DISCOVER_MIN_USD: ${{ github.event.inputs.min_usd || '2' }}
+          KB_DISCOVER_MAX_USD: ${{ github.event.inputs.max_usd || '3' }}
+        run: python3 tools/kolaboro-agent/discover.py | tee "$RUNNER_TEMP/discover.out"
+      - name: Save on main
+        id: save
+        run: |
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/projects-world.json tools/kolaboro-agent/data/discover-log.json
+          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          N=$(tail -1 "$RUNNER_TEMP/discover.out" | python3 -c "import json,sys;print(json.loads(sys.stdin.read()).get('added',0))" 2>/dev/null || echo 0)
+          git commit -q -m "kolaboro discover: $N new projects $(date -u +%F)"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && break; git pull -q --rebase origin main; sleep 5; done
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Run the research agent to publish
+        if: steps.save.outputs.changed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kolaboro-agent.yml --ref main -R "$GITHUB_REPOSITORY" -f max_calls=160
