@@ -13,7 +13,7 @@ KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 MIN_USD = float(os.environ.get('KB_DISCOVER_MIN_USD', '2'))
 MAX_USD = float(os.environ.get('KB_DISCOVER_MAX_USD', '3'))
 MAX_CALLS = int(os.environ.get('KB_DISCOVER_MAX_CALLS', '40'))
-PER_CALL = int(os.environ.get('KB_DISCOVER_PER_CALL', '3'))
+PER_CALL = int(os.environ.get('KB_DISCOVER_PER_CALL', '4'))
 MODELS = [m for m in [os.environ.get('KB_DISCOVER_MODEL'), 'claude-sonnet-5-5', 'claude-haiku-5-5'] if m]
 PRICE = {'claude-sonnet-5-5': (3e-6, 15e-6), 'claude-haiku-5-5': (1e-6, 5e-6)}
 SEARCH_USD = 0.01
@@ -169,7 +169,27 @@ def key_of(p):
 
 
 def slug_of(p):
-    return re.sub(r'[^a-z0-9]+', '-', ((p.get('name') or '') + ' ' + (p.get('developer') or '')).lower()).strip('-')[:70]
+    return re.sub(r'[^a-z0-9]+', '-', ((p.get('name') or '') + ' ' + (p.get('market') or '')).lower()).strip('-')[:60].strip('-')
+
+
+STOP = {'the', 'by', 'at', 'residences', 'residence', 'phase', 'tower', 'towers', 'project', 'villas', 'apartments', 'and', 'de', 'la', 'el', 'of', 'in', 'resort', 'one', 'two', 'i', 'ii', 'iii'}
+
+
+def words(p):
+    return {w for w in re.findall(r'[a-z0-9]+', (p.get('name') or '').lower()) if w not in STOP and len(w) > 2}
+
+
+def similar(p, others):
+    a = words(p)
+    if not a:
+        return False
+    for o in others:
+        if o.get('market') != p.get('market'):
+            continue
+        b = words(o)
+        if b and len(a & b) / len(a | b) >= 0.5:
+            return True
+    return False
 
 
 class Budget:
@@ -178,8 +198,8 @@ class Budget:
 
 
 def call(prompt, B):
-    tools_full = [{'type': 'web_search_20250305', 'name': 'web_search', 'max_uses': 10},
-                  {'type': 'web_fetch_20250910', 'name': 'web_fetch', 'max_uses': 10}]
+    tools_full = [{'type': 'web_search_20250305', 'name': 'web_search', 'max_uses': 6},
+                  {'type': 'web_fetch_20250910', 'name': 'web_fetch', 'max_uses': 6, 'max_content_tokens': 5000}]
     for model in MODELS:
         for tools, beta in ((tools_full, 'web-fetch-2025-09-10'), (tools_full[:1], None)):
             msgs = [{'role': 'user', 'content': prompt}]; text = ''
@@ -233,7 +253,8 @@ def main():
         market, country, hint = MARKETS[(start + i) % len(MARKETS)]
         stage = 'already under construction (not finished)' if (start + i) % 2 else 'off-plan (launched or selling, construction not started or just started)'
         i += 1
-        if B.usd + 0.6 > MAX_USD:
+        avg = B.usd / max(1, len(run['markets'])) if run['markets'] else 1.2
+        if B.usd + max(0.8, avg) > MAX_USD:
             break
         known = ', '.join(sorted({p.get('name') for p in allp + added if p.get('market') == market and p.get('name')})[:80]) or 'none yet'
         try:
@@ -249,7 +270,7 @@ def main():
             if len(p['sources']) < 2:
                 rej('fewer_than_2_sources'); continue
             k = key_of(p); sl = slug_of(p)
-            if k in keys or sl in slugs:
+            if k in keys or sl in slugs or similar(p, allp + added):
                 rej('duplicate'); continue
             if not url_ok(p['url']) and not url_ok(p['docs_url']):
                 rej('dead_url'); continue
