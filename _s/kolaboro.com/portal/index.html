@@ -3,6 +3,7 @@
 <title>Your case | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=c20f3234be">
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+<link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
 </head><body>
 <header class="ap-top"><div class="ap-top-in"><a class="ap-brand" href="/portal"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a><span class="ap-muted" style="color:#9FB0BF" id="who"></span><span class="ap-sp"></span>
 <button class="ap-chip" id="newc">+ Project</button><button class="ap-chip" id="pwb">Password</button><button class="ap-chip" id="out">Log out</button></div></header>
@@ -120,4 +121,16 @@ var KB = (function(){
   setInterval(function(){ if (!document.hidden && !document.activeElement.closest('form')) load('me'); }, 45000);
 })();
 </script><script src="/k/case.js?v=9f1e23e344"></script>
+<script>
+(function(){ var K = 'kb-portal-tour'; try { if (localStorage.getItem(K)) return; } catch (e) { return; }
+  var steps = [['Your case, stage by stage', 'Six stages, each with a date: case opened, documents, land and title, building permit, site visit, report. Nothing is "almost done".'],
+    ['Evidence you can check', 'Every site photo carries GPS, time and a fingerprint. Open a photo to see where and when it was taken.'],
+    ['Your agent, one message away', 'Write to your agent here. Add your next payment date and we tell you to hold if our report is not ready.']], i = 0;
+  function go(){ var d = document.createElement('div'); d.className = 'r31-tour'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Quick tour');
+    function draw(){ d.innerHTML = '<p class="r31-tk">' + (i + 1) + ' of 3</p><b>' + steps[i][0] + '</b><p>' + steps[i][1] + '</p><div><button type="button" data-a="skip">Skip</button><button type="button" data-a="next" class="on">' + (i < 2 ? 'Next' : 'Got it') + '</button></div>'; d.querySelector('[data-a=next]').focus(); }
+    d.addEventListener('click', function(e){ var a = e.target.getAttribute('data-a'); if (!a) return; if (a === 'next' && i < 2) { i++; draw(); return; } d.remove(); try { localStorage.setItem(K, '1'); } catch (x) {} });
+    document.body.appendChild(d); draw(); }
+  setTimeout(go, 1200); })();
+</script>
+<style>.r31-tour{position:fixed;left:16px;right:16px;bottom:16px;max-width:380px;margin-left:auto;background:#17212B;color:#fff;border-radius:16px;padding:18px;z-index:90;box-shadow:0 20px 40px -12px rgba(0,0,0,.5)}.r31-tour b{display:block;font-size:1.05rem;margin:2px 0 6px}.r31-tour p{margin:0;color:#C9D0D6;font-size:.92rem}.r31-tour .r31-tk{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#FF8A57;margin-bottom:4px}.r31-tour div{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}.r31-tour button{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid #55606B;background:transparent;color:#fff;font-weight:700;cursor:pointer}.r31-tour button.on{background:#FF5B14;border-color:#FF5B14;color:#17212B}</style>
 </body></html>
