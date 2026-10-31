@@ -173,7 +173,7 @@ PREFIX = {'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 
           'Abu Dhabi': 'AUH', 'Ras Al Khaimah': 'RAK', 'Oman': 'OMN', 'Istanbul': 'IST', 'Antalya': 'AYT', 'Egypt': 'EGY', 'Cyprus': 'CYP', 'Northern Cyprus': 'NCY', 'Greece': 'GRC',
           'Montenegro': 'MNE', 'Croatia': 'HRV', 'Georgia': 'GEO', 'Spain': 'ESP', 'Portugal': 'PRT', 'Los Cabos': 'CAB', 'Puerto Vallarta': 'PVR', 'Mérida': 'MID', 'Costa Rica': 'CRI',
           'Panama': 'PAN', 'Dominican Republic': 'DOM', 'Colombia': 'COL', 'Brazil': 'BRA', 'Miami': 'MIA', 'Vietnam': 'VNM', 'Philippines': 'PHL', 'Malaysia': 'MYS', 'Cambodia': 'KHM',
-          'Sri Lanka': 'LKA', 'Bangkok': 'BKK', 'Hua Hin': 'HHQ', 'Krabi': 'KBV', 'Chiang Mai': 'CNX', 'Niseko': 'NSK', 'Labuan Bajo': 'LBJ'}
+          'Sri Lanka': 'LKA', 'Bangkok': 'BKK', 'Hua Hin': 'HHQ', 'Krabi': 'KBV', 'Chiang Mai': 'CNX', 'Niseko': 'NSK', 'Labuan Bajo': 'LBJ', 'Albania': 'ALB', 'Antigua': 'ANU', 'Austin': 'AUS', 'Bahrain': 'BAH', 'Belize': 'BZE', 'Bodrum': 'BJV', 'Buenos Aires': 'BUE', 'Bulgaria': 'BGR', 'Cape Town': 'CPT', 'Fiji': 'FJI', 'Goa': 'GOA', 'Gold Coast': 'OOL', 'Grenada': 'GND', 'London': 'LON', 'Manchester': 'MAN', 'Marrakech': 'MRK', 'Mauritius': 'MRU', 'Nairobi': 'NBO', 'New Zealand': 'NZL', 'Okinawa': 'OKA', 'Orlando': 'ORL', 'Puerto Rico': 'PRI', 'Qatar': 'QAT', 'Saudi Arabia': 'KSA', 'Seychelles': 'SEZ', 'St Kitts and Nevis': 'SKB', 'Sydney': 'SYD', 'Turks and Caicos': 'TCA', 'Uruguay': 'URY', 'Zanzibar': 'ZNZ'}
 
 FLAG_CATS = [('Fraud complaints reported', r'fraud|prosecutor|criminal|sentenced|charges'), ('Legal dispute reported', r'sued|court|judgment|lawsuit|litigation|legal action|arbitration'),
              ('Developer in financial trouble', r'bankrupt|insolven|missed .{0,40}(?:interest|bond|payment)|accumulated losses|debt obligations|stop paying'),
@@ -196,7 +196,7 @@ def _checks(p, c, s):
     permit = 2 if pn else (1 if (c.get('permit_claim') or s.get('permit_claim')) else 0)
     esc = c.get('escrow_or_guarantee') if c.get('escrow_or_guarantee') not in (None, '') else s.get('escrow')
     gl = c.get('guaranteed_language') if c.get('guaranteed_language') is not None else s.get('guaranteed_language')
-    return {'permit': permit, 'escrow': None if esc is None else bool(esc), 'progress': s.get('progress_pct'),
+    return {'permit': permit, 'escrow': None if esc is None else bool(esc), 'progress': s.get('progress_pct') if s.get('progress_pct') is not None else ('updates' if s.get('progress_updates') else None),
             'plans': bool(c.get('plans_published') or s.get('plans_published')), 'record': bool(s.get('developer_delivered')), "returns_ok": gl is False}
 
 def public_cases(projects, latest):
