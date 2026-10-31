@@ -2,11 +2,11 @@
  "run": {
   "date": "2026-10-31",
   "mode": "ai",
-  "pages_ok": 290,
+  "pages_ok": 293,
   "pages_failed": 38,
-  "changes": 25,
+  "changes": 9,
   "model": "claude-haiku-5-5",
-  "usd_estimate": 1.229
+  "usd_estimate": 0.338
  },
  "latest": {
   "every-bali": {
@@ -454,13 +454,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "30 years leasehold ownership.",
+     "From $191.000 USD",
      "7-14% yearly passive income*.",
-     "Break Even Point reached in the 9th-10th year*."
+     "30 years leasehold ownership."
     ]
    },
    "source": "ai",
-   "hash": "61d6c8201e57b170",
+   "hash": "8637b641ef77138f",
    "checked": "2026-10-31"
   },
   "biom": {
@@ -548,7 +548,7 @@
    "claims": {
     "price_from": 99900,
     "currency": "USD",
-    "title_type": null,
+    "title_type": "leasehold",
     "lease_years_base": 33,
     "extension_promised": true,
     "guaranteed_language": false,
@@ -560,12 +560,12 @@
     "escrow_or_guarantee": null,
     "quotes": [
      "Flexible lease terms (33+26 years), affordable rates from $99,900, and high demand for the properties.",
-     "Date of delivery 2nd quarter 2027",
-     "We have experience of construction in Bali."
+     "$99 900 Starting price 22 м² Minimum area 1-2 Number of bedrooms 2nd quarter 2027 Date of delivery",
+     "Layouts and prices General Plan"
     ]
    },
    "source": "ai",
-   "hash": "6247bf0a25677415",
+   "hash": "2d4cb74835c4044d",
    "checked": "2026-10-31"
   },
   "secret-inshi": {
@@ -586,13 +586,13 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
+     "$95 400 Starting price",
      "Q1 2027 Date of delivery",
-     "Maximum privacy, thoughtful zoning and premium finishes make it ideal for both living and investment.",
-     "Installment 0% up to two years"
+     "Only from proven developers, and with properly executed documents."
     ]
    },
    "source": "ai",
-   "hash": "89d8ee3908f0932a",
+   "hash": "f5d484e6fdc52c0b",
    "checked": "2026-10-31"
   },
   "bingin-ocean-villas": {
@@ -2017,11 +2017,11 @@
     "quotes": [
      "Ownership: Freehold",
      "Expected Completion: December 2026",
-     "Architectural Renderings Facilities Showroom Floor plans"
+     "Construction Start: October 2023"
     ]
    },
    "source": "ai",
-   "hash": "d689379859962034",
+   "hash": "6ddcb3304cc241ad",
    "checked": "2026-10-31"
   },
   "citygate-de-phuket": {
@@ -2260,11 +2260,11 @@
     "quotes": [
      "Ownership: Freehold",
      "Construction Completion: June 2028",
-     "an excellent long-term investment for those seeking something special"
+     "an excellent long-term investment for those seeking something special—without the premium price tag"
     ]
    },
    "source": "ai",
-   "hash": "359b2d89bbfe288e",
+   "hash": "b122a1c375f3a97e",
    "checked": "2026-10-31"
   },
   "riviera-santa-monica": {
@@ -2286,12 +2286,12 @@
     "escrow_or_guarantee": null,
     "quotes": [
      "Ownership: Freehold",
-     "Construction Finish: November 2028",
-     "this experience and pedigree is backed by strong financial support from leading Commercial Thai Banks"
+     "Construction Start: October 2025",
+     "Construction Finish: November 2028"
     ]
    },
    "source": "ai",
-   "hash": "f40bf99520e5410b",
+   "hash": "42a05bb8e61a7f16",
    "checked": "2026-10-31"
   },
   "naga-kiri-villas-lamai": {
@@ -3612,16 +3612,16 @@
     "completion_year": 2028,
     "permit_claim": true,
     "permit_number": null,
-    "plans_published": false,
-    "escrow_or_guarantee": "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "plans_published": null,
+    "escrow_or_guarantee": "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciary scheme",
     "quotes": [
-     "El inicio de obra se formalizó tras haber alcanzado el punto de equilibrio en noviembre de 2025",
+     "estará listo a finales de 2028",
      "Entre las condiciones exigidas se incluyeron la aprobación de la licencia de construcción",
-     "Con un plazo estimado de ejecución de 30 meses, morros Vita proyecta su entrega para finales de 2028"
+     "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos"
     ]
    },
    "source": "ai",
-   "hash": "2de891c0b925d6aa",
+   "hash": "fac4cd0ae1e2a877",
    "checked": "2026-10-31"
   },
   "reserva-natural-san-jose-natura-itagui": {
@@ -3946,7 +3946,7 @@
    "market": "Philippines",
    "claims": {
     "price_from": null,
-    "currency": "PHP",
+    "currency": null,
     "title_type": null,
     "lease_years_base": null,
     "extension_promised": null,
@@ -3958,13 +3958,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "units to be sold at an average of P250,000 per square meter",
-     "scheduled start of unit turnover in December 2027",
-     "We expect this to be sold out pretty much soon after we completed some of the areas"
+     "construction work would now shift to masonry and finishing in preparation for the scheduled start of unit turnover in December 2027",
+     "The project, with units to be sold at an average of P250,000 per square meter, will cater to the upscale segment",
+     "has a total of 576 units, 14 percent of which has been sold to date"
     ]
    },
    "source": "ai",
-   "hash": "1de17e71747bac4a",
+   "hash": "530fee40c8c2ae2c",
    "checked": "2026-10-31"
   },
   "mandtra-residences-tower-3-mandaue": {
@@ -4111,13 +4111,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Starting from GBP 129,536 in Pulau Pinang, Pulau Pinang",
-     "It is strategically located on the freehold land in Jalan Seri Tanjung Pinang 1.",
-     "Completion Date March 30, 2029"
+     "Tenure Freehold",
+     "Completion Date March 30, 2029",
+     "It is strategically located on the freehold land in Jalan Seri Tanjung Pinang 1."
     ]
    },
    "source": "ai",
-   "hash": "01da0f2e163fad56",
+   "hash": "4698a9bf72c03beb",
    "checked": "2026-10-31"
   },
   "lz-sea-view-premium-sihanoukville": {
@@ -4506,13 +4506,13 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
+     "Price From € 1,287,800",
      "Completion Date 2027-03-30",
-     "Status Under construction",
      "the resort provides rental services for those who wish to rent their properties for investment purposes"
     ]
    },
    "source": "ai",
-   "hash": "9d3f9d289623c191",
+   "hash": "2c2a725b2dadb476",
    "checked": "2026-10-31"
   },
   "iskele-kalecik-complex-terra-eck-4116": {
@@ -4533,13 +4533,13 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Completion Date 2028-02-28",
-     "30-Month Payment Plan",
+     "Completion Date 2028-02-28 Status Under construction",
+     "Flexible Payment Options 30-Month Payment Plan",
      "Payment plans may be adjusted to suit your budget and financial preferences."
     ]
    },
    "source": "ai",
-   "hash": "5ce4a0625fdc5843",
+   "hash": "00ab752a7e87e429",
    "checked": "2026-10-31"
   },
   "riviera-tower-ellinikon": {
@@ -4647,7 +4647,7 @@
     ]
    },
    "source": "ai",
-   "hash": "dc268ae3963de2eb",
+   "hash": "bf124eb8955269b6",
    "checked": "2026-10-31"
   },
   "boka-place-porto-montenegro": {
@@ -4927,13 +4927,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Ownership Status: Developer",
-     "A variety of units are available, ranging from one to three bedrooms",
-     "Whether as a permanent residence, holiday home, or investment, this property represents an excellent opportunity."
+     "Ownership Status: Developer Built in: n/a",
+     "Whether as a permanent residence, holiday home, or investment, this property represents an excellent opportunity.",
+     "A variety of units are available, ranging from one to three bedrooms, designed to meet different lifestyle needs."
     ]
    },
    "source": "ai",
-   "hash": "77cf660b80e4d024",
+   "hash": "bb8a0dd6d5853e11",
    "checked": "2026-10-31"
   },
   "muda-comporta-villas": {
@@ -4961,7 +4961,8 @@
    },
    "source": "ai",
    "hash": "2f0516212c411966",
-   "checked": "2026-10-31"
+   "checked": "2026-10-31",
+   "last_error": "HTTP Error 429: Too Many Requests"
   },
   "bashayer-modon-hudayriyat": {
    "name": "Bashayer",
@@ -5080,12 +5081,12 @@
     "escrow_or_guarantee": null,
     "quotes": [
      "Island Heights offers Freehold ownership, allowing eligible buyers to fully own their property.",
-     "its proximity to retail hubs, dining, and Dubai's transport links enhances both lifestyle appeal and rental potential.",
-     "Prices start at approximately AED 985,000."
+     "Studio Apartments: Prices start at approximately AED 985,000.",
+     "The starting price for Island Heights is 1175706 AED."
     ]
    },
    "source": "ai",
-   "hash": "4f8ff49784b4b25e",
+   "hash": "99daf3f0ccb23424",
    "checked": "2026-10-31"
   },
   "wyndham-residences-al-marjan": {
@@ -5106,13 +5107,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
+     "With prices starting from AED 1,165,000",
      "Wyndham Residences is a freehold development, giving buyers full ownership of their apartments with no time restrictions",
-     "With prices starting from AED 1,165,000, Wyndham Residences Al Marjan Island presents a compelling opportunity",
      "Expected Completion December 1, 2028"
     ]
    },
    "source": "ai",
-   "hash": "c96aa00a364af132",
+   "hash": "23a28ed4a566257b",
    "checked": "2026-10-31"
   },
   "janu-residences-al-marjan": {
@@ -5135,11 +5136,11 @@
     "quotes": [
      "Janu Residences is a freehold development, granting buyers full ownership of their properties and land.",
      "Their experience in developing luxury residential properties guarantees that Janu Residences offers both long-term investment potential",
-     "Starting prices begin from AED 8.5 million for selected units."
+     "Starting from AED 8.5 million, these luxury apartments offer strong value in the waterfront segment, with expected delivery by December 2028."
     ]
    },
    "source": "ai",
-   "hash": "6fadcf3dec0a4b8f",
+   "hash": "2d0c3c32bc9cd3eb",
    "checked": "2026-10-31"
   },
   "address-residences-al-marjan-island": {
@@ -5280,15 +5281,14 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Bu konum, yüksek ulaşım kolaylığı sağlar ve dairelerin değerinin zamanla artmasını garanti eder.",
-     "Güvenli Devlet Güvenceli Yatırım.",
-     "Yüksek kira getirisi (%6 - %8 arası)"
+     "Yüksek kira getirisi (%6 - %8 arası)",
+     "dairelerin değerinin zamanla artmasını garanti eder",
+     "Güvenli Devlet Güvenceli Yatırım."
     ]
    },
    "source": "ai",
-   "hash": "340e5a2476db3463",
-   "checked": "2026-10-30",
-   "last_error": "no JSON in answer"
+   "hash": "f111707e613b5a72",
+   "checked": "2026-10-31"
   },
   "basaksehir-low-rise-mixed-use-148606": {
    "name": "Low-rise mixed-use apartments in Başakşehir (ref 148606)",
@@ -5309,12 +5309,12 @@
     "escrow_or_guarantee": null,
     "quotes": [
      "3+1 bedroom apartments sized from 184m2 and priced from 605,000 USD",
-     "50% down payment and balance paid within 12 months.",
-     "Completion date September 2028."
+     "Completion date September 2028.",
+     "50% down payment and balance paid within 12 months."
     ]
    },
    "source": "ai",
-   "hash": "a40a1165394f4ee3",
+   "hash": "4171a1222773a0e1",
    "checked": "2026-10-31"
   },
   "brooklyn-life-fikirtepe": {
@@ -5362,12 +5362,12 @@
     "escrow_or_guarantee": null,
     "quotes": [
      "Price starts from 202,139 usd",
-     "Annual Rental Yield : 5%",
-     "Title deed type : Easement"
+     "Title deed type : Easement",
+     "Annual Rental Yield : 5%"
     ]
    },
    "source": "ai",
-   "hash": "c75de6d4a63eb41c",
+   "hash": "e54ee551be3578a1",
    "checked": "2026-10-31"
   },
   "altintas-swim-up-complex-ayt-3204": {
@@ -5394,7 +5394,7 @@
     ]
    },
    "source": "ai",
-   "hash": "070f6118df5dfe30",
+   "hash": "95f54985943c1f25",
    "checked": "2026-10-31"
   },
   "altintas-700-unit-project-aksu": {
@@ -6368,13 +6368,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "You get fee-simple title in your own name — the same rights as a Dominican citizen.",
+     "Fee-simple title in your name — the same rights as a Dominican citizen.",
      "8-11% Projected annual ROI",
      "Delivery is scheduled for August 2027."
     ]
    },
    "source": "ai",
-   "hash": "4ef18011940b6dc0",
+   "hash": "a1babb87584c177b",
    "checked": "2026-10-31"
   },
   "vervana-playa-venao-frapan": {
@@ -6642,16 +6642,16 @@
     "completion_year": null,
     "permit_claim": false,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
      "Resale apartments from $23,000",
      "Apartments from the developer are sold",
-     "Construction uses a proven monolithic frame method, guaranteeing structural integrity, long-term durability"
+     "Construction uses a proven monolithic frame method, guaranteeing structural integrity, long-term durability, and flexibility for interior layouts."
     ]
    },
    "source": "ai",
-   "hash": "8e4fc89e44009984",
+   "hash": "ee61b56885a6f221",
    "checked": "2026-10-31"
   },
   "al-mare-green-midtown-group": {
@@ -6669,16 +6669,16 @@
     "completion_year": 2027,
     "permit_claim": false,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Developer’s apartments price upon request",
      "1 house is under construction, next delivery in Q4 2027",
+     "Developer’s apartments price upon request",
      "guarantees a long service life without loss of operational characteristics"
     ]
    },
    "source": "ai",
-   "hash": "7b746e5f97046e68",
+   "hash": "eab30449425d46df",
    "checked": "2026-10-31"
   },
   "querencia-dovec-group": {
@@ -6701,11 +6701,11 @@
     "quotes": [
      "Fiyat başlangıç 209,001 usd",
      "Yıllık Kira Getirisi : 8%",
-     "Tapu Türü : Sözleşme"
+     "Teslimat tarihi 01.06.2027"
     ]
    },
    "source": "ai",
-   "hash": "ba026beac917f88c",
+   "hash": "8764dc7a938978a7",
    "checked": "2026-10-31"
   },
   "avrupa-konutlari-gunesli-artas": {
@@ -6727,12 +6727,12 @@
     "escrow_or_guarantee": null,
     "quotes": [
      "Price starts from 295,000 usd",
-     "Delivery date 30.07.2027",
-     "Annual Rental Yield : 5%"
+     "Annual Rental Yield : 5%",
+     "Title deed type : Easement"
     ]
    },
    "source": "ai",
-   "hash": "b14910bc8db83713",
+   "hash": "f7ae251751731d8a",
    "checked": "2026-10-31"
   },
   "yalikavak-loft-akfen-gyo": {
@@ -6821,7 +6821,7 @@
    "url": "https://www.emlakplatform.com.tr/en/projects/mevacity-alanya",
    "market": "Antalya",
    "claims": {
-    "price_from": 9443,
+    "price_from": 9446,
     "currency": "USD",
     "title_type": null,
     "lease_years_base": null,
@@ -6834,13 +6834,13 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Annual Rental Yield : 7%",
-     "Title deed type : Easement",
-     "Delivery date 30.12.2026"
+     "Price starts from Login 9,446",
+     "Delivery date 30.12.2026",
+     "Title deed type : Easement"
     ]
    },
    "source": "ai",
-   "hash": "b20e40d9ccb2a1ba",
+   "hash": "be1b0b199c655028",
    "checked": "2026-10-31"
   },
   "ferreiros-residences-yard-properties": {
@@ -6870,7 +6870,7 @@
    "url": "https://realting.com/montenegro/new-buildings/27295",
    "market": "Montenegro",
    "claims": {
-    "price_from": 217827,
+    "price_from": 203922,
     "currency": "USD",
     "title_type": null,
     "lease_years_base": null,
@@ -6883,13 +6883,13 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "The developer offers an installment payment plan linked to construction phases",
      "The estimated completion date is 2027.",
-     "with the previous four buildings already completed and occupied."
+     "35% initial payment upon signing the contract",
+     "The building consists of six floors and 39 apartments with one to three bedrooms."
     ]
    },
    "source": "ai",
-   "hash": "2e4e6aca307fd71d",
+   "hash": "4c54fd889f57c5b6",
    "checked": "2026-10-31"
   },
   "podstrana-modern-apartments-eurovilla": {
@@ -7000,7 +7000,7 @@
    "url": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/",
    "market": "Bulgaria",
    "claims": {
-    "price_from": 43446,
+    "price_from": 55143,
     "currency": "EUR",
     "title_type": null,
     "lease_years_base": null,
@@ -7013,13 +7013,13 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
-     "The project is in an advanced stage of construction, with the building already having Act 14",
-     "Act 15 is expected in September 2026, and the planned deadline for receiving Act 16 is November 2026.",
-     "The prices of the available apartments start at 55,143 euros and reach 241,600 euros excluding VAT"
+     "The prices of the available apartments start at 55,143 euros",
+     "The building already having Act 14, Act 15 is expected in September 2026",
+     "You can reserve this property with a non-refundable deposit of 2,000 Euro"
     ]
    },
    "source": "ai",
-   "hash": "6f8f26776bc36063",
+   "hash": "baf90696299bb137",
    "checked": "2026-10-31"
   },
   "ferragudo-village-benoit-properties": {
@@ -7091,11 +7091,11 @@
     "quotes": [
      "Freehold ownership is available to both local and international investors",
      "Rental Demand: High appeal for luxury waterfront living ensures strong rental returns",
-     "Expected delivery by December 2028"
+     "Expected Completion December 1, 2028"
     ]
    },
    "source": "ai",
-   "hash": "37e506e6539360c0",
+   "hash": "cde5e5c8c8d883e3",
    "checked": "2026-10-31"
   },
   "golf-dale-emaar": {
@@ -7359,13 +7359,12 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Off-plan Delivery Date: Q4 2028 Amare Sea Front North Coast,Ras Al Hekma,Solare 3 - 6 Beds villa",
-     "Amare Sea Front North Coast,Ras Al Hekma,Solare 3 - 6 Beds villa Launch price : 5,530,644 EGP 1 Payment Plan",
-     "Launch price : 5,530,644 EGP 1 Payment Plan WhatsApp"
+     "Off-plan Delivery Date: Q4 2028 Amare Sea Front North Coast,Ras Al Hekma,Solare 3 - 6 Beds villa Launch price : 5,530,644 EGP 1 Payment Plan",
+     "Amare Sea Front North Coast,Ras Al Hekma,Solare 3 - 6 Beds villa Launch price : 5,530,644 EGP"
     ]
    },
    "source": "ai",
-   "hash": "affa3858d1e6ca8d",
+   "hash": "83edbbfb62e912a9",
    "checked": "2026-10-31"
   },
   "the-grand-central-hivernage-horizon-morocco": {
@@ -8096,7 +8095,7 @@
    "claims": {
     "price_from": 140918,
     "currency": "USD",
-    "title_type": "leasehold",
+    "title_type": null,
     "lease_years_base": null,
     "extension_promised": null,
     "guaranteed_language": false,
@@ -8107,13 +8106,13 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
-     "From $140,918",
-     "it is scheduled for completion in Jan 2028",
-     "Unit Floor Plan Building Floor Plan Master Plan Street View Map"
+     "scheduled for completion in Jan 2028",
+     "1 Leasehold Garden View",
+     "Foreigners can own a condominium Freehold in their own name."
     ]
    },
    "source": "ai",
-   "hash": "3545e3ead5bc89a6",
+   "hash": "c0542fe5a3751489",
    "checked": "2026-10-31"
   },
   "banyan-tree-beach-residences-nerea-banyan-group": {
@@ -8239,11 +8238,11 @@
     "quotes": [
      "With only 88 exclusive freehold residences ranging from 139 to 547 sq.m., priced from THB 40.8 million",
      "The project is scheduled for completion in Q2 2029.",
-     "The Only Freehold Branded Residences in The Heart of Sukhumvit"
+     "a landmark THB 5.5 billion freehold hospitality-branded residence located in the heart of Sukhumvit"
     ]
    },
    "source": "ai",
-   "hash": "5e01d24719919ceb",
+   "hash": "58151f1bc85fa81d",
    "checked": "2026-10-31"
   },
   "sls-residences-bangkok-sukhumvit-24-valanti": {
@@ -8393,14 +8392,10 @@
     "permit_number": null,
     "plans_published": false,
     "escrow_or_guarantee": null,
-    "quotes": [
-     "Spanning over 2,370 square metres and rising 12 stories high, The Sculptura features 75 apartments and 10 retail shops",
-     "the company is expected to host the official sales launch for The Sculptura in November",
-     "The project's completion will align with the rollout of several billion-VND-scale infrastructure"
-    ]
+    "quotes": []
    },
    "source": "ai",
-   "hash": "98c074a6772ea1fa",
+   "hash": "fe891e4871ca7fdb",
    "checked": "2026-10-31"
   },
   "avea-andaman-island-eastern-oriental": {
@@ -8598,6 +8593,87 @@
    },
    "source": "seed",
    "last_error": "Remote end closed connection without response"
+  },
+  "the-sustainable-city-yiti-diamond-developers-see-holding-through-the-j": {
+   "name": "The Sustainable City - Yiti",
+   "url": "https://thesustainablecity-yiti.com/",
+   "market": "Oman",
+   "claims": {
+    "price_from": null,
+    "currency": null,
+    "title_type": null,
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow_or_guarantee": null,
+    "quotes": [
+     "Handover is confirmed for December 2027, with communities phased around it.",
+     "Sustainable District villa owners pay no annual service fees.",
+     "Up to 100% savings on electricity, with solar generation designed to cover the city's own demand."
+    ]
+   },
+   "source": "ai",
+   "hash": "ec14f3950ae0c919",
+   "checked": "2026-10-31"
+  },
+  "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-": {
+   "name": "Mira Ocean Estates (Trussardi Residences, first phase)",
+   "url": "https://mira-ocean-estates.com/",
+   "market": "Oman",
+   "claims": {
+    "price_from": 550000,
+    "currency": "AED",
+    "title_type": "freehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2028,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow_or_guarantee": null,
+    "quotes": [
+     "Foreign buyers can acquire freehold property at Mira Ocean Estates with no nationality restrictions.",
+     "Starting price: AED 550,000 Payment plan: 50/50 Handover: Q4 2028",
+     "Property ownership may qualify buyers for a renewable residence visa of up to 10 years in Oman."
+    ]
+   },
+   "source": "ai",
+   "hash": "0672ef2fde3fb4f6",
+   "checked": "2026-10-31"
+  },
+  "bellevue-al-mouj-ideal-buildings-ideal-building": {
+   "name": "Bellevue Al Mouj",
+   "url": "https://ideal-buildings.com/projects/bellevue/",
+   "market": "Oman",
+   "claims": {
+    "price_from": null,
+    "currency": null,
+    "title_type": "freehold",
+    "lease_years_base": null,
+    "extension_promised": null,
+    "guaranteed_language": false,
+    "advertised_yield_pct": null,
+    "completion_year": 2027,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow_or_guarantee": null,
+    "quotes": [
+     "it grants 100% freehold ownership and lifetime Oman residency for you and your immediate family",
+     "Expected for completion in 2027, Bellevue stands as the tallest structure in Al Mouj",
+     "investing here ensures high rental yields and long-term capital appreciation"
+    ]
+   },
+   "source": "ai",
+   "hash": "092e9d8949bf1ee4",
+   "checked": "2026-10-31"
   }
  }
 }

@@ -553,5 +553,108 @@
     true
    ]
   }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ],
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciary scheme"
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fortis-residences-makati",
+  "name": "Fortis Residences",
+  "changed": {
+   "currency": [
+    "PHP",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9443,
+    9446
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203922
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    43446,
+    55143
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
  }
 ]
