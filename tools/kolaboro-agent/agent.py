@@ -199,6 +199,58 @@ def _checks(p, c, s):
     return {'permit': permit, 'escrow': None if esc is None else bool(esc), 'progress': s.get('progress_pct') if s.get('progress_pct') is not None else ('updates' if s.get('progress_updates') else None),
             'plans': bool(c.get('plans_published') or s.get('plans_published')), 'record': bool(s.get('developer_delivered')), "returns_ok": gl is False}
 
+LEVELS = ('registry', 'independent', 'developer', 'contradicted', 'none')
+FACT_KEYS = ('developer_founded', 'developer_hq', 'developer_company', 'developer_projects_delivered', 'developer_units_delivered', 'listed_or_audited',
+             'construction_start', 'handover_promised', 'original_handover', 'delay_months', 'unit_types', 'size_min_m2', 'size_max_m2', 'price_min', 'price_max',
+             'deposit_pct', 'payment_plan', 'foreign_ownership', 'rental_programme', 'service_charge', 'amenities', 'lat', 'lng', 'permit_authority', 'brochure_url')
+
+def _level(v):
+    v = str(v or 'none').lower()
+    return next((l for l in LEVELS if l in v), 'none')
+
+def _verification(p):
+    v = p.get('verification') or {}
+    if not v:
+        return None
+    m = {'permit': 'permit', 'escrow': 'escrow', 'progress': 'progress', 'plans': 'plans', 'record': 'record', 'returns': 'returns_ok', 'returns_ok': 'returns_ok', 'no_guaranteed_returns': 'returns_ok'}
+    out = {}
+    for k, val in v.items():
+        if k in m:
+            out[m[k]] = _level(val)
+    return out or None
+
+def _claims(p):
+    c = {'verified': 0, 'unverified': 0, 'contradicted': 0}
+    for x in p.get('claims') or []:
+        st = str((x or {}).get('status') or '').lower()
+        if st in c:
+            c[st] += 1
+    return c if sum(c.values()) else None
+
+def _filled(v):
+    return v not in (None, '', [], {})
+
+def db_stats(projects, cases):
+    src = set(); facts = 0; claims = {'verified': 0, 'unverified': 0, 'contradicted': 0}; lv = {l: 0 for l in LEVELS}; deep = 0; ckn = 0
+    for p in projects:
+        src.update(u for u in (p.get('sources') or []) if isinstance(u, str))
+        seed = p.get('seed') or {}; fx = p.get('facts') or {}
+        facts += sum(1 for v in seed.values() if _filled(v)) + sum(1 for k in FACT_KEYS if _filled(fx.get(k)))
+        facts += sum(1 for k in ('name', 'developer', 'area', 'country', 'market', 'url', 'docs_url', 'permit_number') if _filled(p.get(k)))
+        c = _claims(p) or {}
+        for k in claims:
+            claims[k] += c.get(k, 0)
+        v = _verification(p)
+        if v:
+            deep += 1
+            for l in v.values():
+                lv[l] += 1; ckn += 1
+    return {'updated': TODAY, 'projects': len(projects), 'markets': len({c['market'] for c in cases}), 'countries': len({c['country'] for c in cases}),
+            'sources': len(src), 'data_points': facts, 'claims': claims, 'claims_total': sum(claims.values()),
+            'deep_profiles': deep, 'checks_by_level': lv, 'checks_rated': ckn,
+            'all_six_public': sum(1 for c in cases if c['max'] == 6 and c['score'] == 6 and not c['flags']),
+            'with_flags': sum(1 for c in cases if c['flags'])}
+
 def public_cases(projects, latest):
     out = []; n = {}
     for p in sorted(projects, key=lambda x: x.get('market', 'Bali') != 'Bali'):  # stable: file order keeps IDs fixed
@@ -224,9 +276,12 @@ def public_cases(projects, latest):
                     'title': m.get('title_type'), 'lease': m.get('lease_years_base'), 'yield': m.get('advertised_yield_pct') or s.get('yield_pct'), 'units': s.get('units'),
                     'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,
                     'read': read or bool(p.get('sources')), 'checked': _date(rec.get('checked', '') or p.get('added', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
-                    'q': q[:6]})
+                    'q': q[:6], 'verified': _verification(p), 'vscore': sum(1 for l in (_verification(p) or {}).values() if l in ('registry', 'independent')) if _verification(p) else None,
+                    'claims': _claims(p), 'delay': (p.get('facts') or {}).get('delay_months'), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
-    return {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
+    res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
+    res['db'] = db_stats(projects, out)
+    return res
 
 def main():
     public_out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA, 'public-bali-claims.json')
