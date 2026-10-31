@@ -126,5 +126,432 @@
     700000
    ]
   }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "amani-melasti",
+  "name": "Amani Melasti by Wyndham",
+  "changed": {
+   "price_from": [
+    null,
+    157000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "advertised_yield_pct": [
+    null,
+    18
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "anjuna-bay",
+  "name": "The Anjuna Bay",
+  "changed": {
+   "price_from": [
+    190000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "guaranteed_language": [
+    true,
+    false
+   ],
+   "advertised_yield_pct": [
+    17.5,
+    16
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "coco-hills",
+  "name": "COCO Hills Resort",
+  "changed": {
+   "price_from": [
+    131966.56,
+    131980
+   ],
+   "advertised_yield_pct": [
+    15,
+    12
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "core-villas",
+  "name": "Core Villas",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "lease_years_base": [
+    null,
+    33
+   ],
+   "extension_promised": [
+    null,
+    true
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "oasis-iii",
+  "name": "Oasis III",
+  "changed": {
+   "price_from": [
+    360000,
+    327500
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "octasun",
+  "name": "OctaSun Residence",
+  "changed": {
+   "price_from": [
+    273000,
+    536000
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "prive-pererenan",
+  "name": "Privé Pererenan",
+  "changed": {
+   "price_from": [
+    4400000000,
+    4480000000
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "serenity-village",
+  "name": "Serenity Village",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "temple-heights",
+  "name": "Temple Heights",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ],
+   "lease_years_base": [
+    null,
+    25
+   ],
+   "extension_promised": [
+    null,
+    true
+   ],
+   "advertised_yield_pct": [
+    null,
+    9.34
+   ],
+   "completion_year": [
+    null,
+    2027
+   ],
+   "permit_claim": [
+    true,
+    false
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "the-one-by-almal-nusa-dua",
+  "name": "The One by Almal Bali Nusa Dua",
+  "changed": {
+   "price_from": [
+    null,
+    98371
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "title_type": [
+    null,
+    "leasehold"
+   ],
+   "lease_years_base": [
+    null,
+    25
+   ],
+   "extension_promised": [
+    null,
+    true
+   ],
+   "advertised_yield_pct": [
+    null,
+    17
+   ],
+   "completion_year": [
+    null,
+    2027
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "the-zero-nai-yang",
+  "name": "The Zero Nai Yang",
+  "changed": {
+   "price_from": [
+    126000,
+    4940000
+   ],
+   "currency": [
+    "USD",
+    "THB"
+   ],
+   "title_type": [
+    null,
+    "freehold"
+   ],
+   "advertised_yield_pct": [
+    11,
+    null
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "the-crest-samui",
+  "name": "The Crest Residences",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "ebano-santa-maria-panama",
+  "name": "Ebano",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    null
+   ],
+   "permit_claim": [
+    false,
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Esquema fiduciario con Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos",
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario"
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "fortis-residences-makati",
+  "name": "Fortis Residences",
+  "changed": {
+   "currency": [
+    null,
+    "PHP"
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "crown-penang",
+  "name": "Crown Penang",
+  "changed": {
+   "price_from": [
+    129747,
+    129536
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "widen-by-sansiri-sathorn",
+  "name": "Widen by Sansiri",
+  "changed": {
+   "price_from": [
+    923000,
+    926000
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "esentepe-sea-view-villas-terra-eck-3023",
+  "name": "Sea-view villas resort, Esentepe (TERRA listing ECK-3023)",
+  "changed": {
+   "price_from": [
+    1283400,
+    1287800
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "iskele-kalecik-complex-terra-eck-4116",
+  "name": "Luxury apartments complex, Kalecik / Iskele (TERRA listing ECK-4116)",
+  "changed": {
+   "price_from": [
+    218400,
+    219200
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "lara-port-antalya",
+  "name": "Lara Port Antalya",
+  "changed": {
+   "price_from": [
+    201966,
+    202139
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "altintas-swim-up-complex-ayt-3204",
+  "name": "Swim-up pool complex in Altıntaş (ref AYT-3204)",
+  "changed": {
+   "price_from": [
+    116600,
+    116200
+   ]
+  }
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
  }
 ]
