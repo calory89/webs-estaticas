@@ -5,25 +5,28 @@
     'Dubai':[25.2,55.27], 'Abu Dhabi':[24.45,54.38], 'Ras Al Khaimah':[25.79,55.94], 'Oman':[23.59,58.41], 'Istanbul':[41.01,28.98], 'Antalya':[36.9,30.7], 'Egypt':[30.0,31.2], 'Cyprus':[34.7,33.0], 'Northern Cyprus':[35.33,33.32],
     'Greece':[37.98,23.73], 'Montenegro':[42.29,18.84], 'Croatia':[45.1,13.9], 'Georgia':[41.64,41.63], 'Spain':[38.35,-0.48], 'Costa del Sol':[36.51,-4.88], 'Portugal':[38.72,-9.14], 'Algarve':[37.09,-8.25],
     'Riviera Maya':[20.63,-87.07], 'Los Cabos':[22.89,-109.92], 'Puerto Vallarta':[20.65,-105.23], 'Mérida':[20.97,-89.62], 'Costa Rica':[10.6,-85.6], 'Panama':[8.98,-79.52], 'Dominican Republic':[18.58,-68.4], 'Colombia':[6.24,-75.58],
-    'Brazil':[-3.73,-38.52], 'Miami':[25.76,-80.19], 'Vietnam':[16.05,108.2], 'Philippines':[10.32,123.89], 'Malaysia':[3.14,101.69], 'Cambodia':[11.56,104.92], 'Sri Lanka':[6.93,79.85], 'Niseko':[42.8,140.69] };
+    'Brazil':[-3.73,-38.52], 'Miami':[25.76,-80.19], 'Vietnam':[16.05,108.2], 'Philippines':[10.32,123.89], 'Malaysia':[3.14,101.69], 'Cambodia':[11.56,104.92], 'Sri Lanka':[6.93,79.85], 'Niseko':[42.8,140.69], 'Albania':[41.3,19.6], 'Antigua':[17.07,-61.8], 'Austin':[30.27,-97.74], 'Bahrain':[26.2,50.58], 'Belize':[17.5,-88.2], 'Bodrum':[37.04,27.43], 'Buenos Aires':[-34.6,-58.38], 'Bulgaria':[41.84,23.49], 'Cape Town':[-33.92,18.42], 'Fiji':[-17.8,177.4], 'Goa':[15.5,73.83], 'Gold Coast':[-28.0,153.43], 'Grenada':[12.05,-61.75], 'London':[51.5,-0.12], 'Manchester':[53.48,-2.24], 'Marrakech':[31.63,-8.0], 'Mauritius':[-20.2,57.5], 'Nairobi':[-1.29,36.82], 'New Zealand':[-45.03,168.66], 'Okinawa':[26.5,127.9], 'Orlando':[28.54,-81.38], 'Puerto Rico':[18.4,-66.0], 'Qatar':[25.29,51.53], 'Saudi Arabia':[21.54,39.17], 'Seychelles':[-4.62,55.45], 'St Kitts and Nevis':[17.3,-62.73], 'Sydney':[-33.87,151.21], 'Turks and Caicos':[21.79,-72.2], 'Uruguay':[-34.96,-54.95], 'Zanzibar':[-6.16,39.2] };
   var TIER = { clear: ['Strong public disclosure','#0B7A55'], mixed: ['Some gaps','#8A5A0F'], caution: ['Check carefully','#B42318'] };
   var CK = [['permit','Permit or licence number published'],['escrow','Deposit protection (escrow, bank guarantee or trust)'],['progress','Construction progress published'],['plans','Site or floor plans published'],['record','Developer track record stated'],['returns_ok','No "guaranteed" return language']];
   function $(i){ return document.getElementById(i); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function n(x){ return (+x || 0).toLocaleString('en'); }
   var S = { m: '', t: '', q: '', sort: 'best', lim: 24 };
+  function full(c){ return (c.max || 0) === 6 && (c.score || 0) === 6 && !(c.flags || []).length; }
+  function okk(c, k){ var ck = c.checks || {}; return k === 'permit' ? ck.permit === 2 : k === 'escrow' ? ck.escrow === true : k === 'progress' ? ck.progress != null : !!ck[k]; }
+  function tierOk(c){ return !S.t || (S.t === 'full' ? full(c) : c.tier === S.t); }
   function stat(){
     var mk = {}, ct = {}; C.forEach(function(c){ mk[c.market] = 1; ct[c.country] = 1; });
     var permit = C.filter(function(c){ return c.checks && c.checks.permit === 2; }).length, escw = C.filter(function(c){ return c.checks && c.checks.escrow === true; }).length,
         fl = C.filter(function(c){ return (c.flags || []).length; }).length, inv = C.filter(function(c){ return c.invited; }).length, clear = C.filter(function(c){ return c.tier === 'clear'; }).length;
-    $('kst').innerHTML = [[n(C.length),'off-plan projects tracked'],[Object.keys(mk).length + ' · ' + Object.keys(ct).length,'markets · countries'],[Math.round(permit / C.length * 100) + '%','publish a permit or licence number'],[escw + ' of ' + C.filter(function(c){ return c.checks && (c.checks.researched || []).indexOf('escrow') >= 0; }).length,'researched in depth say how your deposit is protected'],[n(fl),'with problems reported in public sources'],[n(clear),'with strong public disclosure'],[n(inv),'developers invited to verify']]
+    $('kst').innerHTML = [[n(C.length),'off-plan projects tracked'],[Object.keys(mk).length + ' · ' + Object.keys(ct).length,'markets · countries'],[Math.round(permit / C.length * 100) + '%','publish a permit or licence number'],[escw + ' of ' + C.filter(function(c){ return c.checks && (c.checks.researched || []).indexOf('escrow') >= 0; }).length,'researched in depth say how your deposit is protected'],[n(fl),'with problems reported in public sources'],[n(C.filter(full).length) + ' of ' + n(C.filter(function(c){ return c.max === 6; }).length),'researched in depth publish all 6 (100%)'],[n(clear),'with strong public disclosure'],[n(inv),'developers invited to verify']]
       .map(function(x){ return '<div><b>' + x[0] + '</b><span>' + x[1] + '</span></div>'; }).join('');
     var opts = Object.keys(mk).sort().map(function(m){ return '<option value="' + esc(m) + '">' + esc(m) + ' (' + C.filter(function(c){ return c.market === m; }).length + ')</option>'; }).join('');
     $('kmk').innerHTML = '<option value="">All markets (' + C.length + ')</option>' + opts;
   }
   function list(){
     var q = S.q.toLowerCase();
-    var L = C.filter(function(c){ return (!S.m || c.market === S.m) && (!S.t || c.tier === S.t) && (!q || JSON.stringify(c).toLowerCase().indexOf(q) >= 0); });
+    var L = C.filter(function(c){ return (!S.m || c.market === S.m) && tierOk(c) && (!q || JSON.stringify(c).toLowerCase().indexOf(q) >= 0); });
     var ord = { clear: 0, mixed: 1, caution: 2 };
     if (S.sort === 'best') L.sort(function(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (a.flags || []).length - (b.flags || []).length; });
     if (S.sort === 'worst') L.sort(function(a, b){ return ord[b.tier] - ord[a.tier] || (a.score || 0) / (a.max || 6) - (b.score || 0) / (b.max || 6); });
@@ -40,7 +43,7 @@
     var steps = [['Promises read by AI', c.read, c.read ? c.checked : 'Queued'], ['Developer invited', !!c.invited, c.invited || 'Next'], ['Registry check', false, 'Pending'], ['Site visit with GPS video', false, 'Pending'], ['Verified and published', false, 'Pending']];
     return '<article class="case kc t-' + esc(c.tier || 'mixed') + '"><header><span class="cid">' + esc(c.id) + '</span><span class="kt" style="color:' + t[1] + ';border-color:' + t[1] + '">' + t[0] + '</span></header>' +
       '<h3>Off-plan project · ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + '<small> · ' + esc(c.country) + '</small></h3><p class="cmeta">' + esc(meta) + '</p>' +
-      '<div class="ksc"><b>' + (c.score || 0) + '/' + mx + '</b><span>public checks' + (mx < 6 ? ' (deeper research pending)' : '') + '</span><i style="width:' + ((c.score || 0) / mx * 100) + '%;background:' + t[1] + '"></i></div><ul class="k6">' + ticks + '</ul>' +
+      (mx === 6 ? (full(c) ? '<p class="k100 y">✓ 100% public: all 6 checks published</p>' : '<p class="k100 n">Not 100%: missing ' + esc(CK.filter(function(k){ return !okk(c, k[0]); }).map(function(k){ return k[1].split(' (')[0].toLowerCase(); }).join(', ')) + '</p>') : '') + '<div class="ksc"><b>' + (c.score || 0) + '/' + mx + '</b><span>public checks' + (mx < 6 ? ' (deeper research pending)' : '') + '</span><i style="width:' + ((c.score || 0) / mx * 100) + '%;background:' + t[1] + '"></i></div><ul class="k6">' + ticks + '</ul>' +
       ((c.flags || []).length ? '<p class="kfl">' + c.flags.map(function(f){ return '<span>⚠ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
       ((c.notes || []).length ? '<p class="kfl kno">' + c.notes.map(function(f){ return '<span>ℹ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
       '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
@@ -61,7 +64,7 @@
   }
   function mapDots(){
     if (!MAP) return; LAYER.clearLayers(); var g = {};
-    C.forEach(function(c){ if (S.t && c.tier !== S.t) return; (g[c.market] = g[c.market] || []).push(c); });
+    C.forEach(function(c){ if (!tierOk(c)) return; (g[c.market] = g[c.market] || []).push(c); });
     Object.keys(g).forEach(function(m){ var ll = CENT[m]; if (!ll) return; var a = g[m], bad = a.filter(function(c){ return c.tier === 'caution'; }).length, good = a.filter(function(c){ return c.tier === 'clear'; }).length;
       var col = bad / a.length > .5 ? '#B42318' : good / a.length > .3 ? '#0B7A55' : '#FF5B14';
       L.circleMarker(ll, { radius: 6 + Math.sqrt(a.length) * 3, color: S.m === m ? '#17212B' : '#fff', weight: S.m === m ? 3 : 1.5, fillColor: col, fillOpacity: .85 })

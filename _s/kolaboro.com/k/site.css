@@ -983,3 +983,4 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 }
 @media (max-width:700px){.how{padding:56px 0}.track{margin-top:28px;gap:18px}.track li{display:grid;grid-template-columns:44px 1fr;column-gap:14px}.track li .node{width:40px;height:40px;font-size:1rem;grid-row:span 2}.track h3{margin:6px 0 4px;font-size:1.1rem}.track p{font-size:.95rem}}
 .rp-pay.locked{opacity:1}.rp-pay.locked b,.rp-pay.locked small{color:#55606B}.k6 .u em{color:#55606B;opacity:1}
+.k100{font-size:.85rem;font-weight:700;margin:8px 0 4px;padding:6px 10px;border-radius:8px}.k100.y{background:#DDEFE7;color:#0B5A3E}.k100.n{background:#F4EFE6;color:#5A4410;font-weight:600}
