@@ -6,7 +6,7 @@
     'Greece':[37.98,23.73], 'Montenegro':[42.29,18.84], 'Croatia':[45.1,13.9], 'Georgia':[41.64,41.63], 'Spain':[38.35,-0.48], 'Costa del Sol':[36.51,-4.88], 'Portugal':[38.72,-9.14], 'Algarve':[37.09,-8.25],
     'Riviera Maya':[20.63,-87.07], 'Los Cabos':[22.89,-109.92], 'Puerto Vallarta':[20.65,-105.23], 'Mérida':[20.97,-89.62], 'Costa Rica':[10.6,-85.6], 'Panama':[8.98,-79.52], 'Dominican Republic':[18.58,-68.4], 'Colombia':[6.24,-75.58],
     'Brazil':[-3.73,-38.52], 'Miami':[25.76,-80.19], 'Vietnam':[16.05,108.2], 'Philippines':[10.32,123.89], 'Malaysia':[3.14,101.69], 'Cambodia':[11.56,104.92], 'Sri Lanka':[6.93,79.85], 'Niseko':[42.8,140.69] };
-  var TIER = { clear: ['Strong public disclosure','#0B7A55'], mixed: ['Some gaps','#B7791F'], caution: ['Check carefully','#B42318'] };
+  var TIER = { clear: ['Strong public disclosure','#0B7A55'], mixed: ['Some gaps','#8A5A0F'], caution: ['Check carefully','#B42318'] };
   var CK = [['permit','Permit or licence number published'],['escrow','Deposit protection (escrow, bank guarantee or trust)'],['progress','Construction progress published'],['plans','Site or floor plans published'],['record','Developer track record stated'],['returns_ok','No "guaranteed" return language']];
   function $(i){ return document.getElementById(i); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }

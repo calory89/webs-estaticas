@@ -982,3 +982,4 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .cmp td:nth-child(2)::before{content:"Buying alone: ";color:#55606B;font-weight:600}.cmp td:nth-child(3)::before{content:"With Kolaboro: ";color:#C9461A;font-weight:700}
 }
 @media (max-width:700px){.how{padding:56px 0}.track{margin-top:28px;gap:18px}.track li{display:grid;grid-template-columns:44px 1fr;column-gap:14px}.track li .node{width:40px;height:40px;font-size:1rem;grid-row:span 2}.track h3{margin:6px 0 4px;font-size:1.1rem}.track p{font-size:.95rem}}
+.rp-pay.locked{opacity:1}.rp-pay.locked b,.rp-pay.locked small{color:#55606B}.k6 .u em{color:#55606B;opacity:1}
