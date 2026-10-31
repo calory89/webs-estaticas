@@ -4,8 +4,8 @@
  "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
  "projects": 57,
  "title": {
-  "leasehold": 31,
-  "known": 33
+  "leasehold": 32,
+  "known": 34
  },
  "lease": {
   "known": 26,
@@ -87,6 +87,13 @@
    "pages_ok": 290,
    "pages_failed": 38,
    "changes": 25
+  },
+  {
+   "date": "2026-10-31",
+   "mode": "ai",
+   "pages_ok": 293,
+   "pages_failed": 38,
+   "changes": 9
   }
  ]
 }

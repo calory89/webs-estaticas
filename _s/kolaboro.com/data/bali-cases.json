@@ -47,7 +47,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-022",
@@ -92,7 +97,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-007",
@@ -136,7 +146,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-018",
@@ -182,7 +197,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-023",
@@ -227,7 +247,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-021",
@@ -272,7 +297,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-025",
@@ -318,7 +348,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-028",
@@ -362,7 +397,12 @@
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-031",
@@ -406,7 +446,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-032",
@@ -450,7 +495,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-034",
@@ -493,7 +543,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-035",
@@ -536,7 +591,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying."
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-037",
@@ -579,7 +639,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying."
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-044",
@@ -623,7 +688,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-045",
@@ -667,7 +737,12 @@
     "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-048",
@@ -710,7 +785,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-049",
@@ -754,7 +834,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-001",
@@ -800,7 +885,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-002",
@@ -844,7 +934,12 @@
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying."
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-003",
@@ -888,7 +983,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-004",
@@ -933,7 +1033,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-006",
@@ -978,7 +1083,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-009",
@@ -1023,7 +1133,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-010",
@@ -1068,7 +1183,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-011",
@@ -1113,7 +1233,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-013",
@@ -1159,7 +1284,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-017",
@@ -1204,7 +1334,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-029",
@@ -1250,7 +1385,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-038",
@@ -1293,7 +1433,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-039",
@@ -1336,7 +1481,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-050",
@@ -1384,7 +1534,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-051",
@@ -1428,7 +1583,12 @@
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-057",
@@ -1475,7 +1635,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-008",
@@ -1520,7 +1685,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-016",
@@ -1565,7 +1735,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-020",
@@ -1610,7 +1785,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-026",
@@ -1656,7 +1836,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-027",
@@ -1701,7 +1886,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-036",
@@ -1744,7 +1934,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying."
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-040",
@@ -1790,7 +1985,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-042",
@@ -1836,7 +2036,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-052",
@@ -1883,7 +2088,12 @@
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-012",
@@ -1930,7 +2140,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-030",
@@ -1973,7 +2188,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-005",
@@ -2019,7 +2239,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-015",
@@ -2064,7 +2289,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-046",
@@ -2107,7 +2337,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-053",
@@ -2150,7 +2385,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-019",
@@ -2194,7 +2434,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-024",
@@ -2240,7 +2485,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-033",
@@ -2284,7 +2534,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-041",
@@ -2330,7 +2585,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-043",
@@ -2375,7 +2635,12 @@
     "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-047",
@@ -2420,7 +2685,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-054",
@@ -2465,7 +2735,12 @@
     "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-055",
@@ -2513,7 +2788,12 @@
     "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BALI-056",
@@ -2558,7 +2838,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AUH-001",
@@ -2601,7 +2886,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AUH-002",
@@ -2644,7 +2934,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AUH-003",
@@ -2688,7 +2983,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AUH-004",
@@ -2731,7 +3031,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AUH-005",
@@ -2773,7 +3078,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ALB-001",
@@ -2818,7 +3128,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ALB-002",
@@ -2862,7 +3177,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ALG-001",
@@ -2904,7 +3224,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ALG-002",
@@ -2947,7 +3272,12 @@
     "Permit RNET Nº 10685 is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ALG-003",
@@ -2989,7 +3319,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ALG-004",
@@ -3033,7 +3368,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AYT-001",
@@ -3078,7 +3418,12 @@
     "Inconsistent figures on the listing: ask for the correct figures in writing before paying.",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AYT-002",
@@ -3122,7 +3467,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AYT-003",
@@ -3165,7 +3515,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AYT-004",
@@ -3208,7 +3563,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ANU-001",
@@ -3251,7 +3611,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "AUS-001",
@@ -3294,7 +3659,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BAH-001",
@@ -3337,7 +3707,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BKK-001",
@@ -3380,7 +3755,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BKK-002",
@@ -3423,7 +3803,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BKK-003",
@@ -3466,7 +3851,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BZE-001",
@@ -3510,7 +3900,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BZE-002",
@@ -3553,7 +3948,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BJV-001",
@@ -3596,7 +3996,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BRA-001",
@@ -3640,7 +4045,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BRA-002",
@@ -3684,7 +4094,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BRA-003",
@@ -3728,7 +4143,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2031: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BRA-004",
@@ -3773,7 +4193,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BUE-001",
@@ -3817,7 +4242,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "BGR-001",
@@ -3861,7 +4291,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KHM-001",
@@ -3909,7 +4344,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KHM-002",
@@ -3953,7 +4393,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KHM-003",
@@ -3995,7 +4440,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KHM-004",
@@ -4038,7 +4488,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CPT-001",
@@ -4081,7 +4536,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CNX-001",
@@ -4127,7 +4587,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "COL-001",
@@ -4170,7 +4635,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "COL-002",
@@ -4218,7 +4688,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2023: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "COL-003",
@@ -4261,7 +4736,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CRI-001",
@@ -4305,7 +4785,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CRI-002",
@@ -4352,7 +4837,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CRI-003",
@@ -4395,7 +4885,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CRI-004",
@@ -4438,7 +4933,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-001",
@@ -4480,7 +4980,12 @@
    "q": [
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-002",
@@ -4522,7 +5027,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-003",
@@ -4564,7 +5074,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-004",
@@ -4606,7 +5121,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-005",
@@ -4648,7 +5168,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-006",
@@ -4691,7 +5216,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-007",
@@ -4734,7 +5264,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-008",
@@ -4776,7 +5311,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-009",
@@ -4818,7 +5358,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-010",
@@ -4860,7 +5405,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CDS-011",
@@ -4903,7 +5453,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "HRV-001",
@@ -4948,7 +5503,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2024: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "HRV-002",
@@ -4991,7 +5551,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "HRV-003",
@@ -5038,7 +5603,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "HRV-004",
@@ -5082,7 +5652,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CYP-001",
@@ -5126,7 +5701,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CYP-002",
@@ -5169,7 +5749,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CYP-003",
@@ -5212,7 +5797,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DOM-001",
@@ -5256,7 +5846,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DOM-002",
@@ -5299,7 +5894,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DOM-003",
@@ -5347,7 +5947,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DOM-004",
@@ -5390,7 +5995,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-001",
@@ -5434,7 +6044,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-002",
@@ -5478,7 +6093,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-003",
@@ -5522,7 +6142,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-004",
@@ -5566,7 +6191,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-005",
@@ -5610,7 +6240,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-006",
@@ -5654,7 +6289,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-007",
@@ -5698,7 +6338,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-008",
@@ -5742,7 +6387,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-009",
@@ -5786,7 +6436,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-010",
@@ -5830,7 +6485,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-011",
@@ -5874,7 +6534,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-012",
@@ -5918,7 +6583,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-013",
@@ -5962,7 +6632,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-014",
@@ -6006,7 +6681,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-015",
@@ -6050,7 +6730,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-016",
@@ -6094,7 +6779,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-017",
@@ -6138,7 +6828,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-018",
@@ -6182,7 +6877,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-019",
@@ -6226,7 +6926,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-020",
@@ -6270,7 +6975,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-021",
@@ -6314,7 +7024,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-022",
@@ -6358,7 +7073,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-023",
@@ -6402,7 +7122,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-024",
@@ -6446,7 +7171,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-025",
@@ -6490,7 +7220,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-026",
@@ -6536,7 +7271,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-027",
@@ -6579,7 +7319,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-028",
@@ -6625,7 +7370,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-029",
@@ -6671,7 +7421,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-030",
@@ -6715,7 +7470,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-031",
@@ -6758,7 +7518,12 @@
     "Permit 0705061242 is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-032",
@@ -6801,7 +7566,12 @@
     "Permit DLD project 4139 is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-033",
@@ -6844,7 +7614,12 @@
     "Permit DLD project 3427 is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "DXB-034",
@@ -6888,7 +7663,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "EGY-001",
@@ -6932,7 +7712,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "EGY-002",
@@ -6976,7 +7761,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "EGY-003",
@@ -7020,7 +7810,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "EGY-004",
@@ -7063,7 +7858,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "EGY-005",
@@ -7107,7 +7907,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "FJI-001",
@@ -7151,7 +7956,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GEO-001",
@@ -7199,7 +8009,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GEO-002",
@@ -7247,7 +8062,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GEO-003",
@@ -7255,7 +8075,7 @@
    "country": "Georgia",
    "region": "Georgia",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": null,
    "title": null,
@@ -7266,7 +8086,7 @@
     "permit": 0,
     "escrow": null,
     "progress": "updates",
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -7278,7 +8098,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -7290,7 +8110,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GEO-004",
@@ -7334,7 +8159,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GOA-001",
@@ -7379,7 +8209,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OOL-001",
@@ -7423,7 +8258,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OOL-002",
@@ -7467,7 +8307,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OOL-003",
@@ -7511,7 +8356,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GRC-001",
@@ -7555,7 +8405,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GRC-002",
@@ -7599,7 +8454,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GRC-003",
@@ -7642,7 +8502,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "GND-001",
@@ -7686,7 +8551,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "HHQ-001",
@@ -7734,7 +8604,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "HHQ-002",
@@ -7778,7 +8653,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "IST-001",
@@ -7822,7 +8702,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "IST-002",
@@ -7859,7 +8744,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "30 Oct 2026",
+   "checked": "31 Oct 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -7867,7 +8752,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "IST-003",
@@ -7911,7 +8801,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "IST-004",
@@ -7957,7 +8852,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "IST-005",
@@ -8000,7 +8900,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSM-001",
@@ -8044,7 +8949,12 @@
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSM-002",
@@ -8087,7 +8997,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSM-003",
@@ -8130,7 +9045,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSM-004",
@@ -8174,7 +9094,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSM-005",
@@ -8219,7 +9144,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSM-006",
@@ -8264,7 +9194,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KBV-001",
@@ -8308,7 +9243,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LBJ-001",
@@ -8352,7 +9292,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LBJ-002",
@@ -8396,7 +9341,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2023: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-001",
@@ -8440,7 +9390,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-002",
@@ -8485,7 +9440,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-003",
@@ -8529,7 +9489,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-004",
@@ -8572,7 +9537,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-005",
@@ -8615,7 +9585,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-006",
@@ -8658,7 +9633,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-007",
@@ -8701,7 +9681,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-008",
@@ -8744,7 +9729,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-009",
@@ -8788,7 +9778,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-010",
@@ -8836,7 +9831,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-011",
@@ -8879,7 +9879,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LOM-012",
@@ -8923,7 +9928,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LON-001",
@@ -8967,7 +9977,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LON-002",
@@ -9011,7 +10026,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CAB-001",
@@ -9055,7 +10075,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CAB-002",
@@ -9099,7 +10124,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CAB-003",
@@ -9141,7 +10171,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "CAB-004",
@@ -9184,7 +10219,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-001",
@@ -9232,7 +10272,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-002",
@@ -9275,7 +10320,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-003",
@@ -9322,7 +10372,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-004",
@@ -9365,7 +10420,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-005",
@@ -9409,7 +10469,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-006",
@@ -9452,7 +10517,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-007",
@@ -9495,7 +10565,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MYS-008",
@@ -9538,7 +10613,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MAN-001",
@@ -9582,7 +10662,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MRK-001",
@@ -9625,7 +10710,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MRU-001",
@@ -9667,7 +10757,12 @@
    "q": [
     "Permit BLP3-BRDC-2026-511 is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MRU-002",
@@ -9709,7 +10804,12 @@
    "q": [
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MRU-003",
@@ -9752,7 +10852,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MIA-001",
@@ -9799,7 +10904,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MIA-002",
@@ -9843,7 +10953,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MIA-003",
@@ -9887,7 +11002,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MIA-004",
@@ -9935,7 +11055,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MIA-005",
@@ -9978,7 +11103,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MNE-001",
@@ -10025,7 +11155,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MNE-002",
@@ -10072,7 +11207,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MNE-003",
@@ -10116,7 +11256,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MNE-004",
@@ -10160,7 +11305,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MID-001",
@@ -10207,7 +11357,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "MID-002",
@@ -10251,7 +11406,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NBO-001",
@@ -10295,7 +11455,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NZL-001",
@@ -10339,7 +11504,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NSK-001",
@@ -10382,7 +11552,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NSK-002",
@@ -10426,7 +11601,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NSK-003",
@@ -10469,7 +11649,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NCY-001",
@@ -10516,7 +11701,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NCY-002",
@@ -10563,7 +11753,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NCY-003",
@@ -10610,7 +11805,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "NCY-004",
@@ -10653,7 +11853,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OKA-001",
@@ -10697,7 +11902,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OKA-002",
@@ -10741,7 +11951,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OMN-001",
@@ -10785,7 +12000,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OMN-002",
@@ -10832,7 +12052,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OMN-003",
@@ -10874,7 +12099,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "OMN-004",
@@ -10916,7 +12146,189 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
+  },
+  {
+   "id": "OMN-005",
+   "market": "Oman",
+   "country": "Oman",
+   "region": "Oman",
+   "docs": false,
+   "plans": true,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 1657.0,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 31,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "delay": null,
+   "profile": 13
+  },
+  {
+   "id": "OMN-006",
+   "market": "Oman",
+   "country": "Oman",
+   "region": "Oman",
+   "docs": false,
+   "plans": true,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 263.0,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 1
+   },
+   "delay": null,
+   "profile": 12
+  },
+  {
+   "id": "OMN-007",
+   "market": "Oman",
+   "country": "Oman",
+   "region": "Oman",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 108.0,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 1
+   },
+   "delay": null,
+   "profile": 9
   },
   {
    "id": "ORL-001",
@@ -10960,7 +12372,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAN-001",
@@ -11004,7 +12421,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAN-002",
@@ -11048,7 +12470,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAN-003",
@@ -11096,7 +12523,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAN-004",
@@ -11140,7 +12572,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-001",
@@ -11183,7 +12620,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-002",
@@ -11226,7 +12668,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-003",
@@ -11269,7 +12716,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-004",
@@ -11312,7 +12764,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-005",
@@ -11354,7 +12811,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-006",
@@ -11399,7 +12861,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PAT-007",
@@ -11442,7 +12909,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHL-001",
@@ -11486,7 +12958,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHL-002",
@@ -11533,7 +13010,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHL-003",
@@ -11577,7 +13059,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHL-004",
@@ -11621,7 +13108,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHL-005",
@@ -11665,7 +13157,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-001",
@@ -11709,7 +13206,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-002",
@@ -11752,7 +13254,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-003",
@@ -11796,7 +13303,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-004",
@@ -11839,7 +13351,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-005",
@@ -11882,7 +13399,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-006",
@@ -11926,7 +13448,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-007",
@@ -11969,7 +13496,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-008",
@@ -11980,7 +13512,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "leasehold",
+   "title": "freehold (foreign quota units)",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -12009,11 +13541,15 @@
    "checked": "31 Oct 2026",
    "invited": null,
    "q": [
-    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-009",
@@ -12056,7 +13592,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PHK-010",
@@ -12101,7 +13642,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PRT-001",
@@ -12144,7 +13690,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PRT-002",
@@ -12187,7 +13738,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PRT-003",
@@ -12231,7 +13787,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PRT-004",
@@ -12275,7 +13836,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PRT-005",
@@ -12319,7 +13885,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PRI-001",
@@ -12362,7 +13933,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PVR-001",
@@ -12405,7 +13981,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PVR-002",
@@ -12451,7 +14032,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PVR-003",
@@ -12495,7 +14081,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "PVR-004",
@@ -12536,7 +14127,12 @@
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying."
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "QAT-001",
@@ -12579,7 +14175,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RAK-001",
@@ -12625,7 +14226,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RAK-002",
@@ -12668,7 +14274,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RAK-003",
@@ -12712,7 +14323,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RAK-004",
@@ -12756,7 +14372,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RAK-005",
@@ -12799,7 +14420,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-001",
@@ -12840,7 +14466,12 @@
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying."
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-002",
@@ -12883,7 +14514,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-003",
@@ -12927,7 +14563,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2025: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-004",
@@ -12970,7 +14611,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-005",
@@ -13013,7 +14659,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-006",
@@ -13056,7 +14707,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-007",
@@ -13098,7 +14754,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-008",
@@ -13140,7 +14801,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-009",
@@ -13184,7 +14850,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "RMY-010",
@@ -13227,7 +14898,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSA-001",
@@ -13270,7 +14946,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "KSA-002",
@@ -13312,7 +14993,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "SEZ-001",
@@ -13355,7 +15041,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-001",
@@ -13398,7 +15089,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-002",
@@ -13445,7 +15141,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-003",
@@ -13489,7 +15190,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-004",
@@ -13533,7 +15239,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-005",
@@ -13577,7 +15288,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-006",
@@ -13621,7 +15337,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ESP-007",
@@ -13665,7 +15386,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LKA-001",
@@ -13709,7 +15435,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LKA-002",
@@ -13752,7 +15483,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LKA-003",
@@ -13800,7 +15536,12 @@
     "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "LKA-004",
@@ -13844,7 +15585,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "SKB-001",
@@ -13887,7 +15633,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "SYD-001",
@@ -13932,7 +15683,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "SYD-002",
@@ -13976,7 +15732,12 @@
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "SYD-003",
@@ -14021,7 +15782,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "TCA-001",
@@ -14064,7 +15830,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "URY-001",
@@ -14108,7 +15879,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "VNM-001",
@@ -14151,7 +15927,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "VNM-002",
@@ -14193,7 +15974,12 @@
    "q": [
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "VNM-003",
@@ -14240,7 +16026,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "VNM-004",
@@ -14288,7 +16079,12 @@
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "VNM-005",
@@ -14333,7 +16129,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "VNM-006",
@@ -14376,7 +16177,12 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ZNZ-001",
@@ -14420,7 +16226,12 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   },
   {
    "id": "ZNZ-002",
@@ -14464,7 +16275,37 @@
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ]
+   ],
+   "verified": null,
+   "vscore": null,
+   "claims": null,
+   "delay": null,
+   "profile": null
   }
- ]
+ ],
+ "db": {
+  "updated": "2026-10-31",
+  "projects": 331,
+  "markets": 73,
+  "countries": 52,
+  "sources": 624,
+  "data_points": 4980,
+  "claims": {
+   "verified": 1,
+   "unverified": 8,
+   "contradicted": 2
+  },
+  "claims_total": 11,
+  "deep_profiles": 3,
+  "checks_by_level": {
+   "registry": 0,
+   "independent": 0,
+   "developer": 4,
+   "contradicted": 0,
+   "none": 14
+  },
+  "checks_rated": 18,
+  "all_six_public": 1,
+  "with_flags": 17
+ }
 }
