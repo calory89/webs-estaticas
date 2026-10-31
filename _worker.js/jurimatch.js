@@ -214,6 +214,15 @@ function aliasTarget(path, m) {
   return null;
 }
 
+// Chrome of the crawlable summary and the Open Graph locale, per page language (manifest "lang").
+const OG_LOCALE = { en: 'en_US', es: 'es_ES', de: 'de_DE', 'pt-BR': 'pt_BR', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' };
+const CHROME = {
+  en: { faq: 'Frequently asked questions', lawyers: 'Lawyers', pricing: 'Pricing', about: 'About' },
+  es: { faq: 'Preguntas frecuentes', lawyers: 'Abogados', pricing: 'Precios', about: 'Quiénes somos' },
+  de: { faq: 'Häufige Fragen', lawyers: 'Anwälte', pricing: 'Preise', about: 'Über uns' },
+  'pt-BR': { faq: 'Perguntas frequentes', lawyers: 'Advogados', pricing: 'Preços', about: 'Quem somos' },
+};
+
 export async function render(req, res, u, env, ctx) {
   // One URL per page: "/pricing/" redirects to "/pricing" (canonical tags have no trailing slash).
   if (u.pathname.length > 1 && u.pathname.endsWith('/')) return Response.redirect(ORIGIN + u.pathname.replace(/\/+$/, '') + u.search, 301);
@@ -282,16 +291,26 @@ export async function render(req, res, u, env, ctx) {
       if (verified.length) lds.push({ '@context': 'https://schema.org', '@type': 'ItemList', name: page.h1, itemListElement: verified.map((f, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + '/firms/' + slugify(f.firm_name), name: f.firm_name })) });
     } catch (e) { /* summary without the list */ }
   }
-  if (page.faq && page.faq.length) body += '<h2>' + (lang === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions') + '</h2>' + page.faq.map((f) => '<h3>' + esc(f.q) + '</h3><p>' + esc(f.a) + '</p>').join('');
+  const chrome = CHROME[lang] || CHROME.en;
+  if (page.faq && page.faq.length) body += '<h2>' + chrome.faq + '</h2>' + page.faq.map((f) => '<h3>' + esc(f.q) + '</h3><p>' + esc(f.a) + '</p>').join('');
   if (page.links && page.links.length) body += '<ul>' + page.links.map((l) => '<li><a href="' + esc(l.href) + '">' + esc(l.text) + '</a></li>').join('') + '</ul>';
-  body += '<p><a href="/">JuriMatch</a> | <a href="/lawyers">' + (lang === 'es' ? 'Abogados' : 'Lawyers') + '</a> | <a href="/pricing">' + (lang === 'es' ? 'Precios' : 'Pricing') + '</a> | <a href="/about">' + (lang === 'es' ? 'Quiénes somos' : 'About') + '</a></p></main>';
+  body += '<p><a href="/">JuriMatch</a> | <a href="' + (lang === 'es' ? '/es/abogados-a-exito' : '/lawyers') + '">' + chrome.lawyers + '</a> | <a href="/pricing">' + chrome.pricing + '</a> | <a href="/about">' + chrome.about + '</a></p></main>';
 
   const headExtra = lds.map(ld).join('')
     + (page.alt || []).map((a) => '<link rel="alternate" hreflang="' + esc(a.hreflang) + '" href="' + esc(a.href) + '" />').join('')
     + (page.article && page.published ? '<meta property="article:published_time" content="' + esc(page.published) + '" />' : '');
 
+  const html = await res.text();
   const h = new Headers(res.headers);
   h.delete('content-length'); h.delete('etag');
+  // Item 154: preload the entry bundle and stylesheet already referenced in the HTML (lets the browser, and
+  // Cloudflare Early Hints when enabled, start fetching them before the HTML is parsed). Hashed files only.
+  const pre = [];
+  const jsM = html.match(/src="(\/assets\/index-[A-Za-z0-9_-]+\.js)"/);
+  const cssM = html.match(/href="(\/assets\/index-[A-Za-z0-9_-]+\.css)"/);
+  if (jsM) pre.push('<' + jsM[1] + '>; rel=modulepreload; crossorigin');
+  if (cssM) pre.push('<' + cssM[1] + '>; rel=preload; as=style; crossorigin');
+  if (pre.length && !h.has('link')) h.set('link', pre.join(', '));
   if (page.noindex) h.set('x-robots-tag', 'noindex'); else h.delete('x-robots-tag');
   h.set('content-language', lang);
   // Security headers for every HTML page (no camera/mic/location use on the site; no framing by other sites).
@@ -313,7 +332,7 @@ export async function render(req, res, u, env, ctx) {
     .on('meta[property="og:type"]', set('content', ogType))
     .on('meta[property="og:image"]', set('content', image))
     .on('meta[property="og:image:alt"]', set('content', page.t))
-    .on('meta[property="og:locale"]', set('content', lang === 'es' ? 'es_ES' : 'en_US'))
+    .on('meta[property="og:locale"]', set('content', OG_LOCALE[lang] || 'en_US'))
     .on('meta[name="twitter:title"]', set('content', page.t))
     .on('meta[name="twitter:description"]', set('content', page.d))
     .on('meta[name="twitter:image"]', set('content', image))
@@ -321,5 +340,5 @@ export async function render(req, res, u, env, ctx) {
     .on('head', { element(e) { e.append(headExtra, { html: true }); } })
     .on('div#root', { element(e) { e.setInnerContent(body, { html: true }); } })
     .on('noscript', { element(e) { e.remove(); } })
-    .transform(new Response(res.body, { status, headers: h }));
+    .transform(new Response(html, { status, headers: h }));
 }

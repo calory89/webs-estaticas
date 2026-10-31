@@ -3,7 +3,7 @@
 > Search engine for no-win-no-fee lawyers and litigation funders. 6,500+ no-win-no-fee firms indexed in 133 countries, 204 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
 ## Facts (as of 2026-10-31)
-- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,562
+- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,507
 - Firms whose fee terms our team checked by hand on their own website: 204
 - Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 26
 - Cite as: JuriMatch directory, jurimatch.com, with the date above
@@ -22,6 +22,9 @@
 - [Open data](https://jurimatch.com/open-data): hand-verified firms as CSV (CC BY 4.0)
 - [Free tools](https://jurimatch.com/tools): limitation deadline checker, case value calculator
 - [Limitation periods by country](https://jurimatch.com/tools/limitation-checker): one page per country
+- [Free alternatives to a lawyer](https://jurimatch.com/free-alternatives): ombudsmen and complaint bodies by country
+- [Suing without a lawyer](https://jurimatch.com/guides/small-claims): small claims limits by country with official sources
+- [How to choose a litigation funder](https://jurimatch.com/guides/choosing-a-litigation-funder)
 
 ## Claim guides
 - [Lost money to investment fraud? What to do first](https://jurimatch.com/claims/investment-fraud)
@@ -32,6 +35,16 @@
 - [Romance and pig-butchering scams: what victims can do](https://jurimatch.com/claims/romance-scam)
 - [Insurance claim denied? How to challenge it](https://jurimatch.com/claims/insurance-claim-denied)
 - [Bad advice from a professional? Claiming for negligence](https://jurimatch.com/claims/professional-negligence)
+- [Claims against Ryanair: delays, cancellations and refunds](https://jurimatch.com/claims/ryanair)
+- [Claims against Vueling: delays, cancellations and refunds](https://jurimatch.com/claims/vueling)
+- [Claims against easyJet: delays, cancellations and refunds](https://jurimatch.com/claims/easyjet)
+- [Claims against Lufthansa: delays, cancellations and refunds](https://jurimatch.com/claims/lufthansa)
+- [Claims against Iberia: delays, cancellations and refunds](https://jurimatch.com/claims/iberia)
+- [Claims against Santander: mortgages, cards and Banco Popular](https://jurimatch.com/claims/santander)
+- [Claims against BBVA: floor clauses, mortgage costs and cards](https://jurimatch.com/claims/bbva)
+- [Claims against CaixaBank: mortgages, cards and former Bankia](https://jurimatch.com/claims/caixabank)
+- [Claims against Volkswagen: the diesel emissions scandal](https://jurimatch.com/claims/volkswagen)
+- [Claims against Mercedes-Benz: diesel emissions](https://jurimatch.com/claims/mercedes-benz)
 
 ## Country guides
 - [No-win-no-fee claims in United States](https://jurimatch.com/guides/united-states)
