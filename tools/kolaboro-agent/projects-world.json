@@ -15663,6 +15663,359 @@
     "https://www.cambodgemag.com/en/post/cambodia-lbl-international-construction-formalizes-partnership-on-gato-tower",
     "https://cambodiainvestmentreview.com/2025/09/12/miraku-capital-development-announces-100-million-65-story-g-a-t-o-tower-in-bkk1-phnom-penh/"
    ]
+  },
+  {
+   "name": "The Sustainable City - Yiti",
+   "developer": "Diamond Developers (SEE Holding), through the joint venture SDIC with OMRAN Group",
+   "area": "Yiti, Muscat",
+   "country": "Oman",
+   "market": "Oman",
+   "stage": "under construction",
+   "url": "https://thesustainablecity-yiti.com/",
+   "docs_url": "https://thesustainablecity-yiti.com/assets/brochures/TSCY-The-Plaza.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 70000,
+    "currency": "OMR",
+    "title": "freehold",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027 (The Plaza apartments)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": 31,
+    "progress_updates": true,
+    "developer_delivered": "The Sustainable City Dubai (about 500 villas and 89 apartments, handed over from 2016) and Sharjah Sustainable City (handover began 2022), as listed by an agent profile. Nothing delivered in Oman yet.",
+    "units": 1657.0,
+    "payment_plan": "Agent listing: 5% reservation, 5% within 1 month, 10% within 4 months, 10% within 8 months, 70% on handover. The developer newsroom also mentions 3 and 5 year post-handover plans (undated)."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The Plaza handover is confirmed for December 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thesustainablecity-yiti.com/plaza"
+    },
+    {
+     "claim": "Plaza construction was 31% and villa construction 33% complete, with infrastructure 96% complete (December 2024)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cbnme.com/news/the-sustainable-city-yiti-achieves-major-progress-as-infrastructure-works-approach-completion/"
+    },
+    {
+     "claim": "IFC signed an OMR 38.5 million (US$100 million) Islamic green facility to support the Plaza District, with 1,225 apartments",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ifc.org/en/pressroom/2026/ifc-partners-with-sdic-to-advance-the-first-sustainable-community-in-oman"
+    },
+    {
+     "claim": "Phase one sold out and 55% of phase one buyers were Omani nationals",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thesustainablecity-yiti.com/"
+    },
+    {
+     "claim": "Plaza apartments carry no service charge for 5 years from handover; Sustainable District villas pay no service fees",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thesustainablecity-yiti.com/plaza"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Dubai, UAE",
+    "construction_start": null,
+    "handover_promised": "2027-12 (The Plaza)",
+    "original_handover": "2025 (stated at the March 2022 launch)",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR",
+     "3-4BR villa",
+     "Nikki Beach branded residences (The Arc)"
+    ],
+    "size_min_m2": 49,
+    "size_max_m2": 560,
+    "price_min": 70000,
+    "price_max": 238700,
+    "deposit_pct": 5,
+    "foreign_ownership": "Described as freehold for all nationalities inside an Integrated Tourism Complex (agent pages). The developer site only says it is designed for international buyers.",
+    "rental_programme": null,
+    "lat": 23.5430977,
+    "lng": 58.6667648,
+    "permit_authority": "Ministry of Housing and Urban Planning"
+   },
+   "note": "Large Yiti master plan selling Plaza apartments and Sustainable District villas, with the first phase reported sold out. The developer published no permit number or project escrow details. The latest dated progress percentages found are from December 2024, with a 2026 site update video and an IFC loan signed in September 2026.",
+   "positives": [
+    "IFC, OPEC Fund and bank financing reported for the Plaza District",
+    "State-owned OMRAN Group is the joint venture partner",
+    "Brochure and floor plans are available, and the developer shows a dated 2026 site update",
+    "The developer's earlier Sustainable City communities in Dubai and Sharjah were reported delivered (agent profile)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://jiwak.com/properties/720/show",
+    "https://metropolitan.realestate/oman/the-sustainable-city-yiti/",
+    "https://thesustainablecity-yiti.com/",
+    "https://thesustainablecity-yiti.com/faq",
+    "https://thesustainablecity-yiti.com/news/",
+    "https://thesustainablecity-yiti.com/news/road-to-net-zero-emissions-oman-sustainable-city-yiti",
+    "https://thesustainablecity-yiti.com/plaza",
+    "https://uinvestgroup.com/oman/developers/diamond-developers/",
+    "https://www.cbnme.com/news/the-sustainable-city-yiti-achieves-major-progress-as-infrastructure-works-approach-completion/",
+    "https://www.ifc.org/en/pressroom/2026/ifc-partners-with-sdic-to-advance-the-first-sustainable-community-in-oman"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-10-31",
+   "found_by": "discover-agent",
+   "slug": "the-sustainable-city-yiti-diamond-developers-see-holding-through-the-j"
+  },
+  {
+   "name": "Mira Ocean Estates (Trussardi Residences, first phase)",
+   "developer": "Mira Developments L.L.C",
+   "area": "Hawana Salalah, Salalah, Dhofar",
+   "country": "Oman",
+   "market": "Oman",
+   "stage": "off-plan",
+   "url": "https://mira-ocean-estates.com/",
+   "docs_url": "https://mira-ocean-estates.com/Mira-Ocean-Estates-Brochure.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 550000,
+    "currency": "AED",
+    "title": "freehold",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q4 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "No completed project verified. An agent profile of Mira's projects page lists its earliest Dubai launches (Trussardi Residences, Mira Villas) for handover in Q4 2026.",
+    "units": 263.0,
+    "payment_plan": "50/50: 10% on booking, 10% at SPA 45 days later, 5% at 6 months, 5% at 12 months, 10% at 18 months, 10% at 24 months, 50% on handover in Q4 2028"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Mira Ocean Estates sits within the Hawana Salalah Integrated Tourism Complex, so foreigners can own freehold",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://mira-ocean-estates.com/"
+    },
+    {
+     "claim": "Handover is scheduled for Q4 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mira-ocean-estates.com/trussardi-residences/"
+    },
+    {
+     "claim": "Property ownership may qualify buyers for renewable residency of up to 10 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mira-ocean-estates.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2023,
+    "developer_hq": "Dubai, UAE",
+    "construction_start": null,
+    "handover_promised": "Q4 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "townhouse",
+     "villa"
+    ],
+    "size_min_m2": 39.11,
+    "size_max_m2": 126.16,
+    "price_min": 550000,
+    "price_max": 1800000,
+    "deposit_pct": 10,
+    "foreign_ownership": "Developer says foreign buyers can buy freehold with no nationality restrictions. The ITC status of the plot is not documented on any page I opened.",
+    "rental_programme": "Professional rental management available to owners (developer, no terms given)",
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ministry of Housing and Urban Planning"
+   },
+   "note": "Branded, fully furnished Trussardi apartments (and a later John Richmond collection) next to or inside Hawana Salalah, priced in AED from 550,000. The developer site shows a UAE trade licence and TRN but no Omani project permit, escrow or construction progress.",
+   "positives": [
+    "Payment plan and unit areas are published, with floor plan images for studio, 1BR and 2BR",
+    "Prices and handover quarter are stated openly",
+    "No guaranteed returns or buy-back are advertised"
+   ],
+   "flags": [],
+   "sources": [
+    "https://metropolitan.realestate/salalah/mira-ocean-estates-salalah-oman/",
+    "https://mira-ocean-estates.com/",
+    "https://mira-ocean-estates.com/trussardi-residences/",
+    "https://opr.ae/projects/mira-ocean-estates-mira-developments-salalah-oman",
+    "https://uinvestgroup.com/oman/developers/mira-developments/",
+    "https://www.oceanestateshomes.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-10-31",
+   "found_by": "discover-agent",
+   "slug": "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-"
+  },
+  {
+   "name": "Bellevue Al Mouj",
+   "developer": "Ideal Buildings (Ideal Building)",
+   "area": "Al Mouj, Muscat",
+   "country": "Oman",
+   "market": "Oman",
+   "stage": "under construction",
+   "url": "https://ideal-buildings.com/projects/bellevue/",
+   "docs_url": "https://ideal-buildings.com/wp-content/uploads/2025/07/Bellevue-Catalogue-DIGITAL.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 130000,
+    "currency": "OMR",
+    "title": "freehold",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 108.0,
+    "payment_plan": "Not published by the developer. An agent listing shows a final 20% instalment six months after handover. The developer says residency applications can start from a 15% payment."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Buyers get 100% freehold ownership and lifetime Oman residency for themselves and immediate family",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://ideal-buildings.com/projects/bellevue/"
+    },
+    {
+     "claim": "Completion is scheduled for 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ideal-buildings.com/projects/bellevue/"
+    },
+    {
+     "claim": "Bellevue is within Al Mouj, a designated Integrated Tourism Complex that allows foreign freehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ideal-buildings.com/projects/bellevue/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Muscat, Oman",
+    "construction_start": null,
+    "handover_promised": "2027 (a portal shows both Q4 2027 and Q2 2027)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "1BR + study",
+     "2BR",
+     "2BR + study",
+     "2BR + suite"
+    ],
+    "size_min_m2": 86,
+    "size_max_m2": 166,
+    "price_min": 130000,
+    "price_max": 379900,
+    "deposit_pct": null,
+    "foreign_ownership": "Developer says 100% freehold for foreign nationals because Al Mouj is an ITC",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ministry of Housing and Urban Planning"
+   },
+   "note": "108 apartments in a boutique tower next to the Al Mouj golf course, built by a young Omani developer whose first residential project this appears to be. The developer page publishes no prices, floor plans (gated behind a form), permit, escrow or progress percentage.",
+   "positives": [
+    "Developer page names the ITC location and unit mix",
+    "Catalogue with floor plans is available on request",
+    "No guaranteed returns advertised"
+   ],
+   "flags": [],
+   "sources": [
+    "https://alwalaaoman.com/property_status/off-plan/",
+    "https://ideal-buildings.com/projects/bellevue/",
+    "https://omanexp.com/properties/bellevue-al-mouj-muscat",
+    "https://uinvestgroup.com/property/bellevue-al-mouj-muscat-oman/",
+    "https://whitewill.om/developments/bellevue"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-10-31",
+   "found_by": "discover-agent",
+   "slug": "bellevue-al-mouj-ideal-buildings-ideal-building"
   }
  ]
 }

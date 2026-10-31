@@ -1,0 +1,21 @@
+[
+ {
+  "date": "2026-10-31",
+  "calls": 1,
+  "usd": 3.724,
+  "searches": 10,
+  "added": 3,
+  "rejected": {},
+  "markets": [
+   "Oman"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "the-sustainable-city-yiti-diamond-developers-see-holding-through-the-j",
+   "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-",
+   "bellevue-al-mouj-ideal-buildings-ideal-building"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
+ }
+]
