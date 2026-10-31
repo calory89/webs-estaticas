@@ -40,7 +40,7 @@
   </div>
 </header>
 <main id="main">
-<style>.phero.tight{padding:clamp(24px,4vw,48px) 0 8px;border-bottom:0}.phero.tight h1{font-size:clamp(2.1rem,5vw,4.2rem)}.phero.tight .lead{margin-top:12px}#analyze.sec{padding-top:12px}@media(max-width:700px){#az-1>.lead,#az-1>h2{display:none}}</style>
+<style>.phero.tight{padding:clamp(24px,4vw,48px) 0 8px;border-bottom:0}.phero.tight h1{font-size:clamp(2.1rem,5vw,4.2rem)}.phero.tight .lead{margin-top:12px}#analyze.sec{padding-top:12px}@media(max-width:700px){#az-1>.lead,#az-1>h2{display:none}}.az-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 18px}@media print{.nav,.mcta,footer,.foot,.phero,.az-tools,.az-cp,#azreq,.sec.alt,script{display:none!important}body{background:#fff}#analyze.sec{padding:0}}</style>
 <section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Check a project</p><h1>Check a project before you pay a cent.</h1><p class="lead">Paste its website: in about a minute you see what the developer promises and what to verify. Free, no card, no email.</p></div></section>
 <section class="sec" id="analyze"><div class="wrap">
   <div class="az" id="az">
@@ -186,22 +186,22 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function step1(){ var v = norm($('az-url').value); if (!v) { $('az-e1').textContent = 'Paste the full website address of the project.'; return; }
     url = v; try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
   $('az-f1').addEventListener('submit', step1);
-  var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); }
+  var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); } else if (qs.get('q')) { $('az-url').value = ''; $('az-url').placeholder = 'Website of ' + qs.get('q').slice(0, 40); $('az-e1').innerHTML = 'We read the developer\'s own website, so paste its address above. Only have the name? <a href="#start" onclick="document.getElementById(\'start\').hidden=false">Send it to us</a> and we find it for you.'; $('az-url').focus(); }
   function save(email, note){ if (!email) return; try { fetch(SB, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({ p_name: 'Desk review request', p_email: email, p_country: '', p_phone: '', p_who: 'buyer | desk review', p_bring: note.slice(0, 4000), p_learn: url.slice(0, 300), p_week: '', p_lang: 'en', p_source: 'yc-desk | ' + location.pathname, p_plan: 'yc-desk' }) }); } catch (e) {} }
   function run(email){
     show(3);
     var lis = $('az-prog').querySelectorAll('li'), i = 0; lis[0].classList.add('run');
     var tick = setInterval(function(){ if (i < lis.length - 1) { lis[i].classList.remove('run'); lis[i].classList.add('ok2'); i++; lis[i].classList.add('run'); } }, 6000);
-    $('az-first').textContent = 'Starting…';
+    $('az-first').textContent = 'Starting…'; var t0 = Date.now(), el = setInterval(function(){ var sec = Math.round((Date.now() - t0) / 1000); var f = $('az-first'); if (f && !/^Starting/.test(f.textContent)) f.textContent = 'Reading the website now · ' + sec + ' s (usually about 10 s)'; }, 1000);
     fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) })
       .then(function(r){ return r.json().then(function(d){ return [r.status, d]; }); })
-      .then(function(x){ clearInterval(tick); var s = x[0], d = x[1];
+      .then(function(x){ clearInterval(tick); clearInterval(el); var s = x[0], d = x[1];
         lis.forEach(function(l){ l.classList.remove('run'); l.classList.add('ok2'); });
         if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
-        setTimeout(function(){ render(d); if (!email) copyBox(d.report.summary); }, 500);
-      }).catch(function(){ clearInterval(tick); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
+        setTimeout(function(){ render(d); tools(); if (!email) copyBox(d.report.summary); }, 500);
+      }).catch(function(){ clearInterval(tick); clearInterval(el); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
     setTimeout(function(){ if ($('az-first').textContent === 'Starting…') $('az-first').textContent = 'Reading the website now'; }, 1200);
    }
   $('az-f2').addEventListener('submit', function(){ var em = $('az-email').value.trim(); if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) run(em); });
@@ -209,13 +209,23 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     var box = $('az-4'); if (!box || $('az-cp')) return; var known = ''; try { known = localStorage.getItem('kb-desk-email') || ''; } catch (e) {}
     var f = document.createElement('form'); f.id = 'az-cp'; f.className = 'az-cp'; f.setAttribute('novalidate', '');
     f.innerHTML = '<label for="az-cpe"><b>Want us to follow up?</b> <span>Leave your email and a person on our team replies within one working day.</span></label><div><input type="email" id="az-cpe" autocomplete="email" placeholder="you@email.com" value="' + esc(known) + '"><button class="btn btn-line" type="submit">Send</button></div><p class="fe" id="az-cpx" role="alert"></p>';
-    box.insertBefore(f, box.children[2] || null);
+    var rq = document.getElementById('azreq'); box.insertBefore(f, rq || null);
     f.addEventListener('submit', function(e){ e.preventDefault(); var em = $('az-cpe').value.trim();
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { $('az-cpx').textContent = 'Add a valid email address.'; return; }
       try { localStorage.setItem('kb-desk-email', em); } catch (x) {} save(em, 'Desk review copy requested: ' + (sum || '')); ev('generate_lead', { role: 'desk' });
       f.innerHTML = '<p style="margin:0"><b>✓ Thanks.</b> We reply to ' + esc(em) + ' within one working day.</p>'; });
   }
 
+  function tools(){
+    var box = $('az-4'); if (!box || $('az-tools')) return;
+    var link = location.origin + '/check?url=' + encodeURIComponent(url) + '#analyze';
+    var t = document.createElement('div'); t.id = 'az-tools'; t.className = 'az-tools';
+    t.innerHTML = '<button type="button" class="btn btn-line btn-sm" id="az-share">Share this review</button><button type="button" class="btn btn-line btn-sm" id="az-pdf">Save as PDF</button><span class="muted" id="az-shx" style="font-size:.85rem"></span>';
+    box.insertBefore(t, box.children[2] || null);
+    $('az-share').onclick = function(){ ev('desk_share'); if (navigator.share) { navigator.share({ title: 'Kolaboro desk review', text: 'What to check before paying for this project', url: link }).catch(function(){}); return; }
+      try { navigator.clipboard.writeText(link); $('az-shx').textContent = 'Link copied. Send it to your partner or lawyer.'; } catch (e) { $('az-shx').textContent = link; } };
+    $('az-pdf').onclick = function(){ ev('desk_pdf'); window.print(); };
+  }
   function render_err(e){
     var m = e === 'rate' ? 'You have run several reviews in the last hour. Try again later, or book a full check below.'
       : e === 'fetch' || e === 'empty' ? 'This website blocks automatic reading, so a person on our team will read it for you and reply by email within one working day.'
