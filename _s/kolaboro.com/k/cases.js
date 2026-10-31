@@ -14,7 +14,7 @@
   var S = { m: '', t: '', q: '', sort: 'best', lim: 24 };
   function full(c){ return (c.max || 0) === 6 && (c.score || 0) === 6 && !(c.flags || []).length; }
   function okk(c, k){ var ck = c.checks || {}; return k === 'permit' ? ck.permit === 2 : k === 'escrow' ? ck.escrow === true : k === 'progress' ? ck.progress != null : !!ck[k]; }
-  function tierOk(c){ return !S.t || (S.t === 'full' ? full(c) : c.tier === S.t); }
+  function tierOk(c){ return !S.t || (S.t === 'full' ? full(c) : S.t === 'verified' ? (c.vscore || 0) >= 4 : c.tier === S.t); }
   function stat(){
     var mk = {}, ct = {}; C.forEach(function(c){ mk[c.market] = 1; ct[c.country] = 1; });
     var permit = C.filter(function(c){ return c.checks && c.checks.permit === 2; }).length, escw = C.filter(function(c){ return c.checks && c.checks.escrow === true; }).length,
@@ -39,11 +39,13 @@
     var R = ck.researched || CK.map(function(k){ return k[0]; }), mx = c.max || R.length;
     var ticks = CK.map(function(k){ if (R.indexOf(k[0]) < 0) return ''; var v = ck[k[0]], ok = k[0] === 'permit' ? v === 2 : k[0] === 'progress' ? v != null : v === true;
       var half = k[0] === 'permit' && v === 1, txt = k[0] === 'progress' && v != null ? (typeof v === 'number' ? 'Construction progress published (' + v + '%)' : 'Construction progress published (dated updates)') : half ? 'Permit claimed, number not published' : k[1];
-      return '<li class="' + (ok ? 'y' : half ? 'h' : 'n') + '"><i aria-hidden="true">' + (ok ? '✓' : half ? '~' : '✗') + '</i>' + esc(txt) + '</li>'; }).join('') + (R.length < 6 ? '<li class="u"><i aria-hidden="true">·</i><em>Deposit protection, progress and track record: being researched</em></li>' : '');
+      var lv = c.verified && c.verified[k[0]], vb = !lv ? '' : lv === 'registry' ? '<b class="kv r" title="Confirmed in an official registry">registry</b>' : lv === 'independent' ? '<b class="kv i" title="Confirmed by an independent source">confirmed</b>' : lv === 'contradicted' ? '<b class="kv x" title="Sources disagree">contradicted</b>' : (ok && lv === 'developer') ? '<b class="kv d" title="Only the developer or its agents say so">not confirmed</b>' : '';
+      return '<li class="' + (ok ? 'y' : half ? 'h' : 'n') + '"><i aria-hidden="true">' + (ok ? '✓' : half ? '~' : '✗') + '</i>' + esc(txt) + vb + '</li>'; }).join('') + (R.length < 6 ? '<li class="u"><i aria-hidden="true">·</i><em>Deposit protection, progress and track record: being researched</em></li>' : '');
     var steps = [['Promises read by AI', c.read, c.read ? c.checked : 'Queued'], ['Developer invited', !!c.invited, c.invited || 'Next'], ['Registry check', false, 'Pending'], ['Site visit with GPS video', false, 'Pending'], ['Verified and published', false, 'Pending']];
     return '<article class="case kc t-' + esc(c.tier || 'mixed') + '"><header><span class="cid">' + esc(c.id) + '</span><span class="kt" style="color:' + t[1] + ';border-color:' + t[1] + '">' + t[0] + '</span></header>' +
       '<h3>Off-plan project · ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + '<small> · ' + esc(c.country) + '</small></h3><p class="cmeta">' + esc(meta) + '</p>' +
       (mx === 6 ? (full(c) ? '<p class="k100 y">✓ 100% public: all 6 checks published</p>' : '<p class="k100 n">Not 100%: missing ' + esc(CK.filter(function(k){ return !okk(c, k[0]); }).map(function(k){ return k[1].split(' (')[0].toLowerCase(); }).join(', ')) + '</p>') : '') + '<div class="ksc"><b>' + (c.score || 0) + '/' + mx + '</b><span>public checks' + (mx < 6 ? ' (deeper research pending)' : '') + '</span><i style="width:' + ((c.score || 0) / mx * 100) + '%;background:' + t[1] + '"></i></div><ul class="k6">' + ticks + '</ul>' +
+      (c.vscore != null ? '<p class="kvs"><b>' + c.vscore + '/6</b> confirmed by a registry or independent source' + (c.claims ? ' · ' + (c.claims.verified + c.claims.unverified + c.claims.contradicted) + ' claims checked: ' + c.claims.verified + ' verified, ' + c.claims.unverified + ' unverified' + (c.claims.contradicted ? ', <b class="kv x">' + c.claims.contradicted + ' contradicted</b>' : '') : '') + (c.delay ? ' · handover moved ' + c.delay + ' months' : '') + '</p>' : '') +
       ((c.flags || []).length ? '<p class="kfl">' + c.flags.map(function(f){ return '<span>⚠ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
       ((c.notes || []).length ? '<p class="kfl kno">' + c.notes.map(function(f){ return '<span>ℹ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
       '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
