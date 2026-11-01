@@ -4941,5 +4941,167 @@
     "Registro de Incorporação R13 da Matrícula nº 135.051 do 1º Ofício de Registro de Imóveis de Balneário Camboriú"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers to be linked to the fiduciary scheme ('vinculación de compradores al esquema fiduciario')"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "completion_year": [
+    null,
+    2023
+   ],
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, fiducia de este proyecto",
+    "Alianza Fiduciaria named as the project's trust (fiducia); page says the trust 'respaldó este proyecto' (backed the project). No escrow or guarantee terms given."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9487,
+    9489
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "permit_number": [
+    "Act 14",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "permit_number": [
+    "#4019",
+    "project #4019"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "completion_year": [
+    2029,
+    2028
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    489900,
+    289900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land in 2018; no buyer escrow described)",
+    "Fideicomiso Buenos Aires Landmark (used to buy the land at public auction in 2018)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "Registro de Incorporação R13 da Matrícula nº 135.051 do 1º Ofício de Registro de Imóveis de Balneário Camboriú",
+    "Registro de Incorporação R13 da Matrícula nº 135.051"
+   ]
+  }
  }
 ]
