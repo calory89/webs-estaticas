@@ -16,6 +16,30 @@
   function ago(t){ if (!t) return ''; var s = (Date.now() - new Date(t)) / 1000; if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' min'; if (s < 86400) return Math.round(s / 3600) + ' h'; return Math.round(s / 86400) + ' d'; }
   function src(l){ return l.src || l.source || 'direct'; }
   function has(){ return D && D.kpi !== undefined; }
+  // Priority: transparent sum of facts about the lead, shown on hover. Not a prediction.
+  function prio(l){
+    var f = [], u = userFor(l), age = (Date.now() - new Date(l.created_at)) / 864e5;
+    if (u) f.push([3, 'has a portal account']);
+    if (u && (u.cases || []).length) f.push([3, 'opened a case']);
+    if (l.paid) f.push([2, 'has paid before']);
+    if (l.phone) f.push([2, 'left a phone number']);
+    if (/^https?:\/\//.test(l.learn || '')) f.push([2, 'gave a project URL']);
+    if (/check-request|yc-buyer|account/.test(l.plan || '')) f.push([2, 'asked for a check or opened an account']);
+    if (age < 2) f.push([2, 'arrived in the last 48 h']);
+    else if (age > 30 && !notesFor(l).length) f.push([-2, 'older than 30 days, never contacted']);
+    if (DUP[(l.email || '').toLowerCase()] > 1) f.push([1, 'came back more than once']);
+    var n = f.reduce(function(a, x){ return a + x[0]; }, 0);
+    return { n: n, lvl: n >= 7 ? 'hot' : n >= 4 ? 'warm' : 'cold', why: f.map(function(x){ return (x[0] > 0 ? '+' : '') + x[0] + ' ' + x[1]; }).join('\n') || 'no signals yet' };
+  }
+  var DUP = {};
+  var TPL = [
+    ['Desk review follow-up', 'Your desk review of {project}', 'Hi {first},\n\nThanks for running a desk review on Kolaboro. A few of the points it raised can only be answered on the ground (land title, building permit, the site itself).\n\nIf you are about to make a payment, we can have someone who lives there check the project first. It takes about 7 days and costs EUR 490, refunded in full if we cannot take the case.\n\nAny questions, just reply to this email.\n\nCarlos\nKolaboro'],
+    ['Next step on your check', 'Next step on your Kolaboro check', 'Hi {first},\n\nTo start the check we only need the project website and, if you have it, the contract or reservation form. You can add both in your portal: https://kolaboro.com/portal\n\nCarlos\nKolaboro'],
+    ['Payment received', 'Your Kolaboro check has started', 'Hi {first},\n\nWe received your payment and your check has started. You will see every step, with dates, in your portal: https://kolaboro.com/portal\n\nCarlos\nKolaboro'],
+    ['Checking in', 'Still looking at {project}?', 'Hi {first},\n\nJust checking in. Are you still considering {project}? If a payment date is coming up, tell me and we will see if we can check it before then.\n\nCarlos\nKolaboro']
+  ];
+  function tpl(t, l){ var first = (l.name || '').split(' ')[0] || 'there', project = (l.learn || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '') || 'the project'; return t.replace(/\{first\}/g, first).replace(/\{project\}/g, project); }
+  var PICK = {};
   function act(action, payload){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: action, p_payload: payload }).then(function(d){ if (d && d.error) { alert('Not saved: ' + d.error); return; } A.reload(); }); }
 
   // tab + section
@@ -36,6 +60,7 @@
     '.crm-g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.crm-kv{display:grid;grid-template-columns:120px 1fr;gap:4px 10px;font-size:.86rem;margin-top:10px}.crm-kv span{color:var(--muted)}' +
     '.crm-tl{list-style:none;padding:0;margin:10px 0 0}.crm-tl li{border-left:2px solid var(--line);padding:2px 0 10px 12px;position:relative;font-size:.88rem;white-space:pre-wrap}.crm-tl li::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--line)}.crm-tl li.k-call::before{background:#3B6FD8}.crm-tl li.k-email::before{background:#1E9E6A}.crm-tl li.k-meeting::before{background:#8A4FD8}.crm-tl li.k-task::before{background:var(--hi)}.crm-tl li.k-sys::before{background:#bbb}.crm-tl li small{display:block;color:var(--muted)}.crm-tl li.done{opacity:.55}' +
     '.crm-today li{margin:4px 0}.crm-x{position:sticky;top:0;float:right;border:0;background:#F2F1EC;border-radius:10px;padding:6px 10px;cursor:pointer}.crm-warn{background:#FFF4E5;border:1px solid #F5C98B;border-radius:12px;padding:10px 12px;font-size:.88rem;margin-top:12px}' +
+    '.crm-pr{float:right;min-width:24px;text-align:center;border-radius:999px;font-size:.72rem;font-weight:800;padding:1px 6px;background:#E6E4DD;cursor:help}.crm-pr.hot{background:#FF5B14;color:#111}.crm-pr.warm{background:#FFE6D9}' +
     '.crm-src td,.crm-src th{padding:6px}.crm-bar{height:8px;background:var(--hi);border-radius:4px}' +
     '@media(max-width:700px){.crm-g2{grid-template-columns:1fr}.crm-kv{grid-template-columns:1fr}}';
   document.head.appendChild(css);
@@ -65,6 +90,7 @@
   }
 
   function render(){
+    DUP = {}; leads().forEach(function(l){ var e = (l.email || '').toLowerCase(); DUP[e] = (DUP[e] || 0) + 1; });
     var L = leads().filter(function(l){ return !isTest(l); }), k = D.kpi || {}, due = dueItems(), wk = Date.now() - 7 * 864e5;
     var users = (D.users || []).filter(function(u){ return u.email !== 'demo@kolaboro.com' && (u.role || 'buyer') === 'buyer'; });
     var paying = {}; (D.payments || []).forEach(function(p){ if (p.email) paying[p.email.toLowerCase()] = 1; });
@@ -103,7 +129,8 @@
   }
   function card(l){
     var t = today(), nd = l.next_action, u = userFor(l);
-    return '<div class="crm-card" draggable="true" data-open="' + l.id + '"><b>' + esc(l.name || l.email) + '</b><small>' + esc(l.plan || 'other') + ' · ' + esc(src(l)) + ' · ' + ago(l.created_at) + '</small>' +
+    var pr = prio(l);
+    return '<div class="crm-card" draggable="true" data-open="' + l.id + '"><span class="crm-pr ' + pr.lvl + '" title="' + esc(pr.why) + '">' + pr.n + '</span><b>' + esc(l.name || l.email) + '</b><small>' + esc(l.plan || 'other') + ' · ' + esc(src(l)) + ' · ' + ago(l.created_at) + '</small>' +
       (l.learn ? '<small style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(String(l.learn).replace(/^https?:\/\/(www\.)?/, '')) + '</small>' : '') +
       ((l.tags || []).length ? '<div>' + l.tags.map(function(x){ return '<span class="tg">' + esc(x) + '</span>'; }).join('') + '</div>' : '') +
       '<small>' + (l.value_eur ? '€' + (+l.value_eur).toLocaleString() + ' · ' : '') + (nd ? '<span class="' + (nd <= t ? 'due' : '') + '">next ' + esc(nd.slice(5)) + '</span>' : '') + (u ? ' · account' : '') + (l.paid ? ' · paid' : '') + '</small></div>';
@@ -111,7 +138,7 @@
   function body(){
     var F = filtered(), el = $('crm-body'); if (!el) return;
     if (VIEW === 'board') {
-      el.innerHTML = '<div class="crm-board">' + ST.map(function(s){ var c = F.filter(function(l){ return stOf(l) === s[0]; }); return '<div class="crm-col" data-st="' + s[0] + '"><h3><span>' + s[1] + '</span><span>' + c.length + '</span></h3>' + c.slice(0, 80).map(card).join('') + (c.length > 80 ? '<p class="muted" style="font-size:.8rem">+' + (c.length - 80) + ' more, use search</p>' : '') + '</div>'; }).join('') + '</div>';
+      el.innerHTML = '<div class="crm-board">' + ST.map(function(s){ var c = F.filter(function(l){ return stOf(l) === s[0]; }).sort(function(a, b){ return prio(b).n - prio(a).n || (a.created_at < b.created_at ? 1 : -1); }); return '<div class="crm-col" data-st="' + s[0] + '"><h3><span>' + s[1] + '</span><span>' + c.length + '</span></h3>' + c.slice(0, 80).map(card).join('') + (c.length > 80 ? '<p class="muted" style="font-size:.8rem">+' + (c.length - 80) + ' more, use search</p>' : '') + '</div>'; }).join('') + '</div>';
       el.querySelectorAll('.crm-card').forEach(function(c){ c.addEventListener('dragstart', function(e){ e.dataTransfer.setData('text/plain', c.dataset.open); }); });
       el.querySelectorAll('.crm-col').forEach(function(col){
         col.addEventListener('dragover', function(e){ e.preventDefault(); col.classList.add('drop'); });
@@ -119,7 +146,14 @@
         col.addEventListener('drop', function(e){ e.preventDefault(); col.classList.remove('drop'); var id = e.dataTransfer.getData('text/plain'); if (id) setStatus(id, col.dataset.st); });
       });
     } else {
-      el.innerHTML = '<div class="card"><div class="tw"><table><tr><th>When</th><th>Name</th><th>Stage</th><th>Type</th><th>Source</th><th>Next</th><th>Value</th></tr>' + F.map(function(l){ return '<tr data-open="' + l.id + '" style="cursor:pointer"><td>' + esc(day(l.created_at)) + '</td><td><b>' + esc(l.name) + '</b><br><small class="muted">' + esc(l.email) + '</small></td><td>' + esc(stOf(l)) + '</td><td>' + esc(l.plan || 'other') + '</td><td>' + esc(src(l)) + '</td><td>' + esc(l.next_action || '') + '</td><td>' + (l.value_eur ? '€' + esc(l.value_eur) : '') + '</td></tr>'; }).join('') + '</table></div></div>';
+      el.innerHTML = '<div class="card"><div class="row" id="crm-bulk" style="margin-bottom:8px"><span class="muted" id="crm-bn">0 selected</span><select id="crm-bs"><option value="">Move selected to…</option>' + ST.map(function(s){ return '<option value="' + s[0] + '">' + s[1] + '</option>'; }).join('') + '</select><button class="btn2" id="crm-bx">Export selected</button><button class="btn2" id="crm-bm">Email selected (BCC)</button></div><div class="tw"><table><tr><th><input type="checkbox" id="crm-ba" aria-label="Select all"></th><th>Priority</th><th>When</th><th>Name</th><th>Stage</th><th>Type</th><th>Source</th><th>Next</th><th>Value</th></tr>' + F.sort(function(a, b){ return prio(b).n - prio(a).n; }).map(function(l){ var pr = prio(l); return '<tr data-open="' + l.id + '" style="cursor:pointer"><td><input type="checkbox" data-pick="' + l.id + '"' + (PICK[l.id] ? ' checked' : '') + '></td><td><span class="crm-pr ' + pr.lvl + '" style="float:none" title="' + esc(pr.why) + '">' + pr.n + '</span></td><td>' + esc(day(l.created_at)) + '</td><td><b>' + esc(l.name) + '</b><br><small class="muted">' + esc(l.email) + '</small></td><td>' + esc(stOf(l)) + '</td><td>' + esc(l.plan || 'other') + '</td><td>' + esc(src(l)) + '</td><td>' + esc(l.next_action || '') + '</td><td>' + (l.value_eur ? '€' + esc(l.value_eur) : '') + '</td></tr>'; }).join('') + '</table></div></div>';
+      var upd = function(){ $('crm-bn').textContent = Object.keys(PICK).length + ' selected'; };
+      el.querySelectorAll('[data-pick]').forEach(function(c){ c.onclick = function(e){ e.stopPropagation(); if (c.checked) PICK[c.dataset.pick] = 1; else delete PICK[c.dataset.pick]; upd(); }; });
+      $('crm-ba').onclick = function(e){ e.stopPropagation(); F.forEach(function(l){ if (e.target.checked) PICK[l.id] = 1; else delete PICK[l.id]; }); body(); };
+      $('crm-bs').onchange = function(){ var v = this.value, ids = Object.keys(PICK); if (!v || !ids.length) return; if (!confirm('Move ' + ids.length + ' lead(s) to ' + v + '?')) return; Promise.all(ids.map(function(id){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: has() ? 'lead_update' : 'set_status', p_payload: { id: id, status: v } }); })).then(function(){ PICK = {}; A.reload(); }); };
+      $('crm-bx').onclick = function(){ csv(leads().filter(function(l){ return PICK[l.id]; })); };
+      $('crm-bm').onclick = function(){ var em = leads().filter(function(l){ return PICK[l.id] && l.email; }).map(function(l){ return l.email; }); if (em.length) location.href = 'mailto:?bcc=' + encodeURIComponent(em.join(',')); };
+      upd();
     }
   }
   sec.addEventListener('click', function(e){ var o = e.target.closest('[data-open]'); if (o) { e.preventDefault(); open(o.dataset.open); } });
@@ -135,7 +169,7 @@
     var tl = N.map(function(n){ return { at: n.created_at, kind: n.kind, body: n.body, id: n.id, due: n.due, done: n.done }; }).concat(sys).sort(function(a, b){ return a.at < b.at ? 1 : -1; });
     var subj = encodeURIComponent('Kolaboro: your ' + (l.plan === 'yc-desk' ? 'desk review' : 'request'));
     dr.innerHTML = '<button class="crm-x" id="crm-close" aria-label="Close">Close ✕</button><p class="muted" style="margin:0">' + esc(l.plan || 'lead') + ' · ' + esc(day(l.created_at)) + '</p><h2>' + esc(l.name || l.email) + '</h2>' +
-      '<div class="row" style="margin-top:6px"><a class="btn2" href="mailto:' + esc(l.email) + '?subject=' + subj + '">Email</a>' + (wa ? '<a class="btn2" target="_blank" rel="noopener" href="https://wa.me/' + wa + '">WhatsApp</a>' : '') + (u ? '<button class="btn2" id="crm-as">Open their portal ↗</button>' : '') + '</div>' +
+      '<div class="row" style="margin-top:6px"><a class="btn2" href="mailto:' + esc(l.email) + '?subject=' + subj + '">Email</a>' + (wa ? '<a class="btn2" target="_blank" rel="noopener" href="https://wa.me/' + wa + '">WhatsApp</a>' : '') + (u ? '<button class="btn2" id="crm-as">Open their portal ↗</button>' : '') + '<select id="crm-tpl" style="max-width:200px"><option value="">Email template…</option>' + TPL.map(function(t, i){ return '<option value="' + i + '">' + esc(t[0]) + '</option>'; }).join('') + '</select></div>' + (function(){ var pr = prio(l); return '<p style="margin:10px 0 0;font-size:.85rem"><span class="crm-pr ' + pr.lvl + '" style="float:none">' + pr.n + '</span> <b>' + pr.lvl + '</b> <span class="muted">' + esc(pr.why.replace(/\n/g, ' · ')) + '</span></p>'; })() + (DUP[(l.email || '').toLowerCase()] > 1 ? '<p class="muted" style="margin:4px 0 0;font-size:.85rem">This email sent ' + DUP[(l.email || '').toLowerCase()] + ' forms. Search it to see all of them.</p>' : '') +
       '<div class="crm-kv"><span>Email</span><b>' + esc(l.email) + '</b>' + (l.phone ? '<span>Phone</span><b>' + esc(l.phone) + '</b>' : '') + '<span>Country</span><b>' + esc(l.country || '-') + '</b>' +
       (l.learn ? '<span>Project / URL</span><b style="word-break:break-all">' + (/^https?:\/\//.test(l.learn) ? '<a href="' + esc(l.learn) + '" target="_blank" rel="noopener">' + esc(l.learn) + '</a>' : esc(l.learn)) + '</b>' : '') +
       (l.who ? '<span>Who</span><b>' + esc(l.who) + '</b>' : '') + (l.bring ? '<span>Message</span><b style="font-weight:400;white-space:pre-wrap">' + esc(l.bring) + '</b>' : '') +
@@ -155,14 +189,15 @@
     var nf = $('crm-n'); if (nf) nf.onsubmit = function(e){ e.preventDefault(); var f = e.target, b = f.body.value.trim(); if (!b) return; act('add_note', { lead_id: l.id, user_id: u ? u.id : '', kind: f.kind.value, body: b, due: f.due.value }); };
     dr.querySelectorAll('[data-nd]').forEach(function(b){ b.onclick = function(){ act('note_done', { id: +b.dataset.nd, done: b.dataset.v === 'true' }); }; });
     dr.querySelectorAll('[data-ndel]').forEach(function(b){ b.onclick = function(){ if (confirm('Delete this note?')) act('del_note', { id: +b.dataset.ndel }); }; });
+    $('crm-tpl').onchange = function(){ var t = TPL[+this.value]; if (!t || this.value === '') return; location.href = 'mailto:' + encodeURIComponent(l.email) + '?subject=' + encodeURIComponent(tpl(t[1], l)) + '&body=' + encodeURIComponent(tpl(t[2], l)); if (has()) act('add_note', { lead_id: l.id, user_id: u ? u.id : '', kind: 'email', body: 'Sent template: ' + t[0] }); this.value = ''; };
     var as = $('crm-as'); if (as) as.onclick = function(){ A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'impersonate', p_payload: { user_id: u.id } }).then(function(d){ if (d.token) window.open('/portal?as=' + d.token, '_blank'); }); };
   }
-  function csv(){
-    var F = filtered(), c = ['created_at','name','email','phone','country','plan','status','src','medium','campaign','referrer','landing','learn','who','bring','tags','next_action','value_eur'];
+  function csv(rows){
+    var F = Array.isArray(rows) ? rows : filtered(), c = ['created_at','name','email','phone','country','plan','status','src','medium','campaign','referrer','landing','learn','who','bring','tags','next_action','value_eur'];
     var t = c.join(',') + '\n' + F.map(function(l){ return c.map(function(k){ var v = k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]; v = String(v == null ? '' : v); if (/^[=+\-@]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }).join(','); }).join('\n');
     var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([t], { type: 'text/csv' })); a.download = 'kolaboro-crm-' + today() + '.csv'; a.click();
   }
   document.addEventListener('kbadm', function(e){ D = e.detail; render(); });
   if (A.D) { D = A.D; render(); }
-  try { if (localStorage.getItem('kb-adm-tab') === 'crm') tb.click(); } catch (x) {}
+  setTimeout(function(){ try { var t = localStorage.getItem('kb-adm-tab'), b = t && document.querySelector('nav.tabs button[data-t="' + t + '"]'); if (b) b.click(); } catch (x) {} }, 0);
 })();
