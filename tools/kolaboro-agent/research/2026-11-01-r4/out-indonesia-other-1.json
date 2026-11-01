@@ -2263,5 +2263,385 @@
    "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley",
    "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
   ]
+ },
+ {
+  "slug": "kaliwatu-residences-dusit-labuan-bajo",
+  "name": "Kaliwatu Residences - Dusit Collection",
+  "developer": "Not named (Komodo Property Management signed the management agreement)",
+  "area": "Western Flores, near Komodo Airport, Labuan Bajo",
+  "country": "Indonesia",
+  "market": "Labuan Bajo",
+  "url": "https://www.ttgasia.com/?p=107188",
+  "docs_url": "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/",
+  "permit_number": null,
+  "docs_listed": [
+   "hotel management agreement between Dusit International and PT Komodo Property Management (announced 11 Mar 2025)",
+   "unit mix: 63 pool villas, 194 apartments, clubhouse with rooftop pool",
+   "phased build, full completion targeted Q2 2028",
+   "location about 10 minutes from Komodo Airport, western Flores"
+  ],
+  "note": "Branded residences of 63 pool villas and 194 apartments near Komodo Airport, to be run by Dusit under a management agreement with PT Komodo Property Management announced in March 2025, with phased completion targeted for Q2 2028. No sales page, prices, title terms, permit, escrow or construction progress was found; the owner's CEO says only that construction is 'fully supported by local authorities' (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 257,
+   "developer_delivered": null,
+   "yield_pct": null,
+   "payment_plan": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Dusit International signed a hotel management agreement with PT Komodo Property Management for Kaliwatu Residences - Dusit Collection",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/"
+   },
+   {
+    "claim": "First Dusit Collection property in Indonesia",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/2025/03/17/dusit-to-manage-indonesias-kaliwatu-residences-dusit-collection/"
+   },
+   {
+    "claim": "63 private pool villas and 194 apartments plus clubhouse",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/?p=107188"
+   },
+   {
+    "claim": "Phased development with full completion scheduled for Q2 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.marketing-interactive.com/thailand-s-dusit-international-bets-on-labuan-bajo-s-tourism-boom-with-high-end-retreat"
+   },
+   {
+    "claim": "Development and construction 'fully supported by local authorities' (no permit named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/"
+   },
+   {
+    "claim": "Units are sold to private buyers (no sales terms, prices or title found)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ttgasia.com/?p=107188"
+   },
+   {
+    "claim": "Developer or landowner entity (only PT Komodo Property Management named as counterparty)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.marketing-interactive.com/thailand-s-dusit-international-bets-on-labuan-bajo-s-tourism-boom-with-high-end-retreat"
+   },
+   {
+    "claim": "Construction stage (no progress update found since the March 2025 announcement)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ttgasia.com/?p=107188"
+   },
+   {
+    "claim": "Site about 10 minutes from Komodo International Airport on the western tip of Flores",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/?p=107188"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "PT Komodo Property Management (CEO Alessandro Mugavero), named as management agreement counterparty",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Operator Dusit International (Dusit Thani PCL) is listed on the Stock Exchange of Thailand; the owner is not",
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "pool villa",
+    "apartment"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Hotel management by Dusit International (Dusit Collection brand)",
+   "service_charge": null,
+   "brand": "Dusit Collection",
+   "amenities": [
+    "clubhouse",
+    "restaurant",
+    "bars",
+    "shops",
+    "gym",
+    "spa",
+    "rooftop pool",
+    "plunge pools"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No permit named; CEO says construction is supported by local authorities",
+   "escrow": "Nothing published",
+   "progress": "No progress published since the March 2025 announcement",
+   "plans": "No plans published",
+   "record": "No completed projects of PT Komodo Property Management found",
+   "returns": "No return figures or guarantee wording found"
+  },
+  "positives": [
+   "Named international hotel operator (Dusit)",
+   "Unit count and completion target announced by the operator"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.ttgasia.com/?p=107188",
+   "https://www.ttgasia.com/2025/03/17/dusit-to-manage-indonesias-kaliwatu-residences-dusit-collection/",
+   "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/",
+   "https://www.marketing-interactive.com/thailand-s-dusit-international-bets-on-labuan-bajo-s-tourism-boom-with-high-end-retreat"
+  ]
+ },
+ {
+  "slug": "mawatu-labuan-bajo",
+  "name": "Mawatu",
+  "developer": "Vasanta Group",
+  "area": "Batu Cermin / Ketentang coast, Kecamatan Komodo, Labuan Bajo, Manggarai Barat",
+  "country": "Indonesia",
+  "market": "Labuan Bajo",
+  "url": "https://mawatu.co.id/commercial-village",
+  "docs_url": "https://mawatu.co.id/faq",
+  "permit_number": null,
+  "docs_listed": [
+   "20 ha integrated coastal township by Vasanta Group (FAQ)",
+   "commercial village shophouse types with lot numbers, storeys and building sizes (24-249.6 m2)",
+   "units on sale: commercial shophouses and beachfront retail lots",
+   "2022 launch: 200-unit commercial village, 2-3 storey shophouses Rp2.8-3.5 billion, '8% ROI' marketing, first 60 units due end Q1 2023",
+   "phase one soft opening 16 Oct 2026 with 50+ tenants (Bisnis, 1 Oct 2026)",
+   "hotel to be run by an international operator still in preparation"
+  ],
+  "note": "20-hectare waterfront township in Labuan Bajo by Vasanta Group, part of IDX-listed PT Pakuan Tbk (UANG); its commercial village of shophouses, launched in 2022 from Rp2.8 billion with first units due by end Q1 2023, had its soft opening on 16 October 2026 according to Bisnis, about three and a half years late. Hotels and villas are still to come, and no PBG, escrow, floor plans or current price list is published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 2800000000,
+   "currency": "IDR",
+   "title": "freehold (marketed); foreigners cannot hold Hak Milik",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2026 (phase one soft opening); full township not dated",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 200,
+   "developer_delivered": "Vasanta Group: Shila at Sawangan housing clusters and Vasanta Eco Town (Jabodetabek, with Mitsubishi Corporation) and The Kaya resort in Labuan Bajo, named on mawatu.co.id/about",
+   "yield_pct": 8,
+   "progress_updates": true,
+   "payment_plan": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Mawatu is developed by Vasanta Group, owned through IDX-listed PT Pakuan Tbk (UANG)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+   },
+   {
+    "claim": "Phase one soft opening on 16 October 2026 with more than 50 tenants and a Cinema XXI",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+   },
+   {
+    "claim": "First phase planned to finish by end of 2022 (May 2021 report)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.medcom.id/properti/news-properti/9K551w3K-vasanta-bangun-proyek-wisata-terpadu-di-labuan-bajo"
+   },
+   {
+    "claim": "First 60 shophouses to be completed by end Q1 2023 (Feb 2022 launch)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/"
+   },
+   {
+    "claim": "Phase one to finish in December 2023; main contractor PT China State Construction Overseas Development Shanghai (April 2023)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://industri.kontan.co.id/news/vasanta-group-kembangkan-destinasi-wisata-di-labuan-bajo-lewat-proyek-mawatu"
+   },
+   {
+    "claim": "Site area 20 ha (FAQ, 2022 launch) versus 12 ha (May 2021 report via PT Graha Properti Sentosa)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.medcom.id/properti/news-properti/9K551w3K-vasanta-bangun-proyek-wisata-terpadu-di-labuan-bajo"
+   },
+   {
+    "claim": "Shophouses priced Rp2.8-3.5 billion with 8% annual ROI marketed at launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/"
+   },
+   {
+    "claim": "Whole USD 125 million project to finish within five years of February 2022",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/"
+   },
+   {
+    "claim": "Shophouses marketed as 'freehold' (individual foreigners cannot hold Hak Milik)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Hotel to be managed by an international hospitality chain (not named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+   },
+   {
+    "claim": "Vasanta delivered Shila at Sawangan and Vasanta Eco Town with Mitsubishi Corporation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mawatu.co.id/about/"
+   },
+   {
+    "claim": "No building permit or escrow published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mawatu.co.id/faq"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jakarta, Indonesia",
+   "developer_company": "Vasanta Group (PT Graha Properti Sentosa named in 2021), under PT Pakuan Tbk (IDX: UANG)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent PT Pakuan Tbk listed on the Indonesia Stock Exchange (ticker UANG)",
+   "construction_start": "2021-05",
+   "handover_promised": "2026-Q4",
+   "original_handover": "2023-Q1",
+   "delay_months": 43,
+   "unit_types": [
+    "shophouse",
+    "street bar unit",
+    "beachfront retail lot"
+   ],
+   "size_min_m2": 24,
+   "size_max_m2": 249.6,
+   "price_min": 2800000000,
+   "price_max": 3500000000,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "8% annual ROI marketed at 2022 launch; no programme published now",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "commercial promenade",
+    "cinema",
+    "amphitheatre",
+    "floating jetty",
+    "beach club",
+    "public beach facilities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit published",
+   "escrow": "No escrow, bank guarantee or trust account published",
+   "progress": "Bisnis (1 Oct 2026): phase one soft opening 16 Oct 2026; Kontan (Apr 2023): piling and foundations under way",
+   "plans": "Unit types with storeys and building sizes; no floor plans",
+   "record": "Developer About page names Shila at Sawangan, Vasanta Eco Town and The Kaya resort",
+   "returns": "Launch marketing cited an 8% annual ROI; not described as guaranteed"
+  },
+  "positives": [
+   "Parent company listed on the Indonesia Stock Exchange",
+   "Phase one opening reported by national press",
+   "Named main contractor"
+  ],
+  "flags": [
+   {
+    "text": "Press reports gave phase one completion targets of end 2022 (Medcom, May 2021), end Q1 2023 for the first 60 shophouses (PropertiTerkini, Feb 2022) and December 2023 (Kontan, Apr 2023); Bisnis reported the phase one soft opening for 16 October 2026.",
+    "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+   }
+  ],
+  "sources": [
+   "https://mawatu.co.id/commercial-village",
+   "https://mawatu.co.id/faq",
+   "https://mawatu.co.id/about/",
+   "https://www.vasanta.co.id/mawatu",
+   "https://industri.kontan.co.id/news/vasanta-group-kembangkan-destinasi-wisata-di-labuan-bajo-lewat-proyek-mawatu",
+   "https://newgelora.thejakartapost.com/front-row/2022/03/04/mawatu-in-labuan-bajo-as-indonesias-new-tourism-gem",
+   "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo",
+   "https://www.medcom.id/properti/news-properti/9K551w3K-vasanta-bangun-proyek-wisata-terpadu-di-labuan-bajo",
+   "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/",
+   "https://www.ahp.id/?p=2955"
+  ]
  }
 ]

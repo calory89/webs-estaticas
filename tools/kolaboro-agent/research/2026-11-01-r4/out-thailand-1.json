@@ -2876,5 +2876,189 @@
    "https://siamglow.com/pattaya-project/copacabana-coral-reef/",
    "https://www.pemaproperty.com/en/our-projects/copacabana-coral-reef/"
   ]
+ },
+ {
+  "slug": "vibe-town-karon",
+  "name": "Vibe Town Karon",
+  "developer": "ESM Company Group",
+  "area": "Karon, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://vibekaron.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "also known as VIBE Downtown Karon (site FAQ)",
+   "freehold, pre-sale prices from $86,000; $3,300/m2",
+   "299 units in 2 eight-storey buildings, 26-52 m2",
+   "sales launch Q4 2026, completion Q4 2029",
+   "land owned by the developer (statement)",
+   "developer claims 9 completed projects and 1,500+ keys handed over",
+   "floor plans and price list on request"
+  ],
+  "note": "Pre-sale of 299 freehold units in two 8-storey buildings in Karon (also sold as VIBE Downtown Karon) from $86,000 with completion Q4 2029; the ONEP register lists its EIA report (256909-55, The Vibe Downtown, owner The Vibe Downtown Karon by ESM Co., Ltd.) as filed without approval and not yet built, floor plans are only on request, and the group's 9 completed projects are not named on the project site (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 86000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 299,
+   "payment_plan": "THB 200,000 reservation, then payments at construction start, foundations, structure, finishing and handover",
+   "price_per_m2": 3300
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": "No permit or EIA claim on the site. ONEP lists report 256909-55 'The Vibe Downtown' condominium, Karon, owner The Vibe Downtown Karon by ESM Co., Ltd., with no approval number or date and status 'not yet constructed'; selling began before EIA approval",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Sales launch stage; no progress published; ONEP status 'not yet constructed'",
+   "plans": "Floor plans and price list only on request (vibekaron.com and vibe-downtown.com)",
+   "record": "Site claims '9 completed projects, 1,500+ keys handed over' and 2 hotels managed (Grace Patong, Phoenix Karon) without naming completed projects; group site says 1,600+ keys developed. The group's first condo, Vibe Residence Karon, is at 7% structure (developer update 9 Jul 2026) with completion Q4 2028; ONEP lists Glow Mira Karon Beach hotel under another owner (A&J Assets), so delivery credits may include contractor work",
+   "returns": "No guaranteed return language"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16545"
+   },
+   {
+    "claim": "Project company The Vibe Downtown Karon by ESM Co., Ltd. is the owner",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16545"
+   },
+   {
+    "claim": "Construction not started (sales launch)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16545"
+   },
+   {
+    "claim": "Completion Q4 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibekaron.com/"
+   },
+   {
+    "claim": "299 units in 2 buildings of 8 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibe-downtown.com/"
+   },
+   {
+    "claim": "Price from $86,000 ($3,300/m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibekaron.com/"
+   },
+   {
+    "claim": "Land owned by the developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibekaron.com/"
+   },
+   {
+    "claim": "9 completed projects and 1,500+ keys handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibekaron.com/"
+   },
+   {
+    "claim": "Freehold within foreign quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibekaron.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibekaron.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "110/1 Phrabarami Road, Patong, Kathu, Phuket, Thailand",
+   "developer_company": "The Vibe Downtown Karon by ESM Co., Ltd. (project company per ONEP; registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 26,
+   "size_max_m2": 52,
+   "price_min": 86000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "THB 200,000 reservation, then payments at construction start, foundations, structure, finishing and handover",
+   "foreign_ownership": "Freehold within the foreign quota",
+   "rental_programme": "ESM Hospitality operates group hotels; no rental programme figures for this project",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two pools",
+    "sky garden",
+    "beach shuttle",
+    "98 parking spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Karon municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Price per m2 and stage payments published",
+   "Land size and construction area published (2-1-12.4 rai, 19,500 m2)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vibekaron.com/",
+   "https://vibe-downtown.com/",
+   "https://www.esm-companygroup.com/",
+   "https://www.viberesidencekaron.com/",
+   "https://vibe-residence.com/",
+   "https://inasia.consulting/developers/esm-development/",
+   "https://eia.onep.go.th/eia/detail?id=16545",
+   "https://eia.onep.go.th/site/eia"
+  ]
  }
 ]

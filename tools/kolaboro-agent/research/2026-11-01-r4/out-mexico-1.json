@@ -2838,5 +2838,197 @@
   "permit_number": null,
   "added": "2026-10-30",
   "verified_score": 0
+ },
+ {
+  "slug": "living-club-temozon-norte-calle-52",
+  "name": "Living Club pre-sale development, C. 52 x 69 Temozón Norte (project name not published)",
+  "developer": null,
+  "area": "Temozón Norte, Mérida, Yucatán (C. 52 x 69)",
+  "country": "Mexico",
+  "market": "Mérida",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte",
+  "docs_url": null,
+  "docs_listed": [
+   "36 apartments on 3 levels, 'Living Club' type",
+   "2BR + flex 83 m2 at MXN 3,200,000",
+   "estimated delivery August 2027 (title of listing says July 2027)",
+   "detailed specification and exclusions list",
+   "amenities: pool, pickleball, bar-grill terrace, TV room",
+   "bank credit, own funds and INFONAVIT accepted",
+   "agent Kraken Realty Group cites PROFECO registration 5151-2024"
+  ],
+  "note": "36-apartment 'Living Club' pre-sale at C. 52 x 69, Temozón Norte, Mérida, listed by Kraken Realty Group at MXN 3,200,000 for an 83 m2 two-bed with delivery August 2027; the unit count and amenities match Palmer Living Club (Concoord), which other agents list from MXN 2,330,000 with deliveries of May 2025 or July 2027, but no listing confirms the link. The PROFECO registration 5151-2024 the agent cites belongs in the register to 'Operadora OEA' for laundry services. No developer, licence, escrow, plans or progress are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 3200000,
+   "currency": "MXN",
+   "title": "Escritura (Mérida is outside the restricted zone; not stated)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 36,
+   "payment_plan": "Bank credit, own funds or INFONAVIT; no schedule published",
+   "price_per_m2": 38554,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion number published",
+   "escrow": "No escrow or fideicomiso stated",
+   "progress": "No progress published; listing says renders are illustrative",
+   "plans": "Room-by-room description only; no floor plan",
+   "record": "Developer not named in the Kraken listing. Goodlers names 'Concoord' as developer of the matching Palmer Living Club",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Agent is authorised under PROFECO registration 5151-2024",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "36 apartments on 3 levels",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+   },
+   {
+    "claim": "Estimated delivery August 2027 (URL and title say July 2027)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+   },
+   {
+    "claim": "Project is Palmer Living Club, 36 units, same amenities (inferred match)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grupobci.com/property/departamento-en-venta-al-norte-de-merida-palmer-living-club-temozon-norte"
+   },
+   {
+    "claim": "Palmer delivery May 2025 (Goodlers) vs July 2027 (AB Real Estate)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://goodlers.com/prop/merida/palmer"
+   },
+   {
+    "claim": "Palmer developed by Concoord",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://goodlers.com/prop/merida/palmer"
+   },
+   {
+    "claim": "2BR + flex 83 m2 at MXN 3,200,000; Palmer 1BR from MXN 2,330,000 and 2BR sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realestateab.com.mx/property/departamentos-en-venta-palmer-livin-club-temozo-norte-merida"
+   },
+   {
+    "claim": "INFONAVIT and bank credit accepted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+   },
+   {
+    "claim": "Developer has a PROFECO-registered sale contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_company": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": "2025-Q2 (Palmer, per Goodlers; link to this listing not confirmed)",
+   "unit_types": [
+    "1BR",
+    "2BR + flex"
+   ],
+   "size_min_m2": 52,
+   "size_max_m2": 83,
+   "price_min": 2330000,
+   "price_max": 3200000,
+   "currency": "MXN",
+   "payment_plan": "Bank credit, own funds or INFONAVIT",
+   "foreign_ownership": "Not stated; Mérida city is outside the restricted zone, so direct title is possible",
+   "amenities": [
+    "pool with sundeck",
+    "pickleball court",
+    "bar-grill terrace",
+    "TV room",
+    "gardens",
+    "security cameras",
+    "electric gate"
+   ],
+   "permit_authority": "Ayuntamiento de Mérida (Desarrollo Urbano)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Detailed specification and list of what is not included",
+   "Delivery month and unit count stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte",
+   "https://www.pincali.com/inmueble/departamento-en-preventa-jul2027-temozon-norte-temozon-norte",
+   "https://www.grupobci.com/property/departamento-en-venta-al-norte-de-merida-palmer-living-club-temozon-norte",
+   "https://www.realestateab.com.mx/property/departamentos-en-venta-palmer-livin-club-temozo-norte-merida",
+   "https://goodlers.com/prop/merida/palmer",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-30",
+  "verified_score": 0
  }
 ]

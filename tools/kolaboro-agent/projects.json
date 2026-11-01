@@ -2140,7 +2140,24 @@
    "name": "Magnum Resort Sanur",
    "developer": "Magnum Estate",
    "area": "Sanur",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "under construction",
+   "status": "active",
    "url": "https://magnumestate.com/projects/sanur",
+   "docs_url": "https://magnumestate.com/projects/sanur",
+   "permit_number": null,
+   "docs_listed": [
+    "from $531,000 (1BR 101 m2), 2BR from $1,050,000 (202 m2), penthouse 337 m2",
+    "projected ROI 11.6%, 'up to 12%' rental income, 7-8 year payback, 'Projections are estimates and may vary'",
+    "'from 100% potential value appreciation expected during the construction phase'",
+    "8,000 m2 of amenities, 2,000 m2 pool, residents' yacht",
+    "floor plans and private terms on request",
+    "developer page: PT Magnum Estate International, est. 2019, '8 projects completed & under construction', 575 units; 'Every project is built under its own Indonesian building permit (PBG)'",
+    "property ownership term 50 years and 0% instalments from 18 months (earlier check)"
+   ],
+   "note": "Oceanfront apartment resort in Sanur by Magnum Estate (site company PT Indonesia Capital Sanur), from $531,000 with an 11.6% projected ROI labelled as estimates. ANTARA reported in June 2025 that the AMDAL was issued in March 2025, the PBG was still in process and work had paused; WALHI Bali objected in Jan 2024 that building had started in May 2023 without AMDAL and overlapped the beach setback. Magnum reported foundation work on Block D in Oct 2026; delivery dates on portals ranged from 2025 to 2027 (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 531000,
     "currency": "USD",
@@ -2148,69 +2165,218 @@
     "lease_base": 50,
     "extension": null,
     "guaranteed_language": false,
+    "yield_pct": 11.6,
     "completion": "2027",
     "permit_claim": true,
-    "yield_pct": 11.6,
+    "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": "Magnum developer page: 'delivered 8 projects and 575 units since 2019' (also described as delivered or under construction); names Magnum Resort Berawa (190 m rooftop pool) as an operating project",
+    "developer_delivered": "Magnum developer page: '8 projects completed & under construction' and 575 units since 2019; names Magnum Resort Berawa as an operating project",
+    "units": 156,
     "payment_plan": "0% instalment plan from 18 months",
-    "price_per_m2": 5257
+    "price_per_m2": 5257,
+    "progress_updates": true
    },
-   "docs_url": "https://magnumestate.com/projects/sanur",
-   "docs_listed": [
-    "from $531,000 (1BR 101 m2), 2BR from $1,050,000, penthouse 337 m2",
-    "projected ROI 11.6% (9.5% year 1 to 13.5% year 5), 'projections are estimates'",
-    "property ownership term 50 years",
-    "0% instalment plan from 18 months",
-    "floor plans on request",
-    "developer page: 'every project is built under its own PBG' (no number)"
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Developer page: 'Every project is built under its own Indonesian building permit (PBG)', no number. ANTARA (25 Jun 2025) quoted a PT Indonesia Capital Sanur director: AMDAL approved by the Governor in March 2025, PBG 'in the final stage of issuance'. No later confirmation of PBG found.",
+    "escrow": null,
+    "progress": "NovAsia (17 Oct 2026) cites Magnum's October 2026 report of reinforcement for foundation tie beams on Block D; ANTARA (Jun 2025) reported a temporary halt to reconcile structural, MEP and architectural drawings.",
+    "plans": "'Full presentation, floor plan and private terms' on request.",
+    "record": "Developer page: '8 projects completed & under construction', 575 units; Magnum Resort Berawa named. Mix of delivered and unfinished projects is not broken down.",
+    "returns": "'Projected ROI 11.6%', 'Projections are estimates and may vary'; no guarantee wording. Also claims 'from 100%' value appreciation during construction."
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Every Magnum project is built under its own PBG",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://megapolitan.antaranews.com/berita/406769/magnum-estate-international-bangun-magnum-resort-sanur-bali"
+    },
+    {
+     "claim": "AMDAL environmental approval issued by the Governor of Bali in March 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://megapolitan.antaranews.com/berita/406769/magnum-estate-international-bangun-magnum-resort-sanur-bali"
+    },
+    {
+     "claim": "Construction started before AMDAL approval (from May 2023)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://betahita.id/news/detail/9794/walhi-bali-hotel-magnum-sanur-overlap-dengan-sempadan-pantai.html?v=1705784864"
+    },
+    {
+     "claim": "Site overlaps the beach setback by 3,692 m2 (WALHI reading of KA-ANDAL)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://walhibali.org/tidak-memiliki-amdal-walhi-desak-dlhk-hentikanpembangunan-hotel-magnum-residence-sanur/"
+    },
+    {
+     "claim": "Construction active on Block D foundations (Oct 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://novasia.estate/en/projects/magnum-resort-sanur/"
+    },
+    {
+     "claim": "Completion date (2025 / Q1 2026 on portals)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://novasia.estate/en/projects/magnum-resort-sanur/"
+    },
+    {
+     "claim": "8 projects and 575 units delivered since 2019",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://magnumestate.com/bali-real-estate-developer"
+    },
+    {
+     "claim": "Same developer's Berawa project had all permits",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://balitribune.co.id/content/dprd-bali-ungkap-magnum-resort-belum-kantongi-izin-wajib"
+    },
+    {
+     "claim": "Prices from $531,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://magnumestate.com/projects/sanur"
+    },
+    {
+     "claim": "Projected ROI 11.6%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://magnumestate.com/projects/sanur"
+    },
+    {
+     "claim": "Number of apartments (156 vs 144)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://novasia.estate/en/projects/magnum-resort-sanur/"
+    },
+    {
+     "claim": "Deposit protection or escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://magnumestate.com/projects/sanur"
+    }
    ],
-   "note": "Oceanfront apartment resort in Sanur by Magnum Estate (site operated by PT Indonesia Capital Sanur) from $531,000 with a 50-year ownership term, 18-month 0% instalments and an 11.6% projected ROI marked as estimates. Magnum says each project has its own PBG and names Magnum Resort Berawa among delivered work, but publishes no permit number, escrow, plans or Sanur progress (checked 31 Oct 2026)",
+   "facts": {
+    "developer_founded": 2019.0,
+    "developer_hq": "Kerobokan, Bali, Indonesia (Jl. Bumbak 156)",
+    "developer_company": "PT Magnum Estate International; project company PT Indonesia Capital Sanur (registration numbers not published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2023-05",
+    "handover_promised": "2027",
+    "original_handover": "2026-Q1",
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR penthouse"
+    ],
+    "size_min_m2": 101.0,
+    "size_max_m2": 337.0,
+    "price_min": 531000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": "0% instalments from 18 months",
+    "foreign_ownership": "Leasehold, 50-year ownership term stated (earlier check)",
+    "rental_programme": "Magnum in-house management; 11.6% projected ROI, up to 12% rental income",
+    "service_charge": null,
+    "brand": "Magnum",
+    "amenities": [
+     "2,000 m2 pool",
+     "beach lounge",
+     "spa with sauna and hammam",
+     "fitness centre",
+     "restaurant",
+     "coworking",
+     "residents' yacht",
+     "underground parking"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kota Denpasar government (PBG); AMDAL by Governor of Bali",
+    "brochure_url": null
+   },
    "positives": [
     "Developer with named operating projects in Bali",
-    "Ownership term (50 years) and instalment terms stated",
-    "Returns labelled as projections"
+    "Ownership term and instalment terms stated",
+    "Returns labelled as projections",
+    "AMDAL approval reported (March 2025)"
    ],
-   "evidence": {
-    "permit": "magnumestate.com/bali-real-estate-developer: 'Every project is built under its own Indonesian building permit (PBG)', no number; footer shows only an NPWP tax number for PT Indonesia Capital Sanur",
-    "escrow": null,
-    "progress": null,
-    "plans": "'View floor plan & prices' and 'Full presentation, floor plan and private terms' on request",
-    "record": "Projects page: 'has delivered 8 projects and 575 units since 2019'; Magnum Resort Berawa named",
-    "returns": "'Projected ROI 11.6%' and 'Projections are estimates and may vary'"
-   },
-   "status": "active",
    "flags": [
     {
-     "text": "Regulator action reported at the same developer's Berawa project: Bali authorities and DPRD Bali members stopped work in Aug 2025 over missing Amdal and PBG documents (Bali.live; no developer response in the report). Not about the Sanur project.",
-     "source": "https://bali.live/p/construction-of-magnum-resort-in-bali-halted-due-to-lack-of-documentation"
+     "text": "Regulator action at the same developer's Berawa project: on 25 Aug 2025 Bali DPRD Commission I and a provincial team stopped work and sealed the site, saying AMDAL, PBG and other permits were missing; Magnum's permit consultant said work was paused and permits were in process (Bali Tribune). Not about the Sanur project.",
+     "source": "https://balitribune.co.id/content/distop-dewan-bali-magnum-resort-berawa-janji-segera-lengkapi-perizinan"
+    },
+    {
+     "text": "WALHI Bali publicly urged the provincial environment office in Jan 2024 to stop construction at Magnum Residence Sanur, saying building began in May 2023 without an approved AMDAL and that the site overlaps the beach setback (reported by Betahita). The company later said AMDAL was approved in March 2025.",
+     "source": "https://betahita.id/news/detail/9794/walhi-bali-hotel-magnum-sanur-overlap-dengan-sempadan-pantai.html?v=1705784864"
     }
    ],
    "sources": [
     "https://bali.live/p/construction-of-magnum-resort-in-bali-halted-due-to-lack-of-documentation",
+    "https://balitribune.co.id/content/distop-dewan-bali-magnum-resort-berawa-janji-segera-lengkapi-perizinan",
+    "https://balitribune.co.id/content/dprd-bali-ungkap-magnum-resort-belum-kantongi-izin-wajib",
+    "https://betahita.id/news/detail/9794/walhi-bali-hotel-magnum-sanur-overlap-dengan-sempadan-pantai.html?v=1705784864",
     "https://magnumestate.com/bali-real-estate-developer",
+    "https://magnumestate.com/blog/magnum-estate-supports-government-in-bali",
     "https://magnumestate.com/projects",
-    "https://magnumestate.com/projects/sanur"
+    "https://magnumestate.com/projects/sanur",
+    "https://megapolitan.antaranews.com/berita/406769/magnum-estate-international-bangun-magnum-resort-sanur-bali",
+    "https://novasia.estate/en/projects/magnum-resort-sanur/",
+    "https://walhibali.org/tidak-memiliki-amdal-walhi-desak-dlhk-hentikanpembangunan-hotel-magnum-residence-sanur/",
+    "https://www.balipost.com/news/2025/08/25/483496/Diduga-Membangun-di-Kawasan-LSD,...html"
    ],
-   "disclosure": {
-    "permit": false,
-    "escrow": false,
-    "progress": false,
-    "plans": false,
-    "record": true,
-    "no_guaranteed_returns": true,
-    "score": 2,
-    "all_six": false
-   }
+   "verified_score": 0
   },
   {
    "slug": "manta-livin",
    "name": "Manta Livin",
    "developer": "Big Bali Group",
-   "area": "Uluwatu",
+   "area": "Uluwatu (Pecatu, Nyang Nyang)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "under construction",
+   "status": "active",
    "url": "https://bigbaligroup.com/manta-livin",
+   "docs_url": "https://bigbaligroup.com/manta-livin",
+   "permit_number": null,
+   "docs_listed": [
+    "unit layouts with room areas (Seaborne 30 m2, Swell 39 m2, Shell villa 45 m2, Haven villa 129 m2, Delmar villa 144 m2)",
+    "master plan stage 1: 85 apartments, 16 Haven villas, 3 Delmar villas, 2 Shell villas on 0.8 ha",
+    "current prices from 1.95 bln IDR (about $110,000), 30% first instalment",
+    "ROI 'from 11-12%' per type; payback 5-7 years",
+    "lease 25 years + 'guaranteed extension for 25 years'",
+    "'Pink zone, fully compliant with all legal and environmental standards'",
+    "partners named: Dijiwa Sanctuaries (management), Legends 3D (3D printing builder), BIMX Construction",
+    "authorised marketing site mantalivin-bali.com: '10% guaranteed ROI for the first 2 years', handover Q4 2027",
+    "project LinkedIn: land preparation, piling and drainage complete; completion targeted Q2 2027"
+   ],
+   "note": "3D-printed wellness resort of 85 apartments and 21 villas on a 0.8 ha cliff plot near Nyang Nyang by BIG BALI GROUP with Legends 3D, from 1.95 bln IDR (about $110,000) on a 25+25-year lease, managed by Dijiwa Sanctuaries. Layouts are published, but the authorised marketing site advertises a '10% guaranteed ROI for the first 2 years', handover dates differ (Q2 vs Q4 2027) and no permit number, escrow or delivered project is published (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 110000,
     "currency": "USD",
@@ -2218,46 +2384,19 @@
     "lease_base": 25,
     "extension": "+25 years 'guaranteed extension' (25+25)",
     "guaranteed_language": true,
+    "yield_pct": 12,
     "completion": "2027-Q4",
-    "permit_claim": false,
-    "yield_pct": 14,
+    "permit_claim": true,
+    "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
     "developer_delivered": null,
     "units": 106,
     "payment_plan": "30% first instalment, instalments up to 24 months",
-    "price_per_m2": 3667
+    "price_per_m2": 3667,
+    "progress_updates": false
    },
-   "docs_url": "https://bigbaligroup.com/manta-livin",
-   "docs_listed": [
-    "unit layouts with room areas (30-144 m2)",
-    "master plan stage 1: 85 apartments, 16 Haven villas, 3 Delmar villas, 2 Shell villas",
-    "current prices from $110,000 (1.95 bln IDR), 30% first instalment",
-    "ROI 10-14% per type",
-    "construction start Q2 2026, completion Q4 2027",
-    "lease 25 years + 25-year 'guaranteed extension'",
-    "'Guaranteed return' heading"
-   ],
-   "note": "3D-printed wellness resort of 106 apartments and villas on a Bukit cliff by BIG BALI GROUP, current prices from $110,000, construction from Q2 2026 to Q4 2027 and a 25+25-year lease. Layouts are published, but the page carries a 'Guaranteed return' heading and no permit number, escrow, progress or delivered projects (checked 31 Oct 2026)",
-   "positives": [
-    "Unit layouts with room areas published",
-    "Lease term and extension stated (25+25)"
-   ],
-   "evidence": {
-    "permit": "Only 'Pink zone, fully compliant with all legal and environmental standards'; no number",
-    "escrow": null,
-    "progress": "Only planned dates (construction start 2Q 2026)",
-    "plans": "Layout tabs with room-by-room areas for Seaborne, Swell, Shell, Haven and Delmar units",
-    "record": null,
-    "returns": "Page section headed 'Guaranteed return'; ROI 'from 10-14%'"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://bigbaligroup.com/manta-livin",
-    "https://offplan.so/projects/manta-livin-uluwatu"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -2267,7 +2406,155 @@
     "no_guaranteed_returns": false,
     "score": 1,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": "Only 'Pink zone, fully compliant with all legal and environmental standards' and 'We handle all construction permits' (BIG BALI GROUP homepage); no PBG number.",
+    "escrow": null,
+    "progress": "Project LinkedIn page (undated): 'Land preparation, piling, and drainage complete'; no dated report or figure on the developer site.",
+    "plans": "Layout tabs with room-by-room areas for each unit type and a stage 1 master plan.",
+    "record": "BIG BALI GROUP homepage says a previous project 'sold out in just 4 months' but names no completed project; project LinkedIn founded 2024.",
+    "returns": "Authorised marketing site: '10% guaranteed ROI for the first 2 years'; developer page earlier carried a 'Guaranteed return' heading; OffPlan lists 22% developer-projected ROI; homepage '22% per annum average investment return'."
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "10% guaranteed ROI for the first 2 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mantalivin-bali.com/?lang=en"
+    },
+    {
+     "claim": "Handover Q4 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://linkedin.com/company/manta-livin-bali-wellness-residences"
+    },
+    {
+     "claim": "Land preparation, piling and drainage complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://linkedin.com/company/manta-livin-bali-wellness-residences"
+    },
+    {
+     "claim": "Pink tourism zone, fully compliant with legal standards",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/manta-livin"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/manta-livin"
+    },
+    {
+     "claim": "Lease 25 years + guaranteed 25-year extension",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/manta-livin"
+    },
+    {
+     "claim": "Prices from 1.95 bln IDR",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/manta-livin"
+    },
+    {
+     "claim": "Starting price ($95,000 OffPlan / $99,000 marketing site / Rp 1.75 bn Rise Real)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://riserealbali.com/properties/manta-livin/"
+    },
+    {
+     "claim": "Average investment return 22% per annum",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/"
+    },
+    {
+     "claim": "Dijiwa Sanctuaries will manage the resort",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/manta-livin"
+    },
+    {
+     "claim": "Developer has completed projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/"
+    },
+    {
+     "claim": "Deposit protection or escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bigbaligroup.com/manta-livin"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2024.0,
+    "developer_hq": "Kerobokan Kelod, Bali, Indonesia (Jl. Bumbak No.80)",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR apartment",
+     "1BR villa",
+     "2BR villa",
+     "3-4BR villa"
+    ],
+    "size_min_m2": 30.0,
+    "size_max_m2": 188.0,
+    "price_min": 110000.0,
+    "price_max": 875000.0,
+    "currency": "USD",
+    "deposit_pct": 30.0,
+    "payment_plan": "30% first instalment, balance up to 24 months",
+    "foreign_ownership": "Leasehold 25 years + 25-year extension",
+    "rental_programme": "Managed by Dijiwa Sanctuaries; '10% guaranteed ROI for the first 2 years' (marketing partner), ROI 11-12% (developer)",
+    "service_charge": null,
+    "brand": "Dijiwa Sanctuaries (operator)",
+    "amenities": [
+     "spa with water practices",
+     "restaurant and lounge",
+     "yoga zone",
+     "swimming pool",
+     "Manta Bar",
+     "24/7 hotel-style service",
+     "1,000 m2 parking",
+     "private filtered wells"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Unit layouts with room areas published",
+    "Lease term and extension stated (25+25)",
+    "Operator, builder and design partners named"
+   ],
+   "flags": [],
+   "sources": [
+    "https://bigbaligroup.com/",
+    "https://bigbaligroup.com/manta-livin",
+    "https://linkedin.com/company/manta-livin-bali-wellness-residences",
+    "https://mantalivin-bali.com/?lang=en",
+    "https://offplan.so/projects/manta-livin-uluwatu",
+    "https://riserealbali.com/properties/manta-livin/"
+   ],
+   "verified_score": 0
   },
   {
    "slug": "nara-villas",

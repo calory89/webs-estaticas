@@ -1,0 +1,422 @@
+[
+ {
+  "slug": "cocobay-da-nang",
+  "name": "Cocobay Da Nang",
+  "developer": "Empire Group",
+  "status": "website dead",
+  "stage": "under construction",
+  "area": "Hoa Hai ward, Ngu Hanh Son, Da Nang",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "url": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html",
+  "docs_url": "https://thoibaotaichinhvietnam.vn/sieu-du-an-cocobay-sap-duoc-tinh-lai-mot-phan-gia-dat-183136.html",
+  "permit_number": null,
+  "docs_listed": [
+   "no live developer project page: cocobay.vn now carries a generic page plus menus for unrelated projects (Sun Glory, Sun Galaxy, The Fullton); empiregroup.vn has an expired SSL certificate",
+   "2016 to 2019 marketing promised a 12% annual guaranteed return for 8 years (press)",
+   "May 2024 restart schedule sent by Thanh Do JSC to Da Nang authorities (press), with block completions from Oct 2024 to Jan 2029"
+  ],
+  "note": "Condotel and entertainment complex (VND 11,000bn, reported as 31 to 51 ha) by Thanh Do Investment Development and Construction JSC (Empire Group) that stopped paying its 12% guaranteed return to about 1,700 buyers from 2020 and has been stalled since early 2022; a May 2024 restart plan was not carried out and Sept 2025 press describes unfinished, deteriorating blocks while Da Nang recalculates the land price to collect unpaid land charges. The city says the project never received investment policy approval, so buyers cannot yet get title certificates. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 12,
+   "completion": "2029-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Part of Cocobay (about 3,000 of a planned 10,000 rooms) opened from 2017, per VnExpress 2019; no other delivered projects stated",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 33000000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published by the developer. Press cites a 1:500 plan amendment (Decision 593/QD-UBND, 1 Feb 2019) and an architecture opinion (2328/SXD-QHKT, 2 Apr 2019), but Tuoi Tre reports the city found the project never received investment policy approval",
+   "escrow": "Nothing published; returns were paid to buyers' banks under three-way loan agreements, which is not deposit protection",
+   "progress": "No developer updates. Independent press: work stopped from early 2022; Sept 2025 site visit found unfinished, rusting blocks and no visible change after the May 2024 restart plan",
+   "plans": "No unit plans published",
+   "record": "No track record published; the only delivered work is the partly opened Cocobay itself",
+   "returns": "Sold with a 12% per year guaranteed return (8 years, until 2026), which the developer stopped paying from 2020"
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "independent"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Buyers guaranteed a 12% annual return for 8 years",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-developer-threatens-to-cancel-unsettled-contracts-4033272.html"
+   },
+   {
+    "claim": "Developer stopped paying guaranteed returns to about 1,700 buyers from 2020",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+   },
+   {
+    "claim": "Project legally approved (1:500 plan amendment Decision 593/QD-UBND of 1 Feb 2019)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://reatimes.vn/da-nang-okayed-cocobay-turning-condotels-to-apartments-202191206163729079.htm"
+   },
+   {
+    "claim": "Project has investment policy approval allowing title certificates for buyers",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.vietnam.vn/sieu-du-an-cocobay-sieu-sao-bong-da-ronaldo-tung-quang-ba-se-thong-tu-quy-1-2026"
+   },
+   {
+    "claim": "Condotel buyers hold title",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://reatimes.vn/da-nang-okayed-cocobay-turning-condotels-to-apartments-202191206163729079.htm"
+   },
+   {
+    "claim": "Construction restarts from May 2024 with blocks completed between Oct 2024 and Jan 2029",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://thoibaotaichinhvietnam.vn/sieu-du-an-cocobay-sap-duoc-tinh-lai-mot-phan-gia-dat-183136.html"
+   },
+   {
+    "claim": "Site work is ongoing",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html"
+   },
+   {
+    "claim": "10,000 rooms planned, about 3,000 built (2019)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+   },
+   {
+    "claim": "Developer is Thanh Do Investment Development and Construction JSC (Empire Group)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html"
+   },
+   {
+    "claim": "Developer financially sound (losses since 2017, VND 10.17 trillion of debt obligations as of 2018)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+   },
+   {
+    "claim": "Developer may cancel buyer contracts unilaterally (notices Dec 2019 and 12 Mar 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dantri.com.vn/bat-dong-san/hien-trang-cocobay-sieu-du-an-dinh-dam-mot-thoi-o-da-nang-20240319180401592.htm"
+   },
+   {
+    "claim": "Official project website still live",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cocobay.vn/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Hanoi, Vietnam",
+   "developer_company": "Thanh Do Investment Development and Construction JSC (Cong ty CP Dau tu Phat trien va Xay dung Thanh Do), Empire Group",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2016",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "condotel",
+    "apartment",
+    "shophouse",
+    "townhouse",
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Developer-run condotel rental with 12% guaranteed annual return, suspended from 2020",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beachfront location on the Da Nang to Hoi An coastal road",
+    "indoor and outdoor performance stages",
+    "tourism square",
+    "walking street",
+    "hotels"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Da Nang People's Committee and Department of Construction",
+   "brochure_url": null
+  },
+  "positives": [
+   "Da Nang listed the project among 15 whose land and legal issues it aims to resolve, targeted for Q1 2026"
+  ],
+  "flags": [
+   {
+    "text": "VnExpress reported in Nov 2019 that Empire Group told about 1,700 buyers it would stop paying the 12% guaranteed annual return from 2020, leaving many to service bank loans themselves.",
+    "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+   },
+   {
+    "text": "VnExpress reported accumulated losses of VND 134bn and debt obligations of VND 10.17 trillion as of 2018.",
+    "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+   },
+   {
+    "text": "Dan Tri reported that on 12 March 2024 Thanh Do JSC notified buyers it was unilaterally terminating sale contracts while restructuring.",
+    "source": "https://dantri.com.vn/bat-dong-san/hien-trang-cocobay-sieu-du-an-dinh-dam-mot-thoi-o-da-nang-20240319180401592.htm"
+   },
+   {
+    "text": "Tuoi Tre (via vietnam.vn) reported the Da Nang environment department found the project had not received investment policy approval, so there was no legal basis to issue title certificates to apartment buyers; it is among 15 projects named in Government Inspectorate conclusion 2852/2012 with land charges being recalculated.",
+    "source": "https://www.vietnam.vn/sieu-du-an-cocobay-sieu-sao-bong-da-ronaldo-tung-quang-ba-se-thong-tu-quy-1-2026"
+   },
+   {
+    "text": "VietnamFinance reported in Sept 2025 that the site remained abandoned, with unfinished blocks and rusting structures, despite a restart planned for May 2024.",
+    "source": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html"
+   }
+  ],
+  "sources": [
+   "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html",
+   "https://e.vnexpress.net/news/business/companies/da-nang-condotel-developer-threatens-to-cancel-unsettled-contracts-4033272.html",
+   "https://reatimes.vn/da-nang-okayed-cocobay-turning-condotels-to-apartments-202191206163729079.htm",
+   "https://doanhnghiephoinhap.vn/cocobay-da-nang-vao-cuoc-choi-moi-43243.html",
+   "https://dantri.com.vn/bat-dong-san/hien-trang-cocobay-sieu-du-an-dinh-dam-mot-thoi-o-da-nang-20240319180401592.htm",
+   "https://www.vietnam.vn/sieu-du-an-cocobay-sieu-sao-bong-da-ronaldo-tung-quang-ba-se-thong-tu-quy-1-2026",
+   "https://viettimes.vn/da-nang-xac-dinh-lai-gia-dat-hang-loat-du-an-bi-thanh-tra-post183887.html",
+   "https://thoibaotaichinhvietnam.vn/sieu-du-an-cocobay-sap-duoc-tinh-lai-mot-phan-gia-dat-183136.html",
+   "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html",
+   "https://cocobay.vn/"
+  ]
+ },
+ {
+  "slug": "fortis-residences-makati",
+  "name": "Fortis Residences",
+  "developer": "DMCI Homes (DMCI Holdings)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "2250 Chino Roces Avenue, Makati, Metro Manila",
+  "country": "Philippines",
+  "market": "Philippines",
+  "url": "https://www.dmcihomes.com/fortis-residences",
+  "docs_url": "https://www.dmcihomes.com/fortis-residences",
+  "permit_number": "LS No. 355, DHSUD NCR AA-2022/06/4071 (as published by DMCI sales channels)",
+  "docs_listed": [
+   "price list per unit type, PHP 14.394m to 40.16m",
+   "15 unit layouts 1BR to 3BR with gross floor areas 55.5 to 154 sqm",
+   "monthly construction progress % with dated photos, Sept 2022 (0.24%) to June 2026 (46.40%)",
+   "brochure and AVP",
+   "DHSUD License to Sell and registration numbers (sales pages)",
+   "payment terms 5% spot, 25% downpayment, 70% bank or in-house financing (sales pages)",
+   "turnover December 2027"
+  ],
+  "note": "36-residential-level, 576-unit DMCI Homes Exclusive tower on a 7,200 sqm site in Makati; topped off on 28 Oct 2025 (Philstar), with the developer's own tracker at 46.40% complete in June 2026 and turnover set for December 2027. Prices run PHP 14.4m to 40.2m; DHSUD records mirrored on REN.PH show active Licenses to Sell, although the number DMCI's sales pages print (LS No. 355) differs from the registry's PLS 335. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 14394000,
+   "currency": "PHP",
+   "title": "condominium unit title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "LS No. 355, DHSUD NCR AA-2022/06/4071",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 46.4,
+   "progress_updates": true,
+   "developer_delivered": "DMCI Homes, property arm of PSE-listed DMCI Holdings; Fortis is the second DMCI Homes Exclusive project after Oak Harbor Residences (Philstar)",
+   "units": 576,
+   "payment_plan": "5% spot, 25% downpayment to Nov 2027, 70% balance via bank or in-house financing",
+   "price_per_m2": 250000
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "DMCI sales pages print LS No. 355 and DHSUD NCR AA-2022/06/4071. REN.PH (DHSUD public records) lists three active LTS for Fortis Residences: PLS 335 (23 May 2022, expires 30 Jun 2030), LS 0000040 (10 May 2023) and LS 0001143 (30 Apr 2025). The project is licensed, but the printed number 355 does not match the registry's 335",
+   "escrow": "No escrow or deposit protection published; payments go to the developer under PD 957 rules",
+   "progress": "Official page lists monthly % with dated photos up to 46.40% (June 2026); Philstar reported structural topping-off on 28 Oct 2025",
+   "plans": "Official page lists 15 unit types with gross floor areas and price ranges; brochure linked",
+   "record": "DMCI Homes is the property arm of PSE-listed DMCI Holdings; Philstar names Oak Harbor Residences as the first DMCI Homes Exclusive project",
+   "returns": "No rental guarantee or yield figure on official or sales pages"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Project holds a DHSUD License to Sell",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Fortis+Residences"
+   },
+   {
+    "claim": "License to Sell number is LS No. 355",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Fortis+Residences"
+   },
+   {
+    "claim": "Structure topped off (37 storeys) in October 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+   },
+   {
+    "claim": "Construction 46.40% complete as of June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dmcihomes.com/fortis-residences"
+   },
+   {
+    "claim": "Turnover starts December 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+   },
+   {
+    "claim": "576 units in total",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+   },
+   {
+    "claim": "Average price PHP 250,000 per sqm",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+   },
+   {
+    "claim": "Prices from PHP 14.394m to 40.16m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dmcihomes.com/fortis-residences"
+   },
+   {
+    "claim": "Developer is part of listed DMCI Holdings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+   },
+   {
+    "claim": "Licensed developer entity is DMCI Project Developers, Inc. with DMC Estate Development Ventures, Inc.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Fortis+Residences"
+   },
+   {
+    "claim": "Buyer deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dmcihomes.com/fortis-residences"
+   },
+   {
+    "claim": "About 14% of units sold by Oct 2025; 480 units still available Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dmcisales.com/p/fortis-residences.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Makati, Philippines",
+   "developer_company": "DMCI Project Developers, Inc. / DMC Estate Development Ventures, Inc. (per DHSUD LTS records)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent DMCI Holdings, Inc. listed on the Philippine Stock Exchange",
+   "construction_start": "2022-09",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 55.5,
+   "size_max_m2": 154,
+   "price_min": 14394000,
+   "price_max": 40160000,
+   "currency": "PHP",
+   "deposit_pct": 30,
+   "payment_plan": "5% spot plus 25% downpayment, 70% balance bank or in-house financing",
+   "foreign_ownership": "Condominium unit; Philippine law caps foreign ownership at 40% of a condominium project",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "DMCI Homes Exclusive",
+   "amenities": [
+    "5 basement parking levels",
+    "Lumiventt design technology",
+    "EV charging stations",
+    "water recycling facility",
+    "green building certification pursued",
+    "near Magallanes MRT"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell); Makati City (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Monthly progress % with dated photos published since Sept 2022",
+   "Topping-off independently reported by national press",
+   "Active DHSUD Licenses to Sell found in registry mirror",
+   "Full price list by unit type",
+   "Listed parent company"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.dmcihomes.com/fortis-residences",
+   "https://www.dmcisales.com/p/fortis-residences.html",
+   "https://www.dmcisalesph.com/fortis-residences.html",
+   "https://propertymart.ph/listings/fortis-residences/",
+   "https://ren.ph/verify/lts?q=Fortis+Residences",
+   "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+  ]
+ }
+]

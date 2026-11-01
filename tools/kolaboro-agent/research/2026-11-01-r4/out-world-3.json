@@ -641,5 +641,403 @@
    "https://en.mdrealty.me/2025/08/04/lustica-bay-over-600-million-investment/",
    "https://www.omniacapitalgroup.com/en/developments/the-peaks-lustica-bay"
   ]
+ },
+ {
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "developer": "Not named",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Dubovica (near Mega Mall), Budva",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "url": "https://realting.com/montenegro/new-buildings/28035",
+  "docs_url": "https://value1property.com/en/buy/complex/new-residential-complex-in-dubovica-budva/",
+  "permit_number": null,
+  "docs_listed": [
+   "5 buildings of 34 apartments each (170 units), 6 floors",
+   "unit sizes 30.4 to 174.91 m2; studios from EUR 85,120, 1BR from EUR 129,332, 2BR from EUR 308,736, penthouses from EUR 559,712; garage from EUR 21,000",
+   "payment 50% first instalment, 25% on structure, 10% facade, 10% tiling, 5% keys; '2-year interest-free instalment plan'",
+   "completion June 2027 (older listings) vs December 2027 (newer listings)",
+   "statement that the land is owned by the investor",
+   "marketing name QUART used by several agencies"
+  ],
+  "note": "170-apartment, five-building complex in Dubovica, Budva, marketed by several agencies (Value.ONE, Montenegro Genesis, Home4You) and called QUART by some, from EUR 85,120 for a 30 m2 studio. Buyers pay 50% upfront with no escrow or bank guarantee mentioned, the developer is never named, and completion has moved from June 2027 to December 2027 between listings; one agent says the first building is already built. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 85120,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 170,
+   "payment_plan": "50% first instalment, 25% after structure, 10% after facade, 10% after tiling, 5% on handover",
+   "price_per_m2": 2837
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or investor named on any of the agency listings",
+   "escrow": "None stated; 50% is due upfront before structural completion; only claim is that 'land is owned by the investor'",
+   "progress": "No dated photos or % published; one agency offers viewings 'in an already built building', but which building and what stage is not stated",
+   "plans": "No floor plans on the listings; one agency offers plans on request by phone",
+   "record": "Developer not named, no track record",
+   "returns": "No guarantee, but agencies advertise 'expected price increase of 30-40% after completion'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Five buildings with 34 apartments each",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realting.com/montenegro/new-buildings/28035"
+   },
+   {
+    "claim": "Completion June 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/"
+   },
+   {
+    "claim": "Land is owned by the investor",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.value1estates.com/object/2672"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realting.com/montenegro/new-buildings/28035"
+   },
+   {
+    "claim": "Developer identified and registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montenegrogenesis.com/catalog/novyj-zhiloj-kompleks-quart-v-budve/"
+   },
+   {
+    "claim": "Studios from EUR 85,120 (30 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antarex.me/apartments-in-new-complex-with-swimming-pool-in-budva-lota7-527-0"
+   },
+   {
+    "claim": "Price from USD 100,475 (Realting header) vs USD 165,072 lowest in unit table",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realting.com/montenegro/new-buildings/28035"
+   },
+   {
+    "claim": "Distance to sea 800 m vs 1,500 m depending on listing",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://value1property.com/en/buy/complex/new-residential-complex-in-dubovica-budva/"
+   },
+   {
+    "claim": "Expected 30-40% price growth after completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antarex.me/apartments-in-new-complex-with-swimming-pool-in-budva-lota7-527-0"
+   },
+   {
+    "claim": "Buyers exempt from property transfer tax",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/"
+   },
+   {
+    "claim": "Deposits protected by escrow or guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realting.com/montenegro/new-buildings/28035"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": "2027-Q2",
+   "delay_months": 6,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 30.4,
+   "size_max_m2": 174.91,
+   "price_min": 85120,
+   "price_max": 559712,
+   "currency": "EUR",
+   "deposit_pct": 50,
+   "payment_plan": "50/25/10/10/5 tied to structure, facade, tiling and keys",
+   "foreign_ownership": "Freehold apartments can be bought by foreigners in Montenegro",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "fitness and yoga area",
+    "spa",
+    "two-level underground parking",
+    "gated and guarded grounds"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Budva / Montenegro Ministry of Spatial Planning (construction notice)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Price list with sizes published",
+   "Remaining 50% tied to construction milestones"
+  ],
+  "flags": [
+   {
+    "text": "Completion date has moved from June 2027 in 2025 listings to December 2027 in 2026 listings without explanation.",
+    "source": "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/"
+   },
+   {
+    "text": "50% of the price is due upfront and no developer, permit or deposit protection is named on any listing.",
+    "source": "https://realting.com/montenegro/new-buildings/28035"
+   }
+  ],
+  "sources": [
+   "https://realting.com/montenegro/new-buildings/28035",
+   "https://value1property.com/en/buy/complex/new-residential-complex-in-dubovica-budva/",
+   "https://en.value1estates.com/object/2672",
+   "https://antarex.me/apartments-in-new-complex-with-swimming-pool-in-budva-lota7-527-0",
+   "https://montenegrogenesis.com/catalog/novyj-zhiloj-kompleks-quart-v-budve/",
+   "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/",
+   "http://2home.me/sr-latin/offers/5deeaec5-8d6f-4c40-80ab-b5d890d89498/"
+  ]
+ },
+ {
+  "slug": "boka-place-porto-montenegro",
+  "name": "Boka Place",
+  "developer": "Porto Montenegro (residences managed by SIRO / Kerzner International)",
+  "status": "completed",
+  "stage": "completed",
+  "area": "Porto Montenegro, Tivat",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "url": "https://portomontenegro.com/real-estate/boka-place/",
+  "docs_url": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "brochure (June 2026, 34 pages): 1BR from EUR 265,000, 2BR from EUR 347,000, three-bedroom duplexes",
+   "144 SIRO-managed residences and 69 private residences, 7,400 m2 retail, 183 parking spaces (agency summary)",
+   "SIRO hotel (Kerzner) opened to guests 28 Apr 2025; Boka Place public opening 23 May 2025",
+   "'limited collection of SIRO-managed residences available for imminent handover' (June 2026 page)",
+   "M-Residences rental management scheme and SIRO managed rental pool",
+   "Montenegro citizenship-by-investment wording in brochure"
+  ],
+  "note": "Boka Place, the second Porto Montenegro neighbourhood with 144 SIRO-managed and 69 private residences around a new retail square, opened in May 2025 alongside Kerzner's SIRO hotel, so the project is completed; remaining managed units are sold as 'imminent handover' from EUR 265,000 (1BR). Developer Adriatic Marinas d.o.o. (Investment Corporation of Dubai) had built over 440 apartments at Porto Montenegro by 2024. No permit number or escrow statement is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 265000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": true,
+   "developer_delivered": "Porto Montenegro had over 440 apartments, a 450-berth marina, 80 retail units and the Regent hotel built by July 2024 (RICS Modus); Boka Place and SIRO hotel opened 2025",
+   "units": 213,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or licence number on the developer pages or brochure",
+   "escrow": "No escrow or deposit protection stated; units are now essentially complete stock",
+   "progress": "Completed: SIRO hotel opened 28 Apr 2025 (Kerzner press release) and Boka Place opened 23 May 2025 (Montenegrobusiness)",
+   "plans": "Brochure and pages describe unit types and starting prices but contain no floor plans; one agency lists sizes 45 to 199.3 m2",
+   "record": "RICS Modus (independent) reports 440+ apartments, marina and Regent hotel built at Porto Montenegro by 2024",
+   "returns": "Managed rental pool and M-Residences programme described without any guaranteed return or yield figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Delivery scheduled for 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://montenegrobusiness.eu/boka-place-launches-new-urban-lifestyle-hub-with-exciting-opening-weekend/"
+   },
+   {
+    "claim": "SIRO Boka Place hotel open to guests",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kerznercommunications.com/siro-boka-place-montenegro-begins-welcoming-guests/?from=kerzner-international&lang=eng"
+   },
+   {
+    "claim": "213 managed and private residences in Boka Place",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ww3.rics.org/uk/en/modus/built-environment/commercial-real-estate/porto-montenegro.html"
+   },
+   {
+    "claim": "Porto Montenegro has built 440+ apartments and is about 35% developed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ww3.rics.org/uk/en/modus/built-environment/commercial-real-estate/porto-montenegro.html"
+   },
+   {
+    "claim": "Over 95% sold or reserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.jamesedition.com/stories/?p=47745"
+   },
+   {
+    "claim": "SIRO residences still available for 'imminent handover' in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://portomontenegro.com/real-estate/boka-place/siro-residences/"
+   },
+   {
+    "claim": "1BR from EUR 265,000 and 2BR from EUR 347,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf"
+   },
+   {
+    "claim": "Starting price EUR 410,000 (JamesEdition)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf"
+   },
+   {
+    "claim": "Agency finish date 30 Apr 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.mbroker-realestate.com/boka-place-an-urban-quarter-in-the-heart-of-porto-montenegro-en-3.1"
+   },
+   {
+    "claim": "Building permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://portomontenegro.com/real-estate/boka-place/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Tivat, Montenegro",
+   "developer_company": "Adriatic Marinas d.o.o. (Porto Montenegro), owned by Investment Corporation of Dubai",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 440,
+   "listed_or_audited": "Adriatic Marinas 2025 financials reported in Montenegrin press; owner is Dubai's state investment fund",
+   "construction_start": null,
+   "handover_promised": "2025-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 199.3,
+   "price_min": 265000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; brochure links managed units to Montenegro citizenship by investment",
+   "rental_programme": "SIRO managed rental pool and M-Residences rental management; no figures",
+   "service_charge": null,
+   "brand": "SIRO (Kerzner International)",
+   "amenities": [
+    "residents-only pool",
+    "SIRO fitness and recovery labs",
+    "rooftop pool",
+    "central square with retail",
+    "cinema",
+    "Voli market",
+    "parking with EV charging",
+    "marina access"
+   ],
+   "lat": 42.434,
+   "lng": 18.692,
+   "permit_authority": "Montenegro Ministry of Spatial Planning / Municipality of Tivat",
+   "brochure_url": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf"
+  },
+  "positives": [
+   "Project completed and hotel operating since 2025",
+   "Master developer with independently reported delivered stock",
+   "Starting prices published in brochure",
+   "Named international hotel and residence manager",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://portomontenegro.com/real-estate/boka-place/",
+   "https://portomontenegro.com/real-estate/boka-place/siro-residences/",
+   "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf",
+   "https://www.kerznercommunications.com/siro-boka-place-montenegro-begins-welcoming-guests/?from=kerzner-international&lang=eng",
+   "https://montenegrobusiness.eu/boka-place-launches-new-urban-lifestyle-hub-with-exciting-opening-weekend/",
+   "https://ww3.rics.org/uk/en/modus/built-environment/commercial-real-estate/porto-montenegro.html",
+   "https://www.mbroker-realestate.com/boka-place-an-urban-quarter-in-the-heart-of-porto-montenegro-en-3.1",
+   "https://portomontenegro.com/blog/siro-boka-place-reservations/",
+   "https://www.jamesedition.com/stories/?p=47745"
+  ]
  }
 ]

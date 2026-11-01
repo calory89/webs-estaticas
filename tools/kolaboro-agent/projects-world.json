@@ -8702,15 +8702,18 @@
    "docs_url": null,
    "permit_number": null,
    "docs_listed": [
-    "freehold within foreign quota",
-    "pre-sale prices from $86,000; $3,300/m2",
-    "299 units, completion Q4 2029",
-    "payment by construction stage after THB 200,000 reservation",
-    "layouts shown are from Vibe Residence",
-    "floor plans on request"
+    "also known as VIBE Downtown Karon (site FAQ)",
+    "freehold, pre-sale prices from $86,000; $3,300/m2",
+    "299 units in 2 eight-storey buildings, 26-52 m2",
+    "sales launch Q4 2026, completion Q4 2029",
+    "land owned by the developer (statement)",
+    "developer claims 9 completed projects and 1,500+ keys handed over",
+    "floor plans and price list on request"
    ],
-   "note": "Second ESM Company Group condo in Karon, pre-sale from $86,000 ($3,300/m2) with completion Q4 2029 and stage payments; floor plans only on request, the group's first project completes Q4 2028, and no permit, escrow or progress is published (checked 31 Oct 2026)",
+   "note": "Pre-sale of 299 freehold units in two 8-storey buildings in Karon (also sold as VIBE Downtown Karon) from $86,000 with completion Q4 2029; the ONEP register lists its EIA report (256909-55, The Vibe Downtown, owner The Vibe Downtown Karon by ESM Co., Ltd.) as filed without approval and not yet built, floor plans are only on request, and the group's 9 completed projects are not named on the project site (checked 1 Nov 2026)",
    "added": "2026-10-28",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": 86000,
     "currency": "USD",
@@ -8718,7 +8721,8 @@
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2029",
+    "yield_pct": null,
+    "completion": "2029-Q4",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
@@ -8727,24 +8731,9 @@
     "developer_delivered": null,
     "units": 299,
     "payment_plan": "THB 200,000 reservation, then payments at construction start, foundations, structure, finishing and handover",
-    "price_per_m2": 3300
+    "price_per_m2": 3300,
+    "progress_updates": null
    },
-   "positives": [
-    "Price per m2 and stage payments published"
-   ],
-   "evidence": {
-    "permit": "No permit, licence or approval number published on the pages opened",
-    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
-    "progress": "Not started (sales launch); no progress published",
-    "plans": "Floor plans only on request; layouts shown belong to another project",
-    "record": "Developer's first project Vibe Residence Karon completes Q4 2028; nothing delivered named",
-    "returns": "No guaranteed return language"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://vibekaron.com/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -8754,7 +8743,139 @@
     "no_guaranteed_returns": true,
     "score": 1,
     "all_six": false
-   }
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "registry",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "verified_score": 1,
+   "evidence": {
+    "permit": "No permit or EIA claim on the site. ONEP lists report 256909-55 'The Vibe Downtown' condominium, Karon, owner The Vibe Downtown Karon by ESM Co., Ltd., with no approval number or date and status 'not yet constructed'; selling began before EIA approval",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+    "progress": "Sales launch stage; no progress published; ONEP status 'not yet constructed'",
+    "plans": "Floor plans and price list only on request (vibekaron.com and vibe-downtown.com)",
+    "record": "Site claims '9 completed projects, 1,500+ keys handed over' and 2 hotels managed (Grace Patong, Phoenix Karon) without naming completed projects; group site says 1,600+ keys developed. The group's first condo, Vibe Residence Karon, is at 7% structure (developer update 9 Jul 2026) with completion Q4 2028; ONEP lists Glow Mira Karon Beach hotel under another owner (A&J Assets), so delivery credits may include contractor work",
+    "returns": "No guaranteed return language"
+   },
+   "claims": [
+    {
+     "claim": "EIA approved",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=16545"
+    },
+    {
+     "claim": "Project company The Vibe Downtown Karon by ESM Co., Ltd. is the owner",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=16545"
+    },
+    {
+     "claim": "Construction not started (sales launch)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=16545"
+    },
+    {
+     "claim": "Completion Q4 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
+    },
+    {
+     "claim": "299 units in 2 buildings of 8 floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibe-downtown.com/"
+    },
+    {
+     "claim": "Price from $86,000 ($3,300/m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
+    },
+    {
+     "claim": "Land owned by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
+    },
+    {
+     "claim": "9 completed projects and 1,500+ keys handed over",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
+    },
+    {
+     "claim": "Freehold within foreign quota",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2016.0,
+    "developer_hq": "110/1 Phrabarami Road, Patong, Kathu, Phuket, Thailand",
+    "developer_company": "The Vibe Downtown Karon by ESM Co., Ltd. (project company per ONEP; registration number not published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2029-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR"
+    ],
+    "size_min_m2": 26.0,
+    "size_max_m2": 52.0,
+    "price_min": 86000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": "THB 200,000 reservation, then payments at construction start, foundations, structure, finishing and handover",
+    "foreign_ownership": "Freehold within the foreign quota",
+    "rental_programme": "ESM Hospitality operates group hotels; no rental programme figures for this project",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "two pools",
+     "sky garden",
+     "beach shuttle",
+     "98 parking spaces"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "ONEP (EIA approval); Karon municipality (building permit)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Price per m2 and stage payments published",
+    "Land size and construction area published (2-1-12.4 rai, 19,500 m2)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://eia.onep.go.th/eia/detail?id=16545",
+    "https://eia.onep.go.th/site/eia",
+    "https://inasia.consulting/developers/esm-development/",
+    "https://vibe-downtown.com/",
+    "https://vibe-residence.com/",
+    "https://vibekaron.com/",
+    "https://www.esm-companygroup.com/",
+    "https://www.viberesidencekaron.com/"
+   ]
   },
   {
    "slug": "saraya-beach-lombok",
@@ -14963,47 +15084,193 @@
    "slug": "living-club-temozon-norte-calle-52",
    "name": "Living Club pre-sale development, C. 52 x 69 Temozón Norte (project name not published)",
    "developer": null,
-   "area": "Temozón Norte, Mérida, Yucatán",
+   "area": "Temozón Norte, Mérida, Yucatán (C. 52 x 69)",
    "country": "Mexico",
    "market": "Mérida",
+   "stage": "off-plan",
+   "status": "active",
    "url": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte",
    "docs_url": null,
-   "permit_number": null,
    "docs_listed": [
-    "estimated delivery date",
-    "unit specs"
+    "36 apartments on 3 levels, 'Living Club' type",
+    "2BR + flex 83 m2 at MXN 3,200,000",
+    "estimated delivery August 2027 (title of listing says July 2027)",
+    "detailed specification and exclusions list",
+    "amenities: pool, pickleball, bar-grill terrace, TV room",
+    "bank credit, own funds and INFONAVIT accepted",
+    "agent Kraken Realty Group cites PROFECO registration 5151-2024"
    ],
-   "note": "36-apartment 'Living Club' development in pre-sale via Kraken Realty Group; estimated delivery August 2027 (URL says July 2027).",
-   "added": "2026-10-30",
+   "note": "36-apartment 'Living Club' pre-sale at C. 52 x 69, Temozón Norte, Mérida, listed by Kraken Realty Group at MXN 3,200,000 for an 83 m2 two-bed with delivery August 2027; the unit count and amenities match Palmer Living Club (Concoord), which other agents list from MXN 2,330,000 with deliveries of May 2025 or July 2027, but no listing confirms the link. The PROFECO registration 5151-2024 the agent cites belongs in the register to 'Operadora OEA' for laundry services. No developer, licence, escrow, plans or progress are published. (checked 1 Nov 2026)",
    "seed": {
     "price": 3200000,
     "currency": "MXN",
-    "title": null,
+    "title": "Escritura (Mérida is outside the restricted zone; not stated)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Aug 2027",
+    "yield_pct": null,
+    "completion": "2027-Q3",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": 36,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 36,
+    "payment_plan": "Bank credit, own funds or INFONAVIT; no schedule published",
+    "price_per_m2": 38554,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No licencia de construccion number published",
+    "escrow": "No escrow or fideicomiso stated",
+    "progress": "No progress published; listing says renders are illustrative",
+    "plans": "Room-by-room description only; no floor plan",
+    "record": "Developer not named in the Kraken listing. Goodlers names 'Concoord' as developer of the matching Palmer Living Club",
+    "returns": "No return language"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "Listing does not name the developer or project and shows no permit, escrow or payment schedule; delivery month inconsistent (Aug vs Jul 2027)",
+     "claim": "Agent is authorised under PROFECO registration 5151-2024",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://rpca.profeco.gob.mx/"
+    },
+    {
+     "claim": "36 apartments on 3 levels",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+    },
+    {
+     "claim": "Estimated delivery August 2027 (URL and title say July 2027)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.pincali.com/inmueble/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+    },
+    {
+     "claim": "Project is Palmer Living Club, 36 units, same amenities (inferred match)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.grupobci.com/property/departamento-en-venta-al-norte-de-merida-palmer-living-club-temozon-norte"
+    },
+    {
+     "claim": "Palmer delivery May 2025 (Goodlers) vs July 2027 (AB Real Estate)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://goodlers.com/prop/merida/palmer"
+    },
+    {
+     "claim": "Palmer developed by Concoord",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goodlers.com/prop/merida/palmer"
+    },
+    {
+     "claim": "2BR + flex 83 m2 at MXN 3,200,000; Palmer 1BR from MXN 2,330,000 and 2BR sold out",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.realestateab.com.mx/property/departamentos-en-venta-palmer-livin-club-temozo-norte-merida"
+    },
+    {
+     "claim": "INFONAVIT and bank credit accepted",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+    },
+    {
+     "claim": "Building licence issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
+    },
+    {
+     "claim": "Developer has a PROFECO-registered sale contract",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rpca.profeco.gob.mx/"
     }
    ],
+   "facts": {
+    "developer_company": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": "2025-Q2 (Palmer, per Goodlers; link to this listing not confirmed)",
+    "unit_types": [
+     "1BR",
+     "2BR + flex"
+    ],
+    "size_min_m2": 52.0,
+    "size_max_m2": 83.0,
+    "price_min": 2330000.0,
+    "price_max": 3200000.0,
+    "currency": "MXN",
+    "payment_plan": "Bank credit, own funds or INFONAVIT",
+    "foreign_ownership": "Not stated; Mérida city is outside the restricted zone, so direct title is possible",
+    "amenities": [
+     "pool with sundeck",
+     "pickleball court",
+     "bar-grill terrace",
+     "TV room",
+     "gardens",
+     "security cameras",
+     "electric gate"
+    ],
+    "permit_authority": "Ayuntamiento de Mérida (Desarrollo Urbano)",
+    "brochure_url": null,
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "delay_months": null,
+    "deposit_pct": null,
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "lat": null,
+    "lng": null
+   },
    "positives": [
-    "Accepts bank credit and INFONAVIT per listing"
+    "Detailed specification and list of what is not included",
+    "Delivery month and unit count stated"
    ],
+   "flags": [],
    "sources": [
-    "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte"
-   ]
+    "https://goodlers.com/prop/merida/palmer",
+    "https://rpca.profeco.gob.mx/",
+    "https://www.grupobci.com/property/departamento-en-venta-al-norte-de-merida-palmer-living-club-temozon-norte",
+    "https://www.pincali.com/en/home/departamento-en-preventa-jul2027-temozon-norte-temozon-norte",
+    "https://www.pincali.com/inmueble/departamento-en-preventa-jul2027-temozon-norte-temozon-norte",
+    "https://www.realestateab.com.mx/property/departamentos-en-venta-palmer-livin-club-temozo-norte-merida"
+   ],
+   "permit_number": null,
+   "added": "2026-10-30",
+   "verified_score": 0
   },
   {
    "slug": "las-palmas-de-tamarindo",
@@ -17988,94 +18255,410 @@
    "slug": "cipriani-residences-miami",
    "name": "Cipriani Residences Miami",
    "developer": "Mast Capital",
+   "status": "active",
+   "stage": "under construction",
    "area": "1420 South Miami Avenue, Brickell, Miami",
    "country": "USA",
    "market": "Miami",
-   "url": "https://resident.com/press-releases/2026/04/30/cipriani-residences-miami-rises-to-become-the-tallest-residential-tower-south-of-manhattan",
-   "docs_url": "https://rebusinessonline.com/mast-capital-receives-600m-construction-loan-for-80-story-cipriani-residences-miami-condo-tower/",
+   "url": "https://own.miami/brickell/news/cipriani-residences-miami-tops-off-summer-2027",
+   "docs_url": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/",
    "permit_number": null,
    "docs_listed": [
-    "construction loan ($600m) reported",
-    "construction progress (height)",
-    "architect and interior designer named"
+    "topped off 15 Jul 2026 at about 950 ft (80 or 85 storeys depending on source)",
+    "USD 600m construction financing closed 6 Feb 2024 (USD 350m Banco Inbursa, USD 250m Ascendant)",
+    "397 residences, 1-4BR plus penthouses; more than 80% sold (Jul 2026), 85% (Sep 2026, developer)",
+    "prices from about USD 1.6m; penthouses USD 19.8m and 33m",
+    "occupancy targeted summer 2027 (developer) vs 2026 at 2023 announcement vs 2028 in Oct 2025",
+    "architect Arquitectonica, interiors 1508 London, structural Thornton Tomasetti, GC Moss"
    ],
-   "note": "397-residence tower that had reached 872 ft by April 2026, with completion expected in 2027.",
+   "note": "397-residence Cipriani-branded supertall in Brickell by Mast Capital, financed with a USD 600m construction loan (Feb 2024), started October 2024 and topped off on 15 July 2026 at about 950 ft; the developer reports 85% sold and targets occupancy in summer 2027, with prices from about USD 1.6m. Delivery dates have moved (2026 at the 2023 announcement, 2028 in late 2025, now 2027); no building permit number or escrow agent is published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": 1800000,
+    "price": 1600000,
     "currency": "USD",
-    "title": null,
+    "title": "freehold condominium (fee simple)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2027",
+    "yield_pct": null,
+    "completion": "2027-Q3",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Mast Capital (founded 2006) delivered rental communities Remi on the River (342-346 units, 2024), Avalon Merrick Park (254 units, 2024, with AvalonBay), AVARA Miami Beach (178 units, 2025) and Waterline Miami River",
     "units": 397,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": null,
+    "price_per_m2": 15070,
+    "progress_updates": true
    },
-   "flags": [],
-   "positives": [
-    "Construction financing reported ($600m loan)",
-    "Vertical progress publicly reported",
-    "Architect (Arquitectonica) named"
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No building permit number published by the developer or press",
+    "escrow": "Florida law requires condo deposit escrow, but no escrow agent or deposit terms are published",
+    "progress": "Independent press and engineer (Thornton Tomasetti) report topping out in July 2026; earlier milestones 44th floor Oct 2025, 872 ft Apr 2026",
+    "plans": "Unit types and sizes for penthouses only in sources opened; no floor plans seen",
+    "record": "Trade press reports Mast Capital deliveries: Remi on the River (2024), Avalon Merrick Park (2024), AVARA Miami Beach (2025); these are rental projects, not condos",
+    "returns": "Owner-occupier branded condo; no rental return claims"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
+    {
+     "claim": "Topped out 15 Jul 2026 at about 950 ft",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.thorntontomasetti.com/project/cipriani-residences-miami"
+    },
+    {
+     "claim": "USD 600m construction financing (Banco Inbursa 350m, Ascendant 250m), Feb 2024",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://groupgazette.org/post/cipriani-tops-out-brickell-397-homes-no-meeting-space"
+    },
+    {
+     "claim": "More than 80% sold (Jul 2026) / 85% (Sep 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/"
+    },
+    {
+     "claim": "Occupancy summer 2027 vs 2028 (Oct 2025, Wikipedia) vs 2026 (2023 announcement)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://en.wikipedia.org/wiki/Cipriani_Residences_Miami"
+    },
+    {
+     "claim": "Storey count 80 vs 85",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.thorntontomasetti.com/project/cipriani-residences-miami"
+    },
+    {
+     "claim": "Construction began October 2024",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://en.wikipedia.org/wiki/Cipriani_Residences_Miami"
+    },
+    {
+     "claim": "Prices from about USD 1.6m (~USD 1,400/sq ft)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/"
+    },
+    {
+     "claim": "Mast Capital delivered Remi on the River (2024)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://yieldpro.com/2024/07/remi-on-the-river/"
+    },
+    {
+     "claim": "Mast Capital delivered AVARA Miami Beach, 178 units (2025)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://yieldpro.com/2025/12/avara-miami-beach/"
+    },
+    {
+     "claim": "Building permit number published",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/"
+    }
    ],
+   "facts": {
+    "developer_founded": 2006.0,
+    "developer_hq": "Coconut Grove, Miami, USA",
+    "developer_company": "Mast Capital",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024-10",
+    "handover_promised": "2027-Q3",
+    "original_handover": "2026 (Apr 2023 announcement)",
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "4BR",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": 899.0,
+    "price_min": 1600000.0,
+    "price_max": 33000000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "Cipriani",
+    "amenities": [
+     "private Cipriani residents' restaurant",
+     "resort-style pool deck",
+     "spa and wellness floor",
+     "screening room",
+     "business lounges",
+     "children's play spaces",
+     "37th-floor speakeasy",
+     "50,000+ sq ft of amenities"
+    ],
+    "lat": 25.76,
+    "lng": -80.194,
+    "permit_authority": "City of Miami Building Department",
+    "brochure_url": null
+   },
+   "positives": [
+    "Fully financed with a USD 600m construction loan",
+    "Structure topped out July 2026",
+    "Developer with independently reported completed projects in Miami",
+    "High presales reported"
+   ],
+   "flags": [],
    "sources": [
+    "https://en.wikipedia.org/wiki/Cipriani_Residences_Miami",
+    "https://floridayimby.com/?p=25597",
+    "https://groupgazette.org/post/cipriani-tops-out-brickell-397-homes-no-meeting-space",
+    "https://own.miami/brickell/news/cipriani-residences-miami-tops-off-summer-2027",
     "https://resident.com/press-releases/2026/04/30/cipriani-residences-miami-rises-to-become-the-tallest-residential-tower-south-of-manhattan",
-    "https://floridayimby.com/?p=25597"
+    "https://therealdeal.com/people/camilo-miguel-jr/",
+    "https://traded.co/blog/inside-miami-s-tallest-tower-cipriani-residences-hits-80-sold-from-buyers-in-30-countries/",
+    "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/",
+    "https://www.indexbox.io/blog/cipriani-residences-miami-tops-off-as-tallest-residential-tower-in-city/",
+    "https://www.mastcapital.com/blog/mast-capital-delivers-avalon-merrick-park-in-coral-gables",
+    "https://www.mastcapital.com/portfolio",
+    "https://www.oftmw.com/projects/cipriani-residences-miami/",
+    "https://www.thorntontomasetti.com/project/cipriani-residences-miami",
+    "https://yieldpro.com/2024/07/remi-on-the-river/",
+    "https://yieldpro.com/2025/12/avara-miami-beach/"
    ]
   },
   {
    "slug": "mandarin-oriental-residences-boca-raton",
    "name": "Mandarin Oriental Residences Boca Raton",
    "developer": "Penn-Florida (Via Mizner Owner III)",
-   "area": "Boca Raton, Palm Beach County, Florida",
+   "status": "stalled",
+   "stage": "under construction",
+   "area": "105 E Camino Real, Via Mizner, Boca Raton, Palm Beach County, Florida",
    "country": "USA",
-   "market": "Miami",
+   "market": "Palm Beach County",
    "url": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/",
-   "docs_url": "https://hoodline.com/2026/07/boca-condo-showdown-buyer-snags-2m-judgment-in-mandarin-meltdown/",
+   "docs_url": "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide",
    "permit_number": null,
    "docs_listed": [
-    "escrow deposits held by title companies"
+    "12-storey, 88-unit condo tower (85 to 92 reported) beside a 164-key hotel, announced 2015 for 2017",
+    "USD 325m in pre-construction sales, prices USD 2m to about 23m (court records via press)",
+    "buyer deposits held in escrow by title companies (court ruling June 2026)",
+    "condo lender foreclosure suit USD 417.7m, case 502026CA008027XXXAMB (17 Jul 2026)",
+    "hotel entities in Chapter 11, case 9:25-bk-25197-EPK (Bankr. S.D. Fla.)",
+    "contractor Strategic Group Builders lien foreclosure USD 24.1m; work stopped before May 2026"
    ],
-   "note": "248-unit hotel-condo announced in 2015 for a 2017 opening; still unfinished, with a buyer winning a $2m judgment in 2026.",
+   "note": "88-unit branded condo tower next to an unfinished 164-key hotel in Boca Raton's Via Mizner, announced in 2015 for 2017 and still unfinished; work stopped before May 2026, the hotel entity has been in Chapter 11 since December 2025 and the condo lender filed a USD 417.7m foreclosure in July 2026, which the developer is fighting in New York. Thirteen buyers have sued; one won a USD 2m judgment allowing recovery from the title companies holding escrow, and Mandarin Oriental sent a 2025 letter ending the branding, which the developer disputes. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 2000000,
     "currency": "USD",
-    "title": null,
+    "title": "freehold condominium (fee simple)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Dec 2025 (contract deadline, missed)",
+    "yield_pct": null,
+    "completion": "2025-12-31 (contract deadline, missed); developer city report targeted 2026-Q4",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
-    "escrow": true,
+    "escrow": "Buyer deposits held in escrow by title companies; in June 2026 a Palm Beach judge ruled buyers could demand payment from them",
     "progress_pct": null,
-    "units": 248,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 88,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": true,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit number published",
+    "escrow": "Court ruling (June 2026) confirms deposits sit with title-company escrow agents and that buyers may claim them",
+    "progress": "Developer says about eight months of work remain once construction resumes (Aug 2026); contractor says it stopped work before May 2026; NYT (Oct 2026) says construction stopped indefinitely",
+    "plans": "No plans in sources opened",
+    "record": "Penn-Florida's Via Mizner complex partly built, but this tower is nine years late with hotel in bankruptcy and condo in foreclosure",
+    "returns": "No rental return claims"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "independent",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "contradicted",
+    "returns": "none"
+   },
+   "verified_score": 1,
+   "claims": [
     {
-     "text": "Court awarded buyers a $2m judgment over missed completion deadline (Dec 31, 2025); 13 buyers have sued",
+     "claim": "Completion by Dec 31, 2025 per buyer contracts",
+     "status": "contradicted",
+     "by": "independent",
      "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
     },
     {
-     "text": "Developer filed for bankruptcy on the hotel and proposed auction procedures for the hotel site",
+     "claim": "Opening in 2017 (2015 announcement)",
+     "status": "contradicted",
+     "by": "independent",
      "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+    },
+    {
+     "claim": "Condo nearly complete, about eight months to finish once work resumes (developer, Aug 2026)",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://www.palmbeachpost.com/story/business/real-estate/2026/08/21/bocas-mandarin-oriental-builder-claims-lender-mismanaged-tower/91066537007/"
+    },
+    {
+     "claim": "Construction stopped indefinitely",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.nytimes.com/2026/10/21/realestate/they-promised-luxury-condos-1-billion-later-buyers-are-still-waiting.html"
+    },
+    {
+     "claim": "Deposits held in escrow by title companies",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+    },
+    {
+     "claim": "Lender foreclosure for USD 417.7m filed 17 Jul 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://theamericandeveloper.com/news/penn-florida-madison-realty-mandarin-oriental-boca-raton-timeline/"
+    },
+    {
+     "claim": "Hotel affiliates filed Chapter 11 on 23 Dec 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/"
+    },
+    {
+     "claim": "Mandarin Oriental brand agreement still in place (developer) vs termination letter Aug 2025",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.bradenton.com/news/article317463519.html"
+    },
+    {
+     "claim": "Unit count 248 (earlier listing) vs 88 condo units plus 164-key hotel",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2026/08/17/mandarin-oriental-boca-raton-developer-sues-lender-madison/"
+    },
+    {
+     "claim": "More than 90 buyers, USD 325m in sales",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.bradenton.com/news/article317463519.html"
+    },
+    {
+     "claim": "New York court blocked lender's collateral sale (1 Oct 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.bradenton.com/news/article317463519.html"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Boca Raton, USA",
+    "developer_company": "Penn-Florida Companies; condo owner Via Mizner Owner III LLC; hotel owner Via Mizner Owner II LLC",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2019",
+    "handover_promised": null,
+    "original_handover": "2017-Q4 (2015 announcement)",
+    "delay_months": 108.0,
+    "unit_types": [
+     "condo residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 2000000.0,
+    "price_max": 23000000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "Mandarin Oriental (disputed; brand sent termination letter Aug 2025)",
+    "amenities": [
+     "sky bridge to hotel",
+     "members-only City Club",
+     "hotel spa",
+     "dining venues"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "City of Boca Raton Building Department",
+    "brochure_url": null
+   },
    "positives": [
-    "Deposits held in escrow by title companies (court allowed buyers to seek payment from them)"
+    "Deposits held by third-party title-company escrow agents, which a court has ordered available to at least one buyer"
+   ],
+   "flags": [
+    {
+     "text": "Palm Beach County judge awarded buyers a USD 2m judgment over the missed 31 Dec 2025 completion deadline and allowed recovery from escrow agents; 13 buyers have sued; developer seeks rehearing",
+     "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+    },
+    {
+     "text": "Hotel affiliates filed Chapter 11 on 23 Dec 2025 (case 9:25-bk-25197-EPK); auction postponed, no sale reported",
+     "source": "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/"
+    },
+    {
+     "text": "Lender Via Mizner Lender 1 filed a USD 417.7m foreclosure on the condo tower (17 Jul 2026); developer countersued in New York seeking USD 500m+",
+     "source": "https://therealdeal.com/miami/2026/08/17/mandarin-oriental-boca-raton-developer-sues-lender-madison/"
+    },
+    {
+     "text": "Mandarin Oriental told the developer in Aug 2025 it was ending the branding; developer says the agreement remains in place",
+     "source": "https://www.bradenton.com/news/article317463519.html"
+    },
+    {
+     "text": "Contractor Strategic Group Builders filed a USD 24.1m lien foreclosure and stopped work before May 2026",
+     "source": "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide"
+    }
    ],
    "sources": [
-    "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+    "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/",
+    "https://theamericandeveloper.com/news/penn-florida-madison-realty-mandarin-oriental-boca-raton-timeline/",
+    "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/",
+    "https://therealdeal.com/miami/2026/08/17/mandarin-oriental-boca-raton-developer-sues-lender-madison/",
+    "https://therealdeal.com/miami/2026/08/23/mandarin-oriental-boca-ucc-foreclosure-postponed/",
+    "https://www.bradenton.com/news/article317463519.html",
+    "https://www.nytimes.com/2026/10/21/realestate/they-promised-luxury-condos-1-billion-later-buyers-are-still-waiting.html",
+    "https://www.palmbeachpost.com/story/business/real-estate/2026/08/21/bocas-mandarin-oriental-builder-claims-lender-mismanaged-tower/91066537007/",
+    "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide"
    ]
   },
   {
@@ -18231,16 +18814,20 @@
    "slug": "cocobay-da-nang",
    "name": "Cocobay Da Nang",
    "developer": "Empire Group",
-   "area": "Ngu Hanh Son District, Da Nang",
+   "status": "website dead",
+   "stage": "under construction",
+   "area": "Hoa Hai ward, Ngu Hanh Son, Da Nang",
    "country": "Vietnam",
    "market": "Vietnam",
-   "url": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html",
-   "docs_url": "https://e.vnexpress.net/news/business/companies/condotel-developer-defaults-on-payment-of-returns-to-buyers-4018178.html",
+   "url": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html",
+   "docs_url": "https://thoibaotaichinhvietnam.vn/sieu-du-an-cocobay-sap-duoc-tinh-lai-mot-phan-gia-dat-183136.html",
    "permit_number": null,
    "docs_listed": [
-    "guaranteed 12% annual return (marketing)"
+    "no live developer project page: cocobay.vn now carries a generic page plus menus for unrelated projects (Sun Glory, Sun Galaxy, The Fullton); empiregroup.vn has an expired SSL certificate",
+    "2016 to 2019 marketing promised a 12% annual guaranteed return for 8 years (press)",
+    "May 2024 restart schedule sent by Thanh Do JSC to Da Nang authorities (press), with block completions from Oct 2024 to Jan 2029"
    ],
-   "note": "51-hectare condotel and entertainment complex sold with a 12% annual guaranteed return; per VnExpress (Nov 2019) the developer told about 1,700 buyers it would stop paying the guarantee from 2020. About 3,000 of a planned 10,000 rooms had been built at that time.",
+   "note": "Condotel and entertainment complex (VND 11,000bn, reported as 31 to 51 ha) by Thanh Do Investment Development and Construction JSC (Empire Group) that stopped paying its 12% guaranteed return to about 1,700 buyers from 2020 and has been stalled since early 2022; a May 2024 restart plan was not carried out and Sept 2025 press describes unfinished, deteriorating blocks while Da Nang recalculates the land price to collect unpaid land charges. The city says the project never received investment policy approval, so buyers cannot yet get title certificates. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": null,
@@ -18249,80 +18836,399 @@
     "lease_base": null,
     "extension": null,
     "guaranteed_language": true,
-    "completion": null,
+    "yield_pct": 12,
+    "completion": "2029-Q1",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
-    "progress_pct": 30,
+    "progress_pct": null,
+    "developer_delivered": "Part of Cocobay (about 3,000 of a planned 10,000 rooms) opened from 2017, per VnExpress 2019; no other delivered projects stated",
     "units": null,
-    "developer_delivered": null,
-    "yield_pct": 12
+    "payment_plan": null,
+    "price_per_m2": 33000000,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 1,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit number published by the developer. Press cites a 1:500 plan amendment (Decision 593/QD-UBND, 1 Feb 2019) and an architecture opinion (2328/SXD-QHKT, 2 Apr 2019), but Tuoi Tre reports the city found the project never received investment policy approval",
+    "escrow": "Nothing published; returns were paid to buyers' banks under three-way loan agreements, which is not deposit protection",
+    "progress": "No developer updates. Independent press: work stopped from early 2022; Sept 2025 site visit found unfinished, rusting blocks and no visible change after the May 2024 restart plan",
+    "plans": "No unit plans published",
+    "record": "No track record published; the only delivered work is the partly opened Cocobay itself",
+    "returns": "Sold with a 12% per year guaranteed return (8 years, until 2026), which the developer stopped paying from 2020"
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
     {
-     "text": "Developer announced it would stop paying the 12% guaranteed annual return to about 1,700 buyers from 2020; buyers left servicing bank loans themselves.",
+     "claim": "Buyers guaranteed a 12% annual return for 8 years",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-developer-threatens-to-cancel-unsettled-contracts-4033272.html"
+    },
+    {
+     "claim": "Developer stopped paying guaranteed returns to about 1,700 buyers from 2020",
+     "status": "verified",
+     "by": "independent",
      "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
     },
     {
-     "text": "Developer reported accumulated losses of VND134 billion and debt obligations of VND10.17 trillion as of 2018.",
+     "claim": "Project legally approved (1:500 plan amendment Decision 593/QD-UBND of 1 Feb 2019)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://reatimes.vn/da-nang-okayed-cocobay-turning-condotels-to-apartments-202191206163729079.htm"
+    },
+    {
+     "claim": "Project has investment policy approval allowing title certificates for buyers",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.vietnam.vn/sieu-du-an-cocobay-sieu-sao-bong-da-ronaldo-tung-quang-ba-se-thong-tu-quy-1-2026"
+    },
+    {
+     "claim": "Condotel buyers hold title",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://reatimes.vn/da-nang-okayed-cocobay-turning-condotels-to-apartments-202191206163729079.htm"
+    },
+    {
+     "claim": "Construction restarts from May 2024 with blocks completed between Oct 2024 and Jan 2029",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://thoibaotaichinhvietnam.vn/sieu-du-an-cocobay-sap-duoc-tinh-lai-mot-phan-gia-dat-183136.html"
+    },
+    {
+     "claim": "Site work is ongoing",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html"
+    },
+    {
+     "claim": "10,000 rooms planned, about 3,000 built (2019)",
+     "status": "verified",
+     "by": "independent",
      "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
     },
     {
-     "text": "Only about 3,000 of 10,000 planned rooms built as of late 2019.",
+     "claim": "Developer is Thanh Do Investment Development and Construction JSC (Empire Group)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html"
+    },
+    {
+     "claim": "Developer financially sound (losses since 2017, VND 10.17 trillion of debt obligations as of 2018)",
+     "status": "contradicted",
+     "by": "independent",
      "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+    },
+    {
+     "claim": "Developer may cancel buyer contracts unilaterally (notices Dec 2019 and 12 Mar 2024)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://dantri.com.vn/bat-dong-san/hien-trang-cocobay-sieu-du-an-dinh-dam-mot-thoi-o-da-nang-20240319180401592.htm"
+    },
+    {
+     "claim": "Official project website still live",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://cocobay.vn/"
     }
    ],
-   "positives": [],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Hanoi, Vietnam",
+    "developer_company": "Thanh Do Investment Development and Construction JSC (Cong ty CP Dau tu Phat trien va Xay dung Thanh Do), Empire Group",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2016",
+    "handover_promised": "2029-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condotel",
+     "apartment",
+     "shophouse",
+     "townhouse",
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "VND",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": "Developer-run condotel rental with 12% guaranteed annual return, suspended from 2020",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "beachfront location on the Da Nang to Hoi An coastal road",
+     "indoor and outdoor performance stages",
+     "tourism square",
+     "walking street",
+     "hotels"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Da Nang People's Committee and Department of Construction",
+    "brochure_url": null
+   },
+   "positives": [
+    "Da Nang listed the project among 15 whose land and legal issues it aims to resolve, targeted for Q1 2026"
+   ],
+   "flags": [
+    {
+     "text": "VnExpress reported in Nov 2019 that Empire Group told about 1,700 buyers it would stop paying the 12% guaranteed annual return from 2020, leaving many to service bank loans themselves.",
+     "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+    },
+    {
+     "text": "VnExpress reported accumulated losses of VND 134bn and debt obligations of VND 10.17 trillion as of 2018.",
+     "source": "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html"
+    },
+    {
+     "text": "Dan Tri reported that on 12 March 2024 Thanh Do JSC notified buyers it was unilaterally terminating sale contracts while restructuring.",
+     "source": "https://dantri.com.vn/bat-dong-san/hien-trang-cocobay-sieu-du-an-dinh-dam-mot-thoi-o-da-nang-20240319180401592.htm"
+    },
+    {
+     "text": "Tuoi Tre (via vietnam.vn) reported the Da Nang environment department found the project had not received investment policy approval, so there was no legal basis to issue title certificates to apartment buyers; it is among 15 projects named in Government Inspectorate conclusion 2852/2012 with land charges being recalculated.",
+     "source": "https://www.vietnam.vn/sieu-du-an-cocobay-sieu-sao-bong-da-ronaldo-tung-quang-ba-se-thong-tu-quy-1-2026"
+    },
+    {
+     "text": "VietnamFinance reported in Sept 2025 that the site remained abandoned, with unfinished blocks and rusting structures, despite a restart planned for May 2024.",
+     "source": "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html"
+    }
+   ],
    "sources": [
-    "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html",
+    "https://cocobay.vn/",
+    "https://dantri.com.vn/bat-dong-san/hien-trang-cocobay-sieu-du-an-dinh-dam-mot-thoi-o-da-nang-20240319180401592.htm",
+    "https://doanhnghiephoinhap.vn/cocobay-da-nang-vao-cuoc-choi-moi-43243.html",
     "https://e.vnexpress.net/news/business/companies/condotel-developer-defaults-on-payment-of-returns-to-buyers-4018178.html",
-    "https://e.vnexpress.net/news/business/industries/guaranteed-returns-ploy-driving-condotel-craze-fraught-with-risk-4020038.html"
+    "https://e.vnexpress.net/news/business/companies/da-nang-condotel-developer-threatens-to-cancel-unsettled-contracts-4033272.html",
+    "https://e.vnexpress.net/news/business/companies/da-nang-condotel-investors-saddled-with-debt-as-developer-defaults-4018880.html",
+    "https://e.vnexpress.net/news/business/industries/guaranteed-returns-ploy-driving-condotel-craze-fraught-with-risk-4020038.html",
+    "https://reatimes.vn/da-nang-okayed-cocobay-turning-condotels-to-apartments-202191206163729079.htm",
+    "https://thoibaotaichinhvietnam.vn/sieu-du-an-cocobay-sap-duoc-tinh-lai-mot-phan-gia-dat-183136.html",
+    "https://vietnamfinance.vn/hien-trang-cocobay-da-nang-bo-hoang-keo-nay-cho-ngay-hoi-sinh-d132623.html",
+    "https://viettimes.vn/da-nang-xac-dinh-lai-gia-dat-hang-loat-du-an-bi-thanh-tra-post183887.html",
+    "https://www.vietnam.vn/sieu-du-an-cocobay-sieu-sao-bong-da-ronaldo-tung-quang-ba-se-thong-tu-quy-1-2026"
    ]
   },
   {
    "slug": "fortis-residences-makati",
    "name": "Fortis Residences",
    "developer": "DMCI Homes (DMCI Holdings)",
-   "area": "Makati, Metro Manila",
+   "status": "active",
+   "stage": "under construction",
+   "area": "2250 Chino Roces Avenue, Makati, Metro Manila",
    "country": "Philippines",
    "market": "Philippines",
-   "url": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo",
-   "docs_url": null,
-   "permit_number": null,
+   "url": "https://www.dmcihomes.com/fortis-residences",
+   "docs_url": "https://www.dmcihomes.com/fortis-residences",
+   "permit_number": "LS No. 355, DHSUD NCR AA-2022/06/4071 (as published by DMCI sales channels)",
    "docs_listed": [
-    "unit count",
-    "storeys",
-    "turnover start date",
-    "topping-off milestone",
-    "average price per sqm"
+    "price list per unit type, PHP 14.394m to 40.16m",
+    "15 unit layouts 1BR to 3BR with gross floor areas 55.5 to 154 sqm",
+    "monthly construction progress % with dated photos, Sept 2022 (0.24%) to June 2026 (46.40%)",
+    "brochure and AVP",
+    "DHSUD License to Sell and registration numbers (sales pages)",
+    "payment terms 5% spot, 25% downpayment, 70% bank or in-house financing (sales pages)",
+    "turnover December 2027"
    ],
-   "note": "37-storey, 576-unit tower under DMCI Homes Exclusive; topped off on 28 October 2025 with turnover scheduled to start December 2027. Average price stated at PHP 250,000 per sqm; 14% of units sold as of the article.",
+   "note": "36-residential-level, 576-unit DMCI Homes Exclusive tower on a 7,200 sqm site in Makati; topped off on 28 Oct 2025 (Philstar), with the developer's own tracker at 46.40% complete in June 2026 and turnover set for December 2027. Prices run PHP 14.4m to 40.2m; DHSUD records mirrored on REN.PH show active Licenses to Sell, although the number DMCI's sales pages print (LS No. 355) differs from the registry's PLS 335. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 14394000,
     "currency": "PHP",
-    "title": null,
+    "title": "condominium unit title",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q4 2027",
-    "permit_claim": false,
-    "permit_number": null,
-    "plans_published": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": true,
+    "permit_number": "LS No. 355, DHSUD NCR AA-2022/06/4071",
+    "plans_published": true,
     "escrow": null,
-    "progress_pct": null,
+    "progress_pct": 46.4,
+    "developer_delivered": "DMCI Homes, property arm of PSE-listed DMCI Holdings; Fortis is the second DMCI Homes Exclusive project after Oak Harbor Residences (Philstar)",
     "units": 576,
-    "developer_delivered": "DMCI Homes (listed DMCI Holdings group)",
-    "yield_pct": null
+    "payment_plan": "5% spot, 25% downpayment to Nov 2027, 70% balance via bank or in-house financing",
+    "price_per_m2": 250000,
+    "progress_updates": true
    },
-   "flags": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "DMCI sales pages print LS No. 355 and DHSUD NCR AA-2022/06/4071. REN.PH (DHSUD public records) lists three active LTS for Fortis Residences: PLS 335 (23 May 2022, expires 30 Jun 2030), LS 0000040 (10 May 2023) and LS 0001143 (30 Apr 2025). The project is licensed, but the printed number 355 does not match the registry's 335",
+    "escrow": "No escrow or deposit protection published; payments go to the developer under PD 957 rules",
+    "progress": "Official page lists monthly % with dated photos up to 46.40% (June 2026); Philstar reported structural topping-off on 28 Oct 2025",
+    "plans": "Official page lists 15 unit types with gross floor areas and price ranges; brochure linked",
+    "record": "DMCI Homes is the property arm of PSE-listed DMCI Holdings; Philstar names Oak Harbor Residences as the first DMCI Homes Exclusive project",
+    "returns": "No rental guarantee or yield figure on official or sales pages"
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 3,
+   "claims": [
+    {
+     "claim": "Project holds a DHSUD License to Sell",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Fortis+Residences"
+    },
+    {
+     "claim": "License to Sell number is LS No. 355",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Fortis+Residences"
+    },
+    {
+     "claim": "Structure topped off (37 storeys) in October 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+    },
+    {
+     "claim": "Construction 46.40% complete as of June 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/fortis-residences"
+    },
+    {
+     "claim": "Turnover starts December 2027",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+    },
+    {
+     "claim": "576 units in total",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+    },
+    {
+     "claim": "Average price PHP 250,000 per sqm",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+    },
+    {
+     "claim": "Prices from PHP 14.394m to 40.16m",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/fortis-residences"
+    },
+    {
+     "claim": "Developer is part of listed DMCI Holdings",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
+    },
+    {
+     "claim": "Licensed developer entity is DMCI Project Developers, Inc. with DMC Estate Development Ventures, Inc.",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Fortis+Residences"
+    },
+    {
+     "claim": "Buyer deposits held in escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/fortis-residences"
+    },
+    {
+     "claim": "About 14% of units sold by Oct 2025; 480 units still available Oct 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcisales.com/p/fortis-residences.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Makati, Philippines",
+    "developer_company": "DMCI Project Developers, Inc. / DMC Estate Development Ventures, Inc. (per DHSUD LTS records)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Parent DMCI Holdings, Inc. listed on the Philippine Stock Exchange",
+    "construction_start": "2022-09",
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": 55.5,
+    "size_max_m2": 154.0,
+    "price_min": 14394000.0,
+    "price_max": 40160000.0,
+    "currency": "PHP",
+    "deposit_pct": 30.0,
+    "payment_plan": "5% spot plus 25% downpayment, 70% balance bank or in-house financing",
+    "foreign_ownership": "Condominium unit; Philippine law caps foreign ownership at 40% of a condominium project",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "DMCI Homes Exclusive",
+    "amenities": [
+     "5 basement parking levels",
+     "Lumiventt design technology",
+     "EV charging stations",
+     "water recycling facility",
+     "green building certification pursued",
+     "near Magallanes MRT"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DHSUD (License to Sell); Makati City (building permit)",
+    "brochure_url": null
+   },
    "positives": [
-    "Structural topping-off reported by national press",
-    "Turnover date and unit count stated",
+    "Monthly progress % with dated photos published since Sept 2022",
+    "Topping-off independently reported by national press",
+    "Active DHSUD Licenses to Sell found in registry mirror",
+    "Full price list by unit type",
     "Listed parent company"
    ],
+   "flags": [],
    "sources": [
+    "https://propertymart.ph/listings/fortis-residences/",
+    "https://ren.ph/verify/lts?q=Fortis+Residences",
+    "https://www.dmcihomes.com/fortis-residences",
+    "https://www.dmcisales.com/p/fortis-residences.html",
+    "https://www.dmcisalesph.com/fortis-residences.html",
     "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
    ]
   },
@@ -20060,101 +20966,399 @@
    "slug": "dubovica-budva-residential-complex",
    "name": "New residential complex in Dubovica",
    "developer": "Not named",
-   "area": "Dubovica, Budva",
+   "status": "active",
+   "stage": "under construction",
+   "area": "Dubovica (near Mega Mall), Budva",
    "country": "Montenegro",
    "market": "Montenegro",
-   "url": "https://realting.com/fr/montenegro/new-buildings/28035",
-   "docs_url": null,
+   "url": "https://realting.com/montenegro/new-buildings/28035",
+   "docs_url": "https://value1property.com/en/buy/complex/new-residential-complex-in-dubovica-budva/",
    "permit_number": null,
    "docs_listed": [
-    "completion date (June 2027)",
-    "staged payment schedule",
-    "statement that land belongs to the investor"
+    "5 buildings of 34 apartments each (170 units), 6 floors",
+    "unit sizes 30.4 to 174.91 m2; studios from EUR 85,120, 1BR from EUR 129,332, 2BR from EUR 308,736, penthouses from EUR 559,712; garage from EUR 21,000",
+    "payment 50% first instalment, 25% on structure, 10% facade, 10% tiling, 5% keys; '2-year interest-free instalment plan'",
+    "completion June 2027 (older listings) vs December 2027 (newer listings)",
+    "statement that the land is owned by the investor",
+    "marketing name QUART used by several agencies"
    ],
-   "note": "Five residential buildings of 34 apartments each, with completion listed for June 2027. The payment schedule asks 50% upfront; no developer, permit or price is published.",
+   "note": "170-apartment, five-building complex in Dubovica, Budva, marketed by several agencies (Value.ONE, Montenegro Genesis, Home4You) and called QUART by some, from EUR 85,120 for a 30 m2 studio. Buyers pay 50% upfront with no escrow or bank guarantee mentioned, the developer is never named, and completion has moved from June 2027 to December 2027 between listings; one agent says the first building is already built. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 85120,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q2 2027",
+    "yield_pct": null,
+    "completion": "2027-Q4",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": 170,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 170,
+    "payment_plan": "50% first instalment, 25% after structure, 10% after facade, 10% after tiling, 5% on handover",
+    "price_per_m2": 2837,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No building permit or investor named on any of the agency listings",
+    "escrow": "None stated; 50% is due upfront before structural completion; only claim is that 'land is owned by the investor'",
+    "progress": "No dated photos or % published; one agency offers viewings 'in an already built building', but which building and what stage is not stated",
+    "plans": "No floor plans on the listings; one agency offers plans on request by phone",
+    "record": "Developer not named, no track record",
+    "returns": "No guarantee, but agencies advertise 'expected price increase of 30-40% after completion'"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Payment schedule requires 50% upfront before construction milestones; no escrow or bank guarantee is mentioned.",
-     "source": "https://realting.com/fr/montenegro/new-buildings/28035"
+     "claim": "Five buildings with 34 apartments each",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/28035"
     },
     {
-     "text": "Developer not named and no building permit mentioned; listing claims 30-40% price growth after completion.",
-     "source": "https://realting.com/fr/montenegro/new-buildings/28035"
+     "claim": "Completion June 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/"
+    },
+    {
+     "claim": "Land is owned by the investor",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://en.value1estates.com/object/2672"
+    },
+    {
+     "claim": "Building permit issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/28035"
+    },
+    {
+     "claim": "Developer identified and registered",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://montenegrogenesis.com/catalog/novyj-zhiloj-kompleks-quart-v-budve/"
+    },
+    {
+     "claim": "Studios from EUR 85,120 (30 m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://antarex.me/apartments-in-new-complex-with-swimming-pool-in-budva-lota7-527-0"
+    },
+    {
+     "claim": "Price from USD 100,475 (Realting header) vs USD 165,072 lowest in unit table",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/28035"
+    },
+    {
+     "claim": "Distance to sea 800 m vs 1,500 m depending on listing",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://value1property.com/en/buy/complex/new-residential-complex-in-dubovica-budva/"
+    },
+    {
+     "claim": "Expected 30-40% price growth after completion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://antarex.me/apartments-in-new-complex-with-swimming-pool-in-budva-lota7-527-0"
+    },
+    {
+     "claim": "Buyers exempt from property transfer tax",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/"
+    },
+    {
+     "claim": "Deposits protected by escrow or guarantee",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/28035"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": "2027-Q2",
+    "delay_months": 6.0,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR",
+     "penthouse"
+    ],
+    "size_min_m2": 30.4,
+    "size_max_m2": 174.91,
+    "price_min": 85120.0,
+    "price_max": 559712.0,
+    "currency": "EUR",
+    "deposit_pct": 50.0,
+    "payment_plan": "50/25/10/10/5 tied to structure, facade, tiling and keys",
+    "foreign_ownership": "Freehold apartments can be bought by foreigners in Montenegro",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "outdoor pool",
+     "fitness and yoga area",
+     "spa",
+     "two-level underground parking",
+     "gated and guarded grounds"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Municipality of Budva / Montenegro Ministry of Spatial Planning (construction notice)",
+    "brochure_url": null
+   },
    "positives": [
-    "Milestone-linked payment schedule published",
-    "Completion month stated"
+    "Price list with sizes published",
+    "Remaining 50% tied to construction milestones"
+   ],
+   "flags": [
+    {
+     "text": "Completion date has moved from June 2027 in 2025 listings to December 2027 in 2026 listings without explanation.",
+     "source": "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/"
+    },
+    {
+     "text": "50% of the price is due upfront and no developer, permit or deposit protection is named on any listing.",
+     "source": "https://realting.com/montenegro/new-buildings/28035"
+    }
    ],
    "sources": [
-    "https://realting.com/fr/montenegro/new-buildings/28035"
+    "http://2home.me/sr-latin/offers/5deeaec5-8d6f-4c40-80ab-b5d890d89498/",
+    "https://antarex.me/apartments-in-new-complex-with-swimming-pool-in-budva-lota7-527-0",
+    "https://en.value1estates.com/object/2672",
+    "https://home4you.me/me/estate_property/apartments-for-sale-in-a-modern-residential-complex-with-a-swimming-pool-budva-dubovica/",
+    "https://montenegrogenesis.com/catalog/novyj-zhiloj-kompleks-quart-v-budve/",
+    "https://realting.com/fr/montenegro/new-buildings/28035",
+    "https://realting.com/montenegro/new-buildings/28035",
+    "https://value1property.com/en/buy/complex/new-residential-complex-in-dubovica-budva/"
    ]
   },
   {
    "slug": "boka-place-porto-montenegro",
    "name": "Boka Place",
    "developer": "Porto Montenegro (residences managed by SIRO / Kerzner International)",
+   "status": "completed",
+   "stage": "completed",
    "area": "Porto Montenegro, Tivat",
    "country": "Montenegro",
    "market": "Montenegro",
-   "url": "https://www.jamesedition.com/stories/?p=47745",
-   "docs_url": null,
+   "url": "https://portomontenegro.com/real-estate/boka-place/",
+   "docs_url": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf",
    "permit_number": null,
    "docs_listed": [
-    "delivery year (2025)",
-    "sales status (over 95% sold or reserved)",
-    "starting price"
+    "brochure (June 2026, 34 pages): 1BR from EUR 265,000, 2BR from EUR 347,000, three-bedroom duplexes",
+    "144 SIRO-managed residences and 69 private residences, 7,400 m2 retail, 183 parking spaces (agency summary)",
+    "SIRO hotel (Kerzner) opened to guests 28 Apr 2025; Boka Place public opening 23 May 2025",
+    "'limited collection of SIRO-managed residences available for imminent handover' (June 2026 page)",
+    "M-Residences rental management scheme and SIRO managed rental pool",
+    "Montenegro citizenship-by-investment wording in brochure"
    ],
-   "note": "Second of five planned Porto Montenegro neighbourhoods, described as nearing completion with delivery scheduled for 2025 and over 95% sold or reserved; current completion status was not verified. An optional rental pool is offered for some units.",
+   "note": "Boka Place, the second Porto Montenegro neighbourhood with 144 SIRO-managed and 69 private residences around a new retail square, opened in May 2025 alongside Kerzner's SIRO hotel, so the project is completed; remaining managed units are sold as 'imminent handover' from EUR 265,000 (1BR). Developer Adriatic Marinas d.o.o. (Investment Corporation of Dubai) had built over 440 apartments at Porto Montenegro by 2024. No permit number or escrow statement is published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": 410000,
+    "price": 265000,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2025",
+    "yield_pct": null,
+    "completion": "2025-Q2",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
-    "progress_pct": null,
-    "units": null,
-    "developer_delivered": "Porto Montenegro: over 600 residences sold since 2009 (per page)",
-    "yield_pct": null
+    "progress_pct": 100,
+    "developer_delivered": "Porto Montenegro had over 440 apartments, a 450-berth marina, 80 retail units and the Regent hotel built by July 2024 (RICS Modus); Boka Place and SIRO hotel opened 2025",
+    "units": 213,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit or licence number on the developer pages or brochure",
+    "escrow": "No escrow or deposit protection stated; units are now essentially complete stock",
+    "progress": "Completed: SIRO hotel opened 28 Apr 2025 (Kerzner press release) and Boka Place opened 23 May 2025 (Montenegrobusiness)",
+    "plans": "Brochure and pages describe unit types and starting prices but contain no floor plans; one agency lists sizes 45 to 199.3 m2",
+    "record": "RICS Modus (independent) reports 440+ apartments, marina and Regent hotel built at Porto Montenegro by 2024",
+    "returns": "Managed rental pool and M-Residences programme described without any guaranteed return or yield figure"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
     {
-     "text": "Source is promotional; no permit, title or rental pool terms are published.",
+     "claim": "Delivery scheduled for 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://montenegrobusiness.eu/boka-place-launches-new-urban-lifestyle-hub-with-exciting-opening-weekend/"
+    },
+    {
+     "claim": "SIRO Boka Place hotel open to guests",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.kerznercommunications.com/siro-boka-place-montenegro-begins-welcoming-guests/?from=kerzner-international&lang=eng"
+    },
+    {
+     "claim": "213 managed and private residences in Boka Place",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://ww3.rics.org/uk/en/modus/built-environment/commercial-real-estate/porto-montenegro.html"
+    },
+    {
+     "claim": "Porto Montenegro has built 440+ apartments and is about 35% developed",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://ww3.rics.org/uk/en/modus/built-environment/commercial-real-estate/porto-montenegro.html"
+    },
+    {
+     "claim": "Over 95% sold or reserved",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.jamesedition.com/stories/?p=47745"
+    },
+    {
+     "claim": "SIRO residences still available for 'imminent handover' in 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://portomontenegro.com/real-estate/boka-place/siro-residences/"
+    },
+    {
+     "claim": "1BR from EUR 265,000 and 2BR from EUR 347,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf"
+    },
+    {
+     "claim": "Starting price EUR 410,000 (JamesEdition)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf"
+    },
+    {
+     "claim": "Agency finish date 30 Apr 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.mbroker-realestate.com/boka-place-an-urban-quarter-in-the-heart-of-porto-montenegro-en-3.1"
+    },
+    {
+     "claim": "Building permit number published",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://portomontenegro.com/real-estate/boka-place/"
     }
    ],
+   "facts": {
+    "developer_founded": 2006.0,
+    "developer_hq": "Tivat, Montenegro",
+    "developer_company": "Adriatic Marinas d.o.o. (Porto Montenegro), owned by Investment Corporation of Dubai",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": 440.0,
+    "listed_or_audited": "Adriatic Marinas 2025 financials reported in Montenegrin press; owner is Dubai's state investment fund",
+    "construction_start": null,
+    "handover_promised": "2025-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR",
+     "duplex",
+     "penthouse"
+    ],
+    "size_min_m2": 45.0,
+    "size_max_m2": 199.3,
+    "price_min": 265000.0,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold; brochure links managed units to Montenegro citizenship by investment",
+    "rental_programme": "SIRO managed rental pool and M-Residences rental management; no figures",
+    "service_charge": null,
+    "brand": "SIRO (Kerzner International)",
+    "amenities": [
+     "residents-only pool",
+     "SIRO fitness and recovery labs",
+     "rooftop pool",
+     "central square with retail",
+     "cinema",
+     "Voli market",
+     "parking with EV charging",
+     "marina access"
+    ],
+    "lat": 42.434,
+    "lng": 18.692,
+    "permit_authority": "Montenegro Ministry of Spatial Planning / Municipality of Tivat",
+    "brochure_url": "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf"
+   },
    "positives": [
-    "Established master-developer with completed neighbourhood",
-    "Named hotel/residence manager",
-    "Starting price published"
+    "Project completed and hotel operating since 2025",
+    "Master developer with independently reported delivered stock",
+    "Starting prices published in brochure",
+    "Named international hotel and residence manager",
+    "No guaranteed-return language"
    ],
+   "flags": [],
    "sources": [
-    "https://www.jamesedition.com/stories/?p=47745"
+    "https://montenegrobusiness.eu/boka-place-launches-new-urban-lifestyle-hub-with-exciting-opening-weekend/",
+    "https://portomontenegro.com/blog/siro-boka-place-reservations/",
+    "https://portomontenegro.com/real-estate/boka-place/",
+    "https://portomontenegro.com/real-estate/boka-place/siro-residences/",
+    "https://portomontenegro.com/wp-content/uploads/2026/06/Boka-Place-Brochure.pdf",
+    "https://ww3.rics.org/uk/en/modus/built-environment/commercial-real-estate/porto-montenegro.html",
+    "https://www.jamesedition.com/stories/?p=47745",
+    "https://www.kerznercommunications.com/siro-boka-place-montenegro-begins-welcoming-guests/?from=kerzner-international&lang=eng",
+    "https://www.mbroker-realestate.com/boka-place-an-urban-quarter-in-the-heart-of-porto-montenegro-en-3.1"
    ]
   },
   {
@@ -24104,91 +25308,380 @@
    "country": "Indonesia",
    "market": "Labuan Bajo",
    "url": "https://www.ttgasia.com/?p=107188",
-   "docs_url": null,
+   "docs_url": "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/",
    "permit_number": null,
    "docs_listed": [
-    "Management agreement with Dusit",
-    "Unit mix (63 villas, 194 apartments)",
-    "Phased completion target (2Q2028)"
+    "hotel management agreement between Dusit International and PT Komodo Property Management (announced 11 Mar 2025)",
+    "unit mix: 63 pool villas, 194 apartments, clubhouse with rooftop pool",
+    "phased build, full completion targeted Q2 2028",
+    "location about 10 minutes from Komodo Airport, western Flores"
    ],
-   "note": "Branded residences of 63 pool villas and 194 apartments near Komodo Airport, to be managed by Dusit, built in phases with full completion scheduled for 2Q2028 (March 2025 announcement). Sale terms, title and prices are not stated in the source.",
+   "note": "Branded residences of 63 pool villas and 194 apartments near Komodo Airport, to be run by Dusit under a management agreement with PT Komodo Property Management announced in March 2025, with phased completion targeted for Q2 2028. No sales page, prices, title terms, permit, escrow or construction progress was found; the owner's CEO says only that construction is 'fully supported by local authorities' (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": null,
-    "currency": "USD",
+    "currency": null,
     "title": null,
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q2 2028",
+    "yield_pct": null,
+    "completion": "2028-Q2",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": 257,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 257,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": null
    },
-   "flags": [],
-   "positives": [
-    "Named hotel operator (Dusit)",
-    "Unit count and completion target announced"
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
+    {
+     "claim": "Dusit International signed a hotel management agreement with PT Komodo Property Management for Kaliwatu Residences - Dusit Collection",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/"
+    },
+    {
+     "claim": "First Dusit Collection property in Indonesia",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ttgasia.com/2025/03/17/dusit-to-manage-indonesias-kaliwatu-residences-dusit-collection/"
+    },
+    {
+     "claim": "63 private pool villas and 194 apartments plus clubhouse",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ttgasia.com/?p=107188"
+    },
+    {
+     "claim": "Phased development with full completion scheduled for Q2 2028",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.marketing-interactive.com/thailand-s-dusit-international-bets-on-labuan-bajo-s-tourism-boom-with-high-end-retreat"
+    },
+    {
+     "claim": "Development and construction 'fully supported by local authorities' (no permit named)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/"
+    },
+    {
+     "claim": "Units are sold to private buyers (no sales terms, prices or title found)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ttgasia.com/?p=107188"
+    },
+    {
+     "claim": "Developer or landowner entity (only PT Komodo Property Management named as counterparty)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.marketing-interactive.com/thailand-s-dusit-international-bets-on-labuan-bajo-s-tourism-boom-with-high-end-retreat"
+    },
+    {
+     "claim": "Construction stage (no progress update found since the March 2025 announcement)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ttgasia.com/?p=107188"
+    },
+    {
+     "claim": "Site about 10 minutes from Komodo International Airport on the western tip of Flores",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ttgasia.com/?p=107188"
+    }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "PT Komodo Property Management (CEO Alessandro Mugavero), named as management agreement counterparty",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Operator Dusit International (Dusit Thani PCL) is listed on the Stock Exchange of Thailand; the owner is not",
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "pool villa",
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": "Hotel management by Dusit International (Dusit Collection brand)",
+    "service_charge": null,
+    "brand": "Dusit Collection",
+    "amenities": [
+     "clubhouse",
+     "restaurant",
+     "bars",
+     "shops",
+     "gym",
+     "spa",
+     "rooftop pool",
+     "plunge pools"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": "No permit named; CEO says construction is supported by local authorities",
+    "escrow": "Nothing published",
+    "progress": "No progress published since the March 2025 announcement",
+    "plans": "No plans published",
+    "record": "No completed projects of PT Komodo Property Management found",
+    "returns": "No return figures or guarantee wording found"
+   },
+   "positives": [
+    "Named international hotel operator (Dusit)",
+    "Unit count and completion target announced by the operator"
+   ],
+   "flags": [],
    "sources": [
-    "https://www.ttgasia.com/?p=107188",
-    "https://www.journaldespalaces.com/en/pressrelease-73848-Indonesia-Hotel-projects-Dusit-Hotels-and-Resorts-signs-to-manage-Kaliwatu-residences-Dusit-collection-in-Flores-Indonesia.html"
+    "https://www.dusit.com/dusit-hotels-and-resorts-signs-to-manage-kaliwatu-residences-dusit-collection-in-flores-indonesia/",
+    "https://www.journaldespalaces.com/en/pressrelease-73848-Indonesia-Hotel-projects-Dusit-Hotels-and-Resorts-signs-to-manage-Kaliwatu-residences-Dusit-collection-in-Flores-Indonesia.html",
+    "https://www.marketing-interactive.com/thailand-s-dusit-international-bets-on-labuan-bajo-s-tourism-boom-with-high-end-retreat",
+    "https://www.ttgasia.com/2025/03/17/dusit-to-manage-indonesias-kaliwatu-residences-dusit-collection/",
+    "https://www.ttgasia.com/?p=107188"
    ]
   },
   {
    "slug": "mawatu-labuan-bajo",
    "name": "Mawatu",
    "developer": "Vasanta Group",
-   "area": "Labuan Cermin Beach, Labuan Bajo",
+   "area": "Batu Cermin / Ketentang coast, Kecamatan Komodo, Labuan Bajo, Manggarai Barat",
    "country": "Indonesia",
    "market": "Labuan Bajo",
-   "url": "https://industri.kontan.co.id/news/vasanta-group-kembangkan-destinasi-wisata-di-labuan-bajo-lewat-proyek-mawatu",
-   "docs_url": "https://newgelora.thejakartapost.com/front-row/2022/03/04/mawatu-in-labuan-bajo-as-indonesias-new-tourism-gem",
+   "url": "https://mawatu.co.id/commercial-village",
+   "docs_url": "https://mawatu.co.id/faq",
    "permit_number": null,
    "docs_listed": [
-    "Site size (20 ha)",
-    "Main contractor named (PT China State Construction Overseas Development Shanghai)",
-    "260 Commercial Village shophouses",
-    "Phase one target date"
+    "20 ha integrated coastal township by Vasanta Group (FAQ)",
+    "commercial village shophouse types with lot numbers, storeys and building sizes (24-249.6 m2)",
+    "units on sale: commercial shophouses and beachfront retail lots",
+    "2022 launch: 200-unit commercial village, 2-3 storey shophouses Rp2.8-3.5 billion, '8% ROI' marketing, first 60 units due end Q1 2023",
+    "phase one soft opening 16 Oct 2026 with 50+ tenants (Bisnis, 1 Oct 2026)",
+    "hotel to be run by an international operator still in preparation"
    ],
-   "note": "20-hectare mixed-use waterfront township with Tribal House and Water Villas plus 260 Commercial Village shophouses. Phase one was targeted for December 2023 (April 2023 report); a September 2026 Bisnis headline links listed company UANG (Pakuan) to the project.",
+   "note": "20-hectare waterfront township in Labuan Bajo by Vasanta Group, part of IDX-listed PT Pakuan Tbk (UANG); its commercial village of shophouses, launched in 2022 from Rp2.8 billion with first units due by end Q1 2023, had its soft opening on 16 October 2026 according to Bisnis, about three and a half years late. Hotels and villas are still to come, and no PBG, escrow, floor plans or current price list is published (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "under construction",
    "seed": {
-    "price": null,
+    "price": 2800000000,
     "currency": "IDR",
-    "title": null,
+    "title": "freehold (marketed); foreigners cannot hold Hak Milik",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Phase one: Dec 2023 (target as of Apr 2023)",
+    "yield_pct": 8,
+    "completion": "2026 (phase one soft opening); full township not dated",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": 260,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "Vasanta Group: Shila at Sawangan housing clusters and Vasanta Eco Town (Jabodetabek, with Mitsubishi Corporation) and The Kaya resort in Labuan Bajo, named on mawatu.co.id/about",
+    "units": 200,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 1,
+   "claims": [
     {
-     "text": "Sources reviewed give a December 2023 phase-one target but no published update on its delivery status.",
+     "claim": "Mawatu is developed by Vasanta Group, owned through IDX-listed PT Pakuan Tbk (UANG)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+    },
+    {
+     "claim": "Phase one soft opening on 16 October 2026 with more than 50 tenants and a Cinema XXI",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+    },
+    {
+     "claim": "First phase planned to finish by end of 2022 (May 2021 report)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.medcom.id/properti/news-properti/9K551w3K-vasanta-bangun-proyek-wisata-terpadu-di-labuan-bajo"
+    },
+    {
+     "claim": "First 60 shophouses to be completed by end Q1 2023 (Feb 2022 launch)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/"
+    },
+    {
+     "claim": "Phase one to finish in December 2023; main contractor PT China State Construction Overseas Development Shanghai (April 2023)",
+     "status": "contradicted",
+     "by": "independent",
      "source": "https://industri.kontan.co.id/news/vasanta-group-kembangkan-destinasi-wisata-di-labuan-bajo-lewat-proyek-mawatu"
+    },
+    {
+     "claim": "Site area 20 ha (FAQ, 2022 launch) versus 12 ha (May 2021 report via PT Graha Properti Sentosa)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.medcom.id/properti/news-properti/9K551w3K-vasanta-bangun-proyek-wisata-terpadu-di-labuan-bajo"
+    },
+    {
+     "claim": "Shophouses priced Rp2.8-3.5 billion with 8% annual ROI marketed at launch",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/"
+    },
+    {
+     "claim": "Whole USD 125 million project to finish within five years of February 2022",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/"
+    },
+    {
+     "claim": "Shophouses marketed as 'freehold' (individual foreigners cannot hold Hak Milik)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ahp.id/?p=2955"
+    },
+    {
+     "claim": "Hotel to be managed by an international hospitality chain (not named)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+    },
+    {
+     "claim": "Vasanta delivered Shila at Sawangan and Vasanta Eco Town with Mitsubishi Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mawatu.co.id/about/"
+    },
+    {
+     "claim": "No building permit or escrow published",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mawatu.co.id/faq"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Jakarta, Indonesia",
+    "developer_company": "Vasanta Group (PT Graha Properti Sentosa named in 2021), under PT Pakuan Tbk (IDX: UANG)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Parent PT Pakuan Tbk listed on the Indonesia Stock Exchange (ticker UANG)",
+    "construction_start": "2021-05",
+    "handover_promised": "2026-Q4",
+    "original_handover": "2023-Q1",
+    "delay_months": 43.0,
+    "unit_types": [
+     "shophouse",
+     "street bar unit",
+     "beachfront retail lot"
+    ],
+    "size_min_m2": 24.0,
+    "size_max_m2": 249.6,
+    "price_min": 2800000000.0,
+    "price_max": 3500000000.0,
+    "currency": "IDR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": "8% annual ROI marketed at 2022 launch; no programme published now",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "commercial promenade",
+     "cinema",
+     "amphitheatre",
+     "floating jetty",
+     "beach club",
+     "public beach facilities"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": "No PBG or permit published",
+    "escrow": "No escrow, bank guarantee or trust account",
+    "progress": "Bisnis (1 Oct 2026): phase one soft opening 16 Oct 2026; Kontan (Apr 2023): piling and foundations under way",
+    "plans": "Unit types with storeys and building sizes; no floor plans",
+    "record": "Developer About page names Shila at Sawangan, Vasanta Eco Town and The Kaya resort",
+    "returns": "Launch marketing cited an 8% annual ROI; not described as guaranteed"
+   },
    "positives": [
-    "Named main contractor",
-    "Site area and product mix reported in national press"
+    "Parent company listed on the Indonesia Stock Exchange",
+    "Phase one opening reported by national press",
+    "Named main contractor"
+   ],
+   "flags": [
+    {
+     "text": "Press reports gave phase one completion targets of end 2022 (Medcom, May 2021), end Q1 2023 for the first 60 shophouses (PropertiTerkini, Feb 2022) and December 2023 (Kontan, Apr 2023); Bisnis reported the phase one soft opening for 16 October 2026.",
+     "source": "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+    }
    ],
    "sources": [
     "https://industri.kontan.co.id/news/vasanta-group-kembangkan-destinasi-wisata-di-labuan-bajo-lewat-proyek-mawatu",
+    "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo",
+    "https://mawatu.co.id/about/",
+    "https://mawatu.co.id/commercial-village",
+    "https://mawatu.co.id/faq",
     "https://newgelora.thejakartapost.com/front-row/2022/03/04/mawatu-in-labuan-bajo-as-indonesias-new-tourism-gem",
-    "https://market.bisnis.com/read/20261001/192/2008697/emiten-milik-hapsoro-pakuan-uang-genjot-proyek-mawatu-labuan-bajo"
+    "https://propertiterkini.com/vasanta-group-mulai-pasarkan-ruko-eksklusif-di-proyek-baru-mawatu-labuan-bajo/",
+    "https://www.ahp.id/?p=2955",
+    "https://www.medcom.id/properti/news-properti/9K551w3K-vasanta-bangun-proyek-wisata-terpadu-di-labuan-bajo",
+    "https://www.vasanta.co.id/mawatu"
    ]
   },
   {

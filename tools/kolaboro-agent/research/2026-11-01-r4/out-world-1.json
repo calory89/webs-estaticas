@@ -2972,5 +2972,413 @@
    "https://hotelpost.org/post/okan-tower-pours-50th-floor-downtown-miami",
    "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
   ]
+ },
+ {
+  "slug": "cipriani-residences-miami",
+  "name": "Cipriani Residences Miami",
+  "developer": "Mast Capital",
+  "status": "active",
+  "stage": "under construction",
+  "area": "1420 South Miami Avenue, Brickell, Miami",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://own.miami/brickell/news/cipriani-residences-miami-tops-off-summer-2027",
+  "docs_url": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/",
+  "permit_number": null,
+  "docs_listed": [
+   "topped off 15 Jul 2026 at about 950 ft (80 or 85 storeys depending on source)",
+   "USD 600m construction financing closed 6 Feb 2024 (USD 350m Banco Inbursa, USD 250m Ascendant)",
+   "397 residences, 1-4BR plus penthouses; more than 80% sold (Jul 2026), 85% (Sep 2026, developer)",
+   "prices from about USD 1.6m; penthouses USD 19.8m and 33m",
+   "occupancy targeted summer 2027 (developer) vs 2026 at 2023 announcement vs 2028 in Oct 2025",
+   "architect Arquitectonica, interiors 1508 London, structural Thornton Tomasetti, GC Moss"
+  ],
+  "note": "397-residence Cipriani-branded supertall in Brickell by Mast Capital, financed with a USD 600m construction loan (Feb 2024), started October 2024 and topped off on 15 July 2026 at about 950 ft; the developer reports 85% sold and targets occupancy in summer 2027, with prices from about USD 1.6m. Delivery dates have moved (2026 at the 2023 announcement, 2028 in late 2025, now 2027); no building permit number or escrow agent is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 1600000,
+   "currency": "USD",
+   "title": "freehold condominium (fee simple)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Mast Capital (founded 2006) delivered rental communities Remi on the River (342-346 units, 2024), Avalon Merrick Park (254 units, 2024, with AvalonBay), AVARA Miami Beach (178 units, 2025) and Waterline Miami River",
+   "units": 397,
+   "payment_plan": null,
+   "price_per_m2": 15070
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published by the developer or press",
+   "escrow": "Florida law requires condo deposit escrow, but no escrow agent or deposit terms are published",
+   "progress": "Independent press and engineer (Thornton Tomasetti) report topping out in July 2026; earlier milestones 44th floor Oct 2025, 872 ft Apr 2026",
+   "plans": "Unit types and sizes for penthouses only in sources opened; no floor plans seen",
+   "record": "Trade press reports Mast Capital deliveries: Remi on the River (2024), Avalon Merrick Park (2024), AVARA Miami Beach (2025); these are rental projects, not condos",
+   "returns": "Owner-occupier branded condo; no rental return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Topped out 15 Jul 2026 at about 950 ft",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thorntontomasetti.com/project/cipriani-residences-miami"
+   },
+   {
+    "claim": "USD 600m construction financing (Banco Inbursa 350m, Ascendant 250m), Feb 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://groupgazette.org/post/cipriani-tops-out-brickell-397-homes-no-meeting-space"
+   },
+   {
+    "claim": "More than 80% sold (Jul 2026) / 85% (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/"
+   },
+   {
+    "claim": "Occupancy summer 2027 vs 2028 (Oct 2025, Wikipedia) vs 2026 (2023 announcement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Cipriani_Residences_Miami"
+   },
+   {
+    "claim": "Storey count 80 vs 85",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thorntontomasetti.com/project/cipriani-residences-miami"
+   },
+   {
+    "claim": "Construction began October 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Cipriani_Residences_Miami"
+   },
+   {
+    "claim": "Prices from about USD 1.6m (~USD 1,400/sq ft)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/"
+   },
+   {
+    "claim": "Mast Capital delivered Remi on the River (2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yieldpro.com/2024/07/remi-on-the-river/"
+   },
+   {
+    "claim": "Mast Capital delivered AVARA Miami Beach, 178 units (2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yieldpro.com/2025/12/avara-miami-beach/"
+   },
+   {
+    "claim": "Building permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Coconut Grove, Miami, USA",
+   "developer_company": "Mast Capital",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-10",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026 (Apr 2023 announcement)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 899,
+   "price_min": 1600000,
+   "price_max": 33000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Cipriani",
+   "amenities": [
+    "private Cipriani residents' restaurant",
+    "resort-style pool deck",
+    "spa and wellness floor",
+    "screening room",
+    "business lounges",
+    "children's play spaces",
+    "37th-floor speakeasy",
+    "50,000+ sq ft of amenities"
+   ],
+   "lat": 25.76,
+   "lng": -80.194,
+   "permit_authority": "City of Miami Building Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Fully financed with a USD 600m construction loan",
+   "Structure topped out July 2026",
+   "Developer with independently reported completed projects in Miami",
+   "High presales reported"
+  ],
+  "flags": [],
+  "sources": [
+   "https://own.miami/brickell/news/cipriani-residences-miami-tops-off-summer-2027",
+   "https://www.thorntontomasetti.com/project/cipriani-residences-miami",
+   "https://traded.co/blog/inside-miami-s-tallest-tower-cipriani-residences-hits-80-sold-from-buyers-in-30-countries/",
+   "https://www.oftmw.com/projects/cipriani-residences-miami/",
+   "https://groupgazette.org/post/cipriani-tops-out-brickell-397-homes-no-meeting-space",
+   "https://www.hauteresidence.com/news/inside-cipriani-residences-miami-brickell/",
+   "https://en.wikipedia.org/wiki/Cipriani_Residences_Miami",
+   "https://www.indexbox.io/blog/cipriani-residences-miami-tops-off-as-tallest-residential-tower-in-city/",
+   "https://www.mastcapital.com/portfolio",
+   "https://yieldpro.com/2025/12/avara-miami-beach/",
+   "https://www.mastcapital.com/blog/mast-capital-delivers-avalon-merrick-park-in-coral-gables",
+   "https://therealdeal.com/people/camilo-miguel-jr/",
+   "https://yieldpro.com/2024/07/remi-on-the-river/"
+  ]
+ },
+ {
+  "slug": "mandarin-oriental-residences-boca-raton",
+  "name": "Mandarin Oriental Residences Boca Raton",
+  "developer": "Penn-Florida (Via Mizner Owner III)",
+  "status": "stalled",
+  "stage": "under construction",
+  "area": "105 E Camino Real, Via Mizner, Boca Raton, Palm Beach County, Florida",
+  "country": "USA",
+  "market": "Palm Beach County",
+  "url": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/",
+  "docs_url": "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide",
+  "permit_number": null,
+  "docs_listed": [
+   "12-storey, 88-unit condo tower (85 to 92 reported) beside a 164-key hotel, announced 2015 for 2017",
+   "USD 325m in pre-construction sales, prices USD 2m to about 23m (court records via press)",
+   "buyer deposits held in escrow by title companies (court ruling June 2026)",
+   "condo lender foreclosure suit USD 417.7m, case 502026CA008027XXXAMB (17 Jul 2026)",
+   "hotel entities in Chapter 11, case 9:25-bk-25197-EPK (Bankr. S.D. Fla.)",
+   "contractor Strategic Group Builders lien foreclosure USD 24.1m; work stopped before May 2026"
+  ],
+  "note": "88-unit branded condo tower next to an unfinished 164-key hotel in Boca Raton's Via Mizner, announced in 2015 for 2017 and still unfinished; work stopped before May 2026, the hotel entity has been in Chapter 11 since December 2025 and the condo lender filed a USD 417.7m foreclosure in July 2026, which the developer is fighting in New York. Thirteen buyers have sued; one won a USD 2m judgment allowing recovery from the title companies holding escrow, and Mandarin Oriental sent a 2025 letter ending the branding, which the developer disputes. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 2000000,
+   "currency": "USD",
+   "title": "freehold condominium (fee simple)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-12-31 (contract deadline, missed); developer city report targeted 2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Buyer deposits held in escrow by title companies; in June 2026 a Palm Beach judge ruled buyers could demand payment from them",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 88,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published",
+   "escrow": "Court ruling (June 2026) confirms deposits sit with title-company escrow agents and that buyers may claim them",
+   "progress": "Developer says about eight months of work remain once construction resumes (Aug 2026); contractor says it stopped work before May 2026; NYT (Oct 2026) says construction stopped indefinitely",
+   "plans": "No plans in sources opened",
+   "record": "Penn-Florida's Via Mizner complex partly built, but this tower is nine years late with hotel in bankruptcy and condo in foreclosure",
+   "returns": "No rental return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "independent",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "contradicted",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Completion by Dec 31, 2025 per buyer contracts",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+   },
+   {
+    "claim": "Opening in 2017 (2015 announcement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+   },
+   {
+    "claim": "Condo nearly complete, about eight months to finish once work resumes (developer, Aug 2026)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.palmbeachpost.com/story/business/real-estate/2026/08/21/bocas-mandarin-oriental-builder-claims-lender-mismanaged-tower/91066537007/"
+   },
+   {
+    "claim": "Construction stopped indefinitely",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nytimes.com/2026/10/21/realestate/they-promised-luxury-condos-1-billion-later-buyers-are-still-waiting.html"
+   },
+   {
+    "claim": "Deposits held in escrow by title companies",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+   },
+   {
+    "claim": "Lender foreclosure for USD 417.7m filed 17 Jul 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theamericandeveloper.com/news/penn-florida-madison-realty-mandarin-oriental-boca-raton-timeline/"
+   },
+   {
+    "claim": "Hotel affiliates filed Chapter 11 on 23 Dec 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/"
+   },
+   {
+    "claim": "Mandarin Oriental brand agreement still in place (developer) vs termination letter Aug 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.bradenton.com/news/article317463519.html"
+   },
+   {
+    "claim": "Unit count 248 (earlier listing) vs 88 condo units plus 164-key hotel",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/08/17/mandarin-oriental-boca-raton-developer-sues-lender-madison/"
+   },
+   {
+    "claim": "More than 90 buyers, USD 325m in sales",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bradenton.com/news/article317463519.html"
+   },
+   {
+    "claim": "New York court blocked lender's collateral sale (1 Oct 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bradenton.com/news/article317463519.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Boca Raton, USA",
+   "developer_company": "Penn-Florida Companies; condo owner Via Mizner Owner III LLC; hotel owner Via Mizner Owner II LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2019",
+   "handover_promised": null,
+   "original_handover": "2017-Q4 (2015 announcement)",
+   "delay_months": 108,
+   "unit_types": [
+    "condo residence"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2000000,
+   "price_max": 23000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Mandarin Oriental (disputed; brand sent termination letter Aug 2025)",
+   "amenities": [
+    "sky bridge to hotel",
+    "members-only City Club",
+    "hotel spa",
+    "dining venues"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Boca Raton Building Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Deposits held by third-party title-company escrow agents, which a court has ordered available to at least one buyer"
+  ],
+  "flags": [
+   {
+    "text": "Palm Beach County judge awarded buyers a USD 2m judgment over the missed 31 Dec 2025 completion deadline and allowed recovery from escrow agents; 13 buyers have sued; developer seeks rehearing",
+    "source": "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/"
+   },
+   {
+    "text": "Hotel affiliates filed Chapter 11 on 23 Dec 2025 (case 9:25-bk-25197-EPK); auction postponed, no sale reported",
+    "source": "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/"
+   },
+   {
+    "text": "Lender Via Mizner Lender 1 filed a USD 417.7m foreclosure on the condo tower (17 Jul 2026); developer countersued in New York seeking USD 500m+",
+    "source": "https://therealdeal.com/miami/2026/08/17/mandarin-oriental-boca-raton-developer-sues-lender-madison/"
+   },
+   {
+    "text": "Mandarin Oriental told the developer in Aug 2025 it was ending the branding; developer says the agreement remains in place",
+    "source": "https://www.bradenton.com/news/article317463519.html"
+   },
+   {
+    "text": "Contractor Strategic Group Builders filed a USD 24.1m lien foreclosure and stopped work before May 2026",
+    "source": "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide"
+   }
+  ],
+  "sources": [
+   "https://therealdeal.com/miami/2026/07/13/mandarin-oriental-developer-loses-2m-judgment-to-buyer/",
+   "https://www.bradenton.com/news/article317463519.html",
+   "https://therealdeal.com/miami/2026/08/23/mandarin-oriental-boca-ucc-foreclosure-postponed/",
+   "https://www.nytimes.com/2026/10/21/realestate/they-promised-luxury-condos-1-billion-later-buyers-are-still-waiting.html",
+   "https://theamericandeveloper.com/news/penn-florida-madison-realty-mandarin-oriental-boca-raton-timeline/",
+   "https://therealdeal.com/miami/2026/08/17/mandarin-oriental-boca-raton-developer-sues-lender-madison/",
+   "https://www.palmbeachpost.com/story/business/real-estate/2026/08/21/bocas-mandarin-oriental-builder-claims-lender-mismanaged-tower/91066537007/",
+   "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide",
+   "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/"
+  ]
  }
 ]
