@@ -1876,5 +1876,883 @@
    "https://www.oftmw.com/projects/mandarin-oriental-residences-kanai/",
    "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
   ]
+ },
+ {
+  "slug": "the-residences-at-the-st-regis-los-cabos-quivira-olarena-hospitality-g",
+  "name": "The Residences at The St. Regis Los Cabos (Quivira)",
+  "developer": "Olarena Hospitality Group with Ernesto Coppel (Pueblo Bonito); licensee CLK Estrategia, S.A.P.I. de C.V.",
+  "area": "Quivira, Cabo San Lucas",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "under construction",
+  "url": "https://srresidencesloscabos.com",
+  "docs_url": "https://srresidencesloscabos.com",
+  "permit_number": null,
+  "docs_listed": [
+   "sales site: 74 residences; first phase 9 oceanfront villas, 1 Astor villa, 13 oceanview condos, 2 penthouses",
+   "sales site: condos from USD 4.5M, villas from USD 13.5M; floor plans and prices on request",
+   "sales site: CLK Estrategia SAPI de CV uses St. Regis marks under Marriott licence",
+   "press (Jan 2021): sales launch, construction began early 2021, opening projected fall 2022, condos from USD 2.8M",
+   "press (2024): opening expected 2024; tracker (2026): completion late 2026"
+  ],
+  "note": "Branded villas and condos at the planned 120-room St. Regis resort in Quivira, Cabo San Lucas, by Olarena and Ernesto Coppel's Pueblo Bonito group. Construction began in 2021 with opening projected for fall 2022, later 2024 and now late 2026, while condo prices rose from USD 2.8 million at launch to USD 4.5 million on the current site; no permit, escrow, plans or progress figure are published and the licensee has no PROFECO-registered contract. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 4500000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone) - not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Quivira master plan and Pueblo Bonito resorts by Ernesto Coppel's group in Los Cabos (Pueblo Bonito operating entities appear in the PROFECO register for hotel services); no delivered residence count published",
+   "units": 74,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No licence or MIA number; no PROFECO contract under CLK Estrategia, Olarena or Quivira",
+   "escrow": "Nothing published",
+   "progress": "Sales site offers 'progress updates' by registration only; LPR guide says 'finally nearing completion' (no date)",
+   "plans": "Floor plans by request only",
+   "record": "Quivira community and Pueblo Bonito resorts operated by the Coppel group (operating companies registered with PROFECO for hotel services); not a residence delivery count",
+   "returns": "No return language"
+  },
+  "claims": [
+   {
+    "claim": "Construction began early 2021 with opening projected for fall 2022",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://oceanhomemag.com/real-estate/new-residencies-at-st-regis-los-cabos-launch-first-phase-of-sales"
+   },
+   {
+    "claim": "Opening expected in 2024",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mexiconewsdaily.com/travel/which-luxury-hotel-and-resort-brands-are-opening-in-los-cabos"
+   },
+   {
+    "claim": "Completion expected late 2026 (tracker)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/the-residences-at-the-st-regis-los-cabos/"
+   },
+   {
+    "claim": "Project nearing completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://guide.lprluxury.com/projects/st-regis-quivira"
+   },
+   {
+    "claim": "74 St. Regis residences and 120-room hotel",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://oceanhomemag.com/real-estate/new-residencies-at-st-regis-los-cabos-launch-first-phase-of-sales"
+   },
+   {
+    "claim": "60 residences (Mexico News Daily)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mexiconewsdaily.com/travel/which-luxury-hotel-and-resort-brands-are-opening-in-los-cabos"
+   },
+   {
+    "claim": "Condos from USD 4.5M and villas from USD 13.5M (current site)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://srresidencesloscabos.com"
+   },
+   {
+    "claim": "First release condos from USD 2.8M and villas from USD 9M (2021)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://oceanhomemag.com/real-estate/new-residencies-at-st-regis-los-cabos-launch-first-phase-of-sales"
+   },
+   {
+    "claim": "CLK Estrategia SAPI de CV is the St. Regis licensee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://srresidencesloscabos.com"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Los Cabos / Mazatlan, Mexico (Pueblo Bonito)",
+   "developer_company": "CLK Estrategia, S.A.P.I. de C.V. (licensee named on site)",
+   "construction_start": "2021-01",
+   "original_handover": "2022-Q4",
+   "handover_promised": "2026",
+   "delay_months": 48,
+   "unit_types": [
+    "oceanfront villa",
+    "Astor villa",
+    "oceanview condo",
+    "penthouse",
+    "townhome"
+   ],
+   "price_min": 4500000,
+   "price_max": null,
+   "currency": "USD",
+   "brand": "St. Regis Residences (Marriott licence)",
+   "amenities": [
+    "St. Regis resort services",
+    "Quivira Golf Club (Jack Nicklaus)",
+    "beach club",
+    "spa",
+    "resort pools"
+   ],
+   "permit_authority": "Municipio de Los Cabos; SEMARNAT (MIA)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Brand licensee legal entity named on the sales site",
+   "Long-established resort community operator"
+  ],
+  "flags": [],
+  "sources": [
+   "https://srresidencesloscabos.com",
+   "https://oceanhomemag.com/real-estate/new-residencies-at-st-regis-los-cabos-launch-first-phase-of-sales",
+   "https://mexiconewsdaily.com/travel/which-luxury-hotel-and-resort-brands-are-opening-in-los-cabos",
+   "https://guide.lprluxury.com/projects/st-regis-quivira",
+   "https://www.oftmw.com/projects/the-residences-at-the-st-regis-los-cabos/",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "aldea-kalan-aldea-kalan",
+  "name": "Aldea Kalan",
+  "developer": "Aldea Kalan (marketed by Select Realty Mexico; built by Elemental; architecture V Taller)",
+  "area": "Carretera Federal Chetumal, Bacalar lagoon front",
+  "country": "Mexico",
+  "market": "Bacalar",
+  "stage": "off-plan",
+  "url": "https://plalla.com/en/?p=83610",
+  "docs_url": "https://aldeakalan.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: presale, delivery 2027/28",
+   "developer: 12 ha site, over 70% of native vegetation kept, lagoon frontage and private pier",
+   "developer: penthouse plan with 127.40 m2 interior, 35.35 m2 terrace, 134.30 m2 rooftop, 297.05 m2 total",
+   "brochure: 'aldeas' of 12 units (2BR, 1BR, 1BR PH) and 10 units (2BR, 1BR, 3BR PH)",
+   "agent: 1BR from MXN 3,923,371; 2BR MXN 6,945,000; 3BR PH MXN 9,120,000"
+  ],
+  "note": "Low-rise wabi-sabi style condo clusters on a 12-hectare lagoon-front site at Bacalar, in presale with delivery given as 2027/28 and 1BR units from about MXN 3.9 million (agent). The site publishes a dimensioned penthouse plan and the brochure unit mix, but names no legal developer entity, permit, escrow, track record or progress, and no PROFECO contract was found. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 3923371,
+   "currency": "MXN",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No MIA, land-use or construction licence published; Bacalar lagoon front development normally needs SEMARNAT and municipal approvals, none cited",
+   "escrow": "Nothing published",
+   "progress": "Presale only; no construction status",
+   "plans": "Typology image with a dimensioned penthouse plan and rooftop; brochure lists unit mix per cluster",
+   "record": "Architect's past projects listed (Babel Tulum, Hotel El Puertecito) but no developer track record; builder Elemental shown only as a logo",
+   "returns": "No return or yield claims on site or agent page"
+  },
+  "claims": [
+   {
+    "claim": "Delivery 2027/28",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aldeakalan.com/"
+   },
+   {
+    "claim": "Site of 12 hectares with more than 70% native vegetation conserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aldeakalan.com/"
+   },
+   {
+    "claim": "Lagoon frontage with private pier",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aldeakalan.com/"
+   },
+   {
+    "claim": "Penthouse 3BR of 297.05 m2 total",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aldeakalan.com/wp-content/uploads/2026/08/AldeaKalan_Topologia_h_02.png"
+   },
+   {
+    "claim": "Clusters of 12 and 10 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/4595049/309496/01_Brochure_Aldea_Kalan.pdf"
+   },
+   {
+    "claim": "1BR from MXN 3,923,371; 3BR PH MXN 9,120,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://plalla.com/en/?p=83610"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Permit or environmental authorization published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aldeakalan.com/"
+   }
+  ],
+  "facts": {
+   "developer_hq": null,
+   "developer_company": null,
+   "handover_promised": "2028",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "1BR penthouse",
+    "3BR penthouse"
+   ],
+   "size_max_m2": 297.05,
+   "price_min": 3923371,
+   "price_max": 9120000,
+   "currency": "MXN",
+   "foreign_ownership": null,
+   "amenities": [
+    "lagoon front",
+    "private pier",
+    "pools",
+    "three club houses",
+    "gym",
+    "spa",
+    "padel",
+    "24/7 security"
+   ],
+   "permit_authority": "SEMARNAT (MIA); Municipio de Bacalar",
+   "brochure_url": "https://assets.easybroker.com/property_files/4595049/309496/01_Brochure_Aldea_Kalan.pdf",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Dimensioned unit plan published",
+   "Delivery window stated",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://aldeakalan.com/",
+   "https://aldeakalan.com/wp-content/uploads/2026/08/AldeaKalan_Topologia_h_02.png",
+   "https://assets.easybroker.com/property_files/4595049/309496/01_Brochure_Aldea_Kalan.pdf",
+   "https://plalla.com/en/?p=83610",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "litibu-bay-club-contact-development-company-llc-with-gbm-real-estate-p",
+  "name": "Litibu Bay Club",
+  "developer": "Contact Development Company, LLC with GBM Real Estate Projects, S.A. de C.V.",
+  "area": "Litibu, Punta de Mita (Higuera Blanca), Bahia de Banderas, Nayarit",
+  "country": "Mexico",
+  "market": "Riviera Nayarit",
+  "stage": "under construction",
+  "url": "https://litibubayclub.com/",
+  "docs_url": "https://litibubayclub.com/real-estate/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 171 private residences (villas and penthouses) on a 21-acre gated beachfront site, architecture by Taller ADG",
+   "developer: team page naming Contact Development Company (Punta Mita, Punta Sayulita, Conrad Punta de Mita) and GBM Real Estate",
+   "developer press page: dated coverage Oct 2024 to Jun 2026",
+   "press release (Resident, 28 Apr 2026): over USD 60M sold, 75% of Phase I sold, construction toward first deliveries 'this winter', Phase II 14 Golf Villas USD 1.5M to 3.1M, site photo with structures and crane",
+   "no prices on developer site, no plans, permit or escrow"
+  ],
+  "note": "Gated beachfront community of 171 villas and penthouses at Litibu near Punta de Mita by Contact Development Company and the real estate arm of Mexican financial group GBM. A dated April 2026 release (hosted by the developer) reports USD 60 million sold, 75% of Phase I, first deliveries planned for winter 2026/27 and Phase II golf villas at USD 1.5 to 3.1 million; no permit, escrow, floor plans or progress percentage are published and no PROFECO contract was found. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 1500000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone) - not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Contact Development Company states it developed the Punta Mita and Punta Sayulita communities and the Conrad Punta de Mita resort hotel (developer team page)",
+   "units": 171,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No MIA or licence number; no PROFECO contract under GBM Real Estate, Contact Development or Litibu names (only an old hotel operator)",
+   "escrow": "Nothing published",
+   "progress": "April 2026 release with construction photo and 'first deliveries this winter'; press page headline 'Under Construction' (Jul 2025); no %",
+   "plans": "Villa descriptions and gallery only",
+   "record": "Team page names Contact Development Company's Punta Mita, Punta Sayulita and Conrad Punta de Mita; GBM Real Estate described as an institutional investment group",
+   "returns": "No return language"
+  },
+  "claims": [
+   {
+    "claim": "Over USD 60 million sold and 75% of Phase I sold (Apr 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://litibubayclub.com/wp-content/uploads/2026/05/Litibu-Bay-Club_Resident-Magazine_April-2026.pdf"
+   },
+   {
+    "claim": "First deliveries planned for winter 2026/27",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://litibubayclub.com/wp-content/uploads/2026/05/Litibu-Bay-Club_Resident-Magazine_April-2026.pdf"
+   },
+   {
+    "claim": "Phase II: 14 Golf Villas priced USD 1.5M to 3.1M with 10-year Higuera Golf Club membership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://litibubayclub.com/wp-content/uploads/2026/05/Litibu-Bay-Club_Resident-Magazine_April-2026.pdf"
+   },
+   {
+    "claim": "171 residences on a 21-acre site",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://litibubayclub.com/"
+   },
+   {
+    "claim": "Completion expected late 2026; under construction since Mar 2025 (tracker)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/litib-bay-club/"
+   },
+   {
+    "claim": "Contact Development Company developed Punta Mita, Punta Sayulita and Conrad Punta de Mita",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://litibubayclub.com/team/"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Architecture by Taller ADG",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://litibubayclub.com/real-estate/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Newport Beach, US (Contact Development Company); Mexico City (GBM)",
+   "developer_company": "Contact Development Company, LLC / GBM Real Estate Projects, S.A. de C.V. (site footer)",
+   "construction_start": "2025-03",
+   "handover_promised": "2027-Q1",
+   "unit_types": [
+    "villa",
+    "penthouse",
+    "3BR golf villa",
+    "4BR golf villa"
+   ],
+   "price_min": 1500000,
+   "price_max": 3100000,
+   "currency": "USD",
+   "foreign_ownership": null,
+   "amenities": [
+    "beach club",
+    "infinity pool",
+    "sports and adventure club",
+    "padel",
+    "pickleball",
+    "tennis",
+    "golf membership (Higuera)"
+   ],
+   "permit_authority": "Municipio de Bahia de Banderas; SEMARNAT (MIA)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Dated sales and construction milestones published",
+   "Developer team with named previous resort communities"
+  ],
+  "flags": [],
+  "sources": [
+   "https://litibubayclub.com/",
+   "https://litibubayclub.com/real-estate/",
+   "https://litibubayclub.com/team/",
+   "https://litibubayclub.com/press/",
+   "https://litibubayclub.com/wp-content/uploads/2026/05/Litibu-Bay-Club_Resident-Magazine_April-2026.pdf",
+   "https://www.oftmw.com/projects/litib-bay-club/",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "nayamara-thevelopers",
+  "name": "Nayamara",
+  "developer": "TheVelopers",
+  "area": "Amador, Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "stage": "off-plan",
+  "url": "https://www.panamaequity.com/buildings-in-panama/nayamara-panama/",
+  "docs_url": "https://www.nayamara.com/project",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: about 158 units of 1 and 2 bedrooms on 15 residential floors, 2.95 m ceilings, 4 residential lifts, 1 parking per unit",
+   "developer: rooftop 'The Zenith' amenities, interiors by Bettis Tarazi",
+   "developer: budget bands USD 280,000 to over 500,000",
+   "agent: pre-construction, delivery Q4 2029 / Q1 2030, USD 276K to 659K, about USD 6,000 per m2",
+   "agent: unit listings 46 m2 1BR USD 306,000; 100 m2 2BR USD 525,000"
+  ],
+  "note": "Pre-construction 15-floor condo building of about 158 one and two-bedroom units in Amador by TheVelopers, whose neighbouring Cavarosa tower reports 61% structure progress. An agent lists delivery for Q4 2029 or Q1 2030 at USD 276,000 to 659,000; the developer site gives building specs but no prices, plans, permit, escrow or start date. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 276000,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer lists earlier projects Velure, Vita, Victory Sport and Vector Wellness and reports monthly progress on Cavarosa and Bioma (not independently confirmed)",
+   "units": 158,
+   "payment_plan": null,
+   "price_per_m2": 6000,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No municipal construction permit or MiAmbiente EIA number published",
+   "escrow": "Nothing published",
+   "progress": "Pre-construction; no start date",
+   "plans": "Specs only (unit types, ceiling height, unit count); no plans",
+   "record": "TheVelopers names earlier projects Velure, Vita, Victory Sport and Vector Wellness and publishes monthly reports on its towers under construction",
+   "returns": "No guaranteed return; agent mentions 'long-term rental potential' without figures"
+  },
+  "claims": [
+   {
+    "claim": "About 158 units on 15 residential floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nayamara.com/project"
+   },
+   {
+    "claim": "Delivery Q4 2029 / Q1 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.panamaequity.com/buildings-in-panama/nayamara-panama/"
+   },
+   {
+    "claim": "Prices USD 276K to 659K, average about USD 6,000 per m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.panamaequity.com/buildings-in-panama/nayamara-panama/"
+   },
+   {
+    "claim": "1BR of 46 m2 at USD 306,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.panamaequity.com/buildings-in-panama/nayamara-panama/"
+   },
+   {
+    "claim": "Interiors by Bettis Tarazi",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nayamara.com/team"
+   },
+   {
+    "claim": "Developer's Cavarosa tower in Amador at 61% structure (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.the-velopers.com/cavarosa-amador-avances-construccion-octubre2026?hsLang=es-pa"
+   },
+   {
+    "claim": "Permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nayamara.com/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Panama City, Panama",
+   "handover_promised": "2030-Q1",
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 100,
+   "price_min": 276000,
+   "price_max": 659000,
+   "currency": "USD",
+   "amenities": [
+    "rooftop infinity pool",
+    "lagoon pool",
+    "wellness spa",
+    "gym and movement studio",
+    "hammock garden",
+    "BBQ areas",
+    "observation deck"
+   ],
+   "permit_authority": "Municipio de Panama; MiAmbiente (EIA)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Building specifications published",
+   "Developer reports monthly progress on its other Amador tower"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.nayamara.com/",
+   "https://www.nayamara.com/project",
+   "https://www.nayamara.com/team",
+   "https://www.nayamara.com/collection",
+   "https://www.panamaequity.com/buildings-in-panama/nayamara-panama/",
+   "https://www.the-velopers.com/",
+   "https://blog.the-velopers.com/cavarosa-amador-avances-construccion-octubre2026?hsLang=es-pa"
+  ]
+ },
+ {
+  "slug": "omen-tulum-omen-tulum-development-s-c-de-p-de-b-y-s-de-r-l-de-c-v",
+  "name": "Omen Tulum",
+  "developer": "Omen Tulum Development, S.C. de P. de B. y S. de R.L. de C.V. (Surreal Developments)",
+  "area": "Av. Kukulkan, Tulum",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "off-plan",
+  "url": "https://www.c21.site/omen-tulum/",
+  "docs_url": "https://omentulum.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 'Omen Tulum - Coming Soon, exclusive presale' landing page linking to Surreal Developments",
+   "developer: Surreal project list shows Omen Tulum in 'Preventa'",
+   "agent (Century 21): unit plans Kavir PH, Nilo swim-up, Zafir studio I, Sahar studio II and master plan levels PB to 03",
+   "agent: presale from MXN 3,873,450 (64 m2 studio)",
+   "PROFECO: promise-of-sale housing contract 3009-2025 registered 3 Jul 2025 to Omen Tulum Development (RFC OTD240614Q36), Av. Coba, Cancun"
+  ],
+  "note": "Presale condo project of studios, swim-ups and penthouses on Av. Kukulkan in Tulum by Surreal Developments, sold through a dedicated company whose promise-of-sale contract is registered with PROFECO (3009-2025, July 2025). Agents publish unit plans and a price from MXN 3.87 million, but the developer's own page is a 'coming soon' landing, no permit, escrow, unit count or delivery date is published, and the same developer's Soul Tulum missed its December 2024 delivery. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 3873450,
+   "currency": "MXN",
+   "title": "fideicomiso for foreigners (developer's Soul Tulum page; not stated for Omen)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 60523,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No construction or environmental licence published. The PROFECO-registered contract (3009-2025) is a consumer adhesion contract template with blank permit fields, not a permit",
+   "escrow": "Nothing published",
+   "progress": "Presale; no construction start or delivery date",
+   "plans": "Agent page (Century 21) shows unit plans for four typologies and master plan levels",
+   "record": "Surreal Developments (founded 2017) names no completed project; its Soul Tulum is still under construction after a December 2024 delivery promise",
+   "returns": "No yield or guarantee on pages opened; agent says amenities support short-term rental"
+  },
+  "claims": [
+   {
+    "claim": "Seller Omen Tulum Development has a PROFECO-registered promise-of-sale housing contract (3009-2025, 3 Jul 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=3009-2025"
+   },
+   {
+    "claim": "Project is in presale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://surreal-developments.com/page1"
+   },
+   {
+    "claim": "Presale price from MXN 3,873,450 for a 64 m2 unit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rivieramayacozy.com/listings/omen-tulum/"
+   },
+   {
+    "claim": "Typologies: studios, 3BR swim-up, 2BR penthouse",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rivieramayacozy.com/listings/omen-tulum/"
+   },
+   {
+    "claim": "Unit plans published for Kavir, Nilo, Zafir and Sahar",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.c21.site/omen-tulum/"
+   },
+   {
+    "claim": "Year built 2024 (agent field)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rivieramayacozy.com/listings/omen-tulum/"
+   },
+   {
+    "claim": "Developer Surreal Developments sells Soul Tulum, which was due December 2024 and is 'back under construction'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.soul-tulum.com/"
+   },
+   {
+    "claim": "Permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://omentulum.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "Puerto Cancun, Cancun, Mexico",
+   "developer_company": "Omen Tulum Development, S.C. de P. de B. y S. de R.L. de C.V. (RFC OTD240614Q36), per PROFECO",
+   "unit_types": [
+    "studio",
+    "3BR swim-up",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 64,
+   "price_min": 3873450,
+   "currency": "MXN",
+   "foreign_ownership": null,
+   "amenities": [
+    "spa",
+    "gym",
+    "wine room",
+    "library",
+    "ceramic studio",
+    "restaurant",
+    "pools",
+    "private beach club access"
+   ],
+   "permit_authority": "Municipio de Tulum; SEDETUS Quintana Roo",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_max_m2": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Seller company and its sale contract registered with PROFECO",
+   "Unit plans available through agents"
+  ],
+  "flags": [],
+  "sources": [
+   "https://omentulum.com/",
+   "https://surreal-developments.com/page1",
+   "http://surreal-developments.com",
+   "https://www.c21.site/omen-tulum/",
+   "https://rivieramayacozy.com/listings/omen-tulum/",
+   "https://century21infinity.es/en/propiedades/omen-tulum/",
+   "https://rpca.profeco.gob.mx/getDoc?p=3009-2025",
+   "https://www.soul-tulum.com/"
+  ]
  }
 ]

@@ -999,7 +999,7 @@
    "permit_claim": false,
    "permit_number": null,
    "plans_published": true,
-   "escrow": null,
+   "escrow": "Developer FAQ (all Metrovacesa projects): amounts paid before delivery guaranteed with interest by surety insurance or bank guarantee and deposited in a special account (Law 38/1999); no bank named yet for this phase",
    "progress_pct": null,
    "progress_updates": false,
    "developer_delivered": "Metrovacesa states 8,400 homes delivered 2018-2024 (dossier); Brainsre reports 1,805 homes delivered in 2025; earlier Ancor phases F2 listed on the same site",
@@ -1011,7 +1011,7 @@
   },
   "evidence": {
    "permit": "Dossier states the brochure was prepared from the Basic Project 'presented for processing of the building licence' (licence applied for, no number)",
-   "escrow": "Dossier only refers to documentation under Real Decreto 515/1989; no named guarantee or account for deposits on this project page (the 'Promoter Bank' field reads 'B. Financiador', no bank named)",
+   "escrow": "Metrovacesa FAQ states payments on account are guaranteed by surety insurance or bank guarantee in a special account; project page 'Promoter Bank' reads 'B. Financiador' (no bank named)",
    "progress": "Status bar shows 'On sale' only; construction not started",
    "plans": "Indicative floor plans in the English dossier",
    "record": "Listed developer; 1,805 homes delivered in 2025 per Brainsre",
@@ -1019,7 +1019,7 @@
   },
   "verification": {
    "permit": "developer",
-   "escrow": "none",
+   "escrow": "developer",
    "progress": "developer",
    "plans": "developer",
    "record": "independent",
@@ -1075,10 +1075,10 @@
     "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf"
    },
    {
-    "claim": "Deposits guaranteed by a named bank",
+    "claim": "Payments on account guaranteed by surety insurance or bank guarantee in a special account (general FAQ)",
     "status": "unverified",
     "by": "none",
-    "source": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3"
+    "source": "https://metrovacesa.com/en/faqs"
    },
    {
     "claim": "Completion date",
@@ -1131,24 +1131,26 @@
   "positives": [
    "Dossier openly states the licence is still being processed",
    "Floor plans and full specification published",
-   "Large listed developer with independently reported deliveries"
+   "Large listed developer with independently reported deliveries",
+   "Deposit guarantee mechanism explained in the developer FAQ"
   ],
   "flags": [],
   "sources": [
    "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3",
    "https://metrovacesa.com/en/developments/tenerife/arico",
    "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf",
-   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/",
+   "https://metrovacesa.com/en/faqs"
   ],
   "permit_number": null,
   "disclosure": {
    "permit": false,
-   "escrow": false,
+   "escrow": true,
    "progress": false,
    "plans": true,
    "record": true,
    "no_guaranteed_returns": true,
-   "score": 3,
+   "score": 4,
    "all_six": false
   },
   "verified_score": 1,
@@ -1728,6 +1730,1133 @@
    "all_six": false
   },
   "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "townsquare-sliema-st-property-investments",
+  "name": "Townsquare (Sliema residential tower)",
+  "developer": "ST Property Investments Ltd (Stivala Group), on the Townsquare site of Townsquare Sliema Ltd (Ganado, Gasan, Soler and Trapani Galea families)",
+  "area": "Qui-Si-Sana / Tigne Street, Sliema",
+  "country": "Malta",
+  "market": "Malta",
+  "stage": "off-plan",
+  "url": "https://townsquare.com.mt/",
+  "docs_url": "https://townsquare.com.mt/",
+  "docs_listed": [
+   "developer: mixed-use concept, tower of one double-height ground level and 27 residential levels, 7,500 m2 public open space, restoration of Villa Drago, design team (Martin Xuereb & Associates)",
+   "agency (Arcus Estates): marketed as a Special Designated Area (SDA) project, no prices",
+   "PA application PA/01398/23 (social impact assessment on the University of Malta repository)",
+   "press: court ruling and PA re-approval of revised plans (July 2026)"
+  ],
+  "note": "Long-disputed 27-floor residential tower with retail, parking and the restored Villa Drago in Sliema, now developed by the Stivala group's ST Property Investments and marketed by agents as an SDA project open to foreign buyers. Permit PA/01398/23 went through tribunal and court appeals; in July 2026 the Planning Authority approved revised plans removing the hotel and keeping apartments of at least 150 m2. No prices, completion date, deposit protection or progress are published by the developer. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (SDA, per agency)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 234,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "Developer site gives no permit number. Planning application PA/01398/23 is named in the social impact assessment and in the objectors' agreement reported by The Shift; the court ruled partly for objectors and the PA approved revised plans in July 2026",
+   "escrow": "Nothing published",
+   "progress": "No progress information on the developer site",
+   "plans": "No floor plans published",
+   "record": "Developer site names no delivered projects",
+   "returns": "No rental return language"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning application PA/01398/23 modifies earlier permit PA/01191/05 (tower of 27 residential floors over a double-height commercial level)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.um.edu.mt/library/oar/bitstream/123456789/117888/1/PA_01398_23_Townsquare%2C%20Sliema.pdf"
+   },
+   {
+    "claim": "PA/01398/23 proposed raising apartments from 159 to 234 (76 one-bed, 53 two-bed, 105 three-bed) and a 90-bed hotel",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.um.edu.mt/library/oar/bitstream/123456789/117888/1/PA_01398_23_Townsquare%2C%20Sliema.pdf"
+   },
+   {
+    "claim": "Court ruled partly for objectors: no hotel on public open space, no restaurants in the residential component, apartments at least 150 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theshiftnews.com/2026/01/14/michael-stivala-signs-agreement-with-townsquare-objectors-to-remove-hotel-plans-with-a-few-caveats/"
+   },
+   {
+    "claim": "PA approved revised plans in July 2026 removing the hotel, keeping the number of units and a 150 m2 minimum apartment size",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://whoswho.mt/en/planning-authority-approves-revised-scaled-back-townsquare-project-following-court-ruling"
+   },
+   {
+    "claim": "ST Property Investments signed a confidential settlement with 14 objectors in Jan 2026 to drop the hotel from the pending plans",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theshiftnews.com/2026/01/14/michael-stivala-signs-agreement-with-townsquare-objectors-to-remove-hotel-plans-with-a-few-caveats/"
+   },
+   {
+    "claim": "Project has Special Designated Area status (foreign buyers can buy without AIP permit)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arcusestates.com/en/property-for-sale/malta/sda/town-square"
+   },
+   {
+    "claim": "Tower of one double-height ground level and 27 residential levels with 7,500 m2 of landscaped open areas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://whoswho.mt/en/planning-authority-approves-revised-scaled-back-townsquare-project-following-court-ruling"
+   },
+   {
+    "claim": "Original 38-storey permit (2016) was revoked by the appeals tribunal in 2018",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://whoswho.mt/en/planning-authority-approves-revised-scaled-back-townsquare-project-following-court-ruling"
+   },
+   {
+    "claim": "Agency page describes 159 luxury apartments",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.um.edu.mt/library/oar/bitstream/123456789/117888/1/PA_01398_23_Townsquare%2C%20Sliema.pdf"
+   },
+   {
+    "claim": "Completion date and prices",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://townsquare.com.mt/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Malta",
+   "developer_company": "ST Property Investments Ltd (Stivala Group); site owner Townsquare Sliema Ltd",
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex"
+   ],
+   "size_min_m2": 150,
+   "size_max_m2": null,
+   "currency": "EUR",
+   "foreign_ownership": "Agency says SDA status, so non-residents can buy without an AIP permit (not confirmed by an official source we opened)",
+   "rental_programme": null,
+   "amenities": [
+    "7,500 m2 landscaped public space",
+    "restored Villa Drago with food and beverage",
+    "retail and offices",
+    "underground parking c.748-850 spaces",
+    "spa and gym (per SIA)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Planning Authority (Malta)",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Planning history is public and reported in detail by the press",
+   "Court set a minimum apartment size of 150 m2"
+  ],
+  "flags": [
+   {
+    "text": "The Shift reported in Jan 2026 that ST Property Investments signed a confidential agreement with 14 objectors who agreed to withdraw objections and not object to future applications for the site",
+    "source": "https://theshiftnews.com/2026/01/14/michael-stivala-signs-agreement-with-townsquare-objectors-to-remove-hotel-plans-with-a-few-caveats/"
+   },
+   {
+    "text": "A Maltese court ruled partly in favour of appellants against the 2023 permit, barring a hotel on public open space and requiring apartments of at least 150 m2; the PA approved revised plans in July 2026",
+    "source": "https://whoswho.mt/en/planning-authority-approves-revised-scaled-back-townsquare-project-following-court-ruling"
+   }
+  ],
+  "sources": [
+   "https://townsquare.com.mt/",
+   "https://arcusestates.com/en/property-for-sale/malta/sda/town-square",
+   "https://www.um.edu.mt/library/oar/bitstream/123456789/117888/1/PA_01398_23_Townsquare%2C%20Sliema.pdf",
+   "https://whoswho.mt/en/planning-authority-approves-revised-scaled-back-townsquare-project-following-court-ruling",
+   "https://theshiftnews.com/2026/01/14/michael-stivala-signs-agreement-with-townsquare-objectors-to-remove-hotel-plans-with-a-few-caveats/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "tucidide14-unipol-investimenti-abitarein",
+  "name": "Tucidide14",
+  "developer": "Unipol Investimenti SGR S.p.A. (owner and works executor) with AbitareIn S.p.A. as development and sales advisor (Euronext Milan listed)",
+  "area": "Via Tucidide 14, Ortica, Milan",
+  "country": "Italy",
+  "market": "Italy",
+  "stage": "off-plan",
+  "url": "https://abitarein.com/it/progetti/tucidide-14",
+  "docs_url": "https://abitarein.com/it/progetti/tucidide-14",
+  "docs_listed": [
+   "developer: studios, 1-bed and 2-bed apartments in a converted tower of the former Tucidide business park, studios from 43 m2",
+   "developer: completion of works 'end of August 2028'",
+   "developer: district plan with Courtyard hotel and residence, Homizy coliving, coworking, minimarket, laundry",
+   "developer: interior packs and specification (capitolato)",
+   "developer: legal line naming Unipol Investimenti SGR (VAT 03740811207) as promoter and AbitareIn (VAT 09281610965) as advisor"
+  ],
+  "note": "Office-to-residential conversion of a tower in Milan's former Tucidide business park near the M4 metro, promoted by Unipol Investimenti SGR with AbitareIn as advisor, offering studios to 2-beds from 43 m2 with completion of works set for end of August 2028. No prices, permit number, deposit guarantee, plans or progress are published; AbitareIn reported Milan's permit slowdown and sold 14 unpermitted project companies to Techbau in 2026. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Advisor AbitareIn reported 835 apartments delivered by Dec 2023 (Websim, Feb 2024) and names completed Milan projects such as Palazzo Sintesy (ready to move in) and Lambrate Luxury Living (ready for deed)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No permesso di costruire or SCIA number on the page",
+   "escrow": "No fideiussione (bank guarantee under Italian off-plan law) mentioned",
+   "progress": "No construction updates",
+   "plans": "Only room renderings and interior packs; no floor plans",
+   "record": "AbitareIn delivered 835 apartments by end-2023 per Websim; promoter Unipol Investimenti SGR names no delivered residential projects on the page",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Promoted by Unipol Investimenti SGR, owner of the building and executor of works, with AbitareIn as advisor",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/tucidide-14"
+   },
+   {
+    "claim": "Completion of works end of August 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/tucidide-14"
+   },
+   {
+    "claim": "Studios from 43 m2, also 1-bed and 2-bed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/tucidide-14"
+   },
+   {
+    "claim": "Part of the former Tucidide business park, two 11-floor towers of which Homizy's vehicle bought towers for coliving (92 apartments, 380 rooms)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aziendabanca.it/notizie/legal/deametra-siinq-homizy-siiq-acquisisce-un-complesso-immobiliare-in-via-tucidide-a-milano"
+   },
+   {
+    "claim": "AbitareIn had delivered 835 apartments and had 3,584 under construction by Dec 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.websim.it/azioni/small-mid-cap/notizie/abitarein-ricavi-a-15-8-milioni-riduce-l-indebitamento12/"
+   },
+   {
+    "claim": "Milan permit slowdown led AbitareIn to sell 14 project companies still awaiting permits to Techbau (closed 30 July 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://pub-c7ab6cd8de7147a49b60f21154aeddb7.r2.dev/static/investors/2026-08-06%20CS%20novestrale_clean.pdf"
+   },
+   {
+    "claim": "AbitareIn focusing on completing authorised sites, about 100 apartments under construction or in delivery (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://pub-c7ab6cd8de7147a49b60f21154aeddb7.r2.dev/static/investors/2026-08-06%20CS%20novestrale_clean.pdf"
+   },
+   {
+    "claim": "Energy class A1 or higher",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/tucidide-14"
+   },
+   {
+    "claim": "Building permit for the residential conversion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/tucidide-14"
+   },
+   {
+    "claim": "Deposits covered by fideiussione",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/tucidide-14"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Milan / Bologna, Italy",
+   "developer_company": "Unipol Investimenti SGR S.p.A. (VAT 03740811207); advisor AbitareIn S.p.A. (VAT 09281610965)",
+   "developer_units_delivered": 835,
+   "listed_or_audited": "Advisor AbitareIn S.p.A. listed on Euronext Milan (ticker ABT.MI); excluded from the STAR segment in Aug 2026",
+   "construction_start": null,
+   "handover_promised": "2028-Q3",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 43,
+   "size_max_m2": null,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; foreign buyers may purchase in Italy (EU and reciprocity rules)",
+   "rental_programme": null,
+   "brand": null,
+   "amenities": [
+    "Courtyard hotel in the district",
+    "coworking and meeting rooms",
+    "minimarket",
+    "self-service laundry",
+    "lockers",
+    "park and sports field",
+    "underground parking",
+    "near M4 metro"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Comune di Milano",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null
+  },
+  "positives": [
+   "Promoter and advisor legal entities named with VAT numbers",
+   "Specific completion month published"
+  ],
+  "flags": [
+   {
+    "text": "AbitareIn's chairman said in Aug 2026 that Milan's permit slowdown, running for almost three years, is structural; the company sold 14 project companies still awaiting permits to Techbau and Borsa Italiana removed its STAR qualification",
+    "source": "https://pub-c7ab6cd8de7147a49b60f21154aeddb7.r2.dev/static/investors/2026-08-06%20CS%20novestrale_clean.pdf"
+   }
+  ],
+  "sources": [
+   "https://abitarein.com/it/progetti/tucidide-14",
+   "https://abitarein.com/it/progetti/palazzo-sintesy",
+   "https://abitarein.com/it/progetti/lambrate-luxury-living",
+   "https://abitarein.com/it/investors/comunicati-stampa",
+   "https://pub-c7ab6cd8de7147a49b60f21154aeddb7.r2.dev/static/investors/2026-08-06%20CS%20novestrale_clean.pdf",
+   "https://www.websim.it/azioni/small-mid-cap/notizie/abitarein-ricavi-a-15-8-milioni-riduce-l-indebitamento12/",
+   "https://www.aziendabanca.it/notizie/legal/deametra-siinq-homizy-siiq-acquisisce-un-complesso-immobiliare-in-via-tucidide-a-milano"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "centro-limassol-cybarco",
+  "name": "Centro Limassol",
+  "developer": "Cybarco (Lanitis Group)",
+  "area": "Limassol city centre, near the Old Town and Anexartisias Street",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "stage": "under construction",
+  "url": "https://www.cybarco.com/project/centro-limassol/",
+  "docs_url": "https://www.cybarco.com/project/centro-limassol/",
+  "docs_listed": [
+   "developer: 60 one- and two-bedroom apartments, A-rated energy certificate, from EUR 350,000",
+   "developer: live availability table with unit, bedrooms, covered area and price",
+   "developer: price list PDF updated 30.10.2026 with SOLD marks, delivery March 2028 and date-based payment terms",
+   "developer: brochure PDF with indicative floor plans and specification",
+   "CBN (Jan 2026): listed among Cybarco projects under construction"
+  ],
+  "note": "Boutique block of 60 one- and two-bedroom apartments in central Limassol by Cybarco, with a price list (30 Oct 2026) showing 41 units sold, prices from EUR 350,000 and delivery in March 2028. Payments are fixed by date (40% at signing, 30% April 2027, 20% October 2027, 10% on delivery) rather than by construction stage; no permit number, deposit protection or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 350000,
+   "currency": "EUR",
+   "title": "freehold (separate title deeds after completion)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Cybarco states it has built in Cyprus since 1945 (Lanitis Group); CBN reports Trilogy Limassol Seafront handovers in 2026 and Cybarco's site lists Limassol Marina as ready to move in",
+   "units": 60,
+   "payment_plan": "EUR 20,000 non-refundable reservation; 40% on signing, 30% April 2027, 20% October 2027, 10% on delivery",
+   "price_per_m2": 5738,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No planning or building permit number published",
+   "escrow": "Not published",
+   "progress": "No updates on the page; CBN (26 Jan 2026) lists Centro Limassol as under construction",
+   "plans": "Indicative floor plans in the brochure; price list gives areas per unit",
+   "record": "Cybarco track record independently reported (Trilogy handovers)",
+   "returns": "No guaranteed return wording"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project under construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+   },
+   {
+    "claim": "60 one- and two-bedroom apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/centro-limassol/"
+   },
+   {
+    "claim": "Delivery March 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2025/08/Centro-Limassol-Pricelist-ENG-301026.pdf"
+   },
+   {
+    "claim": "41 units marked sold on the 30.10.2026 price list",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2025/08/Centro-Limassol-Pricelist-ENG-301026.pdf"
+   },
+   {
+    "claim": "Prices from EUR 350,000 (1-bed, 61 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/centro-limassol/"
+   },
+   {
+    "claim": "Payment 40% on signing, 30% April 2027, 20% October 2027, 10% on delivery; EUR 20,000 non-refundable reservation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2025/08/Centro-Limassol-Pricelist-ENG-301026.pdf"
+   },
+   {
+    "claim": "Developer's Trilogy project nearly complete with handovers under way",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+   },
+   {
+    "claim": "A-rated energy performance certificate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/centro-limassol/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/centro-limassol/"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/centro-limassol/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1945,
+   "developer_hq": "Nicosia, Cyprus",
+   "developer_company": "Cybarco (Lanitis Group)",
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 61,
+   "size_max_m2": 115,
+   "price_min": 350000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 40,
+   "payment_plan": "40% signing, 30% Apr 2027, 20% Oct 2027, 10% delivery",
+   "foreign_ownership": "EU buyers own freely; non-EU buyers need Council of Ministers permission (standard Cyprus rule, not stated on the page)",
+   "rental_programme": null,
+   "amenities": [
+    "outdoor swimming pool",
+    "pool lounge area",
+    "parking space per apartment",
+    "storeroom for 2-bed units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Limassol municipality / district planning authority",
+   "brochure_url": "https://www.cybarco.com/wp-content/uploads/2025/07/Centro-Limassol-Brochure.pdf",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Unit-by-unit price list with sizes and sold status, dated 30 Oct 2026",
+   "Fixed delivery month and full payment schedule published",
+   "Established developer with independently reported deliveries"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.cybarco.com/project/centro-limassol/",
+   "https://www.cybarco.com/wp-content/uploads/2025/08/Centro-Limassol-Pricelist-ENG-301026.pdf",
+   "https://www.cybarco.com/wp-content/uploads/2025/07/Centro-Limassol-Brochure.pdf",
+   "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "aurios-emerge-mota-engil",
+  "name": "Aurios",
+  "developer": "EMERGE - Mota-Engil Real Estate Developers, S.A. (Mota-Engil group, Euronext Lisbon: MOTA.LS)",
+  "area": "Quinta da China, Campanha (Douro riverside), Porto",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "under construction",
+  "url": "https://www.aurios.pt/en/",
+  "docs_url": "https://aurios.pt/en/apartamentos",
+  "docs_listed": [
+   "developer: villas (terrace, patio, garden types) and apartments T3+1 duplex to T5 duplex in a four-storey building",
+   "developer: brochure PDF (17 pages) with unit areas, finishes brochure, masterplan and plans download, 360 tours",
+   "agency (JLL press release, Jan 2023): 48 units of 250-350 m2 interior, co-exclusive sales with Predibisa",
+   "supplier news (Vicaima, May 2024): 26 villas and 22 apartments being built",
+   "portal (Supercasa): 17 units listed EUR 1.75m to 3.12m, energy class B, construction year 2026"
+  ],
+  "note": "Gated scheme of 26 villas and 22 apartments on the Douro riverside at Quinta da China, Porto, developed by Mota-Engil's real estate arm EMERGE and sold by JLL and Predibisa. Construction was under way by May 2024 and portal listings give 2026 as the build year with 17 units listed from EUR 1.75m; plans and brochure are published but no permit number, deposit protection or progress figure. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1750000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 48,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No alvara number on the developer site, brochure or listings",
+   "escrow": "Nothing published",
+   "progress": "No dated progress on the developer site; Vicaima reported construction under way in May 2024",
+   "plans": "Developer offers 'masterplan / plantas' download and brochure with unit areas",
+   "record": "Developer site names no completed EMERGE projects",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "48 units: 26 villas and 22 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.vicaima.com/en/news/aurios-new-milestone-with-vicaima-solutions-in-the-luxury-residential-sector-in-porto"
+   },
+   {
+    "claim": "Under construction (May 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.vicaima.com/en/news/aurios-new-milestone-with-vicaima-solutions-in-the-luxury-residential-sector-in-porto"
+   },
+   {
+    "claim": "Developed by EMERGE - Mota-Engil Real Estate Developers, S.A., part of listed Mota-Engil group",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.mota-engil.com/"
+   },
+   {
+    "claim": "Interior areas 250 to 350 m2, all with river views and 2-car garage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.jll.com/pt-pt/newsroom/jll-e-predibisa-apresentam-aurios-o-novo-projeto-de-luxo-no-porto"
+   },
+   {
+    "claim": "Sold in co-exclusivity by JLL and Predibisa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.jll.com/pt-pt/newsroom/jll-e-predibisa-apresentam-aurios-o-novo-projeto-de-luxo-no-porto"
+   },
+   {
+    "claim": "Prices EUR 1.75m to 3.12m for 17 listed units, energy class B, build year 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://supercasa.pt/zh-cn/aurios/e2226547"
+   },
+   {
+    "claim": "Designed by VMA Arquitetura",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vicaima.com/en/news/aurios-new-milestone-with-vicaima-solutions-in-the-luxury-residential-sector-in-porto"
+   },
+   {
+    "claim": "Highest level of energy certification (developer) versus class B on portal listings",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://supercasa.pt/zh-cn/aurios/e2226547"
+   },
+   {
+    "claim": "Building licence issued by Porto municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aurios.pt/en/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aurios.pt/en/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Porto, Portugal",
+   "developer_company": "EMERGE - Mota-Engil Real Estate Developers, S.A.",
+   "listed_or_audited": "Parent Mota-Engil SGPS listed on Euronext Lisbon (MOTA.LS)",
+   "construction_start": null,
+   "handover_promised": "2026",
+   "unit_types": [
+    "T3+1 duplex",
+    "T4 simplex",
+    "T4 duplex",
+    "T4+1 duplex",
+    "T5 duplex",
+    "T3 triplex villa",
+    "T4 villa"
+   ],
+   "size_min_m2": 250,
+   "size_max_m2": 350,
+   "price_min": 1750000,
+   "price_max": 3120000,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Portugal",
+   "rental_programme": null,
+   "amenities": [
+    "infinity pool",
+    "sauna and Turkish bath",
+    "gym",
+    "padel court",
+    "gardens",
+    "2-car garage per unit",
+    "EV charging",
+    "solar and photovoltaic panels"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal do Porto",
+   "brochure_url": "https://www.aurios.pt/couch/uploads/file/aurios-brochura-eng.pdf",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Part of a listed Portuguese construction group",
+   "Plans, finishes and 360 tours published",
+   "Construction confirmed under way by a third party since 2024"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aurios.pt/en/",
+   "https://aurios.pt/en/apartamentos",
+   "https://www.aurios.pt/couch/uploads/file/aurios-brochura-eng.pdf",
+   "https://www.jll.com/pt-pt/newsroom/jll-e-predibisa-apresentam-aurios-o-novo-projeto-de-luxo-no-porto",
+   "https://www.vicaima.com/en/news/aurios-new-milestone-with-vicaima-solutions-in-the-luxury-residential-sector-in-porto",
+   "https://supercasa.pt/zh-cn/aurios/e2226547",
+   "https://www.mota-engil.com/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "adagio-cancelada-metrovacesa",
+  "name": "Adagio",
+  "developer": "Metrovacesa S.A. (listed on the Madrid stock exchange)",
+  "area": "Cancelada, New Golden Mile, Estepona",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "url": "https://metrovacesa.com/en/developments/malaga/estepona/adagio",
+  "docs_url": "https://metrovacesa.com/en/developments/malaga/estepona/adagio",
+  "docs_listed": [
+   "developer: project status bar at 'Start of construction'",
+   "developer: 80 homes, 2-3 bedrooms, duplexes, ground floors with garden, penthouses with solarium; architects HCP; promoter bank BBVA",
+   "developer: typology table with built area, terrace, price and 'View plan' per type (from EUR 492,000 + VAT)",
+   "developer FAQ: amounts paid on account guaranteed by surety insurance or bank guarantee and held in a special account (LOE / Law 38/1999)"
+  ],
+  "note": "80-home development in Cancelada on Estepona's New Golden Mile by listed developer Metrovacesa, shown at the 'start of construction' stage with prices from EUR 492,000 plus VAT, plans per type and BBVA named as promoter bank. Metrovacesa's FAQ states that payments on account are guaranteed by surety insurance or bank guarantee in a special account; no licence number, completion date or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 492000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Developer FAQ: amounts paid before delivery guaranteed with interest by surety insurance or bank guarantee and deposited in a special account (Law 38/1999); promoter bank for Adagio is BBVA",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Metrovacesa delivered 1,805 homes in 2025 (Brainsre, results report); sister Cancelada scheme Symphony Suites listed by the developer",
+   "units": 80,
+   "payment_plan": null,
+   "price_per_m2": 3011,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No licence number published; status bar implies works started",
+   "escrow": "FAQ wording on surety insurance or bank guarantee and special account; BBVA named as promoter bank",
+   "progress": "Project status bar set to 'Start of construction' (stage indicator only, no % or date)",
+   "plans": "'View plan' per typology",
+   "record": "Listed developer; 1,805 deliveries in 2025 per Brainsre",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "80 homes with 2 and 3 bedrooms in Cancelada, Estepona",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Construction started (status bar)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Prices from EUR 492,000 + VAT (2-bed ground floor, 163.4 m2 built incl. common areas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Promoter bank BBVA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Payments on account guaranteed by surety insurance or bank guarantee in a special account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/faqs"
+   },
+   {
+    "claim": "Metrovacesa delivered 1,805 homes in 2025, 3,917 under construction at year-end",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   },
+   {
+    "claim": "Architects HCP",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Most homes have sea views; all with garage and storage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Building licence granted by Estepona council",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/malaga/estepona/adagio"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Metrovacesa S.A.",
+   "listed_or_audited": "Metrovacesa S.A. shares listed on the Spanish stock exchanges",
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "duplex",
+    "ground floor with garden",
+    "penthouse"
+   ],
+   "size_min_m2": 155.3,
+   "size_max_m2": 163.4,
+   "price_min": 492000,
+   "price_max": null,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Spain",
+   "rental_programme": null,
+   "amenities": [
+    "communal pool",
+    "sports area",
+    "garage",
+    "storage room",
+    "air conditioning",
+    "fitted kitchen with appliances",
+    "sea and mountain views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Estepona",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Deposit guarantee and special account explained in the developer FAQ, financing bank named",
+   "Plans and prices per typology published",
+   "Large listed developer with independently reported deliveries"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/en/developments/malaga/estepona/adagio",
+   "https://metrovacesa.com/en/faqs",
+   "https://metrovacesa.com/en/developments/malaga/estepona/symphony-suites-f2-cancelada",
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "promenade-heights-ellinikon-lamda",
+  "name": "Promenade Heights (The Ellinikon, Little Athens)",
+  "developer": "Lamda Development S.A. (Hellinikon S.A.; Euronext Athens listed)",
+  "area": "Little Athens, The Ellinikon, Athens Riviera",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "under construction",
+  "url": "https://theellinikon.com.gr/en/residences/little-athens/promenade-heights",
+  "docs_url": "https://theellinikon.com.gr/en/residences/little-athens/promenade-heights",
+  "docs_listed": [
+   "developer: 79 residences, 1-4 bedrooms, nine circular buildings, 200 m from the sea, architect 314 Architecture Studio",
+   "developer: estimated completion H1 2027, availability 'on the market'",
+   "developer: brochure and floor plans (DocSend), property navigator, 360 tour, FAQ on foreign buyers and Golden Visa",
+   "Lamda results coverage (May 2026): 79 Promenade Heights units allocated, Little Athens 85% absorbed",
+   "press (2025): Little Athens projects priced about EUR 7,500 to 9,500 per m2"
+  ],
+  "note": "Nine curved low-rise buildings with 79 apartments in the first Little Athens neighbourhood of The Ellinikon, developed and sold by listed Lamda Development with completion estimated H1 2027. Lamda's results coverage in May 2026 listed all 79 units as allocated, yet the page still shows it on the market; floor plans and brochure are published, but no permit number, deposit protection or project-specific progress. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-H1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 79,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No building permit number on the project page",
+   "escrow": "Not published (FAQ only describes reservation and sale agreements)",
+   "progress": "Project page has no progress update; Ellinikon progress page covers other assets; press says Little Athens first phase completion expected late 2026 to early 2027",
+   "plans": "Floor plans and brochure via DocSend links",
+   "record": "Lamda has not yet handed over Ellinikon homes; first handovers expected 2027 per press",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "79 residences, 1 to 4 bedrooms, in nine buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/english/2110163/the-ellinikon-lamda-development-aims-at-0-6-billion-euro-receipts-in-2026/"
+   },
+   {
+    "claim": "All 79 units allocated (under SPA or final negotiation) by early 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/english/2110163/the-ellinikon-lamda-development-aims-at-0-6-billion-euro-receipts-in-2026/"
+   },
+   {
+    "claim": "Project shown as 'on the market'",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/english/2110163/the-ellinikon-lamda-development-aims-at-0-6-billion-euro-receipts-in-2026/"
+   },
+   {
+    "claim": "Estimated completion H1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/promenade-heights"
+   },
+   {
+    "claim": "Little Athens first phase completion expected late 2026 to early 2027, first handovers in 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ot.gr/2026/07/10/english-edition/ellinikon-project-sets-timeline-for-homes-and-retail-opening/"
+   },
+   {
+    "claim": "Little Athens complexes priced about EUR 7,500 to 9,500 per m2 (Promenade Heights in that group)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ered.gr/real-estate-news/lamda-development-unveils-plans-for-east-village-launch-in-early-2026"
+   },
+   {
+    "claim": "200 m from the sea, underground parking and storage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/promenade-heights"
+   },
+   {
+    "claim": "No restrictions on foreign buyers; Golden Visa from EUR 800,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/contact/faqs"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/promenade-heights"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/contact/faqs"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Athens, Greece",
+   "developer_company": "Lamda Development S.A. (project company Hellinikon S.A.)",
+   "listed_or_audited": "Lamda Development S.A. listed on Euronext Athens",
+   "construction_start": null,
+   "handover_promised": "2027-H1",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse with jacuzzi",
+    "ground floor with garden"
+   ],
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; developer FAQ says no restrictions linked to the buyer's country",
+   "rental_programme": null,
+   "amenities": [
+    "central green promenade to The Ellinikon Park",
+    "private gardens on ground floor",
+    "penthouse terraces with jacuzzi",
+    "underground parking",
+    "storage"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Greek building permit system (e-Adeies) for the Ellinikon",
+   "brochure_url": "https://lamda.docsend.com/view/frmvp3chpjjuev4g",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Floor plans, brochure and 360 tour published",
+   "Listed developer's results give unit allocation figures"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theellinikon.com.gr/en/residences/little-athens/promenade-heights",
+   "https://theellinikon.com.gr/en/residences/little-athens",
+   "https://theellinikon.com.gr/en/contact/faqs",
+   "https://theellinikon.com.gr/en/our-news/progress-of-works",
+   "https://www.naftemporiki.gr/english/2110163/the-ellinikon-lamda-development-aims-at-0-6-billion-euro-receipts-in-2026/",
+   "https://www.ot.gr/2026/07/10/english-edition/ellinikon-project-sets-timeline-for-homes-and-retail-opening/",
+   "https://ered.gr/real-estate-news/lamda-development-unveils-plans-for-east-village-launch-in-early-2026"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
   "added": "2026-11-01",
   "status": "active"
  }

@@ -125,7 +125,7 @@
    },
    {
     "claim": "Residences first announced in August 2021 with resort opening planned for mid-2022 and prices from USD 650,000",
-    "status": "verified",
+    "status": "unverified",
     "by": "none",
     "source": "https://www.anantaraubud-residences.com/pressreleases/anantara-expands-its-luxury-portfolio-with-the-announcement-of-anantara-ubud-bali-resort"
    },
@@ -2541,6 +2541,185 @@
    "https://eng.oceaniq-nusapenida.com/genplan/",
    "https://oceaniq-nusapenida.com/blog/",
    "https://www.linkedin.com/posts/oceaniq-bali_nusapenida-constructionupdate-balirealestate-activity-7518261554107256832-k3Wn"
+  ]
+ },
+ {
+  "slug": "mandarin-oriental-residences-bali-harmoni-bali",
+  "name": "Mandarin Oriental Residences, Bali",
+  "developer": "Harmoni Bali (PT Harmoni Cakrawala Bali per portal; chairman Leo Koguan), managed by Mandarin Oriental Hotel Group",
+  "area": "Bukit Pandawa, South Kuta (Bukit peninsula)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.mandarinoriental.com/en/residences/upcoming/bali",
+  "docs_url": "https://www.mandarinoriental.com/en/residences/upcoming/bali",
+  "permit_number": null,
+  "docs_listed": [
+   "brand page: 68 private villas on an 8-hectare site above the hotel, private clubhouse, access to resort and beach",
+   "brand press release (19 Jul 2024): resort of 110 suites and villas opening 2027; residences of 3-6 bedrooms; developer Harmoni Bali",
+   "portal: 49 three- and four-bedroom residences, developer PT Harmoni Cakrawala Bali, handover Q4 2027, leasehold, price on application",
+   "trade press (2017): earlier 'Residences at Mandarin Oriental, Bali' plan of 91 villas at Bukit Pandawa Resort & Golf with construction on first 22 sold units"
+  ],
+  "note": "Branded villas above the planned Mandarin Oriental, Bali resort on the Bukit Pandawa cliffs, developed by Harmoni Bali and listed by Mandarin Oriental as an upcoming residence; the brand page gives 68 villas on 8 ha while a sales portal now lists 49 residences with handover in Q4 2027 and price on application. A residences scheme under the same brand at Bukit Pandawa was reported under construction as far back as 2017. No price, lease term, permit, escrow, plans or progress are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "leasehold (per portal; terms not published)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 68,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on the brand page, press release or portal",
+   "escrow": null,
+   "progress": "No construction status; press release only gives a 2027 resort opening",
+   "plans": "No floor plans or sizes published",
+   "record": "Mandarin Oriental is the operator, not the developer; no delivered project by Harmoni Bali is named",
+   "returns": "No yield or guarantee language on the brand page"
+  },
+  "positives": [
+   "Global listed hotel group named as manager on its own website",
+   "Partnership and developer name confirmed in the brand's press release and trade press",
+   "No rental yield or guaranteed-return marketing"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Mandarin Oriental will manage the resort and branded residences, developed with Harmoni Bali",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tophotel.news/mandarin-oriental-opens-in-bali"
+   },
+   {
+    "claim": "68 private villas on an 8-hectare site",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.so/projects/mandarin-oriental-residences-bali"
+   },
+   {
+    "claim": "Resort opening in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://press.mandarinoriental.com/mandarin-oriental-to-open-a-luxury-resort-and-branded-residences-in-bali/?lang=eng"
+   },
+   {
+    "claim": "Residences handover Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/mandarin-oriental-residences-bali"
+   },
+   {
+    "claim": "Villas range from 3 to 6 bedrooms (press release) vs 3-4 bedrooms (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://press.mandarinoriental.com/mandarin-oriental-to-open-a-luxury-resort-and-branded-residences-in-bali/?lang=eng"
+   },
+   {
+    "claim": "Developer entity PT Harmoni Cakrawala Bali",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/mandarin-oriental-residences-bali"
+   },
+   {
+    "claim": "Earlier Mandarin Oriental residences scheme at Bukit Pandawa had construction underway on 22 sold villas in 2017",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hoteldesigns.net/industry-news/mandarin-oriental-real-estate-project-taking-shape-in-bali"
+   },
+   {
+    "claim": "Leasehold tenure",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/mandarin-oriental-residences-bali"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mandarinoriental.com/en/residences/upcoming/bali"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "PT Harmoni Cakrawala Bali (portal); brand release names 'Harmoni Bali'",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Operator Mandarin Oriental Hotel Group (Mandarin Oriental International, part of Jardine Matheson group)",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5-6BR villa (press release)"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold per portal; foreigners cannot hold freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Mandarin Oriental",
+   "amenities": [
+    "private clubhouse",
+    "infinity pool",
+    "fitness centre",
+    "steam room, sauna, cold plunge",
+    "coworking and library",
+    "kids' play areas",
+    "outdoor cinema",
+    "resort beach access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG and SLF via SIMBG/OSS)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.mandarinoriental.com/en/residences/upcoming/bali",
+   "https://press.mandarinoriental.com/mandarin-oriental-to-open-a-luxury-resort-and-branded-residences-in-bali/?lang=eng",
+   "https://tophotel.news/mandarin-oriental-opens-in-bali",
+   "https://offplan.so/projects/mandarin-oriental-residences-bali",
+   "https://hoteldesigns.net/industry-news/mandarin-oriental-real-estate-project-taking-shape-in-bali"
   ]
  }
 ]

@@ -1534,5 +1534,1248 @@
    "all_six": false
   },
   "verified_score": 0
+ },
+ {
+  "slug": "j-tower-3-phnom-penh-tanichu-assetment",
+  "name": "J-Tower 3 Phnom Penh",
+  "developer": "Tanichu Assetment Co., Ltd.",
+  "area": "Tonle Bassac (South BKK1), Chamkarmon, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "under construction",
+  "url": "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/",
+  "docs_url": "https://j-tower3.com/",
+  "seed": {
+   "price": 330000,
+   "currency": "USD",
+   "title": "strata title (foreigners above ground floor, within the 70% cap)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 10,
+   "progress_updates": true,
+   "developer_delivered": "Developer and agent name earlier Tanichu projects J-Village Apartment, J-City, J-Tower 1 and J-Tower 2 in Phnom Penh (agent page); developer says it has built in Cambodia since 2013",
+   "units": 360,
+   "payment_plan": null,
+   "price_per_m2": 1853
+  },
+  "docs_listed": [
+   "developer: 77 floors plus 2 basements, 333 m, 360 three-bedroom units (166 and 178 sq m types, penthouses 332 to 510 sq m), land 1,836 sq m",
+   "developer: construction start Dec 2023, scheduled completion Dec 2028, delivery Jan 2029",
+   "developer: room-type plan pages (Y166NE, Y166NW, Y166SE, Y166SW, Y178E, Y178W), PDF brochure",
+   "agent (IPS, updated 20 Oct 2026): from USD 330,000 (USD 1,853 per sq m), 95% sold, construction progress 10%, handover 1 Jan 2030",
+   "agent: construction report 17 Oct 2026, structure complete to 8SL, 9SL 70%"
+  ],
+  "note": "Japanese-developed 77-storey, 360-unit tower billed as Cambodia's tallest, groundbreaking 27 Dec 2023 (Construction & Property). The agent reports about 10% progress and structure to the 8th structural level in Oct 2026, with handover listed as Jan 2030 against the developer's Dec 2028 completion; no permit number or deposit protection is published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No construction permit number published; developer site shows only its estate agent licence E-14-135",
+   "escrow": null,
+   "progress": "Agent IPS page: 'Construction Progress 10%', report dated 17 Oct 2026 with floor-by-floor structural status",
+   "plans": "Developer publishes room-type plans and a PDF brochure",
+   "record": "Earlier J-City, J-Tower 1 and J-Tower 2 named by agent and developer; not confirmed by an independent source in this session",
+   "returns": "No guaranteed return or yield on developer or agent pages"
+  },
+  "positives": [
+   "Dated floor-by-floor construction reports published (via agent)",
+   "Unit plans and full building data published by developer"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking held 27 Dec 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://construction-property.com/8th-tallest-building-in-asean-opens-construction-center-in-phnom-penh/"
+   },
+   {
+    "claim": "77 floors, 360 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://construction-property.com/8th-tallest-building-in-asean-opens-construction-center-in-phnom-penh/"
+   },
+   {
+    "claim": "Project value over USD 150 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://construction-property.com/8th-tallest-building-in-asean-opens-construction-center-in-phnom-penh/"
+   },
+   {
+    "claim": "Building height 333 m",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://construction-property.com/8th-tallest-building-in-asean-opens-construction-center-in-phnom-penh/"
+   },
+   {
+    "claim": "Scheduled completion Dec 2028, delivery Jan 2029",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/"
+   },
+   {
+    "claim": "Construction about 10% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/"
+   },
+   {
+    "claim": "95% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/"
+   },
+   {
+    "claim": "Freehold strata title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/"
+   },
+   {
+    "claim": "Developer delivered J-Tower 1 and J-Tower 2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://j-tower3.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2013,
+   "developer_hq": "Phnom Penh, Cambodia (J-City Condominium, BKK1)",
+   "developer_company": "Tanichu Assetment Co., Ltd. (estate agent licence E-14-135)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-12",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 166,
+   "size_max_m2": 510,
+   "price_min": 330000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata title; foreigners may own units above the ground floor within the 70% per-building cap",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "77F sky pool and sky bar",
+    "indoor and kids pools",
+    "fitness gym",
+    "public bath and spa",
+    "bowling and karaoke",
+    "26F indoor park",
+    "nurse station",
+    "laundry service"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction (construction permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://j-tower3.com/",
+   "https://ips-cambodia.com/projects/tonle-bassac/tanichu-assetment-co-ltd/35-j-tower-3-phnom-penh/",
+   "https://construction-property.com/8th-tallest-building-in-asean-opens-construction-center-in-phnom-penh/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "diamond-bay-garden-ocic",
+  "name": "Diamond Bay Garden (with Somerset Diamond Bay Garden)",
+  "developer": "Diamond Bay Garden Co., Ltd. (affiliate of Overseas Cambodian Investment Corporation, OCIC)",
+  "area": "Koh Pich (Diamond Island), Tonle Bassac, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "under construction",
+  "url": "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/",
+  "docs_url": "https://www.diamondbaygarden.com/",
+  "seed": {
+   "price": 132067,
+   "currency": "USD",
+   "title": "freehold strata title (agent)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 80,
+   "progress_updates": false,
+   "developer_delivered": "Developer site credits OCIC with Koh Pich districts and other large developments; no completed project named on the DBG site",
+   "units": 591,
+   "payment_plan": null,
+   "price_per_m2": 2809
+  },
+  "docs_listed": [
+   "developer: studio/1BR, 2BR and 3BR residence pages, e-brochure, amenities, top 10 floors to be managed by Ascott as Somerset",
+   "developer: Tower A target completion 2026",
+   "agent (IPS, updated 20 Aug 2026): 591 units in phase 1, three 39-storey towers, from USD 132,067 (USD 2,809 per sq m), 55% sold, construction progress 80%",
+   "agent: 'Guaranteed Returns' and 'GRR available' for Somerset-managed units on floors 27 to 29 and 31 to 37"
+  ],
+  "note": "Three 39-storey towers on Koh Pich by an OCIC affiliate, with the top floors to be run by Ascott as Somerset Diamond Bay Garden (agreement reported by TTG Asia, Mar 2024). The agent lists 80% construction progress and markets guaranteed rental return (GRR) units; no permit number, escrow or bank guarantee is published, and Tower A was targeted for 2026. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Agent IPS page: 'Construction Progress 80%' (updated 20 Aug 2026); developer says Tower A target completion 2026; no dated photos from the developer",
+   "plans": "Developer residence pages for each unit type and e-brochure",
+   "record": "Developer cites OCIC's Koh Pich and infrastructure role but names no delivered residential project on this site",
+   "returns": "Agent page advertises 'Guaranteed Returns' and GRR units managed by Ascott (Somerset)"
+  },
+  "positives": [
+   "Ascott management agreement confirmed by trade press",
+   "Unit plans and price per sq m published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Ascott to manage the top floors as Somerset Diamond Bay Garden",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/2024/03/29/ascott-ocic-sign-somerset-diamond-bay-garden-phnom-penh/"
+   },
+   {
+    "claim": "Developed by an OCIC affiliate",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/2024/03/29/ascott-ocic-sign-somerset-diamond-bay-garden-phnom-penh/"
+   },
+   {
+    "claim": "Construction 80% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/"
+   },
+   {
+    "claim": "Tower A completion in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.diamondbaygarden.com/about"
+   },
+   {
+    "claim": "591 units in three 39-storey towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/"
+   },
+   {
+    "claim": "Guaranteed rental returns on Somerset units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/"
+   },
+   {
+    "claim": "Freehold strata title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/"
+   },
+   {
+    "claim": "55% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/"
+   },
+   {
+    "claim": "PropertyGuru award winner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.diamondbaygarden.com/about"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Phnom Penh, Cambodia",
+   "developer_company": "Diamond Bay Garden Co., Ltd. (OCIC affiliate)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "shophouse"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 170,
+   "price_min": 132067,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "flexible payments and loans mentioned by agent, no terms",
+   "foreign_ownership": "Strata title; foreigners may own units above the ground floor within the 70% cap",
+   "rental_programme": "Somerset by Ascott on floors 27 to 29 and 31 to 37 with guaranteed rental return units (no figure published)",
+   "service_charge": null,
+   "brand": "Somerset (The Ascott Limited)",
+   "amenities": [
+    "infinity pool",
+    "sky bar and sky garden",
+    "gym",
+    "yoga studio",
+    "jogging track",
+    "playground",
+    "concierge",
+    "1,300 parking spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction",
+   "brochure_url": "https://www.diamondbaygarden.com/dbg-brochure"
+  },
+  "sources": [
+   "https://www.diamondbaygarden.com/",
+   "https://www.diamondbaygarden.com/about",
+   "https://www.diamondbaygarden.com/newsroom",
+   "https://ips-cambodia.com/projects/tonle-bassac/ocic/43-diamond-bay-garden/",
+   "https://www.ttgasia.com/2024/03/29/ascott-ocic-sign-somerset-diamond-bay-garden-phnom-penh/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "the-golf-colombo-08-prime-residencies",
+  "name": "The Golf - Colombo 08",
+  "developer": "Prime Residencies (Prime Group / Prime Lands)",
+  "area": "Colombo 08 (Borella), bordering the Royal Colombo Golf Course",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "stage": "off-plan",
+  "url": "https://www.primelands.lk/apartment/en",
+  "docs_url": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en",
+  "seed": {
+   "price": 95700000,
+   "currency": "LKR",
+   "title": "condominium apartment (foreign buyers subject to Sri Lankan condominium rules)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 64,
+   "payment_plan": "'Prime 1% Payment Plan': 25% to reserve, 1% monthly instalments, 10% bullet payment every 12 months, 28% at handover",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: 64 residences on 12 floors, 2BR and 3BR from 1,032 to 2,072 sq ft, some with plunge pools over the golf course",
+   "developer: starting price LKR 95,700,000, status 'ONGOING'",
+   "developer: Prime 1% payment plan (25% reservation, 1% monthly, 10% annual bullets, 28% at handover)",
+   "developer: typical and second floor plans, unit types 01 to 06, sales-kit brochure PDF",
+   "developer: amenities rooftop terrace, gym, adult and kids pools, business lounge"
+  ],
+  "note": "Boutique 64-unit, 12-floor apartment block by Prime Group overlooking the Royal Colombo Golf Course, priced from LKR 95.7M and sold on a 1% monthly payment plan with 28% due at handover. The developer page publishes plans and payment terms but no completion date, approval number, construction progress or deposit protection. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Status shown only as 'ONGOING'; no dates or photos",
+   "plans": "Developer page shows typical and second-floor plans and unit types 01 to 06; brochure PDF",
+   "record": "Group site lists other ongoing and completed apartment projects but names no delivered project on the pages opened",
+   "returns": "Mentions 'high-value investment' but no guaranteed return or yield"
+  },
+  "positives": [
+   "Price and detailed payment plan published",
+   "Floor plans and brochure available without registration"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "64 residences on 12 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "Starting price LKR 95.7M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "Overlooks the Royal Colombo Golf Course",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "First 1% payment plan in Sri Lanka",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "Developer group includes listed Prime Lands Residencies PLC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "Urban Development Authority approval held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Colombo 08, Sri Lanka (75 D.S. Senanayake Mawatha, Borella)",
+   "developer_company": "Prime Residencies (Prime Group); group lists Prime Lands Residencies PLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Group subsidiary Prime Lands Residencies PLC named on developer site",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 96,
+   "size_max_m2": 192,
+   "price_min": 95700000,
+   "price_max": null,
+   "currency": "LKR",
+   "deposit_pct": 25,
+   "payment_plan": "25% reservation, 1% monthly, 10% every 12 months, 28% at handover",
+   "foreign_ownership": "Foreigners may buy condominium units in Sri Lanka (above ground floor); no project-specific statement",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop terrace",
+    "gym",
+    "adult pool",
+    "kids pool",
+    "business lounge",
+    "private plunge pools (selected units)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Urban Development Authority / Colombo Municipal Council; Condominium Management Authority",
+   "brochure_url": "https://plcms.primelands.lk/images/250616140610The_Golf_Brochure_05.20_Sales_KIT.pdf"
+  },
+  "sources": [
+   "https://www.primelands.lk/apartment/THE-GOLF-COLOMBO-08/en",
+   "https://www.primelands.lk/apartment/en",
+   "https://www.primelands.lk/",
+   "https://plcms.primelands.lk/images/250616140610The_Golf_Brochure_05.20_Sales_KIT.pdf"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "canterbury-crest-resort-apartments-home-lands",
+  "name": "Canterbury Crest Resort Apartments",
+  "developer": "Home Lands (Home Lands Group, construction by Heyraa Construction)",
+  "area": "Canterbury Golf City, Kahathuduwa, Piliyandala (Greater Colombo)",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "stage": "under construction",
+  "url": "https://www.homelands.lk/news-and-events/home-lands-breaks-ground-on-canterbury-crest-resort-apartments",
+  "docs_url": "https://www.homelands.lk/apartments/canterbury-crest-resort-apartments-piliyandala",
+  "seed": {
+   "price": 37000000,
+   "currency": "LKR",
+   "title": "condominium apartment",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer names earlier phases of the same Canterbury Golf City (Canterbury Golf Resort Apartments, Canterbury Garden Resort Apartments, Canterbury Lexus, Canterbury Golf Villas, Canterbury Golf Residencies) with 1,200 units; not independently confirmed",
+   "units": 96,
+   "payment_plan": "customised down payment, period and instalment frequency (no figures)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer project page: from LKR 37M, two towers, floor plans 2BR (950 sq ft) and 3BR (1,100 to 1,300 sq ft) per unit position, VR tour, brochure",
+   "developer news (23 Mar 2026): groundbreaking and foundation stone 19 Mar 2026, 96 apartments, five floors, final phase of Canterbury Golf City",
+   "developer: 55-acre township with 9-hole golf course and 55 amenities"
+  ],
+  "note": "96-unit final phase of Home Lands' 55-acre Canterbury Golf City south of Colombo, groundbreaking 19 Mar 2026 per the developer's own news post, priced from LKR 37M. Unit plans are published but no approval number, completion date, deposit protection or independent confirmation of the township's delivered phases was found. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer news post dated 23 Mar 2026 reports groundbreaking on 19 Mar 2026 and start of construction; no later updates",
+   "plans": "Developer page lists every unit type with size and floors; brochure download",
+   "record": "Developer news names five earlier phases in Canterbury Golf City and 1,200 units; no independent source opened",
+   "returns": "Marketed for 'Residential/Investment' use, no guaranteed return or yield"
+  },
+  "positives": [
+   "Dated groundbreaking announcement and full unit list with sizes",
+   "In-house contractor with CIDA CS2 grading (developer statement)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking held 19 Mar 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-breaks-ground-on-canterbury-crest-resort-apartments"
+   },
+   {
+    "claim": "96 apartments in two towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/apartments/canterbury-crest-resort-apartments-piliyandala"
+   },
+   {
+    "claim": "Canterbury Golf City already has 1,200 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-breaks-ground-on-canterbury-crest-resort-apartments"
+   },
+   {
+    "claim": "Prices from LKR 37M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/apartments/canterbury-crest-resort-apartments-piliyandala"
+   },
+   {
+    "claim": "Contractor Heyraa Construction holds CIDA CS2 grading",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-breaks-ground-on-canterbury-crest-resort-apartments"
+   },
+   {
+    "claim": "Building has five floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.homelands.lk/apartments/canterbury-crest-resort-apartments-piliyandala"
+   },
+   {
+    "claim": "Best Developer Sri Lanka award (PropertyGuru)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-breaks-ground-on-canterbury-crest-resort-apartments"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/apartments/canterbury-crest-resort-apartments-piliyandala"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sri Lanka (offices in Australia, Dubai and London per developer)",
+   "developer_company": "Home Lands Group of Companies (14 companies, chairman Nalin Herath)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 88,
+   "size_max_m2": 121,
+   "price_min": 37000000,
+   "price_max": null,
+   "currency": "LKR",
+   "deposit_pct": null,
+   "payment_plan": "flexible customised plans, no figures",
+   "foreign_ownership": "Foreigners may buy condominium units in Sri Lanka; no project-specific statement",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pool",
+    "pickleball court",
+    "outdoor gym",
+    "9-hole golf course",
+    "jogging track",
+    "kids play area",
+    "medical center",
+    "mini market"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Urban Development Authority / local authority; Condominium Management Authority",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.homelands.lk/apartments/canterbury-crest-resort-apartments-piliyandala",
+   "https://www.homelands.lk/news-and-events/home-lands-breaks-ground-on-canterbury-crest-resort-apartments",
+   "https://www.homelands.lk/apartments",
+   "https://www.homelands.lk/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "mandani-bay-quay-htland",
+  "name": "Mandani Bay Quay",
+  "developer": "HTLand, Inc. (joint venture of Hongkong Land and Taft Properties)",
+  "area": "F.E. Zuellig Avenue, North Reclamation Area, Mandaue City, Cebu",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "under construction",
+  "url": "https://www.mandanibay.com/residence/",
+  "docs_url": "https://www.mandanibay.com/news/mandani-bay-quay-3rd-quarter-2025-project-updates/",
+  "seed": {
+   "price": null,
+   "currency": "PHP",
+   "title": "condominium unit (subject to 40% foreign cap)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "HL 33619 (Quay Tower 1); HL 33645 (Tower 2); HL 34539 (Tower 3)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "First enclave Mandani Bay Suites is sold out (developer); completion of the Suites not confirmed in this session",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: Quay is the second residential enclave, 3 residential towers and 1 office tower, Active Zone amenities with 50 m lap pool",
+   "developer: Mandani Bay Suites sold out, Quay Tower 1 selling, Tower 2 to be launched",
+   "developer: quarterly construction updates (Q2 2024, Q1 2025, Q3 2025) with photos of towers, podium, unit fixtures and boardwalk",
+   "developer: brochures and catalogues page, master plan",
+   "DHSUD list: LTS HL 33619 (Tower 1, May 2018), HL 33645 (Tower 2, Aug 2018), HL 34539 (Tower 3, Oct 2019) to HT Land, Inc."
+  ],
+  "note": "Second residential enclave of the Hongkong Land and Taft Properties waterfront township in Mandaue, Cebu, with three residential towers. The DHSUD lists show Licenses to Sell for all three towers (2018 to 2019) and the developer posts quarterly construction photo updates (latest Q3 2025 showing unit fit-out), but no prices, turnover date or unit plans are published on the site. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not on developer pages; DHSUD list mirrored on lumingon.com shows HL 33619 (Tower 1), HL 33645 (Tower 2) and HL 34539 (Tower 3), owner HT Land, Inc., project type RC PD 957",
+   "escrow": null,
+   "progress": "Developer news: 'Mandani Bay Quay 3rd Quarter 2025 Project Updates' with photos of towers, podium, residential unit fixtures, boardwalk",
+   "plans": "No unit plans on public pages; amenity plan only",
+   "record": "Developer states Mandani Bay Suites is sold out; delivery not confirmed",
+   "returns": "No guaranteed return or yield wording"
+  },
+  "positives": [
+   "DHSUD License to Sell entries for each tower",
+   "Dated quarterly construction updates",
+   "Backed by Hongkong Land"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Quay Tower 1 holds DHSUD LTS HL 33619",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-1--a13db01992ba4cc583aa5c1d63e493af"
+   },
+   {
+    "claim": "Quay Tower 2 holds DHSUD LTS HL 33645",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-2--79ae0199a10a41d3a2d7ec6bbd987c7d"
+   },
+   {
+    "claim": "Quay Tower 3 holds DHSUD LTS HL 34539",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-3--7c75fc90945a4c51887196b4a3af30f5"
+   },
+   {
+    "claim": "Developer is HTLand, Inc.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-3--7c75fc90945a4c51887196b4a3af30f5"
+   },
+   {
+    "claim": "HTLand is a JV of Hongkong Land and Taft Properties",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mandanibay.com/?page_id=36"
+   },
+   {
+    "claim": "Construction progressing to unit fit-out (Q3 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mandanibay.com/news/mandani-bay-quay-3rd-quarter-2025-project-updates/"
+   },
+   {
+    "claim": "Mandani Bay Suites sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mandanibay.com/residences/mandani-bay-suites/"
+   },
+   {
+    "claim": "Quay has 3 residential towers and 1 office tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mandanibay.com/residence/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mandanibay.com/residence/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cebu, Philippines",
+   "developer_company": "HT Land, Inc.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Partner Hongkong Land is listed (per developer description)",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condominium unit within the 40% foreign-ownership cap",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "50 m lap pool",
+    "kids and leisure pools",
+    "clubhouse",
+    "sports hall",
+    "outdoor fitness",
+    "300 m Green Promenade",
+    "boardwalk",
+    "playgrounds"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell under PD 957)",
+   "brochure_url": "https://www.mandanibay.com/catalogues-brochures/"
+  },
+  "sources": [
+   "https://www.mandanibay.com/",
+   "https://www.mandanibay.com/residence/",
+   "https://www.mandanibay.com/residences/mandani-bay-suites/",
+   "https://www.mandanibay.com/project/",
+   "https://www.mandanibay.com/?page_id=36",
+   "https://www.mandanibay.com/news/",
+   "https://www.mandanibay.com/news/mandani-bay-quay-3rd-quarter-2025-project-updates/",
+   "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-1--a13db01992ba4cc583aa5c1d63e493af",
+   "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-2--79ae0199a10a41d3a2d7ec6bbd987c7d",
+   "https://lumingon.com/license-to-sell/mandani-bay-quay-tower-3--7c75fc90945a4c51887196b4a3af30f5"
+  ],
+  "permit_number": "HL 33619 (Quay Tower 1); HL 33645 (Tower 2); HL 34539 (Tower 3)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "armani-hallson-klcc-armani-group",
+  "name": "Armani Hallson KLCC (Residensi Armani Hallson KLCC)",
+  "developer": "Armani Hallson KLCC Sdn. Bhd. (Armani Group)",
+  "area": "KL City Centre, near Bukit Nanas and Jalan P. Ramlee, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://armanigroup.com.my/",
+  "docs_url": "https://armanihallsonklcc.com/",
+  "seed": {
+   "price": 1100000,
+   "currency": "MYR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": false,
+   "permit_number": "30256-2/06-2028/0465(A)-(S)",
+   "plans_published": true,
+   "escrow": "Developer names no HDA account; TEDUH records a Schedule H (Jadual H) sale agreement under the statutory Housing Development Account regime",
+   "progress_pct": 37.5,
+   "progress_updates": true,
+   "developer_delivered": "TEDUH shows the same developer company completed Taman Ipil Permata (48 terrace houses, Seberang Perai Selatan) with CCC on 3 Apr 2025 and vacant possession 7 Apr 2025",
+   "units": 2215,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer project site: SOHO and SOVO concept, unit plans Types A, B, B1, C, D, E, facilities renders (L10 garden, L67 pool, L76 onsen and heated pool, L78 viewing deck), location map",
+   "TEDUH: sales permit 30256-2/06-2028/0465(A)-(S) (12 Jun 2025 to 11 Jun 2028), developer licence 30256/10-2027/0255(A)",
+   "TEDUH: 1,440 suite homes (78 floors) RM1,143,806 to RM5,470,971 and 775 SOHO (69 floors) RM1,100,000 to RM1,702,857",
+   "TEDUH: both components 37.50% built, status Lancar; approved 24-month delivery extension to 20 Jun 2030",
+   "TEDUH: KPKT-approved brochure"
+  ],
+  "note": "2,215-unit, 78-storey SOHO and suite tower in central KL by Armani Group, priced from RM1.1M (above KL's foreign-buyer floor). TEDUH shows 37.5% built and on track, but the 36-month delivery has been extended by an approved 24 months to 20 Jun 2030; the developer's project site publishes plans and renders but no APDL permit block, tenure or price. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not on developer project site; TEDUH project 30256-2 shows active sales permit 30256-2/06-2028/0465(A)-(S) and developer licence 30256/10-2027/0255(A)",
+   "escrow": "No HDA bank named; TEDUH lists a Jadual H sale agreement",
+   "progress": "TEDUH (latest 7(f) HIMS report): suite homes and SOHO components both 37.50%, Lancar",
+   "plans": "Developer site publishes unit plans Types A to E",
+   "record": "TEDUH: developer's earlier project Taman Ipil Permata (30256-1) completed with CCC Apr 2025",
+   "returns": "Marketed to 'entrepreneurs and investors', no guaranteed return or yield"
+  },
+  "positives": [
+   "Registry sales permit, price range and construction figure on TEDUH",
+   "Approved extension disclosed on official register",
+   "Unit plans published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Sales permit 30256-2/06-2028/0465(A)-(S) active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2"
+   },
+   {
+    "claim": "Developer Armani Hallson KLCC Sdn Bhd licensed (30256/10-2027/0255(A))",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2"
+   },
+   {
+    "claim": "2,215 units: 1,440 suite homes and 775 SOHO",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2"
+   },
+   {
+    "claim": "Prices from RM1.1M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2"
+   },
+   {
+    "claim": "Construction 37.5% and on track",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2"
+   },
+   {
+    "claim": "Delivery extended by 24 months to 20 Jun 2030",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2"
+   },
+   {
+    "claim": "Developer completed a previous project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30256-1"
+   },
+   {
+    "claim": "Armani Group is a multi-award-winning developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://armanigroup.com.my/"
+   },
+   {
+    "claim": "Walking distance to Bukit Nanas Monorail",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://armanihallsonklcc.com/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://armanihallsonklcc.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Selangor, Malaysia (business address Seksyen U1, Shah Alam per TEDUH)",
+   "developer_company": "Armani Hallson KLCC Sdn. Bhd. (KPKT developer code 30256)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 48,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": "2028-Q2",
+   "delay_months": 24,
+   "unit_types": [
+    "SOHO",
+    "suite home (1 bedroom)"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1100000,
+   "price_max": 5470971,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (TEDUH)",
+   "foreign_ownership": "Strata title; foreigners may buy in KL above the RM1M state minimum price",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sky infinity pool",
+    "L76 onsen and heated pool",
+    "L78 viewing deck",
+    "sky gym",
+    "L10 hanging garden",
+    "lounges"
+   ],
+   "lat": 3.159,
+   "lng": 101.708,
+   "permit_authority": "KPKT (advertising and sales permit)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/30256/P45/temp-P45-20260726-h0TYWz4mQW/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://armanihallsonklcc.com/",
+   "https://armanigroup.com.my/",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30256-2",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30256-1",
+   "https://teduh.kpkt.gov.my/api/projek-swasta?q=KLCC&search_type=projek&page=1"
+  ],
+  "permit_number": "30256-2/06-2028/0465(A)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "city-tower-tokyo-tamachi-sumitomo-realty",
+  "name": "City Tower Tokyo Tamachi",
+  "developer": "Sumitomo Realty & Development Co., Ltd.",
+  "area": "Shibaura 2-chome, Minato-ku, Tokyo",
+  "country": "Japan",
+  "market": "Tokyo",
+  "stage": "under construction",
+  "url": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fbf87091c09b79981a7137e19fd0cb9e40c703c9f34247497",
+  "docs_url": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi",
+  "seed": {
+   "price": 177000000,
+   "currency": "JPY",
+   "title": "freehold (sectional ownership of unit, co-ownership of land)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "Building confirmation ERI-23039252 (27 Dec 2023), ERI-24018385 (23 Oct 2024), ERI-25018774 (18 Jul 2025)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 180,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer outline: 180 units (10 not advertised), 34 floors above and 2 below, RC partly steel, site 1,622.16 sq m, floor area 20,874.34 sq m",
+   "developer outline: completion early Feb 2027, move-in/handover late Apr 2028; phase 2-6 sales planned late Jan 2027, price and unit count undecided",
+   "developer outline: building confirmation numbers ERI-23039252, ERI-24018385, ERI-25018774; seller Sumitomo Realty (MLIT licence (17) No. 38); designer and contractor Maeda Corporation",
+   "developer outline: units 43.30 to 77.34 sq m, 1LDK to 3LDK; management fee JPY 20,590 to 36,000 and repair reserve JPY 15,430 to 27,560 per month; repair fund lump sum JPY 1.0M to 1.79M",
+   "developer: floor plan list with 3D stacking selector; disclosure of nearby buildings under construction",
+   "agent (English): price range JPY 177M to 289M"
+  ],
+  "note": "34-storey, 180-unit seismic-isolated tower by Sumitomo Realty near Tamachi Station, sold in phases with the next phase due late Jan 2027. The developer's official outline lists three building confirmation numbers, completion in early Feb 2027 and handover in late Apr 2028 (14 months later), and full monthly fees, but no deposit-protection details or construction updates. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer outline lists building confirmation numbers ERI-23039252, ERI-24018385 and ERI-25018774 (issued by a designated inspection body); the agent listing shows the same numbers; no public register opened",
+   "escrow": null,
+   "progress": "No construction updates or photos on developer site",
+   "plans": "Developer floor plan list (list.php) with unit types such as A_3 (70.03 sq m, 3LDK) and 3D stack selector",
+   "record": null,
+   "returns": "No rental guarantee or yield"
+  },
+  "positives": [
+   "Detailed statutory outline: confirmation numbers, completion and handover dates, fees, seller licence",
+   "Developer discloses neighbouring construction that may affect views"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building confirmation ERI-23039252 and two later confirmations issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "Completion early Feb 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "Handover late Apr 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "180 units, 34 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "Prices JPY 177M to 289M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fbf87091c09b79981a7137e19fd0cb9e40c703c9f34247497"
+   },
+   {
+    "claim": "Seller holds MLIT real estate licence (17) No. 38",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "Contractor Maeda Corporation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "Unit owners hold sectional ownership with co-owned land",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Shinjuku, Tokyo, Japan (Shinjuku NS Building)",
+   "developer_company": "Sumitomo Realty & Development Co., Ltd. (MLIT licence (17) No. 38)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1LDK",
+    "2LDK",
+    "3LDK"
+   ],
+   "size_min_m2": 43.3,
+   "size_max_m2": 77.34,
+   "price_min": 177000000,
+   "price_max": 289000000,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold sectional ownership; Japan places no general restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": "management fee JPY 20,590 to 36,000 per month; repair reserve JPY 15,430 to 27,560 per month",
+   "brand": "City Tower",
+   "amenities": [
+    "grand entrance",
+    "sky lounge",
+    "fitness room",
+    "telework lounge",
+    "mist sauna",
+    "SECOM 24-hour security",
+    "55 parking spaces",
+    "207 bicycle spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Building confirmation by designated inspection body (ERI) under the Building Standards Act",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/",
+   "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/detail.cgi",
+   "https://www.sumitomo-rd-mansion.jp/shuto/tamachi/list.php",
+   "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fbf87091c09b79981a7137e19fd0cb9e40c703c9f34247497"
+  ],
+  "permit_number": "Building confirmation ERI-23039252 (27 Dec 2023), ERI-24018385 (23 Oct 2024), ERI-25018774 (18 Jul 2025)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0
  }
 ]

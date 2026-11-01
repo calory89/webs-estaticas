@@ -1079,5 +1079,708 @@
   "added": "2026-11-01",
   "verified_score": 0,
   "permit_number": null
+ },
+ {
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "developer": "Sur Yapı",
+  "area": "Kepez (Antalya urban transformation area)",
+  "country": "Turkey",
+  "market": "Antalya",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi",
+  "docs_url": "https://www.suryapi.com.tr/projelerimiz/sur-yapi-antalya-suites",
+  "docs_listed": [
+   "developer: project listed under ongoing projects (Antalya Suites, Vitrin Antalya, Antalya Sur Cadde, Tatil Evleri Antalya); contracting portfolio lists 'Antalya Kentsel Dönüşüm Projesi (Antalya Belediyesi)'",
+   "portal: 544 home-office units (0+1 and 1+1, 35-48 m2) in 4 blocks of 8 floors plus 20 shops",
+   "portal: from USD 90,000, 50% down and 60 instalments, delivery 30 Dec 2027, 40% complete",
+   "portal: described as 'government-guaranteed', VAT included, title deed fee exempt, 7% expected yield (not guaranteed)"
+  ],
+  "note": "Home-office block of 544 small units within Sur Yapı's large Kepez urban-transformation scheme in Antalya, marketed to foreign buyers from USD 90,000 with a 60-month plan. A portal lists it 40% complete with delivery on 30 Dec 2027; Sur Yapı's own page lists it as ongoing but publishes no permit, progress or escrow details. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 90000,
+   "currency": "USD",
+   "title": "freehold, initially kat irtifakı (easement) title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 40,
+   "progress_updates": false,
+   "developer_delivered": "Sur Yapı lists completed housing such as Sur Yapı Topkapı Evleri, Metrogarden, Marka, Axis İstanbul, Excellence Koşuyolu, Lavender Sancaktepe and others on its site",
+   "units": 544,
+   "payment_plan": "50% down payment, 60 instalments; 15% cash discount",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on developer or portal page",
+   "escrow": "Portal says 'government-guaranteed' without naming any guarantee instrument; no escrow stated",
+   "progress": "Portal lists 40% project completion (updated 25 Sep 2026); developer page publishes no figure",
+   "plans": "Portal floor plans sit behind a login; none visible on the developer page",
+   "record": "Developer site lists many completed residential and mixed-use projects in Istanbul",
+   "returns": "Portal shows 7% expected yield from 'independent sources', not guaranteed"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery 30 Dec 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   },
+   {
+    "claim": "Construction 40% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   },
+   {
+    "claim": "Government-guaranteed project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   },
+   {
+    "claim": "Part of Antalya Municipality urban transformation contracted to Sur Yapı",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suryapi.com.tr/projelerimiz/sur-yapi-antalya-suites"
+   },
+   {
+    "claim": "Masterplan of 1,300,000 m2 and 19,000 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   },
+   {
+    "claim": "Prices from USD 90,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   },
+   {
+    "claim": "Eligible for Turkish citizenship",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   },
+   {
+    "claim": "Tram stop 50 m away",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio home office",
+    "1BR home office",
+    "shop"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 48,
+   "price_min": 90000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, 60 instalments",
+   "foreign_ownership": "Freehold title deed available to foreigners in Turkey",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "indoor gardens",
+    "children's playground",
+    "indoor and outdoor parking",
+    "24/7 security",
+    "reception"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Antalya Metropolitan / Kepez Municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large developer with many completed projects",
+   "Long 60-month payment plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.suryapi.com.tr/projelerimiz/sur-yapi-antalya-suites",
+   "https://www.suryapi.com.tr/projelerimiz?constructionStatus=0",
+   "https://www.emlakplatform.com.tr/en/projects/antalya-suites-sur-yapi"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "vr-krtsanisi-resort-residence-vr-holding",
+  "name": "VR Krtsanisi Resort Residence",
+  "developer": "VR Holding (VR Development)",
+  "area": "Grigol Volski Street, Krtsanisi, Tbilisi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/krtsanisi-resort-residence",
+  "docs_url": "https://vr.ge/en/project/krtsanisi",
+  "docs_listed": [
+   "developer: 20 ha site, 7 ha recreational space, completion 2029, '14% Annual Return (ROI)'",
+   "developer: apartment types studio to penthouse, infrastructure list, payment terms (5% off single payment, internal instalments until completion), presentation download",
+   "developer blog 22 Oct 2026: construction video 'actively underway'",
+   "portal: 1,500 units in 35 six-floor blocks, from USD 144,495, 20% down and 36 instalments, delivery 1 Mar 2029, 65% complete"
+  ],
+  "note": "Large resort-style complex on 20 ha in Tbilisi's Krtsanisi district by VR Holding, with completion stated as 2029 and a construction video posted on 22 Oct 2026. The developer markets a 14% annual ROI (not described as guaranteed) and publishes no permit, escrow or progress figure; a portal lists 65% completion and prices from USD 144,495. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 144495,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2029-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 1500,
+   "payment_plan": "Initial contribution then internal instalments until completion; 5% discount for single payment (developer); portal: 20% down, 36 instalments",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Developer posted a dated construction video (22 Oct 2026); portal lists 65% completion",
+   "plans": "Apartment type descriptions and an apartment picker, but no plans in the page text",
+   "record": "Developer says it was founded in 2010 but names no completed residential projects on the pages opened; its listed projects are ongoing",
+   "returns": "'14% Annual Return (ROI)' shown as a key statistic, not called guaranteed"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vr.ge/en/project/krtsanisi"
+   },
+   {
+    "claim": "Annual ROI 14%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vr.ge/en/project/krtsanisi"
+   },
+   {
+    "claim": "Annual rental yield 9%",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/krtsanisi-resort-residence"
+   },
+   {
+    "claim": "Construction actively under way (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vr.ge/en/news/blog/construction-at-the-multifunctional-vr-krtsanisi-resort-residence-project-is-actively-underway"
+   },
+   {
+    "claim": "65% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/krtsanisi-resort-residence"
+   },
+   {
+    "claim": "Site of 20 ha with 7 ha recreational space",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vr.ge/en/project/krtsanisi"
+   },
+   {
+    "claim": "1,500 units in 35 buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/krtsanisi-resort-residence"
+   },
+   {
+    "claim": "Developer founded 2010 by Noshiko Namoradze",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vr.ge/en"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vr.ge/en/project/krtsanisi"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "penthouse"
+   ],
+   "size_min_m2": 52,
+   "size_max_m2": 558,
+   "price_min": 144495,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, 36 instalments (portal); internal instalments until completion (developer)",
+   "foreign_ownership": "Freehold apartment ownership for foreigners in Georgia",
+   "rental_programme": "Developer lists a rent service; ROI 14% marketed",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "45 m pool with wave simulation",
+    "80 m infinity pool",
+    "spa and indoor pool",
+    "padel court",
+    "mini golf",
+    "school and kindergarten",
+    "horse riding",
+    "bowling club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tbilisi City Hall Architecture Service",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated construction video from the developer",
+   "Payment terms and completion year published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vr.ge/en/project/krtsanisi",
+   "https://vr.ge/en",
+   "https://vr.ge/en/news/blog/construction-at-the-multifunctional-vr-krtsanisi-resort-residence-project-is-actively-underway",
+   "https://www.emlakplatform.com.tr/en/projects/krtsanisi-resort-residence"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "metropol-cube-batumi-metropol",
+  "name": "Metropol Cube",
+  "developer": "Metropol (Metropol Investment)",
+  "area": "Alley of Heroes, Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/cube-batumi",
+  "docs_url": "https://www.metropol.ge/en/projects/batumi-cube",
+  "docs_listed": [
+   "developer: unit picker with size and GEL price per apartment (e.g. 52.2 m2 for GEL 325,994 on floor 16)",
+   "developer: 'Annual returns up to 12%', '15% annual price increase', 20% down payment, 0% instalments until completion",
+   "developer: rental pool with 60 days owner use; text says the approach 'guarantees both personal use and profit'",
+   "developer: Royal Tulip (Louvre Hotels Group) partnership; about page says Cube to be completed in 2027",
+   "portal: 332 units, 42 floors, delivery 30 Jun 2028, 48% complete, 'no title deed' yet"
+  ],
+  "note": "42-floor investment tower in Batumi tied to Metropol's Royal Tulip hotel partnership, with apartment prices listed per unit on the developer site. The developer markets returns up to 12% and says its rental scheme 'guarantees' profit; completion is stated as 2027 by the developer but 30 Jun 2028 on a portal that lists 48% built. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 325994,
+   "currency": "GEL",
+   "title": "freehold (title after completion)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 12,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer states Metropol Bagebi (14-storey residential complex, Tbilisi) is completed",
+   "units": 332,
+   "payment_plan": "20% down payment, 0% instalments until construction completes",
+   "price_per_m2": 6245
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Developer only says construction has commenced; portal lists 48% without a source",
+   "plans": "Unit sizes and prices listed, no floor plans in page text",
+   "record": "About page names Metropol Bagebi as completed; company founded 2022",
+   "returns": "'Annual returns up to 12%' and rental programme that 'guarantees both personal use and profit'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion in 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/cube-batumi"
+   },
+   {
+    "claim": "Annual returns up to 12%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/projects/batumi-cube"
+   },
+   {
+    "claim": "15% annual price increase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/projects/batumi-cube"
+   },
+   {
+    "claim": "Rental programme guarantees profit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/projects/batumi-cube"
+   },
+   {
+    "claim": "Exclusive Royal Tulip representative in Adjara (Louvre Hotels Group, June 2023)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/about-us"
+   },
+   {
+    "claim": "Construction commenced",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/projects/batumi-cube"
+   },
+   {
+    "claim": "48% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/cube-batumi"
+   },
+   {
+    "claim": "Metropol Bagebi completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/about-us"
+   },
+   {
+    "claim": "Sea 200 m away (text describes Oval, not Cube)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.metropol.ge/en/projects/batumi-cube"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2022,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 52,
+   "size_max_m2": 89,
+   "price_min": 325994,
+   "price_max": 665010,
+   "currency": "GEL",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, 0% instalments until completion",
+   "foreign_ownership": "Freehold apartment ownership for foreigners in Georgia",
+   "rental_programme": "Company-managed rental with 60 owner days a year; returns up to 12% marketed",
+   "service_charge": null,
+   "brand": "Royal Tulip (Louvre Hotels Group)",
+   "amenities": [
+    "outdoor pool",
+    "conference halls",
+    "cafe and restaurant",
+    "business lounge",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Batumi City Hall",
+   "brochure_url": null
+  },
+  "positives": [
+   "Per-unit prices and sizes published by the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.metropol.ge/en/projects/batumi-cube",
+   "https://www.metropol.ge/en/about-us",
+   "https://www.metropol.ge/en/projects",
+   "https://www.emlakplatform.com.tr/en/projects/cube-batumi"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "basaksehir-avrasya-konutlari-cadde-fuzul-gyo",
+  "name": "Başakşehir Avrasya Konutları Cadde (Ayazma 4. Etap)",
+  "developer": "Fuzul Gayrimenkul Yatırım Ortaklığı A.Ş. (Fuzul GYO), Emlak Konut GYO landowner (revenue sharing)",
+  "area": "İkitelli-2 Mahallesi (Ayazma), Başakşehir",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde",
+  "docs_url": "https://www.avrasyabasaksehir.com/",
+  "docs_listed": [
+   "developer site: 5% down payment, 30-month term, floor plans page, street shops, social facilities, videos",
+   "Emlak Konut appraisal 25-018 (18 Feb 2025): Ayazma 4. Etap, 452 units, Başakşehir permits nos. 26-31 dated 21.01.2025, construction under way",
+   "Emlak Konut appraisal: revenue-sharing contract with Fuzul GYO dated 29.08.2023 (40% Emlak Konut share)",
+   "portal: 427 apartments and 25 shops in 6 blocks of 10 floors, from USD 210,000, delivery 30 Dec 2028, 35% complete"
+  ],
+  "note": "Fourth Avrasya stage in Başakşehir developed by listed Fuzul GYO on Emlak Konut land under an Aug 2023 revenue-sharing contract. An SPK-licensed appraisal published by Emlak Konut lists six building permits issued by Başakşehir Municipality on 21 Jan 2025 for 452 units; a portal lists the build at 35% with delivery on 30 Dec 2028. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 210000,
+   "currency": "USD",
+   "title": "freehold (title deed after kat irtifakı; none yet)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": "Başakşehir Municipality building permits 26, 27, 28, 29, 30, 31 dated 21.01.2025 (blocks A1, A2, B1, B2, C, D)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 35,
+   "progress_updates": false,
+   "developer_delivered": "Earlier Fuzul stages Avrasya Konutları 2 and 3 in Başakşehir listed as ready (100%) on Emlak Platform",
+   "units": 452,
+   "payment_plan": "5% down payment, 30-month term (developer site)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Permit numbers and dates listed per block in Emlak Konut appraisal 25-018 (Yetkin Değerleme); not on the developer site",
+   "escrow": "None published",
+   "progress": "Portal lists 35% completion (updated 3 Oct 2026); appraisal of Feb 2025 confirms construction under way but gives no %",
+   "plans": "Developer site has a 'Daire Planları' (floor plans) section",
+   "record": "Earlier Avrasya Konutları stages by Fuzul GYO shown as completed on a portal",
+   "returns": "No yield or guarantee on the developer site; portal shows 5% expected yield"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued 21.01.2025 for six blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/5cd804217b114782ba2baf607d2c5aba.pdf"
+   },
+   {
+    "claim": "Revenue-sharing contract Emlak Konut - Fuzul GYO, 29.08.2023, 40% Emlak Konut share",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/5cd804217b114782ba2baf607d2c5aba.pdf"
+   },
+   {
+    "claim": "Project has 452 independent units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/5cd804217b114782ba2baf607d2c5aba.pdf"
+   },
+   {
+    "claim": "427 apartments plus 25 shops",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde"
+   },
+   {
+    "claim": "Construction under way (Feb 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/5cd804217b114782ba2baf607d2c5aba.pdf"
+   },
+   {
+    "claim": "35% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde"
+   },
+   {
+    "claim": "Delivery 30 Dec 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde"
+   },
+   {
+    "claim": "Government guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde"
+   },
+   {
+    "claim": "5% down payment and 30-month term",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avrasyabasaksehir.com/"
+   },
+   {
+    "claim": "Land owned by Emlak Konut, parcel 1424/5 İkitelli-2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/5cd804217b114782ba2baf607d2c5aba.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Fuzul Gayrimenkul Yatırım Ortaklığı A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Fuzul GYO and landowner Emlak Konut GYO are listed on Borsa Istanbul; appraisals SPK-licensed",
+   "construction_start": "2025-01",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "shop"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 210000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, 30 months",
+   "foreign_ownership": "Freehold title deed available to foreigners in Turkey (portal says citizenship eligible)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Avrasya Konutları",
+   "amenities": [
+    "swimming pool",
+    "Turkish bath and sauna",
+    "shopping street",
+    "walking track",
+    "children's playgrounds",
+    "terraces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Başakşehir Municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Permit numbers disclosed in SPK-licensed appraisal",
+   "Developer and landowner both listed on Borsa Istanbul",
+   "Floor plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakkonut.com.tr/images/uploads/original/5cd804217b114782ba2baf607d2c5aba.pdf",
+   "https://www.emlakkonut.com.tr/TR-tr/gayrimenkul-degerleme-raporlari",
+   "https://www.avrasyabasaksehir.com/",
+   "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 1,
+  "permit_number": "Başakşehir Municipality building permits 26, 27, 28, 29, 30, 31 dated 21.01.2025 (blocks A1, A2, B1, B2, C, D)"
  }
 ]

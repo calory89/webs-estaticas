@@ -1699,5 +1699,1091 @@
    "https://www.barbadospropertysearch.com/node/86100",
    "https://www.caribjournal.com/2026/08/12/pendry-barbados-residences/"
   ]
+ },
+ {
+  "slug": "palm-beach-residences-cap-cana-rdls",
+  "name": "Palm Beach Residences Cap Cana",
+  "developer": "RDLS Developers Group (general manager Rafael de los Santos)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Las Iguanas, Cap Cana",
+  "country": "Dominican Republic",
+  "market": "Punta Cana",
+  "url": "https://www.drlistings.com/property/palm-beach-residences-elegant-1-2-and-3-br-furnished-condos-and-penthouses-with-golf-and-ocean-view-12683/",
+  "docs_url": "https://www.elcaribe.com.do/gente/invertiran-us25-mm-en-desarrollo-de-palm-beach-residences-en-cap-cana/",
+  "permit_number": null,
+  "docs_listed": [
+   "news (sponsored): 50 furnished tourist apartments in one tower, USD 25M investment",
+   "news: CONFOTUR law protection and a fiduciary (trust) guarantee claimed",
+   "agency: 1BR from about USD 304,000, payment plan USD 5,000 deposit, 25/45/30",
+   "agency: delivery January 2028 (earlier announced Q2 2027)"
+  ],
+  "note": "Small 50-unit, five-level tower of furnished 1 to 3BR condos in Cap Cana by RDLS Developers Group, sold exclusively through Oferta Inmobiliaria RD. Press items in 2024 announced a January 2025 start and Q2 2027 delivery under CONFOTUR with a trust guarantee, while a 2026 agency listing now shows January 2028 delivery and prices from about USD 304,000. No permit, CONFOTUR resolution, trust details, progress or developer track record are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 304000,
+   "currency": "USD",
+   "title": "freehold (Dominican title; no restriction on foreign buyers)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Fiduciary (trust) guarantee for the works claimed in press announcement; trustee not named",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 50,
+   "payment_plan": "USD 5,000 reservation, 25% at contract, 45% during construction, 30% on delivery",
+   "price_per_m2": 2841
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Press says the project is protected under the CONFOTUR tourism incentive law but gives no resolution or permit number",
+   "escrow": "elCaribe and Dominican Today report a fiduciary guarantee; no trustee, bank or contract published",
+   "progress": "No construction updates; agency only says construction start spring 2025",
+   "plans": "No floor plans published",
+   "record": "No previous projects of RDLS Developers Group named",
+   "returns": "No rental guarantee or yield figures"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Project protected under CONFOTUR law",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dominicantoday.com/?p=226394"
+   },
+   {
+    "claim": "Works backed by a fiduciary guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elcaribe.com.do/gente/invertiran-us25-mm-en-desarrollo-de-palm-beach-residences-en-cap-cana/"
+   },
+   {
+    "claim": "Construction start January 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dominicantoday.com/?p=226394"
+   },
+   {
+    "claim": "Delivery Q2 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.drlistings.com/property/palm-beach-residences-elegant-1-2-and-3-br-furnished-condos-and-penthouses-with-golf-and-ocean-view-12683/"
+   },
+   {
+    "claim": "USD 25M investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dominicantoday.com/?p=226394"
+   },
+   {
+    "claim": "50 apartments in one tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elcaribe.com.do/gente/invertiran-us25-mm-en-desarrollo-de-palm-beach-residences-en-cap-cana/"
+   },
+   {
+    "claim": "1BR unit (1,152 sq ft) priced USD 304,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.drlistings.com/property/palm-beach-residences-elegant-1-2-and-3-br-furnished-condos-and-penthouses-with-golf-and-ocean-view-12683/"
+   },
+   {
+    "claim": "Developer is RDLS Developers Group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elcaribe.com.do/gente/invertiran-us25-mm-en-desarrollo-de-palm-beach-residences-en-cap-cana/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elcaribe.com.do/gente/invertiran-us25-mm-en-desarrollo-de-palm-beach-residences-en-cap-cana/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dominican Republic",
+   "developer_company": "RDLS Developers Group",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q2",
+   "delay_months": 9,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 107,
+   "size_max_m2": null,
+   "price_min": 304000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 25,
+   "payment_plan": "25/45/30",
+   "foreign_ownership": "Freehold title; foreigners can own in the Dominican Republic",
+   "rental_programme": "Tourist apartments with lock-off layouts; no figures",
+   "service_charge": "About USD 2.50 per m2 per month (agency)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "family pool",
+    "kids' pool",
+    "pool bar",
+    "golf simulator",
+    "cinema",
+    "lounge",
+    "private jacuzzi areas"
+   ],
+   "lat": 18.443,
+   "lng": -68.41,
+   "permit_authority": "Ministerio de Turismo (MITUR) / CONFOTUR; municipal construction licence",
+   "brochure_url": null
+  },
+  "positives": [
+   "Payment plan and delivery date stated",
+   "Trust guarantee and CONFOTUR protection claimed publicly"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.elcaribe.com.do/gente/invertiran-us25-mm-en-desarrollo-de-palm-beach-residences-en-cap-cana/",
+   "https://dominicantoday.com/?p=226394",
+   "https://www.drlistings.com/property/palm-beach-residences-elegant-1-2-and-3-br-furnished-condos-and-penthouses-with-golf-and-ocean-view-12683/"
+  ]
+ },
+ {
+  "slug": "marea-residences-grand-reserve-puerto-rico",
+  "name": "Marea Residences at Grand Reserve",
+  "developer": "Grand Reserve Puerto Rico (resort owner; developer entity not named publicly)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Coco Beach, Río Grande",
+  "country": "Puerto Rico (USA)",
+  "market": "Puerto Rico",
+  "url": "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project",
+  "docs_url": "https://www.weichert.com/134037199",
+  "permit_number": null,
+  "docs_listed": [
+   "news: 16 oceanfront residences of about 3,200 sq ft in two four-storey buildings plus beach club; USD 100M+ investment",
+   "news: construction underway (Oct 2025), contractor QB Group, architect OBMI, half sold",
+   "agency MLS: units from USD 3.65M to 6.1M, estimated completion fall 2027",
+   "agency MLS: association named 'Grand Reserve Marea Residences'"
+  ],
+  "note": "Boutique 16-residence beachfront project inside the Grand Reserve Puerto Rico resort in Río Grande; News is my Business reported in October 2025 that construction had begun with QB Group as contractor and that half the homes were sold, and 2026 MLS listings give prices of USD 3.65M to 6.1M with completion estimated for fall 2027. No permit number, escrow, progress figures, floor plans or developer entity are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 3650000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium; no restriction on foreign buyers)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 16,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No OGPe permit number published",
+   "escrow": "No deposit escrow stated",
+   "progress": "News is my Business (29 Oct 2025): construction underway; no later dated update found",
+   "plans": "MLS listings give sizes but no floor plans",
+   "record": "Resort owner operates Grand Reserve but no prior residential deliveries are documented",
+   "returns": "No rental programme or guaranteed return stated"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Construction underway (Oct 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project"
+   },
+   {
+    "claim": "Investment over USD 100M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://elnuevodia.com/english/business/notas/grand-reserve-puerto-rico-embarks-on-the-development-of-luxury-residences"
+   },
+   {
+    "claim": "16 residences in two four-storey buildings plus 8,000 sq ft beach club",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project"
+   },
+   {
+    "claim": "QB Group is general contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project"
+   },
+   {
+    "claim": "Half of residences sold (Corcoran, Oct 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project"
+   },
+   {
+    "claim": "Estimated completion fall 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.weichert.com/134037199"
+   },
+   {
+    "claim": "Penthouse 2401 priced USD 6.1M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.weichert.com/134037199"
+   },
+   {
+    "claim": "Units from USD 3.65M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.weichert.com/134037199"
+   },
+   {
+    "claim": "Developer legal entity identified",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elnuevodia.com/english/business/notas/grand-reserve-puerto-rico-embarks-on-the-development-of-luxury-residences"
+   },
+   {
+    "claim": "Construction permit issued by OGPe",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Río Grande, Puerto Rico",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 297,
+   "size_max_m2": 542,
+   "price_min": 3650000,
+   "price_max": 6100000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium under US/Puerto Rico law; no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "8,000 sq ft beach club",
+    "restaurant and bar",
+    "resort golf and amenities",
+    "rooftop terraces (penthouses)"
+   ],
+   "lat": 18.41,
+   "lng": -65.79,
+   "permit_authority": "Oficina de Gerencia de Permisos (OGPe), Puerto Rico",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction start and contractor confirmed by local business press",
+   "Very low density (16 units)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://newsismybusiness.com/construction-begins-on-100m-marea-residences-project",
+   "https://elnuevodia.com/english/business/notas/grand-reserve-puerto-rico-embarks-on-the-development-of-luxury-residences",
+   "https://www.weichert.com/134037199",
+   "https://www.nestseekers.com/5570764/500-marea-residences-coco-beach-blvd-3102-preconstruction-to-be"
+  ]
+ },
+ {
+  "slug": "golf-hills-muscat-hills-al-osool",
+  "name": "Golf Hills (Muscat Hills)",
+  "developer": "Al Osool Real Estate / Al Osool Hills",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Muscat Hills, Al Irfan City",
+  "country": "Oman",
+  "market": "Oman",
+  "url": "https://properties.whitewill.ae/golf-hills",
+  "docs_url": "https://www.zawya.com/en/economy/gcc/oman-al-osool-hills-launches-golf-hills-a2lcgcwb",
+  "permit_number": null,
+  "docs_listed": [
+   "news: 366 apartments (1 to 3BR) in three towers on 11,000 sq m overlooking Muscat Hills golf course",
+   "news: freehold for Omanis and expatriates",
+   "agency: from 167,000 (currency not named), 20/60/20 plan, handover Q4 2027",
+   "agency: brochure download; no floor plans"
+  ],
+  "note": "Three-tower, 366-apartment freehold project launched in 2026 by Omani group Al Osool in Muscat Hills overlooking the golf course; a Dubai agency lists prices from 167,000 (currency not stated), a 20/60/20 plan and handover in Q4 2027. No ITC or development licence number, escrow bank, construction progress or floor plans are published, even though Oman's September 2026 off-plan regulation requires licensing and escrow for off-plan sales in its economic zones. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 167000,
+   "currency": "USD",
+   "title": "freehold (open to expatriates per developer)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer says it has developed and marketed other projects in Muscat Hills with buyers from 50+ countries; none named",
+   "units": 366,
+   "payment_plan": "20% on booking, 60% during construction, 20% on completion (agency)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No ITC approval, development licence or building permit number published",
+   "escrow": "No escrow account stated",
+   "progress": "Launch only; no construction updates",
+   "plans": "No floor plans; agency gives a starting size of 642 sq ft",
+   "record": "Zawya quotes the board member on past Muscat Hills projects but none are named or verifiable",
+   "returns": "No guaranteed return; marketing cites 'strong value appreciation potential' without figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Project launched with 366 units in three towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/gcc/oman-al-osool-hills-launches-golf-hills-a2lcgcwb"
+   },
+   {
+    "claim": "Freehold ownership available to expatriates",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gulfconstructiononline.com/Article/389726/al-osool-unveils-muscat-freehold-residential-project"
+   },
+   {
+    "claim": "Prices from 167,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://properties.whitewill.ae/golf-hills"
+   },
+   {
+    "claim": "Handover Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://properties.whitewill.ae/golf-hills"
+   },
+   {
+    "claim": "Developer's projects have attracted buyers from 50+ countries",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/economy/gcc/oman-al-osool-hills-launches-golf-hills-a2lcgcwb"
+   },
+   {
+    "claim": "Holding company founded 2006",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://properties.whitewill.ae/golf-hills"
+   },
+   {
+    "claim": "Off-plan sales are escrow-protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omanobserver.om/ampArticle/1196569"
+   },
+   {
+    "claim": "Site covers more than 11,000 sq m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfconstructiononline.com/Article/389726/al-osool-unveils-muscat-freehold-residential-project"
+   },
+   {
+    "claim": "Project holds ITC or development licence",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/economy/gcc/oman-al-osool-hills-launches-golf-hills-a2lcgcwb"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Muscat, Oman",
+   "developer_company": "Al Osool Real Estate / Al Osool Hills (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": null,
+   "price_min": 167000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20/60/20",
+   "foreign_ownership": "Freehold for expatriates (developer statement); Muscat Hills is an integrated tourism area",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool over golf course",
+    "family pool",
+    "gym",
+    "yoga area",
+    "landscaped walkways",
+    "24/7 security"
+   ],
+   "lat": 23.59,
+   "lng": 58.35,
+   "permit_authority": "Ministry of Housing and Urban Planning (Oman)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Launch covered by regional business press",
+   "Payment plan and handover quarter stated by agency"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.zawya.com/en/economy/gcc/oman-al-osool-hills-launches-golf-hills-a2lcgcwb",
+   "https://gulfconstructiononline.com/Article/389726/al-osool-unveils-muscat-freehold-residential-project",
+   "https://properties.whitewill.ae/golf-hills",
+   "https://www.omanobserver.om/ampArticle/1196569"
+  ]
+ },
+ {
+  "slug": "st-regis-residences-miami-brickell-related-integra",
+  "name": "The St. Regis Residences, Miami (1809 Brickell)",
+  "developer": "Related Group and Integra Investments (DBPR condo filer and brand licensee: 1809 Brickell Property Owner, LLC; also 1809 Brickell Phase II LLC)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "South Brickell (1809 Brickell Avenue)",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://theamericandeveloper.com/news/related-integra-st-regis-brickell-80-percent-sold/",
+  "docs_url": "https://www.oftmw.com/projects/the-st-regis-residences-miami/",
+  "permit_number": null,
+  "docs_listed": [
+   "news: 50 storeys, 152 residences, Robert A.M. Stern Architects, interiors Rockwell Group",
+   "news: USD 527M construction loan from TYKO Capital (Sep 2024), groundbreaking 21 Nov 2024",
+   "news: over 80% sold, about USD 900M in contracts (Aug 2026)",
+   "news: Miami City Commission authorised marina permit applications (Sep 2026)",
+   "registry: DBPR developer filing PR77417 '1809 Brickell, a Condo'"
+  ],
+  "note": "152-residence, 50-storey St. Regis-branded bayfront tower by Related Group and Integra Investments; groundbreaking was 21 Nov 2024 after a USD 527M TYKO Capital construction loan, sales passed 80% (about USD 900M) in August 2026 and completion is targeted for late 2027. The condo is filed with Florida DBPR (PR77417) by 1809 Brickell Property Owner, LLC. A proposed marina is only at the permit-application stage. No permit number, escrow agent or floor plans found. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 4600000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Related Group is a long-established Miami condo developer (agency statement); no delivered list on project materials seen",
+   "units": 152,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published; Groundbreak lists permit filings for 1809 Brickell Av (latest 15 Sep 2026) behind a paywall",
+   "escrow": "Not stated",
+   "progress": "oftmw.com: going vertical mid-2025 with two tower cranes; American Developer (Aug 2026): tower to top out later in 2026",
+   "plans": "No floor plans found",
+   "record": "Related Group record stated by agencies only",
+   "returns": "No rental guarantee; pure residential with no hotel component"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Condo filed with DBPR by 1809 Brickell Property Owner, LLC (PR77417)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "USD 527M construction loan from TYKO Capital (Sep 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theamericandeveloper.com/news/related-integra-st-regis-brickell-80-percent-sold/"
+   },
+   {
+    "claim": "Groundbreaking 21 Nov 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oftmw.com/projects/the-st-regis-residences-miami/"
+   },
+   {
+    "claim": "Over 80% sold, about USD 900M in contracts",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theamericandeveloper.com/news/related-integra-st-regis-brickell-80-percent-sold/"
+   },
+   {
+    "claim": "USD 47M penthouse contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.brgintl.com/st-regis-brickell-marina/"
+   },
+   {
+    "claim": "Marina approved",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://traded.co/blog/st-regis-brickell-eyes-waterfront-marina-as-tower-nears-completion/"
+   },
+   {
+    "claim": "Completion December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/the-st-regis-residences-miami/"
+   },
+   {
+    "claim": "Tequesta archaeological site found during construction (Jul 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oftmw.com/projects/the-st-regis-residences-miami/"
+   },
+   {
+    "claim": "152 residences over 50 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theamericandeveloper.com/news/related-integra-st-regis-brickell-80-percent-sold/"
+   },
+   {
+    "claim": "Prices above USD 4.6M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurydade.com/blog/brickell-pre-construction-condos-complete-guide-2026"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/the-st-regis-residences-miami/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "1809 Brickell Property Owner, LLC (DBPR PR77417); 1809 Brickell Phase II LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-11",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "residence",
+    "penthouse",
+    "sky residence"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 930,
+   "price_min": 4600000,
+   "price_max": 47000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no restriction on foreign buyers in Florida",
+   "rental_programme": "None; no hotel component",
+   "service_charge": null,
+   "brand": "St. Regis (Marriott)",
+   "amenities": [
+    "butler service",
+    "private club level",
+    "spa and wellness",
+    "bayfront pool deck",
+    "beach club",
+    "proposed marina"
+   ],
+   "lat": 25.758,
+   "lng": -80.194,
+   "permit_authority": "City of Miami Building Department; Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large construction loan closed before groundbreaking",
+   "DBPR condo filing on record",
+   "High presales reported by trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theamericandeveloper.com/news/related-integra-st-regis-brickell-80-percent-sold/",
+   "https://www.oftmw.com/projects/the-st-regis-residences-miami/",
+   "https://www.brgintl.com/st-regis-brickell-marina/",
+   "https://traded.co/blog/st-regis-brickell-eyes-waterfront-marina-as-tower-nears-completion/",
+   "https://pro.groundbreak.city/miami/projects/0e58cd52-7208-43f3-a3da-f1129207143c",
+   "https://adidotanz.com/developments/st-regis-residences-miami/",
+   "https://luxurydade.com/blog/brickell-pre-construction-condos-complete-guide-2026",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+  ]
+ },
+ {
+  "slug": "alam-al-roum-qatari-diar",
+  "name": "Alam Al Roum (Alam El Roum)",
+  "developer": "Qatari Diar Real Estate Investment Company (wholly owned by Qatar Investment Authority)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Marsa Matrouh, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum",
+  "docs_url": "https://www.qataridiar.com/project/alam-al-roum",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: USD 29.7bn investment, 20.58M sq m, 7.2 km shoreline, status 'ongoing'",
+   "developer: portfolio page lists completed projects (e.g. The St. Regis Cairo and Residences, NEWGIZA phases 1 to 3)",
+   "portal: villa launch price EGP 16M, delivery December 2030, construction start 26 Jul 2026",
+   "portal: villa layouts 5BR (307 to 453 m2) and 6BR (601 m2) with layout codes"
+  ],
+  "note": "Qatari Diar's 20.58M sq m Mediterranean resort city near Marsa Matrouh, which the developer says is backed by a USD 29.7bn investment. Property Finder lists villa launch prices from EGP 16M, a construction start of 26 July 2026 and delivery by December 2030. No permit, escrow, payment plan, floor plans or construction progress are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 16000000,
+   "currency": "EGP",
+   "title": "freehold (portal); foreign ownership in Egypt limited to two residential units",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Qatari Diar lists completed projects on its site, including The St. Regis Cairo and Residences, Doha Exhibition and Convention Center, City Centre DC and NEWGIZA phases 1 to 3",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or approval number published",
+   "escrow": "No escrow arrangement stated",
+   "progress": "Portal gives a construction start date (26 Jul 2026) only; no progress published",
+   "plans": "Portal lists layout codes and sizes but floor plans are 'inquire' only",
+   "record": "Developer portfolio page names completed projects in Egypt, Qatar, UK and USA",
+   "returns": "Portal mentions short-term rental demand but no guarantee or yield figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Developer is Qatari Diar, owned by the Qatar Investment Authority",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum"
+   },
+   {
+    "claim": "Investment of USD 29.7bn",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.qataridiar.com/project/alam-al-roum"
+   },
+   {
+    "claim": "Masterplan of 4,900 acres (portal) vs 20.58M sq m (developer)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.qataridiar.com/project/alam-al-roum"
+   },
+   {
+    "claim": "Construction started 26 Jul 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum"
+   },
+   {
+    "claim": "Delivery December 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum"
+   },
+   {
+    "claim": "Villas from EGP 16M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum"
+   },
+   {
+    "claim": "Located east of Marsa Matrouh (portal) vs west of Marsa Matrouh (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.qataridiar.com/project/alam-al-roum"
+   },
+   {
+    "claim": "Developer has completed large mixed-use projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.qataridiar.com/projects"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Doha, Qatar",
+   "developer_company": "Qatari Diar Real Estate Investment Company",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-07",
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "5BR villa",
+    "6BR villa"
+   ],
+   "size_min_m2": 307,
+   "size_max_m2": 601,
+   "price_min": 16000000,
+   "price_max": null,
+   "currency": "EGP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold per portal; Egyptian law caps foreign individuals at two residential units",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "7.2 km beach",
+    "yacht marina",
+    "golf courses",
+    "hotels",
+    "retail districts",
+    "pools"
+   ],
+   "lat": 31.38,
+   "lng": 27.1,
+   "permit_authority": "New Urban Communities Authority / Matrouh Governorate",
+   "brochure_url": null
+  },
+  "positives": [
+   "Sovereign-backed developer with a published list of completed projects",
+   "Delivery date and launch price stated on the main portal"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.eg/en/new-projects/qatari-diar/alam-al-roum",
+   "https://www.qataridiar.com/project/alam-al-roum",
+   "https://www.qataridiar.com/projects"
+  ]
+ },
+ {
+  "slug": "caesar-ras-el-hekma-sodic",
+  "name": "Caesar (Ras El Hekma)",
+  "developer": "SODIC (Sixth of October Development & Investment Company, EGX: OCDI)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Ras El Hekma, km 200 Alexandria-Matrouh Road, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.propertyfinder.eg/en/new-projects/sodic/caesar",
+  "docs_url": "https://www.sodic.com/our-developments/caesar",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: masterplan amenities (1.2 km beach, 20,000 m2 lagoons, clubhouse, retail village)",
+   "developer: construction progress gallery dated Q1 2026",
+   "developer: H1 2026 earnings release (557 units delivered in H1 2026, 302 on North Coast)",
+   "portal: launch price EGP 41.06M, 5% down payment, construction start 18 May 2025, completion 30 Dec 2026",
+   "portal: unit sizes 171 to 546 m2 by type with prices for 4BR apartment and 5 to 7BR villas"
+  ],
+  "note": "192-acre beachfront community by EGX-listed SODIC in Ras El Hekma; Property Finder lists prices from EGP 41.06M with 5% down, construction from May 2025 and completion at the end of 2026, and SODIC's site shows a Q1 2026 construction progress gallery. SODIC's H1 2026 earnings release reports 557 units delivered in the half (302 on the North Coast) and an escrow contract for a different project (Eastvale), but no escrow, permit number or floor plans are published for Caesar. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 41064690,
+   "currency": "EGP",
+   "title": "freehold (portal); foreign ownership in Egypt limited to two residential units",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "SODIC delivered 557 units in H1 2026 (192 West Cairo, 63 East Cairo, 302 North Coast) per its H1 2026 earnings release; site reports early delivery of June (North Coast) and 91% of projects delivered ahead of schedule",
+   "units": null,
+   "payment_plan": "5% down payment at launch, balance in instalments (portal)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No NUCA or building permit number published",
+   "escrow": "None stated for Caesar; H1 2026 release mentions an escrow contract with Banque Misr only for Eastvale (New Cairo)",
+   "progress": "SODIC Caesar page has a 'Construction Progress' gallery dated Q1 2026, no percentage",
+   "plans": "Portal lists sizes and layout types; no floor plan drawings seen",
+   "record": "SODIC H1 2026 earnings release (EGX-listed company, stamped) gives units delivered; developer news on June delivery",
+   "returns": "No guaranteed return or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "SODIC is listed on EGX (OCDI.CA)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cms.sodic.com/uploads/EN_earning_Realse_H1_2026_ebd421eca1.pdf"
+   },
+   {
+    "claim": "SODIC delivered 557 units in H1 2026, 302 on the North Coast",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cms.sodic.com/uploads/EN_earning_Realse_H1_2026_ebd421eca1.pdf"
+   },
+   {
+    "claim": "Delivered projects ahead of schedule 91% of the time",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sodic.com/about-us"
+   },
+   {
+    "claim": "Construction started 18 May 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/sodic/caesar"
+   },
+   {
+    "claim": "Completion 30 Dec 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/sodic/caesar"
+   },
+   {
+    "claim": "Construction progress shown in Q1 2026 gallery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sodic.com/our-developments/caesar"
+   },
+   {
+    "claim": "Prices from EGP 41.06M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/sodic/caesar"
+   },
+   {
+    "claim": "1 km beachfront (portal) vs 1.2 km (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.sodic.com/our-developments/caesar"
+   },
+   {
+    "claim": "Escrow account for Caesar buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cms.sodic.com/uploads/EN_earning_Realse_H1_2026_ebd421eca1.pdf"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/sodic/caesar"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1996,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Sixth of October Development & Investment Company (SODIC)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Egyptian Exchange, OCDI.CA; H1 2026 revenue EGP 6bn, net profit EGP 834M (earnings release)",
+   "construction_start": "2025-05",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR apartment",
+    "4BR apartment",
+    "5BR apartment",
+    "5BR villa",
+    "6BR villa",
+    "7BR villa"
+   ],
+   "size_min_m2": 171,
+   "size_max_m2": 546,
+   "price_min": 41064690,
+   "price_max": null,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, instalments",
+   "foreign_ownership": "Freehold registration; Egyptian law caps foreign individuals at two residential units",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "1.2 km beachfront",
+    "20,000 m2 crystal lagoons",
+    "clubhouse with gym and spa",
+    "Matcha retail village",
+    "The Pier promenade",
+    "mosque",
+    "coworking"
+   ],
+   "lat": 31.2,
+   "lng": 27.85,
+   "permit_authority": "New Urban Communities Authority (NUCA) / Matrouh Governorate",
+   "brochure_url": null
+  },
+  "positives": [
+   "Listed developer with audited-style half-year delivery figures",
+   "Dated construction progress gallery on the developer site",
+   "Prices and sizes per unit type published on the main portal"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.eg/en/new-projects/sodic/caesar",
+   "https://www.sodic.com/our-developments/caesar",
+   "https://www.sodic.com/about-us",
+   "https://www.sodic.com/news/sodic-delivers-june-ahead-of-schedule",
+   "https://www.sodic.com/investor-relations",
+   "https://cms.sodic.com/uploads/EN_earning_Realse_H1_2026_ebd421eca1.pdf"
+  ]
  }
 ]
