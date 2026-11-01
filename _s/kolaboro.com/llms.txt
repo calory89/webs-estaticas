@@ -1,6 +1,6 @@
 # Kolaboro
 
-> Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 328 off-plan projects in 73 markets and 52 countries (31 Oct 2026). Pre-purchase check €490, construction monitoring €99 a month.
+> Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 640 off-plan projects in 114 markets and 62 countries (1 Nov 2026), 3,922 developer claims tested. Pre-purchase check €490, construction monitoring €99 a month.
 
 ## Key pages
 - [Technology: the verification engine (try it live)](https://kolaboro.com/technology/)
