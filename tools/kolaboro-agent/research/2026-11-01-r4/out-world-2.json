@@ -3418,5 +3418,569 @@
    "https://www.news.cyprus-property-buyers.com/2012/07/04/title-deed-chickens-come-home-to-roost/id=0012035",
    "https://cyprus-mail.com/2024/07/17/trapped-buyers-may-never-get-proper-titles"
   ]
+ },
+ {
+  "slug": "caesar-blue-quatro-villas-iskele",
+  "name": "Caesar Blue Quatro Villas",
+  "developer": "Afik Group",
+  "status": "completed",
+  "stage": "under construction",
+  "area": "Bogaz, Iskele (Trikomo), Karpaz road",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "url": "https://www.afikgroup.com/projects.html",
+  "docs_url": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years",
+  "permit_number": null,
+  "docs_listed": [
+   "developer project page: Caesar Blue with flexible payment plan, 30% down payment, 'Rental Guarantee', up to 36 months interest-free",
+   "18 four-unit villas in two rows with 3 shared pools; 3-bed units 127 sqm plus 27 sqm terrace (agents)",
+   "handover Q1/April 2025, now marketed as ready or resale (agents)",
+   "agent prices from GBP 139,000 (2-bed resale) to GBP 344,850 and up (3-bed)"
+  ],
+  "note": "Block of 18 four-unit villas within Afik Group's Caesar Blue resort near Bogaz; agents show keys handed over from about April 2025, so units are now ready or resale rather than off-plan, while newer Caesar Blue phases are still under construction. Afik's own project page advertises a 'Rental Guarantee', and in Oct 2025 a Nicosia court jailed Afik director Simon Aykut for five years over developing and selling Greek Cypriot-owned land in the north, naming Caesar Blue among six complexes. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 139000,
+   "currency": "GBP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2025-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": false,
+   "developer_delivered": "Afik Group's Caesar Resort, Caesar Blue and other Caesar complexes in Iskele exist and are occupied (agents; Cyprus Mail court report names six complexes)",
+   "units": 72,
+   "payment_plan": "30% down payment, 70% over 36 months interest-free (agent); developer page says up to 36 months interest-free",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No TRNC building permit or title information published",
+   "escrow": "Nothing published",
+   "progress": "Agents state handover April 2025 and list units as ready, brand new, built 2023 to 2025",
+   "plans": "No developer floor plans found; one agent shows a floor plan image",
+   "record": "Afik's Caesar complexes are built and occupied; the Cyprus Mail court report confirms six complexes developed by Afik",
+   "returns": "Afik's project page lists 'Rental Guarantee' for Caesar Blue"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Afik developed Caesar Blue on land belonging to displaced Greek Cypriots without owners' consent (prosecution case accepted by guilty plea)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   },
+   {
+    "claim": "Buyers receive clean title",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   },
+   {
+    "claim": "Villas handed over April 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zekibasriestate.com/en/iskele-bogaz-semi-detached-for-sale-180484"
+   },
+   {
+    "claim": "Delivery year 2023 (two agents) vs Q1/April 2025 (two other agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cypro.agency/property/caesar-blue-3-1-quatro-villas"
+   },
+   {
+    "claim": "18 villas of four apartments each with three shared pools",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dxboffplan.com/properties/caesar-blue-quatro-iskele-north-cyprus/"
+   },
+   {
+    "claim": "Rental guarantee offered on Caesar Blue",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.afikgroup.com/projects.html"
+   },
+   {
+    "claim": "Caesar Blue location given as Dipkarpaz (developer) vs Bogaz, Iskele (agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.afikgroup.com/projects.html"
+   },
+   {
+    "claim": "3-bedroom units from GBP 344,850 (Prime Kibris) vs GBP 305,372 (Cypro) vs GBP 672,000 (Karox)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://primekibris.com/en/projects/caesar-blue"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.afikgroup.com/projects.html"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.afikgroup.com/projects.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Iskele, Northern Cyprus",
+   "developer_company": "Afik Construction LTD (named on developer page), Afik Group / Caesar Projects",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2019",
+   "handover_promised": "2025-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 100,
+   "size_max_m2": 154,
+   "price_min": 139000,
+   "price_max": 672000,
+   "currency": "GBP",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, 70% over 36 months interest-free",
+   "foreign_ownership": "TRNC title subject to permission for foreigners; land origin is disputed (pre-1974 Greek Cypriot ownership per Cyprus court case)",
+   "rental_programme": "Rental guarantee advertised on developer page (no figure)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "3 shared pools",
+    "aquapark",
+    "indoor and outdoor pools",
+    "spa, sauna, gym",
+    "tennis court and football field",
+    "beach 300 m",
+    "restaurants and supermarket"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC authorities (not recognised by the Republic of Cyprus)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Units built and handed over per multiple agents"
+  ],
+  "flags": [
+   {
+    "text": "Cyprus Mail reported that on 24 Oct 2025 a Republic of Cyprus court sentenced Afik Group's Simon Aykut to five years after he pleaded guilty to 40 charges over developing and selling Greek Cypriot-owned land in the north; Caesar Blue is among the six complexes named.",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   },
+   {
+    "text": "Cyprus Mail reported that people advertising north Cyprus properties for sale have also been prosecuted, with two Hungarian women sentenced in May 2025, a legal risk for buyers and agents travelling to the Republic.",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   }
+  ],
+  "sources": [
+   "https://www.afikgroup.com/projects.html",
+   "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years",
+   "https://dxboffplan.com/properties/caesar-blue-quatro-iskele-north-cyprus/",
+   "https://www.zekibasriestate.com/en/iskele-bogaz-semi-detached-for-sale-180484",
+   "https://cypro.agency/property/caesar-blue-3-1-quatro-villas",
+   "https://karoxhomes.com/en/properties/view/1245/3-1-quatro-villa-in-caesar-blue-by-afik-group-%E2%80%93-premium-family-living-in-iskele-north-cyprus-iskele-kibris",
+   "https://primekibris.com/en/projects/caesar-blue",
+   "https://remax.com.tr/en/property/P61222154",
+   "https://kibriskonutprojeleri.com/Proje-Detay/Caesar-Blue-Villas"
+  ]
+ },
+ {
+  "slug": "esentepe-sea-view-villas-terra-eck-3023",
+  "name": "Sea-view villas resort, Esentepe (TERRA listing ECK-3023)",
+  "developer": "Not named (listed by TERRA Real Estate)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Esentepe, Kyrenia (Girne) district",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "url": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe",
+  "docs_url": "https://uinvestgroup.com/property/wellness-resort-esentepe-northern-cyprus/",
+  "permit_number": null,
+  "docs_listed": [
+   "TERRA listing (now ID KYR-3023): 3+1 semi-detached villas of 214 sqm with infinity pools from EUR 1,281,800 (base price GBP 1,072,500), price updated 11 Mar 2026",
+   "complex of 655 apartments, penthouses and villas in 55 two-storey blocks; completion 30 Mar 2027; status under construction",
+   "amenities incl. indoor heated pool, hammam, dental clinic, body check-up, art zone, rental service",
+   "the description matches Cyprus Constructions' Phuket Health & Wellness Resort (655 units, March 2027, same amenity list) per other portals"
+  ],
+  "note": "Agency listing for 214 sqm sea-view semi-detached villas from EUR 1,281,800 in a 655-unit Esentepe resort due 30 Mar 2027; the unit count, delivery date and amenity list (dental clinic, art zone, waterfall pools) match the Phuket Health & Wellness Resort by Cyprus Constructions, which other portals price from GBP 144,950 for studios and up to EUR 675,000. TERRA names no developer, title deed type or permit, and one portal places the same resort in Tatlisu (Famagusta district) rather than Esentepe. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 1281800,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 655,
+   "payment_plan": "35% down, 65% until completion (developer statistic quoted by a portal for the matching resort)",
+   "price_per_m2": 5990
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or title deed category on the listing; the portal analysing the matching resort says title-deed category is not stated by the developer",
+   "escrow": "Nothing published",
+   "progress": "Listing says 'under construction' only; one portal says the Turkish developer page calls it ready to move in, contradicting March 2027",
+   "plans": "No floor plans on TERRA; the matching developer page shows three partial room plans only (per portal)",
+   "record": "Developer not named by TERRA",
+   "returns": "Rental service mentioned; no guaranteed return"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Complex of 655 units in 55 blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe"
+   },
+   {
+    "claim": "Same resort as Cyprus Constructions' Phuket Health & Wellness Resort (655 units, March 2027)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://satisofisi.com/en/projeler/kibris/gazimagusa/tatlisu/phuket-health-wellness-resort"
+   },
+   {
+    "claim": "Location Esentepe (Kyrenia) vs Tatlisu (Famagusta district)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://satisofisi.com/en/projeler/kibris/gazimagusa/tatlisu/phuket-health-wellness-resort"
+   },
+   {
+    "claim": "Completion 30 Mar 2027 vs 'ready to move in' on the developer's Turkish page",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://uinvestgroup.com/property/wellness-resort-esentepe-northern-cyprus/"
+   },
+   {
+    "claim": "3+1 villa from EUR 1,281,800 vs whole-project range EUR 126,500 to 675,000 on another portal",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://romaproperty.com.tr/en/Phuket-Health-Wellness-Resort-Girne-Esentepe-Luks-Daire-Ve-Villalar.html"
+   },
+   {
+    "claim": "EUR price and GBP base price shown together without explanation (EUR 1,281,800 vs GBP 1,072,500)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe"
+   },
+   {
+    "claim": "On-site dental clinic and emergency assistance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe"
+   },
+   {
+    "claim": "Title deed type and land origin",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "3BR",
+    "3+1 semi-detached villa",
+    "detached villa"
+   ],
+   "size_min_m2": 43,
+   "size_max_m2": 266,
+   "price_min": 1281800,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 35,
+   "payment_plan": "35% down, 65% until completion (portal, matching resort)",
+   "foreign_ownership": "TRNC title subject to permission for foreigners; title category not stated",
+   "rental_programme": "Resort rental service for owners (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor heated pool",
+    "sauna and hammam",
+    "gym",
+    "tennis court",
+    "restaurant",
+    "dental clinic",
+    "pools with waterfalls",
+    "private infinity pool per villa"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC authorities (not recognised by the Republic of Cyprus)",
+   "brochure_url": null
+  },
+  "positives": [
+   "No guaranteed-return language",
+   "Unit size and finishes listed"
+  ],
+  "flags": [
+   {
+    "text": "Cyprus Mail reported Republic of Cyprus prosecutions linked to selling and advertising property in the north, including a five-year sentence for a developer (Oct 2025) and sentences for two women who advertised north Cyprus homes (May 2025).",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   }
+  ],
+  "sources": [
+   "https://terrarealestate.com/property/3023-luxe-villas-with-sea-views-in-north-cyprus-kyrenia-esentepe",
+   "https://uinvestgroup.com/property/wellness-resort-esentepe-northern-cyprus/",
+   "https://satisofisi.com/en/projeler/kibris/gazimagusa/tatlisu/phuket-health-wellness-resort",
+   "https://romaproperty.com.tr/en/Phuket-Health-Wellness-Resort-Girne-Esentepe-Luks-Daire-Ve-Villalar.html",
+   "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+  ]
+ },
+ {
+  "slug": "iskele-kalecik-complex-terra-eck-4116",
+  "name": "Luxury apartments complex, Kalecik / Iskele (TERRA listing ECK-4116)",
+  "developer": "Not named (listed by TERRA Real Estate)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Kalecik, Yeni Iskele, near Bogaz",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "url": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "price table: 1+1 82 sqm from EUR 243,000; 2+1 124 sqm from EUR 218,400; 3+1 135 sqm from EUR 226,200 (with GBP base prices)",
+   "unit descriptions: 1+1 82.5 sqm, 2+1 111 to 124 sqm, 3+1 135 sqm",
+   "completion 28 Feb 2028; status under construction",
+   "30-month payment plan, adjustable"
+  ],
+  "note": "Agency listing for apartments in a mixed apartment-and-villa complex in Kalecik, Iskele, priced from EUR 218,400 with a 30-month payment plan and completion on 28 Feb 2028. The developer, project name, title deed type, permit and progress are not given, and the price table lists the one-bedroom unit above the two- and three-bedroom units. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 218400,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "30-month payment plan; monthly, quarterly or semi-annual instalments on request",
+   "price_per_m2": 1761
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or title deed information",
+   "escrow": "Nothing published",
+   "progress": "'Under construction' only",
+   "plans": "Room descriptions only; no plans",
+   "record": "Developer not named",
+   "returns": "No return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Completion 28 Feb 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "Prices from EUR 218,400 (was EUR 211,100 in the earlier check)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "1+1 of 82 sqm priced above 2+1 of 124 sqm and 3+1 of 135 sqm",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "EUR prices with unexplained GBP base prices",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "Beach 900 m away",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "Developer identified and registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "Title deed type and land origin",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 82,
+   "size_max_m2": 135,
+   "price_min": 218400,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "30 months",
+   "foreign_ownership": "TRNC title subject to permission for foreigners; title category not stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "landscaped gardens",
+    "sports areas",
+    "fitness",
+    "wellness spaces",
+    "gated with CCTV",
+    "car park"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC authorities (not recognised by the Republic of Cyprus)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Instalments spread over 30 months",
+   "No guaranteed-return language"
+  ],
+  "flags": [
+   {
+    "text": "Cyprus Mail reported Republic of Cyprus prosecutions linked to selling and advertising property in the north, including a five-year sentence for an Iskele developer (Oct 2025) and sentences for two women who advertised north Cyprus homes (May 2025).",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   }
+  ],
+  "sources": [
+   "https://terrarealestate.com/property/4116-luxury-apartments-for-sale-in-iskele-northern-cyprus",
+   "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+  ]
  }
 ]
