@@ -4330,5 +4330,104 @@
     "Fideicomiso Buenos Aires Landmark (described as the vehicle that bought the ex Tiro Federal land at auction)"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos",
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9478,
+    9479
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203831
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    489900,
+    289900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "changed": {
+   "guaranteed_language": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "moon-gate-hotel-spa-antigua",
+  "name": "Moon Gate Hotel & Spa (suites)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
  }
 ]
