@@ -1,0 +1,661 @@
+{
+ "updated": "2026-11-01",
+ "method": "Sentinel-2 L2A median composites, ~400 m box, same 120-day window a year apart; change = NDVI or brightness shift on 6%+ of clear pixels",
+ "processing_units": 124.3,
+ "sites": {
+  "vodopad": {
+   "status": "no visible change",
+   "changed_pct": 5.3,
+   "date": "2026-11-01"
+  },
+  "emaar-golf-vale": {
+   "status": "no visible change",
+   "changed_pct": 3.6,
+   "date": "2026-11-01"
+  },
+  "emaar-valia": {
+   "status": "visible change",
+   "changed_pct": 43.7,
+   "date": "2026-11-01"
+  },
+  "emaar-address-residences-dch": {
+   "status": "visible change",
+   "changed_pct": 23.7,
+   "date": "2026-11-01"
+  },
+  "emaar-club-drive": {
+   "status": "visible change",
+   "changed_pct": 9.2,
+   "date": "2026-11-01"
+  },
+  "emaar-rosehill": {
+   "status": "visible change",
+   "changed_pct": 25.4,
+   "date": "2026-11-01"
+  },
+  "emaar-montiva": {
+   "status": "visible change",
+   "changed_pct": 19.8,
+   "date": "2026-11-01"
+  },
+  "damac-aykon-city-3": {
+   "status": "visible change",
+   "changed_pct": 15.3,
+   "date": "2026-11-01"
+  },
+  "samudra-villas": {
+   "status": "visible change",
+   "changed_pct": 30.2,
+   "date": "2026-11-01"
+  },
+  "enadia-seaview-collection": {
+   "status": "visible change",
+   "changed_pct": 51.2,
+   "date": "2026-11-01"
+  },
+  "lendang-luar-2030": {
+   "status": "visible change",
+   "changed_pct": 31.0,
+   "date": "2026-11-01"
+  },
+  "xamaras-wellness-retreat": {
+   "status": "visible change",
+   "changed_pct": 40.1,
+   "date": "2026-11-01"
+  },
+  "xamaras-tribe-villas": {
+   "status": "visible change",
+   "changed_pct": 27.0,
+   "date": "2026-11-01"
+  },
+  "tw-fuente-lirios-benahavis": {
+   "status": "no visible change",
+   "changed_pct": 2.1,
+   "date": "2026-11-01"
+  },
+  "tw-valley-views-mijas": {
+   "status": "visible change",
+   "changed_pct": 28.4,
+   "date": "2026-11-01"
+  },
+  "tw-grand-bay-manilva": {
+   "status": "visible change",
+   "changed_pct": 32.4,
+   "date": "2026-11-01"
+  },
+  "tw-almazara-gardens-istan": {
+   "status": "visible change",
+   "changed_pct": 6.3,
+   "date": "2026-11-01"
+  },
+  "tw-solana-village-mijas": {
+   "status": "visible change",
+   "changed_pct": 7.6,
+   "date": "2026-11-01"
+  },
+  "nativa-tulum": {
+   "status": "no visible change",
+   "changed_pct": 5.3,
+   "date": "2026-11-01"
+  },
+  "hunab-ku-sanctuary-tulum": {
+   "status": "no visible change",
+   "changed_pct": 2.3,
+   "date": "2026-11-01"
+  },
+  "sadasi-via-verde-playa": {
+   "status": "visible change",
+   "changed_pct": 29.7,
+   "date": "2026-11-01"
+  },
+  "bodhi-tulum": {
+   "status": "no visible change",
+   "changed_pct": 5.0,
+   "date": "2026-11-01"
+  },
+  "cipriani-residences-miami": {
+   "status": "visible change",
+   "changed_pct": 19.1,
+   "date": "2026-11-01"
+  },
+  "one-seputeh-residences-kl": {
+   "status": "visible change",
+   "changed_pct": 74.9,
+   "date": "2026-11-01"
+  },
+  "crown-penang": {
+   "status": "visible change",
+   "changed_pct": 8.9,
+   "date": "2026-11-01"
+  },
+  "ryowha-hirafu-luxury-resort-villas": {
+   "status": "visible change",
+   "changed_pct": 14.9,
+   "date": "2026-11-01"
+  },
+  "riviera-tower-ellinikon": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "elounda-hills-crete": {
+   "status": "no visible change",
+   "changed_pct": 1.0,
+   "date": "2026-11-01"
+  },
+  "the-peaks-lustica-bay": {
+   "status": "visible change",
+   "changed_pct": 23.3,
+   "date": "2026-11-01"
+  },
+  "balcon-de-finestrat": {
+   "status": "no visible change",
+   "changed_pct": 5.1,
+   "date": "2026-11-01"
+  },
+  "the-source-terraces-saadiyat-grove": {
+   "status": "visible change",
+   "changed_pct": 16.4,
+   "date": "2026-11-01"
+  },
+  "al-sidr-saadiyat-lagoons": {
+   "status": "visible change",
+   "changed_pct": 6.2,
+   "date": "2026-11-01"
+  },
+  "hayat-flora-kucukcekmece": {
+   "status": "visible change",
+   "changed_pct": 14.5,
+   "date": "2026-11-01"
+  },
+  "altintas-700-unit-project-aksu": {
+   "status": "visible change",
+   "changed_pct": 24.8,
+   "date": "2026-11-01"
+  },
+  "alero-vallarta-sten": {
+   "status": "no visible change",
+   "changed_pct": 2.4,
+   "date": "2026-11-01"
+  },
+  "bahia-papagayo-enjoy-grupo-laguna": {
+   "status": "visible change",
+   "changed_pct": 28.8,
+   "date": "2026-11-01"
+  },
+  "viceroy-residences-austin-pearlstone": {
+   "status": "no visible change",
+   "changed_pct": 1.2,
+   "date": "2026-11-01"
+  },
+  "ora-by-casa-tua-fortune": {
+   "status": "visible change",
+   "changed_pct": 20.9,
+   "date": "2026-11-01"
+  },
+  "infinity-paguera-taylor-wimpey": {
+   "status": "visible change",
+   "changed_pct": 8.7,
+   "date": "2026-11-01"
+  },
+  "avrupa-konutlari-gunesli-artas": {
+   "status": "no visible change",
+   "changed_pct": 5.8,
+   "date": "2026-11-01"
+  },
+  "ferreiros-residences-yard-properties": {
+   "status": "no visible change",
+   "changed_pct": 1.6,
+   "date": "2026-11-01"
+  },
+  "residences-monsanto-gestilar": {
+   "status": "visible change",
+   "changed_pct": 7.6,
+   "date": "2026-11-01"
+  },
+  "sky-gate-tower-tiger": {
+   "status": "visible change",
+   "changed_pct": 11.5,
+   "date": "2026-11-01"
+  },
+  "sunstone-imkan": {
+   "status": "no visible change",
+   "changed_pct": 0.6,
+   "date": "2026-11-01"
+  },
+  "intercontinental-residences-bangkok-asoke-cg-capital": {
+   "status": "too cloudy",
+   "date": "2026-11-01"
+  },
+  "the-sustainable-city-yiti-diamond-developers-see-holding-through-the-j": {
+   "status": "visible change",
+   "changed_pct": 11.9,
+   "date": "2026-11-01"
+  },
+  "forest-city-2-hz-development": {
+   "status": "visible change",
+   "changed_pct": 12.4,
+   "date": "2026-11-01"
+  },
+  "nobu-residences-manchester-salboy": {
+   "status": "no visible change",
+   "changed_pct": 5.8,
+   "date": "2026-11-01"
+  },
+  "edition-birmingham-centenary-tower-sphere-select": {
+   "status": "no visible change",
+   "changed_pct": 3.8,
+   "date": "2026-11-01"
+  },
+  "arancia-yards-beyond": {
+   "status": "no visible change",
+   "changed_pct": 2.4,
+   "date": "2026-11-01"
+  },
+  "nautica-residences-cancun-nauma": {
+   "status": "visible change",
+   "changed_pct": 25.5,
+   "date": "2026-11-01"
+  },
+  "cora-sur-los-cabos-grupo-habitat": {
+   "status": "visible change",
+   "changed_pct": 6.9,
+   "date": "2026-11-01"
+  },
+  "sobha-siniya-island-villas-sobha-realty": {
+   "status": "visible change",
+   "changed_pct": 19.1,
+   "date": "2026-11-01"
+  },
+  "stellar-by-elie-saab-emirates-developments": {
+   "status": "no visible change",
+   "changed_pct": 2.2,
+   "date": "2026-11-01"
+  },
+  "mamsha-palm-aldar": {
+   "status": "visible change",
+   "changed_pct": 34.6,
+   "date": "2026-11-01"
+  },
+  "bab-al-qasr-garden-residence-66-burtville": {
+   "status": "no visible change",
+   "changed_pct": 2.1,
+   "date": "2026-11-01"
+  },
+  "ramhan-island-villas-phase-4-eagle-hills": {
+   "status": "visible change",
+   "changed_pct": 9.0,
+   "date": "2026-11-01"
+  },
+  "nasim-al-bahr-residences-adnh": {
+   "status": "visible change",
+   "changed_pct": 6.1,
+   "date": "2026-11-01"
+  },
+  "oystra-richmind": {
+   "status": "visible change",
+   "changed_pct": 7.3,
+   "date": "2026-11-01"
+  },
+  "gianfranco-ferre-residences-mira": {
+   "status": "no visible change",
+   "changed_pct": 0.6,
+   "date": "2026-11-01"
+  },
+  "azure-by-lapis-lapis-properties": {
+   "status": "visible change",
+   "changed_pct": 19.0,
+   "date": "2026-11-01"
+  },
+  "zen-gardens-bar-novokub": {
+   "status": "no visible change",
+   "changed_pct": 5.9,
+   "date": "2026-11-01"
+  },
+  "aura-condominium-rawai-the-one-group": {
+   "status": "visible change",
+   "changed_pct": 6.2,
+   "date": "2026-11-01"
+  },
+  "sharjah-sustainable-city-ii-shurooq-see-holding": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "khalid-bin-sultan-city-beeah": {
+   "status": "no visible change",
+   "changed_pct": 2.6,
+   "date": "2026-11-01"
+  },
+  "aryam-villas-ajmal-makan": {
+   "status": "visible change",
+   "changed_pct": 9.6,
+   "date": "2026-11-01"
+  },
+  "sukoon-by-sanzen": {
+   "status": "no visible change",
+   "changed_pct": 1.7,
+   "date": "2026-11-01"
+  },
+  "dusit-thani-residences-ajman-aqaar": {
+   "status": "no visible change",
+   "changed_pct": 1.3,
+   "date": "2026-11-01"
+  },
+  "tiger-downtown-ajman-orchid-towers-tiger-properties": {
+   "status": "no visible change",
+   "changed_pct": 5.1,
+   "date": "2026-11-01"
+  },
+  "sealine-residence-al-zorah": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "senna-tower-fg-empreendimentos": {
+   "status": "no visible change",
+   "changed_pct": 2.0,
+   "date": "2026-11-01"
+  },
+  "nouvelle-vague-antibes-kaufman-broad": {
+   "status": "no visible change",
+   "changed_pct": 4.2,
+   "date": "2026-11-01"
+  },
+  "aya-beachfront-residences-deyaar": {
+   "status": "visible change",
+   "changed_pct": 9.9,
+   "date": "2026-11-01"
+  },
+  "amra-residences-citi-developers": {
+   "status": "visible change",
+   "changed_pct": 15.1,
+   "date": "2026-11-01"
+  },
+  "river-cove-residences-sobha": {
+   "status": "no visible change",
+   "changed_pct": 2.6,
+   "date": "2026-11-01"
+  },
+  "the-launiu-ward-village-howard-hughes": {
+   "status": "no visible change",
+   "changed_pct": 3.3,
+   "date": "2026-11-01"
+  },
+  "waldorf-astoria-residences-miami-pmg": {
+   "status": "visible change",
+   "changed_pct": 6.9,
+   "date": "2026-11-01"
+  },
+  "mercedes-benz-places-miami-jds": {
+   "status": "visible change",
+   "changed_pct": 6.3,
+   "date": "2026-11-01"
+  },
+  "colette-residences-brickell-meta": {
+   "status": "no visible change",
+   "changed_pct": 3.6,
+   "date": "2026-11-01"
+  },
+  "amethyst-springs-kilimani-gy-group": {
+   "status": "visible change",
+   "changed_pct": 7.8,
+   "date": "2026-11-01"
+  },
+  "pavilion-square-kuala-lumpur-armani-hartajaya": {
+   "status": "visible change",
+   "changed_pct": 28.1,
+   "date": "2026-11-01"
+  },
+  "111-menerung-brdb": {
+   "status": "visible change",
+   "changed_pct": 43.2,
+   "date": "2026-11-01"
+  },
+  "divine-klcc-chin-hin-property": {
+   "status": "visible change",
+   "changed_pct": 20.4,
+   "date": "2026-11-01"
+  },
+  "aethera-residences-uoa-johor-bahru": {
+   "status": "visible change",
+   "changed_pct": 14.7,
+   "date": "2026-11-01"
+  },
+  "shift-esperanza-los-nidos-blesso": {
+   "status": "no visible change",
+   "changed_pct": 5.5,
+   "date": "2026-11-01"
+  },
+  "the-anti-galerie-hotel-trazos-urbanos": {
+   "status": "visible change",
+   "changed_pct": 6.3,
+   "date": "2026-11-01"
+  },
+  "intercontinental-grenada-la-sagesse-range-developments": {
+   "status": "no visible change",
+   "changed_pct": 2.7,
+   "date": "2026-11-01"
+  },
+  "aila-sunset-residences-rodney-bay": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "moon-gate-hotel-spa-antigua": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "passage-amador-eleta-marjalizo": {
+   "status": "no visible change",
+   "changed_pct": 0.6,
+   "date": "2026-11-01"
+  },
+  "fendi-chateau-residences-tower-3-chateau-group": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "udaondo-buenos-aires-landmark-developments": {
+   "status": "no visible change",
+   "changed_pct": 5.7,
+   "date": "2026-11-01"
+  },
+  "mandarin-oriental-residences-grand-cayman-melkonian-ral": {
+   "status": "visible change",
+   "changed_pct": 6.5,
+   "date": "2026-11-01"
+  },
+  "x1-trafford-waters-x1-developments": {
+   "status": "no visible change",
+   "changed_pct": 0.9,
+   "date": "2026-11-01"
+  },
+  "obsidian-greengate-salboy-domis": {
+   "status": "visible change",
+   "changed_pct": 8.5,
+   "date": "2026-11-01"
+  },
+  "contour-new-jackson-renaker": {
+   "status": "visible change",
+   "changed_pct": 8.2,
+   "date": "2026-11-01"
+  },
+  "w-residences-manchester-st-michaels-relentless-salboy": {
+   "status": "visible change",
+   "changed_pct": 11.9,
+   "date": "2026-11-01"
+  },
+  "imperial-exchange-liverpool-seth-real-estate": {
+   "status": "no visible change",
+   "changed_pct": 3.9,
+   "date": "2026-11-01"
+  },
+  "bentley-residences-sunny-isles-dezer": {
+   "status": "visible change",
+   "changed_pct": 12.6,
+   "date": "2026-11-01"
+  },
+  "andare-residences-pininfarina-related": {
+   "status": "visible change",
+   "changed_pct": 7.1,
+   "date": "2026-11-01"
+  },
+  "sereno-fort-lauderdale-integra-flying-point": {
+   "status": "no visible change",
+   "changed_pct": 3.9,
+   "date": "2026-11-01"
+  },
+  "one-tampa-kolter-urban": {
+   "status": "visible change",
+   "changed_pct": 8.0,
+   "date": "2026-11-01"
+  },
+  "hotel-ora-private-residences-tampa-arc": {
+   "status": "no visible change",
+   "changed_pct": 0.5,
+   "date": "2026-11-01"
+  },
+  "millenia-park-orlando-mir-developments": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "175-east-82nd-street-douglaston": {
+   "status": "no visible change",
+   "changed_pct": 3.7,
+   "date": "2026-11-01"
+  },
+  "the-windsor-23-ocean-parkway-aview": {
+   "status": "no visible change",
+   "changed_pct": 1.3,
+   "date": "2026-11-01"
+  },
+  "pendry-residences-nashville-someraroad": {
+   "status": "no visible change",
+   "changed_pct": 2.7,
+   "date": "2026-11-01"
+  },
+  "nashville-edition-residences-tidal": {
+   "status": "no visible change",
+   "changed_pct": 3.4,
+   "date": "2026-11-01"
+  },
+  "vanderbilt-residences-condado-paulson": {
+   "status": "visible change",
+   "changed_pct": 8.6,
+   "date": "2026-11-01"
+  },
+  "ritz-carlton-reserve-residences-cotton-bay": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "belize-marriott-residences-eci-development": {
+   "status": "no visible change",
+   "changed_pct": 2.8,
+   "date": "2026-11-01"
+  },
+  "fox-and-foundry-liverpool-nexus-residential": {
+   "status": "no visible change",
+   "changed_pct": 5.3,
+   "date": "2026-11-01"
+  },
+  "the-gateway-liverpool-legacie": {
+   "status": "no visible change",
+   "changed_pct": 4.9,
+   "date": "2026-11-01"
+  },
+  "four-seasons-private-residences-las-vegas-azure": {
+   "status": "no visible change",
+   "changed_pct": 1.8,
+   "date": "2026-11-01"
+  },
+  "cello-tower-symphony-park-red-ridge": {
+   "status": "no visible change",
+   "changed_pct": 4.0,
+   "date": "2026-11-01"
+  },
+  "st-regis-residences-houston-satya": {
+   "status": "no visible change",
+   "changed_pct": 1.6,
+   "date": "2026-11-01"
+  },
+  "gaia-residences-hollywood-alta": {
+   "status": "visible change",
+   "changed_pct": 11.8,
+   "date": "2026-11-01"
+  },
+  "priors-gate-birmingham-bunnywell-homes": {
+   "status": "no visible change",
+   "changed_pct": 4.1,
+   "date": "2026-11-01"
+  },
+  "boulevard-bristol-street-birmingham-investin": {
+   "status": "no visible change",
+   "changed_pct": 0.0,
+   "date": "2026-11-01"
+  },
+  "100-avenue-road-swiss-cottage-arada-london": {
+   "status": "no visible change",
+   "changed_pct": 1.4,
+   "date": "2026-11-01"
+  },
+  "angel-village-islington-bentry-capital": {
+   "status": "no visible change",
+   "changed_pct": 1.9,
+   "date": "2026-11-01"
+  },
+  "london-square-bermondsey-final-phase": {
+   "status": "no visible change",
+   "changed_pct": 2.0,
+   "date": "2026-11-01"
+  },
+  "opus-bankside-yards-native-land": {
+   "status": "no visible change",
+   "changed_pct": 2.8,
+   "date": "2026-11-01"
+  },
+  "aire-gardens-leeds-hilton-developments": {
+   "status": "no visible change",
+   "changed_pct": 0.4,
+   "date": "2026-11-01"
+  },
+  "regency-works-kirkstall-road-leeds-glenbrook": {
+   "status": "no visible change",
+   "changed_pct": 3.7,
+   "date": "2026-11-01"
+  },
+  "ingram-street-merchant-city-glasgow-artisan": {
+   "status": "no visible change",
+   "changed_pct": 2.3,
+   "date": "2026-11-01"
+  },
+  "the-new-village-edinburgh-park-s1-developments": {
+   "status": "no visible change",
+   "changed_pct": 2.8,
+   "date": "2026-11-01"
+  },
+  "domville-cherrywood-dublin-william-neville": {
+   "status": "visible change",
+   "changed_pct": 12.2,
+   "date": "2026-11-01"
+  },
+  "park-lane-apartments-cherrywood-evara": {
+   "status": "visible change",
+   "changed_pct": 11.0,
+   "date": "2026-11-01"
+  },
+  "city-walk-love-lane-liverpool-habitia": {
+   "status": "visible change",
+   "changed_pct": 8.2,
+   "date": "2026-11-01"
+  },
+  "ashiyana-heights-phuket": {
+   "status": "visible change",
+   "changed_pct": 7.2,
+   "date": "2026-11-01"
+  }
+ }
+}
