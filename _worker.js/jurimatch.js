@@ -124,6 +124,8 @@ async function dynamicPage(path, m, ctx) {
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouync]/g);
     // Polish, Czech, Turkish... letters with accents on consonants (ś, ź, ż, ł, ř, ş, ğ).
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouyncszlrtdgk]/g);
+    // The wide pattern can match more than 200 names: fall back to the hand-verified firms with the same initial.
+    if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&source=eq.' + CURATED + '&firm_name=ilike.' + encodeURIComponent(words[0][0] + '*') + '&limit=1000', ctx);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
