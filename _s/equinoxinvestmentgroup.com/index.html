@@ -1,48 +1,581 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#F6F2EA" />
-    <title>Equinox Investment Group — Let&#39;s build the companies of the future</title>
-    <meta name="description" content="A global venture builder. Fully remote, global, autonomy. Everyone is a founder of what they ship.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Equinox Investment Group · We build companies and run them like an engine</title>
+<meta name="description" content="Equinox is a venture builder. 14 live companies across real estate, health, legal, work, travel and creators, built on one shared engine of distribution, talent and capital.">
+<link rel="canonical" href="https://equinoxinvestmentgroup.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#07090c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Equinox Investment Group">
+<meta property="og:title" content="Equinox Investment Group · We build companies and run them like an engine">
+<meta property="og:description" content="14 live companies, one shared engine of distribution, talent and capital.">
+<meta property="og:url" content="https://equinoxinvestmentgroup.com/">
+<meta property="og:image" content="https://equinoxinvestmentgroup.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Equinox Investment Group LLC","url":"https://equinoxinvestmentgroup.com/","logo":"https://equinoxinvestmentgroup.com/favicon.svg","email":"carlos@equinoxinvestmentgroup.com","founder":{"@type":"Person","name":"Carlos de Ory"},"foundingDate":"2024","subOrganization":[{"@type":"Organization","name":"Eco Beach City","url":"https://ecobeachcity.com"},{"@type":"Organization","name":"La Clinique Swiss","url":"https://lacliniqueswiss.com"},{"@type":"Organization","name":"RealHunt","url":"https://realhunt.co"},{"@type":"Organization","name":"Kolaboro","url":"https://kolaboro.com"},{"@type":"Organization","name":"JuriMatch","url":"https://jurimatch.com"},{"@type":"Organization","name":"Without Taxes","url":"https://withouttaxes.com"},{"@type":"Organization","name":"ReelRole","url":"https://reelrole.com"},{"@type":"Organization","name":"Jobersity","url":"https://jobersity.com"},{"@type":"Organization","name":"Happy Low Cost","url":"https://happylowcost.com"},{"@type":"Organization","name":"Top3Hotels","url":"https://top3hotels.com"},{"@type":"Organization","name":"MejorCrucero","url":"https://mejorcrucero.com"},{"@type":"Organization","name":"KlipStay","url":"https://klipstay.com"},{"@type":"Organization","name":"Linkveo","url":"https://linkveo.com"},{"@type":"Organization","name":"Lead Pool Club","url":"https://leadpoolclub.com"}]}</script>
+<style>
+:root{
+  --night:#07090c; --night-2:#0e1218; --on-night:#ece6da; --on-night-2:rgba(236,230,218,.62); --line-n:rgba(236,230,218,.13);
+  --day:#f4efe6; --day-2:#ebe4d7; --ink:#14161a; --ink-2:#5b5d61; --line-d:rgba(20,22,26,.13);
+  --sun:#f0a63a; --sun-2:#ffcf7a; --ember:#e2552b;
+  --f-d:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-b:"Inter","Helvetica Neue",Arial,sans-serif;
+  --f-m:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --gut:max(16px,env(safe-area-inset-left,0px));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--on-night);font-family:var(--f-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg,canvas{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-d);font-weight:400;line-height:.98;letter-spacing:-.015em;margin:0;text-wrap:balance}
+p{margin:0}
+em{font-style:italic;color:var(--sun-2)}
+.day em{color:var(--ember)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gut)}
+.mono{font-family:var(--f-m);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+.dot{display:inline-block;width:.55em;height:.55em;border-radius:50%;background:var(--sun);box-shadow:0 0 14px var(--sun);margin-right:.7em;vertical-align:.05em}
+:focus-visible{outline:2px solid var(--sun);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--sun);color:#000;padding:8px 14px;z-index:99}
+.skip:focus{left:8px}
 
-    <script>
-      // Apply theme before paint to avoid flash
-      (function () {
-        try {
-          var saved = localStorage.getItem('eq-theme');
-          if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
-        } catch (e) {}
-      })();
-    </script>
+/* progress + nav */
+#bar{position:fixed;inset:0 auto auto 0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--ember),var(--sun),var(--sun-2));z-index:70}
+nav.top{position:fixed;inset:0 0 auto;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:calc(14px + env(safe-area-inset-top,0px)) var(--gut) 14px;color:var(--on-night);transition:color .4s,background .4s,backdrop-filter .4s}
+nav.top.scrolled{background:rgba(7,9,12,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav.top.light{color:var(--ink)}
+nav.top.light.scrolled{background:rgba(244,239,230,.72)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-d);font-size:1.45rem;letter-spacing:-.01em}
+.logo svg{width:26px;height:26px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{text-decoration:none;font-size:.9rem;opacity:.78;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.pill{display:inline-flex;align-items:center;gap:.55em;padding:.72em 1.2em;border-radius:999px;border:1px solid currentColor;text-decoration:none;font-size:.9rem;font-weight:500;transition:background .25s,color .25s,transform .25s}
+.pill:hover{background:var(--sun);border-color:var(--sun);color:#111;transform:translateY(-1px)}
+.pill .ar{transition:transform .25s}.pill:hover .ar{transform:translateX(3px)}
+.pill.solid{background:var(--sun);border-color:var(--sun);color:#111}
+.pill.solid:hover{background:var(--sun-2)}
+@media (max-width:820px){.nav-links a:not(.pill){display:none}}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+#orbit{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(to top,var(--night),transparent);z-index:-1;pointer-events:none}
+.hero .wrap{width:100%;padding-bottom:clamp(48px,9vh,110px);padding-top:120px}
+.hero h1{font-size:clamp(3.1rem,9.6vw,9.4rem);max-width:12ch}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%);animation:up 1.1s cubic-bezier(.2,.75,.15,1) forwards}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.12s}.hero h1 .ln:nth-child(3)>span{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px;margin-top:38px}
+.hero-meta p{max-width:34ch;color:var(--on-night-2);font-size:1.08rem}
+.fade-in{opacity:0;animation:fi 1.2s .6s forwards}@keyframes fi{to{opacity:1}}
+.hero .eyebrow{margin-bottom:26px;color:var(--on-night-2)}
+.cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:22px;height:36px;border:1px solid var(--line-n);border-radius:12px}
+.cue::after{content:"";position:absolute;left:50%;top:7px;width:2px;height:7px;margin-left:-1px;background:var(--sun);border-radius:2px;animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+@media (max-width:700px){.cue{display:none}}
 
-    <meta property="og:type" content="website" />
-    
-    
-    <meta property="og:site_name" content="Equinox Investment Group" />
-    <meta property="og:image" content="/og.svg">
-    <meta name="twitter:card" content="summary_large_image" />
-    
-    
-    <meta name="twitter:image" content="/og.svg">
-    <meta property="og:title" content="Equinox Investment Group — Let&#39;s build the companies of the future">
-  <meta name="twitter:title" content="Equinox Investment Group — Let&#39;s build the companies of the future">
-  <meta property="og:description" content="A global venture builder. Fully remote, global, autonomy. Everyone is a founder of what they ship.">
-  <meta name="twitter:description" content="A global venture builder. Fully remote, global, autonomy. Everyone is a founder of what they ship.">
-  <script type="module" crossorigin src="/assets/index-Cg5spzrP.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-SoNPCB2V.css">
+/* stats ribbon */
+.ribbon{border-top:1px solid var(--line-n);border-bottom:1px solid var(--line-n)}
+.ribbon .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 0 28px;border-left:1px solid var(--line-n);padding-left:22px}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-family:var(--f-d);font-weight:400;font-size:clamp(2.6rem,5vw,4.2rem);line-height:1;color:var(--on-night)}
+.stat span{display:block;margin-top:8px;color:var(--on-night-2);font-size:.88rem}
+@media (max-width:700px){.ribbon .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0;padding-left:0}.stat{border-top:1px solid var(--line-n)}.stat:nth-child(-n+2){border-top:0}}
+
+/* manifesto: words light up */
+.manifesto{height:240vh;position:relative}
+.manifesto .stick{position:sticky;top:0;height:100svh;display:flex;align-items:center}
+.manifesto p{font-family:var(--f-d);font-size:clamp(2rem,5.2vw,4.6rem);line-height:1.08;letter-spacing:-.01em;max-width:20ch}
+.manifesto .w{opacity:.14;transition:opacity .25s,color .25s}
+.manifesto .w.on{opacity:1}
+.manifesto .w.hl.on{color:var(--sun-2);font-style:italic}
+
+/* section heads */
+.sec{padding:clamp(90px,14vh,160px) 0}
+.head{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:end;margin-bottom:60px}
+.head h2{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+.head p{color:var(--on-night-2);max-width:46ch;font-size:1.08rem}
+.day .head p{color:var(--ink-2)}
+.num{color:var(--sun);margin-bottom:18px}
+.day .num{color:var(--ember)}
+@media (max-width:820px){.head{grid-template-columns:1fr;gap:20px}}
+
+/* engine scrollytelling */
+.engine{position:relative}
+.engine-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,80px)}
+.engine-vis{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center}
+.engine-vis svg{width:min(100%,560px);height:auto;overflow:visible}
+.steps{padding:12vh 0 30vh}
+.step{min-height:78vh;display:flex;flex-direction:column;justify-content:center;opacity:.25;transition:opacity .5s}
+.step.on{opacity:1}
+.step .mono{color:var(--sun)}
+.step h3{font-size:clamp(2.2rem,4.6vw,3.8rem);margin:14px 0 18px}
+.step p{color:var(--on-night-2);max-width:40ch;font-size:1.08rem}
+.node circle.c{fill:var(--night-2);stroke:var(--line-n);stroke-width:1;transition:fill .6s,stroke .6s,r .6s}
+.node text{fill:var(--on-night-2);font:500 10px var(--f-m);letter-spacing:.06em;text-anchor:middle;transition:fill .6s,opacity .6s}
+.spoke{stroke:var(--line-n);stroke-width:1;transition:stroke .6s,opacity .6s}
+.mesh{stroke:var(--sun);stroke-width:.8;opacity:0;transition:opacity .8s}
+#core{fill:url(#coreg)}
+.ring{fill:none;stroke:var(--line-n);stroke-dasharray:2 6}
+.radar{fill:url(#radarg);opacity:0;transform-origin:280px 280px;transition:opacity .6s}
+[data-s="1"] .radar{opacity:1;animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+[data-s="1"] .node.wedge circle.c{fill:var(--sun);stroke:var(--sun)}
+[data-s="1"] .node.wedge text{fill:var(--on-night)}
+[data-s="2"] .node circle.c,[data-s="3"] .node circle.c,[data-s="4"] .node circle.c{stroke:rgba(240,166,58,.6)}
+[data-s="2"] .spoke,[data-s="3"] .spoke,[data-s="4"] .spoke{stroke:rgba(240,166,58,.55)}
+[data-s="2"] .node.new circle.c{fill:var(--sun);stroke:var(--sun)}
+[data-s="3"] .mesh,[data-s="4"] .mesh{opacity:.45}
+[data-s="3"] .node text,[data-s="4"] .node text{fill:var(--on-night)}
+[data-s="4"] .node.big circle.c{fill:var(--sun);stroke:var(--sun-2)}
+.pulse{fill:var(--sun-2)}
+@media (max-width:820px){
+  .engine-grid{grid-template-columns:1fr}
+  .engine-vis{height:56svh;top:56px;z-index:1;background:linear-gradient(var(--night) 80%,transparent)}
+  .engine-vis svg{width:min(88vw,420px)}
+  .step{min-height:92svh;position:relative;z-index:2;justify-content:flex-end;padding-bottom:7svh}
+  .step>*{position:relative}
+  .step::before{content:"";position:absolute;left:calc(-1*var(--gut));right:calc(-1*var(--gut));bottom:0;height:52svh;background:linear-gradient(transparent,var(--night) 22%);z-index:-1}
+  .engine-vis{height:48svh}
+  .steps{padding-top:0}
+}
+
+/* portfolio horizontal rail */
+.rail{position:relative;background:var(--night)}
+.rail .pin{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.rail-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:34px}
+.rail-head h2{font-size:clamp(2.6rem,6vw,5.4rem)}
+.rail-count{font-family:var(--f-m);font-size:.8rem;color:var(--on-night-2);white-space:nowrap}
+.track{display:flex;gap:22px;padding:0 var(--gut);will-change:transform}
+.card{position:relative;flex:0 0 clamp(280px,30vw,400px);height:min(58svh,520px);border-radius:22px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;overflow:hidden;background:var(--night-2);border:1px solid var(--line-n);transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .4s}
+.card::before{content:"";position:absolute;inset:-30%;background:radial-gradient(circle at var(--mx,70%) var(--my,20%),var(--c,#f0a63a) 0%,transparent 45%);opacity:.32;transition:opacity .4s;pointer-events:none}
+.card:hover{transform:translateY(-6px);border-color:var(--c)}
+.card:hover::before{opacity:.55}
+.card>*{position:relative}
+.card .sec-tag{display:flex;justify-content:space-between;font-family:var(--f-m);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-night-2)}
+.card h3{font-size:clamp(2.3rem,3.6vw,3.2rem);margin-bottom:12px}
+.card p{color:var(--on-night-2);font-size:.98rem;max-width:30ch}
+.card .fact{margin-top:20px;padding-top:16px;border-top:1px solid var(--line-n);display:flex;justify-content:space-between;align-items:center;font-size:.9rem}
+.card .fact b{font-weight:500}
+.card .go{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-n);transition:background .3s,transform .3s}
+.card:hover .go{background:var(--c);border-color:var(--c);color:#111;transform:rotate(-45deg)}
+.card.next{background:transparent;border-style:dashed;justify-content:center;text-align:center;align-items:center}
+.card.next h3{font-size:2.2rem}
+@media (max-width:820px){
+  .rail{height:auto!important}
+  .rail .pin{position:relative;height:auto;padding:90px 0}
+  .track{overflow-x:auto;scroll-snap-type:x mandatory;transform:none!important;padding-bottom:12px;scrollbar-width:none}
+  .track::-webkit-scrollbar{display:none}
+  .card{flex-basis:82vw;height:430px;scroll-snap-align:center}
+}
+
+/* equinox: night turns to day */
+.equinox{position:relative;height:220vh}
+.equinox .stick{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(to bottom,
+  color-mix(in srgb,var(--night) calc(100% - var(--t,0)*100%),#f7c47a),
+  color-mix(in srgb,var(--night-2) calc(100% - var(--t,0)*100%),var(--day)))}
+.sunwrap{position:absolute;left:50%;bottom:0;width:min(120vw,1100px);aspect-ratio:1;transform:translate(-50%,calc(78% - var(--t,0)*48%))}
+.sun{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff3d6 0%,var(--sun-2) 22%,var(--sun) 44%,rgba(226,85,43,.0) 70%);filter:blur(2px);opacity:calc(.35 + var(--t,0)*.65)}
+.horizon{position:absolute;left:0;right:0;bottom:22%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent)}
+.eq-copy{position:relative;z-index:2;max-width:900px;padding:0 var(--gut);color:color-mix(in srgb,var(--on-night) calc(100% - var(--tc,0)*100%),var(--ink))}
+.eq-copy p{font-weight:450}
+.equinox .stick::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;pointer-events:none;background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--night-2) calc(100% - var(--t,0)*100%),var(--day)) 92%);z-index:1}
+.eq-copy h2{font-size:clamp(2.8rem,7.4vw,6.6rem)}
+.eq-copy p{margin:26px auto 0;max-width:48ch;font-size:1.12rem;opacity:.8}
+.eq-copy .mono{opacity:.7;margin-bottom:22px}
+.eq-copy em{color:inherit}
+.stars{position:absolute;inset:0;opacity:calc(1 - var(--t,0)*1.6)}
+
+/* DAY ZONE */
+.day{background:var(--day);color:var(--ink)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-d)}
+.why>div{padding:34px 28px 10px 0;border-right:1px solid var(--line-d);margin-right:28px}
+.why>div:last-child{border-right:0;margin-right:0}
+.why h3{font-size:clamp(1.9rem,2.8vw,2.5rem);margin-bottom:16px}
+.why p{color:var(--ink-2)}
+@media (max-width:820px){.why{grid-template-columns:1fr}.why>div{border-right:0;margin-right:0;border-bottom:1px solid var(--line-d);padding:28px 0}}
+
+/* timeline */
+.tl{position:relative;padding-left:clamp(28px,6vw,70px)}
+.tl-line{position:absolute;left:clamp(6px,2vw,22px);top:0;bottom:0;width:2px;background:var(--line-d)}
+.tl-line i{position:absolute;inset:0;transform-origin:top;transform:scaleY(var(--p,0));background:linear-gradient(var(--ember),var(--sun))}
+.ev{position:relative;padding:0 0 70px;display:grid;grid-template-columns:150px 1fr;gap:24px}
+.ev::before{content:"";position:absolute;left:calc(-1 * clamp(28px,6vw,70px) + clamp(6px,2vw,22px) - 6px);top:.55em;width:14px;height:14px;border-radius:50%;background:var(--day);border:2px solid var(--ink-2);transition:background .4s,border-color .4s,box-shadow .4s}
+.ev.in::before{background:var(--sun);border-color:var(--ember);box-shadow:0 0 0 6px rgba(240,166,58,.2)}
+.ev .yr{font-family:var(--f-m);font-size:.82rem;color:var(--ember);padding-top:.7em}
+.ev h3{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:10px}
+.ev p{color:var(--ink-2);max-width:52ch}
+@media (max-width:620px){.ev{grid-template-columns:1fr;gap:4px}.ev .yr{padding:0}}
+
+/* founder */
+.founder{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.monogram{aspect-ratio:4/5;border-radius:24px;background:radial-gradient(circle at 30% 25%,#fff7e6,transparent 55%),linear-gradient(160deg,#e9b25a,#c9572c 70%,#3b1c12);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:28px}
+.monogram span{font-family:var(--f-d);font-size:clamp(7rem,18vw,14rem);line-height:.8;color:rgba(255,255,255,.92);letter-spacing:-.04em}
+.monogram small{position:absolute;top:24px;left:28px;font-family:var(--f-m);font-size:.7rem;letter-spacing:.16em;color:rgba(255,255,255,.85)}
+.monogram::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 7px)}
+.founder h2{font-size:clamp(2.6rem,5.4vw,4.6rem);margin:16px 0 24px}
+.founder p{color:var(--ink-2);font-size:1.08rem;margin-bottom:16px;max-width:52ch}
+.bases{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.bases span{border:1px solid var(--line-d);border-radius:999px;padding:.45em 1em;font-size:.86rem}
+@media (max-width:820px){.founder{grid-template-columns:1fr}.monogram{aspect-ratio:16/10}}
+
+/* doors */
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.door{position:relative;border-radius:22px;padding:32px 28px 28px;background:#fffaf1;border:1px solid var(--line-d);text-decoration:none;display:flex;flex-direction:column;min-height:340px;overflow:hidden;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.door::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;left:var(--mx,80%);top:var(--my,0%);transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(240,166,58,.35),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.door:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(80,40,10,.35)}
+.door:hover::before{opacity:1}
+.door .mono{color:var(--ember)}
+.door h3{font-size:clamp(2.1rem,3vw,2.7rem);margin:18px 0 14px}
+.door p{color:var(--ink-2);flex:1}
+.door .pill{align-self:flex-start;margin-top:24px}
+.door.dark{background:var(--ink);color:var(--day);border-color:var(--ink)}
+.door.dark p{color:rgba(244,239,230,.7)}
+.door.dark .mono{color:var(--sun)}
+.extra{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+@media (max-width:900px){.doors{grid-template-columns:1fr}.door{min-height:0}}
+
+/* final */
+.final{text-align:center;padding:clamp(110px,18vh,200px) 0}
+.final h2{font-size:clamp(3rem,10vw,9rem);line-height:.92}
+.final p{margin:26px auto 36px;color:var(--ink-2);max-width:44ch;font-size:1.1rem}
+.marquee{overflow:hidden;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d);padding:18px 0;white-space:nowrap}
+.marquee div{display:inline-block;animation:mq 38s linear infinite;font-family:var(--f-d);font-size:clamp(1.6rem,3vw,2.4rem)}
+.marquee span{margin:0 26px}.marquee i{color:var(--ember);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+footer{background:var(--ink);color:rgba(244,239,230,.72);padding:70px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:.9rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.foot h4{font-family:var(--f-m);font-weight:400;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);margin:0 0 14px}
+.foot a{display:block;text-decoration:none;margin-bottom:8px;opacity:.85}.foot a:hover{opacity:1;color:#fff}
+.foot .big{font-family:var(--f-d);font-size:1.9rem;color:var(--day);line-height:1.1;margin-bottom:14px}
+.legal{margin-top:50px;padding-top:22px;border-top:1px solid rgba(244,239,230,.14);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.8rem;opacity:.7}
+@media (max-width:820px){.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  .equinox .stick{--tc:1}
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .hero h1 .ln>span{transform:none}
+  .fade-in{opacity:1}
+  .manifesto{height:auto}.manifesto .stick{position:relative;height:auto;padding:120px 0}.manifesto .w{opacity:1}
+  .equinox{height:auto}.equinox .stick{position:relative;height:auto;padding:140px 0;--t:1}
+}
+</style>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="bar"></div>
+
+<nav class="top" id="nav" aria-label="Main">
+  <a class="logo" href="/" aria-label="Equinox Investment Group, home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M16 2a14 14 0 0 1 0 28z" fill="#f0a63a"/></svg>
+    Equinox
+  </a>
+  <div class="nav-links">
+    <a href="#engine">Engine</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#story">Story</a>
+    <a href="/jobs/">Jobs</a>
+    <a class="pill" href="#join">Work with us <span class="ar">→</span></a>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero" data-dark>
+  <canvas id="orbit" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="eyebrow mono fade-in"><span class="dot"></span>Equinox Investment Group · Venture builder · Est. 2024</div>
+    <h1><span class="ln"><span>We build</span></span><span class="ln"><span>companies.</span></span><span class="ln"><span><em>Then run them</em></span></span><span class="ln"><span><em>like an engine.</em></span></span></h1>
+    <div class="hero-meta fade-in">
+      <p>Fourteen live companies across real estate, health, legal, work and travel. One shared engine of distribution, talent and capital behind every one of them.</p>
+      <a class="pill solid" href="#portfolio">See the portfolio <span class="ar">→</span></a>
+    </div>
+  </div>
+  <div class="cue" aria-hidden="true"></div>
+</header>
+
+<section class="ribbon" aria-label="Equinox in numbers">
+  <div class="wrap">
+    <div class="stat rv"><b data-count="14">0</b><span>companies live today</span></div>
+    <div class="stat rv d1"><b data-count="7">0</b><span>sectors, one operating system</span></div>
+    <div class="stat rv d2"><b data-count="3">0</b><span>bases: Madrid, Dubai, Sumba</span></div>
+    <div class="stat rv d3"><b>100%</b><span>remote, global, owner-minded</span></div>
+  </div>
+</section>
+
+<section class="manifesto" aria-label="Manifesto">
+  <div class="stick"><div class="wrap">
+    <p id="mani">Most builders bet everything on one company. We built a system that builds them. Every new venture inherits the audience, the talent and the operating muscle of every one that came before. Not luck. A machine for compounding.</p>
+  </div></div>
+</section>
+
+<section class="engine" id="engine" aria-label="The Equinox engine">
+  <div class="wrap">
+    <div class="engine-grid">
+      <div class="engine-vis">
+        <svg id="net" viewBox="0 0 560 560" role="img" aria-label="Diagram: fourteen companies orbit one shared engine" data-s="0">
+          <defs>
+            <radialGradient id="coreg"><stop offset="0" stop-color="#fff3d6"/><stop offset=".45" stop-color="#f0a63a"/><stop offset="1" stop-color="#e2552b" stop-opacity="0"/></radialGradient>
+            <radialGradient id="radarg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 280) scale(250)"><stop offset="0" stop-color="#f0a63a" stop-opacity=".35"/><stop offset="1" stop-color="#f0a63a" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle class="ring" cx="280" cy="280" r="150"/><circle class="ring" cx="280" cy="280" r="235"/>
+          <path class="radar" d="M280 280 L530 280 A250 250 0 0 0 456.8 103.2 Z"/>
+          <g id="mesh"></g><g id="spokes"></g><g id="pulses"></g>
+          <circle id="core" cx="280" cy="280" r="62"/>
+          <text x="280" y="284" text-anchor="middle" style="font:400 22px 'Instrument Serif',serif;fill:#111">engine</text>
+          <g id="nodes"></g>
+        </svg>
+      </div>
+      <div class="steps">
+        <div class="head" style="display:block;margin:0 0 6vh"><div class="mono num">01 · The Equinox method</div><h2 style="font-size:clamp(2.6rem,6vw,5rem)">Four moves. <em>On repeat.</em></h2></div>
+        <div class="step" data-step="1"><div class="mono">Move 1 · Find the wedge</div><h3>We only build where the old way just broke.</h3><p>We map verticals where distribution, trust or AI changed the rules: lawyers paid only when you win, homes scored instead of advertised, hiring by video instead of CV. No wedge, no company.</p></div>
+        <div class="step" data-step="2"><div class="mono">Move 2 · Build in weeks</div><h3>From idea to live product in weeks, not quarters.</h3><p>A small operator team on a shared technical and legal spine. Same stack, same playbooks, same publishing machine. What took 40 people in 2018 takes four today.</p></div>
+        <div class="step" data-step="3"><div class="mono">Move 3 · Distribute across the network</div><h3>Every launch starts with an audience.</h3><p>Each company launches into the traffic and trust of the rest of the portfolio. Travellers from Happy Low Cost discover Top3Hotels. Buyers from RealHunt meet Kolaboro. The network is the moat.</p></div>
+        <div class="step" data-step="4"><div class="mono">Move 4 · Double down</div><h3>Capital goes behind the outliers.</h3><p>Hiring, budget and expansion follow the numbers. What works gets more. What doesn't is retired without drama, and its lessons feed the next build.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rail" id="portfolio" aria-label="Portfolio">
+  <div class="pin">
+    <div class="wrap rail-head">
+      <div><div class="mono num">02 · Portfolio</div><h2>Fourteen companies. <em>One engine.</em></h2></div>
+      <div class="rail-count" id="railCount" aria-hidden="true">01 / 14</div>
+    </div>
+    <div class="track" id="track"></div>
+  </div>
+</section>
+
+<section class="equinox" id="story" aria-label="Why now">
+  <div class="stick" id="eqStick">
+    <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+    <div class="sunwrap" aria-hidden="true"><div class="sun"></div></div>
+    <div class="horizon" aria-hidden="true"></div>
+    <div class="eq-copy">
+      <div class="mono">03 · Why now</div>
+      <h2>The night of the one-company bet <em>is ending.</em></h2>
+      <p>On the equinox, day and night stand in perfect balance. That is our idea of a company: product and distribution, speed and discipline, built in the same proportion. The window to build a portfolio this way is open now.</p>
+    </div>
+  </div>
+</section>
+
+<div class="day" id="day">
+<section class="sec">
+  <div class="wrap">
+    <div class="why">
+      <div class="rv"><div class="mono num">Leverage</div><h3>Small teams, many companies.</h3><p>AI and modern tooling let a few operators run several serious businesses in parallel, with institutional discipline.</p></div>
+      <div class="rv d1"><div class="mono num">Distribution</div><h3>Audience is the new advantage.</h3><p>Product is easy to copy. Owning traffic, trust and the permission to ship the next thing is not.</p></div>
+      <div class="rv d2"><div class="mono num">Capital</div><h3>Money alone stopped winning.</h3><p>Anyone can fund a startup. Few can repeat a system that ships, distributes and scales companies again and again.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-label="Timeline">
+  <div class="wrap">
+    <div class="head"><div><div class="mono num">04 · Traction</div><h2>Shipped, <em>on schedule.</em></h2></div><p>Two years from the first playbook to fourteen live companies, one of them built in concrete and timber on a beach in Indonesia.</p></div>
+    <div class="tl" id="tl">
+      <div class="tl-line"><i></i></div>
+      <div class="ev rv"><div class="yr">2024</div><div><h3>Equinox is founded.</h3><p>The holding is set up and the first operating playbooks are written down, so every company can start from them.</p></div></div>
+      <div class="ev rv"><div class="yr">2024</div><div><h3>Eco Beach City breaks ground.</h3><p>Sumba, Indonesia, one hour from Bali. The first physical asset of the group, with homes now built on the beach.</p></div></div>
+      <div class="ev rv"><div class="yr">2025</div><div><h3>RealHunt, JuriMatch and ReelRole go live.</h3><p>Three companies launched on the shared engine: scored homes, no-win-no-fee law and video hiring.</p></div></div>
+      <div class="ev rv"><div class="yr">2026</div><div><h3>Travel and creators join.</h3><p>Top3Hotels, MejorCrucero, KlipStay and Linkveo plug into the Happy Low Cost audience. Jobersity brings an AI agent to job search.</p></div></div>
+      <div class="ev rv"><div class="yr">Autumn 2026</div><div><h3>La Clinique Swiss, Kolaboro, Without Taxes.</h3><p>Longevity medicine on an island, buyer-side agents abroad, and an honest ranking of low-tax countries. Fourteen companies live.</p></div></div>
+      <div class="ev rv"><div class="yr">Next</div><div><h3>New companies every quarter.</h3><p>The engine keeps running. If you want to build the next one with us, the door is below.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-label="Founder">
+  <div class="wrap founder">
+    <div class="monogram rv"><small>FOUNDER &amp; CEO</small><span>CdO</span></div>
+    <div class="rv d1">
+      <div class="mono num">05 · Team</div>
+      <h2>Carlos de Ory. <em>A system that scales beyond him.</em></h2>
+      <p>Carlos has spent the last decade building, launching and operating internet companies across real estate, legal, travel and reputation.</p>
+      <p>Equinox is that playbook turned into an institution, designed so every new operator inherits the leverage of everything built before them.</p>
+      <div class="bases"><span>Madrid</span><span>Dubai</span><span>Sumba</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="join" style="padding-top:0" aria-label="Work with Equinox">
+  <div class="wrap">
+    <div class="head"><div><div class="mono num">06 · Work with Equinox</div><h2>Three ways <em>in.</em></h2></div><p>We read everything and reply to what matters. No CV, no cover letter. Just signal.</p></div>
+    <div class="doors">
+      <a class="door rv" href="/operators/apply/"><div class="mono">Founders · Operators</div><h3>Build a company with us.</h3><p>You bring conviction and the will to operate. We bring the engine: distribution, capital, legal and growth, and a real seat at the table.</p><span class="pill">Apply as operator <span class="ar">→</span></span></a>
+      <a class="door dark rv d1" href="/investors/brief/"><div class="mono">Investors</div><h3>Back the engine.</h3><p>Co-invest in a diversified portfolio of operating companies plus a real asset on Sumba. For institutional and qualified allocators.</p><span class="pill">Request the brief <span class="ar">→</span></span></a>
+      <a class="door rv d2" href="mailto:carlos@equinoxinvestmentgroup.com?subject=Partnership%20with%20Equinox"><div class="mono">Partners</div><h3>Open a market with us.</h3><p>If you own an audience, capital or a distribution channel in a market we are entering, we want a long conversation. Not a referral fee.</p><span class="pill">Write to Carlos <span class="ar">→</span></span></a>
+    </div>
+    <div class="extra rv"><a class="pill" href="/12ambassadors/" style="border-color:var(--line-d)">12 ambassadors per country <span class="ar">→</span></a><a class="pill" href="/jobs/" style="border-color:var(--line-d)">Open roles across the portfolio <span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div id="mq"></div></div>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="rv">Let's build the <em>companies of the future.</em></h2>
+    <p class="rv d1">Fully remote. Global. Everyone is a founder of what they ship.</p>
+    <a class="pill solid rv d2" href="/operators/apply/">Start the conversation <span class="ar">→</span></a>
+  </div>
+</section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><div class="big">Equinox Investment Group</div><p>A venture builder. We design, launch and operate companies, and run them like an engine.</p><p style="margin-top:14px"><a href="mailto:carlos@equinoxinvestmentgroup.com" style="display:inline">carlos@equinoxinvestmentgroup.com</a></p></div>
+      <div><h4>Portfolio</h4><a href="https://ecobeachcity.com" rel="noopener">Eco Beach City</a><a href="https://lacliniqueswiss.com" rel="noopener">La Clinique Swiss</a><a href="https://realhunt.co" rel="noopener">RealHunt</a><a href="https://jurimatch.com" rel="noopener">JuriMatch</a><a href="https://reelrole.com" rel="noopener">ReelRole</a><a href="https://happylowcost.com" rel="noopener">Happy Low Cost</a><a href="#portfolio">All fourteen</a></div>
+      <div><h4>Work with us</h4><a href="/operators/apply/">Operators</a><a href="/investors/brief/">Investors</a><a href="/12ambassadors/">Ambassadors</a><a href="/jobs/">Jobs</a></div>
+      <div><h4>Legal</h4><a href="/privacy-policy/">Privacy</a><a href="/cookie-policy/">Cookies</a><a href="/terms/">Terms</a><a href="/disclaimer/">Disclaimer</a></div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Equinox Investment Group LLC · Wyoming, USA</span><span>Nothing on this site is an offer to sell securities or investment advice.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var D=document, $=function(s,c){return (c||D).querySelector(s)}, $$=function(s,c){return [].slice.call((c||D).querySelectorAll(s))};
+$('#yr').textContent=new Date().getFullYear();
+
+var CO=[
+ {n:"Eco Beach City",s:"Real estate",u:"https://ecobeachcity.com",d:"A beach town in Sumba, one hour from Bali. Homes, cabins and founder seats by the sea.",f:"24 homes built",c:"#f0a63a"},
+ {n:"La Clinique Swiss",s:"Health",u:"https://lacliniqueswiss.com",d:"Swiss-led longevity medicine on an island in Indonesia. One membership, fifty years.",f:"From €6,500",c:"#e5484d"},
+ {n:"RealHunt",s:"Real estate data",u:"https://realhunt.co",d:"The best homes in every country, each scored from 70 to 98 and ranked best first.",f:"New homes daily",c:"#4cc38a"},
+ {n:"Kolaboro",s:"Property abroad",u:"https://kolaboro.com",d:"Local agents who work for the buyer, never the seller, and film every milestone on site.",f:"Buyer-side only",c:"#3e9bf0"},
+ {n:"JuriMatch",s:"Legal",u:"https://jurimatch.com",d:"Find no-win-no-fee lawyers and litigation funders for your case.",f:"180 countries",c:"#a78bfa"},
+ {n:"Without Taxes",s:"Money",u:"https://withouttaxes.com",d:"A personal ranking of the best countries to live and run a company paying little or no tax.",f:"25 countries ranked",c:"#d4b16a"},
+ {n:"ReelRole",s:"Hiring",u:"https://reelrole.com",d:"Get hired through a 30 to 90 second video. Companies pay only to unlock who they want.",f:"Free for talent",c:"#ff7a59"},
+ {n:"Jobersity",s:"Careers AI",u:"https://jobersity.com",d:"Your AI agent finds the jobs that fit you and prepares a tailored application for each.",f:"Interviews while you sleep",c:"#22c1c3"},
+ {n:"Happy Low Cost",s:"Travel",u:"https://happylowcost.com",d:"Error fares and cheap flights from your airport, sent to you for free.",f:"420,000+ travellers",c:"#ff5f8f"},
+ {n:"Top3Hotels",s:"Travel",u:"https://top3hotels.com",d:"Three hotels in every city: one budget, one best value, one luxury. Choose in seconds.",f:"1,295 cities",c:"#f6c445"},
+ {n:"MejorCrucero",s:"Travel",u:"https://mejorcrucero.com",d:"Spain's cruise comparison. Real prices, every offer and ship scored from 0 to 100.",f:"2,665 offers",c:"#5aa9e6"},
+ {n:"KlipStay",s:"Creators",u:"https://klipstay.com",d:"Create short videos for hotels and travel brands and earn free stays. No followers needed.",f:"Videos pay for travel",c:"#ff9f43"},
+ {n:"Linkveo",s:"Creators",u:"https://linkveo.com",d:"Film a hotel, restaurant or spa and earn a commission every time someone books.",f:"Paid per booking",c:"#7bd389"},
+ {n:"Lead Pool Club",s:"Growth",u:"https://leadpoolclub.com",d:"Qualified buyers for a fraction of the usual cost, fully guaranteed.",f:"Guaranteed leads",c:"#c084fc"}
+];
+var esc=function(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;')};
+
+/* portfolio cards */
+var track=$('#track');
+track.innerHTML=CO.map(function(c,i){return '<a class="card" href="'+c.u+'" rel="noopener" style="--c:'+c.c+'" data-i="'+i+'"><div class="sec-tag"><span>'+esc(c.s)+'</span><span>'+String(i+1).padStart(2,'0')+'</span></div><div><h3>'+esc(c.n)+'</h3><p>'+esc(c.d)+'</p><div class="fact"><b>'+esc(c.f)+'</b><span class="go" aria-hidden="true">↗</span></div></div></a>'}).join('')+
+ '<div class="card next"><div><div class="mono" style="color:var(--sun)">15</div><h3>Yours, <em>next.</em></h3><p style="margin:12px auto 22px">New companies ship every quarter.</p><a class="pill" href="/operators/apply/">Build with us <span class="ar">→</span></a></div></div>';
+$$('.card').forEach(function(el){el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)/r.width*100+'%');el.style.setProperty('--my',(e.clientY-r.top)/r.height*100+'%')})});
+$$('.door').forEach(function(el){el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)+'px');el.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+
+/* marquee */
+var mqs=CO.map(function(c){return '<span>'+esc(c.n)+'</span><i>✦</i>'}).join('');$('#mq').innerHTML=mqs+mqs;
+
+/* manifesto words */
+var m=$('#mani'), HL=['system','inherits','compounding.','Not','luck.'];
+m.innerHTML=m.textContent.split(' ').map(function(w){return '<span class="w'+(HL.indexOf(w)>-1?' hl':'')+'">'+w+'</span>'}).join(' ');
+var words=$$('.w',m);
+
+/* engine network */
+var svg=$('#net'),NS='http://www.w3.org/2000/svg',cx=280,cy=280,P=[];
+function el(t,a,p){var e=D.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e}
+CO.forEach(function(c,i){var inner=i%2===0,r=inner?150:235,ang=(i/CO.length)*Math.PI*2-Math.PI/2+(inner?0:.22);P.push([cx+Math.cos(ang)*r,cy+Math.sin(ang)*r])});
+CO.forEach(function(c,i){el('line',{class:'spoke',x1:cx,y1:cy,x2:P[i][0],y2:P[i][1]},$('#spokes'))});
+for(var i=0;i<P.length;i++){var j=(i+1)%P.length,k=(i+3)%P.length;el('line',{class:'mesh',x1:P[i][0],y1:P[i][1],x2:P[j][0],y2:P[j][1]},$('#mesh'));el('line',{class:'mesh',x1:P[i][0],y1:P[i][1],x2:P[k][0],y2:P[k][1]},$('#mesh'))}
+var wedge=[4,0,6],nw=[12,13,1],big=[8,9,2];
+CO.forEach(function(c,i){var g=el('g',{class:'node'+(wedge.indexOf(i)>-1?' wedge':'')+(nw.indexOf(i)>-1?' new':'')+(big.indexOf(i)>-1?' big':'')},$('#nodes'));el('circle',{class:'c',cx:P[i][0],cy:P[i][1],r:big.indexOf(i)>-1?17:12},g);var t=el('text',{x:P[i][0],y:P[i][1]+(P[i][1]>cy?34:-24)},g);t.textContent=c.n.toUpperCase()});
+var pulses=[];if(!RM){for(var q=0;q<10;q++)pulses.push({e:el('circle',{class:'pulse',r:2.6},$('#pulses')),i:q,t:Math.random()})}
+var steps=$$('.step'),curStep=0;
+
+/* hero orbit canvas */
+var cv=$('#orbit'),cx2=cv.getContext('2d'),W,H,DPR=Math.min(devicePixelRatio||1,2),mx=0,my=0,tt=0;
+var stars=[];function rs(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*DPR;cv.height=H*DPR;cx2.setTransform(DPR,0,0,DPR,0,0);stars=[];for(var s=0;s<Math.min(260,W*H/5000);s++)stars.push([Math.random()*W,Math.random()*H,Math.random()*1.2+.2,Math.random()*6])}
+rs();addEventListener('resize',rs);
+addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+var heroVisible=true;
+function drawHero(){
+  if(!heroVisible)return;
+  cx2.clearRect(0,0,W,H);
+  var ox=W*(W<760?.5:.7)+mx*30,oy=H*(W<760?.24:.44)+my*20,R=Math.min(W,H)*(W<760?.4:.34);
+  stars.forEach(function(s){cx2.globalAlpha=.25+.35*Math.sin(tt*.8+s[3]);cx2.fillStyle='#ece6da';cx2.fillRect(s[0]-mx*8,s[1]-my*8,s[2],s[2])});
+  cx2.globalAlpha=1;
+  var g=cx2.createRadialGradient(ox,oy,0,ox,oy,R*.55);g.addColorStop(0,'rgba(255,230,180,.95)');g.addColorStop(.18,'rgba(240,166,58,.85)');g.addColorStop(.5,'rgba(226,85,43,.18)');g.addColorStop(1,'rgba(226,85,43,0)');
+  cx2.fillStyle=g;cx2.beginPath();cx2.arc(ox,oy,R*.55,0,7);cx2.fill();
+  // half-shadow: the equinox terminator
+  cx2.save();cx2.beginPath();cx2.arc(ox,oy,R*.13,0,7);cx2.clip();cx2.fillStyle='#fff4dc';cx2.fillRect(ox-R,oy-R,2*R,2*R);cx2.fillStyle='rgba(7,9,12,.92)';cx2.fillRect(ox,oy-R,R,2*R);cx2.restore();
+  var orbits=[[.42,.34,.09],[.7,.5,-.06],[1,.66,.04]];
+  orbits.forEach(function(o,k){cx2.strokeStyle='rgba(236,230,218,'+(.14-k*.03)+')';cx2.lineWidth=1;cx2.beginPath();cx2.ellipse(ox,oy,R*o[0],R*o[1],-.32,0,7);cx2.stroke()});
+  var pts=[];
+  CO.forEach(function(c,i){var o=orbits[i%3],sp=(i%3===0?.22:i%3===1?.15:.1),a=tt*sp+i*2.39,x0=Math.cos(a)*R*o[0],y0=Math.sin(a)*R*o[1],rot=-.32,x=ox+x0*Math.cos(rot)-y0*Math.sin(rot),y=oy+x0*Math.sin(rot)+y0*Math.cos(rot);pts.push([x,y,c,Math.sin(a)])});
+  pts.forEach(function(p,i){var q=pts[(i+5)%pts.length];cx2.strokeStyle='rgba(240,166,58,.08)';cx2.beginPath();cx2.moveTo(p[0],p[1]);cx2.lineTo(q[0],q[1]);cx2.stroke()});
+  pts.sort(function(a,b){return a[3]-b[3]}).forEach(function(p){var z=.65+.35*(p[3]+1)/2;cx2.globalAlpha=z;cx2.fillStyle=p[2].c;cx2.shadowColor=p[2].c;cx2.shadowBlur=14;cx2.beginPath();cx2.arc(p[0],p[1],3.4*z+1.2,0,7);cx2.fill();cx2.shadowBlur=0;
+    if(W>760){cx2.fillStyle='rgba(236,230,218,'+(.35+.45*z)+')';cx2.font='500 10.5px "JetBrains Mono",monospace';cx2.fillText(p[2].n.toUpperCase(),p[0]+10,p[1]+4)}});
+  cx2.globalAlpha=1;
+}
+
+/* stars in equinox */
+var sc=$('#stars'),sx=sc.getContext('2d');
+function drawStars(){var w=sc.clientWidth,h=sc.clientHeight;sc.width=w*DPR;sc.height=h*DPR;sx.setTransform(DPR,0,0,DPR,0,0);for(var s=0;s<Math.min(220,w*h/5000);s++){sx.globalAlpha=Math.random()*.7+.15;sx.fillStyle='#fff';var r=Math.random()*1.3+.2;sx.fillRect(Math.random()*w,Math.random()*h*.8,r,r)}}
+drawStars();addEventListener('resize',drawStars);
+
+/* counters */
+function count(el){var n=+el.dataset.count,t0=null;if(RM){el.textContent=n;return}function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1400);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));p<1&&requestAnimationFrame(f)}requestAnimationFrame(f)}
+
+/* reveal */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');$$('[data-count]',e.target).forEach(count);io.unobserve(e.target)}})},{threshold:.18,rootMargin:'0px 0px -6% 0px'});
+$$('.rv').forEach(function(x){io.observe(x)});
+var hio=new IntersectionObserver(function(es){heroVisible=es[0].isIntersecting});hio.observe($('.hero'));
+
+/* scroll engine */
+var bar=$('#bar'),nav=$('#nav'),mani=$('.manifesto'),rail=$('#portfolio'),eq=$('.equinox'),eqS=$('#eqStick'),tl=$('#tl'),day=$('#day'),railCount=$('#railCount');
+var mobile=function(){return innerWidth<=820};
+function sizeRail(){if(mobile()){rail.style.height='';return}rail.style.height=(track.scrollWidth-innerWidth+innerHeight*1.3)+'px'}
+sizeRail();addEventListener('resize',sizeRail);addEventListener('load',sizeRail);
+function prog(el){var r=el.getBoundingClientRect(),h=el.offsetHeight-innerHeight;return Math.min(1,Math.max(0,-r.top/(h||1)))}
+function onScroll(){
+  var y=scrollY,max=D.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(y/max)+')';
+  nav.classList.toggle('scrolled',y>40);
+  var dr=day.getBoundingClientRect(),eqr=eq.getBoundingClientRect();
+  nav.classList.toggle('light',(dr.top<60&&dr.bottom>60)||(eqr.top<0&&prog(eq)>.55&&eqr.bottom>60));
+  // manifesto
+  var mp=prog(mani)*1.15,on=Math.floor(mp*words.length);words.forEach(function(w,i){w.classList.toggle('on',i<on)});
+  // engine step
+  var s=0;steps.forEach(function(st,i){var r=st.getBoundingClientRect();var a=r.top<innerHeight*.6&&r.bottom>innerHeight*.35;st.classList.toggle('on',a);if(a)s=i+1});
+  if(s!==curStep){curStep=s;svg.setAttribute('data-s',s)}
+  // rail
+  if(!mobile()){var rp=prog(rail),dist=track.scrollWidth-innerWidth;track.style.transform='translate3d('+(-rp*dist)+'px,0,0)';railCount.textContent=String(Math.min(14,Math.max(1,Math.round(Math.min(1,rp*1.08)*13)+1))).padStart(2,'0')+' / 14'}
+  // equinox
+  var et=prog(eq);eqS.style.setProperty('--t',et.toFixed(3));eqS.style.setProperty('--tc',Math.min(1,Math.max(0,(et-.38)*5)).toFixed(3));
+  // timeline
+  var tr=tl.getBoundingClientRect(),tp=Math.min(1,Math.max(0,(innerHeight*.6-tr.top)/tr.height));tl.style.setProperty('--p',tp.toFixed(3));
+  $$('.ev',tl).forEach(function(ev){ev.classList.toggle('in',ev.getBoundingClientRect().top<innerHeight*.6)});
+}
+var tick=false;addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){onScroll();tick=false})}},{passive:true});
+onScroll();
+
+/* animation loop */
+function loop(){tt+=.008;drawHero();
+  if(pulses.length&&curStep>=3){pulses.forEach(function(p){p.t+=.012;if(p.t>1){p.t=0;p.i=(p.i+7)%P.length}var a=P[p.i],b=P[(p.i+3)%P.length];p.e.setAttribute('cx',a[0]+(b[0]-a[0])*p.t);p.e.setAttribute('cy',a[1]+(b[1]-a[1])*p.t);p.e.style.opacity=1})}
+  else if(pulses.length&&curStep>=2){pulses.forEach(function(p){p.t+=.014;if(p.t>1){p.t=0;p.i=(p.i+5)%P.length}var a=P[p.i];p.e.setAttribute('cx',cx+(a[0]-cx)*p.t);p.e.setAttribute('cy',cy+(a[1]-cy)*p.t);p.e.style.opacity=1})}
+  else pulses.forEach(function(p){p.e.style.opacity=0});
+  if(!RM)requestAnimationFrame(loop)}
+loop();
+})();
+</script>
+</body>
 </html>
