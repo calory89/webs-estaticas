@@ -40,7 +40,7 @@
       var esc = function (t) { var x = document.createElement('i'); x.textContent = t; return x.innerHTML; };
       var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       var day = function (iso) { var a = iso.split('-'); return M[+a[1] - 1] + ' ' + (+a[2]); };
-      var T = { data: 'DATA', feature: 'SHIPPED', auto: 'AGENT' };
+      var T = { data: 'DATA', feature: 'SHIPPED', auto: 'AGENT', building: 'BUILDING' };
       var db = d.db || {}, cl = db.claims || {}, n = function (x) { return (x || 0).toLocaleString('en'); };
       var h = '<span class="si"><em class="k-live">LIVE</em><s>' + n(d.cases.length) + '</s> projects &middot; <s>' + n(d.countries) + '</s> countries &middot; <s>' + n(db.claims_total) + '</s> claims tested &middot; <s>' + n(cl.contradicted) + '</s> contradicted</span>';
       d.ships.slice(0, 14).forEach(function (x) { h += '<span class="si"><b>' + day(x.d) + '</b><em class="k-' + (T[x.k] ? x.k : 'feature') + '">' + (T[x.k] || 'SHIPPED') + '</em>' + esc(x.t) + '</span>'; });
