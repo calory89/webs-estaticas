@@ -2,6 +2,26 @@
  {
   "d": "2026-11-01",
   "k": "feature",
+  "t": "Public roadmap: 42 of 100 features shipped, every one tracked"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Deposit protection finder: Shows which protection exists in each market and how to ask for it"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Personal checklist: Questions tailored to the country and property type"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Developer benchmark report: Each developer sees how its disclosure compares with its market"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
   "t": "Public roadmap: 39 of 100 features shipped, every one tracked"
  },
  {
