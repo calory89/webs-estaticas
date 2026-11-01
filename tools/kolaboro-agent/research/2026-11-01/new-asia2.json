@@ -1982,5 +1982,559 @@
    "all_six": false
   },
   "verified_score": 1
+ },
+ {
+  "slug": "one-central-saigon-ritz-carlton-residences-saigon-glory",
+  "name": "One Central Saigon (The Ritz-Carlton Residences)",
+  "developer": "Saigon Glory Co., Ltd. (development by Masterise Homes)",
+  "area": "Ben Thanh Quadrangle (Pham Ngu Lao, Calmette, Le Thi Hong Gam, Pho Duc Chinh), Ben Thanh Ward, Ho Chi Minh City",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "off-plan",
+  "url": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/",
+  "docs_url": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Techcombank guarantee of the investor's financial obligations for all 214 off-plan apartments (per HCMC Department of Construction, reported by VnExpress)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 214,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "sales site: 214 apartments approved for sale by the HCMC Department of Construction (Jul 2026), price not announced",
+   "news: two towers of 55 and 48 floors, 214 Ritz-Carlton branded residences and a 231-room Ritz-Carlton hotel",
+   "news: construction restarted mid-March 2026 with Newtecons and SOL E&C"
+  ],
+  "note": "Ritz-Carlton branded residences on the long-stalled Ben Thanh Quadrangle site (former Spirit of Saigon); the HCMC Department of Construction listed its 214 apartments as eligible for off-plan sale on 21 Jul 2026 with a Techcombank guarantee, but no approval number, price or handover date is published; VietNamNet reported the project was at one time funded by a Van Thinh Phat-linked entity and the investor had negative equity at end-2024. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Sales site cites inclusion in the DoC list of 37 projects but publishes no letter number; the DoC list (reproduced by Thu vien Nha dat and CafeLand, 21 Jul 2026) names 214 apartments, investor Saigon Glory",
+   "escrow": "VnExpress (24 Jul 2026): according to the DoC, all 214 apartments carry a Techcombank financial-obligation guarantee",
+   "progress": "No developer progress page; DoanhNhan (15 Aug 2026) reports construction restarted in mid-March 2026 after years of stoppage",
+   "plans": "No plans or unit sizes published",
+   "record": "No delivered projects named for Saigon Glory; Masterise Homes named as developer in news",
+   "returns": "No guarantee or yield language found"
+  },
+  "positives": [
+   "Provincial eligibility to sell confirmed for a stated number of apartments",
+   "Bank guarantee covering all approved apartments",
+   "International branded operator (The Ritz-Carlton) named"
+  ],
+  "flags": [
+   {
+    "text": "VietNamNet reported (7 Sep 2026) that the project was at one time funded by an entity in Truong My Lan's Van Thinh Phat group, that construction stalled several times since 2013, and that Saigon Glory had negative equity of over VND 12,445 billion at end-2024 before a capital increase to VND 23,000 billion.",
+    "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+   },
+   {
+    "text": "VietNamNet reported Saigon Glory repurchased about VND 1,246 billion of its 2020 bonds on 26 Aug 2026, leaving about VND 1,263 billion outstanding in five series.",
+    "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "independent",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "214 apartments eligible to sell (DoC list of 21 Jul 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thuviennhadat.vn/phap-luat/37-du-an-tai-tphcm-du-dieu-kien-ban-nha-o-hinh-thanh-trong-tuong-lai-nam-2026-743909.html"
+   },
+   {
+    "claim": "Techcombank guarantee for all 214 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vnexpress.net/hang-tram-can-ho-sieu-sang-tai-khu-tu-giac-ben-thanh-du-dieu-kien-ban-5101231.html"
+   },
+   {
+    "claim": "Investor is Saigon Glory Co., Ltd.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cafeland.vn/tin-tuc/tin-nong-tphcm-cong-bo-danh-sach-37-du-an-du-dieu-kien-de-ban-nam-2026-153496.html"
+   },
+   {
+    "claim": "Two towers of 55 and 48 floors, 231 hotel rooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vnexpress.net/hang-tram-can-ho-sieu-sang-tai-khu-tu-giac-ben-thanh-du-dieu-kien-ban-5101231.html"
+   },
+   {
+    "claim": "Construction restarted mid-March 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://doanhnhanvn.vn/chu-dau-tu-khu-tu-giac-ben-thanh-co-chu-tich-moi.html"
+   },
+   {
+    "claim": "Ritz-Carlton hotel and residences brand",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+   },
+   {
+    "claim": "Investor financial position restored (positive equity end-2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+   },
+   {
+    "claim": "Price",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/"
+   },
+   {
+    "claim": "Foreign buyer eligibility",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ho Chi Minh City, Vietnam",
+   "developer_company": "Saigon Glory Co., Ltd. (owner Phuong Dong Ha Noi Real Estate Co., Ltd. since 2024, per VietNamNet)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Unlisted; bond issuer with financial disclosures reported by VietNamNet (2025 profit VND 1,510B, accumulated loss VND 17,935B)",
+   "construction_start": "2026-03",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "The Ritz-Carlton Residences",
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "HCMC Department of Construction (eligibility to sell future housing)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/",
+   "https://vnexpress.net/hang-tram-can-ho-sieu-sang-tai-khu-tu-giac-ben-thanh-du-dieu-kien-ban-5101231.html",
+   "https://thuviennhadat.vn/phap-luat/37-du-an-tai-tphcm-du-dieu-kien-ban-nha-o-hinh-thanh-trong-tuong-lai-nam-2026-743909.html",
+   "https://cafeland.vn/tin-tuc/tin-nong-tphcm-cong-bo-danh-sach-37-du-an-du-dieu-kien-de-ban-nam-2026-153496.html",
+   "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html",
+   "https://doanhnhanvn.vn/chu-dau-tu-khu-tu-giac-ben-thanh-co-chu-tich-moi.html"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "the-legend-city-danang-vipico",
+  "name": "The Legend City Danang",
+  "developer": "VIPICO One Member Co., Ltd. (ROX Signature)",
+  "area": "Lot A20, Vo Van Kiet Street, An Hai Ward, Da Nang (near Dragon Bridge)",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "off-plan",
+  "url": "https://thelegenddanang.vn/",
+  "docs_url": "https://thelegenddanang.vn/",
+  "seed": {
+   "price": 4701126004,
+   "currency": "VND",
+   "title": "apartment ownership (long-term for Vietnamese; foreigners 50 years renewable within 30% quota)",
+   "lease_base": 50,
+   "extension": "Foreign owners may renew under the 2023 Housing Law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "Da Nang Department of Construction letter 1818/SXD-QLN (30 Jan 2026, 800 apartments eligible for sale); capital mobilisation letter 674/SXD-QLN (19 Mar 2025); investment registration 8156003822",
+   "plans_published": false,
+   "escrow": "MSB letter of commitment to issue handover guarantees listed in the legal file",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 800,
+   "payment_plan": "Bank loans up to 70% with 0% interest for 24 months (MSB, Vietcombank, MB); minimum 25% paid before loan",
+   "price_per_m2": 123389134
+  },
+  "docs_listed": [
+   "sales site: legal file list (auction decision, land certificate, 1/500 plan, building permit, eligibility letter 1818/SXD-QLN, model SPA, MSB guarantee commitment)",
+   "sales site: price list 1BR 38.1 sq m to 3BR 108.5 sq m, VND 4.70B to 13.13B after discount",
+   "sales site: construction start 28 Feb 2025, transfer slab level 4 completed 6 Sep 2026, handover 31 Mar 2028",
+   "legal site: signed PDF of DoC letter 1818/SXD-QLN and capital-mobilisation letter 674/SXD-QLN"
+  ],
+  "note": "800-apartment, 29-storey tower beside a Hyde hotel block near Da Nang's Dragon Bridge; the Da Nang Department of Construction confirmed eligibility to sell on 30 Jan 2026 (letter 1818/SXD-QLN), the land is mortgaged to MSB and must be released unit by unit before contracts, and handover is set for 31 Mar 2028. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Sales sites print letter 1818/SXD-QLN of 30 Jan 2026 and host the signed PDF; VietnamFinance and Bao Dau tu report the DoC approval for 800 apartments",
+   "escrow": "Legal file lists an MSB commitment letter to issue guarantees; DoC letter requires guarantees under Article 26 of the Real Estate Business Law",
+   "progress": "Sales site: construction started 28 Feb 2025, transfer slab level 4 completed 6 Sep 2026; VietTimes (Jun 2026) reported work at floors 5-6",
+   "plans": "Unit areas listed in price table; no floor plans found",
+   "record": "No completed projects named for VIPICO on the sales sites",
+   "returns": "No guarantee or yield language found"
+  },
+  "positives": [
+   "Provincial eligibility letter and capital-mobilisation letter published as signed PDFs",
+   "Dated construction milestones and a specific handover date",
+   "Unit-level price table with areas"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "800 apartments eligible to sell (letter 1818/SXD-QLN, 30 Jan 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+   },
+   {
+    "claim": "DoC approval for 800 apartments reported",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://baodautu.vn/du-an-the-legend-city-danang-duoc-phep-ban-nha-o-hinh-thanh-trong-tuong-lai-d507922.html"
+   },
+   {
+    "claim": "Investor VIPICO, investment registration 8156003822",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+   },
+   {
+    "claim": "29 floors, 3 basements, 800 apartments",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+   },
+   {
+    "claim": "Construction started Feb 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+   },
+   {
+    "claim": "Construction at floors 5-6 (Jun 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi"
+   },
+   {
+    "claim": "Project schedule to Q4 2028 (capital mobilisation letter) vs handover 31 Mar 2028 (sales site)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thelegendanang.com.vn/wp-content/uploads/2025/11/Cong-van-so-674SXD-QLN.pdf"
+   },
+   {
+    "claim": "Land use rights mortgaged to MSB",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://thelegendanang.com.vn/"
+   },
+   {
+    "claim": "MSB handover guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thelegenddanang.vn/"
+   },
+   {
+    "claim": "Price from VND 4.70B (1BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thelegenddanang.vn/"
+   },
+   {
+    "claim": "Foreigners can own within quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thelegenddanang.vn/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Vietnam",
+   "developer_company": "VIPICO One Member Co., Ltd., investment registration 8156003822",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-02",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR+1",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 38.1,
+   "size_max_m2": 108.5,
+   "price_min": 4701126004,
+   "price_max": 13132047766,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": "Legal cap 30% first instalment, 70% before handover, 95% before certificate; bank support to 70%",
+   "foreign_ownership": "Foreign individuals may own up to 30% of units per building, 50-year term renewable",
+   "rental_programme": "Separate 222 Hyde Living serviced apartments (50-year) in hotel block; none for the 800 apartments",
+   "service_charge": "2% maintenance fund",
+   "brand": "ROX Signature; Hyde Hotel",
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Da Nang Department of Construction (eligibility to sell, capital mobilisation); Da Nang People's Committee (land auction)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://thelegenddanang.vn/",
+   "https://thelegendanang.com.vn/",
+   "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf",
+   "https://thelegendanang.com.vn/wp-content/uploads/2025/11/Cong-van-so-674SXD-QLN.pdf",
+   "https://vietnamfinance.vn/800-can-ho-tai-the-legend-city-danang-du-dieu-kien-mo-ban-d139616.html",
+   "https://baodautu.vn/du-an-the-legend-city-danang-duoc-phep-ban-nha-o-hinh-thanh-trong-tuong-lai-d507922.html",
+   "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi"
+  ],
+  "permit_number": "Da Nang Department of Construction letter 1818/SXD-QLN (30 Jan 2026, 800 apartments eligible for sale); capital mobilisation letter 674/SXD-QLN (19 Mar 2025); investment registration 8156003822",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "time-square-9-gatsby-residence-megakim",
+  "name": "Time Square 9 (The Gatsby Residence)",
+  "developer": "Megakim World Corp Ltd",
+  "area": "Street 278, BKK1, Chamkarmon, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "off-plan",
+  "url": "https://ips-cambodia.com/projects/bkk1/megakim-world-corp-ltd/50-time-square-9-condominium/",
+  "docs_url": "https://timesquarecambodia.com/projects/time-square-9/",
+  "seed": {
+   "price": 87984,
+   "currency": "USD",
+   "title": "freehold strata title (foreigners above ground floor, 70% building quota)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6.5,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 0,
+   "progress_updates": false,
+   "developer_delivered": "Developer names completed Time Square projects TS1, TS5 and TS6 in Phnom Penh; portal reports Time Square 306 handed over Jan 2026",
+   "units": 600,
+   "payment_plan": "20% at SPA, 1% a month for 45 months interest-free, 35% at handover; handover balance financeable up to 10 years",
+   "price_per_m2": 2200
+  },
+  "docs_listed": [
+   "developer: 39 floors on 1,765 sq m, about 600 units of 60-190 sq m, completion around 2029, unit type renders",
+   "developer: 'fully registered and licensed' statement with licence image, no number in text",
+   "agent brochure: typical floor plan and unit plans for types A to T (gross and net areas)",
+   "agents: from USD 87,984 (USD 2,200 per sq m), construction start Jul 2026, handover Jan 2030, progress 0%",
+   "agents: projected net yield 6.5-8.5%"
+  ],
+  "note": "39-storey, about 600-unit Art Deco-themed condo in BKK1 by the Time Square series developer; groundbreaking held 8 Jun 2026 with about 80% reported sold, completion targeted Q4 2029; the developer says it is licensed but publishes no permit number and no deposit protection. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Developer page states buildings are 'fully registered and licensed' and shows a licence image, but no construction permit or licence number in text",
+   "escrow": null,
+   "progress": "Agents list construction progress 0% (Jan 2026 data); Cambodianess and realestate.com.kh report groundbreaking on 8 Jun 2026; no developer progress page",
+   "plans": "Agent brochure (IPS Cambodia) publishes the typical floor plan and unit plans with gross and net areas",
+   "record": "Developer names completed TS1, TS5, TS6; Riel Property reports Time Square 306 completed Jan 2026",
+   "returns": "No guarantee; agents quote projected net yield 6.5-8.5% a year"
+  },
+  "positives": [
+   "Unit plans with both gross and net areas published",
+   "Interest-free instalments spread over construction",
+   "Developer has several completed towers in the same city"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction permit or licence number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://timesquarecambodia.com/projects/time-square-9/"
+   },
+   {
+    "claim": "Groundbreaking held 8 Jun 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cambodianess.com/index.php/article/time-square-9-11-break-ground-signaling-confidence-in-cambodias-investment-future"
+   },
+   {
+    "claim": "39 storeys (developer) vs 36 storeys (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://cambodianess.com/index.php/article/time-square-9-11-break-ground-signaling-confidence-in-cambodias-investment-future"
+   },
+   {
+    "claim": "About 600 units (developer) vs 700 (realestate.com.kh) vs 500 (brochure text)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realestate.com.kh/new-developments/time-square-9-bkk1/"
+   },
+   {
+    "claim": "About 80% of units sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realestate.com.kh/news/time-square-9-time-square-11-groundbreaking/"
+   },
+   {
+    "claim": "Completion Q4 2029, handover Q1 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cambodiaproperty.asia/en/time-square-9-construction-progress-update/"
+   },
+   {
+    "claim": "Developer delivered TS1, TS5, TS6",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://timesquarecambodia.com/projects/time-square-9/"
+   },
+   {
+    "claim": "Freehold strata title for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/bkk1/megakim-world-corp-ltd/50-time-square-9-condominium/"
+   },
+   {
+    "claim": "Price from USD 87,984",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/projects/bkk1/megakim-world-corp-ltd/50-time-square-9-condominium/"
+   },
+   {
+    "claim": "Projected net yield 6.5-8.5%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cambodiaproperty.asia/en/time-square-9-construction-progress-update/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Phnom Penh, Cambodia",
+   "developer_company": "Megakim World Corp Ltd",
+   "developer_projects_delivered": 5,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-06",
+   "handover_promised": "2030-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 190,
+   "price_min": 87984,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% SPA, 45 x 1% monthly interest-free, 35% at handover",
+   "foreign_ownership": "Strata title above ground floor, foreign quota 70% per building",
+   "rental_programme": null,
+   "service_charge": "USD 1.8 per sq m a month (agent)",
+   "brand": null,
+   "amenities": [
+    "sky pool",
+    "kids pool",
+    "sky fitness",
+    "yoga studio",
+    "sky lounge and cafe",
+    "private cinema",
+    "cigar lounge",
+    "game zone"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction (construction permit); Phnom Penh Capital Hall",
+   "brochure_url": "https://cdnm.heyzine.com/flip-book/pdf/c640e284b2511ab21860b330338bdaff6fde92d2-1.pdf"
+  },
+  "sources": [
+   "https://timesquarecambodia.com/projects/time-square-9/",
+   "https://timesquarecambodia.com/",
+   "https://ips-cambodia.com/projects/bkk1/megakim-world-corp-ltd/50-time-square-9-condominium/",
+   "https://cdnm.heyzine.com/flip-book/pdf/c640e284b2511ab21860b330338bdaff6fde92d2-1.pdf",
+   "https://www.realestate.com.kh/new-developments/time-square-9-bkk1/",
+   "https://www.realestate.com.kh/news/time-square-9-time-square-11-groundbreaking/",
+   "https://cambodianess.com/index.php/article/time-square-9-11-break-ground-signaling-confidence-in-cambodias-investment-future",
+   "https://www.cambodiaproperty.asia/en/time-square-9-construction-progress-update/",
+   "https://www.rielproperty.com/developer/megakim-world-corp/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 1
  }
 ]

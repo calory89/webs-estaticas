@@ -2893,5 +2893,708 @@
    "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
   ],
   "verified_score": 1
+ },
+ {
+  "slug": "four-seasons-private-residences-las-vegas-azure",
+  "name": "Four Seasons Private Residences Las Vegas",
+  "developer": "Azure Resorts & Hotels with Luxus Developments and Two Roads Development",
+  "area": "MacDonald Highlands, Henderson",
+  "country": "USA",
+  "market": "Las Vegas",
+  "stage": "under construction",
+  "url": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out",
+  "docs_url": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822",
+  "permit_number": null,
+  "docs_listed": [
+   "171 residences in two towers of 24 and 25 storeys",
+   "both towers topped out 30 Jul 2026, 148 of 171 under contract, USD 950M sales (Oct 2026)",
+   "remaining homes from USD 5.15M",
+   "payment schedule 15% at signing, 10% at 6 months, 10% at 1 year, 65% at delivery; deposits bonded (Review-Journal)",
+   "USD 686M construction financing from J.P. Morgan, Sculptor and Morning Calm (Review-Journal)"
+  ],
+  "note": "Two-tower, 171-residence Four Seasons project in Henderson; both towers topped out on 30 Jul 2026 with 148 units under contract, and completion is now anticipated in Q4 2027 after earlier targets of early 2026, late 2026 and mid-2027. Deposits are described as bonded, but no permit number, floor plans or developer delivery record are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5150000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Review-Journal reports the developer's 15/10/10/65 schedule and that all deposits are bonded; non-refundable after five days",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 171,
+   "payment_plan": "15% at signing, 10% at six months, 10% at one year, 65% at delivery",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Review-Journal: deposits become non-refundable after five days and all deposits are bonded (developer statement reported by press; bond provider not named)",
+   "progress": "Resident (16 Oct 2026): North and South towers topped out 30 Jul 2026, glass installation underway, contractor Suffolk",
+   "plans": "Prices by bedroom count only; no floor plans on pages opened",
+   "record": "No completed projects named for Azure Resorts & Hotels or Luxus on pages opened",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Both towers topped out 30 Jul 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+   },
+   {
+    "claim": "148 of 171 units under contract, USD 950M sales",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+   },
+   {
+    "claim": "Completion early 2026 (original target)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822"
+   },
+   {
+    "claim": "Completion mid-2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+   },
+   {
+    "claim": "Project stays on schedule for Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+   },
+   {
+    "claim": "USD 686M construction financing from J.P. Morgan, Sculptor and Morning Calm",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/?p=3582733"
+   },
+   {
+    "claim": "All buyer deposits are bonded",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822"
+   },
+   {
+    "claim": "Remaining homes from USD 5.15M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+   },
+   {
+    "claim": "General contractor Suffolk",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+   },
+   {
+    "claim": "Building permit issued by City of Henderson",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Las Vegas, USA / Mexico",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026-Q1",
+   "delay_months": 21,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "junior penthouse",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 5150000,
+   "price_max": 29000000,
+   "currency": "USD",
+   "deposit_pct": 15,
+   "payment_plan": "15/10/10/65",
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Four Seasons",
+   "amenities": [],
+   "lat": 36.005,
+   "lng": -115.04,
+   "permit_authority": "City of Henderson Building and Fire Safety; Nevada Real Estate Division (condominium sales)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Both towers topped out, reported with dates",
+   "Payment schedule and bonded deposits reported",
+   "Large construction loan from named lenders",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out",
+   "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822",
+   "https://www.reviewjournal.com/?p=3582733",
+   "https://www.reviewjournal.com/?p=3209712"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "cello-tower-symphony-park-red-ridge",
+  "name": "Cello Tower",
+  "developer": "Red Ridge Development (Patrick Brennan)",
+  "area": "Symphony Park, Downtown Las Vegas",
+  "country": "USA",
+  "market": "Las Vegas",
+  "stage": "under construction",
+  "url": "https://www.nevadarealestategroup.com/las-vegas/cello-tower/",
+  "docs_url": "https://www.reviewjournal.com/?p=3364799",
+  "permit_number": null,
+  "docs_listed": [
+   "240 residences, 32 storeys, prices from about USD 700,000 to 4.5M+ (agent)",
+   "HOA USD 500 to 2,500 per month (agent)",
+   "groundbreaking Apr 2025, completion expected in 30 months (Review-Journal)",
+   "condition of 50% condo reservations for city land sale reported as met (Review-Journal)"
+  ],
+  "note": "32-storey, 240-condo tower on city-sold land in Symphony Park; ceremonial groundbreaking in Apr 2025 with completion expected about 30 months later, while an agent page now cites a 2028 target and a 2026 groundbreaking. No permit number, escrow terms, floor plans or delivered projects published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 700000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 240,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Agent says pre-completion deposits 'may' be 10-20% held in escrow and to confirm with developer; no project terms",
+   "progress": "Review-Journal (29 Apr 2025): ceremonial groundbreaking held; no later milestone found",
+   "plans": "No floor plans",
+   "record": "No completed projects named for Red Ridge Development",
+   "returns": "Agent page carries investment commentary but no guaranteed or specific yield figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Ceremonial groundbreaking Apr 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/?p=3364799"
+   },
+   {
+    "claim": "Groundbreaking in 2026 (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/?p=3364799"
+   },
+   {
+    "claim": "Completion about 30 months after Apr 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reviewjournal.com/?p=3364799"
+   },
+   {
+    "claim": "Tower completion in 2027 (Review-Journal, Nov 2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reviewjournal.com/?p=3209712"
+   },
+   {
+    "claim": "At least 50% of condos reserved, meeting city land-sale condition",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reviewjournal.com/?p=3364799"
+   },
+   {
+    "claim": "Sales over USD 100M (Nov 2024)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/?p=3209712"
+   },
+   {
+    "claim": "240 units, 32 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/?p=3209712"
+   },
+   {
+    "claim": "Prices from about USD 700,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nevadarealestategroup.com/las-vegas/cello-tower/"
+   },
+   {
+    "claim": "Land bought from City of Las Vegas for nearly USD 12M",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.reviewjournal.com/?p=3364799"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Las Vegas, USA",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-04",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 700000,
+   "price_max": 9000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": "HOA USD 500 to 2,500 per month (agent)",
+   "brand": null,
+   "amenities": [
+    "7th-floor amenity level",
+    "ground-floor grocer (planned)"
+   ],
+   "lat": 36.168,
+   "lng": -115.153,
+   "permit_authority": "City of Las Vegas Building and Safety; Nevada Real Estate Division",
+   "brochure_url": null
+  },
+  "positives": [
+   "Groundbreaking and sales levels covered by local press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.nevadarealestategroup.com/las-vegas/cello-tower/",
+   "https://www.reviewjournal.com/?p=3364799",
+   "https://www.reviewjournal.com/?p=3209712"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "st-regis-residences-houston-satya",
+  "name": "The St. Regis Residences, Houston",
+  "developer": "Satya (Sunny Bathija)",
+  "area": "River Oaks, Houston (102 Asbury St)",
+  "country": "USA",
+  "market": "Houston",
+  "stage": "off-plan",
+  "url": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston",
+  "docs_url": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston",
+  "permit_number": null,
+  "docs_listed": [
+   "90 residences in a 38-storey tower, from USD 3M",
+   "groundbreaking 6 May 2026, completion expected Q1 2029 (sales agent)",
+   "45% presold, all seven penthouses sold (sales agent)",
+   "USD 255M construction loan from International Bank of Commerce (The Real Deal, Jul 2025)",
+   "amenity list"
+  ],
+  "note": "38-storey, 90-residence St. Regis-branded tower on the edge of River Oaks; ground broken 6 May 2026 with completion now expected Q1 2029, versus a Q4 2027 target when the USD 255M IBC construction loan was reported in Jul 2025. No permit number, escrow terms, floor plans or delivered projects published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3000000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 90,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Groundbreaking 6 May 2026 announced by sales agent Douglas Elliman; no later dated update",
+   "plans": "No floor plans on pages opened",
+   "record": "The Real Deal says the CEO has developed Houston condos for about ten years but names no projects",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "USD 255M construction loan from International Bank of Commerce",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   },
+   {
+    "claim": "90 condos including 7 penthouses, 38 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   },
+   {
+    "claim": "Original target: construction start Q4 2025 and completion Q4 2027 (later revised to May 2026 start, Q1 2029 completion)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   },
+   {
+    "claim": "Groundbreaking 6 May 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+   },
+   {
+    "claim": "Completion Q1 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+   },
+   {
+    "claim": "45% presold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+   },
+   {
+    "claim": "About 15 units under contract (Jul 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   },
+   {
+    "claim": "Prices from USD 3M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   },
+   {
+    "claim": "Developer has delivered earlier Houston condos",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   },
+   {
+    "claim": "City of Houston building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Houston, USA",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-05",
+   "handover_promised": "2029-Q1",
+   "original_handover": "2027-Q4",
+   "delay_months": 15,
+   "unit_types": [
+    "residence",
+    "penthouse",
+    "crown duplex"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 3000000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "St. Regis (Marriott International)",
+   "amenities": [
+    "Astor dining room and cognac bar",
+    "resort pool with cabanas",
+    "spa and wellness center",
+    "fitness",
+    "butterfly garden",
+    "pet spa",
+    "owner's lounge",
+    "St. Regis Butler Service"
+   ],
+   "lat": 29.757,
+   "lng": -95.41,
+   "permit_authority": "City of Houston Permitting Center",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction loan and lender reported by independent press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston",
+   "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "gaia-residences-hollywood-alta",
+  "name": "Gaia Residences",
+  "developer": "Alta Developers (Alta Hollywood South, LLC)",
+  "area": "Downtown Hollywood, Broward County (401 N Federal Hwy)",
+  "country": "USA",
+  "market": "Fort Lauderdale",
+  "stage": "off-plan",
+  "url": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood",
+  "docs_url": "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html",
+  "permit_number": "DBPR condominium filing PR77962",
+  "docs_listed": [
+   "238 condos, studios to 3BR, 18 storeys (Florida YIMBY, Sep 2025)",
+   "prices from USD 400,000 to over USD 1M, average about USD 850 per sq ft (The Real Deal)",
+   "groundbreaking targeted 2026",
+   "Florida DBPR filing PR77962 'Gaia Residences South Condo' (Alta Hollywood South, LLC)",
+   "sales led by Fortune International Group"
+  ],
+  "note": "18-storey, 238-condo wellness-themed building in downtown Hollywood by Alta Developers, filed with Florida DBPR as Gaia Residences South Condo (PR77962). Sales launched Sep 2025 from USD 400,000 with a 2026 groundbreaking target that we could not confirm; the plan was cut from 466 units in two towers (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 400000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "DBPR PR77962",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 238,
+   "payment_plan": null,
+   "price_per_m2": 9149
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77962 'Gaia Residences South Condo, a condo within a portion of a building', developer Alta Hollywood South, LLC, Broward; no city building permit number published",
+   "escrow": "Not published; Florida 718.202 statutory escrow for deposits up to 10%",
+   "progress": "No construction start confirmed; developer targeted 2026 groundbreaking (The Real Deal, Sep 2025)",
+   "plans": "No floor plans on pages opened",
+   "record": "No completed projects named for Alta Developers",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR (PR77962) by Alta Hollywood South, LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "238 condos, 18 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html"
+   },
+   {
+    "claim": "Earlier plan of 466 units in two towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+   },
+   {
+    "claim": "Site bought for USD 23M in 2021",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+   },
+   {
+    "claim": "Construction to start in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+   },
+   {
+    "claim": "Prices from USD 400,000, average USD 850 per sq ft",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+   },
+   {
+    "claim": "Building permit issued by City of Hollywood",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html"
+   },
+   {
+    "claim": "Developer has delivered earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "Alta Hollywood South, LLC (DBPR developer of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 400000,
+   "price_max": 1000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "wellness-focused amenities",
+    "RH-curated common areas"
+   ],
+   "lat": 26.015,
+   "lng": -80.144,
+   "permit_authority": "City of Hollywood Building Division; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filing confirmed in Florida DBPR registry",
+   "Entry prices and average price per sq ft published",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood",
+   "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 1
  }
 ]

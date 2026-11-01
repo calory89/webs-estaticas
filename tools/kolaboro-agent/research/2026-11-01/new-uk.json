@@ -1053,5 +1053,435 @@
    "https://find-and-update.company-information.service.gov.uk/company/17101070"
   ],
   "verified_score": 1
+ },
+ {
+  "slug": "fox-and-foundry-liverpool-nexus-residential",
+  "name": "Fox & Foundry",
+  "developer": "Nexus Residential (sales via RWinvest)",
+  "area": "Fox Street, Pumpfields, Liverpool L3",
+  "country": "United Kingdom",
+  "market": "Liverpool",
+  "stage": "under construction",
+  "url": "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/",
+  "docs_url": "https://foxandfoundry.co.uk/",
+  "permit_number": "Liverpool City Council 21F/1699",
+  "docs_listed": [
+   "typical floor plans for 1BR Manhattan, 1BR Superior and 2BR",
+   "prices from GBP 189,950 (project site) or GBP 247,950 (RWinvest page)",
+   "GBP 5,000 reservation; staged plan 20% exchange, 20% Mar 2027, 60% completion (1BR)",
+   "999-year lease",
+   "6% assured or contracted net rent for 12 months from completion",
+   "projected short-let yields 7.8% to 10.2% with stated assumptions",
+   "estimated completion Q1 2028, labelled non-contractual"
+  ],
+  "note": "Nexus Residential is selling 138 to 174 flats at Fox Street, L3 3BQ with a 6% assured net rent for the first year; planning record 21F/1699 at the same postcode covers retaining and completing Block D as 138 flats, the unfinished shell of the Fox Street Village scheme whose developer collapsed in 2019 owing overseas buyers about GBP 6m. The sales pages do not mention this history (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 189950,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": "Liverpool City Council 21F/1699",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Nexus names completed and tenanted L1 Boutique, Marina Lofts and City Terraces (Nexus LinkedIn profile text)",
+   "units": 138,
+   "payment_plan": "GBP 5,000 reservation; 1BR 20% on exchange, 20% by 15 Mar 2027, 60% on completion; 2BR 15/15/70",
+   "price_per_m2": 4744
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Not quoted on sales pages. A planning data mirror of Liverpool City Council lists 21F/1699 (approved) 'to retain and complete works to Block D so as to provide 138 no. flats' at 30 Block D Fox Street, L3 3BQ, and a pending condition discharge 26DIS/2854 (construction method statement) received Oct 2026",
+   "escrow": null,
+   "progress": "No dated progress or percentage published; a Nexus post (Oct 2026) refers to a site team on site through the winter",
+   "plans": "foxandfoundry.co.uk shows typical floor plans for three apartment types",
+   "record": "Nexus names L1 Boutique, Marina Lofts and City Terraces as completed; Nexus Residential Limited (11135662) is active with accounts to 5 Apr 2025 and six outstanding charges",
+   "returns": "'6% assured rental return for 1 year' (Nexus posts) and '6.0% contracted NET rent' (RWinvest)"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning 21F/1699 approved to complete Block D as 138 flats at 30 Fox Street L3 3BQ",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+   },
+   {
+    "claim": "Scheme comprises 138 apartments (Nexus, Apr and May 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+   },
+   {
+    "claim": "Scheme comprises 174 apartments (Nexus, Oct 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+   },
+   {
+    "claim": "Site is a new-build development (marketing)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://kohenavocats.com/jurisprudences/fox-street-village-ltd-re/"
+   },
+   {
+    "claim": "Earlier Block D buyers lost money when Fox Street Village Ltd entered administration (2019)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/collapsed-fox-street-village-developer-16826113"
+   },
+   {
+    "claim": "Nexus Residential Limited is a registered active company",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/11135662"
+   },
+   {
+    "claim": "Construction method statement still awaiting council approval (Oct 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+   },
+   {
+    "claim": "Prices from GBP 189,950",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/"
+   },
+   {
+    "claim": "6% assured net rent for 12 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-pumpfields-activity-7455526595018108928-Asm1"
+   },
+   {
+    "claim": "Completion Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://foxandfoundry.co.uk/"
+   },
+   {
+    "claim": "Nexus delivered L1 Boutique, Marina Lofts and City Terraces",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-regenerationliverpool-activity-7458787923715506176-pgsl"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://foxandfoundry.co.uk/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Liverpool, UK (registered office Tunbridge Wells)",
+   "developer_company": "Nexus Residential Limited 11135662 (selling SPV not named)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 40,
+   "size_max_m2": 58,
+   "price_min": 189950,
+   "price_max": 279950,
+   "currency": "GBP",
+   "deposit_pct": 20,
+   "payment_plan": "GBP 5,000 reservation; 20% exchange, 20% stage payment Mar 2027, 60% completion (1BR)",
+   "foreign_ownership": "999-year leasehold",
+   "rental_programme": "Optional Nexus rental management agreement with 6% contracted net rent for 12 months, then market rent; short lets permitted",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "residents' lounge",
+    "concierge",
+    "landscaped courtyard",
+    "parking",
+    "solar panels and heat pumps"
+   ],
+   "lat": 53.417,
+   "lng": -2.977,
+   "permit_authority": "Liverpool City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Typical floor plans and a staged payment schedule are published",
+   "Yield projections show their assumptions and data source",
+   "Completion date is labelled as a non-contractual estimate"
+  ],
+  "flags": [
+   {
+    "text": "Liverpool Echo reported in 2019 that Fox Street Village Ltd, developer of the same 30 Fox Street site, entered administration owing about GBP 9.9m, including almost GBP 6m to investors in the unfinished Block D from countries including China, Kuwait and Canada",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/collapsed-fox-street-village-developer-16826113"
+   },
+   {
+    "text": "A High Court judgment on Fox Street Village Ltd records a 2019 council enforcement notice over planning breaches at the site and that Block D was only a shell when work stopped",
+    "source": "https://kohenavocats.com/jurisprudences/fox-street-village-ltd-re/"
+   },
+   {
+    "text": "High Court appeal FSV Freeholders Ltd v SGL1 (2022) concerned the administrators' sale of Blocks A to E at 30 Fox Street, including Block D",
+    "source": "https://www.bailii.org/ew/cases/EWHC/Ch/2022/3336.pdf"
+   }
+  ],
+  "sources": [
+   "https://foxandfoundry.co.uk/",
+   "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/",
+   "https://www.rightmove.co.uk/properties/94573008",
+   "https://www.onthemarket.com/details/20152114/",
+   "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-pumpfields-activity-7455526595018108928-Asm1",
+   "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-regenerationliverpool-activity-7458787923715506176-pgsl",
+   "https://www.linkedin.com/posts/nexus-residential_internationalpropertyawards-ipa2026-foxandfoundry-activity-7513986633973731330-5ZiH",
+   "https://nexusresidential.co.uk/live/",
+   "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854",
+   "https://find-and-update.company-information.service.gov.uk/company/11135662",
+   "https://www.liverpoolecho.co.uk/news/liverpool-news/collapsed-fox-street-village-developer-16826113",
+   "https://www.liverpoolecho.co.uk/news/liverpool-news/developer-agrees-buy-liverpools-troubled-17665046",
+   "https://kohenavocats.com/jurisprudences/fox-street-village-ltd-re/",
+   "https://www.bailii.org/ew/cases/EWHC/Ch/2022/3336.pdf"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "the-gateway-liverpool-legacie",
+  "name": "The Gateway",
+  "developer": "Legacie Developments (Legacie Towers Liverpool Ltd), with Nexus Residential; sales by RWinvest",
+  "area": "Leeds Street / Freemasons Row, Pumpfields, Liverpool L3",
+  "country": "United Kingdom",
+  "market": "Liverpool",
+  "stage": "under construction",
+  "url": "https://www.rw-invest.com/properties/the-gateway-liverpool/",
+  "docs_url": "https://www.rw-invest.com/properties/the-gateway-construction-updates/",
+  "permit_number": "Liverpool City Council 17F/0874",
+  "docs_listed": [
+   "quarterly construction updates Q3 2025 to Q3 2026 with block-by-block detail",
+   "remaining units priced: 2BR from GBP 359,950, 2BR townhouse GBP 399,950, 3BR GBP 484,950",
+   "staged plan: GBP 5,000 reservation, 10% exchange, 5% by 16 Nov 2026, 85% completion",
+   "optional 6.0% contracted net rent for 12 months under an underlease with Legacie",
+   "GBP 0 ground rent, service charge est. GBP 3.25 psf",
+   "estimated completion Q3 2027; over 90% sold"
+  ],
+  "note": "656-flat, four-tower scheme on the stalled Vinco site (permission 17F/0874) that Legacie restarted in Dec 2023; it topped out in Jan 2026 and is now in fit-out, with completion moved from end-2026 to 2027 (Q3 2027 per the sales agent). Over 90% sold, with an optional 6% contracted first-year rent (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 359950,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "Liverpool City Council 17F/0874",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Legacie completed Millers Place and One Park Lane in Liverpool in 2025 (Place North West)",
+   "units": 656,
+   "payment_plan": "GBP 5,000 reservation, 10% on exchange, 5% stage payment by 16 Nov 2026, 85% on completion",
+   "price_per_m2": 5624
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Place North West (Aug 2023, Dec 2023, Jan 2026) cites application 17F/0874; Liverpool's planning portal was not reachable from our session",
+   "escrow": null,
+   "progress": "RWinvest quarterly updates (latest Q3 2026: glazing complete Block A, buildings weatherproof, fit-out in Blocks A and D); topping out reported by Place North West, Liverpool Echo and LBN in Jan 2026",
+   "plans": "Floor plans only on request",
+   "record": "Place North West: Legacie completed Millers Place and One Park Lane in 2025; Legacie Towers Liverpool Ltd (13891367) active with accounts to 28 Feb 2025",
+   "returns": "Optional 6.0% contracted net rent for 12 months, fixed in an underlease with Legacie; page notes it depends on Legacie meeting its obligations"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission 17F/0874 for four towers off Leeds Street",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/legacie-breaks-ground-on-200m-liverpool-resi/"
+   },
+   {
+    "claim": "Permission granted in 2019",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/liverpool-grants-consent-to-freemasons-row-homes/"
+   },
+   {
+    "claim": "Site owner Legacie Towers Liverpool Ltd registered; land charged to Together and Alo Tower S.a r.l. (Dec 2024)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/13891367/charges"
+   },
+   {
+    "claim": "GBP 93.5m development funding from Maslow Capital (Dec 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/93-5m-boost-for-656-liverpool-flats/"
+   },
+   {
+    "claim": "Construction started Dec 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/legacie-breaks-ground-on-200m-liverpool-resi/"
+   },
+   {
+    "claim": "Topped out Jan 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/200m-luxury-housing-scheme-edge-33319523"
+   },
+   {
+    "claim": "Completion end of 2026 (Dec 2024 report)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/legacies-the-gateway-set-for-2027-completion/"
+   },
+   {
+    "claim": "Estimated completion Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rw-invest.com/properties/the-gateway-liverpool/"
+   },
+   {
+    "claim": "Over 90% of apartments sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lbndaily.co.uk/legacie-hits-major-milestone-on-200m-scheme/"
+   },
+   {
+    "claim": "Legacie completed Millers Place and One Park Lane",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/legacies-the-gateway-set-for-2027-completion/"
+   },
+   {
+    "claim": "Previous developer Vinco Group went into liquidation, stalling the scheme",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/legacie-picks-up-stalled-664-home-liverpool-site/"
+   },
+   {
+    "claim": "6% contracted net rent for 12 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rw-invest.com/properties/the-gateway-liverpool/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Liverpool, UK",
+   "developer_company": "Legacie Towers Liverpool Ltd 13891367 (site owner per charges); Legacie Developments Limited 11512780",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-12",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026-Q4",
+   "delay_months": 9,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "townhouse"
+   ],
+   "size_min_m2": 57,
+   "size_max_m2": 84,
+   "price_min": 359950,
+   "price_max": 484950,
+   "currency": "GBP",
+   "deposit_pct": 10,
+   "payment_plan": "GBP 5,000 reservation, 10% exchange, 5% stage, 85% completion",
+   "foreign_ownership": "Leasehold (length not stated on page), GBP 0 ground rent",
+   "rental_programme": "Optional 12-month underlease to Legacie at 6% net of purchase price; then owner lets freely",
+   "service_charge": "Est. GBP 3.25 psf per year",
+   "brand": null,
+   "amenities": [
+    "garden spa with pool",
+    "two gyms",
+    "residents' lounges",
+    "cinema room",
+    "seventh-floor skybridge",
+    "car park"
+   ],
+   "lat": 53.414,
+   "lng": -2.99,
+   "permit_authority": "Liverpool City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Detailed quarterly construction reports with block-level progress",
+   "Structure topped out and confirmed by several independent outlets",
+   "Funding and land charges visible at Companies House"
+  ],
+  "flags": [
+   {
+    "text": "Place North West reported that the site's original developer, Vinco Group, went into liquidation and the scheme stalled until Legacie acquired it in 2023",
+    "source": "https://www.placenorthwest.co.uk/legacie-picks-up-stalled-664-home-liverpool-site/"
+   }
+  ],
+  "sources": [
+   "https://www.rw-invest.com/properties/the-gateway-liverpool/",
+   "https://www.rw-invest.com/properties/the-gateway-construction-updates/",
+   "https://www.linkedin.com/posts/legacie-developments-ltd_strong-progress-at-gateway-liverpool-activity-7440794445542895616-Td_-",
+   "https://www.legacie.co.uk/press/12017-tyy6l-4bw4l-8lpb5-gpfdm-r58ez-8sa58-36mbp",
+   "https://www.placenorthwest.co.uk/legacies-the-gateway-set-for-2027-completion/",
+   "https://www.placenorthwest.co.uk/93-5m-boost-for-656-liverpool-flats/",
+   "https://www.placenorthwest.co.uk/legacie-breaks-ground-on-200m-liverpool-resi/",
+   "https://www.placenorthwest.co.uk/legacie-picks-up-stalled-664-home-liverpool-site/",
+   "https://www.placenorthwest.co.uk/liverpool-grants-consent-to-freemasons-row-homes/",
+   "https://www.liverpoolecho.co.uk/news/liverpool-news/200m-luxury-housing-scheme-edge-33319523",
+   "https://lbndaily.co.uk/legacie-hits-major-milestone-on-200m-scheme/",
+   "https://briggsandforrester.co.uk/building-1st-fix-momentum-at-the-gateway-liverpool/",
+   "https://find-and-update.company-information.service.gov.uk/company/13891367",
+   "https://find-and-update.company-information.service.gov.uk/company/13891367/charges",
+   "https://find-and-update.company-information.service.gov.uk/company/11512780"
+  ],
+  "verified_score": 3
  }
 ]

@@ -3107,5 +3107,551 @@
    "https://tciinsider.com/property/"
   ],
   "verified_score": 1
+ },
+ {
+  "slug": "vanderbilt-residences-condado-paulson",
+  "name": "Vanderbilt Residences Condado",
+  "developer": "Paulson Puerto Rico (Earle HC, LLC; owner Paulson PRV Holdings / John Paulson)",
+  "area": "1149 Ashford Avenue, Condado, San Juan",
+  "country": "Puerto Rico",
+  "market": "Puerto Rico",
+  "stage": "under construction",
+  "url": "https://investatepr.com/developments/vanderbilt-residences-condado",
+  "docs_url": "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "66 units (50 residences for sale, 16 tourism units) in a 22-storey, 250 ft tower",
+   "current asking prices US$5.6M to US$22M (US$1,750-2,750 per sq ft)",
+   "construction schedule and status interview with developer (Feb 2026)",
+   "first deliveries June 2026, penthouses April 2027",
+   "general contractor CIC Construction Group; architect SB Architects"
+  ],
+  "note": "US$260-279 million condo-hotel tower in Condado owned outright by John Paulson since he bought out former partner Fahad Ghaffar in March 2025 to end litigation over the project; the structure is topped out, first units were due for delivery in June 2026 (originally Q3 2025) and full completion is targeted for early 2027. No permit numbers, escrow terms or floor plans are published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5645000,
+   "currency": "USD",
+   "title": "freehold (condominium; some units restricted to tourism use)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 66,
+   "payment_plan": null,
+   "price_per_m2": 18842
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No OGPe construction or use permit number published.",
+   "escrow": "No information on how buyer deposits are held.",
+   "progress": "Obra PR (13 Feb 2026): 22 floors up, over 72% of schedule time used, completion end Q1 2027; El Nuevo Dia (6 Jun 2026): first units to be delivered that month; News is my Business (Mar 2025): 19th floor reached.",
+   "plans": "Unit sizes and asking prices on agent site only; no plans.",
+   "record": "Paulson owns the adjacent Condado Vanderbilt and La Concha hotels (agent site), but no delivered residential projects by the developer are documented in sources opened.",
+   "returns": "No rental yield or guarantee published."
+  },
+  "claims": [
+   {
+    "claim": "Paulson took 100% ownership in March 2025, ending litigation over the project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bloomberg.com/news/articles/2025-03-03/paulson-puerto-rico-ends-legal-feud-over-luxury-tower-on-island"
+   },
+   {
+    "claim": "Unit deliveries to begin Q3 2025 (Mar 2025 statement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://newsismybusiness.com/john-paulson-takes-full-control-of-260m-vanderbilt-residences-in-puerto-rico/"
+   },
+   {
+    "claim": "First deliveries June 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elnuevodia.com/negocios/turismo/notas/el-condohotel-vanderbilt-residences-recibira-este-mes-a-sus-primeros-residentes/"
+   },
+   {
+    "claim": "Full completion Feb 2027 (Mar 2025) vs end Q1 / April 2027 (Feb 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/"
+   },
+   {
+    "claim": "Project cost US$238M / US$260M / US$279.1M across reports",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.elnuevodia.com/negocios/turismo/notas/john-paulson-se-convierte-en-dueno-absoluto-de-vanderbilt-residences-en-condado/"
+   },
+   {
+    "claim": "66 units, 50 for sale and 16 tourism units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elnuevodia.com/negocios/turismo/notas/el-condohotel-vanderbilt-residences-recibira-este-mes-a-sus-primeros-residentes/"
+   },
+   {
+    "claim": "Groundbreaking June 2022; 22 floors built",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/"
+   },
+   {
+    "claim": "More than half of the 50 residences sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investatepr.com/developments/vanderbilt-residences-condado"
+   },
+   {
+    "claim": "Related Paulson-Ghaffar disputes continue (arbitration award June 2026, federal case active)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.claimsjournal.com/news/national/2026/06/19/338307.htm"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "San Juan, Puerto Rico / New York, USA",
+   "developer_company": "Earle HC, LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022-06",
+   "handover_promised": "2027-Q1",
+   "original_handover": "first deliveries Q3 2025",
+   "delay_months": 9,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR penthouse",
+    "tourism unit"
+   ],
+   "size_min_m2": 299.6,
+   "size_max_m2": 1574,
+   "price_min": 5645000,
+   "price_max": 22000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium (US territory, no restrictions)",
+   "rental_programme": "16 units designated for full-time tourism use; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "75 ft infinity pool",
+    "cinema",
+    "gym",
+    "spa",
+    "pet care",
+    "conference rooms",
+    "about 25,000 sq ft amenity space"
+   ],
+   "lat": 18.458,
+   "lng": -66.075,
+   "permit_authority": "Oficina de Gerencia de Permisos (OGPe) / Municipio de San Juan",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction status independently documented, with deliveries started",
+   "Ownership dispute over the project resolved by full buyout in March 2025",
+   "No guaranteed return language"
+  ],
+  "flags": [
+   {
+    "text": "Bloomberg and News is my Business reported a legal dispute between John Paulson and former partner Fahad Ghaffar involving the project, resolved for the project in March 2025 when Paulson bought Ghaffar's stake.",
+    "source": "https://www.bloomberg.com/news/articles/2025-03-03/paulson-puerto-rico-ends-legal-feud-over-luxury-tower-on-island"
+   },
+   {
+    "text": "Claims Journal (Bloomberg) reported in June 2026 that an arbitrator awarded Paulson more than US$47 million against Ghaffar in related disputes; Ghaffar said he would challenge it and a federal case between them remains active.",
+    "source": "https://www.claimsjournal.com/news/national/2026/06/19/338307.htm"
+   }
+  ],
+  "sources": [
+   "https://investatepr.com/developments/vanderbilt-residences-condado",
+   "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/",
+   "https://www.bloomberg.com/news/articles/2025-03-03/paulson-puerto-rico-ends-legal-feud-over-luxury-tower-on-island",
+   "https://newsismybusiness.com/john-paulson-takes-full-control-of-260m-vanderbilt-residences-in-puerto-rico/",
+   "https://www.elnuevodia.com/negocios/turismo/notas/el-condohotel-vanderbilt-residences-recibira-este-mes-a-sus-primeros-residentes/",
+   "https://www.elnuevodia.com/negocios/turismo/notas/john-paulson-se-convierte-en-dueno-absoluto-de-vanderbilt-residences-en-condado/",
+   "https://www.claimsjournal.com/news/national/2026/06/19/338307.htm",
+   "https://www.drdocket.com/case/ghaffar-v-paulson-prv-holdings-llc-prd-2023",
+   "https://wapa.tv/noticias/negocios/avanza-construcci-n-de-vanderbilt-residences-tras-disputa-legal-paulson-ghaffar/article_3f7b6464-f833-11ef-907b-775e849e981f.html"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "ritz-carlton-reserve-residences-cotton-bay",
+  "name": "Ritz-Carlton Reserve Residences at Cotton Bay",
+  "developer": "Cotton Bay Holdings Limited (owned by Luis Carlos Sarmiento, per The Tribune)",
+  "area": "Cotton Bay, South Eleuthera",
+  "country": "Bahamas",
+  "market": "Bahamas",
+  "stage": "under construction",
+  "url": "https://brandedresi.com/ritz-carlton-reserve-residences-at-cotton-bay/",
+  "docs_url": "https://cottonbayholdings.com/2026/03/12/cotton-bay-project-moves-forward/",
+  "permit_number": null,
+  "docs_listed": [
+   "97-100 three- to five-bedroom branded pool villas plus 110-111 key Ritz-Carlton Reserve hotel",
+   "Robert Trent Jones II golf course",
+   "developer statements on contractor arrangements (Mar 2026)",
+   "completion anticipated 2027-2028 (developer); 2027 (BRESI)",
+   "groundbreaking 14 Apr 2025 with the Prime Minister (OPM)"
+  ],
+  "note": "Branded villa community and Ritz-Carlton Reserve hotel at the old Cotton Bay Club, broken ground in April 2025 with the Prime Minister; The Tribune reported in June 2026 that the developer split with general contractor Greython, laid off most staff and halted hotel works, three months after the developer said Greython was continuing. Completion is stated as 2027-2028 but no prices, plans, permits or escrow terms are published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 97,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No permit numbers published. Government (OPM) groundbreaking speech of 14 Apr 2025 says the developers worked with the Bahamas Investment Authority; The Tribune says a Heads of Agreement dates from 1997.",
+   "escrow": "No information on buyer deposit protection.",
+   "progress": "Developer (12 Mar 2026): construction begun, Greython continuing as GC. The Tribune (18 Jun 2026): developer confirmed Greython departed, all hotel works halted; golf course and road relocation continue; Eleuthera Chamber said resort construction had not started in earnest.",
+   "plans": "No villa plans published.",
+   "record": "No completed projects by Cotton Bay Holdings named.",
+   "returns": "No yield or guarantee claims."
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking 14 Apr 2025, government-backed project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://opm.gov.bs/cotton-bay-holdings-project-groundbreaking-ceremony/"
+   },
+   {
+    "claim": "Greython continues as construction manager and general contractor (developer, Mar 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+   },
+   {
+    "claim": "Hotel construction halted pending new contractor tender",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+   },
+   {
+    "claim": "Completion 2027 (BRESI, Apr 2025) / 2027-2028 (developer) / around 2029 (four-year build per Tribune)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+   },
+   {
+    "claim": "Investment US$200M (OPM) vs US$285M (Greython) vs US$300M+ (developer) vs US$360M (Deputy PM)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2025/apr/04/450-construction-jobs-expected-in-expanded-eleuthera-resort-project/"
+   },
+   {
+    "claim": "Residences increased from 72 to 97 (Deputy PM); 100 (developer); 67 (contractor) ; 40 villas phase one (OPM)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://opm.gov.bs/cotton-bay-holdings-project-groundbreaking-ceremony/"
+   },
+   {
+    "claim": "Developer owned by Colombian billionaire Luis Carlos Sarmiento",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2025/apr/04/450-construction-jobs-expected-in-expanded-eleuthera-resort-project/"
+   },
+   {
+    "claim": "Partnership with Marriott (Ritz-Carlton Reserve) remains in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cottonbayholdings.com/2026/03/12/cotton-bay-project-moves-forward/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Nassau, Bahamas",
+   "developer_company": "Cotton Bay Holdings Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-04",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; foreign buyers permitted (Bahamas permanent residency route for large purchases)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Ritz-Carlton Reserve (Marriott)",
+   "amenities": [
+    "18-hole Robert Trent Jones II golf course",
+    "beach club",
+    "spa and gym",
+    "signature restaurants",
+    "pools",
+    "47-acre solar farm"
+   ],
+   "lat": 24.85,
+   "lng": -76.17,
+   "permit_authority": "Bahamas Investment Authority (Heads of Agreement); Ministry of Works / Department of Physical Planning",
+   "brochure_url": null
+  },
+  "positives": [
+   "Government-attended groundbreaking and Marriott brand agreement",
+   "No guaranteed return language"
+  ],
+  "flags": [
+   {
+    "text": "The Tribune reported in June 2026 that Cotton Bay Holdings parted with general contractor Greython Construction, terminated most staff and halted all hotel construction pending a new tender; the developer said it remains fully committed and that contractor transition is normal.",
+    "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+   }
+  ],
+  "sources": [
+   "https://cottonbayholdings.com/2026/03/12/cotton-bay-project-moves-forward/",
+   "https://cottonbayholdings.com/category/press-release/",
+   "https://brandedresi.com/ritz-carlton-reserve-residences-at-cotton-bay/",
+   "https://opm.gov.bs/cotton-bay-holdings-project-groundbreaking-ceremony/",
+   "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/",
+   "https://www.tribune242.com/news/2025/apr/04/450-construction-jobs-expected-in-expanded-eleuthera-resort-project/",
+   "https://greython.com/greython-selected-as-construction-manager-and-general-contractor-for-the-ritz-carlton-reserve-cotton-bay/",
+   "https://eleutheranews.com/cotton-bay-asserts-no-impact-from-change-in-commercial-relationship-between-its-projects-construction-manager-and-davies-associates/",
+   "https://www.oftmw.com/projects/ritz-carlton-reserve-at-cotton-bay/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "belize-marriott-residences-eci-development",
+  "name": "Belize Marriott Residences of Ambergris Caye",
+  "developer": "ECI Development",
+  "area": "San Pedro, Ambergris Caye",
+  "country": "Belize",
+  "market": "Belize",
+  "stage": "under construction",
+  "url": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math",
+  "docs_url": "https://ecidevelopment.com/community/belize-marriott-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: 'Phase I Sold Out, Phase II Coming soon'",
+   "unit models (Courtyard studio, Princess, Crown, Queen) with example price US$319,900 and HOA US$313 (per agent citing developer model page)",
+   "studio, 1BR, 2BR, 3BR residences with Marriott rental programme (exclusive)",
+   "construction update packet (foundations, structural steel)",
+   "opening targets: Dec 2023 (2022), Aug 2025 (2024); CoStar now Oct 2028"
+  ],
+  "note": "Marriott-branded beachfront condo-hotel by ECI Development on Ambergris Caye, broken ground in January 2022 with the Prime Minister for a December 2023 opening; the opening moved to August 2025 and a May 2026 CoStar report lists completion in October 2028, while the developer markets Phase II as 'coming soon'. No permit numbers, escrow terms or construction percentage are published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 319900,
+   "currency": "USD",
+   "title": "freehold (strata condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 155,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No DOE environmental clearance or building permit reference published.",
+   "escrow": "None published; buyer guides by local brokers advise asking for escrow or proof of funds.",
+   "progress": "Developer info packet describes foundations done and structural steel under way; Escape Artist (Jun 2024) relayed structural completion end 2024 and opening Aug 2025; CoStar Belize report (15 May 2026) lists start Sep 2023, completion Oct 2028; New Dawn Realty (Aug 2026) says still 'coming soon'.",
+   "plans": "Unit model names only in the pages opened; no plan drawings.",
+   "record": "No completed ECI projects named in sources opened (CoStar lists ECI's Grand Balisi as under construction).",
+   "returns": "Rental programme through Marriott only; no yield or guarantee published."
+  },
+  "claims": [
+   {
+    "claim": "Opening December 2023 (stated at Jan 2022 groundbreaking)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math"
+   },
+   {
+    "claim": "Grand opening August 2025, structure complete end 2024",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.escapeartist.com/blog/investment-property-options-in-belize/"
+   },
+   {
+    "claim": "Completion October 2028, 155 rooms, under construction (CoStar, May 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "http://dustinrennie.com/wp-content/uploads/2026/05/Belize-BLZ-Hospitality-Market-2026-May-Dustin-Rennie-CoStar-2.pdf"
+   },
+   {
+    "claim": "Phase I sold out, Phase II coming soon",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecidevelopment.com/community/belize-marriott-residences/"
+   },
+   {
+    "claim": "Only about 70 of 200+ units for private ownership (San Pedro Sun via broker)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math"
+   },
+   {
+    "claim": "Studio price US$319,900, HOA US$313",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ndrbelize.com/blog/evaluating-condo-hotel-investments-at-belize-marriott-residences"
+   },
+   {
+    "claim": "Construction proceeding 'at a steady and fast pace' (ECI manager, Sep 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/fabiocdeandrade_belize-marriott-activity-7374503610052755456-71Ts"
+   },
+   {
+    "claim": "Owners may rent only through the Marriott programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "ECI Development",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022-01",
+   "handover_promised": "2028-Q4",
+   "original_handover": "2023-12",
+   "delay_months": 58,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 319900,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; foreigners may own property in Belize",
+   "rental_programme": "Exclusive Marriott rental programme; no figures",
+   "service_charge": "HOA about US$313 for a studio (frequency not confirmed)",
+   "brand": "Marriott",
+   "amenities": [
+    "beachfront pools",
+    "restaurants",
+    "fitness club",
+    "spa",
+    "kids club",
+    "water sports"
+   ],
+   "lat": 17.92,
+   "lng": -87.96,
+   "permit_authority": "Department of the Environment (ECP); Central Building Authority / San Pedro Town Council",
+   "brochure_url": "https://info.ecidevelopment.com/marriott-info-packet"
+  },
+  "positives": [
+   "Construction status is tracked by an independent hotel-industry database",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ecidevelopment.com/community/belize-marriott-residences/",
+   "https://info.ecidevelopment.com/marriott-info-packet",
+   "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math",
+   "https://ndrbelize.com/blog/evaluating-condo-hotel-investments-at-belize-marriott-residences",
+   "http://dustinrennie.com/wp-content/uploads/2026/05/Belize-BLZ-Hospitality-Market-2026-May-Dustin-Rennie-CoStar-2.pdf",
+   "https://www.escapeartist.com/blog/investment-property-options-in-belize/",
+   "https://www.linkedin.com/posts/fabiocdeandrade_belize-marriott-activity-7374503610052755456-71Ts"
+  ],
+  "verified_score": 0
  }
 ]

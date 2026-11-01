@@ -75779,6 +75779,2049 @@
     "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
    ],
    "verified_score": 1
+  },
+  {
+   "slug": "one-central-saigon-ritz-carlton-residences-saigon-glory",
+   "name": "One Central Saigon (The Ritz-Carlton Residences)",
+   "developer": "Saigon Glory Co., Ltd. (development by Masterise Homes)",
+   "area": "Ben Thanh Quadrangle (Pham Ngu Lao, Calmette, Le Thi Hong Gam, Pho Duc Chinh), Ben Thanh Ward, Ho Chi Minh City",
+   "country": "Vietnam",
+   "market": "Vietnam",
+   "stage": "off-plan",
+   "url": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/",
+   "docs_url": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/",
+   "seed": {
+    "price": null,
+    "currency": "VND",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": "Techcombank guarantee of the investor's financial obligations for all 214 off-plan apartments (per HCMC Department of Construction, reported by VnExpress)",
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 214,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "docs_listed": [
+    "sales site: 214 apartments approved for sale by the HCMC Department of Construction (Jul 2026), price not announced",
+    "news: two towers of 55 and 48 floors, 214 Ritz-Carlton branded residences and a 231-room Ritz-Carlton hotel",
+    "news: construction restarted mid-March 2026 with Newtecons and SOL E&C"
+   ],
+   "note": "Ritz-Carlton branded residences on the long-stalled Ben Thanh Quadrangle site (former Spirit of Saigon); the HCMC Department of Construction listed its 214 apartments as eligible for off-plan sale on 21 Jul 2026 with a Techcombank guarantee, but no approval number, price or handover date is published; VietNamNet reported the project was at one time funded by a Van Thinh Phat-linked entity and the investor had negative equity at end-2024. (checked 31 Oct 2026)",
+   "evidence": {
+    "permit": "Sales site cites inclusion in the DoC list of 37 projects but publishes no letter number; the DoC list (reproduced by Thu vien Nha dat and CafeLand, 21 Jul 2026) names 214 apartments, investor Saigon Glory",
+    "escrow": "VnExpress (24 Jul 2026): according to the DoC, all 214 apartments carry a Techcombank financial-obligation guarantee",
+    "progress": "No developer progress page; DoanhNhan (15 Aug 2026) reports construction restarted in mid-March 2026 after years of stoppage",
+    "plans": "No plans or unit sizes published",
+    "record": "No delivered projects named for Saigon Glory; Masterise Homes named as developer in news",
+    "returns": "No guarantee or yield language found"
+   },
+   "positives": [
+    "Provincial eligibility to sell confirmed for a stated number of apartments",
+    "Bank guarantee covering all approved apartments",
+    "International branded operator (The Ritz-Carlton) named"
+   ],
+   "flags": [
+    {
+     "text": "VietNamNet reported (7 Sep 2026) that the project was at one time funded by an entity in Truong My Lan's Van Thinh Phat group, that construction stalled several times since 2013, and that Saigon Glory had negative equity of over VND 12,445 billion at end-2024 before a capital increase to VND 23,000 billion.",
+     "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+    },
+    {
+     "text": "VietNamNet reported Saigon Glory repurchased about VND 1,246 billion of its 2020 bonds on 26 Aug 2026, leaving about VND 1,263 billion outstanding in five series.",
+     "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+    }
+   ],
+   "verification": {
+    "permit": "registry",
+    "escrow": "independent",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "214 apartments eligible to sell (DoC list of 21 Jul 2026)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thuviennhadat.vn/phap-luat/37-du-an-tai-tphcm-du-dieu-kien-ban-nha-o-hinh-thanh-trong-tuong-lai-nam-2026-743909.html"
+    },
+    {
+     "claim": "Techcombank guarantee for all 214 apartments",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://vnexpress.net/hang-tram-can-ho-sieu-sang-tai-khu-tu-giac-ben-thanh-du-dieu-kien-ban-5101231.html"
+    },
+    {
+     "claim": "Investor is Saigon Glory Co., Ltd.",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://cafeland.vn/tin-tuc/tin-nong-tphcm-cong-bo-danh-sach-37-du-an-du-dieu-kien-de-ban-nam-2026-153496.html"
+    },
+    {
+     "claim": "Two towers of 55 and 48 floors, 231 hotel rooms",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://vnexpress.net/hang-tram-can-ho-sieu-sang-tai-khu-tu-giac-ben-thanh-du-dieu-kien-ban-5101231.html"
+    },
+    {
+     "claim": "Construction restarted mid-March 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://doanhnhanvn.vn/chu-dau-tu-khu-tu-giac-ben-thanh-co-chu-tich-moi.html"
+    },
+    {
+     "claim": "Ritz-Carlton hotel and residences brand",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+    },
+    {
+     "claim": "Investor financial position restored (positive equity end-2025)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html"
+    },
+    {
+     "claim": "Price",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/"
+    },
+    {
+     "claim": "Completion date",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/"
+    },
+    {
+     "claim": "Foreign buyer eligibility",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Ho Chi Minh City, Vietnam",
+    "developer_company": "Saigon Glory Co., Ltd. (owner Phuong Dong Ha Noi Real Estate Co., Ltd. since 2024, per VietNamNet)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Unlisted; bond issuer with financial disclosures reported by VietNamNet (2025 profit VND 1,510B, accumulated loss VND 17,935B)",
+    "construction_start": "2026-03",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "VND",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "The Ritz-Carlton Residences",
+    "amenities": [],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "HCMC Department of Construction (eligibility to sell future housing)",
+    "brochure_url": null
+   },
+   "sources": [
+    "https://one-central.vn/214-can-ho-one-central-saigon-du-dieu-kien-ban-ra-thi-truong/",
+    "https://vnexpress.net/hang-tram-can-ho-sieu-sang-tai-khu-tu-giac-ben-thanh-du-dieu-kien-ban-5101231.html",
+    "https://thuviennhadat.vn/phap-luat/37-du-an-tai-tphcm-du-dieu-kien-ban-nha-o-hinh-thanh-trong-tuong-lai-nam-2026-743909.html",
+    "https://cafeland.vn/tin-tuc/tin-nong-tphcm-cong-bo-danh-sach-37-du-an-du-dieu-kien-de-ban-nam-2026-153496.html",
+    "https://vietnamnet.vn/sieu-du-an-tu-giac-ben-thanh-hoi-sinh-chu-dau-tu-do-tien-khung-xu-ly-no-2552332.html",
+    "https://doanhnhanvn.vn/chu-dau-tu-khu-tu-giac-ben-thanh-co-chu-tich-moi.html"
+   ],
+   "permit_number": null,
+   "added": "2026-10-31",
+   "disclosure": {
+    "permit": false,
+    "escrow": true,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 3
+  },
+  {
+   "slug": "the-legend-city-danang-vipico",
+   "name": "The Legend City Danang",
+   "developer": "VIPICO One Member Co., Ltd. (ROX Signature)",
+   "area": "Lot A20, Vo Van Kiet Street, An Hai Ward, Da Nang (near Dragon Bridge)",
+   "country": "Vietnam",
+   "market": "Vietnam",
+   "stage": "off-plan",
+   "url": "https://thelegenddanang.vn/",
+   "docs_url": "https://thelegenddanang.vn/",
+   "seed": {
+    "price": 4701126004,
+    "currency": "VND",
+    "title": "apartment ownership (long-term for Vietnamese; foreigners 50 years renewable within 30% quota)",
+    "lease_base": 50,
+    "extension": "Foreign owners may renew under the 2023 Housing Law",
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q1",
+    "permit_claim": true,
+    "permit_number": "Da Nang Department of Construction letter 1818/SXD-QLN (30 Jan 2026, 800 apartments eligible for sale); capital mobilisation letter 674/SXD-QLN (19 Mar 2025); investment registration 8156003822",
+    "plans_published": false,
+    "escrow": "MSB letter of commitment to issue handover guarantees listed in the legal file",
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 800,
+    "payment_plan": "Bank loans up to 70% with 0% interest for 24 months (MSB, Vietcombank, MB); minimum 25% paid before loan",
+    "price_per_m2": 123389134,
+    "progress_updates": true
+   },
+   "docs_listed": [
+    "sales site: legal file list (auction decision, land certificate, 1/500 plan, building permit, eligibility letter 1818/SXD-QLN, model SPA, MSB guarantee commitment)",
+    "sales site: price list 1BR 38.1 sq m to 3BR 108.5 sq m, VND 4.70B to 13.13B after discount",
+    "sales site: construction start 28 Feb 2025, transfer slab level 4 completed 6 Sep 2026, handover 31 Mar 2028",
+    "legal site: signed PDF of DoC letter 1818/SXD-QLN and capital-mobilisation letter 674/SXD-QLN"
+   ],
+   "note": "800-apartment, 29-storey tower beside a Hyde hotel block near Da Nang's Dragon Bridge; the Da Nang Department of Construction confirmed eligibility to sell on 30 Jan 2026 (letter 1818/SXD-QLN), the land is mortgaged to MSB and must be released unit by unit before contracts, and handover is set for 31 Mar 2028. (checked 31 Oct 2026)",
+   "evidence": {
+    "permit": "Sales sites print letter 1818/SXD-QLN of 30 Jan 2026 and host the signed PDF; VietnamFinance and Bao Dau tu report the DoC approval for 800 apartments",
+    "escrow": "Legal file lists an MSB commitment letter to issue guarantees; DoC letter requires guarantees under Article 26 of the Real Estate Business Law",
+    "progress": "Sales site: construction started 28 Feb 2025, transfer slab level 4 completed 6 Sep 2026; VietTimes (Jun 2026) reported work at floors 5-6",
+    "plans": "Unit areas listed in price table; no floor plans found",
+    "record": "No completed projects named for VIPICO on the sales sites",
+    "returns": "No guarantee or yield language found"
+   },
+   "positives": [
+    "Provincial eligibility letter and capital-mobilisation letter published as signed PDFs",
+    "Dated construction milestones and a specific handover date",
+    "Unit-level price table with areas"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "registry",
+    "escrow": "developer",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "800 apartments eligible to sell (letter 1818/SXD-QLN, 30 Jan 2026)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+    },
+    {
+     "claim": "DoC approval for 800 apartments reported",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://baodautu.vn/du-an-the-legend-city-danang-duoc-phep-ban-nha-o-hinh-thanh-trong-tuong-lai-d507922.html"
+    },
+    {
+     "claim": "Investor VIPICO, investment registration 8156003822",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+    },
+    {
+     "claim": "29 floors, 3 basements, 800 apartments",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+    },
+    {
+     "claim": "Construction started Feb 2025",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf"
+    },
+    {
+     "claim": "Construction at floors 5-6 (Jun 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi"
+    },
+    {
+     "claim": "Project schedule to Q4 2028 (capital mobilisation letter) vs handover 31 Mar 2028 (sales site)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thelegendanang.com.vn/wp-content/uploads/2025/11/Cong-van-so-674SXD-QLN.pdf"
+    },
+    {
+     "claim": "Land use rights mortgaged to MSB",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://thelegendanang.com.vn/"
+    },
+    {
+     "claim": "MSB handover guarantee",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thelegenddanang.vn/"
+    },
+    {
+     "claim": "Price from VND 4.70B (1BR)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thelegenddanang.vn/"
+    },
+    {
+     "claim": "Foreigners can own within quota",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thelegenddanang.vn/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Vietnam",
+    "developer_company": "VIPICO One Member Co., Ltd., investment registration 8156003822",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025-02",
+    "handover_promised": "2028-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "1BR+1",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": 38.1,
+    "size_max_m2": 108.5,
+    "price_min": 4701126004.0,
+    "price_max": 13132047766.0,
+    "currency": "VND",
+    "deposit_pct": null,
+    "payment_plan": "Legal cap 30% first instalment, 70% before handover, 95% before certificate; bank support to 70%",
+    "foreign_ownership": "Foreign individuals may own up to 30% of units per building, 50-year term renewable",
+    "rental_programme": "Separate 222 Hyde Living serviced apartments (50-year) in hotel block; none for the 800 apartments",
+    "service_charge": "2% maintenance fund",
+    "brand": "ROX Signature; Hyde Hotel",
+    "amenities": [],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Da Nang Department of Construction (eligibility to sell, capital mobilisation); Da Nang People's Committee (land auction)",
+    "brochure_url": null
+   },
+   "sources": [
+    "https://thelegenddanang.vn/",
+    "https://thelegendanang.com.vn/",
+    "https://thelegendanang.com.vn/wp-content/uploads/2026/01/1818.SXD_.QLNVTTB.30.01.2026.signed.signed.pdf",
+    "https://thelegendanang.com.vn/wp-content/uploads/2025/11/Cong-van-so-674SXD-QLN.pdf",
+    "https://vietnamfinance.vn/800-can-ho-tai-the-legend-city-danang-du-dieu-kien-mo-ban-d139616.html",
+    "https://baodautu.vn/du-an-the-legend-city-danang-duoc-phep-ban-nha-o-hinh-thanh-trong-tuong-lai-d507922.html",
+    "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi"
+   ],
+   "permit_number": "Da Nang Department of Construction letter 1818/SXD-QLN (30 Jan 2026, 800 apartments eligible for sale); capital mobilisation letter 674/SXD-QLN (19 Mar 2025); investment registration 8156003822",
+   "added": "2026-10-31",
+   "disclosure": {
+    "permit": true,
+    "escrow": true,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "verified_score": 2
+  },
+  {
+   "slug": "vanderbilt-residences-condado-paulson",
+   "name": "Vanderbilt Residences Condado",
+   "developer": "Paulson Puerto Rico (Earle HC, LLC; owner Paulson PRV Holdings / John Paulson)",
+   "area": "1149 Ashford Avenue, Condado, San Juan",
+   "country": "Puerto Rico",
+   "market": "Puerto Rico",
+   "stage": "under construction",
+   "url": "https://investatepr.com/developments/vanderbilt-residences-condado",
+   "docs_url": "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/",
+   "permit_number": null,
+   "docs_listed": [
+    "66 units (50 residences for sale, 16 tourism units) in a 22-storey, 250 ft tower",
+    "current asking prices US$5.6M to US$22M (US$1,750-2,750 per sq ft)",
+    "construction schedule and status interview with developer (Feb 2026)",
+    "first deliveries June 2026, penthouses April 2027",
+    "general contractor CIC Construction Group; architect SB Architects"
+   ],
+   "note": "US$260-279 million condo-hotel tower in Condado owned outright by John Paulson since he bought out former partner Fahad Ghaffar in March 2025 to end litigation over the project; the structure is topped out, first units were due for delivery in June 2026 (originally Q3 2025) and full completion is targeted for early 2027. No permit numbers, escrow terms or floor plans are published (checked 31 Oct 2026).",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 5645000,
+    "currency": "USD",
+    "title": "freehold (condominium; some units restricted to tourism use)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 66,
+    "payment_plan": null,
+    "price_per_m2": 18842,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "No OGPe construction or use permit number published.",
+    "escrow": "No information on how buyer deposits are held.",
+    "progress": "Obra PR (13 Feb 2026): 22 floors up, over 72% of schedule time used, completion end Q1 2027; El Nuevo Dia (6 Jun 2026): first units to be delivered that month; News is my Business (Mar 2025): 19th floor reached.",
+    "plans": "Unit sizes and asking prices on agent site only; no plans.",
+    "record": "Paulson owns the adjacent Condado Vanderbilt and La Concha hotels (agent site), but no delivered residential projects by the developer are documented in sources opened.",
+    "returns": "No rental yield or guarantee published."
+   },
+   "claims": [
+    {
+     "claim": "Paulson took 100% ownership in March 2025, ending litigation over the project",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.bloomberg.com/news/articles/2025-03-03/paulson-puerto-rico-ends-legal-feud-over-luxury-tower-on-island"
+    },
+    {
+     "claim": "Unit deliveries to begin Q3 2025 (Mar 2025 statement)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://newsismybusiness.com/john-paulson-takes-full-control-of-260m-vanderbilt-residences-in-puerto-rico/"
+    },
+    {
+     "claim": "First deliveries June 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.elnuevodia.com/negocios/turismo/notas/el-condohotel-vanderbilt-residences-recibira-este-mes-a-sus-primeros-residentes/"
+    },
+    {
+     "claim": "Full completion Feb 2027 (Mar 2025) vs end Q1 / April 2027 (Feb 2026)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/"
+    },
+    {
+     "claim": "Project cost US$238M / US$260M / US$279.1M across reports",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.elnuevodia.com/negocios/turismo/notas/john-paulson-se-convierte-en-dueno-absoluto-de-vanderbilt-residences-en-condado/"
+    },
+    {
+     "claim": "66 units, 50 for sale and 16 tourism units",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.elnuevodia.com/negocios/turismo/notas/el-condohotel-vanderbilt-residences-recibira-este-mes-a-sus-primeros-residentes/"
+    },
+    {
+     "claim": "Groundbreaking June 2022; 22 floors built",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/"
+    },
+    {
+     "claim": "More than half of the 50 residences sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investatepr.com/developments/vanderbilt-residences-condado"
+    },
+    {
+     "claim": "Related Paulson-Ghaffar disputes continue (arbitration award June 2026, federal case active)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.claimsjournal.com/news/national/2026/06/19/338307.htm"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "San Juan, Puerto Rico / New York, USA",
+    "developer_company": "Earle HC, LLC",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2022-06",
+    "handover_promised": "2027-Q1",
+    "original_handover": "first deliveries Q3 2025",
+    "delay_months": 9.0,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "4BR",
+     "5BR penthouse",
+     "tourism unit"
+    ],
+    "size_min_m2": 299.6,
+    "size_max_m2": 1574.0,
+    "price_min": 5645000.0,
+    "price_max": 22000000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold condominium (US territory, no restrictions)",
+    "rental_programme": "16 units designated for full-time tourism use; no figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "75 ft infinity pool",
+     "cinema",
+     "gym",
+     "spa",
+     "pet care",
+     "conference rooms",
+     "about 25,000 sq ft amenity space"
+    ],
+    "lat": 18.458,
+    "lng": -66.075,
+    "permit_authority": "Oficina de Gerencia de Permisos (OGPe) / Municipio de San Juan",
+    "brochure_url": null
+   },
+   "positives": [
+    "Construction status independently documented, with deliveries started",
+    "Ownership dispute over the project resolved by full buyout in March 2025",
+    "No guaranteed return language"
+   ],
+   "flags": [
+    {
+     "text": "Bloomberg and News is my Business reported a legal dispute between John Paulson and former partner Fahad Ghaffar involving the project, resolved for the project in March 2025 when Paulson bought Ghaffar's stake.",
+     "source": "https://www.bloomberg.com/news/articles/2025-03-03/paulson-puerto-rico-ends-legal-feud-over-luxury-tower-on-island"
+    },
+    {
+     "text": "Claims Journal (Bloomberg) reported in June 2026 that an arbitrator awarded Paulson more than US$47 million against Ghaffar in related disputes; Ghaffar said he would challenge it and a federal case between them remains active.",
+     "source": "https://www.claimsjournal.com/news/national/2026/06/19/338307.htm"
+    }
+   ],
+   "sources": [
+    "https://investatepr.com/developments/vanderbilt-residences-condado",
+    "https://obrapr.com/2026/02/13/en-exclusiva-42-meses-de-vanderbilt-residences/",
+    "https://www.bloomberg.com/news/articles/2025-03-03/paulson-puerto-rico-ends-legal-feud-over-luxury-tower-on-island",
+    "https://newsismybusiness.com/john-paulson-takes-full-control-of-260m-vanderbilt-residences-in-puerto-rico/",
+    "https://www.elnuevodia.com/negocios/turismo/notas/el-condohotel-vanderbilt-residences-recibira-este-mes-a-sus-primeros-residentes/",
+    "https://www.elnuevodia.com/negocios/turismo/notas/john-paulson-se-convierte-en-dueno-absoluto-de-vanderbilt-residences-en-condado/",
+    "https://www.claimsjournal.com/news/national/2026/06/19/338307.htm",
+    "https://www.drdocket.com/case/ghaffar-v-paulson-prv-holdings-llc-prd-2023",
+    "https://wapa.tv/noticias/negocios/avanza-construcci-n-de-vanderbilt-residences-tras-disputa-legal-paulson-ghaffar/article_3f7b6464-f833-11ef-907b-775e849e981f.html"
+   ],
+   "verified_score": 1
+  },
+  {
+   "slug": "ritz-carlton-reserve-residences-cotton-bay",
+   "name": "Ritz-Carlton Reserve Residences at Cotton Bay",
+   "developer": "Cotton Bay Holdings Limited (owned by Luis Carlos Sarmiento, per The Tribune)",
+   "area": "Cotton Bay, South Eleuthera",
+   "country": "Bahamas",
+   "market": "Bahamas",
+   "stage": "under construction",
+   "url": "https://brandedresi.com/ritz-carlton-reserve-residences-at-cotton-bay/",
+   "docs_url": "https://cottonbayholdings.com/2026/03/12/cotton-bay-project-moves-forward/",
+   "permit_number": null,
+   "docs_listed": [
+    "97-100 three- to five-bedroom branded pool villas plus 110-111 key Ritz-Carlton Reserve hotel",
+    "Robert Trent Jones II golf course",
+    "developer statements on contractor arrangements (Mar 2026)",
+    "completion anticipated 2027-2028 (developer); 2027 (BRESI)",
+    "groundbreaking 14 Apr 2025 with the Prime Minister (OPM)"
+   ],
+   "note": "Branded villa community and Ritz-Carlton Reserve hotel at the old Cotton Bay Club, broken ground in April 2025 with the Prime Minister; The Tribune reported in June 2026 that the developer split with general contractor Greython, laid off most staff and halted hotel works, three months after the developer said Greython was continuing. Completion is stated as 2027-2028 but no prices, plans, permits or escrow terms are published (checked 31 Oct 2026).",
+   "added": "2026-10-31",
+   "seed": {
+    "price": null,
+    "currency": "USD",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 97,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "No permit numbers published. Government (OPM) groundbreaking speech of 14 Apr 2025 says the developers worked with the Bahamas Investment Authority; The Tribune says a Heads of Agreement dates from 1997.",
+    "escrow": "No information on buyer deposit protection.",
+    "progress": "Developer (12 Mar 2026): construction begun, Greython continuing as GC. The Tribune (18 Jun 2026): developer confirmed Greython departed, all hotel works halted; golf course and road relocation continue; Eleuthera Chamber said resort construction had not started in earnest.",
+    "plans": "No villa plans published.",
+    "record": "No completed projects by Cotton Bay Holdings named.",
+    "returns": "No yield or guarantee claims."
+   },
+   "claims": [
+    {
+     "claim": "Groundbreaking 14 Apr 2025, government-backed project",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://opm.gov.bs/cotton-bay-holdings-project-groundbreaking-ceremony/"
+    },
+    {
+     "claim": "Greython continues as construction manager and general contractor (developer, Mar 2026)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+    },
+    {
+     "claim": "Hotel construction halted pending new contractor tender",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+    },
+    {
+     "claim": "Completion 2027 (BRESI, Apr 2025) / 2027-2028 (developer) / around 2029 (four-year build per Tribune)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+    },
+    {
+     "claim": "Investment US$200M (OPM) vs US$285M (Greython) vs US$300M+ (developer) vs US$360M (Deputy PM)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.tribune242.com/news/2025/apr/04/450-construction-jobs-expected-in-expanded-eleuthera-resort-project/"
+    },
+    {
+     "claim": "Residences increased from 72 to 97 (Deputy PM); 100 (developer); 67 (contractor) ; 40 villas phase one (OPM)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://opm.gov.bs/cotton-bay-holdings-project-groundbreaking-ceremony/"
+    },
+    {
+     "claim": "Developer owned by Colombian billionaire Luis Carlos Sarmiento",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.tribune242.com/news/2025/apr/04/450-construction-jobs-expected-in-expanded-eleuthera-resort-project/"
+    },
+    {
+     "claim": "Partnership with Marriott (Ritz-Carlton Reserve) remains in place",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://cottonbayholdings.com/2026/03/12/cotton-bay-project-moves-forward/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Nassau, Bahamas",
+    "developer_company": "Cotton Bay Holdings Limited",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025-04",
+    "handover_promised": "2028",
+    "original_handover": "2027",
+    "delay_months": null,
+    "unit_types": [
+     "3BR villa",
+     "4BR villa",
+     "5BR villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold; foreign buyers permitted (Bahamas permanent residency route for large purchases)",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "Ritz-Carlton Reserve (Marriott)",
+    "amenities": [
+     "18-hole Robert Trent Jones II golf course",
+     "beach club",
+     "spa and gym",
+     "signature restaurants",
+     "pools",
+     "47-acre solar farm"
+    ],
+    "lat": 24.85,
+    "lng": -76.17,
+    "permit_authority": "Bahamas Investment Authority (Heads of Agreement); Ministry of Works / Department of Physical Planning",
+    "brochure_url": null
+   },
+   "positives": [
+    "Government-attended groundbreaking and Marriott brand agreement",
+    "No guaranteed return language"
+   ],
+   "flags": [
+    {
+     "text": "The Tribune reported in June 2026 that Cotton Bay Holdings parted with general contractor Greython Construction, terminated most staff and halted all hotel construction pending a new tender; the developer said it remains fully committed and that contractor transition is normal.",
+     "source": "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/"
+    }
+   ],
+   "sources": [
+    "https://cottonbayholdings.com/2026/03/12/cotton-bay-project-moves-forward/",
+    "https://cottonbayholdings.com/category/press-release/",
+    "https://brandedresi.com/ritz-carlton-reserve-residences-at-cotton-bay/",
+    "https://opm.gov.bs/cotton-bay-holdings-project-groundbreaking-ceremony/",
+    "https://www.tribune242.com/news/2026/jun/18/360m-project-terminates-staff-splits-with-contractor/",
+    "https://www.tribune242.com/news/2025/apr/04/450-construction-jobs-expected-in-expanded-eleuthera-resort-project/",
+    "https://greython.com/greython-selected-as-construction-manager-and-general-contractor-for-the-ritz-carlton-reserve-cotton-bay/",
+    "https://eleutheranews.com/cotton-bay-asserts-no-impact-from-change-in-commercial-relationship-between-its-projects-construction-manager-and-davies-associates/",
+    "https://www.oftmw.com/projects/ritz-carlton-reserve-at-cotton-bay/"
+   ],
+   "verified_score": 1
+  },
+  {
+   "slug": "belize-marriott-residences-eci-development",
+   "name": "Belize Marriott Residences of Ambergris Caye",
+   "developer": "ECI Development",
+   "area": "San Pedro, Ambergris Caye",
+   "country": "Belize",
+   "market": "Belize",
+   "stage": "under construction",
+   "url": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math",
+   "docs_url": "https://ecidevelopment.com/community/belize-marriott-residences/",
+   "permit_number": null,
+   "docs_listed": [
+    "developer page: 'Phase I Sold Out, Phase II Coming soon'",
+    "unit models (Courtyard studio, Princess, Crown, Queen) with example price US$319,900 and HOA US$313 (per agent citing developer model page)",
+    "studio, 1BR, 2BR, 3BR residences with Marriott rental programme (exclusive)",
+    "construction update packet (foundations, structural steel)",
+    "opening targets: Dec 2023 (2022), Aug 2025 (2024); CoStar now Oct 2028"
+   ],
+   "note": "Marriott-branded beachfront condo-hotel by ECI Development on Ambergris Caye, broken ground in January 2022 with the Prime Minister for a December 2023 opening; the opening moved to August 2025 and a May 2026 CoStar report lists completion in October 2028, while the developer markets Phase II as 'coming soon'. No permit numbers, escrow terms or construction percentage are published (checked 31 Oct 2026).",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 319900,
+    "currency": "USD",
+    "title": "freehold (strata condominium)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 155,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "No DOE environmental clearance or building permit reference published.",
+    "escrow": "None published; buyer guides by local brokers advise asking for escrow or proof of funds.",
+    "progress": "Developer info packet describes foundations done and structural steel under way; Escape Artist (Jun 2024) relayed structural completion end 2024 and opening Aug 2025; CoStar Belize report (15 May 2026) lists start Sep 2023, completion Oct 2028; New Dawn Realty (Aug 2026) says still 'coming soon'.",
+    "plans": "Unit model names only in the pages opened; no plan drawings.",
+    "record": "No completed ECI projects named in sources opened (CoStar lists ECI's Grand Balisi as under construction).",
+    "returns": "Rental programme through Marriott only; no yield or guarantee published."
+   },
+   "claims": [
+    {
+     "claim": "Opening December 2023 (stated at Jan 2022 groundbreaking)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math"
+    },
+    {
+     "claim": "Grand opening August 2025, structure complete end 2024",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.escapeartist.com/blog/investment-property-options-in-belize/"
+    },
+    {
+     "claim": "Completion October 2028, 155 rooms, under construction (CoStar, May 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "http://dustinrennie.com/wp-content/uploads/2026/05/Belize-BLZ-Hospitality-Market-2026-May-Dustin-Rennie-CoStar-2.pdf"
+    },
+    {
+     "claim": "Phase I sold out, Phase II coming soon",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecidevelopment.com/community/belize-marriott-residences/"
+    },
+    {
+     "claim": "Only about 70 of 200+ units for private ownership (San Pedro Sun via broker)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math"
+    },
+    {
+     "claim": "Studio price US$319,900, HOA US$313",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ndrbelize.com/blog/evaluating-condo-hotel-investments-at-belize-marriott-residences"
+    },
+    {
+     "claim": "Construction proceeding 'at a steady and fast pace' (ECI manager, Sep 2025)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.linkedin.com/posts/fabiocdeandrade_belize-marriott-activity-7374503610052755456-71Ts"
+    },
+    {
+     "claim": "Owners may rent only through the Marriott programme",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "ECI Development",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2022-01",
+    "handover_promised": "2028-Q4",
+    "original_handover": "2023-12",
+    "delay_months": 58.0,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 319900.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold; foreigners may own property in Belize",
+    "rental_programme": "Exclusive Marriott rental programme; no figures",
+    "service_charge": "HOA about US$313 for a studio (frequency not confirmed)",
+    "brand": "Marriott",
+    "amenities": [
+     "beachfront pools",
+     "restaurants",
+     "fitness club",
+     "spa",
+     "kids club",
+     "water sports"
+    ],
+    "lat": 17.92,
+    "lng": -87.96,
+    "permit_authority": "Department of the Environment (ECP); Central Building Authority / San Pedro Town Council",
+    "brochure_url": "https://info.ecidevelopment.com/marriott-info-packet"
+   },
+   "positives": [
+    "Construction status is tracked by an independent hotel-industry database",
+    "No guaranteed return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://ecidevelopment.com/community/belize-marriott-residences/",
+    "https://info.ecidevelopment.com/marriott-info-packet",
+    "https://ndrbelize.com/blog/the-belize-marriott-residences-are-still-coming-soon-heres-what-that-means-for-your-rental-math",
+    "https://ndrbelize.com/blog/evaluating-condo-hotel-investments-at-belize-marriott-residences",
+    "http://dustinrennie.com/wp-content/uploads/2026/05/Belize-BLZ-Hospitality-Market-2026-May-Dustin-Rennie-CoStar-2.pdf",
+    "https://www.escapeartist.com/blog/investment-property-options-in-belize/",
+    "https://www.linkedin.com/posts/fabiocdeandrade_belize-marriott-activity-7374503610052755456-71Ts"
+   ],
+   "verified_score": 0
+  },
+  {
+   "slug": "fox-and-foundry-liverpool-nexus-residential",
+   "name": "Fox & Foundry",
+   "developer": "Nexus Residential (sales via RWinvest)",
+   "area": "Fox Street, Pumpfields, Liverpool L3",
+   "country": "United Kingdom",
+   "market": "Liverpool",
+   "stage": "under construction",
+   "url": "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/",
+   "docs_url": "https://foxandfoundry.co.uk/",
+   "permit_number": "Liverpool City Council 21F/1699",
+   "docs_listed": [
+    "typical floor plans for 1BR Manhattan, 1BR Superior and 2BR",
+    "prices from GBP 189,950 (project site) or GBP 247,950 (RWinvest page)",
+    "GBP 5,000 reservation; staged plan 20% exchange, 20% Mar 2027, 60% completion (1BR)",
+    "999-year lease",
+    "6% assured or contracted net rent for 12 months from completion",
+    "projected short-let yields 7.8% to 10.2% with stated assumptions",
+    "estimated completion Q1 2028, labelled non-contractual"
+   ],
+   "note": "Nexus Residential is selling 138 to 174 flats at Fox Street, L3 3BQ with a 6% assured net rent for the first year; planning record 21F/1699 at the same postcode covers retaining and completing Block D as 138 flats, the unfinished shell of the Fox Street Village scheme whose developer collapsed in 2019 owing overseas buyers about GBP 6m. The sales pages do not mention this history (checked 31 Oct 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 189950,
+    "currency": "GBP",
+    "title": "leasehold",
+    "lease_base": 999,
+    "extension": null,
+    "guaranteed_language": true,
+    "yield_pct": 6,
+    "completion": "2028-Q1",
+    "permit_claim": false,
+    "permit_number": "Liverpool City Council 21F/1699",
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": "Nexus names completed and tenanted L1 Boutique, Marina Lofts and City Terraces (Nexus LinkedIn profile text)",
+    "units": 138,
+    "payment_plan": "GBP 5,000 reservation; 1BR 20% on exchange, 20% by 15 Mar 2027, 60% on completion; 2BR 15/15/70",
+    "price_per_m2": 4744,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Not quoted on sales pages. A planning data mirror of Liverpool City Council lists 21F/1699 (approved) 'to retain and complete works to Block D so as to provide 138 no. flats' at 30 Block D Fox Street, L3 3BQ, and a pending condition discharge 26DIS/2854 (construction method statement) received Oct 2026",
+    "escrow": null,
+    "progress": "No dated progress or percentage published; a Nexus post (Oct 2026) refers to a site team on site through the winter",
+    "plans": "foxandfoundry.co.uk shows typical floor plans for three apartment types",
+    "record": "Nexus names L1 Boutique, Marina Lofts and City Terraces as completed; Nexus Residential Limited (11135662) is active with accounts to 5 Apr 2025 and six outstanding charges",
+    "returns": "'6% assured rental return for 1 year' (Nexus posts) and '6.0% contracted NET rent' (RWinvest)"
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Planning 21F/1699 approved to complete Block D as 138 flats at 30 Fox Street L3 3BQ",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+    },
+    {
+     "claim": "Scheme comprises 138 apartments (Nexus, Apr and May 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+    },
+    {
+     "claim": "Scheme comprises 174 apartments (Nexus, Oct 2026)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+    },
+    {
+     "claim": "Site is a new-build development (marketing)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://kohenavocats.com/jurisprudences/fox-street-village-ltd-re/"
+    },
+    {
+     "claim": "Earlier Block D buyers lost money when Fox Street Village Ltd entered administration (2019)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/collapsed-fox-street-village-developer-16826113"
+    },
+    {
+     "claim": "Nexus Residential Limited is a registered active company",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://find-and-update.company-information.service.gov.uk/company/11135662"
+    },
+    {
+     "claim": "Construction method statement still awaiting council approval (Oct 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854"
+    },
+    {
+     "claim": "Prices from GBP 189,950",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/"
+    },
+    {
+     "claim": "6% assured net rent for 12 months",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-pumpfields-activity-7455526595018108928-Asm1"
+    },
+    {
+     "claim": "Completion Q1 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://foxandfoundry.co.uk/"
+    },
+    {
+     "claim": "Nexus delivered L1 Boutique, Marina Lofts and City Terraces",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-regenerationliverpool-activity-7458787923715506176-pgsl"
+    },
+    {
+     "claim": "Buyer deposits protected",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://foxandfoundry.co.uk/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2018.0,
+    "developer_hq": "Liverpool, UK (registered office Tunbridge Wells)",
+    "developer_company": "Nexus Residential Limited 11135662 (selling SPV not named)",
+    "developer_projects_delivered": 3.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR"
+    ],
+    "size_min_m2": 40.0,
+    "size_max_m2": 58.0,
+    "price_min": 189950.0,
+    "price_max": 279950.0,
+    "currency": "GBP",
+    "deposit_pct": 20.0,
+    "payment_plan": "GBP 5,000 reservation; 20% exchange, 20% stage payment Mar 2027, 60% completion (1BR)",
+    "foreign_ownership": "999-year leasehold",
+    "rental_programme": "Optional Nexus rental management agreement with 6% contracted net rent for 12 months, then market rent; short lets permitted",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "gym",
+     "residents' lounge",
+     "concierge",
+     "landscaped courtyard",
+     "parking",
+     "solar panels and heat pumps"
+    ],
+    "lat": 53.417,
+    "lng": -2.977,
+    "permit_authority": "Liverpool City Council",
+    "brochure_url": null
+   },
+   "positives": [
+    "Typical floor plans and a staged payment schedule are published",
+    "Yield projections show their assumptions and data source",
+    "Completion date is labelled as a non-contractual estimate"
+   ],
+   "flags": [
+    {
+     "text": "Liverpool Echo reported in 2019 that Fox Street Village Ltd, developer of the same 30 Fox Street site, entered administration owing about GBP 9.9m, including almost GBP 6m to investors in the unfinished Block D from countries including China, Kuwait and Canada",
+     "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/collapsed-fox-street-village-developer-16826113"
+    },
+    {
+     "text": "A High Court judgment on Fox Street Village Ltd records a 2019 council enforcement notice over planning breaches at the site and that Block D was only a shell when work stopped",
+     "source": "https://kohenavocats.com/jurisprudences/fox-street-village-ltd-re/"
+    },
+    {
+     "text": "High Court appeal FSV Freeholders Ltd v SGL1 (2022) concerned the administrators' sale of Blocks A to E at 30 Fox Street, including Block D",
+     "source": "https://www.bailii.org/ew/cases/EWHC/Ch/2022/3336.pdf"
+    }
+   ],
+   "sources": [
+    "https://foxandfoundry.co.uk/",
+    "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/",
+    "https://www.rightmove.co.uk/properties/94573008",
+    "https://www.onthemarket.com/details/20152114/",
+    "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-pumpfields-activity-7455526595018108928-Asm1",
+    "https://www.linkedin.com/posts/nexus-residential_nexusresidential-fox-regenerationliverpool-activity-7458787923715506176-pgsl",
+    "https://www.linkedin.com/posts/nexus-residential_internationalpropertyawards-ipa2026-foxandfoundry-activity-7513986633973731330-5ZiH",
+    "https://nexusresidential.co.uk/live/",
+    "https://www.planningsignal.co.uk/planning-application/liverpool/26dis-2854",
+    "https://find-and-update.company-information.service.gov.uk/company/11135662",
+    "https://www.liverpoolecho.co.uk/news/liverpool-news/collapsed-fox-street-village-developer-16826113",
+    "https://www.liverpoolecho.co.uk/news/liverpool-news/developer-agrees-buy-liverpools-troubled-17665046",
+    "https://kohenavocats.com/jurisprudences/fox-street-village-ltd-re/",
+    "https://www.bailii.org/ew/cases/EWHC/Ch/2022/3336.pdf"
+   ],
+   "verified_score": 2
+  },
+  {
+   "slug": "the-gateway-liverpool-legacie",
+   "name": "The Gateway",
+   "developer": "Legacie Developments (Legacie Towers Liverpool Ltd), with Nexus Residential; sales by RWinvest",
+   "area": "Leeds Street / Freemasons Row, Pumpfields, Liverpool L3",
+   "country": "United Kingdom",
+   "market": "Liverpool",
+   "stage": "under construction",
+   "url": "https://www.rw-invest.com/properties/the-gateway-liverpool/",
+   "docs_url": "https://www.rw-invest.com/properties/the-gateway-construction-updates/",
+   "permit_number": "Liverpool City Council 17F/0874",
+   "docs_listed": [
+    "quarterly construction updates Q3 2025 to Q3 2026 with block-by-block detail",
+    "remaining units priced: 2BR from GBP 359,950, 2BR townhouse GBP 399,950, 3BR GBP 484,950",
+    "staged plan: GBP 5,000 reservation, 10% exchange, 5% by 16 Nov 2026, 85% completion",
+    "optional 6.0% contracted net rent for 12 months under an underlease with Legacie",
+    "GBP 0 ground rent, service charge est. GBP 3.25 psf",
+    "estimated completion Q3 2027; over 90% sold"
+   ],
+   "note": "656-flat, four-tower scheme on the stalled Vinco site (permission 17F/0874) that Legacie restarted in Dec 2023; it topped out in Jan 2026 and is now in fit-out, with completion moved from end-2026 to 2027 (Q3 2027 per the sales agent). Over 90% sold, with an optional 6% contracted first-year rent (checked 31 Oct 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 359950,
+    "currency": "GBP",
+    "title": "leasehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "yield_pct": 6,
+    "completion": "2027-Q3",
+    "permit_claim": true,
+    "permit_number": "Liverpool City Council 17F/0874",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": "Legacie completed Millers Place and One Park Lane in Liverpool in 2025 (Place North West)",
+    "units": 656,
+    "payment_plan": "GBP 5,000 reservation, 10% on exchange, 5% stage payment by 16 Nov 2026, 85% on completion",
+    "price_per_m2": 5624,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Place North West (Aug 2023, Dec 2023, Jan 2026) cites application 17F/0874; Liverpool's planning portal was not reachable from our session",
+    "escrow": null,
+    "progress": "RWinvest quarterly updates (latest Q3 2026: glazing complete Block A, buildings weatherproof, fit-out in Blocks A and D); topping out reported by Place North West, Liverpool Echo and LBN in Jan 2026",
+    "plans": "Floor plans only on request",
+    "record": "Place North West: Legacie completed Millers Place and One Park Lane in 2025; Legacie Towers Liverpool Ltd (13891367) active with accounts to 28 Feb 2025",
+    "returns": "Optional 6.0% contracted net rent for 12 months, fixed in an underlease with Legacie; page notes it depends on Legacie meeting its obligations"
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Planning permission 17F/0874 for four towers off Leeds Street",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/legacie-breaks-ground-on-200m-liverpool-resi/"
+    },
+    {
+     "claim": "Permission granted in 2019",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/liverpool-grants-consent-to-freemasons-row-homes/"
+    },
+    {
+     "claim": "Site owner Legacie Towers Liverpool Ltd registered; land charged to Together and Alo Tower S.a r.l. (Dec 2024)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://find-and-update.company-information.service.gov.uk/company/13891367/charges"
+    },
+    {
+     "claim": "GBP 93.5m development funding from Maslow Capital (Dec 2024)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/93-5m-boost-for-656-liverpool-flats/"
+    },
+    {
+     "claim": "Construction started Dec 2023",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/legacie-breaks-ground-on-200m-liverpool-resi/"
+    },
+    {
+     "claim": "Topped out Jan 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/200m-luxury-housing-scheme-edge-33319523"
+    },
+    {
+     "claim": "Completion end of 2026 (Dec 2024 report)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/legacies-the-gateway-set-for-2027-completion/"
+    },
+    {
+     "claim": "Estimated completion Q3 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.rw-invest.com/properties/the-gateway-liverpool/"
+    },
+    {
+     "claim": "Over 90% of apartments sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lbndaily.co.uk/legacie-hits-major-milestone-on-200m-scheme/"
+    },
+    {
+     "claim": "Legacie completed Millers Place and One Park Lane",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/legacies-the-gateway-set-for-2027-completion/"
+    },
+    {
+     "claim": "Previous developer Vinco Group went into liquidation, stalling the scheme",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.placenorthwest.co.uk/legacie-picks-up-stalled-664-home-liverpool-site/"
+    },
+    {
+     "claim": "6% contracted net rent for 12 months",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.rw-invest.com/properties/the-gateway-liverpool/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2018.0,
+    "developer_hq": "Liverpool, UK",
+    "developer_company": "Legacie Towers Liverpool Ltd 13891367 (site owner per charges); Legacie Developments Limited 11512780",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2023-12",
+    "handover_promised": "2027-Q3",
+    "original_handover": "2026-Q4",
+    "delay_months": 9.0,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "townhouse"
+    ],
+    "size_min_m2": 57.0,
+    "size_max_m2": 84.0,
+    "price_min": 359950.0,
+    "price_max": 484950.0,
+    "currency": "GBP",
+    "deposit_pct": 10.0,
+    "payment_plan": "GBP 5,000 reservation, 10% exchange, 5% stage, 85% completion",
+    "foreign_ownership": "Leasehold (length not stated on page), GBP 0 ground rent",
+    "rental_programme": "Optional 12-month underlease to Legacie at 6% net of purchase price; then owner lets freely",
+    "service_charge": "Est. GBP 3.25 psf per year",
+    "brand": null,
+    "amenities": [
+     "garden spa with pool",
+     "two gyms",
+     "residents' lounges",
+     "cinema room",
+     "seventh-floor skybridge",
+     "car park"
+    ],
+    "lat": 53.414,
+    "lng": -2.99,
+    "permit_authority": "Liverpool City Council",
+    "brochure_url": null
+   },
+   "positives": [
+    "Detailed quarterly construction reports with block-level progress",
+    "Structure topped out and confirmed by several independent outlets",
+    "Funding and land charges visible at Companies House"
+   ],
+   "flags": [
+    {
+     "text": "Place North West reported that the site's original developer, Vinco Group, went into liquidation and the scheme stalled until Legacie acquired it in 2023",
+     "source": "https://www.placenorthwest.co.uk/legacie-picks-up-stalled-664-home-liverpool-site/"
+    }
+   ],
+   "sources": [
+    "https://www.rw-invest.com/properties/the-gateway-liverpool/",
+    "https://www.rw-invest.com/properties/the-gateway-construction-updates/",
+    "https://www.linkedin.com/posts/legacie-developments-ltd_strong-progress-at-gateway-liverpool-activity-7440794445542895616-Td_-",
+    "https://www.legacie.co.uk/press/12017-tyy6l-4bw4l-8lpb5-gpfdm-r58ez-8sa58-36mbp",
+    "https://www.placenorthwest.co.uk/legacies-the-gateway-set-for-2027-completion/",
+    "https://www.placenorthwest.co.uk/93-5m-boost-for-656-liverpool-flats/",
+    "https://www.placenorthwest.co.uk/legacie-breaks-ground-on-200m-liverpool-resi/",
+    "https://www.placenorthwest.co.uk/legacie-picks-up-stalled-664-home-liverpool-site/",
+    "https://www.placenorthwest.co.uk/liverpool-grants-consent-to-freemasons-row-homes/",
+    "https://www.liverpoolecho.co.uk/news/liverpool-news/200m-luxury-housing-scheme-edge-33319523",
+    "https://lbndaily.co.uk/legacie-hits-major-milestone-on-200m-scheme/",
+    "https://briggsandforrester.co.uk/building-1st-fix-momentum-at-the-gateway-liverpool/",
+    "https://find-and-update.company-information.service.gov.uk/company/13891367",
+    "https://find-and-update.company-information.service.gov.uk/company/13891367/charges",
+    "https://find-and-update.company-information.service.gov.uk/company/11512780"
+   ],
+   "verified_score": 3
+  },
+  {
+   "slug": "four-seasons-private-residences-las-vegas-azure",
+   "name": "Four Seasons Private Residences Las Vegas",
+   "developer": "Azure Resorts & Hotels with Luxus Developments and Two Roads Development",
+   "area": "MacDonald Highlands, Henderson",
+   "country": "USA",
+   "market": "Las Vegas",
+   "stage": "under construction",
+   "url": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out",
+   "docs_url": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822",
+   "permit_number": null,
+   "docs_listed": [
+    "171 residences in two towers of 24 and 25 storeys",
+    "both towers topped out 30 Jul 2026, 148 of 171 under contract, USD 950M sales (Oct 2026)",
+    "remaining homes from USD 5.15M",
+    "payment schedule 15% at signing, 10% at 6 months, 10% at 1 year, 65% at delivery; deposits bonded (Review-Journal)",
+    "USD 686M construction financing from J.P. Morgan, Sculptor and Morning Calm (Review-Journal)"
+   ],
+   "note": "Two-tower, 171-residence Four Seasons project in Henderson; both towers topped out on 30 Jul 2026 with 148 units under contract, and completion is now anticipated in Q4 2027 after earlier targets of early 2026, late 2026 and mid-2027. Deposits are described as bonded, but no permit number, floor plans or developer delivery record are published (checked 31 Oct 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 5150000,
+    "currency": "USD",
+    "title": "freehold (fee simple condominium)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": "Review-Journal reports the developer's 15/10/10/65 schedule and that all deposits are bonded; non-refundable after five days",
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 171,
+    "payment_plan": "15% at signing, 10% at six months, 10% at one year, 65% at delivery",
+    "price_per_m2": null,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": true,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": null,
+    "escrow": "Review-Journal: deposits become non-refundable after five days and all deposits are bonded (developer statement reported by press; bond provider not named)",
+    "progress": "Resident (16 Oct 2026): North and South towers topped out 30 Jul 2026, glass installation underway, contractor Suffolk",
+    "plans": "Prices by bedroom count only; no floor plans on pages opened",
+    "record": "No completed projects named for Azure Resorts & Hotels or Luxus on pages opened",
+    "returns": "No return language"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Both towers topped out 30 Jul 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+    },
+    {
+     "claim": "148 of 171 units under contract, USD 950M sales",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+    },
+    {
+     "claim": "Completion early 2026 (original target)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822"
+    },
+    {
+     "claim": "Completion mid-2027",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+    },
+    {
+     "claim": "Project stays on schedule for Q4 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+    },
+    {
+     "claim": "USD 686M construction financing from J.P. Morgan, Sculptor and Morning Calm",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/?p=3582733"
+    },
+    {
+     "claim": "All buyer deposits are bonded",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822"
+    },
+    {
+     "claim": "Remaining homes from USD 5.15M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+    },
+    {
+     "claim": "General contractor Suffolk",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out"
+    },
+    {
+     "claim": "Building permit issued by City of Henderson",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Las Vegas, USA / Mexico",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024",
+    "handover_promised": "2027-Q4",
+    "original_handover": "2026-Q1",
+    "delay_months": 21.0,
+    "unit_types": [
+     "2BR",
+     "3BR",
+     "4BR",
+     "junior penthouse",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 5150000.0,
+    "price_max": 29000000.0,
+    "currency": "USD",
+    "deposit_pct": 15.0,
+    "payment_plan": "15/10/10/65",
+    "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "Four Seasons",
+    "amenities": [],
+    "lat": 36.005,
+    "lng": -115.04,
+    "permit_authority": "City of Henderson Building and Fire Safety; Nevada Real Estate Division (condominium sales)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Both towers topped out, reported with dates",
+    "Payment schedule and bonded deposits reported",
+    "Large construction loan from named lenders",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://resident.com/news/2026/10/16/four-seasons-private-residences-las-vegas-tops-out",
+    "https://www.reviewjournal.com/homes/real-estate-millions/1-3b-henderson-high-rise-condo-project-slated-to-open-in-late-2026-3054822",
+    "https://www.reviewjournal.com/?p=3582733",
+    "https://www.reviewjournal.com/?p=3209712"
+   ],
+   "verified_score": 1
+  },
+  {
+   "slug": "cello-tower-symphony-park-red-ridge",
+   "name": "Cello Tower",
+   "developer": "Red Ridge Development (Patrick Brennan)",
+   "area": "Symphony Park, Downtown Las Vegas",
+   "country": "USA",
+   "market": "Las Vegas",
+   "stage": "under construction",
+   "url": "https://www.nevadarealestategroup.com/las-vegas/cello-tower/",
+   "docs_url": "https://www.reviewjournal.com/?p=3364799",
+   "permit_number": null,
+   "docs_listed": [
+    "240 residences, 32 storeys, prices from about USD 700,000 to 4.5M+ (agent)",
+    "HOA USD 500 to 2,500 per month (agent)",
+    "groundbreaking Apr 2025, completion expected in 30 months (Review-Journal)",
+    "condition of 50% condo reservations for city land sale reported as met (Review-Journal)"
+   ],
+   "note": "32-storey, 240-condo tower on city-sold land in Symphony Park; ceremonial groundbreaking in Apr 2025 with completion expected about 30 months later, while an agent page now cites a 2028 target and a 2026 groundbreaking. No permit number, escrow terms, floor plans or delivered projects published (checked 31 Oct 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 700000,
+    "currency": "USD",
+    "title": "freehold (fee simple condominium)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 240,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": null,
+    "escrow": "Agent says pre-completion deposits 'may' be 10-20% held in escrow and to confirm with developer; no project terms",
+    "progress": "Review-Journal (29 Apr 2025): ceremonial groundbreaking held; no later milestone found",
+    "plans": "No floor plans",
+    "record": "No completed projects named for Red Ridge Development",
+    "returns": "Agent page carries investment commentary but no guaranteed or specific yield figure"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Ceremonial groundbreaking Apr 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/?p=3364799"
+    },
+    {
+     "claim": "Groundbreaking in 2026 (agent)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/?p=3364799"
+    },
+    {
+     "claim": "Completion about 30 months after Apr 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.reviewjournal.com/?p=3364799"
+    },
+    {
+     "claim": "Tower completion in 2027 (Review-Journal, Nov 2024)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.reviewjournal.com/?p=3209712"
+    },
+    {
+     "claim": "At least 50% of condos reserved, meeting city land-sale condition",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.reviewjournal.com/?p=3364799"
+    },
+    {
+     "claim": "Sales over USD 100M (Nov 2024)",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/?p=3209712"
+    },
+    {
+     "claim": "240 units, 32 storeys",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/?p=3209712"
+    },
+    {
+     "claim": "Prices from about USD 700,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.nevadarealestategroup.com/las-vegas/cello-tower/"
+    },
+    {
+     "claim": "Land bought from City of Las Vegas for nearly USD 12M",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://www.reviewjournal.com/?p=3364799"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Las Vegas, USA",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025-04",
+    "handover_promised": "2028",
+    "original_handover": "2027",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 700000.0,
+    "price_max": 9000000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+    "rental_programme": null,
+    "service_charge": "HOA USD 500 to 2,500 per month (agent)",
+    "brand": null,
+    "amenities": [
+     "7th-floor amenity level",
+     "ground-floor grocer (planned)"
+    ],
+    "lat": 36.168,
+    "lng": -115.153,
+    "permit_authority": "City of Las Vegas Building and Safety; Nevada Real Estate Division",
+    "brochure_url": null
+   },
+   "positives": [
+    "Groundbreaking and sales levels covered by local press",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.nevadarealestategroup.com/las-vegas/cello-tower/",
+    "https://www.reviewjournal.com/?p=3364799",
+    "https://www.reviewjournal.com/?p=3209712"
+   ],
+   "verified_score": 1
+  },
+  {
+   "slug": "st-regis-residences-houston-satya",
+   "name": "The St. Regis Residences, Houston",
+   "developer": "Satya (Sunny Bathija)",
+   "area": "River Oaks, Houston (102 Asbury St)",
+   "country": "USA",
+   "market": "Houston",
+   "stage": "off-plan",
+   "url": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston",
+   "docs_url": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston",
+   "permit_number": null,
+   "docs_listed": [
+    "90 residences in a 38-storey tower, from USD 3M",
+    "groundbreaking 6 May 2026, completion expected Q1 2029 (sales agent)",
+    "45% presold, all seven penthouses sold (sales agent)",
+    "USD 255M construction loan from International Bank of Commerce (The Real Deal, Jul 2025)",
+    "amenity list"
+   ],
+   "note": "38-storey, 90-residence St. Regis-branded tower on the edge of River Oaks; ground broken 6 May 2026 with completion now expected Q1 2029, versus a Q4 2027 target when the USD 255M IBC construction loan was reported in Jul 2025. No permit number, escrow terms, floor plans or delivered projects published (checked 31 Oct 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 3000000,
+    "currency": "USD",
+    "title": "freehold (fee simple condominium)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 90,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": null,
+    "escrow": null,
+    "progress": "Groundbreaking 6 May 2026 announced by sales agent Douglas Elliman; no later dated update",
+    "plans": "No floor plans on pages opened",
+    "record": "The Real Deal says the CEO has developed Houston condos for about ten years but names no projects",
+    "returns": "No return language"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "USD 255M construction loan from International Bank of Commerce",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+    },
+    {
+     "claim": "90 condos including 7 penthouses, 38 storeys",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+    },
+    {
+     "claim": "Original target: construction start Q4 2025 and completion Q4 2027 (later revised to May 2026 start, Q1 2029 completion)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+    },
+    {
+     "claim": "Groundbreaking 6 May 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+    },
+    {
+     "claim": "Completion Q1 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+    },
+    {
+     "claim": "45% presold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+    },
+    {
+     "claim": "About 15 units under contract (Jul 2025)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+    },
+    {
+     "claim": "Prices from USD 3M",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+    },
+    {
+     "claim": "Developer has delivered earlier Houston condos",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+    },
+    {
+     "claim": "City of Houston building permit issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Houston, USA",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2026-05",
+    "handover_promised": "2029-Q1",
+    "original_handover": "2027-Q4",
+    "delay_months": 15.0,
+    "unit_types": [
+     "residence",
+     "penthouse",
+     "crown duplex"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 3000000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "St. Regis (Marriott International)",
+    "amenities": [
+     "Astor dining room and cognac bar",
+     "resort pool with cabanas",
+     "spa and wellness center",
+     "fitness",
+     "butterfly garden",
+     "pet spa",
+     "owner's lounge",
+     "St. Regis Butler Service"
+    ],
+    "lat": 29.757,
+    "lng": -95.41,
+    "permit_authority": "City of Houston Permitting Center",
+    "brochure_url": null
+   },
+   "positives": [
+    "Construction loan and lender reported by independent press",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.elliman.com/insider/douglas-elliman-development-marketing-marks-major-construction-milestone-with-the-st-regis-residences-houston",
+    "https://therealdeal.com/texas/houston/2025/07/31/satya-lands-construction-loan-for-houston-st-regis-tower"
+   ],
+   "verified_score": 0
+  },
+  {
+   "slug": "gaia-residences-hollywood-alta",
+   "name": "Gaia Residences",
+   "developer": "Alta Developers (Alta Hollywood South, LLC)",
+   "area": "Downtown Hollywood, Broward County (401 N Federal Hwy)",
+   "country": "USA",
+   "market": "Fort Lauderdale",
+   "stage": "off-plan",
+   "url": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood",
+   "docs_url": "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html",
+   "permit_number": "DBPR condominium filing PR77962",
+   "docs_listed": [
+    "238 condos, studios to 3BR, 18 storeys (Florida YIMBY, Sep 2025)",
+    "prices from USD 400,000 to over USD 1M, average about USD 850 per sq ft (The Real Deal)",
+    "groundbreaking targeted 2026",
+    "Florida DBPR filing PR77962 'Gaia Residences South Condo' (Alta Hollywood South, LLC)",
+    "sales led by Fortune International Group"
+   ],
+   "note": "18-storey, 238-condo wellness-themed building in downtown Hollywood by Alta Developers, filed with Florida DBPR as Gaia Residences South Condo (PR77962). Sales launched Sep 2025 from USD 400,000 with a 2026 groundbreaking target that we could not confirm; the plan was cut from 466 units in two towers (checked 31 Oct 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 400000,
+    "currency": "USD",
+    "title": "freehold (fee simple condominium)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": "DBPR PR77962",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 238,
+    "payment_plan": null,
+    "price_per_m2": 9149,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Florida DBPR developer summary lists PR77962 'Gaia Residences South Condo, a condo within a portion of a building', developer Alta Hollywood South, LLC, Broward; no city building permit number published",
+    "escrow": "Not published; Florida 718.202 statutory escrow for deposits up to 10%",
+    "progress": "No construction start confirmed; developer targeted 2026 groundbreaking (The Real Deal, Sep 2025)",
+    "plans": "No floor plans on pages opened",
+    "record": "No completed projects named for Alta Developers",
+    "returns": "No return language"
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Condo filed with Florida DBPR (PR77962) by Alta Hollywood South, LLC",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+    },
+    {
+     "claim": "238 condos, 18 storeys",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html"
+    },
+    {
+     "claim": "Earlier plan of 466 units in two towers",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+    },
+    {
+     "claim": "Site bought for USD 23M in 2021",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+    },
+    {
+     "claim": "Construction to start in 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+    },
+    {
+     "claim": "Prices from USD 400,000, average USD 850 per sq ft",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+    },
+    {
+     "claim": "Building permit issued by City of Hollywood",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html"
+    },
+    {
+     "claim": "Developer has delivered earlier projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood"
+    },
+    {
+     "claim": "Deposits held in escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://m.flsenate.gov/Statutes/718.202"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Miami, USA",
+    "developer_company": "Alta Hollywood South, LLC (DBPR developer of record)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 400000.0,
+    "price_max": 1000000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "wellness-focused amenities",
+     "RH-curated common areas"
+    ],
+    "lat": 26.015,
+    "lng": -80.144,
+    "permit_authority": "City of Hollywood Building Division; Florida DBPR Division of Condominiums",
+    "brochure_url": null
+   },
+   "positives": [
+    "Condo filing confirmed in Florida DBPR registry",
+    "Entry prices and average price per sq ft published",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://therealdeal.com/miami/2025/09/15/alta-developers-launch-sales-for-gaia-residences-in-hollywood",
+    "https://floridayimby.com/2025/09/238-unit-gaia-residences-set-for-401-north-federal-highway-hollywood-florida.html",
+    "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+    "https://m.flsenate.gov/Statutes/718.202"
+   ],
+   "verified_score": 1
   }
  ]
 }
