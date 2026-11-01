@@ -58,8 +58,29 @@ Page text:
 {text}
 >>>"""
 
+UA = 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)'
+_ROBOTS = {}
+
+
+def allowed(url):
+    """Respect robots.txt: skip pages the site asks crawlers not to read."""
+    import urllib.robotparser, urllib.parse
+    u = urllib.parse.urlsplit(url); base = u.scheme + '://' + u.netloc
+    if base not in _ROBOTS:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            with urllib.request.urlopen(urllib.request.Request(base + '/robots.txt', headers={'User-Agent': UA}), timeout=15) as r:
+                rp.parse(r.read(200_000).decode('utf-8', 'replace').splitlines())
+        except Exception:
+            rp.parse([])   # no robots.txt or unreachable: nothing disallowed
+        _ROBOTS[base] = rp
+    return _ROBOTS[base].can_fetch('KolaboroResearchAgent', url)
+
+
 def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/research)'})
+    if not allowed(url):
+        raise RuntimeError('robots.txt disallows this page')
+    req = urllib.request.Request(url, headers={'User-Agent': UA})
     with urllib.request.urlopen(req, timeout=40) as r:
         raw = r.read(2_000_000).decode('utf-8', 'replace')
     raw = re.sub(r'(?is)<(script|style|noscript|svg)[^>]*>.*?</\1>', ' ', raw)
