@@ -1,0 +1,1693 @@
+[
+ {
+  "slug": "piyalepasa-istanbul-premium-polat",
+  "name": "Piyalepaşa İstanbul Premium",
+  "developer": "Piyalepaşa Gayrimenkul Geliştirme Yatırımı ve Ticaret A.Ş. (Polat Holding)",
+  "area": "Beyoğlu (Piyalepaşa Bulvarı)",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "url": "https://piyalepasa.com.tr/",
+  "docs_url": "https://polatgayrimenkul.com.tr/en/projects/piyalepasa-istanbul-premium",
+  "seed": {
+   "price": 581858,
+   "currency": "USD",
+   "title": "freehold (kat irtifakı title at sale, agent)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 88,
+   "progress_updates": true,
+   "developer_delivered": "Phase 1 Piyalepaşa İstanbul (760 apartments, 190 residences) handed over from 2018, reported by İmar Panosu; Polat lists other delivered projects (Polat Levent Exclusive, Duna Pearl, City Pearl)",
+   "units": 348,
+   "payment_plan": "50% down, balance over 24 months; 15% cash discount (agent)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: apartment sizes 73 to 129 m2, 1+1 and 2+1 convertible to 3+1",
+   "developer: amenities, project and sales office address",
+   "developer LinkedIn Aug 2026: 'final touches', handover approaching",
+   "agent (Emlak Platform, updated 31 Aug 2026): from USD 581,858, 88% complete, delivery 30 Dec 2026, citizenship eligible",
+   "portal (Konut Radar): 348 homes, 20 offices, 63 shops, Courtyard by Marriott 201 rooms and Residence Inn 128 rooms"
+  ],
+  "note": "Second phase of Polat's Beyoğlu urban-renewal scheme: 348 homes plus two Marriott-branded hotels, foundation laid 2 Aug 2023. Early handover targets were Nov to end 2025; an agent now lists 88% complete and delivery 30 Dec 2026, so the project is about a year late versus the first promise. No permit number or deposit protection published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No yapı ruhsatı number published on developer or portal pages",
+   "escrow": null,
+   "progress": "Agent Emlak Platform lists 88% completion (updated 31 Aug 2026); developer LinkedIn post (Aug 2026) says final touches under way; no dated % from developer",
+   "plans": "No floor plans published on developer pages; only size ranges",
+   "record": "Phase 1 delivered from 2018 (İmar Panosu report on first handovers, 220 units then 300 more); Polat project list",
+   "returns": "No rental guarantee or yield on developer pages"
+  },
+  "positives": [
+   "Phase 1 of the same scheme was delivered and is inhabited",
+   "Backed by Polat Holding, a long-established Turkish group",
+   "Hotel components branded by Marriott (Courtyard, Residence Inn) per Polat press release"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Foundation laid 2 August 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.konutradar.com/istanbul-piyalepasa-premium-proje-bilgileri/"
+   },
+   {
+    "claim": "More than half the homes sold at launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.polat.com/medya-merkezi-detay/piyalepasa-istanbul-premium-da"
+   },
+   {
+    "claim": "Handover by end 2025 / November 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/piyalepasa-premium"
+   },
+   {
+    "claim": "Delivery 30 December 2026, 88% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/piyalepasa-premium"
+   },
+   {
+    "claim": "348 homes, 20 offices, 63 commercial units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.konutradar.com/istanbul-piyalepasa-premium-proje-bilgileri/"
+   },
+   {
+    "claim": "Courtyard by Marriott (201 rooms) and Residence Inn by Marriott (128 rooms)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.polat.com/medya-merkezi-detay/piyalepasa-istanbul-premium-da"
+   },
+   {
+    "claim": "Phase 1 delivered from 2018",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imarpanosu.com/piyalepasa-istanbulda-yasam-basladi/"
+   },
+   {
+    "claim": "Neighbourhood-level LEED certification",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.polat.com/medya-merkezi-detay/piyalepasa-istanbul-premium-da"
+   },
+   {
+    "claim": "Prices from USD 581,858 (agent, 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/piyalepasa-premium"
+   },
+   {
+    "claim": "Eligible for Turkish citizenship by investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/piyalepasa-premium"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Piyalepaşa Gayrimenkul Geliştirme Yatırımı ve Ticaret A.Ş. (Polat Holding)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-08",
+   "handover_promised": "2026-Q4",
+   "original_handover": "2025-Q4",
+   "delay_months": 12,
+   "unit_types": [
+    "1+1",
+    "2+1"
+   ],
+   "size_min_m2": 73,
+   "size_max_m2": 129,
+   "price_min": 581858,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, 24 monthly instalments (agent)",
+   "foreign_ownership": "Freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Marriott hotel components (Courtyard, Residence Inn)",
+   "amenities": [
+    "open-air shopping street",
+    "indoor parking with EV charging",
+    "private storage",
+    "children's play areas",
+    "24/7 security",
+    "courtyard gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Beyoğlu Municipality / Ministry of Environment and Urbanisation (urban renewal)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://piyalepasa.com.tr/",
+   "https://polatgayrimenkul.com.tr/en/projects/piyalepasa-istanbul-premium",
+   "https://www.polat.com/medya-merkezi-detay/piyalepasa-istanbul-premium-da",
+   "https://www.konutradar.com/istanbul-piyalepasa-premium-proje-bilgileri/",
+   "https://www.emlakplatform.com.tr/tr/projects/piyalepasa-premium",
+   "https://imarpanosu.com/piyalepasa-istanbulda-yasam-basladi/",
+   "https://tr.linkedin.com/posts/piyalepasagayrimenkul_piyalepa%C5%9Faistanbulpremium-beyo%C4%9Flununkalbi-activity-7498740224928411649-ecPI"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1,
+  "status": "active"
+ },
+ {
+  "slug": "senfoni-etiler-emlak-konut-yigit-kubba-dbh",
+  "name": "Senfoni Etiler",
+  "developer": "Emlak Konut GYO (landowner, revenue sharing) with Yiğit Enerji İnşaat, KUBBA İnşaat and DBH Global İnşaat joint venture (contractor)",
+  "area": "Akat, Beşiktaş (Uğur Mumcu Caddesi)",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "url": "https://senfonietiler.com/tr",
+  "docs_url": "https://www.emlakkonut.com.tr/tr-TR/senfoni%CC%87-eti%CC%87ler",
+  "seed": {
+   "price": 910000,
+   "currency": "USD",
+   "title": "freehold (sale by contract until title issue, agent)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 30.6,
+   "progress_updates": true,
+   "developer_delivered": "Contractor Yiğit Group delivered Fortis İstanbul, Fortis Yeni Kadıköy and Acıbadem Konakları (EmlakNews); Emlak Konut GYO has delivered many revenue-sharing projects (listed REIT)",
+   "units": 215,
+   "payment_plan": "50% down with instalments; 20% cash discount at launch (EmlakNews, Mar 2025)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: floor plans 1+1, 2+1, 3+1, 6+1 duplex; site photos ('Şantiyeden Görseller'); e-catalogue",
+   "Emlak Konut page: 205 homes, 10 shops, 8 blocks on about 12,200 m2",
+   "Emlak Konut Q2 2026 activity report (KAP): physical completion 30.6%, finish 2028, 81 units sold, total sales revenue TRY 7.05bn",
+   "agent CCT (Oct 2026): developer USD list prices from 910,000, delivery July 2027",
+   "EmlakNews: building permits issued 31 Dec 2024, parcel Akat 18 ada 1 parsel"
+  ],
+  "note": "205-home low-rise scheme in Akat built by a Yiğit, Kubba and DBH joint venture on Emlak Konut land. Emlak Konut's own Q2 2026 stock-exchange report puts physical completion at 30.6% with completion in 2028, later than the July 2027 handover agents quote. Building permits reported issued 31 Dec 2024, but no number is published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "EmlakNews (Mar 2025) reports building permits issued 31 Dec 2024 for Akat 18 ada 1 parsel; no permit number published by developer",
+   "escrow": null,
+   "progress": "Emlak Konut GYO 2026 Q2 activity report (published on its investor relations site, filed with KAP) gives physical completion 30.6% and finish year 2028; developer site posts construction photos",
+   "plans": "Developer site publishes floor plans by type (1+1, 2+1, 3+1, 6+1 duplex)",
+   "record": "Emlak Konut GYO is a listed REIT with a delivered revenue-sharing portfolio; contractor Yiğit Group's completed projects named by EmlakNews",
+   "returns": "No guaranteed returns on developer pages; one agent shows an estimated 4% rental yield, not a guarantee"
+  },
+  "positives": [
+   "Land tendered by state-backed, BIST-listed Emlak Konut GYO, which reports % complete each quarter",
+   "Floor plans and site photos on the developer site",
+   "Low-rise, 205 units on a 12,200 m2 plot"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Contractor JV Yiğit, Kubba, DBH under Emlak Konut revenue sharing",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf"
+   },
+   {
+    "claim": "Building permits issued 31 Dec 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/senfoni-etilerde-metrekare-birim-fiyati-ortalama-8-000-dolar/"
+   },
+   {
+    "claim": "Construction under way, about 30.6% built (June 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf"
+   },
+   {
+    "claim": "Agent listing: 50% complete (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/senfoni-etiler"
+   },
+   {
+    "claim": "Handover July 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf"
+   },
+   {
+    "claim": "215 independent units (205 homes, 10 shops)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf"
+   },
+   {
+    "claim": "175 residences plus 10 shops (agent and 2025 press)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/tr-TR/senfoni%CC%87-eti%CC%87ler"
+   },
+   {
+    "claim": "Land about 12,200 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf"
+   },
+   {
+    "claim": "Total sales revenue TRY 7.05bn, Emlak Konut share 40%",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf"
+   },
+   {
+    "claim": "Prices from USD 910,000 for 1+1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cctinvestments.com/property/senfoni-etiler/"
+   },
+   {
+    "claim": "Contractor Yiğit Group delivered Fortis İstanbul and Acıbadem Konakları",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/senfoni-etilerde-metrekare-birim-fiyati-ortalama-8-000-dolar/"
+   },
+   {
+    "claim": "Eligible for Turkish citizenship by investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/senfoni-etiler"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1953,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.; contractor Yiğit Enerji İnşaat - KUBBA İnşaat - DBH Global İnşaat İş Ortaklığı",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emlak Konut GYO listed on Borsa Istanbul (EKGYO), quarterly reports on KAP",
+   "construction_start": "2025",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2027-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "2+1 duplex",
+    "3+1",
+    "4+1",
+    "5+1",
+    "5+1 duplex",
+    "6+1 duplex"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": 620,
+   "price_min": 910000,
+   "price_max": 6964000,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, instalments; cash discount",
+   "foreign_ownership": "Freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two social clubs",
+    "indoor pools",
+    "fitness",
+    "sauna and steam",
+    "pilates",
+    "cafe",
+    "storage units",
+    "walking areas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Beşiktaş Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://senfonietiler.com/tr",
+   "https://www.emlakkonut.com.tr/tr-TR/senfoni%CC%87-eti%CC%87ler",
+   "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/EKGYO_2026_2C_Faaliyet_Raporu.pdf",
+   "https://www.emlaknews.com.tr/haberler/senfoni-etilerde-metrekare-birim-fiyati-ortalama-8-000-dolar/",
+   "https://www.cctinvestments.com/property/senfoni-etiler/",
+   "https://www.emlakplatform.com.tr/tr/projects/senfoni-etiler",
+   "https://nli.com.tr/istanbul-apartments-for-sale/senfoni-etiler/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 3,
+  "status": "active"
+ },
+ {
+  "slug": "bvlgari-mansions-bodrum-ahen",
+  "name": "Bvlgari Resort & Mansions Bodrum",
+  "developer": "AHEN (founded by Mehmet Cengiz, Cengiz Holding); construction by Cengiz İnşaat Sanayi ve Ticaret A.Ş.",
+  "area": "Cennet Koyu, Gökburun, Göltürkbükü",
+  "country": "Turkey",
+  "market": "Bodrum",
+  "stage": "under construction",
+  "url": "https://www.bulgarimansionsbodrum.com/",
+  "docs_url": "https://www.bulgarimansionsbodrum.com/mansions",
+  "seed": {
+   "price": 20000000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 101,
+   "payment_plan": "Staged payments tied to construction milestones, final tranche at handover (agent)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: 101 mansions on a 68 ha estate, four types (3BR 850 m2 to 6BR 2,800 m2)",
+   "developer site: team page naming AHEN and Cengiz Holding",
+   "Il Sole 24 Ore: resort opening spring 2027, prices EUR 20m to 60m",
+   "agent: freehold, staged payment plan, pricing on application"
+  ],
+  "note": "101 Bvlgari-branded mansions around a Bvlgari resort on a 68 ha peninsula at Cennet Koyu, developed by AHEN of Cengiz Holding; Il Sole 24 Ore reports opening in spring 2027 and prices from EUR 20m. The site's privatisation was annulled twice by the Council of State, Bodrum municipality cancelled 60 building permits in 2023 before a court suspended that cancellation, and the Culture and Tourism Ministry reportedly sought demolition of unpermitted coastal works in 2025. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No permit number published. T24 reports Bodrum Municipality issued building permits on 12 Dec 2022/2023 and later cancelled 60 permits; Muğla administrative court suspended the cancellation (Arkeolojik Haber, Mar 2023)",
+   "escrow": null,
+   "progress": "No % or dated construction update from developer; the developer told press in July 2025 the breakwater was nearly complete",
+   "plans": "Developer lists four mansion types with bedrooms and sizes but no floor plans",
+   "record": "AHEN has no named delivered residential project on its site; parent Cengiz Holding is a large construction group but no delivered residences are cited",
+   "returns": "No guaranteed return or yield published"
+  },
+  "positives": [
+   "Bvlgari brand and Bvlgari Hotels & Resorts operation confirmed by independent press",
+   "Backed by Cengiz Holding, one of Turkey's largest construction groups",
+   "Freehold title in personal name"
+  ],
+  "flags": [
+   {
+    "text": "T24 reports the Council of State twice annulled the privatisation of the Cennet Koyu land and that, per a court ruling, title still shows Cengiz because the Treasury did not act on the annulment.",
+    "source": "https://t24.com.tr/cevre/danistay-iptalleri-cumhurbaskanligi-karari-ve-tartismali-ced-raporlari-cennet-koyu-15-yilda-nasil-kamu-arazisinden-luks-otele-donustu,1324530"
+   },
+   {
+    "text": "Bodrum Municipality cancelled the project's building permits in January 2023; Muğla administrative court then suspended the cancellation in favour of Cengiz Holding.",
+    "source": "https://www.arkeolojikhaber.com/haber-bolge-idare-mahkemesi-cennet-koyunda-insaat-ruhsatini-iptalini-iptal-etti-36624/"
+   },
+   {
+    "text": "Local press reported in July 2025 that the Culture and Tourism Ministry asked for demolition of two coastal structures not in the approved project; the company said the breakwater was permitted.",
+    "source": "https://www.bodrumdabirgun.com/bakanliktan-cengiz-insaat-ve-bvlgariye-kotu-haber.html"
+   }
+  ],
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "101 Bvlgari-branded mansions",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.ilsole24ore.com/art/with-mansions-bodrum-bulgari-relaunches-super-luxury-real-estate-AH7XQHkB"
+   },
+   {
+    "claim": "Developed by AHEN, founded by Cengiz Holding chairman Mehmet Cengiz",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.ilsole24ore.com/art/with-mansions-bodrum-bulgari-relaunches-super-luxury-real-estate-AH7XQHkB"
+   },
+   {
+    "claim": "Resort opens in 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.ilsole24ore.com/art/with-mansions-bodrum-bulgari-relaunches-super-luxury-real-estate-AH7XQHkB"
+   },
+   {
+    "claim": "Prices EUR 20m to 60m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.ilsole24ore.com/art/with-mansions-bodrum-bulgari-relaunches-super-luxury-real-estate-AH7XQHkB"
+   },
+   {
+    "claim": "Building permits valid",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.arkeolojikhaber.com/haber-bolge-idare-mahkemesi-cennet-koyunda-insaat-ruhsatini-iptalini-iptal-etti-36624/"
+   },
+   {
+    "claim": "Land lawfully privatised to Cengiz",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://t24.com.tr/cevre/danistay-iptalleri-cumhurbaskanligi-karari-ve-tartismali-ced-raporlari-cennet-koyu-15-yilda-nasil-kamu-arazisinden-luks-otele-donustu,1324530"
+   },
+   {
+    "claim": "'EIA not required' decision for capacity increase (13 May 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://t24.com.tr/cevre/danistay-iptalleri-cumhurbaskanligi-karari-ve-tartismali-ced-raporlari-cennet-koyu-15-yilda-nasil-kamu-arazisinden-luks-otele-donustu,1324530"
+   },
+   {
+    "claim": "Coastal works comply with regulations",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.bodrumdabirgun.com/bakanliktan-cengiz-insaat-ve-bvlgariye-kotu-haber.html"
+   },
+   {
+    "claim": "68 hectare estate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bulgarimansionsbodrum.com/mansions"
+   },
+   {
+    "claim": "Mansions from 850 m2 (3BR) to 2,800 m2 (6BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bulgarimansionsbodrum.com/mansions"
+   },
+   {
+    "claim": "Freehold, eligible for citizenship by investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://trupropertyturkey.com/bvlgari-resort-mansions-bodrum/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "AHEN; land and construction by Cengiz İnşaat Sanayi ve Ticaret A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022-12",
+   "handover_promised": "2027",
+   "original_handover": "2026",
+   "delay_months": null,
+   "unit_types": [
+    "3BR mansion",
+    "4BR mansion",
+    "5BR mansion",
+    "6BR mansion"
+   ],
+   "size_min_m2": 850,
+   "size_max_m2": 2800,
+   "price_min": 20000000,
+   "price_max": 60000000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "Milestone-linked staged payments (agent)",
+   "foreign_ownership": "Freehold title deed in personal name",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Bvlgari Hotels & Resorts",
+   "amenities": [
+    "Bvlgari resort restaurants",
+    "2,200 m2 spa",
+    "two beach clubs",
+    "private pier",
+    "amphitheatre",
+    "electric mobility inside estate"
+   ],
+   "lat": 37.13,
+   "lng": 27.36,
+   "permit_authority": "Bodrum Municipality (building permits); Ministry of Environment (EIA)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.bulgarimansionsbodrum.com/",
+   "https://www.bulgarimansionsbodrum.com/mansions",
+   "https://www.bulgarimansionsbodrum.com/team",
+   "https://en.ilsole24ore.com/art/with-mansions-bodrum-bulgari-relaunches-super-luxury-real-estate-AH7XQHkB",
+   "https://t24.com.tr/cevre/danistay-iptalleri-cumhurbaskanligi-karari-ve-tartismali-ced-raporlari-cennet-koyu-15-yilda-nasil-kamu-arazisinden-luks-otele-donustu,1324530",
+   "https://www.arkeolojikhaber.com/haber-bolge-idare-mahkemesi-cennet-koyunda-insaat-ruhsatini-iptalini-iptal-etti-36624/",
+   "https://www.bodrumdabirgun.com/bakanliktan-cengiz-insaat-ve-bvlgariye-kotu-haber.html",
+   "https://trupropertyturkey.com/bvlgari-resort-mansions-bodrum/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ },
+ {
+  "slug": "le-marin-konyaalti-tunc-yaprak",
+  "name": "Le Marin Konyaaltı",
+  "developer": "Tunç Group İnşaat with Yaprak Group İnşaat",
+  "area": "Liman, Konyaaltı (Akdeniz Bulvarı)",
+  "country": "Turkey",
+  "market": "Antalya",
+  "stage": "off-plan",
+  "url": "https://lemarinkonyaalti.com/en",
+  "docs_url": "https://lemarinkonyaalti.com/en",
+  "seed": {
+   "price": null,
+   "currency": "TRY",
+   "title": "freehold (tapu)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Tunç Group (founded 1998, Antalya) says it has 33 ongoing and delivered projects and lists them by name (Tunç Residence, Tunç Port, Arya Park, Tunç Homes 11 and 12, etc.); statement is the developer's own",
+   "units": 16,
+   "payment_plan": "Cash or instalments over the construction period, tailored per unit (no figures published)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: unit picker with floor plans (2+1 east and west, 3+1 duplex east and west)",
+   "developer site: 16 residences and 4 shops in total, 8 residences and 2 shops for sale",
+   "developer site: 2+1 80 m2 gross / 61 m2 net, 3+1 duplex 141 m2 gross / 115 m2 net",
+   "developer site: handover within 2027, map coordinates, specification list",
+   "no prices, no permit, no construction stage published"
+  ],
+  "note": "Boutique 16-unit building about 350 m from Konyaaltı beach by two local Antalya builders, with 8 apartments and 2 shops on sale and handover promised within 2027. Floor plans are published but prices, permit number, construction stage and deposit protection are not. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No permit or licence number published",
+   "escrow": null,
+   "progress": "Site says to ask the sales team for the current construction stage; nothing published",
+   "plans": "Interactive floor plans for each unit type on the project site",
+   "record": "Tunç Group site lists 33 ongoing and delivered projects by name; not independently confirmed",
+   "returns": "No guaranteed return; FAQ mentions appreciation and rental yield in general terms only"
+  },
+  "positives": [
+   "Floor plans and exact unit sizes (gross and net) published",
+   "Very small building, both partner companies named with contact emails",
+   "Exact location coordinates published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "16 residences and 4 shops, 8 residences and 2 shops for sale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lemarinkonyaalti.com/en"
+   },
+   {
+    "claim": "About 350 m to Konyaaltı beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lemarinkonyaalti.com/en"
+   },
+   {
+    "claim": "Handover within 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lemarinkonyaalti.com/en"
+   },
+   {
+    "claim": "Developed by Tunç Group and Yaprak Group İnşaat",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tuncgroup.com.tr"
+   },
+   {
+    "claim": "Tunç Group founded 1998 in Antalya",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tuncgroup.com.tr"
+   },
+   {
+    "claim": "Tunç Group has 33 ongoing and delivered projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tuncgroup.com.tr"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lemarinkonyaalti.com/en"
+   },
+   {
+    "claim": "Units can be sold to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lemarinkonyaalti.com/en"
+   },
+   {
+    "claim": "Open-air pool, generator, smart home as standard",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lemarinkonyaalti.com/en"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1998,
+   "developer_hq": "Aksu, Antalya, Turkey",
+   "developer_company": "Tunç Group İnşaat (Altıntaş Mah. Akkavak Cd. No:5B/4, Aksu) and Yaprak Group İnşaat",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2+1",
+    "3+1 duplex",
+    "shop"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 141,
+   "price_min": null,
+   "price_max": null,
+   "currency": "TRY",
+   "deposit_pct": null,
+   "payment_plan": "Instalments over construction, on request",
+   "foreign_ownership": "Freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "open-air pool",
+    "elevator",
+    "generator",
+    "CCTV",
+    "smart home",
+    "underfloor heating"
+   ],
+   "lat": 36.848,
+   "lng": 30.614,
+   "permit_authority": "Konyaaltı Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://lemarinkonyaalti.com/en",
+   "https://www.tuncgroup.com.tr"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ },
+ {
+  "slug": "oasis-sumba-pma-oasis-holding",
+  "name": "Oasis Sumba",
+  "developer": "PMA Oasis Holding (founders Nicholas Bassi, Riccardo Monti, Alberto Bassi)",
+  "area": "Rua Beach, Southwest/West Sumba",
+  "country": "Indonesia",
+  "market": "Sumba",
+  "stage": "off-plan",
+  "url": "https://oasissumba.com/",
+  "docs_url": "https://oasissumba.com/investment/",
+  "seed": {
+   "price": 200000,
+   "currency": "USD",
+   "title": "leasehold (80-year lease contract, or shares in the holding company plus lease)",
+   "lease_base": 80,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 21,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 50,
+   "payment_plan": "Instalments based on construction progress (no percentages published)",
+   "price_per_m2": 1325
+  },
+  "docs_listed": [
+   "developer: 1BR 151 m2 on ~500 m2 plot from USD 200,000; 2BR 309 m2 from USD 345,000; 3BR 468 m2 from USD 475,000",
+   "developer: 'ROI up to 21%', resale profit estimate +20% to +30% at completion",
+   "developer: 'earn guaranteed passive income from rentals' on investment page, while a disclaimer says projections are not a guarantee",
+   "developer: 80-year contract, completion Q2 2027, milestone timeline without dates",
+   "developer FAQ: 39 villas on 40,000 m2 (home page says 50 villas on 67,000 m2)"
+  ],
+  "note": "Italian-founded villa resort on a hill above Rua Beach in West Sumba, sold to foreigners on an 80-year lease or via shares in the holding company, with completion promised for Q2 2027. The site advertises ROI up to 21% and 'guaranteed passive income', and its own pages disagree on size (50 villas on 6.7 ha versus 39 villas on 4 ha). No permit, construction progress or track record in Indonesia is published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No PBG or other permit number published",
+   "escrow": null,
+   "progress": "Investment page shows a stage timeline (land acquisition, design, sales, construction, delivery) with no dates or photos",
+   "plans": "Villa sizes and plot sizes published, no floor plans found",
+   "record": "About page claims 20 years of construction in Italy without naming any delivered project in Indonesia",
+   "returns": "Investment page says owners 'earn guaranteed passive income from rentals'; ROI up to 21% shown on every villa type"
+  },
+  "positives": [
+   "Prices and built areas per villa type published",
+   "Founders named on the site"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "50 villas on more than 67,000 m2",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://oasissumba.com/faq/"
+   },
+   {
+    "claim": "Completion Q2 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/investment/"
+   },
+   {
+    "claim": "Guaranteed passive income from rentals",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://oasissumba.com/investment/"
+   },
+   {
+    "claim": "ROI up to 21%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/"
+   },
+   {
+    "claim": "Resale at completion with +20% to +30% profit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/investment/"
+   },
+   {
+    "claim": "80-year leasehold for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/investment/"
+   },
+   {
+    "claim": "Buying shares in the holding company avoids additional taxes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/investment/"
+   },
+   {
+    "claim": "Site owned by company 'PMA Oasis Holding'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/privacy-policy-and-terms-of-use/"
+   },
+   {
+    "claim": "Team has 20 years of construction experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/about-us/"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasissumba.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sumba, Indonesia",
+   "developer_company": "PMA Oasis Holding (as named in site privacy policy; no registration number published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 151,
+   "size_max_m2": 468,
+   "price_min": 200000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Instalments tied to construction progress",
+   "foreign_ownership": "80-year lease contract, or share purchase in the holding company together with the lease; foreigners cannot hold freehold land",
+   "rental_programme": "Developer-managed rental; 'ROI up to 21%'",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beach club",
+    "restaurant and bar",
+    "gym",
+    "spa",
+    "padel court",
+    "yoga structure",
+    "co-working",
+    "minimarket"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Southwest/West Sumba Regency (PBG via OSS)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://oasissumba.com/",
+   "https://oasissumba.com/investment/",
+   "https://oasissumba.com/about-us/",
+   "https://oasissumba.com/faq/",
+   "https://oasissumba.com/privacy-policy-and-terms-of-use/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ },
+ {
+  "slug": "noah-sumba-anta-group",
+  "name": "NOAH Sumba",
+  "developer": "ANTA Group (PT Anta Group Development)",
+  "area": "West Sumba (Sumba Barat)",
+  "country": "Indonesia",
+  "market": "Sumba",
+  "stage": "off-plan",
+  "url": "https://noahsumba.com/",
+  "docs_url": "https://antagroup.info/en/proejcts/noah/",
+  "seed": {
+   "price": 105000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": "developer says up to 80 years with extension option; the same page's agreement section describes a 51-year land lease (26 + guaranteed 25)",
+   "guaranteed_language": true,
+   "yield_pct": 12,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 30,
+   "payment_plan": "USD 2,000 reservation, USD 100,000 down payment (as shown), staged payments at 3, 9, 15, 21 and 24 months; 0% developer instalments over 24 months",
+   "price_per_m2": 2333
+  },
+  "docs_listed": [
+   "developer: four layouts with areas and prices (Tropical Suite 45 m2 from USD 105,000 to Ocean Luxe 100 m2 from USD 345,000)",
+   "developer: timeline Q4 2026 to Q1 2027 permits and start of construction, opening Q3 to Q4 2028",
+   "developer: 'Guarantee profitability: rental yield up to 12% per annum'",
+   "developer: negotiating with Radisson as operator (not signed for NOAH)",
+   "noahsumba.com: 34 one-bedroom villas of 110 m2, land with 'full freehold ownership rights'",
+   "agent Impala (Dubai): 'under construction', 27 of 30 unsold, handover Q4 2028"
+  ],
+  "note": "Eco tent-villa resort on 14 ha in West Sumba by ANTA Group, a Ukrainian-founded developer that is building Radisson- and Wyndham-branded aparthotels in Bali. Its own timeline shows permits and construction start only in Q4 2026 to Q1 2027, yet it advertises a guaranteed yield of up to 12%, and its sites disagree on villa count (30, 34 or 20), tenure (80-year lease, 51-year lease, or freehold) and unit sizes. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer timeline lists 'obtaining permits' for Q4 2026 to Q1 2027; no permit number published",
+   "escrow": null,
+   "progress": "No progress published for NOAH (quarterly reports exist only for the Canggu hotel); an agent's 'under construction' label conflicts with the developer timeline",
+   "plans": "Developer publishes four layouts with areas; noahsumba.com offers floor plans on request",
+   "record": "Developer claims 400+ units sold and 10+ completed projects but names no completed project; its Bali hotels open in 2027",
+   "returns": "Developer page: 'Guarantee profitability - rental yield up to 12% per annum'"
+  },
+  "positives": [
+   "Indonesian legal entity named (PT Anta Group Development)",
+   "Prices and unit areas published per layout",
+   "Group's Radisson deal for a separate Bali project confirmed by Radisson Hotel Group"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Guaranteed rental yield up to 12% a year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antagroup.info/en/proejcts/noah/"
+   },
+   {
+    "claim": "Leasehold up to 80 years with extension",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://antagroup.info/en/proejcts/noah/"
+   },
+   {
+    "claim": "Land with full freehold ownership rights",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://noahsumba.com/"
+   },
+   {
+    "claim": "30 villas",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://noahsumba.com/"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://impalarealestate.com/projects/noah-at-sumba/"
+   },
+   {
+    "claim": "Opening Q3 to Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antagroup.info/en/bali/"
+   },
+   {
+    "claim": "Radisson to manage NOAH",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antagroup.info/en/proejcts/noah/"
+   },
+   {
+    "claim": "ANTA's Canggu aparthotel signed with Radisson Individuals, opening 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.prnewswire.com/apac/news-releases/radisson-hotel-group-accelerates-growth-in-indonesia-with-anta-hotel-bali-canggu-a-member-of-radisson-individuals-302636834.html"
+   },
+   {
+    "claim": "ANTA has completed 10+ projects and sold 400+ units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antagroup.info/en/"
+   },
+   {
+    "claim": "Site area 14 ha",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antagroup.info/en/proejcts/noah/"
+   },
+   {
+    "claim": "Prices from USD 105,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antagroup.info/en/proejcts/noah/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia (founder from Ukraine)",
+   "developer_company": "PT Anta Group Development (no registration number published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "Tropical Suite",
+    "Sky Superior",
+    "Jungle Lounge",
+    "Ocean Luxe"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 100,
+   "price_min": 105000,
+   "price_max": 345000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Reservation USD 2,000; staged payments over 24 months, 0% instalments",
+   "foreign_ownership": "Leasehold via land lease held by PT Anta Group Development (term stated variously as 51 or 80 years); one site claims freehold, which foreigners cannot hold",
+   "rental_programme": "Developer-controlled rental with 'guaranteed' yield up to 12%; hotel brand under negotiation",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private beach",
+    "cliff infinity pool",
+    "restaurant",
+    "spa",
+    "sports centre and mini golf",
+    "solar and wind power",
+    "eco farm",
+    "helipad"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "West Sumba Regency (PBG via OSS)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://antagroup.info/en/proejcts/noah/",
+   "https://noahsumba.com/",
+   "https://antagroup.info/en/",
+   "https://antagroup.info/en/bali/",
+   "https://impalarealestate.com/projects/noah-at-sumba/",
+   "https://bali.mayakglobal.com/new-projects/project/ma-ofpj-956",
+   "https://www.prnewswire.com/apac/news-releases/radisson-hotel-group-accelerates-growth-in-indonesia-with-anta-hotel-bali-canggu-a-member-of-radisson-individuals-302636834.html"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ },
+ {
+  "slug": "two-senopati-asiana-group",
+  "name": "Two Senopati (Tower 1)",
+  "developer": "Asiana Group",
+  "area": "Jl. Senopati Dalam II, Kebayoran Baru (SCBD)",
+  "country": "Indonesia",
+  "market": "Jakarta",
+  "stage": "under construction",
+  "url": "https://twosenopati.co.id/",
+  "docs_url": "https://twosenopati.co.id/",
+  "seed": {
+   "price": 4800000000,
+   "currency": "IDR",
+   "title": "strata title (foreigners eligible for Hak Pakai strata units above the Jakarta minimum price; not stated by developer)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Asiana Group delivered Senopati Suites (referred to by Kompas as its earlier project of the same specification)",
+   "units": 100,
+   "payment_plan": "Staged cash payments (buyers paid by instalment cash, none by mortgage, per Bisnis.com 2023)",
+   "price_per_m2": 58536585
+  },
+  "docs_listed": [
+   "developer site: 100 residences between SCBD and Senopati, project team (Woods Bagot, PDW, Wiratman), 360-degree tour, video",
+   "Kompas 2022 via Asiana press page: first tower 37 floors, 112 units, from IDR 4.8bn for 82 m2, 'all permits ready'",
+   "Bisnis.com Aug 2023: construction started end June 2023, 100 units over 32 floors, handover target March 2026, 65% sold",
+   "Knight Frank KF Map: under construction, completion 2027; Colliers Q1 2026: completion 2027"
+  ],
+  "note": "100-unit luxury tower beside SCBD by Asiana Group; construction began in June 2023 with handover promised for March 2026, but Knight Frank and Colliers now list completion in 2027. The English-language site publishes no price, plans, permit number, progress or deposit protection. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer told Kompas (Dec 2022) all permits were ready; no PBG number published",
+   "escrow": null,
+   "progress": "No % or dated updates on the developer site; Bisnis.com reported construction start June 2023; KF Map lists it as under construction",
+   "plans": "No floor plans on the site (360 tour only)",
+   "record": "Kompas article reproduced by Asiana mentions its earlier Senopati Suites project of the same specification",
+   "returns": "No rental guarantee or yield published"
+  },
+  "positives": [
+   "Construction start and sales level reported by independent press (Bisnis.com)",
+   "Named international architect and engineering team",
+   "Small project, 100 units"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started end of June 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ekonomi.bisnis.com/read/20230802/47/1680709/asiana-group-bangun-apartemen-di-scbd-65-sudah-laku-terjual"
+   },
+   {
+    "claim": "Handover March 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://marcom.colliers365.com/download/files/Q1-2026-ColliersQuarterly-Jakarta-Apartment.pdf"
+   },
+   {
+    "claim": "Completion 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kfmap.asia/apartment/two-senopati-tower-1-19132"
+   },
+   {
+    "claim": "100 units in Tower 1",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kfmap.asia/apartment/two-senopati-tower-1-19132"
+   },
+   {
+    "claim": "112 units over 37 floors (2022 statement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ekonomi.bisnis.com/read/20230802/47/1680709/asiana-group-bangun-apartemen-di-scbd-65-sudah-laku-terjual"
+   },
+   {
+    "claim": "65% sold within two months of 2023 launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ekonomi.bisnis.com/read/20230802/47/1680709/asiana-group-bangun-apartemen-di-scbd-65-sudah-laku-terjual"
+   },
+   {
+    "claim": "All permits ready",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://www.asiana-group.com/press-1/2023/6/13/two-senopati-siap-dibangun-pertengahan-2023"
+   },
+   {
+    "claim": "Prices from IDR 4.8bn for 82 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://www.asiana-group.com/press-1/2023/6/13/two-senopati-siap-dibangun-pertengahan-2023"
+   },
+   {
+    "claim": "Strata-title scheme",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kfmap.asia/apartment/two-senopati-tower-1-19132"
+   },
+   {
+    "claim": "Architect Woods Bagot",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://twosenopati.co.id/"
+   },
+   {
+    "claim": "GlobalData expects completion Q4 2028 for the two-tower scheme",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.worldconstructionnetwork.com/data-insights/construction-twosenopati-residential-complex/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jakarta, Indonesia",
+   "developer_company": "Asiana Group (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-06",
+   "handover_promised": "2027",
+   "original_handover": "2026-Q1",
+   "delay_months": 12,
+   "unit_types": [
+    "apartment from 82 m2"
+   ],
+   "size_min_m2": 82,
+   "size_max_m2": null,
+   "price_min": 4800000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": "Staged cash instalments",
+   "foreign_ownership": "Strata unit under Hak Pakai for foreigners where price exceeds the regional minimum (law, not stated by developer)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "co-working space"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DKI Jakarta (PBG via DPMPTSP)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://twosenopati.co.id/",
+   "https://ekonomi.bisnis.com/read/20230802/47/1680709/asiana-group-bangun-apartemen-di-scbd-65-sudah-laku-terjual",
+   "http://www.asiana-group.com/press-1/2023/8/3/asiana-group-bangun-apartemen-di-scbd-65-sudah-laku-terjual",
+   "http://www.asiana-group.com/press-1/2023/6/13/two-senopati-siap-dibangun-pertengahan-2023",
+   "https://kfmap.asia/apartment/two-senopati-tower-1-19132",
+   "https://marcom.colliers365.com/download/files/Q1-2026-ColliersQuarterly-Jakarta-Apartment.pdf",
+   "https://www.worldconstructionnetwork.com/data-insights/construction-twosenopati-residential-complex/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 2,
+  "status": "active"
+ },
+ {
+  "slug": "celere-blossom-hills-via-celere",
+  "name": "Célere Blossom Hills",
+  "developer": "Vía Célere",
+  "area": "Calle Menta, Benalmádena",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "url": "https://www.viacelere.com/promocion/blossom-hills/",
+  "docs_url": "https://www.viacelere.com/promocion/blossom-hills/",
+  "seed": {
+   "price": 338900,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 35,
+   "progress_updates": true,
+   "developer_delivered": "Vía Célere states it has delivered more than 10,000 homes (2,270 in 2024); its blog lists Célere Acqua Gardens in Estepona (95 homes) as finished",
+   "units": 70,
+   "payment_plan": null,
+   "price_per_m2": 3808
+  },
+  "docs_listed": [
+   "developer: price list by unit (from EUR 338,900 for 2-bed 89 m2 ground floor to EUR 570,400 for 3-bed penthouse), prices include storage and two parking spaces",
+   "developer: 'Ver plano' unit plans (PDF sheets dated Aug 2024 with useful and built areas)",
+   "developer: brochure, building specification (memoria de calidades), location plan",
+   "developer: 'Avance de la obra 35%', 'Obras iniciadas'",
+   "brochure: energy rating AA"
+  ],
+  "note": "70-home gated scheme in Benalmádena by Madrid developer Vía Célere (majority owned by Värde Partners), now shown at 35% built, with plans and a full price list published. No licence number, completion date or deposit guarantee details appear on the page or in the downloadable documents. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No licence number on the page, brochure or specification; specification says it may change due to licence requirements",
+   "escrow": null,
+   "progress": "Developer page shows 'Avance de la obra 35%' (26% earlier in 2026 per search snapshot) and 'Obras iniciadas'",
+   "plans": "Unit plan PDFs per typology with surfaces, linked from the page",
+   "record": "Developer and Marbella Live profile: 10,000+ homes delivered; Acqua Gardens Estepona finished per developer blog",
+   "returns": "No yields or guarantees advertised"
+  },
+  "positives": [
+   "Full price list including parking and storage",
+   "Unit plans with useful and built areas",
+   "Percentage progress shown on the project page",
+   "Large national developer with institutional owners"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "70 homes of 2 and 3 bedrooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viacelere.com/promocion/blossom-hills/"
+   },
+   {
+    "claim": "Construction 35% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viacelere.com/promocion/blossom-hills/"
+   },
+   {
+    "claim": "Prices from EUR 338,900 including storage and two parking spaces",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viacelere.com/promocion/blossom-hills/"
+   },
+   {
+    "claim": "Energy rating AA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viacelere.com/wp-content/uploads/2025/09/Dossier-BlossomHills.pdf"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viacelere.com/wp-content/uploads/2025/10/BAJA_memoriaBlossomHills-295x220_20251001-1-1.pdf"
+   },
+   {
+    "claim": "Vía Célere has delivered 10,000+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marbella.live/developers/via-celere"
+   },
+   {
+    "claim": "Majority owned by Värde Partners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marbella.live/developers/via-celere"
+   },
+   {
+    "claim": "Sales office at Calle Menta registered with Junta de Andalucía consumer register as a promoter office (Blossom II)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ws231.juntadeandalucia.es/hoja/empresas/listadoAllEstaAlta.do;jsessionid=D0DCAE9E28A2F78A4F66C366FF6123D2?6578706f7274=1&d-16544-e=5&d-16544-o=2&d-16544-p=1&d-16544-s=0&reclAccion=listadoEsta&reclCodigo=5328"
+   },
+   {
+    "claim": "Deposits guaranteed under Spanish law",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viacelere.com/promocion/blossom-hills/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Vía Célere (legal entity not published on project page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 10000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse with solarium"
+   ],
+   "size_min_m2": 87,
+   "size_max_m2": 110,
+   "price_min": 338900,
+   "price_max": 570400,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "chill-out area",
+    "gym with sauna",
+    "gated complex",
+    "two parking spaces and storage per home"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Benalmádena (licencia de obras)",
+   "brochure_url": "https://www.viacelere.com/wp-content/uploads/2025/09/Dossier-BlossomHills.pdf"
+  },
+  "sources": [
+   "https://www.viacelere.com/promocion/blossom-hills/",
+   "https://www.viacelere.com/wp-content/uploads/2025/09/Dossier-BlossomHills.pdf",
+   "https://www.viacelere.com/wp-content/uploads/2025/10/BAJA_memoriaBlossomHills-295x220_20251001-1-1.pdf",
+   "https://www.viacelere.com/blog/vivir-en-la-costa-del-sol/",
+   "https://marbella.live/developers/via-celere",
+   "https://ws231.juntadeandalucia.es/hoja/empresas/listadoAllEstaAlta.do;jsessionid=D0DCAE9E28A2F78A4F66C366FF6123D2?6578706f7274=1&d-16544-e=5&d-16544-o=2&d-16544-p=1&d-16544-s=0&reclAccion=listadoEsta&reclCodigo=5328"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ },
+ {
+  "slug": "ocean-hills-los-cristianos-esferica-inversiones",
+  "name": "Ocean Hills",
+  "developer": "Esférica Inversiones SICC S.A. (vehicle of Atalaya Invest, A Coruña)",
+  "area": "Avenida San Francisco, Los Cristianos, Arona (Tenerife)",
+  "country": "Spain",
+  "market": "Canary Islands",
+  "stage": "off-plan",
+  "url": "https://oceanhillstenerife.es/en",
+  "docs_url": "https://esfericainversiones.com/en/ocean-hills-esferica-inversiones/",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 18,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "sales site: 18 villas in zones A, B (type M1, 247 to 260 m2) and C (type M2, 276 to 306 m2), plots from 370 m2, private pools, energy rating A",
+   "sales site: architect Puerta 35 Arquitectura (Iván Guisado), Instagram feed",
+   "developer: 'building permit already granted and in force', construction expected to start October 2025",
+   "developer: 19 villas of 220 to 290 m2, total built area 4,500 m2",
+   "no prices, plans, completion date or deposit guarantee published"
+  ],
+  "note": "Small scheme of detached villas in Los Cristianos promoted by Esférica Inversiones, a closed-ended collective investment company from A Coruña. The developer says the building licence is granted and works were to start in October 2025, but it publishes no licence number, prices, completion date or deposit guarantee, and its two sites disagree on villa count (18 or 19) and sizes. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer states the licence is 'granted and in force' without a number or date",
+   "escrow": null,
+   "progress": "Only a planned start date (October 2025); no % or dated progress published on the sites",
+   "plans": "Size ranges by villa type; no floor plans published",
+   "record": "Other Esférica projects (Jardín de Vega, Marina 30, Eras 33, Arboreda) are listed as investments in process, none shown as delivered",
+   "returns": "No yield or guarantee published"
+  },
+  "positives": [
+   "Promoter identified as a CNMV-registered closed-ended investment company (per its own site)",
+   "Architect named, energy rating A stated",
+   "Very small, low-density scheme"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence granted and in force",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://esfericainversiones.com/en/ocean-hills-esferica-inversiones/"
+   },
+   {
+    "claim": "Construction to start October 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://esfericainversiones.com/ocean-hills/"
+   },
+   {
+    "claim": "19 villas of 220 to 290 m2",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://oceanhillstenerife.es/en"
+   },
+   {
+    "claim": "18 villas of 250 to 312 m2 on plots from 370 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceanhillstenerife.es/en"
+   },
+   {
+    "claim": "Esférica Inversiones SICC S.A. is registered with the CNMV",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://esfericainversiones.com/"
+   },
+   {
+    "claim": "Energy rating A for all homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceanhillstenerife.es/en"
+   },
+   {
+    "claim": "Each villa has a private pool",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://esfericainversiones.com/en/ocean-hills-esferica-inversiones/"
+   },
+   {
+    "claim": "Aimed at domestic and international buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://esfericainversiones.com/en/ocean-hills-esferica-inversiones/"
+   },
+   {
+    "claim": "Deposits guaranteed by bank guarantee or insurance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceanhillstenerife.es/en"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "A Coruña, Spain",
+   "developer_company": "Esférica Inversiones SICC S.A. (managed by Atalaya Invest); registration number not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "States it is registered with the CNMV as a closed-ended collective investment company",
+   "construction_start": "2025-10",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa M1",
+    "3BR villa M2"
+   ],
+   "size_min_m2": 247,
+   "size_max_m2": 306,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools (per sales site)",
+    "rooftop terraces",
+    "garages",
+    "aerothermal climate control",
+    "600 m2 communal garden",
+    "calisthenics area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Arona (licencia de obra)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://oceanhillstenerife.es/en",
+   "https://esfericainversiones.com/ocean-hills/",
+   "https://esfericainversiones.com/en/ocean-hills-esferica-inversiones/",
+   "https://esfericainversiones.com/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ }
+]

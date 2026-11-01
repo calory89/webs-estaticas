@@ -1,0 +1,1936 @@
+[
+ {
+  "slug": "costavida-residential-resort-megaworld",
+  "name": "CostaVida Residential Resort",
+  "developer": "Megaworld Corporation (LTS holder Megaworld Oceantown Properties Inc.)",
+  "area": "The Mactan Newtown, Lapu-Lapu City, Cebu",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://www.ceboom.com/listings/costavida-residential-resort.php",
+  "docs_url": "https://megaworldinternational.com/properties/costavida-residential-resort/",
+  "seed": {
+   "price": 8597000,
+   "currency": "PHP",
+   "title": "condominium unit (CCT), subject to 40% foreign cap",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": false,
+   "permit_number": "LS 0002246",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Megaworld lists completed ready-for-occupancy towers in the same township (One Pacific Residence, 8 Newtown Boulevard); Inquirer reports the township already has four residential developments, five office towers and two hotels",
+   "units": 151,
+   "payment_plan": "PHP 30,000 reservation; 45 monthly amortisations plus 3.5% or 6% lump sums, balance at turnover (30 Jun 2030) by cash or bank loan (agent, Sep 2026 computations)",
+   "price_per_m2": 358208
+  },
+  "docs_listed": [
+   "developer: 10 floors, 151 units, turnover 31 May 2029 + 6 months grace (megaworldinternational.com)",
+   "developer: brochure link, interior and amenity renders",
+   "agent: studio 24 sq m PHP 8.597M, 1BR 47 sq m PHP 16.835M, Sep 2026 payment computations",
+   "agent: unit plan sheets Types A to J (studio, 1BR, 2BR)",
+   "agent: land area 3,870 sq m, target turnover 30 Jun 2030"
+  ],
+  "note": "151-unit, 10-storey active-adult condo in Megaworld's Mactan Newtown, launched Q2 2025 per Megaworld's H1 results release. DHSUD list shows License to Sell LS 0002246 (Dec 2025) to Megaworld Oceantown Properties Inc. with target completion Dec 2031, later than the developer's May 2029 turnover; the LTS number is not published by the developer. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No LTS number on developer or agent pages; DHSUD list mirrored on lumingon.com shows LS 0002246, issued Dec 2025, OM Condo PD 957, owner Megaworld Oceantown Properties Inc.",
+   "escrow": null,
+   "progress": "No construction update or % found on developer or agent pages",
+   "plans": "Agent CEBOOM republishes developer unit plan sheets Types A to J and a 1BR 3F-9F plan",
+   "record": "Developer township page lists One Pacific Residence and 8 Newtown Boulevard as ready for occupancy; Inquirer (Oct 2025) confirms existing residential towers in the township",
+   "returns": "No rental guarantee or yield figure on developer or agent pages"
+  },
+  "positives": [
+   "DHSUD License to Sell entry found for the project",
+   "Developer is PSE-listed Megaworld Corporation",
+   "Dated price computations and unit plans published by agent"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds DHSUD License to Sell LS 0002246",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/costavida-residential-resort--f23abf916b8f48c9aed5d4e70644c66b"
+   },
+   {
+    "claim": "Developer is Megaworld Corporation",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/costavida-residential-resort--f23abf916b8f48c9aed5d4e70644c66b"
+   },
+   {
+    "claim": "Turnover 31 May 2029 plus 6 months grace",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/costavida-residential-resort--f23abf916b8f48c9aed5d4e70644c66b"
+   },
+   {
+    "claim": "Project launched by Megaworld in Q2 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.megaworldcorp.com/news-and-updates/megaworlds-h1-profit-11-p981b"
+   },
+   {
+    "claim": "151 units in a 10-storey building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://megaworldinternational.com/properties/costavida-residential-resort/"
+   },
+   {
+    "claim": "Located in Mactan Newtown, Lapu-Lapu",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/costavida-residential-resort--f23abf916b8f48c9aed5d4e70644c66b"
+   },
+   {
+    "claim": "Studio from PHP 8.597M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ceboom.com/listings/costavida-residential-resort.php"
+   },
+   {
+    "claim": "Megaworld has delivered towers in the same township",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://business.inquirer.net/552419/megaworld-allots-p-3-4b-to-expand-3-townships"
+   },
+   {
+    "claim": "Construction has started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://megaworldinternational.com/properties/costavida-residential-resort/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://megaworldinternational.com/properties/costavida-residential-resort/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1989,
+   "developer_hq": "Taguig, Philippines",
+   "developer_company": "Megaworld Corporation; LTS holder Megaworld Oceantown Properties Inc.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Philippine Stock Exchange (MEG)",
+   "construction_start": null,
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR suite",
+    "2BR",
+    "2BR suite"
+   ],
+   "size_min_m2": 24,
+   "size_max_m2": null,
+   "price_min": 8597000,
+   "price_max": null,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": "PHP 30,000 reservation, monthly amortisation and lump sums to Jun 2030, balance at turnover (agent)",
+   "foreign_ownership": "Condominium unit within the 40% foreign-ownership cap",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "aqua therapy pool",
+    "pool ramp",
+    "spa and sauna",
+    "function room",
+    "gym",
+    "yoga deck",
+    "putting green",
+    "beach access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell under PD 957)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://megaworldinternational.com/properties/costavida-residential-resort/",
+   "https://www.ceboom.com/listings/costavida-residential-resort.php",
+   "https://lumingon.com/license-to-sell/costavida-residential-resort--f23abf916b8f48c9aed5d4e70644c66b",
+   "https://www.megaworldcorp.com/news-and-updates/megaworlds-h1-profit-11-p981b",
+   "https://megaworldinternational.com/properties/the-mactan-newtown/",
+   "https://business.inquirer.net/552419/megaworld-allots-p-3-4b-to-expand-3-townships"
+  ],
+  "permit_number": "LS 0002246",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "sunway-velocity-3-sunway-property",
+  "name": "Sunway Velocity 3 (Towers A and B)",
+  "developer": "Sunway Velocity Three Sdn Bhd (Sunway Property, Sunway Bhd)",
+  "area": "Sunway Velocity, Cheras, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://sunwayproperty.com/sunway-velocity-3/",
+  "docs_url": "https://sunwayproperty.com/apdl/",
+  "seed": {
+   "price": 580000,
+   "currency": "MYR",
+   "title": "leasehold (expiry 11 Jan 2121)",
+   "lease_base": 97,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "30685-1/04-2027/0328(A)-(S)",
+   "plans_published": true,
+   "escrow": "Developer names no HDA account; TEDUH records a Schedule H (Jadual H) sale agreement under the statutory Housing Development Account regime",
+   "progress_pct": 53.11,
+   "progress_updates": true,
+   "developer_delivered": "Sunway Velocity (2011) and Sunway Velocity TWO (2018) residential units fully sold and delivered, V Residence 3 completed 2018 (developer site and The Edge)",
+   "units": 1604,
+   "payment_plan": null,
+   "price_per_m2": 8664
+  },
+  "docs_listed": [
+   "developer APDL block: developer licence 30685/01-2029/0027(A), advertising permit 30685-1/04-2027/0328(A)-(S), building plan BPU3OSC20230103 (DBKL)",
+   "tenure leasehold to 11 Jan 2121, encumbrance Pacific Trustees Berhad",
+   "price range Tower A RM774k-1.279M, Tower B RM761k-1.23M; expected completion May 2028",
+   "unit types A, B, C (721, 926, 1,076 sq ft) with layout selector and brochure download",
+   "TEDUH: per-tower construction % (53.11% and 54.30%), approved 12-month delivery extension"
+  ],
+  "note": "1,604-unit two-tower serviced residence in Sunway Velocity KL, launched May 2024 (98% taken up per The Edge, Oct 2026). TEDUH shows Tower A at 53.11% and Tower B at 54.30% built, status 'Lancar' (on track), with a 12-month vacant possession extension approved moving delivery from May 2027 to May 2028; prices mostly under the RM1M foreign-buyer floor in KL. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer APDL page publishes advertising permit 30685-1/04-2027/0328(A)-(S) and licence 30685/01-2029/0027(A); TEDUH shows the same permit as Aktif (19 Apr 2024 to 18 Apr 2027)",
+   "escrow": "No HDA bank or number on developer pages; TEDUH lists a Jadual H sale agreement (statutory HDA stage-payment regime)",
+   "progress": "TEDUH (based on latest 7(f) HIMS report): Tower A 53.11%, Tower B 54.30%, overall 'Lancar'; The Edge Oct 2026 reports Tower A topped out",
+   "plans": "Developer page has unit types A, B, C with sizes and bedroom counts and a brochure",
+   "record": "The Edge (May 2024) states Sunway Velocity and Sunway Velocity TWO residential units are fully sold; developer lists V Residence 3 completed 2018",
+   "returns": "Rental-readiness features (keyless, sub-meters, co-living) and a PropertyGuru rental disclaimer, but no guaranteed return or yield %"
+  },
+  "positives": [
+   "Bursa-listed parent Sunway Bhd",
+   "Official construction % published on TEDUH per tower",
+   "Building plan approval and permit numbers published by the developer",
+   "Tower A topped out (The Edge, Oct 2026)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Advertising permit 30685-1/04-2027/0328(A)-(S) is valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Developer licence 30685/01-2029/0027(A) held by Sunway Velocity Three Sdn Bhd",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Expected completion May 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Original SPA delivery 36 months (May 2027) extended by 12 months",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Towers about 53-54% built and on track",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Tower A topped out",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/node/821926"
+   },
+   {
+    "claim": "1,604 units (Tower A 1,036, Tower B 568)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Prices RM761k to RM1.279M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Towers are 61 storeys",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1"
+   },
+   {
+    "claim": "Earlier Sunway Velocity phases fully sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/node/710932"
+   },
+   {
+    "claim": "Leasehold to 2121",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sunwayproperty.com/apdl/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sunwayvelocity3.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1974,
+   "developer_hq": "Bandar Sunway, Selangor, Malaysia",
+   "developer_company": "Sunway Velocity Three Sdn Bhd (1054953-V)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Sunway Bhd listed on Bursa Malaysia (KL:SUNWAY)",
+   "construction_start": "2024-05",
+   "handover_promised": "2028-Q2",
+   "original_handover": "2027-Q2",
+   "delay_months": 12,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3+1BR"
+   ],
+   "size_min_m2": 67,
+   "size_max_m2": 100,
+   "price_min": 761000,
+   "price_max": 1279000,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold strata title; foreigners in KL subject to the state minimum price threshold (most units priced below RM1M)",
+   "rental_programme": "Rent+ tenancy management planned (The Edge); no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "50m infinity pool",
+    "lobby lounge",
+    "link bridge to Sunway Velocity Mall",
+    "MRT/LRT access",
+    "co-living ready units",
+    "smart locks",
+    "express car park ramp"
+   ],
+   "lat": 3.13,
+   "lng": 101.727,
+   "permit_authority": "KPKT / Jabatan Perumahan Negara (developer licence and advertising permit); DBKL (building plan)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/30685/P45/temp-P45-20251202-CiwG94p2lC/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://sunwayproperty.com/sunway-velocity-3/",
+   "https://sunwayproperty.com/apdl/",
+   "https://www.sunwayvelocity3.com/",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30685-1",
+   "https://theedgemalaysia.com/node/710932",
+   "https://theedgemalaysia.com/node/821926"
+  ],
+  "permit_number": "30685-1/04-2027/0328(A)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "branniganz-suites-bukit-bintang-exsim",
+  "name": "Branniganz Suites @ Bukit Bintang",
+  "developer": "Lembaran Beruntung Sdn Bhd (EXSIM Group)",
+  "area": "Jalan Imbi, Bukit Bintang, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://www.branniganz.com.my/",
+  "docs_url": "https://exsim.com.my/development/branniganz-suites-bukit-bintang/",
+  "seed": {
+   "price": 820800,
+   "currency": "MYR",
+   "title": "leasehold (majority of units on commercial non-HDA title per sales site)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "30784-1/08-2027/0728(A)-(S)",
+   "plans_published": true,
+   "escrow": "Only the 269 residential serviced apartments are under TEDUH with a Schedule H (Jadual H) HDA agreement; sales site says the majority of the 759 units are commercial non-HDA, so their payments are not covered by the HDA regime",
+   "progress_pct": 70.98,
+   "progress_updates": true,
+   "developer_delivered": "EXSIM lists completed KLCC projects Ceylonz Suites, Scarletz Suites and Expressionz Suites (sales sites); The Edge reports Central Park Damansara phases 99% sold",
+   "units": 759,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: project page, e-brochure, gallery, quarterly site progress photos Q4 2024 to Q4 2026",
+   "sales site: layouts Type A 495 sf, B 678 sf dual key, C and D 344 sf studios",
+   "sales site: prices from RM820,800 (Type C) to RM1,466,400 (Type B), maintenance RM0.88 psf",
+   "sales site: Q3 2026 structure at level 40",
+   "TEDUH: residential component 269 units, 70.98% built, 16-month VP extension approved"
+  ],
+  "note": "Single 50-storey tower of 759 serviced apartments and commercial suites next to Sungei Wang, sold with an 80:20 Airbnb profit-share operator (Mana Mana). TEDUH covers only the 269 HDA residential units (70.98% built, from RM1.284M) and shows a 16-month extension moving vacant possession from Sep 2027 to Jan 2029, later than the 2028 date on sales sites. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "TEDUH lists advertising permit 30784-1/08-2027/0728(A)-(S) (14 Aug 2024 to 13 Aug 2027) and developer licence 30784/05-2029/0126(A) for Lembaran Beruntung Sdn Bhd (EXSIM address and email)",
+   "escrow": "TEDUH: Jadual H agreement for the residential component only; exsim.co FAQ says majority of units are commercial non-HDA",
+   "progress": "TEDUH 70.98% (7(f) report); developer site progress page with quarterly photos to Q4 2026; agent says structure at level 40 in Q3 2026",
+   "plans": "Branniganz sites and agent site publish floor plans Types A to D and a master floor layout",
+   "record": "Sales sites name completed Ceylonz, Scarletz and Expressionz Suites; The Edge (Oct 2026) says Central Park Damansara launched phases are 99% sold; no independent completion record opened",
+   "returns": "Mana Mana Hospitality profit share 80:20 and 'higher yield' wording, no guaranteed return or % yield"
+  },
+  "positives": [
+   "Official construction % on TEDUH (70.98%) and status 'Lancar'",
+   "Developer posts quarterly dated site progress",
+   "Published maintenance fee (RM0.88 psf incl. sinking fund)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Advertising permit 30784-1/08-2027/0728(A)-(S) is active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1"
+   },
+   {
+    "claim": "Developer entity Lembaran Beruntung Sdn Bhd is a licensed, active housing developer linked to EXSIM",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1"
+   },
+   {
+    "claim": "Completion in 2028",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1"
+   },
+   {
+    "claim": "Construction well advanced (structure at level 40)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1"
+   },
+   {
+    "claim": "759 units in one tower",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1"
+   },
+   {
+    "claim": "Units from RM820,800",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.exsimklcc.com/branniganz"
+   },
+   {
+    "claim": "HDA residential units priced RM1.284M to RM1.722M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1"
+   },
+   {
+    "claim": "Buyer deposits protected under HDA",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://exsim.co/"
+   },
+   {
+    "claim": "EXSIM delivered Ceylonz, Scarletz and Expressionz Suites",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.exsimklcc.com/branniganz"
+   },
+   {
+    "claim": "EXSIM projects sell out (Central Park Damansara phases 99% sold)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/article/cover-story-exsim-launch-rm4bil-worth-projects-year"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://branniganz-suites.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2008,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": "Lembaran Beruntung Sdn Bhd (developer licence 30784/05-2029/0126(A))",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Private group; EXSIM Development Sdn Bhd publishes a sustainability report FY2025",
+   "construction_start": "2024-09",
+   "handover_promised": "2028-Q4",
+   "original_handover": "2027-Q3",
+   "delay_months": 16,
+   "unit_types": [
+    "studio",
+    "2BR",
+    "2BR dual key"
+   ],
+   "size_min_m2": 32,
+   "size_max_m2": 63,
+   "price_min": 820800,
+   "price_max": 1722240,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold strata units; foreign purchase subject to KL minimum price threshold",
+   "rental_programme": "Mana Mana Hospitality by EXSIM, short-stay management with 80:20 owner profit share, no figures guaranteed",
+   "service_charge": "RM0.88 psf including sinking fund",
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "sky gym",
+    "yoga deck",
+    "sky dining",
+    "co-working lounge",
+    "sky garden",
+    "basement food court",
+    "next to MRT Bukit Bintang"
+   ],
+   "lat": 3.144,
+   "lng": 101.712,
+   "permit_authority": "KPKT / Jabatan Perumahan Negara (HDA residential component); DBKL",
+   "brochure_url": "https://hims.kpkt.gov.my/files/30784/P45/P45-20250423-00015738/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://exsim.com.my/development/branniganz-suites-bukit-bintang/",
+   "https://exsim.com.my/site-progress-branniganz-bukit-bintang/",
+   "https://www.branniganz.com.my/",
+   "https://branniganz-suites.com/",
+   "https://www.exsimklcc.com/branniganz",
+   "https://exsim.co/",
+   "https://www.propertyguru.com.my/condo/branniganz-bukit-bintang-20163",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30784-1",
+   "https://theedgemalaysia.com/article/cover-story-exsim-launch-rm4bil-worth-projects-year"
+  ],
+  "permit_number": "30784-1/08-2027/0728(A)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "sondris-arthaland",
+  "name": "Sondris",
+  "developer": "Arthaland Corporation with Mitsui Fudosan (Asia); LTS holder Zileya Land Development Corporation",
+  "area": "Legaspi Village, Makati",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://arthaland.com/properties/sondris",
+  "docs_url": "https://arthaland.com/properties/sondris",
+  "seed": {
+   "price": 23556696,
+   "currency": "PHP",
+   "title": "condominium unit (CCT), subject to 40% foreign cap",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": true,
+   "permit_number": "LS 0001214",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Arthaland lists Arya Residences BGC (507 units, 2 towers, 100% sold, finished on schedule) and Lucima Cebu (265 units, completed Q3 2024)",
+   "units": 252,
+   "payment_plan": null,
+   "price_per_m2": 514563
+  },
+  "docs_listed": [
+   "developer: DHSUD LS No. 0001214, 37 storeys, 252 units, completion April 2030",
+   "developer: unit types 1BR 46-61 sqm to garden units 180-230 sqm, investment ranges (3BR PHP 45.1M-65.8M), finishes lists",
+   "developer: sustainability targets (LEED Gold, WELL, EDGE, BERDE)",
+   "Mitsui Fudosan release: site 2,018 sqm, GFA 46,300 sqm, construction start 2026, completion 2030, sales also in Japan",
+   "agent: 1BR 45.78 sqm from PHP 23.56M"
+  ],
+  "note": "252-unit, 37-storey green condo by PSE-listed Arthaland and Mitsui Fudosan, launched 28 Feb 2026 and marketed in Japan as well as the Philippines. The developer publishes DHSUD LTS 0001214, which matches the DHSUD list (issued Jan 2026, holder Zileya Land Development Corp.), but the DHSUD target completion is March 2033 against the developer's April 2030. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer page shows DHSUD LS No. 0001214; DHSUD list mirror shows LS 0001214 issued January 2026, OM Condo PD 957, owner Zileya Land Development Corporation",
+   "escrow": null,
+   "progress": "No construction update for Sondris found; Mitsui says construction starts 2026",
+   "plans": "Developer page publishes unit types with sizes and finishes; showroom opened June 2026",
+   "record": "Arthaland property pages for Arya Residences (finished, 100% sold) and Lucima (Q3 2024); Arthaland news reposts a 2023 Philstar story on Lucima topping-off",
+   "returns": "No rental guarantee or yield on developer page"
+  },
+  "positives": [
+   "LTS number published by developer and matches DHSUD list",
+   "JV with Mitsui Fudosan disclosed in a Tokyo-listed company's press release",
+   "Developer posted dated construction updates for its previous project Lucima"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "DHSUD License to Sell LS 0001214",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/sondris--b83489cee4034c00a5618440bead2943"
+   },
+   {
+    "claim": "Completion April 2030",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/sondris--b83489cee4034c00a5618440bead2943"
+   },
+   {
+    "claim": "Developer is Arthaland with Mitsui Fudosan",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
+   },
+   {
+    "claim": "Seller entity named on LTS is Zileya Land Development Corporation, not Arthaland",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/sondris--b83489cee4034c00a5618440bead2943"
+   },
+   {
+    "claim": "252 residential units over 37 floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
+   },
+   {
+    "claim": "Official sales launched 28 Feb 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
+   },
+   {
+    "claim": "Construction has started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
+   },
+   {
+    "claim": "1BR from PHP 23.56M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.preselling.com.ph/property/sondris-makati-arthaland/"
+   },
+   {
+    "claim": "Arthaland delivered Lucima in Q3 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arthaland.com/properties/lucima"
+   },
+   {
+    "claim": "Arthaland delivered Arya Residences on schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arthaland.com/properties/arya-residences"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arthaland.com/properties/sondris"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Taguig, Philippines",
+   "developer_company": "Arthaland Corporation (PSE: ALCO); LTS holder Zileya Land Development Corporation; Mitsui via SEAI Metro Manila One, Inc.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Arthaland listed on the Philippine Stock Exchange (ALCO); Mitsui Fudosan listed in Tokyo",
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "garden unit"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 230,
+   "price_min": 23556696,
+   "price_max": 85248080,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condominium unit within the 40% foreign-ownership cap",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sun rooms in 3BR",
+    "garden units",
+    "low density 6-10 units per floor",
+    "LEED Gold target",
+    "WELL target",
+    "showroom near site"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell under PD 957)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://arthaland.com/properties/sondris",
+   "https://lumingon.com/license-to-sell/sondris--b83489cee4034c00a5618440bead2943",
+   "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/",
+   "https://realestateblogph.com/2026/06/arthaland-unveils-sondris-showroom-offers-vr-tours-for-future-makati-green-residences/",
+   "https://www.preselling.com.ph/property/sondris-makati-arthaland/",
+   "https://arthaland.com/properties/lucima",
+   "https://arthaland.com/properties/arya-residences",
+   "https://arthaland.com/news/boutique-property-developer-eyeing-more-projects-in-cebu"
+  ],
+  "permit_number": "LS 0001214",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "eaton-park-gamuda-land",
+  "name": "Eaton Park",
+  "developer": "Tam Luc Real Estate JSC (Gamuda Land, Gamuda Berhad)",
+  "area": "Mai Chi Tho Boulevard, An Phu (Binh Trung ward), Thu Duc, Ho Chi Minh City",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://gamudaland.com.vn/en/news/news-and-story-38",
+  "docs_url": "https://eatonpark.com.vn/project-information-disclosure/",
+  "seed": {
+   "price": 4000000000,
+   "currency": "VND",
+   "title": "50-year ownership certificate for foreigners (extendable), within 30% per-tower cap; perpetual for Vietnamese",
+   "lease_base": 50,
+   "extension": "extendable on application under the Housing Law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "07/GPXD",
+   "plans_published": true,
+   "escrow": "Bank guarantee for off-plan buyers: BIDV guarantee agreement up to VND 3,500bn (max 70% of contract values and not above sums advanced), plus a VPBank guarantee facility; developer publishes guarantee commitments in its legal disclosure",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Gamuda Land Vietnam developed Celadon City and Gamuda City in Vietnam (developer)",
+   "units": 2000,
+   "payment_plan": "VND 100M booking; 10% at SPA, staged to 50%, 45% + 2% maintenance fund at handover notice, 5% at certificate (Sales Scheme 25.1, Aug 2026, agent)",
+   "price_per_m2": 125000000
+  },
+  "docs_listed": [
+   "developer legal disclosure: enterprise code 0314020818, land certificate DI013041, investment decision 292/QD-UBND, EIA decision 3417/QD-UBND, 1/500 plan 4192/QD-UBND",
+   "developer: construction permit 07/GPXD, sale eligibility notices 6488 (678 units A5-A6) and 11801 (1,322 units A1-A4)",
+   "developer: bank guarantee commitments, registered standard contract (notice 417/TB-CT)",
+   "developer news: final towers topped out 12 Aug 2026, handover from Q3 2027",
+   "agents: unit mix 1BR 50.7 to 3BR 104.8 sqm, foreign quota rules, payment schedule"
+  ],
+  "note": "2,000-apartment, six-tower project by Malaysia's Gamuda Land; all towers topped out on 12 Aug 2026 and handover is targeted from Q3 2027. HCMC Department of Construction allowed off-plan sales of all 2,000 units (Jul and Dec 2024), and BIDV signed a buyer guarantee of up to VND 3,500bn, per Fili; foreigners buy on 50-year title within a 30% per-tower cap. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer disclosure lists construction permit 07/GPXD (HCMC DOC) and sale-eligibility notices 6488 and 11801; Fili reports the DOC notices of 16 Jul and 5 Dec 2024",
+   "escrow": "Developer lists bank guarantee commitments; Fili details the BIDV guarantee (up to VND 3,500bn) and a VPBank guarantee",
+   "progress": "Developer news: topping out of A3 and A4 on 12 Aug 2026 completes structure; agents publish dated site photos Sep to Nov 2026; no % published",
+   "plans": "Agent pages publish unit types and sizes from the developer's material",
+   "record": "Gamuda Land states prior Vietnam projects; no independent delivery record opened",
+   "returns": "No guaranteed return or yield found"
+  },
+  "positives": [
+   "Full legal file published by developer under Decree 96/2024",
+   "Off-plan sale approvals for all 2,000 units reported by press",
+   "Bank guarantee for buyer advances",
+   "Structure complete for all six towers (Aug 2026)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "independent",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction permit 07/GPXD issued Feb 2023 by HCMC DOC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "All 2,000 apartments eligible for off-plan sale",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "Bank guarantee for off-plan buyers (BIDV, up to VND 3,500bn)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "Land use right certificate valid to 2072",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "Developer committed not to mortgage project land",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "Tam Luc Real Estate JSC registered, enterprise code 0314020818",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eatonpark.com.vn/project-information-disclosure/"
+   },
+   {
+    "claim": "All six towers topped out 12 Aug 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gamudaland.com.vn/en/news/news-and-story-38"
+   },
+   {
+    "claim": "Handover from Q3 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "Launch prices VND 125-145M per sqm",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+   },
+   {
+    "claim": "Foreigners hold 50-year title within 30% per tower cap",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/"
+   },
+   {
+    "claim": "Agent handover dates Q2 2027 (A5-A6) and Q1 2028 (A1-A4)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ho Chi Minh City, Vietnam (parent Gamuda Berhad, Malaysia)",
+   "developer_company": "Cong ty Co phan Bat dong san Tam Luc, enterprise code 0314020818",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Gamuda Berhad listed on Bursa Malaysia",
+   "construction_start": "2024-03",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": 50.7,
+   "size_max_m2": 113.9,
+   "price_min": 4000000000,
+   "price_max": 25000000000,
+   "currency": "VND",
+   "deposit_pct": 10,
+   "payment_plan": "10% at SPA, to 50% during construction, 45% at handover, 5% at certificate (agent)",
+   "foreign_ownership": "50-year ownership certificate, extendable, max 30% of units per tower; podium shops Vietnamese only",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "podium amenities",
+    "landscaped grounds",
+    "two basements",
+    "Mai Chi Tho frontage",
+    "Coteccons main contractor"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "HCMC Department of Construction (construction permit and off-plan sale eligibility)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://gamudaland.com.vn/en/news/news-and-story-38",
+   "https://eatonpark.com.vn/project-information-disclosure/",
+   "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm",
+   "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/",
+   "https://dndrealty.com.vn/en/du-an/eaton-park/",
+   "https://dndrealty.com.vn/tien-do-du-an-eaton-park/",
+   "https://www.savills.com.vn/residential/ho-chi-minh-city-projects/eaton-park.aspx"
+  ],
+  "permit_number": "07/GPXD",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "paramount-signature-nha-trang-vega-city-kdi",
+  "name": "Paramount Signature Nha Trang by Melia (Libera Nha Trang tower CT10)",
+  "developer": "Vega City JSC (KDI Holdings / KDI Group)",
+  "area": "Bai Tien, Vinh Hoa ward, Nha Trang, Khanh Hoa",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://liberanhatrang.vn/the-paramount",
+  "docs_url": "https://liberanhatrang.vn/tin-tuc",
+  "seed": {
+   "price": 2800000000,
+   "currency": "VND",
+   "title": "tourism apartment (can ho du lich) on commercial-service land, certificate to 2063; agents say foreigners get 50-year title",
+   "lease_base": null,
+   "extension": "agent: land term extendable by 50 years",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "14/GPXD-SXD",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Libera phase 1: 168 Vega Continental shophouses handed over with pink books (Jul 2022) and 98 Gran Melia villas completed (Jul 2023), per agent sites",
+   "units": 385,
+   "payment_plan": "agent (vega-city.vn): pay 30% upfront, receive unit, balance later; earlier schemes 10% at SPA with 1 to 4 year instalments",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: floor-by-floor layout (amenity floors 1-8, units 9-30), suite types Limited, Premium, Grand Ocean Suite",
+   "developer site: dated weekly or monthly construction updates for CT10 Paramount from Jan 2024 to Jun 2026",
+   "developer site: 'Phap ly The Paramount' legal section, company tax code 4201401023",
+   "agent: building permit 14/GPXD-SXD (20 Mar 2020), investment decision 506/QD-UBND, 1/500 plan 1313/QD-UBND",
+   "agent: Melia rental programme 60% to owner for 10 years plus 15 free nights a year"
+  ],
+  "note": "30-storey Melia-operated 'Flex Home' tower inside KDI's 44 ha Libera Nha Trang (Vega City) resort at Bai Tien. Agents first promised handover in Q4 2025; the developer was still posting construction updates in June 2026 and agents now cite Q4 2026. Units are tourism apartments on commercial land to 2063, yet agents market 50-year foreign ownership, which conflicts with Khanh Hoa's stated rule that tourism property cannot be sold to foreigners. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Agent site vega-city.vn lists building permit 14/GPXD-SXD issued by Khanh Hoa DOC on 20 Mar 2020 for phase 1; not shown on developer page and no registry copy opened",
+   "escrow": null,
+   "progress": "Developer news page lists dated CT10 Paramount and Paramount Signature construction updates to 22 Jun 2026; no %",
+   "plans": "Developer page shows floor layouts for floor 9, typical floors 10-29 and floor 30",
+   "record": "Agent sites state phase 1 shophouses handed over with pink books (2022) and Gran Melia villas completed (2023)",
+   "returns": "Rumavi reports a Melia rental pool paying owners 60% of rental income for 10 years; no guaranteed yield found"
+  },
+  "positives": [
+   "Regular dated construction updates on developer site",
+   "Built by Hyundai E&C, designed by HBA (developer)",
+   "Earlier phases of the same resort are delivered and operating (Gran Melia)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Foreigners can buy on a 50-year title",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://vietnambiz.vn/khanh-hoa-cong-bo-129-du-an-khong-duoc-ban-cho-nguoi-nuoc-ngoai-20191221134416875.htm"
+   },
+   {
+    "claim": "Units are tourism apartments (can ho du lich)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kdigroup.com.vn/limited-ocean-suite-the-paramount-bo-suu-tap-gioi-han-tai-libera-nha-trang/"
+   },
+   {
+    "claim": "Building permit 14/GPXD-SXD (20 Mar 2020)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vega-city.vn/phap-li/"
+   },
+   {
+    "claim": "Handover Q4 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://liberanhatrang.vn/tin-tuc"
+   },
+   {
+    "claim": "Completion Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/vietnam/vinh-hoa/paramount-signature-nha-trang-by-melia"
+   },
+   {
+    "claim": "Tower topped out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vega-city.vn/can-ho-bien-the-paramount/"
+   },
+   {
+    "claim": "Unit count (385, 401 or 365 depending on source)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vega-city.vn/can-ho-bien-the-paramount/"
+   },
+   {
+    "claim": "Prices from VND 2.8bn per unit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vega-city.vn/can-ho-bien-the-paramount/"
+   },
+   {
+    "claim": "Land certificate for phase 1 to 2063",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vega-city.vn/phap-li/"
+   },
+   {
+    "claim": "Developer Vega City JSC, tax code 4201401023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://liberanhatrang.vn/the-paramount"
+   },
+   {
+    "claim": "Melia rental programme 60% to owner for 10 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/vietnam/vinh-hoa/paramount-signature-nha-trang-by-melia"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Hanoi, Vietnam",
+   "developer_company": "Cong ty Co phan Vega City, tax code 4201401023 (KDI Holdings)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": "2025-Q4",
+   "delay_months": 12,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "suite",
+    "penthouse"
+   ],
+   "size_min_m2": 36,
+   "size_max_m2": 85,
+   "price_min": 2800000000,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": 10,
+   "payment_plan": "10% at SPA then instalments (developer sales site), or 30% upfront then handover (agent)",
+   "foreign_ownership": "Disputed: agents say 50-year title within 30% cap; the product is a tourism apartment, which Khanh Hoa DOC said in 2019 cannot be sold to foreigners",
+   "rental_programme": "Melia Hotels International operated; owner 60% of rental income for 10 years, 15 free nights a year (agent)",
+   "service_charge": null,
+   "brand": "Melia",
+   "amenities": [
+    "outdoor pool",
+    "gym",
+    "spa and sauna",
+    "co-working",
+    "library",
+    "kids zone",
+    "7,000 sqm gaming area",
+    "beach access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Khanh Hoa Department of Construction",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://liberanhatrang.vn/the-paramount",
+   "https://liberanhatrang.vn/tin-tuc",
+   "https://kdigroup.com.vn/limited-ocean-suite-the-paramount-bo-suu-tap-gioi-han-tai-libera-nha-trang/",
+   "https://vega-city.vn/can-ho-bien-the-paramount/",
+   "https://vega-city.vn/phap-li/",
+   "https://libera.com.vn/tien-do-xay-dung-libera-nha-trang-moi-nhat.html",
+   "https://rumavi.com/en/new-developments/vietnam/vinh-hoa/paramount-signature-nha-trang-by-melia",
+   "https://www.realtique.net/en/news/market-update/42672/libera-nha-trang-vega-city-foreign-buyer-guide/",
+   "https://vietnambiz.vn/khanh-hoa-cong-bo-129-du-an-khong-duoc-ban-cho-nguoi-nuoc-ngoai-20191221134416875.htm"
+  ],
+  "permit_number": "14/GPXD-SXD",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "miru-residences-hakuba-shc-ecclesia",
+  "name": "MIRU Residences Hakuba (Happo-One Nakiyama)",
+  "developer": "The SHC Group with Ecclesia Asset Management (operator MIRU Collection)",
+  "area": "Happo-One, Hakuba Village, Nagano",
+  "country": "Japan",
+  "market": "Japan",
+  "stage": "off-plan",
+  "url": "https://theshcgroup.com/projects/miru-residences-hakuba/",
+  "docs_url": "https://mirucollection.com/miru-residences-hakuba/",
+  "seed": {
+   "price": 80000000,
+   "currency": "JPY",
+   "title": "freehold condominium unit (Japan allows foreign freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "SHC Group cites Miru Kyoto and Miru Niseko; Ecclesia cites Far East Village Honmachi and Namba, Wander Shibuya (now Four Points Flex Shibuya) and Wander Kyoto Nanajo (developer sites)",
+   "units": 30,
+   "payment_plan": null,
+   "price_per_m2": 1980000
+  },
+  "docs_listed": [
+   "developer: 30 ski-in ski-out residences beside Happo-One lift, completion October 2027",
+   "developer: team (SHC, Ecclesia, MIRU Collection, architect Kei Takeuchi)",
+   "agent Uchi: unit sizes from 34 sqm studio to 94 sqm 3BR, prices from about JPY 80M, unit listings JPY 114.84M to 178.2M",
+   "agent Uchi (Jun 2026): 22 of 30 units reserved or sold",
+   "floor plans only on request"
+  ],
+  "note": "Boutique 30-unit managed residence beside the Nakiyama lift at Happo-One, sold mainly to overseas buyers through Hakuba Real Estate and Uchi, with completion promised for October 2027. No building confirmation number, construction update, deposit protection or registry record was found; evidence is limited to developer and agent pages. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No building confirmation (kenchiku kakunin) number published on developer or agent pages",
+   "escrow": null,
+   "progress": "No construction start or progress published",
+   "plans": "Sizes per unit type and unit listings published; floor plans offered only on enquiry",
+   "record": "SHC and Ecclesia list operating hotels and residences (Miru Kyoto, Miru Niseko, Far East Village, Wander) on their own sites",
+   "returns": "Fully managed rental model; no guaranteed return or yield published"
+  },
+  "positives": [
+   "Very small, low-density project with named architect and operator",
+   "Japan permits foreign freehold ownership",
+   "Itemised unit prices published by agent"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion October 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theshcgroup.com/projects/miru-residences-hakuba/"
+   },
+   {
+    "claim": "30 residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecclesia.sg/our-portfolio/miru-hakuba-nakiyama/"
+   },
+   {
+    "claim": "True ski-in ski-out, 10 m from Nakiyama ticket booth",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecclesia.sg/our-portfolio/miru-hakuba-nakiyama/"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mirucollection.com/miru-residences-hakuba/"
+   },
+   {
+    "claim": "Prices from about JPY 80M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/developments/miru-residences-hakuba"
+   },
+   {
+    "claim": "22 of 30 units reserved or sold (Jun 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/miru-residences-hakuba-down-to-final-8-units-as-sales-momentum-builds"
+   },
+   {
+    "claim": "SHC delivered Miru Kyoto and Miru Niseko",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theshcgroup.com/projects/miru-residences-hakuba/"
+   },
+   {
+    "claim": "Ecclesia delivered Wander Shibuya, now Four Points Flex Shibuya",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecclesia.sg/"
+   },
+   {
+    "claim": "Deposit protection in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theshcgroup.com/projects/miru-residences-hakuba/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/developments/miru-residences-hakuba"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "Singapore (Ecclesia Asset Management)",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR dual key",
+    "3BR dual key"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 94,
+   "price_min": 80000000,
+   "price_max": 178200000,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit; no restriction on foreign ownership in Japan",
+   "rental_programme": "Fully managed by MIRU Collection, no figures published",
+   "service_charge": null,
+   "brand": "MIRU Collection",
+   "amenities": [
+    "lobby lounge",
+    "reception",
+    "ski room",
+    "grab-and-go",
+    "ski-in ski-out",
+    "dual-key layouts"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Nagano Prefecture / designated inspection body (building confirmation under the Building Standards Act)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://theshcgroup.com/projects/miru-residences-hakuba/",
+   "https://mirucollection.com/miru-residences-hakuba/",
+   "https://mirucollection.com/miru/hakuba/",
+   "https://ecclesia.sg/our-portfolio/miru-hakuba-nakiyama/",
+   "https://ecclesia.sg/",
+   "https://uchijapan.com/developments/miru-residences-hakuba",
+   "https://uchijapan.com/news/miru-residences-hakuba-down-to-final-8-units-as-sales-momentum-builds",
+   "https://www.nisaderealestate.com/latest-projects/miru-residences-hakuba/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "hoshinoya-hutte-niseko-tokyu-land",
+  "name": "HOSHINOYA Hutte Niseko (provisional name)",
+  "developer": "Tokyu Land Corporation (lead), Mitsubishi Estate Residence and SMFL MIRAI Partners; operator Hoshino Resorts",
+  "area": "Yamada 204-2, Kutchan (top of Hirafu-zaka), Niseko, Hokkaido",
+  "country": "Japan",
+  "market": "Niseko",
+  "stage": "under construction",
+  "url": "https://hoshinoresorts.com/en/aboutus/developments/",
+  "docs_url": "https://www.tokyu-land.co.jp/english/news/2024/001306.html",
+  "seed": {
+   "price": null,
+   "currency": "JPY",
+   "title": "freehold condominium-hotel units (residence hotel), sale terms not yet published",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Tokyu Land operates Niseko Tokyu Grand Hirafu resort and Mitsubishi Estate Residence is a major Tokyo condominium developer (press releases); Hoshino Resorts operates eight HOSHINOYA properties",
+   "units": 62,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "press release: construction started 14 Oct 2024, works to end Feb 2029, opening FY2029",
+   "press release: site 6,462.83 sqm, GFA 14,870.36 sqm, RC with steel, B2 + 5 floors, 62 rooms",
+   "press release: contractor Maeda-led JV, architect Azuma Architect and Associates",
+   "Zekkei release: building approval secured early 2024 (no number)",
+   "sales timing and prices to be announced"
+  ],
+  "note": "62-unit HOSHINOYA-branded residence hotel at the top of Hirafu-zaka, taken over in Oct 2024 by Tokyu Land, Mitsubishi Estate Residence and SMFL MIRAI Partners from Zekkei; construction runs Oct 2024 to Feb 2029. Nikkei reported in Feb 2024 that opening slipped from autumn 2026 to 2028 because of building costs, and the partners now target FY2029; unit prices and sale terms are not yet published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Zekkei (PR Newswire) says building approval was secured in early 2024; no building confirmation number published",
+   "escrow": null,
+   "progress": "Only the construction start (14 Oct 2024) and planned works period are published; no later progress update found",
+   "plans": "No unit plans published",
+   "record": "Tokyu Land and SMFL releases describe their Niseko resort and 43 hotel assets; Mitsubishi Estate Residence is an established condominium developer",
+   "returns": "Owner-use plus hotel rental programme described by Uchi; no guaranteed return"
+  },
+  "positives": [
+   "Developers are major Japanese listed groups (Tokyu Fudosan Holdings, Mitsubishi Estate, SMFL)",
+   "Construction start and schedule disclosed in joint press releases",
+   "Japan permits foreign freehold ownership"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started 14 Oct 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.smfl.co.jp/news/assets/241015.pdf"
+   },
+   {
+    "claim": "Completion end Feb 2029, opening FY2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mec-r.com/news/2024/pdf/2024_1015.pdf"
+   },
+   {
+    "claim": "Opening originally autumn 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nikkei.com/article/DGXZQOFC206FA0Q4A220C2000000/"
+   },
+   {
+    "claim": "Opening moved to 2028 due to construction costs",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nikkei.com/article/DGXZQOFC206FA0Q4A220C2000000/"
+   },
+   {
+    "claim": "Building approval secured early 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prnewswire.com/apac/news-releases/zekkei-properties-completes-sales-of-hoshinoya-hutte-niseko-project-to-japanese-consortium-302275660.html"
+   },
+   {
+    "claim": "Project sold by Zekkei to the Tokyu Land consortium in Oct 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.prnewswire.com/apac/news-releases/zekkei-properties-completes-sales-of-hoshinoya-hutte-niseko-project-to-japanese-consortium-302275660.html"
+   },
+   {
+    "claim": "62 rooms, B2 + 5 floors, GFA 14,870 sqm",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tokyu-land.co.jp/news/2024/001285.html"
+   },
+   {
+    "claim": "Units will be sold to owners (bunjo)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nikkei.com/article/DGXZQOFC206FA0Q4A220C2000000/"
+   },
+   {
+    "claim": "Ski-in ski-out next to Niseko Tokyu Grand Hirafu",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tokyu-land.co.jp/english/news/2024/001306.html"
+   },
+   {
+    "claim": "No guaranteed return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/zekkei-properties-completes-sale-of-hoshinoya-hu%CC%88tte-niseko-project"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1953,
+   "developer_hq": "Shibuya, Tokyo, Japan",
+   "developer_company": "Tokyu Land Corporation; Mitsubishi Estate Residence Co., Ltd.; SMFL MIRAI Partners Company, Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Tokyu Fudosan Holdings and Mitsubishi Estate are listed on the Tokyo Stock Exchange",
+   "construction_start": "2024-10",
+   "handover_promised": "2029-Q1",
+   "original_handover": "2026-Q4",
+   "delay_months": 28,
+   "unit_types": [],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; no restriction on foreign ownership in Japan",
+   "rental_programme": "Residence hotel: owner use for set periods, Hoshino Resorts rents units the rest of the year (Uchi); no figures",
+   "service_charge": null,
+   "brand": "HOSHINOYA (Hoshino Resorts)",
+   "amenities": [
+    "rooftop onsen pool",
+    "kitchens in all units",
+    "ski-in ski-out",
+    "in-room dining service",
+    "views of Mt Yotei"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Hokkaido / designated inspection body (building confirmation under the Building Standards Act)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://hoshinoresorts.com/en/aboutus/developments/",
+   "https://www.tokyu-land.co.jp/english/news/2024/001306.html",
+   "https://www.tokyu-land.co.jp/news/2024/001285.html",
+   "https://www.mec-r.com/news/2024/pdf/2024_1015.pdf",
+   "https://www.smfl.co.jp/news/assets/241015.pdf",
+   "https://www.prnewswire.com/apac/news-releases/zekkei-properties-completes-sales-of-hoshinoya-hutte-niseko-project-to-japanese-consortium-302275660.html",
+   "https://www.nikkei.com/article/DGXZQOFC206FA0Q4A220C2000000/",
+   "https://uchijapan.com/news/zekkei-properties-completes-sale-of-hoshinoya-hu%CC%88tte-niseko-project",
+   "https://www.zekkei-properties.com/portfolios/branded-ski-in-ski-out-residences/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "the-first-tower-ambassadori-island-batumi",
+  "name": "The First Tower, Ambassadori Island Batumi",
+  "developer": "Ambassadori Island Batumi (Ambassadori Group)",
+  "area": "Ambassadori Island, Odysseas Dimitriadi St, northern entrance of Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "url": "https://ambassadori-island.com/the-first-tower-batumi/en",
+  "docs_url": "https://islandambassadori.com/construction",
+  "seed": {
+   "price": 120337,
+   "currency": "USD",
+   "title": "freehold, registered in the Public Registry of Georgia",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Ambassadori Group operates hotels and resorts in Georgia since 2004; first 26 ha of reclaimed island land commissioned by the state in Sep 2025 (Interpressnews); no completed residential tower",
+   "units": 1325,
+   "payment_plan": "20% down payment, 80% in four instalments during construction, 0% on handover (agent Palmera)",
+   "price_per_m2": 3243
+  },
+  "docs_listed": [
+   "developer construction page: monthly photo progress, Aug 2026 parking slabs done in Zone A, 127 piles (about 64% of foundation scope) in Zone B",
+   "developer news: island land 48 ha formed and commissioned, partner investments",
+   "agent: 58 floors, 216 m, studios 37.1 to 2BR 116 sqm, prices from USD 120,337, typical floor plans",
+   "agent: payment plan 20/80 during construction, handover Q1 2029",
+   "press: construction permit issued by the Technical and Construction Supervision Agency (Oct 2025)"
+  ],
+  "note": "58-storey, roughly 1,325-apartment tower, the first building on the Ambassadori artificial island in Batumi; works began Sep 2025 and handover is promised for Q1 2029. Interpressnews reports the Technical and Construction Supervision Agency issued the construction permit (Oct 2025) and the state commissioning of the first reclaimed land; no permit number, escrow or percentage complete is published, and Georgia has no statutory off-plan escrow. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Interpressnews (30 Oct 2025): TCSA issued a construction permit for the multifunctional complex; no permit number published by developer or agents",
+   "escrow": null,
+   "progress": "Developer posts monthly progress (Aug 2026: three parking levels slabbed, 64% of piles installed); Interpressnews (Aug 2026) describes the same stage",
+   "plans": "Agent Palmera publishes typical layouts for studios, 1BR and 2BR with areas",
+   "record": "Ambassadori Group is a hospitality company since 2004; island land phase commissioned per press; no delivered residential project found",
+   "returns": "Managed rental pitched as 'high investment potential'; no guaranteed return or yield %"
+  },
+  "positives": [
+   "Construction permit reported by national news agency",
+   "Monthly dated construction updates",
+   "Freehold title registrable in the Public Registry for foreigners"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction permit issued by TCSA for the multifunctional complex",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.interpressnews.ge/en/article/143588-ambassadori-island-batumi-secures-permit-for-multifunctional-complex-construction-on-island-territory/"
+   },
+   {
+    "claim": "First 26 ha of island land commissioned by the state",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.interpressnews.ge/en/article/143588-ambassadori-island-batumi-secures-permit-for-multifunctional-complex-construction-on-island-territory/"
+   },
+   {
+    "claim": "Construction in progress: parking levels and piling (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.interpressnews.ge/en/article/148916-construction-of-ambassadori-island-batumis-first-tower-progresses-simultaneously-across-two-zones/"
+   },
+   {
+    "claim": "Construction ahead of original schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.interpressnews.ge/en/article/148916-construction-of-ambassadori-island-batumis-first-tower-progresses-simultaneously-across-two-zones/"
+   },
+   {
+    "claim": "Delivery March 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ambassadori-island.com/the-first-tower-batumi/en"
+   },
+   {
+    "claim": "Tower has more than 60 floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/georgia/property/ambassadori-island-batumi/"
+   },
+   {
+    "claim": "Prices from USD 110,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/georgia/property/ambassadori-island-batumi/"
+   },
+   {
+    "claim": "Developer holds registered ownership of reclaimed land",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://batumiverified.com/en/projects/ambassadori-batumi-island"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wse.am/en/novostrojki/batumi"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ambassadori-island.com/the-first-tower-batumi/en"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2004,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "duplex"
+   ],
+   "size_min_m2": 37.1,
+   "size_max_m2": 116,
+   "price_min": 120337,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% on booking, 80% in four construction instalments (agent)",
+   "foreign_ownership": "Freehold apartment registered in the buyer's name; Georgia places no restriction on foreigners buying apartments",
+   "rental_programme": "Management by an international operator announced, no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "rooftop pool for duplexes",
+    "fitness centre",
+    "spa",
+    "private beach",
+    "helipad / vertiport",
+    "3-level underground parking",
+    "restaurant"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Technical and Construction Supervision Agency of Georgia",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://ambassadori-island.com/the-first-tower-batumi/en",
+   "https://islandambassadori.com/construction",
+   "https://islandambassadori.com/news/",
+   "https://www.palmera.realestate/georgia/property/ambassadori-island-batumi/",
+   "https://batumiverified.com/en/projects/ambassadori-batumi-island",
+   "https://www.interpressnews.ge/en/article/143588-ambassadori-island-batumi-secures-permit-for-multifunctional-complex-construction-on-island-territory/",
+   "https://www.interpressnews.ge/en/article/148916-construction-of-ambassadori-island-batumis-first-tower-progresses-simultaneously-across-two-zones/",
+   "https://wse.am/en/novostrojki/batumi"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "one-batumi-one-development",
+  "name": "ONE (ONE Tower Batumi)",
+  "developer": "ONE Development (sales via X2 Group)",
+  "area": "29a Tbel Abuseridze St / Inasaridze St, central Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "url": "https://onedev.ge/en/one",
+  "docs_url": "https://onebatumi.ge/en/development",
+  "seed": {
+   "price": 70374,
+   "currency": "USD",
+   "title": "freehold, registered in the Public Registry of Georgia",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8.7,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 56,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 483,
+   "payment_plan": "30% down payment, interest-free instalments up to 48 months; TBC Bank mortgages up to 10 years (portals and developer)",
+   "price_per_m2": 2080
+  },
+  "docs_listed": [
+   "developer: completion Q4 2027, 26 layout options, amenities, River Rock property management",
+   "developer: 'construction fully financed by TBC Bank', first project under the 'Batumi Without Dangerous Buildings' municipal programme",
+   "developer: sample return 1BR 53.4 sqm USD 110,760, net yield 8.7%, projected 6-8% rental yield",
+   "developer: monthly construction digest (Jul 2024 to Jan 2025 photos) and two live cameras",
+   "portals: 36 floors, 483 apartments, 31.6-182.8 sqm, cadastral number 05.24.08.144, 56% built"
+  ],
+  "note": "36-storey, business-class tower in central Batumi by a young developer whose five projects are all still under construction; the developer says construction is fully financed by TBC Bank and offers 30% down with up to 48 months of instalments. A portal reports 56% built and Q4 2027 handover, but no permit number, escrow or independent record was found, and the developer advertises projected yields of 6-8% (sample 8.7%) without guaranteeing them. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No construction permit number on developer or portal pages; korter lists cadastral number 05.24.08.144",
+   "escrow": null,
+   "progress": "Portal sivrce.ge shows 56% built; developer monthly digest photos to Jan 2025 and live cameras; korter photo update Oct 2026",
+   "plans": "Developer shows layout options; korter publishes layouts and prices",
+   "record": "Sivrce lists ONE Development with 5 projects and 0 completed; Palmera says all five projects are off-plan or in construction",
+   "returns": "Projected 6-8% rental yield and an 8.7% sample net yield; no guarantee wording found"
+  },
+  "positives": [
+   "Bank construction financing stated (TBC Bank)",
+   "Live construction cameras and monthly photo digest",
+   "European Property Awards 2025-2026 winner (developer)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction fully financed by TBC Bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onedev.ge/en/one"
+   },
+   {
+    "claim": "56% built",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sivrce.ge/en/mshenebare-binebi/one-batumi"
+   },
+   {
+    "claim": "36 floors and 483 apartments",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sivrce.ge/en/mshenebare-binebi/one-batumi"
+   },
+   {
+    "claim": "Completion Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onedev.ge/en/one"
+   },
+   {
+    "claim": "Project is under the municipal 'Batumi Without Dangerous Buildings' programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onedev.ge/en/one"
+   },
+   {
+    "claim": "Foundation of 87 piles 42 m deep",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gulfnews.com/gn-focus/one-development-redefining-real-estate-in-batumi-1.500318517"
+   },
+   {
+    "claim": "Projected 6-8% annual rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onedev.ge/en/one"
+   },
+   {
+    "claim": "Prices from USD 70,374",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/one-batumi"
+   },
+   {
+    "claim": "Developer has delivered completed projects",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sivrce.ge/en/mshenebare-binebi/one-batumi"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wse.am/en/novostrojki/batumi"
+   },
+   {
+    "claim": "Managed by River Rock property management",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onedev.ge/en/one"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Batumi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-07",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 31.6,
+   "size_max_m2": 182.8,
+   "price_min": 70374,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, interest-free instalments up to 48 months",
+   "foreign_ownership": "Freehold apartment registered in the buyer's name; no restriction on foreigners",
+   "rental_programme": "River Rock management; projected 6-8% long-term rental yield (not guaranteed)",
+   "service_charge": "USD 1 per sqm per month assumed in developer's return example",
+   "brand": null,
+   "amenities": [
+    "heated pool",
+    "fitness centre",
+    "sky bar",
+    "rooftop terrace",
+    "restaurant",
+    "children's playground",
+    "concierge",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Batumi City Hall (construction permits)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://onedev.ge/en/one",
+   "https://onedev.ge/en/one-progress",
+   "https://onebatumi.ge/en/development",
+   "https://korter.ge/en/one-batumi",
+   "https://sivrce.ge/en/mshenebare-binebi/one-batumi",
+   "https://www.palmera.realestate/georgia/property/one-radisson-red/",
+   "https://gulfnews.com/gn-focus/one-development-redefining-real-estate-in-batumi-1.500318517",
+   "https://wse.am/en/novostrojki/batumi"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0
+ }
+]

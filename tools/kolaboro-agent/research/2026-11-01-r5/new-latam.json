@@ -1,0 +1,2006 @@
+[
+ {
+  "slug": "alaia-embraed",
+  "name": "Alaia",
+  "developer": "Embraed Empreendimentos",
+  "area": "Centro (Av. Brasil 3151), Balneario Camboriu",
+  "country": "Brazil",
+  "market": "Brazil",
+  "stage": "under construction",
+  "url": "https://nuvemimobiliaria.com.br/empreendimento/alaia/",
+  "docs_url": "https://www.embraed.com.br/pt-BR/empreendimento/alaia",
+  "permit_number": "Registro de incorporacao R4 65.151, 2o Oficio de Registro de Imoveis de Balneario Camboriu",
+  "docs_listed": [
+   "developer: registro de incorporacao R4 65.151 (2o ORI Balneario Camboriu)",
+   "developer: construction progress 18% overall with stage breakdown (foundation 88%, structure 26%)",
+   "developer: monthly and quarterly construction photo sets Jun 2024 to Sep 2026",
+   "developer: 162 m, 51 floors, 74 apartments, 4 suites",
+   "agent: unit sizes 183 to 391 sq m, delivery April or August 2029",
+   "agent: 183 sq m unit at BRL 6,847,858 (price update Oct 2026)",
+   "agent: 20% down, balance in instalments"
+  ],
+  "note": "74-unit, 51-floor quadra-mar tower by Embraed on Av. Brasil, Balneario Camboriu. Embraed publishes the incorporation registration R4 65.151 and 18% overall progress with dated photos to Sep 2026; agents quote delivery April 2029 or August 2029 while the CTBUH figure relayed by an agency says 2027. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 6847858,
+   "currency": "BRL",
+   "title": "freehold (condominium unit, registered title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": true,
+   "permit_number": "R4 65.151 (2o ORI Balneario Camboriu)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 18,
+   "progress_updates": true,
+   "developer_delivered": "Embraed states 50 projects and 52 towers delivered since 1984, with a dated timeline (e.g. New York Apartments 2021, Hamptons Village 2023, Morada Ilhas Marianas 2025) on embraed.com.br/pt-BR/a-embraed",
+   "units": 74,
+   "payment_plan": "20% down, balance in instalments (agent)",
+   "price_per_m2": 37420
+  },
+  "evidence": {
+   "permit": "Developer page prints 'RI: R4 65.151 | 2o O.R.I. Balneario Camboriu/SC'; agents repeat incorporation 65.151. Brazilian law (Lei 4.591/64) requires this registration before sale. No online registry copy opened.",
+   "escrow": "No patrimonio de afetacao or escrow statement found on developer or agent pages",
+   "progress": "Developer page: 18% concluded, foundation 88%, structure 26%, masonry 4%, with photo sets to Sep 2026",
+   "plans": "No unit floor plans found on the pages opened; only sizes",
+   "record": "Developer timeline lists 50 delivered projects with years; financial advisor Paramis Capital lists 47 delivered and six CRI debt issues",
+   "returns": "No rental guarantee or yield on developer or agent pages"
+  },
+  "positives": [
+   "Incorporation registration number published by the developer",
+   "Percentage progress with stage breakdown and dated photos",
+   "Developer with 40-year delivery history in the same city"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Incorporation registered as R4 65.151 at 2o ORI Balneario Camboriu",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/empreendimento/alaia"
+   },
+   {
+    "claim": "Construction 18% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/empreendimento/alaia"
+   },
+   {
+    "claim": "Delivery April 2029",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://litoralvertical.com/venda/balneario-camboriu/apartamentos/edificio-alaia/"
+   },
+   {
+    "claim": "Tower 162 m, 51 floors, 74 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/empreendimento/alaia"
+   },
+   {
+    "claim": "Embraed has delivered 50 projects since 1984",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/a-embraed"
+   },
+   {
+    "claim": "Embraed founded 12 Sep 1984 in Balneario Camboriu",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/a-embraed"
+   },
+   {
+    "claim": "Embraed has issued CRI structured debt (R$308m)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paramis.com.br/case/embraed/"
+   },
+   {
+    "claim": "183 sq m unit priced BRL 6,847,858",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://durantcorretor.com.br/alaia-embraed"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/empreendimento/alaia"
+   },
+   {
+    "claim": "Construction under way since mid-2024 (dated photos from Jun 2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.embraed.com.br/pt-BR/empreendimento/alaia"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1984,
+   "developer_hq": "Balneario Camboriu, Brazil",
+   "developer_company": "Embraed Empreendimentos (Empresa Brasileira de Edificacoes)",
+   "developer_projects_delivered": 50,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not listed; has issued CRI securitised debt per Paramis Capital",
+   "construction_start": "2024-06",
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4BR (4 suites)",
+    "penthouse"
+   ],
+   "size_min_m2": 183,
+   "size_max_m2": 391,
+   "price_min": 6847858,
+   "price_max": null,
+   "currency": "BRL",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, balance in instalments (agent)",
+   "foreign_ownership": "Foreigners can hold urban condominium units in their own name in Brazil (CPF required)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "padel court",
+    "indoor and outdoor pools",
+    "sauna",
+    "gym",
+    "mini market",
+    "pool bar",
+    "kids playroom",
+    "grill area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Cartorio de Registro de Imoveis (incorporation registration, Lei 4.591/64); Prefeitura de Balneario Camboriu (alvara)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.embraed.com.br/pt-BR/empreendimento/alaia",
+   "https://nuvemimobiliaria.com.br/empreendimento/alaia/",
+   "https://litoralvertical.com/venda/balneario-camboriu/apartamentos/edificio-alaia/",
+   "https://durantcorretor.com.br/alaia-embraed",
+   "https://mazzottiimoveis.com/edificios/alaia/balneario-camboriu/centro/1666",
+   "https://www.embraed.com.br/pt-BR/a-embraed",
+   "https://paramis.com.br/case/embraed/",
+   "https://nuvemimobiliaria.com.br/predios-mais-altos-balneario-camboriu/"
+  ],
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "montana-flats-las-catalinas",
+  "name": "Montana Flats (Las Catalinas, El Prado)",
+  "developer": "Las Catalinas (Las Catalinas Holding Company, founder Charles Brewer)",
+  "area": "El Prado, Las Catalinas, Santa Cruz, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "stage": "under construction",
+  "url": "https://www.globenewswire.com/news-release/2026/03/19/3259112/0/en/Las-Catalinas-Announces-2026-Real-Estate-and-Hospitality-Development-Updates.html",
+  "docs_url": "https://news.lascatalinascr.com/montana",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 38 flats, 1 to 3 bedrooms, USD 380,000 to 1,150,000",
+   "developer: payment plan USD 5,000 or 10,000 reservation, 30% at PSA, balance in 19 to 22 monthly instalments",
+   "developer: target start Nov 2024, maximum start Dec 2025 (dates shown inconsistently with 'March 2028' and 'April 2026')",
+   "developer press release Mar 2026: 63% sold, expected completion Dec 2027, construction progress described",
+   "agent MLS: 1BR 63 sq m USD 580,000, target start Q4 2025, completion Q3 2027"
+  ],
+  "note": "38-flat hillside building in the El Prado neighbourhood of the car-free town of Las Catalinas. The developer's March 2026 release reports 63% sold and completion December 2027, while its sales page shows conflicting dates (March 2028 and April 2026) and no permit number, escrow arrangement or plans. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 380000,
+   "currency": "USD",
+   "title": "freehold condominium (filial) in Costa Rica, foreigners may hold title directly",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Beach Town neighbourhood completed 2022: about 150 residences, 14 mixed-use buildings, two hotels (developer release; CNU 2022 counts 89 houses and 71 flats)",
+   "units": 38,
+   "payment_plan": "USD 5,000 or 10,000 reservation, 30% at purchase and sale agreement, balance in 19 to 22 monthly instalments during construction",
+   "price_per_m2": 9206
+  },
+  "evidence": {
+   "permit": "No SETENA, municipal or CFIA permit number on developer pages or press release",
+   "escrow": "No escrow or deposit protection stated; deposits paid in monthly instalments during construction",
+   "progress": "Press release (Mar 2026) mentions 'significant construction progress' but gives no % or dated photos",
+   "plans": "Montana page refers buyers to an agent for 3D renders; no floor plans published",
+   "record": "NYT (2019) and CNU (2022) describe the delivered Beach Town: 89 houses, 71 flats, two hotels, first inhabited 2011",
+   "returns": "Sales page mentions no rental guarantee or yield"
+  },
+  "positives": [
+   "Developer with a long, independently reported delivery record in the same town",
+   "Starting price, unit count and % sold published",
+   "Payment staged over construction rather than large upfront deposit"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Las Catalinas founded by Charles Brewer who bought 1,200 acres in 2006",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nytimes.com/2019/06/18/realestate/costa-rica-carless-community-las-catalinas.html"
+   },
+   {
+    "claim": "Developer has delivered a full neighbourhood (Beach Town)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cnu.org/publicsquare/2022/03/18/car-free-hill-town-designed-nature"
+   },
+   {
+    "claim": "Montana has 38 flats",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.lascatalinascr.com/montana"
+   },
+   {
+    "claim": "63% of Montana sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globenewswire.com/news-release/2026/03/19/3259112/0/en/Las-Catalinas-Announces-2026-Real-Estate-and-Hospitality-Development-Updates.html"
+   },
+   {
+    "claim": "Completion December 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://news.lascatalinascr.com/montana"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globenewswire.com/news-release/2026/03/19/3259112/0/en/Las-Catalinas-Announces-2026-Real-Estate-and-Hospitality-Development-Updates.html"
+   },
+   {
+    "claim": "Prices from USD 380,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.lascatalinascr.com/montana"
+   },
+   {
+    "claim": "Sister phase Lantana slipped from July 2025 to December 2026 completion",
+    "status": "verified",
+    "by": "none",
+    "source": "https://theogm.com/2022/11/29/las-catalinas-in-costa-rica-announces-completion-of-beach-town"
+   },
+   {
+    "claim": "Building permit or SETENA approval held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.lascatalinascr.com/montana"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.lascatalinascr.com/montana"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Las Catalinas, Guanacaste, Costa Rica",
+   "developer_company": "Las Catalinas Holding Company (per CNU award credits); registration number not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 160,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": null,
+   "price_min": 380000,
+   "price_max": 1150000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "USD 5,000 or 10,000 reservation, 30% at PSA, balance in 19 to 22 monthly instalments",
+   "foreign_ownership": "Foreigners can hold titled property in Costa Rica directly (condominium filial); not maritime zone concession land per developer descriptions (not verified)",
+   "rental_programme": "Las Catalinas Doorway rental management exists for owners' homes; no figures stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private funicular",
+    "42 km trail network",
+    "beach access Playa Danta",
+    "town centre shops and restaurants"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipalidad de Santa Cruz (construction permit), SETENA (environmental viability), CFIA (plan registration)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://news.lascatalinascr.com/montana",
+   "https://www.globenewswire.com/news-release/2026/03/19/3259112/0/en/Las-Catalinas-Announces-2026-Real-Estate-and-Hospitality-Development-Updates.html",
+   "https://bluewaterpropertiesofcostarica.com/costa-rica-real-estate/property/1157696365-CR26008549M/",
+   "https://www.nytimes.com/2019/06/18/realestate/costa-rica-carless-community-las-catalinas.html",
+   "https://www.cnu.org/publicsquare/2022/03/18/car-free-hill-town-designed-nature",
+   "https://theogm.com/2022/11/29/las-catalinas-in-costa-rica-announces-completion-of-beach-town",
+   "https://ticotimes.net/2010/04/16/atlanta-mogul-plans-to-create-seaside-town"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "la-dolfina-punta-del-este-consultatio",
+  "name": "La Dolfina Punta del Este",
+  "developer": "Consultatio SA (75%, via Uruguayan subsidiary) with La Dolfina (Adolfo Cambiaso)",
+  "area": "Ruta 10 between Manantiales and Jose Ignacio, Maldonado",
+  "country": "Uruguay",
+  "market": "Uruguay",
+  "stage": "off-plan",
+  "url": "https://www.polobiz.com/post/la-dolfina-arrives-in-punta-del-este-real-estate",
+  "docs_url": "https://www.consultatio.com.ar/proyect/la-dolfina-punta-del-este/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 145 ha oceanfront masterplan, 471 lots, polo fields, club house, amenities list",
+   "agent: lots from USD 140,000 to 200,000 starting, 1,000 to 1,500 sq m",
+   "news: 30% at boleto, balance in up to 60 fixed USD instalments",
+   "stock filing (CNV/BYMA, 30 Jun 2026): 485 lots, Consultatio 75%, approvals for infrastructure works still being processed, polo fields planted"
+  ],
+  "note": "Ocean-to-Route-10 polo and residential lot community launched in pre-sale in Sept 2025 by listed Consultatio and Adolfo Cambiaso on a 145 ha former Lazaro Baez estate bought at judicial auction. Consultatio's Jun 2026 CNV review says permits for infrastructure works were still being sought; lot count varies between 471 and 485. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 150000,
+   "currency": "USD",
+   "title": "freehold lot (Uruguay, no restrictions on foreign buyers)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Consultatio: 15 large projects incl. Nordelta, Puertos, Las Garzas (Uruguay, stage 1 of 336 lots finished), Oceana Puerto Madero, Huergo 475, Oceana Nordelta, Oceana Bal Harbour (CNV-filed review Jun 2026)",
+   "units": 471,
+   "payment_plan": "30% on signing the boleto, balance in up to 60 fixed monthly USD instalments",
+   "price_per_m2": 150
+  },
+  "evidence": {
+   "permit": "No permit number published. Consultatio's half-year review (Jun 2026) says the procedures to obtain approvals for the infrastructure works were continuing",
+   "escrow": "No escrow or trust for buyer payments stated",
+   "progress": "CNV-filed review (30 Jun 2026): polo fields planted, internal roads improved, club house and access at design stage; no %",
+   "plans": "Masterplan described in text; no lot plan or masterplan drawing found on developer page",
+   "record": "CNV-filed, Deloitte-reviewed report lists 15 projects incl. completed Las Garzas stage 1 in Uruguay and Oceana buildings completed 2022 and 2025",
+   "returns": "No rental or return guarantee in developer or news material"
+  },
+  "positives": [
+   "Developer is listed on BYMA and reports project status in audited filings",
+   "Land bought at public judicial auction (reported to CNV), clear provenance",
+   "Instalment plan in USD over 60 months rather than lump sum"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Consultatio subsidiary won the 8 Jan 2025 auction for the 145 ha site",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cronista.com/negocios/asociado-con-adolfo-cambiaso-costantini-compra-un-campo-de-punta-del-este-que-era-de-lazaro-baez/"
+   },
+   {
+    "claim": "Consultatio holds 75% of the project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://docs.publicnow.com/viewDoc.aspx?filename=119480%5CEXT%5C0659358578B723079B9759896E144B7F6ED43748_E45ED95606CAFCF28BF55AB2D0D9A8043FF46184.PDF"
+   },
+   {
+    "claim": "Project has 471 lots",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://docs.publicnow.com/viewDoc.aspx?filename=119480%5CEXT%5C0659358578B723079B9759896E144B7F6ED43748_E45ED95606CAFCF28BF55AB2D0D9A8043FF46184.PDF"
+   },
+   {
+    "claim": "Infrastructure works approved and under way",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://docs.publicnow.com/viewDoc.aspx?filename=119480%5CEXT%5C0659358578B723079B9759896E144B7F6ED43748_E45ED95606CAFCF28BF55AB2D0D9A8043FF46184.PDF"
+   },
+   {
+    "claim": "Pre-sale launched 22 Sep 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iprofesional.com/negocios/438385-eduardo-costantini-convertira-terreno-lazaro-baez-en-casas-de-lujo"
+   },
+   {
+    "claim": "Lots priced USD 150,000 to 420,000/500,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://correopuntadeleste.com/el-entrevero-costantini-y-cambiaso-lanzan-proyecto-residencial-y-ecuestre/"
+   },
+   {
+    "claim": "75% of lots sold in pre-sale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.polobiz.com/post/la-dolfina-arrives-in-punta-del-este-real-estate"
+   },
+   {
+    "claim": "Consultatio has delivered Las Garzas stage 1 in Uruguay",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://docs.publicnow.com/viewDoc.aspx?filename=119480%5CEXT%5C0659358578B723079B9759896E144B7F6ED43748_E45ED95606CAFCF28BF55AB2D0D9A8043FF46184.PDF"
+   },
+   {
+    "claim": "First LEED Cities and Communities planned community in Uruguay",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://urbangroup.com.uy/proyecto/la-dolfina-49"
+   },
+   {
+    "claim": "No guaranteed returns offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.consultatio.com.ar/proyect/la-dolfina-punta-del-este/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1991,
+   "developer_hq": "Buenos Aires, Argentina",
+   "developer_company": "Consultatio SA (BYMA: CTIO), via Uruguayan subsidiary",
+   "developer_projects_delivered": 15,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on BYMA (CTIO) since 2008; interim statements reviewed by Deloitte & Co.",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "residential lot"
+   ],
+   "size_min_m2": 1000,
+   "size_max_m2": 1500,
+   "price_min": 140000,
+   "price_max": 500000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% at boleto, up to 60 fixed USD monthly instalments",
+   "foreign_ownership": "Freehold title; Uruguay has no restrictions on foreign ownership",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "La Dolfina (polo)",
+   "amenities": [
+    "two polo fields",
+    "equestrian club",
+    "club house and restaurant",
+    "beach access",
+    "spa and gym",
+    "tennis, padel, pickleball",
+    "kids club",
+    "lagoons and trails"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Intendencia de Maldonado (fraccionamiento/infrastructure approvals); Ministerio de Ambiente (DINACEA) environmental authorisation",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.consultatio.com.ar/proyect/la-dolfina-punta-del-este/",
+   "https://docs.publicnow.com/viewDoc.aspx?filename=119480%5CEXT%5C0659358578B723079B9759896E144B7F6ED43748_E45ED95606CAFCF28BF55AB2D0D9A8043FF46184.PDF",
+   "https://www.iprofesional.com/negocios/438385-eduardo-costantini-convertira-terreno-lazaro-baez-en-casas-de-lujo",
+   "https://correopuntadeleste.com/el-entrevero-costantini-y-cambiaso-lanzan-proyecto-residencial-y-ecuestre/",
+   "https://www.polobiz.com/post/la-dolfina-arrives-in-punta-del-este-real-estate",
+   "https://urbangroup.com.uy/proyecto/la-dolfina-49",
+   "https://www.cronista.com/negocios/asociado-con-adolfo-cambiaso-costantini-compra-un-campo-de-punta-del-este-que-era-de-lazaro-baez/",
+   "https://puntadelesteinternacional.com/la-dolfina-punta-del-este-donde-el-mar-y-el-polo-se-encuentran"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "the-gray-zone-gutierrez-group",
+  "name": "The Gray Zone",
+  "developer": "Gutierrez Group (multi family office, Medellin)",
+  "area": "Avenida Las Palmas, El Poblado, Medellin",
+  "country": "Colombia",
+  "market": "Medellín",
+  "stage": "off-plan",
+  "url": "https://chordrealestate.com/developments/the-gray-zone",
+  "docs_url": "https://gutierrezgroup.com.co/the-gray-zone-invest/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 17 floors, 21 two-bedroom short-term rental apartments, 112 one-bedroom hotel suites, retail, rooftop pool",
+   "developer: projected appreciation 10 to 15% and expected annual ROI 7 to 9% once operating",
+   "developer: 20% down, balance in 20 monthly instalments",
+   "US agent: from USD 166,900, 102 suites (conflicts with 112), 10%+ projected ROI, 50%+ projected appreciation in 30 months, 'escrow-secured land'",
+   "developer: residency eligibility above USD 180,000"
+  ],
+  "note": "Short-term-rental and hotel-suite tower on Las Palmas marketed mainly to foreign investors since Jan 2025. No licence, sales radicado, fiduciary trust, completion date or plans are published, and the US agent page and developer differ on suite count and return projections. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 166900,
+   "currency": "USD",
+   "title": "freehold (individual title by public deed, per developer)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "US agent states 'escrow-secured land'; no fiduciaria named",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer claims 12 projects developed and 1,614,587 sq ft, none named as completed with dates; its own list shows The Cut and Calalta as 'operational in 2025'",
+   "units": 133,
+   "payment_plan": "USD 5,000 reservation, 20% down, balance in 20 monthly instalments",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or Medellin sales radicado number published, although Medellin certificates require every advert to show the radicado",
+   "escrow": "Agent mentions 'escrow-secured land' only; no fiducia or patrimonio autonomo named",
+   "progress": "No construction status or date; developer services page lists it as 'Coming Soon'",
+   "plans": "No floor plans published",
+   "record": "Developer claims 12 projects developed but names none as delivered with dates",
+   "returns": "Projected ROI 7 to 9% (developer) and 10%+ (agent); not described as guaranteed"
+  },
+  "positives": [
+   "Payment spread over 20 months",
+   "Individual titles promised to buyers"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "17-storey building with 21 apartments and 112 suites",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://chordrealestate.com/developments/the-gray-zone"
+   },
+   {
+    "claim": "Prices from USD 166,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://chordrealestate.com/developments/the-gray-zone"
+   },
+   {
+    "claim": "Expected annual ROI 7 to 9%",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://chordrealestate.com/developments/the-gray-zone"
+   },
+   {
+    "claim": "Land is escrow-secured",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://chordrealestate.com/developments/the-gray-zone"
+   },
+   {
+    "claim": "Developer has developed 12 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gutierrezgroup.com.co/the-gray-zone-invest/"
+   },
+   {
+    "claim": "Gutierrez Group founded 2016 by Felipe, Juan Dario and Daniel Gutierrez",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://altss.com/profile/gutierrez-group"
+   },
+   {
+    "claim": "Construction licence and Medellin sales radicado held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.medellin.gov.co/es/wp-content/uploads/2026/05/Certificacion-de-Documentacion-41.pdf"
+   },
+   {
+    "claim": "Buyers above USD 180,000 qualify for Colombian residency",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gutierrezgroup.com.co/the-gray-zone-invest/"
+   },
+   {
+    "claim": "Short-term rental use permitted at the site",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/viviendas-turisticas-que-dice-el-acuerdo-48-de-2014-y-que-plantea-la-revision-de-mediano-plazo-del-pot-2026/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gutierrezgroup.com.co/services/real-estate/invest/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Medellin, Colombia",
+   "developer_company": "Gutierrez Group (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR hotel suite",
+    "2BR apartment",
+    "retail"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 166900,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "USD 5,000 reservation, 20% down, 20 monthly instalments",
+   "foreign_ownership": "Foreigners can hold title directly in Colombia (escritura publica); investment must be registered with Banco de la Republica",
+   "rental_programme": "Suites in a permanent hotel pool; apartments optional pool; projected ROI 7 to 9% (developer) or 10%+ (agent)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "gym",
+    "ground-floor retail"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Curadurias Urbanas de Medellin (licence); Subsecretaria de Control Urbanistico (sales radicado)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://gutierrezgroup.com.co/the-gray-zone-invest/",
+   "https://chordrealestate.com/developments/the-gray-zone",
+   "https://gutierrezgroup.com.co/services/real-estate/invest/",
+   "https://gutierrezgroup.com.co/blog/growth-and-impact-in-2024-gutierrez-group/",
+   "https://altss.com/profile/gutierrez-group",
+   "https://www.medellin.gov.co/es/wp-content/uploads/2026/05/Certificacion-de-Documentacion-41.pdf",
+   "https://www.medellin.gov.co/es/sala-de-prensa/noticias/viviendas-turisticas-que-dice-el-acuerdo-48-de-2014-y-que-plantea-la-revision-de-mediano-plazo-del-pot-2026/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "guayacan-santa-maria-valor-udg",
+  "name": "Guayacan Santa Maria",
+  "developer": "Grupo Valor Development and Urban Development Group (UDG)",
+  "area": "Santa Maria Golf & Country Club, Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "stage": "under construction",
+  "url": "https://www.santamariapanama.com/en/guayacan",
+  "docs_url": "https://www.guayacansantamaria.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 47-level tower, 2 apartments per floor, 4BR 370 sq m from USD 1.2M, 5BR penthouses 770 sq m USD 2.5M",
+   "developer: typical floor plans Type A and Type B",
+   "developer: 'advanced stage of construction', delivery 2028",
+   "finishing contractor Creinsa: monthly site photo galleries Jan to Aug 2026",
+   "agent Jan 2025: construction started, delivery estimated 2027",
+   "structural contractor GICSA: 52-level concrete building, 52,325.61 sq m"
+  ],
+  "note": "Two-units-per-floor luxury tower beside the Santa Maria golf course, launched Oct 2023 and started Jan 2025 per an agent. Delivery now stated as 2028 against 2027 announced at construction start; no permit, EIA resolution or escrow arrangement published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1200000,
+   "currency": "USD",
+   "title": "freehold horizontal property (PH) title; foreigners may own directly",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "UDG/GICSA cite more than 40 years of construction experience (Marjalizo site); no delivered projects listed on the Guayacan site",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 3243
+  },
+  "evidence": {
+   "permit": "No municipal construction permit or MiAmbiente EIA resolution number published",
+   "escrow": "No escrow or fideicomiso for deposits stated",
+   "progress": "Developer says 'advanced stage of construction'; finishing contractor Creinsa publishes dated site galleries Jan to Aug 2026; no %",
+   "plans": "Typical floor plans for Type A and Type B shown on developer site",
+   "record": "No delivered projects listed on project site; Marjalizo (UDG sister brand) cites 40+ years of Grupo UDG and Constructora GICSA",
+   "returns": "No rental guarantee or yield published"
+  },
+  "positives": [
+   "Construction visibly under way with dated contractor photos",
+   "Floor plans and prices published",
+   "Low density: two units per floor"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Joint project of Grupo Valor and UDG announced 12 Oct 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.udggroup.com/guayacan-santa-maria-la-nueva-joya-inmobiliaria-de-grupo-valor-y-urban-development-group/"
+   },
+   {
+    "claim": "Construction started Jan 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realtyzgroup.com/inicio-de-construccion-guayacan-santa-maria/"
+   },
+   {
+    "claim": "Delivery 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realtyzgroup.com/inicio-de-construccion-guayacan-santa-maria/"
+   },
+   {
+    "claim": "Tower has 47 levels",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.gicsapanama.com/en/proyectos/udg/grupo-udg/guayacan"
+   },
+   {
+    "claim": "Advanced stage of construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://creinsapanama.com/proyectos/guayacan/"
+   },
+   {
+    "claim": "Apartments 370 sq m from USD 1.2M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.guayacansantamaria.com/"
+   },
+   {
+    "claim": "Environmental impact study approved by MiAmbiente",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://e-sevia.miambiente.gob.pa/estudios/consultaExterna/grid_estudioImpactoAmbiental_consulta_externa/"
+   },
+   {
+    "claim": "Buyer deposits held in trust or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.guayacansantamaria.com/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.guayacansantamaria.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Panama City, Panama",
+   "developer_company": "Grupo Valor Development and Urban Development Group (registration numbers not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-01",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": 12,
+   "unit_types": [
+    "4BR",
+    "5BR penthouse"
+   ],
+   "size_min_m2": 368,
+   "size_max_m2": 770,
+   "price_min": 1200000,
+   "price_max": 2500000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can own titled condominium (propiedad horizontal) units in Panama City directly",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult and lap pools",
+    "padel court",
+    "mini football",
+    "gym and spinning",
+    "yoga deck",
+    "splash park",
+    "gourmet lounge",
+    "teen lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Panama (Direccion de Obras y Construcciones); MiAmbiente (EIA)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.guayacansantamaria.com/",
+   "https://www.santamariapanama.com/en/guayacan",
+   "https://www.udggroup.com/guayacan-santa-maria-la-nueva-joya-inmobiliaria-de-grupo-valor-y-urban-development-group/",
+   "https://realtyzgroup.com/inicio-de-construccion-guayacan-santa-maria/",
+   "https://www.gicsapanama.com/en/proyectos/udg/grupo-udg/guayacan",
+   "https://creinsapanama.com/proyectos/guayacan/",
+   "https://marjalizo.com/en/collections/",
+   "https://e-sevia.miambiente.gob.pa/estudios/consultaExterna/grid_estudioImpactoAmbiental_consulta_externa/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "veranova-park-arquitectura-y-concreto",
+  "name": "Veranova Park (Ciudad Veranova phase 1)",
+  "developer": "Arquitectura y Concreto S.A.S.",
+  "area": "Former Coltabaco site, Carrera 50 # 5-115, Guayabal / El Poblado metro, Medellin",
+  "country": "Colombia",
+  "market": "Medellín",
+  "stage": "off-plan",
+  "url": "https://propinvest.com/property/veranova/",
+  "docs_url": "https://arquitecturayconcreto.com/ciudadveranova/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: apartments 69 to 90 sq m built, 360 tours and virtual model",
+   "agent (English, for foreign buyers): 2 and 3BR 61 to 105 sq m, 'Airbnb possible', Tower 1 2H 2027, Towers 2 and 3 1H 2028",
+   "portal LaHaus: fiduciaria Davivienda, delivery June 2027, from COP 842.8M",
+   "agent Minnd: 3 towers x 22 floors, 556 apartments, Tower 3 2029, 30% down over 24 to 37 months",
+   "portal Metrocuadrado: 'sobre planos', delivery 15 Dec 2028",
+   "Medellin city register: project listed as having filed sales documents (Decreto 1077/2015)"
+  ],
+  "note": "First 556-unit phase of A&C's Ciudad Veranova on the former Coltabaco lot beside El Poblado metro, launched Aug 2024 and promoted to foreign buyers as Airbnb-friendly. Medellin's register lists the project's sales filing; payments go to a Davivienda fiducia, but delivery dates differ widely across channels (June 2027 to 2029). (checked 1 Nov 2026)",
+  "seed": {
+   "price": 807756950,
+   "currency": "COP",
+   "title": "freehold (escritura publica, propiedad horizontal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-2029 (by tower)",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Encargo fiduciario with Fiduciaria Davivienda (portal LaHaus and agent Minnd)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 556,
+   "payment_plan": "COP 5M reservation, 30% down over 24 to 37 months, 70% bank loan at delivery",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "Medellin Subsecretaria de Control Urbanistico list includes 'Proyecto Veranova Park - Carrera 50 5 115 - CBML 15070660001' as compliant with art. 2.2.5.3.1 Decreto 1077/2015; licence and radicado numbers not shown on marketing pages opened",
+   "escrow": "Fiducia Davivienda named by LaHaus and an agent; not on the developer page text retrieved",
+   "progress": "No construction % or dated photos found",
+   "plans": "Developer offers 360 tours and a virtual model; no floor plan drawings retrieved",
+   "record": "Not established from pages opened",
+   "returns": "No guaranteed return; agent says short-term rentals possible"
+  },
+  "positives": [
+   "Sales filing listed on Medellin city register",
+   "Buyer payments routed to a regulated fiduciaria (Davivienda)",
+   "Large established Colombian builder, launch covered by La Republica"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project filed sales documents with Medellin (Decreto 1077/2015)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.medellin.gov.co/es/secretaria-gestion-y-control-territorial/subsecretaria-de-control-urbanistico/enajenaciones/proyectos-de-vivienda-decreto-1077-de-2015/"
+   },
+   {
+    "claim": "Phase 1 has 556 units on the former Coltabaco lot",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.larepublica.co/empresas/arquitectura-y-concreto-inicio-nuevo-proyecto-residencial-llamado-ciudad-veranova-3932032"
+   },
+   {
+    "claim": "Launched Aug 2024 with 3,000 people registered",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.larepublica.co/empresas/arquitectura-y-concreto-inicio-nuevo-proyecto-residencial-llamado-ciudad-veranova-3932032"
+   },
+   {
+    "claim": "Delivery June 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.metrocuadrado.com/proyecto/veranova-park/19416-C0005"
+   },
+   {
+    "claim": "Buyer funds held by Fiduciaria Davivienda",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lahaus.com/pd/medellin/veranova"
+   },
+   {
+    "claim": "Prices from COP 807.8M to 842.8M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ciencuadras.com/proyecto-de-vivienda/arquitectura-y-concreto-sas-veranova-park-medellin-2386"
+   },
+   {
+    "claim": "Short-term rentals (Airbnb) possible",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propinvest.com/property/veranova/"
+   },
+   {
+    "claim": "Under construction",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.metrocuadrado.com/proyecto/veranova-park/19416-C0005"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propinvest.com/property/veranova/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Medellin, Colombia",
+   "developer_company": "Arquitectura y Concreto S.A.S.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 61,
+   "size_max_m2": 114,
+   "price_min": 807756950,
+   "price_max": 1030650000,
+   "currency": "COP",
+   "deposit_pct": 30,
+   "payment_plan": "COP 5M separation, 30% over 24 to 37 months, 70% at delivery",
+   "foreign_ownership": "Foreigners can buy directly in Colombia; foreign investment registration with Banco de la Republica",
+   "rental_programme": null,
+   "service_charge": "Estimated admin fee COP 4,000 per sq m (LaHaus)",
+   "brand": null,
+   "amenities": [
+    "lobby",
+    "gym",
+    "social room",
+    "phased common areas",
+    "30,000 sq m green areas (masterplan)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Curadurias Urbanas de Medellin (licence); Subsecretaria de Control Urbanistico (sales radicado)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://arquitecturayconcreto.com/ciudadveranova/",
+   "https://propinvest.com/property/veranova/",
+   "https://www.lahaus.com/pd/medellin/veranova",
+   "https://minnd.com.co/property/veranova-park-medellin/",
+   "https://www.metrocuadrado.com/proyecto/veranova-park/19416-C0005",
+   "https://www.ciencuadras.com/proyecto-de-vivienda/arquitectura-y-concreto-sas-veranova-park-medellin-2386",
+   "https://www.larepublica.co/empresas/arquitectura-y-concreto-inicio-nuevo-proyecto-residencial-llamado-ciudad-veranova-3932032",
+   "https://www.medellin.gov.co/es/secretaria-gestion-y-control-territorial/subsecretaria-de-control-urbanistico/enajenaciones/proyectos-de-vivienda-decreto-1077-de-2015/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "wave-house-san-blas-lora-loca",
+  "name": "Wave House San Blas",
+  "developer": "Lora Loca, S.A. de C.V. / LTD (EIA applicant: WHSB, Limitada de C.V.)",
+  "area": "Playa San Blas, La Libertad (Surf City)",
+  "country": "El Salvador",
+  "market": "El Salvador",
+  "stage": "off-plan",
+  "url": "https://www.propilatam.com/en/sv/venta/wave-house-san-blas/1061",
+  "docs_url": "https://www.wavehousesanblas.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: residences, amenities, team page naming developer, architect and rental operator",
+   "portal Propi: studio 61.3 sq m from USD 268,034 to PH 245 sq m USD 1,495,000; delivery Q4 2028; 'permits approved' badge; bank partners LAFISE, Banco Industrial, Davivienda",
+   "architect Elastica: 14 apartment levels over an amenity platform, 'in development'",
+   "operator: Wave House El Zonte generated over USD 600,000 for owners since 2024 (developer team page)",
+   "MARN environmental register: file NFA1915-2025, holder WHSB Ltda. de C.V., entered 4 Dec 2025, status 'awaiting holder response'"
+  ],
+  "note": "Beachfront 14-level condo-hotel tower at San Blas marketed to foreign buyers with hotel-style rental management. A portal advertises 'permits approved', but El Salvador's MARN environmental register shows the project's file NFA1915-2025 (entered Dec 2025) still awaiting the applicant's response. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 268034,
+   "currency": "USD",
+   "title": "freehold condominium (foreigners may own in El Salvador)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Puro Surf Hotel (2017) and Wave House El Zonte (2024) per developer team page",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 4373
+  },
+  "evidence": {
+   "permit": "Portal claims 'permits approved'; MARN SEA register lists WAVE HOUSE SAN BLAS (NFA1915-2025, WHSB Ltda. de C.V.) with status 'Esperando respuesta del titular', i.e. not approved",
+   "escrow": "No escrow or trust for deposits stated; bank partners listed for financing only",
+   "progress": "Architect lists project as 'in development'; no construction updates",
+   "plans": "Portal lists unit models with sizes (studio 61.3 sq m, 2BR 109.2 and 131.2, 3BR 190, PH 245) and floor plan section",
+   "record": "Developer names Puro Surf (2017) and Wave House El Zonte (2024) as previous projects",
+   "returns": "Rental operator cites USD 600,000 revenue at El Zonte; no guarantee or yield promised"
+  },
+  "positives": [
+   "Developer and operator have a completed sister project (Wave House El Zonte)",
+   "Unit sizes and prices published",
+   "Project filed with the environmental regulator (record publicly searchable)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Permits approved",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://sea.ambiente.gob.sv/Home/Getproyectos?page=328"
+   },
+   {
+    "claim": "Environmental application filed by WHSB Ltda. de C.V. on 4 Dec 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sea.ambiente.gob.sv/Home/Getproyectos?page=328"
+   },
+   {
+    "claim": "Delivery Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propilatam.com/en/sv/venta/wave-house-san-blas/1061"
+   },
+   {
+    "claim": "14 levels of apartments over an amenity platform",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elastica.studio/apartamentos/wave-house-san-blas"
+   },
+   {
+    "claim": "Studios from USD 268,034",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propilatam.com/en/sv/venta/wave-house-san-blas/1061"
+   },
+   {
+    "claim": "Developer delivered Wave House El Zonte in 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wavehousesanblas.com/team/"
+   },
+   {
+    "claim": "El Zonte rental pool generated over USD 600,000 for owners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wavehousesanblas.com/team/"
+   },
+   {
+    "claim": "Founders built homes in South Florida via Floridian Builders since 2003",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propilatam.com/en/sv/venta/wave-house-san-blas/1061"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wavehousesanblas.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "La Libertad, El Salvador",
+   "developer_company": "Lora Loca, S.A. de C.V.; EIA holder WHSB, Limitada de C.V.",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 61.3,
+   "size_max_m2": 275,
+   "price_min": 268034,
+   "price_max": 1495000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may hold title to condominium units in El Salvador",
+   "rental_programme": "Hotel-style short-term rental management by Live The Dream; no figures promised for this project",
+   "service_charge": null,
+   "brand": "Wave House",
+   "amenities": [
+    "beach club pool",
+    "wellness club with gym and sauna",
+    "yoga deck",
+    "rooftop restaurant",
+    "beachfront terraces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "MARN (environmental permit); OPAMSS/municipality (construction permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.wavehousesanblas.com/",
+   "https://www.wavehousesanblas.com/team/",
+   "https://www.propilatam.com/en/sv/venta/wave-house-san-blas/1061",
+   "https://www.propilatam.com/sv/venta/casas-y-apartamentos/wave-house-san-blas/1061",
+   "https://www.elastica.studio/apartamentos/wave-house-san-blas",
+   "https://sea.ambiente.gob.sv/Home/Getproyectos?page=328"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "the-elements-placencia-latitude-20",
+  "name": "The Elements",
+  "developer": "Latitude 20 Architecture (Sonia Alvarez, Andrea Bacher)",
+  "area": "Mile 15, Maya Beach, Placencia Peninsula (lagoon side)",
+  "country": "Belize",
+  "market": "Belize",
+  "stage": "under construction",
+  "url": "https://17degreesbelize.com/property/14032-brisa-2br-condo-1550-sq-ft-waterfront-residence-at-the-elements-placencia-lagoon/",
+  "docs_url": "https://theelementsbelize.com/developer-team/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: team page, architect credentials, '30 years and 600 completed projects'",
+   "agents: 1BR Tierra 955 sq ft USD 340,000, 2BR Brisa 1,550 sq ft USD 450,000, prices USD 250,000 to 689,000",
+   "agents: 'funding in place from a local development bank', construction under way, sales launched Q1 2026",
+   "agents: HOA USD 0.40 per sq ft, voluntary rental programme",
+   "listing portal: 'Now selling Building 1, only 3 units available'"
+  ],
+  "note": "Small lagoon-front condominium collection on the Placencia peninsula designed and built by local architects Latitude 20. Agents say construction is under way with local development-bank funding, but no permit, title, escrow, completion date or progress figures are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 250000,
+   "currency": "USD",
+   "title": "strata title (Belize fee simple, open to foreigners) - not confirmed for this project",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer claims over 600 completed design and construction projects in 30 years and work on Hilton, Hyatt and Naia resorts; none listed with dates",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 3125
+  },
+  "evidence": {
+   "permit": "No DOE environmental clearance, building permit or strata plan number published",
+   "escrow": "None stated; agents mention development-bank construction finance only",
+   "progress": "Agents state construction under way; no dates, photos or %",
+   "plans": "Agent listings describe each unit type (Tierra 955 sq ft, Brisa 1,550 sq ft) with room layouts; MLS listings include unit plans",
+   "record": "Developer page claims 600 completed projects and resort work for Hilton, Hyatt, Naia; not independently confirmed",
+   "returns": "Voluntary rental programme to 'offset costs'; no guarantee or yield"
+  },
+  "positives": [
+   "Developer is an established local architecture and build firm",
+   "Unit sizes, prices and HOA rate published",
+   "Construction finance reportedly from a local development bank"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction already under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://belizerealestatemls.com/property/c2002-brisa-2br-condo-1550-sq-ft-waterfront-residence-at-the-elements-placencia-lagoon/"
+   },
+   {
+    "claim": "Funding in place from a local development bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://17degreesbelize.com/property/14031-tierra-1br-condo-955-sq-ft-waterfront-living-at-the-elements-placencia/"
+   },
+   {
+    "claim": "Prices from USD 250,000 to 689,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://17degreesbelize.com/property/14032-brisa-2br-condo-1550-sq-ft-waterfront-residence-at-the-elements-placencia-lagoon/"
+   },
+   {
+    "claim": "Only 3 units left in Building 1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.offibelize.com/status/pre-sale/"
+   },
+   {
+    "claim": "Latitude 20 has 30 years and 600 completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theelementsbelize.com/developer-team/"
+   },
+   {
+    "claim": "Environmental clearance and building permit held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theelementsbelize.com/developer-team/"
+   },
+   {
+    "claim": "Foreign buyers receive strata title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theelementsbelize.com/developer-team/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://17degreesbelize.com/property/14032-brisa-2br-condo-1550-sq-ft-waterfront-residence-at-the-elements-placencia-lagoon/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Placencia, Belize",
+   "developer_company": "Latitude 20 Architecture (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 89,
+   "size_max_m2": null,
+   "price_min": 250000,
+   "price_max": 689000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Belize allows foreign fee-simple ownership; strata title for condos",
+   "rental_programme": "Voluntary rental programme; no figures",
+   "service_charge": "HOA USD 0.40 per sq ft",
+   "brand": null,
+   "amenities": [
+    "private pier and palapa",
+    "kayaks",
+    "pool and jacuzzi",
+    "pickleball court",
+    "rooftop terrace",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Central Building Authority / Village council; Department of Environment (ECP/EIA)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://theelementsbelize.com/developer-team/",
+   "https://17degreesbelize.com/property/14032-brisa-2br-condo-1550-sq-ft-waterfront-residence-at-the-elements-placencia-lagoon/",
+   "https://17degreesbelize.com/property/14031-tierra-1br-condo-955-sq-ft-waterfront-living-at-the-elements-placencia/",
+   "https://belizerealestatemls.com/property/c2002-brisa-2br-condo-1550-sq-ft-waterfront-residence-at-the-elements-placencia-lagoon/",
+   "https://belizemls.net/listings/elegant-lagoon-front-condominium-at-the-elements-placencia-belize-2/",
+   "https://www.offibelize.com/status/pre-sale/",
+   "https://latitude20architecture.com/beach-villas/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "qapital-uribe-schwarzkopf",
+  "name": "Qapital",
+  "developer": "Uribe Schwarzkopf (project company QAPITAL SAS)",
+  "area": "Av. De los Shyris and Av. Republica de El Salvador, La Carolina, Quito",
+  "country": "Ecuador",
+  "market": "Ecuador",
+  "stage": "under construction",
+  "url": "https://www.archdaily.com/es/1040687/kengo-kuma-and-associates-presenta-torre-qapital-su-primer-proyecto-en-ecuador",
+  "docs_url": "https://uribeschwarzkopf.com/qapital/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 32-floor Kengo Kuma tower, studios from 21 sq m",
+   "developer: payment USD 2,000 reservation, 5% down, 35% in instalments, 60% bank credit or own funds",
+   "developer: 'project developed through a Fideicomiso Mercantil'",
+   "developer brochure: 'guarantees a smart investment model with sustained returns' and 'ingresos asegurados' (assured income) from premium short-term rentals",
+   "developer LinkedIn 17 Mar 2026: construction started",
+   "El Universo Sep 2025: USD 52M investment, from USD 69,900, start Jan 2026",
+   "ArchDaily Apr 2026: 509 studios 21 to 36.15 sq m, 125.8 m, delivery 2029, most units sold before works began"
+  ],
+  "note": "509-micro-studio Kengo Kuma tower opposite Parque La Carolina, sold as a short-term-rental investment. Works began in March 2026 (planned January) with delivery 2029; the brochure promises 'assured income' and 'guaranteed' sustained returns, and no licence number or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 69900,
+   "currency": "USD",
+   "title": "freehold horizontal property (foreigners may own in Ecuador)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Project developed through a Fideicomiso Mercantil (developer page footer); trustee not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer states more than 50 years transforming Quito; ArchDaily lists its collaborations with BIG, Jean Nouvel, MAD, MVRDV and Safdie",
+   "units": 509,
+   "payment_plan": "USD 2,000 reservation, 5% down, 35% in monthly instalments, 60% bank credit or own funds",
+   "price_per_m2": 3329
+  },
+  "evidence": {
+   "permit": "No Quito municipal licence (LMU) number published",
+   "escrow": "Developer page: 'El proyecto inmobiliario se desarrolla a traves de un Fideicomiso Mercantil'; trustee and account not named",
+   "progress": "Developer LinkedIn announced construction start 17 Mar 2026; no % or photo series on project site",
+   "plans": "Studio sizes given; no unit plans found on pages opened",
+   "record": "Developer claims 50+ years; ArchDaily names prior collaborations (BIG, Jean Nouvel, MAD, MVRDV, Safdie) without delivery details",
+   "returns": "Brochure: 'Qapital garantiza un modelo de inversion inteligente, con retornos sostenidos' and 'ingresos asegurados'; project site headline 'Rentabilidad segura'"
+  },
+  "positives": [
+   "Construction start and 2029 delivery reported by independent press",
+   "Trust (fideicomiso mercantil) structure stated",
+   "Low entry price and 5% down payment"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "32-floor tower designed by Kengo Kuma with 509 studios",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.archdaily.com/es/1040687/kengo-kuma-and-associates-presenta-torre-qapital-su-primer-proyecto-en-ecuador"
+   },
+   {
+    "claim": "Delivery scheduled for 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.archdaily.com/es/1040687/kengo-kuma-and-associates-presenta-torre-qapital-su-primer-proyecto-en-ecuador"
+   },
+   {
+    "claim": "Construction to start January 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/uribe-schwarzkopf_quito-qapital-uribeschwarzkopf-activity-7439707058314084352-bMO2"
+   },
+   {
+    "claim": "USD 52M investment, units from USD 69,900",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eluniverso.com/noticias/economia/edificio-qapital-constructora-uribe-schwarzkopf-quito-ecuador-rascacielos-nota/"
+   },
+   {
+    "claim": "Most units sold before construction began",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.archdaily.com/es/1040687/kengo-kuma-and-associates-presenta-torre-qapital-su-primer-proyecto-en-ecuador"
+   },
+   {
+    "claim": "Assured income / guaranteed sustained returns from short-term rental",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uribeschwarzkopf.com/wp-content/themes/wordpress-theme/hubfs/Qapita-brochure-digital-Agosto-202527de.pdf?hsLang=es"
+   },
+   {
+    "claim": "Developed through a fideicomiso mercantil",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uribeschwarzkopf.com/qapital/"
+   },
+   {
+    "claim": "Project company is QAPITAL SAS",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://qapital.uribeschwarzkopf.com/"
+   },
+   {
+    "claim": "Municipal building licence held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uribeschwarzkopf.com/qapital/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Quito, Ecuador",
+   "developer_company": "Uribe Schwarzkopf; project company QAPITAL SAS (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio"
+   ],
+   "size_min_m2": 21,
+   "size_max_m2": 36.15,
+   "price_min": 69900,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 5,
+   "payment_plan": "USD 2,000 reservation, 5% down, 35% instalments, 60% at delivery",
+   "foreign_ownership": "Foreigners can own property in Ecuador directly (horizontal property title)",
+   "rental_programme": "Integrated short-term rental management; 'ingresos asegurados' claimed, no % stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "Fornasetti mosaic rooftop pool",
+    "sauna and steam room",
+    "gym",
+    "cinema",
+    "coworking and business centre",
+    "pet spa",
+    "game room",
+    "sky terrace"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio del Distrito Metropolitano de Quito (LMU construction licence)",
+   "brochure_url": "https://uribeschwarzkopf.com/wp-content/themes/wordpress-theme/hubfs/Qapita-brochure-digital-Agosto-202527de.pdf?hsLang=es"
+  },
+  "sources": [
+   "https://uribeschwarzkopf.com/qapital/",
+   "https://qapital.uribeschwarzkopf.com/",
+   "https://www.uribeschwarzkopf.com/en/qapital-en",
+   "https://uribeschwarzkopf.com/wp-content/themes/wordpress-theme/hubfs/Qapita-brochure-digital-Agosto-202527de.pdf?hsLang=es",
+   "https://es.linkedin.com/posts/uribe-schwarzkopf_quito-qapital-uribeschwarzkopf-activity-7439707058314084352-bMO2",
+   "https://www.archdaily.com/es/1040687/kengo-kuma-and-associates-presenta-torre-qapital-su-primer-proyecto-en-ecuador",
+   "https://www.eluniverso.com/noticias/economia/edificio-qapital-constructora-uribe-schwarzkopf-quito-ecuador-rascacielos-nota/",
+   "https://uribeschwarzkopf.com/proyectos-quito-en-construccion/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "torre-quo-brodyfriedman",
+  "name": "Torre Quo",
+  "developer": "BrodyFriedman",
+  "area": "Av. Comodoro Rivadavia 1600 / Vilela, Nunez, Buenos Aires",
+  "country": "Argentina",
+  "market": "Buenos Aires",
+  "stage": "under construction",
+  "url": "https://www.argenprop.com/emprendimientos/emprendimiento-en-nunez--17099234",
+  "docs_url": "https://www.torrequo.com.ar/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: tower with 1 to 4 room units, amenities (semi-olympic indoor pool, coworking, kids and teens club)",
+   "developer news Oct 2025: 24 floors, units 50 to 280 sq m, opening end 2026, 22+ projects in 20 years",
+   "portal Argenprop: 22 floors, under construction, delivery Nov 2026, unit-by-unit USD prices (1BR from USD 255,623; 3BR USD 850,981)",
+   "portal: 40% down, balance in 18 monthly peso instalments adjusted by CAC index, developer-financed"
+  ],
+  "note": "Núñez residential tower by BrodyFriedman due for delivery November 2026, priced in USD with 40% down and CAC-indexed peso instalments. Floor count differs between developer (24) and portals (22); no permit, trust structure or progress percentage is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 255623,
+   "currency": "USD",
+   "title": "freehold (propiedad horizontal; no restrictions on foreigners in CABA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer claims more than 22 projects in over 20 years in Buenos Aires (developer news page); none listed with delivery dates on pages opened",
+   "units": null,
+   "payment_plan": "40% down, balance in 18 monthly peso instalments adjusted by CAC construction cost index",
+   "price_per_m2": 4823
+  },
+  "evidence": {
+   "permit": "No AGC/DGROC permit or plan registration number published",
+   "escrow": "No fideicomiso or deposit protection stated; independent catalogue notes legal structure unconfirmed",
+   "progress": "Portals say 'en construccion'; no % or dated photos found",
+   "plans": "Unit sizes and prices per unit listed on portals; no floor plan drawings retrieved",
+   "record": "Developer claims 22+ projects; not itemised",
+   "returns": "No rental or return promise"
+  },
+  "positives": [
+   "Unit-level USD price list published on portals",
+   "Developer-financed instalments",
+   "Delivery date stated"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Tower has 24 floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.argenprop.com/emprendimientos/emprendimiento-en-nunez--17099234"
+   },
+   {
+    "claim": "Delivery November 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.argenprop.com/emprendimientos/emprendimiento-en-nunez--17099234"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://departamentosenpozo.com.ar/desarrollos-inmobiliarios/torre-quo-nunez/"
+   },
+   {
+    "claim": "1BR from USD 255,623",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://departamentosenpozo.com.ar/desarrollos-inmobiliarios/torre-quo-nunez/"
+   },
+   {
+    "claim": "Developer has completed 22+ projects in 20 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.brodyfriedman.com.ar/notas/torrequo-vivi-mas-arriba"
+   },
+   {
+    "claim": "Located on the corner of Comodoro Rivadavia and Av. del Libertador",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.argenprop.com/emprendimientos/emprendimiento-en-nunez--17099234"
+   },
+   {
+    "claim": "Buyer funds held in a fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://departamentosenpozo.com.ar/desarrollos-inmobiliarios/torre-quo-nunez/"
+   },
+   {
+    "claim": "Building permit registered with the City",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.torrequo.com.ar/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.torrequo.com.ar/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Buenos Aires, Argentina",
+   "developer_company": "BrodyFriedman (legal entity not published)",
+   "developer_projects_delivered": 22,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 41,
+   "size_max_m2": 280,
+   "price_min": 255623,
+   "price_max": 850981,
+   "currency": "USD",
+   "deposit_pct": 40,
+   "payment_plan": "40% down, 18 CAC-indexed peso instalments",
+   "foreign_ownership": "Foreigners can buy freehold in Buenos Aires city (CUIT/CDI needed)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor semi-olympic pool",
+    "outdoor pool and solarium",
+    "gym",
+    "coworking",
+    "cinema",
+    "kids and teens club",
+    "music rehearsal room",
+    "massage room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gobierno de la Ciudad de Buenos Aires (DGROC / AGC)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.torrequo.com.ar/",
+   "https://www.brodyfriedman.com.ar/proyectos/20/torre-quo",
+   "https://news.brodyfriedman.com.ar/notas/torrequo-vivi-mas-arriba",
+   "https://www.argenprop.com/emprendimientos/emprendimiento-en-nunez--17099234",
+   "https://www.inmuebles.clarin.com/emprendimientos/emprendimiento-en-nunez--17099234",
+   "https://departamentosenpozo.com.ar/desarrollos-inmobiliarios/torre-quo-nunez/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "developer": "J.A. Russi Construtora e Incorporadora",
+  "area": "Av. Atlantica 1960, Centro, Balneario Camboriu",
+  "country": "Brazil",
+  "market": "Brazil",
+  "stage": "under construction",
+  "url": "https://guilhermeimoveis.com.br/apartamento-de-luxo-a-venda-no-harmony-ocean-front-em-balneario-camboriu",
+  "docs_url": "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34",
+  "permit_number": "Registro de incorporacao R-13, matricula 135.051, 1o Oficio de Registro de Imoveis de Balneario Camboriu",
+  "docs_listed": [
+   "developer: incorporation R-13 M 135.051 (1o ORIBC)",
+   "developer: construction progress 36% total (foundation 100%, structure 77%, masonry 27%, finishes 12 to 16%)",
+   "developer: ANAC-registered heliport ID SC0108, three leisure floors, rooftop at 185 m",
+   "agent: 61 floors, 48 residential, 90 apartments, 4-suite 200 sq m and 6-suite 410 sq m penthouses, delivery March 2028",
+   "agent: 20% down, 20% at keys, balance over 100 months",
+   "agent: 200 sq m unit BRL 15.23M (Sep 2026); another agent: delivery December 2028"
+  ],
+  "note": "90-apartment, 61-floor beachfront tower on Av. Atlantica by Itapema builder J.A. Russi. The developer publishes the incorporation registration and a 36% progress breakdown; agents quote handover March 2028 or December 2028. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 15231000,
+   "currency": "BRL",
+   "title": "freehold (condominium unit, registered title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": "R-13 M 135.051 (1o ORI Balneario Camboriu)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 36,
+   "progress_updates": true,
+   "developer_delivered": "J.A. Russi founded 1989 in Itapema, described by agents as builder of the region's first resort condominium; no itemised list opened",
+   "units": 90,
+   "payment_plan": "20% down, 20% at keys, balance in up to 100 monthly instalments (agent suggestion)",
+   "price_per_m2": 76155
+  },
+  "evidence": {
+   "permit": "Developer page: 'Incorporacao: R-13 M 135.051 - 1o ORIBC'; agents repeat it. No online registry copy opened",
+   "escrow": "No patrimonio de afetacao or escrow statement found",
+   "progress": "Developer page shows stage-by-stage progress, total 36%",
+   "plans": "No floor plans found on pages opened",
+   "record": "Agent profile: founded 1989, more than thirty years, first resort condominium in the region; no delivered-project list opened",
+   "returns": "No rental guarantee or yield published"
+  },
+  "positives": [
+   "Incorporation registration number published by developer",
+   "Detailed percentage progress by trade",
+   "Long payment plan (100 months) offered"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Incorporation registered as R-13 of matricula 135.051 at 1o ORI Balneario Camboriu",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34"
+   },
+   {
+    "claim": "Construction 36% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34"
+   },
+   {
+    "claim": "Delivery March 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://lemur.net.br/ed-harmony-ocean-front604"
+   },
+   {
+    "claim": "61 floors, 90 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://guilhermeimoveis.com.br/apartamento-de-luxo-a-venda-no-harmony-ocean-front-em-balneario-camboriu"
+   },
+   {
+    "claim": "Heliport homologated by ANAC, ID SC0108",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34"
+   },
+   {
+    "claim": "Tower listed as under construction at 193.8 m (CTBUH data relayed by agency)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nuvemimobiliaria.com.br/predios-mais-altos-balneario-camboriu/"
+   },
+   {
+    "claim": "J.A. Russi founded 1989",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.imobillenegocios.com.br/empreendimento/edificio-harmony-ocean-front-EM74922"
+   },
+   {
+    "claim": "Penthouse sizes 41 sq m (price table) vs 410 sq m (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alvobrimobiliaria.com.br/empreendimentos/balneario-camboriu/harmony-ocean-front/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1989,
+   "developer_hq": "Itapema, Santa Catarina, Brazil",
+   "developer_company": "J.A. Russi Construtora e Incorporadora (CNPJ not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4 suites 200 sq m",
+    "6-suite penthouse"
+   ],
+   "size_min_m2": 200,
+   "size_max_m2": 410,
+   "price_min": 15231000,
+   "price_max": null,
+   "currency": "BRL",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, 20% at keys, up to 100 months",
+   "foreign_ownership": "Foreigners can own urban condominium units in Brazil (CPF required)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool at 185 m",
+    "heliport",
+    "heated indoor pool and spa",
+    "fitness and pilates",
+    "wine bar",
+    "kids splash park",
+    "pub and poker room",
+    "beach boxes"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Cartorio de Registro de Imoveis (incorporation, Lei 4.591/64); Prefeitura de Balneario Camboriu (alvara)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34",
+   "https://guilhermeimoveis.com.br/apartamento-de-luxo-a-venda-no-harmony-ocean-front-em-balneario-camboriu",
+   "https://lemur.net.br/ed-harmony-ocean-front604",
+   "https://primmeimoveis.com/edificios/ed-harmony/balneario-camboriu/centro/184",
+   "https://alvobrimobiliaria.com.br/empreendimentos/balneario-camboriu/harmony-ocean-front/",
+   "https://www.imobillenegocios.com.br/empreendimento/edificio-harmony-ocean-front-EM74922",
+   "https://nuvemimobiliaria.com.br/predios-mais-altos-balneario-camboriu/"
+  ],
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ }
+]

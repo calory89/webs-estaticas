@@ -1,0 +1,1142 @@
+[
+ {
+  "slug": "kalae-ward-village-howard-hughes",
+  "name": "Kalae",
+  "developer": "Howard Hughes Holdings Inc. (developer entity Kalae, LLC)",
+  "area": "Ward Village, Kaka'ako, Honolulu",
+  "country": "USA",
+  "market": "Hawaii",
+  "stage": "under construction",
+  "url": "https://www.kalaewardvillage.com/",
+  "docs_url": "https://www.kalaewardvillage.com/",
+  "docs_listed": [
+   "developer: renders, amenity and residence feature descriptions",
+   "developer brochure (broker site): 38 storeys, 330 one to three bedroom residences, level 1 and level 5 amenity plans",
+   "State of Hawaii Developer's Public Report reg. 8870 with two amendments (DCCA)",
+   "HHH 10-Q: 309 of 329 units under contract, completion 2028"
+  ],
+  "note": "38-storey, 330-residence front-row tower at 1000 Ala Moana Blvd, under construction since January 2024 with Layton Construction. Registered with the Hawaii Real Estate Commission as condo project 8870 (developer Kalae, LLC, fee simple); Howard Hughes moved estimated completion from 2027 (2024 annual report) to 2028 (Q2 2026 10-Q), with 94% under contract. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": "Hawaii condo registration 8870",
+   "plans_published": false,
+   "escrow": "Deposits held by Title Guaranty Escrow Services, Inc. (escrow agreement 3 Jun 2022); since Dec 2024 developer may use deposits for construction under HRS 514B-92, backed by a payment and performance bond (Travelers and Liberty Mutual)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Howard Hughes has completed and sold out eight Ward Village towers (Waiea, Anaha, Ae'o, Ke Kilohana, 'A'ali'i, Ko'ula, Victoria Place, Ulana) plus The Park Ward Village (2026)",
+   "units": 330,
+   "payment_plan": "Staged deposits held in escrow (agent description); no schedule published",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "DCCA Real Estate Branch condo register: registration 8870, KALAE, developer KALAE LLC, 331 units, fee simple; Developer's Public Report effective 13 Sep 2022, amendments 21 Jun 2023 and 13 Dec 2024. Building permit (superstructure) issued 21 Nov 2024 per amendment 2, no number shown.",
+   "escrow": "Amendment 2 to the public report names Title Guaranty Escrow Services, Inc. as escrow depository and states deposits may now be disbursed for construction (HRS 514B-92) with a payment and performance bond dated 23 Oct 2024.",
+   "progress": "No % or dated photo updates on the developer site; HHH filings and Aloha State Daily (Oct 2026) confirm construction under way since Jan 2024.",
+   "plans": "Developer site and brochure show amenity level plans and residence renders, but no unit floor plans; agents say plans are available on request.",
+   "record": "HHH annual report and Aloha State Daily list the completed and sold-out Ward Village towers.",
+   "returns": "No rental programme or yield; agents note short-term rentals are prohibited in Ward Village."
+  },
+  "claims": [
+   {
+    "claim": "Kalae is a registered Hawaii condominium project (reg. 8870) by Kalae, LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/result2?reg=8870"
+   },
+   {
+    "claim": "330 residences in a 38-storey tower",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/result2?reg=8870"
+   },
+   {
+    "claim": "Land is fee simple",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/result2?reg=8870"
+   },
+   {
+    "claim": "Deposits are held by an escrow company",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/docs/8870BA2.pdf"
+   },
+   {
+    "claim": "Deposits stay in escrow until closing",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/docs/8870BA2.pdf"
+   },
+   {
+    "claim": "Superstructure building permit issued 21 Nov 2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/docs/8870BA2.pdf"
+   },
+   {
+    "claim": "Construction began January 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "Completion expected 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ebs.publicnow.com/view/6CAF3FD2AF783A0A8383A71E343C7883720FA57D"
+   },
+   {
+    "claim": "94% of units under contract (309 of 329)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ebs.publicnow.com/view/6CAF3FD2AF783A0A8383A71E343C7883720FA57D"
+   },
+   {
+    "claim": "Developer has delivered and sold out earlier Ward Village towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1981792/000110465925023252/tm252794d2_ars.pdf"
+   },
+   {
+    "claim": "Developer is listed on the NYSE (HHH)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1981792/0001628280-26-053324.txt"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kalaewardvillage.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "Dallas, USA",
+   "developer_company": "Kalae, LLC (Delaware LLC), subsidiary of Howard Hughes Holdings Inc.",
+   "developer_projects_delivered": 9,
+   "developer_units_delivered": null,
+   "listed_or_audited": "NYSE: HHH (SEC 10-K and 10-Q filings)",
+   "construction_start": "2024-01",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": 12,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium title, no restriction on foreign buyers; at least half of units designated for owner-occupants under Hawaii law",
+   "rental_programme": "none (short-term rentals prohibited per agent)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "resort pool",
+    "fitness pool",
+    "spa",
+    "saunas",
+    "fitness studio",
+    "private dining room",
+    "guest suites",
+    "BBQ with pizza oven"
+   ],
+   "lat": 21.293,
+   "lng": -157.858,
+   "permit_authority": "Hawaii Real Estate Commission (condo registration); City and County of Honolulu DPP / HCDA (building permits)",
+   "brochure_url": "https://broker.wardvillage.com/wp-content/uploads/2025/09/Kalae-Details-Brochure-LR.pdf"
+  },
+  "positives": [
+   "Registered condo project with public reports filed with the Hawaii Real Estate Commission",
+   "Payment and performance bond from two major sureties",
+   "Developer is NYSE-listed and discloses sales and timing quarterly",
+   "94% under contract as of June 2026"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.kalaewardvillage.com/",
+   "https://broker.wardvillage.com/wp-content/uploads/2025/09/Kalae-Details-Brochure-LR.pdf",
+   "https://web3.dcca.hawaii.gov/reb/public/result2?reg=8870",
+   "https://web3.dcca.hawaii.gov/reb/public/docs/8870BA2.pdf",
+   "https://ward-village.prezly.com/ward-villager-begins-construction-on-kalae",
+   "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/",
+   "https://ebs.publicnow.com/view/6CAF3FD2AF783A0A8383A71E343C7883720FA57D",
+   "https://www.sec.gov/Archives/edgar/data/1981792/000110465925023252/tm252794d2_ars.pdf",
+   "https://www.hawaiistartshere.com/projects/kalae/"
+  ],
+  "verified_score": 4,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Hawaii condo registration 8870"
+ },
+ {
+  "slug": "ilima-ward-village-howard-hughes-discovery",
+  "name": "'Ilima Ward Village",
+  "developer": "Howard Hughes Holdings Inc. with Discovery Land Company (developer entity Block E Ward Village, LLC)",
+  "area": "Ward Village, Kaka'ako, Honolulu",
+  "country": "USA",
+  "market": "Hawaii",
+  "stage": "off-plan",
+  "url": "https://discoverylandco.com/real-estate/beach-oceanfront-properties/ilima-residence-2201/",
+  "docs_url": "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf",
+  "docs_listed": [
+   "developer real estate guide: 148 residences, 30 floor plans with plan codes and square footage per level (English, Chinese, Japanese)",
+   "Discovery Land listings for individual residences with size and beds",
+   "State of Hawaii Developer's Public Report reg. 9226 (effective 14 Mar 2025) and annual report (Feb 2026)",
+   "HHH 10-Q: 93 of 148 units under contract, completion 2030"
+  ],
+  "note": "33-storey, 148-residence tower on the former Ward Centre site, a Howard Hughes and Discovery Land Company joint venture with Mohala club amenities. Registered as Hawaii condo project 9226 (Block E Ward Village, LLC, fee simple); ground broke 28 Sep 2026 and Ward Centre demolition runs to early 2027, with completion estimated for 2030 and 63% under contract at June 2026. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": "Hawaii condo registration 9226",
+   "plans_published": true,
+   "escrow": "Title Guaranty Escrow Services, Inc. named as escrow depository in the Developer's Public Report; report says deposits are not yet used for construction (Box B)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Howard Hughes has completed and sold out eight Ward Village towers plus The Park Ward Village (2026)",
+   "units": 148,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "DCCA condo register: registration 9226, ILIMA WARD VILLAGE, 1238 Ala Moana Blvd, developer BLOCK E WARD VILLAGE LLC, 33 floors, 148 residential units, fee simple; public report effective 14 Mar 2025, annual report filed 3 Feb 2026.",
+   "escrow": "Public report section 2.3 names Title Guaranty Escrow Services, Inc.; cover notes refer to Box B (deposits not used for construction before closing at that date).",
+   "progress": "No construction updates on developer pages; Aloha State Daily reports groundbreaking 28 Sep 2026 and demolition of Ward Centre to finish early 2027.",
+   "plans": "Real estate guide publishes floor plates for levels 7 to 33 with plan codes and square footage.",
+   "record": "HHH annual report and press list the completed Ward Village towers.",
+   "returns": "No rental or yield language on guide or listings."
+  },
+  "claims": [
+   {
+    "claim": "'Ilima is a registered Hawaii condominium project (reg. 9226)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/result2?reg=9226"
+   },
+   {
+    "claim": "148 residences in a 33-storey tower",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/result2?reg=9226"
+   },
+   {
+    "claim": "Land is fee simple",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/result2?reg=9226"
+   },
+   {
+    "claim": "Deposits held by Title Guaranty Escrow Services",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/docs/9226B.pdf"
+   },
+   {
+    "claim": "Developer files required annual updates",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://web3.dcca.hawaii.gov/reb/public/docs/9226A.pdf"
+   },
+   {
+    "claim": "Groundbreaking held September 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "Completion estimated 2030",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ebs.publicnow.com/view/6CAF3FD2AF783A0A8383A71E343C7883720FA57D"
+   },
+   {
+    "claim": "63% of units under contract (93 of 148) at June 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ebs.publicnow.com/view/6CAF3FD2AF783A0A8383A71E343C7883720FA57D"
+   },
+   {
+    "claim": "Joint venture with Discovery Land Company",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1981792/000110465925023252/tm252794d2_ars.pdf"
+   },
+   {
+    "claim": "Buying a residence includes Mohala club access",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://discoverylandco.com/real-estate/beach-oceanfront-properties/ilima-residence-2201/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "Dallas, USA",
+   "developer_company": "Block E Ward Village, LLC (Howard Hughes / Discovery Land JV)",
+   "developer_projects_delivered": 9,
+   "developer_units_delivered": null,
+   "listed_or_audited": "NYSE: HHH",
+   "construction_start": "2026-09",
+   "handover_promised": "2030",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "6BR",
+    "penthouse"
+   ],
+   "size_min_m2": 166,
+   "size_max_m2": 488,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium title, open to foreign buyers; owner-occupant designation rules apply",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": "Discovery Land Company (Mohala club, membership separate)",
+   "amenities": [
+    "Mohala club on levels 1, 5 and 6",
+    "generous lanai",
+    "high ceilings"
+   ],
+   "lat": 21.295,
+   "lng": -157.856,
+   "permit_authority": "Hawaii Real Estate Commission (condo registration); HCDA and Honolulu DPP (building)",
+   "brochure_url": "https://broker.wardvillage.com/wp-content/uploads/2025/08/%CA%BBIlima-Main-Brochure-English.pdf"
+  },
+  "positives": [
+   "Public report and annual report filed and downloadable from the state register",
+   "Escrow depository named and deposits not yet released to construction at report date",
+   "Detailed floor plates with square footage published in three languages"
+  ],
+  "flags": [],
+  "sources": [
+   "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf",
+   "https://discoverylandco.com/real-estate/beach-oceanfront-properties/ilima-residence-2201/",
+   "https://web3.dcca.hawaii.gov/reb/public/result2?reg=9226",
+   "https://web3.dcca.hawaii.gov/reb/public/docs/9226B.pdf",
+   "https://web3.dcca.hawaii.gov/reb/public/docs/9226A.pdf",
+   "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/",
+   "https://ebs.publicnow.com/view/6CAF3FD2AF783A0A8383A71E343C7883720FA57D",
+   "https://www.sec.gov/Archives/edgar/data/1981792/000110465925023252/tm252794d2_ars.pdf"
+  ],
+  "verified_score": 4,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Hawaii condo registration 9226"
+ },
+ {
+  "slug": "avenia-aventura-fendi-casa-vertical-developments",
+  "name": "Avenia Aventura, Interiors by FENDI Casa",
+  "developer": "Vertical Developments (condo filer Aventura Harbor Holding LLC)",
+  "area": "Aventura",
+  "country": "USA",
+  "market": "Miami",
+  "stage": "off-plan",
+  "url": "https://aveniaaventura.com/",
+  "docs_url": "https://aveniaaventura.com/",
+  "docs_listed": [
+   "developer: 22 residences, 3 and 4 bedroom, two per floor, two rooftop penthouses, amenity list, team",
+   "developer fact sheet (Jan 2025)",
+   "Florida DBPR condo filing PR77773 (Avenia Aventura by Fendi Casa, a condo)",
+   "City of Aventura site plan approval 17 Mar 2025, status permitting underway (Aug 2025)"
+  ],
+  "note": "Boutique 22-residence waterfront condo at 20605 NE 34th Ave with FENDI Casa interiors, launched Jan 2025 from $5M with completion promised for the first half of 2027. The city listed it as approved but not yet under construction (permitting underway) in Aug 2025, and no groundbreaking has been reported; a $6.75M bridge loan closed in Dec 2025. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 5000000,
+   "currency": "USD",
+   "title": "freehold condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": "Florida DBPR condo filing PR77773",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 22,
+   "payment_plan": "Reported by agents: 5% reservation, 15% contract, 10% groundbreaking, 10% top-off, 60% closing",
+   "price_per_m2": 15371
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary extract lists project PR77773 'Avenia Aventura by Fendi Casa, a condo', developer Aventura Harbor Holding LLC, Miami-Dade. City of Aventura administrative site plan approval 17 Mar 2025. No building permit number published.",
+   "escrow": "No escrow agent or deposit protection named on the developer site or fact sheet.",
+   "progress": "No construction updates published. City of Aventura development report (updated 4 Aug 2025) lists the project under approved developments not yet under construction, status permitting underway.",
+   "plans": "Developer site describes 3 and 4 bedroom floor plans but publishes renders only, no unit plans.",
+   "record": "Agents quote Vertical Developments as having 30+ completed buildings in Peru and Miami; no named delivered projects on the project site.",
+   "returns": "No rental or yield language found."
+  },
+  "claims": [
+   {
+    "claim": "Condominium filed with Florida DBPR (PR77773)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Site plan approved by City of Aventura (17 Mar 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cityofaventura.com/DocumentCenter/View/133"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://cityofaventura.com/DocumentCenter/View/133"
+   },
+   {
+    "claim": "Completion in the first half of 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vertical-developments.com/fendi-casa-luxury-condo-coming-to-south-florida/"
+   },
+   {
+    "claim": "16-storey building",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://cityofaventura.com/DocumentCenter/View/133"
+   },
+   {
+    "claim": "22 residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/01/17/vertical-developments-launches-fendi-casa-branded-condos/"
+   },
+   {
+    "claim": "Prices from $5 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/01/17/vertical-developments-launches-fendi-casa-branded-condos/"
+   },
+   {
+    "claim": "Developer bought the site for $7.5M in 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/01/17/vertical-developments-launches-fendi-casa-branded-condos/"
+   },
+   {
+    "claim": "Project financed (bridge loan $6.75M, Dec 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://broracapital.com/news-deal-closings/"
+   },
+   {
+    "claim": "Developer has delivered 30+ buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://joshsteinrealtor.com/new-construction/avenia-aventura/"
+   },
+   {
+    "claim": "Escrow of deposits",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aveniaaventura.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "Aventura Harbor Holding LLC (DBPR filer)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 325,
+   "size_max_m2": null,
+   "price_min": 5000000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "5/15/10/10/60 (agent reported)",
+   "foreign_ownership": "Freehold condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "FENDI Casa (interiors)",
+   "amenities": [
+    "private marina",
+    "rooftop pool and cabanas",
+    "spa with sauna and steam",
+    "gym and Pilates studio",
+    "library",
+    "games room",
+    "private event salon"
+   ],
+   "lat": 25.966,
+   "lng": -80.135,
+   "permit_authority": "City of Aventura Community Development (site plan, building permits); Florida DBPR (condo filing)",
+   "brochure_url": "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Avenia%20-%20Fact%20Sheet.pdf"
+  },
+  "positives": [
+   "Condo offering filed with the Florida regulator",
+   "City site plan approval on public record"
+  ],
+  "flags": [],
+  "sources": [
+   "https://aveniaaventura.com/",
+   "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Avenia%20-%20Fact%20Sheet.pdf",
+   "https://therealdeal.com/miami/2025/01/17/vertical-developments-launches-fendi-casa-branded-condos/",
+   "https://vertical-developments.com/fendi-casa-luxury-condo-coming-to-south-florida/",
+   "https://cityofaventura.com/DocumentCenter/View/133",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://broracapital.com/news-deal-closings/",
+   "https://www.rehubmiami.com/blog/avenia-aventura-guide",
+   "https://www.millionluxury.com/news/before-reserving-at-avenia-aventura-deposit-timing-construction-risk-and-contract-milestones-to-review",
+   "https://joshsteinrealtor.com/new-construction/avenia-aventura/"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Florida DBPR condo filing PR77773"
+ },
+ {
+  "slug": "888-brickell-dolce-gabbana-jds",
+  "name": "888 Brickell by Dolce&Gabbana",
+  "developer": "JDS Development Group (condo filer 888 Brickell Owner, LLC)",
+  "area": "Brickell, Miami",
+  "country": "USA",
+  "market": "Miami",
+  "stage": "off-plan",
+  "url": "https://www.condogrid.io/news/jds-shops-a-minority-stake-in-its-1049-foot-dolce-gabbana-tower-at-888-brickell",
+  "docs_url": "https://jdsdevelopment.com/",
+  "docs_listed": [
+   "developer: project named in portfolio (888 Brickell Avenue)",
+   "agent/portal: 259 residences 1 to 4 bedrooms, entry price about $2M, hotel programme for split units",
+   "Florida DBPR condo filing PR77226 (888 Brickell Condo)",
+   "news: FAA-cleared 1,049 ft, county zoning approval June 2024"
+  ],
+  "note": "Planned 90-storey, 1,049 ft Dolce&Gabbana branded condo-hotel with 259 residences, sold since 2024 with about $350M of presales reported. Condo filed with Florida DBPR (PR77226), but as of Oct 2026 no construction loan has closed and JDS is seeking an equity partner; a broker commission suit and lien claims have been reported. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 2000000,
+   "currency": "USD",
+   "title": "freehold condominium (condo-hotel)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": "Florida DBPR condo filing PR77226",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "JDS names The Brooklyn Tower, 111 West 57th Street, The American Copper Buildings and Walker Tower among its projects",
+   "units": 259,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary extract: project PR77226 '888 Brickell Condo', developer 888 Brickell Owner, LLC (104 Fifth Ave, New York). Miami-Dade zoning approval June 2024 reported by Groundbreak; no building permit number published.",
+   "escrow": "Nothing published on deposit escrow.",
+   "progress": "No developer updates. The Real Deal and CondoGrid (Oct 2026) report demolition done in 2025, no construction start and no closed construction loan.",
+   "plans": "No unit plans found on developer pages; portals list unit mix only.",
+   "record": "JDS site lists delivered towers (The Brooklyn Tower, 111 West 57th, Walker Tower).",
+   "returns": "Hotel programme for lock-off suites mentioned; no guaranteed or projected yield found."
+  },
+  "claims": [
+   {
+    "claim": "Condominium filed with Florida DBPR (PR77226)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Site bought for $61.2M in 2024 with a $35.7M G4 loan",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/10/09/michael-sterns-brickell-supertall-site-seeking-investors/"
+   },
+   {
+    "claim": "Construction financing in place",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/10/09/michael-sterns-brickell-supertall-site-seeking-investors/"
+   },
+   {
+    "claim": "Completion 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.groundbreak.city/miami/888-brickell-dolce-gabbana-approved-brickell"
+   },
+   {
+    "claim": "About $350M of presales",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand/"
+   },
+   {
+    "claim": "1,049 ft height cleared",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.condogrid.io/news/jds-shops-a-minority-stake-in-its-1049-foot-dolce-gabbana-tower-at-888-brickell"
+   },
+   {
+    "claim": "259 residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condogrid.io/news/jds-shops-a-minority-stake-in-its-1049-foot-dolce-gabbana-tower-at-888-brickell"
+   },
+   {
+    "claim": "Developer has delivered major towers (Brooklyn Tower, 111 W 57th)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jdsdevelopment.com/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jdsdevelopment.com/"
+   },
+   {
+    "claim": "Project free of disputes",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2002,
+   "developer_hq": "New York and Miami, USA",
+   "developer_company": "888 Brickell Owner, LLC (DBPR filer)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2000000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium, no restriction on foreign buyers",
+   "rental_programme": "Optional hotel programme for lock-off suites (no figures)",
+   "service_charge": null,
+   "brand": "Dolce&Gabbana",
+   "amenities": [
+    "pool club",
+    "lap pool",
+    "indoor padel court",
+    "golf simulator",
+    "spa",
+    "theater",
+    "yoga and Pilates studio",
+    "two lobby bars"
+   ],
+   "lat": 25.765,
+   "lng": -80.192,
+   "permit_authority": "City of Miami / Miami-Dade County (zoning, building); Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo offering filed with Florida DBPR",
+   "Brand and design team publicly confirmed",
+   "Developer has completed landmark towers in New York"
+  ],
+  "flags": [
+   {
+    "text": "The Real Deal reported that One Sotheby's International Realty sued a JDS affiliate in May 2026 seeking more than $500,000 in allegedly unpaid commissions and costs; other vendors filed liens against the property.",
+    "source": "https://therealdeal.com/miami/2026/10/09/michael-sterns-brickell-supertall-site-seeking-investors/"
+   },
+   {
+    "text": "The Real Deal reported a construction lien lawsuit by Kimley-Horn over about $72,000 in allegedly unpaid work (March 2026).",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand/"
+   },
+   {
+    "text": "As of October 2026 no construction loan had closed and JDS was seeking a minority equity investor; JDS's nearby Mercedes-Benz Places faces foreclosure litigation with its lender, which JDS disputes.",
+    "source": "https://beyondsquarefootage.com/beyondsquarefootage/2026/10/24/the-debt-behind-miamis-branded-towers"
+   }
+  ],
+  "sources": [
+   "https://jdsdevelopment.com/",
+   "https://www.condogrid.io/news/jds-shops-a-minority-stake-in-its-1049-foot-dolce-gabbana-tower-at-888-brickell",
+   "https://www.groundbreak.city/miami/888-brickell-dolce-gabbana-approved-brickell",
+   "https://therealdeal.com/miami/2026/10/09/michael-sterns-brickell-supertall-site-seeking-investors/",
+   "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand/",
+   "https://beyondsquarefootage.com/beyondsquarefootage/2026/10/24/the-debt-behind-miamis-branded-towers",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Florida DBPR condo filing PR77226"
+ },
+ {
+  "slug": "enchanted-garden-resort-phase-2-damai",
+  "name": "Enchanted Garden Resort, Phase 2",
+  "developer": "Damai Resort Investors LLC",
+  "area": "Lake Buena Vista / International Drive area, Orlando",
+  "country": "USA",
+  "market": "Orlando",
+  "stage": "off-plan",
+  "url": "https://www.selectarealty.us/empreendimentos/enchanted-garden",
+  "docs_url": "https://discoverenchantedgarden.com/",
+  "docs_listed": [
+   "developer: 4BR 3.5BA three-level townhomes, short-term rental zoning, amenity list, Phase 2 in pre-construction",
+   "agent (Brazil-facing): Phase 2 of 63 unfurnished units from $660,000 to $699,000, 185 sq m",
+   "Florida DBPR condo filings PR77553 (Enchanted Garden 1) and PR77682 (Enchanted Garden II)"
+  ],
+  "note": "Short-term-rental townhome resort under 2 miles from Walt Disney World, marketed mainly through Brazilian agencies; Phase 1 has 22 furnished units (built 2009 per MLS) and Phase 2 of 63 units is in pre-sale from about $660,000. Damai Resort Investors LLC has filed Enchanted Garden II as a condo with Florida DBPR (PR77682); no construction start, completion date or escrow details are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 660000,
+   "currency": "USD",
+   "title": "freehold condominium townhome",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "Florida DBPR condo filing PR77682",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 63,
+   "payment_plan": null,
+   "price_per_m2": 3568
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary extract lists PR77682 'Enchanted Garden II Condo' and PR77553 'Enchanted Garden 1 Condo', developer Damai Resort Investors LLC, Orange County. No building permit number published.",
+   "escrow": "No escrow or deposit protection mentioned on developer or agent pages.",
+   "progress": "Developer says only that Phase 2 is in pre-construction; no dates or photos.",
+   "plans": "Agent pages give size (185 sq m) and bedroom count but no floor plans; another agent shows a '4BR 1995 plan' label without a drawing.",
+   "record": "Phase 1 townhomes exist (MLS lists year built 2009); the site does not say who built them or name other delivered projects.",
+   "returns": "Developer stresses 'immediate income potential' and Airbnb zoning but gives no guaranteed or projected return."
+  },
+  "claims": [
+   {
+    "claim": "Phase 2 filed as a condominium with Florida DBPR",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Units are approved for short-term rental",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discoverenchantedgarden.com/"
+   },
+   {
+    "claim": "Phase 1 of 22 units completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://windermereintrealty.com/fl/orlando/enchanted-garden-resort/14519-damai-lane/"
+   },
+   {
+    "claim": "Phase 1 units are new",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://windermereintrealty.com/fl/orlando/enchanted-garden-resort/14519-damai-lane/"
+   },
+   {
+    "claim": "Phase 2 of 63 units from $660,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.selectarealty.us/empreendimentos/enchanted-garden"
+   },
+   {
+    "claim": "Less than 2 miles from Walt Disney World",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discoverenchantedgarden.com/"
+   },
+   {
+    "claim": "Construction of Phase 2 started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discoverenchantedgarden.com/"
+   },
+   {
+    "claim": "Deposits protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discoverenchantedgarden.com/"
+   },
+   {
+    "claim": "Prices set to rise when Phase 2 develops",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discoverenchantedgarden.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Orlando, USA",
+   "developer_company": "Damai Resort Investors LLC (DBPR filer, 5728 Major Blvd, Orlando)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4BR townhome",
+    "5BR townhome"
+   ],
+   "size_min_m2": 185,
+   "size_max_m2": 185,
+   "price_min": 660000,
+   "price_max": 699000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium townhome, no restriction on foreign buyers",
+   "rental_programme": "Optional property management; short-term rentals allowed (developer)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "Olympic-length pool",
+    "hot tub",
+    "gym",
+    "spa",
+    "themed gardens",
+    "clubhouse and fire pit",
+    "gated access"
+   ],
+   "lat": 28.37,
+   "lng": -81.5,
+   "permit_authority": "Orange County Building (permits); Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filings for both phases on the Florida DBPR register",
+   "Existing Phase 1 lets buyers inspect the product"
+  ],
+  "flags": [],
+  "sources": [
+   "https://discoverenchantedgarden.com/",
+   "https://www.selectarealty.us/empreendimentos/enchanted-garden",
+   "https://www.francisrossirealtor.com/enchanted-garden",
+   "https://windermereintrealty.com/fl/orlando/enchanted-garden-resort/14519-damai-lane/",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+  ],
+  "verified_score": 1,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Florida DBPR condo filing PR77682"
+ },
+ {
+  "slug": "one-lady-bird-lake-related-texas",
+  "name": "One Lady Bird Lake",
+  "developer": "Related Texas (Related Companies)",
+  "area": "South Central Waterfront, Austin",
+  "country": "USA",
+  "market": "Austin",
+  "stage": "under construction",
+  "url": "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php",
+  "docs_url": "https://oneladybirdlake.com/",
+  "docs_listed": [
+   "developer: 1 to 4 bedroom homes, amenity floors (pool, spa, golf simulator, co-working), sales gallery address",
+   "developer: construction milestones section",
+   "City of Austin permits 2025-091151 to 2025-091230: condo finish-out per floor, contractor Rogers-O'Brien"
+  ],
+  "note": "18-storey waterfront tower at 125 South First St with 101 for-sale condos (plus rentals in the wider project), designed by Kohn Pedersen Fox, under construction with completion expected early 2028; sales opened Oct 2026. City of Austin open data shows active finish-out permits for condo floors 1 to 18 issued 24 Jul 2025 to contractor Rogers-O'Brien. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": "City of Austin BP 2025-091151 (condo lobby finish-out; floors 3-18 permits 2025-091157 to 2025-091230)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 101,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Developer does not publish a permit number. City of Austin issued-permits open data lists BP 2025-091151 (finish-out incl. condo lobby) and per-floor finish-out permits for 125 S 1st St, issued 24 Jul 2025, status Active, contractor Rogers-O'Brien Construction.",
+   "escrow": "No escrow or deposit information published.",
+   "progress": "Developer site has a 'now rising' construction milestones section; Statesman (29 Oct 2026) reports the tower under construction; city permits show MEP and plumbing permits issued Jan to May 2026.",
+   "plans": "Site describes 1 to 4 bedroom homes but publishes no unit plans.",
+   "record": "Project site does not name completed projects; Statesman notes Related's other South Central Waterfront activity without listing deliveries.",
+   "returns": "No rental or yield claims."
+  },
+  "claims": [
+   {
+    "claim": "Tower under construction at 125 South First St",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'"
+   },
+   {
+    "claim": "Condo finish-out permits issued for floors 1 to 18",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'"
+   },
+   {
+    "claim": "General contractor is Rogers-O'Brien Construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'"
+   },
+   {
+    "claim": "18 storeys",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'"
+   },
+   {
+    "claim": "101 for-sale condominiums",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php"
+   },
+   {
+    "claim": "Completion early 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php"
+   },
+   {
+    "claim": "235 feet of waterfront",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php"
+   },
+   {
+    "claim": "Sales have begun with contracts going out weekly",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oneladybirdlake.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Austin, USA (Related Texas)",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-07",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool deck",
+    "spa suite",
+    "yoga and fitness studios",
+    "golf simulator lounge",
+    "co-working and private offices",
+    "private motor court"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Austin Development Services Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permits and contractor visible on City of Austin open data",
+   "Developer publishes construction milestones"
+  ],
+  "flags": [],
+  "sources": [
+   "https://oneladybirdlake.com/",
+   "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php",
+   "https://www.oftmw.com/projects/one-lady-bird-lake/",
+   "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "City of Austin BP 2025-091151 (condo lobby finish-out; floors 3-18 permits 2025-091157 to 2025-091230)"
+ }
+]

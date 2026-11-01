@@ -1,0 +1,2183 @@
+[
+ {
+  "slug": "grand-park-living-grand-invest-varna",
+  "name": "GRAND Park & Living",
+  "developer": "Grand Invest Varna OOD (Гранд Инвест Варна ООД)",
+  "area": "St. St. Constantine and Helena resort, Varna",
+  "country": "Bulgaria",
+  "market": "Bulgaria",
+  "stage": "off-plan",
+  "url": "https://www.grandpark.bg/",
+  "docs_url": "https://www.grandpark.bg/",
+  "docs_listed": [
+   "developer: interactive building picker A1-A4, B2-B4, C1-C4 with free apartments",
+   "developer: amenities (35,000 m2 park, mineral pools, SPA, retail park)",
+   "trade press: 333 apartments, 60 hotel residences, 889 parking spaces, construction start April 2026, completion 2029",
+   "Varna municipality: building permit RS 1/05.01.2026 published in the AGUP register"
+  ],
+  "note": "Large first-line resort complex near Varna by Grand Invest Varna OOD: 333 apartments and 60 hotel residences, construction start April 2026 and completion 2029 per a June 2026 trade interview. Varna's AGUP register lists building permit 1/05.01.2026 for this plot and investor, but the developer site does not publish it; a new environmental notice for three residential buildings on the same plot was filed in Oct 2026. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 393,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "Not on the developer site. Varna AGUP 2026 permit register lists RS 1/05.01.2026 for a complex of four residential buildings and aparthotel on plot 10135.2569.465, St. St. Constantine and Helena, investor Grand Invest Varna OOD",
+   "escrow": null,
+   "progress": "No construction update or % on the developer site; trade interview only gives a planned April 2026 start",
+   "plans": "Developer site has a building picker but no floor plans were visible in the text we could open",
+   "record": "No delivered projects named by the developer",
+   "returns": "No guaranteed return or yield wording on the developer site"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit issued for the complex",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://agup.varna.bg/index.php/rs-agup-2022-26"
+   },
+   {
+    "claim": "Investor is Grand Invest Varna OOD, managers Hristo Mirchev and Miroslav Shalev",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://agup.varna.bg/index.php/rs-agup-2022-26"
+   },
+   {
+    "claim": "Located in St. St. Constantine and Helena resort",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://agup.varna.bg/index.php/rs-agup-2022-26"
+   },
+   {
+    "claim": "333 apartments and 60 hotel residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gradat.bg/content/simply-iconic-grand-park-living-kk-sv-sv-konstantin-i-elena"
+   },
+   {
+    "claim": "Construction started April 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gradat.bg/content/simply-iconic-grand-park-living-kk-sv-sv-konstantin-i-elena"
+   },
+   {
+    "claim": "Completion in 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gradat.bg/content/simply-iconic-grand-park-living-kk-sv-sv-konstantin-i-elena"
+   },
+   {
+    "claim": "Plot area 47,816 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thesite24.net/nov-masthaben-zhilisthen-kompleks-s-basejni-i-sportni-igristha-se-planira-v-sv-sv-konstantin-i-elena/"
+   },
+   {
+    "claim": "Project scope is four residential buildings plus aparthotel",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://thesite24.net/nov-masthaben-zhilisthen-kompleks-s-basejni-i-sportni-igristha-se-planira-v-sv-sv-konstantin-i-elena/"
+   },
+   {
+    "claim": "Mineral water pools (five outdoor, one indoor)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grandpark.bg/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grandpark.bg/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Varna, Bulgaria",
+   "developer_company": "Grand Invest Varna OOD (ID shown as 20787052 in the AGUP register)",
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2029",
+   "unit_types": [
+    "apartments",
+    "hotel residences"
+   ],
+   "foreign_ownership": "EU citizens can own apartments directly; non-EU buyers can own apartments (land restrictions apply to land only)",
+   "rental_programme": "60 hotel residences with hotel services (no figures stated)",
+   "amenities": [
+    "35,000 m2 park",
+    "five outdoor mineral pools",
+    "indoor mineral pool",
+    "SPA and wellness",
+    "fitness",
+    "padel and beach volleyball",
+    "four restaurants",
+    "retail park"
+   ],
+   "permit_authority": "Varna municipality, Chief Architect (AGUP)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permit 1/05.01.2026 appears in Varna municipality's public register",
+   "Named architect (STARH) and contractors (Bigla III, One Art) in trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.grandpark.bg/",
+   "https://gradat.bg/content/simply-iconic-grand-park-living-kk-sv-sv-konstantin-i-elena",
+   "https://agup.varna.bg/index.php/rs-agup-2022-26",
+   "https://thesite24.net/nov-masthaben-zhilisthen-kompleks-s-basejni-i-sportni-igristha-se-planira-v-sv-sv-konstantin-i-elena/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "emperium-2-venus-lux",
+  "name": "Emperium 2",
+  "developer": "Venus Lux OOD (Венус Лукс ООД)",
+  "area": "Sveti Vlas, Nessebar municipality",
+  "country": "Bulgaria",
+  "market": "Bulgaria",
+  "stage": "under construction",
+  "url": "https://www.bratanov.bg/en/estate/view/1806",
+  "docs_url": "https://www.venuslux.com/complexbg/1",
+  "docs_listed": [
+   "developer: buildings A, B, C pages, list of completed projects",
+   "agent (Bratanov): prices studio from EUR 84,700, 1BR from EUR 121,000, 2BR from EUR 358,409; plans per building; completion Dec 2026; maintenance EUR 12/m2",
+   "agent (Oazis Realty): layouts, 'guaranteed profitability 3-5%' field, payment EUR 2,000 deposit and 100% at notary deed",
+   "agent (MTT): building A 58 apartments, completion Dec 2026"
+  ],
+  "note": "Three-building complex (about 230 apartments) 200 m from the sea in Sveti Vlas by local builder Venus Lux OOD, registered since 2004. Agents give completion Dec 2026 and turnkey finish; one agent lists 'guaranteed profitability 3-5%', the developer itself makes no such claim. No permit number, deposit protection or % progress published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 84700,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer site names completed projects Polarstar Beach, Mery Beach, Complex Rodina, Siana 1, Siana 2, Victorio 1 in Sveti Vlas",
+   "units": 230,
+   "payment_plan": "EUR 2,000 to 5,000 deposit, balance at notary deed; deferred payment until Dec 2026 also offered (agents)",
+   "price_per_m2": 2402
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Agents describe it as under construction with Dec 2026 completion; no % or dated photos",
+   "plans": "Bratanov and Oazis Realty pages publish building plans and layouts",
+   "record": "Developer homepage lists six completed projects in Sveti Vlas; company registered 2004 (registry)",
+   "returns": "Oazis Realty listing field 'Guaranteed profitability 3-5%'; developer site makes no return claim"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Developer Venus Lux OOD is a registered active company (EIK 102901724)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://uic.bg/102901724"
+   },
+   {
+    "claim": "Developer has 15+ years in construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://papagal.bg/eik/102901724/e094"
+   },
+   {
+    "claim": "Completed projects Polarstar Beach, Mery Beach, Siana 1 and 2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.venuslux.com/"
+   },
+   {
+    "claim": "Three buildings with 60, 111 and 59 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bratanov.bg/en/estate/view/1806"
+   },
+   {
+    "claim": "Building A has 58 apartments over seven floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://svetivlasproperties.com/en/for-sale-apartments-from-the-builder-sveti-vlas-1098.html"
+   },
+   {
+    "claim": "Completion December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bratanov.bg/en/estate/view/1806"
+   },
+   {
+    "claim": "Studio from EUR 84,700",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oazisrealty.com/en/complexes/emperium-2-sveti-vlas"
+   },
+   {
+    "claim": "Guaranteed profitability 3-5%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oazisrealty.com/en/complexes/emperium-2-sveti-vlas"
+   },
+   {
+    "claim": "200 m from the sea (another agent says 270 m, third line)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://oazisrealty.com/en/complexes/emperium-2-sveti-vlas"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.venuslux.com/complexbg/1"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2004,
+   "developer_hq": "Sveti Vlas, Bulgaria",
+   "developer_company": "Venus Lux OOD, EIK 102901724, manager Blagoy Filipov (90% owner)",
+   "developer_projects_delivered": 6,
+   "listed_or_audited": null,
+   "handover_promised": "2026-Q4",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 35.26,
+   "price_min": 84700,
+   "deposit_pct": null,
+   "payment_plan": "Deposit EUR 2,000 to 5,000, 100% at notary deed, or staged payments to Dec 2026",
+   "foreign_ownership": "Direct apartment ownership by title deed",
+   "rental_programme": "Agent claims 3-5% guaranteed profitability; no developer programme published",
+   "service_charge": "EUR 12 per m2 per year",
+   "amenities": [
+    "swimming pool",
+    "landscaping",
+    "video surveillance",
+    "restricted owner access",
+    "playground",
+    "closed parking"
+   ],
+   "permit_authority": "Nessebar municipality",
+   "developer_units_delivered": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_max_m2": null,
+   "price_max": null,
+   "currency": "EUR",
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer is a long-standing registered local builder with named completed buildings",
+   "Per-building plans and prices published by agents"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.venuslux.com/",
+   "https://www.venuslux.com/complexbg/1",
+   "https://www.bratanov.bg/en/estate/view/1806",
+   "https://oazisrealty.com/en/complexes/emperium-2-sveti-vlas",
+   "https://svetivlasproperties.com/en/for-sale-apartments-from-the-builder-sveti-vlas-1098.html",
+   "https://uic.bg/102901724",
+   "https://papagal.bg/eik/102901724/e094"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "villas-dunes-estate-costa-navarino",
+  "name": "The Villas at The Dunes Estate (Navarino Dunes)",
+  "developer": "Costa Navarino S.A. (formerly TEMES S.A.)",
+  "area": "Navarino Dunes, Costa Navarino, Messinia",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "under construction",
+  "url": "https://www.costanavarino.com/navarinoresidences/lp-2025-2026-the-dunes-estate-villas-navarino-dunes/",
+  "docs_url": "https://www.costanavarino.com/navarinoresidences/lp-2025-2026-the-dunes-estate-villas-navarino-dunes/",
+  "docs_listed": [
+   "developer: 10 turn-key villas by K-Studio, 'currently under development', 6 x 4+1BR and 4 x 5+1BR",
+   "developer: from EUR 5.9M plus 3.09% transfer tax, interior 390-445 m2, plots 1,365-2,530 m2, pools 63-70 m2",
+   "developer: energy class A, flexible rental schemes, owners' club, facility management",
+   "developer: interactive masterplan of neighbourhoods (Sea Dunes, Olive Grove, Rolling Greens, Dunes Estate)"
+  ],
+  "note": "Gated enclave of 10 K-Studio villas inside the Navarino Dunes resort, from EUR 5.9M, described by the developer as under development. The developer (TEMES, renamed Costa Navarino S.A. in a Feb 2026 restructuring) has delivered four operating five-star hotels and earlier villa neighbourhoods; its audited 2025 accounts show EUR 43.25M of revenue from homes under construction. No permit number, deposit protection or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 5900000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Costa Navarino operates The Romanos, The Westin, W Costa Navarino and Mandarin Oriental, four golf courses, and sold out the Westin Apartments and Rolling Greens villas (developer site and independent press)",
+   "units": 10,
+   "payment_plan": null,
+   "price_per_m2": 15128
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Only 'currently under development'; no % or dated photos",
+   "plans": "Interior sizes and plot sizes published; no floor plans on the page",
+   "record": "ot.gr (1 Nov 2026) reporting the 2025 accounts: four five-star hotels operating, residential sales revenue EUR 43.25M from homes under construction",
+   "returns": "Flexible rental schemes mentioned with no guaranteed figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer has four operating five-star hotels at Costa Navarino",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ot.gr/2026/11/01/tourismos/costa-navarino-ayksimena-esoda-sta-1904-ekat-eyro-kai-nea-etairiki-domi-me-ti-dimiourgia-tis-ensofi/"
+   },
+   {
+    "claim": "Developer sells residences under construction at Navarino Dunes and Navarino Bay",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ot.gr/2026/11/01/tourismos/costa-navarino-ayksimena-esoda-sta-1904-ekat-eyro-kai-nea-etairiki-domi-me-ti-dimiourgia-tis-ensofi/"
+   },
+   {
+    "claim": "TEMES renamed Costa Navarino S.A. after Feb 2026 restructuring under ENSOFI",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ot.gr/2026/11/01/tourismos/costa-navarino-ayksimena-esoda-sta-1904-ekat-eyro-kai-nea-etairiki-domi-me-ti-dimiourgia-tis-ensofi/"
+   },
+   {
+    "claim": "Group revenue 2024 EUR 172.4M with strong holiday-home sales",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kathimerini.gr/economy/business/563954113/dipsifios-rythmos-anaptyxis-kai-ylopoiisi-ependyseon-gia-temes/"
+   },
+   {
+    "claim": "Group borrowing EUR 605M at end 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ot.gr/2026/11/01/tourismos/costa-navarino-ayksimena-esoda-sta-1904-ekat-eyro-kai-nea-etairiki-domi-me-ti-dimiourgia-tis-ensofi/"
+   },
+   {
+    "claim": "10 villas at The Dunes Estate currently under development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.costanavarino.com/navarinoresidences/lp-2025-2026-the-dunes-estate-villas-navarino-dunes/"
+   },
+   {
+    "claim": "Price from EUR 5.9M plus 3.09% transfer tax",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.costanavarino.com/navarinoresidences/lp-2025-2026-the-dunes-estate-villas-navarino-dunes/"
+   },
+   {
+    "claim": "300 m from the beach with private path",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.costanavarino.com/navarinoresidences/lp-2025-2026-the-dunes-estate-villas-navarino-dunes/"
+   },
+   {
+    "claim": "Westin Apartments and Rolling Greens sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurywanderings.com/costa-navarino-residences/"
+   },
+   {
+    "claim": "Freehold ownership for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.costanavarino.com/navarinoresidences/residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Athens / Messinia, Greece",
+   "developer_company": "Costa Navarino S.A. (former TEMES S.A.), subsidiary structure under ENSOFI S.A.",
+   "listed_or_audited": "Unlisted; audited consolidated accounts reported in press (2025 revenue EUR 190.4M)",
+   "unit_types": [
+    "4+1BR villa",
+    "5+1BR villa"
+   ],
+   "size_min_m2": 390,
+   "size_max_m2": 445,
+   "price_min": 5900000,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "Flexible rental schemes via resort management, no figures",
+   "brand": "Costa Navarino",
+   "amenities": [
+    "private pool",
+    "gated community",
+    "beach path",
+    "owners' club",
+    "resort access",
+    "golf courses",
+    "24/7 support"
+   ],
+   "lat": 36.996,
+   "lng": 21.66,
+   "permit_authority": "Greek Ministry of Environment / regional building authority (YDOM)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer with long delivery record and four operating five-star hotels on site",
+   "Audited accounts covered by financial press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.costanavarino.com/navarinoresidences/lp-2025-2026-the-dunes-estate-villas-navarino-dunes/",
+   "https://www.costanavarino.com/navarinoresidences/residences/",
+   "https://luxurywanderings.com/costa-navarino-residences/",
+   "https://www.ot.gr/2026/11/01/tourismos/costa-navarino-ayksimena-esoda-sta-1904-ekat-eyro-kai-nea-etairiki-domi-me-ti-dimiourgia-tis-ensofi/",
+   "https://www.kathimerini.gr/economy/business/563954113/dipsifios-rythmos-anaptyxis-kai-ylopoiisi-ependyseon-gia-temes/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "six-senses-residences-porto-heli-costa-perla",
+  "name": "Six Senses Residences Porto Heli",
+  "developer": "Costa Perla S.A.",
+  "area": "Kouverta, Porto Heli, Municipality of Ermionida, Argolida",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "under construction",
+  "url": "https://www.sixsenses.com/en/residences/porto-heli/",
+  "docs_url": "https://www.costaperlaresidences.com/",
+  "docs_listed": [
+   "developer site: 12 branded residences on a pine peninsula, design and materials, F&B list",
+   "Six Senses: 12 villas with 5 to 8 bedrooms, hotel of about 60 keys opening 2028, LEED Gold target",
+   "exclusive agent (Golden Land Goutos): 7 sea-view and 5 seafront villas, from EUR 8M, turnkey, delivery 2028",
+   "contractor EKTER S.A. Athens Exchange filing (17 Jul 2026): WP2 contract for hotel and 12 villas, completion by March 2028"
+  ],
+  "note": "Conversion of the former Costa Perla hotel at Porto Heli into a Six Senses resort with 12 branded villas from EUR 8M. Listed contractor EKTER S.A. told the Athens Exchange in July 2026 it signed the second-phase contract (hotel plus 12 villas, EUR 68.6M) with completion by March 2028. No permit number, deposit protection, plans or developer track record published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 8000000,
+   "currency": "EUR",
+   "title": "freehold (furnished tourist residences)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Agent says construction has started; EKTER S.A. exchange filing confirms phase-1 contract of 26 Sep 2025 and WP2 (hotel and 12 villas) signed July 2026, completion progressively by March 2028",
+   "plans": "No floor plans published",
+   "record": "Costa Perla S.A. formerly operated the Costa Perla hotel; no delivered residential projects named",
+   "returns": "No rental guarantee or yield wording"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction contract signed with EKTER S.A. for hotel and 12 villas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://athens.euronext.com/sites/default/files/hermes_3/2026-07/en/17622892-a71f-4f43-a228-92a71fdf438f/248_5426_2026_English_2.pdf"
+   },
+   {
+    "claim": "Project owner is Costa Perla S.A.",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ekter.gr/en/signing-of-the-second-amending-agreement-for-the-project-infinity-six-senses-porto-heli/"
+   },
+   {
+    "claim": "Delivery in 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ekter.gr/en/signing-of-the-second-amending-agreement-for-the-project-infinity-six-senses-porto-heli/"
+   },
+   {
+    "claim": "12 villas for sale",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ekter.gr/en/signing-of-the-second-amending-agreement-for-the-project-infinity-six-senses-porto-heli/"
+   },
+   {
+    "claim": "Construction has already started",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ekter.gr/en/signing-of-the-second-amending-agreement-for-the-project-infinity-six-senses-porto-heli/"
+   },
+   {
+    "claim": "Located at Kouverta-Perle-Bourloto, Ermionida",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://athens.euronext.com/sites/default/files/hermes_3/2026-07/en/17622892-a71f-4f43-a228-92a71fdf438f/248_5426_2026_English_2.pdf"
+   },
+   {
+    "claim": "Prices from EUR 8M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.goldenlandgoutos.gr/six-senses-porto-heli-luxury-living-on-the-greek-riviera/"
+   },
+   {
+    "claim": "Hotel has 62 rooms (Six Senses says around 60)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sixsenses.com/en/new-openings/porto-heli/"
+   },
+   {
+    "claim": "Several villas already reserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.goldenlandgoutos.gr/six-senses-porto-heli-luxury-living-on-the-greek-riviera/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.costaperlaresidences.com/"
+   }
+  ],
+  "facts": {
+   "developer_company": "Costa Perla S.A.",
+   "listed_or_audited": "Contractor EKTER S.A. is listed on Euronext Athens; developer not listed",
+   "construction_start": "2025-09",
+   "handover_promised": "2028-Q1",
+   "unit_types": [
+    "5BR villa",
+    "6BR villa",
+    "7BR villa",
+    "8BR villa"
+   ],
+   "price_min": 8000000,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "Branded residences linked to the Six Senses hotel; no figures",
+   "brand": "Six Senses",
+   "amenities": [
+    "private infinity pool",
+    "1,600 m2 Six Senses Spa",
+    "beach club and jetty",
+    "sea transfers to Spetses and Hydra",
+    "sunset bar",
+    "organic garden"
+   ],
+   "permit_authority": "Greek Ministry of Tourism and Ministry of Environment (YDOM Argolida)",
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction contract, scope and deadline disclosed by a listed contractor to the stock exchange",
+   "International hotel brand attached (Six Senses)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.costaperlaresidences.com/",
+   "https://www.sixsenses.com/en/residences/porto-heli/",
+   "https://www.sixsenses.com/en/new-openings/porto-heli/",
+   "https://www.goldenlandgoutos.gr/six-senses-porto-heli-luxury-living-on-the-greek-riviera/",
+   "https://ekter.gr/en/signing-of-the-second-amending-agreement-for-the-project-infinity-six-senses-porto-heli/",
+   "https://athens.euronext.com/sites/default/files/hermes_3/2026-07/en/17622892-a71f-4f43-a228-92a71fdf438f/248_5426_2026_English_2.pdf"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "pafilia-plaza-pafilia",
+  "name": "Pafilia Plaza",
+  "developer": "Pafilia Property Developers",
+  "area": "Kato Paphos, Paphos",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "stage": "under construction",
+  "url": "https://pafilia-developers-pafilia-plaza.constellationcyprus.com/",
+  "docs_url": "https://www.pafilia.com/properties/pafilia-plaza/",
+  "docs_listed": [
+   "developer: from EUR 565,000 + VAT, 120-237 m2, gym, communal pool, coffee shop and boutiques",
+   "developer (Cyprus Mail column): two residential blocks with 78 apartments plus commercial block, six levels, archaeological remains preserved on site",
+   "developer LinkedIn: construction progress posts Aug and Oct 2026",
+   "agent (Constellation): EUR 215,000 to 1,425,000 + VAT, off plan, delivery Q1 2028",
+   "agent (Palmera): handover October 2028"
+  ],
+  "note": "78-apartment, six-level building in Kato Paphos by Pafilia (founded 1977), from EUR 565,000 + VAT on the developer page. Pafilia posts construction progress but no % or permit number; agents give delivery as Q1 2028 or October 2028. Pafilia's ONE tower in Limassol was completed in 2021-22 per independent press. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 565000,
+   "currency": "EUR",
+   "title": "freehold (title deeds)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Pafilia delivered ONE Limassol (37-storey, 83 apartments, completed 2021-22), Minthis resort and Amathos and Domus Residences (sold out) per developer and independent press",
+   "units": 78,
+   "payment_plan": null,
+   "price_per_m2": 4708
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer LinkedIn posts (10 Aug and 2 Oct 2026) name Pafilia Plaza among projects where construction is advancing; no % published",
+   "plans": "No floor plans visible on developer or agent pages we opened",
+   "record": "Cyprus Mail (2022) and Elevator World report ONE completed and delivery begun; Wikipedia lists completion 2021",
+   "returns": "No guaranteed return on this project page (Pafilia advertises 5-8% yields for its separate Elysia Blu project)"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Pafilia completed ONE Limassol, 37 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://elevatorworld.com/news/daily-news/37-story-tower-with-kone-elevators-completes-in-cyprus/"
+   },
+   {
+    "claim": "Pafilia founded 1977, family owned",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/cyprus/developer/pafilia/"
+   },
+   {
+    "claim": "Construction is advancing",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/pafilia"
+   },
+   {
+    "claim": "78 apartments in two blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cyprus-mail.com/2026/03/02/pafilia-plaza-a-new-landmark-rising-in-the-heart-of-paphos"
+   },
+   {
+    "claim": "Delivery Q1 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/cyprus/developer/pafilia/"
+   },
+   {
+    "claim": "Prices from EUR 565,000 + VAT",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://pafilia-developers-pafilia-plaza.constellationcyprus.com/"
+   },
+   {
+    "claim": "Archaeological remains found and preserved with the authorities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cyprus-mail.com/2026/03/02/pafilia-plaza-a-new-landmark-rising-in-the-heart-of-paphos"
+   },
+   {
+    "claim": "Planning and building permits issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pafilia.com/properties/pafilia-plaza/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pafilia.com/properties/pafilia-plaza/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1977,
+   "developer_hq": "Paphos, Cyprus",
+   "developer_company": "Pafilia Property Developers Ltd (Eliades family)",
+   "listed_or_audited": null,
+   "handover_promised": "2028",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 242,
+   "price_min": 215000,
+   "price_max": 1425000,
+   "foreign_ownership": "Freehold title deed (non-EU buyers need Council of Ministers permission)",
+   "amenities": [
+    "communal pool",
+    "sun deck",
+    "gym",
+    "coffee shop",
+    "boutique retail",
+    "covered parking",
+    "storage rooms"
+   ],
+   "lat": 34.758,
+   "lng": 32.415,
+   "permit_authority": "Paphos District Planning / Paphos Municipality",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer with an independently confirmed delivered landmark tower",
+   "Dated construction progress posts"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pafilia.com/properties/pafilia-plaza/",
+   "https://cyprus-mail.com/2026/03/02/pafilia-plaza-a-new-landmark-rising-in-the-heart-of-paphos",
+   "https://pafilia-developers-pafilia-plaza.constellationcyprus.com/",
+   "https://www.palmera.realestate/cyprus/developer/pafilia/",
+   "https://linkedin.com/company/pafilia",
+   "https://elevatorworld.com/news/daily-news/37-story-tower-with-kone-elevators-completes-in-cyprus/",
+   "https://en.wikipedia.org/wiki/One_Limassol",
+   "https://cyprus-mail.com/2022/07/22/one-pafilias-new-world-of-luxury-has-arrived"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "promenade-budva-minder",
+  "name": "Promenade",
+  "developer": "Minder (Minder Trusted Developer)",
+  "area": "Budva Riviera (Bečići / Zavala, sources differ)",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "stage": "under construction",
+  "url": "https://residence-estate.me/projects/promenade/",
+  "docs_url": "http://promenademontenegro.com/",
+  "docs_listed": [
+   "project site: 2 buildings, 57 apartments, 5,829 m2 residential area, unit mix and sizes (studios 28-30 m2 to 3BR 109-135 m2)",
+   "project site: from EUR 2,950/m2, penthouse EUR 5,000/m2; completion Q2 2027 'progressing on schedule'",
+   "project site FAQ: 'average annual return for premium properties 5-15%'; rental management offered",
+   "agent (worldestate): from EUR 97,000, 28 m2 1BR and 94.22 m2 2BR layouts, Zavala peninsula",
+   "agent (Antarex): Bečići, 'all construction permits are secured', exemption from 3% transfer tax"
+  ],
+  "note": "Small two-building, 57-apartment project on the Budva Riviera sold by Minder from EUR 2,950/m2 with completion Q2 2027. Agents disagree on the location (Zavala peninsula vs Bečići), completion (Q2 vs end of 2027) and tax (3% transfer tax vs exempt). Permits are claimed but no number, escrow or progress figure is published; the site quotes 5-15% average returns without a guarantee. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 97000,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Agent page states Minder has delivered projects in Budva, Bečići, Kotor and Tivat since 2013, none named",
+   "units": 57,
+   "payment_plan": "Instalment plan on individual terms; mortgage assistance with Montenegrin banks",
+   "price_per_m2": 2950
+  },
+  "evidence": {
+   "permit": "Antarex agent says 'all construction permits are secured'; no number",
+   "escrow": null,
+   "progress": "Only 'construction is progressing on schedule'; no % or dated photos",
+   "plans": "Agent page worldestate.homes publishes layouts for 1BR 28 m2 and 2BR 94.22 m2; project site shows Building A / B unit lists",
+   "record": "Agent claims delivered projects since 2013 without names",
+   "returns": "FAQ quotes average annual return of 5-15% for premium properties, no guarantee wording"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "57 apartments in two buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://promenademontenegro.com/"
+   },
+   {
+    "claim": "Located on the Zavala peninsula",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://antarex.me/apartments-by-the-sea-in-new-complex-in-becici-lota7-512"
+   },
+   {
+    "claim": "Completion Q2 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://top-estate.me/en/listings/apartment-apartment-in-becici-57-m-de4dnz"
+   },
+   {
+    "claim": "All construction permits secured",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antarex.me/apartments-by-the-sea-in-new-complex-in-becici-lota7-512"
+   },
+   {
+    "claim": "3% purchase tax applies",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://antarex.me/apartments-by-the-sea-in-new-complex-in-becici-lota7-512"
+   },
+   {
+    "claim": "Prices from EUR 2,950/m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://promenademontenegro.com/"
+   },
+   {
+    "claim": "Average annual rental return 5-15%",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://promenademontenegro.com/"
+   },
+   {
+    "claim": "Developer active since 2013 with completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://residence-estate.me/projects/promenade/"
+   },
+   {
+    "claim": "Property ownership gives a renewable residence permit",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://promenademontenegro.com/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Budva, Montenegro (office Mediteranska 2)",
+   "developer_company": null,
+   "handover_promised": "2027-Q2",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 28,
+   "size_max_m2": 135,
+   "price_min": 97000,
+   "payment_plan": "Individual instalment terms",
+   "foreign_ownership": "Foreigners can own apartments directly in Montenegro",
+   "rental_programme": "Rental management offered; site quotes 5-15% average returns, no guarantee",
+   "amenities": [
+    "three-level underground garage",
+    "backup generator",
+    "water treatment",
+    "private-lift penthouses",
+    "storage rooms"
+   ],
+   "permit_authority": "Municipality of Budva / Ministry of Spatial Planning",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit mix, sizes and price per m2 published"
+  ],
+  "flags": [],
+  "sources": [
+   "http://promenademontenegro.com/",
+   "https://worldestate.homes/en/montenegro/promenade/",
+   "https://residence-estate.me/projects/promenade/",
+   "https://antarex.me/apartments-by-the-sea-in-new-complex-in-becici-lota7-512",
+   "https://top-estate.me/en/listings/apartment-apartment-in-becici-57-m-de4dnz"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "chalet-caribou-les-saisies-mgm",
+  "name": "Chalet Caribou",
+  "developer": "MGM Constructeur (Groupe MGM; MGM SAS, SIREN 331735266)",
+  "area": "Les Saisies (Forêt sector), Savoie",
+  "country": "France",
+  "market": "French Alps",
+  "stage": "off-plan",
+  "url": "https://www.mgmfrenchproperties.com/news/chalet-caribou-les-saisies-authenticity-and-exceptional-luxury-the-heart-the-beaufortain",
+  "docs_url": "https://www.mgm-constructeur.com/programme/chalet-caribou",
+  "docs_listed": [
+   "developer: 13 apartments, 3 to 5 rooms (2BR to 4BR), 59-121 m2, from EUR 515,000 incl. VAT",
+   "developer: copropriete classique, delivery Christmas 2028, commercial launch Jan 2026",
+   "developer: brochure download (gated), parking, cellar and ski locker included",
+   "developer English site for foreign buyers (mgmfrenchproperties.com)",
+   "developer client FAQ: VEFA guarantees (completion guarantee or refund guarantee), client portal with dated construction photos"
+  ],
+  "note": "13-apartment chalet in Les Saisies launched in Jan 2026 by Haute-Savoie builder MGM, from EUR 515,000 incl. VAT with delivery promised for Christmas 2028, marketed in English to British and Belgian buyers. Les Echos reports MGM delivers about 250 apartments a year; no permit number or plans are published on the page. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 515000,
+   "currency": "EUR",
+   "title": "freehold (copropriete, VEFA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Developer FAQ describes VEFA protections: garantie d'achevement (completion financed even if the developer fails) or garantie de remboursement; not stated specifically for this programme",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Group founded 1963; Les Echos (2004) reports 6,000 apartments built and (2021) about 250 apartments delivered per year; operates 13 tourist residences and 5 hotels (2025-26 press kit)",
+   "units": 13,
+   "payment_plan": "Standard French VEFA staged calls (not detailed on page)",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Generic FAQ on the MGM client portal explains the completion and refund guarantees under VEFA",
+   "progress": "Commercial launch only; no works started per developer listing",
+   "plans": "Plans only in gated brochure; none visible",
+   "record": "Les Echos 2004 and 2021 articles on volumes delivered; Xerfi company data from official filings (SIREN 331735266, founded 1985 as current entity)",
+   "returns": "Page mentions 'valorisation locative' and rental potential without figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "MGM delivers about 250 apartments per year in the Alps",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lesechos.fr/pme-regions/auvergne-rhone-alpes/immobilier-de-montagne-mgm-lance-trois-nouveaux-programmes-dans-le-massif-des-aravis-1353310"
+   },
+   {
+    "claim": "Group created 1963, 6,000 apartments built by 2004",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lesechos.fr/2004/06/david-giraud-le-groupe-mgm-ne-croit-quau-haut-de-gamme-641890"
+   },
+   {
+    "claim": "Developer entity MGM SAS registered, SIREN 331735266, Epagny Metz-Tessy",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.xerfi.com/etudes-par-entreprise/MGM_331735266"
+   },
+   {
+    "claim": "Buyers are 60% French, then British and Belgian",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lesechos.fr/pme-regions/auvergne-rhone-alpes/immobilier-de-montagne-mgm-lance-trois-nouveaux-programmes-dans-le-massif-des-aravis-1353310"
+   },
+   {
+    "claim": "13 apartments from 3 to 5 rooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mgm-constructeur.com/programme/chalet-caribou"
+   },
+   {
+    "claim": "Delivery Christmas 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mgm-constructeur.com/programme/chalet-caribou"
+   },
+   {
+    "claim": "Price from EUR 515,000 incl. VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mgm-constructeur.com/programme/chalet-caribou"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mgm-constructeur.com/programme/chalet-caribou"
+   },
+   {
+    "claim": "Completion guarantee provided to buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://espaceclient.mgm-constructeur.com/faq"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1963,
+   "developer_hq": "Epagny Metz-Tessy, Haute-Savoie, France",
+   "developer_company": "MGM SAS, SIREN 331735266",
+   "developer_units_delivered": 6000,
+   "listed_or_audited": "Unlisted; filed accounts (2024 revenue EUR 9.4M for MGM SAS)",
+   "handover_promised": "2028-Q4",
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 59,
+   "size_max_m2": 121,
+   "price_min": 515000,
+   "foreign_ownership": "Freehold, no restrictions for foreigners",
+   "rental_programme": "Flexible personal use and rental formula (no figures)",
+   "amenities": [
+    "near pistes (Espace Diamant)",
+    "shuttle to resort centre",
+    "covered parking",
+    "private cellar",
+    "ski locker",
+    "fitted kitchen"
+   ],
+   "lat": 45.759,
+   "lng": 6.531,
+   "permit_authority": "Commune of Hauteluce / Crest-Voland (Les Saisies)",
+   "developer_projects_delivered": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Long-established builder with independently reported delivery volumes",
+   "French VEFA framework with statutory completion guarantee explained to buyers"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.mgm-constructeur.com/programme/chalet-caribou",
+   "https://www.mgmfrenchproperties.com/news/chalet-caribou-les-saisies-authenticity-and-exceptional-luxury-the-heart-the-beaufortain",
+   "https://www.mgm-constructeur.com/",
+   "https://espaceclient.mgm-constructeur.com/faq",
+   "https://www.lesechos.fr/pme-regions/auvergne-rhone-alpes/immobilier-de-montagne-mgm-lance-trois-nouveaux-programmes-dans-le-massif-des-aravis-1353310",
+   "https://www.lesechos.fr/2004/06/david-giraud-le-groupe-mgm-ne-croit-quau-haut-de-gamme-641890",
+   "https://www.xerfi.com/etudes-par-entreprise/MGM_331735266",
+   "https://www.sogocom.fr/uploads/clients/MGM-DOSSIER-DE-PRESSE-2025-2026-FR-MEDIUM-PL.pdf"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "la-reserve-du-cap-pierre-blanche",
+  "name": "La Réserve du Cap",
+  "developer": "Pierre Blanche Monaco (Pierre Blanche Groupe Immobilier)",
+  "area": "14 boulevard du Général de Gaulle, Saint-Jean-Cap-Ferrat",
+  "country": "France",
+  "market": "French Riviera",
+  "stage": "off-plan",
+  "url": "https://riviera.savills.fr/en/la-reserve-du-cap/",
+  "docs_url": "https://pierre-blanche.mc/nos-programmes-immobiliers/la-reserve-du-cap/",
+  "docs_listed": [
+   "developer: lot list with lot numbers, surfaces, outdoor areas and prices incl. VAT (T3 EUR 4.0M to duplex EUR 10M)",
+   "developer: specification list (solid oak herringbone parquet, natural stone, two lifts), heated pool, spa, gym, concierge",
+   "agent (Savills, English): 8 apartments, completion Q4 2028, EUR 4M to 10M",
+   "agent (Monte-Carlo Real Estate): individual lot listings B001, B002, B101, B102"
+  ],
+  "note": "Eight-apartment luxury residence in Saint-Jean-Cap-Ferrat by Monaco developer Pierre Blanche, priced EUR 4M to 10M incl. VAT with completion in Q4 2028 per Savills. The developer publishes a lot-by-lot price list but no permit number, completion guarantee, progress or delivered projects, and no matching permit appeared in the public permit data we checked for this address. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 4000000,
+   "currency": "EUR",
+   "title": "freehold (copropriete, VEFA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 8,
+   "payment_plan": null,
+   "price_per_m2": 37460
+  },
+  "evidence": {
+   "permit": "No permit number published; basedespermis / France Cadastre listings for Saint-Jean-Cap-Ferrat show no multi-unit permit at 14 bd du Général de Gaulle",
+   "escrow": null,
+   "progress": null,
+   "plans": "Lot list with surfaces only; no floor plans",
+   "record": "Developer site names no completed projects",
+   "returns": "No rental or return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Eight apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riviera.savills.fr/en/la-reserve-du-cap/"
+   },
+   {
+    "claim": "Apartments of two to three bedrooms",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://pierre-blanche.mc/nos-programmes-immobiliers/la-reserve-du-cap/"
+   },
+   {
+    "claim": "Completion Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riviera.savills.fr/en/la-reserve-du-cap/"
+   },
+   {
+    "claim": "Prices EUR 4M to 10M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.montecarlo-realestate.com/maisons-et-appartements-en-vente/saint-jean-cap-ferrat/nouvelles-constructions"
+   },
+   {
+    "claim": "Building permit granted for the address",
+    "status": "unverified",
+    "by": "registry",
+    "source": "https://basedespermis.fr/commune-saint-jean-cap-ferrat-06121"
+   },
+   {
+    "claim": "Heated pool, spa and gym",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pierre-blanche.mc/nos-programmes-immobiliers/la-reserve-du-cap/"
+   },
+   {
+    "claim": "Developer has years of construction expertise",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pierre-blanche.mc/"
+   },
+   {
+    "claim": "10 minutes walk to the port",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pierre-blanche.mc/nos-programmes-immobiliers/la-reserve-du-cap/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Monaco",
+   "handover_promised": "2028-Q4",
+   "unit_types": [
+    "T3",
+    "T4",
+    "T6 duplex",
+    "T7 duplex"
+   ],
+   "size_min_m2": 106.78,
+   "size_max_m2": 248.42,
+   "price_min": 4000000,
+   "price_max": 10000000,
+   "foreign_ownership": "Freehold, no restrictions for foreigners",
+   "amenities": [
+    "heated outdoor pool",
+    "spa with sauna",
+    "gym",
+    "concierge lodge",
+    "landscaped garden",
+    "secure parking"
+   ],
+   "lat": 43.69,
+   "lng": 7.33,
+   "permit_authority": "Commune of Saint-Jean-Cap-Ferrat",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Lot-by-lot price list with surfaces published by the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://pierre-blanche.mc/nos-programmes-immobiliers/la-reserve-du-cap/",
+   "https://pierre-blanche.mc/",
+   "https://riviera.savills.fr/en/la-reserve-du-cap/",
+   "https://riviera.savills.fr/fr/la-reserve-du-cap/",
+   "https://www.montecarlo-realestate.com/maisons-et-appartements-en-vente/saint-jean-cap-ferrat/nouvelles-constructions",
+   "https://basedespermis.fr/commune-saint-jean-cap-ferrat-06121",
+   "https://france-cadastre.fr/permisdeconstruire/saint-jean-cap-ferrat"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "scirocco-heights-residences-birzebbuga",
+  "name": "Scirocco Heights Residences",
+  "developer": "Scirocco Heights Ltd",
+  "area": "Qajjenza, Birżebbuġa",
+  "country": "Malta",
+  "market": "Malta",
+  "stage": "under construction",
+  "url": "https://franksalt.com.mt/scirocco-heights-birzebbugia/",
+  "docs_url": "https://scirocco-heights.com/",
+  "docs_listed": [
+   "developer site: studios to 3BR apartments and penthouses with private pools, address Triq Ghar Dalam / Triq F.M. Ferretti / Triq Bourlemaque",
+   "sole agent (Frank Salt): SDA status under Legal Notice 111 of 2025, floor plans and brochure on request",
+   "agent (Bel Air): unit prices (2BR penthouse 162.5 m2 EUR 495,000; 3BR 148.1 m2 EUR 474,300), sold finished, gym and two shops planned"
+  ],
+  "note": "195-unit Special Designated Area complex in Birżebbuġa (171 apartments, 24 penthouses) by Scirocco Heights Ltd, open to non-resident buyers without an AIP permit since Legal Notice 111 of 2025. News reports confirm planning permit PA/2901/16 (approved 2019, modified 2025) and that the Building and Construction Authority halted excavation in 2022; the developer publishes no permit number, completion date, progress or deposit protection. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 474300,
+   "currency": "EUR",
+   "title": "freehold (SDA, no AIP permit needed)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 195,
+   "payment_plan": null,
+   "price_per_m2": 3203
+  },
+  "evidence": {
+   "permit": "Not published by developer or agents. Newsbook (2025) and The Shift (2022) cite planning application PA/2901/16 approved March 2019, modified June 2025",
+   "escrow": null,
+   "progress": "Newsbook (Jun 2025) describes the block as under construction; no developer progress data",
+   "plans": "Floor plans only on request via agent",
+   "record": "Developer company (sole shareholder Ansgar Gescher per The Shift citing the Malta Business Registry) names no completed projects",
+   "returns": "No yield or guarantee wording on developer or sole-agent pages"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Special Designated Area status (no AIP permit for non-residents)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsbook.com.mt/en/massive-birzebbuga-apartment-complex-under-construction-gets-government-leg-up/"
+   },
+   {
+    "claim": "Planning permit PA/2901/16 approved in 2019",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theshiftnews.com/2022/02/10/excavation-works-ordered-to-halt-on-complex-featuring-200-apartments-near-ghar-il-friefet/"
+   },
+   {
+    "claim": "Amended plans approved June 2025 for 195 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsbook.com.mt/en/massive-birzebbuga-apartment-complex-under-construction-gets-government-leg-up/"
+   },
+   {
+    "claim": "Project is under construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsbook.com.mt/en/massive-birzebbuga-apartment-complex-under-construction-gets-government-leg-up/"
+   },
+   {
+    "claim": "Developer company Scirocco Heights Ltd, sole shareholder Ansgar Gescher",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theshiftnews.com/2022/02/10/excavation-works-ordered-to-halt-on-complex-featuring-200-apartments-near-ghar-il-friefet/"
+   },
+   {
+    "claim": "Superintendence of Cultural Heritage found no threat to Ghar il-Friefet",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsbook.com.mt/en/massive-birzebbuga-apartment-complex-under-construction-gets-government-leg-up/"
+   },
+   {
+    "claim": "Penthouses with private pools",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://scirocco-heights.com/"
+   },
+   {
+    "claim": "3BR apartment from EUR 474,300",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://belair.com.mt/luxury-development/scirocco-heights/"
+   },
+   {
+    "claim": "Sea views from the complex",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://scirocco-heights.com/"
+   },
+   {
+    "claim": "Gym, pharmacy and shops included",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsbook.com.mt/en/massive-birzebbuga-apartment-complex-under-construction-gets-government-leg-up/"
+   }
+  ],
+  "facts": {
+   "developer_company": "Scirocco Heights Ltd (Malta); contractors under Zahra Group per The Shift",
+   "developer_hq": "Malta",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 162.5,
+   "price_min": 474300,
+   "price_max": 495000,
+   "foreign_ownership": "Freehold; SDA status means non-residents can buy any number of units without AIP permit",
+   "amenities": [
+    "gym",
+    "pharmacy",
+    "mini-market",
+    "landscaped gardens",
+    "private penthouse pools",
+    "201 garages"
+   ],
+   "lat": 35.83,
+   "lng": 14.53,
+   "permit_authority": "Planning Authority (Malta)",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning permit and SDA designation independently reported",
+   "Heritage clearance reported by news"
+  ],
+  "flags": [
+   {
+    "text": "The Shift News reported in Feb 2022 that the Building and Construction Authority ordered excavation works on the site to stop because no commencement notice had been filed before works began.",
+    "source": "https://theshiftnews.com/2022/02/10/excavation-works-ordered-to-halt-on-complex-featuring-200-apartments-near-ghar-il-friefet/"
+   }
+  ],
+  "sources": [
+   "https://scirocco-heights.com/",
+   "https://franksalt.com.mt/scirocco-heights-birzebbugia/",
+   "https://belair.com.mt/luxury-development/scirocco-heights/",
+   "https://newsbook.com.mt/en/massive-birzebbuga-apartment-complex-under-construction-gets-government-leg-up/",
+   "https://theshiftnews.com/2022/02/10/excavation-works-ordered-to-halt-on-complex-featuring-200-apartments-near-ghar-il-friefet/",
+   "https://pedament.com/guides/special-designated-area/scirocco-heights-residences"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "residenze-magnolia-desenzano-fb-capital",
+  "name": "Residenze Magnolia",
+  "developer": "FB Capital (Biquadro RE Srl, VAT 04113720249)",
+  "area": "Desenzano del Garda, Brescia (Lake Garda)",
+  "country": "Italy",
+  "market": "Italy",
+  "stage": "under construction",
+  "url": "https://www.abitareilgarda.it/en/property/residenza-magnolia/",
+  "docs_url": "https://www.fbcapital.it/progetti-di-investimento",
+  "docs_listed": [
+   "developer: project list naming the Desenzano via Irta scheme of 11 apartments, 1,478 m2",
+   "agent (Abitare il Garda, English): 11 apartments, 3 floors, delivery 2026, unit list with sizes and prices EUR 495,000 to 1,090,000, energy class A4",
+   "agent (Gardaffare on Casa.it): Via Pola 30, available Oct 2026",
+   "agent (RE/MAX): ground-floor 79 m2 2-room unit EUR 385,000 at via Como 2",
+   "Polish lawyer listing aimed at Polish buyers: says permit, developer, title, and bank guarantee (fideiussione bancaria) were checked"
+  ],
+  "note": "Eleven-apartment, all-electric A4 block a short walk from the lake in Desenzano del Garda by FB Capital, with delivery stated as 2026 (one portal says October 2026) and prices from EUR 385,000 to 1,090,000. Listings give three different street addresses; a Polish lawyer marketing it abroad says the deposits carry a bank guarantee, but no permit number, progress figure or delivered projects are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 385000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Polish lawyer page states buyer payments are secured by a bank guarantee (fideiussione bancaria), as required for Italian off-plan sales",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 11,
+   "payment_plan": null,
+   "price_per_m2": 4873
+  },
+  "evidence": {
+   "permit": "Lawyer page says the permesso di costruire was checked; no number published",
+   "escrow": "Fideiussione bancaria mentioned on the Polish lawyer page (kwapinscy.eu), not on developer site",
+   "progress": "Portals state delivery 2026 / Oct 2026 only",
+   "plans": "Unit sizes and room counts listed; no floor plans visible",
+   "record": "FB Capital lists other projects (Dimore Masotti, eTerra Ville) without completion details",
+   "returns": "Developer page speaks of attractive returns for investors in its projects in general, no figure or guarantee for buyers"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "11 apartments over three floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.abitareilgarda.it/en/property/residenza-magnolia/"
+   },
+   {
+    "claim": "Developer is FB Capital",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wearealbero.com/casi-studio/residenze-magnolia"
+   },
+   {
+    "claim": "Located at Via Pola 30",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://class.remax.it/vendita-nuove-costruzioni/desenzano-del-garda/desenzano-centro-39181035-225"
+   },
+   {
+    "claim": "Delivery in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.casa.it/vendita/residenziale/in-nuove-costruzioni/quadrilocali/desenzano-del-garda/centro/"
+   },
+   {
+    "claim": "Building permit (permesso di costruire) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kwapinscy.eu/residenze-magnolia-desenzano-garda/"
+   },
+   {
+    "claim": "Buyer payments secured by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kwapinscy.eu/residenze-magnolia-desenzano-garda/"
+   },
+   {
+    "claim": "Prices from EUR 495,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://class.remax.it/vendita-nuove-costruzioni/desenzano-del-garda/desenzano-centro-39181035-225"
+   },
+   {
+    "claim": "Energy class A4, gas-free",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.abitareilgarda.it/en/property/residenza-magnolia/"
+   },
+   {
+    "claim": "Two units already sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.abitareilgarda.it/en/property/residenza-magnolia/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Milan, Italy (offices in Vicenza and Desenzano)",
+   "developer_company": "Biquadro RE Srl a socio unico, VAT 04113720249 (FB Capital brand)",
+   "handover_promised": "2026-Q4",
+   "unit_types": [
+    "2-room",
+    "3-room",
+    "4-room",
+    "penthouse"
+   ],
+   "size_min_m2": 79,
+   "size_max_m2": 217.26,
+   "price_min": 385000,
+   "price_max": 1090000,
+   "foreign_ownership": "Freehold; foreigners from reciprocity countries can buy",
+   "amenities": [
+    "shared swimming pool",
+    "private gardens",
+    "rooftop terraces prepared for jacuzzi",
+    "private garages",
+    "lift",
+    "on-site showroom"
+   ],
+   "permit_authority": "Comune di Desenzano del Garda",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit-by-unit sizes and prices published by agents",
+   "Bank guarantee for deposits mentioned"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.abitareilgarda.it/en/property/residenza-magnolia/",
+   "https://www.fbcapital.it/progetti-di-investimento",
+   "https://wearealbero.com/casi-studio/residenze-magnolia",
+   "https://www.casa.it/vendita/residenziale/in-nuove-costruzioni/quadrilocali/desenzano-del-garda/centro/",
+   "https://class.remax.it/vendita-nuove-costruzioni/desenzano-del-garda/desenzano-centro-39181035-225",
+   "https://kwapinscy.eu/residenze-magnolia-desenzano-garda/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "twin-resort-radhime-regina-construction",
+  "name": "Twin Resort",
+  "developer": "Regina Group - Construction sh.p.k. (NIPT M07415202D)",
+  "area": "Radhimë, Vlorë",
+  "country": "Albania",
+  "market": "Albania",
+  "stage": "under construction",
+  "url": "https://www.reginaconstruction.al/project_details_en/?id=3",
+  "docs_url": "https://www.reginaconstruction.al/project_details_en/?id=3",
+  "docs_listed": [
+   "developer (English page): two 4-storey buildings, hotel and residence structure with tourist services, 1 underground floor, under construction, completion 2026",
+   "developer: studios, 1+1, 2+1 and penthouses; two pools, private beach, parking",
+   "developer homepage: earlier projects Regina Palm and Elite Resort in Radhimë, floor plans for Regina Palm",
+   "developer LinkedIn (Jan 2025): Twin Resort is its third coastal project in Radhimë, last 11 apartments of section 2 for sale",
+   "company register mirror: KKT building permit decision no. 48 of 01.08.2023 for the matching 4-storey hotel and residence structure in Radhimë; KKTU agenda 17.04.2026 item 52 to revise conditions during construction"
+  ],
+  "note": "Two 4-storey hotel-residence buildings with pools and a private beach in Radhimë near Vlorë by local builder Regina Construction, under construction with completion promised in 2026. The Albanian company file lists a 2023 KKT building permit (decision 48) matching this description and an April 2026 request to revise conditions during construction; the developer's two earlier Radhimë resorts were completed in 2025 per resale listings. No prices, permit number, escrow or % progress are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Regina Palm Resort buildings 2 and 3 completed Jul and Oct 2025 (agent listings) and Elite Resort (three 5-storey buildings) presented as completed on the developer site",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "Not on developer page. opencorporates.al file reproduces KKT decision no. 48 of 01.08.2023 granting a building permit for a 'hotel structure and residences with tourist services' in Radhimë, plus KKTU 17.04.2026 agenda item to revise construction conditions",
+   "escrow": null,
+   "progress": "Developer says 'currently under construction, expected 2026'; no % or dated photos",
+   "plans": "Unit type carousel only; floor plans shown for the earlier Regina Palm project",
+   "record": "Century 21 and Dua Shpi listings state Regina Palm buildings 2 and 3 were completed in Oct and Jul 2025; developer homepage claims 800 apartments",
+   "returns": "No return or guarantee wording"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer company is registered and active (founded 14.12.2020, Vlorë)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.opencorporates.al/en/nipt/m07415202d"
+   },
+   {
+    "claim": "Building permit for a 4-storey hotel and residence structure in Radhimë",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.opencorporates.al/en/nipt/m07415202d"
+   },
+   {
+    "claim": "Under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.opencorporates.al/en/nipt/m07415202d"
+   },
+   {
+    "claim": "Completion in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reginaconstruction.al/project_details_en/?id=3"
+   },
+   {
+    "claim": "Private beach for residents",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reginaconstruction.al/project_details_en/?id=3"
+   },
+   {
+    "claim": "Developer has built 800 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.reginaconstruction.al/"
+   },
+   {
+    "claim": "Regina Palm Resort building 2 completed Oct 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.century21albania.com/en/property/5495769/shesim-2-apartamente-ne-radhime-me-pamje-nga-deti-regina-palm-resort-2-cpm135831.html"
+   },
+   {
+    "claim": "Regina Palm Resort building 3 completed Jul 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://duashpi.al/en/property/69e1bad322a6dc9108016cc2/we-sell-21-apartment-in-radhime-with-sea-view-regina-palm-resort-3.html"
+   },
+   {
+    "claim": "Twin Resort is the developer's third coastal project in Radhimë",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/regina-group-construction-773b38348_mir%C3%ABsevini-n%C3%AB-regina-group-construction-activity-7290281518533402624-Aa34"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2020,
+   "developer_hq": "Vlorë, Albania",
+   "developer_company": "Regina Group - Construction sh.p.k., NIPT M07415202D, administrator Vasil Bedinaj",
+   "construction_start": null,
+   "handover_promised": "2026",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "penthouse"
+   ],
+   "foreign_ownership": "Foreigners can own apartments in Albania (land restrictions apply to agricultural land)",
+   "rental_programme": "Hotel and residence structure with tourist services; earlier Regina Palm units operate as hotel rooms (agent)",
+   "amenities": [
+    "two swimming pools",
+    "private beach",
+    "parking",
+    "underground floor"
+   ],
+   "lat": 40.37,
+   "lng": 19.47,
+   "permit_authority": "National Territorial Council (KKT/KKTU), Albania",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permit decision and company file traceable in public register mirror",
+   "Developer has completed earlier resorts nearby"
+  ],
+  "flags": [
+   {
+    "text": "Per the company file, the National Territorial Council (decision KKT no. 01 of 24.04.2026) refused a development permit for the same developer's separate 'Ground Zero Resort' project in Vlorë; it does not concern Twin Resort.",
+    "source": "https://www.opencorporates.al/en/nipt/m07415202d"
+   }
+  ],
+  "sources": [
+   "https://www.reginaconstruction.al/project_details_en/?id=3",
+   "https://www.reginaconstruction.al/",
+   "https://www.reginaconstruction.al/project_details_en/?id=2",
+   "https://www.linkedin.com/posts/regina-group-construction-773b38348_mir%C3%ABsevini-n%C3%AB-regina-group-construction-activity-7290281518533402624-Aa34",
+   "https://www.opencorporates.al/en/nipt/m07415202d",
+   "https://www.century21albania.com/en/property/5495769/shesim-2-apartamente-ne-radhime-me-pamje-nga-deti-regina-palm-resort-2-cpm135831.html",
+   "https://duashpi.al/en/property/69e1bad322a6dc9108016cc2/we-sell-21-apartment-in-radhime-with-sea-view-regina-palm-resort-3.html",
+   "https://everteta.al/harta-e-betonit/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "green-tower-hotel-residences-umag",
+  "name": "Green Tower Hotel & Residences",
+  "developer": "Green Tower Umag d.o.o. (owner Tihomir Baga; press also names Golf Residence Savudrija d.o.o.)",
+  "area": "Ulica Dante Alighieri, Umag, Istria",
+  "country": "Croatia",
+  "market": "Croatia",
+  "stage": "under construction",
+  "url": "https://regent.hr/en/new-builds/istria-umag-green-tower-hotel-and-residences",
+  "docs_url": "https://www.greentower.hr/en/",
+  "docs_listed": [
+   "developer: 10-storey hotel apartments and residences, 250 m to the beach, rooftop infinity pool and lounge bar, owners can let units through the hotel system",
+   "architect (Lotus Architects): 38 apartments 67-223 m2, 6,400 m2 gross area, two underground parking levels",
+   "agent (Regent, English): from EUR 307,000, payment plan 10/90, completion 2027, unit list",
+   "press (Morski.hr, Jul 2025): construction started, apartments selling at about EUR 5,000/m2"
+  ],
+  "note": "Ten-storey, 38-apartment hotel-residence tower in central Umag with a rooftop infinity pool, from EUR 307,000 with a 10/90 payment plan and completion promised for 2027. Morski.hr reported construction began in July 2025; press names the investor as either Green Tower Umag d.o.o. or Golf Residence Savudrija d.o.o., both owned by Tihomir Baga. No permit number, escrow, progress figure or delivered projects are published by the developer. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 307000,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 38,
+   "payment_plan": "10% on contract, 90% later (agent)",
+   "price_per_m2": 5000
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Morski.hr (28 Jul 2025) reported construction under way; developer publishes no progress",
+   "plans": "Agent lists units; floor plans not visible on pages we opened",
+   "record": "No completed projects named by the developer; architect also designed Petram resort in Savudrija for different investors",
+   "returns": "Developer mentions hotel rental option with 'ever-growing demand and rising value', no figures or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started in summer 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.morski.hr/u-centru-umaga-krenula-izgradnja-nebodera-od-10-katova/"
+   },
+   {
+    "claim": "Apartments priced around EUR 5,000/m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.morski.hr/u-centru-umaga-krenula-izgradnja-nebodera-od-10-katova/"
+   },
+   {
+    "claim": "Investor is Green Tower Umag d.o.o.",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.morski.hr/u-centru-umaga-krenula-izgradnja-nebodera-od-10-katova/"
+   },
+   {
+    "claim": "Investor owned by Tihomir Baga",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.istra24.hr/svijet-nekretnina/kraljica-umaga-fatalna-arhitektica-skoro-zavrsila-u-zatvoru.-sad-najavljuje-hotel-neboder-usred-grada"
+   },
+   {
+    "claim": "38 apartments of 67-223 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lotusarchitecti.com/project/green-tower-hotel-residences/"
+   },
+   {
+    "claim": "Five-star hotel with about 50 units",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.istra24.hr/svijet-nekretnina/kraljica-umaga-fatalna-arhitektica-skoro-zavrsila-u-zatvoru.-sad-najavljuje-hotel-neboder-usred-grada"
+   },
+   {
+    "claim": "Completion in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regent.hr/en/new-builds/istria-umag-green-tower-hotel-and-residences"
+   },
+   {
+    "claim": "250 m to the beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.greentower.hr/en/"
+   },
+   {
+    "claim": "Highest infinity pool in Istria",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.greentower.hr/en/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.greentower.hr/en/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Zagreb / Umag, Croatia",
+   "developer_company": "Green Tower Umag d.o.o.",
+   "construction_start": "2025-07",
+   "handover_promised": "2027",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex"
+   ],
+   "size_min_m2": 67,
+   "size_max_m2": 223,
+   "price_min": 307000,
+   "payment_plan": "10/90",
+   "foreign_ownership": "EU buyers own freely; non-EU buyers subject to reciprocity and Ministry of Justice approval",
+   "rental_programme": "Optional letting through the hotel system, no figures",
+   "amenities": [
+    "rooftop infinity pool",
+    "360 lounge bar",
+    "spa",
+    "fitness",
+    "ground-floor restaurant",
+    "two underground parking levels"
+   ],
+   "lat": 45.434,
+   "lng": 13.522,
+   "permit_authority": "Istria County, Administrative Department for Spatial Planning and Construction (Umag branch)",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction start independently reported",
+   "Prices and payment plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.greentower.hr/en/",
+   "https://www.greentower.hr/",
+   "https://regent.hr/en/new-builds/istria-umag-green-tower-hotel-and-residences",
+   "https://lotusarchitecti.com/project/green-tower-hotel-residences/",
+   "https://www.morski.hr/u-centru-umaga-krenula-izgradnja-nebodera-od-10-katova/",
+   "https://www.istra24.hr/svijet-nekretnina/kraljica-umaga-fatalna-arhitektica-skoro-zavrsila-u-zatvoru.-sad-najavljuje-hotel-neboder-usred-grada",
+   "https://benjaminfercher.at/bautraeger-index/projekt/pr-hr-0029-green-tower-hotel-residences/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ }
+]

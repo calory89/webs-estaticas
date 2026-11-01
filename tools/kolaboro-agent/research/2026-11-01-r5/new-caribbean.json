@@ -1,0 +1,1745 @@
+[
+ {
+  "slug": "lacovia-bronte",
+  "name": "Lacovia (redevelopment)",
+  "developer": "Bronte Development Ltd (Bronte Group), with the Lacovia strata owners",
+  "area": "Seven Mile Beach, West Bay Road",
+  "country": "Cayman Islands",
+  "market": "Cayman Islands",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://lacovia.com/residences/",
+  "docs_url": "https://lacovia.com/residences/",
+  "permit_number": "P19-1137",
+  "docs_listed": [
+   "developer: unit list with residence codes, sq ft and US$ prices, floorplan links",
+   "developer: team page naming contractor JV Driver International and lender Sculptor Capital Management",
+   "Bronte site: scheduled completion 2028, 88 residences",
+   "Bronte site: list of seven completed developments"
+  ],
+  "note": "Strata-backed demolition and rebuild of a 1981 Seven Mile Beach condo into three 10-storey towers; CPA approved application P19-1137 (Block 12E Parcel 54) in Jan 2020, demolition started Feb 2024 after a US$330M financing, completion now 2028 versus end of 2023 in the 2020 application. Final residences listed from US$8.2M. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 8203650,
+   "currency": "USD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": "P19-1137",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Bronte lists completed Aqua (Seven Mile Beach), Turen II, Fort 51, Seascape, Elgin Court, Oceana and Seaview on bronte.ky",
+   "units": 96,
+   "payment_plan": null,
+   "price_per_m2": 25369
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No number on developer pages; CPA agenda CPA/02/20 (22 Jan 2020) lists BRONTE (LACOVIA) Block 12E Parcel 54 (P19-1137), 96 apartments in three 10-storey buildings; Cayman Compass and CNS report the approval",
+   "escrow": null,
+   "progress": "No % or dated update on developer site; Cayman Compass reported demolition from 16 Feb 2024 and a Jan 2025 sponsored item says construction well underway",
+   "plans": "Residences page links a floorplan for each listed unit",
+   "record": "bronte.ky lists seven completed Cayman developments; team page claims delivered prestigious projects",
+   "returns": "No guaranteed return; 2024 agent quote mentions units designed to optimize rental returns, no figure"
+  },
+  "positives": [
+   "Central Planning Authority approval found with application number and parcel",
+   "Named contractor (JV Driver) and named construction lender (Sculptor Capital Management)",
+   "Unit-level prices and sizes published"
+  ],
+  "flags": [
+   {
+    "text": "Cayman News Service reported in May 2022 that the start of construction was delayed by construction cost increases; the 2020 application gave end of 2023 for completion, the developer now says 2028.",
+    "source": "https://caymannewsservice.com/2022/05/lacovia-10-storey-revamp-delayed-over-costs/"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission granted by the Central Planning Authority (P19-1137)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cnslibrary.com/wp-content/uploads/CPA-agenda-for-22-January-2020-meeting.pdf"
+   },
+   {
+    "claim": "CPA approved the redevelopment despite objections",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caymancompass.com/2020/01/23/neighbours-object-to-lacovia-redevelopment/"
+   },
+   {
+    "claim": "96 apartments in three 10-storey buildings",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cnslibrary.com/wp-content/uploads/CPA-agenda-for-22-January-2020-meeting.pdf"
+   },
+   {
+    "claim": "88 residences (Bronte site)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.bronte.ky/lacovia"
+   },
+   {
+    "claim": "Construction started (demolition Feb 2024 after financing closed)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caymancompass.com/2024/02/21/demolition-commences-at-lacovia/"
+   },
+   {
+    "claim": "Scheduled completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bronte.ky/lacovia"
+   },
+   {
+    "claim": "Original completion end of 2023 (application to DoT)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cnslibrary.com/wp-content/uploads/CPA-agenda-for-22-January-2020-meeting.pdf"
+   },
+   {
+    "claim": "Start delayed by construction cost increases",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://caymannewsservice.com/2022/05/lacovia-10-storey-revamp-delayed-over-costs/"
+   },
+   {
+    "claim": "Contractor is JV Driver (IP Driver Ltd)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caymancompass.com/2024/02/21/demolition-commences-at-lacovia/"
+   },
+   {
+    "claim": "Bronte delivered Aqua, Turen II, Fort 51 and others",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bronte.ky/completed-developments"
+   },
+   {
+    "claim": "Residence N4B 3,005 sq ft at US$8,203,650",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lacovia.com/residences/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lacovia.com/residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "George Town, Cayman Islands",
+   "developer_company": "Bronte Development Ltd (per CNS)",
+   "developer_projects_delivered": 7,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-02",
+   "handover_promised": "2028",
+   "original_handover": "2023-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "5BR",
+    "penthouse",
+    "sub-penthouse"
+   ],
+   "size_min_m2": 279,
+   "size_max_m2": 595,
+   "price_min": 8203650,
+   "price_max": 19224000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata title, no restriction on foreign buyers in Cayman",
+   "rental_programme": "All owners under one tourism licence (DoT comments in CPA agenda); no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "beach cabanas",
+    "24/7 fitness studios",
+    "private elevators",
+    "concierge",
+    "resident services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Central Planning Authority (Department of Planning)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://lacovia.com/residences/",
+   "https://lacovia.com/the-team/",
+   "https://www.bronte.ky/lacovia",
+   "https://www.bronte.ky/completed-developments",
+   "https://cnslibrary.com/wp-content/uploads/CPA-agenda-for-22-January-2020-meeting.pdf",
+   "https://www.caymancompass.com/2020/01/23/neighbours-object-to-lacovia-redevelopment/",
+   "https://caymannewsservice.com/2022/05/lacovia-10-storey-revamp-delayed-over-costs/",
+   "https://www.caymancompass.com/2024/02/21/demolition-commences-at-lacovia/",
+   "https://www.caymancompass.com/tag/lacovia/",
+   "https://blog.theagencyre.com/going-going-inside-the-last-residences-at-lacovia-in-grand-cayman/"
+  ]
+ },
+ {
+  "slug": "island-breeze-heritage-holdings",
+  "name": "Island Breeze",
+  "developer": "Heritage Holdings Ltd (with SureBuilt Construction Ltd, same group)",
+  "area": "Uncle Bob's Road, West Bay, Grand Cayman",
+  "country": "Cayman Islands",
+  "market": "Cayman Islands",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://heritageholdings.ky/portfolio/island-breeze/",
+  "docs_url": "https://heritageholdings.ky/portfolio/island-breeze/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 20 apartments in 2 phases, 590 to 1,122 sq ft",
+   "developer: 1BR from CI$420,000, 2BR from CI$599,000, named available units",
+   "developer: 1BR and 2BR floor plans and site plan",
+   "developer: amenities (pool, gym, BBQ, EV charging)"
+  ],
+  "note": "Small 20-apartment West Bay scheme by the Burke family group behind The Shores; the same page calls it both under construction and now selling pre-construction, with no completion date, permit or deposit terms published. 1BR from CI$420,000. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 420000,
+   "currency": "KYD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Group says it built The Shores, Countryside Shopping Village and Centennial Towers (heritageholdings.ky)",
+   "units": 20,
+   "payment_plan": null,
+   "price_per_m2": 7663
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning application number or approval published; no CPA agenda item found for this site in searches",
+   "escrow": null,
+   "progress": "Status label 'Under construction' with no date, % or photos; pricing text says 'now selling pre-construction'",
+   "plans": "1 Bedroom and 2 Bedroom floor plans and a site plan on the project page",
+   "record": "Developer home page names The Shores, Countryside Shopping Village and Centennial Towers as group projects",
+   "returns": "No guarantee or yield figure; mentions suitability for long-term rental"
+  },
+  "positives": [
+   "Unit-level prices and sizes published",
+   "Developer group has a long local history (since 1968 per its site) and an in-house contractor"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "20 apartments in two phases",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/portfolio/island-breeze/"
+   },
+   {
+    "claim": "Under construction",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://heritageholdings.ky/portfolio/island-breeze/"
+   },
+   {
+    "claim": "1BR 590 sq ft from CI$420,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/properties/island-breeze-1-bedroom-apartment-west-bay/"
+   },
+   {
+    "claim": "2BR 1,005 sq ft at CI$599,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/properties/island-breeze-2-bedroom-apartment-west-bay/"
+   },
+   {
+    "claim": "Planning permission granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/portfolio/island-breeze/"
+   },
+   {
+    "claim": "Heritage Holdings Ltd is an active developer appearing before the CPA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cnslibrary.com/wp-content/uploads/Agenda-for-CPA-meeting-on-19-March-2025.pdf"
+   },
+   {
+    "claim": "Group delivered The Shores and Centennial Towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/portfolio/island-breeze/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heritageholdings.ky/portfolio/island-breeze/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1968,
+   "developer_hq": "Grand Cayman, Cayman Islands",
+   "developer_company": "Heritage Holdings Ltd.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 55,
+   "size_max_m2": 104,
+   "price_min": 420000,
+   "price_max": 615000,
+   "currency": "KYD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata title, no restriction on foreign buyers in Cayman",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "sun deck",
+    "BBQ area",
+    "gym",
+    "EV charging",
+    "landscaped grounds"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Central Planning Authority (Department of Planning)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://heritageholdings.ky/portfolio/island-breeze/",
+   "https://heritageholdings.ky/properties/island-breeze-1-bedroom-apartment-west-bay/",
+   "https://heritageholdings.ky/properties/island-breeze-2-bedroom-apartment-west-bay/",
+   "https://heritageholdings.ky/",
+   "https://cnslibrary.com/wp-content/uploads/Agenda-for-CPA-meeting-on-19-March-2025.pdf",
+   "https://caymanresident.com/housing/real-estate/new-developments"
+  ]
+ },
+ {
+  "slug": "andara-cap-cana-onix-living",
+  "name": "Andara Cap Cana",
+  "developer": "Onix Living (seller entity on project site: Vonan Holding, S.R.L., RNC 1-32-98873-6; CONFOTUR promoter: Fideicomiso Andara Cap Cana)",
+  "area": "Las Iguanas, Cap Cana, Punta Cana",
+  "country": "Dominican Republic",
+  "market": "Punta Cana",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://puntadb.com/projects/andara",
+  "docs_url": "https://andaracapcana.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: Onix Living as builder, Vonan Holding S.R.L. with RNC number in footer",
+   "agent: 175 residences (155 apartments, 20 golf villas), 5 buildings of 5 levels",
+   "agent: price list dated 26 Oct 2026, 55 of 175 available, from US$303,030",
+   "agent: payment US$5,000 reservation, 20% on signing, 40% during construction, 40% on delivery",
+   "agent: technical sheets per unit type downloadable",
+   "agent: developer yield estimate about 8.3% net at 60% occupancy, stated as not guaranteed"
+  ],
+  "note": "175-unit golf-front condo by Mexican developer Onix Living, sold through a fideicomiso. The official CONFOTUR register shows provisional classification CONFOTUR01-01149 approved 14 May 2026 to Fideicomiso Andara Cap Cana, with the definitive application (01336) still in process. Handover has moved from before 31 Dec 2027 (early agent FAQ) to June 2028 or Q4 2028. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 303030,
+   "currency": "USD",
+   "title": "freehold (condominium title via fideicomiso)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8.3,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Purchase through a fideicomiso (trust); trust name confirmed as CONFOTUR promoter, trustee bank not published",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Onix Living says it delivered more than 750 homes across Caribbean projects (developer guide, Sep 2026); no named projects found",
+   "units": 175,
+   "payment_plan": "US$5,000 reservation; 20% on signing; 40% during construction; 40% on delivery",
+   "price_per_m2": 3578
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or licence number published; only CONFOTUR tax classification found (provisional, CONFOTUR01-01149)",
+   "escrow": "Agents state the project runs through a fideicomiso; official CONFOTUR register names the promoter 'Fideicomiso Andara Cap Cana de Administracion Patrimonial, Inversion y Desarrollo Inmobiliario'",
+   "progress": "Agents label it 'en construccion' but no dated photos, % or construction report found",
+   "plans": "Agent pages publish unit technical sheets (fichas tecnicas) by type and sizes per unit",
+   "record": "Only a generic claim of 750+ homes delivered, no project names or verifiable list",
+   "returns": "8.3% net yield is a developer estimate explicitly described as not guaranteed"
+  },
+  "positives": [
+   "Official CONFOTUR record confirms a trust (fideicomiso) as project promoter",
+   "Dated price list with unit-level availability",
+   "Seller legal entity and RNC tax number shown on project site"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "registry",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has CONFOTUR tax benefits",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+   },
+   {
+    "claim": "CONFOTUR classification is definitive",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+   },
+   {
+    "claim": "Project is held in a fideicomiso",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+   },
+   {
+    "claim": "Delivery before 31 Dec 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://garrigorealestate.com/andara-cap-cana/"
+   },
+   {
+    "claim": "Delivery Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andaracondos.com/guides/punta-cana-cap-cana-build-out/"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propiedadesenpuntacana.com/proyectos/andara-by-eden-rock-cap-cana-punta-cana"
+   },
+   {
+    "claim": "175 residences, 106 sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://puntadb.com/projects/andara"
+   },
+   {
+    "claim": "Designed by Luis Vidal + Architects, budget US$30M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://luisvidal.com/en/proyecto/andara-cap-cana-2/"
+   },
+   {
+    "claim": "Onix Living delivered 750+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andaracondos.com/guides/punta-cana-cap-cana-build-out/"
+   },
+   {
+    "claim": "Eden Roc Cap Cana will run the rental programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propiedadesenpuntacana.com/proyectos/andara-by-eden-rock-cap-cana-punta-cana"
+   },
+   {
+    "claim": "About 8.3% net yield (estimate, not guaranteed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realtarea.com/en/project/andara-cap-cana/"
+   },
+   {
+    "claim": "Building permit granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andaracapcana.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cancun, Mexico",
+   "developer_company": "Vonan Holding, S.R.L., RNC 1-32-98873-6 (site footer); Fideicomiso Andara Cap Cana (CONFOTUR promoter)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 750,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": "2027-Q4",
+   "delay_months": 12,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR lock-off",
+    "penthouse",
+    "golf villa"
+   ],
+   "size_min_m2": 84,
+   "size_max_m2": 259,
+   "price_min": 303030,
+   "price_max": 678500,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "US$5,000 reservation; 20/40/40",
+   "foreign_ownership": "Full ownership for foreigners, purchase through fideicomiso",
+   "rental_programme": "Rental programme operated by Eden Roc Cap Cana per agent; 25% management fee in developer estimate",
+   "service_charge": "about US$3 per m2 per month (agent FAQ)",
+   "brand": null,
+   "amenities": [
+    "6 cascading pools",
+    "adults-only rooftop infinity pool",
+    "pickleball",
+    "padel",
+    "golf simulator",
+    "gym",
+    "yoga",
+    "coworking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministerio de Turismo (MITUR) land-use non-objection and municipal licence; CONFOTUR for tax classification",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "sources": [
+   "https://andaracapcana.com/",
+   "https://andaracondos.com/guides/punta-cana-cap-cana-build-out/",
+   "https://puntadb.com/projects/andara",
+   "https://realtarea.com/en/project/andara-cap-cana/",
+   "https://www.propiedadesenpuntacana.com/proyectos/andara-by-eden-rock-cap-cana-punta-cana",
+   "https://garrigorealestate.com/andara-cap-cana/",
+   "https://luisvidal.com/en/proyecto/andara-cap-cana-2/",
+   "https://confotur.mitur.gob.do/consulta/",
+   "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+  ]
+ },
+ {
+  "slug": "one-condado-creative-developments",
+  "name": "One Condado",
+  "developer": "Creative Developments (project company One Condado, LLC)",
+  "area": "Calle Las Marias, Condado, San Juan",
+  "country": "Puerto Rico (US)",
+  "market": "Puerto Rico",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://onecondado.com/residences/",
+  "docs_url": "https://creativedevelop.com/proyectos/one-condado/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 41 residences, 2,430 sq ft and 4,925 sq ft layouts plus 10,000 sq ft penthouse",
+   "developer: interactive floor plans by floor and layout",
+   "developer: finishes and residence features list",
+   "developer: legal disclaimer naming One Condado, LLC",
+   "developer: list of earlier projects (Blu, Solemare, Casa Magna, Las Casonas and others)"
+  ],
+  "note": "18-storey, 41-residence luxury tower on a former Condado parking lot. El Nuevo Dia reported the start of construction in Oct 2025 with prices of US$2.2M to US$11.5M and delivery from 2027; an Aug 2026 trade profile says residential floors are rising above the finished parking podium, first units late 2027. No permit number, deposit terms or prices on the developer site. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2200000,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer lists earlier projects Blu (Condado), Solemare (Isla Verde), Las Casonas, Alamanda, Casa Magna, Casa Maggiore (Guaynabo), Las Primaveras (Carolina), Parque 228 (Bayamon), Caminito Alto (Gurabo)",
+   "units": 41,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit number published; not located in public records searched",
+   "escrow": null,
+   "progress": "No % on developer site (contact page invites registration for construction updates); El Nuevo Dia (Oct 2025) reported construction under way; Business View Caribbean (Aug 2026) reports parking structure complete and residential floors rising",
+   "plans": "Residences page has selectable floor plans by floor and layout",
+   "record": "Projects page lists nine earlier residential projects in San Juan metro",
+   "returns": "No rental or return claims"
+  },
+  "positives": [
+   "Construction start reported by El Nuevo Dia",
+   "Floor plans published for each layout",
+   "Developer with a list of earlier Puerto Rico projects"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction began in 2025 on a former parking lot",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elnuevodia.com/english/business/story/one-condado-constructions-begins-for-new-apartment-project-in-san-juan/"
+   },
+   {
+    "claim": "Prices from US$2.2M to US$11.5M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elnuevodia.com/negocios/bienes-raices/notas/one-condado-nuevo-proyecto-de-apartarmentos-que-se-levanta-en-el-condado/"
+   },
+   {
+    "claim": "Delivery from 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessviewcaribbean.com/digital-magazines/aug-2026/30/"
+   },
+   {
+    "claim": "Parking structure complete, residential floors rising (Aug 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessviewcaribbean.com/digital-magazines/aug-2026/30/"
+   },
+   {
+    "claim": "41 residences including a 10,000 sq ft penthouse",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onecondado.com/residences/"
+   },
+   {
+    "claim": "18-storey tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessviewcaribbean.com/digital-magazines/aug-2026/30/"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://creativedevelop.com/proyectos/one-condado/"
+   },
+   {
+    "claim": "Developer delivered Blu, Solemare and other projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://creativedevelop.com/proyectos/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://onecondado.com/residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "San Juan, Puerto Rico",
+   "developer_company": "One Condado, LLC (site copyright); Creative Developments",
+   "developer_projects_delivered": 9,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 226,
+   "size_max_m2": 929,
+   "price_min": 2200000,
+   "price_max": 11500000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium title, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "fitness studio",
+    "yoga and pilates rooms",
+    "spa with sauna and cold plunge",
+    "concierge",
+    "porte-cochere and valet",
+    "3-4 parking spaces per unit"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of San Juan permit office / OGPe",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "sources": [
+   "https://onecondado.com/residences/",
+   "https://onecondado.com/tour/",
+   "https://onecondado.com/contact/",
+   "https://creativedevelop.com/proyectos/one-condado/",
+   "https://creativedevelop.com/proyectos/",
+   "https://www.elnuevodia.com/english/business/story/one-condado-constructions-begins-for-new-apartment-project-in-san-juan/",
+   "https://www.elnuevodia.com/negocios/bienes-raices/notas/one-condado-nuevo-proyecto-de-apartarmentos-que-se-levanta-en-el-condado/",
+   "https://www.businessviewcaribbean.com/digital-magazines/aug-2026/30/"
+  ]
+ },
+ {
+  "slug": "amancaya-aman-residences-exuma",
+  "name": "Aman Residences, Amancaya",
+  "developer": "Aman Group with Dona Bertarelli, OKO Group and Squircle Capital (earlier filings name ADH Ltd as developer company)",
+  "area": "Children's Bay Cay and Williams Cay, Exuma",
+  "country": "Bahamas",
+  "market": "Bahamas",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.sellingbahamas.com/buildings/amancaya-bahamas/",
+  "docs_url": "https://www.aman.com/amancaya",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 36-pavilion resort plus limited collection of 3-5BR Aman Residences, design team named",
+   "agent: 23 estate residences on 2 to 5.5 acre homesites, 7,088 to 9,197+ sq ft",
+   "agent: from about US$27M, estimated completion 2029",
+   "agent: optional Aman Rental Programme"
+  ],
+  "note": "Aman's first Bahamas resort with 23 branded estate residences on two private Exuma cays, a US$260M project under a Heads of Agreement signed in January 2016. The Prime Minister attended the groundbreaking on 17 Apr 2026; agents quote entry around US$27M and completion 2029, while tenure, floor plans, deposit terms and permits are not published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 27000000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Aman operates Amanera (Dominican Republic) and Amanyara (Turks and Caicos) in the Caribbean, per Aman statement reported by The Nassau Guardian",
+   "units": 23,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or approval number published. The Tribune reports a Heads of Agreement signed with the Government in January 2016 and an Environmental Management Plan (Aug 2023) taken to public hearing",
+   "escrow": null,
+   "progress": "Office of the Prime Minister and Bahamas Government published the 17 Apr 2026 groundbreaking; Nassau Guardian reported it on 20 Apr 2026. No % or later update",
+   "plans": "No floor plans published by Aman or agents",
+   "record": "Aman Group operates resorts and branded residences worldwide, including Amanyara and Amanera in the Caribbean",
+   "returns": "Optional Aman Rental Programme, no figures or guarantee"
+  },
+  "positives": [
+   "Groundbreaking confirmed by the Office of the Prime Minister",
+   "Globally established hotel and residence operator",
+   "Environmental Management Plan went to public consultation"
+  ],
+  "flags": [
+   {
+    "text": "The Tribune reported the project was approved under a 2016 Heads of Agreement and stalled for years, with different management companies and less developer involvement at times, before restarting in 2023.",
+    "source": "https://www.tribune242.com/news/2023/sep/15/exuma-project-pledging-300-jobs-back-track/"
+   }
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking held 17 Apr 2026 with the Prime Minister",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://opm.gov.bs/prime-minister-davis-amancaya-exuma-groundbreaking/"
+   },
+   {
+    "claim": "US$260M investment with 500 jobs",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://opm.gov.bs/prime-minister-davis-amancaya-exuma-groundbreaking/"
+   },
+   {
+    "claim": "Heads of Agreement signed with Government in Jan 2016",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2025/may/13/aman-to-brand-500-job-260m-exuma-project/"
+   },
+   {
+    "claim": "Under construction (May 2025 statement)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.thenassauguardian.com/business/new-life-breathed-into-260m-exumas-project/article_b94c7083-f63e-4334-8d5b-fe1f97c2a731.html"
+   },
+   {
+    "claim": "Environmental Management Plan prepared and put to public hearing",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2023/sep/15/exuma-project-pledging-300-jobs-back-track/"
+   },
+   {
+    "claim": "23 estate residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sellingbahamas.com/buildings/amancaya-bahamas/"
+   },
+   {
+    "claim": "From about US$27M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.privata.travel/residences/amancaya-bahamas"
+   },
+   {
+    "claim": "Completion 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sellingbahamas.com/buildings/amancaya-bahamas/"
+   },
+   {
+    "claim": "Partners OKO Group and Squircle Capital",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenassauguardian.com/business/aman-group-breaks-ground-on-ultra-luxury-resort-amancaya-in-exumas/article_42b6f8d4-fcaa-465a-a9e3-a3f5c7815aa3.html"
+   },
+   {
+    "claim": "Earlier plan of 55 estate lots and 42 keys (EMP 2023)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.tribune242.com/news/2025/may/13/aman-to-brand-500-job-260m-exuma-project/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aman.com/amancaya"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1988,
+   "developer_hq": null,
+   "developer_company": "ADH Ltd (named developer in 2023 EMP, per The Tribune)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 658,
+   "size_max_m2": 854,
+   "price_min": 27000000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Not stated; foreigners can own in the Bahamas under the International Persons Landholding Act",
+   "rental_programme": "Optional Aman Rental Programme (agent)",
+   "service_charge": null,
+   "brand": "Aman",
+   "amenities": [
+    "Aman Spa",
+    "beach club",
+    "marina",
+    "private pools",
+    "multiple restaurants",
+    "Aman Club access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Government of The Bahamas (Heads of Agreement, Investments Board); DEPP for environmental approvals",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.aman.com/amancaya",
+   "https://www.sellingbahamas.com/buildings/amancaya-bahamas/",
+   "https://www.privata.travel/residences/amancaya-bahamas",
+   "https://opm.gov.bs/prime-minister-davis-amancaya-exuma-groundbreaking/",
+   "https://www.bahamas.gov.bs/index.php/news-press-release/groundbreaking-for-amancaya-exuma",
+   "https://www.thenassauguardian.com/business/aman-group-breaks-ground-on-ultra-luxury-resort-amancaya-in-exumas/article_42b6f8d4-fcaa-465a-a9e3-a3f5c7815aa3.html",
+   "https://www.thenassauguardian.com/business/new-life-breathed-into-260m-exumas-project/article_b94c7083-f63e-4334-8d5b-fe1f97c2a731.html",
+   "https://www.tribune242.com/news/2025/may/13/aman-to-brand-500-job-260m-exuma-project/",
+   "https://www.tribune242.com/news/2023/sep/15/exuma-project-pledging-300-jobs-back-track/"
+  ]
+ },
+ {
+  "slug": "the-point-grace-bay-resorts",
+  "name": "The Point (at Point Grace)",
+  "developer": "Grace Bay Resorts (applicant The Point Ltd)",
+  "area": "Grace Bay, Providenciales",
+  "country": "Turks and Caicos Islands",
+  "market": "Turks and Caicos",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.gracebayresortsdevelopment.com/residences/the-point",
+  "docs_url": "https://www.gracebayresortsdevelopment.com/residences/the-point",
+  "permit_number": "PR 16271 (outline development permission)",
+  "docs_listed": [
+   "developer: site plan and floor plans for 2BR to 5BR condos, casitas and pool lofts with interior and exterior sq ft",
+   "developer: pricing PDF link",
+   "developer: milestone payment schedule, 10% deposit held in escrow pending construction start",
+   "developer: compulsory rental programme with 50/50 room revenue split",
+   "developer: owner updates (Jun 2024, Fall 2024, Nov 2024) on planning, judicial review and Republic Bank loan",
+   "developer: 10% stamp duty and furniture package cost (8-10%) disclosed"
+  ],
+  "note": "58-home low-density expansion of Point Grace on Grace Bay (38 to 42 oceanfront condos and 16 casitas). Outline permission PR 16271 (Nov 2022) survived a judicial review by neighbour Le Vele; groundbreaking Feb 2025 with Republic Bank financing, oceanfront buildings at third level by Jan 2026, completion late 2027. Condos US$3.25M to US$7.5M, casitas from US$2.2M. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2200000,
+   "currency": "USD",
+   "title": "freehold strata (condos); freehold land parcel plus construction contract (casitas)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": "PR 16271",
+   "plans_published": true,
+   "escrow": "10% deposit on contract held in escrow pending construction start; later payments tied to slab, roof, windows, drywall and completion",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Grace Bay Resorts developed and operates Grace Bay Club (from 2001), Rock House, West Bay Club, Point Grace and South Bank; says it was involved in over a dozen hospitality and residential developments",
+   "units": 58,
+   "payment_plan": "10% on contract (escrow); 15% construction start; 15% slab; 20% roof; 10% windows and doors; 10% drywall; 20% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer page gives no permit number; owner updates describe outline permission and detailed permission applications. Sun TCI report of the Supreme Court judgment names outline development permission PR 16271 (16 Nov 2022) and consolidation permission PR 16473",
+   "escrow": "Project page: 10% on contract held in escrow pending construction start (escrow agent not named)",
+   "progress": "Dated owner updates; CEO told Caribbean Journal (Jan 2026) the oceanfront buildings had risen to the third level; Caribbean Journal (Oct 2026) reports construction under way after a site visit",
+   "plans": "Floor plans for every unit type with sq ft on the project page, plus site plan",
+   "record": "Developer and press name the operating resorts it built and runs on Providenciales",
+   "returns": "Compulsory rental programme with 50/50 revenue split; no guaranteed return"
+  },
+  "positives": [
+   "Deposit held in escrow and milestone-linked payments published",
+   "Planning permission upheld by the Supreme Court",
+   "Construction financing from Republic Bank Limited announced",
+   "Full cost disclosure including 10% stamp duty and furniture package"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Outline development permission PR 16271 granted 16 Nov 2022",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://suntci.com/supreme-court-dismisses-le-vele-hotel-application-for-judicial-review-of-gr-p11097-129.htm"
+   },
+   {
+    "claim": "Judicial review by Le Vele dismissed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://suntci.com/supreme-court-dismisses-le-vele-hotel-application-for-judicial-review-of-gr-p11097-129.htm"
+   },
+   {
+    "claim": "Groundbreaking 1 Feb 2025 with the Premier",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://suntci.com/grace-bay-resorts-commemorates-the-points-groundbreaking-in-turks-and-caic-p12249-129.htm"
+   },
+   {
+    "claim": "Construction began February 2024 (CEO interview)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.caribjournal.com/2026/01/23/grace-bay-resorts-ceo-mark-durliat/"
+   },
+   {
+    "claim": "Oceanfront buildings rising to third level (Jan 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribjournal.com/2026/01/23/grace-bay-resorts-ceo-mark-durliat/"
+   },
+   {
+    "claim": "Construction under way (Oct 2026 site visit)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caribjournal.com/2026/10/07/turks-and-caicos-the-point/"
+   },
+   {
+    "claim": "Construction loan from Republic Bank Limited",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gracebayresortsdevelopment.com/the-point-owners-update-fall-2024"
+   },
+   {
+    "claim": "10% deposit held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gracebayresortsdevelopment.com/residences/the-point"
+   },
+   {
+    "claim": "More than 75% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribjournal.com/2026/01/07/turks-and-caicos-beach-plum/"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gracebayresortsdevelopment.com/residences/the-point"
+   },
+   {
+    "claim": "Developer operates Grace Bay Club, Rock House, West Bay Club, Point Grace, South Bank",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://suntci.com/grace-bay-resorts-commemorates-the-points-groundbreaking-in-turks-and-caic-p12249-129.htm"
+   },
+   {
+    "claim": "Condos from US$3.25M, casitas from US$2.2M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribjournal.com/2026/01/07/turks-and-caicos-beach-plum/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2001,
+   "developer_hq": "Providenciales, Turks and Caicos Islands",
+   "developer_company": "The Point Ltd (applicant in court record); Grace Bay Real Estate by Grace Bay Resorts",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-02",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR lockout",
+    "3BR lockout",
+    "4BR",
+    "5BR",
+    "2BR casita",
+    "pool loft"
+   ],
+   "size_min_m2": 195,
+   "size_max_m2": 610,
+   "price_min": 2200000,
+   "price_max": 7500000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "Milestone schedule 10/15/15/20/10/10/20",
+   "foreign_ownership": "Freehold strata for foreigners; 10% stamp duty",
+   "rental_programme": "Compulsory Point Grace rental programme, 50/50 room revenue split",
+   "service_charge": "Strata fees to be estimated near completion",
+   "brand": "Point Grace (Small Luxury Hotels of the World)",
+   "amenities": [
+    "adults-only pool",
+    "three family pools",
+    "spa and fitness centre",
+    "tennis and pickleball",
+    "kids discovery centre",
+    "oceanfront dining",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Physical Planning Board / Department of Planning, TCI",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "sources": [
+   "https://www.gracebayresortsdevelopment.com/residences/the-point",
+   "https://www.thepointtci.com/",
+   "https://www.gracebayresortsdevelopment.com/the-point-owners-update-june-2024",
+   "https://www.gracebayresortsdevelopment.com/the-point-owners-update-fall-2024",
+   "https://www.gracebayresortsdevelopment.com/the-point-owners-update-nov-2024",
+   "https://suntci.com/supreme-court-dismisses-le-vele-hotel-application-for-judicial-review-of-gr-p11097-129.htm",
+   "https://suntci.com/grace-bay-resorts-commemorates-the-points-groundbreaking-in-turks-and-caic-p12249-129.htm",
+   "https://www.caribjournal.com/2026/01/07/turks-and-caicos-beach-plum/",
+   "https://www.caribjournal.com/2026/01/23/grace-bay-resorts-ceo-mark-durliat/",
+   "https://www.caribjournal.com/2026/10/07/turks-and-caicos-the-point/"
+  ]
+ },
+ {
+  "slug": "vistara-residences-imagine-developments",
+  "name": "Vistara Residences",
+  "developer": "IMAGINE Developments (Maloney Group)",
+  "area": "Calijanda Estate, Westmoreland, St James",
+  "country": "Barbados",
+  "market": "Barbados",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://terrared.com/designing-for-the-caribbean-inside-the-architecture-of-vistara-residences/",
+  "docs_url": "https://vistara.visualweb.app/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: virtual experience site with four villa layouts (Lush, Serenity, Edge, Oasis) and total sq ft",
+   "developer: brochure on Issuu (Dec 2025)",
+   "agent: 3BR from US$1,761,000, 4BR from US$2,120,000, Edge from US$3,455,000",
+   "agent: off-plan sales launched Dec 2025, site preparation under way"
+  ],
+  "note": "Gated enclave of standalone villas with private infinity pools above the west coast by the Maloney Group's development arm, launched off-plan in Dec 2025 with site preparation and infrastructure under way. The developer's own site says 16 villas of 2,099 to 3,928 sq ft while agents and the launch report say 18 villas of 3,100 to 6,263 sq ft; no completion date, permit or deposit terms published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1761000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Agents and the developer name completed Barbados projects Allure, Aspire and The Residences at Coverley; developer claims 60+ active and completed projects on the island",
+   "units": 18,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning permission reference published",
+   "escrow": null,
+   "progress": "Only undated statements that site preparation and infrastructure are under way (Terra Caribbean, Mar 2026)",
+   "plans": "Developer virtual site shows four villa layouts with bedrooms and sq ft; agent pages give plot and floor areas",
+   "record": "Named prior projects Allure, Aspire and The Residences at Coverley (agents, developer)",
+   "returns": "No yield or guarantee; agents mention future rental demand only"
+  },
+  "positives": [
+   "Developer part of a long-established Barbados group with named completed projects",
+   "Villa layouts and prices per type published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "18 standalone villas",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vistara.visualweb.app/"
+   },
+   {
+    "claim": "Villas 3,250 to 6,263 sq ft",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vistara.visualweb.app/"
+   },
+   {
+    "claim": "Off-plan sales launched Dec 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terracaribbean.com/discover-vistara-residences-exclusive-luxury-villas-with-panoramic-sea-views-on-barbados-platinum-coast/"
+   },
+   {
+    "claim": "Launch event Feb 2026 with Mark Maloney",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessbarbados.com/post/imagine-developments-launches-vistara"
+   },
+   {
+    "claim": "Site preparation under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terracaribbean.com/discover-vistara-residences-exclusive-luxury-villas-with-panoramic-sea-views-on-barbados-platinum-coast/"
+   },
+   {
+    "claim": "3BR from US$1,761,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://residencebarbados.com/property/vistara-westmoreland-st-james/"
+   },
+   {
+    "claim": "Developer delivered Allure, Aspire and The Residences at Coverley",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terracaribbean.com/discover-vistara-residences-exclusive-luxury-villas-with-panoramic-sea-views-on-barbados-platinum-coast/"
+   },
+   {
+    "claim": "Planning permission granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vistara.visualweb.app/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vistara.visualweb.app/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Barbados",
+   "developer_company": "IMAGINE Developments, part of the Maloney Group",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 195,
+   "size_max_m2": 582,
+   "price_min": 1761000,
+   "price_max": 3455000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; no restriction on foreign buyers, exchange control approval for funds",
+   "rental_programme": null,
+   "service_charge": "HOA fees (amount not stated)",
+   "brand": null,
+   "amenities": [
+    "private infinity-edge pools",
+    "gated access",
+    "expansive terraces",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Planning and Development Department (Chief Town Planner), Barbados",
+   "brochure_url": "https://issuu.com/imaginedevelopments/docs/vistara"
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://vistara.visualweb.app/",
+   "https://www.imaginedevelopments.com/home",
+   "https://issuu.com/imaginedevelopments/docs/vistara",
+   "https://www.businessbarbados.com/post/imagine-developments-launches-vistara",
+   "https://terracaribbean.com/discover-vistara-residences-exclusive-luxury-villas-with-panoramic-sea-views-on-barbados-platinum-coast/",
+   "https://terrared.com/designing-for-the-caribbean-inside-the-architecture-of-vistara-residences/",
+   "https://residencebarbados.com/property/vistara-westmoreland-st-james/",
+   "https://stewartcorealty.com/property-details-sales/vistara-edge",
+   "https://seasiderealtybarbados.com/real-estate/st-james/vistara-residences-18"
+  ]
+ },
+ {
+  "slug": "the-pinnacle-montego-bay-lch",
+  "name": "The Pinnacle, Montego Bay (Phase 1)",
+  "developer": "LCH Development Limited",
+  "area": "Reading Peninsula, Montego Bay, St James",
+  "country": "Jamaica",
+  "market": "Jamaica",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://thepinnaclejamaica.com/residences-the-pinnacle-montego-bay/",
+  "docs_url": "https://thepinnaclejamaica.com/faqs/",
+  "permit_number": "REB development registration DV-1908 (developer states #D/1908)",
+  "docs_listed": [
+   "developer: Real Estate Board registration number in FAQ",
+   "developer: list of approvals (St James Municipal Corporation, NEPA, Civil Aviation Authority, NWA) as of Aug 2023",
+   "developer: apartment finder with unit-level floor plans, internal and external areas, tower brochures (PDF)",
+   "developer: 10% deposit on signing, escalation clause capped at 10%, 6-month defects liability",
+   "developer: HOA estimate US$0.25 per sq ft per month and reserve fund fees",
+   "developer: groundbreaking Jan 2024, Phase 1 handover from early 2027, full completion 2029"
+  ],
+  "note": "Multi-tower Montego Bay development (351 residences, villas and an Accor/Ennismore hotel planned); Tower 1 has 141 residences from about US$600,000. Real Estate Board register shows development DV-1908 (Phase 1, 270 units) by LCH Development Limited, registered 29 Sep 2023, estimated completion 31 Dec 2027. Observer reported 23 floors of Tower 1 up in Sep 2025. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 600000,
+   "currency": "USD",
+   "title": "freehold strata (registered title under Torrens system)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "DV-1908",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 270,
+   "payment_plan": "Reservation deposit, 10% on signing, staged payments on request; escalation clause up to 10%",
+   "price_per_m2": 6601
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer FAQ gives REB registration #D/1908 and lists government approvals; REB public register shows DV-1908, Phase 1 Lot 2 Part of Reading Pen, 270 residential units, developer LCH Development Limited (DVR-1652, renewed)",
+   "escrow": null,
+   "progress": "Developer FAQ: broke ground Jan 2024; Jamaica Observer (Sep 2025) reported 23 floors of Tower 1 in place during a site tour",
+   "plans": "Apartment finder and tower brochure PDFs show floor plans for each unit with internal and external areas",
+   "record": "No completed projects by LCH Development named anywhere found",
+   "returns": "Towers 2 and 3 in an operator rental programme with profit share; no guarantee or yield figure; Tower 1 long-term lets only, no Airbnb"
+  },
+  "positives": [
+   "Real Estate Board registration number published and confirmed on the official register",
+   "Approvals from municipal, NEPA, aviation and works agencies listed",
+   "Detailed unit plans and running-cost estimates published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer registered with the Real Estate Board (#D/1908)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://reb.gov.jm/search-public-register/development/?registers=development&search_registry=DV-1908"
+   },
+   {
+    "claim": "LCH Development Limited is a registered developer",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://reb.gov.jm/search-public-register/developer/?registers=developer&search_registry=LCH"
+   },
+   {
+    "claim": "Phase 1 handover from early 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://reb.gov.jm/search-public-register/development/?registers=development&search_registry=DV-1908"
+   },
+   {
+    "claim": "Tower 1 has 141 residences",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://reb.gov.jm/search-public-register/development/?registers=development&search_registry=DV-1908"
+   },
+   {
+    "claim": "Broke ground January 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thepinnaclejamaica.com/faqs/"
+   },
+   {
+    "claim": "23 floors of Tower 1 in place (Sep 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.jamaicaobserver.com/2025/09/26/65-per-cent-sold/"
+   },
+   {
+    "claim": "Approvals from St James Municipal Corporation, NEPA, CAA and NWA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thepinnaclejamaica.com/faqs/"
+   },
+   {
+    "claim": "Prices from US$600,000 for a 1BR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.jamaicaobserver.com/2025/09/26/65-per-cent-sold/"
+   },
+   {
+    "claim": "65% of Tower 1 sold (Sep 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.jamaicaobserver.com/2025/09/26/65-per-cent-sold/"
+   },
+   {
+    "claim": "Partnership with Accor/Ennismore for hotel and branded residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.jamaicaobserver.com/2025/09/26/65-per-cent-sold/"
+   },
+   {
+    "claim": "Foreigners can buy without restriction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thepinnaclejamaica.com/faqs/"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thepinnaclejamaica.com/faqs/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Montego Bay, Jamaica",
+   "developer_company": "LCH Development Limited, REB developer DVR-1652",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-01",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR penthouse"
+   ],
+   "size_min_m2": 91,
+   "size_max_m2": 480,
+   "price_min": 600000,
+   "price_max": 900000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10% on signing, staged payments; escalation up to 10%",
+   "foreign_ownership": "No restriction on foreign buyers; strata title",
+   "rental_programme": "Towers 2 and 3 in operator rental programme with profit share; Tower 1 long-term lets only",
+   "service_charge": "HOA about US$0.25 per sq ft per month plus quarterly reserve fund US$200-400",
+   "brand": "Accor / Ennismore (hotel, per Observer)",
+   "amenities": [
+    "pool decks",
+    "tennis and pickleball",
+    "marina (quay)",
+    "Mangrove Club",
+    "rooftop bar",
+    "helipad",
+    "retail centre",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "St James Municipal Corporation and NEPA (planning); Real Estate Board (development registration)",
+   "brochure_url": "https://thepinnaclejamaica.com/wp-content/uploads/2024/01/The_Pinnacle_Hummingbird-1.pdf"
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://thepinnaclejamaica.com/faqs/",
+   "https://thepinnaclejamaica.com/residences-the-pinnacle-montego-bay/",
+   "https://thepinnaclejamaica.com/apartment-search-result/",
+   "https://thepinnaclejamaica.com/apartments/canary-2001/",
+   "https://thepinnaclejamaica.com/wp-content/uploads/2024/01/The_Pinnacle_Hummingbird-1.pdf",
+   "https://reb.gov.jm/search-public-register/development/?registers=development&search_registry=DV-1908",
+   "https://reb.gov.jm/search-public-register/developer/?registers=developer&search_registry=LCH",
+   "https://www.jamaicaobserver.com/2025/09/26/65-per-cent-sold/"
+  ]
+ },
+ {
+  "slug": "hq-cas-en-bas-wellington-estates",
+  "name": "HQ Cas En Bas Resort & Residences (formerly Cas en Bas Beach Resort, Destination by Hyatt)",
+  "developer": "Wellington Estates (seller Cameron Inc.), branded by HQ Hotels & Residences by sbe, Wyndham Registry Collection",
+  "area": "Cas en Bas, Cap Estate, Gros Islet",
+  "country": "Saint Lucia",
+  "market": "Saint Lucia",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://brandedresi.com/hq-cas-en-bas-resort-and-residences/",
+  "docs_url": "http://casenbasbeachresort.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: studio, 1BR and 2BR floor plan PDFs",
+   "developer: brochure (Spring 2026) with unit sizes 366-905 sq ft",
+   "developer: purchaser benefits list incl. 5% a year guaranteed for 5 years and guaranteed buy-back after 5 years (T&Cs apply)",
+   "developer: 'Phases 1 & 2: 90% sold', developer finance and stage payments",
+   "Wellington Estates portfolio page: 90 residences, prices from US$395,000, opening 2026"
+  ],
+  "note": "Condo-hotel of 96 freehold studios and 1-2BR units on Cap Estate, opening targeted Nov 2026, plus preliminary planning for 82 more residences on an adjacent plot now being sold. Launched in 2024 as a Destination by Hyatt project and rebranded HQ by sbe / Wyndham in 2026. The sales site advertises a 5% a year guaranteed return for 5 years and a guaranteed buy-back at full price, and mentions citizenship fees although the project is not on the CIU approved real-estate list. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 395000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 178,
+   "payment_plan": "Low reservation fee, stage payments and developer finance available (terms not published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Brand press release says preliminary planning granted for 82 additional residences; no planning reference numbers published",
+   "escrow": null,
+   "progress": "No dated construction updates or %; only opening target of November 2026",
+   "plans": "Floor plan PDFs for studio, 1BR and 2BR on the project site",
+   "record": "Wellington Estates cites UK listed-building projects and unnamed Caribbean resort developments; no delivered Caribbean project named",
+   "returns": "Sales site: 'Managed rental programme offering 5% per annum guaranteed for 5 years' and 'Guaranteed buy-back option after 5 years at the full purchase price paid' (T&Cs apply)"
+  },
+  "positives": [
+   "Global hotel distribution through Wyndham Registry Collection",
+   "Floor plans and unit sizes published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Opening November 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hospitalitynet.org/announcement/41014414/hq-hotels-residences-by-sbe-announces-forthcoming-flagship-hq-cas-en-bas-resort-residences-in-saint-lucia"
+   },
+   {
+    "claim": "Over 90% of the 96 residences sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brandedresi.com/hq-cas-en-bas-resort-and-residences/"
+   },
+   {
+    "claim": "Preliminary planning granted for 82 more residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribjournal.com/2026/05/06/saint-lucia-new-hq-resort-wyndham/"
+   },
+   {
+    "claim": "Operated as Destination by Hyatt (2024 launch)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.caribjournal.com/2026/05/06/saint-lucia-new-hq-resort-wyndham/"
+   },
+   {
+    "claim": "Citizenship programme application fees included (implies CBI eligibility)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.cipsaintlucia.com/approved-real-estate-and-enterprise-projects"
+   },
+   {
+    "claim": "5% a year guaranteed rental return for 5 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://casenbasbeachresort.com/"
+   },
+   {
+    "claim": "Guaranteed buy-back at full price after 5 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://casenbasbeachresort.com/"
+   },
+   {
+    "claim": "US$130M development value",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brandedresi.com/hq-cas-en-bas-resort-and-residences/"
+   },
+   {
+    "claim": "Prices from US$395,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://www.wellington-estates.com/portfolio/cas-en-bas-beach-resort/"
+   },
+   {
+    "claim": "Developer has delivered Caribbean resort projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casenbasbeachresort.com/wp-content/uploads/2026/05/HQ-Cas-en-Bas-Beach-Resort-by-sbe-Brochure-Spring-26-1-1.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "United Kingdom",
+   "developer_company": "Cameron Inc. (developer and seller named in sales disclaimer); Wellington Estates",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 84,
+   "price_min": 395000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Stage payments and developer finance (terms on request)",
+   "foreign_ownership": "Freehold; Aliens Landholding Licence required for non-citizens in Saint Lucia",
+   "rental_programme": "Managed rental programme, 4 weeks owner use; 5% a year guaranteed for 5 years (sales site)",
+   "service_charge": null,
+   "brand": "HQ Hotels & Residences by sbe (Wyndham Registry Collection)",
+   "amenities": [
+    "50m pool",
+    "Katsuya Beach",
+    "Umami Burger",
+    "Sky Bar",
+    "rum shack",
+    "concierge",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Development Control Authority (Physical Planning), Saint Lucia",
+   "brochure_url": "https://casenbasbeachresort.com/wp-content/uploads/2026/05/HQ-Cas-en-Bas-Beach-Resort-by-sbe-Brochure-Spring-26-1-1.pdf"
+  },
+  "verified_score": 0,
+  "sources": [
+   "http://casenbasbeachresort.com/",
+   "https://casenbasbeachresort.com/wp-content/uploads/2026/05/HQ-Cas-en-Bas-Beach-Resort-by-sbe-Brochure-Spring-26-1-1.pdf",
+   "http://www.wellington-estates.com/portfolio/cas-en-bas-beach-resort/",
+   "https://brandedresi.com/hq-cas-en-bas-resort-and-residences/",
+   "https://www.hospitalitynet.org/announcement/41014414/hq-hotels-residences-by-sbe-announces-forthcoming-flagship-hq-cas-en-bas-resort-residences-in-saint-lucia",
+   "https://www.caribjournal.com/2026/05/06/saint-lucia-new-hq-resort-wyndham/",
+   "https://hospitalitydesign.com/news/hq-cas-en-bas-resort-residences-saint-lucia/628165",
+   "https://www.cipsaintlucia.com/approved-real-estate-and-enterprise-projects",
+   "https://realtystlucia.com/st-lucia-real-estate-market-update-september-2026/"
+  ]
+ }
+]

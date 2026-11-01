@@ -1,0 +1,2144 @@
+[
+ {
+  "slug": "soul-north-coast-emaar-misr",
+  "name": "Soul (Soul Luxury Beach Resort)",
+  "developer": "Emaar Misr for Development S.A.E. (EGX-listed)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Qesm Ad Dabaah, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.propertyfinder.eg/en/new-projects/emaar/soul",
+  "docs_url": "https://www.emaarmisr.com/en/our-communities/soul/",
+  "docs_listed": [
+   "developer: product lines (Waters, Seaview, Lagoons, Views, Islands, Flow, Breeze villas, Locanda serviced residences)",
+   "developer: 580 acres, four beaches, 1.5 km coastline",
+   "portal: launch price EGP 55M, 5% down, 8-year instalments",
+   "portal: construction start 11 Mar 2024, completion 31 Dec 2027",
+   "portal: villa sizes 193 to 916 m2, layout types A to L listed (floor plan fields empty)",
+   "news: phase 1 handover nearly complete, phase 2 about 60% structure (Jul 2026)"
+  ],
+  "note": "Emaar Misr's 580-acre villa resort about 30 km west of Marassi; Property Finder lists a EGP 55M launch price, 5% down over 8 years, construction start March 2024 and completion December 2027. Invest-Gate reported in July 2026 that phase 1 handover is nearly complete and phase 2 is about 60% through structural works. No permit number or escrow is published, which is normal in Egypt. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 55000000,
+   "currency": "EGP",
+   "title": "freehold (Egyptian title; foreigners may own up to two residential units)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Emaar Misr (EGX-listed) delivered Marassi North Coast, Uptown Cairo and Mivida; Invest-Gate (Feb 2026) reports record 2025 net sales of EGP 176bn",
+   "units": null,
+   "payment_plan": "5% down payment, balance over 8 years",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "No building permit or NUCA/municipal approval number on the developer page or portal listing",
+   "escrow": "No escrow or deposit protection stated; payments go to the developer on instalments",
+   "progress": "Invest-Gate, 27 Jul 2026: phase 1 handover close to complete, phase 2 about 60% of structural works done; Property Finder timeline gives start 11 Mar 2024",
+   "plans": "Property Finder lists layout types A to L with sizes but floor plan fields are empty; developer page shows no plans",
+   "record": "Listed developer with named delivered communities (Marassi, Uptown Cairo, Mivida); 2025 results reported by Invest-Gate",
+   "returns": "No rental guarantee or yield stated on developer or portal pages"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Emaar Misr, an EGX-listed company",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://arabfinance.com/en/news/newdetails/emaar-misr-nears-Soul-handover"
+   },
+   {
+    "claim": "Phase 1 handover nearly complete",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://invest-gate.me/?p=101541"
+   },
+   {
+    "claim": "Phase 2 about 60% of structural works done (Jul 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://invest-gate.me/?p=101541"
+   },
+   {
+    "claim": "Project covers 580 acres",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://invest-gate.me/?p=101541"
+   },
+   {
+    "claim": "Investment exceeds EGP 112bn",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://invest-gate.me/?p=101541"
+   },
+   {
+    "claim": "Completion 31 Dec 2027 (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/emaar/soul"
+   },
+   {
+    "claim": "Construction started 11 Mar 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/emaar/soul"
+   },
+   {
+    "claim": "Launch price EGP 55M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/emaar/soul"
+   },
+   {
+    "claim": "Emaar Misr 2025 net sales EGP 176bn and Soul among key projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://invest-gate.me/?p=79618"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaarmisr.com/en/our-communities/soul/"
+   },
+   {
+    "claim": "Buyer payments held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaarmisr.com/en/our-communities/soul/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2005,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Emaar Misr for Development S.A.E.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Egyptian Exchange (EMFD); 2025 revenue EGP 19.8bn per Invest-Gate",
+   "construction_start": "2024-03",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "townhouse 4BR",
+    "villa 3BR",
+    "villa 5BR",
+    "villa 6BR",
+    "villa 7BR",
+    "beach house",
+    "serviced residence"
+   ],
+   "size_min_m2": 193,
+   "size_max_m2": 916,
+   "price_min": 55000000,
+   "price_max": null,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, 8-year instalments",
+   "foreign_ownership": "Egyptian freehold registration; foreigners limited to two residential units (general Egyptian rule)",
+   "rental_programme": "Locanda serviced residences and hotel component; no figures",
+   "service_charge": null,
+   "brand": "Locanda (Emaar hospitality concept)",
+   "amenities": [
+    "four beaches",
+    "elevated infinity beach lagoon",
+    "swimmable lagoons",
+    "beach clubhouse",
+    "Sol Town retail and nightlife district",
+    "Locanda hotel",
+    "underwater sculpture diving",
+    "boardwalk"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Matrouh governorate / New Urban Communities Authority depending on zoning",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer is a listed company with published annual results",
+   "Independent press confirms phase 1 handover and phase 2 progress",
+   "Low 5% down payment spread over 8 years",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.eg/en/new-projects/emaar/soul",
+   "https://www.emaarmisr.com/en/our-communities/soul/",
+   "https://invest-gate.me/?p=101541",
+   "https://arabfinance.com/en/news/newdetails/emaar-misr-nears-Soul-handover",
+   "https://invest-gate.me/?p=79618"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 2
+ },
+ {
+  "slug": "eko-savannah-mj-developpement",
+  "name": "Ekô Savannah (Phase 2)",
+  "developer": "MJ Développement (project company Tamarin Savannah Ltd)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Tamarin, Rivière Noire",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "url": "https://ekosavannah.com/en/homepage/",
+  "docs_url": "https://www.mj-developpement.com/en/programmes-neufs/eko-savannah/",
+  "docs_listed": [
+   "developer: villa types t5 (305 m2, EUR 1,445,000) and t7 (420 to 493 m2, EUR 1,895,000 to 2,490,000)",
+   "developer: delivery expected April 2026 (phase 1)",
+   "developer: brochure download; plans only on request",
+   "developer: rental management by MJ Holidays 'guaranteeing up to 5.5% gross rental income per annum'",
+   "news: phase 2 of 13 villas launched Oct 2025, delivery Q3 2027"
+  ],
+  "note": "French developer MJ Développement's 8-hectare PDS villa resort in Tamarin: 33 phase 1 villas due April 2026 and 13 phase 2 villas due Q3 2027, from EUR 1,445,000. The EDB list of approved PDS projects shows Tamarin Savannah Ltd (contact Michaël Ruel) holding a PDS certificate for 47 villas. The English developer page says MJ Holidays is 'guaranteeing up to 5.5% gross rental income', while press releases call it indicative. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1445000,
+   "currency": "EUR",
+   "title": "freehold (PDS, open to non-citizens)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5.5,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Mythic Suites & Villas (Grand Gaube) and Marguery Villas (Rivière Noire) delivered in Mauritius per developer office page and Le Mauricien; group claims 1,900+ units built and sold",
+   "units": 46,
+   "payment_plan": null,
+   "price_per_m2": 4738
+  },
+  "evidence": {
+   "permit": "Developer only says the estate is under the PDS; no certificate or building permit number published. EDB list of approved PDS projects (Oct 2022) shows Tamarin Savannah Ltd, Tamarin, 47 villas, status PDS Certificate",
+   "escrow": "No escrow or completion guarantee stated on developer pages",
+   "progress": "Press (Le Mauricien, 3 Nov 2025; Lexpress Property, 12 Dec 2025): phase 1 of 33 villas due April 2026, phase 2 launched Oct 2025 due Q3 2027; no % published",
+   "plans": "Villa types and sizes listed but floor plans are 'Ask for the plans' only",
+   "record": "Developer and Le Mauricien name delivered resorts Mythic Suites & Villas and Marguery Villas",
+   "returns": "English developer page: MJ Holidays 'guaranteeing up to 5.5% gross rental income per annum*' (asterisk: depends on owner occupation); press releases call 5.5% indicative"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Project company holds a PDS certificate (EDB)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Project company is linked to MJ Développement (Michaël Ruel)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Estate has 46 villas",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Phase 1 (33 villas) delivery April 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lemauricien.com/actualites/societe/a-tamarin-eko-savannah-lance-la-phase-2-de-son-resort/689471/"
+   },
+   {
+    "claim": "Phase 2 (13 villas) delivery Q3 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lexpressproperty.com/en/news-advices/news/phase-two-of-eko-savannah-gets-underway.html"
+   },
+   {
+    "claim": "Phase 1 delivered and handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mj-developpement.com/en/programmes-neufs/eko-savannah/"
+   },
+   {
+    "claim": "Developer delivered Mythic Suites & Villas and Marguery Villas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lemauricien.com/actualites/societe/a-tamarin-eko-savannah-lance-la-phase-2-de-son-resort/689471/"
+   },
+   {
+    "claim": "Group has built and sold 1,900+ units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newsmoris.com/phase-2-unveiled-for-eko-savannah-luxury-resort-in-tamarin/"
+   },
+   {
+    "claim": "Rental income up to 5.5% gross guaranteed",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.lexpressproperty.com/en/news-advices/news/phase-two-of-eko-savannah-gets-underway.html"
+   },
+   {
+    "claim": "Prices from EUR 1,445,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mj-developpement.com/en/programmes-neufs/eko-savannah/"
+   },
+   {
+    "claim": "Freehold with residence permit for purchases above USD 375,000",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://new.edbmauritius.com/schemes"
+   },
+   {
+    "claim": "Buyer payments protected by escrow or completion guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ekosavannah.com/en/homepage/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Basque Country, France (Mauritius office Black River)",
+   "developer_company": "Tamarin Savannah Ltd (per EDB PDS list); group MJ Développement",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa 3BR",
+    "villa 4BR",
+    "villa 5BR"
+   ],
+   "size_min_m2": 269,
+   "size_max_m2": 507,
+   "price_min": 1445000,
+   "price_max": 2490000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold under the Property Development Scheme; residence permit above USD 375,000",
+   "rental_programme": "MJ Holidays rental management, up to 5.5% gross per year advertised",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "clubhouse",
+    "120 m2 swimming pool",
+    "concierge 7/7",
+    "bistronomic restaurant BOMA",
+    "spa and fitness",
+    "business centre",
+    "kids club",
+    "private infinity pools"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Economic Development Board (PDS certificate); Black River District Council (building and land use permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Project company appears on the EDB list of approved PDS projects",
+   "Developer has delivered two earlier resorts in Mauritius named in the press",
+   "Phase dates reported consistently in independent press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ekosavannah.com/en/homepage/",
+   "https://ekosavannah.com/en/villas/",
+   "https://www.mj-developpement.com/en/programmes-neufs/eko-savannah/",
+   "https://www.mj-developpement.com/en/offices/mautitius-black-river/",
+   "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf",
+   "https://new.edbmauritius.com/schemes",
+   "https://www.lemauricien.com/actualites/societe/a-tamarin-eko-savannah-lance-la-phase-2-de-son-resort/689471/",
+   "https://www.lexpressproperty.com/en/news-advices/news/phase-two-of-eko-savannah-gets-underway.html",
+   "https://newsmoris.com/phase-2-unveiled-for-eko-savannah-luxury-resort-in-tamarin/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 3
+ },
+ {
+  "slug": "amarina-villas-necker-property",
+  "name": "Amarina Villas",
+  "developer": "Necker Property (project company Amarina Villas Ltd)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Grand Baie (off Chemin Vingt Pieds)",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "url": "https://necker-property.com/en/portfolio-item/amarina-villas/",
+  "docs_url": "https://necker-property.com/en/portfolio-item/amarina-villas/",
+  "docs_listed": [
+   "developer: 23 villas, mostly single-storey, 3 or 4 en-suite bedrooms",
+   "developer: from EUR 710,000",
+   "developer: private pool, gym, 24/7 security, concierge",
+   "developer: PDS scheme with residence permit",
+   "developer: brochure on request (form)"
+  ],
+  "note": "A 23-villa PDS estate in Grand Baie marketed by Necker Property, a three-partner developer whose first project is the Cosy Bay apartments, from EUR 710,000. The EDB public notice of PER decisions shows a PER licence for a 'PDS Villas Complex' by Amarina Villas Ltd in Grand Baie approved on 30 Apr 2026. No permit number, plans, escrow, timeline or progress are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 710000,
+   "currency": "EUR",
+   "title": "freehold (PDS, open to non-citizens)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 23,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "Developer says the project is under the PDS scheme but publishes no certificate or permit number. EDB PER decisions notice: 'PDS Villas Complex', Amarina Villas Ltd, Grand Baie, PER Licence approved 30/04/2026",
+   "escrow": "No escrow, bank guarantee or completion guarantee mentioned",
+   "progress": "No construction start, timeline or progress published",
+   "plans": "No floor plans on the page; brochure only by request",
+   "record": "Developer home page says Cosy Bay is its first project; no delivered projects named",
+   "returns": "No guaranteed returns or yield figures; generic 'strong potential for property value growth'"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has environmental approval (PER licence)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://business.edbmauritius.org/wps/portal/business/home/licensing/perdecisions/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR0NzQz9nQ383S1DXQ3MAgxCHL0D3QwMfA30C7IdFQF1PwNr/"
+   },
+   {
+    "claim": "Project is a PDS villa complex in Grand Baie",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://business.edbmauritius.org/wps/portal/business/home/licensing/perdecisions/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR0NzQz9nQ383S1DXQ3MAgxCHL0D3QwMfA30C7IdFQF1PwNr/"
+   },
+   {
+    "claim": "PDS certificate issued by EDB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Building and land use permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://necker-property.com/en/portfolio-item/amarina-villas/"
+   },
+   {
+    "claim": "23 villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://necker-property.com/en/portfolio-item/amarina-villas/"
+   },
+   {
+    "claim": "Prices from EUR 710,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://necker-property.com/en/portfolio-item/amarina-villas/"
+   },
+   {
+    "claim": "Buyers qualify for a residence permit",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://new.edbmauritius.com/schemes"
+   },
+   {
+    "claim": "Developer has delivered earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://necker-property.com/en/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://necker-property.com/en/portfolio-item/amarina-villas/"
+   },
+   {
+    "claim": "Deposits protected by escrow or completion guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://necker-property.com/en/portfolio-item/amarina-villas/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Mauritius",
+   "developer_company": "Amarina Villas Ltd (PER licence holder)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa 3BR",
+    "villa 4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 710000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold under the Property Development Scheme; residence permit above USD 375,000",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "landscaped gardens",
+    "gym",
+    "24/7 security",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Economic Development Board (PDS certificate); Ministry of Environment (PER licence); Grand Baie district council (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Environmental PER licence for the project company is on the public EDB notice (approved 30 Apr 2026)",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://necker-property.com/en/portfolio-item/amarina-villas/",
+   "https://necker-property.com/en/",
+   "https://business.edbmauritius.org/wps/portal/business/home/licensing/perdecisions/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR0NzQz9nQ383S1DXQ3MAgxCHL0D3QwMfA30C7IdFQF1PwNr/",
+   "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf",
+   "https://new.edbmauritius.com/schemes"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1
+ },
+ {
+  "slug": "anga-zanzibar-lzdm",
+  "name": "ANGA Zanzibar",
+  "developer": "LZDM Ltd",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Paje Main Road, South East Coast",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "url": "https://angazanzibar.com/",
+  "docs_url": "https://angazanzibar.com/faqs/",
+  "docs_listed": [
+   "developer: 1BR from USD 143,000; '14-16% annual ROI'",
+   "developer: floor-by-floor apartment and duplex plans",
+   "developer: monthly construction log with photos since July 2025, live camera",
+   "developer: payment plan 8/17/30/35/10 tied to structural milestones",
+   "developer: 82 apartments registered under the Condominium Board, completion Q3 2027",
+   "developer: contractor Boge Investment Co. (ZCRB licensed), lawyers Lawbridge",
+   "news: The Citizen launch article Sep 2025 (72 duplexes, from USD 189,750, Q2 2027)"
+  ],
+  "note": "A ground-plus-six apartment block on Paje's main road by LZDM Ltd, designed by Lucas Oteyza, with 1BR units from USD 143,000 and a mandatory managed rental programme advertised at 14-16% annual ROI. The construction log shows foundations done March 2026 and first-floor structure done August 2026, but the same log already lists entries through March 2027 as if complete. Unit count and completion differ between The Citizen (72 duplexes, Q2 2027) and the current FAQ (82 apartments, Q3 2027). (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 143000,
+   "currency": "USD",
+   "title": "99-year renewable leasehold unit title (Zanzibar Condominium Act)",
+   "lease_base": 99,
+   "extension": "renewable per developer",
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 82,
+   "payment_plan": "8% on reservation agreement (incl. USD 3,000 fee), 17% within 30 days, 30% at 50% of structure, 35% at structural completion, 10% on handover",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "FAQ says LZDM is registered with ZIPA as an approved project developer and that the Condominium Board approved the scheme; no ZIPA certificate, building permit or condominium registration number published",
+   "escrow": "No escrow or bank guarantee; payments go to developer by milestone; only the KYC refund of the reservation deposit is stated",
+   "progress": "Monthly construction log and photo gallery (Sep 2026 latest gallery: concrete casting); log text also lists future months (Nov 2026 to Mar 2027) as completed stages, so it mixes plan and record",
+   "plans": "Apartments page shows floor and duplex plans per level",
+   "record": "No completed projects by LZDM Ltd named; architect's past work (Bamboo Hotel Jambiani) cited by The Citizen",
+   "returns": "Homepage advertises '14-16% annual ROI'; not called guaranteed"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction of main building began (Nov 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/construction-log/"
+   },
+   {
+    "claim": "Completion Q3 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/anga-zanzibar-new-flagship-residential-investment-in-paje-5184798"
+   },
+   {
+    "claim": "82 apartments",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/anga-zanzibar-new-flagship-residential-investment-in-paje-5184798"
+   },
+   {
+    "claim": "Architect is Lucas Oteyza",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/anga-zanzibar-new-flagship-residential-investment-in-paje-5184798"
+   },
+   {
+    "claim": "Developer registered with ZIPA as approved project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/faqs/"
+   },
+   {
+    "claim": "Scheme approved by the Condominium Board",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/faqs/"
+   },
+   {
+    "claim": "Construction log stages Nov 2026 to Mar 2027 completed",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://angazanzibar.com/construction-log/"
+   },
+   {
+    "claim": "Contractor Boge Investment Co. licensed by ZCRB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/faqs/"
+   },
+   {
+    "claim": "14-16% annual ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/"
+   },
+   {
+    "claim": "Prices from USD 143,000 (1BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/"
+   },
+   {
+    "claim": "Foreigners get 99-year leasehold unit title and residence permit above USD 100,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/faqs/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://angazanzibar.com/faqs/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Zanzibar, Tanzania",
+   "developer_company": "LZDM Ltd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2027-Q2",
+   "delay_months": 3,
+   "unit_types": [
+    "1BR",
+    "2BR duplex",
+    "3BR",
+    "4BR duplex"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 143000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 25,
+   "payment_plan": "8/17/30/35/10 milestone plan",
+   "foreign_ownership": "99-year renewable leasehold unit title under the Condominium Act via a ZIPA-approved project",
+   "rental_programme": "Mandatory ANGA Management Program for any rental; furniture package required; 14-16% ROI advertised",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two rooftop pools",
+    "gym",
+    "co-working lounge",
+    "kids club",
+    "restaurant and bar",
+    "ground-floor shops",
+    "four lifts",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Zanzibar Investment Promotion Authority (ZIPA), Condominium Board, Department of Urban and Rural Planning",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans and a dated monthly construction log with photos are public",
+   "Payments are tied to structural milestones",
+   "Launch covered by The Citizen"
+  ],
+  "flags": [],
+  "sources": [
+   "https://angazanzibar.com/",
+   "https://angazanzibar.com/faqs/",
+   "https://angazanzibar.com/construction-log/",
+   "https://angazanzibar.com/apartments/",
+   "https://www.thecitizen.co.tz/tanzania/zanzibar/anga-zanzibar-new-flagship-residential-investment-in-paje-5184798"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ },
+ {
+  "slug": "infinity-hills-stone-town-infinity-developments",
+  "name": "Infinity Hills (Phase One)",
+  "developer": "Infinity Developments (Infinity Group) with Zanzibar Housing Corporation",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Kikwajuni, Stone Town",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "url": "https://infinityhills.com/",
+  "docs_url": "https://infinitydevelopments.com/2026/10/13/infinity-hills-phase-one-launch-zanzibar/",
+  "docs_listed": [
+   "developer: Phase One 350 apartments and 42 retail units; Phase Two numbers not announced",
+   "developer brochures: studio 45.5 m2 from USD 122,900; 1BR 68.5 m2 from USD 185,000; 2BR 114.5 m2 from USD 340,100",
+   "developer brochures: unit layouts per type",
+   "developer brochures: payment plan 5% booking, 15% on SPA, 8 quarterly 7.5% instalments, 20% on completion",
+   "developer: 'pre-mobilisation activities expected to commence shortly' (Oct 2026)",
+   "news: demolition began April 2026 after compensation (Daily News)"
+  ],
+  "note": "A large apartment and retail community at Kikwajuni beside Stone Town, developed by Dubai and Zanzibar based Infinity Developments with the state Zanzibar Housing Corporation; Phase One sales of 350 apartments opened in October 2026 from USD 122,900 for a 45.5 m2 studio. Demolition of the old Kikwajuni flats began in April 2026 and the developer says pre-mobilisation is next, so construction has not started. Officials describe the redevelopment as 1,095 units costing about USD 45m, while the developer's launch coverage cites 1,112 units and USD 250m. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 122900,
+   "currency": "USD",
+   "title": "leasehold unit title (foreign ownership permitted per developer; Zanzibar land is state-owned)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 350,
+   "payment_plan": "5% booking, 15% on SPA signature, 7.5% every quarter for 24 months, 20% on completion (time-based, not construction-linked)",
+   "price_per_m2": 2701
+  },
+  "evidence": {
+   "permit": "The Citizen (Feb 2026) reports the developer saying all regulatory approvals are complete; no permit or approval number published",
+   "escrow": "No escrow or bank guarantee stated in brochures or on site",
+   "progress": "Daily News (14 Apr 2026): demolition of existing flats commenced; developer (13 Oct 2026): pre-mobilisation expected shortly; no construction yet",
+   "plans": "Per-type brochures (Oct 2026) show unit layout, size and price",
+   "record": "Developer lists projects (Anantara Zanzibar, NH Collection Pemba, heritage restorations such as Old Fort) but no completed residential project with units delivered",
+   "returns": "Brochure mentions 'potential rental returns' and rental management; no figures, no guarantee"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project developed in partnership with Zanzibar Housing Corporation",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/news/national/infinity-hills-launches-phase-one-sales-as-major-zanzibar-community-project-prepares-for-construction-5622002"
+   },
+   {
+    "claim": "All regulatory approvals completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/how-250-million-infinity-hills-project-will-redefine-zanzibar-s-urban-living-5361144"
+   },
+   {
+    "claim": "Project value USD 250m",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/residents-paid-sh1-8bn-as-zanzibar-s-kikwajuni-redevelopment-moves-forward-5379458"
+   },
+   {
+    "claim": "1,112 residential units in total",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/residents-paid-sh1-8bn-as-zanzibar-s-kikwajuni-redevelopment-moves-forward-5379458"
+   },
+   {
+    "claim": "Compensation to former residents paid",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/residents-paid-sh1-8bn-as-zanzibar-s-kikwajuni-redevelopment-moves-forward-5379458"
+   },
+   {
+    "claim": "Demolition of the site began",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dailynews.co.tz/demolition-in-kikwajuni-begins-as-infinity-hills-project-begins/"
+   },
+   {
+    "claim": "Phase One sales of 350 apartments and 42 retail units opened",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/news/national/infinity-hills-launches-phase-one-sales-as-major-zanzibar-community-project-prepares-for-construction-5622002"
+   },
+   {
+    "claim": "Construction takes about two years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dailynews.co.tz/demolition-in-kikwajuni-begins-as-infinity-hills-project-begins/"
+   },
+   {
+    "claim": "GEMS international school planned within the community",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/news/national/infinity-hills-launches-phase-one-sales-as-major-zanzibar-community-project-prepares-for-construction-5622002"
+   },
+   {
+    "claim": "Studio from USD 122,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infinityhills.com/"
+   },
+   {
+    "claim": "Foreign ownership permitted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infinityhills.com/wp-content/uploads/2026/10/Two-Bedroom-Apartment-Brochure-Infinity-Hills.pdf"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infinityhills.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE and Stone Town, Zanzibar",
+   "developer_company": "Infinity Developments (Infinity Group, chairman Samuel Saba)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "retail"
+   ],
+   "size_min_m2": 45.5,
+   "size_max_m2": 114.5,
+   "price_min": 122900,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "5/15 then 8 x 7.5% quarterly, 20% on completion",
+   "foreign_ownership": "Foreign ownership permitted per developer; Zanzibar unit titles are leasehold",
+   "rental_programme": "Post-sale rental management available; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "community pool",
+    "landscaped gardens and park",
+    "cafe",
+    "children's play area",
+    "padel court",
+    "gym",
+    "GEMS international school",
+    "Infinity Hills Mall (phase two)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Zanzibar Department of Urban and Rural Planning; ZIPA; Condominium Board",
+   "brochure_url": "https://infinityhills.com/wp-content/uploads/2026/10/Two-Bedroom-Apartment-Brochure-Infinity-Hills.pdf"
+  },
+  "positives": [
+   "State partner (Zanzibar Housing Corporation) and site clearance confirmed by Daily News and The Citizen",
+   "Prices, sizes, layouts and payment plan published per unit type",
+   "No guaranteed-return language"
+  ],
+  "flags": [
+   {
+    "text": "The Citizen reported months of tension in early 2026 after residents of the old Kikwajuni flats were asked to vacate; the dispute was reported resolved in March 2026 with compensation and a right of return for owners",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/residents-paid-sh1-8bn-as-zanzibar-s-kikwajuni-redevelopment-moves-forward-5379458"
+   }
+  ],
+  "sources": [
+   "https://infinityhills.com/",
+   "https://infinitydevelopments.com/",
+   "https://infinitydevelopments.com/2026/10/13/infinity-hills-phase-one-launch-zanzibar/",
+   "https://infinityhills.com/wp-content/uploads/2026/10/Two-Bedroom-Apartment-Brochure-Infinity-Hills.pdf",
+   "https://infinityhills.com/wp-content/uploads/2026/10/Studio-Apartment-Brochure-Infinity-Hills.pdf",
+   "https://infinityhills.com/wp-content/uploads/2026/10/One-Bedroom-Apartment-Brochure-Infinity-Hills.pdf",
+   "https://www.thecitizen.co.tz/tanzania/news/national/infinity-hills-launches-phase-one-sales-as-major-zanzibar-community-project-prepares-for-construction-5622002",
+   "https://www.thecitizen.co.tz/tanzania/zanzibar/how-250-million-infinity-hills-project-will-redefine-zanzibar-s-urban-living-5361144",
+   "https://www.thecitizen.co.tz/tanzania/zanzibar/residents-paid-sh1-8bn-as-zanzibar-s-kikwajuni-redevelopment-moves-forward-5379458",
+   "https://dailynews.co.tz/demolition-in-kikwajuni-begins-as-infinity-hills-project-begins/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1
+ },
+ {
+  "slug": "kai-diani-innova-properties",
+  "name": "KAI Diani",
+  "developer": "Innova Properties (developer entity Ayce Investments Limited)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Diani Beach, Kwale County",
+  "country": "Kenya",
+  "market": "Diani",
+  "url": "https://www.hassconsult.com/kai",
+  "docs_url": "https://www.innovaproperties.co.ke/wp-content/uploads/2025/06/KAI-Brochure-E-Brochure.pdf",
+  "docs_listed": [
+   "agent (HassConsult): 1 and 2BR from KES 10.5M, payment over 18 months, completion Q1 2028",
+   "developer brochure: floor-by-floor unit plans with sizes (614 to 1,093 sq ft)",
+   "developer brochure: team track record (The Cube Riverside, City Mall Nyali, The Greenwood, Karen Green and others)",
+   "developer brochure: 'guarantee strong rental demand and exceptional returns' wording",
+   "developer LinkedIn: monthly progress updates Oct 2025 to Sep 2026 (third floor structure, rooftop pool, glazing)"
+  ],
+  "note": "A four-floor block of 1 and 2BR apartments a short walk from Diani beach by Nairobi developer Innova Properties through Ayce Investments Limited, sold by HassConsult from KES 10.5M with payment over 18 months. Monthly site updates show the structure at third floor and rooftop pool works by mid 2026. Completion is Q4 2027 on the developer's LinkedIn but Q1 2028 on the agent page, and the brochure says the amenities 'guarantee strong rental demand and exceptional returns'. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 10500000,
+   "currency": "KES",
+   "title": "leasehold sectional title (non-citizens limited to leasehold up to 99 years under Article 65)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Brochure lists the team's past projects: The Cube (Riverside), City Mall (Nyali), The Greenwood and Bentley Park (Kitisuru), The Residences (General Mathenge), Karen Green, The Avenue (Nyali)",
+   "units": null,
+   "payment_plan": "payment over 18 months (agent page); split not published",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "No NEMA EIA licence, county approval or NCA registration number published",
+   "escrow": "No escrow or bank guarantee stated",
+   "progress": "Developer LinkedIn posts: Oct 2025 basement excavation done; Feb 2026 first floor slab; Jul 2026 structure at third floor; Sep 2026 glazing, plastering, rooftop pool and gym roof; no % published",
+   "plans": "Brochure shows floor plans with unit numbers and sizes",
+   "record": "Brochure names prior projects of the team; The Cube's API African Property Awards placing claimed on LinkedIn, not independently checked",
+   "returns": "Brochure: amenities 'guarantee strong rental demand and exceptional returns'; no figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Completion Q4 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.hassconsult.com/kai"
+   },
+   {
+    "claim": "Prices from KES 10.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hassconsult.com/kai"
+   },
+   {
+    "claim": "Structure reached third floor (Jul 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/innova-properties-kenya_kai-diani-progress-report-activity-7489976227127107585-ZgqQ"
+   },
+   {
+    "claim": "Developer entity is Ayce Investments Limited",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.innovaproperties.co.ke/wp-content/uploads/2025/06/KAI-Brochure-E-Brochure.pdf"
+   },
+   {
+    "claim": "Team delivered The Cube, City Mall Nyali and other named projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.innovaproperties.co.ke/wp-content/uploads/2025/06/KAI-Brochure-E-Brochure.pdf"
+   },
+   {
+    "claim": "Winner, Best Multi-Residence Development in Africa (International Property Awards 2025/26)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/innova-properties-kenya"
+   },
+   {
+    "claim": "Amenities guarantee exceptional returns",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.innovaproperties.co.ke/wp-content/uploads/2025/06/KAI-Brochure-E-Brochure.pdf"
+   },
+   {
+    "claim": "NEMA environmental licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.innovaproperties.co.ke/"
+   },
+   {
+    "claim": "Only a few units remaining (Oct 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/innova-properties-kenya_kai-diani-progress-update-october-2025-activity-7384230117226614785-wUKQ"
+   },
+   {
+    "claim": "Foreign buyers can hold the apartment on leasehold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bektu.com/blog/property-developers-nairobi-foreign-diaspora-buyers-2026"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hassconsult.com/kai"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "ABC Place, Waiyaki Way, Nairobi, Kenya",
+   "developer_company": "Ayce Investments Limited",
+   "developer_projects_delivered": 7,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 57,
+   "size_max_m2": 102,
+   "price_min": 10500000,
+   "price_max": null,
+   "currency": "KES",
+   "deposit_pct": null,
+   "payment_plan": "over 18 months",
+   "foreign_ownership": "Leasehold (non-citizens cannot hold freehold in Kenya); sectional title",
+   "rental_programme": "Short-let focus; no operator or figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "gym",
+    "poolside cabanas",
+    "24/7 security",
+    "backup generator",
+    "lifts",
+    "parking",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "NEMA (EIA licence), Kwale County Government (building approval), National Construction Authority",
+   "brochure_url": "https://www.innovaproperties.co.ke/wp-content/uploads/2025/06/KAI-Brochure-E-Brochure.pdf"
+  },
+  "positives": [
+   "Unit-level floor plans in the brochure",
+   "Regular dated construction updates naming the consultant team",
+   "Sold through an established agency (HassConsult)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.hassconsult.com/kai",
+   "https://www.innovaproperties.co.ke/",
+   "https://www.innovaproperties.co.ke/wp-content/uploads/2025/06/KAI-Brochure-E-Brochure.pdf",
+   "https://linkedin.com/company/innova-properties-kenya",
+   "https://www.linkedin.com/posts/innova-properties-kenya_kai-diani-progress-report-activity-7489976227127107585-ZgqQ",
+   "https://www.linkedin.com/posts/innova-properties-kenya_kai-diani-construction-update-february-activity-7433127041966907392-8oKD",
+   "https://www.linkedin.com/posts/innova-properties-kenya_kai-diani-progress-update-october-2025-activity-7384230117226614785-wUKQ",
+   "https://bektu.com/blog/property-developers-nairobi-foreign-diaspora-buyers-2026"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ },
+ {
+  "slug": "the-sea-point-aquacor-apollon",
+  "name": "The Sea Point",
+  "developer": "Aquacor Property Developers with Apollon Property (seller 213 High Level Road Development Company (Pty) Ltd)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "213 High Level Road, Sea Point",
+  "country": "South Africa",
+  "market": "Cape Town",
+  "url": "https://theseapoint.co.za/",
+  "docs_url": "https://theseapoint.co.za/faqs/",
+  "docs_listed": [
+   "developer: price list Sep 2026 with unit, floor, size, terrace, bays and VAT-inclusive price per unit",
+   "developer: 87-page sales brochure with unit layouts (7 Sep 2026), '70% sold'",
+   "developer: construction expected Aug 2026 to end April 2028",
+   "developer: deposit 10% or 30% held in transferring attorney's interest-bearing account",
+   "developer: seller company registration number 2017/235723/07 on reservation form",
+   "developer: Aquacor completed projects list (Botany Bay, Horizons, ONE77, Metropolis and others)"
+  ],
+  "note": "A 42-unit sectional-title building on High Level Road by Aquacor (Cape Town developer since 1982) and German family-office backed Apollon Property, with remaining 2BR units from R11.55M (74 m2) and a rooftop villa at R41.25M on the September 2026 price list. Construction was due to start in August 2026 for completion at end April 2028; no start is confirmed. Deposits go into the transferring attorney's interest-bearing account and the reservation form names the seller company with its registration number. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 11550000,
+   "currency": "ZAR",
+   "title": "freehold sectional title (no restriction on foreign buyers in South Africa)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Deposit (10% with bond or 30% without) paid into the transferring attorney's interest-bearing account, refunded with interest if bond not approved",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Aquacor lists completed projects on its site: Botany Bay and Horizons (Sea Point), ONE77 (Green Point), Metropolis (CBD), The Met and Palm Springs (Milnerton), Church Square, The Factory, Quest Cosair (126 apartments)",
+   "units": 42,
+   "payment_plan": "R50,000 refundable reservation; 10% deposit plus 90% bond, or 30% deposit with balance on transfer",
+   "price_per_m2": 156081
+  },
+  "evidence": {
+   "permit": "No City of Cape Town building plan approval number published",
+   "escrow": "FAQ: deposit paid into the transferring attorney's interest-bearing account and earns interest for the buyer",
+   "progress": "FAQ: construction expected to commence August 2026; contractor 'to be confirmed after tender'; no site updates published",
+   "plans": "Sales brochure (Sep 2026) shows unit layouts with interior, terrace and garden areas; price list gives sizes per unit",
+   "record": "Aquacor website lists 11 completed projects with locations",
+   "returns": "No guaranteed rental; FAQ claims Cape Town property 'grows at 10% per year' and describes Section 13sex tax allowance"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Seller is 213 High Level Road Development Company (Pty) Ltd, reg. 2017/235723/07",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/wp-content/uploads/2026/09/The-Sea-Point-Sales-Brochure_7-Sept-2026.pdf"
+   },
+   {
+    "claim": "Construction to start August 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   },
+   {
+    "claim": "Completion end April 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   },
+   {
+    "claim": "70% sold (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/wp-content/uploads/2026/09/The-Sea-Point-Sales-Brochure_7-Sept-2026.pdf"
+   },
+   {
+    "claim": "42 sectional title units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.property24.com/articles/the-sea-point-a-premier-investment-on-cape-towns-atlantic-seaboard/32957"
+   },
+   {
+    "claim": "Open market sales began 13 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   },
+   {
+    "claim": "Deposits held in attorney's interest-bearing account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   },
+   {
+    "claim": "Aquacor has delivered named projects since the 1980s",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aquacor.co.za/"
+   },
+   {
+    "claim": "Prices include VAT and no transfer duty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   },
+   {
+    "claim": "Cape Town property grows at 10% per year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   },
+   {
+    "claim": "Building plans approved by City of Cape Town",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseapoint.co.za/faqs/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1982,
+   "developer_hq": "Cape Town, South Africa",
+   "developer_company": "213 High Level Road Development Company (Pty) Ltd, reg. 2017/235723/07 (seller)",
+   "developer_projects_delivered": 11,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-08",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR garden villa",
+    "duplex penthouse"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 299,
+   "price_min": 11550000,
+   "price_max": 41250000,
+   "currency": "ZAR",
+   "deposit_pct": 10,
+   "payment_plan": "10% deposit and bond, or 30% deposit with balance on transfer",
+   "foreign_ownership": "Freehold sectional title; South Africa does not restrict foreign buyers (bond finance for non-residents is limited)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sea views for 40 of 42 units",
+    "plunge pools and hot tubs in selected units",
+    "private gardens",
+    "rooftop terraces",
+    "secure parking bays",
+    "prepaid electricity"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Cape Town (building plan approval under the National Building Regulations)",
+   "brochure_url": "https://theseapoint.co.za/wp-content/uploads/2026/09/The-Sea-Point-Sales-Brochure_7-Sept-2026.pdf"
+  },
+  "positives": [
+   "Unit-by-unit price list with sizes and VAT-inclusive prices",
+   "Deposits held in an attorney's interest-bearing account",
+   "Seller company named with registration number",
+   "Developer lists completed projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theseapoint.co.za/",
+   "https://theseapoint.co.za/faqs/",
+   "https://theseapoint.co.za/wp-content/uploads/2026/09/The-Sea-Point-Price-List-Sep-2026.pdf",
+   "https://theseapoint.co.za/wp-content/uploads/2026/09/The-Sea-Point-Sales-Brochure_7-Sept-2026.pdf",
+   "https://www.aquacor.co.za/",
+   "https://www.property24.com/articles/the-sea-point-a-premier-investment-on-cape-towns-atlantic-seaboard/32957"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ },
+ {
+  "slug": "empathia-village-kensington",
+  "name": "Empathia Village",
+  "developer": "Kensington Construction & Development",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Baie Lazare, Mahé",
+  "country": "Seychelles",
+  "market": "Seychelles",
+  "url": "https://empathia-seychelles.com/",
+  "docs_url": "https://empathia-seychelles.com/project-facts",
+  "docs_listed": [
+   "developer: about 30 plots from 600 m2; Villa Jane from USD 990,000, Villa Anna from USD 1.5M, Villa Georgette from USD 2.1M",
+   "developer: villa floor plan sheets on each villa page",
+   "developer: Sep 2026 update, 70% of plots prepared, first house roof and utilities, second house foundations; June 2026 construction film",
+   "developer: Class I Building Contractor licence No. 322704 (contractor licence, not a project permit)",
+   "developer: 'no occupancy or return is guaranteed'; freehold subject to Government Sanction",
+   "Russian-language sister site empathiavillage.ru"
+  ],
+  "note": "A hillside estate of about 30 villa plots above Baie Lazare between the Four Seasons and Kempinski resorts, built by Kensington Construction & Development, with villas from USD 990,000 and full estate build-out planned through 2030. The developer reports one house at roof stage and a second at foundations (Sep 2026) and quotes a Class I building contractor licence, not a planning permit. A listing portal describes the project differently (31 villas, completion 2027, a 310 m2 Villa Jane at EUR 646,900, residence 'automatic'), while the developer now says sanction and residence are decided by the authorities. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 990000,
+   "currency": "USD",
+   "title": "freehold, subject to Seychelles Government Sanction for non-Seychellois buyers",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 30,
+   "payment_plan": "staged payments agreed per villa; terms not published",
+   "price_per_m2": 7071
+  },
+  "evidence": {
+   "permit": "Developer cites Seychelles Class I Building Contractor licence No. 322704 'valid through 2028' (a contractor licence); says project-specific planning documents exist and can be requested; no Planning Authority approval number published",
+   "escrow": "No escrow; only that the reservation amount is refunded if Government Sanction is refused",
+   "progress": "Developer Sep 2026: 70% of plots prepared, first house roof and utilities, second house foundations; construction video June 2026",
+   "plans": "Each villa page has a floor plan sheet",
+   "record": "Developer claims 30 years of work in several countries but names no completed projects on the site",
+   "returns": "Project facts page: 'No occupancy or return is guaranteed'"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Contractor holds Class I licence No. 322704",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/about"
+   },
+   {
+    "claim": "Project-specific planning approval for the plots",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/project-facts"
+   },
+   {
+    "claim": "70% of plots prepared, first house at roof stage (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/"
+   },
+   {
+    "claim": "Estate completion 2030",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://prianproperty.com/price/seychelles-32999-4092565.html"
+   },
+   {
+    "claim": "About 30 plots",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://prianproperty.com/price/seychelles-32999-4092565.html"
+   },
+   {
+    "claim": "Villa Jane from USD 990,000 (140 m2, 2BR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://prianproperty.com/price/seychelles-32999-4092565.html"
+   },
+   {
+    "claim": "Buyers automatically receive a residence permit",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/project-facts"
+   },
+   {
+    "claim": "Developer has 30 years of experience across jurisdictions",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/about"
+   },
+   {
+    "claim": "Estate borders the Kempinski Seychelles Resort",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/about"
+   },
+   {
+    "claim": "Freehold for foreigners subject to Government Sanction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/project-facts"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empathia-seychelles.com/project-facts"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Kensington Construction & Development (Class I contractor licence No. 322704 per developer)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "villa 2BR",
+    "villa 3BR",
+    "villa 4BR"
+   ],
+   "size_min_m2": 140,
+   "size_max_m2": 350,
+   "price_min": 990000,
+   "price_max": 2100000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "staged, per individual agreement",
+   "foreign_ownership": "Freehold with Seychelles Government Sanction required for non-Seychellois buyers",
+   "rental_programme": "Owners may let; no programme or figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gated estate",
+    "optional private pool",
+    "sea views 50 to 100 m above sea level",
+    "planned shop, restaurant and gym (portal)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Seychelles Planning Authority (planning permission); Government Sanction for foreign purchase under the Immovable Property (Transfer Restriction) Act",
+   "brochure_url": null
+  },
+  "positives": [
+   "Explicitly states no return is guaranteed",
+   "Villa floor plans and dated construction updates published",
+   "Buyers invited to use independent Seychelles lawyers; reservation refundable if sanction refused"
+  ],
+  "flags": [],
+  "sources": [
+   "https://empathia-seychelles.com/",
+   "https://empathia-seychelles.com/project-facts",
+   "https://empathia-seychelles.com/about",
+   "https://empathia-seychelles.com/villa-jane",
+   "https://prianproperty.com/price/seychelles-32999-4092565.html"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ },
+ {
+  "slug": "coral-residences-kandima-pulse",
+  "name": "The Coral Residences, Kandima",
+  "developer": "Pulse Hotels & Resorts",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Kandima island, Dhaalu Atoll",
+  "country": "Maldives",
+  "market": "Maldives",
+  "url": "https://coralresidencesmaldives.com/en_US/the-residences/",
+  "docs_url": "https://coralresidencesmaldives.com/wp-content/uploads/2025/12/Own-A-Slice-of-Paradise-The-Coral-Residences-Press-Release-Nov-2025.pdf",
+  "docs_listed": [
+   "developer: 40 two and three bedroom beachfront apartments on Kandima resort island",
+   "developer: '7-8% net cash ROI and capital appreciation' (2026 site)",
+   "developer press release Nov 2025: strata title programme, pre-launch from USD 1.2M, completion 2026",
+   "developer: construction progress video download (form-gated)",
+   "press (Hotelier Maldives, Jun 2025): guaranteed minimum 6% net return for five years, then 50% revenue share"
+  ],
+  "note": "Forty resort apartments on Kandima, sold by resort owner-operator Pulse Hotels & Resorts under the Maldives' new strata title programme, from USD 1.2M at pre-launch. Hotelier Maldives reported a guaranteed minimum 6% net return for five years, and the developer site now advertises 7-8% net cash ROI. The completion target moved from Q3 2025 (Nov 2024 release) to 2026 (Nov 2025 release), with no quarter on current material. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1200000,
+   "currency": "USD",
+   "title": "strata title on a long-term government-registered leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2026",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Pulse built and operates Kandima Maldives (270 keys), The Nautilus Maldives and Nova Maldives, named on the developer site and in trade press",
+   "units": 40,
+   "payment_plan": "30% on signing, three tranches of 20%, 10% at handover (agent listing)",
+   "price_per_m2": 5941
+  },
+  "evidence": {
+   "permit": "Agents describe it as a 'government-approved development' with strata title registered with the Ministry of Tourism; no approval or registration number published",
+   "escrow": "No escrow or bank guarantee stated",
+   "progress": "Developer offers a construction progress video and a 'site progress' section; no % or dated report published",
+   "plans": "Brochure is an image-only gatefold and plans are only sent on request; no floor plans on the site",
+   "record": "Developer site and Hotelier Maldives name Kandima, The Nautilus and Nova as Pulse properties",
+   "returns": "Hotelier Maldives (Jun 2025): 'guaranteed minimum return of 6%... for the first five years'; developer site 2026: '7-8% net cash ROI'"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Guaranteed minimum 6% net return for five years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hoteliermaldives.com/the-coral-residences-at-kandima-maldives-new-era-of-luxury-island-living/"
+   },
+   {
+    "claim": "7-8% net cash ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coralresidencesmaldives.com/en_US/the-residences/"
+   },
+   {
+    "claim": "Completion Q3 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://coralresidencesmaldives.com/wp-content/uploads/2025/12/Own-A-Slice-of-Paradise-The-Coral-Residences-Press-Release-Nov-2025.pdf"
+   },
+   {
+    "claim": "Completion 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coralresidencesmaldives.com/en_US/why-us/"
+   },
+   {
+    "claim": "Strata title open to international buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hoteliermaldives.com/the-coral-residences-at-kandima-maldives-new-era-of-luxury-island-living/"
+   },
+   {
+    "claim": "Developer built and operates Kandima, Nautilus and Nova",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hoteliermaldives.com/the-coral-residences-at-kandima-maldives-new-era-of-luxury-island-living/"
+   },
+   {
+    "claim": "40 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hoteliermaldives.com/the-coral-residences-at-kandima-maldives-new-era-of-luxury-island-living/"
+   },
+   {
+    "claim": "Prices from USD 1.2M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kandima-maldives.prezly.com/own-a-slice-of-paradise"
+   },
+   {
+    "claim": "Owners eligible for 5-year residency visa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avertiss.com/en/property/442860/for-sale/residence/male/male/2-bedroom-residence-kandima-island-maldives"
+   },
+   {
+    "claim": "Lease registered with the Ministry of Tourism",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avertiss.com/en/property/442860/for-sale/residence/male/male/2-bedroom-residence-kandima-island-maldives"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coralresidencesmaldives.com/en_US/the-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Malé, Maldives",
+   "developer_company": "Pulse Hotels & Resorts",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": "2025-Q3",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 202,
+   "size_max_m2": 260,
+   "price_min": 1200000,
+   "price_max": 2275000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30/20/20/20/10 (agent)",
+   "foreign_ownership": "Strata title on government-registered leasehold under the Maldives strata programme; lease term not published",
+   "rental_programme": "Pulse-managed rental pool, 6% guaranteed for 5 years then 50% of net revenue (press); 30 owner nights a year",
+   "service_charge": null,
+   "brand": "Kandima Maldives (Pulse Hotels & Resorts)",
+   "amenities": [
+    "private beachfront pool and bar",
+    "gourmet restaurant",
+    "fitness centre",
+    "24-hour concierge",
+    "Kandima resort facilities",
+    "medical centre",
+    "kids club",
+    "e-go-kart track"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Tourism / Ministry of Housing (strata title registration)",
+   "brochure_url": "https://coralresidencesmaldives.com/wp-content/uploads/2025/11/TCR-Gatefold-English-2025.pdf"
+  },
+  "positives": [
+   "Developer is the established operator of the host resort",
+   "Strata title route for foreign buyers reported by trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://coralresidencesmaldives.com/",
+   "https://coralresidencesmaldives.com/en_US/the-residences/",
+   "https://coralresidencesmaldives.com/en_US/why-us/",
+   "https://coralresidencesmaldives.com/media_downloads/",
+   "https://coralresidencesmaldives.com/wp-content/uploads/2025/12/Own-A-Slice-of-Paradise-The-Coral-Residences-Press-Release-Nov-2025.pdf",
+   "https://kandima-maldives.prezly.com/own-a-slice-of-paradise",
+   "https://hoteliermaldives.com/the-coral-residences-at-kandima-maldives-new-era-of-luxury-island-living/",
+   "https://www.avertiss.com/en/property/442860/for-sale/residence/male/male/2-bedroom-residence-kandima-island-maldives",
+   "https://varsoviaestate.com/en/properties/maldives/maldives/coral-residences-kandima"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1
+ },
+ {
+  "slug": "siyal-makadi-heights-orascom",
+  "name": "Siyal (Makadi Heights)",
+  "developer": "Orascom Development Egypt (EGX: ORHD; subsidiary Makadi Heights for Tourism Development SAE)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Makadi Bay, south of Hurghada, Red Sea",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.makadiheights.com/home-at-makadi/siyal",
+  "docs_url": "https://odh-space.fra1.digitaloceanspaces.com/b5dfcf79fae7b5a88f866128ef1af4ff.pdf",
+  "docs_listed": [
+   "developer: 205 villas, 3 to 5 bedrooms, 136 to 249 m2, completion 3.5 years, 12% footprint",
+   "ODE 1H 2026 earnings release: Siyal and Aden launched Q1 2026 adding about EGP 6.2bn of inventory; Makadi Heights 63% international sales",
+   "ODE investor presentation: about 2,900 units delivered at Makadi Heights, 1,635 under construction",
+   "portal (realestate.eg): from EGP 22.7M, 10% down over 7 years, delivery 2029, 18 floor plans",
+   "portal: 'only 78 luxury villas within the phase'"
+  ],
+  "note": "A low-density villa neighbourhood launched in Q1 2026 at Orascom Development Egypt's Makadi Heights on the Red Sea, where 63% of 1H 2026 sales went to international buyers according to ODE's earnings release. The developer page gives 205 villas of 136 to 249 m2 and a 3.5-year completion; portals quote from EGP 22.7M with 10% down over 7 years and delivery in 2029, and one portal says 78 villas. No permit, escrow or progress data are published for the phase. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 22695000,
+   "currency": "EGP",
+   "title": "freehold (Egyptian registered title; foreigners may own up to two residential units)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "ODE investor presentation and EGX-listed results: about 2,900 residential units delivered at Makadi Heights since 2018 relaunch, plus El Gouna and O West",
+   "units": 205,
+   "payment_plan": "10% down, balance over 7 years (portal); 0% down options on other phases",
+   "price_per_m2": 166875
+  },
+  "evidence": {
+   "permit": "No building permit or Red Sea governorate / TDA approval number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Phase launched Q1 2026 (ODE earnings release); no construction progress for Siyal published",
+   "plans": "Developer page has a zone map only; floor plans appear on a third-party portal, not on the developer site",
+   "record": "ODE (EGX-listed) reports about 2,900 units delivered at Makadi Heights and 500 units planned for delivery in 2026",
+   "returns": "No guaranteed return on developer page; portal copy promises 'highest investment returns' without figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Siyal launched in Q1 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://odh-space.fra1.digitaloceanspaces.com/b5dfcf79fae7b5a88f866128ef1af4ff.pdf"
+   },
+   {
+    "claim": "Developer is EGX-listed Orascom Development Egypt",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://english.mubasher.info/news/4612308/Orascom-Development-Egypt-ORHD-CA-Reports-Its-Financial-Results-Standalone-for-the-Period-from-01-01-2026-to-31-03-2026/"
+   },
+   {
+    "claim": "205 villas in the phase",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realestate.eg/en/200-vacation-in-ain-al-sokhna-makadi-heights-resort-compound/5063341-siyal"
+   },
+   {
+    "claim": "Completion in 3.5 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.makadiheights.com/home-at-makadi/siyal"
+   },
+   {
+    "claim": "About 2,900 units delivered at Makadi Heights",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://odh-space.fra1.digitaloceanspaces.com/1828ba1cd7c4b74f2764e1ff46deec7e.pdf"
+   },
+   {
+    "claim": "63% of Makadi Heights 1H 2026 sales to international buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://odh-space.fra1.digitaloceanspaces.com/b5dfcf79fae7b5a88f866128ef1af4ff.pdf"
+   },
+   {
+    "claim": "On track to deliver 500 Makadi Heights units in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://odh-space.fra1.digitaloceanspaces.com/b5dfcf79fae7b5a88f866128ef1af4ff.pdf"
+   },
+   {
+    "claim": "Makadi Heights expanded by a 1.021M m2 government seafront plot (50% in-kind to government)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.arabfinance.com/en/news/newdetails/makadi-heights-signs-agreement-to-develop-seafront-plot-on-Red-Sea"
+   },
+   {
+    "claim": "Prices from EGP 22.7M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realestate.eg/en/200-vacation-in-ain-al-sokhna-makadi-heights-resort-compound/5063341-siyal"
+   },
+   {
+    "claim": "Building permit issued for the phase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.makadiheights.com/home-at-makadi/siyal"
+   },
+   {
+    "claim": "Buyer payments held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.makadiheights.com/home-at-makadi/siyal"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1989,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Makadi Heights for Tourism Development SAE (subsidiary of Orascom Development Egypt)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 2900,
+   "listed_or_audited": "Orascom Development Egypt listed on the Egyptian Exchange (ORHD.CA); 1H 2026 revenue EGP 14.8bn",
+   "construction_start": null,
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "townhouse 3BR",
+    "twin house",
+    "villa 4BR",
+    "villa 5BR"
+   ],
+   "size_min_m2": 136,
+   "size_max_m2": 249,
+   "price_min": 22695000,
+   "price_max": 50565000,
+   "currency": "EGP",
+   "deposit_pct": 10,
+   "payment_plan": "10% down, 7 or 8 years",
+   "foreign_ownership": "Freehold registration; foreigners limited to two residential units under Egyptian law",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "water-front pools and lagoons",
+    "Playa beach club",
+    "Town Walk retail",
+    "clinic and pharmacy",
+    "school",
+    "aqua park",
+    "sports courts",
+    "clubhouse"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tourism Development Authority / Red Sea Governorate",
+   "brochure_url": null
+  },
+  "positives": [
+   "Listed developer with published half-year results naming the phase launch",
+   "Large delivered base at the same destination (about 2,900 units)",
+   "No guaranteed-return claim on the developer page"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.makadiheights.com/home-at-makadi/siyal",
+   "https://www.makadiheights.com/",
+   "https://odh-space.fra1.digitaloceanspaces.com/b5dfcf79fae7b5a88f866128ef1af4ff.pdf",
+   "https://odh-space.fra1.digitaloceanspaces.com/1828ba1cd7c4b74f2764e1ff46deec7e.pdf",
+   "https://english.mubasher.info/news/4612308/Orascom-Development-Egypt-ORHD-CA-Reports-Its-Financial-Results-Standalone-for-the-Period-from-01-01-2026-to-31-03-2026/",
+   "https://www.arabfinance.com/en/news/newdetails/makadi-heights-signs-agreement-to-develop-seafront-plot-on-Red-Sea",
+   "https://realestate.eg/en/200-vacation-in-ain-al-sokhna-makadi-heights-resort-compound/5063341-siyal",
+   "https://masharf.com/en/hurghada/makadi/makadi-heights"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1
+ },
+ {
+  "slug": "azul-tower-boavista-real-estate",
+  "name": "Azul Residence Tower (Blue Luxury Tower)",
+  "developer": "Boavista Real Estate (BOAVISTARE LDA)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Sal Rei, Boa Vista",
+  "country": "Cape Verde",
+  "market": "Cape Verde",
+  "url": "https://azultower.com/",
+  "docs_url": "https://www.nh21investment.com/listings/apartment-third-floor-azul-tower-boavista-sal-rei-pj3/",
+  "docs_listed": [
+   "developer: eight-floor building, seven 1BR or 2BR flats per floor, rooftop infinity pool, ground-floor retail",
+   "developer: architect Christian Grande Design Works, contractor Construções Oásis",
+   "developer: 'optional formula of the guaranteed annual annuity' with rental management by Boavista Real Estate",
+   "agent (NH21): third-floor price table, 69.74 to 107.59 m2, EUR 108,097 to 166,764",
+   "agent (Belalgarve): from EUR 97,636 to 450,000 (penthouse), delivery end of 2026"
+  ],
+  "note": "An eight-floor apartment block on the eastern edge of Sal Rei by local developer Boavista Real Estate, designed by Italian studio Christian Grande and built by Construções Oásis, with 1BR units from about EUR 98,000 to 108,000 and a 135 m2 penthouse at EUR 450,000. Agents describe it as under construction with delivery at the end of 2026. The developer offers an optional 'guaranteed annual annuity' through its own rental management, with no figure, and publishes no permit, escrow or progress information. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 97636,
+   "currency": "EUR",
+   "title": "freehold (Cape Verde allows full foreign ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 42,
+   "payment_plan": null,
+   "price_per_m2": 1550
+  },
+  "evidence": {
+   "permit": "No municipal (Câmara Municipal da Boa Vista) licence number published",
+   "escrow": "No escrow or bank guarantee stated",
+   "progress": "Agents call it 'in construction'; no dated photos or % on the developer site",
+   "plans": "Developer describes layouts in text; agent page lists unit sizes and prices only",
+   "record": "Developer claims fifteen years on the island but names no completed buildings on the project site",
+   "returns": "Developer site: 'optional formula of the guaranteed annual annuity... to guarantee the owners excellent profit margins'; no figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Under construction with delivery end of 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belalgarve.com/en/discover-luxury-living-at-blue-tower-boa-vista-island/"
+   },
+   {
+    "claim": "Contractor is Construções Oásis",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "Architect is Christian Grande Design Works",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "Guaranteed annual annuity available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "Developer has fifteen years of experience on Boa Vista",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "1BR from EUR 97,636",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.nh21investment.com/listings/apartment-third-floor-azul-tower-boavista-sal-rei-pj3/"
+   },
+   {
+    "claim": "Seven apartments per floor on six residential floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "Rooftop infinity pool and lounge bar",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "Municipal building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://azultower.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sal Rei, Boa Vista, Cape Verde",
+   "developer_company": "BOAVISTARE LDA",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 69.74,
+   "size_max_m2": 135,
+   "price_min": 97636,
+   "price_max": 450000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; Cape Verde gives foreigners the same ownership rights as citizens",
+   "rental_programme": "Optional guaranteed annual annuity with developer management; terms not published",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "lounge bar",
+    "solarium",
+    "two lifts",
+    "ground-floor shops",
+    "on-site caretaker"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal da Boa Vista",
+   "brochure_url": null
+  },
+  "positives": [
+   "Named architect and contractor",
+   "Unit-level prices and sizes published by an agent"
+  ],
+  "flags": [],
+  "sources": [
+   "https://azultower.com/",
+   "https://www.boavistare.com/en/pages/4-real-estates",
+   "https://www.nh21investment.com/listings/apartment-third-floor-azul-tower-boavista-sal-rei-pj3/",
+   "https://www.belalgarve.com/en/discover-luxury-living-at-blue-tower-boa-vista-island/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ }
+]
