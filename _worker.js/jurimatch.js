@@ -387,6 +387,14 @@ export async function render(req, res, u, env, ctx) {
   h.set('referrer-policy', 'strict-origin-when-cross-origin');
   h.set('x-content-type-options', 'nosniff');
   h.set('content-security-policy-report-only', CSP_REPORT_ONLY);
+  // 1 Nov (consent): until the visitor accepts analytics in the banner (cookie jm_consent=all), the
+  // browser may run only the site's own scripts. That keeps out Google Analytics, Microsoft Clarity
+  // and Zaraz (injected at the edge for every Equinox domain), so "analytics only with your OK" holds.
+  // Same mechanism as equinoxinvestmentgroup.com. Inline scripts stay allowed (route preload, stubs).
+  if (!/(?:^|;\s*)jm_consent=all(?:;|$)/.test(req.headers.get('cookie') || '')) {
+    h.set('content-security-policy', "script-src 'unsafe-inline' " + ORIGIN + '/assets/ ' + ORIGIN + '/sw.js ' + ORIGIN + '/cdn-cgi/scripts/ ' + ORIGIN + "/cdn-cgi/challenge-platform/ https://static.cloudflareinsights.com https://js.stripe.com; worker-src 'self' blob:");
+  } else h.delete('content-security-policy');
+  h.append('vary', 'Cookie');
   const set =(attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
 
   return new HTMLRewriter()
