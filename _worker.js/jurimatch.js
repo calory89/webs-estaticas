@@ -216,7 +216,7 @@ export async function route(req, u, env, ctx) {
   const m = await loadManifest(env, u);
   if (!m) return null;
   const day = (m.generatedAt || new Date().toISOString()).slice(0, 10);
-  const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path]) => [ORIGIN + path, day]);
+  const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path, p]) => [ORIGIN + path, String(p.modified || day).slice(0, 10)]);
   const [firms, posts] = await Promise.all([
     // The API returns at most 1,000 rows per request: read the hand-verified firms in pages.
     Promise.all([0, 1000, 2000, 3000, 4000].map((o) => sb('lawyers?select=firm_name,last_verified_at&status=eq.active&verified=is.true&source=eq.' + CURATED + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000&offset=' + o, ctx))).then((pages) => pages.flatMap((x) => x || [])),
