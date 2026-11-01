@@ -1,0 +1,1681 @@
+[
+ {
+  "slug": "sobha-siniya-island-villas-sobha-realty",
+  "name": "Sobha Siniya Island Villas (Phase 1)",
+  "developer": "Sobha Realty (Sobha Siniya Island, JV with Umm Al Quwain Properties; Sobha Al Siniya FZC)",
+  "area": "Siniya Island, Umm Al Quwain Marina",
+  "country": "UAE",
+  "market": "Umm Al Quwain",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island",
+  "docs_url": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island",
+  "permit_number": null,
+  "docs_listed": [
+   "starting price AED 10.6M to 11M",
+   "payment plan 10/50/40",
+   "floor plan images 4 to 6BR villas",
+   "construction start 16 Jul 2024, handover Dec 2028 (Property Finder)",
+   "brochure and master plan (phase 2 page)"
+  ],
+  "note": "Beachfront 4 to 6 bedroom villas on Sobha's 23 million sq ft Siniya Island JV with Umm Al Quwain Properties; Property Finder lists construction start July 2024 and handover December 2028, while Khaleej Times in Nov 2024 reported a December 2027 phase one target. No permit, escrow or progress figure published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 10600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Khaleej Times (Nov 2024): Sobha has about 22,000 units under construction; no delivered-unit count stated for this project. Named delivered projects not given on pages opened.",
+   "units": null,
+   "payment_plan": "10% at launch, 50% during construction, 40% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Property Finder: progress not stated; only start date 16 Jul 2024",
+   "plans": "Property Finder: floor plan images for 4BR, 5BR, 6BR villa types",
+   "record": "Only scale figures (units under construction) in Khaleej Times, no delivered units",
+   "returns": "No guaranteed return language on Property Finder pages"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project is a JV between Sobha Realty and Umm Al Quwain Properties",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/sobhas-5b-natural-island-project-set-to-draw-25000-residents-transform-uaq"
+   },
+   {
+    "claim": "Site works under way (dredging started, bridge nearly complete, Nov 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/sobhas-5b-natural-island-project-set-to-draw-25000-residents-transform-uaq"
+   },
+   {
+    "claim": "Groundbreaking of Anantara resort and residences on the island (Oct 2026), attended by the UAQ Crown Prince",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tradearabia.com/News/487562/Sobha-breaks-ground-on-Anantara-Siniya-Island-resort-residences-in-UAQ"
+   },
+   {
+    "claim": "Villa handover December 2028",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/sobhas-5b-natural-island-project-set-to-draw-25000-residents-transform-uaq"
+   },
+   {
+    "claim": "Construction started 16 Jul 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island"
+   },
+   {
+    "claim": "Starting price AED 10.6M (also shown as 11M)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island"
+   },
+   {
+    "claim": "Freehold title for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island"
+   },
+   {
+    "claim": "Permit or project registration number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island"
+   },
+   {
+    "claim": "Phase one of 8,000 units, USD 5bn value",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/sobhas-5b-natural-island-project-set-to-draw-25000-residents-transform-uaq"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Sobha Real Estate LLC (named on Property Finder); Sobha Al Siniya FZC (named by Minor Hotels in TradeArabia)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-07",
+   "handover_promised": "2028-Q4",
+   "original_handover": "2027-12 (phase one, Khaleej Times Nov 2024)",
+   "delay_months": null,
+   "unit_types": [
+    "4BR villa",
+    "5BR villa",
+    "6BR villa"
+   ],
+   "size_min_m2": 449,
+   "size_max_m2": 909,
+   "price_min": 10600000,
+   "price_max": 23000000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/50/40",
+   "foreign_ownership": "freehold (as listed by portal)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private beaches",
+    "lagoons",
+    "golf course",
+    "marinas",
+    "yacht club",
+    "clubhouses",
+    "schools",
+    "malls"
+   ],
+   "lat": 25.613,
+   "lng": 55.623,
+   "permit_authority": null,
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Island JV with a UAQ government-linked partner reported by Khaleej Times",
+   "Floor plan images and 10/50/40 plan published",
+   "Site works and groundbreakings covered by independent press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island",
+   "https://www.propertyfinder.ae/en/new-projects/sobha-realty/siniya-island-villas-phases-2",
+   "https://www.khaleejtimes.com/business/property/sobhas-5b-natural-island-project-set-to-draw-25000-residents-transform-uaq",
+   "https://tradearabia.com/News/487562/Sobha-breaks-ground-on-Anantara-Siniya-Island-resort-residences-in-UAQ"
+  ]
+ },
+ {
+  "slug": "stellar-by-elie-saab-emirates-developments",
+  "name": "Stellar by Elie Saab",
+  "developer": "Emirates Developments (registered developer: Prime Emirates Real Estate Limited, sole proprietorship LLC)",
+  "area": "Yas Island (Yas Bay)",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/emirates-property-investment/stellar-by-elie-saab",
+  "docs_url": "https://emiratesdevelopments.com/event/stellar-by-elie-saab-launch-event/",
+  "permit_number": "20250000659255 (ADREC project number)",
+  "docs_listed": [
+   "unit table with sizes and launch prices 1BR to 4BR penthouse",
+   "floor plan images per layout",
+   "payment plan 5/35/60",
+   "construction start 26 Nov 2025, handover Dec 2028 (Property Finder)",
+   "registry mirror: project no. 20250000659255, escrow bank Emirates NBD, construction 0% (ADX Interact)"
+  ],
+  "note": "First Elie Saab branded tower on Yas Island, 144 residences, launched Nov 2025 with completion set for 2028; ADX Interact lists project no. 20250000659255 registered 5 Nov 2025 under Prime Emirates Real Estate Limited with escrow at Emirates NBD and 0% construction. The developer has no named delivered projects on pages opened (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2300000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "20250000659255 (ADREC project number)",
+   "plans_published": true,
+   "escrow": "Escrow bank Emirates NBD Bank PJSC (ADX Interact registry mirror); account number not published",
+   "progress_pct": 0,
+   "developer_delivered": null,
+   "units": 144,
+   "payment_plan": "5% at launch, 35% during construction, 60% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ADX Interact (lists projects registered with the Abu Dhabi property authority): Project No. 20250000659255, registered 5 Nov 2025",
+   "escrow": "ADX Interact: Escrow Bank Emirates NBD Bank P.J.S.C",
+   "progress": "ADX Interact: Construction 0%, absorption 0% on its feed",
+   "plans": "Property Finder: floor plan images per layout",
+   "record": "No delivered projects named by Property Finder, Provident or launch press",
+   "returns": "Portals use 'rental yield potential' wording but no guarantee or figure"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "144 residences, completion 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbnme.com/news/stellar-by-elie-saab-yas-islands-first-branded-residences/"
+   },
+   {
+    "claim": "Project registered with ADREC (no. 20250000659255)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/stellar-by-elie-saab"
+   },
+   {
+    "claim": "Escrow account with Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/stellar-by-elie-saab"
+   },
+   {
+    "claim": "Developer is Emirates Developments",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/stellar-by-elie-saab"
+   },
+   {
+    "claim": "Sales and marketing led by Royal Development Company",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbnme.com/news/stellar-by-elie-saab-yas-islands-first-branded-residences/"
+   },
+   {
+    "claim": "Construction started 26 Nov 2025",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/stellar-by-elie-saab"
+   },
+   {
+    "claim": "Starting price AED 2.3M (Property Finder) vs AED 2.5M (Provident)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://providentestate.com/new-projects/stellar-by-elie-saab-emirates-developments-yas-island"
+   },
+   {
+    "claim": "Handover December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emirates-property-investment/stellar-by-elie-saab"
+   },
+   {
+    "claim": "Developer known for delivering luxury projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://providentestate.com/new-projects/stellar-by-elie-saab-emirates-developments-yas-island"
+   },
+   {
+    "claim": "Freehold for foreign buyers on Yas Island",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emirates-property-investment/stellar-by-elie-saab"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Prime Emirates Real Estate Limited - Sole Proprietorship LLC (ADX Interact registry mirror)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR garden villa",
+    "4BR garden villa",
+    "penthouse"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 729,
+   "price_min": 2300000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/35/60",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Elie Saab",
+   "amenities": [
+    "pool",
+    "wellness spa",
+    "fitness centre",
+    "cinema",
+    "children's play zones",
+    "waterfront retail"
+   ],
+   "lat": 24.466,
+   "lng": 54.605,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "positives": [
+   "Registered project number and named escrow bank visible on a registry mirror",
+   "Floor plans and full unit price table published",
+   "Only 5% down payment"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/emirates-property-investment/stellar-by-elie-saab",
+   "https://providentestate.com/new-projects/stellar-by-elie-saab-emirates-developments-yas-island",
+   "https://adxinteract.com/abu-dhabi-new-projects/stellar-by-elie-saab",
+   "https://emiratesdevelopments.com/event/stellar-by-elie-saab-launch-event/",
+   "https://www.cbnme.com/news/stellar-by-elie-saab-yas-islands-first-branded-residences/",
+   "https://us.fashionnetwork.com/news/Elie-saab-announces-its-first-branded-residential-development-on-yas-island-abu-dhabi,1783102.html"
+  ]
+ },
+ {
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "developer": "Aldar Properties PJSC",
+  "area": "Saadiyat Cultural District, Saadiyat Island",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/mamsha-palm",
+  "docs_url": "https://www.aldar.com/properties/en/launch/Mamsha-Palm",
+  "permit_number": "20240000322782 (project number)",
+  "docs_listed": [
+   "developer: 44 residences, Koichi Takada design",
+   "floor plan images 1 to 3BR (Property Finder)",
+   "brochure PDF (Property Finder)",
+   "ADREC-style project no. 20240000322782, escrow bank ADCB, construction 18%, last inspection 16 Sep 2026 (ADX Interact)",
+   "construction start 30 Sep 2024, handover Q4 2028 (Property Finder)"
+  ],
+  "note": "Low-rise Koichi Takada designed building of 44 residences (Aldar) in the Saadiyat Cultural District, launched Q4 2024; ADX Interact shows project no. 20240000322782, escrow at Abu Dhabi Commercial Bank and 18% construction at a 16 Sep 2026 inspection. Handover is given as Q4 2028 on Property Finder but Q1 2028 by two agencies (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "20240000322782 (project number)",
+   "plans_published": true,
+   "escrow": "Escrow bank Abu Dhabi Commercial Bank (ADX Interact); account number not published",
+   "progress_pct": 18,
+   "developer_delivered": "Aldar FY2024 results: 1,180 units handed over in Abu Dhabi in 2024 (Noya, Noya Viva, Noya Luma on Yas Island, Saadiyat Reserve Dunes)",
+   "units": 44,
+   "payment_plan": "65% during construction, 35% on handover (Property Finder); agencies cite 35/30/35",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "ADX Interact (states it lists projects registered with the Abu Dhabi property authority): Project No. 20240000322782, registered 26 Sept 2024",
+   "escrow": "ADX Interact: Escrow Bank ABU DHABI COMMERCIAL BANK; Impala says escrow account not published by developer",
+   "progress": "ADX Interact: Construction 18%, last inspection 16 Sept 2026",
+   "plans": "Property Finder: floor plan images for 1, 2 and 3BR layouts",
+   "record": "Aldar FY2024 results release (listed company): 1,180 Abu Dhabi units handed over in 2024",
+   "returns": "No guaranteed return language on Property Finder or Aldar launch page"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project launched by Aldar in Q4 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aldar.com/en/news-and-media/aldar-fy-2024-financial-results"
+   },
+   {
+    "claim": "Aldar handed over 1,180 units in Abu Dhabi in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aldar.com/en/news-and-media/aldar-fy-2024-financial-results"
+   },
+   {
+    "claim": "44 residences in total (Aldar launch page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/mamsha-palm"
+   },
+   {
+    "claim": "Project registered as no. 20240000322782 on 26 Sep 2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/mamsha-palm"
+   },
+   {
+    "claim": "Escrow held at Abu Dhabi Commercial Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/mamsha-palm"
+   },
+   {
+    "claim": "Construction 18% complete at 16 Sep 2026 inspection",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/mamsha-palm"
+   },
+   {
+    "claim": "Handover Q4 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://theupsides.ae/projects/mamsha-palm"
+   },
+   {
+    "claim": "Starting price AED 3.6M (launch); recorded primary sales from AED 3.95M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/mamsha-palm"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/mamsha-palm"
+   },
+   {
+    "claim": "Aldar is listed and pays dividends (AED 0.185 per share for 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aldar.com/en/news-and-media/aldar-fy-2024-financial-results"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": "Aldar Properties PJSC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed company publishing quarterly results (FY2024 release: dividend AED 0.185 per share, Moody's Baa2)",
+   "construction_start": "2024-09",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR duplex sky villa"
+   ],
+   "size_min_m2": 82,
+   "size_max_m2": 750,
+   "price_min": 3600000,
+   "price_max": 49924800,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "65/35 (Property Finder) or 35/30/35 (agencies)",
+   "foreign_ownership": "freehold (Saadiyat investment zone, as listed)",
+   "rental_programme": null,
+   "service_charge": "AED 36 per sq ft per year (Impala)",
+   "brand": null,
+   "amenities": [
+    "biophilic design by Koichi Takada",
+    "retail street access",
+    "wellness amenities"
+   ],
+   "lat": 24.538,
+   "lng": 54.402,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC), project registration and Madhmoun licence via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Listed developer with audited results and stated 2024 handovers",
+   "Third-party data shows named escrow bank and an inspected construction figure",
+   "Small boutique building, mostly sold"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/mamsha-palm",
+   "https://www.aldar.com/properties/en/launch/Mamsha-Palm",
+   "https://adxinteract.com/abu-dhabi-new-projects/mamsha-palm",
+   "https://theupsides.ae/projects/mamsha-palm",
+   "https://impalarealestate.com/projects/mamsha-palm/",
+   "https://www.aldar.com/en/news-and-media/aldar-fy-2024-financial-results",
+   "https://adrec.gov.ae/en/faqs"
+  ]
+ },
+ {
+  "slug": "bab-al-qasr-garden-residence-66-burtville",
+  "name": "Bab Al Qasr Garden Residence 66",
+  "developer": "Burtville Developments",
+  "area": "Masdar City",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/burtville/bab-al-qasr-garden-residence-66",
+  "docs_url": "https://burtville.com/en/news/seven-of-eight-burtville-developments-projects-outpace-construction-milestones-defying-rising-costs-and-supply-chain-challenges/",
+  "permit_number": "20250000666278 (ADREC project number)",
+  "docs_listed": [
+   "unit table 1 to 5BR with sizes and prices",
+   "floor plan image per type and master plan",
+   "three payment plans (e.g. 20/79/1)",
+   "construction start 5 Oct 2025, handover Q2 2029",
+   "developer: 15.2% complete end May 2026 citing DARI",
+   "registry mirror: project no. 20250000666278, escrow ADIB, construction 20%, inspection 15 Jul 2026"
+  ],
+  "note": "285-unit Masdar City building by Burtville; ADX Interact shows project no. 20250000666278, escrow at Abu Dhabi Islamic Bank and 20% construction at a 15 Jul 2026 inspection, and Gulf News reported DARI data showing it 4% ahead of plan. Burtville handed over its 111-unit Ville 11 in 2026, 14 months early (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2145000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": true,
+   "permit_number": "20250000666278 (ADREC project number)",
+   "plans_published": true,
+   "escrow": "Escrow bank Abu Dhabi Islamic Bank (ADX Interact registry mirror)",
+   "progress_pct": 20,
+   "developer_delivered": "Ville 11, Masdar City, 111 units, completion certificate 31 Jul 2026 and handover 14 months early (Gulf News, Zawya)",
+   "units": 285,
+   "payment_plan": "Options incl. 20% at launch, 79% during construction, 1% on handover",
+   "price_per_m2": 21782
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "ADX Interact registry mirror: Project No. 20250000666278, registered 20 Jan 2026",
+   "escrow": "ADX Interact: Escrow Bank ABU DHABI ISLAMIC BANK",
+   "progress": "ADX Interact: Construction 20%, last inspection 15 Jul 2026; Burtville: 15.2% end May 2026; Gulf News: 4% ahead of plan per DARI",
+   "plans": "Property Finder: one floor plan image per unit type",
+   "record": "Gulf News and Zawya: Ville 11 (111 units) completion certificate from DMT on 31 Jul 2026 and handover",
+   "returns": "Property Finder uses general 'strong rental yields' wording but no guarantee or figure"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with ADREC (no. 20250000666278)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bab-al-qasr-garden-residence-66"
+   },
+   {
+    "claim": "Escrow account at Abu Dhabi Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bab-al-qasr-garden-residence-66"
+   },
+   {
+    "claim": "Construction about 20% (inspection 15 Jul 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bab-al-qasr-garden-residence-66"
+   },
+   {
+    "claim": "Running 4% ahead of schedule per DARI",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/early-completion-sets-new-pace-for-abu-dhabi-housing-1.500630309"
+   },
+   {
+    "claim": "Developer delivered Ville 11 (111 units) 14 months early",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/business/uae-realty-market/burtville-completes-handover-of-111-unit-abu-dhabi-residential-project-1369310"
+   },
+   {
+    "claim": "Ville 11 got project registration certificate before construction (Feb 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aletihad.ae/news/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A/4461779/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D9%82%D8%A7%D8%B1%D9%8A-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%8A%D9%88%D9%81%D8%B1-111-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%B5%D8%AF%D8%B1"
+   },
+   {
+    "claim": "Project sold out",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bab-al-qasr-garden-residence-66"
+   },
+   {
+    "claim": "Handover Q2 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/burtville/bab-al-qasr-garden-residence-66"
+   },
+   {
+    "claim": "Starting price AED 2.145M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/burtville/bab-al-qasr-garden-residence-66"
+   },
+   {
+    "claim": "Freehold for foreign buyers in Masdar City",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/burtville/bab-al-qasr-garden-residence-66"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": "Burtville Developments",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 111,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": 0,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR duplex"
+   ],
+   "size_min_m2": 98,
+   "size_max_m2": 229,
+   "price_min": 2145000,
+   "price_max": 4000000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "20/79/1, 10/89/1 or 15/84/1",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "landscaped gardens",
+    "family amenities"
+   ],
+   "lat": 24.427,
+   "lng": 54.616,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Registry-mirror project number, escrow bank and inspected progress",
+   "Independent press reports the project ahead of plan",
+   "Developer delivered its first project 14 months early with a completion certificate"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/burtville/bab-al-qasr-garden-residence-66",
+   "https://adxinteract.com/abu-dhabi-new-projects/bab-al-qasr-garden-residence-66",
+   "https://burtville.com/en/news/seven-of-eight-burtville-developments-projects-outpace-construction-milestones-defying-rising-costs-and-supply-chain-challenges/",
+   "https://burtville.com/en/news/burtville-begins-ville-11-handover-in-masdar/",
+   "https://gulfnews.com/business/property/early-completion-sets-new-pace-for-abu-dhabi-housing-1.500630309",
+   "https://www.zawya.com/en/business/uae-realty-market/burtville-completes-handover-of-111-unit-abu-dhabi-residential-project-1369310",
+   "https://meconstructionnews.com/68775/burtville-commences-early-handover-of-its-111-unit-masdar-city-project",
+   "https://www.aletihad.ae/news/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A/4461779/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D9%82%D8%A7%D8%B1%D9%8A-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%8A%D9%88%D9%81%D8%B1-111-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%B5%D8%AF%D8%B1"
+  ]
+ },
+ {
+  "slug": "ramhan-island-villas-phase-4-eagle-hills",
+  "name": "Ramhan Island Villas Phase 4",
+  "developer": "Eagle Hills (registered developer: Ramhan Development LLC)",
+  "area": "Ramhan Island",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "stage": "under construction",
+  "url": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4",
+  "docs_url": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4",
+  "permit_number": "20250000644247 (ADREC project number)",
+  "docs_listed": [
+   "villa types 3 to 7BR with sizes and launch prices",
+   "floor plan images for 3, 4, 6, 7BR",
+   "payment plan 10/40/50",
+   "construction start 5 Jan 2025, handover Sep 2028 (Property Finder)",
+   "registry mirror: project no. 20250000644247, escrow Emirates NBD, construction 32%, inspection 7 May 2026"
+  ],
+  "note": "Phase 4 of Eagle Hills' Ramhan Island villa community (98 villas on the registry mirror) with handover listed for Q3 2028; ADX Interact shows project no. 20250000644247, escrow at Emirates NBD and 32% construction at a 7 May 2026 inspection. MEED reported villa construction contracts awarded to Hassan Allam and Arabian Construction Company in Dec 2024 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 6900000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "20250000644247 (ADREC project number)",
+   "plans_published": true,
+   "escrow": "Escrow bank Emirates NBD Bank PJSC (ADX Interact registry mirror)",
+   "progress_pct": 32,
+   "developer_delivered": null,
+   "units": 98,
+   "payment_plan": "10% at launch, 40% during construction, 50% on handover",
+   "price_per_m2": 20869
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ADX Interact registry mirror: Project No. 20250000644247, registered 18 Nov 2025",
+   "escrow": "ADX Interact: Escrow Bank Emirates NBD Bank P.J.S.C",
+   "progress": "ADX Interact: Construction 32%, last inspection 7 May 2026",
+   "plans": "Property Finder: floor plan images for most villa types",
+   "record": "No handed-over projects named on the pages opened; agency site lists portfolio without delivery data",
+   "returns": "No guaranteed return language on Property Finder"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase registered with ADREC as no. 20250000644247",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/ramhan-island-development-phase-4"
+   },
+   {
+    "claim": "Escrow account with Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/ramhan-island-development-phase-4"
+   },
+   {
+    "claim": "Construction 32% at May 2026 inspection",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/ramhan-island-development-phase-4"
+   },
+   {
+    "claim": "Villa construction contracts awarded (ACC about 500 villas, Hassan Allam about 321 villas)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.meed.com/local-firm-wins-ramhan-island-villas-construction"
+   },
+   {
+    "claim": "Masterplan of 1,800 villas and 900 residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfconstructiononline.com/Article/386792/eagle-hills-unveils-luxury-island-project-in-abu-dhabi"
+   },
+   {
+    "claim": "Construction started 5 Jan 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4"
+   },
+   {
+    "claim": "Handover September 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4"
+   },
+   {
+    "claim": "Starting price AED 6.9M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4"
+   },
+   {
+    "claim": "Project launch date (Arabian Business: Mar 2023; MEED: May 2024)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.arabianbusiness.com/industries/real-estate/inside-ramhan-island-mohamed-alabbars-3-5bn-luxury-island-project-in-abu-dhabi"
+   },
+   {
+    "claim": "Freehold for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": "Ramhan Development L.L.C. (registry mirror); brand Eagle Hills, chaired by Mohamed Alabbar",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Privately held",
+   "construction_start": "2025-01",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa",
+    "6BR villa",
+    "7BR villa"
+   ],
+   "size_min_m2": 331,
+   "size_max_m2": 637,
+   "price_min": 6900000,
+   "price_max": 22000000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/40/50",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "marina",
+    "1.7 km retail promenade",
+    "private beaches",
+    "Ritz-Carlton Reserve hotel planned",
+    "wellness centre"
+   ],
+   "lat": 24.565,
+   "lng": 54.66,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "positives": [
+   "Registry-mirror project number, escrow bank and inspected progress of 32%",
+   "Main construction contracts reported by MEED",
+   "Floor plans and price per villa type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4",
+   "https://adxinteract.com/abu-dhabi-new-projects/ramhan-island-development-phase-4",
+   "https://www.meed.com/local-firm-wins-ramhan-island-villas-construction",
+   "https://www.meed.com/hassan-allam-wins-ramhan-island-villas-construction-deal",
+   "https://www.gulfconstructiononline.com/Article/386792/eagle-hills-unveils-luxury-island-project-in-abu-dhabi",
+   "https://ramhan.ae/developer",
+   "https://www.arabianbusiness.com/industries/real-estate/inside-ramhan-island-mohamed-alabbars-3-5bn-luxury-island-project-in-abu-dhabi"
+  ]
+ },
+ {
+  "slug": "nasim-al-bahr-residences-adnh",
+  "name": "Nasim Al Bahr Residences (The Luxury Collection)",
+  "developer": "Abu Dhabi National Hotels (ADNM RAK Investments LLC OPC, RAK Branch)",
+  "area": "Al Marjan Island",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/abu-dhabi-national-hotels/nasim-al-bahr-residences",
+  "docs_url": "https://www.zawya.com/en/press-release/companies-news/abu-dhabi-national-hotels-launches-nasim-al-bahr-residences-on-al-marjan-island-valued-at-aed-3bln-vhomqpvd",
+  "permit_number": null,
+  "docs_listed": [
+   "unit table apartments, townhouse, villas with sizes and prices",
+   "about 40 floor plan images",
+   "brochure PDF",
+   "payment plans 10/20/70 and 10/30/60",
+   "construction start 11 Feb 2026, handover Jan 2028 (Property Finder)",
+   "RAK RERA 2026 project list: registered, status In progress"
+  ],
+  "note": "AED 3bn Marriott Luxury Collection branded scheme of 55 villas and 392 apartments launched 6 Nov 2025 by listed ADNH; it appears on the RAK RERA 2026 project list (status In progress) under ADNM RAK Investments LLC OPC. Agencies report 5% build progress; handover is stated as Q4 2027 in launch press but Q1 2028 in ADNH's own results filing and on portals (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3444000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 5,
+   "developer_delivered": null,
+   "units": 447,
+   "payment_plan": "10% at launch, 20 to 30% during construction, 60 to 70% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listed on RAK RERA 'List and Status of Projects' 2026 (no. 71) but no registration or off-plan sale permit number published",
+   "escrow": "Not published (Impala: escrow account not published by the developer)",
+   "progress": "Impala and JRE: 5% complete; no developer figure",
+   "plans": "Property Finder: floor plans for each layout",
+   "record": "ADNH is a hotel owner and operator since 1976; no previously delivered residential project named",
+   "returns": "Only 'attractive rental returns' marketing wording, no figures or guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with RAK RERA under ADNM RAK Investments LLC OPC, status In progress",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
+   },
+   {
+    "claim": "Launched 6 Nov 2025; 55 villas and 392 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://apigateway.adx.ae/adx/cdn/1.0/content/download/4700034"
+   },
+   {
+    "claim": "Total development value AED 3bn",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/new-dh3-billion-waterfront-luxury-residences-launched-on-marjan-island-1.500340459"
+   },
+   {
+    "claim": "Handover Q4 2027 (launch press)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://apigateway.adx.ae/adx/cdn/1.0/content/download/4700034"
+   },
+   {
+    "claim": "Developer parent is a listed company",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://apigateway.adx.ae/adx/cdn/1.0/content/download/4700034"
+   },
+   {
+    "claim": "Branded under Marriott's The Luxury Collection",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/new-dh3-billion-waterfront-luxury-residences-launched-on-marjan-island-1.500340459"
+   },
+   {
+    "claim": "Construction 5% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://impalarealestate.com/projects/nasim-al-bahr-residences/"
+   },
+   {
+    "claim": "Escrow account opened",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://impalarealestate.com/projects/nasim-al-bahr-residences/"
+   },
+   {
+    "claim": "Starting price AED 3.444M (press) vs 3.513M (portals)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/gcc/adnh-launches-nasim-al-bahr-residences-on-al-marjan-island-bxm20iqw"
+   },
+   {
+    "claim": "26-unit development (JRE)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://jre.ae/projects/nasim-al-bahr-residences"
+   },
+   {
+    "claim": "Freehold for foreigners on Al Marjan Island",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jre.ae/projects/nasim-al-bahr-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1976,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": "ADNM RAK Investments LLC OPC - RAK Branch (RAK RERA list), wholly owned by Abu Dhabi National Hotels",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "ADNH listed on Abu Dhabi Securities Exchange (2025 results filing)",
+   "construction_start": "2026-02",
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q4 (launch press Nov 2025)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "3BR townhouse",
+    "villas"
+   ],
+   "size_min_m2": 91,
+   "size_max_m2": 529,
+   "price_min": 3444000,
+   "price_max": 22947000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/20/70 or 10/30/60",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": "Marriott ONVIA owner benefits; no rental figures",
+   "service_charge": "AED 35 per sq ft per year (Impala)",
+   "brand": "The Luxury Collection (Marriott International)",
+   "amenities": [
+    "resort pool",
+    "spa",
+    "gym",
+    "indoor padel",
+    "screening room",
+    "kids' play area"
+   ],
+   "lat": 25.676,
+   "lng": 55.742,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA-RAK)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Registered on RAK RERA's official project list",
+   "Parent company listed with results filings describing the project",
+   "Detailed floor plans for all layouts"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/abu-dhabi-national-hotels/nasim-al-bahr-residences",
+   "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf",
+   "https://mun.rak.ae/home/rak-municipality/organizational-structure/lands-properties-sector/real-estate-regulatory-administration/",
+   "https://apigateway.adx.ae/adx/cdn/1.0/content/download/4700034",
+   "https://www.zawya.com/en/press-release/companies-news/abu-dhabi-national-hotels-launches-nasim-al-bahr-residences-on-al-marjan-island-valued-at-aed-3bln-vhomqpvd",
+   "https://gulfnews.com/business/property/new-dh3-billion-waterfront-luxury-residences-launched-on-marjan-island-1.500340459",
+   "https://impalarealestate.com/projects/nasim-al-bahr-residences/",
+   "https://jre.ae/projects/nasim-al-bahr-residences",
+   "https://www.zawya.com/en/economy/gcc/adnh-launches-nasim-al-bahr-residences-on-al-marjan-island-bxm20iqw"
+  ]
+ },
+ {
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "developer": "Richmind (Richmind Development FZ-LLC, part of Richmind Holding)",
+  "area": "Al Marjan Island",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra",
+  "docs_url": "https://richmind.com/oystra-al-marjan-island-groundbreaking/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit sizes 1 to 3BR and launch price AED 2.59M",
+   "floor plan entries per type",
+   "payment plan 10/50/40",
+   "handover Feb 2029 (Property Finder)",
+   "dated construction updates: groundbreaking Nov 2025, shoring complete Oct 2026",
+   "RAK RERA 2026 project list: registered, In progress"
+  ],
+  "note": "Zaha Hadid Architects designed waterfront scheme of 850 to 950 homes near Wynn Al Marjan; it appears on the RAK RERA 2026 project list (In progress) and broke ground in late November 2025, with shoring completed in October 2026 and handover planned for 2029. It is Richmind's first UAE project, and no escrow or permit number is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2586888,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 850,
+   "payment_plan": "10% at launch, 50% during construction in 8 instalments, 40% on handover",
+   "price_per_m2": 33032
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listed on RAK RERA 'List and Status of Projects' 2026 (no. 67, Richmind Development FZ-LLC), no number published",
+   "escrow": null,
+   "progress": "Arabian Business: groundbreaking Dec 2025; Gulf Construction and Zawya: shoring complete Oct 2026; no percentage",
+   "plans": "Property Finder: layout table with floor plan entries for 1, 2, 3BR",
+   "record": "Zawya release: Oystra is Richmind's inaugural UAE development",
+   "returns": "No guaranteed return language found"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with RAK RERA (Richmind Development FZ-LLC), In progress",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
+   },
+   {
+    "claim": "Construction started (groundbreaking late Nov 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.arabianbusiness.com/industries/construction/richmind-breaks-ground-on-landmark-oystra-after-phase-one-sellout"
+   },
+   {
+    "claim": "Construction started 22 Apr 2025 (Property Finder)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.arabianbusiness.com/industries/construction/richmind-breaks-ground-on-landmark-oystra-after-phase-one-sellout"
+   },
+   {
+    "claim": "Shoring works complete (Oct 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfconstructiononline.com/Article/488876/zha-designed-oystra-marks-milestone"
+   },
+   {
+    "claim": "850 residences",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.gulfconstructiononline.com/Article/488876/zha-designed-oystra-marks-milestone"
+   },
+   {
+    "claim": "Phase 1 sold out before groundbreaking",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://richmind.com/oystra-al-marjan-island-groundbreaking/"
+   },
+   {
+    "claim": "Handover 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra"
+   },
+   {
+    "claim": "Developer has delivered projects in the UAE",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/press-release/companies-news/richmind-advances-oystra-construction-in-ras-al-khaimah-and-unveils-gensler-designed-luxury-experience-centre-in-dubai-1563893"
+   },
+   {
+    "claim": "Escrow account opened",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra"
+   },
+   {
+    "claim": "Starting price AED 2,586,888",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE (experience centre Jumeirah 3)",
+   "developer_company": "Richmind Development FZ-LLC (RAK RERA list)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "duplex",
+    "penthouse",
+    "villa"
+   ],
+   "size_min_m2": 78,
+   "size_max_m2": 197,
+   "price_min": 2586888,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/50/40",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "360-degree infinity pool",
+    "beach club",
+    "spa",
+    "gym",
+    "padel and tennis",
+    "cinema",
+    "kids' club"
+   ],
+   "lat": 25.68,
+   "lng": 55.74,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA-RAK)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Registered on RAK RERA's official project list",
+   "Dated construction milestones reported by trade press",
+   "Recognised design team named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/richmind/oystra",
+   "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf",
+   "https://richmind.com/oystra-al-marjan-island-groundbreaking/",
+   "https://richmind.com/oystra-shoring-stage-gulf-construction/",
+   "https://www.gulfconstructiononline.com/Article/488876/zha-designed-oystra-marks-milestone",
+   "https://www.zawya.com/en/press-release/companies-news/richmind-advances-oystra-construction-in-ras-al-khaimah-and-unveils-gensler-designed-luxury-experience-centre-in-dubai-1563893",
+   "https://www.arabianbusiness.com/industries/construction/richmind-breaks-ground-on-landmark-oystra-after-phase-one-sellout"
+  ]
+ },
+ {
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "developer": "Mira Developments (Mira Developments LLC)",
+  "area": "Al Marjan Island",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/mira-developments/gianfranco-ferre-residences",
+  "docs_url": "https://miradevelopments.ae/projects/gianfranco-ferre-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: Q1 2028 handover, from AED 1.6M, 50/50 post-handover plan",
+   "Property Finder: layout table studio to 2BR with sizes",
+   "developer press release Jan 2026 with unit mix",
+   "dated construction update (Mira LinkedIn, Apr 2026)",
+   "RAK RERA 2026 project list: registered, In progress"
+  ],
+  "note": "Nine-storey furnished branded building at the tip of Al Marjan Island, listed on the RAK RERA 2026 project list (In progress) under Mira Developments LLC, handover Q1 2028. Unit counts (160, 191 or 56), prices (AED 1.2M or 1.6M) and payment plans (10/50/40 or 50/50 post-handover) differ between the developer and portals, and no escrow, progress figure or delivered projects are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 191,
+   "payment_plan": "Developer: 50/50 with 50% over 36 months after completion; Property Finder: 10/50/40",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listed on RAK RERA 'List and Status of Projects' 2026 (no. 77) with no number published",
+   "escrow": null,
+   "progress": "Mira Developments LinkedIn construction update dated 17 Apr 2026, no percentage",
+   "plans": "Property Finder layout table with floor plan entries; developer offers official plans on request",
+   "record": "Developer lists brand partners (Bentley Home, ETRO, Trussardi etc.) but names no completed handovers",
+   "returns": "Rental market growth cited (17 to 21% in 2025) but no guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with RAK RERA (Mira Developments LLC), In progress",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
+   },
+   {
+    "claim": "Handover Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://miradevelopments.ae/projects/gianfranco-ferre-residences"
+   },
+   {
+    "claim": "160 units (Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://miradevelopments.ae/articles/mira-developments-and-gianfranco-ferre-home-announce-a-new-collection-of-luxury-waterfront-apartments"
+   },
+   {
+    "claim": "Starting price AED 1.2M (Property Finder) vs AED 1.6M (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://miradevelopments.ae/projects/gianfranco-ferre-residences"
+   },
+   {
+    "claim": "Payment plan 10/50/40 (Property Finder) vs 50/50 post-handover (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://gianfrancoferre-residences.com/"
+   },
+   {
+    "claim": "Construction started 9 Mar 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/mira-developments/gianfranco-ferre-residences"
+   },
+   {
+    "claim": "Construction is complete (Madena)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.madena.ae/projects/gianfranco-ferre-residences"
+   },
+   {
+    "claim": "Developer delivers branded turnkey homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gianfrancoferre-residences.com/"
+   },
+   {
+    "claim": "Escrow account opened",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://miradevelopments.ae/projects/gianfranco-ferre-residences"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/mira-developments/gianfranco-ferre-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Mira Developments LLC (RAK RERA list)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "2BR duplex",
+    "3BR duplex",
+    "4BR duplex"
+   ],
+   "size_min_m2": 42,
+   "size_max_m2": 505,
+   "price_min": 1200000,
+   "price_max": 14400000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "50/50 post-handover (developer)",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": "Hotel-style services; no rental figures",
+   "service_charge": null,
+   "brand": "Gianfranco Ferré Home",
+   "amenities": [
+    "infinity pool",
+    "spa",
+    "gym",
+    "private beach access",
+    "cinema",
+    "co-working"
+   ],
+   "lat": 25.69,
+   "lng": 55.73,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA-RAK)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Registered on RAK RERA's official project list",
+   "Post-handover payment plan reduces pre-completion exposure"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/mira-developments/gianfranco-ferre-residences",
+   "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf",
+   "https://miradevelopments.ae/projects/gianfranco-ferre-residences",
+   "https://miradevelopments.ae/articles/mira-developments-and-gianfranco-ferre-home-announce-a-new-collection-of-luxury-waterfront-apartments",
+   "https://gianfrancoferre-residences.com/",
+   "https://www.madena.ae/projects/gianfranco-ferre-residences",
+   "https://www.linkedin.com/posts/mira-developments_construction-update-for-gianfranco-ferr%C3%A9-activity-7450887012947042304-zpTD"
+  ]
+ },
+ {
+  "slug": "azure-by-lapis-lapis-properties",
+  "name": "Azure by Lapis",
+  "developer": "Lapis Properties (Lapis Real Estate FZ-LLC per RAKcompare)",
+  "area": "RAK Central (also listed as Al Hamra Free Zone or Al Marjan Island)",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/lapis-properties/azure-by-lapis",
+  "docs_url": "https://lapisproperties.com/projects/azure-by-lapis/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: from AED 790K, 75/25 plan, completion Q4 2028",
+   "Property Finder: construction start 30 Nov 2025, handover Dec 2028",
+   "portal: 2B+G+3P+40 floors, service charge AED 16 per sq ft"
+  ],
+  "note": "40-storey tower marketed from AED 790K with a 75/25 plan and Q4 2028 completion; the location (RAK Central, Al Hamra Free Zone or Al Marjan Island) and unit count (95, 123, 207 or 435) differ across the developer and portals. It was not found on the RAK RERA 2026 project list, and no permit, escrow, progress or delivered projects are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 790000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "75% during construction, 25% on handover (developer); portals list other plans incl. post-handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No number published; project not seen on the RAK RERA 2026 'List and Status of Projects'",
+   "escrow": null,
+   "progress": "Portals say under construction since Q4 2025 but no figure or dated update",
+   "plans": "No floor plans on developer or Property Finder pages opened",
+   "record": "Developer claims 12 years of delivered landmark projects without naming any",
+   "returns": "Marketing mentions rental demand only, no guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with RAK RERA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
+   },
+   {
+    "claim": "Located in RAK Central (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.ae/projects/azure-by-lapis"
+   },
+   {
+    "claim": "Starting price AED 790K",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dubainary.com/off-plan/lapis-properties-azure-by-lapis"
+   },
+   {
+    "claim": "Number of units",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rakcompare.ae/project/azure-by-lapis"
+   },
+   {
+    "claim": "Construction started 30 Nov 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/lapis-properties/azure-by-lapis"
+   },
+   {
+    "claim": "Completion Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lapisproperties.com/projects/azure-by-lapis/"
+   },
+   {
+    "claim": "Developer has delivered landmark projects over 12 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lapisproperties.com/"
+   },
+   {
+    "claim": "Developer has about 20 years of experience (RAKcompare)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rakcompare.ae/project/azure-by-lapis"
+   },
+   {
+    "claim": "Escrow account opened",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lapisproperties.com/projects/azure-by-lapis/"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lapisproperties.com/projects/azure-by-lapis/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Lapis Real Estate FZ-LLC (RAKcompare, not confirmed)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": 52,
+   "size_max_m2": 538,
+   "price_min": 790000,
+   "price_max": 13302207,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "75/25",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": "AED 16 per sq ft (Dubainary)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "gym",
+    "kids' play area",
+    "volleyball",
+    "BBQ areas"
+   ],
+   "lat": 25.69,
+   "lng": 55.799,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA-RAK)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Low entry price and simple 75/25 plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/lapis-properties/azure-by-lapis",
+   "https://lapisproperties.com/projects/azure-by-lapis/",
+   "https://lapisproperties.com/",
+   "https://offplan.ae/projects/azure-by-lapis",
+   "https://rakcompare.ae/project/azure-by-lapis",
+   "https://dubainary.com/off-plan/lapis-properties-azure-by-lapis",
+   "https://www.madena.ae/projects/azure-by-lapis",
+   "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
+  ]
+ }
+]

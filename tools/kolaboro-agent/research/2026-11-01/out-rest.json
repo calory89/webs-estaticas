@@ -1,0 +1,1899 @@
+[
+ {
+  "slug": "florence-residences-homecorp",
+  "name": "Florence Residences",
+  "developer": "Homecorp",
+  "area": "Surfers Paradise",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "url": "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217",
+  "docs_url": "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217",
+  "permit_number": null,
+  "docs_listed": [
+   "116 residences, 25-26 storeys (85x2BR, 27-29x3BR, 2-4x4BR)",
+   "price from AUD 1,249,000 (news)",
+   "completion late 2027",
+   "Gold Coast City Council approval reported (no DA number)",
+   "operational works applications OPW/2025/1252 and COM/2025/347 (PlanningAlerts)",
+   "brochure with floor plans on request only",
+   "6.5-year structural cover and 1-year builder care period"
+  ],
+  "note": "Homecorp's 116-residence (later reported as 120) wellness tower at 24 Monte Carlo Avenue, designed by BDA Architecture, started construction in early 2026 and targets late 2027; prices reported from AUD 1,249,000 and 75% sold over the launch weekend. Council approval is reported but no DA number is published; related operational works applications OPW/2025/1252 and COM/2025/347 appear on the council feed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1249000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Eve Residences, Labrador, completed 2024 (apartments.com.au approval article)",
+   "units": 116,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Council approval reported by apartments.com.au (Oct 2025) and The Urban Developer, no DA number published. Council operational works applications OPW/2025/1252 (water and sewer) and COM/2025/347 (access and civil works) for 24 Monte Carlo Avenue listed on PlanningAlerts (council data mirror)",
+   "escrow": null,
+   "progress": "Construction start reported Feb 2026 by apartments.com.au and Business News Australia; listing says 'on track' and 'progress verified' with no figure or dated photos",
+   "plans": "Floor plans only via brochure request",
+   "record": "Eve Residences (Labrador, 157 apartments) completed 2024, confirmed by builder Hutchinson Builders project page",
+   "returns": "No rental guarantee or yield figures on the listing"
+  },
+  "positives": [
+   "Construction already started before completion of sales",
+   "Named completed project (Eve Residences, 2024)",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/qld/buyers-rush-to-homecorps-florence-residences-as-gold-coast-wellness-trend-gains-momentum",
+   "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217",
+   "https://www.apartments.com.au/news/qld/homecorp-commences-construction-on-210-million-wellness-infused-florence-residences-in-surfers-paradise",
+   "https://www.apartments.com.au/news/qld/homecorp-greenlit-for-210-million-florence-residences-in-surfers-paradise",
+   "https://www.hutchinsonbuilders.com.au/projects/residential/eve-residences",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=homecorp+constructions",
+   "https://www.planningalerts.org.au/applications/3376964",
+   "https://www.planningalerts.org.au/applications/3381487",
+   "https://www.theurbandeveloper.com/articles/surfers-paradise-approvals-homecorp-gcap-qld",
+   "https://www.businessnewsaustralia.com/articles/homecorp-sells-75pc-of-210m-florence-residences-in-a-single-weekend-as-gold-coast-demand-runs-hot.html"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Gold Coast City Council approved the 25-storey, 116-residence tower",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/surfers-paradise-approvals-homecorp-gcap-qld"
+   },
+   {
+    "claim": "Council applications exist for works at 24 Monte Carlo Avenue (OPW/2025/1252, COM/2025/347)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningalerts.org.au/applications/3376964"
+   },
+   {
+    "claim": "A DA/MCU approval number is published by the developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217"
+   },
+   {
+    "claim": "Construction has commenced (early 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessnewsaustralia.com/articles/homecorp-sells-75pc-of-210m-florence-residences-in-a-single-weekend-as-gold-coast-demand-runs-hot.html"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/homecorp-commences-construction-on-210-million-wellness-infused-florence-residences-in-surfers-paradise"
+   },
+   {
+    "claim": "Prices from AUD 1,249,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessnewsaustralia.com/articles/homecorp-sells-75pc-of-210m-florence-residences-in-a-single-weekend-as-gold-coast-demand-runs-hot.html"
+   },
+   {
+    "claim": "75% sold over first weekend",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessnewsaustralia.com/articles/homecorp-sells-75pc-of-210m-florence-residences-in-a-single-weekend-as-gold-coast-demand-runs-hot.html"
+   },
+   {
+    "claim": "Homecorp delivered Eve Residences, Labrador (2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hutchinsonbuilders.com.au/projects/residential/eve-residences"
+   },
+   {
+    "claim": "Homecorp Constructions Pty Ltd is a registered, active Queensland company (ABN 27 169 928 205)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=homecorp+constructions"
+   },
+   {
+    "claim": "Unit count 116 residences",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/qld/homecorp-commences-construction-on-210-million-wellness-infused-florence-residences-in-surfers-paradise"
+   },
+   {
+    "claim": "Deposits held in trust or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2004,
+   "developer_hq": "Gold Coast, Australia",
+   "developer_company": "Homecorp Constructions Pty Ltd, ABN 27 169 928 205 (Homecorp Property Group, majority owned by Prime Life Technologies, a Toyota and Panasonic JV)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1249000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated on listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "hot and cold plunge pools",
+    "spa",
+    "gym",
+    "yoga and Pilates studio",
+    "resident dining lounge",
+    "rooftop bar",
+    "pet facilities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (development approval under Planning Act 2016)",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "lumara-broadbeach-5point-bourke",
+  "name": "Lumara",
+  "developer": "5Point Projects and Bourke Projects (JV)",
+  "area": "Broadbeach",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "url": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
+  "docs_url": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
+  "permit_number": null,
+  "docs_listed": [
+   "37 residences over 26 floors, 78 car spaces",
+   "North 3BR 194 m2 from AUD 4,100,000; North-East 3BR 186 m2 from AUD 3,985,000",
+   "Sky Homes 4BR+study 381 m2 from AUD 9,800,000",
+   "completion mid 2028",
+   "architect Cottee Parker; builder 5Point Projects",
+   "floor plans via brochure request",
+   "6.5-year structural cover, 1-year builder care period"
+  ],
+  "note": "Luxury 37-residence, 26-level tower at 108 Old Burleigh Road by the 5Point Projects and Bourke Projects JV, designed by Cottee Parker; construction began before the June 2026 release and completion is targeted for mid 2028. 3BR from AUD 3,985,000; no DA number, deposit arrangement or progress figure published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3985000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "5Point: Elevaire Palm Beach listed as construction complete on its apartments.com.au builder page; combined JV portfolio of 40+ developments stated",
+   "units": 37,
+   "payment_plan": null,
+   "price_per_m2": 21425
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "DA lodged mid 2025 (referred to as 108OBR, town planning by UPS) per apartments.com.au; approval stage shown on listing timeline but no DA number found",
+   "escrow": null,
+   "progress": "Listing says under construction by 5Point, on track for mid 2028; apartments.com.au news (Jun 2026) says construction began before release; no figure or dated photos",
+   "plans": "Floor plans only via brochure request",
+   "record": "apartments.com.au builder page lists Elevaire Palm Beach as complete; 40+ developments claimed; Faro Broadbeach described as nearing completion in Jun 2025 (portal news only)",
+   "returns": "No guarantee or yield language"
+  },
+  "positives": [
+   "Prices and sizes published per residence type",
+   "Builder-developer already on site",
+   "No guaranteed returns"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/qld/locals-interstate-holiday-makers-drive-early-sales-at-lumara-broadbeachs-newest-luxury-apartment-tower",
+   "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
+   "https://www.apartments.com.au/builders/5point-projects",
+   "https://www.apartments.com.au/news/qld/first-look-5point-doubles-down-on-old-burleigh-road-plans-lumara-broadbeach",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=5point+projects"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development approval granted (listing timeline 'plans approved')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218"
+   },
+   {
+    "claim": "DA lodged for a 26-level, 37-apartment tower at 108 Old Burleigh Road",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/first-look-5point-doubles-down-on-old-burleigh-road-plans-lumara-broadbeach"
+   },
+   {
+    "claim": "Construction started before market release",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/locals-interstate-holiday-makers-drive-early-sales-at-lumara-broadbeachs-newest-luxury-apartment-tower"
+   },
+   {
+    "claim": "Completion mid 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218"
+   },
+   {
+    "claim": "Prices from AUD 3,985,000 for a 186 m2 3BR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218"
+   },
+   {
+    "claim": "5Point Projects Pty Ltd is a registered, active Queensland company (ABN 61 615 602 027)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=5point+projects"
+   },
+   {
+    "claim": "5Point/Bourke combined portfolio of 40+ luxury developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218"
+   },
+   {
+    "claim": "Elevaire Palm Beach completed by 5Point",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/builders/5point-projects"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Gold Coast, Australia",
+   "developer_company": "5Point Projects Pty Ltd, ABN 61 615 602 027 (JV with Bourke Projects)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR+study",
+    "penthouse"
+   ],
+   "size_min_m2": 186,
+   "size_max_m2": 381,
+   "price_min": 3985000,
+   "price_max": 9800000,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "magnesium pool",
+    "spa",
+    "sauna",
+    "steam rooms",
+    "gym",
+    "private dining room",
+    "workspaces",
+    "BBQ pavilion"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (development approval under Planning Act 2016)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "como-varsity-lakes-red-co",
+  "name": "COMO Varsity Lakes",
+  "developer": "Red & Co Developments",
+  "area": "Varsity Lakes",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "url": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227",
+  "docs_url": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227",
+  "permit_number": null,
+  "docs_listed": [
+   "156 residences, 15-16 levels",
+   "1BR+study 73 m2 from AUD 1,060,000; 2BR 114 m2 from AUD 1,508,700; 3BR 137-143 m2 from AUD 2,026,500",
+   "completion late 2028",
+   "deposit offer AUD 25k to 30 Nov 2026 (page also says 50k, cash or deposit bond)",
+   "builder 5Point Projects, architect BDA Architecture",
+   "6.5-year structural cover, 1-year builder care period"
+  ],
+  "note": "Red & Co's first Gold Coast project, 156 apartments on a 2,857 m2 Lake Orr site bought for AUD 8m with an existing approval; built by 5Point, launched April 2026 with construction under way and completion due late 2028; 1-bed from AUD 1,060,000. Council operational works applications (OPW/2026/136, MIN/2026/181) exist but no DA number is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1060000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Red & Co: more than 500 apartments and townhouses across 26 projects, mainly Brisbane (apartments.com.au, Mar 2026); no projects named",
+   "units": 156,
+   "payment_plan": null,
+   "price_per_m2": 14521
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Site said to carry an existing development approval (apartments.com.au Jul 2025); listing timeline 'plans approved'; council feed shows MIN/2026/181, a minor change to operational works OPW/2026/136 for 22 Lake Street; no DA number published",
+   "escrow": "Deposit of AUD 25k or 50k, cash or deposit bond, stated; no trust account named",
+   "progress": "Construction start reported Mar-Apr 2026 (apartments.com.au, The Urban Developer says builder bringing construction forward); no figure or dated photos",
+   "plans": "Only unit sizes shown; floorplans behind information pack form",
+   "record": "Red & Co said to have delivered 500+ dwellings across 26 projects, mainly Brisbane (portal news); no named completed projects found; Arca Stafford and Duet Portside are under construction",
+   "returns": "No rental guarantee or yield"
+  },
+  "positives": [
+   "Prices and internal/external sizes published per type",
+   "Construction started at launch"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227",
+   "https://www.apartments.com.au/news/qld/red-co-to-launch-debut-gold-coast-development-como-varsity-lakes-as-construction-commences",
+   "https://www.theurbandeveloper.com/articles/red-and-co-makes-gold-coast-debut-with-aud250m-lifestyle-led-como-at-varsity-lakes-raptis-waterpoint",
+   "https://www.apartments.com.au/news/qld/red-co-plots-new-como-varsity-lake-apartments",
+   "https://api.planningalerts.org.au/applications/3458673",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=red+%26+co+developments",
+   "https://www.theurbandeveloper.com/articles/red-co-stafford-arca-construction-start"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Site has an existing development approval",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/red-co-plots-new-como-varsity-lake-apartments"
+   },
+   {
+    "claim": "Council operational works approvals in progress for 22 Lake Street (OPW/2026/136 minor change MIN/2026/181)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://api.planningalerts.org.au/applications/3458673"
+   },
+   {
+    "claim": "Site bought off-market for AUD 8m (2,857 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/red-co-plots-new-como-varsity-lake-apartments"
+   },
+   {
+    "claim": "Market launch April 2026 with 5Point as builder, 156 apartments over 16 levels",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/red-and-co-makes-gold-coast-debut-with-aud250m-lifestyle-led-como-at-varsity-lakes-raptis-waterpoint"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/red-co-to-launch-debut-gold-coast-development-como-varsity-lakes-as-construction-commences"
+   },
+   {
+    "claim": "Completion late 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227"
+   },
+   {
+    "claim": "Deposit AUD 25k to secure an apartment",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227"
+   },
+   {
+    "claim": "Prices from AUD 1,060,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227"
+   },
+   {
+    "claim": "Red & Co Developments Pty Ltd is a registered, active Queensland company (ABN 18 610 575 427)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=red+%26+co+developments"
+   },
+   {
+    "claim": "500+ dwellings delivered across 26 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/red-co-to-launch-debut-gold-coast-development-como-varsity-lakes-as-construction-commences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Brisbane, Australia",
+   "developer_company": "Red & Co Developments Pty Ltd, ABN 18 610 575 427 (co-founders Keiran Foster and David Laverty)",
+   "developer_projects_delivered": 26,
+   "developer_units_delivered": 500,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR+study",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 73,
+   "size_max_m2": 143,
+   "price_min": 1060000,
+   "price_max": 2115750,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": "AUD 25k (or 50k) deposit, cash or deposit bond; balance at settlement",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "25m lap pool",
+    "gym",
+    "sauna",
+    "hot and cold plunge",
+    "pickleball and padel courts",
+    "rooftop BBQ and dining"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (development approval under Planning Act 2016)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "sydney-house-first-sponsor-icd",
+  "name": "Sydney House",
+  "developer": "First Sponsor and ICD Property (JV)",
+  "area": "Sydney CBD",
+  "country": "Australia",
+  "market": "Sydney",
+  "url": "https://www.apartments.com.au/new-apartments/sydney-house-194-204-pitt-street-sydney-nsw-2000",
+  "docs_url": "https://www.apartments.com.au/new-apartments/sydney-house-194-204-pitt-street-sydney-nsw-2000",
+  "permit_number": "D/2021/203",
+  "docs_listed": [
+   "DA D/2021/203 approved by Central Sydney Planning Committee 11 Nov 2021 (council decision PDF)",
+   "241 apartments above a 135-room hotel on a heritage podium, 50-storey tower",
+   "1BR from AUD 1.5m (news)",
+   "completion late 2027",
+   "builder Richard Crookes Constructions (about AUD 400m contract)",
+   "developer site: dated news/construction items Apr-May 2025",
+   "floor plans only at display gallery appointment"
+  ],
+  "note": "241 apartments above a hotel on the restored City Tattersalls Club podium at 194-204 Pitt Street; DA D/2021/203 was approved by the Central Sydney Planning Committee on 11 Nov 2021. Under construction by Richard Crookes since 2024 (core at level 7 by May 2025) with completion late 2027; launch pricing from AUD 1.5m for a 1-bed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1500000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "D/2021/203",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "ICD Property: Eq. Tower Melbourne completed 2016 (CTBUH) and Aspire Melbourne, 565 apartments, completed 2023 (apartments.com.au); First Sponsor Group is SGX-listed",
+   "units": 241,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "City of Sydney printed decision: D/2021/203, 194 and 196-204 Pitt Street, approved unanimously by the Central Sydney Planning Committee on 11 Nov 2021",
+   "escrow": null,
+   "progress": "Property Markets news (May 2025, developer-sourced): demolition and excavation done, third crane up, core to level 7 and slabs to level 3; developer site lists dated construction news Apr-May 2025; no % published",
+   "plans": "Floor plans only via brochure request",
+   "record": "ICD Property delivered Eq. Tower Melbourne in 2016 (CTBUH) and Aspire Melbourne, 565 apartments, in 2023 (apartments.com.au); First Sponsor Group is equity partner and sole financier",
+   "returns": "No yield or guarantee"
+  },
+  "positives": [
+   "Development approval number published",
+   "Named builder"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/nsw/buyers-set-for-first-chance-at-sydney-house-sydney-cbds-newest-landmark-tower-development",
+   "https://www.apartments.com.au/new-apartments/sydney-house-194-204-pitt-street-sydney-nsw-2000",
+   "https://meetings.cityofsydney.nsw.gov.au/documents/d3200/Printed decision Development Application 194 and 196-204 Pitt Street Sydney - D2021203.pdf?T=5",
+   "https://en.wikipedia.org/wiki/Sydney_House",
+   "https://propertymarkets.news/construction-steaming-ahead-at-iconic-sydney-house-mixed-use-landmark/",
+   "https://sydneyhouseresidences.com.au/",
+   "https://theurbandeveloper.com/articles/icd-property-first-sponsor-400m-tattersalls-club-richard-crookes-construction",
+   "https://www.ctbuh.org/news/planned-melbourne-residential-tower-receives-funding/",
+   "https://www.apartments.com.au/news/vic/icd-property-complete-aspire-melbourne-apartment-development"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development consent D/2021/203 granted",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://meetings.cityofsydney.nsw.gov.au/documents/d3200/Printed decision Development Application 194 and 196-204 Pitt Street Sydney - D2021203.pdf?T=5"
+   },
+   {
+    "claim": "Central Sydney Planning Committee approval in Nov 2021",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://meetings.cityofsydney.nsw.gov.au/documents/d3200/Printed decision Development Application 194 and 196-204 Pitt Street Sydney - D2021203.pdf?T=5"
+   },
+   {
+    "claim": "Richard Crookes Constructions appointed under an AUD 400m contract",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theurbandeveloper.com/articles/icd-property-first-sponsor-400m-tattersalls-club-richard-crookes-construction"
+   },
+   {
+    "claim": "Construction under way since 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Sydney_House"
+   },
+   {
+    "claim": "Core to level 7 by end of May 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertymarkets.news/construction-steaming-ahead-at-iconic-sydney-house-mixed-use-landmark/"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sydneyhouseresidences.com.au/"
+   },
+   {
+    "claim": "1BR from AUD 1.5m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/buyers-set-for-first-chance-at-sydney-house-sydney-cbds-newest-landmark-tower-development"
+   },
+   {
+    "claim": "Hotel component of 135 rooms (earlier reported as 110 rooms)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://theurbandeveloper.com/articles/icd-property-first-sponsor-400m-tattersalls-club-richard-crookes-construction"
+   },
+   {
+    "claim": "ICD Property completed Eq. Tower (2016)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ctbuh.org/news/planned-melbourne-residential-tower-receives-funding/"
+   },
+   {
+    "claim": "ICD Property completed Aspire Melbourne (565 apartments, 2023)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/vic/icd-property-complete-aspire-melbourne-apartment-development"
+   },
+   {
+    "claim": "First Sponsor is equity partner and sole financier",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theurbandeveloper.com/articles/icd-property-first-sponsor-400m-tattersalls-club-richard-crookes-construction"
+   },
+   {
+    "claim": "Deposits held in trust or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sydneyhouseresidences.com.au/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Melbourne, Australia (ICD Property); Singapore (First Sponsor Group)",
+   "developer_company": "ICD Property with First Sponsor Group Limited (SGX-listed) consortium formed 2019",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "First Sponsor Group Limited listed on SGX",
+   "construction_start": "2024",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1500000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated by developer)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "135-room hotel in building",
+    "City Tattersalls Club in heritage podium"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Sydney / Central Sydney Planning Committee",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "waterstone-st-leonards-sekisui-house",
+  "name": "Waterstone",
+  "developer": "Sekisui House Australia",
+  "area": "St Leonards",
+  "country": "Australia",
+  "market": "Sydney",
+  "url": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065",
+  "docs_url": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065",
+  "permit_number": null,
+  "docs_listed": [
+   "207 residences in five buildings of 4-9 storeys",
+   "1BR 64 m2 from AUD 1,075,000; 2BR 94-96 m2 from AUD 1,570,000; 3BR 123 m2 from AUD 2,300,000",
+   "completion late 2027",
+   "deposit bonds accepted or 2.5% deposit offer",
+   "builder Decode, architect TURNER, landscape ASPECT Studios",
+   "6-year structural cover, 2-year builder care period",
+   "approval PPSSNH-316 found on NSW Planning Portal (not published on listing)"
+  ],
+  "note": "207 apartments across five mid-rise buildings at 22-34 Berry Road on a site Sekisui House bought for AUD 110.5m in 2024 with an approval determined by the Sydney North Planning Panel (PPSSNH-316, 8 Mar 2023, then 245 units); construction by Decode started Oct 2025 with move-in late 2027; 1-bed from AUD 1,075,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1075000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Sekisui House Australia: West Village One, Brisbane, 322 apartments (Sustainable Building Awards entry); Melrose Park Village completion reported; parent claims 2.6 million homes globally",
+   "units": 207,
+   "payment_plan": "2.5% deposit offer or deposit bond; balance at settlement",
+   "price_per_m2": 16702
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "NSW Planning Portal: Sydney North Planning Panel PPSSNH-316 (PAN-222434), five residential flat buildings with 245 units at 22-34 Berry Road, 21-31 Holdsworth Ave and 42-46 River Road, approved 8 Mar 2023. The project listing itself shows only 'plans approved' with no number. Not counted as published because the developer listing gives no number",
+   "escrow": "Only deposit bond or 2.5% deposit offer stated; no trust account named",
+   "progress": "Sod turning reported 30 Oct 2025 (apartments.com.au); listing says under construction, no figure",
+   "plans": "Only unit sizes in listings; floorplans via information pack",
+   "record": "West Village One (Brisbane, 322 apartments) credited to Sekisui House Australia by the Sustainable Building Awards; Sekisui House parent listed in Tokyo; 2.6 million homes global claim",
+   "returns": "No yield or guarantee"
+  },
+  "positives": [
+   "Per-unit prices and sizes published",
+   "Low 2.5% deposit option"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/nsw/sekisui-house-australia-breaks-ground-at-waterstone-st-leonards-following-positive-sales-results",
+   "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065",
+   "https://www.planningportal.nsw.gov.au/planning-panel/residential-flat-building-development-26",
+   "https://www.apartments.com.au/news/nsw/sekisui-buys-st-leonards-development-site-for-waterstone-apartments",
+   "https://www.sustainablebuildingawards.com.au/multiple-dwelling-2019/west-village-one"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development approval for five residential flat buildings on the site",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/planning-panel/residential-flat-building-development-26"
+   },
+   {
+    "claim": "Approved scheme size matches the 207 residences marketed",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/planning-panel/residential-flat-building-development-26"
+   },
+   {
+    "claim": "Site bought for about AUD 110.5m with approved plans (2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/sekisui-buys-st-leonards-development-site-for-waterstone-apartments"
+   },
+   {
+    "claim": "Construction started (sod turning Oct 2025), builder Decode",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/sekisui-house-australia-breaks-ground-at-waterstone-st-leonards-following-positive-sales-results"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+   },
+   {
+    "claim": "1BR from AUD 1,075,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+   },
+   {
+    "claim": "Sales above AUD 52m at groundbreaking",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/sekisui-house-australia-breaks-ground-at-waterstone-st-leonards-following-positive-sales-results"
+   },
+   {
+    "claim": "Sekisui House Australia delivered West Village One, Brisbane (322 apartments)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sustainablebuildingawards.com.au/multiple-dwelling-2019/west-village-one"
+   },
+   {
+    "claim": "Over 2.6 million homes delivered globally and 4 Gold Star iCIRT rating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+   },
+   {
+    "claim": "Bedroom range 1-3BR (editorial copy also mentions 4BR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+   },
+   {
+    "claim": "Deposit protected in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sydney, Australia (parent Sekisui House Ltd, Osaka, Japan)",
+   "developer_company": "Sekisui House Australia (subsidiary of Sekisui House Ltd)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Sekisui House Ltd listed on Tokyo Stock Exchange (not checked in a filing)",
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 64,
+   "size_max_m2": 123,
+   "price_min": 1075000,
+   "price_max": 2300000,
+   "currency": "AUD",
+   "deposit_pct": 2.5,
+   "payment_plan": "2.5% deposit offer or deposit bond; balance at settlement",
+   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated on listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "heated pool",
+    "spa",
+    "gym",
+    "sauna",
+    "residents lounge",
+    "BBQ area",
+    "playground",
+    "pet wash bay"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Lane Cove Council / Sydney North Planning Panel",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "hyde-metropolitan-deicorp",
+  "name": "Hyde Metropolitan",
+  "developer": "Deicorp",
+  "area": "Sydney CBD (Hyde Park)",
+  "country": "Australia",
+  "market": "Sydney",
+  "url": "https://hydemetropolitan.com.au",
+  "docs_url": "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000",
+  "permit_number": "D/2022/495",
+  "docs_listed": [
+   "DA D/2022/495 approved by Central Sydney Planning Committee 17 Aug 2023 (council decision PDF)",
+   "168 residences, 51-55 storeys, about 200 m",
+   "1BR from AUD 1,480,000, 2BR from 3,270,000, 3BR from 5,070,000 (listing)",
+   "completion late 2027 (listing)",
+   "10-year latent defects insurance (listing)",
+   "construction update video link on developer site, no dated text",
+   "brochure dated May 2025"
+  ],
+  "note": "168-residence tower at 133-141 Liverpool Street on Hyde Park, approved under D/2022/495 by the Central Sydney Planning Committee on 17 Aug 2023; Polding Centre demolition finished by July 2025 and basement excavation followed, while the apartments.com.au listing still says pre-construction and late 2027; 1-bed from AUD 1,480,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1480000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "D/2022/495",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Deicorp: over 12,000 homes across 40 Sydney suburbs since 1999 (developer site and listing)",
+   "units": 168,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "City of Sydney printed decision: D/2022/495, 133-141 Liverpool Street, consent granted unanimously by the Central Sydney Planning Committee on 17 Aug 2023, with a AUD 398,250 site rectification bank guarantee condition",
+   "escrow": null,
+   "progress": "Wikipedia (citing press) says demolition finished by July 2025 and six-level basement excavation was due to end Nov 2025; realcommercial.com.au reported work about to start; developer site has a construction update video but no dated text or %; listing says pre-construction",
+   "plans": "Floor plans only via brochure",
+   "record": "Deicorp says 12,000+ homes across 40 Sydney suburbs since 1999; SBS (2016) independently names Deicorp as developer of the completed Star Printery apartments, Erskineville",
+   "returns": "No yield or guarantee"
+  },
+  "positives": [
+   "DA number published",
+   "10-year latent defects insurance stated",
+   "Prices published per bedroom type"
+  ],
+  "flags": [
+   {
+    "text": "SBS reported in 2016 that the owners corporation of Deicorp's Star Printery building in Erskineville took Deicorp to the NSW Supreme Court over alleged defects; Deicorp disputed the claims and later said an in-principle agreement had been reached.",
+    "source": "https://www.sbs.com.au/news/article/alarm-after-blocks-developer-taken-to-court-for-alleged-shoddy-work/bbh8sseap"
+   }
+  ],
+  "sources": [
+   "https://hydemetropolitan.com.au",
+   "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000",
+   "https://production-urban-next-git-ude-461-urban-ninja.vercel.app/news/qld/morris-releases-second-tower-at-crest-broadbeach-after-tower-one-sales-success",
+   "https://meetings.cityofsydney.nsw.gov.au/documents/d4554/Printed decision Development Application 133-141 Liverpool Street Sydney - D2022495.pdf?T=5",
+   "https://en.wikipedia.org/wiki/Hyde_Metropolitan",
+   "https://realcommercial.com.au/news/sydneys-apartments-back-on-song-as-city-tower-kicks-off",
+   "https://www.sbs.com.au/news/article/alarm-after-blocks-developer-taken-to-court-for-alleged-shoddy-work/bbh8sseap"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development consent D/2022/495 granted",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://meetings.cityofsydney.nsw.gov.au/documents/d4554/Printed decision Development Application 133-141 Liverpool Street Sydney - D2022495.pdf?T=5"
+   },
+   {
+    "claim": "Consent covers residential levels up to Level 54",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://meetings.cityofsydney.nsw.gov.au/documents/d4554/Printed decision Development Application 133-141 Liverpool Street Sydney - D2022495.pdf?T=5"
+   },
+   {
+    "claim": "Construction stage: demolition complete, excavation under way (2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Hyde_Metropolitan"
+   },
+   {
+    "claim": "Project is pre-construction (listing status)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Hyde_Metropolitan"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000"
+   },
+   {
+    "claim": "Site bought by Deicorp in 2021 for over AUD 200m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Hyde_Metropolitan"
+   },
+   {
+    "claim": "1BR from AUD 1,480,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000"
+   },
+   {
+    "claim": "Over 12,000 homes delivered across 40 Sydney suburbs since 1999",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hydemetropolitan.com.au"
+   },
+   {
+    "claim": "Deicorp developed and completed Star Printery, Erskineville",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sbs.com.au/news/article/alarm-after-blocks-developer-taken-to-court-for-alleged-shoddy-work/bbh8sseap"
+   },
+   {
+    "claim": "10-year latent defects insurance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hydemetropolitan.com.au"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1999,
+   "developer_hq": "Sydney, Australia",
+   "developer_company": "Deicorp (founder Fouad Deiri); legal entity not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 12000,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1480000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated by developer)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "concierge lobbies",
+    "20m podium pool",
+    "podium terrace",
+    "Skybar",
+    "wellness facilities",
+    "proposed ground-floor restaurant"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Sydney / Central Sydney Planning Committee",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "mountain-oak-queenstown-safari-group",
+  "name": "Mountain Oak Apartments",
+  "developer": "Safari Group",
+  "area": "Frankton, Queenstown",
+  "country": "New Zealand",
+  "market": "New Zealand",
+  "url": "https://auckland.bayleys.co.nz/projects/mountain-oak",
+  "docs_url": "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand",
+  "permit_number": null,
+  "docs_listed": [
+   "141 apartments over five levels (16x1BR, 20x1BR flexi, 25x2BR, 15x2BR flexi, 4x3BR, 54 dual-key, 3 penthouses, 4 private-entry)",
+   "from NZD 639,000 (1BR flexi 54-57 m2)",
+   "OIO exemption certificate mentioned by agent (no number); LINZ register shows certificate 202400752",
+   "365-day visitor accommodation consent stated",
+   "construction began June 2025, completion mid-2027",
+   "gross yield up to 12% illustrative (Bayleys) / up to 15% appraisal modelling; optional management with 60% of income to owner"
+  ],
+  "note": "141 visitor-accommodation apartments at 36 Red Oaks Drive, Remarkables Park, formerly planned as a TRYP hotel; LINZ granted Overseas Investment exemption certificate 202400752 (29 Nov 2024) letting non-residents buy up to 60% of units before completion. Construction began June 2025 with completion mid-2027; from NZD 639,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 639000,
+   "currency": "NZD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Safari Group: more than 2,000 hotel and residential units delivered in NZ; fifth Queenstown development (apartments.com.au, Mar 2026)",
+   "units": 141,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "LINZ exemption certificate register and notice of decision: case 202400752, holder T35 Trust Company Limited, 141 dwellings at Mount Oak, 36 Red Oaks Drive, Frankton, granted 29 Nov 2024. ODT reports resource consent already held (no consent number). Neither number is published on the agent pages, so disclosure stays false",
+   "escrow": null,
+   "progress": "apartments.com.au (Mar 2026) says construction started June 2025; ODT earlier reported a planned April/May start and roughly two-year build; no figure or dated photos",
+   "plans": "No floor plans published",
+   "record": "ODT names Safari Group's earlier Queenstown hotels: Ramada Remarkables Park, Wyndham Garden, La Quinta by Wyndham (opened 2020) and Ramada Queenstown Central; 2,000+ units claim is developer-sourced",
+   "returns": "Yields of up to 12% (Bayleys, footnoted assumptions) and up to 15% (appraisal modelling) advertised as illustrative; not guaranteed"
+  },
+  "positives": [
+   "Legal route for overseas buyers stated",
+   "365-day visitor accommodation consent"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand",
+   "https://auckland.bayleys.co.nz/projects/mountain-oak",
+   "https://www.linz.govt.nz/overseas-investment/discover/exemptions/registers-exemptions/register-exemption-certificates-for-large-residential-developments",
+   "https://linz.govt.nz/sites/default/files/2024-12/Notice%20of%20decision%20-%20202400752%20-%20Exemption.pdf",
+   "https://odt.co.nz/node/3165381",
+   "https://odt.co.nz/node/3219998"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "OIO exemption certificate lets non-residents buy",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://linz.govt.nz/sites/default/files/2024-12/Notice%20of%20decision%20-%20202400752%20-%20Exemption.pdf"
+   },
+   {
+    "claim": "Overseas buyers can purchase any apartment",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://linz.govt.nz/sites/default/files/2024-12/Notice%20of%20decision%20-%20202400752%20-%20Exemption.pdf"
+   },
+   {
+    "claim": "141 dwellings in one building at 36 Red Oaks Drive",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.linz.govt.nz/overseas-investment/discover/exemptions/registers-exemptions/register-exemption-certificates-for-large-residential-developments"
+   },
+   {
+    "claim": "Resource consent held for the building",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://odt.co.nz/node/3165381"
+   },
+   {
+    "claim": "365-day visitor accommodation consent",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://auckland.bayleys.co.nz/projects/mountain-oak"
+   },
+   {
+    "claim": "Construction commenced June 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand"
+   },
+   {
+    "claim": "Completion mid-2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand"
+   },
+   {
+    "claim": "Prices from NZD 639,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://odt.co.nz/node/3219998"
+   },
+   {
+    "claim": "Safari Group built and operates earlier Remarkables Park hotels (Ramada, Wyndham Garden, La Quinta)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://odt.co.nz/node/3219998"
+   },
+   {
+    "claim": "More than 2,000 hotel and residential units delivered in NZ",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand"
+   },
+   {
+    "claim": "Gross yield up to 12% (Bayleys) or up to 15% (appraisal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://auckland.bayleys.co.nz/projects/mountain-oak"
+   },
+   {
+    "claim": "Deposits held in solicitor trust account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://auckland.bayleys.co.nz/projects/mountain-oak"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "New Zealand",
+   "developer_company": "Safari Group (owner Rob Neil); OIO exemption holder T35 Trust Company Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 2000,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR flexi",
+    "2BR",
+    "2BR flexi",
+    "3BR",
+    "2BR dual-key",
+    "penthouse"
+   ],
+   "size_min_m2": 54,
+   "size_max_m2": null,
+   "price_min": 639000,
+   "price_max": 1500000,
+   "currency": "NZD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Overseas buyers allowed under OIO exemption certificate 202400752 for up to 60% of units, bought before completion, not to be occupied without separate consent",
+   "rental_programme": "Optional management model, owner receives 60% of annual income; yields up to 12-15% illustrative",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "on-site building manager",
+    "ground-level parking (113 spaces)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Queenstown Lakes District Council (resource and building consent); LINZ Overseas Investment Office for foreign purchase exemption",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "wandsworth-mills-st-george",
+  "name": "Wandsworth Mills (The Artisan Tower)",
+  "developer": "St George (Berkeley Group)",
+  "area": "Wandsworth",
+  "country": "United Kingdom",
+  "market": "London",
+  "url": "https://search.savills.com/property-detail/gbCSRDLAD260602",
+  "docs_url": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills",
+  "permit_number": null,
+  "docs_listed": [
+   "375 homes in 7 buildings on 3.4-acre riverside site (former Ram Brewery)",
+   "Artisan Tower GBP 630,000-1,510,000 (developer)",
+   "1BR 50 m2 GBP 620,000 (Savills)",
+   "completion 2027 (Q2-Q3)",
+   "leasehold to 3025",
+   "service charge GBP 6.52-6.86/sq ft",
+   "GBP 5,000 reservation fee",
+   "development guide, site plan and location map downloads (no floor plans)"
+  ],
+  "note": "St George's 375-home scheme on the former Ram Brewery site by the River Wandle, built under the 2013 Ram Brewery consent 2012/5286 (with later amendments, e.g. 2023/4764); Berkeley bought the site in 2022 and moved it into work in progress in FY2025. The Artisan Tower phase is priced GBP 630,000 to 1,510,000 with homes completing in 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 620000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Berkeley Group: 4,047 homes delivered plus 282 in JVs in the year to 30 Apr 2025 (LSE final results)",
+   "units": 375,
+   "payment_plan": "GBP 5,000 reservation fee (Savills)",
+   "price_per_m2": 12383
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Brownfield register data (buildcheckup mirror): site WBR/17/0027 permissioned under 2012/5286 (Phases 1-2) with NMA 2023/4764 for Building 9, permission date 16 Apr 2024; local press (Clapham Junction Insider) confirms 2012/5286 as the 2013 consent. No reference is published on developer or agent pages",
+   "escrow": null,
+   "progress": "Clapham Junction Insider (Nov 2023) reported work restarting; Berkeley's FY2025 results say Wandsworth Mills moved into work in progress; no % or dated photos on the sales pages",
+   "plans": "Not visible on pages opened",
+   "record": "Berkeley Group final results (LSE RNS, 20 Jun 2025): 4,047 homes delivered plus 282 in JVs in FY2025",
+   "returns": "No yield claims"
+  },
+  "positives": [
+   "Lease length, service charge and reservation fee disclosed",
+   "No yield promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills",
+   "https://search.savills.com/property-detail/gbCSRDLAD260602",
+   "https://primeresi.com/st-george-launches-new-wellness-led-waterside-neighbourhood-in-sw-london/",
+   "https://buildcheckup.co.uk/site/13750",
+   "https://www.cjag.org/2023/11/19/work-is-starting-again-on-the-ram-brewery-site-renamed-wandsworth-mills/",
+   "https://www.lse.co.uk/rns/final-results-cygii5tbchtewoj.html"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Site holds planning permission (2012/5286, NMA 2023/4764)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://buildcheckup.co.uk/site/13750"
+   },
+   {
+    "claim": "Consent covers 661 units while St George markets 375 homes",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.cjag.org/2023/11/19/work-is-starting-again-on-the-ram-brewery-site-renamed-wandsworth-mills/"
+   },
+   {
+    "claim": "Berkeley bought the site in 2022 (about GBP 40m)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cjag.org/2023/11/19/work-is-starting-again-on-the-ram-brewery-site-renamed-wandsworth-mills/"
+   },
+   {
+    "claim": "Construction under way (work in progress)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lse.co.uk/rns/final-results-cygii5tbchtewoj.html"
+   },
+   {
+    "claim": "Artisan Tower homes complete in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills"
+   },
+   {
+    "claim": "Prices from GBP 630,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills"
+   },
+   {
+    "claim": "Leasehold to 3025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbCSRDLAD260602"
+   },
+   {
+    "claim": "Berkeley delivered 4,047 homes in FY2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lse.co.uk/rns/final-results-cygii5tbchtewoj.html"
+   },
+   {
+    "claim": "First phase Indigo House to complete by 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cjag.org/2023/11/19/work-is-starting-again-on-the-ram-brewery-site-renamed-wandsworth-mills/"
+   },
+   {
+    "claim": "Deposit protection stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1976,
+   "developer_hq": "Cobham, Surrey, UK",
+   "developer_company": "St George plc, part of The Berkeley Group Holdings plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "The Berkeley Group Holdings plc, London Stock Exchange (BKG), audited annual results",
+   "construction_start": "2023-11",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "Manhattan",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": null,
+   "price_min": 620000,
+   "price_max": 1510000,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": "GBP 5,000 reservation fee (Savills)",
+   "foreign_ownership": "Leasehold to 3025; no restriction on foreign buyers in England",
+   "rental_programme": null,
+   "service_charge": "GBP 6.52-6.86 per sq ft per year (Savills)",
+   "brand": null,
+   "amenities": [
+    "24-hour concierge",
+    "residents lounge",
+    "gym",
+    "cinema rooms",
+    "coworking",
+    "thermal spa and Aqua Sanctuary",
+    "riverside paths"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Wandsworth Borough Council",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "cascades-three-white-city-living-st-james",
+  "name": "Cascades Three, White City Living",
+  "developer": "St James (Berkeley Group)",
+  "area": "White City",
+  "country": "United Kingdom",
+  "market": "London",
+  "url": "https://www.zoopla.co.uk/new-homes/details/73410461/",
+  "docs_url": "https://newbuildhomes.org/for-sale/london/white-city/cascades-three-&-four-white-city-living",
+  "permit_number": null,
+  "docs_listed": [
+   "Cascades Three & Four GBP 745,000-1,550,000 (developer page); from GBP 680,000 (newbuildhomes.org)",
+   "3BR 1,088 sq ft GBP 1,720,000 at GBP 1,581/sq ft (Zoopla)",
+   "999-year leasehold (newbuildhomes.org)",
+   "15% on exchange, 85% on completion",
+   "completion Q3-Q4 2027",
+   "Cascades Three floorplans brochure on developer page",
+   "service charge GBP 7,605/yr for a 3BR (Zoopla)"
+  ],
+  "note": "Latest phase of St James's 2,500-home White City Living on the former M&S site at 54 Wood Lane, built under outline permission 2014/04726/OUT as varied (2017/04377/VAR) with plot-level reserved matters; Cascades Three & Four are priced GBP 745,000 to 1,550,000 on the Berkeley page (GBP 680,000 on a portal) on a 999-year lease, with 15% due on exchange and completion Q3-Q4 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 680000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Berkeley Group: 4,047 homes delivered plus 282 in JVs in the year to 30 Apr 2025 (LSE final results); earlier White City Living phases occupied (developer page showhomes and lounges)",
+   "units": null,
+   "payment_plan": "15% on exchange, 85% on completion",
+   "price_per_m2": 17018
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "LBHF committee report (Oct 2019): White City Living at 54 Wood Lane runs under outline permission 2014/04726/OUT as varied by 2016/03907/VAR and 2017/04377/VAR, with reserved matters per plot (e.g. 2019/01300/RES, Phase 3 plots E1-E3, 518 units). Which plot reference covers Cascades Three is not published, and the developer pages give no reference",
+   "escrow": null,
+   "progress": "Only estimated completion Q3-Q4 2027; no figure or dated updates found",
+   "plans": "Cascades Three floorplans brochure linked on the Berkeley page; floor plan attached on Zoopla listing",
+   "record": "Berkeley Group final results (20 Jun 2025): 4,047 homes delivered in FY2025; White City Living named as an established development with a new phase launched",
+   "returns": "No yield language"
+  },
+  "positives": [
+   "999-year lease and payment split published",
+   "Price per sq ft disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.zoopla.co.uk/new-homes/details/73410461/",
+   "https://newbuildhomes.org/for-sale/london/white-city/cascades-three-&-four-white-city-living",
+   "https://www.rightmove.co.uk/properties/170137883",
+   "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city-living",
+   "https://democracy.lbhf.gov.uk/documents/s110718/MS White City.pdf",
+   "https://www.lse.co.uk/rns/final-results-cygii5tbchtewoj.html",
+   "https://constructionenquirer.com/2020/07/15/berkeleys-london-white-city-towers-approved"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "White City Living masterplan holds outline planning permission (2014/04726/OUT, varied 2017/04377/VAR)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.lbhf.gov.uk/documents/s110718/MS White City.pdf"
+   },
+   {
+    "claim": "Cascades Three sits on a specific approved reserved matters plot",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city-living"
+   },
+   {
+    "claim": "Over 2,500 homes across 8 acres",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city-living"
+   },
+   {
+    "claim": "Completion Q3-Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zoopla.co.uk/new-homes/details/73410461/"
+   },
+   {
+    "claim": "Prices from GBP 680,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.berkeleygroup.co.uk/developments/london/white-city/white-city-living"
+   },
+   {
+    "claim": "3BR size 1,088 sq ft (listing also says 890 sq ft)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.zoopla.co.uk/new-homes/details/73410461/"
+   },
+   {
+    "claim": "999-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newbuildhomes.org/for-sale/london/white-city/cascades-three-&-four-white-city-living"
+   },
+   {
+    "claim": "Berkeley delivered 4,047 homes in FY2025 and White City Living is an established development",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lse.co.uk/rns/final-results-cygii5tbchtewoj.html"
+   },
+   {
+    "claim": "St James is the applicant/developer for White City Living",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.lbhf.gov.uk/documents/s110718/MS White City.pdf"
+   },
+   {
+    "claim": "Deposit protection stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newbuildhomes.org/for-sale/london/white-city/cascades-three-&-four-white-city-living"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1976,
+   "developer_hq": "Cobham, Surrey, UK",
+   "developer_company": "St James Group Limited, part of The Berkeley Group Holdings plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "The Berkeley Group Holdings plc, London Stock Exchange (BKG), audited annual results",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 101,
+   "price_min": 680000,
+   "price_max": 1720000,
+   "currency": "GBP",
+   "deposit_pct": 15,
+   "payment_plan": "15% on exchange, 85% on completion",
+   "foreign_ownership": "999-year leasehold; no restriction on foreign buyers in England",
+   "rental_programme": null,
+   "service_charge": "GBP 7,605 per year for a 1,088 sq ft 3BR (Zoopla)",
+   "brand": null,
+   "amenities": [
+    "rooftop beach club with infinity pool",
+    "17m pool",
+    "gym",
+    "two cinemas",
+    "residents lounges",
+    "games room",
+    "concierge",
+    "spa"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "London Borough of Hammersmith and Fulham",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "west-gate-st-johns-waterside-renaker",
+  "name": "West Gate, St John's Waterside",
+  "developer": "Renaker",
+  "area": "St John's, Manchester city centre",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "url": "https://search.savills.com/property-detail/gbMNRDMND260031",
+  "docs_url": "https://search.savills.com/property-detail/gbMNRDMND260031",
+  "permit_number": null,
+  "docs_listed": [
+   "guide price GBP 297,500-600,000; parking GBP 30,000",
+   "1-3 bedrooms",
+   "completion Q3/Q4 2029",
+   "990-year lease from 1 Jan 2029 (conflicting expiry 3016 also shown)",
+   "service charge est. GBP 3.52/sq ft (also 'TBC'); ground rent GBP 0 (also 'TBC')",
+   "'up to 6% projected yields'",
+   "four levels of amenities, 90+ m river frontage"
+  ],
+  "note": "Renaker's West Gate at St John's Waterside, Water Street (M3 4GA), sold through Savills at GBP 297,500 to 600,000 with estimated completion Q3/Q4 2029; no planning reference, construction status or floor plans are published and the scheme could not be matched to a planning record. Savills quotes up to 6% projected yields, not guaranteed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 297500,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 990,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Renaker: Deansgate Square (1,508 units, 2019), Elizabeth Tower (484, 2022), Three60 (441, 2023), The Blade (414, 2023), Colliers Yard (559, 2023), Bankside (444, 2025) per Wikipedia; 8,500+ homes claimed by Renaker",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning reference on the Savills listing; Place North West (Mar 2026) says Renaker has consent and has started two towers north of Water Street but does not name West Gate, so the link is unconfirmed",
+   "escrow": null,
+   "progress": "No construction update; 2029 completion suggests an early stage",
+   "plans": "No floor plans on the listing",
+   "record": "Wikipedia lists Renaker's completed towers with unit counts and years (Deansgate Square 1,508 units 2019, Elizabeth Tower, Three60, The Blade, Colliers Yard, Bankside); developer claims 8,500+ homes",
+   "returns": "'Up to 6% projected yields' on Savills listing with no basis; not guaranteed"
+  },
+  "positives": [
+   "Large local developer with stated delivery record",
+   "Service charge and ground rent estimates disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://search.savills.com/property-detail/gbMNRDMND260031",
+   "https://www.three60newjackson.com/renaker",
+   "https://en.wikipedia.org/wiki/Renaker",
+   "https://www.placenorthwest.co.uk/manchester-looks-to-finish-water-street-regen-zone-with-quartet-of-towers/"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission granted for West Gate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   },
+   {
+    "claim": "Renaker holds consent and has started two towers north of Water Street",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/manchester-looks-to-finish-water-street-regen-zone-with-quartet-of-towers/"
+   },
+   {
+    "claim": "Estimated completion Q3/Q4 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   },
+   {
+    "claim": "990-year lease from 1 Jan 2029",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   },
+   {
+    "claim": "Service charge est. GBP 3.52/sq ft",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   },
+   {
+    "claim": "Guide prices GBP 297,500-600,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   },
+   {
+    "claim": "Up to 6% projected yields",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   },
+   {
+    "claim": "Renaker delivered Deansgate Square (1,508 units, 2019) and other towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Renaker"
+   },
+   {
+    "claim": "More than 8,500 new homes delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.three60newjackson.com/renaker"
+   },
+   {
+    "claim": "Deposit protection stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDMND260031"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Manchester, UK (Ancoats)",
+   "developer_company": "Renaker (founder Daren Whitaker); private company",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 8500,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 297500,
+   "price_max": 600000,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "990-year leasehold (conflicting dates on listing); no restriction on foreign buyers in England",
+   "rental_programme": "None stated; 'up to 6% projected yields'",
+   "service_charge": "Est. GBP 3.52/sq ft (also shown as TBC); insurance est. GBP 0.80/sq ft; parking GBP 100/space/yr",
+   "brand": null,
+   "amenities": [
+    "four levels of residents amenities",
+    "90+ m river frontage",
+    "1.65 acres public green space",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Manchester City Council",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ }
+]

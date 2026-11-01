@@ -1,0 +1,791 @@
+[
+ {
+  "slug": "alero-vallarta-sten",
+  "name": "ALERO Vallarta",
+  "developer": "STEN Casas del Pacifico",
+  "stage": "off-plan",
+  "area": "5 de Diciembre, downtown Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "url": "https://alerovallarta.com/",
+  "docs_url": "https://alerovallarta.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "per-type 'from' prices in MXN with USD reference",
+   "availability 11 of 26 condos (24 Sep 2026)",
+   "five unit layouts with interior and terrace m2",
+   "delivery March 2027",
+   "construction photo dated 21 Sep 2026",
+   "fideicomiso handled by sales company Unity Living",
+   "brochure and investment guide on request"
+  ],
+  "note": "26-condo pre-sale building plus 4 ground-floor shops at C. Honduras 234, three minutes' walk from the beach; studios from MXN 5,035,286 (about USD 296k) and delivery stated as March 2027. No permit, deposit protection or named past projects published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5035286,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 26,
+   "payment_plan": null,
+   "price_per_m2": 88931
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval mentioned on the project site or agent listings",
+   "escrow": "Only a fideicomiso (title trust) handled by Unity Living; no trustee, escrow or deposit protection named",
+   "progress": "Project site shows a construction photo dated 21 Sep 2026; no % or milestone log",
+   "plans": "Five unit types with interior, terrace and total m2",
+   "record": "STEN team claims 25+ years and 100+ projects around the bay, none named",
+   "returns": "Rental management offered as separate paid service; no yield or guarantee stated"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "26 condos plus 4 commercial units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Delivery in March 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Construction under way (photo dated 21 Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Stage described as pre-construction by resale agents",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tropicasa.com/en/property/alero-401/39461"
+   },
+   {
+    "claim": "Studio from MXN 5,035,286",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Agent price for unit 401 MXN 5,278,960 with HOA MXN 3,445/month",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tropicasa.com/en/property/alero-401/39461"
+   },
+   {
+    "claim": "Construction licence in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Buyer funds protected by escrow or trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "STEN Casas del Pacifico has 25+ years and 100+ projects in the bay",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Developer company registered (no legal entity or RFC published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Foreign buyers hold through fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alerovallarta.com/"
+   },
+   {
+    "claim": "Unit mix: agent FAQ says all units are 2BR while listings show studios and 1BR",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mexhome.com/dev/alero/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Puerto Vallarta, Mexico",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "commercial"
+   ],
+   "size_min_m2": 56.62,
+   "size_max_m2": 83.16,
+   "price_min": 5035286,
+   "price_max": 7528966,
+   "currency": "MXN",
+   "deposit_pct": null,
+   "payment_plan": "Not published; agents mention multiple payment options and pre-construction discounts from 12%",
+   "foreign_ownership": "Fideicomiso (bank trust) in the restricted coastal zone, handled by Unity Living",
+   "rental_programme": "Optional paid rental management by Unity Living, no figures",
+   "service_charge": "HOA MXN 3,445/month for unit 401 (agent listing)",
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "grill area",
+    "gym",
+    "central courtyard",
+    "controlled-access lobby",
+    "ground-floor shops"
+   ],
+   "lat": 20.617,
+   "lng": -105.232,
+   "permit_authority": "Municipality of Puerto Vallarta (licencia de construccion)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Per-type live availability and prices",
+   "Unit sizes split into interior and terrace m2",
+   "Dated construction photo published",
+   "Rental management sold separately, no return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alerovallarta.com/",
+   "https://mexhome.com/dev/alero/",
+   "https://tropicasa.com/en/property/alero-401/39461"
+  ]
+ },
+ {
+  "slug": "xook-temozon-norte-grupo-orve",
+  "name": "XO'OK Temozon Norte (Etapa 1)",
+  "developer": "Grupo Orve",
+  "stage": "off-plan",
+  "area": "Temozon Norte, Merida",
+  "country": "Mexico",
+  "market": "Mérida",
+  "url": "https://www.pincali.com/en/home/depto-en-venta-merida-temozon-norte-condominio-xo-ok-mod-b-dic-2028",
+  "docs_url": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "Stage 1: 112 units in two three-level towers, delivery Dec 2028 (agent listing)",
+   "Stage 2 Tower 3 brochure (Dec 2025): 72 one-bed units of 36.27 m2, delivery 2029",
+   "per-model prices in MXN",
+   "25% down payment, MXN 10,000 reservation",
+   "standard finishes list",
+   "amenity master plan (7 residential stages)"
+  ],
+  "note": "Grupo ORVE condo community in Temozon Norte planned in seven stages; Stage 1 has 112 apartments in two towers with delivery listed as December 2028, and the Stage 2 Tower 3 brochure prices one-bed units from MXN 1,942,621 with delivery 2029. No permit, escrow or construction progress published, and published delivery dates differ between sources. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1942621,
+   "currency": "MXN",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Grupo ORVE states 10,500 titled lots and 9,000+ clients since 2015 (developer brochure); no completed apartment project named",
+   "units": 112,
+   "payment_plan": "MXN 10,000 reservation, 25% down payment, balance cash or bank credit",
+   "price_per_m2": 53560
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or approval mentioned in brochure or agent listings",
+   "escrow": null,
+   "progress": "No construction status published; Stage 2 towers marked 'proximamente' on master plan",
+   "plans": "Model sizes and level only (C, C1, C2, B); no floor-plan drawings seen",
+   "record": "Brochure states 10,500 titled lots and 9,000+ clients since 2015, developer claim only",
+   "returns": "Marketing speaks of 'altos rendimientos en plusvalia' but no guaranteed income or figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Stage 1 has 112 units in two towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/depto-en-venta-merida-temozon-norte-condominio-xo-ok-mod-b-dic-2028"
+   },
+   {
+    "claim": "Stage 1 delivery December 2028 (earlier input stated 31 Mar 2028 plus up to six months)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/depto-en-venta-merida-temozon-norte-condominio-xo-ok-mod-b-dic-2028"
+   },
+   {
+    "claim": "Stage 2 Tower 3 delivery 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "Stage 2 has 72 units (brochure also says 72 per tower)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "One-bed 36.27 m2 from MXN 1,942,621",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "Two-bed 62.15 m2 at MXN 2,940,938",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/depto-en-venta-merida-temozon-norte-condominio-xo-ok-mod-b-dic-2028"
+   },
+   {
+    "claim": "Grupo ORVE founded 2015 in Yucatan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "10,500 titled lots delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "Construction licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "Buyer deposits held in escrow or trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   },
+   {
+    "claim": "Market growth claims (Amazon, Walmart, Gruma investments, +126% FDI)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Merida, Mexico",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": "2028-Q1",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 36.27,
+   "size_max_m2": 62.15,
+   "price_min": 1942621,
+   "price_max": 2940938,
+   "currency": "MXN",
+   "deposit_pct": 25,
+   "payment_plan": "MXN 10,000 reservation, 25% down, balance cash or bank credit",
+   "foreign_ownership": "Inland Yucatan, outside restricted zone: direct title (escritura) possible; not stated by developer",
+   "rental_programme": null,
+   "service_charge": "About MXN 2,000/month (agent listing)",
+   "brand": null,
+   "amenities": [
+    "central park",
+    "pools and natural pool",
+    "pet park",
+    "children's area",
+    "casa club with spa",
+    "meeting rooms",
+    "commercial zone",
+    "ORVE beach club access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Merida (licencia de construccion)",
+   "brochure_url": "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf"
+  },
+  "positives": [
+   "Per-model prices and areas published",
+   "Developer states a sizeable delivered lot track record",
+   "No guaranteed rental income advertised"
+  ],
+  "flags": [],
+  "sources": [
+   "https://assets.easybroker.com/property_files/5837047/377403/Brochure_XOOK-Torre_3-DIC25_1.pdf",
+   "https://www.pincali.com/en/home/depto-en-venta-merida-temozon-norte-condominio-xo-ok-mod-b-dic-2028"
+  ]
+ },
+ {
+  "slug": "bahia-papagayo-enjoy-grupo-laguna",
+  "name": "Bahia Papagayo Phase 1",
+  "developer": "Enjoy Group and Grupo Laguna (joint venture)",
+  "stage": "off-plan",
+  "area": "Playa Panama, Gulf of Papagayo, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "url": "https://bahiapapagayo.com/",
+  "docs_url": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "FAQ PDF: phases, deposit schedules, HOA ranges, warranties, rental rules",
+   "floor-plan PDFs for Sereno villas A-C, El Mangroove villas, Museo and Seaside condos",
+   "fact sheets per product",
+   "unit interior and exterior m2",
+   "AyA water permit stated for full master plan",
+   "legal entity Desarrollo Bahia Papagayo BP S.A."
+  ],
+  "note": "About 650 residences planned on 320 acres in the state Papagayo tourism concession; Phase 1 (72 condos, 32 villas, El Mangroove branded villas) was to start building in Q1 2026 for completion Q2-Q3 2027, but Tico Times reported in June 2026 that no trees had been cut and no construction had begun while Constitutional Chamber precautionary measures on logging and construction permits were in force. No prices published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "ICT concession in Papagayo Tourism Pole (same rights for foreigners)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Grupo Laguna: 70+ completed projects over 53 years; Enjoy Group: 7 hotels and 19+ restaurants in Costa Rica (developer FAQ)",
+   "units": 104,
+   "payment_plan": "Condos 10/10/10/15/55 (signing, 60, 120, 180 days, closing); villas 15/15/10/10/50; Solea 15/15/10/10/50 tied to land clearing, construction start and ceiling",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer cites only an AyA water permit; no SETENA or municipal number. Sala IV resolution 2025-016284 (reported by Tico Times) found SETENA had published the EIA, but in April 2026 Sala IV froze tree-felling and some construction permits in the zone",
+   "escrow": "No escrow or deposit protection mentioned; deposits up to 45-50% before closing",
+   "progress": "Only a planned start (Q1 2026 at 50% sold); no updates published. Tico Times (20 Jun 2026): no trees cut, no construction begun",
+   "plans": "Floor-plan PDFs and fact sheets for each product type on bahiapapagayo.com",
+   "record": "Developer FAQ names Grupo Laguna 70+ completed projects and Enjoy Group hotels; Tico Times describes Enjoy Hotels and Resorts as running about six domestic hotels",
+   "returns": "No rental restrictions; official rental program to be detailed 6 months before completion; no figures or guarantee"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Environmental assessment (SETENA) completed and upheld",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ticotimes.net/2025/06/18/bahia-papagayo-project-clears-hurdle-as-court-rejects-environmental-appeal"
+   },
+   {
+    "claim": "Phase 1 construction to start Q1 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law"
+   },
+   {
+    "claim": "Phase 1 completion Q2-Q3 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law"
+   },
+   {
+    "claim": "Tree-cutting permit for 748 trees granted by SINAC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ticotimes.net/2026/04/22/costa-rica-developers-challenge-court-ruling-halting-tourism-project-in-papagayo"
+   },
+   {
+    "claim": "Construction authorizations can proceed (court moratorium on felling remained in force May 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ticotimes.net/2026/05/23/costa-rica-court-keeps-papagayo-hotel-development-restrictions-in-place"
+   },
+   {
+    "claim": "Land held under the state Papagayo tourism concession administered by ICT",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law"
+   },
+   {
+    "claim": "Total investment about USD 925 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ticotimes.net/2025/06/18/bahia-papagayo-project-clears-hurdle-as-court-rejects-environmental-appeal"
+   },
+   {
+    "claim": "Enjoy Group operates 7 hotels in Costa Rica (Tico Times says about six)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law"
+   },
+   {
+    "claim": "Grupo Laguna has 70+ completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf"
+   },
+   {
+    "claim": "Land has no wetlands or mangroves (developer citing SETENA and SINAC)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ticotimes.net/2025/08/09/costa-rica-investigates-bahia-papagayo-over-illegal-logging-allegations"
+   },
+   {
+    "claim": "Water permitted by AyA for full master plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf"
+   },
+   {
+    "claim": "Developer legal entity Desarrollo Bahia Papagayo BP S.A.",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bahiapapagayo.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Costa Rica",
+   "developer_company": "Desarrollo Bahia Papagayo BP Sociedad Anonima (site footer); Enjoy Hotels & Resorts S.A. named in court reports",
+   "developer_projects_delivered": 70,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR villa",
+    "3BR villa",
+    "4BR villa",
+    "lots"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 225,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "Condos 10/10/10/15/55; villas 15/15/10/10/50",
+   "foreign_ownership": "Concession rights in the Papagayo Tourism Pole, same rights for foreigners as nationals (developer FAQ); concession term not stated",
+   "rental_programme": "No rental restrictions; Enjoy Group rental program to be announced about 6 months before completion",
+   "service_charge": "HOA USD 360-575/month condos, USD 680-950 Sereno villas, USD 750-975 Solea",
+   "brand": "El Mangroove, Autograph Collection (Marriott)",
+   "amenities": [
+    "beach access (1.5 miles)",
+    "hotel amenities at El Mangroove",
+    "village commercial center",
+    "co-working",
+    "event venue",
+    "recreation courts",
+    "heritage museum",
+    "fiber internet"
+   ],
+   "lat": 10.59,
+   "lng": -85.66,
+   "permit_authority": "ICT (concession), SETENA (environmental), SINAC (tree felling), Municipality of Carrillo (construction)",
+   "brochure_url": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf"
+  },
+  "positives": [
+   "Floor plans and fact sheets for every product published",
+   "HOA fee ranges and payment schedules published",
+   "EIA process upheld by Constitutional Chamber in 2025",
+   "1-year legal plus 5-year CFIA-linked construction warranty described"
+  ],
+  "flags": [
+   {
+    "text": "Tico Times reported that Costa Rica's Constitutional Chamber ordered a moratorium on tree-felling permits and suspended some construction authorizations in the Papagayo tourism zone in April 2026; developers asked for the measure to be lifted.",
+    "source": "https://ticotimes.net/2026/04/22/costa-rica-developers-challenge-court-ruling-halting-tourism-project-in-papagayo"
+   },
+   {
+    "text": "Tico Times reported in June 2026 that no trees had been cut and no construction had begun at Bahia Papagayo, and that a separate challenge to the 748-tree cutting permit was admitted by the Constitutional Chamber.",
+    "source": "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law"
+   },
+   {
+    "text": "Tico Times, citing La Nacion, reported in August 2025 that the Santa Cruz Environmental Prosecutor opened an investigation into alleged illegal logging linked to the concession; the developer called the complaint unfounded.",
+    "source": "https://ticotimes.net/2025/08/09/costa-rica-investigates-bahia-papagayo-over-illegal-logging-allegations"
+   }
+  ],
+  "sources": [
+   "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf",
+   "https://bahiapapagayo.com/",
+   "https://ticotimes.net/2026/04/22/costa-rica-developers-challenge-court-ruling-halting-tourism-project-in-papagayo",
+   "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law",
+   "https://ticotimes.net/2025/06/18/bahia-papagayo-project-clears-hurdle-as-court-rejects-environmental-appeal",
+   "https://ticotimes.net/2026/05/23/costa-rica-court-keeps-papagayo-hotel-development-restrictions-in-place",
+   "https://ticotimes.net/2025/08/09/costa-rica-investigates-bahia-papagayo-over-illegal-logging-allegations"
+  ]
+ },
+ {
+  "slug": "numandi-residences-consudespro-armabloque",
+  "name": "Numandi Residences",
+  "developer": "Desarrollo Condominio Numandi S.A. (Consudespro and Armabloque)",
+  "stage": "off-plan",
+  "area": "Playa Avellanas, Santa Cruz, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "url": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "floor plans 3, 4 and 5BR with m2 (agent page)",
+   "pre-construction price from USD 807,000",
+   "current agent listings USD 670,000 to 1,050,000",
+   "30% lot / 70% construction milestone payments",
+   "amenity and sustainability list",
+   "modular build, turnkey in about eight months (agent listing)"
+  ],
+  "note": "80 single-storey modular homes in three phases about 2 km from Playa Avellanas, master-planned by Gensler and built with Armabloque concrete systems; agents quote from USD 807,000 (with a 2BR land and residence listed at USD 670,000) and delivery about eight months after construction starts. No developer site, permit, escrow, HOA or completion date published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 807000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 80,
+   "payment_plan": "30% lot purchase, 70% construction payments at foundation, structure and completion milestones",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or SETENA/municipal approval mentioned on agent pages",
+   "escrow": "Not mentioned; 30% lot payment up front with no stated protection",
+   "progress": "No status or dates; agent listing shows 'year built 2026' and 'turnkey within about eight months' only",
+   "plans": "Floor plans for 3, 4 and 5BR on Terra Azul agent page; sizes conflict between plans (445-454 m2), description (375-517 m2) and FAQ",
+   "record": "Partners cite 40+ years in the region, no named deliveries",
+   "returns": "No returns advertised; page mentions investor residency threshold only"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "80 residences in three phases",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "Master plan by Gensler",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "Pre-construction from USD 807,000 (a 2BR listed at USD 670,000)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "4BR land and residence USD 958,000 on 721 m2 lot",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/4-bed-single-family-homes-for-sale-in-avellanas/17250"
+   },
+   {
+    "claim": "Home sizes 445-454 m2 (plans) vs 375-517 m2 (description)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "Turnkey delivery about eight months after start",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/4-bed-single-family-homes-for-sale-in-avellanas/17250"
+   },
+   {
+    "claim": "Developer Desarrollo Condominio Numandi S.A. is registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "Partners have 40+ years of regional experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "Construction permits granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   },
+   {
+    "claim": "80% of secondary forest conserved, on-site wastewater plant",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Costa Rica",
+   "developer_company": "Desarrollo Condominio Numandi S.A. (no registration number published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR"
+   ],
+   "size_min_m2": 375,
+   "size_max_m2": 517,
+   "price_min": 670000,
+   "price_max": 1050000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% lot purchase, 70% at construction milestones",
+   "foreign_ownership": "Not stated (Costa Rica allows foreign freehold outside the maritime zone)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool and jacuzzi per home",
+    "clubhouse pool",
+    "coworking",
+    "gym",
+    "tennis and padel",
+    "futbol 5",
+    "open-air cinema",
+    "BBQ ranchos"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Santa Cruz (construction), SETENA (environmental)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans published",
+   "Milestone-linked construction payments (70% after lot)",
+   "No guaranteed returns advertised"
+  ],
+  "flags": [],
+  "sources": [
+   "https://terraazulrealestate.com/numandi-residences-playa-avellanas/",
+   "https://www.dominicalrealty.com/property/4-bed-single-family-homes-for-sale-in-avellanas/17250"
+  ]
+ }
+]

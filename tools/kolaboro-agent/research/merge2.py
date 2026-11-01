@@ -6,7 +6,7 @@ from merge import clean, norm_seed, disclosure, fix_progress, ACCT
 sys.path.insert(0, '/home/claude/ws-main/tools/kolaboro-agent')
 from discover import similar
 
-R2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'round2')
+R2 = os.environ.get('KB_ROUND_DIR') or os.path.join(os.path.dirname(os.path.abspath(__file__)), 'round2')
 LV = ('registry', 'independent', 'developer', 'contradicted', 'none')
 
 

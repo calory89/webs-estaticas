@@ -1,0 +1,2971 @@
+[
+ {
+  "slug": "nautica-residences-cancun-nauma",
+  "name": "Nautica Residences by Naúma",
+  "developer": "Naúma Development Group",
+  "area": "Laguna Nichupté, Cancún",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "url": "https://gmb.com.mx/nautica-residences/",
+  "docs_url": "https://nauticaresidencescancun.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "2 towers of 20 floors",
+   "unit sizes 71 to 259 m2",
+   "delivery Tower A Aug 2028, Tower B Dec 2029 (sales agent GMB)",
+   "price from MXN 6.7M (GMB)",
+   "amenity list"
+  ],
+  "note": "Two-tower Nautica-branded condo project on Laguna Nichupté; groundbreaking held 1 Dec 2025 and sales agent GMB lists delivery Aug 2028 (Tower A) and Dec 2029 (Tower B) from MXN 6.7M. No licence number, fideicomiso or PROFECO contract number published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 6700000,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted coastal zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 400,
+   "payment_plan": null,
+   "price_per_m2": 94366,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer FAQ says the project 'complies with all required legal permits'; no licence number published",
+   "escrow": null,
+   "progress": "Groundbreaking (Primera Piedra) ceremony 1 Dec 2025 reported by Central Municipal and Eje Central; no % published",
+   "plans": "Only unit sizes and renders; no floor plans on developer site",
+   "record": "Developer claims 20+ years and Naúma Interlomas but names no delivered projects or units",
+   "returns": "Developer site states no returns; agent Maya Ocean shows a projected 8-12% ROI, not 'guaranteed'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "First phase of two towers, 200 units each (400)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://elceo.com/negocios/cancun-recibira-una-inversion-inmobiliaria-por-5000-millones-de-pesos/"
+   },
+   {
+    "claim": "Agent listing shows 319 units",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mayaocean.com/complex/nautica-residences"
+   },
+   {
+    "claim": "Investment of MXN 5,000 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://elceo.com/negocios/cancun-recibira-una-inversion-inmobiliaria-por-5000-millones-de-pesos/"
+   },
+   {
+    "claim": "68 units sold at showroom opening (17% of phase 1)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.razon.com.mx/negocios/2025/02/21/nautica-residences-rompe-record-en-cancun-con-la-mayor-venta-en-showroom-de-la-historia/"
+   },
+   {
+    "claim": "Construction started (Primera Piedra 1 Dec 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centralmunicipal.mx/noticias/2025/12/01/nautica-residences-inicia-etapa-constructiva-y-lanza-comercializacion-de-su-torre-2/"
+   },
+   {
+    "claim": "First tower delivery summer 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gmb.com.mx/nautica-residences/"
+   },
+   {
+    "claim": "Project has all legal permits",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nauticaresidencescancun.com/"
+   },
+   {
+    "claim": "Backed by Gicsa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nauticaresidencescancun.com/"
+   },
+   {
+    "claim": "Developer has 20+ years of experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nauticaresidencescancun.com/"
+   },
+   {
+    "claim": "Foreign buyers acquire through bank fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sucasacancun.com/property/nautica-residences-departamentos-cancun/"
+   },
+   {
+    "claim": "Projected ROI 8-12% per year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mayaocean.com/complex/nautica-residences"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mexico City / Cancún, Mexico",
+   "construction_start": "2025-12",
+   "handover_promised": "2028-Q3",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "garden house",
+    "penthouse"
+   ],
+   "size_min_m2": 71,
+   "size_max_m2": 259,
+   "price_min": 5840000,
+   "price_max": 22460000,
+   "currency": "MXN",
+   "foreign_ownership": "Bank fideicomiso (restricted coastal zone)",
+   "rental_programme": "Hotel living services; no rental programme terms published",
+   "brand": "Nautica (Authentic Brands Group)",
+   "amenities": [
+    "private beach club Costa Mujeres",
+    "rooftop infinity pool",
+    "spa",
+    "padel and tennis",
+    "kids club",
+    "coworking",
+    "cinema",
+    "gym"
+   ],
+   "lat": 21.119,
+   "lng": -86.834,
+   "permit_authority": "Municipio de Benito Juárez (Dirección de Desarrollo Urbano)",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Groundbreaking and sales milestones covered by national press",
+   "Delivery dates per tower published by sales agent",
+   "No guaranteed-return language on developer site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://nauticaresidencescancun.com/",
+   "https://nauticaresidencescancun.com/history/",
+   "https://gmb.com.mx/nautica-residences/",
+   "https://www.ejecentral.com.mx/nuestro-eje/nautica-residences-avanza-a-nueva-fase-con-primera-piedra-y-lanzamiento-de-su-torre-2",
+   "https://www.pincali.com/inmueble/departamento-en-venta-nautica-residences-cancun-para-estrenar",
+   "https://elceo.com/negocios/cancun-recibira-una-inversion-inmobiliaria-por-5000-millones-de-pesos/",
+   "https://mayaocean.com/complex/nautica-residences",
+   "https://www.razon.com.mx/negocios/2025/02/21/nautica-residences-rompe-record-en-cancun-con-la-mayor-venta-en-showroom-de-la-historia/",
+   "https://centralmunicipal.mx/noticias/2025/12/01/nautica-residences-inicia-etapa-constructiva-y-lanza-comercializacion-de-su-torre-2/",
+   "https://sucasacancun.com/property/nautica-residences-departamentos-cancun/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "mondrian-residences-cancun-murano",
+  "name": "Mondrian Residences Cancún (Grand Island)",
+  "developer": "Murano Global Investments PLC (Grupo Murano)",
+  "area": "Hotel Zone, Blvd. Kukulkán km 16.6, Cancún",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "url": "https://mondrianresidencescancun.com.mx/pressrelease/",
+  "docs_url": "https://mondrianresidencescancun.com.mx/pressrelease/",
+  "permit_number": null,
+  "docs_listed": [
+   "availability and pricing table by model (USD)",
+   "unit areas 70 to 129 m2 by prototype",
+   "construction about 80% (Jun 2026 press release)",
+   "rental management programme with Accor One Living",
+   "press releases"
+  ],
+  "note": "328 Mondrian-branded residences beside a 400-room hotel in Cancún's Hotel Zone, launched 15 Jun 2026 at a stated 80% construction, from about USD 525k; agents quote delivery Q1 to Q2 2028. Developer's SEC 20-F for 2025 reports going-concern doubt and loan defaults. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 525750,
+   "currency": "USD",
+   "title": "fideicomiso (restricted coastal zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 80,
+   "developer_delivered": "Operates Grand Island Cancún hotel (GIC I) and Andaz Insurgentes 421 in Mexico City per SEC 20-F",
+   "units": 328,
+   "payment_plan": "30% at signing / 20% over 12 months / 50% at delivery (sales agent Rivana)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Murano press release 15 Jun 2026: 'currently at 80% construction'",
+   "plans": "Pricing table with areas per prototype; agents publish unit layouts with interior and terrace m2",
+   "record": "SEC 20-F FY2025 describes operating hotels in Cancún (GIC I) and Insurgentes 421, Mexico City",
+   "returns": "Rental management programme offered; developer states no return figure. Agent Rivana advertises 'projected appreciation of 18-25%', not guaranteed"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Nasdaq-listed Murano Global Investments PLC filing with the SEC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/ef20060687_20f.htm"
+   },
+   {
+    "claim": "Residential project at 80% construction (Jun 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.muranoinvestors.com/en/investors/news/12/"
+   },
+   {
+    "claim": "GIC I second phase (616 hotel rooms) finished by end 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/R7.htm"
+   },
+   {
+    "claim": "Delivery March 2028 / Q2 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inmx.com/quintana-roo/cancun/mondrian-residences-cancun/eng.html"
+   },
+   {
+    "claim": "328 residences plus 400-room hotel",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brandedresi.com/mondrian-residences-cancun/"
+   },
+   {
+    "claim": "Price from USD 525,750",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nautilusrealestate.mx/cancun/grand-island-en"
+   },
+   {
+    "claim": "Developer is financially sound to complete",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/R7.htm"
+   },
+   {
+    "claim": "Units of the Grand Island complex free of encumbrance",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.muranoinvestors.com/en/investors/news/19/"
+   },
+   {
+    "claim": "Foreign buyer holds through fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nautilusrealestate.mx/cancun/grand-island-en"
+   },
+   {
+    "claim": "Projected appreciation 18-25% before delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rivanaproperties.com/en/presale"
+   },
+   {
+    "claim": "Developer group uses Mexican trusts (Fideicomiso Murano 2000/4000) to hold the Cancún complex",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/R7.htm"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Mexico City, Mexico",
+   "developer_company": "Murano Global Investments PLC (SEC CIK 1988776), Mexican holding Murano PV, S.A. de C.V.",
+   "listed_or_audited": "Nasdaq (MRNO); audited IFRS statements in Form 20-F",
+   "handover_promised": "2028-Q2",
+   "unit_types": [
+    "loft",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse",
+    "villa"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 186,
+   "price_min": 525750,
+   "price_max": 967500,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30/20/50 (agent)",
+   "foreign_ownership": "Bank fideicomiso",
+   "rental_programme": "Hotel-managed rental pool with Accor One Living; no figures from developer",
+   "brand": "Mondrian (Ennismore / Accor)",
+   "amenities": [
+    "private beach club",
+    "three pools",
+    "spa",
+    "fitness",
+    "kids and teens clubs",
+    "marina",
+    "padel and pickleball",
+    "restaurants"
+   ],
+   "lat": 21.075,
+   "lng": -86.776,
+   "permit_authority": "Municipio de Benito Juárez",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Developer files audited accounts with the SEC",
+   "Model-by-model price table published",
+   "Structure largely built per developer"
+  ],
+  "flags": [
+   {
+    "text": "Murano's 2025 Form 20-F reports substantial doubt about its ability to continue as a going concern and defaults on several loans, including missed interest on its USD 300M 2031 notes.",
+    "source": "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/R7.htm"
+   },
+   {
+    "text": "Murano reported in Oct 2026 that it agreed to transfer Private Unit 3 of the Grand Island Cancún complex to a creditor as payment in kind and is discussing transferring Private Unit 4; it also says the notes were restructured in Aug 2026.",
+    "source": "https://www.muranoinvestors.com/en/investors/news/19/"
+   },
+   {
+    "text": "Stock Titan summary of the 20-F notes litigation by certain creditors.",
+    "source": "https://www.stocktitan.net/sec-filings/MRNO/20-f-murano-global-investments-plc-files-annual-report-foreign-issuer-fa235d46b6d0.html"
+   }
+  ],
+  "sources": [
+   "https://mondrianresidencescancun.com.mx/pressrelease/",
+   "https://www.muranoinvestors.com/en/investors/news/12/",
+   "https://emprefinanzas.com.mx/2026/06/24/las-branded-residences-ganan-terreno-en-mexico-lanzan-328-residencias-en-cancun/",
+   "https://rivanaproperties.com/en/journal/mondrian-residences-grand-island-cancun-guide",
+   "https://latecheckout.travel/residences/mondrian-residences-cancun",
+   "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/ef20060687_20f.htm",
+   "https://www.sec.gov/Archives/edgar/data/1988776/000114036126021583/R7.htm",
+   "https://inmx.com/quintana-roo/cancun/mondrian-residences-cancun/eng.html",
+   "https://brandedresi.com/mondrian-residences-cancun/",
+   "https://www.nautilusrealestate.mx/cancun/grand-island-en",
+   "https://www.muranoinvestors.com/en/investors/news/19/",
+   "https://rivanaproperties.com/en/presale",
+   "https://rpca.profeco.gob.mx/",
+   "https://www.stocktitan.net/sec-filings/MRNO/20-f-murano-global-investments-plc-files-annual-report-foreign-issuer-fa235d46b6d0.html"
+  ]
+ },
+ {
+  "slug": "ocean-tulum-grupo-vinsa",
+  "name": "Ocean Tulum",
+  "developer": "Grupo VINSA Construcción y Gerencia de Proyectos, S.A. de C.V. (Vinsa Desarrollos)",
+  "area": "La Veleta, Tulum",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "url": "https://oceantulum.mx/",
+  "docs_url": "https://oceantulum.mx/",
+  "permit_number": null,
+  "docs_listed": [
+   "presale condos under condo-hotel model",
+   "20+ amenities",
+   "official statement to clients (Jun 2026)",
+   "address and contacts"
+  ],
+  "note": "272-unit condo-hotel complex marketed since 2022 whose structure is reported stalled; on 6 Aug 2026 Quintana Roo's SEDETUS and Tulum city hall warned the public not to buy, saying it lacks required permits, while the website still advertises presale units. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted coastal zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 272,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence published; SEDETUS public warning says the project lacks required permits and authorizations",
+   "escrow": null,
+   "progress": "No progress published; developer's Jun 2026 statement only mentions steps to allow construction to resume",
+   "plans": null,
+   "record": null,
+   "returns": "Website says the property 'genera altos rendimientos' through the condo-hotel model; no guarantee or figure stated"
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has the permits required to be sold",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.rivieramayanews.mx/authorities-warn-buyers-away-from-ocean-tulum-over-missing-permits/"
+   },
+   {
+    "claim": "Responsible company is Grupo VINSA Construcción y Gerencia de Proyectos, S.A. de C.V.",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lajornadamaya.mx/quintanaroo/266834/sedetus-alerta-a-la-poblacion-sobre-proyecto-inmobiliario-en-tulum-que-no-cumple-con-la-ley"
+   },
+   {
+    "claim": "Construction in progress toward delivery",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://tulumtimes.com/ocean-tulum-buyers-accuse-grupo-vinsa"
+   },
+   {
+    "claim": "First stage due over two years ago (units sold from 2022)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tulumtimes.com/ocean-tulum-buyers-accuse-grupo-vinsa"
+   },
+   {
+    "claim": "272 apartments, studios and penthouses",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.rivieramayanews.mx/authorities-warn-buyers-away-from-ocean-tulum-over-missing-permits/"
+   },
+   {
+    "claim": "Project subject to judicial and administrative proceedings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elpuntosobrelai.com/gobierno-de-quintana-roo-alerta-sobre-desarrollo-inmobiliario-en-tulum-pide-no-comprar-ni-rentar-en-ocean-tulum/"
+   },
+   {
+    "claim": "Condo-hotel model generates high returns",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceantulum.mx/"
+   },
+   {
+    "claim": "Company working to resume construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceantulum.mx/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Playa del Carmen, Mexico",
+   "developer_company": "Grupo VINSA Construcción y Gerencia de Proyectos, S.A. de C.V.",
+   "construction_start": null,
+   "original_handover": "first stage due by 2024 per buyers (Tulum Times)",
+   "unit_types": [
+    "studio",
+    "apartment",
+    "penthouse"
+   ],
+   "foreign_ownership": "Fideicomiso (restricted zone)",
+   "rental_programme": "Condo-hotel rental programme, no figures",
+   "amenities": [
+    "2,100 m2 pool with artificial beach",
+    "underground parking",
+    "restaurants",
+    "commercial area"
+   ],
+   "lat": 20.205,
+   "lng": -87.47,
+   "permit_authority": "Municipio de Tulum (Dirección General de Desarrollo Urbano) and SEDETUS Quintana Roo",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "handover_promised": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Developer published a written statement to buyers (Jun 2026)"
+  ],
+  "flags": [
+   {
+    "text": "On 6 Aug 2026 SEDETUS and the Tulum municipal government issued a public warning against buying, selling or renting at Ocean Tulum, saying it lacks required permits and is subject to judicial and administrative proceedings.",
+    "source": "https://www.lajornadamaya.mx/quintanaroo/266834/sedetus-alerta-a-la-poblacion-sobre-proyecto-inmobiliario-en-tulum-que-no-cumple-con-la-ley"
+   },
+   {
+    "text": "Tulum Times reported buyers saying units sold from 2022 remain undelivered, the site was inactive, and a refund agreement went unpaid; buyers filed Profeco complaints. The company has not publicly answered the accusations.",
+    "source": "https://tulumtimes.com/ocean-tulum-buyers-accuse-grupo-vinsa"
+   }
+  ],
+  "sources": [
+   "https://oceantulum.mx/",
+   "https://oceantulum.mx/terminos-y-condiciones-de-uso/",
+   "https://tulumtimes.com/tulum-authorities-flag-ocean-tulum-development-warning",
+   "https://www.rivieramayanews.mx/authorities-warn-buyers-away-from-ocean-tulum-over-missing-permits/",
+   "https://www.lajornadamaya.mx/quintanaroo/266834/sedetus-alerta-a-la-poblacion-sobre-proyecto-inmobiliario-en-tulum-que-no-cumple-con-la-ley",
+   "https://tulumtimes.com/ocean-tulum-buyers-accuse-grupo-vinsa",
+   "https://www.elpuntosobrelai.com/gobierno-de-quintana-roo-alerta-sobre-desarrollo-inmobiliario-en-tulum-pide-no-comprar-ni-rentar-en-ocean-tulum/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "viceroy-residences-playa-del-carmen-related-simca",
+  "name": "Viceroy Residences Playa del Carmen",
+  "developer": "Related Group with SIMCA Desarrollos (developer of record: Banco Monex as trustee of fideicomiso F/12238)",
+  "area": "Calle 32-34 Norte, Gonzalo Guerrero, Playa del Carmen",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "off-plan",
+  "url": "https://viceroyplayadelcarmen.com/floor-plans/",
+  "docs_url": "https://viceroyplayadelcarmen.com/floor-plans/",
+  "permit_number": null,
+  "docs_listed": [
+   "downloadable floor plans per residence type with interior and terrace m2",
+   "legal disclaimer naming fideicomiso F/12238 at Banco Monex as developer",
+   "Phase 1 price list (via agent Nautilus)"
+  ],
+  "note": "Two-phase, 375-residence Viceroy-branded beachfront project launched May 2026 by Related Group and SIMCA; Phase 1 one-bedrooms from about MXN 7.0M and delivery targeted Sep 2029. The brochure names a Monex fideicomiso as developer but says construction is subject to first obtaining permits. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 7006986,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted coastal zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Developer of record is Banco Monex, S.A. acting as trustee of fideicomiso F/12238 (brochure disclaimer); no statement that buyer deposits are held in it",
+   "progress_pct": null,
+   "developer_delivered": "SIMCA cited with about 18 projects in Playa del Carmen; Related Group cited with 120,000+ residences (agent and press articles)",
+   "units": 375,
+   "payment_plan": null,
+   "price_per_m2": 122195,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Brochure states all construction is 'subject to first obtaining the appropriate governmental permits and approvals'; no licence number",
+   "escrow": "Brochure names Banco Monex trustee of fideicomiso F/12238 as the developer entity",
+   "progress": "Pre-construction; no progress published",
+   "plans": "Floor plans page with downloadable PDFs per residence",
+   "record": "Related and SIMCA track record cited by agents and press, not on developer site",
+   "returns": "Brochure says no representation is made on rental income or appreciation"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is a Banco Monex trust, fideicomiso F/12238",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://viceroyplayadelcarmen.com/wp-content/uploads/2026/05/M1.pdf"
+   },
+   {
+    "claim": "Construction permits obtained",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://viceroyplayadelcarmen.com/wp-content/uploads/2026/05/M1.pdf"
+   },
+   {
+    "claim": "375 residences in two phases (200 + 175)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lprluxury.com/jorge-perez-brings-viceroy-to-playa-del-carmen-the-riviera-mayas-first-urban-beachfront-branded-residence/"
+   },
+   {
+    "claim": "Investment of USD 300M with Grupo Hotelero Santa Fe as partner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://forbes.com.mx/ad-viceroy-residences-playa-del-carmen-la-apuesta-por-elevar-el-lujo-residencial-en-la-riviera-maya/"
+   },
+   {
+    "claim": "Official launch event held June 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hola.com/us-es/lifestyle/20260611905385/viceroy-residences-playa-del-carmen-lanzamiento-oficial/"
+   },
+   {
+    "claim": "Delivery September 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lprluxury.com/jorge-perez-brings-viceroy-to-playa-del-carmen-the-riviera-mayas-first-urban-beachfront-branded-residence/"
+   },
+   {
+    "claim": "Phase 1 price list: 125 units from MXN 7,006,986",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nautilusrealestate.mx/blog/viceroy-playa-del-carmen-price-list-2026-en"
+   },
+   {
+    "claim": "Related Group has developed 120,000+ residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lprluxury.com/jorge-perez-brings-viceroy-to-playa-del-carmen-the-riviera-mayas-first-urban-beachfront-branded-residence/"
+   },
+   {
+    "claim": "Viceroy brand used under licence; Viceroy Hotels does not develop or sell",
+    "status": "verified",
+    "by": "none",
+    "source": "https://viceroyplayadelcarmen.com/wp-content/uploads/2026/05/M1.pdf"
+   },
+   {
+    "claim": "Foreign buyers hold via bank fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lprluxury.com/jorge-perez-brings-viceroy-to-playa-del-carmen-the-riviera-mayas-first-urban-beachfront-branded-residence/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Miami, USA / Playa del Carmen, Mexico",
+   "developer_company": "Banco Monex, S.A., Institución de Banca Múltiple, as trustee of fideicomiso F/12238",
+   "handover_promised": "2029-Q3",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR+den",
+    "2BR",
+    "2BR+den",
+    "3BR",
+    "3BR+den",
+    "penthouse"
+   ],
+   "size_min_m2": 55.9,
+   "size_max_m2": 449,
+   "price_min": 7006986,
+   "price_max": 58088564,
+   "currency": "MXN",
+   "foreign_ownership": "Bank fideicomiso (restricted zone)",
+   "rental_programme": "Not stated; brochure disclaims rental income representations",
+   "brand": "Viceroy (licensed)",
+   "amenities": [
+    "beachfront",
+    "five-star hotel services",
+    "pools",
+    "spa",
+    "fitness",
+    "restaurants"
+   ],
+   "lat": 20.638,
+   "lng": -87.06,
+   "permit_authority": "Municipio de Solidaridad (Dirección de Desarrollo Urbano)",
+   "brochure_url": "https://viceroyplayadelcarmen.com/wp-content/uploads/2026/05/M1.pdf",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Detailed floor plans downloadable",
+   "Developer entity named as a bank trust with trust number",
+   "Brochure explicitly disclaims rental or appreciation promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://viceroyplayadelcarmen.com/floor-plans/",
+   "https://viceroyplayadelcarmen.com/wp-content/uploads/2026/05/M1.pdf",
+   "https://lprluxury.com/jorge-perez-brings-viceroy-to-playa-del-carmen-the-riviera-mayas-first-urban-beachfront-branded-residence/",
+   "https://forbes.com.mx/ad-viceroy-residences-playa-del-carmen-la-apuesta-por-elevar-el-lujo-residencial-en-la-riviera-maya/",
+   "https://www.hola.com/us-es/lifestyle/20260611905385/viceroy-residences-playa-del-carmen-lanzamiento-oficial/",
+   "https://www.nautilusrealestate.mx/blog/viceroy-playa-del-carmen-price-list-2026-en",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "tao-monte-rocella-tao-mexico",
+  "name": "TAO Monte Rocella",
+  "developer": "TAO México",
+  "area": "El Tezal, Cabo San Lucas",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "under construction",
+  "url": "https://www.taomonterocella.com/",
+  "docs_url": "https://www.taomonterocella.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "390 condos, 2 and 3 bedrooms from USD 299k",
+   "phase delivery dates (Phase 1 Oct 2025, Phase 2 Jul 2026)",
+   "dated construction photo galleries (monthly, latest Oct 2026)",
+   "developer financing up to 10 years"
+  ],
+  "note": "Phased 390-condo hillside project above Cabo San Lucas from USD 299k, with monthly dated construction photos (latest Oct 2026) still showing work under way after the advertised Jul 2026 Phase 2 date. No licence, PROFECO contract or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 299000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer states 19+ years and 23+ residential projects in Riviera Maya, Puerto Vallarta and Los Cabos; construction page lists 3 completed developments in Akumal",
+   "units": 390,
+   "payment_plan": "20% at contract, 30% during construction, balance after delivery; in-house financing of 50% over up to 10 years at about 7% (Moving to Mexico article)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Monthly construction photo galleries on taomexico.com, Oct 2026 update with 47 photos",
+   "plans": "Unit sizes and model descriptions, no floor plan drawings seen",
+   "record": "Developer claims 23+ projects; TAO Akumal HOA newsletter (2017) describes 55+ deeded units in phases 1 and 2",
+   "returns": "No return figures or guarantees on developer page"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 1 delivery October 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.taomonterocella.com/"
+   },
+   {
+    "claim": "Phase 2 delivery July 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.taomexico.com/affiliate/movingtomexico"
+   },
+   {
+    "claim": "Construction still under way Oct 2026",
+    "status": "verified",
+    "by": "none",
+    "source": "https://xn--taomxico-e1a.com/avances.html"
+   },
+   {
+    "claim": "390 condos (other sources 320 to 395)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.searchcaborealestate.com/blog/monte-rocella-cabo-corridor-cabo-san-lucas-condo/"
+   },
+   {
+    "claim": "Developer has 23+ residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.taomexico.com/affiliate/movingtomexico"
+   },
+   {
+    "claim": "TAO Akumal units deeded to owners (55+ by Dec 2016)",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://newsletter.taoinspiredliving.com/taomexico/2017.02.09/LA_CREACION_DE_HOA.pdf"
+   },
+   {
+    "claim": "Price from USD 299,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexico-invest.com/projects/tao-monte-rocella/"
+   },
+   {
+    "claim": "Foreign buyers hold through fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexico-invest.com/projects/tao-monte-rocella/"
+   },
+   {
+    "claim": "Licencia de construcción issued by Los Cabos municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexico-invest.com/projects/tao-monte-rocella/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Riviera Maya, Mexico",
+   "developer_projects_delivered": null,
+   "handover_promised": "2026-Q3",
+   "original_handover": "Phase 1 Oct 2025",
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 213,
+   "price_min": 299000,
+   "price_max": 1250000,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20/30/50 with optional developer financing",
+   "foreign_ownership": "Bank fideicomiso",
+   "rental_programme": "Lock-off units marketed for rental; no programme figures",
+   "service_charge": "HOA about USD 200-300 per month (agent)",
+   "amenities": [
+    "two infinity pools",
+    "two gyms",
+    "coworking",
+    "yoga studios",
+    "fire pits",
+    "kids playground",
+    "pet park",
+    "covered parking"
+   ],
+   "lat": 22.91,
+   "lng": -109.89,
+   "permit_authority": "Municipio de Los Cabos (Dirección General de Desarrollo Urbano)",
+   "developer_company": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "delay_months": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Monthly dated construction photos",
+   "In-house financing option",
+   "No return guarantees"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.taomonterocella.com/",
+   "https://taomexico.com/construction-progress/",
+   "https://www.movingtomexi.co/post/moving-to-mexico-just-got-easier-with-this-24-000-bonus",
+   "https://mexico-invest.com/developers/tao-mexico/",
+   "https://www.taomexico.com/affiliate/movingtomexico",
+   "https://xn--taomxico-e1a.com/avances.html",
+   "https://www.searchcaborealestate.com/blog/monte-rocella-cabo-corridor-cabo-san-lucas-condo/",
+   "http://newsletter.taoinspiredliving.com/taomexico/2017.02.09/LA_CREACION_DE_HOA.pdf",
+   "https://mexico-invest.com/projects/tao-monte-rocella/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "cora-sur-los-cabos-grupo-habitat",
+  "name": "Cora Sur",
+  "developer": "Grupo Habitat",
+  "area": "Club Campestre San José, San José del Cabo",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "under construction",
+  "url": "https://coraloscabos.com/",
+  "docs_url": "https://coraloscabos.com/en/floor-plans-cora-sur/",
+  "permit_number": null,
+  "docs_listed": [
+   "floor plans page for Cora Sur two-bedroom units",
+   "presale price from USD 476k",
+   "finished first phase (Cora) with immediate delivery units",
+   "amenity list"
+  ],
+  "note": "Second phase (Aqua, Fairway and Garden sections, about 110 units) of the Cora condos inside Club Campestre, with two-bedroom presales from USD 476k. Agents quote delivery anywhere from Dec 2026 to 2028; the first Cora phase is built and reselling. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 476000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "First phase Cora (about 39 units in seven towers) completed and offered for immediate delivery on developer site; 30 MLS closings in five years reported by a Club Campestre broker",
+   "units": 110,
+   "payment_plan": "35% minimum down payment with bank financing or seller financing (MLS listing)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress updates on developer site; agents describe phase as under construction",
+   "plans": "Floor Plans Cora Sur page",
+   "record": "Developer site offers last units of completed phase Cora; broker cites 30 resales in five years",
+   "returns": "No return figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "First phase Cora completed and ready to live in",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://clubcampestre.properties/communities/cora-real-estate/"
+   },
+   {
+    "claim": "Delivery December 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.remaxcaborealestate.com/property/for-sale/san-jose-del-cabo/condo-cora-26-2999"
+   },
+   {
+    "claim": "Delivery March 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ruiz-sandoval.com/cora-sur-los-cabos/"
+   },
+   {
+    "claim": "Aqua units estimated 2028 delivery",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://luxurymexicoproperties.com/listings/cora-sur-paseo-del-monte-club-campestre-mls-26-3993/"
+   },
+   {
+    "claim": "Two-bedroom presale from USD 476k",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coraloscabos.com/"
+   },
+   {
+    "claim": "110 units in development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bajabuyersguide.com/property/cora-sur-paseo-del-monte-club-campestre-mls-26-2999/"
+   },
+   {
+    "claim": "Grupo Habitat has 40+ years of experience and on-time delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mlrealtor.com.mx/idx/Paseo-Del-Monte-Club-Campestre-CORA-SUR-San-Jose-del-Cabo-mls_26-3992/"
+   },
+   {
+    "claim": "Seller financing offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mlrealtor.com.mx/idx/Paseo-Del-Monte-Club-Campestre-CORA-SUR-San-Jose-del-Cabo-mls_26-3992/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "La Paz / San José del Cabo, Baja California Sur",
+   "handover_promised": "2026-Q4",
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 140,
+   "size_max_m2": 180,
+   "price_min": 476000,
+   "price_max": 616386,
+   "currency": "USD",
+   "deposit_pct": 35,
+   "foreign_ownership": "Bank fideicomiso",
+   "rental_programme": null,
+   "service_charge": "About USD 6,000 per year for Cora (broker, Sep 2026)",
+   "amenities": [
+    "Jack Nicklaus golf course access",
+    "beach club",
+    "two pools",
+    "gym",
+    "pickleball and padel",
+    "kids club",
+    "business center",
+    "covered parking"
+   ],
+   "lat": 23.037,
+   "lng": -109.721,
+   "permit_authority": "Municipio de Los Cabos",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "payment_plan": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Floor plans published",
+   "Previous phase built in the same community and visible to buyers",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://coraloscabos.com/",
+   "https://coraloscabos.com/en/floor-plans-cora-sur/",
+   "https://coraloscabos.com/departamentos-tipo-cora-sur/",
+   "https://clubcampestre.properties/communities/cora-real-estate/",
+   "https://www.remaxcaborealestate.com/property/for-sale/san-jose-del-cabo/condo-cora-26-2999",
+   "https://ruiz-sandoval.com/cora-sur-los-cabos/",
+   "https://luxurymexicoproperties.com/listings/cora-sur-paseo-del-monte-club-campestre-mls-26-3993/",
+   "https://bajabuyersguide.com/property/cora-sur-paseo-del-monte-club-campestre-mls-26-2999/",
+   "https://mlrealtor.com.mx/idx/Paseo-Del-Monte-Club-Campestre-CORA-SUR-San-Jose-del-Cabo-mls_26-3992/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "conrad-residences-oleada-los-cabos-parks-hospitality",
+  "name": "Conrad Residences at Oleada Los Cabos",
+  "developer": "Parks Hospitality Holdings",
+  "area": "Oleada Pacific Living & Golf, Pacific coast near Cabo San Lucas",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "off-plan",
+  "url": "https://conradloscabos.mx/",
+  "docs_url": "https://conradloscabos.mx/",
+  "permit_number": null,
+  "docs_listed": [
+   "59 oceanfront residences",
+   "early reservations (priority registration) for first release",
+   "Legorreta Architects design",
+   "private terrace pool per residence"
+  ],
+  "note": "59 Conrad-branded oceanfront residences in the 860-acre Oleada community, currently taking early reservations ahead of a first release; Hilton announced the signing in Dec 2024 with 43 residences and a 2027 opening. No prices, plans, permit or deposit terms published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 59,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Only renders and descriptions; no floor plans",
+   "record": "No delivered projects named for Parks Hospitality Holdings",
+   "returns": "No return statements"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Hilton signed Conrad Los Cabos with Parks Hospitality Holdings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://stories.hilton.com/releases/hilton-expands-luxury-portfolio-with-signing-of-conrad-los-cabos"
+   },
+   {
+    "claim": "59 residences",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://stories.hilton.com/releases/hilton-expands-luxury-portfolio-with-signing-of-conrad-los-cabos"
+   },
+   {
+    "claim": "Opening expected 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelexecutive.com/newswire/72720/hilton-signs-with-parks-hospitality-holdings-to-develop-conrad-los-cabos"
+   },
+   {
+    "claim": "Handover Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/conrad-residences-oleada-los-cabos"
+   },
+   {
+    "claim": "Tenure freehold for buyers",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.so/projects/conrad-residences-oleada-los-cabos"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/conrad-los-cabos-at-oleada/"
+   },
+   {
+    "claim": "Designed by Legorreta Architects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://stories.hilton.com/releases/hilton-expands-luxury-portfolio-with-signing-of-conrad-los-cabos"
+   },
+   {
+    "claim": "Neighbouring Grand Hyatt and Oleada Golf Links opening late 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.morningstar.com/news/pr-newswire/20260714fl02307/los-cabos-enters-a-new-era-of-luxury-with-major-hospitality-wellness-and-golf-developments"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mexico City, Mexico",
+   "handover_promised": "2027-Q4",
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "penthouse"
+   ],
+   "currency": "USD",
+   "foreign_ownership": "Bank fideicomiso required in Baja California Sur restricted zone (one portal lists 'freehold')",
+   "rental_programme": "Not published",
+   "brand": "Conrad (Hilton)",
+   "amenities": [
+    "private terrace pools",
+    "oceanfront pools",
+    "spa with 10 treatment rooms",
+    "fitness center",
+    "five dining venues",
+    "Ernie Els golf course",
+    "trails",
+    "beach"
+   ],
+   "lat": 22.95,
+   "lng": -110.0,
+   "permit_authority": "Municipio de Los Cabos; SEMARNAT for coastal environmental impact",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Brand signing confirmed by Hilton press release"
+  ],
+  "flags": [],
+  "sources": [
+   "https://conradloscabos.mx/",
+   "https://oleadaloscabos.com/oleada-luxury-coastal-living/",
+   "https://www.bajaproperties.com/blog/new-luxury-resort-residences-cabo-san-lucas-coming-soon/",
+   "https://stories.hilton.com/releases/hilton-expands-luxury-portfolio-with-signing-of-conrad-los-cabos",
+   "https://www.hotelexecutive.com/newswire/72720/hilton-signs-with-parks-hospitality-holdings-to-develop-conrad-los-cabos",
+   "https://offplan.so/projects/conrad-residences-oleada-los-cabos",
+   "https://www.oftmw.com/projects/conrad-los-cabos-at-oleada/",
+   "https://www.morningstar.com/news/pr-newswire/20260714fl02307/los-cabos-enters-a-new-era-of-luxury-with-major-hospitality-wellness-and-golf-developments",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "developer": "Irongate Group (Costa Palmas)",
+  "area": "Marina Village, Costa Palmas, East Cape (La Ribera)",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "under construction",
+  "url": "https://costapalmas.com/real-estate/casa-blake/",
+  "docs_url": "https://costapalmas.com/real-estate/casa-blake/",
+  "permit_number": null,
+  "docs_listed": [
+   "turnkey studios to 4BR, 535 to 2,497 sq ft",
+   "starting price USD 830k",
+   "layout descriptions per unit type",
+   "brochure (via agent)"
+  ],
+  "note": "Hotel and turnkey residence building in the Costa Palmas Marina Village (studios to four bedrooms, 535 to 2,497 sq ft) from USD 830k; contractor Build Group announced construction in Oct 2025 and trackers expect 2027 opening. No permit, deposit protection or progress figures published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 830000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Irongate developed the Costa Palmas community, where Four Seasons Resort and Residences and the marina operate",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress published by developer; Build Group press release (Oct 2025) announces construction contract",
+   "plans": "Unit type descriptions and sizes on developer page; floorplans offered by agent on request",
+   "record": "Costa Palmas resort community with Four Seasons resort and residences, marina and village is operating",
+   "returns": "No returns stated; Four Seasons rental programme mentioned only for other Costa Palmas residences"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction contracted to Build Group with Grupo Hermosillo (Oct 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businesswire.com/news/home/20251008305161/en/Build-Group-Expands-Internationally-With-First-Project-in-Mexico-Casa-Blake-at-Costa-Palmas"
+   },
+   {
+    "claim": "Irongate Group is developer of Costa Palmas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businesswire.com/news/home/20251008305161/en/Build-Group-Expands-Internationally-With-First-Project-in-Mexico-Casa-Blake-at-Costa-Palmas"
+   },
+   {
+    "claim": "Starting price USD 830k",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://eastcaperealty.com/casa-blake-at-costa-palmas/"
+   },
+   {
+    "claim": "Earlier marketing: residences from under USD 700k",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cabolaestancia.com/wp-content/uploads/Casa-Blake/Costa-Palmas-Information.pdf"
+   },
+   {
+    "claim": "Expected opening 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/costa-palmas/"
+   },
+   {
+    "claim": "Project first announced June 2022",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/costa-palmas/"
+   },
+   {
+    "claim": "Amanvari at Costa Palmas opened Aug 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.morningstar.com/news/pr-newswire/20260714fl02307/los-cabos-enters-a-new-era-of-luxury-with-major-hospitality-wellness-and-golf-developments"
+   },
+   {
+    "claim": "Groundbreaking summer 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://resident.com/destinations/2026/01/02/inside-costa-palmas-the-private-resort-community-defining-the-east-capes-luxury-evolution"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "San Francisco, USA / La Ribera, BCS",
+   "construction_start": "2025-10",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 49.7,
+   "size_max_m2": 232,
+   "price_min": 830000,
+   "price_max": null,
+   "currency": "USD",
+   "foreign_ownership": "Bank fideicomiso (restricted zone)",
+   "rental_programme": "Not published for Casa Blake",
+   "brand": "Casa Blake (Costa Palmas own brand, with SALT Hotels team)",
+   "amenities": [
+    "marina-side pool and bar",
+    "garden oasis",
+    "spa",
+    "fitness center",
+    "beach club access",
+    "marina",
+    "golf"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Los Cabos; SEMARNAT",
+   "brochure_url": "https://cabolaestancia.com/wp-content/uploads/Casa-Blake/Costa-Palmas-Information.pdf",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Construction contractor publicly named",
+   "Inside an operating resort community",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://costapalmas.com/real-estate/casa-blake/",
+   "https://www.buildgc.com/news/build-group-expands-internationally-with-first-project-in-mexico-casa-blake-at-costa-palmas/",
+   "https://www.businesswire.com/news/home/20251008305161/en/Build-Group-Expands-Internationally-With-First-Project-in-Mexico-Casa-Blake-at-Costa-Palmas",
+   "https://eastcaperealty.com/casa-blake-at-costa-palmas/",
+   "https://cabolaestancia.com/wp-content/uploads/Casa-Blake/Costa-Palmas-Information.pdf",
+   "https://www.oftmw.com/projects/costa-palmas/",
+   "https://www.morningstar.com/news/pr-newswire/20260714fl02307/los-cabos-enters-a-new-era-of-luxury-with-major-hospitality-wellness-and-golf-developments",
+   "https://resident.com/destinations/2026/01/02/inside-costa-palmas-the-private-resort-community-defining-the-east-capes-luxury-evolution",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "mayamar-torre-sur-grupo-solcon",
+  "name": "MAYĀMAR (Torre Sur)",
+  "developer": "Grupo Solcon",
+  "area": "Amapas, Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "off-plan",
+  "url": "https://www.cblacosta.com/mayamar-puerto-vallarta/",
+  "docs_url": "https://gruposolcon.com/development/mayamar/",
+  "permit_number": null,
+  "docs_listed": [
+   "address Calle Gardenias 284, Amapas",
+   "unit count, bedrooms and amenities",
+   "agent page: Torre Norte delivering since Sep 2026, Torre Sur presale for 2028",
+   "payment plans 80/20 with discount (agent)"
+  ],
+  "note": "Two-tower ocean-view condo project in Amapas; the agent says Torre Norte began deliveries in Sep 2026 and Torre Sur is in presale for 2028 from MXN 7.52M. Developer lists 44 units while agents list 71, and no licence, PROFECO number or plans are published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 7524000,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Torre Norte of the same project delivering since Sep 2026 per sales agent; developer also lists Edénia (23 units) and Veloa (94 units) in Puerto Vallarta without delivery status",
+   "units": 71,
+   "payment_plan": "Three plans incl. 80% down / 20% on delivery at 30% off list (agent)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress published by developer; agent reports first tower deliveries Sep 2026",
+   "plans": "No floor plans published",
+   "record": "Agent says Torre Norte delivering; developer lists other projects without completion details",
+   "returns": "No returns stated"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has 44 units (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://gruposolcon.com/es/development/mayamar/"
+   },
+   {
+    "claim": "Project has 71 residences in two towers (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.cblacosta.com/mayamar-puerto-vallarta-en-venta/"
+   },
+   {
+    "claim": "Torre Norte deliveries started Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cblacosta.com/mayamar-puerto-vallarta/"
+   },
+   {
+    "claim": "Torre Sur delivery 2028 (about 30 Apr 2028)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homia.mx/es/desarrollo/mayamar"
+   },
+   {
+    "claim": "Price from MXN 7,524,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homia.mx/es/desarrollo/mayamar"
+   },
+   {
+    "claim": "Foreign buyers hold via 50-year renewable fideicomiso, constituted at delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cblacosta.com/mayamar-puerto-vallarta/"
+   },
+   {
+    "claim": "Developer has delivered Edénia and Veloa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gruposolcon.com/es/desarrollos/"
+   },
+   {
+    "claim": "Licencia de construcción from Puerto Vallarta municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gruposolcon.com/development/mayamar/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Puerto Vallarta, Jalisco",
+   "handover_promised": "2028-Q2",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "flex"
+   ],
+   "size_min_m2": 74,
+   "size_max_m2": 231,
+   "price_min": 7524000,
+   "price_max": 30400000,
+   "currency": "MXN",
+   "deposit_pct": 80,
+   "payment_plan": "80/20 among three plans (agent)",
+   "foreign_ownership": "Bank fideicomiso, 50-year renewable",
+   "rental_programme": null,
+   "amenities": [
+    "rooftop infinity pools",
+    "elevators",
+    "24h security",
+    "gym",
+    "spa",
+    "gardens",
+    "BBQ area",
+    "yoga area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Puerto Vallarta (Dirección de Desarrollo Urbano)",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Address published",
+   "First tower of the same project reported in delivery"
+  ],
+  "flags": [],
+  "sources": [
+   "https://gruposolcon.com/development/mayamar/",
+   "https://gruposolcon.com/es/development/mayamar/",
+   "https://www.cblacosta.com/mayamar-puerto-vallarta-en-venta/",
+   "https://www.cblacosta.com/mayamar-puerto-vallarta/",
+   "https://www.homia.mx/es/desarrollo/mayamar",
+   "https://gruposolcon.com/es/desarrollos/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "macaria-puerto-vallarta-grupo-origen",
+  "name": "Macaria",
+  "developer": "Grupo Origen (RISE and Eidós Arquitectos)",
+  "area": "España 296, Versalles, Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "under construction",
+  "url": "https://macariavallarta.mx/en/",
+  "docs_url": "https://macariavallarta.mx/",
+  "permit_number": null,
+  "docs_listed": [
+   "12 unit models with m2 and room lists (studio 45 m2 to penthouse 169 m2)",
+   "deposits from 15%, presale discounts up to 16%",
+   "address España 296",
+   "developer portfolio names (IIK Tulum, Ceren, Kaab ATP, Riva)"
+  ],
+  "note": "63-unit, 11-level condo building in Versalles whose construction began in late 2025 per Property Journal, with delivery set for 2028 (agents say Jul 2028) and units from about USD 185k. Model layouts are published but no licence, PROFECO number or deposit protection. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 184702,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer cites 15+ projects in Mexico and names IIK Tulum, Ceren, Kaab ATP and Riva, without delivery dates",
+   "units": 63,
+   "payment_plan": "Down payments from 15%; presale discounts up to 16%",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Property Journal (10 Dec 2025) reports construction has started and 30% sold; no updates on developer site",
+   "plans": "Model cards with areas and room layouts on project site",
+   "record": "Named portfolio projects on developer site, delivery not stated",
+   "returns": "Site says high year-round rental demand; no figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started (Dec 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertyjournal.com.mx/macaria-desarrollo-lujo-la-versalles-puerto-vallarta/"
+   },
+   {
+    "claim": "30% of units sold at launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyjournal.com.mx/macaria-desarrollo-lujo-la-versalles-puerto-vallarta/"
+   },
+   {
+    "claim": "63 units on 11 levels with 30 parking spaces",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gruporigen.com.mx/proyectos/puerto-vallarta/macaria"
+   },
+   {
+    "claim": "Delivery July 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condosvallarta.com/developments/macaria-puerto-vallarta"
+   },
+   {
+    "claim": "Prices from USD 184,702",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condosvallarta.com/developments/macaria-puerto-vallarta"
+   },
+   {
+    "claim": "Developer has 15+ projects and 20+ years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://macariavallarta.mx/"
+   },
+   {
+    "claim": "Developer office in Playa del Carmen, sales via Tropicasa Realty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gruporigen.com.mx/en/proyectos/puerto-vallarta/macaria"
+   },
+   {
+    "claim": "Licencia de edificación from Puerto Vallarta municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://transparencia.puertovallarta.gob.mx/art8.php?pag=art8-sec6g"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Playa del Carmen, Quintana Roo",
+   "construction_start": "2025-12",
+   "handover_promised": "2028-Q3",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR lock-off",
+    "penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 169,
+   "price_min": 184702,
+   "price_max": 748277,
+   "currency": "USD",
+   "deposit_pct": 15,
+   "foreign_ownership": "Bank fideicomiso (restricted zone)",
+   "rental_programme": null,
+   "amenities": [
+    "rooftop pool with ocean views",
+    "lap pool",
+    "indoor and outdoor gym",
+    "yoga area",
+    "business center cafe",
+    "indoor courtyard",
+    "elevator",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Puerto Vallarta (Dirección de Ordenamiento Territorial y Desarrollo Urbano)",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Address and unit models with areas published",
+   "Construction start reported by trade press",
+   "Developer names prior projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://macariavallarta.mx/",
+   "https://macariavallarta.mx/en/",
+   "https://gruporigen.com.mx/",
+   "https://propertyjournal.com.mx/macaria-desarrollo-lujo-la-versalles-puerto-vallarta/",
+   "https://gruporigen.com.mx/proyectos/puerto-vallarta/macaria",
+   "https://www.condosvallarta.com/developments/macaria-puerto-vallarta",
+   "https://gruporigen.com.mx/en/proyectos/puerto-vallarta/macaria",
+   "https://transparencia.puertovallarta.gob.mx/art8.php?pag=art8-sec6g",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "thompson-puerto-vallarta-residences-related",
+  "name": "Thompson Puerto Vallarta Hotel & Residences",
+  "developer": "PTV Real Estate Development, S. de R.L. de C.V. (Related Group México)",
+  "area": "Av. Francisco Medina Ascencio 2585, Zona Hotelera Norte, Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "under construction",
+  "url": "https://thompsonvallarta.com/",
+  "docs_url": "https://thompsonvallarta.com/sales-information/",
+  "permit_number": null,
+  "docs_listed": [
+   "purchaser's guide naming developer entity PTV Real Estate Development",
+   "155 residences and 84 hotel keys, completion 2027 (Related México)",
+   "price list by unit (via agent)",
+   "construction progress event Dec 2025 (press)"
+  ],
+  "note": "26-storey Thompson-branded beachfront tower with 155 residences and 84 hotel suites; construction began in early 2025, reached the fourth floor by Dec 2025, and first deliveries are targeted for Dec 2027, from about MXN 130,000 per m2. A municipal official said its licence is being kept current through extensions. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 16097955,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Related Group México lists completed projects on its site; Related Group (Miami) is a long-established condo developer",
+   "units": 155,
+   "payment_plan": null,
+   "price_per_m2": 130000,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number published; Puerto Vallarta urban development director told Tribuna de la Bahía (Apr 2025) the previously authorised Thompson towers are being updated through licence extensions (prórrogas)",
+   "escrow": null,
+   "progress": "Construction progress presentation reported Dec 2025: fourth storey reached about ten months after start",
+   "plans": "Unit areas by type circulated via agents; no plans on developer site",
+   "record": "Related Group México portfolio page",
+   "returns": "Purchaser's guide disclaims any rental income or appreciation representations"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds a municipal construction licence, kept current via extensions",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tribunadelabahia.com.mx/puerto-vallarta-creciendo-verticalmente/"
+   },
+   {
+    "claim": "Developer of record is PTV Real Estate Development, S. de R.L. de C.V.",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5317102/347821/Thompson-PuertoVallarta-PurchasersGuide-R10__2_.pdf"
+   },
+   {
+    "claim": "Fourth storey reached Dec 2025, about two weeks per floor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vallartarealestateguide.com/construction-progress-presented-at-thompson-puerto-vallarta-hotel-residences/"
+   },
+   {
+    "claim": "First residences delivered Dec 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vallartarealestateguide.com/construction-progress-presented-at-thompson-puerto-vallarta-hotel-residences/"
+   },
+   {
+    "claim": "155 residences and 84 hotel keys",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://relatedmexico.tule.studio/thompson-vallarta/"
+   },
+   {
+    "claim": "1BR from MXN 16,097,955",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.temploagency.com/desarrollos/thompson-puerto-vallarta-residencias-en-venta"
+   },
+   {
+    "claim": "Prices from MXN 130,000 per m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vallartarealestateguide.com/construction-progress-presented-at-thompson-puerto-vallarta-hotel-residences/"
+   },
+   {
+    "claim": "Construction subject to first obtaining permits (2023 guide wording)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://tribunadelabahia.com.mx/puerto-vallarta-creciendo-verticalmente/"
+   },
+   {
+    "claim": "Thompson brand and Related used under licence, not developer of record",
+    "status": "verified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/5317102/347821/Thompson-PuertoVallarta-PurchasersGuide-R10__2_.pdf"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mexico City, Mexico / Miami, USA",
+   "developer_company": "PTV Real Estate Development, S. de R.L. de C.V.",
+   "construction_start": "2025-02",
+   "handover_promised": "2027-Q4",
+   "unit_types": [
+    "1BR",
+    "1BR+studio",
+    "2BR",
+    "3BR+studio",
+    "4BR",
+    "garden suite",
+    "penthouse"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 942,
+   "price_min": 16097955,
+   "price_max": 109883840,
+   "currency": "MXN",
+   "foreign_ownership": "Bank fideicomiso (restricted zone)",
+   "rental_programme": "Hotel rental programme offered; terms on request",
+   "brand": "Thompson (Hyatt)",
+   "amenities": [
+    "beachfront",
+    "pools",
+    "spa",
+    "fitness",
+    "restaurants",
+    "furnished residences option"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Puerto Vallarta (Dirección de Ordenamiento Territorial y Desarrollo Urbano)",
+   "brochure_url": "https://assets.easybroker.com/property_files/5317102/347821/Thompson-PuertoVallarta-PurchasersGuide-R10__2_.pdf",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Licence status mentioned on record by the municipal urban development director",
+   "Dated construction progress reported",
+   "Developer entity named in purchaser's guide",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thompsonvallarta.com/",
+   "https://thompsonvallarta.com/sales-information/",
+   "https://tribunadelabahia.com.mx/puerto-vallarta-creciendo-verticalmente/",
+   "https://assets.easybroker.com/property_files/5317102/347821/Thompson-PuertoVallarta-PurchasersGuide-R10__2_.pdf",
+   "https://vallartarealestateguide.com/construction-progress-presented-at-thompson-puerto-vallarta-hotel-residences/",
+   "https://relatedmexico.tule.studio/thompson-vallarta/",
+   "https://www.temploagency.com/desarrollos/thompson-puerto-vallarta-residencias-en-venta",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "south-bay-puerto-vallarta-verde-vallarta",
+  "name": "South Bay",
+  "developer": "Desarrolladores Verde Vallarta",
+  "area": "Carretera 200 (Barra de Navidad) 21-523, Zona Romántica / Alta Vista, Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "under construction",
+  "url": "https://tropicasa.com/southbay/",
+  "docs_url": "https://www.southbaypuertovallarta.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "65 residences, 6 typologies 66 to 127 m2",
+   "price from about MXN 7.6M with up to 15% savings",
+   "unit-by-unit availability map (agent)",
+   "dated construction updates Apr 2025 to Oct 2026 (agent)",
+   "delivery 2027"
+  ],
+  "note": "Eight-level, 65-residence tower in the Romantic Zone with dated construction updates from Apr 2025 to Oct 2026 and delivery advertised for 2027 (Feb or Mar 2027 per agents), from about MXN 6.2M to 7.6M. No licence, PROFECO number or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 7600000,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 65,
+   "payment_plan": "Flexible plans with up to 15% savings; developer financing (MLS)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Exclusive agent Tropicasa posts construction updates dated Apr 2025, Jun 2025, Dec 2025, Mar 2026 and Oct 2026",
+   "plans": "Floor plans offered on request; unit cards with dimensions on agent site only",
+   "record": "No delivered projects named for Desarrolladores Verde Vallarta",
+   "returns": "No return figures; agent mentions vacation rental potential"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Desarrolladores Verde Vallarta",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vallartarealestateguide.com/tropicasa-realty-presents-south-bay-development/"
+   },
+   {
+    "claim": "Completion March 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vallartarealestateguide.com/tropicasa-realty-presents-south-bay-development/"
+   },
+   {
+    "claim": "Estimated delivery 28 Feb 2027 (MLS)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.homia.mx/en/propiedad/mls/south-bay-emiliano-zapata-1-recamaras-00-39376"
+   },
+   {
+    "claim": "Prices from MXN 6,177,905 with maximum discount",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vallartarealestateguide.com/tropicasa-realty-presents-south-bay-development/"
+   },
+   {
+    "claim": "Residences from about MXN 7.6M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.southbaypuertovallarta.com/"
+   },
+   {
+    "claim": "Eight-storey tower (developer says six levels plus amenity floor)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.southbaypuertovallarta.com/"
+   },
+   {
+    "claim": "Construction under way with updates to Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tropicasa.com/southbay/"
+   },
+   {
+    "claim": "HOA about MXN 12,000 per month for a 108 m2 unit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homia.mx/en/propiedad/mls/south-bay-emiliano-zapata-1-recamaras-00-39376"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Puerto Vallarta, Jalisco",
+   "construction_start": "2025-04",
+   "handover_promised": "2027-Q1",
+   "unit_types": [
+    "1BR",
+    "1BR+den",
+    "1BR+flex",
+    "2BR",
+    "duplex"
+   ],
+   "size_min_m2": 66,
+   "size_max_m2": 127,
+   "price_min": 6177905,
+   "price_max": 12600000,
+   "currency": "MXN",
+   "foreign_ownership": "Bank fideicomiso (restricted zone)",
+   "rental_programme": null,
+   "service_charge": "About MXN 12,000 per month for 108 m2 (MLS)",
+   "amenities": [
+    "rooftop pool",
+    "padel court",
+    "gym",
+    "BBQ terrace",
+    "game room",
+    "pet area",
+    "lobby",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Puerto Vallarta",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Dated construction updates over 18 months",
+   "Unit-level availability shown by exclusive agent",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.southbaypuertovallarta.com/",
+   "https://tropicasa.com/southbay/",
+   "https://vallartarealestateguide.com/tropicasa-realty-presents-south-bay-development/",
+   "https://www.homia.mx/en/propiedad/mls/south-bay-emiliano-zapata-1-recamaras-00-39376",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "casa-mitos-via-montejo-inmobilia",
+  "name": "Casa Mitos (Torre Mitos)",
+  "developer": "Inmobilia Desarrollos",
+  "area": "Vía Montejo, Prolongación Montejo con Calle 60, Mérida",
+  "country": "Mexico",
+  "market": "Mérida",
+  "stage": "off-plan",
+  "url": "https://torremitos.com/",
+  "docs_url": "https://www.inmobilia.mx/proyecto/casa-mitos-en-via-montejo",
+  "permit_number": null,
+  "docs_listed": [
+   "125 apartments on 19 floors, 1 to 3 bedrooms",
+   "unit types with m2 (Tipo 1 58.2 m2 etc.) and equipment list",
+   "presale from MXN 3.3M with 10% down (also 'from MXN 6.3M' on same site)",
+   "amenities on floor 19"
+  ],
+  "note": "Fourth residential tower in Inmobilia's Vía Montejo master plan: 125 apartments on 19 floors, presale opened 28 Nov 2024 with a stated 30-month build (implying about mid-2027). The site quotes both MXN 3.3M and 6.3M as starting prices; no licence, PROFECO number or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3300000,
+   "currency": "MXN",
+   "title": "private ownership (inland, no fideicomiso needed)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer says three earlier Vía Montejo residential towers with 450 units are occupied (Diario de Yucatán interview); Inmobilia lists Oceana, Atlántida, Índico and Índico II in Vía Montejo",
+   "units": 125,
+   "payment_plan": "10% down payment (developer site)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress published; launch article states 30-month construction from Nov 2024",
+   "plans": "Unit type cards with areas and room lists on torremitos.com/departamentos",
+   "record": "Earlier towers in the same master plan named by developer",
+   "returns": "No return figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "125 units on 19 levels, 61 to 131 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.yucatan.com.mx/merida/2024/11/29/via-montejo-se-engalana.html"
+   },
+   {
+    "claim": "Presale started 28 Nov 2024; construction to take 30 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.yucatan.com.mx/merida/2024/11/29/via-montejo-se-engalana.html"
+   },
+   {
+    "claim": "Three earlier Vía Montejo towers with 450 units delivered and occupied",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.yucatan.com.mx/merida/2024/11/29/via-montejo-se-engalana.html"
+   },
+   {
+    "claim": "Starting price MXN 3.3M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://torremitos.com/departamentos/"
+   },
+   {
+    "claim": "Agent price range MXN 5.1M to 12.2M, delivery 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dvelopers.mx/desarrollo/casa-mitos"
+   },
+   {
+    "claim": "A Vía Montejo-based company (1416 Desarrollos Inmobiliarios, S.A. de C.V.) registered a presale adhesion contract with PROFECO (7133-2024) on 13 Nov 2024; its link to Casa Mitos is not stated",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=7133-2024"
+   },
+   {
+    "claim": "Vía Montejo won Best Mixed-Use Development in Mexico (International Property Awards 2019)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.inmobilia.mx/viamontejo"
+   },
+   {
+    "claim": "Licences and permits obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.inmobilia.mx/proyecto/casa-mitos-en-via-montejo"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mérida, Yucatán",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 450,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 58.2,
+   "size_max_m2": 136,
+   "price_min": 3300000,
+   "price_max": 12200000,
+   "currency": "MXN",
+   "deposit_pct": 10,
+   "foreign_ownership": "Direct ownership (Mérida is outside the restricted zone)",
+   "rental_programme": null,
+   "amenities": [
+    "pool",
+    "padel court",
+    "gym",
+    "sky lounge",
+    "coworking",
+    "multipurpose room",
+    "concierge",
+    "2.4 ha shared green areas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Mérida (Dirección de Desarrollo Urbano)",
+   "developer_founded": null,
+   "developer_company": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Unit types with areas published",
+   "Part of an operating master plan with prior towers",
+   "Foreigners can own directly (outside restricted zone)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://torremitos.com/",
+   "https://www.inmobilia.mx/viamontejo/proyectos/casa-mitos",
+   "https://www.casamitos.com/",
+   "https://www.yucatan.com.mx/merida/2024/11/29/via-montejo-se-engalana.html",
+   "https://torremitos.com/departamentos/",
+   "https://dvelopers.mx/desarrollo/casa-mitos",
+   "https://rpca.profeco.gob.mx/getDoc?p=7133-2024",
+   "https://www.inmobilia.mx/viamontejo",
+   "https://www.inmobilia.mx/proyecto/casa-mitos-en-via-montejo"
+  ]
+ },
+ {
+  "slug": "ozalia-temozon-grupo-acber",
+  "name": "Ozalia Temozón",
+  "developer": "Grupo ACBER (Consorcio Acber & Fundora)",
+  "area": "Temozón Norte, Mérida",
+  "country": "Mexico",
+  "market": "Mérida",
+  "stage": "off-plan",
+  "url": "https://ozalia.mx/",
+  "docs_url": "https://grupoacber.com/desarrollos/ozalia/",
+  "permit_number": null,
+  "docs_listed": [
+   "presale 1 and 2 bedroom apartments from MXN 1,879,000",
+   "delivery November 2029",
+   "interior galleries for type A and B units",
+   "construction start ceremony scheduled (Sep) on developer events list"
+  ],
+  "note": "Four-stage, roughly 180-unit apartment project in Temozón Norte in presale from MXN 1.88M; the official site now says delivery Nov 2029, while 2025 listings promised stage 1 in spring or summer 2028, and the construction start ceremony was still listed as upcoming. No licence, PROFECO number or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1879000,
+   "currency": "MXN",
+   "title": "private ownership (inland, no fideicomiso needed)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer lists Olmos and Alanna as sold out and Slaka as finished with immediate delivery; consortium claims activity since 2021",
+   "units": 180,
+   "payment_plan": "Deposit MXN 20,000 refundable for 10 days, 15% down, up to 30 monthly payments, balance on deeding (agents)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Not started; developer events page lists an upcoming 'Inicio de Obra' ceremony",
+   "plans": "Interior renders by type, no floor plans",
+   "record": "Sister projects Slaka (finished, immediate delivery) and sold-out Alanna and Olmos listed by developer",
+   "returns": "No return guarantee on Ozalia pages; same developer advertises '8% anual de rendimiento garantizado' for its finished Slaka project"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery November 2029",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ozalia.mx/"
+   },
+   {
+    "claim": "Stage 1 delivery spring 2028 (Sep 2025 listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://inversiarealestate.com/property/ozalia/"
+   },
+   {
+    "claim": "First stage delivery summer 2028; 180 units in 4 towers",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.zmginmobiliaria.com/property/departamentos-en-preventa-en-torres-ozalia-en-temozon-norte-yucatan-temozon-norte-merida"
+   },
+   {
+    "claim": "Construction start ceremony pending",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://grupoacber.com/"
+   },
+   {
+    "claim": "Price from MXN 1,879,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ozalia.mx/"
+   },
+   {
+    "claim": "Developer delivered Xanadú, Slaka and Alanna",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inversiarealestate.com/property/ozalia/"
+   },
+   {
+    "claim": "Slaka finished and offered with 8% guaranteed annual return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://slaka.mx/"
+   },
+   {
+    "claim": "Units marketed / delivered counters on consortium site (illustrative)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://consorcioaf.mx/"
+   },
+   {
+    "claim": "Contract will be a PROFECO-registered adhesion contract (agent disclaimer)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zmginmobiliaria.com/property/departamentos-en-preventa-en-torres-ozalia-en-temozon-norte-yucatan-temozon-norte-merida"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2021,
+   "developer_hq": "Santa Gertrudis Copó, Mérida, Yucatán",
+   "handover_promised": "2029-Q4",
+   "original_handover": "2028-Q2 (stage 1, Sep 2025 listing)",
+   "delay_months": 18,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 53.6,
+   "size_max_m2": 62,
+   "price_min": 1879000,
+   "price_max": 3049000,
+   "currency": "MXN",
+   "deposit_pct": 15,
+   "foreign_ownership": "Direct ownership (outside restricted zone)",
+   "rental_programme": null,
+   "amenities": [
+    "pool and swim lane",
+    "clubhouse",
+    "pickleball court",
+    "grill area",
+    "coworking",
+    "sport bar",
+    "laundry",
+    "bike parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Mérida",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Low entry price with long instalment plan",
+   "Sister projects visible in the same city"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ozalia.mx/",
+   "https://grupoacber.com/desarrollos/ozalia/",
+   "https://grupoacber.com/",
+   "https://inversiarealestate.com/property/ozalia/",
+   "https://www.zmginmobiliaria.com/property/departamentos-en-preventa-en-torres-ozalia-en-temozon-norte-yucatan-temozon-norte-merida",
+   "https://slaka.mx/",
+   "https://consorcioaf.mx/"
+  ]
+ },
+ {
+  "slug": "punta-norte-temozon-concoord",
+  "name": "Punta Norte",
+  "developer": "Concoord Proyectos Inmobiliarios (seller: Subsuelo Urbanizadora, S.A. de C.V.)",
+  "area": "Temozón Norte, Mérida",
+  "country": "Mexico",
+  "market": "Mérida",
+  "stage": "off-plan",
+  "url": "https://triburealestate.mx/property/puntanorte/",
+  "docs_url": "https://concoord.com.mx/punta-norte/",
+  "permit_number": null,
+  "docs_listed": [
+   "68 apartments in 2 stages, 1BR, 1BR loft and 2BR",
+   "price from MXN 2,250,000",
+   "downloadable PROFECO-registered adhesion contract (No. 7745-2022, Subsuelo Urbanizadora)",
+   "model areas 51 to 76 m2 (agent)",
+   "delivery Dec 2028 for stage 1 (agents)"
+  ],
+  "note": "68-apartment gated condo project in Temozón Norte (stage 1: 34 units, delivery Dec 2028) from MXN 2.25M; the developer publishes its presale adhesion contract, registered with PROFECO as No. 7745-2022 and confirmed on the PROFECO registry. No construction licence, deposit protection or progress published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2250000,
+   "currency": "MXN",
+   "title": "private ownership (inland, no fideicomiso needed)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Same seller entity markets Ceres City Homes (10 townhouses, immediate delivery) and Santual (18 apartments) in Mérida, per agent and developer pages",
+   "units": 68,
+   "payment_plan": "10% down, 15% over 26 months, 75% on delivery",
+   "price_per_m2": 44100,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction licence number. PROFECO consumer contract registration 7745-2022 published (a contract registration, not a building permit)",
+   "escrow": null,
+   "progress": "Not started per listings (presale); no updates",
+   "plans": "Room-by-room model descriptions with areas on agent pages; no drawings",
+   "record": "Other Concoord / Subsuelo Urbanizadora projects listed, one with immediate delivery",
+   "returns": "No returns stated"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Presale contract registered with PROFECO under No. 7745-2022 (5 Dec 2022) by Subsuelo Urbanizadora, S.A. de C.V.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=7745-2022"
+   },
+   {
+    "claim": "Developer publishes the registered contract for download",
+    "status": "verified",
+    "by": "none",
+    "source": "https://concoord.com.mx/download/815/?tmstv=1710456850"
+   },
+   {
+    "claim": "68 apartments in two stages; stage 1 of 34 delivers Dec 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/punta-norte-desarrollo-en-preventa-en-temozon"
+   },
+   {
+    "claim": "17 of 34 stage-1 units available (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ladrillosinmobiliarios.com/desarrollos/punta-norte"
+   },
+   {
+    "claim": "Price from MXN 2,250,000 (MXN 44,100 per m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ladrillosinmobiliarios.com/desarrollos/punta-norte"
+   },
+   {
+    "claim": "Maintenance about MXN 45 per m2 per month",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ladrillosinmobiliarios.com/desarrollos/punta-norte"
+   },
+   {
+    "claim": "Seller has delivered Ceres City Homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://triburealestate.mx/property/ceres-city-homes/"
+   },
+   {
+    "claim": "Licencia de construcción from Ayuntamiento de Mérida",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://concoord.com.mx/punta-norte/"
+   },
+   {
+    "claim": "Contract template states the property may carry a mortgage or trust encumbrance during construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=7745-2022"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mérida, Yucatán",
+   "developer_company": "Subsuelo Urbanizadora, S.A. de C.V.",
+   "handover_promised": "2028-Q4",
+   "unit_types": [
+    "1BR",
+    "1BR loft",
+    "2BR"
+   ],
+   "size_min_m2": 51,
+   "size_max_m2": 76,
+   "price_min": 2250000,
+   "price_max": 3500000,
+   "currency": "MXN",
+   "deposit_pct": 10,
+   "payment_plan": "10/15/75",
+   "foreign_ownership": "Direct ownership (outside restricted zone)",
+   "rental_programme": "Optional property management at extra cost",
+   "service_charge": "About MXN 45 per m2 per month (portal estimate)",
+   "amenities": [
+    "pool and swim lane",
+    "padel court",
+    "indoor and outdoor gym",
+    "sports bar",
+    "coworking",
+    "wine room",
+    "pet park",
+    "EV charger"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Mérida (Dirección de Desarrollo Urbano)",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "PROFECO-registered presale contract published and confirmed on the federal registry",
+   "Long instalment plan with 75% due on delivery"
+  ],
+  "flags": [],
+  "sources": [
+   "https://concoord.com.mx/punta-norte/",
+   "https://concoord.com.mx/aviso-legal/",
+   "https://triburealestate.mx/download/4980/?tmstv=1687451935",
+   "https://rpca.profeco.gob.mx/getDoc?p=7745-2022",
+   "https://concoord.com.mx/download/815/?tmstv=1710456850",
+   "https://www.pincali.com/en/home/punta-norte-desarrollo-en-preventa-en-temozon",
+   "https://ladrillosinmobiliarios.com/desarrollos/punta-norte",
+   "https://triburealestate.mx/property/ceres-city-homes/"
+  ]
+ },
+ {
+  "slug": "rum-residencias-universitarias-mb-signature",
+  "name": "RUM Residencias Universitarias",
+  "developer": "MB Signature Properties with Grupo Nippo",
+  "area": "Next to Universidad Anáhuac Mayab, Santa Gertrudis Copó / Country zone, Mérida",
+  "country": "Mexico",
+  "market": "Mérida",
+  "stage": "off-plan",
+  "url": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab",
+  "docs_url": "https://ambitoinmobiliario.mx/rum-residencias-innovacion-y-estilo-de-vida-para-estudiantes-y-profesionales/",
+  "permit_number": null,
+  "docs_listed": [
+   "165 furnished student apartments",
+   "guaranteed rent MXN 12,100 per month for 10+ years (6.6% a year)",
+   "projected ROI table 18.6% incl. 12% appreciation",
+   "furniture inventory per unit",
+   "delivery June 2028 (friends and family presale)"
+  ],
+  "note": "165 furnished student apartments beside Universidad Anáhuac Mayab sold from MXN 2.3M with 'rentas garantizadas' of 6.6% a year for more than 10 years and a projected 18.6% annual ROI; the listing gives delivery as June 2028 while also saying 'entrega inmediata'. No licence, PROFECO number or guarantor for the rent is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2300000,
+   "currency": "MXN",
+   "title": "private ownership (inland, deeded to buyer)",
+   "guaranteed_language": true,
+   "yield_pct": 6.6,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 165,
+   "payment_plan": "Presale with interest-free instalments; cash discounts (listing)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Room list and furniture inventory only",
+   "record": "Marketer cites developer experience, no delivered projects named on pages opened",
+   "returns": "Advertises 'RENTAS GARANTIZADAS POR MÁS DE 10 AÑOS', 6.6% a year, and projected 18.6% annual ROI"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Guaranteed rent of 6.6% a year for more than 10 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ambitoinmobiliario.mx/rum-residencias-innovacion-y-estilo-de-vida-para-estudiantes-y-profesionales/"
+   },
+   {
+    "claim": "Projected annual ROI 18.6% (6.6% rent + 12% appreciation)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab"
+   },
+   {
+    "claim": "Delivery June 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab"
+   },
+   {
+    "claim": "Immediate delivery",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab"
+   },
+   {
+    "claim": "165 furnished apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ambitoinmobiliario.mx/rum-residencias-innovacion-y-estilo-de-vida-para-estudiantes-y-profesionales/"
+   },
+   {
+    "claim": "Price MXN 2.3M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab"
+   },
+   {
+    "claim": "Units deeded in buyer's name",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab"
+   },
+   {
+    "claim": "Who backs the rent guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ambitoinmobiliario.mx/rum-residencias-innovacion-y-estilo-de-vida-para-estudiantes-y-profesionales/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mérida, Yucatán",
+   "handover_promised": "2028-Q2",
+   "unit_types": [
+    "1BR furnished"
+   ],
+   "price_min": 2300000,
+   "currency": "MXN",
+   "foreign_ownership": "Direct ownership (outside restricted zone)",
+   "rental_programme": "Guaranteed rent MXN 12,100 per month (MXN 145,200 per year), indexed to INPC, for 10+ years",
+   "amenities": [
+    "pool",
+    "gym",
+    "coworking",
+    "game rooms",
+    "roof garden",
+    "24h security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Mérida",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Furniture package itemised"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab",
+   "https://ambitoinmobiliario.mx/rum-residencias-innovacion-y-estilo-de-vida-para-estudiantes-y-profesionales/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ }
+]

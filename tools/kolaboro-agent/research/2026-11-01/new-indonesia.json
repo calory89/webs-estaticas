@@ -1,0 +1,3499 @@
+[
+ {
+  "slug": "two-sudirman-private-residences-central-sudirman-development",
+  "name": "Two Sudirman Private Residences",
+  "developer": "PT Central Sudirman Development (Mitsubishi Estate, Taspen Properti Indonesia, Benhil Property JV)",
+  "area": "Sudirman CBD, Tanah Abang",
+  "country": "Indonesia",
+  "market": "Jakarta",
+  "stage": "under construction",
+  "url": "https://twosudirman.com",
+  "docs_url": "https://twosudirman.com",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: project overview, legal entity PT Central Sudirman Development and marketing gallery address",
+   "agency page: unit sizes 2BR 175-192 m2, 3BR 256-277 m2, 4BR 302-359 m2, penthouse 600-1,200 m2",
+   "agency page: price from about Rp65 million per m2 excluding VAT",
+   "news: construction started July 2024, 20% progress at Oct 2025 launch, completion end 2028, handover Q1 2029",
+   "news: mortgage partnerships with Bank Mandiri and Bank Danamon"
+  ],
+  "note": "Mitsubishi Estate's first condominium in Indonesia, a 65-floor residential tower in the Two Sudirman complex by PT Central Sudirman Development; national media reported 20% construction progress at the October 2025 launch, completion end 2028 and handover Q1 2029, with 175 m2 units from Rp13 billion. No building permit number, escrow arrangement or floor plans are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 13000000000,
+   "currency": "IDR",
+   "title": "strata title apartment (title type for foreigners not stated)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 20,
+   "progress_updates": false,
+   "developer_delivered": "Parent Mitsubishi Estate Co. (Tokyo-listed) lists other Indonesian assets (DAISAN Tangerang, The Grand Outlet Karawang) on its own site, but Nikkei Asia reports Two Sudirman is its first condominium sale in Indonesia",
+   "units": 320,
+   "payment_plan": null,
+   "price_per_m2": 74285714
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or other permit number on the developer site, agency listing or news coverage.",
+   "escrow": "Nothing published on deposit protection; only bank mortgage partnerships (Mandiri, Danamon) are announced.",
+   "progress": "ANTARA, VOI, Detik and Investortrust reported 20% construction progress at the 18 Oct 2025 launch; no newer figure found.",
+   "plans": "Unit size ranges are published by an agency but no floor plans were found on the developer site.",
+   "record": "Mitsubishi Estate is a Tokyo Stock Exchange listed developer; its own site lists its Indonesian portfolio. In Indonesia this is its first condominium (Nikkei Asia).",
+   "returns": "No guaranteed returns or yield figures found."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developed by PT Central Sudirman Development, a JV of Mitsubishi Estate, PT Mitsubishi Estate Indonesia, PT Taspen, Taspen Properti Indonesia and Benhil Property",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antaranews.com/berita/5183453/taspen-mitsubishi-estate-targetkan-two-sudirman-rampung-akhir-2028"
+   },
+   {
+    "claim": "Construction started July 2024 and was 20% complete in Oct 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antaranews.com/berita/5183453/taspen-mitsubishi-estate-targetkan-two-sudirman-rampung-akhir-2028"
+   },
+   {
+    "claim": "Completion end 2028, handover Q1 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.liputan6.com/bisnis/read/6190717/proyek-join-venture-taspen-mitsubishi-target-rampung-akhir-2028"
+   },
+   {
+    "claim": "175 m2 units start at Rp13 billion",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://asia.nikkei.com/business/markets/property/mitsubishi-estate-launches-sales-of-800-000-condos-in-jakarta"
+   },
+   {
+    "claim": "Number of residential units",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://kfmap.asia/apartment/two-sudirman-24908"
+   },
+   {
+    "claim": "Building permit (PBG) number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://twosudirman.com"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://twosudirman.com"
+   },
+   {
+    "claim": "Units can be bought by foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://webtan.impress.co.jp/r/prtimes/items/000000054.000035817"
+   },
+   {
+    "claim": "Mitsubishi Estate has delivered condominiums in Indonesia before",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://asia.nikkei.com/business/markets/property/mitsubishi-estate-launches-sales-of-800-000-condos-in-jakarta"
+   },
+   {
+    "claim": "Knight Frank lists the project as under construction, strata scheme, completion 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kfmap.asia/apartment/two-sudirman-24908"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jakarta, Indonesia (parent Mitsubishi Estate: Tokyo, Japan)",
+   "developer_company": "PT Central Sudirman Development (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Mitsubishi Estate Co., Ltd. is listed on the Tokyo Stock Exchange; partner PT Taspen is a state-owned enterprise",
+   "construction_start": "2024-07",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 175,
+   "size_max_m2": 1200,
+   "price_min": 13000000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata-title condominium; Japanese marketing partner Property Access targets Japanese investors, but the title type for foreigners is not published",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Complex includes Andaz Jakarta Sudirman (Hyatt) in Tower 1",
+   "amenities": [
+    "sky lounge",
+    "curated retail",
+    "green spaces",
+    "Andaz hotel in complex",
+    "Mitsubishi Electric lifts and VRV air conditioning"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DKI Jakarta provincial government (PBG via SIMBG / DPMPTSP)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction progress and timeline confirmed by national news agency ANTARA",
+   "Backed by a Tokyo-listed developer and a state-owned pension fund group",
+   "Starting price per unit size published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://twosudirman.com",
+   "https://kfmap.asia/apartment/two-sudirman-24908",
+   "https://www.antaranews.com/berita/5183453/taspen-mitsubishi-estate-targetkan-two-sudirman-rampung-akhir-2028",
+   "https://voi.id/en/amp/525163",
+   "https://www.detik.com/properti/berita/d-8166964/proyek-tower-mix-uses-di-jantung-jakarta-tengah-digarap-tingginya-330-meter",
+   "https://investortrust.id/business/82710/danamon-bdmn-dorong-pembiayaan-two-sudirman-residences-hunian-mewah-di-jantung-jakarta",
+   "https://www.liputan6.com/bisnis/read/6190717/proyek-join-venture-taspen-mitsubishi-target-rampung-akhir-2028",
+   "https://asia.nikkei.com/business/markets/property/mitsubishi-estate-launches-sales-of-800-000-condos-in-jakarta",
+   "https://www.mec.co.jp/en/service/global/asia/main_property/",
+   "https://webtan.impress.co.jp/r/prtimes/items/000000054.000035817",
+   "https://www.brighton.co.id/perumahan-baru/viewdetail/two-sudirman-private-residence",
+   "https://kfmap.asia/news/dana-tabungan-dan-asuransi-pegawai-negeri-and-mitsubishi-launch-two-sudirman-jakarta/3429"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "senja-sumba-imvest-land-indonesia",
+  "name": "Senja Sumba",
+  "developer": "PT Imvest Land Indonesia (Imvestland, part of S2I Swiss Innovative Investment SA)",
+  "area": "Lamboya Barat, West Sumba",
+  "country": "Indonesia",
+  "market": "Sumba",
+  "stage": "off-plan",
+  "url": "https://www.juwai.asia/77966033",
+  "docs_url": "https://imvestland.ch/nos-actifs-immobiliers/senja-sumba-obligation-senior-8-p-a",
+  "permit_number": null,
+  "docs_listed": [
+   "listing: 20 villas on 12 ha, priced EUR 290,000 to EUR 1,200,000, 30-year renewable leasehold",
+   "Imvestland: Senja Sumba senior bond 8% p.a., minimum CHF 20,000, land acquisition financing, 'coming soon'",
+   "LinkedIn post: fractional ownership, CHF 2,000,000 raise, minimum CHF 25,000, target 12-15% p.a.",
+   "Properstar listing: 2BR villa 148 m2, available from 30 Jun 2027"
+  ],
+  "note": "Swiss crowdinvesting group S2I is marketing Senja Sumba through its Imvestland platform as villa leaseholds (EUR 290,000 to 1.2 million), fractional shares and now an 8% senior bond to finance land acquisition. Villa count, site size and lease term differ between sources, and no permit, plans or construction progress are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 290000,
+   "currency": "EUR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "renewable (terms not published); sponsored article says leasehold up to 80 years via a Swiss holding company",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 20,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG, KKPR or other permit mentioned on any listing or Imvestland page.",
+   "escrow": "Nothing published. Sponsored Figaro article says financial guarantees are only in the secure investor portal.",
+   "progress": "No construction progress. Imvestland's current offer finances land acquisition, so construction has not visibly started.",
+   "plans": "Only descriptive layouts (two master suites, pavilion); no floor plans.",
+   "record": "S2I runs Swiss crowdinvesting platforms (Imvesters, Imvestlend), but no completed Indonesian projects are named.",
+   "returns": "Target returns 12-15% (fractional) and 15% (sponsored article); bond pays 8% expected. No 'guaranteed' wording found."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "20 villas on a 12 ha site",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.lefigaro.fr/economie/investissement-immobilier-en-indonesie-le-projet-eco-concu-senja-a-sumba-20260406"
+   },
+   {
+    "claim": "S2I says Challenges magazine reported a 34 ha site with about 24 villas in phase 1",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://swiss2i.ch/en/blog/imvestland-challenges-sumba-vision-fonciere-internationale"
+   },
+   {
+    "claim": "30-year renewable leasehold",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.lefigaro.fr/economie/investissement-immobilier-en-indonesie-le-projet-eco-concu-senja-a-sumba-20260406"
+   },
+   {
+    "claim": "Developed by PT Imvest Land Indonesia",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.juwai.asia/77966033"
+   },
+   {
+    "claim": "Land valued independently by Knight Frank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imvestland.ch/nos-actifs-immobiliers/senja-sumba-obligation-senior-8-p-a"
+   },
+   {
+    "claim": "Target return 15% per year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lefigaro.fr/economie/investissement-immobilier-en-indonesie-le-projet-eco-concu-senja-a-sumba-20260406"
+   },
+   {
+    "claim": "Villas available from 30 June 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.properstar.de/objekt/106455762"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.immobilier.fm/investir-en-indonesie-decouvrez-senja-le-projet-immobilier-eco-concu-a-sumba"
+   },
+   {
+    "claim": "Land title held for the project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imvestland.ch/nos-actifs-immobiliers/senja-sumba-obligation-senior-8-p-a"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lausanne, Switzerland",
+   "developer_company": "PT Imvest Land Indonesia (no registration number published); S2I (Swiss Innovative Investment) SA, Voie du Chariot 3, Lausanne",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 100,
+   "size_max_m2": 400,
+   "price_min": 290000,
+   "price_max": 1200000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold (30 years renewable per listing; up to 80 years via a Swiss company per sponsored article); fractional shares and a senior bond also offered",
+   "rental_programme": "Professionally managed villas with revenue share; target 12-15% p.a. stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pools",
+    "spa and wellness",
+    "horse ranch",
+    "private catamaran",
+    "5,000 m2 ecological farm",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Sumba Barat (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Price range and lease term stated on listings",
+   "Promoter is an identifiable Swiss company with a published address"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.juwai.asia/77966033",
+   "https://imvestland.ch/nos-actifs-immobiliers/senja-sumba-obligation-senior-8-p-a",
+   "https://www.linkedin.com/posts/imvestland_propertyinvestment2026-emergingdestinations-activity-7409134053381152770-zUkl",
+   "https://www.properstar.de/objekt/106455762",
+   "https://www.lefigaro.fr/economie/investissement-immobilier-en-indonesie-le-projet-eco-concu-senja-a-sumba-20260406",
+   "https://www.immobilier.fm/investir-en-indonesie-decouvrez-senja-le-projet-immobilier-eco-concu-a-sumba",
+   "https://swiss2i.ch/en/blog/imvestland-challenges-sumba-vision-fonciere-internationale",
+   "https://properties.lefigaro.com/announces/villa-real+estate-east+nusa+tenggara-idn/86004809/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "kabisu-sumba-villas",
+  "name": "Kabisu Sumba",
+  "developer": "Kabisu (founders Thomas Despin, Gilles Brignardello, Mert Temel, Frederic Kreder)",
+  "area": "Pantai Welibo, Gaura village, West Lamboya, West Sumba",
+  "country": "Indonesia",
+  "market": "Sumba",
+  "stage": "off-plan",
+  "url": "https://kabisu.id/",
+  "docs_url": "https://kabisu.id/investment/",
+  "permit_number": null,
+  "docs_listed": [
+   "10 villas on 29,330 m2 oceanfront land",
+   "price EUR 199,000 turnkey (next tier EUR 215,000); fractional entry EUR 55,000",
+   "timeline: land bought Jun 2024, sales opened summer 2025, construction start Q3 2026, opening Q4 2027",
+   "revenue split 60% investors / 30% management / 10% reserve",
+   "projected ROI 16-21%+",
+   "HGB title via PT PMA, 80 years renewable (described as 'freehold')"
+  ],
+  "note": "Ten-villa resort in West Sumba from a hospitality team; the site gives a dated timeline (construction starting Q3 2026, opening Q4 2027) and a EUR 199,000 entry price, but projects 21%+ yearly ROI and calls an HGB title 'freehold'. No permit number, plans or deposit protection are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 199000,
+   "currency": "EUR",
+   "title": "HGB via PT PMA",
+   "lease_base": 80,
+   "extension": "renewable (stated, terms not published)",
+   "guaranteed_language": false,
+   "yield_pct": 21,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Site says the team has built and operated 4 resorts in Sulawesi and Alor; none are named",
+   "units": 10,
+   "payment_plan": "construction-linked staged payments (stages not published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or other permit number; only 'legal processes finalised' in the timeline.",
+   "escrow": "Nothing published about deposit protection.",
+   "progress": "Dated milestone timeline: land purchase Jun 2024, design/legal Aug 2024, sales summer 2025, construction 'in progress' Q3 2026.",
+   "plans": "No floor plans on the site; villa specifications only in a gated deck.",
+   "record": "Claims 4 resorts built and operated and 5,000+ guests, but no resort is named, so not verifiable.",
+   "returns": "Projected 16-21%+ yearly ROI and up to $56,000 revenue per year; no 'guaranteed' wording."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Land purchase of 29,330 m2 completed June 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/"
+   },
+   {
+    "claim": "Title is 'freehold' (also described as 80-year renewable HGB via PT PMA)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kabisu.id/investment/"
+   },
+   {
+    "claim": "Construction begins Q3 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/investment/"
+   },
+   {
+    "claim": "Opening Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/investment/"
+   },
+   {
+    "claim": "Projected 21%+ yearly ROI after operating costs",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/investment/"
+   },
+   {
+    "claim": "Team built and operated 4 resorts",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/"
+   },
+   {
+    "claim": "4 of 5 founding villas sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/"
+   },
+   {
+    "claim": "Developer PT PMA is registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabisu.id/investment/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "West Sumba, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-07",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 199000,
+   "price_max": 215000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "construction-linked stages",
+   "foreign_ownership": "HGB land title held through a PT PMA, 80 years renewable (site also calls it freehold)",
+   "rental_programme": "Rental pool: 60% to investors, 30% management, 10% maintenance reserve; distributions twice a year; projected 16-21%+",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "oceanfront cliffs",
+    "private villas",
+    "resort management",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Sumba Barat (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated project timeline published with planned construction start and opening",
+   "Price, unit count and revenue split published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kabisu.id/",
+   "https://kabisu.id/investment/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "arya-sumba-kodi-arya-properties",
+  "name": "ARYA Sumba Kodi (villa phases)",
+  "developer": "Arya Properties (operating company PT Sumba Tourist Service)",
+  "area": "Ate Dalo, Kodi, Southwest Sumba",
+  "country": "Indonesia",
+  "market": "Sumba",
+  "stage": "under construction",
+  "url": "https://homesgofast.com/?p=693982",
+  "docs_url": "https://www.arya-sumba.com/interest",
+  "permit_number": null,
+  "docs_listed": [
+   "listing: 1BR 51 m2 from USD 114,990, 2BR 120 m2 from USD 154,990, 3BR 190 m2 from USD 219,990",
+   "listing: leasehold up to 80 years, payments 40% booking / 20% before construction / 30% shell / 10% handover",
+   "listing: illustrative ROI 10-13% at 50% occupancy, management fee 15% of net rental income",
+   "developer site: resort operating with villa types, investor contact page",
+   "Arya Properties: 454 units, 6 projects, USD 121 million portfolio, 18.6% average return"
+  ],
+  "note": "Czech-led Arya Properties sells further villa phases at its partly operating Arya Sumba Kodi resort from USD 114,990 on leases of up to 80 years. Local media report the regent allowed only a provisional trial opening in Aug 2025 pending complete permits and land documents, and a 2025 land boundary dispute and sea sand allegation (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 114990,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 13,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "First phase of Arya Sumba Kodi Resort opened provisionally with 25 rooms on 20 Aug 2025 (Pos Kupang, Victory News)",
+   "units": null,
+   "payment_plan": "40% on booking, 20% before construction, 30% after shell, 10% at handover",
+   "price_per_m2": 2255
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published. Regional media report the regent's Aug 2025 opening was provisional while permits and land ownership documents were completed.",
+   "escrow": "Nothing published on deposit protection.",
+   "progress": "No progress figure or dated update for the villas on sale; developer says further phases are under construction.",
+   "plans": "Unit and plot sizes only, no floor plans found.",
+   "record": "Phase 1 resort operating since a provisional opening on 20 Aug 2025, reported by Pos Kupang and Victory News.",
+   "returns": "Illustrative ROI 10-13% at 50% occupancy, stated as not guaranteed; developer site shows 18.6% average investor return."
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Arya Sumba Kodi Resort operating",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kupang.tribunnews.com/2025/08/20/bupati-ratu-wulla-resmikan-arya-sumba-kodi-resort"
+   },
+   {
+    "claim": "Resort fully licensed",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.victorynews.id/ntt/33115763431/arya-sumba-kodi-resort-gelar-operational-trial-ceremony-bupati-sbd-berikan-standar-pelayanan-terbaik"
+   },
+   {
+    "claim": "Land boundaries match the certificate",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://menarasumba.com/capai-kata-sepakat-kisruh-warga-dan-arya-sumba-resort-berakhir-dengan-suasana-kekeluargaan/"
+   },
+   {
+    "claim": "Resort completed in 14 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aryaproperties.com/article/petr-hemerka-the-entrepreneur-building-a-legacy-in-indonesia"
+   },
+   {
+    "claim": "Over 600 villas under construction or in operation",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aryaproperties.com/"
+   },
+   {
+    "claim": "Leasehold up to 80 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://homesgofast.com/?p=693982"
+   },
+   {
+    "claim": "18.6% average investor return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aryaproperties.com/"
+   },
+   {
+    "claim": "Operating company is PT Sumba Tourist Service",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.victorynews.id/ntt/33115763431/arya-sumba-kodi-resort-gelar-operational-trial-ceremony-bupati-sbd-berikan-standar-pelayanan-terbaik"
+   },
+   {
+    "claim": "Construction uses lawfully sourced sand",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ntt.pikiran-rakyat.com/hukrim/pr-2329211168/pasir-laut-sumba-dikeruk-dpr-desak-polisi-tangkap-otak-di-balik-proyek-hotel-arya"
+   },
+   {
+    "claim": "Price from USD 114,990",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://homesgofast.com/?p=693982"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sumba and Bali, Indonesia (team mainly from the Czech Republic)",
+   "developer_company": "PT Sumba Tourist Service (operating company named by regional media; registration number not published)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "glamp villa",
+    "1BR villa",
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 51,
+   "size_max_m2": 190,
+   "price_min": 114990,
+   "price_max": 219990,
+   "currency": "USD",
+   "deposit_pct": 40,
+   "payment_plan": "40/20/30/10 linked to booking, construction start, shell and handover",
+   "foreign_ownership": "Leasehold up to 80 years, with rights to live in, rent out or transfer the remaining term",
+   "rental_programme": "Resort-managed rental, management takes 15% of net rental income; illustrative 10-13% ROI at 50% occupancy",
+   "service_charge": "About USD 140-190 per month including villa insurance",
+   "brand": "ARYA Resorts",
+   "amenities": [
+    "beachfront",
+    "beach club",
+    "restaurant",
+    "horse riding",
+    "yoga",
+    "private pools optional"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Sumba Barat Daya (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "First phase of the resort is open and taking guests",
+   "Payment schedule linked to construction stages",
+   "Monthly service charge published"
+  ],
+  "flags": [
+   {
+    "text": "Regional media reported the regent of Southwest Sumba allowed only a provisional trial opening in Aug 2025 while the company completed permits and land ownership documents.",
+    "source": "https://kupang.tribunnews.com/2025/08/20/bupati-ratu-wulla-resmikan-arya-sumba-kodi-resort"
+   },
+   {
+    "text": "Menara Sumba reported a land boundary dispute with Ate Dalo villagers, mediated by police in Mar 2025; the resort asked the land agency BPN to re-measure the plot.",
+    "source": "https://menarasumba.com/capai-kata-sepakat-kisruh-warga-dan-arya-sumba-resort-berakhir-dengan-suasana-kekeluargaan/"
+   },
+   {
+    "text": "A Southwest Sumba DPRD member urged police to act over alleged use of beach sand in the hotel's construction (Apr 2025); management said its contractor was responsible and denied wrongdoing.",
+    "source": "https://ntt.pikiran-rakyat.com/hukrim/pr-2329211168/pasir-laut-sumba-dikeruk-dpr-desak-polisi-tangkap-otak-di-balik-proyek-hotel-arya"
+   }
+  ],
+  "sources": [
+   "https://homesgofast.com/?p=693982",
+   "https://www.arya-sumba.com/interest",
+   "https://www.arya-sumba.com/",
+   "https://aryaproperties.com/",
+   "https://aryaproperties.com/article/petr-hemerka-the-entrepreneur-building-a-legacy-in-indonesia",
+   "https://esalesinternational.com/property/arya-sumba-five-star-eco-luxury-beachfront-resort-villas-for-sale-in-sumba-indonesia/",
+   "https://menarasumba.com/capai-kata-sepakat-kisruh-warga-dan-arya-sumba-resort-berakhir-dengan-suasana-kekeluargaan/",
+   "https://www.victorynews.id/ntt/33115763431/arya-sumba-kodi-resort-gelar-operational-trial-ceremony-bupati-sbd-berikan-standar-pelayanan-terbaik",
+   "https://kupang.tribunnews.com/2025/08/20/bupati-ratu-wulla-resmikan-arya-sumba-kodi-resort",
+   "https://www.lintassumba.com/disinyalir-eksploitasi-pasir-laut-manajemen-arya-sumba-kodi-resort-angkat-bicara/",
+   "https://ntt.pikiran-rakyat.com/hukrim/pr-2329211168/pasir-laut-sumba-dikeruk-dpr-desak-polisi-tangkap-otak-di-balik-proyek-hotel-arya"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "noda-flores-noda-collective",
+  "name": "NODA Flores",
+  "developer": "Noda Collective",
+  "area": "Boleng (Boeleng village), West Manggarai, Flores",
+  "country": "Indonesia",
+  "market": "Labuan Bajo",
+  "stage": "off-plan",
+  "url": "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/",
+  "docs_url": "https://nodacollective.com/noda-flores",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: location 35 minutes from Labuan Bajo, project description",
+   "agency page: 25 villas (2-5BR) on 60,000 m2; 2BR 310 m2 from USD 678,710 to 5BR 1,105 m2 at USD 1,979,500",
+   "agency page: construction start Q1 2026, completion Q1 2028",
+   "agency page: 100-year HGB via PT PMA, 5-year structural warranty",
+   "agency page: payment plan USD 15,000 deposit, 50% on signing, 10/15/15/10 by construction stage"
+  ],
+  "note": "Boutique 25-villa community 35 minutes from Labuan Bajo by Australian-linked Noda Collective, marketed from USD 678,710 with completion Q1 2028. The agency page claims a '100-year HGB' title via PT PMA, longer than the 80-year cumulative HGB term in Indonesian rules, and asks 50% on signing; no permit, progress or plans are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 678710,
+   "currency": "USD",
+   "title": "HGB via PT PMA",
+   "lease_base": null,
+   "extension": "marketed as '100-year HGB' (not broken down)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 25,
+   "payment_plan": "USD 15,000 holding deposit; 50% on signing, 10% construction start, 15% mid-construction, 15% completion, 10% handover",
+   "price_per_m2": 2189
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number or approval mentioned.",
+   "escrow": "Nothing published; 50% of the price is due on signing.",
+   "progress": "Only a planned construction start (Q1 2026); no update or photos.",
+   "plans": "Villa sizes listed, no floor plans.",
+   "record": "Projects page lists concepts in Java and Sumba but no completed project; LinkedIn shows a 2-person company founded 2020.",
+   "returns": "Rental income from managed programme mentioned without figures or guarantees."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "100-year HGB title via PT PMA",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/"
+   },
+   {
+    "claim": "Construction starts Q1 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/"
+   },
+   {
+    "claim": "Completion Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/"
+   },
+   {
+    "claim": "ECO MANTRA certified sustainability figures",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/"
+   },
+   {
+    "claim": "Land of 60,000 m2 secured in Boleng",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nodacollective.com/noda-flores"
+   },
+   {
+    "claim": "Developer has delivered projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nodacollective.com/projects"
+   },
+   {
+    "claim": "PT PMA developer entity registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nodacollective.com/"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nodacollective.com/noda-flores"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2020,
+   "developer_hq": "Point Lonsdale, Australia (per LinkedIn)",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-01",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "3BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 310,
+   "size_max_m2": 1105,
+   "price_min": 678710,
+   "price_max": 1979500,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50/10/15/15/10 after USD 15,000 holding deposit",
+   "foreign_ownership": "HGB title through a PT PMA, marketed as 100 years",
+   "rental_programme": "Fully managed by NODA, no figures stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "farm-to-table restaurant",
+    "spa",
+    "fitness and yoga",
+    "art studio",
+    "permaculture garden"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Prices, sizes and a stage-linked payment plan are published",
+   "5-year structural warranty stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://nodacollective.com/noda-flores",
+   "https://nodacollective.com/",
+   "https://nodacollective.com/projects",
+   "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/",
+   "https://linkedin.com/company/nodacollective"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "maua-labuan-bajo-bukit-warloka-sejahtera",
+  "name": "Maua Labuan Bajo (Eco Luxury Resort villas)",
+  "developer": "PT Bukit Warloka Sejahtera Resort Development (BWS), managed by Swiss-Belhotel International",
+  "area": "Warloka Hill, Komodo, West Manggarai",
+  "country": "Indonesia",
+  "market": "Labuan Bajo",
+  "stage": "off-plan",
+  "url": "https://bajoecoresort.com/",
+  "docs_url": "https://bajoecoresort.com/about-bws/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: investor pitch, renders only (disclaimer that images are computer-generated)",
+   "press: 50 villas of 80-125 m2 on 12 ha, architect Popo Danes, opening 2026",
+   "press: ROI projected under 10 years"
+  ],
+  "note": "Resort villas sold to investors by PT Bukit Warloka Sejahtera with Swiss-Belhotel as operator; the Nov 2024 launch announced 50 villas and a 2026 opening, but the developer site still shows only renders and publishes no prices, title terms, permit or construction progress (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "IDR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 50,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit mentioned on the site or in launch coverage.",
+   "escrow": "Nothing published.",
+   "progress": "No construction update; the site states images are computer-generated renderings.",
+   "plans": "No floor plans; only villa size range in press.",
+   "record": "No completed BWS projects named. Its commissioner later announced construction of a separate Swiss-Belresort with Bintang Komodo Group (Aug 2026), not a delivery.",
+   "returns": "Investor pitch promises 'lucrative returns'; press quotes ROI under 10 years. No guarantee wording."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "50 villas on 12 ha at Warloka Hill, architect Popo Danes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.traveldailynews.asia/hotels-lodging/swiss-belhotels-eco-luxury-maua-labuan-bajo-resort-to-open-in-2026/"
+   },
+   {
+    "claim": "Swiss-Belhotel International will manage the resort",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.traveldailynews.asia/hotels-lodging/swiss-belhotels-eco-luxury-maua-labuan-bajo-resort-to-open-in-2026/"
+   },
+   {
+    "claim": "Opening in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asiadreams.com/?p=38707"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bajoecoresort.com/"
+   },
+   {
+    "claim": "ROI under 10 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://momsmoney.kontan.co.id/news/potensi-properti-labuan-bajo-menjanjikan-investasi-eco-luxury-resort-jadi-pilihan"
+   },
+   {
+    "claim": "BWS is a leading Indonesian luxury resort developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.traveldailynews.asia/hotels-lodging/swiss-belhotels-eco-luxury-maua-labuan-bajo-resort-to-open-in-2026/"
+   },
+   {
+    "claim": "Title type offered to foreign investors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bajoecoresort.com/about-bws/"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bajoecoresort.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "PT Bukit Warloka Sejahtera Resort Development (registration number not published); CEO Muhammad Rifqi Hazim, commissioner Fransiska Mochtar",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 125,
+   "price_min": null,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Hotel-managed by Swiss-Belhotel; ROI under 10 years stated in press",
+   "service_charge": null,
+   "brand": "Maua by Swiss-Belhotel",
+   "amenities": [
+    "5-star resort",
+    "sea views over Komodo National Park islands",
+    "eco design"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "International operator named and confirmed in trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bajoecoresort.com/",
+   "https://bajoecoresort.com/about-bws/",
+   "https://www.asiadreams.com/?p=38707",
+   "https://www.traveldailynews.asia/hotels-lodging/swiss-belhotels-eco-luxury-maua-labuan-bajo-resort-to-open-in-2026/",
+   "https://momsmoney.kontan.co.id/news/potensi-properti-labuan-bajo-menjanjikan-investasi-eco-luxury-resort-jadi-pilihan",
+   "https://money.kompas.com/read/2026/08/17/192400226/resor-baru-di-labuan-bajo-tambah-akomodasi-dan-peluang-ekonomi",
+   "https://www.swiss-belhotel.com/unveiling-labuan-bajo-swiss-belresort-labuan-bajo"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "habitat-vibe-the-habitat-lombok",
+  "name": "Habitat Vibe",
+  "developer": "The Habitat Lombok",
+  "area": "Jl. Raya Kuta, Central Kuta, Pujut, Central Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "stage": "under construction",
+  "url": "https://www.thehabitatlombok.com/",
+  "docs_url": "https://www.thehabitatlombok.com/vibe",
+  "permit_number": null,
+  "docs_listed": [
+   "31 villas in five types, 72-163 m2 indoor, plots 140-290 m2",
+   "prices from USD 165,000 (1BR) to USD 380,000 (3BR premium)",
+   "availability table dated 30 Sep 2026: 18 villas left",
+   "phase 1 delivery Q1 2027, six-stage build timeline (no dates)",
+   "HGB title held by the buyer's own PT PMA",
+   "estimated monthly returns per type at 85% occupancy",
+   "completed Forest and Garden collections, Google rating 4.8 from 66 reviews (read 15 Sep 2026)"
+  ],
+  "note": "31-villa collection in Central Kuta from USD 165,000 with HGB title through the buyer's own PT PMA; the developer says Vibe is under construction with phase 1 handover from Q1 2027 and publishes a dated availability table, but no permit number, progress figure or deposit protection (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 165000,
+   "currency": "USD",
+   "title": "HGB via buyer's PT PMA",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Habitat Forest and Habitat Garden (Central Kuta), described on the developer site as completed, sold out and operating as managed rentals",
+   "units": 31,
+   "payment_plan": "construction milestones at steel-frame completion and practical completion (amounts not published)",
+   "price_per_m2": 2292
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published.",
+   "escrow": "Nothing on deposit protection.",
+   "progress": "Says 'under construction' and lists build stages, but no percentage, dated photos or stage reached.",
+   "plans": "Per-type areas only; no floor plan drawings found.",
+   "record": "Forest and Garden named as completed, sold-out collections with Google reviews of the operating villas.",
+   "returns": "Estimated monthly returns at 85% occupancy, labelled as estimates; no guarantee."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 1 handover from Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/vibe"
+   },
+   {
+    "claim": "Vibe is under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/vibe"
+   },
+   {
+    "claim": "Forest and Garden collections completed and sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/"
+   },
+   {
+    "claim": "6+ completed luxury developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/"
+   },
+   {
+    "claim": "HGB title held by buyer's own PT PMA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/vibe"
+   },
+   {
+    "claim": "Estimated USD 2,633 monthly return on a 1BR at 85% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/vibe"
+   },
+   {
+    "claim": "18 of 31 villas available at 30 Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/vibe"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thehabitatlombok.com/vibe"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuta, Lombok, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa",
+    "2BR premium",
+    "3BR villa",
+    "3BR premium"
+   ],
+   "size_min_m2": 72,
+   "size_max_m2": 163,
+   "price_min": 165000,
+   "price_max": 380000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "construction milestone payments",
+   "foreign_ownership": "HGB title held through the buyer's own Indonesian PT PMA",
+   "rental_programme": "Optional professional rental management; estimated monthly returns published at 85% occupancy",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "reverse osmosis drinking water",
+    "steel-frame construction",
+    "rainwater harvesting",
+    "furniture pack"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated unit availability table and per-type prices published",
+   "Earlier collections named, with figures clearly separated from Vibe projections",
+   "Title structure (HGB through buyer's own PT PMA) clearly stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.thehabitatlombok.com/",
+   "https://www.thehabitatlombok.com/vibe"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "saona-studios-malasama-development",
+  "name": "Saona Studios",
+  "developer": "Malasama Development (PT Malasama Project Developments)",
+  "area": "South Kuta, Pujut, Central Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "stage": "off-plan",
+  "url": "https://malasamadevelopments.com/projects",
+  "docs_url": "https://malasamadevelopments.com/projects/saona-studios",
+  "permit_number": null,
+  "docs_listed": [
+   "28 ocean-view studios of 60 m2",
+   "price EUR 64,000 (project page) or EUR 69,000 (home and projects pages)",
+   "60-year leasehold (Hak Sewa) registered before a notary",
+   "projected 20% annual ROI; group target gross yield 13-22%",
+   "delivery 2026; 'site preparation already under way'",
+   "named completed projects: Oasis Dune Villas (14), Samana Boutique Studios (18), Malakasi Villas (7), Malasama Suites Hotel (10)"
+  ],
+  "note": "28 ocean-view 60 m2 studios in South Kuta on 60-year leaseholds from EUR 64,000 to 69,000, by a developer that names four completed, operating Kuta projects. The project page still promises delivery in 2026 while saying site preparation is only under way, and projects 20% annual ROI; no permit number or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 64000,
+   "currency": "EUR",
+   "title": "leasehold (Hak Sewa)",
+   "lease_base": 60,
+   "extension": "defined in each lease agreement (not published)",
+   "guaranteed_language": false,
+   "yield_pct": 20,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer site names Oasis Dune Villas (14 villas), Samana Boutique Studios (18 studios), Malakasi Villas (7 villas) and Malasama Suites Hotel (10 villas, operating, 9.3 on Booking.com)",
+   "units": 28,
+   "payment_plan": "per contract schedule during construction (not published)",
+   "price_per_m2": 1065
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Buying steps tell buyers to check the PBG during due diligence, but no number is published.",
+   "escrow": "Nothing on deposit protection.",
+   "progress": "Only 'site preparation already under way', undated; no percentage or photos with dates.",
+   "plans": "Unit description and size only; plans offered on request.",
+   "record": "Four completed and operating developments named with unit counts.",
+   "returns": "Projected 20% annual ROI, with a disclaimer that rental income is not guaranteed."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery in 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/projects/saona-studios"
+   },
+   {
+    "claim": "Price of the current phase",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/"
+   },
+   {
+    "claim": "Current sales phase (phase 2 vs phase 3)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/projects"
+   },
+   {
+    "claim": "60-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/projects/saona-studios"
+   },
+   {
+    "claim": "Projected 20% annual ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/projects/saona-studios"
+   },
+   {
+    "claim": "Malasama Suites Hotel operating with 9.3 Booking.com rating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/"
+   },
+   {
+    "claim": "Group operates through PT Malasama Project Developments and PT Sapo Mandalika Management (PT PMA)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/"
+   },
+   {
+    "claim": "75%+ year-round occupancy across operated properties",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malasamadevelopments.com/projects"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuta, Lombok, Indonesia",
+   "developer_company": "PT Malasama Project Developments; PT Sapo Mandalika Management (PT PMA) (registration numbers not published)",
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": 49,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 60,
+   "price_min": 64000,
+   "price_max": 69000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "60-year Hak Sewa leasehold in the buyer's own name, registered before a notary",
+   "rental_programme": "Fully managed short-term rental by Malasama; projected 20% ROI, not guaranteed",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sea-view balconies",
+    "restaurant",
+    "swimming pool",
+    "sun deck",
+    "reception",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Low entry price with all-inclusive pricing stated",
+   "Four completed and operating projects named with unit counts",
+   "Clear risk disclaimer that rental income is not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://malasamadevelopments.com/",
+   "https://malasamadevelopments.com/projects",
+   "https://malasamadevelopments.com/projects/saona-studios"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "linton-villas-mandalika-medusia",
+  "name": "Linton Villas",
+  "developer": "Not named (marketed by Medusia)",
+  "area": "Mandalika, Kuta, Central Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "stage": "off-plan",
+  "url": "https://medusiainvest.com/linton-en",
+  "docs_url": "https://medusiainvest.com/linton-en",
+  "permit_number": null,
+  "docs_listed": [
+   "38 standalone villas on about 4,500 m2, four types 38-88.7 m2",
+   "price from EUR 44,940",
+   "40-year leasehold",
+   "estimated delivery early 2028",
+   "management fee 30% of gross revenue",
+   "projected 76% occupancy and 15-30% ROI (stated as not guaranteed)",
+   "floor plans and legal structure only in a gated dossier"
+  ],
+  "note": "38 small furnished villas near the Mandalika circuit from EUR 44,940 on 40-year leaseholds with delivery estimated for early 2028; the marketing page does not name the developer and puts plans, legal structure and projections in a gated dossier, while projecting 15-30% ROI (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 44940,
+   "currency": "EUR",
+   "title": "leasehold",
+   "lease_base": 40,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 30,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 38,
+   "payment_plan": null,
+   "price_per_m2": 1183
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit mentioned.",
+   "escrow": "Nothing published; Medusia states it never manages investors' funds.",
+   "progress": "Described as off-plan; no construction information.",
+   "plans": "Floor plans are only in the dossier sent after registration.",
+   "record": "Developer is not named, so no track record can be checked.",
+   "returns": "Estimated ROI 15-30% and 76% occupancy, each labelled 'not a guaranteed return'."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "38 villas on about 4,500 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "40-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "Delivery early 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "Estimated ROI 15-30%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "1.5 km from the Mandalika circuit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "Developer identity and company registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "Land title held for the plot",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://medusiainvest.com/linton-en"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio villa",
+    "1BR villa",
+    "2BR master villa",
+    "2BR loft"
+   ],
+   "size_min_m2": 38,
+   "size_max_m2": 88.7,
+   "price_min": 44940,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "40-year leasehold",
+   "rental_programme": "External management at 30% of gross revenue; projected 76% occupancy",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "17.5 m infinity pool",
+    "24-hour reception",
+    "rooftop lounge",
+    "restaurant",
+    "coworking",
+    "gardens and cabanas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Management fee (30% of gross) disclosed up front",
+   "Projections clearly labelled as not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://medusiainvest.com/linton-en"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "zaya-kuta-hills-mojo-developments",
+  "name": "Zaya",
+  "developer": "MOJO Developments (PT. The Kuta Group)",
+  "area": "Kuta Hills, Kuta Mandalika, Central Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "stage": "under construction",
+  "url": "https://excellencebali.com/projects/zaya-private-pool-villas-kuta-lombok/",
+  "docs_url": "https://mojodevelopments.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: Zaya listed as 'Under Construction'; company PT. The Kuta Group, Jalan Raya Kuta",
+   "agency: 9 villas of 100 m2 from USD 130,000, 30-year leasehold, completion 2027",
+   "agency: payment plan 5% reservation, 45% contract, 10/15/20 by construction milestones, 5% handover",
+   "agency: projected 14.58% net ROI year 1, payback 5.3 years, 20% management fee",
+   "Rimba Ventures page: from USD 125,000, permits secured 2024, completion 2026"
+  ],
+  "note": "Nine 100 m2 pool villas in Kuta Mandalika on 30-year leaseholds from about USD 125,000 to 130,000; the developer lists Zaya as under construction, but completion is given as 2026, 2027 or Q2 2027 depending on the page, half the price is due at contract signing, and no permit number or progress figure is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 130000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 14.58,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 9,
+   "payment_plan": "5% reservation, 45% contract signing, 10% retaining walls, 15% foundation, 20% walls and roof, 5% handover",
+   "price_per_m2": 1300
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "A Rimba Ventures project page says 'permits secured' in 2024, with no number.",
+   "escrow": "Nothing published; 50% is paid by contract signing.",
+   "progress": "'Under Construction' label only; no figure or dated photos.",
+   "plans": "Two layout options described; floor plans only in a presentation pack on request.",
+   "record": "LinkedIn shows MOJO founded in 2024; its first resort (Rimba, 36 keys) was due July 2026 and no completed delivery is documented.",
+   "returns": "Projected 14.58% net year-1 ROI and 14-20% annual ROI; no guarantee wording, though the agency calls the models 'verified' and 'underwritten'."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion date",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://staging.rimbaventures.com/zaya-staging/"
+   },
+   {
+    "claim": "Permits secured in 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://staging.rimbaventures.com/zaya-staging/"
+   },
+   {
+    "claim": "Starting price",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.homesinasia.com/property/zaya-kuta"
+   },
+   {
+    "claim": "30-year leasehold (another listing says 28 to 30 years)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.homesinasia.com/property/zaya-kuta"
+   },
+   {
+    "claim": "Zaya is under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mojodevelopments.com/"
+   },
+   {
+    "claim": "Projected 14.58% net ROI in year 1 from 'verified financial models'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://excellencebali.com/projects/zaya-private-pool-villas-kuta-lombok/"
+   },
+   {
+    "claim": "Developer's Rimba resort delivering July 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mojodevelopments.com/"
+   },
+   {
+    "claim": "Developer company PT. The Kuta Group registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mojodevelopments.com/"
+   },
+   {
+    "claim": "Developer founded 2024 with 11 staff",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/mojodevelopments"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2024,
+   "developer_hq": "Kuta, Central Lombok, Indonesia",
+   "developer_company": "PT. The Kuta Group (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": "2026 (Rimba Ventures timeline)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa"
+   ],
+   "size_min_m2": 100,
+   "size_max_m2": 100,
+   "price_min": 125000,
+   "price_max": 130000,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "5/45/10/15/20/5 milestone plan",
+   "foreign_ownership": "30-year leasehold contract",
+   "rental_programme": "Managed by MOJO, 20% management fee; projected 14-20% annual ROI",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool per villa",
+    "outdoor bathtub",
+    "walk-in dressing room",
+    "private parking",
+    "reception"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Milestone payment plan published",
+   "Management fee disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mojodevelopments.com/",
+   "https://excellencebali.com/projects/zaya-private-pool-villas-kuta-lombok/",
+   "https://staging.rimbaventures.com/zaya-staging/",
+   "https://www.homesinasia.com/property/zaya-kuta",
+   "https://linkedin.com/company/mojodevelopments"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "nai-2-nusa-dua-vibe-development",
+  "name": "Nai 2 (NAI by Vibe wellness resort, phase 2)",
+  "developer": "PT PMA Vibe Development Lab",
+  "area": "Nusa Dua, Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "url": "https://vibedevelopment.pro/",
+  "docs_url": "https://vibedevelopment.pro/project/nai-2",
+  "permit_number": null,
+  "docs_listed": [
+   "live sales matrix: 133 units, 78 available, unit-by-unit prices USD 82,375-253,138, sizes 27-91 m2",
+   "handover 1Q 2029; leasehold 30+30 years",
+   "ROI 13.7% per unit; homepage calculator shows 53.3% IRR example",
+   "homepage: buyer payments through Bank Mandiri escrow accounts",
+   "homepage: PBG, Hak Pakai, SLF documents 'upon request' while also saying documents are public on OSS",
+   "24-month 0% instalment plan with 30% down payment"
+  ],
+  "note": "Second phase of the NAI medical wellness resort in Nusa Dua with 133 villas and apartments from USD 82,375 on 30+30-year leaseholds, handover 1Q 2029. The developer states buyer payments go through Bank Mandiri escrow accounts and publishes a live unit matrix, but PBG documents are only 'upon request' and its earlier Sanur projects have run past announced completion dates (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 82375,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "30-year extension stated (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": 13.7,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Developer states every buyer payment goes through independent Bank Mandiri escrow accounts",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer lists Sanur Cassandra 1 as completed; Cassandra 2 still in active construction in Feb 2026",
+   "units": 133,
+   "payment_plan": "30% down payment then 24 monthly instalments at 0% (promotion), or 3% discount for full payment",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Claims 'All with PBG / IMB. Documents public on OSS' but publishes no number; documents 'upon request'.",
+   "escrow": "Homepage headline: payments via Bank Mandiri escrow accounts. No account details or bank confirmation.",
+   "progress": "Sales launched Dec 2025; no construction update for Nai 2.",
+   "plans": "Unit matrix with areas, but no floor plan drawings seen.",
+   "record": "Sanur Cassandra 1 listed as completed on the developer's own project list.",
+   "returns": "13.7% ROI per unit and a 53.3% IRR calculator example; no guarantee wording."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "All buyer payments protected by Bank Mandiri escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   },
+   {
+    "claim": "PBG documents publicly verifiable on OSS",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   },
+   {
+    "claim": "Handover 1Q 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/project/nai-2"
+   },
+   {
+    "claim": "Leasehold 30+30 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/project/nai-2"
+   },
+   {
+    "claim": "Cassandra 2 to be fully completed within six months of May 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/article/behind-the-scenes-cassandra-two-construction-update-on-site-progress"
+   },
+   {
+    "claim": "Sanur Cassandra 1 completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   },
+   {
+    "claim": "On the market since 2007, projects financed only with own capital",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/article/closed-event-of-vibe-development-exclusive-pre-sale-before-the-start-of-sales"
+   },
+   {
+    "claim": "13.7% ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/project/nai-2"
+   },
+   {
+    "claim": "Developer is registered as PT PMA Vibe Development Lab",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Canggu, Badung, Bali (offices in Sanur, Sydney, Berlin)",
+   "developer_company": "PT PMA Vibe Development Lab, Jl. Raya Kayu Tulang No.18, Canggu (registration number not published)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "1BR villa",
+    "2BR two-storey villa"
+   ],
+   "size_min_m2": 27,
+   "size_max_m2": 91,
+   "price_min": 82375,
+   "price_max": 253138,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, 24 months 0%",
+   "foreign_ownership": "Leasehold 30+30 years",
+   "rental_programme": "Wellness resort operation; 13.7% ROI stated",
+   "service_charge": null,
+   "brand": "NAI by Vibe",
+   "amenities": [
+    "spa and wellness centre",
+    "medical wellness programmes",
+    "yoga centre",
+    "gym",
+    "kids zone",
+    "panoramic views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow arrangement with a named bank stated",
+   "Live unit-by-unit price and availability matrix",
+   "Lease extension term stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vibedevelopment.pro/",
+   "https://vibedevelopment.pro/project/nai-2",
+   "https://vibedevelopment.pro/article/behind-the-scenes-cassandra-two-construction-update-on-site-progress",
+   "https://vibedevelopment.pro/article/closed-event-of-vibe-development-exclusive-pre-sale-before-the-start-of-sales",
+   "https://vibedevelopment.pro/article/vibe-development-hosts-nai-wellness-complex-presentation-in-nusa-dua"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "the-collections-vol-2-618-development",
+  "name": "The Collections Vol. 2",
+  "developer": "618 Development (shareholder: Nuanu Creative City)",
+  "area": "Nuanu Creative City, Beraban, Kediri, Tabanan",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "under construction",
+  "url": "https://partners.nuanu.realestate/collectionsvol2_en",
+  "docs_url": "https://partners.nuanu.realestate/collectionsvol2_en",
+  "permit_number": null,
+  "docs_listed": [
+   "partner page: handover Q3-Q4 2026, from USD 1,014,000, 11-12% ROI, 8-9 year payback",
+   "partner page: download links for brochure, master plan, floor plan, specification, availability, PBG and construction progress",
+   "partner page: 'Freehold for foreigners and Indonesian citizens'",
+   "partner page: payment 60% down, 40% at handover",
+   "management by OXO Living",
+   "developer site: 6 villas, 3+1 bedrooms, 295 m2 living space, from IDR 16,528,200,000, completion Q1 2026"
+  ],
+  "note": "Six large villas inside Nuanu Creative City from USD 1,014,000 (IDR 16.5 billion); the developer site still shows completion Q1 2026 while the partner page now says Q3-Q4 2026. A PBG document, floor plan and progress file are linked and Vol. 1 is listed as completed, but the villas are marketed as 'freehold for foreigners', a title Indonesian law does not allow foreign individuals to hold, and 60% is due upfront (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1014000,
+   "currency": "USD",
+   "title": "marketed as freehold for foreigners (structure not explained)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer site lists The Collection Vol. 1 (4 villas) as completed Q2 2025; CEO also cites Flower Estates (Nuanu press release, Jul 2026), though the developer site still shows Flower Estate completing Q1 2027",
+   "units": 6,
+   "payment_plan": "60% down payment, 40% at handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "A 'PBG' document link is offered on the partner page, but no permit number appears on the page.",
+   "escrow": "Nothing on deposit protection; 60% due upfront.",
+   "progress": "A 'Construction progress' file is linked, but no figure or dated update is shown on the page.",
+   "plans": "Floor plan download published on the partner page.",
+   "record": "Developer site lists The Collection Vol. 1 (4 villas) as completed Q2 2025.",
+   "returns": "11-12% ROI and 8-9 year payback stated; no guarantee wording."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Freehold available to foreigners (Indonesian rules reserve Hak Milik for citizens; even Nuanu's own Luna Residences is sold as 60-year leasehold)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/properties/bali-balance-villas/"
+   },
+   {
+    "claim": "PBG obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/collectionsvol2_en"
+   },
+   {
+    "claim": "Handover date (Q1 2026 on developer site vs Q3-Q4 2026 on partner page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://618development.com/"
+   },
+   {
+    "claim": "Flower Estates delivered (cited by CEO) while developer site shows completion Q1 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://618development.com/"
+   },
+   {
+    "claim": "11-12% ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/collectionsvol2_en"
+   },
+   {
+    "claim": "Nuanu Creative City is a shareholder of the project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/collectionsvol2_en"
+   },
+   {
+    "claim": "Price from USD 1,014,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/collectionsvol2_en"
+   },
+   {
+    "claim": "Developer company registered (entity not named on page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://618development.com/projects/luna-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Tabanan, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 4,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": "2026-Q1",
+   "delay_months": 6,
+   "unit_types": [
+    "3+1BR villa"
+   ],
+   "size_min_m2": 295,
+   "size_max_m2": 295,
+   "price_min": 1014000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 60,
+   "payment_plan": "60/40",
+   "foreign_ownership": "Marketed as freehold for foreigners; the legal structure is not described on the page",
+   "rental_programme": "Property management by OXO Living; 11-12% ROI stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool and deck",
+    "landscaped garden",
+    "10 minutes walk to beach",
+    "Nuanu parks and beach clubs"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Tabanan (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plan, specification and PBG document offered for download",
+   "Developer names earlier completed projects in the same township"
+  ],
+  "flags": [],
+  "sources": [
+   "https://partners.nuanu.realestate/collectionsvol2_en",
+   "https://partners.nuanu.realestate/collectionsvol3_en",
+   "https://www.nuanu.com/blogs/luna-residences-debuts-as-nuanus-flagship-luxury-oceanview-residence",
+   "https://propertiplus.com/terintegrasi-nuanu-creative-city-luna-residences-ternyata-punya-skema-kepemilikan-yang-bikin-penasaran/",
+   "https://618development.com/projects/luna-residences",
+   "https://kabarproperti.id/nuanu-bali-luncurkan-luna-residences-hunian-premium-dengan-pemandangan-laut-seharga-mulai-rp33-miliar",
+   "https://riserealbali.com/properties/bali-balance-villas/",
+   "https://618development.com/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "oceaniq-nusa-dua-ii-oceaniq",
+  "name": "OceaniQ Nusa Dua II (Resort Nusa Dua)",
+  "developer": "OceaniQ (founder Andrey Khazov)",
+  "area": "Nusa Dua, Bukit Peninsula, Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "under construction",
+  "url": "https://balinsky.info/en/complexes/o/oceaniq-2",
+  "docs_url": "https://eng.oceaniq-nusadua.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: villa and apartment types, floor plan downloads, live video monitoring and Telegram updates",
+   "dated construction report Jul 2026 (LinkedIn): excavation done for villas 9, 10, 11, 25, 33, 65, 71; foundations under way",
+   "press release 28 Aug 2026: earthworks for several villas complete, foundations and retaining walls under way, completion next year",
+   "portal: 126 units from USD 176,000, 25-year leasehold, completion 2027, 'estimated ~25%'"
+  ],
+  "note": "Second OceaniQ villa and apartment complex in Nusa Dua, 126 units from USD 176,000 on 25-year leaseholds; the developer posts dated site reports (foundations under way in mid-2026) and says the PBG was obtained, though it dates the permit to Nov 2025 in one notice and to June 2026 in another, and no permit number or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 176000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 126,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer notices say PBG received (Nov 2025 on Balinsky; 'early June' 2026 on LinkedIn) but no number is published.",
+   "escrow": "Nothing on deposit protection.",
+   "progress": "Dated site report (7 Jul 2026) naming villas excavated and foundations in progress; press release 28 Aug 2026.",
+   "plans": "Floor plan downloads on the developer site.",
+   "record": "Phase I is 'nearing completion' per the Aug 2026 press release; the portal lists 0 completed projects.",
+   "returns": "Russian-language site projects price growth up to 60% by completion; no guaranteed rental wording."
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "PBG obtained for Phase Two in Nov 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://balinsky.info/en/news/oceaniq-villas-receives-building-permit"
+   },
+   {
+    "claim": "Final PBG received in early June 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/oceaniq-villas-061a25398_development-construction-building-activity-7480212672152748032-Vvdg"
+   },
+   {
+    "claim": "Construction about 25% complete",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.globenewswire.com/news-release/2026/08/28/3352788/0/en/oceaniq-forges-ahead-with-its-bali-portfolio.html"
+   },
+   {
+    "claim": "Construction finished in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globenewswire.com/news-release/2026/08/28/3352788/0/en/oceaniq-forges-ahead-with-its-bali-portfolio.html"
+   },
+   {
+    "claim": "Phase I nearing handover",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globenewswire.com/news-release/2026/08/28/3352788/0/en/oceaniq-forges-ahead-with-its-bali-portfolio.html"
+   },
+   {
+    "claim": "25-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/complexes/o/oceaniq-2"
+   },
+   {
+    "claim": "Price growth up to 60% by completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceaniq-nusadua.com/"
+   },
+   {
+    "claim": "Founder built over 120,000 m2 of real estate (offices for Yandex, Booking and others)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oceaniq-nusadua.com/"
+   },
+   {
+    "claim": "Independent technical supervision on site",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globenewswire.com/news-release/2026/08/28/3352788/0/en/oceaniq-forges-ahead-with-its-bali-portfolio.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Nusa Dua, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-06",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment",
+    "IQ villa",
+    "3BR villa",
+    "4BR residence",
+    "penthouse"
+   ],
+   "size_min_m2": 55,
+   "size_max_m2": null,
+   "price_min": 176000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold (25 years base per portal) signed before a PPAT notary",
+   "rental_programme": "Turnkey management after handover; no figures on developer site in English",
+   "service_charge": null,
+   "brand": "OceaniQ",
+   "amenities": [
+    "fitness centre",
+    "plunge pool",
+    "massage rooms",
+    "yoga studio",
+    "fire pit",
+    "restaurants and bakery"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated, plot-by-plot construction reports",
+   "Floor plans downloadable",
+   "Live video monitoring of the site offered to buyers"
+  ],
+  "flags": [],
+  "sources": [
+   "https://balinsky.info/en/complexes/o/oceaniq-2",
+   "https://balinsky.info/en/news/oceaniq-villas-receives-building-permit",
+   "https://eng.oceaniq-nusadua.com/",
+   "https://oceaniq-nusadua.com/",
+   "https://www.linkedin.com/posts/oceaniq-villas-061a25398_development-construction-building-activity-7480212672152748032-Vvdg",
+   "https://www.globenewswire.com/news-release/2026/08/28/3352788/0/en/oceaniq-forges-ahead-with-its-bali-portfolio.html"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "sky-stars-ocean-view-phase-2-magnum-estate",
+  "name": "Sky Stars Ocean View Phase 2",
+  "developer": "Magnum Estate International",
+  "area": "Jl. Taman Paradise, Ungasan, Bukit Peninsula, Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "url": "https://magnumestate.com/projects/sky-stars",
+  "docs_url": "https://magnumestate.com/projects/sky-stars",
+  "permit_number": null,
+  "docs_listed": [
+   "project page: villas from USD 508,000 furnished, projected ROI 10.8%, 1BR 95-104 m2 and 2BR 107-135 m2 with land sizes",
+   "project page: 'each project under its own building permit (PBG)', contracts verified by independent notaries",
+   "Uluwatu page: sold on leasehold, price list dated June 2026, portfolio occupancy about 65%, payback 9-10 years",
+   "LinkedIn Jun 2026: second phase of 13 villas launching, 'freehold or 99-year leasehold'",
+   "phase 1 (19 villas) operating as rentals"
+  ],
+  "note": "A 13-villa second phase at Magnum Estate's Sky Stars enclave in Ungasan, from USD 508,000, next to a first phase that is built and operating; the developer offers 'freehold or 99-year leasehold' on social media while its own site says leasehold, publishes no PBG number, and has been in court over its Umalas Signature project (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 508000,
+   "currency": "USD",
+   "title": "leasehold (phase 2 also promoted as freehold or 99-year leasehold)",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 10.8,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Sky Stars phase 1 (19 villas) operating with a rental manager from June 2026; The Umalas Signature (207 units) soft-opened 30 Oct 2025 after a legal dispute (NovAsia, Mantra Bali)",
+   "units": 13,
+   "payment_plan": "instalments during construction (terms per unit, not published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "General claim that each project has its own PBG; no number for Sky Stars. (For Umalas Signature the project company did publish PBG SK-PBG-510306-11082022-002.)",
+   "escrow": "Nothing on deposit protection.",
+   "progress": "Phase 2 announced as 'launching soon'; no construction information.",
+   "plans": "Project page has a 'Floor plans and prices' section with unit and land areas.",
+   "record": "Phase 1 villas and The Umalas Signature are built and operating, confirmed by a local news report and an independent buyer's review.",
+   "returns": "Projected 10.8% ROI, with portfolio occupancy around 65% stated; no guarantee."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 2 available as freehold or 99-year leasehold",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://magnumestate.com/bali-villas-for-sale/uluwatu"
+   },
+   {
+    "claim": "Each project has its own PBG",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://magnumestate.com/projects/sky-stars"
+   },
+   {
+    "claim": "Phase 1 built and operating",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://novasia.estate/en/projects/sky-stars-ocean-view/"
+   },
+   {
+    "claim": "Phase 1 completion date",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://novasia.estate/en/projects/sky-stars-ocean-view/"
+   },
+   {
+    "claim": "The Umalas Signature holds PBG SK-PBG-510306-11082022-002 and SLF SK-SLF-510306-07082022-001",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mantrabali.com/akhir-konflik-the-umalas-signature/"
+   },
+   {
+    "claim": "575 units across 8 projects since 2019",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://magnumestate.com/projects"
+   },
+   {
+    "claim": "Projected 10.8% ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://magnumestate.com/projects/sky-stars"
+   },
+   {
+    "claim": "Magnum acquired PT Samahita Inti Prasada (parent of PT Samahita Umalas Prasada) for Rp14 billion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://magnumestate.com/blog/press-release-magnum-estate-clarifies-legal-developments-in-the-umalas-signature-case"
+   },
+   {
+    "claim": "Denpasar District Court verdict in case 901/Pid.B/2025/PN.DPS on 20 Jan 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://magnumestate.com/blog/press-release-magnum-estate-clarifies-legal-developments-in-the-umalas-signature-case"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2019,
+   "developer_hq": "Kerobokan, Badung, Bali",
+   "developer_company": "Magnum Estate International (PT entity for Sky Stars not published; Umalas project company PT Samahita Umalas Prasada)",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": 226,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 95,
+   "size_max_m2": 135,
+   "price_min": 508000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "construction instalments",
+   "foreign_ownership": "Leasehold (hak sewa) per developer site; social media also offers freehold or 99-year lease for phase 2",
+   "rental_programme": "In-house rental management; projected 10.8% ROI, about 65% portfolio occupancy",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "ocean and island views",
+    "private pools",
+    "24/7 security",
+    "five-star services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "First phase of the same enclave is built and taking guests",
+   "Unit and land areas and a dated price list published",
+   "Portfolio occupancy (about 65%) disclosed alongside the ROI projection"
+  ],
+  "flags": [
+   {
+    "text": "Teropong News reported in Jun 2025 that Magnum Estate was navigating legal challenges linked to a fraud case involving a former partner identified as BT, which delayed handovers at The Umalas Signature.",
+    "source": "https://teropongnews.com/2025/06/magnum-estate-international-shaping-the-future-of-property-in-bali-and-beyond/"
+   }
+  ],
+  "sources": [
+   "https://magnumestate.com/projects",
+   "https://magnumestate.com/projects/sky-stars",
+   "https://magnumestate.com/bali-villas-for-sale/uluwatu",
+   "https://www.linkedin.com/posts/magnum-estate_the-first-ultra-luxury-villas-in-sky-stars-activity-7471114616450727936-MLPN",
+   "https://novasia.estate/en/projects/sky-stars-ocean-view/",
+   "https://novasia.estate/en/projects/the-umalas-signature/",
+   "https://mantrabali.com/akhir-konflik-the-umalas-signature/",
+   "https://magnumestate.com/blog/press-release-magnum-estate-clarifies-legal-developments-in-the-umalas-signature-case",
+   "https://teropongnews.com/2025/06/magnum-estate-international-shaping-the-future-of-property-in-bali-and-beyond/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "blacksand-villas-padang-linjong-canggu",
+  "name": "Blacksand Villas Padang Linjong",
+  "developer": "Blacksand Villas",
+  "area": "Padang Linjong, Canggu, Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "under construction",
+  "url": "https://blacksand.villas/",
+  "docs_url": "https://blacksand.villas/",
+  "permit_number": null,
+  "docs_listed": [
+   "1BR 85 m2 from USD 245,000; 2BR 95 m2 from USD 299,000",
+   "30-year leasehold with 25-year extension 'secured', or a 'freehold option'",
+   "10% holding deposit into a notary-managed escrow account during two-week due diligence; 30% on signing; balance by construction progress",
+   "construction has begun; handover January 2027",
+   "projected 12.5% net ROI; 50 villas sold across 7 projects; architect Biombo"
+  ],
+  "note": "Small off-plan villa collection in Padang Linjong, Canggu, from USD 245,000 on a 30+25-year lease, with handover promised January 2027; the developer says the 10% reservation deposit sits in a notary-managed escrow during due diligence, but publishes no permit number or progress update and also offers foreigners a 'freehold option' (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 245000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "25-year extension 'secured' at fair market value set by independent appraisals",
+   "guaranteed_language": false,
+   "yield_pct": 12.5,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "10% holding deposit placed in a notary-managed escrow account during a two-week legal due diligence period",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Claims 50 villas sold across 7 projects and 3 years as an Airbnb Superhost; projects not named",
+   "units": null,
+   "payment_plan": "10% holding deposit (notary escrow), 30% on signing, balance by construction progress",
+   "price_per_m2": 2882
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Nothing about PBG; the lease is described as 'fully legal and registered'.",
+   "escrow": "FAQ states the 10% holding deposit goes into a notary-managed escrow account. Later payments (30% plus stages) are not described as protected.",
+   "progress": "'Construction has already begun', undated; no photos with dates or percentage.",
+   "plans": "No floor plans on the page; full brochure on request.",
+   "record": "50 villas sold across 7 projects claimed, none named.",
+   "returns": "Projected 12.5% net ROI; no guarantee."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Reservation deposit held in notary-managed escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   },
+   {
+    "claim": "Freehold option available to foreign buyers",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/properties/bali-balance-villas/"
+   },
+   {
+    "claim": "25-year extension 'secured'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   },
+   {
+    "claim": "Handover January 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   },
+   {
+    "claim": "Construction already begun",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   },
+   {
+    "claim": "50 villas sold across 7 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   },
+   {
+    "claim": "Projected 12.5% net ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blacksand.villas/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Canggu, Bali",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": 85,
+   "size_max_m2": 95,
+   "price_min": 245000,
+   "price_max": 299000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10/30/balance by construction",
+   "foreign_ownership": "30-year leasehold in personal or company name, priority renewal 25 years at market value; 'freehold option' also advertised",
+   "rental_programme": "Optional in-house management; projected 12.5% net ROI",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "open tropical layout",
+    "near Echo Beach"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Reservation deposit held by a notary during due diligence",
+   "Prices, sizes, lease and extension terms stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://blacksand.villas/",
+   "https://riserealbali.com/properties/bali-balance-villas/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "hidden-city-ubud-phase-2-apartments",
+  "name": "Hidden City Ubud (Phase II apartments)",
+  "developer": "Hidden City Ubud (developer entity not named)",
+  "area": "Petulu, Ubud, Gianyar",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "under construction",
+  "url": "https://hiddencityubud.com/",
+  "docs_url": "https://hiddencityubud.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "masterplan: 12 villas, 18 townhouses, 94 apartments on 16,000 m2 residential area",
+   "Phase I villas and townhouses 'completed and ready for handover' June 2025",
+   "Phase II studios from 30 m2 and 1BR from 64 m2, delivery Q3 2026, 19 units left",
+   "floor plans per unit type",
+   "land lease until 2053 with 20-year extension at a fixed rate in the contract",
+   "'all payments processed via notary escrow account'; interest-free instalments to completion",
+   "estimated returns 9-11% (rental) and 25-35% a year (resale strategy); PBG and 20-year structural warranty claimed"
+  ],
+  "note": "Mixed villa, townhouse and apartment complex in Ubud whose developer says Phase I was finished in June 2025 and that all payments go through a notary escrow account; Phase II apartments were due Q3 2026 but are still being sold off-plan, the developer company is not named and the site advertises 25-35% annual returns for resale buyers (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": "land lease to 2053 plus 20 years at a fixed rate stated in the contract",
+   "guaranteed_language": false,
+   "yield_pct": 11,
+   "completion": "2026-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Site states all payments are processed via a notary escrow account",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Phase I villas and townhouses (Townhouse Stone, Villa Mira, Villa Losta) shown as completed and ready for handover, June 2025",
+   "units": 94,
+   "payment_plan": "down payment then interest-free instalments until end of construction",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Headline claims PBG, but no number is shown.",
+   "escrow": "Investment section says all payments are processed via a notary escrow account.",
+   "progress": "Only phase labels and a delivery date (Q3 2026, now passed); no progress figure or dated photos for Phase II.",
+   "plans": "Floor plans for townhouse, villa, studio and 1BR types on the page.",
+   "record": "Phase I units marked completed June 2025 on the developer's own site.",
+   "returns": "Estimated 9-11% rental and 25-35% a year resale returns, labelled estimates; no guarantee wording."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase II delivery Q3 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "Phase I completed June 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "PBG obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "All payments via notary escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "Land lease until 2053 with 20-year fixed-rate extension",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "Estimated returns 25-35% a year (buy at excavation, resell)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "Developer completed over 1,200,000 m2 in the past 3 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "20-year structural warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   },
+   {
+    "claim": "Developer legal entity registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hiddencityubud.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ubud, Gianyar, Bali",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR apartment",
+    "townhouse",
+    "villa"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 375,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "interest-free instalments to completion",
+   "foreign_ownership": "Leasehold of land until 2053 with 20-year extension",
+   "rental_programme": "Management company with 14+ years experience (unnamed); estimated 9-11% annual rental return",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "coworking",
+    "cinema",
+    "saunas",
+    "wellness space",
+    "fitness centre",
+    "planned shopping mall"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Gianyar (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans for every unit type published",
+   "Notary escrow for payments stated",
+   "Lease end date (2053) and extension terms stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://hiddencityubud.com/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "minori-luxury-seminyak-eco-invest-group",
+  "name": "Minori Luxury Seminyak",
+  "developer": "Eco Invest Group (Eco Building and Eco Engineering)",
+  "area": "Seminyak (Jl. Tukad Mawa area), Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "under construction",
+  "url": "https://excellencebali.com/projects/minori-seminyak-villas/",
+  "docs_url": "https://ecoinvest.group/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: 11 villas, price from IDR 3.4 billion (about USD 205,000), ROI up to 15%, 6% return guarantee, 60-year leasehold, 24-month 0% instalments",
+   "agency: unit-by-unit sizes and prices USD 299,000-665,900, construction 80% complete, handover Q3 2026, overall completion June 2027",
+   "agency: 'contractually guaranteed 6% net annual return for two years'",
+   "agency: KKPR approved, Hak Sewa registered, NIB registered, Pink Zone",
+   "operating hotels named: Origin Ubud, Anusara Luxury Villas Ubud"
+  ],
+  "note": "11-villa boutique complex in Seminyak by a Bali developer with its own concrete plant and two operating hotels; an agency reports 80% construction progress, but handover is given as Q3 2026 or June 2027 depending on the page and the developer advertises a guaranteed 6% return for two years. No PBG number or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 205000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 60,
+   "extension": "25-year lease prepaid plus 25-year guaranteed and 10-year priority extensions (agency); one listing says lease until 16 May 2050 plus extension, another until 2086",
+   "guaranteed_language": true,
+   "yield_pct": 15,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 80,
+   "progress_updates": false,
+   "developer_delivered": "Developer site says the group runs two operating hotels; agency names Origin Ubud and Anusara Luxury Villas Ubud as managed properties",
+   "units": 11,
+   "payment_plan": "30% down payment, 0% instalments up to 24 months or to June 2027; 5% discount for cash",
+   "price_per_m2": 3017
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listings state KKPR approved and NIB registered, but no PBG and no numbers.",
+   "escrow": "Nothing published; booking fee is non-refundable.",
+   "progress": "Agency page states construction has reached 80%.",
+   "plans": "Unit areas listed; no floor plan drawings seen.",
+   "record": "Two operating hotels in Ubud named.",
+   "returns": "Developer site: '6% return guarantee' and 'Get a guaranteed 6% return in the first year'; agency: contractually guaranteed 6% for two years."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover date",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
+   },
+   {
+    "claim": "Lease end date",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://koalista.com/p/minori-seminyak/"
+   },
+   {
+    "claim": "Guaranteed 6% return (first year on developer site, two years on listings)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ecoinvest.group/"
+   },
+   {
+    "claim": "Construction 80% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
+   },
+   {
+    "claim": "KKPR approved and NIB registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.luxoproperty.co.id/listing/lp-bsv-016"
+   },
+   {
+    "claim": "Projected 15-17% net yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
+   },
+   {
+    "claim": "Developer finances construction without bank loans and owns a concrete plant",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
+   },
+   {
+    "claim": "Group operates two hotels",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecoinvest.group/"
+   },
+   {
+    "claim": "Number of villas (10 vs 11)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Denpasar, Bali",
+   "developer_company": "Eco Invest Group (Eco Building and Eco Engineering); PT PMA named on listings without number",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": "2026-Q3",
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 67.8,
+   "size_max_m2": 356.5,
+   "price_min": 205000,
+   "price_max": 665900,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, 0% instalments",
+   "foreign_ownership": "Hak Sewa leasehold up to 60 years (25 prepaid + 25 guaranteed + 10 priority)",
+   "rental_programme": "Eco Management; guaranteed 6% for the first 1-2 years, projected 12-17% afterwards",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools with kids' area",
+    "695 m2 spa and wellness wing",
+    "lagoon pool",
+    "delivery kitchen",
+    "concierge and shuttle",
+    "babysitting"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction progress figure published (80%)",
+   "Unit-by-unit prices and sizes published",
+   "Structural (5-year) and waterproofing (7-year) warranties stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ecoinvest.group/",
+   "https://excellencebali.com/projects/minori-seminyak-villas/",
+   "https://www.luxoproperty.co.id/listing/lp-bsv-016",
+   "https://prestigepropertybali.com/property/exclusive-boutique-villas-in-seminyak-bali",
+   "https://www.asia.villas/projects/indonesia/bali/badung/seminyak/minori-seminyak",
+   "https://koalista.com/p/minori-seminyak/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "luna-villas-uluwatu-zayari-developments",
+  "name": "LUNA Villas Uluwatu",
+  "developer": "ZAYARI Developments",
+  "area": "Near Nyang Nyang beach, Uluwatu, Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "under construction",
+  "url": "https://zayaridevelopments.com/",
+  "docs_url": "https://zayaridevelopments.com/projects/luna-uluwatu/",
+  "permit_number": null,
+  "docs_listed": [
+   "3BR villas, 242 m2 living space, EUR 350,000 turnkey",
+   "25-year lease plus 25-year extension option",
+   "start Nov 2025; delivery December 2026 / turnkey January 2027",
+   "floor plan description (ground, upper floor, rooftop with jacuzzi)",
+   "permits 'applied for' and handled by the developer",
+   "12-20% annual net ROI claimed from identical villas; management by House of Reservations"
+  ],
+  "note": "Small Dutch-marketed collection of 3BR ocean-view villas near Nyang Nyang beach at EUR 350,000 on a 25+25-year lease, construction started Nov 2025 with delivery around January 2027; the developer says building and commercial permits have been 'applied for', so no PBG is shown, and it cites 12-20% net returns from earlier villas it does not name (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 350000,
+   "currency": "EUR",
+   "title": "leasehold (with Hak Pakai recommended)",
+   "lease_base": 25,
+   "extension": "25-year extension clause (renewal negotiated with landowner and notarised)",
+   "guaranteed_language": false,
+   "yield_pct": 20,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Says the same villa model was built and delivered in and around Canggu and that its design and build partners have 100+ completed villas; no project names",
+   "units": 4,
+   "payment_plan": "staged payments linked to construction milestones (amounts not published)",
+   "price_per_m2": 1446
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer states permits 'have been applied for'; none granted or numbered on the page.",
+   "escrow": "Nothing on deposit protection.",
+   "progress": "Start date (Nov 2025) only; photo and video updates promised to buyers privately.",
+   "plans": "Floorplan section describing each level of the villa.",
+   "record": "Earlier Canggu villas and partners' 100+ villas mentioned without names.",
+   "returns": "12-20% annual net ROI 'based on previous bookings'; FAQ says projections use 14%. No guarantee."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building and commercial permits applied for (not yet granted)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/projects/luna-uluwatu/"
+   },
+   {
+    "claim": "Number of villas (3 vs 4)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/"
+   },
+   {
+    "claim": "Delivery date (December 2026 vs January 2027)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/projects/luna-uluwatu/"
+   },
+   {
+    "claim": "Construction started November 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/"
+   },
+   {
+    "claim": "12-20% net returns based on previous bookings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/projects/luna-uluwatu/"
+   },
+   {
+    "claim": "Same villa model delivered in Canggu",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/projects/luna-uluwatu/"
+   },
+   {
+    "claim": "25-year lease with 25-year extension clause",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/projects/luna-uluwatu/"
+   },
+   {
+    "claim": "Developer company registered (entity not named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zayaridevelopments.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2027-Q1",
+   "original_handover": "2026-12",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa"
+   ],
+   "size_min_m2": 242,
+   "size_max_m2": 242,
+   "price_min": 350000,
+   "price_max": 350000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "construction milestones",
+   "foreign_ownership": "Leasehold (erfpacht) combined with Hak Pakai recommended; no PT PMA needed per FAQ",
+   "rental_programme": "House of Reservations management; 12-20% net claimed, 14% used in projections",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "rooftop jacuzzi and outdoor kitchen",
+    "tropical garden",
+    "boundary walls",
+    "scooter parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Honest statement that permits are applied for, not yet granted",
+   "Clear explanation that foreigners cannot hold freehold and that lease renewals are not automatic"
+  ],
+  "flags": [],
+  "sources": [
+   "https://zayaridevelopments.com/",
+   "https://zayaridevelopments.com/projects/luna-uluwatu/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "jimbaran-cliffside-reserve-aterra",
+  "name": "Jimbaran Cliffside Reserve",
+  "developer": "Not named (marketed by Aterra Estate)",
+  "area": "Jimbaran, South Kuta, Badung",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "url": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve",
+  "docs_url": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve",
+  "permit_number": null,
+  "docs_listed": [
+   "7 villas (text also says one 3BR and five 1BR), 1BR about 63 m2 on 124-170 m2 plots",
+   "from USD 249,000 taxes included",
+   "29-year Hak Sewa leasehold with extension rights, registered lease agreement; Pink Zone",
+   "handover Q2 2027; 30% down, instalments by construction progress",
+   "estimated ROI 13-15%, rental yield 8-12%, payback 7-9 years",
+   "floor plan tab in gallery"
+  ],
+  "note": "Seven-villa off-plan collection in Jimbaran sold through Aterra Estate from USD 249,000 on a 29-year leasehold with Q2 2027 handover; the developer is not named, unit count and distance to the beach differ within the same page, and no permit or construction information is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 249000,
+   "currency": "USD",
+   "title": "leasehold (Hak Sewa)",
+   "lease_base": 29,
+   "extension": "extension rights (terms not published)",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 7,
+   "payment_plan": "30% down payment, staged instalments by construction progress",
+   "price_per_m2": 3952
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit mentioned; only zoning (Pink Zone) and a registered lease agreement.",
+   "escrow": "Nothing published.",
+   "progress": "Status 'Off-Plan'; no construction information.",
+   "plans": "Floor plan image in the page gallery.",
+   "record": "Developer not named; Aterra is a brokerage established 2025.",
+   "returns": "Estimated ROI 13-15% and yield 8-12%; no guarantee for this project."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Number of villas (7 vs one 3BR plus five 1BR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   },
+   {
+    "claim": "Distance to Jimbaran Beach (270 m vs 10-15 minutes)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   },
+   {
+    "claim": "Pink Zone (tourism) land",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   },
+   {
+    "claim": "Registered Hak Sewa lease agreement, 29 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   },
+   {
+    "claim": "Handover Q2 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   },
+   {
+    "claim": "Estimated ROI 13-15%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   },
+   {
+    "claim": "Developer identity and registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aterraestate.com/"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": null,
+   "price_min": 249000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, construction-linked instalments",
+   "foreign_ownership": "29-year Hak Sewa leasehold with extension rights",
+   "rental_programme": "Property management services; estimated 8-12% yield",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "furnished",
+    "gated access with 24/7 security",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Price stated as including taxes",
+   "Floor plan and lease term published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve",
+   "https://www.aterraestate.com/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "luna-residences-nuanu-618-development",
+  "name": "Luna Residences",
+  "developer": "618 Development with Nuanu Real Estate and Luna Beach Club",
+  "area": "Nuanu Creative City, Nyanyi, Tabanan",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "url": "https://www.nuanu.com/blogs/luna-residences-debuts-as-nuanus-flagship-luxury-oceanview-residence",
+  "docs_url": "https://618development.com/projects/luna-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "88 studio, suite and penthouse units, mixed private and hotel-managed floors",
+   "from IDR 3.3 billion; 60-year Hak Sewa leasehold",
+   "25% down payment, balance by construction progress",
+   "handover from Q4 2028; about 15 units released per quarter",
+   "architect YODEZEEN; Luna Black Card beach club membership",
+   "expected daily rates IDR 2-5 million (management estimate)"
+  ],
+  "note": "Serviced residences next to Luna Beach Club in Nuanu Creative City, launched 30 Jun 2026: 88 units from IDR 3.3 billion on 60-year leaseholds with 25% down and handover from Q4 2028, reported by national property media. The developer's earlier Collection Vol. 1 is listed as completed, but no permit number, plans, progress or deposit protection are published yet (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3300000000,
+   "currency": "IDR",
+   "title": "leasehold (Hak Sewa)",
+   "lease_base": 60,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "618 Development lists The Collection Vol. 1 (4 villas, Nuanu) as completed Q2 2025",
+   "units": 88,
+   "payment_plan": "25% down payment, then payments following construction progress",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit mentioned in the launch materials or coverage.",
+   "escrow": "Nothing published.",
+   "progress": "Sales launch only (Jun-Jul 2026); no construction update.",
+   "plans": "No floor plans on the developer page.",
+   "record": "Developer site lists The Collection Vol. 1 as completed Q2 2025 (developer-stated).",
+   "returns": "Only expected nightly rates (IDR 2-5 million) quoted; no yield or guarantee."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "88 units: studios, suites and penthouses",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kabarproperti.id/nuanu-bali-luncurkan-luna-residences-hunian-premium-dengan-pemandangan-laut-seharga-mulai-rp33-miliar"
+   },
+   {
+    "claim": "Price from IDR 3.3 billion",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertiplus.com/terintegrasi-nuanu-creative-city-luna-residences-ternyata-punya-skema-kepemilikan-yang-bikin-penasaran/"
+   },
+   {
+    "claim": "60-year Hak Sewa leasehold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertiplus.com/terintegrasi-nuanu-creative-city-luna-residences-ternyata-punya-skema-kepemilikan-yang-bikin-penasaran/"
+   },
+   {
+    "claim": "Handover from Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabarproperti.id/nuanu-bali-luncurkan-luna-residences-hunian-premium-dengan-pemandangan-laut-seharga-mulai-rp33-miliar"
+   },
+   {
+    "claim": "About half of the first 15 units booked within a month",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertiplus.com/terintegrasi-nuanu-creative-city-luna-residences-ternyata-punya-skema-kepemilikan-yang-bikin-penasaran/"
+   },
+   {
+    "claim": "618 Development delivered The Collection Vol. 1, Vol. 2 and Flower Estates",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://618development.com/"
+   },
+   {
+    "claim": "Expected nightly rates IDR 2-5 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kabarproperti.id/nuanu-bali-luncurkan-luna-residences-hunian-premium-dengan-pemandangan-laut-seharga-mulai-rp33-miliar"
+   },
+   {
+    "claim": "Architecture by YODEZEEN",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://618development.com/projects/luna-residences"
+   },
+   {
+    "claim": "Building permit (PBG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://618development.com/projects/luna-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Tabanan, Bali",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 4,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "suite",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 3300000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": 25,
+   "payment_plan": "25% down, balance by construction progress",
+   "foreign_ownership": "60-year Hak Sewa leasehold",
+   "rental_programme": "Hotel-managed floors and serviced residence operation; expected IDR 2-5 million per night",
+   "service_charge": null,
+   "brand": "Luna Beach Club (Luna Black Card membership)",
+   "amenities": [
+    "ocean, river and jungle views",
+    "housekeeping and room service",
+    "concierge",
+    "beach club access",
+    "internal transport in Nuanu",
+    "AI concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Tabanan (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Key terms (units, price, lease, deposit, handover) reported by independent property media",
+   "Long 60-year lease clearly stated as Hak Sewa"
+  ],
+  "flags": [],
+  "sources": [
+   "https://618development.com/projects/luna-residences",
+   "https://618development.com/",
+   "https://www.nuanu.com/blogs/luna-residences-debuts-as-nuanus-flagship-luxury-oceanview-residence",
+   "https://propertiplus.com/terintegrasi-nuanu-creative-city-luna-residences-ternyata-punya-skema-kepemilikan-yang-bikin-penasaran/",
+   "https://kabarproperti.id/nuanu-bali-luncurkan-luna-residences-hunian-premium-dengan-pemandangan-laut-seharga-mulai-rp33-miliar"
+  ],
+  "verified_score": 0
+ }
+]

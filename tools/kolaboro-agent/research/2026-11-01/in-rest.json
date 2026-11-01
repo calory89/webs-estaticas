@@ -1,0 +1,1327 @@
+[
+ {
+  "slug": "florence-residences-homecorp",
+  "name": "Florence Residences",
+  "developer": "Homecorp",
+  "area": "Surfers Paradise",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "url": "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217",
+  "docs_url": "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217",
+  "permit_number": null,
+  "docs_listed": [
+   "116 residences, 25-26 storeys",
+   "price from AUD 1,249,000 (news)",
+   "completion late 2027",
+   "Gold Coast City Council approval reported (no DA number)",
+   "brochure with floor plans on request only",
+   "state structural protection 6.5 years"
+  ],
+  "note": "Homecorp's 116-residence wellness tower at 24 Monte Carlo Avenue started construction in early 2026 and targets late 2027; prices reported from AUD 1,249,000 and over 75% sold after the first weekend. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1249000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Eve Residences, Labrador, completed 2024 (apartments.com.au approval article)",
+   "units": 116,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Council approval reported by apartments.com.au (Oct 2025) but no DA number published",
+   "escrow": null,
+   "progress": "Construction start reported Feb 2026; listing says 'on track' and 'progress verified' with no figure or dated photos",
+   "plans": "Floor plans only via brochure request",
+   "record": "Eve Residences (Labrador) named as completed in 2024",
+   "returns": "No rental guarantee or yield figures on the listing"
+  },
+  "positives": [
+   "Construction already started before completion of sales",
+   "Named completed project (Eve Residences, 2024)",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/qld/buyers-rush-to-homecorps-florence-residences-as-gold-coast-wellness-trend-gains-momentum",
+   "https://www.apartments.com.au/new-apartments/florence-residences-24-monte-carlo-avenue-surfers-paradise-qld-4217",
+   "https://www.apartments.com.au/news/qld/homecorp-commences-construction-on-210-million-wellness-infused-florence-residences-in-surfers-paradise",
+   "https://www.apartments.com.au/news/qld/homecorp-greenlit-for-210-million-florence-residences-in-surfers-paradise"
+  ]
+ },
+ {
+  "slug": "lumara-broadbeach-5point-bourke",
+  "name": "Lumara",
+  "developer": "5Point Projects and Bourke Projects (JV)",
+  "area": "Broadbeach",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "url": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
+  "docs_url": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
+  "permit_number": null,
+  "docs_listed": [
+   "37 residences over 26 floors",
+   "prices from AUD 3,985,000 (3BR, 186 m2)",
+   "Sky Homes from AUD 9,800,000",
+   "completion mid 2028",
+   "floor plans via brochure request"
+  ],
+  "note": "Luxury 37-residence tower at 108 Old Burleigh Road, built by 5Point Projects and under construction with completion targeted for mid 2028; North-East 3BR residences from AUD 3,985,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3985000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "5Point: Elevaire Palm Beach listed as construction complete on its apartments.com.au builder page; combined JV portfolio of 40+ developments stated",
+   "units": 37,
+   "payment_plan": null,
+   "price_per_m2": 21425
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Listed as under construction with no figure or dated update",
+   "plans": "Floor plans only via brochure request",
+   "record": "apartments.com.au builder page lists Elevaire Palm Beach as construction complete",
+   "returns": "No guarantee or yield language"
+  },
+  "positives": [
+   "Prices and sizes published per residence type",
+   "Builder-developer already on site",
+   "No guaranteed returns"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/qld/locals-interstate-holiday-makers-drive-early-sales-at-lumara-broadbeachs-newest-luxury-apartment-tower",
+   "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
+   "https://www.apartments.com.au/builders/5point-projects"
+  ]
+ },
+ {
+  "slug": "como-varsity-lakes-red-co",
+  "name": "COMO Varsity Lakes",
+  "developer": "Red & Co Developments",
+  "area": "Varsity Lakes",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "url": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227",
+  "docs_url": "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227",
+  "permit_number": null,
+  "docs_listed": [
+   "156 residences, 15-16 levels",
+   "prices from AUD 1,060,000 (1BR 73 m2)",
+   "unit sizes per type",
+   "completion late 2028",
+   "deposit offer $25k (page also says $50k)",
+   "builder 5Point Projects"
+  ],
+  "note": "Red & Co's first Gold Coast project, 156 apartments on Lake Orr, launched with construction under way in March 2026 and completion due late 2028; 1-bed from AUD 1,060,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1060000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Red & Co: more than 500 apartments and townhouses across 26 projects, mainly Brisbane (apartments.com.au, Mar 2026); no projects named",
+   "units": 156,
+   "payment_plan": null,
+   "price_per_m2": 14521
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listing timeline shows 'plans approved' but no DA number",
+   "escrow": null,
+   "progress": "Construction start reported Mar 2026; no figure",
+   "plans": "Only unit sizes shown; floorplans behind information pack form",
+   "record": "500+ dwellings across 26 projects stated in news",
+   "returns": "No rental guarantee or yield"
+  },
+  "positives": [
+   "Prices and internal/external sizes published per type",
+   "Construction started at launch"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/como-varsity-lakes-22-lake-street-varsity-lakes-qld-4227",
+   "https://www.apartments.com.au/news/qld/red-co-to-launch-debut-gold-coast-development-como-varsity-lakes-as-construction-commences"
+  ]
+ },
+ {
+  "slug": "sydney-house-first-sponsor-icd",
+  "name": "Sydney House",
+  "developer": "First Sponsor and ICD Property (JV)",
+  "area": "Sydney CBD",
+  "country": "Australia",
+  "market": "Sydney",
+  "url": "https://www.apartments.com.au/new-apartments/sydney-house-194-204-pitt-street-sydney-nsw-2000",
+  "docs_url": "https://www.apartments.com.au/new-apartments/sydney-house-194-204-pitt-street-sydney-nsw-2000",
+  "permit_number": "D/2021/203",
+  "docs_listed": [
+   "DA D/2021/203 (Central Sydney Planning Committee)",
+   "241 apartments above 135-room hotel",
+   "1BR from AUD 1.5m (news)",
+   "completion late 2027",
+   "builder Richard Crookes Constructions"
+  ],
+  "note": "241 apartments above a hotel on a heritage podium at 194-204 Pitt Street, under construction by Richard Crookes with completion late 2027; launch pricing from AUD 1.5m for a 1-bed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1500000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "D/2021/203",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 241,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "apartments.com.au listing cites CSPC approval D/2021/203",
+   "escrow": null,
+   "progress": "Listed as under construction, no figure",
+   "plans": "Floor plans only via brochure request",
+   "record": "No completed projects named for either JV partner",
+   "returns": "No yield or guarantee"
+  },
+  "positives": [
+   "Development approval number published",
+   "Named builder"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/nsw/buyers-set-for-first-chance-at-sydney-house-sydney-cbds-newest-landmark-tower-development",
+   "https://www.apartments.com.au/new-apartments/sydney-house-194-204-pitt-street-sydney-nsw-2000"
+  ]
+ },
+ {
+  "slug": "waterstone-st-leonards-sekisui-house",
+  "name": "Waterstone",
+  "developer": "Sekisui House Australia",
+  "area": "St Leonards",
+  "country": "Australia",
+  "market": "Sydney",
+  "url": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065",
+  "docs_url": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065",
+  "permit_number": null,
+  "docs_listed": [
+   "207 residences in five buildings",
+   "1BR from AUD 1,075,000",
+   "unit listings with sizes (64-123 m2) and prices",
+   "completion late 2027",
+   "deposit bonds accepted or 2.5% deposit offer",
+   "builder Decode"
+  ],
+  "note": "207 apartments across five mid-rise buildings at 24 Berry Road, construction started in late 2025 with move-in late 2027; 1-bed from AUD 1,075,000 and 2-bed 94 m2 at AUD 1,570,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1075000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Sekisui House states over 2.6 million homes delivered globally and a 4 Gold Star iCIRT rating (developer claim on listing)",
+   "units": 207,
+   "payment_plan": "2.5% deposit offer or deposit bond; balance at settlement",
+   "price_per_m2": 16702
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listing timeline shows 'plans approved'; no DA number",
+   "escrow": null,
+   "progress": "Sod turning reported Oct 2025; no figure",
+   "plans": "Only unit sizes in listings; floorplans via information pack",
+   "record": "2.6 million homes delivered claim on listing",
+   "returns": "No yield or guarantee"
+  },
+  "positives": [
+   "Per-unit prices and sizes published",
+   "Low 2.5% deposit option"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/news/nsw/sekisui-house-australia-breaks-ground-at-waterstone-st-leonards-following-positive-sales-results",
+   "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+  ]
+ },
+ {
+  "slug": "hyde-metropolitan-deicorp",
+  "name": "Hyde Metropolitan",
+  "developer": "Deicorp",
+  "area": "Sydney CBD (Hyde Park)",
+  "country": "Australia",
+  "market": "Sydney",
+  "url": "https://hydemetropolitan.com.au",
+  "docs_url": "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000",
+  "permit_number": "D/2022/495",
+  "docs_listed": [
+   "DA D/2022/495 (City of Sydney)",
+   "168 residences",
+   "1BR from AUD 1,480,000, 2BR from 3,270,000, 3BR from 5,070,000",
+   "completion late 2027 (listing)",
+   "10-year latent defects insurance",
+   "construction update link on developer site"
+  ],
+  "note": "168-residence tower at 133-141 Liverpool Street on Hyde Park, approved under D/2022/495 and listed as pre-construction with completion stated as late 2027; 1-bed from AUD 1,480,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1480000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "D/2022/495",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Deicorp: over 12,000 homes across 40 Sydney suburbs since 1999 (developer site and listing)",
+   "units": 168,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "apartments.com.au listing cites DA D/2022/495",
+   "escrow": null,
+   "progress": "Listing status 'Pre-construction'; developer site links a construction update but gives no figure",
+   "plans": "Floor plans only via brochure",
+   "record": "12,000+ homes delivered stated",
+   "returns": "No yield or guarantee"
+  },
+  "positives": [
+   "DA number published",
+   "10-year latent defects insurance stated",
+   "Prices published per bedroom type"
+  ],
+  "flags": [],
+  "sources": [
+   "https://hydemetropolitan.com.au",
+   "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000",
+   "https://production-urban-next-git-ude-461-urban-ninja.vercel.app/news/qld/morris-releases-second-tower-at-crest-broadbeach-after-tower-one-sales-success"
+  ]
+ },
+ {
+  "slug": "mountain-oak-queenstown-safari-group",
+  "name": "Mountain Oak Apartments",
+  "developer": "Safari Group",
+  "area": "Frankton, Queenstown",
+  "country": "New Zealand",
+  "market": "New Zealand",
+  "url": "https://auckland.bayleys.co.nz/projects/mountain-oak",
+  "docs_url": "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand",
+  "permit_number": null,
+  "docs_listed": [
+   "141 apartments",
+   "from NZD 639,000",
+   "OIO exemption certificate (no number) allowing non-resident buyers",
+   "construction began June 2025, completion mid-2027",
+   "gross yield up to 12% illustrative (Bayleys) / up to 15% appraisal modelling"
+  ],
+  "note": "141 visitor-accommodation apartments in Remarkables Park with an Overseas Investment Office exemption so non-residents can buy; construction began June 2025, completion mid-2027, from NZD 639,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 639000,
+   "currency": "NZD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Safari Group: more than 2,000 hotel and residential units delivered in NZ; fifth Queenstown development (apartments.com.au, Mar 2026)",
+   "units": 141,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "OIO exemption certificate mentioned without a case number",
+   "escrow": null,
+   "progress": "Construction start June 2025 stated; no figure",
+   "plans": "No floor plans published",
+   "record": "2,000+ units delivered stated",
+   "returns": "Yield figures are illustrative, not guaranteed"
+  },
+  "positives": [
+   "Legal route for overseas buyers stated",
+   "365-day visitor accommodation consent"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.apartments.com.au/project-updates/investors-back-safari-group-s-mountain-oak-apartments-as-queenstown-s-four-season-economy-drives-demand",
+   "https://auckland.bayleys.co.nz/projects/mountain-oak"
+  ]
+ },
+ {
+  "slug": "wandsworth-mills-st-george",
+  "name": "Wandsworth Mills (The Artisan Tower)",
+  "developer": "St George (Berkeley Group)",
+  "area": "Wandsworth",
+  "country": "United Kingdom",
+  "market": "London",
+  "url": "https://search.savills.com/property-detail/gbCSRDLAD260602",
+  "docs_url": "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills",
+  "permit_number": null,
+  "docs_listed": [
+   "375 homes on 3.4-acre riverside site",
+   "Artisan Tower GBP 630,000-1,510,000 (developer)",
+   "1BR 50 m2 GBP 620,000 (Savills)",
+   "completion 2027 (Q2-Q3)",
+   "leasehold to 3025",
+   "service charge GBP 6.52-6.86/sq ft",
+   "GBP 5,000 reservation fee"
+  ],
+  "note": "St George's 375-home scheme on the River Wandle; the Artisan Tower phase is priced GBP 630,000 to 1,510,000 on the Berkeley page with homes completing in 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 620000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 375,
+   "payment_plan": "GBP 5,000 reservation fee (Savills)",
+   "price_per_m2": 12383
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress figure or dated update on developer or agent pages",
+   "plans": "Not visible on pages opened",
+   "record": "No delivered track record stated on the pages opened",
+   "returns": "No yield claims"
+  },
+  "positives": [
+   "Lease length, service charge and reservation fee disclosed",
+   "No yield promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.berkeleygroup.co.uk/developments/london/wandsworth/wandsworth-mills",
+   "https://search.savills.com/property-detail/gbCSRDLAD260602",
+   "https://primeresi.com/st-george-launches-new-wellness-led-waterside-neighbourhood-in-sw-london/"
+  ]
+ },
+ {
+  "slug": "cascades-three-white-city-living-st-james",
+  "name": "Cascades Three, White City Living",
+  "developer": "St James (Berkeley Group)",
+  "area": "White City",
+  "country": "United Kingdom",
+  "market": "London",
+  "url": "https://www.zoopla.co.uk/new-homes/details/73410461/",
+  "docs_url": "https://newbuildhomes.org/for-sale/london/white-city/cascades-three-&-four-white-city-living",
+  "permit_number": null,
+  "docs_listed": [
+   "prices from GBP 680,000",
+   "3BR GBP 1,720,000 at GBP 1,581/sq ft",
+   "999-year leasehold",
+   "15% on exchange, 85% on completion",
+   "completion Q3-Q4 2027",
+   "floor plan on Zoopla listing"
+  ],
+  "note": "Latest phase of St James's 2,500-home White City Living, off plan with completion in Q3-Q4 2027; prices from GBP 680,000 on a 999-year lease with 15% due on exchange. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 680000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "15% on exchange, 85% on completion",
+   "price_per_m2": 17018
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Completion date only; no progress figure",
+   "plans": "Zoopla listing states a floor plan is attached",
+   "record": "Only build-quality awards cited; no delivered units stated",
+   "returns": "No yield language"
+  },
+  "positives": [
+   "999-year lease and payment split published",
+   "Price per sq ft disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.zoopla.co.uk/new-homes/details/73410461/",
+   "https://newbuildhomes.org/for-sale/london/white-city/cascades-three-&-four-white-city-living",
+   "https://www.rightmove.co.uk/properties/170137883"
+  ]
+ },
+ {
+  "slug": "west-gate-st-johns-waterside-renaker",
+  "name": "West Gate, St John's Waterside",
+  "developer": "Renaker",
+  "area": "St John's, Manchester city centre",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "url": "https://search.savills.com/property-detail/gbMNRDMND260031",
+  "docs_url": "https://search.savills.com/property-detail/gbMNRDMND260031",
+  "permit_number": null,
+  "docs_listed": [
+   "guide price GBP 297,500-600,000",
+   "1-3 bedrooms",
+   "completion Q3/Q4 2029",
+   "990-year lease (conflicting expiry also shown)",
+   "service charge est. GBP 3.52/sq ft",
+   "'up to 6% projected yields'"
+  ],
+  "note": "Renaker's West Gate on Water Street, guide prices GBP 297,500 to 600,000 with estimated completion Q3/Q4 2029; Savills quotes up to 6% projected yields, not guaranteed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 297500,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 990,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Renaker: more than 8,500 new homes delivered, including Deansgate Square (1,508 apartments) (Renaker page on three60newjackson.com)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress update; early stage with 2029 completion",
+   "plans": "No floor plans on the listing",
+   "record": "8,500+ homes delivered stated by Renaker",
+   "returns": "Projected yield only, no guarantee"
+  },
+  "positives": [
+   "Large local developer with stated delivery record",
+   "Service charge and ground rent estimates disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://search.savills.com/property-detail/gbMNRDMND260031",
+   "https://www.three60newjackson.com/renaker"
+  ]
+ },
+ {
+  "slug": "hotel101-niseko-hotel101-global",
+  "name": "Hotel101-Niseko",
+  "developer": "Hotel101 Global Holdings (DoubleDragon)",
+  "area": "Hirafu, Kutchan",
+  "country": "Japan",
+  "market": "Niseko",
+  "url": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf",
+  "docs_url": "https://www.sunstar.com.ph/cebu/hotel101-tops-off-482-room-niseko-flagship",
+  "permit_number": null,
+  "docs_listed": [
+   "21 m2 units from JPY 38,160,000",
+   "freehold condominium title",
+   "pooled revenue share: owners get 30% of gross room revenue",
+   "topped off Dec 2025, opening Dec 2026",
+   "482 rooms"
+  ],
+  "note": "482-room condo hotel in East Hirafu sold as 21 m2 freehold units (JPY 38,160,000 listed) with a pooled 30% gross room revenue share; topped off in December 2025 for a December 2026 opening. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 38160000,
+   "currency": "JPY",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 482,
+   "payment_plan": null,
+   "price_per_m2": 1817143
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Topping off reported Dec 2025 (news) but no percentage published",
+   "plans": "No floor plan on listing",
+   "record": "No completed Hotel101 properties named in sources opened",
+   "returns": "Revenue share described, no guaranteed return"
+  },
+  "positives": [
+   "Freehold title",
+   "Structure topped off before sale completion"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf",
+   "https://www.sunstar.com.ph/cebu/hotel101-tops-off-482-room-niseko-flagship",
+   "https://www.powderlife.com/blog/plans-released-for-450-unit-condo-hotel-in-east-hirafu/"
+  ]
+ },
+ {
+  "slug": "quill-resort-okinawa-nskre",
+  "name": "QUILL RESORT OKINAWA",
+  "developer": "Nippon Steel Kowa Real Estate, Mitsubishi Estate Residence, Cosmos Initia, Yugaf Holdings",
+  "area": "Motobu",
+  "country": "Japan",
+  "market": "Okinawa",
+  "url": "https://www.nskre.co.jp/english/company/news/2025/20250820.html",
+  "docs_url": "https://www.nskre.co.jp/english/company/news/2025/20250820.html",
+  "permit_number": null,
+  "docs_listed": [
+   "230 condominium hotel rooms",
+   "completion late Dec 2027, opening spring 2028",
+   "sales by Tokyu Resort, Mitsubishi Estate Residence, NSKRE"
+  ],
+  "note": "230-room condominium hotel on a hillside in Motobu, northern Okinawa, sold as individually owned units that can be rented as hotel rooms; completion planned for late December 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 230,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress published",
+   "plans": "No plans published",
+   "record": "No completed projects named in the release",
+   "returns": "No guarantee or yield stated"
+  },
+  "positives": [
+   "Backed by large listed Japanese developers"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.nskre.co.jp/english/company/news/2025/20250820.html"
+  ]
+ },
+ {
+  "slug": "mondomio-okinawa-onna-fuchaku-daiwa-house",
+  "name": "Mondomio Okinawa Resort Onna Village Fuchaku",
+  "developer": "Daiwa House",
+  "area": "Onna Village",
+  "country": "Japan",
+  "market": "Okinawa",
+  "url": "https://uchijapan.com/news/okinawa-resort-condo-shows-growing-second-home-investment-appeal",
+  "docs_url": "https://uchijapan.com/news/okinawa-resort-condo-shows-growing-second-home-investment-appeal",
+  "permit_number": null,
+  "docs_listed": [
+   "103 apartments, 13 storeys",
+   "1-2BR, 56-74 m2",
+   "Phase 2 (15 units) JPY 58.98m-170.98m",
+   "completion March 2028"
+  ],
+  "note": "Daiwa House resort condo of 103 units in Onna Village, under construction with Phase 2 released in August 2026 at JPY 58.98m to 170.98m and completion scheduled for March 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 58980000,
+   "currency": "JPY",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 103,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Under construction, no figure",
+   "plans": "No plans published in source",
+   "record": "No delivered projects stated",
+   "returns": "No guarantee or yield"
+  },
+  "positives": [
+   "Phase prices published",
+   "Large domestic developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://uchijapan.com/news/okinawa-resort-condo-shows-growing-second-home-investment-appeal"
+  ]
+ },
+ {
+  "slug": "fairway-latitude-fairway-holdings",
+  "name": "Fairway Latitude",
+  "developer": "Fairway Holdings",
+  "area": "Colombo 05",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "url": "https://latitude.fairwayproperties.lk/",
+  "docs_url": "https://latitude.fairwayproperties.lk/",
+  "permit_number": null,
+  "docs_listed": [
+   "176 apartments, 27 floors",
+   "2BR from LKR 56m (923 sq ft), 3BR from LKR 78m",
+   "unit type plans with sizes",
+   "eight floors structurally complete",
+   "completion Q1 2028",
+   "completed projects listed"
+  ],
+  "note": "176-apartment, 27-floor tower in Colombo 05 with eight floors structurally complete and completion scheduled for Q1 2028; 2-bed from LKR 56m. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 56000000,
+   "currency": "LKR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 30,
+   "developer_delivered": "Fairway Elements, Fairway SkyGardens (Rajagiriya), Fairway Galle, Fairmount Urban Oasis, Fairway Urban Homes, Fairway on the Waterfront (developer site)",
+   "units": 176,
+   "payment_plan": null,
+   "price_per_m2": 653061
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer site: 8 of 27 floors structurally complete (about 30%, computed)",
+   "plans": "Developer site lists unit types B1/B2, A1/A2, C1, D1, E1/E2 with sizes",
+   "record": "Six completed projects named on developer site",
+   "returns": "No guarantee or yield"
+  },
+  "positives": [
+   "Construction progress published",
+   "Named completed projects since 2004",
+   "Unit types and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://latitude.fairwayproperties.lk/"
+  ]
+ },
+ {
+  "slug": "residences-melia-seychelles-seafront",
+  "name": "The Residences at Meliá Seychelles",
+  "developer": "Seafront Development Ltd",
+  "area": "Mahé (Eden Island marina)",
+  "country": "Seychelles",
+  "market": "Seychelles",
+  "url": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles",
+  "docs_url": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles",
+  "permit_number": null,
+  "docs_listed": [
+   "68 freehold branded residences + 120 hotel keys",
+   "penthouse floor plan PDF",
+   "USD 500k-1.5m range",
+   "'Guaranteed rental returns available for early buyers'",
+   "5% guaranteed net yield for 3 years for first 20 South Block buyers (news)"
+  ],
+  "note": "68 freehold Meliá-branded residences beside a 120-key hotel near Eden Island, still listed as under construction; early buyers offered a guaranteed 5% net yield for three years. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 500000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 68,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Roof height reported Oct 2024; listing says under construction; no %",
+   "plans": "Penthouse plan PDF on Pam Golding page",
+   "record": "Shareholder Albwardy's portfolio mentioned but no delivered residences named",
+   "returns": "Guaranteed rental returns advertised"
+  },
+  "positives": [
+   "Freehold title",
+   "Floor plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles",
+   "https://seychellesnewsagency.com/articles/21363/the-residences-at-melia-seychelles-expected-to-open-doors-in-2026"
+  ]
+ },
+ {
+  "slug": "nikki-beach-residences-antigua-ayre",
+  "name": "Nikki Beach Residences Antigua",
+  "developer": "White Sand Development Ltd (Ayre Group)",
+  "area": "Jolly Beach",
+  "country": "Antigua and Barbuda",
+  "market": "Antigua",
+  "url": "https://www.nestseekers.com/5290003/jolly-harbour-saint-mary-antigua-and-barbuda-2br-2-bedroom-apartment",
+  "docs_url": "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/",
+  "permit_number": null,
+  "docs_listed": [
+   "134 residences (127 apartments, 7 villas)",
+   "1-3BR from USD 1.2m, villas from USD 5.5m",
+   "2BR 145 m2 from USD 1,649,000",
+   "CBI eligibility claimed"
+  ],
+  "note": "134 Nikki Beach branded residences at Jolly Beach by Ayre Group's White Sand Development, from USD 1.2m; no completion date, construction status or deposit terms published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1200000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 134,
+   "payment_plan": null,
+   "price_per_m2": 11372
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No status published",
+   "plans": "No plans on listings",
+   "record": "Only a Nikki Beach Dubai sell-out is cited, not this developer's deliveries",
+   "returns": "No rental terms or guarantee"
+  },
+  "positives": [
+   "Unit sizes and prices on agency listings"
+  ],
+  "flags": [],
+  "sources": [
+   "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/",
+   "https://aplaceinthesun.com/property/details/ap4177934/nikki-beach-residences",
+   "https://www.nestseekers.com/5290003/jolly-harbour-saint-mary-antigua-and-barbuda-2br-2-bedroom-apartment"
+  ]
+ },
+ {
+  "slug": "one-and-only-private-homes-fiji",
+  "name": "One&Only Private Homes, Fiji",
+  "developer": "Not named (One&Only / Kerzner brand)",
+  "area": "Nacula Island, Yasawa Group",
+  "country": "Fiji",
+  "market": "Fiji",
+  "url": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422",
+  "docs_url": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422",
+  "permit_number": null,
+  "docs_listed": [
+   "3-5BR off-plan homes",
+   "price on application",
+   "resort opening late 2029 (subject to change)",
+   "optional rental participation"
+  ],
+  "note": "Off-plan 3 to 5 bedroom One&Only branded homes on Nacula Island, price on application, with the resort scheduled to open in late 2029. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Off-plan, no progress",
+   "plans": "No plans",
+   "record": "Developer not named",
+   "returns": "Optional rental participation, no guarantee"
+  },
+  "positives": [
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+  ]
+ },
+ {
+  "slug": "four-seasons-nevis-peak-residences-integrum",
+  "name": "Four Seasons Nevis Peak Residences",
+  "developer": "The Integrum Group with F.S.R Estates",
+  "area": "Pinney's Beach, Nevis",
+  "country": "St Kitts and Nevis",
+  "market": "St Kitts and Nevis",
+  "url": "https://fsrenevis.com/?p=6794",
+  "docs_url": "https://fsrenevis.com/?p=6794",
+  "permit_number": null,
+  "docs_listed": [
+   "52 residences in four buildings (58 per other report)",
+   "from USD 1.4m",
+   "groundbreaking 8 Apr 2025",
+   "sold through Sotheby's International Realty"
+  ],
+  "note": "Four Seasons-branded residences at the Nevis resort, from USD 1.4m; groundbreaking held 8 April 2025 with no completion date published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1400000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 52,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Only the April 2025 groundbreaking reported",
+   "plans": "No plans",
+   "record": "No completed residences named",
+   "returns": "Property management offered, no guarantee"
+  },
+  "positives": [
+   "Branded operator and established resort"
+  ],
+  "flags": [],
+  "sources": [
+   "https://fsrenevis.com/?p=6794",
+   "https://fsrenevis.com/new-luxury-private-residences-at-the-four-seasons-resort-nevis/",
+   "https://wicnews.com/saint-kitts-nevis/four-seasons-resort-nevis-builds-58-additional-luxury-residences"
+  ]
+ },
+ {
+  "slug": "la-wisteria-siolim-sea-breeze",
+  "name": "La Wisteria",
+  "developer": "Sea Breeze Group",
+  "area": "Siolim, North Goa",
+  "country": "India",
+  "market": "Goa",
+  "url": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134",
+  "docs_url": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134",
+  "permit_number": "PRGO04252441",
+  "docs_listed": [
+   "Goa RERA PRGO04252441",
+   "80 1-2BHK apartments with private pools",
+   "INR 1.55-2.35 Cr",
+   "possession Dec 2027",
+   "projected ROI up to 10% (developer)"
+  ],
+  "note": "80 boutique apartments with private pools in Siolim, RERA registered as PRGO04252441, priced INR 1.55 to 2.35 Cr with possession in December 2027; developer projects up to 10% annual ROI. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 15500000,
+   "currency": "INR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "PRGO04252441",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 80,
+   "payment_plan": null,
+   "price_per_m2": 145077
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "RERA PRGO04252441 on ghar.tv listing",
+   "escrow": null,
+   "progress": "Under construction, no figure",
+   "plans": "Only built-up areas",
+   "record": "No completed projects named",
+   "returns": "ROI projection 'up to 10%', not guaranteed"
+  },
+  "positives": [
+   "RERA registration number published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134",
+   "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+  ]
+ },
+ {
+  "slug": "osten-tower-ii-gnv-group",
+  "name": "Osten Tower II",
+  "developer": "GNV Group",
+  "area": "Puerto Madero",
+  "country": "Argentina",
+  "market": "Buenos Aires",
+  "url": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos",
+  "docs_url": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos",
+  "permit_number": null,
+  "docs_listed": [
+   "33-floor tower, 200+ units 40-310 m2",
+   "from USD 197,000, about USD 5,000/m2",
+   "30% on signing, milestone payments",
+   "completion Dec 2028"
+  ],
+  "note": "33-floor Puerto Madero tower that started construction in March 2026, from USD 197,000 (about USD 5,000/m2) with delivery scheduled for December 2028; about 45% sold in pre-sale. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 197000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 200,
+   "payment_plan": "30% on signing, payments at floor 10 and 20 slabs, instalments during construction",
+   "price_per_m2": 5000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Construction start reported Mar 2026, no figure",
+   "plans": "No plans in source",
+   "record": "Osten Tower I sold out but not yet delivered (due end 2026)",
+   "returns": "No guarantee"
+  },
+  "positives": [
+   "Payments tied to construction milestones",
+   "USD price per m2 published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+  ]
+ }
+]

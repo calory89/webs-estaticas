@@ -1,0 +1,737 @@
+[
+ {
+  "slug": "australy-thera-neinor-aedas",
+  "name": "Australy Thera",
+  "developer": "Neinor Homes (formerly AEDAS Homes)",
+  "area": "Selwo, Estepona",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "off-plan",
+  "url": "https://www.idealista.com/news/node/909340",
+  "docs_url": "https://www.aedashomes.com/en/thera-new-apartments-estepona",
+  "permit_number": null,
+  "docs_listed": [
+   "unit price table from EUR 687,000 to EUR 1,151,000",
+   "usable and built m2 per unit",
+   "downloadable furnished floor plan PDF per unit",
+   "2-4BR apartments and 3BR duplexes",
+   "shared Australy Social Club (gym, heated pool, sauna)",
+   "sales office address Calle Torrevigia s/n, Parcela PMZ9.4"
+  ],
+  "note": "Final phase of the Australy complex in Selwo, Estepona, launched Aug 2026 by Neinor after absorbing AEDAS; 67 homes in two phases (25 + 42), unit prices EUR 687,000 to 1,151,000 published with per-unit plans, but no licence, guarantee or completion date shown. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 687000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Australy Libella delivered and Australy Aures near completion in the same complex (idealista, iberian.property, Aug 2026)",
+   "units": 67,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status or number on the developer page or in launch coverage",
+   "escrow": "No statement on the developer page about bank guarantee or insurance of deposits (Ley 38/1999 requires one, but none is published)",
+   "progress": "Developer page shows a generic status legend only; news says phase two just launched and phase one 50% sold",
+   "plans": "Per-unit floor plan PDFs linked in the price table",
+   "record": "Earlier phases Libella (delivered) and Aures (near completion, built by SANJOSE) reported by idealista and iberian.property",
+   "returns": "No rental or yield language on the page"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Australy Thera has 67 homes in two phases (25 and 42)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   },
+   {
+    "claim": "Phase one is 50% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://iberian.property/news/residential/neinor-launches-final-phase-of-200-home-development-in-estepona/"
+   },
+   {
+    "claim": "Australy Libella already delivered",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   },
+   {
+    "claim": "Australy Aures being built by SANJOSE Constructora (73 homes)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Australy-Aures-en-Estepona-Malaga_1753.html"
+   },
+   {
+    "claim": "Prices from EUR 687,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/thera-new-apartments-estepona"
+   },
+   {
+    "claim": "Headline size 154.25 m2 built matches the EUR 687,000 unit",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/thera-new-apartments-estepona"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/thera-new-apartments-estepona"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee or insurance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/thera-new-apartments-estepona"
+   },
+   {
+    "claim": "Neinor Homes is a listed company that integrated AEDAS Homes (H1 2026 results)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elespanol.com/malaga/estepona/20260806/neinor-homes-acelera-nueva-milla-oro-estepona-viviendas-lujo/1003744345451_0.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Neinor Homes S.A. (listed); project marketed on AEDAS Homes site",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Neinor Homes listed on the Spanish stock exchange; H1 2026 results reported by idealista",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3BR duplex",
+    "4BR"
+   ],
+   "size_min_m2": 154.25,
+   "size_max_m2": 287.2,
+   "price_min": 687000,
+   "price_max": 1151000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (Spanish property title open to foreigners)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "clubhouse with spa",
+    "outdoor heated pool",
+    "gym",
+    "sauna",
+    "gastrobar",
+    "coworking",
+    "parking and storage per unit"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Estepona",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Full per-unit price list and floor plans published",
+   "Earlier phases of the same complex delivered or near completion",
+   "Developer is a listed company"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aedashomes.com/en/thera-new-apartments-estepona",
+   "https://www.idealista.com/news/node/909340",
+   "https://www.elespanol.com/malaga/estepona/20260806/neinor-homes-acelera-nueva-milla-oro-estepona-viviendas-lujo/1003744345451_0.html",
+   "https://iberian.property/news/residential/neinor-launches-final-phase-of-200-home-development-in-estepona/",
+   "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Australy-Aures-en-Estepona-Malaga_1753.html"
+  ]
+ },
+ {
+  "slug": "aire-de-llevant-metrovacesa",
+  "name": "Aire de Llevant",
+  "developer": "Metrovacesa",
+  "area": "Nou Llevant, Palma de Mallorca",
+  "country": "Spain",
+  "market": "Balearics",
+  "stage": "under construction",
+  "url": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant",
+  "docs_url": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant",
+  "permit_number": null,
+  "docs_listed": [
+   "price from EUR 339,000 plus 10% VAT",
+   "1BR 64.5 m2 and 2BR 127.5 m2 typology prices",
+   "floor plans for 1BR and 2BR, floor plate images",
+   "energy rating A",
+   "promoter bank Banco Sabadell named",
+   "July 2025 construction status image in gallery",
+   "blog: building permit obtained (7 May 2025), works started (25 Jun 2025)"
+  ],
+  "note": "Metrovacesa's 99-home block in Palma's Nou Llevant, designed by SCT Arquitectos and built by Ferrovial; permit announced May 2025 and works started June 2025, prices from EUR 339,000 plus VAT. Page header says 99 homes while the description says 84. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 339000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Metrovacesa states over 100 years of history and 115 projects under development; listed company",
+   "units": 99,
+   "payment_plan": null,
+   "price_per_m2": 5256
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer blog 7 May 2025 says building permit obtained, no number or date of grant",
+   "escrow": "Banco Sabadell named as promoter bank but no statement on guarantee or insurance of amounts paid on account",
+   "progress": "Works started announced 25 Jun 2025; gallery includes a dated July 2025 construction status image; brainsre (Mar 2026 update) says project in execution phase with Ferrovial",
+   "plans": "1BR and 2BR plans linked on project page",
+   "record": "Metrovacesa is a listed national developer with long delivery history",
+   "returns": "No yield or rental guarantee language"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit obtained (May 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-obtains-building-permit-for-aire-de-llevant-in-palma-de-mallorca"
+   },
+   {
+    "claim": "Construction awarded to Ferrovial and in execution",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-adjudica-ferrovial-99-viviendas-palma/"
+   },
+   {
+    "claim": "99 homes, 1-4 bedrooms, 58-176 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-adjudica-ferrovial-99-viviendas-palma/"
+   },
+   {
+    "claim": "Project page says 84 apartments in description vs 99 in header",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant"
+   },
+   {
+    "claim": "Investment EUR 34.4 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-adjudica-ferrovial-99-viviendas-palma/"
+   },
+   {
+    "claim": "Price from EUR 339,000 plus VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-starts-work-on-aire-de-llevant-a-development-of-99-homes-by-the-sea-in-palma-de-mallorca"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Metrovacesa S.A. (listed)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Spanish stock exchange",
+   "construction_start": "2025-06",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 176,
+   "price_min": 339000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "gardens",
+    "solar energy",
+    "garage",
+    "storage rooms",
+    "sea and mountain views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Palma (Gerencia de Urbanismo)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Listed developer with national builder (Ferrovial) contracted",
+   "Dated construction start and permit announcements",
+   "Prices and plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant",
+   "https://metrovacesa.com/en/blog/metrovacesa-obtains-building-permit-for-aire-de-llevant-in-palma-de-mallorca",
+   "https://metrovacesa.com/en/blog/metrovacesa-starts-work-on-aire-de-llevant-a-development-of-99-homes-by-the-sea-in-palma-de-mallorca",
+   "https://brainsre.news/metrovacesa-adjudica-ferrovial-99-viviendas-palma/"
+  ]
+ },
+ {
+  "slug": "sora-denia-taylor-wimpey",
+  "name": "Sora",
+  "developer": "Taylor Wimpey España",
+  "area": "La Pedrera, Dénia",
+  "country": "Spain",
+  "market": "Costa Blanca",
+  "stage": "under construction",
+  "url": "https://www.rightmove.co.uk/properties/169260455",
+  "docs_url": "https://taylorwimpeyspain.com/property/sora-denia/",
+  "permit_number": null,
+  "docs_listed": [
+   "prices by unit type from EUR 399,000 plus VAT",
+   "delivery date 20-02-2028 per listing",
+   "5 floor plans (2BR ground, 2BR penthouse, 3BR first floor, 3BR penthouse, 3BR duplex)",
+   "construction progress video dated 07/2026",
+   "86 apartments in 6 buildings, two phases",
+   "energy rating A"
+  ],
+  "note": "Taylor Wimpey España's 86-apartment scheme on Calle Apolo, La Pedrera (Dénia), EUR 23 million; launch article quoted from EUR 315,000 and handover September 2027, the project page now shows from EUR 399,000 plus VAT and delivery February 2028, with a July 2026 progress video. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 399000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey España delivered 504 homes in 2024 and 410 in 2023 (Alicante Plaza); subsidiary of Taylor Wimpey plc",
+   "units": 86,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status or number on project page, launch article or press",
+   "escrow": "No bank guarantee or deposit insurance statement on project page",
+   "progress": "Construction progress video dated 07/2026 linked on project page, no % figure",
+   "plans": "Five unit plans linked on project page",
+   "record": "Alicante Plaza reports 504 deliveries in 2024 and 410 in 2023 by Taylor Wimpey España",
+   "returns": "No yield or guaranteed income language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "86 apartments in six buildings, two phases",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.rightmove.co.uk/properties/169260455"
+   },
+   {
+    "claim": "Investment EUR 23 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-espana-32-millones-viviendas-alicante/"
+   },
+   {
+    "claim": "Handover September 2027 (launch article)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/?p=211903"
+   },
+   {
+    "claim": "Delivery February 2028 (current project page and Rightmove)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/sora-denia/"
+   },
+   {
+    "claim": "Prices from EUR 315,000 plus VAT at launch",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/sora-denia/"
+   },
+   {
+    "claim": "Construction under way (July 2026 video)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/sora-denia/"
+   },
+   {
+    "claim": "Taylor Wimpey España delivered 504 homes in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/taylor-wimpey-entregas-viviendas-2024"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/sora-denia/"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/sora-denia/"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-espana-32-millones-viviendas-alicante/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Taylor Wimpey de España S.A.U., subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 914,
+   "listed_or_audited": "Parent Taylor Wimpey plc listed on the London Stock Exchange",
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q3",
+   "delay_months": 5,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "2BR penthouse",
+    "3BR duplex"
+   ],
+   "size_min_m2": 87.5,
+   "size_max_m2": 126,
+   "price_min": 399000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pools",
+    "gardens",
+    "children's play park",
+    "multipurpose room",
+    "private gardens or solariums"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Dénia",
+   "brochure_url": null,
+   "developer_units_delivered_note": "914 = 504 (2024) + 410 (2023) only"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Large, established developer with independently reported delivery volumes",
+   "Floor plans and per-type prices published",
+   "Dated construction video"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/property/sora-denia/",
+   "https://taylorwimpeyspain.com/?p=211903",
+   "https://taylorwimpeyspain.com/blog/taylor-wimpey-espana-commits-e32m-to-costa-blanca-identifying-top-areas-and-trends-for-2026",
+   "https://www.rightmove.co.uk/properties/169260455",
+   "https://brainsre.news/taylor-wimpey-espana-32-millones-viviendas-alicante/",
+   "https://alicanteplaza.es/taylor-wimpey-entregas-viviendas-2024"
+  ]
+ },
+ {
+  "slug": "salvia-san-pedro-grupo-abu-nvoga",
+  "name": "Salvia",
+  "developer": "Grupo ABU and NVOGA Marbella Realty",
+  "area": "San Pedro de Alcántara, Marbella",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "url": "https://lucasfox.com/new-development/salviasanpedro.html",
+  "docs_url": "https://www.fotocasa.es/es/comprar/obra-nueva/marbella/20629738",
+  "permit_number": null,
+  "docs_listed": [
+   "97 apartments and penthouses, 2-5BR, plus 4 commercial units",
+   "sizes up to 195 m2 interior and 189 m2 terraces",
+   "sample prices EUR 1,150,000 to 1,480,000",
+   "parking and storage included",
+   "no floor plans, licence, guarantee or payment plan on listings",
+   "crowdfunding round on Urbanitae (EUR 5m target, 30-34 months)"
+  ],
+  "note": "97-home scheme on Calle Manuel González Portilla in San Pedro de Alcántara by Grupo ABU with NVOGA, first announced Sept 2023 and part-funded through Urbanitae; listings give sample prices from EUR 1.15m but no licence, guarantee, plans or a consistent completion date. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1150000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Urbanitae project page states Grupo ABU has 25 years of experience and over 3,500 homes delivered, mainly in Andalusia (no named projects)",
+   "units": 97,
+   "payment_plan": null,
+   "price_per_m2": 6085
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status on Lucas Fox, Realista, Fotocasa or Urbanitae pages",
+   "escrow": "No bank guarantee or insurance statement on any listing",
+   "progress": "No figure or dated photos; estatenearme says 'in construction' while Fotocasa and Realista say homes 'will be built'",
+   "plans": "No floor plans on listings",
+   "record": "Urbanitae states 25 years and 3,500+ homes for Grupo ABU, without named projects",
+   "returns": "No yield language on sale listings; the separate Urbanitae investor round is tagged capital gain"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "97 homes plus 4 commercial units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/grupo-abu-nvoga-lanzan-earth-promocion-marbella/"
+   },
+   {
+    "claim": "Developers are Grupo ABU and NVOGA Marbella Realty",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/grupo-abu-nvoga-lanzan-earth-promocion-marbella/"
+   },
+   {
+    "claim": "Completion Q1 2026 with keys end of 2025 (estatenearme)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://spain.estatenearme.com/development-salvia-in-marbella-nvoga"
+   },
+   {
+    "claim": "Development is under construction",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.fotocasa.es/es/comprar/obra-nueva/marbella/20629738"
+   },
+   {
+    "claim": "Grupo ABU delivered 3,500+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://urbanitae.com/pt/project/P000229"
+   },
+   {
+    "claim": "Project funded via Urbanitae (EUR 5m target, status 'financiado')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://urbanitae.com/pt/project/P000229"
+   },
+   {
+    "claim": "Penthouse price EUR 1,480,000 for 126.31 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realista.com/listings/73281"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/salviasanpedro.html"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/salviasanpedro.html"
+   },
+   {
+    "claim": "Energy rating G shown on Fotocasa listing (inconsistent with new build)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.fotocasa.es/es/comprar/obra-nueva/marbella/20629738"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 3500,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": "2026-Q1",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 195,
+   "price_min": 1150000,
+   "price_max": 1480000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "spa",
+    "coworking",
+    "social club",
+    "landscaped areas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Marbella",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Named location and developers reported in trade press",
+   "No guaranteed return marketing on sale listings"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lucasfox.com/new-development/salviasanpedro.html",
+   "https://www.fotocasa.es/es/comprar/obra-nueva/marbella/20629738",
+   "https://www.realista.com/listings/73281",
+   "https://spain.estatenearme.com/development-salvia-in-marbella-nvoga",
+   "https://urbanitae.com/pt/project/P000229",
+   "https://brainsre.news/grupo-abu-nvoga-lanzan-earth-promocion-marbella/"
+  ]
+ }
+]

@@ -1,0 +1,2894 @@
+[
+ {
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "developer": "Sansiri Public Company Limited",
+  "area": "Choeng Thale (Surin Beach)",
+  "country": "Thailand",
+  "market": "Phuket",
+  "stage": "off-plan",
+  "url": "https://www.fazwaz.co.th/en/projects/thailand/phuket/thalang/choeng-thale/rhea-by-sansiri",
+  "docs_url": "https://www.sansiri.com/condominium/rhea-by-sansiri/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: master plan, basement and floor 1-5 plans for buildings A, B, C",
+   "developer: unit layouts 29.75-65 sq m",
+   "developer: 295 units, 3 five-storey buildings, land about 11,200 sq m",
+   "developer: English e-brochure PDF",
+   "news (InfoQuest, 29 Jan 2026): project value THB 1.5bn, from THB 3.99M",
+   "portal: construction start May 2026, completion Nov 2027, EIA approved 30 Mar 2026 (no number)"
+  ],
+  "note": "295-unit low-rise condo near Surin Beach by SET-listed Sansiri, THB 1.5bn project value and from THB 3.99M per InfoQuest (Jan 2026); the developer page publishes floor and unit plans but no price, permit number, completion date or progress figure. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3990000,
+   "currency": "THB",
+   "title": "freehold (foreign quota units) or leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Sansiri developer profile on Thaiger Property lists 305 projects and 106,086 units; named projects include The Standard Residences Hua Hin (completed Nov 2026), XT10 Ekkamai, The Base Midtown Phuket",
+   "units": 295,
+   "payment_plan": null,
+   "price_per_m2": 134118,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "Hawook portal says EIA approved 30 Mar 2026, no number; developer page and InfoQuest article give no EIA or permit data",
+   "escrow": null,
+   "progress": "Developer page links a construction progress site but no figure for RHEA; portal says construction start May 2026",
+   "plans": "sansiri.com project page shows master plan, floor plans and unit layouts",
+   "record": "Thaiger Property developer panel: 305 projects, 106,086 units (portal figure, not from Sansiri filings)",
+   "returns": "No guaranteed return found; portal estimates are its own"
+  },
+  "claims": [
+   {
+    "claim": "295 units in a low-rise format",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.infoquest.co.th/?p=565153"
+   },
+   {
+    "claim": "Prices from THB 3.99 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.infoquest.co.th/?p=565153"
+   },
+   {
+    "claim": "Project value THB 1.5 billion",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.infoquest.co.th/?p=565153"
+   },
+   {
+    "claim": "Developer Sansiri PCL is a registered company (0107538000665) listed on the SET since 1996",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sansiri.com/eng/corporate-info"
+   },
+   {
+    "claim": "EIA approved 30 Mar 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.hawook.com/projects/rhea-by-sansiri"
+   },
+   {
+    "claim": "Construction started May 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.hawook.com/projects/rhea-by-sansiri"
+   },
+   {
+    "claim": "Completion Q4 2027 (Nov 2027); other portal says Jan 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.hawook.com/projects/rhea-by-sansiri"
+   },
+   {
+    "claim": "Freehold available to foreigners within the foreign quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.hawook.com/projects/rhea-by-sansiri"
+   },
+   {
+    "claim": "Chanote land title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.hawook.com/projects/rhea-by-sansiri"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sansiri.com/condominium/rhea-by-sansiri/en/"
+   },
+   {
+    "claim": "Sansiri has delivered 305 projects and 106,086 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thaigerproperty.com/projects/thailand/prachuap-khiri-khan/hua-hin/nong-kae/the-standard-residences-hua-hin?eq=rent"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1984,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Sansiri Public Company Limited, registration no. 0107538000665 (as published by the developer)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Stock Exchange of Thailand (SET: SIRI) since 1996",
+   "construction_start": "2026-05",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "pool villa"
+   ],
+   "size_min_m2": 29.75,
+   "size_max_m2": 120,
+   "price_min": 3990000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condo units within the 49% foreign quota, or leasehold (news says both are sold to foreigners)",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "900 sq m swimming pool",
+    "co-working space",
+    "gym",
+    "yoga lawn",
+    "boxing area",
+    "pet park",
+    "lobby"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval) and local municipality building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor and unit plans published on developer page",
+   "SET-listed developer since 1996",
+   "Unit count and starting price confirmed by InfoQuest news agency",
+   "Low-rise (5 storeys), land area published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sansiri.com/condominium/rhea-by-sansiri/en/",
+   "https://www.fazwaz.co.th/en/projects/thailand/phuket/thalang/choeng-thale/rhea-by-sansiri",
+   "https://app.hawook.com/projects/rhea-by-sansiri",
+   "https://thaigerproperty.com/projects/thailand/prachuap-khiri-khan/hua-hin/nong-kae/the-standard-residences-hua-hin?eq=rent",
+   "https://www.infoquest.co.th/?p=565153",
+   "https://www.sansiri.com/eng/corporate-info",
+   "https://en.wikipedia.org/wiki/Sansiri"
+  ]
+ },
+ {
+  "slug": "banyan-tree-beach-residences-nerea-banyan-group",
+  "name": "Banyan Tree Beach Residences Nerea",
+  "developer": "Banyan Group Residences (Banyan Group)",
+  "area": "Laguna Phuket, Bang Tao",
+  "country": "Thailand",
+  "market": "Phuket",
+  "stage": "off-plan",
+  "url": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-nerea",
+  "docs_url": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-nerea",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: six 3BR duplexes in three buildings, gated floor plan and brochure form",
+   "press release (29 Sep 2026): floor plans from 392 sq m, Banyan Living rental platform, 'no rental return is guaranteed'"
+  ],
+  "note": "Six beachfront 3BR duplexes (from 392 sq m) launched Sep 2026 in Laguna Phuket by SGX-listed Banyan Group; developer page and press release publish no price, completion date, tenure, permit or progress, and the release states no rental return is guaranteed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "THB",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Laguna Resorts & Hotels (SET-listed, 86% owned by Banyan Tree) recognised THB 1,479M of property revenue on unit handovers in 9M2025 and Banyan residences revenue was S$79.6M in FY2024 (NextInsight, citing company filings); no unit counts published",
+   "units": 6,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Floor plans only behind a registration form (gated e-brochure); not counted as published",
+   "record": "NextInsight (Nov 2025) citing SGX/SET filings: property revenue booked on handover, THB 1,479M in 9M2025, S$79.6M residences revenue FY2024; developer site names many Laguna residences but marks none as delivered",
+   "returns": "Press release: 'Rental participation is optional and no rental return is guaranteed'"
+  },
+  "claims": [
+   {
+    "claim": "Six three-bedroom duplex residences in three buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vir.com.vn/banyan-group-launches-six-luxury-duplex-residences-at-laguna-phuket-161809.html"
+   },
+   {
+    "claim": "Floor plans start at 392 sq m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2026/09/29/banyan-group-residences-unveils-ultra-exclusive-banyan-tree-beach-residences-nerea-at-laguna-phuket/489743"
+   },
+   {
+    "claim": "No rental return is guaranteed; rental participation optional via Banyan Living",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2026/09/29/banyan-group-residences-unveils-ultra-exclusive-banyan-tree-beach-residences-nerea-at-laguna-phuket/489743"
+   },
+   {
+    "claim": "Group has handed over residences and recognised revenue on handover (THB 1,479M in 9M2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nextinsight.net/story-archive-mainmenu-60/948-2025/16468-property-gold-rush-banyan-trees-phuket-landbank-delivers-strong-residential-property-sales"
+   },
+   {
+    "claim": "Group property sales of THB 6.8bn in 2023, a record",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bangkokpost.com/business/general/2896002/banyan-lines-up-20-projects"
+   },
+   {
+    "claim": "Land within Laguna Phuket, a landbank acquired by the group in the 1980s",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nextinsight.net/story-archive-mainmenu-60/948-2025/16468-property-gold-rush-banyan-trees-phuket-landbank-delivers-strong-residential-property-sales"
+   },
+   {
+    "claim": "Permit or EIA for the project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-nerea"
+   },
+   {
+    "claim": "Price, tenure and completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-nerea"
+   },
+   {
+    "claim": "Construction stage (launch only, no works reported)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vir.com.vn/banyan-group-launches-six-luxury-duplex-residences-at-laguna-phuket-161809.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Banyan Group Residences (legal entity not named on the page); Phuket land held via Laguna Resorts & Hotels PCL, 86% owned by Banyan Tree",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Banyan Tree Holdings reports to SGX (half and full year); subsidiary Laguna Resorts & Hotels listed on SET and reports quarterly",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR duplex",
+    "3BR duplex penthouse"
+   ],
+   "size_min_m2": 392,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Banyan Living rental platform, optional participation, no return guaranteed",
+   "service_charge": null,
+   "brand": "Banyan Tree",
+   "amenities": [
+    "private pools",
+    "rooftop terrace with pool (penthouses)",
+    "private home gym",
+    "24-hour concierge",
+    "RAVA Beach Club membership",
+    "Laguna Golf Phuket membership",
+    "The Sanctuary Club privileges"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA where required) and local municipality building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer explicitly states no rental return is guaranteed",
+   "Group handovers and revenue recognised in listed-company filings",
+   "Very small collection of six units on group-owned Laguna land"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.banyangroupresidences.com/",
+   "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-nerea",
+   "https://www.malaymail.com/news/money/mediaoutreach/2026/09/29/banyan-group-residences-unveils-ultra-exclusive-banyan-tree-beach-residences-nerea-at-laguna-phuket/489743",
+   "https://www.nextinsight.net/story-archive-mainmenu-60/948-2025/16468-property-gold-rush-banyan-trees-phuket-landbank-delivers-strong-residential-property-sales",
+   "https://vir.com.vn/banyan-group-launches-six-luxury-duplex-residences-at-laguna-phuket-161809.html",
+   "https://bangkokpost.com/business/general/2896002/banyan-lines-up-20-projects"
+  ]
+ },
+ {
+  "slug": "peylaa-phuket-autograph-collection-capc",
+  "name": "PEYLAA Phuket, Autograph Collection Residences",
+  "developer": "CAPC",
+  "area": "Choeng Thale (Bang Tao)",
+  "country": "Thailand",
+  "market": "Phuket",
+  "stage": "under construction",
+  "url": "https://kellerhenson.com/project/peylaa-phuket-bang-tao",
+  "docs_url": "https://kellerhenson.com/project/peylaa-phuket-bang-tao",
+  "permit_number": null,
+  "docs_listed": [
+   "agent page: prices THB 7.7M-22.8M (FAQ THB 7.2M-23.9M), 408 units, 3 buildings, 7 storeys",
+   "agent page: sizes 45.57-127 sq m, common fee THB 120/sq m, sinking fund THB 700/sq m",
+   "agent page: payment booking + 25% down, 75% on completion",
+   "news: completion Q4 2027, under construction (Mar-Apr 2026)",
+   "Stacked Homes: 302 1BR and 106 2BR, about 70 units sold by Jun 2026"
+  ],
+  "note": "408-unit Marriott Autograph Collection branded condo near Bang Tao by Bangkok developer Capstone Asset (CAPC), from THB 7.2M, completion Q4 2027 and described as under construction in Mar-Apr 2026 news; no permit, plans, progress figure or delivered-project list is published, and sources disagree on whether foreigners get freehold or only leasehold. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 7213180,
+   "currency": "THB",
+   "title": "freehold within 49% foreign quota or leasehold (sources disagree)",
+   "lease_base": 30,
+   "extension": "renewable twice, up to 90 years (agent page)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 408,
+   "payment_plan": "Booking THB 100,000 (guide says 200,000); 25% down (guide says 30%); 75% on completion",
+   "price_per_m2": 158288,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Phuket News (30 Mar 2026) says under construction and Nation (9 Apr 2026) says on schedule for Q4 2027; no % or dated photos",
+   "plans": "No floor plan documents, photos only",
+   "record": "Stacked Homes reports developer claim of THB 20bn+ completed developments since 2019; no named delivered projects found",
+   "returns": "No guarantee; Nation says 7-11% yields cited are Phuket-wide market data, not for this project"
+  },
+  "claims": [
+   {
+    "claim": "408 units, 1BR to 3BR, 45-129 sq m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://stackedhomes.com/peylaa-phuket-autograph-collection-residences-review/"
+   },
+   {
+    "claim": "Prices from THB 7.2 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nationthailand.com/business/property/40064880"
+   },
+   {
+    "claim": "Completion Q4 2027 and on schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40064880"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thephuketnews.com/peylaa-phuket-to-debut-as-asia-pacific-first-autograph-collection-residences-99731.php"
+   },
+   {
+    "claim": "Foreign buyers can take freehold within the 49% quota",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/peylaa-phuket-bang-tao"
+   },
+   {
+    "claim": "About 70 units sold, THB 720M, buyers from 24 countries",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://stackedhomes.com/peylaa-phuket-autograph-collection-residences-review/"
+   },
+   {
+    "claim": "Developer has more than THB 20bn of completed developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://stackedhomes.com/peylaa-phuket-autograph-collection-residences-review/"
+   },
+   {
+    "claim": "Developer Capstone Asset is a registered Thai company",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thephuketnews.com/peylaa-phuket-to-debut-as-asia-pacific-first-autograph-collection-residences-99731.php"
+   },
+   {
+    "claim": "EIA or building permit approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/peylaa-phuket-bang-tao"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://stackedhomes.com/peylaa-phuket-autograph-collection-residences-review/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2019,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Capstone Asset (CAPC); legal entity and registration number not published on pages opened",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR (combined)"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 129,
+   "price_min": 7213180,
+   "price_max": 23986970,
+   "currency": "THB",
+   "deposit_pct": 25,
+   "payment_plan": "Booking THB 100,000; 25% down; 75% on completion",
+   "foreign_ownership": "Stacked Homes: freehold within 49% quota or leasehold; Keller Henson: 30-year leasehold renewable twice for non-Thai (sources disagree)",
+   "rental_programme": "No formal rental programme; Marriott concierge can support short-term letting, no guarantees",
+   "service_charge": "THB 120 per sq m per month; sinking fund THB 700 per sq m",
+   "brand": "Autograph Collection Residences (Marriott)",
+   "amenities": [
+    "swimming pool",
+    "fitness centre",
+    "sauna",
+    "coworking space",
+    "tennis court",
+    "jogging track",
+    "shuttle service",
+    "rooftop"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA) and local municipality building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Low density, about 40 units per rai per Nation",
+   "Common fee and sinking fund published",
+   "Marriott brand management with no guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kellerhenson.com/project/peylaa-phuket-bang-tao",
+   "https://www.thephuketnews.com/peylaa-phuket-to-debut-as-asia-pacific-first-autograph-collection-residences-99731.php",
+   "https://stackedhomes.com/peylaa-phuket-autograph-collection-residences-review/",
+   "https://www.nationthailand.com/business/property/40064880"
+  ]
+ },
+ {
+  "slug": "skypark-lucean-jomtien-lunique",
+  "name": "Skypark Lucean Jomtien Pattaya",
+  "developer": "Lunique Real Estate Co., Ltd.",
+  "area": "Jomtien",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "stage": "under construction",
+  "url": "https://skyparklucean.com/",
+  "docs_url": "https://skyparklucean.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: construction progress Sep 2026, overall 19.55% (piles 100%, structure 36.9%, MEP 2.2%)",
+   "developer site: per-floor plan images by floor range and unit types (studio 32.90, 1BR 40.48, 2BR 86 sq m)",
+   "developer site: Phase 1 899 units in towers A (60 fl) and B (31 fl), Phase 2 588 units",
+   "press release (Sep 2025): from THB 4.3M, completion Dec 2028, 'guaranteed 6% returns for three years'",
+   "news: contractor Pornpranakorn, piling done Oct 2025, phase one start Nov 2025"
+  ],
+  "note": "Banyan-branded sea-view condo in Jomtien (899 units in Phase 1) by Lunique Real Estate; developer site reports 19.55% overall progress in Sep 2026 and floor-by-floor plans, while a 2025 developer press release advertised a 6% guaranteed return for three years and Dec 2028 completion. No permit number or escrow published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4300000,
+   "currency": "THB",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 19.55,
+   "developer_delivered": null,
+   "units": 1487,
+   "payment_plan": null,
+   "price_per_m2": 130699,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "skyparklucean.com: overall 19.55% (Sep 2026), piles 100%, structure 36.9%; Roof21 news (22 Nov 2025): piling done Oct 2025, phase one started Nov 2025",
+   "plans": "skyparklucean.com: per-floor plan images grouped by floor range plus unit type list",
+   "record": null,
+   "returns": "Thaiger press release (10 Sep 2025): 'guaranteed 6% returns for three years'; current developer site has no guarantee wording"
+  },
+  "claims": [
+   {
+    "claim": "Overall construction 19.55% complete (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://skyparklucean.com/"
+   },
+   {
+    "claim": "Piling completed Oct 2025 and Phase One construction began Nov 2025 with contractor Pornpranakorn",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.roof21.co.th/news/lunique-real-estate-appoints-pornpranakorn-for-75-billion-thb-skypark-lucean-jomtien-pattaya-phase-one-construction"
+   },
+   {
+    "claim": "Completion December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42"
+   },
+   {
+    "claim": "Guaranteed 6% returns for three years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42"
+   },
+   {
+    "claim": "Project value THB 7.5 billion",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://skyparklucean.com/"
+   },
+   {
+    "claim": "Phase One over 42% sold, 13% of foreign quota left",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42"
+   },
+   {
+    "claim": "Prices from THB 4.3 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42"
+   },
+   {
+    "claim": "EIA or building permit approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://skyparklucean.com/"
+   },
+   {
+    "claim": "Developer Lunique Real Estate Co., Ltd. has delivered earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://skyparklucean.com/"
+   },
+   {
+    "claim": "Banyan Group brand and Banyan Living rental management for Tower B",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pattaya, Chon Buri, Thailand",
+   "developer_company": "Lunique Real Estate Co., Ltd. (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 32.9,
+   "size_max_m2": 379,
+   "price_min": 4300000,
+   "price_max": 110000000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condo units within the foreign quota (press says 13% of quota left); not stated in detail",
+   "rental_programme": "Banyan Living rental management for Tower B; developer press advertised 6% guaranteed for three years",
+   "service_charge": null,
+   "brand": "Banyan Group (Skypark by Banyan)",
+   "amenities": [
+    "infinity pools",
+    "gym",
+    "sauna",
+    "co-working spaces",
+    "sky lounge",
+    "kids club",
+    "gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA) and Pattaya City building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Detailed construction progress by work package published (Sep 2026)",
+   "Main contractor named",
+   "Floor-range plan images and unit sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42",
+   "https://www.roof21.co.th/news/lunique-real-estate-appoints-pornpranakorn-for-75-billion-thb-skypark-lucean-jomtien-pattaya-phase-one-construction",
+   "https://www.banyangroupresidences.com/thailand/pattaya/skypark-lucean-jomtien-pattaya",
+   "https://skyparklucean.com/"
+  ]
+ },
+ {
+  "slug": "tait-pattaya-raimon-land",
+  "name": "Tait Pattaya",
+  "developer": "Raimon Land Public Company Limited",
+  "area": "Central Pattaya",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "stage": "off-plan",
+  "url": "https://kellerhenson.com/project/tait-pattaya",
+  "docs_url": "https://www.raimonland.com/en/projects/residential/582/tait-pattaya",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: 311 units, 38 storeys plus 5 parking storeys, land 2-0-29 rai",
+   "developer page: size ranges 1BR 34-46.2, 1BR plus 55.7-62.7, 2BR 66.1-111.9 sq m",
+   "developer page: 'starts at 5.85 MB' (terms apply)",
+   "developer news: project value over THB 3.3bn, launch Q3 2025",
+   "agent page: THB 6.9M-30M, completion Q3 2029, common fee THB 80/sq m, conflicting payment plans"
+  ],
+  "note": "311-unit, 38-storey condo in central Pattaya by SET-listed Raimon Land (value over THB 3.3bn); developer page gives unit size ranges and a 'from 5.85 MB' price but no plans, permit, progress or completion date (agents say Q3 2029). The SET has placed a caution (CB) sign on RML shares after losses, per Bangkok Post reporting. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5850000,
+   "currency": "THB",
+   "title": "freehold (foreign quota)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The River condominium in Bangkok (completed, remaining stock being sold) and One City Centre office tower completed Mar 2023, per Bangkok Post report via Thailand Construction News; developer news names Tait Sathorn 12",
+   "units": 311,
+   "payment_plan": "Reservation THB 100,000; 25% during construction, 75% on completion (page also shows 5-10% contract, 15% over 28 months, 80% on transfer)",
+   "price_per_m2": 172059,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Developer page lists size ranges only, no plans; agent page names layout codes in text only",
+   "record": "Thailand Construction News (4 Dec 2025, citing Bangkok Post): One City Centre completed Mar 2023; The River condo remaining units THB 847M",
+   "returns": "No guarantee; 'strong rental yields' claim without figure"
+  },
+  "claims": [
+   {
+    "claim": "311 units over 38 storeys",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.raimonland.com/en/projects/residential/582/tait-pattaya"
+   },
+   {
+    "claim": "Project value over THB 3.3 billion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.raimonland.com/cn/newsroom/news-and-activities/573/rml-returns-to-pattaya-with-new-condominium-project-worth-thb-33-billion"
+   },
+   {
+    "claim": "Price from THB 5.85M (developer) vs THB 6.9M (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/tait-pattaya"
+   },
+   {
+    "claim": "Completion Q3 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/tait-pattaya"
+   },
+   {
+    "claim": "Raimon Land has completed projects (One City Centre Mar 2023, The River condo)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thailand-construction.com/?p=36087"
+   },
+   {
+    "claim": "Raimon Land is a financially sound listed developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://thailand-construction.com/?p=36087"
+   },
+   {
+    "claim": "Freehold for foreigners within the 49% quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/tait-pattaya"
+   },
+   {
+    "claim": "EIA or building permit approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.raimonland.com/en/projects/residential/582/tait-pattaya"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.raimonland.com/en/projects/residential/582/tait-pattaya"
+   },
+   {
+    "claim": "No guaranteed rental return (only 'strong rental potential')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/tait-pattaya"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Raimon Land Public Company Limited (SET: RML)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on SET (RML); SET caution (CB) sign over three years of losses and equity below 50% of paid-up capital (Bangkok Post via Thailand Construction News, Dec 2025)",
+   "construction_start": null,
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR plus",
+    "2BR"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 111.9,
+   "price_min": 5850000,
+   "price_max": 34210000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "Agent page: THB 100,000 booking, 5% contract, 15% over 28 months, 80% on transfer (other versions also shown)",
+   "foreign_ownership": "Freehold within 49% foreign quota (agent page)",
+   "rental_programme": "none stated",
+   "service_charge": "THB 80 per sq m; sinking fund THB 500 per sq m (agent page)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "sky lounge",
+    "co-working space",
+    "fitness centre",
+    "theatre",
+    "sauna",
+    "kids area",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA) and Pattaya City building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "SET-listed developer with completed Bangkok projects confirmed in press",
+   "Unit count, floors and land size published by developer",
+   "No guaranteed return language"
+  ],
+  "flags": [
+   {
+    "text": "Bangkok Post reported (Dec 2025) that the SET placed a caution (CB) sign on Raimon Land shares after three years of net losses and shareholders' equity falling below 50% of paid-up capital; the company is selling assets to raise liquidity.",
+    "source": "https://thailand-construction.com/?p=36087"
+   }
+  ],
+  "sources": [
+   "https://www.raimonland.com/cn/newsroom/news-and-activities/577/rml-unveils-tait-pattaya-a-new-landmark-mixed-use-condominium",
+   "https://kellerhenson.com/pt/project/tait-pattaya",
+   "https://kellerhenson.com/project/tait-pattaya",
+   "https://www.raimonland.com/en/projects/residential/582/tait-pattaya",
+   "https://www.raimonland.com/cn/newsroom/news-and-activities/573/rml-returns-to-pattaya-with-new-condominium-project-worth-thb-33-billion",
+   "https://thailand-construction.com/?p=36087"
+  ]
+ },
+ {
+  "slug": "intercontinental-residences-bangkok-asoke-cg-capital",
+  "name": "InterContinental Residences Bangkok Asoke",
+  "developer": "CG Capital Advisory Limited (Central Group)",
+  "area": "Asoke, Sukhumvit",
+  "country": "Thailand",
+  "market": "Bangkok",
+  "stage": "off-plan",
+  "url": "https://www.fazwaz.co.th/en/projects/thailand/bangkok/khlong-toei/khlong-toei/intercontinental-residences-bangkok-asoke",
+  "docs_url": "https://centralgroupcapital.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "launch release (Nov 2025): 88 freehold residences, 139-547 sq m, from THB 40.8M, value THB 5.5bn, completion Q2 2029",
+   "CBRE article repeats units, sizes, price, value and Q2 2029",
+   "portal: 32 floors, building floor plan images by floor (6-32), unit plans 2BR, 3BR, 4BR penthouse, listed from THB 44.8M, completion Jan 2029, status off plan"
+  ],
+  "note": "88 freehold IHG-branded residences on Sukhumvit 16 by Central Group's CG Capital, THB 5.5bn value, from THB 40.8M at launch (portal now from THB 44.8M), 32 floors, completion Q2 2029; floor plan images appear on a portal but no permit, progress, escrow or delivered-project record is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 40800000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 88,
+   "payment_plan": null,
+   "price_per_m2": 293525,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Portal lists status 'Off Plan', no construction start published",
+   "plans": "FazWaz project page: building floor plans by floor and unit plan images",
+   "record": "Release cites The Standard Residences Phuket Bang Tao as previous flagship, which is itself still being sold off-plan; no delivered project found",
+   "returns": "None mentioned"
+  },
+  "claims": [
+   {
+    "claim": "88 freehold residences, 139-547 sq m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cbre.co.th/insights/articles/introduce-intercontinential-residences-bangkok-asoke"
+   },
+   {
+    "claim": "Project value THB 5.5 billion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954"
+   },
+   {
+    "claim": "Prices from THB 40.8 million (portal now lists from THB 44.8M)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.co.th/en/projects/thailand/bangkok/khlong-toei/khlong-toei/intercontinental-residences-bangkok-asoke"
+   },
+   {
+    "claim": "Completion Q2 2029 (portal says Jan 2029)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.co.th/en/projects/thailand/bangkok/khlong-toei/khlong-toei/intercontinental-residences-bangkok-asoke"
+   },
+   {
+    "claim": "Freehold title for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cbre.co.th/insights/articles/introduce-intercontinential-residences-bangkok-asoke"
+   },
+   {
+    "claim": "First standalone InterContinental branded residence globally",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954"
+   },
+   {
+    "claim": "CG Capital fund size USD 300M, backed by Central Group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954"
+   },
+   {
+    "claim": "The Standard Residences Phuket is a successful previous project (delivery not shown)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954"
+   },
+   {
+    "claim": "EIA or building permit approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.co.th/en/projects/thailand/bangkok/khlong-toei/khlong-toei/intercontinental-residences-bangkok-asoke"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "CG Capital Advisory Limited (Central Group private equity fund); project company not named",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 139,
+   "size_max_m2": 547,
+   "price_min": 40800000,
+   "price_max": 225800000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (condominium; foreigners within the 49% quota)",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": "InterContinental (IHG Hotels & Resorts)",
+   "amenities": [
+    "25 m saltwater pool",
+    "fitness centre",
+    "yoga and pilates studio",
+    "hot and cold plunge pools",
+    "co-working space",
+    "residents lounge",
+    "art studio",
+    "24-hour concierge"
+   ],
+   "lat": 13.733,
+   "lng": 100.561,
+   "permit_authority": "ONEP (EIA) and Bangkok Metropolitan Administration building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Freehold title, no guaranteed return language",
+   "Floor plan images by floor on portal listing",
+   "Backed by Central Group fund and IHG brand"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954",
+   "https://www.fazwaz.co.th/en/projects/thailand/bangkok/khlong-toei/khlong-toei/intercontinental-residences-bangkok-asoke",
+   "https://www.cbre.co.th/insights/articles/introduce-intercontinential-residences-bangkok-asoke"
+  ]
+ },
+ {
+  "slug": "sls-residences-bangkok-sukhumvit-24-valanti",
+  "name": "SLS Residences Bangkok Sukhumvit 24",
+  "developer": "Elysian Park Co., Ltd. (Valanti Group and Pre-Built PCL joint venture)",
+  "area": "Sukhumvit 24",
+  "country": "Thailand",
+  "market": "Bangkok",
+  "stage": "off-plan",
+  "url": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html",
+  "docs_url": "https://www.hospitalitynet.org/announcement/41013835/valanti-group-and-ennismore-bring-sls-residences-to-bangkok",
+  "permit_number": null,
+  "docs_listed": [
+   "Japan sales release (28 Jul 2026): 78 units, 36 floors plus 6 basements, site 2,788.8 sq m, 133 parking",
+   "release: sizes 1BR 68 sq m to simplex penthouse 411 sq m, THB 21M-251M, completion planned Jun 2030, freehold",
+   "release: owner Elysian Park Co., Ltd. (Valanti Group and Pre-Built PCL JV), incorporated 26 Jan 2024, capital THB 1,137,530,000",
+   "sales agent List International Realty (Sotheby's licence)"
+  ],
+  "note": "First SLS branded residences in Asia Pacific: 78 freehold units in a 36-storey tower on Sukhumvit 24, THB 21M-251M, completion planned June 2030, by Elysian Park Co., Ltd. (Valanti and SET-listed Pre-Built JV) per the Jul 2026 Japan sales release; no permit, plans, progress or delivered-project record is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 21000000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 78,
+   "payment_plan": null,
+   "price_per_m2": 308824,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Unit sizes listed, no plans opened",
+   "record": "No completed projects of Elysian Park or Valanti found; Pre-Built PCL is a listed contractor and developer but no delivery record was opened",
+   "returns": "None mentioned; Accor ownership benefits only"
+  },
+  "claims": [
+   {
+    "claim": "78 units in a 36-floor tower with 6 basement levels",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "Prices THB 21M to 251M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "Completion planned June 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "Elysian Park Co., Ltd. incorporated 26 Jan 2024 with THB 1.14bn registered capital, JV of Valanti Group and Pre-Built PCL",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "Site of about 2,788.8 sq m on Sukhumvit Soi 24",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "SLS brand licensed by Ennismore, first SLS Residences in Asia Pacific",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ennismore.com/stories/sls-first-residences-in-asia-pacific/"
+   },
+   {
+    "claim": "EIA or building permit approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prtimes.jp/main/html/rd/p/000000243.000011000.html"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hospitalitynet.org/announcement/41013835/valanti-group-and-ennismore-bring-sls-residences-to-bangkok"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2024,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Elysian Park Co., Ltd. (incorporated 26 Jan 2024, registered capital THB 1,137,530,000), JV of Valanti Group Co., Ltd. and Pre-Built Public Company Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "JV partner Pre-Built PCL is listed on the SET (PREB); the project company is not listed",
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "simplex penthouse",
+    "duplex penthouse"
+   ],
+   "size_min_m2": 68,
+   "size_max_m2": 411,
+   "price_min": 21000000,
+   "price_max": 251000000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium (foreigners within the 49% quota)",
+   "rental_programme": "none stated; Accor/Ennismore ownership benefits",
+   "service_charge": null,
+   "brand": "SLS (Ennismore, Accor)",
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA) and Bangkok Metropolitan Administration building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Project company, incorporation date and capital published",
+   "Detailed unit mix, site area and parking published",
+   "Freehold, no guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://prtimes.jp/main/html/rd/p/000000243.000011000.html",
+   "https://www.hospitalitynet.org/announcement/41013835/valanti-group-and-ennismore-bring-sls-residences-to-bangkok",
+   "https://ennismore.com/stories/sls-first-residences-in-asia-pacific/"
+  ]
+ },
+ {
+  "slug": "dusit-ajara-hua-hin-dusit-estate",
+  "name": "Dusit Ajara Hua Hin",
+  "developer": "Dusit Estate (Dusit International)",
+  "area": "Hua Hin (next to Dusit Thani Hua Hin)",
+  "country": "Thailand",
+  "market": "Hua Hin",
+  "stage": "off-plan",
+  "url": "https://www.nationthailand.com/business/property/40062931",
+  "docs_url": "https://www.dusit-international.com/en/newsroom/news-releases/631/dusit-international-marks-new-milestone-with-launch-of-dusit-ajara-hua-hin-in-bid-to-lead-luxury-real-estate-with-ajara-branded-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "developer release (19 Mar 2025): 96 units in seven 3- and 6-storey buildings, value over THB 2bn, leasehold",
+   "news (Nation, 24 Feb 2026): EIA approved by ONEP (no number), construction under way, handover 2028, CBRE yield estimate 7-9% gross",
+   "news (Nation, Nov 2025): construction to start 2026, completion 2028",
+   "The Reporter: from THB 14M"
+  ],
+  "note": "96-unit leasehold Thai-branded low-rise residence on 20+ rai of the Dusit Thani Hua Hin grounds, value over THB 2bn, from THB 14M, handover expected 2028; news says the EIA is approved (no number) and works started in 2026, and the 7-9% yields cited are CBRE estimates, not guarantees. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 14000000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 96,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "Nation (24 Feb 2026): EIA approved by ONEP, no number published",
+   "escrow": null,
+   "progress": "Nation Nov 2025: construction to start 2026; Nation Feb 2026: construction under way; no figure or dated photos",
+   "plans": null,
+   "record": "Developer cites Dusit Central Park residences (Bangkok) as soon-to-be-completed; transfers due from late 2025 but no delivery count published",
+   "returns": "Nation: CBRE estimates 7-9% gross yields; no guarantee"
+  },
+  "claims": [
+   {
+    "claim": "96 units in seven buildings, value over THB 2bn",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nationthailand.com/business/property/40058779"
+   },
+   {
+    "claim": "EIA approved by ONEP",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40062931"
+   },
+   {
+    "claim": "Construction under way (Feb 2026) vs scheduled to start 2026 (Nov 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40062931"
+   },
+   {
+    "claim": "Handover 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40058779"
+   },
+   {
+    "claim": "Leasehold residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dusit-international.com/en/newsroom/news-releases/631/dusit-international-marks-new-milestone-with-launch-of-dusit-ajara-hua-hin-in-bid-to-lead-luxury-real-estate-with-ajara-branded-residences"
+   },
+   {
+    "claim": "Prices from THB 14M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thereporter.asia/eng/?p=3760"
+   },
+   {
+    "claim": "Land of over 20 rai on Dusit Thani Hua Hin grounds owned by the group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40062931"
+   },
+   {
+    "claim": "Gross rental yields 7-9% (CBRE estimate, not guaranteed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40062931"
+   },
+   {
+    "claim": "Dusit Central Park residences over 95% sold with transfers from late 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nationthailand.com/business/property/40058779"
+   },
+   {
+    "claim": "Parent Dusit Thani PCL is rated by TRIS Rating",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nationthailand.com/business/property/40058779"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Dusit Estate Company Limited, subsidiary of Dusit Thani Public Company Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Dusit Thani PCL listed on SET; rated by TRIS Rating",
+   "construction_start": "2026",
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 14000000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold",
+   "rental_programme": "none stated; CBRE yield estimate 7-9% gross",
+   "service_charge": null,
+   "brand": "Dusit Ajara",
+   "amenities": [
+    "over 60% green space",
+    "Caracole furniture package"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA) and Hua Hin municipality building permit",
+   "brochure_url": null
+  },
+  "positives": [
+   "Listed parent company with TRIS rating",
+   "Yields presented as third-party estimates, not guaranteed",
+   "Low-density, low-rise design on group land"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.nationthailand.com/business/property/40062931",
+   "https://thereporter.asia/eng/?p=3760",
+   "https://www.dusit-international.com/en/newsroom/news-releases/631/dusit-international-marks-new-milestone-with-launch-of-dusit-ajara-hua-hin-in-bid-to-lead-luxury-real-estate-with-ajara-branded-residences",
+   "https://www.nationthailand.com/business/property/40058779"
+  ]
+ },
+ {
+  "slug": "eden-rise-samui-edenroc",
+  "name": "Eden Rise",
+  "developer": "EDENROC",
+  "area": "Lamai",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "stage": "off-plan",
+  "url": "https://kellerhenson.com/pt/project/eden-rise-samui",
+  "docs_url": "https://kellerhenson.com/pt/project/eden-rise-samui",
+  "permit_number": null,
+  "docs_listed": [
+   "agent page: 12 pool villas 1-3BR, THB 4.99M-7.99M, internal 126-229 sq m, plots 250-400 sq m",
+   "agent page: 30-year leasehold renewable twice, completion Q1 2027, projected ROI 10-14% (not guaranteed)",
+   "second agent page: stage payments 10/30/20/20/17/3, leasehold registered at Land Department",
+   "agent page for earlier Edenroc Jungle Villas: 30 units, sold out, completion listed 2025 Q2"
+  ],
+  "note": "12-villa off-plan project on the edge of Lamai from THB 4.99M, 30-year leasehold renewable twice, completion Q1 2027; agents show a projected 10-14% return labelled not guaranteed and no permit, plans, progress or proof that earlier Edenroc projects were delivered. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4990000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "renewable twice, up to 90 years",
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": "THB 200,000 reservation; 30% on contract; 70% at completion or staged (other agent: 10% reservation, 30% contract/start, 20% foundation, 20% roof, 17% interiors, 3% handover)",
+   "price_per_m2": 39603,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Photo galleries only",
+   "record": "Agents say predecessor Eden Rocks sold out in three months and list Edenroc Jungle Villas (30 units) as sold out with 2025 Q2 completion; no handover evidence",
+   "returns": "Developer projection 10-14% ROI, explicitly not guaranteed; other agent forecasts over THB 500,000 a year"
+  },
+  "claims": [
+   {
+    "claim": "12 pool villas from THB 4.99M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/pt/project/eden-rise-samui"
+   },
+   {
+    "claim": "Completion Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/pt/project/eden-rise-samui"
+   },
+   {
+    "claim": "30-year leasehold registered at the Land Department, renewable twice",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samui-island-realty.com/?p=87511"
+   },
+   {
+    "claim": "Projected ROI 10-14%, not guaranteed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/pt/project/eden-rise-samui"
+   },
+   {
+    "claim": "Earlier project Eden Rocks sold out in three months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samui-island-realty.com/?p=87511"
+   },
+   {
+    "claim": "Edenroc Jungle Villas (30 units) completed 2025 Q2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/edenroc-jungle-villas"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samui-island-realty.com/?p=87511"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/pt/project/eden-rise-samui"
+   },
+   {
+    "claim": "Developer company is registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/pt/project/eden-rise-samui"
+   },
+   {
+    "claim": "Villa internal sizes 126-229 sq m (header says 174-283 sq m)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kellerhenson.com/pt/project/eden-rise-samui"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Koh Samui, Thailand",
+   "developer_company": "EDENROC (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR pool villa",
+    "2BR pool villa",
+    "3BR pool villa"
+   ],
+   "size_min_m2": 126,
+   "size_max_m2": 229,
+   "price_min": 4990000,
+   "price_max": 7990000,
+   "currency": "THB",
+   "deposit_pct": 30,
+   "payment_plan": "THB 200,000 reservation; 30% on contract; 70% staged to completion",
+   "foreign_ownership": "30-year leasehold registered at the Land Department, renewable twice (up to 90 years)",
+   "rental_programme": "Optional villa management and rental; projected 10-14% ROI, not guaranteed",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private infinity pool",
+    "24/7 security",
+    "CCTV",
+    "landscaped gardens",
+    "underground electricity",
+    "fibre internet",
+    "private water supply"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Koh Samui municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Returns projection labelled not guaranteed",
+   "Construction-linked stage payments with only 3% at handover in one version",
+   "Leasehold to be registered at the Land Department"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kellerhenson.com/pt/project/eden-rise-samui",
+   "https://samui-island-realty.com/?p=87511",
+   "https://kellerhenson.com/project/edenroc-jungle-villas"
+  ]
+ },
+ {
+  "slug": "le-reve-koh-samui-gefen-global",
+  "name": "Le Reve",
+  "developer": "Gefen Global",
+  "area": "Bophut",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "stage": "under construction",
+  "url": "https://kellerhenson.com/project/le-reve-koh-samui",
+  "docs_url": "https://kellerhenson.com/project/le-reve-koh-samui",
+  "permit_number": null,
+  "docs_listed": [
+   "agent page (updated 5 Aug 2026): 8 villas, THB 11.9M-13.5M, built 260-325 sq m, land 345-400 sq m, completion 2026 Q4",
+   "agent page: stage payments 10/30/20/20/15/5 (widget shows 40/60)",
+   "second agent: 3BR 270 sq m on 400 sq m land, 4BR 325 sq m on 345 sq m land",
+   "portal: from THB 11.3M, 'scheduled for completion in Aug 2026'"
+  ],
+  "note": "8-villa project in Bophut by Gefen Global from THB 11.3M-11.9M with construction-linked stage payments; agents give completion as Aug 2026 or Q4 2026 and the page has many internal inconsistencies, with no permit, plans, progress report or developer history published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 11900000,
+   "currency": "THB",
+   "title": "leasehold for non-Thai",
+   "lease_base": 30,
+   "extension": "renewable twice, up to 90 years",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 8,
+   "payment_plan": "10% reservation; 30% contract; 20% foundation; 20% structure; 15% finishing; 5% handover",
+   "price_per_m2": 45769,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No progress figure or dated photos; completion given as Aug 2026 (portal) and Q4 2026 (agent)",
+   "plans": "Text descriptions of 3BR and 4BR villa types only, no plan drawings",
+   "record": null,
+   "returns": "None mentioned"
+  },
+  "claims": [
+   {
+    "claim": "8 villas, 3BR and 4BR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/le-reve-koh-samui"
+   },
+   {
+    "claim": "Prices from THB 11.9M (portal from THB 11.3M)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thailand-property.com/house/29550/le-reve-villas-koh-samui"
+   },
+   {
+    "claim": "Completion Q4 2026 (portal says Aug 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thailand-property.com/house/29550/le-reve-villas-koh-samui"
+   },
+   {
+    "claim": "Construction under way, payments tied to construction stages",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/le-reve-koh-samui"
+   },
+   {
+    "claim": "Leasehold 30 years renewable twice for non-Thai buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/le-reve-koh-samui"
+   },
+   {
+    "claim": "Freehold ownership options",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://samui-island-realty.com/?p=66917"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/le-reve-koh-samui"
+   },
+   {
+    "claim": "Developer Gefen Global is a registered company with delivered projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/le-reve-koh-samui"
+   },
+   {
+    "claim": "Land plots 345-400 sq m (three different ranges on one page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/le-reve-koh-samui"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Gefen Global (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": "2026-08 (portal)",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 260,
+   "size_max_m2": 325,
+   "price_min": 11900000,
+   "price_max": 13500000,
+   "currency": "THB",
+   "deposit_pct": 10,
+   "payment_plan": "10% reservation; 30% contract; 20% foundation; 20% structure; 15% finishing; 5% handover",
+   "foreign_ownership": "30-year leasehold renewable twice for non-Thai buyers",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private infinity pools",
+    "sunken salas",
+    "24/7 security",
+    "CCTV",
+    "landscaped gardens",
+    "covered parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Koh Samui municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction-linked stage payments, 5% at handover",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kellerhenson.com/project/le-reve-koh-samui",
+   "https://samui-island-realty.com/?p=66917",
+   "https://www.thailand-property.com/house/29550/le-reve-villas-koh-samui"
+  ]
+ },
+ {
+  "slug": "residences-mandarin-oriental-da-nang-nam-khang",
+  "name": "The Residences at Mandarin Oriental Da Nang",
+  "developer": "The Nam Khang Corporation",
+  "area": "Hoa Hai, Ngu Hanh Son",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://rumavi.com/en/new-developments/vietnam/da-nang/the-residences-at-mandarin-oriental-da-nang",
+  "docs_url": "https://www.jardines.com/en/news-and-views/mandarin-oriental-announces-luxury-and-residences-project-da-nang-vietnam",
+  "permit_number": null,
+  "docs_listed": [
+   "portal (Rumavi): villas VND 80bn-120bn, 3BR villa 500 sq m, 50-year leasehold for foreigners, 6% guaranteed minimum income for two years, completion Q2 2026",
+   "Jardines (Feb 2021): 69 villas and 18 Residences, opening 2024",
+   "Coteccons (Mar 2024): groundbreaking 20 Mar 2024, 82 villas incl. 20 with long-term ownership, construction area 23,362 sq m",
+   "VnExpress (Mar 2024): completion early 2026"
+  ],
+  "note": "Beachfront Mandarin Oriental resort and residences in Hoa Hai by Nam Khang; groundbreaking 20 Mar 2024 (city newspaper and contractor), the 2021 announcement targeted 2024 and later sources say early or Q2 2026, and unit counts differ widely between sources (87, 82, or 988 plus 128). A portal advertises villas from VND 80bn with a 6% guaranteed income for two years. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 80000000000,
+   "currency": "VND",
+   "title": "50-year leasehold for foreigners (portal)",
+   "lease_base": 50,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Rumavi lists 1 completed project: The Nam Khang Resort Residences, Da Nang (18 villas)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 200000000,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": "No investment certificate or construction permit number published; news cites only national policy",
+   "escrow": null,
+   "progress": "Bao Da Nang and Coteccons: groundbreaking 20 Mar 2024; no later progress figure or dated update found",
+   "plans": "Not on page, sent on request",
+   "record": "Rumavi developer section: The Nam Khang Resort Residences (18 villas) completed; developer founded 2007 (portal data)",
+   "returns": "Rumavi: guaranteed rental income programme, 6% per year for 2 years"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking held 20 Mar 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://baodanang.vn/english/society/202403/work-starts-on-mandarin-oriental-da-nang-beach-villa-project-3968701"
+   },
+   {
+    "claim": "Investor is The Nam Khang Corporation",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.coteccons.vn/en/mandarin-oriental-beachfront-villas-project-da-nang-officially-groundbreaks/2/"
+   },
+   {
+    "claim": "Completion Q2 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.jardines.com/en/news-and-views/mandarin-oriental-announces-luxury-and-residences-project-da-nang-vietnam"
+   },
+   {
+    "claim": "988 apartments and 128 villas",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.coteccons.vn/en/mandarin-oriental-beachfront-villas-project-da-nang-officially-groundbreaks/2/"
+   },
+   {
+    "claim": "Guaranteed minimum income 6% per year for two years from handover",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/vietnam/da-nang/the-residences-at-mandarin-oriental-da-nang"
+   },
+   {
+    "claim": "Villas priced VND 80bn-120bn",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/vietnam/da-nang/the-residences-at-mandarin-oriental-da-nang"
+   },
+   {
+    "claim": "50-year leasehold for foreigners, freehold for Vietnamese",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/vietnam/da-nang/the-residences-at-mandarin-oriental-da-nang"
+   },
+   {
+    "claim": "20 villas with long-term ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.coteccons.vn/en/mandarin-oriental-beachfront-villas-project-da-nang-officially-groundbreaks/2/"
+   },
+   {
+    "claim": "Developer completed The Nam Khang Resort Residences (18 villas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/vietnam/da-nang/the-residences-at-mandarin-oriental-da-nang"
+   },
+   {
+    "claim": "Investment certificate and construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baodanang.vn/english/society/202403/work-starts-on-mandarin-oriental-da-nang-beach-villa-project-3968701"
+   },
+   {
+    "claim": "Mandarin Oriental will manage the resort",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.jardines.com/en/news-and-views/mandarin-oriental-announces-luxury-and-residences-project-da-nang-vietnam"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Vietnam",
+   "developer_company": "The Nam Khang Corporation (founding chairman Dinh Ba Thanh)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 18,
+   "listed_or_audited": null,
+   "construction_start": "2024-03",
+   "handover_promised": "2026-Q2",
+   "original_handover": "2024 (resort opening per Feb 2021 announcement)",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "2BR apartment"
+   ],
+   "size_min_m2": 120,
+   "size_max_m2": 500,
+   "price_min": 80000000000,
+   "price_max": 120000000000,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "50-year leasehold for foreigners within the 30% foreign cap (portal)",
+   "rental_programme": "Rental management with 6% per year guaranteed minimum income for two years from handover (portal)",
+   "service_charge": null,
+   "brand": "Mandarin Oriental",
+   "amenities": [
+    "beachfront",
+    "private infinity pools",
+    "Mandarin Oriental resort services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Da Nang People's Committee / Department of Construction",
+   "brochure_url": null
+  },
+  "positives": [
+   "Groundbreaking and investor confirmed by city newspaper and main contractor",
+   "Mandarin Oriental management confirmed by Jardine Matheson"
+  ],
+  "flags": [],
+  "sources": [
+   "https://rumavi.com/en/new-developments/vietnam/da-nang/the-residences-at-mandarin-oriental-da-nang",
+   "https://baodanang.vn/english/society/202403/work-starts-on-mandarin-oriental-da-nang-beach-villa-project-3968701",
+   "https://www.jardines.com/en/news-and-views/mandarin-oriental-announces-luxury-and-residences-project-da-nang-vietnam",
+   "https://e.vnexpress.net/news/business/mandarin-oriental-da-nang-residences-nestled-along-one-of-world-s-most-beautiful-beaches-4724662.html",
+   "https://www.coteccons.vn/en/mandarin-oriental-beachfront-villas-project-da-nang-officially-groundbreaks/2/"
+  ]
+ },
+ {
+  "slug": "the-sculptura-phu-my-hung",
+  "name": "The Sculptura",
+  "developer": "Phu My Hung Development Corporation",
+  "area": "Phu My Hung (Canh Doi), District 7",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://en.vietstock.vn/2025/10/phu-my-hung-launches-new-limited-edition-development-the-sculptura-973-622764.htm",
+  "docs_url": "https://phumyhung.vn/the-sculptura/en",
+  "permit_number": "13/GPXD-BQLKN",
+  "docs_listed": [
+   "developer page: 12 floors, site 2,377.29 sq m, floor plans by floor, unit sizes 84.44-226.22 sq m, shops 134.69-242.69 sq m",
+   "Vietstock (Oct 2025): 75 apartments and 10 shops, under construction, launched 11 Oct 2025",
+   "CafeLand: construction permit No. 13/GPXD-BQLKN (27 Dec 2024), 1/500 plan Decision 73/QD-BQLKN (28 Nov 2023), construction start 25 Jun 2025, indicative VND 170-190M per sq m"
+  ],
+  "note": "Boutique 12-storey, 75-apartment building on lot H14-3 in Phu My Hung, launched Oct 2025; the developer publishes floor plans and sizes, CafeLand reports construction permit 13/GPXD-BQLKN (Dec 2024), works from Jun 2025 and indicative prices of VND 170-190M per sq m, but no handover date, escrow or bank guarantee is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "13/GPXD-BQLKN",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Phu My Hung: Hung Phuc Premier (192 condos, District 7) handed over from Aug 2020; 828 units handed over in 2020 and no late handovers in 27 years (VNS Bizhub, 2020)",
+   "units": 75,
+   "payment_plan": null,
+   "price_per_m2": 170000000,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "CafeLand project page: construction permit No. 13/GPXD-BQLKN issued 27 Dec 2024; 1/500 detailed plan Decision 73/QD-BQLKN of 28 Nov 2023; developer page publishes no permit",
+   "escrow": null,
+   "progress": "CafeLand: construction start 25 Jun 2025, site levelling Oct 2025; Vietstock Oct 2025: under construction; no % published",
+   "plans": "phumyhung.vn: floor plans for ground/2nd to 12th floors",
+   "record": "Bizhub/VNS 26 Aug 2020: on-time handovers, 828 units in 2020",
+   "returns": "None mentioned"
+  },
+  "claims": [
+   {
+    "claim": "Construction permit No. 13/GPXD-BQLKN issued 27 Dec 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cafeland.vn/du-an/the-sculptura-du-an-can-ho-tai-tphcm-4718.html"
+   },
+   {
+    "claim": "1/500 detailed plan approved by Decision 73/QD-BQLKN (28 Nov 2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cafeland.vn/du-an/the-sculptura-du-an-can-ho-tai-tphcm-4718.html"
+   },
+   {
+    "claim": "Project under construction (start 25 Jun 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.vietstock.vn/2025/10/phu-my-hung-launches-new-limited-edition-development-the-sculptura-973-622764.htm"
+   },
+   {
+    "claim": "Limited to 75 units (developer breakdown totals 88 incl. shops and top houses)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://phumyhung.vn/the-sculptura/en"
+   },
+   {
+    "claim": "Indicative price VND 170-190M per sq m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cafeland.vn/du-an/the-sculptura-du-an-can-ho-tai-tphcm-4718.html"
+   },
+   {
+    "claim": "Phu My Hung has a 27-year record of on-time handovers (828 units handed over in 2020)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bizhub.vietnamnews.vn/with-hung-phuc-premier-phu-my-hung-keeps-clean-handover-record-for-27-years-post318234.html"
+   },
+   {
+    "claim": "Phu My Hung projects approved for foreign ownership in HCMC (19 of 24 listed)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.vneconomy.vn/hcm-city-lists-24-property-projects-open-to-foreign-ownership.htm"
+   },
+   {
+    "claim": "The Sculptura itself is on the foreign ownership list",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.vneconomy.vn/hcm-city-lists-24-property-projects-open-to-foreign-ownership.htm"
+   },
+   {
+    "claim": "Handover date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phumyhung.vn/the-sculptura/en"
+   },
+   {
+    "claim": "Bank guarantee for off-plan deposits",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phumyhung.vn/the-sculptura/en"
+   },
+   {
+    "claim": "Developer founded 19 May 1993, HQ 8 Hoang Van Thai, Tan My Ward",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cafeland.vn/du-an/the-sculptura-du-an-can-ho-tai-tphcm-4718.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1993,
+   "developer_hq": "Ho Chi Minh City, Vietnam",
+   "developer_company": "Phu My Hung Development Corporation (founded 19 May 1993; legal representative Tseng Fan Chih)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "top house",
+    "shop"
+   ],
+   "size_min_m2": 84.44,
+   "size_max_m2": 242.69,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may buy apartments in projects on the HCMC approved list (Decree 95/2024), up to 30% per building, 50-year term renewable; inclusion of this project not confirmed",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adjacent 3,500 sq m park",
+    "Crescent Lake location"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Saigon South Area Management Board (Ban Quan ly Khu Nam, BQLKN), the issuer named in the permit and plan numbers",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction permit and 1/500 plan decision numbers reported by independent press",
+   "Floor plans published by developer",
+   "Developer with independently reported on-time handover record"
+  ],
+  "flags": [],
+  "sources": [
+   "https://phumyhung.vn/the-sculptura/en",
+   "https://en.vietstock.vn/2025/10/phu-my-hung-launches-new-limited-edition-development-the-sculptura-973-622764.htm",
+   "https://bizhub.vietnamnews.vn/with-hung-phuc-premier-phu-my-hung-keeps-clean-handover-record-for-27-years-post318234.html",
+   "https://en.vneconomy.vn/hcm-city-lists-24-property-projects-open-to-foreign-ownership.htm",
+   "https://cafeland.vn/du-an/the-sculptura-du-an-can-ho-tai-tphcm-4718.html"
+  ]
+ },
+ {
+  "slug": "avea-andaman-island-eastern-oriental",
+  "name": "AVÉA @ Andaman Island",
+  "developer": "Persada Mentari Sdn Bhd (Eastern & Oriental Berhad)",
+  "area": "Andaman Island, Gurney",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "off-plan",
+  "url": "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv",
+  "docs_url": "https://easternandoriental.com/apdl.php",
+  "permit_number": "20199-10/12-2028/1057(N)-(S)",
+  "docs_listed": [
+   "developer permit page: advertising and sales permit 20199-10/12-2028/1057(N)-(S) valid 25 Dec 2025 to 24 Dec 2028",
+   "developer permit page: developer licence 20199/12-2028/1522(R), approving authority JPBD Pulau Pinang, building plan ref JPBD/PG/P2/PB-0128",
+   "developer permit page: freehold, encumbered to OCBC Bank (Malaysia), 1,080 units, RM751,300-1,909,600, completion July 2030",
+   "EdgeProp (Jun 2026): RM1bn GDV, two towers of 540 units, 678-1,076 sq ft, Tower A 65% taken up, Tower B from RM724,000, completion June 2030"
+  ],
+  "note": "1,080-unit freehold serviced apartments on E&O's Andaman Island (RM1bn GDV); the developer publishes its sales permit and licence numbers, building plan reference, land encumbrance to OCBC and a price range of RM751,300-1,909,600, with completion July 2030 (news says June 2030). No HDA account, plans or progress are published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 724000,
+   "currency": "MYR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": "20199-10/12-2028/1057(N)-(S)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "E&O permit page lists completed dates for The Conlay (Feb 2024), The Peak (2025) and The Meg (Apr 2026)",
+   "units": 1080,
+   "payment_plan": null,
+   "price_per_m2": 11494,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "easternandoriental.com/apdl.php: advertising & sales permit 20199-10/12-2028/1057(N)-(S) (25/12/2025-24/12/2028); developer licence 20199/12-2028/1522(R); building plan JPBD/PG/P2/PB-0128; not checked on the KPKT TEDUH registry (site did not load)",
+   "escrow": "Malaysian law requires a Housing Development Account, but the permit page lists no HDA bank or number",
+   "progress": null,
+   "plans": null,
+   "record": "apdl page lists completion dates for The Conlay (Feb 2024), The Peak (2025) and The Meg (Apr 2026); the Track Record link is a placeholder",
+   "returns": "None mentioned"
+  },
+  "claims": [
+   {
+    "claim": "Advertising and sales permit 20199-10/12-2028/1057(N)-(S) valid to 24 Dec 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://easternandoriental.com/apdl.php"
+   },
+   {
+    "claim": "Developer licence 20199/12-2028/1522(R) held by Persada Mentari Sdn Bhd (1220698-M)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://easternandoriental.com/apdl.php"
+   },
+   {
+    "claim": "Building plan approved, ref JPBD/PG/P2/PB-0128",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://easternandoriental.com/apdl.php"
+   },
+   {
+    "claim": "Freehold land, encumbered to OCBC Bank (Malaysia) Berhad",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://easternandoriental.com/apdl.php"
+   },
+   {
+    "claim": "1,080 units in two towers of 540",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv"
+   },
+   {
+    "claim": "Completion July 2030 (news says June 2030)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv"
+   },
+   {
+    "claim": "Price from RM751,300 (developer) vs Tower B from RM724,000 (news)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv"
+   },
+   {
+    "claim": "Tower A 65% taken up",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv"
+   },
+   {
+    "claim": "E&O completed The Conlay (Feb 2024), The Peak (2025) and The Meg (Apr 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://easternandoriental.com/apdl.php"
+   },
+   {
+    "claim": "Deposits paid into a Housing Development Account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://easternandoriental.com/apdl.php"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Penang / Kuala Lumpur, Malaysia",
+   "developer_company": "Persada Mentari Sdn Bhd (1220698-M), subsidiary of Eastern & Oriental Berhad",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Eastern & Oriental Berhad is listed on Bursa Malaysia",
+   "construction_start": null,
+   "handover_promised": "2030-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR plus study",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": 100,
+   "price_min": 724000,
+   "price_max": 1909600,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, commercial title (EdgeProp); foreign purchase rules not stated",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "marina-edge location",
+    "Andaman Island green spaces",
+    "GreenRE Platinum provisional"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "KPKT (developer licence and advertising permit); JPBD Pulau Pinang (planning)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Sales permit, developer licence and building plan reference published with validity dates",
+   "Land encumbrance disclosed",
+   "Listed parent company"
+  ],
+  "flags": [],
+  "sources": [
+   "https://easternandoriental.com/apdl.php",
+   "https://www.edgeprop.my/content/1916362/eo-introduces-avéa-waterfront-residences-andaman-island-penang-rm1b-gdv",
+   "https://servicedapartmentnews.com/news/serviced-residences/eo-serviced-apartments-penang/",
+   "https://www.propertyguru.com.my/property-news/2023/3/208317/eo-launches-arica-on-penangs-andaman-island-following-the-success-of-its-maiden-launch-the-meg"
+  ]
+ },
+ {
+  "slug": "lumina-residence-vst-group",
+  "name": "Lumina Residence",
+  "developer": "Unicorn Solute Sdn Bhd (VST Group)",
+  "area": "Pykett Avenue, George Town",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "off-plan",
+  "url": "https://www.propertyguru.com.my/condo/lumina-residence-20507",
+  "docs_url": "https://www.propertyguru.com.my/property-listing/lumina-residence-for-sale-by-doris-chuah-501069622",
+  "permit_number": null,
+  "docs_listed": [
+   "agent listing (May 2026): from RM950,000, 1,206-1,518 sq ft 3BR, freehold residential title, completion Q1 2028, 596 units in two 44-storey towers",
+   "portal project page: RM950,000-1,195,000, RM704-859 per sq ft, six unit types A to D1",
+   "travel guide page: completion Q4 2028, 8-level car park podium"
+  ],
+  "note": "596-unit freehold condo in two 44-storey towers on Pykett Avenue, George Town, from RM950,000 by Unicorn Solute Sdn Bhd (VST Group); listings give completion as Q1 2028 while another page says Q4 2028, and no permit number, HDA account, plans, progress or developer track record is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 950000,
+   "currency": "MYR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 596,
+   "payment_plan": null,
+   "price_per_m2": 8479,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": null,
+   "record": null,
+   "returns": "None stated"
+  },
+  "claims": [
+   {
+    "claim": "596 units in two 44-storey towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/condo/lumina-residence-20507"
+   },
+   {
+    "claim": "Prices RM950,000 to RM1,195,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/condo/lumina-residence-20507"
+   },
+   {
+    "claim": "Completion Q1 2028 (other page says Q4 2028)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.penang-traveltips.com/condos/lumina-residence.htm"
+   },
+   {
+    "claim": "Freehold residential title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/property-listing/lumina-residence-for-sale-by-doris-chuah-501069622"
+   },
+   {
+    "claim": "Developer Unicorn Solute Sdn Bhd is a VST Group subsidiary",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/property-listing/lumina-residence-for-sale-by-doris-chuah-501069622"
+   },
+   {
+    "claim": "Advertising and sales permit and developer licence held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/property-listing/lumina-residence-for-sale-by-doris-chuah-501069622"
+   },
+   {
+    "claim": "Deposits paid into a Housing Development Account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/condo/lumina-residence-20507"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.penang-traveltips.com/condos/lumina-residence.htm"
+   },
+   {
+    "claim": "Developer has completed earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.penang-traveltips.com/condos/lumina-residence.htm"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Penang, Malaysia",
+   "developer_company": "Unicorn Solute Sdn Bhd (VST Group); registration number not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR"
+   ],
+   "size_min_m2": 112,
+   "size_max_m2": 141,
+   "price_min": 950000,
+   "price_max": 1195000,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold residential title; foreign purchase rules not stated",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "Olympic-size pool",
+    "sky garden",
+    "indoor and outdoor gyms",
+    "BBQ pavilion",
+    "children's play area",
+    "study room",
+    "EV charging",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "KPKT (developer licence and advertising permit); MBPP Penang Island City Council (building plans)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Freehold residential title",
+   "No guaranteed return language",
+   "Unit type sizes and price per sq ft range published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyguru.com.my/property-listing/lumina-residence-for-sale-by-doris-chuah-501069622",
+   "https://www.propertyguru.com.my/condo/lumina-residence-20507",
+   "https://www.penang-traveltips.com/condos/lumina-residence.htm"
+  ]
+ },
+ {
+  "slug": "clouthaus-residences-klcc-ta-global",
+  "name": "CloutHaus Residences",
+  "developer": "TA Global Berhad",
+  "area": "KLCC",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://www.edgeprop.my/content/1916509/clouthaus-residences-klcc-branded-luxury-living-facing-petronas-twin-towers",
+  "docs_url": "https://www.edgeprop.my/content/1916509/clouthaus-residences-klcc-branded-luxury-living-facing-petronas-twin-towers",
+  "permit_number": null,
+  "docs_listed": [
+   "EdgeProp (Jun 2026): 615 serviced apartments, 549-1,216 sq ft, from about RM1.9M, about RM2,600 psf, freehold commercial title, Paradox Hotel services, target 2029",
+   "StarProperty (26 May 2025): groundbreaking held, RM3bn GDV, two 276 m towers, residential tower 66 storeys, HAB Construction main contractor RM993.5M, first tower Q2 2029",
+   "agent listing: 3BR 1,119 sq ft at RM2.9M, 'HDA Protected', completion Q1 2029"
+  ],
+  "note": "615-unit freehold serviced apartments in a 66-storey tower next to the Petronas Towers by Bursa-listed TA Global, part of a RM3bn twin-tower scheme that broke ground in May 2025 with HAB Construction as RM993.5M main contractor; from about RM1.9M, completion given as Q1 or Q2 2029. Agents say the project is HDA protected but no permit, HDA number, plans or progress figure is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1900000,
+   "currency": "MYR",
+   "title": "freehold (commercial title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Agent listing states the project is 'HDA Protected' (Malaysian Housing Development Account); no bank or account number published",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 615,
+   "payment_plan": null,
+   "price_per_m2": 27986,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": null,
+   "escrow": "PropertyGuru agent listing: 'Freehold with Commercial Title (HDA Protected)', no HDA number",
+   "progress": "StarProperty (26 May 2025): groundbreaking held and main contractor HAB Construction appointed for RM993.5M superstructure works; no % since",
+   "plans": null,
+   "record": null,
+   "returns": "None mentioned"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking held May 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.starproperty.my/news/featured-news/ta-global-breaks-ground-on-clouthaus/131969"
+   },
+   {
+    "claim": "HAB Construction appointed main contractor for superstructure works worth RM993.5M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.starproperty.my/news/featured-news/ta-global-breaks-ground-on-clouthaus/131969"
+   },
+   {
+    "claim": "RM3bn GDV, two 276 m towers, 615 serviced apartments plus 242 Paradox residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.starproperty.my/news/featured-news/ta-global-breaks-ground-on-clouthaus/131969"
+   },
+   {
+    "claim": "Completion Q2 2029 (agent says Q1 2029)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/property-listing/clouthaus-residences-for-sale-by-sam-ho-501508955"
+   },
+   {
+    "claim": "Freehold commercial title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1916509/clouthaus-residences-klcc-branded-luxury-living-facing-petronas-twin-towers"
+   },
+   {
+    "claim": "Purchaser payments protected under a Housing Development Account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/property-listing/clouthaus-residences-for-sale-by-sam-ho-501508955"
+   },
+   {
+    "claim": "Prices from about RM1.9M, around RM2,600 psf",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1916509/clouthaus-residences-klcc-branded-luxury-living-facing-petronas-twin-towers"
+   },
+   {
+    "claim": "Advertising and sales permit and developer licence numbers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyguru.com.my/property-listing/clouthaus-residences-for-sale-by-sam-ho-501508955"
+   },
+   {
+    "claim": "TA Global has delivered earlier residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.starproperty.my/news/featured-news/ta-global-breaks-ground-on-clouthaus/131969"
+   },
+   {
+    "claim": "Residences serviced by Paradox Hotel brand",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1916509/clouthaus-residences-klcc-branded-luxury-living-facing-petronas-twin-towers"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": "TA Global Berhad",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "TA Global Berhad is listed on Bursa Malaysia",
+   "construction_start": "2025-05",
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "dual-key"
+   ],
+   "size_min_m2": 51,
+   "size_max_m2": 113,
+   "price_min": 1900000,
+   "price_max": null,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold commercial title; foreign purchase rules not stated",
+   "rental_programme": "none stated; Paradox Hotel services",
+   "service_charge": null,
+   "brand": "Paradox Hotels (TA Global)",
+   "amenities": [
+    "level 33 facilities",
+    "Paradox Hotel services",
+    "KLCC Park frontage"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "KPKT (developer licence and advertising permit); DBKL Kuala Lumpur City Hall (building plans)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Groundbreaking and main contract award reported by independent press",
+   "Bursa-listed developer",
+   "Agent states HDA protection"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.edgeprop.my/content/1916509/clouthaus-residences-klcc-branded-luxury-living-facing-petronas-twin-towers",
+   "https://www.starproperty.my/news/featured-news/ta-global-breaks-ground-on-clouthaus/131969",
+   "https://www.propertyguru.com.my/property-listing/clouthaus-residences-for-sale-by-sam-ho-501508955"
+  ]
+ },
+ {
+  "slug": "skypark-kepler-tropicana",
+  "name": "Skypark Kepler @ Lido Waterfront",
+  "developer": "Tropicana Corporation Bhd",
+  "area": "Lido Waterfront, Johor Bahru",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru",
+  "docs_url": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru",
+  "permit_number": null,
+  "docs_listed": [
+   "EdgeProp branded article (Mar 2026): GDV about RM1.42bn, 1,596 units in two 54-storey towers, 463-807 sq ft, RM522,000-1.217M, freehold 3.97 acres, completion end-2029",
+   "EdgeProp (3 Jul 2025): launch, piling works begun, from RM580,000, RM100M sales in two months, MBSB financing",
+   "StarProperty (4 Nov 2024): groundbreaking, contractor CSCEC, phase one 856 units 667-2,000+ sq ft on reclaimed land"
+  ],
+  "note": "1,596-unit freehold Banyan-branded towers on reclaimed land at Lido Waterfront Boulevard, Johor Bahru, by Bursa-listed Tropicana, RM522,000 to RM1.217M, completion end-2029; groundbreaking Nov 2024 and piling under way by Jul 2025 per news, but the unit mix changed from 856 larger units at groundbreaking and no permit, HDA account, plans or progress figure is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 522000,
+   "currency": "MYR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Tropicana reported completion of four developments in H1 2026 in its Bursa results (Business Today, 27 Aug 2026); projects not named",
+   "units": 1596,
+   "payment_plan": null,
+   "price_per_m2": 12136,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "StarProperty (4 Nov 2024): groundbreaking with contractor CSCEC; EdgeProp (3 Jul 2025): piling works begun; no % published",
+   "plans": null,
+   "record": "Business Today (27 Aug 2026): H1 2026 revenue driven by completion of four developments",
+   "returns": "None mentioned"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking Nov 2024 with China State Construction as contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.starproperty.my/news/tropicana-begins-construction-on-lido-waterfront-boulevard-in-johor-skypark-kepler/130114"
+   },
+   {
+    "claim": "Piling works under way (Jul 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1912990/tropicana-launches-lido-waterfront-boulevard’s-skypark-kepler-partners-mbsb-bank-offer-financing-package"
+   },
+   {
+    "claim": "1,596 units of 463-807 sq ft (groundbreaking report gave 856 units of 667-2,000+ sq ft)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.starproperty.my/news/tropicana-begins-construction-on-lido-waterfront-boulevard-in-johor-skypark-kepler/130114"
+   },
+   {
+    "claim": "Prices from RM522,000 (Jul 2025 launch report said from RM580,000)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1912990/tropicana-launches-lido-waterfront-boulevard’s-skypark-kepler-partners-mbsb-bank-offer-financing-package"
+   },
+   {
+    "claim": "Completion end-2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru"
+   },
+   {
+    "claim": "Freehold 3.97-acre site on reclaimed land",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru"
+   },
+   {
+    "claim": "RM100M sales within two months of launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1912990/tropicana-launches-lido-waterfront-boulevard’s-skypark-kepler-partners-mbsb-bank-offer-financing-package"
+   },
+   {
+    "claim": "Tropicana completed four developments in H1 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businesstoday.com.my/2026/08/27/tropicana-corp-back-in-the-red-reports-q2-loss-of-rm17-million/"
+   },
+   {
+    "claim": "Advertising and sales permit and developer licence numbers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru"
+   },
+   {
+    "claim": "Deposits paid into a Housing Development Account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru"
+   },
+   {
+    "claim": "Banyan Group will manage the residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Malaysia",
+   "developer_company": "Tropicana Corporation Berhad",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on Bursa Malaysia (TROP); reported RM33M loss for H1 2026 on RM1.16bn revenue (Business Today)",
+   "construction_start": "2024-11",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 43,
+   "size_max_m2": 75,
+   "price_min": 522000,
+   "price_max": 1217000,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; foreign purchase rules not stated",
+   "rental_programme": "none stated; Banyan Group management",
+   "service_charge": null,
+   "brand": "Banyan Group (Skypark)",
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "KPKT (developer licence and advertising permit); MBJB Johor Bahru City Council (building plans)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Groundbreaking, contractor and piling reported by independent press",
+   "Listed developer reporting completed developments",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.edgeprop.my/content/1915560/skypark-kepler-new-icon-branded-waterfront-living-johor-bahru",
+   "https://www.starproperty.my/news/tropicana-begins-construction-on-lido-waterfront-boulevard-in-johor-skypark-kepler/130114",
+   "https://www.edgeprop.my/content/1912990/tropicana-launches-lido-waterfront-boulevard’s-skypark-kepler-partners-mbsb-bank-offer-financing-package",
+   "https://www.businesstoday.com.my/2026/08/27/tropicana-corp-back-in-the-red-reports-q2-loss-of-rm17-million/"
+  ]
+ }
+]
