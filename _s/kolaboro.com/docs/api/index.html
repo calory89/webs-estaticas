@@ -47,14 +47,14 @@
 <p>Every anonymous project in the <a href="/database">database</a>, its six checks, the verification level of each, claims tested and the transparency index per market. Free to use under CC BY 4.0: credit Kolaboro with a link. Cached for 10 minutes at the edge.</p>
 <ul>
 <li><code>GET <a href="/api/open/stats">/api/open/stats</a></code>: totals (projects, countries, claims tested, verification levels)</li>
-<li><code>GET <a href="/api/open/projects?market=Dubai&amp;min_confirmed=4">/api/open/projects?market=Dubai&amp;min_confirmed=4</a></code>: filters <code>market</code>, <code>country</code>, <code>stage</code>, <code>min_public</code>, <code>min_confirmed</code>, <code>all_six=1</code>, <code>flags=1|0</code>, <code>limit</code>, <code>offset</code></li>
+<li><code style="word-break:break-all">GET <a href="/api/open/projects?market=Dubai&amp;min_confirmed=4">/api/open/projects?market=Dubai&amp;min_confirmed=4</a></code>: filters <code>market</code>, <code>country</code>, <code>stage</code>, <code>min_public</code>, <code>min_confirmed</code>, <code>all_six=1</code>, <code>flags=1|0</code>, <code>limit</code>, <code>offset</code></li>
 <li><code>GET <a href="/api/open/projects.csv">/api/open/projects.csv</a></code>: the same as CSV, for spreadsheets</li>
 <li><code>GET <a href="/api/open/projects/BALI-014">/api/open/projects/BALI-014</a></code>: one project with its questions and public problems</li>
 <li><code>GET <a href="/api/open/markets">/api/open/markets</a></code> and <code><a href="/api/open/markets.csv">.csv</a></code>: per market, including the transparency index</li>
 <li><code>GET <a href="/api/open/openapi.json">/api/open/openapi.json</a></code>: OpenAPI 3.1 description</li>
 <li><code><a href="/feed.xml">/feed.xml</a></code> (RSS) and <code><a href="/feed.json">/feed.json</a></code>: what we ship, every day</li>
 </ul>
-<pre><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
+<pre style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
 <h2>Verify evidence</h2><p>Look up the timestamp of any SHA-256 fingerprint from a Kolaboro report. Returns the OpenTimestamps proof (base64) and, once confirmed, the Bitcoin block height.</p>
 <div class="api-b">GET https://kolaboro.com/api/kb/stamp?hash=&lt;sha256&gt;
 
