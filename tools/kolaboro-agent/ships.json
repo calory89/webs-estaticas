@@ -2,6 +2,26 @@
  {
   "d": "2026-11-01",
   "k": "feature",
+  "t": "Public roadmap: 39 of 100 features shipped, every one tracked"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Currency exposure tool: How much a payment plan costs if the currency moves 10% or 20%"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Late handover compensation calculator: What the contract says you are owed for each month of delay"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Resale exit check: What the contract allows if you need to sell before handover"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
   "t": "Public roadmap: 36 of 100 features shipped, every one tracked"
  },
  {
