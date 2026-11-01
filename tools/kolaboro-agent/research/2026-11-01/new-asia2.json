@@ -2721,5 +2721,1109 @@
    "all_six": false
   },
   "verified_score": 0
+ },
+ {
+  "slug": "norea-square-condominium-ocic",
+  "name": "Norea Square Condominium",
+  "developer": "Overseas Cambodian Investment Corporation (OCIC), Norea City",
+  "area": "Norea City, Koh Norea, Chbar Ampov, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "off-plan",
+  "url": "https://www.realestate.com.kh/new-developments/norea-square-condominium/",
+  "docs_url": "https://noreasquare.com/",
+  "seed": {
+   "price": 63446,
+   "currency": "USD",
+   "title": "strata (hard) title, freehold per agents",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Sales site describes OCIC as 'the team behind Koh Pich' (Diamond Island); no list of delivered buildings",
+   "units": 224,
+   "payment_plan": "Cash: 10% at SPA, 85% over 29 months, 5% at handover; or USD 1,000 booking, 10-20% over 5 months, then Canadia Bank loan of 80-90% (0% interest 24 months, then 7%)",
+   "price_per_m2": 1293
+  },
+  "docs_listed": [
+   "project site: interactive floor plans for levels 7-25, clubhouse and rooftop",
+   "project site: four unit types with gross and net areas, launch prices after 12% discount",
+   "project site: payment plans with Canadia Bank financing up to 25 years",
+   "portal: developer unit table, management fee USD 1.15/sq m, completion 30 months from groundbreaking",
+   "OCIC LinkedIn: launch ceremony Aug 2026"
+  ],
+  "note": "First condominium (224 units, 25 storeys) in OCIC's USD 2.5 billion Norea City on Koh Norea, launched in mid-2026 with 0% interest for 24 months via Canadia Bank; the build period is stated as 30 months from SPA or groundbreaking, but no permit number, deposit protection or construction start date is published. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No construction permit or licence number published by the developer or agents",
+   "escrow": null,
+   "progress": "No progress published; agents state 30-month build from SPA or groundbreaking without a start date",
+   "plans": "noreasquare.com publishes floor plans for each residential level and unit layouts with gross and net areas",
+   "record": "Developer cites Koh Pich; no independent delivery record opened",
+   "returns": "No guarantee; site labels Type 1A 'high-yield' without a figure"
+  },
+  "positives": [
+   "Gross and net areas disclosed for every unit type",
+   "Floor-by-floor plans on the official site",
+   "Long-term bank financing from a named bank (Canadia Bank)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "25 storeys (developer) vs 39 floors (ERA, Sophea Agency)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.eracambodia.com/norea-square-condominium"
+   },
+   {
+    "claim": "224 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realestate.com.kh/new-developments/norea-square-condominium/"
+   },
+   {
+    "claim": "Completion Q4 2029 (agents) vs 30 months from SPA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nhsmcambodia.com/norea-square/"
+   },
+   {
+    "claim": "Launch ceremony held Aug 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/ocicgroup_ocic-ocicgroup-noreacity-activity-7494936071638528000-pvca"
+   },
+   {
+    "claim": "Norea City is a 125 ha, USD 2.5B OCIC development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://noreasquare.com/"
+   },
+   {
+    "claim": "Price from USD 63,446 after 12% discount",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://noreasquare.com/"
+   },
+   {
+    "claim": "Strata title, freehold for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eracambodia.com/norea-square-condominium"
+   },
+   {
+    "claim": "Construction permit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://noreasquare.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Phnom Penh, Cambodia",
+   "developer_company": "Overseas Cambodian Investment Corporation (OCIC)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 49.06,
+   "size_max_m2": 146.61,
+   "price_min": 63446,
+   "price_max": 259019,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10% SPA, 85% over 29 months, 5% handover; or bank loan options",
+   "foreign_ownership": "Strata title for foreigners above ground floor (agents)",
+   "rental_programme": null,
+   "service_charge": "USD 1.15 per sq m (portal)",
+   "brand": null,
+   "amenities": [
+    "swimming pool",
+    "kids pool",
+    "gym",
+    "steam and sauna",
+    "hot and cold plunge pools",
+    "yoga room",
+    "rooftop sky garden"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction; Phnom Penh Capital Hall",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://noreasquare.com/",
+   "https://www.realestate.com.kh/new-developments/norea-square-condominium/",
+   "https://www.eracambodia.com/norea-square-condominium",
+   "https://nhsmcambodia.com/norea-square/",
+   "https://novasia.estate/en/projects/norea-square/",
+   "https://www.linkedin.com/posts/ocicgroup_ocic-ocicgroup-noreacity-activity-7494936071638528000-pvca"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "central-park-boulevard-port-city-home-lands",
+  "name": "Central Park Boulevard Port City Colombo",
+  "developer": "Home Lands Port City (Pvt) Ltd (Home Lands Group)",
+  "area": "Plot 1-01-01, Central Park District, Port City Colombo",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "stage": "under construction",
+  "url": "https://homelandsmelbourne.com.au/property/central-park-boulevard-port-city-colombo-sri-lanka/",
+  "docs_url": "https://homelandsportcity.com/",
+  "seed": {
+   "price": 60000000,
+   "currency": "LKR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Home Lands states it has delivered over 3,750 resort apartments and villas across several Sri Lankan developments, with 400 more due in 2026",
+   "units": 634,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: 634 residences, 35 levels, twin towers, collections (Deluxe, Premium, Emerald Mansions)",
+   "developer: dated updates (groundbreaking 26 Jun 2026, 60% piling Sep 2026, 100% piling 15 Oct 2026)",
+   "developer: pre-launch prices from LKR 60M (1BR), 95M (2BR), 140M (3BR), USD 300-400 per sq ft",
+   "developer: delivery expected 36 months after piling completion",
+   "Port City Colombo site: plot 1-01-01 committed by Home Lands"
+  ],
+  "note": "634-unit twin-tower project in Port City Colombo's Central Park district, granted Cabinet approval as a Business of Strategic Importance in May 2026; piling was completed on 15 Oct 2026 and delivery is promised 36 months later, but no permit number, deposit protection or floor plans are published. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Developer cites Cabinet approval and Colombo Port City Economic Commission clearance without reference numbers; Daily FT reports the Cabinet designation of Home Lands Port City Ltd as a Business of Strategic Importance (May 2026)",
+   "escrow": null,
+   "progress": "Developer update page with dated milestones; 100% piling (192 piles) completed 15 Oct 2026",
+   "plans": "No floor plans found on the project site; unit categories only",
+   "record": "Developer claims 3,750+ units delivered; Sunday Times reports the developer's statements",
+   "returns": "No guarantee; sales director quoted aiming for '100 per cent capital appreciation within four years' (Sunday Times, developer statement)"
+  },
+  "positives": [
+   "Government Cabinet approval and Port City land purchase (SPA with CHEC Port City) reported by national press",
+   "Dated construction milestones published by the developer",
+   "Port City SEZ allows foreign-currency purchases"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Cabinet approved strategic status for Home Lands Port City Ltd (USD 150M twin tower)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/front-page/Cabinet-approves-Colombo-Port-City-strategic-status-of-Prime-Melwa-and-Home-Lands/44-791581"
+   },
+   {
+    "claim": "Plot 1-01-01 committed by Home Lands",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.portcitycolombo.lk/featured-developments/central-park-living/"
+   },
+   {
+    "claim": "SPA signed with CHEC Port City Colombo",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://corporatenews.lk/2026/05/14/home-lands-signs-spa-with-chec-port-city-to-develop-twin-tower-high-rise-in-the-central-park-district-of-port-city-colombo/"
+   },
+   {
+    "claim": "634 units, 35 levels (site) vs 630 units, 37 floors (launch) vs 640 (Sunday Times)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.sundaytimes.lk/260614/business-times/more-than-100-units-of-home-lands-port-city-project-sold-to-serial-investors-from-overseas-645073.html"
+   },
+   {
+    "claim": "Over 100 units sold to overseas investors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sundaytimes.lk/260614/business-times/more-than-100-units-of-home-lands-port-city-project-sold-to-serial-investors-from-overseas-645073.html"
+   },
+   {
+    "claim": "100% piling completed 15 Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-completes-100-piling-work-of-central-park-boulevard-port-city-colombo"
+   },
+   {
+    "claim": "Delivery 36 months after piling",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-completes-100-piling-work-of-central-park-boulevard-port-city-colombo"
+   },
+   {
+    "claim": "Developer delivered 3,750+ units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homelands.lk/news-and-events/home-lands-completes-100-piling-work-of-central-park-boulevard-port-city-colombo"
+   },
+   {
+    "claim": "Prices from LKR 60M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/front-page/Home-Lands-unveils-Central-Park-Boulevard-Port-City-twin-tower-high-rise/44-792442"
+   },
+   {
+    "claim": "Title type for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://homelandsportcity.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Battaramulla, Sri Lanka",
+   "developer_company": "Home Lands Port City (Pvt) Ltd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 3750,
+   "listed_or_audited": null,
+   "construction_start": "2026-06",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "sky villa",
+    "penthouse",
+    "garden mansion"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 60000000,
+   "price_max": null,
+   "currency": "LKR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Port City SEZ permits foreign ownership and foreign-currency transactions (per Port City developers); title terms not published",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sky garden",
+    "wellness and fitness zone",
+    "retail zone",
+    "business zone",
+    "restaurant and recreation zone",
+    "VIP zone",
+    "Central Park access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Colombo Port City Economic Commission; Cabinet of Ministers (strategic status)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://homelandsportcity.com/",
+   "https://homelandsportcity.com/update/",
+   "https://www.homelands.lk/news-and-events/home-lands-completes-100-piling-work-of-central-park-boulevard-port-city-colombo",
+   "https://www.homelandsskyline.lk/blog/home-lands-unveils-central-park-boulevard-port-city-twin-tower-high-rise-attractive-pre-launch-prices-announced",
+   "https://homelandsmelbourne.com.au/property/central-park-boulevard-port-city-colombo-sri-lanka/",
+   "https://www.portcitycolombo.lk/featured-developments/central-park-living/",
+   "https://www.ft.lk/front-page/Home-Lands-unveils-Central-Park-Boulevard-Port-City-twin-tower-high-rise/44-792442",
+   "https://www.ft.lk/front-page/Cabinet-approves-Colombo-Port-City-strategic-status-of-Prime-Melwa-and-Home-Lands/44-791581",
+   "https://www.sundaytimes.lk/260614/business-times/more-than-100-units-of-home-lands-port-city-project-sold-to-serial-investors-from-overseas-645073.html",
+   "https://corporatenews.lk/2026/05/14/home-lands-signs-spa-with-chec-port-city-to-develop-twin-tower-high-rise-in-the-central-park-district-of-port-city-colombo/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "mireka-seascape-overseas-realty",
+  "name": "Mireka Seascape",
+  "developer": "Mireka Seascape (Private) Limited (Overseas Realty (Ceylon) PLC)",
+  "area": "Dodanduwa, between Galle and Hikkaduwa, Southern Province",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "stage": "under construction",
+  "url": "https://www.dailymirror.lk/business-news/Mireka-Seascape-begins-main-building-construction/273-353007",
+  "docs_url": "https://www.mirekaseascape.lk/",
+  "seed": {
+   "price": null,
+   "currency": "LKR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Overseas Realty (Ceylon) PLC developed World Trade Center Colombo and Havelock City, whose residential component of 1,087 apartments in 8 towers was completed in 2021 (annual report 2023)",
+   "units": 168,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: floor plans for level 4, levels 5-14, 15-17, 18 and villas with unit sizes (635-3,412 sq ft apartments, 3,171-4,037 sq ft villas)",
+   "developer news: launch Jun 2025, 100 units sold in 60 days, groundbreaking planned Q4 2025",
+   "developer news: piling complete, UDA and Coast Conservation approvals obtained, main building construction began 15 Oct 2026, completion Nov 2028",
+   "parent annual report 2023 (CSE-listed): Havelock City residential completion, Dodanduwa land held as investment property"
+  ],
+  "note": "168 apartments and villas on the southern coast by CSE-listed Overseas Realty (Ceylon) PLC; main building construction began on 15 Oct 2026 after piling and UDA and Coast Conservation approvals, about a year after the Q4 2025 groundbreaking first announced, with completion targeted November 2028. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Developer and Daily Mirror state UDA and Coast Conservation approvals were obtained; no approval numbers published",
+   "escrow": null,
+   "progress": "Developer news dated 16 Oct 2026: piling complete, main construction started 15 Oct 2026 with Sanken Construction; Daily Mirror business news reports the same (a Daily FT version is labelled advertorial)",
+   "plans": "Floor plans page with unit layouts and sizes for each level and the villas",
+   "record": "Parent's audited annual report 2023 states Havelock City's 1,087-apartment residential component was completed in 2021",
+   "returns": "Site markets a 'high-yielding investment property' and rental management by RMS; no guarantee or figure"
+  },
+  "positives": [
+   "Parent company listed on the Colombo Stock Exchange with audited annual reports",
+   "Floor plans per level with unit sizes",
+   "Named main contractor and dated construction start"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "UDA and Coast Conservation approvals obtained",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dailymirror.lk/business-news/Mireka-Seascape-begins-main-building-construction/273-353007"
+   },
+   {
+    "claim": "Main building construction began 15 Oct 2026, piling complete",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dailymirror.lk/business-news/Mireka-Seascape-begins-main-building-construction/273-353007"
+   },
+   {
+    "claim": "Groundbreaking planned for Q4 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ft.lk/propertyconstruction/Mireka-Seascape-marks-strong-debut-100-units-sold-in-60-days/10516-780252"
+   },
+   {
+    "claim": "Completion November 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mirekaseascape.lk/news/mireka-seascape-dodanduwa-commences-main-building-construction/"
+   },
+   {
+    "claim": "168 apartments and villas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dailymirror.lk/business-news/Mireka-Seascape-begins-main-building-construction/273-353007"
+   },
+   {
+    "claim": "Over 100 units sold in 60 days",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ft.lk/propertyconstruction/Mireka-Seascape-marks-strong-debut-100-units-sold-in-60-days/10516-780252"
+   },
+   {
+    "claim": "Developer delivered Havelock City (1,087 apartments, 2021)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://orcl.lk/wp-content/uploads/2024/08/annual-report-2023.pdf"
+   },
+   {
+    "claim": "Parent owns the Dodanduwa land (investment property)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://orcl.lk/wp-content/uploads/2024/08/annual-report-2023.pdf"
+   },
+   {
+    "claim": "Price",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mirekaseascape.lk/"
+   },
+   {
+    "claim": "Title for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mirekaseascape.lk/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "World Trade Center, Colombo, Sri Lanka",
+   "developer_company": "Mireka Seascape (Private) Limited, subsidiary of Overseas Realty (Ceylon) PLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1087,
+   "listed_or_audited": "Overseas Realty (Ceylon) PLC, Colombo Stock Exchange; audited annual reports",
+   "construction_start": "2026-10",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR suite",
+    "3BR",
+    "4BR penthouse",
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 59,
+   "size_max_m2": 375,
+   "price_min": null,
+   "price_max": null,
+   "currency": "LKR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Rental and absentee-landlord management by Realty Management Services (RMS); no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult and kids pools",
+    "fitness centre",
+    "sauna and steam",
+    "yoga deck",
+    "bistro bar",
+    "sky lounge",
+    "beach access",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Urban Development Authority; Coast Conservation and Coastal Resource Management Department",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.mirekaseascape.lk/",
+   "https://www.mirekaseascape.lk/floor-plans/",
+   "https://www.mirekaseascape.lk/news/mireka-seascape-dodanduwa-commences-main-building-construction/",
+   "https://www.mirekaseascape.lk/news/overseas-realty-ceylon-plc-unveils-mireka-seascape-coastal-luxury-redefined/",
+   "https://www.dailymirror.lk/business-news/Mireka-Seascape-begins-main-building-construction/273-353007",
+   "https://www.ft.lk/advertorial/Mireka-Seascape-Commences-Main-Building-Construction-Appoints-Sanken-Constructions-as-Main-Contractor/10529-798973",
+   "https://www.ft.lk/propertyconstruction/Mireka-Seascape-marks-strong-debut-100-units-sold-in-60-days/10516-780252",
+   "https://orcl.lk/wp-content/uploads/2024/08/annual-report-2023.pdf"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "yolo-kiribathgoda-prime-lands",
+  "name": "YOLO by Prime Lands",
+  "developer": "Prime Lands (Pvt) Ltd (Prime Group)",
+  "area": "Sabawa Road, Makola, Kiribathgoda, Gampaha District",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "stage": "under construction",
+  "url": "https://www.lankanewhomes.com/projects/yolo-kiribathgoda",
+  "docs_url": "https://www.primelands.lk/apartment/YOLO-KIRIBATHGODA/en",
+  "seed": {
+   "price": 35000000,
+   "currency": "LKR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 476,
+   "payment_plan": "LKR 9M down payment, LKR 350,000 a month (1% monthly, interest-free), 40% at handover (portal)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: floor plans for types A to M, master plan, block plan, brochure",
+   "developer: from LKR 35M, down payment LKR 9M, LKR 350,000 monthly",
+   "developer news: BOI-approved project status, USD 52.5M investment agreement (Mar 2026)",
+   "developer news: 'construction progressing on schedule', 'up to 100% return on investment' opportunity",
+   "Prime Lands Australia: Phase 3 sales opened Jun 2026 for overseas buyers"
+  ],
+  "note": "476-apartment low-rise 'apartment city' on 13 acres near Kiribathgoda, marketed to diaspora buyers through Prime Lands Australia; Daily FT reports a USD 52.5M Board of Investment agreement (Mar 2026), but no permit number, completion date, deposit protection or dated progress is published, and the developer markets an opportunity of 'up to 100% return on investment'. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "BOI project status and investment agreement reported by Daily FT; no UDA or building approval numbers published",
+   "escrow": null,
+   "progress": "Developer statement only that construction is 'progressing on schedule'; no figure, photos or dates",
+   "plans": "Project page lists floor plans for 13 block types plus master plan; LankaNewHomes reproduces 7 plans",
+   "record": "No delivered projects named on the project page",
+   "returns": "No guarantee; developer and Daily FT quote 'opportunity to achieve up to 100% return on investment'"
+  },
+  "positives": [
+   "Detailed floor plans for every block type",
+   "BOI investment agreement reported by national press",
+   "Interest-free instalments during construction"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "BOI-approved project with USD 52.5M investment agreement",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/business/--52-5-m-YOLO-project-by-Prime-Group-gets-BOI-approval/34-790082"
+   },
+   {
+    "claim": "476 apartments in 46 buildings on 13 acres",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/business/--52-5-m-YOLO-project-by-Prime-Group-gets-BOI-approval/34-790082"
+   },
+   {
+    "claim": "Construction progressing on schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/news/101/Prime-Groups-YOLO-Residential-Development-received-Board-of-Investment-BOI-approval-project-status-Receiving-the-BOI-certificate-L-R-are-Anura-Pathirage-Director-Finance-Prime-Group-and-Ruminda-Randeniya-Chief-Executive-Officer-Prime-Group-Sujee/en"
+   },
+   {
+    "claim": "Prices from LKR 35M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/business/--52-5-m-YOLO-project-by-Prime-Group-gets-BOI-approval/34-790082"
+   },
+   {
+    "claim": "Up to 100% return on investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ft.lk/business/--52-5-m-YOLO-project-by-Prime-Group-gets-BOI-approval/34-790082"
+   },
+   {
+    "claim": "2 and 3 bedroom mix (BOI news) vs 1-3 bedroom from 473 sq ft (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.lankanewhomes.com/projects/yolo-kiribathgoda"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/YOLO-KIRIBATHGODA/en"
+   },
+   {
+    "claim": "Building approval number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/YOLO-KIRIBATHGODA/en"
+   },
+   {
+    "claim": "Developer track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.primelands.lk/apartment/YOLO-KIRIBATHGODA/en"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Colombo, Sri Lanka",
+   "developer_company": "Prime Lands (Pvt) Ltd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 43.9,
+   "size_max_m2": 108.9,
+   "price_min": 35000000,
+   "price_max": null,
+   "currency": "LKR",
+   "deposit_pct": null,
+   "payment_plan": "LKR 9M down, LKR 350,000 monthly interest-free, 40% at handover",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "bowling alley",
+    "swimming pool with pool bar",
+    "cinema",
+    "gym and CrossFit",
+    "paddle court",
+    "co-working lounge",
+    "mini supermarket",
+    "rooftop gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Urban Development Authority; Board of Investment of Sri Lanka (project status)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.primelands.lk/apartment/YOLO-KIRIBATHGODA/en",
+   "https://www.primelands.lk/news/101/Prime-Groups-YOLO-Residential-Development-received-Board-of-Investment-BOI-approval-project-status-Receiving-the-BOI-certificate-L-R-are-Anura-Pathirage-Director-Finance-Prime-Group-and-Ruminda-Randeniya-Chief-Executive-Officer-Prime-Group-Sujee/en",
+   "https://www.ft.lk/business/--52-5-m-YOLO-project-by-Prime-Group-gets-BOI-approval/34-790082",
+   "https://www.lankanewhomes.com/projects/yolo-kiribathgoda",
+   "https://www.linkedin.com/posts/prime-lands-australia_yolokiribathgoda-primelandsaustralia-srilankarealestate-activity-7475077572201037825-lSk6",
+   "https://ikman.lk/en/ad/yolo-kiribathgoda-modern-apartment-living-by-prime-group-for-sale-gampaha"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "samana-ocean-views-elie-saab-maldives",
+  "name": "SAMANA Ocean Views by ELIE SAAB",
+  "developer": "SAMANA Developers",
+  "area": "Medhafushi Island, Haa Alif Atoll",
+  "country": "Maldives",
+  "market": "Maldives",
+  "stage": "off-plan",
+  "url": "https://maldivesinvestments.com/property/2-bedroom-water-villas-with-pool-samana-ocean-views",
+  "docs_url": "https://www.samanadevelopers.com/storage/projects-files/2025/09/01/11/08/1b402a1cf5aca5345b9fb1a0f513c82c.pdf",
+  "seed": {
+   "price": 2350000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 10,
+   "completion": "2029-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 190,
+   "payment_plan": "5% on booking, 5% at 1, 2, 3 and 6 months, 5% at 12, 10% at 18, 15% at 24, 10% at 30, 10% at 36 months, 25% on handover (registration after 20% paid)",
+   "price_per_m2": 10444
+  },
+  "docs_listed": [
+   "developer brochure (Sep 2025)",
+   "agents: 190 units (beach villas, water villas, 2BR suites) on an 11.74-12 ha island, up to 564 guests",
+   "agents: from USD 2.35M (2BR apartment 225 sq m), 99-year leasehold, handover Q1 2029",
+   "agents: 4-year 11-step payment plan",
+   "agent RE House: 'guaranteed 10% annual return for 5 years' under the fractional model; other agents 'estimated ROI 11-14%'"
+  ],
+  "note": "190-key ELIE SAAB-designed resort residence project by Dubai's SAMANA on Medhafushi island, launched Jan 2025 as a USD 600 million development with completion in 2029; sold as 99-year leaseholds with a 4-year payment plan, while agents advertise a guaranteed 10% annual return for five years and 11-14% ROI; no permit, lease registration or deposit protection is published. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No tourism lease, development permit or registration reference published",
+   "escrow": null,
+   "progress": "No construction progress published; one portal states handover 'to be confirmed'",
+   "plans": "Unit sizes listed by agents (110-393 sq m); no floor plans found",
+   "record": "No delivered projects named in the Maldives materials opened",
+   "returns": "RE House listing: 'guaranteed 10% annual return for 5 years under the fractional model, or 13.2% net including 30 nights'; Maldives Investments and UAE Off-plan: 'estimated ROI 11-14%'; RE House summary also states 'ROI 7%'"
+  },
+  "positives": [
+   "Payment plan spread over four years with 25% due at handover",
+   "Island said to be fully owned by the developer (agent statement)",
+   "Launch scale and completion year reported by Maldivian media"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "USD 600 million resort, 190 units, completion 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.mmtv.mv/1839"
+   },
+   {
+    "claim": "Prices USD 2.3M to 3M (news) vs from USD 2.35M (agents)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.mmtv.mv/1839"
+   },
+   {
+    "claim": "Guaranteed 10% a year for 5 years (RE House) vs estimated 11-14% (other agents) vs ROI 7% (RE House summary)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rehouse.ae/en/project/ocean-views"
+   },
+   {
+    "claim": "99-year leasehold for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://maldivesinvestments.com/property/2-bedroom-water-villas-with-pool-samana-ocean-views"
+   },
+   {
+    "claim": "Island fully owned by SAMANA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://maldivesinvestments.com/property/2-bedroom-water-villas-with-pool-samana-ocean-views"
+   },
+   {
+    "claim": "Handover Q1 2029 vs 'to be confirmed'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://propsentral.com/properties/samana-ocean-views"
+   },
+   {
+    "claim": "Construction stage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rehouse.ae/en/project/ocean-views"
+   },
+   {
+    "claim": "Interiors by ELIE SAAB",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eliesaabmaison.com/pages/samana-ocean-views-interiors-by-elie-saab"
+   },
+   {
+    "claim": "Developer track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.samanadevelopers.com/storage/projects-files/2025/09/01/11/08/1b402a1cf5aca5345b9fb1a0f513c82c.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "SAMANA Developers",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR beach villa",
+    "1BR water villa",
+    "2BR beach villa",
+    "3BR water villa",
+    "2BR suite"
+   ],
+   "size_min_m2": 110,
+   "size_max_m2": 393,
+   "price_min": 2350000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 5,
+   "payment_plan": "4-year plan, 75% during construction, 25% on handover",
+   "foreign_ownership": "99-year leasehold (agents); fractional ownership from USD 250,000 offered (RE House)",
+   "rental_programme": "Resort rental programme; agents cite guaranteed 10% for 5 years (fractional) or 13.2% net with 30 nights use",
+   "service_charge": null,
+   "brand": "ELIE SAAB (interiors)",
+   "amenities": [
+    "infinity pool",
+    "spa and wellness",
+    "Japanese and Arabic restaurants",
+    "water sports",
+    "tennis courts",
+    "kids club",
+    "clubhouse",
+    "bar"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Tourism (island lease and resort development approvals)",
+   "brochure_url": "https://www.samanadevelopers.com/storage/projects-files/2025/09/01/11/08/1b402a1cf5aca5345b9fb1a0f513c82c.pdf"
+  },
+  "sources": [
+   "https://maldivesinvestments.com/property/2-bedroom-water-villas-with-pool-samana-ocean-views",
+   "https://www.samanadevelopers.com/storage/projects-files/2025/09/01/11/08/1b402a1cf5aca5345b9fb1a0f513c82c.pdf",
+   "https://rehouse.ae/en/project/ocean-views",
+   "https://www.dreamimmoproperties.com/fr/annonces-immobilieres/offre/maldives/bien/3545/ocean-views-ndash-luxueux-appartements-2ch-sur-une-ile-par-elie-saab-aux-maldives-.html",
+   "https://propsentral.com/properties/samana-ocean-views",
+   "https://www.eliesaabmaison.com/pages/samana-ocean-views-interiors-by-elie-saab",
+   "https://en.mmtv.mv/1839",
+   "https://uae-offplan.com/property/samana-ocean-views-at-maldives-island"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "radisson-resort-maldives-thulusdhoo-teus-group",
+  "name": "Radisson Resort Maldives (Branded Residences)",
+  "developer": "Teus Group",
+  "area": "Thulusdhoo Island, Kaafu (North Malé) Atoll",
+  "country": "Maldives",
+  "market": "Maldives",
+  "stage": "off-plan",
+  "url": "https://realtarea.com/en/project/radisson-resort-maldives/",
+  "docs_url": "https://www.teus-group.com/",
+  "seed": {
+   "price": 209900,
+   "currency": "EUR",
+   "title": "leasehold (stated variously as 99 years, 50+49 years and 102 years)",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 12,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 139,
+   "payment_plan": "Agents: 30% deposit then instalments to handover; another agent: 50% down and balance quarterly over 12 months; fractional shares from EUR 59,000",
+   "price_per_m2": 5997
+  },
+  "docs_listed": [
+   "developer site: resort of hotel units and villas on Thulusdhoo, 'potential returns of 12-14% per annum'",
+   "developer news: Radisson management agreement signed in Dubai (Jan 2026), Bali sales launch Apr 2026",
+   "agents: 97 hotel rooms and 42 villas, from EUR 209,900 (35 sq m) to EUR 529,000 villas",
+   "agents: construction start Q1/Q2 2026, opening Jan or autumn 2029",
+   "agent: '10% a year during construction on infrastructure shares, developer terms'; other agents 15% yield"
+  ],
+  "note": "Radisson-managed resort of 97 hotel units and 42 villas on inhabited Thulusdhoo island, sold off-plan to foreign investors by Teus Group from EUR 209,900; agents quote returns from 10% a year during construction to 15% after opening and give three different lease terms, and no permit, lease registration, deposit protection or construction progress is published. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No tourism or construction permit reference published; agent says the project 'requires licensing' without details",
+   "escrow": null,
+   "progress": "No progress published; agents give construction start Q1 or Q2 2026 and a Dec 2025 'preparatory phase, land plot secured' notice",
+   "plans": "Unit sizes only (35-68 sq m rooms, 53-92 sq m villas); no floor plans found",
+   "record": "Developer cites its parent's 10 million sq m built since 1943 without naming Maldives deliveries; no completed Maldives project found",
+   "returns": "Developer: 'potential returns of 12-14% per annum'; Realtarea: '10% a year during construction on infrastructure shares - developer terms'; Hayat Estate and Realting: 'rental yield of 15% per annum'"
+  },
+  "positives": [
+   "International operator management agreement with Radisson reported in a press release",
+   "Inhabited-island location 25-30 minutes from the international airport"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Radisson management agreement signed (Jan 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lifestyle.celebhomes.net/story/150791/teus-group-and-radisson-sign-a-management-agreement-for-their-first-joint-project-in-the-maldives/"
+   },
+   {
+    "claim": "Land plot secured, preparatory phase begun (Dec 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hayatestate.com/en/novyj-kurortnyj-proekt-na-maldivah-start-podgotovitelnogo-jetapa"
+   },
+   {
+    "claim": "Lease term 99 years vs 50+49 years vs 102 years",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realtarea.com/en/project/radisson-resort-maldives/"
+   },
+   {
+    "claim": "Completion Q4 2028 vs Q2 2029 vs Jan 2029 opening",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realting.com/maldives/property/3765816"
+   },
+   {
+    "claim": "Returns 12-14% (developer) vs 15% (agents) vs 10% during construction",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.teus-group.com/"
+   },
+   {
+    "claim": "97 hotel rooms and 42 villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hayatestate.com/en/object?objectId=110609"
+   },
+   {
+    "claim": "Price from EUR 209,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://deepblueandco.com/property/radisson-resort-maldives-branded-residences/"
+   },
+   {
+    "claim": "Strata ownership legal since 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://deepblueandco.com/property/radisson-resort-maldives-branded-residences/"
+   },
+   {
+    "claim": "Tourism or construction permit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.teus-group.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE (per press release dateline)",
+   "developer_company": "Teus Group",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "standard room",
+    "superior room",
+    "junior suite",
+    "suite",
+    "garden villa",
+    "ocean pool villa"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 92,
+   "price_min": 209900,
+   "price_max": 529000,
+   "currency": "EUR",
+   "deposit_pct": 30,
+   "payment_plan": "30% deposit with instalments to handover, or 50% down and quarterly balance over 12 months (agents differ)",
+   "foreign_ownership": "Leasehold for foreign buyers, term stated inconsistently (99, 50+49 or 102 years); fractional shares also offered",
+   "rental_programme": "Radisson-operated rental pool; returns quoted 12-15% a year by developer and agents",
+   "service_charge": null,
+   "brand": "Radisson",
+   "amenities": [
+    "infinity seawater pool",
+    "family pool",
+    "overwater bar",
+    "overwater spa",
+    "fitness centre",
+    "coworking",
+    "cinema",
+    "padel court"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Tourism; local island council (inhabited island)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.teus-group.com/",
+   "https://www.teus-group.com/news",
+   "https://lifestyle.celebhomes.net/story/150791/teus-group-and-radisson-sign-a-management-agreement-for-their-first-joint-project-in-the-maldives/",
+   "https://hayatestate.com/en/novyj-kurortnyj-proekt-na-maldivah-start-podgotovitelnogo-jetapa",
+   "https://hayatestate.com/en/object?objectId=110609",
+   "https://deepblueandco.com/property/radisson-resort-maldives-branded-residences/",
+   "https://realting.com/maldives/property/3765816",
+   "https://realtarea.com/en/project/radisson-resort-maldives/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "verified_score": 0
  }
 ]

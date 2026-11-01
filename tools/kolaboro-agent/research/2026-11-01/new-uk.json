@@ -1061,7 +1061,7 @@
   "area": "Fox Street, Pumpfields, Liverpool L3",
   "country": "United Kingdom",
   "market": "Liverpool",
-  "stage": "under construction",
+  "stage": "off-plan",
   "url": "https://www.rw-invest.com/properties/fox-and-foundry-liverpool/",
   "docs_url": "https://foxandfoundry.co.uk/",
   "permit_number": "Liverpool City Council 21F/1699",
@@ -1483,5 +1483,2590 @@
    "https://find-and-update.company-information.service.gov.uk/company/11512780"
   ],
   "verified_score": 3
+ },
+ {
+  "slug": "priors-gate-birmingham-bunnywell-homes",
+  "name": "Priors Gate",
+  "developer": "Bunnywell Homes (site owner Steelhouse Lane Development Ltd)",
+  "area": "Steelhouse Lane, B4, Birmingham city centre",
+  "country": "United Kingdom",
+  "market": "Birmingham",
+  "stage": "off-plan",
+  "url": "https://www.flambardwilliams.co.uk/property/priors-gate-birmingham/",
+  "docs_url": "https://cornerstone-propertypartners.com/priors-gate-birmingham/",
+  "permit_number": "Birmingham City Council 2025/06786/PA (prior approval, 59 flats)",
+  "docs_listed": [
+   "agent floor plans by floor with unit counts and size ranges (409 to 705 sq ft)",
+   "999-year lease, share of freehold, no ground rent",
+   "prices from GBP 200,000 to 247,500 depending on agent",
+   "GBP 5,000 reservation, 10% on exchange",
+   "projected yields up to 6.2% long let, 14% short let",
+   "completion September 2027"
+  ],
+  "note": "Conversion of the 1933 former West Midlands Police HQ into 59 flats under prior approval 2025/06786/PA (decided 28 Jan 2026), with strip-out completed by Jul 2026 and completion promised for Sep 2027. Marketed for Bunnywell Homes by several agents at differing prices; the site is owned by a Kent company formed in Sep 2025 and charged to NatWest (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 200000,
+   "currency": "GBP",
+   "title": "leasehold with share of freehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6.2,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "Birmingham City Council 2025/06786/PA (prior approval, 59 flats)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 59,
+   "payment_plan": "GBP 5,000 reservation, 10% on exchange, balance on completion",
+   "price_per_m2": 5268
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "PlanIndex (council register mirror) shows prior approval 2025/06786/PA for 59 flats decided 28 Jan 2026 and full permission 2026/01581/PA (27 Jul 2026) for 4 more flats in a new storey; Birmingham's own portal shows an earlier prior approval 2025/04163/PA for 49 flats (applicant NVSM Limited, approved 30 Sep 2025). Agents do not quote a number",
+   "escrow": null,
+   "progress": "Benchmark Group updates: strip-out started 15 May 2026, internal strip-out complete 15 Jul 2026; Place Midlands and Birmingham Mail reported works under way in May 2026",
+   "plans": "Flambard Williams page shows floor-by-floor plans (lower ground to third floor) with unit counts and size ranges",
+   "record": "No completed projects by Bunnywell Homes are named on any sales page; Bunnywell Holdings Ltd (12993071) is a letting company with accounts to Mar 2025",
+   "returns": "Yields described as projected ('up to 6.2%', '14% STL'); no guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Prior approval for 59 flats (2025/06786/PA) granted 28 Jan 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://planindex.co.uk/planning-applications/birmingham/2026-01581-pa"
+   },
+   {
+    "claim": "Earlier prior approval for 49 flats (2025/04163/PA) granted 30 Sep 2025 to NVSM Limited",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?DAURI=PLANNING&FT=PlanningApplicationDetails&PARAM0=1360474&PT=PlanningApplicationsOn-Line&PUBLIC=Y&TYPE=PL%2FPlanningPK.xml&XMLSIDE=&XSLT=%2FNorthgate%2FPlanningExplorer%2FSiteFiles%2FSkins%2FBirmingham%2Fxslt%2FPL%2FPLDetails.xslt"
+   },
+   {
+    "claim": "Only 59 units available",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://planindex.co.uk/planning-applications/birmingham/2026-01581-pa"
+   },
+   {
+    "claim": "Site owner Steelhouse Lane Development Ltd registered (Sep 2025) with NatWest charges over the police HQ freehold",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/16730396/charges"
+   },
+   {
+    "claim": "Developer is Bunnywell Homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.placemidlands.co.uk/work-under-way-on-former-birmingham-police-station/"
+   },
+   {
+    "claim": "Works started May 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.birminghammail.co.uk/news/midlands-news/former-birmingham-police-hq-become-33892255"
+   },
+   {
+    "claim": "Internal strip-out complete (Jul 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benchmarkgrouplimited.com/news-updates"
+   },
+   {
+    "claim": "Completion September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.placemidlands.co.uk/work-under-way-on-former-birmingham-police-station/"
+   },
+   {
+    "claim": "Building is a registered heritage site (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.placemidlands.co.uk/steelhouse-lane-station-set-for-resi-conversion/"
+   },
+   {
+    "claim": "Prices from GBP 200,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cornerstone-propertypartners.com/priors-gate-birmingham/"
+   },
+   {
+    "claim": "Short-term lets approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://atlasinvestments.co.uk/portfolio/priors-gate/"
+   },
+   {
+    "claim": "50% sold shortly after launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ereproperty.com/property/priors-gate/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Steelhouse Lane Development Ltd 16730396 (freehold owner, Chatham, Kent); Bunnywell Holdings Ltd 12993071 (link to project not confirmed)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-05",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 38,
+   "size_max_m2": 65.5,
+   "price_min": 200000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 10,
+   "payment_plan": "GBP 5,000 reservation, 10% on exchange, balance on completion",
+   "foreign_ownership": "999-year leasehold with share of freehold",
+   "rental_programme": "none; short-let permitted per agents",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "heritage building",
+    "city centre location"
+   ],
+   "lat": 53.484,
+   "lng": -1.894,
+   "permit_authority": "Birmingham City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning history visible on the council register, including the earlier 49-flat approval",
+   "Floor-by-floor plans published by an agent",
+   "Works started and reported by independent press; strip-out complete"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.flambardwilliams.co.uk/property/priors-gate-birmingham/",
+   "https://cornerstone-propertypartners.com/priors-gate-birmingham/",
+   "https://atlasinvestments.co.uk/portfolio/priors-gate/",
+   "https://ereproperty.com/property/priors-gate/",
+   "https://www.placemidlands.co.uk/work-under-way-on-former-birmingham-police-station/",
+   "https://www.placemidlands.co.uk/steelhouse-lane-station-set-for-resi-conversion/",
+   "https://www.birminghammail.co.uk/news/midlands-news/former-birmingham-police-hq-become-33892255",
+   "https://www.benchmarkgrouplimited.com/news-updates",
+   "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?DAURI=PLANNING&FT=PlanningApplicationDetails&PARAM0=1360474&PT=PlanningApplicationsOn-Line&PUBLIC=Y&TYPE=PL%2FPlanningPK.xml&XMLSIDE=&XSLT=%2FNorthgate%2FPlanningExplorer%2FSiteFiles%2FSkins%2FBirmingham%2Fxslt%2FPL%2FPLDetails.xslt",
+   "https://planindex.co.uk/planning-applications/birmingham/2026-01581-pa",
+   "https://www.theconstructionindex.co.uk/planning-leads/Birmingham/view/1163757",
+   "https://www.linkedin.com/posts/bryant-priest-newman_this-week-planning-permission-was-granted-activity-7379887162323824640-hJxe",
+   "https://find-and-update.company-information.service.gov.uk/company/16730396",
+   "https://find-and-update.company-information.service.gov.uk/company/16730396/charges",
+   "https://find-and-update.company-information.service.gov.uk/company/12993071"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "boulevard-bristol-street-birmingham-investin",
+  "name": "Boulevard (Phase 2, Blocks A1 to A6)",
+  "developer": "Investin PLC (Relton Property Investments Limited)",
+  "area": "Bristol Street, Southside, Birmingham B5",
+  "country": "United Kingdom",
+  "market": "Birmingham",
+  "stage": "under construction",
+  "url": "https://investinplc.com/developments/boulevard-birmingham/",
+  "docs_url": "https://investinplc.com/developments/boulevard-birmingham/",
+  "permit_number": "Birmingham City Council 2019/02975/PA (conditions 2022/00913/PA)",
+  "docs_listed": [
+   "developer page: 145 apartments for sale, brochure on request",
+   "agent: prices from about GBP 250,000 to 263,813, 2BR from GBP 361,800",
+   "999-year lease, zero ground rent, service charge about GBP 2.99 to 3.50 psf",
+   "ICW 10-year builder warranty (agent brochure)",
+   "payment plan GBP 5,000 reservation, 10% to 15% exchange, balance on completion",
+   "completion summer 2025 (2025 marketing) now October 2026 (agents)"
+  ],
+  "note": "278-flat scheme (145 for sale, 133 build-to-rent) on Bristol Street under the St Luke's estate permission 2019/02975/PA, piled in May 2023; handover was marketed for summer 2025 and agents now quote October 2026. The developer's own page gives almost no detail, and the site loan was refinanced in March 2026 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 250000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 5,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": "Birmingham City Council 2019/02975/PA (conditions 2022/00913/PA)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Agent brochure cites Broadoaks, Solihull, built with the same contractor",
+   "units": 145,
+   "payment_plan": "GBP 5,000 reservation, 10% on exchange less reservation, 5% at 6 months, 85% on completion (Amoka); or 15/85 (Amoka listing)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Birmingham City Council portal: 2022/00913/PA is a discharge of conditions for Phases 2A and 2B (Blocks A1 to A6) attached to approval 2019/02975/PA, part approved and part refused on 22 Apr 2022. The developer page quotes no number",
+   "escrow": null,
+   "progress": "Developer page has no progress information; a community page lists piling started May 2023 and drone photo dates; contractor states a 112-week programme",
+   "plans": "No floor plans on developer page; brochure on request",
+   "record": "Agent brochure names Broadoaks, Solihull; Relton Property Investments Limited (07870992) active, with a new first legal mortgage to PP08 Finance in Mar 2026",
+   "returns": "Agents quote a 5% projected gross yield; no guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Scheme consented under 2019/02975/PA with conditions dealt with in 2022/00913/PA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?DAURI=PLANNING&PARAM0=1186035&TYPE=PL%2FPlanningPK.xml&XSLT=%2FNorthgate%2FPlanningExplorer%2FSiteFiles%2FSkins%2FBirmingham%2Fxslt%2FPL%2FPLDetails.xslt"
+   },
+   {
+    "claim": "2022/00913/PA is the 'planning application number' for the scheme (community page)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?DAURI=PLANNING&PARAM0=1186035&TYPE=PL%2FPlanningPK.xml&XSLT=%2FNorthgate%2FPlanningExplorer%2FSiteFiles%2FSkins%2FBirmingham%2Fxslt%2FPL%2FPLDetails.xslt"
+   },
+   {
+    "claim": "Developer entity Relton Property Investments Limited registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07870992"
+   },
+   {
+    "claim": "GBP 53.5m development loan from Octopus Real Estate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.itsyourbuild.com/KMS/dmart.aspx?PageType=item&filter_SurveyId=106124&strTab=ProjectTimeline"
+   },
+   {
+    "claim": "Land refinanced: Bridgeco charge satisfied and PP08 Finance mortgages registered (Mar 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07870992/charges"
+   },
+   {
+    "claim": "Available to occupy from summer 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://amoka.co.uk/invest/boulevard"
+   },
+   {
+    "claim": "Estimated completion October 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amoka.co.uk/invest/boulevard"
+   },
+   {
+    "claim": "278 flats: 145 private sale and 133 build-to-rent",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fhp.co.uk/wp-content/uploads/2024/10/Birmingham-Boulevard-Southside-Bristol-Street.pdf"
+   },
+   {
+    "claim": "ICW 10-year builder warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://media.rightmove.co.uk/property-brochure/6df05d536/91188789/6df05d536454c05565ddc95225725410.pdf"
+   },
+   {
+    "claim": "Prices from GBP 263,813 (Apr 2025) vs from GBP 250,000 or 260,000 (later agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.fishergerman.co.uk/insights/news/new-homes-team-are-appointed-on-birmingham-s-newest-luxury-apartment-scheme"
+   },
+   {
+    "claim": "Investin brand operates without a formal group structure, with a new company per project (High Court judgment)",
+    "status": "verified",
+    "by": "independent",
+    "source": "http://www.bailii.org/ew/cases/EWHC/Ch/2023/1563.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Solihull, UK",
+   "developer_company": "Relton Property Investments Limited 07870992",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-05",
+   "handover_promised": "2026-Q4",
+   "original_handover": "2025-Q3",
+   "delay_months": 15,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 42.5,
+   "size_max_m2": 74,
+   "price_min": 250000,
+   "price_max": 361800,
+   "currency": "GBP",
+   "deposit_pct": 10,
+   "payment_plan": "GBP 5,000 reservation, 10% exchange, 5% stage, 85% completion",
+   "foreign_ownership": "999-year leasehold, zero ground rent",
+   "rental_programme": "none; 133 flats in the scheme are build-to-rent",
+   "service_charge": "About GBP 2.99 to 3.50 psf per year (agents)",
+   "brand": null,
+   "amenities": [
+    "gym",
+    "cinema room",
+    "residents' lounges",
+    "co-working pods",
+    "courtyard garden",
+    "roof terrace",
+    "concierge",
+    "parking"
+   ],
+   "lat": 53.468,
+   "lng": -1.898,
+   "permit_authority": "Birmingham City Council",
+   "brochure_url": "https://media.rightmove.co.uk/property-brochure/6df05d536/91188789/6df05d536454c05565ddc95225725410.pdf"
+  },
+  "positives": [
+   "Planning and condition history visible on the council portal",
+   "Named 10-year warranty (ICW) in agent brochure",
+   "999-year lease with zero ground rent"
+  ],
+  "flags": [
+   {
+    "text": "A 2023 High Court judgment (Ensign House Ltd v Ensign House (FEC) Ltd) describes the Investin name as used by companies founded by John Downer with no formal group structure, a new company being formed for each project",
+    "source": "http://www.bailii.org/ew/cases/EWHC/Ch/2023/1563.pdf"
+   },
+   {
+    "text": "Royal Court of Jersey judgment records Investin Quay House Limited as in liquidation (2021)",
+    "source": "https://www.bailii.org/je/cases/UR/2021/2021_255.html"
+   }
+  ],
+  "sources": [
+   "https://investinplc.com/developments/boulevard-birmingham/",
+   "https://www.itsyourbuild.com/KMS/dmart.aspx?PageType=item&filter_SurveyId=106124&strTab=ProjectTimeline",
+   "https://bespokeconstruction.co.uk/project/boulevard-bristol-street-birmingham/",
+   "https://www.hazlemerecommercial.co.uk/projects/new-build-residential/boulevard-bristol-street/",
+   "https://www.fishergerman.co.uk/insights/news/new-homes-team-are-appointed-on-birmingham-s-newest-luxury-apartment-scheme",
+   "https://www.fhp.co.uk/wp-content/uploads/2024/10/Birmingham-Boulevard-Southside-Bristol-Street.pdf",
+   "https://media.rightmove.co.uk/property-brochure/6df05d536/91188789/6df05d536454c05565ddc95225725410.pdf",
+   "https://amoka.co.uk/invest/boulevard",
+   "https://www.amoka.co.uk/off-plan-investments/boulevard-phase-2",
+   "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?DAURI=PLANNING&PARAM0=1186035&TYPE=PL%2FPlanningPK.xml&XSLT=%2FNorthgate%2FPlanningExplorer%2FSiteFiles%2FSkins%2FBirmingham%2Fxslt%2FPL%2FPLDetails.xslt",
+   "https://find-and-update.company-information.service.gov.uk/company/07870992",
+   "https://find-and-update.company-information.service.gov.uk/company/07870992/charges",
+   "http://www.bailii.org/ew/cases/EWHC/Ch/2023/1563.pdf",
+   "https://www.bailii.org/je/cases/UR/2021/2021_255.html"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "100-avenue-road-swiss-cottage-arada-london",
+  "name": "100 Avenue Road",
+  "developer": "Arada London (formerly Regal; SPV Regal Avenue Road Limited)",
+  "area": "Swiss Cottage, Camden, London NW3",
+  "country": "United Kingdom",
+  "market": "London",
+  "stage": "off-plan",
+  "url": "https://aradalondon.com/project/100-avenue-road/",
+  "docs_url": "https://aradalondon.com/project/100-avenue-road/",
+  "permit_number": "London Borough of Camden 2014/1617/P (appeal APP/X5210/W/14/3001616), varied by 2025/0852/P",
+  "docs_listed": [
+   "172 private apartments, 422 to 957 sq ft, prices from GBP 795,000",
+   "999-year leasehold",
+   "completion Q4 2028",
+   "construction information site: works commenced March 2026, approved construction management plan",
+   "amenity list (pool, spa, gym, cinema, golf simulator, concierge)"
+  ],
+  "note": "Arada London's first sale scheme: 172 private flats in a 24-storey tower above Swiss Cottage station on a long-stalled site, consented on appeal in 2016 (2014/1617/P) and re-approved in amended form by Camden in Jun 2025 (2025/0852/P). Above-ground works restarted in Mar 2026 for completion in mid to late 2028; launched in the UAE and Singapore from GBP 795,000 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 795000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "London Borough of Camden 2014/1617/P (appeal APP/X5210/W/14/3001616), varied by 2025/0852/P",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Regal states over 4,000 homes built since inception; One St John's Wood completed Nov 2022 with Grace House (170 later-living flats) (Arada London site)",
+   "units": 172,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Camden planning committee report (5 Jun 2025) for Section 73 application 2025/0852/P by Regal Avenue Road Ltd, varying 2014/1617/P allowed at appeal APP/X5210/W/14/3001616 on 18 Feb 2016; minutes record unanimous approval",
+   "escrow": null,
+   "progress": "Developer construction site: works commenced March 2026, expected complete mid-2028; sales page status 'In Construction'",
+   "plans": "No floor plans published; enquiry form only",
+   "record": "Arada London says Regal built over 4,000 homes and completed One St John's Wood in Nov 2022; Regal Avenue Road Limited (14355590) active with accounts to 31 Mar 2026",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Section 73 permission 2025/0852/P granted for amended scheme by Regal Avenue Road Ltd",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://camden.moderngov.co.uk/documents/g11234/Printed%20minutes%2005th-Jun-2025%2019.00%20Planning%20Committee.pdf?T=1"
+   },
+   {
+    "claim": "Original permission 2014/1617/P allowed on appeal 18 Feb 2016",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://camden.moderngov.co.uk/documents/s125873/Item%2081%20-%20100%20Avenue%20Road.pdf"
+   },
+   {
+    "claim": "Scheme provides 251 homes with 37% to 40% affordable (developer and architect)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://camden.moderngov.co.uk/documents/s125873/Item%2081%20-%20100%20Avenue%20Road.pdf"
+   },
+   {
+    "claim": "Site SPV Regal Avenue Road Limited registered; land charged to CBRE Loan Services as security trustee (Jan 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/14355590/charges"
+   },
+   {
+    "claim": "Above-ground construction had stalled under the previous owner",
+    "status": "verified",
+    "by": "none",
+    "source": "https://aradalondon.com/regal-submits-proposal-for-100-avenue-road/"
+   },
+   {
+    "claim": "Works commenced March 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://100avenueroad-construction.uk/"
+   },
+   {
+    "claim": "Completion Q4 2028 (sales) versus mid-2028 (construction site)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://100avenueroad-construction.uk/"
+   },
+   {
+    "claim": "Arada acquired 75% of Regal in Sep 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2026/06/17/arada-unveils-first-london-residential-project-in-uk-expansion-push/"
+   },
+   {
+    "claim": "Prices from GBP 795,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.sg/property-news/apartments-londons-swiss-cottage-launch-sale-gbp795000"
+   },
+   {
+    "claim": "Building is 24 storeys (planning) versus 25 storeys (Singapore launch report)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://camden.moderngov.co.uk/documents/s125873/Item%2081%20-%20100%20Avenue%20Road.pdf"
+   },
+   {
+    "claim": "Regal built over 4,000 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aradalondon.com/arada-acquires-regal-uk-property-expansion/"
+   },
+   {
+    "claim": "999-year leasehold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2026/06/17/arada-unveils-first-london-residential-project-in-uk-expansion-push/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "London, UK (parent Arada, Sharjah, UAE)",
+   "developer_company": "Regal Avenue Road Limited 14355590",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 4000,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio (Manhattan)",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 39.2,
+   "size_max_m2": 88.9,
+   "price_min": 795000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "999-year leasehold; Camden minutes note no policy basis to restrict sales to British buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pool and spa",
+    "gym and Pilates studio",
+    "cinema",
+    "golf simulator",
+    "private dining room",
+    "residents' lounge and library",
+    "24-hour concierge"
+   ],
+   "lat": 51.543,
+   "lng": -0.175,
+   "permit_authority": "London Borough of Camden",
+   "brochure_url": null
+  },
+  "positives": [
+   "Full planning history available in Camden committee papers",
+   "Dedicated construction information site with start date and construction management plan",
+   "Development finance visible as a registered charge"
+  ],
+  "flags": [],
+  "sources": [
+   "https://aradalondon.com/project/100-avenue-road/",
+   "https://aradalondon.com/100-avenue-road-apartments-swiss-cottage/",
+   "https://www.arada.com/en/latest-news/arada-unveils-100-avenue-road-a-contemporary-residential-development-in-one-of-londons-most-established-neighbourhoods/",
+   "https://100avenueroad-construction.uk/",
+   "https://aradalondon.com/regal-submits-proposal-for-100-avenue-road/",
+   "https://aradalondon.com/arada-acquires-regal-uk-property-expansion/",
+   "https://aradalondon.com/regal-london-celebrates-the-completion-of-one-st-johns-wood/",
+   "https://www.thenationalnews.com/business/property/2026/06/17/arada-unveils-first-london-residential-project-in-uk-expansion-push/",
+   "https://www.edgeprop.sg/property-news/apartments-londons-swiss-cottage-launch-sale-gbp795000",
+   "https://www.cartwrightpickard.com/housing/100-avenue-road/",
+   "https://camden.moderngov.co.uk/documents/s125873/Item%2081%20-%20100%20Avenue%20Road.pdf",
+   "https://camden.moderngov.co.uk/documents/g11234/Printed%20minutes%2005th-Jun-2025%2019.00%20Planning%20Committee.pdf?T=1",
+   "https://find-and-update.company-information.service.gov.uk/company/14355590",
+   "https://find-and-update.company-information.service.gov.uk/company/14355590/charges"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "angel-village-islington-bentry-capital",
+  "name": "Angel Village",
+  "developer": "Bentry Capital (construction by Mellior Group; freehold held by QSquare (Brighton) Ltd)",
+  "area": "Angel Gate, City Road / Goswell Road, Islington, London EC1V",
+  "country": "United Kingdom",
+  "market": "London",
+  "stage": "under construction",
+  "url": "https://www.cbreresidential.com/uk-resi/new-developments/buy/angel-village",
+  "docs_url": "https://bentry-capital.com/development/angel-village/",
+  "permit_number": "London Borough of Islington prior approvals P2024/0865, P2024/0866, P2024/0873 and others (Angel Gate, EC1V 2PT)",
+  "docs_listed": [
+   "developer page: 130 homes, studios to 3BR, prices from GBP 571,500, status 'Live'",
+   "agents: GBP 590,000 to 1,419,500 (CBRE), 999-year lease with share of freehold",
+   "payment plan per agent: GBP 2,500 reservation, 10% exchange, 10% after 6 to 12 months, balance on completion",
+   "first phase 88 homes, completion Q1 to Q3 2027",
+   "trade press: strip-out from Sep 2025, fit-out from Jan 2026"
+  ],
+  "note": "Office-to-residential conversion of the Angel Gate estate off City Road into 130 flats (88 in phase one), marketed to Malaysian and other overseas buyers from about GBP 571,500 with first completions in 2027. Consent rests on a series of Class E to residential prior approvals; the freehold company has charges to PP08 Finance and overdue accounts, and no deposit protection or floor plans are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 571500,
+   "currency": "GBP",
+   "title": "leasehold with share of freehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": "London Borough of Islington prior approvals P2024/0865, P2024/0866, P2024/0873 and others (Angel Gate, EC1V 2PT)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 130,
+   "payment_plan": "GBP 2,500 reservation, 10% exchange, 10% after 6 to 12 months, 80% to 85% on completion (agent)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Islington's weekly list (Apr 2024) shows prior approval applications P2024/0865 (10 flats), P2024/0866 (7 flats) and P2024/0873 (8 flats) at Angel Gate, EC1V 2PT by QSquare (Brighton) Limited; no single permission for 130 homes found and sales pages quote no reference",
+   "escrow": null,
+   "progress": "The Construction Index (Mar 2026): Mellior began strip-out in Sep 2025 on an 18-month programme, fit-out from Jan 2026, first occupants in 2027",
+   "plans": "No floor plans on developer or agent pages we opened",
+   "record": "No completed Bentry Capital projects named; contractor Mellior claims over GBP 250m delivered in the North West without naming schemes",
+   "returns": "Agents quote up to 6% (Benham and Reeves) or 4.5% indicative gross yield; no guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Prior approval applications for flats at Angel Gate filed by QSquare (Brighton) Limited (Apr 2024)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.islington.gov.uk/~/media/sharepoint-lists/public-records/planningandbuildingcontrol/information/adviceandguidance/20232024/18-april-2024--list-of-planning-applications-by-received-date.pdf"
+   },
+   {
+    "claim": "A single consent covers all 130 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bentry-capital.com/development/angel-village/"
+   },
+   {
+    "claim": "Freehold of 320 to 336 City Road held by QSquare (Brighton) Ltd and charged to PP08 Finance (2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/15411827/charges"
+   },
+   {
+    "claim": "Freehold company is up to date with filings",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/15411827"
+   },
+   {
+    "claim": "Bentry Capital Limited registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/14422077"
+   },
+   {
+    "claim": "Conversion works under way since Sep 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theconstructionindex.co.uk/news/view/mellior-takes-on-islington-conversion"
+   },
+   {
+    "claim": "First phase of 88 homes ready Q1 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://optivest.co.uk/en/projects/angel-village"
+   },
+   {
+    "claim": "Prices from GBP 571,500",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.cbreresidential.com/uk-resi/new-developments/buy/angel-village"
+   },
+   {
+    "claim": "Low-rise new-build style homes (CBRE 'low-rise, design-led residences')",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.theconstructionindex.co.uk/news/view/mellior-takes-on-islington-conversion"
+   },
+   {
+    "claim": "Up to 6% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benhams.com.my/news/property-investment/angel-village-islington-investment-opportunity/"
+   },
+   {
+    "claim": "Developer track record of delivered schemes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://melliorgroup.com/development/angel-village/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2022,
+   "developer_hq": "London, UK",
+   "developer_company": "Bentry Capital Limited 14422077; QSquare (Brighton) Ltd 15411827 (freehold owner, planning applicant)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2027-Q1",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 37,
+   "size_max_m2": null,
+   "price_min": 571500,
+   "price_max": 1419500,
+   "currency": "GBP",
+   "deposit_pct": 10,
+   "payment_plan": "GBP 2,500 reservation, 10% exchange, 10% stage, balance on completion (agent)",
+   "foreign_ownership": "999-year leasehold with share of freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gated estate",
+    "concierge",
+    "landscaped gardens",
+    "underground parking (extra cost)"
+   ],
+   "lat": 51.53,
+   "lng": -0.102,
+   "permit_authority": "London Borough of Islington",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction activity confirmed by trade press with programme dates",
+   "999-year lease with share of freehold per agents"
+  ],
+  "flags": [
+   {
+    "text": "Companies House shows freehold owner QSquare (Brighton) Ltd with accounts overdue (due 31 Oct 2026) and Bentry Capital Limited with its confirmation statement overdue",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/15411827"
+   }
+  ],
+  "sources": [
+   "https://bentry-capital.com/development/angel-village/",
+   "https://www.cbreresidential.com/uk-resi/new-developments/buy/angel-village",
+   "https://optivest.co.uk/en/projects/angel-village",
+   "https://melliorgroup.com/development/angel-village/",
+   "https://www.theconstructionindex.co.uk/news/view/mellior-takes-on-islington-conversion",
+   "https://www.buildington.co.uk/buildings/news/view/21297",
+   "https://www.benhams.com.my/news/property-investment/angel-village-islington-investment-opportunity/",
+   "https://www.benhams.com/news/new-launches/international-property-events-round-up-june-2026/",
+   "https://www.islington.gov.uk/~/media/sharepoint-lists/public-records/planningandbuildingcontrol/information/adviceandguidance/20232024/18-april-2024--list-of-planning-applications-by-received-date.pdf",
+   "https://find-and-update.company-information.service.gov.uk/company/15411827",
+   "https://find-and-update.company-information.service.gov.uk/company/15411827/charges",
+   "https://find-and-update.company-information.service.gov.uk/company/14422077"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "london-square-bermondsey-final-phase",
+  "name": "London Square Bermondsey (final phase, The Malthouse)",
+  "developer": "London Square (London Square Developments Limited)",
+  "area": "Crimscott Street / Willow Walk, Bermondsey, London SE1",
+  "country": "United Kingdom",
+  "market": "London",
+  "stage": "off-plan",
+  "url": "https://londonsquare.co.uk/developments/bermondsey",
+  "docs_url": "https://londonsquare.co.uk/developments/bermondsey",
+  "permit_number": "London Borough of Southwark 20/AP/2993",
+  "docs_listed": [
+   "plot-by-plot availability with prices and completion (Q4 2028)",
+   "floor plan and energy performance on each plot page",
+   "prices from GBP 635,000 (1BR, 657 sq ft)",
+   "investment article with rental assumptions labelled as estimates, not guarantees",
+   "launch weekend 23 to 24 May 2026 with show home"
+  ],
+  "note": "Final 183-home phase (of which 60 social rent with Aster) on the former Rich Industrial Estate, approved by Southwark under 20/AP/2993 for London Square Developments Limited, which has already delivered 276 homes on the estate. Launched in Asia and London in 2026 with plot prices and floor plans published and completion in Q4 2028; no deposit protection statement (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 635000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "London Borough of Southwark 20/AP/2993",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "London Square delivered 276 homes and 14,000 sq ft of commercial space in earlier phases of the same estate (The Crosse 2021, The Tannery 2021, The Pickle Factory 2022) per Estates Gazette and Buildington",
+   "units": 183,
+   "payment_plan": null,
+   "price_per_m2": 10410
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Southwark committee report (14 May 2025) for 20/AP/2993 and decision appendix stating permission granted with legal agreement to London Square Developments Limited for up to 183 homes; S106 deed of variation 26/AP/2250 permitted 8 Sep 2026",
+   "escrow": null,
+   "progress": "No construction progress published; a notice of demolition under the S106 is referenced on the council register",
+   "plans": "Plot pages include 'Floorplans & Energy Performance' and a floor plan locator",
+   "record": "Estates Gazette (Aug 2026): 276 homes already delivered on the estate; London Square Developments Limited (07160957) active with accounts to 31 Dec 2025",
+   "returns": "Rental growth and yield figures labelled 'estimates only' and 'should not be relied upon as guarantees'"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission 20/AP/2993 granted to London Square Developments Limited for up to 183 homes",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://moderngov.southwark.gov.uk/documents/s126895/APPENDIX%201.pdf"
+   },
+   {
+    "claim": "Scheme is 37.3% affordable, all social rent",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://moderngov.southwark.gov.uk/documents/s126792/20AP2993%20-%20RICH%20INDUSTRIAL%20ESTATE%20CRIMSCOTT%20STREET%20AND%20WILLOW%20WALK%20LONDON%20SE1%205TE.pdf"
+   },
+   {
+    "claim": "60 social rent homes delivered with Aster Group",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estatesgazette.co.uk/news/london-square-partners-with-aster-group-to-deliver-60-bermondsey-homes/"
+   },
+   {
+    "claim": "S106 varied in 2026 to remove the social rent service charge cap",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://planindex.co.uk/planning-applications/southwark/26-ap-2250"
+   },
+   {
+    "claim": "Developer company London Square Developments Limited active with filed accounts",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07160957"
+   },
+   {
+    "claim": "276 homes already delivered on the estate",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estatesgazette.co.uk/news/london-square-partners-with-aster-group-to-deliver-60-bermondsey-homes/"
+   },
+   {
+    "claim": "Completion Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://londonsquare.co.uk/developments/bermondsey"
+   },
+   {
+    "claim": "Prices from GBP 640,000 (Jun 2026 article) versus GBP 635,000 (current page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://londonsquare.co.uk/lsq-life/investment-spotlight-bermondsey-se1"
+   },
+   {
+    "claim": "Described as a 'Zone 1 asset' (investment article) versus 'Zone 2 location' (launch page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://londonsquare.co.uk/events/your-invite-to-the-public-launch-of-london-square-bermondsey"
+   },
+   {
+    "claim": "Earlier phases completed 2021 to 2022 and sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.buildington.co.uk/buildings/news/5798"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://planindex.co.uk/planning-applications/southwark/26-ap-2250"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "Uxbridge / London, UK",
+   "developer_company": "London Square Developments Limited 07160957",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 61,
+   "size_max_m2": null,
+   "price_min": 635000,
+   "price_max": 1330000,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold (term not stated on the pages opened); marketed to buyers in Hong Kong and Singapore",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop garden",
+    "courtyard garden",
+    "play spaces",
+    "ground floor commercial units",
+    "Co-op on estate"
+   ],
+   "lat": 51.494,
+   "lng": -0.08,
+   "permit_authority": "London Borough of Southwark",
+   "brochure_url": null
+  },
+  "positives": [
+   "Plot-level prices and floor plans published",
+   "Planning permission and decision appendix on the council's own site",
+   "Earlier phases on the same estate already delivered and occupied"
+  ],
+  "flags": [],
+  "sources": [
+   "https://londonsquare.co.uk/developments/bermondsey",
+   "https://londonsquare.co.uk/developments/bermondsey/plots/3633",
+   "https://londonsquare.co.uk/lsq-life/investment-spotlight-bermondsey-se1",
+   "https://londonsquare.co.uk/events/your-invite-to-the-public-launch-of-london-square-bermondsey",
+   "https://londonsquare.co.uk/lsq-life/London-Square-Partners-With-Aster-Group-on-Final-Phase-of-Bermondsey-Development",
+   "https://www.estatesgazette.co.uk/news/london-square-partners-with-aster-group-to-deliver-60-bermondsey-homes/",
+   "https://www.buildington.co.uk/buildings/news/5798",
+   "https://www.buildington.co.uk/buildings/5798/england/london-se1/58-grange-road/london-square-bermondsey",
+   "https://moderngov.southwark.gov.uk/documents/s126792/20AP2993%20-%20RICH%20INDUSTRIAL%20ESTATE%20CRIMSCOTT%20STREET%20AND%20WILLOW%20WALK%20LONDON%20SE1%205TE.pdf",
+   "https://moderngov.southwark.gov.uk/documents/s126895/APPENDIX%201.pdf",
+   "https://planindex.co.uk/planning-applications/southwark/26-ap-2250",
+   "https://find-and-update.company-information.service.gov.uk/company/07160957",
+   "https://www.benhams.com/news/new-launches/international-property-events-round-up-june-2026/"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "opus-bankside-yards-native-land",
+  "name": "Opus, Bankside Yards",
+  "developer": "Native Land (joint venture with Temasek, Hotel Properties Limited and Amcorp; site owner Ludgate House Limited)",
+  "area": "Bankside Yards, Blackfriars Road / Hopton Street, South Bank, London SE1",
+  "country": "United Kingdom",
+  "market": "London",
+  "stage": "under construction",
+  "url": "https://opus-london.com/",
+  "docs_url": "https://www.native-land.com/projects/opus/",
+  "permit_number": "London Borough of Southwark 12/AP/3940 (Bankside Yards masterplan)",
+  "docs_listed": [
+   "developer project page: 249 residences, GDV GBP 650m, status 'Construction Underway'",
+   "topping out announcement (15 Sep 2025), completion early 2027",
+   "unit types: signature suites, 1 to 3BR, 4BR penthouses",
+   "launched in London and Asian and Middle East markets",
+   "prices from GBP 895,000 (studio) to GBP 2.99m per press"
+  ],
+  "note": "50-storey, 249-flat tower within the Bankside Yards masterplan (permission 12/AP/3940), built by Multiplex and topped out in Sep 2025 for completion in early 2027, with prices from GBP 895,000. Native Land previously delivered NEO Bankside next door; the site company is an overseas entity and no floor plans or deposit arrangements are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 895000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "London Borough of Southwark 12/AP/3940 (Bankside Yards masterplan)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Native Land with Grosvenor delivered NEO Bankside, 217 apartments, completed 2012 (Native Land project page)",
+   "units": 249,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Southwark committee report for 12/AP/3940 (Sampson House and Ludgate House, 9 buildings up to 49 storeys) and a 2020s council appendix confirming the permission was granted 28 Mar 2014, implemented in 2016, with Building 3 built under reserved matters 18/AP/3696; the developer does not quote a number",
+   "escrow": null,
+   "progress": "Native Land journal: topped out at 50 storeys on 15 Sep 2025; architect PLP and Buildington also reported the topping out",
+   "plans": "No floor plans on the sales site; appointments only",
+   "record": "Native Land project page: NEO Bankside (217 flats) completed 2012",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Masterplan permission 12/AP/3940 granted 28 Mar 2014 and implemented 2016",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://moderngov.southwark.gov.uk/documents/s104205/Appendix%20D%20Description%20of%20site%20planning%20and%20public%20benefits.pdf"
+   },
+   {
+    "claim": "Permitted tallest building (Ludgate B) is 49 storeys, while Opus is marketed at 50 storeys",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://moderngov.southwark.gov.uk/documents/s41084/Report.pdf"
+   },
+   {
+    "claim": "Site owner Ludgate House Limited is on the Register of Overseas Entities",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/OE017258"
+   },
+   {
+    "claim": "Topped out Sep 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.plparchitecture.com/news/plp-architecture-celebrates-topping-out-of-opus-at-bankside-yards"
+   },
+   {
+    "claim": "Completion early 2027 (developer) versus 2026 (main contractor)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.multiplex.global/projects/opus/"
+   },
+   {
+    "claim": "GBP 100m of flats sold off-plan within two months of launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.standard.co.uk/homesandproperty/property-news/ps100m-flats-sold-bankside-yards-opus-off-plan-skyscraper-b1232887.html"
+   },
+   {
+    "claim": "Prices from GBP 895,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.standard.co.uk/homesandproperty/property-news/ps100m-flats-sold-bankside-yards-opus-off-plan-skyscraper-b1232887.html"
+   },
+   {
+    "claim": "249 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.multiplex.global/projects/opus/"
+   },
+   {
+    "claim": "NEO Bankside (217 flats) delivered 2012",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.native-land.com/projects/neo-bankside/"
+   },
+   {
+    "claim": "Fossil fuel-free development with 5th generation energy network",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opus-london.com/bankside-yards/"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opus-london.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "London, UK",
+   "developer_company": "Ludgate House Limited OE017258 (Jersey company no. 106030 on the UK Register of Overseas Entities; Bankside Yards applicant); Native Land as development manager",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "JV partners include Temasek; Hotel Properties Limited is SGX-listed",
+   "construction_start": "2024",
+   "handover_promised": "2027-Q1",
+   "original_handover": "2026",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 895000,
+   "price_max": 2990000,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold; sold to UK and overseas buyers (USA, South East Asia, China, Middle East per developer)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "four amenity floors",
+    "gym and Pilates studio",
+    "padel court",
+    "bouldering wall",
+    "co-working",
+    "podcast and art studios",
+    "health centre"
+   ],
+   "lat": 51.508,
+   "lng": -0.104,
+   "permit_authority": "London Borough of Southwark",
+   "brochure_url": null
+  },
+  "positives": [
+   "Structure complete (topped out Sep 2025) and confirmed by several sources",
+   "Masterplan permission and implementation recorded in council papers",
+   "Developer delivered a comparable scheme next door (NEO Bankside)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://opus-london.com/",
+   "https://opus-london.com/bankside-yards/",
+   "https://www.native-land.com/projects/opus/",
+   "https://www.native-land.com/projects/neo-bankside/",
+   "https://www.native-land.com/journal/prime-central-londons-tallest-residential-building-native-land-marks-topping-out-of-opus/",
+   "https://www.multiplex.global/projects/opus/",
+   "https://www.plparchitecture.com/news/plp-architecture-celebrates-topping-out-of-opus-at-bankside-yards",
+   "https://www.buildington.co.uk/buildings/news/view/20923",
+   "https://www.standard.co.uk/homesandproperty/property-news/ps100m-flats-sold-bankside-yards-opus-off-plan-skyscraper-b1232887.html",
+   "https://www.edgeprop.sg/property-news/international-launch-residential-units-londons-bankside-yards-set-4q2024",
+   "https://moderngov.southwark.gov.uk/documents/s104205/Appendix%20D%20Description%20of%20site%20planning%20and%20public%20benefits.pdf",
+   "https://moderngov.southwark.gov.uk/documents/s41084/Report.pdf",
+   "https://find-and-update.company-information.service.gov.uk/company/OE017258"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "aire-gardens-leeds-hilton-developments",
+  "name": "Aire Gardens",
+  "developer": "Hilton Developments (Sekhon Group); site owner Three Leeds City Office Park Ltd",
+  "area": "3 City Office Park, Meadow Lane, Holbeck, Leeds LS11",
+  "country": "United Kingdom",
+  "market": "Leeds",
+  "stage": "off-plan",
+  "url": "https://www.tkiresidential.co.uk/properties/aire-gardens-leeds/",
+  "docs_url": "https://www.langfordpierce.co.uk/opportunities/aire-gardens-leeds",
+  "permit_number": "Leeds City Council 25/06082/DPD (prior approval, 98 flats) and 25/07471/FU (external works)",
+  "docs_listed": [
+   "98 one-bedroom apartments, 431 to 793 sq ft",
+   "prices from GBP 197,000 to 200,000 depending on agent",
+   "GBP 2,500 to 3,000 reservation, 20% (or 10%) on exchange, balance on completion",
+   "999-year lease, share of freehold claimed by one agent",
+   "completion Q2 2028",
+   "projected yields 5% to 8%, one agent quotes 14% gross and 165% five-year ROI"
+  ],
+  "note": "Office-to-residential conversion of 3 City Office Park into 98 one-bed flats under prior approval 25/06082/DPD (approved 2 Apr 2026), sold through several investment agents from about GBP 197,000 with completion in Q2 2028. Agents describe it as a brand-new development with a retractable-roof atrium, while the approved works describe partly removing the existing atrium glazing to form an open courtyard (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 197000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "Leeds City Council 25/06082/DPD (prior approval, 98 flats) and 25/07471/FU (external works)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 98,
+   "payment_plan": "GBP 2,500 reservation, 20% on exchange, 80% on completion (TKI); GBP 3,000 and 10% on exchange (Providence)",
+   "price_per_m2": 4920
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Leeds Public Access: 25/06082/DPD 'change of use from offices to form 98 apartments' at 3 City Office Park, approved 2 Apr 2026, applicant Three Leeds City Office Ltd; 25/07471/FU external alterations approved 4 Mar 2026; an earlier 25/00960/DPD for 67 flats was also decided. Agents quote no reference",
+   "escrow": null,
+   "progress": "No construction progress published",
+   "plans": "Floor plans only on request from agents",
+   "record": "Agents say the group has built and retained over 1,000 units but name no completed schemes",
+   "returns": "Projected yields only; no guarantee wording, though one agent quotes a 14%+ gross yield and 165% five-year ROI"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Prior approval for 98 flats granted (25/06082/DPD, 2 Apr 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T44KL7JBFU700&activeTab=summary"
+   },
+   {
+    "claim": "External works incl. part removal of atrium glazing approved (25/07471/FU)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T7NT93JBG6X00&activeTab=summary"
+   },
+   {
+    "claim": "Brand-new development (agents)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T44KL7JBFU700&activeTab=summary"
+   },
+   {
+    "claim": "Atrium with a retractable roof",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T7NT93JBG6X00&activeTab=summary"
+   },
+   {
+    "claim": "Site owner Three Leeds City Office Park Ltd registered (Nov 2024), freehold charged to PP08 Finance",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/16082197/charges"
+   },
+   {
+    "claim": "Developer is part of Sekhon Group (registered office at Sekhon's Dawsons House address)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.leeds.gov.uk/sites/default/files/2025-12/2025%20shlaa%20-%20current%20supply%20schedule.pdf"
+   },
+   {
+    "claim": "Group has built and retained over 1,000 residential units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://providencewealth.co.uk/investment-property/aire-gardens-leeds-property-investment/"
+   },
+   {
+    "claim": "Completion Q2 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tkiresidential.co.uk/properties/aire-gardens-leeds/"
+   },
+   {
+    "claim": "Short-let approval in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://providencewealth.co.uk/investment-property/aire-gardens-leeds-property-investment/"
+   },
+   {
+    "claim": "999-year lease with share of freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://providencewealth.co.uk/investment-property/aire-gardens-leeds-property-investment/"
+   },
+   {
+    "claim": "Gross rental yield 14%+ and 165% five-year ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://providencewealth.co.uk/investment-property/aire-gardens-leeds-property-investment/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pudsey, Leeds, UK",
+   "developer_company": "Three Leeds City Office Park Ltd 16082197 (planning applicant and freehold owner)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR"
+   ],
+   "size_min_m2": 40,
+   "size_max_m2": 73.7,
+   "price_min": 197000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 20,
+   "payment_plan": "GBP 2,500 reservation, 20% exchange, 80% completion",
+   "foreign_ownership": "999-year leasehold",
+   "rental_programme": "none; short lets said to be approved",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "open courtyard atrium",
+    "gym",
+    "residents' lounge",
+    "co-working",
+    "private dining",
+    "games room"
+   ],
+   "lat": 53.789,
+   "lng": -1.544,
+   "permit_authority": "Leeds City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning approvals confirmed on the council portal",
+   "Prices and size range published by agents"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.tkiresidential.co.uk/properties/aire-gardens-leeds/",
+   "https://providencewealth.co.uk/investment-property/aire-gardens-leeds-property-investment/",
+   "https://www.langfordpierce.co.uk/opportunities/aire-gardens-leeds",
+   "https://www.pitchbookproperty.com/properties/aire-gardens---leeds",
+   "https://cardinalrock.co.uk/leeds/",
+   "https://igainvest.com/listings",
+   "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T44KL7JBFU700&activeTab=summary",
+   "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T7NT93JBG6X00&activeTab=summary",
+   "https://find-and-update.company-information.service.gov.uk/company/16082197",
+   "https://find-and-update.company-information.service.gov.uk/company/16082197/charges",
+   "https://www.leeds.gov.uk/sites/default/files/2025-12/2025%20shlaa%20-%20current%20supply%20schedule.pdf"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "regency-works-kirkstall-road-leeds-glenbrook",
+  "name": "Regency Works (Blocks A and D for sale)",
+  "developer": "Glenbrook (development manager, Glenbrook KR Limited) with Barings; sales via RWinvest",
+  "area": "Former Arla Foods depot, 87-91 Kirkstall Road, Burley, Leeds LS3",
+  "country": "United Kingdom",
+  "market": "Leeds",
+  "stage": "under construction",
+  "url": "https://www.rw-invest.com/properties/regency-works-leeds/",
+  "docs_url": "https://glenbrookproperty.co.uk/recent-work/glenbrook-kirkstall-road/",
+  "permit_number": "Leeds City Council 22/02505/FU",
+  "docs_listed": [
+   "248 apartments for sale in Blocks A and D of a 618-home scheme",
+   "prices: 1BR GBP 233,950 (433 sq ft), 2BR GBP 360,950, 3BR GBP 534,950",
+   "GBP 5,000 reservation, 15% on exchange, 85% on completion",
+   "leasehold, GBP 0 ground rent, service charge GBP 3.06 psf",
+   "projected 9.1% short-let net yield with stated assumptions; not a guarantee",
+   "developer news: construction start Mar 2025, topping out 8 Apr 2026",
+   "estimated completion Q2 2027 (sales agent)"
+  ],
+  "note": "618-home riverside scheme on the former Arla depot (22/02505/FU) funded by Barings with a GBP 91m Homes England and pension fund loan; Bowmer + Kirkland started in Mar 2025 and topped out in Apr 2026. The sales agent quotes completion Q2 2027, Homes England end of 2027, the contractor Jan 2028, and Leeds City Council's 2025 housing land schedule shows delivery from 2030/31 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 233950,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 9.1,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "Leeds City Council 22/02505/FU",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Glenbrook and Barings delivered Vox, The Trilogy and The Keel in the North West (Place Yorkshire); RWinvest states Glenbrook has delivered over 2,150 homes",
+   "units": 248,
+   "payment_plan": "GBP 5,000 reservation, 15% on exchange, 85% on completion",
+   "price_per_m2": 5815
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Leeds Public Access lists condition discharges and non-material amendment 26/9/00004/MOD to 22/02505/FU (618 dwellings, former Arla Foods Depot); approval at Plans Panel in Feb 2023 reported by Leeds Live and Yorkshire Post",
+   "escrow": null,
+   "progress": "Glenbrook: Bowmer + Kirkland began Mar 2025 and topped out 8 Apr 2026; Homes England (gov.uk) and Place Yorkshire confirmed construction had begun in Mar 2025",
+   "plans": "Floor plans only on request",
+   "record": "Place Yorkshire names three previous Barings and Glenbrook schemes (Vox, The Trilogy, The Keel); Glenbrook KR Limited (13538535) active with accounts to 31 Dec 2025",
+   "returns": "9.1% short-let yield labelled 'Projection, not a guarantee' with occupancy and cost assumptions"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission 22/02505/FU for 618 dwellings at the former Arla depot",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T8Y9CUJBKBC00&activeTab=summary"
+   },
+   {
+    "claim": "Approved by Plans Panel in Feb 2023 after an earlier deferral",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.leeds-live.co.uk/news/leeds-news/plans-1000-month-flats-new-26325951"
+   },
+   {
+    "claim": "GBP 91m loan from Homes England, GMPF and WYPF plus GBP 5.7m WYCA grant",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gov.uk/government/news/homes-england-greater-manchester-and-west-yorkshire-pension-funds-provide-967-million-for-leeds-residential-scheme"
+   },
+   {
+    "claim": "Construction began Mar 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placeyorkshire.co.uk/construction-begins-on-152m-kirkstall-road-scheme/"
+   },
+   {
+    "claim": "Topped out 8 Apr 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://glenbrookproperty.co.uk/regency-works-kirkstall-road-topping-out/"
+   },
+   {
+    "claim": "Estimated completion Q2 2027 (sales agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.gov.uk/government/news/homes-england-greater-manchester-and-west-yorkshire-pension-funds-provide-967-million-for-leeds-residential-scheme"
+   },
+   {
+    "claim": "Contractor completion January 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bandk.co.uk/projects/kirkstall-road-leeds"
+   },
+   {
+    "claim": "Council housing land schedule (2025) shows Glenbrook KR Limited delivering 619 homes from 2030/31 to 2033/34",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.leeds.gov.uk/sites/default/files/2025-12/2025%20shlaa%20-%20current%20supply%20schedule.pdf"
+   },
+   {
+    "claim": "Site company Glenbrook KR Limited registered; land charged to Rocksavage Investments as security trustee",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/13538535/charges"
+   },
+   {
+    "claim": "Glenbrook delivered over 2,150 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rw-invest.com/properties/regency-works-leeds/"
+   },
+   {
+    "claim": "Previous Barings/Glenbrook schemes Vox, The Trilogy and The Keel",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placeyorkshire.co.uk/construction-begins-on-152m-kirkstall-road-scheme/"
+   },
+   {
+    "claim": "Scheme was consented as build to rent; Blocks A and D now sold to individual buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.yorkshirepost.co.uk/business/planning-permission-is-granted-for-ps140m-618-apartment-build-to-rent-scheme-in-leeds-4039687"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Manchester, UK",
+   "developer_company": "Glenbrook KR Limited 13538535 (planning applicant per council schedule); funder Barings (MassMutual subsidiary)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 2150,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 40.2,
+   "size_max_m2": 93.8,
+   "price_min": 233950,
+   "price_max": 534950,
+   "currency": "GBP",
+   "deposit_pct": 15,
+   "payment_plan": "GBP 5,000 reservation, 15% exchange, 85% completion",
+   "foreign_ownership": "Leasehold, GBP 0 ground rent",
+   "rental_programme": "none; short lets permitted under the lease per agent; rest of scheme operated as build to rent by Allsop Letting and Management",
+   "service_charge": "GBP 3.06 psf per year",
+   "brand": null,
+   "amenities": [
+    "residents' lounge",
+    "co-working",
+    "gym",
+    "concierge and parcel room",
+    "roof terraces",
+    "riverside park"
+   ],
+   "lat": 53.802,
+   "lng": -1.568,
+   "permit_authority": "Leeds City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Institutional and public funding confirmed by a Homes England announcement",
+   "Planning record and condition discharges visible on the council portal",
+   "Yield projection shows its assumptions and labels them as not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.rw-invest.com/properties/regency-works-leeds/",
+   "https://glenbrookproperty.co.uk/recent-work/glenbrook-kirkstall-road/",
+   "https://glenbrookproperty.co.uk/regency-works-kirkstall-road-topping-out/",
+   "https://glenbrookproperty.co.uk/glenbrook-gains-planning-consent-for-new-140m-btr-scheme-in-leeds/",
+   "https://www.gov.uk/government/news/homes-england-greater-manchester-and-west-yorkshire-pension-funds-provide-967-million-for-leeds-residential-scheme",
+   "https://www.placeyorkshire.co.uk/construction-begins-on-152m-kirkstall-road-scheme/",
+   "https://www.bandk.co.uk/projects/kirkstall-road-leeds",
+   "https://www.leeds-live.co.uk/news/leeds-news/plans-1000-month-flats-new-26325951",
+   "https://www.yorkshirepost.co.uk/business/planning-permission-is-granted-for-ps140m-618-apartment-build-to-rent-scheme-in-leeds-4039687",
+   "https://publicaccess.leeds.gov.uk/online-applications/applicationDetails.do?keyVal=T8Y9CUJBKBC00&activeTab=summary",
+   "https://www.leeds.gov.uk/sites/default/files/2025-12/2025%20shlaa%20-%20current%20supply%20schedule.pdf",
+   "https://find-and-update.company-information.service.gov.uk/company/13538535",
+   "https://find-and-update.company-information.service.gov.uk/company/13538535/charges"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "ingram-street-merchant-city-glasgow-artisan",
+  "name": "Ingram Street, Merchant City",
+  "developer": "Artisan Real Estate (Artisan Glasgow Ingram Limited)",
+  "area": "65-97 Ingram Street / Candleriggs / Albion Street, Merchant City, Glasgow G1",
+  "country": "United Kingdom",
+  "market": "Glasgow",
+  "stage": "off-plan",
+  "url": "https://artisanrealestate.co.uk/residential-developments/ingram-street/",
+  "docs_url": "https://artisanrealestate.co.uk/residential-developments/ingram-street/",
+  "permit_number": "Glasgow City Council 22/01225/FUL (Scottish Ministers notified case NA-260-002)",
+  "docs_listed": [
+   "developer page: 109 low-carbon 1, 2 and 3-bed apartments, courtyard gardens, ground floor commercial",
+   "register-interest site (ingramstreetglasgow.com)",
+   "press release: site bought Mar 2026, site preparation autumn 2026, completion 2028",
+   "no prices, floor plans or payment terms published yet"
+  ],
+  "note": "109 build-for-sale flats on a Merchant City car park, approved by Glasgow in Feb 2023 and, after call-in, by Scottish Ministers on 7 Feb 2025 (22/01225/FUL, DPEA NA-260-002). Artisan bought the site in Mar 2026 with Shawbrook Bank finance and plans to start site works in autumn 2026 for 2028 completion; only registration of interest is open (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "GBP",
+   "title": "ownership (Scottish heritable title expected)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": "Glasgow City Council 22/01225/FUL (Scottish Ministers notified case NA-260-002)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Artisan completed the New Waverley regeneration in Edinburgh (hotels, offices, retail, completed 2020) and Canonmills Garden (180 apartments, Edinburgh); Rowanbank Gardens (126 apartments) started 2022 (developer pages and Edinburgh Architecture)",
+   "units": 109,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Scottish Government DPEA case NA-260-002 (notified application, Glasgow City Council ref 22/01225/FUL), applicant Artisan Glasgow Ingram Ltd, decision issued 7 Feb 2025: application granted",
+   "escrow": null,
+   "progress": "No construction yet; site preparation due autumn 2026 per developer and City Property Glasgow",
+   "plans": "No floor plans published",
+   "record": "Artisan pages list New Waverley as complete; Edinburgh Architecture reports Canonmills Garden (180 flats) nearing completion in 2022 and Rowanbank Gardens started",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning granted by Scottish Ministers on 7 Feb 2025 after call-in (22/01225/FUL)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?T=169&id=123135"
+   },
+   {
+    "claim": "Applicant company Artisan Glasgow Ingram Limited registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/SC704865"
+   },
+   {
+    "claim": "Site acquired from City Property Glasgow (Investments) LLP in 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/SC704865/charges"
+   },
+   {
+    "claim": "Development finance secured (Shawbrook Bank charges, Jan to Feb 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/SC704865/charges"
+   },
+   {
+    "claim": "Site preparation to start autumn 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.citypropertyglasgow.co.uk/news-article/sale-of-ingram-street-site-to-artisan-real-estate/"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.glasgowtimes.co.uk/news/scottish-news/25915543.construction-100-homes-glasgow-city-centre-start/"
+   },
+   {
+    "claim": "First build-for-sale homes in Glasgow city centre for over a decade (council convener)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.urbanrealm.com/news/2026/03/06/dormant-merchant-city-car-park-to-spring-back-to-life/"
+   },
+   {
+    "claim": "109 apartments across four to seven storeys",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?T=169&id=123135"
+   },
+   {
+    "claim": "Developer page still describes the application as 'submitted' (2022 text)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?T=169&id=123135"
+   },
+   {
+    "claim": "Artisan completed New Waverley, Edinburgh",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://artisanrealestate.co.uk/commercial-developments/new-waverley/"
+   },
+   {
+    "claim": "Canonmills Garden (180 flats) delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edinburgharchitecture.co.uk/artisan-real-estate-developments"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2009,
+   "developer_hq": "Edinburgh, UK (group based in Douglas, Isle of Man per older releases)",
+   "developer_company": "Artisan Glasgow Ingram Limited SC704865",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Scottish ownership (heritable title) for flats is usual; not stated by developer",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "public courtyard garden",
+    "roof gardens and terraces",
+    "air source heat pumps",
+    "ground floor commercial units"
+   ],
+   "lat": 55.859,
+   "lng": -4.244,
+   "permit_authority": "Glasgow City Council / Scottish Ministers (DPEA) on call-in",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning decision verifiable on the Scottish Government DPEA register",
+   "Land purchase and lender charges visible at Companies House",
+   "Developer has completed large regeneration projects in Scotland"
+  ],
+  "flags": [],
+  "sources": [
+   "https://artisanrealestate.co.uk/residential-developments/ingram-street/",
+   "https://artisanrealestate.co.uk/commercial-developments/new-waverley/",
+   "https://www.citypropertyglasgow.co.uk/news-article/sale-of-ingram-street-site-to-artisan-real-estate/",
+   "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?T=169&id=123135",
+   "https://www.glasgowtimes.co.uk/news/scottish-news/25915543.construction-100-homes-glasgow-city-centre-start/",
+   "https://www.urbanrealm.com/news/2026/03/06/dormant-merchant-city-car-park-to-spring-back-to-life/",
+   "https://www.glasgowarchitecture.co.uk/65-97-ingram-street-glasgow",
+   "https://projectscot.com/2026/03/construction-to-begin-this-year-on-glasgow-merchant-city-mixed-use-scheme/",
+   "https://www.edinburgharchitecture.co.uk/artisan-real-estate-developments",
+   "https://find-and-update.company-information.service.gov.uk/company/SC704865",
+   "https://find-and-update.company-information.service.gov.uk/company/SC704865/charges"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "the-new-village-edinburgh-park-s1-developments",
+  "name": "The New Village, Edinburgh Park",
+  "developer": "S1 Developments (on Parabola's Edinburgh Park masterplan)",
+  "area": "Edinburgh Park, South Gyle, Edinburgh EH12",
+  "country": "United Kingdom",
+  "market": "Edinburgh",
+  "stage": "under construction",
+  "url": "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village",
+  "docs_url": "https://www.thenewvillage.homes/",
+  "permit_number": "City of Edinburgh Council 20/02068/FUL (Edinburgh Park southern phase)",
+  "docs_listed": [
+   "plot listings with fixed prices, sizes and floor plans (e.g. 3BR 984 sq ft GBP 400,000; 2BR 803 sq ft GBP 365,000)",
+   "studios from GBP 185,000 to be released late summer 2026",
+   "tenure stated as freehold (Scottish ownership)",
+   "site start Q2 2025, first homes Q4 2027 (masterplan site)",
+   "news on new primary substation, due spring 2026",
+   "downloadable brochure after registration"
+  ],
+  "note": "397 private-sale flats and mews houses forming the 'Villa Apartments' zone of Parabola's Edinburgh Park permission 20/02068/FUL, built and sold by S1 Developments; work started in 2025 and first homes are due in Q4 2027. Plot prices and floor plans are published through Rettie, but no deposit protection statement and no named selling company were found (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 185000,
+   "currency": "GBP",
+   "title": "freehold (Scottish ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "City of Edinburgh Council 20/02068/FUL (Edinburgh Park southern phase)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "S1 lists Temple Park Crescent and St Andrews West among its schemes and was named Scottish Home Awards 2023 Housebuilder of the Year (Edinburgh Park site)",
+   "units": 397,
+   "payment_plan": null,
+   "price_per_m2": 4376
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "City of Edinburgh Council Development Management Sub-Committee report (9 Dec 2020) on 20/02068/FUL recommends grant for the southern phase of Edinburgh Park including zone SW1-3 'Villa Apartments' of 397 private-sale homes; Parabola reports unanimous approval",
+   "escrow": null,
+   "progress": "S1 page: 'Construction started 2025'; masterplan site: site start Q2 2025; development news on the primary substation under construction",
+   "plans": "Rettie plot pages carry a floor plan tab with sizes and fixed prices",
+   "record": "S1 named on the masterplan site with Temple Park Crescent and St Andrews West; founded 2007 by Dan and Shane Teague",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Full planning permission application 20/02068/FUL covers 397 private-sale homes in zone SW1-3",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.edinburgh.gov.uk/mgConvert2PDF.aspx?ID=29596"
+   },
+   {
+    "claim": "Masterplan approved unanimously by the council's sub-committee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.parabola.com/progress/approval-granted-for-edinburgh-parks-residential-development"
+   },
+   {
+    "claim": "Site start Q2 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.urbanrealm.com/news/2024/10/23/hundreds-of-homes-see-edinburgh-park-evolve-as-an-urban-neighbourhood/"
+   },
+   {
+    "claim": "Completion end of 2027 / first homes Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.myedinburghpark.com/homes"
+   },
+   {
+    "claim": "397 homes including studios",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.edinburgh.gov.uk/mgConvert2PDF.aspx?ID=29596"
+   },
+   {
+    "claim": "Fixed plot prices (e.g. Plot 49 GBP 400,000 for 984 sq ft)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village/edi250135"
+   },
+   {
+    "claim": "Studios from GBP 185,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village/edi260099"
+   },
+   {
+    "claim": "S1 Developments founded 2007 and named Housebuilder of the Year 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.myedinburghpark.com/news/parabola-announces-deal-with-s1-developments-for-delivery-of-homes-for-sale-at-edinburgh-park"
+   },
+   {
+    "claim": "Developer selling company identified at Companies House",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thenewvillage.homes/"
+   },
+   {
+    "claim": "All-electric homes supplied by a new 20MVA primary substation due spring 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thenewvillage.homes/news/new-electricity-primary-station"
+   },
+   {
+    "claim": "Studios to 3-bed and mews houses (agent) versus 1 to 3-bed only (S1 places page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.s1developments.com/places/the-new-village"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Edinburgh, UK",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-Q2",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR mews house"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 91.4,
+   "price_min": 185000,
+   "price_max": 400000,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Outright ownership (listed as freehold); no restrictions stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "landscaped courtyards",
+    "balconies or terraces",
+    "EV charging",
+    "secure cycle storage",
+    "tram and rail stations nearby"
+   ],
+   "lat": 55.927,
+   "lng": -3.308,
+   "permit_authority": "City of Edinburgh Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Fixed plot prices with floor plans and sizes published",
+   "Planning committee report on the council's own site",
+   "Site start date and construction status stated by the developer and the masterplan owner"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village",
+   "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village/edi260099",
+   "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village/edi250135",
+   "https://www.rettie.co.uk/sales/current-new-home-development-sales/the-new-village/edi250156",
+   "https://www.thenewvillage.homes/",
+   "https://www.thenewvillage.homes/news/new-electricity-primary-station",
+   "https://www.s1developments.com/places/the-new-village",
+   "https://www.myedinburghpark.com/homes",
+   "https://www.myedinburghpark.com/news/parabola-announces-deal-with-s1-developments-for-delivery-of-homes-for-sale-at-edinburgh-park",
+   "https://www.parabola.com/progress/approval-granted-for-edinburgh-parks-residential-development",
+   "https://www.urbanrealm.com/news/2024/10/23/hundreds-of-homes-see-edinburgh-park-evolve-as-an-urban-neighbourhood/",
+   "https://democracy.edinburgh.gov.uk/mgConvert2PDF.aspx?ID=29596"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "domville-cherrywood-dublin-william-neville",
+  "name": "Domville apartments, Cherrywood",
+  "developer": "William Neville & Sons Unlimited Company",
+  "area": "Domville, Cherrywood SDZ, Dublin 18",
+  "country": "Ireland",
+  "market": "Dublin",
+  "stage": "under construction",
+  "url": "https://www.knightfrank.ie/properties/new-homes/domville-cherrywood-dublin-18",
+  "docs_url": "https://www.williamneville.ie/current-developments/",
+  "permit_number": "Dun Laoghaire-Rathdown DZ17A/0714 (extended DZ17A/0714/E; modified DZ21A/0806 and DZ24A/0291/WEB)",
+  "docs_listed": [
+   "agent page: 1BR from EUR 425,000, 2BR from EUR 475,000, 54 to 82 sq m",
+   "launching October 2026, building nearing completion",
+   "flooring, selected appliances and allocated parking included",
+   "developer page: Phase 1 of 322 units under construction within the Cherrywood SDZ"
+  ],
+  "note": "Apartments in the Domville scheme at Cherrywood (SDZ permission DZ17A/0714 for 322 homes, extended in 2023 and enlarged by DZ24A/0291/WEB in Mar 2025), launching in Oct 2026 from EUR 425,000 as the blocks near completion. RTE reported in Jan 2026 that 30 completed social homes in the same development had stood empty for almost a year, and the housing body said it was waiting for building documentation from the developer (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 425000,
+   "currency": "EUR",
+   "title": "freehold apartment with management company membership (Irish norm, not stated)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": "Dun Laoghaire-Rathdown DZ17A/0714 (extended DZ17A/0714/E; modified DZ21A/0806 and DZ24A/0291/WEB)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Earlier Domville houses were signed off in Jan 2026 per the national planning register mirror; a block of 31 social apartments was completed in Feb 2025 (RTE)",
+   "units": 158,
+   "payment_plan": null,
+   "price_per_m2": 7870
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "National planning applications dataset (Department of Housing / local authorities): DZ17A/0714 granted 7 Aug 2018 for 322 units; extension DZ17A/0714/E granted 6 Sep 2023; DZ24A/0291/WEB granted 25 Mar 2025 raising four Grand Parade blocks to 158 flats. Agent and developer pages quote no number",
+   "escrow": null,
+   "progress": "Agent says 'nearing completion' with no dated update; developer page only says Phase 1 under construction",
+   "plans": "No floor plans on agent or developer pages",
+   "record": "RTE reports a 31-apartment block completed Feb 2025; planning register mirror shows building started Apr 2024 and first sign-off Jan 2026 on the developer's DZ21A/0806 scheme",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "SDZ permission DZ17A/0714 for 322 units granted 7 Aug 2018",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://services.arcgis.com/NzlPQPKn5QF9v2US/arcgis/rest/services/IrishPlanningApplications/FeatureServer/0/query?where=ApplicationNumber+LIKE+%27DZ17A%2F0714%25%27+OR+ApplicationNumber+LIKE+%27DZ24A%2F0291%25%27&outFields=PlanningAuthority%2CApplicationNumber%2CDevelopmentDescription%2CDevelopmentAddress%2CApplicationStatus%2CApplicationType%2CApplicantSurname%2CApplicantForename%2CDecision%2CDecisionDate%2CReceivedDate%2CGrantDate%2CLinkAppDetails&f=json&resultRecordCount=20"
+   },
+   {
+    "claim": "Permission duration extended in Sep 2023 (DZ17A/0714/E)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://services.arcgis.com/NzlPQPKn5QF9v2US/arcgis/rest/services/IrishPlanningApplications/FeatureServer/0/query?where=ApplicationNumber+LIKE+%27DZ17A%2F0714%25%27+OR+ApplicationNumber+LIKE+%27DZ24A%2F0291%25%27&outFields=PlanningAuthority%2CApplicationNumber%2CDevelopmentDescription%2CDevelopmentAddress%2CApplicationStatus%2CApplicationType%2CApplicantSurname%2CApplicantForename%2CDecision%2CDecisionDate%2CReceivedDate%2CGrantDate%2CLinkAppDetails&f=json&resultRecordCount=20"
+   },
+   {
+    "claim": "Grand Parade blocks raised to six storeys with 158 flats (DZ24A/0291/WEB, Mar 2025) after an earlier refusal or withdrawal (DZ24A/0236/WEB)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cherrywoodplans.com/application/DZ24A-0291-WEB.md"
+   },
+   {
+    "claim": "Developer page: Phase 1 is a scheme of 322 units",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://cherrywoodplans.com/application/DZ24A-0291-WEB.md"
+   },
+   {
+    "claim": "Building nearing completion, launch Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.knightfrank.ie/properties/new-homes/domville-cherrywood-dublin-18"
+   },
+   {
+    "claim": "Prices from EUR 425,000 (1BR) and EUR 475,000 (2BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.knightfrank.ie/properties/new-homes/domville-cherrywood-dublin-18"
+   },
+   {
+    "claim": "Developer has delivered completed homes at Domville",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.rte.ie/news/regional/2026/0119/1553969-cherrywood-social-housing/"
+   },
+   {
+    "claim": "Developer provided required building documentation for completed social units (as of Jan 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.oakleehousing.ie/news/oaklee-s-response-to-the-rte-media-coverage-of-domville-cherrywood"
+   },
+   {
+    "claim": "Developer company registered (Irish CRO)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.williamneville.ie/current-developments/"
+   },
+   {
+    "claim": "New-home warranty (HomeBond or similar) provided",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.knightfrank.ie/properties/new-homes/domville-cherrywood-dublin-18"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dublin, Ireland",
+   "developer_company": "William Neville & Sons Unlimited Company (applicant name on DZ26A/0148/WEB)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-04",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 54,
+   "size_max_m2": 82,
+   "price_min": 425000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "No restrictions on foreign buyers in Ireland; apartments normally sold with an owners' management company",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "balconies or terraces",
+    "allocated parking",
+    "Tully Park next door",
+    "Luas tram nearby"
+   ],
+   "lat": 53.247,
+   "lng": -6.149,
+   "permit_authority": "Dun Laoghaire-Rathdown County Council (Cherrywood SDZ)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning chain traceable on the national planning applications dataset",
+   "Within a strategic development zone with a planning scheme"
+  ],
+  "flags": [
+   {
+    "text": "RTE reported in Jan 2026 that 30 completed social housing apartments at Domville had remained vacant for almost a year; the developer cited finance issues on the buyer side",
+    "source": "https://www.rte.ie/news/regional/2026/0119/1553969-cherrywood-social-housing/"
+   },
+   {
+    "text": "Approved housing body Oaklee stated its funding was secured and that the delay was due to outstanding legal building documentation from the developer",
+    "source": "https://www.oakleehousing.ie/news/oaklee-s-response-to-the-rte-media-coverage-of-domville-cherrywood"
+   }
+  ],
+  "sources": [
+   "https://www.knightfrank.ie/properties/new-homes/domville-cherrywood-dublin-18",
+   "https://www.williamneville.ie/current-developments/",
+   "https://planning.localgov.ie/",
+   "https://services.arcgis.com/NzlPQPKn5QF9v2US/arcgis/rest/services/IrishPlanningApplications/FeatureServer/0/query?where=ApplicationNumber+LIKE+%27DZ17A%2F0714%25%27+OR+ApplicationNumber+LIKE+%27DZ24A%2F0291%25%27&outFields=PlanningAuthority%2CApplicationNumber%2CDevelopmentDescription%2CDevelopmentAddress%2CApplicationStatus%2CApplicationType%2CApplicantSurname%2CApplicantForename%2CDecision%2CDecisionDate%2CReceivedDate%2CGrantDate%2CLinkAppDetails&f=json&resultRecordCount=20",
+   "https://cherrywoodplans.com/application/DZ24A-0291-WEB.md",
+   "https://cherrywoodplans.com/application/DZ26A-0148-WEB.md",
+   "https://planningregister.ie/scheme/lehaunstown-and-cherrywood",
+   "https://planningregister.ie/scheme/townland-of-3",
+   "https://www.rte.ie/news/regional/2026/0119/1553969-cherrywood-social-housing/",
+   "https://www.oakleehousing.ie/news/oaklee-s-response-to-the-rte-media-coverage-of-domville-cherrywood"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "park-lane-apartments-cherrywood-evara",
+  "name": "Park Lane Apartments, Cherrywood Village",
+  "developer": "Evara",
+  "area": "Cherrywood Village (Tully Park), Dublin 18",
+  "country": "Ireland",
+  "market": "Dublin",
+  "stage": "off-plan",
+  "url": "https://www.myhome.ie/residential/brochure/park-lane-cherrywood-dublin-18/5026073",
+  "docs_url": "https://evara.ie/development/park-lane-apartments/",
+  "permit_number": null,
+  "docs_listed": [
+   "five apartment types with floor plans: 1BR 46 to 49 sq m from EUR 415,000; 2BR 71 to 81 sq m from EUR 500,000",
+   "parking included with all apartments",
+   "status 'Launching soon'; registration open",
+   "brochure: 10-year HomeBond guarantee, NZEB homes, heat pumps",
+   "listed internationally on realestate.com.au (EUR 415,000)"
+  ],
+  "note": "Evara's 1 and 2-bed apartments at Park Lane, the next phase after Cherry Lane in Cherrywood Village, listed from EUR 415,000 with floor plans per type and a 10-year HomeBond guarantee. Billed as 'launching winter 2025' but still 'launching soon' in Oct 2026; no planning reference, build stage or deposit terms are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 415000,
+   "currency": "EUR",
+   "title": "freehold apartment with management company membership (service charge payable to management)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Evara cites Cherry Lane in Cherrywood Village (final home remaining) on its Cherrywood Village site",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 8469
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning reference published. Street names on the brochure site plan (Tully Park View, Gun and Drum Hill, Lehaunstown Lane walkway) match DZ21A/1042 (122 homes incl. 48 apartments in Blocks A and B, applicant LSREF V Eden T5 Limited, granted 30 May 2022), but the brochure also shows a Block C, so the link is not confirmed",
+   "escrow": null,
+   "progress": "No construction status published for the apartment blocks; agents report duplex show units and a final 4-bed house available",
+   "plans": "Floor plans on each apartment type page (e.g. 2 Bed Type E, 71 sq m)",
+   "record": "Evara's Cherrywood Village site shows Cherry Lane with 'final home remaining'",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Park Lane apartments correspond to SDZ permission DZ21A/1042 (granted 30 May 2022)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cherrywoodplans.com/application/DZ21A-1042.md"
+   },
+   {
+    "claim": "DZ21A/1042 exists and was granted on 30 May 2022",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://services.arcgis.com/NzlPQPKn5QF9v2US/arcgis/rest/services/IrishPlanningApplications/FeatureServer/0/query?where=ApplicationNumber+LIKE+%27DZ21A%2F1042%25%27&outFields=PlanningAuthority%2CApplicationNumber%2CDevelopmentDescription%2CDevelopmentAddress%2CApplicationStatus%2CApplicationType%2CApplicantSurname%2CApplicantForename%2CDecision%2CDecisionDate%2CReceivedDate%2CGrantDate%2CLinkAppDetails&f=json&resultRecordCount=20"
+   },
+   {
+    "claim": "Launching winter 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://evara.ie/development/park-lane-apartments/"
+   },
+   {
+    "claim": "Prices from EUR 415,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://evara.ie/development/park-lane-apartments/"
+   },
+   {
+    "claim": "Offer of 1, 2, 3 and 4-bed apartments (Cherrywood Village site) versus 1 and 2-bed apartments (development page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cherrywoodvillage.ie/"
+   },
+   {
+    "claim": "Listing describes '2 bedroom apartments launching soon' while showing a 1-bed 49 sq m unit",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realestate.com.au/international/ie/park-lane-dublin-18-dublin-210120573477/"
+   },
+   {
+    "claim": "10-year HomeBond guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://evara.ie/wp-content/uploads/2025/06/Park-Lane-Duplex-Brochure.pdf"
+   },
+   {
+    "claim": "Earlier phase Cherry Lane delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cherrywoodvillage.ie/"
+   },
+   {
+    "claim": "Developer or selling company named and registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://evara.ie/development/park-lane-apartments/"
+   },
+   {
+    "claim": "Parking included with all apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://evara.ie/development/park-lane-apartments/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dublin, Ireland",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 81,
+   "price_min": 415000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "No restrictions on foreign buyers in Ireland",
+   "rental_programme": null,
+   "service_charge": "Annual service charge to management company (amount not stated)",
+   "brand": null,
+   "amenities": [
+    "parking included",
+    "Tully Park next door",
+    "Luas stops nearby",
+    "heat pumps",
+    "balconies or terraces"
+   ],
+   "lat": 53.248,
+   "lng": -6.156,
+   "permit_authority": "Dun Laoghaire-Rathdown County Council (Cherrywood SDZ)",
+   "brochure_url": "https://evara.ie/wp-content/uploads/2025/06/Park-Lane-Duplex-Brochure.pdf"
+  },
+  "positives": [
+   "Floor plans, sizes and starting prices published per apartment type",
+   "10-year HomeBond structural guarantee stated in the brochure"
+  ],
+  "flags": [],
+  "sources": [
+   "https://evara.ie/development/park-lane-apartments/",
+   "https://evara.ie/development/park-lane-apartments/type-e/",
+   "https://evara.ie/development/parklane/",
+   "https://evara.ie/wp-content/uploads/2025/06/Park-Lane-Duplex-Brochure.pdf",
+   "https://cherrywoodvillage.ie/",
+   "https://www.myhome.ie/residential/brochure/park-lane-cherrywood-dublin-18/5026073",
+   "https://www.sherryfitz.ie/buy/house/dublin/cherrywood/park-lane-cherrywood-dublin-18",
+   "https://www.realestate.com.au/international/ie/park-lane-dublin-18-dublin-210120573477/",
+   "https://cherrywoodplans.com/application/DZ21A-1042.md",
+   "https://services.arcgis.com/NzlPQPKn5QF9v2US/arcgis/rest/services/IrishPlanningApplications/FeatureServer/0/query?where=ApplicationNumber+LIKE+%27DZ21A%2F1042%25%27&outFields=PlanningAuthority%2CApplicationNumber%2CDevelopmentDescription%2CDevelopmentAddress%2CApplicationStatus%2CApplicationType%2CApplicantSurname%2CApplicantForename%2CDecision%2CDecisionDate%2CReceivedDate%2CGrantDate%2CLinkAppDetails&f=json&resultRecordCount=20"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "developer": "Habitia Group (Habita, UAE); site company City Walk Land Ltd; delivery by Equityway Holdings",
+  "area": "Love Lane / Pall Mall, Vauxhall, Liverpool L3",
+  "country": "United Kingdom",
+  "market": "Liverpool",
+  "stage": "off-plan",
+  "url": "https://www.citywalkliverpool.com/",
+  "docs_url": "https://www.citywalkliverpool.com/",
+  "permit_number": "Liverpool City Council 23F/2052",
+  "docs_listed": [
+   "prices from about GBP 186,000 (1BR 50 sq m), 2BR GBP 254,492, 3BR GBP 298,446",
+   "GBP 5,000 reservation, 25% on exchange, 75% on completion; GBP 10,000 off for first 25 buyers",
+   "999-year lease, peppercorn ground rent, short-term lets approved",
+   "12.6% net yield through a managed sublet model at 75% occupancy (agent)",
+   "completion April 2027 with construction 'starting Oct 2025' (agent)",
+   "free furniture pack and legal contribution"
+  ],
+  "note": "Four-block, 507-flat scheme on Love Lane and Pall Mall (planning 23F/2052, committee approval Apr 2024, decision reported Nov 2025) bought from Sourced by UAE-based Habita in 2025 and sold off-plan to investors from about GBP 186,000 with a 12.6% net 'sublet' yield. An agent page still says construction starts Oct 2025 and completes Apr 2027, while press in mid-2026 reported a start only at the end of 2026, pending Gateway 2 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 186000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12.6,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "Liverpool City Council 23F/2052",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 507,
+   "payment_plan": "GBP 5,000 reservation, 25% on exchange, 75% on completion",
+   "price_per_m2": 3732
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Construction news (Glenigan data via Wedoany, Jun 2026) gives full planning permission ref 23F/2052 granted Nov 2025; Architects' Journal and LBN report committee approval in Apr 2024. Sales pages say only 'Established developer' and give no reference. Liverpool's planning portal was not reachable",
+   "escrow": null,
+   "progress": "No works yet; Liverpool Echo (Jun 2026) says the contractor aims to start at the end of 2026 and Gateway 2 approval is still being sought",
+   "plans": "Unit types and sizes only; no floor plans",
+   "record": "No completed Habitia projects are named; the agent calls City Walk its 'flagship' project",
+   "returns": "12.6% net yield 'through our managed sublet model' at 75% occupancy; not labelled guaranteed"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning approved for 507 apartments in four blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.architectsjournal.co.uk/news/bdp-wins-approval-for-500-flat-scheme-near-new-everton-stadium"
+   },
+   {
+    "claim": "Permission reference 23F/2052 granted Nov 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wedoany.com/shortnews/196713.html"
+   },
+   {
+    "claim": "Development of 116 apartments (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/507-new-homes-set-transform-34073380"
+   },
+   {
+    "claim": "Construction starting Oct 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/507-new-homes-set-transform-34073380"
+   },
+   {
+    "claim": "Completion April 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://en.wedoany.com/shortnews/196713.html"
+   },
+   {
+    "claim": "Site company City Walk Land Ltd (formerly Love Lane (Liverpool) Limited) registered; land charged to Goldcrest Finance (2025) and Phoenix Money (Oct 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/12190613/charges"
+   },
+   {
+    "claim": "Site sold by Sourced Developments to UAE-based Habita in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/sourced-offloads-110m-liverpool-scheme/"
+   },
+   {
+    "claim": "145 of the 507 flats designated affordable (sold at no more than 80% of market value)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lbndaily.co.uk/middle-east-investor-acquires-110m-liverpool-scheme/"
+   },
+   {
+    "claim": "Established developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.citywalkliverpool.com/"
+   },
+   {
+    "claim": "12.6% net yield via managed sublet",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://globalsquareinvestments.com/city-walk-liverpool/"
+   },
+   {
+    "claim": "Short-term lets approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.citywalkliverpool.com/"
+   },
+   {
+    "claim": "Gateway 2 building safety approval in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/507-new-homes-set-transform-34073380"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE (per press)",
+   "developer_company": "City Walk Land Ltd 12190613 (planning applicant as Love Lane (Liverpool) Limited); Equityway Holdings Ltd 14516153 named in press as bringing the scheme forward",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": null,
+   "price_min": 186000,
+   "price_max": 298446,
+   "currency": "GBP",
+   "deposit_pct": 25,
+   "payment_plan": "GBP 5,000 reservation, 25% exchange, 75% completion",
+   "foreign_ownership": "999-year leasehold",
+   "rental_programme": "Managed sublet model with stated 12.6% net yield at 75% occupancy (agent)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "24-hour concierge",
+    "co-working",
+    "communal gardens",
+    "200m linear park",
+    "commercial units in railway arches"
+   ],
+   "lat": 53.418,
+   "lng": -2.99,
+   "permit_authority": "Liverpool City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning approval confirmed by independent press",
+   "Main contractor appointment reported (BDP Construction)"
+  ],
+  "flags": [
+   {
+    "text": "Liverpool Echo reported in Jun 2026 that construction was targeted to start only at the end of 2026, with Gateway 2 approval still being sought, while sales pages advertised an Oct 2025 start and Apr 2027 completion",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/507-new-homes-set-transform-34073380"
+   }
+  ],
+  "sources": [
+   "https://www.citywalkliverpool.com/",
+   "https://globalsquareinvestments.com/city-walk-liverpool/",
+   "https://globalsquareinvestments.com/portfolio/",
+   "https://www.placenorthwest.co.uk/sourced-offloads-110m-liverpool-scheme/",
+   "https://lbndaily.co.uk/middle-east-investor-acquires-110m-liverpool-scheme/",
+   "https://www.liverpoolecho.co.uk/news/liverpool-news/507-new-homes-set-transform-34073380",
+   "https://www.liverpoolecho.co.uk/news/liverpool-news/major-flats-plan-500-new-27613786",
+   "https://www.architectsjournal.co.uk/news/bdp-wins-approval-for-500-flat-scheme-near-new-everton-stadium",
+   "https://en.wedoany.com/shortnews/196713.html",
+   "https://find-and-update.company-information.service.gov.uk/company/12190613",
+   "https://find-and-update.company-information.service.gov.uk/company/12190613/charges",
+   "https://find-and-update.company-information.service.gov.uk/company/14516153"
+  ],
+  "verified_score": 1
  }
 ]

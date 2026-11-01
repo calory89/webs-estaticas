@@ -1141,5 +1141,1136 @@
    "https://abr.business.gov.au/Search/ResultsActive?SearchText=Mirvac%20Limited",
    "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
   ]
+ },
+ {
+  "slug": "aura-melbourne-square-osk-property",
+  "name": "AURA at Melbourne Square",
+  "developer": "OSK Property (joint venture with Malaysia's Employees Provident Fund)",
+  "area": "Southbank (Melbourne Square precinct, Kavanagh Street)",
+  "country": "Australia",
+  "market": "Melbourne",
+  "stage": "off-plan",
+  "url": "https://www.melbournesquare.com.au/",
+  "docs_url": "https://www.melbournesquare.com.au/",
+  "permit_number": null,
+  "docs_listed": [
+   "67-storey tower, 673 residences from studio to 3BR plus penthouses and Mira Terraces",
+   "prices from AUD 565,000",
+   "groundbreaking 22 September 2026, builder Multiplex",
+   "completion planned early 2030",
+   "sizes 463 to 1,496 sq ft (Malaysian launch coverage)"
+  ],
+  "note": "Third residential stage of OSK Property's AUD 3.5bn Melbourne Square precinct, launched to Malaysian and Australian buyers in 2026; ground broken on 22 September 2026 with Multiplex as builder and a bank syndicate led by Maybank, completion planned early 2030. The precinct was approved by Victoria's Planning Minister in 2015 and stage 1 completed in 2021, but no permit number, deposit arrangement or floor plans are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 565000,
+   "currency": "AUD",
+   "title": "freehold strata (precinct described as freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Melbourne Square stage 1 (two towers, park and retail) completed May 2021 with Multiplex; BLVD settlements under way in 2026 (developer site and press)",
+   "units": 673,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on developer page; precinct approved by Planning Minister on 24 Dec 2015 (Wikipedia); Victorian ministerial permit register not matched to this site",
+   "escrow": "No deposit holding statement published",
+   "progress": "Developer site reports groundbreaking 22 September 2026 with Multiplex",
+   "plans": "No floor plans found (project microsite auramsq.com.au could not be opened)",
+   "record": "Stage 1 towers completed 2021 and BLVD settling in 2026",
+   "returns": "Rental demand described, no yield figure or guarantee"
+  },
+  "positives": [
+   "Tier 1 builder and bank syndicate (Maybank, HSBC, Bank of China Malaysia, ICBC Malaysia) reported",
+   "Developer has completed earlier stages in the same precinct",
+   "Listed parent and state pension fund as JV partner"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Melbourne Square precinct planning approval granted by the Planning Minister (24 Dec 2015)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Melbourne_Square_(complex)"
+   },
+   {
+    "claim": "Stage 1 construction Nov 2017 to May 2021 by Multiplex",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Melbourne_Square_(complex)"
+   },
+   {
+    "claim": "Groundbreaking 22 September 2026 with Multiplex",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1917527/osk-property-starts-work-a800m-aura-tower-melbourne"
+   },
+   {
+    "claim": "Syndicated construction loan from Maybank, HSBC, Bank of China Malaysia and ICBC Malaysia",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1917527/osk-property-starts-work-a800m-aura-tower-melbourne"
+   },
+   {
+    "claim": "673 apartments, 67 storeys, GDV AUD 800m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thestar.com.my/metro/metro-news/2026/04/25/creating-contemporary-urban-living-aura-in-melbourne"
+   },
+   {
+    "claim": "More than 140 units sold since soft launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/vic/osk-multiplex-commence-construction-melbourne-square-s-newest-tower-aura"
+   },
+   {
+    "claim": "Prices from AUD 565,000 vs AUD 568,000 on related listing",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/vic/osk-multiplex-commence-construction-melbourne-square-s-newest-tower-aura"
+   },
+   {
+    "claim": "Completion early 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.melbournesquare.com.au/"
+   },
+   {
+    "claim": "Precinct permit requires completion by 2031",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Melbourne_Square_(complex)"
+   },
+   {
+    "claim": "Freehold title for Aura units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thestar.com.my/metro/metro-news/2026/04/25/creating-contemporary-urban-living-aura-in-melbourne"
+   },
+   {
+    "claim": "Planning permit number for the Aura tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/a39dd040-b6ed-ef11-9342-000d3ad1b913"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent OSK Holdings is listed on Bursa Malaysia (not checked in filings for this project)",
+   "construction_start": "2026-09",
+   "handover_promised": "2030-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse",
+    "Mira Terrace"
+   ],
+   "size_min_m2": 43,
+   "size_max_m2": 139,
+   "price_min": 565000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata units; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "levels 66-67 residents' facilities",
+    "precinct park",
+    "supermarket and retail",
+    "childcare centre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Victorian Minister for Planning / Department of Transport and Planning",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "sources": [
+   "https://www.melbournesquare.com.au/",
+   "https://www.edgeprop.my/content/1917527/osk-property-starts-work-a800m-aura-tower-melbourne",
+   "https://www.apartments.com.au/news/vic/osk-multiplex-commence-construction-melbourne-square-s-newest-tower-aura",
+   "https://www.thestar.com.my/metro/metro-news/2026/04/25/creating-contemporary-urban-living-aura-in-melbourne",
+   "https://en.wikipedia.org/wiki/Melbourne_Square_(complex)",
+   "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/a39dd040-b6ed-ef11-9342-000d3ad1b913",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "brillia-kyoto-kitayama-the-residence-tokyo-tatemono",
+  "name": "Brillia Kyoto Kitayama The Residence",
+  "developer": "Tokyo Tatemono with Mitsubishi Estate Residence",
+  "area": "Kamigamo Sakurai-cho, Kita-ku, Kyoto",
+  "country": "Japan",
+  "market": "Kyoto",
+  "stage": "under construction",
+  "url": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7",
+  "docs_url": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7",
+  "permit_number": "R07 Kakken IPEC00277 (29 Aug 2025); change R07 IPEC00118 (20 Feb 2026)",
+  "docs_listed": [
+   "building confirmation numbers and dates",
+   "40 units, 5 floors plus basement, reinforced concrete",
+   "sample price JPY 125m",
+   "scheduled completion and handover",
+   "lot address (chiban)",
+   "English listing aimed at overseas buyers"
+  ],
+  "note": "40-unit, five-storey reinforced concrete condominium near Kitayama in northern Kyoto, listed in English for overseas buyers with its building confirmation number (IPEC00277, Aug 2025) and a change confirmation (Feb 2026). Completion is given as late October 2027 on the English listing but early April 2027 in Japanese outline data; no floor plans, fees or deposit terms are shown (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 125000000,
+   "currency": "JPY",
+   "title": "freehold strata (kubun shoyu), land rights not stated",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "R07 Kakken IPEC00277 (29 Aug 2025); change R07 IPEC00118 (20 Feb 2026)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 40,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Building confirmation number IPEC00277 dated 29 Aug 2025 and change confirmation IPEC00118 dated 20 Feb 2026 on the listing",
+   "escrow": "No statement on deposit protection (hosho sochi) on the English listing",
+   "progress": "Listing says under construction, no dated photos or %",
+   "plans": "Floor plans not shown",
+   "record": "No track record stated on listing (developers are large listed Japanese groups, not checked in a registry)",
+   "returns": "No rental or yield claims"
+  },
+  "positives": [
+   "Building confirmation numbers published with dates, including a later change confirmation",
+   "Reputable Japanese developers named in Japanese outline data",
+   "No rental guarantee marketing"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building confirmation R07 IPEC00277 issued 29 Aug 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7"
+   },
+   {
+    "claim": "Change confirmation IPEC00118 issued 20 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7"
+   },
+   {
+    "claim": "Completion late October 2027 (English listing) vs early April 2027 (Japanese outline)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.e-mansion.co.jp/bbs/search/%E4%BA%AC%E9%83%BD%E5%BA%9C%20%E4%BA%AC%E9%83%BD%E5%B8%82%20%E5%8C%97%E5%8C%BA%20%E4%B8%8A%E8%B3%80%E8%8C%82%20%E6%A1%9C%E4%BA%95%E7%94%BA/?b=kansai"
+   },
+   {
+    "claim": "40 units (37 for sale)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.e-mansion.co.jp/bbs/search/%E4%BA%AC%E9%83%BD%E5%BA%9C%20%E4%BA%AC%E9%83%BD%E5%B8%82%20%E5%8C%97%E5%8C%BA%20%E4%B8%8A%E8%B3%80%E8%8C%82%20%E6%A1%9C%E4%BA%95%E7%94%BA/?b=kansai"
+   },
+   {
+    "claim": "Sellers Tokyo Tatemono and Mitsubishi Estate Residence, builder Meldia DC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.e-mansion.co.jp/bbs/search/%E4%BA%AC%E9%83%BD%E5%BA%9C%20%E4%BA%AC%E9%83%BD%E5%B8%82%20%E5%8C%97%E5%8C%BA%20%E4%B8%8A%E8%B3%80%E8%8C%82%20%E6%A1%9C%E4%BA%95%E7%94%BA/?b=kansai"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7"
+   },
+   {
+    "claim": "Price JPY 125m for listed unit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7"
+   },
+   {
+    "claim": "Land rights type (ownership vs leasehold)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7"
+   },
+   {
+    "claim": "Developer companies registered (corporate number)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Tokyo, Japan",
+   "developer_company": "Tokyo Tatemono Co., Ltd. and Mitsubishi Estate Residence Co., Ltd. (Kansai branch), per Japanese outline data",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 125000000,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Japan places no nationality restriction on condominium ownership (not stated on listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Brillia",
+   "amenities": [
+    "23 underground parking spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Designated confirmation and inspection body (IPEC) under the Building Standards Act",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.akiyajapan.com/property/53616c7465645f5f941b45f5990bc75263e4fd5d9b9bdfe9216f0bbed7b531c7",
+   "https://www.e-mansion.co.jp/bbs/search/%E4%BA%AC%E9%83%BD%E5%BA%9C%20%E4%BA%AC%E9%83%BD%E5%B8%82%20%E5%8C%97%E5%8C%BA%20%E4%B8%8A%E8%B3%80%E8%8C%82%20%E6%A1%9C%E4%BA%95%E7%94%BA/?b=kansai"
+  ]
+ },
+ {
+  "slug": "seascape-auckland-shundi",
+  "name": "Seascape",
+  "developer": "Shundi Customs Limited (Shundi Group), in receivership",
+  "area": "83 Customs Street East, Auckland CBD",
+  "country": "New Zealand",
+  "market": "New Zealand",
+  "stage": "under construction",
+  "url": "https://www.nzsothebysrealty.com/NZE11552",
+  "docs_url": "https://www.nzsothebysrealty.com/NZE11552",
+  "permit_number": null,
+  "docs_listed": [
+   "agent listing: studio to 3BR and penthouses from NZD 970,000",
+   "agent listing: completion Q1 2026",
+   "agent listing: tower 'quickly rising skyward'",
+   "amenities: pool, fitness centre, retail, dining"
+  ],
+  "note": "Planned as New Zealand's tallest residential tower (about 221 apartments), with an Overseas Investment Office exemption allowing sales to foreign buyers. Major works stopped in August 2024 after a payment dispute with builder China Construction NZ, and the developer was placed in receivership on 4 March 2026 owing about NZD 589m, with NZD 12m of third-party deposits listed; an agent listing still shows Q1 2026 completion (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 970000,
+   "currency": "NZD",
+   "title": "unit title (not stated on listing)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 221,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building consent or resource consent number on listing",
+   "escrow": "No deposit holding information on listing; receivers' report lists NZD 12m 'third-party deposits held' without saying whether in trust",
+   "progress": "Listing claims construction rising and Q1 2026 completion; receivers report works ceased August 2024",
+   "plans": "No floor plans on listing",
+   "record": "No delivered projects stated for the developer",
+   "returns": "No yield or guarantee claims"
+  },
+  "positives": [
+   "Overseas Investment Office exemption reported, so foreign buyers were eligible",
+   "Receivers' statutory report is public and lists creditors and deposits"
+  ],
+  "flags": [
+   {
+    "text": "Shundi Customs Limited was placed in receivership on 4 March 2026 by China Construction Bank NZ Branch; receivers' report lists debts of about NZD 589m including NZD 12m of third-party deposits",
+    "source": "https://www.interest.co.nz/sites/default/files/2026-05/653521E3ADF009DA9BF9F8DF187CBB5F.pdf"
+   },
+   {
+    "text": "High Court at Auckland (March 2025) allowed builder China Construction NZ to enforce a NZD 33m adjudication award against Shundi Customs; the builder suspended work in August 2024 for non-payment",
+    "source": "https://nzherald.co.nz/business/abandoned-57-level-seascape-china-construction-wins-right-to-enforce-33m-claim-against-shundi-customs/EKXFJYXRGRDYJG4TPD5Y5JJGPI"
+   },
+   {
+    "text": "The Spinoff reported in May 2026 that the unfinished tower is deteriorating and listed for sale by receivers",
+    "source": "https://thespinoff.co.nz/society/13-05-2026/some-ideas-for-the-seascape-ghost-tower-haunting-aucklands-skyline"
+   }
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion Q1 2026",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.interest.co.nz/sites/default/files/2026-05/653521E3ADF009DA9BF9F8DF187CBB5F.pdf"
+   },
+   {
+    "claim": "Construction under way, tower rising",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.rnz.co.nz/news/business/588606/seascape-developer-shundi-customs-placed-in-receivership"
+   },
+   {
+    "claim": "Developer company Shundi Customs Limited registered (Company No. 5342341)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.interest.co.nz/sites/default/files/2026-05/653521E3ADF009DA9BF9F8DF187CBB5F.pdf"
+   },
+   {
+    "claim": "Developer solvent and able to complete",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.interest.co.nz/sites/default/files/2026-05/653521E3ADF009DA9BF9F8DF187CBB5F.pdf"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.interest.co.nz/sites/default/files/2026-05/653521E3ADF009DA9BF9F8DF187CBB5F.pdf"
+   },
+   {
+    "claim": "Overseas Investment Office exemption allows sales to foreign buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/buyer-reserves-24m-super-penthouse-in-seascape-nz-s-tallest-tower-41682"
+   },
+   {
+    "claim": "About 221 apartments",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://nzherald.co.nz/business/abandoned-57-level-seascape-china-construction-wins-right-to-enforce-33m-claim-against-shundi-customs/EKXFJYXRGRDYJG4TPD5Y5JJGPI"
+   },
+   {
+    "claim": "Builder dispute with China Construction NZ",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nzherald.co.nz/business/abandoned-57-level-seascape-china-construction-wins-right-to-enforce-33m-claim-against-shundi-customs/EKXFJYXRGRDYJG4TPD5Y5JJGPI"
+   },
+   {
+    "claim": "Icon engaged to take over the site (April 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nzherald.co.nz/property/relief-at-icon-finishing-abandoned-auckland-300m-seascape-apartment-tower/X4G3US2DQJBB3FRVAVAQFTYZXA"
+   },
+   {
+    "claim": "Work resumed and unsold units remarketed (January 2026)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.rnz.co.nz/news/top/583742/auckland-s-stalled-housing-developments-a-year-on-what-s-changed"
+   },
+   {
+    "claim": "Prices from NZD 970,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nzsothebysrealty.com/NZE11552"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Auckland, New Zealand (China-based parent Shundi Group)",
+   "developer_company": "Shundi Customs Limited, NZ Company No. 5342341, NZBN 9429041299692 (in receivership and administration)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Receivers' first report (Calibre Partners) public",
+   "construction_start": "2017",
+   "handover_promised": "2026-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 970000,
+   "price_max": 24000000,
+   "currency": "NZD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Overseas buyers allowed under an Overseas Investment Office exemption for this development (most foreign buyers are otherwise barred from NZ homes)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "fitness centre",
+    "sky garden",
+    "retail and dining"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Auckland Council (resource and building consents)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.nzsothebysrealty.com/NZE11552",
+   "https://www.oneroof.co.nz/news/buyer-reserves-24m-super-penthouse-in-seascape-nz-s-tallest-tower-41682",
+   "https://nzherald.co.nz/business/abandoned-57-level-seascape-china-construction-wins-right-to-enforce-33m-claim-against-shundi-customs/EKXFJYXRGRDYJG4TPD5Y5JJGPI",
+   "https://www.rnz.co.nz/news/top/583742/auckland-s-stalled-housing-developments-a-year-on-what-s-changed",
+   "https://nzherald.co.nz/property/relief-at-icon-finishing-abandoned-auckland-300m-seascape-apartment-tower/X4G3US2DQJBB3FRVAVAQFTYZXA",
+   "https://thespinoff.co.nz/society/13-05-2026/some-ideas-for-the-seascape-ghost-tower-haunting-aucklands-skyline",
+   "https://www.interest.co.nz/sites/default/files/2026-05/653521E3ADF009DA9BF9F8DF187CBB5F.pdf",
+   "https://www.rnz.co.nz/news/business/588606/seascape-developer-shundi-customs-placed-in-receivership"
+  ]
+ },
+ {
+  "slug": "the-koro-fiji-nadi-bay-investments",
+  "name": "The Koro Fiji",
+  "developer": "Nadi Bay Investments Limited (Sharma Design Group)",
+  "area": "Martintar, Nadi",
+  "country": "Fiji",
+  "market": "Fiji",
+  "stage": "off-plan",
+  "url": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "90 strata apartments plus 210-room hotel in two 12-storey towers",
+   "apartments from FJD 850,000",
+   "construction start Q2 2026, completion Q4 2028",
+   "apartment management by Toto & Co of Brisbane",
+   "no developer website found"
+  ],
+  "note": "Two 12-storey towers in Nadi's Martintar district with 90 strata apartments (from FJD 850,000) and a 210-room hotel, launched by Fiji's Deputy Prime Minister in October 2025 with strata sales opened and Brisbane-based Toto & Co named to manage the apartments. Construction was due to start Q2 2026 for Q4 2028 completion; no approvals, plans, deposit terms or construction updates are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 850000,
+   "currency": "FJD",
+   "title": "strata title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 90,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Architect says 'design approvals' obtained over seven years and project is shovel-ready; no approval reference published",
+   "escrow": "Nothing published",
+   "progress": "Only planned start date (Q2 2026); no evidence construction began",
+   "plans": "None published",
+   "record": "No completed projects named for Nadi Bay Investments",
+   "returns": "Professional management mentioned, no yields or guarantees"
+  },
+  "positives": [
+   "Launch covered by government and national media",
+   "Prices and timeline stated publicly at launch",
+   "Named external apartment manager"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project launched October 2025 by Deputy Prime Minister",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON"
+   },
+   {
+    "claim": "Developer Nadi Bay Investment(s) Limited",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON"
+   },
+   {
+    "claim": "90 strata apartments and 210 hotel rooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.fijivillage.com/news/270M-boost-for-Fijis-economy-with-launch-of-The-Koro-Fiji-and-Tabua-Tower-5fx4r8/"
+   },
+   {
+    "claim": "Design approvals obtained, shovel-ready",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fbcnews.com.fj/?p=749184"
+   },
+   {
+    "claim": "Construction starts Q2 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "Completion Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "Apartments from FJD 850,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "Hotel rooms total 450 across both projects (listed rooms add to 330)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "Foreigners can buy strata units (Fiji rules)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/50365/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Fiji",
+   "developer_company": "Nadi Bay Investments Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 850000,
+   "price_max": null,
+   "currency": "FJD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can buy freehold outside town boundaries and strata units in some developments; land over one acre needs Land Sales Act consent; iTaukei and state land only leasable (OneRoof guide)",
+   "rental_programme": "Apartments to be professionally managed (Toto & Co, Brisbane); no figures",
+   "service_charge": null,
+   "brand": "International 3-4 star hotel brand (unnamed)",
+   "amenities": [
+    "hotel facilities",
+    "convention facilities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Nadi Town Council / Director of Town and Country Planning",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines",
+   "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON",
+   "https://www.fijivillage.com/news/270M-boost-for-Fijis-economy-with-launch-of-The-Koro-Fiji-and-Tabua-Tower-5fx4r8/",
+   "https://www.fbcnews.com.fj/?p=749184",
+   "https://www.oneroof.co.nz/news/50365/"
+  ]
+ },
+ {
+  "slug": "paradiso-place-spg-land",
+  "name": "Paradiso Place",
+  "developer": "SPG Land",
+  "area": "Surfers Paradise (103 Ferny Avenue)",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "stage": "under construction",
+  "url": "https://www.apartments.com.au/developers/spg-land",
+  "docs_url": "https://www.apartments.com.au/developers/spg-land",
+  "permit_number": null,
+  "docs_listed": [
+   "845 apartments in three towers (40, 41, 44 storeys)",
+   "prices from AUD 825,000 (1BR) and AUD 1.24m (2BR) in July 2026 coverage",
+   "early works progress: 8 of 112 piles, first concrete 15 June 2026",
+   "stage 1 completion end of 2029",
+   "in-house builder SPG Built with Eastview Australia"
+  ],
+  "note": "Three-tower, 845-apartment precinct on a 1.15 ha city block by Shanghai-headquartered SPG Land; first stages were sold from late 2021 but construction only began in 2026, with stage 1 now due by end 2029. Early-works progress figures are published, but no DA number, deposit arrangement or floor plans; built by the developer's own new construction arm (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 825000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Brooke Residences (95 residences) and Cambridge Residences, Robina, listed as complete on developer's apartments.com.au profile",
+   "units": 845,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trade press says project approved about four years before June 2025; no City of Gold Coast DA number published",
+   "escrow": "No deposit holding statement",
+   "progress": "Dated early-works figures: 8 of 112 piles complete, first concrete poured 15 June 2026",
+   "plans": "No floor plans found",
+   "record": "Brooke Residences (95 units) and Cambridge Residences in Robina listed as complete",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Specific early-works progress figures published",
+   "Developer has completed projects in Robina",
+   "Several developer entities registered in Queensland"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started (dirt turned, reported 3 March 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+   },
+   {
+    "claim": "Project approved about four years before June 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+   },
+   {
+    "claim": "8 of 112 piles complete, first concrete 15 June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/spg-land-launches-1-5-billion-paradiso-place-at-attractive-price-point"
+   },
+   {
+    "claim": "Developer companies registered (SPG Land Australia Pty Ltd, SPG Land Paradise Pty Ltd)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=SPG%20Land"
+   },
+   {
+    "claim": "Stage 1 completion by end 2029",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+   },
+   {
+    "claim": "Unit count 792 at 2021 launch vs 845 now (plan revised, two storeys added per tower)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+   },
+   {
+    "claim": "Prices from AUD 550,000 (2021) vs AUD 825,000 (2026) vs AUD 915,000 (listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/spg-lands-paradiso-place-surfers-paradise-mega-apartment-development-set-to-launch"
+   },
+   {
+    "claim": "First two stages (about 260 units) sold out within 15 months of late-2021 launch",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+   },
+   {
+    "claim": "Brooke Residences and Cambridge Residences delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/developers/spg-land"
+   },
+   {
+    "claim": "Builder is in-house SPG Built with Eastview Australia",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Shanghai, China (Australian arm on the Gold Coast)",
+   "developer_company": "SPG Land Australia Pty Ltd, ABN 11 123 752 803; SPG Land Paradise Pty Ltd, ABN 51 639 033 748",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "sub-penthouse",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 825000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "retail precinct",
+    "skybridges between podiums",
+    "26th floor co-working space"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (Planning Act 2016, Queensland)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.apartments.com.au/developers/spg-land",
+   "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld",
+   "https://www.apartments.com.au/news/qld/spg-land-launches-1-5-billion-paradiso-place-at-attractive-price-point",
+   "https://www.apartments.com.au/news/qld/spg-lands-paradiso-place-surfers-paradise-mega-apartment-development-set-to-launch",
+   "https://www.apartments.com.au/news/qld/spg-land-sell-over-75-of-surfers-paradise-tower-paradiso-place",
+   "https://a-d.com.au/buying-living/market-insights/construction-begins-on-dollar15-billion-paradiso-place-set-to-transform-surfers-paradise-skyline",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=SPG%20Land",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "riverbank-residences-finbar",
+  "name": "Riverbank Residences",
+  "developer": "Finbar Group Limited",
+  "area": "Rivervale, Springs precinct (30-34 Riversdale Road)",
+  "country": "Australia",
+  "market": "Perth",
+  "stage": "under construction",
+  "url": "https://www.finbar.com.au/developments/riverbank-residences",
+  "docs_url": "https://www.finbar.com.au/developments/riverbank-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "143 apartments, 19 storeys plus roof deck",
+   "construction commenced October 2025, builder Hanssen",
+   "estimated completion mid-2027",
+   "sustainability targets: 8-star NatHERS average, Green Star Design",
+   "ASX investor presentations with presales"
+  ],
+  "note": "19-storey, 143-apartment riverfront tower by ASX-listed Finbar, approved by the Western Australian Planning Commission (announced to ASX March 2023) and under construction with Hanssen since October 2025 for mid-2027 completion; reported almost sold out. Prices, floor plans and deposit handling are not published on the developer page (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Finbar states Bel-Air Apartments was its 80th development (2026); completed Civic Heart, The Point, Aurora and AT238 in 2023-2024 (Finbar news page)",
+   "units": 143,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No approval number on developer page; WAPC approval announced to ASX on 23 Mar 2023",
+   "escrow": "No deposit holding information published",
+   "progress": "Dated update: construction commenced 7 Oct 2025 with Hanssen; status 'under construction'",
+   "plans": "No floor plans on developer page or portal",
+   "record": "Listed developer with dated completions (80 developments stated); FY2025 ASX presentation",
+   "returns": "No rental guarantee or yield marketing"
+  },
+  "positives": [
+   "ASX-listed developer with continuous disclosure of presales",
+   "Planning approval announced to the stock exchange",
+   "Named third-party builder (Hanssen)",
+   "WA statutory home warranty mentioned on portal"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "WAPC development approval for 19-storey, 143-apartment tower",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ca.marketscreener.com/quote/stock/FINBAR-GROUP-LIMITED-10353026/news/Finbar-Group-Limited-Receives-Approval-from-the-Western-Australian-Planning-Commission-for-the-Devel-43328928/"
+   },
+   {
+    "claim": "State design review consultation held for 143 apartments at 30-34 Riversdale Road",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://consultation.dplh.wa.gov.au/reform-design-state-assessment/rivervale-residential-apartments"
+   },
+   {
+    "claim": "Construction commenced October 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.finbar.com.au/post/finbar-commences-construction-at-riverbank-residences"
+   },
+   {
+    "claim": "28% presold before 30 Aug 2025 launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://clients3.weblink.com.au/pdf/FRI/02981146.pdf"
+   },
+   {
+    "claim": "Almost sold out (Nov 2025 ASX release)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://clients3.weblink.com.au/pdf/FRI/03018784.pdf"
+   },
+   {
+    "claim": "Developer company Finbar Group Limited registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Finbar%20Group%20Limited"
+   },
+   {
+    "claim": "Completion mid-2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.finbar.com.au/developments/riverbank-residences"
+   },
+   {
+    "claim": "Project value AUD 96m (2023 ASX) vs AUD 115m and AUD 118m (2025 posts)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://ca.marketscreener.com/quote/stock/FINBAR-GROUP-LIMITED-10353026/news/Finbar-Group-Limited-Receives-Approval-from-the-Western-Australian-Planning-Commission-for-the-Devel-43328928/"
+   },
+   {
+    "claim": "Building has 19 storeys (developer) vs 20 floors (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/riverbank-residences-30-riversdale-road-rivervale-wa-6103"
+   },
+   {
+    "claim": "Finbar completed 80 developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.finbar.com.au/blog/tags/project-news"
+   },
+   {
+    "claim": "Prior Springs precinct towers delivered (Spring View Towers 2014, Arbor North 2015, Riverena 2020, The Point 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/finbar-advances-perth-projects-spring-precinct-surges"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1995,
+   "developer_hq": "Perth (WA 6004), Australia",
+   "developer_company": "Finbar Group Limited, ABN 97 009 113 473",
+   "developer_projects_delivered": 80,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on ASX (FRI); FY2025 results presentation filed 21 Aug 2025",
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "resort-style roof deck",
+    "basement parking",
+    "public playground"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Western Australian Planning Commission (State Development Assessment Unit) / City of Belmont",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.finbar.com.au/developments/riverbank-residences",
+   "https://www.finbar.com.au/post/finbar-commences-construction-at-riverbank-residences",
+   "https://investors.finbar.com.au/activity-updates/ejogmr-finbar-commences-construction-at-riverbank-residences",
+   "https://www.finbar.com.au/blog/tags/project-news",
+   "https://clients3.weblink.com.au/pdf/FRI/02981146.pdf",
+   "https://clients3.weblink.com.au/pdf/FRI/03018784.pdf",
+   "https://ca.marketscreener.com/quote/stock/FINBAR-GROUP-LIMITED-10353026/news/Finbar-Group-Limited-Receives-Approval-from-the-Western-Australian-Planning-Commission-for-the-Devel-43328928/",
+   "https://consultation.dplh.wa.gov.au/reform-design-state-assessment/rivervale-residential-apartments",
+   "https://www.apartments.com.au/new-apartments/riverbank-residences-30-riversdale-road-rivervale-wa-6103",
+   "https://www.theurbandeveloper.com/articles/finbar-advances-perth-projects-spring-precinct-surges",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Finbar%20Group%20Limited",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
  }
 ]
