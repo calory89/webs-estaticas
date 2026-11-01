@@ -2,7 +2,22 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 100 features, 23 shipped, 10 building, every one tracked"
+  "t": "Public roadmap: 26 of 100 features shipped, every one tracked"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Market feeds: A feed per market of new projects and changes"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Stalled-site alerts: Alert when a site shows no change for months"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Portal verification badge: Listing portals show a live Kolaboro badge for each project"
  },
  {
   "d": "2026-11-01",
@@ -13,16 +28,6 @@
   "d": "2026-11-01",
   "k": "building",
   "t": "Building now: Total cost of ownership"
- },
- {
-  "d": "2026-11-01",
-  "k": "building",
-  "t": "Building now: Portal verification badge"
- },
- {
-  "d": "2026-11-01",
-  "k": "building",
-  "t": "Building now: Stalled-site alerts"
  },
  {
   "d": "2026-11-01",
