@@ -1,24 +1,157 @@
 [
- {"d": "2026-11-01", "k": "data", "t": "All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press"},
- {"d": "2026-11-01", "k": "data", "t": "Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found"},
- {"d": "2026-11-01", "k": "data", "t": "Thailand ONEP register: 2 condos found selling before environmental approval"},
- {"d": "2026-11-01", "k": "data", "t": "Mexico PROFECO contract register checks: one sales registration belonged to a laundry"},
- {"d": "2026-11-01", "k": "data", "t": "Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator"},
- {"d": "2026-11-01", "k": "feature", "t": "New stage filter: completed but still selling"},
- {"d": "2026-11-01", "k": "feature", "t": "Public database page: verification levels, disclosure distribution, every market"},
- {"d": "2026-11-01", "k": "data", "t": "+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia"},
- {"d": "2026-11-01", "k": "feature", "t": "Stage on every case: off-plan or under construction"},
- {"d": "2026-10-31", "k": "feature", "t": "Verification level per check on every case card: registry, independent, developer, contradicted"},
- {"d": "2026-10-31", "k": "feature", "t": "Daily research agent live: finds and checks new projects every day"},
- {"d": "2026-10-31", "k": "data", "t": "+100 projects in 30 new markets, all 6 checks researched"},
- {"d": "2026-10-31", "k": "feature", "t": "Security page: who sees your case, storage, retention, Bitcoin timestamps"},
- {"d": "2026-10-31", "k": "feature", "t": "Sample report: full-screen photo viewer, buyer to-do list, share with your lawyer"},
- {"d": "2026-10-31", "k": "feature", "t": "Free desk review result: share link and save as PDF"},
- {"d": "2026-10-30", "k": "data", "t": "228 projects in 27 countries with public disclosure scorecard and map"},
- {"d": "2026-10-30", "k": "feature", "t": "Evidence locker and document reader for 8 languages"},
- {"d": "2026-10-30", "k": "feature", "t": "Open metrics, pilot API and live video from site"},
- {"d": "2026-10-29", "k": "feature", "t": "Satellite watch: weekly Sentinel-2 images of project sites"},
- {"d": "2026-10-29", "k": "feature", "t": "Bitcoin-anchored evidence timestamps, anyone can verify at /verify"},
- {"d": "2026-10-28", "k": "feature", "t": "Client portal: every step of your case, messages and payment warnings"},
- {"d": "2026-10-28", "k": "feature", "t": "Automated agent onboarding: exam plus GPS test visit"}
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Open data API, no key: every project, market and the transparency index, JSON and CSV"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Chrome extension: check any off-plan project page in one click"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "A file for every project: six checks, verification levels and what changed on the developer's page"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Compare up to 4 projects side by side"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Plain-language search: try \"Bali under construction with permit\""
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Payment plan to your calendar, with a reminder 7 days before each payment"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Overdue watcher: months past the promised handover on every case"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Daily automatic quality check of every page on mobile and desktop"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "RSS and JSON feeds of everything we ship"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "data",
+  "t": "All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "data",
+  "t": "Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "data",
+  "t": "Thailand ONEP register: 2 condos found selling before environmental approval"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "data",
+  "t": "Mexico PROFECO contract register checks: one sales registration belonged to a laundry"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "data",
+  "t": "Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "New stage filter: completed but still selling"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Public database page: verification levels, disclosure distribution, every market"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "data",
+  "t": "+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Stage on every case: off-plan or under construction"
+ },
+ {
+  "d": "2026-10-31",
+  "k": "feature",
+  "t": "Verification level per check on every case card: registry, independent, developer, contradicted"
+ },
+ {
+  "d": "2026-10-31",
+  "k": "feature",
+  "t": "Daily research agent live: finds and checks new projects every day"
+ },
+ {
+  "d": "2026-10-31",
+  "k": "data",
+  "t": "+100 projects in 30 new markets, all 6 checks researched"
+ },
+ {
+  "d": "2026-10-31",
+  "k": "feature",
+  "t": "Security page: who sees your case, storage, retention, Bitcoin timestamps"
+ },
+ {
+  "d": "2026-10-31",
+  "k": "feature",
+  "t": "Sample report: full-screen photo viewer, buyer to-do list, share with your lawyer"
+ },
+ {
+  "d": "2026-10-31",
+  "k": "feature",
+  "t": "Free desk review result: share link and save as PDF"
+ },
+ {
+  "d": "2026-10-30",
+  "k": "data",
+  "t": "228 projects in 27 countries with public disclosure scorecard and map"
+ },
+ {
+  "d": "2026-10-30",
+  "k": "feature",
+  "t": "Evidence locker and document reader for 8 languages"
+ },
+ {
+  "d": "2026-10-30",
+  "k": "feature",
+  "t": "Open metrics, pilot API and live video from site"
+ },
+ {
+  "d": "2026-10-29",
+  "k": "feature",
+  "t": "Satellite watch: weekly Sentinel-2 images of project sites"
+ },
+ {
+  "d": "2026-10-29",
+  "k": "feature",
+  "t": "Bitcoin-anchored evidence timestamps, anyone can verify at /verify"
+ },
+ {
+  "d": "2026-10-28",
+  "k": "feature",
+  "t": "Client portal: every step of your case, messages and payment warnings"
+ },
+ {
+  "d": "2026-10-28",
+  "k": "feature",
+  "t": "Automated agent onboarding: exam plus GPS test visit"
+ }
 ]
