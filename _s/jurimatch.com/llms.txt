@@ -1,11 +1,11 @@
 # JuriMatch
 
-> Search engine for no-win-no-fee lawyers and litigation funders. 6,500 no-win-no-fee firms indexed in 133 countries, 202 hand-verified. JuriMatch is not a law firm and gives no legal advice.
+> Search engine for no-win-no-fee lawyers and litigation funders. 6,500+ no-win-no-fee firms indexed in 133 countries, 206 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
 ## Facts (as of 2026-11-01)
-- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,500
-- Firms whose fee terms our team checked by hand on their own website: 202
-- Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 26
+- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,501
+- Firms whose fee terms our team checked by hand on their own website: 206
+- Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 28
 - Cite as: JuriMatch directory, jurimatch.com, with the date above
 
 ## Key pages
@@ -19,6 +19,8 @@
 - [Conditional fee agreement (CFA) vs Damages-based agreement (DBA)](https://jurimatch.com/fees/cfa-vs-dba)
 - [Contingency fee vs Litigation funding](https://jurimatch.com/fees/contingency-fee-vs-litigation-funding)
 - [No win, no fee vs Hourly fees](https://jurimatch.com/fees/no-win-no-fee-vs-hourly-fees)
+- [Conditional fee agreement (CFA) vs After-the-event (ATE) insurance](https://jurimatch.com/fees/cfa-vs-ate-insurance)
+- [Contingency fee vs Fixed fee](https://jurimatch.com/fees/contingency-fee-vs-fixed-fee)
 - [Open data](https://jurimatch.com/open-data): hand-verified firms as CSV (CC BY 4.0)
 - [Free tools](https://jurimatch.com/tools): limitation deadline checker, case value calculator
 - [Limitation periods by country](https://jurimatch.com/tools/limitation-checker): one page per country
@@ -109,6 +111,7 @@
 - [Train delay compensation in the EU](https://jurimatch.com/tools/train-delay-compensation)
 - [Statutory redundancy pay in the UK](https://jurimatch.com/tools/uk-redundancy-pay)
 - [Which lawyer do I need?](https://jurimatch.com/tools/which-lawyer)
+- [Who pays the costs if you lose?](https://jurimatch.com/tools/who-pays-if-you-lose)
 
 ### Español
 - [Abogados que solo cobran si usted gana](https://jurimatch.com/es): home
