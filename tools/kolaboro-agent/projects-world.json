@@ -84339,6 +84339,628 @@
     "https://abr.business.gov.au/Search/ResultsActive?SearchText=Cedar%20Woods%20Properties",
     "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
    ]
+  },
+  {
+   "name": "Arya Lombok Residence (Mawi)",
+   "developer": "Arya Properties (founder and CEO Petr Hemerka)",
+   "area": "Mawi Beach, South Lombok",
+   "country": "Indonesia",
+   "market": "Lombok",
+   "stage": "under construction",
+   "url": "https://aryaproperties.com/project/mawi",
+   "docs_url": "https://aryaproperties.com/project/mawi",
+   "permit_number": null,
+   "seed": {
+    "price": 134990,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": 20,
+    "completion": "January 2027 (end of construction per developer timeline)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "20% average annual return of our investors (the meta description says up to 18% ROI)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://aryaproperties.com/project/mawi"
+    },
+    {
+     "claim": "Construction started January 2025, with dated progress updates for Mar, Apr, Aug and Sep 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://aryaproperties.com/project/mawi"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali (described as a Bali-based developer in a press release)",
+    "construction_start": "January 2025 (developer timeline)",
+    "handover_promised": "January 2027 (end of construction, developer timeline)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "villa",
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 134990,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Resort planned on 53,170 sqm at Mawi Beach. The developer shows dated site photo updates through September 2026. Site area, price from USD 134,990 and the 20% investor-return claim all come from the developer's own page. No permit number, escrow, floor plans or delivered-project list was seen. The Yahoo Finance page opened only showed its headline and dateline (an Aug 2025 newswire release), so it adds no independent verification.",
+   "positives": [
+    "Dated construction photo updates published for 2026 (Mar, Apr, Aug, Sep)",
+    "Developer timeline states construction start and an end date"
+   ],
+   "flags": [],
+   "sources": [
+    "https://aryaproperties.com/project/mawi",
+    "https://finance.yahoo.com/news/arya-properties-sets-standard-world-072500180.html",
+    "https://www.seascapelombok.com/villas"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-01",
+   "found_by": "discover-agent",
+   "slug": "arya-lombok-residence-mawi-lombok"
+  },
+  {
+   "name": "Marina Bay City (marketed as Nesara Bay City by LUX Property Group)",
+   "developer": "LUX Property Group (formerly LUX Projects Bali); purchase contracts are with PT Bali Real Estate Investments and PT Marina Bay Investments",
+   "area": "Sekotong, West Lombok",
+   "country": "Indonesia",
+   "market": "Lombok",
+   "stage": "under construction",
+   "url": "https://marinabay.city/",
+   "docs_url": "https://marinabay.city/construction-progress/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Construction is officially underway, with weekly updates (Week 6: construction commences; Week 9: resort villa construction begins)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://marinabay.city/construction-progress/"
+    },
+    {
+     "claim": "Projected 20 to 30% annual returns (marketing guide, not described as guaranteed)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinabay.city/construction-progress/"
+    },
+    {
+     "claim": "Villas sold at Marina Bay City have not been delivered and some lots' land was not settled",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinabaycity.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali (registered address given as Seminyak, Badung)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The marketing site shows ten weekly construction updates, all stamped 24 Aug 2026, and still sells Stage 1 villas. A second site, marinabaycity.com (last updated 23 Sep 2026), says purchased villas are undelivered. It also says LUX Property Group has now committed to build them, or give land of equal value to buyers who opt out. The two sites also dispute who controls the Marina Bay brand and domains, so treat this as high risk until checked with a lawyer.",
+   "positives": [
+    "Developer publishes weekly construction update posts with site photos"
+   ],
+   "flags": [],
+   "sources": [
+    "https://marinabay.city/construction-progress/",
+    "https://marinabaycity.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-01",
+   "found_by": "discover-agent",
+   "slug": "marina-bay-city-marketed-as-nesara-bay-city-by-lux-property"
+  },
+  {
+   "name": "VIMAE Palm View Kuta",
+   "developer": "Not named on the pages seen (marketed by SeaScape Lombok Properties)",
+   "area": "Hills of Kuta (listed under Mong), Central Lombok",
+   "country": "Indonesia",
+   "market": "Lombok",
+   "stage": "under construction",
+   "url": "https://www.seascapelombok.com/villas/vimae",
+   "docs_url": "https://www.seascapelombok.com/villas",
+   "permit_number": null,
+   "seed": {
+    "price": 139000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 7,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Boutique development of seven villas, 1 and 2 bedrooms, each with its own pool, from US$139,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.seascapelombok.com/villas/vimae"
+    },
+    {
+     "claim": "Project is under construction (agent list status 'CONSTRUCTION')",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.seascapelombok.com/villas"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 bedroom villa",
+     "2 bedroom villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 139000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Seven bamboo-style villas on the edge of Kuta town centre, designed for the short-term rental market. A third page (the agent's land list) shows a higher entry price (From 159,000, currency not shown), so confirm the price. The seascapelombok.com domain blocked direct fetch. I could only read search extracts of the agent pages and found no developer's own page, so the under-construction status rests on the agent's listing only.",
+   "positives": [
+    "Small project of seven villas",
+    "Each villa has a private pool and garden"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.seascapelombok.com/land",
+    "https://www.seascapelombok.com/villas",
+    "https://www.seascapelombok.com/villas/vimae"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-01",
+   "found_by": "discover-agent",
+   "slug": "vimae-palm-view-kuta-lombok"
+  },
+  {
+   "name": "Amani Villas (Central Kuta)",
+   "developer": "Not named on the pages seen (marketed by SeaScape Lombok Properties)",
+   "area": "Central Kuta, Central Lombok",
+   "country": "Indonesia",
+   "market": "Lombok",
+   "stage": "under construction",
+   "url": "https://www.seascapelombok.com/villas/amani",
+   "docs_url": "https://www.seascapelombok.com/villas",
+   "permit_number": null,
+   "seed": {
+    "price": 194000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 70,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 10,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Two villas are under construction and 70% complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.seascapelombok.com/villas/amani"
+    },
+    {
+     "claim": "Four 1-bedroom and six 2-bedroom villas on 2,500 sqm in central Kuta",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.seascapelombok.com/villas/amani"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 bedroom villa",
+     "2 bedroom villa"
+    ],
+    "size_min_m2": 72,
+    "size_max_m2": 101,
+    "price_min": 194000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ten villas planned, with lots of 125 to 135 sqm and a 72 sqm building size on the agent page. The 70% figure covers only the two villas under construction, not the whole project. The agent's list still tags the project OFF-PLAN, and the price shown is US$194,000. I found no developer's own page, and the domain blocked direct fetch, so this rests on search extracts of agent pages.",
+   "positives": [
+    "Agent page states a completion percentage for the two villas under construction"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.seascapelombok.com/villas",
+    "https://www.seascapelombok.com/villas/amani"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-01",
+   "found_by": "discover-agent",
+   "slug": "amani-villas-central-kuta-lombok"
+  },
+  {
+   "name": "Ashiyana Heights",
+   "developer": "Ashiyana Estates Co., Ltd. (portals also name Kata Heights Co., Ltd. as the project company)",
+   "area": "Kata, Karon Sub-district, Mueang Phuket",
+   "country": "Thailand",
+   "market": "Phuket",
+   "stage": "off-plan",
+   "url": "https://www.ashiyanaestates.com/ashiyana-heights.php",
+   "docs_url": "https://www.ashiyanaestates.com/ashiyana-heights.php",
+   "permit_number": null,
+   "seed": {
+    "price": 2990000,
+    "currency": "THB",
+    "title": "condominium; agents say freehold or leasehold",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q2/2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": 3,
+    "units": 131,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Single 7-storey building with 131 units, studio to 2-bedroom, 29.15 to 76.88 sqm, starting price THB 2.99M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ashiyanaestates.com/ashiyana-heights.php"
+    },
+    {
+     "claim": "Construction start Q3/2026, completion Q2/2028 (an agent earlier said construction would start Q2 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ashiyanaestates.com/ashiyana-heights.php"
+    },
+    {
+     "claim": "Developer has completed Splendid Condo (27 units) and two villa projects in Kata",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ashiyanaestates.com/developer.php"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "10/7 Soi Patak Soi 2, Karon, Mueang Phuket 83100",
+    "construction_start": "Q3/2026",
+    "handover_promised": "Q2/2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom",
+     "2-bedroom",
+     "2-bedroom pool access"
+    ],
+    "size_min_m2": 29.15,
+    "size_max_m2": 76.88,
+    "price_min": 2990000,
+    "price_max": 10614400,
+    "deposit_pct": null,
+    "foreign_ownership": "freehold within the foreign quota (stated by agents; not seen on the developer page)",
+    "rental_programme": null,
+    "lat": 7.8210095,
+    "lng": 98.3105771,
+    "permit_authority": null
+   },
+   "note": "Boutique 131-unit hillside condo near Kata Beach. The developer publishes floor plans for every floor and each unit type, but no permit number, escrow wording or build progress. Portals disagree on stage (some say under construction, one says completed), so confirm the site status.",
+   "positives": [
+    "Floor plans per floor and per unit type published on the developer site",
+    "Developer lists three completed Kata projects",
+    "No guaranteed-return language seen"
+   ],
+   "flags": [],
+   "sources": [
+    "https://homeinphuket.com/development/ashiyana-heights",
+    "https://kcaprealty.com/property/ashiyana-heights/",
+    "https://kellerhenson.com/blog/phuket-new-developments",
+    "https://kellerhenson.com/project/ashiyana-heights",
+    "https://lazudi.com/th-en/phuket/project/ashiyana-heights-16239",
+    "https://phuketbuyhouse.com/buy/tags/901-ashiyana-heights-kata-mueang-phuket-district-phuket",
+    "https://propertyscout.co.th/en/project/phuket/",
+    "https://stormphuket.com/properties-for-sale-in-phuket/ashiyana-heights-1-bedroom-mountain-view-kata-beach-condo/",
+    "https://www.ashiyanaestates.com/ashiyana-heights.php",
+    "https://www.ashiyanaestates.com/developer.php"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-01",
+   "found_by": "discover-agent",
+   "slug": "ashiyana-heights-phuket"
+  },
+  {
+   "name": "ETRO Residences Phuket (Gardens of Eden)",
+   "developer": "Amal Development Co., Ltd.",
+   "area": "Bang Tao, Choeng Thale, Thalang",
+   "country": "Thailand",
+   "market": "Phuket",
+   "stage": "off-plan",
+   "url": "https://etroresidencesphuket.com/",
+   "docs_url": "https://etroresidencesphuket.com/residences",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 8,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Eight residences: 3-bedroom apartments of about 222 sqm and penthouses of about 438 sqm",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://brandedresi.com/etro-branded-residences-phuket/"
+    },
+    {
+     "claim": "Launch on 10 January 2026 at THB 830,000 per sqm, described as an island record",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thethaiger.com/thai-life/property/etro-residences-phuket-hits-830000-thai-baht-per-square-metre-shattering-island-sales-records"
+    },
+    {
+     "claim": "Project set to complete in 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://amazingarchitecture.com/news/etro-unveils-etro-residences-phuket-its-first-branded-residence-project-in-southeast-asia"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Phuket, Thailand",
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-bedroom apartment",
+     "penthouse"
+    ],
+    "size_min_m2": 222,
+    "size_max_m2": 438,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "ETRO's first branded residence in Southeast Asia: 8 homes inside the Gardens of Eden estate, 50 m from Bang Tao Beach, launched January 2026. The developer site gives no price, permit number, escrow wording, plans or progress, and I could not verify the developer's delivered projects.",
+   "positives": [
+    "Very small, limited-edition collection of 8 homes",
+    "Large low-density estate with about 70% of the land given to parks, lakes and gardens (developer claim)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://amazingarchitecture.com/news/etro-unveils-etro-residences-phuket-its-first-branded-residence-project-in-southeast-asia",
+    "https://brandedresi.com/etro-branded-residences-phuket/",
+    "https://brandedresi.com/etro-to-launch-exclusive-branded-residences-in-phukets-gardens-of-eden/",
+    "https://caffeinespots.com/news/phuket-branded-residence-market/",
+    "https://etroresidencesphuket.com/",
+    "https://thethaiger.com/thai-life/property/etro-residences-phuket-hits-830000-thai-baht-per-square-metre-shattering-island-sales-records",
+    "https://us.fashionnetwork.com/news/Etro-to-develop-luxury-residences-in-phuket,1719321.html",
+    "https://www.onirogroup.it/en/interior-design-service/branded-projects/etro-residences-phuket"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-01",
+   "found_by": "discover-agent",
+   "slug": "etro-residences-phuket-gardens-of-eden-phuket"
   }
  ]
 }

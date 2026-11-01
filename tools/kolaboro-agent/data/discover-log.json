@@ -17,5 +17,30 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-01",
+  "calls": 2,
+  "usd": 2.315,
+  "searches": 12,
+  "added": 6,
+  "rejected": {
+   "duplicate": 1
+  },
+  "markets": [
+   "Lombok",
+   "Phuket"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "arya-lombok-residence-mawi-lombok",
+   "marina-bay-city-marketed-as-nesara-bay-city-by-lux-property",
+   "vimae-palm-view-kuta-lombok",
+   "amani-villas-central-kuta-lombok",
+   "ashiyana-heights-phuket",
+   "etro-residences-phuket-gardens-of-eden-phuket"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]
