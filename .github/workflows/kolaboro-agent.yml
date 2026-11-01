@@ -6,7 +6,7 @@ on:
     - cron: '17 6 * * 1'
   push:
     branches: [main]
-    paths: ['tools/kolaboro-agent/projects.json', 'tools/kolaboro-agent/projects-world.json']
+    paths: ['tools/kolaboro-agent/projects.json', 'tools/kolaboro-agent/projects-world.json', 'tools/kolaboro-agent/ships.json']
   workflow_dispatch:
     inputs:
       max_calls:

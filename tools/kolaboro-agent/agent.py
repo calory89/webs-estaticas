@@ -282,7 +282,31 @@ def public_cases(projects, latest):
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
     res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
     res['db'] = db_stats(projects, out)
+    res['ships'] = ships()
     return res
+
+def ships(limit=40):
+    """Public shipping log: curated entries (ships.json) plus one line per day from the discovery agent."""
+    out = []
+    try:
+        out = [x for x in json.load(open(os.path.join(HERE, 'ships.json'))) if x.get('d') and x.get('t')]
+    except Exception:
+        pass
+    try:
+        for r in json.load(open(os.path.join(DATA, 'discover-log.json'))):
+            n = int(r.get('added') or 0)
+            if n > 0 and r.get('date'):
+                mk = ', '.join((r.get('markets') or [])[:3])
+                out.append({'d': r['date'], 'k': 'auto', 't': '+%d new project%s found and checked by the daily research agent%s' % (n, '' if n == 1 else 's', (' (' + mk + ')') if mk else '')})
+    except Exception:
+        pass
+    seen = set(); res = []
+    for x in sorted(out, key=lambda x: x['d'], reverse=True):
+        key = (x['d'], x['t'])
+        if key not in seen:
+            seen.add(key); res.append({'d': x['d'], 'k': x.get('k') or 'feature', 't': x['t']})
+    return res[:limit]
+
 
 def main():
     public_out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA, 'public-bali-claims.json')
