@@ -1,0 +1,1703 @@
+[
+ {
+  "slug": "baccarat-residences-miami-related-group",
+  "name": "Baccarat Residences Miami",
+  "developer": "Related Group with GTIS Partners (DBPR condo filer: 444 Brickell One LLC)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Brickell (99 SE 5th Street / 444 Brickell Avenue)",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://floridayimby.com/category/99-southeast-5th-street",
+  "docs_url": "https://baccaratresidences.miami/residences",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 324 tower residences from level 15, 8 penthouses, 28 riverfront flats and duplexes",
+   "developer: residence specification list and amenity list",
+   "news: master building permit issued by City of Miami (2024)",
+   "news: USD 328M construction loan, over 95% sold (Florida YIMBY)",
+   "news: 40 of 75 floors built by 13 Mar 2026",
+   "registry: DBPR developer filing PR77172 '444 Brickell One Condo'"
+  ],
+  "note": "75-storey Baccarat-branded condo tower by Related Group and GTIS Partners at the mouth of the Miami River; Florida YIMBY reports a master building permit, a USD 328M construction loan, over 95% sold and structure past floor 40 in March 2026, with completion targeted for early 2028. The condo is filed with Florida DBPR as 444 Brickell One Condo (PR77172). No permit number, deposit escrow details or prices on the developer site. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1000000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Related Group delivered many Miami condo towers (LuxuryDade: more Miami condo units than any other developer); not itemised on the project site",
+   "units": 360,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida YIMBY reports a master building permit issued by Miami's Building Department (July 2024) and the 2022 vertical permit filing by 444 Brickell Partners LLC; no permit number published by the developer",
+   "escrow": "Nothing on the developer site; Florida condo law requires deposit escrow but the project does not publish its escrow agent",
+   "progress": "Florida YIMBY (via news coverage and LinkedIn repost of the 13 Mar 2026 article): 40 of 75 floors; foundation poured Aug 2024",
+   "plans": "Developer residences page describes flow-through layouts but no floor plan files were found",
+   "record": "Related Group is a long-established Miami condo developer; LuxuryDade agency guide states its record, project site lists none",
+   "returns": "No rental guarantee or yield on the developer site"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Condominium filed with Florida DBPR by 444 Brickell One LLC (project PR77172)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Master building permit issued by City of Miami Building Department",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/category/99-southeast-5th-street"
+   },
+   {
+    "claim": "Vertical permit application filed March 2022 by 444 Brickell Partners LLC, construction cost USD 241.6M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2022/06/foundation-permit-issued-for-47-story-residential-tower-at-77-se-5th-street-in-brickell.html"
+   },
+   {
+    "claim": "USD 328M construction loan secured",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/category/99-southeast-5th-street"
+   },
+   {
+    "claim": "Over 95% of residences sold since late-2021 launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/category/99-southeast-5th-street"
+   },
+   {
+    "claim": "Foundation poured August 2024 (10,000+ cubic yards)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/category/john-moriarty-associates"
+   },
+   {
+    "claim": "Structure at 40 of 75 floors (Mar 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.linkedin.com/posts/oscarnunez34_construction-has-reached-the-40-story-mark-activity-7438238235165827072-mTyD"
+   },
+   {
+    "claim": "Completion early 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/category/99-southeast-5th-street"
+   },
+   {
+    "claim": "360 residences (324 tower, 8 penthouses, 28 flats/duplexes)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baccaratresidences.miami/residences"
+   },
+   {
+    "claim": "Prices from USD 1M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurydade.com/blog/brickell-pre-construction-condos-complete-guide-2026"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.baccaratresidencesmiami.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "444 Brickell One LLC (DBPR filer); 444 Brickell Partners LLC (permit owner)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-08",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "tower residence",
+    "penthouse",
+    "riverfront flat",
+    "duplex"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1000000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no restriction on foreign buyers in Florida",
+   "rental_programme": "None stated; managed by SH Hotels & Resorts",
+   "service_charge": null,
+   "brand": "Baccarat (SH Hotels & Resorts)",
+   "amenities": [
+    "12th-level pool deck",
+    "Baccarat spa / hammam",
+    "fitness centre",
+    "Grand Salon",
+    "screening room",
+    "private marina",
+    "waterfront restaurant",
+    "riverwalk gardens"
+   ],
+   "lat": 25.769,
+   "lng": -80.19,
+   "permit_authority": "City of Miami Building Department; Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Florida DBPR condo filing on record (PR77172)",
+   "Construction loan of USD 328M reported, structure past midpoint",
+   "Large, established Miami developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.baccaratresidencesmiami.com/",
+   "https://baccaratresidences.miami/residences",
+   "https://baccaratresidences.miami/amenities",
+   "https://floridayimby.com/category/99-southeast-5th-street",
+   "https://floridayimby.com/category/john-moriarty-associates",
+   "https://floridayimby.com/2022/06/foundation-permit-issued-for-47-story-residential-tower-at-77-se-5th-street-in-brickell.html",
+   "https://www.linkedin.com/posts/oscarnunez34_construction-has-reached-the-40-story-mark-activity-7438238235165827072-mTyD",
+   "https://luxurydade.com/blog/brickell-pre-construction-condos-complete-guide-2026",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+  ]
+ },
+ {
+  "slug": "residences-1428-brickell-ytech",
+  "name": "The Residences at 1428 Brickell",
+  "developer": "Ytech (DBPR condo filer: Ytech 1428 Brickell LLC)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Brickell (1428 Brickell Avenue)",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://floridayimby.com/2026/09/1428-brickell-continues-ascent-into-miamis-brickell-skyline.html",
+  "docs_url": "https://1428brickell.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 195 residences, 2 to 4 bedrooms, 80,000 sq ft amenities",
+   "developer: 'under construction, going vertical, funded by J.P. Morgan'",
+   "developer: construction footage on the official site; LinkedIn updates (Level 25 Sep 2026, past Level 27 Oct 2026)",
+   "news: USD 565M construction loan from J.P. Morgan and Sculptor (Nov 2025)",
+   "registry: DBPR developer filing PR77353 '1428 Brickell Condo'"
+  ],
+  "note": "70-storey, 195-unit tower by Ytech with interiors by Antonio Citterio Patricia Viel; mat foundation poured Sept 2025, Level 27 reached by Oct 2026, completion targeted late 2028, financed by a USD 565M J.P. Morgan and Sculptor construction loan. Filed with Florida DBPR as 1428 Brickell Condo (PR77353). No permit number, escrow agent or floor plans on the official site. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2300000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 195,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on the official site; DBPR condo filing exists (PR77353) but that is a condo registration, not a building permit",
+   "escrow": "Not stated on the official site",
+   "progress": "Developer LinkedIn: Level 25 (1 Sep 2026), past Level 27 (6 Oct 2026); Florida YIMBY 3 Sep 2026 confirms Level 25 with site photos",
+   "plans": "Official site shows no downloadable floor plans; oftmw.com cites sizes of 1,800 to 4,000 sq ft",
+   "record": "Ytech site says founded 2006 and lists landmarks but names no completed condo towers with units delivered",
+   "returns": "No rental guarantee or yield language on the official site"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Condominium filed with Florida DBPR by Ytech 1428 Brickell LLC (PR77353)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "USD 565M construction financing from J.P. Morgan and Sculptor Real Estate",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/09/1428-brickell-continues-ascent-into-miamis-brickell-skyline.html"
+   },
+   {
+    "claim": "Mat foundation poured Sept 2025 (13,000 cubic yards, 33 hours)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/09/1428-brickell-continues-ascent-into-miamis-brickell-skyline.html"
+   },
+   {
+    "claim": "Structure at Level 25 of 70 (Sep 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/09/1428-brickell-continues-ascent-into-miamis-brickell-skyline.html"
+   },
+   {
+    "claim": "Past Level 27 and 'delivering on time' (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/ytech-international_1428brickell-constructionupdate-uncompromisingquality-activity-7513232375393390594-x__X"
+   },
+   {
+    "claim": "Completion late 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.groundbreak.city/miami/residences-1428-brickell-under-construction"
+   },
+   {
+    "claim": "More than 70% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/post/1428-brickell-s-sculptural-curves-are-taking-shape-as-ytech-s-tower-climbs-past-level-16/"
+   },
+   {
+    "claim": "195 residences of 2 to 4 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/09/1428-brickell-continues-ascent-into-miamis-brickell-skyline.html"
+   },
+   {
+    "claim": "Coastal Construction is general contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://own.miami/brickell/news/the-residences-at-1428-brickell-progresses-toward-2028-completion"
+   },
+   {
+    "claim": "Prices from USD 2.3M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurydade.com/blog/brickell-pre-construction-condos-complete-guide-2026"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://1428brickell.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Miami, USA",
+   "developer_company": "Ytech 1428 Brickell LLC (DBPR filer)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 167,
+   "size_max_m2": 1027,
+   "price_min": 2300000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no restriction on foreign buyers in Florida",
+   "rental_programme": "None; no hotel component",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "three pools",
+    "10,000 sq ft fitness and spa",
+    "Owners Club",
+    "rooftop observatory",
+    "wine and art lounge",
+    "cinema",
+    "guest suites",
+    "solar facade"
+   ],
+   "lat": 25.759,
+   "lng": -80.193,
+   "permit_authority": "City of Miami Building Department; Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Closed USD 565M construction loan from J.P. Morgan and Sculptor",
+   "Regular dated construction updates by the developer, confirmed by Florida YIMBY",
+   "DBPR condo filing on record"
+  ],
+  "flags": [],
+  "sources": [
+   "https://1428brickell.com/",
+   "https://ytech.com/",
+   "https://floridayimby.com/2026/09/1428-brickell-continues-ascent-into-miamis-brickell-skyline.html",
+   "https://own.miami/brickell/news/the-residences-at-1428-brickell-progresses-toward-2028-completion",
+   "https://www.oftmw.com/post/1428-brickell-s-sculptural-curves-are-taking-shape-as-ytech-s-tower-climbs-past-level-16/",
+   "https://www.groundbreak.city/miami/residences-1428-brickell-under-construction",
+   "https://www.linkedin.com/posts/ytech-international_1428brickell-constructionupdate-uncompromisingquality-activity-7513232375393390594-x__X",
+   "https://www.linkedin.com/posts/ytech-international_1428brickell-constructionupdate-uncompromisingquality-activity-7500651168100966401-BnXn",
+   "https://luxurydade.com/blog/brickell-pre-construction-condos-complete-guide-2026",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+  ]
+ },
+ {
+  "slug": "luna-marina-pointe-bti-partners",
+  "name": "Luna at Marina Pointe (Tower Two)",
+  "developer": "BTI Partners (developer entities Marina Pointe Central Developer, LLC and Marina Pointe West Developer, LLC)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Westshore Marina District",
+  "country": "USA",
+  "market": "Tampa",
+  "url": "https://www.prnewswire.com/news-releases/marina-pointes-luna-tower-offers-tampa-bay-waterfront-buyers-an-early-cycle-opportunity-in-a-community-already-alive-302705776.html",
+  "docs_url": "https://marinapointe.com/luna/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: pre-construction residences from USD 1M, 1,100 to 3,500 sq ft",
+   "developer: names the Florida Chapter 718 developer LLCs and refers buyers to the prospectus",
+   "developer: deeded deep-water boat slips available",
+   "news: 151 condos plus 7 Harbour Homes, Coastal Construction as contractor",
+   "registry: DBPR filings PR77461 (Central) and PR77533 (West); Tower One recorded as PR76765 (125 units, Nov 2022)"
+  ],
+  "note": "Second tower (17 floors, 151 condos) at BTI Partners' Marina Pointe on a private Tampa Bay peninsula; launched Nov 2025 from about USD 1M, with groundbreaking expected in 2026 and delivery estimated around end-2028. The first tower is finished and its condominium is recorded with Florida DBPR (125 units, Nov 2022), and the next towers are filed with DBPR. No permit number, escrow agent or floor plans are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1000000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Marina Pointe Tower One (118 condos and 7 Harbour Homes) completed May 2023; Florida DBPR shows Marina Pointe East condo recorded 18 Nov 2022 with 125 units",
+   "units": 151,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published",
+   "escrow": "Site and press release refer buyers to the prospectus; no escrow agent named publicly",
+   "progress": "No construction updates for Luna; oftmw.com lists groundbreaking expected 2026",
+   "plans": "No floor plans downloadable on the site",
+   "record": "Tower One recorded on DBPR condo register (PR76765, 125 units, recorded 11/18/2022); Construction Dive and Florida YIMBY report Tower One completed May 2023",
+   "returns": "No rental guarantee or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "registry",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer entities Marina Pointe Central Developer, LLC and Marina Pointe West Developer, LLC have condo filings with DBPR",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "First tower (Marina Pointe East) delivered and condominium recorded",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv"
+   },
+   {
+    "claim": "Tower One completed May 2023 (118 condos, 7 Harbour Homes)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.constructiondive.com/news/luxury-condo-tower-construction-tampa/723342/"
+   },
+   {
+    "claim": "Coastal Construction selected as contractor for next phases",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/07/general-contractor-selected-for-next-phases-of-marina-pointe-in-tampa-bays-westshore-marina-district.html"
+   },
+   {
+    "claim": "Tower Two construction to begin later in 2024",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.oftmw.com/projects/marina-pointe-luna/"
+   },
+   {
+    "claim": "Luna has 151 residences over 17 floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/07/general-contractor-selected-for-next-phases-of-marina-pointe-in-tampa-bays-westshore-marina-district.html"
+   },
+   {
+    "claim": "Prices from about USD 1M to over USD 4M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prnewswire.com/news-releases/marina-pointes-luna-tower-offers-tampa-bay-waterfront-buyers-an-early-cycle-opportunity-in-a-community-already-alive-302705776.html"
+   },
+   {
+    "claim": "Private marina is fully operational",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prnewswire.com/news-releases/marina-pointes-luna-tower-offers-tampa-bay-waterfront-buyers-an-early-cycle-opportunity-in-a-community-already-alive-302705776.html"
+   },
+   {
+    "claim": "Completion around December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/marina-pointe-luna/"
+   },
+   {
+    "claim": "Building permit issued for Luna",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinapointe.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Fort Lauderdale, USA",
+   "developer_company": "Marina Pointe Central Developer, LLC (DBPR PR77461); Marina Pointe West Developer LLC (PR77533)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 125,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "Harbour Home"
+   ],
+   "size_min_m2": 102,
+   "size_max_m2": 325,
+   "price_min": 1000000,
+   "price_max": 4000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no restriction on foreign buyers in Florida",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "150-slip private marina",
+    "deeded boat slips",
+    "resort pool",
+    "fitness centre",
+    "24-hour concierge",
+    "golf simulator",
+    "waterfront promenade"
+   ],
+   "lat": 27.886,
+   "lng": -82.537,
+   "permit_authority": "City of Tampa; Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer already delivered Tower One in the same community, recorded with DBPR",
+   "Developer entities named and condo filings on record",
+   "Marina and town centre already operating"
+  ],
+  "flags": [],
+  "sources": [
+   "https://marinapointe.com/",
+   "https://marinapointe.com/luna/",
+   "https://marinapointe.com/phase-2-of-marina-pointe-in-westshore-marina-district-tampa-bay-florida/",
+   "https://www.prnewswire.com/news-releases/marina-pointes-luna-tower-offers-tampa-bay-waterfront-buyers-an-early-cycle-opportunity-in-a-community-already-alive-302705776.html",
+   "https://www.oftmw.com/projects/marina-pointe-luna/",
+   "https://www.constructiondive.com/news/luxury-condo-tower-construction-tampa/723342/",
+   "https://floridayimby.com/2024/07/general-contractor-selected-for-next-phases-of-marina-pointe-in-tampa-bays-westshore-marina-district.html",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv"
+  ]
+ },
+ {
+  "slug": "3300-gulf-shore-kolter-urban",
+  "name": "3300 Gulf Shore",
+  "developer": "Kolter Urban (DBPR condo filer: KT Gulf Shore LLC)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Gulf Shore Boulevard North / Doctors Bay",
+  "country": "USA",
+  "market": "Naples",
+  "url": "https://www.gulfshorebusiness.com/gb-daily/bcbe-selected-to-build-naples-luxury-condo-project/article_8153966e-78da-4729-8e2e-108c409fc3e1.html",
+  "docs_url": "https://3300gulfshore.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: residences section and floor plans behind an enquiry form",
+   "developer: 'Construction Updates & News' section (no dated content seen)",
+   "news: 51 residences in two 8-storey towers, from USD 3.7M, 2,000 to 7,500 sq ft",
+   "news: groundbreaking Jan 2026; seawall complete and foundations started (Jun 2026)",
+   "news: BCBE Construction is general contractor",
+   "registry: DBPR developer filing PR77751 '3300 Gulf Shore, a Condo' by KT Gulf Shore LLC"
+  ],
+  "note": "Boutique 51-residence, two-tower waterfront condo by Kolter Urban on a 3.07-acre site bought for USD 92.5M in 2025; prices from USD 3.7M. Ground was broken in January 2026 and Gulfshore Business reported in June 2026 that the seawall is complete and foundations have started; Florida YIMBY gave late 2027 as the completion target. The condo is filed with Florida DBPR (PR77751), and Kolter's earlier Saltaire and BAYSO condos are recorded there as completed. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 3700000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Kolter Urban: Saltaire, St. Petersburg (192 units, condo recorded Aug 2023) and BAYSO, Sarasota (150 units, recorded Oct 2023) per Florida DBPR; Kolter site reports Saltaire complete",
+   "units": 51,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published by Kolter or in news",
+   "escrow": "Not stated on the project site",
+   "progress": "Gulfshore Business (9 Jun 2026): groundbreaking in January, seawall complete, foundation work begun",
+   "plans": "Floor plans are only sent after an enquiry form; none published openly",
+   "record": "DBPR condo register: Saltaire (PR76907, 192 units, recorded 08/04/2023, filer KT Bayshore LLC) and BAYSO (PR77055, 150 units, recorded 10/24/2023, filer KT Sarasota Quay LLC)",
+   "returns": "No rental guarantee or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "registry",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Condo filed with DBPR by KT Gulf Shore LLC (PR77751)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Kolter delivered Saltaire (192 units) in St. Petersburg",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv"
+   },
+   {
+    "claim": "Kolter delivered BAYSO Sarasota (150 units)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv"
+   },
+   {
+    "claim": "Site bought for USD 92.5M in early 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2025/05/construction-to-start-on-51-unit-condo-by-years-end-at-3300-gulf-shore-blvd-north-naples-florida-34103.html"
+   },
+   {
+    "claim": "Construction to start October 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.gulfshorebusiness.com/gb-daily/bcbe-selected-to-build-naples-luxury-condo-project/article_8153966e-78da-4729-8e2e-108c409fc3e1.html"
+   },
+   {
+    "claim": "Groundbreaking January 2026, seawall complete, foundations started",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfshorebusiness.com/gb-daily/bcbe-selected-to-build-naples-luxury-condo-project/article_8153966e-78da-4729-8e2e-108c409fc3e1.html"
+   },
+   {
+    "claim": "BCBE Construction is general contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfshorebusiness.com/gb-daily/bcbe-selected-to-build-naples-luxury-condo-project/article_8153966e-78da-4729-8e2e-108c409fc3e1.html"
+   },
+   {
+    "claim": "51 residences, from USD 3.7M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://southfloridaagentmagazine.com/2026/02/10/kolter-urban-3300-gulf-shore/"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/2025/05/construction-to-start-on-51-unit-condo-by-years-end-at-3300-gulf-shore-blvd-north-naples-florida-34103.html"
+   },
+   {
+    "claim": "Private marina with 16 boat slips",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gulfshorebusiness.com/gb-daily/bcbe-selected-to-build-naples-luxury-condo-project/article_8153966e-78da-4729-8e2e-108c409fc3e1.html"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://3300gulfshore.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Delray Beach, USA",
+   "developer_company": "KT Gulf Shore LLC (DBPR PR77751)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-01",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "penthouse"
+   ],
+   "size_min_m2": 186,
+   "size_max_m2": 697,
+   "price_min": 3700000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no restriction on foreign buyers in Florida",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "16-slip private marina",
+    "sunrise and sunset pools",
+    "wellness centre",
+    "fitness",
+    "concierge"
+   ],
+   "lat": 26.183,
+   "lng": -81.807,
+   "permit_authority": "City of Naples; Florida DBPR (condo filing)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer's prior Florida condos recorded as completed on the DBPR register",
+   "Groundbreaking and foundation progress reported by local business press",
+   "Named general contractor"
+  ],
+  "flags": [],
+  "sources": [
+   "https://3300gulfshore.com/",
+   "https://www.kolterurban.com/",
+   "https://southfloridaagentmagazine.com/2026/02/10/kolter-urban-3300-gulf-shore/",
+   "https://floridayimby.com/2025/05/construction-to-start-on-51-unit-condo-by-years-end-at-3300-gulf-shore-blvd-north-naples-florida-34103.html",
+   "https://www.gulfshorebusiness.com/gb-daily/bcbe-selected-to-build-naples-luxury-condo-project/article_8153966e-78da-4729-8e2e-108c409fc3e1.html",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv"
+  ]
+ },
+ {
+  "slug": "hilton-residences-abu-dhabi-al-raha-emirates-developments",
+  "name": "Hilton Residences Abu Dhabi Al Raha",
+  "developer": "Emirates Developments (registered developer: Emirates Limited Investment & Development Company - Sole Proprietorship L.L.C.)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Al Raha Beach (Plot 11, zone RBW4)",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://www.propertyfinder.ae/en/new-projects/emirates-limited-investment-development/hilton-residences-abu-dhabi-al-raha",
+  "docs_url": "https://adxinteract.com/abu-dhabi-new-projects/hilton-residences-abu-dhabi-al-raha",
+  "permit_number": "20250000742516 (ADREC project number)",
+  "docs_listed": [
+   "registry mirror: ADREC project no. 20250000742516, escrow bank Emirates NBD, registered 30 Jan 2026",
+   "registry: ADREC construction progress report 20 Oct 2026, 7.26% actual progress (inspected 15 Oct 2026 by ADCE)",
+   "registry mirror: 176 units, 134 sold, 42 available",
+   "portal: launch price AED 2.5M, 5/35/60 payment plan, handover Q4 2028",
+   "portal: floor plans per unit type and brochure"
+  ],
+  "note": "Hilton-branded residential building (2B+G+10) on Al Raha Beach by Emirates Developments. ADREC records (via ADX Interact) show project number 20250000742516, an Emirates NBD escrow account, 176 units with 134 sold, and an official inspection on 15 Oct 2026 measuring 7.26% progress, with construction scheduled 15 Jan 2026 to 31 Dec 2028. The developer's own track record is not documented. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2500000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "20250000742516 (ADREC project number)",
+   "plans_published": true,
+   "escrow": "Escrow bank Emirates NBD Bank PJSC (ADREC register via ADX Interact); account number not published",
+   "progress_pct": 7.26,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 176,
+   "payment_plan": "5% at launch, 35% during construction, 60% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ADREC project number 20250000742516 on ADX Interact and on the ADREC progress report PDF",
+   "escrow": "ADX Interact project info lists escrow bank Emirates NBD Bank PJSC",
+   "progress": "ADREC Construction Progress Report dated 20 Oct 2026: actual progress 7.26%, first report, site visit 15 Oct 2026 by Abu Dhabi Commercial Engineering Services",
+   "plans": "Property Finder project page shows floor plans for 1BR, 2BR, 4BR, 5BR penthouse and 3BR townhouse types",
+   "record": "No completed projects named by the developer or portals",
+   "returns": "No guaranteed return language on portal pages"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Project registered with ADREC as no. 20250000742516",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/hilton-residences-abu-dhabi-al-raha"
+   },
+   {
+    "claim": "Escrow account with Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/hilton-residences-abu-dhabi-al-raha"
+   },
+   {
+    "claim": "Registered developer is Emirates Limited Investment & Development Company",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE666/progress-reports/final/273662261377157.pdf"
+   },
+   {
+    "claim": "Construction progress 7.26% (Oct 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE666/progress-reports/final/273662261377157.pdf"
+   },
+   {
+    "claim": "Construction started 3 Feb 2026 (portal)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE666/progress-reports/final/273662261377157.pdf"
+   },
+   {
+    "claim": "Handover December 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE666/progress-reports/final/273662261377157.pdf"
+   },
+   {
+    "claim": "176 units, 134 sold",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/hilton-residences-abu-dhabi-al-raha"
+   },
+   {
+    "claim": "Main contractor Emirates Limited Contracting LLC (related company)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE666/progress-reports/final/273662261377157.pdf"
+   },
+   {
+    "claim": "Launch price from AED 2.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emirates-limited-investment-development/hilton-residences-abu-dhabi-al-raha"
+   },
+   {
+    "claim": "Developer has a proven track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emirates-limited-investment-development/hilton-residences-abu-dhabi-al-raha"
+   },
+   {
+    "claim": "Freehold for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emirates-limited-investment-development/hilton-residences-abu-dhabi-al-raha"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": "Emirates Limited Investment & Development Company - Sole Proprietorship L.L.C.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-01",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR penthouse",
+    "3BR townhouse"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 283,
+   "price_min": 2500000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/35/60",
+   "foreign_ownership": "Freehold (Al Raha is an investment zone open to foreigners)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Hilton Residences",
+   "amenities": [
+    "waterfront pool",
+    "gym",
+    "cinema",
+    "children's pool",
+    "leisure lounge",
+    "valet parking",
+    "24/7 concierge",
+    "BBQ area"
+   ],
+   "lat": 24.452,
+   "lng": 54.6,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow bank and ADREC project number on the official register",
+   "Independent engineering inspection with a measured progress figure",
+   "Floor plans published per unit type"
+  ],
+  "flags": [],
+  "sources": [
+   "https://adxinteract.com/abu-dhabi-new-projects/hilton-residences-abu-dhabi-al-raha",
+   "https://images.axdinteract.com/public/projects/prd/AE666/progress-reports/final/273662261377157.pdf",
+   "https://www.propertyfinder.ae/en/new-projects/emirates-limited-investment-development/hilton-residences-abu-dhabi-al-raha",
+   "https://abudhabi.dubizzle.com/new-projects/emirates-developments/hilton-residences-abu-dhabi/"
+  ]
+ },
+ {
+  "slug": "bayn-views-3-ora-developers",
+  "name": "Bayn - Views 3",
+  "developer": "ORA Developers (registered developer: ORA Q Development Limited - Abu Dhabi)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Ghantoot (plot C11)",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://www.engelvoelkers.com/ae/en/off-plan/bayn-by-ora",
+  "docs_url": "https://adxinteract.com/abu-dhabi-new-projects/bayn-views-3",
+  "permit_number": "20250000736301 (ADREC project number)",
+  "docs_listed": [
+   "registry mirror: ADREC project no. 20250000736301, escrow bank Banque Misr, registered 9 Feb 2026",
+   "registry: ADREC progress report 26 Oct 2026, 6.01% actual progress, construction 30 Jan 2026 to 31 Dec 2029",
+   "registry mirror: 160 villas in 7 typologies (3 to 6BR), 69 sold",
+   "portal: Bayn from AED 2.75M, 60/40 plan with 10% booking",
+   "news: AED 1.9bn main contract to Unec for 614 phase-one units (AGBI, Jun 2026)"
+  ],
+  "note": "160-villa sub-phase of Naguib Sawiris's ORA Developers' Bayn masterplan in Ghantoot, between Abu Dhabi and Dubai. ADREC records via ADX Interact show project number 20250000736301, a Banque Misr escrow account, 69 of 160 villas sold, and an official inspection report of 26 Oct 2026 with 6.01% progress and a construction end date of 31 Dec 2029. AGBI reported an AED 1.9bn contract to Unec for the first 614 Bayn homes. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2750000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "20250000736301 (ADREC project number)",
+   "plans_published": false,
+   "escrow": "Escrow bank Banque Misr (ADREC register via ADX Interact); account number not published",
+   "progress_pct": 6.01,
+   "progress_updates": true,
+   "developer_delivered": "ORA Developers: ZED communities (Sheikh Zayed City and East Cairo) and Silversands North Coast, as stated by the appointed sales agent betterhomes",
+   "units": 160,
+   "payment_plan": "60/40: 10% booking, 10% within two months, 40% during construction, 40% at handover (Y Views terms; Bayn generally 60/40)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ADREC project number 20250000736301 on ADX Interact and on the ADREC progress report",
+   "escrow": "ADX Interact lists escrow bank Banque Misr",
+   "progress": "ADREC Construction Progress Report 26 Oct 2026: 6.01% actual, 4.61% since last report; project manager Mace International",
+   "plans": "Unit sizes listed by Engel & Voelkers but no floor plans published",
+   "record": "betterhomes (appointed agent) lists ORA's delivered ZED and Silversands communities in Egypt; not checked against a registry",
+   "returns": "No guaranteed return language seen"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Registered with ADREC as project 20250000736301",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bayn-views-3"
+   },
+   {
+    "claim": "Escrow account with Banque Misr",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bayn-views-3"
+   },
+   {
+    "claim": "Construction 6.01% complete (Oct 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE646/progress-reports/final/406960240669198.pdf"
+   },
+   {
+    "claim": "Construction end date 31 Dec 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE646/progress-reports/final/406960240669198.pdf"
+   },
+   {
+    "claim": "Bayn handover 2028 (portal)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://images.axdinteract.com/public/projects/prd/AE646/progress-reports/final/406960240669198.pdf"
+   },
+   {
+    "claim": "160 villas, 69 sold",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/bayn-views-3"
+   },
+   {
+    "claim": "AED 1.9bn main contract awarded to Unec for first 614 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/unec-wins-500m-contract-for-uae-waterfront-project/"
+   },
+   {
+    "claim": "ORA bought additional 4.8M sq m from Modon to double the masterplan",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/unec-wins-500m-contract-for-uae-waterfront-project/"
+   },
+   {
+    "claim": "ORA founded by Naguib Sawiris",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/unec-wins-500m-contract-for-uae-waterfront-project/"
+   },
+   {
+    "claim": "Bayn prices from AED 2.75M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.engelvoelkers.com/ae/en/off-plan/bayn-by-ora"
+   },
+   {
+    "claim": "ORA delivered ZED and Silversands in Egypt",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bhomes.com/en/blog/market-news/ora-developers-to-launch-y-views-at-bayn-in-ghantoot-on-25-august"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "ORA Q Development Limited - Abu Dhabi (ADREC register)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-01",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa",
+    "6BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2750000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "60/40",
+   "foreign_ownership": "Freehold (per portals)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "1.2 km beachfront",
+    "lagoon",
+    "central parks"
+   ],
+   "lat": 24.85,
+   "lng": 54.85,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow bank and project number on the ADREC register",
+   "Independent ADREC-appointed inspection reports with measured progress",
+   "Main contractor award reported by independent press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://adxinteract.com/abu-dhabi-new-projects/bayn-views-3",
+   "https://images.axdinteract.com/public/projects/prd/AE646/progress-reports/final/406960240669198.pdf",
+   "https://www.engelvoelkers.com/ae/en/off-plan/bayn-by-ora",
+   "https://www.bhomes.com/en/blog/market-news/ora-developers-to-launch-y-views-at-bayn-in-ghantoot-on-25-august",
+   "https://www.agbi.com/real-estate/2026/06/unec-wins-500m-contract-for-uae-waterfront-project/"
+  ]
+ },
+ {
+  "slug": "lunara-on-the-strand-rak-properties",
+  "name": "Lunara on The Strand",
+  "developer": "RAK Properties PJSC (ADX: RAKPROP)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "The Strand, Marjan Beach District",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "url": "https://opr.ae/projects/lunara-the-strand-al-marjan-rak",
+  "docs_url": "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 583 homes in three connected towers, 1BR, 2BR and 3BR penthouse, from AED 1.28M",
+   "developer: construction start Q4 2026, handover Q1 2029",
+   "developer: listed on ADX (RAKPROP)",
+   "agency: 40/60 construction-linked plan, unit sizes 598 to 2,852 sq ft",
+   "registry: listed on RAK RERA updated off-plan project list under RAK Properties"
+  ],
+  "note": "Three-tower, 583-home first phase of RAK Properties' The Strand at Marjan Beach; sales opened 5 March 2026 from AED 1.28M, with construction due to start in Q4 2026 and handover in Q1 2029. The project appears on the RAK Municipality RERA off-plan project list under RAK Properties, an ADX-listed developer. No permit number, escrow bank or progress figures are published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1280000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "RAK Properties handed over Marbella Villas phase 1 on Hayat Island, Mina Al Arab (ME Construction News, Jan 2022)",
+   "units": 583,
+   "payment_plan": "40/60: 10% down, 5% every 3 months during construction, 60% on handover (agency)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project is on the RAK RERA off-plan list but no registration or permit number is published",
+   "escrow": "No escrow bank stated by developer or agency",
+   "progress": "Construction scheduled to start Q4 2026; no progress published",
+   "plans": "Agency lists unit sizes; no floor plans published",
+   "record": "ME Construction News (Jan 2022) reports handover of Marbella Villas by RAK Properties",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Project registered on RAK RERA off-plan project list under RAK Properties",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list"
+   },
+   {
+    "claim": "Developer is listed on ADX as RAKPROP",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/"
+   },
+   {
+    "claim": "583 homes in three towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/"
+   },
+   {
+    "claim": "Prices from AED 1.28M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/lunara-the-strand-al-marjan-rak"
+   },
+   {
+    "claim": "Construction start Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/"
+   },
+   {
+    "claim": "Handover Q1 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/"
+   },
+   {
+    "claim": "RAK Properties has delivered homes before (Marbella Villas handover)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://staging2.meconstructionnews.com/?p=50727"
+   },
+   {
+    "claim": "RAK Properties runs a large Mina pipeline (AED 5bn 2025 launches)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.arabianbusiness.com/gcc/uae/uae-real-estate-rak-properties-announces-massive-1-4bn-pipeline-introduces-mina-development-in-ras-al-khaimah"
+   },
+   {
+    "claim": "Deposits paid into escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/lunara-the-strand-al-marjan-rak"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ras Al Khaimah, UAE",
+   "developer_company": "RAK Properties PJSC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Abu Dhabi Securities Exchange, ticker RAKPROP (developer statement)",
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR + maid",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 56,
+   "size_max_m2": 265,
+   "price_min": 1280000,
+   "price_max": 5810000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "40/60",
+   "foreign_ownership": "Freehold (Marjan Beach is open to foreign buyers)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "14 retail units",
+    "8 F&B units",
+    "beachfront district"
+   ],
+   "lat": 25.68,
+   "lng": 55.75,
+   "permit_authority": "Ras Al Khaimah Municipality RERA",
+   "brochure_url": null
+  },
+  "positives": [
+   "On the RAK RERA off-plan register",
+   "Developer is a publicly listed company",
+   "Clear launch, construction start and handover dates stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/",
+   "https://opr.ae/projects/lunara-the-strand-al-marjan-rak",
+   "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list",
+   "https://staging2.meconstructionnews.com/?p=50727",
+   "https://www.arabianbusiness.com/gcc/uae/uae-real-estate-rak-properties-announces-massive-1-4bn-pipeline-introduces-mina-development-in-ras-al-khaimah"
+  ]
+ },
+ {
+  "slug": "fortune-bay-residences-topero",
+  "name": "Fortune Bay Residences",
+  "developer": "Topero Properties (RAK RERA developer name: TOPERO Properties LLC)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Al Marjan Island",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "url": "https://metropolitan.realestate/al-marjan-island/fortune-bay-residences",
+  "docs_url": "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "portal: launch price AED 2.5M (1BR), 2BR from AED 4.1M, 3BR from AED 7.7M",
+   "portal: construction start 17 Dec 2024, completion Dec 2026",
+   "portal: floor plan images per layout",
+   "agency: 180 units, 1 to 3 bedrooms",
+   "registry: listed on RAK RERA off-plan project list under TOPERO Properties LLC"
+  ],
+  "note": "Single-building apartment project of 180 units on Al Marjan Island by little-known Topero Properties, sold mainly through agencies from AED 2.5M with completion promised for December 2026. It appears on the RAK RERA off-plan project list, but no permit number, escrow bank, construction progress or developer track record is published, and agencies quote three different payment plans. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2500000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 180,
+   "payment_plan": "5% down, 45% during construction, 50% on handover (Property Finder); other agencies quote 5/65/30 and 70/30",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "On the RAK RERA off-plan list, but no registration or permit number published",
+   "escrow": "No escrow bank stated anywhere",
+   "progress": "Portal gives construction start date only; no progress figure or dated photos",
+   "plans": "Property Finder shows floor plan images per layout",
+   "record": "Metropolitan lists Fortune Bay as Topero's only project; no delivered projects found",
+   "returns": "No guaranteed return; everhomes calls it a 'high-return investment' with expected yields but no figure"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Project registered on RAK RERA off-plan list under TOPERO Properties LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list"
+   },
+   {
+    "claim": "Construction started 17 Dec 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences"
+   },
+   {
+    "claim": "Completion December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://everhomes.ae/off-plan/fortune-bay-residences"
+   },
+   {
+    "claim": "Payment plan 5/45/50",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://everhomes.ae/off-plan/fortune-bay-residences"
+   },
+   {
+    "claim": "Prices from AED 2.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences"
+   },
+   {
+    "claim": "Launch price averages AED 1.70M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://metropolitan.realestate/al-marjan-island/fortune-bay-residences"
+   },
+   {
+    "claim": "180 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metropolitan.realestate/al-marjan-island/fortune-bay-residences"
+   },
+   {
+    "claim": "Developer has a reputation for quality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "TOPERO Properties LLC (RAK RERA list)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-12",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 91,
+   "size_max_m2": 313,
+   "price_min": 2500000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/45/50 (portal)",
+   "foreign_ownership": "Freehold (Al Marjan Island is open to foreign buyers)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": 25.68,
+   "lng": 55.74,
+   "permit_authority": "Ras Al Khaimah Municipality RERA",
+   "brochure_url": null
+  },
+  "positives": [
+   "Appears on the RAK RERA off-plan project list",
+   "Floor plans shown per layout on the portal"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences",
+   "https://metropolitan.realestate/al-marjan-island/fortune-bay-residences",
+   "https://everhomes.ae/off-plan/fortune-bay-residences",
+   "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list"
+  ]
+ },
+ {
+  "slug": "pendry-residences-barbados-port-ferdinand",
+  "name": "Pendry Residences Barbados",
+  "developer": "Port Ferdinand SRL, Corsair Cove SRL and TROPOPS SRL (Pendry brand licensees; Pendry Hotels & Resorts, a Montage International brand)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Port Ferdinand, Six Men's, St. Peter",
+  "country": "Barbados",
+  "market": "Barbados",
+  "url": "https://barbadostoday.bb/2026/04/22/pendry-barbados-marks-milestone-as-luxury-resort-nears-completion/",
+  "docs_url": "https://www.pendryresidences.com/barbados/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 46 fully furnished residences from USD 2.725M, 'off-plan'",
+   "developer: legal entities named in disclaimer (Port Ferdinand SRL, Corsair Cove SRL, TROPOPS SRL)",
+   "developer: floor plans on request only",
+   "news: structure topped off April 2026, contractor Aecon, opening 2027",
+   "agency: unit table USD 2.725M to 4.95M, 2,363 to 4,565 sq ft, yacht berth included"
+  ],
+  "note": "46 branded residences and an 80-room Pendry resort with a 110-berth marina, redeveloping the Port Ferdinand marina site in St. Peter; Barbados Today reported the topping-off in April 2026 with Aecon as contractor and opening in 2027. The developer site names three Barbados SRL licensees and prices from USD 2.725M, but publishes no permit, escrow, progress figures or floor plans, and Pendry disclaims any guarantee. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2725000,
+   "currency": "USD",
+   "title": "freehold (Barbados permits foreign freehold ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 46,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning or building permit number published",
+   "escrow": "No deposit or escrow statement on the developer site",
+   "progress": "Barbados Today (22 Apr 2026): structure topped off, completion scheduled 2027; Hotel Management also reports topping-off",
+   "plans": "Floor plans only on request; agency site shows a unit table without plans",
+   "record": "Licensee entities named but no completed projects attributed to them; Pendry is the hotel brand, not the developer",
+   "returns": "No rental programme or guaranteed return stated; Pendry disclaims any guaranty about the units"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Structure topped off (April 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://barbadostoday.bb/2026/04/22/pendry-barbados-marks-milestone-as-luxury-resort-nears-completion/"
+   },
+   {
+    "claim": "Aecon Construction Group is main contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://barbadostoday.bb/2026/04/22/pendry-barbados-marks-milestone-as-luxury-resort-nears-completion/"
+   },
+   {
+    "claim": "Opening in 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://barbadostoday.bb/2026/04/22/pendry-barbados-marks-milestone-as-luxury-resort-nears-completion/"
+   },
+   {
+    "claim": "Resort slated to open 2026 (2024 announcement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://hotelsmag.com/news/pendry-unveils-first-international-resort-and-residences"
+   },
+   {
+    "claim": "46 residences, 2 to 5 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelmanagement.net/construction/pendry-hotels-resorts-tops-first-caribbean-resort"
+   },
+   {
+    "claim": "Prices from USD 2.725M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pendryresidences.com/barbados/"
+   },
+   {
+    "claim": "Starting price USD 2.9M (2025 launch)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://resident.com/amp/story/real-estate-news/2025/04/03/pendry-residences-barbados-debuts-as-islands-first-branded-marina-front-luxury-real-estate-offering"
+   },
+   {
+    "claim": "Units are new-build off-plan (agency listing gives completion June 2013, suggesting existing Port Ferdinand buildings)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.barbadospropertysearch.com/node/86100"
+   },
+   {
+    "claim": "Developer entities are Port Ferdinand SRL, Corsair Cove SRL and TROPOPS SRL",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pendryresidences.com/barbados/"
+   },
+   {
+    "claim": "Prime Minister attended topping-off ceremony",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://barbadostoday.bb/2026/04/22/pendry-barbados-marks-milestone-as-luxury-resort-nears-completion/"
+   },
+   {
+    "claim": "Deposits protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pendryresidences.com/barbados/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Port Ferdinand SRL; Corsair Cove SRL; TROPOPS SRL (Barbados societies with restricted liability)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": "2026",
+   "delay_months": 12,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "penthouse"
+   ],
+   "size_min_m2": 220,
+   "size_max_m2": 424,
+   "price_min": 2725000,
+   "price_max": 4950000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; foreign buyers may own property in Barbados",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Pendry (Montage International)",
+   "amenities": [
+    "110-berth marina",
+    "Pendry Yacht Club",
+    "spa",
+    "restaurants",
+    "yacht berth with each unit",
+    "resort access"
+   ],
+   "lat": 13.271,
+   "lng": -59.643,
+   "permit_authority": "Barbados Planning and Development Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Topping-off and named contractor confirmed by local press",
+   "Legal licensee entities named on the developer site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pendryresidences.com/barbados/",
+   "https://barbadostoday.bb/2026/04/22/pendry-barbados-marks-milestone-as-luxury-resort-nears-completion/",
+   "https://www.hotelmanagement.net/construction/pendry-hotels-resorts-tops-first-caribbean-resort",
+   "https://hotelsmag.com/news/pendry-unveils-first-international-resort-and-residences",
+   "https://resident.com/amp/story/real-estate-news/2025/04/03/pendry-residences-barbados-debuts-as-islands-first-branded-marina-front-luxury-real-estate-offering",
+   "https://www.barbadospropertysearch.com/node/86100",
+   "https://www.caribjournal.com/2026/08/12/pendry-barbados-residences/"
+  ]
+ }
+]

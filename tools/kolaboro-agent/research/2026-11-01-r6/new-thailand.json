@@ -1,0 +1,743 @@
+[
+ {
+  "slug": "so-lagoon-cherngtalay-origin",
+  "name": "So Lagoon Cherngtalay by Origin",
+  "developer": "Origin Property PCL (SET: ORI); EIA project owner Origin Cherngtalay Phuket Co., Ltd.",
+  "area": "Cherngtalay (Bang Tao), Thalang",
+  "country": "Thailand",
+  "market": "Phuket",
+  "stage": "off-plan",
+  "url": "https://papayaproperty.com/origin-property/so-lagoon-cherngtalay",
+  "docs_url": "https://origin.co.th/condominium/so-lagoon-cherngtalay-by-origin/",
+  "seed": {
+   "price": 3400000,
+   "currency": "THB",
+   "title": "freehold condominium unit (49% foreign quota under Thai Condominium Act)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": "EIA approval ทส 1009.5/1981 (30 Jan 2026), report 256808-8",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Origin Property PCL: SET 2025 company snapshot reports 13,440.1 million baht of condominium and housing transfers in 2025 and 7 newly completed condominium projects due for delivery in 2026",
+   "units": 511,
+   "payment_plan": "Agent: installments available, 30% over 1 year (Papaya Property)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: 3 low-rise buildings, clubhouse, underground parking, 5 rai land, 511 units",
+   "developer: unit types studio 26 sq m to 3BR 105 sq m, fully furnished, from 3.4M THB",
+   "developer: floor plans (ground, 2nd-7th, 8th, rooftop) and unit plans, brochure download (TH and RU)",
+   "agent: construction start June 2026, completion December 2027, prices 3.1M to 15.4M THB"
+  ],
+  "note": "511-unit low-rise condo by SET-listed Origin Property 500 m from Boat Avenue, from 3.4M THB, completion Q4 2027 per agent. ONEP register shows EIA approved 30 Jan 2026 (ทส 1009.5/1981) for owner Origin Cherngtalay Phuket Co., Ltd., status not yet constructed; the developer does not publish the number. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not published by developer. ONEP EIA register report 256808-8, approval letter ทส 1009.5/1981 dated 30/01/2569 (30 Jan 2026), owner ออริจิ้น เชิงทะเล ภูเก็ต จำกัด, status not yet constructed",
+   "escrow": null,
+   "progress": "No progress % or dated construction update on developer page; agent says construction begins June 2026",
+   "plans": "Developer page publishes floor plans and six unit plans (26 to 105 sq m)",
+   "record": "SET listed company snapshot FY2025: transfers 13,440.1 MB, 7 completed condo projects to deliver in 2026, foreign customer backlog over 6,500 MB",
+   "returns": "No guaranteed rental or yield on developer or agent pages"
+  },
+  "positives": [
+   "ONEP EIA approval found for the project (Jan 2026)",
+   "Developer is listed on the Stock Exchange of Thailand with audited accounts",
+   "Floor plans and unit plans published on the developer site"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has an approved EIA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15191"
+   },
+   {
+    "claim": "Located in Cherngtalay, Thalang, Phuket",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15191"
+   },
+   {
+    "claim": "Developer is Origin Property",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15191"
+   },
+   {
+    "claim": "Origin Property is a listed company with delivered projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/ORI-YE68-ListedCompanySnapshot-EN.html"
+   },
+   {
+    "claim": "Construction started June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://papayaproperty.com/origin-property/so-lagoon-cherngtalay"
+   },
+   {
+    "claim": "Completion December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://papayaproperty.com/origin-property/so-lagoon-cherngtalay"
+   },
+   {
+    "claim": "511 units in 3 buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://origin.co.th/condominium/so-lagoon-cherngtalay-by-origin/"
+   },
+   {
+    "claim": "Prices from 3.4M THB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://origin.co.th/condominium/so-lagoon-cherngtalay-by-origin/"
+   },
+   {
+    "claim": "Freehold ownership available to foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://papayaproperty.com/origin-property/so-lagoon-cherngtalay"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://origin.co.th/condominium/so-lagoon-cherngtalay-by-origin/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Origin Property Public Company Limited; project owner Origin Cherngtalay Phuket Co., Ltd. (ONEP)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Stock Exchange of Thailand (ORI); FY2025 revenue 8,678 MB",
+   "construction_start": "2026-06",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 26,
+   "size_max_m2": 105,
+   "price_min": 3400000,
+   "price_max": 15400000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "30% in installments over 1 year (agent)",
+   "foreign_ownership": "Freehold condominium unit within the 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "So Origin",
+   "amenities": [
+    "leisure lagoon",
+    "lagoon oasis",
+    "gym",
+    "social club",
+    "co-working space",
+    "game room",
+    "underground parking",
+    "face-scan access control"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP Expert Review Committee (EIA); Thalang local authority (building permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://origin.co.th/condominium/so-lagoon-cherngtalay-by-origin/",
+   "https://papayaproperty.com/origin-property/so-lagoon-cherngtalay",
+   "https://propertyscout.co.th/en/phuket/condo/so-lagoon-cherngtalay",
+   "https://eia.onep.go.th/eia/detail?id=15191",
+   "https://eia.onep.go.th/services/web/open-api/eia-list?page=1",
+   "https://lssmedia.setlink.set.or.th/2025/YE/ORI-YE68-ListedCompanySnapshot-EN.html"
+  ],
+  "permit_number": "EIA approval ทส 1009.5/1981 (30 Jan 2026), report 256808-8",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "anava-samui-zhongfa",
+  "name": "ANAVA Samui Oceanview Condominium",
+  "developer": "Zhongfa Property (HK) Limited; EIA project owner Sumei Hotel Management Group Co., Ltd.",
+  "area": "Bophut (Bophut to Plai Laem road 4171)",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "stage": "under construction",
+  "url": "https://www.thailand-property.com/condo/27313/anava-samui",
+  "docs_url": "https://anavasamui.com/",
+  "seed": {
+   "price": 3737500,
+   "currency": "THB",
+   "title": "freehold condominium unit (developer claim; foreign quota rules apply)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": "EIA approval ทส 1009.5/127 (9 Jan 2025), report 256703-68",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: dated construction progress posts (July 2026 to 15 Oct 2026)",
+   "developer: unit type layouts (studio, 1BR, 2BR, beach villa), aerial views, architecture and landscape renders, sales centre and model unit photos",
+   "developer: claims fixed return on investment through a hotel management partner",
+   "portal: completion 2027, listings from 3,737,500 THB to 80M THB"
+  ],
+  "note": "Beachfront freehold condo in Bophut marketed by Hong Kong based Zhongfa Property, which advertises a fixed return on investment and posts dated construction updates (latest 15 Oct 2026). ONEP register shows EIA approved 9 Jan 2025 (ทส 1009.5/127) for Sumei Hotel Management Group Co., Ltd., status under construction. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not published by developer. ONEP EIA register report 256703-68, approval ทส1009.5/127 dated 09/01/2568 (9 Jan 2025), owner ซูเหมย โฮเทล แมเนจเม้นท์ กรุ๊ป จำกัด, address 55/5 Bophut to Plai Laem road, status approved and under construction",
+   "escrow": null,
+   "progress": "Developer homepage lists construction progress posts dated July 2026, 31 Aug, 15 Sep, 30 Sep and 15 Oct 2026; no % found",
+   "plans": "Developer site menu publishes unit type layouts for studio, 1BR, 2BR and beach villa",
+   "record": "Developer describes Zhongfa Property (HK) Limited as an overseas tourism real estate developer but names no completed projects",
+   "returns": "Developer: 'the only condominium project in Koh Samui that offering investors a fixed return on investment'; portal repeats 'guaranteed fixed return'"
+  },
+  "positives": [
+   "ONEP register confirms an approved EIA and lists the project as under construction",
+   "Developer posts dated construction updates roughly every two weeks"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has an approved EIA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13607"
+   },
+   {
+    "claim": "Construction is under way",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13607"
+   },
+   {
+    "claim": "Developer is Zhongfa Property (HK) Limited (register names Sumei Hotel Management Group Co., Ltd. as owner)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eia.onep.go.th/eia/detail?id=13607"
+   },
+   {
+    "claim": "First freehold oceanview condominium on Koh Samui in 20 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anavasamui.com/"
+   },
+   {
+    "claim": "Fixed return on investment via a renowned hotel management company",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anavasamui.com/"
+   },
+   {
+    "claim": "Completion in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thailand-property.com/condo/27313/anava-samui"
+   },
+   {
+    "claim": "Units from 3,737,500 THB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thailand-property.com/condo/27313/anava-samui"
+   },
+   {
+    "claim": "Developer has a delivered track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anavasamui.com/"
+   },
+   {
+    "claim": "Located on the Bophut to Plai Laem road, Koh Samui",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13607"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Hong Kong",
+   "developer_company": "Zhongfa Property (HK) Limited (marketing); Sumei Hotel Management Group Co., Ltd. (EIA owner)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "beach villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 3737500,
+   "price_max": 80000000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit within the 49% foreign quota (developer says freehold)",
+   "rental_programme": "Hotel management partner with fixed return (rate not published)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "2,000 sq m wrap-around connected pool",
+    "beachfront",
+    "landscape gardens",
+    "sales centre and model unit"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP Expert Review Committee (EIA); Koh Samui City Municipality (building permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://anavasamui.com/",
+   "https://www.thailand-property.com/condo/27313/anava-samui",
+   "https://eia.onep.go.th/eia/detail?id=13607"
+  ],
+  "permit_number": "EIA approval ทส 1009.5/127 (9 Jan 2025), report 256703-68",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "the-riviera-palm-beach-wongamat-riviera-group",
+  "name": "The Riviera Palm Beach Wongamat",
+  "developer": "The Riviera Group Thailand; project company Riviera Palm Beach Co., Ltd.",
+  "area": "Wongamat, Na Kluea, Bang Lamung",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "stage": "off-plan",
+  "url": "https://pearlpropertythailand.com/project/riviera-palm-beach",
+  "docs_url": "https://therivieragroupthailand.com/the-riviera-palm-beach-wongamat/",
+  "seed": {
+   "price": 13380000,
+   "currency": "THB",
+   "title": "freehold (foreign quota units); Thai quota units also sold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "EIA approval ทส 1009.5/26064 (8 Dec 2025), report 256805-23",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Riviera Group names completed Riviera Wongamat, Riviera Jomtien, Riviera Monaco and Riviera Ocean Drive; ONEP register lists Ocean Drive, Monaco and Jomtien as opened and operating",
+   "units": 298,
+   "payment_plan": null,
+   "price_per_m2": 299716
+  },
+  "docs_listed": [
+   "developer: 47 floors, 298 units (204 x 1BR 39-69 sq m, 84 x 2BR 61-86 sq m, 4 x 3BR 104 sq m, 5 penthouses 239 sq m, 1 duplex 386 sq m)",
+   "developer: construction start August 2026, finish December 2029, freehold",
+   "developer: floor plans and unit types section, Feb 2026 sale kit download",
+   "developer: news post says EIA approved and SCB project loan of THB 880 million",
+   "agent: foreign quota from 13.38M THB, Thai quota from 9.28M THB, average 299,716 THB per sq m"
+  ],
+  "note": "47-storey, 298-unit beachfront tower at the Wongamat peninsula tip, construction start August 2026 and finish December 2029 per developer, foreign-quota units from 13.38M THB (agent). ONEP register shows EIA approved 8 Dec 2025 (ทส 1009.5/26064) for Riviera Palm Beach Co., Ltd.; developer says EIA approved and SCB financing of THB 880M but does not publish the number. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer states 'full EIA approval' without a number. ONEP register report 256805-23, approval ทส 1009.5/26064 dated 08/12/2568, owner ริเวียร่า ปาล์ม บีช จำกัด, Soi Naklua 16, status approved, under construction",
+   "escrow": "No escrow. Developer states SCB approved a THB 880M project finance facility (construction loan, not buyer deposit protection)",
+   "progress": "No progress figure; developer gives construction start August 2026",
+   "plans": "Developer page has Floor Plans and Unit Types section with unit counts and sizes plus sale kit; agent shows 6 floor plans",
+   "record": "ONEP register: The Riviera Ocean Drive, The Riviera Monaco and The Riviera Jomtien all approved to operate and operating",
+   "returns": "No guaranteed rental or yield on developer page or news post"
+  },
+  "positives": [
+   "ONEP EIA approval confirmed on the register",
+   "Three earlier Riviera towers are listed as operating on the ONEP register",
+   "Detailed unit mix, construction start and finish dates published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Full EIA approval secured",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14891"
+   },
+   {
+    "claim": "Project located on the Wongamat peninsula, Naklua",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14891"
+   },
+   {
+    "claim": "SCB approved a THB 880 million project loan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/2025/12/15/the-riviera-palm-beach-by-riviera-group-luxury-beachfront-pattaya/"
+   },
+   {
+    "claim": "Construction starts August 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-palm-beach-wongamat/"
+   },
+   {
+    "claim": "Completion December 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-palm-beach-wongamat/"
+   },
+   {
+    "claim": "298 units on 47 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-palm-beach-wongamat/"
+   },
+   {
+    "claim": "The Riviera Ocean Drive delivered and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=8911"
+   },
+   {
+    "claim": "The Riviera Monaco delivered and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6049"
+   },
+   {
+    "claim": "The Riviera Jomtien delivered and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6792"
+   },
+   {
+    "claim": "Foreign quota units from 13.38M THB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pearlpropertythailand.com/project/riviera-palm-beach"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-palm-beach-wongamat/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "Pattaya, Thailand",
+   "developer_company": "Riviera Palm Beach Co., Ltd. (ONEP project owner)",
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-08",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse",
+    "5BR duplex"
+   ],
+   "size_min_m2": 39,
+   "size_max_m2": 386,
+   "price_min": 13380000,
+   "price_max": 99560000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit in the 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "The Riviera",
+   "amenities": [
+    "28th floor infinity sky pool",
+    "sky gardens",
+    "beachfront clubhouse with pools",
+    "gym",
+    "onsen",
+    "steam and sauna",
+    "kids club",
+    "underground parking with EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP Expert Review Committee (EIA); Pattaya City (building permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://therivieragroupthailand.com/the-riviera-palm-beach-wongamat/",
+   "https://therivieragroupthailand.com/2025/12/15/the-riviera-palm-beach-by-riviera-group-luxury-beachfront-pattaya/",
+   "https://pearlpropertythailand.com/project/riviera-palm-beach",
+   "https://eia.onep.go.th/eia/detail?id=14891",
+   "https://eia.onep.go.th/eia/detail?id=8911",
+   "https://eia.onep.go.th/eia/detail?id=6049",
+   "https://eia.onep.go.th/eia/detail?id=6792"
+  ],
+  "permit_number": "EIA approval ทส 1009.5/26064 (8 Dec 2025), report 256805-23",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "the-title-cielo-rawai-rhom-bho",
+  "name": "The Title Cielo Rawai",
+  "developer": "Rhom Bho Property PCL (The Title, SET: TITLE)",
+  "area": "Rawai",
+  "country": "Thailand",
+  "market": "Phuket",
+  "stage": "under construction",
+  "url": "https://kellerhenson.com/project/the-title-cielo-rawai",
+  "docs_url": "https://thetitleresidence.com/condominium/cielo-rawai/",
+  "seed": {
+   "price": 3900000,
+   "currency": "THB",
+   "title": "freehold condominium unit (foreign quota)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": "EIA approval ทส 1009.5/872 (29 Jan 2025), report 256709-68",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 97.1,
+   "progress_updates": true,
+   "developer_delivered": "Rhom Bho (The Title): SET FY2025 snapshot says transfers began at The Title Legendary Bang-Tao (637 units) and lists completed, under-construction and sold projects worth 46 billion baht, 6,811 units",
+   "units": 171,
+   "payment_plan": null,
+   "price_per_m2": 126018
+  },
+  "docs_listed": [
+   "developer: construction progress August 2026, 97.1% overall (piling 100%, structure 100%, architecture 93.5%, systems 98%)",
+   "developer: master plan and floor plans 1st to 5th floor and rooftop, unit types 1BR L, 1BR Plus M, 2BR L",
+   "developer: factsheet, e-brochure PDF, 360 degree and show unit gallery",
+   "agent: 171 units, 4 floors, 31 to 148 sq m, 3.9M to 16.7M THB, completion Q2 2026"
+  ],
+  "note": "171-unit low-rise condo near Rawai Beach by SET-listed Rhom Bho (The Title); developer reports 97.1% complete in August 2026 against an agent-stated Q2 2026 completion. ONEP register shows EIA approved 29 Jan 2025 (ทส 1009.5/872) but still lists the project as not yet constructed. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not published by developer. ONEP EIA register report 256709-68, approval ทส 1009.5/872 dated 29/01/2568, owner Rhom Bho Property PCL, Rawai; register status 'not yet constructed', which the developer's 97.1% progress figure contradicts",
+   "escrow": "None. SET snapshot says the company requires buyers to pay 75% (contract and down payment) before transfer, with no escrow mentioned",
+   "progress": "Developer page: Progress of August 2026, 97.1% (piling 100%, structure 100%, architecture 93.5%, system installation 98%)",
+   "plans": "Developer page shows master plan, floor plans for 5 floors plus rooftop and three unit types",
+   "record": "SET FY2025 listed company snapshot lists delivered and sold The Title projects (Legendary Bang-Tao 637 units, Heritage Bang-Tao, Serenity Naiyang) and confirms Cielo Rawai at 171 units",
+   "returns": "No guaranteed return or yield on developer project page"
+  },
+  "positives": [
+   "Developer publishes a dated construction % broken down by trade",
+   "Developer is SET-listed and its filing confirms the unit count",
+   "Floor plans, unit plans and brochure published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has an approved EIA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14231"
+   },
+   {
+    "claim": "Developer is Rhom Bho Property PCL",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14231"
+   },
+   {
+    "claim": "Construction 97.1% complete (August 2026)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14231"
+   },
+   {
+    "claim": "171 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+   },
+   {
+    "claim": "Developer has delivered earlier The Title condominiums",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+   },
+   {
+    "claim": "Developer is listed on the Stock Exchange of Thailand",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+   },
+   {
+    "claim": "Completion Q2 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/the-title-cielo-rawai"
+   },
+   {
+    "claim": "Prices from 3.9M THB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/the-title-cielo-rawai"
+   },
+   {
+    "claim": "Located in Rawai, Phuket",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14231"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangkok and Thalang, Phuket, Thailand",
+   "developer_company": "Rhom Bho Property Public Company Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Stock Exchange of Thailand (TITLE); FY2025 revenue 2,983 MB, net profit 588 MB",
+   "construction_start": null,
+   "handover_promised": "2026-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR plus",
+    "2BR"
+   ],
+   "size_min_m2": 31,
+   "size_max_m2": 148,
+   "price_min": 3900000,
+   "price_max": 16700000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "Company policy: 75% paid before transfer (SET snapshot)",
+   "foreign_ownership": "Freehold condominium unit in the 49% foreign quota",
+   "rental_programme": "Group subsidiary offers property management and tenant procurement (no figures)",
+   "service_charge": null,
+   "brand": "The Title",
+   "amenities": [
+    "swimming pool",
+    "sky lounge",
+    "rooftop",
+    "fitness",
+    "co-working space",
+    "theatre room",
+    "kids area",
+    "jacuzzi"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP Expert Review Committee (EIA); Rawai Municipality (building permit)",
+   "brochure_url": "https://thetitleresidence.com/wp-content/uploads/2024/08/The-Title-Cielo-E-Brochure.pdf"
+  },
+  "sources": [
+   "https://thetitleresidence.com/condominium/cielo-rawai/",
+   "https://kellerhenson.com/project/the-title-cielo-rawai",
+   "https://eia.onep.go.th/eia/detail?id=14231",
+   "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+  ],
+  "permit_number": "EIA approval ทส 1009.5/872 (29 Jan 2025), report 256709-68",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 2
+ }
+]

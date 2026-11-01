@@ -1,0 +1,1083 @@
+[
+ {
+  "slug": "nidapark-kucukyali-buyukada-tahincioglu",
+  "name": "Nidapark Küçükyalı (Büyükada phase)",
+  "developer": "Tahincioğlu Gayrimenkul İnşaat ve Turizm A.Ş. with Tahincioğlu Küçükyalı İnşaat and Kızken İnşaat (contractor JV), Emlak Konut GYO landowner (revenue sharing)",
+  "area": "Çınar Mahallesi, Küçükyalı, Maltepe",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.turkey-invest.net/en-properties/nidapark-kucukyali",
+  "docs_url": "https://www.nidaparkkucukyali.com/",
+  "docs_listed": [
+   "developer site: catalogue, technical specification, promo film, contact form (Tahincioğlu named as data controller)",
+   "Emlak Konut KAP appraisal report 25-231 (31 Dec 2025): permit table per block, 76.22% completion, 2,244 units by type",
+   "Nidapark Gayrimenkul (developer's resale arm): Büyükada phase under construction, delivery forecast June 2028",
+   "agent portal: from USD 340,000, citizenship-eligible, 76-165 m2"
+  ],
+  "note": "Large Emlak Konut revenue-sharing scheme in Maltepe built by the Tahincioğlu-Kızken JV; most phases are finished with condominium title since Oct 2023, while the Büyükada phase (B9-B11, multi-use units) is still being built with delivery forecast June 2028. Emlak Konut's year-end 2025 appraisal on KAP lists the building permits and a 76.22% overall completion rate. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 340000,
+   "currency": "USD",
+   "title": "freehold (kat mülkiyeti / condominium title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "Maltepe Municipality building permits 2016/12-11 and 2016/12-13 (new build, 29.12.2016) with amendments 2018/5-35, 2018/5-37, 2019/3-40, 2020/1-30, 2020/2-22",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 76.22,
+   "progress_updates": false,
+   "developer_delivered": "Earlier Nidapark Küçükyalı phases on plots 16772/1 and 16773/2 completed with occupancy permits and condominium title (Emlak Konut appraisal 25-231)",
+   "units": 2244,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Permit numbers are not on the developer site but are listed block by block in the Emlak Konut appraisal report 25-231 filed on KAP (Maltepe Municipality permits 2016/12-11, 2016/12-13 and later amendments)",
+   "escrow": "No escrow or deposit guarantee published; Turkey has no mandatory escrow for off-plan sales",
+   "progress": "Emlak Konut appraisal 25-231 (31 Dec 2025): completion rate 76.22% per latest progress payment report; Feb 2025 report gave about 75%",
+   "plans": "Developer site offers a catalogue and spec download but no floor plans were visible in the pages we opened",
+   "record": "Same appraisal confirms finished phases with occupancy permits and condominium title since 10.10.2023; resale arm states residents moved in from Sept 2020",
+   "returns": "No guaranteed rent or yield wording on developer or agent pages opened"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued by Maltepe Municipality for all blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "Land owned by Emlak Konut GYO (1/1)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "Contractor is Tahincioğlu-Kızken JV under a 2 Sept 2016 revenue-sharing contract (42% Emlak Konut share)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "Overall completion 76.22% at end 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "Earlier phases finished with occupancy permits and condominium title",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "B10-B11 blocks were at excavation stage in an earlier independent valuation",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://emlakkulisi.com/resim/dosyalar/NDM3MzUzMT-nidapark-kucukyali-degerleme-raporupdf.pdf"
+   },
+   {
+    "claim": "Büyükada phase delivery forecast June 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nidapark.com.tr/ilan-221026800.html"
+   },
+   {
+    "claim": "Project totals 2,244 independent units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "Agent states 1,225 apartments in 14 buildings",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.turkey-invest.net/en-properties/nidapark-kucukyali"
+   },
+   {
+    "claim": "Prices from USD 340,000, citizenship eligible",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.turkey-invest.net/en-properties/nidapark-kucukyali"
+   },
+   {
+    "claim": "No permit violations found by the appraiser",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf"
+   },
+   {
+    "claim": "Direct link to Küçükyalı metro station",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nidapark.com.tr/ilan-221026800.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ataşehir, Istanbul, Turkey",
+   "developer_company": "Tahincioğlu Gayrimenkul İnşaat ve Turizm A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Landowner Emlak Konut GYO is listed on Borsa Istanbul (EKGYO); SPK-licensed appraisals filed on KAP",
+   "construction_start": "2016-12",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR duplex",
+    "office",
+    "shop"
+   ],
+   "size_min_m2": 76,
+   "size_max_m2": 165,
+   "price_min": 340000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold title deed for foreigners (agent states citizenship eligible)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Nidapark",
+   "amenities": [
+    "outdoor pool",
+    "walking and running tracks",
+    "gyms",
+    "350 m shopping street",
+    "24/7 security",
+    "covered parking",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Maltepe Municipality (İmar ve Şehircilik Müdürlüğü)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Permit numbers and completion rate disclosed in an SPK-licensed appraisal filed on KAP",
+   "Landowner is listed Emlak Konut GYO",
+   "Earlier phases already delivered with condominium title"
+  ],
+  "flags": [],
+  "sources": [
+   "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/2025-12-31-yetkingd-emlak-konut-nidapark-kucukyali-kap.pdf",
+   "https://kap.org.tr/tr/Bildirim/1537815",
+   "https://emlakkulisi.com/resim/dosyalar/NDM3MzUzMT-nidapark-kucukyali-degerleme-raporupdf.pdf",
+   "https://emlakkulisi.com/guncel/nidapark-kucukyali-yapi-ruhsati/1733295",
+   "https://www.nidaparkkucukyali.com/",
+   "https://www.nidapark.com.tr/ilan-221026800.html",
+   "https://www.turkey-invest.net/en-properties/nidapark-kucukyali"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 3,
+  "permit_number": "Maltepe Municipality building permits 2016/12-11 and 2016/12-13 (new build, 29.12.2016) with amendments 2018/5-35, 2018/5-37, 2019/3-40, 2020/1-30, 2020/2-22"
+ },
+ {
+  "slug": "nezihpark-bahcekent-aydur-insaat",
+  "name": "Nezihpark Bahçekent",
+  "developer": "Aydur Yapı A.Ş. (Aydur İnşaat), Emlak Konut GYO landowner (revenue sharing)",
+  "area": "Bahçeşehir 2. Kısım / Hoşdere, Başakşehir",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://juanarealestate.com/en/project/nezihpark-bahcekent",
+  "docs_url": "https://nezihpark.com.tr/",
+  "docs_listed": [
+   "developer site: project description, Aydur İnşaat profile, contact",
+   "Emlak Konut project page: 658 homes, 30 commercial units, catalogue and aerial views",
+   "Emlak Konut appraisal (Talya, 26 Feb 2025): permit table with numbers per block, 40% built on main plots",
+   "Emlak Konut year-end 2025 appraisal (Yetkin, 21 Oct 2025) on KAP: 53.80% completion",
+   "agent portal: USD 140,000 to 380,000, 60-210 m2"
+  ],
+  "note": "Low-rise Emlak Konut revenue-sharing scheme in Bahçekent built by Aydur Yapı under an Oct 2022 contract (30% Emlak Konut share). Permits for 17 blocks were issued by Başakşehir Municipality in Dec 2022 and Feb 2025; the Oct 2025 appraisal on KAP puts completion at 53.80%, and some first-stage units are already being resold as ready to move in. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 140000,
+   "currency": "USD",
+   "title": "freehold (title deed after kat irtifakı/kat mülkiyeti)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "Başakşehir Municipality building permits 1433-1448 (26.12.2022) and 107-110 (19.02.2025)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 53.8,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 478,
+   "payment_plan": "Flexible installments (agent)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Not on developer site; permit numbers listed per block in Emlak Konut appraisal 2025-EMLAKGYO-6 published by Emlak Konut",
+   "escrow": "None published",
+   "progress": "KAP appraisal 21 Oct 2025: completion 53.80% per last progress payment; Feb 2025 report: 40% on plots 1969/6-7, plot 649/3 just started",
+   "plans": "No floor plans on developer site pages opened; catalogue link only",
+   "record": "Developer claims 20+ years and large housing, hospital and infrastructure work but names no delivered projects on the pages opened",
+   "returns": "No guaranteed returns; agent notes return and citizenship need case review"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued by Başakşehir Municipality for all blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/26-02-2025-nezihpark-bahcekent-projesi.pdf"
+   },
+   {
+    "claim": "Revenue-sharing contract signed 14.10.2022 between Emlak Konut and Aydur Yapı A.Ş.",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/26-02-2025-nezihpark-bahcekent-projesi.pdf"
+   },
+   {
+    "claim": "Project 53.80% complete (Oct 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kap.org.tr/tr/api/file/download/4028328c998ee9d5019a166bf59653c8"
+   },
+   {
+    "claim": "Construction proceeding in line with permits",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/26-02-2025-nezihpark-bahcekent-projesi.pdf"
+   },
+   {
+    "claim": "Project has 478 independent units in the appraised scope",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kap.org.tr/tr/api/file/download/4028328c998ee9d5019a166bf59653c8"
+   },
+   {
+    "claim": "First stage 658 homes and 30 commercial units (700 units)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/en-US/nezi%CC%87hpark-bahcekent"
+   },
+   {
+    "claim": "Delivered December 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://juanarealestate.com/en/project/nezihpark-bahcekent"
+   },
+   {
+    "claim": "Land titled to Emlak Konut, plot 1971/3 still vacant",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kap.org.tr/tr/api/file/download/4028328c998ee9d5019a166bf59653c8"
+   },
+   {
+    "claim": "Prices USD 140,000 to 380,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://juanarealestate.com/en/project/nezihpark-bahcekent"
+   },
+   {
+    "claim": "Developer has 20+ years of experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nezihpark.com.tr/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Aydur Yapı A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Landowner Emlak Konut GYO listed on Borsa Istanbul; appraisals filed on KAP",
+   "construction_start": "2022-12",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "shop"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 210,
+   "price_min": 140000,
+   "price_max": 380000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Flexible installments (agent)",
+   "foreign_ownership": "Freehold title deed available to most foreign nationals in Turkey",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Nezihpark",
+   "amenities": [
+    "landscaped courtyards",
+    "children's playgrounds",
+    "sauna and Turkish bath",
+    "sports courts",
+    "covered parking",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Başakşehir Municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Block-by-block permit numbers and completion % disclosed in SPK-licensed appraisals",
+   "Landowner Emlak Konut GYO is a listed company"
+  ],
+  "flags": [],
+  "sources": [
+   "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/26-02-2025-nezihpark-bahcekent-projesi.pdf",
+   "https://kap.org.tr/tr/Bildirim/1508102",
+   "https://www.kap.org.tr/tr/api/file/download/4028328c998ee9d5019a166bf59653c8",
+   "https://www.emlakkonut.com.tr/en-US/nezi%CC%87hpark-bahcekent",
+   "https://nezihpark.com.tr/",
+   "https://juanarealestate.com/en/project/nezihpark-bahcekent",
+   "https://www.propertyistanbul.com/properties/nezihpark-bahcekent/",
+   "https://www.emlakjet.com/ilan/emlakkonut-nezihpark-bahcekent-te-31-borcsuz-satilik-daire-19447992"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 2,
+  "permit_number": "Başakşehir Municipality building permits 1433-1448 (26.12.2022) and 107-110 (19.02.2025)"
+ },
+ {
+  "slug": "vero-versa-residences-adriatic-marinas",
+  "name": "Vero & Versa Residences",
+  "developer": "Adriatic Marinas d.o.o. (Porto Montenegro); development partner Moncore per RISMedia",
+  "area": "Porto Montenegro, Tivat",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://opr.ae/projects/vero-versa-residences-porto-montenegro-tivat",
+  "docs_url": "https://www.portomontenegro.com/real-estate/vero-versa",
+  "docs_listed": [
+   "developer: unit types studio to 3BR and penthouses, amenities, four floorplan entries, brochure download",
+   "agent: 202 units (155 Vero, 47 Versa), from EUR 390,000 (Vero) and EUR 416,000 (Versa), handover Q4 2028",
+   "agent: payment plan 10% pre-SPA, 30% at SPA, 25% during construction, 20% at handover",
+   "agent: rental yield 4-6% gross via MResidences (projection, not guaranteed)"
+  ],
+  "note": "Two new buildings (202 apartments) inside Porto Montenegro, unveiled in 2025 with prices from EUR 390,000 and handover scheduled for Q4 2028 according to agents. The developer page lists floorplans but publishes no permit, construction progress, escrow or timeline. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 390000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer page names Boka Place and South Village as other Porto Montenegro residences; agent cites Boka Place sold out",
+   "units": 202,
+   "payment_plan": "10% pre-SPA, 30% at SPA, 25% during construction (2 milestones), 20% at handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit mentioned on developer or agent pages",
+   "escrow": "No escrow or bank guarantee mentioned",
+   "progress": "No construction status or progress published",
+   "plans": "Developer page lists four available floorplans (download)",
+   "record": "Porto Montenegro marina village and Boka Place are existing operating developments named on the developer page",
+   "returns": "No guarantee; agents quote 4-6% gross potential via MResidences"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "202 apartments (155 Vero, 47 Versa)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.rismedia.com/2025/11/14/global-spotlight-from-naval-base-creative-hub-porto-montenegro/"
+   },
+   {
+    "claim": "Prices from EUR 390,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.diplomacyandcommerce.rs/?p=110838"
+   },
+   {
+    "claim": "Handover Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/vero-versa-residences-porto-montenegro-tivat"
+   },
+   {
+    "claim": "Developer Adriatic Marinas is wholly owned by Investment Corporation of Dubai",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metropolitan.realestate/porto-montenegro/vero-versa-residences-adriatic-marinas-porto-montenegro-tivat/"
+   },
+   {
+    "claim": "Architecture by Woods Bagot, development by Moncore",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.rismedia.com/2025/11/14/global-spotlight-from-naval-base-creative-hub-porto-montenegro/"
+   },
+   {
+    "claim": "Payment plan published consistently",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://metropolitan.realestate/porto-montenegro/vero-versa-residences-adriatic-marinas-porto-montenegro-tivat/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portomontenegro.com/real-estate/vero-versa"
+   },
+   {
+    "claim": "Boka Place sold out",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.rismedia.com/2025/11/14/global-spotlight-from-naval-base-creative-hub-porto-montenegro/"
+   },
+   {
+    "claim": "Rental yield 4-6% via MResidences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/vero-versa-residences-porto-montenegro-tivat"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Tivat, Montenegro",
+   "developer_company": "Adriatic Marinas d.o.o.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": null,
+   "price_min": 390000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 10,
+   "payment_plan": "10% pre-SPA, 30% at SPA, 25% during construction, 20% at handover",
+   "foreign_ownership": "Foreigners can own apartments freehold in Montenegro; agents note residence permit through ownership",
+   "rental_programme": "MResidences rental (agent states 4-6% gross potential)",
+   "service_charge": null,
+   "brand": "Porto Montenegro",
+   "amenities": [
+    "podium pool (Vero)",
+    "rooftop pool (Versa)",
+    "two gyms",
+    "medical clinic",
+    "wellness centre with semi-Olympic pool",
+    "retail and dining"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Spatial Planning, Urbanism and State Property of Montenegro",
+   "brochure_url": null
+  },
+  "positives": [
+   "Part of an established, operating marina resort",
+   "Floorplans offered on the developer page",
+   "No guaranteed-return wording"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.portomontenegro.com/real-estate/vero-versa",
+   "https://opr.ae/projects/vero-versa-residences-porto-montenegro-tivat",
+   "https://metropolitan.realestate/porto-montenegro/vero-versa-residences-adriatic-marinas-porto-montenegro-tivat/",
+   "https://www.rismedia.com/2025/11/14/global-spotlight-from-naval-base-creative-hub-porto-montenegro/",
+   "https://www.diplomacyandcommerce.rs/?p=110838"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "bw-topaz-belgrade-waterfront-eagle-hills",
+  "name": "BW Topaz",
+  "developer": "Belgrade Waterfront (Eagle Hills joint venture with the Republic of Serbia)",
+  "area": "Heritage District, Sava Promenada, Savski Venac, Belgrade",
+  "country": "Serbia",
+  "market": "Serbia",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://cityexpert.rs/a/en/new-build-homes/belgrade/belgrade-waterfront/bw-topaz-1794",
+  "docs_url": "https://www.belgradewaterfront.com/en/properties/bw-topaz/",
+  "docs_listed": [
+   "developer: 84 apartments, 136 parking spaces, 6 floors, Heritage District location, brochure PDF (image only)",
+   "agent: 20 listed units 65-222 m2 with apartment plans dated 10 Mar 2026, completion November 2029, prices on request",
+   "agent: link to a construction progress video (no stage stated)"
+  ],
+  "note": "Small six-floor building of 84 apartments in the new Heritage District of Belgrade Waterfront, opposite the Bristol Hotel; the main agent lists completion in November 2029 and publishes unit plans, but prices are on request and no permit, escrow or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer site lists more than 20 Belgrade Waterfront residential buildings plus the operating Galerija mall and BW Marina",
+   "units": 84,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number on developer or agent pages",
+   "escrow": "No escrow or bank guarantee mentioned",
+   "progress": "Agent links a construction progress video but states no stage or date; no % published",
+   "plans": "Agent page has apartment plans for 20 units, dated 10-03-2026",
+   "record": "Developer site navigation names many earlier BW buildings (BW Riva, BW Vizia, BW Nova, BW Victoria and others) and the operating Galerija mall",
+   "returns": "No yield or guaranteed return wording"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "84 apartments, 136 parking spaces, 6 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belgradewaterfront.com/en/properties/bw-topaz/"
+   },
+   {
+    "claim": "Completion November 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cityexpert.rs/a/en/new-build-homes/belgrade/belgrade-waterfront/bw-topaz-1794"
+   },
+   {
+    "claim": "Unit mix stated as two- to five-bedroom",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cityexpert.rs/a/en/new-build-homes/belgrade/belgrade-waterfront/bw-topaz-1794"
+   },
+   {
+    "claim": "Located next to Geozavod building, opposite The Bristol Hotel",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belgradewaterfront.com/en/properties/bw-topaz/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belgradewaterfront.com/en/properties/bw-topaz/"
+   },
+   {
+    "claim": "Construction under way (progress video)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cityexpert.rs/a/en/new-build-homes/belgrade/belgrade-waterfront/bw-topaz-1794"
+   },
+   {
+    "claim": "Belgrade Waterfront has delivered earlier residential buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belgradewaterfront.com/en/properties/bw-topaz/"
+   },
+   {
+    "claim": "No commission for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cityexpert.rs/a/en/new-build-homes/belgrade/belgrade-waterfront/bw-topaz-1794"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Belgrade, Serbia",
+   "developer_company": "Belgrade Waterfront d.o.o. Beograd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 65,
+   "size_max_m2": 222,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can buy apartments in Serbia subject to reciprocity",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Belgrade Waterfront",
+   "amenities": [
+    "two underground parking levels",
+    "river promenade location"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Belgrade Secretariat for Urbanism (CEOP e-permit system)",
+   "brochure_url": "https://www.belgradewaterfront.com/static/uploads/2026/03/BW-Topaz.pdf"
+  },
+  "positives": [
+   "Unit plans published per apartment",
+   "Large master developer with many earlier buildings on site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.belgradewaterfront.com/en/properties/bw-topaz/",
+   "https://www.belgradewaterfront.com/static/uploads/2026/03/BW-Topaz.pdf",
+   "https://cityexpert.rs/a/en/new-build-homes/belgrade/belgrade-waterfront/bw-topaz-1794"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "next-gardens-kvariati-next-group",
+  "name": "NEXT Gardens",
+  "developer": "Next Group (NEXT Development)",
+  "area": "Kvariati, south of Batumi (Adjara)",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://alnair.ae/en/batumi/project/next-gardens",
+  "docs_url": "https://next-property.com/next-gardens",
+  "docs_listed": [
+   "developer: studios from USD 65,000, 1BR from USD 122,130, 2BR from USD 246,784, handover Dec 2027",
+   "developer: 35-month 0% instalments with 15% first payment",
+   "developer: unit mix 253 studios, 216 1BR, 18 2BR, 6 penthouses; size ranges per type",
+   "developer: 'annual ROI 10%-12%' and 'Annual return up to 12%' marketing claim",
+   "developer: live construction camera link",
+   "portal (Alnair): two towers of 14 and 16 floors, 0% completed, freehold"
+  ],
+  "note": "First-line beach complex in Kvariati near Batumi by Next Group, with 493 units, studios from USD 65,000 and handover promised for December 2027 on a 35-month interest-free plan. The developer advertises 10-12% annual ROI without calling it guaranteed, and publishes no permit, escrow or progress figure; a portal lists the build at 0%. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 65000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer site marks NEXT Green, NEXT White, NEXT Apartments, NEXT Orange and Villa Park as sold-out earlier projects",
+   "units": 493,
+   "payment_plan": "15% first payment, 35 monthly instalments at 0%",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit number published",
+   "escrow": "No escrow or deposit protection published",
+   "progress": "Developer offers a live construction camera; no % or dated report. Alnair lists 0% completed",
+   "plans": "Unit size ranges and a 'general plan' section, but no unit floor plans in the page text",
+   "record": "Developer site lists several earlier Batumi projects (NEXT Green, NEXT White, NEXT Apartments, NEXT Orange) as sold out; completion not independently checked",
+   "returns": "Advertises 'annual ROI 10%-12%' and 'Annual return up to 12%' but does not say guaranteed"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/next-gardens"
+   },
+   {
+    "claim": "Studios from USD 65,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/next-gardens"
+   },
+   {
+    "claim": "Annual return 10-12%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/next-gardens"
+   },
+   {
+    "claim": "50 m from the beach, first line",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/next-gardens"
+   },
+   {
+    "claim": "Construction under way (live camera)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alnair.ae/en/batumi/project/next-gardens"
+   },
+   {
+    "claim": "Withstands earthquakes up to magnitude 8",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/next-gardens"
+   },
+   {
+    "claim": "Earlier projects sold out and delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/"
+   },
+   {
+    "claim": "Freehold title for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alnair.ae/en/batumi/project/next-gardens"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/next-gardens"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Batumi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "penthouse"
+   ],
+   "size_min_m2": 24,
+   "size_max_m2": 120,
+   "price_min": 65000,
+   "price_max": 313344,
+   "currency": "USD",
+   "deposit_pct": 15,
+   "payment_plan": "15% first payment, 35 months 0% instalments",
+   "foreign_ownership": "Freehold apartment ownership (non-agricultural land) for foreigners in Georgia",
+   "rental_programme": "Not specified; ROI 10-12% marketed",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor sea-view pool",
+    "gardens and pedestrian paths",
+    "shops",
+    "Daikin VRF air conditioning"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Khelvachauri Municipality / Adjara architecture service",
+   "brochure_url": null
+  },
+  "positives": [
+   "Prices, unit mix and payment plan published on the developer site",
+   "Live construction camera"
+  ],
+  "flags": [],
+  "sources": [
+   "https://next-property.com/next-gardens",
+   "https://next-property.com/",
+   "https://alnair.ae/en/batumi/project/next-gardens"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "casa-del-mare-esentepe-northernland",
+  "name": "Casa del Mare",
+  "developer": "NorthernLAND Construction",
+  "area": "Esentepe (Agios Amvrosios), Girne district",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://cyprus-faq.com/en/north/real-estate-market/casa-del-mare",
+  "docs_url": "https://northernland.com/en/casa-del-mare",
+  "docs_listed": [
+   "developer: unit types (studio to 4+1 villas and hotel rooms), floor plan features per type, amenities",
+   "developer: 'Construction Update' photo section (undated text)",
+   "developer: list of 18 completed NorthernLAND projects",
+   "agent: 1+1 penthouse GBP 159,889, completion June 2026",
+   "agent: from USD 315,106 (April 2025 rate), construction year 2026"
+  ],
+  "note": "Mixed holiday-home and villa project in Esentepe by NorthernLAND, a developer that lists 18 completed schemes in North Cyprus. The developer page shows unit types, plan features and construction photos but no prices, dates, title or permit details; agents quote a June 2026 completion and prices from GBP 159,889. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 159889,
+   "currency": "GBP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "NorthernLAND names 18 completed projects on its site, including Emerald Villas Tuzla, Kentplus, Uptown Park, Northern Park, Alasya Park, Pearl Village and NorthernLAND Premier",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or building licence number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Developer page has a 'Construction Update' photo section without dates or %",
+   "plans": "Developer page lists floor plans for studio, 1+1, 2+1, 3+1 villa and 4+1 duplex villa",
+   "record": "Developer lists 18 completed projects by name",
+   "returns": "No rental guarantee or yield wording on developer or agent pages opened"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cyprus-faq.com/en/north/real-estate-market/casa-del-mare"
+   },
+   {
+    "claim": "Construction finished",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realting.com/northern-cyprus/new-buildings/26641"
+   },
+   {
+    "claim": "1+1 penthouse priced GBP 159,889",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cyprus-faq.com/en/north/real-estate-market/casa-del-mare"
+   },
+   {
+    "claim": "Prices from USD 315,106",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://realting.com/northern-cyprus/new-buildings/26641"
+   },
+   {
+    "claim": "Developer has delivered 18 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://northernland.com/en/casa-del-mare"
+   },
+   {
+    "claim": "Indoor and outdoor pools, gym, padel court",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://northernland.com/en/casa-del-mare"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://northernland.com/en/casa-del-mare"
+   },
+   {
+    "claim": "Title deed type for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://northernland.com/en/casa-del-mare"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kyrenia, Northern Cyprus",
+   "developer_company": null,
+   "developer_projects_delivered": 18,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR loft",
+    "3BR villa",
+    "4BR villa",
+    "hotel room"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 159889,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Not stated; foreigners in Northern Cyprus buy subject to Council of Ministers permission",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "outdoor pool",
+    "gym",
+    "padel court",
+    "multi-sports facility",
+    "walking paths",
+    "central generator"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Girne district municipality / TRNC Town Planning Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans and construction photos on the developer page",
+   "Developer names many completed projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://northernland.com/en/casa-del-mare",
+   "https://cyprus-faq.com/en/north/real-estate-market/casa-del-mare",
+   "https://realting.com/northern-cyprus/new-buildings/26641"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ }
+]

@@ -1,0 +1,1880 @@
+[
+ {
+  "slug": "soul-tulum-surreal-developments",
+  "name": "Soul Tulum",
+  "developer": "Surreal Developments",
+  "area": "Av. Kukulkan, La Veleta (Region 8), Tulum",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "url": "https://www.soul-tulum.com/",
+  "docs_url": "https://www.soul-tulum.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: Tower A 'back under construction' (May 2025 photo section, no %)",
+   "developer: 30% reservation then structured payments to delivery",
+   "developer: 'independent escrow' and fideicomiso steps described, no escrow agent named",
+   "developer: unit types (1BR, double-height lofts, penthouses), no plans",
+   "developer site lists Soul Tulum 'En construccion' and five other projects in preventa or design",
+   "agent listing (suspended Sep 2024): delivery December 2024, '11% return on investment' and '35% plusvalia'"
+  ],
+  "note": "Four-tower surrealist-themed condo complex on Av. Kukulkan, Tulum, sold developer-direct by Surreal Developments (founded 2017). The developer now says Tower A is 'back under construction' (May 2025) while an earlier agent listing promised delivery in December 2024 with an 11% return and 35% appreciation; no permit, escrow agent, plans or PROFECO-registered contract found under the project or developer name. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 205687,
+   "currency": "USD",
+   "title": "fideicomiso (bank trust) for foreigners",
+   "guaranteed_language": false,
+   "yield_pct": 11,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Developer site says funds move through 'independent escrow' and an independent notary; no escrow agent or bank named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "30% reservation, structured payments to delivery, final payment on handover",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No licencia de construccion, environmental or land-use number on developer or agent pages. No PROFECO adhesion contract found under 'Soul' or 'Surreal' (only the sister project seller Omen Tulum Development, 3009-2025)",
+   "escrow": "Developer text: 'independent escrow so your funds never move directly to us'; no escrow company named, so unverifiable",
+   "progress": "Developer section 'Tower A, May 2025: Tower A is back under construction', no percentage; developer project list says 'En construccion'",
+   "plans": "Only unit type descriptions and renders",
+   "record": "No completed project named by Surreal Developments; Inmobiliare (2024, sponsored-style profile) says the firm was founded in 2017 and took over the Mandala project at 70% progress",
+   "returns": "Developer page says any return reference is illustrative, not a guarantee; an agent listing quoted '11% retorno de inversion' and '35% plusvalia' as estimates (asterisked), not guaranteed"
+  },
+  "claims": [
+   {
+    "claim": "Tower A is back under construction (May 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.soul-tulum.com/"
+   },
+   {
+    "claim": "Delivery December 2024 (agent listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/soul-tulum"
+   },
+   {
+    "claim": "Buyer funds held in independent escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.soul-tulum.com/"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered sale contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Developer founded 2017 and builds in-house with no contractors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inmobiliare.com/surreal-developments-desarrollos-que-cuentan-una-historia-extraordinaria/"
+   },
+   {
+    "claim": "Phase three priced USD 268,000 to 820,000 (2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inmobiliare.com/surreal-developments-desarrollos-que-cuentan-una-historia-extraordinaria/"
+   },
+   {
+    "claim": "Agent price from USD 205,687",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.topadviser-realestate.com/properties-tulum-soul-esp.html"
+   },
+   {
+    "claim": "Agent price from USD 245,170",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theagencyrerivieramaya.com/properties-tulum-soul.html"
+   },
+   {
+    "claim": "Two delivery phases: towers A and B, then C and D",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bienesraicesquintanaroo.mx/soul-tulum-surreal-living-mx/"
+   },
+   {
+    "claim": "11% return on investment and 35% appreciation by delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/soul-tulum"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "Puerto Cancun (Port Marina office 9), Cancun, Mexico",
+   "developer_company": null,
+   "original_handover": "2024-Q4",
+   "handover_promised": null,
+   "unit_types": [
+    "studio/1BR",
+    "2BR double-height loft",
+    "2BR penthouse with rooftop"
+   ],
+   "price_min": 205687,
+   "price_max": 820000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% reservation, structured payments to delivery",
+   "foreign_ownership": "Bank fideicomiso (developer page)",
+   "rental_programme": "Own administration for vacation rentals (agent listing)",
+   "amenities": [
+    "underground cenote",
+    "beach club",
+    "spa",
+    "crossfit gym",
+    "outdoor cinema",
+    "coworking",
+    "art gallery",
+    "rooftop restaurant"
+   ],
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano); SEDETUS Quintana Roo",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Developer page explicitly says return figures are not guaranteed",
+   "Dated progress section and fideicomiso steps explained in English"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.soul-tulum.com/",
+   "https://surreal-developments.com/page1",
+   "http://surreal-developments.com",
+   "https://inmobiliare.com/surreal-developments-desarrollos-que-cuentan-una-historia-extraordinaria/",
+   "https://www.pincali.com/inmueble/soul-tulum",
+   "https://www.topadviser-realestate.com/properties-tulum-soul-esp.html",
+   "https://theagencyrerivieramaya.com/properties-tulum-soul.html",
+   "https://bienesraicesquintanaroo.mx/soul-tulum-surreal-living-mx/",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "montage-residences-punta-mita-dine-s-a-b-de-c-v",
+  "name": "Montage Residences Punta Mita",
+  "developer": "DINE, S.A.B. de C.V. (BMV: DINE) with LCA Capital; brand Montage International",
+  "area": "Punta Mita peninsula, Bahia de Banderas, Nayarit",
+  "country": "Mexico",
+  "market": "Riviera Nayarit",
+  "stage": "under construction",
+  "url": "https://www.puntademita-realestate.com/montage/",
+  "docs_url": "https://www.montageresidences.com/punta-mita/",
+  "permit_number": null,
+  "docs_listed": [
+   "brand: 62 residences, 2,800 to 11,000+ sq ft, 'currently under development'",
+   "brand press release (13 Mar 2025): groundbreaking, opening 2027, prices from USD 5 million",
+   "DINE BMV filing (12 Mar 2025): construction started, investment over MXN 10 billion",
+   "agent brochure: unit floor plans with covered, terrace and total m2 per type",
+   "agent: Phase 1 38 condos in 5 buildings, 'vertical underway', about half sold, from USD 4.95M"
+  ],
+  "note": "Branded condos and villas inside the gated Punta Mita resort by BMV-listed DINE with LCA Capital; DINE told the Mexican stock exchange in March 2025 that construction had started, with opening planned for 2027. Prices start around USD 4.95 to 5 million; agent brochures publish floor plans, but no permit number, escrow or percentage progress is published, and residence counts differ (31, 38, 62 or 91 depending on source). (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 4950000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone) - not stated on pages",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "DINE (40+ years) developed the Punta Mita resort community with Four Seasons and St. Regis hotels, two Jack Nicklaus courses and four beach clubs, per its BMV filing",
+   "units": 62,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No construction licence, MIA or land-use number published by Montage, DINE or agents. No PROFECO adhesion contract found under DINE, Montage or Punta Mita seller names",
+   "escrow": "No escrow, fideicomiso or deposit protection terms published",
+   "progress": "Construction start confirmed by DINE's BMV filing (Mar 2025) and the brand release; current status only 'vertical underway' from an agent, no % or dated photos from the developer",
+   "plans": "Agent-hosted developer brochure shows Building Type A and B plans with m2 breakdowns (e.g. 3BR 477 to 507 m2, 4BR 549 to 578 m2)",
+   "record": "DINE BMV filing: 40+ years developing residential, tourism, commercial and corporate property; developer of the Punta Mita community with Four Seasons and St. Regis",
+   "returns": "No rental guarantee or yield published"
+  },
+  "claims": [
+   {
+    "claim": "Construction of Montage and Pendry Punta Mita started (Mar 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/eventemi/eventemi_1448224_1.pdf"
+   },
+   {
+    "claim": "Investment over MXN 10 billion",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/eventemi/eventemi_1448224_1.pdf"
+   },
+   {
+    "claim": "Opening planned for 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/eventemi/eventemi_1448224_1.pdf"
+   },
+   {
+    "claim": "DINE has 40+ years of development experience and developed Punta Mita",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/eventemi/eventemi_1448224_1.pdf"
+   },
+   {
+    "claim": "62 Montage Residences",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://tierravallarta.com/wp-content/uploads/2025/10/BROCHURE_montageres.pdf"
+   },
+   {
+    "claim": "Prices from USD 5 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.montage.com/press-room/montage-and-pendry-punta-mita-officially-break-ground-in-nayarit/"
+   },
+   {
+    "claim": "Phase 1 about half sold; 3BR from USD 4.95M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puntademita-realestate.com/montage/"
+   },
+   {
+    "claim": "Phase 1 vertical construction underway",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puntademita-realestate.com/montage/"
+   },
+   {
+    "claim": "Only 31 residences in four buildings (agent page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://tierravallarta.com/en/developments/montage-residences-punta-mita-2/"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Permit or licence number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.montageresidences.com/punta-mita/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Mexico City, Mexico",
+   "developer_company": "DINE, S.A.B. de C.V.",
+   "listed_or_audited": "Listed on the Bolsa Mexicana de Valores (ticker DINE)",
+   "construction_start": "2025-03",
+   "handover_promised": "2027",
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "5BR penthouse",
+    "4-7BR villas"
+   ],
+   "size_min_m2": 477,
+   "size_max_m2": 2066,
+   "price_min": 4950000,
+   "price_max": 18500000,
+   "currency": "USD",
+   "foreign_ownership": "Not stated on pages opened (restricted coastal zone: bank fideicomiso)",
+   "brand": "Montage Residences",
+   "amenities": [
+    "Spa Montage",
+    "Compass Sports center",
+    "resort pools",
+    "Paintbox kids club",
+    "two Jack Nicklaus golf courses",
+    "five residential beach clubs"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Bahia de Banderas; SEMARNAT (MIA)",
+   "brochure_url": "https://tierravallarta.com/wp-content/uploads/2025/10/BROCHURE_montageres.pdf",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null
+  },
+  "positives": [
+   "Developer is listed on the Mexican stock exchange and disclosed the construction start",
+   "Detailed floor plans with area breakdowns in the developer brochure",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.montageresidences.com/punta-mita/",
+   "https://www.montage.com/press-room/montage-and-pendry-punta-mita-officially-break-ground-in-nayarit/",
+   "https://bmv.com.mx/docs-pub/eventemi/eventemi_1448224_1.pdf",
+   "https://www.puntademita-realestate.com/montage/",
+   "https://tierravallarta.com/en/developments/montage-residences-punta-mita-2/",
+   "https://tierravallarta.com/wp-content/uploads/2025/10/BROCHURE_montageres.pdf",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "cabo-real-surf-club-surf-casitas-boardwalk-homes-villas-meriwether-com",
+  "name": "Cabo Real Surf Club (Surf Casitas, Boardwalk Homes, Villas)",
+  "developer": "Meriwether Companies with Grupo Questro and Clubs Desarrolla (seller entity Promotora Cabo Real, S.A. de C.V.)",
+  "area": "Cabo Real, Km 19.5 Carretera 1, San Jose del Cabo corridor",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "under construction",
+  "url": "https://caborealsurfclub.com/",
+  "docs_url": "https://www.caborealsurfclub.com/real-estate",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: four product types (Surf Casitas, Boardwalk Homes, Villas, Estate Lots 2,200 to 2,600 m2)",
+   "developer: downloadable floor plan per home type",
+   "developer: prices on request",
+   "developer: legal footer naming Meriwether Companies and Promotora Cabo Real, S.A. de C.V.",
+   "press release (Dec 2024): infrastructure and golf under construction, opening 2026",
+   "trade press: grading done, vertical construction targeted end 2025, move-ins late 2026, over USD 200M sold (Jun 2026)"
+  ],
+  "note": "Private surf, golf and residential club around an Endless Surf wave basin inside the 3,000-acre Cabo Real master plan, developed by US firm Meriwether with the Sanchez Navarro family's Grupo Questro. Floor plans are published but prices are on request; trade press reports over USD 200 million in sales and casitas priced in the mid-USD 2 million range with move-ins planned for late 2026, while no permit number, escrow or PROFECO contract for the seller was found and local press questions water use. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone) - not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Grupo Questro and Clubs Desarrolla state 35+ years shaping Los Cabos resorts, golf courses and residential communities (developer partners page); Meriwether develops Coral Mountain (California)",
+   "units": 200,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No licence or MIA number published; May 2025 trade report says casita construction was 'pending infrastructure completion and permit approvals'. No PROFECO adhesion contract found for Promotora Cabo Real or the partners",
+   "escrow": "Nothing published on deposit protection",
+   "progress": "Developer-sourced construction updates relayed by Wave Pool Magazine (May 2025: phase 1 grading done, utilities next, vertical construction by year end); no % on developer site",
+   "plans": "Real estate page offers 'download floor plan' for Surf Casitas, Boardwalk Homes and Villas",
+   "record": "Developer partners page: Grupo Questro and Clubs Desarrolla 35+ years in Los Cabos; not independently tallied",
+   "returns": "No rental return language; legal footer says club access is not guaranteed and requires separate fees"
+  },
+  "claims": [
+   {
+    "claim": "Total sales exceed USD 200 million (Jun 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wavepoolmag.com/cabo-real-surf-club-homes/"
+   },
+   {
+    "claim": "Founders launch achieved over USD 50 million in homesite sales",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prnewswire.com/news-releases/meriwether-companies-announces-cabo-real-surf-club-a-first-of-its-kind-private-residential-community-in-los-cabos-302322833.html"
+   },
+   {
+    "claim": "Infrastructure and golf improvements under construction, opening 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prnewswire.com/news-releases/meriwether-companies-announces-cabo-real-surf-club-a-first-of-its-kind-private-residential-community-in-los-cabos-302322833.html"
+   },
+   {
+    "claim": "Vertical home construction to start by end 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wavepoolmag.com/cabo-real-surf-club-construction-update-2025/"
+   },
+   {
+    "claim": "Surf Casitas priced in the mid-USD 2 million range, move-ins late 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wavepoolmag.com/heres-what-it-will-cost-to-own-wave-pool-access-in-cabo/"
+   },
+   {
+    "claim": "More than 200 homes in the initial phase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gringogazette.com/cabo-real-surf-club-wave-of-progress-or-water-worry/"
+   },
+   {
+    "claim": "Project is expected to open in 2026 (local press)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gringogazette.com/cabo-real-surf-club-wave-of-progress-or-water-worry/"
+   },
+   {
+    "claim": "Seller Promotora Cabo Real has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Grupo Questro and Clubs Desarrolla have shaped Los Cabos for 35+ years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caborealsurfclub.com/development-partners"
+   },
+   {
+    "claim": "Floor plans downloadable for each home type",
+    "status": "verified",
+    "by": "none",
+    "source": "https://www.caborealsurfclub.com/real-estate"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Meriwether Companies (US); Grupo Questro (Los Cabos)",
+   "developer_company": "Promotora Cabo Real, S.A. de C.V. (named in site legal notice)",
+   "construction_start": "2024-12",
+   "handover_promised": "2026",
+   "unit_types": [
+    "3BR Surf Casita",
+    "Boardwalk Home",
+    "Villa up to 6BR",
+    "Estate Lot"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 2600,
+   "price_min": null,
+   "currency": "USD",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "brand": "Cabo Real Surf Club (Endless Surf wave basin)",
+   "amenities": [
+    "Endless Surf wave basin",
+    "Robert Trent Jones II golf course",
+    "beach club",
+    "wellness and recovery spa",
+    "padel, tennis, pickleball",
+    "mountain bike trails"
+   ],
+   "permit_authority": "Municipio de Los Cabos; SEMARNAT (MIA)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Floor plans published for each home type",
+   "Seller legal entity named on the website",
+   "Frequent dated construction updates in trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://caborealsurfclub.com/",
+   "https://www.caborealsurfclub.com/real-estate",
+   "https://caborealsurfclub.com/development-partners",
+   "https://wavepoolmag.com/cabo-real-surf-club-homes/",
+   "https://wavepoolmag.com/cabo-real-surf-club-construction-update-2025/",
+   "https://wavepoolmag.com/heres-what-it-will-cost-to-own-wave-pool-access-in-cabo/",
+   "https://gringogazette.com/cabo-real-surf-club-wave-of-progress-or-water-worry/",
+   "https://prnewswire.com/news-releases/meriwether-companies-announces-cabo-real-surf-club-a-first-of-its-kind-private-residential-community-in-los-cabos-302322833.html",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "marina-towers-torre-ii-marina-towers-s-a-p-i-de-c-v",
+  "name": "Marina Towers (Torre II)",
+  "developer": "Marina Towers, S.A.P.I. de C.V. (DMHG Desarrollo, Gonbar, sales SB Realtors)",
+  "area": "Paseo de la Marina 355, Marina Vallarta, Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "off-plan",
+  "url": "https://marinatowers.mx/",
+  "docs_url": "https://marinatowers.mx/disponibilidad-torre-ii/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 'Torre I terminada y Torre II ahora en preventa'",
+   "developer: dated Torre II price list (1 Nov 2026) per unit with m2, from USD 819,000, sold/reserved status",
+   "developer: floor plan, isometric and virtual tour per unit",
+   "developer: payment plans 30-60-10 (4% discount), 50-40-10 (8%), 90-10 (12%); USD 10,000 reservation",
+   "developer: live construction camera page",
+   "developer FAQ: three 25-floor towers of 113 units, 108.96 to 293.71 m2; legal warranties 1 year finishes, 5 years structure; 'no return or appreciation is guaranteed'",
+   "PROFECO: adhesion contract 459-2025 registered 24 Jan 2025 to Marina Towers, S.A.P.I. de C.V. (RFC MTO220308K21), Paseo de la Marina 355, Marina Vallarta"
+  ],
+  "note": "Second of three 25-floor beachfront towers in Marina Vallarta; the developer says Torre I is finished and Torre II is in presale with a dated per-unit price list from USD 819,000 (about USD 5,460 per m2), floor plans and a live camera. The seller's sale contract is registered with PROFECO (459-2025, same company and street address), but no construction licence, escrow or Torre II delivery date is published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 819000,
+   "currency": "USD",
+   "title": "fideicomiso (bank trust) for foreigners in the coastal zone",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer states Torre I of Marina Towers is finished (terminada); FAQ earlier gave Torre A completion as Q1 2026",
+   "units": 113,
+   "payment_plan": "USD 10,000 reservation; 30% down, 60% during construction, 10% on delivery (4% discount); 50-40-10 (8%); 90-10 (12%); direct developer financing",
+   "price_per_m2": 5460,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No licencia de construccion number published. The PROFECO register lists a sale adhesion contract (459-2025) for Marina Towers, S.A.P.I. de C.V. at the project street address; this is a consumer-contract registration, not a building permit",
+   "escrow": "No escrow or deposit guarantee; payments go to the developer during construction per the price list",
+   "progress": "Developer says Torre I finished and Torre II in presale and runs a live construction camera page; no % for Torre II",
+   "plans": "Per-unit floor plan, isometric and virtual tour links on the availability pages; unit sizes on the price list",
+   "record": "Torre I described as finished by the developer; FAQ names DMHG Desarrollo (architecture and construction) and Gonbar (construction track record), not independently confirmed",
+   "returns": "FAQ: 'ningun rendimiento o plusvalia esta garantizado'; site offers a buyer-side ROI calculator with no figures pre-filled"
+  },
+  "claims": [
+   {
+    "claim": "Seller Marina Towers, S.A.P.I. de C.V. has a PROFECO-registered sale contract (459-2025, 24 Jan 2025, Paseo de la Marina 355)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=459-2025"
+   },
+   {
+    "claim": "Torre I is finished",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/acerca-de-marina-towers/"
+   },
+   {
+    "claim": "Torre A completion scheduled for Q1 2026 (FAQ)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/preguntas-frecuentes/"
+   },
+   {
+    "claim": "Torre II units from USD 819,000 (price list 1 Nov 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/lista-de-precios-tb"
+   },
+   {
+    "claim": "About 20 Torre II units sold and 15 reserved on the price list",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/lista-de-precios-tb"
+   },
+   {
+    "claim": "Three 25-floor towers of 113 units each",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/preguntas-frecuentes/"
+   },
+   {
+    "claim": "Three towers of 130 residences each (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mexhome.com/dev/marina-towers-puerto-vallarta/"
+   },
+   {
+    "claim": "Legal warranties 1 year finishes, 5 years structure",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/preguntas-frecuentes/"
+   },
+   {
+    "claim": "No return or appreciation is guaranteed",
+    "status": "verified",
+    "by": "none",
+    "source": "https://marinatowers.mx/preguntas-frecuentes/"
+   },
+   {
+    "claim": "Developer and sales team are DMHG Desarrollo, Gonbar and SB Realtors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://marinatowers.mx/preguntas-frecuentes/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Puerto Vallarta, Jalisco, Mexico",
+   "developer_company": "Marina Towers, S.A.P.I. de C.V. (RFC MTO220308K21), per PROFECO",
+   "developer_projects_delivered": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR + family room",
+    "6BR penthouse"
+   ],
+   "size_min_m2": 108.96,
+   "size_max_m2": 485,
+   "price_min": 819000,
+   "price_max": 5250000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30-60-10, 50-40-10, 90-10 with 4/8/12% discounts",
+   "foreign_ownership": "Bank fideicomiso in the restricted zone (FAQ)",
+   "rental_programme": null,
+   "amenities": [
+    "infinity pools",
+    "beach club",
+    "yacht club",
+    "spa",
+    "gym",
+    "gourmet restaurant",
+    "sports courts",
+    "pet area"
+   ],
+   "permit_authority": "Municipio de Puerto Vallarta (Direccion de Desarrollo Urbano)",
+   "brochure_url": "https://marinatowers.mx/redbook/",
+   "developer_founded": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "delay_months": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Seller contract registered with PROFECO under the same company and address",
+   "Dated per-unit price list with sold and reserved status",
+   "First tower reported finished by the developer",
+   "FAQ states explicitly that no return is guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://marinatowers.mx/",
+   "https://marinatowers.mx/acerca-de-marina-towers/",
+   "https://marinatowers.mx/preguntas-frecuentes/",
+   "https://marinatowers.mx/lista-de-precios-tb",
+   "https://marinatowers.mx/disponibilidad-torre-ii/",
+   "https://marinatowers.mx/live-cam/",
+   "https://rpca.profeco.gob.mx/getDoc?p=459-2025",
+   "https://mexhome.com/dev/marina-towers-puerto-vallarta/"
+  ]
+ },
+ {
+  "slug": "mistral-costa-mujeres-evalor",
+  "name": "Mistral Costa Mujeres",
+  "developer": "Evalor",
+  "area": "Punta Sam, Costa Mujeres (Isla Mujeres municipality), Cancun",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "url": "https://www.mistralcostamujeres.com/",
+  "docs_url": "https://www.mistralcostamujeres.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: designed by Legorreta, developed by Evalor ('more than 10 years' in Monterrey and Cancun)",
+   "developer: 'Obra en marcha' and 'Obra con entrega garantizada'",
+   "developer: 2, 3 and 4 bedroom models (Coral, Vela, Arena, Cielo, Ola, Mar) with 360 virtual tours, prices from MXN 14.4 million",
+   "developer: 10% down, up to 24 months to pay",
+   "news (PorEsto, Jan 2025): SEMARNAT approved the MIA for an 11-level, 37-unit building on 4,649 m2, 30 months of construction"
+  ],
+  "note": "Eleven-level beachfront condo building by Monterrey developer Evalor, designed by Legorreta, at Punta Sam north of Cancun, from MXN 14.4 million with 10% down. PorEsto reported in January 2025 that SEMARNAT approved its environmental impact statement but that the 37-unit building exceeds the 17-unit limit of the local partial plan in a protected zone; the developer publishes no permit number, escrow, plans or progress figure and promises 'guaranteed delivery'. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 14400000,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone) - not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 37,
+   "payment_plan": "From 10% down, up to 24 months to pay",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Developer publishes no permit number. PorEsto (24 Jan 2025) reports SEMARNAT authorized the project's MIA (filed June 2024) with 30 months for preparation and construction; MIA number not given",
+   "escrow": "None published; 'entrega garantizada' is a marketing claim with no guarantor named",
+   "progress": "Only 'Obra en marcha' text, no % or dated photos",
+   "plans": "Model pages offer 360 virtual tours and 'ver detalles' but no floor plans with dimensions",
+   "record": "Developer claims 10+ years developing in Monterrey and Cancun but names no completed projects",
+   "returns": "No yield or return guarantee; site mentions 'esquemas atractivos de inversion' and the 'best occupancy zone in Quintana Roo' without figures"
+  },
+  "claims": [
+   {
+    "claim": "SEMARNAT approved the project's environmental impact statement (MIA)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.poresto.com/quintana-roo/cancun/2025/1/24/semarnat-autoriza-construccion-de-condominios-en-area-protegida-de-punta-sam-.amp.html"
+   },
+   {
+    "claim": "Building complies with the local density rules",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.poresto.com/quintana-roo/cancun/2025/1/24/semarnat-autoriza-construccion-de-condominios-en-area-protegida-de-punta-sam-.amp.html"
+   },
+   {
+    "claim": "37 units on 11 levels on a 4,649 m2 plot",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.poresto.com/quintana-roo/cancun/2025/1/24/semarnat-autoriza-construccion-de-condominios-en-area-protegida-de-punta-sam-.amp.html"
+   },
+   {
+    "claim": "Construction under way ('Obra en marcha')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mistralcostamujeres.com/"
+   },
+   {
+    "claim": "Delivery is guaranteed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mistralcostamujeres.com/"
+   },
+   {
+    "claim": "Evalor has more than 10 years developing projects in Monterrey and Cancun",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mistralcostamujeres.com/"
+   },
+   {
+    "claim": "Prices from MXN 14.4 million (developer) / USD 615,110 (as quoted by PorEsto)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mistralcostamujeres.com/"
+   },
+   {
+    "claim": "Designed by Legorreta",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mistralcostamujeres.com/"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract under the Mistral or Evalor name",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Presale housing contract registered to Riviera Isla Maya, S.A. de C.V. at a Punta Sam highway address (link to Mistral not established)",
+    "status": "unverified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=7215-2024"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Monterrey and Cancun, Mexico",
+   "developer_company": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "price_min": 14400000,
+   "currency": "MXN",
+   "deposit_pct": 10,
+   "payment_plan": "10% down, up to 24 months",
+   "foreign_ownership": null,
+   "brand": null,
+   "amenities": [
+    "private beach club",
+    "private pier",
+    "spa",
+    "gym",
+    "kids club",
+    "business center",
+    "boat garage",
+    "padel"
+   ],
+   "permit_authority": "SEMARNAT (MIA); Municipio de Isla Mujeres (licencia de construccion)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_max": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Federal environmental approval reported by the press",
+   "Low 10% deposit with payments spread over 24 months"
+  ],
+  "flags": [
+   {
+    "text": "PorEsto reported that SEMARNAT authorized the project in an area under environmental protection and that the 37-unit building exceeds the 17-unit limit set by the Punta Sam partial development plan.",
+    "source": "https://www.poresto.com/quintana-roo/cancun/2025/1/24/semarnat-autoriza-construccion-de-condominios-en-area-protegida-de-punta-sam-.amp.html"
+   }
+  ],
+  "sources": [
+   "https://www.mistralcostamujeres.com/",
+   "https://www.mistralcostamujeres.com/aviso-de-privacidad",
+   "https://www.poresto.com/quintana-roo/cancun/2025/1/24/semarnat-autoriza-construccion-de-condominios-en-area-protegida-de-punta-sam-.amp.html",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s",
+   "https://rpca.profeco.gob.mx/getDoc?p=7215-2024"
+  ]
+ },
+ {
+  "slug": "sanara-residential-phase-ii-reserva-conchal-reserva-conchal",
+  "name": "Sanara Residential Phase II (Reserva Conchal)",
+  "developer": "Reserva Conchal",
+  "area": "Reserva Conchal, Playa Conchal, Cabo Velas, Santa Cruz, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "stage": "under construction",
+  "url": "https://www.coldwellbankertamarindo.com/property/3-bed-single-family-homes-for-sale-in-playa-conchal/17297",
+  "docs_url": "https://reservaconchal.com/sanara-ii/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: Phase II siteplan with 28 lots, lot sizes and live status (available, reserved, under contract)",
+   "developer: area schedules for Standard 3BR/4BR, Deluxe 3BR/4BR and 2BR casita (AC, terraces, pool, garage m2)",
+   "developer: 'titled and fee simple ownership', private pool in every model, solar systems",
+   "developer: downloadable booklet",
+   "agent (Krain): Deluxe 4BR from USD 1,428,259 to 1,544,199 per lot, casita +USD 115,000, construction status 'Under Construction'",
+   "agent (Coldwell Banker): 27 homes, USD 1.17M to 1.55M, HOA about USD 500 a month"
+  ],
+  "note": "Second phase of turnkey villas with private pools inside the Reserva Conchal resort (Westin and W hotels, Robert Trent Jones II golf course) at Playa Conchal; the developer publishes a live lot-status siteplan and detailed area schedules and states fee simple titled ownership. Agents quote USD 1.17 to 1.55 million and list it as under construction, but no permit, escrow, progress figure or delivery date is published. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 1170500,
+   "currency": "USD",
+   "title": "fee simple titled ownership (developer)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Reserva Conchal operates an established resort community with The Westin Reserva Conchal and W Costa Rica hotels, a beach club and a golf course certified by Audubon International since 2001 (developer site); Sanara Phase I precedes this phase",
+   "units": 28,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No SETENA environmental viability or municipal construction permit number published",
+   "escrow": "No escrow or deposit protection terms published",
+   "progress": "Agent listing marks 'Under Construction', developer shows only lot sales status; no % or dated photos",
+   "plans": "Developer publishes per-model area schedules (e.g. Standard 3BR 329 m2 total, Deluxe 4BR 473 m2) and a siteplan with lot sizes; booklet download",
+   "record": "Developer site: functioning resort community with two branded hotels, beach club and golf course (Audubon certified since 2001); no independent count of homes delivered",
+   "returns": "No yield or rental guarantee on developer or agent pages"
+  },
+  "claims": [
+   {
+    "claim": "Titled and fee simple ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reservaconchal.com/sanara-ii/"
+   },
+   {
+    "claim": "Phase II has 28 lots (developer siteplan)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reservaconchal.com/sanara-ii/"
+   },
+   {
+    "claim": "Phase II has 27 residences (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.coldwellbankertamarindo.com/property/3-bed-single-family-homes-for-sale-in-playa-conchal/17297"
+   },
+   {
+    "claim": "Deluxe 4BR priced USD 1,428,259 to 1,544,199",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kraincostarica.com/en/search-properties/rs2401370"
+   },
+   {
+    "claim": "Prices from USD 1.17M to 1.55M, HOA about USD 500 per month",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.coldwellbankertamarindo.com/property/3-bed-single-family-homes-for-sale-in-playa-conchal/17297"
+   },
+   {
+    "claim": "Construction status: under construction, year built 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kraincostarica.com/en/search-properties/rs2401370"
+   },
+   {
+    "claim": "Lots 31, 33, 34, 36, 41, 45 to 47, 50, 52, 53, 57, 58 under contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reservaconchal.com/sanara-ii/"
+   },
+   {
+    "claim": "Golf course certified by Audubon International since 2001",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reservaconchal.com/"
+   },
+   {
+    "claim": "Westin and W Costa Rica hotels operate in the community",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reservaconchal.com/"
+   },
+   {
+    "claim": "Permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reservaconchal.com/sanara-ii/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Playa Conchal, Cabo Velas, Guanacaste, Costa Rica",
+   "unit_types": [
+    "3BR standard",
+    "4BR standard",
+    "3BR deluxe",
+    "4BR deluxe",
+    "2BR casita add-on"
+   ],
+   "size_min_m2": 329,
+   "size_max_m2": 473,
+   "price_min": 1170500,
+   "price_max": 1544199,
+   "currency": "USD",
+   "foreign_ownership": "Fee simple titled ownership (developer); foreigners may hold title directly outside the maritime zone",
+   "service_charge": "HOA about USD 500 per month (agent)",
+   "brand": null,
+   "amenities": [
+    "private pool per home",
+    "beach club",
+    "golf club",
+    "spa",
+    "integrated solar",
+    "hiking trails"
+   ],
+   "permit_authority": "Municipalidad de Santa Cruz; SETENA (environmental viability)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Live lot-by-lot sales status published by the developer",
+   "Detailed area schedules per model",
+   "Fee simple ownership stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://reservaconchal.com/sanara-ii/",
+   "https://reservaconchal.com/",
+   "https://kraincostarica.com/en/search-properties/rs2401370",
+   "https://www.coldwellbankertamarindo.com/property/3-bed-single-family-homes-for-sale-in-playa-conchal/17297"
+  ]
+ },
+ {
+  "slug": "cavarosa-signature-residences-thevelopers",
+  "name": "Cavarosa Signature Residences",
+  "developer": "TheVelopers",
+  "area": "Calzada de Amador, Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "stage": "under construction",
+  "url": "https://www.the-velopers.com/cavarosa?hsLang=es-pa",
+  "docs_url": "https://www.the-velopers.com/cavarosa?hsLang=es-pa",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: unit types 1BR 60 and 65 m2, 2BR 94 and 106 m2",
+   "developer: rooftop Club Cavarosa amenities",
+   "developer blog (Oct 2026): structure 61% complete, slabs poured at levels 600, 1200 and 1300, interiors on lower floors",
+   "developer blog: delivery estimated Q1 2028",
+   "developer: lists earlier projects Velure, Vita, Victory Sport and Vector Wellness"
+  ],
+  "note": "Oceanfront condo tower on the Amador Causeway by Panama developer TheVelopers; the developer's October 2026 construction report gives 61% of the structure done and delivery estimated for Q1 2028. Unit sizes are published but no prices, floor plans, permit numbers or deposit protection, and the amenities section still carries placeholder text. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 61,
+   "progress_updates": true,
+   "developer_delivered": "Developer blog names earlier projects Velure, Vita, Victory Sport and Vector Wellness as completed concepts in Panama City (not independently confirmed)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No construction permit (Municipio de Panama) or MiAmbiente EIA resolution number published",
+   "escrow": "No escrow, fideicomiso or bank guarantee mentioned",
+   "progress": "Monthly developer blog: 61% structure in October 2026 with listed works and next milestones; video",
+   "plans": "Only unit sizes and bedroom counts; no plan drawings found",
+   "record": "Developer lists Velure, Vita, Victory Sport and Vector Wellness as previous projects; no handover dates",
+   "returns": "No return or rental guarantee language"
+  },
+  "claims": [
+   {
+    "claim": "Structure 61% complete (October 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.the-velopers.com/cavarosa-amador-avances-construccion-octubre2026?hsLang=es-pa"
+   },
+   {
+    "claim": "Delivery estimated Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.the-velopers.com/cavarosa-amador-avances-construccion-octubre2026?hsLang=es-pa"
+   },
+   {
+    "claim": "Concrete pours completed on levels 600, 1200 and 1300 in October 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.the-velopers.com/cavarosa-amador-avances-construccion-octubre2026?hsLang=es-pa"
+   },
+   {
+    "claim": "Units of 60, 65, 94 and 106 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.the-velopers.com/cavarosa?hsLang=es-pa"
+   },
+   {
+    "claim": "Oceanfront location on the Amador Causeway",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.the-velopers.com/cavarosa?hsLang=es-pa"
+   },
+   {
+    "claim": "TheVelopers delivered Velure, Vita, Victory Sport and Vector Wellness",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.the-velopers.com/m%C3%A1s-que-simples-torres-thevelopers-y-la-ciudad-del-futuro-en-panam%C3%A1?hsLang=es-pa"
+   },
+   {
+    "claim": "Developer also building Nayamara (Amador) and Bioma (Costa del Este)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.the-velopers.com/"
+   },
+   {
+    "claim": "Foundations 100% poured by May 2026; delivery from Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.the-velopers.com/avanzamos-con-firmeza-en-la-estructura-de-cavarosa?hsLang=es-pa"
+   },
+   {
+    "claim": "Construction permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.the-velopers.com/cavarosa?hsLang=es-pa"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Panama City, Panama",
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 106,
+   "currency": "USD",
+   "foreign_ownership": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "jacuzzi",
+    "bar",
+    "lounges",
+    "private cabanas",
+    "co-working"
+   ],
+   "permit_authority": "Municipio de Panama (Direccion de Obras y Construcciones); MiAmbiente (EIA)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Monthly dated construction reports with a structure percentage",
+   "Delivery quarter stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.the-velopers.com/cavarosa?hsLang=es-pa",
+   "https://blog.the-velopers.com/cavarosa-amador-avances-construccion-octubre2026?hsLang=es-pa",
+   "https://blog.the-velopers.com/avanzamos-con-firmeza-en-la-estructura-de-cavarosa?hsLang=es-pa",
+   "https://www.the-velopers.com/",
+   "https://blog.the-velopers.com/m%C3%A1s-que-simples-torres-thevelopers-y-la-ciudad-del-futuro-en-panam%C3%A1?hsLang=es-pa"
+  ]
+ },
+ {
+  "slug": "one-only-mandarina-private-homes-rlh-properties-s-a-b-de-c-v",
+  "name": "One&Only Mandarina Private Homes",
+  "developer": "RLH Properties, S.A.B. de C.V. (BMV: RLH), One&Only brand licensed from Kerzner",
+  "area": "Mandarina, Compostela, Nayarit",
+  "country": "Mexico",
+  "market": "Riviera Nayarit",
+  "stage": "off-plan",
+  "url": "https://www.oneandonlyresorts.com/mandarina/private-homes",
+  "docs_url": "https://discovermandarina.com/one-and-only/one-and-only-private-homes/one-and-only-real-estate-offerings/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 55 villas and homesites, 3 to 8+1 bedrooms",
+   "developer: per-villa area schedules (interior AC, non-AC, exterior, total m2) and 'informes sobre los planos'",
+   "developer: 'ownership opportunities starting at USD 4.95 million', prices on request per villa",
+   "developer legal notice: RLH Properties is the developer; construction subject to permits",
+   "RLH BMV prospectus (Jan 2025): residential component of up to 55 residences; Mandarina master plan has environmental authorization for 1,271 rooms and 600 residential units",
+   "RLH Q1 2026 interim statements: 51 One&Only lots available for sale, no residential sales booked in Q1 2026"
+  ],
+  "note": "Branded villas and homesites beside the One&Only Mandarina resort, developed and sold by BMV-listed RLH Properties under a Kerzner licence, from USD 4.95 million. RLH's own stock-exchange filings confirm the 55-residence component and state that 51 lots were still available in March 2026 with no residential sales that quarter; per-villa area schedules are published but no permit number, escrow, progress or delivery dates. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 4950000,
+   "currency": "USD",
+   "title": "condominium regime; restricted zone fideicomiso not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "RLH Properties (founded 2013) reported 25 of 33 Rosewood Mayakoba residences delivered by end 2023 and the One&Only Mandarina hotel opened Nov 2020 (BMV prospectus Jan 2025)",
+   "units": 55,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No licence number. RLH's BMV prospectus states the Mandarina master plan holds an environmental impact authorization for 1,271 rooms and 600 residential units (no resolution number); the developer legal notice says construction is subject to obtaining permits",
+   "escrow": "No escrow or deposit terms; Q1 2026 statements show customer advances for residence purchases held by RLH",
+   "progress": "No construction progress for the villas; filings show lots, not finished homes, available",
+   "plans": "Per-villa area schedules and plan request links for about 40 villa numbers",
+   "record": "BMV prospectus (Jan 2025): 33 Rosewood Mayakoba residences with 31 sold and 25 delivered at end 2023; Fairmont Heritage Place 38 full-time residences sold; One&Only hotel opened 2020",
+   "returns": "No guaranteed return; legal notice says nothing is guaranteed"
+  },
+  "claims": [
+   {
+    "claim": "Private Homes component of up to 55 residences on land next to the hotel",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/reescorp/reescorp_1436865_1.pdf"
+   },
+   {
+    "claim": "Mandarina master plan has environmental authorization for 1,271 rooms and 600 residential units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/reescorp/reescorp_1436865_1.pdf"
+   },
+   {
+    "claim": "51 One&Only lots available for sale at 31 March 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bmv.com.mx/docs-pub/infinan/infinan_1554470_2026-01_1.pdf"
+   },
+   {
+    "claim": "No residential sales revenue in Q1 2026 (MXN 171 million in Q1 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bmv.com.mx/docs-pub/infinan/infinan_1554470_2026-01_1.pdf"
+   },
+   {
+    "claim": "RLH delivered 25 of 33 Rosewood Mayakoba residences by end 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/reescorp/reescorp_1436865_1.pdf"
+   },
+   {
+    "claim": "One&Only Mandarina hotel opened 1 Nov 2020",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bmv.com.mx/docs-pub/reescorp/reescorp_1436865_1.pdf"
+   },
+   {
+    "claim": "Ownership opportunities from USD 4.95 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discovermandarina.com/one-and-only/one-and-only-private-homes/one-and-only-real-estate-offerings/"
+   },
+   {
+    "claim": "Villas of 4 to 8 bedrooms with 7,500 to 19,000 sq ft",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discovermandarina.com/one-and-only/one-and-only-private-homes/one-and-only-real-estate-offerings/"
+   },
+   {
+    "claim": "RLH Properties is the developer; Kerzner does not own, develop or sell the homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.discovermandarina.com"
+   },
+   {
+    "claim": "One&Only Mandarina Villa 14 priced at USD 32 million (market report)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://odigos.mx/analista/puerto-vallarta/q1-2026"
+   },
+   {
+    "claim": "Construction permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discovermandarina.com/one-and-only/_private-homes-riviera-nayarit/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2013,
+   "developer_hq": "Mexico City (Paseo de la Reforma 412), Mexico",
+   "developer_company": "RLH Properties, S.A.B. de C.V.",
+   "listed_or_audited": "Listed on the Bolsa Mexicana de Valores (RLH A); quarterly interim statements filed",
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa",
+    "8BR estate villa",
+    "homesite"
+   ],
+   "size_min_m2": 496,
+   "size_max_m2": 2085,
+   "price_min": 4950000,
+   "currency": "USD",
+   "foreign_ownership": "Condominium regime (developer notice); coastal zone fideicomiso not stated",
+   "rental_programme": null,
+   "brand": "One&Only (Kerzner licence)",
+   "amenities": [
+    "One&Only resort services",
+    "spa",
+    "beach club",
+    "polo and equestrian club",
+    "golf club (planned)",
+    "kids club"
+   ],
+   "permit_authority": "SEMARNAT (MIA); Municipio de Compostela",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Developer is a listed company that reports lot inventory and residential revenue to the stock exchange",
+   "Detailed per-villa area schedules",
+   "Track record of delivered branded residences documented in exchange filings"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.oneandonlyresorts.com/mandarina/private-homes",
+   "https://www.discovermandarina.com",
+   "https://discovermandarina.com/one-and-only/_private-homes-riviera-nayarit/",
+   "https://discovermandarina.com/one-and-only/one-and-only-private-homes/one-and-only-real-estate-offerings/",
+   "https://discovermandarina.com/faq/",
+   "https://bmv.com.mx/docs-pub/reescorp/reescorp_1436865_1.pdf",
+   "https://www.bmv.com.mx/docs-pub/infinan/infinan_1554470_2026-01_1.pdf",
+   "https://odigos.mx/analista/puerto-vallarta/q1-2026"
+  ]
+ },
+ {
+  "slug": "pendry-residences-mexico-city-grupo-tgt-grupo-mrp-and-central-de-arqui",
+  "name": "Pendry Residences Mexico City",
+  "developer": "Grupo TGT, Grupo MRP and Central de Arquitectura (joint venture); sales by Mexico City Residential Development Group, LLC; brand Pendry (Montage International)",
+  "area": "Durango 259, Roma Norte, Cuauhtemoc, Mexico City",
+  "country": "Mexico",
+  "market": "Mexico City",
+  "stage": "under construction",
+  "url": "https://pendrymexicocityresidences.com",
+  "docs_url": "https://pendrymexicocityresidences.com",
+  "permit_number": null,
+  "docs_listed": [
+   "sales site: 20 turnkey residences on floors 4 to 7 of a 114-key Pendry hotel",
+   "sales site: priced from USD 1.5M, 'available 2027', 1 to 3 bedrooms, 860 to 2,300 sq ft",
+   "sales site: brochure and sample floor plans behind a registration form",
+   "brand press release (Jun 2024): opening 2026, JV of Grupo TGT, Grupo MRP and Central de Arquitectura",
+   "trade press: construction started (groundbreaking)"
+  ],
+  "note": "Twenty branded apartments above the 114-key Pendry hotel on Durango 259 in Roma Norte, sold by a US marketing company from USD 1.5 million with availability in 2027; the brand announced a 2026 opening in June 2024, so the date has moved by about a year. No permit, escrow, progress figure or public floor plans (only behind a sign-up form), and no PROFECO contract found for the partners. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": 1500000,
+   "currency": "USD",
+   "title": "freehold condominium (foreigners may own directly in Mexico City) - not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 20,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No construction registration (manifestacion de construccion) number published; no PROFECO adhesion contract found for Grupo TGT, Grupo MRP or the address",
+   "escrow": "Nothing published",
+   "progress": "Trade press reports construction started; no developer progress data",
+   "plans": "Floor plans only after submitting a lead form; not public",
+   "record": "Partners named but no completed projects listed on the sales site",
+   "returns": "No rental return or guarantee language"
+  },
+  "claims": [
+   {
+    "claim": "20 residences and 114 guestrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.prweb.com/releases/pendry-hotels--resorts-announces-pendry-mexico-city-and-pendry-residences-mexico-city-302162266.html"
+   },
+   {
+    "claim": "Opening 2026 (brand release, Jun 2024)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.prweb.com/releases/pendry-hotels--resorts-announces-pendry-mexico-city-and-pendry-residences-mexico-city-302162266.html"
+   },
+   {
+    "claim": "Residences available 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pendrymexicocityresidences.com"
+   },
+   {
+    "claim": "Construction has started (groundbreaking reported)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.luxurytraveladvisor.com/hotels/pendry-mexico-city-breaks-ground-roma-norte"
+   },
+   {
+    "claim": "Priced from USD 1.5 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pendrymexicocityresidences.com"
+   },
+   {
+    "claim": "Initial prices of USD 1.4 million (Bloomberg Linea, Jan 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.bloomberglinea.com/estilo-de-vida/pendry-aterriza-en-mexico-este-es-el-precio-de-sus-primeras-residencias-de-ultralujo-en-latam/"
+   },
+   {
+    "claim": "Developer JV: Grupo TGT, Grupo MRP, Central de Arquitectura",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.prweb.com/releases/pendry-hotels--resorts-announces-pendry-mexico-city-and-pendry-residences-mexico-city-302162266.html"
+   },
+   {
+    "claim": "Sales site operated by Mexico City Residential Development Group, LLC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pendrymexicocityresidences.com"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   },
+   {
+    "claim": "Completion expected 2027 (tracker)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/pendry-mexico-city/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mexico City, Mexico",
+   "developer_company": null,
+   "original_handover": "2026",
+   "handover_promised": "2027",
+   "delay_months": 12,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 214,
+   "price_min": 1500000,
+   "currency": "USD",
+   "foreign_ownership": null,
+   "brand": "Pendry Residences (Montage International)",
+   "amenities": [
+    "Spa Pendry",
+    "rooftop pool",
+    "three restaurants",
+    "fitness center",
+    "owners' lounge",
+    "private owners' elevator",
+    "valet parking"
+   ],
+   "permit_authority": "Alcaldia Cuauhtemoc / SEDUVI (Ciudad de Mexico)",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Brand and partners confirmed in the operator's own press release",
+   "Small 20-unit building with published size range and starting price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://pendrymexicocityresidences.com",
+   "https://www.prweb.com/releases/pendry-hotels--resorts-announces-pendry-mexico-city-and-pendry-residences-mexico-city-302162266.html",
+   "https://www.luxurytraveladvisor.com/hotels/pendry-mexico-city-breaks-ground-roma-norte",
+   "https://www.bloomberglinea.com/estilo-de-vida/pendry-aterriza-en-mexico-este-es-el-precio-de-sus-primeras-residencias-de-ultralujo-en-latam/",
+   "https://www.oftmw.com/projects/pendry-mexico-city/",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ },
+ {
+  "slug": "mandarin-oriental-residences-kanai-riviera-maya-inmobiliaria-kanai-onc",
+  "name": "Mandarin Oriental Residences Kanai, Riviera Maya",
+  "developer": "Inmobiliaria Kanai Once (GIM Holdings / GIM Desarrollos)",
+  "area": "Kanai, between Cancun and Playa del Carmen (Puerto Morelos corridor)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "off-plan",
+  "url": "https://mo-residencesrivieramaya.com",
+  "docs_url": "https://mo-residencesrivieramaya.com/residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: four collections (Aire full-floor 3-4BR with private pools, Tierra 9 ocean villas 3BR, Agua 7BR estates, Fuego 'coming 2027')",
+   "developer: project company Inmobiliaria Kanai Once, member of GIM Holdings (50 years, three generations)",
+   "developer: architect Migdal, interiors Meyer Davis and Esrawe",
+   "trade press: 120-key Mandarin Oriental resort with 50 residences in the 680-acre Kanai gated community, opening 2028",
+   "no prices, plans, permits or deposit terms published"
+  ],
+  "note": "Branded villas and full-floor apartments in a planned Mandarin Oriental resort inside the gated Kanai community near Playa del Carmen, developed by GIM's project company Inmobiliaria Kanai Once; the brand's trade coverage gives 120 keys, about 50 residences and a 2028 opening. The sales site publishes collection descriptions only: no prices, floor plans, permit, escrow or construction status, and no PROFECO contract was found for the project company. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "status": "active",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "GIM Holdings states 50 years and 'dozens of active projects' across Mexico in residential, commercial, industrial and hospitality real estate (developer team page); no completed project named",
+   "units": 50,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No MIA, land-use or construction licence published; no PROFECO adhesion contract found under 'Kanai' or GIM",
+   "escrow": "Nothing published",
+   "progress": "No construction status; tracker lists it as announced, not started",
+   "plans": "Bedroom counts per collection only",
+   "record": "Developer claims 50 years and three generations but names no delivered projects",
+   "returns": "No return language"
+  },
+  "claims": [
+   {
+    "claim": "Mandarin Oriental resort with 120 rooms and 50 residences, opening 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelmanagement.net/development/mandarin-oriental-open-riviera-maya-resort"
+   },
+   {
+    "claim": "Developer is GIM Desarrollos",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelmanagement.net/development/mandarin-oriental-open-riviera-maya-resort"
+   },
+   {
+    "claim": "Part of the 680-acre Kanai gated community",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelmanagement.net/development/mandarin-oriental-open-riviera-maya-resort"
+   },
+   {
+    "claim": "49 residences; not yet under construction (tracker)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/mandarin-oriental-residences-kanai/"
+   },
+   {
+    "claim": "Project company Inmobiliaria Kanai Once, member of GIM Holdings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mo-residencesrivieramaya.com/team/"
+   },
+   {
+    "claim": "GIM Holdings has 50 years of history",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mo-residencesrivieramaya.com/team/"
+   },
+   {
+    "claim": "Tierra Collection has nine 3BR ocean villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mo-residencesrivieramaya.com/residences/"
+   },
+   {
+    "claim": "Fuego Collection coming 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mo-residencesrivieramaya.com/residences/"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mexico",
+   "developer_company": "Inmobiliaria Kanai Once (GIM Holdings group)",
+   "handover_promised": "2028",
+   "unit_types": [
+    "3-4BR full-floor residence",
+    "3BR villa",
+    "7BR estate"
+   ],
+   "currency": "USD",
+   "brand": "Mandarin Oriental Residences",
+   "amenities": [
+    "Water Beach Club",
+    "Air Residents' Club",
+    "Mandarin Oriental spa",
+    "Mokan beach restaurant",
+    "pier",
+    "Earth eatery"
+   ],
+   "permit_authority": "SEMARNAT (MIA); Municipio de Puerto Morelos / Solidaridad",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Hotel operator and developer confirmed by trade press",
+   "Project company named on the sales site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mo-residencesrivieramaya.com",
+   "https://mo-residencesrivieramaya.com/residences/",
+   "https://mo-residencesrivieramaya.com/team/",
+   "https://www.hotelmanagement.net/development/mandarin-oriental-open-riviera-maya-resort",
+   "https://www.oftmw.com/projects/mandarin-oriental-residences-kanai/",
+   "https://rpca.profeco.gob.mx/busqueda?t=a&a=s"
+  ]
+ }
+]

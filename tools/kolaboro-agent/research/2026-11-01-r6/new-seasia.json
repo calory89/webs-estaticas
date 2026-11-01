@@ -1,0 +1,1538 @@
+[
+ {
+  "slug": "westin-residences-penang-macrovest",
+  "name": "The Westin Residences Penang",
+  "developer": "Macrovest Sdn. Bhd. (VST Group)",
+  "area": "Gurney Drive / Gurney Bay, George Town, Penang",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://www.edgeprop.my/content/1913249/westin-residences-gurney-bay-luxury-seafront-living",
+  "docs_url": "https://www.vstgroup.com.my/our-projects/the-westin-penang/",
+  "seed": {
+   "price": 2059750,
+   "currency": "MYR",
+   "title": "freehold (residential title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": true,
+   "permit_number": "30813-1/02-2028/0125(A)-(S)",
+   "plans_published": true,
+   "escrow": "Developer names no HDA account; TEDUH records a Schedule H (Jadual H) sale agreement under the statutory Housing Development Account stage-payment regime",
+   "progress_pct": 34.08,
+   "progress_updates": true,
+   "developer_delivered": "VST Group lists completed residential projects including Codrington Residence, Mont Residence, Jazz Residence (Penang) and Reizz Residence (KL); Marriott Residences Penang on the same Gurney Drive seafront completed 2023 (Wikipedia, owner BSG Property)",
+   "units": 498,
+   "payment_plan": null,
+   "price_per_m2": 21528
+  },
+  "docs_listed": [
+   "developer (VST Group): 69-storey tower, 498 residences, 10-level car park podium, 28-storey Westin hotel with 217 rooms",
+   "TEDUH: advertising permit 30813-1/02-2028/0125(A)-(S), developer licence 30813/07-2029/0155(A)",
+   "TEDUH: approved KPKT brochure with price range RM2,059,750 to RM34,302,060 and a unit layout",
+   "TEDUH: 34.08% built (latest 7(f) report), status Lancar, approved 24-month delivery extension to 22 May 2030",
+   "marketing site: floor plans Types A to D (1,033 to 3,670 sq ft), stacking plans, expected completion 2030",
+   "news: launched Sep 2025 with 75% take-up, from RM2,000 psf"
+  ],
+  "note": "69-storey, 498-unit Marriott-branded (Westin) freehold residence on Gurney Drive, officially launched Sep 2025 with 75% take-up reported by Bernama. TEDUH shows 34.08% built and an approved 24-month extension that moves vacant possession from 22 May 2028 to 22 May 2030, while EdgeProp still quoted mid-2028. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "TEDUH project 30813-1 shows advertising and sales permit 30813-1/02-2028/0125(A)-(S) valid 12 Feb 2025 to 11 Feb 2028 and developer licence 30813/07-2029/0155(A) for Macrovest Sdn. Bhd.; the number is not on the developer page",
+   "escrow": "No HDA bank or account named by developer; TEDUH lists a Jadual H (Schedule H) sale agreement, the statutory HDA stage-payment regime",
+   "progress": "TEDUH (latest 7(f) HIMS report): condominium component 34.08% complete, status Lancar (on track)",
+   "plans": "Marketing site publishes Type A to D floor plans and stacking plans; KPKT-approved brochure on TEDUH shows a unit layout",
+   "record": "VST Group site lists completed residential projects in Penang and KL; Wikipedia confirms the neighbouring Marriott Residences Penang completed in 2023",
+   "returns": "No guaranteed rental or yield wording on developer page, brochure or marketing site"
+  },
+  "positives": [
+   "TEDUH shows a live sales permit and a registry construction figure (34.08%)",
+   "Approved delivery extension is disclosed on the official register, so buyers can see the new 2030 date",
+   "Freehold residential title, price range published in an approved brochure"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Sales permit 30813-1/02-2028/0125(A)-(S) is valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1"
+   },
+   {
+    "claim": "Developer Macrovest Sdn. Bhd. holds an active KPKT developer licence",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1"
+   },
+   {
+    "claim": "498 units in one 69-storey tower",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1"
+   },
+   {
+    "claim": "Prices from RM2.06M to RM34.3M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://hims.kpkt.gov.my/files/30813/P45/P45-20250410-00015582/IKLAN_BROSUR_01.pdf"
+   },
+   {
+    "claim": "Target completion mid-2028",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1"
+   },
+   {
+    "claim": "Delivery extended by 24 months to 22 May 2030 with approval",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1"
+   },
+   {
+    "claim": "Construction about one third complete and on track",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1"
+   },
+   {
+    "claim": "75% take-up since soft launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newswav.com/article/69-storey-westin-residences-launches-in-penang-with-75-take-up-A2509_TpDgcx"
+   },
+   {
+    "claim": "Marriott International brand partner (Westin)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newswav.com/article/69-storey-westin-residences-launches-in-penang-with-75-take-up-A2509_TpDgcx"
+   },
+   {
+    "claim": "Group previously delivered Marriott Residences Penang",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Marriott_Residences_Penang"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1913249/westin-residences-gurney-bay-luxury-seafront-living"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vstgroup.com.my/our-projects/the-westin-penang/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1990,
+   "developer_hq": "Penang, Malaysia",
+   "developer_company": "Macrovest Sdn. Bhd. (KPKT developer code 30813, licence 30813/07-2029/0155(A))",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": "2028-Q2",
+   "delay_months": 24,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 96,
+   "size_max_m2": 341,
+   "price_min": 2059750,
+   "price_max": 34302060,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (TEDUH)",
+   "foreign_ownership": "Freehold strata title; foreigners may buy in Penang above the state minimum price",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "The Westin (Marriott International)",
+   "amenities": [
+    "12 high-speed lifts",
+    "2 car parks per unit",
+    "ducted air-conditioning",
+    "equipped kitchen",
+    "concierge"
+   ],
+   "lat": 5.439,
+   "lng": 100.312,
+   "permit_authority": "KPKT (Ministry of Housing and Local Government), advertising and sales permit",
+   "brochure_url": "https://hims.kpkt.gov.my/files/30813/P45/P45-20250410-00015582/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://www.vstgroup.com.my/our-projects/the-westin-penang/",
+   "https://www.vstgroup.com.my/our-projects/completed-projects/",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30813-1",
+   "https://hims.kpkt.gov.my/files/30813/P45/P45-20250410-00015582/IKLAN_BROSUR_01.pdf",
+   "https://www.edgeprop.my/content/1913249/westin-residences-gurney-bay-luxury-seafront-living",
+   "https://westinresidencespenang.com/",
+   "https://newswav.com/article/69-storey-westin-residences-launches-in-penang-with-75-take-up-A2509_TpDgcx",
+   "https://www.penang-traveltips.com/condos/westin-residences.htm",
+   "https://en.wikipedia.org/wiki/Marriott_Residences_Penang"
+  ],
+  "permit_number": "30813-1/02-2028/0125(A)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "pavilion-damansara-heights-phase-2-jendela-mayang",
+  "name": "Pavilion Damansara Heights Phase 2 (Royal Suites and Imperial Residences)",
+  "developer": "Jendela Mayang Sdn. Bhd. (Pavilion Group, JV with Canada Pension Plan Investment Board)",
+  "area": "Damansara Heights, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://theedgemalaysia.com/node/800317",
+  "docs_url": "https://paviliondamansaraheights.com/apdl",
+  "seed": {
+   "price": 754000,
+   "currency": "MYR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": true,
+   "permit_number": "30216-2/01-2029/0022(A)-(S)",
+   "plans_published": true,
+   "escrow": "Developer names no HDA account; TEDUH records Schedule H (Jadual H) sale agreements under the statutory Housing Development Account regime; land encumbered to CIMB Investment Bank Berhad (APDL)",
+   "progress_pct": 60.08,
+   "progress_updates": true,
+   "developer_delivered": "Phase 1 of Pavilion Damansara Heights (Windsor Suites, Regent Suites, Crown Residences, Corporate Towers 1 to 9) is marked completed with CCC on TEDUH; developer also lists Pavilion Embassy, Pavilion Suites, Pavilion Hilltop Mont Kiara and others as completed",
+   "units": 644,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer APDL block for both towers: developer licence 30216/10-2027/0215(A), sales permits 30216-1/10-2028/0847(A)-(S) and 30216-2/01-2029/0022(A)-(S), building plans BP T2 OSC 2024 2056 and BP T2 OSC 2025 3807 (DBKL)",
+   "freehold, land encumbered to CIMB Investment Bank Berhad",
+   "Royal Suites: 490 units, 452 to 1,679 sq ft, RM754,000 to RM4,666,000, expected completion May 2030",
+   "Imperial Residences: 154 units, 3,380 to 7,459 sq ft, RM5,429,000 to RM19,812,000, expected completion March 2030",
+   "floor plans per type (S1, S2, J1 to J4, M1, DK1, DK2), e-brochures, 360 show units",
+   "TEDUH: Royal Suites 60.08% and Imperial Residences 56.36% built, approved 16-month delivery extensions"
+  ],
+  "note": "Final phase of the RM9bn Pavilion Damansara Heights, two freehold serviced-apartment towers (644 units) over the mall and MRT link. TEDUH shows 60.08% and 56.36% built, both on track, with 16-month delivery extensions approved (to Aug 2030 and Mar 2030), while The Edge reported completion in Q1 2029 and the developer says Mar to May 2030. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer APDL page publishes both sales permits and the developer licence; TEDUH 30216-1 and 30216-2 show the same permits as active",
+   "escrow": "No HDA bank named; TEDUH lists Jadual H (Schedule H) sale agreements; APDL names CIMB Investment Bank Berhad as land encumbrancer",
+   "progress": "TEDUH (latest 7(f) HIMS report): Royal Suites 60.08%, Imperial Residences 56.36%, both Lancar; developer site-progress page loads without content",
+   "plans": "Developer publishes floor plans for each unit type and e-brochures",
+   "record": "TEDUH shows Pavilion Damansara Heights phase 1 (project 19224-1) completed with CCC; The Edge reports phase 1 largely completed and 99% taken up",
+   "returns": "Royal Suites marketed for 'investment appeal' but no guaranteed return or yield figure"
+  },
+  "positives": [
+   "Full APDL disclosure on the developer site (licence, permits, building plan numbers, encumbrance, price range)",
+   "Registry construction figures above 55% for both towers",
+   "Phase 1 of the same development completed with CCC"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Royal Suites sales permit 30216-2/01-2029/0022(A)-(S) valid to 5 Jan 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2"
+   },
+   {
+    "claim": "Imperial Residences sales permit 30216-1/10-2028/0847(A)-(S) valid to 14 Oct 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-1"
+   },
+   {
+    "claim": "Developer licence 30216/10-2027/0215(A) held by Jendela Mayang Sdn Bhd",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2"
+   },
+   {
+    "claim": "Royal Suites 490 units, RM754k to RM4.666M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2"
+   },
+   {
+    "claim": "Imperial Residences 154 units, RM5.429M to RM19.812M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-1"
+   },
+   {
+    "claim": "Royal Suites expected completion May 2030",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2"
+   },
+   {
+    "claim": "Residential towers slated for completion in Q1 2029",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.edgeprop.my/content/1916561/pavilion-damansara-heights-new-phase-hits-milestone-corporate-suites-hotel-tower-topping-out-80-office-space-sold"
+   },
+   {
+    "claim": "Construction on track at over half complete",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2"
+   },
+   {
+    "claim": "Phase 1 completed",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta?q=Pavilion+Damansara&search_type=projek&page=1"
+   },
+   {
+    "claim": "Phase 1 99% taken up",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/node/800317"
+   },
+   {
+    "claim": "JV with Canada Pension Plan Investment Board",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1916561/pavilion-damansara-heights-new-phase-hits-milestone-corporate-suites-hotel-tower-topping-out-80-office-space-sold"
+   },
+   {
+    "claim": "Freehold tenure",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paviliondamansaraheights.com/apdl"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paviliondamansaraheights.com/royal-suites"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": "Jendela Mayang Sdn Bhd 201301035983 (1065811-D)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": "2029-Q2",
+   "delay_months": 16,
+   "unit_types": [
+    "suite",
+    "1BR+study",
+    "2BR",
+    "2BR dual key",
+    "3BR",
+    "5BR",
+    "6BR"
+   ],
+   "size_min_m2": 42,
+   "size_max_m2": 693,
+   "price_min": 754000,
+   "price_max": 19812000,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (TEDUH)",
+   "foreign_ownership": "Freehold strata title; foreigners may buy in KL above the state minimum price",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Pavilion",
+   "amenities": [
+    "MRT link bridge",
+    "Pavilion Damansara Heights Mall",
+    "Pavilion concierge",
+    "dual-key layouts"
+   ],
+   "lat": 3.146,
+   "lng": 101.663,
+   "permit_authority": "KPKT (sales permit); Dewan Bandaraya Kuala Lumpur (building plan)",
+   "brochure_url": "https://paviliondamansaraheights.com/PDHISP/pdf/e-Brochure-royal-suites.pdf"
+  },
+  "sources": [
+   "https://paviliondamansaraheights.com/",
+   "https://paviliondamansaraheights.com/apdl",
+   "https://paviliondamansaraheights.com/royal-suites",
+   "https://paviliondamansaraheights.com/developer",
+   "https://paviliondamansaraheights.com/site-progress",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30216-1",
+   "https://theedgemalaysia.com/node/800317",
+   "https://www.edgeprop.my/content/1916561/pavilion-damansara-heights-new-phase-hits-milestone-corporate-suites-hotel-tower-topping-out-80-office-space-sold",
+   "https://teduh.kpkt.gov.my/api/projek-swasta?q=Pavilion+Damansara&search_type=projek&page=1"
+  ],
+  "permit_number": "30216-2/01-2029/0022(A)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "rf-princess-cove-phase-3-new-casa-suites-rf-development",
+  "name": "R&F Princess Cove Phase 3, New Casa Suites (Mercu 3)",
+  "developer": "R & F Development Sdn Bhd (R&F Group Malaysia, subsidiary of China's R&F Properties)",
+  "area": "Tanjung Puteri, Johor Bahru",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://theedgemalaysia.com/node/735831",
+  "docs_url": "https://rfmalaysia.com/our-development/phase-3/",
+  "seed": {
+   "price": 640178,
+   "currency": "MYR",
+   "title": "freehold (agent listings)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": "13578-8/07-2028/0621(A)-(S)",
+   "plans_published": true,
+   "escrow": "Developer names no HDA account; TEDUH records Schedule H (Jadual H) sale agreements under the statutory Housing Development Account regime",
+   "progress_pct": 45.5,
+   "progress_updates": true,
+   "developer_delivered": "Phase 1 (3,472 units, completed before 2020) and Phase 2 Seine Region (handed over April 2024) of R&F Princess Cove; TEDUH lists phases 1B, 1C, 1D and 2B as completed with CCC",
+   "units": 2285,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: Phase 3 New Casa Suites open for sale, 4,385 units, link bridge to R&F Mall, sky park, amenities list",
+   "developer: floor plans studio to 4BR, Phase 3 brochure PDFs, VR view, site in 6 languages",
+   "developer: Phases 1 and 2 completed, Phase 2 handed over April 2024",
+   "TEDUH: three blocks 3A, 3B, 3C with sales permits 13578-8, 13578-7, 13578-6 /07-2028, prices RM640,178 to RM9,837,426",
+   "TEDUH: 45.50%, 45.48% and 42.88% built, approved 16-month delivery extensions to Dec 2029"
+  ],
+  "note": "Third residential phase of the 116-acre R&F Princess Cove next to the Johor CIQ and RTS Link, marketed to Singapore and overseas buyers in six languages. TEDUH lists three blocks (2,285 units) at about 43 to 46% built and on track, with 16-month delivery extensions approved to 15 to 30 Dec 2029; the developer site does not publish the permit numbers. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not on developer pages; TEDUH shows active sales permits 13578-8/07-2028/0621(A)-(S) (block 3A), 13578-7/07-2028/0622(A)-(S) (3B) and 13578-6/07-2028/0623(A)-(S) (3C), developer licence 13578/05-2027/0392(A)",
+   "escrow": "No HDA bank named; TEDUH lists Jadual H sale agreements (statutory HDA regime)",
+   "progress": "TEDUH (latest 7(f) report): 3A 45.50%, 3B 45.48%, 3C 42.88%, all Lancar",
+   "plans": "Developer Phase 3 page has floor plans studio to 4 bedrooms and brochure downloads",
+   "record": "Developer states Phases 1 and 2 completed; TEDUH lists phases 1B, 1C, 1D and 2B as completed with CCC",
+   "returns": "No guaranteed rental return or yield on the developer page"
+  },
+  "positives": [
+   "Earlier phases of the same township completed with CCC on the official register",
+   "Registry construction progress above 40% for all three blocks",
+   "Wide price range from about RM640k, multi-language disclosure"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Block 3A sales permit 13578-8/07-2028/0621(A)-(S) active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/13578-8"
+   },
+   {
+    "claim": "Block 3B sales permit 13578-7/07-2028/0622(A)-(S) active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/13578-7"
+   },
+   {
+    "claim": "Block 3C sales permit 13578-6/07-2028/0623(A)-(S) active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/13578-6"
+   },
+   {
+    "claim": "Phase 3 has 4,385 units",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta?q=R%26F&search_type=projek&page=1"
+   },
+   {
+    "claim": "Phases 1 and 2 completed",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta?q=R%26F&search_type=projek&page=1"
+   },
+   {
+    "claim": "Delivery 36 months from SPA extended by 16 months with approval (to Dec 2029)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/13578-7"
+   },
+   {
+    "claim": "Construction about 45% complete and on track",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/13578-8"
+   },
+   {
+    "claim": "Developer is a wholly owned subsidiary of China's R&F Group",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/node/735831"
+   },
+   {
+    "claim": "Development company R&F Development Sdn. Bhd. (1069248-H)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/13578-8"
+   },
+   {
+    "claim": "Freehold tenure",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rfprincesscove.com.my/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rfmalaysia.com/our-development/phase-3/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1994,
+   "developer_hq": "Johor Bahru, Malaysia (parent Guangzhou, China)",
+   "developer_company": "R&F Development Sdn. Bhd. (1069248-H)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent R&F Properties listed in Hong Kong (SEHK: 2777), per agent site",
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": "2028-Q3",
+   "delay_months": 16,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 640178,
+   "price_max": 9837426,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (TEDUH)",
+   "foreign_ownership": "Strata title; foreigners may buy in Johor above the state minimum price",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "link bridge to R&F Mall",
+    "urban sky park with elevated jogging track",
+    "Olympic-standard pool",
+    "tennis court",
+    "badminton hall",
+    "gym",
+    "childcare centre",
+    "yacht club"
+   ],
+   "lat": 1.461,
+   "lng": 103.772,
+   "permit_authority": "KPKT (advertising and sales permit)",
+   "brochure_url": "https://rfmalaysia.com/wp-content/uploads/2025/12/Phase-3-Brochure_compressed.pdf"
+  },
+  "sources": [
+   "https://rfmalaysia.com/",
+   "https://rfmalaysia.com/our-development/phase-3/",
+   "https://rfmalaysia.com/wp-content/uploads/2025/12/Phase-3-Brochure_compressed.pdf",
+   "https://www.rfprincesscove.com.my/",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/13578-8",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/13578-7",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/13578-6",
+   "https://theedgemalaysia.com/node/735831",
+   "https://teduh.kpkt.gov.my/api/projek-swasta?q=R%26F&search_type=projek&page=1"
+  ],
+  "permit_number": "13578-8/07-2028/0621(A)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "savoy-hotel-palawan-megaworld",
+  "name": "Savoy Hotel Palawan (condotel)",
+  "developer": "Megaworld Corporation (LTS holder Megaworld San Vicente Coast, Inc.)",
+  "area": "Paragua Coastown, Brgy. Kemdeng, San Vicente, Palawan",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "under construction",
+  "url": "https://sanvicentepalawanlotforsale.com/?p=1580",
+  "docs_url": "https://megaworldinternational.com/properties/savoy-hotel-palawan/",
+  "seed": {
+   "price": null,
+   "currency": "PHP",
+   "title": "condotel unit with individual title (developer)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": "TLS RVIB-26-002",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Megaworld (PSE: MEG) operates earlier Savoy hotels; Philstar (Jan 2023) reports Savoy Palawan is the fourth Savoy Hotel in its portfolio",
+   "units": 306,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer (Megaworld International): condotel, land area 4,235 sq m, 10 floors, turnover 31 Oct 2027 plus 6 months grace",
+   "developer: individual title for investors, 30 free nights per year offer",
+   "developer: site development plan, room renders (Typical Twin, Junior Suite, Executive Suite, Special-Abled Suite)",
+   "developer press release Jan 2023: 306 rooms, luxury green hotel, Megaworld Hotels and Resorts operator",
+   "DHSUD list: temporary LTS RVIB-26-002 issued Feb 2026, target completion Sep 2030"
+  ],
+  "note": "306-room Savoy-branded condotel sold by Megaworld to overseas Filipino and foreign investors in its 462-hectare Paragua Coastown. The DHSUD list shows a temporary License to Sell TLS RVIB-26-002 (Feb 2026) to Megaworld San Vicente Coast, Inc. with target completion Sep 2030, well after the developer's Oct 2027 turnover date; no prices or progress figures published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No LTS on developer page; DHSUD list mirrored on lumingon.com shows TLS RVIB-26-002 (temporary), issued Feb 2026, project type OM SUBD PD 957, owner Megaworld San Vicente Coast, Inc.",
+   "escrow": null,
+   "progress": "No construction % or dated photos; a Philstar supplement (Feb 2025) says Megaworld is currently constructing the hotel",
+   "plans": "Developer page publishes a site development plan and room-type renders; no dimensioned unit plans",
+   "record": "Megaworld is a listed developer and hotel operator; Philstar reports this is the fourth Savoy Hotel",
+   "returns": "Developer advertises title and 30 free nights, no guaranteed rental return or yield"
+  },
+  "positives": [
+   "DHSUD License to Sell entry exists for the project",
+   "Developer is PSE-listed Megaworld with an in-house hotel operator"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds DHSUD License to Sell TLS RVIB-26-002",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/savoy-hotel-palawan--f1f8d95a330249019e008fdcae0cb496"
+   },
+   {
+    "claim": "Developer is Megaworld Corporation",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/savoy-hotel-palawan--f1f8d95a330249019e008fdcae0cb496"
+   },
+   {
+    "claim": "Turnover 31 Oct 2027 plus 6 months grace",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/savoy-hotel-palawan--f1f8d95a330249019e008fdcae0cb496"
+   },
+   {
+    "claim": "Hotel opening in 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2023/01/13/2237169/megaworld-build-hotel-palawan"
+   },
+   {
+    "claim": "306 rooms in a 10-storey building",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2023/01/13/2237169/megaworld-build-hotel-palawan"
+   },
+   {
+    "claim": "Hotel is under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.philstar.com/other-sections/supplements/2025/02/28/2424852/megaworld-bets-big-palawan"
+   },
+   {
+    "claim": "Located in Brgy. Kemdeng, San Vicente, Palawan",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/savoy-hotel-palawan--f1f8d95a330249019e008fdcae0cb496"
+   },
+   {
+    "claim": "Investors receive a title under their name",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://megaworldinternational.com/properties/savoy-hotel-palawan/"
+   },
+   {
+    "claim": "Fourth Savoy hotel in Megaworld's portfolio",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/business/2023/01/13/2237169/megaworld-build-hotel-palawan"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://megaworldinternational.com/properties/savoy-hotel-palawan/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1989,
+   "developer_hq": "Taguig, Philippines",
+   "developer_company": "Megaworld Corporation; LTS holder Megaworld San Vicente Coast, Inc.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Philippine Stock Exchange (MEG)",
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "twin room",
+    "junior suite",
+    "executive suite",
+    "special-abled suite"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condotel unit; foreign ownership in Philippine condominium projects capped at 40%",
+   "rental_programme": "Hotel managed by Megaworld Hotels and Resorts; owners get 30 free nights, no return figure stated",
+   "service_charge": null,
+   "brand": "Savoy Hotel (Megaworld Hotels and Resorts)",
+   "amenities": [
+    "pools",
+    "fitness center",
+    "yoga area",
+    "spa and sauna",
+    "kids club",
+    "ballroom",
+    "business center",
+    "executive lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell under PD 957)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://megaworldinternational.com/properties/savoy-hotel-palawan/",
+   "https://www.megaworldcorp.com/news-and-updates/megaworld-build-savoy-hotel-palawan",
+   "https://lumingon.com/license-to-sell/savoy-hotel-palawan--f1f8d95a330249019e008fdcae0cb496",
+   "https://sanvicentepalawanlotforsale.com/?p=1580",
+   "https://www.philstar.com/business/2023/01/13/2237169/megaworld-build-hotel-palawan",
+   "https://www.philstar.com/other-sections/supplements/2025/02/28/2424852/megaworld-bets-big-palawan"
+  ],
+  "permit_number": "TLS RVIB-26-002",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "the-seasons-residences-fuyu-tower-federal-land-nomura",
+  "name": "The Seasons Residences, Fuyu Tower",
+  "developer": "Sunshine Fort North Bonifacio Realty Development Corp. (Federal Land, Nomura Real Estate Development, Isetan Mitsukoshi Holdings)",
+  "area": "Grand Central Park, North Bonifacio, Bonifacio Global City, Taguig",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://context.ph/2024/11/28/federal-land-set-to-deliver-second-seasons-tower-as-bgc-demand-soars/",
+  "docs_url": "https://theseasonsresidences.ph/",
+  "seed": {
+   "price": null,
+   "currency": "PHP",
+   "title": "condominium unit (subject to 40% foreign cap)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "HLURB LS No. 003473",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "First Seasons towers delivered: Context.ph (Nov 2024) reports Federal Land handing over the second tower of The Seasons Residences; Federal Land is the Ty family (GT Capital) property arm",
+   "units": 304,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer project site: HLURB LS No. 003473, ENCR AA, completion 31 Dec 2027, owner/developer Sunshine Fort North Bonifacio Realty Development Corporation",
+   "developer project site: unit layouts with room-by-room areas (1BR suite about 60 sq m, 2BR, 3BR)",
+   "developer project site: construction photos for Towers A and B dated Nov 2020 to Aug 2021 only",
+   "Federal Land page: 45 floors, 304 units, 239 parking slots, amenities, brochure",
+   "Federal Land news: Fuyu is the fourth and final tower"
+  ],
+  "note": "Fourth and final tower of the Japanese-themed Federal Land, Nomura and Isetan Mitsukoshi project above BGC's Mitsukoshi mall, completion 31 Dec 2027. The developer publishes HLURB LS No. 003473, but the DHSUD lists mirrored on lumingon show LS 0001155 (May 2025, target Dec 2027) for the project and no entry for 003473; construction updates stop in Aug 2021 and no prices are published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer site footer: HLURB LS No. 003473; DHSUD list shows LS 0001155 issued May 2025 to Sunshine Fort North Bonifacio Realty Development Corp. and BGY Realty Corporation, target completion Dec 2027, and HL 33397 (2018) for earlier towers; 003473 not found",
+   "escrow": null,
+   "progress": "Construction page only shows Towers A and B photos from Nov 2020 to Aug 2021; nothing for Fuyu",
+   "plans": "Developer residential page publishes unit layouts with room areas",
+   "record": "Context.ph reports the second tower being handed over in Nov 2024 and rapid uptake of the first three towers",
+   "returns": "No guaranteed return or yield wording"
+  },
+  "positives": [
+   "Registry License to Sell entry for the project with target completion matching the developer's Dec 2027 date",
+   "Big Japanese and Philippine partners, earlier towers handed over",
+   "Room-by-room unit areas published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "License to Sell HLURB LS No. 003473",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/the-seasons-residences--0d1d4be32ebf4e2e8c04a10226b4584a"
+   },
+   {
+    "claim": "Project holds a current DHSUD License to Sell (LS 0001155, May 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/the-seasons-residences--0d1d4be32ebf4e2e8c04a10226b4584a"
+   },
+   {
+    "claim": "Owner/developer is Sunshine Fort North Bonifacio Realty Development Corporation",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/the-seasons-residences--0d1d4be32ebf4e2e8c04a10226b4584a"
+   },
+   {
+    "claim": "Completion 31 December 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/the-seasons-residences--0d1d4be32ebf4e2e8c04a10226b4584a"
+   },
+   {
+    "claim": "Fuyu is the fourth and final tower",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://context.ph/2024/11/28/federal-land-set-to-deliver-second-seasons-tower-as-bgc-demand-soars/"
+   },
+   {
+    "claim": "Earlier towers handed over to buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://context.ph/2024/11/28/federal-land-set-to-deliver-second-seasons-tower-as-bgc-demand-soars/"
+   },
+   {
+    "claim": "Units of 60 to 177 sq m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://context.ph/2024/11/28/federal-land-set-to-deliver-second-seasons-tower-as-bgc-demand-soars/"
+   },
+   {
+    "claim": "45 floors and 304 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://federalland.ph/residential/taguig/the-seasons-residences/"
+   },
+   {
+    "claim": "Fuyu tower construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseasonsresidences.ph/construction/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theseasonsresidences.ph/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Taguig, Philippines",
+   "developer_company": "Sunshine Fort North Bonifacio Realty Development Corp. (with BGY Realty Corporation on the 2025 LTS)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Federal Land is part of GT Capital Holdings (PSE: GTCAP); partner Nomura Real Estate is listed in Tokyo",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR suite",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 177,
+   "price_min": null,
+   "price_max": null,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condominium unit within the 40% foreign-ownership cap",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Mitsukoshi (retail podium)",
+   "amenities": [
+    "indoor spa",
+    "wellness room",
+    "function rooms",
+    "culinary station",
+    "music studio",
+    "gym",
+    "golf simulation room",
+    "karaoke room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (formerly HLURB), License to Sell under PD 957",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://theseasonsresidences.ph/",
+   "https://theseasonsresidences.ph/construction/",
+   "https://theseasonsresidences.ph/residential/",
+   "https://federalland.ph/residential/taguig/the-seasons-residences/",
+   "https://federalland.ph/articles/the-seasons-residences-launches-last-tower",
+   "https://lumingon.com/license-to-sell/the-seasons-residences--0d1d4be32ebf4e2e8c04a10226b4584a",
+   "https://lumingon.com/license-to-sell/the-seasons-residences--b4b61fbf708144f0977847571e385bce",
+   "https://context.ph/2024/11/28/federal-land-set-to-deliver-second-seasons-tower-as-bgc-demand-soars/"
+  ],
+  "permit_number": "HLURB LS No. 003473",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "the-senique-hanoi-capitaland",
+  "name": "The Senique Hanoi",
+  "developer": "Binh Minh Business Development Investment JSC (CapitaLand Development, with Mitsubishi Estate and Nomura Real Estate Development)",
+  "area": "Plot B6-CT02, Vinhomes Ocean Park (Gia Lam Urban Area), Trau Quy, Gia Lam, Hanoi",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://theinvestor.vn/capitaland-unveils-2150-unit-high-end-residential-project-in-east-of-hanoi-d11768.html",
+  "docs_url": "https://www.capitaland.com/sites/theseniquehanoi/en/project.html",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": "apartment ownership certificate (foreigners: 50 years renewable, within quota)",
+   "lease_base": 50,
+   "extension": "renewable under Vietnamese housing law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "Building permit 23-GPXD (Hanoi Department of Construction, 12 Aug 2024)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "CapitaLand Development handed over Heritage West Lake (Hanoi) in 2024 and 2,375 homes at Lumi Signature, Lumi Hanoi in 2026 (VnEconomy, CapitaLand releases)",
+   "units": 2152,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer legal disclosure: investment policy decision 2997/QD-UBND (2018), land allocation decision 931/QD-UBND (2022), land use right certificate DB525784 (2021), investment registration project code 1054177613 (2024)",
+   "developer: building permit 23-GPXD issued 12 Aug 2024, construction start notice 05/2024/BM/TB (16 Aug 2024)",
+   "developer: Hanoi Department of Construction letter 256/SXD-QLN (9 Jan 2025) confirming future housing in blocks U37A, U38A, U37 is eligible for sale",
+   "developer: 2,152 apartments and 24 commercial units on 2.2 ha; finishing and landscape planned Q1 2027",
+   "developer: bank guarantee agreement and mortgage status listed as 'being updated'",
+   "developer: monthly construction updates Feb 2025 to Sep 2026 (structure of all three towers complete July 2026), floor plans and unit layouts"
+  ],
+  "note": "2,152-unit, three-tower CapitaLand project in Vinhomes Ocean Park, east Hanoi, broken ground Oct 2024 with Japanese partners Mitsubishi Estate and Nomura. The developer publishes a full Vietnamese legal disclosure (building permit 23-GPXD, sale-eligibility letter 256/SXD-QLN) and monthly progress showing all towers structurally complete by July 2026, but the bank guarantee for off-plan sales is still marked 'being updated'. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer project-profile page lists building permit 23-GPXD (Hanoi DOC, 12 Aug 2024) and DOC sale-eligibility letter 256/SXD-QLN (9 Jan 2025); no public permit register found to confirm",
+   "escrow": "Bank guarantee agreement for off-plan sale (item 8) is listed as 'Dang cap nhat' (being updated); no guarantor bank named",
+   "progress": "Developer construction-progress page with monthly updates; July and September 2026 updates state the structural frame of all three towers is complete",
+   "plans": "Developer site publishes floor plans and unit layouts for The Senique I, II and Premier",
+   "record": "VnEconomy (Sep 2026) reports CapitaLand Development handed over 2,375 homes at Lumi Signature; CapitaLand also handed over Heritage West Lake in 2024",
+   "returns": "No rental guarantee or yield figure published"
+  },
+  "positives": [
+   "Detailed legal disclosure: permits, land certificate and sale-eligibility letter numbers on the developer site",
+   "Monthly dated construction updates since Feb 2025, structure topped out",
+   "Developer has recent completed handovers in Hanoi"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit 23-GPXD issued by Hanoi DOC on 12 Aug 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitaland.com/sites/theseniquehanoi/en/project.html"
+   },
+   {
+    "claim": "Hanoi DOC confirmed the future housing is eligible for sale (letter 256/SXD-QLN)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitaland.com/sites/theseniquehanoi/en/project.html"
+   },
+   {
+    "claim": "Construction started in Oct 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://baodautu.vn/capitaland-khoi-cong-du-an-2150-can-ho-tai-gia-lam-d227696.html"
+   },
+   {
+    "claim": "About 2,150 apartments on a 2.1 ha site",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://baodautu.vn/capitaland-khoi-cong-du-an-2150-can-ho-tai-gia-lam-d227696.html"
+   },
+   {
+    "claim": "Joint venture with Mitsubishi Estate and Nomura Real Estate Development",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theinvestor.vn/capitaland-unveils-2150-unit-high-end-residential-project-in-east-of-hanoi-d11768.html"
+   },
+   {
+    "claim": "Handover in 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cafeland.vn/mxh/du-an-gan-11000-ty-dong-vua-ra-mat-tai-ha-noi-co-gi-dac-biet-130479.html"
+   },
+   {
+    "claim": "All three towers structurally complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitaland.com/sites/theseniquehanoi/en/progress.html"
+   },
+   {
+    "claim": "Bank guarantee in place for off-plan buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitaland.com/sites/theseniquehanoi/en/project.html"
+   },
+   {
+    "claim": "CapitaLand Development has delivered homes in Hanoi",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.vneconomy.vn/lumi-hanoi-shines-as-a-new-community-takes-shape-in-the-west-of-vietnams-capital.htm"
+   },
+   {
+    "claim": "Units approved for sale to foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitaland.com/sites/theseniquehanoi/en/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitaland.com/sites/theseniquehanoi/en/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Singapore (CapitaLand Development); project company in Hanoi",
+   "developer_company": "Cong ty Co phan Dau tu Phat trien Kinh doanh Binh Minh (Binh Minh Business Development Investment JSC), legal representative Low Mun Kit Alwin",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "CapitaLand Development is part of CapitaLand Group; partner Mitsubishi Estate and Nomura Real Estate are Tokyo-listed",
+   "construction_start": "2024-08",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 430,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may own apartments for 50 years (renewable) within the 30% per-building quota, where the project is approved for foreign sale",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "three residential towers",
+    "24 commercial units",
+    "landscaped grounds",
+    "near Vincom Mega Mall",
+    "VinUni and Brighton College nearby"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Hanoi Department of Construction (building permit and sale-eligibility letter)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.capitaland.com/sites/theseniquehanoi/en/",
+   "https://www.capitaland.com/sites/theseniquehanoi/en/project.html",
+   "https://www.capitaland.com/sites/theseniquehanoi/en/progress.html",
+   "https://theinvestor.vn/capitaland-unveils-2150-unit-high-end-residential-project-in-east-of-hanoi-d11768.html",
+   "https://baodautu.vn/capitaland-khoi-cong-du-an-2150-can-ho-tai-gia-lam-d227696.html",
+   "https://cafeland.vn/mxh/du-an-gan-11000-ty-dong-vua-ra-mat-tai-ha-noi-co-gi-dac-biet-130479.html",
+   "https://en.vneconomy.vn/lumi-hanoi-shines-as-a-new-community-takes-shape-in-the-west-of-vietnams-capital.htm"
+  ],
+  "permit_number": "Building permit 23-GPXD (Hanoi Department of Construction, 12 Aug 2024)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "capital-square-da-nang-mega-assets-sih",
+  "name": "Capital Square Da Nang (Capital Square 2 and 3)",
+  "developer": "Mega Assets Co., Ltd. (Capital Square 2) and SIH Real Estate Co., Ltd. (Capital Square 3)",
+  "area": "Tran Hung Dao / Ngo Quyen, An Hai ward (former Son Tra), Da Nang",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://capitalsquaredanang.vn/",
+  "docs_url": "https://capitalsquare.vn/1/15/Trang-chu",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": "long-term pink book for Vietnamese buyers; foreigners 50 years renewable within quota",
+   "lease_base": 50,
+   "extension": "renewable under Vietnamese housing law (foreigners)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "Building permit 05/GPXD (Capital Square 3, Da Nang DOC, 1 Feb 2024)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 3391,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: 6.14 ha, 14 apartment towers and 1 commercial block, 1BR, 2BR, 3BR and dual key, long-term ownership",
+   "developer e-salekit PDF with unit plans (about 45 to 104 sq m)",
+   "agent site: 3,391 units; foreign quota 502 (Capital Square 2) and 512 (Capital Square 3)",
+   "third-party legal summary for Capital Square 3: investment certificate 9866702317, investment approval 635/QD-UBND (2025), building permit 05/GPXD (2024, amended Jun 2025), towers LAT4-5, MAT5-6, MAT7-8-9",
+   "news: Da Nang DOC confirmed sale eligibility for towers 2.4, 2.6 (Oct 2025), 2.2, 2.3 and MAT5-6 (May 2026)"
+  ],
+  "note": "14-tower, 3,391-unit riverside complex on the Han River in Da Nang by two project companies. Da Nang's Department of Construction approved up to 1,014 apartments for foreign buyers (Feb 2025) and has confirmed several towers as eligible for off-plan sale; the developer site publishes no permit numbers, prices, completion date, guarantee bank or track record. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Developer site gives no numbers; thuviennhadat.vn legal summary lists building permit 05/GPXD (Da Nang DOC, 1 Feb 2024) for Capital Square 3; VietnamFinance (May 2026) reports DOC sale-eligibility confirmations for several towers",
+   "escrow": null,
+   "progress": "No developer progress page; VietnamFinance (May 2026) reports both phases actively under construction with tower cranes on site",
+   "plans": "Developer e-salekit PDF publishes unit layouts with areas",
+   "record": null,
+   "returns": "No guaranteed return or yield figure on developer pages"
+  },
+  "positives": [
+   "Official Da Nang DOC approval of a foreign-buyer quota (1,014 units)",
+   "DOC sale-eligibility confirmations reported for several towers"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Up to 502 (CS2) and 512 (CS3) apartments may be sold to foreigners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tuoitrenews.vn/news/society/20250222/da-nang-announces-over-1000-apartments-available-for-foreign-buyers/84730.html"
+   },
+   {
+    "claim": "Capital Square 2 has 1,681 and Capital Square 3 has 1,710 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tuoitrenews.vn/news/society/20250222/da-nang-announces-over-1000-apartments-available-for-foreign-buyers/84730.html"
+   },
+   {
+    "claim": "Towers 2.2, 2.3, 2.4, 2.6 and MAT5-6 confirmed eligible for off-plan sale by Da Nang DOC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vietnamfinance.vn/cong-truong-xay-dung-to-hop-capital-square-voi-14-toa-thap-ben-song-han-d145075.html"
+   },
+   {
+    "claim": "Both phases under construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vietnamfinance.vn/cong-truong-xay-dung-to-hop-capital-square-voi-14-toa-thap-ben-song-han-d145075.html"
+   },
+   {
+    "claim": "Building permit 05/GPXD for Capital Square 3",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thuviennhadat.vn/bat-dong-san/phap-ly-du-an-khu-do-thi-capital-square-3-ra-sao-22090.html"
+   },
+   {
+    "claim": "Developers are Mega Assets Co., Ltd. and SIH Real Estate Co., Ltd.",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tuoitrenews.vn/news/society/20250222/da-nang-announces-over-1000-apartments-available-for-foreign-buyers/84730.html"
+   },
+   {
+    "claim": "Long-term (freehold-style) ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://capitalsquare.vn/1/15/Trang-chu"
+   },
+   {
+    "claim": "Off-plan sale bank guarantee in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://capitalsquare.vn/1/15/Trang-chu"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://capitalsquare.vn/1/15/Trang-chu"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Da Nang, Vietnam",
+   "developer_company": "Cong ty TNHH Mega Assets; Cong ty TNHH Bat dong san SIH (investment registration 9866702317 for Capital Square 3)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "dual key",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 104,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may own apartments for 50 years (renewable) within the approved quota of 1,014 units",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "riverside location",
+    "commercial block",
+    "multi-level amenities"
+   ],
+   "lat": 16.07,
+   "lng": 108.229,
+   "permit_authority": "Da Nang Department of Construction (building permit, sale eligibility, foreign quota)",
+   "brochure_url": "https://capitalsquare.vn/Capital_Square_E-Salekit1.pdf"
+  },
+  "sources": [
+   "https://capitalsquare.vn/1/15/Trang-chu",
+   "https://capitalsquare.vn/Capital_Square_E-Salekit1.pdf",
+   "https://capitalsquare.vn/1/92-ct/Tin-tuc/Co-hoi-so-huu-can-ho-trung-tam-du-an-Capital-Square-don-song-tang-truong-cua-Da-Nang",
+   "https://capitalsquaredanang.vn/",
+   "https://tuoitrenews.vn/news/society/20250222/da-nang-announces-over-1000-apartments-available-for-foreign-buyers/84730.html",
+   "https://vietnamfinance.vn/cong-truong-xay-dung-to-hop-capital-square-voi-14-toa-thap-ben-song-han-d145075.html",
+   "https://thuviennhadat.vn/bat-dong-san/phap-ly-du-an-khu-do-thi-capital-square-3-ra-sao-22090.html",
+   "https://rumavi.com/en/new-developments/vietnam/da-nang/capital-square-da-nang"
+  ],
+  "permit_number": "Building permit 05/GPXD (Capital Square 3, Da Nang DOC, 1 Feb 2024)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "hanacreek-niseko-apex-property",
+  "name": "Hanacreek Niseko",
+  "developer": "Apex Property",
+  "area": "Hanazono, Kutchan, Niseko, Hokkaido",
+  "country": "Japan",
+  "market": "Niseko",
+  "stage": "off-plan",
+  "url": "https://uchijapan.com/news/hanacreek-autumn-2024-update",
+  "docs_url": "https://www.hanacreek.com/",
+  "seed": {
+   "price": null,
+   "currency": "JPY",
+   "title": "freehold (developer: no foreign ownership restrictions)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer brand book names Loft Niseko (Hirafu) as Apex Property's first project; not confirmed independently",
+   "units": 82,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: master plans for Phase 1 and Phase 2 onsen land plots",
+   "developer: turnkey 3BR and 4BR onsen houses (five homes), onsen townhouses, onsen apartments 'coming soon' in a Clubhouse Residence",
+   "developer: clubhouse with indoor pool, spa, kids club, pickleball, gym",
+   "developer: Hanacreek Brand Book (May 2026) PDF; unit plans and prices only in a gated sales book",
+   "agent (Uchi, Oct 2024): civil works under way, due December 2025; first sales complete",
+   "C9 Hotelworks via Uchi: 82 residences, 2027"
+  ],
+  "note": "Small Hong Kong-backed onsen estate in Hanazono selling land plots, turnkey houses, townhouses and future apartments to overseas buyers. The developer publishes no prices, permits, construction updates or deposit protection on its site; an agent reported civil works due by Dec 2025 and a market report lists 82 residences for 2027. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No developer progress page; agent article (Oct 2024) says civil construction under way and on track for Dec 2025",
+   "plans": "Only master plans and product descriptions public; unit plans in a gated sales book",
+   "record": "Brand book cites Loft Niseko as developer's first project; no independent confirmation found",
+   "returns": "No rental guarantee or yield; site mentions 'protected investment' wording without figures"
+  },
+  "positives": [
+   "Master plan and phasing published",
+   "Freehold ownership available to foreigners in Japan"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Civil construction under way, due Dec 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/hanacreek-autumn-2024-update"
+   },
+   {
+    "claim": "82 residences due 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/nisekos-boom-22-new-developments-by-2029.md"
+   },
+   {
+    "claim": "No foreign ownership restrictions",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hanacreek.com/"
+   },
+   {
+    "claim": "Private natural onsen for each residence",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hanacreek.com/"
+   },
+   {
+    "claim": "Developer previously delivered Loft Niseko",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hanacreek.com/media/2026/07/Hanacreek-Brand-Book-May-2026.pdf"
+   },
+   {
+    "claim": "First sales complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/hanacreek-autumn-2024-update"
+   },
+   {
+    "claim": "Land designated for mixed-use building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hanacreek.com/media/2026/07/Hanacreek-Brand-Book-May-2026.pdf"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hanacreek.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Apex Property (co-founders Vicky Lam and Sylvia Tang); legal entity not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "land plot",
+    "3BR house",
+    "4BR house",
+    "3BR townhouse",
+    "1BR to 4BR apartment"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold land and buildings; Japan places no general restriction on foreign ownership",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private onsen",
+    "15 m indoor pool",
+    "spa and beauty clinic",
+    "kids club",
+    "restaurant and cafe",
+    "pickleball courts",
+    "gym",
+    "golf simulator"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kutchan Town / Hokkaido (building confirmation)",
+   "brochure_url": "https://www.hanacreek.com/media/2026/07/Hanacreek-Brand-Book-May-2026.pdf"
+  },
+  "sources": [
+   "https://www.hanacreek.com/",
+   "https://www.hanacreek.com/onsen-houses/",
+   "https://www.hanacreek.com/media-coverage/",
+   "https://www.hanacreek.com/media/2026/07/Hanacreek-Brand-Book-May-2026.pdf",
+   "https://uchijapan.com/news/hanacreek-autumn-2024-update",
+   "https://uchijapan.com/news/nisekos-boom-22-new-developments-by-2029.md"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0
+ }
+]

@@ -1,0 +1,2739 @@
+[
+ {
+  "slug": "cello-residences-taraf",
+  "name": "Cello Residences",
+  "developer": "Taraf (Taraf Development L.L.C)",
+  "area": "Jumeirah Village Circle (JVC)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/taraf-holding/cello",
+  "docs_url": "https://www.tarafholding.com/en/project/cello",
+  "permit_number": "DLD project 2843",
+  "docs_listed": [
+   "developer page: unit mix studios to 4BR penthouses, amenities, brochure download (gated), construction update link, DLD permit card QR",
+   "Property Finder: launch price AED 1.1M, payment plan 10/40/50, delivery March 2027, sold out",
+   "DLD register via Real Estate IQ: project no., escrow bank, % built, 9 inspections, registered sale prices"
+  ],
+  "note": "Two-tower JVC project by Taraf with 392 units; the DLD register shows project no. 2843, escrow at Emirates NBD and 38.98% built at the 4 Sep 2026 inspection, with no completion date listed, while Property Finder still advertises March 2027 delivery. Taraf has no finished project on the DLD register yet (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1100000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "DLD project 2843",
+   "plans_published": false,
+   "escrow": "DLD register lists escrow bank Emirates NBD",
+   "progress_pct": 38.98,
+   "developer_delivered": null,
+   "units": 392,
+   "payment_plan": "10% down, 40% during construction, 50% on handover (Property Finder)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "progress": "DLD register: 38.98% built at inspection of 4 Sep 2026, inspection history from 0% (Nov 2023) published",
+   "plans": "No floor plans visible on the developer page; brochure behind a form",
+   "record": "DLD register: Taraf has 5 projects, 5 active and 0 finished",
+   "returns": "No guaranteed return language on developer page or Property Finder listing",
+   "permit": "DLD project number 2843, registered 24 Jan 2024, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Emirates NBD"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 2843 on 24 Jan 2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Escrow account held at Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Construction stage: 38.98% built at DLD inspection on 4 Sep 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Developer entity Taraf Development L.L.C registered with DLD (developer no. 1549)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Project has 392 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Developer group track record on DLD: 0 finished projects (5 total, 5 active)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dubairealestateiq.com/developer/taraf"
+   },
+   {
+    "claim": "Delivery March 2027 (Property Finder)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/taraf-holding/cello"
+   },
+   {
+    "claim": "Registered sales median AED 1.1M for 1BR (15 sales, Oct 2025 to Sep 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Launch price from AED 1.1M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cello-residences"
+   },
+   {
+    "claim": "Freehold ownership for foreign buyers in JVC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/taraf-holding/cello"
+   },
+   {
+    "claim": "Listing verified by Dubai Land Department (permit card on developer page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tarafholding.com/en/project/cello"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Taraf Development L.L.C (DLD developer no. 1549)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-02",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1100000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/40/50",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "large pool",
+    "kids pool",
+    "outdoor gym",
+    "indoor gym",
+    "reading spot",
+    "landscaped park",
+    "BBQ area",
+    "music room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "positives": [
+   "DLD register shows steady progress over 9 inspections (0% to 38.98%)",
+   "Escrow bank named on the register",
+   "Registered sale prices public (median 1BR AED 1.1M)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/taraf",
+   "https://dubairealestateiq.com/project/cello-residences",
+   "https://www.tarafholding.com/en/project/cello",
+   "https://www.propertyfinder.ae/en/new-projects/taraf-holding/cello"
+  ]
+ },
+ {
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "developer": "Emaar Properties (project entity The Lagoons Phase One L.L.C)",
+  "area": "Dubai Creek Harbour",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/creek-waters-2",
+  "docs_url": "https://www.emaar.com/en/properties/creek-waters-2",
+  "permit_number": "DLD project 2634",
+  "docs_listed": [
+   "developer page: brochure and floor plans",
+   "Property Finder: launch price AED 1.9M, payment plan 10/80/10, delivery Dec 2027, construction progress 62.95% (Dec 2025), sold out",
+   "unit size ranges 1BR to 4BR and 3BR townhouses",
+   "DLD register via Real Estate IQ: project no., escrow, 10 inspections, completion date"
+  ],
+  "note": "Single tower of 455 homes on Creek Island; DLD register shows project no. 2634, escrow at First Abu Dhabi Bank, 81.84% built at 31 Jul 2026 and a registered completion date of 31 Dec 2027 that matches the advertised Q4 2027. Sold out at developer level (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1900000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "DLD project 2634",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow bank First Abu Dhabi Bank",
+   "progress_pct": 81.84,
+   "developer_delivered": "Emaar: DLD register shows 199 finished projects across its developer entities",
+   "units": 455,
+   "payment_plan": "10% down, 80% during construction, 10% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "progress": "DLD register: 81.84% built at 31 Jul 2026, 10 inspections since Apr 2023; Property Finder also publishes 62.95% (Dec 2025)",
+   "plans": "Emaar page links floor plans and brochure; Property Finder lists unit size ranges",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 2634, registered 15 May 2023, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank",
+   "record": "DLD register: 199 finished, 143 active of 358 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 2634 on 15 May 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Escrow account held at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Construction stage: 81.84% built at DLD inspection on 31 Jul 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Developer entity The Lagoons Phase One L.L.C registered with DLD (developer no. 1038)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Project has 455 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Developer group track record on DLD: 199 finished projects (358 total, 143 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Completion Q4 2027 (Dec 2027)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Launch price from AED 1.9M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/creek-waters-2"
+   },
+   {
+    "claim": "Construction started August 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/creek-waters-2"
+   },
+   {
+    "claim": "Developer is Emaar Properties PJSC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/creek-waters-2"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "The Lagoons Phase One L.L.C (DLD developer no. 1038)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company; investor relations section on emaar.com)",
+   "construction_start": "2023-08",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "3BR townhouse",
+    "penthouse"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 280,
+   "price_min": 1900000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/80/10",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "podium retail",
+    "cafes and restaurants",
+    "pools",
+    "fitness centre",
+    "parks",
+    "waterfront promenade"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Registered completion date matches the marketed handover",
+   "Over 80% built at last DLD inspection",
+   "Escrow bank named on the register",
+   "Large delivered track record on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://dubairealestateiq.com/project/creek-waters-2",
+   "https://www.emaar.com/en/properties/creek-waters-2",
+   "https://www.propertyfinder.ae/en/new-projects/emaar-properties/creek-waters-2"
+  ]
+ },
+ {
+  "slug": "windsor-house-ellington-dubai-south",
+  "name": "Windsor House",
+  "developer": "Ellington Properties (project entity Ellington Sb Development L.L.C)",
+  "area": "Dubai South (Residential District)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/ellington/windsor-house",
+  "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/windsor-house-dubai-south",
+  "permit_number": "DLD project 4035",
+  "docs_listed": [
+   "developer page: unit types studio to 3BR, amenities list, status Off Plan, construction update link, brochure (gated)",
+   "Property Finder: launch price AED 1.2M, payment plan 20/50/30, delivery July 2029, sold out",
+   "DLD register via Real Estate IQ: project no., escrow bank, % built, completion date"
+  ],
+  "note": "Ellington's first Dubai South project, 424 units in two towers and a podium; DLD register shows project no. 4035, escrow at Sharjah Islamic Bank, 3.08% built at 17 Jun 2026 and completion 31 Jul 2029, matching the advertised Q3 2029 (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1200000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": true,
+   "permit_number": "DLD project 4035",
+   "plans_published": false,
+   "escrow": "DLD register lists escrow bank Sharjah Islamic Bank",
+   "progress_pct": 3.08,
+   "developer_delivered": "DLD register (via Real Estate IQ) shows 21 finished projects for this developer group",
+   "units": 424,
+   "payment_plan": "20% down, 50% during construction (9 instalments), 30% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "progress": "DLD register: 3.08% built at 17 Jun 2026; developer page links a construction update tracker",
+   "plans": "No floor plans visible on developer page; brochure behind a form",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 4035, registered 16 Dec 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Sharjah Islamic Bank",
+   "record": "DLD register: 21 finished, 33 active of 54 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 4035 on 16 Dec 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Escrow account held at Sharjah Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Construction stage: 3.08% built at DLD inspection on 17 Jun 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Developer entity Ellington Sb Development L.L.C registered with DLD (developer no. 2420)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Project has 424 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Developer group track record on DLD: 21 finished projects (54 total, 33 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/ellington"
+   },
+   {
+    "claim": "Completion July 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Launch price from AED 1.2M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ellington/windsor-house"
+   },
+   {
+    "claim": "Sales started 1 Dec 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/windsor-house"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ellington/windsor-house"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Ellington Sb Development L.L.C (DLD developer no. 2420)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-12",
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1200000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/50/30",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adults and kids pool",
+    "indoor and outdoor gym",
+    "Pilates studio",
+    "clubhouse",
+    "bocce and croquet",
+    "BBQ pavilion",
+    "pet wash and play area",
+    "retail"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Registered completion date matches the marketed handover",
+   "Escrow bank named on the register",
+   "Developer has 21 finished projects on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/ellington",
+   "https://dubairealestateiq.com/project/windsor-house",
+   "https://ellingtonproperties.ae/en/property-for-sale/windsor-house-dubai-south",
+   "https://www.propertyfinder.ae/en/new-projects/ellington/windsor-house"
+  ]
+ },
+ {
+  "slug": "samana-imperial-garden-arjan",
+  "name": "Samana Imperial Garden",
+  "developer": "Samana Developers (project entity Samana Signature Real Estate Developments L.L.C)",
+  "area": "Arjan",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-imperial-garden",
+  "docs_url": "https://www.samanadevelopers.com/projects/samana-imperial-garden",
+  "permit_number": "DLD project 3797",
+  "docs_listed": [
+   "developer page: starting price AED 980,000, unit layouts studio/1BR/2BR, two payment plans (PDC 15/10/1% x75, non-PDC 20/10/1% x70), handover Q1 2029, brochure, amenities",
+   "Property Finder: current lowest price AED 1.3M, sold out, delivery Dec 2028",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Seven-storey Arjan block of 344 units; DLD register shows project no. 3797, escrow at ADCB, 3.76% built at 19 Jun 2026 and completion 31 Dec 2028, while the developer now says Q1 2029. Long post-handover instalment plan (1% a month for 70 to 75 months) (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 980000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "DLD project 3797",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow bank Abu Dhabi Commercial Bank",
+   "progress_pct": 3.76,
+   "developer_delivered": "DLD register (via Real Estate IQ) shows 6 finished projects for this developer group",
+   "units": 344,
+   "payment_plan": "PDC: 15% booking, 10% at month 12, 1% per month x 75; non-PDC: 20% booking, 10% at month 12, 1% per month x 70",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "progress": "DLD register: 3.76% built at 19 Jun 2026 (4 inspections)",
+   "plans": "Developer page publishes unit layouts for studio, 1BR and 2BR",
+   "returns": "No guaranteed return language on developer page",
+   "permit": "DLD project number 3797, registered 17 Sep 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Abu Dhabi Commercial Bank",
+   "record": "DLD register: 6 finished, 49 active of 55 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 3797 on 17 Sep 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-imperial-garden"
+   },
+   {
+    "claim": "Escrow account held at Abu Dhabi Commercial Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-imperial-garden"
+   },
+   {
+    "claim": "Construction stage: 3.76% built at DLD inspection on 19 Jun 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-imperial-garden"
+   },
+   {
+    "claim": "Developer entity Samana Signature Real Estate Developments L.L.C registered with DLD (developer no. 1598)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-imperial-garden"
+   },
+   {
+    "claim": "Project has 344 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-imperial-garden"
+   },
+   {
+    "claim": "Developer group track record on DLD: 6 finished projects (55 total, 49 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/samana"
+   },
+   {
+    "claim": "Handover Q1 2029 (developer FAQ)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-imperial-garden"
+   },
+   {
+    "claim": "Starting price AED 980,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.samanadevelopers.com/projects/samana-imperial-garden"
+   },
+   {
+    "claim": "Selected units with private pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.samanadevelopers.com/projects/samana-imperial-garden"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-imperial-garden"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Business Bay, Dubai, UAE",
+   "developer_company": "Samana Signature Real Estate Developments L.L.C (DLD developer no. 1598)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-07",
+   "handover_promised": "2029-Q1",
+   "original_handover": "2028-Q4 (DLD register date)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 980000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 15,
+   "payment_plan": "15/10 then 1% monthly x75 (PDC) or 20/10 then 1% x70",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "jacuzzi",
+    "kids pool",
+    "sauna and steam",
+    "trampoline park",
+    "mini golf",
+    "yoga zone",
+    "BBQ area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Unit layouts and two payment plans published on the developer page",
+   "Escrow bank named on the register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/samana",
+   "https://dubairealestateiq.com/project/samana-imperial-garden",
+   "https://www.samanadevelopers.com/projects/samana-imperial-garden",
+   "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-imperial-garden"
+  ]
+ },
+ {
+  "slug": "bay-grove-residences-nakheel-dubai-islands",
+  "name": "Bay Grove Residences",
+  "developer": "Nakheel (project entity Dubai Islands L.L.C)",
+  "area": "Dubai Islands",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/nakheel/bay-grove-residences",
+  "docs_url": "https://www.nakheel.com/en/new-launches/baygrove-residences",
+  "permit_number": "DLD project 3293",
+  "docs_listed": [
+   "developer page: four buildings, 1BR to 4BR and penthouse, Crystal Beach access, amenities, brochure download",
+   "Property Finder: launch price AED 1.9M, two 20/50/30 plans, delivery March 2028, progress 1.21% (Jan 2026), sold out",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Four beachfront buildings with 296 units on Dubai Islands; DLD register shows project no. 3293, escrow at First Abu Dhabi Bank, 6.6% built at 21 Jul 2026 and completion 15 Mar 2028, matching the advertised Q1 2028 (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1900000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "DLD project 3293",
+   "plans_published": false,
+   "escrow": "DLD register lists escrow bank First Abu Dhabi Bank",
+   "progress_pct": 6.6,
+   "developer_delivered": "Nakheel site lists latest handovers (Jebel Ali Village, Lagoon Views, Tilal Al Furjan, Murooj Al Furjan, Canal Front Residences); DLD shows 3 finished projects for the Nakheel entity group",
+   "units": 296,
+   "payment_plan": "20% down, 50% during construction, 30% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "progress": "DLD register: 6.6% built at 21 Jul 2026 (6 inspections); Property Finder also shows 1.21% at Jan 2026",
+   "plans": "No floor plans visible on developer page; brochure only",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 3293, registered 4 Oct 2024, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank",
+   "record": "DLD register: 3 finished, 31 active of 36 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 3293 on 4 Oct 2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Escrow account held at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Construction stage: 6.6% built at DLD inspection on 21 Jul 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Developer entity Dubai Islands L.L.C registered with DLD (developer no. 105)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Project has 296 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Developer group track record on DLD: 3 finished projects (36 total, 31 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/nakheel"
+   },
+   {
+    "claim": "Completion March 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Launch price from AED 1.9M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/nakheel/bay-grove-residences"
+   },
+   {
+    "claim": "Four residential buildings",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands"
+   },
+   {
+    "claim": "Direct access to Crystal Beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nakheel.com/en/new-launches/baygrove-residences"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/nakheel/bay-grove-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Islands L.L.C (DLD developer no. 105)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Nakheel PJSC (part of Dubai Holding, per nakheel.com footer and menu)",
+   "construction_start": "2024-12",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1900000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/50/30",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beach access",
+    "infinity pool",
+    "podium gardens",
+    "gym",
+    "kids pool",
+    "kids play area",
+    "yoga",
+    "clubhouse"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Registered completion date matches the marketed handover",
+   "Escrow bank named on the register",
+   "Government-linked master developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/nakheel",
+   "https://dubairealestateiq.com/project/bay-grove-residences-dubai-islands",
+   "https://www.nakheel.com/en/new-launches/baygrove-residences",
+   "https://www.propertyfinder.ae/en/new-projects/nakheel/bay-grove-residences"
+  ]
+ },
+ {
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "developer": "Deyaar Development PJSC",
+  "area": "Business Bay (Sheikh Zayed Road edge of Downtown)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/deyaar-leasing/dwtn-residences",
+  "docs_url": "https://www.deyaar.ae/en/properties/dwtn-residences/",
+  "permit_number": "DLD project 3777",
+  "docs_listed": [
+   "developer page: floor plans, brochure download, overall progress section, unit range 1-4BR duplexes, penthouses and Royal Palace, sizes 764 to 18,330 sq ft",
+   "Property Finder: from AED 2.1M, two 10/40/50 plans, delivery Dec 2030, sold out",
+   "The National: 445 m twin tower, 522 homes, completion Q4 2030",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Deyaar 110-plus floor tower of about 522 homes; DLD register (as Downtown Residences) shows project no. 3777, escrow at First Abu Dhabi Bank, 1.25% built at 24 Sep 2026 and completion 30 Dec 2030, consistent with the Q4 2030 date reported by The National (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2100000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": true,
+   "permit_number": "DLD project 3777",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow bank First Abu Dhabi Bank",
+   "progress_pct": 1.25,
+   "developer_delivered": "Deyaar: DLD register shows 29 finished projects",
+   "units": 524,
+   "payment_plan": "10% down, 40% during construction, 50% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "progress": "DLD register: 1.25% built at 24 Sep 2026 (3 inspections); developer page has an overall progress section",
+   "plans": "Developer page links floor plans and brochure",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 3777, registered 3 Jun 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank",
+   "record": "DLD register: 29 finished, 10 active of 42 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 3777 on 3 Jun 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/downtown-residences"
+   },
+   {
+    "claim": "Escrow account held at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/downtown-residences"
+   },
+   {
+    "claim": "Construction stage: 1.25% built at DLD inspection on 24 Sep 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/downtown-residences"
+   },
+   {
+    "claim": "Developer entity Deyaar Development (P.J.S.C) registered with DLD (developer no. 15)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/downtown-residences"
+   },
+   {
+    "claim": "Project has 524 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/downtown-residences"
+   },
+   {
+    "claim": "Developer group track record on DLD: 29 finished projects (42 total, 10 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/deyaar"
+   },
+   {
+    "claim": "Completion Q4 2030",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/downtown-residences"
+   },
+   {
+    "claim": "About 522 homes (The National) vs 524 units on register",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2025/06/10/dubais-deyaar-unveils-towering-residential-project-with-royal-palace-at-the-top"
+   },
+   {
+    "claim": "Deyaar is a Dubai-listed developer",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2025/06/10/dubais-deyaar-unveils-towering-residential-project-with-royal-palace-at-the-top"
+   },
+   {
+    "claim": "Price from AED 2.1M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/deyaar-leasing/dwtn-residences"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/deyaar-leasing/dwtn-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Deyaar Development (P.J.S.C) (DLD developer no. 15)",
+   "developer_projects_delivered": 29,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Deyaar Development PJSC, Dubai-listed (The National); investor relations section on deyaar.ae",
+   "construction_start": "2025-12",
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "duplex",
+    "penthouse",
+    "Royal Palace"
+   ],
+   "size_min_m2": 71,
+   "size_max_m2": 1703,
+   "price_min": 2100000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/40/50",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "golf simulator",
+    "cinema room",
+    "functional gym",
+    "podcast studio",
+    "steam and sauna",
+    "yoga studio",
+    "kids play area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Listed developer with a long delivered record on the DLD register",
+   "Registered completion date matches the marketed handover",
+   "Floor plans published by the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/deyaar",
+   "https://dubairealestateiq.com/project/downtown-residences",
+   "https://www.deyaar.ae/en/properties/dwtn-residences/",
+   "https://www.propertyfinder.ae/en/new-projects/deyaar-leasing/dwtn-residences",
+   "https://www.thenationalnews.com/business/property/2025/06/10/dubais-deyaar-unveils-towering-residential-project-with-royal-palace-at-the-top"
+  ]
+ },
+ {
+  "slug": "sola-residences-centurion-al-furjan",
+  "name": "Sola Residences",
+  "developer": "Centurion Properties / Royal Centurion (project entity Sola Residences Real Estate Development L.L.C)",
+  "area": "Wasl Gate / Al Furjan side (DLD district Jabal Ali First)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.centurionproperties.ae/?p=300",
+  "docs_url": "https://www.centurionproperties.ae/?p=300",
+  "permit_number": "DLD project 3513",
+  "docs_listed": [
+   "developer page: floor plans studio to 3BR with sizes and unit counts (10/95/133/22), handover Q4 2027, site progress milestones, brochure",
+   "Property Finder (similar-projects block): from AED 1.1M",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Small 260-unit block near Energy metro by a small developer; DLD register shows project no. 3513, escrow at Emirates Islamic Bank, 23.58% built at 28 Jul 2026 and completion 15 Sep 2027, while the developer advertises Q4 2027. Unit counts on the developer page add up to the 260 on the register (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1100000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "DLD project 3513",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow bank Emirates Islamic Bank",
+   "progress_pct": 23.58,
+   "developer_delivered": "DLD register (via Real Estate IQ) shows 2 finished projects for this developer group",
+   "units": 260,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "progress": "DLD register: 23.58% built at 28 Jul 2026, up from 8.92% in Apr 2026; developer shows milestone tracker",
+   "plans": "Developer page publishes floor plan types with sizes and number of units per type",
+   "returns": "No guaranteed return language on developer page",
+   "permit": "DLD project number 3513, registered 5 Feb 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Emirates Islamic Bank",
+   "record": "DLD register: 2 finished, 5 active of 7 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 3513 on 5 Feb 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sola-residences"
+   },
+   {
+    "claim": "Escrow account held at Emirates Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sola-residences"
+   },
+   {
+    "claim": "Construction stage: 23.58% built at DLD inspection on 28 Jul 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sola-residences"
+   },
+   {
+    "claim": "Developer entity Sola Residences Real Estate Development L.L.C registered with DLD (developer no. 2135)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sola-residences"
+   },
+   {
+    "claim": "Project has 260 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sola-residences"
+   },
+   {
+    "claim": "Developer group track record on DLD: 2 finished projects (7 total, 5 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/royal-centurion"
+   },
+   {
+    "claim": "Handover Q4 2027 (developer)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.centurionproperties.ae/?p=300"
+   },
+   {
+    "claim": "Unit mix 10 studios, 95 1BR, 133 2BR, 22 3BR (total 260)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sola-residences"
+   },
+   {
+    "claim": "Price from AED 1.1M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/taraf-holding/cello"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Sola Residences Real Estate Development L.L.C (DLD developer no. 2135)",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 36,
+   "size_max_m2": 214,
+   "price_min": 1100000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor seating area",
+    "pool",
+    "gym",
+    "kids area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Unit counts and sizes per type published and consistent with the register",
+   "Escrow bank named on the register",
+   "Progress roughly tripled between Apr and Jul 2026 inspections"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/royal-centurion",
+   "https://dubairealestateiq.com/project/sola-residences",
+   "https://www.centurionproperties.ae/?p=300",
+   "https://www.propertyfinder.ae/en/new-projects/taraf-holding/cello"
+  ]
+ },
+ {
+  "slug": "hayat-4-dubai-south",
+  "name": "Hayat 4 (Hayat by Dubai South, Phase 4)",
+  "developer": "Dubai South Properties (Dubai South Properties DWC LLC)",
+  "area": "Dubai South (Golf District)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/dubai-south/hayat-phase-4",
+  "docs_url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-achieves-over-aed-12-billion-in-sales-for-hayat-within-hours-of-its-launch",
+  "permit_number": "DLD project 4038",
+  "docs_listed": [
+   "Property Finder: launch price AED 4.6M, payment plan 10/55/25/10, delivery July 2028, 200 townhouses, sold out",
+   "agent page (DRE Homes): 3, 4 and 5BR townhouses, floor plans section, 2-year post-handover plan, 50% DLD fee waiver",
+   "Dubai South newsroom: Hayat about 2,500 units, first phases sold out for over AED 1.2bn",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Phase 4 of the 2,500-home Hayat community by state-owned Dubai South; DLD register shows project no. 4038 with 200 units, escrow at Emirates NBD, 4.52% built at 24 Sep 2026 and completion 31 Jul 2028, matching the advertised July 2028 (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 4600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "DLD project 4038",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow bank Emirates NBD",
+   "progress_pct": 4.52,
+   "developer_delivered": "Dubai South: DLD register shows 13 finished projects",
+   "units": 200,
+   "payment_plan": "10% down, 55% during construction, 25% on handover, 10% post handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "progress": "DLD register: 4.52% built at 24 Sep 2026 (start date 30 Mar 2026)",
+   "plans": "Agent page has a floor plans section; no developer project page found beyond the newsroom",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 4038, registered 10 Sep 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Emirates NBD",
+   "record": "DLD register: 13 finished, 17 active of 32 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 4038 on 10 Sep 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "Escrow account held at Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "Construction stage: 4.52% built at DLD inspection on 24 Sep 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "Developer entity Dubai South Properties Dwc Llc registered with DLD (developer no. 1142)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "Project has 200 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "Developer group track record on DLD: 13 finished projects (32 total, 17 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/dubai-south"
+   },
+   {
+    "claim": "Completion July 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "200 homes in Phase 4",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/hayat-4"
+   },
+   {
+    "claim": "Hayat community of about 2,500 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dubaisouth.ae/en/newsroom/dubai-south-achieves-over-aed-12-billion-in-sales-for-hayat-within-hours-of-its-launch"
+   },
+   {
+    "claim": "Launch price from AED 4.6M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/dubai-south/hayat-phase-4"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/dubai-south/hayat-phase-4"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai South, Dubai, UAE",
+   "developer_company": "Dubai South Properties Dwc Llc (DLD developer no. 1142)",
+   "developer_projects_delivered": 13,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR townhouse",
+    "4BR townhouse",
+    "5BR townhouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 4600000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/55/25/10",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "parks",
+    "walking trails",
+    "play areas",
+    "fitness and wellness centres",
+    "community pools",
+    "retail boulevard"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Government-owned master developer with finished projects on the DLD register",
+   "Registered completion date matches the marketed handover",
+   "Escrow bank named on the register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/dubai-south",
+   "https://dubairealestateiq.com/project/hayat-4",
+   "https://www.dubaisouth.ae/en/newsroom/dubai-south-achieves-over-aed-12-billion-in-sales-for-hayat-within-hours-of-its-launch",
+   "https://www.propertyfinder.ae/en/new-projects/dubai-south/hayat-phase-4",
+   "https://drehomes.ae/hayat-4-and-5-by-dubai-south"
+  ]
+ },
+ {
+  "slug": "binghatti-circle-jvc",
+  "name": "Binghatti Circle",
+  "developer": "Binghatti Developers (Binghatti Developers FZE)",
+  "area": "Jumeirah Village Circle (JVC)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.binghatti.com/en/projects/binghatti-circle",
+  "docs_url": "https://www.binghatti.com/en/projects/binghatti-circle",
+  "permit_number": "DLD project 3819",
+  "docs_listed": [
+   "developer page: from AED 674,999, studio to 3BR floor plans, brochure, payment plan 20/50/30, completion Q2 2027, about 776 residences on 58 residential floors",
+   "DLD register via Real Estate IQ: 822 units, 10.33% built, completion 31 May 2027, registered sales"
+  ],
+  "note": "Tallest residential tower in JVC; DLD register shows project no. 3819 with 822 units, escrow at Dubai Islamic Bank and completion 31 May 2027, but only 10.33% built at the 30 Apr 2026 inspection, which leaves about 13 months for the rest. Developer cites about 776 residences (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 674999,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "DLD project 3819",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow bank Dubai Islamic Bank",
+   "progress_pct": 10.33,
+   "developer_delivered": "Binghatti: DLD register shows 43 finished projects",
+   "units": 822,
+   "payment_plan": "20% on signing, 50% during construction, 30% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "progress": "DLD register: 10.33% built at 30 Apr 2026",
+   "plans": "Developer page has floor plans for studio, 1BR, 2BR and 3BR",
+   "returns": "Developer FAQ cites investment potential but no guaranteed return",
+   "permit": "DLD project number 3819, registered 22 Jul 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Dubai Islamic Bank",
+   "record": "DLD register: 43 finished, 36 active of 79 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 3819 on 22 Jul 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "Escrow account held at Dubai Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "Construction stage: 10.33% built at DLD inspection on 30 Apr 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "Developer entity Binghatti Developers Fze registered with DLD (developer no. 1051)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "Project has 822 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "Developer group track record on DLD: 43 finished projects (79 total, 36 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/binghatti"
+   },
+   {
+    "claim": "Completion Q2 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "About 776 residences (developer) vs 822 units on register",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-circle"
+   },
+   {
+    "claim": "Price from AED 674,999",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.binghatti.com/en/projects/binghatti-circle"
+   },
+   {
+    "claim": "Tallest residential tower in JVC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.binghatti.com/en/projects/binghatti-circle"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Binghatti Developers Fze (DLD developer no. 1051)",
+   "developer_projects_delivered": 43,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 674999,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/50/30",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor amenities",
+    "outdoor amenities",
+    "recreational areas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Floor plans and payment plan published by the developer",
+   "Large delivered record on the DLD register (43 finished)",
+   "Escrow bank named on the register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/binghatti",
+   "https://dubairealestateiq.com/project/binghatti-circle",
+   "https://www.binghatti.com/en/projects/binghatti-circle"
+  ]
+ },
+ {
+  "slug": "sparklz-danube-al-furjan",
+  "name": "Sparklz by Danube",
+  "developer": "Danube Properties (Danube Properties Development L.L.C)",
+  "area": "Al Furjan",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/danube-properties/sparklz",
+  "docs_url": "https://danubeproperties.com/portfolio/sparklz/",
+  "permit_number": "DLD project 3611",
+  "docs_listed": [
+   "developer page: starting price AED 900,000, completion Q2 2028, 30/70 plan, 356 apartments studio to 3BR, amenities, brochure (gated), lists completed projects",
+   "Property Finder: from AED 1.3M, three plans with 30% to 40% post handover, delivery May 2028, sold out",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Two-tower Al Furjan project; DLD register shows project no. 3611 with 358 units, escrow at Ajman Bank, 7.75% built at 25 Aug 2026 and completion 31 May 2028, matching the advertised Q2 2028. Developer FAQ mentions high rental yield potential but no guaranteed figure (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 900000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "DLD project 3611",
+   "plans_published": false,
+   "escrow": "DLD register lists escrow bank Ajman Bank",
+   "progress_pct": 7.75,
+   "developer_delivered": "Danube: DLD register shows 19 finished projects; developer site lists completed projects such as Skyz, Opalz, Petalz, Gemz, Pearlz",
+   "units": 358,
+   "payment_plan": "30/70 (developer); portal shows variants with 30% to 40% post handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "progress": "DLD register: 7.75% built at 25 Aug 2026; Property Finder shows 0.06% at Oct 2025",
+   "plans": "No floor plans on developer page; brochure behind form",
+   "returns": "FAQ: \"high rental yield potential\", no guarantee or figure",
+   "permit": "DLD project number 3611, registered 14 Apr 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Ajman Bank",
+   "record": "DLD register: 19 finished, 23 active of 42 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 3611 on 14 Apr 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "Escrow account held at Ajman Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "Construction stage: 7.75% built at DLD inspection on 25 Aug 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "Developer entity Danube Properties Development L.L.C registered with DLD (developer no. 1009)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "Project has 358 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "Developer group track record on DLD: 19 finished projects (42 total, 23 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/danube"
+   },
+   {
+    "claim": "Completion Q2 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "356 apartments (developer) vs 358 units on register",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sparklz-by-danube"
+   },
+   {
+    "claim": "Starting price AED 900,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://danubeproperties.com/portfolio/sparklz/"
+   },
+   {
+    "claim": "Danube known for timely delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://danubeproperties.com/portfolio/sparklz/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Danube Properties Development L.L.C (DLD developer no. 1009)",
+   "developer_projects_delivered": 19,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 900000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "30/70",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool in selected units",
+    "infinity pool",
+    "basketball court",
+    "cricket court",
+    "indoor gym",
+    "kids play area",
+    "outdoor cinema",
+    "business centre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Registered completion date matches the marketed handover",
+   "Escrow bank named on the register",
+   "Developer has 19 finished projects on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/danube",
+   "https://dubairealestateiq.com/project/sparklz-by-danube",
+   "https://danubeproperties.com/portfolio/sparklz/",
+   "https://www.propertyfinder.ae/en/new-projects/danube-properties/sparklz"
+  ]
+ },
+ {
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "developer": "Meydan / District One (District One - FZ), now marketed by Nakheel",
+  "area": "Mohammed Bin Rashid City (District One)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one",
+  "docs_url": "https://www.nakheel.com/en/construction-progress/naya-at-district-one",
+  "permit_number": "DLD project 2674",
+  "docs_listed": [
+   "developer progress page (nakheel.com): 58.92% internal progress at 14 Sep 2026, RERA 56% at 22 Jul 2026, breakdown by substructure, superstructure, building and MEP works, written update",
+   "Property Finder: launch price AED 1.7M, payment plan 20/60/20, delivery June 2027, sold out",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Lagoon-front MBR City community of 456 homes in three buildings plus villas; DLD register shows project no. 2674, escrow at Dubai Islamic Bank, 56% built at 22 Jul 2026 and completion 30 Sep 2027, later than the June 2027 shown on Property Finder. The developer progress page quotes the same RERA figure and an internal 58.92% (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1700000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "DLD project 2674",
+   "plans_published": false,
+   "escrow": "DLD register lists escrow bank Dubai Islamic Bank",
+   "progress_pct": 56,
+   "developer_delivered": "Meydan / District One entity group: DLD register shows 40 finished projects",
+   "units": 456,
+   "payment_plan": "20% down, 60% during construction, 20% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "progress": "DLD register 56% at 22 Jul 2026; developer page restates RERA 56% and internal 58.92% at 14 Sep 2026 with works breakdown",
+   "plans": "No floor plans found on the developer page",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 2674, registered 9 Jun 2023, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank Dubai Islamic Bank",
+   "record": "DLD register: 40 finished, 3 active of 45 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 2674 on 9 Jun 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Escrow account held at Dubai Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Construction stage: 56% built at DLD inspection on 22 Jul 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Developer entity District One - Fz registered with DLD (developer no. 956)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Project has 456 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Developer group track record on DLD: 40 finished projects (45 total, 3 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/meydan"
+   },
+   {
+    "claim": "RERA progress 56% at 22 Jul 2026 (developer page)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Delivery June 2027 (Property Finder)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/naya-at-district-one"
+   },
+   {
+    "claim": "Superstructure 100% complete (developer)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nakheel.com/en/construction-progress/naya-at-district-one"
+   },
+   {
+    "claim": "Launch price from AED 1.7M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "District One - Fz (DLD developer no. 956)",
+   "developer_projects_delivered": 40,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-10",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartments",
+    "villas"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1700000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/60/20",
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "crystal lagoon",
+    "infinity pool",
+    "fitness centre",
+    "children pool",
+    "playgrounds",
+    "sports courts",
+    "amphitheatre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Developer publishes both its internal progress and the RERA figure, and they agree with the register",
+   "Escrow bank named on the register",
+   "Developer group has 40 finished projects on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/meydan",
+   "https://dubairealestateiq.com/project/naya-at-district-one",
+   "https://www.nakheel.com/en/construction-progress/naya-at-district-one",
+   "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one",
+   "https://www.nakheel.com/en/new-launches/baygrove-residences"
+  ]
+ },
+ {
+  "slug": "pearl-house-4-imtiaz-jvc",
+  "name": "Pearl House 4 by Imtiaz",
+  "developer": "Imtiaz Developments (Imtiaz Luxury Real Estate Development L.L.C)",
+  "area": "Jumeirah Village Circle (JVC)",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://imtiaz.ae/property/pearl-house-4-by-imtiaz",
+  "docs_url": "https://imtiaz.ae/property/pearl-house-4-by-imtiaz",
+  "permit_number": "DLD project 4129",
+  "docs_listed": [
+   "developer page: construction progress 21% overall with breakdown (sub-structure 98, super-structure 45, MEP 4, finishing 1), estimated completion Q4 2027, progress photos, brochure and fact sheet downloads, furnished studios to 2BR",
+   "Property Finder (similar-projects block): from AED 1.3M",
+   "DLD register via Real Estate IQ"
+  ],
+  "note": "Furnished studios to 2BR in JVC, 211 units; DLD register shows project no. 4129, escrow at First Abu Dhabi Bank, 17.93% built at 7 Oct 2026 and completion 29 Feb 2028, while the developer page claims 21% and Q4 2027 completion (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1300000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "DLD project 4129",
+   "plans_published": false,
+   "escrow": "DLD register lists escrow bank First Abu Dhabi Bank",
+   "progress_pct": 17.93,
+   "developer_delivered": "Imtiaz: DLD register shows 10 finished projects; developer lists Pearl House I to III, Westwood Grande and others",
+   "units": 211,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "progress": "DLD register 17.93% at 7 Oct 2026; developer publishes 21% overall with stage breakdown and photos",
+   "plans": "Layouts only inside brochure/fact sheet downloads",
+   "returns": "No guaranteed return language found",
+   "permit": "DLD project number 4129, registered 11 Oct 2025, shown on Real Estate IQ citing the DLD project register (read 13 Oct 2026)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank",
+   "record": "DLD register: 10 finished, 36 active of 46 projects for the developer group"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered on the DLD project register as project no. 4129 on 11 Oct 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Escrow account held at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Construction stage: 17.93% built at DLD inspection on 7 Oct 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Developer entity Imtiaz Luxury Real Estate Development L.L.C registered with DLD (developer no. 2259)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Project has 211 units on the register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Developer group track record on DLD: 10 finished projects (46 total, 36 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/imtiaz"
+   },
+   {
+    "claim": "Construction progress 21% overall (developer)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Estimated completion Q4 2027 (developer)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz"
+   },
+   {
+    "claim": "Fully furnished units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imtiaz.ae/property/pearl-house-4-by-imtiaz"
+   },
+   {
+    "claim": "Price from AED 1.3M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-imperial-garden"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Imtiaz Luxury Real Estate Development L.L.C (DLD developer no. 2259)",
+   "developer_projects_delivered": 10,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1300000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (designated freehold area, per portal listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "clubhouse",
+    "adult pool",
+    "kids pool",
+    "BBQ area",
+    "outdoor cinema",
+    "sunken seating",
+    "gym",
+    "outdoor shower"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4,
+  "positives": [
+   "Developer publishes a stage-by-stage progress breakdown and photos",
+   "Escrow bank named on the register",
+   "Developer has 10 finished projects on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/developer/imtiaz",
+   "https://dubairealestateiq.com/project/pearl-house-iv-by-imtiaz",
+   "https://imtiaz.ae/property/pearl-house-4-by-imtiaz",
+   "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-imperial-garden"
+  ]
+ },
+ {
+  "slug": "ajwan-khorfakkan-residences-shurooq",
+  "name": "Ajwan Khorfakkan Residences",
+  "developer": "Shurooq (Sharjah Investment and Development Authority)",
+  "area": "Khorfakkan (East Coast)",
+  "country": "UAE",
+  "market": "Sharjah",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/ajwan-residences",
+  "docs_url": "https://ajwan.ae/",
+  "permit_number": null,
+  "docs_listed": [
+   "project site: 185 apartments in six buildings, 2-4BR and 3-4BR duplexes, floor plans per unit with prices (from AED 2.1M for a 2BR in Al Joon), brochure, master plan, dated project updates",
+   "Shurooq announcement (2023): 184 residences, 124 to 417 sqm",
+   "Zawya (Dec 2025): Phase 3 launch of Layan and Juman buildings, contractor Darwish Engineering Emirates",
+   "Property Finder: launch price AED 1.9M, 10/20/70, delivery Dec 2026, construction started 25 Jun 2024"
+  ],
+  "note": "Six waterfront buildings with 185 homes in Khorfakkan by the Sharjah government developer Shurooq; floor plans and unit prices are public, but no permit number, escrow account or progress percentage is published, and the July 2026 update still describes foundation, piling and marine works against a Dec 2026 delivery shown on Property Finder (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2100000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 185,
+   "payment_plan": "10% down, 20% during construction, 70% on handover (Property Finder)",
+   "price_per_m2": null,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or registration number found on project site, Shurooq page or portal",
+   "escrow": "No escrow or deposit protection statement found",
+   "progress": "Dated written updates on the project site and a July 2026 news post (foundation, substructure, superstructure, marine works complete); no percentage",
+   "plans": "Floor plan pages per unit type with sizes and starting prices",
+   "record": "No delivered-project evidence opened for Shurooq in this session",
+   "returns": "No guaranteed return language found"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "185 apartments in six buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/business/real-estate/shurooq-launches-phase-3-of-ajwan-khorfakkan-residences-k7q9sot2"
+   },
+   {
+    "claim": "Delivery December 2026 (Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ajwan.ae/shurooq-advances-sharjah-sustainable-city-and-ajwan-khorfakkan/"
+   },
+   {
+    "claim": "Marine works complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ajwan.ae/project-updates/"
+   },
+   {
+    "claim": "Contractor Darwish Engineering Emirates appointed for Phase 3",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/business/real-estate/shurooq-launches-phase-3-of-ajwan-khorfakkan-residences-k7q9sot2"
+   },
+   {
+    "claim": "Developer is Shurooq, a Sharjah government authority",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://shurooq.gov.ae/news/Shurooq-Announces-Ajwan"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/ajwan-residences"
+   },
+   {
+    "claim": "Prices from AED 2.1M (2BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ajwan.ae/floor-plan/"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ajwan.ae/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": "Sharjah Investment and Development Authority (Shurooq), government authority",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-06",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "3BR duplex",
+    "4BR duplex"
+   ],
+   "size_min_m2": 124,
+   "size_max_m2": 417,
+   "price_min": 2100000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/20/70",
+   "foreign_ownership": "freehold (portal statement)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "waterpark",
+    "beach access",
+    "marina",
+    "pools",
+    "gyms",
+    "boardwalk retail",
+    "hotel in master plan"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Sharjah Real Estate Registration Department",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Unit-level floor plans with sizes and starting prices published",
+   "Developer is a Sharjah government authority",
+   "Contractor named in press coverage"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ajwan.ae/",
+   "https://ajwan.ae/project-updates/",
+   "https://ajwan.ae/floor-plan/",
+   "https://ajwan.ae/shurooq-advances-sharjah-sustainable-city-and-ajwan-khorfakkan/",
+   "https://shurooq.gov.ae/news/Shurooq-Announces-Ajwan",
+   "https://www.zawya.com/en/business/real-estate/shurooq-launches-phase-3-of-ajwan-khorfakkan-residences-k7q9sot2",
+   "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/ajwan-residences"
+  ]
+ },
+ {
+  "slug": "dalia-masaar-3-arada",
+  "name": "Dalia at Masaar 3",
+  "developer": "Arada (Arada Developments LLC)",
+  "area": "Masaar 3, Rowdat / Suyoh area",
+  "country": "UAE",
+  "market": "Sharjah",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.arada.com/en/dalia-masaar-3/",
+  "docs_url": "https://www.arada.com/en/dalia-masaar-3/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: Phase 7 of Masaar 3, 338 homes, 2-4BR townhouses and 4-5BR villas, prices per type from AED 2,070,000, floor plans per floor, payment plan 5/30/65, FAQ with plot and built-up areas",
+   "Middle East Construction News: Masaar 3 has 4,000 homes in eight phases, construction to start early 2026, first homes 2027",
+   "Zawya/WAM: Arada finished 986 homes in Masaar Kaya and Robinia districts"
+  ],
+  "note": "Newest phase of Arada forested Masaar 3 community, 338 townhouses and villas now selling from AED 2.07M with 5% down; floor plans and per-type prices are public, but no permit number, escrow account or construction progress is published. Arada has handed over earlier Masaar phases per WAM (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2070000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Arada finished 986 homes in Masaar Kaya and Robinia (WAM via Zawya)",
+   "units": 338,
+   "payment_plan": "5% down, 30% during construction, 65% on completion",
+   "price_per_m2": 11373
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or registration number found",
+   "escrow": "No escrow statement found",
+   "progress": "Nothing published for Dalia; Masaar 3 construction was due to start in early 2026 per MECN",
+   "plans": "Ground and first floor plans for each townhouse and villa type on developer page",
+   "record": "WAM report (Zawya) on 986 completed homes in Masaar phases 2 and 3",
+   "returns": "No guaranteed return language found"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "338 homes in Dalia phase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/dalia-masaar-3/"
+   },
+   {
+    "claim": "Arada delivered earlier Masaar phases (986 homes in Kaya and Robinia)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/business/real-estate/sharjah-arada-finishes-another-1-000-homes-at-masaar-bvdpi56u"
+   },
+   {
+    "claim": "Masaar 3 first homes due 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://meconstructionnews.com/64401/arada-launches-newest-phase-of-its-forest-community-masaar-3/amp"
+   },
+   {
+    "claim": "Masaar 3 construction to start early 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://meconstructionnews.com/64401/arada-launches-newest-phase-of-its-forest-community-masaar-3/amp"
+   },
+   {
+    "claim": "2BR townhouse from AED 2,070,000 (1,959 sq ft)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/dalia-masaar-3/"
+   },
+   {
+    "claim": "First two Masaar 3 phases sold out within hours",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/dalia-masaar-3/"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/dalia-masaar-3/"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/dalia-masaar-3/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": "Arada Developments LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 986,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR townhouse",
+    "3BR townhouse",
+    "4BR townhouse",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 178,
+   "size_max_m2": 391,
+   "price_min": 2070000,
+   "price_max": 4705000,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/30/65",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimmable lagoon with waterfall",
+    "padel and basketball courts",
+    "cafe",
+    "kids adventure playground",
+    "outdoor cinema",
+    "wellness area",
+    "family pool",
+    "ladies-only pool"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Sharjah Real Estate Registration Department",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Per-type prices and floor plans published openly",
+   "Low 5% deposit",
+   "Earlier Masaar phases delivered per WAM"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.arada.com/en/dalia-masaar-3/",
+   "https://meconstructionnews.com/64401/arada-launches-newest-phase-of-its-forest-community-masaar-3/amp",
+   "https://www.zawya.com/en/business/real-estate/sharjah-arada-finishes-another-1-000-homes-at-masaar-bvdpi56u"
+  ]
+ },
+ {
+  "slug": "ajman-one-phase-2-aqaar",
+  "name": "Ajman One Phase 2",
+  "developer": "Aqaar (Ajman Properties Corporation); registered entity Ajman One Properties (S.P.S - L.L.C)",
+  "area": "Al Rashidiya 3, Ajman Downtown",
+  "country": "UAE",
+  "market": "Ajman",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/ajman-one-phase-2",
+  "docs_url": null,
+  "permit_number": "Ajman register project nos. 467, 468, 469, 470",
+  "docs_listed": [
+   "Ajman open data real estate register: Towers B1 to B4 (project nos. 467-470), status Under Construction, escrow trustee Ajman Bank with account numbers, units per tower",
+   "Property Finder: launch price AED 700K, 5% down, delivery Dec 2026, construction started 12 Aug 2024, studios to 4BR townhouses, sold out"
+  ],
+  "note": "Second phase of the Ajman One towers in Rashidiya 3; the Ajman government register lists four towers (B1 to B4, 1,368 units) as Under Construction with escrow at Ajman Bank, and shows the Phase 1 towers as Completed. No progress figure or floor plans are public and the developer site ajmanone.ae shows only a placeholder (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 700000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Ajman register project nos. 467, 468, 469, 470",
+   "plans_published": false,
+   "escrow": "Ajman register: trustee Ajman Bank, escrow accounts listed per tower (e.g. 11151417012)",
+   "progress_pct": null,
+   "developer_delivered": "Ajman register shows Ajman One Phase 1 towers T2 to T12 by Ajman Properties Corporation - Aqaar as Completed",
+   "units": 1368,
+   "payment_plan": "5% down (Property Finder, rest not stated)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Ajman open data register lists project registration nos. 467 to 470 for Towers B1 to B4",
+   "escrow": "Register: account trustee Ajman Bank, escrow account numbers per tower",
+   "progress": "Register gives status Under Construction only; no percentage found anywhere",
+   "plans": "No floor plans found; developer site is a placeholder",
+   "record": "Register shows Ajman One Phase 1 towers (T2 to T12) completed, escrow at ADCB",
+   "returns": "No guaranteed return language found"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "none",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Four towers B1 to B4 registered and under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=40&where=main_project_name_english%3D%22Ajman%20One%20-%20Phase%20II%22"
+   },
+   {
+    "claim": "Escrow account with Ajman Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=40&where=main_project_name_english%3D%22Ajman%20One%20-%20Phase%20II%22"
+   },
+   {
+    "claim": "1,368 units (227, 376, 387, 378)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=40&where=main_project_name_english%3D%22Ajman%20One%20-%20Phase%20II%22"
+   },
+   {
+    "claim": "Phase 1 Ajman One towers delivered by Aqaar",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=20&where=search(%22ajman%20one%22)"
+   },
+   {
+    "claim": "Number of buildings 1 (Property Finder)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=40&where=main_project_name_english%3D%22Ajman%20One%20-%20Phase%20II%22"
+   },
+   {
+    "claim": "Delivery December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/ajman-one-phase-2"
+   },
+   {
+    "claim": "Construction started 12 Aug 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/ajman-one-phase-2"
+   },
+   {
+    "claim": "Studios from AED 316,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/ajman-one-phase-2"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/ajman-one-phase-2"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ajman, UAE",
+   "developer_company": "Ajman One Properties (S.P.S - L.L.C), per Ajman register; marketed as Aqaar",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR townhouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 316000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5% down",
+   "foreign_ownership": "freehold (portal statement)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "fitness centres",
+    "children play areas",
+    "green spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajman Real Estate Regulatory Agency (ARRA)",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "positives": [
+   "Registration numbers and escrow accounts public on the Ajman government open data register",
+   "Earlier phase shown as completed on the same register",
+   "Low entry price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=40&where=main_project_name_english%3D%22Ajman%20One%20-%20Phase%20II%22",
+   "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=20&where=search(%22ajman%20one%22)",
+   "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/ajman-one-phase-2",
+   "http://www.ajmanone.ae/"
+  ]
+ }
+]

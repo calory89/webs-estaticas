@@ -1,0 +1,1734 @@
+[
+ {
+  "slug": "palo-alto-villas-palo-alto-marbella",
+  "name": "Palo Alto Villas",
+  "developer": "Palo Alto Marbella (masterplan launched by Round Hill Capital; Palo Alto Sur phase led by Roel Homes with Iberica Capital Partners)",
+  "area": "Palo Alto, Ojén (above Marbella)",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "url": "https://villas.marbellapaloalto.com/",
+  "docs_url": "https://villas.marbellapaloalto.com/",
+  "docs_listed": [
+   "developer: 30 villas in four typologies with bedrooms, built area and plot ranges",
+   "developer: masterplan with Owners' Club, padel, equestrian club, south gate",
+   "developer: brochure PDF",
+   "agency (Imagine Marbella, 26 Oct 2026): prices EUR 3.4m to 6m, payment plan EUR 35,000 / 30% / 20% / 50%, phase 2 completion Q4 2027",
+   "agency (Engel & Volkers): phase 1 completed 2025, phase 2 under construction"
+  ],
+  "note": "Gated enclave of 30 villas of 800 m2+ inside the Palo Alto estate in Ojén, designed by Villarroel and marketed exclusively by Engel & Volkers. Agents say phase 1 was completed in 2025 and phase 2 is under construction for Q4 2027, with prices from EUR 3.4m to 6m; no licence number, deposit guarantee or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 3400000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Palo Alto North apartment phases (Pinsapos, Jacarandas, Eucaliptos, Granados, Ceibas, Olivos, Almendros) described as completed or nearly sold out on marbellapaloalto.com; Iberica Capital Partners states over 90% of Palo Alto Norte's 298 units have been sold and handed over",
+   "units": 30,
+   "payment_plan": "EUR 35,000 reservation, 30% on private contract, 20% during construction, 50% on completion (agency page)",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No licencia de obra number on the developer site or agency pages",
+   "escrow": "No bank guarantee or deposit insurance mentioned",
+   "progress": "Agencies state phase 1 completed 2025 and phase 2 under construction, but no % or dated photos",
+   "plans": "Developer lists typologies with sizes; agents offer floor plans on request only",
+   "record": "Earlier Palo Alto North apartment communities are named on the developer site; Olive Press (2016) reported Round Hill Capital as developer of the original phase",
+   "returns": "No guaranteed rental or yield language on the developer site"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "30 villas, each over 800 m2 built with 4 or 5 en-suite bedrooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://villas.marbellapaloalto.com/"
+   },
+   {
+    "claim": "Phase 1 completed in 2025, phase 2 under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.marbella-ev.com/developments/palo-alto/D-000HIP"
+   },
+   {
+    "claim": "Phase 2 completion scheduled for Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imaginemarbella.com/en/palo-alto-villas-ojen/"
+   },
+   {
+    "claim": "Prices from EUR 3.4m to 6m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imaginemarbella.com/en/palo-alto-villas-ojen/"
+   },
+   {
+    "claim": "Round Hill Capital is the developer behind the original Palo Alto estate in Ojén",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theolivepress.es/spain-news/2016/12/08/luxury-costa-del-sol-housing-development-to-receive-e250-million-investment/"
+   },
+   {
+    "claim": "Earlier phases (Granados 60 units, Ceibas 10 units) launched in 2021 and 110 apartments completed by then",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://roundhillcapital.com/news/palo-alto-marbella-expands-its-collection-with-the-launch-of-two-exclusive-new-housing-developments-granados-and-ceibas/"
+   },
+   {
+    "claim": "Over 90% of Palo Alto Norte's 298 units sold and handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ibericacapitalpartners.com/promociones/project-two-ky966-df54a"
+   },
+   {
+    "claim": "Planning approvals and infrastructure works completed for Palo Alto Sur",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ibericacapitalpartners.com/promociones/project-two-ky966-df54a"
+   },
+   {
+    "claim": "Building licence granted for the villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://villas.marbellapaloalto.com/"
+   },
+   {
+    "claim": "Marketed exclusively by Engel & Volkers Marbella",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://villas.marbellapaloalto.com/"
+   },
+   {
+    "claim": "No guaranteed rental return offered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://villas.marbellapaloalto.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Marbella, Spain",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "unit_types": [
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 833,
+   "size_max_m2": 1007,
+   "price_min": 3400000,
+   "price_max": 6000000,
+   "currency": "EUR",
+   "deposit_pct": 30,
+   "payment_plan": "EUR 35,000 reservation, 30% contract, 20% construction, 50% completion",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Spain",
+   "rental_programme": "Concierge and property management services; no figures stated",
+   "brand": null,
+   "amenities": [
+    "Owners' Club with restaurant and rooftop bar",
+    "spa with indoor pool",
+    "Technogym gym",
+    "4 padel courts",
+    "equestrian club",
+    "chip and putt",
+    "organic gardens",
+    "24h gated security"
+   ],
+   "lat": 36.544,
+   "lng": -4.862,
+   "permit_authority": "Ayuntamiento de Ojén",
+   "brochure_url": "https://w7ggf5xes1o1my4j.public.blob.vercel-storage.com/palo-alto-villas-PAV%20Brochure.pdf",
+   "original_handover": null,
+   "delay_months": null,
+   "service_charge": null
+  },
+  "positives": [
+   "Earlier Palo Alto apartment phases are built and occupied",
+   "Payment plan keeps 50% due at completion",
+   "No guaranteed-return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://villas.marbellapaloalto.com/",
+   "https://marbellapaloalto.com/real-estate/",
+   "https://imaginemarbella.com/en/palo-alto-villas-ojen/",
+   "https://www.marbella-ev.com/developments/palo-alto/D-000HIP",
+   "https://www.ibericacapitalpartners.com/promociones/project-two-ky966-df54a",
+   "https://roundhillcapital.com/news/palo-alto-marbella-expands-its-collection-with-the-launch-of-two-exclusive-new-housing-developments-granados-and-ceibas/",
+   "https://www.theolivepress.es/spain-news/2016/12/08/luxury-costa-del-sol-housing-development-to-receive-e250-million-investment/",
+   "https://www.oceanhome.es/neubau/ojen/palo-alto/villa-ojen-palo-alto-4bed-87123007-01/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "costaterra-golf-ocean-club-discovery-land",
+  "name": "CostaTerra Golf & Ocean Club (club residences, dune villas, Pine Barrens)",
+  "developer": "Discovery Land Company (CostaTerra - Sociedade Imobiliaria de Grandola S.A. named as proponent in the APA environmental file)",
+  "area": "Fontainhas, Melides (between Comporta and Melides), Grandola",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "under construction",
+  "url": "https://costaterraclub.com/real-estate",
+  "docs_url": "https://discoverylandco.com/communities/costaterra/",
+  "docs_listed": [
+   "developer: product types (custom homesites, turnkey club residences, dune villas, golf Pine Barrens, winery cottages)",
+   "developer: one sample listing, Pine Barrens 27, 4,617 sq ft, 3 bed, 3 bath",
+   "developer: 720 acres, Tom Fazio 18-hole course, club village",
+   "no prices, availability or plans online (contact the sales team)",
+   "APA environmental impact file AIA 1326 for the CostaTerra subdivision (2004 non-technical summary)"
+  ],
+  "note": "Members-only golf and beach community by Discovery Land Company near Comporta, sold directly by the club with no prices or plans online. Press reported 71 homes sold by Nov 2021 at prices from about EUR 4m, a 2021 campsite purchase to expand the estate, and a contractor began two villas in June 2024; no permit number, deposit protection or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 300,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No alvara or licence number on the developer sites. The APA environmental impact register holds file AIA 1326 for the CostaTerra subdivision, proponent CostaTerra - Sociedade Imobiliaria de Grandola S.A., licensing body Camara Municipal de Grandola",
+   "escrow": "Nothing published",
+   "progress": "No progress page; contractor KTL reported starting two villas in June 2024",
+   "plans": "No floor plans online; only one listing with size and bedroom count",
+   "record": "CostaTerra site names no delivered homes; Discovery Land lists other communities worldwide but no units delivered at CostaTerra",
+   "returns": "No rental return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Subdivision project went through Portuguese environmental impact assessment, proponent CostaTerra - Sociedade Imobiliaria de Grandola S.A.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://siaia.apambiente.pt/AIADOC/AIA1326/RNT1326.pdf"
+   },
+   {
+    "claim": "Licensing authority is the Camara Municipal de Grandola",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://siaia.apambiente.pt/AIADOC/AIA1326/RNT1326.pdf"
+   },
+   {
+    "claim": "Discovery Land Company bought the project from the Queiroz Pereira family holding (Semapa) in May 2019",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/node/49770"
+   },
+   {
+    "claim": "71 homes sold by Nov 2021, prices from about USD 4.6m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/node/49770"
+   },
+   {
+    "claim": "Estate expanded to 298 ha and about 300 homes after buying the Gale campsite in 2021",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/node/49770"
+   },
+   {
+    "claim": "Construction of villas under way (KTL began two villas June 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ktl.pt/en/noticia/135/costa-terra-golf-ocean-club"
+   },
+   {
+    "claim": "Homes sold only by the club itself, not via agencies",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://eco.sapo.pt/especiais/revolucao-milionaria-no-litoral-alentejano-construcao-toma-conta-dos-45-km-de-troia-a-melides/"
+   },
+   {
+    "claim": "First phase of 40 residences launched",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://notabeneglobal.com/insight/melides-the-new-comporta/"
+   },
+   {
+    "claim": "720 acres with nearly a mile of beachfront",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://discoverylandco.com/communities/costaterra/"
+   },
+   {
+    "claim": "Building licence numbers for individual villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://costaterraclub.com/real-estate"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://costaterraclub.com/real-estate"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "CostaTerra - Sociedade Imobiliaria de Grandola S.A. (proponent named in APA file AIA 1326)",
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "custom homesites",
+    "turnkey club residences",
+    "dune villas",
+    "golf Pine Barrens",
+    "winery cottages"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Portugal",
+   "rental_programme": null,
+   "brand": "Discovery Land Company",
+   "amenities": [
+    "Tom Fazio 18-hole golf course",
+    "club village with restaurants",
+    "spa",
+    "beach club",
+    "Outdoor Pursuits programme",
+    "horse riding",
+    "surfing"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Grandola",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null
+  },
+  "positives": [
+   "Environmental impact file is on the public APA register",
+   "Independent press confirms ownership by Discovery Land and sales volumes",
+   "No guaranteed-return marketing"
+  ],
+  "flags": [
+   {
+    "text": "ECO reported in Aug 2025 that the Grandola mayor complained road signs to Gale beach, reached through the campsite Discovery Land bought, kept disappearing and did not rule out that promoters were responsible; no finding was reported",
+    "source": "https://eco.sapo.pt/especiais/revolucao-milionaria-no-litoral-alentejano-construcao-toma-conta-dos-45-km-de-troia-a-melides/"
+   }
+  ],
+  "sources": [
+   "https://costaterraclub.com/real-estate",
+   "https://discoverylandco.com/communities/costaterra/",
+   "https://www.ktl.pt/en/noticia/135/costa-terra-golf-ocean-club",
+   "https://www.idealista.pt/news/node/49770",
+   "https://eco.sapo.pt/2024/06/25/srs-legal-assessorou-a-costaterra/",
+   "https://eco.sapo.pt/especiais/revolucao-milionaria-no-litoral-alentejano-construcao-toma-conta-dos-45-km-de-troia-a-melides/",
+   "https://notabeneglobal.com/insight/melides-the-new-comporta/",
+   "https://siaia.apambiente.pt/AIADOC/AIA1326/RNT1326.pdf"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "skyline-havens-ellinikon-hellenic-estates",
+  "name": "Skyline Havens (The Ellinikon, East Village)",
+  "developer": "Hellenic Estates S.A. (developer, founded Oct 2024); sales and marketing by Lamda Development (Euronext Athens listed); design and build by Euroergo S.A.",
+  "area": "East Village, The Ellinikon (near Glyfada), Athens Riviera",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "off-plan",
+  "url": "https://theellinikon.com.gr/en/residences/east-village/skyline-havens",
+  "docs_url": "https://theellinikon.com.gr/en/residences/east-village/skyline-havens",
+  "docs_listed": [
+   "developer: 150 residences, 1-4 bedrooms, architect Liakos Associates",
+   "developer: estimated completion H2 2028, availability 'on the market'",
+   "developer: brochure and floor plans (DocSend links), property navigator, 360 tours",
+   "developer: FAQ on foreign buyers, VAT exemption to 31/12/2026, Golden Visa threshold EUR 800,000",
+   "To Vima (Nov 2025): prices EUR 485,000 to 4.5m, EUR 6,985 to 12,500 per m2, preliminary building permits issued early Nov 2025"
+  ],
+  "note": "150-unit complex of eight low-rise buildings in The Ellinikon's new East Village, developed by Hellenic Estates S.A. and sold through Lamda Development, with completion estimated H2 2028. To Vima reported preliminary building permits in Nov 2025 and prices of EUR 485,000 to 4.5m; floor plans and brochure are published but no permit number, deposit protection or progress figure. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 485000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-H2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 150,
+   "payment_plan": null,
+   "price_per_m2": 6985,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No permit number on the project page. To Vima (19 Nov 2025) reported preliminary building permits issued in early Nov 2025 with full permits expected end of Nov 2025",
+   "escrow": "Not published; FAQ describes a Reservation Agreement then Sale & Purchase Agreement but no deposit protection",
+   "progress": "Ellinikon site has a general progress-of-works page but nothing specific to Skyline Havens",
+   "plans": "Floor plans and brochure linked from the project page (DocSend)",
+   "record": "Developer Hellenic Estates S.A. was founded in Oct 2024 and has no delivered projects named; Lamda (marketing) has not yet handed over Ellinikon homes",
+   "returns": "No rental guarantee or yield language"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "150 residences, 1 to 4 bedrooms, in eight buildings of up to five floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/"
+   },
+   {
+    "claim": "Estimated completion H2 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/"
+   },
+   {
+    "claim": "Preliminary building permits issued early Nov 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/"
+   },
+   {
+    "claim": "Prices EUR 485,000 to 4.5m (EUR 6,985 to 12,500 per m2)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/"
+   },
+   {
+    "claim": "Developer is Hellenic Estates S.A., founded Oct 2024; Euroergo S.A. designs and builds",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/"
+   },
+   {
+    "claim": "East Village launched as a new neighbourhood with Skyline Havens as key project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ered.gr/real-estate-news/lamda-development-unveils-plans-for-east-village-launch-in-early-2026"
+   },
+   {
+    "claim": "No restrictions on foreign buyers; Golden Visa possible from EUR 800,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/east-village/skyline-havens"
+   },
+   {
+    "claim": "VAT exemption on Ellinikon residential purchases until 31/12/2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/contact/faqs"
+   },
+   {
+    "claim": "Lamda's earlier Ellinikon residential phases are largely sold (coastal front 315 units, Little Athens 671 units allocated)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/english/2110163/the-ellinikon-lamda-development-aims-at-0-6-billion-euro-receipts-in-2026/"
+   },
+   {
+    "claim": "Construction started end of Nov 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/contact/faqs"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2024,
+   "developer_hq": "Athens, Greece",
+   "developer_company": "Hellenic Estates S.A. (founders Dimitris Goneos and Konstantinos Tsouvelekakis, per To Vima)",
+   "listed_or_audited": "Sales partner Lamda Development S.A. is listed on Euronext Athens; developer not listed",
+   "construction_start": "2025-11",
+   "handover_promised": "2028-H2",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "price_min": 485000,
+   "price_max": 4500000,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; developer FAQ says no restrictions linked to the buyer's country, purchase as individual or company",
+   "rental_programme": null,
+   "amenities": [
+    "outdoor pools",
+    "gym",
+    "concierge and reception",
+    "kids' playground",
+    "underground parking",
+    "storage"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Greek building permit system (e-Adeies) for the Ellinikon",
+   "brochure_url": "https://lamda.docsend.com/view/r7twvrrf75nqdvts",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Floor plans, brochure and 360 tours published",
+   "Independent press reports prices per m2 and permit stage",
+   "Sold within a masterplan run by a listed developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theellinikon.com.gr/en/residences/east-village/skyline-havens",
+   "https://theellinikon.com.gr/en/residences/east-village",
+   "https://theellinikon.com.gr/en/contact/faqs",
+   "https://www.tovima.com/finance/skyline-havens-the-new-luxury-residential-complex-at-the-ellinikon/",
+   "https://ered.gr/real-estate-news/lamda-development-unveils-plans-for-east-village-launch-in-early-2026",
+   "https://www.naftemporiki.gr/english/2110163/the-ellinikon-lamda-development-aims-at-0-6-billion-euro-receipts-in-2026/",
+   "https://www.ot.gr/2026/07/10/english-edition/ellinikon-project-sets-timeline-for-homes-and-retail-opening/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "seaview-heights-cybarco",
+  "name": "Seaview Heights",
+  "developer": "Cybarco (Lanitis Group)",
+  "area": "Germasogeia hills, Limassol",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "stage": "under construction",
+  "url": "https://www.cybarco.com/project/seaview-heights-limassol/",
+  "docs_url": "https://www.cybarco.com/project/seaview-heights-limassol/",
+  "docs_listed": [
+   "developer: live availability table with unit number, bedrooms, covered area and price",
+   "developer: price list PDF dated 29.10.2026 by building, with internal, terrace and common areas and SOLD marks",
+   "developer: brochure PDF with masterplan, indicative floor plans and specification",
+   "developer: 81 apartments and 9 villas, A-rated energy certificate",
+   "CBN (Jan 2026): listed among Cybarco projects under construction"
+  ],
+  "note": "Gated complex of 81 apartments and 9 villas above Limassol by Cybarco, part of the Lanitis Group, with a live price list (29 Oct 2026) showing apartments from EUR 350,000 and villas at EUR 970,000 to 990,000. Independent press lists it as under construction in Jan 2026; no permit number, completion date, deposit protection or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 350000,
+   "currency": "EUR",
+   "title": "freehold (separate title deeds after completion)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Cybarco states it has built in Cyprus since 1945 (Lanitis Group); named completed projects include Limassol Marina (ready villas and apartments) and Trilogy Limassol Seafront, where CBN reports handovers to owners in 2026",
+   "units": 90,
+   "payment_plan": null,
+   "price_per_m2": 5072,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No planning or building permit number on the page, brochure or price list",
+   "escrow": "Not published",
+   "progress": "No construction update on the project page; CBN (26 Jan 2026) lists it as under construction",
+   "plans": "Brochure PDF includes masterplan and indicative floor plans per type; price list gives internal and terrace areas per unit",
+   "record": "Cybarco since 1945; Trilogy handovers and Limassol Marina completion reported by CBN and on Cybarco's site",
+   "returns": "No guaranteed return wording; brochure only calls it a solid investment"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "81 apartments and 9 villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/seaview-heights-limassol/"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+   },
+   {
+    "claim": "Construction to begin January 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dom.com.cy/en/live/complexes/luxury-complex-limassol/seaview-heights/"
+   },
+   {
+    "claim": "Launched by Cybarco in Germasogeia as a new development (2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/114383/cybarco-towers-villas-and-residences-under-construction-around-cyprus"
+   },
+   {
+    "claim": "Apartment prices from EUR 350,000; 2BR of 110 m2 total covered from EUR 470,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2024/02/Seaview-Heights-Pricelist-ENG-291026.pdf"
+   },
+   {
+    "claim": "Most of Building B already sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2024/02/Seaview-Heights-Pricelist-ENG-291026.pdf"
+   },
+   {
+    "claim": "Developer's Trilogy project nearly complete with handovers under way",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+   },
+   {
+    "claim": "Cybarco part of the Lanitis Group, active since 1945",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2024/02/Seaview-Heights-Brochure-ENG.pdf"
+   },
+   {
+    "claim": "A-rated energy performance certificate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/seaview-heights-limassol/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/seaview-heights-limassol/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/seaview-heights-limassol/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1945,
+   "developer_hq": "Nicosia, Cyprus",
+   "developer_company": "Cybarco (Lanitis Group)",
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 69,
+   "size_max_m2": 211,
+   "price_min": 350000,
+   "price_max": 990000,
+   "currency": "EUR",
+   "foreign_ownership": "EU buyers own freely; non-EU buyers need Council of Ministers permission (standard Cyprus rule, not stated on the page)",
+   "rental_programme": null,
+   "amenities": [
+    "swimming pool",
+    "gym",
+    "landscaped gardens",
+    "children's playground",
+    "tennis court",
+    "basketball court",
+    "gated community"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Limassol municipality / district planning authority",
+   "brochure_url": "https://www.cybarco.com/wp-content/uploads/2024/02/Seaview-Heights-Brochure-ENG.pdf",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Full unit-by-unit price list with sizes and sold units, dated 29 Oct 2026",
+   "Floor plans and specification in the brochure",
+   "Established developer with independently reported deliveries"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.cybarco.com/project/seaview-heights-limassol/",
+   "https://www.cybarco.com/wp-content/uploads/2024/02/Seaview-Heights-Pricelist-ENG-291026.pdf",
+   "https://www.cybarco.com/wp-content/uploads/2024/02/Seaview-Heights-Brochure-ENG.pdf",
+   "https://www.cybarco.com/news/the-limassol-collection",
+   "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics",
+   "https://www.cbn.com.cy/article/114383/cybarco-towers-villas-and-residences-under-construction-around-cyprus",
+   "https://dom.com.cy/en/live/complexes/luxury-complex-limassol/seaview-heights/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "amoenus-casangular-exclusive",
+  "name": "Amoenus",
+  "developer": "Casangular Exclusive (website operated by Inversiones y Desarrollos Rocabella, S.L., NIF B-76.745.363)",
+  "area": "Rokabella, Callao Salvaje, Adeje (south Tenerife)",
+  "country": "Spain",
+  "market": "Canary Islands",
+  "stage": "under construction",
+  "url": "https://casangularexclusive.com/amoenus/",
+  "docs_url": "https://casangularexclusive.com/amoenus/",
+  "docs_listed": [
+   "developer: from EUR 1,195,000; homes of 1 to 3 floors, 184 to 573 m2, 3-4 bedrooms, private infinity pool, lift, garage",
+   "developer: architect Teotimo Rodriguez Hermoso, Rokabella location",
+   "agency (Engel & Volkers): 4 units listed EUR 1,326,000 to 1,552,300, construction year 2027",
+   "press (Dec 2025): construction started, contractor OHLA",
+   "BORME: company register entries for Inversiones y Desarrollos Rocabella (2017 capital increase to EUR 6.5m; June 2026 total split into three companies)"
+  ],
+  "note": "Luxury villas and apartments with private infinity pools on the Rokabella seafront in Adeje, sold by Casangular Exclusive from EUR 1.195m, with construction by OHLA reported as started in Dec 2025 and agents giving 2027 as the build year. The company behind the website, Inversiones y Desarrollos Rocabella, S.L., announced in the official BORME a total split into three new companies in June 2026; no licence number, bank guarantee, plans or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1195000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No licencia de obra number on the developer page or agency listings",
+   "escrow": "No bank guarantee or insurance for deposits mentioned (Spanish law requires one for off-plan payments, but nothing is stated)",
+   "progress": "No progress updates on the developer site; Motor16 (4 Dec 2025) says construction had begun",
+   "plans": "No floor plans published; sizes only",
+   "record": "Developer site lists other Rokabella projects (Maraxe, Sybaris, Insigne) but gives no completion or delivery data; press calls Amoenus its third Tenerife development",
+   "returns": "No rental or return promises"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction has started, built by OHLA",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.motor16.com/agencia/amoenus-la-promocion-de-viviendas-de-lujo-de-casangular-exclusive-en-costa-adeje-inicia-su-contruccion/"
+   },
+   {
+    "claim": "Inversiones y Desarrollos Rocabella, S.L. is a registered company in Santa Cruz de Tenerife (sheet TF 59805), capital raised to EUR 6.5m in 2017",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.boe.es/borme/dias/2017/11/29/pdfs/BORME-A-2017-227-38.pdf"
+   },
+   {
+    "claim": "The company approved a total split on 1 June 2026 into Inversiones y Desarrollos Rocabella S.L.U., Axis Mundi Exclusive S.L.U. and Sybaris Premium Villas S.L.U.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.boe.es/borme/dias/2026/06/15/pdfs/BORME-C-2026-3445.pdf"
+   },
+   {
+    "claim": "Website operator is Inversiones y Desarrollos Rocabella, S.L., NIF B-76.745.363, Adeje",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casangularexclusive.com/wp-content/uploads/2018/12/poitica_de_privacidad_c.pdf"
+   },
+   {
+    "claim": "Prices from EUR 1,195,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casangularexclusive.com/amoenus/"
+   },
+   {
+    "claim": "Agency prices EUR 1,326,000 to 1,552,300, build year 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.engelvoelkers.com/es/ca/projects/5743534b-bf25-5276-879c-35c1024c74ba"
+   },
+   {
+    "claim": "Homes 184 to 573 m2 with 3-4 bedrooms and private infinity pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casangularexclusive.com/amoenus/"
+   },
+   {
+    "claim": "Third Casangular development in Tenerife, all in Rokabella",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.motor16.com/agencia/amoenus-la-promocion-de-viviendas-de-lujo-de-casangular-exclusive-en-costa-adeje-inicia-su-contruccion/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casangularexclusive.com/amoenus/"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casangularexclusive.com/amoenus/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Adeje, Santa Cruz de Tenerife, Spain",
+   "developer_company": "Inversiones y Desarrollos Rocabella, S.L. (NIF B-76.745.363; Registro Mercantil Santa Cruz de Tenerife sheet TF 59805); sole administrator Galisim, S.L.U.",
+   "listed_or_audited": null,
+   "construction_start": "2025-12",
+   "handover_promised": "2027",
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "townhouse",
+    "penthouse",
+    "villa"
+   ],
+   "size_min_m2": 184,
+   "size_max_m2": 573,
+   "price_min": 1195000,
+   "price_max": null,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Spain",
+   "rental_programme": null,
+   "amenities": [
+    "private infinity pool",
+    "private lift",
+    "private garage and storage",
+    "garden",
+    "photovoltaic energy",
+    "sea views to La Gomera"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Adeje",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Large listed contractor (OHLA) named for construction",
+   "Developer company is traceable in the official BORME",
+   "No guaranteed-return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://casangularexclusive.com/amoenus/",
+   "https://casangularexclusive.com/",
+   "https://casangularexclusive.com/wp-content/uploads/2018/12/poitica_de_privacidad_c.pdf",
+   "https://www.engelvoelkers.com/es/ca/projects/5743534b-bf25-5276-879c-35c1024c74ba",
+   "https://www.motor16.com/agencia/amoenus-la-promocion-de-viviendas-de-lujo-de-casangular-exclusive-en-costa-adeje-inicia-su-contruccion/",
+   "https://www.boe.es/borme/dias/2017/11/29/pdfs/BORME-A-2017-227-38.pdf",
+   "https://www.boe.es/borme/dias/2026/06/15/pdfs/BORME-C-2026-3445.pdf"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "residencial-ancor-iii-metrovacesa",
+  "name": "Residencial Ancor III (Ancor F3)",
+  "developer": "Metrovacesa S.A. (listed on the Madrid stock exchange)",
+  "area": "Abades, Arico (south-east Tenerife)",
+  "country": "Spain",
+  "market": "Canary Islands",
+  "stage": "off-plan",
+  "url": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3",
+  "docs_url": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf",
+  "docs_listed": [
+   "developer: project status bar (on sale, start of construction, end of construction, delivery), currently 'On sale'",
+   "developer: 50 homes, 1-3 bedrooms, architects Makin y Molowny, features list",
+   "developer: 56-page English dossier with indicative floor plans and building specification",
+   "dossier: brochure based on the Basic Project 'presented for processing of the building licence'",
+   "dossier: Metrovacesa track record (8,400 homes delivered and 14,000 launched 2018-2024)"
+  ],
+  "note": "Third phase of 50 apartments with pool and sea views in Abades, south Tenerife, by listed developer Metrovacesa, shown as 'On sale' with construction not yet started. The English dossier says it is based on the Basic Project submitted for the building licence, so no licence number exists yet; floor plans are published, while prices, completion date and the deposit guarantee details are not. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Metrovacesa states 8,400 homes delivered 2018-2024 (dossier); Brainsre reports 1,805 homes delivered in 2025; earlier Ancor phases F2 listed on the same site",
+   "units": 50,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "Dossier states the brochure was prepared from the Basic Project 'presented for processing of the building licence' (licence applied for, no number)",
+   "escrow": "Dossier only refers to documentation under Real Decreto 515/1989; no named guarantee or account for deposits on this project page (the 'Promoter Bank' field reads 'B. Financiador', no bank named)",
+   "progress": "Status bar shows 'On sale' only; construction not started",
+   "plans": "Indicative floor plans in the English dossier",
+   "record": "Listed developer; 1,805 homes delivered in 2025 per Brainsre",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Metrovacesa delivered 1,805 homes in 2025 and had 3,917 under construction at year-end",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   },
+   {
+    "claim": "8,400 homes delivered and 14,000 launched 2018-2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf"
+   },
+   {
+    "claim": "Building licence applied for (Basic Project submitted), not yet granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf"
+   },
+   {
+    "claim": "50 homes, 1 to 3 bedrooms, pool, solarium, multipurpose room",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3"
+   },
+   {
+    "claim": "Project status 'On sale', construction not started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3"
+   },
+   {
+    "claim": "Architects Makin y Molowny Arquitectos S.L.P.",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3"
+   },
+   {
+    "claim": "Earlier phase Residencial Ancor F2 marketed by the same developer in Arico",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/arico"
+   },
+   {
+    "claim": "Homes delivered with fitted kitchen and appliances, ten-year structural guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf"
+   },
+   {
+    "claim": "Deposits guaranteed by a named bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Metrovacesa S.A.",
+   "developer_units_delivered": null,
+   "listed_or_audited": "Metrovacesa S.A. shares listed on the Spanish stock exchanges (Bolsa de Madrid)",
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Spain",
+   "rental_programme": null,
+   "amenities": [
+    "communal pool",
+    "solarium",
+    "multipurpose room",
+    "landscaped gardens",
+    "parking and storage",
+    "lift",
+    "solar energy"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Arico",
+   "brochure_url": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf",
+   "developer_projects_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Dossier openly states the licence is still being processed",
+   "Floor plans and full specification published",
+   "Large listed developer with independently reported deliveries"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/en/developments/tenerife/arico/residencial-ancor-f3",
+   "https://metrovacesa.com/en/developments/tenerife/arico",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/residencialancorf3/mvc_dossier_ancor_f3_eng.pdf",
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "ribamar-aedas-homes-landco",
+  "name": "Ribamar",
+  "developer": "AEDAS Homes with LandCo (Banco Santander group land company, owner of the plot)",
+  "area": "Praia da Rocha, Portimão",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "off-plan",
+  "url": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction",
+  "docs_url": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction",
+  "docs_listed": [
+   "developer: 116 homes, studio to 4 bedrooms, 50 to 177 m2, from EUR 247,000 / EUR 495,000 (both figures shown)",
+   "developer: amenities list (pool, children's pool, gym, gastrobar, concierge, community room)",
+   "developer: dossier and specification on Issuu",
+   "agency (Luximos): unit-by-unit table with reference, typology, area, balcony, floor, parking and price, plans links, sold units",
+   "press: over 40 homes sold for over EUR 18m by Sep 2025; construction planned Q2 2026"
+  ],
+  "note": "17-storey tower of 116 apartments 200 m from Praia da Rocha, the first Portuguese project of AEDAS Homes with Santander's LandCo. Press reported more than 40 homes sold for over EUR 18m by Sep 2025, about 80% to Portugal residents, and construction planned for Q2 2026; agency price lists run from about EUR 526,000 for a T1+1 to EUR 1.39m for a T4, but no permit number, deposit guarantee, completion date or progress is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 247000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 116,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No alvara or licence number on the AEDAS page, agency page or press",
+   "escrow": "Nothing published on deposit protection",
+   "progress": "No progress updates; Postal (1 Aug 2025) said construction was planned for Q2 2026",
+   "plans": "Agency (Luximos) links plans per unit; AEDAS dossier on Issuu",
+   "record": "AEDAS page does not list delivered projects; this is its first project in Portugal",
+   "returns": "No rental guarantee or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "116 homes T1 to T4 in a 17-floor tower about 200 m from Praia da Rocha",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.barlavento.pt/projeto-ribamar-em-portimao-ultrapassa-18-milhoes-de-euros-em-vendas/"
+   },
+   {
+    "claim": "Joint venture of AEDAS Homes and LandCo (Santander group), land owned by LandCo",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/794273/aedas-homes-y-landco-venden-mas-de-40-viviendas-por-mas-de-18-millones-en-un-proyecto-en-portugal/"
+   },
+   {
+    "claim": "More than 40 homes sold for over EUR 18m by Sep 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://echoboomer.pt/ribamar-mais-de-40-apartamentos-vendidos-portimao/"
+   },
+   {
+    "claim": "About 80% of buyers resident in Portugal",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.barlavento.pt/projeto-ribamar-em-portimao-ultrapassa-18-milhoes-de-euros-em-vendas/"
+   },
+   {
+    "claim": "Construction planned for Q2 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://postal.pt/algarve/ribamar-comeca-a-nascer-um-empreendimento-de-luxo-junto-a-praia-da-rocha/"
+   },
+   {
+    "claim": "Investment over EUR 125m including a possible second tower of another 116 homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.essential-business.pt/2025/08/16/aedas-homes-and-landco-invest-e125-million-in-ribamar-project/"
+   },
+   {
+    "claim": "Completion in Q2 2026 (Essential Business wording)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://postal.pt/algarve/ribamar-comeca-a-nascer-um-empreendimento-de-luxo-junto-a-praia-da-rocha/"
+   },
+   {
+    "claim": "Prices from EUR 247,000 (developer page also shows EUR 495,000)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction"
+   },
+   {
+    "claim": "Unit prices EUR 526,000 to 1,392,000 for T1+1 to T4",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.luximos.pt/en/new-developments/ribamar-apartments-for-sale-in-praia-da-rocha-portimao-algarve"
+   },
+   {
+    "claim": "Building licence issued by Portimao municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "AEDAS Homes with LandCo (Grupo Santander)",
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 177,
+   "price_min": 247000,
+   "price_max": 1392000,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Portugal",
+   "rental_programme": null,
+   "amenities": [
+    "swimming pool",
+    "children's pool",
+    "gym",
+    "gastrobar",
+    "concierge",
+    "community room",
+    "kids' area",
+    "coworking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Portimao",
+   "brochure_url": "https://issuu.com/aedashomes/docs/dossier_y_memoria_ribamar",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Unit-level price and area table with plans published by the sales agent",
+   "Land owned by a Santander group company",
+   "Independent press reports sales volumes"
+  ],
+  "flags": [],
+  "sources": [
+   "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction",
+   "https://www.luximos.pt/en/new-developments/ribamar-apartments-for-sale-in-praia-da-rocha-portimao-algarve",
+   "https://forbes.es/economia/794273/aedas-homes-y-landco-venden-mas-de-40-viviendas-por-mas-de-18-millones-en-un-proyecto-en-portugal/",
+   "https://www.essential-business.pt/2025/08/16/aedas-homes-and-landco-invest-e125-million-in-ribamar-project/",
+   "https://echoboomer.pt/ribamar-mais-de-40-apartamentos-vendidos-portimao/",
+   "https://www.barlavento.pt/projeto-ribamar-em-portimao-ultrapassa-18-milhoes-de-euros-em-vendas/",
+   "https://postal.pt/algarve/ribamar-comeca-a-nascer-um-empreendimento-de-luxo-junto-a-praia-da-rocha/"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "oliu-capdepera-taylor-wimpey-espana",
+  "name": "Oliu",
+  "developer": "Taylor Wimpey España (subsidiary of Taylor Wimpey plc)",
+  "area": "Capdepera (north-east Mallorca, near Cala Ratjada)",
+  "country": "Spain",
+  "market": "Balearics",
+  "stage": "under construction",
+  "url": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/",
+  "docs_listed": [
+   "developer: 23 apartments and 9 townhouses, 2 bedrooms, prices from EUR 499,000 (ground floor), 575,000 (townhouse), 685,000 (penthouse)",
+   "developer: delivery date 02-11-2027 per unit type, plans per type",
+   "developer: construction progress video dated 07/2026",
+   "developer: specification (memoria de calidades, Sept 2026) and initial energy certificate PDFs; brochure PDF",
+   "developer buying guide: all payments on account guaranteed by insurance policy or bank guarantee under the Ley de Ordenacion de la Edificacion"
+  ],
+  "note": "32 two-bedroom apartments and townhouses in Capdepera, Mallorca, sold directly by Taylor Wimpey España from EUR 499,000 with delivery set for 2 Nov 2027. The developer publishes plans per type, a July 2026 progress video and a payment guarantee by policy or bank guarantee, but no licence number. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 499000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Taylor Wimpey guarantees all payments on account during construction under the Ley de Ordenacion de la Edificacion, by insurance policy (poliza) or bank guarantee (aval) issued per buyer about 30 working days after contract",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey España says it has been in Spain since 1958 with more than 7,000 customers in 65 years (brochure); sister Mallorca project Es Voltor shown as sold with delivery August 2026; Taylor Wimpey plc full-year results (LSE filing) report 494 Spanish completions in 2025",
+   "units": 32,
+   "payment_plan": null,
+   "price_per_m2": 5594,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No licence number on the page, specification or brochure",
+   "escrow": "Buying guide: payments guaranteed under the LOE by poliza or aval depending on the development",
+   "progress": "Project page links a construction progress video dated 07/2026",
+   "plans": "Plans button per unit type (ground floor, townhouse, penthouse)",
+   "record": "Brochure: in Spain since 1958, part of Taylor Wimpey plc, over 7,000 customers; plc full-year results RNS: Spain completed 494 homes in 2025",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "23 apartments and 9 townhouses of 2 bedrooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/"
+   },
+   {
+    "claim": "Delivery 2 Nov 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/"
+   },
+   {
+    "claim": "Under construction, progress video July 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/"
+   },
+   {
+    "claim": "Prices from EUR 499,000 for an 89.2 m2 ground-floor apartment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/"
+   },
+   {
+    "claim": "Payments on account guaranteed by poliza or aval under the LOE",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/guia-compra/"
+   },
+   {
+    "claim": "In Spain since 1958, part of Taylor Wimpey plc, over 7,000 customers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://catalog.taylorwimpeyspain.com/wp-content/uploads/2025/07/TWE_OLIU_impres_ES.pdf"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025 (2024: 504), selling mainly second homes to international buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Initial energy certificate registered for the building (Can Moll)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/wp-content/uploads/2025/05/Justificante_de_certificacion_energetica_de_edificio-INICIAL-CAN-MOLL.pdf"
+   },
+   {
+    "claim": "Underground parking, communal pool, aerothermal heating, solar thermal panels",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/wp-content/uploads/2025/05/OLIU-Memoria-calidades-ES_Sept2026_compressed.pdf"
+   },
+   {
+    "claim": "Building licence granted by Capdepera council",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/"
+   },
+   {
+    "claim": "Sold directly by the developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "Taylor Wimpey de España S.A.U. (Taylor Wimpey plc group)",
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "unit_types": [
+    "2BR apartment",
+    "2BR townhouse",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 89.2,
+   "size_max_m2": 98.3,
+   "price_min": 499000,
+   "price_max": null,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Spain",
+   "rental_programme": null,
+   "amenities": [
+    "communal pool",
+    "gardens",
+    "underground parking",
+    "lift",
+    "aerothermal heating",
+    "solar thermal panels",
+    "EV pre-installation",
+    "sea views from some units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Capdepera",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/wp-content/uploads/2025/07/TWE_OLIU_impres_ES.pdf",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Payment guarantee by poliza or aval stated in the buying guide",
+   "Dated construction progress video and exact delivery date per unit type",
+   "Plans, specification and energy certificate published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/oliu-capdepera-mallorca/",
+   "https://taylorwimpeyspain.com/es/guia-compra/",
+   "https://taylorwimpeyspain.com/wp-content/uploads/2025/05/OLIU-Memoria-calidades-ES_Sept2026_compressed.pdf",
+   "https://taylorwimpeyspain.com/wp-content/uploads/2025/05/Justificante_de_certificacion_energetica_de_edificio-INICIAL-CAN-MOLL.pdf",
+   "https://catalog.taylorwimpeyspain.com/wp-content/uploads/2025/07/TWE_OLIU_impres_ES.pdf",
+   "https://taylorwimpeyspain.com/es/casa/es-voltor-esporles-mallorca/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "eden-beach-phase-3-taylor-wimpey-espana",
+  "name": "Eden Beach (Phase 3, Building 3)",
+  "developer": "Taylor Wimpey España (subsidiary of Taylor Wimpey plc)",
+  "area": "La Mata, Torrevieja (Alicante)",
+  "country": "Spain",
+  "market": "Costa Blanca",
+  "stage": "off-plan",
+  "url": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/",
+  "docs_listed": [
+   "developer: phase schedule (Phase 1 April 2025, 100% sold; Phase 2 October 2026, last penthouses; Phase 3 September 2027)",
+   "developer: apartments from EUR 330,000 (2 bed, 65.56 m2, delivery 15-09-2027), penthouses from EUR 540,000",
+   "developer: plans per type, 360 virtual tour, construction progress video dated 10/2025",
+   "developer: specification (March 2026) and energy certificate PDFs",
+   "developer buying guide: payments on account guaranteed by poliza or aval under the LOE"
+  ],
+  "note": "Third building of Taylor Wimpey España's sea-view apartment scheme 700 m from La Mata beach in Torrevieja, with 2-bed apartments from EUR 330,000 and delivery set for 15 Sep 2027 after phase 1 was delivered in April 2025. Plans, a payment guarantee by policy or bank guarantee and a progress video (Oct 2025, for the earlier building) are published; no licence number. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 330000,
+   "currency": "EUR",
+   "title": "freehold",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Taylor Wimpey guarantees all payments on account during construction under the Ley de Ordenacion de la Edificacion, by insurance policy (poliza) or bank guarantee (aval)",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Eden Beach phase 1 (Building 1) delivered April 2025 and 100% sold per the developer; Taylor Wimpey plc full-year results report 494 Spanish completions in 2025",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 5034,
+   "lease_base": null,
+   "extension": null
+  },
+  "evidence": {
+   "permit": "No licence number on the page or specification",
+   "escrow": "Buying guide: payments guaranteed under the LOE by poliza or aval",
+   "progress": "Progress video dated 10/2025 on the page (covers the scheme; Phase 3 itself has no dated update)",
+   "plans": "Plans per unit type on the page",
+   "record": "Phase 1 delivered April 2025 per developer; plc filing confirms 494 Spanish completions in 2025",
+   "returns": "No rental guarantee or yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 1 (Building 1) delivered April 2025 and 100% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/"
+   },
+   {
+    "claim": "Phase 2 delivery October 2026, last penthouses available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/"
+   },
+   {
+    "claim": "Phase 3 (Building 3) delivery 15 September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/"
+   },
+   {
+    "claim": "2-bed apartments from EUR 330,000 (65.56 m2), penthouses from EUR 540,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/"
+   },
+   {
+    "claim": "700 m from La Mata beach, 40 minutes from Alicante airport",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/"
+   },
+   {
+    "claim": "Payments on account guaranteed by poliza or aval under the LOE",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/guia-compra/"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025, mainly second homes for international buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Taylor Wimpey guides 350 to 400 Spanish completions in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Energy performance certificate issued for the building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/wp-content/uploads/2024/03/Eden-Beach-Torrevieja-Certificado-Energetico-CEE.pdf"
+   },
+   {
+    "claim": "Building licence for Phase 3 granted by Torrevieja council",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "Taylor Wimpey de España S.A.U. (Taylor Wimpey plc group)",
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange",
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "unit_types": [
+    "2BR apartment",
+    "3BR penthouse",
+    "ground floor with garden"
+   ],
+   "size_min_m2": 65.56,
+   "size_max_m2": 96.42,
+   "price_min": 330000,
+   "price_max": null,
+   "currency": "EUR",
+   "foreign_ownership": "Freehold; no restrictions on foreign buyers in Spain",
+   "rental_programme": null,
+   "amenities": [
+    "communal pools with waterfall",
+    "landscaped gardens",
+    "gated community",
+    "solariums on penthouses",
+    "lift",
+    "outdoor parking",
+    "aerothermal heating",
+    "EV pre-installation"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Torrevieja",
+   "brochure_url": "https://taylorwimpeyspain.com/wp-content/uploads/2024/03/EDEN-BEACH-Memoria-calidades-ES-Marz-2026_compressed.pdf",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Earlier phase of the same scheme already delivered",
+   "Payment guarantee by poliza or aval stated by the developer",
+   "Exact delivery dates and plans per unit type"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/eden-beach-torrevieja-alicante/",
+   "https://taylorwimpeyspain.com/es/guia-compra/",
+   "https://taylorwimpeyspain.com/wp-content/uploads/2024/03/EDEN-BEACH-Memoria-calidades-ES-Marz-2026_compressed.pdf",
+   "https://taylorwimpeyspain.com/wp-content/uploads/2024/03/Eden-Beach-Torrevieja-Certificado-Energetico-CEE.pdf",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ }
+]
