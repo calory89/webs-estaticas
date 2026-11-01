@@ -77822,6 +77822,191 @@
     "https://m.flsenate.gov/Statutes/718.202"
    ],
    "verified_score": 1
+  },
+  {
+   "slug": "uc88-wyndham-garden-bkk1-chhun-sambath",
+   "name": "UC88 Wyndham Garden BKK1",
+   "developer": "Chhun Sambath Development Co., Ltd. (UC Group)",
+   "area": "No. 60 & 62, Street 322, BKK1, Chamkarmon, Phnom Penh",
+   "country": "Cambodia",
+   "market": "Cambodia",
+   "stage": "under construction",
+   "url": "https://www.realestate.com.kh/new-developments/uc88-wyndham-garden-bkk1/",
+   "docs_url": "https://www.uc88bkk1official.com/",
+   "seed": {
+    "price": 130000,
+    "currency": "USD",
+    "title": "freehold strata (hard title), foreigners above ground floor",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "yield_pct": 6,
+    "completion": "2026-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 95,
+    "developer_delivered": "Chhun Sambath Development lists The View (Phnom Penh, 2019), 88 Residence (Sihanoukville, 2021) and Golden One (Phnom Penh, 2022) as completed",
+    "units": 438,
+    "payment_plan": "Option 1: 30% at SPA (10% discount), 20% in 12 months, 50% at handover; Option 2: 15% SPA (15% discount), 40% in 12 months, 10% at handover (as listed)",
+    "price_per_m2": 2794,
+    "progress_updates": true
+   },
+   "docs_listed": [
+    "developer: 10-year guaranteed rental return, 6% years 1-5 and at least 6% years 6-10 (FAQ)",
+    "developer FAQ: freehold title, management fee USD 1.65/sq m, 8 lifts, expected handover June 2025",
+    "developer: completed projects The View 2019, 88 Residence 2021, Golden One 2022; UC88 scheduled 2026",
+    "consultant monthly progress report Sep 2026: expected completion Dec 2026, status on track",
+    "portal: 95% built, 71% sold, from USD 164,887, two payment options"
+   ],
+   "note": "46-storey Wyndham Garden hotel-residence tower in BKK1 sold with a 10-year 6% guaranteed rental return; handover has moved from the June 2025 date still on the developer FAQ to December 2026 in the September 2026 progress report; no permit number or deposit protection is published. (checked 31 Oct 2026)",
+   "evidence": {
+    "permit": "No construction permit or licence number on developer or agent pages",
+    "escrow": null,
+    "progress": "Monthly progress report Sep 2026 by UC Design Build (group company) lists completed works and expected completion Dec 2026; realestate.com.kh lists 95% built; ERA Cambodia (Feb 2026) describes final interior works",
+    "plans": "Unit types listed by portals; no floor plans found on the developer site",
+    "record": "Developer About page lists three completed projects with years; no independent confirmation found",
+    "returns": "Developer FAQ: 'Guarantee Rental Return' 10 years, 6% years 1-5, at least 6% years 6-10"
+   },
+   "positives": [
+    "Structure and facade complete; dated monthly progress reports published",
+    "International operator (Wyndham Garden) named",
+    "Developer, landowner and contractor in one group"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "contradicted"
+   },
+   "claims": [
+    {
+     "claim": "Handover June 2025 (developer FAQ)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://nhsmcambodia.com/wp-content/uploads/2026/02/UC88-Monthly-Report-For-September-new-2.pdf"
+    },
+    {
+     "claim": "Expected completion Dec 2026, on track (Sep 2026 report)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://nhsmcambodia.com/wp-content/uploads/2026/02/UC88-Monthly-Report-For-September-new-2.pdf"
+    },
+    {
+     "claim": "Completion June 2026 (ERA, Jan 2026)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.eracambodia.com/news/p430iy7q6bfleh54i5wufw5hmtm9re"
+    },
+    {
+     "claim": "Topped out Nov 2023",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.eracambodia.com/projects/uc88"
+    },
+    {
+     "claim": "10-year GRR at 6% a year",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uc88bkk1official.com/faq/"
+    },
+    {
+     "claim": "438 units (portal) vs 459 units (ERA)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.realestate.com.kh/new-developments/uc88-wyndham-garden-bkk1/"
+    },
+    {
+     "claim": "Developer completed The View, Golden One, 88 Residence",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uc88bkk1official.com/about-us/"
+    },
+    {
+     "claim": "Freehold title for foreigners",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uc88bkk1official.com/faq/"
+    },
+    {
+     "claim": "Construction permit",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uc88bkk1official.com/"
+    },
+    {
+     "claim": "Price from USD 130,000-164,887",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.eracambodia.com/projects/uc88"
+    }
+   ],
+   "facts": {
+    "developer_founded": 1990.0,
+    "developer_hq": "Phnom Penh, Cambodia",
+    "developer_company": "Chhun Sambath Development Co., Ltd. (subsidiary of UC Group)",
+    "developer_projects_delivered": 3.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2026-Q4",
+    "original_handover": "2024-Q4",
+    "delay_months": 24.0,
+    "unit_types": [
+     "hotel residence",
+     "serviced residence",
+     "duplex penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 130000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": 30.0,
+    "payment_plan": "30/20/50 or 15/40/10 per portal",
+    "foreign_ownership": "Strata hard title above ground floor, 70% foreign quota",
+    "rental_programme": "Wyndham Garden-managed hotel residences (floors 5-23) with 10-year GRR 6%",
+    "service_charge": "USD 1.65 per sq m gross",
+    "brand": "Wyndham Garden",
+    "amenities": [
+     "28 m rooftop infinity pool",
+     "fitness center",
+     "sky bar",
+     "concierge",
+     "multi-level parking"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ministry of Land Management, Urban Planning and Construction; Phnom Penh Capital Hall",
+    "brochure_url": null
+   },
+   "sources": [
+    "https://www.uc88bkk1official.com/",
+    "https://www.uc88bkk1official.com/faq/",
+    "https://www.uc88bkk1official.com/about-us/",
+    "https://nhsmcambodia.com/wp-content/uploads/2026/02/UC88-Monthly-Report-For-September-new-2.pdf",
+    "https://www.eracambodia.com/news/p430iy7q6bfleh54i5wufw5hmtm9re",
+    "https://www.eracambodia.com/projects/uc88",
+    "https://www.rielproperty.com/property/uc88-wyndham-garden-bkk1/",
+    "https://www.realestate.com.kh/new-developments/uc88-wyndham-garden-bkk1/"
+   ],
+   "permit_number": null,
+   "added": "2026-10-31",
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0
   }
  ]
 }
