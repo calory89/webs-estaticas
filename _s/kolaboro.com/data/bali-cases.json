@@ -64,7 +64,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-022",
@@ -126,7 +135,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-007",
@@ -187,7 +205,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-018",
@@ -250,7 +277,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-023",
@@ -312,7 +348,22 @@
    },
    "stage": "under construction",
    "delay": 13.0,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-021",
@@ -374,7 +425,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-028",
@@ -436,6 +496,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -497,7 +558,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-10-30",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-032",
@@ -558,6 +634,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -618,6 +695,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -678,6 +756,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -738,6 +817,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -801,6 +881,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -862,6 +943,7 @@
    },
    "stage": "under construction",
    "delay": 17.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -924,6 +1006,7 @@
    },
    "stage": "under construction",
    "delay": 8.0,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -986,6 +1069,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -1048,6 +1132,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -1110,7 +1195,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-002",
@@ -1172,7 +1272,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 11
+   "overdue": null,
+   "profile": 11,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "guaranteed-return language",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-003",
@@ -1234,7 +1343,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-004",
@@ -1296,6 +1414,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -1357,7 +1476,16 @@
    },
    "stage": "under construction",
    "delay": 8.0,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-10-30",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-009",
@@ -1419,7 +1547,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-10-30",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-010",
@@ -1481,7 +1618,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-011",
@@ -1543,6 +1689,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -1605,7 +1752,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-017",
@@ -1666,7 +1822,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-029",
@@ -1729,7 +1894,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-038",
@@ -1788,7 +1962,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-039",
@@ -1848,6 +2037,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -1911,6 +2101,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -1973,6 +2164,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 5,
    "profile": 12
   },
   {
@@ -2034,6 +2226,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 5
   },
   {
@@ -2094,7 +2287,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-058",
@@ -2154,6 +2356,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -2215,6 +2418,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -2277,6 +2481,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -2339,6 +2544,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -2401,6 +2607,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -2463,7 +2670,22 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-10-28",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-10-28",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-016",
@@ -2526,7 +2748,28 @@
    },
    "stage": "under construction",
    "delay": 9.0,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-10-30",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-020",
@@ -2588,6 +2831,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -2651,6 +2895,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -2714,6 +2959,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -2776,6 +3022,7 @@
    },
    "stage": "under construction",
    "delay": 10.0,
+   "overdue": 5,
    "profile": 15
   },
   {
@@ -2836,6 +3083,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -2899,6 +3147,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -2962,6 +3211,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -3023,6 +3273,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -3087,6 +3338,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -3148,6 +3400,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -3209,7 +3462,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-015",
@@ -3222,7 +3484,7 @@
    "done": 2027,
    "title": "leasehold",
    "lease": 30,
-   "yield": 7,
+   "yield": 14,
    "units": 66,
    "checks": {
     "permit": 0,
@@ -3250,6 +3512,7 @@
    "invited": null,
    "q": [
     "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -3270,7 +3533,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "BALI-046",
@@ -3331,6 +3603,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -3391,6 +3664,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -3451,6 +3725,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -3459,7 +3734,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Under $100k",
    "done": 2027,
    "title": "leasehold (Hak Sewa)",
@@ -3470,7 +3745,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -3482,11 +3757,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "caution",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -3512,7 +3787,58 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 11
+   "overdue": null,
+   "profile": 11,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-024",
@@ -3575,6 +3901,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -3636,6 +3963,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -3699,6 +4027,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -3762,6 +4091,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -3824,6 +4154,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 5,
    "profile": 13
   },
   {
@@ -3887,7 +4218,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-055",
@@ -3949,7 +4289,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BALI-056",
@@ -4011,6 +4360,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -4073,6 +4423,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 2,
    "profile": 11
   },
   {
@@ -4133,7 +4484,16 @@
    },
    "stage": "off-plan",
    "delay": 12.0,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "AUH-002",
@@ -4193,6 +4553,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -4253,6 +4614,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -4313,6 +4675,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -4372,6 +4735,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -4432,6 +4796,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -4492,6 +4857,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -4552,6 +4918,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -4611,6 +4978,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -4671,6 +5039,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -4731,7 +5100,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "AUH-012",
@@ -4791,6 +5169,7 @@
    },
    "stage": "under construction",
    "delay": 0.0,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -4851,6 +5230,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -4911,6 +5291,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -4971,6 +5352,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -5031,6 +5413,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -5091,6 +5474,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -5151,6 +5535,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -5211,6 +5596,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -5271,6 +5657,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -5333,6 +5720,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -5394,6 +5782,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -5455,6 +5844,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -5515,6 +5905,7 @@
    },
    "stage": "under construction",
    "delay": 13.0,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -5576,6 +5967,7 @@
    },
    "stage": "under construction",
    "delay": 15.0,
+   "overdue": 5,
    "profile": 13
   },
   {
@@ -5635,6 +6027,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -5695,6 +6088,7 @@
    },
    "stage": null,
    "delay": 3.0,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -5756,7 +6150,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "ALG-006",
@@ -5816,6 +6225,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -5876,6 +6286,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 11,
    "profile": 14
   },
   {
@@ -5936,6 +6347,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -5997,6 +6409,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -6057,7 +6470,58 @@
    },
    "stage": null,
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "AYT-005",
@@ -6120,6 +6584,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -6181,6 +6646,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -6240,6 +6706,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -6300,6 +6767,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -6363,6 +6831,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -6423,6 +6892,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -6483,6 +6953,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -6543,6 +7014,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -6603,6 +7075,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -6663,6 +7136,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -6723,6 +7197,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -6782,6 +7257,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -6842,6 +7318,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -6902,6 +7379,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -6962,6 +7440,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -7022,7 +7501,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BKK-003",
@@ -7082,6 +7570,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -7142,6 +7631,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -7202,6 +7692,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -7262,6 +7753,7 @@
    },
    "stage": "under construction",
    "delay": 1.0,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -7322,6 +7814,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -7382,6 +7875,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -7442,6 +7936,7 @@
    },
    "stage": "under construction",
    "delay": 58.0,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -7503,6 +7998,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -7565,7 +8061,22 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BHX-003",
@@ -7630,6 +8141,7 @@
    },
    "stage": "under construction",
    "delay": 15.0,
+   "overdue": null,
    "profile": 21
   },
   {
@@ -7691,7 +8203,22 @@
    },
    "stage": null,
    "delay": null,
-   "profile": 12
+   "overdue": 2,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "BJV-002",
@@ -7751,6 +8278,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -7813,6 +8341,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -7873,6 +8402,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -7933,6 +8463,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -7993,6 +8524,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -8054,6 +8586,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -8113,6 +8646,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -8174,6 +8708,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -8235,6 +8770,7 @@
    },
    "stage": "under construction",
    "delay": 5.0,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -8295,6 +8831,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -8358,6 +8895,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -8418,6 +8956,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -8479,7 +9018,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "KHM-004",
@@ -8539,6 +9087,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -8599,6 +9148,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -8659,6 +9209,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -8718,6 +9269,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 6
   },
   {
@@ -8778,6 +9330,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -8837,6 +9390,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -8897,6 +9451,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -8956,6 +9511,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -9019,6 +9575,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -9078,6 +9635,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -9139,6 +9697,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -9199,6 +9758,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -9258,7 +9818,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "CYM-001",
@@ -9318,6 +9893,7 @@
    },
    "stage": "under construction",
    "delay": 69.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -9378,6 +9954,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -9438,6 +10015,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -9498,6 +10076,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -9557,6 +10136,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -9617,7 +10197,22 @@
    },
    "stage": "under construction",
    "delay": 2.0,
-   "profile": 19
+   "overdue": null,
+   "profile": 19,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "COL-003",
@@ -9676,6 +10271,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -9736,6 +10332,7 @@
    },
    "stage": "under construction",
    "delay": 5.0,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -9796,6 +10393,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 2,
    "profile": 17
   },
   {
@@ -9856,6 +10454,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -9916,6 +10515,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -9977,6 +10577,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 8,
    "profile": 10
   },
   {
@@ -10038,6 +10639,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -10103,7 +10705,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "CRI-004",
@@ -10163,6 +10774,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -10223,6 +10835,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -10283,6 +10896,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -10342,6 +10956,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -10401,6 +11016,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -10460,6 +11076,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -10519,6 +11136,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -10578,6 +11196,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -10638,6 +11257,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -10698,6 +11318,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -10756,6 +11377,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -10814,6 +11436,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -10872,6 +11495,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -10932,6 +11556,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -10991,6 +11616,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -11050,6 +11676,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -11110,6 +11737,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -11170,6 +11798,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -11230,6 +11859,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -11289,6 +11919,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -11350,6 +11981,7 @@
    },
    "stage": "completed",
    "delay": 9.0,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -11411,7 +12043,22 @@
    },
    "stage": "completed",
    "delay": 4.0,
-   "profile": 19
+   "overdue": null,
+   "profile": 19,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "HRV-003",
@@ -11472,6 +12119,7 @@
    },
    "stage": "completed",
    "delay": 4.0,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -11533,6 +12181,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -11594,7 +12243,34 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "HRV-006",
@@ -11653,6 +12329,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 2,
    "profile": 15
   },
   {
@@ -11714,7 +12391,16 @@
    },
    "stage": "under construction",
    "delay": 15.0,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "CYP-002",
@@ -11774,6 +12460,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -11835,6 +12522,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -11895,6 +12583,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -11955,6 +12644,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -12017,7 +12707,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 15
+   "overdue": 2,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "DOM-001",
@@ -12077,7 +12776,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "DOM-002",
@@ -12137,6 +12851,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -12197,6 +12912,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -12257,6 +12973,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -12317,6 +13034,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -12377,6 +13095,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -12437,6 +13156,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -12497,6 +13217,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -12557,6 +13278,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -12617,6 +13339,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -12677,6 +13400,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -12737,6 +13461,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -12797,6 +13522,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -12857,6 +13583,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -12917,6 +13644,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -12977,6 +13705,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -13037,6 +13766,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -13097,6 +13827,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -13157,6 +13888,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -13217,6 +13949,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -13277,6 +14010,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -13337,6 +14071,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -13397,6 +14132,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -13457,6 +14193,7 @@
    },
    "stage": "under construction",
    "delay": 63.0,
+   "overdue": null,
    "profile": 22
   },
   {
@@ -13517,6 +14254,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -13577,6 +14315,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -13638,6 +14377,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -13698,6 +14438,7 @@
    },
    "stage": "off-plan",
    "delay": 9.0,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -13758,7 +14499,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "DXB-027",
@@ -13818,7 +14568,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "DXB-028",
@@ -13881,7 +14640,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "DXB-029",
@@ -13941,6 +14715,7 @@
    },
    "stage": "under construction",
    "delay": 5.0,
+   "overdue": 5,
    "profile": 13
   },
   {
@@ -14001,6 +14776,7 @@
    },
    "stage": "under construction",
    "delay": 4.0,
+   "overdue": 5,
    "profile": 15
   },
   {
@@ -14061,6 +14837,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -14121,7 +14898,28 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "DXB-033",
@@ -14181,6 +14979,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -14242,7 +15041,28 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "DXB-035",
@@ -14302,6 +15122,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -14362,6 +15183,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -14422,6 +15244,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -14482,6 +15305,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -14542,6 +15366,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -14605,6 +15430,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -14665,6 +15491,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -14725,7 +15552,16 @@
    },
    "stage": "under construction",
    "delay": 12.0,
-   "profile": 19
+   "overdue": null,
+   "profile": 19,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "DXB-043",
@@ -14785,6 +15621,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -14845,6 +15682,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -14905,6 +15743,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -14965,6 +15804,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -15025,6 +15865,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -15088,6 +15929,7 @@
    },
    "stage": "under construction",
    "delay": 9.0,
+   "overdue": 8,
    "profile": 18
   },
   {
@@ -15149,6 +15991,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -15212,6 +16055,7 @@
    },
    "stage": "under construction",
    "delay": 21.0,
+   "overdue": 2,
    "profile": 18
   },
   {
@@ -15272,6 +16116,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -15332,6 +16177,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -15395,6 +16241,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -15456,7 +16303,40 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "DXB-055",
@@ -15516,6 +16396,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -15576,6 +16457,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -15636,6 +16518,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -15696,6 +16579,7 @@
    },
    "stage": "under construction",
    "delay": 12.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -15756,6 +16640,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -15817,6 +16702,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -15876,6 +16762,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -15937,6 +16824,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -15998,7 +16886,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "EGY-002",
@@ -16059,6 +16956,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -16119,7 +17017,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "EGY-004",
@@ -16180,6 +17087,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -16241,6 +17149,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -16301,6 +17210,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -16361,7 +17271,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "EGY-008",
@@ -16421,6 +17340,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -16481,6 +17401,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -16542,6 +17463,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -16603,6 +17525,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 5
   },
   {
@@ -16663,6 +17586,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -16724,6 +17648,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -16784,6 +17709,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -16844,6 +17770,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -16904,6 +17831,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -16964,6 +17892,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -17024,6 +17953,7 @@
    },
    "stage": "under construction",
    "delay": 9.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -17087,6 +18017,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -17147,6 +18078,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -17207,7 +18139,28 @@
    },
    "stage": null,
    "delay": null,
-   "profile": 10
+   "overdue": null,
+   "profile": 10,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "GEO-004",
@@ -17268,7 +18221,40 @@
    },
    "stage": null,
    "delay": null,
-   "profile": 11
+   "overdue": null,
+   "profile": 11,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "GEO-005",
@@ -17328,6 +18314,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -17388,7 +18375,28 @@
    },
    "stage": "under construction",
    "delay": 12.0,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "GLA-001",
@@ -17449,6 +18457,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -17511,6 +18520,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -17572,6 +18582,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -17633,6 +18644,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -17694,6 +18706,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -17754,6 +18767,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -17814,6 +18828,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -17874,6 +18889,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -17934,6 +18950,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -17994,6 +19011,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -18055,7 +19073,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "GRC-003",
@@ -18115,6 +19142,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -18175,6 +19203,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -18235,6 +19264,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -18295,6 +19325,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -18360,6 +19391,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -18420,6 +19452,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -18481,6 +19514,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -18542,6 +19576,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -18604,7 +19639,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "HO -002",
@@ -18666,6 +19710,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -18726,6 +19771,7 @@
    },
    "stage": "off-plan",
    "delay": 15.0,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -18787,6 +19833,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -18848,6 +19895,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -18908,6 +19956,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 2,
    "profile": 15
   },
   {
@@ -18968,6 +20017,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -19029,6 +20079,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -19090,7 +20141,22 @@
    },
    "stage": "under construction",
    "delay": 24.0,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "IST-003",
@@ -19150,6 +20216,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -19216,6 +20283,7 @@
    },
    "stage": "completed",
    "delay": 83.0,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -19276,7 +20344,40 @@
    },
    "stage": null,
    "delay": 18.0,
-   "profile": 20
+   "overdue": null,
+   "profile": 20,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": null
+    }
+   ]
   },
   {
    "id": "IST-006",
@@ -19335,6 +20436,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -19395,6 +20497,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -19454,6 +20557,7 @@
    },
    "stage": "under construction",
    "delay": 27.0,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -19513,6 +20617,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -19573,6 +20678,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -19632,6 +20738,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -19693,6 +20800,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -19754,6 +20862,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -19814,6 +20923,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -19874,6 +20984,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -19936,7 +21047,28 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "KSM-005",
@@ -19998,6 +21130,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -20060,6 +21193,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -20122,6 +21256,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -20185,6 +21320,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -20247,6 +21383,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -20307,6 +21444,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -20368,6 +21506,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 7
   },
   {
@@ -20429,6 +21568,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -20490,6 +21630,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 7
   },
   {
@@ -20551,6 +21692,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 7
   },
   {
@@ -20611,6 +21753,7 @@
    },
    "stage": "under construction",
    "delay": 43.0,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -20671,6 +21814,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -20732,6 +21876,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -20791,6 +21936,7 @@
    },
    "stage": "under construction",
    "delay": 21.0,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -20851,6 +21997,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -20913,6 +22060,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -20975,6 +22123,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 20
   },
   {
@@ -21036,6 +22185,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -21096,7 +22246,28 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "LPL-001",
@@ -21158,6 +22329,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -21223,6 +22395,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -21288,6 +22461,7 @@
    },
    "stage": "under construction",
    "delay": 9.0,
+   "overdue": null,
    "profile": 21
   },
   {
@@ -21330,7 +22504,7 @@
    "q": [
     "Permit Liverpool City Council 23F/2052 is published: does it exist in the official register and match this plot?",
     "Leasehold: is the lease registered, and is the base term the one advertised?",
-    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -21350,7 +22524,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "LOM-001",
@@ -21411,6 +22594,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -21473,6 +22657,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -21534,6 +22719,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -21594,6 +22780,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -21654,6 +22841,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -21714,6 +22902,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 20
   },
   {
@@ -21774,6 +22963,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -21834,6 +23024,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -21895,6 +23086,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 5
   },
   {
@@ -21957,6 +23149,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -22017,6 +23210,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -22078,6 +23272,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -22138,6 +23333,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -22200,6 +23396,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -22262,6 +23459,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -22325,6 +23523,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -22388,6 +23587,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 5
   },
   {
@@ -22449,7 +23649,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 2
+   "overdue": null,
+   "profile": 2,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "LOM-019",
@@ -22509,6 +23724,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 2
   },
   {
@@ -22569,6 +23785,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 4
   },
   {
@@ -22630,6 +23847,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -22691,6 +23909,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -22753,6 +23972,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -22817,6 +24037,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -22879,6 +24100,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -22941,6 +24163,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -23002,6 +24225,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -23062,6 +24286,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -23122,6 +24347,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -23182,6 +24408,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -23242,6 +24469,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 2,
    "profile": 16
   },
   {
@@ -23302,6 +24530,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -23362,6 +24591,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 7
   },
   {
@@ -23370,7 +24600,7 @@
    "country": "Mexico",
    "region": "Los Cabos",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2027,
    "title": "fideicomiso (restricted zone)",
@@ -23381,7 +24611,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -23393,7 +24623,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -23422,7 +24652,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "FNC-001",
@@ -23482,6 +24727,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -23542,6 +24788,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -23605,6 +24852,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -23666,6 +24914,7 @@
    },
    "stage": "off-plan",
    "delay": 16.0,
+   "overdue": null,
    "profile": 21
   },
   {
@@ -23730,6 +24979,7 @@
    },
    "stage": "off-plan",
    "delay": 18.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -23791,7 +25041,28 @@
    },
    "stage": "under construction",
    "delay": 18.0,
-   "profile": 20
+   "overdue": null,
+   "profile": 20,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "MYS-005",
@@ -23852,6 +25123,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -23912,6 +25184,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -23971,6 +25244,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -24031,6 +25305,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -24092,6 +25367,7 @@
    },
    "stage": "under construction",
    "delay": 22.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -24153,6 +25429,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -24214,6 +25491,7 @@
    },
    "stage": "off-plan",
    "delay": 39.0,
+   "overdue": null,
    "profile": 21
   },
   {
@@ -24275,6 +25553,7 @@
    },
    "stage": "off-plan",
    "delay": 18.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -24336,6 +25615,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -24399,6 +25679,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -24465,6 +25746,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 2,
    "profile": 17
   },
   {
@@ -24526,6 +25808,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -24590,6 +25873,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -24650,6 +25934,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -24711,6 +25996,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -24773,6 +26059,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -24839,6 +26126,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -24901,6 +26189,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -24966,6 +26255,7 @@
    },
    "stage": "under construction",
    "delay": 0.0,
+   "overdue": null,
    "profile": 21
   },
   {
@@ -25028,6 +26318,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -25088,6 +26379,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -25147,6 +26439,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -25207,6 +26500,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -25266,6 +26560,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -25325,6 +26620,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -25385,6 +26681,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -25445,6 +26742,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -25505,6 +26803,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -25565,6 +26864,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -25625,6 +26925,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -25690,6 +26991,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 35,
    "profile": 10
   },
   {
@@ -25750,6 +27052,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -25811,6 +27114,7 @@
    },
    "stage": "off-plan",
    "delay": 6.0,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -25871,6 +27175,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -25931,6 +27236,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -25991,6 +27297,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -26051,6 +27358,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -26115,6 +27423,7 @@
    },
    "stage": "off-plan",
    "delay": 18.0,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -26175,6 +27484,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -26235,6 +27545,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -26294,7 +27605,22 @@
    },
    "stage": "off-plan",
    "delay": 24.0,
-   "profile": 19
+   "overdue": null,
+   "profile": 19,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "MIA-005",
@@ -26355,6 +27681,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -26416,6 +27743,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -26477,6 +27805,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -26538,6 +27867,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -26598,6 +27928,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -26658,7 +27989,22 @@
    },
    "stage": "under construction",
    "delay": 6.0,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "MNE-003",
@@ -26718,6 +28064,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -26779,6 +28126,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -26840,6 +28188,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -26901,6 +28250,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -26961,6 +28311,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -27022,6 +28373,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -27082,6 +28434,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -27142,6 +28495,7 @@
    },
    "stage": "off-plan",
    "delay": 18.0,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -27202,6 +28556,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -27262,6 +28617,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -27323,6 +28679,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -27383,6 +28740,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -27444,7 +28802,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "WDH-001",
@@ -27503,6 +28870,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -27563,6 +28931,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -27623,7 +28992,22 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 10
+   "overdue": null,
+   "profile": 10,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "NYC-001",
@@ -27684,6 +29068,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -27748,6 +29133,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -27809,6 +29195,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -27871,6 +29258,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 8,
    "profile": 11
   },
   {
@@ -27932,6 +29320,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -27992,6 +29381,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -28053,6 +29443,7 @@
    },
    "stage": "off-plan",
    "delay": 84.0,
+   "overdue": null,
    "profile": 7
   },
   {
@@ -28118,7 +29509,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 16
+   "overdue": 17,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "NCY-002",
@@ -28179,6 +29585,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -28240,6 +29647,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -28300,7 +29708,34 @@
    },
    "stage": null,
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "NCY-005",
@@ -28363,6 +29798,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -28423,6 +29859,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -28484,6 +29921,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -28544,7 +29982,28 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "OKA-003",
@@ -28605,6 +30064,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -28665,6 +30125,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -28725,6 +30186,7 @@
    },
    "stage": "under construction",
    "delay": 27.0,
+   "overdue": null,
    "profile": 19
   },
   {
@@ -28783,7 +30245,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "OMN-004",
@@ -28842,6 +30313,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -28902,6 +30374,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -28962,6 +30435,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -29022,6 +30496,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -29082,6 +30557,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -29141,6 +30617,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -29201,6 +30678,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -29260,6 +30738,7 @@
    },
    "stage": "off-plan",
    "delay": 9.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -29319,6 +30798,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -29379,6 +30859,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 20
   },
   {
@@ -29439,6 +30920,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -29503,6 +30985,7 @@
    },
    "stage": "under construction",
    "delay": 108.0,
+   "overdue": 11,
    "profile": 11
   },
   {
@@ -29564,6 +31047,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -29624,6 +31108,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -29684,7 +31169,52 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-10-31",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-10-31",
+     "f": "permit claimed",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "PAN-002",
@@ -29744,6 +31274,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -29804,6 +31335,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 20
   },
   {
@@ -29864,6 +31396,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -29924,7 +31457,46 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PAT-003",
@@ -29984,6 +31556,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -30044,6 +31617,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -30104,7 +31678,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PAT-006",
@@ -30165,7 +31754,34 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PAT-007",
@@ -30225,6 +31841,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -30286,6 +31903,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -30346,6 +31964,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -30406,6 +32025,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -30466,6 +32086,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -30526,6 +32147,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -30587,7 +32209,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PHL-002",
@@ -30648,7 +32279,22 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "PHL-003",
@@ -30707,7 +32353,22 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 13
+   "overdue": null,
+   "profile": 13,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit number published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "PHL-004",
@@ -30768,6 +32429,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -30830,6 +32492,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -30890,6 +32553,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -30951,6 +32615,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -31012,6 +32677,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -31072,6 +32738,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -31136,6 +32803,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -31196,6 +32864,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -31257,6 +32926,7 @@
    },
    "stage": "under construction",
    "delay": 6.0,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -31317,7 +32987,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 16
+   "overdue": null,
+   "profile": 16,
+   "history": [
+    {
+     "d": "2026-10-31",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PHK-005",
@@ -31377,6 +33056,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -31438,6 +33118,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -31498,6 +33179,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -31559,6 +33241,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -31619,6 +33302,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 7
   },
   {
@@ -31681,6 +33365,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -31743,6 +33428,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -31806,6 +33492,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -31868,6 +33555,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -31930,6 +33618,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -31991,6 +33680,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 21
   },
   {
@@ -32051,7 +33741,16 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 11
+   "overdue": null,
+   "profile": 11,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PHK-017",
@@ -32112,7 +33811,28 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 5
+   "overdue": null,
+   "profile": 5,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "POR-001",
@@ -32172,6 +33892,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -32232,6 +33953,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -32292,6 +34014,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -32351,6 +34074,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -32410,6 +34134,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 5
   },
   {
@@ -32470,6 +34195,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -32531,6 +34257,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -32592,6 +34319,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -32652,6 +34380,7 @@
    },
    "stage": "under construction",
    "delay": 21.0,
+   "overdue": 2,
    "profile": 15
   },
   {
@@ -32712,6 +34441,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -32773,6 +34503,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -32833,6 +34564,7 @@
    },
    "stage": "under construction",
    "delay": 9.0,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -32893,6 +34625,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -32954,6 +34687,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": 26,
    "profile": 11
   },
   {
@@ -33015,6 +34749,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -33074,6 +34809,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -33134,6 +34870,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -33194,7 +34931,46 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 12
+   "overdue": null,
+   "profile": 12,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": null,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    }
+   ]
   },
   {
    "id": "PVR-007",
@@ -33254,6 +35030,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -33314,6 +35091,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -33374,6 +35152,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -33433,6 +35212,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -33496,6 +35276,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -33556,6 +35337,7 @@
    },
    "stage": "under construction",
    "delay": 3.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -33615,7 +35397,22 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 8
+   "overdue": null,
+   "profile": 8,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    }
+   ]
   },
   {
    "id": "QAT-003",
@@ -33675,6 +35472,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -33735,6 +35533,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -33795,6 +35594,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -33855,6 +35655,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -33915,6 +35716,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -33976,6 +35778,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -34036,6 +35839,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -34096,6 +35900,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -34156,6 +35961,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -34216,6 +36022,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -34276,6 +36083,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -34336,7 +36144,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 21
+   "overdue": null,
+   "profile": 21,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "RAK-010",
@@ -34396,6 +36213,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -34456,7 +36274,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 17
+   "overdue": null,
+   "profile": 17,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "RAK-012",
@@ -34516,6 +36343,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -34575,6 +36403,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -34636,6 +36465,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -34697,6 +36527,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -34757,6 +36588,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -34818,6 +36650,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -34878,6 +36711,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -34937,6 +36771,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -34996,6 +36831,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -35057,6 +36893,7 @@
    },
    "stage": "completed",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -35118,6 +36955,7 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -35178,6 +37016,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -35243,6 +37082,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -35305,6 +37145,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -35364,6 +37205,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -35424,6 +37266,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -35483,6 +37326,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -35492,7 +37336,7 @@
    "region": "Saudi Arabia",
    "docs": true,
    "plans": true,
-   "band": "$200k to $400k",
+   "band": "$400k and up",
    "done": 2026,
    "title": "freehold",
    "lease": null,
@@ -35504,7 +37348,7 @@
     "progress": null,
     "plans": true,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -35514,7 +37358,7 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -35523,7 +37367,8 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit 75/1 is published: does it exist in the official register and match this plot?",
+    "Permit Wafi license 75/1 is published: does it exist in the official register and match this plot?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -35544,7 +37389,22 @@
    },
    "stage": null,
    "delay": null,
-   "profile": 7
+   "overdue": null,
+   "profile": 7,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "KSA-004",
@@ -35604,6 +37464,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -35664,6 +37525,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -35724,6 +37586,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -35784,6 +37647,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -35844,6 +37708,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 8,
    "profile": 11
   },
   {
@@ -35903,6 +37768,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -35964,6 +37830,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 6
   },
   {
@@ -36024,6 +37891,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -36084,6 +37952,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -36144,6 +38013,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -36204,6 +38074,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -36262,7 +38133,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "ESP-002",
@@ -36322,7 +38202,16 @@
    },
    "stage": "completed",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
+    }
+   ]
   },
   {
    "id": "ESP-003",
@@ -36381,6 +38270,7 @@
    },
    "stage": "under construction",
    "delay": 3.0,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -36441,6 +38331,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -36503,6 +38394,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -36565,6 +38457,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -36625,6 +38518,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -36685,6 +38579,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -36744,6 +38639,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -36804,6 +38700,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 6
   },
   {
@@ -36863,6 +38760,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -36924,6 +38822,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -36988,6 +38887,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -37051,6 +38951,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 6
   },
   {
@@ -37112,6 +39013,7 @@
    },
    "stage": "under construction",
    "delay": 99.0,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -37173,6 +39075,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -37234,6 +39137,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -37294,6 +39198,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -37354,6 +39259,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -37413,6 +39319,7 @@
    },
    "stage": "off-plan",
    "delay": 48.0,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -37474,7 +39381,28 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 15
+   "overdue": null,
+   "profile": 15,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": true,
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "guaranteed-return language",
+     "from": false,
+     "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "SUM-001",
@@ -37536,6 +39464,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -37598,6 +39527,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -37658,6 +39588,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -37720,6 +39651,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -37781,7 +39713,16 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 14
+   "overdue": null,
+   "profile": 14,
+   "history": [
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
+    }
+   ]
   },
   {
    "id": "SYD-003",
@@ -37846,6 +39787,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 10
   },
   {
@@ -37907,6 +39849,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -37968,6 +39911,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -38029,6 +39973,7 @@
    },
    "stage": "under construction",
    "delay": 2.0,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -38091,6 +40036,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -38152,6 +40098,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -38212,6 +40159,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 18
   },
   {
@@ -38272,6 +40220,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 16
   },
   {
@@ -38332,6 +40281,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -38392,6 +40342,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -38453,6 +40404,7 @@
    },
    "stage": null,
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -38513,6 +40465,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 9
   },
   {
@@ -38580,6 +40533,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 8
   },
   {
@@ -38642,6 +40596,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": 5,
    "profile": 17
   },
   {
@@ -38703,6 +40658,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 11
   },
   {
@@ -38764,6 +40720,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 15
   },
   {
@@ -38825,6 +40782,7 @@
    },
    "stage": "under construction",
    "delay": 18.0,
+   "overdue": null,
    "profile": 17
   },
   {
@@ -38887,6 +40845,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 5
   },
   {
@@ -38948,6 +40907,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -39009,6 +40969,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 12
   },
   {
@@ -39070,6 +41031,7 @@
    },
    "stage": "off-plan",
    "delay": null,
+   "overdue": null,
    "profile": 13
   },
   {
@@ -39131,6 +41093,7 @@
    },
    "stage": "under construction",
    "delay": 12.0,
+   "overdue": null,
    "profile": 14
   },
   {
@@ -39192,6 +41155,7 @@
    },
    "stage": "under construction",
    "delay": null,
+   "overdue": null,
    "profile": 13
   }
  ],
@@ -39223,7 +41187,11 @@
    "completed": 12
   },
   "all_six_public": 45,
-  "with_flags": 39
+  "with_flags": 39,
+  "overdue": 26,
+  "overdue_avg_months": 7.2,
+  "delayed": 78,
+  "changes_detected": 189
  },
  "ships": [
   {
@@ -39277,6 +41245,51 @@
    "t": "+6 new projects found and checked by the daily research agent (Lombok, Phuket)"
   },
   {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "20 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "10 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "11 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "12 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "8 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "34 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "46 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "49 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "15 changes detected on developer pages by the research agent"
+  },
+  {
    "d": "2026-10-31",
    "k": "feature",
    "t": "Verification level per check on every case card: registry, independent, developer, contradicted"
@@ -39312,6 +41325,16 @@
    "t": "+3 new projects found and checked by the daily research agent (Oman)"
   },
   {
+   "d": "2026-10-31",
+   "k": "auto",
+   "t": "25 changes detected on developer pages by the research agent"
+  },
+  {
+   "d": "2026-10-31",
+   "k": "auto",
+   "t": "9 changes detected on developer pages by the research agent"
+  },
+  {
    "d": "2026-10-30",
    "k": "data",
    "t": "228 projects in 27 countries with public disclosure scorecard and map"
@@ -39325,6 +41348,11 @@
    "d": "2026-10-30",
    "k": "feature",
    "t": "Open metrics, pilot API and live video from site"
+  },
+  {
+   "d": "2026-10-30",
+   "k": "auto",
+   "t": "7 changes detected on developer pages by the research agent"
   },
   {
    "d": "2026-10-29",
@@ -39345,6 +41373,11 @@
    "d": "2026-10-28",
    "k": "feature",
    "t": "Automated agent onboarding: exam plus GPS test visit"
+  },
+  {
+   "d": "2026-10-28",
+   "k": "auto",
+   "t": "1 change detected on developer pages by the research agent"
   }
  ]
 }
