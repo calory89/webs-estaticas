@@ -412,7 +412,7 @@
    "theme": "Evidence infrastructure",
    "title": "Open source scoring code",
    "desc": "The scoring rules published so anyone can reproduce a score.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 60,
