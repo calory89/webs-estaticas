@@ -3484,7 +3484,7 @@
    "done": 2027,
    "title": "leasehold",
    "lease": 30,
-   "yield": 14,
+   "yield": 7,
    "units": 66,
    "checks": {
     "permit": 0,
@@ -3512,7 +3512,6 @@
    "invited": null,
    "q": [
     "Leasehold: is the lease registered, and is the base term the one advertised?",
-    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -7441,7 +7440,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14
+   "profile": 14,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval กท 1104/794 dated 11/04/2568 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "BKK-002",
@@ -9955,7 +9961,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 15
+   "profile": 15,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/2041 dated 02/02/2569 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "CNX-002",
@@ -10027,7 +10040,7 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
-   "title": "freehold",
+   "title": "freehold (49% foreign quota)",
    "lease": null,
    "yield": null,
    "units": 231,
@@ -14918,6 +14931,12 @@
      "f": "plans published",
      "from": false,
      "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
     }
    ]
   },
@@ -18249,6 +18268,12 @@
      "to": true
     },
     {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
      "d": "2026-10-31",
      "f": "plans published",
      "from": false,
@@ -21257,7 +21282,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 12
+   "profile": 12,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval สฎ0014.2/10717 dated 07/07/2569 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "KSM-008",
@@ -22266,6 +22298,12 @@
      "f": "plans published",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
     }
    ]
   },
@@ -22504,7 +22542,7 @@
    "q": [
     "Permit Liverpool City Council 23F/2052 is published: does it exist in the official register and match this plot?",
     "Leasehold: is the lease registered, and is the base term the one advertised?",
-    "No building permit mentioned: ask for the number before paying.",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -22532,6 +22570,12 @@
      "f": "permit claimed",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "permit claimed",
+     "from": false,
+     "to": true
     }
    ]
   },
@@ -31397,7 +31441,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12
+   "profile": 12,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1010.5/16617 dated 12/10/2564 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PAT-002",
@@ -31459,6 +31510,13 @@
    "delay": null,
    "overdue": null,
    "profile": 15,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1010.5/17038 dated 15/12/2563 (Thai calendar)",
+    "checked": "2026-11-01"
+   },
    "history": [
     {
      "d": "2026-11-01",
@@ -31557,7 +31615,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11
+   "profile": 11,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/23677 dated 20/10/2568 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PAT-004",
@@ -31618,7 +31683,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12
+   "profile": 12,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/17814 dated 01/09/2568 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PAT-005",
@@ -31680,6 +31752,13 @@
    "delay": null,
    "overdue": null,
    "profile": 15,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1010.5/10429 dated 11/08/2563 (Thai calendar)",
+    "checked": "2026-11-01"
+   },
    "history": [
     {
      "d": "2026-11-01",
@@ -31904,7 +31983,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14
+   "profile": 14,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส.1009.5/2180 dated - (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PAT-009",
@@ -32804,7 +32890,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16
+   "profile": 16,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/21650 dated 29/12/2565 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-002",
@@ -32865,7 +32958,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11
+   "profile": 11,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/24797 dated 14/11/2568 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-003",
@@ -32927,7 +33027,14 @@
    "stage": "under construction",
    "delay": 6.0,
    "overdue": null,
-   "profile": 13
+   "profile": 13,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1010.5/1620 dated 05/02/2564 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-004",
@@ -32989,6 +33096,13 @@
    "delay": null,
    "overdue": null,
    "profile": 16,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/24287 dated 31/10/2568 (Thai calendar)",
+    "checked": "2026-11-01"
+   },
    "history": [
     {
      "d": "2026-10-31",
@@ -33057,7 +33171,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16
+   "profile": 16,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/5851 dated 12/03/2567 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-006",
@@ -33119,7 +33240,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14
+   "profile": 14,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "not in the approved list",
+    "detail": null,
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-007",
@@ -33180,7 +33308,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13
+   "profile": 13,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "not in the approved list",
+    "detail": null,
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-008",
@@ -33191,7 +33326,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "leasehold",
+   "title": "freehold (foreign quota units) or leasehold",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -33220,7 +33355,6 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -33429,7 +33563,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 16
+   "profile": 16,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/9398 dated 10/04/2569 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-012",
@@ -33493,7 +33634,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13
+   "profile": 13,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/21178 dated 18/09/2569 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-013",
@@ -33556,7 +33704,14 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 18
+   "profile": 18,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส1009.5/4893 dated 23/02/2569 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-014",
@@ -33619,7 +33774,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13
+   "profile": 13,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส 1009.5/21226 dated 22/10/2567 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-015",
@@ -33681,7 +33843,14 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 21
+   "profile": 21,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "detail": "approval ทส1009.5/21393 dated 28/10/2567 (Thai calendar)",
+    "checked": "2026-11-01"
+   }
   },
   {
    "id": "PHK-016",
@@ -34390,7 +34559,7 @@
    "region": "Portugal",
    "docs": false,
    "plans": true,
-   "band": "$400k and up",
+   "band": "$200k to $400k",
    "done": 2030,
    "title": "freehold",
    "lease": null,
@@ -40667,7 +40836,7 @@
    "country": "Vietnam",
    "region": "Vietnam",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2027,
    "title": "apartment ownership; foreigners within the approved foreign-ownership list (50-year term under Vietnamese law)",
@@ -40678,7 +40847,7 @@
     "permit": 2,
     "escrow": true,
     "progress": "updates",
-    "plans": false,
+    "plans": true,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -40690,16 +40859,16 @@
      "returns_ok"
     ]
    },
-   "score": 5,
+   "score": 6,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "clear",
    "read": true,
-   "checked": "31 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit HCMC Department of Construction letter 26381/SXD-PTDT (23 Ju is published: does it exist in the official register and match this plot?",
+    "Permit 26381/SXD-PTĐT is published: does it exist in the official register and match this plot?",
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?"
@@ -41186,14 +41355,82 @@
    "under construction": 325,
    "completed": 12
   },
-  "all_six_public": 45,
+  "all_six_public": 46,
   "with_flags": 39,
   "overdue": 26,
   "overdue_avg_months": 7.2,
   "delayed": 78,
-  "changes_detected": 189
+  "changes_detected": 194,
+  "sat_watched": 0,
+  "sat_no_change": 0,
+  "register_watched": 21
  },
  "ships": [
+  {
+   "d": "2026-11-01",
+   "k": "data",
+   "t": "State of Off-Plan 2026 report: 646 projects, 6,419 claims, what developers publish and what holds up"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Off-plan Transparency Index: 73 markets ranked, embeddable by journalists"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Satellite watch extended to 27 market areas, with a yearly change check for project sites"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Weekly re-check of Thailand's environmental approval register for every Thai project"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Open data API, no key: every project, market and the transparency index, JSON and CSV"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Chrome extension: check any off-plan project page in one click"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "A file for every project: six checks, verification levels and what changed on the developer's page"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Compare up to 4 projects side by side"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Plain-language search: try \"Bali under construction with permit\""
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Payment plan to your calendar, with a reminder 7 days before each payment"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Overdue watcher: months past the promised handover on every case"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Daily automatic quality check of every page on mobile and desktop"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "RSS and JSON feeds of everything we ship"
+  },
   {
    "d": "2026-11-01",
    "k": "data",
@@ -41290,6 +41527,11 @@
    "t": "15 changes detected on developer pages by the research agent"
   },
   {
+   "d": "2026-11-01",
+   "k": "auto",
+   "t": "14 changes detected on developer pages by the research agent"
+  },
+  {
    "d": "2026-10-31",
    "k": "feature",
    "t": "Verification level per check on every case card: registry, independent, developer, contradicted"
@@ -41323,61 +41565,6 @@
    "d": "2026-10-31",
    "k": "auto",
    "t": "+3 new projects found and checked by the daily research agent (Oman)"
-  },
-  {
-   "d": "2026-10-31",
-   "k": "auto",
-   "t": "25 changes detected on developer pages by the research agent"
-  },
-  {
-   "d": "2026-10-31",
-   "k": "auto",
-   "t": "9 changes detected on developer pages by the research agent"
-  },
-  {
-   "d": "2026-10-30",
-   "k": "data",
-   "t": "228 projects in 27 countries with public disclosure scorecard and map"
-  },
-  {
-   "d": "2026-10-30",
-   "k": "feature",
-   "t": "Evidence locker and document reader for 8 languages"
-  },
-  {
-   "d": "2026-10-30",
-   "k": "feature",
-   "t": "Open metrics, pilot API and live video from site"
-  },
-  {
-   "d": "2026-10-30",
-   "k": "auto",
-   "t": "7 changes detected on developer pages by the research agent"
-  },
-  {
-   "d": "2026-10-29",
-   "k": "feature",
-   "t": "Satellite watch: weekly Sentinel-2 images of project sites"
-  },
-  {
-   "d": "2026-10-29",
-   "k": "feature",
-   "t": "Bitcoin-anchored evidence timestamps, anyone can verify at /verify"
-  },
-  {
-   "d": "2026-10-28",
-   "k": "feature",
-   "t": "Client portal: every step of your case, messages and payment warnings"
-  },
-  {
-   "d": "2026-10-28",
-   "k": "feature",
-   "t": "Automated agent onboarding: exam plus GPS test visit"
-  },
-  {
-   "d": "2026-10-28",
-   "k": "auto",
-   "t": "1 change detected on developer pages by the research agent"
   }
  ]
 }
