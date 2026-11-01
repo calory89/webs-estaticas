@@ -139,3 +139,22 @@
   document.addEventListener('kbadm', function(e){ draw(e.detail); });
   if (A.D) draw(A.D);
 })();
+/* Daily self-test and email health, shown on the Tests & health tab. */
+(function(){
+  var A = window.KBADM; if (!A) return;
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  var LBL = { signup: 'Free sign-up', save_project: 'Save a project', open_case_unpaid: 'Open a case', message: 'Send a message', payment_schedule: 'Payment schedule', share_link: 'Share link (no messages)', auto_payment_confirms_case: 'PayPal payment confirms the case', unrelated_payment_ignored: 'Other businesses\' payments ignored', login: 'Log in', password_reset_request: 'Password reset email' };
+  var done = false;
+  function draw(){
+    if (done) return; var sec = document.getElementById('t-tests'); if (!sec || !A.pw()) return; done = true;
+    A.rpc('kolaboro_admin_health', { p_key: A.pw() }).then(function(h){
+      if (!h || h.error || !h.selftests) return;
+      var box = document.createElement('div'); box.className = 'card'; sec.insertBefore(box, sec.firstChild);
+      var last = h.selftests[0], o = h.outbox || {};
+      box.innerHTML = '<h2>Daily self-test</h2><p class="muted" style="margin-top:0">Every morning at 06:23 UTC the database runs the whole buyer journey with a throwaway account and rolls everything back. If a step fails you get an email.</p>' +
+        (last ? '<p><span class="st"><span class="dot ' + (last.ok ? 'g' : 'r') + '"></span><b>' + (last.ok ? 'All steps passed' : 'A step failed') + '</b></span> <span class="muted">· ' + esc(String(last.at).slice(0, 16).replace('T', ' ')) + ' UTC</span></p><div class="tw"><table>' + Object.keys(last.result || {}).map(function(k){ var v = last.result[k]; return '<tr><td><span class="st"><span class="dot ' + (v === true ? 'g' : 'r') + '"></span>' + esc(LBL[k] || k) + '</span></td><td>' + (v === true ? 'OK' : esc(JSON.stringify(v))) + '</td></tr>'; }).join('') + '</table></div>' : '<p class="muted">No run yet.</p>') +
+        '<p class="muted" style="font-size:.85rem;margin-bottom:0">Last 14 days: ' + h.selftests.map(function(s){ return '<span class="dot ' + (s.ok ? 'g' : 'r') + '" style="display:inline-block" title="' + esc(String(s.at).slice(0, 10)) + '"></span>'; }).join(' ') + ' · Emails: ' + (o.sent_7d || 0) + ' sent in 7 days, ' + (o.queued || 0) + ' queued, ' + (o.failed_7d || 0) + ' failed · PayPal notifications in 7 days: ' + (h.pay_events_7d || 0) + '</p>';
+    });
+  }
+  document.addEventListener('kbadm', draw); if (A.D) draw();
+})();

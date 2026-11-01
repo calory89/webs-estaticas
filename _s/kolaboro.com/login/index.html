@@ -18,7 +18,7 @@
     <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required><button type="button">Show</button></span></label>
     <button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Log in</button>
     <p class="ap-err" id="le" role="alert"></p>
-    <p class="ap-small ap-muted">Forgot your password? <a href="mailto:support@kolaboro.com?subject=Kolaboro%20password%20reset">Email us</a> and we reset it the same day.<br>No account yet? <a href="#signup" id="go-up">Create a free account</a>.</p>
+    <p class="ap-small ap-muted">Forgot your password? <a href="#" id="fp">Get a reset link by email</a>.<br>No account yet? <a href="#signup" id="go-up">Create a free account</a>.</p>
   </form></div>
   <div id="p-up" hidden><h2>Create a free account</h2><p class="ap-muted" style="margin:0">Save projects on every device, get free desk reviews of developer websites and keep your payment schedule. You pay only if you ask for an on-the-ground check.</p>
   <form id="sf" novalidate>
@@ -69,6 +69,8 @@ var KB = (function(){
       if (er === 'exists') { f.email.value = sf.email.value; setTimeout(function(){ mode(false); }, 1200); }
     }).catch(function(){ b.disabled = false; se.textContent = 'Network error. Try again.'; });
   });
+  document.getElementById('fp').onclick = function(ev){ ev.preventDefault(); var em = (f.email.value || '').trim() || prompt('Your account email'); if (!em) return; e.textContent = '';
+    KB.rpc('kolaboro_pw_request', { p_email: em }).then(function(){ e.style.color = '#0B7A55'; e.textContent = 'If an account exists for ' + em + ', we just sent a reset link. It works for one hour. Check your spam folder too.'; }).catch(function(){ e.textContent = 'Network error. Try again.'; }); };
   f.addEventListener('submit', function(ev){
     ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
     KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){

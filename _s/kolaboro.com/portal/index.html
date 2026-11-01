@@ -47,7 +47,7 @@ var KB = (function(){
     h += sinceHtml();
     if (q.get('welcome') === 'free') h += '<div class="ap-banner ok">✓ Your free account is ready. Projects you save with ☆ in the database now appear here on every device.</div>';
     else if (q.get('welcome')) h += '<div class="ap-banner ok">✓ Your account is ready and your case is open. Add your project details below so your agent can start.</div>';
-    if (u.status === 'pending') h += '<div class="ap-banner warn">⏳ We are confirming your PayPal payment. It usually takes a few hours. You can already add your project details and write to us.</div>';
+    if (u.status === 'pending') h += '<div class="ap-banner warn">⏳ Waiting for PayPal to confirm your payment. It usually arrives automatically within minutes. If you paid with a different email than this account, tell us in the chat. You can already add your project details.</div>';
     if (D.cases.length > 1) h += '<div class="ap-cases">' + D.cases.map(function(x){ return '<button data-c="' + x.id + '" class="' + (x.id === CUR ? 'on' : '') + '"><b>' + esc(x.project_name || x.code) + '</b><small>' + esc(x.code) + ' · ' + (x.paid ? STAGES[x.stage] : 'Not paid yet') + '</small></button>'; }).join('') + '</div>';
     if (!c) { $('app').innerHTML = h + homeHtml(u); bindPlus(null); return; }
     var v = VERD[c.verdict] || VERD.pending, st = c.stage, firstCase = D.cases[D.cases.length - 1].id === c.id;
