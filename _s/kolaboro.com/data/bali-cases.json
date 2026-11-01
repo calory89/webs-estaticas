@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-01",
- "markets": 113,
+ "markets": 114,
  "countries": 62,
  "note": "Anonymised until verification is complete. Advertised claims, not verified facts.",
  "cases": [
@@ -2731,7 +2731,7 @@
    "done": 2027,
    "title": "leasehold",
    "lease": 30,
-   "yield": 7,
+   "yield": 14,
    "units": null,
    "checks": {
     "permit": 0,
@@ -2759,6 +2759,7 @@
    "invited": null,
    "q": [
     "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -2934,7 +2935,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": 2027,
    "title": "leasehold",
@@ -2945,7 +2946,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -2957,11 +2958,11 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -7283,7 +7284,7 @@
    "profile": 15
   },
   {
-   "id": "BRI-001",
+   "id": "BNE-001",
    "market": "Brisbane",
    "country": "Australia",
    "region": "Brisbane",
@@ -7341,6 +7342,66 @@
    "stage": "under construction",
    "delay": null,
    "profile": 12
+  },
+  {
+   "id": "BNE-002",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 205,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 7,
+    "unverified": 3,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 8
   },
   {
    "id": "BUE-001",
@@ -8709,7 +8770,7 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
-   "title": "freehold (49% foreign quota)",
+   "title": "freehold",
    "lease": null,
    "yield": null,
    "units": 231,
@@ -16795,6 +16856,66 @@
    "profile": 10
   },
   {
+   "id": "OOL-007",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 394,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 11
+  },
+  {
    "id": "GRC-001",
    "market": "Greece",
    "country": "Greece",
@@ -17260,7 +17381,7 @@
    "profile": 14
   },
   {
-   "id": "HAK-001",
+   "id": "HKB-001",
    "market": "Hakuba",
    "country": "Japan",
    "region": "Hakuba",
@@ -18918,7 +19039,7 @@
    "profile": 14
   },
   {
-   "id": "KYO-001",
+   "id": "KIX-001",
    "market": "Kyoto",
    "country": "Japan",
    "region": "Kyoto",
@@ -23715,6 +23836,67 @@
    "profile": 11
   },
   {
+   "id": "MEL-002",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 305,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit PA1600136 is published: does it exist in the official register and match this plot?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 7,
+    "unverified": 2,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": 6.0,
+   "profile": 12
+  },
+  {
    "id": "MEX-001",
    "market": "Mexico City",
    "country": "Mexico",
@@ -25766,6 +25948,67 @@
    "profile": 11
   },
   {
+   "id": "NZL-003",
+   "market": "New Zealand",
+   "country": "New Zealand",
+   "region": "New Zealand",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 13,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 2,
+    "unverified": 5,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "NSK-001",
    "market": "Niseko",
    "country": "Japan",
@@ -26447,6 +26690,67 @@
    "stage": "under construction",
    "delay": null,
    "profile": 16
+  },
+  {
+   "id": "OKA-003",
+   "market": "Okinawa",
+   "country": "Japan",
+   "region": "Okinawa",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 152,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 7,
+    "unverified": 3,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 9
   },
   {
    "id": "OMN-001",
@@ -28137,6 +28441,66 @@
    "profile": 11
   },
   {
+   "id": "PER-002",
+   "market": "Perth",
+   "country": "Australia",
+   "region": "Perth",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 110,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 5,
+    "unverified": 5,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 9
+  },
+  {
    "id": "PHL-001",
    "market": "Philippines",
    "country": "Philippines",
@@ -29009,7 +29373,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "leasehold",
+   "title": "freehold (foreign quota units) or leasehold",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -29038,7 +29402,6 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -34653,6 +35016,67 @@
    "profile": 13
   },
   {
+   "id": "SYD-005",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": true,
+   "plans": true,
+   "band": "Price not stated",
+   "done": 2031,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 70,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit PP-2021-2404 is published: does it exist in the official register and match this plot?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2031: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 6,
+    "unverified": 2,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 8
+  },
+  {
    "id": "TPA-001",
    "market": "Tampa",
    "country": "USA",
@@ -34774,6 +35198,67 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 12
+  },
+  {
+   "id": "TYO-001",
+   "market": "Tokyo",
+   "country": "Japan",
+   "region": "Tokyo",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": "freehold (land co-ownership, unit strata ownership)",
+   "lease": null,
+   "yield": null,
+   "units": 302,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Permit ERI-25039598 is published: does it exist in the official register and match this plot?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 9,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 9
   },
   {
    "id": "TCA-001",
@@ -35955,29 +36440,29 @@
  ],
  "db": {
   "updated": "2026-11-01",
-  "projects": 632,
-  "markets": 113,
+  "projects": 640,
+  "markets": 114,
   "countries": 62,
-  "sources": 3020,
-  "data_points": 16085,
+  "sources": 3063,
+  "data_points": 16295,
   "claims": {
-   "verified": 1171,
-   "unverified": 2067,
-   "contradicted": 601
+   "verified": 1208,
+   "unverified": 2102,
+   "contradicted": 612
   },
-  "claims_total": 3839,
-  "deep_profiles": 404,
+  "claims_total": 3922,
+  "deep_profiles": 412,
   "checks_by_level": {
-   "registry": 217,
-   "independent": 257,
-   "developer": 845,
-   "contradicted": 50,
-   "none": 1055
+   "registry": 220,
+   "independent": 264,
+   "developer": 859,
+   "contradicted": 51,
+   "none": 1078
   },
-  "checks_rated": 2424,
+  "checks_rated": 2472,
   "stages": {
-   "off-plan": 160,
-   "under construction": 195
+   "off-plan": 164,
+   "under construction": 199
   },
   "all_six_public": 23,
   "with_flags": 42
