@@ -45,7 +45,7 @@
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Tools</p><h1>Is your payment plan safe?</h1><p class="lead">Enter the payments in your contract. We flag the patterns that put most buyers at risk.</p></div></section><section class="sec"><div class="wrap calc">
   <div>
     <div id="pp" style="display:grid;gap:10px"></div>
-    <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn btn-line" id="ppadd" type="button">Add a payment</button></div>
+    <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn btn-line" id="ppadd" type="button">Add a payment</button><button class="btn btn-line" id="ppics" type="button">Add to my calendar (.ics)</button></div><p class="muted" id="ppicsm" aria-live="polite" style="font-size:.85rem;margin-top:8px"></p>
   </div>
   <div class="out" aria-live="polite"><p>Your plan</p><div class="num" id="pps">–</div><ul id="ppl" style="list-style:none;display:grid;gap:10px;margin-top:14px"></ul>
     <a class="btn btn-hi" style="margin-top:18px" href="/#start" data-role="buyer" data-ev="payplan_cta">Get each milestone checked</a></div>
@@ -104,6 +104,7 @@
       d.innerHTML = '<label class="f">Payment<input value="' + r.l.replace(/"/g,'&quot;') + '" data-i="'+i+'" data-k="l"></label>' +
         '<label class="f">% of price<input inputmode="decimal" value="' + r.p + '" data-i="'+i+'" data-k="p"></label>' +
         '<label class="f">Due on<select data-i="'+i+'" data-k="t"><option value="signing">Signing</option><option value="date">Calendar date</option><option value="milestone">Milestone</option></select></label>' +
+        '<label class="f">Expected date<input type="date" value="' + (r.d || '') + '" data-i="'+i+'" data-k="d"></label>' +
         '<button class="btn btn-line btn-sm" type="button" data-del="'+i+'" aria-label="Remove payment">Remove</button>';
       box.appendChild(d); d.querySelector('select').value = r.t;
     });
@@ -127,6 +128,24 @@
   box.addEventListener('change', function(e){ var i = e.target.dataset.i; if (i === undefined) return; rows[i][e.target.dataset.k] = e.target.value; calc(); });
   box.addEventListener('click', function(e){ var d = e.target.dataset.del; if (d === undefined) return; rows.splice(+d, 1); draw(); });
   document.getElementById('ppadd').addEventListener('click', function(){ rows.push({l:'New payment', p:0, t:'milestone'}); draw(); });
+  function ics(){
+    var ev = rows.filter(function(r){ return r.d; }), pad = function(n){ return (n < 10 ? '0' : '') + n; }, now = new Date();
+    var stamp = now.getUTCFullYear() + pad(now.getUTCMonth() + 1) + pad(now.getUTCDate()) + 'T' + pad(now.getUTCHours()) + pad(now.getUTCMinutes()) + '00Z';
+    var esc = function(t){ return String(t).replace(/[\\,;]/g, function(m){ return '\\' + m; }); };
+    var L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Kolaboro//Payment plan//EN', 'CALSCALE:GREGORIAN'];
+    ev.forEach(function(r, i){ var d = r.d.replace(/-/g, ''), nd = new Date(r.d + 'T00:00:00Z'); nd.setUTCDate(nd.getUTCDate() + 1);
+      L.push('BEGIN:VEVENT', 'UID:kolaboro-' + d + '-' + i + '-' + stamp + '@kolaboro.com', 'DTSTAMP:' + stamp, 'DTSTART;VALUE=DATE:' + d, 'DTEND;VALUE=DATE:' + nd.toISOString().slice(0, 10).replace(/-/g, ''),
+        'SUMMARY:' + esc('Off-plan payment due: ' + r.l + ' (' + (parseFloat(r.p) || 0) + '%)'),
+        'DESCRIPTION:' + esc((r.t === 'milestone' ? 'Pay only after the milestone is verified on site. ' : r.t === 'date' ? 'Due on a calendar date: check progress before paying. ' : '') + 'Get it checked first: https://kolaboro.com/pricing'),
+        'BEGIN:VALARM', 'TRIGGER:-P7D', 'ACTION:DISPLAY', 'DESCRIPTION:' + esc('In 7 days: ' + r.l + '. Check the site before paying.'), 'END:VALARM', 'END:VEVENT'); });
+    L.push('END:VCALENDAR'); return { n: ev.length, body: L.join('\r\n') };
+  }
+  document.getElementById('ppics').addEventListener('click', function(){
+    var x = ics(), msg = document.getElementById('ppicsm');
+    if (!x.n) { msg.textContent = 'Add an expected date to at least one payment first.'; return; }
+    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([x.body], { type: 'text/calendar' })); a.download = 'payment-plan.ics'; document.body.appendChild(a); a.click(); a.remove();
+    msg.textContent = x.n + ' payment' + (x.n > 1 ? 's' : '') + ' saved to payment-plan.ics, each with a reminder 7 days before. Open it to add to Google, Apple or Outlook calendar.';
+  });
   draw();
 })();
 </script>
