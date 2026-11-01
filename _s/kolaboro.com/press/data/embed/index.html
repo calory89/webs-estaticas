@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data desk chart | Kolaboro</title>
+<meta name="description" content="Embeddable live chart from the Kolaboro off-plan database.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://kolaboro.com/press/data/">
+<link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(/k/fonts/archivo-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(/k/fonts/archivo-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+A720-A7FF}
+:root{--ink:#17212B;--muted:#59626B;--line:rgba(23,33,43,.14);--hivis-ink:#B83A05;--card:#F6F6F3}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--ink)}
+body{font-family:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}
+.w{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:0 auto;max-width:720px}
+.eb{margin:0;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;color:var(--hivis-ink)}
+h1{font-size:1.2rem;margin:4px 0 0;letter-spacing:-.01em}
+.hd{margin:6px 0 12px;font-weight:700;font-size:.98rem}
+#fig svg{display:block;max-width:100%;height:auto;overflow:visible}
+.ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 14px;margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+.ft a{color:var(--ink)}
+.msg{margin:8px 0}
+.tip{position:fixed;z-index:9;pointer-events:none;max-width:240px;background:var(--ink);color:#fff;font-size:.78rem;padding:6px 9px;border-radius:7px}
+a:focus-visible{outline:3px solid #FF5B14;outline-offset:2px;border-radius:3px}
+</style>
+</head>
+<body>
+<div class="w" id="w"><p class="eb">Kolaboro data desk</p><p class="msg">Loading the latest data.</p></div>
+<script src="/press/data/dd-core.js?v=1"></script>
+<script>
+(function(){
+  var K = window.KDD, w = document.getElementById('w'), id = '';
+  try { id = (new URLSearchParams(location.search).get('c') || '').trim(); } catch (e) {}
+  function foot(c, R){ return '<div class="ft"><span>Data: <a href="/press/data/' + (c ? '#c-' + c.id : '') + '" target="_blank" rel="noopener">Kolaboro</a>' + (R ? ', ' + K.esc(R.dateShort) : '') + '</span><a href="/how-we-score" target="_blank" rel="noopener">Method</a></div>'; }
+  function fail(html){ w.innerHTML = '<p class="eb">Kolaboro data desk</p><p class="msg">' + html + '</p>' + foot(); }
+  if (!K){ fail('The chart could not load.'); return; }
+  K.load().then(function(R){
+    var c = R.charts.filter(function(x){ return x.id === id; })[0];
+    if (!c){ fail('Choose a chart, for example <a href="?c=publish">?c=publish</a>. Available: ' + R.charts.map(function(x){ return '<a href="?c=' + x.id + '">' + x.id + '</a>'; }).join(', ') + '.'); return; }
+    document.title = c.title + ' | Kolaboro';
+    w.innerHTML = '<p class="eb">Kolaboro data desk</p><h1>' + K.esc(c.title) + '</h1><p class="hd">' + K.esc(c.headline) + '</p><div id="fig"></div>' + foot(c, R);
+    var fig = document.getElementById('fig');
+    function draw(){ var W = Math.max(240, Math.floor(fig.clientWidth)); fig.innerHTML = K.svg(c.render(W), W, c.title, c.headline, 'e-' + c.id); }
+    draw(); var t; addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(draw, 150); });
+    var tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; document.body.appendChild(tip);
+    fig.addEventListener('pointermove', function(e){ var g = e.target.closest('[data-tip]'); if (!g){ tip.hidden = true; return; } tip.textContent = g.getAttribute('data-tip'); tip.hidden = false; var x = e.clientX + 12; if (x + tip.offsetWidth > innerWidth - 6) x = Math.max(6, e.clientX - tip.offsetWidth - 12); tip.style.left = x + 'px'; tip.style.top = Math.max(6, e.clientY - tip.offsetHeight - 10) + 'px'; });
+    fig.addEventListener('pointerleave', function(){ tip.hidden = true; });
+  }).catch(function(){ fail('The data could not load. See the <a href="/press/data/" target="_blank" rel="noopener">data desk</a>.'); });
+})();
+</script>
+</body>
+</html>
