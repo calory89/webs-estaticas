@@ -8,6 +8,9 @@ on:
     - cron: '17 9 * * *'
     - cron: '29 15 * * *'
     - cron: '53 21 * * *'
+  workflow_run:
+    workflows: ["Kolaboro monitor"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       min_usd:
