@@ -2731,7 +2731,7 @@
    "done": 2027,
    "title": "leasehold",
    "lease": 30,
-   "yield": 14,
+   "yield": 7,
    "units": null,
    "checks": {
     "permit": 0,
@@ -2759,7 +2759,6 @@
    "invited": null,
    "q": [
     "Leasehold: is the lease registered, and is the base term the one advertised?",
-    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -2935,7 +2934,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Under $100k",
    "done": 2027,
    "title": "leasehold",
@@ -2946,7 +2945,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -2958,11 +2957,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "caution",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -5016,7 +5015,7 @@
     "progress": "updates",
     "plans": true,
     "record": true,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -5026,16 +5025,15 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -5426,7 +5424,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "31 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -5579,7 +5577,7 @@
    "docs": false,
    "plans": false,
    "band": "Price not stated",
-   "done": 2027,
+   "done": 2028,
    "title": "freehold",
    "lease": null,
    "yield": null,
@@ -5613,7 +5611,7 @@
    "q": [
     "Construction stalled in public sources: ask the developer for the current status, in writing.",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
+    "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -6182,7 +6180,7 @@
    "plans": true,
    "band": "$400k and up",
    "done": 2028,
-   "title": "freehold",
+   "title": "foreign quota",
    "lease": null,
    "yield": null,
    "units": 215,
@@ -6772,7 +6770,7 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
-   "title": "leasehold",
+   "title": "leasehold with share of freehold",
    "lease": 999,
    "yield": 6.2,
    "units": 59,
@@ -6802,7 +6800,6 @@
    "invited": null,
    "q": [
     "Permit Birmingham City Council 2025/06786/PA (prior approval, 59 fl is published: does it exist in the official register and match this plot?",
-    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -6929,7 +6926,7 @@
    "invited": null,
    "q": [
     "Permit Bodrum yapı ruhsatı 2018/792-1 to 29 (23.11.2018); 2022/754- is published: does it exist in the official register and match this plot?",
-    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -9002,7 +8999,7 @@
     "progress": null,
     "plans": false,
     "record": true,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -9012,7 +9009,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -9021,7 +9018,6 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
    ],
@@ -10841,8 +10837,8 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit Klasa: UP/I-361-03/23-01/000166 is published: does it exist in the official register and match this plot?",
-    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Permit Klasa: UP/I-361-03/23-01/000166 (building permit issued 08.0 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -19184,7 +19180,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "30 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -20783,6 +20779,249 @@
    "stage": "under construction",
    "delay": null,
    "profile": 16
+  },
+  {
+   "id": "LOM-017",
+   "market": "Lombok",
+   "country": "Indonesia",
+   "region": "Lombok",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": 80,
+   "yield": 20,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 5
+  },
+  {
+   "id": "LOM-018",
+   "market": "Lombok",
+   "country": "Indonesia",
+   "region": "Lombok",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 2
+  },
+  {
+   "id": "LOM-019",
+   "market": "Lombok",
+   "country": "Indonesia",
+   "region": "Lombok",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 7,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 2
+  },
+  {
+   "id": "LOM-020",
+   "market": "Lombok",
+   "country": "Indonesia",
+   "region": "Lombok",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 10,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 4
   },
   {
    "id": "LON-001",
@@ -24349,7 +24588,7 @@
    "country": "USA",
    "region": "Miami",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2030,
    "title": "freehold condominium",
@@ -24360,7 +24599,7 @@
     "permit": 0,
     "escrow": true,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -24372,11 +24611,11 @@
      "returns_ok"
     ]
    },
-   "score": 4,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "clear",
+   "tier": "mixed",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -29857,6 +30096,127 @@
    "profile": 21
   },
   {
+   "id": "PHK-016",
+   "market": "Phuket",
+   "country": "Thailand",
+   "region": "Phuket",
+   "docs": false,
+   "plans": true,
+   "band": "Under $100k",
+   "done": 2028,
+   "title": "condominium; agents say freehold or leasehold",
+   "lease": null,
+   "yield": null,
+   "units": 131,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 11
+  },
+  {
+   "id": "PHK-017",
+   "market": "Phuket",
+   "country": "Thailand",
+   "region": "Phuket",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 8,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 5
+  },
+  {
    "id": "PRT-001",
    "market": "Portugal",
    "country": "Portugal",
@@ -33619,12 +33979,12 @@
    "notes": [],
    "tier": "clear",
    "read": true,
-   "checked": "31 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
     "Permit Licencia de obra mayor, expediente 65716/2022 (Torrevieja, 1 is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -34529,7 +34889,7 @@
    "docs": false,
    "plans": false,
    "band": "$400k and up",
-   "done": 2026,
+   "done": 2027,
    "title": "freehold unit or CIP share (confirm instrument)",
    "lease": null,
    "yield": 8,
@@ -34540,7 +34900,7 @@
     "progress": null,
     "plans": false,
     "record": true,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -34550,18 +34910,17 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
+    "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -34741,7 +35100,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "31 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
     "Leasehold: is the lease registered, and is the base term the one advertised?",
@@ -36440,29 +36799,29 @@
  ],
  "db": {
   "updated": "2026-11-01",
-  "projects": 640,
+  "projects": 646,
   "markets": 114,
   "countries": 62,
-  "sources": 3063,
-  "data_points": 16295,
+  "sources": 3089,
+  "data_points": 16409,
   "claims": {
    "verified": 1208,
-   "unverified": 2102,
-   "contradicted": 612
+   "unverified": 2116,
+   "contradicted": 613
   },
-  "claims_total": 3922,
-  "deep_profiles": 412,
+  "claims_total": 3937,
+  "deep_profiles": 418,
   "checks_by_level": {
    "registry": 220,
    "independent": 264,
-   "developer": 859,
-   "contradicted": 51,
-   "none": 1078
+   "developer": 863,
+   "contradicted": 52,
+   "none": 1109
   },
-  "checks_rated": 2472,
+  "checks_rated": 2508,
   "stages": {
-   "off-plan": 164,
-   "under construction": 199
+   "off-plan": 166,
+   "under construction": 203
   },
   "all_six_public": 23,
   "with_flags": 42
