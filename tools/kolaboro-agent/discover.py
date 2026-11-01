@@ -24,15 +24,15 @@ LV = ('registry', 'independent', 'developer', 'contradicted', 'none')
 
 # Markets in rotation (market name, country, registry hint). Every day starts at a different point.
 MARKETS = [
-    ('Dubai', 'UAE', 'Dubai Land Department / Dubai REST project and escrow data'), ('Abu Dhabi', 'UAE', 'ADREC / DARI'),
-    ('Ras Al Khaimah', 'UAE', 'RAK RERA off-plan list'), ('Sharjah', 'UAE', 'Sharjah RERA'), ('Oman', 'Oman', 'Ministry of Housing ITC projects'),
+    ('Dubai', 'UAE', 'Dubai Land Department / Dubai REST project and escrow data'), ('Abu Dhabi', 'UAE', 'ADREC / DARI (adxinteract.com republishes ADREC project number, escrow bank and inspected % built)'),
+    ('Ras Al Khaimah', 'UAE', 'RAK RERA off-plan list (a registered project without the off-plan sales permit must not take bookings)'), ('Sharjah', 'UAE', 'Sharjah RERA'), ('Oman', 'Oman', 'Ministry of Housing ITC projects, escrow required by Royal Decree 79/2025'),
     ('Saudi Arabia', 'Saudi Arabia', 'Wafi off-plan licence (REGA)'), ('Bahrain', 'Bahrain', 'RERA Bahrain'), ('Qatar', 'Qatar', 'Ministry of Justice'),
     ('Egypt', 'Egypt', 'NUCA'), ('Mauritius', 'Mauritius', 'EDB IRS/RES/PDS schemes'), ('Zanzibar', 'Tanzania', 'ZIPA'), ('Cape Town', 'South Africa', 'City of Cape Town plans, CIPC'),
     ('Costa del Sol', 'Spain', 'town hall licencia de obra, Catastro'), ('Costa Blanca', 'Spain', 'licencia de obra, bank guarantee Ley 38/1999'),
     ('Balearics', 'Spain', 'licencia de obra'), ('Canary Islands', 'Spain', 'licencia de obra'), ('Algarve', 'Portugal', 'municipal alvara'),
     ('Lisbon', 'Portugal', 'Camara Municipal licence'), ('Madeira', 'Portugal', 'municipal licence'), ('Greece', 'Greece', 'building permit e-Adeies'),
-    ('Cyprus', 'Cyprus', 'planning and building permits'), ('Northern Cyprus', 'Northern Cyprus', 'building permit'), ('Istanbul', 'Turkey', 'TKGM, building licence'),
-    ('Antalya', 'Turkey', 'building licence'), ('Bodrum', 'Turkey', 'building licence'), ('Montenegro', 'Montenegro', 'building permit'),
+    ('Cyprus', 'Cyprus', 'planning and building permits'), ('Northern Cyprus', 'Northern Cyprus', 'building permit'), ('Istanbul', 'Turkey', 'TKGM, building licence, KAP filings (Emlak Konut appraisal reports list permit numbers and % built)'),
+    ('Antalya', 'Turkey', 'building licence, KAP filings (Emlak Konut appraisal reports)'), ('Bodrum', 'Turkey', 'building licence'), ('Montenegro', 'Montenegro', 'building permit'),
     ('Croatia', 'Croatia', 'building permit'), ('Albania', 'Albania', 'building permit'), ('Bulgaria', 'Bulgaria', 'Act 14/15/16'), ('Georgia', 'Georgia', 'public registry'),
     ('Italy', 'Italy', 'permesso di costruire'), ('French Riviera', 'France', 'permis de construire, GFA guarantee'), ('Malta', 'Malta', 'Planning Authority PA number'),
     ('London', 'UK', 'planning portal, Companies House'), ('Manchester', 'UK', 'planning portal'), ('Dublin', 'Ireland', 'planning register'),

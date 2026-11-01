@@ -206,5 +206,2217 @@
    "https://decree.om/2025/rd20250079/",
    "https://www.addleshawgoddard.com/en/insights/insights-briefings/2019/financial-services/escrow-account-regulations/"
   ]
+ },
+ {
+  "slug": "hayat-flora-kucukcekmece",
+  "name": "Hayat Flora",
+  "developer": "Özak GYO with Emlak Konut GYO",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Halkalı, Küçükçekmece, Istanbul",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "url": "https://www.ozakgyo.com/en/project/hayat-flora",
+  "docs_url": "https://www.ozakgyo.com/en/project/hayat-flora",
+  "permit_number": "Yapı ruhsatı 724 (block A, 29.12.2023); 714-731 and 47-50/490-492 for other blocks per KAP appraisal",
+  "docs_listed": [
+   "developer FAQ: planned delivery February 2029, 21 blocks, 1,380+ homes and 45+ shops, 2,318 parking spaces",
+   "Emlak Konut page: 1,382 homes + 46 commercial units (1,428 units)",
+   "Emlak Konut KAP appraisal report 26-082 (22 May 2026): building permit dates and numbers per block, construction 10.16% complete, no occupancy permit yet, land title held by Emlak Konut GYO",
+   "Özak GYO investor presentation: phase 1 progress 10.94% at 30 Sep 2025, 14.30% later",
+   "agent copy of June 2026 developer price list: USD 264,000 to 1,050,000, 50% down + 24 months",
+   "earthquake and foundation design details on developer FAQ"
+  ],
+  "note": "21-block revenue-sharing project by listed Özak GYO on land owned by state-linked Emlak Konut GYO; Emlak Konut's KAP-filed appraisal (22 May 2026) lists building permits issued Dec 2023 to Oct 2024 and puts construction at 10.16%, while the developer promises delivery in February 2029. Portal claims of 40% completion, a March 2027 delivery, a 6% yield and a 'state guarantee' are not supported by these filings (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 264000,
+   "currency": "USD",
+   "title": "freehold (kat irtifakı before completion)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": "Yapı ruhsatı 724 (block A, 29.12.2023); 714-731 and 47-50/490-492 for other blocks per KAP appraisal",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 10.16,
+   "progress_updates": true,
+   "developer_delivered": "Özak GYO investor presentation lists completed projects: 34 Portal, İş İstanbul 34, Metro Gross, Bulvar 216, Ela Excellence, Büyükyalı (Fişekhane), Özak Hayattepe, Özak Göktürk, Özak Doa",
+   "units": 1428,
+   "payment_plan": "50% down payment, balance in 24 monthly instalments, VAT included (June and September 2026 price lists as quoted by agents)",
+   "price_per_m2": 4000
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Emlak Konut GYO's KAP-filed appraisal report 26-082 (Yetkin Değerleme, 22 May 2026) tabulates building permits (yapı ruhsatı) for each block with dates and numbers, e.g. block A no. 724 dated 29.12.2023 and blocks T/U/V revised permits 490-492 dated 09.10.2024; the report is also hosted on Emlak Konut's investor-relations site",
+   "escrow": "No escrow or bank guarantee for buyer payments. Marketing refers only to 'the assurance of Emlak Konut' under a revenue-sharing model; Turkish law has no general escrow requirement for off-plan sales",
+   "progress": "KAP appraisal: construction 10.16% complete at 22 May 2026, no occupancy permit (yapı kullanma izni). Özak investor presentation: phase 1 at 10.94% on 30 Sep 2025 and 14.30% later. Portal emlakplatform shows 40%, which conflicts with the filings",
+   "plans": "Developer page has gallery and video but no unit floor plans; portals show size ranges (65 to 364 m2) and plans behind a login",
+   "record": "Özak GYO (founded 2008, REIT since 2009, listed) names nine completed projects in its investor presentation; Emlak Konut GYO is a large listed REIT",
+   "returns": "Developer page makes no guaranteed return claim. Portal emlakplatform shows a 6% expected rental yield and 'state guarantee: yes', which is portal copy, not a developer guarantee"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Building permits issued for the blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9e2771a0019e8337038663f4"
+   },
+   {
+    "claim": "Land owned by Emlak Konut GYO (revenue-sharing model)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9e2771a0019e8337038663f4"
+   },
+   {
+    "claim": "1,382 homes and 46 commercial units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/tr-TR/hayat-flora"
+   },
+   {
+    "claim": "Construction about 10% complete (May 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9e2771a0019e8337038663f4"
+   },
+   {
+    "claim": "Construction 40% complete (portal)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/hayat-flora"
+   },
+   {
+    "claim": "Planned delivery February 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ozakgyo.com/upi/files/2025/11/1763707434_4218.pdf"
+   },
+   {
+    "claim": "Delivery March 2027 (portals emlakjet, emlakplatform)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakjet.com/projeler/proje/hayat-flora"
+   },
+   {
+    "claim": "Prices from USD 264,000 (June 2026 list)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.icanbuyinturkey.com/tr/projects/kucukcekmece/hayat-flora"
+   },
+   {
+    "claim": "Payment 50% down + 24 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://interestingrealestate.com/listings/hayat-flora"
+   },
+   {
+    "claim": "Expected rental yield 6% and state guarantee (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/hayat-flora"
+   },
+   {
+    "claim": "Developer Özak GYO is a listed REIT with completed projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ozakgyo.com/upi/files/2025/11/1763707434_4218.pdf"
+   },
+   {
+    "claim": "Occupancy permit (iskan) obtained",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9e2771a0019e8337038663f4"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ozakgyo.com/en/project/hayat-flora"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2008,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Özak Gayrimenkul Yatırım Ortaklığı A.Ş. (REIT since 03.06.2009); landowner Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.",
+   "developer_projects_delivered": 9,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Özak GYO and Emlak Konut GYO are listed on Borsa Istanbul and file on KAP; CMB-licensed appraisal reports published",
+   "construction_start": "2024-07",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1",
+    "duplex 2+1 to 4+1",
+    "shops"
+   ],
+   "size_min_m2": 66,
+   "size_max_m2": 364,
+   "price_min": 264000,
+   "price_max": 1050000,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, 24 monthly instalments",
+   "foreign_ownership": "Turkish title deed (kat irtifakı during construction, kat mülkiyeti after occupancy permit); foreigners can buy in Istanbul",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "70% landscaped site",
+    "saltwater pool",
+    "sports courts",
+    "children's play areas",
+    "walking and cycling paths",
+    "street-level shops",
+    "EV charging",
+    "2,318 parking spaces"
+   ],
+   "lat": 41.016,
+   "lng": 28.771,
+   "permit_authority": "Küçükçekmece Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permit numbers and dates appear in a stock-exchange filed appraisal",
+   "Independent construction progress figure (10.16%, May 2026)",
+   "Land owned outright by listed Emlak Konut GYO",
+   "Developer is a listed REIT with nine named completed projects",
+   "Developer itself makes no guaranteed-return claim"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.ozakgyo.com/en/project/hayat-flora",
+   "https://www.ozakgyo.com/tr/proje/hayat-flora",
+   "https://www.emlakkonut.com.tr/tr-TR/hayat-flora",
+   "https://kap.org.tr/tr/api/file/download/4028328d9e2771a0019e8337038663f4",
+   "https://kap.org.tr/en/Bildirim/1611682",
+   "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/229-25-229-emlak-konut-gyo-hayat-flora-1-etap-kap.pdf",
+   "https://www.ozakgyo.com/upi/files/2025/11/1763707434_4218.pdf",
+   "https://www.icanbuyinturkey.com/tr/projects/kucukcekmece/hayat-flora",
+   "https://interestingrealestate.com/listings/hayat-flora",
+   "https://www.emlakplatform.com.tr/tr/projects/hayat-flora",
+   "https://www.emlakjet.com/projeler/proje/hayat-flora",
+   "https://www.deal-tr.com/tr/blog/top-emlak-konut-projects-in-istanbul-2026-full-investment-guide"
+  ]
+ },
+ {
+  "slug": "ebruli-basaksehir",
+  "name": "Ebruli Başakşehir",
+  "developer": "Not named on listing",
+  "status": "active",
+  "stage": "under construction",
+  "area": "İkitelli-2 / Kayabaşı, Başakşehir, Istanbul",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "url": "https://ebrulibasaksehir.com/",
+  "docs_url": "https://ebrulibasaksehir.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: 16 blocks, 738 apartments 2+1 to 5+1, amenity list, sales office address",
+   "developer operator named as EBRULİ İnşaat Başakşehir Adi Ortaklığı",
+   "press (Jan 2024): joint venture with Başakşehir Municipality on parcel 1423 ada 3, 738 homes + 25 shops, cost TRY 2.44bn, completion planned Dec 2025",
+   "press: ÇED 'outside scope' opinion no. 7765618 dated 25.10.2023 for the earlier 248-unit version",
+   "portals: prices from USD 280,476 to 437,448, delivery dates Jun 2027 to Apr 2028, 40% completion (emlakplatform)"
+  ],
+  "note": "738-home, 16-block scheme built by Ebruli İnşaat (Savdi group) in a joint venture with Başakşehir Municipality on municipal land. Press in early 2024 reported completion planned for December 2025; listings now give June 2027 to April 2028, and the developer site publishes no permit, progress, price or deposit protection (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 280476,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 40,
+   "progress_updates": false,
+   "developer_delivered": "Ebruli İnşaat site lists completed projects Ebruli Ispartakule (724 homes + 52 shops, also on Emlak Konut site) and Bahçekent Flora (959 homes)",
+   "units": 738,
+   "payment_plan": "35% down payment, balance over 24 months interest-free (deal-tr); other portals quote 35% + 35 or 60 instalments",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number on developer site or portals. Press reports an environmental (ÇED) outside-scope opinion no. 7765618 of 25.10.2023 for an earlier 248-unit version and a later 'ÇED not required' decision; this is not a building permit",
+   "escrow": "No escrow, bank guarantee or deposit protection stated; portals advertise a 'state guarantee' but the developer does not",
+   "progress": "Only listing portal emlakplatform shows 40% completion (updated 05.10.2026); developer publishes no progress",
+   "plans": "No floor plans on developer site; portals give size ranges only (126 to 259 m2)",
+   "record": "Developer site and About page name completed Ebruli Ispartakule (724 homes, 52 shops) and Bahçekent Flora (959 homes); Emlak Konut GYO's site describes Ebruli Ispartakule",
+   "returns": "Developer makes no return claims; portals deal-tr (6 to 8% rent) and emlakplatform (7%) quote yields without guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Joint venture between Ebruli İnşaat and Başakşehir Municipality on municipal parcel 1423 ada 3",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/ebruli-basaksehirde-738-konut-yer-alacak/"
+   },
+   {
+    "claim": "738 homes and 25 shops in 16 blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://emlakkulisi.com/ebruli-basaksehir-resmen-basliyor-738-konutluk-yeni-proje/797259"
+   },
+   {
+    "claim": "720 apartments (portal figure)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.deal-tr.com/tr/projects/ebruli-basaksehir"
+   },
+   {
+    "claim": "Environmental (ÇED) clearance obtained",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://emlakkulisi.com/ebruli-basaksehir-resmen-basliyor-738-konutluk-yeni-proje/797259"
+   },
+   {
+    "claim": "Building permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ebrulibasaksehir.com/"
+   },
+   {
+    "claim": "Completion planned December 2025 (2024 press)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://emlakproject.com/projeler/ebruli-insaat-basaksehir-icin-dugmeye-basti/41963"
+   },
+   {
+    "claim": "Delivery April 2028 (portals)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mbany.com/tr/projects/ebruli-basaksehir"
+   },
+   {
+    "claim": "Delivery June 2027 (deal-tr)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.deal-tr.com/tr/projects/ebruli-basaksehir"
+   },
+   {
+    "claim": "Construction 40% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/ar/projects/ebruli-basaksehir"
+   },
+   {
+    "claim": "State guarantee (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/ar/projects/ebruli-basaksehir"
+   },
+   {
+    "claim": "Developer delivered Ebruli Ispartakule (724 homes + 52 shops)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://emlakkonut.com.tr/tr-tr/ebruli-ispartakule"
+   },
+   {
+    "claim": "Prices from USD 280,476",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/ar/projects/ebruli-basaksehir"
+   },
+   {
+    "claim": "Rental yield 6 to 8%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.deal-tr.com/tr/projects/ebruli-basaksehir"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "EBRULİ İnşaat Başakşehir Adi Ortaklığı (Ebruli İnşaat / Savdi İnşaat with Başakşehir Municipality)",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": 1683,
+   "listed_or_audited": null,
+   "construction_start": "2024-02",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2025-Q4",
+   "delay_months": 24,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1",
+    "4+1 duplex",
+    "5+1",
+    "shops"
+   ],
+   "size_min_m2": 126,
+   "size_max_m2": 259,
+   "price_min": 280476,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 35,
+   "payment_plan": "35% down, 24 months interest-free (portal)",
+   "foreign_ownership": "Turkish title deed; no title type stated (portals say 'contract' only, no deed yet)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "fitness",
+    "sauna",
+    "hamam",
+    "steam room",
+    "children's play areas",
+    "walking and cycling paths",
+    "1,165 parking spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Başakşehir Municipality (yapı ruhsatı); Ministry of Environment, Urbanisation and Climate Change (ÇED)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Land and partnership with Başakşehir Municipality disclosed in press",
+   "Environmental clearance reported in press",
+   "Developer names two completed large projects",
+   "No guaranteed-return language from the developer"
+  ],
+  "flags": [
+   {
+    "text": "Press in January and February 2024 reported completion planned for December 2025; current listings give delivery between June 2027 and April 2028",
+    "source": "https://emlakkulisi.com/ebruli-basaksehir-resmen-basliyor-738-konutluk-yeni-proje/797259"
+   }
+  ],
+  "sources": [
+   "https://ebrulibasaksehir.com/",
+   "https://www.ebruliinsaat.com/",
+   "https://www.ebruliinsaat.com/hakkimizda.php",
+   "https://www.ebruliinsaat.com/savdi.php",
+   "https://emlakkonut.com.tr/tr-tr/ebruli-ispartakule",
+   "https://www.emlaknews.com.tr/haberler/ebruli-basaksehirde-738-konut-yer-alacak/",
+   "https://emlakkulisi.com/ebruli-basaksehir-resmen-basliyor-738-konutluk-yeni-proje/797259",
+   "https://emlakproject.com/projeler/ebruli-insaat-basaksehir-icin-dugmeye-basti/41963",
+   "https://www.deal-tr.com/tr/projects/ebruli-basaksehir",
+   "https://www.mbany.com/tr/projects/ebruli-basaksehir",
+   "https://www.emlakplatform.com.tr/ar/projects/ebruli-basaksehir",
+   "https://satisofisi.com/projeler/turkiye/istanbul/basaksehir/kayabasi/ebruli-basaksehir/",
+   "https://www.konutradar.com/istanbul-ebruli-basaksehir-proje-bilgileri/"
+  ]
+ },
+ {
+  "slug": "basaksehir-low-rise-mixed-use-148606",
+  "name": "Low-rise mixed-use apartments in Başakşehir (ref 148606)",
+  "developer": "Not named on listing",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Şamlar, Başakşehir, Istanbul",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "url": "https://www.propertyturkey.com/real_estate/148606-low-rise-mixed-use-apartments-in-basaksehir-for-sale",
+  "docs_url": "https://mesayenikent.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "agent listing ref 148606: 3+1 from 184 m2 at USD 605,000, 50% down + 12 months, completion Sep 2028, 2,000,000 m2 plot in five phases",
+   "the same plot size, phase count, 1,000,000 m2 landscaping and 10,000 m2 social facilities are published for Mesa Yenikent by Mesa (mesayenikent.com and several portals)",
+   "Mesa Yenikent catalogue PDF with site plan of phase 1 and unit floor plans (2+1 118 m2 gross to 6.5+1 411 m2 gross)",
+   "Mesa company claims 500+ completed projects and 135,000+ homes delivered; completed-project list on mesa.com.tr"
+  ],
+  "note": "The anonymous agency listing matches Mesa Yenikent, a 2,000,000 m2, five-phase Başakşehir scheme by long-established Mesa, which publishes floor plans in its catalogue. In an October 2026 Hürriyet advertorial Mesa's CEO said construction began about five months earlier and phase 1 excavation was finished; no permit, escrow or progress figure is published, and one portal's '80% built' claim conflicts with that account (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 605000,
+   "currency": "USD",
+   "title": "kat irtifakı (floor easement) per agent TEKCE",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Mesa catalogue: 500+ completed projects and 135,000+ homes delivered; mesa.com.tr lists completed schemes such as Bahçeşehir Uydukent (1989-2001), Tema İstanbul (2011-2015), Tema World (2022-2024)",
+   "units": 843,
+   "payment_plan": "50% down payment, balance within 12 months",
+   "price_per_m2": 3288
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit, ÇED decision or licence number on the agent listing, mesayenikent.com, mesa.com.tr or portals",
+   "escrow": "No escrow, bank guarantee or deposit insurance stated; Mesa cites only its 'Unconditional Customer Satisfaction Guarantee'",
+   "progress": "Mesa CEO (Hürriyet advertorial, 22 Oct 2026): construction began about five months earlier and excavation of the first phase is complete. Portal VIP Property shows 80% construction, which conflicts with this",
+   "plans": "Mesa Yenikent catalogue PDF (May 2026) shows the phase 1 site plan and dimensioned unit plans with net and gross areas",
+   "record": "Mesa publishes a long dated list of completed projects since the 1970s and claims 135,000+ homes delivered (company statements, not independently confirmed here)",
+   "returns": "No guaranteed rental or buy-back language on agent or developer pages"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Listing ref 148606 is the Mesa Yenikent project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vipproperty.com/projects/mesa-yenikent"
+   },
+   {
+    "claim": "2,000,000 m2 site in five phases with 1,000,000 m2 landscaping",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mesayenikent.com/"
+   },
+   {
+    "claim": "Land is privately owned and developed under a revenue-sharing deal",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hurriyet.com.tr/advertorial/2-milyon-metrekareye-4-bin-konutluk-kent-mesa-1-5-milyar-dolar-yatirimla-yeni-projeye-basladi-43350540"
+   },
+   {
+    "claim": "Construction started around May 2026, phase 1 excavation complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hurriyet.com.tr/advertorial/2-milyon-metrekareye-4-bin-konutluk-kent-mesa-1-5-milyar-dolar-yatirimla-yeni-projeye-basladi-43350540"
+   },
+   {
+    "claim": "Construction 80% complete (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vipproperty.com/projects/mesa-yenikent"
+   },
+   {
+    "claim": "Completion September 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyturkey.com/real_estate/148606-low-rise-mixed-use-apartments-in-basaksehir-for-sale"
+   },
+   {
+    "claim": "Phase 1 handover June 2028 (CEO)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hurriyet.com.tr/advertorial/2-milyon-metrekareye-4-bin-konutluk-kent-mesa-1-5-milyar-dolar-yatirimla-yeni-projeye-basladi-43350540"
+   },
+   {
+    "claim": "3+1 of 184 m2 from USD 605,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyturkey.com/real_estate/148606-low-rise-mixed-use-apartments-in-basaksehir-for-sale"
+   },
+   {
+    "claim": "Eligible for Turkish citizenship by investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyturkey.com/real_estate/148606-low-rise-mixed-use-apartments-in-basaksehir-for-sale"
+   },
+   {
+    "claim": "Developer has delivered 135,000+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mesayenikent.com/wp-content/uploads/2026/05/Mesa-Yenikent-Katalog.pdf"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mesayenikent.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ankara, Turkey",
+   "developer_company": "Mesa Mesken (Mesa Holding)",
+   "developer_projects_delivered": 500,
+   "developer_units_delivered": 135000,
+   "listed_or_audited": null,
+   "construction_start": "2026-05",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2+1",
+    "3+1",
+    "3.5+1",
+    "4+1",
+    "4.5+1",
+    "6.5+1",
+    "garden and terrace units"
+   ],
+   "size_min_m2": 118,
+   "size_max_m2": 411,
+   "price_min": 605000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, balance in 12 months",
+   "foreign_ownership": "Turkish title deed; floor easement (kat irtifakı) during construction per agent",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "fitness centre",
+    "sauna and steam room",
+    "tennis, basketball and padel courts",
+    "walking and cycling paths",
+    "children's playgrounds",
+    "EV charging",
+    "on-site shops and cafes"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Başakşehir Municipality (yapı ruhsatı)",
+   "brochure_url": "https://mesayenikent.com/wp-content/uploads/2026/05/Mesa-Yenikent-Katalog.pdf"
+  },
+  "positives": [
+   "Dimensioned floor plans and phase 1 site plan in the developer catalogue",
+   "Developer with a long, dated list of completed housing projects",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyturkey.com/real_estate/148606-low-rise-mixed-use-apartments-in-basaksehir-for-sale",
+   "https://mesayenikent.com/",
+   "https://mesayenikent.com/wp-content/uploads/2026/05/Mesa-Yenikent-Katalog.pdf",
+   "https://www.mesa.com.tr/mesa-yenikent-basaksehir.aspx",
+   "https://www.mesa.com.tr/tamamlanan-projeler.aspx",
+   "https://www.hurriyet.com.tr/advertorial/2-milyon-metrekareye-4-bin-konutluk-kent-mesa-1-5-milyar-dolar-yatirimla-yeni-projeye-basladi-43350540",
+   "https://vipproperty.com/projects/mesa-yenikent",
+   "https://sahmatgroup.com.tr/en/projects/mesa-yenikent",
+   "https://www.deal-tr.com/en/projects/mesa-yenikent",
+   "https://tekce.com/ad/ist-01907-apartments-in-a-large-5-phase-project-in-istanbul-basaksehir",
+   "https://tasinmazhaber.com/mesa-yenikent-basaksehir-satilik-daire-fiyat-listesi/"
+  ]
+ },
+ {
+  "slug": "brooklyn-life-fikirtepe",
+  "name": "Brooklyn Life (Fikirtepe urban renewal)",
+  "developer": "Pana Yapı (formerly with Selimoğlu İnşaat)",
+  "status": "completed",
+  "stage": "completed",
+  "area": "Fikirtepe, Kadıköy, Istanbul (parcel 3419 ada 1)",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "url": "https://imarpanosu.com/emlak-konut-fikirtepede-konut-teslimi-yapacak-iste-hak-sahipleri-listesi/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "original Pana Yapı launch (2016): 431 homes + 16 shops in 23-storey blocks on 8,000 m2, delivery end 2017, building permit reported obtained June 2016",
+   "Cumhuriyet (Feb 2018): works stopped for two months at about 25% complete; Pana said it could not get bank credit",
+   "Ekonomim (Nov 2022): Ministry took over 22 stalled Fikirtepe projects; buyers in the 'Life' block who bought from the contractor reported being left without title",
+   "Marmara Urban Transformation Directorate notice (31 Oct 2024, via İmar Panosu): 3419 ada 1 (formerly Brooklyn Life, now Yeni Fikirtepe stage 19, 250 homes + 9 shops) completed, handovers to right holders from Nov 2024",
+   "MedyaRadar (Sep 2026): landowners received homes but people who bought off-plan from Pana got nothing"
+  ],
+  "note": "Pana Yapı's Brooklyn Life (431 homes) stopped at about 25% in early 2018; the site was taken over by the Ministry of Environment, Urbanisation and Climate Change and Emlak Konut, rebuilt as Yeni Fikirtepe stage 19 (250 homes, 9 shops) and handed to landowner right holders from November 2024. Press reports that buyers who paid Pana for off-plan units were not given homes and are pursuing claims (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "TRY",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2024-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": true,
+   "developer_delivered": "Pana Yapı completed Brooklyn Park in Fikirtepe (2016-2017, reported without occupancy permit in 2018); Brooklyn Life itself was finished by the Ministry and Emlak Konut, not by Pana",
+   "units": 431,
+   "payment_plan": "2017 launch offer: 50% down, 24 months without interest (Emlakkulisi)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Emlakkulisi (Jun 2016) reported Pana had obtained the building permit (ruhsat) but no number was published; the original project website is no longer available",
+   "escrow": "No escrow or deposit protection was ever stated; off-plan buyers had no protection when the contractor failed (Ekonomim 2022, MedyaRadar 2026)",
+   "progress": "Cumhuriyet (13 Feb 2018) reported 25% complete and works stopped; Marmara Urban Transformation Directorate announced in Oct 2024 that construction on 3419 ada 1 was complete",
+   "plans": "No floor plans available from the original developer; only size range 60 to 150 m2",
+   "record": "Developer failed to complete this project; the one completed Pana scheme (Brooklyn Park) was reported in 2018 to lack an occupancy permit",
+   "returns": "No guaranteed-return claims found"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "contradicted",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "431 homes and 16 shops, delivery end of 2017",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/pana-yapi-nin-brooklyn-life-i-satisa-cikiyor-10966/"
+   },
+   {
+    "claim": "Building permit obtained June 2016",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://emlakkulisi.com/guncel/fikirtepe-brooklyn-park-son-durum/1099345"
+   },
+   {
+    "claim": "Construction stopped at about 25% in early 2018",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gercekgundem.com/magazin/382/kurtlar-vadisi-krizde"
+   },
+   {
+    "claim": "Part of the land under lien (haciz) in 2018",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.medyaradar.net/eskiya-dunyaya-hukumdar-olmazin-da-yapimcisi-dev-insaat-sirketine-ait-projeler-durdu-haberi-979171"
+   },
+   {
+    "claim": "Ministry took over stalled Fikirtepe projects including the 'Life' block",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ekonomim.com/ekonomi/fikirtepede-daire-devri-de-magduriyeti-gidermedi-haberi-674514"
+   },
+   {
+    "claim": "Site completed as Yeni Fikirtepe stage 19 with handovers from Nov 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imarpanosu.com/emlak-konut-fikirtepede-konut-teslimi-yapacak-iste-hak-sahipleri-listesi/"
+   },
+   {
+    "claim": "Off-plan buyers from Pana received homes",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.medyaradar.net/film-senaryosu-gibi-vurgun-iddiasi-pana-konut-basladi-bakanlik-bitirdi-haberi-2249386"
+   },
+   {
+    "claim": "Pana Yapı Çelik Makine A.Ş. renamed Selimoğlu Proje Geliştirme A.Ş. on 19.12.2017",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.medyaradar.net/kurtlar-vadisi-fikirtepe-cay-tasiyordu-milyarlik-sirketin-patronu-oldu-haberi-2249288"
+   },
+   {
+    "claim": "Project 100% built and delivered January 2018 (portal emlakjet)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakjet.com/projeler/proje/brooklyn-life"
+   },
+   {
+    "claim": "Developer delivered Brooklyn Park",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.fikirtepehaber.com/fikirtepe-projeleri/fikirtepe-de-teslimler-kizisti-sira-alt-yapisi-sorunsuz-brooklyn-park-ta-h3738.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2008,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Pana Yapı (Pana Holding, founded 17.09.2008); Pana Yapı Çelik Makine A.Ş. renamed Selimoğlu Proje Geliştirme A.Ş. in Dec 2017",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2016-06",
+   "handover_promised": "2017-Q4",
+   "original_handover": "2017-Q4",
+   "delay_months": 83,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 150,
+   "price_min": null,
+   "price_max": null,
+   "currency": "TRY",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, 24 months (2017)",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor and outdoor pools",
+    "fitness centre",
+    "sauna",
+    "Turkish bath",
+    "children's club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Environment, Urbanisation and Climate Change (Fikirtepe risk area) / Kadıköy",
+   "brochure_url": null
+  },
+  "positives": [
+   "Site was eventually completed by the state and handed to landowner right holders"
+  ],
+  "flags": [
+   {
+    "text": "Cumhuriyet reported in Feb 2018 that works had stopped at about 25% completion and the developer said it could not obtain bank finance",
+    "source": "https://www.gercekgundem.com/magazin/382/kurtlar-vadisi-krizde"
+   },
+   {
+    "text": "Hürriyet, as republished by MedyaRadar in Feb 2018, reported part of the land under lien and rent assistance to right holders unpaid since the previous June",
+    "source": "https://www.medyaradar.net/eskiya-dunyaya-hukumdar-olmazin-da-yapimcisi-dev-insaat-sirketine-ait-projeler-durdu-haberi-979171"
+   },
+   {
+    "text": "Ekonomim reported in Nov 2022 that people who bought units from the contractor in the 'Life' block were left without title after the Ministry takeover",
+    "source": "https://www.ekonomim.com/ekonomi/fikirtepede-daire-devri-de-magduriyeti-gidermedi-haberi-674514"
+   },
+   {
+    "text": "MedyaRadar reported in Sep 2026 that off-plan buyers of Pana's Fikirtepe projects received nothing after the Ministry completed them; a 2019 indictment reportedly listed 131 complainants. Allegations are not final court findings",
+    "source": "https://www.medyaradar.net/film-senaryosu-gibi-vurgun-iddiasi-pana-konut-basladi-bakanlik-bitirdi-haberi-2249386"
+   }
+  ],
+  "sources": [
+   "https://www.cnnturk.com/turkiye/fikirtepede-1000-aile-magdur-2011de-el-sikistilar-ama-insaatlar-durdu-evlerin-hic-biri-ortada-yok",
+   "https://imarpanosu.com/emlak-konut-fikirtepede-konut-teslimi-yapacak-iste-hak-sahipleri-listesi/",
+   "https://imarpanosu.com/yeni-fikirtepede-hak-sahipleri-emlak-konuta-yuruyecek-evimiz-nerede/",
+   "https://www.ekonomim.com/ekonomi/fikirtepede-daire-devri-de-magduriyeti-gidermedi-haberi-674514",
+   "https://www.medyaradar.net/film-senaryosu-gibi-vurgun-iddiasi-pana-konut-basladi-bakanlik-bitirdi-haberi-2249386",
+   "https://www.medyaradar.net/kurtlar-vadisi-fikirtepe-cay-tasiyordu-milyarlik-sirketin-patronu-oldu-haberi-2249288",
+   "https://www.medyaradar.net/eskiya-dunyaya-hukumdar-olmazin-da-yapimcisi-dev-insaat-sirketine-ait-projeler-durdu-haberi-979171",
+   "https://www.superkulup.net/haber/film-senaryosu-gibi-vurgun-iddiasi-pana-konut-basladi-bakanlik-bitirdi-349844.html",
+   "https://www.gercekgundem.com/magazin/382/kurtlar-vadisi-krizde",
+   "https://www.emlaknews.com.tr/haberler/pana-yapi-nin-brooklyn-life-i-satisa-cikiyor-10966/",
+   "https://emlakkulisi.com/guncel/fikirtepe-brooklyn-park-son-durum/1099345",
+   "https://www.emlakjet.com/projeler/proje/brooklyn-life",
+   "https://www.fikirtepehaber.com/fikirtepe-projeleri/fikirtepe-de-teslimler-kizisti-sira-alt-yapisi-sorunsuz-brooklyn-park-ta-h3738.html",
+   "https://www.dw.com/tr/fikirtepede-y%C4%B1lan-hikayesine-d%C3%B6nen-kentsel-d%C3%B6n%C3%BC%C5%9F%C3%BCm/a-70473520",
+   "https://politikahaber.com/fikirtepede-21-yillik-belirsizlik-devlet-de-muteahhit-de-bizi-kandiriyor/"
+  ]
+ },
+ {
+  "slug": "lara-port-antalya",
+  "name": "Lara Port Antalya",
+  "developer": "Royal Construction",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Altıntaş, Aksu, Antalya",
+  "country": "Turkey",
+  "market": "Antalya",
+  "url": "https://laraport.com.tr/tr/",
+  "docs_url": "https://www.royalconstructionalanya.com/project/lara-port-antalya/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: joint project of Royal Construction (Alanya) and Elite Sinerji, 4,430 m2 plot, block A 12 offices + 3 shops, block B 54 apartments, deadline 31.05.2025",
+   "project site laraport.com.tr: delivery 30.11.2025, 36-month build",
+   "unit sizes 1+1 48 to 125.5 m2, 2+1 125.5 to 146 m2, specification list",
+   "portal emlakplatform (updated 28.01.2026): 70% complete, delivery 'Ready', status 'Sold', title deed easement (kat irtifakı), 40% + 12 instalments",
+   "agents still list units from EUR 163,305 (akdeniz.ru) and EUR 180,500 (Seaside Alanya)"
+  ],
+  "note": "54-apartment scheme in Altıntaş by Alanya builder Royal Construction with Elite Sinerji. The developer has given two delivery dates (31 May 2025 and 30 Nov 2025), both passed, while the main portal shows 70% built, 'Ready' and 'Sold' at the same time and other agents still list units; no permit, escrow or dated progress is published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 201915,
+   "currency": "USD",
+   "title": "kat irtifakı (floor easement)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 5,
+   "completion": "2025-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 70,
+   "progress_updates": false,
+   "developer_delivered": "Royal Construction homepage says it completed Royal Towers in Alanya; no unit counts",
+   "units": 54,
+   "payment_plan": "40% down payment, 12 instalments (portal)",
+   "price_per_m2": 3059
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number on developer, project or agent pages",
+   "escrow": "No escrow or bank guarantee stated",
+   "progress": "Only the portal figure of 70% (updated Jan 2026); developer publishes delivery dates but no progress updates",
+   "plans": "Unit size ranges and per-unit areas on agent pages; no floor plan drawings seen on the developer page",
+   "record": "Royal Construction homepage names completed Royal Towers (Alanya); not independently confirmed",
+   "returns": "Portal shows an expected 5% rental yield; no guarantee language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Delivery 31.05.2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.royalconstructionalanya.com/project/lara-port-antalya/"
+   },
+   {
+    "claim": "Delivery 30.11.2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://laraport.com.tr/tr/"
+   },
+   {
+    "claim": "Construction 70% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/lara-port-antalya"
+   },
+   {
+    "claim": "Project ready and sold out",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://akdeniz.ru/en/turkey/object-393"
+   },
+   {
+    "claim": "54 apartments plus 12 offices and 3 shops",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.royalconstructionalanya.com/project/lara-port-antalya/"
+   },
+   {
+    "claim": "Title deed type is floor easement (kat irtifakı)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/lara-port-antalya"
+   },
+   {
+    "claim": "Suitable for residence permit and citizenship",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://laraport.com.tr/tr/"
+   },
+   {
+    "claim": "3 km from Antalya airport (developer) vs 14 km (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://akdeniz.ru/en/turkey/object-393"
+   },
+   {
+    "claim": "Prices from USD 201,915",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/lara-port-antalya"
+   },
+   {
+    "claim": "Developer completed Royal Towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.royalconstructionalanya.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Alanya, Turkey",
+   "developer_company": "Royal Construction (Royal İnşaat) with Elite Sinerji, trading as Royal Sinerji",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2025-Q4",
+   "original_handover": "2025-Q2",
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "duplex",
+    "garden units",
+    "offices",
+    "shops"
+   ],
+   "size_min_m2": 48,
+   "size_max_m2": 152,
+   "price_min": 201915,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 40,
+   "payment_plan": "40% down, 12 instalments",
+   "foreign_ownership": "Turkish title deed, floor easement until occupancy permit",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor and indoor pools",
+    "sauna and Turkish bath",
+    "jacuzzi",
+    "gym",
+    "cinema",
+    "tennis court",
+    "kids club",
+    "indoor parking 45-47 cars"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Aksu Municipality (yapı ruhsatı)",
+   "brochure_url": "https://www.seaside-alanya.com/pdf/pdf.php?ilanno=112298&lang=2"
+  },
+  "positives": [
+   "Exact unit count and specification list published",
+   "Title deed type disclosed by portal",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakplatform.com.tr/en/projects/lara-port-antalya",
+   "https://www.royalconstructionalanya.com/project/lara-port-antalya/",
+   "https://www.royalconstructionalanya.com/",
+   "https://laraport.com.tr/tr/",
+   "https://www.seaside-alanya.com/pdf/pdf.php?ilanno=112298&lang=2",
+   "https://ramzyrealestate.com/en/projects/lara-port-antalya",
+   "https://akdeniz.ru/en/turkey/object-393"
+  ]
+ },
+ {
+  "slug": "altintas-swim-up-complex-ayt-3204",
+  "name": "Swim-up pool complex in Altıntaş (ref AYT-3204)",
+  "developer": "Not named on listing",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Altıntaş, Aksu, Antalya",
+  "country": "Turkey",
+  "market": "Antalya",
+  "url": "https://terrarealestate.com/property/3204-upscale-apartments-with-luxurious-features-in-altintas-antalya",
+  "docs_url": "https://www.verado.com.tr/en/projects/mona/venice",
+  "permit_number": null,
+  "docs_listed": [
+   "agent listing AYT-3204: from EUR 113,700 (1+1, 58 m2), completion 31 Jan 2027, prices updated 10 Feb 2026",
+   "same plot size (5,826 m2), 95 flats in one block and 1,100 m2 pool are published by Verado Construction for its 'At Mona Venice' project, parcel 15497/2",
+   "developer page: site plan legend and room-by-room unit layouts for 58, 91, 80, 117 and 127 m2 types",
+   "developer project list marks Mona Venice as 'Devam Ediyor' (in progress)",
+   "agent TEKCE: completion June 2027, title deed kat irtifakı (floor easement)"
+  ],
+  "note": "The anonymous agency listing matches 'At Mona Venice' by Verado Construction (founded 2015, Antalya), a 95-flat single block on parcel 15497/2 in Altıntaş with unit layouts on the developer site. Agents disagree on completion (January vs June 2027) and nobody publishes a permit, deposit protection or a progress figure beyond 'in progress' (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 113700,
+   "currency": "EUR",
+   "title": "kat irtifakı (floor easement) per agent TEKCE",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Verado brochures say it started in 2015 and has completed several projects in Antalya; the Mona project list marks some projects 'Tamamlandı' without unit counts",
+   "units": 95,
+   "payment_plan": null,
+   "price_per_m2": 1960
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer publishes the land parcel (ada/parsel 15497/2) but no building permit number",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Developer only labels the project 'in progress'; no percentage, dated photos or updates",
+   "plans": "Developer page lists room-by-room areas for each unit type with a numbered site plan",
+   "record": "Verado states it began in 2015 and its Mona project list shows several projects marked completed; names and unit counts are thin and not independently confirmed",
+   "returns": "Developer homepage advertises '18-month rent support' and rental potential, but no guaranteed yield or buy-back for this project"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Listing AYT-3204 is Verado's At Mona Venice",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.verado.com.tr/en/projects/mona/venice"
+   },
+   {
+    "claim": "95 flats in one block on a 5,826 m2 plot (parcel 15497/2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.verado.com.tr/tr/projects/mona-venice"
+   },
+   {
+    "claim": "Completion 31 January 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3204-upscale-apartments-with-luxurious-features-in-altintas-antalya"
+   },
+   {
+    "claim": "Completion June 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tekce.com/tr/ilan/ayt-04854-antalya-altintasta-havalimanina-yakin-swim-up-daireler"
+   },
+   {
+    "claim": "Prices from EUR 113,700",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3204-upscale-apartments-with-luxurious-features-in-altintas-antalya"
+   },
+   {
+    "claim": "Title deed kat irtifakı",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tekce.com/tr/ilan/ayt-04854-antalya-altintasta-havalimanina-yakin-swim-up-daireler"
+   },
+   {
+    "claim": "Project in progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.verado.com.tr/tr/projects/mona"
+   },
+   {
+    "claim": "Airport 6 km (developer) vs 8 km (agent); Lara Beach 3.5 km vs 7 km",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terrarealestate.com/property/3204-upscale-apartments-with-luxurious-features-in-altintas-antalya"
+   },
+   {
+    "claim": "Developer operating since 2015",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.verado.com.tr/images/project/mona/mare/Mona-Mare.pdf?v=2"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.verado.com.tr/en/projects/mona/venice"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Muratpaşa, Antalya, Turkey",
+   "developer_company": "Verado İnşaat (Verado Construction)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "1+1 swim-up",
+    "2+1",
+    "2+1 swim-up",
+    "3+1"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 208,
+   "price_min": 113700,
+   "price_max": 253600,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Turkish title deed, floor easement during construction",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "1,100 m2 outdoor pool",
+    "aqua park",
+    "indoor pool",
+    "sauna and steam room",
+    "fitness",
+    "kids club",
+    "fire pit",
+    "roof terrace"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Aksu Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Room-by-room unit layouts and site plan on developer page",
+   "Land parcel number published",
+   "Dated price update on agent listing",
+   "No guaranteed-return language for this project"
+  ],
+  "flags": [],
+  "sources": [
+   "https://terrarealestate.com/property/3204-upscale-apartments-with-luxurious-features-in-altintas-antalya",
+   "https://www.verado.com.tr/en/projects/mona/venice",
+   "https://www.verado.com.tr/tr/projects/mona-venice",
+   "https://www.verado.com.tr/tr/projects/mona",
+   "https://www.verado.com.tr/en",
+   "https://www.verado.com.tr/images/project/mona/mare/Mona-Mare.pdf?v=2",
+   "https://tekce.com/tr/ilan/ayt-04854-antalya-altintasta-havalimanina-yakin-swim-up-daireler"
+  ]
+ },
+ {
+  "slug": "altintas-700-unit-project-aksu",
+  "name": "700-apartment project in Altıntaş (Altıntaş Park Yaşam listing)",
+  "developer": "Not named on listing",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Altıntaş, Aksu, Antalya (parcel 15527 ada 1)",
+  "country": "Turkey",
+  "market": "Antalya",
+  "url": "https://parkyasamantalya.com/",
+  "docs_url": "https://www.emlakkonut.com.tr/en/park-yasam-antalya",
+  "permit_number": "Yeni yapı ruhsatı 190/01 to 190/13 (21-22.09.2023), Aksu, parcel 15527/1",
+  "docs_listed": [
+   "the removed 'Altıntaş Park Yaşam' listing (64,108 m2, Altıntaş) matches Park Yaşam Antalya: same 64,108.47 m2 parcel, but 1,437 homes + 6 shops, not about 700",
+   "developer site parkyasamantalya.com: Emlak Konut with İzka İnşaat, 3 to 8 floors, ZB ground class, unit types 1+1 to 5+1 duplex",
+   "Emlak Konut page: 1,437 homes, 6 commercial units, 1,443 units",
+   "KAP disclosure 1200705: building permits obtained for all 1,443 units",
+   "KAP appraisal (Form Değerleme, 31.12.2025): permit list 190/01-190/13 dated 21-22.09.2023, construction 27.92% complete, no floor easement yet, land owned by Emlak Konut",
+   "agent price lists: from USD 159,000 (Arkan Proje) or TRY 6.66m to 7.99m; delivery 2027 / 01.03.2027 on portals"
+  ],
+  "note": "The original anonymous listing is Park Yaşam Antalya, a 1,437-home Emlak Konut revenue-sharing project built by İzka İnşaat and Park İzmir on Emlak Konut land. KAP filings show building permits for all 11 blocks (Sep 2023) and construction at 27.92% at the end of 2025, while portals still advertise delivery in March 2027 (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 159000,
+   "currency": "USD",
+   "title": "Turkish title deed; floor easement not yet established (KAP appraisal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "Yeni yapı ruhsatı 190/01 to 190/13 (21-22.09.2023), Aksu, parcel 15527/1",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 27.92,
+   "progress_updates": true,
+   "developer_delivered": "İzka İnşaat lists completed Park Yaşam Mavişehir (521 homes, 2013), Park Yaşam Bornova (362 homes, Dec 2023), Park Yaşam Santorini (539 homes), Park Yaşam Ataşehir (2017) and others",
+   "units": 1443,
+   "payment_plan": "Cash price lists on agent pages; no instalment plan published",
+   "price_per_m2": 2373
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "KAP disclosure 1200705 (Emlak Konut) says building permits were obtained for all 1,443 units on parcel 15527/1; the 31.12.2025 appraisal filed on KAP lists permits 190/01 to 190/13 dated 21 and 22 Sep 2023 with unit counts per block",
+   "escrow": "No escrow or bank guarantee; marketing refers to 'Emlak Konut assurance' and a portal claims 'state guarantee'",
+   "progress": "KAP appraisal: 14.47% at 31.12.2024 and 27.92% at 31.12.2025, based on the latest progress payment report",
+   "plans": "Developer site lists unit types and amenities; agents give sizes; no floor plan drawings seen",
+   "record": "İzka İnşaat (founded 1995) lists completed Emlak Konut projects such as Park Yaşam Mavişehir (521 homes, finished 24.05.2013); portals list Park Yaşam Bornova (362 homes, Dec 2023) and Santorini (539 homes) as delivered",
+   "returns": "No guaranteed-return language found"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Listing is Park Yaşam Antalya on the 64,108 m2 parcel 15527/1",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d93c3b68c01943afe9a48656c"
+   },
+   {
+    "claim": "About 700 apartments (original listing)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/en/park-yasam-antalya"
+   },
+   {
+    "claim": "Building permits for 1,443 units obtained",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kap.org.tr/Bildirim/1200705"
+   },
+   {
+    "claim": "Construction 27.92% complete at end-2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328c9b82727b019b98175f1d1cd5"
+   },
+   {
+    "claim": "Land owned by Emlak Konut GYO (acquired from TOKİ, 2022)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d93c3b68c01943afe9a48656c"
+   },
+   {
+    "claim": "Revenue-sharing contract won by İzka and Park İzmir JV on 09.08.2022 (30% to Emlak Konut)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d93c3b68c01943afe9a48656c"
+   },
+   {
+    "claim": "Delivery 1 March 2027 (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/park-yasam-antalya"
+   },
+   {
+    "claim": "Turkish citizenship approved (original listing label)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aplaceinthesun.com/property/details/ap3655934/altintas-park-yasam-antalya"
+   },
+   {
+    "claim": "State guarantee (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/park-yasam-antalya"
+   },
+   {
+    "claim": "Prices from USD 159,000 for 1+1 of 67 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arkanproje.com/projects/park-yasam-antalya"
+   },
+   {
+    "claim": "Contractor delivered Park Yaşam Mavişehir (521 homes) in 2013",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://izka.com.tr/projeler/park-yasam-mavisehir/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1995,
+   "developer_hq": "Karşıyaka, İzmir, Turkey",
+   "developer_company": "İzka Gayrimenkul İnşaat A.Ş. and Park İzmir Gayrimenkul Yatırım A.Ş. İş Ortaklığı; landowner Emlak Konut GYO A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Landowner Emlak Konut GYO is listed on Borsa Istanbul; annual CMB-licensed appraisals filed on KAP",
+   "construction_start": "2023-09",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1 duplex",
+    "5+1 duplex",
+    "shops"
+   ],
+   "size_min_m2": 52,
+   "size_max_m2": 255,
+   "price_min": 159000,
+   "price_max": 803000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "cash",
+   "foreign_ownership": "Turkish title deed; floor easement not yet set up",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "45,000 m2 landscaping",
+    "swimming pool",
+    "water park",
+    "fitness",
+    "sauna and hamam",
+    "tennis and basketball courts",
+    "running tracks",
+    "EV charging"
+   ],
+   "lat": 36.904,
+   "lng": 30.837,
+   "permit_authority": "Aksu Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permit numbers and dates in KAP-filed appraisal",
+   "Independent progress figures each year (14.47% end-2024, 27.92% end-2025)",
+   "Land owned outright by listed Emlak Konut GYO",
+   "Contractor with several completed Emlak Konut projects",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://aplaceinthesun.com/property/details/ap3655934/altintas-park-yasam-antalya",
+   "https://parkyasamantalya.com/",
+   "https://www.emlakkonut.com.tr/en/park-yasam-antalya",
+   "https://www.kap.org.tr/Bildirim/1200705",
+   "https://kap.org.tr/en/Bildirim/1537812",
+   "https://kap.org.tr/tr/api/file/download/4028328c9b82727b019b98175f1d1cd5",
+   "https://kap.org.tr/tr/api/file/download/4028328d93c3b68c01943afe9a48656c",
+   "https://emlakkulisi.com/emlak-konut-gyo-park-yasam-antalyanin-degeri-7-milyar-tlye-ulasti/814877",
+   "https://www.emlakplatform.com.tr/tr/projects/park-yasam-antalya",
+   "https://www.arkanproje.com/projects/park-yasam-antalya",
+   "https://ozdence.com/tr/ilan/proje/park-yasam-antalya-1-1den-5-1e-satilik-daire-secenekleri",
+   "https://izka.com.tr/en/completed-projects/",
+   "https://izka.com.tr/projeler/park-yasam-mavisehir/",
+   "https://www.emlakjet.com/projeler/proje/park-yasam-bornova"
+  ]
+ },
+ {
+  "slug": "hacienda-ras-el-hekma",
+  "name": "Hacienda Ras El Hekma",
+  "developer": "Palm Hills Developments with Meraas Hills",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Ras El Hekma, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.palmhills-eg.com/haciendaraselhekma",
+  "docs_url": "https://www.palmhills-eg.com/haciendaraselhekma",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: 1,400 acres (feddans), 4.8 km beachfront, 86% green and water, villas, twin houses and apartments, fully finished, payments up to 10 years",
+   "EGX joint disclosure (Apr 2026, reported by Ahram Online): partnership with UAE-based Miran Hills on 5.65 million m2; investment size not disclosed",
+   "Palm Hills disclosure (Aug 2026): EGP 75bn of sales in the first two weeks; Miran Hills owns the land, Palm Hills develops",
+   "EnterpriseAM (Jul 2026): apartments from about EGP 11m, first-row villas up to EGP 450m, 5% down, up to 10 years, delivery late 2030"
+  ],
+  "note": "City-scale coastal project on 5.65 million m2 of land owned by UAE partner Miran Hills (named 'Meraas Hills' in one press guide) and developed by EGX-listed Palm Hills, which reported EGP 75bn of sales in two weeks after the mid-2026 launch. Prices from about EGP 11m with 5% down over up to 10 years and delivery in late 2030 are reported by business press; no permit, deposit protection, unit count or floor plans are published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 11000000,
+   "currency": "EGP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Palm Hills FY2025 results (EGX filing): 2,710 units handed over in 2025 and 2,000 in 2024; IR site states 20K delivered units",
+   "units": null,
+   "payment_plan": "5% down payment, instalments up to 10 years",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No ministerial decree, NUCA or Ras El Hekma authority approval number published",
+   "escrow": "No escrow or deposit protection stated; Egypt has no general escrow requirement for off-plan sales",
+   "progress": "Launched mid-2026; no construction progress published",
+   "plans": "Master plan image only; no unit floor plans on the developer page",
+   "record": "Palm Hills' FY2025 results release filed with the EGX reports 2,710 units handed over in 2025 (2,000 in 2024); IR site cites 20K delivered units",
+   "returns": "No guaranteed-return language on developer page or in press"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Partnership with UAE-based Miran Hills disclosed to EGX",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://english.ahram.org.eg/NewsContent/3/14/566320/Business/Markets--Companies/Palm-Hills,-Emirati-Miran-Hills-partner-on-luxury-.aspx"
+   },
+   {
+    "claim": "Partner is 'Meraas Hills' (EnterpriseAM)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://english.ahram.org.eg/NewsContent/3/14/566320/Business/Markets--Companies/Palm-Hills,-Emirati-Miran-Hills-partner-on-luxury-.aspx"
+   },
+   {
+    "claim": "Land owned by Miran Hills, Palm Hills develops",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://egyptian-gazette.com/business/luxury-coastal-project-achieves-record-egp-75-bn-in-sales-within-two-weeks/"
+   },
+   {
+    "claim": "Site of 5.65 million m2 with 4.8 km beachfront",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://english.ahram.org.eg/NewsContent/3/14/566320/Business/Markets--Companies/Palm-Hills,-Emirati-Miran-Hills-partner-on-luxury-.aspx"
+   },
+   {
+    "claim": "EGP 75bn of sales in first two weeks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.arabfinance.com/en/news/newdetails/palm-hills-delivers-higher-consolidated-revenues-in-h1-2026"
+   },
+   {
+    "claim": "Apartments from about EGP 11m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "5% down and up to 10 years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Delivery late 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Developer handed over 2,710 units in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://foudalens.com/disclosures/PHDC.CA/financial_statement/2026-03-18_335467_3.pdf"
+   },
+   {
+    "claim": "Project permit or decree number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmhills-eg.com/haciendaraselhekma"
+   },
+   {
+    "claim": "Units fully finished with ACs and kitchen cabinets",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmhills-eg.com/haciendaraselhekma"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Palm Hills Developments S.A.E. (EGX: PHDC) with Miran Hills Real Estate (UAE)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 20000,
+   "listed_or_audited": "Palm Hills is listed on the Egyptian Exchange (PHDC) with published audited results",
+   "construction_start": null,
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartments",
+    "chalets",
+    "townhouses",
+    "twin houses",
+    "villas"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 11000000,
+   "price_max": 450000000,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, up to 10 years",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "4.8 km beachfront",
+    "luxury hotels",
+    "sports club",
+    "beachfront dining",
+    "wellness centre and spa"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ras El Hekma development authority / Ministry of Housing (NUCA)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer is EGX-listed with audited results and a large delivered record",
+   "Land ownership arrangement disclosed to the exchange",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/",
+   "https://www.palmhills-eg.com/haciendaraselhekma",
+   "https://english.ahram.org.eg/NewsContent/3/14/566320/Business/Markets--Companies/Palm-Hills,-Emirati-Miran-Hills-partner-on-luxury-.aspx",
+   "https://egyptian-gazette.com/business/luxury-coastal-project-achieves-record-egp-75-bn-in-sales-within-two-weeks/",
+   "https://www.arabfinance.com/en/news/newdetails/palm-hills-delivers-higher-consolidated-revenues-in-h1-2026",
+   "https://invest-gate.me/ar/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1/palm-hills-developments-records-egp-75-billion-in-sales-at-hacienda-ras-el-hekma/",
+   "https://foudalens.com/disclosures/PHDC.CA/financial_statement/2026-03-18_335467_3.pdf",
+   "https://ir.palmhillsdevelopments.com/",
+   "https://www.palmhillsdevelopments.com/en-us/media/hillstoday"
+  ]
+ },
+ {
+  "slug": "ogami-nobu-ras-el-hekma",
+  "name": "Ogami (Nobu)",
+  "developer": "SODIC with Nobu Hospitality",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Ogami, Ras El Hekma (km 205 Alexandria-Matrouh Road), North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.sodic.com/our-developments/ogami",
+  "docs_url": "https://www.sodic.com/our-developments/ogami",
+  "permit_number": null,
+  "docs_listed": [
+   "SODIC page: Ogami phases with starting prices, size ranges and delivery Q3 2030 (Nobu Residences from EGP 38,631,000, 63-219 m2; Botanica Town from EGP 18,843,300)",
+   "older SODIC page (sodics.com): villas and townhomes, 5% down over 8 years, delivery Q3 2029",
+   "Businessmen EG (Aug 2026): Nobu Residences on 34 feddans with 25 villas, 150 residential units, 36 hotel-managed units and an 80-room Nobu hotel",
+   "EnterpriseAM (Jul 2026): branded villas 265-415 m2 from EGP 17m, 5% down, 7 years, delivery 2030; Ogami covers 440 feddans",
+   "Business Tech News (Sep 2026): first Nobu phase sold out in 24 hours"
+  ],
+  "note": "Nobu-branded villas, residences and hotel inside SODIC's 440-feddan Ogami community in Ras El Hekma; SODIC (EGX-listed, controlled by Aldar) publishes starting prices, sizes and a Q3 2030 delivery, after an earlier page showed Q3 2029 for Ogami villas. The first Nobu phase reportedly sold out within 24 hours; no permit, escrow, unit plans or construction progress are published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 17000000,
+   "currency": "EGP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "SODIC (EGX-listed since the 1990s) reports deliveries in its results, e.g. H1 2026 revenue growth 'driven by higher unit deliveries' with VYE in West Cairo the largest; no unit count found",
+   "units": 211,
+   "payment_plan": "5% down payment, instalments over 7 to 8 years (portal: 47.5% before and 47.5% after handover)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No ministerial decree or Ras El Hekma authority approval number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "No construction progress published; only the Nobu restaurant has operated seasonally since Aug 2025 (agent site)",
+   "plans": "Size ranges by phase only; no unit floor plans on the SODIC page",
+   "record": "SODIC is EGX-listed with audited results; Businessmen EG reports H1 2026 revenue rose on higher deliveries led by VYE (West Cairo)",
+   "returns": "No guaranteed rental return; hotel-managed units mentioned without yield figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "SODIC partnered with Nobu Hospitality for hotel and residences at Ogami",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessmen-eg.com/en/6082/sodic-nobu-launch-first-branded-residences-in-ras-el-hekma"
+   },
+   {
+    "claim": "Nobu Residences: 25 villas, 150 units, 36 hotel-managed units on 34 feddans",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessmen-eg.com/en/6082/sodic-nobu-launch-first-branded-residences-in-ras-el-hekma"
+   },
+   {
+    "claim": "Ogami covers 440 feddans with an 800 m beachfront",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Villas from EGP 17m, 5% down, 7 years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Delivery Q3 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sodic.com/our-developments/ogami"
+   },
+   {
+    "claim": "Delivery Q3 2029 (earlier SODIC page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sodics.com/our-developments/ogami/"
+   },
+   {
+    "claim": "First Nobu phase sold out within 24 hours",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businesstec.news/23645"
+   },
+   {
+    "claim": "SODIC is backed by Aldar",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aldar.com/en/news-and-media/aldar-backed-sodic-expands-in-egypt"
+   },
+   {
+    "claim": "Payment 47.5% before and 47.5% after handover (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://masharf.com/en/north-coast-sahel/ras-el-hekma/ogami-ras-el-hekma/nobu-residence"
+   },
+   {
+    "claim": "Project approval number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sodic.com/our-developments/ogami"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1996,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Sixth of October for Development and Investment (SODIC), EGX-listed, majority owned by an Aldar-led consortium",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "SODIC listed on the Egyptian Exchange; Aldar (ADX-listed) is the controlling shareholder",
+   "construction_start": null,
+   "handover_promised": "2030-Q3",
+   "original_handover": "2029-Q3",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "3-5BR branded villas",
+    "townhomes",
+    "water chalets"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": 415,
+   "price_min": 17000000,
+   "price_max": null,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, 7 to 8 years",
+   "foreign_ownership": null,
+   "rental_programme": "36 hotel-managed units operated with the Nobu hotel; no figures stated",
+   "service_charge": null,
+   "brand": "Nobu",
+   "amenities": [
+    "Nobu hotel (80 rooms)",
+    "Nobu restaurant",
+    "800 m beachfront",
+    "lagoons",
+    "retail and cafés"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ras El Hekma development authority / Ministry of Housing",
+   "brochure_url": null
+  },
+  "positives": [
+   "Starting prices, size ranges and delivery quarter published per phase by the developer",
+   "Developer is EGX-listed and backed by Aldar",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/",
+   "https://www.sodic.com/our-developments/ogami",
+   "https://sodics.com/our-developments/ogami/",
+   "https://www.businessmen-eg.com/en/6082/sodic-nobu-launch-first-branded-residences-in-ras-el-hekma",
+   "https://www.businesstec.news/23645",
+   "https://masharf.com/en/north-coast-sahel/ras-el-hekma/ogami-ras-el-hekma/nobu-residence",
+   "https://sodicdevelopmentsegypt.com/en/ogami/",
+   "https://www.aldar.com/en/news-and-media/aldar-backed-sodic-expands-in-egypt"
+  ]
+ },
+ {
+  "slug": "katameya-coast-phase-2",
+  "name": "Katameya Coast Phase 2",
+  "developer": "Starlight Developments",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Ras El Hekma (km 180 Alexandria-Matrouh Road), North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.starlightdevelopments.com/developments/katameya-coast/",
+  "docs_url": "https://www.starlightdevelopments.com/developments/katameya-coast/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: phase 1 'See the Sea' on 100 acres over 7 platforms with 715 m beachfront; 'Crystal Edition' with a 45,000 m2 crystal lagoon on a 2 km stretch",
+   "developer press (2021-2022): 770 units in total; phase 1 434 units sold out, phase 2 (105 acres, 336 units) opened for booking in 2021; contractors Redcon and Gama (EGP 1.5bn)",
+   "Invest-Gate (May 2021): approvals under Republican Decree 261/2020 and NUCA decision 147 of 9 Sep 2020; phase 1 to be delivered within 36 months",
+   "developer LinkedIn: monthly construction updates (e.g. September 2025)",
+   "EnterpriseAM (Jul 2026): second phase launched, from about EGP 11m, 5% + 5% after 3 months, up to 7.5 years, delivery 2030"
+  ],
+  "note": "Starlight's 205-feddan Katameya Coast first opened phase 2 bookings in 2021 and relaunched it in summer 2026 from about EGP 11m with delivery promised for 2030. Phase 1 (434 units) was to be delivered within 36 months of the May 2021 restart and a portal showed September 2025, but the developer was still posting construction updates in September 2025; no permit number, escrow or unit plans are published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 11000000,
+   "currency": "EGP",
+   "title": "freehold (portal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Starlight announced delivery of Katameya Creeks in January 2024 and names Katameya Heights and URBN K among its projects; Katameya Coast phase 1 delivery not confirmed",
+   "units": 336,
+   "payment_plan": "5% down, 5% after three months, balance over up to 7.5 years",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer said in 2021 it had all approvals under Republican Decree 261/2020 and NUCA decision 147 (9 Sep 2020); these are area-wide decisions, not a project permit number",
+   "escrow": "No escrow or deposit protection stated; a portal says guarantee cheques are held by the developer until handover",
+   "progress": "Developer posts dated construction updates (LinkedIn, September 2025); contractor CEG shows site photos of phase 2 buildings under construction; no percentage",
+   "plans": "No unit floor plans published by the developer; portals list sizes from 175 to 200 m2",
+   "record": "Developer announcements list Katameya Creeks delivery (January 2024); no independent confirmation found",
+   "returns": "No guaranteed rental language from the developer; one portal claims 'guaranteed delivery within 4 years'"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "205-feddan project at km 180 with 715 m beachfront and 40,000 m2 lagoon",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Second phase from about EGP 11m, 5% + 5%, up to 7.5 years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Delivery of phase 2 in 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/"
+   },
+   {
+    "claim": "Phase 2 first opened for booking in 2021 (336 units)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.almasdar.com/114511"
+   },
+   {
+    "claim": "All official approvals obtained (Decree 261/2020, NUCA decision 147)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://invest-gate.me/news/katameya-coast-resumes-construction-and-launches-second-phase/"
+   },
+   {
+    "claim": "Phase 1 delivered within 36 months of May 2021",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/starlight-developments_starlightdevelopments-designdrivendeveloper-activity-7375521293892411392-8pV-"
+   },
+   {
+    "claim": "Phase 1 delivery September 2025 (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/ar/new-projects/starlight-developments/katameya-coast-the-north-coast-see-the-sea-phase"
+   },
+   {
+    "claim": "Phase 1 construction contract EGP 1.5bn with Gama",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.almasdar.com/114511"
+   },
+   {
+    "claim": "Developer delivered Katameya Creeks in January 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.starlightdevelopments.com/media-center/announcements/"
+   },
+   {
+    "claim": "Delivery 2027 with 35% down and 3 years (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://compoundgate.com/%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A/%D9%82%D8%B7%D8%A7%D9%85%D9%8A%D8%A9-%D9%83%D9%88%D8%B3%D8%AA"
+   },
+   {
+    "claim": "Phase 2 buildings under construction (contractor CEG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cegegypt.com/katameya-coast-north-coast/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Starlight Developments for Real Estate and Touristic Developments",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2021-05",
+   "handover_promised": "2030",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "chalets",
+    "villas",
+    "twin houses",
+    "luxury cabins",
+    "branded serviced apartments"
+   ],
+   "size_min_m2": 175,
+   "size_max_m2": null,
+   "price_min": 11000000,
+   "price_max": null,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, 5% after 3 months, up to 7.5 years",
+   "foreign_ownership": null,
+   "rental_programme": "Branded serviced apartments mentioned by portals; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "715 m beachfront",
+    "crystal lagoon",
+    "hotel",
+    "beach club",
+    "retail district (Coastal Village)",
+    "clubhouse"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "New Urban Communities Authority (NUCA), Ministry of Housing",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated construction updates and named contractors",
+   "Developer states the area-wide approval decisions it relies on",
+   "No guaranteed-return language from the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://enterpriseam.com/egypt/2026/07/15/your-guide-to-the-hottest-north-coast-launches-this-summer/",
+   "https://www.starlightdevelopments.com/developments/katameya-coast/",
+   "https://www.starlightdevelopments.com/media-center/announcements/",
+   "https://www.starlightdevelopments.com/media-center/in-the-press/starlight-developments-acquires-redcon-construction-for-katameya-coast-project/",
+   "https://www.starlightdevelopments.com/media-center/in-the-press/starlight-developments-assigns-construction-work-of-phase-i-of-katameya-coast-to-gama-construction/",
+   "https://invest-gate.me/news/katameya-coast-resumes-construction-and-launches-second-phase/",
+   "https://www.almasdar.com/114511",
+   "https://www.linkedin.com/posts/starlight-developments_starlightdevelopments-designdrivendeveloper-activity-7375521293892411392-8pV-",
+   "https://cegegypt.com/katameya-coast-north-coast/",
+   "https://www.propertyfinder.eg/ar/new-projects/starlight-developments/katameya-coast-the-north-coast-see-the-sea-phase",
+   "https://compoundgate.com/%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A/%D9%82%D8%B7%D8%A7%D9%85%D9%8A%D8%A9-%D9%83%D9%88%D8%B3%D8%AA",
+   "https://gprproperty.com/project/katameya-coast-north-coast/",
+   "https://platformrealestate.co/en/projects/katameya-coast/"
+  ]
+ },
+ {
+  "slug": "grand-lane-new-cairo",
+  "name": "Grand Lane",
+  "developer": "Housing and Development Properties (HDP, Housing and Development Bank group)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Sixth Settlement, New Cairo",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.zawya.com/en/projects/construction/hdp-launches-grand-lane-residential-project-in-new-cairo-with-1.05bln-investments-367316",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "launch press (Jan 2026, Daily News Egypt via Zawya; Al Borsa): 98 feddans, EGP 50bn investment, 13% built footprint, apartments 68-195 m2, townhouses 169-203 m2, villas 235-251 m2, 5% down and up to 14 years",
+   "agent pages: apartments from about EGP 3.5m, townhouses from EGP 12.35m, villas from EGP 23.1m; plans 15%/4 years or 5%+5% over 8-10 years; delivery within 4 years",
+   "portal Nawy data (via Aqarzy, REONE): delivery 1 Feb 2030, developer prices from EGP 3.71m"
+  ],
+  "note": "98-feddan New Cairo compound launched in January 2026 by HDP, the wholly owned real estate arm of state-owned Housing and Development Bank, with a stated EGP 50bn investment. HDP was set up around 2023 and said in Aug 2026 that its first handovers (Terrace, View West) would only start that year; Grand Lane delivery is quoted by portals for February 2030 and no permit, escrow, plans or progress are published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 3500000,
+   "currency": "EGP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "5% down + 5% after 3 months over 8 or 10 years, or 15% down over 4 years (agents); launch press mentions up to 14 years",
+   "price_per_m2": 53846
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No NUCA licence or building permit number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "No construction start, contractor or progress reported for Grand Lane",
+   "plans": "Agents offer unit layouts on request by WhatsApp; nothing published",
+   "record": "HDP said in March 2025 it was two years old with 8 projects and in Aug 2026 that first handovers (Terrace in Sheikh Zayed, View West in New Zayed) would start in 2026; no completed project yet",
+   "returns": "No guaranteed-return language found"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "98 feddans with EGP 50bn investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/projects/construction/hdp-launches-grand-lane-residential-project-in-new-cairo-with-1.05bln-investments-367316"
+   },
+   {
+    "claim": "Only 13% of land built on",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alborsaanews.com/2026/01/20/1944097"
+   },
+   {
+    "claim": "5% down and instalments up to 14 years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alborsaanews.com/2026/01/20/1944097"
+   },
+   {
+    "claim": "Instalments up to 10 years (agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.enjazproperty.com/en/project/grand-lane-new-cairo/"
+   },
+   {
+    "claim": "Delivery within 4 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.enjazproperty.com/en/grand-lane-hdp/"
+   },
+   {
+    "claim": "Delivery 1 February 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aqarzy.com/en/compounds/grand-lane"
+   },
+   {
+    "claim": "Apartments from about EGP 3.5m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.enjazproperty.com/en/grand-lane-hdp/"
+   },
+   {
+    "claim": "HDP is wholly owned by Housing and Development Bank",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.osoulmisrmagazine.com/403432"
+   },
+   {
+    "claim": "HDP has delivered completed projects",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.osoulmisrmagazine.com/445970"
+   },
+   {
+    "claim": "Building permit published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/projects/construction/hdp-launches-grand-lane-residential-project-in-new-cairo-with-1.05bln-investments-367316"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Housing and Development Properties (HDP, شركة التعمير والإسكان العقارية), wholly owned by Housing and Development Bank",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Housing and Development Bank is EGX-listed; HDP itself not found as listed",
+   "construction_start": null,
+   "handover_promised": "2030-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "townhouse",
+    "standalone villa"
+   ],
+   "size_min_m2": 65,
+   "size_max_m2": 251,
+   "price_min": 3500000,
+   "price_max": 36413120,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% + 5% over 8-10 years, or 15% over 4 years; up to 14 years at launch",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": "8% maintenance deposit (agent)",
+   "brand": null,
+   "amenities": [
+    "1.7 km Green Spine",
+    "5,200 m2 water features",
+    "social club",
+    "swimming pools",
+    "commercial zone",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "New Urban Communities Authority (NUCA)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer owned by a state-owned, EGX-listed bank",
+   "Unit size ranges and payment terms reported in business press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://enterpriseam.com/egypt/2026/01/21/hdp-launches-egp-50-bn-grand-lane-residential-development-in-new-cairo/",
+   "https://www.zawya.com/en/projects/construction/hdp-launches-grand-lane-residential-project-in-new-cairo-with-1.05bln-investments-367316",
+   "https://alborsaanews.com/2026/01/20/1944097",
+   "https://www.enjazproperty.com/en/grand-lane-hdp/",
+   "https://www.enjazproperty.com/en/project/grand-lane-new-cairo/",
+   "https://aqarzy.com/en/compounds/grand-lane",
+   "https://www.source-eg.com/projects/grande-lane",
+   "https://ureeg.com/en/compound/grand-lane",
+   "https://www.reone-ai.com/units/RE-16550",
+   "https://www.osoulmisrmagazine.com/403432",
+   "https://www.osoulmisrmagazine.com/445970",
+   "https://www.alborsaanews.com/2026/08/24/1988395"
+  ]
  }
 ]
