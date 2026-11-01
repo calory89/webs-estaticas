@@ -160,7 +160,7 @@
    "theme": "Data products for business",
    "title": "Portal verification badge",
    "desc": "Listing portals show a live Kolaboro badge for each project.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 24,
@@ -433,7 +433,7 @@
    "theme": "Watching from space and the ground",
    "title": "Stalled-site alerts",
    "desc": "Alert when a site shows no change for months.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 63,
@@ -678,7 +678,7 @@
    "theme": "Platform and scale",
    "title": "Market feeds",
    "desc": "A feed per market of new projects and changes.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 98,
