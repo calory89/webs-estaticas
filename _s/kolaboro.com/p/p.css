@@ -88,3 +88,4 @@
 .pf-hist h3{margin:0 0 4px;font-size:1.05rem}.pf-hist ol{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
 .pf-hist li{display:flex;gap:12px;font-size:.92rem;align-items:baseline}.pf-hist time{font-family:ui-monospace,monospace;font-size:.8rem;color:var(--muted);flex:none}
 .pf-hist s{color:var(--muted)}
+.pf-fp code{display:block;font-size:.78rem;word-break:break-all;background:var(--paper);padding:8px 10px;border-radius:8px;margin:8px 0}
