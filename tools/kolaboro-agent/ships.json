@@ -2,6 +2,21 @@
  {
   "d": "2026-11-01",
   "k": "feature",
+  "t": "Public roadmap: 44 of 100 features shipped, every one tracked"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Developer response portal: Developers answer findings with documents, free, before anything is published"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Right of reply on every case: The developer's answer shown next to every finding"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
   "t": "Public roadmap: 42 of 100 features shipped, every one tracked"
  },
  {
