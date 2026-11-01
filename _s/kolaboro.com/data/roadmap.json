@@ -90,7 +90,7 @@
    "theme": "Money and escrow",
    "title": "Payment plan risk score",
    "desc": "Every payment plan scored for money at risk before works exist.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 14,
@@ -132,7 +132,7 @@
    "theme": "Money and escrow",
    "title": "Total cost of ownership",
    "desc": "Price plus fees, taxes, service charges and financing, per market.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 20,
@@ -580,7 +580,7 @@
    "theme": "Buyer experience",
    "title": "Market match",
    "desc": "Tell us budget and goals; see markets ranked by transparency.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 84,
