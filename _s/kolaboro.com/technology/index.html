@@ -199,7 +199,7 @@ document.getElementById('pcm').onchange = function(){ document.getElementById('p
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=1b9ab6b071" defer></script>
+<script src="/k/site.js?v=887bc68298" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script><script>
 (function(){
   function $(i){ return document.getElementById(i); }
@@ -311,7 +311,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
 (function(){
   var box = document.getElementById('r21cnt'); if (!box) return;
   function set(k, v){ var e = box.querySelector('[data-k="' + k + '"]'); if (e && v != null) e.textContent = v; }
-  fetch('/data/world-claims.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(w){ if (!w || !w.markets) return; var n = 0; Object.keys(w.markets).forEach(function(k){ n += w.markets[k].projects || 0; }); set('projects', n); set('markets', Object.keys(w.markets).length); }).catch(function(){});
+  fetch('/data/world-claims.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ return r.ok ? r.json() : null; }).then(function(w){ if (!w || !w.markets) return; var n = 0; Object.keys(w.markets).forEach(function(k){ n += w.markets[k].projects || 0; }); set('projects', n); set('markets', Object.keys(w.markets).length); }).catch(function(){});
   fetch('/data/satellite.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(s){ if (s && s.sites) set('sat', s.sites.length); }).catch(function(){});
   fetch('/api/kb/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (!d) return; set('stamps', d.stamps); var r7 = d.runs_7d || {}, t = 0; ['analyze','copilot','progress'].forEach(function(k){ t += r7[k] || 0; }); if (t > 0) set('runs', t); else { var rc = box.querySelector('[data-k="runs"]'); if (rc) rc.parentNode.remove(); box.style.gridTemplateColumns = 'repeat(4,1fr)'; }
     if (d.last_block) { var s = box.querySelector('[data-k="stamps"]').nextElementSibling; s.textContent = 'evidence fingerprints timestamped · latest in Bitcoin block #' + d.last_block.toLocaleString('en'); } }).catch(function(){});

@@ -23,7 +23,7 @@
 
   // live counts: every [data-db] number follows the published database
   if (document.querySelector('[data-db]')) {
-    fetch('/data/bali-cases.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
       if (!d || !d.cases) return; var db = d.db || {}; var v = { projects: d.cases.length, markets: d.markets, countries: d.countries, claims_total: db.claims_total, contradicted: (db.claims || {}).contradicted, all_six_public: db.all_six_public, with_flags: db.with_flags, sources: db.sources, data_points: db.data_points };
       document.querySelectorAll('[data-db]').forEach(function (e) { var x = v[e.getAttribute('data-db')]; if (x) e.textContent = x.toLocaleString('en'); });
     }).catch(function () {});

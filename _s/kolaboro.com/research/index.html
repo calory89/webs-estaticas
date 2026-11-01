@@ -128,7 +128,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=1b9ab6b071" defer></script>
+<script src="/k/site.js?v=887bc68298" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script><script>
 (function(){
   function el(id){ return document.getElementById(id); }
@@ -180,7 +180,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
 </script>
 <script>
 (function(){
-  fetch('/data/world-claims.json', { cache:'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(w){
+  fetch('/data/world-claims.json?t=' + Math.floor(Date.now() / 6e5), { cache:'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(w){
     if (!w || !w.markets) return;
     var rows = Object.keys(w.markets).map(function(k){ var m = w.markets[k]; return { k:k, n:m.projects, p:m.permit_numbers_published || 0, pl:m.plans_published || 0, g:m.guaranteed_language || 0, med:(m.price_usd || {}).median }; }).sort(function(a,b){ return b.n - a.n; });
     var tot = rows.reduce(function(a,r){ return a + r.n; }, 0), per = rows.reduce(function(a,r){ return a + r.p; }, 0), gu = rows.reduce(function(a,r){ return a + r.g; }, 0);

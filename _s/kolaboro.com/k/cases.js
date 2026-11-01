@@ -90,7 +90,7 @@
   }
   start();
   // the research agent republishes the data every week: use the newest copy if it has the scorecard
-  fetch('/data/bali-cases.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+  fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
     if (!d || !d.cases || !d.cases.length || !d.cases[0].checks || d.cases.length < C.length) return; D = d; C = d.cases; stat(); render();
   }).catch(function(){});
 })();
