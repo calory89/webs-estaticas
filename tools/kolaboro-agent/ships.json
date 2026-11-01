@@ -2,6 +2,26 @@
  {
   "d": "2026-11-01",
   "k": "feature",
+  "t": "Public roadmap: 36 of 100 features shipped, every one tracked"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Market match: Tell us budget and goals; see markets ranked by transparency"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Total cost of ownership: Price plus fees, taxes, service charges and financing, per market"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Payment plan risk score: Every payment plan scored for money at risk before works exist"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
   "t": "Public roadmap: 33 of 100 features shipped, every one tracked"
  },
  {
@@ -73,16 +93,6 @@
   "d": "2026-11-01",
   "k": "feature",
   "t": "Portal verification badge: Listing portals show a live Kolaboro badge for each project"
- },
- {
-  "d": "2026-11-01",
-  "k": "building",
-  "t": "Building now: Payment plan risk score"
- },
- {
-  "d": "2026-11-01",
-  "k": "building",
-  "t": "Building now: Total cost of ownership"
  },
  {
   "d": "2026-11-01",
