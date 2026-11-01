@@ -147,6 +147,7 @@
       '</div></section>' +
 
       '<section class="pf-sec"><div class="wrap"><h2>Developer claims tested</h2>' +
+      '<p class="sub">Each claim was checked against an official register, an independent source (regulator, court, filing, press) or only the developer\'s own material. The source links stay private while the project is anonymous; they go to the developer with the invitation to reply and to buyers with a case, and are published with the verdict.</p>' +
       (ct ? '<p class="sub">We tested ' + ct + ' claim' + (ct === 1 ? '' : 's') + ' from the developer\'s own marketing against registers, courts and press.</p>' +
         '<div class="pf-claims" role="img" aria-label="' + cl.verified + ' verified, ' + cl.unverified + ' unverified, ' + cl.contradicted + ' contradicted"><i style="width:' + pct(cl.verified) + '%;background:#0B7A55"></i><i style="width:' + pct(cl.unverified) + '%;background:#B9B4A8"></i><i style="width:' + pct(cl.contradicted) + '%;background:#C9461A"></i></div>' +
         '<div class="pf-cl"><span style="--c:#0B7A55">Verified <b>' + cl.verified + '</b></span><span style="--c:#B9B4A8">Unverified <b>' + cl.unverified + '</b></span><span style="--c:#C9461A">Contradicted <b>' + cl.contradicted + '</b></span></div>'

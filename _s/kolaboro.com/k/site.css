@@ -1075,3 +1075,4 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .rp-chk{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}.rp-chk input{width:20px;height:20px;margin-top:2px}.rp-msg{font-weight:600;margin:6px 0 0}
 .rp-steps{padding-left:20px;display:grid;gap:6px}
 a.si{color:inherit;text-decoration:none}a.si:hover{background:rgba(255,255,255,.06)}a.si:focus-visible{outline:2px solid #FF8A55;outline-offset:-2px}
+.kcf{color:var(--ok);font-weight:800}
