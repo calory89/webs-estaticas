@@ -1,6 +1,11 @@
 User-agent: *
+Disallow: /admin
+Disallow: /portal
+Disallow: /agents/me
+Disallow: /login
+Disallow: /thanks
+Disallow: /watchlist/
 Allow: /
-
+Disallow: /old/
 Sitemap: https://kolaboro.com/sitemap.xml
-# sync
-# sync 2
+Sitemap: https://kolaboro.com/sitemap-data.xml

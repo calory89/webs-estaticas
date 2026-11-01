@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buyer portal demo | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=c20f3234be">
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+<style>.r23-loading body>*{visibility:hidden}.r23-loading body:after{content:"Opening the demo account…";visibility:visible;position:fixed;inset:0;display:grid;place-items:center;font:600 1.1rem system-ui,sans-serif;color:#17212B;background:#F6F6F3}</style></head><body><div class="ap-auth"><div class="ap-auth-l"><a class="ap-brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+<div style="position:relative;z-index:1"><h1>Your case file, live.</h1><ul style="padding-left:1.1em">
+<li><b>Live case file.</b> Every step your local agent takes, with dates.</li>
+<li><b>Direct chat</b> with the Kolaboro team about your project.</li>
+<li class="ap-auth-hide"><b>Your money.</b> We tell you whether the evidence supports paying the next instalment.</li>
+<li class="ap-auth-hide"><b>Your report</b> to download the day it's ready. Refund in full if we can't take your case.</li></ul></div>
+<p class="ap-auth-hide" style="color:#7E8D9A;font-size:.85rem;position:relative;z-index:1">Kolaboro is operated by Equinox Investment Group LLC. Your data is used only for your case.</p></div>
+<div class="ap-auth-r"><div class="ap-auth-box">
+  <h2>Log in</h2><p class="ap-muted" style="margin:0">See your case, your agent's updates and your report.</p>
+  <form id="lf" novalidate>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required><button type="button">Show</button></span></label>
+    <button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Log in</button>
+    <p class="ap-err" id="le" role="alert"></p>
+    <p class="ap-small ap-muted">Forgot your password? <a href="mailto:support@kolaboro.com?subject=Kolaboro%20password%20reset">Email us</a> and we reset it the same day.<br>No account yet? <a href="/check#analyze">Start with a free desk review</a>.</p>
+  </form>
+</div></div></div>
+<script>
+var KB = (function(){
+  var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/', K = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  function rpc(fn, body){ return fetch(SB + fn, { method:'POST', headers:{ apikey:K, Authorization:'Bearer '+K, 'Content-Type':'application/json' }, body: JSON.stringify(body) }).then(function(r){ return r.json(); }); }
+  function get(k){ try { return sessionStorage.getItem(k) || localStorage.getItem(k); } catch(e){ return null; } }
+  function set(k, v, session){ try { (session ? sessionStorage : localStorage).setItem(k, v); } catch(e){} }
+  function del(k){ try { localStorage.removeItem(k); sessionStorage.removeItem(k); } catch(e){} }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function toast(t){ var d = document.createElement('div'); d.className = 'ap-toast'; d.textContent = t; document.body.appendChild(d); setTimeout(function(){ d.classList.add('on'); }, 10); setTimeout(function(){ d.classList.remove('on'); setTimeout(function(){ d.remove(); }, 400); }, 2600); }
+  function pwToggle(root){ (root || document).querySelectorAll('.ap-pw button').forEach(function(b){ b.onclick = function(){ var i = b.previousElementSibling; i.type = i.type === 'password' ? 'text' : 'password'; b.textContent = i.type === 'password' ? 'Show' : 'Hide'; }; }); }
+  function meter(inp, bar){ inp.addEventListener('input', function(){ var v = inp.value, s = 0; if (v.length >= 8) s++; if (v.length >= 12) s++; if (/[A-Z]/.test(v) && /[a-z]/.test(v)) s++; if (/\d/.test(v)) s++; if (/[^\w]/.test(v)) s++; bar.style.width = (s * 20) + '%'; bar.style.background = s < 2 ? '#B42318' : s < 4 ? '#B7791F' : '#0B7A55'; }); }
+  return { rpc:rpc, get:get, set:set, del:del, esc:esc, toast:toast, pwToggle:pwToggle, meter:meter };
+})();
+
+(function(){
+  var f = document.getElementById('lf'), e = document.getElementById('le'); KB.pwToggle(f);
+  
+  f.addEventListener('submit', function(ev){
+    ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
+    KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){
+      b.disabled = false;
+      if (d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
+      e.textContent = d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : 'Wrong email or password.';
+    }).catch(function(){ b.disabled = false; e.textContent = 'Network error. Try again.'; });
+  });
+})();
+</script><script>
+(function(){
+  document.documentElement.classList.add('r23-loading');
+  KB.rpc('kolaboro_login', { p_email: 'demo@kolaboro.com', p_password: 'kolaboro-demo' }).then(function(d){
+    if (d && d.token) { KB.set('kb-token-as', d.token, true); location.replace('/portal?demo=1'); }
+    else { document.documentElement.classList.remove('r23-loading'); }
+  }).catch(function(){ document.documentElement.classList.remove('r23-loading'); });
+})();
+</script>
+</body></html>

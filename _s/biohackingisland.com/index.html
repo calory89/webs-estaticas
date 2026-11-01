@@ -1,37 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biohacking Island™ - Luxury Human Optimization Residence</title>
-    <meta name="description" content="The first human optimization residence with lifetime memberships. One deposit, one week every year. State-of-the-art biohacking technology for peak performers." />
-    <meta name="keywords" content="biohacking, human optimization, longevity, performance, wellness residence, luxury wellness, lifetime membership" />
-    <meta name="author" content="Biohacking Island" />
-
-    <meta property="og:title" content="Biohacking Island™ - Luxury Human Optimization Residence" />
-    <meta property="og:description" content="The first human optimization residence with lifetime memberships. Advanced biohacking technology for peak performers." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Biohacking Island™" />
-    <meta name="twitter:description" content="The first human optimization residence with lifetime memberships" />
-    
-    
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://biohackingisland.com" />
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co https://buy.stripe.com;" />
-    <script type="module" crossorigin src="/assets/index-DN0E6XXW.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DT5Nh57v.css">
-  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png"></head>
-
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biohacking Island · Very soon</title>
+<meta name="description" content="Biohacking Island. Very soon. Leave your email and be the first to know." />
+<link rel="canonical" href="https://biohackingisland.com/" />
+<link rel="icon" href="/favicon.png" type="image/png" />
+<meta property="og:title" content="Biohacking Island" />
+<meta property="og:description" content="Very soon." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://biohackingisland.com/" />
+<meta name="theme-color" content="#0b0d0c" />
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    background: #0b0d0c radial-gradient(ellipse 80% 60% at 50% 110%, rgba(45,140,120,.28), transparent 70%);
+    color: #f2efe8;
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px 16px; min-height: 100vh; text-align: center;
+  }
+  main { width: 100%; max-width: 440px; }
+  .brand { font-size: 13px; letter-spacing: .32em; text-transform: uppercase; opacity: .7; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(48px, 13vw, 84px); line-height: 1; letter-spacing: -.02em; margin: 22px 0 36px; }
+  form { display: flex; gap: 8px; flex-wrap: wrap; }
+  input {
+    flex: 1 1 220px; min-width: 0; height: 52px; padding: 0 18px; border-radius: 999px;
+    border: 1px solid rgba(242,239,232,.25); background: rgba(255,255,255,.04);
+    color: inherit; font: inherit; font-size: 16px; outline: none;
+  }
+  input::placeholder { color: rgba(242,239,232,.45); }
+  input:focus { border-color: #6fd1b8; }
+  button {
+    flex: 0 0 auto; height: 52px; padding: 0 26px; border-radius: 999px; border: 0;
+    background: #f2efe8; color: #0b0d0c; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer;
+  }
+  button:hover { background: #fff; }
+  button:focus-visible { outline: 2px solid #6fd1b8; outline-offset: 3px; }
+  button[disabled] { opacity: .6; cursor: default; }
+  .msg { min-height: 22px; margin-top: 16px; font-size: 15px; opacity: .85; }
+  .msg.err { color: #ffb4a6; opacity: 1; }
+  @media (max-width: 420px) { button { flex: 1 1 100%; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Biohacking Island</div>
+  <h1>Very soon</h1>
+  <form id="f" novalidate>
+    <input id="e" type="email" name="email" placeholder="Your email" autocomplete="email" inputmode="email" aria-label="Your email" required maxlength="200" />
+    <button id="b" type="submit">Notify me</button>
+  </form>
+  <p class="msg" id="m" role="status" aria-live="polite"></p>
+</main>
+<script>
+(function () {
+  var AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var f = document.getElementById('f'), e = document.getElementById('e'), b = document.getElementById('b'), m = document.getElementById('m');
+  var cc = '';
+  fetch('/api/geo').then(function (r) { return r.json(); }).then(function (g) { cc = (g && g.country) || ''; }).catch(function () {});
+  function say(t, err) { m.textContent = t; m.className = err ? 'msg err' : 'msg'; }
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = e.value.trim().toLowerCase();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(v)) { say('Please enter a valid email.', true); e.focus(); return; }
+    b.disabled = true; say('');
+    fetch('/__sb/biohacking/rest/v1/interested_leads', {
+      method: 'POST',
+      headers: { apikey: AK, Authorization: 'Bearer ' + AK, 'content-type': 'application/json', Prefer: 'return=minimal' },
+      body: JSON.stringify({ email: v, full_name: '', country_code: cc, phone: '' })
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      f.style.display = 'none';
+      say('Thank you. We will write to you when we open.');
+    }).catch(function () {
+      b.disabled = false;
+      say('Something went wrong. Please try again.', true);
+    });
+  });
+})();
+</script>
+</body>
 </html>

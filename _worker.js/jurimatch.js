@@ -91,7 +91,8 @@ async function sbCount(path, ctx) {
 async function listFirms(list, ctx) {
   const base = 'lawyers?select=' + FIRM_COLS + '&status=eq.active&quarantine_reason=is.null&domain_resolves=is.true&is_winwin=is.true&accepting_cases=not.is.false&listing_tier=in.(partner,verified_listing)'
     + (list.types ? '&case_types=ov.' + encodeURIComponent(pgArr(list.types)) : '')
-    + (list.country ? '&countries_norm=cs.' + encodeURIComponent(pgArr([list.country])) : '');
+    + (list.country ? '&countries_norm=cs.' + encodeURIComponent(pgArr([list.country])) : '')
+    + (list.category ? '&category=eq.' + encodeURIComponent(list.category) : '');
   const countBase = base.replace('select=' + FIRM_COLS, 'select=id');
   const [v, ix, nv, ni] = await Promise.all([
     sb(base + '&source=eq.' + CURATED + '&order=firm_name&limit=20', ctx),
@@ -114,6 +115,41 @@ function breadcrumbLd(crumbs) {
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: ORIGIN + path })) };
 }
 
+// 1-nov (indexing): a firm profile links to the listing pages that exist for its case types and
+// countries, so crawlers that do not run JavaScript find the related pages (only existing pages).
+function firmLinks(f, m) {
+  const pages = (m && m.pages) || {};
+  const out = [];
+  const add = (href, text) => { if (pages[href] && !out.some((x) => x.href === href) && out.length < 10) out.push({ href, text }); };
+  const types = (f.case_types || []).map((x) => String(x).replace(/_/g, '-')).slice(0, 6);
+  const countries = (f.countries_served || []).map((c) => slugify(c)).slice(0, 3);
+  for (const t of types) for (const c of countries) add('/lawyers/' + t + '/' + c, (pages['/lawyers/' + t + '/' + c] || {}).h1 || '');
+  for (const c of countries) add('/countries/' + c, (pages['/countries/' + c] || {}).h1 || '');
+  for (const t of types) add('/lawyers/' + t, (pages['/lawyers/' + t] || {}).h1 || '');
+  add('/firms', 'All firms and funders');
+  return out.filter((x) => x.text);
+}
+
+// 1-nov (indexing): article text for crawlers that do not run JavaScript (blog posts are plain
+// text with light Markdown). Escaped; headings, lists and paragraphs only.
+function articleHtml(text) {
+  const src = String(text || '').slice(0, 20000);
+  const inline = (t) => esc(clean(t)).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\[([^\]]+)\]\((?:https?:\/\/jurimatch\.com)?(\/[^)\s]*)\)/g, '<a href="$2">$1</a>').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1');
+  let html = '', list = false;
+  for (const raw of src.split(/\n+/)) {
+    const line = raw.trim();
+    if (!line) continue;
+    const h = line.match(/^(#{1,4})\s+(.*)$/);
+    const li = line.match(/^(?:[-*]|\d+\.)\s+(.*)$/);
+    if (li) { if (!list) { html += '<ul>'; list = true; } html += '<li>' + inline(li[1]) + '</li>'; continue; }
+    if (list) { html += '</ul>'; list = false; }
+    if (h) html += (h[1].length <= 2 ? '<h2>' : '<h3>') + inline(h[2]) + (h[1].length <= 2 ? '</h2>' : '</h3>');
+    else html += '<p>' + inline(line) + '</p>';
+  }
+  if (list) html += '</ul>';
+  return html;
+}
+
 async function dynamicPage(path, m, ctx) {
   let mm;
   if ((mm = path.match(/^\/firms\/([a-z0-9-]+)$/))) {
@@ -124,18 +160,23 @@ async function dynamicPage(path, m, ctx) {
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouync]/g);
     // Polish, Czech, Turkish... letters with accents on consonants (ś, ź, ż, ł, ř, ş, ğ).
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouyncszlrtdgk]/g);
+    // The wide pattern can match more than 200 names: fall back to the hand-verified firms with the same initial.
+    if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&source=eq.' + CURATED + '&firm_name=ilike.' + encodeURIComponent(words[0][0] + '*') + '&limit=1000', ctx);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
     const hand = isHand(f);
+    // Item 056: per-firm link preview image, only where the build made one.
+    const ogImg = hand && Array.isArray(m && m.ogFirms) && m.ogFirms.includes(slug) ? ORIGIN + '/og/firms/' + slug + '.png' : null;
     const where = (f.countries_served || []).slice(0, 3).join(', ');
     // Only descriptions our team checked are shown; indexed firms get a factual note.
     const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.')) : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
     return {
-      t: f.firm_name + ': No-Win-No-Fee Firm Profile | JuriMatch',
+      t: (() => { const t = f.firm_name + ': No-Win-No-Fee Firm Profile'; return (t + ' | JuriMatch').length <= 62 ? t + ' | JuriMatch' : t.length <= 62 ? t : f.firm_name + ' | JuriMatch'; })(),
       d: d.length > 300 ? d.slice(0, 297) + '...' : d,
       h1: f.firm_name,
       lead: d,
+      ...(ogImg ? { image: ogImg } : {}),
       facts: [
         ['Status', hand ? 'Hand-verified by JuriMatch' + (f.last_verified_at ? ' on ' + String(f.last_verified_at).slice(0, 10) : '') : 'Indexed from public research, not verified by our team'],
         ['Fee terms read on', hand && f.verification_source_url ? f.verification_source_url : ''],
@@ -143,19 +184,20 @@ async function dynamicPage(path, m, ctx) {
         ['Fee model', hand && f.typical_model ? feeLabel(f.typical_model) : ''],
         ['Case types', (f.case_types || []).slice(0, 6).map((x) => { const t = titleCaseLabel(x).toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); }).join(', ').replace(/\bchf\b/gi, 'CHF')],
       ].filter((x) => x[1]),
+      links: firmLinks(f, m),
       crumbs: [['Home', '/'], ['Firms', '/firms'], [f.firm_name, path]],
       extraLd: [{ '@context': 'https://schema.org', '@type': 'LegalService', name: f.firm_name, url: ORIGIN + path, ...(f.website ? { sameAs: [f.website] } : {}), ...(where ? { areaServed: (f.countries_served || []).slice(0, 5) } : {}), description: d.slice(0, 300) }],
     };
   }
   if ((mm = path.match(/^\/blog\/([a-z0-9-]+)$/))) {
-    const rows = await sb('blog_posts?select=slug,title,excerpt,published_at,created_at,image_url,status&slug=eq.' + encodeURIComponent(mm[1]) + '&limit=1', ctx);
+    const rows = await sb('blog_posts?select=slug,title,excerpt,content,published_at,created_at,image_url,status&slug=eq.' + encodeURIComponent(mm[1]) + '&limit=1', ctx);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const p = rows[0];
     if (!p) return { t: 'Article not found | JuriMatch', d: 'This article is not available.', noindex: true, status: 404 };
     return {
       noindex: (m.blogNoindex || []).includes(p.slug),
       t: clean(p.title) + ' | JuriMatch', d: clean(p.excerpt || p.title), h1: clean(p.title), lead: clean(p.excerpt), article: true,
-      image: p.image_url || null, published: p.published_at || p.created_at,
+      image: p.image_url || null, published: p.published_at || p.created_at, text: p.content || '',
       crumbs: [['Home', '/'], ['Blog', '/blog'], [clean(p.title), path]],
     };
   }
@@ -165,7 +207,7 @@ async function dynamicPage(path, m, ctx) {
 // /sitemap.xml built from the manifest (indexable pages only) plus hand-verified firm profiles
 // and blog posts from the database. Cached 1 h at the edge.
 // One URL per screen: old or duplicate paths answer with a permanent redirect.
-const REDIRECTS = { '/login': '/auth', '/signin': '/auth', '/sign-in': '/auth', '/firm-listing': '/for-lawyers' };
+const REDIRECTS = { '/login': '/auth', '/signin': '/auth', '/sign-in': '/auth', '/firm-listing': '/for-lawyers', '/fees': '/how-it-works' };
 
 export async function route(req, u, env, ctx) {
   const to = REDIRECTS[normPath(u.pathname)];
@@ -176,7 +218,8 @@ export async function route(req, u, env, ctx) {
   const day = (m.generatedAt || new Date().toISOString()).slice(0, 10);
   const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path]) => [ORIGIN + path, day]);
   const [firms, posts] = await Promise.all([
-    sb('lawyers?select=firm_name,last_verified_at&status=eq.active&verified=is.true&source=eq.' + CURATED + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000', ctx),
+    // The API returns at most 1,000 rows per request: read the hand-verified firms in pages.
+    Promise.all([0, 1000, 2000, 3000, 4000].map((o) => sb('lawyers?select=firm_name,last_verified_at&status=eq.active&verified=is.true&source=eq.' + CURATED + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000&offset=' + o, ctx))).then((pages) => pages.flatMap((x) => x || [])),
     sb('blog_posts?select=slug,published_at,created_at&order=published_at.desc&limit=2000', ctx),
   ]);
   const seen = new Set();
@@ -213,6 +256,34 @@ function aliasTarget(path, m) {
   }
   return null;
 }
+
+// Chrome of the crawlable summary and the Open Graph locale, per page language (manifest "lang").
+const OG_LOCALE = { en: 'en_US', es: 'es_ES', de: 'de_DE', 'pt-BR': 'pt_BR', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' };
+const CHROME = {
+  en: { faq: 'Frequently asked questions', lawyers: 'Lawyers', pricing: 'Pricing', about: 'About' },
+  es: { faq: 'Preguntas frecuentes', lawyers: 'Abogados', pricing: 'Precios', about: 'Quiénes somos' },
+  de: { faq: 'Häufige Fragen', lawyers: 'Anwälte', pricing: 'Preise', about: 'Über uns' },
+  'pt-BR': { faq: 'Perguntas frequentes', lawyers: 'Advogados', pricing: 'Preços', about: 'Quem somos' },
+};
+
+// Item 290: what the site loads. Supabase goes through the same-origin /__sb proxy; GA4, Clarity and
+// Cloudflare Web Analytics/Zaraz are the only third-party scripts; fonts are self-hosted (fontsource);
+// flags come from flagcdn.com (images: any https). Stripe Checkout is a full-page redirect.
+const CSP_REPORT_ONLY = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.clarity.ms https://static.cloudflareinsights.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https:",
+  "font-src 'self' data:",
+  "connect-src 'self' wss://jurimatch.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://cloudflareinsights.com",
+  "frame-src 'self' https://checkout.stripe.com https://js.stripe.com",
+  "worker-src 'self' blob:",
+  "manifest-src 'self'",
+  "media-src 'self' blob: https:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self' https://checkout.stripe.com",
+].join('; ');
 
 export async function render(req, res, u, env, ctx) {
   // One URL per page: "/pricing/" redirects to "/pricing" (canonical tags have no trailing slash).
@@ -269,6 +340,7 @@ export async function render(req, res, u, env, ctx) {
   if (page.crumbs) body += '<nav aria-label="Breadcrumb"><ol style="list-style:none;padding:0;display:flex;gap:8px;flex-wrap:wrap;font-size:14px">' + page.crumbs.map(([n, p]) => '<li><a href="' + esc(p) + '">' + esc(n) + '</a></li>').join('') + '</ol></nav>';
   body += '<h1>' + esc(page.h1 || page.t) + '</h1>';
   if (page.lead) body += '<p>' + esc(page.lead) + '</p>';
+  if (page.text) body += '<article>' + articleHtml(page.text) + '</article>';
   if (page.facts) body += '<dl>' + page.facts.map(([k, v]) => '<dt>' + esc(k) + '</dt><dd>' + esc(v) + '</dd>').join('') + '</dl>';
   if (page.list) {
     try {
@@ -282,24 +354,48 @@ export async function render(req, res, u, env, ctx) {
       if (verified.length) lds.push({ '@context': 'https://schema.org', '@type': 'ItemList', name: page.h1, itemListElement: verified.map((f, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + '/firms/' + slugify(f.firm_name), name: f.firm_name })) });
     } catch (e) { /* summary without the list */ }
   }
-  if (page.faq && page.faq.length) body += '<h2>' + (lang === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions') + '</h2>' + page.faq.map((f) => '<h3>' + esc(f.q) + '</h3><p>' + esc(f.a) + '</p>').join('');
+  const chrome = CHROME[lang] || CHROME.en;
+  if (page.faq && page.faq.length) body += '<h2>' + chrome.faq + '</h2>' + page.faq.map((f) => '<h3>' + esc(f.q) + '</h3><p>' + esc(f.a) + '</p>').join('');
   if (page.links && page.links.length) body += '<ul>' + page.links.map((l) => '<li><a href="' + esc(l.href) + '">' + esc(l.text) + '</a></li>').join('') + '</ul>';
-  body += '<p><a href="/">JuriMatch</a> | <a href="/lawyers">' + (lang === 'es' ? 'Abogados' : 'Lawyers') + '</a> | <a href="/pricing">' + (lang === 'es' ? 'Precios' : 'Pricing') + '</a> | <a href="/about">' + (lang === 'es' ? 'Quiénes somos' : 'About') + '</a></p></main>';
+  body += '<p><a href="/">JuriMatch</a> | <a href="' + (lang === 'es' ? '/es/abogados-a-exito' : '/lawyers') + '">' + chrome.lawyers + '</a> | <a href="/pricing">' + chrome.pricing + '</a> | <a href="/about">' + chrome.about + '</a></p></main>';
 
   const headExtra = lds.map(ld).join('')
     + (page.alt || []).map((a) => '<link rel="alternate" hreflang="' + esc(a.hreflang) + '" href="' + esc(a.href) + '" />').join('')
     + (page.article && page.published ? '<meta property="article:published_time" content="' + esc(page.published) + '" />' : '');
 
+  const html = await res.text();
   const h = new Headers(res.headers);
   h.delete('content-length'); h.delete('etag');
+  // Item 154: preload the entry bundle and stylesheet already referenced in the HTML (lets the browser, and
+  // Cloudflare Early Hints when enabled, start fetching them before the HTML is parsed). Hashed files only.
+  const pre = [];
+  const jsM = html.match(/src="(\/assets\/index-[A-Za-z0-9_-]+\.js)"/);
+  const cssM = html.match(/href="(\/assets\/index-[A-Za-z0-9_-]+\.css)"/);
+  if (jsM) pre.push('<' + jsM[1] + '>; rel=modulepreload; crossorigin');
+  if (cssM) pre.push('<' + cssM[1] + '>; rel=preload; as=style; crossorigin');
+  if (pre.length && !h.has('link')) h.set('link', pre.join(', '));
   if (page.noindex) h.set('x-robots-tag', 'noindex'); else h.delete('x-robots-tag');
   h.set('content-language', lang);
   // Security headers for every HTML page (no camera/mic/location use on the site; no framing by other sites).
   h.set('strict-transport-security', 'max-age=31536000');
-  h.set('x-frame-options', 'SAMEORIGIN');
+  // /embed/* is the search widget other sites embed in an iframe (item 141): framing allowed there only.
+  if (u.pathname.startsWith('/embed/')) h.delete('x-frame-options'); else h.set('x-frame-options', 'SAMEORIGIN');
   h.set('permissions-policy', 'camera=(), microphone=(), geolocation=(), usb=(), payment=(self "https://checkout.stripe.com")');
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
-  const set = (attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
+  // Items 289/290 (1-nov): referrer and MIME sniffing set here too (not only by the zone), and a
+  // Content-Security-Policy in report-only mode (browsers log violations in the console, nothing is blocked).
+  h.set('referrer-policy', 'strict-origin-when-cross-origin');
+  h.set('x-content-type-options', 'nosniff');
+  h.set('content-security-policy-report-only', CSP_REPORT_ONLY);
+  // 1 Nov (consent): until the visitor accepts analytics in the banner (cookie jm_consent=all), the
+  // browser may run only the site's own scripts. That keeps out Google Analytics, Microsoft Clarity
+  // and Zaraz (injected at the edge for every Equinox domain), so "analytics only with your OK" holds.
+  // Same mechanism as equinoxinvestmentgroup.com. Inline scripts stay allowed (route preload, stubs).
+  if (!/(?:^|;\s*)jm_consent=all(?:;|$)/.test(req.headers.get('cookie') || '')) {
+    h.set('content-security-policy', "script-src 'unsafe-inline' " + ORIGIN + '/assets/ ' + ORIGIN + '/sw.js ' + ORIGIN + '/cdn-cgi/scripts/ ' + ORIGIN + "/cdn-cgi/challenge-platform/ https://static.cloudflareinsights.com https://js.stripe.com; worker-src 'self' blob:");
+  } else h.delete('content-security-policy');
+  h.append('vary', 'Cookie');
+  const set =(attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
 
   return new HTMLRewriter()
     .on('html', set('lang', lang))
@@ -313,7 +409,7 @@ export async function render(req, res, u, env, ctx) {
     .on('meta[property="og:type"]', set('content', ogType))
     .on('meta[property="og:image"]', set('content', image))
     .on('meta[property="og:image:alt"]', set('content', page.t))
-    .on('meta[property="og:locale"]', set('content', lang === 'es' ? 'es_ES' : 'en_US'))
+    .on('meta[property="og:locale"]', set('content', OG_LOCALE[lang] || 'en_US'))
     .on('meta[name="twitter:title"]', set('content', page.t))
     .on('meta[name="twitter:description"]', set('content', page.d))
     .on('meta[name="twitter:image"]', set('content', image))
@@ -321,5 +417,5 @@ export async function render(req, res, u, env, ctx) {
     .on('head', { element(e) { e.append(headExtra, { html: true }); } })
     .on('div#root', { element(e) { e.setInnerContent(body, { html: true }); } })
     .on('noscript', { element(e) { e.remove(); } })
-    .transform(new Response(res.body, { status, headers: h }));
+    .transform(new Response(html, { status, headers: h }));
 }

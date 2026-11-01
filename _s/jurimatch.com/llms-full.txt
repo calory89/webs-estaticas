@@ -1,0 +1,2359 @@
+# JuriMatch: full text of guides and tools
+
+> General information about no-win-no-fee claims, contingency fees, litigation funding, deadlines and costs, by country.
+> Not legal advice. JuriMatch is not a law firm. Each section links to the page it comes from; cite that URL.
+> Generated 2026-11-01 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
+
+## Guides
+
+### Making a claim in Argentina
+URL: https://jurimatch.com/guides/argentina
+
+How legal claims work in Argentina: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### After-the-event (ATE) insurance in the UK, explained
+URL: https://jurimatch.com/guides/ate-insurance
+
+What after-the-event (ATE) insurance covers in England and Wales, how premiums work, when you need it, the conditions insurers impose and how it fits with…
+
+### Making a claim in Australia
+URL: https://jurimatch.com/guides/australia
+
+How legal claims work in Australia: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Austria
+URL: https://jurimatch.com/guides/austria
+
+How legal claims work in Austria: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Belgium
+URL: https://jurimatch.com/guides/belgium
+
+How legal claims work in Belgium: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Brazil
+URL: https://jurimatch.com/guides/brazil
+
+How legal claims work in Brazil: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Canada
+URL: https://jurimatch.com/guides/canada
+
+How legal claims work in Canada: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Chile
+URL: https://jurimatch.com/guides/chile
+
+How legal claims work in Chile: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### How to choose a litigation funder
+URL: https://jurimatch.com/guides/choosing-a-litigation-funder
+
+How third-party litigation funding works, what funders look for, how they are paid, the terms to negotiate and the questions to ask before you sign a…
+
+### US class actions vs EU representative actions
+URL: https://jurimatch.com/guides/class-actions-vs-eu-representative-actions
+
+How US class actions under Rule 23 compare with representative actions under EU Directive 2020/1828: who can sue, opt-in or opt-out, fees, funding, costs…
+
+### Making a claim in Colombia
+URL: https://jurimatch.com/guides/colombia
+
+How legal claims work in Colombia: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Crypto recovery scams: how to spot and avoid them
+URL: https://jurimatch.com/guides/crypto-recovery-scams
+
+After a crypto or investment fraud, victims are often targeted a second time by fake recovery services. These are the warning signs and the safer steps.
+
+### Making a claim in Cyprus
+URL: https://jurimatch.com/guides/cyprus
+
+How legal claims work in Cyprus: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Denmark
+URL: https://jurimatch.com/guides/denmark
+
+How legal claims work in Denmark: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Finland
+URL: https://jurimatch.com/guides/finland
+
+How legal claims work in Finland: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Questions to ask a no-win-no-fee lawyer on the first call
+URL: https://jurimatch.com/guides/first-call-questions
+
+A printable checklist for the first call with a no-win-no-fee lawyer: case strength, deadlines, fees if you win or lose, insurance and who handles your case.
+
+### Making a claim in France
+URL: https://jurimatch.com/guides/france
+
+How legal claims work in France: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Germany
+URL: https://jurimatch.com/guides/germany
+
+How legal claims work in Germany: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Greece
+URL: https://jurimatch.com/guides/greece
+
+How legal claims work in Greece: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Hong Kong
+URL: https://jurimatch.com/guides/hong-kong
+
+How legal claims work in Hong Kong: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in India
+URL: https://jurimatch.com/guides/india
+
+How legal claims work in India: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Ireland
+URL: https://jurimatch.com/guides/ireland
+
+How legal claims work in Ireland: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Israel
+URL: https://jurimatch.com/guides/israel
+
+How legal claims work in Israel: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Italy
+URL: https://jurimatch.com/guides/italy
+
+How legal claims work in Italy: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Luxembourg
+URL: https://jurimatch.com/guides/luxembourg
+
+How legal claims work in Luxembourg: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Malaysia
+URL: https://jurimatch.com/guides/malaysia
+
+How legal claims work in Malaysia: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Malta
+URL: https://jurimatch.com/guides/malta
+
+How legal claims work in Malta: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Mexico
+URL: https://jurimatch.com/guides/mexico
+
+How legal claims work in Mexico: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in the Netherlands
+URL: https://jurimatch.com/guides/netherlands
+
+How legal claims work in the Netherlands: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in New Zealand
+URL: https://jurimatch.com/guides/new-zealand
+
+How legal claims work in New Zealand: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Norway
+URL: https://jurimatch.com/guides/norway
+
+How legal claims work in Norway: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Panama
+URL: https://jurimatch.com/guides/panama
+
+How legal claims work in Panama: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Poland
+URL: https://jurimatch.com/guides/poland
+
+How legal claims work in Poland: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Portugal
+URL: https://jurimatch.com/guides/portugal
+
+How legal claims work in Portugal: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### How to read a no-win-no-fee or contingency fee agreement
+URL: https://jurimatch.com/guides/reading-a-no-win-no-fee-agreement
+
+A clause-by-clause guide to contingency and no-win-no-fee agreements: the percentage, what counts as a win, expenses, adverse costs, ending the agreement…
+
+### Making a claim in Saudi Arabia
+URL: https://jurimatch.com/guides/saudi-arabia
+
+How legal claims work in Saudi Arabia: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Singapore
+URL: https://jurimatch.com/guides/singapore
+
+How legal claims work in Singapore: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Suing without a lawyer: small claims by country
+URL: https://jurimatch.com/guides/small-claims
+
+When you can go to court without a lawyer: the small claims track in England and Wales, Spain's juicio verbal and monitorio, the German Amtsgericht…
+
+### Making a claim in South Africa
+URL: https://jurimatch.com/guides/south-africa
+
+How legal claims work in South Africa: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Spain
+URL: https://jurimatch.com/guides/spain
+
+How legal claims work in Spain: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Sweden
+URL: https://jurimatch.com/guides/sweden
+
+How legal claims work in Sweden: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Switzerland
+URL: https://jurimatch.com/guides/switzerland
+
+How legal claims work in Switzerland: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in Turkey
+URL: https://jurimatch.com/guides/turkey
+
+How legal claims work in Turkey: court system overview, whether success fees and contingency fees are allowed, litigation funding, and indicative…
+
+### Making a claim in the United Arab Emirates
+URL: https://jurimatch.com/guides/united-arab-emirates
+
+How legal claims work in the United Arab Emirates: court system overview, whether success fees and contingency fees are allowed, litigation funding, and…
+
+### Making a claim in the United Kingdom
+URL: https://jurimatch.com/guides/united-kingdom
+
+How legal claims work in the United Kingdom: court system overview, whether success fees and contingency fees are allowed, litigation funding, and…
+
+### Making a claim in the United States
+URL: https://jurimatch.com/guides/united-states
+
+How legal claims work in the United States: court system overview, whether success fees and contingency fees are allowed, litigation funding, and…
+
+### What happens if I lose a no-win-no-fee claim?
+URL: https://jurimatch.com/guides/what-if-i-lose
+
+Losing a no-win-no-fee claim usually means no fee for your own lawyer, but you may still face the other side's costs, expenses and insurance.
+
+## Claim guides
+
+### Claims against BBVA: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/bbva
+
+BBVA is one of Spain's largest banks. It was among the banks in the case in which the Spanish Supreme Court first ruled on floor clauses in May 2013, and like other Spanish banks it has faced consumer claims over mortgage terms and credit products. This guide explains the usual claims and routes in Spain.
+
+Q: Do I have to complain to BBVA before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### When a business partner takes the money: your options
+URL: https://jurimatch.com/claims/business-partner-fraud
+
+Partnership and shareholder disputes often start with exclusion from information and end with diverted revenue, dilution or asset stripping. Acting early protects both evidence and value.
+
+Q: Can a shareholder dispute be funded?
+A: Yes, where the business or stake is valuable enough. Funders and success-fee firms look at what can realistically be recovered or bought out.
+
+### Claims against CaixaBank: mortgages, cards and former Bankia
+URL: https://jurimatch.com/claims/caixabank
+
+CaixaBank is one of Spain's largest banks and absorbed Bankia in 2021, so it is now the counterparty for many claims that began against Bankia. Like other Spanish banks, it has faced consumer claims over mortgage terms and credit products. This guide explains the usual claims and routes in Spain.
+
+Q: Do I have to complain to CaixaBank before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Crypto scam recovery: first steps and how lawyers trace funds
+URL: https://jurimatch.com/claims/crypto-scam
+
+Crypto transfers are public on the blockchain, which means funds can sometimes be followed to an exchange where an account holder can be identified. Speed matters: once funds are moved through mixers or off-ramped, options narrow.
+
+Q: Can stolen crypto be recovered?
+A: Sometimes, if the funds can be traced to an exchange or custodian that can be compelled to freeze and disclose account information. If funds were moved through mixers or to wallets nobody controls identifiably, recovery is much harder.
+
+Q: Is there a no-win-no-fee option for crypto fraud?
+A: Some firms work on success terms when tracing shows funds at an identifiable exchange. Initial tracing reports often carry a cost, so ask upfront what is included.
+
+Q: How do I spot a recovery scam?
+A: Unsolicited contact, upfront fees, claims of special access to blockchains or regulators, and pressure to act fast. Legitimate law firms are regulated and can be checked with the local bar or law society.
+
+### Claims against easyJet: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/easyjet
+
+easyJet operates through a UK company and separate European companies, so a flight can fall under the EU rules (EU261) or the UK rules (UK261) depending on the route and the operating carrier. Passenger claims are mostly about long delays, cancellations, refunds and baggage.
+
+Q: Do I need a lawyer to claim compensation from easyJet?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does easyJet have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Iberia: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/iberia
+
+Iberia is a Spanish airline, so its flights are generally covered by EU Regulation 261/2004, including long-haul flights departing from Spain. Passenger claims are mostly about long delays, cancellations, missed connections, refunds and baggage.
+
+Q: Do I need a lawyer to claim compensation from Iberia?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Iberia have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Insurance claim denied? How to challenge it
+URL: https://jurimatch.com/claims/insurance-claim-denied
+
+Insurers reject claims for many reasons, exclusions, late notification, alleged non-disclosure or disputes about the value of the loss. Many rejections can be challenged.
+
+Q: Do lawyers take insurance disputes on a no-win-no-fee basis?
+A: Often, because the insurer can pay. The main question is whether the policy wording supports your claim.
+
+### Lost money to investment fraud? What to do first
+URL: https://jurimatch.com/claims/investment-fraud
+
+Investment fraud covers Ponzi schemes, fake funds, unauthorised trading, mis-sold products and advisers who misrepresented risk. The steps you take in the first weeks often decide whether money can still be traced and recovered.
+
+Q: Can I get my money back from an investment scam?
+A: Sometimes. It depends on whether the money can be traced, whether a solvent party (a bank, a regulated firm or an identifiable individual with assets) is responsible, and how quickly you act. A lawyer can tell you which of these applies to you.
+
+Q: Do lawyers take investment fraud cases on a no-win-no-fee basis?
+A: Many do, where recovery looks realistic, for example when a regulated entity or insurer is involved, or many investors were affected by the same scheme. Where it is less certain, firms may offer a reduced fee plus a success fee, or refer you to a litigation funder.
+
+Q: Should I join a group claim?
+A: Group or collective actions can share costs and make funding easier. Check who runs the claim, how fees are taken from any recovery, and whether you can leave.
+
+### Claims against Lufthansa: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/lufthansa
+
+Lufthansa is a German airline, so its flights are generally covered by EU Regulation 261/2004, including long-haul flights departing from the EU. Passenger claims are mostly about long delays, cancellations, missed connections, refunds and baggage. In Germany, independent conciliation bodies handle passenger disputes free of charge for passengers.
+
+Q: Do I need a lawyer to claim compensation from Lufthansa?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Lufthansa have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Mercedes-Benz: diesel emissions
+URL: https://jurimatch.com/claims/mercedes-benz
+
+Owners of some Mercedes-Benz diesel cars have brought claims arguing that emissions controls worked differently on the road than in tests, for example through temperature-dependent settings. German authorities ordered recalls of some models, and the manufacturer has disputed that its vehicles contained unlawful defeat devices. This guide explains how these claims have generally worked.
+
+Q: Is my Mercedes affected?
+A: It depends on the engine, model and emissions class. Recall letters and official vehicle checkers are a starting point; a lawyer or claims group can check your specific car.
+
+Q: How much could I get?
+A: There is no fixed amount. In Germany, courts following the 2023 CJEU ruling have generally awarded a percentage of the purchase price for negligence claims; elsewhere it depends on national law and the claim.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, often backed by litigation funding or legal expenses insurance. Ask how the fee is calculated and what happens if the claim fails.
+
+### Bad advice from a professional? Claiming for negligence
+URL: https://jurimatch.com/claims/professional-negligence
+
+Professionals owe a duty to act with reasonable skill and care. When they fall short and it causes a financial loss, you may have a claim, usually against their professional indemnity insurance.
+
+Q: Who pays if I win a professional negligence claim?
+A: Usually the professional's indemnity insurer, which is why these claims are often funded on success terms.
+
+### Property and off-plan fraud: how to protect your claim
+URL: https://jurimatch.com/claims/property-fraud
+
+Property fraud ranges from fake listings and diverted deposits to off-plan developments that never complete and title problems discovered after purchase. Your contracts and payment records are the foundation of any claim.
+
+Q: Can I recover a deposit from a developer that went bust?
+A: Possibly, if your deposit was protected by a bank guarantee, escrow or insurance, or if directors can be held personally liable. Otherwise you may be an unsecured creditor in the insolvency.
+
+Q: Do I need a lawyer in the country where the property is?
+A: Usually yes, because property claims are generally governed by local law and heard by local courts.
+
+### Romance and pig-butchering scams: what victims can do
+URL: https://jurimatch.com/claims/romance-scam
+
+Romance scams build trust over weeks or months, often before introducing an “investment” platform. Victims are not at fault, these are organised operations. There are practical steps that can still help.
+
+Q: Will my bank refund a romance scam payment?
+A: It depends on your country, how you paid and the bank's rules. Some countries have reimbursement schemes for authorised push-payment fraud. Report it to the bank immediately.
+
+### Claims against Ryanair: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/ryanair
+
+Ryanair is an Irish airline, so its flights from or to the EU are generally covered by EU Regulation 261/2004, and flights from the UK by UK261. Most passenger claims against it are about long delays, cancellations, refunds and baggage. This guide explains how those claims usually work.
+
+Q: Do I need a lawyer to claim compensation from Ryanair?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Ryanair have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Santander: mortgages, cards and Banco Popular
+URL: https://jurimatch.com/claims/santander
+
+Banco Santander is one of Spain's largest banks and acquired Banco Popular in 2017. Like other Spanish banks, it has faced consumer claims over mortgage terms and credit products, and former Banco Popular investors brought claims after Popular's 2017 resolution. This guide explains the usual claims and routes in Spain.
+
+Q: Do I have to complain to Santander before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Client won't pay? A guide to recovering unpaid invoices
+URL: https://jurimatch.com/claims/unpaid-invoices
+
+Most unpaid invoices are resolved without court, but a structured approach, and acting before the debtor's position worsens, improves your chances.
+
+Q: Will a lawyer recover a debt on a no-win-no-fee basis?
+A: Many debt-recovery firms work for a percentage of what they collect, particularly for undisputed business debts.
+
+Q: Can I claim interest and costs?
+A: Many countries allow statutory interest and some recovery costs on late business payments. A lawyer can confirm what applies to your invoice.
+
+### Claims against Volkswagen: the diesel emissions scandal
+URL: https://jurimatch.com/claims/volkswagen
+
+In September 2015 Volkswagen admitted that software in some of its diesel engines, mainly the EA189 engine used across the VW, Audi, SEAT and Skoda brands, made the cars perform differently in emissions tests than on the road. Owners in many countries have since brought individual and group claims. This guide explains how those claims have generally worked.
+
+Q: Can I still claim against Volkswagen for dieselgate?
+A: It depends on the country, the engine, when you bought the car and whether you joined a group action. In some countries ordinary deadlines for EA189 cars have passed; in others, or for other engines, claims may still be possible. Get a deadline check before anything else.
+
+Q: Do I need to still own the car?
+A: Not necessarily. Courts in some countries have allowed claims by buyers who have since sold the car, with the sale price taken into account.
+
+Q: Do lawyers take diesel claims on a no-win-no-fee basis?
+A: Many do, often with litigation funding or legal expenses insurance, because claims are numerous and similar. Read how the fee is calculated and what happens if you withdraw.
+
+### Claims against Vueling: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/vueling
+
+Vueling is a Spanish airline, so its flights are generally covered by EU Regulation 261/2004. Passenger claims against it are mostly about long delays, cancellations, missed connections, refunds and baggage. In Spain, the aviation safety agency AESA handles passenger complaints.
+
+Q: Do I need a lawyer to claim compensation from Vueling?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Vueling have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+## Fee comparisons
+
+### Conditional fee agreement (CFA) vs After-the-event (ATE) insurance
+URL: https://jurimatch.com/fees/cfa-vs-ate-insurance
+
+They cover different risks and are often used together. A CFA means you pay your own solicitor no fee if you lose. ATE insurance pays the other side's costs, and often your own expenses, if you lose. A CFA alone leaves you exposed to the other side's costs.
+
+Q: Do I need ATE insurance if I have a CFA?
+A: Often yes, outside personal injury. A CFA only deals with your own solicitor's fees. If you lose, a court can still order you to pay the other side's costs, and ATE insurance is the usual protection.
+
+Q: Who pays the ATE premium?
+A: Usually you, out of your damages if you win. Many policies defer the premium and make it payable only if the claim succeeds, so nothing is due if you lose. Check the policy.
+
+Q: Can my solicitor arrange ATE insurance?
+A: Yes, solicitors usually arrange it with an insurer they work with. Ask what it covers, the limit of cover, the premium and when it is payable.
+
+### Conditional fee agreement (CFA) vs Damages-based agreement (DBA)
+URL: https://jurimatch.com/fees/cfa-vs-dba
+
+Both mean you pay your own solicitor nothing if you lose. Under a CFA you pay normal fees plus a capped success fee if you win; under a DBA the solicitor takes a capped percentage of your damages instead. Neither covers the other side's costs, which is what ATE insurance is for.
+
+Q: Is a CFA or a DBA cheaper?
+A: It depends on the size of the damages and how much of the costs you recover. With high damages and low costs a CFA is often cheaper; with low recoverable costs a DBA can work out better. Ask the solicitor to model both on your figures.
+
+Q: Do I pay anything if I lose under a CFA or DBA?
+A: Not to your own solicitor, if the agreement says so. You may still owe disbursements such as court fees and experts, and the other side's costs unless you are protected (for example by QOCS in most personal injury claims) or insured with ATE insurance.
+
+Q: Can a solicitor change from a CFA to a DBA mid-case?
+A: Only by a new written agreement that you sign. Read how any work already done is treated before agreeing.
+
+### Contingency fee vs Fixed fee
+URL: https://jurimatch.com/fees/contingency-fee-vs-fixed-fee
+
+A fixed fee is a set price agreed in advance and payable whatever the result. A contingency fee is a share of what you recover and nothing if you lose. Fixed fees suit simple, predictable work; contingency fees suit claims where you want the lawyer to share the risk.
+
+Q: Can I combine a fixed fee and a success fee?
+A: Often, yes. Many lawyers in Spain, France, Italy and Brazil charge a smaller fixed fee plus a success fee. In some countries this mix is the only form allowed.
+
+Q: What does a fixed fee usually not include?
+A: Court fees, expert reports and the other side's costs if you lose. Ask exactly which steps the fixed fee covers and what happens if the case goes further, such as to an appeal.
+
+Q: Is a contingency fee always more expensive if I win?
+A: Not always. It depends on the size of the award and how much work the case needs. Ask the lawyer to show you both options on your figures.
+
+### Contingency fee vs Litigation funding
+URL: https://jurimatch.com/fees/contingency-fee-vs-litigation-funding
+
+With a contingency fee your own lawyer works without being paid unless you recover. With litigation funding a separate company pays the legal costs, and often the risk of the other side's costs, in return for a share of the recovery. Funders usually look for larger claims.
+
+Q: Can I use a contingency fee and litigation funding together?
+A: Sometimes. A funder may pay part of the costs while the law firm takes a reduced fee plus a success element. The total taken from your recovery should be set out in writing before you sign.
+
+Q: Do I have to repay a litigation funder if I lose?
+A: Normally not: most funding is non-recourse, so the funder loses its investment. Check the agreement for exceptions such as misconduct or abandoning the case.
+
+Q: Which leaves me more money if I win?
+A: It depends on the percentages, the length of the case and the multiple the funder charges. Ask for a worked example at several outcomes and timelines.
+
+### No win, no fee vs Hourly fees
+URL: https://jurimatch.com/fees/no-win-no-fee-vs-hourly-fees
+
+Under no win, no fee you pay your own lawyer nothing if you lose, but give up a share of a win. Paying by the hour costs money whatever the outcome, but you keep the whole award. No win, no fee suits claimants who cannot or do not want to fund the risk.
+
+Q: Is no win no fee really free if I lose?
+A: You pay your own lawyer nothing if the agreement says so, but you may still owe expenses such as court fees and experts, and in most countries outside the US the other side's costs. Ask who covers these before signing.
+
+Q: Why would a lawyer turn down my case on no win no fee?
+A: Because they are taking the risk. Lawyers look at the chances of winning, the amount at stake, whether the other side can pay, and the time it will take.
+
+Q: Can I switch from hourly fees to no win no fee?
+A: Sometimes, with a new written agreement. A new firm may also take over a case on success terms after reviewing it.
+
+### JuriMatch, claims management companies and lawyers: the differences
+URL: https://jurimatch.com/vs/claims-management-companies
+
+A claims management company handles a claim for you, usually for a share of the compensation, but is not a law firm. A lawyer can advise you and go to court. JuriMatch is neither: it is a directory and search engine that helps you find lawyers and funders, and does not take a share of your compensation.
+
+Q: Is JuriMatch a claims management company?
+A: No. JuriMatch does not handle claims and does not take a share of compensation. It is a directory and search engine that helps you find no-win-no-fee lawyers and litigation funders, plus free guides and tools.
+
+Q: Can I make a claim without a claims management company?
+A: Often yes. Flight compensation, many consumer complaints and complaints about financial services can be made directly to the company and then to an ombudsman or alternative dispute resolution body, free of charge.
+
+Q: Who regulates claims management companies?
+A: In Great Britain, the Financial Conduct Authority has regulated claims management activity since 1 April 2019. Rules differ in other countries, and in many there is no specific regulator for claims companies.
+
+### No-win-no-fee lawyer vs legal aid
+URL: https://jurimatch.com/vs/no-win-no-fee-vs-legal-aid
+
+Legal aid is paid by the state for people with limited means, and usually also requires a case with reasonable merit. A no-win-no-fee lawyer is paid from what you recover, whatever your income. If you might qualify for legal aid, check first: it can also cover court fees.
+
+Q: Who qualifies for justicia gratuita in Spain?
+A: Ley 1/1996 sets income limits linked to the IPREM index: broadly up to twice the IPREM for individuals, more for family units. Other factors, such as assets and the type of case, also count. The bar association's legal aid service can confirm whether you qualify.
+
+Q: Does legal aid in England and Wales cover money claims?
+A: Mostly not. Since the Legal Aid, Sentencing and Punishment of Offenders Act 2012, most civil money claims, including most personal injury, debt and employment claims, are outside the scope of legal aid. Conditional fee agreements and damages-based agreements are the usual alternatives.
+
+Q: If I get legal aid and lose, do I pay the other side's costs?
+A: It depends on the country. In Germany, Prozesskostenhilfe does not protect you from paying the winner's costs. In other systems the protection is wider. Ask the legal aid service or your assigned lawyer before the case starts.
+
+### No-win-no-fee lawyer vs legal expenses insurance
+URL: https://jurimatch.com/vs/no-win-no-fee-vs-legal-expenses-insurance
+
+Legal expenses insurance is a policy you buy before a dispute starts; if the dispute is covered, the insurer pays legal costs up to a limit. A no-win-no-fee lawyer is paid from what you win. Check for existing cover first: many home, car and bank policies include it.
+
+Q: Do I already have legal expenses insurance?
+A: Possibly. It is often included as an add-on to home, car or bank account policies, especially in Germany, Austria and several other European countries. Check your policy documents or ask your insurer before paying a lawyer.
+
+Q: Can my legal expenses insurer force me to use its lawyer?
+A: In the EU, Article 201 of Directive 2009/138/EC gives you a free choice of lawyer for any inquiry or proceedings, and whenever there is a conflict of interest; the Court of Justice has read this right broadly. Before that point, the insurer may handle the claim itself or use a panel firm.
+
+Q: Can I use both legal expenses insurance and a no-win-no-fee lawyer?
+A: Sometimes. If the insurance limit is lower than the expected costs, a lawyer may agree success-based terms for the part the policy does not pay. Ask both the insurer and the lawyer to confirm in writing how they would work together.
+
+Q: Does legal expenses insurance cover a dispute that started before I bought it?
+A: Normally not. Policies usually exclude disputes whose cause arose before the cover began, and many apply a waiting period after purchase.
+
+## Glossary
+
+### No-win-no-fee terms, explained
+URL: https://jurimatch.com/glossary
+
+Plain-language definitions of no-win-no-fee terms: contingency fee, CFA, DBA, ATE insurance, litigation funding, cuota litis, Erfolgshonorar and more…
+
+Q: What is No win, no fee?
+A: An arrangement where you do not pay your own lawyer's fees if the case is lost. If you win, the lawyer is paid from the result or recovers fees from the other side. Court fees, expert costs and the other side's costs may still apply, so read the agreement.
+
+Q: What is Contingency fee?
+A: The lawyer's fee is a percentage of the money recovered and nothing is due if there is no recovery. The percentage, and whether expenses are deducted before or after it, is set in the written agreement and is limited by local rules in some places.
+
+Q: What is Conditional fee agreement (CFA)?
+A: The lawyer charges normal fees only if you win, plus a success fee on top of those fees. The success fee cannot exceed 100% of the base costs, and in personal injury claims it is capped at 25% of certain damages.
+
+Q: What is Damages-based agreement (DBA)?
+A: The lawyer takes a percentage of the damages you recover instead of hourly fees. The cap, including VAT, is 25% in personal injury claims, 35% in employment claims and 50% in other claims.
+
+Q: What is After-the-event (ATE) insurance?
+A: Insurance bought after a dispute arises that pays the other side's costs, and often your own expenses, if you lose. The premium is frequently deferred and payable only if you win.
+
+Q: What is Adverse costs (loser pays)?
+A: The rule that the losing party pays part of the winner's legal costs. It is why a no-win-no-fee agreement with your own lawyer does not always mean you risk nothing.
+
+Q: What is Litigation funding (third-party funding)?
+A: A company that is not a party to the case pays the legal costs in exchange for a share of the money recovered. Funding is usually non-recourse: if the case is lost, you do not repay the funder.
+
+Q: What is Cuota litis?
+A: An agreement where the lawyer's fee depends on the result, usually a percentage of what is obtained. In Spain the professional ban on it was struck down by the Supreme Court in 2008, so it can be agreed freely in writing.
+
+Q: What is Patto di quota lite?
+A: An agreement giving the lawyer a share of the asset or sum in dispute. Since 2012 Italian law forbids it again, but a fee calculated as a percentage of the value of the case, agreed in writing in advance, is allowed.
+
+Q: What is Erfolgshonorar?
+A: A fee that depends on success. It is generally not allowed for lawyers, with exceptions: for example claims of up to 2,000 euros, certain debt collection work, and cases where the client could not otherwise afford to bring the claim.
+
+Q: What is Honoraire de résultat?
+A: A bonus linked to the result. A fee based only on the result (pacte de quota litis) is not allowed, but a result-based fee can be added to a fixed or hourly fee if it is agreed in writing.
+
+Q: What is Success fee?
+A: Any fee, or part of a fee, that is payable only if the case succeeds. How it is calculated, and whether it is allowed at all, depends on the country.
+
+Q: What is Limitation period?
+A: The deadline for starting a claim. Once it has passed the claim is usually barred, so check it early; periods differ by country and type of claim and can be paused or restarted in some situations.
+
+Q: What is Legal expenses insurance (BTE)?
+A: Insurance bought before any dispute arises ("before the event"), often included in home, car or bank policies, that pays legal costs if a covered dispute comes up. Check your policies before agreeing anything else: the insurer may have to approve the lawyer and the costs.
+
+Q: What is Qualified one-way costs shifting (QOCS)?
+A: A rule for most personal injury claims under which a claimant who loses is generally not ordered to pay the defendant's costs out of their own pocket. Costs orders can still be set off against damages, and the protection can be lost, for example if the claim is found to be fundamentally dishonest.
+
+Q: What is Disbursements?
+A: Expenses a lawyer pays to third parties while running your case, such as court fees, expert reports, medical records and translations. Some no-win-no-fee agreements cover them if you lose; others make you pay them whatever the result. The agreement should say which.
+
+Q: What is Class action?
+A: A single case brought by one or more representatives on behalf of a larger group with similar claims. Members are often included unless they opt out, and any settlement usually needs the court's approval. Lawyers in class actions are frequently paid on a contingency basis.
+
+Q: What is EU representative action?
+A: A collective action brought by an approved organisation (a "qualified entity") on behalf of consumers, under Directive (EU) 2020/1828, to stop an unlawful practice or obtain redress. Each member state sets its own details, including whether consumers opt in or opt out.
+
+Q: What is Group litigation order (GLO)?
+A: A court order that manages many separate claims raising common issues together. Claimants usually join by being entered on a group register, and decisions on the common issues bind the claims on the register.
+
+Q: What is Letter before action?
+A: A formal letter to the other side setting out the claim, what you want and a deadline to respond, sent before starting court proceedings. Courts expect it, and skipping it can affect who pays the costs. Our free claim letter tool helps you draft one.
+
+Q: What is Statute of limitations?
+A: The US name for the law that sets the deadline for filing a lawsuit. Each state sets its own periods by type of claim, and federal claims have their own, so the same claim can have different deadlines in different states.
+
+Q: What is Small claims procedure?
+A: A simpler and cheaper court procedure for low-value claims, designed so that people can bring a claim without a lawyer. The value limit and the costs rules differ by country; in England and Wales the small claims track generally covers claims up to £10,000.
+
+Q: What is Out-of-court settlement?
+A: An agreement that ends a dispute without a court judgment, usually in exchange for a payment. Most claims settle. On a no-win-no-fee agreement, a settlement normally counts as a win, so the lawyer's success fee or percentage applies to the amount agreed.
+
+Q: What is Burofax?
+A: A certified communication sent through the Spanish postal service with proof of content and delivery. It is commonly used to send a formal demand before a claim, and a demand received by the debtor can interrupt the limitation period.
+
+Q: What is Proceso monitorio?
+A: A fast Spanish court procedure to recover a money debt backed by documents, such as invoices or a signed contract. The initial application can be filed without a lawyer. If the debtor does not pay or object, the court can order enforcement.
+
+Q: What is European order for payment?
+A: A procedure under Regulation (EC) No 1896/2006 to recover uncontested money claims across EU borders using standard forms. If the debtor does not object, the order becomes enforceable in the other member states.
+
+Q: What is European Small Claims Procedure?
+A: A written procedure for cross-border claims of up to €5,000 under Regulation (EC) No 861/2007, using standard forms and usually without a hearing. A lawyer is not required.
+
+Q: What is Funding multiple?
+A: A way of setting a litigation funder's return as a multiple of the money it invests in the case, often compared with, or combined with, a percentage of the recovery. The funding agreement should state how the return is calculated and in what order the proceeds are paid out.
+
+Q: What is Non-recourse funding?
+A: Funding that is repaid only out of what the case recovers. If the case is lost, you owe the funder nothing. Most third-party litigation funding works this way, but check whether the agreement also covers the other side's costs.
+
+Q: What is Security for costs?
+A: An order requiring a claimant to pay money into court or give a guarantee to cover the defendant's costs if the claim fails, for example when the claimant lives abroad or is a company that may not be able to pay. Funders and ATE insurers can sometimes provide it.
+
+Q: What is Pactum de quota litis?
+A: Latin for an agreement under which a lawyer's fee is only a share of what the client wins. Many civil-law countries forbid it while allowing a success bonus on top of a base fee; Spain has allowed it since 2008.
+
+Q: What is Honorários de êxito?
+A: A success fee agreed between client and lawyer, often alongside a smaller fixed fee. It is separate from the honorários de sucumbência, the costs a court orders the losing side to pay to the winner's lawyer.
+
+Q: What is Prozessfinanzierung?
+A: The German term for third-party litigation funding: a funder pays the court and lawyer costs, and the other side's costs if the case is lost, in return for a share of the proceeds agreed in the contract. Funders usually look for larger claims with good prospects.
+
+Q: What is No foil, no fee?
+A: The Irish form of no-win-no-fee: the solicitor charges no fee if the case is lost. Irish solicitors may not charge a percentage of the damages, and you may still face the other side's costs if you lose.
+
+Q: What is Claims management company (CMC)?
+A: A business that handles claims for a share of the compensation, often passing them to a law firm. In Great Britain, CMCs have been regulated by the Financial Conduct Authority since 2019. Many claims can be made directly for free, so check before signing.
+
+Q: What is Costs follow the event?
+A: The general principle that the losing party pays the winning party's legal costs, usually only part of them, as assessed by the court. Courts can depart from it, for example when the winner behaved unreasonably.
+
+Q: What is American rule on costs?
+A: The principle that each side pays its own lawyer whatever the result, unless a statute or contract says otherwise. It is one reason contingency fees work well in the US: losing usually does not mean paying the other side's lawyer.
+
+Q: What is Disclosure of documents?
+A: The stage of a case in which each side must reveal relevant documents, including some that harm its own case. It can be costly and time-consuming, which is one reason lawyers and funders weigh it when deciding whether to take a case.
+
+Q: What is Late payment interest?
+A: Statutory interest a business can charge on late payment by another business. Under the EU Late Payment Directive the rate is at least 8 percentage points above the reference rate, plus a fixed €40 compensation per invoice; the UK has its own similar rules. Our free calculator works it out.
+
+Q: What is EU261 flight compensation?
+A: Fixed compensation under Regulation (EC) No 261/2004 of €250, €400 or €600 depending on flight distance, for long delays at arrival, late cancellations and denied boarding, unless the airline proves extraordinary circumstances. The UK version pays similar amounts in pounds.
+
+### Adverse costs (loser pays)
+URL: https://jurimatch.com/glossary/adverse-costs
+
+The rule that the losing party pays part of the winner's legal costs. It is why a no-win-no-fee agreement with your own lawyer does not always mean you risk nothing.
+
+Q: What is Adverse costs?
+A: The rule that the losing party pays part of the winner's legal costs. It is why a no-win-no-fee agreement with your own lawyer does not always mean you risk nothing.
+
+Q: Where is the term used?
+A: Mainly in Most countries outside the United States.
+
+### After-the-event (ATE) insurance
+URL: https://jurimatch.com/glossary/after-the-event-insurance
+
+Insurance bought after a dispute arises that pays the other side's costs, and often your own expenses, if you lose. The premium is frequently deferred and payable only if you win.
+
+Q: What is After-the-event (ATE) insurance?
+A: Insurance bought after a dispute arises that pays the other side's costs, and often your own expenses, if you lose. The premium is frequently deferred and payable only if you win.
+
+Q: Where is the term used?
+A: Mainly in Mainly England and Wales.
+
+### American rule on costs
+URL: https://jurimatch.com/glossary/american-rule-on-costs
+
+The principle that each side pays its own lawyer whatever the result, unless a statute or contract says otherwise. It is one reason contingency fees work well in the US: losing usually does not mean paying the other side's lawyer.
+
+Q: What is American rule on costs?
+A: The principle that each side pays its own lawyer whatever the result, unless a statute or contract says otherwise. It is one reason contingency fees work well in the US: losing usually does not mean paying the other side's lawyer.
+
+Q: Where is the term used?
+A: Mainly in United States.
+
+### Burofax
+URL: https://jurimatch.com/glossary/burofax
+
+A certified communication sent through the Spanish postal service with proof of content and delivery. It is commonly used to send a formal demand before a claim, and a demand received by the debtor can interrupt the limitation period.
+
+Q: What is Burofax?
+A: A certified communication sent through the Spanish postal service with proof of content and delivery. It is commonly used to send a formal demand before a claim, and a demand received by the debtor can interrupt the limitation period.
+
+Q: Where is the term used?
+A: Mainly in Spain.
+
+### Claims management company (CMC)
+URL: https://jurimatch.com/glossary/claims-management-company
+
+A business that handles claims for a share of the compensation, often passing them to a law firm. In Great Britain, CMCs have been regulated by the Financial Conduct Authority since 2019. Many claims can be made directly for free, so check before signing.
+
+Q: What is Claims management company?
+A: A business that handles claims for a share of the compensation, often passing them to a law firm. In Great Britain, CMCs have been regulated by the Financial Conduct Authority since 2019. Many claims can be made directly for free, so check before signing.
+
+Q: Where is the term used?
+A: Mainly in United Kingdom.
+
+### Class action
+URL: https://jurimatch.com/glossary/class-action
+
+A single case brought by one or more representatives on behalf of a larger group with similar claims. Members are often included unless they opt out, and any settlement usually needs the court's approval. Lawyers in class actions are frequently paid on a contingency basis.
+
+Q: What is Class action?
+A: A single case brought by one or more representatives on behalf of a larger group with similar claims. Members are often included unless they opt out, and any settlement usually needs the court's approval. Lawyers in class actions are frequently paid on a contingency basis.
+
+Q: Where is the term used?
+A: Mainly in United States, Canada, Australia and others.
+
+### Conditional fee agreement (CFA)
+URL: https://jurimatch.com/glossary/conditional-fee-agreement
+
+The lawyer charges normal fees only if you win, plus a success fee on top of those fees. The success fee cannot exceed 100% of the base costs, and in personal injury claims it is capped at 25% of certain damages.
+
+Q: What is Conditional fee agreement?
+A: The lawyer charges normal fees only if you win, plus a success fee on top of those fees. The success fee cannot exceed 100% of the base costs, and in personal injury claims it is capped at 25% of certain damages.
+
+Q: Where is the term used?
+A: Mainly in England and Wales.
+
+### Contingency fee
+URL: https://jurimatch.com/glossary/contingency-fee
+
+The lawyer's fee is a percentage of the money recovered and nothing is due if there is no recovery. The percentage, and whether expenses are deducted before or after it, is set in the written agreement and is limited by local rules in some places.
+
+Q: What is Contingency fee?
+A: The lawyer's fee is a percentage of the money recovered and nothing is due if there is no recovery. The percentage, and whether expenses are deducted before or after it, is set in the written agreement and is limited by local rules in some places.
+
+Q: Where is the term used?
+A: Mainly in United States, Canada, Australia and others.
+
+### Costs follow the event
+URL: https://jurimatch.com/glossary/costs-follow-the-event
+
+The general principle that the losing party pays the winning party's legal costs, usually only part of them, as assessed by the court. Courts can depart from it, for example when the winner behaved unreasonably.
+
+Q: What is Costs follow the event?
+A: The general principle that the losing party pays the winning party's legal costs, usually only part of them, as assessed by the court. Courts can depart from it, for example when the winner behaved unreasonably.
+
+Q: Where is the term used?
+A: Mainly in England and Wales, Ireland and many other countries.
+
+### Cuota litis
+URL: https://jurimatch.com/glossary/cuota-litis
+
+An agreement where the lawyer's fee depends on the result, usually a percentage of what is obtained. In Spain the professional ban on it was struck down by the Supreme Court in 2008, so it can be agreed freely in writing.
+
+Q: What is Cuota litis?
+A: An agreement where the lawyer's fee depends on the result, usually a percentage of what is obtained. In Spain the professional ban on it was struck down by the Supreme Court in 2008, so it can be agreed freely in writing.
+
+Q: Where is the term used?
+A: Mainly in Spain and much of Latin America.
+
+### Damages-based agreement (DBA)
+URL: https://jurimatch.com/glossary/damages-based-agreement
+
+The lawyer takes a percentage of the damages you recover instead of hourly fees. The cap, including VAT, is 25% in personal injury claims, 35% in employment claims and 50% in other claims.
+
+Q: What is Damages-based agreement?
+A: The lawyer takes a percentage of the damages you recover instead of hourly fees. The cap, including VAT, is 25% in personal injury claims, 35% in employment claims and 50% in other claims.
+
+Q: Where is the term used?
+A: Mainly in England and Wales.
+
+### Disbursements
+URL: https://jurimatch.com/glossary/disbursements
+
+Expenses a lawyer pays to third parties while running your case, such as court fees, expert reports, medical records and translations. Some no-win-no-fee agreements cover them if you lose; others make you pay them whatever the result. The agreement should say which.
+
+Q: What is Disbursements?
+A: Expenses a lawyer pays to third parties while running your case, such as court fees, expert reports, medical records and translations. Some no-win-no-fee agreements cover them if you lose; others make you pay them whatever the result. The agreement should say which.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Disclosure of documents
+URL: https://jurimatch.com/glossary/disclosure-of-documents
+
+The stage of a case in which each side must reveal relevant documents, including some that harm its own case. It can be costly and time-consuming, which is one reason lawyers and funders weigh it when deciding whether to take a case.
+
+Q: What is Disclosure of documents?
+A: The stage of a case in which each side must reveal relevant documents, including some that harm its own case. It can be costly and time-consuming, which is one reason lawyers and funders weigh it when deciding whether to take a case.
+
+Q: Where is the term used?
+A: Mainly in England and Wales; called discovery in the United States.
+
+### Erfolgshonorar
+URL: https://jurimatch.com/glossary/erfolgshonorar
+
+A fee that depends on success. It is generally not allowed for lawyers, with exceptions: for example claims of up to 2,000 euros, certain debt collection work, and cases where the client could not otherwise afford to bring the claim.
+
+Q: What is Erfolgshonorar?
+A: A fee that depends on success. It is generally not allowed for lawyers, with exceptions: for example claims of up to 2,000 euros, certain debt collection work, and cases where the client could not otherwise afford to bring the claim.
+
+Q: Where is the term used?
+A: Mainly in Germany.
+
+### EU representative action
+URL: https://jurimatch.com/glossary/eu-representative-action
+
+A collective action brought by an approved organisation (a "qualified entity") on behalf of consumers, under Directive (EU) 2020/1828, to stop an unlawful practice or obtain redress. Each member state sets its own details, including whether consumers opt in or opt out.
+
+Q: What is EU representative action?
+A: A collective action brought by an approved organisation (a "qualified entity") on behalf of consumers, under Directive (EU) 2020/1828, to stop an unlawful practice or obtain redress. Each member state sets its own details, including whether consumers opt in or opt out.
+
+Q: Where is the term used?
+A: Mainly in European Union.
+
+### EU261 flight compensation
+URL: https://jurimatch.com/glossary/eu261-flight-compensation
+
+Fixed compensation under Regulation (EC) No 261/2004 of €250, €400 or €600 depending on flight distance, for long delays at arrival, late cancellations and denied boarding, unless the airline proves extraordinary circumstances. The UK version pays similar amounts in pounds.
+
+Q: What is EU261 flight compensation?
+A: Fixed compensation under Regulation (EC) No 261/2004 of €250, €400 or €600 depending on flight distance, for long delays at arrival, late cancellations and denied boarding, unless the airline proves extraordinary circumstances. The UK version pays similar amounts in pounds.
+
+Q: Where is the term used?
+A: Mainly in European Union, and flights covered by the UK version.
+
+### European order for payment
+URL: https://jurimatch.com/glossary/european-order-for-payment
+
+A procedure under Regulation (EC) No 1896/2006 to recover uncontested money claims across EU borders using standard forms. If the debtor does not object, the order becomes enforceable in the other member states.
+
+Q: What is European order for payment?
+A: A procedure under Regulation (EC) No 1896/2006 to recover uncontested money claims across EU borders using standard forms. If the debtor does not object, the order becomes enforceable in the other member states.
+
+Q: Where is the term used?
+A: Mainly in European Union (except Denmark).
+
+### European Small Claims Procedure
+URL: https://jurimatch.com/glossary/european-small-claims-procedure
+
+A written procedure for cross-border claims of up to €5,000 under Regulation (EC) No 861/2007, using standard forms and usually without a hearing. A lawyer is not required.
+
+Q: What is European Small Claims Procedure?
+A: A written procedure for cross-border claims of up to €5,000 under Regulation (EC) No 861/2007, using standard forms and usually without a hearing. A lawyer is not required.
+
+Q: Where is the term used?
+A: Mainly in European Union (except Denmark).
+
+### Funding multiple
+URL: https://jurimatch.com/glossary/funding-multiple
+
+A way of setting a litigation funder's return as a multiple of the money it invests in the case, often compared with, or combined with, a percentage of the recovery. The funding agreement should state how the return is calculated and in what order the proceeds are paid out.
+
+Q: What is Funding multiple?
+A: A way of setting a litigation funder's return as a multiple of the money it invests in the case, often compared with, or combined with, a percentage of the recovery. The funding agreement should state how the return is calculated and in what order the proceeds are paid out.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Group litigation order (GLO)
+URL: https://jurimatch.com/glossary/group-litigation-order
+
+A court order that manages many separate claims raising common issues together. Claimants usually join by being entered on a group register, and decisions on the common issues bind the claims on the register.
+
+Q: What is Group litigation order?
+A: A court order that manages many separate claims raising common issues together. Claimants usually join by being entered on a group register, and decisions on the common issues bind the claims on the register.
+
+Q: Where is the term used?
+A: Mainly in England and Wales.
+
+### Honoraire de résultat
+URL: https://jurimatch.com/glossary/honoraire-de-resultat
+
+A bonus linked to the result. A fee based only on the result (pacte de quota litis) is not allowed, but a result-based fee can be added to a fixed or hourly fee if it is agreed in writing.
+
+Q: What is Honoraire de résultat?
+A: A bonus linked to the result. A fee based only on the result (pacte de quota litis) is not allowed, but a result-based fee can be added to a fixed or hourly fee if it is agreed in writing.
+
+Q: Where is the term used?
+A: Mainly in France.
+
+### Honorários de êxito
+URL: https://jurimatch.com/glossary/honorarios-de-exito
+
+A success fee agreed between client and lawyer, often alongside a smaller fixed fee. It is separate from the honorários de sucumbência, the costs a court orders the losing side to pay to the winner's lawyer.
+
+Q: What is Honorários de êxito?
+A: A success fee agreed between client and lawyer, often alongside a smaller fixed fee. It is separate from the honorários de sucumbência, the costs a court orders the losing side to pay to the winner's lawyer.
+
+Q: Where is the term used?
+A: Mainly in Brazil.
+
+### Late payment interest
+URL: https://jurimatch.com/glossary/late-payment-interest
+
+Statutory interest a business can charge on late payment by another business. Under the EU Late Payment Directive the rate is at least 8 percentage points above the reference rate, plus a fixed €40 compensation per invoice; the UK has its own similar rules. Our free calculator works it out.
+
+Q: What is Late payment interest?
+A: Statutory interest a business can charge on late payment by another business. Under the EU Late Payment Directive the rate is at least 8 percentage points above the reference rate, plus a fixed €40 compensation per invoice; the UK has its own similar rules. Our free calculator works it out.
+
+Q: Where is the term used?
+A: Mainly in European Union and United Kingdom.
+
+### Legal expenses insurance (BTE)
+URL: https://jurimatch.com/glossary/legal-expenses-insurance
+
+Insurance bought before any dispute arises ("before the event"), often included in home, car or bank policies, that pays legal costs if a covered dispute comes up. Check your policies before agreeing anything else: the insurer may have to approve the lawyer and the costs.
+
+Q: What is Legal expenses insurance?
+A: Insurance bought before any dispute arises ("before the event"), often included in home, car or bank policies, that pays legal costs if a covered dispute comes up. Check your policies before agreeing anything else: the insurer may have to approve the lawyer and the costs.
+
+Q: Where is the term used?
+A: Mainly in General, common in Germany, Austria, Scandinavia and the UK.
+
+### Letter before action
+URL: https://jurimatch.com/glossary/letter-before-action
+
+A formal letter to the other side setting out the claim, what you want and a deadline to respond, sent before starting court proceedings. Courts expect it, and skipping it can affect who pays the costs. Our free claim letter tool helps you draft one.
+
+Q: What is Letter before action?
+A: A formal letter to the other side setting out the claim, what you want and a deadline to respond, sent before starting court proceedings. Courts expect it, and skipping it can affect who pays the costs. Our free claim letter tool helps you draft one.
+
+Q: Where is the term used?
+A: Mainly in England and Wales, and similar formal demand letters elsewhere.
+
+### Limitation period
+URL: https://jurimatch.com/glossary/limitation-period
+
+The deadline for starting a claim. Once it has passed the claim is usually barred, so check it early; periods differ by country and type of claim and can be paused or restarted in some situations.
+
+Q: What is Limitation period?
+A: The deadline for starting a claim. Once it has passed the claim is usually barred, so check it early; periods differ by country and type of claim and can be paused or restarted in some situations.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Litigation funding (third-party funding)
+URL: https://jurimatch.com/glossary/litigation-funding
+
+A company that is not a party to the case pays the legal costs in exchange for a share of the money recovered. Funding is usually non-recourse: if the case is lost, you do not repay the funder.
+
+Q: What is Litigation funding?
+A: A company that is not a party to the case pays the legal costs in exchange for a share of the money recovered. Funding is usually non-recourse: if the case is lost, you do not repay the funder.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### No foil, no fee
+URL: https://jurimatch.com/glossary/no-foil-no-fee
+
+The Irish form of no-win-no-fee: the solicitor charges no fee if the case is lost. Irish solicitors may not charge a percentage of the damages, and you may still face the other side's costs if you lose.
+
+Q: What is No foil, no fee?
+A: The Irish form of no-win-no-fee: the solicitor charges no fee if the case is lost. Irish solicitors may not charge a percentage of the damages, and you may still face the other side's costs if you lose.
+
+Q: Where is the term used?
+A: Mainly in Ireland.
+
+### No win, no fee
+URL: https://jurimatch.com/glossary/no-win-no-fee
+
+An arrangement where you do not pay your own lawyer's fees if the case is lost. If you win, the lawyer is paid from the result or recovers fees from the other side. Court fees, expert costs and the other side's costs may still apply, so read the agreement.
+
+Q: What is No win, no fee?
+A: An arrangement where you do not pay your own lawyer's fees if the case is lost. If you win, the lawyer is paid from the result or recovers fees from the other side. Court fees, expert costs and the other side's costs may still apply, so read the agreement.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Non-recourse funding
+URL: https://jurimatch.com/glossary/non-recourse-funding
+
+Funding that is repaid only out of what the case recovers. If the case is lost, you owe the funder nothing. Most third-party litigation funding works this way, but check whether the agreement also covers the other side's costs.
+
+Q: What is Non-recourse funding?
+A: Funding that is repaid only out of what the case recovers. If the case is lost, you owe the funder nothing. Most third-party litigation funding works this way, but check whether the agreement also covers the other side's costs.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Out-of-court settlement
+URL: https://jurimatch.com/glossary/out-of-court-settlement
+
+An agreement that ends a dispute without a court judgment, usually in exchange for a payment. Most claims settle. On a no-win-no-fee agreement, a settlement normally counts as a win, so the lawyer's success fee or percentage applies to the amount agreed.
+
+Q: What is Out-of-court settlement?
+A: An agreement that ends a dispute without a court judgment, usually in exchange for a payment. Most claims settle. On a no-win-no-fee agreement, a settlement normally counts as a win, so the lawyer's success fee or percentage applies to the amount agreed.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Pactum de quota litis
+URL: https://jurimatch.com/glossary/pactum-de-quota-litis
+
+Latin for an agreement under which a lawyer's fee is only a share of what the client wins. Many civil-law countries forbid it while allowing a success bonus on top of a base fee; Spain has allowed it since 2008.
+
+Q: What is Pactum de quota litis?
+A: Latin for an agreement under which a lawyer's fee is only a share of what the client wins. Many civil-law countries forbid it while allowing a success bonus on top of a base fee; Spain has allowed it since 2008.
+
+Q: Where is the term used?
+A: Mainly in Civil-law countries.
+
+### Proceso monitorio
+URL: https://jurimatch.com/glossary/proceso-monitorio
+
+A fast Spanish court procedure to recover a money debt backed by documents, such as invoices or a signed contract. The initial application can be filed without a lawyer. If the debtor does not pay or object, the court can order enforcement.
+
+Q: What is Proceso monitorio?
+A: A fast Spanish court procedure to recover a money debt backed by documents, such as invoices or a signed contract. The initial application can be filed without a lawyer. If the debtor does not pay or object, the court can order enforcement.
+
+Q: Where is the term used?
+A: Mainly in Spain.
+
+### Prozessfinanzierung
+URL: https://jurimatch.com/glossary/prozessfinanzierung
+
+The German term for third-party litigation funding: a funder pays the court and lawyer costs, and the other side's costs if the case is lost, in return for a share of the proceeds agreed in the contract. Funders usually look for larger claims with good prospects.
+
+Q: What is Prozessfinanzierung?
+A: The German term for third-party litigation funding: a funder pays the court and lawyer costs, and the other side's costs if the case is lost, in return for a share of the proceeds agreed in the contract. Funders usually look for larger claims with good prospects.
+
+Q: Where is the term used?
+A: Mainly in Germany, Austria and Switzerland.
+
+### Qualified one-way costs shifting (QOCS)
+URL: https://jurimatch.com/glossary/qualified-one-way-costs-shifting
+
+A rule for most personal injury claims under which a claimant who loses is generally not ordered to pay the defendant's costs out of their own pocket. Costs orders can still be set off against damages, and the protection can be lost, for example if the claim is found to be fundamentally dishonest.
+
+Q: What is Qualified one-way costs shifting?
+A: A rule for most personal injury claims under which a claimant who loses is generally not ordered to pay the defendant's costs out of their own pocket. Costs orders can still be set off against damages, and the protection can be lost, for example if the claim is found to be fundamentally dishonest.
+
+Q: Where is the term used?
+A: Mainly in England and Wales.
+
+### Patto di quota lite
+URL: https://jurimatch.com/glossary/quota-lite
+
+An agreement giving the lawyer a share of the asset or sum in dispute. Since 2012 Italian law forbids it again, but a fee calculated as a percentage of the value of the case, agreed in writing in advance, is allowed.
+
+Q: What is Patto di quota lite?
+A: An agreement giving the lawyer a share of the asset or sum in dispute. Since 2012 Italian law forbids it again, but a fee calculated as a percentage of the value of the case, agreed in writing in advance, is allowed.
+
+Q: Where is the term used?
+A: Mainly in Italy.
+
+### Security for costs
+URL: https://jurimatch.com/glossary/security-for-costs
+
+An order requiring a claimant to pay money into court or give a guarantee to cover the defendant's costs if the claim fails, for example when the claimant lives abroad or is a company that may not be able to pay. Funders and ATE insurers can sometimes provide it.
+
+Q: What is Security for costs?
+A: An order requiring a claimant to pay money into court or give a guarantee to cover the defendant's costs if the claim fails, for example when the claimant lives abroad or is a company that may not be able to pay. Funders and ATE insurers can sometimes provide it.
+
+Q: Where is the term used?
+A: Mainly in England and Wales, Ireland, Australia and other common-law systems.
+
+### Small claims procedure
+URL: https://jurimatch.com/glossary/small-claims-procedure
+
+A simpler and cheaper court procedure for low-value claims, designed so that people can bring a claim without a lawyer. The value limit and the costs rules differ by country; in England and Wales the small claims track generally covers claims up to £10,000.
+
+Q: What is Small claims procedure?
+A: A simpler and cheaper court procedure for low-value claims, designed so that people can bring a claim without a lawyer. The value limit and the costs rules differ by country; in England and Wales the small claims track generally covers claims up to £10,000.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+### Statute of limitations
+URL: https://jurimatch.com/glossary/statute-of-limitations
+
+The US name for the law that sets the deadline for filing a lawsuit. Each state sets its own periods by type of claim, and federal claims have their own, so the same claim can have different deadlines in different states.
+
+Q: What is Statute of limitations?
+A: The US name for the law that sets the deadline for filing a lawsuit. Each state sets its own periods by type of claim, and federal claims have their own, so the same claim can have different deadlines in different states.
+
+Q: Where is the term used?
+A: Mainly in United States.
+
+### Success fee
+URL: https://jurimatch.com/glossary/success-fee
+
+Any fee, or part of a fee, that is payable only if the case succeeds. How it is calculated, and whether it is allowed at all, depends on the country.
+
+Q: What is Success fee?
+A: Any fee, or part of a fee, that is payable only if the case succeeds. How it is calculated, and whether it is allowed at all, depends on the country.
+
+Q: Where is the term used?
+A: It is a general term, used in many countries.
+
+## Country comparisons
+
+### Argentina vs Chile: claim rules compared
+URL: https://jurimatch.com/compare-countries/argentina-vs-chile
+
+Contract claims, indicative limitation period: Argentina 5 years, Chile 5 years. In most countries outside the United States, a court can order the losing party to pay at least part of the winner's legal costs. General information, not legal advice.
+
+### Australia vs New Zealand: claim rules compared
+URL: https://jurimatch.com/compare-countries/australia-vs-new-zealand
+
+Contract claims, indicative limitation period: Australia 3–6 years, New Zealand 6 years. The loser is usually ordered to pay a portion of the winner's legal costs, so ask your firm who carries that risk on a no-win-no-fee agreement.. General information, not legal advice.
+
+### Belgium vs Luxembourg: claim rules compared
+URL: https://jurimatch.com/compare-countries/belgium-vs-luxembourg
+
+Contract claims, indicative limitation period: Belgium 10 years, Luxembourg 10–30 years. The loser pays the court costs and a fixed procedural indemnity towards the winner's lawyer fees, set within statutory brackets according to the value of the claim.. General information, not legal advice.
+
+### France vs Belgium: claim rules compared
+URL: https://jurimatch.com/compare-countries/france-vs-belgium
+
+Contract claims, indicative limitation period: France 5 years (from knowledge), Belgium 10 years. The loser usually pays the court costs (dépens), and the judge may order a contribution to the winner's lawyer fees (article 700), which is often well below the real fees.. General information, not legal advice.
+
+### France vs Germany: claim rules compared
+URL: https://jurimatch.com/compare-countries/france-vs-germany
+
+Contract claims, indicative limitation period: France 5 years (from knowledge), Germany 3 years (from knowledge). The loser usually pays the court costs (dépens), and the judge may order a contribution to the winner's lawyer fees (article 700), which is often well below the real fees.. General information, not legal advice.
+
+### France vs Italy: claim rules compared
+URL: https://jurimatch.com/compare-countries/france-vs-italy
+
+Contract claims, indicative limitation period: France 5 years (from knowledge), Italy 10 years. The loser usually pays the court costs (dépens), and the judge may order a contribution to the winner's lawyer fees (article 700), which is often well below the real fees.. General information, not legal advice.
+
+### France vs Switzerland: claim rules compared
+URL: https://jurimatch.com/compare-countries/france-vs-switzerland
+
+Contract claims, indicative limitation period: France 5 years (from knowledge), Switzerland 5–10 years. The loser usually pays the court costs (dépens), and the judge may order a contribution to the winner's lawyer fees (article 700), which is often well below the real fees.. General information, not legal advice.
+
+### Germany vs Austria: claim rules compared
+URL: https://jurimatch.com/compare-countries/germany-vs-austria
+
+Contract claims, indicative limitation period: Germany 3 years (from knowledge), Austria 3–30 years. The loser pays the court fees and both sides' statutory lawyer fees, so the risk can be calculated in advance from the value of the claim. General information, not legal advice.
+
+### Germany vs Denmark: claim rules compared
+URL: https://jurimatch.com/compare-countries/germany-vs-denmark
+
+Contract claims, indicative limitation period: Germany 3 years (from knowledge), Denmark 3 years (from knowledge). The loser pays the court fees and both sides' statutory lawyer fees, so the risk can be calculated in advance from the value of the claim. General information, not legal advice.
+
+### Germany vs Netherlands: claim rules compared
+URL: https://jurimatch.com/compare-countries/germany-vs-netherlands
+
+Contract claims, indicative limitation period: Germany 3 years (from knowledge), Netherlands 5 years. The loser pays the court fees and both sides' statutory lawyer fees, so the risk can be calculated in advance from the value of the claim. General information, not legal advice.
+
+### Germany vs Poland: claim rules compared
+URL: https://jurimatch.com/compare-countries/germany-vs-poland
+
+Contract claims, indicative limitation period: Germany 3 years (from knowledge), Poland 3–6 years. The loser pays the court fees and both sides' statutory lawyer fees, so the risk can be calculated in advance from the value of the claim. General information, not legal advice.
+
+### Germany vs Switzerland: claim rules compared
+URL: https://jurimatch.com/compare-countries/germany-vs-switzerland
+
+Contract claims, indicative limitation period: Germany 3 years (from knowledge), Switzerland 5–10 years. The loser pays the court fees and both sides' statutory lawyer fees, so the risk can be calculated in advance from the value of the claim. General information, not legal advice.
+
+### Netherlands vs Belgium: claim rules compared
+URL: https://jurimatch.com/compare-countries/netherlands-vs-belgium
+
+Contract claims, indicative limitation period: Netherlands 5 years, Belgium 10 years. The loser usually pays a fixed-rate contribution to the winner's costs (liquidatietarief), which is normally much lower than the real cost of the case.. General information, not legal advice.
+
+### Spain vs France: claim rules compared
+URL: https://jurimatch.com/compare-countries/spain-vs-france
+
+Contract claims, indicative limitation period: Spain 5 years, France 5 years (from knowledge). The loser is normally ordered to pay the costs (condena en costas) unless the case raised serious doubts. General information, not legal advice.
+
+### Spain vs Portugal: claim rules compared
+URL: https://jurimatch.com/compare-countries/spain-vs-portugal
+
+Contract claims, indicative limitation period: Spain 5 years, Portugal 20 years. The loser is normally ordered to pay the costs (condena en costas) unless the case raised serious doubts. General information, not legal advice.
+
+### Sweden vs Finland: claim rules compared
+URL: https://jurimatch.com/compare-countries/sweden-vs-finland
+
+Contract claims, indicative limitation period: Sweden 10 years, Finland 3 years. The loser is normally ordered to pay the winner's reasonable legal costs. General information, not legal advice.
+
+### Sweden vs Norway: claim rules compared
+URL: https://jurimatch.com/compare-countries/sweden-vs-norway
+
+Contract claims, indicative limitation period: Sweden 10 years, Norway 3 years. The loser is normally ordered to pay the winner's reasonable legal costs. General information, not legal advice.
+
+### United Kingdom vs Ireland: claim rules compared
+URL: https://jurimatch.com/compare-countries/united-kingdom-vs-ireland
+
+Contract claims, indicative limitation period: United Kingdom 6 years, Ireland 6 years. In England & Wales the loser is normally ordered to pay a large part of the winner's costs. General information, not legal advice.
+
+### United States vs Canada: claim rules compared
+URL: https://jurimatch.com/compare-countries/united-states-vs-canada
+
+Contract claims, indicative limitation period: United States 3–6 years, Canada 2–3 years (from knowledge). Each side normally pays its own lawyer (the "American rule"), so losing usually does not mean paying the other side's lawyer. General information, not legal advice.
+
+### United States vs Mexico: claim rules compared
+URL: https://jurimatch.com/compare-countries/united-states-vs-mexico
+
+Contract claims, indicative limitation period: United States 3–6 years, Mexico Varies, ask a lawyer. Each side normally pays its own lawyer (the "American rule"), so losing usually does not mean paying the other side's lawyer. General information, not legal advice.
+
+## Free tools
+
+### Are contingency fees allowed? A map by country
+URL: https://jurimatch.com/maps/contingency-fees
+
+Where lawyers can be paid a share of what you recover, where only a success bonus on top of a base fee is allowed, and where success fees are restricted.
+
+### Limitation periods by country: interactive map
+URL: https://jurimatch.com/maps/limitation-periods
+
+Pick a claim type to see the commonly cited limitation period in each country. Each country links to its deadline checker. Indicative only: exceptions are frequent.
+
+### What would you actually keep?
+URL: https://jurimatch.com/tools/case-value
+
+Estimate what you would keep from a legal claim under contingency fees, litigation funding, hybrid or hourly fees. Transparent maths, adjustable assumptions.
+
+### Free complaint letter template
+URL: https://jurimatch.com/tools/claim-letter
+
+Fill in a few fields and get a clear, polite complaint letter to send before starting a legal claim. Copy or download it for free.
+
+### Contingency fee calculator: what you actually keep
+URL: https://jurimatch.com/tools/contingency-fee-calculator
+
+Free no-win-no-fee calculator: enter the amount recovered, the success fee percentage, expenses and VAT to see what the lawyer keeps and what you keep…
+
+### What documents do I need for my claim?
+URL: https://jurimatch.com/tools/document-checklist
+
+A free, printable checklist of the documents to gather before you speak to a no-win-no-fee lawyer, by case type: contracts, payments, messages, dates and more.
+
+### Flight claim deadlines by country
+URL: https://jurimatch.com/tools/flight-claim-deadlines
+
+How long you have to bring an EU261 or UK261 flight compensation claim in England and Wales, Scotland, Spain, Germany, France and more, with sources and a…
+
+### Airline claim letter (EU261 and UK261)
+URL: https://jurimatch.com/tools/flight-claim-letter
+
+Write a compensation claim letter to your airline under EU261 or UK261 for a delayed, cancelled or overbooked flight. Free, prefilled from our calculator…
+
+### Flight delayed or cancelled? Check what you may be owed
+URL: https://jurimatch.com/tools/flight-compensation
+
+Free EU261 and UK261 calculator: check if a delayed, cancelled or overbooked flight could give you EUR 250, 400 or 600 (GBP 220, 350 or 520), with the…
+
+### Would a funder look at my case?
+URL: https://jurimatch.com/tools/funding-fit
+
+An orientative check of your claim value against the estimated budget, using the rule of thumb often quoted by litigation funders (roughly 8 to 10 times).
+
+### Notice period in Germany
+URL: https://jurimatch.com/tools/germany-notice-period
+
+Free calculator for statutory notice periods in German employment contracts under section 622 BGB: basic period, longer periods for the employer…
+
+### Late payment interest on business invoices
+URL: https://jurimatch.com/tools/late-payment-interest
+
+Free statutory late payment interest calculator for unpaid business invoices in the UK, EU, Spain, Germany and France: daily interest, days late and fixed…
+
+### How long do I have to make a claim?
+URL: https://jurimatch.com/tools/limitation-checker
+
+Free limitation deadline checker for 39 countries. Pick a country, claim type and date to get an indicative deadline, days remaining and a calendar reminder.
+
+### Dismissal compensation in Spain
+URL: https://jurimatch.com/tools/spain-dismissal-compensation
+
+Free calculator for statutory severance in Spain: unfair dismissal (33 days per year, 45 days before 2012) or objective dismissal (20 days per year), with…
+
+### Legal costs cap in Spain
+URL: https://jurimatch.com/tools/spain-legal-costs-cap
+
+Free calculator for the most a losing party pays towards the other side's lawyer in a Spanish civil case: one third of the value of the claim under art.
+
+### Terms of use for the free tools
+URL: https://jurimatch.com/tools/terms
+
+JuriMatch's free calculators and templates give orientative results only: no warranty, not legal advice, and no lawyer-client relationship.
+
+### Train delay compensation in the EU
+URL: https://jurimatch.com/tools/train-delay-compensation
+
+Free calculator for train delay compensation under EU Regulation 2021/782: 25% of the ticket price for 60 to 119 minutes late, 50% for 120 minutes or…
+
+### Statutory redundancy pay in the UK
+URL: https://jurimatch.com/tools/uk-redundancy-pay
+
+Free statutory redundancy pay calculator for England, Wales and Scotland: age bands, up to 20 years counted, editable weekly pay cap and a year by year…
+
+### Which lawyer do I need?
+URL: https://jurimatch.com/tools/which-lawyer
+
+Answer up to three yes or no questions to find the type of lawyer your problem needs: fraud, investment or crypto fraud, injury, medical negligence…
+
+### Who pays the costs if you lose?
+URL: https://jurimatch.com/tools/who-pays-if-you-lose
+
+Choose a country to see the usual rule on the other side's legal costs when a claim fails, and how people limit that risk. General information, not legal advice.
+
+## Guías en español
+
+### Accidente de tráfico: cómo reclamar la indemnización
+URL: https://jurimatch.com/es/guias/accidente-de-trafico
+
+Si ha sufrido daños o lesiones en un accidente de tráfico que no causó usted, puede reclamar a la aseguradora del vehículo responsable. La ley fija un procedimiento previo y un sistema de valoración de los daños personales, el llamado baremo. Conocerlos le ayuda a no aceptar menos de lo que le corresponde.
+
+Q: ¿Tengo que demandar al conductor que me golpeó?
+A: Normalmente no. Puede reclamar directamente a su aseguradora, que es quien paga la indemnización, y demandarla a ella si no hay acuerdo.
+
+Q: ¿Qué es la oferta motivada?
+A: Es la propuesta de indemnización que la aseguradora debe hacer en el plazo de tres meses desde la reclamación, explicando cómo la ha calculado. Si rechaza pagar, debe dar una respuesta motivada.
+
+Q: ¿Cuánto tiempo tengo para reclamar?
+A: Por regla general, un año. En lesiones, el plazo suele contarse desde la curación o la estabilización de las secuelas. La reclamación a la aseguradora interrumpe ese plazo.
+
+### Acoso laboral: qué es y qué puede hacer
+URL: https://jurimatch.com/es/guias/acoso-laboral
+
+El acoso laboral, o mobbing, son conductas hostiles y repetidas en el trabajo que atentan contra la dignidad del trabajador. Es una situación difícil de probar y de vivir, pero la ley ofrece varias vías de protección. Lo importante es documentarlo bien desde el principio.
+
+Q: ¿Qué diferencia hay entre acoso laboral y un mal ambiente de trabajo?
+A: El acoso supone conductas hostiles, sistemáticas y prolongadas dirigidas contra una persona. Un conflicto aislado o una mala gestión no son por sí solos acoso.
+
+Q: ¿Puedo dejar el trabajo y cobrar indemnización?
+A: El artículo 50 del Estatuto de los Trabajadores permite pedir al juez la extinción del contrato por incumplimientos graves de la empresa, con la indemnización del despido improcedente. Es importante no dejar el trabajo antes de hablar con un abogado.
+
+Q: ¿Cómo pruebo el acoso?
+A: Con correos, mensajes, testigos, informes médicos y un registro detallado de los hechos. La prueba es clave en estos casos.
+
+### Cártel de camiones: reclamar el sobreprecio
+URL: https://jurimatch.com/es/guias/cartel-de-camiones
+
+La Comisión Europea sancionó en 2016 y 2017 a varios grandes fabricantes de camiones por coordinar precios durante años. Empresas, autónomos y administraciones que compraron o alquilaron esos camiones han reclamado el sobreprecio en los tribunales españoles.
+
+Q: ¿Sirve si compré el camión de segunda mano?
+A: Puede servir en algunos casos, porque parte del sobreprecio se traslada al comprador de segunda mano, pero es más difícil de probar. Un abogado debe valorarlo.
+
+Q: ¿Necesito un perito?
+A: Casi siempre se aporta un informe pericial económico. Algunos despachos y financiadores lo adelantan y lo cobran solo si se gana.
+
+### Cláusula suelo: qué es y cómo reclamar la devolución
+URL: https://jurimatch.com/es/guias/clausula-suelo
+
+La cláusula suelo fijaba un tipo de interés mínimo en hipotecas a tipo variable: aunque el euríbor bajara, la cuota no bajaba de ese suelo. Muchos consumidores pagaron de más durante años y una parte importante ya ha recuperado ese dinero. Si usted todavía no ha reclamado, esto es lo que conviene saber.
+
+Q: ¿Puedo reclamar la cláusula suelo si ya terminé de pagar la hipoteca?
+A: En general sí. Haber cancelado la hipoteca no impide pedir la nulidad de la cláusula y la devolución de lo pagado de más. Un abogado debe revisar si existe algún acuerdo o renuncia posterior.
+
+Q: ¿Cuánto dinero me devolverán?
+A: Depende de su hipoteca: la diferencia entre lo que pagó con el suelo y lo que habría pagado sin él, más intereses. No hay una cifra estándar; su abogado puede calcularla con el cuadro de amortización.
+
+Q: ¿Necesito abogado para reclamar al banco?
+A: Para la reclamación previa al banco no es obligatorio. Si hay que ir a juicio, en este tipo de pleitos se necesita abogado y procurador por la cuantía habitual.
+
+### Cuota litis: cómo funciona el abogado a éxito en España
+URL: https://jurimatch.com/es/guias/cuota-litis
+
+La cuota litis es el acuerdo por el que el abogado cobra un porcentaje de lo que se obtenga en el asunto. En España está permitida y es habitual en reclamaciones de dinero. Bien entendida, permite reclamar sin pagar grandes cantidades por adelantado.
+
+Q: ¿Es legal que el abogado cobre un porcentaje de lo que gane?
+A: Sí. Desde la sentencia del Tribunal Supremo de 4 de noviembre de 2008 se puede pactar la cuota litis en España.
+
+Q: ¿Qué porcentaje es normal?
+A: No hay un porcentaje fijo: depende del tipo de caso, el riesgo y la parte fija. Compare varias propuestas por escrito.
+
+Q: Si pierdo con un abogado a éxito, ¿pago algo?
+A: Normalmente no paga el porcentaje, pero puede deber la parte fija pactada y, si el juez le condena en costas, las de la otra parte.
+
+### Despido improcedente: plazos, indemnización y cómo reclamar
+URL: https://jurimatch.com/es/guias/despido-improcedente
+
+Si le han despedido y cree que no hay causa o que no se respetó el procedimiento, el plazo para reaccionar es muy corto: 20 días hábiles. Esta guía explica los pasos básicos para no perder el derecho a reclamar.
+
+Q: ¿Cuánto tiempo tengo para reclamar un despido?
+A: 20 días hábiles desde el día siguiente al despido. La papeleta de conciliación suspende el plazo, pero no lo deje para el final.
+
+Q: ¿Cuál es la indemnización por despido improcedente?
+A: 33 días de salario por año trabajado, con un máximo general de 24 mensualidades; los periodos anteriores al 12 de febrero de 2012 se calculan a 45 días por año, con reglas de transición. La empresa puede optar por readmitirle en lugar de pagarla.
+
+Q: ¿Necesito abogado para un despido?
+A: En la primera instancia no es obligatorio, pero es recomendable. Muchos laboralistas trabajan con un porcentaje de lo que se obtenga.
+
+### Dieselgate: reclamar por un coche con emisiones manipuladas
+URL: https://jurimatch.com/es/guias/dieselgate
+
+En 2015 se supo que millones de coches diésel del grupo Volkswagen llevaban un programa que reducía las emisiones solo durante las pruebas de homologación. Después se han investigado otros fabricantes y otros dispositivos. En España ha habido reclamaciones individuales y acciones colectivas.
+
+Q: ¿Tengo que demostrar que mi coche contamina más?
+A: Hace falta probar que el vehículo lleva un dispositivo de desactivación prohibido; a menudo se usan las decisiones de las autoridades de homologación y llamadas a revisión. Su abogado le dirá qué pruebas necesita.
+
+Q: ¿Puedo reclamar si ya vendí el coche?
+A: Puede ser posible, según la vía y el plazo. Consulte con su documentación de compra y de venta.
+
+### Estafa online y criptomonedas: qué hacer y cómo intentar recuperar el dinero
+URL: https://jurimatch.com/es/guias/estafa-online-y-criptomonedas
+
+Phishing, compras en tiendas falsas, llamadas que suplantan a su banco o plataformas de inversión en criptomonedas que desaparecen con el dinero: las estafas online son muy frecuentes. Actuar en las primeras horas aumenta mucho las posibilidades de recuperar algo.
+
+Q: ¿Mi banco tiene que devolverme el dinero de una estafa?
+A: Si la operación no la autorizó usted, por regla general sí, salvo que el banco pruebe fraude o negligencia grave por su parte. Si usted mismo ordenó la transferencia engañado, es más difícil.
+
+Q: ¿Dónde denuncio una estafa online?
+A: Ante la Policía Nacional, la Guardia Civil o el juzgado de guardia. Si se trata de una falsa entidad de inversión, comuníquelo también a la CNMV.
+
+Q: ¿Son fiables las empresas que prometen recuperar criptomonedas?
+A: Hay que desconfiar mucho. Pedir pagos por adelantado y contactar sin que usted lo pida son señales típicas de una segunda estafa.
+
+### Financiación de litigios en España: cómo funciona
+URL: https://jurimatch.com/es/guias/financiacion-de-litigios
+
+Un financiador de litigios es una empresa que paga los costes de un pleito o arbitraje a cambio de una parte de lo que se obtenga. Si se pierde, normalmente no recupera su inversión. En España se usa sobre todo en reclamaciones de importe elevado y en acciones colectivas.
+
+Q: ¿Es legal la financiación de litigios en España?
+A: Sí. No hay una ley específica, pero los contratos de financiación se celebran conforme a las reglas generales del Derecho civil.
+
+Q: ¿Qué pasa si pierdo el juicio?
+A: Normalmente el financiador pierde lo invertido y no le reclama nada. Revise en el contrato quién asume las costas de la otra parte.
+
+Q: ¿Financian casos pequeños?
+A: Rara vez. El coste de analizar y seguir un caso hace que los financiadores se centren en reclamaciones de importe elevado o en grupos de afectados.
+
+### Gastos de hipoteca: qué se puede recuperar y cómo
+URL: https://jurimatch.com/es/guias/gastos-hipoteca
+
+Durante años, muchas escrituras de hipoteca cargaban al cliente todos los gastos de constitución: notaría, registro, gestoría, tasación e impuestos. Los tribunales han declarado abusiva esa cláusula en préstamos con consumidores y han ido precisando qué parte debe devolver el banco.
+
+Q: ¿Se puede reclamar el impuesto de la hipoteca?
+A: En general no para hipotecas firmadas antes del cambio legal de finales de 2018, porque los tribunales consideraron que correspondía al cliente. Los demás gastos sí pueden reclamarse en todo o en parte.
+
+Q: ¿Y si no tengo las facturas?
+A: Puede pedir copia al notario, al registro de la propiedad o a la gestoría. Su abogado también puede ayudarle a obtenerlas.
+
+### IRPH: qué es y qué se puede reclamar hoy
+URL: https://jurimatch.com/es/guias/irph
+
+El IRPH (índice de referencia de préstamos hipotecarios) se usó en muchas hipotecas como alternativa al euríbor y en muchos periodos resultó más caro. Es uno de los litigios bancarios más discutidos en España, con resultados desiguales. Antes de reclamar, conviene entender por qué.
+
+Q: ¿Es nula la cláusula IRPH?
+A: No automáticamente. Según la jurisprudencia europea, hay que analizar si se explicó con transparencia y, además, si es abusiva. Cada caso depende de la información que el banco le dio.
+
+Q: ¿Merece la pena reclamar el IRPH?
+A: Depende de la documentación y de la diferencia económica. Un abogado puede valorar su caso concreto; es un litigio con resultados desiguales.
+
+### Negligencia médica: cómo reclamar en la sanidad pública y privada
+URL: https://jurimatch.com/es/guias/negligencia-medica
+
+Si ha sufrido un daño por una actuación sanitaria que no se ajustó a la buena práctica médica, puede tener derecho a una indemnización. La vía para reclamar depende de si le atendió la sanidad pública o un centro privado, y los plazos son cortos.
+
+Q: ¿Todo mal resultado es una negligencia médica?
+A: No. La medicina no garantiza resultados. Hay negligencia cuando la actuación no se ajustó a la buena práctica médica y eso causó el daño.
+
+Q: ¿Cuánto tiempo tengo para reclamar a la sanidad pública?
+A: Un año, que en daños físicos o psíquicos se cuenta desde la curación o desde que se conoce el alcance definitivo de las secuelas.
+
+Q: ¿Necesito un perito médico?
+A: En la gran mayoría de los casos sí. Es la prueba que permite demostrar que la actuación no fue correcta y que causó el daño.
+
+### Plusvalía municipal: cuándo se puede reclamar la devolución
+URL: https://jurimatch.com/es/guias/plusvalia-municipal
+
+La plusvalía municipal es el impuesto que cobran los ayuntamientos cuando se vende, se dona o se hereda un inmueble urbano. Varias sentencias del Tribunal Constitucional y una reforma de 2021 cambiaron las reglas. Hoy no se paga si no hay ganancia, y en algunos casos se puede reclamar lo pagado.
+
+Q: ¿Tengo que pagar plusvalía si vendí con pérdidas?
+A: No. Si demuestra que no hubo incremento de valor del terreno, el impuesto no se debe.
+
+Q: ¿Puedo recuperar la plusvalía que pagué hace años?
+A: Depende. La sentencia de 2021 impide revisar los casos firmes, las liquidaciones no recurridas y las autoliquidaciones cuya rectificación no se pidió antes de la sentencia. Un abogado o asesor fiscal puede revisar su caso.
+
+Q: ¿Qué cambió con el Real Decreto-ley 26/2021?
+A: Permite elegir entre el método objetivo y el cálculo sobre la ganancia real, y confirma que no se paga si no hay ganancia.
+
+### Preferentes y deuda subordinada: qué se puede reclamar todavía
+URL: https://jurimatch.com/es/guias/preferentes-y-subordinadas
+
+Durante los años de la crisis financiera muchas entidades vendieron participaciones preferentes y deuda subordinada a pequeños ahorradores como si fueran depósitos seguros. Muchos afectados ya recuperaron su dinero por arbitraje o en los tribunales. Hoy la pregunta clave es si su caso sigue dentro de plazo.
+
+Q: ¿Todavía se pueden reclamar las preferentes?
+A: Depende de cuándo pudo conocer el problema y de si firmó alguna renuncia. Muchos casos han prescrito, pero no todos: un abogado debe comprobar los plazos con su documentación.
+
+Q: ¿Qué pasa si acepté el arbitraje?
+A: Si el arbitraje terminó con un laudo o firmó un acuerdo con renuncia, en general no se puede volver a reclamar lo mismo.
+
+### Reclamación de cantidad: cómo usar el procedimiento monitorio
+URL: https://jurimatch.com/es/guias/reclamacion-de-cantidad-monitorio
+
+Si alguien le debe dinero y tiene documentos que lo acreditan, el procedimiento monitorio es una vía rápida y barata para reclamarlo. Lo usan tanto particulares como autónomos y empresas, y la petición inicial se puede presentar sin abogado ni procurador.
+
+Q: ¿Necesito abogado para un monitorio?
+A: No para presentar la petición inicial, sea cual sea el importe. Si el deudor se opone y la cantidad supera 2.000 euros, necesitará abogado y procurador para el juicio.
+
+Q: ¿Cuánto tarda un monitorio?
+A: Depende de la carga del juzgado. El deudor tiene veinte días desde que recibe el requerimiento para pagar u oponerse.
+
+Q: ¿Qué pasa si no se localiza al deudor?
+A: Si no se le puede notificar en el domicilio conocido, el monitorio no puede seguir adelante y habrá que acudir a otro procedimiento.
+
+### Cómo reclamar a una aseguradora que no paga
+URL: https://jurimatch.com/es/guias/reclamar-a-una-aseguradora
+
+Un siniestro rechazado, una valoración muy baja o un pago que no llega: los conflictos con aseguradoras son frecuentes, tanto en seguros de hogar y coche como en vida, salud o accidentes. La ley ofrece varias vías antes de llegar a juicio y penaliza a la aseguradora que se retrasa sin motivo.
+
+Q: ¿Qué plazo tengo para reclamar a mi aseguradora?
+A: Dos años en los seguros de daños y cinco en los seguros de personas, según la Ley de Contrato de Seguro.
+
+Q: ¿Qué son los intereses del artículo 20?
+A: Intereses de demora que la aseguradora debe pagar si se retrasa sin causa justificada: el interés legal incrementado en un 50 por ciento y, pasados dos años, al menos el 20 por ciento anual.
+
+Q: ¿Es obligatorio reclamar antes a la aseguradora?
+A: Para acudir al servicio de reclamaciones de la Dirección General de Seguros, sí. Para ir a juicio, la reclamación previa es en todo caso muy recomendable y suele servir como intento de negociación.
+
+### Cómo reclamar una deuda a una empresa
+URL: https://jurimatch.com/es/guias/reclamar-una-deuda-a-una-empresa
+
+Una factura impagada puede convertirse en un problema serio para una pyme o un autónomo. En España existe un procedimiento rápido para deudas documentadas, el monitorio, y una ley contra la morosidad que permite reclamar intereses. Esto es lo esencial.
+
+Q: ¿Necesito abogado para un monitorio?
+A: No para presentar la petición inicial, sea cual sea el importe. Si el deudor se opone y la cantidad supera 2.000 euros, necesitará abogado y procurador para continuar.
+
+Q: ¿Puedo cobrar intereses por el retraso?
+A: Sí. Entre empresas, la Ley 3/2004 permite reclamar intereses de demora y 40 euros por factura en concepto de costes de cobro, salvo que se pactara otra cosa válida.
+
+### Tarjetas revolving: cómo reclamar si los intereses son abusivos
+URL: https://jurimatch.com/es/guias/tarjetas-revolving
+
+Las tarjetas revolving permiten pagar una cuota mensual pequeña mientras la deuda se renueva, con intereses muy altos. Muchas personas pagan durante años sin que la deuda baje. Los tribunales españoles han anulado numerosos contratos por usura o por falta de transparencia.
+
+Q: ¿Qué pasa con la deuda si el contrato es nulo por usura?
+A: Según la Ley de Usura, usted solo tiene que devolver el capital que realmente dispuso. Si ya pagó más que eso, la entidad debe devolverle la diferencia.
+
+Q: ¿Puedo reclamar si la tarjeta ya está cancelada?
+A: En general sí. Necesitará el contrato y el historial de movimientos, que puede pedir a la entidad.
+
+### Vicios de construcción: plazos de garantía y cómo reclamar
+URL: https://jurimatch.com/es/guias/vicios-de-construccion
+
+Grietas, humedades, filtraciones o instalaciones defectuosas en una vivienda nueva pueden dar derecho a reclamar a quienes intervinieron en la construcción. La Ley de Ordenación de la Edificación fija plazos de garantía distintos según la gravedad del defecto, y conviene conocerlos bien.
+
+Q: ¿Cuánto dura la garantía de una vivienda nueva?
+A: Según la LOE, diez años para daños estructurales, tres años para defectos de habitabilidad y un año para defectos de acabado, contados desde la recepción de la obra.
+
+Q: ¿Qué plazo tengo para reclamar cuando aparece el defecto?
+A: Dos años desde que se produce el daño, siempre que haya aparecido dentro del plazo de garantía correspondiente.
+
+Q: ¿A quién reclamo?
+A: Al promotor, que responde solidariamente, y a los agentes que causaron el defecto, como el constructor o los técnicos. Un perito ayuda a identificar el origen.
+
+### Vuelo retrasado o cancelado: cómo reclamar la compensación
+URL: https://jurimatch.com/es/guias/vuelo-retrasado-o-cancelado
+
+Si su vuelo llegó con mucho retraso, se canceló con poca antelación o no le dejaron embarcar, el Reglamento europeo 261/2004 le puede dar derecho a una compensación fija, además de asistencia y reembolso. Muchas reclamaciones se pueden hacer sin abogado.
+
+Q: ¿Cuánto me corresponde por un vuelo retrasado?
+A: Según el Reglamento 261/2004, 250, 400 o 600 euros por pasajero según la distancia, si el retraso en la llegada fue de tres horas o más y no hubo circunstancias extraordinarias.
+
+Q: ¿Necesito abogado para reclamar un vuelo?
+A: No es obligatorio. Puede reclamar a la aerolínea, a AESA y, si la cantidad no supera 2.000 euros, presentar una demanda de juicio verbal sin abogado.
+
+Q: ¿La huelga de la aerolínea es circunstancia extraordinaria?
+A: El TJUE ha dicho que una huelga del propio personal de la aerolínea, en general, no es circunstancia extraordinaria. Las huelgas ajenas, como las de control aéreo, pueden serlo.
+
+## Ratgeber auf Deutsch
+
+### Bankgebühren zurückfordern: Wann Kunden Geld zurückbekommen
+URL: https://jurimatch.com/de/ratgeber/bankgebuehren-zurueckfordern
+
+Viele Banken haben in den vergangenen Jahren Kontogebühren erhöht oder neue Entgelte eingeführt. Nicht jede Gebühr ist zulässig. Die Rechtsprechung des Bundesgerichtshofs hat Kunden mehrfach den Weg zur Rückforderung eröffnet.
+
+Q: Kann ich alle Kontogebühren zurückfordern?
+A: Nein. Betroffen sind vor allem Gebühren, die nur über eine Zustimmungsfiktion eingeführt oder erhöht wurden. Haben Sie aktiv zugestimmt, gelten die Gebühren in der Regel ab der Zustimmung.
+
+Q: Wie weit kann ich zurückfordern?
+A: In der Regel drei Jahre ab Ende des Jahres, in dem der Anspruch entstanden ist und Sie davon wussten. Ältere Ansprüche können verjährt sein.
+
+Q: Was kostet der Ombudsmann der Banken?
+A: Für Verbraucher ist das Schlichtungsverfahren in der Regel kostenlos.
+
+### Baumängel: Rechte von Bauherren und Käufern
+URL: https://jurimatch.com/de/ratgeber/baumaengel
+
+Risse, Feuchtigkeit, undichte Dächer oder fehlerhafte Haustechnik: Mängel am Bau sind teuer und belastend. Das Werkvertragsrecht gibt Bauherren klare Rechte, aber auch Pflichten, vor allem bei der Abnahme und bei der Mängelanzeige.
+
+Q: Wie lange habe ich Gewährleistung am Neubau?
+A: In der Regel fünf Jahre ab der Abnahme. Bei wirksam vereinbarter VOB/B kann die Frist kürzer sein.
+
+Q: Darf ich Mängel selbst beheben lassen und die Kosten verlangen?
+A: Grundsätzlich erst, nachdem Sie dem Unternehmer erfolglos eine angemessene Frist zur Nacherfüllung gesetzt haben.
+
+Q: Was ist ein selbständiges Beweisverfahren?
+A: Ein gerichtliches Verfahren, in dem ein Sachverständiger den Mangel und seine Ursache feststellt, bevor oder ohne dass ein Hauptprozess geführt wird. Es hemmt auch die Verjährung.
+
+### Behandlungsfehler: Rechte von Patienten und wie Sie vorgehen
+URL: https://jurimatch.com/de/ratgeber/behandlungsfehler
+
+Wenn eine ärztliche Behandlung nicht dem medizinischen Standard entsprach und Ihnen dadurch ein Schaden entstanden ist, können Sie Schadensersatz und Schmerzensgeld verlangen. Solche Fälle sind beweisrechtlich anspruchsvoll, es gibt aber kostenlose Hilfen für den Einstieg.
+
+Q: Habe ich ein Recht auf meine Patientenakte?
+A: Ja. Nach § 630g BGB können Sie Einsicht in Ihre Patientenakte verlangen und Kopien erhalten.
+
+Q: Was kostet das Gutachten der Krankenkasse?
+A: Für gesetzlich Versicherte ist die Unterstützung durch die Krankenkasse und ein Gutachten des Medizinischen Dienstes in der Regel kostenlos.
+
+Q: Wer muss den Fehler beweisen?
+A: Grundsätzlich der Patient. Bei einem groben Behandlungsfehler wird jedoch vermutet, dass der Fehler den Schaden verursacht hat.
+
+### Dieselskandal: Wer noch Schadensersatz fordern kann
+URL: https://jurimatch.com/de/ratgeber/dieselskandal
+
+Seit 2015 haben Hunderttausende Käufer von Dieselfahrzeugen gegen Hersteller geklagt, weil die Abgasreinigung im Test anders arbeitete als auf der Straße. Viele Verfahren sind abgeschlossen, doch die Rechtsprechung hat sich weiterentwickelt. Hier lesen Sie, was heute noch möglich ist und worauf Sie achten sollten.
+
+Q: Kann ich auch klagen, wenn ich das Auto schon verkauft habe?
+A: Grundsätzlich ja. Der Verkaufserlös wird bei der Berechnung des Schadens berücksichtigt. Ob sich die Klage dann noch lohnt, sollte eine Kanzlei durchrechnen.
+
+Q: Was ist der Differenzschaden?
+A: Der Betrag, um den das Fahrzeug wegen der unzulässigen Abschalteinrichtung bei Kauf weniger wert war. Der BGH bemisst ihn im Regelfall auf 5 bis 15 Prozent des Kaufpreises, je nach Einzelfall.
+
+Q: Brauche ich eine Rechtsschutzversicherung?
+A: Nicht zwingend. Ohne Versicherung tragen Sie aber das Kostenrisiko, wenn Sie verlieren, es sei denn, ein Prozessfinanzierer übernimmt es gegen eine Erfolgsbeteiligung.
+
+### Erfolgshonorar in Deutschland: Was Anwälte vereinbaren dürfen
+URL: https://jurimatch.com/de/ratgeber/erfolgshonorar
+
+Anwälte in Deutschland dürfen nur in bestimmten Fällen ein Honorar vereinbaren, das vom Erfolg abhängt. Mit einer Reform im Jahr 2021 wurden diese Möglichkeiten erweitert. Ein vollständiges „no win, no fee“ nach britischem oder US-amerikanischem Vorbild bleibt aber die Ausnahme.
+
+Q: Darf ein Anwalt in Deutschland nur bei Erfolg abrechnen?
+A: Nur in den Fällen des § 4a RVG, etwa bei Geldforderungen bis 2.000 Euro, bei Inkassodienstleistungen oder wenn Sie sonst aus wirtschaftlichen Gründen nicht klagen könnten.
+
+Q: Seit wann gelten diese Regeln?
+A: Die erweiterten Möglichkeiten gelten seit dem 1. Oktober 2021.
+
+Q: Was ist die Alternative bei höheren Forderungen?
+A: Häufig ein Prozessfinanzierer, der die Kosten übernimmt und im Erfolgsfall beteiligt wird, oder eine Rechtsschutzversicherung.
+
+### Flugverspätung und Annullierung: Ihre Rechte als Fluggast
+URL: https://jurimatch.com/de/ratgeber/flugverspaetung
+
+Kommt Ihr Flug mit mehr als drei Stunden Verspätung an, wird er kurzfristig annulliert oder werden Sie trotz Buchung nicht befördert, steht Ihnen oft eine pauschale Entschädigung zu. Die Regeln stehen in der EU-Fluggastrechteverordnung. Viele Ansprüche lassen sich ohne Anwalt durchsetzen.
+
+Q: Bekomme ich Geld, wenn wegen eines Streiks gestrichen wurde?
+A: Das hängt davon ab, wer streikt. Nach der Rechtsprechung des EuGH ist ein Streik des eigenen Personals der Airline in der Regel kein außergewöhnlicher Umstand, ein Streik der Flugsicherung dagegen oft schon.
+
+Q: Muss ich einen Gutschein annehmen?
+A: Nein. Bei Annullierung können Sie die Erstattung des Ticketpreises in Geld verlangen. Ein Gutschein ist nur eine Alternative, wenn Sie ausdrücklich zustimmen.
+
+Q: Brauche ich einen Anwalt?
+A: Nicht unbedingt. Die Forderung bei der Airline und die Schlichtung sind ohne Anwalt möglich, und am Amtsgericht besteht kein Anwaltszwang.
+
+### Post vom Inkasso: Forderung prüfen und richtig reagieren
+URL: https://jurimatch.com/de/ratgeber/inkasso
+
+Ein Inkassoschreiben wirkt oft bedrohlich, ist aber zunächst nur eine Zahlungsaufforderung. Ob Sie zahlen müssen, hängt davon ab, ob die Forderung berechtigt ist. Ignorieren sollten Sie das Schreiben trotzdem nicht. Hier lesen Sie, wie Sie richtig reagieren, und was gilt, wenn Sie selbst offene Forderungen eintreiben wollen.
+
+Q: Darf das Inkasso einen SCHUFA-Eintrag machen?
+A: Nur unter engen Voraussetzungen, unter anderem wenn die Forderung unbestritten ist und Sie vorher gemahnt wurden. Bestreiten Sie die Forderung schriftlich, darf sie in der Regel nicht gemeldet werden.
+
+Q: Muss ich auf ein Inkassoschreiben reagieren?
+A: Sie sollten es zumindest prüfen. Ist die Forderung unberechtigt, widersprechen Sie schriftlich. Auf einen gerichtlichen Mahnbescheid müssen Sie innerhalb von zwei Wochen reagieren, sonst droht die Vollstreckung.
+
+Q: Wie treibe ich als Unternehmen eine offene Rechnung ein?
+A: Nach einer Mahnung können Sie selbst online einen gerichtlichen Mahnbescheid beantragen oder eine Kanzlei bzw. ein Inkassounternehmen beauftragen. Bei Zahlungsverzug können Sie Verzugszinsen und unter Unternehmen eine Pauschale von 40 Euro verlangen.
+
+### Verluste mit Kapitalanlagen: Wann Anleger Schadensersatz fordern können
+URL: https://jurimatch.com/de/ratgeber/kapitalanlage
+
+Nicht jeder Verlust mit einer Geldanlage begründet einen Anspruch: Wer investiert, trägt das Marktrisiko. Anders ist es, wenn Sie falsch beraten wurden, Risiken verschwiegen wurden oder ein Prospekt unrichtig war. Dann können Berater, Vermittler, Banken oder Prospektverantwortliche haften.
+
+Q: Kann ich Schadensersatz verlangen, nur weil die Anlage an Wert verloren hat?
+A: Nein. Ein Kursverlust allein begründet keinen Anspruch. Es kommt darauf an, ob Sie falsch beraten oder getäuscht wurden oder ob der Prospekt fehlerhaft war.
+
+Q: Was kostet die Ombudsstelle?
+A: Die Ombudsverfahren der Banken und der Investmentfondsbranche sind für Verbraucher in der Regel kostenlos. Ihre Entscheidungen binden Sie nicht; Sie können danach noch klagen.
+
+Q: Was tun, wenn der Anbieter insolvent ist?
+A: Melden Sie Ihre Forderung im Insolvenzverfahren an. Prüfen Sie außerdem, ob Berater, Vermittler, Banken oder Verantwortliche persönlich haften.
+
+### Kündigung erhalten: Kündigungsschutzklage und Abfindung
+URL: https://jurimatch.com/de/ratgeber/kuendigung
+
+Nach einer Kündigung zählt jeder Tag: Wer sich wehren will, muss innerhalb von drei Wochen Klage beim Arbeitsgericht erheben. Hier erfahren Sie, wann eine Kündigung angreifbar ist, wie es zu einer Abfindung kommt und welche Kosten auf Sie zukommen.
+
+Q: Habe ich automatisch Anspruch auf eine Abfindung?
+A: Nein. Eine Abfindung ist meist Verhandlungssache. Einen gesetzlichen Anspruch gibt es nur in besonderen Fällen, etwa wenn der Arbeitgeber bei einer betriebsbedingten Kündigung eine Abfindung nach § 1a KSchG anbietet und Sie die Klagefrist verstreichen lassen.
+
+Q: Was passiert, wenn ich die drei Wochen verpasse?
+A: Dann gilt die Kündigung grundsätzlich als von Anfang an wirksam. Eine nachträgliche Zulassung der Klage ist nur in engen Ausnahmefällen möglich.
+
+Q: Wer zahlt meinen Anwalt, wenn ich gewinne?
+A: In der ersten Instanz vor dem Arbeitsgericht zahlt jede Seite ihren Anwalt selbst. Eine Rechtsschutzversicherung oder die Gewerkschaft kann die Kosten übernehmen.
+
+### Mietkaution zurückfordern: Ihre Rechte nach dem Auszug
+URL: https://jurimatch.com/de/ratgeber/mietkaution-zurueckfordern
+
+Nach dem Auszug warten viele Mieter lange auf ihre Kaution oder erhalten nur einen Teil zurück. Das Gesetz regelt Höhe und Anlage der Kaution genau. Bei der Rückzahlung hat der Vermieter einen gewissen Spielraum, aber nicht unbegrenzt.
+
+Q: Wie hoch darf die Mietkaution sein?
+A: Höchstens drei Monatsmieten ohne Betriebskosten, also drei Nettokaltmieten (§ 551 BGB). Sie dürfen in drei Monatsraten zahlen.
+
+Q: Wann muss der Vermieter die Kaution zurückzahlen?
+A: Nach einer angemessenen Prüfungsfrist, die vom Einzelfall abhängt. Für eine noch ausstehende Nebenkostenabrechnung darf er einen angemessenen Betrag zurückhalten.
+
+Q: Bekomme ich auch Zinsen?
+A: Ja. Die Erträge der Kautionsanlage stehen dem Mieter zu, auch wenn sie bei niedrigen Zinsen gering ausfallen können.
+
+### Musterfeststellungsklage und Abhilfeklage: Sammelklagen in Deutschland
+URL: https://jurimatch.com/de/ratgeber/musterfeststellungsklage-abhilfeklage
+
+Eine Sammelklage nach US-amerikanischem Vorbild gibt es in Deutschland nicht. Verbraucherverbände können aber für viele Betroffene gemeinsam klagen: mit der Musterfeststellungsklage und seit 2023 mit der Abhilfeklage, die direkt zu Zahlungen führen kann.
+
+Q: Gibt es in Deutschland Sammelklagen?
+A: Nicht nach US-Vorbild. Qualifizierte Verbände können aber eine Musterfeststellungsklage oder seit 2023 eine Abhilfeklage für viele Verbraucher erheben.
+
+Q: Was kostet die Anmeldung?
+A: Nichts. Die Anmeldung zum Verbandsklageregister ist kostenlos und geht ohne Anwalt.
+
+Q: Was ist der Unterschied zwischen Abhilfeklage und Musterfeststellungsklage?
+A: Die Musterfeststellungsklage stellt nur Voraussetzungen von Ansprüchen fest. Die Abhilfeklage kann direkt zu einer Leistung, etwa einer Zahlung, an die angemeldeten Verbraucher führen.
+
+### Online-Betrug und Krypto-Betrug: Was Sie sofort tun sollten
+URL: https://jurimatch.com/de/ratgeber/online-betrug-krypto
+
+Phishing, gefälschte Bankanrufe, Fake-Shops und angebliche Trading- oder Krypto-Plattformen verursachen jedes Jahr hohe Schäden. Je schneller Sie handeln, desto größer ist die Chance, Geld zurückzubekommen.
+
+Q: Muss meine Bank mir das Geld erstatten?
+A: Bei nicht autorisierten Zahlungen grundsätzlich ja, es sei denn, Sie haben betrügerisch oder grob fahrlässig gehandelt. Haben Sie die Zahlung selbst freigegeben, ist eine Erstattung schwieriger.
+
+Q: Wo zeige ich Online-Betrug an?
+A: Bei der Polizei, auch über die Onlinewache Ihres Bundeslandes. Unerlaubte Finanzanbieter können Sie zusätzlich der BaFin melden.
+
+Q: Sind Recovery-Firmen seriös?
+A: Größte Vorsicht. Ungefragte Kontaktaufnahme und Vorkasse sind typische Zeichen eines Folgebetrugs.
+
+### Prozessfinanzierung: So läuft die Finanzierung Ihres Verfahrens ab
+URL: https://jurimatch.com/de/ratgeber/prozessfinanzierung-ablauf
+
+Ein Prozessfinanzierer übernimmt die Kosten eines Rechtsstreits und das Kostenrisiko. Im Erfolgsfall erhält er einen vereinbarten Anteil am Erlös, bei einer Niederlage geht er in der Regel leer aus. In Deutschland ist dieses Modell seit vielen Jahren etabliert.
+
+Q: Was passiert, wenn ich verliere?
+A: In der Regel trägt der Finanzierer die Kosten, einschließlich der Kosten der Gegenseite, und verlangt nichts zurück. Prüfen Sie die genaue Regelung im Vertrag.
+
+Q: Darf ich selbst über einen Vergleich entscheiden?
+A: Das hängt vom Vertrag ab. Viele Verträge sehen Mitsprache- oder Zustimmungsrechte des Finanzierers vor.
+
+Q: Wer wählt den Anwalt aus?
+A: Meist behalten Sie Ihren Anwalt. Der Finanzierer möchte aber in der Regel mit einer erfahrenen Kanzlei zusammenarbeiten.
+
+### Streit mit der Versicherung: Wenn die Versicherung nicht zahlt
+URL: https://jurimatch.com/de/ratgeber/streit-mit-der-versicherung
+
+Ob Hausrat, Wohngebäude, Berufsunfähigkeit oder Unfallversicherung: Lehnt die Versicherung eine Leistung ab oder kürzt sie, ist das nicht das letzte Wort. Vor einer Klage gibt es kostenlose Schlichtungsmöglichkeiten.
+
+Q: Ist der Versicherungsombudsmann kostenlos?
+A: Ja, für Verbraucher ist das Verfahren kostenlos. Seine Entscheidung bindet bis zu einem bestimmten Beschwerdewert nur den Versicherer, Sie können danach trotzdem klagen.
+
+Q: Wie lange habe ich Zeit, gegen die Ablehnung vorzugehen?
+A: Ansprüche verjähren in der Regel nach drei Jahren ab Ende des Entstehungsjahres. Die Verjährung ist gehemmt, solange der Versicherer über die Anmeldung noch nicht entschieden hat.
+
+Q: Kann die BaFin meine Versicherung zur Zahlung verpflichten?
+A: Nein. Die BaFin nutzt Beschwerden für ihre Aufsicht, entscheidet aber keine Einzelfälle. Dafür sind Ombudsmann und Gerichte zuständig.
+
+### Verkehrsunfall: Schadensersatz und Schmerzensgeld richtig fordern
+URL: https://jurimatch.com/de/ratgeber/verkehrsunfall
+
+Wer unverschuldet in einen Verkehrsunfall verwickelt wird, kann seinen Schaden direkt bei der Kfz-Haftpflichtversicherung des Unfallgegners geltend machen. Was ersetzt wird, hängt vom Einzelfall ab. Viele Geschädigte verschenken Geld, weil sie das erste Angebot der Versicherung annehmen.
+
+Q: Muss ich den Gutachter der Versicherung akzeptieren?
+A: Nein. Als Geschädigter dürfen Sie einen unabhängigen Sachverständigen wählen. Bei Bagatellschäden kann ein Kostenvoranschlag genügen.
+
+Q: Zahlt die gegnerische Versicherung meinen Anwalt?
+A: Bei einem unverschuldeten Unfall gehören die gesetzlichen Anwaltskosten in der Regel zum Schaden, den die Versicherung ersetzen muss. Bei Mitschuld wird gequotelt.
+
+Q: Wie lange habe ich Zeit?
+A: In der Regel drei Jahre ab Ende des Unfalljahres. Verhandlungen mit der Versicherung hemmen die Frist.
+
+## Guides en français
+
+### Accident de la route : être indemnisé par l'assureur
+URL: https://jurimatch.com/fr/guides/accident-de-la-route
+
+En France, les victimes d'accidents de la circulation bénéficient d'un régime d'indemnisation favorable, issu de la loi Badinter de 1985. L'assureur du véhicule impliqué doit faire une offre. Voici comment fonctionne ce régime et comment défendre vos intérêts.
+
+Q: Dois-je accepter la première offre de l'assureur ?
+A: Rien ne vous y oblige. Faites-la vérifier, surtout si les séquelles ne sont pas encore stabilisées ; une offre provisionnelle n'éteint pas vos droits.
+
+Q: Un piéton fautif est-il indemnisé ?
+A: Oui en règle générale, car seule une faute inexcusable, cause exclusive de l'accident, peut lui être opposée, et pas dans tous les cas.
+
+Q: Le responsable n'était pas assuré. Que faire ?
+A: Le Fonds de garantie des assurances obligatoires de dommages peut prendre le relais, sous conditions.
+
+### Action de groupe en France : comment fonctionne une action collective
+URL: https://jurimatch.com/fr/guides/action-de-groupe
+
+Quand un même manquement touche de nombreuses personnes, l'action de groupe permet de regrouper les demandes dans une seule procédure. En France, elle existe depuis la loi Hamon de 2014 et a été étendue depuis. Voici son fonctionnement en termes simples.
+
+Q: Puis-je lancer moi-même une action de groupe ?
+A: Non. Seules les entités habilitées par la loi, comme certaines associations agréées, peuvent l'engager. Vous pouvez leur signaler votre situation.
+
+Q: Suis-je automatiquement inclus dans le groupe ?
+A: Non. En France, il faut adhérer au groupe dans le délai fixé par le jugement.
+
+Q: Combien coûte l'adhésion ?
+A: En général rien pour la victime. Lisez attentivement les conditions annoncées par l'association.
+
+### Erreur médicale : obtenir réparation en France
+URL: https://jurimatch.com/fr/guides/erreur-medicale
+
+Après un dommage subi lors de soins, plusieurs voies existent : amiable, devant une commission spécialisée, ou judiciaire. Le droit distingue la faute du professionnel et l'accident médical sans faute. Voici les repères essentiels, issus pour l'essentiel de la loi Kouchner de 2002.
+
+Q: Faut-il prouver une faute ?
+A: En règle générale oui, sauf pour les infections nosocomiales dans un établissement et les accidents médicaux graves sans faute, indemnisés par la solidarité nationale sous conditions.
+
+Q: Combien de temps ai-je pour agir ?
+A: En principe dix ans à compter de la consolidation du dommage. Faites vérifier ce délai pour votre situation.
+
+Q: Puis-je obtenir mon dossier médical ?
+A: Oui. Le patient a un droit d'accès direct à son dossier, sur demande écrite.
+
+### Escroquerie en ligne et arnaque aux cryptomonnaies : que faire ?
+URL: https://jurimatch.com/fr/guides/escroquerie-en-ligne-crypto
+
+Faux site d'investissement, faux conseiller bancaire, plateforme crypto fictive : les escroqueries en ligne se multiplient. Les chances de récupérer les fonds dépendent beaucoup de la rapidité de la réaction. Voici les bons réflexes et les recours possibles.
+
+Q: Peut-on récupérer des cryptomonnaies volées ?
+A: C'est parfois possible lorsque les fonds transitent par une plateforme identifiable qui peut être contrainte de les geler, mais rien n'est garanti. La rapidité est déterminante.
+
+Q: Une société me propose de récupérer mon argent contre un paiement. Est-ce sérieux ?
+A: Soyez très prudent : les arnaques au recouvrement visent précisément les victimes. Vérifiez qu'il s'agit d'un avocat inscrit à un barreau ou d'un professionnel réglementé.
+
+Q: Ma banque doit-elle me rembourser ?
+A: Pour une opération que vous n'avez pas autorisée, en principe oui, sauf négligence grave prouvée. Pour un virement que vous avez validé, c'est plus difficile mais pas toujours exclu.
+
+Q: Faut-il porter plainte même si l'escroc est à l'étranger ?
+A: Oui. La plainte est souvent exigée par la banque et elle permet des investigations et une coopération internationale.
+
+### Honoraires de résultat en France : ce que permet le pacte de quota litis
+URL: https://jurimatch.com/fr/guides/honoraires-de-resultat
+
+Le « no win, no fee » anglo-saxon n'existe pas tel quel en France. Le droit français permet toutefois de lier une partie des honoraires au résultat, et d'autres solutions réduisent le coût d'un procès. Voici ce qui est autorisé et comment négocier.
+
+Q: Un avocat peut-il travailler gratuitement si je perds ?
+A: Pas totalement : un honoraire fixé exclusivement en fonction du résultat est interdit. L'honoraire de base peut être modéré, complété par un honoraire de résultat.
+
+Q: La convention d'honoraires doit-elle être écrite ?
+A: Oui, elle est obligatoire, sauf urgence, force majeure ou intervention au titre de l'aide juridictionnelle totale.
+
+Q: Que faire si je conteste la facture de mon avocat ?
+A: Vous pouvez saisir le bâtonnier de l'ordre des avocats, qui tranche les contestations d'honoraires.
+
+### Licenciement abusif : contester son licenciement aux prud'hommes
+URL: https://jurimatch.com/fr/guides/licenciement-abusif
+
+Un salarié licencié sans motif valable peut saisir le conseil de prud'hommes pour obtenir des indemnités, voire sa réintégration dans certains cas. Voici les notions clés, les délais à respecter et le déroulement de la procédure.
+
+Q: Combien de temps ai-je pour contester mon licenciement ?
+A: En principe douze mois à compter de la notification du licenciement, avec des exceptions. Agissez vite, car réunir les preuves prend du temps.
+
+Q: Le barème s'applique-t-il toujours ?
+A: Non. Il ne s'applique pas lorsque le licenciement est nul, par exemple en cas de discrimination ou de harcèlement.
+
+Q: Dois-je avoir un avocat aux prud'hommes ?
+A: Ce n'est pas obligatoire en première instance, mais c'est souvent utile pour chiffrer les demandes et préparer les preuves.
+
+### Litige avec sa banque : frais, opérations frauduleuses et recours
+URL: https://jurimatch.com/fr/guides/litige-banque
+
+Paiement par carte que vous n'avez pas fait, virement frauduleux, frais injustifiés ou placement mal conseillé : un litige avec sa banque se règle souvent par étapes, de la réclamation au médiateur, avant le juge. Voici comment faire valoir vos droits.
+
+Q: Ma banque refuse de rembourser un paiement frauduleux. Que faire ?
+A: Rappelez par écrit que la banque doit rembourser une opération non autorisée, sauf si elle prouve une négligence grave de votre part. Saisissez ensuite le médiateur bancaire.
+
+Q: Le médiateur bancaire est-il payant ?
+A: Non, la médiation est gratuite pour le client. Vous restez libre de saisir le juge si sa proposition ne vous convient pas.
+
+Q: J'ai validé moi-même un virement vers un escroc. Puis-je être remboursé ?
+A: C'est plus difficile, car l'opération est autorisée. Selon les circonstances, la responsabilité de la banque peut être discutée ; faites examiner votre dossier.
+
+### Litige commercial : contrats, rupture et différends entre entreprises
+URL: https://jurimatch.com/fr/guides/litige-commercial
+
+Entre entreprises, les litiges naissent souvent d'un contrat mal exécuté, d'une relation commerciale rompue sans préavis ou d'un désaccord entre associés. Voici les fondements juridiques les plus courants et la manière de les faire valoir.
+
+Q: Quel préavis en cas de rupture d'une relation commerciale ?
+A: Un préavis écrit tenant compte de la durée de la relation. Il n'existe pas de durée unique ; le juge apprécie au cas par cas.
+
+Q: Un financeur peut-il prendre en charge mon litige ?
+A: C'est possible pour des litiges dont l'enjeu est important et les chances sérieuses. Le financeur se rémunère sur la somme obtenue.
+
+Q: La médiation est-elle obligatoire ?
+A: Elle l'est si le contrat l'impose. Sinon elle reste recommandée, car elle est rapide et confidentielle.
+
+### Recouvrement de créances entre entreprises : se faire payer une facture
+URL: https://jurimatch.com/fr/guides/recouvrement-creances-entreprises
+
+Un client professionnel qui ne règle pas sa facture expose votre trésorerie. Le droit français prévoit des pénalités automatiques et des procédures rapides pour obtenir un titre exécutoire. Voici comment procéder, de la relance amiable au juge.
+
+Q: L'indemnité de 40 euros est-elle due par facture ?
+A: Oui, elle est due pour chaque facture payée en retard, en plus des pénalités. Si vos frais réels sont plus élevés, une indemnisation complémentaire peut être demandée sur justificatifs.
+
+Q: Faut-il un avocat pour une injonction de payer ?
+A: Non, la requête peut être déposée directement par l'entreprise. Un avocat devient utile si le débiteur forme opposition.
+
+Q: Que faire si mon client est en liquidation ?
+A: Déclarez votre créance au mandataire judiciaire dans le délai légal. Les chances d'être payé dépendent de l'actif disponible et du rang de votre créance.
+
+### Vol retardé ou annulé : vos droits et comment obtenir une indemnisation
+URL: https://jurimatch.com/fr/guides/vol-retarde-annule
+
+Le règlement européen 261/2004 protège les passagers aériens en cas de retard important, d'annulation ou de refus d'embarquement. Il prévoit une assistance pendant l'attente et, dans de nombreux cas, une indemnisation forfaitaire. Voici ce qu'il faut savoir et comment réclamer.
+
+Q: Mon vol a eu 2 h 50 de retard. Ai-je droit à une indemnisation ?
+A: En principe non : le seuil retenu par la Cour de justice de l'Union européenne est de trois heures de retard à l'arrivée. Vous gardez droit à l'assistance pendant l'attente.
+
+Q: La compagnie me propose un avoir. Dois-je l'accepter ?
+A: En cas d'annulation, vous pouvez choisir le remboursement en argent. L'avoir n'est qu'une option ; il ne remplace pas l'indemnisation forfaitaire si elle est due.
+
+Q: Le règlement s'applique-t-il à un vol hors Europe ?
+A: Oui pour un vol au départ de l'Union européenne, quelle que soit la compagnie. Pour un vol vers l'Union, seulement s'il est opéré par une compagnie européenne.
+
+## Guide in italiano
+
+### Azione di classe in Italia: come funziona dopo la riforma
+URL: https://jurimatch.com/it/guide/azione-di-classe
+
+Quando lo stesso illecito colpisce molte persone, l'azione di classe permette di far valere i diritti in un unico processo. Con la riforma della legge 31/2019, in vigore dal 2021, lo strumento è stato spostato nel codice di procedura civile ed esteso. Ecco come funziona.
+
+Q: Posso promuovere da solo un'azione di classe?
+A: Sì, ciascun componente della classe può promuoverla, oltre alle associazioni iscritte nell'apposito elenco. In pratica serve un avvocato e una preparazione accurata.
+
+Q: Si può aderire dopo la sentenza?
+A: Sì, la riforma consente l'adesione anche dopo la sentenza che accoglie l'azione, entro il termine fissato dal tribunale.
+
+Q: La riforma vale per fatti passati?
+A: Le nuove regole si applicano alle condotte successive alla loro entrata in vigore nel 2021; per i fatti precedenti resta la disciplina previgente.
+
+### Controversie con la banca: reclamo, Arbitro Bancario Finanziario e tribunale
+URL: https://jurimatch.com/it/guide/controversie-banca
+
+Pagamenti che non hai fatto, truffe con bonifico, commissioni non dovute o investimenti consigliati male: le controversie con la banca si affrontano per gradi, dal reclamo agli arbitri specializzati, fino al giudice. Ecco come fare.
+
+Q: La banca deve rimborsarmi un pagamento che non ho fatto?
+A: In linea di principio sì, senza indugio, salvo che dimostri il tuo dolo o la tua colpa grave. Contesta subito e comunque entro tredici mesi.
+
+Q: Serve un avvocato per l'Arbitro Bancario Finanziario?
+A: No, il ricorso si presenta online anche da soli. Un professionista può essere utile nei casi complessi.
+
+Q: Le decisioni dell'ABF sono vincolanti?
+A: Non come una sentenza, ma l'inadempimento della banca viene reso pubblico. Resta sempre possibile rivolgersi al giudice.
+
+### Finanziamento delle cause (litigation funding): come funziona in Italia
+URL: https://jurimatch.com/it/guide/finanziamento-cause
+
+Il finanziamento delle cause da parte di terzi permette di sostenere una causa senza anticipare le spese legali: un finanziatore paga i costi e riceve una parte del risultato solo in caso di successo. In Italia è uno strumento ancora poco diffuso ma in crescita.
+
+Q: Se perdo la causa devo restituire il finanziamento?
+A: Nel modello tipico no: il finanziatore si assume il rischio. Verifica però se il contratto copre anche le spese da rimborsare alla controparte.
+
+Q: Quanto chiede un finanziatore?
+A: Dipende dal rischio e dalla durata: una percentuale del recuperato o un multiplo dell'investimento. Confronta più offerte.
+
+Q: Il finanziamento delle cause è legale in Italia?
+A: Sì, non è vietato e si regola con un contratto, anche se manca una disciplina specifica del settore.
+
+### Incidente stradale: come ottenere il risarcimento dall'assicurazione
+URL: https://jurimatch.com/it/guide/incidente-stradale
+
+Dopo un incidente stradale, il risarcimento passa quasi sempre per l'assicurazione RC auto. Il Codice delle assicurazioni private fissa procedure e termini precisi. Ecco i passaggi principali per tutelarti.
+
+Q: Entro quanto tempo devo chiedere il risarcimento?
+A: Il diritto si prescrive in due anni dal sinistro, salvo termini più lunghi quando il fatto è un reato. Conviene comunque attivarsi subito.
+
+Q: Devo accettare l'offerta della compagnia?
+A: No. Puoi incassare la somma offerta a titolo di acconto e contestarla, oppure rifiutarla e agire in giudizio dopo la negoziazione assistita.
+
+Q: Chi paga se il responsabile non è assicurato?
+A: Il Fondo di garanzia per le vittime della strada, alle condizioni previste dalla legge.
+
+### Licenziamento illegittimo: come impugnarlo e quali tutele
+URL: https://jurimatch.com/it/guide/licenziamento-illegittimo
+
+Il lavoratore licenziato senza un motivo valido può impugnare il licenziamento e ottenere un'indennità o, nei casi più gravi, la reintegrazione. I termini sono brevi e vanno rispettati con attenzione. Ecco le regole principali.
+
+Q: Entro quando devo impugnare il licenziamento?
+A: Entro 60 giorni dalla comunicazione scritta, con un atto scritto. Poi entro 180 giorni va depositato il ricorso o chiesta la conciliazione.
+
+Q: Ho diritto alla reintegrazione?
+A: Dipende dalla data di assunzione, dalle dimensioni dell'azienda e dal tipo di vizio. Il licenziamento discriminatorio o orale comporta sempre la reintegrazione.
+
+Q: Posso pagare l'avvocato solo in caso di successo?
+A: Si può concordare per iscritto un compenso in percentuale sul risultato, spesso con una parte fissa. Non è ammesso cedere all'avvocato una quota del bene in causa.
+
+### Malasanità: come ottenere il risarcimento per un errore medico
+URL: https://jurimatch.com/it/guide/malasanita
+
+Chi subisce un danno durante le cure può chiedere il risarcimento alla struttura sanitaria e, in alcuni casi, al medico. La legge Gelli-Bianco del 2017 ha ridisegnato le regole. Ecco cosa prevede e come muoversi.
+
+Q: Quanto tempo ho per agire contro l'ospedale?
+A: Di regola dieci anni contro la struttura e cinque contro il medico dipendente. Fai verificare da quando decorrono nel tuo caso.
+
+Q: Devo fare un tentativo di conciliazione?
+A: Sì, prima della causa è obbligatorio l'accertamento tecnico preventivo oppure la mediazione.
+
+Q: Come ottengo la cartella clinica?
+A: Con una richiesta scritta alla struttura sanitaria, che deve consegnarla entro i termini previsti dalla legge Gelli-Bianco.
+
+### Patto di quota lite: pagare l'avvocato in base al risultato
+URL: https://jurimatch.com/it/guide/patto-di-quota-lite
+
+Molti si chiedono se in Italia si possa pagare l'avvocato solo in caso di vittoria. Dal 2006 il compenso legato al risultato è ammesso, con alcuni limiti fissati poi dalla legge professionale forense. Ecco cosa si può concordare e a cosa fare attenzione.
+
+Q: In Italia l'avvocato può farsi pagare solo se vince?
+A: Si può concordare per iscritto un compenso legato al risultato, anche in percentuale. Non è ammesso che l'avvocato riceva una quota del bene oggetto della causa.
+
+Q: L'accordo deve essere scritto?
+A: Sì, la forma scritta è richiesta e protegge entrambe le parti.
+
+Q: Se perdo, devo pagare l'avvocato della controparte?
+A: Di regola sì, nella misura liquidata dal giudice, salvo compensazione delle spese. Chiedi al tuo avvocato come gestire questo rischio.
+
+### Recupero crediti tra imprese: come farsi pagare una fattura
+URL: https://jurimatch.com/it/guide/recupero-crediti-imprese
+
+Un cliente che non paga mette a rischio la liquidità dell'impresa. La legge prevede interessi di mora automatici nelle transazioni commerciali e una procedura rapida, il decreto ingiuntivo, per ottenere un titolo esecutivo. Ecco come muoversi.
+
+Q: Gli interessi di mora vanno richiesti?
+A: No, nelle transazioni commerciali decorrono automaticamente dalla scadenza del termine di pagamento. È comunque utile indicarli nella messa in mora.
+
+Q: I 40 euro sono dovuti per ogni fattura?
+A: Sì, per ogni transazione pagata in ritardo, oltre agli interessi. Si possono chiedere costi maggiori se documentati.
+
+Q: Serve un avvocato per il decreto ingiuntivo?
+A: Di regola sì, salvo eccezioni per importi molto bassi davanti al giudice di pace.
+
+### Truffe online e con criptovalute: cosa fare subito
+URL: https://jurimatch.com/it/guide/truffe-online-cripto
+
+Falsi siti di trading, finti operatori bancari, piattaforme cripto inesistenti: le truffe online sono in aumento. Le possibilità di recuperare il denaro dipendono molto dalla rapidità della reazione. Ecco cosa fare e quali strade esistono.
+
+Q: Si possono recuperare criptovalute rubate?
+A: A volte sì, quando i fondi passano da una piattaforma identificabile che può essere obbligata a bloccarli, ma non c'è alcuna garanzia. La rapidità è decisiva.
+
+Q: Una società mi offre di recuperare il denaro a pagamento. È affidabile?
+A: Massima prudenza: le truffe di recupero colpiscono proprio le vittime. Verifica che si tratti di un avvocato iscritto all'albo o di un soggetto autorizzato.
+
+Q: La banca deve rimborsarmi?
+A: Per un'operazione che non hai autorizzato, in linea di principio sì, salvo colpa grave dimostrata. Per un bonifico disposto da te è più difficile, ma non sempre escluso.
+
+Q: Ha senso denunciare se il truffatore è all'estero?
+A: Sì. La denuncia è spesso richiesta dalla banca e consente indagini e cooperazione internazionale.
+
+### Volo in ritardo o cancellato: i tuoi diritti e come chiedere il risarcimento
+URL: https://jurimatch.com/it/guide/volo-in-ritardo-cancellato
+
+Il regolamento europeo 261/2004 tutela i passeggeri in caso di ritardo prolungato, cancellazione o negato imbarco. Prevede assistenza durante l'attesa e, in molti casi, una compensazione pecuniaria fissa. Ecco cosa sapere e come presentare il reclamo.
+
+Q: Il mio volo è arrivato con 2 ore e 50 minuti di ritardo. Ho diritto alla compensazione?
+A: Di norma no: la soglia indicata dalla Corte di giustizia dell'Unione europea è di tre ore di ritardo all'arrivo. Hai comunque diritto all'assistenza durante l'attesa.
+
+Q: La compagnia mi offre un voucher. Devo accettarlo?
+A: In caso di cancellazione puoi scegliere il rimborso in denaro. Il voucher è solo un'opzione e non sostituisce la compensazione, se dovuta.
+
+Q: Il regolamento vale per i voli fuori dall'Europa?
+A: Sì per i voli in partenza dall'Unione europea, con qualsiasi compagnia. Per i voli diretti nell'Unione, solo se operati da una compagnia europea.
+
+## Poradniki po polsku
+
+### Błąd medyczny: jakie roszczenia przysługują pacjentowi
+URL: https://jurimatch.com/pl/poradniki/blad-medyczny
+
+Jeżeli w wyniku leczenia doznałeś szkody, której przy prawidłowym postępowaniu dałoby się uniknąć, możesz mieć roszczenia wobec szpitala, przychodni lub lekarza. Sprawy o błędy medyczne są trudne dowodowo, dlatego dobre przygotowanie ma tu szczególne znaczenie.
+
+Q: Czy każdy zły wynik leczenia to błąd medyczny?
+A: Nie. Medycyna nie gwarantuje wyleczenia. Błąd to postępowanie niezgodne z wiedzą medyczną i należytą starannością, które spowodowało szkodę.
+
+Q: Jak uzyskać dokumentację medyczną?
+A: Złóż wniosek do placówki. Ustawa o prawach pacjenta gwarantuje dostęp do dokumentacji, a pierwsza kopia jest co do zasady bezpłatna.
+
+Q: Ile mam czasu na dochodzenie roszczeń?
+A: Co do zasady 3 lata od dowiedzenia się o szkodzie i osobie odpowiedzialnej, a jeżeli szkoda wynikła z przestępstwa, 20 lat. Ustal termin z prawnikiem.
+
+### Finansowanie procesów przez fundusze: jak działa i kiedy ma sens
+URL: https://jurimatch.com/pl/poradniki/finansowanie-procesow
+
+Fundator procesu, czyli zewnętrzny podmiot finansujący spór, pokrywa koszty postępowania w zamian za udział w uzyskanej kwocie. Jeżeli sprawa zostanie przegrana, zwykle nie żąda zwrotu. W Polsce takie finansowanie jest dostępne głównie w większych sprawach.
+
+Q: Czy finansowanie procesów jest w Polsce legalne?
+A: Tak. Nie ma odrębnej ustawy, ale umowy z fundatorami są zawierane na podstawie ogólnych zasad prawa cywilnego.
+
+Q: Co się dzieje, gdy przegram?
+A: Zwykle fundator ponosi stratę i nie żąda zwrotu. Sprawdź jednak w umowie, kto pokrywa koszty należne przeciwnikowi.
+
+Q: Czy mogę sam zdecydować o ugodzie?
+A: To zależy od umowy. Wiele umów przewiduje udział fundatora w decyzji o ugodzie, dlatego warto przeczytać te zapisy szczególnie uważnie.
+
+### Kredyty frankowe (CHF): co orzekły sądy i jak dochodzić roszczeń
+URL: https://jurimatch.com/pl/poradniki/kredyty-frankowe
+
+Kredyty hipoteczne indeksowane lub denominowane we frankach szwajcarskich (CHF) od lat są jednym z najczęstszych sporów konsumentów z bankami w Polsce. Wyroki Trybunału Sprawiedliwości Unii Europejskiej i Sądu Najwyższego mocno wzmocniły pozycję kredytobiorców. Wyjaśniamy, o co chodzi i jak się przygotować.
+
+Q: Czy mogę pozwać bank, jeśli spłaciłem już kredyt frankowy?
+A: Co do zasady tak. Spłata kredytu nie wyklucza roszczeń, ale trzeba sprawdzić terminy przedawnienia i ewentualne ugody lub aneksy.
+
+Q: Co oznacza wyrok w sprawie Dziubak?
+A: TSUE orzekł w 2019 roku, że sąd nie może zastąpić niedozwolonej klauzuli kursowej ogólnymi przepisami ani zwyczajami, a jeżeli umowa nie może bez niej obowiązywać, może zostać uznana za nieważną, jeśli konsument tego chce.
+
+Q: Czy bank może żądać ode mnie opłaty za korzystanie z kapitału?
+A: TSUE uznał, że prawo unijne sprzeciwia się takiemu żądaniu banku ponad zwrot kapitału. Bank może jednak żądać zwrotu wypłaconej kwoty.
+
+Q: Czy ugoda z bankiem jest dobrym rozwiązaniem?
+A: To zależy od warunków. Ugoda daje pewność i szybkość, ale może być mniej korzystna niż wyrok. Przed podpisaniem pokaż ją niezależnemu prawnikowi.
+
+### Opóźniony lub odwołany lot: odszkodowanie i prawa pasażera
+URL: https://jurimatch.com/pl/poradniki/opozniony-lot
+
+Jeżeli Twój lot dotarł do celu z opóźnieniem co najmniej trzech godzin, został odwołany w ostatniej chwili albo odmówiono Ci wejścia na pokład, możesz mieć prawo do zryczałtowanego odszkodowania. Zasady wynikają z unijnego rozporządzenia, a wiele spraw da się załatwić bez prawnika.
+
+Q: Ile wynosi odszkodowanie za opóźniony lot?
+A: 250, 400 lub 600 euro, w zależności od długości trasy, jeżeli opóźnienie w miejscu docelowym wyniosło co najmniej trzy godziny i nie było nadzwyczajnych okoliczności.
+
+Q: Czy usterka techniczna zwalnia linię lotniczą z odszkodowania?
+A: Zwykle nie. Według orzecznictwa TSUE usterki techniczne co do zasady należą do normalnej działalności przewoźnika. Wyjątki są wąskie.
+
+Q: Czy potrzebuję prawnika?
+A: Najczęściej nie. Reklamację i skargę do Urzędu Lotnictwa Cywilnego możesz złożyć samodzielnie. Prawnik przydaje się, gdy przewoźnik konsekwentnie odmawia i sprawa trafia do sądu.
+
+### Oszustwa internetowe i kryptowalutowe: co zrobić, gdy straciłeś pieniądze
+URL: https://jurimatch.com/pl/poradniki/oszustwa-internetowe-kryptowaluty
+
+Phishing, fałszywe sklepy, podszywanie się pod bank i fałszywe platformy inwestycyjne, w tym kryptowalutowe, powodują co roku ogromne straty. Szanse na odzyskanie pieniędzy są największe, gdy działa się w pierwszych godzinach.
+
+Q: Czy bank musi mi oddać pieniądze po oszustwie?
+A: Przy transakcji nieautoryzowanej co do zasady tak, chyba że zachodzą wyjątki przewidziane w ustawie. Jeżeli sam zleciłeś przelew, zwrot jest znacznie trudniejszy.
+
+Q: Gdzie zgłosić oszustwo internetowe?
+A: Na policji lub w prokuraturze, w banku, a także do CERT Polska. Fałszywe platformy inwestycyjne warto zgłosić do KNF.
+
+Q: Czy firmy obiecujące odzyskanie kryptowalut są wiarygodne?
+A: Należy zachować dużą ostrożność. Żądanie opłaty z góry i kontakt z własnej inicjatywy to typowe sygnały kolejnego oszustwa.
+
+### Pozew zbiorowy w Polsce: jak działa postępowanie grupowe
+URL: https://jurimatch.com/pl/poradniki/pozew-zbiorowy
+
+Gdy wiele osób poniosło podobną szkodę z tej samej przyczyny, mogą dochodzić roszczeń wspólnie w postępowaniu grupowym, potocznie nazywanym pozwem zbiorowym. Pozwala to podzielić koszty i wzmocnić pozycję wobec dużego przeciwnika.
+
+Q: Ile osób potrzeba do pozwu zbiorowego?
+A: Co najmniej 10 osób, których roszczenia są jednego rodzaju i opierają się na tej samej lub takiej samej podstawie faktycznej.
+
+Q: Czy mogę dołączyć do grupy w dowolnym momencie?
+A: Nie. Sąd wyznacza termin na przystąpienie do grupy po publicznym ogłoszeniu o postępowaniu. Po jego upływie dołączenie nie jest możliwe.
+
+Q: Jak zarabia pełnomocnik grupy?
+A: Ustawa pozwala ustalić jego wynagrodzenie jako procent od zasądzonej kwoty, w granicach przewidzianych w ustawie. Szczegóły określa umowa.
+
+### Windykacja należności między firmami: od wezwania do nakazu zapłaty
+URL: https://jurimatch.com/pl/poradniki/windykacja-naleznosci
+
+Niezapłacone faktury to codzienność wielu firm. Zanim sprawa trafi do sądu, warto działać szybko i metodycznie: dobrze napisane wezwanie do zapłaty często wystarcza, a przepisy dają wierzycielowi kilka przydatnych narzędzi.
+
+Q: Czy wezwanie do zapłaty jest obowiązkowe?
+A: Nie zawsze jest warunkiem wniesienia pozwu, ale w pozwie trzeba podać, czy strony próbowały rozwiązać spór polubownie. Wezwanie do zapłaty to najprostszy sposób, by to wykazać, i często samo wystarcza do odzyskania pieniędzy.
+
+Q: Ile wynosi rekompensata za koszty odzyskiwania należności?
+A: 40, 70 lub 100 euro, w zależności od wysokości świadczenia, przeliczane na złote według kursu średniego NBP. Przysługuje w transakcjach handlowych po upływie terminu zapłaty.
+
+Q: Czy mogę sam złożyć pozew?
+A: Tak. Przedsiębiorca może działać samodzielnie, także w e-sądzie. Przy wyższych kwotach lub sprzeciwie dłużnika pomoc prawnika zwykle się opłaca.
+
+### Wynagrodzenie za sukces adwokata i radcy prawnego: co wolno w Polsce
+URL: https://jurimatch.com/pl/poradniki/wynagrodzenie-za-sukces
+
+Model „no win, no fee”, w którym prawnik dostaje wynagrodzenie tylko w razie wygranej, w Polsce występuje rzadko i z ograniczeniami. Popularne jest za to połączenie wynagrodzenia podstawowego z premią za sukces. Wyjaśniamy, jak to działa.
+
+Q: Czy adwokat może pracować wyłącznie za procent od wygranej?
+A: Co do zasady nie. Zasady etyki zakazują wynagrodzenia zależnego wyłącznie od wyniku. Dopuszczalna jest premia za sukces obok wynagrodzenia podstawowego.
+
+Q: Czy premia za sukces dotyczy też ugody?
+A: To zależy od umowy. Wiele umów przewiduje premię również w razie ugody, dlatego trzeba to wyraźnie ustalić.
+
+Q: Komu przysługują koszty zastępstwa zasądzone od przeciwnika?
+A: Zasądzane są na rzecz strony, ale umowa z kancelarią może przewidywać, że przypadną pełnomocnikowi. Sprawdź to przed podpisaniem.
+
+### Odszkodowanie za wypadek drogowy: od kogo i jak go dochodzić
+URL: https://jurimatch.com/pl/poradniki/wypadek-drogowy
+
+Po wypadku drogowym poszkodowany może żądać naprawienia szkody od sprawcy, a w praktyce najczęściej bezpośrednio od jego ubezpieczyciela OC. Dotyczy to zarówno szkód w pojeździe, jak i obrażeń ciała. Oto najważniejsze zasady.
+
+Q: Czy muszę pozywać sprawcę wypadku?
+A: Zwykle nie. Roszczenia można zgłosić bezpośrednio do ubezpieczyciela OC sprawcy, a w razie sporu pozwać ubezpieczyciela.
+
+Q: Co to jest zadośćuczynienie?
+A: To pieniężna rekompensata za krzywdę, czyli ból, cierpienie i pogorszenie jakości życia po obrażeniach ciała. Jest niezależna od odszkodowania za szkody majątkowe.
+
+Q: Co jeśli sprawca uciekł albo nie miał OC?
+A: Wtedy roszczenia można kierować do Ubezpieczeniowego Funduszu Gwarancyjnego, który wypłaca świadczenia na zasadach określonych w ustawie.
+
+### Zwolnienie z pracy: kiedy i jak odwołać się do sądu pracy
+URL: https://jurimatch.com/pl/poradniki/zwolnienie-z-pracy
+
+Jeżeli pracodawca wypowiedział Ci umowę o pracę albo rozwiązał ją bez wypowiedzenia, a uważasz to za niezgodne z prawem lub nieuzasadnione, możesz odwołać się do sądu pracy. Termin jest krótki, więc liczy się szybkość.
+
+Q: Ile mam czasu na odwołanie od wypowiedzenia?
+A: 21 dni od doręczenia wypowiedzenia lub oświadczenia o rozwiązaniu umowy bez wypowiedzenia.
+
+Q: Czy muszę mieć prawnika w sądzie pracy?
+A: Nie. Pracownik może działać sam. Prawnik pomaga jednak dobrze sformułować żądania i zebrać dowody.
+
+Q: Co mogę uzyskać w sądzie?
+A: W zależności od sprawy przywrócenie do pracy albo odszkodowanie. Często sprawy kończą się ugodą.
+
+## Guias em português
+
+### Ação trabalhista: prazos, provas e custos
+URL: https://jurimatch.com/pt-br/guias/acao-trabalhista
+
+Verbas rescisórias não pagas, horas extras, FGTS não depositado, assédio ou desvio de função: a Justiça do Trabalho é o caminho para cobrar direitos do contrato de trabalho. Os prazos são rígidos, e a reforma trabalhista de 2017 mudou as regras de custos.
+
+Q: Qual é o prazo para entrar com ação trabalhista?
+A: Até 2 anos depois do fim do contrato, para cobrar os direitos dos últimos 5 anos contados da data em que a ação for proposta.
+
+Q: Posso entrar com ação sem advogado?
+A: Em primeira instância na Justiça do Trabalho, sim, pelo chamado jus postulandi. Mas a assistência de advogado é recomendável e é exigida em alguns recursos.
+
+Q: Quanto cobra um advogado trabalhista?
+A: Não há valor único. É comum o advogado cobrar um percentual do que for obtido, só em caso de êxito. Combine tudo por escrito, inclusive o que acontece em caso de acordo.
+
+### Cobrança indevida do banco: como reclamar e pedir a devolução
+URL: https://jurimatch.com/pt-br/guias/cobranca-indevida-banco
+
+Tarifas não contratadas, seguros ou serviços incluídos sem autorização, juros e encargos cobrados por engano: as cobranças indevidas de bancos estão entre as reclamações de consumo mais frequentes no Brasil. Há vários caminhos gratuitos antes de ir à Justiça.
+
+Q: Sempre recebo em dobro?
+A: O CDC prevê a devolução em dobro do que foi pago indevidamente, salvo engano justificável. Se o banco provar que houve engano justificável, a devolução pode ser simples. Um advogado avalia o seu caso.
+
+Q: O Banco Central resolve meu problema?
+A: O Banco Central recebe reclamações e as usa na supervisão das instituições, mas não decide casos individuais nem obriga a devolução. Para isso, use também a ouvidoria, o consumidor.gov.br, o Procon ou a Justiça.
+
+Q: Posso processar o banco sem advogado?
+A: Sim, no Juizado Especial Cível, em causas de até 20 salários mínimos. Acima disso e até 40 salários mínimos, o advogado é obrigatório.
+
+### Voo atrasado ou cancelado: seus direitos e como reclamar
+URL: https://jurimatch.com/pt-br/guias/voo-atrasado
+
+Atrasos, cancelamentos e preterição de embarque (overbooking) dão ao passageiro direitos de assistência, reembolso ou reacomodação, definidos pela ANAC, e em alguns casos direito a indenização com base no Código de Defesa do Consumidor. Veja o que vale e como reclamar.
+
+Q: Tenho direito a indenização sempre que o voo atrasa?
+A: Não automaticamente. A assistência material e a escolha entre reacomodação e reembolso são obrigações da companhia. A indenização por danos depende de prejuízo comprovado; desde 2020 a lei exige demonstrar o dano extrapatrimonial.
+
+Q: A companhia pode me oferecer só crédito em vez de reembolso?
+A: Nos casos previstos na Resolução 400, o reembolso integral é uma das opções do passageiro. O crédito para viagem futura é uma alternativa que depende da sua aceitação.
+
+Q: Preciso de advogado para processar a companhia?
+A: No Juizado Especial Cível, para causas de até 20 salários mínimos, não. Acima disso e até 40 salários mínimos, o advogado é obrigatório.
+
+## About JuriMatch
+
+### About JuriMatch
+URL: https://jurimatch.com/about
+
+JuriMatch is operated by Equinox Investment Group LLC (Wyoming, USA). We match claimants with no-win-no-fee lawyers and litigation funders.
+
+### How JuriMatch uses AI
+URL: https://jurimatch.com/ai-policy
+
+JuriMatch uses AI to understand your description, suggest matching firms and draft an anonymised case summary. It does not give legal advice or decide cases.
+
+### Conflicts of interest
+URL: https://jurimatch.com/conflicts-of-interest
+
+A plain statement of the interests that could bend a lawyer-matching site, and what we do about each one.
+
+### Editorial policy
+URL: https://jurimatch.com/editorial-policy
+
+How our guides, tools and country notes are written, sourced, reviewed, dated and corrected.
+
+### How JuriMatch works
+URL: https://jurimatch.com/how-it-works
+
+Describe your case, see the no-win-no-fee firms that handle it in your country, and choose who to talk to.
+
+### How JuriMatch makes money
+URL: https://jurimatch.com/how-we-make-money
+
+JuriMatch is free to search. Claimants pay a subscription for matching only when online payment is open. Founding firms pay nothing, and no firm can pay…
+
+### Hand-verified firms, free to reuse
+URL: https://jurimatch.com/open-data
+
+Download the 716 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
+
+### Press and data
+URL: https://jurimatch.com/press
+
+Facts about JuriMatch, directory figures with the date they were computed, logos and downloadable data you can reuse with attribution.
+
+### Directory statistics
+URL: https://jurimatch.com/statistics
+
+How many no-win-no-fee firms JuriMatch lists by country and case type, from live directory data, with how the numbers are counted.
+
+### Verification policy
+URL: https://jurimatch.com/verification-policy
+
+How JuriMatch lists and verifies lawyers and litigation funders: two tiers, what verification checks, re-verification, and how to claim or remove a listing.
+
