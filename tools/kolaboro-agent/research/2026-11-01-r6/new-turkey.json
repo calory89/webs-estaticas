@@ -1685,8 +1685,8 @@
    },
    {
     "claim": "427 apartments plus 25 shops",
-    "status": "verified",
-    "by": "independent",
+    "status": "unverified",
+    "by": "none",
     "source": "https://www.emlakplatform.com.tr/en/projects/basaksehir-avrasya-konutlari-cadde"
    },
    {
@@ -2133,5 +2133,503 @@
   "added": "2026-11-01",
   "verified_score": 2,
   "permit_number": "Konak Municipality building permits no. 71 (27.09.2018, parcel 7700/1), no. 75 (02.11.2018, parcel 7698/1), nos. 75 and 71 (30.06.2020, parcels 8110/1 and 8115/3), amendments 11.04.2022"
+ },
+ {
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "developer": "Yekta Homes (Gürses Group)",
+  "area": "Oba, Alanya",
+  "country": "Turkey",
+  "market": "Alanya",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/yetka-golden-valley",
+  "docs_url": "https://yektahomes.com/",
+  "docs_listed": [
+   "developer homepage: Golden Valley listed under ongoing projects in Oba, from EUR 159,000, building video link",
+   "developer homepage: operating in Mahmutlar since 2005, 17 completed complexes, about 1,000 apartments delivered, part of Gürses Group (1953)",
+   "developer homepage: 'guarantees on-time delivery' and 'all residential complexes are surrendered on time'",
+   "portal: 124 apartments in 5 blocks of 5 floors on 10,140 m2, 1+1 (54 m2) to 6+2 duplex (282 m2), 50% down and 12 instalments, delivery 30 Dec 2026, 85% complete"
+  ],
+  "note": "Five-block, 124-unit complex in Oba, Alanya by Yekta Homes, a Mahmutlar developer that says it has completed 17 complexes since 2005. Prices start at EUR 159,000 and a portal lists 85% completion with delivery on 30 Dec 2026; no permit, escrow or dated progress report is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 159000,
+   "currency": "EUR",
+   "title": "freehold, kat irtifakı (easement) title before completion",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 85,
+   "progress_updates": true,
+   "developer_delivered": "Developer states 17 completed residential complexes in Alanya and about 1,000 apartments delivered since 2005",
+   "units": 124,
+   "payment_plan": "50% down payment, 12 instalments (portal)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published",
+   "escrow": "None published",
+   "progress": "Portal lists 85% completion (updated 26 Sep 2026); developer links a building video",
+   "plans": "Unit size range only; project page could not be loaded in full (connection reset)",
+   "record": "Developer homepage: 17 completed complexes, about 1,000 apartments delivered",
+   "returns": "No rental guarantee; developer guarantees on-time delivery, portal shows 6% expected yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery 30 Dec 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/yetka-golden-valley"
+   },
+   {
+    "claim": "85% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/yetka-golden-valley"
+   },
+   {
+    "claim": "Prices from EUR 159,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yektahomes.com/"
+   },
+   {
+    "claim": "17 completed complexes since 2005",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yektahomes.com/"
+   },
+   {
+    "claim": "About 1,000 apartments delivered and 2,000+ clients",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yektahomes.com/"
+   },
+   {
+    "claim": "All complexes delivered on time",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yektahomes.com/"
+   },
+   {
+    "claim": "Part of Gürses Group founded 1953",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yektahomes.com/"
+   },
+   {
+    "claim": "124 apartments in 5 blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/yetka-golden-valley"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2005,
+   "developer_hq": "Mahmutlar, Alanya, Turkey",
+   "developer_company": null,
+   "developer_projects_delivered": 17,
+   "developer_units_delivered": 1000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex up to 6+2"
+   ],
+   "size_min_m2": 54,
+   "size_max_m2": 282,
+   "price_min": 159000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, 12 instalments",
+   "foreign_ownership": "Freehold title deed available to foreigners in Turkey; developer assists with residence permits",
+   "rental_programme": "Developer offers property management",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool with children's area",
+    "landscaped garden",
+    "fitness centre",
+    "Turkish bath",
+    "steam room",
+    "Finnish sauna",
+    "barbecue area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alanya Municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer names a long delivery record in Alanya",
+   "Small complex near completion per portal"
+  ],
+  "flags": [],
+  "sources": [
+   "https://yektahomes.com/",
+   "https://www.emlakplatform.com.tr/en/projects/yetka-golden-valley"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "natulux-tatlisu-dovec-group",
+  "name": "Natulux",
+  "developer": "Döveç Group (Döveç Construction)",
+  "area": "Küçük Erenköy, Tatlısu",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/natulux-cyprus",
+  "docs_url": "https://www.dovecgroup.com/en/projects/natulux",
+  "docs_listed": [
+   "developer: ongoing, delivery date May 2027, 97 units (3+1 penthouses, 3+1 and 4+1 villas), from GBP 214,000, 32 amenities, 360 virtual tour",
+   "developer: 5,000+ homes delivered, 36 years, Four Seasons Life I delivered April 2019",
+   "portal: 41 blocks of up to 3 floors, from USD 294,734, 35% down and 24 instalments, 5% complete (updated 9 Oct 2026), contract title, 7% expected yield"
+  ],
+  "note": "Boutique beachfront villa and penthouse scheme of 97 units in Tatlısu by Döveç Group, priced from GBP 214,000 with delivery promised for May 2027. A portal updated in Oct 2026 lists only 5% completion, which sits uneasily with the May 2027 date; no permit, escrow or title detail is published by the developer. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 214000,
+   "currency": "GBP",
+   "title": "sales contract (title deed type 'contract' per portal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 5,
+   "progress_updates": false,
+   "developer_delivered": "Developer states 5,000+ homes delivered; Four Seasons Life I in Iskele shown as delivered April 2019",
+   "units": 97,
+   "payment_plan": "35% down, 24 instalments (portal)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or building licence number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Portal lists 5% completion (Oct 2026); developer says only that construction 'progresses'",
+   "plans": "Unit types listed, no floor plans visible in page text",
+   "record": "Developer names delivered projects (Four Seasons Life I, April 2019) and claims 5,000+ homes delivered",
+   "returns": "No guarantee or yield on developer page; portal shows 7% expected yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery May 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/natulux-cyprus"
+   },
+   {
+    "claim": "97 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/natulux"
+   },
+   {
+    "claim": "Prices from GBP 214,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/natulux"
+   },
+   {
+    "claim": "Construction 5% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/natulux-cyprus"
+   },
+   {
+    "claim": "Developer delivered 5,000+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/construction-projects"
+   },
+   {
+    "claim": "Four Seasons Life I delivered April 2019",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/four-seasons-life"
+   },
+   {
+    "claim": "Exclusive beach access",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/natulux"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/natulux"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1990,
+   "developer_hq": "Northern Cyprus",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 5000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR penthouse",
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 214000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 35,
+   "payment_plan": "35% down, 24 instalments",
+   "foreign_ownership": "Sales contract; foreigners need Council of Ministers permission for title transfer in Northern Cyprus",
+   "rental_programme": "Döveç rental management (no figures for Natulux)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "rooftop terraces",
+    "beach access",
+    "wellness facilities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC Town Planning Department / Tatlısu municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Delivery date and starting price published by the developer",
+   "Developer with named delivered projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.dovecgroup.com/en/projects/natulux",
+   "https://www.dovecgroup.com/en/construction-projects",
+   "https://www.dovecgroup.com/en/projects/four-seasons-life",
+   "https://www.emlakplatform.com.tr/en/projects/natulux-cyprus"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "tbilisi-downtown-by-next-next-group",
+  "name": "Tbilisi Downtown by Next",
+  "developer": "Next Group (NEXT Development)",
+  "area": "Avlabari, Old Tbilisi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/tbilisi-downtown-by-next",
+  "docs_url": "https://next-property.com/tbilisi-downtown-by-next",
+  "docs_listed": [
+   "developer: 1BR from USD 157,680, 2BR from USD 222,040, 3BR from USD 287,325 (without renovation), handover Sep 2027",
+   "developer: 20% first payment, 23 months 0% instalments",
+   "developer: 'Annual return up to 12%', '10%-12% annual ROI', 'Highest returns'",
+   "developer: live-cameras page on the group site",
+   "portal: 700 units in 3 blocks, 15% down and 40 instalments, delivery 1 Sep 2027, 40% complete, no title deed yet"
+  ],
+  "note": "Premium apartment complex in Avlabari, central Tbilisi, by Next Group, with 1BR prices from USD 157,680 and handover promised for September 2027 on a 23-month interest-free plan. The developer advertises 10-12% annual ROI (not called guaranteed); a portal lists 40% completion, and no permit or escrow details are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 157680,
+   "currency": "USD",
+   "title": "freehold (title deed after completion)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer site marks NEXT Green, NEXT White, NEXT Apartments, NEXT Orange and Villa Park (Batumi) as sold-out earlier projects and lists a 'Completed Projects' section",
+   "units": 700,
+   "payment_plan": "20% first payment, 23 monthly instalments at 0%",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Group site has a live-cameras page; portal lists 40% (updated 1 Oct 2026); no dated developer report",
+   "plans": "Prices per unit type, no plans in page text",
+   "record": "Developer lists completed and sold-out projects in Batumi; delivery not independently checked",
+   "returns": "'Annual return up to 12%' and '10%-12% annual ROI' marketing, not described as guaranteed"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/tbilisi-downtown-by-next"
+   },
+   {
+    "claim": "Annual ROI 10-12%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/tbilisi-downtown-by-next"
+   },
+   {
+    "claim": "Payment plan 20% then 23 months at 0%",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tbilisi-downtown-by-next"
+   },
+   {
+    "claim": "40% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tbilisi-downtown-by-next"
+   },
+   {
+    "claim": "700 apartments in 3 blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tbilisi-downtown-by-next"
+   },
+   {
+    "claim": "1BR from USD 157,680",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/tbilisi-downtown-by-next"
+   },
+   {
+    "claim": "Earlier projects completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://next-property.com/tbilisi-downtown-by-next"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Batumi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 157680,
+   "price_max": 395870,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% first payment, 23 months 0%",
+   "foreign_ownership": "Freehold apartment ownership for foreigners in Georgia",
+   "rental_programme": "Not specified; ROI 10-12% marketed",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "premium amenities (not itemised in text)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tbilisi City Hall Architecture Service",
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit-type prices, payment plan and handover month published by the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://next-property.com/tbilisi-downtown-by-next",
+   "https://next-property.com/",
+   "https://www.emlakplatform.com.tr/en/projects/tbilisi-downtown-by-next"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 0,
+  "permit_number": null
  }
 ]

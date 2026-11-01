@@ -1,6 +1,12 @@
 [
  {
   "d": "2026-11-01",
+  "k": "data",
+  "t": "+117 new projects in round 6: Dubai, Bali, Thailand, Mexico, Mediterranean, Turkey and Georgia, Southeast Asia, Americas and Gulf",
+  "u": "/database"
+ },
+ {
+  "d": "2026-11-01",
   "k": "feature",
   "t": "Every project and market readable by search engines and AI assistants at its own address",
   "u": "/p/BALI-014/"
