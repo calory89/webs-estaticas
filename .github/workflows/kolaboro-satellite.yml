@@ -47,3 +47,14 @@ jobs:
             git push -q origin $C:refs/heads/pub/_lovable && exit 0
             sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
           done; exit 1
+      - name: Project sites (private numbers only, no images)
+        env:
+          CDSE_CLIENT_ID: ${{ secrets.CDSE_CLIENT_ID }}
+          CDSE_CLIENT_SECRET: ${{ secrets.CDSE_CLIENT_SECRET }}
+        run: |
+          python3 tools/kolaboro-agent/satellite.py --projects tools/kolaboro-agent/projects.json tools/kolaboro-agent/projects-world.json tools/kolaboro-agent/data/sat-projects.json || exit 0
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/data/sat-projects.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro satellite: project site activity $(date -u +%F)"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1

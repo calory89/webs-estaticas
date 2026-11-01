@@ -1,8 +1,194 @@
 {
  "note": "Sites watched from space. 'area' = a development area, not a specific project. 'plot' = a case plot (coordinates from the agent's GPS), published only with the buyer's consent.",
  "sites": [
-  {"id": "bali-seseh", "kind": "area", "label": "Seseh coast, Bali", "lat": -8.6380, "lng": 115.1150},
-  {"id": "bali-ungasan", "kind": "area", "label": "Ungasan, Bukit peninsula, Bali", "lat": -8.8250, "lng": 115.1700},
-  {"id": "bali-pererenan", "kind": "area", "label": "Pererenan, Bali", "lat": -8.6416, "lng": 115.1286}
+  {
+   "id": "bali-seseh",
+   "kind": "area",
+   "label": "Seseh coast, Bali",
+   "lat": -8.638,
+   "lng": 115.115
+  },
+  {
+   "id": "bali-ungasan",
+   "kind": "area",
+   "label": "Ungasan, Bukit peninsula, Bali",
+   "lat": -8.825,
+   "lng": 115.17
+  },
+  {
+   "id": "bali-pererenan",
+   "kind": "area",
+   "label": "Pererenan, Bali",
+   "lat": -8.6416,
+   "lng": 115.1286
+  },
+  {
+   "id": "dubai-dubai-south",
+   "kind": "area",
+   "label": "Dubai South, Dubai",
+   "lat": 24.885,
+   "lng": 55.16
+  },
+  {
+   "id": "dubai-jvc",
+   "kind": "area",
+   "label": "Jumeirah Village Circle, Dubai",
+   "lat": 25.06,
+   "lng": 55.21
+  },
+  {
+   "id": "abudhabi-saadiyat",
+   "kind": "area",
+   "label": "Saadiyat Island, Abu Dhabi",
+   "lat": 24.545,
+   "lng": 54.435
+  },
+  {
+   "id": "rak-marjan",
+   "kind": "area",
+   "label": "Al Marjan Island, Ras Al Khaimah",
+   "lat": 25.672,
+   "lng": 55.738
+  },
+  {
+   "id": "phuket-bangtao",
+   "kind": "area",
+   "label": "Bang Tao, Phuket",
+   "lat": 7.995,
+   "lng": 98.295
+  },
+  {
+   "id": "phuket-rawai",
+   "kind": "area",
+   "label": "Rawai and Nai Harn, Phuket",
+   "lat": 7.775,
+   "lng": 98.32
+  },
+  {
+   "id": "lombok-kuta",
+   "kind": "area",
+   "label": "Kuta, Lombok",
+   "lat": -8.893,
+   "lng": 116.285
+  },
+  {
+   "id": "tulum",
+   "kind": "area",
+   "label": "Tulum, Riviera Maya",
+   "lat": 20.215,
+   "lng": -87.455
+  },
+  {
+   "id": "playa-del-carmen",
+   "kind": "area",
+   "label": "Playa del Carmen north",
+   "lat": 20.66,
+   "lng": -87.06
+  },
+  {
+   "id": "costa-del-sol-estepona",
+   "kind": "area",
+   "label": "Estepona, Costa del Sol",
+   "lat": 36.44,
+   "lng": -5.11
+  },
+  {
+   "id": "algarve-lagos",
+   "kind": "area",
+   "label": "Lagos, Algarve",
+   "lat": 37.105,
+   "lng": -8.685
+  },
+  {
+   "id": "antalya-altintas",
+   "kind": "area",
+   "label": "Altintas, Antalya",
+   "lat": 36.935,
+   "lng": 30.8
+  },
+  {
+   "id": "istanbul-basaksehir",
+   "kind": "area",
+   "label": "Basaksehir, Istanbul",
+   "lat": 41.095,
+   "lng": 28.79
+  },
+  {
+   "id": "northern-cyprus-esentepe",
+   "kind": "area",
+   "label": "Esentepe, Northern Cyprus",
+   "lat": 35.345,
+   "lng": 33.58
+  },
+  {
+   "id": "montenegro-lustica",
+   "kind": "area",
+   "label": "Lustica peninsula, Montenegro",
+   "lat": 42.39,
+   "lng": 18.66
+  },
+  {
+   "id": "ras-el-hekma",
+   "kind": "area",
+   "label": "Ras El Hekma, Egypt",
+   "lat": 31.215,
+   "lng": 27.9
+  },
+  {
+   "id": "oman-muscat-mouj",
+   "kind": "area",
+   "label": "Al Mouj, Muscat",
+   "lat": 23.63,
+   "lng": 58.27
+  },
+  {
+   "id": "punta-cana-cap-cana",
+   "kind": "area",
+   "label": "Cap Cana, Dominican Republic",
+   "lat": 18.465,
+   "lng": -68.42
+  },
+  {
+   "id": "danang-coast",
+   "kind": "area",
+   "label": "Da Nang coast, Vietnam",
+   "lat": 16.0,
+   "lng": 108.265
+  },
+  {
+   "id": "johor-forest-city",
+   "kind": "area",
+   "label": "Forest City, Johor",
+   "lat": 1.335,
+   "lng": 103.595
+  },
+  {
+   "id": "kampot-cambodia",
+   "kind": "area",
+   "label": "Sihanoukville coast, Cambodia",
+   "lat": 10.63,
+   "lng": 103.52
+  },
+  {
+   "id": "labuan-bajo",
+   "kind": "area",
+   "label": "Labuan Bajo, Flores",
+   "lat": -8.495,
+   "lng": 119.88
+  },
+  {
+   "id": "zanzibar-paje",
+   "kind": "area",
+   "label": "Paje, Zanzibar",
+   "lat": -6.265,
+   "lng": 39.53
+  },
+  {
+   "id": "mauritius-grand-baie",
+   "kind": "area",
+   "label": "Grand Baie, Mauritius",
+   "lat": -20.01,
+   "lng": 57.58
+  }
  ]
 }

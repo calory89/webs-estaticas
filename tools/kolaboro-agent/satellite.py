@@ -79,4 +79,44 @@ def main():
               open(os.path.join(outdir, 'satellite.json'), 'w'), indent=1)
     print('done PU', round(total_pu, 1))
 
-if __name__ == '__main__': main()
+
+def projects_mode(pfiles, out):
+    """Private: change on each project site between the same 120-day window a year ago and the last 120 days.
+    Writes only per-slug numbers (no images, never published with coordinates)."""
+    global HALF, PX
+    HALF, PX = 0.0018, 48
+    P = []
+    for f in pfiles:
+        P += json.load(open(f))['projects']
+    today = datetime.date.today()
+    win = [('then', (today - datetime.timedelta(days=485)).isoformat(), (today - datetime.timedelta(days=365)).isoformat()),
+           ('now', (today - datetime.timedelta(days=120)).isoformat(), today.isoformat())]
+    tok = token(); res = {}; pu_total = 0
+    for p in P:
+        fx = p.get('facts') or {}; st = str(p.get('stage') or '').lower()
+        try: lat, lng = float(fx.get('lat')), float(fx.get('lng'))
+        except (TypeError, ValueError): continue
+        if 'complet' in st: continue
+        imgs = {}
+        for key, a, b in win:
+            try: rgb, nd, pu = fetch(tok, lat, lng, a, b); pu_total += pu; imgs[key] = (rgb, list(nd.getdata()))
+            except Exception as e: print('fail', p.get('slug'), key, str(e)[:80])
+        if len(imgs) < 2: continue
+        n0, n1 = imgs['then'][1], imgs['now'][1]
+        both = [(x, y) for x, y in zip(n0, n1) if x > 0 and y > 0]
+        if len(both) < 0.5 * len(n0):
+            res[p['slug']] = {'status': 'too cloudy', 'date': today.isoformat()}; continue
+        lum = lambda im: [sum(px[:3]) / 3 for px in im.getdata()]
+        l0, l1 = lum(imgs['then'][0]), lum(imgs['now'][0])
+        ch = sum(1 for (x, y), a, b in zip(zip(n0, n1), l0, l1) if x > 0 and y > 0 and (abs(x - y) > 40 or abs(a - b) > 35)) / len(both)
+        res[p['slug']] = {'status': 'visible change' if ch >= 0.06 else 'no visible change', 'changed_pct': round(ch * 100, 1), 'date': today.isoformat()}
+        print(p['slug'], res[p['slug']])
+    json.dump({'updated': today.isoformat(), 'method': 'Sentinel-2 L2A median composites, ~400 m box, same 120-day window a year apart; change = NDVI or brightness shift on 6%+ of clear pixels', 'processing_units': round(pu_total, 1), 'sites': res},
+              open(out, 'w'), indent=1)
+    print('projects done', len(res), 'PU', round(pu_total, 1))
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1 and sys.argv[1] == '--projects':
+        projects_mode(sys.argv[2:-1], sys.argv[-1])
+    else:
+        main()
