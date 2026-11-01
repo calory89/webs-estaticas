@@ -360,6 +360,29 @@ def public_cases(projects, latest):
     res['ships'] = ships()
     return res
 
+SHIP_LINKS = [('roadmap', '/roadmap'), ('ask the database', '/database#ask'), ('transparency index', '/transparency-index/'), ('state of off-plan', '/report/state-of-off-plan-2026/'),
+    ('chrome extension', '/extension/'), ('open data api', '/docs/api#open'), ('compare', '/compare/'), ('a file for every project', '/cases'), ('market page', '/m/'), ('page for every market', '/m/'),
+    ('satellite', '/satellite/'), ('registry watch', '/database#machine'), ('register', '/registers/'), ('fingerprint', '/verify'), ('bitcoin', '/verify'), ('machine behind', '/database#machine'),
+    ('plain-language search', '/cases'), ('calendar', '/tools/payment-plan/'), ('overdue', '/cases?q=late'), ('quality check', '/status'), ('rss', '/feed.xml'), ('feeds', '/docs/api#open'),
+    ('watchlist', '/watchlist/'), ('dossier', '/cases'), ('data quality', '/cases'), ('market match', '/tools/market-match/'), ('total cost', '/tools/total-cost/'), ('payment plan risk', '/tools/payment-risk/'),
+    ('currency', '/tools/currency-risk/'), ('compensation', '/tools/delay-compensation/'), ('resale', '/tools/resale-exit/'), ('deposit protection finder', '/tools/deposit-protection/'),
+    ('personal checklist', '/tools/my-checklist/'), ('benchmark', '/developers/benchmark/'), ('disclosure standard', '/standard/'), ('template', '/developers/templates/'), ('press data', '/press/data/'),
+    ('right of reply', '/developers/reply/'), ('response portal', '/developers/reply/'), ('regulator', '/regulators/'), ('government', '/regulators/'), ('licence', '/data/licence/'), ('lawyer', '/lawyers/'),
+    ('refund', '/tools/refund-tracker/'), ('languages', '/de/'), ('localised', '/de/'), ('open source', '/open/scoring.py'), ('badge', '/docs/api#open'), ('alerts', '/feed/alerts.xml'),
+    ('database page', '/database/'), ('stage', '/cases'), ('verification level', '/cases'), ('security page', '/security/'), ('sample report', '/report/sample'), ('portal', '/portal/demo'),
+    ('desk review', '/check'), ('agent onboarding', '/agents/apply'), ('evidence locker', '/technology'), ('metrics', '/metrics')]
+
+
+def _ship_url(t, k=None):
+    tl = (t or '').lower()
+    for key, url in SHIP_LINKS:
+        if key in tl:
+            return url
+    if k in ('data', 'auto'):
+        return '/database'
+    return '/changelog'
+
+
 def ships(limit=40):
     """Public shipping log: curated entries (ships.json) plus one line per day from the discovery agent."""
     out = []
@@ -386,7 +409,7 @@ def ships(limit=40):
     for x in sorted(out, key=lambda x: x['d'], reverse=True):
         key = (x['d'], x['t'])
         if key not in seen:
-            seen.add(key); res.append({'d': x['d'], 'k': x.get('k') or 'feature', 't': x['t']})
+            seen.add(key); res.append({'d': x['d'], 'k': x.get('k') or 'feature', 't': x['t'], 'u': x.get('u') or _ship_url(x['t'], x.get('k'))})
     return res[:limit]
 
 

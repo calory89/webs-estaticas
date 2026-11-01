@@ -12,11 +12,6 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 48 of 100 features shipped, every one tracked"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
   "t": "Government dashboard: Market-level transparency data for regulators, free"
  },
  {
@@ -37,22 +32,12 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 44 of 100 features shipped, every one tracked"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
   "t": "Developer response portal: Developers answer findings with documents, free, before anything is published"
  },
  {
   "d": "2026-11-01",
   "k": "feature",
   "t": "Right of reply on every case: The developer's answer shown next to every finding"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
-  "t": "Public roadmap: 42 of 100 features shipped, every one tracked"
  },
  {
   "d": "2026-11-01",
@@ -72,11 +57,6 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 39 of 100 features shipped, every one tracked"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
   "t": "Currency exposure tool: How much a payment plan costs if the currency moves 10% or 20%"
  },
  {
@@ -88,11 +68,6 @@
   "d": "2026-11-01",
   "k": "feature",
   "t": "Resale exit check: What the contract allows if you need to sell before handover"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
-  "t": "Public roadmap: 36 of 100 features shipped, every one tracked"
  },
  {
   "d": "2026-11-01",
@@ -112,11 +87,6 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 33 of 100 features shipped, every one tracked"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
   "t": "Open disclosure standard: A public, versioned list of what every off-plan project should publish"
  },
  {
@@ -127,17 +97,7 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 31 of 100 features shipped, every one tracked"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
   "t": "Press data desk: Ready-made charts and numbers for journalists, updated daily"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
-  "t": "Public roadmap: 30 of 100 features shipped, every one tracked"
  },
  {
   "d": "2026-11-01",
@@ -157,17 +117,7 @@
  {
   "d": "2026-11-01",
   "k": "feature",
-  "t": "Public roadmap: 27 of 100 features shipped, every one tracked"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
   "t": "Open source scoring code: The scoring rules published so anyone can reproduce a score"
- },
- {
-  "d": "2026-11-01",
-  "k": "feature",
-  "t": "Public roadmap: 26 of 100 features shipped, every one tracked"
  },
  {
   "d": "2026-11-01",
