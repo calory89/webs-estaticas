@@ -1271,5 +1271,161 @@
     false
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ebruli-basaksehir",
+  "name": "Ebruli Başakşehir",
+  "changed": {
+   "price_from": [
+    407000,
+    281000
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "Devlet Güvenceli Yatırım"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9462,
+    9464
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ellington-sands-i-ellington",
+  "name": "Ellington Sands I",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140917,
+    140918
+   ],
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "permit_number": [
+    "4019",
+    "#4019"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "price_from": [
+    493658,
+    493657
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "southmed-talaat-moustafa-group",
+  "name": "SouthMED",
+  "changed": {
+   "price_from": [
+    12000000,
+    null
+   ],
+   "currency": [
+    "EGP",
+    null
+   ],
+   "completion_year": [
+    2028,
+    null
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "le-gemme-vercana-lake-como",
+  "name": "Le Gemme",
+  "changed": {
+   "escrow_or_guarantee": [
+    "All advance payments are secured by bank guarantees",
+    "All advance payments are secured by bank guarantees."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    489900,
+    289900
+   ]
+  }
  }
 ]
