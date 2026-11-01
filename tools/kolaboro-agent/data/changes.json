@@ -5537,5 +5537,218 @@
     "Fideicomiso Buenos Aires Landmark (held the land purchase in 2018); no buyer escrow or guarantee mentioned"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria, which 'vela por la correcta administración de los recursos'; buyers are linked to the 'esquema fiduciario'",
+    "Fiduciary scheme administered by Alianza Fiduciaria, which oversees the correct administration of funds; buyers are linked to the fiduciary scheme"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "cocobay-da-nang",
+  "name": "Cocobay Da Nang",
+  "changed": {
+   "guaranteed_language": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9493,
+    9495
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203831,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    55143,
+    43446
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "shahrukhz-residences-danube",
+  "name": "Shahrukhz Residences by Danube",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 011201382016",
+    "Escrow account no. 011201382016 (Escrow Registered No. 011201382016)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "armani-beach-residences-palm-jumeirah-arada",
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 3538468744702 (listed as 'Escrow Registered No. 3538468744702')",
+    "Escrow Registered No. 3538468744702"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2400000,
+    2586888
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    489900,
+    336900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (held the land purchase in 2018); no buyer escrow or guarantee mentioned",
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the former Tiro Federal land at auction in 2018; no buyer escrow or guarantee mentioned)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "cello-residences-taraf",
+  "name": "Cello Residences",
+  "changed": {
+   "price_from": [
+    1100000,
+    1136100
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
  }
 ]
