@@ -2,354 +2,749 @@ firm_name,category,home_country,countries_served,fee_model,website,last_checked
 5 Rivers Capital,funder,india,India,Non-recourse; min claim USD 15m (about INR 125 crore); min return 4x; max 5 years; arbitration preferred,https://5riverscap.com,2026-11-01
 A Batchelor & Associates,boutique,south africa,South Africa,"No Win, No Fee",https://batchelor.co.za/,2026-11-01
 A Wolmarans Inc,boutique,south africa,South Africa,"No success, no fee: matters run on risk",https://www.awolmaransinc.co.za/,2026-11-01
+A&D Abogados,boutique,spain,Spain,Sólo cobramos si recibes tu indemnización: un pequeño porcentaje de lo cobrado,https://www.abogadosaccidentestrafico.biz/,2026-11-01
 A3 & Asociados,full_service,mexico,Mexico,Success fee conditioned on the outcome as part of the fee agreement,https://aeasociados.com.mx,2026-11-01
 Abbott Solicitors LLP,full_service,ireland,Ireland,Personal injury claims on a no win no fee agreement,https://abbottsolicitors.net/,2026-11-01
 Abdul Muhammed Law Practice,litigation_firm,nigeria,Nigeria,Class actions often on contingency; no legal fees unless the case is won,https://www.amlawpractice.com.ng/,2026-11-01
+Abogado Laboral Cancún,boutique,mexico,Mexico,"Solo cobramos si ganamos, sin pagos iniciales",https://abogadolaboralcancun.com/,2026-11-01
 Abogado Laboral Chile,boutique,chile,Chile,Cuota litis without advance fees in accepted cases,https://www.abogadolaboralchile.cl,2026-11-01
 Abogado Reclama,boutique,spain,Spain,"Success fee only, pay only if won",https://abogadoreclama.com/,2026-10-06
 AbogadoPro,boutique,chile,Chile,Honorario de éxito of 25% to 30%; no charge if nothing is recovered,https://www.abogadopro.cl,2026-11-01
+Abogados Despido Chile,boutique,chile,Chile,Honorarios a resultado: solo cobramos si ganamos el juicio; consultas gratuitas,https://www.abogadosdespido.cl/,2026-11-01
+Abogados Laborales Chile,boutique,chile,Chile,Sólo cobramos honorarios en la medida que ganemos u obtengamos en sus juicios laborales,https://www.abogadoslaborales.com/,2026-11-01
 Abogados Laborales en Concepción,boutique,chile,Chile,"20% to 25% of the result, payable only on a favourable final judgment",https://abogadolaboralconcepcion.cl,2026-11-01
+Abogados Lesiones,boutique,spain,Spain,Abogados a resultados: no cobramos si no ganamos,https://www.abogadoslesiones.es/,2026-11-01
+Abogados Mineros,boutique,chile,Chile,"Solo cobramos si ganamos: 25% de lo obtenido; si perdemos, no pagas nada",https://abogadosmineros.cl/,2026-11-01
+Abogados Rosario,boutique,argentina,Argentina,"Cuota litis: no paga nada por adelantado, solo cobramos si usted cobra",https://consulta.abogadosrosario.com.ar/,2026-11-01
+Abogados Tráfico (Muñoz & Asociados),boutique,spain,Spain,Honorarios de éxito: no adelantas nada y solo cobramos un porcentaje si ganamos,https://www.abogadostrafico.com/,2026-11-01
+Abogados Valencia JC,boutique,spain,Spain,Sin anticipos; solo cobramos si ganamos (15% + IVA en acuerdo extrajudicial),https://abogadosvalenciajc.es/,2026-11-01
+Abraham Watkins,litigation_firm,united states,United States,Nothing upfront and no legal fees unless we win compensation for you,https://abrahamwatkins.com,2026-11-01
+ACC Advisors,boutique,new zealand,New Zealand,"No win, no fee: fee only charged if the matter succeeds",https://www.accadvisor.co.nz/,2026-11-01
+ACC SOS,boutique,new zealand,New Zealand,"Standard, capped or contingency (no win no fee) fee arrangements",https://www.accsos.co.nz/,2026-11-01
+Acción Abogados,full_service,spain,Spain,Accidentes de tráfico: no cobramos hasta obtener resultados,http://www.accionabogados.com/,2026-11-01
 Acropiece Law Office,boutique,japan,Japan,Consultation and retainer free; no fees at all if compensation is not increased,https://acropiece-kotsujiko.com/,2026-11-01
+Adams McWilliam Solicitors,boutique,australia,Australia,"No win, no fee compensation claims",https://amwlaw.com.au/,2026-11-01
 Adero Law,boutique,australia,Australia,Group members retained under a no win no fee contract once class action commences,https://www.aderolaw.com.au,2026-10-06
 Adire Law Office,full_service,japan,Japan,"Traffic accident cases: retainer free, success fee paid afterwards from compensation",https://www.adire.jp/,2026-11-01
+Adism,collection_agency,italy,Italy,No advance costs; client pays only once compensation is obtained,https://adism.it/,2026-11-01
 AdvoFin Prozessfinanzierung AG,funder,austria,Austria; Germany,Covers all litigation cost risk; share of proceeds only on success; group and individual claims,https://www.advofin.at/,2026-10-06
 AEQUIFIN,funder,germany,Germany; Austria,"Marketplace: sponsors cover court, lawyer and expert costs; proceeds shared on success",https://www.aequifin.com/de/,2026-10-06
 Aequitas Litigation Funding,funder,australia,Australia,Litigation financier operating under Axiis Capital AFSL 523464,https://aequitaslitigationfunding.com.au,2026-11-01
 Aequitas Prozessfinanzierung,funder,austria,Austria,Funds all lawyer and court costs; pre-agreed share only if money is recovered,https://www.prozessinvest.at/,2026-11-01
+AER pentru tine,collection_agency,romania,Romania,No initial fees or advances; success fee commission settled after the compensation is paid,http://aerpentrutine.ro/,2026-11-01
 AIEM Law LLC (DemandasPR),boutique,puerto rico,Puerto Rico,"Contingency: if the client does not collect, we do not charge",https://www.demandaspr.com,2026-11-01
 AIF Kancelaria (TuOdszkodowania),boutique,poland,Poland,No advances; fee received only after recovery from the insurer,https://www.tuodszkodowania.pl/,2026-11-01
+Air Indemnité,collection_agency,france,France,Free claim filing; 35% commission including VAT charged only on compensation obtained,https://www.air-indemnite.com/,2026-11-01
+Airclaim,collection_agency,romania,Romania; Greece; Italy; Spain; Poland,"No win, no fee: standard fee 29% plus VAT, or 44% plus VAT if the case goes to court, deducted from compensation",https://airclaim.com/,2026-11-01
+AirHelp,collection_agency,germany,Germany; Austria; Poland; Italy; France; Netherlands,"No success, no costs; standard fee of 35% deducted only from compensation obtained",https://www.airhelp.com/de/,2026-11-01
 Aitken * Aitken * Cohn,litigation_firm,united states,United States,"Contingency, firm advances costs, paid only if client prevails",https://www.aitkenlaw.com,2026-10-06
 AK Čejková (Získat odškodnění),litigation_firm,czechia,Czechia,"Fee of 10% to 30% of recovered amount, nothing paid upfront",https://ziskat-odskodneni.cz/,2026-11-01
 AK Šenkýř-Pánik (Nároky odškodnění),litigation_firm,czechia,Czechia,"Share-based fee: nothing upfront, fee only from successfully recovered claim",https://naroky-odskodneni.cz/,2026-11-01
 AKH-H Rechtsanwälte,litigation_firm,germany,Germany,Investor/consumer-protection firm; claims via litigation funding without cost risk,https://akh-h.de,2026-10-06
 Al Safar & Partners,full_service,united arab emirates,United Arab Emirates,Conditional fee arrangements for eligible personal injury cases,https://alsafarpartners.com/,2026-11-01
+Alair Ferreira Advocacia,boutique,brazil,Brazil,"Honorários somente em caso de êxito, conforme contrato",https://direitosdopassageiro.com/,2026-11-01
+Álamo & Asociados,boutique,spain,Spain,Sólo cobramos si usted cobra; honorarios a éxito,https://alamoyasociados.com/,2026-11-01
+Alcione Amorim Advocacia,boutique,brazil,Brazil,"Ações trabalhistas: pagamento com base no êxito, só cobramos se ganharmos o caso",https://alcioneamorimadv.com/,2026-11-01
+Alderstone Solicitors,boutique,united kingdom,United Kingdom,"Works predominantly on a no win, no fee basis",https://www.alderstonesolicitors.co.uk,2026-11-01
 Aletta Abogados,full_service,colombia,Colombia,Cuota litis: percentage of compensation only if the case succeeds,https://aletta.com.co,2026-11-01
+Alexander McBurney Solicitors,boutique,united kingdom,United Kingdom,"No win, no fee employment claims; legal aid also available",http://www.alexandermcburney.co.uk,2026-11-01
 Alexander Shunnarah Trial Attorneys,litigation_firm,united states,United States,Contingency fee basis; you pay nothing unless we win a settlement or verdict,https://shunnarah.com,2026-11-01
 ALG & Associates,full_service,japan,Japan,"Retainer 0 yen; success fee paid afterwards, none if compensation is not increased",https://www.hughesluce.com/,2026-11-01
+Aline Perna Advocacia,boutique,brazil,Brazil,Muitos casos trabalhistas no modelo de honorários de sucesso: você só paga se ganhar,https://alineperna.com.br/,2026-11-01
 All is One Urawa Law Office,boutique,japan,Japan,"Retainer 0 yen; success fee system, no fee unless compensation is increased",https://u-s-kotsujiko.com/,2026-11-01
+Allan McDougall Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee personal injury claims",https://www.allanmcdougall.co.uk,2026-11-01
 Allan Weideman Attorneys,boutique,south africa,South Africa,No win no fee; contingency fee only when the RAF claim succeeds,https://weidemanattorneys.co.za/,2026-11-01
+Allen & Allen,litigation_firm,united states,United States,Contingency fee arrangement; no legal fees upfront,https://www.allenandallen.com,2026-11-01
 ALMIRALEGAL,boutique,spain,Spain,"Success fee only, nothing upfront, no cost if lost",https://www.almiralegal.com/,2026-10-06
+Alvimar Cunha Advocacia,boutique,brazil,Brazil,"Sem custo inicial: honorários apenas mediante êxito (quota litis), 35% do valor obtido",https://alvimarcunhaadvocacia.com.br/,2026-11-01
 ALY Abogados,boutique,spain,Spain,Banking claims a éxito: only charge if the claim is won; minimum provision possible in complex cases,https://lazaroamable.com/,2026-11-01
 Amanda Domingues Advocacia,boutique,brazil,Brazil,Honorários only on success in most labour and social security cases,https://adominguesadvocacia.com.br,2026-11-01
+Amin Haque Solicitors,full_service,united kingdom,United Kingdom,No win no fee service for tenants with housing disrepair claims,https://aminhaque.co.uk,2026-11-01
+Anderson Law,boutique,new zealand,New Zealand,No win no fee employment advocacy; usually no upfront professional fees,https://www.andersonlaw.nz/,2026-11-01
+Anderton Law,boutique,united kingdom,United Kingdom,No win no fee employment claims,https://www.andertonlaw.co.uk,2026-11-01
 Andre de Villiers & Associates,boutique,south africa,South Africa,Contingency fee agreements (no win no fee); no upfront costs,https://advlegalservices.co.za/,2026-11-01
+Anidjar & Levine,litigation_firm,united states,United States,You pay nothing unless we recover compensation for you,https://www.anidjarlevine.com,2026-11-01
+Ankin Law,litigation_firm,united states,United States,"Free case review, no fee unless you win",https://ankinlaw.com,2026-11-01
+Annette Lefebvre Avocats,boutique,canada,Canada,Class actions on honoraires conditionnels; lawyers paid only if the action succeeds,https://www.annettelefebvre.com,2026-11-01
 Anthony Gold Solicitors,full_service,united kingdom,United Kingdom,"CFA (no win, no fee) in appropriate cases",https://anthonygold.co.uk,2026-10-06
 Anthony Ostlund Louwagie Dressen & Boylan P.A.,boutique,united states,United States,Contingent or modified contingent fees for business plaintiffs when warranted,https://anthonyostlund.com,2026-10-06
+Antony Hodari Solicitors,boutique,united kingdom,United Kingdom,"No win, no fee under a Conditional Fee Agreement for tenant housing disrepair claims",https://antonyhodari.co.uk,2026-11-01
 Apex Litigation Finance,funder,united kingdom,United Kingdom,"Non-recourse; up to GBP 750,000 of funding per case; decision in 7 to 10 working days",https://www.apexlitigation.com,2026-11-01
+Apolo Abogados,boutique,spain,Spain,Reclamar es gratis: no cobramos nada al cliente ni provisión de fondos,https://apoloabogados.com/,2026-11-01
+Aporcentaje Abogados,boutique,spain,Spain,Solo cobramos si usted gana,https://aporcentaje.com/,2026-11-01
+APRCA,collection_agency,romania,Romania,Court action at the firm's cost; 20% commission paid only after the money is collected,https://aprca.ro/,2026-11-01
 Arasim Kancelaria Adwokacka,boutique,poland,Poland,Success bonus paid after winning plus individually agreed initial fee,https://arasim-adwokatradom.pl,2026-10-06
+Arbitrium Litigation Financing,funder,egypt,Egypt,Litigation funding for corporate claimants,https://arbitriumfinance.com/,2026-11-01
 Arc Legal Group,funder,united kingdom,United Kingdom,"ATE premiums 20% to 40% of sum insured, rebated if case ends early; upfront or contingent premium",https://www.arclegal.co.uk,2026-11-01
 Ariel Freiberg Law Office,boutique,israel,Israel,"Success-linked fee in tort cases, paid from compensation; terms set by agreement",https://www.freiberg-law.co.il/,2026-11-01
+Arpa Legal,boutique,spain,Spain,Accidentes de coche: solo cobramos si tú ganas,https://arpalegal.es/,2026-11-01
 Arriaga Asociados,litigation_firm,spain,Spain,No cost to client; fees recovered from bank via costs award,https://www.arriagaasociados.com/,2026-10-06
 Artur Vitor Advocacia,boutique,brazil,Brazil,"30% of economic benefit, charged only if the case is won",https://arturvitor.adv.br,2026-11-01
+ASCOPE Law Office,boutique,japan,Japan,Hepatitis B claims: no fee unless benefit paid; firm bears court filing costs,https://ascope.net/,2026-11-01
 Asertis,funder,united kingdom,United Kingdom; Bermuda; British Virgin Islands; Cayman Islands; Jersey; Guernsey,"Non-recourse; priced as multiple of funds deployed or interest; min investment GBP 500,000; min claim GBP 5m",https://asertis.co.uk,2026-11-01
 Asesority Abogados,boutique,spain,Spain,No upfront payment; only charge if the bank claim succeeds,https://www.asesority.com/,2026-11-01
+Ashtons Legal,full_service,united kingdom,United Kingdom,"No win, no fee agreement; nothing to pay towards fees if the claim is unsuccessful",https://www.ashtonslegal.co.uk,2026-11-01
+Askews Solicitors,full_service,united kingdom,United Kingdom,No win no fee personal injury claims,https://www.askews.com,2026-11-01
+ASL Solicitors,boutique,united kingdom,United Kingdom,"Most personal injury claims handled on a no win, no fee basis",https://aslsolicitors.com,2026-11-01
+Atgūsti Naudu (Legal Balance SIA),collection_agency,latvia,Latvia,Free assessment; pay for the work only in case of successful debt recovery,https://www.atgustinaudu.lv/,2026-11-01
+Atlas Abogados,boutique,spain,Spain,Estudio del caso gratuito; posibilidad de honorarios a porcentaje,https://www.atlasabogados.com/,2026-11-01
 Atom Law Office,full_service,japan,Japan,"Consultation and retainer 0 yen; success fee 11 to 16.5% of recovery plus 220,000 yen",https://atomfirm.com/,2026-11-01
 Atradius Collections,collection_agency,mexico,Mexico; Singapore; Hong Kong; United Arab Emirates,"One-off opening fee, then commission charged only on successful recovery",https://atradiuscollections.com/mx,2026-10-06
 Attorney 911 (Manginello Law Firm),litigation_firm,united states,United States,No fee unless we win; you pay nothing upfront,https://attorney911.com,2026-11-01
 Attorneys of Idaho,boutique,united states,United States,No attorney fee unless we recover compensation for you,https://www.attorneysofidaho.com,2026-11-01
 Attwood Marshall Lawyers,full_service,australia,Australia,"No win, no fee basis for compensation claims (conditions apply)",https://www.attwoodmarshall.com.au/,2026-11-01
 Augusta Ventures,funder,united kingdom,United Kingdom,Non-recourse; claim usually GBP 1m or more; case budget max 1/8 of claim value,https://www.augustaventures.com,2026-11-01
+Austen Hays,boutique,united kingdom,United Kingdom,Represents clients on a no win no fee basis,https://www.austenhays.com,2026-11-01
 Avocat Utiu Vasile Dan,litigation_firm,romania,Romania,"Success fee, nothing paid in advance",https://uua.ro/,2026-11-01
 Avyana,funder,germany,Germany; Switzerland; Austria; United Kingdom; Netherlands; France; Spain,"Non-recourse; EUR 100,000 to 25m per matter; claim over EUR 500,000; min 5:1 claim to funding ratio",https://avyana.net,2026-11-01
 AW UAE (Al Wadi Holding),asset_tracer,united arab emirates,United Arab Emirates,"'No Collection, No Fee' policy; no charge unless collected",https://alwadiholding.com/aw-uae/,2026-10-06
 Awatif Mohammad Shoqi Advocates & Legal Consultancy (Al Rowaad),full_service,united arab emirates,United Arab Emirates,"ADR & debt collection division on 'no collection, no fee'",https://alrowaad.ae,2026-10-06
 Bachus & Schanker,litigation_firm,united states,United States,No upfront or hourly fees; you only pay when we win,https://www.coloradolaw.net,2026-11-01
+Baer Law Office,litigation_firm,united states,United States,Free case evaluation; you pay nothing unless we win,https://www.baerlawoffice.com,2026-11-01
 "Bailey, Javins & Carter",litigation_firm,united states,United States,All cases on contingency fee basis; we do not get paid unless you do,https://www.baileyjavinscarter.com,2026-11-01
 "Bakhtiari & Harrison, P.C.",boutique,united states,United States,"Contingency fee, no recovery, no fee",https://bhseclaw.com,2026-10-06
+Balfour+Manson,full_service,united kingdom,United Kingdom,No win no fee service for personal injury claims,https://www.balfour-manson.co.uk,2026-11-01
 Bancho Chuo Law Office,full_service,japan,Japan,"Traffic accident plan: retainer free, fee 10% of amount recovered",https://www.bancho-law.jp/,2026-11-01
+Barbosa & Veiga Advogados,boutique,brazil,Brazil,"Principalmente quota litis (só paga se ganhar), 12% a 25% do valor recuperado",https://barbosaeveiga.com.br/,2026-11-01
+Bayda Disability Law,boutique,canada,Canada,Fee is a percentage of recovery; no legal fee if the claim is unsuccessful,https://www.disabilitylaw.ca,2026-11-01
 Be Cause,funder,italy,Italy,Non-recourse funding or purchase (monetisation) of claims in Italy and abroad,https://www.because.law,2026-11-01
 "Beck, Amsden & Stalpes",litigation_firm,united states,United States,No fees unless we win your case,https://becklawyers.com,2026-11-01
+Becker Law Office,litigation_firm,united states,United States,You pay nothing unless we recover money for you,https://beckerlaw.com,2026-11-01
+Bell Legal Group,litigation_firm,united states,United States,Contingency fee arrangement,https://www.belllegalgroup.com,2026-11-01
+Bendles Solicitors,full_service,united kingdom,United Kingdom,"Damages Based Agreements (no win no fee, disbursements sometimes payable) available in employment matters",https://bendlessolicitors.co.uk,2026-11-01
+Benson & Bingham,litigation_firm,united states,United States,Contingency basis; clients pay nothing unless we collect money for them,https://www.bensonbingham.com,2026-11-01
+Bergel Magence LLP,litigation_firm,canada,Canada,Free consultation; no fees unless we win,https://www.bergellaw.com,2026-11-01
 Berger Montague (Canada),litigation_firm,canada,Canada; United States,"Securities cases on contingent fee, no fees unless recovery",https://bergermontague.com,2026-10-06
 Bernstein Litowitz Berger & Grossmann (BLB&G),litigation_firm,united states,United States,Contingency fee representation in high-stakes complex business litigation,https://www.blbglaw.com,2026-10-06
+Bianco Professional Association,full_service,united states,United States,Personal injury claims typically on contingency; fee is a percentage of the recovery,https://biancopa.com,2026-11-01
 Bierens Debt Recovery Lawyers,litigation_firm,netherlands,Netherlands; Belgium; Germany; Spain; Italy; United States,Extrajudicial collection on no cure no pay basis; court phase separately,https://www.bierensgroup.com,2026-10-06
+Birchall Blackburn Law,full_service,united kingdom,United Kingdom,"No win, no fee",https://www.birchallblackburn.co.uk,2026-11-01
+Bird & Co Solicitors,full_service,united kingdom,United Kingdom,No win no fee personal injury claims,https://www.birdandco.co.uk,2026-11-01
 Biroul European de Reprezentare,boutique,romania,Romania,Success commission only at the end when insurer pays; no upfront costs,https://birouleuropean.ro/,2026-11-01
+Birstall Myers Solicitors,full_service,united kingdom,United Kingdom,Most personal injury claims funded through a Conditional Fee Agreement,https://www.birstallmyerssolicitors.co.uk,2026-11-01
+Bisnar Chase,litigation_firm,united states,United States,No fee if we don't win,https://www.bestattorney.com,2026-11-01
 Bissu Abogados,litigation_firm,mexico,Mexico,"Offers cuota litis (percentage of result), fixed retainer or mixed scheme",https://bissuabogados.com,2026-10-06
+"Blume, Forte, Fried, Zerres & Molinari",litigation_firm,united states,United States,Contingency fee basis; we get paid if and when we recover compensation,https://www.njatty.com,2026-11-01
 Blumers Lawyers,boutique,australia,Australia,"No win no fee; firm outlays disbursements, nothing payable if the case is lost",https://www.blumers.com.au/,2026-11-01
 BMS Procesfinanciering,funder,netherlands,Netherlands,"No cure no pay: funds or takes over claims from EUR 25,000, typically 70/30 split of proceeds",https://www.bmsprocesfinanciering.nl/,2026-11-01
+Bonadis,funder,austria,Austria,Free check; funds the entire dispute and bears all costs; takes 35% only if the client gets money,https://bonadis.at/,2026-11-01
 Bond Turner,litigation_firm,united kingdom,United Kingdom,No win no fee professional negligence claims against advisers and professionals,https://www.bondturner.com,2026-10-06
 Box Legal,funder,united kingdom,United Kingdom,ATE insurance for solicitors' clients; premiums normally deferred and contingent on success,https://www.boxlegal.co.uk,2026-11-01
+Brachers,full_service,united kingdom,United Kingdom,No win no fee claims,https://www.brachers.co.uk,2026-11-01
+Brad Pistotnik Law (Bull Attorneys),litigation_firm,united states,United States,Free 24/7 consultation; no fee unless we win,https://bullattorneys.com,2026-11-01
 Brady Donahue,boutique,united states,United States,Contingency fee basis; you owe nothing unless we win money for you,https://bradydonahue.com,2026-11-01
 Brand Attorneys,full_service,south africa,South Africa,"Personal injury, medical negligence and RAF claims on a no-win, no-fee basis",https://brandatt.co.za/,2026-11-01
+"Breakstone, White & Gluck",litigation_firm,united states,United States,Contingency fee basis; no attorney's fee unless we recover compensation for you,https://www.bwglaw.com,2026-11-01
 Bredell Ferreira,boutique,south africa,South Africa,"No collection, no fee; commission on amounts recovered",https://bredellferreira.co.za,2026-10-06
 BReeMaX Abogados,boutique,mexico,Mexico,No retainers ever; client pays only if the case is won,https://www.breemax.mx,2026-10-06
+Breit Biniazan,litigation_firm,united states,United States,"Contingency fee basis; if you don't win, you owe us nothing",https://www.bbtrial.com,2026-11-01
 BREITENEDER Rechtsanwalt GmbH,litigation_firm,austria,Austria,Redress action joinable without cost risk; funder covers costs for success share,https://www.dieselanspruch.at,2026-10-06
+Bretz Injury Law,litigation_firm,united states,United States,"No recovery, no fee, guaranteed in writing",https://www.byinjurylaw.com,2026-11-01
 Brewer Harding & Rowe,full_service,united kingdom,United Kingdom,"No win, no fee in the right circumstances",https://www.brewerhardingrowe.com,2026-10-06
 Briere Law Offices,boutique,puerto rico,Puerto Rico,Contingent fees: no attorney fees if we don't win; case costs borne by client,https://brierelaw.com,2026-11-01
 Bright Law Office,full_service,japan,Japan,Retainer 0 yen and success fee; no fees if the matter is not resolved (expenses separate),https://law-bright.com/,2026-11-01
+Brown & Barron,litigation_firm,united states,United States,You owe no fee unless we recover for you,https://www.brownbarron.com,2026-11-01
+Brown & Crouppen,litigation_firm,united states,United States,Contingency fee basis; no fee unless we win your case,https://www.brownandcrouppen.com,2026-11-01
+Brugman Letselschade Advocaten,boutique,netherlands,Netherlands,"Always free legal assistance; costs recovered from the opposing insurer, no cure no pay for court cases",https://www.brugmanletselschadeadvocaten.nl/,2026-11-01
 Brydens Lawyers,full_service,australia,Australia,"No Win, No Fee basis for compensation claims (conditions apply)",https://www.brydens.com.au/,2026-11-01
+Bufete Osuna,boutique,spain,Spain,"Trabajamos a éxito: solo cobramos si tú cobras, sin adelantos ni provisiones",https://bufeteosuna.es/,2026-11-01
 Burford Capital,funder,singapore,Singapore; United Arab Emirates; Hong Kong,Non-recourse funding; funder takes downside risk for a share of recovery,https://www.burfordcapital.com,2026-10-06
 Burger Huyser Attorneys,full_service,south africa,South Africa,Commission only on amounts recovered; no upfront retainer pre-legal phase,https://www.burgerhuyserattorneys.co.za,2026-10-06
 Business Trial Group (Morgan & Morgan),litigation_firm,united states,United States,Commercial litigation handled exclusively on contingency; offices incl. Atlanta GA,https://www.businesstrialgroup.com,2026-10-06
 Cabinet D.F & Associés,boutique,france,France,Commission on sums recovered only; no file fees,https://cabinetdf.fr,2026-10-06
 Cabinet Vărzaru Ion,litigation_firm,romania,Romania,Fee paid only if the case is won; first consultation free,https://varzaru.ro/,2026-11-01
 Cairns Lawyers,full_service,australia,Australia,"No Win, No Fee terms on personal injury claims",https://cairnslawyers.au/,2026-11-01
+Call Green Law Office,boutique,japan,Japan,Consultation and retainer free; fully results-based fee for traffic accident cases,https://www.greenlaw.jp/,2026-11-01
 Call Green Law Office,boutique,japan,Japan,"Retainer 0 yen; fee 10% of recovery plus 150,000 yen; no fees if no increase on insurer offer",https://kotsujiko.greenlaw.jp/,2026-11-01
 Camargo & Asociados,boutique,argentina,Argentina,Solo cobramos si ganamos; nothing charged in advance,https://www.estudiocamargo.com,2026-11-01
 Campbell Attorneys,litigation_firm,south africa,South Africa,Contingency fee litigation (no win no fee) for injury and commercial disputes,https://www.campbellattorneys.co.za/,2026-11-01
 "Campestrini, Pereira e Nascimento Advogados",boutique,brazil,Brazil,No initial fees; honorários only on success when you receive the amount,https://www.cpn.adv.br,2026-11-01
+Cannon & Dunphy,litigation_firm,united states,United States,All injury cases on a contingency fee basis; never a fee unless we win,https://www.cannon-dunphy.com,2026-11-01
+Cappac,boutique,mexico,Mexico,"Modelo no-win, no-fee: solo cobramos si ganamos su caso",https://www.cappac.mx/,2026-11-01
 Carabin Shaw,litigation_firm,united states,United States,Contingent fee available for qualifying business disputes,https://www.carabinshaw.com,2026-10-06
 Carter Capner Law,litigation_firm,australia,Australia,Consumer class action intake marketed as No Win No Fee,https://cartercapner.com.au,2026-10-06
+Carter Mario Injury Lawyers,litigation_firm,united states,United States,Zero Fee Warranty: you pay us nothing until we win your case,https://www.cartermario.com,2026-11-01
 Carter-Ruck,litigation_firm,united kingdom,United Kingdom,"CFAs, DBAs or third-party funding plus ATE insurance for commercial claims",https://www.carter-ruck.com,2026-10-06
 Cartera Integral S.A.S.,boutique,colombia,Colombia,"100% success model: no retainers, fees depend only on effective recovery",https://carteraintegral.com,2026-10-06
 Caruncho y Tomé Abogados,litigation_firm,spain,Spain,"No upfront cost; bank pays fees if costs awarded, else 15% of recovery",https://caruncho-tome.com/,2026-10-06
 CASL,funder,australia,Australia,Funder meets class action costs; group members pay nothing upfront; 20-40% commission on success,https://casl.com.au,2026-10-06
+Caveat Capital,funder,united arab emirates,United Arab Emirates,Non-recourse funding for commercial litigation and arbitration,https://caveat-capital.com/,2026-11-01
 CDC Cartel Damage Claims,funder,belgium,Belgium; Germany; Luxembourg,Assumes all costs and risks; takes share of recovered damages,https://www.carteldamageclaims.com,2026-10-06
+Cellino Law,litigation_firm,united states,United States,You won't pay any fees unless we win; contingency fee basis,https://www.cellinolaw.com,2026-11-01
+Centro Risarcimenti,boutique,italy,Italy,"No advance costs; pay only on result, fee is a percentage of compensation received",https://centrorisarcimenti.com/,2026-11-01
+Cerciora Abogados,boutique,spain,Spain,"Revolving, préstamos abusivos y minicréditos: solo cobramos si ganamos",https://www.cerciora.com/,2026-11-01
 CertificadosRD,collection_agency,dominican republic,Dominican Republic,"30% of the amount recovered, charged only on successful collection",https://certificadosrd.com,2026-11-01
 Certum Group,funder,united states,United States,Non-recourse and passive; typical matters have expected recoveries over USD 25m,https://www.certumgroup.com,2026-11-01
+Charles E. Boyk Law Offices,litigation_firm,united states,United States,"No Fee Promise: nothing upfront, we only get paid if you win your case",https://www.charlesboyk-law.com,2026-11-01
 Charles Lyndon,boutique,united kingdom,United Kingdom,"Most pension/investment mis-selling claims on no win, no fee",https://charleslyndon.com,2026-10-06
 Charney Lawyers,litigation_firm,canada,Canada,Class actions: firm bears costs; 20-30% of recovery only if successful,https://www.charneylawyers.com,2026-10-06
+ChasenBoscolo,litigation_firm,united states,United States,No Fee Guarantee; no upfront cost,https://www.chasenboscolo.com,2026-11-01
 Chitha Attorneys,full_service,south africa,South Africa,"No win, no fee options for RAF and medical claims (terms apply)",https://chithaattorneys.co.za/,2026-11-01
+Chris & Co Solicitors,full_service,united kingdom,United Kingdom,Housing disrepair services offered on a No Win No Fee basis,https://www.ccsolicitors.com,2026-11-01
+Chris Kallis Solicitors,boutique,united kingdom,United Kingdom,No win no fee personal injury claims,https://www.chriskallis.co.uk,2026-11-01
+Ciresi Conlin,litigation_firm,united states,United States,Compensated solely on a contingency basis; no financial exposure up front,https://ciresiconlin.com,2026-11-01
 Citizens' Voice – Consumer Advocacy Association,litigation_firm,portugal,Portugal,Opt-out ações populares funded by litigation funders paid only on success with court approval; consumers pay nothing,https://citizensvoice.eu,2026-10-06
-Claimbnb,funder,spain,Spain,"Litigation and arbitration finance, monetisation, adverse claims cover and portfolio funding",https://claimbnb.com,2026-11-01
+CL Medilaw,boutique,united kingdom,United Kingdom,No Win No Fee package protecting clients from costs if the claim is unsuccessful,https://clmedilaw.co.uk,2026-11-01
+Claggett & Sykes Law Firm,litigation_firm,united states,United States,"Contingency with no upfront fees; if we don't win your case, we don't get paid",https://www.claggettlaw.com,2026-11-01
 Claimbnb,funder,spain,Spain,"Non-recourse funding, file viable claims at no cost",https://claimbnb.es/,2026-10-06
+Claimbnb,funder,spain,Spain,"Litigation and arbitration finance, monetisation, adverse claims cover and portfolio funding",https://claimbnb.com,2026-11-01
+ClaimFlights,collection_agency,germany,Germany,Success commission of 25% plus VAT deducted only once compensation is won,https://www.claimflights.de/,2026-11-01
 Claims Funding Australia,funder,australia,Australia,Litigation funding with bespoke funding agreements,https://www.claimsfunding.com.au/,2026-11-01
 Claims Funding Europe,funder,ireland,Ireland,Funds multi-party claims; commission only if claim succeeds,https://www.claimsfundingeurope.eu,2026-10-06
 Claims Funding International,funder,ireland,Ireland; Canada; Europe,Funds multi-party cartel and securities claims; owned by Maurice Blackburn,https://www.claimsfundinginternational.eu,2026-11-01
 Clarke Willmott,full_service,united kingdom,United Kingdom,"Contingent (no win, no fee) agreements for financial mis-selling",https://www.clarkewillmott.com,2026-10-06
+CLG Injury Law,litigation_firm,canada,Canada,Contingency fee; you pay nothing unless compensation is recovered,https://www.clginjurylaw.ca,2026-11-01
+CLP Legal,boutique,australia,Australia,"No win, no fee costs agreements (conditions may apply at trial)",https://clplegal.com.au/,2026-11-01
+Coalición Montaño,boutique,mexico,Mexico,Solo cobramos si ganamos; sin pago inicial,https://coalicionmontano.com/,2026-11-01
+Coast & Country Law,boutique,australia,Australia,"No win, no fee personal injury representation",https://coastandcountrylaw.com.au/,2026-11-01
+Coastal Compensation Law Specialists,boutique,australia,Australia,Purely no win no fee basis; firm carries cost of medical and expert reports (conditions apply),https://coastalcompensationlaw.com.au/,2026-11-01
 COBIN claims,funder,austria,Austria; Germany,Claims association; collective actions backed by funders (typically 20-40% share),https://www.cobinclaims.at/,2026-10-06
+Codex Odszkodowania,boutique,poland,Poland,No upfront fees; commission charged only after compensation is successfully obtained,https://codex.org.pl/,2026-11-01
 Coface,collection_agency,singapore,Singapore; Hong Kong; United Arab Emirates,Commission charged only on amounts recovered,https://www.coface.com,2026-10-06
 Coface (Colombia and Peru),collection_agency,colombia,Colombia; Peru,B2B debt recovery; commission only on amounts recovered,https://www.coface.com.co,2026-10-06
+Cohen & Winters,litigation_firm,united states,United States,You don't pay unless we win,https://www.cohenwinters.com,2026-11-01
 Coljurídicas,boutique,colombia,Colombia,Cuota litis; no fees if no compensation is obtained,https://coljuridicas.com,2026-11-01
+Compensation Central Coast,boutique,australia,Australia,No win no fee compensation claims,https://compensationcentralcoast.com.au/,2026-11-01
 ConCausa,funder,italy,Italy,"Funder pays all legal costs; agreed share of recovery, nothing if lost",https://www.concausa.it/,2026-10-06
 ConmigoLegal,boutique,colombia,Colombia,"Cuota litis: nothing upfront, percentage only when compensation is paid",https://conmigolegal.com,2026-11-01
+Connelly Law Offices,litigation_firm,united states,United States,Handles many cases on contingency fees,https://www.connelly-law.com,2026-11-01
+Connolly Suthers,full_service,australia,Australia,No win no fee service for injury claims,https://www.connollysuthers.com.au/,2026-11-01
+Connor Legal,full_service,cyprus,Cyprus,Fee options include success fees for arbitration and contingency arrangements such as No Win No Fee,https://connorlegalllc.com/,2026-11-01
+CONNY,collection_agency,germany,Germany,"Free check of savings potential; paid only on success, no costs without success",https://www.conny.de/,2026-11-01
 Consumentenbond Claimservice,boutique,netherlands,Netherlands,No cure no pay: participants pay 10-25% only if compensation obtained,https://www.consumentenbond.nl/over-ons/wie-zijn-we/inkomsten-claimservice,2026-10-06
 ConsumentenClaim,funder,netherlands,Netherlands,"Collective consumer claims vs large companies, fee only on success",https://www.consumentenclaim.nl,2026-10-06
 Consumer Law Group,litigation_firm,canada,Canada,"Contingency, fees only if class action succeeds",https://clg.org,2026-10-06
 Convi by Netanel Roth,boutique,israel,Israel,Fees charged only on a success basis,https://convi.co.il/,2026-11-01
+Cooper Hurley Injury Lawyers,litigation_firm,united states,United States,You pay nothing until we win,https://cooperhurley.com,2026-11-01
+Corboy & Demetrio,litigation_firm,united states,United States,No fee unless we are successful in obtaining a verdict or settlement,https://www.corboydemetrio.com,2026-11-01
+Cory Watson,litigation_firm,united states,United States,Free consultation; we only get paid if we win your case,https://www.corywatson.com,2026-11-01
 Court House Capital,funder,australia,Australia; New Zealand,Flexible funding for individuals and companies pursuing commercial claims,https://courthousecapital.com.au,2026-11-01
 Coventia Legal,boutique,spain,Spain,"100% success-based: only charge if client recovers money, no upfront payment",https://www.coventia.es/,2026-11-01
 CP Legal Claims,funder,brazil,Brazil,Funds or acquires high-value claims from filing to enforcement; monetises judicial credits,https://cplc.com.br,2026-11-01
+"Craig, Kelley & Faultless",litigation_firm,united states,United States,"No recovery, no fee promise",https://www.ckflaw.com,2026-11-01
 Crash Lawyers,boutique,canada,Canada,No fees unless we win your case,https://crashlawyers.ca,2026-11-01
 Credifin Nederland,boutique,netherlands,Netherlands,100% no cure no pay invoice collection,https://credifin.nl,2026-10-06
 Credit Recoveries Limited,collection_agency,new zealand,New Zealand,Commission on amounts collected; no collection = no commission,https://www.creditrecoveries.co.nz,2026-10-06
 Creditsafe Ireland,collection_agency,ireland,Ireland,No-win no-fee collection via partner agencies,https://www.creditsafe.com/ie/en.html,2026-10-06
 "Cronin, Fried, Sekiya, Kekina & Fairbanks",litigation_firm,united states,United States,All personal injury claims on contingency; nothing paid until compensation is recovered,https://www.croninfried.com,2026-11-01
+Cuelenaere LLP,full_service,canada,Canada,Many personal injury claims on contingency; fees collected only if compensation is recovered,https://cuelenaere.com,2026-11-01
+Cuming & Gillespie LLP,boutique,canada,Canada,Personal injury claims on contingency; no out-of-pocket expenses,https://www.cuminggillespie.com,2026-11-01
 Cuncannon,boutique,new zealand,New Zealand,Funded class actions; members typically pay nothing to participate,https://www.cuncannon.nz,2026-10-06
 Cuota Litis Abogados,boutique,spain,Spain,"Cuota litis: percentage of recovery, often no upfront fees; hybrid option",https://cuotalitis.com/,2026-10-06
+Curtis Law Solicitors,full_service,united kingdom,United Kingdom,Conditional Fee or Damages Based Agreement; client usually pays only success fee and ATE premium,https://curtislaw.co.uk,2026-11-01
 Dalzell Wollerman,boutique,new zealand,New Zealand,Specialist class action firm working with litigation funders covering proceeding costs,https://dalzellwollerman.co.nz,2026-10-06
+Dan Newlin Injury Attorneys,litigation_firm,united states,United States,Pay nothing until we win,https://www.newlinlaw.com,2026-11-01
 Daniel D. Martin & Associates,boutique,united states,United States,Contingency fee basis; fees collected only if we recover a settlement or award,https://www.danielmartinlaw.com,2026-11-01
+Daniel Tapp Law Firm,boutique,canada,Canada,You pay nothing unless we win,https://www.danieltapp.com,2026-11-01
+David W Harris & Co,full_service,united kingdom,United Kingdom,"No win, no fee personal injury claims funding",https://www.dwharris.co.uk,2026-11-01
+Davis Law Group,litigation_firm,united states,United States,Contingency fee basis; no upfront costs to hire us,https://www.injurytriallawyer.com,2026-11-01
+Daylight Law Office,full_service,japan,Japan,"Hepatitis B claims: fully success-based, consultation and retainer 0 yen",https://www.daylight-law.jp/,2026-11-01
 DCS México (Debt Collection Services),collection_agency,mexico,Mexico,Business debt collection; fees payable only if the account is recovered,https://dcsmexico.com,2026-10-06
+Dean Wilson LLP,full_service,united kingdom,United Kingdom,Can work on a no win no fee basis where appropriate,https://deanwilson.co.uk,2026-11-01
 Debt Hunter (United Credit Management Ltd),collection_agency,hong kong,Hong Kong,No upfront fee; success percentage (about 20-40%) on recovery,https://www.debt-hunter.com,2026-10-06
 DECO PROteste (Associação Portuguesa para a Defesa do Consumidor),litigation_firm,portugal,Portugal,Consumers join collective actions free of charge (participation priced 'Gratuito'),https://www.deco.proteste.pt,2026-10-06
+Defensa Despidos,boutique,chile,Chile,No pagas nada si no ganamos el juicio; porcentaje del monto obtenido,https://defensadespidos.cl/,2026-11-01
+Delta Capital Management,funder,united states,United States,Funding for claimants and law firms in litigation and international arbitration,https://www.deltacph.com/,2026-11-01
 Demandamos Por Ti,boutique,spain,Spain,€0 upfront; 25% + VAT of recovery only on success,https://demandamosporti.es/,2026-10-06
 Deminor,funder,belgium,Belgium; Netherlands; Germany; Italy; United Kingdom,Pays all litigation costs; paid a percentage of recoveries only if case is won or settled,https://www.deminor.com/,2026-11-01
 Derecho del Trabajo Abogados,boutique,chile,Chile,Honorarios a resultado; you pay at the end of the case,https://www.derechodeltrabajo.cl,2026-11-01
+Despacho Especializado,boutique,spain,Spain,No cobramos si no ganamos; cobramos cuando el cliente lo hace,https://despachoespecializado.com/,2026-11-01
+DespidoInjusto.cl,boutique,chile,Chile,"Honorarios solo a éxito; 0 pago adelantado, solo cobramos si ganamos",https://despidoinjusto.cl/,2026-11-01
+DeVaughn James Injury Lawyers,litigation_firm,united states,United States,No obligation or fees unless we win,https://www.devaughnjames.com,2026-11-01
+Dewsnup King Olsen Worel (DKOW),litigation_firm,united states,United States,Never charge a fee unless we win; no upfront costs,https://www.dkow.com,2026-11-01
+Difeso e Risarcito,boutique,italy,Italy,Case run at firm's expense; client pays agreed fee and costs only when compensation is received,https://www.difesoerisarcito.it/,2026-11-01
 Digby Brown,litigation_firm,united kingdom,United Kingdom,No win no fee via own Compensate funding; agreed percentage of damages if successful,https://www.digbybrown.co.uk/,2026-11-01
 DiLibero Injury Law,boutique,united states,United States,Contingency fee; no fee unless we win and zero upfront cost,https://diliberoinjury.com,2026-11-01
 Dimitropoulos & Koutsouvelis Law Firm,litigation_firm,greece,Greece,"No Win No Fee: paid only if case succeeds, nothing owed otherwise (up to 20%)",https://dklawyers.gr/,2026-11-01
+Dismissed,boutique,new zealand,New Zealand,No win no fee employment representation,https://dismissed.co.nz/,2026-11-01
 DMD Asesores,boutique,spain,Spain,"0 EUR upfront, only charge if the case is won",https://www.dmdasesores.com/,2026-11-01
+"Dollar, Burns, Becker & Hershewe",litigation_firm,united states,United States,We charge clients only when we win their case; contingency fee structure,https://dollar-law.com,2026-11-01
+dP Abogados Consultores,boutique,spain,Spain,"Abogado 0 EUR, procurador 0 EUR, provisión 0 EUR: el despacho solo cobra a la entidad las costas",https://www.dpabogadosconsultores.com/,2026-11-01
 dP die Prozessfinanzierer,funder,austria,Austria,"Takes all cost risk; pure success share as a percentage of the claim, only if successful",https://www.dieprozessfinanzierer.at/,2026-11-01
+DPH Abogados,full_service,chile,Chile,"Defensa laboral de trabajadores: solo cobramos si ganamos, al término del juicio",https://www.dphabogados.cl/,2026-11-01
+DPH Legal,boutique,united kingdom,United Kingdom,No Win No Fee via Damages Based Agreement; pay nothing unless you win and receive compensation,https://dphlegal.com,2026-11-01
+DR PREV,boutique,brazil,Brazil,"Honorários somente no êxito, caso o benefício seja concedido",https://drprev.com.br/,2026-11-01
 Dr. Alon Koren Meidan Law Office,boutique,israel,Israel,"Fee charged only at the end, on success, as a percentage of compensation",https://dmed.co.il/,2026-11-01
+Dr. Schablauer Katalin,boutique,hungary,Hungary,Success-fee system: lawyer fee payable only after the insurer has paid compensation,https://drschablauer.hu/,2026-11-01
+Dr. Szakács Ügyvédi Iroda,boutique,hungary,Hungary,"Purely success-based: no advance or hourly fee, fee deducted only from compensation actually paid",https://drszakacsdavid.hu/,2026-11-01
+Dreyer Boyajian LLP,full_service,united states,United States,Truck accident claims handled on a contingency fee basis; you pay nothing unless recovered,https://www.dreyerboyajian.com,2026-11-01
+"Drobiš & Novotný, advokáti",boutique,czechia,Czechia,No fees if compensation is not obtained; share of 5% to 10% of out-of-court recovery,https://www.odskodneninehody.cz/,2026-11-01
 DTR Abogados,full_service,panama,Panama,"Cuota litis: percentage of the result, only charged if a result is obtained",https://dtrabogados.com,2026-11-01
+Dudley DeBosier Injury Lawyers,litigation_firm,united states,United States,No upfront fees; paid only when the firm wins,https://www.dudleydebosier.com,2026-11-01
+Duffy & Duffy,boutique,united states,United States,"No fee unless we recover; we pay the case costs, including the medical review",https://www.duffyduffylaw.com,2026-11-01
+Duncan Lewis Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee via Conditional Fee Agreement where legal aid is not available",https://www.duncanlewis.co.uk,2026-11-01
+Dwyer Williams Cherkoss,litigation_firm,united states,United States,Free consultation; no fee unless we win,https://roydwyer.com,2026-11-01
 Dyś i Wspólnicy Kancelaria Radców Prawnych,litigation_firm,poland,Poland,"Flat fee + success fee, or success fee only with no upfront costs",https://kancelaria-pn.pl,2026-10-06
+Edgar Snyder & Associates,litigation_firm,united states,United States,You never pay a fee unless we recover money for you,https://www.edgarsnyder.com,2026-11-01
+Edwards Injury Law,boutique,canada,Canada,Zero upfront fees; no fees until the case is settled,https://www.edwardsinjurylaw.com,2026-11-01
+Eglet Law,litigation_firm,united states,United States,Contingency fee basis for personal injury claims,https://www.egletlaw.com,2026-11-01
 Elad Gueta Law Office,boutique,israel,Israel,Success-based fee from compensation; no payment if the claim fails,https://eladgueta-law.co.il/,2026-11-01
 ELF Partners,funder,singapore,Singapore; India,Arranges non-recourse third-party funding for claims,https://www.elfpartners.com,2026-10-06
+Élite Abogados,full_service,spain,Spain,"Accidentes: sin adelantar provisión de fondos; si no ganamos, no cobramos",http://www.eliteabogados.es/,2026-11-01
+Elk + Elk,litigation_firm,united states,United States,No fees unless you win,https://www.elkandelk.com,2026-11-01
+Employment Practice,boutique,new zealand,New Zealand,"No win, no fee employment law",https://employmentpractice.co.nz/,2026-11-01
+Enable Law,boutique,united kingdom,United Kingdom,"No win, no fee arrangements",https://www.enablelaw.com,2026-11-01
+Équité Avocats,boutique,canada,Canada,"Honoraires à pourcentage; no upfront fees, pay only if compensation is obtained",https://equiteavocats.ca,2026-11-01
 Equity & Law (Picado Gestión),funder,spain,Spain,Buys/funds claims; claimant bears no costs or risk,https://picadogestion.es/,2026-10-06
+Eric Buchanan & Associates,boutique,united states,United States,There usually is no fee unless we win your disability case,https://www.buchanandisability.com,2026-11-01
 Erreklamatu,boutique,spain,Spain,Success-only; 25% + VAT of amount recovered,https://erreklamatu.com/,2026-10-06
 Erso Capital,funder,united kingdom,United Kingdom; United States,"Usually non-recourse; damages should exceed 6x legal budget; single case, portfolio and award monetisation",https://www.ersocap.com,2026-11-01
 ErstatningsAdvokaterne,boutique,denmark,Denmark,"No compensation, no bill as a general rule",https://www.erstatningsadvokaterne.dk/,2026-11-01
 Erstatningsgruppen (Penta Advokater),boutique,denmark,Denmark,Many cases run on no cure no pay: legal costs payable only if compensation is received,https://www.erstatningsgruppen.dk/,2026-11-01
+Estudio AyG Abogados,full_service,argentina,Argentina,"Daños: exclusivamente honorarios de éxito; solo cobramos si ganamos, sin anticipo",https://www.abogadosayg.com/,2026-11-01
 Estudio Breit (ReclamáTuAccidente),boutique,argentina,Argentina,Honorarios al resultado; no advance and no fee if there is no result,https://reclamatuaccidente.ar,2026-11-01
+Estudio Chaiman,boutique,argentina,Argentina,"Consulta sin cargo; si no cobrás, no pagás",http://www.estudiochaiman.com.ar/,2026-11-01
+Estudio Dr. Pablo Rodríguez,boutique,argentina,Argentina,Cuota litis: solo cobramos un porcentaje si usted cobra su indemnización,https://abogadolaboralcordoba.com.ar/,2026-11-01
+Estudio Jurídico Purita,full_service,argentina,Argentina,Casos laborales: honorarios a resultado (solo cobramos si ganamos),https://estudiojuridicopurita.com/,2026-11-01
 Estudio Posca,boutique,argentina,Argentina,Honorarios a resultado: only charged if the client obtains compensation,https://estudioposca.com.ar,2026-11-01
+Estudio Szlit & Asociados,boutique,argentina,Argentina,"Cuota litis: porcentaje de lo cobrado (tope 20%); si no cobrás, no pagás honorarios",https://www.estudioszlit.com.ar/,2026-11-01
 Estudio Vázquez y Asociados,boutique,uruguay,Uruguay,Honorarios a resultado in most labour cases: you pay only if we win,https://estudiovazquezyasociados.uy,2026-11-01
+EUclaim,collection_agency,netherlands,Netherlands; Germany; Belgium,"Fee of 31% plus EUR 33 admin per person only on success; no success, no cost",https://www.euclaim.nl/,2026-11-01
 Europejski Lider Odszkodowań (ELO),boutique,poland,Poland,"No upfront fees; percentage of amount obtained, charged only after winning",https://www.eloodszkodowania.pl/,2026-11-01
+Ézaro Legal,boutique,spain,Spain,"Sin coste inicial; en la mayoría de servicios cobramos a éxito, solo si tú ganas",https://www.ezarolegal.es/,2026-11-01
 Ezz Law Firm (Abu Dhabi Lawyers),litigation_firm,united arab emirates,United Arab Emirates,"No win, no fee policy in accident and personal injury court cases",https://abudhabi-lawyers.com/,2026-11-01
+Fábio Lopes Advocacia,boutique,brazil,Brazil,Sem pagamento antecipado; só cobramos após o êxito,https://fabiolopesadvocacia.com.br/,2026-11-01
 Fachini Advogados,boutique,brazil,Brazil,"Pagamento no êxito: no fee to start, agreed percentage only if successful",https://www.fachiniadvogados.com.br,2026-11-01
+Fairplane,collection_agency,austria,Austria; Germany,"No success, no costs; success fee up to 35% of compensation",https://www.fairplane.at/,2026-11-01
 FAIRRETURN,funder,germany,Germany,Funds lawyer and court costs; agreed share of recovery only on success,https://fairreturn.com/,2026-11-01
+Farleys Solicitors,full_service,united kingdom,United Kingdom,No win no fee compensation claims,https://www.farleys.com,2026-11-01
 Farrin Law (Law Offices of James Scott Farrin),litigation_firm,united states,United States,Business-plaintiff cases usually on contingency; North Carolina,https://www.farrin.com,2026-10-06
+FBC Manby Bowdler,full_service,united kingdom,United Kingdom,"Specialist lawyers work on a no win, no fee basis",https://www.fbcmb.co.uk,2026-11-01
+FDM Solicitors,boutique,united kingdom,United Kingdom,"No win, no fee housing disrepair claims (terms apply)",https://fdmsolicitors.co.uk,2026-11-01
+Feldman Shepherd,litigation_firm,united states,United States,"Contingency fee basis; nothing upfront, we only get paid if we recover",https://feldmanshepherd.com,2026-11-01
+Felipe Assunção Advocacia,boutique,brazil,Brazil,"Honorários somente em caso de êxito; se não ganhar, não paga",https://drfelipeassuncao.com.br/,2026-11-01
+Feltrim Correa Advogados,boutique,brazil,Brazil,Honorários de sucesso na maioria dos casos trabalhistas: você só paga se ganhar,https://feltrimcorrea.com.br/,2026-11-01
 Fenchurch Legal,funder,united kingdom,United Kingdom,Finance to UK law firms for small ticket claims and their disbursements,https://www.fenchurch-legal.co.uk,2026-11-01
 Ferguson Law,boutique,united states,United States,Contingency fee basis; no fees unless we win and costs are advanced,https://www.fergusonlaw.com,2026-11-01
 Ferreira & Scorzafava Advogados,boutique,brazil,Brazil,"Ad exitum: no initial fees, percentage paid only on success",https://fsadvogados.adv.br,2026-11-01
+Fieger Law,litigation_firm,united states,United States,No fees unless we win for you,https://www.fiegerlaw.com,2026-11-01
 Fieldings Porter,full_service,united kingdom,United Kingdom,Discounted fees or CFA / no win no fee for business disputes in suitable cases,https://fieldingsporter.co.uk,2026-10-06
+Fields Law,litigation_firm,united states,United States,No fee unless we win. Period.,https://www.fieldslaw.com,2026-11-01
+fin.law,funder,india,India; United Arab Emirates,Litigation and arbitration funding through to award enforcement,https://fin.law/,2026-11-01
 FJV Law,boutique,puerto rico,Puerto Rico,"Strictly contingent fees: 33% adults, 25% minors; no fee without compensation",https://fjvtlaw.com,2026-11-01
+Flyforsinkelse.dk,collection_agency,denmark,Denmark,No risk: free for the client if no compensation is obtained; no extra cost if the case goes to court,https://www.flyforsinkelse.dk/,2026-11-01
+FNQ Legal,boutique,australia,Australia,All work done on a no-win no-fee basis,https://fnqlegal.com.au/,2026-11-01
+Folgate Legal,boutique,united kingdom,United Kingdom,"Funding solutions including no win, no fee",https://www.folgatelegal.com,2026-11-01
 Folkets Ombud,boutique,sweden,Sweden,Mostly 17.5% of compensation obtained plus small start fee; traffic cases usually paid by insurer,https://www.folketsombud.se/,2026-11-01
 FORIS AG,funder,germany,Germany; Austria; Switzerland; Europe,"Share of proceeds; min dispute EUR 100,000 Germany, 250,000 Austria, 500,000 Switzerland, 1m abroad",https://www.foris.com,2026-11-01
+Fortitude Legal,boutique,australia,Australia,"No win no fee for TAC, WorkCover and public liability claims",https://fortitudelegal.com.au/,2026-11-01
+Fosters Solicitors,full_service,united kingdom,United Kingdom,Conditional fee agreements; pay nothing unless the claim is won,https://fosters-solicitors.co.uk,2026-11-01
 Foyle Legal,boutique,australia,Australia,"No win no fee, $0 upfront, no uplift; time billed mostly at WA scale",https://foylelegal.com/,2026-11-01
+Franklin D. Azar & Associates,litigation_firm,united states,United States,Contingency fee; no attorney's fees unless we recover compensation,https://www.fdazar.com,2026-11-01
+Freeman Harris,full_service,united kingdom,United Kingdom,"No win, no fee for housing disrepair; CFAs considered for professional negligence",https://freemanharris.co.uk,2026-11-01
+Fried Goldberg LLC,litigation_firm,united states,United States,Cases handled on a contingency fee,https://www.friedgoldberg.com,2026-11-01
+FS Litigation,litigation_firm,united kingdom,United Kingdom,"CFAs, ATE, DBAs and third-party funding; about 90% of cases on a contingent basis",https://www.fslitigation.co.uk,2026-11-01
 Fulcher Koontz Law,boutique,united states,United States,Contingent fee as a percentage of recovery; no attorney fees unless we recover,https://shelifulcherkoontz.com,2026-11-01
+Fulmer Sill,litigation_firm,united states,United States,Personal injury services on a contingency fee basis,https://www.fulmersill.com,2026-11-01
 Fund My Case,funder,india,India,Non-recourse claim funding; free eligibility assessment,https://fundmycase.in,2026-10-06
+Gadsby Wicks,boutique,united kingdom,United Kingdom,"Conditional fee agreement (no win, no fee) among risk-free funding methods",https://www.gadsbywicks.co.uk,2026-11-01
+Gain Lawyers,boutique,australia,Australia,"No win, no fee injury compensation",https://www.gainlawyers.com.au/,2026-11-01
 Gansel Rechtsanwälte,litigation_firm,germany,Germany,"Small base fee plus success share, or brings in litigation funder so client has no cost risk",https://www.gansel-rechtsanwaelte.de/,2026-10-06
 Garmey Law,litigation_firm,united states,United States,"All injury, product liability and medical negligence cases on contingency",https://garmeylaw.com,2026-11-01
+Gary C. Johnson P.S.C.,litigation_firm,united states,United States,Contingency fee; no attorney fees unless we win your case,https://www.garycjohnson.com,2026-11-01
+Gary Matthews Solicitors,boutique,ireland,Ireland,No win no fee accident claim process; terms explained in writing,https://www.garymatthews.ie,2026-11-01
+GDH Abogados,boutique,spain,Spain,"Casos laborales: honorarios de éxito, solo cobramos si ganamos el caso",https://gdh-abogados.com/,2026-11-01
+George Ide LLP,full_service,united kingdom,United Kingdom,"No-win, no-fee arrangement offered where the case is appropriate",https://www.georgeide.co.uk,2026-11-01
+Gert Nel Inc Attorneys,boutique,south africa,South Africa,No win no fee contingency arrangements,https://www.gertnelincattorneys.co.za/,2026-11-01
+Giesse Risarcimento Danni,boutique,italy,Italy,"Free consultation, no advance costs, fees only on successful outcome of the case",https://www.giesse.info/,2026-11-01
+Gil Blanco Abogados,full_service,spain,Spain,Préstamos y contratos abusivos: solo cobramos si ganamos,https://gilblancoabogados.es/,2026-11-01
+Gilberto Vilaça Advocacia Trabalhista,boutique,brazil,Brazil,"Em regra, honorários somente em caso de êxito, confirmado na consulta inicial",https://gilbertovilaca.com.br/,2026-11-01
+Gilman & Bedigian,boutique,united states,United States,"Free, confidential consultation; no fee unless we win",https://www.gilmanbedigian.com,2026-11-01
+"Gingras, Thomsen & Wachs",litigation_firm,united states,United States,Contingency fee basis; we only get paid if you do,https://gtwlawyers.com,2026-11-01
 Global Debt Collector,collection_agency,united arab emirates,United Arab Emirates,Nothing upfront; agreed percentage of amount recovered,https://globaldebtcollector.com,2026-10-06
+Glynns Solicitors,boutique,united kingdom,United Kingdom,Free initial enquiry; No Win No Fee funding may be available,https://glynns.co.uk,2026-11-01
+GM Abogados Laboralistas,boutique,mexico,Mexico,"Solo cobramos si ganamos; 0 pago anticipado, a porcentaje de éxito",https://gm-abogados.com.mx/,2026-11-01
 GMAPT Prozessfinanzierung,funder,austria,Austria,"Covers all cost risk; fee only on success as pre-agreed share of proceeds, nothing if lost",https://prozess-finanzierung.at/,2026-11-01
 GMP Law (Gerard Malouf & Partners),litigation_firm,australia,Australia,Class actions run No Win No Fee without litigation funders; firm absorbs costs,https://www.gerardmaloufpartners.com.au,2026-10-06
 Go Legal,litigation_firm,united kingdom,United Kingdom,"No win, no fee (CFA/DBA) or third-party funding for eligible commercial claims",https://go-legal.co.uk,2026-10-06
+Goings Law Firm,litigation_firm,united states,United States,You pay us nothing unless we win compensation for you,https://www.goingslawfirm.com,2026-11-01
+Golitko & Daly,litigation_firm,united states,United States,Contingency fee basis; no attorneys' fees unless you receive money,https://indianaworkers.com,2026-11-01
 Gonzalez Frea & Asoc. Abogados,boutique,argentina,Argentina,No advances; claim costs financed and fees only on a successful result,https://www.gonzalezfrea.com.ar,2026-11-01
+Gordon McKernan Injury Attorneys,litigation_firm,united states,United States,"No fee unless we win; no costs, no expenses, no fee if the case is lost",https://www.getgordon.com,2026-11-01
 goRecht Prozessfinanz,funder,germany,Germany,Pays all court and lawyer costs; share of 20% to 50% of net proceeds on success,https://www.gorecht.com/,2026-11-01
 Gottgeisl & Leinsmer Rechtsanwälte GmbH,litigation_firm,austria,Austria,Rent proceedings on own risk: client owes fee only on success,https://gl-recht.at,2026-10-06
+Gowing Law,boutique,united kingdom,United Kingdom,"No win, no fee with free initial consultation",https://www.gowinglaw.co.uk,2026-11-01
+Graham Evans & Partners,full_service,united kingdom,United Kingdom,"Works on a no win, no fee basis",https://www.geplegal.co.uk,2026-11-01
+Gray & White Law,litigation_firm,united states,United States,No fee unless you win; you pay nothing unless we recover compensation,https://www.grayandwhitelaw.com,2026-11-01
+Green Law Solicitors,full_service,united kingdom,United Kingdom,Acts on a No Win No Fee basis,https://www.greenlawsolicitors.com,2026-11-01
+Greene Broillet & Wheeler,litigation_firm,united states,United States,"We work on contingency, meaning you don't pay us unless we win your case",https://www.gbw.law,2026-11-01
 Greenwoods Legal LLP,litigation_firm,united kingdom,United Kingdom,"DBA for strong-merit claims: fee is a share of damages, no hourly fees upfront",https://www.greenwoods.co.uk,2026-10-06
+Grope Hamilton Lawyers,full_service,australia,Australia,"No win, no fee legal service for eligible claims",https://www.gropehamiltonlawyers.com.au/,2026-11-01
+Grupo Alega Abogados,boutique,spain,Spain,Sólo cobramos si tú ganas; honorarios al final de nuestro trabajo,https://www.grupoalega.es/,2026-11-01
 Grupo Intercobros,collection_agency,spain,Spain; Portugal; France; Italy,No initial costs or fees; results-only B2B debt claims incl. judicial,https://www.grupointercobros.com/,2026-10-06
 Guiliano Law Group PC,boutique,united states,United States,"Contingent fee, no cost unless recovery",https://securitiesarbitrations.com,2026-10-06
+Guy Deutsch Law Office,boutique,israel,Israel,Fees paid only from compensation received; no upfront payments,https://dlawyer.co.il/,2026-11-01
+Habush Habush & Rottier,litigation_firm,united states,United States,No upfront fees; free consultations and no fees unless you win,https://www.habush.com,2026-11-01
+Hach & Rose,litigation_firm,united states,United States,"Free confidential case review, no fees unless we recover for you",https://www.unionlawfirm.com,2026-11-01
 HAHN Rechtsanwälte,litigation_firm,germany,Germany,Funder covers all costs incl. opponent's; 30-40% commission only on success,https://hahn-rechtsanwaelte.de,2026-10-06
 Hall Payne Lawyers,full_service,australia,Australia,"No win, no fee where the claim has prospects of success",https://www.hallpayne.com.au/,2026-11-01
+Hamers Solicitors,full_service,united kingdom,United Kingdom,Personal injury work conducted on a No Win No Fee basis,https://hamers.com,2026-11-01
 Hammond Pole Attorneys,full_service,south africa,South Africa,Tariff or contingency-based fee options for debt recovery,https://www.hammondpole.co.za,2026-10-06
+Hann & Co,full_service,united kingdom,United Kingdom,No Win No Fee service for injury at work and road traffic accidents,https://www.hannandco.com,2026-11-01
 Harbour Underwriting,funder,united kingdom,United Kingdom; Cayman Islands; Bermuda,"Commercial dispute (ATE) insurance; limits GBP 150,000 to 25m; excludes tax, defamation and bodily injury",https://harbourunderwriting.com,2026-11-01
+Hardison & Cochran,litigation_firm,united states,United States,Contingent fee basis; no legal fee unless we win your case,https://www.lawyernc.com,2026-11-01
+"Hare, Wynn, Newell & Newton",litigation_firm,united states,United States,"Contingency fee basis; no upfront costs, we only get paid if we win",https://www.hwnn.com,2026-11-01
+Harrington Sinclair Law,boutique,united kingdom,United Kingdom,"No-win, no-fee with transparent costs",https://harrington-sinclair.co.uk,2026-11-01
+Harris & Green Solicitors,full_service,united kingdom,United Kingdom,Personal injury claims handled on a no win no fee basis,https://harrisandgreensolicitors.co.uk,2026-11-01
+Harrowells Solicitors,full_service,united kingdom,United Kingdom,Conditional Fee Agreements; no fees if the claim is unsuccessful,https://www.harrowells.co.uk,2026-11-01
+Hasbrook Law,litigation_firm,united states,United States,Free case review; no fee unless we win,https://oklahomalawyer.com,2026-11-01
 "Haselkorn & Thibaut, P.A.",boutique,united states,United States,"No recovery, no fee",https://investmentfraudlawyers.com,2026-10-06
 Hassan Al Reyami & Muhyealdeen International Legal Consultants,boutique,united arab emirates,United Arab Emirates,"No win, no fee for out-of-court debt collection",https://alriyamiadvocates.com,2026-10-06
 "Hauptman, O'Brien, Wolf & Lathrop",litigation_firm,united states,United States,Contingency fee basis; nothing owed if no recovery and case costs advanced,https://www.hauptman-obrien.net,2026-11-01
 Hausfeld,litigation_firm,germany,Germany; Netherlands; France; Belgium,Success/contingent or hybrid fees plus funder relationships; limited or no client cost risk,https://www.hausfeld.com/de-de,2026-10-06
+Hay & Kilner,full_service,united kingdom,United Kingdom,Injury claim advice on a no win no fee basis,https://www.hay-kilner.co.uk,2026-11-01
 Hello Justice,funder,france,France,"Pays lawyer fees; commission of 14% to 30% of sums recovered, only if the client wins",https://hello-justice.com/,2026-11-01
 HELP Attorneys (Fischer Malherbe Kriel Inc),boutique,south africa,South Africa,"No win no fee; no deposit, firm carries litigation costs; fees per Contingency Fees Act",https://helpclaim.co.za/,2026-11-01
 helpcheck GmbH,funder,germany,Germany,Digital enforcement of consumer claims (e.g. life insurance) without cost risk,https://www.helpcheck.de/,2026-10-06
+Hennah Haywood Law,boutique,united kingdom,United Kingdom,No win no fee: no charge if the claim is not successful,https://www.hh-law.uk,2026-11-01
 Heonam Law Firm (LawPower),boutique,south korea,South Korea,No retainer for pre-suit settlements; success fee paid after compensation is received,http://www.lawpower.co.kr/,2026-11-01
 Hepworth Holzer,litigation_firm,united states,United States,All injury and malpractice cases on contingency: no fee unless there is a recovery,https://hepworthholzer.com,2026-11-01
+Hersh & Crockett,litigation_firm,united states,United States,"Zero Fee Guarantee: contingency basis, you owe nothing unless we win",https://hershcrockett.com,2026-11-01
+Hertz Schram,full_service,united states,United States,Contingent fee basis; no legal fees unless we obtain a verdict or settlement,https://www.hertzschram.com,2026-11-01
+Hevroni Law Office,boutique,israel,Israel,Success basis: percentage at end of case on receipt of compensation,https://hevroni-law.com/,2026-11-01
+"Hixson & Brown, P.C.",boutique,united states,United States,No fee unless we win,https://hixsonbrown.com,2026-11-01
+HL Accidentes,boutique,spain,Spain,Solo cobramos si tú ganas; sin pagos por adelantado,https://hlaccidentes.com/,2026-11-01
 HMH Legal,litigation_firm,mexico,Mexico; Brazil; Colombia,Out-of-court debt collection on pure contingency; no upfront fees; litigation stage priced separately,https://hmhlegal.com/,2026-10-06
+Hogan Dowling McNamara,full_service,ireland,Ireland,Partner describes acting on no foal no fee basis in personal injuries cases,https://hdm.ie,2026-11-01
+"Hollis, Wright & Clay",litigation_firm,united states,United States,No fees unless we collect,https://www.hollis-wright.com,2026-11-01
+Holness and Small Law Group,boutique,canada,Canada,No Fee Legal Protection Guarantee: no legal fees unless we are successful,https://holnessandsmall.com,2026-11-01
+Home One Law Office,boutique,japan,Japan,"Hepatitis B claims: consultation and retainer 0 yen, success fee from benefit",https://www.home-one.jp/,2026-11-01
 Hope Law Firm,litigation_firm,united states,United States,Contingency basis; no attorney fees unless we recover compensation,https://www.hopelawfirm.com,2026-11-01
+Howells Legal,full_service,united kingdom,United Kingdom,"All medical negligence claims carried out on a no win, no fee basis",https://www.howellslegal.co.uk,2026-11-01
+Howells Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee injury claims",https://howells.law,2026-11-01
 HOZU Capital,funder,hong kong,Hong Kong; China,Non-recourse funding for litigation and arbitration in Asia-related disputes,https://www.hozucapital.com/,2026-11-01
+Huber Thomas Law,litigation_firm,united states,United States,In many cases clients pay nothing unless the firm wins,https://huberthomaslaw.com,2026-11-01
 Hugh James,full_service,united kingdom,United Kingdom,"No win, no fee in appropriate cases after merits assessment",https://www.hughjames.com,2026-10-06
+Hughes & Coleman,litigation_firm,united states,United States,No fees unless you get paid,https://www.hughesandcoleman.com,2026-11-01
+Hullverson Law Firm,litigation_firm,united states,United States,All cases on contingency; you don't pay unless we obtain compensation,https://hullverson.com,2026-11-01
+Hulp Letselschade,boutique,netherlands,Netherlands,No percentage of compensation and no invoices to the client; statutory costs claimed from the insurer,https://www.hulpletselschade.nl/,2026-11-01
+Hupy and Abraham,litigation_firm,united states,United States,"If we don't win your case, you pay nothing",https://www.hupy.com,2026-11-01
+Hurley McKenna & Mertz,litigation_firm,united states,United States,You pay nothing unless we win; contingency fee basis,https://www.hurley-law.com,2026-11-01
 Incassobureau Justice,collection_agency,netherlands,Netherlands,"Litigation funding from EUR 5,000 on no cure no pay: agreed percentage of net proceeds only on success",https://www.incassobureaujustice.nl/,2026-11-01
+Indemnización Directa,boutique,spain,Spain,Solo cobramos si tú ganas; sin condiciones ni letra pequeña,https://indemnizaciondirecta.com/,2026-11-01
+Infortunistica Italiana Milano,collection_agency,italy,Italy,"Free consultation, costs advanced, fee paid once compensation is obtained",https://www.infortunisticamilano1.it/,2026-11-01
+Injury WA,boutique,australia,Australia,No win no fee injury compensation,https://www.injurywa.com.au/,2026-11-01
+inqasso,collection_agency,switzerland,Switzerland,Paid on success: commission charged only on amounts actually collected; enforcement costs charged to debtor,https://www.inqasso.ch/,2026-11-01
 Insurance Collect,boutique,romania,Romania,No upfront fee; percentage commission only after compensation is received,https://recuperari-asigurari.ro/,2026-11-01
 International Collection Services (ICS),collection_agency,belgium,Belgium,No cure no pay at a pre-agreed price,https://www.internationalcollections.eu,2026-10-06
 Invenium,funder,italy,Italy,"Covers all expenses, no advance required; paid only on win",https://www.invenium.it/,2026-10-06
 IonescuLaw,full_service,romania,Romania,Success-only fee as a percentage of the amount recovered; no advance,https://ionesculaw.ro/,2026-11-01
 Irwin Mitchell,full_service,united kingdom,United Kingdom,"Structures CFAs, DBAs, third-party funding and ATE for business disputes",https://www.irwinmitchell.com,2026-10-06
+Isaacs & Isaacs,litigation_firm,united states,United States,Contingency fee basis; you don't pay unless we win,https://wewin.com,2026-11-01
 Itai Givon Law Office,boutique,israel,Israel,"Fee as a percentage of success, paid at the end of proceedings",https://www.givonlaw.co.il/,2026-11-01
 iubel,funder,germany,Germany,"Advances all costs; success share if client wins, pays all costs if lost",https://iubel.de/,2026-11-01
 Ius Omnibus,litigation_firm,portugal,Portugal,Funded consumer class actions (Nivalion); consumers pay nothing,https://iusomnibus.eu/,2026-10-06
 IVO Capital Partners,funder,france,France; Germany; Spain; Netherlands; Portugal; United Kingdom; United States,"Funds legal fees and expert costs for companies, associations and foundations seeking compensation",https://www.ivocapital.com,2026-11-01
+Jack H. Olender & Associates,litigation_firm,united states,United States,No fee unless we win; free consultation,https://www.olender.com,2026-11-01
 Jacobs Law Office,boutique,united states,United States,"Most cases on contingency; if we do not win, our services are free",https://jacobslawwv.com,2026-11-01
 Jane Gordon Law,boutique,united states,United States,No fees unless you win; a percentage of the payout only if you win,https://www.janegordonlaw.com,2026-11-01
+"Janet, Janet & Suggs",litigation_firm,united states,United States,Contingency fee basis; you owe us nothing unless you recover compensation,https://www.jjsjustice.com,2026-11-01
 Janklow Abdallah,litigation_firm,united states,United States,Contingency basis; no legal fee unless the case is successful,https://janklowabdallah.com,2026-11-01
 JDV Iuris & Consultants,full_service,spain,Spain,Banking claims: only charge if client wins; 10% of award where no costs order,https://jdviurisconsultants.com/,2026-11-01
+Jebaily Law Firm,litigation_firm,united states,United States,Contingency fee basis; no fees unless we win through settlement or verdict,https://www.jebailylaw.com,2026-11-01
+Jeferson Guilherme dos Santos Advocacia,boutique,brazil,Brazil,"Sem custo inicial; honorários de sucesso, você só paga se ganhar",https://advogadosprevidenciariossp.com.br/,2026-11-01
+Jeffrey S. Glassman Injury Lawyers,litigation_firm,united states,United States,No fee unless we win,https://www.jeffreysglassman.com,2026-11-01
 Jestem Poszkodowany,boutique,poland,Poland,No upfront fees; fee charged only after compensation is obtained,https://jestem-poszkodowany.pl/,2026-11-01
 Jewell Radimisis Jorge LLP,litigation_firm,canada,Canada,Contingency fee of 33% plus HST; no legal fees if no recovery,https://www.jrjlaw.com,2026-11-01
+Jinks Crow,litigation_firm,united states,United States,Never pay an attorney's fee unless we recover for you,https://www.jinkscrow.com,2026-11-01
 Johnston Withers,full_service,australia,Australia,No win no fee for personal injury claims,https://johnstonwithers.com.au/,2026-11-01
 Joseph's Inc,boutique,south africa,South Africa,"No-win, no-fee under the Contingency Fees Act; up to 25% of capital award",https://josephs.co.za/,2026-11-01
+Josiah Hincks,full_service,united kingdom,United Kingdom,Occasionally acts under a Damages Based Agreement taking 33% of damages recovered,https://www.josiahhincks.co.uk,2026-11-01
+Juan Benet Abogados,boutique,spain,Spain,"Revolving: recuperar tu dinero sin coste inicial, sin riesgos ni adelantos",https://juanbenetabogados.com/,2026-11-01
+Jude Lawyers,full_service,australia,Australia,No win no fee in some cases after risk review,https://www.jude-lawyers.com/,2026-11-01
 JUFINA (JUNO Finanz AG),funder,austria,Austria,Funds all costs; takes pre-agreed share only on success; no costs if lost,https://www.jufina.at,2026-10-06
 Jura Prozessfinanz,funder,germany,Germany,"Funds lawyer, court and expert costs; agreed success commission only if client wins",https://jura-prozessfinanz.de/,2026-11-01
 JuraPlus AG,funder,switzerland,Switzerland,Bears the full litigation cost risk in exchange for a share of the success,https://www.jura-plus.ch/,2026-11-01
 JURFIN,funder,germany,Germany; Austria; Switzerland,"Covers all costs; share of proceeds only on success, max one third",https://jur-fin.de/,2026-11-01
 JuriPro,collection_agency,netherlands,Netherlands,Funds court proceedings partly or fully; agreed fee payable only on successful result,https://juripro.nl/,2026-11-01
+Juris Abogados Vigo,full_service,spain,Spain,Nada por adelantado; porcentaje pactado cuando percibas tu indemnización,https://www.jurisabogadosvigo.com/,2026-11-01
 Jus Capital,funder,brazil,Brazil,"Buys judicial claims at a discount or funds them in partnership, assuming case risk; result shared on success",https://www.juscapital.com.br,2026-10-06
+Justalia Abogados,boutique,spain,Spain,Revolving: sin costes iniciales y no pagas nada si no recuperamos tu dinero,https://www.justalia.es/,2026-11-01
+Justicia Médica,boutique,spain,Spain,No cobramos por adelantado; honorarios son un porcentaje de lo que se gane,https://www.justiciamedica.com/,2026-11-01
+K + K Legal,boutique,australia,Australia,"No win, no fee compensation lawyers",https://kklegal.com.au/,2026-11-01
 KA Khanyile Attorneys,full_service,south africa,South Africa,No win no fee policy for RAF claims; pay nothing unless you win for medical negligence,https://kakhanyileattorneys.co.za/,2026-11-01
 Kaczmarski Inkasso,boutique,poland,Poland,Commission payable only after money is recovered; no other fees,https://kaczmarski.pl,2026-10-06
 Kancelaria Adwokacka Igor Achrymowicz,boutique,poland,Poland,Offers fee dependent on case outcome (success fee),https://achrymowiczkancelaria.pl,2026-10-06
 Kancelaria Adwokacka Jacek Sosnowski,boutique,poland,Poland,Small initial fee plus success fee,https://sprawy-przeciwko-bankom.pl,2026-10-06
 Kancelaria Czyżewski Ostaszewski sp. k.,boutique,poland,Poland,"Repaid CHF loans: PLN 500-1,000 admin start fee, main fee 5-8% success premium of amount recovered",https://ostaszewskikredytyfrankowe.pl/,2026-10-06
+Kancelaria Meritum,boutique,poland,Poland,"No upfront fees or advances; commission depends only on results, paid if compensation is obtained",https://kancelariameritum.pl/,2026-11-01
 Kancelaria Nikoniuk,full_service,poland,Poland,No upfront fees in compensation cases; commission on award paid after payout,http://nikoniuk.com/,2026-11-01
+Kancelaria Odszkodowawcza OFN,boutique,poland,Poland,"No win no fee: no upfront fees, remuneration paid only after and only if compensation is obtained",https://ofn.pl/,2026-11-01
 Kancelaria Odszkodowawcza Pionier,boutique,poland,Poland,"No upfront fees; fee only after compensation is obtained, court costs covered",https://www.kancelaria-pionier.pl/,2026-11-01
 Kancelaria Radców Prawnych Explico,boutique,poland,Poland,Low upfront fee plus percentage success fee payable on final win in CHF loan cases,https://frankowykredyt.com.pl/,2026-10-06
+Kancelaria Skoczek (Dobre Odszkodowanie),boutique,poland,Poland,No upfront fees or advances; success fee taken only after money is obtained for the client,https://dobreodszkodowanie.pl/,2026-11-01
 Kancelaria Sobota Jachira,litigation_firm,poland,Poland,Fee variants usually based on success commission plus lump sums,https://sobotajachira.pl,2026-10-06
+Karine Paulino Advocacia,full_service,brazil,Brazil,"Casos trabalhistas: honorários de êxito, só cobramos se ganharmos o caso",https://karinepaulinoadvocacia.com.br/,2026-11-01
+Kártérítés Baleset Műhiba (iwk.hu),boutique,hungary,Hungary,Purely success-fee representation with no upfront cost; percentage of insurer payout only on success,https://karterites-baleset-muhiba.iwk.hu/,2026-11-01
+Katsuura Law Office,full_service,japan,Japan,No retainer for traffic cases with graded disability; success-fee basis for many individual matters,https://katsuura-law.com/,2026-11-01
+KazLaw Personal Injury Lawyers,boutique,canada,Canada,Contingency basis; we don't get paid unless you do,https://www.kazlaw.ca,2026-11-01
+Kearney Law Group,boutique,united kingdom,United Kingdom,No upfront fees; legal insurance covers costs if the claim does not succeed,https://kearneylawgroup.com,2026-11-01
+Keches Law Group,litigation_firm,united states,United States,You don't pay us anything unless we win,https://kecheslaw.com,2026-11-01
+"Keit Law Office, P.C.",boutique,united states,United States,No-risk contingency fee; never charge a fee unless we win,https://keitlaw.com,2026-11-01
+Keller & Keller,litigation_firm,united states,United States,No fee until we win,https://www.2keller.com,2026-11-01
 Ken Wagner Law,boutique,united states,United States,Contingency fee basis; fee collected only if you recover a settlement or judgment,https://kenwagnerlaw.com,2026-11-01
+Kennedy Johnson Schwab & Roberge,litigation_firm,united states,United States,"Contingency fee; percentage of compensation, if you don't get paid we don't get paid",https://www.kennedyjohnson.com,2026-11-01
+"Kisling, Nestico & Redick",litigation_firm,united states,United States,"No win, no fee",https://www.knrlegal.com,2026-11-01
+KLB Legal,full_service,czechia,Czechia,Nothing paid upfront in injury cases; agreed fee taken only in case of success,https://klblegal.cz/,2026-11-01
 Klein Lawyers LLP,litigation_firm,canada,Canada,"Contingency (e.g. 25% of recovery), 'No Fee Guarantee'",https://www.callkleinlawyers.com,2026-10-06
+KLG Law,boutique,united kingdom,United Kingdom,No Win No Fee representation via Conditional Fee Agreement or Damages-Based Agreement,https://klglaw.co.uk,2026-11-01
+Kline & Specter,litigation_firm,united states,United States,Contingent fee basis; we only get paid if and when you are financially compensated,https://www.klinespecter.com,2026-11-01
 Kluksdal Law,boutique,united states,United States,No fees unless you win; you don't pay unless we recover compensation,https://kluksdallaw.com,2026-11-01
 KMSC Law LLP,full_service,canada,Canada,"No-win, no-fee contingency of 27.5% to 35%; no retainer",https://kmsc.ca,2026-11-01
+Knapp & Roberts,litigation_firm,united states,United States,No attorney fees unless we win,https://www.knappandroberts.com,2026-11-01
+Komitet za saobraćajne nezgode,collection_agency,serbia,Serbia,No upfront costs; agency charges a percentage only once the client receives compensation,https://saobracajnenezgode.rs/,2026-11-01
+Kompensja,boutique,poland,Poland,No upfront fees; commission of 18% to 25% net charged only after compensation is obtained,https://www.kompensja.pl/,2026-11-01
+Kompenzo,collection_agency,bulgaria,Bulgaria,"No win, no fee: free case assessment, paid only if the case succeeds",https://kompenzo.bg/,2026-11-01
 Kompenzo,boutique,portugal,Portugal,"No win, no cost: fee usually 25% to 35% of compensation, nothing if unsuccessful",https://kompenzo.pt/,2026-11-01
+Koonz McKenney Johnson & DePaolis,litigation_firm,united states,United States,No attorneys' fees charged until we win compensation for you,https://koonz.com,2026-11-01
 Kosugi Law Office,boutique,japan,Japan,"Consultation, retainer and fees 0 yen paid directly by client; fees settled from compensation",https://personal-injury.jp/,2026-11-01
+Kotak Personal Injury Law,litigation_firm,canada,Canada,"Contingency fee, max 35% plus tax; no payment until compensation is won",https://www.kotaklaw.com,2026-11-01
+Közúti Sérülés Baleseti Ügyvédek,boutique,hungary,Hungary,"Purely success-based: fee of 20% of compensation obtained, plus VAT, nothing paid upfront",https://kozutiserules.hu/,2026-11-01
+KP Law,boutique,united kingdom,United Kingdom,"Product liability cases run on a no-win, no-fee basis",https://www.kpl.co.uk,2026-11-01
 Kredcor,collection_agency,south africa,South Africa,Contingency basis: fees only on successful collections,https://www.kredcor.co.za,2026-10-06
+KS Inkasso AG,collection_agency,switzerland,Switzerland,"Small claims handled on a pure success basis: no success, no costs",https://www.ksinkasso.ch/,2026-11-01
 KSC Law,boutique,australia,Australia,No win no fee,https://ksclaw.com.au/,2026-11-01
 Kyko Global,funder,canada,Canada; United States,Finances and manages commercial claims; cash for assignment of claims or judgments,https://www.kykoglobal.com,2026-11-01
 L.A Law Firm,full_service,cyprus,Cyprus,"No win no fee: no upfront costs, success fee deducted from compensation",https://www.lalawcy.com/,2026-11-01
 Laboral Expertos,boutique,chile,Chile,Cuota litis of 20% to 30% of the amount recovered; no fees if we lose,https://laboralexpertos.cl,2026-11-01
 Laborley,boutique,spain,Spain,"Success fee only, no upfront cost",https://laborley.com/,2026-10-06
+Ladah Law Firm,litigation_firm,united states,United States,No fee until we win; free consultation,https://www.ladahlaw.com,2026-11-01
+Lambert Avocats,litigation_firm,canada,Canada,Tarif à pourcentage in civil liability and class actions; fee is a share of the amount recovered,https://lambertavocats.ca,2026-11-01
 Landy Marr Kats LLP,litigation_firm,canada,Canada,"Contingency fee available in certain cases, fees paid at conclusion of case",https://thetorontolawyers.ca,2026-10-06
 Lass Legal Capital,funder,brazil,Brazil,Full or partial litigation and arbitration funding at any stage; monetisation of legal credit rights,https://lass.capital,2026-11-01
 Law Advice Compensation Lawyers,boutique,australia,Australia,No Win No Fee Guarantee for every client; fees payable only at the end when compensation is received,https://www.lawadvice.com.au/,2026-11-01
 Law Firm SL,full_service,south korea,South Korea,"Traffic accident civil claims: 0 won retainer, success fee after recovery",http://lawfirmsl.com/,2026-11-01
+Law Group of Iowa,full_service,united states,United States,Injury cases on contingency; no attorney fees unless we recover compensation,https://lawgroupofiowa.com,2026-11-01
 Law Office DUON,full_service,japan,Japan,"Retainer 0 yen; fully success-based fee of 250,000 yen plus 14% of amount recovered",https://www.jiko-bengoshisoudan.com/,2026-11-01
 Law Office of Jason S. Coomer,boutique,united states,United States,Contingent or hybrid fee for commercial cases,https://www.texaslawyers.com,2026-10-06
 Law Office of Matthew A. Lathrop,boutique,united states,United States,"Contingency fee basis; nothing up front, agreed percentage of recovery",https://www.lathroplawomaha.com,2026-11-01
 Law Offices of Joe Bornstein,litigation_firm,united states,United States,No fee unless we win a settlement or a verdict,https://www.joebornstein.com,2026-11-01
+Law Offices of John Day,litigation_firm,united states,United States,Contingency basis; we only get paid if we win,https://www.johndaylegal.com,2026-11-01
 Law Offices of William H. Lawson,boutique,united states,United States,"No recovery, no fee; contingency-based representation",https://www.injurylawyerhawaii.com,2026-11-01
+Lawsuit Ventures,funder,india,India; United Arab Emirates; Singapore; United Kingdom; Hong Kong; United States; Canada,Non-recourse capital for high-value disputes,https://lawsuitventures.com/,2026-11-01
+"Lawyers for Justice, P.C.",boutique,united states,United States,Retain service with no upfront cost,https://lawyersforjustice.com,2026-11-01
+LB Law,full_service,united kingdom,United Kingdom,Medical negligence claims on a No Win No Fee basis,https://www.lblaw.co.uk,2026-11-01
+Leesfield Scolaro,litigation_firm,united states,United States,Zero risk; we don't get paid unless you win,https://www.leesfield.com,2026-11-01
+Legal Insurance (Tutela Risarcimento),collection_agency,italy,Italy,Zero advances; pay only once compensation is obtained,https://www.tutelarisarcimento.it/,2026-11-01
 Legal Plus Law Office,full_service,japan,Japan,"Retainer free; success fee only, no fee if settlement is not increased",https://legalplus.jp/,2026-11-01
+Legal Protection Group,funder,united kingdom,United Kingdom,After the event insurance for claims including personal injury and financial mis-selling,https://www.legalprotectiongroup.co.uk/,2026-11-01
 Legal W,boutique,colombia,Colombia,No charge until we win; fee is a percentage of the compensation,https://legalw.co,2026-11-01
+Legalauto,boutique,spain,Spain,Sólo cobramos si ganamos el caso; no presentará ninguna factura,https://legalauto.es/,2026-11-01
 LegalBox,boutique,chile,Chile,"CLP 200,000 to file + 7% of amount actually recovered; court notification costs advanced and charged to debtor",https://legalbox.cl,2026-10-06
 LegalFund,funder,india,India,100% non-recourse; up to INR 5 crore per matter; focus on claims of INR 1 crore and above,https://legalfund.in,2026-11-01
+Legalist,funder,austria,Austria,No costs and no risk for the client; funder recovers bank fees and gambling losses,https://legalist.at/,2026-11-01
 LegalMex,boutique,mexico,Mexico,"Cuota litis for workers: 27% of recovery, only charged on a favourable result",https://legalmex.com,2026-11-01
 LegalPay,funder,india,India,100% non-recourse; typical funding INR 3 to 5 crore; min claim INR 5 crore,https://www.legalpay.in,2026-11-01
+Legalyc Abogados,boutique,spain,Spain,"Honorarios de éxito: no adelantas honorarios, porcentaje del beneficio acordado",https://legalyc.com/,2026-11-01
 LEGATUS,boutique,mexico,Mexico,No fees unless the case is won; no advances or hidden costs,https://www.legatus.mx,2026-10-06
 LEGIAL,funder,germany,Germany,"Covers all costs incl. opponent's; usually 20% to 30% of proceeds; min EUR 100,000 (insolvency EUR 50,000)",https://www.legial.de,2026-11-01
 Leigh Day,litigation_firm,united kingdom,United Kingdom,"No win, no fee group claims, max 30% of damages, ATE insured",https://www.leighday.co.uk,2026-10-06
+Lemos & Ferreira Advocacia,boutique,brazil,Brazil,"Honorários somente no êxito: 30% sobre o efetivamente recebido, sem ganhar não paga",https://lemoseferreira.com.br/,2026-11-01
+Leonardo Nieto Advocacia,boutique,brazil,Brazil,Sem pagamento antecipado; honorários de 30% somente no êxito,https://deuproblemanomeuvoo.com.br/,2026-11-01
+Lerner and Rowe Injury Attorneys,litigation_firm,united states,United States,Contingency fee basis; fees only after we recover compensation,https://lernerandrowe.com,2026-11-01
 "Lesser, Landy, Smith & Siegel, PLLC",litigation_firm,united states,United States,"Contingency business litigation, paid only on results",https://lesserlawfirm.com,2026-10-06
+Letselschade.nl (Jurilex Letselschade),boutique,netherlands,Netherlands,Legal help always free for the client; costs recovered from the liable party or its insurer,https://www.letselschade.nl/,2026-11-01
+Lev-Taieb Law Firm,boutique,israel,Israel,Contingency fee in most personal injury and insurance claims,https://lt-law.co.il/,2026-11-01
+Levin & Perconti,litigation_firm,united states,United States,You don't pay unless we win,https://www.levinperconti.com,2026-11-01
+Levine Law,litigation_firm,united states,United States,No fee unless we win your case,https://www.levinelaw.com,2026-11-01
+Levinson Axelrod,litigation_firm,united states,United States,"Contingency fees: if we don't win, you don't pay",https://www.njlawyers.com,2026-11-01
 LEX & Co. Abogados de Seguros,boutique,mexico,Mexico,No legal fees unless case is won; client covers only minimal court costs,https://abogadosdeseguros.mx,2026-10-06
 Lex Ferenda Litigation Funding,funder,united states,United States,Single case funding usually USD 1m to 10m; portfolio and law firm finance; any stage,https://lf-2.com,2026-11-01
 LexCapital,funder,italy,Italy,Acquires litigious rights and bears all costs incl. adverse costs; pre-agreed share only on success,https://www.lexcapital.it,2026-11-01
 LexFinance,funder,peru,Peru; Brazil; Spain; Portugal; Latin America,"Funds arbitration costs for a share of proceeds, paid only on win or settlement; buys awards at discount",https://www.lex-finance.com,2026-11-01
+LexReclama,boutique,spain,Spain,Solo si ganas: honorarios a éxito,https://www.lexreclama.es/,2026-11-01
 LFA Litigation Funding Asia,funder,hong kong,Hong Kong,"Non-recourse litigation funding, portfolio and law firm funding, risk share",https://www.lfamea.com/,2026-11-01
 Libra Finanziamento del Contenzioso,funder,italy,Italy,Assumes full risk and costs of single and collective claims; paid from recoveries,https://libra.claims,2026-11-01
 Liesker Procesfinanciering,funder,netherlands,Netherlands; Belgium,No cure no pay funding of court and arbitration cases,https://liesker.com,2026-11-01
+Lime Solicitors,boutique,united kingdom,United Kingdom,"No win, no fee solicitors",https://www.limesolicitors.co.uk,2026-11-01
 Linares Abogados,litigation_firm,peru,Peru,"Arbitraje Postpago: investor-funded arbitration, you only pay if you win",https://www.linaresabogados.com.pe,2026-11-01
 LitFin (France & Benelux),funder,belgium,Belgium; France; Netherlands; Czech Republic,"Covers all legal, court and expert costs for companies and individuals; share on success",https://www.litfin.capital/en,2026-10-06
 Liti-Link,funder,switzerland,Switzerland; Liechtenstein,"Covers all costs; success fee usually about 40% of net proceeds; min dispute CHF/EUR/USD 100,000",https://www.litilink.com,2026-11-01
 Litica,funder,united kingdom,United Kingdom; Australia,"ATE litigation insurance, including indemnities used as security for costs",https://www.litica.co.uk,2026-11-01
+LitiCap,funder,india,India,Non-recourse funding of legal fees and expenses in commercial lawsuits,https://liticap.com/,2026-11-01
 Litigate,funder,germany,Germany,Pays all legal costs; share of 30% to 50% of proceeds on success; also claim purchase,https://litigate.de/,2026-11-01
 Litigation Capital Management (LCM),funder,australia,Australia; Singapore,Non-recourse disputes finance; recovers costs plus premium only on success,https://lcmfinance.com,2026-10-06
 Litigation Funding Nederland,funder,netherlands,Netherlands,Funds all litigation costs; client only pays from proceeds if case won,https://legalfundingnederland.nl,2026-10-06
 Litigation Funding Nederland (LFN),funder,netherlands,Netherlands,"Funds disputes above EUR 300,000; claimant pays nothing for the funded procedure",https://lfn.nl/,2026-11-01
 Litigation Funding Solutions,funder,australia,Australia,"Broker/originator of third-party funding for commercial recovery claims; paid only by funders, not claimants",https://www.litigationfundingsolutions.com.au,2026-10-06
+Litigios.es (NHD),boutique,spain,Spain,Sin adelantar dinero; solo cobramos si recuperamos tu dinero y asumimos los gastos,https://litigios.es/,2026-11-01
 Litigium Capital,funder,sweden,Sweden; Denmark; Norway; Finland,Non-recourse; share of proceeds; claim over EUR 1m; investment max 10% of claim,https://litigiumcapital.com,2026-11-01
 Litigo BV (CarClaim / Dieselgate claim),boutique,netherlands,Netherlands,Free registration; no compensation means no fee (percentage on success),https://www.carclaim.nl,2026-10-06
+LITIS odškodnenie,collection_agency,slovakia,Slovakia,No upfront payments; nothing paid until the client wins and receives money; case costs covered,https://www.litis.sk/,2026-11-01
 Litster Frost Injury Lawyers,litigation_firm,united states,United States,Contingency fee basis; no attorney fee unless we recover compensation,https://litsterfrost.com,2026-11-01
+LMS Personal Injury Lawyers,litigation_firm,canada,Canada,No fees unless we win; free consultation,https://www.lmspersonalinjury.com,2026-11-01
 Loopa Finance,funder,spain,Spain; Portugal; Italy; Argentina; Mexico; Chile; Colombia; Brazil; Peru,"Funds fees/costs; 'you only pay if you win', no repayment if lost",https://www.loopa.finance/,2026-10-06
+López Taboada Abogados,full_service,spain,Spain,"Al reclamar, cobramos solo cuando a usted le pagan y en función de los resultados",https://www.lopeztaboadaabogados.es/,2026-11-01
 Louis W. Grande Injury Lawyer,boutique,united states,United States,Contingency fee; no fee unless you win,https://louisgrande.com,2026-11-01
+LPC Avocats,boutique,canada,Canada,Honoraires à pourcentage; firm paid only if compensation is obtained for clients and class members,https://lpclex.com,2026-11-01
 LPF Group,funder,new zealand,New Zealand,"Funder pays legal costs, security and adverse costs for agreed share of outcome; claims generally >= NZD 5m",https://lpfgroup.co.nz,2026-10-06
+Lubin & Meyer,boutique,united states,United States,Contingent fee; no fee unless we obtain compensation for your injury,https://www.lubinandmeyer.com,2026-11-01
+Luciane Irmes Advocacia,boutique,brazil,Brazil,Análise sem custo inicial; honorários somente em caso de êxito,https://lucianeirmesadv.com.br/,2026-11-01
 Lysias Law Firm (Spyros Kotlitsas & Partners),full_service,greece,Greece,Road accident cases: covers costs and collects fee only after winning and payment of compensation,https://www.lysias-lawyers.gr/,2026-11-01
+"Lytal, Reiter, Smith, Ivey & Fronrath",litigation_firm,united states,United States,No fee unless we win,https://www.foryourrights.com,2026-11-01
+M by Mariah Legal,boutique,united kingdom,United Kingdom,"Housing disrepair cases on a no-win, no-fee basis",https://mbym-legal.com,2026-11-01
 MacGillivray Injury and Insurance Law,litigation_firm,canada,Canada,"No win, no fee; fee comes from your settlement or court award",https://macgillivraylaw.com,2026-11-01
+Mackrell & Thomas,full_service,united kingdom,United Kingdom,"Personal injury claims on a no win, no fee basis",https://www.mackrellandthomas.com,2026-11-01
 Maddens Lawyers,full_service,australia,Australia,"Class actions run on a no win, no fee basis",https://www.maddenslawyers.com.au,2026-10-06
+Magara Law,boutique,united kingdom,United Kingdom,No win no fee agreements in certain cases,https://www.magaralaw.co.uk,2026-11-01
+Mahony's Lawyers,full_service,australia,Australia,No win no fee approach on compensation claims,https://mahonys.com.au/,2026-11-01
+Maliganis Edwards Johnson (MEJ),boutique,australia,Australia,No win no fee personal injury representation,https://mej.com.au/,2026-11-01
+Manor Row Solicitors,boutique,united kingdom,United Kingdom,"No Win, No Fee subject to terms; a success fee may apply",https://manorrowsolicitors.co.uk,2026-11-01
 Manuel Cojab Abogados de Seguros,boutique,mexico,Mexico,No cobramos honorarios hasta ganar; success fee as a percentage of recovery,https://manuelcojababogados.mx,2026-11-01
+Marc Quinn Law Firm,boutique,canada,Canada,No fee until you win; injury and disability cases accepted on contingency,https://www.ottawainjurylawfirm.com,2026-11-01
+Marcus Vinicius Chiappim Advocacia,boutique,brazil,Brazil,"Honorários somente no êxito, sobre o valor recebido ao final",https://mvchiappim.com.br/,2026-11-01
 Maring Williams Law Office,litigation_firm,united states,United States,No fees unless we win your case,https://www.maringlaw.com,2026-11-01
 Marinos Shambartas Lawyers,boutique,cyprus,Cyprus,No win no fee arrangement offered case by case: no legal fees if claim is unsuccessful,https://www.injuryclaims.com.cy/,2026-11-01
+Marks & Harrison,litigation_firm,united states,United States,We don't bill you until you win your case,https://www.marksandharrison.com,2026-11-01
+Martin & Jones,litigation_firm,united states,United States,No fees unless we win,https://www.martinandjones.com,2026-11-01
 "Martin & Martin, PA",boutique,united states,United States,Contingency; you pay nothing unless we recover compensation,https://4martinsatlaw.com,2026-11-01
 Martingale Risk,funder,italy,Italy,Zero upfront costs; only a percentage of sums recovered,https://www.martingalerisk.com/,2026-11-01
 Mason Hayes & Curran,full_service,ireland,Ireland,TCM network collections on no collect/no fee basis,https://www.mhc.ie,2026-10-06
+Mathews Walker,boutique,new zealand,New Zealand,"No win, no fee: fee is 1/3 + GST of the amount achieved",https://www.mathewswalker.co.nz/,2026-11-01
 Mattoch & Kirley,litigation_firm,united states,United States,Contingency fee model: no fees unless we win,https://mattochkirley.com,2026-11-01
 Maurice Blackburn Lawyers,litigation_firm,australia,Australia,Class actions on No Win No Fee; disbursements payable only if successful; group costs orders in Victoria,https://www.mauriceblackburn.com.au,2026-10-06
+Mavuya Inc Attorneys,full_service,south africa,South Africa,Contingency basis: no fee if the RAF claim is unsuccessful,https://www.mavuyainc.co.za/,2026-11-01
 Maya Shpeisman Law Office,boutique,israel,Israel,"Percentage of compensation only after payment; no compensation, no fee",https://ms-adv.co.il/,2026-11-01
 Mazaira Abogados,boutique,spain,Spain,No funds provision; sliding 19%–5% of recovery only if won,https://www.mazairaabogados.com/,2026-10-06
+Mazie Slater Katz & Freeman,litigation_firm,united states,United States,Contingency fee agreement; no fees until we win,https://www.mazieslater.com,2026-11-01
 McCune Law Group,litigation_firm,united states,United States,"Commercial litigation practice entirely contingency based, nationwide incl. Arizona",https://mccunelawgroup.com,2026-10-06
+McDivitt Law Firm,litigation_firm,united states,United States,No fees until we win for you,https://www.mcdivittlaw.com,2026-11-01
+McGee Solicitors,full_service,united kingdom,United Kingdom,If the case is not won the client does not pay; legal expenses insurance covers costs,https://www.mcgeesolicitors.co.uk,2026-11-01
+"McGowan, Hood, Felder & Phillips",litigation_firm,united states,United States,Contingency fee basis; you pay nothing unless we win,https://www.mcgowanhood.com,2026-11-01
+McKenzie Law,boutique,new zealand,New Zealand,"No win, no fee for dismissal and workplace bullying claims",https://mckenzielaw.co.nz/,2026-11-01
+McKiggan Hebert,litigation_firm,canada,Canada,"Contingency fee; no upfront fees, legal fees only if we win your case",https://www.apmlawyers.com,2026-11-01
+McNicholas & McNicholas,litigation_firm,united states,United States,We take cases on contingency; you never pay attorney fees until we have recovered compensation for you,https://www.mcnicholaslaw.com,2026-11-01
 MDF Law PLLC,boutique,united states,United States,"No recovery, no fee",https://mdf-law.com,2026-10-06
 MDW Law,full_service,canada,Canada,Personal injury claims on contingency; no legal fees unless we recover compensation,https://mdwlaw.ca,2026-11-01
 Melanson Law,boutique,canada,Canada,Contingency fee; no legal fees unless and until you recover,https://www.melansonlaw.ca,2026-11-01
 Merchant Law Group LLP,litigation_firm,canada,Canada,Class actions on contingency from compensation recovered,https://www.merchantlaw.com,2026-10-06
 Mesh Capital,funder,brazil,Brazil,"Finances and acquires pre-judicial, judicial and arbitral assets; settlement finance",https://meshcapital.com.br,2026-11-01
+Meshbesher & Spence,litigation_firm,united states,United States,No attorney's fees unless we recover compensation for you,https://www.meshbesher.com,2026-11-01
+Meyers & Flowers,litigation_firm,united states,United States,No fee unless we win or settle your case,https://www.meyers-flowers.com,2026-11-01
+MG Legal,full_service,united kingdom,United Kingdom,"Accepts all compensation claims on a No Win, No Fee basis",https://www.mglegal.co.uk,2026-11-01
+"Mgr. Monika Skalová, advokátka",boutique,czechia,Czechia,Fee of 10% plus VAT only from the amount recovered; nothing to pay if nothing is recovered,https://nehody-pravnik.cz/,2026-11-01
+MiAbogado Accidentes Tráfico,boutique,spain,Spain,Solo cobramos si tú cobras,https://www.consultamiabogado.es/,2026-11-01
 Michael Legal Firm,full_service,cyprus,Cyprus,"No Win No Fee (Conditional Fee Arrangement), no upfront fees",https://michaellegalfirm.com/,2026-11-01
 Mike Murphy Law,boutique,canada,Canada,No fee on an injury claim unless it succeeds,https://mikemurphylaw.ca,2026-11-01
+Miles and Partners,full_service,united kingdom,United Kingdom,"Legal aid, no win no fee agreement or fixed fee for housing disrepair",https://milesandpartners.com,2026-11-01
 Minton Law Firm,litigation_firm,united states,United States,No fee unless we win; paid only when you receive compensation,https://justinmintonlaw.com,2026-11-01
+Mio Law Office,full_service,japan,Japan,"Hepatitis B claims: retainer free, fee paid after benefit",https://www.miolaw.jp/,2026-11-01
 Mirai Sogo Law Office,full_service,japan,Japan,"Retainer 0 yen; fee 10% of amount obtained, 0 yen if insurer offer is not increased",https://www.jikosos.net/,2026-11-01
+Mishkind Kulwicki Law,boutique,united states,United States,Contingency basis; no attorney fee unless we recover for you,https://www.mishkindlaw.com,2026-11-01
 Miyoshi & Hironaka,boutique,united states,United States,"No recovery, no fee; attorney fees only if compensation is recovered",https://808-law.com,2026-11-01
+MKF Lawyers,boutique,australia,Australia,"No win, no fee personal injury claims",https://www.mkflawyers.com.au/,2026-11-01
+MMK Avram,collection_agency,serbia,Serbia,Work starts without any costs; fee charged only after damages are paid to the client,https://mmkavram.rs/,2026-11-01
 MN Law (MNI Attorneys),full_service,south africa,South Africa,"Contingency fee basis (no win, no fee); firm covers major upfront costs",https://mnlaw.co.za/,2026-11-01
+Monaco Solicitors,boutique,australia,Australia,No win no fee personal injury and compensation claims,https://monacosolicitors.com.au/,2026-11-01
 Monge & Associates,litigation_firm,united states,United States,Contingency fee basis; no attorney fees unless we recover compensation,https://www.becauseyouwanttowin.com,2026-11-01
+Montlick Injury Attorneys,litigation_firm,united states,United States,Contingency fee basis; you only pay when we win,https://www.montlick.com,2026-11-01
 Montoya & Asociados,litigation_firm,argentina,Argentina,Honorarios a resultado: solo cobramos si ganás,https://abogadodeaccidentes.com.ar,2026-11-01
+Mooneerams,boutique,united kingdom,United Kingdom,"Most cases handled on a No Win, No Fee basis",https://www.mooneerams.com,2026-11-01
 Morelli Law Firm,litigation_firm,united states,United States,"Contingency, no fees unless you win",https://www.morellilaw.com,2026-10-06
+Morris Liberti,boutique,united kingdom,United Kingdom,"No Win, No Fee for suitable Employment Tribunal claims",https://www.morrisliberti.com,2026-11-01
+Morrish Solicitors,full_service,united kingdom,United Kingdom,No win no fee available on all types of personal injury claims,https://www.morrishsolicitors.com,2026-11-01
 Morton Fraser MacRoberts (MFMac),full_service,united kingdom,United Kingdom,Success fee: % of recovery charged only if money is recovered (Scotland),https://www.mfmac.com,2026-10-06
+Motera López Abogados,boutique,spain,Spain,"Trabajamos a éxito: si no ganamos, no pagas nada; no cobramos nada por adelantado",https://moteralopez.com/,2026-11-01
 MSMC Injury Lawyers,litigation_firm,united states,United States,Contingency fee; you pay nothing unless we recover money for you,https://www.msmcinjurylawyers.com,2026-11-01
+MTB Law,full_service,united kingdom,United Kingdom,Fee written off if the claim is unsuccessful; legal expenses insurance available,https://mtb-law.co.uk,2026-11-01
 Multilegal,full_service,italy,Italy,Formula Risarcimento: client pays lawyer fees at the end and only if compensation is obtained,https://www.multilegal.it/,2026-11-01
+Munoz Abogados,boutique,spain,Spain,Sin adelantar dinero: sólo cobramos si ganamos tu caso,https://abogadosmunoz.com/,2026-11-01
 Munro Flowers & Vermaak,boutique,south africa,South Africa,No-win-no-fee under the Contingency Fees Act 66 of 1997,https://mfv.co.za/,2026-11-01
+Murphy & Prachthauser,litigation_firm,united states,United States,Free consultations and no fee unless we win,https://www.murphyprachthauser.com,2026-11-01
+Murphy Battista LLP,litigation_firm,canada,Canada,Class actions on a contingency fee basis; generally no upfront costs,https://www.murphybattista.com,2026-11-01
+"Murphy, Falcon & Murphy",litigation_firm,united states,United States,Contingency fee basis; attorney fees only if we win a financial recovery,https://www.murphyfalcon.com,2026-11-01
+Mussio Goodman LLP,litigation_firm,canada,Canada,"Contingency fee agreements; no upfront retainer, fee only if we win",https://mussiogoodman.com,2026-11-01
 Myerson Solicitors,full_service,united kingdom,United Kingdom,"CFA (no win, no fee) for strong, valuable claims; third-party funding available",https://www.myerson.co.uk,2026-10-06
 myRight (financialright GmbH),funder,germany,Germany,Costs covered; commission charged only on success,https://www.myright.de/,2026-10-06
 N. Rotsides & Co LLC,boutique,cyprus,Cyprus,No win no fee guarantee for personal injury claims,https://www.rotsideslaw.com/,2026-11-01
+Nace Law Group,litigation_firm,united states,United States,"Contingency fee: nothing up front, paid only if compensation is recovered",https://www.washingtondcinjurylawyers.com,2026-11-01
 Napoli Shkolnik PLLC,litigation_firm,united states,United States,"Contingency, firm bears the risk of business disputes",https://napolilaw.com,2026-10-06
 Nároky z nehod,litigation_firm,czechia,Czechia,"No fees upfront; fee collected only on success, after compensation is paid",https://narokyznehod.cz/,2026-11-01
+National Compensation Lawyers,boutique,australia,Australia,No win no fee compensation claims,https://nationalcompensationlawyers.com.au/,2026-11-01
 Nelsons Solicitors,full_service,united kingdom,United Kingdom,"CFA (no win, no fee) where appropriate",https://www.nelsonslaw.co.uk,2026-10-06
 New North Litigation Capital,funder,united kingdom,United Kingdom,"Non-recourse; pre-agreed fee from recovery; focus on GBP 500,000 to 30m claims under England and Wales law",https://newnorthlc.com,2026-11-01
 Nick Xenophon & Co. Lawyers,boutique,australia,Australia,"No win, no fee service",https://xenlaw.com.au/,2026-11-01
+Nieding+Barth,litigation_firm,germany,Germany,"In suitable cases claims pursued with litigation funders bearing costs, no financial risk for client",https://www.niedingbarth.de/,2026-11-01
 Nivalion,funder,switzerland,Switzerland; Germany; Europe; Americas; Asia-Pacific,"Non-recourse; multiples of budget, sometimes plus % of proceeds with caps; usually min EUR 7m in dispute",https://www.nivalion.ch,2026-11-01
 Nivalion AG,funder,switzerland,Switzerland; Germany; Austria,Non-recourse: funds all costs incl. adverse costs; multiple or % of proceeds on success,https://nivalion.com/en/,2026-10-06
+Nogués Abogados,boutique,spain,Spain,"14% + IVA del dinero recuperado; si no ganamos, no cobramos nada",https://www.noguesabogados.com/,2026-11-01
 NOVA Injury Law,boutique,canada,Canada,"Contingency (no win, no fee); costs advanced and repaid from settlement",https://novainjurylaw.com,2026-11-01
+Nunn Law Office,litigation_firm,united states,United States,No fee unless we win,https://kennunn.com,2026-11-01
+Nuño & de la Higuera Abogados,boutique,spain,Spain,"Comisiones basadas en el éxito: solo cobramos si ganamos, sin pagos por adelantado",https://nunoydelahiguera.es/,2026-11-01
 Nuovi Avvocati (Avv. Nicola Andrea Oggiano),litigation_firm,italy,Italy,"No upfront fee; success fee on win, capped minimum (≤€1,500) if lost",https://www.nuoviavvocati.com/,2026-10-06
+"Nurenberg, Paris, Heller & McCarthy",litigation_firm,united states,United States,No upfront costs; we only get paid if you get paid,https://www.nphm.com,2026-11-01
+O'Dea Earle,litigation_firm,canada,Canada,Nothing up front and no fee until we resolve your case,https://odeaearle.ca,2026-11-01
+O'Shea Dyer Solicitors,boutique,australia,Australia,No Win No Fee No Uplift,https://www.osheadyer.com.au/,2026-11-01
+O&P Abogados,litigation_firm,colombia,Colombia,No cobramos hasta que usted gane,https://oypabogados.com/,2026-11-01
 obligatio,funder,germany,Germany,"Covers all proceeding costs, optional advance payments; personal injury claims over EUR 100,000",https://www.obligatio.de,2026-11-01
 Ocasio Personal Injury Law Group,boutique,puerto rico,Puerto Rico,Contingency fees: you pay nothing unless we win your claim,https://ocasiopersonalinjurygroup.com,2026-11-01
+Ochrana práv (advokát Hradec Králové),boutique,czechia,Czechia,Nothing paid upfront; fee due only when compensation is actually obtained from insurer or wrongdoer,https://www.ochranaprav.cz/,2026-11-01
+Oddcoll,collection_agency,sweden,Sweden; Denmark; Norway; Finland; Germany,"No win, no fee: 9.5% commission on debts in Europe, 19.5% elsewhere, paid only on successful collection",https://oddcoll.com/,2026-11-01
+Odškodnenie PZP,boutique,slovakia,Slovakia,"No upfront fees; fee of up to 20% paid only from compensation recovered, no costs if nothing is obtained",https://odskodneniepzp.sk/,2026-11-01
 Odškodnete.me,boutique,czechia,Czechia,No entry fees or advances; fee of 10% to 25% taken only from compensation obtained,https://odskodnete.me/,2026-11-01
+Odškodnina.net (Justicija d.o.o.),collection_agency,slovenia,Slovenia,"Free case assessment, no upfront costs, payment only on success",https://odskodnina.net/,2026-11-01
+Odštete (Carthago d.o.o.),collection_agency,croatia,Croatia,Charged only when case is successfully closed: commission of 15% plus VAT; free if no compensation,https://odsteta.com/,2026-11-01
 Odszkodowania FENIKS,boutique,poland,Poland,"No start fees; 15% to 50% commission only after success, court costs covered",https://odszkodowania-wroclaw.pl/,2026-11-01
+Odvjetnički ured Medved,boutique,croatia,Croatia,"Damages cases usually on a success fee: paid only when and if client is paid, up to 30% of the result",https://odvjetnik-medved.hr/,2026-11-01
+Ofir Yakobovich Law Office,boutique,israel,Israel,No legal fee if the claim does not succeed (conditions apply),https://www.ofir-law.co.il/,2026-11-01
+Øgreid Medisinsk Rådgivning,boutique,norway,Norway,"No cure, no pay for patients: agreed share of compensation only if the NPE claim succeeds",https://www.ogreid-medisinsk.no/,2026-11-01
+Olsman MacKenzie Peacock,litigation_firm,united states,United States,No fees unless we are successful,https://olsmanlaw.com,2026-11-01
 Omni Bridgeway,funder,australia,Australia; New Zealand; Singapore; Hong Kong; United Arab Emirates; Netherlands; France; Switzerland,Non-recourse funding; not repaid if unsuccessful; claim value ideally >10x funding,https://omnibridgeway.com,2026-10-06
+Onah Attorneys,full_service,south africa,South Africa,No-win-no-fee contingency agreement capped at 25% under the Contingency Fees Act,https://onah-attorneys.co.za/,2026-11-01
+Ongegu & Associates Advocates,full_service,kenya,Kenya,"No win, no fee for personal injury claims",https://ongegulaw.com/,2026-11-01
+OnlineOdškodnění.cz,boutique,czechia,Czechia,No advances; success-based share of recovered compensation paid only if successful,https://onlineodskodneni.cz/,2026-11-01
 Optimal Recover,collection_agency,belgium,Belgium,"Fees charged only on results, as percentage of recovered sums",https://www.optimal-recover.be,2026-10-06
+Orendorff & Associates,boutique,canada,Canada,Contingency fee; legal fees only if you receive money,https://www.sudburypersonalinjurylawyers.ca,2026-11-01
 Ozbag & Senturk Law,boutique,turkey,Turkey,Fully success-based fee in traffic accident cases; fee only if the case is won,https://www.ozbagsenturkhukuk.com/,2026-11-01
-Padronus,funder,austria,Austria; Germany,"Bears full cost risk for a success commission; individual cases from EUR 100,000 dispute value",https://padronus.de,2026-11-01
 Padronus,funder,austria,Austria; Germany,"Funds collective and individual claims; success commission (often 35%), pays all costs if lost",https://padronus.at/,2026-11-01
+Padronus,funder,austria,Austria; Germany,"Bears full cost risk for a success commission; individual cases from EUR 100,000 dispute value",https://padronus.de,2026-11-01
+Paquette & Paquette,full_service,canada,Canada,Contingency fee; you do not pay unless money is recovered,https://www.paquettelawyers.ca,2026-11-01
 Parke Gordon Law,litigation_firm,united states,United States,No fees unless we win; you pay nothing unless we obtain money for you,https://www.parkegordon.com,2026-11-01
+Parker Waichman LLP,litigation_firm,united states,United States,Contingency fee: the firm is not paid any attorney's fee unless it recovers for the client,https://www.yourlawyer.com,2026-11-01
+Parrilla Abogados,boutique,spain,Spain,"En accidentes, solo cobramos honorarios si ganamos",https://parrillaabogados.es/,2026-11-01
+Parrish DeVaughn Injury Lawyers,litigation_firm,united states,United States,You don't pay unless we win,https://parrishdevaughn.com,2026-11-01
+Paul Doran Employment Law,boutique,united kingdom,United Kingdom,No-win-no-fee employment solicitors,https://www.pauldoranlaw.com,2026-11-01
+Paulson Coletti Trial Attorneys,litigation_firm,united states,United States,Zero fees unless we win your case,https://www.paulsoncoletti.com,2026-11-01
 PAV Prozessfinanz,funder,germany,Germany,Funds all litigation costs; success-based share of proceeds only if the case is won,https://www.pav-prozessfinanz.de/,2026-11-01
+"Pazer, Epstein, Jaffe, Fein & Gozenput",litigation_firm,united states,United States,Never charge a fee unless we recover compensation for you,https://pazerlaw.com,2026-11-01
+PCVA Law,litigation_firm,united states,United States,Contingency basis; we advance the costs of litigation,https://pcva.law,2026-11-01
+PDA Law,litigation_firm,united kingdom,United Kingdom,No win no fee available for professional negligence claims,https://pdalaw.co.uk,2026-11-01
 Penningtons Manches Cooper,full_service,united kingdom,United Kingdom,"No win, no fee group actions for investors and businesses",https://www.penningtonslaw.com,2026-10-06
+Pérez Tirado Abogados,boutique,spain,Spain,Sólo cobramos si usted cobra; no trabajamos para aseguradoras,https://pereztirado.com/,2026-11-01
+Persich Lawyers,boutique,australia,Australia,"No win, no fee personal injury claims",https://persich.com.au/,2026-11-01
 Peschel & Partner Rechtsanwälte (DeineRechte.at),litigation_firm,austria,Austria,"Without legal insurance, case financed by funder against success share",https://www.deinerechte.at,2026-10-06
 Phi Finney McDonald,boutique,australia,Australia,Shareholder class actions under group costs orders (e.g. 35% deducted from recovery) or funder-backed,https://phifinneymcdonald.com,2026-10-06
+Phillips Law Group,litigation_firm,united states,United States,No fee unless we win,https://phillipslaw.com,2026-11-01
+Phoenix Legal Solicitors,boutique,united kingdom,United Kingdom,No win no fee housing disrepair claims,https://phoenixlegalsolicitors.co.uk,2026-11-01
+"Pittman, Dutton, Hellums, Bradley & Mann",litigation_firm,united states,United States,No fee unless we win; contingency fee-only basis,https://www.pittmandutton.com,2026-11-01
 "Pittman, Roberts & Welsh",litigation_firm,united states,United States,Most injury cases on contingency; no attorney fees unless the case is successful,https://www.prwlaw.com,2026-11-01
 PLA Litigation Funding,funder,spain,Spain; Portugal,"Own capital; funds or acquires litigation and arbitration, non-recourse; advances to monetise claims",https://pla-spain.com,2026-11-01
+Platt & Fishwick,full_service,united kingdom,United Kingdom,Will consider contingency fee (no win no fee) agreements when acting for claimants,https://www.plattandfishwick.co.uk,2026-11-01
 Ploum,full_service,netherlands,Netherlands,Large commercial/cartel claims financed via partnership with Liesker Procesfinanciering,https://www.ploum.nl,2026-10-06
+PMN Lawyers,boutique,australia,Australia,"Most claims run on a no win, no fee basis",https://www.pmnlawyers.com.au/,2026-11-01
 Polaris Lawyers,boutique,australia,Australia,"No win, no fee personal injury representation",https://polarislawyers.com.au/,2026-11-01
+Por El Trabajador,boutique,chile,Chile,Paga solo si ganas tu caso,https://poreltrabajador.cl/,2026-11-01
+Poradňa Poškodeného,boutique,slovakia,Slovakia,Fee due only from successfully recovered compensation,https://www.poradnaposkodeneho.sk/,2026-11-01
+Poradna Poškozeného (European Compensation Services),boutique,czechia,Czechia,"Free initial consultation; no fees upfront, pay only if compensation is successfully obtained",https://www.poradnaposkozeneho.cz/,2026-11-01
+Portes & Coelho Advogados,boutique,brazil,Brazil,Só cobramos se ganharmos sua indenização; sem custos,https://www.portesecoelho.adv.br/,2026-11-01
+Poškozený.cz (Advokátní kancelář Šmarda),boutique,czechia,Czechia,"Fee of 20% of compensation recovered, only on success; nothing to pay if claim fails",https://www.poskozeny.cz/,2026-11-01
+Povey Stirk,full_service,australia,Australia,"Personal injury matters on a no win, no fee basis",https://www.poveystirk.com.au/,2026-11-01
+Power Rogers,litigation_firm,united states,United States,No fees unless we win,https://www.powerrogers.com,2026-11-01
 Priboi și Asociații,litigation_firm,romania,Romania,"20% success fee from compensation received; nothing paid upfront, firm covers expert costs",https://www.priboisiasociatii.ro/,2026-11-01
+Procena štete,collection_agency,serbia,Serbia,No upfront costs; 15% of paid damages charged only after successful collection,https://prijavasteteonline.rs/,2026-11-01
 Profile Investment,funder,france,France; United Kingdom,Non-recourse funding of commercial disputes; funder paid from proceeds,https://www.profileinvestment.com,2026-10-06
+Progressive Solicitors,boutique,united kingdom,United Kingdom,No-win no-fee; nothing to pay for services if the claim is not successful,https://progressivesolicitors.co.uk,2026-11-01
+Próntodanno.it,collection_agency,italy,Italy,All expert and legal costs advanced; fee due only if the case ends positively and compensation is collected,https://prontodanno.it/,2026-11-01
 Prosperity Insurance,funder,united kingdom,United Kingdom,ATE insurance via law firms; premiums fully deferred and payable only if the case succeeds,https://prosperityinsurance.co.uk,2026-11-01
+Prozess-Finanz.at,funder,austria,Austria,Funder bears all litigation costs and receives a share of the proceeds only on success,https://www.prozess-finanz.at/,2026-11-01
+PSR Solicitors,full_service,united kingdom,United Kingdom,"No win no fee for serious injury, workplace and traffic accident claims",https://www.psrsolicitors.co.uk,2026-11-01
 Punto Fino Abogados,boutique,mexico,Mexico,Percentage of amount recovered; advance for court costs only when recovery is uncertain,https://www.puntofino.mx,2026-10-06
 PureTech Legal,boutique,spain,Spain; Portugal,"Pay-for-success: nothing upfront, 25% to 30% of amount recovered, nothing if no compensation",https://puretechlegal.com/,2026-11-01
 Qthority,funder,germany,Germany,"Bears all costs; success commission of 30% of net recovery, nothing payable if lost",https://qthority.com/,2026-11-01
+Rafael Martín Bueno Abogados,boutique,spain,Spain,A porcentaje o cuota litis: porcentaje de la indemnización si se obtiene,https://www.rafaelmartinbueno.es/,2026-11-01
 Ramco Litigation Funding,funder,spain,Spain,"Non-recourse; share of proceeds only if claim succeeds; single cases, portfolios and monetisation",https://ramcolf.com,2026-11-01
+Ramos Mesonero Abogados,boutique,spain,Spain,Honorarios a porcentaje de la indemnización; solo cobran si ganan (casos aceptados),https://ramosmesonero.com/,2026-11-01
+Ramsdens Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee personal injury and medical negligence claims",https://www.ramsdens.co.uk,2026-11-01
 Randls odškodnění (Randl Partners),litigation_firm,czechia,Czechia,"0 CZK upfront; fee paid from amount won, nothing if unsuccessful",https://www.chciodskodneni.cz/,2026-11-01
 Ravn Olsen Advokatfirma,full_service,denmark,Denmark,No cure no pay offered in many injury cases: fees only if compensation is paid,https://www.ravnolsen.dk/,2026-11-01
 Reclama con Éxito,boutique,spain,Spain,"Success fee only, pay only if case is won",https://www.reclamaconexito.es/,2026-10-06
@@ -357,111 +752,250 @@ Reclama Legal,boutique,spain,Spain,"No upfront fee; fee invoiced only on amount 
 Reclama y Recupera,litigation_firm,spain,Spain,Fees always linked to the success of the claim,https://www.reclamayrecupera.com/,2026-11-01
 Reclamaciones Bancarias (León),boutique,spain,Spain,"Bank claims; firm advances initial court costs, charges only if it wins",https://reclamacionesbancarias.es,2026-10-06
 ReclamaGratis,boutique,spain,Spain,No upfront fee; 4% to 19% only on success,https://www.reclamagratis.es/,2026-11-01
+Reclamator Lawyers,boutique,spain,Spain,Solo cobramos si ganamos; no pagas por adelantado,https://reclamatorlawyers.com/,2026-11-01
 Reclamos Laborales Uruguay,boutique,uruguay,Uruguay,Fees payable only on a favourable economic result; nothing in advance,https://www.reclamoslaborales.com.uy,2026-11-01
 Recourse Capital,funder,canada,Canada,Non-recourse funding of fees and disbursements; client owes nothing if the case fails,https://recoursecapital.com,2026-11-01
 Recuperocrediti.it (Comas S.r.l.),collection_agency,italy,Italy,6-14% commission only if recovered; token EUR 19-49 if not recovered,https://www.recuperocrediti.it,2026-10-06
+Redkite Solicitors,full_service,united kingdom,United Kingdom,"No win-no fee basis, no legal fees up front",https://www.redkitesolicitors.co.uk,2026-11-01
 Reitan Law Office,boutique,united states,United States,Contingency fee basis; no attorney fees unless compensation is recovered,https://www.reitanlawoffice.com,2026-11-01
+Remedy Law,boutique,australia,Australia,"No win, no fee: legal fees only if the claim is successful",https://remedylaw.com.au/,2026-11-01
 Rensch & Rensch Law,litigation_firm,united states,United States,Contingency-fee basis; no attorney fees unless we recover compensation,https://www.renschandrensch.com,2026-11-01
+Repara tu Deuda Abogados,boutique,spain,Spain,"Revolving a éxito: 20% de lo recuperado cuando ganamos, sin provisión de fondos",https://reparatudeuda.es/,2026-11-01
 Rescos S.p.A. (Società tra Avvocati),litigation_firm,italy,Italy,"Zero upfront; fee only on successful recovery, firm covers legal costs",https://www.rescos.it/,2026-10-06
+Ricardo Mello Advocacia,boutique,brazil,Brazil,Honorários somente no êxito da ação,https://ricardomelloadv.com.br/,2026-11-01
 Richard Nelson LLP,full_service,united kingdom,United Kingdom,No win no fee or discounted fee in appropriate professional negligence cases,https://www.richardnelsonllp.co.uk,2026-10-06
+Richardson Hartley Law,litigation_firm,united kingdom,United Kingdom,"No win, no fee agreements as well as hourly rates",https://rhlaw.co.uk,2026-11-01
+Ridder Letselschade,boutique,netherlands,Netherlands,"Free legal help; costs recovered from liable party, client pays nothing if no claim succeeds",https://www.ridder-letselschade.nl/,2026-11-01
 rightmart Rechtsanwaltsgesellschaft,litigation_firm,germany,Germany,Litigation-cost funding: funder takes share only if won; 0 EUR if lost,https://www.rightmart.de,2026-10-06
 Rightside Legal,boutique,australia,Australia,No win no fee; firm funds the litigation and caps its fees,https://www.rightsidelegal.com.au/,2026-11-01
 Rigor Legal,boutique,spain,Spain,Success-only; 20% of recovered amount (+€45 if settled out of court),https://rigorlegal.com/,2026-10-06
+Rileys Solicitors,boutique,united kingdom,United Kingdom,"No win, no fee personal injury claims nationwide",https://rileyssolicitors.co.uk,2026-11-01
+Rin Kim Law,boutique,australia,Australia,"No win, no fee personal injury claims",https://rinkimlaw.com.au/,2026-11-01
 Ringler Law Corporation,boutique,united states,United States,"Contingent fee, compensated only on recovery or verdict",https://ringlerlawcorp.com,2026-10-06
+Risarcimenti24.it,boutique,italy,Italy,"Zero advance costs; pay only if you win, fee as a percentage of compensation",https://risarcimenti24.it/,2026-11-01
+Risarcimento Danni Auto,boutique,italy,Italy,"No advance, no expenses and no costs until compensation is obtained",https://www.risarcimentodanniauto.it/,2026-11-01
+RL Law,boutique,united kingdom,United Kingdom,May act for employees under a damages based agreement in exceptional cases,https://www.rllaw.co.uk,2026-11-01
+Robert J. DeBry & Associates,litigation_firm,united states,United States,No fee unless we win your case,https://robertdebry.com,2026-11-01
+Robin Partners,boutique,poland,Poland,No upfront fees; agreed commission taken only after compensation is successfully obtained,https://www.robinpartners.pl/,2026-11-01
 Robinson LLP,boutique,canada,Canada,Contingency fee basis; no fees collected if there is no recovery,https://www.robinsonllp.com,2026-11-01
 Robles & Associates,boutique,united states,United States; Puerto Rico,Puerto Rico and Florida injury cases on contingency; no payment unless there is a recovery,https://roblespa.com,2026-11-01
+ROC Legal,boutique,australia,Australia,No win no fee personal injury representation,https://roclegal.com.au/,2026-11-01
 Rochon Genova LLP,litigation_firm,canada,Canada,"Class actions on contingency, paid only on success",https://rochongenova.com,2026-10-06
+Rocky McElhaney Law Firm,litigation_firm,united states,United States,Contingency basis; we only recover if we win,https://www.rockylawfirm.com,2026-11-01
+Ródenas Abogados (Negligencias Dentales),boutique,spain,Spain,"Honorarios de éxito: solo cobramos si ganamos tu caso; si no, no pagas nada",https://negligenciasdentales.es/,2026-11-01
+Rodman Pearce Solicitors,full_service,united kingdom,United Kingdom,No win no fee for personal injury and medical negligence claims,https://www.rodmanpearce.com,2026-11-01
+Rodrigo da Guarda Advocacia,boutique,brazil,Brazil,Contrato de risco: honorários cobrados apenas em caso de êxito,https://rodrigodaguardaadv.com.br/,2026-11-01
+Roebothan McKay Marshall,litigation_firm,canada,Canada,"Contingency: 25% on motor vehicle claims, up to 30% on other injury claims; no fee unless settled",https://makethecall.ca,2026-11-01
+Rollos,full_service,united kingdom,United Kingdom,"May offer services on a no win, no fee basis depending on the circumstances",https://www.rollos.co.uk,2026-11-01
+Ron-Festinger Law Office,boutique,israel,Israel,No win no fee: percentage of compensation achieved,https://www.rofs.co.il/,2026-11-01
 Rose & Partner,full_service,germany,Germany,Arranges third-party funder who carries cost risk; alternatively lawyer success fee,https://www.rosepartner.de/,2026-10-06
+Rosenbaum & Associates,boutique,united states,United States,No fees unless we make a recovery; no payments or costs out of pocket,https://www.rosenbaumfirm.com,2026-11-01
 Rosenbaum Advogados,full_service,brazil,Brazil,Many consumer cases on honorários de êxito: you only pay if you win,https://www.rosenbaum.adv.br,2026-11-01
 Rúa Abogados,boutique,spain,Spain,"Collective claims vs large corporations; honorarios a éxito, no advances",https://ruaabogados.es,2026-10-06
+Ruana de Melo Advocacia,boutique,brazil,Brazil,Sem custo inicial; honorários somente em caso de êxito,https://advogadadopassageiro.com.br/,2026-11-01
+Ruiz Trujillo Abogados,full_service,spain,Spain,Accidentes: solo cobramos si ganamos tu caso; sin coste inicial en segunda oportunidad,https://abogadosdecadiz.es/,2026-11-01
+Russell Accident Law,boutique,canada,Canada,Free consultation; pay nothing unless we recover compensation for you,https://russellaccidentlaw.com,2026-11-01
+Russell Worth Solicitors,boutique,united kingdom,United Kingdom,Nothing to pay unless the claim is successful,https://www.russellworthsolicitors.co.uk,2026-11-01
+Ryan Carlisle Thomas Lawyers,boutique,australia,Australia,"No Win, No Fee OR Expenses policy (conditions apply)",https://rctlaw.com.au/,2026-11-01
+Rylands Garth,litigation_firm,united kingdom,United Kingdom,"Often works on a no win, no fee basis",https://rylandsgarth.com,2026-11-01
 Sabbeth Law,boutique,united states,United States,Contingency fee agreements; no fee unless compensation is recovered,https://sabbethlaw.com,2026-11-01
+Salbau Abogados,boutique,spain,Spain,"Despidos: solo cobramos si ganamos, 15% de lo recuperado (mínimo 450 EUR + IVA)",https://salbauabogados.com/,2026-11-01
 Sallah Astarita & Cox,boutique,united states,United States,"No recovery, no fee (whistleblower matters)",https://seclaw.com,2026-10-06
+Saltz Mongeluzzi & Bendesky,litigation_firm,united states,United States,Our clients don't get paid unless we win,https://www.smbb.com,2026-11-01
 Salvadores & Rivera (Derecho Laboralista),boutique,chile,Chile,"Cuota litis: free evaluation, no advance, percentage only of what you receive",https://derecholaboralista.cl,2026-11-01
 Sami Abu Warda Law Office,boutique,israel,Israel,"Fees conditional on success in injury, medical negligence and National Insurance claims",https://abuwarda.co.il/,2026-11-01
+Samuels Solicitors,litigation_firm,united kingdom,United Kingdom,Conditional fee arrangements for suitable litigation matters,https://www.samuels-solicitors.co.uk,2026-11-01
+Sánchez López Abogados,boutique,argentina,Argentina,"Cuota litis: solo cobramos cuando vos cobrás; si no cobrás, no cobramos",https://sanchezlopezabogados.com.ar/,2026-11-01
+Saryu Law Office,boutique,japan,Japan,Consultation and retainer 0 yen; no fees until compensation is obtained,https://koutsujikopro.com/,2026-11-01
+Satchell Moran Solicitors,boutique,united kingdom,United Kingdom,Conditional fee agreement: pay solicitor fees only if the housing disrepair claim succeeds,https://satchellmoransolicitors.com,2026-11-01
+Scales + Partners Lawyers,full_service,australia,Australia,"No win, no fee arrangements in appropriate compensation claim matters",https://scales.net.au/,2026-11-01
+Schroeter Goldmark & Bender,litigation_firm,united states,United States,Class cases on contingency; fees and costs only if relief is obtained for the class,https://sgb-law.com,2026-11-01
+Schultz & Myers,litigation_firm,united states,United States,Contingency fee basis; you pay nothing unless your attorney wins,https://schultzmyers.com,2026-11-01
+"Schwebel, Goetz & Sieben",litigation_firm,united states,United States,No fee unless you win,https://www.schwebel.com,2026-11-01
 Sciaccas Lawyers,boutique,australia,Australia,"No win, no fee for personal injury and compensation claims",https://www.sciaccas.com.au/,2026-11-01
+SDG Abogados Vigo,boutique,spain,Spain,Solo cobramos si tú ganas; asesoramiento legal gratuito,https://www.sdgabogadosvigo.es/,2026-11-01
 Sello Legal,boutique,spain,Spain,No money upfront to claim; success-based,https://sellolegal.com/,2026-10-06
+Separovic Injury Lawyers,boutique,australia,Australia,"No win, no fee; nothing to pay while the claim is running",https://separoviclawyers.com/,2026-11-01
+"Serrano Alou, Zernetti, Milman y Garcia Cabello",boutique,argentina,Argentina,Trabajamos con cuota litis: solo cobramos si ganás,https://derechoparatrabajadores.com.ar/,2026-11-01
+SG Studio Legale,boutique,italy,Italy,Nothing paid upfront or during the case; fee only when compensation is obtained,https://www.sgstudiolegale.it/,2026-11-01
+"Shaheen & Gordon, P.A.",full_service,united states,United States,Contingency fee basis; you pay nothing unless we win your case,https://www.shaheengordon.com,2026-11-01
+"Shapiro, Washburn & Sharp",litigation_firm,united states,United States,"No win, no fee; all litigation costs advanced",https://www.hsinjurylaw.com,2026-11-01
+Shaw & Bunner Legal,boutique,australia,Australia,"No win, no fee arrangements and free initial consultation",https://www.shawbunner.com.au/,2026-11-01
+Shebell & Shebell,litigation_firm,united states,United States,No fee unless we win,https://shebell.com,2026-11-01
 Shepherd Smith Edwards & Kantas,boutique,united states,United States,"Contingency fee, fees only if we recover",https://www.investorlawyers.com,2026-10-06
 Sheppard Law Firm,full_service,united states,United States,Personal injury cases on contingency; no attorney fees unless we recover,https://sheppardlawfirm.net,2026-11-01
 Shine Lawyers,litigation_firm,australia,Australia,Joining a class action costs nothing; fees deducted from settlement; no out-of-pocket if lost,https://www.shine.com.au,2026-10-06
 Shine Lawyers NZ,litigation_firm,new zealand,New Zealand,No Win No Fee may be available for representative (class) actions,https://www.shinelawyers.co.nz,2026-10-06
+Shiver Hamilton Campbell,litigation_firm,united states,United States,"Contingency fee; nothing upfront, fee collected only if compensation is secured",https://www.shiverhamilton.com,2026-11-01
+Siegfried & Jensen,litigation_firm,united states,United States,Contingency fee basis; we don't get paid unless we win your case,https://siegfriedandjensen.com,2026-11-01
+Silver Golub & Teitell LLP,litigation_firm,united states,United States,Class actions on contingency; firm covers costs and is paid only after a successful outcome,https://www.sgtlaw.com,2026-11-01
 Silver Law Group,boutique,united states,United States,"Contingency fee, paid only if money is recovered",https://www.silverlaw.com,2026-10-06
 Silver Miller,boutique,united states,United States,"Pure contingency fee, no hourly billing",https://silvermillerlaw.com,2026-10-06
+Silver Oak Solicitors,full_service,united kingdom,United Kingdom,Personal injury lawyers work on a No Win No Fee basis,https://silveroaksolicitors.com,2026-11-01
 Simmons Hanly Conroy LLP,litigation_firm,united states,United States,Contingency-fee commercial litigation for harmed businesses,https://simmonsfirm.com,2026-10-06
+Simmons Wolfhagen,full_service,australia,Australia,No win no fee: no legal fee if the claim is not won (conditions apply),https://www.simwolf.com.au/,2026-11-01
+Simon A Holt & Co,boutique,united kingdom,United Kingdom,"Acts on a no win, no fee basis where prospects are good",https://simonaholt.co.uk,2026-11-01
+Simon Walters,boutique,australia,Australia,"No win, no fee personal injury claims",https://simonwalters.com.au/,2026-11-01
+Simper Law,full_service,united kingdom,United Kingdom,Most medical negligence claims under a CFA; success fee capped at 25% of damages,https://simperlaw.com,2026-11-01
+Sinas Dramis Law Firm,litigation_firm,united states,United States,No fee unless we win,https://sinasdramis.com,2026-11-01
 Singapore Collection Agency,collection_agency,singapore,Singapore,"'No Collection, No Cost'; pay only when debt recovered",https://collectionagency.sg,2026-10-06
+Sinnamon Lawyers,boutique,australia,Australia,No win no fee legal advice for accident claims,https://sinnamonlawyers.com.au/,2026-11-01
+Sintons,full_service,united kingdom,United Kingdom,Conditional Fee Agreement; success fee capped at 25% of compensation,https://sintons.co.uk,2026-11-01
 Siskinds LLP,litigation_firm,canada,Canada,"Class actions on contingency, counsel paid only if successful",https://www.siskinds.com,2026-10-06
 Skaug Law,boutique,united states,United States,Contingency only; no attorney fees unless we win your case,https://skauglaw.com,2026-11-01
+Skycop,collection_agency,lithuania,Lithuania; Greece; Poland; Germany; Italy; Spain,"No win, no fee: free eligibility check, agreed fee deducted only if the claim succeeds",https://www.skycop.com/,2026-11-01
+SL Law Firm Compensation Research Center,litigation_firm,south korea,South Korea,Traffic accident compensation cases on a success-fee basis,https://bosangsl.com/,2026-11-01
 Slater and Gordon Lawyers,litigation_firm,australia,Australia,Class actions usually No Win No Fee; firm or funder bears costs and risk,https://www.slatergordon.com.au,2026-10-06
 Smith Horras,boutique,united states,United States,Contingency only; no fee unless we recover compensation for your claim,https://shidaho.com,2026-11-01
 Smith Partnership,full_service,united kingdom,United Kingdom,"No win, no fee professional negligence claims",https://smithpartnership.co.uk,2026-10-06
 Smith's Lawyers,boutique,australia,Australia,"No Win, No Fee, No Catch: no legal fees or expenses if the case loses in court",https://www.smithslawyers.com.au/,2026-11-01
 Solunion Perú,boutique,peru,Peru,Commercial debt recovery with success-based tariff,https://www.solunion.pe,2026-10-06
 Solvia Odszkodowania,boutique,poland,Poland,No upfront fees; negotiated commission taken only after insurer or bank pays,https://solvia.pl/,2026-11-01
+Sotillo Abogados,boutique,spain,Spain,Cobramos sólo si recuperamos su dinero; sin adelantar un solo euro,https://sotilloabogados.com/,2026-11-01
 Sotos LLP (Sotos Class Actions),litigation_firm,canada,Canada,"Contingency, fees only from successful judgment or settlement",https://www.sotosclassactions.com,2026-10-06
+Soul Legal,boutique,australia,Australia,"No win, no fee: fees and disbursements covered until the claim succeeds",https://soullegal.com.au/,2026-11-01
 Sparta Jurídicos,boutique,spain,Spain,Success fees: only charge if client's money is recovered,https://spartajuridicos.es/,2026-11-01
 Spence Law Firm,litigation_firm,united states,United States,No fee unless we earn it by winning your case,https://www.spencelawyers.com,2026-11-01
+Splatt Lawyers,boutique,australia,Australia,No win no fee compensation claims,https://splattlawyers.com.au/,2026-11-01
 Spoltore Abogados,boutique,argentina,Argentina,"Trabajamos a resultado: if you don't win, you pay no fees or costs",https://spoltoreabogados.com.ar,2026-11-01
 Sprawy Frankowe Bez Opłat,funder,poland,Poland,"Funds all CHF-loan case costs; success fee only after bank pays judgment, nothing if lost",https://sprawyfrankowebezoplat.pl/,2026-11-01
+Springhouse Solicitors,boutique,united kingdom,United Kingdom,"Damages-based agreement up to 35% incl. VAT of the successful outcome, or conditional fee",https://www.springhouselaw.com,2026-11-01
+SS Infortunistica,collection_agency,italy,Italy,No advance costs; fee only on result obtained,https://ssinfortunistica.it/,2026-11-01
+Stacks Goudkamp,boutique,australia,Australia,"No win, no fee personal injury representation",https://stacksgoudkamp.com.au/,2026-11-01
 Stacks Law Firm,full_service,australia,Australia,No-win no-fee arrangement in certain cases such as personal injury claims,https://www.stacklaw.com.au/,2026-11-01
+Stark & Stark,full_service,united states,United States,Contingency fee basis; no upfront payment until the case is resolved,https://www.stark-stark.com,2026-11-01
+Step Legal,full_service,united kingdom,United Kingdom,"Funding including no win, no fee options",https://www.steplegal.co.uk,2026-11-01
 Stephen Browne Personal Injury Lawyers,boutique,australia,Australia,"No Win No Fee* for most injury claims; legal fees payable only if successful, outlays payable regardless",https://www.stephenbrowne.com.au/,2026-11-01
+Stephens & Holman Law,litigation_firm,canada,Canada,"No recovery, no fee",https://www.stephensandholman.com,2026-11-01
 Stephens Scown,full_service,united kingdom,United Kingdom,"CFA or DBA for strong, sufficiently valuable claims",https://www.stephens-scown.co.uk,2026-10-06
 Stephensons Solicitors LLP,full_service,united kingdom,United Kingdom,DBA: client pays a percentage of damages only if the commercial case is won,https://www.stephensons.co.uk,2026-10-06
+Sternberg Reed,full_service,united kingdom,United Kingdom,"No win, no fee agreement where appropriate",https://www.sremploymentsolicitors.co.uk,2026-11-01
 Stewart Bell,litigation_firm,united states,United States,Contingency-fee basis; you don't pay unless we win,https://belllaw.com,2026-11-01
 Stichting Massaschade & Consument,funder,netherlands,Netherlands,Non-profit claim foundation running collective actions; seeks to recover costs from defendant,https://www.massaschadeconsument.nl/,2026-10-06
 STORE TORV Erstatningsadvokater,boutique,denmark,Denmark,"No compensation, no bill: client pays legal costs only if compensation is obtained",https://storetorv-erstatningsadvokater.dk/,2026-11-01
 Stratos Abogados,litigation_firm,mexico,Mexico,Fees on cuota litis (20% to 30% of recovery) plus fixed procedural costs,https://stratosabogados.com,2026-11-01
+Stringam Law,full_service,canada,Canada,Contingency-based billing for disability claims; nothing paid until compensation is recovered,https://stringam.ca,2026-11-01
+Strom Law Firm,litigation_firm,united states,United States,No fee if we don't win,https://stromlaw.com,2026-11-01
 StubbsGazette,collection_agency,ireland,Ireland,"No recovery, no fee; commission on collected debt",https://www.stubbsgazette.ie,2026-10-06
+Studio 3A,boutique,italy,Italy,"Zero risk guarantee: fee on result, no advance costs and no economic risk",https://www.studio3a.net/,2026-11-01
+Studio FLA Italia & Partners,collection_agency,italy,Italy,"Free consultation, no advance costs; payment only once compensation is received",https://www.flaitalia.it/,2026-11-01
 Studio Legale Avv. Andrea Centi,litigation_firm,italy,Italy,"Patto di quota lite: paid only on success, percentage of result (usually 20% to 30%)",https://www.andreacenti.it/,2026-11-01
 Studio Legale Bordogna,boutique,italy,Italy,Nothing upfront; percentage only once recovered,https://www.studiolegalebordogna.it/,2026-10-06
+Studio Legale Cattaneo,boutique,italy,Italy,No advance costs on damages claims; paid only when compensation is obtained,https://www.studiolegalecattaneo.net/,2026-11-01
 Studio Legale Falusi,full_service,italy,Italy,Percentage-of-result fee option: nothing owed if client obtains nothing,https://www.falusi.it/,2026-11-01
 Studio Legale Riccio,boutique,italy,Italy,Free review; fees proportional to result actually obtained,https://www.studiolegalericcio.it/,2026-10-06
 Studio Legale Scarlino,litigation_firm,italy,Italy,No advance; client pays only if an economic result is recovered,https://studiolegalescarlino.com/,2026-11-01
+Studio Legale Sciarra,boutique,italy,Italy,No commission until the result is obtained; free legal consultation,https://www.studiolegalesciarra.com/,2026-11-01
+Studio Legale Velocci,full_service,italy,Italy,"Debt recovery: client covers only out-of-pocket costs, fee paid only when the result is achieved",https://studiolegalevelocci.it/,2026-11-01
+Studio Nova Infortunistica,boutique,italy,Italy,Zero costs zero advances formula: no costs charged to the client,https://www.studio-nova.it/,2026-11-01
+Studio Piraino,boutique,italy,Italy,No advance on fees; agreed percentage paid only on compensation obtained,https://www.studiopiraino.it/,2026-11-01
 Stueve Siegel Hanson LLP,litigation_firm,united states,United States,"Business contingency litigation, success tied to client's",https://www.stuevesiegel.com,2026-10-06
 Summit Law LLP,boutique,united kingdom,United Kingdom,CFA in suitable cases; fixed fees and staged billing otherwise,https://www.summitlawllp.co.uk,2026-10-06
 Sun Law Office,boutique,philippines,Philippines,Contingency basis for certain cases; no legal fees unless recovery is obtained,https://sunlawoffice.com/,2026-11-01
 Susman Godfrey L.L.P.,litigation_firm,united states,United States,Large commercial cases on contingency or alternative fees,https://www.susmangodfrey.com,2026-10-06
+Sweeney Merrigan,litigation_firm,united states,United States,Our firm works on a contingency fee basis,https://www.sweeneymerrigan.com,2026-11-01
 Swenson & Shelley Law,litigation_firm,united states,United States,Qualifying injury cases on contingency; no upfront costs or out-of-pocket fees,https://www.swensonshelley.com,2026-11-01
 Swiss Legal Finance,funder,switzerland,Switzerland,Funds all legal fees and external costs; claimant pays nothing if case is lost,https://www.swisslegalfinance.ch/,2026-10-06
+Szakacs Law,boutique,canada,Canada,No win no fee: no legal fees until compensation is received; expert costs covered,https://szakacslaw.ca,2026-11-01
+T-NG Országos Kárközpont,collection_agency,hungary,Hungary,Free advice; success fee payable only once the client has received compensation,https://balesetikarterites.hu/,2026-11-01
+Tamaki Law,litigation_firm,united states,United States,Contingency fee basis; no upfront fees or costs,https://tamakilaw.com,2026-11-01
 Tapper Cuddy LLP,litigation_firm,canada,Canada,Contingency fee arrangement for most meritorious cases; no legal fees unless we recover,https://jasonharveylaw.com,2026-11-01
+Tatché Advocats,full_service,spain,Spain,Accidentes de tráfico: analizamos tu caso sin coste y solo cobramos si ganamos,https://www.tatcheadvocats.org/,2026-11-01
 Taurus Capital,funder,south africa,South Africa,Non-recourse; claims over ZAR 20m; claim to budget ratio about 10:1,https://www.taurus.co.za,2026-11-01
 Taylor Rose,full_service,united kingdom,United Kingdom,"No win, no fee group claims with litigation funding and ATE cover",https://www.taylor-rose.co.uk,2026-10-06
 Taylor Ryan Recoveries,collection_agency,ireland,Ireland,"No collection, no commission; fee only when debt recovered",https://taylorryan.ie,2026-10-06
+Ted B. Lyon & Associates,litigation_firm,united states,United States,All personal injury cases on contingency; fee earned only if we win,https://tedlyon.com,2026-11-01
 Temple Legal Protection,funder,united kingdom,United Kingdom,ATE insurance; premium deferred and payable only if case succeeds; self-insured if lost,https://www.temple-legal.co.uk,2026-11-01
+Terencio Advocacia,boutique,brazil,Brazil,Honorários quota litis: você só paga se ganhar; pagamento apenas no êxito,https://www.terencioadvocacia.com.br/,2026-11-01
 TG Online Legal Consulting,boutique,spain,Spain,Banking claims on cuota litis: fees are a percentage of the amount won,https://tglegalconsulting.com/,2026-11-01
+The Biking Lawyer LLP,boutique,canada,Canada,Free consultations; work only on a contingency basis,https://www.thebikinglawyer.ca,2026-11-01
 The Fine Law Firm,boutique,united states,United States,"Contingency fee capped at one third; no recovery, no fee",https://www.thefinelawfirm.com,2026-11-01
 The Frankowski Firm,boutique,united states,United States,No fees unless you collect an award,https://frankowskifirm.com,2026-10-06
+The Gatti Law Firm,litigation_firm,united states,United States,"No recovery, no fee; you pay nothing unless we win a settlement",https://www.gattilaw.com,2026-11-01
+The Glenn Armentor Law Corporation,litigation_firm,united states,United States,No fee unless you win; the firm is paid only if the client is paid,https://glennarmentor.com,2026-11-01
+The Higgins Firm,litigation_firm,united states,United States,No out of pocket expenses; no fee unless we win,https://www.thehigginsfirm.com,2026-11-01
+The Husband & Wife Law Team (Breyer Law),litigation_firm,united states,United States,$0 fee unless we win,https://husbandandwifelawteam.com,2026-11-01
+The Injury Law Group,boutique,australia,Australia,No win no fee across all personal injury practice areas,https://www.tilg.com.au/,2026-11-01
 The Juris,boutique,spain,Spain,"Bank claims a éxito: percentage of amount recovered plus VAT, 0 EUR if client does not recover",https://thejuris.es/,2026-11-01
 The Lanier Law Firm,litigation_firm,united states,United States,"Contingency, hybrid and alternative fees for business litigation",https://www.lanierlawfirm.com,2026-10-06
 The Pendas Law Firm,litigation_firm,united states,United States; Puerto Rico,Contingency fee basis; you pay nothing unless we win and costs are advanced,https://www.pendaslaw.com,2026-11-01
 The White Law Group,boutique,united states,United States,"Contingency fee (typically 30-35%), paid only on recovery",https://whitesecuritieslaw.com,2026-10-06
 Thomas Carlington & Associates,asset_tracer,singapore,Singapore,"No collection, no commission; rate depends on debt age and country",https://thomascarlington.com,2026-10-06
+Thomas J. Henry Law,litigation_firm,united states,United States,No Win No Fee Promise,https://thomasjhenrylaw.com,2026-11-01
+Thompson & Co Solicitors,boutique,united kingdom,United Kingdom,Every personal injury claim on a no win no fee basis; no loan or credit agreements,https://www.thompsonandco-solicitors.co.uk,2026-11-01
 Thorntons,full_service,united kingdom,United Kingdom,"No win, no fee; success fee capped at 25% of compensation (Scotland)",https://www.thorntons-law.co.uk,2026-10-06
+Three Graces Legal,litigation_firm,united kingdom,United Kingdom,Funding options include damages-based agreements and conditional fee arrangements,https://www.threegraceslegal.co.uk,2026-11-01
+Timms Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee after free initial assessment",https://www.timms-law.com,2026-11-01
 Tindall Gask Bentley Lawyers,full_service,australia,Australia,"No win, no fee: no legal fees until the claim is finalised and none if it is lost",https://tgb.com.au/,2026-11-01
+TLEO Toranomon Law and Economics Office,full_service,japan,Japan,"Hepatitis B claims: 0 yen initial cost, success fee 15% of benefit",https://www.t-leo.com/,2026-11-01
 TLW Solicitors,litigation_firm,united kingdom,United Kingdom,"No win, no fee scam refund and investment claims",https://www.tlwsolicitors.co.uk,2026-10-06
+TopRisarcimenti,boutique,italy,Italy,Fee tied to result as a percentage of net compensation; nothing owed if outcome is negative,https://www.toprisarcimenti.it/,2026-11-01
+Toremis Specialty,funder,united kingdom,United Kingdom,After-the-event insurance covering adverse costs in litigation and arbitration,https://www.toremis.com/,2026-11-01
+Torgenson Law,litigation_firm,united states,United States,There is no charge unless we win,https://www.torgensonlaw.com,2026-11-01
+Trafic Abogados,boutique,spain,Spain,"Trabajamos a éxito: sólo cobramos si tú cobras, consulta sin coste",https://www.trafic-abogados.com/,2026-11-01
+Tráfico Ayuda,boutique,spain,Spain,"Cero euros por adelantado; a éxito, porcentaje de la indemnización solo si ganamos",https://traficoayuda.es/,2026-11-01
+Trans-Inkasso & Finanz AG,collection_agency,switzerland,Switzerland,"Pure success basis: no success, no fee; 18% success fee on claims under CHF 1,000, 10% above",http://www.trans-inkasso.ch/,2026-11-01
+Trantolo & Trantolo,litigation_firm,united states,United States,"No fees until we win; contingency basis, paid only when your case is won",https://www.trantololaw.com,2026-11-01
 Travis Schultz & Partners,boutique,australia,Australia,No win no fee on compensation claims,https://schultzlaw.com.au/,2026-11-01
+Treadstone Law Solicitors,boutique,united kingdom,United Kingdom,Work on a No Win No Fee basis,https://treadstonelaw.co.uk,2026-11-01
 Trenado Abogados,boutique,mexico,Mexico,"Cuota litis in criminal and labour matters (no se gana, no se cobra)",https://trenadoabogados.com,2026-11-01
+Trent Law Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee; ATE insurance obtained against adverse costs",https://www.trentlaw.co.uk,2026-11-01
 Trethowans,full_service,united kingdom,United Kingdom,"CFA (no win, no fee) or discounted fee arrangements",https://www.trethowans.com,2026-10-06
+Trias Legal,boutique,netherlands,Netherlands,"Personal injury advice on a no cure, no pay basis",https://www.triaslegal.nl/,2026-11-01
 Trivion Incassobureau,boutique,belgium,Belgium,No cure no pay; fees usually borne by debtor via contractual penalty,https://www.incassobureau.be,2026-10-06
+Trotta Law,boutique,canada,Canada,Contingency fee agreement; no fees until we are successful,https://trottalaw.ca,2026-11-01
 Troxaio.eu Road Accident Lawyers,boutique,greece,Greece,"Percentage fee paid at the end, on collection of compensation, if achieved (max 20%)",https://troxaio.eu/,2026-11-01
+Tsutsumi Sogo Law Office,boutique,japan,Japan,Consultation and retainer 0 yen for traffic accident victims,https://www.tsutsumi-sougou.com/,2026-11-01
 tuAccidente (Justa Estudio Jurídico Notarial),boutique,uruguay,Uruguay,Solo cobramos si vos cobrás; no advance payments,https://tuaccidente.uy,2026-11-01
 Twoja Strefa Szkód,boutique,poland,Poland,Success fee of 15% to 35% of extra compensation obtained; nothing if no result,https://www.twojastrefaszkod.pl/,2026-11-01
 Ultimoo (incasso.nl),boutique,netherlands,Netherlands,No cost to creditor in amicable phase; debtor bears statutory collection costs,https://www.ultimoo.nl,2026-10-06
+Unitas Letselschade,boutique,netherlands,Netherlands,Independent personal injury help on a no cure no pay basis,https://www.unitasletselschade.nl/,2026-11-01
+Uvidjaj.rs,collection_agency,serbia,Serbia,Nothing taken upfront; 15% of the collected damages paid after the process ends,https://uvidjaj.rs/,2026-11-01
 "Vafiades, Brountas & Kominsky (VBK Law)",full_service,united states,United States,Contingency fee basis; no legal fees unless we secure compensation,https://www.vbk.com,2026-11-01
+Valent Legal,litigation_firm,canada,Canada,No upfront fees; you only pay us if you win,https://valentlegal.ca,2026-11-01
 Validity Finance,funder,united states,United States,Tailored commercial litigation finance with term sheets and strategic advice,https://www.validityfinance.com,2026-11-01
+Van der Toorn Personenschade,boutique,netherlands,Netherlands,No cure no pay: guaranteed free legal help with no deduction from the compensation,https://letselschadenocurenopay.nl/,2026-11-01
+Van Dyke Law,litigation_firm,canada,Canada,No upfront fees; you only pay when your claim is successfully resolved,https://www.vandykelaw.ca,2026-11-01
+Vbest Law Office (Bengoshi Hojin Vbest),full_service,japan,Japan,"No rider: consultation and retainer 0 yen, fully success-based fee",https://www.koutsujiko.jp/,2026-11-01
+Ven Johnson Law,litigation_firm,united states,United States,Works exclusively on a contingency fee basis; we don't get paid unless you do,https://venjohnsonlaw.com,2026-11-01
+Venters Incorporated,boutique,south africa,South Africa,"Contingency fee basis, no win no fees",https://vinc.co.za/,2026-11-01
 Verbraucherschutzverein (VSV),boutique,austria,Austria,Join class actions free; funder (e.g. Padronus) covers costs for success share,https://www.verbraucherschutzverein.eu,2026-10-06
 ViaRight,funder,germany,Germany,Covers all legal costs in exchange for a share of proceeds; no cost if case is lost,https://www.viaright.de/,2026-11-01
 Vindicat.pl,boutique,poland,Poland,8% commission on recovered money only,https://www.vindicat.pl,2026-10-06
 Vitta Investments,funder,united kingdom,United Kingdom,Non-recourse; claimant owes nothing if claim fails; ATE and capital protection insurance in place,https://vittainvestments.com,2026-11-01
+VON RUEDEN Rechtsanwälte,litigation_firm,germany,Germany,"Diesel claims with a litigation funder that covers all court, lawyer and expert costs",https://www.rueden.de/,2026-11-01
 VOTUM Robin Lawyers,litigation_firm,poland,Poland,Initial fee plus success fee payable after final favourable judgment,https://votum-rl.pl,2026-10-06
+WA Legal,boutique,australia,Australia,"No win, no fee law firm for personal injury and vehicle accidents",https://walegal.com.au/,2026-11-01
+Wafer Phillips Solicitors,boutique,united kingdom,United Kingdom,"No-win, no-fee accident claims",https://www.waferphillipssolicitors.co.uk,2026-11-01
 Wagners,litigation_firm,canada,Canada,"Contingency fee basis; if you don't receive anything, you don't pay anything",https://wagners.co,2026-11-01
+"Wais, Vogelstein, Forman, Koch & Norman",boutique,united states,United States,"Contingency basis; no upfront or hourly fees, fee only if we recover",https://www.malpracticeteam.com,2026-11-01
 Walker Law Group,boutique,australia,Australia,"No Win, No Fee guaranteed; nothing payable unless the case is won",https://www.walkerlawgroup.com.au/,2026-11-01
+Walker McDonald Lawyers,boutique,australia,Australia,"No win, no fee compensation claims",https://wmcdlaw.com.au/,2026-11-01
+"Walkup, Melodia, Kelly & Schoenberger",litigation_firm,united states,United States,No fee unless we recover money on your behalf,https://www.walkuplawoffice.com,2026-11-01
+Wallace & Graham,litigation_firm,united states,United States,Contingency fee basis; no attorney's fees unless the firm recovers compensation,https://wallacegraham.com,2026-11-01
+Ward & Rider,full_service,united kingdom,United Kingdom,"No win, no fee claims for injured individuals",https://www.wardandrider.com,2026-11-01
+Ward Black Law,litigation_firm,united states,United States,"Contingency basis: if you don't get money, there is no fee",https://www.wardblacklaw.com,2026-11-01
+Wards Solicitors,full_service,united kingdom,United Kingdom,"In most cases acts on a no win, no fee basis",https://wards.uk.com,2026-11-01
+Washington Law Center,litigation_firm,united states,United States,You pay nothing until we win,https://www.washingtonlawcenter.com,2026-11-01
 Watermans Solicitors,litigation_firm,united kingdom,United Kingdom,"No win, no fee professional negligence claims (Scotland)",https://watermans.co.uk,2026-10-06
+Watson Woodhouse,full_service,united kingdom,United Kingdom,"No win, no fee agreements among funding options",https://watsonwoodhouse.co.uk,2026-11-01
+WDI Abogados,boutique,spain,Spain,Sin costes iniciales: cobramos solo si ganamos tu caso,https://wdi.es/,2026-11-01
 We Fund Claims,funder,south africa,South Africa,Funder pays all costs and assumes risk; no repayment if claim fails,http://www.wefundclaims.co.za,2026-10-06
+Websters Lawyers,full_service,australia,Australia,No win no fee arrangements for compensation claims,https://websterslawyers.com.au/,2026-11-01
 West Law Firm,litigation_firm,united states,United States,Contingency basis; no fee unless you win,https://www.westinjurylawyers.com,2026-11-01
+West Midlands Solicitors,full_service,united kingdom,United Kingdom,Personal injury claims dealt with on a no win no fee basis,https://westmidlandssolicitors.co.uk,2026-11-01
+Wetherington Law Firm,litigation_firm,united states,United States,No fee unless you win; cases accepted on contingency,https://wfirm.com,2026-11-01
+Wettermark Keith,litigation_firm,united states,United States,You pay nothing unless we win,https://wkfirm.com,2026-11-01
+Whitley Law Firm,litigation_firm,united states,United States,No fee unless we recover compensation for you,https://whitleylawfirm.com,2026-11-01
+Wildwood Legal,boutique,united kingdom,United Kingdom,"No win, no fee personal injury claims",https://wildwoodlegal.co.uk,2026-11-01
+Williamsons Solicitors,full_service,united kingdom,United Kingdom,No win no fee personal injury claims,https://www.williamsons-solicitors.co.uk,2026-11-01
+Wilshire Law Firm,litigation_firm,united states,United States,No fees unless you get paid,https://wilshirelawfirm.com,2026-11-01
 Wilson Browne Solicitors,full_service,united kingdom,United Kingdom,"No win, no fee, contingency or insurance-backed funding in appropriate cases",https://www.wilsonbrowne.co.uk,2026-10-06
+Wilson Kehoe Winingham,litigation_firm,united states,United States,"Contingency fee basis; no upfront costs, fee only if successful",https://www.wkw.com,2026-11-01
 WinJustice,funder,united arab emirates,United Arab Emirates,Covers legal fees and court costs for a portion of the settlement; typically nothing owed if lost,https://winjustice.com,2026-11-01
+Withstand Lawyers,boutique,australia,Australia,No win no fee injury claims,https://www.withstandlawyers.com.au/,2026-11-01
 Wole Olufon and Co,full_service,nigeria,Nigeria,"Contingency fee based on amount recovered, for qualifying cases",https://woleolufonandco.com/,2026-11-01
 Wolterman Law Office,boutique,united states,United States,"Contingency for qualifying commercial cases, pay nothing unless we win",https://www.woltermanlaw.com,2026-10-06
+WS y Asociados,boutique,argentina,Argentina,"A resultado (cuota litis, generalmente 20%); si usted no gana, no cobramos",https://wsyasociados.com.ar/,2026-11-01
 Yamamoto Sogo Law Office,boutique,japan,Japan,"Fully success-based: consultation and retainer 0 yen, fee paid from compensation",https://www.takasaki-jiko.net/,2026-11-01
-youleegal,funder,germany,Germany,"Covers lawyer and procedural costs for monetary claims; from EUR 2,000 out-of-court dispute value",https://www.youleegal.de,2026-11-01
-Zamansky LLC,boutique,united states,United States,"Contingency fee, clients pay nothing out-of-pocket",https://www.zamansky.com,2026-10-06
-ZAORALOVA LEGAL,boutique,czechia,Czechia,Nothing upfront; fee charged only if compensation is actually obtained,https://odskodneniposkozenym.cz/,2026-11-01
+Yamazaki Kenichi Law Office,boutique,japan,Japan,"Fully contingent: 0 yen consultation and retainer, fee only on increased settlement",https://www.bengo.gr.jp/,2026-11-01
