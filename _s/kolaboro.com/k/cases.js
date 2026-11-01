@@ -35,7 +35,7 @@
   }
   function card(c){
     var t = TIER[c.tier] || TIER.mixed, ck = c.checks || {};
-    var meta = [c.stage ? (c.stage === 'under construction' ? 'Under construction' : 'Off-plan') : null, c.band, c.title ? c.title.replace('_', ' ') + (c.lease ? ' ' + c.lease + ' yrs' : '') : null, c.done ? 'completion ' + c.done : 'no completion date', c.yield ? c.yield + '% yield advertised' : null].filter(Boolean).join(' · ');
+    var meta = [c.stage ? (c.stage === 'under construction' ? 'Under construction' : c.stage === 'completed' ? 'Completed, still selling' : 'Off-plan') : null, c.band, c.title ? c.title.replace('_', ' ') + (c.lease ? ' ' + c.lease + ' yrs' : '') : null, c.done ? 'completion ' + c.done : 'no completion date', c.yield ? c.yield + '% yield advertised' : null].filter(Boolean).join(' · ');
     var R = ck.researched || CK.map(function(k){ return k[0]; }), mx = c.max || R.length;
     var ticks = CK.map(function(k){ if (R.indexOf(k[0]) < 0) return ''; var v = ck[k[0]], ok = k[0] === 'permit' ? v === 2 : k[0] === 'progress' ? v != null : v === true;
       var half = k[0] === 'permit' && v === 1, txt = k[0] === 'progress' && v != null ? (typeof v === 'number' ? 'Construction progress published (' + v + '%)' : 'Construction progress published (dated updates)') : half ? 'Permit claimed, number not published' : k[1];
