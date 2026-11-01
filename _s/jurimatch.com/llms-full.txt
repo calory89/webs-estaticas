@@ -2340,7 +2340,7 @@ JuriMatch is free to search. Claimants pay a subscription for matching only when
 ### Hand-verified firms, free to reuse
 URL: https://jurimatch.com/open-data
 
-Download the 716 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
+Download the 697 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
 
 ### Press and data
 URL: https://jurimatch.com/press
