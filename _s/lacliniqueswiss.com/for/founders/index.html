@@ -66,7 +66,7 @@ gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
   --sea:#2fa7b4;
   --sand:#efe6d4;
   --on-deep:#eef3f0;
-  --on-deep-muted:rgba(238,243,240,.66);
+  --on-deep-muted:rgba(238,243,240,.78);
   --f-display:"Gloock","Bodoni 72","Didot",Georgia,serif;
   --f-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
@@ -579,7 +579,7 @@ body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!im
 .map-shade{background:none;transition:opacity .8s}
 .journey .sticky{background:radial-gradient(120% 120% at 70% 40%,#145560 0%,#0e3a42 45%,#08262c 100%)}
 .map{background:transparent}
-.map.globe~.map-shade{background:linear-gradient(90deg,rgba(8,38,44,.92) 0%,rgba(8,38,44,.6) 40%,rgba(8,38,44,0) 70%)}
+.map.globe~.map-shade,.map:not(.ready)~.map-shade{background:linear-gradient(90deg,rgba(8,38,44,.92) 0%,rgba(8,38,44,.6) 40%,rgba(8,38,44,0) 70%)}
 .hero-step{min-height:100vh;min-height:100svh;align-items:flex-end;padding-bottom:7vh}
 .hero-in{pointer-events:auto;max-width:1180px;width:100%;margin:0 auto;color:var(--on-deep);padding-top:7rem}
 .hero-in .eyebrow{color:var(--on-deep-muted)}
@@ -610,7 +610,7 @@ body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!im
 @media (min-width:821px){[data-island="golden"] .map.globe~.map-shade{background:radial-gradient(120% 90% at 0% 60%,rgba(40,16,10,.82) 0%,rgba(40,16,10,.5) 40%,rgba(255,138,90,.08) 75%)}
 [data-island="night"] .map.globe~.map-shade{background:radial-gradient(120% 90% at 0% 60%,rgba(2,8,14,.92) 0%,rgba(2,8,14,.65) 45%,rgba(2,8,14,.25) 80%)}}
 .mpinlbl{transition:opacity .5s}
-@media (max-width:820px){.hero-step{padding-bottom:12vh;align-items:flex-start}.hero-in{padding-top:6.2rem}.scrollcue{display:none}.map.globe~.map-shade{background:linear-gradient(180deg,rgba(10,44,51,.9) 0%,rgba(10,44,51,.82) 60%,rgba(10,44,51,.25) 100%)}}
+@media (max-width:820px){.hero-step{padding-bottom:12vh;align-items:flex-start}.hero-in{padding-top:6.2rem}.scrollcue{display:none}.map.globe~.map-shade,.map:not(.ready)~.map-shade{background:linear-gradient(180deg,rgba(10,44,51,.9) 0%,rgba(10,44,51,.82) 60%,rgba(10,44,51,.25) 100%)}}
 /* manifesto */
 .manifesto-ch{background:var(--paper);color:var(--ink)}
 .manifesto-ch #mani{font-family:var(--f-display);font-size:clamp(2.2rem,5.6vw,4.8rem);line-height:1.08;max-width:18ch;text-wrap:balance}
@@ -1492,7 +1492,8 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
   stepObserver('.journey .sstep', flyFrom);
   // slow spin of the globe while the visitor is on the hero
   var spinning = true;
-  function spin(){ if (!mapObj || reduce) return; (function tick(){ if(!spinning) return; var c = mapObj.getCenter(); mapObj.jumpTo({center:[c.lng + 0.04, c.lat]}); requestAnimationFrame(tick); })(); }
+  var spinStart = 0, spinOn = false;
+  function spin(){ if (!mapObj || reduce || spinOn) return; spinOn = true; spinStart = performance.now(); var f = 0; (function tick(t){ if(!spinning || document.hidden || performance.now() - spinStart > 25000){ spinOn = false; return; } if ((f++ & 1) === 0) { var c = mapObj.getCenter(); mapObj.jumpTo({center:[c.lng + 0.08, c.lat]}); } requestAnimationFrame(tick); })(); }
   function darken(m){
     m.getStyle().layers.forEach(function(l){ try {
       var id = l.id;
@@ -1536,7 +1537,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
         mapObj.addSource('boat', {type:'geojson', data:{type:'Feature', geometry:{type:'LineString', coordinates:[[110.665,-6.585],[110.6,-6.3],[110.52,-6.05],[110.44,-5.87]]}}});
         mapObj.addLayer({id:'boat', type:'line', source:'boat', paint:{'line-color':'#0e3a42','line-width':2,'line-dasharray':[0,2,2],'line-opacity':.8}});
         var dashes=[[0,4,3],[0.5,4,2.5],[1,4,2],[1.5,4,1.5],[2,4,1],[2.5,4,0.5],[3,4,0],[0,0.5,3,3.5],[0,1,3,3],[0,1.5,3,2.5],[0,2,3,2],[0,2.5,3,1.5],[0,3,3,1],[0,3.5,3,0.5]], di=0;
-        if (!reduce) setInterval(function(){ try{ mapObj.setPaintProperty('boat','line-dasharray',dashes[di]); di=(di+1)%dashes.length; }catch(e){} }, 90);
+        if (!reduce) setInterval(function(){ if (document.hidden || mapObj.getZoom() < 7.5) return; try{ mapObj.setPaintProperty('boat','line-dasharray',dashes[di]); di=(di+1)%dashes.length; }catch(e){} }, 120);
         // gentle relief from open elevation tiles
         try { mapObj.addSource('dem', {type:'raster-dem', tiles:['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'], encoding:'terrarium', tileSize:256, maxzoom:13});
           mapObj.addLayer({id:'hills', type:'hillshade', source:'dem', paint:{'hillshade-shadow-color':'#8a7a5c','hillshade-highlight-color':'#ffffff','hillshade-exaggeration':.25}}, 'route'); } catch(e){}
@@ -1548,7 +1549,11 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
     } catch(e){} };
     document.head.appendChild(js);
   }
-  if (document.readyState === 'complete') loadMap(); else window.addEventListener('load', loadMap);
+  // the map loads on the first sign of interest (scroll, touch, key) or, on large screens, once the page is idle
+  var mapAsked = false;
+  function askMap(){ if (mapAsked) return; mapAsked = true; ['scroll','pointerdown','touchstart','keydown','wheel'].forEach(function(ev){ removeEventListener(ev, askMap); }); loadMap(); }
+  ['scroll','pointerdown','touchstart','keydown','wheel'].forEach(function(ev){ addEventListener(ev, askMap, {passive:true}); });
+  if (matchMedia('(min-width:1024px) and (hover:hover)').matches) { var idle = window.requestIdleCallback || function(f){ setTimeout(f, 1500); }; addEventListener('load', function(){ setTimeout(function(){ idle(askMap); }, 2500); }); }
 
   // ---------- chapter engine: every .chapter gets --p from 0 to 1 while its pin is on screen ----------
   var chs = [].slice.call(document.querySelectorAll('.chapter')), tilts = [].slice.call(document.querySelectorAll('.tilt-sec, .island-hero'));
