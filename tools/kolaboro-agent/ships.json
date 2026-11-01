@@ -1,6 +1,12 @@
 [
  {
   "d": "2026-11-01",
+  "k": "data",
+  "t": "Accuracy check: 485 claims in 50 random projects re-checked, 10 corrected, 2.2% error rate among checkable claims",
+  "u": "/corrections/"
+ },
+ {
+  "d": "2026-11-01",
   "k": "feature",
   "t": "Public roadmap: 49 of 100 features shipped, every one tracked"
  },
