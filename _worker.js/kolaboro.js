@@ -458,3 +458,96 @@ async function apiV1(req, u, env, ctx) {
   } catch (e) { return cors(json({ error: 'server', detail: String(e.message || e).slice(0, 120) }, 500)); }
   return cors(json({ error: 'not_found', docs: 'https://kolaboro.com/api/v1' }, 404));
 }
+
+// ---------- Open data API (no key): projects, markets, stats, CSV, feeds ----------
+const OPEN_FIELDS = ['id', 'market', 'country', 'region', 'stage', 'band', 'done', 'title', 'lease', 'units', 'score', 'max', 'vscore', 'tier', 'delay'];
+async function openData() {
+  const r = await fetch('https://kolaboro.com/data/bali-cases.json', { cf: { cacheTtl: 600, cacheEverything: true } });
+  return r.json();
+}
+function openProject(c) {
+  const o = {}; OPEN_FIELDS.forEach(k => { o[k] = c[k] === undefined ? null : c[k]; });
+  const ck = c.checks || {};
+  o.checks = { permit_public: ck.permit === 2 || ck.permit === 1 ? ck.permit === 2 : false, permit_claimed: ck.permit >= 1, deposit_protection: ck.escrow, progress: ck.progress, plans: !!ck.plans, track_record: !!ck.record, no_guaranteed_returns: !!ck.returns_ok };
+  o.verification = c.verified || null; o.claims = c.claims || null; o.flags = (c.flags || []).length;
+  o.all_six_public = c.score === 6 && !(c.flags || []).length;
+  o.url = 'https://kolaboro.com/p/?id=' + encodeURIComponent(c.id);
+  return o;
+}
+function marketStats(cases) {
+  const by = {}; cases.forEach(c => { (by[c.market] = by[c.market] || []).push(c); });
+  return Object.keys(by).map(m => {
+    const a = by[m], n = a.length, avg = f => a.reduce((s, c) => s + (f(c) || 0), 0) / n;
+    const disc = avg(c => (c.score || 0) / 6), conf = avg(c => (c.vscore || 0) / 6), clean = avg(c => (c.flags || []).length ? 0 : 1);
+    return { market: m, country: a[0].country, projects: n, avg_checks: +avg(c => c.score).toFixed(2), avg_confirmed: +avg(c => c.vscore).toFixed(2),
+      permit_public_pct: Math.round(avg(c => (c.checks || {}).permit === 2 ? 1 : 0) * 100), deposit_protection_pct: Math.round(avg(c => (c.checks || {}).escrow === true ? 1 : 0) * 100),
+      all_six_public: a.filter(c => c.score === 6 && !(c.flags || []).length).length, with_flags: a.filter(c => (c.flags || []).length).length,
+      transparency_index: n >= 3 ? Math.round((0.6 * disc + 0.3 * conf + 0.1 * clean) * 100) : null };
+  }).sort((x, y) => (y.transparency_index ?? -1) - (x.transparency_index ?? -1) || y.projects - x.projects);
+}
+const csvCell = v => { v = v === null || v === undefined ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+const OPEN_DOC = {
+  name: 'Kolaboro open data API', version: '1.0', license: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', auth: 'none', rate: 'cached 10 minutes at the edge',
+  note: 'Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.',
+  endpoints: {
+    'GET /api/open/stats': 'database totals (projects, markets, countries, claims tested, verification levels)',
+    'GET /api/open/projects': 'projects; filters: market, country, stage (off-plan|under construction|completed), min_public (0-6), min_confirmed (0-6), all_six (1), flags (1|0), limit (max 1000), offset',
+    'GET /api/open/projects.csv': 'same filters, CSV',
+    'GET /api/open/projects/{id}': 'one project, e.g. /api/open/projects/BALI-014',
+    'GET /api/open/markets': 'per-market statistics and the transparency index (0-100)',
+    'GET /api/open/markets.csv': 'same, CSV',
+    'GET /api/open/openapi.json': 'OpenAPI 3.1 description',
+    'GET /feed.json, /feed.xml': 'shipping log and new data, JSON Feed and RSS'
+  }
+};
+function openapiSpec() {
+  const p = (summary, params) => ({ get: { summary, parameters: (params || []).map(n => ({ name: n, in: 'query', required: false, schema: { type: 'string' } })), responses: { 200: { description: 'OK' } } } });
+  const f = ['market', 'country', 'stage', 'min_public', 'min_confirmed', 'all_six', 'flags', 'limit', 'offset'];
+  return { openapi: '3.1.0', info: { title: OPEN_DOC.name, version: OPEN_DOC.version, license: { name: 'CC BY 4.0' }, description: OPEN_DOC.note }, servers: [{ url: 'https://kolaboro.com' }],
+    paths: { '/api/open/stats': p('Database totals'), '/api/open/projects': p('List projects', f), '/api/open/projects.csv': p('Projects as CSV', f),
+      '/api/open/projects/{id}': { get: { summary: 'One project', parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }], responses: { 200: { description: 'OK' }, 404: { description: 'Not found' } } } },
+      '/api/open/markets': p('Markets and transparency index'), '/api/open/markets.csv': p('Markets as CSV') } };
+}
+function filterCases(cases, q) {
+  const num = k => q.get(k) === null || q.get(k) === '' ? null : +q.get(k);
+  const lc = k => (q.get(k) || '').toLowerCase();
+  return cases.filter(c => (!lc('market') || c.market.toLowerCase() === lc('market')) && (!lc('country') || (c.country || '').toLowerCase() === lc('country')) &&
+    (!lc('stage') || c.stage === lc('stage')) && (num('min_public') === null || (c.score || 0) >= num('min_public')) && (num('min_confirmed') === null || (c.vscore || 0) >= num('min_confirmed')) &&
+    (q.get('all_six') !== '1' || (c.score === 6 && !(c.flags || []).length)) && (q.get('flags') === null || q.get('flags') === '' || ((c.flags || []).length > 0) === (q.get('flags') === '1')));
+}
+function openResp(body, type, maxAge) {
+  const h = { 'content-type': type || 'application/json; charset=utf-8', 'cache-control': 'public, max-age=' + (maxAge || 600), 'access-control-allow-origin': '*', 'x-license': 'CC BY 4.0, credit Kolaboro' };
+  return new Response(typeof body === 'string' ? body : JSON.stringify(body, null, 1), { headers: h });
+}
+const xesc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+export async function open(req, u) {
+  const path = u.pathname.replace(/\/+$/, '');
+  if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
+  if (path === '/api/open' || path === '/api/open/docs') return openResp(OPEN_DOC);
+  if (path === '/api/open/openapi.json') return openResp(openapiSpec());
+  let d; try { d = await openData(); } catch (e) { return openResp({ error: 'data_unavailable' }, null, 30); }
+  const cases = d.cases || [], meta = { updated: d.updated, license: OPEN_DOC.license, note: OPEN_DOC.note };
+  if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, countries: d.countries, ...(d.db || {}) });
+  if (path === '/api/open/markets') return openResp({ ...meta, method: 'transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects', markets: marketStats(cases) });
+  if (path === '/api/open/markets.csv') { const m = marketStats(cases), k = Object.keys(m[0] || {}); return openResp([k.join(',')].concat(m.map(r => k.map(x => csvCell(r[x])).join(','))).join('\n'), 'text/csv; charset=utf-8'); }
+  if (path === '/api/open/projects' || path === '/api/open/projects.csv') {
+    const all = filterCases(cases, u.searchParams), off = Math.max(0, +u.searchParams.get('offset') || 0), lim = Math.min(1000, Math.max(1, +u.searchParams.get('limit') || 1000));
+    const page = all.slice(off, off + lim).map(openProject);
+    if (path.endsWith('.csv')) {
+      const k = OPEN_FIELDS.concat(['permit_public', 'deposit_protection', 'progress', 'plans', 'track_record', 'no_guaranteed_returns', 'claims_verified', 'claims_unverified', 'claims_contradicted', 'flags', 'all_six_public', 'url']);
+      const rows = page.map(o => k.map(x => csvCell(x in o.checks ? o.checks[x] : x.startsWith('claims_') ? (o.claims || {})[x.slice(7)] : o[x])).join(','));
+      return openResp([k.join(',')].concat(rows).join('\n'), 'text/csv; charset=utf-8');
+    }
+    return openResp({ ...meta, total: all.length, offset: off, limit: lim, projects: page });
+  }
+  const m = path.match(/^\/api\/open\/projects\/([A-Za-z0-9-]{3,20})$/);
+  if (m) { const c = cases.find(x => x.id.toLowerCase() === m[1].toLowerCase()); return c ? openResp({ ...meta, project: openProject(c), questions: c.q || [], flags: c.flags || [], notes: c.notes || [] }) : new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } }); }
+  if (path === '/feed.json' || path === '/feed.xml') {
+    const items = (d.ships || []).map((s, i) => ({ id: 'kolaboro-' + s.d + '-' + i, date: s.d + 'T12:00:00Z', title: s.t, tag: s.k }));
+    if (path === '/feed.json') return openResp({ version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: what we shipped', home_page_url: 'https://kolaboro.com/changelog', feed_url: 'https://kolaboro.com/feed.json', items: items.map(x => ({ id: x.id, url: 'https://kolaboro.com/changelog', title: x.title, content_text: x.title, date_published: x.date, tags: [x.tag] })) }, 'application/feed+json; charset=utf-8');
+    const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Kolaboro: what we shipped</title><link>https://kolaboro.com/changelog</link><description>New data and features, every day.</description>' +
+      items.map(x => '<item><title>' + xesc(x.title) + '</title><link>https://kolaboro.com/changelog</link><guid isPermaLink="false">' + x.id + '</guid><pubDate>' + new Date(x.date).toUTCString() + '</pubDate><category>' + x.tag + '</category></item>').join('') + '</channel></rss>';
+    return openResp(rss, 'application/rss+xml; charset=utf-8');
+  }
+  return new Response(JSON.stringify({ error: 'not_found', docs: 'https://kolaboro.com/api/open' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
+}
