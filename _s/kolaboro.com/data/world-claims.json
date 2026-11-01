@@ -53,13 +53,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -133,6 +126,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -183,13 +183,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -263,6 +256,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -314,13 +314,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -394,6 +387,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -444,13 +444,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -524,6 +517,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -576,13 +576,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -656,6 +649,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -708,13 +708,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -788,6 +781,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -819,7 +819,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 3,
    "price_usd": {
     "known": 3,
     "median": 202000.0,
@@ -838,13 +838,6 @@
     "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -921,6 +914,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -971,13 +971,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1051,6 +1044,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1101,13 +1101,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1181,6 +1174,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1231,13 +1231,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1311,6 +1304,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1362,13 +1362,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1442,6 +1435,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1495,13 +1495,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1575,6 +1568,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1628,13 +1628,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1708,6 +1701,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1717,8 +1717,8 @@
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 66,
    "title": {
-    "leasehold": 32,
-    "known": 35
+    "leasehold": 33,
+    "known": 36
    },
    "lease": {
     "known": 28,
@@ -1739,7 +1739,7 @@
    "guaranteed_language": 8,
    "permit_claims": 10,
    "permit_numbers_published": 0,
-   "plans_published": 26,
+   "plans_published": 27,
    "price_usd": {
     "known": 47,
     "median": 176000.0,
@@ -1762,13 +1762,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1842,6 +1835,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -1895,13 +1895,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -1975,6 +1968,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2025,13 +2025,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2105,6 +2098,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2156,13 +2156,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2236,6 +2229,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2287,13 +2287,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2367,6 +2360,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2418,13 +2418,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2498,6 +2491,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2552,13 +2552,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2632,6 +2625,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2683,13 +2683,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2763,6 +2756,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2815,13 +2815,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -2895,6 +2888,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -2925,7 +2925,7 @@
    },
    "guaranteed_language": 0,
    "permit_claims": 3,
-   "permit_numbers_published": 3,
+   "permit_numbers_published": 2,
    "plans_published": 3,
    "price_usd": {
     "known": 3,
@@ -2945,13 +2945,6 @@
     "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -3028,6 +3021,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3080,13 +3080,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3160,6 +3153,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3210,13 +3210,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3290,6 +3283,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3343,13 +3343,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3423,6 +3416,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3474,13 +3474,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3554,6 +3547,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3604,13 +3604,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3684,6 +3677,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3734,13 +3734,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3814,6 +3807,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3865,13 +3865,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -3945,6 +3938,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -3997,13 +3997,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4077,6 +4070,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4129,13 +4129,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4209,6 +4202,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4261,13 +4261,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4341,6 +4334,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4394,13 +4394,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4474,6 +4467,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4527,13 +4527,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4607,6 +4600,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4657,13 +4657,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4737,6 +4730,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4789,13 +4789,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4869,6 +4862,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -4919,13 +4919,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -4999,6 +4992,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5049,13 +5049,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5129,6 +5122,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5181,13 +5181,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5261,6 +5254,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5316,13 +5316,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5396,6 +5389,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5446,13 +5446,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5526,6 +5519,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5576,13 +5576,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5656,6 +5649,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5706,13 +5706,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5786,6 +5779,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5840,13 +5840,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -5920,6 +5913,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -5970,13 +5970,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6050,6 +6043,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6101,13 +6101,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6181,6 +6174,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6232,13 +6232,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6312,6 +6305,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6362,13 +6362,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6442,6 +6435,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6493,13 +6493,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6573,6 +6566,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6604,7 +6604,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 3,
    "price_usd": {
     "known": 5,
     "median": 91000.0,
@@ -6618,18 +6618,11 @@
    },
    "completion": {
     "2027": 4,
-    "2028": 1,
-    "2029": 2,
+    "2028": 2,
+    "2029": 1,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -6706,6 +6699,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6756,13 +6756,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6836,6 +6829,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -6887,13 +6887,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -6967,6 +6960,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7019,13 +7019,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7099,6 +7092,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7153,13 +7153,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7233,6 +7226,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7284,13 +7284,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7364,6 +7357,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7414,13 +7414,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7494,6 +7487,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7545,13 +7545,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7625,6 +7618,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7676,13 +7676,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7756,6 +7749,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7806,13 +7806,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -7886,6 +7879,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -7938,13 +7938,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8018,6 +8011,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8071,13 +8071,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8151,6 +8144,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8202,13 +8202,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8282,6 +8275,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8332,13 +8332,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8412,6 +8405,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8462,13 +8462,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8542,6 +8535,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8593,13 +8593,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8673,6 +8666,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8723,13 +8723,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8803,6 +8796,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8855,13 +8855,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -8935,6 +8928,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -8987,13 +8987,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9067,6 +9060,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9117,13 +9117,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9197,6 +9190,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9249,13 +9249,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9329,6 +9322,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9379,13 +9379,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9459,6 +9452,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9510,13 +9510,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9590,6 +9583,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9641,13 +9641,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9721,6 +9714,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9772,13 +9772,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9852,6 +9845,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -9904,13 +9904,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -9984,6 +9977,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10037,13 +10037,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10117,6 +10110,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10169,13 +10169,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10249,6 +10242,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10301,13 +10301,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10381,6 +10374,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10432,13 +10432,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10512,6 +10505,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10567,13 +10567,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10647,6 +10640,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10698,13 +10698,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10778,6 +10771,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10830,13 +10830,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -10910,6 +10903,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -10961,13 +10961,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11041,6 +11034,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11093,13 +11093,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11173,6 +11166,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11225,13 +11225,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11305,6 +11298,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11349,17 +11349,11 @@
     "max": 10
    },
    "completion": {
+    "2023": 1,
     "2028": 1,
-    "unknown": 3
+    "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -11436,6 +11430,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11487,13 +11488,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11567,6 +11561,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11618,13 +11619,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11698,6 +11692,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11752,13 +11753,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11832,6 +11826,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -11884,13 +11885,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -11964,6 +11958,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12016,13 +12017,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12096,6 +12090,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12147,13 +12148,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12227,6 +12221,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12278,13 +12279,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12358,6 +12352,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12409,13 +12410,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12489,6 +12483,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12540,13 +12541,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12620,6 +12614,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12671,13 +12672,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12751,6 +12745,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12801,13 +12802,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -12881,6 +12875,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -12933,13 +12934,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13013,6 +13007,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13065,13 +13066,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13145,6 +13139,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13196,13 +13197,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13276,6 +13270,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13329,13 +13330,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13409,6 +13403,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13460,13 +13461,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13540,6 +13534,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13590,13 +13591,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13670,6 +13664,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13722,13 +13723,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13802,6 +13796,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13854,13 +13855,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -13934,6 +13928,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -13988,13 +13989,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14068,6 +14062,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14118,13 +14119,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14198,6 +14192,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14251,13 +14252,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14331,6 +14325,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14340,8 +14341,8 @@
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 17,
    "title": {
-    "leasehold": 3,
-    "known": 9
+    "leasehold": 2,
+    "known": 8
    },
    "lease": {
     "known": 3,
@@ -14385,13 +14386,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14465,6 +14459,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14513,13 +14514,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14593,6 +14587,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14627,8 +14628,8 @@
    "plans_published": 2,
    "price_usd": {
     "known": 4,
-    "median": 634000.0,
-    "min": 513000.0,
+    "median": 626000.0,
+    "min": 313000.0,
     "max": 6469000.0
    },
    "yield": {
@@ -14643,13 +14644,6 @@
     "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -14726,6 +14720,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14776,13 +14777,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14856,6 +14850,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -14908,13 +14909,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -14988,6 +14982,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15039,13 +15040,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15119,6 +15113,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15172,13 +15173,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15252,6 +15246,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15306,13 +15307,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15386,6 +15380,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15437,13 +15438,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15517,6 +15511,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15567,13 +15568,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15647,6 +15641,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15700,13 +15701,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15780,6 +15774,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15830,13 +15831,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -15910,6 +15904,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -15961,13 +15962,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16041,6 +16035,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16094,13 +16095,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16174,6 +16168,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16226,13 +16227,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16306,6 +16300,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16358,13 +16359,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16438,6 +16432,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16488,13 +16489,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16568,6 +16562,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16618,13 +16619,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16698,6 +16692,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16750,13 +16751,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16830,6 +16824,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -16883,13 +16884,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -16963,6 +16957,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17014,13 +17015,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17094,6 +17088,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17144,13 +17145,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17224,6 +17218,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17275,13 +17276,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17355,6 +17349,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17406,13 +17407,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17486,6 +17480,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17537,13 +17538,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17617,6 +17611,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17667,13 +17668,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17747,6 +17741,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17760,25 +17761,25 @@
     "known": 3
    },
    "lease": {
-    "known": 2,
-    "median": 50.0,
+    "known": 1,
+    "median": 50,
     "min": 50,
     "max": 50,
     "hist": {
      "under 30": 0,
      "30 to 34": 0,
      "35 to 39": 0,
-     "40 or more": 2
+     "40 or more": 1
     }
    },
    "extension_promised": {
-    "yes": 1,
-    "known": 1
+    "yes": 0,
+    "known": 0
    },
    "guaranteed_language": 2,
    "permit_claims": 3,
    "permit_numbers_published": 2,
-   "plans_published": 2,
+   "plans_published": 3,
    "price_usd": {
     "known": 3,
     "median": 181000.0,
@@ -17801,13 +17802,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -17881,6 +17875,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   },
@@ -17934,13 +17935,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 559,
-     "pages_failed": 73,
-     "changes": 8
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 568,
      "pages_failed": 72,
      "changes": 10
@@ -18014,6 +18008,13 @@
      "pages_ok": 677,
      "pages_failed": 84,
      "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
     }
    ]
   }
