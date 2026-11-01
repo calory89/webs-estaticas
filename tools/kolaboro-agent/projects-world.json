@@ -904,9 +904,10 @@
     },
     {
      "claim": "Developed by Ellington Properties [DLD register names Crestarc Developers L.L.C (developer 2423) as developer; register mirror groups it under the Ellington brand, so likely a project vehicle, but the link is not stated by Ellington]",
-     "status": "contradicted",
+     "status": "verified",
      "by": "registry",
-     "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+     "source": "https://dubairealestateiq.com/project/the-meriva-collection",
+     "note": "Corrected 2026-11-01 after second check: the register lists Crestarc Developers among Ellington's DLD entities."
     },
     {
      "claim": "Five residential buildings, a signature residence and a hotel [DLD lists 8 buildings incl. Meriva Hotel, Meriva Signature, Meriva Shores A and B, Meriva Sunset and podium]",
@@ -47093,9 +47094,10 @@
     },
     {
      "claim": "Consent covers residential levels up to Level 54",
-     "status": "verified",
+     "status": "contradicted",
      "by": "registry",
-     "source": "https://meetings.cityofsydney.nsw.gov.au/documents/d4554/Printed decision Development Application 133-141 Liverpool Street Sydney - D2022495.pdf?T=5"
+     "source": "https://meetings.cityofsydney.nsw.gov.au/documents/d4554/Printed decision Development Application 133-141 Liverpool Street Sydney - D2022495.pdf?T=5",
+     "note": "Corrected 2026-11-01 after second check: the City of Sydney consent lists Level 53 as the top residential level; Level 54 is plant."
     },
     {
      "claim": "Construction stage: demolition complete, excavation under way (2025)",
@@ -65708,9 +65710,10 @@
     },
     {
      "claim": "Amanvari at Costa Palmas opened Aug 2026",
-     "status": "verified",
-     "by": "independent",
-     "source": "https://www.morningstar.com/news/pr-newswire/20260714fl02307/los-cabos-enters-a-new-era-of-luxury-with-major-hospitality-wellness-and-golf-developments"
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.morningstar.com/news/pr-newswire/20260714fl02307/los-cabos-enters-a-new-era-of-luxury-with-major-hospitality-wellness-and-golf-developments",
+     "note": "Corrected 2026-11-01 after second check: the source announced the opening in advance and does not confirm it happened."
     },
     {
      "claim": "Groundbreaking summer 2025",
@@ -88663,9 +88666,10 @@
     },
     {
      "claim": "Project is under construction (NAHY)",
-     "status": "contradicted",
+     "status": "verified",
      "by": "registry",
-     "source": "https://nahyrealestate.com/handover/river-cove-residences"
+     "source": "https://nahyrealestate.com/handover/river-cove-residences",
+     "note": "Corrected 2026-11-01 after second check: the ADX register also labels the project under construction (0% progress)."
     },
     {
      "claim": "Sold out (Alnair)",
@@ -91508,9 +91512,10 @@
     },
     {
      "claim": "Prices from KES 6.2m",
-     "status": "contradicted",
+     "status": "unverified",
      "by": "none",
-     "source": "https://gygroup.ke/projects/amethyst"
+     "source": "https://gygroup.ke/projects/amethyst",
+     "note": "Corrected 2026-11-01 after second check: the cited developer page shows KES 6.2M; the higher figure appears only on agent pages."
     },
     {
      "claim": "Developer delivered Emerald Springs, Misty Springs, Crest Park",
@@ -95071,9 +95076,10 @@
     },
     {
      "claim": "Sales launched May 2026 with expected annual returns up to 7%",
-     "status": "verified",
-     "by": "independent",
-     "source": "https://www.zawya.com/en/press-release/companies-news/sales-officially-launch-for-melia-residences-bahrain-in-amwaj-islands-343153"
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.zawya.com/en/press-release/companies-news/sales-officially-launch-for-melia-residences-bahrain-in-amwaj-islands-343153",
+     "note": "Corrected 2026-11-01 after second check: the source is the developer's press release republished unedited, not an independent source."
     },
     {
      "claim": "Handover Q4 2027",
@@ -124304,9 +124310,10 @@
     },
     {
      "claim": "Phase 1 of 22 units completed",
-     "status": "verified",
-     "by": "independent",
-     "source": "https://windermereintrealty.com/fl/orlando/enchanted-garden-resort/14519-damai-lane/"
+     "status": "unverified",
+     "by": "none",
+     "source": "https://windermereintrealty.com/fl/orlando/enchanted-garden-resort/14519-damai-lane/",
+     "note": "Corrected 2026-11-01 after second check: the cited listing does not mention Phase 1 or 22 units; only developer and agent pages state it."
     },
     {
      "claim": "Phase 1 units are new",
@@ -124328,9 +124335,10 @@
     },
     {
      "claim": "Construction of Phase 2 started",
-     "status": "unverified",
+     "status": "contradicted",
      "by": "none",
-     "source": "https://discoverenchantedgarden.com/"
+     "source": "https://discoverenchantedgarden.com/",
+     "note": "Corrected 2026-11-01 after second check: the developer's own site says Phase 2 is in pre-construction."
     },
     {
      "claim": "Deposits protected in escrow",
@@ -127863,9 +127871,10 @@
     },
     {
      "claim": "Penthouse sizes 41 sq m (price table) vs 410 sq m (agent)",
-     "status": "contradicted",
+     "status": "unverified",
      "by": "none",
-     "source": "https://alvobrimobiliaria.com.br/empreendimentos/balneario-camboriu/harmony-ocean-front/"
+     "source": "https://alvobrimobiliaria.com.br/empreendimentos/balneario-camboriu/harmony-ocean-front/",
+     "note": "Corrected 2026-11-01 after second check: the cited page no longer shows the conflicting sizes."
     },
     {
      "claim": "No guaranteed rental return",

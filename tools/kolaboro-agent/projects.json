@@ -6507,9 +6507,10 @@
     },
     {
      "claim": "Freehold apartments with full property rights for buyers",
-     "status": "contradicted",
-     "by": "registry",
-     "source": "https://docs.paralegal.id/PERMEN/PERMEN-ATR-BPN/KEPMEN-ATR-BPN/2022/KEPMEN-ATR-BPN-1241-SK-HK-02-IX-2022.pdf"
+     "status": "unverified",
+     "by": "none",
+     "source": "https://docs.paralegal.id/PERMEN/PERMEN-ATR-BPN/KEPMEN-ATR-BPN/2022/KEPMEN-ATR-BPN-1241-SK-HK-02-IX-2022.pdf",
+     "note": "Corrected 2026-11-01 after second check: the cited decree sets minimum prices for foreigners and does not itself rule on freehold."
     },
     {
      "claim": "Apartments from 1.8 bln IDR can be owned by foreigners (Bali minimum for foreign-owned strata units is Rp 2 billion)",
