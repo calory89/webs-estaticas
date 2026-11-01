@@ -4,7 +4,7 @@
  * What it caches, and why it cannot serve an old version of the site after a publish:
  * - Page loads (navigations) always go to the network first. The cache is only used when the
  *   network fails: then a tool page the visitor already opened is served from the last app shell,
- *   and anything else gets /offline.html.
+ *   and anything else gets the offline page (/offline).
  * - Files under /assets/ have a content hash in their name, so a cached copy is always correct:
  *   cache first, network on a miss.
  * - Nothing else is touched (API calls through /__sb, images, fonts, sitemap...).
@@ -14,12 +14,12 @@
  *
  * Emergency off switch: publish a sw.js that only calls self.registration.unregister().
  */
-const VERSION = "a88221b36ee8";
+const VERSION = "4b22cbaacc78";
 const ASSETS = `jm-assets-${VERSION}`;
 const SHELL = `jm-shell-${VERSION}`;
 // Not code: the list of visited tools survives new versions.
 const DATA = "jm-data";
-const OFFLINE_URL = "/offline.html";
+const OFFLINE_URL = "/offline"; // Pages serves offline.html at /offline (the .html URL 308-redirects)
 const SHELL_KEY = "/__jm/shell";
 const VISITED_KEY = "/__jm/visited.json";
 const MAX_ASSETS = 150;
