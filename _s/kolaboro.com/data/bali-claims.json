@@ -5,23 +5,23 @@
  "projects": 66,
  "title": {
   "leasehold": 35,
-  "known": 38
+  "known": 39
  },
  "lease": {
-  "known": 30,
-  "median": 30.0,
+  "known": 29,
+  "median": 30,
   "min": 25,
   "max": 60,
   "hist": {
    "under 30": 9,
-   "30 to 34": 16,
+   "30 to 34": 15,
    "35 to 39": 1,
    "40 or more": 4
   }
  },
  "extension_promised": {
-  "yes": 29,
-  "known": 30
+  "yes": 28,
+  "known": 29
  },
  "guaranteed_language": 8,
  "permit_claims": 10,
@@ -42,8 +42,7 @@
   "2025": 1,
   "2026": 10,
   "2027": 23,
-  "2028": 6,
-  "2029": 1,
+  "2028": 7,
   "unknown": 25
  },
  "runs": [
@@ -109,6 +108,13 @@
    "pages_ok": 381,
    "pages_failed": 53,
    "changes": 10
+  },
+  {
+   "date": "2026-11-01",
+   "mode": "ai",
+   "pages_ok": 471,
+   "pages_failed": 60,
+   "changes": 11
   }
  ]
 }
