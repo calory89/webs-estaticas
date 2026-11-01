@@ -340,6 +340,9 @@ def public_cases(projects, latest):
         sx = sat.get(c.get('_slug'))
         if sx and sx.get('status') in ('visible change', 'no visible change'):
             c['sat'] = {'status': sx['status'], 'changed_pct': sx.get('changed_pct'), 'date': sx.get('date')}
+        lt = latest.get(c.get('_slug')) or {}
+        if lt.get('sha256'):
+            c['fp'] = {'sha256': lt['sha256'], 'date': lt.get('sealed') or lt.get('checked')}
         rw = regw.get(c.get('_slug'))
         if rw:
             c['register'] = {k: rw.get(k) for k in ('register', 'item', 'status', 'detail', 'checked')}
@@ -350,6 +353,10 @@ def public_cases(projects, latest):
     res['db'] = db_stats(projects, out)
     res['db']['changes_detected'] = sum(len(v) for v in hist.values())
     res['db']['sat_watched'] = sum(1 for c in out if c.get('sat')); res['db']['sat_no_change'] = sum(1 for c in out if (c.get('sat') or {}).get('status') == 'no visible change'); res['db']['register_watched'] = sum(1 for c in out if c.get('register'))
+    lines = ''.join('%s %s\n' % (c['id'], c['fp']['sha256']) for c in sorted(out, key=lambda c: c['id']) if c.get('fp'))
+    if lines:
+        res['seal'] = {'date': TODAY, 'count': lines.count('\n'), 'root': hashlib.sha256(lines.encode()).hexdigest(),
+                       'method': 'root = sha256 of the lines "ID SHA256" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps'}
     res['ships'] = ships()
     return res
 
@@ -397,9 +404,9 @@ def main():
             if not prev.get('claims'): latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": from_seed(p['seed']), "source": "seed", "checked": TODAY}
             continue
         try:
-            text = fetch(p['url']); h = hashlib.sha256(text.encode()).hexdigest()[:16]
+            text = fetch(p['url']); full = hashlib.sha256(text.encode()).hexdigest(); h = full[:16]
             if prev.get('hash') == h and prev.get('source') == 'ai':
-                prev['checked'] = TODAY; run['pages_ok'] += 1; continue
+                prev['checked'] = TODAY; prev['sha256'] = full; prev['sealed'] = TODAY; run['pages_ok'] += 1; continue
             claims, model = claude(PROMPT.format(name=p['name'], developer=p.get('developer') or 'unknown developer', area=p['area'], market=p.get('market', 'Bali'), country=p.get('country', 'Indonesia'), text=text[:14000]))
             run['model'] = model
             if not claims: raise RuntimeError('no JSON in answer')
@@ -408,7 +415,7 @@ def main():
             diff = {k: [old.get(k), claims.get(k)] for k in FIELDS if k != 'quotes' and prev.get('source') == 'ai' and old.get(k) != claims.get(k)}
             if diff:
                 changes.append({"date": TODAY, "slug": p['slug'], "name": p['name'], "changed": diff}); run['changes'] += 1
-            latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": claims, "source": "ai", "hash": h, "checked": TODAY}
+            latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": claims, "source": "ai", "hash": h, "sha256": full, "sealed": TODAY, "checked": TODAY}
             run['pages_ok'] += 1
         except Exception as e:
             run['pages_failed'] += 1
@@ -430,7 +437,14 @@ def main():
     runs_pub = [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs]
     json.dump({"updated": TODAY, "projects": len(projects), "markets": {m: aggregates(latest, runs_pub, m) for m in markets}}, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'world-claims.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(duplicates(projects), open(os.path.join(DATA, 'duplicates.json'), 'w'), ensure_ascii=False, indent=1)
-    json.dump(public_cases(projects, latest), open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'bali-cases.json'), 'w'), ensure_ascii=False, indent=1)
+    pc = public_cases(projects, latest)
+    if pc.get('seal') and KEY:
+        try:
+            rq = urllib.request.Request('https://kolaboro.com/api/kb/stamp', json.dumps({'hash': pc['seal']['root']}).encode(), {'content-type': 'application/json', 'user-agent': 'KolaboroResearchAgent/1.0'})
+            sd = json.load(urllib.request.urlopen(rq, timeout=60)); pc['seal']['stamped'] = bool(sd.get('stamp')); print('seal stamped', pc['seal']['root'][:16], pc['seal']['stamped'])
+        except Exception as e:
+            print('seal stamp failed', e, file=sys.stderr)
+    json.dump(pc, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'bali-cases.json'), 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(run))
 
 if __name__ == '__main__':
