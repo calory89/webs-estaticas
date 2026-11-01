@@ -70,12 +70,12 @@ var KB = (function(){
     }).catch(function(){ b.disabled = false; se.textContent = 'Network error. Try again.'; });
   });
   document.getElementById('fp').onclick = function(ev){ ev.preventDefault(); var em = (f.email.value || '').trim() || prompt('Your account email'); if (!em) return; e.textContent = '';
-    KB.rpc('kolaboro_pw_request', { p_email: em }).then(function(){ e.style.color = '#0B7A55'; e.textContent = 'If an account exists for ' + em + ', we just sent a reset link. It works for one hour. Check your spam folder too.'; }).catch(function(){ e.textContent = 'Network error. Try again.'; }); };
+    KB.rpc('kolaboro_pw_request', { p_email: em }).then(function(){ try { if (window.gtag) gtag('event', 'password_reset_request'); } catch (x) {} e.style.color = '#0B7A55'; e.textContent = 'If an account exists for ' + em + ', we just sent a reset link. It works for one hour. Check your spam folder too.'; }).catch(function(){ e.textContent = 'Network error. Try again.'; }); };
   f.addEventListener('submit', function(ev){
     ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
     KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){
       b.disabled = false;
-      if (d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
+      if (d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); try { if (window.gtag) gtag('event', 'login', { method: 'email' }); } catch (x) {} location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
       e.textContent = d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : 'Wrong email or password.';
     }).catch(function(){ b.disabled = false; e.textContent = 'Network error. Try again.'; });
   });

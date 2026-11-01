@@ -192,6 +192,7 @@
     var sb = document.getElementById('pf-star');
     if (sb && W) sb.addEventListener('click', function(){
       var on = W.toggle(c.id, c), m = document.getElementById('pf-wlmsg');
+      try { if (window.kbEvent) kbEvent(on ? 'project_save' : 'project_unsave', { project: c.id }); } catch (e) {}
       sb.setAttribute('aria-pressed', on); sb.innerHTML = starLabel(on);
       if (m) m.innerHTML = wlMsg(on, true);
     });
