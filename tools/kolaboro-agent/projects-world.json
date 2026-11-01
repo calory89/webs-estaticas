@@ -123804,8 +123804,8 @@
      "guest suites",
      "BBQ with pizza oven"
     ],
-    "lat": 21.293,
-    "lng": -157.858,
+    "lat": null,
+    "lng": null,
     "permit_authority": "Hawaii Real Estate Commission (condo registration); City and County of Honolulu DPP / HCDA (building permits)",
     "brochure_url": "https://broker.wardvillage.com/wp-content/uploads/2025/09/Kalae-Details-Brochure-LR.pdf"
    },
@@ -123999,8 +123999,8 @@
      "games room",
      "private event salon"
     ],
-    "lat": 25.966,
-    "lng": -80.135,
+    "lat": null,
+    "lng": null,
     "permit_authority": "City of Aventura Community Development (site plan, building permits); Florida DBPR (condo filing)",
     "brochure_url": "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Avenia%20-%20Fact%20Sheet.pdf"
    },
@@ -124134,8 +124134,8 @@
     },
     {
      "claim": "Developer has delivered major towers (Brooklyn Tower, 111 W 57th)",
-     "status": "verified",
-     "by": "independent",
+     "status": "unverified",
+     "by": "none",
      "source": "https://jdsdevelopment.com/"
     },
     {
@@ -124189,8 +124189,8 @@
      "yoga and Pilates studio",
      "two lobby bars"
     ],
-    "lat": 25.765,
-    "lng": -80.192,
+    "lat": null,
+    "lng": null,
     "permit_authority": "City of Miami / Miami-Dade County (zoning, building); Florida DBPR (condo filing)",
     "brochure_url": null
    },
@@ -124380,8 +124380,8 @@
      "clubhouse and fire pit",
      "gated access"
     ],
-    "lat": 28.37,
-    "lng": -81.5,
+    "lat": null,
+    "lng": null,
     "permit_authority": "Orange County Building (permits); Florida DBPR (condo filing)",
     "brochure_url": null
    },
@@ -130900,14 +130900,14 @@
     "brochure_url": null
    },
    "sources": [
-    "https://qiancheng.hk/index.php?lang=en",
-    "https://qiancheng.hk/news/shownews.php?id=684",
-    "https://qiancheng.hk/news/shownews.php?id=672",
-    "https://qiancheng.hk/news/shownews.php?id=661&lang=en",
+    "https://bambooroutes.com/blogs/news/laos-foreigner",
     "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063",
-    "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane",
+    "https://qiancheng.hk/index.php?lang=en",
+    "https://qiancheng.hk/news/shownews.php?id=661&lang=en",
+    "https://qiancheng.hk/news/shownews.php?id=672",
+    "https://qiancheng.hk/news/shownews.php?id=684",
     "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/",
-    "https://bambooroutes.com/blogs/news/laos-foreigner"
+    "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane"
    ],
    "permit_number": null,
    "added": "2026-10-31",
@@ -131101,13 +131101,13 @@
    },
    "verified_score": 0,
    "sources": [
-    "https://baiavista.com/masterplan/",
-    "https://baiavista.com/en/lancering-baia-vista-fase-2/",
     "https://baiavista.com/bouwupdate-zomer-2026/",
-    "https://baiavista.com/stappenplan/",
+    "https://baiavista.com/en/lancering-baia-vista-fase-2/",
     "https://baiavista.com/faq/",
-    "https://baiavista.com/over-ons/",
     "https://baiavista.com/huuranalyse-rond-6-rendement-bij-baia-vista/",
+    "https://baiavista.com/masterplan/",
+    "https://baiavista.com/over-ons/",
+    "https://baiavista.com/stappenplan/",
     "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/"
    ]
   },
@@ -131290,12 +131290,12 @@
    },
    "verified_score": 0,
    "sources": [
+    "https://aruba-forever.com/guides/new-developments-aruba.html",
     "https://caribbeantownaruba.com/",
     "https://caribbeantownaruba.com/about-us/",
     "https://caribbeantownaruba.com/properties/rincon/",
-    "https://www.weichertaruba.com/real-estate-summit-2026/",
     "https://linkedin.com/company/caribbeantownaruba",
-    "https://aruba-forever.com/guides/new-developments-aruba.html"
+    "https://www.weichertaruba.com/real-estate-summit-2026/"
    ]
   },
   {
@@ -131478,13 +131478,13 @@
    },
    "verified_score": 0,
    "sources": [
+    "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur",
+    "https://axiainversiones.com/proyecto/city-place/",
+    "https://cityplace.com.do/",
     "https://cityplacepc.com/",
     "https://cityplacepc.com/punta-cana-condos-for-sale/",
-    "https://cityplace.com.do/",
-    "https://axiainversiones.com/proyecto/city-place/",
-    "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N",
-    "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur",
-    "https://confotur.mitur.gob.do/consulta/"
+    "https://confotur.mitur.gob.do/consulta/",
+    "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N"
    ]
   },
   {
@@ -131654,13 +131654,13 @@
     "brochure_url": null
    },
    "sources": [
-    "https://xo-jay.com/development/xoparq/",
-    "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/",
-    "https://www.linkedin.com/posts/xo-jay_we-were-delighted-to-celebrate-the-completion-activity-7484881603702464513-qtRu",
-    "https://www.lucasfox.es/obra-nueva-en-mallorca.html",
     "https://pdf.lucasfox.com/overview/es/xoparq-apartments.pdf",
     "https://www.engelvoelkers.com/es/en/projects/37d34ff1-9b13-5861-bb4a-76f603538f55",
-    "https://www.john-taylor.com/spain/new-construction/housing-estate/mallorca/"
+    "https://www.john-taylor.com/spain/new-construction/housing-estate/mallorca/",
+    "https://www.linkedin.com/posts/xo-jay_we-were-delighted-to-celebrate-the-completion-activity-7484881603702464513-qtRu",
+    "https://www.lucasfox.es/obra-nueva-en-mallorca.html",
+    "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/",
+    "https://xo-jay.com/development/xoparq/"
    ],
    "added": "2026-10-31",
    "disclosure": {
@@ -131836,10 +131836,10 @@
     "brochure_url": null
    },
    "sources": [
-    "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
-    "https://www.vangproperties.com/pt/real-estate-portugal/",
     "https://flatin.pt/en/new-developments/developer/vanguard-properties/",
-    "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+    "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/",
+    "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+    "https://www.vangproperties.com/pt/real-estate-portugal/"
    ],
    "added": "2026-10-31",
    "disclosure": {
@@ -132028,13 +132028,13 @@
    ],
    "flags": [],
    "sources": [
-    "https://chatswoodanderson.com.au/",
+    "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PPSSNH-396!20241220T034052.469%20GMT",
     "https://changfa.com.au/",
-    "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson",
+    "https://chatswoodanderson.com.au/",
     "https://www.apartments.com.au/new-apartments/the-anderson-chatswood-54-56-anderson-street-chatswood-nsw-2067",
+    "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson",
     "https://www.planningportal.nsw.gov.au/major-projects/projects/mixed-use-development-fill-affordable-housing-54-56-anderson-street-chatswood",
-    "https://www.willoughby.nsw.gov.au/Development/State-Significant-Development-Applications-in-the-Willoughby-LGA",
-    "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PPSSNH-396!20241220T034052.469%20GMT"
+    "https://www.willoughby.nsw.gov.au/Development/State-Significant-Development-Applications-in-the-Willoughby-LGA"
    ],
    "verified_score": 2,
    "status": "active",
@@ -132214,15 +132214,15 @@
    ],
    "flags": [],
    "sources": [
-    "https://www.gurner.com.au/projects/docklands",
+    "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/",
     "https://elysiumfieldsbygurner.com.au/",
     "https://helios.elysiumfieldsbygurner.com.au/",
     "https://maxcon.net.au/projects/elysium-fields/",
-    "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/",
-    "https://www.theurbandeveloper.com/articles/gurner-banks-sales-despite-downturn-elysium-fields",
-    "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025",
     "https://www.apartments.com.au/new-apartments/elysium-fields-docklands-208-226-harbour-esplanade-docklands-vic-3008",
-    "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+    "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025",
+    "https://www.gurner.com.au/projects/docklands",
+    "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf",
+    "https://www.theurbandeveloper.com/articles/gurner-banks-sales-despite-downturn-elysium-fields"
    ],
    "verified_score": 2,
    "status": "active",
@@ -132402,12 +132402,12 @@
    ],
    "flags": [],
    "sources": [
-    "https://www.thekubrick.co.nz/",
-    "https://www.ockham.co.nz/the-kubrick/",
-    "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf",
     "https://www.linz.govt.nz/guidance/overseas-investment/apply-consent-variation-or-exemption/application-forms-and-information-sheets/exemptions-need-consent/registers-exemptions/register-exemption-certificates-large",
+    "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf",
+    "https://www.ockham.co.nz/the-kubrick/",
     "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299",
     "https://www.oneroof.co.nz/news/sci-fi-epic-2001-at-the-heart-of-11m-penthouse-drawing-us-eyeballs-49591",
+    "https://www.thekubrick.co.nz/",
     "https://www.thepost.co.nz/business/360883447/ockham-launches-new-apartment-development-thawing-market"
    ],
    "verified_score": 2,
@@ -132579,16 +132579,401 @@
    ],
    "flags": [],
    "sources": [
-    "https://tabuatower.com/",
-    "https://www.fijitimes.com.fj/commercial-landmark/",
     "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines",
+    "https://tabuatower.com/",
     "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON",
+    "https://www.fijitimes.com.fj/commercial-landmark/",
     "https://www.fijivillage.com/feature/270M-boost-for-Fijis-economy-with-launch-of-The-Koro-Fiji-and-Tabua-Tower-5fx4r8/"
    ],
    "verified_score": 0,
    "status": "active",
    "added": "2026-10-31",
    "permit_number": null
+  },
+  {
+   "slug": "havannah-haven-estates-port-havannah-marina-goodies",
+   "name": "Havannah Haven Estates and Lapita Estate (Port Havannah Marina)",
+   "developer": "Goodies Ltd (leaseholder, director Tal Milfirer) with Havannah Haven Marina Limited and Australian partners (Port Havannah Construction Ltd)",
+   "area": "Havannah Harbour, North-West Efate",
+   "country": "Vanuatu",
+   "market": "Vanuatu",
+   "stage": "under construction",
+   "url": "https://raywhitevanuatu.com/property/get-in-early-on-havannah-harbours-new-marina-village/",
+   "docs_url": "https://havannahhavenestates.com/",
+   "docs_listed": [
+    "developer: waterfront and canal-front lots, 35 m canal design, private mooring buoys",
+    "developer (Lapita Estate): marina site plan download, commercial, airside and residential lots, 2026 news on titles and first settlements",
+    "agent: 94 lots from AUD 150,000, leasehold with fresh 75-year leases, 5% deposit held in escrow, home building from late 2027",
+    "news: groundbreaking May 2025, EIA public consultation June 2026"
+   ],
+   "note": "Marina-village land project on a 607 ha lease at Havannah Harbour selling canal, waterfront, commercial and hotel lots from AUD 150,000 on 75-year leases, mostly to Australian buyers. Earthworks have run since the May 2025 groundbreaking and the developer says titles are registered and first settlements done, but the marina EIA went to public consultation in June 2026 and the agent says final environmental sign-off is still pending; local chiefs have complained of poor consultation. (checked 1 Nov 2026)",
+   "seed": {
+    "price": 150000,
+    "currency": "AUD",
+    "title": "leasehold",
+    "lease_base": 75,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": "Agent: lots can be secured with a 5% deposit held in escrow (escrow holder not named)",
+    "progress_pct": null,
+    "developer_delivered": "Agent says the developer has more than 20 years in Vanuatu and more than 200 properties delivered (no projects named)",
+    "units": 94,
+    "payment_plan": "5% deposit held in escrow, or 20% discount for full payment on residential lots (limited offer)",
+    "price_per_m2": null,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": true,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "developer",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "No permit numbers published. Developer told Daily Post (Dec 2025) all government approvals were secured (foreshore, LMPC, Shefa Province, water); but the Daily Post (Jun 2026) reports the marina EIA still under public review before DEPC decides on the environmental permit, and the agent (Oct 2026) says final environmental sign-off is pending.",
+    "escrow": "Agent listing states a 5% deposit held in escrow; holder not named.",
+    "progress": "Lapita Estate site posts 2026 news (airstrip cleared, first settlements, titles signed off); Daily Post (Apr 2026) reports earthworks continuing, slowed by rain.",
+    "plans": "Marina site plan downloadable on Lapita Estate site; lot layouts in buyer pack on request.",
+    "record": "Only an unspecific agent claim of 200+ properties delivered.",
+    "returns": "No yield claims; hotel group 'proposed' for hotel site without a name."
+   },
+   "claims": [
+    {
+     "claim": "All required government approvals secured",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.dailypost.vu/news/public-given-final-week-to-comment-on-havannah-marina-environmental-report/article_ff8de94a-acd4-53f5-a846-37bc1ba247f3.html"
+    },
+    {
+     "claim": "Groundbreaking in May 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://vbtc.vu/port-havannah-marina-project-moves-ahead-amid-chiefs-concerns-over-consultation/"
+    },
+    {
+     "claim": "Earthworks continuing in 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.dailypost.vu/news/developer-defends-havannah-marina-progress-amid-growing-concerns/article_6efb92b8-07cd-5f80-9966-c3e2354e2a4e.html"
+    },
+    {
+     "claim": "Lot titles registered and first settlements completed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dailypost.vu/news/major-progress-for-north-efate-marina/article_09657e88-908c-5f3b-935b-3412b311afb4.html"
+    },
+    {
+     "claim": "Fresh 75-year leases confirmed by the Supreme Court",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://raywhitevanuatu.com/property/get-in-early-on-havannah-harbours-new-marina-village/"
+    },
+    {
+     "claim": "Project has no bank debt and is self-funded",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dailypost.vu/news/developer-defends-havannah-marina-progress-amid-growing-concerns/article_6efb92b8-07cd-5f80-9966-c3e2354e2a4e.html"
+    },
+    {
+     "claim": "Deposits held in escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://raywhitevanuatu.com/property/get-in-early-on-havannah-harbours-new-marina-village/"
+    },
+    {
+     "claim": "Developer delivered 200+ properties",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://raywhitevanuatu.com/property/get-in-early-on-havannah-harbours-new-marina-village/"
+    },
+    {
+     "claim": "Major global hotel group proposed a 110-room resort",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://raywhitevanuatu.com/property/get-in-early-on-havannah-harbours-new-marina-village/"
+    },
+    {
+     "claim": "Marina will affect some mangroves (EIA consultant)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.dailypost.vu/news/havannah-marina-developers-reject-environment-versus-economy-trade-off-claims/article_d37c5621-ef24-5d57-851d-c6e69142902e.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Port Vila, Vanuatu",
+    "developer_company": "Goodies Ltd (lessee since 2008); Havannah Haven Marina Limited",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025-05",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "canal-front lot",
+     "waterfront lot",
+     "commercial lot",
+     "airside lot",
+     "hotel site",
+     "marina berth"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 150000.0,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": 5.0,
+    "payment_plan": "5% deposit in escrow, balance at settlement; residential lots conditional on infrastructure completion",
+    "foreign_ownership": "Leasehold (75-year leases); foreigners hold land in Vanuatu only by lease",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "planned 200+ berth marina",
+     "travel lift and hardstand",
+     "fuel jetty",
+     "WW2 airstrip for scenic flights",
+     "private mooring buoys",
+     "conservation green space"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Vanuatu DEPC (EIA/environmental permit), Ministry of Internal Affairs Foreshore Committee, Ministry of Lands (LMPC)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Developer and agent publish deposit escrow and site plan",
+    "Construction activity reported by local press"
+   ],
+   "flags": [
+    {
+     "text": "VBTC and Daily Post reported in May 2025 that local councils of chiefs said they had not been properly consulted or shown the EIA, while saying they support the project in principle.",
+     "source": "https://vbtc.vu/port-havannah-marina-project-moves-ahead-amid-chiefs-concerns-over-consultation/"
+    },
+    {
+     "text": "Daily Post reported in June 2026 that the marina EIA was still under public consultation before DEPC decides on the environmental permit, with stakeholders raising concerns about mangroves and flooding in a Special and Unique Marine Area.",
+     "source": "https://www.dailypost.vu/news/public-given-final-week-to-comment-on-havannah-marina-environmental-report/article_ff8de94a-acd4-53f5-a846-37bc1ba247f3.html"
+    },
+    {
+     "text": "Daily Post reported in April 2026 public speculation about partner exits and environmental compliance, which the developer called untrue.",
+     "source": "https://www.dailypost.vu/news/developer-defends-havannah-marina-progress-amid-growing-concerns/article_6efb92b8-07cd-5f80-9966-c3e2354e2a4e.html"
+    }
+   ],
+   "sources": [
+    "https://havannahhavenestates.com/",
+    "https://www.lapitaestate.com/",
+    "https://raywhitevanuatu.com/property/get-in-early-on-havannah-harbours-new-marina-village/",
+    "https://www.dailypost.vu/news/chiefs-support-port-havannah-marina-project-but-urge-for-proper-consultation/article_4884a5fc-02bd-5949-bb3a-2e1395c44065.html",
+    "https://vbtc.vu/port-havannah-marina-project-moves-ahead-amid-chiefs-concerns-over-consultation/",
+    "https://www.dailypost.vu/news/major-progress-for-north-efate-marina/article_09657e88-908c-5f3b-935b-3412b311afb4.html",
+    "https://www.dailypost.vu/news/developer-defends-havannah-marina-progress-amid-growing-concerns/article_6efb92b8-07cd-5f80-9966-c3e2354e2a4e.html",
+    "https://www.dailypost.vu/news/public-given-final-week-to-comment-on-havannah-marina-environmental-report/article_ff8de94a-acd4-53f5-a846-37bc1ba247f3.html",
+    "https://www.dailypost.vu/news/havannah-marina-developers-reject-environment-versus-economy-trade-off-claims/article_d37c5621-ef24-5d57-851d-c6e69142902e.html",
+    "http://vbr.vu/feature/havannah-marina-transforming-vanuatus-coastline-a-bold-vision-for-a-sustainable-marina-and-residential-development/"
+   ],
+   "verified_score": 1,
+   "status": "active",
+   "added": "2026-10-31",
+   "permit_number": null
+  },
+  {
+   "slug": "beekman-401-east-51st-cbsk",
+   "name": "Beekman (401 East 51st Street)",
+   "developer": "CBSK Developers (SK Development and CB Developers); sponsor 51 Street DE Owner LLC",
+   "area": "Beekman / Turtle Bay, Manhattan",
+   "country": "USA",
+   "market": "New York",
+   "stage": "under construction",
+   "url": "https://newyorkyimby.com/2026/05/beekman-tops-out-at-401-east-51st-street-in-turtle-bay-manhattan.html",
+   "docs_url": "https://www.beekman401.com/",
+   "docs_listed": [
+    "developer: Selldorf-designed condominium residences, appointments beginning this fall",
+    "NYC DOB NOW new building job M00951363 (29 storeys, 83 dwelling units), permits issued 2024-2025",
+    "NY Attorney General: CPS-1 CP 26-0009 (Feb 2026) and offering plan submitted 4 Jun 2026, not yet accepted",
+    "news: topped out May 2026, completion fall 2027"
+   ],
+   "note": "29-storey, 83-condo tower by Selldorf Architects at First Avenue and East 51st St, topped out in May 2026 with completion expected in fall 2027. NYC DOB records show new building job M00951363 (29 storeys, 83 units) with permits issued from Dec 2024; the sponsor submitted its offering plan to the NY Attorney General on 4 Jun 2026 but it was not yet accepted, so no binding contracts or deposits can be taken. (checked 1 Nov 2026)",
+   "seed": {
+    "price": null,
+    "currency": "USD",
+    "title": "freehold condominium",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q3",
+    "permit_claim": false,
+    "permit_number": "NYC DOB job M00951363",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 83,
+    "payment_plan": "Listing site shows 20% minimum down payment",
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "Developer site shows no permit or plan number. NYC DOB NOW open data: job M00951363, New Building, 29 proposed storeys, 83 dwelling units, owner SK Development, permits issued Dec 2024 to Aug 2025. NY AG filings (via Marketproof): CPS-1 submitted 9 Feb 2026; offering plan submitted 4 Jun 2026 by 51 Street DE Owner LLC, not accepted as of Oct 2026.",
+    "escrow": "Nothing published yet; under NY rules deposits go into escrow only once an offering plan is accepted.",
+    "progress": "No developer updates; New York YIMBY (May 2026) reports topping out and facade installation.",
+    "plans": "No floor plans published on the teaser site.",
+    "record": "No completed projects named on the project site.",
+    "returns": "No rental or yield claims."
+   },
+   "claims": [
+    {
+     "claim": "New building permitted for 29 storeys and 83 units",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='401'%20AND%20upper(street_name)%20like%20'%25EAST%2051%25'"
+    },
+    {
+     "claim": "Owner on DOB filings is SK Development",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='401'%20AND%20upper(street_name)%20like%20'%25EAST%2051%25'"
+    },
+    {
+     "claim": "Tower topped out May 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://newyorkyimby.com/2026/05/beekman-tops-out-at-401-east-51st-street-in-turtle-bay-manhattan.html"
+    },
+    {
+     "claim": "Completion fall 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://newyorkyimby.com/2026/05/beekman-tops-out-at-401-east-51st-street-in-turtle-bay-manhattan.html"
+    },
+    {
+     "claim": "Offering plan submitted to the NY Attorney General",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://nyc.marketproof.com/article/new-offering-83-new-condo-units-in-beekman-at-401-east-51st-street-10022-on-jun-4th-2026"
+    },
+    {
+     "claim": "Offering plan accepted and sales contracts possible",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.theroeblingteam.com/buildings/401-east-51st-street"
+    },
+    {
+     "claim": "Site bought for USD 46.8M by CBSK",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://nyc.marketproof.com/article/new-application-83-new-condo-units-in-beekman-at-401-east-51st-street-10022-on-feb-9th-2026"
+    },
+    {
+     "claim": "Designed by Selldorf Architects",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://newyorkyimby.com/2026/05/beekman-tops-out-at-401-east-51st-street-in-turtle-bay-manhattan.html"
+    },
+    {
+     "claim": "Deposits held in escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.beekman401.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "New York, USA",
+    "developer_company": "51 Street DE Owner LLC (AG sponsor); SK Development (DOB owner)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024-12",
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR",
+     "full-floor penthouse",
+     "townhouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": 20.0,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold condominium, no restriction on foreign buyers",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "porte-cochere",
+     "24-hour lobby",
+     "double-height fitness center",
+     "private dining room",
+     "library with meeting rooms",
+     "children's playroom",
+     "roof deck"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "NYC Department of Buildings; NY State Attorney General (condo offering plans)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Building permits and AG filings are public",
+    "Structure topped out before sales launch"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.beekman401.com/",
+    "https://newyorkyimby.com/2026/05/beekman-tops-out-at-401-east-51st-street-in-turtle-bay-manhattan.html",
+    "https://www.cityrealty.com/nyc/beekman-sutton-place/beekman-401-east-51st-street/4461",
+    "https://www.theroeblingteam.com/buildings/401-east-51st-street",
+    "https://nyc.marketproof.com/article/new-offering-83-new-condo-units-in-beekman-at-401-east-51st-street-10022-on-jun-4th-2026",
+    "https://nyc.marketproof.com/article/new-application-83-new-condo-units-in-beekman-at-401-east-51st-street-10022-on-feb-9th-2026",
+    "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='401'%20AND%20upper(street_name)%20like%20'%25EAST%2051%25'"
+   ],
+   "verified_score": 2,
+   "status": "active",
+   "added": "2026-10-31",
+   "permit_number": "NYC DOB job M00951363"
   }
  ]
 }
