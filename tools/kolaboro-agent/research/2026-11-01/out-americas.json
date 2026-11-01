@@ -787,5 +787,386 @@
    "https://terraazulrealestate.com/numandi-residences-playa-avellanas/",
    "https://www.dominicalrealty.com/property/4-bed-single-family-homes-for-sale-in-avellanas/17250"
   ]
+ },
+ {
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "developer": "Gesproin Group",
+  "stage": "under construction",
+  "area": "Las Iguanas golf course, Cap Cana, Punta Cana",
+  "country": "Dominican Republic",
+  "market": "Dominican Republic",
+  "url": "https://crystalgardencondos.com/",
+  "docs_url": "https://crystalgardencondos.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "floor-plan library (developer site)",
+   "dated work-progress photos (developer site)",
+   "two towers of 96 units each, 2-3BR and penthouses (agent)",
+   "delivery August 2027",
+   "payment plan USD 5,000 / 25% / 45% during works / 30% before delivery (agent)",
+   "maintenance estimate USD 2.50-3 per m2 per month (agent)",
+   "CONFOTUR status claimed, no resolution number"
+  ],
+  "note": "Condo-hotel of two towers (about 192-196 units) by MORPH on the Las Iguanas course, under construction since about May 2025 with delivery listed for August 2027; agents list 2BR units of 85.5 m2 at USD 440,000. Developer projects 8-11% ROI as illustrative only; a promotional magazine article cites a projected 19.19% cash-on-cash return. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 440000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Gesproin Group: 8 completed projects including Garden Los Corales (El Caribe); Golf Garden in Cocotal; presence since 2017 (inmobiliario.do)",
+   "units": 196,
+   "payment_plan": "USD 5,000 reservation, 25% at contract, 45% monthly or quarterly during construction, 30% before delivery",
+   "price_per_m2": 5145
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "CONFOTUR qualification claimed by developer and a promotional article; no resolution or construction licence number published",
+   "escrow": "No escrow, fideicomiso or bank guarantee mentioned on agent pages; developer site blocked on re-check",
+   "progress": "Developer site publishes dated work-progress photography (recorded on prior check; site could not be reopened 31 Oct 2026); agents list 'En construccion', start May 2025",
+   "plans": "Floor-plan library on developer site; unit m2 on agent listings",
+   "record": "El Caribe reports Gesproin completed 8 projects including Garden Los Corales and Golf Garden (Cocotal); inmobiliario.do (14 Oct 2026) says active since 2017",
+   "returns": "Developer: 8-11% projected ROI labelled illustrative, not guaranteed. Canadian Real Estate Magazine article (Apr 2025, promotional) cites projected 19.19% cash-on-cash; no guarantee wording found"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Delivery August 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbean-homes-by-gbh.alterestate.com/propiedad/crystal-garden-cap-cana-luxury-golf-residences-condo-hotel-investment-punta-cana-dominican-republic-1064"
+   },
+   {
+    "claim": "Construction under way since about May 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.drlistings.com/fr/property/crystal-garden-sea-and-golf-2-and-3-br-condos-and-penthouses-cap-cana-las-iguanas-12732/"
+   },
+   {
+    "claim": "196 residences (agent: two towers of 96 = 192)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.drlistings.com/fr/property/crystal-garden-sea-and-golf-2-and-3-br-condos-and-penthouses-cap-cana-las-iguanas-12732/"
+   },
+   {
+    "claim": "2BR 85.5 m2 at USD 440,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbean-homes-by-gbh.alterestate.com/propiedad/crystal-garden-cap-cana-luxury-golf-residences-condo-hotel-investment-punta-cana-dominican-republic-1064"
+   },
+   {
+    "claim": "CONFOTUR approved with 15-year tax exemption",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.canadianrealestatemagazine.ca/news/crystal-garden-dominican-republic/"
+   },
+   {
+    "claim": "Projected 19.19% cash-on-cash return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.canadianrealestatemagazine.ca/news/crystal-garden-dominican-republic/"
+   },
+   {
+    "claim": "Gesproin has completed 8 projects including Garden Los Corales",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elcaribe.com.do/gente/a-y-e/marina-garden-el-sofisticado-concepto-de-gesproin-para-cap-cana/"
+   },
+   {
+    "claim": "Gesproin active in Cap Cana and Bavaro since 2017, Crystal Garden in its portfolio",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://inmobiliario.do/en/gesproin-group-begins-groundbreaking-to-build-the-first-corporate-building-in-cap-cana/"
+   },
+   {
+    "claim": "89% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://crystalgardencondos.com/"
+   },
+   {
+    "claim": "Buyer funds held in escrow or trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.drlistings.com/fr/property/crystal-garden-sea-and-golf-2-and-3-br-condos-and-penthouses-cap-cana-las-iguanas-12732/"
+   },
+   {
+    "claim": "Project managed by Banyan Group (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.drlistings.com/fr/property/crystal-garden-sea-and-golf-2-and-3-br-condos-and-penthouses-cap-cana-las-iguanas-12732/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Punta Cana, Dominican Republic",
+   "developer_company": null,
+   "developer_projects_delivered": 8,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-05",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 85.52,
+   "size_max_m2": null,
+   "price_min": 440000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 25,
+   "payment_plan": "USD 5,000 reservation, 25% at contract, 45% during construction, 30% before delivery",
+   "foreign_ownership": "Freehold title, same rights as nationals",
+   "rental_programme": "Condo-hotel / Airbnb-friendly; developer projection 8-11% ROI labelled illustrative",
+   "service_charge": "About USD 2.50-3 per m2 per month (agent estimate)",
+   "brand": null,
+   "amenities": [
+    "golf course views",
+    "terrace jacuzzis",
+    "pools",
+    "shuttle to beach",
+    "condo-hotel services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "MITUR (CONFOTUR and tourism permits), Ayuntamiento / MIVED (construction)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated construction photos and floor plans on developer site",
+   "Developer track record reported by local press",
+   "Projected ROI labelled illustrative rather than guaranteed",
+   "Payment plan staged through construction"
+  ],
+  "flags": [],
+  "sources": [
+   "https://crystalgardencondos.com/",
+   "https://caribbean-homes-by-gbh.alterestate.com/propiedad/crystal-garden-cap-cana-luxury-golf-residences-condo-hotel-investment-punta-cana-dominican-republic-1064",
+   "https://www.drlistings.com/fr/property/crystal-garden-sea-and-golf-2-and-3-br-condos-and-penthouses-cap-cana-las-iguanas-12732/",
+   "https://www.canadianrealestatemagazine.ca/news/crystal-garden-dominican-republic/",
+   "https://www.elcaribe.com.do/gente/a-y-e/marina-garden-el-sofisticado-concepto-de-gesproin-para-cap-cana/",
+   "https://inmobiliario.do/en/gesproin-group-begins-groundbreaking-to-build-the-first-corporate-building-in-cap-cana/"
+  ]
+ },
+ {
+  "slug": "vervana-playa-venao-frapan",
+  "name": "Vervana Phase I and II",
+  "developer": "FRAPAN-Invest Corp.",
+  "stage": "off-plan",
+  "area": "Achotines Bay, Playa Venao, Los Santos",
+  "country": "Panama",
+  "market": "Panama",
+  "url": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/",
+  "docs_url": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit table with count, m2, starting price and availability (Apr 2026)",
+   "Phase I start Feb 2026, end Sep 2027; Phase II Feb 2027 to Sep 2028",
+   "70% payable on completion",
+   "floor plans on request only",
+   "Golden Investor Visa eligibility claim"
+  ],
+  "note": "Low-density resort on 20 ha with 120 m of beach next to Playa Venao: Phase I has 20 beach condos (101 m2 from USD 575,000) said to have started construction in Feb 2026 for Sep 2027, Phase II condos, penthouses and villas from USD 450,000 for Sep 2028. The 2024 launch release names Chagres Capital as developer and Hamak as operator with 87 homes, while the FRAPAN page lists 44 units. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 450000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 44,
+   "payment_plan": "Staged payments during construction, 70% on completion; USD 10,000 reservation (agent)",
+   "price_per_m2": 5114
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or approval mentioned by FRAPAN, the launch release or agents",
+   "escrow": "No escrow or trust mentioned; 30% paid during construction",
+   "progress": "Only a stated start (Feb 2026); RE/MAX listing still says start estimated Q1 2026 with 18-month build; no dated photos or %",
+   "plans": "Sizes only; floor plans on request",
+   "record": "Neither FRAPAN nor Chagres Capital publish delivered projects",
+   "returns": "Lock-off rental option and optional Hamak management; no figures or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Phase I construction began February 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   },
+   {
+    "claim": "Phase I completion September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.remax-centralamerica.com/panama/pedasi/oceanfront-003244131110"
+   },
+   {
+    "claim": "Phase II groundbreaking Feb 2027, end Sep 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   },
+   {
+    "claim": "44 units across Phase I and II (launch release: 67 residences and 20 villas)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.newswire.com/news/punta-pacifica-realty-launches-sales-of-vervana-new-nature-resort-in-22388707"
+   },
+   {
+    "claim": "Developer is Chagres Capital (FRAPAN names no developer)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.newswire.com/news/punta-pacifica-realty-launches-sales-of-vervana-new-nature-resort-in-22388707"
+   },
+   {
+    "claim": "Hamak Hotels will operate the resort and rental program",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.newswire.com/news/punta-pacifica-realty-launches-sales-of-vervana-new-nature-resort-in-22388707"
+   },
+   {
+    "claim": "Beach condos 101 m2 from USD 575,000; condos from USD 450,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   },
+   {
+    "claim": "Purchase qualifies for Panama Golden Investor Visa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   },
+   {
+    "claim": "Construction permits granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow or trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   },
+   {
+    "claim": "Own freshwater springs and sewage system",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Panama",
+   "developer_company": "Marketed by FRAPAN-Invest, Corp.; 2024 release names Chagres Capital (managing partner Alfonso Naranjo) as developer",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR + flex",
+    "2BR",
+    "penthouse",
+    "2BR villa"
+   ],
+   "size_min_m2": 88,
+   "size_max_m2": 131,
+   "price_min": 450000,
+   "price_max": 655000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "About 30% during construction, 70% on completion",
+   "foreign_ownership": "Not stated",
+   "rental_programme": "Optional Hamak Hotels management program, lock-off units; no figures",
+   "service_charge": null,
+   "brand": "Hamak Hotels & Residences (operator)",
+   "amenities": [
+    "spa",
+    "gym",
+    "pools",
+    "sun decks",
+    "24/7 security",
+    "beach frontage 120 m",
+    "forest reserve"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Pedasi / MIVIOT; MiAmbiente (EIA)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit-level availability, sizes and prices published",
+   "Majority (70%) of price due only on completion",
+   "No guaranteed returns advertised"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/",
+   "https://www.newswire.com/news/punta-pacifica-realty-launches-sales-of-vervana-new-nature-resort-in-22388707",
+   "https://www.casasolution.com/developments/vervana-beach-condos",
+   "https://www.remax-centralamerica.com/panama/pedasi/oceanfront-003244131110"
+  ]
  }
 ]

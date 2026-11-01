@@ -2688,5 +2688,895 @@
    "https://investmauritius.com/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf",
    "https://edbmauritius.org/wp-content/uploads/2022/10/EDB-PDS-regulations.pdf"
   ]
+ },
+ {
+  "slug": "blue-vista-flow-properties",
+  "name": "Blue Vista",
+  "developer": "Flow Property Development",
+  "area": "La Plantation Marguery, Black River",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "stage": "under construction",
+  "url": "https://www.pamgolding.mu/en/property-details/offer/tamarin/property/132466/discover-blue-vista-a-pinnacle-of-luxury-living-in-black-river-mauritius.html",
+  "docs_url": "https://flowproperties.mu/property/blue-vista/",
+  "permit_number": null,
+  "docs_listed": [
+   "status under construction, last unit available (flowproperties.mu)",
+   "10 units: 4 villas with garden, pool and kiosk, plus apartments and penthouses with individual pools",
+   "dated developer updates Sep 2025 and May 2026",
+   "last villa listed at EUR 2.9M (Pam Golding)",
+   "brochure behind an enquiry form"
+  ],
+  "note": "Ten unit PDS project (4 villas plus apartments and penthouses with private pools) at La Plantation Marguery facing Le Morne; Flow's page shows it under construction with the last unit for sale, listed at EUR 2.9M, and delivery targeted for 2027, but no PDS reference, permit number or project company is published and the project does not appear on the EDB approved PDS list. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2900000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Flow names The WaterClub PDS (22 units, La Balise) and Studio 5 business park as earlier projects; Equinoxe (8 units) sold out",
+   "units": 10,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "PDS stated by agents, no number; Blue Vista not found on the EDB 'List of Approved PDS Projects' (Oct 2026 version), although other Flow-linked companies are (Siger Ltd, Resort23 Ltd, River Kings Development Ltd, all PDS Certificate)",
+   "escrow": null,
+   "progress": "Dated developer updates Sep 2025 and May 2026",
+   "plans": null,
+   "record": "flowproperties.mu projects list names The WaterClub PDS (22 units, La Balise), Studio 5 and Equinoxe (8 units, sold out); EDB list confirms PDS certificates for Flow-contact companies, not deliveries",
+   "returns": "No guaranteed returns language found"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Approved under the Property Development Scheme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investmauritius.com/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Under construction since Sep 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://flowproperties.mu/property/blue-vista/"
+   },
+   {
+    "claim": "Delivery in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pamgolding.mu/en/property-details/offer/tamarin/property/132466/discover-blue-vista-a-pinnacle-of-luxury-living-in-black-river-mauritius.html"
+   },
+   {
+    "claim": "10 units, last unit for sale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://flowproperties.mu/property/blue-vista/"
+   },
+   {
+    "claim": "Flow-linked companies hold PDS certificates for Siger Ltd (Grand Baie), Resort23 Ltd (Domaine de Palmyre) and River Kings Development Ltd (Tamarin)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://investmauritius.com/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Flow delivered The WaterClub (22 units, La Balise)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://flowproperties.mu/projects/"
+   },
+   {
+    "claim": "Freehold for foreigners under the PDS",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sothebysrealty.mu/print/?pid=83478"
+   },
+   {
+    "claim": "Last villa priced EUR 2.9M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pamgolding.mu/en/property-details/offer/tamarin/property/132466/discover-blue-vista-a-pinnacle-of-luxury-living-in-black-river-mauritius.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Black River, Mauritius",
+   "developer_company": "Flow Property Development (project company not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa",
+    "apartment",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2900000,
+   "price_max": 2900000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold under the PDS (agent statement)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "tropical gardens",
+    "private kiosks",
+    "gated estate",
+    "optional golf membership",
+    "Le Morne views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Black River District Council (Building and Land Use Permit); Economic Development Board (PDS)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction under way with dated developer updates",
+   "Developer names earlier projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://flowproperties.mu/property/blue-vista/",
+   "https://flowproperties.mu/projects/",
+   "https://linkedin.com/company/flow-properties",
+   "https://www.pamgolding.mu/en/property-details/offer/tamarin/property/132466/discover-blue-vista-a-pinnacle-of-luxury-living-in-black-river-mauritius.html",
+   "https://sothebysrealty.mu/print/?pid=83478",
+   "https://investmauritius.com/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+  ]
+ },
+ {
+  "slug": "soul-fumba-cps-africa",
+  "name": "The Soul Fumba",
+  "developer": "CPS Africa",
+  "area": "Fumba Town",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "stage": "under construction",
+  "url": "https://fumbatown.agency/en/projects/the-soul-fumba",
+  "docs_url": "https://thesoulfumba.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "FAQ construction schedule updated Feb 2026: first buildings end 2026, full resort 2028",
+   "Fumba Times (developer, 15 Sep 2026): first two of eight buildings erected",
+   "milestone payment plan 25% plus 5% fee, 20/20/15/15/5, milestones independently certified",
+   "floor plans and layouts on the sales platform",
+   "CPS FAQ: over 1,400 units sold, about 700 delivered in Fumba Town"
+  ],
+  "note": "220 timber built holiday apartments in eight buildings by a man made lagoon in Fumba Town, from USD 129,900; the developer's Fumba Times reported in Sep 2026 that the first two buildings were erected in two months, first buildings are due end 2026 and the whole resort in 2028, with payments tied to independently certified milestones; CPS's roughly 700 completed units in Fumba Town are independently reported. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 129900,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "CPS states over 1,400 units sold and about 700 delivered in Fumba Town; first 16 Moyoni Bay units handed over",
+   "units": 220,
+   "payment_plan": "25% + 5% fee on signing, 20% construction start, 20% substructure, 15% materials on site, 15% superstructure, 5% handover",
+   "price_per_m2": null,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ZIPA-registered development stated, no number",
+   "escrow": "Milestone payments independently certified; no escrow named",
+   "progress": "Developer FAQ schedule (Feb 2026) and Fumba Times (15 Sep 2026): first two of eight buildings erected; no %",
+   "plans": "Sales platform floor plans and layouts",
+   "record": "CPS FAQ: about 700 units delivered; The Star (Kenya, Jun 2025, features editor) reports about 700 units completed in Fumba Town and more than 1,000 residents",
+   "returns": "Mentions estimated 10% annual appreciation and a guaranteed fair revenue share between owners, not a guaranteed return"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "First two of eight buildings erected (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fumba.town/2026/09/15/more-soul-for-the-island/"
+   },
+   {
+    "claim": "First buildings complete end 2026, full resort 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thesoulfumba.com/faqs/"
+   },
+   {
+    "claim": "220 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fumba.town/2026/09/15/more-soul-for-the-island/"
+   },
+   {
+    "claim": "CPS has completed about 700 units in Fumba Town",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.the-star.co.ke/sasa/2025-06-26-fumba-town"
+   },
+   {
+    "claim": "CPS started Fumba Town in 2015 under ZIPA",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.the-star.co.ke/sasa/2025-06-26-fumba-town"
+   },
+   {
+    "claim": "Foreign home owners can obtain residency permits (immigration law change 2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.the-star.co.ke/sasa/2025-06-26-fumba-town"
+   },
+   {
+    "claim": "The Soul Fumba unveiled as CPS's next project (Jun 2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/news/national/real-estate-developer-cps-unveils-the-soul-fumba-project-4260258"
+   },
+   {
+    "claim": "Payments released against independently certified construction milestones",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thesoulfumba.com/faqs/"
+   },
+   {
+    "claim": "ZIPA registered development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thesoulfumba.com/faqs/"
+   },
+   {
+    "claim": "Estimated 10% annual appreciation (estimate, not guaranteed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thesoulfumba.com/"
+   },
+   {
+    "claim": "Prices from USD 129,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fumbatown.agency/en/projects/the-soul-fumba"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Zanzibar, Tanzania",
+   "developer_company": "CPS Africa (CPS Zanzibar Limited); registration number not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 700,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "holiday apartment"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 129900,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 25,
+   "payment_plan": "25% + 5% fee on signing, 20% construction start, 20% substructure, 15% materials on site, 15% superstructure, 5% handover",
+   "foreign_ownership": "Leasehold under the ZIPA investment framework (Fumba Town land held on a 99 year government lease); residency permit for foreign owners",
+   "rental_programme": "Managed holiday rental with revenue share between owners; no guaranteed return",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "man made lagoon",
+    "timber construction",
+    "Fumba Town shops and services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Zanzibar Investment Promotion Authority (ZIPA) and Zanzibar Building Control",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer delivery record of about 700 units independently reported",
+   "Payments tied to certified milestones",
+   "Floor plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thesoulfumba.com/",
+   "https://thesoulfumba.com/faqs/",
+   "https://fumbatown.agency/en/projects/the-soul-fumba",
+   "https://fumba.town/2026/09/15/more-soul-for-the-island/",
+   "https://cps.africa/faq/",
+   "https://moyoni.zanzibarproperty.co.tz/",
+   "https://www.the-star.co.ke/sasa/2025-06-26-fumba-town",
+   "https://www.thecitizen.co.tz/tanzania/news/national/real-estate-developer-cps-unveils-the-soul-fumba-project-4260258",
+   "https://en.wikipedia.org/wiki/Fumba_Town"
+  ]
+ },
+ {
+  "slug": "shivo-towers-shivo",
+  "name": "Shivo Towers",
+  "developer": "Shivo (Shivo Tanzania)",
+  "area": "Paje",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "stage": "off-plan",
+  "url": "https://realtarea.com/en/project/shivo-towers-paje/",
+  "docs_url": "https://www.byshivo.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "165 apartments, collections from studio to penthouse, floor plan downloads (byshivo.com)",
+   "investment guide PDF with estimated 9 to 12% yields and estimated 100% value appreciation",
+   "payment plan 20% down, 70% in stages, 10% on completion, or 3 and 5 year plans",
+   "completion 2027 to 2028 (agency)"
+  ],
+  "note": "Two tower, 165 unit apartment project about 100 m from Paje beach, from USD 117,000; The Citizen reported a ZIPA investment certificate in Jun 2024 and The Guardian (Tanzania) reported foundation works starting in Jun 2025 on a USD 35M build, while the developer publishes no permit number, escrow or progress figure and markets estimated 9 to 12% yields. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 117000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 9,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 165,
+   "payment_plan": "20% down, 70% in stages, 10% on completion, or 3 and 5 year plans",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No number published; The Citizen headline (18 Jun 2024): Shivo Towers granted investment certificate by ZIPA",
+   "escrow": null,
+   "progress": "No developer progress figure; The Guardian (Tanzania, 17 Jun 2025) reports excavators digging first foundations",
+   "plans": "Floor plan downloads on collection pages",
+   "record": null,
+   "returns": "Estimated 9 to 12% yields and an estimated 100% value appreciation; stated as estimates, no guarantee"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "ZIPA investment certificate granted",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thecitizen.co.tz/tanzania/zanzibar/shivo-towers-granted-investment-certificate-by-zipa-the-project-commences-4661872"
+   },
+   {
+    "claim": "Construction started (foundations, Jun 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ippmedia.co.tz/the-guardian/news/local-news/read/shivo-towers-breaks-ground-amid-island-wide-infrastructure-surge-2025-06-17-115249"
+   },
+   {
+    "claim": "165 units over 10 floors, USD 35M construction budget",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ippmedia.co.tz/the-guardian/news/local-news/read/shivo-towers-breaks-ground-amid-island-wide-infrastructure-surge-2025-06-17-115249"
+   },
+   {
+    "claim": "Completion 2027 to 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realtarea.com/en/project/shivo-towers-paje/"
+   },
+   {
+    "claim": "Estimated 9 to 12% rental yields",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.byshivo.com/wp-content/uploads/2025/05/Investment-Informational-Guide-for-Zanzibar-by-Shivo-Tanzania-Updated.pdf"
+   },
+   {
+    "claim": "Estimated 100% value appreciation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.byshivo.com/wp-content/uploads/2025/05/Investment-Informational-Guide-for-Zanzibar-by-Shivo-Tanzania-Updated.pdf"
+   },
+   {
+    "claim": "Buyer deposits protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.byshivo.com/"
+   },
+   {
+    "claim": "Developer entity Shivo (SMC Private) Limited, Mazizini, Zanzibar",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.byshivo.com/"
+   },
+   {
+    "claim": "Prices from USD 117,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realtarea.com/en/project/shivo-towers-paje/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Mazizini, Zanzibar, Tanzania",
+   "developer_company": "Shivo (SMC Private) Limited, trading as Shivo Tanzania; CEO Richard Ashby",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "mezzanine apartment",
+    "presidential suite",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 117000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, 70% in stages, 10% on completion, or 3 and 5 year plans",
+   "foreign_ownership": "Leasehold under the ZIPA investment framework",
+   "rental_programme": "Developer property and rental management; estimated 9 to 12% yields, not guaranteed",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "about 100 m from Paje beach",
+    "commercial spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Zanzibar Investment Promotion Authority (ZIPA) and Zanzibar building authorities",
+   "brochure_url": "https://www.byshivo.com/wp-content/uploads/2025/05/Investment-Informational-Guide-for-Zanzibar-by-Shivo-Tanzania-Updated.pdf"
+  },
+  "positives": [
+   "ZIPA investment certificate and start of works reported by national press",
+   "Floor plans downloadable"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.byshivo.com/",
+   "https://www.byshivo.com/properties/luxury-zanzibar-apartments/the-mezzanine-collection/",
+   "https://www.byshivo.com/properties/luxury-zanzibar-apartments/presidential-suites/",
+   "https://www.byshivo.com/wp-content/uploads/2025/05/Investment-Informational-Guide-for-Zanzibar-by-Shivo-Tanzania-Updated.pdf",
+   "https://realtarea.com/en/project/shivo-towers-paje/",
+   "https://thecitizen.co.tz/tanzania/zanzibar/shivo-towers-granted-investment-certificate-by-zipa-the-project-commences-4661872",
+   "https://ippmedia.co.tz/the-guardian/news/local-news/read/shivo-towers-breaks-ground-amid-island-wide-infrastructure-surge-2025-06-17-115249"
+  ]
+ },
+ {
+  "slug": "156-elara-mi-vida",
+  "name": "156 Elara",
+  "developer": "Mi Vida Homes",
+  "area": "Tatu City, Kiambu",
+  "country": "Kenya",
+  "market": "Nairobi",
+  "stage": "off-plan",
+  "url": "https://ufanizirealestate.co.ke/projects/156-elara",
+  "docs_url": "https://mividahomes.com/developments/156-elara/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit types with areas and prices: 3BR duplex 164 m2 from KES 26.125M, 4BR duplex 250 m2 from KES 31.5M, 4BR triplex 262 m2 from KES 44.5M, 3BR townhouse 185 m2 from KES 29.95M, 4BR townhouse 231 m2 sold out",
+   "brochure download (developer site)",
+   "groundbreaking April 2026, phase 1 completion Q2 2028 (agency)",
+   "payment plan 20% offer letter, 10% sale agreement, 70% quarterly",
+   "developer: over 830 homes delivered (Jul 2026)"
+  ],
+  "note": "156 duplexes, triplexes and townhouses in Tatu City from KES 26.125M, reported by The Standard as a KES 5.6bn project; groundbreaking was held in April 2026 with phase 1 targeted for Q2 2028, and Mi Vida, bought out by its management from Actis and Shapoorji Pallonji, says it has delivered over 830 homes, with its KEZA Riruta phase 1 handover independently reported in Nov 2025. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 26125000,
+   "currency": "KES",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Mi Vida says it has delivered over 830 homes across Garden City Residences, KEZA Riruta Phase 1, 237 Garden City Phase 1 and Amaiya Block C (120 homes) (mividahomes.com, Jul 2026)",
+   "units": 156,
+   "payment_plan": "20% on letter of offer, 10% on sale agreement, 70% quarterly during construction",
+   "price_per_m2": 159299
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Agency page: groundbreaking April 2026",
+   "plans": "Ufanizi floor plans per layout",
+   "record": "Developer article (Jul 2026) names delivered projects and 830+ homes; Citizen Digital reports the official handover of KEZA Riruta Phase 1 (Nov 2025)",
+   "returns": "Brochure has no yield forecast; no guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "KES 5.6bn project in Tatu City",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.standardmedia.co.ke/business/amp/real-estate/article/2001546602/developer-unveils-sh56b-project-amid-premium-housing-boom"
+   },
+   {
+    "claim": "Groundbreaking in April 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ufanizirealestate.co.ke/projects/156-elara"
+   },
+   {
+    "claim": "Phase 1 completion Q2 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ufanizirealestate.co.ke/projects/156-elara"
+   },
+   {
+    "claim": "Mi Vida delivered over 830 homes on time",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mividahomes.com/830-homes-delivered-on-time-3500-more-in-the-pipeline-here-is-what-that-means-for-every-buyer-and-investor-in-nairobi/"
+   },
+   {
+    "claim": "KEZA Riruta Phase 1 handed over to owners (Nov 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://citizen.digital/article/keza-phase-1-handover-marks-key-milestone-for-riruta-housing-project-n372784"
+   },
+   {
+    "claim": "Mi Vida founded 2018 and now owned by its management after buying out Actis and Shapoorji Pallonji",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://capitalfm.africa/management-buys-mi-vida-from-uks-actis-and-shapoorji-pallonji/"
+   },
+   {
+    "claim": "156 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mividahomes.com/developments/156-elara/"
+   },
+   {
+    "claim": "Prices from KES 26.125M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mividahomes.com/developments/156-elara/"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow or bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mividahomes.com/developments/156-elara/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Nairobi, Kenya",
+   "developer_company": "Mi Vida Homes (management owned); registration number not published",
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": 830,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR duplex",
+    "4BR duplex",
+    "4BR triplex",
+    "3BR townhouse",
+    "4BR townhouse"
+   ],
+   "size_min_m2": 164,
+   "size_max_m2": 262,
+   "price_min": 26125000,
+   "price_max": 44500000,
+   "currency": "KES",
+   "deposit_pct": 20,
+   "payment_plan": "20% on letter of offer, 10% on sale agreement, 70% quarterly during construction",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "24/7 security",
+    "fully equipped gym",
+    "kids play areas",
+    "Tatu City schools and services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tatu City / Kiambu County (development approvals), NEMA (EIA licence), National Construction Authority",
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit areas and prices published per type",
+   "Developer delivery record partly confirmed by national press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mividahomes.com/developments/156-elara/",
+   "https://ufanizirealestate.co.ke/projects/156-elara",
+   "https://primevale.co.ke/developments/156-elara",
+   "https://realtors.co.ke/property/luxury-3-4-bedroom-duplexes-townhouses-in-tatu-city-156-elara/",
+   "https://bektu.com/blog/nairobi-briefing-2026-04-24",
+   "https://www.standardmedia.co.ke/business/amp/real-estate/article/2001546602/developer-unveils-sh56b-project-amid-premium-housing-boom",
+   "https://citizen.digital/article/keza-phase-1-handover-marks-key-milestone-for-riruta-housing-project-n372784",
+   "https://capitalfm.africa/management-buys-mi-vida-from-uks-actis-and-shapoorji-pallonji/",
+   "https://mividahomes.com/830-homes-delivered-on-time-3500-more-in-the-pipeline-here-is-what-that-means-for-every-buyer-and-investor-in-nairobi/"
+  ]
+ },
+ {
+  "slug": "mont-reve-berman-brothers",
+  "name": "Mont Reve",
+  "developer": "Berman Brothers Group (BBG)",
+  "area": "Sea Point, Cape Town",
+  "country": "South Africa",
+  "market": "Cape Town",
+  "stage": "under construction",
+  "url": "https://montreve.co.za/",
+  "docs_url": "https://montreve.co.za/",
+  "permit_number": null,
+  "docs_listed": [
+   "FAQ: deposit paid into the transferring attorney's (Strauss Daly) interest bearing account",
+   "FAQ: 10% deposit plus bond, or 30% deposit with balance before lodgement",
+   "construction nearing completion, occupation expected Nov 2026 (developer)",
+   "21 apartments remaining from R12.995M (developer)",
+   "earlier BBG projects named: Dolce Vita, Station House"
+  ],
+  "note": "Mixed use building with apartments, a boutique hotel and retail at the corner of Regent and Clarens Roads, Sea Point; Cape Argus reported 89 of 94 released apartments sold for over R500 million at the March 2025 launch, L2B records construction under way from an estimated 1 May 2025, and the developer says it is nearing completion with occupation expected in November 2026 and 21 apartments left. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 12995000,
+   "currency": "ZAR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-11",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Deposit held in the transferring attorney's (Strauss Daly) interest bearing account",
+   "progress_pct": null,
+   "developer_delivered": "BBG names its Atlantic Seaboard projects Dolce Vita and Station House",
+   "units": 116,
+   "payment_plan": "10% deposit plus bond, or 30% deposit with balance before lodgement",
+   "price_per_m2": 170987
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "FAQ: deposit into transferring attorney's interest bearing account",
+   "progress": "Developer says only 'nearing completion' with occupation Nov 2026; L2B project tracker: status underway, estimated start 1 May 2025; no % or dated photos",
+   "plans": null,
+   "record": "Homepage names Dolce Vita and Station House; Engineering News records Berman Brothers (with D2E Properties) as developer of Station House, 230 apartments at 19 Kloof Road, due Dec 2022 (completion not confirmed there)",
+   "returns": "FAQ cites average Cape Town growth of 7%, no guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Construction under way (start about May 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nxt.l2b.co.za/projects/mont-reve/34697"
+   },
+   {
+    "claim": "Over R500 million of sales in 24 hours, 89 of 94 released apartments sold (Mar 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://capeargus.co.za/news/2025-04-23-cape-towns-mont-reve-development-generates-r500-million-in-sales-within-24-hours/"
+   },
+   {
+    "claim": "116 units in the building",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://nxt.l2b.co.za/projects/mont-reve/34697"
+   },
+   {
+    "claim": "Occupation expected November 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montreve.co.za/"
+   },
+   {
+    "claim": "Deposits held in the transferring attorney's interest bearing trust account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montreve.co.za/faqs/"
+   },
+   {
+    "claim": "Berman Brothers developed Station House (230 apartments, Sea Point)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.engineeringnews.co.za/article/station-house-mixed-use-development-south-africa-2021-06-04"
+   },
+   {
+    "claim": "Station House and Dolce Vita completed and delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montreve.co.za/"
+   },
+   {
+    "claim": "Average Cape Town capital growth of 7% (developer FAQ, not a guarantee)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montreve.co.za/faqs/"
+   },
+   {
+    "claim": "Remaining apartments from R12.995M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montreve.co.za/"
+   },
+   {
+    "claim": "Sectional title freehold open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montreve.co.za/faqs/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cape Town, South Africa",
+   "developer_company": "Berman Brothers Group (BBG); registration number not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-05",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "hotel suite"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 12995000,
+   "price_max": 23995000,
+   "currency": "ZAR",
+   "deposit_pct": 10,
+   "payment_plan": "10% deposit plus bond, or 30% deposit with balance before lodgement",
+   "foreign_ownership": "Sectional title; foreign buyer rules not stated on the project site",
+   "rental_programme": "Boutique hotel in the building; no rental figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "boutique hotel",
+    "ground floor retail",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Cape Town (building plan approval)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Deposits held by the conveyancing attorney until transfer",
+   "Strong launch sales independently reported",
+   "Construction start recorded by an independent project tracker"
+  ],
+  "flags": [],
+  "sources": [
+   "https://montreve.co.za/",
+   "https://montreve.co.za/faqs/",
+   "https://capeargus.co.za/news/2025-04-23-cape-towns-mont-reve-development-generates-r500-million-in-sales-within-24-hours/",
+   "https://www.engineeringnews.co.za/article/station-house-mixed-use-development-south-africa-2021-06-04",
+   "https://nxt.l2b.co.za/projects/mont-reve/34697"
+  ]
  }
 ]

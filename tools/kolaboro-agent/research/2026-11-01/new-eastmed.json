@@ -1,0 +1,1164 @@
+[
+ {
+  "slug": "m2-highlight-m2",
+  "name": "m² Highlight",
+  "developer": "m² (m2 Group LLC)",
+  "area": "Saburtalo / Dighomi, Tbilisi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "url": "https://korter.ge/en/m2-highlight-tbilisi",
+  "docs_url": "https://m2.ge/en/projects/m2-highlight",
+  "permit_number": null,
+  "docs_listed": [
+   "two towers of 36 and 26 floors, Buildings XI-XII",
+   "completion timeline 2027",
+   "350 flats sold counter",
+   "in-house installment 0% interest, minimum 10% down, until end of construction",
+   "promotional plans (0% down, 20% by June 2027, 80% on 30 June 2027)",
+   "portal: cadastral number 01.10.10.025.115, object passport, dated construction photos Aug 2024 to Oct 2026"
+  ],
+  "note": "Two-tower skyscraper project (254 + 422 apartments) next to m³ Saburtalo; contractor Anagi lists start May 2023 and completion June 2027. Georgia Capital sold m² to local investors on 5 June 2026. Korter lists prices from USD 1,610 per m2 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Georgia Capital (LSE-listed former owner) describes m² as a leading developer that delivered high-quality developments over a decade; m² names completed complexes such as m³ Saburtalo",
+   "units": 676,
+   "payment_plan": "in-house installment, 0% interest, minimum 10% down, balance until completion; promotional 0% down / 20% by June 2027 / 80% on 30 June 2027",
+   "price_per_m2": 1610
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit number published; Korter publishes only an object passport and cadastral code 01.10.10.025.115",
+   "escrow": "No escrow or deposit protection mentioned; installments paid directly to developer",
+   "progress": "Korter photographs the site from fixed spots, latest update October 2026; m² says construction is ongoing",
+   "plans": "Korter shows layouts (3-room 116.35 to 141.62 m2) and the m² site has apartment selector",
+   "record": "Georgia Capital disposal announcement and m² site name delivered complexes (m³ Saburtalo)",
+   "returns": "No rental or guaranteed return language"
+  },
+  "positives": [
+   "Large established developer, previously owned by LSE-listed Georgia Capital with audited reporting",
+   "Independent portal photo series of construction from Aug 2024 to Oct 2026",
+   "Cadastral number published, allowing a land check at the National Agency of Public Registry",
+   "0% interest in-house installments"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "m² was owned by Georgia Capital and sold to local investors on 5 June 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://georgiacapital.ge/news/company-news/1293-disposal-of-the-housing-development-business"
+   },
+   {
+    "claim": "m2 Group LLC acquired 100% by Trust Holding LLC (registry extract cited)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessinsider.ge/Bussines/m2-is-akhali-mflobelebi-dimitri-adamia-da-lasha-kvachadze-arian-37220?lng=geo"
+   },
+   {
+    "claim": "Housing business bond of USD 25 million to be repaid from sale proceeds",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://georgiacapital.ge/news/company-news/1293-disposal-of-the-housing-development-business"
+   },
+   {
+    "claim": "Construction started May 2023, completion June 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://anagi.ge/en/project/m-highlight-tbilisi/220"
+   },
+   {
+    "claim": "Buildings XI-XII complete in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m2.ge/en/projects/m2-highlight"
+   },
+   {
+    "claim": "Construction is under way with photos up to October 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://korter.ge/en/m2-highlight-tbilisi"
+   },
+   {
+    "claim": "350 flats sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m2.ge/en/projects/m2-highlight"
+   },
+   {
+    "claim": "Price from USD 1,610 per m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/m2-highlight-tbilisi"
+   },
+   {
+    "claim": "Apartment sizes 68.98 to 141.62 m2 (portal layouts show only 116.35 to 141.62 m2)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://korter.ge/en/m2-highlight-tbilisi"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/m2-highlight-tbilisi"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m2.ge/en/projects/m2-highlight"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": "m2 Group LLC (owned by Trust Holding LLC since June 2026)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Former parent Georgia Capital PLC is LSE-listed; m² had a USD 25m local bond due Aug 2026",
+   "construction_start": "2023-05",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3-room"
+   ],
+   "size_min_m2": 68.98,
+   "size_max_m2": 141.62,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "0% interest in-house installment, min 10% down until completion",
+   "foreign_ownership": "freehold (residential apartments can be owned by foreigners in Georgia)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "open terraces",
+    "co-working",
+    "commercial podium",
+    "underground parking",
+    "concierge",
+    "podium roof courtyard"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tbilisi City Hall Urban Development Service",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://korter.ge/en/m2-highlight-tbilisi",
+   "https://m2.ge/en",
+   "https://m2.ge/en/projects/m2-highlight",
+   "https://m2.ge/en/offers",
+   "https://anagi.ge/en/project/m-highlight-tbilisi/220",
+   "https://georgiacapital.ge/news/company-news/1293-disposal-of-the-housing-development-business",
+   "https://www.businessinsider.ge/Bussines/m2-is-akhali-mflobelebi-dimitri-adamia-da-lasha-kvachadze-arian-37220?lng=geo",
+   "https://m2.ge/en/insights/m-ganvitarebis-akhal-etapze-gadadis-kompania-sakmianobas-akhali-strategiita-da-grdzelvadiani-ganvitarebis-khedvit-ganagrdzobs"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "developer": "Alliance Group",
+  "area": "Rustaveli Avenue, Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "stage": "under construction",
+  "url": "https://korter.ge/en/alliance-centropolis-batumi",
+  "docs_url": "https://centropolis.ge/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "starting price per m2 USD 2,800 (developer)",
+   "advertised return on investment 10-12% and payback 8.5 years",
+   "0% down, 0% interest installment up to 60 months (promotion)",
+   "portal: layouts studio to 3-room 31.9-113.3 m2, dated photo series to Oct 2026",
+   "portal: cadastral code 05.23.04.021",
+   "Hyatt Centric hotel and World Trade Center components"
+  ],
+  "note": "Three towers of 48 to 55 floors on Batumi's seafront with a Hyatt Centric hotel and World Trade Center; construction site opened by the Prime Minister in March 2021 and Bank of Georgia financing announced with completion by 2028. Portals now list Blocks B and C for Q4 2028 and Block A for Q4 2029; developer site advertises 10-12% ROI (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 106274,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Alliance Palace (41 floors, Batumi) finished, reported by CBW; Alliance Privilege (Batumi, 2023) and Alliance Highline (Tbilisi)",
+   "units": 329,
+   "payment_plan": "interest-free installment, 0-20% down, up to 60 months (offers vary by portal and date)",
+   "price_per_m2": 3002
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit number published by developer or portals; only a cadastral code (05.23.04.021) on 4u.ge",
+   "escrow": "No escrow or deposit protection stated; payments go to developer installments",
+   "progress": "Korter fixed-spot photos from Feb 2025 to Oct 2026; Sivrce lists 52% built (portal figure, not developer)",
+   "plans": "Unit layouts with sizes on Korter, 4u.ge and estatemarket.ge",
+   "record": "CBW (2020) reports Alliance Palace finished and Alliance Privilege under way; Georgia Today reports the project as Alliance Group's fifth large-scale project",
+   "returns": "Developer advertises ROI 10-12%, yearly net income USD 11,411 and 8.5-year payback for a sample unit, without the word guaranteed"
+  },
+  "positives": [
+   "Bank financing from Bank of Georgia reported in the press",
+   "Independent portal photo series documents construction",
+   "Developer has delivered other Batumi towers (Alliance Palace, Alliance Privilege)",
+   "Cadastral code published so land can be checked on the Georgian public registry map"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction site officially opened in March 2021",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://georgiatoday.ge/prime-minister-opens-alliance-centropolis-complex-construction-site/"
+   },
+   {
+    "claim": "Construction works will end by 2028 (2020 announcement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://cbw.ge/banking/bank-of-georgia-to-contribute-to-constructing-alliance-centropolis-complex-in-batumi"
+   },
+   {
+    "claim": "Block A completion Q4 2029, Blocks B and C Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/alliance-centropolis-batumi"
+   },
+   {
+    "claim": "Bank of Georgia partners in financing the project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cbw.ge/banking/bank-of-georgia-to-contribute-to-constructing-alliance-centropolis-complex-in-batumi"
+   },
+   {
+    "claim": "Alliance Palace (41 floors) completed by Alliance Group",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cbw.ge/banking/bank-of-georgia-to-contribute-to-constructing-alliance-centropolis-complex-in-batumi"
+   },
+   {
+    "claim": "Hyatt Centric hotel part of the complex",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://georgiatoday.ge/prime-minister-opens-alliance-centropolis-complex-construction-site/"
+   },
+   {
+    "claim": "Investment value USD 380 million (2021) vs USD 420 million (2020)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://georgiatoday.ge/prime-minister-opens-alliance-centropolis-complex-construction-site/"
+   },
+   {
+    "claim": "Construction 52% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sivrce.ge/en/mshenebare-binebi/alliance-centropolis"
+   },
+   {
+    "claim": "Return on investment 10-12%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://centropolis.ge/en/"
+   },
+   {
+    "claim": "Prices from USD 106,274 (USD 3,002 per m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://4u.ge/en/batumi/alliance-group/alliance-centropolis"
+   },
+   {
+    "claim": "Land plot cadastral code 05.23.04.021 checked against registry",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://4u.ge/en/batumi/alliance-group/alliance-centropolis"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alliance.ge/en/projects/alliance-centropolis"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2005,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2020-01",
+   "handover_promised": "2029-Q4",
+   "original_handover": "2028",
+   "delay_months": 12,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3-room"
+   ],
+   "size_min_m2": 31.9,
+   "size_max_m2": 113.3,
+   "price_min": 106274,
+   "price_max": 436500,
+   "currency": "USD",
+   "deposit_pct": 0,
+   "payment_plan": "0% down and 0% interest up to 60 months (promotion); other offers 10-20% down",
+   "foreign_ownership": "freehold apartment ownership open to foreigners",
+   "rental_programme": "investment apartments with hotel-style services; ROI 10-12% advertised",
+   "service_charge": null,
+   "brand": "Hyatt Centric Boulevard Batumi (hotel component); World Trade Center Batumi",
+   "amenities": [
+    "indoor pool",
+    "casino",
+    "shopping centre",
+    "cinema",
+    "1,000-car parking",
+    "exhibition centre",
+    "spa and fitness",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Batumi City Hall (Adjara)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://korter.ge/en/alliance-centropolis-batumi",
+   "https://4u.ge/en/batumi/alliance-group/alliance-centropolis",
+   "https://batumiverified.com/en/projects/alliance-centropolis",
+   "https://estatemarket.ge/en/zk/alliance-centropolis/",
+   "https://sivrce.ge/en/mshenebare-binebi/alliance-centropolis",
+   "https://centropolis.ge/en/",
+   "https://alliance.ge/en/projects/alliance-centropolis",
+   "https://cbw.ge/banking/bank-of-georgia-to-contribute-to-constructing-alliance-centropolis-complex-in-batumi",
+   "https://georgiatoday.ge/prime-minister-opens-alliance-centropolis-complex-construction-site/"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "zen-gardens-bar-novokub",
+  "name": "Zen Gardens",
+  "developer": "DOO Novokub",
+  "area": "Tomba, Bar",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "stage": "off-plan",
+  "url": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr",
+  "docs_url": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr",
+  "permit_number": "UPI 15-333/26-12/3 (consent to conceptual design, Bar chief city architect, 07.04.2026); UTU 06-333/25-507/6",
+  "docs_listed": [
+   "cadastral parcel 1265/2 KO Tomba, title sheet (list nepokretnosti) 1008, owner DOO Novokub since 22.06.2022",
+   "urban-technical conditions no. 06-333/25-507/6 of 04.04.2025 (Ministry of Spatial Planning)",
+   "chief city architect consent UPI 15-333/26-12/3 of 07.04.2026 (ground plus 2 floors approved)",
+   "investor and contractor tax numbers (PIB 03523853, 02632675)",
+   "unit sizes studio 21.2 m2 to 2BR 117.3 m2, prices from EUR 66,000",
+   "construction 1 Dec 2026 to 15 Dec 2028",
+   "unit plans section"
+  ],
+  "note": "Small 24-apartment block in Tomba, Bar, from first-time developer DOO Novokub; the page publishes land title, urban-technical conditions and the chief city architect consent, but says the building permit is still being obtained and works start 1 Dec 2026. Prices from EUR 66,000 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 66000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "UPI 15-333/26-12/3 (consent to conceptual design, Bar chief city architect, 07.04.2026); UTU 06-333/25-507/6",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 24,
+   "payment_plan": "installments during construction, individual terms",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer publishes UTU no. 06-333/25-507/6 and chief city architect consent UPI 15-333/26-12/3; the building permit itself is described as still in progress",
+   "escrow": "No escrow or bank guarantee; notary-certified contracts and bank payment mentioned only",
+   "progress": "Construction not started (start 1 Dec 2026); no progress reports yet",
+   "plans": "Unit sizes listed and a unit plans section on the page",
+   "record": "No completed projects named for DOO Novokub",
+   "returns": "No rental or return promises"
+  },
+  "positives": [
+   "Land title sheet number, owner and registration date published, checkable at the Real Estate Administration",
+   "Approval and urban-condition numbers published with issuing body and date",
+   "Investor and contractor tax ID numbers published",
+   "Low density: 35% plot coverage"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Land parcel 1265/2 KO Tomba owned 1/1 by DOO Novokub (title sheet 1008)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Urban-technical conditions 06-333/25-507/6 issued 04.04.2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Chief city architect consent UPI 15-333/26-12/3 of 07.04.2026 for basement plus ground plus 2 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Property is documented with a building permit (page intro)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Third floor will be approved during construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Construction runs 1 Dec 2026 to 15 Dec 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Prices from EUR 66,000 including parking",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Developer DOO Novokub registered with PIB 03523853",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bar, Montenegro",
+   "developer_company": "DOO Novokub, PIB 03523853",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-12",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 21.2,
+   "size_max_m2": 117.3,
+   "price_min": 66000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "installments during construction, individual terms",
+   "foreign_ownership": "freehold; foreigners need a Montenegrin tax number (PIB)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "heated pool 15x5 m",
+    "rooftop yoga and cinema",
+    "children's playground",
+    "orchard",
+    "underground garage",
+    "storage cellars",
+    "rooftop solar plant",
+    "BBQ area"
+   ],
+   "lat": 42.076,
+   "lng": 19.122,
+   "permit_authority": "Municipality of Bar (chief city architect) and Ministry of Spatial Planning, Urbanism and State Property",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://zengardens.me/apartmani-za-prodaju-bar-crna-gora-sr"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "boka-verde-dpm-global",
+  "name": "Boka Verde",
+  "developer": "DPM Global",
+  "area": "Župa, Tivat",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "stage": "under construction",
+  "url": "https://anapajkovic.com/properties/boka-verde",
+  "docs_url": "https://bokaverde.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "floor plans per house and floor (brochure PDF)",
+   "construction timeline with milestones (foundation Jan 2026, structure Apr 2026, handover Oct 2027)",
+   "agent: price list effective 15 Sep 2026 (EUR 299,798 to 934,151)",
+   "agent: 4.2% guaranteed minimum yield on nine Phase 1 apartments",
+   "LinkedIn construction progress report Oct 2026",
+   "'fully permitted' claim without number"
+  ],
+  "note": "Low-density scheme of 10 three-storey buildings (50 units) in Župa, Tivat, designed by Semrén & Månsson; the developer shows a works timeline and posts monthly progress, and an agent publishes the Sept 2026 price list with a 4.2% guaranteed minimum yield on Phase 1 units. No permit number is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 299798,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 4.2,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 50,
+   "payment_plan": null,
+   "price_per_m2": 3264
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer says 'Fully permitted, all permits and licenses secured'; Vijesti item (Montenegro4U section, based on developer statement) reports receipt of a building permit; no number published",
+   "escrow": "None stated",
+   "progress": "Developer milestone timeline and LinkedIn report Oct 2026 (windows in Blocks 1-2, brickwork Block 3, concrete Block 4)",
+   "plans": "Brochure PDF with plans and areas for each house and floor",
+   "record": "Team claims 20 years of experience for Hilton and Accor projects but no completed residential project named",
+   "returns": "Agent price page states the developer marks a 4.2% guaranteed minimum yield against nine Phase 1 apartments"
+  },
+  "positives": [
+   "Detailed floor plans and area tables for every building",
+   "Monthly dated construction updates",
+   "Low density, five residences per building, underground parking"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.vijesti.me/montenegro4u/live-in-montenegro/813949/new-standard-in-zupa-construction-of-boka-verde-begins-according-to-scandinavian-eco-project"
+   },
+   {
+    "claim": "Construction started October 2025 with foundation done Jan 2026 (site) vs permit receipt announced June 2026 (Vijesti item)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bokaverde.com/"
+   },
+   {
+    "claim": "Handover October 2027 (timeline) vs Phase 1 completion Q3 2028 (same page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bokaverde.com/"
+   },
+   {
+    "claim": "Phase 1 handover Q4 2027, Phase 2 in 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anapajkovic.com/properties/boka-verde"
+   },
+   {
+    "claim": "Works resumed 15 Sep 2026 after summer pause; window installation in Blocks 1 and 2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/boka-verde"
+   },
+   {
+    "claim": "All upper-floor apartments sold; prices raised 10-25% between June and Sept 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anapajkovic.com/properties/boka-verde"
+   },
+   {
+    "claim": "4.2% guaranteed minimum yield on nine Phase 1 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anapajkovic.com/properties/boka-verde"
+   },
+   {
+    "claim": "Prices from EUR 299,798",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://anapajkovic.com/properties/boka-verde"
+   },
+   {
+    "claim": "Team has 20 years experience developing for Hilton and Accor",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bokaverde.com/Boka_Verde_Brochure.pdf"
+   },
+   {
+    "claim": "Developer company registered in Montenegro",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bokaverde.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2021,
+   "developer_hq": "Tivat, Montenegro",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 44.45,
+   "size_max_m2": 93.72,
+   "price_min": 299798,
+   "price_max": 934151,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "in-house management; 4.2% guaranteed minimum yield on Phase 1 units (agent)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pool",
+    "car-free courtyard",
+    "underground parking",
+    "playground",
+    "workout area",
+    "yoga zone",
+    "BBQ areas",
+    "rooftop patios"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Tivat / Ministry of Spatial Planning, Urbanism and State Property",
+   "brochure_url": "https://bokaverde.com/Boka_Verde_Brochure.pdf"
+  },
+  "sources": [
+   "https://bokaverde.com/",
+   "https://bokaverde.com/Boka_Verde_Brochure.pdf",
+   "https://boka-verde.me/en/planirovki/",
+   "https://boka-verde.me/en/o-proekte/",
+   "https://anapajkovic.com/properties/boka-verde",
+   "https://en.vijesti.me/montenegro4u/live-in-montenegro/813949/new-standard-in-zupa-construction-of-boka-verde-begins-according-to-scandinavian-eco-project",
+   "https://linkedin.com/company/boka-verde"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "qflats-kurtkoy-mhr-gyo",
+  "name": "QFlats Kurtköy",
+  "developer": "MHR Gayrimenkul Yatırım Ortaklığı A.Ş. (MHR GYO)",
+  "area": "Kurtköy, Pendik",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "url": "https://qflats.com.tr/",
+  "docs_url": "https://mhrgyo.com.tr/en/portfolio/q-flats-kurtkoy-residence-project",
+  "permit_number": null,
+  "docs_listed": [
+   "KAP disclosure: building permits for 347 units obtained 20.11.2024",
+   "KAP disclosure: groundbreaking 27.05.2025, land 4000 Ada 8 Parsel (10,795 m2) owned by QC İnşaat",
+   "KAP disclosure: kat irtifakı (condominium-servitude) title deeds for 347 units registered 07.05.2026",
+   "Building Completion Insurance (Bina Tamamlama Sigortası) by Quick Sigorta",
+   "independent valuation reports (Akademi Gayrimenkul Değerleme) 02.09.2025 and 31.12.2025",
+   "floor plans by unit type with net and gross areas",
+   "cash prices from TRY 5,865,401; 20% down and up to 48 months",
+   "delivery December 2027"
+  ],
+  "note": "347-unit, seven-block scheme in Kurtköy by Borsa Istanbul-listed MHR GYO, its first housing project; permits (20 Nov 2024), groundbreaking (27 May 2025) and kat irtifakı title registration (7 May 2026) are all disclosed on KAP, and sales are covered by Building Completion Insurance from Quick Sigorta, which is also MHR GYO's majority shareholder. Delivery planned December 2027 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5865401,
+   "currency": "TRY",
+   "title": "freehold (kat irtifakı registered)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Building Completion Insurance (BTS) issued by Quick Sigorta covering all units; insurer completes the building or refunds payments if the seller fails",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 347,
+   "payment_plan": "cash discount 20%, or 15-20% down and up to 48 months at 0.45-0.99% monthly term rate",
+   "price_per_m2": 101128
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "KAP disclosure (reported by Emlakkulisi and Emlak Pencerem) states permits for 347 units obtained 20.11.2024; permit number not published",
+   "escrow": "BTS by Quick Sigorta stated in KAP groundbreaking disclosure, on qflats.com.tr and reported by Anadolu Agency; Quick Sigorta owns 64.98% of MHR GYO (related party)",
+   "progress": "Groundbreaking 27.05.2025 and 'construction continues' (KAP May 2026); site has an undated construction photo gallery and no % figure",
+   "plans": "qflats.com.tr publishes unit plans with net and gross areas",
+   "record": "MHR GYO describes QFlats as its first housing project; contractor Tepe İnşaat is established but no MHR deliveries",
+   "returns": "No rental yield or guaranteed return language; '100% completion guarantee' refers to the insurance"
+  },
+  "positives": [
+   "Listed developer: permits, groundbreaking and title registration disclosed on Turkey's public disclosure platform KAP",
+   "Statutory Building Completion Insurance in place for buyers",
+   "Kat irtifakı title deeds already registered for all 347 units",
+   "Independent valuation reports published",
+   "Independent site supervision firm and earthquake performance analysis by Allianz Teknik"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits for 347 units obtained on 20.11.2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://emlakkulisi.com/mhr-gyo-qflats-projesinin-ruhsatini-aldi-yeni-proje/812255"
+   },
+   {
+    "claim": "Land is 4000 Ada 8 Parsel, 10,795 m2, owned by QC İnşaat",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://finans.cnnturk.com/kap-haberi/ozel-durum-aciklamasi-genel-6837170d109d8d77a015245e"
+   },
+   {
+    "claim": "Groundbreaking held 27.05.2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://finans.cnnturk.com/kap-haberi/ozel-durum-aciklamasi-genel-6837170d109d8d77a015245e"
+   },
+   {
+    "claim": "Kat irtifakı title deeds for 347 units registered on 07.05.2026; construction continuing",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://tasinmazhaber.com/mhr-gyo-qflats-projesi-icin-onemli-adim-347-bolumun-tapusu-tescillendi/"
+   },
+   {
+    "claim": "Building Completion Insurance provided by Quick Sigorta",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://finans.cnnturk.com/kap-haberi/ozel-durum-aciklamasi-genel-6837170d109d8d77a015245e"
+   },
+   {
+    "claim": "Project is run under BTS coverage (Anadolu Agency)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/qflats-projesi-bina-tamamlama-sigortasi-guvencesiyle-yurutulecek/697932"
+   },
+   {
+    "claim": "MHR GYO listed on Borsa Istanbul since 18 Oct 2023, 64.98% owned by Quick Sigorta",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mhrgyo.com.tr/haberler/gayrimenkulde-guvenli-konut-donemi-q-flats-ile-basliyor"
+   },
+   {
+    "claim": "Delivery December 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/qflats-projesi-bina-tamamlama-sigortasi-guvencesiyle-yurutulecek/697932"
+   },
+   {
+    "claim": "Market value TRY 548.28m excl. VAT as of 02.09.2025 (independent valuer)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://kap.org.tr/tr/Bildirim/1541581"
+   },
+   {
+    "claim": "Cash prices from TRY 5,865,401 for a 58 m2 1+1",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://emlakproject.com/projeler/qflatste-satislar-basladi-bina-tamamlama-sigortasi-ile-guvenli-yatirim/44982"
+   },
+   {
+    "claim": "MHR GYO has delivered previous housing projects",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mhrgyo.com.tr/haberler/gayrimenkulde-guvenli-konut-donemi-q-flats-ile-basliyor"
+   },
+   {
+    "claim": "Construction progress percentage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://qflats.com.tr/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ataşehir, Istanbul, Turkey",
+   "developer_company": "MHR Gayrimenkul Yatırım Ortaklığı A.Ş., Trade Registry 793083-0, MERSIS 0008 0778 1900 0011",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Borsa Istanbul (MHRGY) since Oct 2023; KAP disclosures and independent valuation reports",
+   "construction_start": "2025-05",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1"
+   ],
+   "size_min_m2": 56.4,
+   "size_max_m2": 92.57,
+   "price_min": 5865401,
+   "price_max": 14452700,
+   "currency": "TRY",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, up to 48 months; cash discount",
+   "foreign_ownership": "freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "6,700 m2 landscaping",
+    "700 m2 social facility",
+    "fitness and pilates",
+    "spa",
+    "children's playground",
+    "basketball court",
+    "347 covered parking spaces",
+    "mini theatre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Pendik Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://qflats.com.tr/",
+   "https://mhrgyo.com.tr/en/portfolio/q-flats-kurtkoy-residence-project",
+   "https://mhrgyo.com.tr/haberler/gayrimenkulde-guvenli-konut-donemi-q-flats-ile-basliyor",
+   "https://mhrgyo.com.tr/yatirimci-iliskileri/gayrimenkul-degerleme-raporlari",
+   "https://kap.org.tr/tr/Bildirim/1541581",
+   "https://finans.cnnturk.com/kap-haberi/ozel-durum-aciklamasi-genel-6837170d109d8d77a015245e",
+   "https://emlakkulisi.com/mhr-gyo-qflats-projesinin-ruhsatini-aldi-yeni-proje/812255",
+   "https://www.emlakpencerem.com.tr/borsanin-onemli-gayrimenkul-sirketi-mhrgy-qflats-kurtkoy-projesi-yapi-ruhsatini-aldi/113658",
+   "https://tasinmazhaber.com/mhr-gyo-qflats-projesi-icin-onemli-adim-347-bolumun-tapusu-tescillendi/",
+   "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/qflats-projesi-bina-tamamlama-sigortasi-guvencesiyle-yurutulecek/697932",
+   "https://emlakproject.com/projeler/qflatste-satislar-basladi-bina-tamamlama-sigortasi-ile-guvenli-yatirim/44982",
+   "https://www.realtygalaxyglobal.com/en/property/qflats-kurtkoy/",
+   "https://tasinmazhaber.com/qflats-kurtkoy-yuzde-0-99-vade-oraniyla-satista/"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "23-square-oba-23-projects",
+  "name": "23 Square",
+  "developer": "23 Projects",
+  "area": "Oba, Alanya",
+  "country": "Turkey",
+  "market": "Alanya",
+  "stage": "under construction",
+  "url": "https://www.idealandpartners.com/23-square-alanya-erol-fazlioglu-murat-bozkurt-interview/",
+  "docs_url": "https://www.23projects.net/en/23-square",
+  "permit_number": null,
+  "docs_listed": [
+   "203 apartments in 11 blocks on 21,500 m2, 1+1 to 4+1",
+   "delivery date 31.07.2027 (FAQ)",
+   "dated construction news: rough construction finished on all 11 blocks (Aug 2025), plastering, facade and roof works (Apr-May 2026)",
+   "show flats completed Jan 2026",
+   "ground investigation report bearing capacity claim",
+   "starting price EUR 226,098 (sales partner)"
+  ],
+  "note": "203-unit, 11-block scheme in Oba launched Feb 2024; the developer posts dated progress (rough structure finished Aug 2025, facades and roofs in 2026) and gives 31 Jul 2027 delivery, while its sales partner quoted March 2027 and a portal listed April 2026. No permit number or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 226098,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer lists a 37-unit Kestel project (2022-2025) and 5 villas in Bektaş (2022-2025) on its own site",
+   "units": 203,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit (yapı ruhsatı) number or date published",
+   "escrow": "No Building Completion Insurance or bank guarantee mentioned, although Turkish rules require one for consumer pre-sales of 30+ units",
+   "progress": "Dated site news on 23projects.net (Aug 2025, Apr 2026, May 2026) with photos",
+   "plans": "Unit types listed but no floor plans seen on the pages opened",
+   "record": "Own site lists earlier projects in Kestel (37 units) and Bektaş (5 units) with 2022-2025 dates",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Regular dated construction updates since 2024",
+   "Low density: 203 units on 21,500 m2 with 9,200 m2 underground parking",
+   "Show flats completed and visitable"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery 31.07.2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/en/23-square"
+   },
+   {
+    "claim": "Delivery March 2027 (sales partner, June 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.idealandpartners.com/23-square-alanya-erol-fazlioglu-murat-bozkurt-interview/"
+   },
+   {
+    "claim": "Delivery April 2026 (portal listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.newdaypropertyturkey.com/en-US/housing-project/continuing/51/1"
+   },
+   {
+    "claim": "Rough construction completed on all 11 blocks by Aug 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/en/construction-progress-of-the-23-square-august-2025"
+   },
+   {
+    "claim": "Facade, roof and landscaping works under way April 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/en/current-construction-progress-at-23-square"
+   },
+   {
+    "claim": "Foundation bearing capacity 5 per Ground Investigation Report",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/en/23-square"
+   },
+   {
+    "claim": "Prices from EUR 226,098",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.idealandpartners.com/23-square-alanya-erol-fazlioglu-murat-bozkurt-interview/"
+   },
+   {
+    "claim": "Developer completed 37-unit Kestel project and 5 villas in Bektaş",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/en/23-square"
+   },
+   {
+    "claim": "Completion insurance or guarantee for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.23projects.net/en/23-square"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kestel, Alanya, Turkey",
+   "developer_company": null,
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": 42,
+   "listed_or_audited": null,
+   "construction_start": "2024-01",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026-04 (portal listing)",
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1",
+    "garden duplex"
+   ],
+   "size_min_m2": 48,
+   "size_max_m2": 285,
+   "price_min": 226098,
+   "price_max": 1200000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold title deed (tapu)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "outdoor pools",
+    "fitness",
+    "Turkish bath and sauna",
+    "salt room",
+    "co-working",
+    "276-space underground parking",
+    "retail square"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alanya Municipality",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.23projects.net/en/23-square",
+   "https://www.23projects.net/",
+   "https://www.23projects.net/tr/bizden-haberler",
+   "https://www.23projects.net/en/construction-progress-of-the-23-square-august-2025",
+   "https://www.23projects.net/en/current-construction-progress-at-23-square",
+   "https://www.23projects.net/en/latest-images-from-our-23-square-project",
+   "https://www.idealandpartners.com/23-square-alanya-erol-fazlioglu-murat-bozkurt-interview/",
+   "https://www.newdaypropertyturkey.com/en-US/housing-project/continuing/51/1"
+  ],
+  "verified_score": 0
+ }
+]

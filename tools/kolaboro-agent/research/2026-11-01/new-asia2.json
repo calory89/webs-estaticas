@@ -1,0 +1,197 @@
+[
+ {
+  "slug": "laurean-residences-ayala-land-premier",
+  "name": "Laurean Residences",
+  "developer": "Ayala Land, Inc. (Ayala Land Premier)",
+  "area": "Dela Rosa Gardens, San Lorenzo, Makati CBD",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "under construction",
+  "url": "https://rumavi.com/en/new-developments/philippines/makati/laurean-residences",
+  "docs_url": "https://ayalaland.com/properties/laurean",
+  "seed": {
+   "price": 40500000,
+   "currency": "PHP",
+   "title": "freehold condominium (CCT), foreign quota 40%",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2032-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Ayala Land completed Park Central Towers, its tallest building (69 levels, Makati), built by subsidiary Makati Development Corp (Inquirer)",
+   "units": 388,
+   "payment_plan": "Developer instalments of up to 7 years during pre-selling, spot cash discount, or bank financing at turnover (portal)",
+   "price_per_m2": 540000
+  },
+  "docs_listed": [
+   "developer: 65-storey luxury tower, 388 units, pre-selling (ayalaland.com)",
+   "portal: suites 75 sq m from PHP 40.5M to 4BR villa 402 sq m at PHP 300M",
+   "portal: turnover Q3 2032, instalments up to 7 years",
+   "agent: unit size ranges suite 75-87, 2BR 133-157, 3BR 204-253, 4BR 402 sq m",
+   "news: construction started Feb 2026 after PHP 10.4B pre-sales"
+  ],
+  "note": "65-storey, 388-unit Ayala Land Premier tower in Makati CBD; DHSUD lists License to Sell LS 0002515 (Mar 2026, target completion Dec 2033) and NCR-042 (Jun 2025) for Ayala Land Inc., but the developer page publishes no LTS number; construction began Feb 2026 per Daily Tribune. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No LTS number on ayalaland.com or agent pages; DHSUD list (mirrored on lumingon.com) shows LS 0002515 issued Mar 2026 and NCR-042 issued Jun 2025 to Ayala Land Inc.",
+   "escrow": null,
+   "progress": "No % published; Daily Tribune (18 Feb 2026) reports construction has started; no developer progress page",
+   "plans": "Only unit size ranges published; no floor plans on developer or portal pages",
+   "record": "Inquirer reports ALI completed Park Central Towers (Makati), its tallest building",
+   "returns": "No guarantee; portal Rumavi gives its own 4.5-6% gross yield estimate, not a developer claim"
+  },
+  "positives": [
+   "DHSUD License to Sell entries found for the project under Ayala Land Inc.",
+   "Developer is PSE-listed Ayala Land, Inc.",
+   "Unit sizes and turnover year published by sellers"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds DHSUD License to Sell LS 0002515 (Mar 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/laurean-residences--fa9f369fce7744c9ba69a947a4561a28"
+   },
+   {
+    "claim": "Earlier DHSUD License to Sell NCR-042 (Jun 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/laurean-residences--9f354e9115c34ba29db482d4e6446ba9"
+   },
+   {
+    "claim": "Owner/developer is Ayala Land Inc.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/laurean-residences--fa9f369fce7744c9ba69a947a4561a28"
+   },
+   {
+    "claim": "Turnover Q3 2032",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/laurean-residences--fa9f369fce7744c9ba69a947a4561a28"
+   },
+   {
+    "claim": "Construction has started",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tribune.net.ph/2026/02/18/laurean-residences-build-underway-after-p104b-pre-sales"
+   },
+   {
+    "claim": "65 storeys, 388 residences, 72 to 402 sq m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mb.com.ph/2025/09/12/ayala-land-premiers-newest-makati-tower-registers-almost-8-billion-in-sales-pre-launch"
+   },
+   {
+    "claim": "Developer delivered Park Central Towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://business.inquirer.net/?p=371740"
+   },
+   {
+    "claim": "Pre-sales of about PHP 10.4 billion",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tribune.net.ph/2026/02/18/laurean-residences-build-underway-after-p104b-pre-sales"
+   },
+   {
+    "claim": "Suites from PHP 40.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/philippines/makati/laurean-residences"
+   },
+   {
+    "claim": "Floor count 70 (agent) vs 67 (portal)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mb.com.ph/2025/09/12/ayala-land-premiers-newest-makati-tower-registers-almost-8-billion-in-sales-pre-launch"
+   },
+   {
+    "claim": "Foreign quota 40%, CCT title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/philippines/makati/laurean-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1988,
+   "developer_hq": "Makati, Philippines",
+   "developer_company": "Ayala Land, Inc.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Philippine Stock Exchange (ALI)",
+   "construction_start": "2026-02",
+   "handover_promised": "2032-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "suite",
+    "2BR",
+    "3BR",
+    "4BR bi-level"
+   ],
+   "size_min_m2": 72,
+   "size_max_m2": 402,
+   "price_min": 40500000,
+   "price_max": 300000000,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": "Instalments up to 7 years in pre-selling, spot cash discount, bank financing at turnover (portal)",
+   "foreign_ownership": "Condominium unit within the 40% foreign-ownership cap (CCT)",
+   "rental_programme": "Property management by Ayala Land Hospitality; no rental figures from developer",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "multiple pools",
+    "sky garden level 60",
+    "wine lounge",
+    "cinema room",
+    "private dining",
+    "gym",
+    "spa with plunge pool",
+    "co-working"
+   ],
+   "lat": 14.556,
+   "lng": 121.021,
+   "permit_authority": "DHSUD (Certificate of Registration and License to Sell)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://ayalaland.com/properties/laurean",
+   "https://rumavi.com/en/new-developments/philippines/makati/laurean-residences",
+   "https://ayalalandpropertyfinder.com/property/laurean-residences-luxury-condo-in-makati-with-in-city-club-amenities-by-ayala-land-premier",
+   "https://mb.com.ph/2025/09/12/ayala-land-premiers-newest-makati-tower-registers-almost-8-billion-in-sales-pre-launch",
+   "https://tribune.net.ph/2026/02/18/laurean-residences-build-underway-after-p104b-pre-sales",
+   "https://business.inquirer.net/?p=371740",
+   "https://lumingon.com/license-to-sell/laurean-residences--fa9f369fce7744c9ba69a947a4561a28",
+   "https://lumingon.com/license-to-sell/laurean-residences--9f354e9115c34ba29db482d4e6446ba9"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 3
+ }
+]

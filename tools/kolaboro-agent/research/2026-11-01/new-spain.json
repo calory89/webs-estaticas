@@ -733,5 +733,1090 @@
    "https://urbanitae.com/pt/project/P000229",
    "https://brainsre.news/grupo-abu-nvoga-lanzan-earth-promocion-marbella/"
   ]
+ },
+ {
+  "slug": "lagune-homes-calpe-neinor",
+  "name": "Lagune Homes",
+  "developer": "Neinor Homes (managing partner) with Orion Capital Managers; promoter entity Pegasus Holdco S.L.",
+  "area": "Calpe (Calp)",
+  "country": "Spain",
+  "market": "Costa Blanca",
+  "stage": "under construction",
+  "url": "https://www.neinorhomes.com/en/promocion/lagune-homes/",
+  "docs_url": "https://www.neinorhomes.com/uploads/promociones/documentos/6209//dosier_promociones/0000000003333364.PDF",
+  "permit_number": "Expediente 19033/2023, decreto TA01 2024-1579 (Ayuntamiento de Calpe)",
+  "docs_listed": [
+   "information dossier: licence expediente 19033/2023, decree TA01 2024-1579",
+   "deposit guarantee: seguro de caución with MUSAAT",
+   "promoter Pegasus Holdco S.L., NIF B88223722, Registro Mercantil Madrid hoja M-681891",
+   "fincas registrales 44.083 and 44.085 (Registro de la Propiedad de Calpe)",
+   "estimated works end 31/06/2026 and handover 30/09/2026",
+   "per-unit prices EUR 379,000 to 687,000 incl. VAT and floor plans",
+   "building specifications PDF, brochure, virtual visits",
+   "construction financed by BBVA"
+  ],
+  "note": "54 apartments in two towers on Calle Finlandia, Calpe, managed by Neinor for a vehicle co-owned with Orion; the official information dossier publishes the licence decree, a MUSAAT surety insurance for deposits and registry details, with handover estimated 30 Sep 2026 and the page still saying 'Delivery 2026'. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 379000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Expediente 19033/2023, decreto TA01 2024-1579 (Ayuntamiento de Calpe)",
+   "plans_published": true,
+   "escrow": "Amounts paid on account guaranteed by a seguro de caución with MUSAAT (information dossier)",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Neinor Homes, listed developer, publishes a list of delivered developments (e.g. Sa Llosa Homes in Menorca, reported delivered Jan 2025)",
+   "units": 54,
+   "payment_plan": null,
+   "price_per_m2": 4473
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Information dossier lists building licence expediente 19033/2023, decree TA01 2024-1579",
+   "escrow": "Dossier: advance payments guaranteed by seguro de caución with MUSAAT",
+   "progress": "Dossier gives estimated works end June 2026 and delivery 30 Sep 2026; construction start reported 27 Nov 2024 by iberian.property; project page has show flat and 'Delivery 2026' (no % figure)",
+   "plans": "Per-unit plan links on project page",
+   "record": "Neinor's delivered developments, e.g. Sa Llosa Homes completed and delivered (Estrategias de Inversión, Jan 2025)",
+   "returns": "No rental or yield language"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence expediente 19033/2023, decree TA01 2024-1579",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/6209//dosier_promociones/0000000003333364.PDF"
+   },
+   {
+    "claim": "Project has all required permits (Mar 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/neinor-levanta-dos-torres-en-calp-con-54-apartamentos-de-hasta-medio-millon-de-euros"
+   },
+   {
+    "claim": "Deposits covered by MUSAAT surety insurance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/6209//dosier_promociones/0000000003333364.PDF"
+   },
+   {
+    "claim": "Promoter Pegasus Holdco S.L. (B88223722) is a registered company with real estate object, incorporated 22/10/2018",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.datoscif.es/empresa/bowdoin-sl"
+   },
+   {
+    "claim": "Neinor co-invests with Orion Capital Managers as managing partner",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://iberian.property/news/residential/neinor-homes-begins-construction-of-a-new-residential-development-in-calpe/"
+   },
+   {
+    "claim": "54 homes",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://iberian.property/news/residential/neinor-homes-begins-construction-of-a-new-residential-development-in-calpe/"
+   },
+   {
+    "claim": "Construction started Nov 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://iberian.property/news/residential/neinor-homes-begins-construction-of-a-new-residential-development-in-calpe/"
+   },
+   {
+    "claim": "Completion July 2026 (Mar 2024 press) later September 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/neinor-levanta-dos-torres-en-calp-con-54-apartamentos-de-hasta-medio-millon-de-euros"
+   },
+   {
+    "claim": "Prices from EUR 379,000 (launch range EUR 320,000 to 550,000)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/neinor-levanta-dos-torres-en-calp-con-54-apartamentos-de-hasta-medio-millon-de-euros"
+   },
+   {
+    "claim": "Neinor delivered earlier projects such as Sa Llosa Homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+   },
+   {
+    "claim": "Freehold title, fincas registrales 44.083 and 44.085",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/6209//dosier_promociones/0000000003333364.PDF"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Pegasus Holdco S.L., NIF B88223722, Registro Mercantil de Madrid tomo 38325, folio 1, hoja M-681891 (promoter); Neinor Homes S.A. managing partner",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Neinor Homes listed in Spain; Pegasus Holdco audited by Deloitte (BORME via datoscif)",
+   "construction_start": "2024-11",
+   "handover_promised": "2026-Q3",
+   "original_handover": "2026-07",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 84.22,
+   "size_max_m2": 148.48,
+   "price_min": 379000,
+   "price_max": 687000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult and children's pools",
+    "solarium",
+    "padel court",
+    "playground",
+    "multipurpose room",
+    "gardens",
+    "bicycle parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Calpe",
+   "brochure_url": "https://promociones.neinorhomes.com/lagune-homes-en/"
+  },
+  "verified_score": 2,
+  "positives": [
+   "Licence decree, deposit insurer and land registry numbers published in the official dossier",
+   "Construction start and handover dates published",
+   "Listed managing developer with delivered projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.neinorhomes.com/en/promocion/lagune-homes/",
+   "https://www.neinorhomes.com/uploads/promociones/documentos/6209//dosier_promociones/0000000003333364.PDF",
+   "https://www.datoscif.es/empresa/bowdoin-sl",
+   "https://iberian.property/news/residential/neinor-homes-begins-construction-of-a-new-residential-development-in-calpe/",
+   "https://alicanteplaza.es/neinor-levanta-dos-torres-en-calp-con-54-apartamentos-de-hasta-medio-millon-de-euros",
+   "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+  ]
+ },
+ {
+  "slug": "bliss-homes-casares-neinor",
+  "name": "Bliss Homes",
+  "developer": "Neinor Homes (promoter Neinor Sur S.A.U.)",
+  "area": "Casares Golf, Casares",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "url": "https://www.neinorhomes.com/en/promocion/bliss-homes/",
+  "docs_url": "https://www.neinorhomes.com/uploads/promociones/documentos/4177//dosier_promociones/0000000003423296.PDF",
+  "permit_number": "Expediente 18286/2023",
+  "docs_listed": [
+   "information dossier: licence expediente 18286/2023",
+   "deposit guarantee: insurance with AXA",
+   "special account at BBVA",
+   "promoter Neinor Sur S.A.U., CIF A-14646350, Registro Mercantil Córdoba hoja CO-19.140",
+   "plot 56, Conjunto Residencial Bahía de Casares Golf (sector UR-12)",
+   "estimated delivery Q4 2026",
+   "134 homes in 9 blocks, 108 sold (81%)",
+   "prices EUR 395,000 to 551,000 incl. VAT, garage and storage included",
+   "virtual work progress tour, 'advanced works'"
+  ],
+  "note": "134 homes in nine low-rise blocks at Casares Golf by Neinor Sur; dossier publishes licence expediente 18286/2023, AXA deposit insurance, BBVA special account and Q4 2026 delivery, the page shows 81% sold and 'advanced works'. The dossier names the Estepona town hall as licence issuer although the plot is in Casares. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 395000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Expediente 18286/2023",
+   "plans_published": true,
+   "escrow": "Amounts paid on account insured with AXA; special account at BBVA ES04 0182 8992 0202 0001 0225 (information dossier)",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Neinor Homes, listed developer; delivered developments listed on its site and in press (e.g. Sa Llosa Homes, Menorca, delivered Jan 2025)",
+   "units": 134,
+   "payment_plan": null,
+   "price_per_m2": 3990
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Dossier: licence expediente 18286/2023, issuer stated as Ayuntamiento de Estepona",
+   "escrow": "Dossier: deposits insured with AXA, special BBVA account number given",
+   "progress": "Page shows 'Advanced works' and a virtual work progress tour; no % and no dated update",
+   "plans": "Plans per unit type on project page",
+   "record": "Neinor publishes delivered developments; Sa Llosa Homes delivered (Estrategias de Inversión)",
+   "returns": "No rental or yield language"
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Licence expediente 18286/2023 granted by Ayuntamiento de Estepona for a plot in Casares",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/4177//dosier_promociones/0000000003423296.PDF"
+   },
+   {
+    "claim": "Deposits insured with AXA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/4177//dosier_promociones/0000000003423296.PDF"
+   },
+   {
+    "claim": "Delivery estimated Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/4177//dosier_promociones/0000000003423296.PDF"
+   },
+   {
+    "claim": "Advanced works stage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/bliss-homes/"
+   },
+   {
+    "claim": "108 of 134 homes sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/bliss-homes/"
+   },
+   {
+    "claim": "Prices EUR 395,000 to 551,000 incl. VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/bliss-homes/"
+   },
+   {
+    "claim": "Promoter Neinor Sur S.A.U. registered in Córdoba (CO-19.140)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/4177//dosier_promociones/0000000003423296.PDF"
+   },
+   {
+    "claim": "Neinor has delivered comparable developments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+   },
+   {
+    "claim": "Neinor is a listed company (H1 2026 results)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Neinor Sur S.A.U., CIF A-14646350, Registro Mercantil de Córdoba tomo 1.622, folio 23, hoja CO-19.140",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Neinor Homes listed on the Spanish stock exchange",
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 99,
+   "size_max_m2": 215,
+   "price_min": 395000,
+   "price_max": 551000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "basement parking (166 spaces)",
+    "storage rooms",
+    "communal pool",
+    "gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Casares",
+   "brochure_url": "https://promociones.neinorhomes.com/bliss-homes-en/"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Licence file number, deposit insurer and special account published",
+   "Most units already sold (81%)",
+   "Listed parent developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.neinorhomes.com/en/promocion/bliss-homes/",
+   "https://www.neinorhomes.com/uploads/promociones/documentos/4177//dosier_promociones/0000000003423296.PDF",
+   "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765",
+   "https://www.idealista.com/news/node/909340"
+  ]
+ },
+ {
+  "slug": "talaia-residences-adeje-avantespacia",
+  "name": "Talaïa Residences",
+  "developer": "Avantespacia",
+  "area": "Callao Salvaje, Adeje, Tenerife",
+  "country": "Spain",
+  "market": "Canary Islands",
+  "stage": "off-plan",
+  "url": "https://brainsre.news/avantespacia-talaia-residences-residencial-adeje/",
+  "docs_url": "https://www.avantespacia.com/wp-content/uploads/2024/10/ES_Dossier_Talaia-Residences_23-12-2025.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "232 homes in 6 buildings, 1-3BR",
+   "253 parking spaces and 232 storage rooms",
+   "address Avenida de la Galga 4, Adeje",
+   "dossier based on preliminary or basic project, subject to change",
+   "developer page: 'coming soon'",
+   "marketed by CBRE"
+  ],
+  "note": "Avantespacia's 232-home, six-building scheme on a roughly 27,000 m2 plot beside Ajabo beach in Callao Salvaje, launched in Jan 2026 with CBRE; the developer dossier (Dec 2025) is based on the preliminary project and publishes no prices, licence, guarantee or delivery date. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer website shows Pancho Guerra 24 and Tamaraceite Sur in Las Palmas de Gran Canaria as completed and sold out",
+   "units": 232,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status in dossier, developer page or press",
+   "escrow": "Not in dossier or developer page",
+   "progress": "Developer page says 'coming soon'; press reports launch and sales office only",
+   "plans": "Dossier has general project info from the preliminary project, no unit plans",
+   "record": "Developer site lists two completed, sold-out developments in Las Palmas",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "232 homes in six buildings with 1-3 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://canarianweekly.com/posts/232-apartment-residential-complex-announced-for-Callao-Salvaje"
+   },
+   {
+    "claim": "Plot of about 27,000 m2 on Avenida de La Galga by Ajabo beach",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://canarianweekly.com/posts/232-apartment-residential-complex-announced-for-Callao-Salvaje"
+   },
+   {
+    "claim": "Marketed by CBRE with sales office open",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/?p=286094"
+   },
+   {
+    "claim": "Project still pre-construction ('coming soon')",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.avantespacia.com/en/homes-for-sales/adeje/"
+   },
+   {
+    "claim": "Specifications final",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.avantespacia.com/wp-content/uploads/2024/10/ES_Dossier_Talaia-Residences_23-12-2025.pdf"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avantespacia.com/wp-content/uploads/2024/10/ES_Dossier_Talaia-Residences_23-12-2025.pdf"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avantespacia.com/wp-content/uploads/2024/10/ES_Dossier_Talaia-Residences_23-12-2025.pdf"
+   },
+   {
+    "claim": "Developer delivered Pancho Guerra 24 and Tamaraceite Sur",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avantespacia.com/en/homes-for-sales/adeje/"
+   },
+   {
+    "claim": "Promoter legal entity named",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avantespacia.com/wp-content/uploads/2024/10/ES_Dossier_Talaia-Residences_23-12-2025.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "direct access to Ajabo beach",
+    "parking",
+    "storage rooms"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Adeje",
+   "brochure_url": "https://www.avantespacia.com/wp-content/uploads/2024/10/EN_Dossier_Talaia-Residences_23-12-2025.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Location, plot and unit count confirmed by independent press",
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://brainsre.news/?p=286094",
+   "https://canarianweekly.com/posts/232-apartment-residential-complex-announced-for-Callao-Salvaje",
+   "https://www.avantespacia.com/wp-content/uploads/2024/10/ES_Dossier_Talaia-Residences_23-12-2025.pdf",
+   "https://www.avantespacia.com/en/homes-for-sales/adeje/"
+  ]
+ },
+ {
+  "slug": "oase-meloneras-aedas",
+  "name": "Oase",
+  "developer": "AEDAS Homes (now part of Neinor Homes)",
+  "area": "Meloneras, San Bartolomé de Tirajana, Gran Canaria",
+  "country": "Spain",
+  "market": "Canary Islands",
+  "stage": "under construction",
+  "url": "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria",
+  "docs_url": "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria",
+  "permit_number": null,
+  "docs_listed": [
+   "96 single-family homes, 2-3BR (4BR option)",
+   "unit table EUR 673,000 to 1,184,000 excl. 7% IGIC, garage and storage included",
+   "five unit plan PDFs",
+   "amenities list",
+   "energy label C in image alt text"
+  ],
+  "note": "96 single-family homes in Meloneras by AEDAS, built by SANJOSE (contract June 2025); local press reports over 50% sold and delivery scheduled for Q2 2027, while the developer page publishes prices from EUR 673,000 plus IGIC and plans but no licence, guarantee or dated progress. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 673000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "AEDAS Homes delivered Australy Libella (Estepona) and other projects; now merged into listed Neinor Homes",
+   "units": 96,
+   "payment_plan": null,
+   "price_per_m2": 5282
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status on developer page or in press",
+   "escrow": "No deposit guarantee statement on developer page",
+   "progress": "Developer page shows generic status labels only; Maspalomas24h (Apr 2026) says works progressing on schedule, no figure or dated photos on developer page",
+   "plans": "Five unit plan PDFs",
+   "record": "AEDAS delivered earlier projects (e.g. Australy Libella, idealista Aug 2026); listed group",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "96 single-family homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Oase-en-San-Bartolome-de-Tirajana-Las-Palmas-de-Gran-Canaria_1886.html"
+   },
+   {
+    "claim": "SANJOSE awarded construction (June 2025), over 25,000 m2 built area",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Oase-en-San-Bartolome-de-Tirajana-Las-Palmas-de-Gran-Canaria_1886.html"
+   },
+   {
+    "claim": "Delivery Q2 2027, works on schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://maspalomas24h.uk/Article/10470/Aedas-Homes-video-confirms-that-its-first-development-in-the-south-of-Gran-Canaria-will-be-completed-in-2027."
+   },
+   {
+    "claim": "More than 50% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://maspalomas24h.uk/Article/10470/Aedas-Homes-video-confirms-that-its-first-development-in-the-south-of-Gran-Canaria-will-be-completed-in-2027."
+   },
+   {
+    "claim": "German and British investors among main buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://maspalomas24h.uk/Article/7922/Germans-and-British-among-the-main-potential-investors-in-the-Aedas-Homes-project-in-Maspalomas"
+   },
+   {
+    "claim": "Prices from EUR 673,000 excl. IGIC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria"
+   },
+   {
+    "claim": "Header size figures match the unit table",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria"
+   },
+   {
+    "claim": "AEDAS delivered earlier projects (Australy Libella)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "AEDAS Homes S.A. (integrated into Neinor Homes in 2026)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Neinor Homes listed; AEDAS integration reported in H1 2026 results",
+   "construction_start": "2025-06",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 127.41,
+   "size_max_m2": 253.77,
+   "price_min": 673000,
+   "price_max": 1184000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult and children's pools",
+    "heated pool",
+    "gym",
+    "sauna",
+    "spa",
+    "coworking",
+    "concierge with CCTV",
+    "garage and storage"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de San Bartolomé de Tirajana",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "National builder (SANJOSE) contracted, independently reported",
+   "Per-unit prices and plans published",
+   "Delivery quarter publicly stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aedashomes.com/en/new-homes-for-sale-oase-las-palmas-gran-canaria",
+   "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Oase-en-San-Bartolome-de-Tirajana-Las-Palmas-de-Gran-Canaria_1886.html",
+   "https://maspalomas24h.uk/Article/10470/Aedas-Homes-video-confirms-that-its-first-development-in-the-south-of-Gran-Canaria-will-be-completed-in-2027.",
+   "https://maspalomas24h.uk/Article/7922/Germans-and-British-among-the-main-potential-investors-in-the-Aedas-Homes-project-in-Maspalomas",
+   "https://www.fotocasa.es/en/buy/new-home/san-bartolome-de-tirajana/20697744",
+   "https://www.idealista.com/news/node/909340"
+  ]
+ },
+ {
+  "slug": "vista-balito-mogan-grupo-meridional",
+  "name": "Vista Balito",
+  "developer": "Grupo Meridional (urbanisation by Montebalito)",
+  "area": "Barranco de Balito, Mogán, Gran Canaria",
+  "country": "Spain",
+  "market": "Canary Islands",
+  "stage": "off-plan",
+  "url": "https://www.thinkspain.com/es/venta-viviendas/9068469",
+  "docs_url": "https://spain.estatenearme.com/en/las-palmas/mogan/obra-nueva/vista-balito",
+  "permit_number": null,
+  "docs_listed": [
+   "92 tourist apartments in 3 phases (28 / 32 / 32)",
+   "phase 1 prices EUR 226,000 to 333,500, from EUR 4,185/m2",
+   "phase 2 unit listed at EUR 310,000 (53 m2)",
+   "garage spaces from EUR 20,000-25,000",
+   "EUR 10,000 reservation deposit",
+   "Plan Parcial of Barranco de Balito approved; building works expected early 2027",
+   "energy certificate pending, images are infographics"
+  ],
+  "note": "92 one-bedroom tourist apartments by Grupo Meridional in the Balito ravine, Mogán; phase 1 (28) sold out and phase 2 (32) on sale from Oct 2025 while the plot is still being urbanised, with building works only expected from early 2027 and no building licence, guarantee or plans published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 226000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 92,
+   "payment_plan": "EUR 10,000 reservation; no instalment schedule published",
+   "price_per_m2": 4185
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only the Plan Parcial approval is cited; no building licence mentioned on listings or in press",
+   "escrow": "No deposit guarantee stated although a EUR 10,000 reservation is taken",
+   "progress": "Urbanisation works under way; building start expected early 2027 (no dated progress updates)",
+   "plans": "Unit areas only, no floor plans; images are infographics",
+   "record": "No delivered projects named for Grupo Meridional on listings; Montebalito (group company) is listed in Madrid but no completed residential projects named in the sources",
+   "returns": "Marketed to investors as tourist apartments, no yield or guarantee figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "92 apartments averaging 55 m2, three phases",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://canarianweekly.com/posts/New-92-apartment-holiday-complex-given-the-green-light-in-Mogan"
+   },
+   {
+    "claim": "Phase 1 (28 units) sold out, phase 2 (32) on sale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/grupo-meridional-vista-balito-92-apartamentos-mogan/"
+   },
+   {
+    "claim": "Investment over EUR 10 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://canarianweekly.com/posts/New-92-apartment-holiday-complex-given-the-green-light-in-Mogan"
+   },
+   {
+    "claim": "Partial plan for Barranco de Balito approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://spain.estatenearme.com/en/las-palmas/mogan/obra-nueva/vista-balito"
+   },
+   {
+    "claim": "Building works start early 2027 after urbanisation",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/grupo-meridional-vista-balito-92-apartamentos-mogan/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/es/venta-viviendas/9068469"
+   },
+   {
+    "claim": "Montebalito is listed in Madrid, 2025 net profit EUR 3.5m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://maspalomas24h.uk/art/10125/apostar-por-el-sur-de-gran-canaria-montebalito-dispara-sus-margenes-y-se-atrinchera-la-isla"
+   },
+   {
+    "claim": "Montebalito's Mogán licences not yet granted, licensing speed named as the main 2026 challenge",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://maspalomas24h.uk/art/10125/apostar-por-el-sur-de-gran-canaria-montebalito-dispara-sus-margenes-y-se-atrinchera-la-isla"
+   },
+   {
+    "claim": "Number of units on estatenearme listing (10) matches phase text (28)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://spain.estatenearme.com/en/las-palmas/mogan/obra-nueva/vista-balito"
+   },
+   {
+    "claim": "Deposit guarantee on EUR 10,000 reservation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://spain.estatenearme.com/en/las-palmas/mogan/obra-nueva/vista-balito"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Gran Canaria, Spain",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Group company Montebalito listed on the Madrid stock exchange",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR"
+   ],
+   "size_min_m2": 45.25,
+   "size_max_m2": 55,
+   "price_min": 226000,
+   "price_max": 333500,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "EUR 10,000 reservation",
+   "foreign_ownership": "freehold",
+   "rental_programme": "tourist apartment use, no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "solarium",
+    "underground garage (92 spaces)",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Mogán",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Low entry prices published per phase",
+   "Group company is a listed developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://brainsre.news/grupo-meridional-vista-balito-92-apartamentos-mogan/",
+   "https://canarianweekly.com/posts/New-92-apartment-holiday-complex-given-the-green-light-in-Mogan",
+   "https://spain.estatenearme.com/en/las-palmas/mogan/obra-nueva/vista-balito",
+   "https://www.thinkspain.com/es/venta-viviendas/9068469",
+   "https://maspalomas24h.uk/art/10125/apostar-por-el-sur-de-gran-canaria-montebalito-dispara-sus-margenes-y-se-atrinchera-la-isla"
+  ]
+ },
+ {
+  "slug": "siena-la-manga-club-taylor-wimpey",
+  "name": "Siena",
+  "developer": "Taylor Wimpey España",
+  "area": "La Manga Club, Cartagena (Murcia, Costa Cálida)",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "under construction",
+  "url": "https://murciatoday.com/british-company-taylor-wimpey-invests-%E2%82%AC26-million-in-luxury-la-manga-club-development_1000265272-a.html",
+  "docs_url": "https://taylorwimpeyspain.com/?p=133045",
+  "permit_number": null,
+  "docs_listed": [
+   "3BR ground-floor apartments from EUR 400,000 and penthouses from EUR 435,000 plus VAT",
+   "delivery date 25-02-2028 for phase 1",
+   "construction progress video dated 10/2026",
+   "4 floor plans (apartment, penthouse, townhouse floors)",
+   "brochure PDF (Feb 2026)",
+   "phases 2-3 townhouses and villas, no dates"
+  ],
+  "note": "Taylor Wimpey España's first Murcia scheme, a EUR 26 million phased development inside La Manga Club; phase 1 three-bed apartments from EUR 400,000 plus VAT with delivery set for 25 Feb 2028 and an Oct 2026 construction video, no licence or guarantee details published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 400000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey España delivered 504 homes in 2024 and 410 in 2023 (Alicante Plaza)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 3900
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status on project page or in press",
+   "escrow": "No deposit guarantee statement on project page",
+   "progress": "Construction progress video dated 10/2026; Murcia Today (Mar 2026) says phase 1 in progress",
+   "plans": "Four floor plans on project page",
+   "record": "Independent press reports TW España delivery volumes",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Investment EUR 26 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-espana-murcia-siena-residencial/"
+   },
+   {
+    "claim": "Phase 1 under construction, completion February 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://murciatoday.com/british-company-taylor-wimpey-invests-%E2%82%AC26-million-in-luxury-la-manga-club-development_1000265272-a.html"
+   },
+   {
+    "claim": "Apartments from EUR 400,000 plus VAT (EUR 395,000 at launch)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-espana-murcia-siena-residencial/"
+   },
+   {
+    "claim": "Construction progress video Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/?p=133045"
+   },
+   {
+    "claim": "Taylor Wimpey España delivered 504 homes in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/taylor-wimpey-entregas-viviendas-2024"
+   },
+   {
+    "claim": "Total unit count",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/?p=133045"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/?p=133045"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/?p=133045"
+   },
+   {
+    "claim": "Phases 2 and 3 timing",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/?p=133045"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Taylor Wimpey de España S.A.U., subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 914,
+   "listed_or_audited": "Parent Taylor Wimpey plc listed on the London Stock Exchange",
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR apartment",
+    "3BR penthouse",
+    "3BR townhouse",
+    "villa"
+   ],
+   "size_min_m2": 102.55,
+   "size_max_m2": 117.35,
+   "price_min": 400000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": "La Manga Club resort",
+   "amenities": [
+    "pools",
+    "landscaped gardens",
+    "children's play area",
+    "gym or multipurpose room",
+    "resort golf"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Cartagena",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/wp-content/uploads/2026/03/TWE_SIENA_impres_260220_eng_baja.pdf"
+  },
+  "verified_score": 2,
+  "positives": [
+   "Dated construction video and fixed delivery date published",
+   "Floor plans and prices per type",
+   "Established, listed parent group"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/?p=133045",
+   "https://murciatoday.com/british-company-taylor-wimpey-invests-%E2%82%AC26-million-in-luxury-la-manga-club-development_1000265272-a.html",
+   "https://brainsre.news/taylor-wimpey-espana-murcia-siena-residencial/",
+   "https://alicanteplaza.es/taylor-wimpey-entregas-viviendas-2024"
+  ]
  }
 ]

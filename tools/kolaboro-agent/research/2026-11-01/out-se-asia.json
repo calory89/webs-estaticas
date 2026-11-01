@@ -2890,5 +2890,748 @@
    "https://www.edgeprop.my/content/1912990/tropicana-launches-lido-waterfront-boulevard’s-skypark-kepler-partners-mbsb-bank-offer-financing-package",
    "https://www.businesstoday.com.my/2026/08/27/tropicana-corp-back-in-the-red-reports-q2-loss-of-rm17-million/"
   ]
+ },
+ {
+  "slug": "aruga-resort-residences-mactan-rockwell",
+  "name": "Aruga Resort and Residences Mactan",
+  "developer": "Rockwell Land Corporation",
+  "area": "Punta Engano, Lapu-Lapu",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://ren.ph/projects/rockwell-land/aruga-by-rockwell-resort-and-residences-mactan-cebu-residential-mk7uleio",
+  "docs_url": "https://e-rockwell.com/property/aruga-resort-and-residences-mactan",
+  "permit_number": "PLS LS-RO7-22-089",
+  "docs_listed": [
+   "developer page: residential PHP 18.8M-247.2M, villas PHP 64M-127.5M, Phase 1 and Phase 2 unit sizes 66-292 sq m, unit plan and site plan images",
+   "developer page: 2 residential towers of 22 floors, 22 villas, 5.2 ha site",
+   "ren.ph (from DHSUD public records): LTS PLS LS-RO7-22-089, 0002230, 0002229 listed active",
+   "Philstar Property (Sep 2025): first residential tower nearing completion, amenities ready",
+   "Manila Bulletin (Jan 2026): resort estate scheduled to begin construction in 2026, around 300 rooms",
+   "Manila Bulletin (Sep 2018): launched Aug 2018, PHP 6.2bn, 200 residential units"
+  ],
+  "note": "Beachfront resort residences on 5.2 ha in Punta Engano, Mactan, by PSE-listed Rockwell Land, launched 2018; the first tower was reported nearing completion in Sep 2025 while the newer phase is pre-selling at PHP 18.8M-247.2M with unit plans published and DHSUD licences to sell shown on a portal citing DHSUD records. No turnover date, escrow or progress figure is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 18800000,
+   "currency": "PHP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "PLS LS-RO7-22-089",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Rockwell lists move-in ready projects: Proscenium at Rockwell, The Vantage at Kapitolyo, The Grove by Rockwell, 8 Benitez Suites",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 280597,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": "ren.ph, citing DHSUD public records: LTS PLS LS-RO7-22-089 (primary), 0002230, 0002229, status 'estimated from issue date'",
+   "escrow": null,
+   "progress": "Philstar Property (26 Sep 2025): first residential tower nearing completion, lobby and amenities complete; MB (9 Jan 2026): resort estate to begin construction in 2026; no % published",
+   "plans": "e-rockwell.com unit plan images",
+   "record": "e-rockwell.com Move-In Ready section names Proscenium at Rockwell, The Vantage at Kapitolyo, The Grove by Rockwell, 8 Benitez Suites",
+   "returns": "None stated"
+  },
+  "claims": [
+   {
+    "claim": "DHSUD licences to sell PLS LS-RO7-22-089, 0002230 and 0002229 are active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/projects/rockwell-land/aruga-by-rockwell-resort-and-residences-mactan-cebu-residential-mk7uleio"
+   },
+   {
+    "claim": "Project launched Aug 2018 with PHP 6.2bn value and 200 residential units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mb.com.ph/2018/09/16/rockwell-launches-p6-2-billion-luxury-resort-in-mactan/"
+   },
+   {
+    "claim": "First residential tower nearing completion (Sep 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://philstarproperty.com/news/2025/09/26/42568/aruga-resort-and-residences-mactan-beachfront-living-coming-to-life-with-a-new-chapter-on-the-horizon/"
+   },
+   {
+    "claim": "Resort estate scheduled to begin construction in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mb.com.ph/2026/01/09/rockwell-pushes-beyond-metro-manila-with-cebu-resort-angeles-and-bacolod-power-plant-malls"
+   },
+   {
+    "claim": "Residential prices PHP 18.8M-247.2M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mb.com.ph/2026/01/09/rockwell-pushes-beyond-metro-manila-with-cebu-resort-angeles-and-bacolod-power-plant-malls"
+   },
+   {
+    "claim": "5.2 ha site with about 270-300 m of beachfront",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mb.com.ph/2026/01/09/rockwell-pushes-beyond-metro-manila-with-cebu-resort-angeles-and-bacolod-power-plant-malls"
+   },
+   {
+    "claim": "Turnover date for the current phase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://e-rockwell.com/property/aruga-resort-and-residences-mactan"
+   },
+   {
+    "claim": "Rockwell has delivered Proscenium, The Grove, The Vantage and 8 Benitez Suites",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://e-rockwell.com/property/aruga-resort-and-residences-mactan"
+   },
+   {
+    "claim": "Buyer payments held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://e-rockwell.com/property/aruga-resort-and-residences-mactan"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://e-rockwell.com/property/aruga-resort-and-residences-mactan"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Philippines",
+   "developer_company": "Rockwell Land Corporation",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Philippine Stock Exchange (ROCK)",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "villa"
+   ],
+   "size_min_m2": 66,
+   "size_max_m2": 298,
+   "price_min": 18800000,
+   "price_max": 247200000,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": "Aruga (Rockwell)",
+   "amenities": [
+    "270 m beachfront",
+    "sea-facing pools",
+    "gym and yoga studio",
+    "residents lounge",
+    "function rooms",
+    "children's play area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell); Lapu-Lapu City building official",
+   "brochure_url": null
+  },
+  "positives": [
+   "Licences to sell shown from DHSUD public records",
+   "Unit plans and full price ranges published",
+   "First tower near completion per 2025 report"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ren.ph/projects/rockwell-land/aruga-by-rockwell-resort-and-residences-mactan-cebu-residential-mk7uleio",
+   "https://e-rockwell.com/property/aruga-resort-and-residences-mactan",
+   "https://philstarproperty.com/news/2025/09/26/42568/aruga-resort-and-residences-mactan-beachfront-living-coming-to-life-with-a-new-chapter-on-the-horizon/",
+   "https://mb.com.ph/2026/01/09/rockwell-pushes-beyond-metro-manila-with-cebu-resort-angeles-and-bacolod-power-plant-malls",
+   "https://mb.com.ph/2018/09/16/rockwell-launches-p6-2-billion-luxury-resort-in-mactan/"
+  ]
+ },
+ {
+  "slug": "el-sol-seagrove-golden-topper",
+  "name": "EL SOL",
+  "developer": "Golden Topper",
+  "area": "Seagrove, Punta Engano, Lapu-Lapu",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://www.dotproperty.com.ph/ads/1-bedroom-condo-for-sale-in-el-sol-punta-enga%C3%B1o-cebu_bd669cecf5ff-d771-5a02-7277-d715d089",
+  "docs_url": "https://weekend.sunstar.com.ph/blog/2021/12/26/el-sol-a-residential-paradise-in-lapu-lapu/",
+  "permit_number": "PLS RO07-21-095",
+  "docs_listed": [
+   "agent listing: 1BR 38.49 sq m on floor 27 at PHP 10,403,511, 476 units, site 4,077 sq m, 3 parking levels",
+   "ren.ph (from DHSUD public records): LTS PLS RO07-21-095 and PLS RO07-21-096 listed active, developer Mactan Leisure GT Development Corp.",
+   "Rumavi portal: 476 units, 23 floors, PHP 6.83M-13.88M, studio 21 to 2BR 61 sq m, floor plan images, completion Q1 2027",
+   "Cebu Chamber (May 2023): El Sol construction to start in the near future"
+  ],
+  "note": "476-unit pre-selling leisure condo inside Ayala Land's Seagrove estate, Mactan, by Golden Topper (project company Mactan Leisure GT Development Corp.); a portal citing DHSUD records shows two active licences to sell (PLS RO07-21-095/096), prices run PHP 6.83M-13.88M and completion is given as Q1 2027, but construction had not started as of May 2023 and no progress, escrow or delivered project is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 6831824,
+   "currency": "PHP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "PLS RO07-21-095",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 476,
+   "payment_plan": null,
+   "price_per_m2": 325325,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": "ren.ph, citing DHSUD public records: LTS PLS RO07-21-095 (primary) and PLS RO07-21-096, status 'estimated from issue date'",
+   "escrow": null,
+   "progress": "Cebu Chamber (25 May 2023): construction 'will start within the near future'; Rumavi says under construction without date or figure",
+   "plans": "Rumavi portal shows floor plan images for studio, 1BR, 2BR",
+   "record": "Golden Topper's City Clou (Cebu City) topped off towers in Nov 2022 and Mar 2023 with turnover targeted from 2024 (Cebu Daily News); no completed turnover confirmed",
+   "returns": "None stated"
+  },
+  "claims": [
+   {
+    "claim": "DHSUD licences to sell PLS RO07-21-095 and PLS RO07-21-096 active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/projects/mactan-leisure-gt-development-corp-mk7tfxy7/el-sol-condominium-cc-mk7tfy2n"
+   },
+   {
+    "claim": "Project company is Mactan Leisure GT Development Corp.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/projects/mactan-leisure-gt-development-corp-mk7tfxy7/el-sol-condominium-cc-mk7tfy2n"
+   },
+   {
+    "claim": "Completion Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/zh/new-developments/philippines/lapu-lapu/el-sol"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/zh/new-developments/philippines/lapu-lapu/el-sol"
+   },
+   {
+    "claim": "Construction not yet started as of May 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cebuchamber.org/creating-better-cities-and-better-lives-across-the-philippines-with-golden-topper/"
+   },
+   {
+    "claim": "476 units in a 23-floor building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/zh/new-developments/philippines/lapu-lapu/el-sol"
+   },
+   {
+    "claim": "Prices PHP 6.83M-13.88M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/zh/new-developments/philippines/lapu-lapu/el-sol"
+   },
+   {
+    "claim": "Developer has delivered completed projects (City Clou towers topped off 2022-2023)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cebudailynews.inquirer.net/?p=493104"
+   },
+   {
+    "claim": "Located within Ayala Land's Seagrove estate, Punta Engano",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cebuchamber.org/creating-better-cities-and-better-lives-across-the-philippines-with-golden-topper/"
+   },
+   {
+    "claim": "Buyer payments held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dotproperty.com.ph/ads/1-bedroom-condo-for-sale-in-el-sol-punta-enga%C3%B1o-cebu_bd669cecf5ff-d771-5a02-7277-d715d089"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2013,
+   "developer_hq": "Cebu, Philippines",
+   "developer_company": "Mactan Leisure GT Development Corp. (Golden Topper group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 21,
+   "size_max_m2": 61,
+   "price_min": 6831824,
+   "price_max": 13876750,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condominium units, foreigners within the 40% per-project cap (portal, general rule)",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pools",
+    "gym",
+    "yoga room",
+    "sauna",
+    "KTV rooms",
+    "function halls",
+    "BBQ areas",
+    "recreational courts"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell); Lapu-Lapu City building official",
+   "brochure_url": null
+  },
+  "positives": [
+   "Licences to sell shown from DHSUD public records",
+   "Floor plan images and price range published on portal",
+   "Inside an established Ayala Land estate"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.dotproperty.com.ph/ads/1-bedroom-condo-for-sale-in-el-sol-punta-enga%C3%B1o-cebu_bd669cecf5ff-d771-5a02-7277-d715d089",
+   "https://weekend.sunstar.com.ph/blog/2021/12/26/el-sol-a-residential-paradise-in-lapu-lapu/",
+   "https://ren.ph/projects/mactan-leisure-gt-development-corp-mk7tfxy7/el-sol-condominium-cc-mk7tfy2n",
+   "https://rumavi.com/zh/new-developments/philippines/lapu-lapu/el-sol",
+   "https://cebuchamber.org/creating-better-cities-and-better-lives-across-the-philippines-with-golden-topper/",
+   "https://cebudailynews.inquirer.net/?p=493104"
+  ]
+ },
+ {
+  "slug": "le-conde-2-bkk1-wangfu",
+  "name": "Le Condé 2 BKK1",
+  "developer": "Wang Fu Guo Ji Property Development Co., Ltd.",
+  "area": "BKK1, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "off-plan",
+  "url": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1",
+  "docs_url": "https://ips-cambodia.com/coming-soon-le-conde-2-bkk1-elevated-luxury-living-in-phnom-penh/",
+  "permit_number": null,
+  "docs_listed": [
+   "IPS (Jan 2026): 60 storeys, 398 units 1-5BR and penthouses, plot 1,736 sq m at St 352 / St 63, pre-sale",
+   "IPS project page: freehold and strata title, available to foreigners, flexible payments",
+   "Rumavi: USD 158,056-771,934, 73-358 sq m, completion 2029, pre-booking from 18 Mar 2026, 0% instalments up to 54 months, 49% foreign quota",
+   "KH Property Hub: Le Condé BKK1 (1,080 units) handover from Mar 2025"
+  ],
+  "note": "60-storey, 398-unit tower in BKK1 in pre-sale since Mar 2026 by Wang Fu Guo Ji, the developer of Le Condé BKK1 (handover from Mar 2025 per agents); portals give USD 158,056-771,934, completion 2029 and 0% instalments over up to 54 months, but no permit, plans, escrow or progress is published and floor counts differ (60 vs 63). (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 158056,
+   "currency": "USD",
+   "title": "freehold strata title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Le Condé BKK1 (1,080 units, 43 floors): topped out Oct 2023, handover began Mar 2025 (KH Property Hub)",
+   "units": 398,
+   "payment_plan": "USD 500-1,000 booking; 0% interest instalments over up to 54 months (portal)",
+   "price_per_m2": 2165,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Not provided",
+   "record": "KH Property Hub and IPS (agents): Le Condé BKK1 topped out Oct 2023, handover began Mar 2025; no independent confirmation found",
+   "returns": "No guarantee published for phase 2; Rumavi says phase 1 had a guaranteed rental package and gives a 6-9% target gross yield for phase 2 as a target only"
+  },
+  "claims": [
+   {
+    "claim": "398 units in a 60-storey tower (portal notes 60 vs 63 floors in sources)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "Prices USD 158,056 to 771,934",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "Completion 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "Strata title available to foreigners above ground floor, 49% developer quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "Developer delivered Le Condé BKK1 (1,080 units), handover from Mar 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/coming-soon-le-conde-2-bkk1-elevated-luxury-living-in-phnom-penh/"
+   },
+   {
+    "claim": "Penthouse size 358 sq m (overview says 369 sq m)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "0% interest instalments over up to 54 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "Construction permit issued by the Ministry of Land Management",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/69-le-conde-phase-ii-bkk1"
+   },
+   {
+    "claim": "Guaranteed rental return offered on phase 2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1"
+   },
+   {
+    "claim": "Developer company is registered in Cambodia",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://khpropertyhub.com/en/developers/wang-fu-guo-ji"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Phnom Penh, Cambodia",
+   "developer_company": "Wang Fu Guo Ji Property Development Co., Ltd. (registration number not published)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 1080,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR penthouse"
+   ],
+   "size_min_m2": 73,
+   "size_max_m2": 369,
+   "price_min": 158056,
+   "price_max": 771934,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "USD 500-1,000 booking; 0% interest instalments over up to 54 months",
+   "foreign_ownership": "Strata title for units above ground floor, foreign quota 49% per developer policy (portal)",
+   "rental_programme": "none confirmed for phase 2; 6-9% target gross yield (portal)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "car parking",
+    "CCTV",
+    "24/7 security",
+    "fully furnished units",
+    "central air conditioning"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction / Phnom Penh Capital Hall",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer has a completed tower in the same district per agents",
+   "Fully furnished handover",
+   "Price range and unit sizes published on portal"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ips-cambodia.com/fr/project/69-le-conde-phase-ii-bkk1/",
+   "https://ips-cambodia.com/coming-soon-le-conde-2-bkk1-elevated-luxury-living-in-phnom-penh/",
+   "https://khpropertyhub.com/en/developers/wang-fu-guo-ji",
+   "https://khpropertyhub.com/en/blog/new-development-projects-launching-in-2026",
+   "https://rumavi.com/en/new-developments/cambodia/bkk1-boeng-keng-kang-1/le-conde-2-bkk1",
+   "https://ips-cambodia.com/project/69-le-conde-phase-ii-bkk1"
+  ]
+ },
+ {
+  "slug": "gato-tower-miraku",
+  "name": "G.A.T.O Tower",
+  "developer": "MIRAKU Capital & Development Co., Ltd.",
+  "area": "BKK1, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "off-plan",
+  "url": "https://ips-cambodia.com/project/58-g-a-t-o-tower",
+  "docs_url": "https://ips-cambodia.com/project/58-g-a-t-o-tower",
+  "permit_number": null,
+  "docs_listed": [
+   "IPS project page: 67 floors, 296 m, 696 units 31-432 sq m, from USD 98,115 (USD 3,165/sq m), 9 floor plans, freehold strata title, management fee USD 1.5/sq m",
+   "IPS page: groundbreaking 25 Jul 2026, Oct 2026 update (site preparation 100%, P2 test pile cast, P1 drilling 30%), completion Q4 2030",
+   "IPS page: USD 1,000 booking, 20% on SPA, 60% construction instalments, 20% on handover",
+   "CambodgeMag: LBL International main contractor (design and build), 472 residences plus 224-room hotel, groundbreaking scheduled Jun 2026",
+   "Cambodia Investment Review (Sep 2025): USD 100M, 65 storeys"
+  ],
+  "note": "67-storey Japanese-Cambodian tower with hotel on Norodom Blvd, BKK1; groundbreaking Jul 2026 and an Oct 2026 update shows site preparation done and test piles under way, with completion Q4 2030 and LBL International as design-and-build contractor. Floor plans and payment terms are published but sources disagree on units (696 vs 472) and floors (65 vs 67), and no permit, escrow or delivered project is shown. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 98115,
+   "currency": "USD",
+   "title": "freehold strata title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "USD 1,000 booking; 20% on SPA; 60% in construction installments; 20% on handover",
+   "price_per_m2": 3165,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "IPS project page Oct 2026 update: site preparation 100%, P2 test pile casting complete, P1 drilling 30%; groundbreaking 25 Jul 2026; no overall %",
+   "plans": "9 floor plans on IPS project page",
+   "record": "Developer established 2018 (agent page); no completed projects listed",
+   "returns": "No guarantee; agent page says yields 'fully secured' through management partnership without figures"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking 25 Jul 2026 (contractor news said scheduled for Jun 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/58-g-a-t-o-tower"
+   },
+   {
+    "claim": "Site preparation complete and test piles under way (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/58-g-a-t-o-tower"
+   },
+   {
+    "claim": "LBL International Construction is main design-and-build contractor",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cambodgemag.com/en/post/cambodia-lbl-international-construction-formalizes-partnership-on-gato-tower"
+   },
+   {
+    "claim": "696 units (contractor news: 472 residences plus 224 hotel rooms)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.cambodgemag.com/en/post/cambodia-lbl-international-construction-formalizes-partnership-on-gato-tower"
+   },
+   {
+    "claim": "67 floors (2025 report: 65 storeys)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cambodiainvestmentreview.com/2025/09/12/miraku-capital-development-announces-100-million-65-story-g-a-t-o-tower-in-bkk1-phnom-penh/"
+   },
+   {
+    "claim": "Completion Q4 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cambodgemag.com/en/post/cambodia-lbl-international-construction-formalizes-partnership-on-gato-tower"
+   },
+   {
+    "claim": "Prices from USD 98,115 (USD 3,165 per sq m)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/58-g-a-t-o-tower"
+   },
+   {
+    "claim": "Freehold strata title available to foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/58-g-a-t-o-tower"
+   },
+   {
+    "claim": "Investment of USD 100 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cambodiainvestmentreview.com/2025/09/12/miraku-capital-development-announces-100-million-65-story-g-a-t-o-tower-in-bkk1-phnom-penh/"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/58-g-a-t-o-tower"
+   },
+   {
+    "claim": "Rental yields 'fully secured' through management partnership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ips-cambodia.com/project/58-g-a-t-o-tower"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Phnom Penh, Cambodia",
+   "developer_company": "MIRAKU Capital & Development Co., Ltd. (Japanese-Cambodian JV; registration number not published)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-07",
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "executive suite",
+    "duplex penthouse"
+   ],
+   "size_min_m2": 31,
+   "size_max_m2": 432,
+   "price_min": 98115,
+   "price_max": 661500,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "USD 1,000 booking; 20% on SPA; 60% construction instalments; 20% on handover",
+   "foreign_ownership": "Freehold strata title, available to foreigners (agent page)",
+   "rental_programme": "WH Living management after handover; yields described as 'fully secured' with no figure",
+   "service_charge": "USD 1.5 per sq m; parking USD 50 per month",
+   "brand": null,
+   "amenities": [
+    "five-star hotel",
+    "rooftop sky bar",
+    "rooftop pool"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction / Phnom Penh Capital Hall",
+   "brochure_url": null
+  },
+  "positives": [
+   "Detailed dated construction update (Oct 2026)",
+   "Nine floor plans and full payment schedule published",
+   "Main contractor named; 20% held to handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ips-cambodia.com/project/58-g-a-t-o-tower",
+   "https://www.cambodgemag.com/en/post/cambodia-lbl-international-construction-formalizes-partnership-on-gato-tower",
+   "https://cambodiainvestmentreview.com/2025/09/12/miraku-capital-development-announces-100-million-65-story-g-a-t-o-tower-in-bkk1-phnom-penh/"
+  ]
  }
 ]

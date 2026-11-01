@@ -502,9 +502,9 @@
    },
    {
     "claim": "Under construction",
-    "status": "contradicted",
-    "by": "registry",
-    "source": "https://eia.onep.go.th/eia/detail?id=15386"
+    "status": "unverified",
+    "by": "none",
+    "source": "https://moregroup.estate/projects/laguna-aster/"
    },
    {
     "claim": "Completion Q2 2028",
@@ -1360,7 +1360,7 @@
   "market": "Pattaya",
   "stage": "under construction",
   "url": "https://www.wongamatgroup.com/en/new-projects/once-wongamat/",
-  "docs_url": "https://www.honourthailand.com/",
+  "docs_url": "https://www.honourthailand.com/%F0%9D%90%8E%F0%9D%90%8D%F0%9D%90%82%F0%9D%90%84-%F0%9D%90%96%F0%9D%90%8E%F0%9D%90%8D%F0%9D%90%86%F0%9D%90%80%F0%9D%90%8C%F0%9D%90%80%F0%9D%90%93-%F0%9D%90%80%F0%9D%90%86%F0%9D%90%84%F0%9D%90%8D/",
   "permit_number": "EIA report 256711-35, ONEP approval letter ทส.1009.5/2180 (7 Feb 2025)",
   "docs_listed": [
    "agent: 548 units, 56 floors, 239 m, 4 rai",
@@ -3106,6 +3106,558 @@
    "https://thailand-real.estate/property/krabi/developments/off-plan/"
   ],
   "verified_score": 0,
+  "added": "2026-10-31",
+  "country": "Thailand"
+ },
+ {
+  "slug": "the-next-jedyod-4-ornsirin",
+  "name": "The Next Jedyod 4",
+  "developer": "Ornsirin Holding PCL (SET: ORN)",
+  "area": "Jed Yod, near Nimmanhaemin, Mueang Chiang Mai",
+  "market": "Chiang Mai",
+  "stage": "off-plan",
+  "url": "https://www.aiaig.com/en/thailand/chiang-mai/11158-thailand-chiang-mai-chiang-mai-nimman-jedyod-condo",
+  "docs_url": "https://ornsirin.co.th/en/property-item/the-next-jedyod-4/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 1BR 30-36 sq m and 1BR Plus 37-43 sq m with floor plan section, from 'over THB 2 million'",
+   "developer news: VVIP launch 22 Aug 2026, EDGE green-building standard, company backlog THB 4,262M",
+   "agent: 54 units, 4 floors, completion 25 Oct 2027",
+   "agent: deposit THB 100,000-200,000, 30% within 7 days, 20% at piling, 20% at structure, 30% at handover",
+   "agent: earlier phases 'over 95% occupancy' and 'over 6%' historical yields"
+  ],
+  "note": "54-unit, four-storey low-rise condo near Nimman by SET-listed Ornsirin, launched to VVIP buyers on 22 Aug 2026 with completion listed for October 2027; earlier Next Jedyod phases are completed. (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2000000,
+   "currency": "THB",
+   "title": "freehold (49% foreign quota)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "FazWaz developer list: The Next Jedyod (78 units, Nov 2020), The Next Jedyod 2 (72 units, Nov 2024), The Astra Condo (589 units, 2017), Arise Charoen Mueang (469 units, 2025) among others",
+   "units": 54,
+   "payment_plan": "Deposit THB 100,000 (1BR) or 200,000; 30% within 7 days; 20% at piling; 20% at main structure; 30% at handover (agent)",
+   "price_per_m2": 66667
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or EIA reference published (small 4-storey building)",
+   "escrow": null,
+   "progress": "Launched Aug 2026; no construction updates",
+   "plans": "Developer page has 'Building and Room Plans' with floor plans for 1BR and 1BR Plus",
+   "record": "Named completed Ornsirin condos with unit counts and dates on FazWaz developer page; developer is SET-listed since 30 Oct 2023",
+   "returns": "Agent cites 'historical rental yields of over 6%' for earlier phases; no guarantee"
+  },
+  "positives": [
+   "SET-listed developer with published factsheet and annual report",
+   "Floor plans on developer page",
+   "Payment schedule weighted to milestones with 30% at handover"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer listed on SET (ORN), listed 30 Oct 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.set.or.th/en/market/product/stock/quote/orn/factsheet"
+   },
+   {
+    "claim": "VVIP launch 22 Aug 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kaohoon.com/news/856565"
+   },
+   {
+    "claim": "Company backlog THB 4,262M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kaohoon.com/news/856565"
+   },
+   {
+    "claim": "First EDGE-certified condo in Chiang Mai",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/orn-q3-69-backlog-4262/"
+   },
+   {
+    "claim": "54 units, 4 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aiaig.com/en/thailand/chiang-mai/11158-thailand-chiang-mai-chiang-mai-nimman-jedyod-condo"
+   },
+   {
+    "claim": "Completion 25 Oct 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aiaig.com/en/thailand/chiang-mai/11158-thailand-chiang-mai-chiang-mai-nimman-jedyod-condo"
+   },
+   {
+    "claim": "Agent lists status 'under construction' at launch",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.kaohoon.com/news/856565"
+   },
+   {
+    "claim": "Price from about THB 2M (another figure THB 2.49M)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nestopa.com/th-en/articles/7-best-new-developments-in-chiang-mai-2026"
+   },
+   {
+    "claim": "Earlier phases over 95% occupancy, yields over 6%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aiaig.com/en/thailand/chiang-mai/11158-thailand-chiang-mai-chiang-mai-nimman-jedyod-condo"
+   },
+   {
+    "claim": "Developer completed The Next Jedyod 1 and 2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.com/property-developers/ornsirin-group-d987"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Doi Saket, Chiang Mai, Thailand",
+   "developer_company": "Ornsirin Holding Public Company Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "SET-listed (ORN) since 30 Oct 2023; annual report 2025 published",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR Plus"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 43,
+   "price_min": 2000000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": 30,
+   "payment_plan": "30/20/20/30",
+   "foreign_ownership": "Condo freehold within 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "fitness",
+    "co-working",
+    "lobby",
+    "HEPA fresh-air system",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Chiang Mai municipality (building permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://ornsirin.co.th/en/property-item/the-next-jedyod-4/",
+   "https://ornsirin.co.th/property-item/the-next-jedyod-4/",
+   "https://ornsirin.co.th/en/orn-q3-69-backlog-4262/",
+   "https://www.kaohoon.com/news/856565",
+   "https://www.set.or.th/en/market/product/stock/quote/orn/factsheet",
+   "https://www.aiaig.com/en/thailand/chiang-mai/11158-thailand-chiang-mai-chiang-mai-nimman-jedyod-condo",
+   "https://nestopa.com/th-en/articles/7-best-new-developments-in-chiang-mai-2026",
+   "https://www.fazwaz.com/property-developers/ornsirin-group-d987"
+  ],
+  "verified_score": 0,
+  "added": "2026-10-31",
+  "country": "Thailand"
+ },
+ {
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "developer": "Home Development Group Co., Ltd. (Home Sukkapan group)",
+  "area": "Chang Phueak, Mueang Chiang Mai",
+  "market": "Chiang Mai",
+  "stage": "under construction",
+  "url": "https://www.thaigerproperty.com/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory",
+  "docs_url": "https://www.chanood.com/ad-686a4c0a96dd7e2a2404bad2.html",
+  "permit_number": null,
+  "docs_listed": [
+   "portal: 231 units, 8 floors, about 2 rai, completion Jan 2027",
+   "sales ad (Jul 2025): studio 25-27 sq m from THB 2.1M, 1BR 34-45 sq m from THB 3M, 2BR 46-80 sq m from THB 4.4M",
+   "sales ad: CAM THB 45 per sq m, sinking fund THB 500 per sq m, completion '2026', show units open",
+   "portal: developer registered capital THB 120M, part of Home Sukkapan group",
+   "another portal: 22 floors, Q1 2027, 'estimated gross yields 6.5%'"
+  ],
+  "note": "231-unit condo near Chang Phueak Gate by Chiang Mai developer Home Development Group, listed for January 2027 completion; listings disagree on height (8 vs 22 floors), completion year and the developer's track record. (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2100000,
+   "currency": "THB",
+   "title": "freehold (49% foreign quota)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Portal: 5 projects, 1,701 units (Treasure Prime Condo, The Erawan Condo, The Treasure); another portal: 4 projects, 2,000+ units",
+   "units": 231,
+   "payment_plan": null,
+   "price_per_m2": 77778
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Listings say under construction / show units open; no dated progress",
+   "plans": "Unit size ranges only",
+   "record": "Named earlier projects on a portal, with conflicting project and unit counts across portals",
+   "returns": "One portal's own estimate of 6.5% gross yield; not from developer, no guarantee"
+  },
+  "positives": [
+   "Developer part of a large regional building-materials group (portal)",
+   "Fees published (CAM and sinking fund)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building height 8 floors vs 22 floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/thailand/chiang-mai/the-ivory"
+   },
+   {
+    "claim": "Completion 2026 vs January 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.chanood.com/ad-686a4c0a96dd7e2a2404bad2.html"
+   },
+   {
+    "claim": "Developer delivered 5 projects / 1,701 units vs 4 projects / 2,000+ units vs 10+ projects",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thaigerproperty.com/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory"
+   },
+   {
+    "claim": "231 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thaigerproperty.com/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory"
+   },
+   {
+    "claim": "Price from THB 2.1M (another portal: THB 2.59M studio)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.108siam.com/en/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory"
+   },
+   {
+    "claim": "Foreign quota available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.chanood.com/ad-686a4c0a96dd7e2a2404bad2.html"
+   },
+   {
+    "claim": "Developer registered capital THB 120M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thaigerproperty.com/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory"
+   },
+   {
+    "claim": "Under construction with show units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.chanood.com/ad-686a4c0a96dd7e2a2404bad2.html"
+   },
+   {
+    "claim": "Building or environmental permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kumuangproperties.com/9284/condo?language=en"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Chiang Mai, Thailand",
+   "developer_company": "Home Development Group Co., Ltd. (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": "2026 (sales ad, Jul 2025)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 25,
+   "size_max_m2": 80,
+   "price_min": 2100000,
+   "price_max": 5500000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condo freehold within 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": "THB 45 per sq m per month; sinking fund THB 500 per sq m",
+   "brand": null,
+   "amenities": [
+    "pool",
+    "fitness",
+    "sauna",
+    "garden",
+    "24-hour security",
+    "key card access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Chiang Mai municipality (building permit); ONEP if EIA threshold met",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.thaigerproperty.com/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory",
+   "https://www.108siam.com/en/projects/thailand/chiang-mai/mueang-chiang-mai/chang-phueak/the-ivory",
+   "https://www.chanood.com/ad-686a4c0a96dd7e2a2404bad2.html",
+   "https://www.kumuangproperties.com/9284/condo?language=en",
+   "https://rumavi.com/en/new-developments/thailand/chiang-mai/the-ivory",
+   "https://www.thailand-property.com/condo/27008/the-ivory"
+  ],
+  "verified_score": 0,
+  "added": "2026-10-31",
+  "country": "Thailand"
+ },
+ {
+  "slug": "aura-condominium-rawai-the-one-group",
+  "name": "AURA Condominium",
+  "developer": "The One Group (project company The One Aura Co., Ltd.)",
+  "area": "Soi Sermsuk, Rawai",
+  "market": "Phuket",
+  "stage": "under construction",
+  "url": "https://novasia.estate/en/projects/aura-condominium/",
+  "docs_url": "https://theonenaiharn.com/aura-condominium/",
+  "permit_number": "EIA report 256706-35, ONEP approval letter ทส1009.5/21393 (28 Oct 2024)",
+  "docs_listed": [
+   "developer: two 7-storey buildings, 99 underground parking lots, fully furnished, 17 pet-friendly units",
+   "developer: completion 2Q 2028, leasehold or freehold, 'EIA Eco-Friendly Project'",
+   "agent microsite: THB 3,032,320 to 11,240,190, 29-96 sq m, deposit THB 150,000",
+   "agent microsite: milestone plan 35% contract, 25% foundation, 20% structure, 15% windows/doors, 5% registration; 'developer quotes a 7% annual return'",
+   "agent: 241 units, construction start Oct 2024, completion Dec 2028, CAM THB 60 per sq m, sinking fund THB 800 per sq m",
+   "agent: unit floor plans per layout"
+  ],
+  "note": "241-unit, two-building condo in Rawai by The One Group; ONEP approved its EIA on 28 Oct 2024 and agents report construction from October 2024, while published completion dates have moved from 2026-2027 to Q2 2028 or December 2028. (checked 31 Oct 2026)",
+  "seed": {
+   "price": 3032320,
+   "currency": "THB",
+   "title": "freehold (49% foreign quota) or leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "EIA report 256706-35, ONEP letter ทส1009.5/21393",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 241,
+   "payment_plan": "THB 150,000 reservation; 35% at contract; 25% foundation; 20% construction works; 15% windows and doors; 5% at title registration",
+   "price_per_m2": 103000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer says 'EIA Eco-Friendly Project' without a number; approval found on ONEP Smart EIA Plus",
+   "escrow": null,
+   "progress": "Agents say under construction since Oct 2024; no dated developer updates found",
+   "plans": "Per-layout floor plans on agent listings (e.g. 2 Bedroom Q)",
+   "record": "Agent microsite: group founded 2019, 0 completed projects, first project (The One NaiHarn) to hand over H2 2026",
+   "returns": "Agent microsite: 'The developer quotes a 7% annual return'; not stated as guaranteed"
+  },
+  "positives": [
+   "EIA approval verifiable on ONEP",
+   "Milestone payments with only 5% at registration and 35% at contract"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for The One Aura condominium",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13821"
+   },
+   {
+    "claim": "Project company The One Aura Co., Ltd. registered (0835566041534, Oct 2023, active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=10209"
+   },
+   {
+    "claim": "Completion Q2 2028 vs Dec 2028 vs Jun 2027 vs Q1 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://papayaproperty.com/th/the-one-group/aura-condominium"
+   },
+   {
+    "claim": "Under construction since Oct 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://homeinphuket.com/th/property/2-bedroom-condo-at-aura-condominium"
+   },
+   {
+    "claim": "Developer has completed projects",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aura-rawai.com/"
+   },
+   {
+    "claim": "350 m from the sea vs 6 km to Rawai Beach",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/aura-condominium/"
+   },
+   {
+    "claim": "7% annual return quoted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aura-rawai.com/"
+   },
+   {
+    "claim": "241 units in two 7-storey buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://papayaproperty.com/th/the-one-group/aura-condominium"
+   },
+   {
+    "claim": "Freehold and leasehold available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theonenaiharn.com/aura-condominium/"
+   },
+   {
+    "claim": "Price from THB 3,032,320",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aura-rawai.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2019,
+   "developer_hq": "Chalong, Phuket, Thailand",
+   "developer_company": "The One Aura Co., Ltd. reg. 0835566041534 (project owner); group site run by The One Phuket Co., Ltd.",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-10",
+   "handover_promised": "2028-Q2",
+   "original_handover": "2026-2027 (older listings)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 29.44,
+   "size_max_m2": 96.07,
+   "price_min": 3032320,
+   "price_max": 11240190,
+   "currency": "THB",
+   "deposit_pct": 35,
+   "payment_plan": "35/25/20/15/5 milestones",
+   "foreign_ownership": "Condo freehold within 49% quota or leasehold",
+   "rental_programme": "7% annual return quoted (not guaranteed)",
+   "service_charge": "THB 60 per sq m per month; sinking fund THB 800 per sq m",
+   "brand": null,
+   "amenities": [
+    "pool",
+    "fitness",
+    "sauna",
+    "spa",
+    "co-working",
+    "restaurant",
+    "underground parking",
+    "beach shuttle"
+   ],
+   "lat": 7.815,
+   "lng": 98.337,
+   "permit_authority": "ONEP (EIA); Rawai municipality (building permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://theonenaiharn.com/aura-condominium/",
+   "https://theonenaiharn.com/",
+   "https://aura-rawai.com/",
+   "https://novasia.estate/en/projects/aura-condominium/",
+   "https://thailand-real.estate/property/aura-condominium-202122/",
+   "https://papayaproperty.com/th/the-one-group/aura-condominium",
+   "https://homeinphuket.com/th/property/2-bedroom-condo-at-aura-condominium",
+   "https://eia.onep.go.th/eia/detail?id=13821",
+   "https://eia.onep.go.th/eia/detail?id=13754",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=10209"
+  ],
+  "verified_score": 1,
   "added": "2026-10-31",
   "country": "Thailand"
  }

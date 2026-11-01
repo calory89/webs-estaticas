@@ -1,0 +1,1287 @@
+[
+ {
+  "slug": "ora-residences-db-group",
+  "name": "ORA Residences",
+  "developer": "db Group (db San Gorg Property Limited)",
+  "area": "St George's Bay, St Julian's / Pembroke",
+  "country": "Malta",
+  "market": "Malta",
+  "stage": "under construction",
+  "url": "https://www.ora.mt/",
+  "docs_url": "https://www.ora.mt/floorplans",
+  "permit_number": "PA/03807/17 (extension PA/03218/25)",
+  "docs_listed": [
+   "floor plans by floor for East and West towers",
+   "unit availability list with sizes",
+   "payment terms 10% / 20% / 70% (agent page)",
+   "SDA status for non-EU buyers",
+   "sales team named"
+  ],
+  "note": "Two towers (17 and 18 floors) with 179 apartments under the 2021 permit PA 3807/17, extended in Nov 2025 by PA 3218/25 to 23 and 25 floors; almost all units sold on plan. Hard Rock Hotel next door opened Sep 2026 while the residential delivery slipped past the mid-2026 target, per SD Finance plc analysis reported in the press (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 550000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": "PA/03807/17",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "db Group operates its own delivered hotels and projects (db Seabank Resort & Spa named in group accounts); Hard Rock Hotel Malta in the same scheme opened 2 Sep 2026 (Malta Independent, Malta Invest)",
+   "units": 179,
+   "payment_plan": "EUR 25,000 reservation; 10% at promise of sale; 20% at Level 15 East Tower structural milestone; 70% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer and agent pages publish no permit number; PA 3807/17 and PA 3218/25 are reported by Times of Malta and confirmed by court rulings",
+   "escrow": "No escrow or bank guarantee for deposits published; Malta has no mandatory off-plan escrow and payments go via promise of sale",
+   "progress": "Times of Malta Oct 2025: towers in shell form by Nov 2025, keys target July 2026; Sep 2026 press: residential delivery including ORA Tower East delayed; agent page lists structural milestone dates",
+   "plans": "ora.mt/floorplans lists every floor with residences and areas; ora.mt/availability lists units with sizes",
+   "record": "db Group is an established hotel group with bonds via SD Finance plc; Hard Rock Hotel in same project opened Sep 2026",
+   "returns": "No guaranteed rental returns advertised on ora.mt or agent pages"
+  },
+  "positives": [
+   "Planning permit upheld by the Court of Appeal in 2023 and retrial refused in 2024",
+   "Floor-by-floor plans and unit sizes published",
+   "Group financials published through listed SD Finance plc",
+   "Special Designated Area: EU and non-EU buyers need no AIP permit"
+  ],
+  "flags": [
+   {
+    "text": "Original 2018 permit was revoked by a court in 2019 after a Planning Authority board member who voted in favour was found to have a financial interest; a downscaled permit was granted in 2021.",
+    "source": "https://timesofmalta.com/article/court-gives-db-goahead-complete-massive-pembroke-project.1090865"
+   },
+   {
+    "text": "db Group cut its FY2027 revenue forecast citing later delivery of the residential component including ORA Tower East.",
+    "source": "https://www.maltabusinessjournal.com/articles/db-group-cuts-revenue-forecast-to-237m-on-st-georges-bay-timing-shifts"
+   },
+   {
+    "text": "The Business Picture reported in Sep 2026 that the Planning Authority fined db Group for irregular installations at the site after resident complaints.",
+    "source": "https://thebusinesspicture.com/2026/09/28/pembroke-project-now-accounts-for-more-than-a-third-of-db-group-assets/"
+   }
+  ],
+  "sources": [
+   "https://www.ora.mt/",
+   "https://www.ora.mt/floorplans",
+   "https://www.ora.mt/availability",
+   "https://www.dbgroupmalta.com/brands/property-development/",
+   "https://afrealestate.eu/property/ora-st-julians-apartments-malta/",
+   "https://timesofmalta.com/article/highend-24-million-residences-st-george-bay-sold.1117800",
+   "https://timesofmalta.com/article/db-group-given-goahead-expand-st-george-bay-towers.1120266",
+   "https://www.independent.com.mt/articles/2025-11-27/local-news/Planning-Authority-grants-permit-for-db-Group-s-St-George-s-Bay-project-under-FAR-policy-6736285135",
+   "https://timesofmalta.com/article/court-gives-db-goahead-complete-massive-pembroke-project.1090865",
+   "https://tvmnews.mt/en/news/court-confirms-permit-for-db-project-in-st-georges-bay/",
+   "https://www.maltabusinessjournal.com/articles/db-group-cuts-revenue-forecast-to-237m-on-st-georges-bay-timing-shifts",
+   "https://www.independent.com.mt/articles/2026-09-30/business-news/db-Group-forecasts-104-million-EBITDA-as-St-George-s-Bay-enters-operation-6736293323",
+   "https://thebusinesspicture.com/2026/09/28/pembroke-project-now-accounts-for-more-than-a-third-of-db-group-assets/",
+   "https://maltainvest.mt/hard-rock-hotel-malta-opens-in-st-georges-bay-after-e350-million-investment/"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permit PA 3807/17 approved 2021 for 179 residences, hotel and towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tvmnews.mt/en/news/court-confirms-permit-for-db-project-in-st-georges-bay/"
+   },
+   {
+    "claim": "Permit survived appeals (Court of Appeal 2023, retrial refused 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://timesofmalta.com/article/court-gives-db-goahead-complete-massive-pembroke-project.1090865"
+   },
+   {
+    "claim": "Extra floors approved under PA 3218/25 (231 units total)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.independent.com.mt/articles/2025-11-27/local-news/Planning-Authority-grants-permit-for-db-Group-s-St-George-s-Bay-project-under-FAR-policy-6736285135"
+   },
+   {
+    "claim": "Completion mid-2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.maltabusinessjournal.com/articles/db-group-cuts-revenue-forecast-to-237m-on-st-georges-bay-timing-shifts"
+   },
+   {
+    "claim": "Hard Rock Hotel in the scheme opened",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://maltainvest.mt/hard-rock-hotel-malta-opens-in-st-georges-bay-after-e350-million-investment/"
+   },
+   {
+    "claim": "Almost all units sold on plan",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thebusinesspicture.com/2026/09/28/pembroke-project-now-accounts-for-more-than-a-third-of-db-group-assets/"
+   },
+   {
+    "claim": "Prices from EUR 550,000 up to EUR 2.8m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://timesofmalta.com/article/highend-24-million-residences-st-george-bay-sold.1117800"
+   },
+   {
+    "claim": "SDA status lets non-EU buyers purchase without AIP permit",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thebusinesspicture.com/2026/09/28/pembroke-project-now-accounts-for-more-than-a-third-of-db-group-assets/"
+   },
+   {
+    "claim": "Deposit protection via escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ora.mt/"
+   },
+   {
+    "claim": "LEED certified green development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dbgroupmalta.com/brands/property-development/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Mellieha, Malta",
+   "developer_company": "db San Gorg Property Limited (group entity listed by db Group); financing arm SD Finance plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Group financial analysis summary published by SD Finance plc (bond issuer); total assets EUR 750m at Mar 2026",
+   "construction_start": null,
+   "handover_promised": "2026-Q3",
+   "original_handover": "mid-2026",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "sky villa"
+   ],
+   "size_min_m2": 78.8,
+   "size_max_m2": 246.8,
+   "price_min": 550000,
+   "price_max": 2800000,
+   "currency": "EUR",
+   "deposit_pct": 10,
+   "payment_plan": "10% promise of sale, 20% structural milestone, 70% completion",
+   "foreign_ownership": "Freehold in a Special Designated Area, no AIP permit needed for non-EU buyers",
+   "rental_programme": "none stated; optional paid membership for Hard Rock hotel services (five-figure yearly sum per Times of Malta)",
+   "service_charge": "Additional yearly five-figure sum for hotel services membership (Times of Malta)",
+   "brand": "Hard Rock Hotel (adjacent services)",
+   "amenities": [
+    "Hard Rock Hotel services",
+    "shopping mall",
+    "gym and spa",
+    "zen garden",
+    "private members club",
+    "beach club",
+    "underground parking",
+    "supermarket"
+   ],
+   "lat": 35.925,
+   "lng": 14.488,
+   "permit_authority": "Planning Authority (Malta)",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "azure-heights-lj-projects",
+  "name": "Azure Heights",
+  "developer": "LJ Projects Ltd",
+  "area": "Ibragg, Swieqi",
+  "country": "Malta",
+  "market": "Malta",
+  "stage": "off-plan",
+  "url": "https://www.ljprojectsltd.com/developments/azure-heights/",
+  "docs_url": "https://www.ljprojectsltd.com/developments/azure-heights/",
+  "permit_number": "PA/02539/25",
+  "docs_listed": [
+   "Planning Authority permit PA/2539/25 with link to PA register",
+   "unit table with prices, sizes and floor",
+   "floor plans and roof plans per unit",
+   "PA-stamped drawing of minor variation PA/04536/26",
+   "specification list",
+   "completion December 2027"
+  ],
+  "note": "Boutique block of 12 units on Triq il-Mizura, Swieqi, sold directly by the developer under Planning Authority permit PA/2539/25, completion December 2027, from EUR 330,000; 2 units left for sale (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 330000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "PA/02539/25",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer site lists Altura, Swieqi, completed September 2026, all units sold, and completed developments in Sliema and Pembroke (developer statement only)",
+   "units": 12,
+   "payment_plan": "Sold off-plan with staged payments tied to construction milestones (no percentages published)",
+   "price_per_m2": 5410
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project page states Planning Authority permit PA/2539/25 with a 'verify on the PA register' link; a PA-stamped drawing (PA/04536/26, Valid, Approved, 24/09/2026) for minor variations to PA/02539/25 is hosted on the developer site. The PA register itself sits behind a Cloudflare challenge and could not be opened",
+   "escrow": "No deposit protection published",
+   "progress": "No construction progress or dated photos published; only completion date",
+   "plans": "Floor plan and roof plan links per unit in the availability table",
+   "record": "Developer home page names Altura (Swieqi) completed Sep 2026 and completed schemes in Sliema and Pembroke",
+   "returns": "No guaranteed returns; home page speaks only of 'strong rental potential'"
+  },
+  "positives": [
+   "Permit number published on the project page with a link to the official register",
+   "Prices, sizes and per-unit plans published",
+   "Sold direct with no agency commission in the price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.ljprojectsltd.com/developments/azure-heights/",
+   "https://www.ljprojectsltd.com/",
+   "https://www.ljprojectsltd.com/wp-content/uploads/2026/09/Roof_top_Swieqi_.pdf",
+   "https://websitefts.pa.org.mt/"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning Authority permit PA/2539/25",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/wp-content/uploads/2026/09/Roof_top_Swieqi_.pdf"
+   },
+   {
+    "claim": "Minor variation PA/04536/26 approved 24 Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/wp-content/uploads/2026/09/Roof_top_Swieqi_.pdf"
+   },
+   {
+    "claim": "Completion December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/developments/azure-heights/"
+   },
+   {
+    "claim": "12 units, 2 still for sale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/developments/azure-heights/"
+   },
+   {
+    "claim": "Prices from EUR 330,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/developments/azure-heights/"
+   },
+   {
+    "claim": "Altura Swieqi completed Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/"
+   },
+   {
+    "claim": "Developer company registered in Malta",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ljprojectsltd.com/developments/azure-heights/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Msida, Malta",
+   "developer_company": "LJ Projects Ltd (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR maisonette",
+    "2BR maisonette",
+    "1BR",
+    "2BR",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 61,
+   "size_max_m2": 159,
+   "price_min": 330000,
+   "price_max": 635000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "staged payments tied to construction milestones",
+   "foreign_ownership": "Freehold (page FAQ says EU nationals can buy; no SDA status stated)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private rooftop pools for penthouses",
+    "lock-up garages optional",
+    "video intercom",
+    "double glazing"
+   ],
+   "lat": 35.925,
+   "lng": 14.475,
+   "permit_authority": "Planning Authority (Malta)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "the-shoreline-residence-smartcity",
+  "name": "The Shoreline Residence",
+  "developer": "Shoreline Residence Ltd (Shoreline Holdings group)",
+  "area": "SmartCity, Ricasoli, Kalkara",
+  "country": "Malta",
+  "market": "Malta",
+  "stage": "under construction",
+  "url": "https://www.theshorelineresidence.com/",
+  "docs_url": "https://www.theshorelineresidence.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "project description, about 370 units in 8 blocks",
+   "SDA status for EU and non-EU buyers",
+   "news page of press articles",
+   "sales contacts"
+  ],
+  "note": "About 370 apartments in 8 blocks beside the Shoreline Mall in SmartCity, an SDA. First handovers were promised for Q3 2022; group filings reported in Dec 2025 cite delays in the residence project, and the group is in a EUR 56m dispute with its former contractor under a court garnishee order (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (SDA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Shoreline Mall in the same scheme opened after delays (whoswho.mt reports, Oct 2023 and Dec 2025); no completed residential schemes named by the developer",
+   "units": 370,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on the developer site; Times of Malta reported the Planning Authority approved the scheme by 10 votes to one (12-storey blocks, about 400 flats), but no number was found",
+   "escrow": "Nothing published on deposit protection",
+   "progress": "Developer site has no dated progress; only press reports of piling (2021) and Shoreline Mall plc filings citing residence delays",
+   "plans": "No floor plans on the developer site",
+   "record": "Only the adjacent mall (opened late) in the same scheme; no delivered residential projects named",
+   "returns": "No guaranteed returns advertised"
+  },
+  "positives": [
+   "SDA status lets non-EU buyers purchase without an AIP permit",
+   "Group company Shoreline Mall plc publishes audited accounts and financial analysis summaries as a bond issuer"
+  ],
+  "flags": [
+   {
+    "text": "Former contractor Koray Global Malta obtained a precautionary garnishee order over EUR 56m against Shoreline group companies including Shoreline Residence Ltd; the group disputes the claim and says the contractor owes it money; ICC arbitration is ongoing.",
+    "source": "https://www.byteseu.com/1084010/"
+   },
+   {
+    "text": "Shoreline Mall plc reported FY2025 revenue about half of projections, citing delays in the Shoreline Residence project, and luxury villas not completed by June 2025.",
+    "source": "https://whoswho.mt/en/shoreline-revenues-fall-far-short-of-projections"
+   },
+   {
+    "text": "The Malta Post reported in June 2026 that Shoreline Mall plc asked bondholders to defer repayment of EUR 14m bonds due Aug 2026 to Aug 2028; the contractor disputes the company's explanation.",
+    "source": "https://themaltapost.com/posts/shoreline-malls-real-problems-run-deeper-than-court-freeze-contractor-warns"
+   },
+   {
+    "text": "Times of Malta reported the permit was obtained by transferring floor space and height from other SmartCity plots instead of amending the parliament-approved masterplan.",
+    "source": "https://timesofmalta.com/article/smartcity-developers-find-new-way-of-circumventing-height-building.699884"
+   }
+  ],
+  "sources": [
+   "https://www.theshorelineresidence.com/",
+   "https://www.theshorelineresidence.com/news/",
+   "https://timesofmalta.com/article/the-shoreline-completes-show-apartment-as-work-on-site-gathers-pace.890530",
+   "https://timesofmalta.com/article/shoreline-launches-another-phase.716253",
+   "https://timesofmalta.com/article/12-storey-smart-city-apartment-blocks-get-the-pa-go-ahead.700093",
+   "https://timesofmalta.com/article/smartcity-developers-find-new-way-of-circumventing-height-building.699884",
+   "https://whoswho.mt/en/opening-date-of-smart-city-s-the-shoreline-mall-pushed-back-to-february-2024",
+   "https://whoswho.mt/en/shoreline-revenues-fall-far-short-of-projections",
+   "https://www.byteseu.com/1084010/",
+   "https://themaltapost.com/posts/shoreline-malls-real-problems-run-deeper-than-court-freeze-contractor-warns",
+   "https://pedament.com/guides/special-designated-area/shoreline-residences"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning Authority approved the residential and mall scheme",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://timesofmalta.com/article/12-storey-smart-city-apartment-blocks-get-the-pa-go-ahead.700093"
+   },
+   {
+    "claim": "Handover of first finished units Q3 2022",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://whoswho.mt/en/shoreline-revenues-fall-far-short-of-projections"
+   },
+   {
+    "claim": "Residences delivered block by block from Dec 2023, full project by May 2024 (sources to whoswho.mt)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://whoswho.mt/en/shoreline-revenues-fall-far-short-of-projections"
+   },
+   {
+    "claim": "SDA status, no AIP permit needed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://pedament.com/guides/special-designated-area/shoreline-residences"
+   },
+   {
+    "claim": "About 370 units in 8 blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.theshorelineresidence.com/"
+   },
+   {
+    "claim": "Contractor dispute and garnishee order",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.byteseu.com/1084010/"
+   },
+   {
+    "claim": "Group can fund completion",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://themaltapost.com/posts/shoreline-malls-real-problems-run-deeper-than-court-freeze-contractor-warns"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.theshorelineresidence.com/"
+   },
+   {
+    "claim": "Land held under SmartCity emphyteusis granted 2008 for 99 years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://timesofmalta.com/article/smartcity-developers-find-new-way-of-circumventing-height-building.699884"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Kalkara, Malta",
+   "developer_company": "Shoreline Residence Ltd; related Shoreline Holdings Ltd, Shoreline Mall plc, Shoreline Contracting Ltd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Shoreline Mall plc secured bonds listed in Malta (EUR 14m 4% due 2026, EUR 26m 4.5% due 2032); audited FY2025 loss EUR 1.06m",
+   "construction_start": "2020-12",
+   "handover_promised": null,
+   "original_handover": "2022-Q3",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold apartment in a Special Designated Area",
+   "rental_programme": "none",
+   "service_charge": "Indicative EUR 1,800-3,500 a year (third-party guide, not developer)",
+   "brand": null,
+   "amenities": [
+    "shopping mall",
+    "private plaza",
+    "underground parking",
+    "car-free environment",
+    "seafront"
+   ],
+   "lat": 35.893,
+   "lng": 14.533,
+   "permit_authority": "Planning Authority (Malta)",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "salib-residences-g3",
+  "name": "Salib Residences",
+  "developer": "G3 (g3.com.mt)",
+  "area": "Triq tas-Salib, Mellieha",
+  "country": "Malta",
+  "market": "Malta",
+  "stage": "off-plan",
+  "url": "https://www.g3.com.mt/property/",
+  "docs_url": "https://www.g3.com.mt/property/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit list with prices and sold status",
+   "garage prices",
+   "payment terms 10% (or 20% with discount) at promise of sale",
+   "construction start Q1 2027, completion Q2 2028",
+   "finish level"
+  ],
+  "note": "Small freehold block of 2 maisonettes, 6 apartments and 2 penthouses in Mellieha sold on plan from EUR 350,000; construction to start Q1 2027 with completion Q2 2028; most apartments already sold. No permit number or plans published for this scheme (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 350000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "G3 page states Valley Vista Suites, Mellieha, is sold out and 'now fully occupied' (developer statement)",
+   "units": 10,
+   "payment_plan": "10% deposit at promise of sale (20% option with discount), balance on final deed",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning permit number or permit claim on the page for Salib Residences",
+   "escrow": "None published; deposit paid at promise of sale",
+   "progress": "Construction not started (start scheduled Q1 2027); no updates",
+   "plans": "No plans link for Salib Residences (plans downloads exist only for other G3 schemes)",
+   "record": "Same page names Valley Vista Suites (Mellieha) as fully sold and occupied; The Junction and Vantage listed as sold",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Unit-by-unit prices and sold status published",
+   "Prices stated in-hand, with agency commission disclosed as extra"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.g3.com.mt/property/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction starts Q1 2027, completion Q2 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "Prices from EUR 350,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "Planning permit granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "Valley Vista Suites delivered and occupied",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "Developer company registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   },
+   {
+    "claim": "8 of 10 residential units sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.g3.com.mt/property/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Malta",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2027-01",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR maisonette",
+    "2BR + study",
+    "1BR penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 350000,
+   "price_max": 550000,
+   "currency": "EUR",
+   "deposit_pct": 10,
+   "payment_plan": "10% (or 20% discounted) at promise of sale, balance at final deed",
+   "foreign_ownership": "Freehold (no SDA status stated)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lift",
+    "basement garages",
+    "penthouse roof gardens with pool preparation"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Planning Authority (Malta)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "park-rise-ellinikon-lamda",
+  "name": "Park Rise (The Ellinikon, Little Athens)",
+  "developer": "Lamda Development (Hellinikon S.A.)",
+  "area": "Ellinikon, Athens Riviera",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "under construction",
+  "url": "https://theellinikon.com.gr/en/residences/little-athens/park-rise",
+  "docs_url": "https://theellinikon.com.gr/en/residences/little-athens/park-rise",
+  "permit_number": null,
+  "docs_listed": [
+   "key facts: 88 residences, 1-5 bedrooms, LEED Gold",
+   "estimated completion H1 2028",
+   "360 degree apartment tour",
+   "purchase process and FAQ (no nationality restrictions, VAT exemption to end 2026, Golden Visa EUR 800,000)",
+   "construction progress in Athens-exchange filings and AGM presentation"
+  ],
+  "note": "BIG-designed 50 m residential building of 88 to 89 units in the Little Athens neighbourhood of The Ellinikon, estimated completion H1 2028. Lamda's exchange filings report 81% of 750 launched Little Athens units sold or reserved by 31 Aug 2026 and construction under way, but no prices, floor plans or permit number are published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-H1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Lamda Development, listed on Euronext Athens, states completed Ellinikon projects (Experience Park, Experience Center, AMEA building) and operates malls; Ellinikon Sports Park delivered Sep 2026 (H1 2026 results filing)",
+   "units": 88,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published on the project page or filings opened",
+   "escrow": "No deposit protection described; purchase via reservation agreement then SPA",
+   "progress": "Q1 2026 results presentation (Euronext Athens) lists Park Rise construction status with site photos; AGM June 2026 has a Park Rise construction progress slide; structural engineer lists project as under construction",
+   "plans": "Only renders and a 360 tour; no floor plans",
+   "record": "Listed company filings name completed projects and Sports Park delivery; Coastal Front units sold out",
+   "returns": "No rental guarantee advertised"
+  },
+  "positives": [
+   "Developer is listed and audited, with quarterly project updates on Euronext Athens",
+   "No bank loans drawn for the Ellinikon project per filings; EUR 512m cash allocated at 30 Jun 2026",
+   "No nationality restrictions; Golden Visa eligible above EUR 800,000"
+  ],
+  "flags": [
+   {
+    "text": "Lamda reported an H1 2026 net loss of EUR 111.9m on the Ellinikon project after inventory impairment provisions, and states infrastructure and Riviera Tower remain challenging.",
+    "source": "https://athens.euronext.com/sites/default/files/hermes_3/2026-09/en/eb0d0023-5afe-4177-8d00-235afec17706/274_6647_2026_English_2.pdf"
+   }
+  ],
+  "sources": [
+   "https://theellinikon.com.gr/en/residences/little-athens/park-rise",
+   "https://theellinikon.com.gr/en/residences",
+   "https://big.dk/projects/ellinikon-park-rise-16186",
+   "https://hellinikimeletitiki.gr/en/park-rise.html",
+   "https://athens.euronext.com/sites/default/files/hermes_3/2026-09/en/eb0d0023-5afe-4177-8d00-235afec17706/274_6647_2026_English_2.pdf",
+   "https://athens.euronext.com/sites/default/files/hermes_3/2026-07/en/20864c1b-c4fd-44f8-864c-1bc4fd04f8ce/274_5109_2026_English_2.pdf",
+   "https://www.lamdadev.com/sites/default/files/2026-06/ld_agm-2026-presentation_vf.pdf",
+   "https://www.economix.gr/2026/09/17/lamda-development-xepernoun-ta-18-dis-evro-oi-eispraxeis-apo-poliseis-akiniton-sto-elliniko-prochoroun-ta-2-malls/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Park Rise under construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hellinikimeletitiki.gr/en/park-rise.html"
+   },
+   {
+    "claim": "Estimated completion H1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/park-rise"
+   },
+   {
+    "claim": "88 residences",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://athens.euronext.com/sites/default/files/hermes_3/2026-07/en/20864c1b-c4fd-44f8-864c-1bc4fd04f8ce/274_5109_2026_English_2.pdf"
+   },
+   {
+    "claim": "81% of Little Athens launched units sold or reserved at 31 Aug 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.economix.gr/2026/09/17/lamda-development-xepernoun-ta-18-dis-evro-oi-eispraxeis-apo-poliseis-akiniton-sto-elliniko-prochoroun-ta-2-malls/"
+   },
+   {
+    "claim": "Developer is a listed company with audited results",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://athens.euronext.com/sites/default/files/hermes_3/2026-09/en/eb0d0023-5afe-4177-8d00-235afec17706/274_6647_2026_English_2.pdf"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/park-rise"
+   },
+   {
+    "claim": "LEED Gold certification",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/park-rise"
+   },
+   {
+    "claim": "No nationality restrictions on purchase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/park-rise"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theellinikon.com.gr/en/residences/little-athens/park-rise"
+   },
+   {
+    "claim": "Designed by Bjarke Ingels Group, 28,772 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://big.dk/projects/ellinikon-park-rise-16186"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Athens, Greece",
+   "developer_company": "Lamda Development S.A. (via Hellinikon S.A.)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Lamda Development listed on Euronext Athens; H1 2026 results published",
+   "construction_start": null,
+   "handover_promised": "2028-H1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; no restrictions by nationality per developer FAQ; individual or company purchase allowed",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two-storey wellness area",
+    "20 m pool",
+    "gyms",
+    "private ground-floor gardens",
+    "park views",
+    "350 m from the sea"
+   ],
+   "lat": 37.886,
+   "lng": 23.734,
+   "permit_authority": "Greek building service (YDOM) / Ministry for Ellinikon special plan",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "delos-metsovou-residences-exarcheia",
+  "name": "Delos / Metsovou Residences",
+  "developer": "Not named (construction partner Ergosystima; marketed by Ionian Horizon, NEB Collection, Londonist Investments)",
+  "area": "Metsovou 4, Exarcheia, Athens",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "under construction",
+  "url": "https://ionianhorizon.estate/properties/delos/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "building permit date 12 May 2026 (change of use office to residential), no number",
+   "unit price list",
+   "representative floor plans",
+   "3% for 3 years rental programme",
+   "estimated completion August 2027 (agent 1) / May 2027 (agent 3)",
+   "construction 40% (agent 2)"
+  ],
+  "note": "Office-to-residential conversion of 36 furnished one-bedroom flats marketed for the EUR 250,000 Golden Visa route with a developer rental offer of 3% a year for 3 years. Three agents publish conflicting availability, prices, completion dates and gross/net terms, and the developer is not named (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 250000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 3,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 40,
+   "developer_delivered": null,
+   "units": 36,
+   "payment_plan": "Instalment payment plan available (no terms published)",
+   "price_per_m2": 6591
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Ionian Horizon states a building permit dated 12 May 2026 for change of use; NEB says a building permit was supplied; no permit number published",
+   "escrow": "Nothing published",
+   "progress": "NEB Collection lists construction completion 40%; Ionian Horizon gives no construction status",
+   "plans": "Representative floor plans on Ionian Horizon; floor plans on NEB Collection",
+   "record": "Developer not named; construction partner Ergosystima lists renovations and design work but no completed Golden Visa schemes",
+   "returns": "NEB: '3 Year Rent Guaranteed' at 3%; Londonist: 'Rental guarantee option: 3 years at 3% net yield'; Ionian: 3% offered by developer, gross or net set in contract"
+  },
+  "positives": [
+   "Unit-level price lists and sizes published by agents",
+   "Ionian Horizon discloses that gross/net and costs of the rental offer must be confirmed in contract"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ionianhorizon.estate/properties/delos/",
+   "https://ionianhorizon.estate/properties/",
+   "https://nebcollection.com/property/n678/",
+   "https://greece.londonistinvestments.com/property/metsovou-residences/",
+   "https://ergosystima.gr/",
+   "https://ergosystima.gr/projects/"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Building permit issued 12 May 2026 for change of use",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ionianhorizon.estate/properties/delos/"
+   },
+   {
+    "claim": "Construction 40% complete",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nebcollection.com/property/n678/"
+   },
+   {
+    "claim": "Estimated completion August 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://greece.londonistinvestments.com/property/metsovou-residences/"
+   },
+   {
+    "claim": "29 of 36 units available (15 Sep 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nebcollection.com/property/n678/"
+   },
+   {
+    "claim": "Prices from EUR 256,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nebcollection.com/property/n678/"
+   },
+   {
+    "claim": "3% rental return is net",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ionianhorizon.estate/properties/delos/"
+   },
+   {
+    "claim": "Golden Visa eligible at EUR 250,000 via conversion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ionianhorizon.estate/properties/delos/"
+   },
+   {
+    "claim": "Developer identity and company registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ionianhorizon.estate/properties/delos/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nebcollection.com/property/n678/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR"
+   ],
+   "size_min_m2": 36.8,
+   "size_max_m2": 125.3,
+   "price_min": 250000,
+   "price_max": 397000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "instalments available, terms not published",
+   "foreign_ownership": "Freehold; marketed for the Greek Golden Visa EUR 250,000 conversion route",
+   "rental_programme": "Developer rental offer 3% of price per year for 3 years, subject to contract",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "fully furnished",
+    "parking for most units",
+    "ground-floor gardens",
+    "energy class A"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Athens building service (YDOM)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "pedras-negras-house-ando-living",
+  "name": "Pedras Negras House",
+  "developer": "Ando Living Group (promoter OptylonKrea)",
+  "area": "Rua das Pedras Negras 36, Santa Maria Maior (Se / Baixa), Lisbon",
+  "country": "Portugal",
+  "market": "Lisbon",
+  "stage": "under construction",
+  "url": "https://remax.pt/pt/empreendimento/pedras-negras-house/8840",
+  "docs_url": "https://andoliving.com/project/project-pedras-negras-house/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit list with gross private areas and prices (RE/MAX)",
+   "payment plan EUR 10,000 reservation / 20% CPCV / 20% Sep 2026 / 60% deed",
+   "rental income options: 4% guaranteed for 5 years or 5-6%+ variable",
+   "owner fees EUR 150-300/month plus condominium EUR 2.5/m2",
+   "touristic licence for the whole building (claimed)",
+   "delivery 2027"
+  ],
+  "note": "Rehabilitation of a Pombaline building into 20 serviced apartments with a pool, sold furnished from about EUR 515,000 with a building-wide touristic licence. Buyers can opt for a 4% net return guaranteed for 5 years; completion is given as H2 2027 / Q4 2027; no building licence number or progress published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 515000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 4,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Ando Living press release (Dec 2025): 12 serviced apartment buildings in operation in Portugal, Abrantes 50 House opened summer 2025; guest review cites Santa Catarina House, Porto",
+   "units": 20,
+   "payment_plan": "EUR 10,000 reservation; 20% at CPCV; 20% in Sep 2026; 60% at deed",
+   "price_per_m2": 8134
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer states a touristic licence was secured for the building; no alvara or licence number published",
+   "escrow": "No deposit protection stated; 40% paid before deed",
+   "progress": "Only 'currently in rehabilitation' and delivery 2027; no dated updates",
+   "plans": "No floor plans; RE/MAX lists areas per unit only",
+   "record": "Group states 12 buildings operating in Portugal and 1,700+ units operating across its brands (press release)",
+   "returns": "RE/MAX: '4% Rendimento Garantido' on purchase price for 5 years; developer: 'choose between a fixed 4% return or a variable net yield of 6%+ (target)'"
+  },
+  "positives": [
+   "Owner fees and condominium charge published",
+   "Pooled revenue model explained in writing",
+   "Freehold deed, no timeshare"
+  ],
+  "flags": [],
+  "sources": [
+   "https://andoliving.com/project/project-pedras-negras-house/",
+   "https://andoliving.com/wp-content/uploads/2025/07/Newspaper_Pedras-Negras_EN_low.pdf",
+   "https://andoliving.com/buy-an-apartment/",
+   "https://remax.pt/pt/empreendimento/pedras-negras-house/8840",
+   "https://news.cision.com/pt/grupo-ando-living/r/pedras-negras-house--o-novo-projeto-da-ando-living-em-fase-de-comercializacao,c639014810610000000",
+   "https://reportugal.vidaimobiliaria.com/atualidade/reabilitacao-urbana/edificio-pombalino-lugar-20-apartamentos-turisticos-centro-lisboa/"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building holds a touristic licence for the whole building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andoliving.com/project/project-pedras-negras-house/"
+   },
+   {
+    "claim": "Completion H2 2027 (press) / Q4 2027 (RE/MAX)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://reportugal.vidaimobiliaria.com/atualidade/reabilitacao-urbana/edificio-pombalino-lugar-20-apartamentos-turisticos-centro-lisboa/"
+   },
+   {
+    "claim": "Prices from EUR 515,000",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://reportugal.vidaimobiliaria.com/atualidade/reabilitacao-urbana/edificio-pombalino-lugar-20-apartamentos-turisticos-centro-lisboa/"
+   },
+   {
+    "claim": "Investment about EUR 15m, rehab by OptylonKrea",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.cision.com/pt/grupo-ando-living/r/pedras-negras-house--o-novo-projeto-da-ando-living-em-fase-de-comercializacao,c639014810610000000"
+   },
+   {
+    "claim": "4% net return guaranteed for 5 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://remax.pt/pt/empreendimento/pedras-negras-house/8840"
+   },
+   {
+    "claim": "Ando apartments achieve over 90% occupancy and ADR over EUR 270",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andoliving.com/project/project-pedras-negras-house/"
+   },
+   {
+    "claim": "12 buildings already operating in Portugal",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://news.cision.com/pt/grupo-ando-living/r/pedras-negras-house--o-novo-projeto-da-ando-living-em-fase-de-comercializacao,c639014810610000000"
+   },
+   {
+    "claim": "Freehold title with no timeshare restriction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andoliving.com/buy-an-apartment/"
+   },
+   {
+    "claim": "Building licence (alvara) for rehabilitation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://andoliving.com/project/project-pedras-negras-house/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "OptylonKrea (promotion arm of Ando Living Group); registration not published",
+   "developer_projects_delivered": 12,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 56,
+   "size_max_m2": 204,
+   "price_min": 515000,
+   "price_max": 1410000,
+   "currency": "EUR",
+   "deposit_pct": 20,
+   "payment_plan": "EUR 10k reservation, 20% CPCV, 20% Sep 2026, 60% deed",
+   "foreign_ownership": "Freehold",
+   "rental_programme": "Ando Living pooled rental: 4% net guaranteed 5 years with 14 nights use, or variable 5%+ / 6%+ target",
+   "service_charge": "Owner's Club EUR 150 (studio/1BR), 200 (2BR), 300 (3BR) per month plus condominium EUR 2.5/m2 when outside the pool",
+   "brand": "Ando Living",
+   "amenities": [
+    "pool",
+    "furnished units",
+    "24/7 virtual reception",
+    "chef on demand",
+    "clubhouse access",
+    "housekeeping"
+   ],
+   "lat": 38.71,
+   "lng": -9.135,
+   "permit_authority": "Camara Municipal de Lisboa",
+   "brochure_url": "https://andoliving.com/wp-content/uploads/2025/07/Newspaper_Pedras-Negras_EN_low.pdf"
+  },
+  "verified_score": 0
+ }
+]

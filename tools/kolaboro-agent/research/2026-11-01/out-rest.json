@@ -1895,5 +1895,199 @@
    "brochure_url": null
   },
   "verified_score": 1
+ },
+ {
+  "slug": "hotel101-niseko-hotel101-global",
+  "name": "Hotel101-Niseko",
+  "developer": "Hotel101 Global Holdings (DoubleDragon)",
+  "area": "Hirafu, Kutchan",
+  "country": "Japan",
+  "market": "Niseko",
+  "url": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf",
+  "docs_url": "https://www.sunstar.com.ph/cebu/hotel101-tops-off-482-room-niseko-flagship",
+  "permit_number": null,
+  "docs_listed": [
+   "21 m2 units from JPY 38,160,000 (resale/agent listing)",
+   "freehold condominium title",
+   "optional pooled revenue share: owners get 30% of gross room revenue of the whole hotel",
+   "topped off 5 Dec 2025, opening Dec 2026",
+   "482 rooms, onsen, sauna, ski-in/ski-out",
+   "SEC filings: land bought Sep 2022 by TMK Hotel101 Niseko; construction contract with Iwata Chizaki dated Aug 2023"
+  ],
+  "note": "482-room condo hotel at Niseko Hirafu 1-jo sold as 21 m2 freehold units (JPY 38,160,000 listed) with an optional pooled 30% gross room revenue share; Hotel101 Global's SEC 20-F confirms the land purchase (Sep 2022) and that it was under construction and in presale at end 2025. Topped off 5 Dec 2025 for a December 2026 opening. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 38160000,
+   "currency": "JPY",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 482,
+   "payment_plan": null,
+   "price_per_m2": 1817143,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Topping-off ceremony on 5 Dec 2025 reported by SunStar and Daily Tribune; 20-F (filed 30 Apr 2026) lists Niseko as under construction and open for presale at 31 Dec 2025 and notes snowfall delays risk; no % published",
+   "plans": "No floor plan on listing",
+   "record": "Hotel101 Global 20-F says the group has one operating hotel, Hotel101-Madrid, opened March 2026; parent DoubleDragon listed in the Philippines. Niseko is the group's first international development",
+   "returns": "Pooled revenue share of 30% of gross room revenue described; no guaranteed return"
+  },
+  "positives": [
+   "Freehold title",
+   "Structure topped off before sale completion"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf",
+   "https://www.sunstar.com.ph/cebu/hotel101-tops-off-482-room-niseko-flagship",
+   "https://www.powderlife.com/blog/plans-released-for-450-unit-condo-hotel-in-east-hirafu/",
+   "https://www.sec.gov/Archives/edgar/data/2054507/000121390026049771/ea0286666-20f_hotel101.htm",
+   "https://tribune.net.ph/2026/01/05/doubledragon-hotel-101-niseko",
+   "https://efts.sec.gov/LATEST/search-index?q=%22Niseko%22&forms=20-F,F-4,424B3&entityName=Hotel101"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Land (about 9,000 m2) acquired, held by TMK Hotel101 Niseko, paid Sep 2022",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/2054507/000121390026049771/ea0286666-20f_hotel101.htm"
+   },
+   {
+    "claim": "Construction contract signed with Iwata Chizaki Construction (Aug 2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://efts.sec.gov/LATEST/search-index?q=%22Niseko%22&forms=20-F,F-4,424B3&entityName=Hotel101"
+   },
+   {
+    "claim": "Building topped off Dec 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tribune.net.ph/2026/01/05/doubledragon-hotel-101-niseko"
+   },
+   {
+    "claim": "Opening December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sunstar.com.ph/cebu/hotel101-tops-off-482-room-niseko-flagship"
+   },
+   {
+    "claim": "Under construction and open for presale at 31 Dec 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/2054507/000121390026049771/ea0286666-20f_hotel101.htm"
+   },
+   {
+    "claim": "Building confirmation (kakunin) number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf"
+   },
+   {
+    "claim": "Unit price JPY 38,160,000 for 21 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf"
+   },
+   {
+    "claim": "Freehold condominium title for unit buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf"
+   },
+   {
+    "claim": "Owners receive 30% of gross room revenue (pooled)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf"
+   },
+   {
+    "claim": "Hotel101 Global is Nasdaq-listed (HBNB)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/2054507/000121390026049771/ea0286666-20f_hotel101.htm"
+   },
+   {
+    "claim": "Hotel101 Global has an operating track record",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.sec.gov/Archives/edgar/data/2054507/000121390026049771/ea0286666-20f_hotel101.htm"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kaihatsu.akiyajapan.com/property/53616c7465645f5fce1fb8979c959937161e856467ec47288068c627f1700abf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Philippines / Singapore (Hotel101 Global Holdings Corp., Cayman Islands)",
+   "developer_company": "TMK Hotel101 Niseko (project vehicle) under Hotel101 Global Holdings Corp. (Nasdaq: HBNB), subsidiary of DoubleDragon Corporation",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Hotel101 Global Holdings Corp. Nasdaq (HBNB), files 20-F with SEC; DoubleDragon listed on Philippine Stock Exchange",
+   "construction_start": "2023",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "21 m2 hotel unit"
+   ],
+   "size_min_m2": 21,
+   "size_max_m2": 21,
+   "price_min": 38160000,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit; Japan has no restriction on foreign ownership",
+   "rental_programme": "Optional pooled hotel programme, owners share 30% of total gross room revenue; operator covers operating costs (listing)",
+   "service_charge": null,
+   "brand": "Hotel101",
+   "amenities": [
+    "all-day dining",
+    "onsen",
+    "sauna",
+    "ski lockers",
+    "ski-in/ski-out",
+    "business center"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kutchan Town / Hokkaido (building confirmation under Building Standards Act)",
+   "brochure_url": null
+  },
+  "verified_score": 2
  }
 ]

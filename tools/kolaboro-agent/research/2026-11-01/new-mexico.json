@@ -377,8 +377,8 @@
     "padel and pickleball",
     "restaurants"
    ],
-   "lat": 21.075,
-   "lng": -86.776,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Municipio de Benito Juárez",
    "developer_projects_delivered": null,
    "developer_units_delivered": null,
@@ -563,8 +563,8 @@
     "restaurants",
     "commercial area"
    ],
-   "lat": 20.205,
-   "lng": -87.47,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Municipio de Tulum (Dirección General de Desarrollo Urbano) and SEDETUS Quintana Roo",
    "developer_founded": null,
    "developer_projects_delivered": null,
@@ -668,7 +668,7 @@
    "escrow": "developer",
    "progress": "none",
    "plans": "developer",
-   "record": "independent",
+   "record": "developer",
    "returns": "developer"
   },
   "claims": [
@@ -769,8 +769,8 @@
     "fitness",
     "restaurants"
    ],
-   "lat": 20.638,
-   "lng": -87.06,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Municipio de Solidaridad (Dirección de Desarrollo Urbano)",
    "brochure_url": "https://viceroyplayadelcarmen.com/wp-content/uploads/2026/05/M1.pdf",
    "developer_founded": null,
@@ -784,7 +784,7 @@
    "payment_plan": null,
    "service_charge": null
   },
-  "verified_score": 1,
+  "verified_score": 0,
   "positives": [
    "Detailed floor plans downloadable",
    "Developer entity named as a bank trust with trust number",
@@ -959,8 +959,8 @@
     "pet park",
     "covered parking"
    ],
-   "lat": 22.91,
-   "lng": -109.89,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Municipio de Los Cabos (Dirección General de Desarrollo Urbano)",
    "developer_company": null,
    "developer_units_delivered": null,
@@ -1315,8 +1315,8 @@
     "trails",
     "beach"
    ],
-   "lat": 22.95,
-   "lng": -110.0,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Municipio de Los Cabos; SEMARNAT for coastal environmental impact",
    "developer_founded": null,
    "developer_company": null,
@@ -2965,6 +2965,734 @@
   "sources": [
    "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab",
    "https://ambitoinmobiliario.mx/rum-residencias-innovacion-y-estilo-de-vida-para-estudiantes-y-profesionales/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "onto-reforma-colon-sede-desarrollos",
+  "name": "ONTO Reforma Colón",
+  "developer": "SEDE Desarrollos",
+  "area": "Av. Morelos 89, Colonia Juárez, Cuauhtémoc, Mexico City",
+  "country": "Mexico",
+  "market": "Mexico City",
+  "stage": "under construction",
+  "url": "https://www.sededesarrollos.com/proyectos/onto-reforma-colon",
+  "docs_url": "https://www.sededesarrollos.com/proyectos/onto-reforma-colon",
+  "permit_number": null,
+  "docs_listed": [
+   "construction progress 40% (Oct 2026) with 14 site photos",
+   "architectural floor plates for every level",
+   "8 unit types with m2, live price and availability (18 of 78 available, Oct 2026)",
+   "delivery Jul 2027",
+   "delivered portfolio with years and unit counts",
+   "appreciation projection chart (not guaranteed)"
+  ],
+  "note": "25-level, 78 to 79-unit steel-frame tower in Colonia Juárez from MXN 4.75M, with a published 40% construction progress figure (Oct 2026), floor plates per level, live unit pricing and a Jul 2027 delivery date. No construction registration number (manifestación) or deposit protection is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4752000,
+   "currency": "MXN",
+   "title": "private ownership (Mexico City, no restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 40,
+   "developer_delivered": "Developer lists delivered projects: Reynosa 40 (9 units, 2026), Álvaro Obregón (59 units, 2025), Puerto Escondido (7 units, 2024), NL207 (7 units, 2023), Tonalá (44 units, 2023)",
+   "units": 79,
+   "payment_plan": "Plans selectable in online quoter; mortgage accepted",
+   "price_per_m2": 132000,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Project page: 'Progreso general 40%, Octubre 2026, estructura metálica y muros de mampostería en proceso'; LinkedIn update Sep 2026",
+   "plans": "Plantas arquitectónicas for ground floor to roof garden plus typology sheets",
+   "record": "Developer home page lists five delivered buildings with year and units",
+   "returns": "Rental pool via ONTO Stay; appreciation scenarios (+8% to +13.6% by delivery) with disclaimer that past appreciation does not guarantee returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction 40% complete (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-reforma-colon"
+   },
+   {
+    "claim": "Steel structure and first-floor apartments under construction (Sep 2026), on schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/sededesarrollos_avance-de-obra-de-onto-reforma-col%C3%B3n-septiembre-activity-7516562302339268608-pecW"
+   },
+   {
+    "claim": "Delivery July 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-reforma-colon"
+   },
+   {
+    "claim": "79 units (also stated as 78)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/sededesarrollos_ontoreformacol%C3%B3n-reformacol%C3%B3n-coloniaju%C3%A1rez-activity-7504053175985987584-wkXs"
+   },
+   {
+    "claim": "Architect CRB, builder Secuencia, 6,000 m2, completion 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://crbarq.com/proyectos/onto-reforma-colon-arquitectura-urbana-torre-residencial/"
+   },
+   {
+    "claim": "First residential building in Mexico with a tuned mass damper",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/sededesarrollos_el-primer-edificio-en-m%C3%A9xico-en-integrar-activity-7465114148733911040-3V2C"
+   },
+   {
+    "claim": "Developer delivered 5 buildings (126 units) 2022-2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/"
+   },
+   {
+    "claim": "Prices from MXN 4,752,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-reforma-colon"
+   },
+   {
+    "claim": "Manifestación de construcción registered with the alcaldía / SEDUVI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-reforma-colon"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Av. Nuevo León 207, Hipódromo, Mexico City",
+   "developer_projects_delivered": 5,
+   "developer_units_delivered": 126,
+   "handover_promised": "2027-Q3",
+   "unit_types": [
+    "studio",
+    "1BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 60,
+   "price_min": 4752000,
+   "price_max": 7523000,
+   "currency": "MXN",
+   "foreign_ownership": "Direct ownership (Mexico City is outside the restricted zone)",
+   "rental_programme": "ONTO Stay rental pool with shared distribution; no yield stated",
+   "amenities": [
+    "roof garden",
+    "sky lounge",
+    "rooftop bar",
+    "gym",
+    "spa",
+    "coworking lobby",
+    "restaurant",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alcaldía Cuauhtémoc / SEDUVI (manifestación de construcción)",
+   "developer_company": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Published construction percentage with dated photos",
+   "Floor plates for every level and live per-unit pricing",
+   "Delivered projects listed with year and unit counts",
+   "Appreciation projections carry an explicit no-guarantee disclaimer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sededesarrollos.com/proyectos/onto-reforma-colon",
+   "https://www.sededesarrollos.com/",
+   "https://es.linkedin.com/posts/sededesarrollos_avance-de-obra-de-onto-reforma-col%C3%B3n-septiembre-activity-7516562302339268608-pecW",
+   "https://es.linkedin.com/posts/sededesarrollos_ontoreformacol%C3%B3n-reformacol%C3%B3n-coloniaju%C3%A1rez-activity-7504053175985987584-wkXs",
+   "https://crbarq.com/proyectos/onto-reforma-colon-arquitectura-urbana-torre-residencial/",
+   "https://es.linkedin.com/posts/sededesarrollos_el-primer-edificio-en-m%C3%A9xico-en-integrar-activity-7465114148733911040-3V2C",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "thompson-mexico-city-reforma-related",
+  "name": "Thompson Mexico City Hotel & Residences",
+  "developer": "Related Group with Pulso Inmobiliario, Grupo MRP and Moisés Farca (Related México)",
+  "area": "Paseo de la Reforma, facing the Ángel de la Independencia, Colonia Juárez, Mexico City",
+  "country": "Mexico",
+  "market": "Mexico City",
+  "stage": "off-plan",
+  "url": "https://thompsonmexicocity.com/",
+  "docs_url": "https://relatedgroupmexico.com/thompson-mexico-city/",
+  "permit_number": null,
+  "docs_listed": [
+   "219 condo units and 80 hotel keys",
+   "completion 2028",
+   "sales gallery address (Reforma 342)",
+   "Thompson rental programme for furnished studios and 1BR"
+  ],
+  "note": "43-storey Thompson-branded tower on Reforma with 104 luxury condos (98 to 158 m2) and 115 furnished studios and one-bedrooms for a rental programme, completion 2028; Reforma newspaper reported the foundation stage in Jun 2026, and agents list units from about MXN 17.5M for 98 m2. No permit, deposit protection or plans published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 17500000,
+   "currency": "MXN",
+   "title": "private ownership (Mexico City, no restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Related Group (Miami) is an established condo developer; Related México also builds Thompson Puerto Vallarta",
+   "units": 219,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "No updates on developer site; Reforma (26 Jun 2026) reports investors showed progress at foundation stage",
+   "plans": "No floor plans on developer pages",
+   "record": "Related Group track record cited by Bloomberg; no Mexico deliveries named",
+   "returns": "Optional Thompson rental programme; no figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Related Group and three Mexican partners developing a 43-storey tower; sales started Oct 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bloomberg.com/news/articles/2024-10-30/miami-condo-king-perez-expands-to-mexico-city-with-43-story-tower"
+   },
+   {
+    "claim": "Projected sellout about USD 190M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bloomberg.com/news/articles/2024-10-30/miami-condo-king-perez-expands-to-mexico-city-with-43-story-tower"
+   },
+   {
+    "claim": "Foundation stage under way (Jun 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reforma.com/muestran-avances-del-thompson-mexico-city-hotel-residences/ar3229297"
+   },
+   {
+    "claim": "219 residences: 104 condos 98-158 m2 and 115 furnished units 44-90 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reforma.com/muestran-avances-del-thompson-mexico-city-hotel-residences/ar3229297"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://relatedgroupmexico.com/thompson-mexico-city/"
+   },
+   {
+    "claim": "Agent page calls it a 46-storey 'SLS Reforma'",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ledomicile.mx/desarollos/thompsonreforma"
+   },
+   {
+    "claim": "2BR 98 m2 at MXN 17.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/inmueble/preventa-reforma-aaa-juarez-cuauhtemoc"
+   },
+   {
+    "claim": "Manifestación de construcción tipo C registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thompsonmexicocity.com/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Miami, USA / Mexico City, Mexico",
+   "construction_start": "2026",
+   "handover_promised": "2028",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 44,
+   "size_max_m2": 158,
+   "price_min": 17500000,
+   "currency": "MXN",
+   "foreign_ownership": "Direct ownership (outside restricted zone)",
+   "rental_programme": "Thompson-managed rental programme for 115 furnished units; no figures",
+   "brand": "Thompson (Hyatt)",
+   "amenities": [
+    "pool facing the Ángel",
+    "spa",
+    "gym",
+    "owners' club",
+    "restaurant and bar",
+    "business center",
+    "valet",
+    "art collection"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alcaldía Cuauhtémoc / SEDUVI",
+   "developer_founded": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Partners, unit mix and progress covered by Bloomberg and Reforma",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thompsonmexicocity.com/",
+   "https://relatedgroupmexico.com/thompson-mexico-city/",
+   "https://relatedgroup.com/properties/thompson-mexico-city/",
+   "https://www.bloomberg.com/news/articles/2024-10-30/miami-condo-king-perez-expands-to-mexico-city-with-43-story-tower",
+   "https://www.reforma.com/muestran-avances-del-thompson-mexico-city-hotel-residences/ar3229297",
+   "https://www.ledomicile.mx/desarollos/thompsonreforma",
+   "https://www.pincali.com/inmueble/preventa-reforma-aaa-juarez-cuauhtemoc",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "armani-residences-masaryk-mira",
+  "name": "Armani Residences Masaryk",
+  "developer": "MiRA",
+  "area": "Av. Presidente Masaryk 486 at Molière, Polanco, Mexico City",
+  "country": "Mexico",
+  "market": "Mexico City",
+  "stage": "under construction",
+  "url": "https://armasaryk.com/",
+  "docs_url": "https://mira.mx/armani-residences-masaryk/",
+  "permit_number": null,
+  "docs_listed": [
+   "57 residences, 150 to 568 m2, in three four-storey buildings on 5,800 m2",
+   "delivery summer 2027",
+   "construction updates section",
+   "developer track record (2,500+ units delivered, named master plans)"
+  ],
+  "note": "57 Armani/Casa-designed residences in three low-rise buildings on Masaryk, priced about MXN 40M to 138M, with the developer saying construction is on track for first deliveries in summer 2027; trackers report 30% construction and 40% sold by Mar 2026. No permit number, deposit protection or floor plans published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 40000000,
+   "currency": "MXN",
+   "title": "private ownership (Mexico City, no restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "MiRA states 2,500+ residential units delivered, 620 ha developed and three shopping centres, naming Nuevo Sur (Monterrey), Puerto Cancún, Neuchâtel Cuadrante Polanco and Cuadrante Centro Sur (Querétaro)",
+   "units": 57,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer: 'Construction is on track'; BRESI construction update Dec 2025 (foundations and structure); tracker cites 30% in Mar 2026",
+   "plans": "Size range only, no plans",
+   "record": "Developer site names delivered master plans and 2,500+ units",
+   "returns": "No returns stated; site says 'the investment protects itself' without figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction on track for first deliveries summer 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mira.mx/armani-residences-masaryk/"
+   },
+   {
+    "claim": "Groundbreaking in 2025, foundations and structure under way (Dec 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brandedresi.com/armani-residences-masaryk-construction-update/"
+   },
+   {
+    "claim": "30% construction and 40% sold (Mar 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/armani-residences-masaryk/"
+   },
+   {
+    "claim": "About 35% reserved within months of Sep 2024 launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://guide.lprluxury.com/projects/armani-residences-masaryk"
+   },
+   {
+    "claim": "Prices MXN 40M to 138M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://guide.lprluxury.com/projects/armani-residences-masaryk"
+   },
+   {
+    "claim": "Delivery Q2 2027 vs summer 2027 vs Aug 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vivepolanco.mx/preventa/preventa-polanco-entregas-2026-2027-2028/"
+   },
+   {
+    "claim": "MiRA delivered 2,500+ residential units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://armasaryk.com/"
+   },
+   {
+    "claim": "MiRA manages more than USD 1.1bn in institutional funds",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://armasaryk.com/"
+   },
+   {
+    "claim": "Manifestación de construcción registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://armasaryk.com/"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2009,
+   "developer_hq": "Mexico City, Mexico",
+   "developer_units_delivered": 2500,
+   "construction_start": "2025",
+   "handover_promised": "2027-Q3",
+   "unit_types": [
+    "apartment 150 m2+",
+    "penthouse up to 568 m2"
+   ],
+   "size_min_m2": 150,
+   "size_max_m2": 568,
+   "price_min": 40000000,
+   "price_max": 138000000,
+   "currency": "MXN",
+   "foreign_ownership": "Direct ownership (outside restricted zone)",
+   "rental_programme": null,
+   "brand": "Armani/Casa (Armani Residences)",
+   "amenities": [
+    "rooftop lounge",
+    "sky pool",
+    "wellness center",
+    "residents' club",
+    "business lounges",
+    "private terraces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alcaldía Miguel Hidalgo / SEDUVI",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Developer names prior master-planned projects",
+   "Construction updates published",
+   "No return promises"
+  ],
+  "flags": [],
+  "sources": [
+   "https://armasaryk.com/",
+   "https://mira.mx/armani-residences-masaryk/",
+   "https://brandedresi.com/armani-residences-masaryk-construction-update/",
+   "https://www.oftmw.com/projects/armani-residences-masaryk/",
+   "https://guide.lprluxury.com/projects/armani-residences-masaryk",
+   "https://vivepolanco.mx/preventa/preventa-polanco-entregas-2026-2027-2028/",
+   "https://rpca.profeco.gob.mx/"
+  ]
+ },
+ {
+  "slug": "onto-residences-versalles-106-sede-desarrollos",
+  "name": "ONTO Residences Versalles 106",
+  "developer": "SEDE Desarrollos",
+  "area": "Versalles 106, Colonia Juárez, Cuauhtémoc, Mexico City",
+  "country": "Mexico",
+  "market": "Mexico City",
+  "stage": "off-plan",
+  "url": "https://www.sededesarrollos.com/proyectos/onto-residences-versalles",
+  "docs_url": "https://www.sededesarrollos.com/proyectos/onto-residences-versalles",
+  "permit_number": null,
+  "docs_listed": [
+   "48 residences 67 to 128 m2 interior, 8 typologies with interior and terrace m2",
+   "live price and availability (33 of 48 available, Oct 2026)",
+   "floor plans section",
+   "delivery Jun 2028",
+   "payment plan 30/30/40 (agent)",
+   "appreciation projection chart (not guaranteed)"
+  ],
+  "note": "Newly launched 48-residence low-rise project with a ground-floor commercial passage in Colonia Juárez, from MXN 8.6M, delivery Jun 2028, with typologies, plans and live per-unit pricing; same developer as ONTO Reforma Colón and lists five delivered buildings. No construction registration, deposit protection or progress yet. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 8600000,
+   "currency": "MXN",
+   "title": "private ownership (Mexico City, no restricted zone)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer lists delivered projects: Reynosa 40 (9 units, 2026), Álvaro Obregón (59 units, 2025), Puerto Escondido (7 units, 2024), NL207 (7 units, 2023), Tonalá (44 units, 2023); Tonalá and Álvaro Obregón resales offered with immediate delivery",
+   "units": 48,
+   "payment_plan": "MXN 50,000 deposit, 30% at contract, 30% deferred, 40% on deeding (agent Kepler)",
+   "price_per_m2": 114667,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Launch stage, no construction progress published",
+   "plans": "Plantas and typology sheets with interior and exterior areas",
+   "record": "Delivered portfolio with year and units on developer home page",
+   "returns": "ONTO hotel-style rental pool; appreciation scenarios (+25.9% to +32.6% by delivery) with a no-guarantee disclaimer"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "48 residences, delivery June 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kplr.mx/project/versalles-106/"
+   },
+   {
+    "claim": "Building of 3 levels (agent says 4 levels)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.kplr.mx/project/versalles-106/"
+   },
+   {
+    "claim": "Prices from MXN 8,600,000; 33 of 48 available Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-residences-versalles"
+   },
+   {
+    "claim": "Architecture by CRB Arquitectos and Taller MRD",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kplr.mx/project/versalles-106/"
+   },
+   {
+    "claim": "Developer delivered five buildings 2022-2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/"
+   },
+   {
+    "claim": "Older projects Tonalá and Álvaro Obregón available as resale with immediate delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos"
+   },
+   {
+    "claim": "Projected value +32.6% by delivery (realistic scenario)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-residences-versalles"
+   },
+   {
+    "claim": "Manifestación de construcción registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sededesarrollos.com/proyectos/onto-residences-versalles"
+   },
+   {
+    "claim": "PROFECO-registered adhesion contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Av. Nuevo León 207, Hipódromo, Mexico City",
+   "developer_projects_delivered": 5,
+   "developer_units_delivered": 126,
+   "handover_promised": "2028-Q2",
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 74,
+   "size_max_m2": 158,
+   "price_min": 8600000,
+   "price_max": 17300000,
+   "currency": "MXN",
+   "deposit_pct": 30,
+   "payment_plan": "30/30/40",
+   "foreign_ownership": "Direct ownership (outside restricted zone)",
+   "rental_programme": "ONTO hotel-style rental pool, no yield stated",
+   "amenities": [
+    "roof garden",
+    "lobby",
+    "central patio",
+    "bar",
+    "commercial passage",
+    "52 parking spaces",
+    "storage units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alcaldía Cuauhtémoc / SEDUVI",
+   "developer_company": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Typologies, plans and live per-unit pricing published",
+   "Delivered projects listed with year and unit counts",
+   "Appreciation projection carries an explicit no-guarantee disclaimer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sededesarrollos.com/proyectos/onto-residences-versalles",
+   "https://www.sededesarrollos.com/proyectos",
+   "https://www.kplr.mx/project/versalles-106/",
+   "https://www.sededesarrollos.com/",
    "https://rpca.profeco.gob.mx/"
   ]
  }

@@ -1677,5 +1677,1254 @@
    "https://www.madena.ae/projects/azure-by-lapis",
    "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
   ]
+ },
+ {
+  "slug": "sharjah-sustainable-city-ii-shurooq-see-holding",
+  "name": "Sharjah Sustainable City II",
+  "developer": "Shurooq (Sharjah Investment and Development Authority) with SEE Holding",
+  "area": "Al Rahmaniya",
+  "country": "UAE",
+  "market": "Sharjah",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/sharjah-sustainable-city-2",
+  "docs_url": "https://www.sharjahsustainablecity.ae/press-releases/shurooq-announces-the-launch-of-sharjah-sustainable-city-ii/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer press release: 1,032 homes (944 townhouses, 88 villas), freehold for all nationalities, zero service charge for 3 years",
+   "Property Finder: launch price AED 2.5M, construction start 12 Mar 2026, completion Nov 2028",
+   "phase 1 construction updates page (earlier project)"
+  ],
+  "note": "Second sustainable community by government agency Shurooq with SEE Holding, launched in January 2026 with 1,032 homes and freehold open to all nationalities; Property Finder lists a construction start in March 2026 and completion in November 2028. The partners handed over phases 1 and 2 of the first Sharjah Sustainable City in 2022 and 2024. No escrow, project number or progress figure is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2460000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Sharjah Sustainable City (first project): phase 1 handover started Sep 2022 (WAM), phase 2 handover Jan 2024 (Khaleej Times); developer site says all four phases handed over",
+   "units": 1032,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No SRERD registration number published",
+   "escrow": "Not stated; Sharjah escrow regime launched Jan 2026 but project account not named",
+   "progress": "Only a construction start date on Property Finder",
+   "plans": "No floor plans found on the pages opened",
+   "record": "WAM (Sep 2022) and Khaleej Times (Jan 2024): handovers of phases 1 and 2 of Sharjah Sustainable City",
+   "returns": "No guaranteed return language; zero service charge for 3 years is offered"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Launched by Shurooq with SEE Holding, Jan 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/byb1xtv-shurooq-announces-sharjah-sustainable-city"
+   },
+   {
+    "claim": "1,032 homes: 944 townhouses and 88 villas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/byb1xtv-shurooq-announces-sharjah-sustainable-city"
+   },
+   {
+    "claim": "Freehold ownership for all nationalities",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/byb1xtv-shurooq-announces-sharjah-sustainable-city"
+   },
+   {
+    "claim": "Developer is Sharjah Holding (Property Finder)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/byb1xtv-shurooq-announces-sharjah-sustainable-city"
+   },
+   {
+    "claim": "Partners delivered phase 1 of the first Sharjah Sustainable City",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/hszrfikp-sharjah-sustainable-city-commences-handover-for"
+   },
+   {
+    "claim": "Phase 2 of the first city handed over from Jan 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/sharjah-sustainable-city-begins-handover-for-villas-in-phase-2"
+   },
+   {
+    "claim": "Construction started 12 Mar 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/sharjah-sustainable-city-2"
+   },
+   {
+    "claim": "Completion November 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/sharjah-sustainable-city-2"
+   },
+   {
+    "claim": "Starting price about AED 2.46M to 2.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/sharjah-sustainable-city-2"
+   },
+   {
+    "claim": "Project escrow account at an SRERD-approved bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sharjah24.ae/en/Articles/2026/02/17/gh-2"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": "Sharjah Investment and Development Authority (Shurooq), government authority; partner SEE Holding",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR townhouse",
+    "4BR townhouse",
+    "5BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2460000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold for all nationalities (stated in WAM release)",
+   "rental_programme": null,
+   "service_charge": "zero for the first three years after handover",
+   "brand": null,
+   "amenities": [
+    "2 km green spine",
+    "biodomes and farmland",
+    "solar panels",
+    "EV charging",
+    "gyms",
+    "clinics"
+   ],
+   "lat": 25.33,
+   "lng": 55.54,
+   "permit_authority": "Sharjah Real Estate Registration Department (SRERD)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Government-agency developer with delivered first phases reported by WAM",
+   "Freehold for all nationalities stated in official news agency release",
+   "No service charge for three years"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/sharjah-holding/sharjah-sustainable-city-2",
+   "https://www.sharjahsustainablecity.ae/press-releases/shurooq-announces-the-launch-of-sharjah-sustainable-city-ii/",
+   "https://www.wam.ae/en/article/byb1xtv-shurooq-announces-sharjah-sustainable-city",
+   "https://www.wam.ae/en/article/hszrfikp-sharjah-sustainable-city-commences-handover-for",
+   "https://www.khaleejtimes.com/business/property/sharjah-sustainable-city-begins-handover-for-villas-in-phase-2",
+   "https://www.sharjahsustainablecity.ae/construction-updates/",
+   "https://sharjah24.ae/en/Articles/2026/02/17/gh-2"
+  ]
+ },
+ {
+  "slug": "khalid-bin-sultan-city-beeah",
+  "name": "Khalid Bin Sultan City (Phase 1)",
+  "developer": "BEEAH Group",
+  "area": "Rodhat Al Sidr, Al Ruwaidat",
+  "country": "UAE",
+  "market": "Sharjah",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/beeah-group/khalid-bin-sultan-city",
+  "docs_url": "https://khalidbinsultancity.com/en/news/strong-buyer-demand-marks-a-milestone-debut",
+  "permit_number": null,
+  "docs_listed": [
+   "Property Finder: launch price AED 2.1M, payment plan 5/35/60, construction start 1 Jun 2026, completion Sep 2029",
+   "developer: phase 1 of 400+ townhouses and villas, completion through 2029 in stages",
+   "Zaha Hadid Architects concept masterplan, 1,500 homes"
+  ],
+  "note": "BEEAH's first real estate project, a Zaha Hadid Architects masterplanned community of 1,500 freehold homes next to its Sharjah headquarters; phase 1 (400+ villas and townhouses) launched 11 Nov 2025 from AED 1.85M with staggered completion through 2029. No escrow, registration number, progress or floor plans published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1850000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 400,
+   "payment_plan": "5% at launch, 35% during construction, 60% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No SRERD registration number published",
+   "escrow": null,
+   "progress": "Only a construction start date (1 Jun 2026) on Property Finder",
+   "plans": "Developer offered floor plans on pre-registration; none on pages opened",
+   "record": "Sharjah 24: this is BEEAH's first real estate project",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 1 of over 400 villas and townhouses launched 11 Nov 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://sharjah24.ae/en/Articles/2025/11/11/AL020"
+   },
+   {
+    "claim": "Prices from AED 1.85M (Sharjah 24) vs AED 2.1M (Property Finder)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://sharjah24.ae/en/Articles/2025/11/11/AL020"
+   },
+   {
+    "claim": "Masterplan of 1,500 homes by Zaha Hadid Architects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/sharjahs-beeah-launches-khalid-bin-sultan-city-as-freehold-destination-1.500169143"
+   },
+   {
+    "claim": "Freehold open to buyers of all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.beeahgroup.com/beeah-unveils-khalid-bin-sultan-city-the-groups-first-real-estate-development-a-landmark-in-smart-sustainable-living/"
+   },
+   {
+    "claim": "Developer has a delivered real estate track record",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://sharjah24.ae/en/Articles/2025/11/11/AL020"
+   },
+   {
+    "claim": "Construction started 1 Jun 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/beeah-group/khalid-bin-sultan-city"
+   },
+   {
+    "claim": "Phase 1 completion through 2029, staggered handovers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://khalidbinsultancity.com/en/news/strong-buyer-demand-marks-a-milestone-debut"
+   },
+   {
+    "claim": "One residential node sold out at launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://khalidbinsultancity.com/en/news/strong-buyer-demand-marks-a-milestone-debut"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/beeah-group/khalid-bin-sultan-city"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": "BEEAH Group",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": 0,
+   "listed_or_audited": null,
+   "construction_start": "2026-06",
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR townhouse",
+    "3BR townhouse",
+    "4BR townhouse",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1850000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/35/60",
+   "foreign_ownership": "freehold, stated open to all nationalities (developer)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "central park",
+    "cultural centre",
+    "mosque",
+    "mall",
+    "pools and jogging tracks",
+    "net-zero ready infrastructure"
+   ],
+   "lat": 25.31,
+   "lng": 55.53,
+   "permit_authority": "Sharjah Real Estate Registration Department (SRERD)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Launch covered by government outlet Sharjah 24 and Gulf News",
+   "Low 5% down payment",
+   "Savills appointed master agent"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/beeah-group/khalid-bin-sultan-city",
+   "https://khalidbinsultancity.com/en/news/strong-buyer-demand-marks-a-milestone-debut",
+   "https://khalidbinsultancity.com/en/news/beeah-to-launch-first-phase-sales",
+   "https://sharjah24.ae/en/Articles/2025/11/11/AL020",
+   "https://gulfnews.com/business/property/sharjahs-beeah-launches-khalid-bin-sultan-city-as-freehold-destination-1.500169143",
+   "https://www.beeahgroup.com/beeah-unveils-khalid-bin-sultan-city-the-groups-first-real-estate-development-a-landmark-in-smart-sustainable-living/"
+  ]
+ },
+ {
+  "slug": "aryam-villas-ajmal-makan",
+  "name": "Aryam Villas (The View Island)",
+  "developer": "Ajmal Makan Real Estate Development",
+  "area": "The View Island, Ajmal Makan City - Sharjah Waterfront, Al Hamriyah",
+  "country": "UAE",
+  "market": "Sharjah",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/aryam-villas",
+  "docs_url": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/the-view-island",
+  "permit_number": null,
+  "docs_listed": [
+   "Property Finder: 5BR villas about 5,414 sq ft from AED 2.24M to 2.5M",
+   "payment plan 10/30/60",
+   "construction start 3 Aug 2025, handover Jan 2028",
+   "View Island layout table with floor plan entries (4BR townhouses)"
+  ],
+  "note": "Standalone 5-bedroom villas on The View Island (266 homes, launched at ACRES Jan 2025) in Ajmal Makan's AED 25bn Sharjah Waterfront City; Property Finder lists construction from Aug 2025 and handover Jan 2028. WAM reported the developer delivered Sun Island phases 1 and 2 and Blue Bay Walk; no escrow, registration number or progress figure is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2238000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Sun Island phases 1 and 2 delivered and Blue Bay Walk phase 1 completed, phases 2 and 3 being handed over (WAM, Mar 2025)",
+   "units": 266,
+   "payment_plan": "10% at launch, 30% during construction, 60% on handover (page text also says 40/60)",
+   "price_per_m2": 4450
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No SRERD registration number published",
+   "escrow": null,
+   "progress": "Only construction start date on Property Finder",
+   "plans": "Property Finder View Island page: layout table with floor plan entries",
+   "record": "WAM 17 Mar 2025 and Zawya Jan 2024: Sun Island and Blue Bay Walk phases delivered",
+   "returns": "Investment wording only, no guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "The View Island launched at ACRES 2025 with 266 villas and townhouses",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfconstructiononline.com/Article/387294/ajmal-makan-unveils-two-luxury-projects-in-sharjah"
+   },
+   {
+    "claim": "Developer delivered Sun Island phases 1 and 2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bipm61l-sharjah%E2%80%99s-aed25-billion-coastal-development"
+   },
+   {
+    "claim": "Blue Bay Walk phases 2 and 3 finished ahead of schedule",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bipm61l-sharjah%E2%80%99s-aed25-billion-coastal-development"
+   },
+   {
+    "claim": "Master project valued at AED 25bn",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbnme.com/news/ajmal-makan-citys-dh25-billion-coastal-project-to-boost-jobs-housing-and-investment/"
+   },
+   {
+    "claim": "Construction started 3 Aug 2025 (Aryam) vs 2 Feb 2025 (View Island page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/the-view-island"
+   },
+   {
+    "claim": "Handover January 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/aryam-villas"
+   },
+   {
+    "claim": "Price from AED 2.238M (page text) vs AED 5.3M for 5BR villas (View Island page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/the-view-island"
+   },
+   {
+    "claim": "Freehold title for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/aryam-villas"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/aryam-villas"
+   },
+   {
+    "claim": "AED 677M sales at ACRES 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/waterfront-projects-fuel-dh677-million-sales-at-acres-2026-in-sharjah-1.500422071"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": "Ajmal Makan Real Estate Development",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-08",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "5BR villa"
+   ],
+   "size_min_m2": 503,
+   "size_max_m2": 503,
+   "price_min": 2238000,
+   "price_max": 5300000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/30/60",
+   "foreign_ownership": "freehold (as listed by portal)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private beach",
+    "central lagoon",
+    "floating decks",
+    "clubhouse",
+    "private pools",
+    "cycling lanes"
+   ],
+   "lat": 25.47,
+   "lng": 55.5,
+   "permit_authority": "Sharjah Real Estate Registration Department (SRERD)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Developer's earlier phases delivered per state news agency WAM",
+   "Layout table published for the island"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/aryam-villas",
+   "https://www.propertyfinder.ae/en/new-projects/ajmal-makan/the-view-island",
+   "https://www.wam.ae/en/article/bipm61l-sharjah%E2%80%99s-aed25-billion-coastal-development",
+   "https://www.zawya.com/en/press-release/companies-news/ajmal-makan-real-estate-development-announces-commencement-of-villa-handovers-in-sun-island-535025",
+   "https://www.gulfconstructiononline.com/Article/387294/ajmal-makan-unveils-two-luxury-projects-in-sharjah",
+   "https://www.cbnme.com/news/ajmal-makan-citys-dh25-billion-coastal-project-to-boost-jobs-housing-and-investment/",
+   "https://gulfnews.com/business/property/waterfront-projects-fuel-dh677-million-sales-at-acres-2026-in-sharjah-1.500422071"
+  ]
+ },
+ {
+  "slug": "sukoon-by-sanzen",
+  "name": "Sukoon by Sanzen",
+  "developer": "Sanzen Real Estate Development",
+  "area": "Al Tay East, Al Suyoh",
+  "country": "UAE",
+  "market": "Sharjah",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/sanzen/sukoon-by-sanzen",
+  "docs_url": "https://sanzen.ae/sukoon/",
+  "permit_number": null,
+  "docs_listed": [
+   "Property Finder: 3 to 7BR villa sizes and prices from AED 2.1M",
+   "payment plan 5/35/60 (Property Finder) or 40/60 (Savills)",
+   "handover Jun 2028 (Property Finder), phase 2 Q1 2029 (Savills)",
+   "WAM: works commenced Apr 2026 with PTC as phase 1 contractor"
+  ],
+  "note": "Gated lagoon community of 859 villas and townhouses in four phases; WAM reported works started in April 2026 with PTC executing phase 1 (241 units, sold out at launch). Project value is given as AED 1.5bn (WAM) or AED 2.36bn (developer release), and title is listed as freehold by Property Finder while Savills and the developer FAQ tell buyers to confirm it (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2070000,
+   "currency": "AED",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 859,
+   "payment_plan": "5% at launch, 35% during construction, 60% on handover (Property Finder); 40/60 (Savills)",
+   "price_per_m2": 9950
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No SRERD registration number published",
+   "escrow": null,
+   "progress": "WAM: works commenced Apr 2026; no figure or dated photos",
+   "plans": "Sizes listed but no floor plans on pages opened",
+   "record": "Developer FAQ names only Zen Lagoons (Dubai, off-plan) and Sukoon; no delivered project",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Works commenced Apr 2026 with PTC as phase 1 contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bzmom59-aed15-billion-sukoon-project-sharjah-launched"
+   },
+   {
+    "claim": "859 villas and townhouses across four phases",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bzmom59-aed15-billion-sukoon-project-sharjah-launched"
+   },
+   {
+    "claim": "Project value AED 2.36bn (developer) vs AED 1.5bn (WAM)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bzmom59-aed15-billion-sukoon-project-sharjah-launched"
+   },
+   {
+    "claim": "Construction started 6 Aug 2026 (Property Finder)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bzmom59-aed15-billion-sukoon-project-sharjah-launched"
+   },
+   {
+    "claim": "Freehold ownership (Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.savills.ae/new-developments/sukoon-by-sanzen.aspx"
+   },
+   {
+    "claim": "Phase 1 sold out on launch day",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/sanzen-announces-full-sell-out-of-phase-one-of-aed-2.36-bln-sukoon-residential-project-in-sharjah-370405"
+   },
+   {
+    "claim": "Handover June 2028 vs phase 2 Q1 2029",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.savills.ae/new-developments/sukoon-by-sanzen.aspx"
+   },
+   {
+    "claim": "Developer has delivered projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sanzen.ae/faq/"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sanzen.ae/sukoon/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "UAE",
+   "developer_company": "Sanzen Real Estate Development",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR townhouse",
+    "4BR townhouse",
+    "5BR villa",
+    "6BR villa",
+    "7BR villa"
+   ],
+   "size_min_m2": 208,
+   "size_max_m2": 423,
+   "price_min": 2070000,
+   "price_max": 6200000,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/35/60 or 40/60",
+   "foreign_ownership": "unclear: freehold per portal; Savills notes Sharjah generally grants foreigners usufruct up to 100 years",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "3,000 sqm crystal lagoon",
+    "wellness pods",
+    "padel court",
+    "basketball court",
+    "Zen Mall",
+    "mosque"
+   ],
+   "lat": 25.29,
+   "lng": 55.5,
+   "permit_authority": "Sharjah Real Estate Registration Department (SRERD)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Start of works and contractor reported by state news agency WAM",
+   "Full size and price table by villa type"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/sanzen/sukoon-by-sanzen",
+   "https://sanzen.ae/sukoon/",
+   "https://sanzen.ae/faq/",
+   "https://www.wam.ae/en/article/bzmom59-aed15-billion-sukoon-project-sharjah-launched",
+   "https://www.zawya.com/en/press-release/companies-news/sanzen-announces-full-sell-out-of-phase-one-of-aed-2.36-bln-sukoon-residential-project-in-sharjah-370405",
+   "https://www.savills.ae/new-developments/sukoon-by-sanzen.aspx"
+  ]
+ },
+ {
+  "slug": "dusit-thani-residences-ajman-aqaar",
+  "name": "Dusit Thani Residences Ajman",
+  "developer": "Aqaar (Ajman Properties Corporation)",
+  "area": "Al Nakhil 2, Ajman Corniche",
+  "country": "UAE",
+  "market": "Ajman",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences",
+  "docs_url": "https://dusitthaniresidencesajman.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "Property Finder: launch price AED 2.09M, 5/36/19/40 plan with 40% post-handover",
+   "328 apartments 1 to 4BR, 20 residential floors, 675,000 sq ft built area",
+   "construction start 15 Mar 2026, completion Dec 2028"
+  ],
+  "note": "First internationally branded residential tower in Ajman, 328 apartments under a Dusit International brand agreement announced Feb 2026, with completion listed for December 2028 and 40% payable after handover. Launch coverage is press releases and partner content; no permit, escrow, progress, floor plans or delivered Aqaar projects are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2090753,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 328,
+   "payment_plan": "5% at launch, 36% during construction, 19% on handover, 40% post-handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Ajman project registration number published",
+   "escrow": null,
+   "progress": "Only a construction start date on Property Finder",
+   "plans": "No floor plans on pages opened",
+   "record": "Developer site says 'most trusted developer since 2016' but names no completed project",
+   "returns": "Developer site says 'built for long-term returns' with no figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Brand agreement with Dusit International, 328 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/aqaar-and-dusit-international-launch-dusit-thani-residences-ajman-361797"
+   },
+   {
+    "claim": "First internationally branded residential project in Ajman",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khaleejtimes.com/kt-network/aqaar-and-dusit-international-launch-dusit-thani-residences-ajman"
+   },
+   {
+    "claim": "Construction started 15 Mar 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences"
+   },
+   {
+    "claim": "Completion December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences"
+   },
+   {
+    "claim": "Starting price AED 2,090,753",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences"
+   },
+   {
+    "claim": "Developer trusted since 2016 with delivered projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dusitthaniresidencesajman.com/"
+   },
+   {
+    "claim": "Freehold ownership for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences"
+   },
+   {
+    "claim": "Escrow account opened with an Ajman-accredited bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ajmanre.gov.ae/en/services/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Ajman, UAE",
+   "developer_company": "Ajman Properties Corporation (Aqaar)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2090753,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/36/19/40",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": "Dusit brand oversight; no rental figures",
+   "service_charge": null,
+   "brand": "Dusit Thani (Dusit International)",
+   "amenities": [
+    "waterfront cafe lobby",
+    "private cinema",
+    "gym",
+    "spa",
+    "kids' club",
+    "co-working"
+   ],
+   "lat": 25.42,
+   "lng": 55.44,
+   "permit_authority": "Ajman Department of Land and Real Estate Regulation",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Large post-handover share (40%) limits pre-completion exposure",
+   "International hospitality brand with oversight role"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences",
+   "https://dusitthaniresidencesajman.com/",
+   "https://www.zawya.com/en/press-release/companies-news/aqaar-and-dusit-international-launch-dusit-thani-residences-ajman-361797",
+   "https://www.khaleejtimes.com/kt-network/aqaar-and-dusit-international-launch-dusit-thani-residences-ajman",
+   "https://www.cbnme.com/news/aqaar-partners-with-dusit-international-to-launch-dusit-thani-residences-in-ajman/",
+   "https://ajmanre.gov.ae/en/services/"
+  ]
+ },
+ {
+  "slug": "tiger-downtown-ajman-orchid-towers-tiger-properties",
+  "name": "Tiger Downtown Ajman (Phase 1, Orchid Towers)",
+  "developer": "Tiger Properties (Tiger Group)",
+  "area": "Al Alia (Al Aaliya)",
+  "country": "UAE",
+  "market": "Ajman",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman",
+  "docs_url": "https://tigergroup.ae/EventsAndNewsDetails/21261",
+  "permit_number": null,
+  "docs_listed": [
+   "Property Finder: launch price AED 366K, plan 20/40/10/30, construction start 7 Apr 2026, completion Dec 2028",
+   "developer release: 76 buildings, Orchid Towers phase 1, handover Q4 2028, all nationalities",
+   "press: 70/30 plan, entry price about AED 420K"
+  ],
+  "note": "Lagoon master community of 76 buildings marketed at USD 10bn, with phase 1 Orchid Towers (six towers of furnished studios to penthouses) targeted for Q4 2028 and ownership for all nationalities. Coverage is the developer release and partner content; plot area, price and payment plan differ between sources and no permit, escrow, progress or plans are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 366000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer release: Tiger Properties has delivered more than 270 residential and commercial projects across several emirates (no list on pages opened)",
+   "units": null,
+   "payment_plan": "20% at launch, 40% during construction, 10% on handover, 30% post-handover (Property Finder); 70/30 in press",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Ajman registration number published",
+   "escrow": null,
+   "progress": "Only a construction start date on Property Finder; lagoon excavation planned in parallel",
+   "plans": "No floor plans on pages opened",
+   "record": "Developer release claims 270+ delivered projects without naming them",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "USD 10bn development value",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/business/real-estate/tiger-properties-unveils-10bln-lagoon-front-premium-city-in-ajman-369897"
+   },
+   {
+    "claim": "Site area 4,273,504 sq m vs about 5 million sq m built-up area",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.zawya.com/en/business/real-estate/tiger-properties-unveils-10bln-lagoon-front-premium-city-in-ajman-369897"
+   },
+   {
+    "claim": "Entry price AED 366K (Property Finder) vs about AED 420K (press)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.zawya.com/en/business/real-estate/tiger-properties-unveils-10bln-lagoon-front-premium-city-in-ajman-369897"
+   },
+   {
+    "claim": "Payment plan 70/30 (press) vs 20/40/10/30 (Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman"
+   },
+   {
+    "claim": "Handover Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tigergroup.ae/EventsAndNewsDetails/21261"
+   },
+   {
+    "claim": "Tiger has delivered 270+ projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.einpresswire.com/article/881534843/tiger-properties-launches-usd-10-billion-tiger-downtown-ajman-opens-bookings-for-phase-1"
+   },
+   {
+    "claim": "Ownership available to all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khaleejtimes.com/business/property/tiger-properties-launches-tiger-downtown-ajman-with-10-billion-investment"
+   },
+   {
+    "claim": "Construction started 7 Apr 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman"
+   },
+   {
+    "claim": "Escrow account opened",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1976,
+   "developer_hq": "Sharjah/Dubai, UAE",
+   "developer_company": "Tiger Properties, real estate arm of Tiger Holding (established 1976 per release)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 366000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/40/10/30 or 70/30",
+   "foreign_ownership": "freehold, stated open to all nationalities (developer)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "central lagoon",
+    "multi-purpose dome",
+    "outdoor cinema",
+    "sports courts",
+    "elevated walkways",
+    "77,000 sqm retail"
+   ],
+   "lat": 25.38,
+   "lng": 55.48,
+   "permit_authority": "Ajman Department of Land and Real Estate Regulation",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "30% of price payable after handover",
+   "Large established developer group (per its own release)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman",
+   "https://tigergroup.ae/EventsAndNewsDetails/21261",
+   "https://www.zawya.com/en/business/real-estate/tiger-properties-unveils-10bln-lagoon-front-premium-city-in-ajman-369897",
+   "https://gulfnews.com/business/property/tiger-properties-launches-tiger-downtown-ajman-with-10-billion-investment-1.500375101",
+   "https://www.khaleejtimes.com/business/property/tiger-properties-launches-tiger-downtown-ajman-with-10-billion-investment",
+   "https://www.einpresswire.com/article/881534843/tiger-properties-launches-usd-10-billion-tiger-downtown-ajman-opens-bookings-for-phase-1"
+  ]
+ },
+ {
+  "slug": "sealine-residence-al-zorah",
+  "name": "Sealine Residence",
+  "developer": "Al Zorah Development Company",
+  "area": "Al Zorah City",
+  "country": "UAE",
+  "market": "Ajman",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/al-zorah-development/sealine-residence",
+  "docs_url": "https://jre.ae/projects/sealine-residence",
+  "permit_number": null,
+  "docs_listed": [
+   "escrow no. 011000155013 (JRE, Found)",
+   "construction 8% complete (JRE, Impala, Found)",
+   "construction 15 Jul 2024 to 31 Dec 2026",
+   "brochure, floor plan and master plan documents (JRE)",
+   "two payment plans incl. 3 years post-handover (Bayut)",
+   "service charge AED 23 per sq ft"
+  ],
+  "note": "Ten-storey Al Zorah building of 1 to 3 bedroom apartments and duplexes with escrow no. 011000155013 published by agencies; build progress is reported at only 8% while handover is still listed for December 2026, which looks unlikely to hold. EMSTEEL reported supplying rebar to the project in June 2026 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1362862,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Escrow account no. 011000155013 (published by JRE and Found Group)",
+   "progress_pct": 8,
+   "progress_updates": false,
+   "developer_delivered": "Seaside Hills Residences at Al Zorah listed as Ready on Property Finder",
+   "units": null,
+   "payment_plan": "10% booking, 40% during construction, 50% on handover; or 10/40/10 plus 40% over 3 years after handover",
+   "price_per_m2": 16470
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Ajman registration number published",
+   "escrow": "JRE and Found Group: escrow account no. 011000155013; Impala: escrow registered",
+   "progress": "JRE, Impala and Found: 8% complete",
+   "plans": "JRE lists floor plan document; Property Finder unit types",
+   "record": "Property Finder lists Seaside Hills by Al Zorah as Ready",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Escrow account no. 011000155013",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://foundgroup.ae/new-launches/sealine-residence-ref-op-1592"
+   },
+   {
+    "claim": "Construction 8% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://impalarealestate.com/projects/sealine-residence/"
+   },
+   {
+    "claim": "Construction under way (rebar supplied for the project)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://news.mesteel.com/emsteel-supplies-es600-rebar-for-al-zorah-residential-developments/"
+   },
+   {
+    "claim": "Handover December 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://jre.ae/projects/sealine-residence"
+   },
+   {
+    "claim": "Number of residences (19 per JRE, 26 on offer per Impala, 5 buildings per Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://jre.ae/projects/sealine-residence"
+   },
+   {
+    "claim": "Payment plan 10/50/40 vs 10/40/50 vs 10/80/10",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.bayut.com/buildings/sealine-residence/"
+   },
+   {
+    "claim": "Starting price about AED 1.36M to 1.43M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/al-zorah-development/sealine-residence"
+   },
+   {
+    "claim": "Freehold for foreign buyers in Al Zorah",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/al-zorah-development/sealine-residence"
+   },
+   {
+    "claim": "Developer delivered Seaside Hills (Ready)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/lp/ajman"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ajman, UAE",
+   "developer_company": "Al Zorah Development Company",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-07",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR duplex",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 87,
+   "size_max_m2": 266,
+   "price_min": 1362862,
+   "price_max": 5230532,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/40/50 or 10/40/10/40 (post-handover)",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": "AED 23 per sq ft per year",
+   "brand": null,
+   "amenities": [
+    "private beach",
+    "pool",
+    "indoor and outdoor gym",
+    "kids' playground",
+    "business centre",
+    "retail"
+   ],
+   "lat": 25.43,
+   "lng": 55.48,
+   "permit_authority": "Ajman Department of Land and Real Estate Regulation",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Escrow account number published by agencies",
+   "Progress percentage published",
+   "Post-handover plan available"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/al-zorah-development/sealine-residence",
+   "https://jre.ae/projects/sealine-residence",
+   "https://impalarealestate.com/projects/sealine-residence/",
+   "https://foundgroup.ae/new-launches/sealine-residence-ref-op-1592",
+   "https://www.bayut.com/buildings/sealine-residence/",
+   "https://news.mesteel.com/emsteel-supplies-es600-rebar-for-al-zorah-residential-developments/",
+   "https://www.propertyfinder.ae/en/new-projects/lp/ajman"
+  ]
  }
 ]
