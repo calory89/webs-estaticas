@@ -1,8 +1,20 @@
 [
  {
   "d": "2026-11-01",
+  "k": "feature",
+  "t": "Every project and market readable by search engines and AI assistants at its own address",
+  "u": "/p/BALI-014/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Security review: admin, evidence check and AI endpoints hardened; open redirects closed",
+  "u": "/security/"
+ },
+ {
+  "d": "2026-11-01",
   "k": "data",
-  "t": "Accuracy check: 485 claims in 50 random projects re-checked, 10 corrected, 2.2% error rate among checkable claims",
+  "t": "Accuracy check: 485 claims in 50 random projects re-checked, 11 corrected, 2.3% error rate among checkable claims",
   "u": "/corrections/"
  },
  {
