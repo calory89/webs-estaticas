@@ -248,6 +248,7 @@ def db_stats(projects, cases):
     return {'updated': TODAY, 'projects': len(projects), 'markets': len({c['market'] for c in cases}), 'countries': len({c['country'] for c in cases}),
             'sources': len(src), 'data_points': facts, 'claims': claims, 'claims_total': sum(claims.values()),
             'deep_profiles': deep, 'checks_by_level': lv, 'checks_rated': ckn,
+            'stages': {k: sum(1 for c in cases if c.get('stage') == k) for k in ('off-plan', 'under construction')},
             'all_six_public': sum(1 for c in cases if c['max'] == 6 and c['score'] == 6 and not c['flags']),
             'with_flags': sum(1 for c in cases if c['flags'])}
 
@@ -277,7 +278,7 @@ def public_cases(projects, latest):
                     'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,
                     'read': read or bool(p.get('sources')), 'checked': _date(rec.get('checked', '') or p.get('added', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
                     'q': q[:6], 'verified': _verification(p), 'vscore': sum(1 for l in (_verification(p) or {}).values() if l in ('registry', 'independent')) if _verification(p) else None,
-                    'claims': _claims(p), 'delay': (p.get('facts') or {}).get('delay_months'), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
+                    'claims': _claims(p), 'stage': (lambda st: 'under construction' if 'construct' in st else 'off-plan' if 'off' in st or 'plan' in st else None)(str(p.get('stage') or '').lower()), 'delay': (p.get('facts') or {}).get('delay_months'), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
     res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
     res['db'] = db_stats(projects, out)
