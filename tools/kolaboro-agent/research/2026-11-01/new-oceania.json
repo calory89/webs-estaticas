@@ -2272,5 +2272,1471 @@
    "https://abr.business.gov.au/Search/ResultsActive?SearchText=Finbar%20Group%20Limited",
    "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
   ]
+ },
+ {
+  "slug": "four-seasons-private-residences-okinawa-berjaya",
+  "name": "Four Seasons Resort and Private Residences Okinawa",
+  "developer": "Berjaya Land Bhd (Berjaya Okinawa Invest TMK)",
+  "area": "Onna Village (Sunset Strip near Cape Manzamo), Okinawa",
+  "country": "Japan",
+  "market": "Okinawa",
+  "stage": "under construction",
+  "url": "https://www.edgeprop.my/content/1914319/exim-bank-malaysia-extends-us70-mil-islamic-financing-berjaya-land%E2%80%99s-four-seasons-okinawa",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "152 branded residences for sale (124 condominiums, 28 villas) beside a 127-room resort",
+   "estimated selling prices from USD 3,500 psf (condos) and USD 4,000 psf (villas)",
+   "completion July 2027, opening mid-2027",
+   "financing: USD 330m Japanese bank syndicate, USD 70m EXIM Bank Malaysia"
+  ],
+  "note": "Four Seasons-managed resort with 124 condominiums and 28 villas for sale on Okinawa's west coast, developed by Bursa-listed Berjaya Land through Berjaya Okinawa Invest TMK; main construction under way after a March 2024 groundbreaking, with completion expected July 2027 and bank financing from a Japanese syndicate and EXIM Bank Malaysia. The project was first announced in 2019 and stalled during Covid; no building confirmation, plans or deposit terms are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "News reports describe this as Berjaya Land's second Four Seasons-branded project in Japan",
+   "units": 152,
+   "payment_plan": null,
+   "price_per_m2": 37674
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building confirmation number found",
+   "escrow": "No deposit protection statement found",
+   "progress": "Dated statements: groundbreaking 4 Mar 2024, 'main construction is in progress' (Nov 2025), opening mid-2027 (Mar 2026)",
+   "plans": "No floor plans found (Four Seasons residences page could not be opened)",
+   "record": "Listed developer; second Four Seasons project in Japan per national press",
+   "returns": "No rental guarantee language found"
+  },
+  "positives": [
+   "Bank-financed by a Japanese syndicate and EXIM Bank Malaysia",
+   "Bursa Malaysia-listed parent",
+   "International hotel operator manages resort and residences",
+   "Indicative price per square foot published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking 4 March 2024, construction commenced",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://api.edgeprop.my/content/1908687/berjaya-land-breaks-ground-four-seasons-okinawa"
+   },
+   {
+    "claim": "Earlier groundbreaking on 28 Oct 2020 (2023 report) vs March 2024 groundbreaking",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.nst.com.my/amp/property/2023/11/973768/berjaya-groups-us112bil-four-seasons-okinawa-set-open-2027"
+   },
+   {
+    "claim": "Main construction in progress, completion July 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1914319/exim-bank-malaysia-extends-us70-mil-islamic-financing-berjaya-land%E2%80%99s-four-seasons-okinawa"
+   },
+   {
+    "claim": "Opening target mid-2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1915414/berjaya-property’s-ultra-luxury-gambit"
+   },
+   {
+    "claim": "USD 330m syndicated loan led by Tokyo Star Bank",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nst.com.my/amp/property/2023/11/973768/berjaya-groups-us112bil-four-seasons-okinawa-set-open-2027"
+   },
+   {
+    "claim": "USD 70m EXIM Bank Malaysia facility to Berjaya Okinawa Investment (S) Pte Ltd",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.my/content/1914319/exim-bank-malaysia-extends-us70-mil-islamic-financing-berjaya-land%E2%80%99s-four-seasons-okinawa"
+   },
+   {
+    "claim": "Project announced 2019, delayed by Covid",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nst.com.my/node/1020804/amp"
+   },
+   {
+    "claim": "124 condominiums and 28 villas for sale",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://api.edgeprop.my/content/1908687/berjaya-land-breaks-ground-four-seasons-okinawa"
+   },
+   {
+    "claim": "Estimated prices USD 3,500 psf (condos) and USD 4,000 psf (villas)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://api.edgeprop.my/content/1908687/berjaya-land-breaks-ground-four-seasons-okinawa"
+   },
+   {
+    "claim": "Building confirmation obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1914319/exim-bank-malaysia-extends-us70-mil-islamic-financing-berjaya-land%E2%80%99s-four-seasons-okinawa"
+   },
+   {
+    "claim": "Sales take-up",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.edgeprop.my/content/1915414/berjaya-property’s-ultra-luxury-gambit"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": "Berjaya Okinawa Invest TMK (developer); Berjaya Okinawa Investment (S) Pte Ltd (borrower); parent Berjaya Land Bhd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Berjaya Land Bhd listed on Bursa Malaysia",
+   "construction_start": "2024-03",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "condominium",
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Residences managed by Four Seasons; no rental figures",
+   "service_charge": null,
+   "brand": "Four Seasons",
+   "amenities": [
+    "beachfront resort",
+    "Four Seasons services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Okinawa Prefecture or designated inspection body (building confirmation)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://api.edgeprop.my/content/1908687/berjaya-land-breaks-ground-four-seasons-okinawa",
+   "https://www.nst.com.my/node/1020804/amp",
+   "https://www.edgeprop.my/content/1915414/berjaya-property’s-ultra-luxury-gambit",
+   "https://www.edgeprop.my/content/1914319/exim-bank-malaysia-extends-us70-mil-islamic-financing-berjaya-land%E2%80%99s-four-seasons-okinawa",
+   "https://www.nst.com.my/amp/property/2023/11/973768/berjaya-groups-us112bil-four-seasons-okinawa-set-open-2027"
+  ]
+ },
+ {
+  "slug": "moray-house-salvo",
+  "name": "Moray House",
+  "developer": "Salvo Property Group",
+  "area": "Southbank (42 Moray Street)",
+  "country": "Australia",
+  "market": "Melbourne",
+  "stage": "off-plan",
+  "url": "https://www.apartments.com.au/new-apartments/moray-house-42-moray-street-southbank-vic-3006",
+  "docs_url": "https://www.apartments.com.au/new-apartments/moray-house-42-moray-street-southbank-vic-3006",
+  "permit_number": "PA1600136 (amendment PA1600136-3 granted 17 Dec 2024; PA1600136-6 lodged 14 Aug 2026)",
+  "docs_listed": [
+   "56-storey tower, 305 residences plus two double-storey penthouses",
+   "estimated completion mid-2027",
+   "status tracker shows under construction",
+   "amenities: indoor pool, spa, sauna, co-working, private dining",
+   "Victorian statutory warranty mentioned"
+  ],
+  "note": "56-storey, 305-apartment Southbank tower by Salvo, reported 93% sold before construction; demolition began December 2024 with construction scheduled for January 2025. Victoria's ministerial permits register shows the permit PA1600136 amended in December 2024 and a new application lodged on 14 Aug 2026 to allow the development to be built in stages; completion guidance has moved from late 2026 to mid-2027 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": "PA1600136",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Close to 2,000 apartments and offices across six Southbank projects over a decade (The Urban Developer, quoting developer)",
+   "units": 305,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer and portal give no permit number; PA1600136 and its amendments found on the Victorian ministerial permits register",
+   "escrow": "No deposit holding statement published",
+   "progress": "Portal tracker says under construction but no dated updates; last independent report is demolition in Dec 2024",
+   "plans": "No floor plans published",
+   "record": "About 2,000 apartments across six Southbank projects stated in trade press",
+   "returns": "No yields or guarantees advertised"
+  },
+  "positives": [
+   "Ministerial planning permit and its amendments are publicly searchable",
+   "High presales (93%) reported before construction",
+   "Developer has a Southbank delivery history"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permit PA1600136 amendment granted 17 Dec 2024 (applicant SPG Moray St Landowner Pty Ltd)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/358e70a2-dc22-ef11-840a-002248967c4c"
+   },
+   {
+    "claim": "Application lodged 14 Aug 2026 to allow the approved development to be carried out in stages (no decision listed)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/cf145a3d-a197-f111-8075-7ced8db17ffb"
+   },
+   {
+    "claim": "Project under construction (portal tracker)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/demolition-salvo-southbank-tower-begins-victoria"
+   },
+   {
+    "claim": "Demolition under way December 2024, construction to start January 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/demolition-salvo-southbank-tower-begins-victoria"
+   },
+   {
+    "claim": "93% of apartments sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/demolition-salvo-southbank-tower-begins-victoria"
+   },
+   {
+    "claim": "Completion late 2026 (May 2024) vs early 2027 (Dec 2024) vs mid-2027 (portal)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://theurbandeveloper.com/articles/salvo-properties-southbank-residential-skyscraper-melbourne-demolition"
+   },
+   {
+    "claim": "Developer delivered about 2,000 apartments across six Southbank projects",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://theurbandeveloper.com/articles/salvo-properties-southbank-residential-skyscraper-melbourne-demolition"
+   },
+   {
+    "claim": "Salvo Property Pty Ltd is a registered applicant entity",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/cf145a3d-a197-f111-8075-7ced8db17ffb"
+   },
+   {
+    "claim": "305 apartments plus two penthouses, 56 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theurbandeveloper.com/articles/salvo-properties-southbank-residential-skyscraper-melbourne-demolition"
+   },
+   {
+    "claim": "Builder appointed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/moray-house-42-moray-street-southbank-vic-3006"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2004,
+   "developer_hq": "Carlton, Melbourne, Australia",
+   "developer_company": "Salvo Property Pty Ltd (permit applicant); SPG Moray St Landowner Pty Ltd (landowner entity)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": 2000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": "2026-Q4",
+   "delay_months": 6,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "spa",
+    "sauna",
+    "co-working",
+    "private dining suites"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Victorian Minister for Planning (Department of Transport and Planning)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/moray-house-42-moray-street-southbank-vic-3006",
+   "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/cf145a3d-a197-f111-8075-7ced8db17ffb",
+   "https://www.planning.vic.gov.au/planning-approvals/ministerial-permits-register/ministerial-permits/358e70a2-dc22-ef11-840a-002248967c4c",
+   "https://theurbandeveloper.com/articles/salvo-properties-southbank-residential-skyscraper-melbourne-demolition",
+   "https://www.theurbandeveloper.com/articles/demolition-salvo-southbank-tower-begins-victoria",
+   "https://www.buildaustralia.com.au/projects/developer-salvo-degins-demolition-for-56-storey-southbank-tower/",
+   "https://direct.businessnewsaustralia.com/articles/melbourne-developer-salvo-gears-up-for-construction-of--220m-moray-house-at-southbank.html",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "the-bryson-of-chatswood-goldfields",
+  "name": "The Bryson of Chatswood",
+  "developer": "Goldfields",
+  "area": "Chatswood (871-877 Pacific Highway)",
+  "country": "Australia",
+  "market": "Sydney",
+  "stage": "under construction",
+  "url": "https://www.apartments.com.au/new-apartments/the-bryson-of-chatswood-871-877-pacific-highway-chatswood",
+  "docs_url": "https://www.apartments.com.au/new-apartments/the-bryson-of-chatswood-871-877-pacific-highway-chatswood",
+  "permit_number": "DA-2022/161 (Sydney North Planning Panel PPSSNH-307)",
+  "docs_listed": [
+   "1BR to 3BR, sky homes and penthouses",
+   "27 floors, 69-70 residences",
+   "builder ULTRA Building Co, architect MAKE",
+   "portal estimated completion late 2031",
+   "brochure and floor plans behind enquiry form",
+   "also listed on a Japanese-language international portal"
+  ],
+  "note": "27-storey mixed-use tower with about 70 apartments near Chatswood station, approved by the Sydney North Planning Panel on 8 Mar 2023 (DA-2022/161) and under construction by ULTRA Building Co since early 2025. Completion was reported as Q4 2026 at builder appointment but the current portal listing says late 2031; prices, plans and deposit handling are not published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "DA-2022/161",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 70,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Portal shows 'Plans approved' without a number; DA-2022/161 / PPSSNH-307 approved 8 Mar 2023 on NSW Planning Portal",
+   "escrow": "No deposit holding statement",
+   "progress": "Status 'under construction' only; builder page gives no milestones",
+   "plans": "Floor plans only via brochure request",
+   "record": "Developer names projects underway (88 Robertson Street Brisbane, The Raleigh Melbourne) but no completed projects",
+   "returns": "No yields or guarantees"
+  },
+  "positives": [
+   "Planning panel approval publicly verifiable with DA and panel numbers",
+   "Established builder with 4-star iCIRT rating named",
+   "Project-specific developer entities registered"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development approved (DA-2022/161, PPSSNH-307) on 8 Mar 2023 for 27 storeys and 76 apartments",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/planning-panel/871-877-pacific-highway-chatswood-da-2022161-pan-213421"
+   },
+   {
+    "claim": "Under construction by ULTRA Building Co",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ultrabuilding.co/?p=3205"
+   },
+   {
+    "claim": "Construction began early 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/goldfields-ultra-building-co-chatswood-skytower-construction-contract-announced"
+   },
+   {
+    "claim": "Completion Q4 2026 (Feb 2025) vs late 2031 (current portal)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/goldfields-ultra-building-co-chatswood-skytower-construction-contract-announced"
+   },
+   {
+    "claim": "Residences: 69 vs 70 (portal/news) vs 76 (approval)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/planning-panel/871-877-pacific-highway-chatswood-da-2022161-pan-213421"
+   },
+   {
+    "claim": "Storeys: 27 (approval, builder) vs 24 (earlier news)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/planning-panel/871-877-pacific-highway-chatswood-da-2022161-pan-213421"
+   },
+   {
+    "claim": "Developer entity Goldfields Chatswood No. 1 Pty Ltd registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Goldfields%20Chatswood"
+   },
+   {
+    "claim": "Developer has a solid delivery track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/goldfields-appoints-ultra-building-co-to-deliver-the-bryson-chatswood-apartment-development"
+   },
+   {
+    "claim": "Marketed to overseas buyers on international portal",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://global.century21uk.com/ja/p/chatswood-nsw-2067-australia--rl-131028416"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Melbourne (VIC 3141), Australia",
+   "developer_company": "Goldfields Chatswood No. 1 Pty Ltd, ABN 44 640 751 220 (and No. 2 entities)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-02",
+   "handover_promised": null,
+   "original_handover": "2026-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "sky home",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "reading lounges",
+    "outdoor terrace with BBQ",
+    "fire pit lounge",
+    "ground-floor retail"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Sydney North Planning Panel / Willoughby City Council",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/the-bryson-of-chatswood-871-877-pacific-highway-chatswood",
+   "https://www.apartments.com.au/news/nsw/goldfields-appoints-ultra-building-co-to-deliver-the-bryson-chatswood-apartment-development",
+   "https://www.theurbandeveloper.com/articles/goldfields-ultra-building-co-chatswood-skytower-construction-contract-announced",
+   "https://www.planningportal.nsw.gov.au/planning-panel/871-877-pacific-highway-chatswood-da-2022161-pan-213421",
+   "https://ultrabuilding.co/?p=3205",
+   "https://global.century21uk.com/ja/p/chatswood-nsw-2067-australia--rl-131028416",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Goldfields%20Chatswood",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "teneriffe-banks-kokoda-property",
+  "name": "Teneriffe Banks",
+  "developer": "Kokoda Property Group",
+  "area": "Teneriffe (17-27 Skyring Terrace)",
+  "country": "Australia",
+  "market": "Brisbane",
+  "stage": "off-plan",
+  "url": "https://www.apartments.com.au/new-apartments/teneriffe-banks-17-27-skyring-terrace-teneriffe-qld-4005",
+  "docs_url": "https://www.apartments.com.au/new-apartments/teneriffe-banks-17-27-skyring-terrace-teneriffe-qld-4005",
+  "permit_number": null,
+  "docs_listed": [
+   "205 residences in four mid-rise buildings plus Kimpton hotel",
+   "status: pre-construction, selling now",
+   "estimated completion late 2028",
+   "builder Versatile Construction",
+   "prices on request; trade press: from AUD 1.9m",
+   "brochure with floor plans on request"
+  ],
+  "note": "AUD 1.5bn riverfront precinct on a former submarine base site with about 205-213 apartments and Australia's first Kimpton hotel, approved by Brisbane City Council in July 2024 and reported to sell AUD 285m on its first day. Versatile Construction was appointed with work expected from December 2025 and staged delivery from 2028, but the listing still shows pre-construction and no approval number, plans or deposit terms (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1900000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Malvern Collective, Melbourne (205 apartments, AUD 450m) described as completed in The Urban Developer",
+   "units": 205,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listing tracker shows 'Plans approved'; Brisbane City Council approval in July 2024 reported by The Urban Developer, no application number",
+   "escrow": "No deposit holding statement",
+   "progress": "Tracker at pre-construction; no dated updates",
+   "plans": "Floor plans only via brochure request",
+   "record": "Malvern Collective (205 apartments) named as completed",
+   "returns": "No yields or guarantees"
+  },
+  "positives": [
+   "Council approval reported independently",
+   "Developer has delivered a comparable-size precinct in Melbourne",
+   "Third-party builder appointed"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Approved by Brisbane City Council (week of 3 July 2024) for five towers up to 18 storeys, 213 apartments, 163 hotel rooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-gains-approval-skyring-teneriffe-transformation"
+   },
+   {
+    "claim": "Four buildings and 205 residences (listing) vs five towers and 213 apartments (approval)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-gains-approval-skyring-teneriffe-transformation"
+   },
+   {
+    "claim": "Site settled July 2025 for AUD 100m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-property-teneriffe-banks-brisbane-builder-versatile-construction"
+   },
+   {
+    "claim": "Builder Versatile Construction appointed, construction expected December 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-property-teneriffe-banks-brisbane-builder-versatile-construction"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/teneriffe-banks-17-27-skyring-terrace-teneriffe-qld-4005"
+   },
+   {
+    "claim": "AUD 285m sales on first day (2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-property-teneriffe-banks-brisbane-builder-versatile-construction"
+   },
+   {
+    "claim": "Prices from AUD 1.9m",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-property-teneriffe-banks-brisbane-builder-versatile-construction"
+   },
+   {
+    "claim": "Completion: staged from 2028 / late 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/teneriffe-banks-17-27-skyring-terrace-teneriffe-qld-4005"
+   },
+   {
+    "claim": "Developer delivered Malvern Collective (205 apartments)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/kokoda-brisbane-teneriffe-banks-malvern-collective-expansion"
+   },
+   {
+    "claim": "Developer entities registered (Kokoda Property Group (Brisbane) Pty Ltd)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Kokoda%20Property"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Melbourne (VIC 3121), Australia",
+   "developer_company": "Kokoda Property Group (Brisbane) Pty Ltd, ABN 60 609 366 734; Kokoda Property Holdings Pty Ltd, ABN 24 662 858 120",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1900000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Kimpton (hotel component)",
+   "amenities": [
+    "riverfront dining and retail",
+    "wellness amenities",
+    "hotel"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Brisbane City Council (Planning Act 2016, Queensland)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/teneriffe-banks-17-27-skyring-terrace-teneriffe-qld-4005",
+   "https://www.theurbandeveloper.com/articles/kokoda-property-teneriffe-banks-brisbane-builder-versatile-construction",
+   "https://www.theurbandeveloper.com/articles/kokoda-gains-approval-skyring-teneriffe-transformation",
+   "https://www.theurbandeveloper.com/articles/kokoda-brisbane-teneriffe-banks-malvern-collective-expansion",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Kokoda%20Property",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "peninsula-rise-kelvin-heights",
+  "name": "Peninsula Rise",
+  "developer": "Not named (local Queenstown developer; builder Dent Construction)",
+  "area": "Kelvin Heights, Queenstown (50 Peninsula Road)",
+  "country": "New Zealand",
+  "market": "New Zealand",
+  "stage": "under construction",
+  "url": "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights",
+  "docs_url": "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights",
+  "permit_number": null,
+  "docs_listed": [
+   "unit-by-unit price and availability table (13 homes)",
+   "154 m2 floor area, 170 m2 land per unit",
+   "visitor accommodation consent per unit (180 or 365 days)",
+   "completion Q2 2027",
+   "5% deposit option for early buyers"
+  ],
+  "note": "Boutique development of 13 three-bedroom duplexes and stand-alone homes in Kelvin Heights, Queenstown, sold off-plan through Colliers with prices from NZD 1.89m and completion expected Q2 2027. The listing says resource consent is issued and construction well under way, but the developer is not named and the visitor accommodation consent terms and prices differ from earlier newspaper coverage (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1890000,
+   "currency": "NZD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "ODT says the developer is behind two central Queenstown townhouse developments (not named)",
+   "units": 13,
+   "payment_plan": "5% deposit option for a limited number of early buyers",
+   "price_per_m2": 12273
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listing says resource consent issued; no RM number published",
+   "escrow": "5% deposit option mentioned, no trust account or deposit holding statement",
+   "progress": "'Well underway' with no dated photos or figures",
+   "plans": "Renders only, no floor plans",
+   "record": "Developer not named; ODT mentions two unnamed prior townhouse projects",
+   "returns": "Visitor accommodation consent allows letting income but no figures or guarantees"
+  },
+  "positives": [
+   "Transparent unit-by-unit price and availability table",
+   "Named builder (Dent Construction)",
+   "Visitor accommodation consent terms stated per unit"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Resource consent issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights"
+   },
+   {
+    "claim": "Construction well under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights"
+   },
+   {
+    "claim": "Builder is Dent Construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.odt.co.nz/node/3625873"
+   },
+   {
+    "claim": "Completion Q2 2027",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.odt.co.nz/node/3625873"
+   },
+   {
+    "claim": "Most units have 365-day visitor accommodation consent (listing) vs only duplexes with 180-day consent (ODT)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.odt.co.nz/node/3625873"
+   },
+   {
+    "claim": "Duplex prices NZD 1.89m-2.1m (listing) vs NZD 2.495m (ODT)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.odt.co.nz/node/3625873"
+   },
+   {
+    "claim": "Five sold and eight available (table) vs two sold, six remain (description)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights"
+   },
+   {
+    "claim": "13 units: five stand-alone homes and eight duplexes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.odt.co.nz/node/3625873"
+   },
+   {
+    "claim": "Developer identity and company registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.odt.co.nz/node/3625873"
+   },
+   {
+    "claim": "Deposit held in solicitor trust account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Queenstown, New Zealand",
+   "developer_company": null,
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR duplex",
+    "3BR stand-alone home"
+   ],
+   "size_min_m2": 154,
+   "size_max_m2": 154,
+   "price_min": 1890000,
+   "price_max": 2595000,
+   "currency": "NZD",
+   "deposit_pct": 5,
+   "payment_plan": "5% deposit option for limited early buyers",
+   "foreign_ownership": "Not stated on listing (most non-resident foreigners cannot buy NZ residential land without an exemption)",
+   "rental_programme": "Visitor accommodation consent (180 or 365 days) per unit; no operator or figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "garage with EV charging",
+    "off-street parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Queenstown Lakes District Council (resource and building consents)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.realestate.co.nz/43026946/residential/sale/50-peninsula-road-peninsula-rise-kelvin-heights",
+   "https://www.odt.co.nz/node/3625873",
+   "https://www.nzsothebysrealty.com/property/listing/QBS13831/50-peninsula-road-kelvin-heights"
+  ]
+ },
+ {
+  "slug": "city-tower-akabane-sumitomo-realty",
+  "name": "City Tower Akabane",
+  "developer": "Sumitomo Realty & Development",
+  "area": "Akabane 2-chome, Kita-ku, Tokyo",
+  "country": "Japan",
+  "market": "Tokyo",
+  "stage": "off-plan",
+  "url": "https://www.akiyajapan.com/property/53616c7465645f5fc7d5e5f03728076b8781daf82ccb660782d33c8df96608fc",
+  "docs_url": "https://sumaity.com/mansion_new/prop_13247/",
+  "permit_number": "ERI-25039598 (20 Feb 2026)",
+  "docs_listed": [
+   "building confirmation number and date",
+   "302 units, 26 storeys, seismic-isolated RC tower",
+   "unit sizes 39.46 to 121.61 m2, 1LDK to 3LDK",
+   "completion late June 2029, handover late October 2029",
+   "builder Penta-Ocean Construction",
+   "land ownership (shoyuken) co-owned",
+   "sales start expected late November 2026",
+   "English listing for overseas buyers"
+  ],
+  "note": "302-unit, 26-storey seismic-isolated tower near Akabane station by Sumitomo Realty, built by Penta-Ocean, with building confirmation ERI-25039598 (Feb 2026) and completion due June 2029; marketed in English to overseas buyers ahead of a sales launch expected late November 2026. Prices, fees, floor plans and deposit protection are not yet published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "JPY",
+   "title": "freehold (land co-ownership, unit strata ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": true,
+   "permit_number": "ERI-25039598",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 302,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Building confirmation ERI-25039598 dated 20 Feb 2026 on three separate listings",
+   "escrow": "No statement of deposit protection measures (prices not yet set)",
+   "progress": "No construction updates; pre-sale announcement only",
+   "plans": "Layout range and sizes only, no plans",
+   "record": "No track record stated on listings",
+   "returns": "No rental or yield claims"
+  },
+  "positives": [
+   "Building confirmation number identical across three independent portals",
+   "Seller and builder named",
+   "Land held as ownership (not leasehold)",
+   "Seismic isolation structure stated"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building confirmation ERI-25039598 issued 20 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homes.co.jp/archive/c-35258/"
+   },
+   {
+    "claim": "Seller Sumitomo Realty, builder Penta-Ocean Construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13247/"
+   },
+   {
+    "claim": "302 units, 287 in current sales phase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13247/"
+   },
+   {
+    "claim": "Completion late June 2029, handover late October 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13247/"
+   },
+   {
+    "claim": "Land rights: ownership (shoyuken)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homes.co.jp/archive/c-35258/"
+   },
+   {
+    "claim": "Sales start late November 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13247/"
+   },
+   {
+    "claim": "Price undetermined",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.homes.co.jp/archive/c-35258/"
+   },
+   {
+    "claim": "Neighbouring 32-storey Proud Tower Akabane under construction, due Nov 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5fc7d5e5f03728076b8781daf82ccb660782d33c8df96608fc"
+   },
+   {
+    "claim": "Deposit protection measures",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.akiyajapan.com/property/53616c7465645f5fc7d5e5f03728076b8781daf82ccb660782d33c8df96608fc"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Tokyo, Japan",
+   "developer_company": "Sumitomo Realty & Development Co., Ltd.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1LDK",
+    "2LDK",
+    "3LDK"
+   ],
+   "size_min_m2": 39.46,
+   "size_max_m2": 121.61,
+   "price_min": null,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold unit ownership with land co-ownership; Japan has no nationality restriction on condominium purchase (not stated on listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "City Tower",
+   "amenities": [
+    "seismic isolation"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Designated confirmation and inspection body (ERI) under the Building Standards Act",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.akiyajapan.com/property/53616c7465645f5fc7d5e5f03728076b8781daf82ccb660782d33c8df96608fc",
+   "https://www.homes.co.jp/archive/c-35258/",
+   "https://sumaity.com/mansion_new/prop_13247/"
+  ]
+ },
+ {
+  "slug": "south-beach-surfers-paradise-andrews",
+  "name": "South Beach",
+  "developer": "Andrews (Andrews Projects / Andrews Gold Coast)",
+  "area": "Surfers Paradise (3006-3016 Surfers Paradise Boulevard)",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "stage": "off-plan",
+  "url": "https://www.apartments.com.au/developers/andrews",
+  "docs_url": "https://www.apartments.com.au/developers/andrews",
+  "permit_number": null,
+  "docs_listed": [
+   "394 residences in two 37-storey towers over a six-storey podium",
+   "prices from AUD 1.09m; 3BR to AUD 2.395m",
+   "completion expected late 2028",
+   "builder: in-house A Construct",
+   "wellness podium about 5,500 m2 (Bates Smart design)"
+  ],
+  "note": "Twin 37-storey towers with 394 apartments on a 5,700 m2 corner site, by family developer Andrews with its in-house builder A Construct; ground broken in March 2026, completion expected late 2028, and marketed to New Zealand buyers with further REMAX events planned in New Caledonia, Vietnam, Korea and Taiwan. Only the north tower (197 units) is being sold; no DA number, plans or deposit terms are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1090000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Allegra tower Broadbeach (2017), three more Broadbeach towers, a Main Beach tower and a 230-unit Robina tower (OneRoof); Cascade Robina (229 residences) and Encore Broadbeach marked complete on portal",
+   "units": 394,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Architect page says 'South Beach approved' without authority, date or number; developer and portal give no DA number",
+   "escrow": "No deposit holding statement",
+   "progress": "Dated update: ground broken (25 Mar 2026), status under construction",
+   "plans": "No floor plans published",
+   "record": "Named completed towers in Broadbeach, Main Beach and Robina",
+   "returns": "No yields or guarantees"
+  },
+  "positives": [
+   "Developer has a 20-year Gold Coast delivery history with named towers",
+   "Prices published by bedroom type",
+   "Developer is retaining the second tower rather than selling it"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.batessmart.com/news-ideas/south-beach-approved"
+   },
+   {
+    "claim": "Ground broken March 2026, completion late 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/andrews-breaks-ground-on-south-beach-wellness-led-coastal-address-in-surfers-paradise"
+   },
+   {
+    "claim": "North tower 197 units with 70 sold; south tower retained by family",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/kiwi-chippies-billion-dollar-gold-coast-towers-ive-never-had-a-problem-making-money-49197"
+   },
+   {
+    "claim": "Marketed to New Zealand buyers, events planned in New Caledonia, Vietnam, Korea, Taiwan",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/kiwi-chippies-billion-dollar-gold-coast-towers-ive-never-had-a-problem-making-money-49197"
+   },
+   {
+    "claim": "Developer delivered Allegra (2017) and other Broadbeach, Main Beach and Robina towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/kiwi-chippies-billion-dollar-gold-coast-towers-ive-never-had-a-problem-making-money-49197"
+   },
+   {
+    "claim": "Project value AUD 700m (2024) vs AUD 900m vs AUD 1bn (2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/kiwi-chippies-billion-dollar-gold-coast-towers-ive-never-had-a-problem-making-money-49197"
+   },
+   {
+    "claim": "Prior approval on site for 1,100 apartments in 104 and 73-level towers, replaced by lower-density design",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/first-look-exclusive-andrews-projects-reveal-400-apartment-two-tower-development-in-surfers-paradise"
+   },
+   {
+    "claim": "Developer company registration (Andrews entity)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Andrews%20Gold%20Coast"
+   },
+   {
+    "claim": "Prices from AUD 1.09m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/developers/andrews"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2003,
+   "developer_hq": "Gold Coast, Australia",
+   "developer_company": null,
+   "developer_projects_delivered": 7,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1090000,
+   "price_max": 3400000,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "wellness podium about 5,500 m2"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (Planning Act 2016, Queensland)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "sources": [
+   "https://www.apartments.com.au/developers/andrews",
+   "https://www.apartments.com.au/news/qld/andrews-breaks-ground-on-south-beach-wellness-led-coastal-address-in-surfers-paradise",
+   "https://www.apartments.com.au/news/qld/first-look-exclusive-andrews-projects-reveal-400-apartment-two-tower-development-in-surfers-paradise",
+   "https://www.batessmart.com/news-ideas/south-beach-approved",
+   "https://www.oneroof.co.nz/news/kiwi-chippies-billion-dollar-gold-coast-towers-ive-never-had-a-problem-making-money-49197",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Andrews%20Gold%20Coast",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "incontro-subiaco-cedar-woods",
+  "name": "Incontro Apartments",
+  "developer": "Cedar Woods Properties Limited",
+  "area": "Subiaco (133 Salvado Road)",
+  "country": "Australia",
+  "market": "Perth",
+  "stage": "under construction",
+  "url": "https://www.cedarwoods.com.au/resources/news/cedar-woods-appoints-builder-for-110-apartments-in",
+  "docs_url": "https://blog.cedarwoods.com.au/incontro-subiaco/cedar-woods-commences-construction-on-incontro-apartments-in-subiaco",
+  "permit_number": null,
+  "docs_listed": [
+   "110 apartments, 1BR to 3BR",
+   "prices from AUD 624,000 (later listing from AUD 799,000)",
+   "construction started July 2025 with EMCO Building",
+   "completion mid-2027",
+   "sales updates (50%, 60%, nearly 70% sold)",
+   "sales office address and hours"
+  ],
+  "note": "110-apartment building in Cedar Woods' Subiaco community by the ASX-listed developer, under construction with EMCO Building since a July 2025 sod turning and due mid-2027; reported nearly 70% sold, with a 230-plus apartment expansion (Verde) approved by the Statutory Planning Committee in April 2026. No approval number, floor plans or deposit handling are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 624000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Cedar Woods describes masterplanned communities such as Williams Landing (VIC) and Glenside (SA) and eight apartment buildings under construction across four states (apartments.com.au)",
+   "units": 110,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No development approval reference for Incontro found on developer pages",
+   "escrow": "No deposit holding statement",
+   "progress": "Dated updates: builder appointed and sod turned July 2025; sales milestones published",
+   "plans": "Images only, no floor plans",
+   "record": "ASX-listed developer with named communities and an active apartment pipeline",
+   "returns": "No yields or guarantees; marketing cites WA off-the-plan stamp duty rebate"
+  },
+  "positives": [
+   "ASX-listed developer (CWP) with registered operating company",
+   "Named third-party builder (EMCO Building)",
+   "WA Government infrastructure fund allocation reported",
+   "Entry prices published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction commenced July 2025 with EMCO Building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.cedarwoods.com.au/incontro-subiaco/cedar-woods-commences-construction-on-incontro-apartments-in-subiaco"
+   },
+   {
+    "claim": "Completion mid-2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cedarwoods.com.au/resources/news/cedar-woods-appoints-builder-for-110-apartments-in"
+   },
+   {
+    "claim": "Incontro still under construction (April 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessnews.com.au/article/Cedar-Woods-150m-Verde-Subiaco-project-approved"
+   },
+   {
+    "claim": "Expansion (Verde) approved by Statutory Planning Committee, April 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessnews.com.au/article/Cedar-Woods-150m-Verde-Subiaco-project-approved"
+   },
+   {
+    "claim": "Expansion of 230-plus apartments lodged November 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessnews.com.au/article/Cedar-Woods-submits-150m-expansion-plan-for-Incontro-in-Subiaco"
+   },
+   {
+    "claim": "Developer company Cedar Woods Properties Limited registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Cedar%20Woods%20Properties"
+   },
+   {
+    "claim": "Up to AUD 1.1m from WA Infrastructure Development Fund",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.cedarwoods.com.au/incontro-subiaco/cedar-woods-commences-construction-on-incontro-apartments-in-subiaco"
+   },
+   {
+    "claim": "Prices from AUD 624,000 vs from AUD 799,000 (listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/wa/incontro-apartments-snapped-up-as-cedar-woods-announces-builder"
+   },
+   {
+    "claim": "Nearly 70% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/expert-insights/cedar-woods-ramps-up-apartment-development-amid-australia-s-deepening-housing-shortfall"
+   },
+   {
+    "claim": "Development approval for the 110-apartment building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cedarwoods.com.au/resources/news/cedar-woods-appoints-builder-for-110-apartments-in"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "West Perth (WA 6005), Australia",
+   "developer_company": "Cedar Woods Properties Limited, ABN 47 009 259 081",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on ASX (CWP)",
+   "construction_start": "2025-07",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 624000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "WA Statutory Planning Committee / Development Assessment Panel / City of Subiaco",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "sources": [
+   "https://www.cedarwoods.com.au/resources/news/cedar-woods-appoints-builder-for-110-apartments-in",
+   "https://blog.cedarwoods.com.au/incontro-subiaco/cedar-woods-commences-construction-on-incontro-apartments-in-subiaco",
+   "https://www.apartments.com.au/news/wa/incontro-apartments-snapped-up-as-cedar-woods-announces-builder",
+   "https://www.apartments.com.au/expert-insights/cedar-woods-ramps-up-apartment-development-amid-australia-s-deepening-housing-shortfall",
+   "https://www.businessnews.com.au/article/Cedar-Woods-150m-Verde-Subiaco-project-approved",
+   "https://www.businessnews.com.au/article/Cedar-Woods-submits-150m-expansion-plan-for-Incontro-in-Subiaco",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Cedar%20Woods%20Properties",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
  }
 ]
