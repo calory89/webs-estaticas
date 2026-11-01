@@ -1,0 +1,2428 @@
+[
+ {
+  "slug": "tw-fuente-lirios-benahavis",
+  "name": "Fuente Lirios",
+  "developer": "Taylor Wimpey España",
+  "area": "Benahavis (Marbella)",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://taylorwimpeyspain.com/es/casa/fuente-lirios-benahavis-marbella-malaga/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/fuente-lirios-benahavis-marbella-malaga/",
+  "permit_number": null,
+  "docs_listed": [
+   "licence statement: \"El proyecto cuenta con licencia de obras\" (no number)",
+   "construction start planned May 2025, delivery April 2027",
+   "per-unit delivery dates 15-02-2027 and 20-04-2027",
+   "construction progress video 09/2026",
+   "floor plans per unit type",
+   "memoria de calidades PDF (Jul 2025)",
+   "energy certificate PDF (rating A)",
+   "brochure (online catalogue)",
+   "GPS 36.522609, -5.044695",
+   "buyer guide: payment guarantee policy"
+  ],
+  "note": "One building of 28 two- and three-bed apartments in central Benahavis, from 395,000 EUR ex-VAT (penthouses to 790,000 EUR); page states it has a building licence (no number), works planned from May 2025 and delivery in April 2027, with a 09/2026 progress video. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 395000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Buyer guide: all instalments paid during construction covered by a bank guarantee or insurance policy (depending on development) per the Building Regulations Law; original given to buyer. Not project-specific; insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k",
+   "units": 28,
+   "payment_plan": null,
+   "price_per_m2": 4538
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project page: 'El proyecto cuenta con licencia de obras' but no licence number or date; no town hall record found",
+   "escrow": "Buyer guide step 2: policy covering all instalment payments during construction (bank guarantee or insurance, original handed to buyer, returned at deeds). Generic, not project-specific",
+   "progress": "Video \"avance de obras - 09/2026\" on the project page; no percentage",
+   "plans": "Per-unit 'Planos' pop-ups with built and terrace m2, orientation, price and delivery date",
+   "record": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k. Project-level counts not given",
+   "returns": "No guaranteed return, yield or buy-back language on the project page"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Taylor Wimpey de Espana S.A. Unipersonal (NIF A-07248206), part of Taylor Wimpey plc",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "All instalments paid during construction are covered by a bank guarantee or insurance policy under the Building Regulations Law (LOE)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "10-year structural defects insurance taken out on completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "Project has a building licence (licencia de obras)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/fuente-lirios-benahavis-marbella-malaga/"
+   },
+   {
+    "claim": "28 apartments in one building",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-11m-fuente-lirios-28-aptos-benahavis/"
+   },
+   {
+    "claim": "Delivery April 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-11m-fuente-lirios-28-aptos-benahavis/"
+   },
+   {
+    "claim": "Construction of phase 1 to start May 2025; progress video dated 09/2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/fuente-lirios-benahavis-marbella-malaga/"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/wp-content/uploads/2025/04/Fuente-LIrios-Certificado-Energetico-min.pdf"
+   },
+   {
+    "claim": "Prices from 395,000 EUR ex-VAT (press at launch quoted 1-bed from 320,000 EUR + VAT)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/taylor-wimpey-11m-fuente-lirios-28-aptos-benahavis/"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/fuente-lirios-benahavis-marbella-malaga/"
+   },
+   {
+    "claim": "Investment of EUR 11 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-11m-fuente-lirios-28-aptos-benahavis/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "TAYLOR WIMPEY DE ESPANA S.A. UNIPERSONAL, NIF A-07248206 (aviso legal), subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange (TW.); Spain reported as a segment in audited group results",
+   "construction_start": "2025-05",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "3BR apartment",
+    "2BR penthouse",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 87.05,
+   "size_max_m2": 107.45,
+   "price_min": 395000,
+   "price_max": 790000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on EU or non-EU buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "underground parking",
+    "communal pool on solarium",
+    "lift",
+    "aerothermal heating",
+    "air conditioning",
+    "EV charging pre-installation"
+   ],
+   "lat": 36.523,
+   "lng": -5.045,
+   "permit_authority": "Ayuntamiento de Benahavis (licencia de obras)",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/fuente-lirios-benahavis-es/"
+  },
+  "positives": [
+   "Direct sale by a subsidiary of a London-listed homebuilder whose audited results report Spanish completions (494 homes in 2025)",
+   "Buyer guide states every construction-stage instalment is covered by a bank guarantee or insurance policy",
+   "Per-unit delivery dates, prices and floor plans published",
+   "Dated construction progress videos on the project page",
+   "Energy performance certificate published for download",
+   "Explicit licence statement plus construction start and delivery month published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/fuente-lirios-benahavis-marbella-malaga/",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165",
+   "https://taylorwimpeyspain.com/es/aviso-legal/",
+   "https://brainsre.news/taylor-wimpey-11m-fuente-lirios-28-aptos-benahavis/"
+  ]
+ },
+ {
+  "slug": "tw-valley-views-mijas",
+  "name": "Valley Views",
+  "developer": "Taylor Wimpey España",
+  "area": "El Chaparral, Mijas",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://taylorwimpeyspain.com/es/casa/valley-views-mijas-malaga/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/valley-views-mijas-malaga/",
+  "permit_number": null,
+  "docs_listed": [
+   "phase delivery dates: phase 1 March 2027, phase 2 October 2027",
+   "per-unit delivery dates 19-03-2027 and 07-10-2027",
+   "construction progress video 09/2026",
+   "floor plans per unit type",
+   "memoria de calidades PDF",
+   "energy certificate PDF (blocks 1-3, rating A)",
+   "brochure catalogue",
+   "GPS 36.521736, -4.660359",
+   "buyer guide: payment guarantee policy"
+  ],
+  "note": "54 two- and three-bed apartments (press says 56) at El Chaparral between La Cala de Mijas and Fuengirola, from 383,000 EUR ex-VAT; phase 1 delivery March 2027 and phase 2 October 2027, with a 09/2026 progress video; no licence statement or number. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 383000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Buyer guide: all instalments paid during construction covered by a bank guarantee or insurance policy (depending on development) per the Building Regulations Law; original given to buyer. Not project-specific; insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k",
+   "units": 54,
+   "payment_plan": null,
+   "price_per_m2": 4671
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the project page; none found in press",
+   "escrow": "Buyer guide step 2: policy covering all instalment payments during construction (bank guarantee or insurance, original handed to buyer, returned at deeds). Generic, not project-specific",
+   "progress": "Video \"avance de obras - 09/2026\" on the project page; no percentage",
+   "plans": "Per-unit 'Planos' pop-ups with built and terrace m2, orientation, price and delivery date",
+   "record": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k. Project-level counts not given",
+   "returns": "No guaranteed return, yield or buy-back language on the project page"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Taylor Wimpey de Espana S.A. Unipersonal (NIF A-07248206), part of Taylor Wimpey plc",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "All instalments paid during construction are covered by a bank guarantee or insurance policy under the Building Regulations Law (LOE)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "10-year structural defects insurance taken out on completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "Valley Views has 54 apartments",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-16-millones-viviendas-mijas-malaga/"
+   },
+   {
+    "claim": "Phase 1 delivery March 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-16-millones-viviendas-mijas-malaga/"
+   },
+   {
+    "claim": "Phase 2 delivery October 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/valley-views-mijas-malaga/"
+   },
+   {
+    "claim": "Construction under way (progress video 09/2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/valley-views-mijas-malaga/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/valley-views-mijas-malaga/"
+   },
+   {
+    "claim": "Prices from 383,000 EUR ex-VAT (phase 1 launched from 339,000 EUR + VAT per press)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/taylor-wimpey-16-millones-viviendas-mijas-malaga/"
+   },
+   {
+    "claim": "Energy rating A for all homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-16-millones-viviendas-mijas-malaga/"
+   },
+   {
+    "claim": "Investment of more than EUR 16 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-16-millones-viviendas-mijas-malaga/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "TAYLOR WIMPEY DE ESPANA S.A. UNIPERSONAL, NIF A-07248206 (aviso legal), subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange (TW.); Spain reported as a segment in audited group results",
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "3BR apartment",
+    "3BR duplex"
+   ],
+   "size_min_m2": 82,
+   "size_max_m2": 117.71,
+   "price_min": 383000,
+   "price_max": 572000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on EU or non-EU buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "gardens",
+    "underground parking",
+    "storage room",
+    "gated community",
+    "sea views",
+    "aerothermal heating"
+   ],
+   "lat": 36.522,
+   "lng": -4.66,
+   "permit_authority": "Ayuntamiento de Mijas (licencia de obras)",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/valley-views-mijas-es/"
+  },
+  "positives": [
+   "Direct sale by a subsidiary of a London-listed homebuilder whose audited results report Spanish completions (494 homes in 2025)",
+   "Buyer guide states every construction-stage instalment is covered by a bank guarantee or insurance policy",
+   "Per-unit delivery dates, prices and floor plans published",
+   "Dated construction progress videos on the project page",
+   "Energy performance certificate published for download"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/valley-views-mijas-malaga/",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165",
+   "https://taylorwimpeyspain.com/es/aviso-legal/",
+   "https://brainsre.news/taylor-wimpey-16-millones-viviendas-mijas-malaga/"
+  ]
+ },
+ {
+  "slug": "tw-grand-bay-manilva",
+  "name": "Grand Bay Apartamentos",
+  "developer": "Taylor Wimpey España",
+  "area": "Bahia de las Rocas, Manilva",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/",
+  "permit_number": null,
+  "docs_listed": [
+   "phase 1 delivery November 2027",
+   "per-unit delivery date 02-11-2027",
+   "construction progress video 09/2026 and time-lapse 10/2026",
+   "floor plans per unit type",
+   "memoria de calidades PDF (Mar 2026)",
+   "energy certificate PDF (block 3, rating A)",
+   "brochure catalogue",
+   "GPS 36.322002, -5.255583",
+   "buyer guide: payment guarantee policy"
+  ],
+  "note": "Phase 1 of a 153-home, EUR 63 million scheme at Bahia de las Rocas between Manilva and Sotogrande, from 375,000 EUR ex-VAT, with delivery stated for November 2027 and a 10/2026 time-lapse; no licence statement or number. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 375000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Buyer guide: all instalments paid during construction covered by a bank guarantee or insurance policy (depending on development) per the Building Regulations Law; original given to buyer. Not project-specific; insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k",
+   "units": 153,
+   "payment_plan": null,
+   "price_per_m2": 4554
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the project page; none found in press",
+   "escrow": "Buyer guide step 2: policy covering all instalment payments during construction (bank guarantee or insurance, original handed to buyer, returned at deeds). Generic, not project-specific",
+   "progress": "Video \"avance de obras - 09/2026\" and \"Time Lapse - 10/2026\" on the project page; no percentage",
+   "plans": "Per-unit 'Planos' pop-ups with built and terrace m2, orientation, price and delivery date",
+   "record": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k. Project-level counts not given",
+   "returns": "No guaranteed return, yield or buy-back language on the project page"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Taylor Wimpey de Espana S.A. Unipersonal (NIF A-07248206), part of Taylor Wimpey plc",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "All instalments paid during construction are covered by a bank guarantee or insurance policy under the Building Regulations Law (LOE)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "10-year structural defects insurance taken out on completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "153 homes in total, EUR 63 million investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.propertyinvestortoday.co.uk/breaking-news/2026/03/two-new-spanish-schemes-target-investors/"
+   },
+   {
+    "claim": "Developer bought two plots with 17,000 m2 buildable in Bahia de las Rocas for 153 homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-compra-2-solares-manilva-153-viviendas/"
+   },
+   {
+    "claim": "Phase 1 delivery November 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/"
+   },
+   {
+    "claim": "Construction under way (time-lapse 10/2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/"
+   },
+   {
+    "claim": "All homes energy rated A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyinvestortoday.co.uk/breaking-news/2026/03/two-new-spanish-schemes-target-investors/"
+   },
+   {
+    "claim": "Prices from 375,000 EUR ex-VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "TAYLOR WIMPEY DE ESPANA S.A. UNIPERSONAL, NIF A-07248206 (aviso legal), subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange (TW.); Spain reported as a segment in audited group results",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "3BR apartment",
+    "2BR ground floor",
+    "3BR ground floor",
+    "2BR penthouse",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 82.35,
+   "size_max_m2": 104,
+   "price_min": 375000,
+   "price_max": 626000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on EU or non-EU buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pools",
+    "fitness room",
+    "gardens",
+    "gated community",
+    "underground parking",
+    "storage room",
+    "EV charging pre-installation",
+    "sea views"
+   ],
+   "lat": 36.322,
+   "lng": -5.256,
+   "permit_authority": "Ayuntamiento de Manilva (licencia de obras)",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/grand-bay-manilva-es/"
+  },
+  "positives": [
+   "Direct sale by a subsidiary of a London-listed homebuilder whose audited results report Spanish completions (494 homes in 2025)",
+   "Buyer guide states every construction-stage instalment is covered by a bank guarantee or insurance policy",
+   "Per-unit delivery dates, prices and floor plans published",
+   "Dated construction progress videos on the project page",
+   "Energy performance certificate published for download",
+   "Land purchase (17,000 m2 buildable, two plots) reported by trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/grand-bay-apartmentos-manilva-malaga/",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165",
+   "https://taylorwimpeyspain.com/es/aviso-legal/",
+   "https://www.propertyinvestortoday.co.uk/breaking-news/2026/03/two-new-spanish-schemes-target-investors/",
+   "https://brainsre.news/taylor-wimpey-compra-2-solares-manilva-153-viviendas/"
+  ]
+ },
+ {
+  "slug": "tw-almazara-gardens-istan",
+  "name": "Almazara Gardens",
+  "developer": "Taylor Wimpey España",
+  "area": "Istan (Marbella)",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/",
+  "permit_number": null,
+  "docs_listed": [
+   "delivery October 2027",
+   "per-unit delivery date 15-10-2027",
+   "construction progress video 09/2026",
+   "floor plans per unit type",
+   "memoria de calidades PDF (Apr 2026)",
+   "energy certificate PDF (blocks 1 and 2, rating A)",
+   "brochure catalogue",
+   "GPS 36.54658, -4.948196",
+   "buyer guide: payment guarantee policy"
+  ],
+  "note": "Fourth phase (49 apartments in 3 blocks) of Almazara Boutique Residences near Istan, now offering 3-bed units from 555,000 EUR ex-VAT, with delivery October 2027 and a 09/2026 progress video; earlier Almazara phases sold out; no licence statement or number. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 555000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Buyer guide: all instalments paid during construction covered by a bank guarantee or insurance policy (depending on development) per the Building Regulations Law; original given to buyer. Not project-specific; insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k",
+   "units": 49,
+   "payment_plan": null,
+   "price_per_m2": 5051
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the project page; none found in press",
+   "escrow": "Buyer guide step 2: policy covering all instalment payments during construction (bank guarantee or insurance, original handed to buyer, returned at deeds). Generic, not project-specific",
+   "progress": "Video \"avance de obras - 09/2026\" on the project page; no percentage",
+   "plans": "Per-unit 'Planos' pop-ups with built and terrace m2, orientation, price and delivery date",
+   "record": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k. Project-level counts not given",
+   "returns": "No guaranteed return, yield or buy-back language on the project page"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Taylor Wimpey de Espana S.A. Unipersonal (NIF A-07248206), part of Taylor Wimpey plc",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "All instalments paid during construction are covered by a bank guarantee or insurance policy under the Building Regulations Law (LOE)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "10-year structural defects insurance taken out on completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "Almazara Gardens is a EUR 21 million development in the Almazara Boutique Residences complex",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iberian.property/news/residential/taylor-wimpey-invests-eur21m-in-its-residential-complex-in-malaga/"
+   },
+   {
+    "claim": "49 apartments in 3 blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/"
+   },
+   {
+    "claim": "Earlier phase Almazara Hills fully sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iberian.property/news/residential/taylor-wimpey-invests-eur21m-in-its-residential-complex-in-malaga/"
+   },
+   {
+    "claim": "Delivery October 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/"
+   },
+   {
+    "claim": "Construction under way (progress video 09/2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/"
+   },
+   {
+    "claim": "Prices from 555,000 EUR ex-VAT (launch press quoted from 460,000 EUR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iberian.property/news/residential/taylor-wimpey-invests-eur21m-in-its-residential-complex-in-malaga/"
+   },
+   {
+    "claim": "72 homes sold across the complex, buyers from 25 countries",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iberian.property/news/residential/taylor-wimpey-invests-eur21m-in-its-residential-complex-in-malaga/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "TAYLOR WIMPEY DE ESPANA S.A. UNIPERSONAL, NIF A-07248206 (aviso legal), subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange (TW.); Spain reported as a segment in audited group results",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR apartment",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 109.87,
+   "size_max_m2": 110.27,
+   "price_min": 555000,
+   "price_max": 630000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on EU or non-EU buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "native-plant gardens",
+    "underground parking",
+    "storage room",
+    "lift",
+    "solarium",
+    "sea and forest views"
+   ],
+   "lat": 36.547,
+   "lng": -4.948,
+   "permit_authority": "Ayuntamiento de Istan (licencia de obras)",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/almazara-gardens-es"
+  },
+  "positives": [
+   "Direct sale by a subsidiary of a London-listed homebuilder whose audited results report Spanish completions (494 homes in 2025)",
+   "Buyer guide states every construction-stage instalment is covered by a bank guarantee or insurance policy",
+   "Per-unit delivery dates, prices and floor plans published",
+   "Dated construction progress videos on the project page",
+   "Energy performance certificate published for download",
+   "Same developer delivered earlier phases on the same site (Almazara Hills, Views, Forest) per trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/almazara-gardens-apartamentos-istan-malaga/",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165",
+   "https://taylorwimpeyspain.com/es/aviso-legal/",
+   "https://www.iberian.property/news/residential/taylor-wimpey-invests-eur21m-in-its-residential-complex-in-malaga/",
+   "https://brainsre.news/taylor-wimpey-nueve-millones-proyecto-residencial/"
+  ]
+ },
+ {
+  "slug": "tw-solana-village-mijas",
+  "name": "Solana Village (La Cala Golf Resort)",
+  "developer": "Taylor Wimpey España",
+  "area": "La Cala Golf Resort, Mijas",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/",
+  "permit_number": null,
+  "docs_listed": [
+   "phase schedule: phase 1 Sep 2024 (sold), phase 2 May 2025 and May 2026 (sold), phase 3 Jul 2026, Oct 2026, Sep 2027",
+   "per-unit delivery dates 20-10-2026, 31-10-2026, 21-09-2027",
+   "construction progress videos 07/2025, 02/2026, 09/2026",
+   "floor plans per unit type",
+   "memoria de calidades PDF (Sep 2025)",
+   "energy certificate PDF (block 1, rating B)",
+   "brochure catalogue",
+   "buyer guide: payment guarantee policy"
+  ],
+  "note": "195 apartments on two plots in La Cala Golf Resort, built in phases since late 2022 (phases 1 and 2 sold); phase 3 units from 400,000 EUR ex-VAT are dated for delivery between October 2026 and September 2027, with progress videos from 07/2025 to 09/2026; no licence statement or number. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 400000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Buyer guide: all instalments paid during construction covered by a bank guarantee or insurance policy (depending on development) per the Building Regulations Law; original given to buyer. Not project-specific; insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k",
+   "units": 195,
+   "payment_plan": null,
+   "price_per_m2": 4976
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the project page; none found in press",
+   "escrow": "Buyer guide step 2: policy covering all instalment payments during construction (bank guarantee or insurance, original handed to buyer, returned at deeds). Generic, not project-specific",
+   "progress": "Videos \"avance de obras\" dated 07/2025, 02/2026 and 09/2026; phase schedule with delivered phases; no percentage",
+   "plans": "Per-unit 'Planos' pop-ups with built and terrace m2, orientation, price and delivery date",
+   "record": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024), ASP EUR 455k. Project-level counts not given",
+   "returns": "No guaranteed return, yield or buy-back language on the project page"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Taylor Wimpey de Espana S.A. Unipersonal (NIF A-07248206), part of Taylor Wimpey plc",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "All instalments paid during construction are covered by a bank guarantee or insurance policy under the Building Regulations Law (LOE)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "10-year structural defects insurance taken out on completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "Solana Village launched in November (2022, per 2023 article) under a joint venture with FBD, owner of La Cala Golf Resort",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.alimarket.es/construccion/noticia_amp/369372/taylor-wimpey-promovera-600-viviendas-en-mijas-con-entregas-a-partir-de-2025"
+   },
+   {
+    "claim": "Phase 1 of 48 apartments, about EUR 16 million investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/taylor-wimpey-invertira-24-millones-dos-nuevas-promociones-costa-del-sol/"
+   },
+   {
+    "claim": "Phase 1 delivered September 2024 and phase 2 May 2025 / May 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/"
+   },
+   {
+    "claim": "195 apartments across two plots (105 and 90)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/"
+   },
+   {
+    "claim": "Phase 3 delivery July 2026, October 2026 and September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/"
+   },
+   {
+    "claim": "Prices from 400,000 EUR ex-VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/"
+   },
+   {
+    "claim": "Suitable for investors seeking holiday-rental income (no figure given)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "TAYLOR WIMPEY DE ESPANA S.A. UNIPERSONAL, NIF A-07248206 (aviso legal), subsidiary of Taylor Wimpey plc",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange (TW.); Spain reported as a segment in audited group results",
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "3BR apartment",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 80.38,
+   "size_max_m2": 117.42,
+   "price_min": 400000,
+   "price_max": 580000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on EU or non-EU buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "golf frontline",
+    "communal pools",
+    "gardens",
+    "resort hotel, spa and sports facilities",
+    "air conditioning",
+    "fitted kitchen"
+   ],
+   "lat": 36.542,
+   "lng": -4.728,
+   "permit_authority": "Ayuntamiento de Mijas (licencia de obras)",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/solana-village-es/"
+  },
+  "positives": [
+   "Direct sale by a subsidiary of a London-listed homebuilder whose audited results report Spanish completions (494 homes in 2025)",
+   "Buyer guide states every construction-stage instalment is covered by a bank guarantee or insurance policy",
+   "Per-unit delivery dates, prices and floor plans published",
+   "Dated construction progress videos on the project page",
+   "Energy performance certificate published for download",
+   "Earlier phases of the same scheme reported delivered; long-running joint venture with the resort owner"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/es/casa/solana-village-la-cala-golf-resort-mijas-malaga/",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165",
+   "https://taylorwimpeyspain.com/es/aviso-legal/",
+   "https://www.alimarket.es/construccion/noticia_amp/369372/taylor-wimpey-promovera-600-viviendas-en-mijas-con-entregas-a-partir-de-2025",
+   "https://brainsre.news/taylor-wimpey-invertira-24-millones-dos-nuevas-promociones-costa-del-sol/"
+  ]
+ },
+ {
+  "slug": "aedas-zeta-avenue-malaga",
+  "name": "Zeta Avenue",
+  "developer": "AEDAS Homes",
+  "area": "Distrito Zeta (Sanchez Blanca), Malaga city",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.aedashomes.com/promo-zeta-avenue-pisos-obra-nueva-malaga",
+  "docs_url": "https://www.aedashomes.com/promo-zeta-avenue-pisos-obra-nueva-malaga",
+  "permit_number": null,
+  "docs_listed": [
+   "status tracker: 'Obra iniciada' (works started)",
+   "expected delivery 1TR 2027",
+   "124 homes, 1 to 3 bedrooms",
+   "price table with useful and built m2 per unit (340,000 to 467,000 EUR ex-VAT, garage and storage included)",
+   "8 downloadable unit plan PDFs",
+   "memoria de calidades ECO PDF (parcel R-1.8, SUNP-G.2, Avenida Ortega y Gasset s/n)",
+   "'Avance de obras' section with no dated content in the page source"
+  ],
+  "note": "124 homes on parcel R-1.8 of Distrito Zeta (Sanchez Blanca) in Malaga city, from 340,000 EUR ex-VAT; works started in December 2024 per press and the page gives delivery as Q1 2027. Header price (340,000 EUR) and description ('Desde 390.000') differ; no licence number, deposit guarantee or dated progress update shown. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 340000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "AEDAS Homes delivered 5,211 homes in FY 2024-25 to 31 Mar 2025 (2,640 build-to-sell, 2,060 Plan Vive rental, 511 build-to-rent), reported by Brains RE News",
+   "units": 124,
+   "payment_plan": null,
+   "price_per_m2": 3675
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the page or in the memoria; press says Malaga Urbanismo was processing licences for Distrito Zeta in 2024",
+   "escrow": "No mention of bank guarantee or insurance for payments on account on the project page or PDFs",
+   "progress": "Status tracker shows 'Obra iniciada' and an 'Avance de obras' heading, but no dated photo or percentage in the page; El Espanol (13 Dec 2024) reports cranes arriving that month",
+   "plans": "8 unit plan PDFs with useful and built areas and prices",
+   "record": "AEDAS Homes delivered 5,211 homes in FY 2024-25 to 31 Mar 2025 (2,640 build-to-sell, 2,060 Plan Vive rental, 511 build-to-rent), reported by Brains RE News",
+   "returns": "No guaranteed returns or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Developer AEDAS Homes S.A. is a registered company (Registro Mercantil de Madrid hoja M-627.110)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/"
+   },
+   {
+    "claim": "AEDAS delivered 5,211 homes in FY 2024-25",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/aedas-entrega-5211-viviendas-ultimo-ejercicio-fiscal/"
+   },
+   {
+    "claim": "AEDAS is now about 97% owned by Neinor Homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/"
+   },
+   {
+    "claim": "124 homes of 1 to 3 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elespanol.com/malaga/malaga-ciudad/20241213/ladrillo-gruas-llegan-distrito-zeta-barrio-futuro-malaga-aedas-arranca-obra-primeras-viviendas/908409382_0.html"
+   },
+   {
+    "claim": "Construction started December 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.alimarket.es/construccion/noticia_amp/r554312/aedas-homes-supera-las-250-viviendas-en-distrito-zeta-con-el-lanzamiento-de-su-tercer-proyecto--zeta-place"
+   },
+   {
+    "claim": "Delivery Q1 2027 (early 2027)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.que.es/2026/06/15/aedas-homes-137-viviendas-malaga-distrito-zeta/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elespanol.com/malaga/malaga-ciudad/20240810/gran-barrio-futuro-malaga-calienta-tramitan-licencias-viviendas-distrito-zeta/876912554_0.html"
+   },
+   {
+    "claim": "Payments on account guaranteed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-avenue-pisos-obra-nueva-malaga"
+   },
+   {
+    "claim": "Prices from 340,000 EUR ex-VAT",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-avenue-pisos-obra-nueva-malaga"
+   },
+   {
+    "claim": "45% of homes sold (early 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.alimarket.es/construccion/noticia_amp/r554312/aedas-homes-supera-las-250-viviendas-en-distrito-zeta-con-el-lanzamiento-de-su-tercer-proyecto--zeta-place"
+   },
+   {
+    "claim": "Located on parcel R-1.8 of sector SUNP-G.2 Sanchez Blanca",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/dam/jcr:b43887cc-ab6f-436b-847e-8e6ae4ba6333/AEDAS_MEMORIA_ECO_ZETA%20AVENUE%20V.0.pdf"
+   },
+   {
+    "claim": "Freehold title open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-avenue-pisos-obra-nueva-malaga"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "AEDAS HOMES, S.A., NIF A-87586483, Registro Mercantil de Madrid tomo 34.868 folio 55 hoja M-627.110 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 5211,
+   "listed_or_audited": "AEDAS Homes S.A. shares listed in Spain; Neinor Homes (listed) acquired 96.83% through tender offers completed 5 Mar 2026",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": "2024-12",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 89.95,
+   "size_max_m2": 106.87,
+   "price_min": 340000,
+   "price_max": 467000,
+   "currency": "EUR",
+   "amenities": [
+    "adult and children's pools",
+    "children's play area",
+    "gym",
+    "coworking space",
+    "bicycle parking",
+    "garage and storage included"
+   ],
+   "permit_authority": "Gerencia Municipal de Urbanismo, Ayuntamiento de Malaga (licencia de obras)",
+   "brochure_url": "https://www.aedashomes.com/dam/jcr:b43887cc-ab6f-436b-847e-8e6ae4ba6333/AEDAS_MEMORIA_ECO_ZETA%20AVENUE%20V.0.pdf"
+  },
+  "positives": [
+   "Listed national developer (now part of Neinor Homes) with thousands of homes delivered per year",
+   "Start of works in December 2024 confirmed by local press",
+   "Per-unit prices with useful and built m2 and plan PDFs",
+   "Garage and storage room included in the price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aedashomes.com/promo-zeta-avenue-pisos-obra-nueva-malaga",
+   "https://www.aedashomes.com/dam/jcr:b43887cc-ab6f-436b-847e-8e6ae4ba6333/AEDAS_MEMORIA_ECO_ZETA%20AVENUE%20V.0.pdf",
+   "https://www.aedashomes.com/aviso-legal",
+   "https://brainsre.news/aedas-entrega-5211-viviendas-ultimo-ejercicio-fiscal/",
+   "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/",
+   "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/",
+   "https://www.elespanol.com/malaga/malaga-ciudad/20241213/ladrillo-gruas-llegan-distrito-zeta-barrio-futuro-malaga-aedas-arranca-obra-primeras-viviendas/908409382_0.html",
+   "https://www.elespanol.com/malaga/malaga-ciudad/20240810/gran-barrio-futuro-malaga-calienta-tramitan-licencias-viviendas-distrito-zeta/876912554_0.html",
+   "https://www.alimarket.es/construccion/noticia_amp/r554312/aedas-homes-supera-las-250-viviendas-en-distrito-zeta-con-el-lanzamiento-de-su-tercer-proyecto--zeta-place",
+   "https://www.que.es/2026/06/15/aedas-homes-137-viviendas-malaga-distrito-zeta/"
+  ]
+ },
+ {
+  "slug": "aedas-zeta-valley-malaga",
+  "name": "Zeta Valley",
+  "developer": "AEDAS Homes",
+  "area": "Distrito Zeta (Sanchez Blanca), Malaga city",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga",
+  "docs_url": "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga",
+  "permit_number": null,
+  "docs_listed": [
+   "status tracker: 'Obra iniciada'",
+   "expected delivery 4TR 2026",
+   "67 homes, 1 to 3 bedrooms, energy rating A",
+   "price table with useful and built m2 per unit (370,000 to 495,000 EUR ex-VAT)",
+   "unit plan PDFs",
+   "memoria de calidades and memoria ECO PDFs",
+   "commercial dossier PDF (parcel R-13, SUNP-G.2)",
+   "'Avance de obras' heading with no dated content"
+  ],
+  "note": "First AEDAS scheme in Malaga's Distrito Zeta: 67 homes on parcel R-13, built by Sacyr since December 2024, with delivery stated for Q4 2026 and remaining units from 370,000 EUR ex-VAT (launch prices started at 185,000 EUR). No licence number, deposit guarantee or dated progress update shown. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 370000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "AEDAS Homes delivered 5,211 homes in FY 2024-25 to 31 Mar 2025 (2,640 build-to-sell, 2,060 Plan Vive rental, 511 build-to-rent), reported by Brains RE News",
+   "units": 67,
+   "payment_plan": null,
+   "price_per_m2": 4154
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the page or PDFs",
+   "escrow": "No mention of bank guarantee or insurance for payments on account",
+   "progress": "Status tracker 'Obra iniciada' and empty 'Avance de obras' heading; press reports works began Dec 2024 with contractor Sacyr and first residents expected late 2026",
+   "plans": "Unit plan PDFs with useful and built m2 and prices",
+   "record": "AEDAS Homes delivered 5,211 homes in FY 2024-25 to 31 Mar 2025 (2,640 build-to-sell, 2,060 Plan Vive rental, 511 build-to-rent), reported by Brains RE News",
+   "returns": "No guaranteed returns or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Developer AEDAS Homes S.A. is a registered company (Registro Mercantil de Madrid hoja M-627.110)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/"
+   },
+   {
+    "claim": "AEDAS delivered 5,211 homes in FY 2024-25",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/aedas-entrega-5211-viviendas-ultimo-ejercicio-fiscal/"
+   },
+   {
+    "claim": "AEDAS is now about 97% owned by Neinor Homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/"
+   },
+   {
+    "claim": "67 homes of 1 to 3 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.elespanol.com/malaga/malaga-ciudad/20241213/ladrillo-gruas-llegan-distrito-zeta-barrio-futuro-malaga-aedas-arranca-obra-primeras-viviendas/908409382_0.html"
+   },
+   {
+    "claim": "Construction started December 2024, contractor Sacyr",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/aedas-homes-viviendas-distrito-zeta-malaga/"
+   },
+   {
+    "claim": "Delivery Q4 2026 (first residents late 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.que.es/2026/06/15/aedas-homes-137-viviendas-malaga-distrito-zeta/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga"
+   },
+   {
+    "claim": "Payments on account guaranteed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga"
+   },
+   {
+    "claim": "Prices from 370,000 EUR ex-VAT (description says 'Desde 355.000'; launch prices from 185,000 EUR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://brainsre.news/aedas-homes-lanza-su-primera-promocion-en-distrito-zeta-de-malaga/"
+   },
+   {
+    "claim": "60% of homes sold (early 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.alimarket.es/construccion/noticia_amp/r554312/aedas-homes-supera-las-250-viviendas-en-distrito-zeta-con-el-lanzamiento-de-su-tercer-proyecto--zeta-place"
+   },
+   {
+    "claim": "All homes energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga"
+   },
+   {
+    "claim": "Freehold title open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "AEDAS HOMES, S.A., NIF A-87586483, Registro Mercantil de Madrid tomo 34.868 folio 55 hoja M-627.110 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 5211,
+   "listed_or_audited": "AEDAS Homes S.A. shares listed in Spain; Neinor Homes (listed) acquired 96.83% through tender offers completed 5 Mar 2026",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": "2024-12",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 88.8,
+   "size_max_m2": 104.94,
+   "price_min": 370000,
+   "price_max": 495000,
+   "currency": "EUR",
+   "amenities": [
+    "salt-chlorinated adult and children's pools",
+    "large gardens",
+    "children's play area",
+    "fitness area",
+    "bicycle parking",
+    "garage and storage room"
+   ],
+   "permit_authority": "Gerencia Municipal de Urbanismo, Ayuntamiento de Malaga (licencia de obras)",
+   "brochure_url": "https://www.aedashomes.com/dam/jcr:2744789e-1d73-4ddf-a973-19365549ba95/ZETAVALLEY_AEDAS_DOSSIER_BAS.pdf"
+  },
+  "positives": [
+   "Listed national developer (now part of Neinor Homes)",
+   "Start of works and contractor (Sacyr) confirmed by press",
+   "Per-unit prices with useful and built m2 and plan PDFs",
+   "Delivery quarter stated and consistent with press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aedashomes.com/promo-zeta-valley-pisos-obra-nueva-malaga",
+   "https://www.aedashomes.com/dam/jcr:2744789e-1d73-4ddf-a973-19365549ba95/ZETAVALLEY_AEDAS_DOSSIER_BAS.pdf",
+   "https://www.aedashomes.com/aviso-legal",
+   "https://brainsre.news/aedas-entrega-5211-viviendas-ultimo-ejercicio-fiscal/",
+   "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/",
+   "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/",
+   "https://www.elespanol.com/malaga/malaga-ciudad/20241213/ladrillo-gruas-llegan-distrito-zeta-barrio-futuro-malaga-aedas-arranca-obra-primeras-viviendas/908409382_0.html",
+   "https://brainsre.news/aedas-homes-viviendas-distrito-zeta-malaga/",
+   "https://brainsre.news/aedas-homes-lanza-su-primera-promocion-en-distrito-zeta-de-malaga/",
+   "https://www.alimarket.es/construccion/noticia_amp/r554312/aedas-homes-supera-las-250-viviendas-en-distrito-zeta-con-el-lanzamiento-de-su-tercer-proyecto--zeta-place",
+   "https://www.que.es/2026/06/15/aedas-homes-137-viviendas-malaga-distrito-zeta/"
+  ]
+ },
+ {
+  "slug": "metrovacesa-abril-casares",
+  "name": "Abril",
+  "developer": "Metrovacesa",
+  "area": "Casares (Dona Julia Golf)",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://metrovacesa.com/promociones/malaga/casares/abril",
+  "docs_url": "https://metrovacesa.com/promociones/malaga/casares/abril",
+  "permit_number": null,
+  "docs_listed": [
+   "status tracker: En venta > Inicio de construccion (active) > Fin de construccion > Entrega",
+   "banner '¡Inicio de construccion!'",
+   "contractor: Amenabar Obras y Proyectos S.L",
+   "unit table with built m2, terrace, price and plan per unit (428,000 to 680,000 EUR ex-VAT)",
+   "memoria de calidades and dossier PDFs (dossier states it is drawn from the basic project submitted for the works licence)",
+   "sustainability dossier PDF",
+   "buyer guide PDF (avales policy)",
+   "developer news: works started 12 Jun 2025, investment 18.4M EUR"
+  ],
+  "note": "65 two- and three-bed homes by the Dona Julia golf course in Casares, from 428,000 EUR ex-VAT; Metrovacesa announced the start of works on 12 June 2025 (contractor Amenabar, investment 18.4M EUR). No delivery date or licence number is published. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 428000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "units": 65,
+   "payment_plan": null,
+   "price_per_m2": 3585
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number; the dossier says it was drawn from the basic project submitted to obtain the works licence",
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress": "Developer news dated 12 Jun 2025 announcing start of works; page tracker at 'Inicio de construccion'; no percentage or later dated update",
+   "plans": "Unit table with floor, bedrooms, built m2 (including common areas and terrace), terrace, price and 'Ver plano' plan per unit",
+   "record": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "returns": "No guaranteed returns or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer Metrovacesa S.A. is a registered and listed company (CIF A87471264)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/"
+   },
+   {
+    "claim": "Metrovacesa delivered 1,805 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   },
+   {
+    "claim": "Amounts paid on account are covered by a guarantee policy (avales) once the works licence is obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf"
+   },
+   {
+    "claim": "Works started June 2025 with contractor Amenabar Obras y Proyectos",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-begins-work-on-its-abril-development-in-casares-malaga"
+   },
+   {
+    "claim": "65 homes of 2 and 3 bedrooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-begins-work-on-its-abril-development-in-casares-malaga"
+   },
+   {
+    "claim": "Investment of 18.4M EUR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-begins-work-on-its-abril-development-in-casares-malaga"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/abril/ent_abrildosierv7.pdf"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/casares/abril"
+   },
+   {
+    "claim": "Prices from 428,000 EUR ex-VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/casares/abril"
+   },
+   {
+    "claim": "VERDE sustainability certification",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-begins-work-on-its-abril-development-in-casares-malaga"
+   },
+   {
+    "claim": "Freehold title open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/casares/abril"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "METROVACESA S.A., CIF A87471264, Registro Mercantil de Madrid hoja M-620015 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1805,
+   "listed_or_audited": "Listed on the Spanish stock exchanges since 2018; 2025 results: 1,805 homes delivered, revenue 708.5M EUR",
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": "2025-06",
+   "handover_promised": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "ground floor with garden",
+    "penthouse"
+   ],
+   "size_min_m2": 119.4,
+   "size_max_m2": 366.7,
+   "price_min": 428000,
+   "price_max": 680000,
+   "amenities": [
+    "infinity pool with beach",
+    "gym",
+    "spa",
+    "zen space",
+    "calisthenics area",
+    "golf viewpoint",
+    "landscaped gardens",
+    "garage and storage room"
+   ],
+   "permit_authority": "Ayuntamiento de Casares (licencia de obras)",
+   "brochure_url": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/abril/ent_abrildosierv7.pdf"
+  },
+  "positives": [
+   "Listed national developer with 1,805 homes delivered in 2025",
+   "Buyer guide links reservations after licence to a guarantee policy for payments on account",
+   "Contractor named on the project page or in the developer's announcement",
+   "Per-unit prices and plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/promociones/malaga/casares/abril",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf",
+   "https://metrovacesa.com/faqs",
+   "https://metrovacesa.com/aviso-legal",
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/",
+   "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/",
+   "https://metrovacesa.com/en/blog/metrovacesa-begins-work-on-its-abril-development-in-casares-malaga",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/abril/ent_abrildosierv7.pdf"
+  ]
+ },
+ {
+  "slug": "metrovacesa-almare-mijas",
+  "name": "Almare",
+  "developer": "Metrovacesa",
+  "area": "La Cala de Mijas",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://metrovacesa.com/promociones/malaga/mijas/almare",
+  "docs_url": "https://metrovacesa.com/promociones/malaga/mijas/almare",
+  "permit_number": null,
+  "docs_listed": [
+   "status tracker marked at 'Inicio de construccion' (undated)",
+   "contractor: AVINTIA PROYECTOS Y CONSTRUCCIONES S.L",
+   "unit table with built m2, terrace, price and plan per unit (496,000 to 818,000 EUR ex-VAT)",
+   "dossier and memoria de calidades PDFs",
+   "buyer guide PDF (avales policy)",
+   "developer launch news 31 Mar 2026: 48 homes, investment 15.7M EUR"
+  ],
+  "note": "48 two- to four-bed sea-view homes in La Cala de Mijas launched on 31 March 2026 (investment 15.7M EUR), from 496,000 EUR ex-VAT; the page names contractor Avintia and marks the start of construction, but no dated works update, delivery date or licence number is published. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 496000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "units": 48,
+   "payment_plan": null,
+   "price_per_m2": 4567
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number",
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress": "Status tracker marked 'Inicio de construccion' with no date; launch news (31 Mar 2026) gives no works start; no photos or percentage",
+   "plans": "Unit table with floor, bedrooms, built m2 (including common areas and terrace), terrace, price and 'Ver plano' plan per unit",
+   "record": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "returns": "No guaranteed returns or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer Metrovacesa S.A. is a registered and listed company (CIF A87471264)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/"
+   },
+   {
+    "claim": "Metrovacesa delivered 1,805 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   },
+   {
+    "claim": "Amounts paid on account are covered by a guarantee policy (avales) once the works licence is obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf"
+   },
+   {
+    "claim": "48 homes of 2 to 4 bedrooms, investment 15.7M EUR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-15-millones-almare-48-viviendas-malaga/"
+   },
+   {
+    "claim": "Construction started (status tracker)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/mijas/almare"
+   },
+   {
+    "claim": "Contractor Avintia Proyectos y Construcciones",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/mijas/almare"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/mijas/almare"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/mijas/almare"
+   },
+   {
+    "claim": "Prices from 496,000 EUR ex-VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/mijas/almare"
+   },
+   {
+    "claim": "All homes with terrace, garage and storage room",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-15-millones-almare-48-viviendas-malaga/"
+   },
+   {
+    "claim": "Freehold title open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/mijas/almare"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "METROVACESA S.A., CIF A87471264, Registro Mercantil de Madrid hoja M-620015 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1805,
+   "listed_or_audited": "Listed on the Spanish stock exchanges since 2018; 2025 results: 1,805 homes delivered, revenue 708.5M EUR",
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 108.6,
+   "size_max_m2": 181.9,
+   "price_min": 496000,
+   "price_max": 818000,
+   "amenities": [
+    "sea views",
+    "terraces",
+    "garage",
+    "storage room",
+    "heat-pump climate control",
+    "aerothermal hot water"
+   ],
+   "permit_authority": "Ayuntamiento de Mijas (licencia de obras)",
+   "brochure_url": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/almare/dossieralmare.pdf"
+  },
+  "positives": [
+   "Listed national developer with 1,805 homes delivered in 2025",
+   "Buyer guide links reservations after licence to a guarantee policy for payments on account",
+   "Contractor named on the project page or in the developer's announcement",
+   "Per-unit prices and plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/promociones/malaga/mijas/almare",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf",
+   "https://metrovacesa.com/faqs",
+   "https://metrovacesa.com/aviso-legal",
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/",
+   "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/",
+   "https://metrovacesa.com/en/blog/metrovacesa-launches-almare-a-development-of-48-homes-overlooking-the-sea-in-cala-de-mijas",
+   "https://brainsre.news/metrovacesa-15-millones-almare-48-viviendas-malaga/"
+  ]
+ },
+ {
+  "slug": "metrovacesa-blue-wave-manilva",
+  "name": "Blue Wave",
+  "developer": "Metrovacesa",
+  "area": "Manilva",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://metrovacesa.com/promociones/malaga/manilva/blue-wave",
+  "docs_url": "https://metrovacesa.com/promociones/malaga/manilva/blue-wave",
+  "permit_number": null,
+  "docs_listed": [
+   "banner 'Blue Wave: ¡Proyecto en construccion!'",
+   "status tracker at 'Inicio de construccion'",
+   "unit table, 4 types with built m2, terrace, price and plan (425,000 to 527,000 EUR ex-VAT)",
+   "memoria de calidades and dossier PDFs",
+   "buyer guide PDF (avales policy)",
+   "developer news 2 Jul 2025: works started, contractor Amenabar, investment 18.9M EUR"
+  ],
+  "note": "66 three-bed terraced houses in Manilva, from 425,000 EUR ex-VAT; Metrovacesa announced the start of works on 2 July 2025 (contractor Amenabar, investment 18.9M EUR) and the page says the project is under construction. No delivery date or licence number is published. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 425000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "units": 66,
+   "payment_plan": null,
+   "price_per_m2": 2999
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number; memoria says details may change with the licences",
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress": "Developer news dated 2 Jul 2025 announcing start of works; page banner 'Proyecto en construccion'; no percentage or later dated update",
+   "plans": "Unit table with floor, bedrooms, built m2 (including common areas and terrace), terrace, price and 'Ver plano' plan per unit",
+   "record": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "returns": "No guaranteed returns or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer Metrovacesa S.A. is a registered and listed company (CIF A87471264)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/"
+   },
+   {
+    "claim": "Metrovacesa delivered 1,805 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   },
+   {
+    "claim": "Amounts paid on account are covered by a guarantee policy (avales) once the works licence is obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf"
+   },
+   {
+    "claim": "Works started 2 July 2025, contractor Amenabar",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/blog/metrovacesa-inicia-las-obras-de-blue-wave-en-malaga"
+   },
+   {
+    "claim": "66 three-bed terraced homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/blog/metrovacesa-inicia-las-obras-de-blue-wave-en-malaga"
+   },
+   {
+    "claim": "Investment of 18.9M EUR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/blog/metrovacesa-inicia-las-obras-de-blue-wave-en-malaga"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/bluewave/mvc_blue_wave_memoria_v3.pdf"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/manilva/blue-wave"
+   },
+   {
+    "claim": "Prices from 425,000 EUR ex-VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/manilva/blue-wave"
+   },
+   {
+    "claim": "Private pool possible depending on type",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/blog/metrovacesa-inicia-las-obras-de-blue-wave-en-malaga"
+   },
+   {
+    "claim": "Freehold title open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/promociones/malaga/manilva/blue-wave"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "METROVACESA S.A., CIF A87471264, Registro Mercantil de Madrid hoja M-620015 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1805,
+   "listed_or_audited": "Listed on the Spanish stock exchanges since 2018; 2025 results: 1,805 homes delivered, revenue 708.5M EUR",
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": "2025-07",
+   "handover_promised": null,
+   "unit_types": [
+    "3BR townhouse"
+   ],
+   "size_min_m2": 141.7,
+   "size_max_m2": 170.3,
+   "price_min": 425000,
+   "price_max": 527000,
+   "amenities": [
+    "private garden",
+    "optional private pool by type",
+    "sea-view terraces"
+   ],
+   "permit_authority": "Ayuntamiento de Manilva (licencia de obras)",
+   "brochure_url": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/bluewave/mvc_blue_wave_dossier_v9.pdf"
+  },
+  "positives": [
+   "Listed national developer with 1,805 homes delivered in 2025",
+   "Buyer guide links reservations after licence to a guarantee policy for payments on account",
+   "Contractor named on the project page or in the developer's announcement",
+   "Per-unit prices and plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/promociones/malaga/manilva/blue-wave",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf",
+   "https://metrovacesa.com/faqs",
+   "https://metrovacesa.com/aviso-legal",
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/",
+   "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/",
+   "https://metrovacesa.com/blog/metrovacesa-inicia-las-obras-de-blue-wave-en-malaga",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/bluewave/mvc_blue_wave_memoria_v3.pdf"
+  ]
+ },
+ {
+  "slug": "abora-adeje-tenerife",
+  "name": "Abora",
+  "developer": "Metrovacesa",
+  "area": "Playa Paraiso, Adeje, Tenerife (Canary Islands)",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://metrovacesa.com/en/developments/tenerife/adeje/abora",
+  "docs_url": "https://metrovacesa.com/en/developments/tenerife/adeje/abora",
+  "permit_number": null,
+  "docs_listed": [
+   "status tracker at 'Start of construction'",
+   "contractor: DRAGADOS, S.A.",
+   "138 homes of 1 to 3 bedrooms",
+   "unit table with built m2, terrace, price and plan per unit (page header from 394,955 EUR ex-VAT; listed units 449,925 to 1,070,300 EUR)",
+   "dossier and memoria de calidades PDFs (English)",
+   "buyer guide PDF (avales policy)",
+   "developer news 29 Nov 2024 (launch) and 8 Jan 2026 (start of works, 55.97M EUR)"
+  ],
+  "note": "138 one- to three-bed homes in a five-storey building in Playa Paraiso, Adeje; Metrovacesa announced the start of works on 8 January 2026 (investment 55.97M EUR) and its page names Dragados as contractor, with listed units from about 450,000 EUR ex-VAT. No delivery date or licence number is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 449925,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "units": 138,
+   "payment_plan": null,
+   "price_per_m2": 4197
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number",
+   "escrow": "Metrovacesa buyer guide (Jun 2025, linked on the project page): reservations after the works licence are made once the 'poliza de avales para el afianzamiento de cantidades' is in place; FAQ says amounts paid on account must be guaranteed by surety insurance or bank guarantee and paid into a special account. Generic, insurer or bank not named",
+   "progress": "Developer news dated 8 Jan 2026 announcing start of works, reported by Iberian Property and Brains RE News; tracker at 'Start of construction'; no percentage or later dated update",
+   "plans": "Unit table with floor, bedrooms, built m2 (including common areas and terrace), terrace, price and 'Ver plano' plan per unit",
+   "record": "Metrovacesa (listed on the Spanish stock exchange since 2018) delivered 1,805 homes in 2025 at an average price of 374,000 EUR, with 3,917 under construction at year end (Brains RE News, Forbes Espana)",
+   "returns": "No guaranteed returns or yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Developer Metrovacesa S.A. is a registered and listed company (CIF A87471264)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/"
+   },
+   {
+    "claim": "Metrovacesa delivered 1,805 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/"
+   },
+   {
+    "claim": "Amounts paid on account are covered by a guarantee policy (avales) once the works licence is obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf"
+   },
+   {
+    "claim": "138 homes, works started January 2026, investment 55.97M EUR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iberian.property/news/residential/metrovacesa-invests-nearly-eur56m-in-a-new-residential-development-in-adeje/"
+   },
+   {
+    "claim": "Contractor Dragados S.A.",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/adeje/abora"
+   },
+   {
+    "claim": "Designed by Makin Molowny Portela Arquitectos, homes up to 200 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/metrovacesa-construccion-abora-138-viviendas-adeje/"
+   },
+   {
+    "claim": "Metrovacesa previously delivered Ancor (Tenerife), Betancuria and Tamadaba I (Gran Canaria)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-presents-abora-its-new-residential-development-in-tenerife-which-reinforces-its-presence-in-the-archipelago-with-more-than-650-homes"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/adeje/abora"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/adeje/abora"
+   },
+   {
+    "claim": "Prices from 394,955 EUR ex-VAT (lowest listed unit 449,925 EUR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/adeje/abora"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/blog/metrovacesa-begins-construction-of-abora-138-new-homes-in-adeje"
+   },
+   {
+    "claim": "Freehold title open to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/tenerife/adeje/abora"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "METROVACESA S.A., CIF A87471264, Registro Mercantil de Madrid hoja M-620015 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1805,
+   "listed_or_audited": "Listed on the Spanish stock exchanges since 2018; 2025 results: 1,805 homes delivered, revenue 708.5M EUR",
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": "2026-01",
+   "handover_promised": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 107.2,
+   "size_max_m2": 217.8,
+   "price_min": 449925,
+   "price_max": 1070300,
+   "amenities": [
+    "swimming pool",
+    "gym",
+    "community room",
+    "rooftop communal terrace",
+    "garage and storage room",
+    "ocean-facing terraces"
+   ],
+   "permit_authority": "Ayuntamiento de Adeje (licencia de obras)",
+   "brochure_url": "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/abora/mvc_abora_dossier_eng.pdf"
+  },
+  "positives": [
+   "Listed national developer with 1,805 homes delivered in 2025",
+   "Buyer guide links reservations after licence to a guarantee policy for payments on account",
+   "Contractor named on the project page or in the developer's announcement",
+   "Per-unit prices and plans published",
+   "Large national contractor (Dragados) named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/en/developments/tenerife/adeje/abora",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/Guia_de_Compra_del_cliente-Metrovacesa_Junio-2025.pdf",
+   "https://metrovacesa.com/faqs",
+   "https://metrovacesa.com/aviso-legal",
+   "https://brainsre.news/metrovacesa-aumenta-74-ebitda-beneficio-neto-2025/",
+   "https://forbes.es/economia/878768/metrovacesa-logra-record-de-beneficios-en-2025-con-569-millones-de-euros-y-dispara-su-ebitda-un-74/",
+   "https://metrovacesa.com/en/blog/metrovacesa-begins-construction-of-abora-138-new-homes-in-adeje",
+   "https://metrovacesa.com/en/blog/metrovacesa-presents-abora-its-new-residential-development-in-tenerife-which-reinforces-its-presence-in-the-archipelago-with-more-than-650-homes",
+   "https://www.iberian.property/news/residential/metrovacesa-invests-nearly-eur56m-in-a-new-residential-development-in-adeje/",
+   "https://brainsre.news/metrovacesa-construccion-abora-138-viviendas-adeje/",
+   "https://mvcblobcrmstr.blob.core.windows.net/mvcblobcrm/abora/mvc_abora_dossier_eng.pdf"
+  ]
+ },
+ {
+  "slug": "carena-el-medano-tenerife",
+  "name": "Carena",
+  "developer": "AEDAS Homes",
+  "area": "El Medano, Granadilla de Abona, Tenerife (Canary Islands)",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "completed",
+  "status": "completed",
+  "url": "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena",
+  "docs_url": "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena",
+  "permit_number": null,
+  "docs_listed": [
+   "status tracker: 'Obra Terminada' (works finished)",
+   "'Ultima oportunidad': one unit listed, 2BR, 65.70 m2 useful / 87.45 m2 built, 450,000 EUR",
+   "unit plan PDF",
+   "digital dossier ES/EN PDF",
+   "El Medano area page: Carena 'ultima unidad' from 450,000 EUR"
+  ],
+  "note": "52 two- and three-bed homes about 130 m from the sea in El Medano, built by SANJOSE from April 2024 with delivery expected early 2026; the AEDAS page now marks the works as finished ('Obra Terminada') with one last unit at 450,000 EUR. No licence number or deposit guarantee shown. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 450000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 100,
+   "developer_delivered": "AEDAS Homes delivered 5,211 homes in FY 2024-25 to 31 Mar 2025 (2,640 build-to-sell, 2,060 Plan Vive rental, 511 build-to-rent), reported by Brains RE News; in the Canaries AEDAS delivered Gazmira (68 homes, Las Palmas) and began delivering Solum (Tenerife) in 2026",
+   "units": 52,
+   "payment_plan": null,
+   "price_per_m2": 5146
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence statement or number on the page, dossier or press",
+   "escrow": "No mention of bank guarantee or insurance for payments on account",
+   "progress": "Project page status tracker shows 'Obra Terminada' (works finished); no dated handover confirmation found in press",
+   "plans": "Unit plan PDF for the remaining unit; dossier with typologies",
+   "record": "AEDAS Homes delivered 5,211 homes in FY 2024-25 to 31 Mar 2025 (2,640 build-to-sell, 2,060 Plan Vive rental, 511 build-to-rent), reported by Brains RE News; Gazmira delivered (RTVC); Solum deliveries started (Tenerife Weekly, Jun 2026)",
+   "returns": "Area page says rental demand is high 'asegurando una rentabilidad interesante' but gives no figure and no guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer AEDAS Homes S.A. is a registered company (Registro Mercantil de Madrid hoja M-627.110)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/"
+   },
+   {
+    "claim": "AEDAS delivered 5,211 homes in FY 2024-25",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/aedas-entrega-5211-viviendas-ultimo-ejercicio-fiscal/"
+   },
+   {
+    "claim": "AEDAS is now about 97% owned by Neinor Homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/"
+   },
+   {
+    "claim": "52 homes of 2 and 3 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Carena-en-El-Medano-Tenerife_1748.html"
+   },
+   {
+    "claim": "Contractor SANJOSE Constructora",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Carena-en-El-Medano-Tenerife_1748.html"
+   },
+   {
+    "claim": "75% of the 52 units sold at the start of works",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/aedas-homes-carena-waves-59-viviendas-medano-tenerife/"
+   },
+   {
+    "claim": "Delivery at the start of 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/aedas-homes-comienza-obras-carena-viviendas-tenerife/"
+   },
+   {
+    "claim": "Works finished ('Obra Terminada')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena"
+   },
+   {
+    "claim": "Payments on account guaranteed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena"
+   },
+   {
+    "claim": "AEDAS delivered its first Canary Islands scheme, Gazmira",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://rtvc.es/aedas-homes-entrega-primera-promocion-canarias/"
+   },
+   {
+    "claim": "Last unit priced at 450,000 EUR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "AEDAS HOMES, S.A., NIF A-87586483, Registro Mercantil de Madrid tomo 34.868 folio 55 hoja M-627.110 (aviso legal)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 5211,
+   "listed_or_audited": "AEDAS Homes S.A. shares listed in Spain; Neinor Homes (listed) acquired 96.83% through tender offers completed 5 Mar 2026",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law; no restriction on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "construction_start": "2024-04",
+   "handover_promised": "2026-Q1",
+   "original_handover": "early 2026",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 87.45,
+   "size_max_m2": null,
+   "price_min": 450000,
+   "price_max": null,
+   "currency": "EUR",
+   "amenities": [
+    "communal pool",
+    "solarium",
+    "gardens",
+    "storage room",
+    "garage",
+    "video surveillance and access control"
+   ],
+   "permit_authority": "Ayuntamiento de Granadilla de Abona (licencia de obras)",
+   "brochure_url": "https://www.aedashomes.com/dam/jcr:2bd76e80-38f0-4431-b465-bfce859d70d6/Dossier_Digital_ES-EN_CARENA%20OK_Comprimido.pdf"
+  },
+  "positives": [
+   "Works shown as finished on the developer page, so buyers are not exposed to construction risk",
+   "Contractor publicly named (SANJOSE, listed group)",
+   "Listed national developer with a delivery record in the Canaries"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aedashomes.com/pisos-en-venta-en-santa-cruz-de-tenerife-Carena",
+   "https://www.aedashomes.com/dam/jcr:2bd76e80-38f0-4431-b465-bfce859d70d6/Dossier_Digital_ES-EN_CARENA%20OK_Comprimido.pdf",
+   "https://www.aedashomes.com/viviendas-obra-nueva-el-medano",
+   "https://brainsre.news/aedas-homes-comienza-obras-carena-viviendas-tenerife/",
+   "https://brainsre.news/aedas-homes-carena-waves-59-viviendas-medano-tenerife/",
+   "https://constructorasanjose.com/en/n_SANJOSE-construira-el-Residencial-Carena-en-El-Medano-Tenerife_1748.html",
+   "https://rtvc.es/aedas-homes-entrega-primera-promocion-canarias/",
+   "https://tenerifeweekly.com/2026/06/23/aedas-homes-delivers-first-luxury-solum-properties-for-foreign-investors-in-guia-de-isora/",
+   "https://www.aedashomes.com/aviso-legal",
+   "https://brainsre.news/aedas-entrega-5211-viviendas-ultimo-ejercicio-fiscal/",
+   "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/",
+   "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/"
+  ]
+ }
+]

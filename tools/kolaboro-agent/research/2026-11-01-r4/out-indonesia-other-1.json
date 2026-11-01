@@ -1,0 +1,1202 @@
+[
+ {
+  "slug": "samudra-villas",
+  "name": "Samudra Villas",
+  "developer": "Tropical Development Partners (PT)",
+  "area": "Are Guling / Mawun, South Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://samudravillas.com/",
+  "docs_url": "https://samudravillas.com/who-we-are",
+  "permit_number": null,
+  "docs_listed": [
+   "documents table: HGB certificate, PKKPR zoning approval, PBG building permit, cadastral plan and PT company documents marked 'Available' on request (no numbers)",
+   "notary-held escrow option (FAQ)",
+   "milestone tracker updated 23 Oct 2026: earthworks in progress since Oct 2026, villa construction target Jan 2027, handover target early 2028",
+   "ground and first floor plans; 140 m2 living area, 32 m2 pool deck",
+   "company TROPICAL DEVELOPMENT PARTNERS (PT), registration 4025081552104973, seat Kuta Lombok",
+   "named contractor PT Lombok Biru Jaya Konstruksi (contract signed Oct 2026), architect TCDesign1996, engineer Rasya Consultant",
+   "recommended notary in Kota Mataram; land HGB, 19 are",
+   "guaranteed fixed income option EUR 20,000 a year for 3 years"
+  ],
+  "note": "Six EUR 255,000 two-bedroom villas on 19 are of HGB land near Are Guling; the PT developer lists its PBG and PKKPR as 'Available' on request without numbers, offers optional notary escrow, and a tracker dated 23 Oct 2026 shows earthworks under way with villa construction targeted for January 2027 and handover early 2028. It also sells a guaranteed EUR 20,000 a year for 3 years; no independent record of the company or permits was found (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 255000,
+   "currency": "EUR",
+   "title": "HGB via PT PMA",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "FAQ: an independent notary can hold funds in escrow and release them on milestone completion (optional)",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 6,
+   "payment_plan": "Milestone-based payments (pay on construction progress); full schedule in brochure; bilingual notarised contract",
+   "yield_pct": null,
+   "progress_updates": true,
+   "price_per_m2": 1821
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "PBG building permit is 'Available' (no number published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "PKKPR zoning and land-use approval is 'Available'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "FAQ wording elsewhere says buyers get 'building permit status', which is softer than the 'Available' label",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/assets/index-etUMNeYM.js"
+   },
+   {
+    "claim": "Land is HGB, total area 19 are",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "A foreign buyer can hold the villa through a PT PMA that holds HGB (Indonesian legal entities may hold HGB; individual foreigners may not hold Hak Milik)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Developer company TROPICAL DEVELOPMENT PARTNERS (PT) is registered under number 4025081552104973",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "Independent notary can hold buyer funds in escrow and release them on milestones",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/"
+   },
+   {
+    "claim": "Earthworks in progress since October 2026 (tracker updated 23 Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "Villa construction starts January 2027, handover early 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "General contractor PT Lombok Biru Jaya Konstruksi has completed villas in Lombok and Bali (no independent record found)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/who-we-are"
+   },
+   {
+    "claim": "Guaranteed fixed income of EUR 20,000 a year for 3 years regardless of occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/investment"
+   },
+   {
+    "claim": "Price EUR 255,000 per villa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/"
+   },
+   {
+    "claim": "Land value appreciation of 15 to 20% a year (labelled an indicative estimate, not guaranteed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samudravillas.com/investment"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuta, Lombok, Indonesia",
+   "developer_company": "TROPICAL DEVELOPMENT PARTNERS (PT), registration 4025081552104973 (as published)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-10",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa"
+   ],
+   "size_min_m2": 140,
+   "size_max_m2": 140,
+   "price_min": 255000,
+   "price_max": 255000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "Milestone-based; schedule in brochure",
+   "foreign_ownership": "HGB held by the buyer's PT PMA (up to 80 years)",
+   "rental_programme": "Self-managed, revenue share (owner gets 80% of rental profit) or guaranteed EUR 20,000 a year for 3 years",
+   "service_charge": "Owner pays property tax (about EUR 100) and building insurance (about EUR 250) a year under self-management",
+   "brand": null,
+   "amenities": [
+    "private infinity pool",
+    "2 en-suite bedrooms",
+    "western kitchen",
+    "Starlink internet",
+    "generator",
+    "private parking",
+    "green roof"
+   ],
+   "lat": -8.896,
+   "lng": 116.236,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG; PKKPR via OSS)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Who-we-are page lists 'PBG - building permit' and 'PKKPR' as 'Available', shared on request; no numbers. No public PBG register exists to check",
+   "escrow": "FAQ: 'An independent notary can hold funds in escrow and release them upon milestone completion' (optional); notary named in Kota Mataram",
+   "progress": "Milestone tracker 'Updated 23 October 2026': land, survey, design done; terracing and earthworks in progress since October 2026; villa construction target January 2027",
+   "plans": "Ground and first floor plans published",
+   "record": "No completed projects by the developer; only the contractor's past villas are mentioned without names",
+   "returns": "'Guaranteed Return: Fixed income guaranteed for the first 3 years, regardless of occupancy rates', EUR 20,000 a year, '1 slot left'"
+  },
+  "positives": [
+   "Document checklist names PBG, PKKPR, HGB and soil tests",
+   "Optional notary escrow stated and notary named",
+   "Dated milestone tracker (23 Oct 2026)",
+   "Named contractor, architect and independent structural engineer",
+   "Coordinates of the site published via map link"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samudravillas.com/",
+   "https://samudravillas.com/assets/index-etUMNeYM.js",
+   "https://samudravillas.com/investment",
+   "https://samudravillas.com/who-we-are",
+   "https://maps.app.goo.gl/H4dJndUcaVJj1CGQA",
+   "https://www.ahp.id/?p=2955"
+  ]
+ },
+ {
+  "slug": "lithos-bespoke-residences",
+  "name": "LITHOS The Bespoke Residences",
+  "developer": "Properties Lombok",
+  "area": "Kuta Mandalika, Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://propertieslombok.com/lithos/",
+  "docs_url": "https://propertieslombok.com/lithos/",
+  "permit_number": null,
+  "docs_listed": [
+   "18 residences, 155 m2 three-level units with rooftop",
+   "phase price table: EUR 139,000 (phase 1, sold out) to 169,000 (turnkey) on 40-year lease; EUR 159,000 to 189,000 with 80-year 'HGB / Freehold' upgrade",
+   "separate premium villa table EUR 265,000 to 375,000",
+   "milestone payments 30/25/25/10/10",
+   "handover Q3 2027 (phases 1+2)",
+   "projected net ROI 15-18% and 16.4% worked example (not guaranteed)",
+   "monthly drone footage and structural reports only for members",
+   "notary fee 1% and VAT 11% 'if applicable'"
+  ],
+  "note": "18 three-level residences in Kuta Mandalika from EUR 139,000 on a 40-year lease (80-year 'HGB / Freehold' upgrade), handover Q3 2027 and 30/25/25/10/10 milestone payments; the page says construction is active with site preparation but progress reports go only to members, and no PBG number, escrow, floor plan or named past project is published. Marketing an 80-year 'freehold' and 'forever ownership' conflicts with Indonesian law, under which foreigners cannot hold freehold (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 139000,
+   "currency": "EUR",
+   "title": "leasehold",
+   "lease_base": 40,
+   "extension": "'Legacy' upgrade to 80 years marketed as 'HGB / Freehold' (price on request); HGB via PT PMA also offered",
+   "guaranteed_language": false,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "yield_pct": 16.4,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "payment_plan": "30% signing, 25% foundation and superstructure, 25% roof and glazing, 10% fit-out and MEP, 10% handover",
+   "units": 18,
+   "price_per_m2": 897
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Construction active, site preparation under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   },
+   {
+    "claim": "Handover of phases 1 and 2 in Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   },
+   {
+    "claim": "Agent listing gives year of construction 2027 and says only 18 residences exist",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.secondhome.nl/en/property/indonesia/west-nusa-tenggara/kuta-mandalika-lithos-villas-18-residences-economic-growth-zone-lombok-phase-2/villa-83627/"
+   },
+   {
+    "claim": "Phase 1 (3 units at EUR 139,000) sold out; phase 2 from EUR 149,000 with 2 of 4 reserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   },
+   {
+    "claim": "80-year 'HGB / Freehold' title, 'effectively forever ownership'",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Foreign individuals can take a notarised 40-year lease; PT PMA holders can take HGB",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Funds are released only as physical progress is verified (no escrow agent named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   },
+   {
+    "claim": "Developer has delivered bespoke luxury assets in Bali (none named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   },
+   {
+    "claim": "Seller is PT Razzaque Paradise Properties, a limited company in Kuta Mandalika (no registration number published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.secondhome.nl/en/makelaar/pt-razzaque-paradise-properties/"
+   },
+   {
+    "claim": "Projected net yield 15 to 18% a year, 16.4% for phase 1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   },
+   {
+    "claim": "No permit or building approval mentioned on the project page or agent listing",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertieslombok.com/lithos/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuta Mandalika, Lombok Tengah, Indonesia",
+   "developer_company": "PT Razzaque Paradise Properties (brand Razzaque Estates); no registration number published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR three-level residence",
+    "premium villa"
+   ],
+   "size_min_m2": 155,
+   "size_max_m2": 155,
+   "price_min": 139000,
+   "price_max": 375000,
+   "currency": "EUR",
+   "deposit_pct": 30,
+   "payment_plan": "30% signing, 25% foundation and superstructure, 25% roof and glazing, 10% fit-out and MEP, 10% handover",
+   "foreign_ownership": "40-year notarised lease for individuals; HGB for PT PMA holders; 80-year upgrade marketed as 'HGB / Freehold'",
+   "rental_programme": "Managed by Razzaque Estates; projected net EUR 22,752 a year on the EUR 139,000 unit (16.4%)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private rooftop",
+    "stone-clad structure",
+    "three levels"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or other permit published on the project page or the agent listing",
+   "escrow": "Milestone payments; 'funds are released only as physical progress is verified'; no escrow, bank guarantee or notary holding named",
+   "progress": "'Construction active, site preparation underway', undated; drone and structural reports only for members",
+   "plans": "No floor plans, only a unit description",
+   "record": "Claims delivery of bespoke assets in Bali; no project named. Site copyright Razzaque Paradise Properties",
+   "returns": "Projected net yield 15-18% and 16.4% example; not described as guaranteed. Agent listing shows a 'Return guarantee' checkbox with no terms"
+  },
+  "positives": [
+   "Phase prices and payment milestones published",
+   "Handover quarter published",
+   "Closing costs (1% notary, VAT if applicable) stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://propertieslombok.com/",
+   "https://propertieslombok.com/lithos/",
+   "https://www.secondhome.nl/en/property/indonesia/west-nusa-tenggara/kuta-mandalika-lithos-villas-18-residences-economic-growth-zone-lombok-phase-2/villa-83627/",
+   "https://www.secondhome.nl/en/makelaar/pt-razzaque-paradise-properties/",
+   "https://www.ahp.id/?p=2955"
+  ]
+ },
+ {
+  "slug": "enadia-seaview-collection",
+  "name": "ENADIA Villas SeaView Collection",
+  "developer": "ENADIA Villas",
+  "area": "Selong Belanak, Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://seaview-haven-hub.lovable.app/",
+  "docs_url": "https://seaview-haven-hub.lovable.app/",
+  "permit_number": null,
+  "docs_listed": [
+   "five villas on a 1,300 m2 hillside site, 2 sold",
+   "price table: construction-phase USD 245K-280K, completed USD 265K-300K",
+   "villa RISE 130 m2 living on 162 m2 land",
+   "planned timeline: construction kick-off Jul 2026, foundation Dec 2026, structure May 2027, finishing Sep 2027",
+   "site masterlayout image",
+   "projected net ROI 12-15%, occupancy 60-75%",
+   "USD 5,000 reservation, 30% on signing; taxes and notary fees included in price",
+   "site coordinates -8.8691, 116.1724",
+   "management by WYSE Property Management Lombok"
+  ],
+  "note": "Five villas above Selong Belanak from USD 245,000 with a planned timeline (construction kick-off July 2026, finishing September 2027) and projected 12-15% net ROI that is not guaranteed; the page still shows pre-launch wording and no dated progress, PBG, escrow or completed project. It sells the villas as 'freehold ... with no lease expiry', which Indonesian law does not allow for foreign individuals (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 245000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 5,
+   "payment_plan": "USD 5,000 reservation, 30% on agreement signing; rest not published",
+   "yield_pct": 13,
+   "price_per_m2": 2154
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Freehold ownership, 'full and sole title to your private villa, with no lease expiry'",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Construction kick-off July 2026 (page still shows pre-launch sales wording on 1 Nov 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "Foundation complete December 2026, structure May 2027, finishing September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "2 of 5 villas already sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "Construction-phase price from USD 245,000 (SUNSET 1BR) to USD 280,000 (RISE 2BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "Projected net ROI 13 to 15% (12 to 14% for 1BR), break-even in 7 to 8 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "Team has 'fifty years of building' (no completed projects or legal entity named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "Villas managed by WYSE Property Management Lombok",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "Site of 1,300 m2 above Selong Terraces at -8.8691, 116.1724",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   },
+   {
+    "claim": "No building permit or escrow mentioned",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seaview-haven-hub.lovable.app/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Selong Belanak, Lombok, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 130,
+   "price_min": 245000,
+   "price_max": 300000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "USD 5,000 reservation, 30% on signing",
+   "foreign_ownership": "Marketed as freehold; legal structure for foreign buyers not explained",
+   "rental_programme": "WYSE Property Management Lombok; projected revenue USD 42,000-52,000 a year, occupancy 60-75%",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "sea views",
+    "outdoor kitchen"
+   ],
+   "lat": -8.869,
+   "lng": 116.172,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Only a planned schedule (kick-off July 2026); no dated progress photos or figures; prices still labelled 'Construction Phase (current)'",
+   "plans": "Site masterlayout of the five plots published; no interior floor plans",
+   "record": "Team described generally ('fifty years of building'); no completed projects or company named",
+   "returns": "ROI labelled projected; no guarantee"
+  },
+  "positives": [
+   "Construction-phase and completed prices published",
+   "Planned milestone dates published",
+   "Site coordinates published",
+   "Transfer taxes and notary fees stated as included in the price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://seaview-haven-hub.lovable.app/",
+   "https://www.ahp.id/?p=2955"
+  ]
+ },
+ {
+  "slug": "selo-suites",
+  "name": "Selo Suites",
+  "developer": "Selo Properties (Selo Group)",
+  "area": "Selong Belanak, Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://seloproperties.co/selo-suites",
+  "docs_url": "https://seloproperties.co/selo-suites",
+  "permit_number": null,
+  "docs_listed": [
+   "1-bed suites from USD 179,000, USD 189,000 with plunge pool",
+   "floor plan (1-BR suite and 1-BR suite with pool)",
+   "9-12 month build starting after 50% or 75% down payment",
+   "owners get 45% of net rental revenue, 14 owner days a year",
+   "access to Selong Selo Resort facilities",
+   "FAQ on PT PMA structure; buyers may use own lawyer instead of SG Advisors",
+   "completed villas page: Villa 1G, Cullen, Manju, Serasi (move-in ready, USD 390,000-800,000)",
+   "developer page: Selo Group since 2009, 40+ villas, flagship resort of 50 villas",
+   "portal (bhomes) lists handover 2028 Q1"
+  ],
+  "note": "One-bedroom suites from USD 179,000 (USD 189,000 with plunge pool) with a floor plan, built 9-12 months after a 50% or 75% down payment inside the operating Selong Selo Resort, whose 2016 sales and 2022 reopening were reported by The Edge Singapore and trade press; the parent Selo Holdings Pte Ltd is a live Singapore company. No PBG, escrow or construction progress is published, and buyers pay most of the price before building starts (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 179000,
+   "currency": "USD",
+   "title": "HGB via PT PMA or long-term lease",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Selo Group: Selong Selo Resort & Villas (50 villas, operating; reopened March 2022) and 40+ villas claimed; four completed villas named on seloproperties.co/completed-villas",
+   "payment_plan": "50% or 75% down payment; construction (9-12 months) starts on receipt",
+   "yield_pct": null,
+   "units": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Parent company Selo Holdings Pte Ltd is registered in Singapore (UEN 201632623W, live, registered 29 Nov 2016)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://acrawatch.sg/company/selo-holdings-pte-ltd"
+   },
+   {
+    "claim": "Selo Group was founded in 2009 and bought land in South Lombok",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://edgeprop.sg/property-news/lombok-%E2%80%94-and-coming-resort-investment-frontier"
+   },
+   {
+    "claim": "Flagship Selong Selo Resort & Villas is operating with about 50 villas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/2022/03/14/selong-selo-resort-residences-welcomes-new-gm/"
+   },
+   {
+    "claim": "Resort reopened in March 2022 with over 50 villas of one to seven bedrooms (press release by Selo Group)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hospitalitynet.org/announcement/41007772/selong-selo-resort-residences-reopens-in-scenic-south-lombok-indonesia"
+   },
+   {
+    "claim": "Four completed villas (1G, Cullen, Manju, Serasi) are move-in ready",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seloproperties.co/completed-villas"
+   },
+   {
+    "claim": "Suites built 9 to 12 months after the 50% or 75% down payment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seloproperties.co/faq"
+   },
+   {
+    "claim": "Handover 2028 Q1 (portal listing)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bhomes.com/en/off-plan/selo-group/selo-suite-villas"
+   },
+   {
+    "claim": "Price from USD 179,000, USD 189,000 with plunge pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seloproperties.co/selo-suites"
+   },
+   {
+    "claim": "Owners receive 45% of net rental revenue with 'built-in downside protection' (no guarantee stated)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seloproperties.co/selo-suites"
+   },
+   {
+    "claim": "Foreign buyers can hold via PT PMA with HGB or a long-term lease (consistent with law)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "No PBG building permit or escrow mentioned for Selo Suites",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seloproperties.co/selo-suites"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2009,
+   "developer_hq": "Singapore (Selo Holdings Pte Ltd); resort in Selong Belanak, Lombok",
+   "developer_company": "Selo Holdings Pte Ltd, Singapore UEN 201632623W",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 40,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR suite",
+    "1BR suite with plunge pool"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 179000,
+   "price_max": 189000,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% or 75% down payment, build starts on receipt",
+   "foreign_ownership": "HGB through PT PMA or long-term lease",
+   "rental_programme": "Resort rental pool managed by Selo; owners get 45% of net rental revenue and 14 owner days a year",
+   "service_charge": null,
+   "brand": "Selong Selo Resort & Villas",
+   "amenities": [
+    "infinity pool and clubhouse",
+    "SENJA wellness sanctuary",
+    "Aura restaurant and bar",
+    "gym",
+    "spa",
+    "shuttle and airport transfers",
+    "24-hour security",
+    "butler service"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit number published",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published; 50-75% paid before construction",
+   "progress": "Construction starts only after down payment; no progress published",
+   "plans": "Floor plan for both suite types published",
+   "record": "Completed villas page names four built villas; The Edge Singapore (2016) reported phase 1 sales and TTG Asia (2022) the operating resort; developer page claims 40+ villas and a 50-villa resort",
+   "returns": "45% revenue share; no guaranteed return language"
+  },
+  "positives": [
+   "Developer runs an operating resort reported in independent press",
+   "Parent company is a live Singapore registered company",
+   "Floor plan and prices published",
+   "Buyers may appoint their own legal counsel"
+  ],
+  "flags": [],
+  "sources": [
+   "https://seloproperties.co/completed-villas",
+   "https://seloproperties.co/developer",
+   "https://seloproperties.co/faq",
+   "https://seloproperties.co/selo-suites",
+   "https://www.bhomes.com/en/off-plan/selo-group/selo-suite-villas",
+   "https://acrawatch.sg/company/selo-holdings-pte-ltd",
+   "https://edgeprop.sg/property-news/lombok-%E2%80%94-and-coming-resort-investment-frontier",
+   "https://www.ttgasia.com/2022/03/14/selong-selo-resort-residences-welcomes-new-gm/",
+   "https://www.hospitalitynet.org/announcement/41007772/selong-selo-resort-residences-reopens-in-scenic-south-lombok-indonesia",
+   "https://www.ahp.id/?p=2955"
+  ]
+ },
+ {
+  "slug": "lendang-luar-2030",
+  "name": "Lendang Luar 2030",
+  "developer": "Lombok International Development (PT Lombok Urban Development)",
+  "area": "Lendang Luar, Desa Malaka, Pemenang, North Lombok (between Senggigi and Malimbu)",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://lombokid.com/en/developments/lendang-luar",
+  "docs_url": "https://lombokid.com/en/faq",
+  "permit_number": null,
+  "docs_listed": [
+   "district masterplan (4 zones, 7 marked sites) with Google Maps pin",
+   "nine pre-sale villa types EUR 38,000-259,000, sizes 30-230 m2",
+   "show villa built (Mediterranean Villa)",
+   "Tiny House Selvatic, Ayuara and Cluster Privado listed as under construction",
+   "legal notice: PT Lombok Urban Development, North Lombok",
+   "FAQ: HGB via PT PMA up to 80 years, 'extension not automatic'; 9 to 15 month timeline incl. 2 months for permits",
+   "track record: Lombok Souls (35 villas, operating), Kelapa Lodge, Villa Mendi; '68+ villas built' and '70+ villas delivered'",
+   "disclaimer: projections do not guarantee returns; observed net yields 7-14%",
+   "management fee 15% of net revenue"
+  ],
+  "note": "A 100-villa district at Lendang Luar (Desa Malaka, North Lombok) with nine pre-sale types from EUR 38,000 and a built show villa; local press in June 2026 reported the developer has built there since 2024, employs about 230 people and runs the operating Lombok Soul hotel. No PBG, escrow, completion date or dated progress for the district is published, and the developer's own villa counts differ (35 operational, 68+ built, 70+ delivered) (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 38000,
+   "currency": "EUR",
+   "title": "HGB via PT PMA",
+   "lease_base": null,
+   "extension": "HGB 30+20+30 years, extension not automatic",
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Lombok International Development: Lombok Souls (35 villas, operating; Lombok Soul hotel confirmed operating with about 21 staff by Radar Mandalika and Siar Post, June 2026), Kelapa Lodge and Villa Mendi named as operating",
+   "units": 100,
+   "yield_pct": null,
+   "payment_plan": "Not published on the page (payment schedule in investor dossier)",
+   "price_per_m2": 1267
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Developer has been building at Dusun Lendang Luar, Desa Malaka, since 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://insidelombok.id/lombok-utara/lombok-id-bertekad-entaskan-pengangguran-di-lombok-utara/"
+   },
+   {
+    "claim": "About 230 local people employed on the projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://siarpost.com/2026/06/18/lombok-id-buktikan-dampak-investasi-ratusan-warga-lokal-kini-bekerja/"
+   },
+   {
+    "claim": "Lombok Soul(s) hotel is operating (about 21 staff); first project was developed through PT Villas Mendi Indo",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://radarmandalika.id/lombok-id-tekan-pengangguran-di-lendang-luar-kembangkan-usaha-hingga-ke-bayan/"
+   },
+   {
+    "claim": "Lombok Souls has 35 villas fully operational",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/about"
+   },
+   {
+    "claim": "Villa totals: '35 operational villas', '68+ villas built' and '70+ villas delivered' on the developer's own pages",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://lombokid.com/en/"
+   },
+   {
+    "claim": "Project has public backing of the North Lombok Regency, DPMPTSP and Bank Mandiri (press confirms the Regent attended the June 2026 gathering, not any permit or financing)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/news"
+   },
+   {
+    "claim": "Show villa built and visitable",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/developments/lendang-luar"
+   },
+   {
+    "claim": "100 villas in nine types from EUR 38,000 to EUR 259,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/developments/lendang-luar"
+   },
+   {
+    "claim": "Foreigners hold through a PT PMA with HGB up to 80 years, extension not automatic",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Permits are obtained in about 2 months after purchase (no PBG number for any villa published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/faq"
+   },
+   {
+    "claim": "Comparable villas achieve net yields of 7 to 14% (stated as observed, not a guarantee)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/faq"
+   },
+   {
+    "claim": "Legal entity is PT Lombok Urban Development, North Lombok (no registration number published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lombokid.com/en/legal"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2022,
+   "developer_hq": "North Lombok, West Nusa Tenggara, Indonesia",
+   "developer_company": "PT Lombok Urban Development (brand Lombok International Development); earlier projects via PT Villas Mendi Indo; no registration number published",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 35,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "loft",
+    "studio",
+    "1BR villa",
+    "2BR villa",
+    "3BR duplex",
+    "A-frame"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 230,
+   "price_min": 38000,
+   "price_max": 259000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "PT PMA holding HGB (30+20+30 years, extension not automatic)",
+   "rental_programme": "Developer management at 15% of net revenue; observed net yields 7-14% (not guaranteed)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "central plaza",
+    "community pool",
+    "tropical gym",
+    "bar and networking",
+    "commercial spaces",
+    "sports complex",
+    "coworking"
+   ],
+   "lat": -8.457,
+   "lng": 116.04,
+   "permit_authority": "Kabupaten Lombok Utara (PBG via SIMBG; DPMPTSP one-stop service)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Mentions backing from the North Lombok DPMPTSP and 'land and building permits' officials generally; FAQ allows 2 months for permits; no PBG number",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Site says construction active since 2024 and lists villas under construction; local press (Inside Lombok, Radar Mandalika, Siar Post, June 2026) confirms building since 2024 but no dated progress or figure for the district",
+   "plans": "Masterplan with zones and villa types and sizes",
+   "record": "Lombok Souls (35 villas) and Kelapa Lodge named; Lombok Soul hotel operating per local press",
+   "returns": "Disclaimer: projections 'do not guarantee returns'"
+  },
+  "positives": [
+   "Operating hotel and building activity confirmed by local press",
+   "Explicit no-guarantee disclaimer and accurate statement that foreigners cannot own freehold",
+   "Legal entity published",
+   "Map pin of the district published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lombokid.com/en/",
+   "https://lombokid.com/en/about",
+   "https://lombokid.com/en/developments/lendang-luar",
+   "https://lombokid.com/en/legal",
+   "https://lombokid.com/en/faq",
+   "https://lombokid.com/en/news",
+   "https://maps.app.goo.gl/hADneQxxp4YJ1Yxs7",
+   "https://insidelombok.id/lombok-utara/lombok-id-bertekad-entaskan-pengangguran-di-lombok-utara/",
+   "https://radarmandalika.id/lombok-id-tekan-pengangguran-di-lendang-luar-kembangkan-usaha-hingga-ke-bayan/",
+   "https://siarpost.com/2026/06/18/lombok-id-buktikan-dampak-investasi-ratusan-warga-lokal-kini-bekerja/",
+   "https://www.ahp.id/?p=2955"
+  ]
+ },
+ {
+  "slug": "saraya-beach-lombok",
+  "name": "Saraya Beach Resort & Residences",
+  "developer": "Kinnara Capital",
+  "area": "Buwun Mas, Sekotong, West Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://sarayalombok.com/",
+  "docs_url": "https://sarayalombok.com/legal/",
+  "permit_number": null,
+  "docs_listed": [
+   "154-villa resort on 3.7 ha; interactive masterplan with lot availability",
+   "six villa types 60-220 m2 from A$249,000 to A$1,059,000, per-type area specs",
+   "legal page: PT Kinnara Capital Indonesia NIB 2601260101567 (KBLI 68111), PT Saraya Resort Lombok NIB 1411250065654, HK, SG and AU group entities with numbers",
+   "20-year fixed leasehold or PT PMA with HGB 30+20+30",
+   "buyer protection page: controlled project account with dual signatories; 30/30/20/20 milestone payments with independent verification; longstop date remedies",
+   "development timeline at kinnara.capital: overall progress 20% (updated Aug 2026), permit applications in progress Aug-Oct 2026, practical completion by Apr 2028",
+   "resort opening July 2027 on home page",
+   "projected 20-30% annual returns and 19.7% yield example, not guaranteed; owners get 60% of rental revenue"
+  ],
+  "note": "154-villa beachfront resort in Buwun Mas, Sekotong, from A$249,000 on a 20-year lease or PT PMA/HGB, by PT Kinnara Capital Indonesia; the developer publishes its entity numbers (Australian and Singapore entities confirmed on official registers), a dual-signatory project account and a timeline at 20% overall progress (August 2026). That timeline still lists permit applications as in progress and gives practical completion by April 2028, later than the July 2027 opening on the home page; the group has no completed projects (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 249000,
+   "currency": "AUD",
+   "title": "leasehold or HGB via PT PMA",
+   "lease_base": 20,
+   "extension": "Leasehold fixed, no automatic extension; HGB 30+20+30 renewable up to 80 years",
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Buyer payments go into a 'controlled project account' with dual signatory control (bank not named); milestones released only after independent verification",
+   "progress_pct": 20,
+   "developer_delivered": null,
+   "price_per_m2": 4150,
+   "yield_pct": 19.7,
+   "units": 154,
+   "payment_plan": "Refundable reservation deposit; 30% signing, 30% foundations, 20% lock-up/roof, 20% practical completion and handover"
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Kinnara Capital Pty Ltd is an Australian company, ACN 692 017 977 (ABN active from 20 Oct 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=692017977"
+   },
+   {
+    "claim": "Kinnara Pte Ltd is a Singapore company, UEN 202443988E (registered 25 Oct 2024, marketing activity)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://acrawatch.sg/company/kinnara-pte-ltd"
+   },
+   {
+    "claim": "Developer PT Kinnara Capital Indonesia holds NIB 2601260101567 (KBLI 68111)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/legal/"
+   },
+   {
+    "claim": "Overall progress 20%; site works and infrastructure completed Feb-Aug 2026 (timeline updated August 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kinnara.capital/development-timeline"
+   },
+   {
+    "claim": "Building permits: timeline lists 'permit applications and processing' as in progress Aug-Oct 2026, so no permit is shown as granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kinnara.capital/development-timeline"
+   },
+   {
+    "claim": "Resort opening July 2027 (home page) versus practical completion by April 2028 (base programme)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kinnara.capital/development-timeline"
+   },
+   {
+    "claim": "Buyer funds held in a controlled project account with dual signatories",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/buyer-protection/"
+   },
+   {
+    "claim": "Masterplan FAQ calls the PT PMA option 'freehold ... full ownership', while the legal page correctly calls HGB the 'closest equivalent to freehold' (foreigners cannot hold Hak Milik)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Leasehold term is 20 years fixed (earlier marketing described leasehold without a term)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/legal/"
+   },
+   {
+    "claim": "Group has no completed projects of its own; contractor named only during due diligence",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/about/"
+   },
+   {
+    "claim": "Projected annual returns 20-30%, 19.7% net yield on the Aegean at 80% occupancy (not guaranteed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/accommodation/aegean/"
+   },
+   {
+    "claim": "Press coverage cited is a Forbes Australia BrandVoice (paid) piece and syndicated releases",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/press/"
+   },
+   {
+    "claim": "Price from A$249,000 (Aegean, 60 m2 land, 79.7 m2 built)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sarayalombok.com/accommodation/aegean/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Balikpapan, Indonesia (kinnara.capital office); group parent in Hong Kong",
+   "developer_company": "PT Kinnara Capital Indonesia, NIB 2601260101567; parent Kinnara Limited (HK BRN 76606042); Kinnara Capital Limited (HK BRN 76424042); Kinnara Pte Ltd (SG UEN 202443988E); Kinnara Capital Pty Ltd (ACN 692 017 977)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": 0,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2028-Q2",
+   "original_handover": "2027-Q3 (opening July 2027 still on home page)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa",
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 220,
+   "price_min": 249000,
+   "price_max": 1059000,
+   "currency": "AUD",
+   "deposit_pct": 30,
+   "payment_plan": "30% signing, 30% foundations, 20% lock-up, 20% handover",
+   "foreign_ownership": "20-year fixed leasehold held personally, or dedicated PT PMA holding HGB (30+20+30 years)",
+   "rental_programme": "PT Saraya Resort Lombok manages; owners get 60% of rental revenue; projected 20-30% returns (not guaranteed)",
+   "service_charge": null,
+   "brand": "Saraya Beach Resort & Residences",
+   "amenities": [
+    "Amara Beach Club",
+    "Sanctuary Spa",
+    "The Pavilion restaurant",
+    "Breakwater Sports Bar",
+    "fitness centre",
+    "private pools"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Barat (PBG via SIMBG)",
+   "brochure_url": "https://sarayalombok.com/brochures/"
+  },
+  "evidence": {
+   "permit": "No PBG number; the developer's own timeline shows permit applications and processing in progress Aug-Oct 2026. NIB numbers are business IDs, not building permits",
+   "escrow": "Buyer protection page: deposits go into a 'controlled project account' with 'dual signatory control'; no bank or escrow agent named",
+   "progress": "kinnara.capital timeline: overall progress 20%, last updated August 2026, phase 9 villa construction Oct 2026-Oct 2027",
+   "plans": "Masterplan with lots and area specifications per villa type",
+   "record": "About page says the group chose to anchor its first major development 'around the right delivery partners rather than around prior projects of our own'",
+   "returns": "'Projected returns are estimates only and not guaranteed'"
+  },
+  "positives": [
+   "Full corporate structure with registration numbers published; two group entities confirmed on official registers",
+   "Controlled project account and milestone payments with independent verification described",
+   "Dated development timeline with percentage",
+   "Leasehold term and lack of automatic extension stated plainly",
+   "Longstop date and refund remedies described"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sarayalombok.com/",
+   "https://sarayalombok.com/masterplan/",
+   "https://sarayalombok.com/accommodation/aegean/",
+   "https://sarayalombok.com/legal/",
+   "https://sarayalombok.com/buyer-protection/",
+   "https://sarayalombok.com/about/",
+   "https://sarayalombok.com/press/",
+   "https://sarayalombok.com/location/",
+   "https://kinnara.capital/development-timeline",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=692017977",
+   "https://acrawatch.sg/company/kinnara-pte-ltd",
+   "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia",
+   "https://www.ahp.id/?p=2955"
+  ]
+ }
+]

@@ -1,0 +1,2038 @@
+[
+ {
+  "slug": "nativa-tulum",
+  "name": "Nativa Tulum",
+  "developer": "Grupo Avica / Canteras Peninsulares",
+  "area": "Tulum (Región 10)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://nativatulum.mx/",
+  "docs_url": "https://nativatulum.mx/modelos/",
+  "docs_listed": [
+   "unit-by-unit availability with m2 and prices in MXN and USD (29 units listed)",
+   "typology floor plans (Jun studio, Káa 2BR, Óox 3BR)",
+   "10% down payment option, MXN 20,000 refundable reservation",
+   "developer CV PDF (Grupo Canteras Peninsulares, 1963-2018 works)",
+   "architects' portfolio PDF (AS Arquitectura)",
+   "BBVA referenced-payment instructions PDF in the name of Nativa Tulum SA de CV",
+   "PROFECO-registered presale contract 5849-2022",
+   "claims monthly construction updates (none published)"
+  ],
+  "note": "73-unit condo on 6,250 m2 in Tulum Región 10 sold by Nativa Tulum SA de CV; unit prices run from MXN 2,502,794 to 6,543,102 (the 2,252,515 figure in the old record was the balance after the 10% down payment, not a discount). Its presale contract is registered with PROFECO (5849-2022, Oct 2022), but no licence number, escrow, dated progress or delivery date is published, and the 'featured projects' PDF is the architects' portfolio, not the developer's. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 2502794,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone) or direct deed for Mexicans; not stated on site",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Grupo Canteras Peninsulares CV (1963-2018) lists housing estates (Fraccionamiento El Convento, Las Islas, El Renacimiento, Los Angeles) and condos (Costa Blanca Puerto Morelos, Costa Brava, Telchac condohotel); site counter claims 3,000 homes delivered",
+   "units": 73,
+   "payment_plan": "MXN 20,000 refundable reservation (15 days); 10% down payment, balance per contract",
+   "price_per_m2": 46469,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion number on the site; the PROFECO-registered contract only has the seller declare that it holds the licences and permits, with no numbers",
+   "escrow": "Corrected from the old record: the homepage mentions a developer bridge loan (credito puente), which is bank finance for the developer, not buyer deposit protection. Payments go to a BBVA CIE agreement (119068473) in the name of Nativa Tulum SA de CV; no fideicomiso or escrow for deposits is stated",
+   "progress": "Homepage says monthly avances de obra are available, but none are published on the site, gallery or blog (blog posts are general market articles)",
+   "plans": "Modelos page shows floor plan images per typology with interior/exterior m2",
+   "record": "Nosotros page counters: 45 years, 3,000 homes delivered, 2,000,000 m2 built; developer CV PDF names delivered housing estates and condos in Yucatan and Quintana Roo. Note the 'proyectos destacados' PDF is AS Arquitectura's portfolio (Kuxtal, Townsquare), not the developer's",
+   "returns": "Mentions vacation-rental operator plans; no guaranteed return or yield figure"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Seller Nativa Tulum SA de CV has a PROFECO-registered presale contract (5849-2022, 7 Oct 2022)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=5849-2022"
+   },
+   {
+    "claim": "Seller company exists with RFC NTU190723U71 and address in Tulum centro",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=5849-2022"
+   },
+   {
+    "claim": "Project holds all construction, safety and land-use licences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=5849-2022"
+   },
+   {
+    "claim": "Developer bridge loan (credito puente) from a bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nativatulum.mx/"
+   },
+   {
+    "claim": "Buyer deposits are protected by escrow or trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nativatulum.mx/assets/datos_transfer_int.pdf"
+   },
+   {
+    "claim": "Monthly construction updates are provided",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nativatulum.mx/blog-es/"
+   },
+   {
+    "claim": "73 units on 6,250 m2, 9 typologies of 46.95 to 136.75 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nativatulum.mx/"
+   },
+   {
+    "claim": "Developer has 45 years of experience and delivered 3,000 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nativatulum.mx/nosotros/"
+   },
+   {
+    "claim": "Grupo Canteras Peninsulares is an established Yucatan infrastructure contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bnamericas.com/en/company-profile/canteras-peninsulares-sa-de-cv---remolcadores-para-la-construccion-sa-de-cv"
+   },
+   {
+    "claim": "Featured projects (Kuxtal, Townsquare) are the developer's own deliveries",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nativatulum.mx/assets/proyectos_destacados.pdf"
+   },
+   {
+    "claim": "Lowest unit price MXN 2,252,515 after discount",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nativatulum.mx/"
+   },
+   {
+    "claim": "Reservation of MXN 20,000 is 100% refundable within 15 days",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nativatulum.mx/"
+   },
+   {
+    "claim": "Buyer may cancel within 5 business days of signing with refund",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=5849-2022"
+   },
+   {
+    "claim": "Agent listing (Pincali DTS-708) shows 75 units and 'year built 2026' from MXN 3,171,528; developer says 73 units",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/condominio-nativa-tulum-tulum-centro"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1963,
+   "developer_hq": "Mérida, Yucatán, Mexico",
+   "developer_company": "Nativa Tulum SA de CV (RFC NTU190723U71), project of Grupo Avica and Canteras Peninsulares",
+   "developer_units_delivered": 3000,
+   "unit_types": [
+    "studio",
+    "2BR",
+    "3BR",
+    "penthouse",
+    "pentgarden"
+   ],
+   "size_min_m2": 46.95,
+   "size_max_m2": 138.43,
+   "price_min": 2502794,
+   "price_max": 6543102,
+   "currency": "MXN",
+   "deposit_pct": 10,
+   "payment_plan": "MXN 20,000 refundable reservation; 10% down payment",
+   "foreign_ownership": "Not stated on site; Tulum is in the restricted coastal zone, so foreigners would hold through a bank fideicomiso",
+   "rental_programme": "Mentions vacation-rental operator platforms; no figures",
+   "amenities": [
+    "pool",
+    "beach club agreements",
+    "gym",
+    "cowork",
+    "yoga area",
+    "running track",
+    "event room",
+    "24h security"
+   ],
+   "lat": 20.214,
+   "lng": -87.481,
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": "https://nativatulum.mx/assets/canteras_curriculum_b.pdf",
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Presale contract registered with PROFECO (5849-2022), including a 5-business-day cancellation right",
+   "Unit-level price and size table with floor plans",
+   "Developer group with a long public-works history in Yucatan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://nativatulum.mx/",
+   "https://nativatulum.mx/nosotros/",
+   "https://nativatulum.mx/modelos/",
+   "https://nativatulum.mx/blog-es/",
+   "https://nativatulum.mx/assets/canteras_curriculum_b.pdf",
+   "https://nativatulum.mx/assets/proyectos_destacados.pdf",
+   "https://nativatulum.mx/assets/datos_transfer_int.pdf",
+   "https://rpca.profeco.gob.mx/",
+   "https://rpca.profeco.gob.mx/getDoc?p=5849-2022",
+   "https://bnamericas.com/en/company-profile/canteras-peninsulares-sa-de-cv---remolcadores-para-la-construccion-sa-de-cv"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 0
+ },
+ {
+  "slug": "hunab-ku-sanctuary-tulum",
+  "name": "Hunab-Ku Sanctuary",
+  "developer": "Home Tulum",
+  "area": "Tulum (Región 8)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://hunabkusanctuary.com/",
+  "docs_url": "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf",
+  "docs_listed": [
+   "2026 brochure PDF (48 pages) with unit layouts and a 2D plan of the 3BR lock-off",
+   "prices per typology from USD 176,000 (Deluxe Private Pool 55 m2) to USD 1,082,000 (PH villa 206 m2)",
+   "'real-time construction progress, April 2026 overview' gallery",
+   "ROI tables per unit in USD and MXN (projections, appreciation 'not guaranteed')",
+   "address Calle 65 Sur, Región 8, Tulum"
+  ],
+  "note": "48-unit condo-hotel by Home Tulum Developments in Tulum Región 8, from USD 176,000; the brochure does include unit layouts (old record said no plans) and April 2026 gallery photos show finished interiors, while agent Maya Ocean lists handover Q4 2026. Unit counts disagree (brochure 48, Maya Ocean 52, Plalla 86), and no licence, fideicomiso, developer track record or PROFECO contract was found. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 176000,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 48,
+   "payment_plan": null,
+   "price_per_m2": 3200,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number on site or brochure",
+   "escrow": "No fideicomiso, escrow or deposit protection published",
+   "progress": "Homepage section 'real-time construction progress, April 2026 overview' with photos uploaded April 2026 (finished kitchen and decor); no % published",
+   "plans": "Corrected: brochure pages show furnished layout plans for Zen, Deluxe and Master units and a dimensioned 2D plan of the 3BR lock-off",
+   "record": "Footer says 'Developed by Home Tulum Developments'; no completed projects, company name or registration published",
+   "returns": "ROI tables per unit (example PH LO: gross USD 34,408 at 70% occupancy and USD 260 ADR, 35% costs, plus 5% appreciation counted in 'net profit'); appreciation stated as 'not guaranteed', prices and returns 'subject to change'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has 48 units and 16 models, each with a private pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf"
+   },
+   {
+    "claim": "Maya Ocean lists 52 residences on 5 levels",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mayaocean.com/complex/hunab-ku-sanctuary"
+   },
+   {
+    "claim": "Plalla lists 86 apartments",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://plalla.com/en/property/hunab-ku-sanctuary"
+   },
+   {
+    "claim": "Handover planned Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mayaocean.com/complex/hunab-ku-sanctuary"
+   },
+   {
+    "claim": "Construction progress as of April 2026 shows finished interiors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/wp-content/uploads/2026/04/1000737341.jpg"
+   },
+   {
+    "claim": "Starting price USD 176,000 (developer) vs USD 136,842 (Maya Ocean) vs USD 159,000 (Plalla)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/"
+   },
+   {
+    "claim": "Building permit or licence issued by Tulum municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/"
+   },
+   {
+    "claim": "Deposits protected by fideicomiso or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf"
+   },
+   {
+    "claim": "Home Tulum Developments has delivered previous projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/"
+   },
+   {
+    "claim": "Developer or project has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Projected PH lock-off gross income USD 34,408 per year at 70% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/"
+   },
+   {
+    "claim": "Condo-hotel professional rental operation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hunabkusanctuary.com/"
+   }
+  ],
+  "facts": {
+   "developer_company": "Home Tulum Developments (legal entity not published)",
+   "handover_promised": "2026-Q4",
+   "unit_types": [
+    "1BR",
+    "2BR lock-off",
+    "3BR lock-off",
+    "6BR PH villa"
+   ],
+   "size_min_m2": 55,
+   "size_max_m2": 206,
+   "price_min": 176000,
+   "price_max": 1082000,
+   "currency": "USD",
+   "foreign_ownership": "Not stated; Tulum is in the restricted zone, so foreigners would normally hold through a bank fideicomiso",
+   "rental_programme": "Condo-hotel operation; projections assume 70% occupancy, USD 260 ADR, 35% operating costs",
+   "amenities": [
+    "rooftop infinity pool",
+    "spa",
+    "temazcal",
+    "gym",
+    "rooftop cinema",
+    "beach club access",
+    "cenote garden",
+    "lookout nest"
+   ],
+   "lat": 20.175,
+   "lng": -87.463,
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf",
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Brochure with unit layouts and per-typology prices",
+   "Dated April 2026 progress gallery with real photos",
+   "Appreciation explicitly stated as not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://hunabkusanctuary.com/",
+   "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf",
+   "https://hunabkusanctuary.com/wp-content/uploads/2026/04/1000737341.jpg",
+   "https://mayaocean.com/complex/hunab-ku-sanctuary",
+   "https://plalla.com/en/property/hunab-ku-sanctuary",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 0
+ },
+ {
+  "slug": "zamajal-tulum",
+  "name": "Zamajal",
+  "developer": "Grupo Malica",
+  "area": "Tulum (Región 08)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "completed",
+  "status": "completed",
+  "url": "https://zamajal.com/",
+  "docs_url": "https://zamajal.com/wp-content/uploads/2025/03/disponibilidad.pdf",
+  "docs_listed": [
+   "per-typology prices from MXN 2,765,934 (Ajal studio)",
+   "level-by-level floor plans with sold/reserved units (availability PDF dated 6 Mar 2025)",
+   "typology descriptions with m2",
+   "360 showroom",
+   "address Región 08, Mz 600, Lote 04, Tulum",
+   "site still shows 'Entregas diciembre del 2025'",
+   "developer social posts (Sept 2026): 'desarrollo terminado', 'entrega inmediata'"
+  ],
+  "note": "Studios and lock-offs by Grupo Malica in Tulum Región 08 from MXN 2,765,934; the developer's own social posts from 25 Sep 2026 call it a finished project with immediate delivery from MXN 2,600,000, while its website still says 'Entregas diciembre del 2025' and agents gave Sep 2025 and Sep 2026 dates. Completion is only developer-stated; no licence, fideicomiso, PROFECO contract or independent record of Grupo Malica was found. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 2765934,
+   "currency": "MXN",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Grupo Malica site lists Hotel Extended Suites Querétaro and Mérida, Puerta del Sur, Residencia San Javier and La Molienda, without dates or units",
+   "units": 80,
+   "payment_plan": "MXN 20,000 reservation; agent-listed plans 30/70, 30/35/35, 30/30/40, 80/20 cash with discounts",
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or other permit number on the site",
+   "escrow": "No fideicomiso, escrow or deposit guarantee published",
+   "progress": "Website shows only the passed 'Entregas diciembre del 2025'; developer social posts mirrored on Gloopla (25 Sep 2026) say 'desarrollo terminado', 'entrega inmediata', 'departamentos listos para habitar'. No independent confirmation",
+   "plans": "Availability PDF has floor plans of each level (PB to 4N) with sold and reserved units marked",
+   "record": "Grupo Malica site names projects (two Extended Suites hotels, Puerta del Sur, Residencia San Javier, La Molienda) but gives no dates, units or completion status; part of 'Corporativo Empresarial Hidalgo' per its site",
+   "returns": "No guaranteed return language on the developer site; an old agent listing claimed 'the highest capital gain and return on rent in all of Mexico' without figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery December 2025 (website)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zamajal.com/"
+   },
+   {
+    "claim": "Delivery September 2025 (2025 agent listing, suspended 26 Dec 2025)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/preventa-deptos-zamajal-tulum"
+   },
+   {
+    "claim": "Under construction with delivery September 2026 (agent portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.proyectos-inmobiliarios.com/proyecto.asp?Cod_Propiedad=507"
+   },
+   {
+    "claim": "Project is finished, immediate delivery from MXN 2,600,000 (developer social post 25 Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gloopla.com/MX/Tulum/373764802493781/Zamajal-Tulum"
+   },
+   {
+    "claim": "Unit count: 71 studios, 8 two-bed and 1 three-bed lock-off (Plalla) vs 71 units (Riviera Maya Cozy)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://plalla.com/en/property/zamajal-tulum-en/"
+   },
+   {
+    "claim": "3-bedroom inventory 100% sold, 25 units available (Jan 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.casamigo.net/property/zamajal-tulum"
+   },
+   {
+    "claim": "Building licence issued for the project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zamajal.com/"
+   },
+   {
+    "claim": "Deposits protected by fideicomiso or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zamajal.com/"
+   },
+   {
+    "claim": "Grupo Malica SA de CV belongs to Corporativo Empresarial Hidalgo and delivered hotels and housing projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malica.com.mx/"
+   },
+   {
+    "claim": "Developer has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Starting price MXN 2,765,934 (site) vs MXN 2,682,938 (Plalla)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://plalla.com/en/property/zamajal-tulum-en/"
+   },
+   {
+    "claim": "Units are permitted for tourist short-term rental",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.proyectos-inmobiliarios.com/proyecto.asp?Cod_Propiedad=507"
+   }
+  ],
+  "facts": {
+   "developer_company": "Grupo Malica, S.A. de C.V. (registration not published)",
+   "developer_hq": "Hidalgo, Mexico (phone +52 771 area code)",
+   "handover_promised": "2025-Q4",
+   "original_handover": "2025-Q3 (Sep 2025 per 2025 agent listing)",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR lock-off",
+    "3BR lock-off",
+    "2BR penthouse lock-off"
+   ],
+   "size_min_m2": 49.88,
+   "size_max_m2": 207,
+   "price_min": 2765934,
+   "price_max": 7444080,
+   "currency": "MXN",
+   "payment_plan": "MXN 20,000 reservation; financing plans per agents",
+   "foreign_ownership": "Not stated; restricted coastal zone, so foreigners would hold through a bank fideicomiso",
+   "rental_programme": "None stated; agents describe tourist-use units without operator",
+   "amenities": [
+    "jungle pool",
+    "infinity pool",
+    "spa",
+    "temazcal",
+    "gym",
+    "yoga area",
+    "coworking",
+    "restaurant bar"
+   ],
+   "lat": 20.178,
+   "lng": -87.46,
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": "https://zamajal.com/wp-content/uploads/2025/03/disponibilidad.pdf",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Level-by-level floor plans with sold/reserved status",
+   "Per-typology prices published",
+   "Developer now states the building is finished with immediate delivery"
+  ],
+  "flags": [],
+  "sources": [
+   "https://zamajal.com/",
+   "https://zamajal.com/wp-content/uploads/2025/03/disponibilidad.pdf",
+   "https://malica.com.mx/",
+   "https://www.gloopla.com/MX/Tulum/373764802493781/Zamajal-Tulum",
+   "https://www.proyectos-inmobiliarios.com/proyecto.asp?Cod_Propiedad=507",
+   "https://www.casamigo.net/property/zamajal-tulum",
+   "https://plalla.com/en/property/zamajal-tulum-en/",
+   "https://rivieramayacozy.com/listings/zamajal-tulum/",
+   "https://www.pincali.com/en/home/preventa-deptos-zamajal-tulum",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 0
+ },
+ {
+  "slug": "tcc-park-garden-tulum",
+  "name": "Tulum Country Club – Park Garden",
+  "developer": "Grupo Piñero",
+  "area": "Tulum Country Club, Akumal (Manzana 55)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.tulumcountryclub.com/es/propiedades/park-garden",
+  "docs_url": "https://www.tulumcountryclub.com/es/propiedades/park-garden",
+  "docs_listed": [
+   "20 homes on lots of about 300 m2 with 165 m2 built (text)",
+   "two typologies: Gardenia '309 m2 construidos' from USD 598,000 and Magnolia '300 m2' from USD 602,000",
+   "'Descargar plano' button opens an aerial lot map, not a floor plan",
+   "developer financing from 30% down at 5-7%, reserve from USD 5,000",
+   "seller BP Promotions SA de CV (RFC BPR060829H70) named in the privacy notice"
+  ],
+  "note": "20-villa phase inside Grupo Piñero's Tulum Country Club (in Akumal) from USD 598,000, sold by BP Promotions SA de CV; the 'download plan' button only opens an aerial map of 20 uncleared lots, so the old 'plans published' score is corrected to no, and built area is inconsistent (165 m2 in text vs 300-309 m2 per typology). Piñero's track record of about 3,000 homes across its two residential resorts is reported by Cinco Días and idealista, but no licence, escrow, progress or delivery date is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 598000,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Grupo Piñero / Bahia Principe Residences: almost 3,000 homes built across Playa Nueva Romana (DR) and Tulum Country Club, per Piñero and Spanish press (2023)",
+   "units": 20,
+   "payment_plan": "Reserve from USD 5,000; developer financing from 30% down at 5-7% fixed, no opening fee",
+   "price_per_m2": 3624,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published. BP Promotions' PROFECO-registered contract (5597-2022) is for land (terreno) sales and only declares a land-use licence with blanks",
+   "escrow": "Financing page says 'Garantía de Piñero y Bahia Principe' and 'Seguridad en la compra'; no fideicomiso, escrow or bank guarantee for deposits",
+   "progress": "No construction progress or delivery date; the lot map image shows the 20 lots as uncleared jungle (photo undated)",
+   "plans": "Corrected: the 'Descargar plano' button for both typologies opens ParkGardenMap.png, an aerial lot outline; the typology images are facade renders. No floor plans",
+   "record": "Cinco Días and idealista (June 2023) report Piñero's two residential resorts total almost 3,000 homes built and 5,000 residents; Hosteltur (Nov 2024) reports EUR 15M of new TCC facilities",
+   "returns": "No guaranteed or projected return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Grupo Piñero's two residential resorts total almost 3,000 homes built and 5,000 residents",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cincodias.elpais.com/companias/2023-06-13/pinero-invertira-16-millones-en-colegios-y-supermercados-para-dar-servicio-a-4500-propietarios-de-viviendas.html"
+   },
+   {
+    "claim": "Same figure repeated by idealista/news",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/finanzas/economia/2023/06/13/806478-bahia-principe-residences-invierte-16-millones-para-dar-servicio-de-primera-vivienda-en"
+   },
+   {
+    "claim": "Piñero invested about EUR 15M in TCC facilities (La Plaza, Market Square, The Club) in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hosteltur.com/166807_grupo-pinero-invierte-33-m-en-su-oferta-de-turismo-residencial-en-caribe.html"
+   },
+   {
+    "claim": "Seller BP Promotions SA de CV is registered with PROFECO (land sale contract 5597-2022, 3 Oct 2022)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=5597-2022"
+   },
+   {
+    "claim": "Park Garden is built directly by Grupo Piñero on Manzana 55 (8 Gardenia, 12 Magnolia lots)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://feudo.com.mx/projects/tulum-country-club/"
+   },
+   {
+    "claim": "Each home has 165 m2 built on a lot of about 300 m2",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/propiedades/park-garden"
+   },
+   {
+    "claim": "Gardenia typology '309 m2 construidos'; a broker quotes 272.9 m2 built",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://feudo.com.mx/projects/tulum-country-club/"
+   },
+   {
+    "claim": "Downloadable floor plan per typology",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/dam/jcr:55553312-c528-4822-9ca0-570335ffbb45/ParkGardenMap.png"
+   },
+   {
+    "claim": "Purchase backed by a Piñero and Bahia Principe guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/financiamiento"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/propiedades/park-garden"
+   },
+   {
+    "claim": "Project is in Tulum (it is in Akumal, about 15 minutes by car from Tulum)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://feudo.com.mx/projects/tulum-country-club/"
+   },
+   {
+    "claim": "Developer financing at 5% to 7% with approval in 24-48 hours",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/financiamiento"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Palma de Mallorca, Spain (Grupo Piñero); seller in Akumal, Quintana Roo",
+   "developer_company": "BP Promotions S.A. de C.V. (RFC BPR060829H70), Grupo Piñero",
+   "developer_units_delivered": 3000,
+   "unit_types": [
+    "3BR villa"
+   ],
+   "size_min_m2": 165,
+   "size_max_m2": 309,
+   "price_min": 598000,
+   "price_max": 602000,
+   "currency": "USD",
+   "payment_plan": "Reserve USD 5,000; financing from 30% down at 5-7%",
+   "foreign_ownership": "Not stated on page; land within 50 km of the coast requires a bank fideicomiso for foreigners",
+   "rental_programme": null,
+   "brand": "Tulum Country Club / Bahia Principe Residences",
+   "amenities": [
+    "PGA golf course",
+    "gym",
+    "tennis and padel",
+    "beach club",
+    "spa",
+    "kids club",
+    "clubhouse",
+    "cenote trail"
+   ],
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Large developer with a press-reported track record of about 3,000 homes",
+   "Seller entity and RFC named; PROFECO-registered land contract",
+   "Published in-house financing terms"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.tulumcountryclub.com/es/propiedades/park-garden",
+   "https://www.tulumcountryclub.com/es/financiamiento",
+   "https://www.tulumcountryclub.com/dam/jcr:55553312-c528-4822-9ca0-570335ffbb45/ParkGardenMap.png",
+   "https://feudo.com.mx/projects/tulum-country-club/",
+   "https://rpca.profeco.gob.mx/getDoc?p=5597-2022",
+   "https://cincodias.elpais.com/companias/2023-06-13/pinero-invertira-16-millones-en-colegios-y-supermercados-para-dar-servicio-a-4500-propietarios-de-viviendas.html",
+   "https://www.idealista.com/news/finanzas/economia/2023/06/13/806478-bahia-principe-residences-invierte-16-millones-para-dar-servicio-de-primera-vivienda-en",
+   "https://www.hosteltur.com/166807_grupo-pinero-invierte-33-m-en-su-oferta-de-turismo-residencial-en-caribe.html",
+   "https://www.grupo-pinero.com/en/news/grupo-pinero-consolidates-its-real-estate-division/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 1
+ },
+ {
+  "slug": "tcc-helices-tulum",
+  "name": "Tulum Country Club – Apartamento Hélices",
+  "developer": "Grupo Piñero",
+  "area": "Tulum Country Club, Akumal (Manzana 16)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices",
+  "docs_url": "https://www.tulumcountryclub.com/dam/jcr:77801df6-03b2-4673-9ec6-a289adee0fcd/H%C3%A9lices%20-%20Planos%20Prototipos%20-%20TCC.pdf",
+  "docs_listed": [
+   "prototype floor plans PDF (17 pages, April 2023) with unit numbers per level",
+   "header 'from USD 320,000'; only typology shown 124 m2 at USD 530,526",
+   "36 apartments of 2 and 3 bedrooms (developer page)",
+   "developer financing from 30% down at 5-7%, reserve from USD 5,000",
+   "virtual tour of pilot unit"
+  ],
+  "note": "36-apartment boutique block in Grupo Piñero's Tulum Country Club (Akumal) with a detailed prototype floor-plan PDF; the page header says from USD 320,000 but the only typology listed is USD 530,526, and current agent listings run USD 421,015 to 739,301. Agents gave phase deliveries of Dec 2024 and Dec 2026, but the developer publishes no progress, licence, escrow or delivery date; Piñero's roughly 3,000-home record is press-reported. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 320000,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Grupo Piñero / Bahia Principe Residences: almost 3,000 homes built across Playa Nueva Romana (DR) and Tulum Country Club, per Spanish press (2023)",
+   "units": 36,
+   "payment_plan": "Reserve from USD 5,000; developer financing from 30% down at 5-7% (agent: 20% down and 80% over 24 months)",
+   "price_per_m2": 4278,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "Only 'Garantía de Piñero y Bahia Principe' on the financing page; no fideicomiso or escrow for deposits",
+   "progress": "Developer publishes no progress. Agent Behome (2024) lists phase 1 delivery Dec 2024 and phase 2 Dec 2026; Top Investments gives year built 2024, delivery 2025",
+   "plans": "'Descargar plano' opens 'Hélices - Planos Prototipos - TCC.pdf' (17 pages, created April 2023) with plans, m2 and unit numbers",
+   "record": "Cinco Días and idealista (June 2023) report Piñero's two residential resorts total almost 3,000 homes built",
+   "returns": "No guaranteed or projected return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Grupo Piñero's residential resorts total almost 3,000 homes built",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cincodias.elpais.com/companias/2023-06-13/pinero-invertira-16-millones-en-colegios-y-supermercados-para-dar-servicio-a-4500-propietarios-de-viviendas.html"
+   },
+   {
+    "claim": "Same figure reported by idealista/news",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/finanzas/economia/2023/06/13/806478-bahia-principe-residences-invierte-16-millones-para-dar-servicio-de-primera-vivienda-en"
+   },
+   {
+    "claim": "Seller BP Promotions SA de CV has a PROFECO-registered contract (land sale, 5597-2022)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/getDoc?p=5597-2022"
+   },
+   {
+    "claim": "Hélices has 36 apartments (developer page and 2023 project memo)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://helicestulumcountryclub.com/"
+   },
+   {
+    "claim": "Starting price USD 320,000 (header) vs USD 530,526 (only typology shown)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices"
+   },
+   {
+    "claim": "Current pre-sale listings USD 421,015 to 739,301",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tccliving.net/guides/community/helices"
+   },
+   {
+    "claim": "Phase 1 delivery December 2024, phase 2 December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.behome.mx/propiedad/helices-tulum-country-club-akumal-qroo/"
+   },
+   {
+    "claim": "Year built 2024, delivery 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.topinvestments.mx/propiedad/helices-departamentos-boutique-en-tulum-country-club/"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices"
+   },
+   {
+    "claim": "Deposits backed by a Piñero / Bahia Principe guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/financiamiento"
+   },
+   {
+    "claim": "Developer finances up to 50% at 5-9% for up to 7 years",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://helicestulumcountryclub.com/"
+   },
+   {
+    "claim": "Project is in Tulum (it is inside Tulum Country Club in Akumal, 15 minutes by car from Tulum)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Palma de Mallorca, Spain (Grupo Piñero); seller in Akumal, Quintana Roo",
+   "developer_company": "BP Promotions S.A. de C.V. (RFC BPR060829H70), Grupo Piñero",
+   "developer_units_delivered": 3000,
+   "handover_promised": "2026-Q4",
+   "original_handover": "2024-Q4 (phase 1, per agent)",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR garden",
+    "2BR penthouse",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 62.41,
+   "size_max_m2": 210.97,
+   "price_min": 320000,
+   "price_max": 739301,
+   "currency": "USD",
+   "payment_plan": "Reserve USD 5,000; financing from 30% down",
+   "foreign_ownership": "Not stated; restricted coastal zone, so foreigners would hold through a bank fideicomiso",
+   "brand": "Tulum Country Club / Bahia Principe Residences",
+   "amenities": [
+    "pool",
+    "coworking",
+    "BBQ area",
+    "event room",
+    "beach club access",
+    "PGA golf",
+    "sport center",
+    "central park"
+   ],
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": "https://www.tulumcountryclub.com/dam/jcr:77801df6-03b2-4673-9ec6-a289adee0fcd/H%C3%A9lices%20-%20Planos%20Prototipos%20-%20TCC.pdf",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Detailed prototype floor-plan PDF with unit numbers",
+   "Large developer with a press-reported delivery record",
+   "Seller entity and RFC named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices",
+   "https://www.tulumcountryclub.com/es/financiamiento",
+   "https://www.tulumcountryclub.com/dam/jcr:77801df6-03b2-4673-9ec6-a289adee0fcd/H%C3%A9lices%20-%20Planos%20Prototipos%20-%20TCC.pdf",
+   "https://helicestulumcountryclub.com/",
+   "https://assets.easybroker.com/property_files/3958550/263375/2023_MEMORIA_HELICES.pdf",
+   "https://www.behome.mx/propiedad/helices-tulum-country-club-akumal-qroo/",
+   "https://www.topinvestments.mx/propiedad/helices-departamentos-boutique-en-tulum-country-club/",
+   "https://www.tccliving.net/guides/community/helices",
+   "https://play-investments.com/en/tulum-country-club-bahia-principe/",
+   "https://rpca.profeco.gob.mx/getDoc?p=5597-2022",
+   "https://cincodias.elpais.com/companias/2023-06-13/pinero-invertira-16-millones-en-colegios-y-supermercados-para-dar-servicio-a-4500-propietarios-de-viviendas.html",
+   "https://www.idealista.com/news/finanzas/economia/2023/06/13/806478-bahia-principe-residences-invierte-16-millones-para-dar-servicio-de-primera-vivienda-en"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 1
+ },
+ {
+  "slug": "aldea-tulum-plus",
+  "name": "Aldea Tulum Plus",
+  "developer": "Urban Homes Developers",
+  "area": "Tulum (Fracc. Aldea Tulum, Av. Nácar)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "completed",
+  "status": "completed",
+  "url": "https://www.aldeatulumplus.com/",
+  "docs_url": "https://www.aldeatulumplus.com/_files/ugd/6785c5_bfca3ba8fdf04722bbd35ffcbdd65fa6.pdf",
+  "docs_listed": [
+   "from MXN 1,450,000 for a 71 m2 two-bed unit, delivered furnished",
+   "25-page brochure PDF (July 2025) with Kanan model floor plan (71.39 m2) and site plan",
+   "brochure photos of finished buildings, pool, gym, sports court and furnished interiors",
+   "Matterport 360 tours (furnished and unfurnished)",
+   "deeded parking",
+   "showroom at Av. Nácar, Tulum"
+  ],
+  "note": "Two-bed 71 m2 apartments from MXN 1,450,000 by Urban Homes in the Aldea Tulum subdivision; the July 2025 brochure includes a floor plan and photos of finished buildings and amenities, so the project appears built and selling finished stock (old record said no plans). The developer's own track-record figures conflict (1,300, 2,500 or 12,000 units), its claim of being listed on the Mexican stock exchange could not be confirmed, and no licence, escrow or PROFECO contract was found. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1450000,
+   "currency": "MXN",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Urban Homes names projects La Vela (Puerto Cancún), Ombú, Blume, La Selva Residences, Vellmari; claims 24 projects and 2,500 units sold (website), 12,000 homes delivered and 35+ projects (director in radio interview)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 20423,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "No fideicomiso, escrow or deposit protection published",
+   "progress": "Brochure PDF (created July 2025) shows photos of completed buildings, pool, palapa bar, sports court, gym and furnished units; no dated construction log, so 'finished' is a developer statement",
+   "plans": "Corrected: brochure has the Kanan model floor plan (71.39 m2) and an amenities site plan",
+   "record": "Urban Homes site names several delivered projects and claims 24 projects / 2,500 units sold; a director told Imagen Radio (Aug 2026) 12,000 homes delivered and 35+ projects; LinkedIn page says 1,300 properties sold. Figures conflict",
+   "returns": "No guaranteed return language; Urban Homes' sister site Vellmari says it 'guarantees' appreciation (plusvalía), not on this project's site"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Units from MXN 1,450,000 for 71 m2, delivered furnished",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aldeatulumplus.com/"
+   },
+   {
+    "claim": "Buildings and amenities are finished (brochure photos, July 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aldeatulumplus.com/_files/ugd/6785c5_bfca3ba8fdf04722bbd35ffcbdd65fa6.pdf"
+   },
+   {
+    "claim": "Urban Homes has 19 years of experience in Quintana Roo",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://urbanhomes.mx/destino-tulum/"
+   },
+   {
+    "claim": "Urban Homes has 24 projects and 2,500 units sold",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://urbanhomes.mx/"
+   },
+   {
+    "claim": "Urban Homes has delivered 12,000 homes and 35+ projects (director interview)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.imagenradio.com.mx/programas/imagen-empresarial/urban-homes-preve-expansion-residencial-por-obras-quintana-roo"
+   },
+   {
+    "claim": "Urban Homes has 1,300 properties sold (company LinkedIn)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://linkedin.com/company/urban-homescancun"
+   },
+   {
+    "claim": "Urban Homes is listed on the Bolsa Mexicana de Valores",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bmv.com.mx/es/empresas-listadas"
+   },
+   {
+    "claim": "Urban Homes is linked to CADU Inmobiliaria, seller of the base Aldea Tulum subdivision at the same Av. Nácar address",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/urban-homes---mexico"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aldeatulumplus.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow or fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aldeatulumplus.com/"
+   },
+   {
+    "claim": "Developer has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Parking space is deeded (estacionamiento escriturado)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aldeatulumplus.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Cancún, Quintana Roo, Mexico (Av. Huayacán Km 4)",
+   "developer_company": "Urban Homes (legal entity not published on the project site)",
+   "developer_units_delivered": null,
+   "listed_or_audited": "Claims BMV listing on urbanhomes.mx; not confirmed; LinkedIn lists it as privately held",
+   "unit_types": [
+    "2BR"
+   ],
+   "size_min_m2": 71,
+   "size_max_m2": 71.39,
+   "price_min": 1450000,
+   "price_max": null,
+   "currency": "MXN",
+   "foreign_ownership": "Not stated; restricted coastal zone, so foreigners would hold through a bank fideicomiso",
+   "rental_programme": null,
+   "amenities": [
+    "pool",
+    "palapa bar",
+    "multi-sport court",
+    "gym",
+    "cycle path",
+    "pet park",
+    "BBQ area",
+    "kids playground"
+   ],
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": "https://www.aldeatulumplus.com/_files/ugd/6785c5_bfca3ba8fdf04722bbd35ffcbdd65fa6.pdf",
+   "developer_projects_delivered": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Floor plan and finished-building photos in a dated brochure",
+   "Low entry price published with unit size",
+   "Furnished delivery and 360 tours"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aldeatulumplus.com/",
+   "https://www.aldeatulumplus.com/_files/ugd/6785c5_bfca3ba8fdf04722bbd35ffcbdd65fa6.pdf",
+   "https://issuu.com/urbanhomesdevelopers/docs/aldea_tulum_presentacion_2024",
+   "https://urbanhomes.mx/",
+   "https://urbanhomes.mx/destino-tulum/",
+   "https://www.imagenradio.com.mx/programas/imagen-empresarial/urban-homes-preve-expansion-residencial-por-obras-quintana-roo",
+   "https://linkedin.com/company/urban-homescancun",
+   "https://linkedin.com/company/urban-homes---mexico",
+   "https://bmv.com.mx/es/empresas-listadas",
+   "https://aldeatulum.mx/",
+   "https://vellmari.mx/home/",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 0
+ },
+ {
+  "slug": "sadasi-via-verde-playa",
+  "name": "Vía Verde Conjunto Residencial",
+  "developer": "Grupo Sadasi",
+  "area": "Playa del Carmen",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde",
+  "docs_url": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde",
+  "docs_listed": [
+   "per-model and per-floor prices: Balché 2BR 56.1 m2 from MXN 1,233,100 (level 3) to 1,539,900 (ground); Capua 3BR 80.25 m2 MXN 1,906,800 to 2,128,800; Amate houses 67.81 m2",
+   "architectural floor plans per model page",
+   "Infonavit, Fovissste and bank credit",
+   "site plan render (aerial)",
+   "address Av. Loros, Playa del Carmen",
+   "registered adhesion contracts page (group)"
+  ],
+  "note": "Apartments and small houses by Grupo Sadasi on Av. Loros, Playa del Carmen, from MXN 1,233,100 for a 56.1 m2 two-bed; model pages do carry architectural floor plans (old record said none), and Sadasi entities have dozens of PROFECO-registered sale contracts and a press-reported record of 400,000+ homes. The project is aimed at Infonavit/Fovissste buyers; only renders are shown and no licence, escrow, progress or delivery date is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1233100,
+   "currency": "MXN",
+   "title": "Escritura (direct title) for Mexican buyers; foreign buyers in the coastal restricted zone would need a bank fideicomiso, not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Grupo Sadasi: over 400,000 homes built since 1975, 45+ active developments in 12 states (sadasi.com and Centro Urbano, Nov 2025); earlier Playa del Carmen estates Campestre La Joya, Paseo Los Olivos 2 and Los Olivos 3",
+   "units": null,
+   "payment_plan": "Infonavit, Fovissste or bank mortgage; cash prices exclude notary costs",
+   "price_per_m2": 21980,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "No fideicomiso or escrow for deposits; group publishes its PROFECO-registered adhesion contracts, which is consumer-law registration, not deposit protection",
+   "progress": "No construction progress or delivery date; gallery is renders (aerial site plan render)",
+   "plans": "Corrected: each model page has a 'Planos' section with architectural plan images (e.g. planta baja Balché)",
+   "record": "Centro Urbano (Nov 2025) reports 400,000+ homes built since 1975 and 45+ active developments; Sadasi blog names earlier Playa del Carmen estates",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Grupo Sadasi has built 400,000+ homes since 1975, 45+ active developments in 12 states",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centrourbano.com/revista/vivienda/grupo-sadasi-celebra-50-anos-como-referente-en-vivienda-y-comunidades-sustentables-en-mexico/"
+   },
+   {
+    "claim": "Desarrollos Inmobiliarios Sadasi SA de CV and Promotora Sadasi SA de CV have PROFECO-registered sale contracts (e.g. 105-2023, 119-2023)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Sadasi previously delivered Playa del Carmen estates (Campestre La Joya, Paseo Los Olivos)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.sadasi.com/2023/03/18/playa-del-carmen-tu-casa-en-el-paraiso/"
+   },
+   {
+    "claim": "Balché 2BR 56.1 m2 from MXN 1,233,100",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde"
+   },
+   {
+    "claim": "Floor plans published per model",
+    "status": "verified",
+    "by": "none",
+    "source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F6ab31a4d51e616da77295509%2Farchitectural-plans%2Fplanta-baja-departamento-modelo-balche-via-verde.jpg?alt=media"
+   },
+   {
+    "claim": "Amenities: pool, events area, playground, BBQ, green areas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde"
+   },
+   {
+    "claim": "Site layout shown is built",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2F6ab304bd51e616da7729387e%2Fgallery%2Faerea-via-verde.jpg?alt=media&token=0bacdb37-83c1-44d7-8803-500ed09506e5"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/contratos-de-adhesion"
+   },
+   {
+    "claim": "Delivery date published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde"
+   },
+   {
+    "claim": "Suitable for foreign buyers (sales via Infonavit/Fovissste credit, no fideicomiso information)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde/balche-n3-via-verde"
+   },
+   {
+    "claim": "Located on Av. Loros, Playa del Carmen (map coordinates 20.685, -87.103)",
+    "status": "verified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1975,
+   "developer_hq": "Mexico City (Arquímedes 3, Col. Chapultepec Morales)",
+   "developer_company": "Desarrollos Inmobiliarios Sadasi SA de CV / Promotora Sadasi SA de CV (PROFECO-registered)",
+   "developer_units_delivered": 400000,
+   "unit_types": [
+    "2BR apartment",
+    "3BR apartment",
+    "2BR house"
+   ],
+   "size_min_m2": 56.1,
+   "size_max_m2": 80.25,
+   "price_min": 1233100,
+   "currency": "MXN",
+   "payment_plan": "Infonavit, Fovissste or bank credit",
+   "foreign_ownership": "Not stated; coastal restricted zone requires a bank fideicomiso for foreigners",
+   "rental_programme": null,
+   "amenities": [
+    "pool",
+    "events area",
+    "playground",
+    "BBQ area",
+    "green areas"
+   ],
+   "lat": 20.685,
+   "lng": -87.103,
+   "permit_authority": "Municipio de Solidaridad (Desarrollo Urbano)",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Per-floor price list and architectural plans per model",
+   "Large housebuilder with press-reported record",
+   "Many PROFECO-registered sale contracts"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde",
+   "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde/balche-n3-via-verde",
+   "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F6ab31a4d51e616da77295509%2Farchitectural-plans%2Fplanta-baja-departamento-modelo-balche-via-verde.jpg?alt=media",
+   "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2F6ab304bd51e616da7729387e%2Fgallery%2Faerea-via-verde.jpg?alt=media&token=0bacdb37-83c1-44d7-8803-500ed09506e5",
+   "https://www.sadasi.com/contratos-de-adhesion",
+   "https://www.sadasi.com/grupo-sadasi",
+   "https://rpca.profeco.gob.mx/",
+   "https://centrourbano.com/revista/vivienda/grupo-sadasi-celebra-50-anos-como-referente-en-vivienda-y-comunidades-sustentables-en-mexico/",
+   "https://blog.sadasi.com/2023/03/18/playa-del-carmen-tu-casa-en-el-paraiso/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 1
+ },
+ {
+  "slug": "sadasi-almazara-playa",
+  "name": "Almazara Conjunto Residencial",
+  "developer": "Grupo Sadasi",
+  "area": "Playa del Carmen",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial",
+  "docs_url": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial",
+  "docs_listed": [
+   "per-model prices: Capua 3BR 81.3 m2 from MXN 2,190,000; Cedro Plus 103.7 m2 to MXN 2,650,000; houses Tabachín MXN 3,220,000 and Noni MXN 3,580,000",
+   "two house models (Flamboyán, Ceiba) marked AGOTADO (sold out)",
+   "model pages with plan sections",
+   "amenities list",
+   "address Av. Arco Vial con Av. 28 de Julio",
+   "Altta Homes brand"
+  ],
+  "note": "Mixed houses and apartments by Grupo Sadasi (Altta Homes) in Playa del Carmen from MXN 2,190,000, with two earlier house models now sold out; the page's embedded map coordinates point to Querétaro, not Playa del Carmen, and the site menu also lists an Almazara in León. Sadasi's 400,000-home record is press-reported, but no licence, escrow, progress or delivery date is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 2190000,
+   "currency": "MXN",
+   "title": "Escritura (direct title) for Mexican buyers; foreign buyers in the coastal restricted zone would need a bank fideicomiso, not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Grupo Sadasi: over 400,000 homes built since 1975, 45+ active developments in 12 states (sadasi.com and Centro Urbano, Nov 2025); earlier Playa del Carmen estates Campestre La Joya, Paseo Los Olivos 2 and Los Olivos 3",
+   "units": null,
+   "payment_plan": "Infonavit, Fovissste or bank mortgage",
+   "price_per_m2": 26937,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "No fideicomiso or escrow; group lists PROFECO-registered adhesion contracts only",
+   "progress": "No progress or delivery date; two house models marked AGOTADO suggests earlier phases sold",
+   "plans": "Corrected: model pages include 'Planos' sections with architectural plan images (same site template as Vía Verde)",
+   "record": "Centro Urbano (Nov 2025): 400,000+ homes built since 1975",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Grupo Sadasi has built 400,000+ homes since 1975",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centrourbano.com/revista/vivienda/grupo-sadasi-celebra-50-anos-como-referente-en-vivienda-y-comunidades-sustentables-en-mexico/"
+   },
+   {
+    "claim": "Sadasi companies have PROFECO-registered property sale contracts",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Project is in Playa del Carmen (address Av. Arco Vial con Av. 28 de Julio)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial"
+   },
+   {
+    "claim": "Starting price MXN 2,190,000 for Capua 81.3 m2 level 3",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial"
+   },
+   {
+    "claim": "Flamboyán and Ceiba house models sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial"
+   },
+   {
+    "claim": "Floor plans published per model",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial/noni"
+   },
+   {
+    "claim": "Amenities: gatehouse, pool, cycle path, sports court, pet park",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/contratos-de-adhesion"
+   },
+   {
+    "claim": "Delivery date published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial"
+   },
+   {
+    "claim": "Earlier Playa del Carmen estates delivered by Sadasi",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.sadasi.com/2023/03/18/playa-del-carmen-tu-casa-en-el-paraiso/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1975,
+   "developer_hq": "Mexico City (Arquímedes 3, Col. Chapultepec Morales)",
+   "developer_company": "Desarrollos Inmobiliarios Sadasi SA de CV / Promotora Sadasi SA de CV",
+   "developer_units_delivered": 400000,
+   "unit_types": [
+    "3BR apartment",
+    "3BR house"
+   ],
+   "size_min_m2": 81.3,
+   "size_max_m2": 163.63,
+   "price_min": 2190000,
+   "price_max": 3580000,
+   "currency": "MXN",
+   "payment_plan": "Infonavit, Fovissste or bank credit",
+   "foreign_ownership": "Not stated; coastal restricted zone requires a bank fideicomiso for foreigners",
+   "brand": "Altta Homes (Sadasi)",
+   "amenities": [
+    "gatehouse",
+    "pool",
+    "playground",
+    "multi-use area",
+    "BBQ area",
+    "cycle path",
+    "sports court",
+    "pet park"
+   ],
+   "permit_authority": "Municipio de Solidaridad (Desarrollo Urbano)",
+   "brochure_url": null,
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Per-model price list with sizes",
+   "Large housebuilder with press-reported record",
+   "Some models already sold out"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial",
+   "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial/noni",
+   "https://www.sadasi.com/contratos-de-adhesion",
+   "https://www.sadasi.com/grupo-sadasi",
+   "https://rpca.profeco.gob.mx/",
+   "https://centrourbano.com/revista/vivienda/grupo-sadasi-celebra-50-anos-como-referente-en-vivienda-y-comunidades-sustentables-en-mexico/",
+   "https://blog.sadasi.com/2023/03/18/playa-del-carmen-tu-casa-en-el-paraiso/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 1
+ },
+ {
+  "slug": "residences-by-the-fives-playa",
+  "name": "Residences by The Fives (Downtown / Beach)",
+  "developer": "TM Grupo Inmobiliario",
+  "area": "Playa del Carmen",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "completed",
+  "status": "completed",
+  "url": "https://www.residencesbythefives.com/",
+  "docs_url": "https://www.tmgrupoinmobiliario.com/es/lineas-de-negocio/hotels-in-mexico",
+  "docs_listed": [
+   "residences from USD 155,000 (The Fives Downtown) and USD 259,000 (The Fives Beach)",
+   "resale/private listings portal",
+   "owner club and hotel-managed 'worry-free' rental model",
+   "operating resorts: The Fives Beach (opened 2010, 664 keys), Downtown Curio by Hilton (Dec 2017, 133 suites), Oceanfront Puerto Morelos (July 2020)",
+   "'turnkey' (llave en mano) messaging: deed on purchase"
+  ],
+  "note": "Hotel-managed residences inside TM Grupo Inmobiliario's operating The Fives resorts (opened 2010, 2017 and 2020), from USD 155,000 Downtown and USD 259,000 Beach; this is finished stock, not off-plan. TM's Mexican hotels and residential model are covered by Cinco Días and El Economista, but the site publishes no plans, licence, fideicomiso details or PROFECO contract, and local press has reported a long dispute over public beach access at Xcalacoco. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 155000,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2017",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": false,
+   "developer_delivered": "TM Grupo Inmobiliario (founded 1969, Torrevieja): The Fives Beach (2010), The Fives Downtown (2017), The Fives Oceanfront (2020) and The Beachfront (2024), about 1,000 hotel keys; 525 homes delivered group-wide in 2024 (El Economista)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia or permit number published (resorts are built and operating)",
+   "escrow": "No fideicomiso or escrow described; site stresses 'certeza jurídica' and deeding on purchase for turnkey units",
+   "progress": "Completed: resorts opened 2010 (Beach), Dec 2017 (Downtown) and July 2020 (Oceanfront) per TM's site; El Economista and Cinco Días report them operating with about 1,000 keys",
+   "plans": "No floor plans on the residences site",
+   "record": "Cinco Días (Nov 2023) and El Economista (Oct 2023, Apr 2025) report TM's three-to-four Riviera Maya hotels, EUR 53-65M Mexican revenue and group deliveries",
+   "returns": "No guaranteed rental return offered; generic advice text tells buyers to seek models that 'guarantee' appreciation and dividends, and says the main return is lifestyle"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "TM Grupo operates The Fives Beach, Downtown (Curio by Hilton) and Oceanfront, about 1,000 keys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eleconomista.es/transportes-turismo/noticias/12475345/10/23/el-grupo-inmobiliario-alicantino-tm-compra-otro-hotel-en-riviera-maya-para-crecer-en-turismo.html"
+   },
+   {
+    "claim": "TM's Mexico business had record EUR 65.4M revenue in 2022 and plans 500 more keys 2024-2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cincodias.elpais.com/companias/2023-11-28/la-promotora-mas-activa-de-benidorm-aprieta-el-acelerador-en-la-riviera-maya.html"
+   },
+   {
+    "claim": "Mexican hotel division billed EUR 53.2M in 2024; group delivered 525 homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13329583/04/25/la-inmobiliaria-tm-grupo-reduce-ventas-un-19-y-aumenta-su-cartera-de-suelo-a-12000-viviendas.html"
+   },
+   {
+    "claim": "TM Grupo founded over 50 years ago (1969, Torrevieja)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cincodias.elpais.com/companias/2023-11-28/la-promotora-mas-activa-de-benidorm-aprieta-el-acelerador-en-la-riviera-maya.html"
+   },
+   {
+    "claim": "Residences from USD 155,000 (Downtown) and USD 259,000 (Beach)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.residencesbythefives.com/"
+   },
+   {
+    "claim": "The Fives Beach opened in 2010 with 664 keys; Downtown Dec 2017 with 133 suites; Oceanfront July 2020",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/es/lineas-de-negocio/hotels-in-mexico"
+   },
+   {
+    "claim": "Oceanfront has 93 suites (residences site) vs 115 keys (TM site)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/es/lineas-de-negocio/hotels-in-mexico"
+   },
+   {
+    "claim": "Units are turnkey and can be deeded on purchase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.residencesbythefives.com/"
+   },
+   {
+    "claim": "Hotel management covers maintenance, furniture replacement and bills ('worry-free')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.residencesbythefives.com/"
+   },
+   {
+    "claim": "Developer or seller has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Neighbours accuse The Fives of blocking the public Xcalacoco beach access",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://greentology.life/ong-y-fundaciones/vecinos-y-activistas-enfrentan-a-the-fives-por-usurpacion-del-acceso-a-playa-publica-xcalacoco/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1969,
+   "developer_hq": "Torrevieja, Alicante, Spain",
+   "developer_company": "TM Grupo Inmobiliario (Mexican operating entity not named on the site)",
+   "developer_projects_delivered": 4,
+   "listed_or_audited": "Private family group; revenue figures reported by Spanish press",
+   "construction_start": null,
+   "handover_promised": null,
+   "unit_types": [
+    "suite",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "price_min": 155000,
+   "currency": "USD",
+   "foreign_ownership": "Not stated; coastal restricted zone, so foreigners hold through a bank fideicomiso",
+   "rental_programme": "Hotel-managed rental pool / owner club under The Fives brand; no figures",
+   "brand": "The Fives Hotels & Residences; Downtown is Curio Collection by Hilton",
+   "amenities": [
+    "beach club",
+    "15 restaurants",
+    "9 bars",
+    "7 pools",
+    "spa",
+    "kids club",
+    "rooftop pool (Downtown)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Solidaridad / Puerto Morelos",
+   "brochure_url": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_max": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null
+  },
+  "positives": [
+   "Finished, operating resorts with hotel management",
+   "Developer with press-reported revenues and delivery record",
+   "Hilton Curio affiliation at Downtown"
+  ],
+  "flags": [
+   {
+    "text": "Greentology (Sep 2024) reported neighbours and an activist accuse The Fives of obstructing the public beach access at Xcalacoco; the company sought precautionary measures against the activist, which a judge reportedly set aside in May 2024",
+    "source": "https://greentology.life/ong-y-fundaciones/vecinos-y-activistas-enfrentan-a-the-fives-por-usurpacion-del-acceso-a-playa-publica-xcalacoco/"
+   },
+   {
+    "text": "Quinta Fuerza (Mar 2021) reported The Fives had again closed beach access next to its Xcalacoco hotel and criticised federal authorities for not acting",
+    "source": "https://quintafuerza.mx/quintana-roo/playa-del-carmen/reincidente-e-impune-the-fives-cierra-por-enesima-vez-acceso-a-la-playa/"
+   }
+  ],
+  "sources": [
+   "https://www.residencesbythefives.com/",
+   "https://listings.residencesbythefives.com/listings",
+   "https://www.tmgrupoinmobiliario.com/es/lineas-de-negocio/hotels-in-mexico",
+   "https://www.eleconomista.es/transportes-turismo/noticias/12475345/10/23/el-grupo-inmobiliario-alicantino-tm-compra-otro-hotel-en-riviera-maya-para-crecer-en-turismo.html",
+   "https://cincodias.elpais.com/companias/2023-11-28/la-promotora-mas-activa-de-benidorm-aprieta-el-acelerador-en-la-riviera-maya.html",
+   "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13329583/04/25/la-inmobiliaria-tm-grupo-reduce-ventas-un-19-y-aumenta-su-cartera-de-suelo-a-12000-viviendas.html",
+   "https://www.informacion.es/economia/2025/04/23/tm-grupo-inmobiliario-256-millones-facturacion-12-000-viviendas-116638852.html",
+   "https://greentology.life/ong-y-fundaciones/vecinos-y-activistas-enfrentan-a-the-fives-por-usurpacion-del-acceso-a-playa-publica-xcalacoco/",
+   "https://quintafuerza.mx/quintana-roo/playa-del-carmen/reincidente-e-impune-the-fives-cierra-por-enesima-vez-acceso-a-la-playa/",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 2
+ },
+ {
+  "slug": "bodhi-tulum",
+  "name": "Bodhi Tulum",
+  "developer": null,
+  "area": "Tulum (Supermanzana 15 / Región 15)",
+  "country": "Mexico",
+  "market": "Riviera Maya",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://bodhitulum.com/",
+  "docs_url": "https://bodhitulum.com/",
+  "docs_listed": [
+   "41 residences in 11 towers on 10,000 m2, about 70% green area kept",
+   "homepage counters: 11% 'return on investment... promises above-average returns' and 30% appreciation 'upon delivery'",
+   "sustainability page (piles, rainwater, solar, chemical-free pools)",
+   "price list and brochure only on request (agent copies: Aug 2023 price list with phases due Mar 2024 and Dec 2024)",
+   "address Supermanzana 15, Tulum"
+  ],
+  "note": "41 units in 11 towers on 10,000 m2 in Tulum Región 15, with the site promising an 11% return and a 30% value increase by delivery; no developer is named, and prices only appear in agent copies (from MXN 3,920,000 in Aug 2023 to MXN 5,110,000 now). An Aug 2023 price list set phase deliveries for March and December 2024, while an agent now says phase 1 is ready and phase 2 is due in 2026, about two years late; no licence, escrow or PROFECO contract was found. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 5110000,
+   "currency": "MXN",
+   "title": null,
+   "guaranteed_language": true,
+   "yield_pct": 11,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 41,
+   "payment_plan": null,
+   "price_per_m2": 61566,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia or permit number published",
+   "escrow": "No fideicomiso, escrow or deposit protection published",
+   "progress": "Developer site publishes no progress or dates; agent Somos Casa says phase 1 immediate delivery, phase 2 final delivery 2026",
+   "plans": "No floor plans on the developer site (brochure only on request); agent brochure copy has unit sizes",
+   "record": "No developer company or past projects named anywhere on the site",
+   "returns": "Homepage counters: '11% Return on investment, a unique concept that promises above-average returns' and '30% Appreciation: buy an apartment now, and upon delivery, its value will have increased by 30%'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Value will increase 30% by delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bodhitulum.com/"
+   },
+   {
+    "claim": "Promised return on investment of 11%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bodhitulum.com/"
+   },
+   {
+    "claim": "41 units in 11 towers on 10,000 m2, 70% green area preserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bodhitulum.com/index.php/sustainability/"
+   },
+   {
+    "claim": "Phase 1 delivery March 2024, phase 2 December 2024 (Aug 2023 price list)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/3975350/264631/Inventario___Precios_-_Bodhi_Tulum_.pdf"
+   },
+   {
+    "claim": "Phase 1 immediate delivery, phase 2 final delivery 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://somoscasarealestate.com/en/propiedades/bodhi-tulum"
+   },
+   {
+    "claim": "Price from MXN 3,920,000 (Aug 2023) vs MXN 5,110,000 (Plalla) vs MXN 4,600,000 (Somos Casa)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://plalla.com/en/property/bodhi-tulum-en/"
+   },
+   {
+    "claim": "Year built 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://colibriproperty.com/property/bodhi-tulum/"
+   },
+   {
+    "claim": "Developer identity published",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bodhitulum.com/"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bodhitulum.com/"
+   },
+   {
+    "claim": "Deposits protected by fideicomiso or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bodhitulum.com/"
+   },
+   {
+    "claim": "Developer has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Integrated management maximises rental income",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bodhitulum.com/"
+   }
+  ],
+  "facts": {
+   "developer_company": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": "2024-Q4 (phase 2) / 2024-Q1 (phase 1), per Aug 2023 price list",
+   "delay_months": 24,
+   "unit_types": [
+    "1BR",
+    "2BR duplex",
+    "3BR"
+   ],
+   "size_min_m2": 83,
+   "size_max_m2": 181,
+   "price_min": 5110000,
+   "price_max": 8918000,
+   "currency": "MXN",
+   "foreign_ownership": "Not stated; coastal restricted zone requires a bank fideicomiso for foreigners",
+   "rental_programme": "In-house 'integrated management' for rentals; 11% ROI claimed",
+   "amenities": [
+    "two chemical-free pools",
+    "solar panels",
+    "rainwater harvesting",
+    "private jacuzzi terraces",
+    "private rooftops",
+    "wastewater treatment"
+   ],
+   "lat": 20.188,
+   "lng": -87.474,
+   "permit_authority": "Municipio de Tulum (Desarrollo Urbano)",
+   "brochure_url": "https://owninmayanriviera.com/wp-content/uploads/2023/08/BODHI-ENGLISH.pdf",
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null
+  },
+  "positives": [
+   "Low-density design with stated green-area and soil-permeability figures",
+   "Unit count and land size published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bodhitulum.com/",
+   "https://bodhitulum.com/index.php/sustainability/",
+   "https://owninmayanriviera.com/wp-content/uploads/2023/08/BODHI-ENGLISH.pdf",
+   "https://assets.easybroker.com/property_files/3975350/264631/Inventario___Precios_-_Bodhi_Tulum_.pdf",
+   "https://somoscasarealestate.com/en/propiedades/bodhi-tulum",
+   "https://plalla.com/en/property/bodhi-tulum-en/",
+   "https://colibriproperty.com/property/bodhi-tulum/",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-28",
+  "verified_score": 0
+ }
+]

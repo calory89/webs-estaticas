@@ -1,0 +1,1801 @@
+[
+ {
+  "slug": "las-palmas-de-tamarindo",
+  "name": "Las Palmas de Tamarindo",
+  "developer": null,
+  "status": "active",
+  "stage": "under construction",
+  "area": "Villa Real, Tamarindo, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "url": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907",
+  "docs_url": "https://www.dominicalrealty.com/property/2-bed-condo-for-sale-in-tamarindo/10297",
+  "permit_number": null,
+  "docs_listed": [
+   "pre-sale price USD 297,357 for a 2BR/2BA unit (listing 17301)",
+   "USD 5,000 reservation",
+   "payments released per completed construction phase, balance on completion",
+   "unit sizes 75 to 107 m2 (2BR and 3BR, some with lofts)",
+   "HOA USD 300/month",
+   "three towers of 12 units; first tower completed Apr 2023; Building C 'at the latest' Q1 2026"
+  ],
+  "note": "Three-tower, 36-unit gated condo project in Villa Real, about 6 minutes from Tamarindo, still marketed as a pre-sale by Coldwell Banker at USD 297,357 with a USD 5,000 reservation; the listing says the first tower was completed in April 2023 and Building C was due 'at the latest' in Q1 2026, a date now passed with no update published. No developer, permit or deposit protection is named. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 297357,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Listing says the first tower of this project was completed in April 2023; no developer or other projects named",
+   "units": 36,
+   "payment_plan": "USD 5,000 reservation; payments advanced as each build phase is completed; final payment on completion of the unit",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, municipal licence or CFIA approval mentioned in any of the three broker copies of the listing",
+   "escrow": "No escrow or trust named; staged payments tied to construction phases reduce exposure but are not deposit protection",
+   "progress": "Only a one-line statement that the first tower was completed in April 2023; no dated photos, % or update on Building C, whose Q1 2026 date has passed",
+   "plans": "No floor plans published; only a size range of 75 to 107 m2 (the listing field '807' conflicts with that range)",
+   "record": "Developer not named; the only track record is the claim that tower one was completed in April 2023",
+   "returns": "Says units are 'priced competitively to ensure a good return on your investment' and tags 'Income Producing', but no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Three towers of 3 floors with 4 units per floor (36 units)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907"
+   },
+   {
+    "claim": "First tower completed in April 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907"
+   },
+   {
+    "claim": "Building C delivered at the latest in Q1 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/2-bed-condo-for-sale-in-tamarindo/10297"
+   },
+   {
+    "claim": "Price USD 297,357 for a 2BR/2BA unit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.coldwellbankercostarica.com/property/2-bed-condo-for-sale-in-tamarindo/149"
+   },
+   {
+    "claim": "Unit floor area: listing says 807 while description says 75 to 107 m2",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.coldwellbankercostarica.com/property/2-bed-condo-for-sale-in-tamarindo/149"
+   },
+   {
+    "claim": "Year built field shows 2026 while description says first tower finished 2023",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/2-bed-condo-for-sale-in-tamarindo/10297"
+   },
+   {
+    "claim": "Construction permit in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907"
+   },
+   {
+    "claim": "Developer company identified and registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907"
+   },
+   {
+    "claim": "HOA USD 300/month incl. security, landscaping, pool and water",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "loft units"
+   ],
+   "size_min_m2": 75,
+   "size_max_m2": 107,
+   "price_min": 297357,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "USD 5,000 reservation, staged payments per completed construction phase, final payment on completion",
+   "foreign_ownership": null,
+   "rental_programme": "None stated; interior packages offered to make units rental-ready",
+   "service_charge": "HOA USD 300/month",
+   "brand": null,
+   "amenities": [
+    "gated community",
+    "24/7 security",
+    "clubhouse",
+    "outdoor kitchen",
+    "resort-size pool",
+    "private balconies",
+    "parking next to each tower"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Santa Cruz (construction permit) with CFIA plan registration",
+   "brochure_url": null
+  },
+  "positives": [
+   "Payments tied to completed construction phases, not lump-sum upfront",
+   "Low USD 5,000 reservation",
+   "HOA fee and what it covers published",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.puravidaparadise.com/property/2-bed-condo-for-sale-in-tamarindo/9907",
+   "https://www.dominicalrealty.com/property/2-bed-condo-for-sale-in-tamarindo/10297",
+   "https://www.coldwellbankercostarica.com/property/2-bed-condo-for-sale-in-tamarindo/149"
+  ]
+ },
+ {
+  "slug": "acquarello-residences-playa-flamingo",
+  "name": "Acquarello Residences",
+  "developer": null,
+  "status": "active",
+  "stage": "under construction",
+  "area": "Playa Flamingo / Playa Potrero, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "url": "https://www.coldwellbankercr.com/property/3-bed-condo-for-sale-in-playa-flamingo/23995",
+  "docs_url": "https://www.grupo-zen.cr/en/news/avance-obra-acquarello-playa-q1-2026",
+  "permit_number": null,
+  "docs_listed": [
+   "developer (Grupo Zen) quarterly construction videos, Q1 2026 (published Apr 2026)",
+   "2BR 120 m2 from USD 405,000 and 3BR 155 m2 from USD 505,000 (developer market study, Apr 2026)",
+   "agent listing unit F05 3BR 154 m2 USD 450,000, HOA USD 395/month",
+   "completion Q4 2027 (agent) / first deliveries mid-2027 (sales club)",
+   "projected gross yields 12.4% to 24.5% (developer market study, 'not a guarantee')",
+   "150 homes on a 6-hectare site, 100 m from Playa Potrero (agent)"
+  ],
+  "note": "Gated community of about 150 two- and three-bedroom homes by Grupo Zen (built by MCI Ingenieria) on a 6-hectare site between Playa Flamingo and Playa Potrero; framework was complete on most homes by May 2026 with first deliveries expected mid-2027, and agents list remaining units at USD 405,000 to 505,000. Grupo Zen publishes quarterly progress videos, but no permit number, deposit protection or named delivered projects; its own market study projects 12% to 25% gross yields. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 405000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12.4,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Grupo Zen claims 20+ years, 120,000 m2 of buildings and US$140M in sales, but names no delivered project with unit counts",
+   "units": 150,
+   "payment_plan": null,
+   "price_per_m2": 3375
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Grupo Zen marketing manager said in Oct 2024 that SETENA environmental viability was approved and the final construction permit was expected in H1 2025; an agent page now says 'construction permits approved'. No number published",
+   "escrow": "No escrow, trust or bank guarantee mentioned by the developer or agents",
+   "progress": "Grupo Zen news page with Q1 2026 site videos (Apr 2026) and a statement that owners get monthly photo reports; a sales club update (May 2026) says framework complete on most homes and windows being fitted",
+   "plans": "Only unit sizes (2BR 110-120 m2, 3BR 142-155 m2) and renders; no floor plans seen",
+   "record": "Developer site claims two decades, 'thousands of residences' and US$140M sales, with brands Urbano, Acquarello and Nerea, but no named completed project with units delivered",
+   "returns": "Developer market study (Apr 2026) projects gross yields of 12.4% to 24.5% based on AirDNA and states it is not a guarantee of returns"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Developer is Grupo Zen, construction by MCI Ingenieria",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grupo-zen.cr/en/news/avance-obra-acquarello-playa-q1-2026"
+   },
+   {
+    "claim": "About 150 homes on a 6-hectare site",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.estebanestates.com/acquarello-flamingo"
+   },
+   {
+    "claim": "SETENA environmental viability approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/grupo-zen_progreso-tangible-en-flamingo-la-costa-dorada-activity-7257440153420402688-NLX8"
+   },
+   {
+    "claim": "Construction permits approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.estebanestates.com/acquarello-flamingo"
+   },
+   {
+    "claim": "Concrete framework complete on most homes (May 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://smartmoneyhomes.com/acquarello-flamingo-may-2026-construction-update/"
+   },
+   {
+    "claim": "Completion date: Q4 2027 (agent) vs first deliveries mid-2027 / H1 2027 (sales club and agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/3-bed-condo-for-sale-in-playa-flamingo/18318"
+   },
+   {
+    "claim": "Unit F05 size: 154 m2 in description vs 17,843 sq ft in listing field",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/3-bed-condo-for-sale-in-playa-flamingo/18318"
+   },
+   {
+    "claim": "Prices USD 405,000 (2BR) and 505,000 (3BR); early buyers paid 286,800 and 386,800",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://smartmoneyhomes.com/acquarello-flamingo-may-2026-construction-update/"
+   },
+   {
+    "claim": "Only nine homes left for sale (May 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://smartmoneyhomes.com/acquarello-flamingo-may-2026-construction-update/"
+   },
+   {
+    "claim": "Projected gross yields 12.4% to 24.5%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://acquarello-market-study.pages.dev/"
+   },
+   {
+    "claim": "Buyer deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dominicalrealty.com/property/3-bed-condo-for-sale-in-playa-flamingo/18318"
+   },
+   {
+    "claim": "Grupo Zen has delivered thousands of residences over two decades",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grupo-zen.cr/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Costa Rica",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2027-H1 (agent)",
+   "delay_months": null,
+   "unit_types": [
+    "2BR house",
+    "3BR house"
+   ],
+   "size_min_m2": 110,
+   "size_max_m2": 155,
+   "price_min": 405000,
+   "price_max": 505000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Zen Hospitality (Grupo Zen division) rental management; projected 12.4% to 24.5% gross, not guaranteed",
+   "service_charge": "HOA USD 395/month (unit F05, agent listing)",
+   "brand": "Acquarello (Grupo Zen brand)",
+   "amenities": [
+    "nine pools",
+    "indoor/outdoor gym",
+    "coworking lounge",
+    "clubhouse with juice bar",
+    "kids club",
+    "jogging track",
+    "24/7 gated security",
+    "beach club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Santa Cruz (construction permit) after SETENA environmental viability",
+   "brochure_url": "https://acquarello-market-study.pages.dev/"
+  },
+  "positives": [
+   "Developer publishes quarterly dated construction videos",
+   "Builder named (MCI Ingenieria)",
+   "Structure largely complete by May 2026 per sales update",
+   "Yield projections labelled as not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.dominicalrealty.com/property/3-bed-condo-for-sale-in-playa-flamingo/18318",
+   "https://www.holprop.com/s/sale/cr62295588/",
+   "https://acquarello-market-study.pages.dev/",
+   "https://www.grupo-zen.cr/",
+   "https://www.grupo-zen.cr/en/news/avance-obra-acquarello-playa-q1-2026",
+   "https://smartmoneyhomes.com/acquarello-flamingo-may-2026-construction-update/",
+   "https://es.linkedin.com/posts/grupo-zen_progreso-tangible-en-flamingo-la-costa-dorada-activity-7257440153420402688-NLX8",
+   "https://www.estebanestates.com/acquarello-flamingo",
+   "https://www.potrerobeach.com/news/41-acquarello-flamingo-project"
+  ]
+ },
+ {
+  "slug": "ebano-santa-maria-panama",
+  "name": "Ebano",
+  "developer": "Valor Development",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Santa Maria Golf & Country Club (south phase), Juan Diaz, Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "url": "https://www.panamaequity.com/buildings-in-panama/ebano-panama/",
+  "docs_url": "https://ebanosantamaria.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer project site with amenity levels and track-record claim (5 delivered projects)",
+   "developer blog: pre-sale active May 2026, reservation / staged payments during works / balance on delivery",
+   "four 3BR models, 154.4 and 159.96 m2, per-model price list (agent)",
+   "USD 5,000 reservation, 30% paid before delivery (agent)",
+   "48 levels, 4 units per floor plus 2 penthouses",
+   "delivery 2030 (late 2030 per Panama Equity)"
+  ],
+  "note": "48-level Art Deco tower of three-bedroom apartments (154 to 160 m2) on one of the last lots in Santa Maria's south phase, in pre-sale since May 2026 with delivery in 2030; agents quote entry prices from USD 538,571 to 617,600. Valor Development (Grupo Valor) names delivered towers Marea I, Marea II, Solana, Aria and Portales, but no permit, construction start or deposit protection is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 563560,
+   "currency": "USD",
+   "title": "horizontal property (PH) title after registration; pre-sale under promesa de compraventa",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer site says five delivered projects in Panama with no late delivery; named delivered: Marea I, Marea II, Aria (Costa del Este), Solana (Santa Maria, 88 units), Portales (Casco Antiguo)",
+   "units": 164,
+   "payment_plan": "USD 5,000 reservation, staged payments during construction (30% before delivery), balance on delivery",
+   "price_per_m2": 3650
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit or municipal approval mentioned on the developer site, blog or agent pages",
+   "escrow": "No fideicomiso, escrow or bank guarantee named; only reservation and staged payments described",
+   "progress": "Pre-sale only; no construction start or progress update published",
+   "plans": "Agents publish four models (A/B 159.96 m2, C/D 154.4 m2) with layouts and per-model prices",
+   "record": "Developer names delivered projects Marea I, Marea II, Aria, Solana (88 units) and Portales on its own site; a 2022 society magazine profile repeats the list",
+   "returns": "Marketing stresses appreciation and rental demand but gives no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "48 levels, 4 apartments per floor plus 2 penthouses",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aciertopty.com/en/Proyecto/ebano/"
+   },
+   {
+    "claim": "Unit count: 164 residences on 41 residential floors (agent) vs 48 levels x 4 (other agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.arenasrealtor.com/en/ebano"
+   },
+   {
+    "claim": "Entry price: USD 538,571 vs 563,560 vs 617,600 depending on agent",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vacagroup.net/en/new-developments/ebano"
+   },
+   {
+    "claim": "Delivery in late 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.panamaequity.com/buildings-in-panama/ebano-panama/"
+   },
+   {
+    "claim": "Pre-sale active since May 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.valordevelopment.com.pa/nace-%C3%A9bano-vivir-en-santa-mar%C3%ADa-como-debe-ser"
+   },
+   {
+    "claim": "Five delivered projects, no late delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ebanosantamaria.com/"
+   },
+   {
+    "claim": "Delivered Marea I, Marea II, Aria, Solana, Portales",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mundosocial.net/el-hogar-de-sus-suenos/"
+   },
+   {
+    "claim": "Developer active since 2012 vs 'more than fifteen years'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vacagroup.net/en/new-developments/ebano"
+   },
+   {
+    "claim": "All units eligible for Panama investor residency",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arenasrealtor.com/en/ebano"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ebanosantamaria.com/"
+   },
+   {
+    "claim": "Buyer payments held in fideicomiso or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blog.valordevelopment.com.pa/nace-%C3%A9bano-vivir-en-santa-mar%C3%ADa-como-debe-ser"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Panama City, Panama",
+   "developer_company": "Valor Development Corp. (trading as Grupo Valor), per third-party guide; no registration number published",
+   "developer_projects_delivered": 5,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 151,
+   "size_max_m2": 160,
+   "price_min": 538571,
+   "price_max": 663834,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "USD 5,000 reservation, 30% paid during construction, balance on delivery (agent)",
+   "foreign_ownership": "Foreigners may hold titled property in Panama City directly; unit title (finca) only after PH regime registration",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool and jacuzzi",
+    "spa and wellness centre",
+    "gym, yoga and pilates",
+    "coworking",
+    "golf simulator",
+    "private cinema",
+    "wine bar and sports bar",
+    "padel and football courts"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Panama (Direccion de Obras y Construcciones)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer has finished towers in the same city that buyers can inspect (Marea I and II, Solana)",
+   "Per-model sizes and prices published by agents",
+   "Low USD 5,000 reservation with balance due on delivery",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.panamaequity.com/buildings-in-panama/ebano-panama/",
+   "https://ebanosantamaria.com/",
+   "https://blog.valordevelopment.com.pa/nace-%C3%A9bano-vivir-en-santa-mar%C3%ADa-como-debe-ser",
+   "https://vacagroup.net/en/new-developments/ebano",
+   "https://www.lifenroi.com/properties/ebano",
+   "https://aciertopty.com/en/Proyecto/ebano/",
+   "https://www.arenasrealtor.com/en/ebano",
+   "https://valordevelopment.com.pa/",
+   "https://valordevelopment.com.pa/project/",
+   "https://valordevelopment.com.pa/project/solana/",
+   "https://www.mundosocial.net/el-hogar-de-sus-suenos/",
+   "https://panamarealestateguide.com/projects/madero-costa-del-este"
+  ]
+ },
+ {
+  "slug": "x-the-building-san-francisco-panama",
+  "name": "X The Building",
+  "developer": null,
+  "status": "active",
+  "stage": "under construction",
+  "area": "Calle 73, San Francisco, Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "url": "https://www.panamaequity.com/x-the-building-san-francisco-panama/",
+  "docs_url": "https://xthebuilding.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site names F&F Properties and architect Pinzon Lozano & Asociados",
+   "two layouts, 67 m2 (1BR, option 2BR) and 90 m2 (2BR), virtual tour",
+   "8 apartments per floor, finishes specification",
+   "prices from USD 228,800 (agents) to 239,190-339,300 (The Agency)",
+   "construction began 2025, delivery late 2027 to early 2028 (agents)"
+  ],
+  "note": "Compact-apartment tower by F&F Properties (builder of Panama's F&F 'El Tornillo' tower) on Calle 73 near Parque Omar, with 67 and 90 m2 units from about USD 228,800; agents say construction began in 2025 and delivery is due late 2027 to early 2028. No permit number, deposit protection or progress percentage is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 228800,
+   "currency": "USD",
+   "title": "horizontal property (PH) title after registration",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "F&F Properties claims 40+ projects in Panama City incl. F&F Tower (El Tornillo, completed 2011), Vitri Tower, Regalia, Torre Bicsa, Evolution and Titanium towers",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 3415
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit or municipal approval number published by the developer or agents",
+   "escrow": "No fideicomiso, escrow or bank guarantee mentioned",
+   "progress": "Agents state construction began in 2025 and list the project as 'en construccion', but no dated photos, % or milestones were found",
+   "plans": "Developer site shows the 67 m2 and 90 m2 layouts with a virtual tour; agents show floor plans",
+   "record": "Developer names F&F Tower, Vitri, Regalia, Torre Bicsa, Evolution and Titanium; Wikipedia and The Business Year independently confirm F&F Properties developed F&F Tower (completed 2011)",
+   "returns": "No yield figure or guarantee; one agent says the location 'guarantees strong appreciation' (agent wording, not a return guarantee)"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is F&F Properties",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xthebuilding.com/"
+   },
+   {
+    "claim": "F&F Properties developed F&F Tower (Revolution Tower), completed 2011",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/F%26F_Tower"
+   },
+   {
+    "claim": "F&F Properties has 40+ projects and 40+ years in Panama",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ffproperties.net/trayectoria/"
+   },
+   {
+    "claim": "Construction began in 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.panamaequity.com/x-the-building-san-francisco-panama/"
+   },
+   {
+    "claim": "Delivery end 2027 to early 2028 (Q1 2028 on one portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theagencyrepanama.com/developments/x-the-building-at-san-francisco/"
+   },
+   {
+    "claim": "Entry price USD 228,800 vs USD 239,190 at The Agency",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://theagencyrepanama.com/developments/x-the-building-at-san-francisco/"
+   },
+   {
+    "claim": "67 m2 unit described as 1BR by some agents and 2BR by others",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.lifenroi.com/properties/x-the-building"
+   },
+   {
+    "claim": "8 apartments per floor, 4 of 67 m2 and 4 of 90 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propilatam.com/en/pa/venta/x-the-building/1003"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xthebuilding.com/"
+   },
+   {
+    "claim": "Buyer funds protected by fideicomiso or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xthebuilding.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Panama City, Panama",
+   "developer_company": "F&F Properties Ltd. Inc. (per Wikipedia; no registration number published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027 (some agents)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 66,
+   "size_max_m2": 90,
+   "price_min": 228000,
+   "price_max": 339300,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may hold titled property in Panama City directly",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "gym",
+    "coworking",
+    "golf simulator",
+    "padel court",
+    "half basketball court",
+    "kids playground",
+    "dog deck"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Panama (Direccion de Obras y Construcciones)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer with an independently documented delivered landmark tower",
+   "Developer site publishes layouts and a virtual tour",
+   "Architect named",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xthebuilding.com/",
+   "https://www.lifenroi.com/properties/x-the-building",
+   "https://panafolio.com/projects/x-the-building",
+   "https://ferealtorpty.com/proyecto/x-the-building/",
+   "https://www.panamaequity.com/x-the-building-san-francisco-panama/",
+   "https://theagencyrepanama.com/developments/x-the-building-at-san-francisco/",
+   "https://www.propilatam.com/en/pa/venta/x-the-building/1003",
+   "https://en.wikipedia.org/wiki/F%26F_Tower",
+   "https://thebusinessyear.com/article/do-the-twist/",
+   "https://ffproperties.net/trayectoria/"
+  ]
+ },
+ {
+  "slug": "wellness-longevity-tower-costa-del-este",
+  "name": "Wellness & Longevity Concept tower, Costa del Este (42 floors, name not published)",
+  "developer": null,
+  "status": "active",
+  "stage": "under construction",
+  "area": "Costa del Este (facing Town Center), Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "url": "https://www.encuentra24.com/panama-en/real-estate-for-sale-apartments-condos/lowest-entry-price-in-costa-del-este-273k-53-m-airbnb-approved-7-projected-roi/32694640",
+  "docs_url": "https://empresasbern.com/proyectos/condo-suites/generation-tower/",
+  "permit_number": null,
+  "docs_listed": [
+   "identified as Generation Tower by Empresas Bern (listing names 'Generation Plaza', same 53/58 m2 models, Mallol design)",
+   "developer page: furnished condo suites 53, 58, 59, 65 m2 with plans, plus Independent Living floors",
+   "developer construction photo dated Feb 2026",
+   "developer price list 3 Jul 2026: USD 246,000 to 325,000 (via portal)",
+   "payment plan 15% on signing, 10% at 6 and 12 months, 5% at 18 months, 60% on delivery",
+   "short-term rental licence claimed (no 45-day minimum)",
+   "agent listing: 'projected yield starting at 7%'"
+  ],
+  "note": "The unnamed listing is Generation Tower, Empresas Bern's furnished condo-suite tower in Costa del Este (Mallol design, 312 residences per the listing), under construction with a February 2026 site photo and delivery stated as mid-2027; banks Banco Aliado, Unibank and Caja de Ahorros provide the interim construction loan. Developer price list runs USD 246,000 to 325,000; agents advertise 7% to 11% projected yields, and an older agent page gave 2022 delivery. No permit number or deposit protection published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 246000,
+   "currency": "USD",
+   "title": "horizontal property (PH) title after registration",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Empresas Bern (founded 1978) states 160+ projects and 9,900+ units delivered, incl. Torres Miramar, Parque del Mar I, Arcadia del Este (sold and delivered short-term rental condo)",
+   "units": 312,
+   "payment_plan": "15% on contract, 10% at 6 months, 10% at 12 months, 5% at 18 months, balance on delivery; or 50% down and 50% financed over 5 years after delivery",
+   "price_per_m2": 5000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction permit number on the developer page or listings; short-term rental licence claimed by agents (Tourism Authority) without a number",
+   "escrow": "No escrow or fideicomiso named; developer says an interim construction loan comes from Banco Aliado, Unibank and Caja de Ahorros, which is financing, not deposit protection",
+   "progress": "Developer page states 'en construccion' with a photo dated February 2026; no % published",
+   "plans": "Developer page publishes 53, 58, 59 and 65 m2 suite plans",
+   "record": "Developer states 160+ projects and 9,900+ units; trade press (2017) reported 8,500+ units delivered and La Estrella reported Bern's TownCenter Costa del Este",
+   "returns": "Developer says units are 'ready to generate income from day one'; agents advertise 'projected yield starting at 7%' (Enfoca, which also writes of a track record that will 'guarantee a highly liquid' product) and 8-11% projected ROI (DoPanama). Framed as projections, no guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "The listed 42-floor wellness tower is Generation Tower by Empresas Bern",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empresasbern.com/proyectos/condo-suites/generation-tower/"
+   },
+   {
+    "claim": "Floor count: 42 (listing) vs 44 (SkyscraperPage) vs 27 (DoPanama)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dopanama.com/articles/generation-tower-311"
+   },
+   {
+    "claim": "312 residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.encuentra24.com/panama-en/real-estate-for-sale-apartments-condos/lowest-entry-price-in-costa-del-este-273k-53-m-airbnb-approved-7-projected-roi/32694640"
+   },
+   {
+    "claim": "Delivery 2027 vs 2022 on an older agent page (project started 2013, foundations 2024)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.grupoddpanama.com/proyectos/generation-tower/"
+   },
+   {
+    "claim": "Under construction, photo February 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.empresasbern.com/proyectos/condo-suites-eng/generation-tower-eng-2/"
+   },
+   {
+    "claim": "Interim construction loan from Banco Aliado, Unibank and Caja de Ahorros",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/empresas-bern_empresasbern-panam%C3%A1-generationtower-activity-7435790429364649984-bsTg"
+   },
+   {
+    "claim": "Licensed for short-term rentals, one of two projects in Costa del Este",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://panamapropertyguide.com/es/proyectos-nuevos/generation-tower-costa-del-este"
+   },
+   {
+    "claim": "Unit size of listed unit 53 m2 vs 58 m2 in the same listing",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.encuentra24.com/panama-en/real-estate-for-sale-apartments-condos/lowest-entry-price-in-costa-del-este-273k-53-m-airbnb-approved-7-projected-roi/32694640"
+   },
+   {
+    "claim": "Projected yield from 7% (Enfoca) / 8-11% (DoPanama)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dopanama.com/articles/generation-tower-311"
+   },
+   {
+    "claim": "Empresas Bern has delivered 8,500+ units (2017)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.inversioninmobiliariacr.com/es/noticias/noticias-nacionales/item/763-grandes-protagonistas-del-mercado-residencial-en-centroamerica"
+   },
+   {
+    "claim": "Empresas Bern developed TownCenter Costa del Este",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.laestrella.com.pa/economia/area-nueva-gesta-costa-comercial-FNLE262997"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empresasbern.com/proyectos/condo-suites/generation-tower/"
+   },
+   {
+    "claim": "Buyer deposits held in escrow or trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empresasbern.com/proyectos/condo-suites/generation-tower/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1978,
+   "developer_hq": "Panama City, Panama",
+   "developer_company": "Empresas Bern (group; project company not published)",
+   "developer_projects_delivered": 160,
+   "developer_units_delivered": 9900,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": "2027-Q2",
+   "original_handover": "2022 (older agent listing)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR condo suite",
+    "independent living suite"
+   ],
+   "size_min_m2": 41,
+   "size_max_m2": 65,
+   "price_min": 246000,
+   "price_max": 325000,
+   "currency": "USD",
+   "deposit_pct": 15,
+   "payment_plan": "15% / 10% / 10% / 5% during construction, 60% on delivery",
+   "foreign_ownership": "Foreigners may hold titled property in Panama City directly",
+   "rental_programme": "be. by Empresas Bern manages bookings, cleaning and maintenance; agents project 7% to 11%, not guaranteed",
+   "service_charge": "HOA to be determined (listing)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "sky bar with pool",
+    "gym",
+    "wellness centre",
+    "open-air theatre",
+    "jogging track",
+    "coworking",
+    "ground-floor retail plaza"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Panama (construction permit); Tourism Authority of Panama (short-term rental)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large developer with independently reported delivery history",
+   "Bank construction financing in place per developer",
+   "Developer publishes plans and a dated site photo",
+   "Payment plan weights 60% to delivery"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.encuentra24.com/panama-en/real-estate-for-sale-apartments-condos/lowest-entry-price-in-costa-del-este-273k-53-m-airbnb-approved-7-projected-roi/32694640",
+   "https://empresasbern.com/proyectos/condo-suites/generation-tower/",
+   "https://www.empresasbern.com/proyectos/condo-suites-eng/generation-tower-eng-2/",
+   "https://skyscraperpage.com/b190731/panama/generation-tower",
+   "https://es.linkedin.com/posts/empresas-bern_empresasbern-panam%C3%A1-generationtower-activity-7435790429364649984-bsTg",
+   "https://panamapropertyguide.com/es/proyectos-nuevos/generation-tower-costa-del-este",
+   "https://inmoproyectospanama.com/proyectos/costa-del-este/generation-tower",
+   "https://www.lifenroi.com/es/propiedades/generation-tower",
+   "https://www.grupoddpanama.com/proyectos/generation-tower/",
+   "https://dopanama.com/articles/generation-tower-311",
+   "https://empresasbern.com/nosotros/",
+   "https://cop.unglobalcompact.org/2023/files/7159_Empresas%20Bern%20-%20Informe%20del%20Pacto%20Global%202023.pdf",
+   "https://www.inversioninmobiliariacr.com/es/noticias/noticias-nacionales/item/763-grandes-protagonistas-del-mercado-residencial-en-centroamerica",
+   "https://www.laestrella.com.pa/economia/area-nueva-gesta-costa-comercial-FNLE262997"
+  ]
+ },
+ {
+  "slug": "the-gem-at-cap-cana",
+  "name": "The Gem at Cap Cana",
+  "developer": null,
+  "status": "active",
+  "stage": "under construction",
+  "area": "Green Village / Juanillo, Cap Cana, La Altagracia",
+  "country": "Dominican Republic",
+  "market": "Punta Cana",
+  "url": "https://garproperties.alterestate.com/propiedad/1-bedroom-luxury-condos-at-the-gem-at-cap-cana-caribbean-golf-lake-views-1027",
+  "docs_url": "https://thegematcapcana.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer Grupo Joseda / Joseda Development named on project site and dossier",
+   "commercial dossier: 52 apartments in 4 buildings, architect Morph Estudio",
+   "payment plan USD 5,000 reservation, 20% on contract, 50% during works, 30% on delivery",
+   "construction start Apr 2025, delivery Dec 2027 ('dates subject to licences')",
+   "unit price list with sizes 91 to 207 m2, USD 270,000 to 661,000 (agent)",
+   "CONFOTUR benefits claimed (3% transfer tax and 15-year IPI exemption)",
+   "developer social posts: Block B at first level and 'full MIVED release' (16 Sep 2026)"
+  ],
+  "note": "52-apartment, four-building golf-side project by Grupo Joseda (Joseda Development) in Cap Cana, launched October 2024 and priced USD 270,000 to 661,000 with delivery promised for December 2027. A developer post of 16 September 2026 says Block B had just reached its first level and that full MIVED (housing ministry) clearance was only now obtained, which makes the December 2027 date look tight; CONFOTUR status is claimed but no resolution number is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 270000,
+   "currency": "USD",
+   "title": "freehold condominium title (CONFOTUR claimed)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 52,
+   "payment_plan": "USD 5,000 reservation; 20% on contract; 50% during construction; 30% on delivery",
+   "price_per_m2": 2872
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer post (Sep 2026) mentions 'liberacion total del MIVED' and agents claim CONFOTUR benefits, but no licence or CONFOTUR resolution number is published; the dossier says dates are subject to licences",
+   "escrow": "No fideicomiso, escrow or bank guarantee mentioned",
+   "progress": "Developer social posts dated Aug and Sep 2026 report blocks rising and Block B at first level with perimeter wall complete; no %",
+   "plans": "Dossier and agent pages publish unit types with sizes and a per-unit price list",
+   "record": "Grupo Joseda describes itself as a 16-year holding in security, home automation and finishes; no delivered real estate project named",
+   "returns": "Investment and rental use mentioned; no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Developer is Grupo Joseda / Joseda Development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://grupojoseda.com/"
+   },
+   {
+    "claim": "Project launched 5 Oct 2024 with 52 units in 4 buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://puntacana-bavaro.com/business/bienes-raices/lanzan-the-gem-at-cap-cana-innovador-proyecto-residencial-enfocado-al-golf/"
+   },
+   {
+    "claim": "Construction started April 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/4971858/328009/The_Gem-Dossier_Comercial_English_Version_LowRes.pdf"
+   },
+   {
+    "claim": "Block B at first level and full MIVED release obtained (16 Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gloopla.com/DO/Punta-Cana/416036931595047/The-Gem-At-Cap-Cana"
+   },
+   {
+    "claim": "Delivery December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eskala.com.do/propiedad/cap-cana-nuevo-desarrollo-con-apartamentos-en-venta-2-y-3-dormitorios-1175"
+   },
+   {
+    "claim": "CONFOTUR: 3% transfer tax exemption and 15 years IPI exemption",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eskala.com.do/propiedad/cap-cana-nuevo-desarrollo-con-apartamentos-en-venta-2-y-3-dormitorios-1175"
+   },
+   {
+    "claim": "Building height: 4 storeys (agent) vs 5 levels (another agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ciredr.com/developments/the-gem-at-cap-cana"
+   },
+   {
+    "claim": "Entry price USD 270,000 (Eskala) vs 294,000 (developer site) vs 441,000 (Cana Blue)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://josedadevelopments.com/property/the-gem-at-cap-cana/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow or fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://assets.easybroker.com/property_files/4891112/324270/The_Gem-Dossier_Comercial-LowRes.pdf"
+   },
+   {
+    "claim": "Developer has delivered prior residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://grupojoseda.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Santo Domingo, Dominican Republic",
+   "developer_company": "Grupo Joseda (holding of 5 Dominican companies); no RNC published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-04",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR + family",
+    "3BR",
+    "penthouse with pool"
+   ],
+   "size_min_m2": 91,
+   "size_max_m2": 207,
+   "price_min": 270000,
+   "price_max": 661000,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "USD 5,000 reservation, 20% on contract, 50% during works, 30% on delivery",
+   "foreign_ownership": "Foreigners can hold title directly in the Dominican Republic",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop bar",
+    "golf simulator",
+    "gym",
+    "pool",
+    "putting green",
+    "coworking",
+    "kids area",
+    "pet park"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "MIVED (Ministry of Housing and Buildings) licence; CONFOTUR classification by the Ministry of Tourism",
+   "brochure_url": "https://assets.easybroker.com/property_files/4971858/328009/The_Gem-Dossier_Comercial_English_Version_LowRes.pdf"
+  },
+  "positives": [
+   "Developer and architect named, launch covered by local press",
+   "Per-unit price list with sizes",
+   "30% of the price due only on delivery",
+   "Developer posts dated progress updates"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thegematcapcana.com/",
+   "https://ciredr.com/developments/the-gem-at-cap-cana",
+   "https://grupojoseda.com/",
+   "https://josedadevelopments.com/property/the-gem-at-cap-cana/",
+   "https://eskala.com.do/propiedad/cap-cana-nuevo-desarrollo-con-apartamentos-en-venta-2-y-3-dormitorios-1175",
+   "https://assets.easybroker.com/property_files/4971858/328009/The_Gem-Dossier_Comercial_English_Version_LowRes.pdf",
+   "https://assets.easybroker.com/property_files/4891112/324270/The_Gem-Dossier_Comercial-LowRes.pdf",
+   "https://puntacana-bavaro.com/business/bienes-raices/lanzan-the-gem-at-cap-cana-innovador-proyecto-residencial-enfocado-al-golf/",
+   "https://www.construmedia.com.do/2024/12/03/lanzamiento-proyecto-residencial/",
+   "https://www.gloopla.com/DO/Punta-Cana/416036931595047/The-Gem-At-Cap-Cana",
+   "https://canablue.com/new/the-gem-at-cap-cana/"
+  ]
+ },
+ {
+  "slug": "cap-cana-four-tower-boutique-community",
+  "name": "Cap Cana four-tower boutique community (listing 1097, name not published)",
+  "developer": null,
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Golden Lakes, Cap Cana, La Altagracia",
+  "country": "Dominican Republic",
+  "market": "Punta Cana",
+  "url": "https://garproperties.alterestate.com/propiedad/2-bedroom-pre-construction-condo-in-cap-cana-iconic-design-oversized-terraces-1097",
+  "docs_url": "https://garproperties.alterestate.com/propiedad/1-bedroom-pre-construction-condo-in-cap-cana-iconic-architecture-exceptional-value-per-m2-1096",
+  "permit_number": null,
+  "docs_listed": [
+   "identified as Itza Golden Residences by KMA Developments (same 52 units, 4 stepped towers, USD 431,460 2BR, Q4 2029)",
+   "per-level sizes and prices (1BR from USD 275,400 to 3BR USD 739,331)",
+   "payment plan USD 5,000 reservation, 20% down, 40% during works, 40% on delivery",
+   "'construction payments protected by a bond in the buyer's favor' (issuer not named)",
+   "CONFOTUR 'eligible' (agent) vs 'in process' (developer price list via PuntaDB)",
+   "maintenance USD 3.50 per m2; 78 underground parking spaces",
+   "developer price list dated 26 Oct 2026: 11 sold, 7 reserved, 32 available"
+  ],
+  "note": "The unnamed listing is Itza Golden Residences, four stepped five-level towers (52 homes) over Golden Lakes in Cap Cana by KMA Developments, presented publicly in June 2026 with delivery in Q4 2029 and prices from USD 275,400 to 739,331. The agent says payments are protected by a bond but names no issuer; CONFOTUR is still in process and the developer, a 2016 electrical-and-construction firm, names no delivered residential project. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 275400,
+   "currency": "USD",
+   "title": "freehold condominium title (CONFOTUR in process)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Agent states construction payments are 'protected by a bond in the buyer's favor'; no issuer, amount or document published",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 52,
+   "payment_plan": "USD 5,000 reservation (or 3,000 via payment link), 20% down, 40% during construction, 40% on delivery; negotiable",
+   "price_per_m2": 2502
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No construction licence number published; CONFOTUR shown as 'in process' on the developer price list (PuntaDB) while agents call units 'CONFOTUR-eligible'",
+   "escrow": "Agent listing says construction payments are protected by a bond in the buyer's favor; issuer and terms not published",
+   "progress": "Agents mark 'En Construccion' but the project was only presented in June 2026; no dated photos or % found",
+   "plans": "Per-level layouts with interior and terrace m2 and per-unit price list",
+   "record": "KMA Developments presented Itza and Belara in June 2026 as 'the start of a new stage'; LinkedIn shows a 5-person electrical and construction firm founded 2016; no delivered residential project named",
+   "returns": "Marketed as 'Airbnb-friendly' and 'built for returns' with no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Listing 1097 is Itza Golden Residences by KMA Developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://puntadb.com/projects/itza-golden-residences"
+   },
+   {
+    "claim": "Four 5-level towers with 13 residences each (52 homes)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://garproperties.alterestate.com/propiedad/2-bedroom-pre-construction-condo-in-cap-cana-iconic-design-oversized-terraces-1097"
+   },
+   {
+    "claim": "Projects presented officially in June 2026 by KMA Developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://incaribemedia.com/itza-y-belara-impulsan-una-nueva-era-del-desarrollo-inmobiliario-en-cap-cana/"
+   },
+   {
+    "claim": "Construction payments protected by a bond in the buyer's favor",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://garproperties.alterestate.com/propiedad/1-bedroom-pre-construction-condo-in-cap-cana-iconic-architecture-exceptional-value-per-m2-1096"
+   },
+   {
+    "claim": "CONFOTUR eligible (agent) vs CONFOTUR in process (developer list)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://puntadb.com/projects/itza-golden-residences"
+   },
+   {
+    "claim": "Delivery Q4 2029 / December 2029 vs October 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.drlistings.com/developments/cap-cana/itza-golden-residences/"
+   },
+   {
+    "claim": "Under construction (agents) while project presented only in June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.drlistings.com/developments/cap-cana/itza-golden-residences/"
+   },
+   {
+    "claim": "Availability: 32 of 52 units available on price list of 26 Oct 2026; DRListings shows 2 available",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.drlistings.com/developments/cap-cana/itza-golden-residences/"
+   },
+   {
+    "claim": "Entry price 1BR USD 275,400 (agent) vs 297,000 (developer list)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://puntadb.com/projects/itza-golden-residences"
+   },
+   {
+    "claim": "Developer has a delivered residential track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/kma-developments"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Punta Cana, Dominican Republic",
+   "developer_company": "KMA Developments (KMA Electricos & Construccion per LinkedIn); no RNC published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR + service",
+    "1BR + study",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 76,
+   "size_max_m2": 306,
+   "price_min": 275400,
+   "price_max": 739331,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% down, 40% during construction, 40% on delivery",
+   "foreign_ownership": "Foreigners can hold title directly in the Dominican Republic",
+   "rental_programme": "Short-term rentals permitted; no programme or figures",
+   "service_charge": "USD 3.50 to 4.00 per m2 per month (estimate)",
+   "brand": null,
+   "amenities": [
+    "semi-Olympic lap pool",
+    "sundeck",
+    "gym",
+    "restaurant",
+    "sports bar",
+    "coworking",
+    "lakeside beach",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "MIVED licence; CONFOTUR classification by the Ministry of Tourism",
+   "brochure_url": null
+  },
+  "positives": [
+   "40% of the price due only on delivery",
+   "Developer price list with sold and reserved units published (via PuntaDB)",
+   "A buyer bond is at least claimed in writing",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://garproperties.alterestate.com/propiedad/2-bedroom-pre-construction-condo-in-cap-cana-iconic-design-oversized-terraces-1097",
+   "https://garproperties.alterestate.com/propiedad/1-bedroom-pre-construction-condo-in-cap-cana-iconic-architecture-exceptional-value-per-m2-1096",
+   "https://puntadb.com/projects/itza-golden-residences",
+   "https://puntadb.com/developers/kma-developments",
+   "https://realting.com/es/dominican-republic/property/3873277",
+   "https://incaribemedia.com/itza-y-belara-impulsan-una-nueva-era-del-desarrollo-inmobiliario-en-cap-cana/",
+   "https://linkedin.com/company/kma-developments",
+   "https://www.drlistings.com/developments/cap-cana/itza-golden-residences/"
+  ]
+ },
+ {
+  "slug": "west-side-punta-cana",
+  "name": "West Side Punta Cana (WestSide Residences)",
+  "developer": "Grupo Paceo S.R.L.",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Downtown Punta Cana / Bavaro, La Altagracia",
+  "country": "Dominican Republic",
+  "market": "Punta Cana",
+  "url": "https://westsideresidencespuntacana.com/",
+  "docs_url": "https://westsideresidencespuntacana.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "project site: villas from USD 195,000 (ready and off-plan), 2BR apartments from USD 139,800 (off-plan)",
+   "claims '+30 years', '+2,000 properties delivered', '130+ families already live here'",
+   "social posts Sep-Oct 2026: construction 'advancing', commercial plaza (The Cave Garden Plaza), prices from USD 110,000",
+   "no permit, escrow or delivery dates published"
+  ],
+  "note": "Gated project of 333 villas plus apartments and a plaza near Downtown Punta Cana, still being sold in October 2026 from USD 110,000. The Dominican prosecutor's office arrested promoter Joan Fernando Gonzalez Contreras in May 2026 (with Interpol) over a buyer's fraud complaint, and co-accused Adela Mota Matos was arrested in August 2026; multiple buyers say they paid since 2019-2020 without delivery, while the company says about 100-120 homes were delivered and blames post-pandemic cost increases. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 139800,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer site claims 2,000+ properties delivered over 30 years and 130+ families living on site; promoter told El Nuevo Diario (May 2024) about 100 homes delivered; opinion piece (May 2026) says about 120",
+   "units": 333,
+   "payment_plan": "Various payment facilities mentioned; no schedule published",
+   "price_per_m2": 1748
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or permit number published",
+   "escrow": "No escrow or fideicomiso; buyers report paying directly to the company and a complaint says land titles were in third parties' names",
+   "progress": "Social posts (Sep 2026) say works are advancing, without dates of milestones or %; no delivery dates published",
+   "plans": "Only bedroom counts and sizes (villas up to 200 m2, apartments 80 m2); no plans",
+   "record": "Developer claims 2,000+ deliveries; press quotes the promoter at about 100 delivered homes; the prosecutor's office says a buyer's lawyers found the purchased villa did not exist",
+   "returns": "Apartments called 'Airbnb friendly' and 'safe and profitable' investment; no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "contradicted",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Project of 333 homes started shortly before COVID-19",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://diariolibre.com/actualidad/justicia/2025/01/08/estafa-inmobiliaria-en-rd-chilena-denuncia-a-grupo-paceo/2961279"
+   },
+   {
+    "claim": "About 100 to 120 homes delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elnuevodiario.com.do/inversionistas-del-proyecto-westside-residences-punta-cana-niegan-fraude-inmobiliario/"
+   },
+   {
+    "claim": "Grupo Paceo has delivered 2,000+ properties",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://westsideresidencespuntacana.com/"
+   },
+   {
+    "claim": "Promoter Joan Fernando Gonzalez Contreras arrested on judicial order 2025-AJ0007854 over a fraud complaint",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://pgr.gob.do/ministerio-publico-arresta-hombre-vinculado-a-estafa-inmobiliaria/"
+   },
+   {
+    "claim": "Villa bought by complainant 'does not exist' per prosecutor's account vs developer saying works continue",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://pgr.gob.do/ministerio-publico-arresta-hombre-vinculado-a-estafa-inmobiliaria/"
+   },
+   {
+    "claim": "Co-accused Adela Mota Matos arrested in August 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://puntacanapost.com/arrestan-acusada-por-presunta-estafa-en-proyecto-west-side-residences-punta-cana/"
+   },
+   {
+    "claim": "Land titles in third parties' names (buyer) vs 'an error' (company)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://diariolibre.com/actualidad/justicia/2025/01/08/estafa-inmobiliaria-en-rd-chilena-denuncia-a-grupo-paceo/2961279"
+   },
+   {
+    "claim": "Buyer paid USD 142,804 for a villa due January 2021, no works seen in Feb 2023",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://elnuevodiario.com.do/demandante-de-constructora-paceo-denuncia-incumplimiento-en-entrega-de-vivienda/"
+   },
+   {
+    "claim": "Prices raised after the pandemic; most buyers accepted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://diariolibre.com/actualidad/justicia/2025/01/08/estafa-inmobiliaria-en-rd-chilena-denuncia-a-grupo-paceo/2961279"
+   },
+   {
+    "claim": "Units still on sale from USD 110,000 (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gloopla.com/DO/B%C3%A1varo/2155937674731032/WestSide-Residences-Punta-Cana."
+   },
+   {
+    "claim": "Developer company name: Grupo Paceo S.R.L. (complaint) vs Grupo Paceo LLC / Paceo, LLC (prosecutor)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://pgr.gob.do/ministerio-publico-arresta-hombre-vinculado-a-estafa-inmobiliaria/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dominican Republic",
+   "developer_company": "Grupo Paceo S.R.L. / Paceo LLC (names differ across sources; no RNC published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2019",
+   "handover_promised": null,
+   "original_handover": "2021-Q1 (one buyer's villa, per El Nuevo Diario)",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "2BR apartment",
+    "commercial"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 200,
+   "price_min": 110000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can hold title directly in the Dominican Republic",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "clubhouse with pool",
+    "jacuzzi",
+    "gym",
+    "sports courts",
+    "multi-use hall",
+    "play areas",
+    "ecological trail",
+    "BBQ"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "MIVED (Ministry of Housing and Buildings) and municipal authority",
+   "brochure_url": null
+  },
+  "positives": [
+   "Some homes reported delivered and occupied (company figure about 100-120)",
+   "Company has answered press questions publicly"
+  ],
+  "flags": [
+   {
+    "text": "Dominican prosecutor's office reported the arrest (May 2026, with Interpol) of promoter Joan Fernando Gonzalez Contreras on judicial order 2025-AJ0007854 over a buyer's fraud complaint filed 3 Jul 2024",
+    "source": "https://pgr.gob.do/ministerio-publico-arresta-hombre-vinculado-a-estafa-inmobiliaria/"
+   },
+   {
+    "text": "PuntaCanaPost reported the arrest of co-accused Adela Mota Matos in August 2026 after seven months as a fugitive",
+    "source": "https://puntacanapost.com/arrestan-acusada-por-presunta-estafa-en-proyecto-west-side-residences-punta-cana/"
+   },
+   {
+    "text": "Diario Libre reported a criminal complaint by a buyer who paid US$90,913 (2020-2023) without delivery or refund; she says banks found land titles in third parties' names, which the company called an error",
+    "source": "https://diariolibre.com/actualidad/justicia/2025/01/08/estafa-inmobiliaria-en-rd-chilena-denuncia-a-grupo-paceo/2961279"
+   },
+   {
+    "text": "El Nuevo Diario reported a buyer who paid US$142,804 for a villa due January 2021 and found no works in February 2023",
+    "source": "https://elnuevodiario.com.do/demandante-de-constructora-paceo-denuncia-incumplimiento-en-entrega-de-vivienda/"
+   },
+   {
+    "text": "El Nuevo Diario reported (May 2024) buyers' fraud allegations publicised by their lawyer; promoters denied fraud and attributed delays to buyers refusing post-pandemic price adjustments",
+    "source": "https://elnuevodiario.com.do/inversionistas-del-proyecto-westside-residences-punta-cana-niegan-fraude-inmobiliario/"
+   }
+  ],
+  "sources": [
+   "https://westsideresidencespuntacana.com/",
+   "https://diariolibre.com/actualidad/justicia/2025/01/08/estafa-inmobiliaria-en-rd-chilena-denuncia-a-grupo-paceo/2961279",
+   "https://inmobiliario.do/atraso-en-la-construccion-o-estafa-una-reflexion-necesaria-sobre-el-caso-westside-residences-punta-cana/",
+   "https://pgr.gob.do/ministerio-publico-arresta-hombre-vinculado-a-estafa-inmobiliaria/",
+   "https://elnuevodiario.com.do/demandante-de-constructora-paceo-denuncia-incumplimiento-en-entrega-de-vivienda/",
+   "https://elnuevodiario.com.do/inversionistas-del-proyecto-westside-residences-punta-cana-niegan-fraude-inmobiliario/",
+   "https://puntacanapost.com/arrestan-acusada-por-presunta-estafa-en-proyecto-west-side-residences-punta-cana/",
+   "https://ensegundos.do/2026/05/03/arrestan-a-joan-fernando-gonzalez-por-presunta-estafa-inmobiliaria-millonaria-en-proyecto-fantasma-de-punta-cana/",
+   "https://www.gloopla.com/DO/B%C3%A1varo/2155937674731032/WestSide-Residences-Punta-Cana."
+  ]
+ },
+ {
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "developer": "Epic Diseño + Construcción (with Novus Civitas)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Manzanillo del Mar, Serena del Mar, Cartagena",
+  "country": "Colombia",
+  "market": "Cartagena",
+  "url": "https://www.semana.com/mejor-colombia/articulo/nuevo-proyecto-inmobiliario-en-cartagena-asi-sera-morros-vita/202629/",
+  "docs_url": "https://www.morrosvita.com/es/inicio",
+  "permit_number": null,
+  "docs_listed": [
+   "fiduciary scheme with Alianza Fiduciaria; works started only after break-even (Nov 2025) and licence approval",
+   "groundbreaking 12 Mar 2026, 30-month build, delivery end 2028",
+   "226 apartments in a 5-storey tower plus attic (news) / 240 (agents)",
+   "1, 2 and 3BR from about 38.5-42.5 m2 to 236 m2; prices from COP 549m (2024) to COP 804m (Mar 2026)",
+   "payment plan 5% reservation, 45% over up to 42 months, 50% on delivery",
+   "track record: five finished Morros condominiums (eco, io, zoe, eos, kai)",
+   "project company Morros Vita S.A.S., NIT 901825235"
+  ],
+  "note": "226-apartment beachfront condominium in Serena del Mar by Epic Diseño + Construccion with Novus Civitas; buyer payments sit with Alianza Fiduciaria, which released funds only after break-even (Nov 2025) and licence approval, and works started on 12 March 2026 for delivery at the end of 2028. Prices rose from COP 549m in 2024 to COP 804m in 2026; the developer has five finished condominiums in the same complex. No licence number published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 804000000,
+   "currency": "COP",
+   "title": "freehold (propiedad horizontal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Buyer funds linked to a fiducia with Alianza Fiduciaria; funds released to the builder only after break-even, construction licence and financial structuring (condiciones de giro)",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Five completed Morros condominiums in Serena del Mar (eco, io, zoe, eos, kai) since 2015; about 1,300 apartments across eight Morros projects incl. those under way",
+   "units": 226,
+   "payment_plan": "5% reservation, 45% in monthly instalments during construction (up to 42 months), 50% on delivery",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "News says licence approval was a precondition met before works began; no licence or curaduria resolution number published (the news items relay the promoter; counted as developer-level)",
+   "escrow": "Caracol Radio and Semana report Alianza Fiduciaria administers buyer funds and set the release conditions (break-even, licence, financing, buyer linkage)",
+   "progress": "Groundbreaking on 12 Mar 2026 reported by Caracol Radio and El Universal; no later % or photo log found",
+   "plans": "Only typologies and sizes (e.g. Type B 58.4 m2, Type C 65.2 m2) on portals; no floor plans seen",
+   "record": "Caracol Radio reports five finished Morros projects and 1,300 apartments across eight projects; Park I due for delivery July 2026",
+   "returns": "Marketing mentions valorisation; no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "independent",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Funds administered by Alianza Fiduciaria with release conditions",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://caracol.com.co/2026/03/16/morros-vita-asi-sera-el-ultimo-proyecto-en-la-linea-de-playa-de-serena-del-mar/"
+   },
+   {
+    "claim": "Break-even reached in November 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://caracol.com.co/2026/03/16/morros-vita-asi-sera-el-ultimo-proyecto-en-la-linea-de-playa-de-serena-del-mar/"
+   },
+   {
+    "claim": "Construction licence approved before start",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.semana.com/mejor-colombia/articulo/nuevo-proyecto-inmobiliario-en-cartagena-asi-sera-morros-vita/202629/"
+   },
+   {
+    "claim": "Works started March 2026 (news) vs 'began construction in March 2025' (developer site)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.epicconstructora.com/es/morros-vita"
+   },
+   {
+    "claim": "Delivery end 2028 (news) vs June 2028 (agents)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://habitarcaribe.com/suite-venta-serena-del-mar-cartagena-de-indias/9014126"
+   },
+   {
+    "claim": "226 apartments (news) vs 240 apartments (agents)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://nicanorcarazorealtor.com/apartamento-venta-zona-norte-serena-del-mar-cartagena-de-indias/8334945"
+   },
+   {
+    "claim": "Five Morros projects finished (eco, io, zoe, eos, kai)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://caracol.com.co/2026/03/16/morros-vita-asi-sera-el-ultimo-proyecto-en-la-linea-de-playa-de-serena-del-mar/"
+   },
+   {
+    "claim": "Project company Morros Vita S.A.S. registered, NIT 901825235",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://empresite.eleconomistaamerica.co/MORROS-7-SAS.html"
+   },
+   {
+    "claim": "Prices from COP 638m (Jan 2025) rising to COP 804m (Mar 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eltiempo.com/mas-contenido/morros-vita-inicia-construccion-3540702"
+   },
+   {
+    "claim": "Epic has about 40 projects and 40+ years of experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.semana.com/mejor-colombia/articulo/nuevo-proyecto-inmobiliario-en-cartagena-asi-sera-morros-vita/202629/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cartagena, Colombia",
+   "developer_company": "EPIC Constructora S.A.S.; project company Morros Vita S.A.S. (NIT 901825235)",
+   "developer_projects_delivered": 5,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": "2028-Q2 (agents)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR + study",
+    "2BR",
+    "3BR",
+    "house-type with private pool"
+   ],
+   "size_min_m2": 38.5,
+   "size_max_m2": 236,
+   "price_min": 549090000,
+   "price_max": null,
+   "currency": "COP",
+   "deposit_pct": 5,
+   "payment_plan": "5% reservation, 45% during construction, 50% on delivery",
+   "foreign_ownership": "Foreigners may own property in Colombia directly (foreign investment registration with Banco de la Republica)",
+   "rental_programme": null,
+   "service_charge": "Administration about COP 450,000/month for a 42.5 m2 unit (agent)",
+   "brand": null,
+   "amenities": [
+    "direct beach access",
+    "three pools",
+    "two jacuzzis",
+    "swim lane",
+    "gym",
+    "spa and turkish bath",
+    "social lounge",
+    "kids areas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Curadurias Urbanas de Cartagena (licencia de construccion)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Buyer money held by a regulated fiduciary until break-even and licence conditions are met",
+   "Developer has five finished condominiums next door that buyers can visit",
+   "Half the price paid only on delivery",
+   "Start of works reported by independent media"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.semana.com/mejor-colombia/articulo/nuevo-proyecto-inmobiliario-en-cartagena-asi-sera-morros-vita/202629/",
+   "https://caracol.com.co/2026/03/16/morros-vita-asi-sera-el-ultimo-proyecto-en-la-linea-de-playa-de-serena-del-mar/",
+   "https://www.eluniversal.com.co/sociales/2026/03/21/inicio-de-la-construccion-de-morros-vita-en-cartagena/",
+   "https://www.eltiempo.com/mas-contenido/morros-vita-inicia-construccion-3540702",
+   "https://www.eltiempo.com/mas-contenido/morros-vita-una-expresion-elevada-de-estilo-de-vida-frente-al-mar-3436079",
+   "https://www.semana.com/hablan-las-marcas/articulo/morros-estrena-nuevo-proyecto-de-vivienda-frente-a-una-de-las-mejores-playa/202546/",
+   "https://www.epicconstructora.com/es/morros-vita",
+   "https://www.morrosvita.com/es/inicio",
+   "https://serenadelmar.com.co/properties/morros-vita/",
+   "https://inmobiliariotu360.bancolombia.com/proyecto-de-vivienda-morros-vita/p",
+   "https://nicanorcarazorealtor.com/apartamento-venta-zona-norte-serena-del-mar-cartagena-de-indias/8334945",
+   "https://habitarcaribe.com/suite-venta-serena-del-mar-cartagena-de-indias/9014126",
+   "https://empresite.eleconomistaamerica.co/MORROS-7-SAS.html"
+  ]
+ }
+]

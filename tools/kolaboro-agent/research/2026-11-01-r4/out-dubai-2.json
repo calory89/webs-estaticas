@@ -1,0 +1,2063 @@
+[
+ {
+  "slug": "damac-aykon-city-3",
+  "name": "Aykon City 3",
+  "developer": "DAMAC Properties",
+  "area": "Business Bay",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "active",
+  "stage": "under construction",
+  "url": "https://a1properties.ae/project-details/aykon-city-3-business-bay-dubai",
+  "docs_url": "https://www.damacproperties.com/en/projects/safa-two/",
+  "permit_number": "1982041975",
+  "docs_listed": [
+   "Trakheesi permit number 1982041975 (A1 Properties agency page)",
+   "starting price AED 650,000, payment plan 75/25, handover Q4 2027 (agency page)",
+   "developer page (marketed as Safa Two de GRISOGONO): floor plans and brochure downloads, starting price AED 788,000",
+   "DLD register (via mirrors): project no. 2200, escrow at Emirates NBD, 31.35% built at 12 Apr 2026 inspection, completion 30 Dec 2027"
+  ],
+  "note": "Registered with DLD as project 2200 (DAMAC Canal One Property Development L.L.C), the same registry project DAMAC markets as Safa Two de GRISOGONO; escrow at Emirates NBD, 31.35% built at the 12 Apr 2026 DLD inspection, registered completion 30 Dec 2027 against an original registered completion of Sep 2022. Advertised starting prices disagree (AED 650,000 agency, AED 788,000 developer, registry median sale AED 2.7M) (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 650000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "1982041975",
+   "plans_published": true,
+   "escrow": "DLD register lists project escrow account at Emirates NBD Bank (P.J.S.C), account 0405690787202 (as at 4 Oct 2026)",
+   "progress_pct": 31.35,
+   "progress_updates": true,
+   "developer_delivered": "DAMAC: 50,000 units delivered since 2002 and 8,800 handovers announced for 2026 (TradeArabia, 9 Jul 2026)",
+   "units": 1300,
+   "payment_plan": "75/25 (A1 Properties); 20/20/60 advertised on another agency page",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Trakheesi permit 1982041975 shown on A1 Properties page. Project registered with DLD as no. 2200 (registered 19 Dec 2019, developer DAMAC Canal One Property Development L.L.C, DLD developer 1119) per DLD register mirrors dubairealestateiq.com, mitchellscommercialrealty.com and cevitas.ae. The Trakheesi number itself could not be checked against the Trakheesi system.",
+   "escrow": "DLD register (mirrored by mitchellscommercialrealty.com, 4 Oct 2026) lists escrow trustee Emirates NBD Bank (P.J.S.C), account 0405690787202; dubairealestateiq.com and continentalclub.ae also show Emirates NBD.",
+   "progress": "DLD inspection history: 1.02% (Sep 2022) rising to 31.35% (12 Apr 2026), 10 inspections listed on dubairealestateiq.com; same 31.35% on mitchellscommercialrealty.com and continentalclub.ae.",
+   "plans": "DAMAC Safa Two page offers 'Download Floor Plans' and brochure; agency page schmidtandpartner.com lists unit plans 1BR to 5BR (1,095 to 14,088 sq ft).",
+   "record": "TradeArabia (9 Jul 2026) reports DAMAC has delivered 50,000 units since 2002 and announced 8,800 handovers in 2026. DAMAC was listed on the Dubai Financial Market from 2015 until delisting in 2022 (Wikipedia).",
+   "returns": "No guaranteed rental or buy-back language on the agency or developer pages read; A1 page mentions 'attractive rental yields' without a figure."
+  },
+  "claims": [
+   {
+    "claim": "Trakheesi permit 1982041975 (agency page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/aykon-city-3-business-bay-dubai"
+   },
+   {
+    "claim": "Project is registered with DLD (project 2200)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/aykon-city-3"
+   },
+   {
+    "claim": "Buyer payments go to a project escrow account",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/aykon-city-3"
+   },
+   {
+    "claim": "Registered developer entity is DAMAC Canal One Property Development L.L.C",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.cevitas.ae/en/projects/aykon-city-3"
+   },
+   {
+    "claim": "Handover Q4 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/aykon-city-3"
+   },
+   {
+    "claim": "Project is on its original schedule",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.binayah.com/dubai-construction-updates/aykon-city-3/"
+   },
+   {
+    "claim": "Construction under way (31.35% built)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/aykon-city-3"
+   },
+   {
+    "claim": "Starting price AED 650,000",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/aykon-city-3"
+   },
+   {
+    "claim": "About 1,300 units in the project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/aykon-city-3"
+   },
+   {
+    "claim": "DAMAC has delivered 50,000 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tradearabia.com/News/464932/Damac-announces-handover-of-8%2c800-residential-units-across-Dubai/CONS"
+   },
+   {
+    "claim": "Freehold title available to foreigners (Business Bay freehold zone)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/aykon-city-3-business-bay-dubai"
+   },
+   {
+    "claim": "Studio to 3BR units of about 425 to 2,010 sq ft",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/aykon-city-3-business-bay-dubai"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2002,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "DAMAC Canal One Property Development L.L.C (DLD developer no. 1119)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 50000,
+   "listed_or_audited": "DAMAC Properties listed on Dubai Financial Market 2015, delisted 2022 (privately held since)",
+   "construction_start": "2019-12",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2022-Q3 (registered completion 20 Sep 2022 per earlier DLD data on binayah.com)",
+   "delay_months": 63,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "5BR penthouse"
+   ],
+   "size_min_m2": 39.5,
+   "size_max_m2": 1309,
+   "price_min": 650000,
+   "price_max": 82695000,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "75/25 per A1 Properties (20% down, 55% during construction, 25% on handover); 20/20/60 per schmidtandpartner.com",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "de GRISOGONO (Safa Two)",
+   "amenities": [
+    "infinity pools",
+    "fitness centre",
+    "landscaped gardens",
+    "children's play areas",
+    "retail and cafes",
+    "concierge",
+    "covered parking",
+    "24-hour security"
+   ],
+   "lat": 25.181,
+   "lng": 55.252,
+   "permit_authority": "Dubai Land Department / RERA (Trakheesi advertising permits)",
+   "brochure_url": "https://apexcapitaldubai.com/wp-content/uploads/2024/06/Safa-Two-de-GRISOGONO-by-Damac-Brochure.pdf"
+  },
+  "positives": [
+   "Escrow account at Emirates NBD listed on the DLD register",
+   "Ten dated DLD inspections published, progress 31.35% at 12 Apr 2026",
+   "Floor plans and brochure downloadable on DAMAC's page",
+   "Developer with 50,000 units delivered, per TradeArabia"
+  ],
+  "flags": [
+   {
+    "text": "DLD-derived data shows the registered completion moved from 20 Sep 2022 to 30 Dec 2027, about 63 months later, with the project 31.35% built in Apr 2026.",
+    "source": "https://www.binayah.com/dubai-construction-updates/aykon-city-3/"
+   }
+  ],
+  "sources": [
+   "https://a1properties.ae/project-details/aykon-city-3-business-bay-dubai",
+   "https://dubairealestateiq.com/project/aykon-city-3",
+   "https://www.mitchellscommercialrealty.com/off-plan/aykon-city-3",
+   "https://www.cevitas.ae/en/projects/aykon-city-3",
+   "https://continentalclub.ae/project/safa-two-by-de-grisogono-aykon-city-3-business-bay/",
+   "https://www.binayah.com/dubai-construction-updates/aykon-city-3/",
+   "https://www.damacproperties.com/en/projects/safa-two/",
+   "https://admin.damacproperties.com/en/safa-two-tower-b",
+   "https://www.schmidtandpartner.com/off-plan/safa-two-de-grisogono-by-damac/floor-plans",
+   "https://apexcapitaldubai.com/wp-content/uploads/2024/06/Safa-Two-de-GRISOGONO-by-Damac-Brochure.pdf",
+   "https://www.tradearabia.com/News/464932/Damac-announces-handover-of-8%2c800-residential-units-across-Dubai/CONS",
+   "https://en.wikipedia.org/wiki/Damac_Properties"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "beyond-kanyon",
+  "name": "Kanyon by Beyond",
+  "developer": "Beyond Developments",
+  "area": "Dubai Maritime City",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "active",
+  "stage": "off-plan",
+  "url": "https://a1properties.ae/project-details/kanyon-by-beyond-dubai-maritime-city",
+  "docs_url": "https://beyonddevelopments.ae/featured-article/kanyon/",
+  "permit_number": "1579183201",
+  "docs_listed": [
+   "Trakheesi permit number 1579183201 (A1 Properties agency page)",
+   "developer launch release 25 Nov 2025: 411 residences, AED 1.5 billion, delivery Q2 2029",
+   "developer customer portal: anticipated completion June 2029, 0% complete",
+   "floor plans and brochure PDFs on agency portals (madena.ae, resaledxb.com, ezre.ae)",
+   "DLD register (via mirrors): project no. 4050, escrow at Emirates NBD, 0% built at 22 Apr 2026, registered completion 30 Sep 2028"
+  ],
+  "note": "Launched 25 Nov 2025 by Beyond (OMNIYAT Group brand founded 2024) and registered with DLD as project 4050 by Cobia Real Estate Development L.L.C, escrow at Emirates NBD; 0% built at the 22 Apr 2026 DLD inspection with registered construction start 30 Jun 2026. Developer markets delivery Q2 2029 while the register shows 30 Sep 2028; Beyond has not yet handed over a project of its own (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2400000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": true,
+   "permit_number": "1579183201",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow trustee Emirates NBD Bank (P.J.S.C), account 0205924457503 (as at 25 Oct 2026)",
+   "progress_pct": 0,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 412,
+   "payment_plan": "10/40/50 at launch; time-limited 30/70 offer 4 to 10 Nov 2026 (agency page)",
+   "price_per_m2": 32373
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Trakheesi permit 1579183201 on A1 Properties page. DLD register mirrors (dubairealestateiq.com, mitchellscommercialrealty.com) show project 4050, registered 30 Oct 2025, developer Cobia Real Estate Development L.L.C (DLD developer 2316). The Trakheesi number itself was not checked against Trakheesi.",
+   "escrow": "mitchellscommercialrealty.com reproduces the DLD register (25 Oct 2026): escrow trustee Emirates NBD Bank (P.J.S.C), account 0205924457503.",
+   "progress": "DLD inspections 27 Aug 2025 and 22 Apr 2026 both 0%; registered construction start 30 Jun 2026. Beyond customer portal also shows 0% complete. Published progress is 0%, meaning not started at last inspection.",
+   "plans": "Floor plan and brochure PDFs offered on madena.ae and resaledxb.com; ezre.ae shows a 2BR drawing 'as published by Beyond'. No plans found on Beyond's own public news page.",
+   "record": "Beyond was launched by OMNIYAT Group in Sep 2024 (developer release; The National partner content) and has no handed-over project of its own; Aria by Beyond was 84.9% built at 30 Sep 2026 per DLD-derived data. Parent OMNIYAT Holdings publishes audited results but delivered-unit counts were not found.",
+   "returns": "No guaranteed return or buy-back language on developer release, agency page or portal pages read."
+  },
+  "claims": [
+   {
+    "claim": "Trakheesi permit 1579183201",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/kanyon-by-beyond-dubai-maritime-city"
+   },
+   {
+    "claim": "Project registered with DLD (project 4050)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/kanyon-by-beyond"
+   },
+   {
+    "claim": "Payments go to an escrow account at Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/kanyon-by-beyond"
+   },
+   {
+    "claim": "Delivery Q2 2029",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/kanyon-by-beyond"
+   },
+   {
+    "claim": "411 residences",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/kanyon-by-beyond"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/kanyon-by-beyond"
+   },
+   {
+    "claim": "Construction complete (madena.ae listing text)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.madena.ae/projects/kanyon-by-beyond"
+   },
+   {
+    "claim": "Starting price AED 2.4 million",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/dubai-area-guides/dubai-maritime-city-investment-guide"
+   },
+   {
+    "claim": "Beyond is part of OMNIYAT Group (developer release; The National item is paid partner content)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thenationalnews.com/business/partner-content/2024/09/17/omniyat-group-launches-beyond-a-company-focusing-on-wider-luxury-real-estate-market/"
+   },
+   {
+    "claim": "Group parent publishes audited accounts and listed sukuk",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniyat.com/news/omniyat-group-delivers-exceptional-financial-performance-in-2025"
+   },
+   {
+    "claim": "Registered developer entity is Cobia Real Estate Development L.L.C",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/kanyon-by-beyond"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.directdxb.com/projects/beyond-kanyon"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2024,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Cobia Real Estate Development L.L.C (DLD developer no. 2316); brand Beyond, part of OMNIYAT Group",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent OMNIYAT Holdings Ltd reports audited 2025 results; its sukuk listed on Nasdaq Dubai and LSE ISM (company release)",
+   "construction_start": "2026-06",
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 74.1,
+   "size_max_m2": 223.2,
+   "price_min": 2400000,
+   "price_max": 7544000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10% booking, 40% during construction, 50% on handover (launch); 30/70 promotion Nov 2026",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "gymnasium",
+    "spa and sauna",
+    "kids play area",
+    "co-working spaces",
+    "yoga room",
+    "landscaped gardens",
+    "rooftop"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": "https://cdn.insiderealty.ae/brochures/kanyon-by-beyond.pdf"
+  },
+  "positives": [
+   "Escrow account at Emirates NBD listed on the DLD register",
+   "Registered completion (Sep 2028) is earlier than the marketed Q2 2029, giving a buffer",
+   "Parent group publishes audited annual results"
+  ],
+  "flags": [],
+  "sources": [
+   "https://a1properties.ae/project-details/kanyon-by-beyond-dubai-maritime-city",
+   "https://www.mitchellscommercialrealty.com/off-plan/kanyon-by-beyond",
+   "https://dubairealestateiq.com/project/kanyon-by-beyond",
+   "https://www.mitchellscommercialrealty.com/dubai-area-guides/dubai-maritime-city-investment-guide",
+   "https://www.dxbrealtor.ai/projects/kanyon-by-beyond/",
+   "https://www.directdxb.com/projects/beyond-kanyon",
+   "https://beyonddevelopments.ae/featured-article/kanyon/",
+   "https://beyonddevelopments.ae/featured-article/",
+   "https://customer.beyonddevelopments.ae/guest-properties/a1WPs00000CuTQDMA3",
+   "https://www.thenationalnews.com/business/partner-content/2024/09/17/omniyat-group-launches-beyond-a-company-focusing-on-wider-luxury-real-estate-market/",
+   "https://www.omniyat.com/news/omniyat-group-delivers-exceptional-financial-performance-in-2025",
+   "https://resaledxb.com/dubai/dubai-maritime-city/kanyon-by-beyond",
+   "https://ezre.ae/projects/kanyon-by-beyond/floor-plans",
+   "https://www.madena.ae/projects/kanyon-by-beyond",
+   "https://cdn.insiderealty.ae/brochures/kanyon-by-beyond.pdf"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "arada-akala-residences",
+  "name": "Akala Hotels & Residences",
+  "developer": "Arada",
+  "area": "DIFC / Zabeel",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "active",
+  "stage": "off-plan",
+  "url": "https://a1properties.ae/project-details/akala-hotels-and-residences-zaabeel-dubai",
+  "docs_url": "https://www.arada.com/en/akala/",
+  "permit_number": "1480538491",
+  "docs_listed": [
+   "Agency page (A1 Properties): from AED 3,799,000, 1 to 5BR of 1,036 to 6,257 sq ft, plan 40/60, handover Q4 2029; Trakheesi 1480538491 recorded 28 Oct 2026",
+   "developer page: 1 to 6 bedroom units from AED 3.79 million, payment plan 10/50/40",
+   "developer brochure and floor plan PDFs linked on doment.ai",
+   "DLD register (via mirrors): project no. 3745, escrow at Commercial Bank of Dubai, 1.88% built at 13 Oct 2026, registered completion 31 Oct 2029, project value AED 1.473 billion"
+  ],
+  "note": "Two-tower residential and hotel scheme on Zabeel Second plot 21, registered with DLD as project 3745 by Arada Developments L.L.C S.O.C; escrow at Commercial Bank of Dubai, registered start 1 May 2026, 1.88% built at the 13 Oct 2026 inspection and registered completion 31 Oct 2029. Arada (founded 2017) reports over 9,000 homes completed at Aljada in Sharjah (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 3790000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "1480538491",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow trustee Commercial Bank of Dubai (PSC), account 1009913193 (as at 25 Oct 2026)",
+   "progress_pct": 1.88,
+   "progress_updates": true,
+   "developer_delivered": "Arada: over 9,000 homes completed at Aljada, Sharjah (Arada, 20 Apr 2026); 8,800 at Aljada reported by WAM (9 Apr 2026); about 1,500 homes delivered at Masaar (Arada, Aug 2025)",
+   "units": 546,
+   "payment_plan": "10% down, 50% during construction, 40% on handover (Arada page)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Trakheesi 1480538491 was recorded from the A1 Properties page on 28 Oct 2026, but the permit line was not visible in the page text retrieved on 1 Nov 2026. DLD register mirrors (mitchellscommercialrealty.com, floxcy.com, prop971.com) confirm project 3745, developer Arada Developments L.L.C S.O.C, Zabeel Second plot 21, municipality no. 3370589.",
+   "escrow": "mitchellscommercialrealty.com (DLD register as at 25 Oct 2026) and prop971.com: escrow agent Commercial Bank of Dubai (PSC), account 1009913193.",
+   "progress": "DLD inspections: 0% (12 Mar 2026), 0.1% (9 Jul 2026, prop971.com), 1.88% (13 Oct 2026, mitchellscommercialrealty.com). Registered start 1 May 2026.",
+   "plans": "doment.ai links a developer brochure and floor plan PDF; propqa.ai lists floor plans 1 to 6BR, 1,036 to 14,628 sq ft. Arada's own Akala page shows unit range and price but no plans in the text read.",
+   "record": "WAM (UAE state news agency, 9 Apr 2026) reports over 8,800 homes completed at Aljada; Arada releases report 9,000 by 20 Apr 2026 and about 1,500 homes delivered at Masaar. Wikipedia cites Bloomberg for 7,500 Aljada units by Sep 2024.",
+   "returns": "No guaranteed return wording on Arada page or agency pages read. Hotel keys in Tower 2 but no rental figures published."
+  },
+  "claims": [
+   {
+    "claim": "Trakheesi permit 1480538491 (not visible on agency page text on 1 Nov 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/akala-hotels-and-residences-zaabeel-dubai"
+   },
+   {
+    "claim": "Registered with DLD as project 3745 by Arada Developments L.L.C S.O.C",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/akala-hotels-and-residences"
+   },
+   {
+    "claim": "Escrow account at Commercial Bank of Dubai",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.prop971.com/project/PRJ-ARA-JTDHW"
+   },
+   {
+    "claim": "Handover Q4 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/akala-hotels-and-residences"
+   },
+   {
+    "claim": "Construction started (1.88% built)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/akala-hotels-and-residences"
+   },
+   {
+    "claim": "Prices from AED 3.79 million",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://doment.ai/projects/akala-hotels-and-residences-by-arada"
+   },
+   {
+    "claim": "Payment plan 10/50/40 (Arada); agencies show 40/60, 10/45/45 and 5/35/60",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-ARA-JTDHW"
+   },
+   {
+    "claim": "Residential plus hotel keys in two towers (284 residential units in Tower 1, 354 hotel keys/units in Tower 2)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://floxcy.com/offplan/3745"
+   },
+   {
+    "claim": "Arada has completed over 8,800 homes at Aljada",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bzmom55-arada-hands-over-first-homes-vida-residences"
+   },
+   {
+    "claim": "Arada founded 2017, Dubai-based",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.wikipedia.org/wiki/Arada_(company)"
+   },
+   {
+    "claim": "Arada holds Fitch and Moody's ratings and issued sukuk",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.wikipedia.org/wiki/Arada_(company)"
+   },
+   {
+    "claim": "Freehold title for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/akala-hotels-and-residences-zaabeel-dubai"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Arada Developments L.L.C S.O.C (DLD register)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 9000,
+   "listed_or_audited": "Not listed; rated by Fitch and Moody's since 2022 and sukuk issuer (Wikipedia)",
+   "construction_start": "2026-05",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "6BR"
+   ],
+   "size_min_m2": 96.2,
+   "size_max_m2": 1359,
+   "price_min": 3790000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10% down, 50% during construction, 40% on handover (Arada); 10/45/45 per prop971.com and propqa.ai",
+   "foreign_ownership": "freehold",
+   "rental_programme": "Hotel keys in Tower 2; no rental figures published",
+   "service_charge": null,
+   "brand": "Akala (Arada wellness brand)",
+   "amenities": [
+    "ultra-luxury spa",
+    "fitness space",
+    "medical wellness clinic",
+    "podium pool",
+    "yoga and Pilates studios",
+    "private cinema"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow at Commercial Bank of Dubai listed on the DLD register",
+   "Registered project value (AED 1.473 billion) and plot number on the register",
+   "Developer delivery record confirmed by the UAE state news agency"
+  ],
+  "flags": [],
+  "sources": [
+   "https://a1properties.ae/project-details/akala-hotels-and-residences-zaabeel-dubai",
+   "https://www.mitchellscommercialrealty.com/off-plan/akala-hotels-and-residences",
+   "https://floxcy.com/offplan/3745",
+   "https://www.prop971.com/project/PRJ-ARA-JTDHW",
+   "https://doment.ai/projects/akala-hotels-and-residences-by-arada",
+   "https://propqa.ai/off-plan-projects/arada-developments-llc-soc/akala-residences",
+   "https://www.arada.com/en/akala/",
+   "https://en.wikipedia.org/wiki/Arada_(company)",
+   "https://www.wam.ae/en/article/bzmom55-arada-hands-over-first-homes-vida-residences",
+   "https://www.arada.com/en/latest-news/arada-completes-construction-at-aljadas-naseej-district-as-handover-of-138-homes-at-il-teatro-residences-buildings-begins/",
+   "https://www.arada.com/en/latest-news/arada-unveils-masaar-3-the-newest-chapter-of-the-uaes-bestselling-forest-community/"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "residences-at-zabeel",
+  "name": "The Residences at Zabeel",
+  "developer": "DIFC",
+  "area": "DIFC / Zabeel",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "sold out",
+  "stage": "off-plan",
+  "url": "https://a1properties.ae/project-details/the-residences-zabeel-difc-dubai",
+  "docs_url": "https://www.difc.com/developments/difc-zabeel-district/the-residences-by-difc",
+  "permit_number": "0445836457",
+  "docs_listed": [
+   "Agency page (A1 Properties): from AED 2.6M, 1 to 4BR of 846 to 4,489 sq ft, payment plan 70/30, handover Q4 2029; Trakheesi 0445836457 recorded 28 Oct 2026",
+   "developer page: floor plans by bedroom type, dated instalment schedule 5/5/5/10/10/10/10/10/5 and 30% on handover",
+   "developer factsheet (Feb 2026): 463 residences in 2 towers, average unit areas, anticipated handover Q4 2029",
+   "developer press release 13 Feb 2026: sold out on launch"
+  ],
+  "note": "Two towers with 463 homes, the first residential project in DIFC Zabeel District, launched 12 Feb 2026 by DIFC Developments and declared sold out on launch (DIFC, 13 Feb 2026); anticipated handover Q4 2029. No DLD project number, escrow account or construction percentage was found in any public source, and DIFC Developments has no named delivered residential project in the sources read (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "0445836457",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 463,
+   "payment_plan": "70/30: 5% booking, 5% SPA, then dated instalments Aug 2026 to Jun 2029, 30% on handover (DIFC factsheet)",
+   "price_per_m2": 33081
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Trakheesi 0445836457 recorded from the A1 Properties agency page on 28 Oct 2026; the permit line was not visible in the page text retrieved on 1 Nov 2026. No DLD project number found on any register mirror searched (dubairealestateiq.com, mitchellscommercialrealty.com, prop971.com, floxcy.com).",
+   "escrow": "Not stated by DIFC. Agency pages (equityedge.ae, trpe.ae) only describe Dubai escrow rules in general terms without naming a bank or account.",
+   "progress": "No percentage or dated site update found. Property Finder stamp of 'construction started 5 February 2026' is cited by offplaninsight.com and propqa.ai only.",
+   "plans": "DIFC page has a Floor Plan section (one, two, three bedroom); factsheet gives average unit areas.",
+   "record": "No delivered residential project of DIFC Developments named in the developer or agency sources read; equityedge.ae counts 0 delivered, 3 in build.",
+   "returns": "No guaranteed return wording on DIFC pages, factsheet or agency pages."
+  },
+  "claims": [
+   {
+    "claim": "Trakheesi permit 0445836457",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/the-residences-zabeel-difc-dubai"
+   },
+   {
+    "claim": "Project registered with DLD with an escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-DUB-NOH5Y"
+   },
+   {
+    "claim": "463 residences in two towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.difc.com/whats-on/news/difc-unveils-the-residences"
+   },
+   {
+    "claim": "Sold out on launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.difc.com/whats-on/news/the-residences-difc-zabeel-districts-first-residential-development-sells-out-on-launch"
+   },
+   {
+    "claim": "Handover Q4 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://edge.sitecorecloud.io/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/images/difc-developments-and-zabeel/the-residences-by-difc/the-residences-by-difc--factsheet-issue-01--february-2026.pdf"
+   },
+   {
+    "claim": "Construction started 5 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propqa.ai/off-plan-projects/dubai-international-financial-centre-difc/the-residences-difc-zabeel-district"
+   },
+   {
+    "claim": "Starting price AED 2.6M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-DUB-NOH5Y"
+   },
+   {
+    "claim": "Payment plan 70/30",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.equityedge.ae/off-plan/projects/the-residences-difc-zabeel-district"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.madena.ae/projects/the-residences-difc-zabeel-district"
+   },
+   {
+    "claim": "Developer has a delivered residential track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.equityedge.ae/off-plan/projects/the-residences-difc-zabeel-district"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "DIFC Developments (Dubai International Financial Centre)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR duplex penthouse",
+    "4BR duplex penthouse"
+   ],
+   "size_min_m2": 78.6,
+   "size_max_m2": 417.1,
+   "price_min": 2600000,
+   "price_max": 7300000,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5% booking, 5% SPA, 5% Aug 2026, 10% each Dec 2026, Jun 2027, Dec 2027, Jun 2028, Dec 2028, 5% Jun 2029, 30% handover (DIFC); 5/45/50 per prop971.com",
+   "foreign_ownership": "freehold (agency portals); the register (DLD or DIFC Registrar of Real Property) was not confirmed",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "DIFC",
+   "amenities": [
+    "resort-style pool with cabanas",
+    "family pool with splash pad",
+    "clubhouse gym and yoga studio",
+    "padel and squash courts",
+    "shared working spaces",
+    "2km Inner Circle green walkway",
+    "retail and F&B"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA, or DIFC Registrar of Real Property if registered within DIFC (not confirmed)",
+   "brochure_url": "https://edge.sitecorecloud.io/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/images/difc-developments-and-zabeel/the-residences-by-difc/the-residences-by-difc--factsheet-issue-01--february-2026.pdf"
+  },
+  "positives": [
+   "Dated instalment schedule published by the developer",
+   "Floor plans and average unit areas published on the developer page and factsheet"
+  ],
+  "flags": [],
+  "sources": [
+   "https://a1properties.ae/project-details/the-residences-zabeel-difc-dubai",
+   "https://www.difc.com/developments/difc-zabeel-district/the-residences-by-difc",
+   "https://www.difc.com/whats-on/news/the-residences-difc-zabeel-districts-first-residential-development-sells-out-on-launch",
+   "https://www.difc.com/whats-on/news/difc-unveils-the-residences",
+   "https://edge.sitecorecloud.io/dubaiintern0078-difcexperie96c5-production-3253/media/project/difcexperiences/difc/difcwebsite/images/difc-developments-and-zabeel/the-residences-by-difc/the-residences-by-difc--factsheet-issue-01--february-2026.pdf",
+   "https://www.difc.com/business/registrars-and-commissioners/registrar-of-real-property",
+   "https://www.prop971.com/project/PRJ-DUB-NOH5Y",
+   "https://offplaninsight.com/projects/the-residences-difc/",
+   "https://www.equityedge.ae/off-plan/projects/the-residences-difc-zabeel-district",
+   "https://propqa.ai/off-plan-projects/dubai-international-financial-centre-difc/the-residences-difc-zabeel-district",
+   "https://www.madena.ae/projects/the-residences-difc-zabeel-district",
+   "https://trpe.ae/off-plan/the-residences-at-difc-zabeel-district",
+   "https://projectory.ae/projects/the-residences/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "vincitore-aqua-flora",
+  "name": "Vincitore Aqua Flora",
+  "developer": "Vincitore Realty",
+  "area": "Dubai Science Park (Al Barsha South)",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "active",
+  "stage": "off-plan",
+  "url": "https://a1properties.ae/project-details/vincitore-aqua-flora-dubai-science-park",
+  "docs_url": "https://vincitoreaquaflora.com/",
+  "permit_number": "0013517309",
+  "docs_listed": [
+   "Trakheesi permit number 0013517309, from AED 760,000, plan 50/50, handover Q2 2028 (A1 Properties agency page)",
+   "developer project site: unit types and sizes (studio 399 sq ft to 3.5BR 2,250 sq ft), amenity list",
+   "developer payment plan PDF (May 2024): five plans incl. '100% Rental Guarantee Payment Plan' with 8% for 3 years, completion Q3 2027",
+   "DLD register (via mirrors): project no. 3154, escrow at Mashreq Bank, 1.28% built at 30 Mar 2026, registered completion 30 Jun 2028"
+  ],
+  "note": "One G+4P+15 retail and residential building with 546 units, registered with DLD as project 3154 by Vincitore Luxury Real Estate Development L.L.C; escrow at Mashreq Bank, 1.28% built at the 30 Mar 2026 inspection against a registered completion of 30 Jun 2028 and an originally marketed completion of Q3 2027. Developer payment plan sheet advertised an 8% rental guarantee for 3 years (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 760000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 8,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "0013517309",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow trustee Mashreq Bank PSC, account 019500000662 (as at 25 Oct 2026)",
+   "progress_pct": 1.28,
+   "progress_updates": true,
+   "developer_delivered": "Vincitore: 3 projects finished on the DLD register (Vincitore Palacio May 2017, Vincitore Boulevard Oct 2020, Vincitore Benessere Jan 2023), per dubairealestateiq.com and dxbpropy.ai",
+   "units": 546,
+   "payment_plan": "50/50 (agency); developer sheet May 2024 offered 60/4/36 post-handover, 50/50, investor 10/10/30/40/10 and rental guarantee plans",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 5,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Trakheesi 0013517309 on A1 Properties page. DLD register mirrors show project 3154 (first registered Sep 2024, adopted 23 Sep 2024), developer Vincitore Luxury Real Estate Development L.L.C, DLD developer no. 1949, master developer Dham FZ-LLC, zone Dubai Development Authority.",
+   "escrow": "mitchellscommercialrealty.com (DLD register as at 25 Oct 2026) and lankea.com: Mashreq Bank PSC, account 019500000662; mulki.ae and continentalclub.ae also name Mashreq.",
+   "progress": "DLD inspections: 0% (Jul 2024), 1.28% (30 Mar 2026) per continentalclub.ae and mulki.ae; registered start 1 Jan 2025.",
+   "plans": "Developer site lists unit types with size ranges; floor plan brochure PDF offered via goldpillars.ae.",
+   "record": "DLD register mirrors list 8 Vincitore projects: 3 finished (Palacio, Boulevard, Benessere) and 5 active, including Vincitore Volare (registered completion 1 Jun 2025, 63.38% built at 22 Apr 2026).",
+   "returns": "Developer payment plan PDF dated 14 May 2024 (hosted by investindxb.com) offers a '100% Rental Guarantee Payment Plan' and 'Rental Guarantee 8% ... for 3 Years'; goldpillars.ae repeats 'guaranteed net return of 8%' and '8% guaranteed ROI'."
+  },
+  "claims": [
+   {
+    "claim": "Trakheesi permit 0013517309",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/vincitore-aqua-flora-dubai-science-park"
+   },
+   {
+    "claim": "Registered with DLD as project 3154",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/vincitore-aqua-flora"
+   },
+   {
+    "claim": "Escrow account at Mashreq Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/vincitore-aqua-flora"
+   },
+   {
+    "claim": "Completion Q3 2027 (developer payment plan, 2024)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://continentalclub.ae/project/aqua-flora-dubai-science-park/"
+   },
+   {
+    "claim": "Handover Q2 2028 (agency)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/vincitore-aqua-flora"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://mulki.ae/off-plan/dubai-science-park/vincitore-aqua-flora"
+   },
+   {
+    "claim": "Construction pace consistent with the registered date",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://mulki.ae/off-plan/dubai-science-park/vincitore-aqua-flora"
+   },
+   {
+    "claim": "8% guaranteed rental return for 3 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investindxb.com/wp-content/uploads/2024/05/VINCITORE-AQUA-FLORA-PAYMENT-PLAN-investindxb.pdf"
+   },
+   {
+    "claim": "Starting price AED 760,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cevitas.ae/en/projects/vincitore-aqua-flora"
+   },
+   {
+    "claim": "546 units",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/vincitore-aqua-flora"
+   },
+   {
+    "claim": "Developer has delivered projects in Dubai (3 finished)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/vincitore"
+   },
+   {
+    "claim": "Developer delivers on schedule",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/vincitore-volare"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imatch.ae/projects/10372"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Vincitore Luxury Real Estate Development L.L.C (DLD developer no. 1949)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-01",
+   "handover_promised": "2028-Q2",
+   "original_handover": "2027-Q3",
+   "delay_months": 9,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1.5BR",
+    "2BR",
+    "2BR villa",
+    "3.5BR"
+   ],
+   "size_min_m2": 37.1,
+   "size_max_m2": 209,
+   "price_min": 750000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "50/50 or post-handover 60/4/36 with 1% monthly; investor plan; rental guarantee plan (developer sheet May 2024)",
+   "foreign_ownership": "freehold",
+   "rental_programme": "Developer sheet advertised 8% rental guarantee for 3 years and 3-year service charge waiver on one plan",
+   "service_charge": "AED 15 per sq ft (imatch.ae)",
+   "brand": null,
+   "amenities": [
+    "private pools in most units",
+    "sky pool",
+    "dive-in cinema",
+    "forest grove",
+    "wellness garden",
+    "kids adventure park",
+    "spa",
+    "22 retail outlets"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (zone: Dubai Development Authority)",
+   "brochure_url": "https://investindxb.com/wp-content/uploads/2024/05/VINCITORE-AQUA-FLORA-PAYMENT-PLAN-investindxb.pdf"
+  },
+  "positives": [
+   "Escrow at Mashreq Bank listed on the DLD register",
+   "Developer has 3 projects marked finished on the DLD register"
+  ],
+  "flags": [
+   {
+    "text": "DLD register data show the project 1.28% built at its 30 Mar 2026 inspection, while the developer's 2024 sales sheet promised completion in Q3 2027; the registered completion is now 30 Jun 2028.",
+    "source": "https://continentalclub.ae/project/aqua-flora-dubai-science-park/"
+   },
+   {
+    "text": "DLD register data show the same group's Vincitore Volare (Arjan) 63.38% built in Apr 2026 against a registered completion of 1 Jun 2025.",
+    "source": "https://uaepropertychecker.com/projects/vincitore-volare"
+   }
+  ],
+  "sources": [
+   "https://a1properties.ae/project-details/vincitore-aqua-flora-dubai-science-park",
+   "https://www.mitchellscommercialrealty.com/off-plan/vincitore-aqua-flora",
+   "https://mulki.ae/off-plan/dubai-science-park/vincitore-aqua-flora",
+   "https://continentalclub.ae/project/aqua-flora-dubai-science-park/",
+   "https://www.cevitas.ae/en/projects/vincitore-aqua-flora",
+   "https://www.lankea.com/en/projects/vincitore-aqua-flora",
+   "https://imatch.ae/projects/10372",
+   "https://dubairealestateiq.com/developer/vincitore",
+   "https://dxbpropy.ai/developer-rankings/vincitore",
+   "https://uaepropertychecker.com/projects/vincitore-volare",
+   "https://vincitoreaquaflora.com/",
+   "https://investindxb.com/wp-content/uploads/2024/05/VINCITORE-AQUA-FLORA-PAYMENT-PLAN-investindxb.pdf",
+   "https://www.goldpillars.ae/project/vincitore-aqua-flora",
+   "https://www.goldpillars.ae/project/vincitore-aqua-flora-floor-plan-brochure-download"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "developer": "Samana Developers",
+  "area": "Dubai Islands",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "sold out",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-ocean-crest",
+  "docs_url": null,
+  "permit_number": "DLD project no. 3878",
+  "docs_listed": [
+   "Property Finder: payment plan 20/70/10, construction start 22 Sep 2025, delivery Dec 2028, freehold, developer stock sold out",
+   "agency portals: brochure and floor plan PDFs (doment.ai), 1 to 4BR of 766 to 2,877 sq ft",
+   "DLD register (via mirrors): project no. 3878 'Ocean Crest by SD', escrow at Abu Dhabi Commercial Bank, 1.35% built at 22 Sep 2026, registered completion 30 Jun 2028, G+2P+8"
+  ],
+  "note": "Single G+2P+8 building on Dubai Islands (DLD area Palm Deira) registered as DLD project 3878 'Ocean Crest by SD' by Samana Platinum Real Estate Development L.L.C with 63 registered homes; escrow at ADCB, 1.35% built at the 22 Sep 2026 inspection a year after the registered Sep 2025 start, registered completion 30 Jun 2028 while portals show Q2 to Q4 2028. Listed as sold out by Property Finder (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 2200000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "DLD project no. 3878",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow trustee Abu Dhabi Commercial Bank, account 14287165830001 (as at 25 Oct 2026)",
+   "progress_pct": 1.35,
+   "progress_updates": true,
+   "developer_delivered": "Samana: more than 1,300 units delivered (Khaleej Times, 16 Apr 2026); 6 projects finished on the DLD register",
+   "units": 63,
+   "payment_plan": "20/70/10 (Property Finder); 10/30/60 (prop971.com, takweenaldar.ae)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No Trakheesi number on the Property Finder page. DLD register mirrors (mitchellscommercialrealty.com, prop971.com, continentalclub.ae) show project 3878, developer Samana Platinum Real Estate Development L.L.C, registered start 1 Sep 2025.",
+   "escrow": "DLD register as at 25 Oct 2026 (mitchellscommercialrealty.com): Abu Dhabi Commercial Bank, account 14287165830001; same account on prop971.com and takweenaldar.ae.",
+   "progress": "DLD inspections: 0.14% (22 Jun 2026) to 1.35% (22 Sep 2026), 4 inspections listed on continentalclub.ae.",
+   "plans": "Property Finder shows unit layouts and sizes; doment.ai links developer brochure and floor plan PDFs.",
+   "record": "Khaleej Times (16 Apr 2026) reports Samana has delivered more than 1,300 units and plans 6 handovers in 2026 and 11 in 2027; Zawya reported the Samana Santorini (157 units) handover in Apr 2026. DLD register mirror dubairealestateiq.com lists 55 Samana projects across 8 developer entities, 6 finished.",
+   "returns": "No guaranteed return wording on Property Finder or agency pages read."
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD (project 3878)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/ocean-crest-by-sd"
+   },
+   {
+    "claim": "Escrow account at ADCB",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/ocean-crest-by-sd"
+   },
+   {
+    "claim": "Construction started Sep 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/ocean-crest-by-sd"
+   },
+   {
+    "claim": "Delivery December 2028 (Property Finder)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/ocean-crest-by-sd"
+   },
+   {
+    "claim": "Construction progressing (1.35% built)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://continentalclub.ae/project/ocean-crest-by-sd-dubai-islands/"
+   },
+   {
+    "claim": "Starting price AED 2.2M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-SAM-XFHLM"
+   },
+   {
+    "claim": "Payment plan 20/70/10",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://takweenaldar.ae/en/off-plan/project/ocean-crest"
+   },
+   {
+    "claim": "Single building",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/ocean-crest-by-sd"
+   },
+   {
+    "claim": "Developer stock sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-ocean-crest"
+   },
+   {
+    "claim": "Samana has delivered more than 1,300 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/rising-construction-material-prices-due-to-conflict-cost-us-dh100-million-more-says-samana-chief"
+   },
+   {
+    "claim": "Samana delivers all projects on time",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://certifiedpoor.com/insights/samana-projects-dubai-2026"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-ocean-crest"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Samana Platinum Real Estate Development L.L.C (DLD register)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": 1300,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 71.2,
+   "size_max_m2": 267.3,
+   "price_min": 2149000,
+   "price_max": 3810588,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% at launch, 70% during construction, 10% on handover (Property Finder); 10/30/60 and a post-handover plan on other portals",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": "AED 18 per sq ft (takweenaldar.ae)",
+   "brand": null,
+   "amenities": [
+    "gym",
+    "shared swimming pool",
+    "spa"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow at ADCB listed on the DLD register",
+   "Registered completion (Jun 2028) earlier than portal delivery dates",
+   "Developer delivery record of 1,300+ units reported by Khaleej Times"
+  ],
+  "flags": [
+   {
+    "text": "Khaleej Times quoted Samana's CEO in Apr 2026 saying all 48 projects were on track with no delays; DLD register data compiled by certifiedpoor.com (26 Oct 2026) show six Samana projects past their filed completion dates, including Samana Waves 2 at 52.1% built against a filed Mar 2026 date.",
+    "source": "https://certifiedpoor.com/insights/samana-projects-dubai-2026"
+   }
+  ],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-ocean-crest",
+   "https://www.mitchellscommercialrealty.com/off-plan/ocean-crest-by-sd",
+   "https://www.prop971.com/project/PRJ-SAM-XFHLM",
+   "https://doment.ai/projects/ocean-crest-by-sd-by-samana",
+   "https://continentalclub.ae/project/ocean-crest-by-sd-dubai-islands/",
+   "https://takweenaldar.ae/en/off-plan/project/ocean-crest",
+   "https://dubairealestateiq.com/developer/samana",
+   "https://www.khaleejtimes.com/business/property/rising-construction-material-prices-due-to-conflict-cost-us-dh100-million-more-says-samana-chief",
+   "https://www.zawya.com/en/projects/construction/samana-hands-over-157-unit-santorini-project-in-dubai-studio-city-347947",
+   "https://certifiedpoor.com/insights/samana-projects-dubai-2026"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "developer": "Samana Developers",
+  "area": "Dubai Production City (IMPZ)",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "sold out",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-sky-views",
+  "docs_url": null,
+  "permit_number": "DLD project no. 3855",
+  "docs_listed": [
+   "Property Finder: launch price AED 941K, payment plan 15/85, sales start 1 Sep 2025, delivery Jul 2028, progress 0% at 2 Jul 2025, sold out",
+   "agency portals: brochure and floor plan documents (jre.ae), 1BR layout 769 sq ft from AED 1.36M (prop971.com)",
+   "DLD register (via mirrors): project no. 3855, escrow at Abu Dhabi Commercial Bank, 2.23% built at 16 Jun 2026, registered completion 31 Jul 2028, 556 units"
+  ],
+  "note": "3B+G+1+20 residential tower with 556 registered units, DLD project 3855 by Samana World Real Estate Development L.L.C; escrow at ADCB, inspections 0% (Jul 2025), 0.04% (Feb 2026) and 2.23% (16 Jun 2026) against a registered completion of 31 Jul 2028. Property Finder lists it as sold out; 546 sales registered by Sep 2026 (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 941007,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "DLD project no. 3855",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow trustee Abu Dhabi Commercial Bank, account 14261707830001 (as at 18 Oct 2026)",
+   "progress_pct": 2.23,
+   "progress_updates": true,
+   "developer_delivered": "Samana: more than 1,300 units delivered (Khaleej Times, 16 Apr 2026); 6 projects finished on the DLD register",
+   "units": 556,
+   "payment_plan": "15% down, 85% on handover (Property Finder)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No Trakheesi number on the Property Finder page. DLD register mirrors show project 3855, registered 14 Aug 2025, developer Samana World Real Estate Development L.L.C (DLD developer 1933; uaepropertychecker.com lists DLD developer 1229 Samana International).",
+   "escrow": "DLD register as at 18 Oct 2026 (mitchellscommercialrealty.com): Abu Dhabi Commercial Bank, account 14261707830001; same on prop971.com and uaepropertychecker.com.",
+   "progress": "DLD inspections: 0% (2 Jul 2025), 0.04% (5 Feb 2026), 2.23% (16 Jun 2026) on dubairealestateiq.com. Property Finder still shows 0% at 2 Jul 2025.",
+   "plans": "prop971.com shows a 1BR Type AG plan (769 sq ft); jre.ae lists brochure, floor plan and master plan documents.",
+   "record": "Khaleej Times (16 Apr 2026) reports Samana has delivered more than 1,300 units and plans 6 handovers in 2026 and 11 in 2027; Zawya reported the Samana Santorini (157 units) handover in Apr 2026. DLD register mirror dubairealestateiq.com lists 55 Samana projects across 8 developer entities, 6 finished.",
+   "returns": "No guaranteed return wording on Property Finder or agency pages read; Property Finder mentions rental appeal of private pools without figures."
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD (project 3855)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-sky-views"
+   },
+   {
+    "claim": "Escrow account at ADCB",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/samana-sky-views"
+   },
+   {
+    "claim": "Delivery July 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-sky-views"
+   },
+   {
+    "claim": "Construction progress 0% (Property Finder, Jul 2025)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-sky-views"
+   },
+   {
+    "claim": "Construction started Sep 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/samana-sky-views"
+   },
+   {
+    "claim": "Launch price AED 941,007",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-sky-views"
+   },
+   {
+    "claim": "Registered sales median about AED 972k",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/samana-sky-views"
+   },
+   {
+    "claim": "Sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-sky-views"
+   },
+   {
+    "claim": "556 units in one building",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/samana-sky-views"
+   },
+   {
+    "claim": "Private pool in every unit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-sky-views"
+   },
+   {
+    "claim": "Samana has delivered more than 1,300 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/rising-construction-material-prices-due-to-conflict-cost-us-dh100-million-more-says-samana-chief"
+   },
+   {
+    "claim": "Samana delivers all projects on time",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://certifiedpoor.com/insights/samana-projects-dubai-2026"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-sky-views"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Samana World Real Estate Development L.L.C (DLD developer no. 1933)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": 1300,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 71.4,
+   "size_max_m2": 148,
+   "price_min": 941007,
+   "price_max": 1977666,
+   "currency": "AED",
+   "deposit_pct": 15,
+   "payment_plan": "15% at launch, 85% on handover (Property Finder)",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": "AED 15 per sq ft (jre.ae, takweenaldar.ae)",
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "fitness center",
+    "swimming pools",
+    "children's play areas",
+    "landscaped gardens",
+    "sports courts",
+    "spa",
+    "covered parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow at ADCB listed on the DLD register",
+   "Three dated DLD inspections published",
+   "Developer delivery record of 1,300+ units reported by Khaleej Times"
+  ],
+  "flags": [
+   {
+    "text": "Khaleej Times quoted Samana's CEO in Apr 2026 saying all 48 projects were on track with no delays; DLD register data compiled by certifiedpoor.com (26 Oct 2026) show six Samana projects past their filed completion dates, including Samana Waves 2 at 52.1% built against a filed Mar 2026 date.",
+    "source": "https://certifiedpoor.com/insights/samana-projects-dubai-2026"
+   }
+  ],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-sky-views",
+   "https://www.mitchellscommercialrealty.com/off-plan/samana-sky-views",
+   "https://dubairealestateiq.com/project/samana-sky-views",
+   "https://www.prop971.com/project/PRJ-SAM-835RC",
+   "https://uaepropertychecker.com/projects/samana-sky-views",
+   "https://jre.ae/projects/samana-sky-views",
+   "https://takweenaldar.ae/en/off-plan/project/samana-sky-views",
+   "https://dubairealestateiq.com/developer/samana",
+   "https://www.khaleejtimes.com/business/property/rising-construction-material-prices-due-to-conflict-cost-us-dh100-million-more-says-samana-chief",
+   "https://www.zawya.com/en/projects/construction/samana-hands-over-157-unit-santorini-project-in-dubai-studio-city-347947",
+   "https://certifiedpoor.com/insights/samana-projects-dubai-2026"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "palm-jebel-ali-frond-a-villas",
+  "name": "Palm Jebel Ali - Frond A Villas",
+  "developer": "Nakheel",
+  "area": "Palm Jebel Ali",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "sold out",
+  "stage": "under construction",
+  "url": "https://propertyfinder.ae/en/new-projects/nakheel/palm-jebel-ali-villas",
+  "docs_url": "https://www.nakheel.com/en/construction-progress/palm-jebel-ali",
+  "permit_number": "DLD project no. 3331",
+  "docs_listed": [
+   "Property Finder: villas from AED 18.6M, 20/60/20 plan, construction start 15 Jan 2025, handover Jan 2028, sold out",
+   "developer construction progress page: RERA inspection 18 Jun 2026 at 4.39% for Frond A, with substructure, superstructure, MEP and infrastructure percentages",
+   "DLD register (via mirrors): project no. 3331, 60 units, escrow at Emirates NBD, registered completion 17 Jan 2028"
+  ],
+  "note": "60 beachfront villas on Frond A registered as DLD project 3331 by The Palm - Jebel Ali Co. (L.L.C) (Nakheel, now part of state-owned Dubai Holding); escrow at Emirates NBD, construction started 14 Jan 2025, RERA progress 4.39% at 18 Jun 2026 and 11.08% in the 31 Oct 2026 register reading, registered completion 17 Jan 2028. The original Palm Jebel Ali was halted in 2008-2009 and relaunched in 2023 (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 18600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "DLD project no. 3331",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow at Emirates NBD Bank (P.J.S.C.), account ending 1324 (tohidfetrat.com, checked after 18 Jun 2026 inspection)",
+   "progress_pct": 11.08,
+   "progress_updates": true,
+   "developer_delivered": "Nakheel: developer of Palm Jumeirah, Jumeirah Islands, International City and Jumeirah Village (Wikipedia); delivered 1,200 units in 2017 (Wikipedia citing news)",
+   "units": 60,
+   "payment_plan": "20/60/20",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No Trakheesi number on the Property Finder page. DLD register mirror tohidfetrat.com: project 3331, registered 12 Nov 2024, developer The Palm - Jebel Ali Co. (L.L.C), DLD developer 104, plot 5179, 60 units; palmobserver.com read the DLD Project Status Enquiry on 31 Oct 2026 and lists Frond A as project 3331 with 60 units.",
+   "escrow": "tohidfetrat.com: Emirates NBD Bank (P.J.S.C.), account masked as 0205*****1324, checked against Dubai REST after 18 Jun 2026 inspection. Other Palm Jebel Ali fronds also list Emirates NBD (Frond M) or ADIB (Frond D) on DLD mirrors.",
+   "progress": "Nakheel's own progress page quotes RERA inspection 18 Jun 2026: Frond A 4.39%. palmobserver.com (DLD register 31 Oct 2026): Frond A 11.08% after a 28 Sep 2026 inspection.",
+   "plans": "Property Finder shows villa layouts and sizes (5 to 7 bedrooms); jre.ae lists brochure, floor plan and master plan for Palm Jebel Ali villas.",
+   "record": "Nakheel founded 2003, state-owned, merged into Dubai Holding in Mar 2024 (Wikipedia; AGBI). Developer of Palm Jumeirah and other communities; 1,200 units delivered in 2017 (Wikipedia citing news). No total delivered-unit count found.",
+   "returns": "No guaranteed return wording on Property Finder, Nakheel or agency pages read."
+  },
+  "claims": [
+   {
+    "claim": "Frond A registered with DLD as project 3331",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.palmobserver.com/palm-jebel-ali-current-status/"
+   },
+   {
+    "claim": "Escrow account at Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://tohidfetrat.com/palm-jebel-ali-frond-a-villa-collection-escrow-account/"
+   },
+   {
+    "claim": "Construction started Jan 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.equityedge.ae/guides/palm-jebel-ali-handover-dates"
+   },
+   {
+    "claim": "Handover January 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.equityedge.ae/guides/palm-jebel-ali-handover-dates"
+   },
+   {
+    "claim": "Frond A at 4.39% (Nakheel, RERA 18 Jun 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.palmobserver.com/palm-jebel-ali-current-status/"
+   },
+   {
+    "claim": "Price from AED 18.6M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://tohidfetrat.com/palm-jebel-ali-frond-a-villa-collection-escrow-account/"
+   },
+   {
+    "claim": "Sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyfinder.ae/en/new-projects/nakheel/palm-jebel-ali-villas"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tohidfetrat.com/palm-jebel-ali-frond-a-villa-collection-escrow-account/"
+   },
+   {
+    "claim": "Developer is state-owned (Dubai Holding)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/analysis/real-estate/2026/01/palm-jebel-ali-assets-ready-from-2027-say-inspection-reports/"
+   },
+   {
+    "claim": "Palm Jebel Ali project previously halted and buyers refunded or swapped",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://english.alarabiya.net/News/gulf/2023/06/01/Dubai-revives-Palm-Jebel-Ali-project-after-14-years-amid-property-market-rebound"
+   },
+   {
+    "claim": "First Palm Jebel Ali handovers from late 2026 (Nakheel)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.equityedge.ae/guides/palm-jebel-ali-handover-dates"
+   },
+   {
+    "claim": "Nakheel delivered Palm Jumeirah and other master communities",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Nakheel_Properties"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2003,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "The Palm - Jebel Ali Co. (L.L.C) (DLD developer no. 104); Nakheel PJSC, part of Dubai Holding",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "State-owned; merged into Dubai Holding Mar 2024",
+   "construction_start": "2025-01",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "5BR villa",
+    "6BR villa",
+    "7BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 18600000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% booking, 60% during construction, 20% on handover",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beachfront plots",
+    "frond infrastructure"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer publishes RERA inspection percentages per frond on its own website",
+   "Escrow at Emirates NBD on the DLD register",
+   "State-owned master developer"
+  ],
+  "flags": [
+   {
+    "text": "Bloomberg (via Al Arabiya, Jun 2023) reported the original Palm Jebel Ali, launched 2003, was halted amid the 2008 credit crisis; buyers were offered swaps or refunds and a group of 30 owners appealed in a Dubai court against the cancellation judgment.",
+    "source": "https://english.alarabiya.net/News/gulf/2023/06/01/Dubai-revives-Palm-Jebel-Ali-project-after-14-years-amid-property-market-rebound"
+   }
+  ],
+  "sources": [
+   "https://propertyfinder.ae/en/new-projects/nakheel/palm-jebel-ali-villas",
+   "https://www.nakheel.com/en/construction-progress/palm-jebel-ali",
+   "https://tohidfetrat.com/palm-jebel-ali-frond-a-villa-collection-escrow-account/",
+   "https://www.palmobserver.com/palm-jebel-ali-current-status/",
+   "https://www.equityedge.ae/guides/palm-jebel-ali-handover-dates",
+   "https://www.agbi.com/analysis/real-estate/2026/01/palm-jebel-ali-assets-ready-from-2027-say-inspection-reports/",
+   "https://english.alarabiya.net/News/gulf/2023/06/01/Dubai-revives-Palm-Jebel-Ali-project-after-14-years-amid-property-market-rebound",
+   "https://en.wikipedia.org/wiki/Nakheel_Properties",
+   "https://dubairealestateiq.com/project/palm-jebel-ali-frond-m",
+   "https://jre.ae/projects/palm-jebel-ali-villas",
+   "https://continentalclub.ae/project/palm-jebel-ali-frond-d-palm-jebel-ali/"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "azizi-venice-14-dubai-south",
+  "name": "Azizi Venice 14",
+  "developer": "Azizi Developments",
+  "area": "Azizi Venice, Dubai South (DWC)",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "active",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.ae/en/new-projects/azizi-developments/azizi-venice-14",
+  "docs_url": "https://www.azizidevelopments.com/press/azizi-developments-azizi-venice-reaches-29-construction-milestone",
+  "permit_number": "DLD project no. 3073",
+  "docs_listed": [
+   "Property Finder: from AED 785,000, 50/50 plan, construction start 3 May 2024, labelled 'Ready' with expected completion May/Jun 2026",
+   "developer press releases: Venice 14 at 12% (15 Oct 2025, 'on track for targeted 2026 delivery'); first 14 Venice buildings 39% overall (28 Apr 2026)",
+   "DLD register (via mirrors): project no. 3073, 3,438 units in 8 buildings, escrow at Commercial Bank of Dubai, 30.29% built, registered completion 30 May 2026 (passed)"
+  ],
+  "note": "Seven-tower block of 3,438 registered units in Azizi Venice, DLD project 3073 by Azizi Developments L.L.C (licence 552794); escrow at Commercial Bank of Dubai, 30.29% built at the Jun and Aug 2026 inspections while the registered completion of 30 May 2026 has passed. Azizi said in Oct 2025 the building was on track for 2026 delivery and Property Finder labels it 'Ready' (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 785000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q2",
+   "permit_claim": true,
+   "permit_number": "DLD project no. 3073",
+   "plans_published": true,
+   "escrow": "DLD register lists escrow trustee Commercial Bank of Dubai (PSC), account 1008997734 (as at 25 Oct 2026)",
+   "progress_pct": 30.29,
+   "progress_updates": true,
+   "developer_delivered": "Azizi: more than 45,000 homes delivered (CEO to Khaleej Times, Jul 2025; Azizi release 15 Sep 2026); 19 projects completed in 2024",
+   "units": 3438,
+   "payment_plan": "50/50 (Property Finder)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No Trakheesi number on the Property Finder page. DLD register mirrors: project 3073, registered 22 Jul 2024, developer Azizi Developments L.L.C (DLD developer 1002, DED licence 552794 valid to 18 Jan 2027 per keyva.ae), zone Dubai South, declared value AED 484.2M.",
+   "escrow": "mitchellscommercialrealty.com (DLD register as at 25 Oct 2026) and uaepropertychecker.com: Commercial Bank of Dubai (PSC), account 1008997734.",
+   "progress": "DLD inspections: 0% (6 May 2024), 8.9% (20 Jun 2025), 13.8% (14 Nov 2025), 30.2% (2 Jun 2026), 30.29% (22 Jun and 31 Aug 2026), per datadubai.ae and uaepropertychecker.com. Azizi published 12% for Venice 14 in Oct 2025.",
+   "plans": "Property Finder shows unit sizes and layouts; no plan file checked on Azizi's site.",
+   "record": "Khaleej Times (20 Jul 2025) reports Azizi's CEO saying the company has delivered more than 45,000 homes and completed 19 projects in 2024. dxbrealtor.ai reports 6 of 48 Azizi projects in DLD data past their registered completion unfinished (median 10 months).",
+   "returns": "No guaranteed return wording on Property Finder or Azizi releases read."
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD (project 3073)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/azizi-venice-14"
+   },
+   {
+    "claim": "Escrow account at Commercial Bank of Dubai",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/azizi-venice-14"
+   },
+   {
+    "claim": "Construction started May 2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://datadubai.ae/projects/azizi-venice-14/"
+   },
+   {
+    "claim": "Project is 'Ready' (Property Finder label)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/azizi-venice-14"
+   },
+   {
+    "claim": "Delivery May/June 2026",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/azizi-venice-14"
+   },
+   {
+    "claim": "On track for targeted 2026 delivery (Azizi, Oct 2025)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/azizi-venice-14"
+   },
+   {
+    "claim": "Venice 14 at 12% in Oct 2025 (Azizi)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://datadubai.ae/projects/azizi-venice-14/"
+   },
+   {
+    "claim": "3,438 units in the project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/azizi-venice-14"
+   },
+   {
+    "claim": "Developer licence valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.keyva.ae/dubai/projects/azizi-venice-14"
+   },
+   {
+    "claim": "Starting price AED 785,000",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://datadubai.ae/projects/azizi-venice-14/"
+   },
+   {
+    "claim": "Azizi has delivered more than 45,000 homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/dubai-azizi-set-to-deliver-nearly-7000-units-this-year"
+   },
+   {
+    "claim": "Freehold title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/azizi-developments/azizi-venice-14"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Azizi Developments L.L.C (DLD developer no. 1002, DED licence 552794)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 45000,
+   "listed_or_audited": null,
+   "construction_start": "2024-05",
+   "handover_promised": "2026-Q2",
+   "original_handover": "2026-Q2",
+   "delay_months": 5,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 785000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "50% during construction, 50% on handover (Property Finder)",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimmable lagoon (community)",
+    "retail boulevard (community)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (zone: Dubai South)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow at Commercial Bank of Dubai listed on the DLD register",
+   "Developer publishes building-level progress figures in press releases",
+   "Five dated DLD inspections available"
+  ],
+  "flags": [
+   {
+    "text": "DLD register data show Azizi Venice 14 at 30.29% built at its 31 Aug 2026 inspection, past its registered completion date of 30 May 2026; Azizi had said in Oct 2025 the building was on track for 2026 delivery.",
+    "source": "https://uaepropertychecker.com/projects/azizi-venice-14"
+   }
+  ],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/azizi-developments/azizi-venice-14",
+   "https://uaepropertychecker.com/projects/azizi-venice-14",
+   "https://www.mitchellscommercialrealty.com/off-plan/azizi-venice-14",
+   "https://datadubai.ae/projects/azizi-venice-14/",
+   "https://www.keyva.ae/dubai/projects/azizi-venice-14",
+   "https://famproperties.com/completion-date/azizi-venice-14",
+   "https://www.azizidevelopments.com/press/azizi-developments-azizi-venice-reaches-29-construction-milestone",
+   "https://www.azizidevelopments.com/press/azizi-developments-marks-39-construction-milestone-at-azizi-venice-in-dubai-south",
+   "https://www.azizidevelopments.com/press/azizi-developments-accelerates-delivery-momentum-with-10-further-projects-set-for-handover-before-end-of-2026",
+   "https://www.khaleejtimes.com/business/property/dubai-azizi-set-to-deliver-nearly-7000-units-this-year",
+   "https://www.dxbrealtor.ai/answers/azizi-venice-handover-date/",
+   "https://www.dubaisouthcapital.ae/blog/dubai-south-handover-tracker"
+  ],
+  "verified_score": 4
+ },
+ {
+  "slug": "viewz-2-by-danube-jlt",
+  "name": "Viewz 2 by Danube",
+  "developer": "Danube Properties Development L.L.C",
+  "area": "Jumeirah Lake Towers (Al Thanyah Fifth)",
+  "country": "UAE",
+  "market": "Dubai",
+  "status": "active",
+  "stage": "under construction",
+  "url": "https://realestateclubdubai.com/handover-tracker/viewz-2-by-danube",
+  "docs_url": "https://danubeproperties.com/construction/viewz/",
+  "permit_number": "DLD project no. 2560",
+  "docs_listed": [
+   "DLD project number 2560, registered 14 Apr 2023, project value AED 262.5M, 564 apartments",
+   "DLD inspection history with photos: 0% (Jan 2023) to 65.01% (20 Oct 2026)",
+   "escrow account 4031221746692020 at First Abu Dhabi Bank (DLD data via dxbpropy.ai, homesearch.ae)",
+   "developer construction page: internal inspection 30 Sep 2026, overall Viewz progress 57%, slab cast to 36th floor on Viewz 2",
+   "agency data: from AED 950,000, payment plan 10% down, 38% pre-handover, 16% on handover, 36% post-handover"
+  ],
+  "note": "B+G+7P+38 residential tower of 564 apartments in JLT, DLD project 2560 by Danube Properties Development L.L.C; escrow at First Abu Dhabi Bank, 65.01% built at the 20 Oct 2026 DLD inspection, about four months past its registered completion of 30 Jun 2026. Danube publishes its own construction updates (57% overall at 30 Sep 2026) and announced Viewz 1 and 2 among 11 handovers due within 12 months from Jul 2026 (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 950000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q2",
+   "permit_claim": true,
+   "permit_number": "DLD project no. 2560",
+   "plans_published": false,
+   "escrow": "DLD data list escrow account 4031221746692020 at First Abu Dhabi Bank P.J.S.C.",
+   "progress_pct": 65.01,
+   "progress_updates": true,
+   "developer_delivered": "Danube: delivered projects named by Khaleej Times (May 2024) include Pearlz (300 units), Jewelz, Wavez, Elz, Lawnz, Bayz, Miraclz, Glamz, Starz, Glitz 1 to 3 and Dreamz",
+   "units": 564,
+   "payment_plan": "10% down, 38% before handover, 16% on handover, 36% post-handover (1% monthly)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "DLD project 2560, registered 14 Apr 2023, developer Danube Properties Development L.L.C (DLD developer no. 1009), regulator Dubai Municipality, master developer DMCC Authority (cevitas.ae, dubaihandover.com, homesearch.ae).",
+   "escrow": "dxbpropy.ai and homesearch.ae (official DLD project data): First Abu Dhabi Bank, account 4031221746692020; dubaihandover.com shows the same account.",
+   "progress": "DLD inspections with photos: 0% (16 May 2023), 5.1% (Apr 2024), 11.02% (Dec 2024), 19.8% (Jun 2025), 30% (Jan 2026), 40.02% (Apr 2026), 50.02% (Jul 2026), 65.01% (20 Oct 2026) per dxbpropy.ai and mulki.ae. Danube's own page: internal inspection 30 Sep 2026, overall Viewz 1 and 2 at 57%.",
+   "plans": "No floor plans found on the developer construction page or the registry-based pages read; agency data give sizes from 401 sq ft only.",
+   "record": "Khaleej Times (26 May 2024) reported the Pearlz handover (300 units) and listed 12 other delivered Danube projects. Danube founder says over 25,000 homes (LinkedIn, not verified).",
+   "returns": "No guaranteed return wording found on pages read."
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD as project 2560",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.cevitas.ae/en/projects/viewz-2-by-danube"
+   },
+   {
+    "claim": "Escrow account at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.homesearch.ae/for-sale/off-plan/danube/viewz-2-by-danube-2560"
+   },
+   {
+    "claim": "Handover June 2026 (developer)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dxbpropy.ai/offplan/viewz-2-by-danube-jumeirah-lake-towers-b3799"
+   },
+   {
+    "claim": "Construction progress 65% (Oct 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubaihandover.com/projects/2560-viewz-2-by-danube"
+   },
+   {
+    "claim": "Developer internal progress 57% overall (30 Sep 2026)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://danubeproperties.com/construction/viewz/"
+   },
+   {
+    "claim": "564 apartments",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://realestateclubdubai.com/handover-tracker/viewz-2-by-danube"
+   },
+   {
+    "claim": "Registered project value AED 262.5M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://realestateclubdubai.com/handover-tracker/viewz-2-by-danube"
+   },
+   {
+    "claim": "Construction started Jul 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.cevitas.ae/en/projects/viewz-2-by-danube"
+   },
+   {
+    "claim": "Starting price AED 950,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dxbpropy.ai/offplan/viewz-2-by-danube-jumeirah-lake-towers-b3799"
+   },
+   {
+    "claim": "Danube delivers every project as promised (GN Focus, Jul 2026)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://famproperties.com/completion-date/viewz-2-by-danube"
+   },
+   {
+    "claim": "Danube has delivered multiple completed projects (Pearlz and 12 others)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/uae/dubai-danube-properties-hands-over-project-ahead-of-schedule"
+   },
+   {
+    "claim": "Freehold title in JLT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realestateclubdubai.com/handover-tracker/viewz-2-by-danube"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Danube Properties Development L.L.C (DLD developer no. 1009)",
+   "developer_projects_delivered": 13,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-07",
+   "handover_promised": "2026-Q2",
+   "original_handover": "2026-Q2",
+   "delay_months": 4,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR"
+   ],
+   "size_min_m2": 37.3,
+   "size_max_m2": null,
+   "price_min": 950000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10% down, 38% pre-handover, 16% handover, 36% post-handover",
+   "foreign_ownership": "freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (zone: Dubai Municipality)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Eleven dated DLD inspections with official site photos",
+   "Developer publishes its own dated construction updates",
+   "Escrow account at First Abu Dhabi Bank on DLD data"
+  ],
+  "flags": [
+   {
+    "text": "DLD register data show the tower 65.01% built at its 20 Oct 2026 inspection, past its registered completion date of 30 Jun 2026.",
+    "source": "https://dxbpropy.ai/offplan/viewz-2-by-danube-jumeirah-lake-towers-b3799"
+   }
+  ],
+  "sources": [
+   "https://realestateclubdubai.com/handover-tracker/viewz-2-by-danube",
+   "https://dubaihandover.com/projects/2560-viewz-2-by-danube",
+   "https://dxbpropy.ai/offplan/viewz-2-by-danube-jumeirah-lake-towers-b3799",
+   "https://www.homesearch.ae/for-sale/off-plan/danube/viewz-2-by-danube-2560",
+   "https://famproperties.com/completion-date/viewz-2-by-danube",
+   "https://danubeproperties.com/construction/viewz/",
+   "https://www.cevitas.ae/en/projects/viewz-2-by-danube",
+   "https://mulki.ae/off-plan/jumeirah-lakes-towers/viewz-2-by-danube/photos",
+   "https://gulfnews.com/gn-focus/company-news/danube-properties-to-deliver-11-dubai-projects-in-12-months-marking-major-milestone-1.500625819",
+   "https://www.khaleejtimes.com/uae/dubai-danube-properties-hands-over-project-ahead-of-schedule",
+   "https://developersnewsmagazine.com/magazine/05-august-2026.pdf"
+  ],
+  "verified_score": 4
+ }
+]

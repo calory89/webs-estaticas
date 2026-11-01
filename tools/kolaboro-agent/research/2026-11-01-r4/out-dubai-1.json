@@ -1,0 +1,3745 @@
+[
+ {
+  "slug": "beach-walk-residences-4-imtiaz",
+  "name": "Beach Walk Residences 4 by Imtiaz",
+  "developer": "Imtiaz Developments",
+  "area": "Dubai Islands",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/beach-walk-residences-4-by-imtiaz-dubai-islands",
+  "docs_url": "https://imtiaz.ae/property/beach-walk-4-by-imtiaz",
+  "permit_number": "0252170317",
+  "docs_listed": [
+   "Trakheesi permit 0252170317 with DLD QR, from AED 1,900,000, handover Q2 2027 (A1 Properties)",
+   "brochure, fact sheet and floor plans downloads (imtiaz.ae)",
+   "unit sizes per type, 1BR from 776 sq ft to 3BR duplex 2,522 sq ft (imtiaz.ae)",
+   "construction progress 58% overall with stage breakdown: substructure 100%, superstructure 98%, MEP 39%, finishing 47% (imtiaz.ae, undated)",
+   "monthly construction photo galleries Jun 2025 to Sep 2026 (imtiaz.ae construction history)",
+   "payment plan 20/40/40, completion June 2027 (imtiaz.ae FAQ)",
+   "DLD project 3707, escrow First Abu Dhabi Bank, 42.87% built at 13 Aug 2026 inspection, registered completion 20 Apr 2027 (DLD register mirror)"
+  ],
+  "note": "Boutique 70-unit fully furnished beachfront building on Dubai Islands; DLD register shows project 3707 at 42.87% built on 13 Aug 2026 (Imtiaz claims 58%), registered completion 20 Apr 2027, escrow at First Abu Dhabi Bank. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1900000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "0252170317",
+   "plans_published": true,
+   "escrow": "Escrow account at First Abu Dhabi Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 10 finished Imtiaz projects of 46 registered (36 active), read 13 Oct 2026; Imtiaz handed over Beach Walk by Imtiaz on Dubai Islands in Mar 2026 (Gulf News sponsored report); developer site lists Westwood, Westwood Grande I and II, Pearl House I and II among its projects",
+   "yield_pct": null,
+   "progress_pct": 42.87,
+   "progress_updates": true,
+   "units": 70,
+   "payment_plan": "20% on booking, 40% in instalments during construction, 40% on completion (June 2027) per Imtiaz; A1 lists 60/40",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0252170317 with DLD QR on the A1 Properties listing; project registered as DLD project 3707, status Active, registered 2 May 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (21 Apr 2025), 3.7% (18 Jul 2025), 4.64% (22 Oct 2025), 17.04% (26 Feb 2026), 34.14% (1 Jun 2026), 42.87% (13 Aug 2026). Imtiaz page shows 58% overall (undated) and monthly photos to Sep 2026.",
+   "plans": "imtiaz.ae offers floor plans download and lists suite, balcony and total areas for 1BR, 2BR and 3BR types",
+   "record": "DLD register lists 10 finished Imtiaz projects of 46 registered (36 active), read 13 Oct 2026; Imtiaz handed over Beach Walk by Imtiaz on Dubai Islands in Mar 2026 (Gulf News sponsored report); developer site lists Westwood, Westwood Grande I and II, Pearl House I and II among its projects",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3707, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Escrow account exists (First Abu Dhabi Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Construction at 42.87% (DLD inspection 13 Aug 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Developer entity registered: Imtiaz Real Estate Investment & Development L.L.C (DLD developer 1129)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Developer track record: 10 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/imtiaz"
+   },
+   {
+    "claim": "Construction progress 58% overall (Imtiaz page, undated) [DLD inspection on 13 Aug 2026 recorded 42.87%; the developer figure may be later but the page carries no date]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Completion June 2027 / Q2 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Construction started 21 Apr 2025 (Property Finder timeline)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz"
+   },
+   {
+    "claim": "Imtiaz delivered the first residential project on Dubai Islands (Beach Walk by Imtiaz, Mar 2026) [sponsored \"Reach by Gulf News\" item, not independent reporting]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gulfnews.com/business/property/imtiaz-hands-over-first-ever-residential-project-on-dubai-islands-with-beach-walk-by-imtiaz-1.500469389"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/beach-walk-residences-4-by-imtiaz-dubai-islands"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imtiaz.ae/property/beach-walk-4-by-imtiaz"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Imtiaz Real Estate Investment & Development L.L.C (DLD developer 1129)",
+   "developer_projects_delivered": 10,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-04",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "20 Apr 2027",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR duplex"
+   ],
+   "size_min_m2": 72,
+   "size_max_m2": 234,
+   "price_min": 1900000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% on booking, 40% in instalments during construction, 40% on completion (June 2027) per Imtiaz; A1 lists 60/40",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "family pool",
+    "gym",
+    "clubhouse",
+    "kids zone",
+    "BBQ area",
+    "zen garden",
+    "outdoor yoga"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "DLD register shows steady progress over six inspections (0% to 42.87% in 16 months)",
+   "Monthly construction photos published since Jun 2025",
+   "Floor plans, fact sheet and unit areas published by the developer",
+   "Payment plan backloads 40% to completion"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/beach-walk-residences-4-by-imtiaz",
+   "https://dubairealestateiq.com/developer/imtiaz",
+   "https://a1properties.ae/project-details/beach-walk-residences-4-by-imtiaz-dubai-islands",
+   "https://imtiaz.ae/property/beach-walk-4-by-imtiaz",
+   "https://imtiaz.ae/construction-history/beach-walk-4-by-imtiaz",
+   "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/beach-walk-phase-4-by-imtiaz",
+   "https://gulfnews.com/business/property/imtiaz-hands-over-first-ever-residential-project-on-dubai-islands-with-beach-walk-by-imtiaz-1.500469389",
+   "https://www.propertyfinder.ae/en/new-projects/dev/imtiaz-developments"
+  ]
+ },
+ {
+  "slug": "cove-grand-imtiaz",
+  "name": "Cove Grand by Imtiaz",
+  "developer": "Imtiaz Developments",
+  "area": "Dubailand Residence Complex",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/cove-grand-residences-dubai-land-residence-complex",
+  "docs_url": "https://imtiaz.ae/property/cove-grand-by-imtiaz",
+  "permit_number": "1840600281",
+  "docs_listed": [
+   "Trakheesi permit 1840600281 with DLD QR, from AED 690,000, handover Q4 2027 (A1 Properties)",
+   "brochure, fact sheet and floor plans downloads (imtiaz.ae)",
+   "starting prices per type: studio AED 690,000 (386 sq ft) to 3BR AED 1,920,000 (1,627 sq ft) (imtiaz.ae FAQ)",
+   "construction progress 15% overall: substructure 100%, superstructure 3%, MEP 3%, finishing 0% (imtiaz.ae)",
+   "monthly construction photos Jun 2025 to Sep 2026 (imtiaz.ae construction history)",
+   "two payment plans incl. 30% over 3 years post handover (imtiaz.ae)",
+   "DLD project 3774, escrow Ajman Bank, 13.4% built at 8 Oct 2026 inspection, registered completion 15 Dec 2027 (DLD register mirror)"
+  ],
+  "note": "21-storey, 538-unit furnished tower in Dubailand Residence Complex; DLD register shows project 3774 at 13.4% built on 8 Oct 2026 with registered completion 15 Dec 2027, escrow at Ajman Bank. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 690000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "1840600281",
+   "plans_published": true,
+   "escrow": "Escrow account at Ajman Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 10 finished Imtiaz projects of 46 registered (36 active), read 13 Oct 2026; Imtiaz handed over Beach Walk by Imtiaz on Dubai Islands in Mar 2026 (Gulf News sponsored report); developer site lists Westwood, Westwood Grande I and II, Pearl House I and II among its projects",
+   "yield_pct": null,
+   "progress_pct": 13.4,
+   "progress_updates": true,
+   "units": 538,
+   "payment_plan": "Option 1: 50% during construction, 50% on completion; option 2: 70% to completion, 30% over 3 years after handover in quarterly instalments (imtiaz.ae)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1840600281 with DLD QR on the A1 Properties listing; project registered as DLD project 3774, status Active, registered 12 Jun 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Ajman Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (19 May 2025), 1.66% (6 Oct 2025), 5.22% (20 Jan 2026), 6.26% (29 Apr 2026), 8.67% (8 Jul 2026), 13.4% (8 Oct 2026). Imtiaz page shows 15% and monthly photos to Sep 2026.",
+   "plans": "imtiaz.ae offers floor plans download and per-type sizes",
+   "record": "DLD register lists 10 finished Imtiaz projects of 46 registered (36 active), read 13 Oct 2026; Imtiaz handed over Beach Walk by Imtiaz on Dubai Islands in Mar 2026 (Gulf News sponsored report); developer site lists Westwood, Westwood Grande I and II, Pearl House I and II among its projects",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3774, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Escrow account exists (Ajman Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Construction at 13.4% (DLD inspection 8 Oct 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Developer entity registered: Imtiaz Cove Real Estate Development L.L.C (DLD developer 2275)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Developer track record: 10 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/imtiaz"
+   },
+   {
+    "claim": "Construction progress 15% overall (Imtiaz page) [DLD 13.4% at 8 Oct 2026, close to the developer figure]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Completion Q4 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "86.6% of the building left to build in about 14 months to the registered completion date [Kolaboro observation from the register figures; superstructure only 3% per the developer]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Registered sales median AED 763k, AED 1,561 per sq ft (370 sales, Oct 2025 to Sep 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/cove-grand-residences-dubai-land-residence-complex"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imtiaz.ae/property/cove-grand-by-imtiaz"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Imtiaz Cove Real Estate Development L.L.C (DLD developer 2275)",
+   "developer_projects_delivered": 10,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-05",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "15 Dec 2027",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 36,
+   "size_max_m2": 151,
+   "price_min": 690000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "Option 1: 50% during construction, 50% on completion; option 2: 70% to completion, 30% over 3 years after handover in quarterly instalments (imtiaz.ae)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "kids pool",
+    "gym",
+    "clubhouse",
+    "mini golf",
+    "open-air cinema",
+    "running track",
+    "BBQ area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer progress figure (15%) close to the DLD inspection (13.4%)",
+   "Prices and sizes published per unit type by the developer",
+   "Monthly construction photos published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/cove-grand-residence-by-imtiaz",
+   "https://dubairealestateiq.com/developer/imtiaz",
+   "https://a1properties.ae/project-details/cove-grand-residences-dubai-land-residence-complex",
+   "https://imtiaz.ae/property/cove-grand-by-imtiaz",
+   "https://imtiaz.ae/construction-history/cove-grand-by-imtiaz",
+   "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/cove-grand",
+   "https://gulfnews.com/business/property/imtiaz-hands-over-first-ever-residential-project-on-dubai-islands-with-beach-walk-by-imtiaz-1.500469389",
+   "https://www.propertyfinder.ae/en/new-projects/dev/imtiaz-developments"
+  ]
+ },
+ {
+  "slug": "the-symphony-imtiaz",
+  "name": "The Symphony by Imtiaz",
+  "developer": "Imtiaz Developments",
+  "area": "Mohammed Bin Rashid City",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/symphony-by-imtiaz-meydan-horizon-dubai",
+  "docs_url": "https://imtiaz.ae/property/the-symphony-by-imtiaz",
+  "permit_number": "1171263439",
+  "docs_listed": [
+   "Trakheesi permit 1171263439 with DLD QR, from AED 1,690,000, handover Q2 2029 (A1 Properties)",
+   "brochure download only, no floor plans (imtiaz.ae)",
+   "construction progress 7% overall; substructure 35%, superstructure 0% (imtiaz.ae)",
+   "monthly construction photos Feb to Sep 2026 (imtiaz.ae construction history)",
+   "290 residential units, 84 offices, 7 retail units; Zaha Hadid Architects design (imtiaz.ae FAQ)",
+   "DLD project 4193, escrow United Bank Limited, 6.3% built at 16 Sep 2026 inspection, registered completion 15 Jun 2029 (DLD register mirror)"
+  ],
+  "note": "Zaha Hadid designed mixed tower (homes and offices) in Meydan Horizon; DLD register shows project 4193 at 6.3% built on 16 Sep 2026, registered completion 15 Jun 2029, escrow at United Bank Limited. No floor plans published. Note DLD project \"Symphony\" (2786) in Town Square is a different Nshama project. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1690000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q2",
+   "permit_claim": true,
+   "permit_number": "1171263439",
+   "plans_published": false,
+   "escrow": "Escrow account at United Bank Limited per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 10 finished Imtiaz projects of 46 registered (36 active), read 13 Oct 2026; Imtiaz handed over Beach Walk by Imtiaz on Dubai Islands in Mar 2026 (Gulf News sponsored report); developer site lists Westwood, Westwood Grande I and II, Pearl House I and II among its projects",
+   "yield_pct": null,
+   "progress_pct": 6.3,
+   "progress_updates": true,
+   "units": 369,
+   "payment_plan": "20% on booking, staggered instalments during construction 2026 to 2028, 40% on completion Q2 2029 (imtiaz.ae)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1171263439 with DLD QR on the A1 Properties listing; project registered as DLD project 4193, status Active, registered 18 Nov 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank United Bank Limited; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (5 Nov 2025), 1.2% (26 Mar 2026), 4% (16 Jun 2026), 6.3% (16 Sep 2026). Imtiaz page shows 7% and photos Feb to Sep 2026.",
+   "plans": "No floor plans found on the developer or agency pages checked",
+   "record": "DLD register lists 10 finished Imtiaz projects of 46 registered (36 active), read 13 Oct 2026; Imtiaz handed over Beach Walk by Imtiaz on Dubai Islands in Mar 2026 (Gulf News sponsored report); developer site lists Westwood, Westwood Grande I and II, Pearl House I and II among its projects",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4193, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "Escrow account exists (United Bank Limited)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "Construction at 6.3% (DLD inspection 16 Sep 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "Developer entity registered: Imtiaz Symphony Development L.L.C (DLD developer 2537)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "Developer track record: 10 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/imtiaz"
+   },
+   {
+    "claim": "Construction progress 7% overall (Imtiaz page) [DLD 6.3% at 16 Sep 2026]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "Completion Q2 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "381 units (290 homes, 84 offices, 7 retail) [DLD register lists 369 units]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/imtiaz-symphony-tower"
+   },
+   {
+    "claim": "Designed by Zaha Hadid Architects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imtiaz.ae/property/the-symphony-by-imtiaz"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/symphony-by-imtiaz-meydan-horizon-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imtiaz.ae/property/the-symphony-by-imtiaz"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Imtiaz Symphony Development L.L.C (DLD developer 2537)",
+   "developer_projects_delivered": 10,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-12",
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "15 Jun 2029",
+   "unit_types": [
+    "1BR",
+    "master 1BR suite",
+    "2BR",
+    "3BR",
+    "4BR",
+    "4BR duplex",
+    "office",
+    "retail"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 543,
+   "price_min": 1690000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% on booking, staggered instalments during construction 2026 to 2028, 40% on completion Q2 2029 (imtiaz.ae)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult and kids pools",
+    "gym",
+    "clubhouse",
+    "library",
+    "yoga studio",
+    "observatory deck",
+    "sauna and steam",
+    "executive lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer progress figure consistent with DLD inspections",
+   "Monthly construction photos published",
+   "40% of the price due only on completion"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/imtiaz-symphony-tower",
+   "https://dubairealestateiq.com/developer/imtiaz",
+   "https://a1properties.ae/project-details/symphony-by-imtiaz-meydan-horizon-dubai",
+   "https://imtiaz.ae/property/the-symphony-by-imtiaz",
+   "https://imtiaz.ae/construction-history/the-symphony-by-imtiaz",
+   "https://gulfnews.com/business/property/imtiaz-hands-over-first-ever-residential-project-on-dubai-islands-with-beach-walk-by-imtiaz-1.500469389",
+   "https://www.propertyfinder.ae/en/new-projects/dev/imtiaz-developments"
+  ]
+ },
+ {
+  "slug": "eltiera-views-ellington",
+  "name": "Eltiera Views",
+  "developer": "Ellington Properties",
+  "area": "Jumeirah Islands",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/eltiera-views-jumeirah-islands-dubai",
+  "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/eltiera-views-jumeirah-islands",
+  "permit_number": "0384665583",
+  "docs_listed": [
+   "Trakheesi permit 0384665583 with DLD QR, from AED 2,200,000, handover Q4 2029, 70/30 plan (A1 Properties)",
+   "project page with description and amenities; brochure behind a form (ellingtonproperties.ae)",
+   "no floor plans or construction updates visible on the developer page or its construction-updates app",
+   "launch press release Dec 2025 (ellingtonproperties.ae)",
+   "DLD project 4116, 5 buildings, 1,185 units, escrow Abu Dhabi Commercial Bank, 0% at 5 Dec 2025 inspection, registered completion 31 Dec 2029 (DLD register mirror)"
+  ],
+  "note": "Four-tower, 1,185-unit lakeside project in Jumeirah Islands launched Dec 2025; DLD register shows project 4116 registered 6 May 2026, escrow at Abu Dhabi Commercial Bank, registered completion 31 Dec 2029, 0% at the only inspection (5 Dec 2025). (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2200000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "0384665583",
+   "plans_published": false,
+   "escrow": "Escrow account at Abu Dhabi Commercial Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 21 finished Ellington projects of 54 registered (33 active), read 13 Oct 2026; Ellington began handover of Ellington House II (Dubai Hills Estate) and Arbor View (Arjan) in May 2026 after completing Ellington House I (developer press release)",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 1185,
+   "payment_plan": "70/30 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0384665583 with DLD QR on the A1 Properties listing; project registered as DLD project 4116, status Active, registered 6 May 2026 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Abu Dhabi Commercial Bank; developer page does not name the bank",
+   "progress": "DLD register: one inspection, 0% on 5 Dec 2025; registered start 16 Apr 2026. No developer progress update found (construction-updates app lists no months for Eltiera Views).",
+   "plans": "No floor plans found on the developer or agency pages checked",
+   "record": "DLD register lists 21 finished Ellington projects of 54 registered (33 active), read 13 Oct 2026; Ellington began handover of Ellington House II (Dubai Hills Estate) and Arbor View (Arjan) in May 2026 after completing Ellington House I (developer press release)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4116, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Escrow account exists (Abu Dhabi Commercial Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 5 Dec 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Developer entity registered: Ellington Pcfc Developers L.L.C (DLD developer 2371)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Developer track record: 21 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/ellington"
+   },
+   {
+    "claim": "Handover Q4 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Launched Dec 2025 as a follow-up to Eltiera Heights [Khaleej Times item republishes the developer statement]",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business-technology-review/ellington-properties-unveils-new-residential-development"
+   },
+   {
+    "claim": "Registered sales median AED 2.2m, AED 2,498 per sq ft (626 sales, Oct 2025 to Sep 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Project entity is a joint Ellington entity (Ellington Pcfc Developers L.L.C), not Ellington Properties itself",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/eltiera-views"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/eltiera-views-jumeirah-islands-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ellingtonproperties.ae/en/property-for-sale/eltiera-views-jumeirah-islands"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Ellington Pcfc Developers L.L.C (DLD developer 2371)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Dec 2029",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR penthouse",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 74,
+   "size_max_m2": 556,
+   "price_min": 2200000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "70/30 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "four-level clubhouse",
+    "infinity-edge pool",
+    "co-working space",
+    "padel courts",
+    "fitness and dance studios",
+    "spa, steam and sauna",
+    "cinema and games rooms",
+    "direct lake access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Registered completion date matches the advertised Q4 2029",
+   "Escrow bank named on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/eltiera-views",
+   "https://dubairealestateiq.com/developer/ellington",
+   "https://a1properties.ae/project-details/eltiera-views-jumeirah-islands-dubai",
+   "https://ellingtonproperties.ae/en/property-for-sale/eltiera-views-jumeirah-islands",
+   "https://ellingtonproperties.ae/en/media-center/news/ellington-properties-announces-the-coming-soon-campaign-of-the-highly-anticipated-eltiera-views",
+   "https://www.khaleejtimes.com/business-technology-review/ellington-properties-unveils-new-residential-development",
+   "https://app.ellingtonproperties.ae/construction-updates/project/?project=Eltiera_Views&lang=en",
+   "https://ellingtonproperties.ae/en/media-center/news/ellington-properties-commences-handover-of-ellington-house-ii-and-arbor-view"
+  ]
+ },
+ {
+  "slug": "meriva-collection-ellington",
+  "name": "The Meriva Collection (Meriva Gardens / Meriva Signature)",
+  "developer": "Ellington Properties",
+  "area": "Dubai Islands",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/meriva-gardens-dubai-islands",
+  "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/the-meriva-collection-dubai-islands",
+  "permit_number": "0590901977",
+  "docs_listed": [
+   "Trakheesi permit 0590901977 with DLD QR for Meriva Gardens (Q4 2030) and Meriva Signature (Q2 2030), from AED 2,700,000 (A1 Properties)",
+   "project page, brochure behind a form (ellingtonproperties.ae); microsite states Q2 2030",
+   "dated construction photos Sep and Oct 2026 (Ellington construction-updates app)",
+   "launch press release 11 Feb 2026: five residential buildings, signature residence and hotel (ellingtonproperties.ae)",
+   "DLD project 4346, 8 buildings, 939 units, escrow Sharjah Islamic Bank, 0% at 25 Feb 2026 inspection, registered completion 31 Dec 2031 (DLD register mirror)"
+  ],
+  "note": "Hotel-led beachfront community on Island B of Dubai Islands by Ellington, registered to Crestarc Developers; DLD lists project 4346 (939 units, escrow Sharjah Islamic Bank) with completion 31 Dec 2031, about 18 months after the Q2 to Q4 2030 dates marketed. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2700000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2030-Q4",
+   "permit_claim": true,
+   "permit_number": "0590901977",
+   "plans_published": false,
+   "escrow": "Escrow account at Sharjah Islamic Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 21 finished Ellington projects of 54 registered (33 active), read 13 Oct 2026; Ellington began handover of Ellington House II (Dubai Hills Estate) and Arbor View (Arjan) in May 2026 after completing Ellington House I (developer press release)",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 939,
+   "payment_plan": "70/30 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0590901977 with DLD QR on the A1 Properties listing; project registered as DLD project 4346, status Active, registered 14 Apr 2026 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Sharjah Islamic Bank; developer page does not name the bank",
+   "progress": "DLD register: one inspection, 0% on 25 Feb 2026; registered start 3 Apr 2026. Ellington construction-updates app shows photo sets for Sep 2026 and Oct 2026, no %.",
+   "plans": "No floor plans found on the developer or agency pages checked",
+   "record": "DLD register lists 21 finished Ellington projects of 54 registered (33 active), read 13 Oct 2026; Ellington began handover of Ellington House II (Dubai Hills Estate) and Arbor View (Arjan) in May 2026 after completing Ellington House I (developer press release)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4346, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Escrow account exists (Sharjah Islamic Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 25 Feb 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Developer entity registered: Crestarc Developers L.L.C (DLD developer 2423)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Developer track record: 21 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/ellington"
+   },
+   {
+    "claim": "Handover Q2 2030 (Ellington microsite) / Q4 2030 (A1 for Meriva Gardens) [DLD registered completion is 31 Dec 2031]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Developed by Ellington Properties [DLD register names Crestarc Developers L.L.C (developer 2423) as developer; register mirror groups it under the Ellington brand, so likely a project vehicle, but the link is not stated by Ellington]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Five residential buildings, a signature residence and a hotel [DLD lists 8 buildings incl. Meriva Hotel, Meriva Signature, Meriva Shores A and B, Meriva Sunset and podium]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Launched Feb 2026 as Ellington's first hospitality-led project [Zawya report based on the developer statement]",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/gcc/ellington-unveils-hospitality-led-beachfront-destination-on-dubai-islands-hjoyf9w7"
+   },
+   {
+    "claim": "Registered sales median AED 4.0m, AED 3,448 per sq ft (484 sales)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-meriva-collection"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/meriva-gardens-dubai-islands"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ellingtonproperties.ae/en/property-for-sale/the-meriva-collection-dubai-islands"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Crestarc Developers L.L.C (DLD developer 2423)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2030-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Dec 2031",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse",
+    "3BR and 5BR signature beachfront residence"
+   ],
+   "size_min_m2": 77,
+   "size_max_m2": 329,
+   "price_min": 2700000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "70/30 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult and kids pools",
+    "paddle tennis court",
+    "mini golf",
+    "pet park",
+    "fitness stations",
+    "2 km jogging track",
+    "jazz club",
+    "co-working"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Escrow bank named on the DLD register",
+   "Dated construction photos published monthly from Sep 2026"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/the-meriva-collection",
+   "https://dubairealestateiq.com/developer/ellington",
+   "https://a1properties.ae/project-details/meriva-gardens-dubai-islands",
+   "https://ellingtonproperties.ae/en/property-for-sale/the-meriva-collection-dubai-islands",
+   "https://ellingtonproperties.ae/en/media-center/news/ellington-properties-unveils-the-meriva-collection-a-hospitality-led-beachfront-destination-on-dubai-islands",
+   "https://the-meriva-collection.ellingtonproperties.ae/",
+   "https://www.zawya.com/en/economy/gcc/ellington-unveils-hospitality-led-beachfront-destination-on-dubai-islands-hjoyf9w7",
+   "https://app.ellingtonproperties.ae/construction-updates/project/?project=The_Meriva_Collection&lang=en",
+   "https://ellingtonproperties.ae/en/media-center/news/ellington-properties-commences-handover-of-ellington-house-ii-and-arbor-view"
+  ]
+ },
+ {
+  "slug": "sobha-solis",
+  "name": "Sobha Solis",
+  "developer": "Sobha Realty",
+  "area": "Motor City",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/sobha-solis-motor-city-dubai",
+  "docs_url": "https://sobharealty.com/properties-in-dubai/sobha-solis",
+  "permit_number": "1052956813",
+  "docs_listed": [
+   "Trakheesi permit 1052956813 with DLD QR, from AED 1,040,000, handover Q4 2028, 60/40 (A1 Properties)",
+   "floor plans 1BR, 1.5BR, 2BR and 3BR with suite, balcony and total areas (sobharealty.com)",
+   "starting price AED 2.00M, subject to inventory (sobharealty.com)",
+   "brochure PDF (sobharealty.com)",
+   "DLD project 3334, 6 buildings, 2,351 units, escrow Abu Dhabi Commercial Bank, 13.22% built at 5 May 2026 inspection, registered completion 31 Dec 2028 (DLD register mirror)"
+  ],
+  "note": "Four-tower, 2,351-unit project by Motor City; DLD register shows project 3334 at 13.22% built on 5 May 2026, registered completion 31 Dec 2028, escrow at Abu Dhabi Commercial Bank. Sobha now quotes from AED 2.00M versus AED 1.04M on A1. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2000000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "1052956813",
+   "plans_published": true,
+   "escrow": "Escrow account at Abu Dhabi Commercial Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 21 finished Sobha projects of 50 registered (27 active, 2 cancelled), read 13 Oct 2026; Sobha investor update H1 FY26 states 1,300+ units delivered in H1 FY26 and Crest Grande (985 units) and Waves Opulence (363 units) at 100% completion; press release plans 6,819 handovers in 2026",
+   "yield_pct": null,
+   "progress_pct": 13.22,
+   "progress_updates": true,
+   "units": 2351,
+   "payment_plan": "60/40 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1052956813 with DLD QR on the A1 Properties listing; project registered as DLD project 3334, status Active, registered 17 Jan 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Abu Dhabi Commercial Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (22 Oct 2024), 3.71% (29 Sep 2025), 9.37% (29 Jan 2026), 13.22% (5 May 2026). No progress figure on the Sobha page.",
+   "plans": "sobharealty.com shows floor plans per type with areas (e.g. 1BR Type A 542.72 to 546.38 sq ft total)",
+   "record": "DLD register lists 21 finished Sobha projects of 50 registered (27 active, 2 cancelled), read 13 Oct 2026; Sobha investor update H1 FY26 states 1,300+ units delivered in H1 FY26 and Crest Grande (985 units) and Waves Opulence (363 units) at 100% completion; press release plans 6,819 handovers in 2026",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3334, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sobha-solis"
+   },
+   {
+    "claim": "Escrow account exists (Abu Dhabi Commercial Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sobha-solis"
+   },
+   {
+    "claim": "Construction at 13.22% (DLD inspection 5 May 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sobha-solis"
+   },
+   {
+    "claim": "Developer entity registered: Sobha L.L.C (DLD developer 966)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sobha-solis"
+   },
+   {
+    "claim": "Developer track record: 21 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/sobha"
+   },
+   {
+    "claim": "Handover Q4 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/sobha-solis"
+   },
+   {
+    "claim": "Starting price AED 1,040,000 (A1) versus AED 2.00M (Sobha, subject to inventory) [DLD registered sales median AED 1.1m, AED 2,020 per sq ft (563 sales), so the A1 figure likely reflects launch or resale pricing]",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sobharealty.com/properties-in-dubai/sobha-solis"
+   },
+   {
+    "claim": "Pace: 13.22% built 19 months after the registered start, with completion due Dec 2028 [Kolaboro observation from the register]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dubairealestateiq.com/project/sobha-solis"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/sobha-solis-motor-city-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sobharealty.com/properties-in-dubai/sobha-solis"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Sobha L.L.C (DLD developer 966)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not equity listed; issuer of USD sukuk (USD 500m due Jul 2028, USD 500m due Feb 2029, USD 750m due Sep 2030) and publishes half-year investor updates",
+   "construction_start": "2024-10",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Dec 2028",
+   "unit_types": [
+    "1BR",
+    "1.5BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 175,
+   "price_min": 2000000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "60/40 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://sobharealty.com/sites/default/files/2024-09/Sobha%20Solis%20Brochure_Final.pdf"
+  },
+  "positives": [
+   "Detailed floor plans with areas published",
+   "Developer publishes half-year investor updates with project handover tables"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/sobha-solis",
+   "https://dubairealestateiq.com/developer/sobha",
+   "https://a1properties.ae/project-details/sobha-solis-motor-city-dubai",
+   "https://sobharealty.com/properties-in-dubai/sobha-solis",
+   "https://www.propertyfinder.ae/en/new-projects/sobha-realty/sobha-solis",
+   "https://joinoliva.com/en/projects/sobha-solis",
+   "https://sobharealty.com/sites/default/files/2026-08/Investor%20Update%20H1%20FY26.pdf",
+   "https://sobharealty.com/media-center/press-releases/sobha-realty-marks-all-time-delivery-record-6819-units-set-handover"
+  ]
+ },
+ {
+  "slug": "sobha-the-brooks",
+  "name": "The Brooks at Sobha Sanctuary",
+  "developer": "Sobha Realty",
+  "area": "The Valley",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/the-brooks-at-sobha-sanctuary-dubailand-dubai",
+  "docs_url": "https://sobharealty.com/properties-in-dubai/sobha-sanctuary/the-brooks",
+  "permit_number": "1876838264",
+  "docs_listed": [
+   "Trakheesi permit 1876838264 with DLD QR, from AED 4,160,000, handover Q3 2029, 60/40 (A1 Properties)",
+   "4BR and 5BR villa floor plans by level with saleable areas (sobharealty.com)",
+   "starting price AED 7.35M, subject to inventory (sobharealty.com)",
+   "brochure PDF (sobharealty.com)",
+   "investor update: launched Jan 2026, 147 launch units, handover year 2029",
+   "DLD project 4532, 185 units, escrow Dubai Islamic Bank, 0% at 15 Jul 2026, registered start 1 Jan 2027, registered completion 31 Aug 2030 (DLD register mirror)"
+  ],
+  "note": "Villa cluster in Sobha Sanctuary (Al Yufrah 1) launched Jan 2026; DLD registered project 4532 on 30 Jul 2026 with escrow at Dubai Islamic Bank, a registered start of 1 Jan 2027 and completion 31 Aug 2030, later than the 2029 handover Sobha and agents advertise. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 7350000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": "1876838264",
+   "plans_published": true,
+   "escrow": "Escrow account at Dubai Islamic Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 21 finished Sobha projects of 50 registered (27 active, 2 cancelled), read 13 Oct 2026; Sobha investor update H1 FY26 states 1,300+ units delivered in H1 FY26 and Crest Grande (985 units) and Waves Opulence (363 units) at 100% completion; press release plans 6,819 handovers in 2026",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 185,
+   "payment_plan": "60/40 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1876838264 with DLD QR on the A1 Properties listing; project registered as DLD project 4532, status Active, registered 30 Jul 2026 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Dubai Islamic Bank; developer page does not name the bank",
+   "progress": "DLD register: one inspection, 0% on 15 Jul 2026; registered start date 1 Jan 2027. No progress figure on the Sobha page.",
+   "plans": "sobharealty.com shows 4BR and 5BR villa plans per floor (e.g. 4BR Type A saleable area 2,520.91 sq ft)",
+   "record": "DLD register lists 21 finished Sobha projects of 50 registered (27 active, 2 cancelled), read 13 Oct 2026; Sobha investor update H1 FY26 states 1,300+ units delivered in H1 FY26 and Crest Grande (985 units) and Waves Opulence (363 units) at 100% completion; press release plans 6,819 handovers in 2026",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4532, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "Escrow account exists (Dubai Islamic Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 15 Jul 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "Developer entity registered: Sobha L.L.C (DLD developer 966)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "Developer track record: 21 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/sobha"
+   },
+   {
+    "claim": "Handover 2029 (Sobha investor update) / Q3 2029 (A1) [DLD registered completion 31 Aug 2030]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "147 launch units (investor update) [DLD lists 185 units; later releases may explain the gap]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "Starting price AED 4,160,000 (A1) versus AED 7.35M (Sobha) [no registered sales median published yet]",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sobharealty.com/properties-in-dubai/sobha-sanctuary/the-brooks"
+   },
+   {
+    "claim": "Construction not yet started (registered start 1 Jan 2027)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/the-brooks-at-sobha-sanctuary-dubailand-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sobharealty.com/properties-in-dubai/sobha-sanctuary/the-brooks"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Sobha L.L.C (DLD developer 966)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not equity listed; issuer of USD sukuk (USD 500m due Jul 2028, USD 500m due Feb 2029, USD 750m due Sep 2030) and publishes half-year investor updates",
+   "construction_start": "2027-01",
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Aug 2030",
+   "unit_types": [
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 228,
+   "size_max_m2": 382,
+   "price_min": 7350000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "60/40 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://sobharealty.com/sites/default/files/2026-01/THE%20BROOKS%20AT%20SOBHA_SANCTUARY.pdf"
+  },
+  "positives": [
+   "Villa floor plans published per level",
+   "Escrow bank named on the DLD register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/the-brooks-at-sobha-sanctuary",
+   "https://dubairealestateiq.com/developer/sobha",
+   "https://a1properties.ae/project-details/the-brooks-at-sobha-sanctuary-dubailand-dubai",
+   "https://sobharealty.com/properties-in-dubai/sobha-sanctuary/the-brooks",
+   "https://sobharealty.com/sites/default/files/2026-08/Investor%20Update%20H1%20FY26.pdf",
+   "https://sobharealty.com/media-center/press-releases/sobha-realty-marks-all-time-delivery-record-6819-units-set-handover"
+  ]
+ },
+ {
+  "slug": "sobha-skyscape",
+  "name": "Skyscape (Sobha Hartland II)",
+  "developer": "Sobha Realty",
+  "area": "Mohammed Bin Rashid City",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/skyscape-sobha-hartland-2-dubai",
+  "docs_url": "https://sobharealty.com/properties-in-dubai/sobha-hartland-2/skyscape",
+  "permit_number": "1912998345",
+  "docs_listed": [
+   "Trakheesi permit 1912998345 with DLD QR, from AED 1,710,000, handover Q4 2029, 60/40 (A1 Properties)",
+   "three towers (Avenue, Aura, Altius) with price and size ranges, e.g. Avenue AED 1.95M to 5.01M, 845.8 to 2,093.2 sq ft (sobharealty.com)",
+   "handover Dec 2028 stated for each tower (sobharealty.com)",
+   "brochure downloads per tower; no floor plans on the page (sobharealty.com)",
+   "DLD project 3160, 4 buildings, 1,852 units, escrow Dubai Islamic Bank, 38.27% built at 21 Sep 2026 inspection, registered completion 31 Dec 2029 (DLD register mirror)"
+  ],
+  "note": "Three-tower, 1,852-unit project in Sobha Hartland II; DLD register shows project 3160 at 38.27% built on 21 Sep 2026 with registered completion 31 Dec 2029, a year after the Dec 2028 handover still shown on the Sobha page. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1710000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "1912998345",
+   "plans_published": false,
+   "escrow": "Escrow account at Dubai Islamic Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 21 finished Sobha projects of 50 registered (27 active, 2 cancelled), read 13 Oct 2026; Sobha investor update H1 FY26 states 1,300+ units delivered in H1 FY26 and Crest Grande (985 units) and Waves Opulence (363 units) at 100% completion; press release plans 6,819 handovers in 2026",
+   "yield_pct": null,
+   "progress_pct": 38.27,
+   "progress_updates": true,
+   "units": 1852,
+   "payment_plan": "60/40 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1912998345 with DLD QR on the A1 Properties listing; project registered as DLD project 3160, status Active, registered 9 Oct 2024 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Dubai Islamic Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (22 Jul 2024), 11.91% (4 Jul 2025), 23.22% (31 Mar 2026), 30.08% (16 Jun 2026), 38.27% (21 Sep 2026). No progress figure on the Sobha page.",
+   "plans": "No floor plans found on the developer or agency pages checked",
+   "record": "DLD register lists 21 finished Sobha projects of 50 registered (27 active, 2 cancelled), read 13 Oct 2026; Sobha investor update H1 FY26 states 1,300+ units delivered in H1 FY26 and Crest Grande (985 units) and Waves Opulence (363 units) at 100% completion; press release plans 6,819 handovers in 2026",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3160, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/skyscape"
+   },
+   {
+    "claim": "Escrow account exists (Dubai Islamic Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/skyscape"
+   },
+   {
+    "claim": "Construction at 38.27% (DLD inspection 21 Sep 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/skyscape"
+   },
+   {
+    "claim": "Developer entity registered: Sobha L.L.C (DLD developer 966)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/skyscape"
+   },
+   {
+    "claim": "Developer track record: 21 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/sobha"
+   },
+   {
+    "claim": "Handover Dec 2028 for each tower (Sobha page) [DLD registered completion 31 Dec 2029; A1 also lists Q4 2029]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/skyscape"
+   },
+   {
+    "claim": "Starting price AED 1,710,000 (A1) [Sobha page ranges start at AED 1.95M (Avenue); DLD registered sales median AED 2.1m, AED 2,425 per sq ft (366 sales)]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/skyscape-sobha-hartland-2-dubai"
+   },
+   {
+    "claim": "Construction progressing (38.27% at 21 Sep 2026, up from 23.22% in Mar 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/skyscape"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/skyscape-sobha-hartland-2-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sobharealty.com/properties-in-dubai/sobha-hartland-2/skyscape"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Sobha L.L.C (DLD developer 966)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not equity listed; issuer of USD sukuk (USD 500m due Jul 2028, USD 500m due Feb 2029, USD 750m due Sep 2030) and publishes half-year investor updates",
+   "construction_start": "2024-08",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Dec 2029",
+   "unit_types": [
+    "1BR",
+    "1.5BR",
+    "2BR",
+    "2.5BR",
+    "3BR"
+   ],
+   "size_min_m2": 71,
+   "size_max_m2": 259,
+   "price_min": 1710000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "60/40 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Steady DLD-recorded progress (about 15 points in 6 months)",
+   "Price and size ranges published per tower"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/skyscape",
+   "https://dubairealestateiq.com/developer/sobha",
+   "https://a1properties.ae/project-details/skyscape-sobha-hartland-2-dubai",
+   "https://sobharealty.com/properties-in-dubai/sobha-hartland-2/skyscape",
+   "https://sobharealty.com/sites/default/files/2026-08/Investor%20Update%20H1%20FY26.pdf",
+   "https://sobharealty.com/media-center/press-releases/sobha-realty-marks-all-time-delivery-record-6819-units-set-handover"
+  ]
+ },
+ {
+  "slug": "emaar-golf-vale",
+  "name": "Golf Vale",
+  "developer": "Emaar Properties",
+  "area": "Emaar South / Expo City",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/golf-vale-emaar-south-dubai",
+  "docs_url": "https://www.emaar.com/en/properties/golf-vale-at-emaar-south",
+  "permit_number": "1175304075",
+  "docs_listed": [
+   "Trakheesi permit 1175304075 with DLD QR, from AED 1,100,000, handover Q1 2030, 80/20 (A1 Properties)",
+   "key facts: starting price 1.09M AED but \"prices from AED 1,987,888\", 10 units available, 990 to 2,816 sq ft (emaar.com)",
+   "brochure PDF and floor plan PDF (emaar.com)",
+   "DLD project 4416, 262 units, escrow Dubai Islamic Bank, 0% at 24 Feb 2026, registered completion 31 Mar 2030 (DLD register mirror)"
+  ],
+  "note": "262-unit golf-side apartments and townhouses in Emaar South; DLD register shows project 4416 (escrow Dubai Islamic Bank) not yet started at the Feb 2026 inspection, registered completion 31 Mar 2030. Emaar headlines AED 1.09M but its own available units start at AED 1,987,888. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1090000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2030-Q1",
+   "permit_claim": true,
+   "permit_number": "1175304075",
+   "plans_published": true,
+   "escrow": "Escrow account at Dubai Islamic Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 262,
+   "payment_plan": "80/20 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1175304075 with DLD QR on the A1 Properties listing; project registered as DLD project 4416, status Active, registered 27 Feb 2026 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Dubai Islamic Bank; developer page does not name the bank",
+   "progress": "DLD register: one inspection, 0% on 24 Feb 2026; registered start 5 Apr 2026. No progress figure on the Emaar page.",
+   "plans": "emaar.com links Golf-Vale_floorplan.pdf",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4416, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/golf-vale"
+   },
+   {
+    "claim": "Escrow account exists (Dubai Islamic Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/golf-vale"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 24 Feb 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/golf-vale"
+   },
+   {
+    "claim": "Developer entity registered: Emaar Dubai South Dwc Llc (DLD developer 1155)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/golf-vale"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q1 2030",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/golf-vale"
+   },
+   {
+    "claim": "Starting price AED 1.09M (Emaar headline) [same page lists available units from AED 1,987,888; DLD registered sales median AED 1.6m (238 sales)]",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/golf-vale-at-emaar-south"
+   },
+   {
+    "claim": "Units 262 on DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/golf-vale"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/golf-vale-emaar-south-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/golf-vale-at-emaar-south"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Emaar Dubai South Dwc Llc (DLD developer 1155)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2026-04",
+   "handover_promised": "2030-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Mar 2030",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR townhouse"
+   ],
+   "size_min_m2": 92,
+   "size_max_m2": 262,
+   "price_min": 1090000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "80/20 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult pool",
+    "kids pool",
+    "splash pad",
+    "padel court",
+    "event lawn",
+    "BBQ area",
+    "indoor and outdoor gym",
+    "yoga area"
+   ],
+   "lat": 24.865,
+   "lng": 55.139,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://www.emaar.com/cms-media/uploads/GOLF_VALE_ES_BROCHURE_be87237895.pdf"
+  },
+  "positives": [
+   "Floor plan and brochure PDFs downloadable from the developer",
+   "Registered completion matches the advertised Q1 2030"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/golf-vale",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/golf-vale-emaar-south-dubai",
+   "https://www.emaar.com/en/properties/golf-vale-at-emaar-south",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "emaar-valia",
+  "name": "Valia",
+  "developer": "Emaar Properties",
+  "area": "Dubai Creek Harbour",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/valia-tower-dubai-creek-harbour",
+  "docs_url": "https://www.emaar.com/en/properties/valia-at-dubai-creek-harbour",
+  "permit_number": "0290353681",
+  "docs_listed": [
+   "Trakheesi permit 0290353681 with DLD QR, from AED 1,800,000, handover Q3 2030, 80/20 (A1 Properties)",
+   "starting price AED 1,960,000 (emaar.com)",
+   "brochure PDF and floor plan PDF (emaar.com)",
+   "DLD project 4448, 492 units, escrow First Abu Dhabi Bank, 0% at 6 Aug 2026, registered completion 31 Aug 2030 (DLD register mirror)"
+  ],
+  "note": "492-unit tower on a podium in Dubai Creek Harbour; DLD register shows project 4448 (escrow First Abu Dhabi Bank) at 0% in Aug 2026 with registered completion 31 Aug 2030. Emaar quotes from AED 1,960,000, A1 from AED 1,800,000. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1960000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2030-Q3",
+   "permit_claim": true,
+   "permit_number": "0290353681",
+   "plans_published": true,
+   "escrow": "Escrow account at First Abu Dhabi Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 492,
+   "payment_plan": "80/20 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0290353681 with DLD QR on the A1 Properties listing; project registered as DLD project 4448, status Active, registered 25 Mar 2026 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (16 Mar 2026), 0% (6 Aug 2026); registered start 6 Jun 2026. No progress figure on the Emaar page.",
+   "plans": "emaar.com links VALIA_DUBAI_CREEK_HARBOUR_FLOORPLAN.pdf",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4448, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/valia"
+   },
+   {
+    "claim": "Escrow account exists (First Abu Dhabi Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/valia"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 6 Aug 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/valia"
+   },
+   {
+    "claim": "Developer entity registered: Dubai Creek Harbour L.L.C (DLD developer 1224)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/valia"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q3 2030 (A1)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/valia"
+   },
+   {
+    "claim": "Starting price AED 1,800,000 (A1) versus AED 1,960,000 (Emaar) [DLD registered sales median AED 2.3m, AED 2,602 per sq ft (324 sales)]",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/valia-at-dubai-creek-harbour"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/valia-tower-dubai-creek-harbour"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/valia-at-dubai-creek-harbour"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Creek Harbour L.L.C (DLD developer 1224)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2026-06",
+   "handover_promised": "2030-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Aug 2030",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 238,
+   "price_min": 1960000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "80/20 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "adult pool",
+    "kids pool",
+    "padel court",
+    "yoga deck",
+    "private cabana",
+    "outdoor fitness",
+    "splash pad",
+    "communal lawn"
+   ],
+   "lat": 25.194,
+   "lng": 55.352,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://www.emaar.com/cms-media/uploads/VALIA_DUBAI_CREEK_HARBOUR_BROCHURE_d348255309_prod.pdf"
+  },
+  "positives": [
+   "Floor plan and brochure PDFs downloadable from the developer",
+   "Registered completion matches the advertised Q3 2030"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/valia",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/valia-tower-dubai-creek-harbour",
+   "https://www.emaar.com/en/properties/valia-at-dubai-creek-harbour",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "binghatti-skyflame-1",
+  "name": "Binghatti Skyflame 1",
+  "developer": "Binghatti Developers",
+  "area": "Majan",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/binghatti-skyflame-1-majan-dubai",
+  "docs_url": "https://www.binghatti.com/en/projects/binghatti-skyflame",
+  "permit_number": "0413141765",
+  "docs_listed": [
+   "Trakheesi permit 0413141765 with DLD QR, from AED 638,000, 70/30 (A1 Properties)",
+   "studio, 1BR and 2BR floor plans and brochure (binghatti.com)",
+   "completion by 31 December 2027, 20/50/30 plan (binghatti.com FAQ)",
+   "DLD project 4393, 1,407 units, escrow Emirates NBD, 0% at 17 Feb 2026, registered completion 31 Dec 2027 (DLD register mirror)"
+  ],
+  "note": "1,407-unit first tower of the two-tower Skyflame scheme in Majan; DLD register shows project 4393 (escrow Emirates NBD) at 0% at its only inspection (17 Feb 2026) with completion 31 Dec 2027. Developer is under a Moody's downgrade review. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 638000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "0413141765",
+   "plans_published": true,
+   "escrow": "Escrow account at Emirates NBD per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank; company says it holds AED 10.6bn across escrow accounts (group level)",
+   "developer_delivered": "DLD register lists 43 finished Binghatti projects of 79 registered (36 active), read 13 Oct 2026; chairman told Bloomberg 3 projects (AED 1.8bn) were handed over Jun-Aug 2026 and 10 more (AED 7.5bn) are due within 4-5 months (Khaleej Times, 31 Aug 2026)",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 1407,
+   "payment_plan": "20% on booking, 50% during construction, 30% on completion (binghatti.com); A1 lists 70/30",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0413141765 with DLD QR on the A1 Properties listing; project registered as DLD project 4393, status Active, registered 26 Mar 2026 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Emirates NBD; developer page does not name the bank; company says it holds AED 10.6bn across escrow accounts (group level)",
+   "progress": "DLD register: one inspection, 0% on 17 Feb 2026; registered start 1 Feb 2026. No progress figure on the Binghatti page.",
+   "plans": "binghatti.com floor plan section for studio, 1BR and 2BR",
+   "record": "DLD register lists 43 finished Binghatti projects of 79 registered (36 active), read 13 Oct 2026; chairman told Bloomberg 3 projects (AED 1.8bn) were handed over Jun-Aug 2026 and 10 more (AED 7.5bn) are due within 4-5 months (Khaleej Times, 31 Aug 2026)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4393, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-skyflame-1"
+   },
+   {
+    "claim": "Escrow account exists (Emirates NBD)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-skyflame-1"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 17 Feb 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-skyflame-1"
+   },
+   {
+    "claim": "Developer entity registered: Binghatti Developers Fze (DLD developer 1051)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-skyflame-1"
+   },
+   {
+    "claim": "Developer track record: 43 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/binghatti"
+   },
+   {
+    "claim": "Completion by 31 Dec 2027 [registered date matches, but the building had not started at the last inspection]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-skyflame-1"
+   },
+   {
+    "claim": "Group holds AED 10.6bn in escrow accounts [chairman statement reported by Khaleej Times]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khaleejtimes.com/business/binghatti-dismisses-debt-fears-points-to-dh106-billion-in-escrow-accounts"
+   },
+   {
+    "claim": "Binghatti Holding liquidity weakened; Ba3 ratings on review for downgrade",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tradingview.com/news/reuters.com,2026-08-11:newsml_Zawb7bptR:0-moody-s-puts-dubai-developer-binghatti-ratings-on-review-for-downgrade/"
+   },
+   {
+    "claim": "Registered sales median AED 570k, AED 1,378 per sq ft (760 sales)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-skyflame-1"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/binghatti-skyflame-1-majan-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.binghatti.com/en/projects/binghatti-skyflame"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Binghatti Developers Fze (DLD developer 1051)",
+   "developer_projects_delivered": 43,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Binghatti Holding Ltd rated Ba3 by Moody's (on review for downgrade since Aug 2026); USD 500m sukuk due Feb 2027; IPO plans suspended (Business Times, 2 Sep 2026)",
+   "construction_start": "2026-02",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Dec 2027",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "2BR royal suite",
+    "retail"
+   ],
+   "size_min_m2": 37,
+   "size_max_m2": 208,
+   "price_min": 638000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% on booking, 50% during construction, 30% on completion (binghatti.com); A1 lists 70/30",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans published by the developer",
+   "30% of the price due on completion"
+  ],
+  "flags": [
+   {
+    "text": "Moody's placed Binghatti Holding's Ba3 ratings on review for downgrade on 11 Aug 2026, citing weaker liquidity (unrestricted cash about AED 393m at Jun 2026) ahead of a USD 500m sukuk due Feb 2027; Fitch had placed its debt on Rating Watch Negative in Mar 2026. The chairman disputes the concerns and cites AED 10.6bn held in escrow accounts.",
+    "source": "https://www.tradingview.com/news/reuters.com,2026-08-11:newsml_Zawb7bptR:0-moody-s-puts-dubai-developer-binghatti-ratings-on-review-for-downgrade/"
+   }
+  ],
+  "sources": [
+   "https://dubairealestateiq.com/project/binghatti-skyflame-1",
+   "https://dubairealestateiq.com/developer/binghatti",
+   "https://a1properties.ae/project-details/binghatti-skyflame-1-majan-dubai",
+   "https://www.binghatti.com/en/projects/binghatti-skyflame",
+   "https://a1properties.ae/project-details/binghatti-skyflame-1-majan-dubai/pdf",
+   "https://www.khaleejtimes.com/business/binghatti-dismisses-debt-fears-points-to-dh106-billion-in-escrow-accounts",
+   "https://www.tradingview.com/news/reuters.com,2026-08-11:newsml_Zawb7bptR:0-moody-s-puts-dubai-developer-binghatti-ratings-on-review-for-downgrade/",
+   "https://www.businesstimes.com.sg/property/dubai-developer-binghatti-talks-multibillion-dollar-pact-chairman"
+  ]
+ },
+ {
+  "slug": "binghatti-vintage",
+  "name": "Binghatti Vintage",
+  "developer": "Binghatti Developers",
+  "area": "Majan",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/binghatti-vintage-majan-dubai",
+  "docs_url": "https://www.binghatti.com/en/projects/binghatti-vintage",
+  "permit_number": "2079306084",
+  "docs_listed": [
+   "Trakheesi permit 2079306084 with DLD QR, from AED 674,999, handover Q1 2027, 60/40 (A1 Properties)",
+   "studio, 1BR and 2BR floor plans and brochure; 36 residential floors (binghatti.com)",
+   "DLD project 4102, 1,572 units, escrow Dubai Islamic Bank, 0% at 23 Sep 2025, registered completion 31 Mar 2027 (DLD register mirror)"
+  ],
+  "note": "36-floor, 1,572-unit tower in Majan; DLD register shows project 4102 (escrow Dubai Islamic Bank) with completion 31 Mar 2027 but only one inspection, 0% on 23 Sep 2025, so no official progress for a year. Developer is under a Moody's downgrade review. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 674999,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "2079306084",
+   "plans_published": true,
+   "escrow": "Escrow account at Dubai Islamic Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank; company says it holds AED 10.6bn across escrow accounts (group level)",
+   "developer_delivered": "DLD register lists 43 finished Binghatti projects of 79 registered (36 active), read 13 Oct 2026; chairman told Bloomberg 3 projects (AED 1.8bn) were handed over Jun-Aug 2026 and 10 more (AED 7.5bn) are due within 4-5 months (Khaleej Times, 31 Aug 2026)",
+   "yield_pct": null,
+   "progress_pct": 0,
+   "progress_updates": true,
+   "units": 1572,
+   "payment_plan": "60/40 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 2079306084 with DLD QR on the A1 Properties listing; project registered as DLD project 4102, status Active, registered 5 Dec 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Dubai Islamic Bank; developer page does not name the bank; company says it holds AED 10.6bn across escrow accounts (group level)",
+   "progress": "DLD register: one inspection, 0% on 23 Sep 2025; registered start 1 Oct 2025. No newer inspection and no developer progress figure found.",
+   "plans": "binghatti.com floor plan section for studio, 1BR and 2BR",
+   "record": "DLD register lists 43 finished Binghatti projects of 79 registered (36 active), read 13 Oct 2026; chairman told Bloomberg 3 projects (AED 1.8bn) were handed over Jun-Aug 2026 and 10 more (AED 7.5bn) are due within 4-5 months (Khaleej Times, 31 Aug 2026)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 4102, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-vintage"
+   },
+   {
+    "claim": "Escrow account exists (Dubai Islamic Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-vintage"
+   },
+   {
+    "claim": "Construction at 0% (DLD inspection 23 Sep 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-vintage"
+   },
+   {
+    "claim": "Developer entity registered: Binghatti Developers Fze (DLD developer 1051)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-vintage"
+   },
+   {
+    "claim": "Developer track record: 43 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/binghatti"
+   },
+   {
+    "claim": "Handover Q1 2027 [registered date matches, but no inspection after 0% in Sep 2025 is on the register, so delivery in 5 months cannot be checked]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-vintage"
+   },
+   {
+    "claim": "Group holds AED 10.6bn in escrow accounts",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khaleejtimes.com/business/binghatti-dismisses-debt-fears-points-to-dh106-billion-in-escrow-accounts"
+   },
+   {
+    "claim": "Binghatti Holding liquidity weakened; Ba3 ratings on review for downgrade",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tradingview.com/news/reuters.com,2026-08-11:newsml_Zawb7bptR:0-moody-s-puts-dubai-developer-binghatti-ratings-on-review-for-downgrade/"
+   },
+   {
+    "claim": "Registered sales median AED 710k, AED 1,861 per sq ft (1,509 sales)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/binghatti-vintage"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/binghatti-vintage-majan-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.binghatti.com/en/projects/binghatti-vintage"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Binghatti Developers Fze (DLD developer 1051)",
+   "developer_projects_delivered": 43,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Binghatti Holding Ltd rated Ba3 by Moody's (on review for downgrade since Aug 2026); USD 500m sukuk due Feb 2027; IPO plans suspended (Business Times, 2 Sep 2026)",
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Mar 2027",
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 211,
+   "price_min": 674999,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "60/40 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "padel and basketball courts",
+    "gym",
+    "swimming pools",
+    "jogging tracks",
+    "outdoor cinema",
+    "family sitting zone"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans published by the developer",
+   "Escrow bank named on the DLD register"
+  ],
+  "flags": [
+   {
+    "text": "Moody's placed Binghatti Holding's Ba3 ratings on review for downgrade on 11 Aug 2026, citing weaker liquidity (unrestricted cash about AED 393m at Jun 2026) ahead of a USD 500m sukuk due Feb 2027; Fitch had placed its debt on Rating Watch Negative in Mar 2026. The chairman disputes the concerns and cites AED 10.6bn held in escrow accounts.",
+    "source": "https://www.tradingview.com/news/reuters.com,2026-08-11:newsml_Zawb7bptR:0-moody-s-puts-dubai-developer-binghatti-ratings-on-review-for-downgrade/"
+   }
+  ],
+  "sources": [
+   "https://dubairealestateiq.com/project/binghatti-vintage",
+   "https://dubairealestateiq.com/developer/binghatti",
+   "https://a1properties.ae/project-details/binghatti-vintage-majan-dubai",
+   "https://www.binghatti.com/en/projects/binghatti-vintage",
+   "https://www.khaleejtimes.com/business/binghatti-dismisses-debt-fears-points-to-dh106-billion-in-escrow-accounts",
+   "https://www.tradingview.com/news/reuters.com,2026-08-11:newsml_Zawb7bptR:0-moody-s-puts-dubai-developer-binghatti-ratings-on-review-for-downgrade/",
+   "https://www.businesstimes.com.sg/property/dubai-developer-binghatti-talks-multibillion-dollar-pact-chairman"
+  ]
+ },
+ {
+  "slug": "danube-bayz-101",
+  "name": "Bayz 101 by Danube",
+  "developer": "Danube Properties",
+  "area": "Business Bay",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/bayz-101-business-bay-dubai",
+  "docs_url": "https://danubeproperties.com/portfolio/bayz101/",
+  "permit_number": "0064157958",
+  "docs_listed": [
+   "Trakheesi permit 0064157958 with DLD QR, from AED 1,175,000, handover Q2 2028 (A1 Properties)",
+   "starting price AED 1.175M, completion June 2028, 30/70 plan, 1,346 apartments (danubeproperties.com)",
+   "virtual tour and brochure; no floor plans visible (danubeproperties.com)",
+   "DLD project 2927, 1,346 units, escrow First Abu Dhabi Bank, 10% built at 12 Aug 2026, no completion date on the register (DLD register mirror)"
+  ],
+  "note": "1,346-unit Business Bay tower; DLD register shows project 2927 (escrow First Abu Dhabi Bank) only 10% built on 12 Aug 2026, two years after its registered start, and lists no completion date, against Danube's June 2028 promise. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1175000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "0064157958",
+   "plans_published": false,
+   "escrow": "Escrow account at First Abu Dhabi Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "yield_pct": null,
+   "progress_pct": 10,
+   "progress_updates": true,
+   "developer_delivered": "DLD register lists 19 finished Danube projects of 42 registered (23 active), read 13 Oct 2026; Danube says it will hand over 11 projects in 12 months incl. Elitz 1 and 3, Sportz, Viewz 1 and 2, Oceanz 1-3, Fashionz, Oasiz 1 and 2 (Gulf News GN Focus, 30 Jul 2026)",
+   "units": 1346,
+   "payment_plan": "30/70 per Danube page; A1 lists 73/1",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0064157958 with DLD QR on the A1 Properties listing; project registered as DLD project 2927, status Active, registered 29 Feb 2024 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank; developer page does not name the bank",
+   "progress": "DLD inspections from 0% (19 Jan 2024) to 10% (12 Aug 2026) over nine inspections. No progress figure on the Danube page.",
+   "plans": "No floor plans found on the developer or agency pages checked",
+   "record": "DLD register lists 19 finished Danube projects of 42 registered (23 active), read 13 Oct 2026; Danube says it will hand over 11 projects in 12 months incl. Elitz 1 and 3, Sportz, Viewz 1 and 2, Oceanz 1-3, Fashionz, Oasiz 1 and 2 (Gulf News GN Focus, 30 Jul 2026)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 2927, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bayz-101-by-danube"
+   },
+   {
+    "claim": "Escrow account exists (First Abu Dhabi Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bayz-101-by-danube"
+   },
+   {
+    "claim": "Construction at 10% (DLD inspection 12 Aug 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bayz-101-by-danube"
+   },
+   {
+    "claim": "Developer entity registered: Danube Properties Development L.L.C (DLD developer 1009)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bayz-101-by-danube"
+   },
+   {
+    "claim": "Developer track record: 19 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/danube"
+   },
+   {
+    "claim": "Completion June 2028 [DLD register lists no completion date; 10% built after 25 months makes June 2028 demanding]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dubairealestateiq.com/project/bayz-101-by-danube"
+   },
+   {
+    "claim": "1,346 apartments",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/bayz-101-by-danube"
+   },
+   {
+    "claim": "Payment plan 30/70 (Danube) versus 73/1 (A1)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://danubeproperties.com/portfolio/bayz101/"
+   },
+   {
+    "claim": "Construction progressing on schedule (aggregator) [DLD shows 0.9 points gained between Apr and Aug 2026]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aigentsrealty.com/areas/business-bay/bayz-101"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/bayz-101-business-bay-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://danubeproperties.com/portfolio/bayz101/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Danube Properties Development L.L.C (DLD developer 1009)",
+   "developer_projects_delivered": 19,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-07",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 169,
+   "price_min": 1175000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "30/70 per Danube page; A1 lists 73/1",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Nine DLD inspections on record",
+   "Unit count on the developer page matches the register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/bayz-101-by-danube",
+   "https://dubairealestateiq.com/developer/danube",
+   "https://a1properties.ae/project-details/bayz-101-business-bay-dubai",
+   "https://danubeproperties.com/portfolio/bayz101/",
+   "https://aigentsrealty.com/areas/business-bay/bayz-101",
+   "https://gulfnews.com/gn-focus/company-news/danube-properties-to-deliver-11-dubai-projects-in-12-months-marking-major-milestone-1.500625819"
+  ]
+ },
+ {
+  "slug": "emaar-address-residences-dch",
+  "name": "Address Residences Dubai Creek Harbour",
+  "developer": "Emaar Properties",
+  "area": "Dubai Creek Harbour",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/address-residences-dubai-creek-harbour",
+  "docs_url": null,
+  "permit_number": "71646300344",
+  "docs_listed": [
+   "Trakheesi permit 71646300344 with DLD QR, from AED 2,000,000, handover Q1 2029, 80/20 (A1 Properties)",
+   "key facts: 1-3BR apartments, 3BR townhouses, starting price AED 2,000,000 (emaar.com)",
+   "floor plan PDF (emaar.com)",
+   "DLD project 3229, 326 units, escrow Emirates NBD, 26.44% built at 4 May 2026, registered completion 31 Jan 2029 (DLD register mirror)"
+  ],
+  "note": "Address-branded 326-unit tower in Dubai Creek Harbour; DLD register shows project 3229 at 26.44% built on 4 May 2026, registered completion 31 Jan 2029, escrow at Emirates NBD. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2000000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": "71646300344",
+   "plans_published": true,
+   "escrow": "Escrow account at Emirates NBD per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 26.44,
+   "progress_updates": true,
+   "units": 326,
+   "payment_plan": "80/20 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 71646300344 with DLD QR on the A1 Properties listing; project registered as DLD project 3229, status Active, registered 20 Aug 2024 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Emirates NBD; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (12 Aug 2024), 5.66% (14 May 2025), 9.46% (3 Sep 2025), 16.82% (5 Jan 2026), 26.44% (4 May 2026). No progress figure on the Emaar page.",
+   "plans": "emaar.com links ADDRESS-RESIDENCES_floorplan.pdf",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3229, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/address-residences-l-dubai-creek-harbour"
+   },
+   {
+    "claim": "Escrow account exists (Emirates NBD)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/address-residences-l-dubai-creek-harbour"
+   },
+   {
+    "claim": "Construction at 26.44% (DLD inspection 4 May 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/address-residences-l-dubai-creek-harbour"
+   },
+   {
+    "claim": "Developer entity registered: Dubai Creek Harbour L.L.C (DLD developer 1224)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/address-residences-l-dubai-creek-harbour"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q1 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/address-residences-l-dubai-creek-harbour"
+   },
+   {
+    "claim": "Starting price AED 2,000,000 [DLD registered sales median AED 3.4m, AED 2,945 per sq ft (32 sales)]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/address-residences-at-dubai-creek-harbour"
+   },
+   {
+    "claim": "Address hotel brand residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/address-residences-at-dubai-creek-harbour"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/address-residences-dubai-creek-harbour"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/address-residences-dubai-creek-harbour"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Creek Harbour L.L.C (DLD developer 1224)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2024-12",
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Jan 2029",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR townhouse"
+   ],
+   "size_min_m2": 68,
+   "size_max_m2": 330,
+   "price_min": 2000000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "80/20 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Address (Emaar Hospitality)",
+   "amenities": [],
+   "lat": 25.207,
+   "lng": 55.35,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plan PDF published by the developer",
+   "Progress accelerating: about 10 points per DLD inspection in 2026"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/address-residences-l-dubai-creek-harbour",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/address-residences-dubai-creek-harbour",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "emaar-club-drive",
+  "name": "Club Drive",
+  "developer": "Emaar Properties",
+  "area": "Dubai Hills Estate",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/club-drive-dubai-hills-estate-dubai",
+  "docs_url": null,
+  "permit_number": "1029097304",
+  "docs_listed": [
+   "Trakheesi permit 1029097304 with DLD QR, from AED 1,500,000, handover Q1 2028, 90/10 (A1 Properties)",
+   "starting price AED 1,500,000 (emaar.com)",
+   "brochure PDF and floor plan PDF (emaar.com)",
+   "DLD project 2769, two towers, 529 units, escrow Mashreq Bank, 75.08% built at 4 May 2026, no completion date on the register (DLD register mirror)"
+  ],
+  "note": "Two-tower, 529-unit project in Dubai Hills Estate; DLD register shows project 2769 at 75.08% built on 4 May 2026 with escrow at Mashreq Bank; the register lists no completion date, A1 states Q1 2028. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1500000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "1029097304",
+   "plans_published": true,
+   "escrow": "Escrow account at Mashreq Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 75.08,
+   "progress_updates": true,
+   "units": 529,
+   "payment_plan": "90/10 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1029097304 with DLD QR on the A1 Properties listing; project registered as DLD project 2769, status Active, registered 25 Sep 2023 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Mashreq Bank; developer page does not name the bank",
+   "progress": "Nine DLD inspections from 0% (11 Sep 2023) to 75.08% (4 May 2026). No progress figure on the Emaar page.",
+   "plans": "emaar.com links CLUB-DRIVE_floorplan.pdf",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 2769, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Escrow account exists (Mashreq Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Construction at 75.08% (DLD inspection 4 May 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Developer entity registered: Dubai Hills Estate L.L.C (DLD developer 984)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q1 2028 (A1) [DLD register lists no completion date; 75% built by May 2026 is consistent with an early 2028 or earlier finish]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Progress 0% (Binayah page, undated) [DLD 75.08% at 4 May 2026]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Registered sales median AED 1.6m, AED 2,173 per sq ft (20 sales)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/club-drive"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/club-drive-dubai-hills-estate-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/club-drive-dubai-hills-estate-dubai"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Hills Estate L.L.C (DLD developer 984)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2024-01",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 67,
+   "size_max_m2": 182,
+   "price_min": 1500000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "90/10 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": 25.123,
+   "lng": 55.258,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://www.emaar.com/cms-media/uploads/CLUB-DRIVE_brochure.pdf"
+  },
+  "positives": [
+   "Most advanced project in this batch: 75% built at the May 2026 DLD inspection",
+   "Floor plan and brochure PDFs published by the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/club-drive",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/club-drive-dubai-hills-estate-dubai",
+   "https://www.binayah.com/dubai-construction-updates/club-drive",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "emaar-rosehill",
+  "name": "Rosehill",
+  "developer": "Emaar Properties",
+  "area": "Dubai Hills Estate",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/rosehill-dubai-hills-estate-dubai",
+  "docs_url": null,
+  "permit_number": "1707143558",
+  "docs_listed": [
+   "Trakheesi permit 1707143558 with DLD QR, from AED 1,650,000, handover Q2 2029, 80/20 (A1 Properties)",
+   "starting price AED 1.6M; available units from AED 1,756,888; 5 units available; 820 to 2,072 sq ft (emaar.com)",
+   "brochure PDF and floor plan PDF (emaar.com)",
+   "DLD project 3834, three blocks, 555 units, escrow First Abu Dhabi Bank, 7.83% built at 2 Jun 2026, registered completion 30 Jun 2029 (DLD register mirror)"
+  ],
+  "note": "Three-block, 555-unit project in Dubai Hills Estate; DLD register shows project 3834 at 7.83% built on 2 Jun 2026, registered completion 30 Jun 2029, escrow at First Abu Dhabi Bank. Payment plan expects 40% completion by Feb 2027. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1600000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q2",
+   "permit_claim": true,
+   "permit_number": "1707143558",
+   "plans_published": true,
+   "escrow": "Escrow account at First Abu Dhabi Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 7.83,
+   "progress_updates": true,
+   "units": 555,
+   "payment_plan": "80/20 (A1 Properties); instalments tied to 40% completion (Feb 2027) and 100% completion (Jun 2029) per agency page",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1707143558 with DLD QR on the A1 Properties listing; project registered as DLD project 3834, status Active, registered 20 Jun 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (16 Jun 2025), 6.5% (7 Jan 2026), 7.83% (2 Jun 2026). No progress figure on the Emaar page.",
+   "plans": "emaar.com links ROSEHILL_floorplan.pdf",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3834, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/rosehill"
+   },
+   {
+    "claim": "Escrow account exists (First Abu Dhabi Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/rosehill"
+   },
+   {
+    "claim": "Construction at 7.83% (DLD inspection 2 Jun 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/rosehill"
+   },
+   {
+    "claim": "Developer entity registered: Dubai Hills Estate L.L.C (DLD developer 984)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/rosehill"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q2 2029 (Jun 2029)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/rosehill"
+   },
+   {
+    "claim": "Payment milestone at 40% construction completion expected Feb 2027 [DLD shows 7.83% in Jun 2026, gaining only 1.3 points Jan to Jun 2026]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+   },
+   {
+    "claim": "Starting price AED 1.6M (Emaar headline) [available units on the same page start at AED 1,756,888; DLD registered sales median AED 1.7m (166 sales)]",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/rosehill-dubai-hills-estate"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/rosehill-dubai-hills-estate-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/rosehill-dubai-hills-estate-dubai"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Hills Estate L.L.C (DLD developer 984)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2025-08",
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "30 Jun 2029",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 69,
+   "size_max_m2": 192,
+   "price_min": 1600000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "80/20 (A1 Properties); instalments tied to 40% completion (Feb 2027) and 100% completion (Jun 2029) per agency page",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": 25.13,
+   "lng": 55.263,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://www.emaar.com/cms-media/uploads/ROSEHILL_brochure.pdf"
+  },
+  "positives": [
+   "Floor plan and brochure PDFs published by the developer",
+   "Payment plan linked to construction milestones"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/rosehill",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/rosehill-dubai-hills-estate-dubai",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "emaar-montiva",
+  "name": "Montiva by Vida",
+  "developer": "Emaar Properties",
+  "area": "Dubai Creek Harbour",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/montiva-by-vida-dubai-creek-harbour",
+  "docs_url": null,
+  "permit_number": "0767549096",
+  "docs_listed": [
+   "Trakheesi permit 0767549096 with DLD QR, from AED 1,910,000, handover Q3 2029, 80/20 (A1 Properties)",
+   "starting price AED 1.91M; available units from AED 1,916,888; 9 units available; 755 to 1,246 sq ft (emaar.com)",
+   "brochure PDF and floor plan PDF (emaar.com)",
+   "DLD project 3744, 475 units, escrow Emirates Islamic Bank, 5.85% built at 22 Apr 2026, registered completion 30 Sep 2029 (DLD register mirror)"
+  ],
+  "note": "Vida-branded 475-unit tower in Dubai Creek Harbour; DLD register shows project 3744 at 5.85% built on 22 Apr 2026, registered completion 30 Sep 2029, escrow at Emirates Islamic Bank. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 1910000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2029-Q3",
+   "permit_claim": true,
+   "permit_number": "0767549096",
+   "plans_published": true,
+   "escrow": "Escrow account at Emirates Islamic Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 5.85,
+   "progress_updates": true,
+   "units": 475,
+   "payment_plan": "80/20 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 0767549096 with DLD QR on the A1 Properties listing; project registered as DLD project 3744, status Active, registered 16 May 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Emirates Islamic Bank; developer page does not name the bank",
+   "progress": "DLD inspections: 0% (13 May 2025), 3.47% (20 Jan 2026), 5.85% (22 Apr 2026). No progress figure on the Emaar page.",
+   "plans": "emaar.com links montiva-by-vida-at-dubai-creek-harbour-floor-plans.pdf",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3744, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/montiva"
+   },
+   {
+    "claim": "Escrow account exists (Emirates Islamic Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/montiva"
+   },
+   {
+    "claim": "Construction at 5.85% (DLD inspection 22 Apr 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/montiva"
+   },
+   {
+    "claim": "Developer entity registered: Dubai Creek Harbour L.L.C (DLD developer 1224)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/montiva"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q3 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/montiva"
+   },
+   {
+    "claim": "Starting price AED 1.91M [developer and A1 agree; DLD registered sales median AED 2.9m, AED 2,525 per sq ft (243 sales)]",
+    "status": "verified",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/montiva-by-vida-at-dubai-creek-harbour"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/montiva-by-vida-dubai-creek-harbour"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/montiva-by-vida-dubai-creek-harbour"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Creek Harbour L.L.C (DLD developer 1224)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2025-10",
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "30 Sep 2029",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 178,
+   "price_min": 1910000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "80/20 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Vida (Emaar Hospitality)",
+   "amenities": [],
+   "lat": 25.203,
+   "lng": 55.36,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": "https://www.emaar.com/cms-media/uploads/MONTIVA-BY-VIDA_brochure.pdf"
+  },
+  "positives": [
+   "Floor plan and brochure PDFs published by the developer",
+   "Developer and agent prices match"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/montiva",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/montiva-by-vida-dubai-creek-harbour",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "emaar-seapoint",
+  "name": "Seapoint Residences",
+  "developer": "Emaar Properties",
+  "area": "Emaar Beachfront",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/seapoint-residences-emaar-beachfront-dubai",
+  "docs_url": null,
+  "permit_number": "1739915121",
+  "docs_listed": [
+   "Trakheesi permit 1739915121 with DLD QR, from AED 3,480,000, handover Q1 2028, 90/10 (A1 Properties)",
+   "no current Emaar project page found (not in the emaar.com property sitemap; guessed URLs return 404)",
+   "DLD project 2633, two towers and podium, 674 units, escrow First Abu Dhabi Bank, 36.78% built at 24 Jun 2026, registered completion 31 Mar 2028 (DLD register mirror)"
+  ],
+  "note": "Two-tower, 674-unit project at Emaar Beachfront; DLD register shows project 2633 at 36.78% built on 24 Jun 2026 with registered completion 31 Mar 2028, escrow at First Abu Dhabi Bank. Emaar no longer lists a project page, so only agency pages market it. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 3480000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "1739915121",
+   "plans_published": false,
+   "escrow": "Escrow account at First Abu Dhabi Bank per the DLD project register (mirrored on dubairealestateiq.com); no developer page found",
+   "developer_delivered": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "yield_pct": null,
+   "progress_pct": 36.78,
+   "progress_updates": true,
+   "units": 674,
+   "payment_plan": "90/10 (A1 Properties)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1739915121 with DLD QR on the A1 Properties listing; project registered as DLD project 2633, status Active, registered 16 Apr 2023 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank First Abu Dhabi Bank; no developer page found",
+   "progress": "Nine DLD inspections from 0% (7 Apr 2023) to 36.78% (24 Jun 2026). No developer progress page found.",
+   "plans": "No floor plans found on the developer or agency pages checked",
+   "record": "DLD register lists 199 finished Emaar projects of 358 registered (143 active, 16 cancelled), read 13 Oct 2026; agency page states 118,400+ residential units completed since 2002",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 2633, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/seapoint"
+   },
+   {
+    "claim": "Escrow account exists (First Abu Dhabi Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/seapoint"
+   },
+   {
+    "claim": "Construction at 36.78% (DLD inspection 24 Jun 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/seapoint"
+   },
+   {
+    "claim": "Developer entity registered: Emaar Development P.J.S.C. (DLD developer 1211)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/seapoint"
+   },
+   {
+    "claim": "Developer track record: 199 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/emaar"
+   },
+   {
+    "claim": "Handover Q1 2028 [at 36.78% in Jun 2026, 63% remains for the 21 months to the registered date]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/seapoint"
+   },
+   {
+    "claim": "Starting price AED 3,480,000 (A1) [DLD registered sales median AED 5.1m, AED 4,463 per sq ft (20 sales)]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/seapoint-residences-emaar-beachfront-dubai"
+   },
+   {
+    "claim": "Project marketed by Emaar [no Seapoint page in Emaar's property sitemap; DLD register names Emaar Development P.J.S.C.]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaar.com/sitemap-properties-en.xml"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/seapoint-residences-emaar-beachfront-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/seapoint-residences-emaar-beachfront-dubai"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Emaar Development P.J.S.C. (DLD developer 1211)",
+   "developer_projects_delivered": 199,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emaar Properties PJSC (public joint stock company, per emaar.com)",
+   "construction_start": "2023-09",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Mar 2028",
+   "unit_types": [
+    "apartments",
+    "penthouses"
+   ],
+   "size_min_m2": 53,
+   "size_max_m2": 1090,
+   "price_min": 3480000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "90/10 (A1 Properties)",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Progress accelerating: about 11 points per DLD inspection in 2026",
+   "Registered completion matches the advertised Q1 2028"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/seapoint",
+   "https://dubairealestateiq.com/developer/emaar",
+   "https://a1properties.ae/project-details/seapoint-residences-emaar-beachfront-dubai",
+   "https://www.emaar.com/sitemap-properties-en.xml",
+   "https://www.emaar.com/en/our-communities/emaar-beachfront",
+   "https://off-planproperties.ae/projects/rosehill-emaar-dubai-hills/"
+  ]
+ },
+ {
+  "slug": "meraas-city-walk-crestlane",
+  "name": "City Walk Crestlane",
+  "developer": "Meraas",
+  "area": "City Walk",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/city-walk-crestlane-dubai",
+  "docs_url": "https://meraas.com/en/project/city-walk-crestlane",
+  "permit_number": "1098259952",
+  "docs_listed": [
+   "Trakheesi permit 1098259952 with DLD QR, from AED 2,600,000, handover Q4 2028, 75/25 (A1 Properties)",
+   "from AED 2.70M, 1-4BR; development progression 6% overall, 0% building works, enabling and piling works (meraas.com)",
+   "interactive unit layouts 1BR to 4BR duplex (meraas.com)",
+   "payment plan PDF: starting prices 1BR AED 2.6M to 4BR duplex AED 16.3M, estimated completion Oct 2028 (meraas.com)",
+   "AED 590m main contract awarded to Parkway International for Phase 3 (394 apartments, 4 buildings), completion anticipated Q3 2028 (Meraas, 7 Sep 2026)",
+   "DLD projects 3530 and 3531 (Crestlane 2 and 3), escrow Abu Dhabi Commercial Bank, 6.83% and 4.59% built, registered completion 10 Dec 2028 (DLD register mirror)"
+  ],
+  "note": "Multi-phase City Walk community; the A1 listing (AED 2.6M, 75/25, Q4 2028) matches the first release, registered as Crestlane 2 and 3 (DLD 3530 and 3531, 398 units, escrow Abu Dhabi Commercial Bank) with completion 10 Dec 2028 and 4.6 to 6.8% built; main contract awarded Sep 2026. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2700000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "1098259952",
+   "plans_published": true,
+   "escrow": "Escrow account at Abu Dhabi Commercial Bank per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "yield_pct": null,
+   "progress_pct": 6.83,
+   "progress_updates": true,
+   "developer_delivered": "DLD register lists 21 finished Meraas projects of 30 registered (9 active), read 13 Oct 2026; Meraas is a member of Dubai Holding Real Estate (Meraas press release, 7 Sep 2026)",
+   "units": 398,
+   "payment_plan": "20% on booking, 55% in six instalments during construction, 25% on handover (Meraas payment plan PDF, estimated completion Oct 2028); A1 lists 75/25",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 1098259952 with DLD QR on the A1 Properties listing; project registered as DLD project 3530, status Active, registered 6 Feb 2025 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Abu Dhabi Commercial Bank; developer page does not name the bank",
+   "progress": "DLD register: Crestlane 2 (3530) 6.83% at 8 Oct 2026, Crestlane 3 (3531) 4.59% at 15 Sep 2026; Crestlane 1 (3801) 0.19%, Crestlane 4 and 5 0.01%. Meraas page shows 6% overall, building works 0%.",
+   "plans": "meraas.com unit layout tool for 1BR, 2BR, 3BR, 4BR and 4BR duplex",
+   "record": "DLD register lists 21 finished Meraas projects of 30 registered (9 active), read 13 Oct 2026; Meraas is a member of Dubai Holding Real Estate (Meraas press release, 7 Sep 2026)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3530, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-2"
+   },
+   {
+    "claim": "Escrow account exists (Abu Dhabi Commercial Bank)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-2"
+   },
+   {
+    "claim": "Construction at 6.83% (DLD inspection 8 Oct 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-2"
+   },
+   {
+    "claim": "Developer entity registered: Citywalk Residential 1 L.L.C (DLD developer 1109)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-2"
+   },
+   {
+    "claim": "Developer track record: 21 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/meraas"
+   },
+   {
+    "claim": "Estimated completion Oct 2028 / Q4 2028 [DLD 10 Dec 2028 for Crestlane 2 and 3; other phases register Sep 2029 (Crestlane 1) and Apr 2030 (Crestlane 4 and 5)]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-2"
+   },
+   {
+    "claim": "Development progression 6% overall [DLD 6.83% (Crestlane 2) and 4.59% (Crestlane 3)]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-2"
+   },
+   {
+    "claim": "Main construction contract (AED 590m, Parkway) awarded for Phase 3, completion Q3 2028 [developer press release]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://meraas.com/en/latest-post/news/meraas-awards-over-aed-590-million-main-construction-contract-city-walk-crestlane"
+   },
+   {
+    "claim": "Registered sales median AED 3.6m to 3.8m in other Crestlane phases",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/city-walk-crestlane-4"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/city-walk-crestlane-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://meraas.com/en/project/city-walk-crestlane"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Citywalk Residential 1 L.L.C (DLD developer 1109)",
+   "developer_projects_delivered": 21,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Member of Dubai Holding Real Estate (state-linked group); no listing",
+   "construction_start": "2025-04",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "10 Dec 2028",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR + maid",
+    "3BR",
+    "4BR",
+    "4BR duplex"
+   ],
+   "size_min_m2": 72,
+   "size_max_m2": 431,
+   "price_min": 2700000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% on booking, 55% in six instalments during construction, 25% on handover (Meraas payment plan PDF, estimated completion Oct 2028); A1 lists 75/25",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "water features",
+    "swimming pools",
+    "sport courts",
+    "kids play areas",
+    "outdoor fitness",
+    "events lawns",
+    "jogging tracks",
+    "floating clubhouse"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer publishes a progress figure that matches the DLD register",
+   "Payment plan PDF with dated instalments and estimated completion",
+   "Main construction contract award disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/city-walk-crestlane-2",
+   "https://dubairealestateiq.com/developer/meraas",
+   "https://a1properties.ae/project-details/city-walk-crestlane-dubai",
+   "https://meraas.com/en/project/city-walk-crestlane",
+   "https://dubairealestateiq.com/project/city-walk-crestlane-3",
+   "https://dubairealestateiq.com/project/city-walk-crestlane-1",
+   "https://dubairealestateiq.com/project/city-walk-crestlane-4",
+   "https://dubairealestateiq.com/project/city-walk-crestlane-5",
+   "https://meraas.com/sites/default/files/2025-01/City%20Walk%20Crestlane%20-%20Payment%20Plan_1.pdf",
+   "https://meraas.com/en/latest-post/news/meraas-awards-over-aed-590-million-main-construction-contract-city-walk-crestlane"
+  ]
+ },
+ {
+  "slug": "damac-volta",
+  "name": "Volta Tower",
+  "developer": "DAMAC Properties",
+  "area": "Downtown Dubai",
+  "country": "UAE",
+  "market": "Dubai",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://a1properties.ae/project-details/volta-tower-downtown-dubai",
+  "docs_url": "https://www.damacproperties.com/en/projects/volta/",
+  "permit_number": "2094833993",
+  "docs_listed": [
+   "Trakheesi permit 2094833993 with DLD QR, from AED 2,500,000, handover Q2 2028, 80/20 (A1 Properties)",
+   "handover Q2 2028, starting price on request, 1% payment plan (damacproperties.com, via search result)",
+   "floor plans per unit type; construction start 14 Dec 2023, expected completion May 2028 (Property Finder)",
+   "DLD project 2782, 417 units, escrow Emirates NBD, 29.26% built at 18 Aug 2026, registered completion 31 Dec 2027 (DLD register mirror)"
+  ],
+  "note": "417-unit wellness-themed tower on Sheikh Zayed Road (Downtown); DLD register shows project 2782 at 29.26% built on 18 Aug 2026 with escrow at Emirates NBD; the registered completion of 31 Dec 2027 is earlier than the Q2 2028 DAMAC markets, and 71% remains to be built. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 2500000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "2094833993",
+   "plans_published": true,
+   "escrow": "Escrow account at Emirates NBD per the DLD project register (mirrored on dubairealestateiq.com); developer page does not name the bank",
+   "developer_delivered": "DLD register lists 145 finished DAMAC projects of 301 registered (119 active, 37 cancelled), read 13 Oct 2026; DAMAC states ~50,000 units delivered since 2002 and 8,800 handovers in 2026 (TradeArabia, 9 Jul 2026)",
+   "yield_pct": null,
+   "progress_pct": 29.26,
+   "progress_updates": true,
+   "units": 417,
+   "payment_plan": "20% on booking, staggered 1% monthly instalments, 40% on handover (agency listings); DAMAC page shows \"1%\" plan",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Trakheesi advertising permit 2094833993 with DLD QR on the A1 Properties listing; project registered as DLD project 2782, status Active, registered 27 Sep 2023 (DLD register via dubairealestateiq.com)",
+   "escrow": "DLD register: escrow account bank Emirates NBD; developer page does not name the bank",
+   "progress": "Eight DLD inspections from 0% (14 Sep 2023) to 29.26% (18 Aug 2026). No progress figure found on DAMAC material.",
+   "plans": "Property Finder project page shows floor plans per unit type",
+   "record": "DLD register lists 145 finished DAMAC projects of 301 registered (119 active, 37 cancelled), read 13 Oct 2026; DAMAC states ~50,000 units delivered since 2002 and 8,800 handovers in 2026 (TradeArabia, 9 Jul 2026)",
+   "returns": "No guaranteed rental, ROI or buy-back language on the developer or agency pages checked"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 4,
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 2782, Active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "Escrow account exists (Emirates NBD)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "Construction at 29.26% (DLD inspection 18 Aug 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "Developer entity registered: Damac C S L Investment L.L.C (DLD developer 1636)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "Developer track record: 145 finished projects on the DLD register",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/developer/damac"
+   },
+   {
+    "claim": "Handover Q2 2028 (DAMAC) [DLD registered completion 31 Dec 2027; at 29.26% in Aug 2026 the registered date looks out of reach, while the marketed date gives 21 months]",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "Construction started 14 Dec 2023 (Property Finder) [DLD start date 13 Dec 2023]",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "DAMAC delivered about 50,000 units since 2002 [company statement]",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tradearabia.com/News/464932/Damac-announces-handover-of-8%2c800-residential-units-across-Dubai/CONS"
+   },
+   {
+    "claim": "Registered sales median AED 2.9m, AED 2,390 per sq ft (28 sales)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/volta-tower"
+   },
+   {
+    "claim": "Freehold title available to foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a1properties.ae/project-details/volta-tower-downtown-dubai"
+   },
+   {
+    "claim": "No guaranteed returns advertised",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.damacproperties.com/en/projects/volta/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2002,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Damac C S L Investment L.L.C (DLD developer 1636)",
+   "developer_projects_delivered": 145,
+   "developer_units_delivered": 50000,
+   "listed_or_audited": null,
+   "construction_start": "2023-12",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "registered_completion": "31 Dec 2027",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": 220,
+   "price_min": 2500000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20% on booking, staggered 1% monthly instalments, 40% on handover (agency listings); DAMAC page shows \"1%\" plan",
+   "foreign_ownership": "Freehold (Dubai freehold zone; sold to foreign buyers via DLD registration)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (project registration, escrow, Trakheesi advertising permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Eight DLD inspections on record with steady progress",
+   "Floor plans published per unit type"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/volta-tower",
+   "https://dubairealestateiq.com/developer/damac",
+   "https://a1properties.ae/project-details/volta-tower-downtown-dubai",
+   "https://www.damacproperties.com/en/projects/volta/",
+   "https://www.propertyfinder.ae/en/new-projects/damac-properties/volta",
+   "https://homebase.ae/off-plan/downtown-dubai/volta-tower",
+   "https://www.tradearabia.com/News/464932/Damac-announces-handover-of-8%2c800-residential-units-across-Dubai/CONS"
+  ]
+ }
+]

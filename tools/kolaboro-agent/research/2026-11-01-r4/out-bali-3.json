@@ -1,0 +1,2320 @@
+[
+ {
+  "slug": "serenity-estates-ubud",
+  "area": "Wanayu, Bedulu, Blahbatuh (near Ubud), Gianyar",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.globalbalihome.com/project-serenity-estates.html",
+  "docs_url": "https://www.globalbalihome.com/project-serenity-estates.html",
+  "docs_listed": [
+   "4 villas (two 5BR premium, two 2BR) on 3.5-14 are plots, 3 of 4 available",
+   "unit table with floor area, land area, status and price: Rp 5.34B (B2, 155 m2) to Rp 20.49B (A2, 250 m2)",
+   "handover Q1 2027; page 'last updated May 2026'",
+   "30-year lease plus 'guaranteed 30-year extension', notarized in English and Bahasa Indonesia",
+   "construction insured; about page names Allianz as insurance partner (contractors all-risk, liability)",
+   "'~10% annual value growth' projection",
+   "about page: design-build partner Tika Jaya Konstruksi, contractor Jejak Tri Karya Perkasa, manager BaliSuperHost"
+  ],
+  "note": "Four large-plot villas in the Wanayu area of Bedulu near Ubud by Global Bali Home (founded 2023), priced Rp 5.34B to Rp 20.49B in a unit table, with Q1 2027 handover, a notarized 30+30-year lease and construction insured with Allianz according to the developer. No permit number, escrow, floor plans, construction progress or completed Global Bali Home project is published, and no independent source covers the project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 5340000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years 'guaranteed extension', notarized in English and Bahasa",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 4,
+   "payment_plan": null,
+   "price_per_m2": 34451613
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or other permit number on the project page, about page or portal listings.",
+   "escrow": "Only construction insurance is stated ('international insurance policy', Allianz named on the about page); no escrow or deposit protection for buyer payments.",
+   "progress": "No construction photos, dates or percentages published for Serenity Estates.",
+   "plans": "Master plan and 'Layouts & Interiors' images only; no dimensioned floor plans.",
+   "record": "About page: 'three active developments, 42 villas' and none completed; contractors' portfolios are named but not Global Bali Home deliveries. LinkedIn shows the company was founded in 2023.",
+   "returns": "'~10% Annual Value Growth' capital appreciation projection; 'guaranteed' is used only for the lease extension, not for returns."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "4 villas, 3 of 4 available, from Rp 5.34B to Rp 20.49B",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-estates.html"
+   },
+   {
+    "claim": "Handover Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newhomes.id/global-bali-home/"
+   },
+   {
+    "claim": "Lease 30 years plus guaranteed 30-year extension, notarized in English and Bahasa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-estates.html"
+   },
+   {
+    "claim": "30+30 is 'the standard maximum allowed for foreigners under Indonesian law'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-estates.html"
+   },
+   {
+    "claim": "Every stage of construction insured by an international policy (Allianz)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-estates.html"
+   },
+   {
+    "claim": "Deposit protection or escrow for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-estates.html"
+   },
+   {
+    "claim": "Developer founded 2023 and based in Gianyar",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/global-bali-home"
+   },
+   {
+    "claim": "Developer has completed earlier villa projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   },
+   {
+    "claim": "About 10% annual value growth for land of this size",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-estates.html"
+   },
+   {
+    "claim": "Developer company is a registered Indonesian entity (PT name not published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bali.realestate/developers/global-bali-home/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Bedulu, Gianyar, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 155,
+   "size_max_m2": 250,
+   "price_min": 5340000000,
+   "price_max": 20490000000,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 30 years plus 30-year extension, notarized lease",
+   "rental_programme": "BaliSuperHost management partner, ~80% target occupancy (about page)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool per villa",
+    "plots 3.5-14 are",
+    "Wanayu waterfalls and walking trails",
+    "restaurants and yoga spaces in Wanayu"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit-level price, floor area, land area and availability table",
+   "Lease term and extension stated (30+30), bilingual notarized lease",
+   "Construction insurer (Allianz) and contractors named",
+   "No guaranteed rental returns advertised"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.globalbalihome.com/project-serenity-estates.html",
+   "https://www.globalbalihome.com/about.html",
+   "https://www.globalbalihome.com",
+   "https://linkedin.com/company/global-bali-home",
+   "https://bali.realestate/developers/global-bali-home/",
+   "https://newhomes.id/global-bali-home/"
+  ],
+  "name": "Serenity Estates",
+  "developer": "Global Bali Home",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "addressbali-pererenan",
+  "area": "Jl. Babadan, Pantai Lima, Pererenan, Mengwi, Badung",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://addressbali.com/",
+  "docs_url": "https://addressbali.com/",
+  "docs_listed": [
+   "beachfront studios, 1BR residences and penthouses on 4 floors with floor filter",
+   "ROI calculator (default $300,000, $180/day, 70% occupancy gives '15.3% ROI p.a.') with 'Actual returns may vary' disclaimer",
+   "5-star hotel operation and members club, rooftop pool and restaurant",
+   "'Proven development team ... track record across Southeast Asia' without names",
+   "portals: 46 units, developer entity PT Dao Lima Bali, from about $175,000-$196,875",
+   "Alnair: 27-year lease ending 3 April 2052 plus 10-year extension, payment 25% booking / 65% construction / 10% handover, '0% completed', handover Q2 2026"
+  ],
+  "note": "46 hotel-operated studios, 1BR units and penthouses at Lima Beach, Pererenan, marketed as ADDRESSBALI and tied by portals to PT Dao Lima Bali, from about $175,000-$197,000 on a 27-year lease to April 2052 with a 10-year extension. Portals give handover dates from Q2 2026 to December 2027 and one shows 0% built; the developer site publishes no price, permit, escrow, plans, progress or named track record and shows a 15.3% ROI calculator with a disclaimer (checked 31 Oct 2026)",
+  "seed": {
+   "price": 196875,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 27,
+   "extension": "+10 years per Alnair (lease ends 3 April 2052, 37 years total)",
+   "guaranteed_language": false,
+   "yield_pct": 15.3,
+   "completion": "2027-08",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 46,
+   "payment_plan": "25% on booking, 65% during construction, 10% on handover (Alnair)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit number on the developer site or any portal opened.",
+   "escrow": "Nothing published on deposit protection.",
+   "progress": "No construction updates on the developer site; Alnair shows '0% Completed' (portal data, last update 11 September).",
+   "plans": "Floor filter and unit cards only; Alnair has a floor plan section but no drawings were visible.",
+   "record": "'Led by experienced developers with a consistent track record across Southeast Asia', no project named. NovAsia notes the developer entity has one project with them.",
+   "returns": "ROI calculator default '15.3% ROI p.a.' with note 'Actual returns may vary'; Rumavi mentions a 'guaranteed 10-year extension' of the lease, not of returns."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "46 residences on 4 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/pererenan/address-bali"
+   },
+   {
+    "claim": "Developer is PT Dao Lima Bali",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/address-bali/"
+   },
+   {
+    "claim": "Completion date (Alnair Q2 2026, Rumavi Aug 2027, Ary Bali December 2027)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alnair.co.id/en/bali/project/address-bali"
+   },
+   {
+    "claim": "Construction stage (Alnair 0% completed vs NovAsia 'under construction')",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/address-bali/"
+   },
+   {
+    "claim": "Leasehold 27 years to 3 April 2052 plus 10-year extension",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alnair.co.id/en/bali/project/address-bali"
+   },
+   {
+    "claim": "Starting price (from $175,000 vs $196,875 vs IDR 3.54B vs $200,000)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kvertexpropertiesgroup.com/properties/address-bali-award-winning-development-in-lima-beach/"
+   },
+   {
+    "claim": "Only 6 of 46 units remain",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/pererenan/address-bali"
+   },
+   {
+    "claim": "15.3% ROI p.a. at default assumptions",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addressbali.com/"
+   },
+   {
+    "claim": "Developer has a proven track record across Southeast Asia",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addressbali.com/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addressbali.com/"
+   },
+   {
+    "claim": "Private walking path to Lima Beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.addressbali.com/investors"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2022,
+   "developer_hq": "Mengwi, Badung, Bali, Indonesia",
+   "developer_company": "PT Dao Lima Bali (per FazWaz/NovAsia/Rumavi; registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026-Q2 (Alnair)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 100,
+   "price_min": 175000,
+   "price_max": 251000,
+   "currency": "USD",
+   "deposit_pct": 25,
+   "payment_plan": "25% on booking, 65% during construction, 10% on handover (Alnair)",
+   "foreign_ownership": "Leasehold 27 years (to April 2052) plus 10-year extension",
+   "rental_programme": "Fully serviced 5-star hotel operation with members club (developer)",
+   "service_charge": null,
+   "brand": "ADDRESSBALI (own brand)",
+   "amenities": [
+    "rooftop infinity pool",
+    "restaurant and sunset bar",
+    "spa, sauna and cold plunge",
+    "gym",
+    "members club",
+    "concierge 24/7",
+    "underground parking",
+    "Japanese tea garden"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Lease term and end date published on a portal (27 years to April 2052)",
+   "Return calculator states its assumptions and carries a disclaimer",
+   "Milestone payment plan with 10% held to handover (portal)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://addressbali.com/",
+   "https://www.addressbali.com/investors",
+   "https://alnair.co.id/en/bali/project/address-bali",
+   "https://rumavi.com/en/new-developments/indonesia/pererenan/address-bali",
+   "https://novasia.estate/en/projects/address-bali/",
+   "https://www.arybaliproperties.com/properties/addressbali/",
+   "https://kvertexpropertiesgroup.com/properties/address-bali-award-winning-development-in-lima-beach/",
+   "https://www.linkedin.com/posts/addressbali_bali-realestate-luxuryliving-activity-7395152605867429888-StHv"
+  ],
+  "name": "ADDRESSBALI",
+  "developer": "ADDRESSBALI",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "bali-benefit-reimagined-villas-ubud-2",
+  "area": "Penestanan / Sayan, Ubud, Gianyar",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://balibenefit.com/",
+  "docs_url": "http://reimaginedvillas.com/",
+  "docs_listed": [
+   "balibenefit.com: Re:Imagined Villas Ubud 2 from $140,000, 4 of 12 available, leasehold 30+25, '12%'",
+   "balibenefit.com FAQ: 1% per month on paid amount for construction delays",
+   "FAQ: own capital covers 30% (lease, documents, foundation), rest of construction 'financed through sales'",
+   "FAQ: payment by SWIFT to the company account, cash accepted; management contract and notarized land lease signed after handover",
+   "FAQ: external technical supervision on site",
+   "reimaginedvillas.com (phase 1 site): masterplan, plot layouts, financial model per villa",
+   "portals: completion December 2027, lease until 20 May 2056 with 25-year priority extension, payment 20/20/30/20/10"
+  ],
+  "note": "Second phase of Re:Imagined Villas in Penestanan, Ubud by PT Bali Benefit Group: 1-4BR villas from $140,000 (portals $129,000-$145,000) on a lease to May 2056 with a 25-year extension and a 12% return headline. Portals disagree on unit count (12 vs 20), permit status ('PBG applied' vs 'received') and completion (Dec 2027 vs 2028); the FAQ says most construction is financed by sales, payments go to the company account and the lease is notarized only after handover, with 1% per month delay compensation (checked 31 Oct 2026)",
+  "seed": {
+   "price": 140000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+25 years (30+25); portal: lease until 20 May 2056 with priority to extend 25 years",
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Habita listing: 'BaliBenefit ... 3 completed projects' (not named); developer site lists Villa Melasti, Air Villas, Villa Enki and Re:Imagined Villas Ubud 1 as offered, without completion dates",
+   "units": 12,
+   "payment_plan": "20% + 20% + 30% + 20% + 10% (Balinsky); down payment 20% (Anteyac)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number published. Balinsky lists 'Permits: Applied PBG'; agent Bali Essential Properties says 'PBG construction permit received in hand'.",
+   "escrow": "No escrow. FAQ: payments by SWIFT to the company's account or cash; construction beyond the first 30% 'will be financed through sales'. Delay compensation of 1% per month is stated.",
+   "progress": "No dated construction updates from the developer; Balinsky gives an 'estimated ~10%' without date or source.",
+   "plans": "Phase-1 microsite reimaginedvillas.com publishes a masterplan, plot layouts ('посмотреть планировки участков') and villa interiors; no unit floor plans for phase 2 found.",
+   "record": "Developer site lists other villas (Melasti, Air Villas, Enki, Ubud 1) without completion evidence; co-founder 'developed 13 villas'; construction partner '18 years and 100+ units delivered', unnamed.",
+   "returns": "'12%' on card and 'Our track record of 12% returns'; phase-1 financial model shows 10.69% with 83% occupancy. No guarantee or buy-back ('we facilitate resale through partner network')."
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "PBG building permit status (applied vs received in hand)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://balinsky.info/en/complexes/o/re-imagined-villas-ubud-2"
+   },
+   {
+    "claim": "Number of units (12 on developer site vs 20 on Balinsky)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://balinsky.info/en/complexes/o/re-imagined-villas-ubud-2"
+   },
+   {
+    "claim": "Completion December 2027 (Balinsky: 2028)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.asia.villas/projects/indonesia/bali/gianyar/ubud/reimagined-villas-ubud-2"
+   },
+   {
+    "claim": "Starting price ($140,000 developer vs $129,000 and $145,000 on portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://newhomes.id/reimagined-villas-ubud-2-bali"
+   },
+   {
+    "claim": "Lease until 20 May 2056 with priority 25-year extension",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baliessentialproperties.com/property/off-plan-jungle-view-2-bedroom-villa-for-leasehold-sale-in-ubud-ra032/"
+   },
+   {
+    "claim": "Land in pink tourism zone (pariwisata)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baliessentialproperties.com/property/off-plan-jungle-view-2-bedroom-villa-for-leasehold-sale-in-ubud-ra032/"
+   },
+   {
+    "claim": "Developer entity PT Bali Benefit Group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asia.villas/projects/indonesia/bali/gianyar/ubud/reimagined-villas-ubud-2"
+   },
+   {
+    "claim": "Developer has 3 completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.habita.com/property/675517"
+   },
+   {
+    "claim": "Track record of 12% returns",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balibenefit.com/"
+   },
+   {
+    "claim": "1% per month compensation on paid amount for delays",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balibenefit.com/"
+   },
+   {
+    "claim": "Phase 1 sold out, 70% in pre-sale",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baliessentialproperties.com/property/off-plan-jungle-view-2-bedroom-villa-for-leasehold-sale-in-ubud-ra032/"
+   },
+   {
+    "claim": "Construction about 10% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/complexes/o/re-imagined-villas-ubud-2"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "PT Bali Benefit Group (per asia.villas; registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa",
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 48,
+   "size_max_m2": 150,
+   "price_min": 129000,
+   "price_max": 389000,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% + 20% + 30% + 20% + 10% (Balinsky)",
+   "foreign_ownership": "Leasehold 30 years (to 20 May 2056 per agent) plus 25-year priority extension; notarized lease signed after handover per FAQ",
+   "rental_programme": "Management company keeps 15% after expenses for daily rentals (FAQ)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "spa and banya",
+    "ice baths",
+    "warm pools",
+    "yoga space",
+    "jungle-view cafe",
+    "24/7 reception"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Written delay compensation (1% per month of amounts paid)",
+   "Financing model disclosed openly (30% own capital, rest from sales)",
+   "Masterplan, plot layouts and per-villa financial model published for phase 1 (not yet for phase 2)",
+   "Independent technical supervision promised; no guaranteed returns"
+  ],
+  "flags": [],
+  "sources": [
+   "https://balibenefit.com/",
+   "http://reimaginedvillas.com/",
+   "https://balinsky.info/en/complexes/o/re-imagined-villas-ubud-2",
+   "https://baliessentialproperties.com/property/off-plan-jungle-view-2-bedroom-villa-for-leasehold-sale-in-ubud-ra032/",
+   "https://anteyac.com/en/bali/property/re-imagined-villas-ubud-2",
+   "https://www.asia.villas/projects/indonesia/bali/gianyar/ubud/reimagined-villas-ubud-2",
+   "https://newhomes.id/reimagined-villas-ubud-2-bali",
+   "https://www.habita.com/property/675517",
+   "https://www.blackpoint.group/marketplace/re-imagined-villas-ubud-2"
+  ],
+  "name": "Re:Imagined Villas Ubud 2",
+  "developer": "Bali Benefit",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "lb-pandawa-dream",
+  "area": "Jl. Alas Arum, Kutuh, Kuta Selatan (Pandawa), Badung",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://lb-dreams.com/pandawadream",
+  "docs_url": "https://loyo-development.com/pandawadreamen",
+  "docs_listed": [
+   "lb-dreams.com: apartments, villas, penthouses and smart villas; IDR 36.9M per m2; 30% first payment, instalments to end of construction",
+   "lb-dreams.com: '8% гарантированная доходность при покупке 2 юнитов' (8% guaranteed yield when buying 2 units)",
+   "unit cards: smart villas 30 m2 from 1.4 bln IDR, penthouses 35 m2 from 1.6 bln, apartments 32-53 m2 from 1.8 bln, villas 70-143 m2 from 3.6 bln",
+   "loyo-development.com: 58 units (30 apartments, 20 villas, 8 penthouses); company PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000",
+   "loyobondar.com construction feed Oct 2026: Block A slab reinforcement 95%, slab pour 90%; Block B excavation 95%",
+   "loyobondar.com: '12 residential complexes, 6 of them already completed'; completed Jungle Flower Villas, U Villas, Loyo Villas shown"
+  ],
+  "note": "Large 'all in one' apartment, villa and penthouse complex in Kutuh near Pandawa Beach by LOYO & BONDAR (PT Loyo Group Bali), from 1.4 bln IDR at IDR 36.9M per m2 with 30% down and instalments to completion; the October 2026 feed shows Block A slabs about 90% poured and Block B excavation at 95%. The sales page advertises an 8% guaranteed yield when buying 2 units; unit count (58 vs 300), lease (30 vs 50 vs 30+20+30) and handover (Q1 2027 to Q2 2028) differ across sources and no PBG number or escrow is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1400000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "30+20+30 (up to 80 years, 40 fixed in contract) per Balidom; Balinsky lists 50 years",
+   "guaranteed_language": true,
+   "yield_pct": 8,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "loyobondar.com: 6 of 12 complexes completed; Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu shown as completed; riserealbali lists 6 handed over",
+   "units": 58,
+   "payment_plan": "30% first payment (25% for smart villas and penthouses), interest-free instalments until end of construction",
+   "price_per_m2": 36900000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number published by LB or portals; not shown as issued for Pandawa Dream on any page opened.",
+   "escrow": "No escrow or bank guarantee. Balinsky contract review: 'absence of its financial liability for missed deadlines' and contract balance 24/76 in the developer's favour.",
+   "progress": "loyobondar.com October 2026 feed: Block A reinforcement 95%, slab pouring 90%, elevator shaft formwork stripped; Block B excavation 95%, blinding 95%. Nov 2025 Balinsky news post (by LB): foundation works started.",
+   "plans": "Unit types with areas and room-tour videos only; no floor-plan drawings found.",
+   "record": "LB names completed projects (Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu); XO Pandawa now listed as completed and operating as accommodation (NovAsia). Developer entity PT. LOYO GROUP BALI with tax number published.",
+   "returns": "'8% гарантированная доходность при покупке 2 юнитов' on lb-dreams.com; Balidom quotes 4-6 year payback."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "8% guaranteed yield when buying 2 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lb-dreams.com/pandawadream"
+   },
+   {
+    "claim": "Block A slab 90% poured, Block B excavation 95% (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Number of units (58 on developer page vs 300 on Balinsky vs 228+ apartments in blocks A and B on riserealbali)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/loyo-bondar/"
+   },
+   {
+    "claim": "Lease term (30 flat vs 50 years vs 30+20+30)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://balidom.ru/projects/pandawa-dream/"
+   },
+   {
+    "claim": "Completion (Q1 2027 Rumavi, Q4 2027 bali.realestate, Q3 2027-Q2 2028 Balidom)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bali.realestate/developers/loyo/"
+   },
+   {
+    "claim": "Land registered freehold to a legal entity, allowing 50-80 year leases",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realting.com/news/new-premium-residential-complex-in-bali"
+   },
+   {
+    "claim": "Developer contracting entity PT Loyo Group Bali (NPWP 50.075.629.1-907.000)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/pandawadreamen"
+   },
+   {
+    "claim": "6 of 12 LB complexes completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/complexes/o/pandawa-dream"
+   },
+   {
+    "claim": "Prices to almost double by completion under a documented price plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realting.com/news/new-premium-residential-complex-in-bali"
+   },
+   {
+    "claim": "Contract gives developer no financial liability for missed deadlines (portal contract review)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/complexes/o/pandawa-dream"
+   },
+   {
+    "claim": "Land zoned pink (tourism)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balidom.ru/projects/pandawa-dream/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "smart villa",
+    "apartment",
+    "penthouse",
+    "villa",
+    "rooftop villa"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 143,
+   "price_min": 1400000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": 30,
+   "payment_plan": "30% first payment, interest-free instalments until end of construction",
+   "foreign_ownership": "Leasehold (30, 50 or 30+20+30 years depending on source)",
+   "rental_programme": "In-house management company; 8% guaranteed yield offered when buying 2 units",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "4 restaurants",
+    "2 bars",
+    "pools",
+    "fitness",
+    "SPA",
+    "kids centre",
+    "coworking",
+    "Dream Boulevard walking street"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Monthly dated construction feed with percentages",
+   "Developer legal entity and tax number published",
+   "Several completed earlier complexes named, one now operating",
+   "Price per m2 and unit sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lb-dreams.com/pandawadream",
+   "https://loyobondar.com/en/",
+   "https://loyo-development.com/pandawadreamen",
+   "https://balinsky.info/en/complexes/o/pandawa-dream",
+   "https://balinsky.info/en/news/construction-progress-key-stages-completed",
+   "https://balinsky.info/en/developers/lb-group-loyobondar-bali-developer",
+   "https://riserealbali.com/developers/loyo-bondar/",
+   "https://balidom.ru/projects/pandawa-dream/",
+   "https://bali.realestate/developers/loyo/",
+   "https://realting.com/news/new-premium-residential-complex-in-bali",
+   "https://novasia.estate/en/projects/xo-pandawa/"
+  ],
+  "name": "Pandawa Dream",
+  "developer": "LOYO & BONDAR (LB Group)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "loyo-melasti-arcade",
+  "area": "Melasti, Ungasan, Bukit, Badung",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://loyo-development.com/melastiarcade",
+  "docs_url": "https://loyo-development.com/melastiarcade",
+  "docs_listed": [
+   "13 apartments (25-30 m2) from 1.8 bln IDR and 6 penthouses (84 m2) from 4.7 bln IDR",
+   "'прогнозируемый ROI 17%' (projected)",
+   "purchase steps: due diligence of land use, land lease signing, 30% down payment, interest-free instalments to completion, handover, management, profit payments",
+   "refund on cancellation 'according to individual agreements'",
+   "loyobondar.com construction feed Oct 2026: basement waterproofing done (2 layers), 2nd-floor slab formwork stripped, trench backfill 25%"
+  ],
+  "note": "Gated block of 13 apartments and 6 penthouses near Melasti Beach by Loyo Development (LOYO & BONDAR), from 1.8 bln IDR with 30% down and interest-free instalments, a 17% projected ROI and an October 2026 update showing the 2nd-floor slab done. A portal tracking LB still lists it at groundwork with 22 units, a 25+25 lease and 2026 handover; no PBG number, escrow, plans or price schedule beyond 'from' prices is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1800000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 years per riserealbali (not stated by developer)",
+   "guaranteed_language": false,
+   "yield_pct": 17,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "loyobondar.com: 6 of 12 complexes completed; Melasti Dream (56 units) shown handed over by riserealbali",
+   "units": 19,
+   "payment_plan": "30% down payment after lease signing, interest-free instalments until completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number published; Balinsky lists PBG 'applied for' for LB's Melasti projects without separating Melasti Arcade.",
+   "escrow": "No escrow; refunds on cancellation 'according to individual agreements'.",
+   "progress": "loyobondar.com October 2026: basement waterproofing completed (2 layers), 2nd floor slab formwork stripped, trench backfilling 25%.",
+   "plans": "No floor plans; unit areas only (25-30 m2 apartments, 84 m2 penthouses).",
+   "record": "LB lists completed Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream and XO Canggu; developer since 2007.",
+   "returns": "'прогнозируемый ROI 17%' (projected ROI). An LB testimonial says Loyo advertised 'a 17% return' in 2023; no guarantee wording on this page."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "13 apartments and 6 penthouses (19 units)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/loyo-bondar/"
+   },
+   {
+    "claim": "Construction stage: 2nd-floor slab done Oct 2026 (portal still lists 'groundwork')",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/loyo-bondar/"
+   },
+   {
+    "claim": "Apartments from 1.8 bln IDR, penthouses from 4.7 bln IDR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/melastiarcade"
+   },
+   {
+    "claim": "Projected ROI 17%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/melastiarcade"
+   },
+   {
+    "claim": "Lease 25+25 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/loyo-bondar/"
+   },
+   {
+    "claim": "Handover 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/loyo-bondar/"
+   },
+   {
+    "claim": "Due diligence on land designation before lease signing",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/melastiarcade"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/developers/lb-group-loyobondar-bali-developer"
+   },
+   {
+    "claim": "Developer building in Bali since 2007 with 6 completed complexes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Developer entity PT Loyo Group Bali (NPWP published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/pandawadreamen"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment",
+    "penthouse"
+   ],
+   "size_min_m2": 25,
+   "size_max_m2": 84,
+   "price_min": 1800000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": 30,
+   "payment_plan": "30% down payment, interest-free instalments until completion",
+   "foreign_ownership": "Land lease signed with buyer (25+25 years per portal)",
+   "rental_programme": "Developer management after handover with profit payments; 'LOYO Relax' concierge concept",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "own restaurant complex",
+    "yoga place at villa",
+    "concierge",
+    "in-villa spa",
+    "2 minutes to Melasti Beach"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated construction progress",
+   "Completed developer projects named",
+   "Interest-free instalments tied to the construction period",
+   "Return figure labelled as a projection"
+  ],
+  "flags": [],
+  "sources": [
+   "https://loyo-development.com/melastiarcade",
+   "https://loyobondar.com/en/",
+   "https://loyo-development.com/pandawadreamen",
+   "https://riserealbali.com/developers/loyo-bondar/",
+   "https://balinsky.info/en/developers/lb-group-loyobondar-bali-developer"
+  ],
+  "name": "Melasti Arcade Apartments",
+  "developer": "Loyo Development (LOYO & BONDAR)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "618-flower-estate",
+  "area": "Golden Mile, Nuanu Creative City, Beraban, Kediri, Tabanan",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://618development.com/projects/flower-estate",
+  "docs_url": "https://618development.com/projects/flower-estate",
+  "docs_listed": [
+   "20 orangery-style villas (2-3 BR) inside Nuanu, room-by-room design descriptions",
+   "homepage: pre-sale pricing from IDR 8,100,000,000 (all payment in rupiah), completion Q1 2027, 'Freehold available for Indonesian citizens'",
+   "project page: 'Freehold ownership'; investment section with blank (0) figures",
+   "homepage: 'Our track record shows 15%+ annual returns'; The Collection Vol.1 'Completed Q2 2025', Vol.2 'Completion Q1 2026'",
+   "Nuanu partners portal: 16 x 2BR + 4 x 3BR, plots ~256 m2, 2BR ~106 m2 net, from $500,000, payment 30-30-40, handover Q3 2027, 'freehold for foreigners & Indonesians', structure, waterfall and gate completed, Nuanu Creative City as shareholder",
+   "riserealbali: PBG held, Rp 8.85 bn for 2BR, freehold via HGB in a PT PMA or 78-year leasehold, 15-year structural warranty"
+  ],
+  "note": "20 single-storey garden villas in Nuanu Creative City by 618 Development (Nuanu named as shareholder), pre-sale from IDR 8.1B (portals Rp 8.85B or about $500,000), with construction completion Q1 2027 and buyer handover Q3 2027 and the main structure reported complete. The developer says freehold is for Indonesian citizens while the Nuanu partner page says freehold for foreigners, which Indonesian law does not allow directly (an agent explains HGB via PT PMA or a 78-year lease); a portal says the PBG is held but no number, escrow or floor plans are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 8100000000,
+   "currency": "IDR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": "Leasehold alternative 'guaranteed for 78 years' per riserealbali; freehold for foreigners via HGB in a PT PMA",
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "618 homepage: The Collection Vol.1, 4 three-bedroom villas, 'Completed Q2 2025' (Nuanu partners portal lists Vol.1 handover Q4 2025)",
+   "units": 20,
+   "payment_plan": "30-30-40 (Nuanu partners portal); all payments in rupiah",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number. riserealbali: 'the developer already holds the PBG'; not on the developer site.",
+   "escrow": "Nothing published on deposit protection; payment schedule 30-30-40 only.",
+   "progress": "Nuanu partners portal: 'Already completed: main structure, waterfall feature, and gate'; in progress: greenery park (undated). Developer site invites visits to active sites but posts no dated updates.",
+   "plans": "Room descriptions and renders only; NovAsia notes no numbered unit or plot plans are public.",
+   "record": "618development.com: 'The Collection Vol.1 ... Completed Q2 2025'; Nuanu partners portal dates Vol.1 handover Q4 2025.",
+   "returns": "Homepage: 'Our track record shows 15%+ annual returns'; Nuanu portal: '10-12% ROI, 8-10 year payback'. No guarantee of returns."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Freehold for foreigners (Nuanu partner page) vs freehold for Indonesian citizens only (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/flower-estates-en"
+   },
+   {
+    "claim": "Foreign buyers hold the plot as HGB through a PT PMA or take a 78-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riserealbali.com/properties/flower-estates/"
+   },
+   {
+    "claim": "PBG building permit already held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riserealbali.com/properties/flower-estates/"
+   },
+   {
+    "claim": "Completion Q1 2027 (developer) vs handover Q3 2027 (Nuanu)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/"
+   },
+   {
+    "claim": "Main structure, waterfall feature and gate completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/flower-estates-en"
+   },
+   {
+    "claim": "Starting price (IDR 8.1B developer, Rp 8.85B agent, Rp 8.25B brochure, IDR 9.0B NovAsia)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/properties/flower-estates/"
+   },
+   {
+    "claim": "The Collection Vol.1 completed Q2 2025 (Nuanu portal: Q4 2025)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/"
+   },
+   {
+    "claim": "Developer track record of 15%+ annual returns",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://618development.com/"
+   },
+   {
+    "claim": "Nuanu Creative City is a shareholder of the project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/flower-estates-en"
+   },
+   {
+    "claim": "15-year structural warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riserealbali.com/properties/flower-estates/"
+   },
+   {
+    "claim": "Plot sizes (~256 m2 Nuanu vs 265-347 m2 agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/flower-estates/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Nuanu, Tabanan, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 4,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 106,
+   "size_max_m2": 135,
+   "price_min": 8100000000,
+   "price_max": 10440000000,
+   "currency": "IDR",
+   "deposit_pct": 30,
+   "payment_plan": "30-30-40",
+   "foreign_ownership": "Freehold land; foreigners via HGB in a PT PMA or 78-year leasehold (agent); developer says freehold available for Indonesian citizens",
+   "rental_programme": "OXO Living management (riserealbali); 10-12% ROI projected (Nuanu portal)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "fruit-tree gardens",
+    "communal flower gardens",
+    "flower shop and juice bar",
+    "firepit and BBQ",
+    "two-layer gated security",
+    "Nuanu ecosystem access",
+    "planned EV hub"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tabanan Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Earlier 618 project shown completed",
+   "Structure reported complete about a year before handover",
+   "Net villa area stated 'without marketing exaggerations' and price includes furniture and taxes",
+   "No guaranteed returns"
+  ],
+  "flags": [],
+  "sources": [
+   "https://618development.com/projects/flower-estate",
+   "https://618development.com/",
+   "https://partners.nuanu.realestate/flower-estates-en",
+   "https://partners.nuanu.realestate/flower-estates-indo",
+   "https://partners.nuanu.realestate/",
+   "https://partners.nuanu.realestate/map_eng",
+   "https://riserealbali.com/properties/flower-estates/",
+   "https://novasia.estate/en/projects/flower-estates/"
+  ],
+  "name": "Flower Estate",
+  "developer": "618 Development",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "serenity-villas-ubud",
+  "area": "Wanayu, Bedulu, Blahbatuh (near Ubud), Gianyar",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.globalbalihome.com/project-serenity-villas.html",
+  "docs_url": "https://www.globalbalihome.com/project-serenity-villas.html",
+  "docs_listed": [
+   "12 villas (10 x 2BR, 2 x 3BR), 3 of 12 available",
+   "unit table: Rp 6.15B-6.87B for available units, 122-210 m2 on 2.1-2.8 are; page title says 'from Rp 5.77B', homepage range Rp 6.03B-6.87B",
+   "handover Q2 2026 on developer page (page 'last updated May 2026')",
+   "'10-15% projected yield', ~80% occupancy via BaliSuperHost",
+   "construction insurance (Allianz named on about page)",
+   "agent listing on bali.realestate: 'PBG building permit: obtained', leasehold 28+30, completion September 2026, from $369,000, 'Urgent sale'"
+  ],
+  "note": "12-villa complex in Wanayu, Bedulu near Ubud by Global Bali Home with 3 units left at Rp 6.15B-6.87B and a 10-15% projected yield. The developer page still shows a Q2 2026 handover, while an agent listing gives September 2026 completion, a 28+30-year lease and says the PBG is obtained without a number; no escrow, plans, dated progress or completed developer project is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 6150000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years per agent listing ('extension guaranteed with a prepaid deposit'); agent gives 28+30",
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": "2026-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": null,
+   "price_per_m2": 29285714
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Agent listing (bali.realestate) states 'PBG building permit: obtained' with no number; the developer page says nothing about permits.",
+   "escrow": "Construction insurance only (Allianz named on about page); no deposit protection.",
+   "progress": "No construction photos, dates or percentages. Q2 2026 handover on the developer page has passed without an update; agent listing moved completion to September 2026.",
+   "plans": "Master plan and interior images only.",
+   "record": "About page: three active developments, none completed; company founded 2023 (LinkedIn).",
+   "returns": "'10-15% Projected Yield' based on manager's data; agent listing 'average projected ROI 12.9%'; no guarantee wording."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "12 villas, 3 available, Rp 6.15B-6.87B",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-villas.html"
+   },
+   {
+    "claim": "Starting price (page title 'from Rp 5.77B' vs homepage Rp 6.03B vs table Rp 6.15B)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.globalbalihome.com"
+   },
+   {
+    "claim": "Handover Q2 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bali.realestate/property/o17216/"
+   },
+   {
+    "claim": "PBG building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bali.realestate/property/o17216/"
+   },
+   {
+    "claim": "Lease term (30-year leasehold on developer site vs 28+30 on agent listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bali.realestate/property/o17216/"
+   },
+   {
+    "claim": "Land zoning orange R-4, tourism use permitted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bali.realestate/property/o17216/"
+   },
+   {
+    "claim": "10-15% projected yield based on manager's real data",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-villas.html"
+   },
+   {
+    "claim": "Construction insured with Allianz",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-villas.html"
+   },
+   {
+    "claim": "Developer has completed earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Bedulu, Gianyar, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 122,
+   "size_max_m2": 210,
+   "price_min": 6150000000,
+   "price_max": 6870000000,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold (30 years on developer site; 28+30 on agent listing)",
+   "rental_programme": "Turnkey rental via BaliSuperHost, ~80% occupancy, 10-15% projected yield",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "private gardens",
+    "terraces",
+    "Wanayu waterfalls and trails",
+    "restaurant",
+    "shared pool bar"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit-level price, size, land area and availability table",
+   "Construction insurer named",
+   "Yield presented as a projection, no guarantee"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.globalbalihome.com/project-serenity-villas.html",
+   "https://www.globalbalihome.com",
+   "https://www.globalbalihome.com/about.html",
+   "https://bali.realestate/property/o17216/",
+   "https://linkedin.com/company/global-bali-home",
+   "https://bali.realestate/developers/global-bali-home/"
+  ],
+  "name": "Serenity Villas",
+  "developer": "Global Bali Home",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "alex-villas-laguna-complex-7",
+  "area": "Tibubeneng, Canggu, Kuta Utara, Badung",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://alexvillasgroup.com/developments/complex-7",
+  "docs_url": "https://alexvillasgroup.com/developments/complex-7",
+  "docs_listed": [
+   "327 units (87 villas, 240 apartments) on 25,871 m2, 1,800 m from the ocean",
+   "unit types with sizes (43-198 m2), price on request",
+   "statement: construction schedule subject to PBG issuance; no completion date until permit and financing are finalised",
+   "leasehold; managed by Alex Villas Management",
+   "developments page: Complexes 1-6, Airship and AV Base villas marked Completed",
+   "founder statement 18 Aug 2026: active works on projects under construction paused (permitting and financing), new retail sales of unfinished projects stopped; Complex 7 has pile field, retaining walls, foundation slabs and first floors of several blocks"
+  ],
+  "note": "327-unit Canggu complex by Alex Villas Group, launched in August 2023 with a May 2025 completion target (later Q2 2026 and Q2 2027), whose page now says timing depends on a PBG not yet issued and on financing. The founder's August 2026 statement says works are paused, new sales of unfinished projects have stopped and foundations and first floors of several blocks are built; earlier marketing advertised a guaranteed ROI of up to 10% for two years (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 27,
+   "extension": "+20 years 'contractually guaranteed' per Rumavi (27+20)",
+   "guaranteed_language": true,
+   "yield_pct": 10,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "alexvillasgroup.com: Complexes 1-6 (9, 17, 14, 28, 37 and 53 units), Airship and four AV Base villas marked Completed; 'over a hundred units handed over'",
+   "units": 327,
+   "payment_plan": "Interest-free instalments until end of construction and a mortgage programme (2023 press release)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project page: 'The construction schedule is subject to the issuance of the Building Permit (PBG)'; founder: permit status 'provided in writing, with application numbers, on request'. No PBG issued or numbered.",
+   "escrow": "None published. Founder statement: unit prices fund team, sales and marketing as well as construction, and money arrives in instalments.",
+   "progress": "Founder statement (18 Aug 2026): pile field, retaining walls, foundation slabs, first floors of several blocks and engineering networks built; active works paused. Project page shows no completion date.",
+   "plans": "Unit types and sizes only; no floor plans.",
+   "record": "Developer lists six completed complexes (158 units in total) and AV Base villas; PropertyGuru 2024 award for Complex 3 reported by the developer and NovAsia.",
+   "returns": "Asia Property Awards spotlight (Dec 2024, submitted by Alex Villas): 'guaranteed ROI of up to 10% for the first two years'; Rumavi: '10% guaranteed net return' on pool studios; site footer 'up to 10-16% ROI'."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion May 2025 (2023 launch), Q2 2026 (2024), Q2 2027 (2025), now no date",
+    "status": "contradicted",
+    "by": "none",
+    "source": "http://inthepress.ru/press/p482064.html"
+   },
+   {
+    "claim": "PBG building permit not yet issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alexvillasgroup.com/developments/complex-7"
+   },
+   {
+    "claim": "Foundations and first floors of several blocks built although the PBG is not yet issued",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alexvillasgroup.com/resources/bali-property-market-2026"
+   },
+   {
+    "claim": "Active works paused and new retail sales of unfinished projects stopped (Aug 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alexvillasgroup.com/resources/bali-property-market-2026"
+   },
+   {
+    "claim": "Complex completed in Q2 2025 (Rumavi listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/canggu/av-complex-7"
+   },
+   {
+    "claim": "Unit count and site (327 units on 25,871 m2 vs 297 units on 30,485 m2 in 2024 vs 209 units)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.asiapropertyawards.com/en/project-spotlight/alex-villas-complex-7/"
+   },
+   {
+    "claim": "Guaranteed ROI of up to 10% for the first two years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asiapropertyawards.com/en/project-spotlight/alex-villas-complex-7/"
+   },
+   {
+    "claim": "Leasehold 27 years plus guaranteed 20-year extension",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/canggu/av-complex-7"
+   },
+   {
+    "claim": "Six completed complexes and over 100 units handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alexvillasgroup.com/resources/alex-villas-top-ten-developers-2026-hubexo-asia-awards"
+   },
+   {
+    "claim": "Complex 7 won PropertyGuru Indonesia awards for investment development and design (2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/developers/bali/alex-villas/"
+   },
+   {
+    "claim": "Developer entity PT Alex Villas Group appears in a corporate directory; contracting entity per contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/developers/bali/alex-villas/"
+   },
+   {
+    "claim": "Hubexo Asia Awards Top Ten Developers Indonesia 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alexvillasgroup.com/resources/alex-villas-top-ten-developers-2026-hubexo-asia-awards"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Jl. Echo Beach No.2, Tibubeneng, Kuta Utara, Badung, Bali, Indonesia",
+   "developer_company": "PT Alex Villas Group (corporate directory entry cited by NovAsia; registration number not published)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": 158,
+   "listed_or_audited": null,
+   "construction_start": "2023-08",
+   "handover_promised": null,
+   "original_handover": "2025-05 (August 2023 press release)",
+   "delay_months": 17,
+   "unit_types": [
+    "studio",
+    "1BR apartment",
+    "2BR apartment",
+    "rooftop apartment",
+    "villa"
+   ],
+   "size_min_m2": 43,
+   "size_max_m2": 198,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": "Interest-free instalments until completion; mortgage programme (2023)",
+   "foreign_ownership": "Leasehold (27+20 years per Rumavi)",
+   "rental_programme": "Alex Villas Management; earlier 'guaranteed ROI up to 10% for first two years'",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "spa",
+    "pools",
+    "gym",
+    "mini cinema",
+    "coworking",
+    "running track",
+    "rooftop bar",
+    "kids playground"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer openly states the PBG is not issued and withholds a new completion date",
+   "Founder publicly acknowledged delays, paused sales of unfinished projects and offers permit application numbers in writing",
+   "Six completed earlier complexes named with unit counts"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alexvillasgroup.com/developments/complex-7",
+   "https://alexvillasgroup.com/developments",
+   "https://alexvillasgroup.com/",
+   "https://alexvillasgroup.com/resources",
+   "https://alexvillasgroup.com/resources/bali-property-market-2026",
+   "https://alexvillasgroup.com/resources/alex-villas-top-ten-developers-2026-hubexo-asia-awards",
+   "https://www.asiapropertyawards.com/en/project-spotlight/alex-villas-complex-7/",
+   "http://inthepress.ru/press/p482064.html",
+   "https://rumavi.com/en/new-developments/indonesia/canggu/av-complex-7",
+   "https://novasia.estate/developers/bali/alex-villas/",
+   "https://www.linkedin.com/posts/michaelkhaynes_invest-where-you-vacation-the-laguna-activity-7386106764863377408-UbpQ"
+  ],
+  "name": "Laguna - Complex 7",
+  "developer": "Alex Villas Group",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "lb-pandawa-hills",
+  "area": "Kutuh, Kuta Selatan (Pandawa), Badung",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://pandawahills.com/en",
+  "docs_url": "https://pandawahills.com/en",
+  "docs_listed": [
+   "villas (1-3 BR) and apartments up to 43 m2 plus balcony",
+   "completion Q4 2026",
+   "rooftop restaurant and cinema, in-house Loyo Management, room tour",
+   "price includes legal support, interior finishing and furnishing",
+   "loyo-development.com: Pandawa Hills apartments from 1.9 bln IDR, 36 apartments",
+   "loyobondar.com construction feed Oct 2026: partition walls erected, plumbing rough-in and roofing completed"
+  ],
+  "note": "Villas and apartments in Kutuh near Pandawa Beach by LOYO & BONDAR, apartments from 1.9 bln IDR, with completion now Q4 2026 after earlier Feb 2026 and Q1 2026 dates and an October 2026 update showing walls, plumbing rough-in and roofing done. A portal lists the PBG as 'applied for'; no permit number, escrow, plans or consistent lease term (25+25 vs 26) is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1900000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "25+25 or 26+26 per listings (NovAsia); riserealbali: 26",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "loyobondar.com: 6 of 12 complexes completed (Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu named)",
+   "units": 58,
+   "payment_plan": "30% down payment, interest-free instalments until completion (LB standard terms)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number; Balinsky lists Pandawa Hills 'Building permit (PBG): applied for'; NovAsia also found no issued approval or SLF.",
+   "escrow": "Nothing published on deposit protection.",
+   "progress": "loyobondar.com October 2026: partition walls erected, plumbing rough-in completed, roofing completed. Nov 2025 LB post: 3rd floor pour completed, villa walls started.",
+   "plans": "Apartment size (up to 43 m2) and room tour only.",
+   "record": "LB lists five completed projects by name; riserealbali shows six handed over.",
+   "returns": "No yield or guarantee wording on the project site."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion Q4 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/pandawa-hills/"
+   },
+   {
+    "claim": "Walls, plumbing rough-in and roofing completed (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "PBG building permit status 'applied for'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/developers/lb-group-loyobondar-bali-developer"
+   },
+   {
+    "claim": "Unit count (36 apartments + 22 villas per NovAsia vs 25 units per riserealbali)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/loyo-bondar/"
+   },
+   {
+    "claim": "Lease term (25+25 vs 26+26 vs 26)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/pandawa-hills/"
+   },
+   {
+    "claim": "Apartments from 1.9 bln IDR (broker sheet IDR 2.21 bln)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/pandawa-hills/"
+   },
+   {
+    "claim": "Price includes legal support, finishing and furnishing",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pandawahills.com/en"
+   },
+   {
+    "claim": "Developer has completed 6 of 12 complexes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Developer entity PT Loyo Group Bali (NPWP published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/en"
+   },
+   {
+    "claim": "Occupancy certificate (SLF) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/pandawa-hills/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": "2026-02 (early project website per NovAsia)",
+   "delay_months": 8,
+   "unit_types": [
+    "apartment",
+    "1BR villa",
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 126,
+   "price_min": 1900000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 25+25 or 26+26 years depending on listing",
+   "rental_programme": "Loyo Management in-house, dynamic pricing and smart booking",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop restaurant",
+    "rooftop cinema",
+    "ocean and jungle views",
+    "concierge",
+    "kids centre",
+    "motorbike rental"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated construction progress",
+   "Completed developer projects named",
+   "No guaranteed return claims"
+  ],
+  "flags": [],
+  "sources": [
+   "https://pandawahills.com/en",
+   "https://loyobondar.com/en/",
+   "https://loyo-development.com/en",
+   "https://novasia.estate/en/projects/pandawa-hills/",
+   "https://riserealbali.com/developers/loyo-bondar/",
+   "https://balinsky.info/en/developers/lb-group-loyobondar-bali-developer",
+   "https://balinsky.info/en/news/construction-progress-key-stages-completed",
+   "https://bali.realestate/developers/loyo/"
+  ],
+  "name": "Pandawa Hills",
+  "developer": "LOYO & BONDAR (LB Group)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-28",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "anjuna-palms-uluwatu",
+  "area": "Jl. Labuansait, Pecatu (Thomas Beach), Uluwatu, Badung",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://theanjunabay.com/project/anjuna-palms/",
+  "docs_url": "https://theanjunabay.com/project/anjuna-palms/",
+  "docs_listed": [
+   "developer page: 1-3BR villas with private pools, 30 units, price from IDR 3.9B (USD 240,000), '17.54% ROI'",
+   "developer page: 'The First & The Only Development Project with a Bank Guarantee in Bali': Bank BRI 'fully guarantees your investment amount and offers a 100% refund if the property is not delivered on time'",
+   "price rises with every two units sold; current release 'Phase 3'",
+   "'Anjuna Bay is a registered brand of PT Thomas Beach Village'; sales office Jl. Labuansait 10, Pecatu",
+   "progress updates page (last updated 12 Aug 2026) covers Aurora, Village penthouses and shops, not Palms",
+   "anjunapalms.com: 1BR, 2BR and 3BR 'Anjuna Palms Villas' in Anjuna Bay offered for nightly rental with an Airbnb-synced calendar",
+   "Rumavi: from $189,000, 30+20-year lease, completion Q2 2026"
+  ],
+  "note": "30 pool villas in the Anjuna Bay community at Thomas Beach, Pecatu, sold by PT Thomas Beach Village from IDR 3.9B (USD 240,000; a portal shows $189,000) with a 17.54% ROI headline and a claimed Bank BRI guarantee of a 100% refund if not delivered on time. Villas branded Anjuna Palms are already offered for nightly rental, suggesting part of the scheme is built, but no dated Palms progress, PBG number, guarantee document or lease contract is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 3900000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+20 years option (Rumavi)",
+   "guaranteed_language": false,
+   "yield_pct": 17.54,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Developer claims Bank BRI guarantees the investment amount with a 100% refund if not delivered on time; no guarantee document or number published",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 30,
+   "payment_plan": "Price increases every two units sold; schedule on request",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number on the developer site or portals.",
+   "escrow": "Developer page: 'Bank BRI ... fully guarantees your investment amount and offers a 100% refund if the property is not delivered on time.' NovAsia could not find a bank-issued instrument for a buyer; no guarantee document published.",
+   "progress": "Developer progress page (12 Aug 2026) has no Palms entry. anjunapalms.com rents three Anjuna Palms villas nightly, but who operates them and how many units are complete is not stated.",
+   "plans": "Gallery and unit sizes on portals (90 m2 1BR villa, 128 m2 2BR townhouse); no floor plans.",
+   "record": "No completed project named; Rumavi says Anjuna Bay was founded in 2024 with no previous completions (the domain dates from 2022).",
+   "returns": "'17.54% ROI' headline; 'guarantee' refers to delivery refund, not returns."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Bank BRI guarantees the investment with a 100% refund if not delivered on time",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/en/developers/bali/anjuna-bay/"
+   },
+   {
+    "claim": "'First and only development project with a bank guarantee in Bali'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theanjunabay.com/project/anjuna-palms/"
+   },
+   {
+    "claim": "Completion (Q2 2026 Rumavi vs Q2 2027 for Anjuna Bay on OffPlan)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.so/projects/the-anjuna-bay-uluwatu"
+   },
+   {
+    "claim": "No visible construction progress (Rumavi) vs Anjuna Palms villas already rented nightly",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://anjunapalms.com/"
+   },
+   {
+    "claim": "Starting price (IDR 3.9B / USD 240,000 developer vs $189,000 Rumavi vs $190,000 OffPlan)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/anjuna-palms"
+   },
+   {
+    "claim": "17.54% ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theanjunabay.com/project/anjuna-palms/"
+   },
+   {
+    "claim": "Lease 30 years plus 20-year extension option",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/anjuna-palms"
+   },
+   {
+    "claim": "Seller is PT Thomas Beach Village",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theanjunabay.com/project/anjuna-palms/"
+   },
+   {
+    "claim": "Masterplan size (10 hectares developer homepage vs 8.5 hectares portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://theanjunabay.com/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theanjunabay.com/project/anjuna-palms/"
+   },
+   {
+    "claim": "Direct access to Thomas Beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theanjunabay.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pecatu, Badung, Bali, Indonesia",
+   "developer_company": "PT Thomas Beach Village (brand owner per developer site; registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR townhouse",
+    "3BR villa"
+   ],
+   "size_min_m2": 90,
+   "size_max_m2": 128,
+   "price_min": 3900000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": "Price escalates every two units sold",
+   "foreign_ownership": "Leasehold 30 years plus 20-year option (portal)",
+   "rental_programme": "Full property management; 17.54% ROI headline",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "shopping village",
+    "food court",
+    "gym",
+    "coworking",
+    "wellness centre",
+    "healthcare facility",
+    "kids playground"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Named bank delivery guarantee that a buyer can ask to authenticate with Bank BRI",
+   "Legal entity behind the brand named (PT Thomas Beach Village)",
+   "Villas under the Palms name already operating as rentals",
+   "Monthly construction updates for other phases of the masterplan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theanjunabay.com/project/anjuna-palms/",
+   "https://theanjunabay.com/",
+   "https://theanjunabay.com/progress-updates/",
+   "https://anjunapalms.com/",
+   "https://rumavi.com/en/new-developments/indonesia/uluwatu/anjuna-palms",
+   "https://novasia.estate/en/developers/bali/anjuna-bay/",
+   "https://offplan.so/projects/the-anjuna-bay-uluwatu"
+  ],
+  "name": "Anjuna Palms",
+  "developer": "Anjuna Bay",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "melasti-cliff-villas-ungasan",
+  "area": "Melasti, Ungasan, Uluwatu, Badung",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas",
+  "docs_url": null,
+  "docs_listed": [
+   "Rumavi: three-bedroom villas in Ocean View and Jungle variants, private pool and jacuzzi, furnished",
+   "Rumavi: 25-year lease with contractual option to extend 25-30 years",
+   "Rumavi: construction about 12 months from purchase, payment staged over the build",
+   "Rumavi: price, unit count and sizes not published; header shows a garbled range 'Rp 134,000 - Rp 590,000'",
+   "Rumavi FAQ names Lyvin Properties Indonesia (founded 2019, 4 projects), while its own analysis says the developer identity is not disclosed"
+  ],
+  "note": "Off-plan three-bedroom villas in Ocean View and Jungle variants in Melasti, Ungasan, listed only on Rumavi with a 25-year lease plus a 25-30 year extension and a 12-month build. The portal links the listing to Lyvin Properties Indonesia, but Lyvin's own sites list only 2BR Melasti villas on a 39+50-year lease, so the developer is unconfirmed; no price, unit count, permit, escrow, plans or progress is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 to 30 years contractual option (Rumavi)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "Staged payments over the 12-month build (Rumavi)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit information on the listing.",
+   "escrow": "None published.",
+   "progress": "None published; build time stated as '12 months from purchase'.",
+   "plans": "No plans or sizes.",
+   "record": "Developer not confirmed. Rumavi FAQ names Lyvin Properties Indonesia, but lyvinproperties.co and lyvin.co list Lyvin Melasti Villas as 18 two-bedroom villas on a 39+50 year lease, not 3BR villas on 25 years. A similar 4-villa ocean/jungle 3BR scheme in Melasti is sold as AXM Villas by PT AXM Bali Capital, but no source links it to this name.",
+   "returns": "No yield or guarantee wording."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Lyvin Properties Indonesia",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://lyvinproperties.co/melasti"
+   },
+   {
+    "claim": "Lyvin founded 2019 with 4 completed projects (Rumavi) vs 'PT Lyvin Properties Indonesia, Est. 2022' (Lyvin)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://lyvinproperties.co/"
+   },
+   {
+    "claim": "25-year lease with 25-30 year extension option",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas"
+   },
+   {
+    "claim": "Build time 12 months from purchase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas"
+   },
+   {
+    "claim": "Price range shown as 'Rp 134,000 - Rp 590,000'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas"
+   },
+   {
+    "claim": "Same product as AXM Villas (PT AXM Bali Capital), 4 ocean/jungle 3BR villas in Melasti",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asia.villas/projects/indonesia/bali/badung/uluwatu/axm-villas"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas"
+   },
+   {
+    "claim": "Deposit protection for staged payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas"
+   },
+   {
+    "claim": "Walking distance to Melasti Beach and 5-star hotels",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa (ocean view)",
+    "3BR villa (jungle)"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": "Staged over the build period",
+   "foreign_ownership": "Leasehold 25 years plus 25-30 year option",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "jacuzzi",
+    "wooden sun deck",
+    "open-air bathroom",
+    "furnished"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Lease base and extension terms stated",
+   "Payment linked to the construction period",
+   "No guaranteed return claims"
+  ],
+  "flags": [],
+  "sources": [
+   "https://rumavi.com/en/new-developments/indonesia/uluwatu/melasti-cliff-villas",
+   "https://lyvinproperties.co/",
+   "https://lyvinproperties.co/melasti",
+   "https://lyvin.co/",
+   "https://www.asia.villas/projects/indonesia/bali/badung/uluwatu/axm-villas",
+   "https://www.balivillasales.com/off-plan-luxury-villas-in-balis-next-prime-investment-zone/"
+  ],
+  "name": "Melasti Cliff Villas",
+  "developer": "Not confirmed (portal developer section names Lyvin Properties Indonesia)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "seren-house-pererenan",
+  "area": "Pererenan, Mengwi, Badung",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.serenhouse.com/",
+  "docs_url": "https://www.serenhouse.com/",
+  "docs_listed": [
+   "developer site: four 4BR villas, 2.5 are plot, 238 m2 total build, 30-year leasehold 'with option to renew'",
+   "developer site: floor plan with room-by-room areas (ground floor 123 m2, 2nd floor 109 m2, pool 18.5 m2)",
+   "developer site: '14% rental yield per year', '20% price increase upon completion', '2x return ... after 5 years'",
+   "developer site: 'Starting from $600,000 USD (before 9.30.2025)'",
+   "contact: PT Marv West Development Group, Jl. Raya Semat No.17B, Tibubeneng",
+   "portals: 2BR townhouses 121 m2 on 97.8 m2 plots; prices $247,000-$333,000 (2BR) and $568,000-$767,000 (4BR); unit counts 5 or 4 villas + 10 townhouses"
+  ],
+  "note": "Boutique villa scheme in Pererenan by PT Marv West Development Group: the developer site shows four 4BR villas (238 m2 on 2.5 are) from $600,000 on a 30-year renewable lease with a room-by-room floor plan, a 14% yield and '2x return after 5 years' claims. Portals add 2BR townhouses and disagree on unit count (5 vs 14), size and price ($247,000-$767,000); no completion date, permit, escrow, progress or completed developer project is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 600000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "option to renew (terms not stated)",
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 4,
+   "payment_plan": null,
+   "price_per_m2": 2521
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or other permit on the developer site or portals.",
+   "escrow": "None published.",
+   "progress": "No construction updates; Rumavi says completion unconfirmed; asia.villas labels it 'Im Bau' (under construction) without evidence.",
+   "plans": "serenhouse.com publishes a floor plan with areas per room and floor for the 4BR villa.",
+   "record": "No completed project named; Rumavi describes the developer as emerging with limited public information; LinkedIn page lists 1 employee.",
+   "returns": "'14% Rental yield per year (ROI%)', '20% price increase upon completion', '2x return on investment subject to sale after 5 years'; no 'guaranteed' wording."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Number of units (4 villas developer, 5 units Rumavi, 4 villas + 10 townhouses BaanCoin)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.baancoin.com/projects/indonesia/bali/badung/mengwi/seren-house"
+   },
+   {
+    "claim": "4BR villa price ($600,000 developer vs $568,000 and $767,000 on Rumavi)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/pererenan/seren-house"
+   },
+   {
+    "claim": "4BR villa built area (238 m2 developer vs 252 m2 portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.serenhouse.com/"
+   },
+   {
+    "claim": "30-year leasehold with option to renew",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.serenhouse.com/"
+   },
+   {
+    "claim": "14% rental yield per year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.serenhouse.com/"
+   },
+   {
+    "claim": "20% price increase on completion and 2x return after 5 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.serenhouse.com/"
+   },
+   {
+    "claim": "Developer entity PT Marv West Development Group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/pt-marv-west-development-group"
+   },
+   {
+    "claim": "Under construction (asia.villas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asia.villas/de/projekte/indonesien/bali/badung/mengwi/seren-house"
+   },
+   {
+    "claim": "'Final development in this corner', no future construction nearby",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.serenhouse.com/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.serenhouse.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Tibubeneng, Kuta Utara, Badung, Bali, Indonesia",
+   "developer_company": "PT Marv West Development Group (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR townhouse",
+    "4BR villa"
+   ],
+   "size_min_m2": 121,
+   "size_max_m2": 252,
+   "price_min": 247000,
+   "price_max": 767000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 30 years with option to renew",
+   "rental_programme": "14% rental yield projection; 24/7 staff",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "water filtration",
+    "24/7 staff",
+    "CCTV",
+    "private parking",
+    "possible golf cart"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plan with room-by-room areas published",
+   "Plot and built sizes per unit published",
+   "Developer legal entity named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.serenhouse.com/",
+   "https://rumavi.com/en/new-developments/indonesia/pererenan/seren-house",
+   "https://www.baancoin.com/projects/indonesia/bali/badung/mengwi/seren-house",
+   "https://www.asia.villas/de/projekte/indonesien/bali/badung/mengwi/seren-house",
+   "https://linkedin.com/company/pt-marv-west-development-group"
+  ],
+  "name": "Seren House",
+  "developer": "Marv West Development Group",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 0,
+  "permit_number": null
+ }
+]

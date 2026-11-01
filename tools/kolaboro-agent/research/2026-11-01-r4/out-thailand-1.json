@@ -1,0 +1,1588 @@
+[
+ {
+  "slug": "layan-green-park-phase-2",
+  "name": "Layan Green Park Phase 2",
+  "developer": "The Phuket Family Garden Co., Ltd. (VillaCarte Group)",
+  "area": "Layan / Cherngtalay, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://layangreenpark.com/",
+  "docs_url": "https://layangreenpark.com/phase2",
+  "permit_number": "EIA approval ทส 1009.5/21650 (29 Dec 2022, report 256509-110); extension ทส 1009.5/11840 (4 Jul 2024, report 256703-21)",
+  "docs_listed": [
+   "land title deeds No. 70026 (Phase 2, 16,673 m2) and No. 36931 (Phase 1, 9,940 m2)",
+   "developer companies: Layan Green Park Co., Ltd. 0835562015261 (Phase 1) and The Phuket Family Garden Co., Ltd. 0835563004301 (Phase 2), directors and registered capital",
+   "Phase 2: 5 buildings, 386 units (about page)",
+   "building permit and EIA certificate stated as obtained (no numbers)",
+   "dated construction timeline Dec 2022 to Dec 2026 and online camera",
+   "master plan, unit plans and prices",
+   "rental pool: 60% of net rental income, 8.5% yield, 'guaranteed 60% share'",
+   "interest-free 3-payment plan to handover notice"
+  ],
+  "note": "Phase 2 (386 units, from $215,712) is under construction with end of works December 2026; the ONEP register confirms the Phase 2 condo EIA (ทส 1009.5/21650, 29 Dec 2022, plus a 2024 extension) and shows Phase 1 as operating, but the developer publishes no permit number or escrow and markets a 'guaranteed 60% share' of net rental income with an 8.5% yield (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 215712,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "yield_pct": 8.5,
+   "progress_pct": null,
+   "developer_delivered": "Layan Green Park Phase 1 (350 units, 4 buildings) completed and operating as La Green Hotel & Residence; ONEP register lists the Phase 1 condo EIA as opened and operating",
+   "payment_plan": "Interest-free installment plan in three payments up to the handover notice",
+   "price_per_m2": 5875,
+   "progress_updates": true,
+   "units": 386
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "Developer only says the building permit and EIA certificate were obtained. ONEP Smart EIA Plus lists report 256509-110 'Layan Green Park Phase 2' condo, owner The Phuket Family Garden Co., Ltd., approval letter ทส 1009.5/21650 dated 29/12/2565 (29 Dec 2022), status approved to build / under construction, and an extension report 256703-21 (ทส 1009.5/11840, 4 Jul 2024); a hotel EIA 256509-76 (ทส 1009.5/21625) also exists. No building permit number found",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Developer timeline with dated stages and online camera; ONEP register status for 256509-110 is 'approved to build, under construction'; BURO News (9 Oct 2026) relays the developer's September 2026 report (Building H roof waterproofing finished, duplexes J1/J2 at foundation stage)",
+   "plans": "Master plan and unit plans/prices pages published by the developer",
+   "record": "ONEP register: Phase 1 condo EIA 14669 (ทส 1010.5/12360, 21 Sep 2020, owner Layan Green Park Co., Ltd.) status 'opened and operating'; homepage says Phase 1 owners have keys",
+   "returns": "Income page: 'Yield 8.5% per year' and 'You receive a guaranteed 60% share of the net rental income'; homepage: Phase 1 'annual returns from 7% to 10%'"
+  },
+  "claims": [
+   {
+    "claim": "Building permit and EIA certificate obtained for Phase 2",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=11590"
+   },
+   {
+    "claim": "Phase 2 EIA extension approved (enlarged project)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13544"
+   },
+   {
+    "claim": "Developer company The Phuket Family Garden Co., Ltd. 0835563004301 is registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=8547"
+   },
+   {
+    "claim": "Phase 1 company Layan Green Park Co., Ltd. 0835562015261 is registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=807"
+   },
+   {
+    "claim": "Phase 1 construction completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=9698"
+   },
+   {
+    "claim": "Phase 2 under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=11590"
+   },
+   {
+    "claim": "End of construction December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://layangreenpark.com/phase2"
+   },
+   {
+    "claim": "Phase 2 construction over 60% and condo sales over 60% (Jan 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mgronline.com/south/detail/9680000004118"
+   },
+   {
+    "claim": "Yield 8.5% per year from the rental pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://layangreenpark.com/income/program"
+   },
+   {
+    "claim": "Guaranteed 60% share of net rental income",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://layangreenpark.com/income/program"
+   },
+   {
+    "claim": "Price from $215,712 for 36.72 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://layangreenpark.com/phase2"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://layangreenpark.com/phase2"
+   },
+   {
+    "claim": "Partner dispute over the project settled, mutual claims withdrawn",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.orda.kz/settlement-reached-in-phuket-over-layan-green-park-eco-condo-dispute-8665"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Cherngtalay, Thalang, Phuket, Thailand",
+   "developer_company": "The Phuket Family Garden Co., Ltd., 0835563004301 (registered 16 Mar 2020, registered capital THB 100,000,000); Phase 1: Layan Green Park Co., Ltd., 0835562015261",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 350,
+   "listed_or_audited": "Not listed; MGR Online reports the developer cited an independent review by BDO Thailand",
+   "construction_start": "2023-06",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "duplex"
+   ],
+   "size_min_m2": 36.72,
+   "size_max_m2": 269.31,
+   "price_min": 215712,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Interest-free installment plan in three payments up to the handover notice",
+   "foreign_ownership": null,
+   "rental_programme": "Rental pool run by the in-house hotel operator (La Green Hotel & Residence): owner receives 60% of net rental income, 8.5% per year advertised, 30 days personal use",
+   "service_charge": null,
+   "brand": "La Green Hotel & Residence (own operator), EDGE green certification",
+   "amenities": [
+    "7 pools",
+    "spa over 1,000 m2",
+    "gym",
+    "2 restaurants",
+    "3 bars",
+    "coworking",
+    "conference hall",
+    "kids club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Cherngtalay local administration (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Phase 2 condo EIA approval confirmed on the ONEP register (ทส 1009.5/21650, 2022, extension 2024)",
+   "Phase 1 of the same project is completed and listed as operating on the ONEP register",
+   "Title deed numbers, company registration numbers, directors and registered capital published",
+   "Dated construction timeline and live camera"
+  ],
+  "flags": [
+   {
+    "text": "The Thaiger reported a Kazakh investor filed a police complaint alleging he was misled into investing in the Layan Green Park project and received no returns; the accused were not the listed developer companies.",
+    "source": "https://devth.thethaiger.com/th/news/phuket/kazakh-man-reports-phuket-investment-scam-run-by-ukrainian-and-thai-men"
+   },
+   {
+    "text": "Orda reported in March 2025 that Kazakh partners sued developer Vadym Bukhkalov in Phuket seeking $55 million; he denied the allegations and police reportedly found the records in order.",
+    "source": "https://en.orda.kz/phuket-property-battle-why-kazakhstani-investors-are-suing-a-ukrainian-developer-5469/"
+   },
+   {
+    "text": "Orda reported in October 2025 that the partners' dispute was settled through mediation and litigation, with mutual claims withdrawn and Vadim Bukhkalov keeping management.",
+    "source": "https://en.orda.kz/settlement-reached-in-phuket-over-layan-green-park-eco-condo-dispute-8665"
+   }
+  ],
+  "sources": [
+   "https://layangreenpark.com/",
+   "https://layangreenpark.com/phase2",
+   "https://layangreenpark.com/about",
+   "https://layangreenpark.com/income/program",
+   "https://layangreenpark.com/construction",
+   "https://layangreenpark.com/layout",
+   "https://eia.onep.go.th/eia/detail?id=11590",
+   "https://eia.onep.go.th/eia/detail?id=13544",
+   "https://eia.onep.go.th/eia/detail?id=11546",
+   "https://eia.onep.go.th/eia/detail?id=9698",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=8547",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=807",
+   "https://buro.co.th/en/news/2026-10-09-layan-green-park-handover",
+   "https://mgronline.com/south/detail/9680000004118",
+   "https://en.orda.kz/phuket-property-battle-why-kazakhstani-investors-are-suing-a-ukrainian-developer-5469/",
+   "https://en.orda.kz/settlement-reached-in-phuket-over-layan-green-park-eco-condo-dispute-8665",
+   "https://devth.thethaiger.com/th/news/phuket/kazakh-man-reports-phuket-investment-scam-run-by-ukrainian-and-thai-men"
+  ]
+ },
+ {
+  "slug": "riviera-malibu-residences",
+  "name": "The Riviera Malibu Residences",
+  "developer": "The Riviera Group Thailand",
+  "area": "Pattaya",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "url": "https://therivieragroupthailand.com/the-riviera-malibu-residences/",
+  "docs_url": "https://therivieragroupthailand.com/the-riviera-malibu-residences/",
+  "permit_number": "EIA approval ทส 1010.5/16617 (12 Oct 2021, report 256504-39)",
+  "docs_listed": [
+   "land area 2 rai 275 sq.wah",
+   "buildable 26,957 m2 / saleable 14,815 m2",
+   "30 floors, 275 units with unit mix and sizes",
+   "floor plans section",
+   "construction start Oct 2023, expected completion Dec 2026",
+   "news: permanent electrical connection (8 Jul 2026), on track for year-end completion (19 Jul 2026), award Sep 2026"
+  ],
+  "note": "Freehold 30-floor, 275-unit tower on Pratumnak Soi 5 with floor plans and completion due December 2026; the ONEP register confirms its EIA (ทส 1010.5/16617, 12 Oct 2021) and lists it under construction, and the developer's three earlier towers are listed as operating, but no price, permit number or escrow is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Riviera Group: The Riviera Ocean Drive (43 floors, 513 rooms, completed 2023), The Riviera Monaco (40 floors, 412 rooms, completed 2022) and The Riviera Jomtien (46 floors, 1,072 rooms) named as completed; all three EIAs listed as opened and operating on the ONEP register",
+   "units": 275,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "Developer publishes no permit or EIA number. ONEP Smart EIA Plus lists report 256504-39 'The Riviera Malibu', owner Riviera Malibu Property Development Co., Ltd. (0205563010501), Pratumnak Soi 5, approval letter ทส 1010.5/16617 dated 12/10/2564 (12 Oct 2021), status approved to build / under construction; a later change notice renames it 'The Riviera Malibu and Residences'",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Developer news 8 Jul and 19 Jul 2026 (tower topped off, permanent power connected, finishing works); Pattaya Mail (7 Aug and 14 Sep 2026) reports finishing and fit-out works toward December 2026 completion; ONEP status under construction",
+   "plans": "Project page has a floor plans section and unit sizes per type",
+   "record": "ONEP register lists The Riviera Ocean Drive (13320), The Riviera Monaco (9197) and The Riviera Jomtien (9987) as opened and operating",
+   "returns": "No guaranteed return language found"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for The Riviera Malibu",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=10788"
+   },
+   {
+    "claim": "Developer company Riviera Malibu Property Development Co., Ltd. is registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=7818"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=10788"
+   },
+   {
+    "claim": "Tower structure topped off and finishing works under way (2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pattayamail.com/latestnews/news/the-riviera-malibu-welcomes-university-students-for-hands-on-learning-experience-564951"
+   },
+   {
+    "claim": "Expected completion December 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-malibu-residences/"
+   },
+   {
+    "claim": "275 units on 30 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-malibu-residences/"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-malibu-residences/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/the-riviera-malibu-residences/"
+   },
+   {
+    "claim": "The Riviera Ocean Drive completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=8911"
+   },
+   {
+    "claim": "The Riviera Monaco completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6049"
+   },
+   {
+    "claim": "The Riviera Jomtien completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6792"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pattaya, Chonburi, Thailand",
+   "developer_company": "Riviera Malibu Property Development Co., Ltd., 0205563010501 (registered 12 Mar 2020), part of The Riviera Group",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 1997,
+   "listed_or_audited": null,
+   "construction_start": "2023-10",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "duplex",
+    "penthouse"
+   ],
+   "size_min_m2": 27,
+   "size_max_m2": 276,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit (foreign quota implied by 'Freehold'; quota not stated)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sky pool 18th floor",
+    "rooftop infinity pool",
+    "cinema",
+    "golf simulators",
+    "onsen",
+    "bowling alleys",
+    "gym",
+    "kids club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Pattaya City / Nong Prue municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Developer's three earlier Pattaya towers listed as operating on the ONEP register",
+   "Dated 2026 construction news, confirmed by Pattaya Mail reporting",
+   "Unit mix, sizes and floor plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therivieragroupthailand.com/the-riviera-malibu-residences/",
+   "https://therivieragroupthailand.com/2026/07/08/the-riviera-malibu-reaches-key-milestone-with-permanent-electrical-connection-pattaya-thailand/",
+   "https://therivieragroupthailand.com/2026/07/19/the-riviera-malibu-residences-stays-on-track-for-year-end-completion/",
+   "https://eia.onep.go.th/eia/detail?id=10788",
+   "https://eia.onep.go.th/eia/detail?id=12559",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=7818",
+   "https://www.pattayamail.com/latestnews/news/the-riviera-malibu-residences-on-track-for-year-end-completion-as-major-construction-milestone-reached-560357",
+   "https://www.pattayamail.com/latestnews/news/the-riviera-malibu-welcomes-university-students-for-hands-on-learning-experience-564951",
+   "https://eia.onep.go.th/eia/detail?id=8911",
+   "https://eia.onep.go.th/eia/detail?id=6049",
+   "https://eia.onep.go.th/eia/detail?id=6792",
+   "https://therivieragroupthailand.com/category/news-2026/",
+   "https://therivieragroupthailand.com/about-us"
+  ]
+ },
+ {
+  "slug": "citygate-de-phuket",
+  "name": "Citygate de Phuket",
+  "developer": "Citygate Exclusive Developments Co., Ltd.",
+  "area": "Kamala, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://citygatedephuket.com/",
+  "docs_url": "https://citygatedephuket.com/",
+  "permit_number": "EIA approval ทส 1009.5/24797 (14 Nov 2025, report 256807-88)",
+  "docs_listed": [
+   "developer Citygate Exclusive Developments Co., Ltd.",
+   "design Oracle Architects",
+   "project area 5-2-69.5 rai (9,078 m2)",
+   "325 units in 4 buildings (A 66, B 113, C 42, D 104), 7 storeys",
+   "floor plans for every level (G to roof)",
+   "8 unit plans 46-191 m2 with room sizes",
+   "monthly construction updates Jul to Sep 2026",
+   "sale kit PDF"
+  ],
+  "note": "325-unit, four-building condo in Kamala with floor-by-floor and unit plans and monthly site updates (Building C structure complete by September 2026); the ONEP register confirms its EIA (ทส 1009.5/24797, 14 Nov 2025) and lists the same company's earlier 374-unit Citygate condo as operating, but the site names no price, completion date, permit number or escrow (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 325,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "Developer publishes no permit or EIA number. ONEP lists report 256807-88 'Citygate de Phuket' residential condominium, Kamala, owner Citygate Exclusive Development Co., Ltd. (0835557012811), approval letter ทส 1009.5/24797 dated 14/11/2568 (14 Nov 2025), status approved to build / under construction",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Monthly updates (Jul, Aug, Sep 2026): Building C structure complete, Building A upper slabs, Building D upper floors, Building B pile caps; ONEP status under construction",
+   "plans": "Floor plans for every level and eight unit plans with room sizes",
+   "record": "Developer site names no completed project, but ONEP lists the same company's earlier 'Citygate' condominium in Kamala (report 10610, ทส 1009.5/15914, 28 Dec 2016) as opened and operating; portals describe it as 374 units completed in Dec 2019",
+   "returns": "No guaranteed return language found"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for Citygate de Phuket",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15144"
+   },
+   {
+    "claim": "Developer Citygate Exclusive Developments Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=9095"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15144"
+   },
+   {
+    "claim": "Building C structure complete (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://citygatedephuket.com/"
+   },
+   {
+    "claim": "Same company completed an earlier condominium (Citygate, Kamala)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=7256"
+   },
+   {
+    "claim": "Earlier Citygate condo had 374 units, completed Dec 2019",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.com/projects/thailand/phuket/kathu/kamala/citygate"
+   },
+   {
+    "claim": "325 units in 4 buildings on 9,078 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://citygatedephuket.com/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://citygatedephuket.com/"
+   },
+   {
+    "claim": "Price published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://citygatedephuket.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://citygatedephuket.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Kamala, Kathu, Phuket, Thailand",
+   "developer_company": "Citygate Exclusive Development Co., Ltd., 0835557012811 (registered 19 Sep 2014)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 374,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR duplex",
+    "3BR pool"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 191,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lagoon pool",
+    "parking for about 141 cars"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Kamala subdistrict administration (building permit)",
+   "brochure_url": "https://citygatedephuket.com/files/citygate-de-phuket-salekit-en.pdf"
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Same company's earlier Kamala condominium listed as operating on the ONEP register",
+   "Monthly dated construction updates with building-by-building detail",
+   "Full floor and unit plans with room sizes"
+  ],
+  "flags": [],
+  "sources": [
+   "https://citygatedephuket.com/",
+   "https://citygatedephuket.com/files/citygate-de-phuket-salekit-en.pdf",
+   "https://eia.onep.go.th/eia/detail?id=15144",
+   "https://eia.onep.go.th/eia/detail?id=7256",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=9095",
+   "https://www.fazwaz.com/projects/thailand/phuket/kathu/kamala/citygate"
+  ]
+ },
+ {
+  "slug": "the-one-naiharn",
+  "name": "The ONE NaiHarn",
+  "developer": "THE ONE PHUKET CO. LTD.",
+  "area": "Nai Harn, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://theonephuket.com/theonenaiharn/eng",
+  "docs_url": "https://theonephuket.com/theonenaiharn/eng",
+  "permit_number": "EIA approval ทส 1010.5/1620 (5 Feb 2021, report 14990)",
+  "docs_listed": [
+   "completion date September 2026 (project page), December 2026 (group homepage), June 2026 (theonenaiharn.com)",
+   "developer THE ONE PHUKET CO. LTD., reg. no. 0835551011987",
+   "196 apartments, 7 floors plus rooftop, 13 layouts",
+   "hotel license with Burasari Group (no number)",
+   "layouts with sizes (studio 26.8 m2 to 1-bed 50.1 m2)",
+   "project presentation PDF",
+   "timeline: EIA 2021, construction start 7 May 2023, frame complete April 2024"
+  ],
+  "note": "196-apartment condo-hotel in Rawai near Nai Harn managed by Burasari Group; the ONEP register confirms its EIA (ทส 1010.5/1620, 5 Feb 2021) and the contractor reported the structure complete in 2024, but the developer's own pages give three different completion dates (June, September and December 2026) and no price, escrow or completed project is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 196,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "evidence": {
+   "permit": "Developer says 'EIA Eco-Friendly Project' and 'received an EIA in 2021' with no number. ONEP lists report 14990 'The One Nai Harn' condominium, Rawai, owner The One Phuket Co., Ltd. (0835551011987, matching the number on the developer site), approval letter ทส 1010.5/1620 dated 05/02/2564 (5 Feb 2021), status approved to build / under construction",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "theonenaiharn.com publishes a dated timeline (construction start 7 May 2023, frame complete April 2024); structural contractor Dolce Construction posted 'structure complete' on 15 May 2024; ONEP status under construction. No percentage and no 2026 update. Unit count differs: developer 196, contractor page and Hipflat 218",
+   "plans": "Layouts published (types A-1 to E-1 with sizes)",
+   "record": "Group pages list Aura (Q2 2028), Ashram villas and Panorama Kata but name no completed project",
+   "returns": "No guaranteed return language for this project on the developer pages (a 28% return claim refers to Panorama Kata; a Hipflat portal page mentions a 7% guaranteed return for 5 years, not found on developer pages)"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=9985"
+   },
+   {
+    "claim": "Developer THE ONE PHUKET CO. LTD., reg. no. 0835551011987, registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=8665"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=9985"
+   },
+   {
+    "claim": "Structure (frame) completed in April 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dolce-construction.com/the-one-nai-harn-structure-complete/"
+   },
+   {
+    "claim": "Completion date September 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://theonephuket.com/"
+   },
+   {
+    "claim": "196 apartments",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dolce-construction.com/project/the-one-naiharn/"
+   },
+   {
+    "claim": "Hotel license with Burasari Group as manager",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theonephuket.com/theonenaiharn/eng"
+   },
+   {
+    "claim": "Developer active since 2019 with completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theonephuket.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theonephuket.com/theonenaiharn/eng"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2019,
+   "developer_hq": "Chalong, Mueang Phuket, Thailand",
+   "developer_company": "THE ONE PHUKET CO. LTD., 0835551011987 (registered 24 Nov 2008)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-05",
+   "handover_promised": "2026-Q4",
+   "original_handover": "2026-Q2 (June 2026 still shown on theonenaiharn.com)",
+   "delay_months": 6,
+   "unit_types": [
+    "studio",
+    "1BR"
+   ],
+   "size_min_m2": 26.8,
+   "size_max_m2": 50.1,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Condo-hotel with hotel license, managed by Burasari Group; no figures for this project",
+   "service_charge": null,
+   "brand": "Burasari Group (operator)",
+   "amenities": [
+    "heated rooftop pool",
+    "courtyard pool",
+    "fitness room",
+    "kids area",
+    "restaurant",
+    "spa with sauna"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Rawai municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Developer registration number published and matches the register",
+   "Dated construction timeline; structure reported complete in 2024 by the contractor",
+   "Layouts with sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theonephuket.com/theonenaiharn/eng",
+   "https://theonephuket.com/",
+   "https://theonenaiharn.com/",
+   "https://eia.onep.go.th/eia/detail?id=9985",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=8665",
+   "https://dolce-construction.com/the-one-nai-harn-structure-complete/",
+   "https://dolce-construction.com/project/the-one-naiharn/",
+   "https://www.hipflat.com/projects/the-one-naiharn-jvspft"
+  ]
+ },
+ {
+  "slug": "the-zero-nai-yang",
+  "name": "The Zero Nai Yang",
+  "developer": "The Zero Developments",
+  "area": "Nai Yang, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://thezeronaiyang.com/",
+  "docs_url": "https://thezeronaiyang.com/",
+  "permit_number": "EIA approval ทส 1009.5/24287 (31 Oct 2025, report 256806-7, listed as 'The Zero Boutique Nai Yang')",
+  "docs_listed": [
+   "now marketed as Silhouette by The Zero Phuket",
+   "EIA approved badge (no number)",
+   "150 residences, 5 storeys, 29.5-108 m2",
+   "base prices from THB 4,940,000 by unit type; furniture packages from THB 350,000",
+   "completion Q2 2028",
+   "freehold for foreigners within quota",
+   "rental pool 70% of net income paid twice a year",
+   "payment plan THB 100,000 reserve, 35% on contract, 55% during construction, balance on handover",
+   "founder's UK project list with years"
+  ],
+  "note": "Now sold as Silhouette by The Zero Phuket: 150 freehold residences 350 m from Nai Yang Beach from THB 4.94M with completion Q2 2028; the ONEP register lists a Zero Developments condo EIA in Nai Yang (ทส 1009.5/24287, 31 Oct 2025) as not yet under construction, floor plans are only sent on request and no escrow or progress is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 4940000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Zero SW20 (Raynes Park, London, 35 apartments) completed 2022 per Buildington; founder's earlier UK schemes listed by the developer (Elizabeth Court, The Ambassador, Powell House, Glebelands House, The Ridge)",
+   "units": 150,
+   "payment_plan": "THB 100,000 reservation, 35% on contract, 55% in instalments during construction, balance on handover"
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "Site shows an 'EIA APPROVED' badge with no number. ONEP lists report 256806-7 'The Zero Boutique Nai Yang' condominium, Soi Nai Yang 2/1, Sakhu, owner Zero Developments Co., Ltd. (0835566045831, registered 8 Dec 2023), approval letter ทส 1009.5/24287 dated 31/10/2568 (31 Oct 2025); the register name differs from the marketing name Silhouette",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published; ONEP project status is 'not yet constructed'. The Nation gives completion as Q3 2028 and a starting price of THB 4.4M (March 2026)",
+   "plans": "Floor plans sent only on request",
+   "record": "Developer lists UK schemes by year; Buildington records The Zero SW20 (32-34 Bushey Road, London SW20, 35 flats, developer Zero Developments) as completed in 2022; a 2022 MLM Property article names Max Smith of Zero Developments London Ltd as the SW20 site buyer, not Robert Hodge",
+   "returns": "Rental pool pays 70% of net income twice a year; no guaranteed return for Silhouette. The Nation (26 Mar 2026) reports projected 11% annual ROI for both Zero projects and a guaranteed 10% ROI for three years only for The Zero Bang Tao"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14924"
+   },
+   {
+    "claim": "Developer Zero Developments Co., Ltd. registered and active in Phuket",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=11064"
+   },
+   {
+    "claim": "Construction stage: not started",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14924"
+   },
+   {
+    "claim": "Completion Q2 2028",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.nationthailand.com/business/property/40064300"
+   },
+   {
+    "claim": "150 residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nationthailand.com/business/property/40064300"
+   },
+   {
+    "claim": "Prices from THB 4,940,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thezeronaiyang.com/"
+   },
+   {
+    "claim": "The Zero SW20 (35 apartments, London) completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.buildington.co.uk/buildings/11035/england/london-sw20/32-34-bushey-road/the-zero-sw20"
+   },
+   {
+    "claim": "Founder Robert Hodge delivered The Zero SW20",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mlmproperty.co.uk/news/zero-carbon-future/"
+   },
+   {
+    "claim": "Freehold for foreigners within quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thezeronaiyang.com/"
+   },
+   {
+    "claim": "Owners receive 70% of net rental income",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thezeronaiyang.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thezeronaiyang.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2019,
+   "developer_hq": "Phuket, Thailand (founded in London)",
+   "developer_company": "Zero Developments Co., Ltd., 0835566045831 (registered 8 Dec 2023)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 35,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR plus",
+    "2BR",
+    "penthouse"
+   ],
+   "size_min_m2": 29.5,
+   "size_max_m2": 108,
+   "price_min": 4940000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "THB 100,000 reservation, 35% on contract, 55% during construction, balance on handover",
+   "foreign_ownership": "Freehold condominium unit within the 49% foreign quota",
+   "rental_programme": "Hotel-managed rental pool, owners receive 70% of net rental income paid twice a year",
+   "service_charge": "Set per m2, not published",
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool and bar",
+    "spa",
+    "sauna and steam",
+    "gym",
+    "golf simulator",
+    "kids club",
+    "co-working",
+    "beach shuttle"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Sakhu subdistrict administration (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval for a Zero Developments condo in Nai Yang confirmed on the ONEP register",
+   "Base prices per unit type and payment stages published",
+   "London predecessor scheme confirmed as completed by an independent building database"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thezeronaiyang.com/",
+   "https://www.nationthailand.com/business/property/40064300",
+   "https://eia.onep.go.th/eia/detail?id=14924",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=11064",
+   "https://www.buildington.co.uk/buildings/11035/england/london-sw20/32-34-bushey-road/the-zero-sw20",
+   "https://mlmproperty.co.uk/news/zero-carbon-future/",
+   "https://thezerophuket.com/london/",
+   "https://thezerophuket.com/about-us/"
+  ]
+ },
+ {
+  "slug": "vega-condominium",
+  "name": "Vega Condominium",
+  "developer": "Metrics Development",
+  "area": "Bang Tao / Cherngtalay, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://vegacondominium.com/",
+  "docs_url": null,
+  "permit_number": "EIA approvals under earlier names: ทส 1009.5/5851 (12 Mar 2024, report 256610-42, 'Ramada Plaza by Wyndham Phuket Bangtao Condo') and ทส 1009.5/8948 (23 May 2024, report 256612-44, 'Condo 2'), owner Vega by Sun Hills Co., Ltd.",
+  "docs_listed": [
+   "147 units in a seven-storey building, studios 34 m2 and 1-bed 52 m2",
+   "price from THB 3,475,000 (studio) and THB 5,880,000 (1-bed); THB 115,833/m2",
+   "studio and 1-bed floor plans in brochure",
+   "foreign quota freehold",
+   "payment plan THB 200,000 reservation then 30/30/20/15/5 tied to milestones",
+   "planned handover March 2028",
+   "sinking fund THB 700/m2, CAM THB 75/m2",
+   "developer portfolio named: Vega, Sirius, Proxima, Capella"
+  ],
+  "note": "vegacondominium.com sells 147 units from THB 3.475M with handover March 2028, but the same site (29/24 Soi Khok Tanot 3, Choeng Thale) is also marketed as Sun Hills Lakeside (completion 2027), Metrics' own 2025 brochure gives Vega 353 apartments with construction start August 2024, and the project company Vega by Sun Hills Co., Ltd. holds 2024 EIA approvals under the name Ramada Plaza by Wyndham Phuket Bangtao Condo; no permit number, escrow or progress is published on the Vega site (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 3475000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 147,
+   "payment_plan": "THB 200,000 reservation, 30% contract, 30% foundation, 20% roof, 15% interior, 5% transfer",
+   "price_per_m2": 115833
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": "Vega site publishes no permit or EIA number. ONEP lists owner Vega by Sun Hills Co., Ltd. (0835565022811, registered 9 Nov 2022, active) with three condo EIAs in Moo 6 Cherngtalay: 256610-42 'Ramada Plaza by Wyndham Phuket Bangtao Condo' (ทส 1009.5/5851, 12 Mar 2024), 256612-44 'Condo 2' (ทส 1009.5/8948, 23 May 2024) and 256904-30 'Sun Hills Lakeside Phuket' (report filed, no approval date). The link to Vega rests on the company name, the shared address 29/24 Soi Khok Tanot 3 (Metrics brochure and sun-hills-lakeside.com) and NovAsia's reading of the DBD certificate (renamed from Vega by Metrics in Aug 2025)",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Vega site publishes no progress (payments still at foundation stage). Metrics' Capella brochure (Mar 2025) says Vega construction started August 2024; ONEP lists Sun Hills Lakeside as 'construction started' but the Ramada condo report as 'not yet constructed'; NovAsia describes it as under construction",
+   "plans": "Studio and 1-bed floor plans in the brochure",
+   "record": "Site names a portfolio (Sirius, Proxima, Capella) without stating any as completed; a ThaiCost listing marks Proxima Villas as handed over; Sirius by Metrics (separate company) is under construction per ONEP",
+   "returns": "No guaranteed return language"
+  },
+  "claims": [
+   {
+    "claim": "147 residences in one seven-storey building",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://capella-villas.com/uploads/images/2025-03/CapellaVillas_EN.pdf"
+   },
+   {
+    "claim": "Project company Vega by Sun Hills Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=9669"
+   },
+   {
+    "claim": "Condo EIA approved for the site (under the Ramada Plaza name)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13121"
+   },
+   {
+    "claim": "Second condo EIA approved (Condo 2)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=13300"
+   },
+   {
+    "claim": "Construction stage",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16049"
+   },
+   {
+    "claim": "Planned handover March 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sun-hills-lakeside.com/"
+   },
+   {
+    "claim": "Price from THB 3,475,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sun-hills-lakeside.com/"
+   },
+   {
+    "claim": "Developer is Metrics Development",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/sun-hills-lakeside/"
+   },
+   {
+    "claim": "Building in Phuket since 2013, Developer of the Year 2022 and 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vegacondominium.com/"
+   },
+   {
+    "claim": "Foreign quota freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vegacondominium.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vegacondominium.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2013,
+   "developer_hq": "Phuket, Thailand (Metrics: Krasnodar, Russia origin)",
+   "developer_company": "Vega by Sun Hills Co., Ltd., 0835565022811 (registered 9 Nov 2022; formerly Vega by Metrics per NovAsia)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-08",
+   "handover_promised": "2028-Q1",
+   "original_handover": "2026-08 (Georid record of developer page, Aug 2026) / 2027 (Sun Hills Lakeside)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 52,
+   "price_min": 3475000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "THB 200,000 reservation, 30% contract, 30% foundation, 20% roof, 15% interior, 5% transfer",
+   "foreign_ownership": "Freehold condominium unit within the foreign quota",
+   "rental_programme": "Site offers to connect buyers with a rental manager; no figures",
+   "service_charge": "CAM THB 75/m2 per month; sinking fund THB 700/m2 one-off",
+   "brand": null,
+   "amenities": [
+    "lagoon pool and kids pool",
+    "fitness centre",
+    "spa",
+    "restaurant",
+    "bar and mini cinema",
+    "kids club",
+    "co-working"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Cherngtalay subdistrict administration (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Prices per unit type, price per m2 and running costs published",
+   "Payment plan tied to construction milestones",
+   "Project company holds approved condo EIAs on the ONEP register"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vegacondominium.com/",
+   "https://capella-villas.com/uploads/images/2025-03/CapellaVillas_EN.pdf",
+   "https://metricsthai.com/en/project/vega-condo/",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=9669",
+   "https://eia.onep.go.th/eia/detail?id=13121",
+   "https://eia.onep.go.th/eia/detail?id=13300",
+   "https://eia.onep.go.th/eia/detail?id=16049",
+   "https://sun-hills-lakeside.com/",
+   "https://novasia.estate/en/projects/sun-hills-lakeside/",
+   "https://georid.com/thailand/en/complexes/vega-condominium-392",
+   "https://thaicost.com/en/developers/vega-by-sun-hills-co-ltd/",
+   "https://linkedin.com/company/metrics-development-thailand"
+  ]
+ },
+ {
+  "slug": "riviera-beverly-hills-residences",
+  "name": "The Riviera Beverly Hills Residences",
+  "developer": "The Riviera Group Thailand",
+  "area": "Pattaya",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "url": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/",
+  "docs_url": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/",
+  "permit_number": "EIA approval ทส 1009.5/23677 (20 Oct 2025, report 256807-41)",
+  "docs_listed": [
+   "land area 5 rai",
+   "buildable 32,696 m2 / residential 17,824 m2",
+   "469 residences in 3 eight-storey buildings, 4 commercial units, 124 parking",
+   "room types studio to 3 bed",
+   "construction start Feb 2026, completion Jun 2028"
+  ],
+  "note": "Freehold low-rise of 469 residences in three buildings off Thepprasit Soi 9, Jomtien, with construction from February 2026 to June 2028; the ONEP register confirms its EIA (ทส 1009.5/23677, 20 Oct 2025) and Pattaya Mail reports prices from THB 2.3M, but the developer publishes no price, floor plans, progress updates, permit number or escrow (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 2300000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Riviera Group: The Riviera Ocean Drive (43 floors, 513 rooms, completed 2023), The Riviera Monaco (40 floors, 412 rooms, completed 2022) and The Riviera Jomtien (46 floors, 1,072 rooms) named as completed; all three EIAs listed as opened and operating on the ONEP register",
+   "units": 469
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "Developer publishes no permit or EIA number. ONEP lists report 256807-41 'The Riviera Beverly Hills Residences', owner Riviera Beverly Hills Residence Co., Ltd. (0205552014471), approval letter ทส 1009.5/23677 dated 20/10/2568 (20 Oct 2025), status approved to build / under construction",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No progress updates on the project page; ONEP status under construction and Pattaya Mail (12 Oct 2026) says construction is progressing, with no figure",
+   "plans": "No floor or unit plans on the project page; Pattaya Mail says unit plans are available from the sales team",
+   "record": "ONEP register lists the group's Ocean Drive, Monaco and Jomtien towers as opened and operating",
+   "returns": "No guaranteed return language found"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for Beverly Hills Residences",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15079"
+   },
+   {
+    "claim": "Developer company Riviera Beverly Hills Residence Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=11031"
+   },
+   {
+    "claim": "Project is under construction (construction start stated as February 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15079"
+   },
+   {
+    "claim": "Completion June 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/"
+   },
+   {
+    "claim": "469 residences in three 8-storey buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pattayamail.com/latestnews/news/the-riviera-beverly-hills-brings-hollywood-inspired-luxury-living-to-jomtien-568135"
+   },
+   {
+    "claim": "Prices from THB 2.3M (studio)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pattayamail.com/latestnews/news/the-riviera-beverly-hills-brings-hollywood-inspired-luxury-living-to-jomtien-568135"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/"
+   },
+   {
+    "claim": "The Riviera Ocean Drive completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=8911"
+   },
+   {
+    "claim": "The Riviera Monaco completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6049"
+   },
+   {
+    "claim": "The Riviera Jomtien completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6792"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pattaya, Chonburi, Thailand",
+   "developer_company": "Riviera Beverly Hills Residence Co., Ltd., 0205552014471 (registered 25 Aug 2009), part of The Riviera Group",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 1997,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2300000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit (foreign quota implied by 'Freehold'; quota not stated)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "66 m and 62 m lagoon pools",
+    "rooftop pool",
+    "gym with boxing ring",
+    "onsen",
+    "tennis and pickleball courts",
+    "golf simulator",
+    "running track",
+    "kids club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Pattaya City / Nong Prue municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Developer's three earlier towers listed as operating on the ONEP register",
+   "Construction start and completion dates published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/",
+   "https://eia.onep.go.th/eia/detail?id=15079",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=11031",
+   "https://www.pattayamail.com/latestnews/news/the-riviera-beverly-hills-brings-hollywood-inspired-luxury-living-to-jomtien-568135",
+   "https://eia.onep.go.th/eia/detail?id=8911",
+   "https://eia.onep.go.th/eia/detail?id=6049",
+   "https://eia.onep.go.th/eia/detail?id=6792",
+   "https://therivieragroupthailand.com/category/news-2026/",
+   "https://therivieragroupthailand.com/about-us"
+  ]
+ },
+ {
+  "slug": "riviera-santa-monica",
+  "name": "The Riviera Santa Monica",
+  "developer": "The Riviera Group Thailand",
+  "area": "Jomtien, Pattaya",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "url": "https://therivieragroupthailand.com/santa-monica-in-jomtien/",
+  "docs_url": "https://therivieragroupthailand.com/santa-monica-in-jomtien/",
+  "permit_number": "EIA approval ทส 1009.5/17814 (1 Sep 2025, report 256806-6)",
+  "docs_listed": [
+   "land area 3.2 rai",
+   "buildable 36,928 m2 / residential 18,687 m2",
+   "34 storeys, 447 residences with unit counts and size ranges",
+   "124 parking spaces",
+   "construction start Oct 2025, finish Nov 2028",
+   "states backing from Thai commercial banks"
+  ],
+  "note": "Freehold 34-storey, 447-unit tower off Jomtien Second Road, construction October 2025 to November 2028; the ONEP register confirms its EIA (ทส 1009.5/17814, 1 Sep 2025) and Pattaya Mail reports pile foundations under way in August 2026, but no price, floor plans, permit number or escrow is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Riviera Group: The Riviera Ocean Drive (43 floors, 513 rooms, completed 2023), The Riviera Monaco (40 floors, 412 rooms, completed 2022) and The Riviera Jomtien (46 floors, 1,072 rooms) named as completed; all three EIAs listed as opened and operating on the ONEP register",
+   "units": 447,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 3,
+  "evidence": {
+   "permit": "Developer publishes no permit or EIA number. ONEP lists report 256806-6 'The Riviera Santa Monica Jomtien', owner Riviera Santa Monica Property Development Co., Ltd. (0205567062808, registered 9 Oct 2024), Sukhumvit-Pattaya Soi 68, approval letter ทส 1009.5/17814 dated 01/09/2568 (1 Sep 2025), status approved to build / under construction",
+   "escrow": "Page says the developer is 'backed by strong financial support from leading Commercial Thai Banks'; no escrow or deposit protection stated",
+   "progress": "Developer news post dated 6 Feb 2026 (ground ceremony); Pattaya Mail (20 Aug 2026) reports pile foundation works under way; ONEP status under construction",
+   "plans": "Unit counts and size ranges only; no floor or unit plans",
+   "record": "ONEP register lists the group's Ocean Drive, Monaco and Jomtien towers as opened and operating",
+   "returns": "No guaranteed return language found"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for The Riviera Santa Monica Jomtien",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14923"
+   },
+   {
+    "claim": "Developer company Riviera Santa Monica Property Development Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=11030"
+   },
+   {
+    "claim": "Construction under way (pile foundations, 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pattayamail.com/latestnews/news/the-riviera-santa-monica-honours-thai-tradition-as-construction-advances-in-jomtien-562154"
+   },
+   {
+    "claim": "Construction started October 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/santa-monica-in-jomtien/"
+   },
+   {
+    "claim": "Construction finish November 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/santa-monica-in-jomtien/"
+   },
+   {
+    "claim": "Backed by leading Thai commercial banks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/santa-monica-in-jomtien/"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/santa-monica-in-jomtien/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therivieragroupthailand.com/santa-monica-in-jomtien/"
+   },
+   {
+    "claim": "The Riviera Ocean Drive completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=8911"
+   },
+   {
+    "claim": "The Riviera Monaco completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6049"
+   },
+   {
+    "claim": "The Riviera Jomtien completed and operating",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=6792"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pattaya, Chonburi, Thailand",
+   "developer_company": "Riviera Santa Monica Property Development Co., Ltd., 0205567062808 (registered 9 Oct 2024), part of The Riviera Group",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 1997,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 29,
+   "size_max_m2": 325,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit (foreign quota implied by 'Freehold'; quota not stated)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two 21st-floor sky pools",
+    "ground pool with slider",
+    "bowling alley",
+    "onsen",
+    "badminton courts",
+    "pickleball court",
+    "gym",
+    "dog park"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Pattaya City / Nong Prue municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Developer's three earlier towers listed as operating on the ONEP register",
+   "Unit mix with size ranges and construction dates published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therivieragroupthailand.com/santa-monica-in-jomtien/",
+   "https://therivieragroupthailand.com/2026/02/06/honouring-tradition-at-the-santa-monica-condo-as-the-construction-begins/",
+   "https://eia.onep.go.th/eia/detail?id=14923",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=11030",
+   "https://www.pattayamail.com/latestnews/news/the-riviera-santa-monica-honours-thai-tradition-as-construction-advances-in-jomtien-562154",
+   "https://eia.onep.go.th/eia/detail?id=8911",
+   "https://eia.onep.go.th/eia/detail?id=6049",
+   "https://eia.onep.go.th/eia/detail?id=6792",
+   "https://therivieragroupthailand.com/category/news-2026/",
+   "https://therivieragroupthailand.com/about-us"
+  ]
+ }
+]

@@ -1,0 +1,2674 @@
+[
+ {
+  "slug": "temple-heights",
+  "name": "Temple Heights",
+  "developer": "Investland Bali",
+  "area": "Padonan, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://investlandbali.com/listing/temple-heights",
+  "docs_url": "https://investlandbali.com/listing/temple-heights",
+  "invited": "2026-10-28",
+  "added": "2026-10-31",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "15 two-bedroom loft and riverside villas (80-100 m2 built, 60 m2 land), unit availability table (10 available, 5 sold)",
+   "prices from $182,000 (Rp 3.22B) loft, $220,000 (Rp 3.89B) riverside",
+   "floor plan 'View' per available unit, master plan",
+   "lease 25+25 years",
+   "project timeline bar at 40%, handover January 2027",
+   "payment: 10% refundable booking, 50% first payment, monthly instalments, last payment on handover",
+   "net annual ROI from 9.34%, break-even 10.71 years, 20-25% price appreciation during construction claimed"
+  ],
+  "note": "15 two-bedroom riverside lofts in Padonan by Investland Bali from $182,000 on a 25+25-year lease, with floor plans, a live availability table (5 of 15 sold) and a timeline bar at 40% against a January 2027 handover. In April 2025 Estonian press quoted the developer saying the project would be finished at the end of 2025, so the published handover has moved by about a year; no permit number or escrow is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 182000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 years (25+25, 50 total)",
+   "guaranteed_language": false,
+   "yield_pct": 9.34,
+   "completion": "2027-01",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 40,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'; Estonian press (Apr 2025) quotes the developer that all 12 Amari villas and 49 Maya Residence units were sold",
+   "units": 15,
+   "payment_plan": "10% refundable booking fee, 50% first payment (incl. booking), monthly payments during construction, last payment on handover",
+   "price_per_m2": 2275
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover in January 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   },
+   {
+    "claim": "Project would be completed at the end of 2025 (developer quoted in April 2025)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
+   },
+   {
+    "claim": "Construction 40% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   },
+   {
+    "claim": "15 loft-type homes between two old temples in Canggu",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
+   },
+   {
+    "claim": "Price from $182,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   },
+   {
+    "claim": "Lofts were priced at EUR 130,000 in April 2025, half pre-sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
+   },
+   {
+    "claim": "25+25 year leasehold for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   },
+   {
+    "claim": "Developer delivered Amari Villas I (12 villas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-i"
+   },
+   {
+    "claim": "Investland group obtained an Indonesian construction licence and is VAT registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arileht.delfi.ee/artikkel/120407465/eesti-ettevotjad-avasid-bali-saarel-kontori-ning-kaivitasid-seal-ka-uue-ehitusfirma"
+   },
+   {
+    "claim": "Net annual ROI from 9.34%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/temple-heights"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": "2025-Q4 (developer quoted in Estonian press, Apr 2025)",
+   "delay_months": 13,
+   "unit_types": [
+    "2BR loft",
+    "2BR riverside villa"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 100,
+   "price_min": 182000,
+   "price_max": 220000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10% refundable booking, 50% first payment, monthly instalments, last payment on handover",
+   "foreign_ownership": "Leasehold 25 years + 25 years extension",
+   "rental_programme": "Investland rental management offered; net ROI from 9.34% projected",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "fully furnished",
+    "workspace",
+    "parking",
+    "riverside setting"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Booking fee refundable during due diligence only; no escrow, bank guarantee or deposit insurance",
+   "progress": "Listing project timeline bar at 40%, handover January 2027; no dated photos",
+   "plans": "Floor plan 'View' link per available unit on the availability table; master plan",
+   "record": "investlandbali.com/listing/amari-villas-i shows 12 villas, timeline 100% 'Completed'; press quotes sales figures, not delivery",
+   "returns": "'From 9.34% net Annual ROI'; no guarantee wording"
+  },
+  "positives": [
+   "Construction progress percentage published",
+   "Floor plans and unit-level availability published",
+   "Lease term and extension stated (25+25)",
+   "Final payment due on handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/temple-heights",
+   "https://investlandbali.com/listing/amari-villas-i",
+   "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/",
+   "https://arileht.delfi.ee/artikkel/120407465/eesti-ettevotjad-avasid-bali-saarel-kontori-ning-kaivitasid-seal-ka-uue-ehitusfirma"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "avalon-om-club-house",
+  "name": "OM Club House",
+  "developer": "AVALON (Avalon Bali)",
+  "area": "Berawa, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://avalonbali.com/projects/om",
+  "docs_url": "https://avalonbali.com/news/permit-granted",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "18 apartments (1-2 BR), 62 m2 unit from $240,000 (3.9B IDR) incl. taxes (page title says 'from $149,000')",
+   "progress 90%",
+   "completion 2026",
+   "leasehold 25+25 years",
+   "projected ROI 12% with 11/17/21% forecast table",
+   "news: building permit granted 22 Oct 2023 (no number)",
+   "dated construction news: concrete frame Aug 2024, engineering works Dec 2024, glazing Feb 2025, final checks 6 Sep 2026",
+   "Ribas Hotels management"
+  ],
+  "note": "18-apartment club house in Berawa by Avalon from $240,000 (3.9B IDR), shown 90% complete with 2026 completion and a 25+25-year lease, backed by a dated news log (permit granted Oct 2023, frame Aug 2024, PLN transformer, lift commissioning and electrical rework in Sep 2026). The permit news gives no PBG number, there is no escrow or floor plan, and OM is Avalon's first project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 240000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 years (25+25)",
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2026",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 90,
+   "developer_delivered": null,
+   "units": 18,
+   "payment_plan": "Booking, MoU, first instalment, then interest-free instalments until completion (amounts not published)",
+   "price_per_m2": 3871
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit received 22 Oct 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news/permit-granted"
+   },
+   {
+    "claim": "Construction 90% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   },
+   {
+    "claim": "Completion in 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   },
+   {
+    "claim": "Final checks under way, PLN transformer installed, lift commissioning started (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news/om-club-house-final-checks"
+   },
+   {
+    "claim": "Concrete frame completed (Aug 2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   },
+   {
+    "claim": "Ribas Hotels Group will manage OM (Avalon news; the operator's own May 2024 post names only Buddha and Just Club House)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avalonbali.com/news/avalon-ribas-strategic-partnership"
+   },
+   {
+    "claim": "Price from $240,000 (3.9B IDR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   },
+   {
+    "claim": "25+25 year leasehold with notarised lease registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   },
+   {
+    "claim": "Projected ROI 12%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   },
+   {
+    "claim": "Developer has completed earlier residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news/other-avalon-projects-more-than-just-development"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/om"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jl. Raya Semat No.99x, Badung, Bali, Indonesia",
+   "developer_company": "AVALON GROUP BALI (name used by Ribas Hotels Group; Indonesian PT and registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-10",
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 62,
+   "size_max_m2": 62,
+   "price_min": 240000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Interest-free instalments until construction completion (schedule not published)",
+   "foreign_ownership": "Leasehold 25 years + 25 years extension, notarised lease",
+   "rental_programme": "Ribas Hotels Group management; projected ROI 12% (forecast table 11-21%), quarterly payouts described",
+   "service_charge": null,
+   "brand": "Ribas Hotels (operator)",
+   "amenities": [
+    "rooftop",
+    "underground parking",
+    "jacuzzi",
+    "terrace",
+    "lift"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "News 'Permit Granted' (22 Oct 2023): OM 'has officially received its building permit'; no permit number",
+   "escrow": null,
+   "progress": "Project page 'Progress 90%'; news 'OM Club House: Final Checks' dated 6 Sep 2026 (PLN transformer installed, electrical faults found and being fixed, lift commissioning)",
+   "plans": "Unit size only (62 m2), no plan drawings",
+   "record": "OM Club House is Avalon's first residential project and is not yet handed over; the only operating Avalon businesses named are a gaming club (Cyberpunk) and a restaurant (Lula Kebab)",
+   "returns": "'12% Projected ROI' and forecast table (11% pessimistic, 17% realistic, 21% optimistic); no guarantee wording"
+  },
+  "positives": [
+   "Construction progress % and dated news log",
+   "Permit grant announced with date",
+   "Lease term and extension stated (25+25)",
+   "Named third-party operator"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avalonbali.com/projects/om",
+   "https://avalonbali.com/news",
+   "https://avalonbali.com/news/permit-granted",
+   "https://avalonbali.com/news/om-club-house-final-checks",
+   "https://avalonbali.com/news/glazing-works-begin-at-om",
+   "https://www.avalonbali.com/news/avalon-ribas-strategic-partnership",
+   "https://avalonbali.com/news/other-avalon-projects-more-than-just-development"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "avalon-buddha-club-house",
+  "name": "Buddha Club House",
+  "developer": "AVALON (Avalon Bali)",
+  "area": "Berawa, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://avalonbali.com/projects/buddha",
+  "docs_url": "https://avalonbali.com/news/buddha-club-house-latest-construction-update",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "130 apartments, 30-33 m2, from $128,400 (2.1B IDR) incl. taxes",
+   "completion 2028",
+   "leasehold 32+32 years",
+   "projected ROI 12-15%, 85% occupancy, 6-year payback",
+   "dated construction update 23 Jul 2026 (secondary piles, capping beam, 70 MPa hammer test)",
+   "Ribas management",
+   "launch news Apr 2024 promised completion by end of 2026"
+  ],
+  "note": "130-unit apart-hotel in Berawa by Avalon from $128,400 (2.1B IDR) on a 32+32-year lease, now promising 2028 completion. Avalon's own launch news (Apr 2024) said construction would finish by the end of 2026, and its July 2026 update shows the site still at the foundation pile stage; no permit number, escrow, floor plans or completed earlier project published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 128400,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 32,
+   "extension": "+32 years (32+32)",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 130,
+   "payment_plan": "Booking, MoU, first instalment, then interest-free instalments until completion (amounts not published)",
+   "price_per_m2": 4280
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion by end of 2026 (launch news, Apr 2024)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.avalonbali.com/news/buddha-club-house-a-new-project-in-berawa"
+   },
+   {
+    "claim": "Completion in 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   },
+   {
+    "claim": "Foundations (secondary piles, capping beam) under way in July 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news/buddha-club-house-latest-construction-update"
+   },
+   {
+    "claim": "Ribas Hotels Group signed a memorandum (27 May 2024) to manage Buddha Club House",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ribashotelsgroup.ua/en/blog/baliyskiy-portfely-ribas-hotels-group-popolnilsya-2-obaektami/"
+   },
+   {
+    "claim": "130 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   },
+   {
+    "claim": "Price from $128,400 (2.1B IDR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   },
+   {
+    "claim": "32+32 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   },
+   {
+    "claim": "Projected ROI 12-15%, 6-year payback",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   },
+   {
+    "claim": "Developer has completed earlier residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news/other-avalon-projects-more-than-just-development"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/buddha"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jl. Raya Semat No.99x, Badung, Bali, Indonesia",
+   "developer_company": "AVALON GROUP BALI (name used by Ribas Hotels Group; Indonesian PT and registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-05",
+   "handover_promised": "2028",
+   "original_handover": "2026-Q4",
+   "delay_months": 24,
+   "unit_types": [
+    "studio 30 m2",
+    "studio 33 m2"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 33,
+   "price_min": 128400,
+   "price_max": 129451,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Interest-free instalments until construction completion (schedule not published)",
+   "foreign_ownership": "Leasehold 32 years + 32 years extension, notarised lease",
+   "rental_programme": "Ribas Hotels Group management; projected ROI 12-15%, 85% occupancy forecast",
+   "service_charge": null,
+   "brand": "Ribas Hotels (operator)",
+   "amenities": [
+    "rooftop infinity pool",
+    "restaurant",
+    "lounge",
+    "meditation pyramid",
+    "private cinema",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "News 'Buddha Club House: Latest Construction Update' dated 23 Jul 2026: secondary piles, pile caps, capping beam reinforcement, 70 MPa hammer test; no %",
+   "plans": "Unit sizes only (30-33 m2)",
+   "record": "OM Club House is Avalon's first residential project and is not yet handed over; the only operating Avalon businesses named are a gaming club (Cyberpunk) and a restaurant (Lula Kebab)",
+   "returns": "'12% Projected ROI', unit cards 14-15%, forecast table 11-21%; no guarantee wording"
+  },
+  "positives": [
+   "Dated construction updates with technical detail",
+   "Lease term and extension stated (32+32)",
+   "Operator agreement confirmed by the operator"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avalonbali.com/projects/buddha",
+   "https://avalonbali.com/news/buddha-club-house-latest-construction-update",
+   "https://www.avalonbali.com/news/buddha-club-house-a-new-project-in-berawa",
+   "https://ribashotelsgroup.ua/en/blog/baliyskiy-portfely-ribas-hotels-group-popolnilsya-2-obaektami/",
+   "https://avalonbali.com/news",
+   "https://avalonbali.com/news/other-avalon-projects-more-than-just-development"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "amari-villas-iii",
+  "name": "Amari Villas III",
+  "developer": "Investland Bali",
+  "area": "Padonan, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://investlandbali.com/listing/amari-villas-iii",
+  "docs_url": "https://investlandbali.com/listing/amari-villas-iii",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "9 one-bedroom loft villas (units 17-25), 50.4 m2 on 49-53 m2 land, stage 3 of a 25-unit community on 2,573 m2",
+   "from $171,360 (Rp 3.01B)",
+   "ground and first floor layouts",
+   "unit table: 7 sold, 1 booked, 1 available",
+   "project timeline bar at 60%, handover Q2 2026",
+   "lease 25+15 years",
+   "payment: 10% refundable booking, 50% first payment, monthly, last on handover",
+   "net ROI from 9.93%, payback 10.07 years"
+  ],
+  "note": "Stage 3 of Amari Villas in Padonan by Investland Bali: nine 1-bed loft villas from $171,360 on a 25+15-year lease, with floor layouts and a unit table (7 sold, 1 booked, 1 available). The timeline bar still shows 60% against a Q2 2026 handover that has passed, and in April 2025 the developer told Estonian press the extension would be finished by end-2025; no permit number or escrow published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 171360,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+15 years (25+15)",
+   "guaranteed_language": false,
+   "yield_pct": 9.93,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 60,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'; Estonian press (Apr 2025) quotes the developer that all 12 Amari villas and 49 Maya Residence units were sold",
+   "units": 9,
+   "payment_plan": "10% refundable booking fee, 50% first payment, monthly payments during construction, last payment on handover",
+   "price_per_m2": 3400
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover in Q2 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   },
+   {
+    "claim": "13 more villas next to Amari, whole complex finished by end of 2025 (developer quoted Apr 2025)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
+   },
+   {
+    "claim": "Construction 60% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   },
+   {
+    "claim": "All 12 Amari villas (phase I) sold within a year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
+   },
+   {
+    "claim": "Amari Villas I completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-i"
+   },
+   {
+    "claim": "Price from $171,360",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   },
+   {
+    "claim": "25+15 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   },
+   {
+    "claim": "Net annual ROI from 9.93%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-iii"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q2",
+   "original_handover": "2025-Q4 (developer quoted in Estonian press, Apr 2025)",
+   "delay_months": 10,
+   "unit_types": [
+    "1BR loft villa"
+   ],
+   "size_min_m2": 50.4,
+   "size_max_m2": 50.4,
+   "price_min": 171360,
+   "price_max": 171360,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10% refundable booking, 50% first payment, monthly instalments, last payment on handover",
+   "foreign_ownership": "Leasehold 25 years + 15 years extension",
+   "rental_programme": "Investland management offered; net ROI from 9.93% projected",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "garden",
+    "fully furnished",
+    "5.5 m ceiling",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Booking fee refundable during due diligence only; no escrow",
+   "progress": "Listing timeline bar at 60% with 'Handover in Q2 2026' (not marked completed as of 31 Oct 2026)",
+   "plans": "Ground floor and first floor layouts on listing; floor plan 'View' for available unit 24",
+   "record": "investlandbali.com/listing/amari-villas-i timeline 100% 'Completed' (developer only)",
+   "returns": "'From 9.93% net Annual ROI'; no guarantee wording"
+  },
+  "positives": [
+   "Construction progress percentage published",
+   "Floor layouts published",
+   "Final payment due on handover",
+   "Prior phase shown completed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/amari-villas-iii",
+   "https://investlandbali.com/listing/amari-villas-i",
+   "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "element-residence-bali",
+  "name": "Element Residence Bali",
+  "developer": "Investland Bali Properties (with Wahi Group)",
+  "area": "Nelayan, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://investlandbali.com/listing/element-residence-bali",
+  "docs_url": "https://investlandbali.com/listing/element-residence-bali",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "107 apartments, studios 40 m2 to penthouses 157 m2, from $167,637 (Rp 2.97B)",
+   "'Building Permit (PBG) Obtained' (no number)",
+   "50-year leasehold (30+20)",
+   "contractual 10% net annual return for first five years",
+   "contractor Pulau Intan, architect ESA Architecture International",
+   "operator: Hotel Management Agreement with SONO Hotels & Resorts (Sono Felice brand), May 2026",
+   "unit layout descriptions per type, no drawings",
+   "payment: $3,000 booking, 50% first payment, monthly, last on handover"
+  ],
+  "note": "107-apartment project on Jalan Nelayan, Canggu by Investland Bali with Wahi Group from $167,637 on a 30+20-year lease, stating 'PBG obtained' without a number and 'a contractual 10% net annual return for the first five years'. SONO Hotels confirms a management agreement with PT Nelayan Development SPV for a 90-room hotel opening July 2028, later than the Q1 2027 completion shown on listing portals; no escrow, progress figure or floor plan drawings published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 167637,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+20 years (30+20, 50 total)",
+   "guaranteed_language": true,
+   "yield_pct": 10,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'; Estonian press (Apr 2025) quotes the developer that all 12 Amari villas and 49 Maya Residence units were sold",
+   "units": 107,
+   "payment_plan": "$3,000 refundable booking fee, 50% first payment, monthly payments during construction, last payment on handover",
+   "price_per_m2": 4191
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Building permit (PBG) obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/element-residence-bali"
+   },
+   {
+    "claim": "Hotel management agreement signed with SONO Hotels & Resorts (Sono Felice brand)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sonohotelsresortsasia.com/sono-hotels-resorts-asia-signs-sono-felice-bali-canggu-expanding-lifestyle-portfolio-in-indonesia"
+   },
+   {
+    "claim": "Owner company PT Nelayan Development SPV, president director Ahti Kiili",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sonohotelsresortsasia.com/sono-hotels-resorts-asia-signs-sono-felice-bali-canggu-expanding-lifestyle-portfolio-in-indonesia"
+   },
+   {
+    "claim": "107 units",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.sonohotelsresortsasia.com/sono-hotels-resorts-asia-signs-sono-felice-bali-canggu-expanding-lifestyle-portfolio-in-indonesia"
+   },
+   {
+    "claim": "Completion Q1 2027 (portals) / mid-2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ttgasia.com/2026/05/14/sono-hotels-resorts-asia-to-open-lifestyle-hotel-in-balis-canggu/"
+   },
+   {
+    "claim": "Construction began January 2026 at Jalan Nelayan No. 29",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/sono-felice-bali-canggu"
+   },
+   {
+    "claim": "Contractual 10% net annual return for the first five years",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.investbay.com/en/properties/element-residence-bali-tranche-1"
+   },
+   {
+    "claim": "Investland Bali and Avalon Asia developing a USD 12 million, 107-unit project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://majandus.postimees.ee/8259974/intervjuu-eestlased-arendavad-eksootilises-indoneesias-kinnisvara"
+   },
+   {
+    "claim": "Main contractor Pulau Intan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/element-residence-bali"
+   },
+   {
+    "claim": "50-year leasehold (30+20)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elementcanggu.com/"
+   },
+   {
+    "claim": "Price from $167,637",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/element-residence-bali"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/element-residence-bali"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": "PT Nelayan Development SPV (project company named by SONO; registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-01",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "studio garden",
+    "studio balcony",
+    "duplex loft",
+    "penthouse studio",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 40,
+   "size_max_m2": 157,
+   "price_min": 167637,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "$3,000 booking, 50% first payment, monthly instalments, last payment on handover",
+   "foreign_ownership": "Leasehold 30 years + 20 years extension",
+   "rental_programme": "Hotel pool managed by SONO Hotels & Resorts (Sono Felice Bali Canggu, 90 rooms, opening July 2028 per SONO); developer states contractual 10% net return for 5 years",
+   "service_charge": null,
+   "brand": "Sono Felice (SONO Hotels & Resorts)",
+   "amenities": [
+    "multi-level pool",
+    "gym",
+    "sauna and ice bath",
+    "rooftop restaurant",
+    "concierge lobby",
+    "commercial village"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "'Building Permit (PBG) Obtained - Fully Certified and Legally Secure'; elementcanggu.com 'PBG Status Approved'; no number",
+   "escrow": null,
+   "progress": "Developer article (May 2026) says construction began January 2026; no % or dated photos on listing",
+   "plans": "Text descriptions of each layout; no plan drawings",
+   "record": "Investland Amari Villas I shown 100% completed (developer only)",
+   "returns": "Listing: 'deliver a contractual 10% net annual return for the first five years'; elementcanggu.com '12-14% yearly ROI over 5 years'; Investbay listing calls the operator's ~10% a target funded from the management fee, 'not a fixed return guarantee'"
+  },
+  "positives": [
+   "Named international hotel operator confirmed by the operator's own press release",
+   "Named large contractor (Pulau Intan) and architect",
+   "Final payment due on handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/element-residence-bali",
+   "https://elementcanggu.com/",
+   "https://investlandbali.com/sono-felice-bali-canggu",
+   "https://www.sonohotelsresortsasia.com/sono-hotels-resorts-asia-signs-sono-felice-bali-canggu-expanding-lifestyle-portfolio-in-indonesia",
+   "https://www.ttgasia.com/2026/05/14/sono-hotels-resorts-asia-to-open-lifestyle-hotel-in-balis-canggu/",
+   "https://www.investbay.com/en/properties/element-residence-bali-tranche-1",
+   "https://majandus.postimees.ee/8259974/intervjuu-eestlased-arendavad-eksootilises-indoneesias-kinnisvara",
+   "https://investlandbali.com/listing/amari-villas-i"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "sanuuri-riverside-residences",
+  "name": "Sanuuri Riverside Residences",
+  "developer": "Investland Bali",
+  "area": "Sanur",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://investlandbali.com/listing/sanuuri",
+  "docs_url": "https://investlandbali.com/listing/sanuuri",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "18 villas and lofts plus apartments, 46-124 m2",
+   "from $147,725",
+   "1-2BR apartments, 1BR loft, 1-3BR pool villas",
+   "masterplan with unit-type filter",
+   "floor plan images on listing (loft, unit 6, villa 1, villa 3)",
+   "50-year leasehold",
+   "shared pool, gym, sauna, co-working, restaurant"
+  ],
+  "note": "Serviced apartments, lofts and pool villas two minutes from Sanur beach by Investland Bali from $147,725 on a 50-year leasehold, with floor plan images and a masterplan on the listing. Estonian press (Jan 2026) quotes the developer that full construction began in December 2025 with completion in autumn 2027; the listing itself shows no permit number, escrow, progress or completion date (checked 31 Oct 2026)",
+  "seed": {
+   "price": 147725,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 50,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'; Estonian press (Apr 2025) quotes the developer that all 12 Amari villas and 49 Maya Residence units were sold",
+   "units": 29,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "All necessary permits obtained (developer quoted Jan 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kinnisvara24.ee/en/blogi/estonian-real-estate-developers-building-large-vacation-resort-in-bali"
+   },
+   {
+    "claim": "Full-scale construction began December 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kinnisvara24.ee/en/blogi/estonian-real-estate-developers-building-large-vacation-resort-in-bali"
+   },
+   {
+    "claim": "Completion in autumn 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kinnisvara24.ee/en/blogi/estonian-real-estate-developers-building-large-vacation-resort-in-bali"
+   },
+   {
+    "claim": "11 villas and 18 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kinnisvara24.ee/en/blogi/estonian-real-estate-developers-building-large-vacation-resort-in-bali"
+   },
+   {
+    "claim": "Two-minute walk to the beach (press: 500 m from the ocean)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/sanuuri"
+   },
+   {
+    "claim": "50-year leasehold for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/sanuuri"
+   },
+   {
+    "claim": "Price from $147,725 (press: apartments from EUR 120,000, villas from EUR 160,000)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/sanuuri"
+   },
+   {
+    "claim": "Developer delivered Amari Villas I",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/amari-villas-i"
+   },
+   {
+    "claim": "Investland group holds an Indonesian construction licence",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arileht.delfi.ee/artikkel/120407465/eesti-ettevotjad-avasid-bali-saarel-kontori-ning-kaivitasid-seal-ka-uue-ehitusfirma"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investlandbali.com/listing/sanuuri"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-12",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "2BR apartment",
+    "1BR loft",
+    "1BR villa",
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 124,
+   "price_min": 147725,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 50 years",
+   "rental_programme": "Investland short- and long-term management offered; press quotes yields of at least 10% (no guarantee)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "shared pool",
+    "gym",
+    "sauna",
+    "ice bath",
+    "co-working",
+    "restaurant",
+    "concierge lobby",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Developer quoted in kinnisvara24 (Jan 2026) saying all necessary permits were obtained; no number published",
+   "escrow": null,
+   "progress": "No progress on listing; construction start Dec 2025 and autumn 2027 completion only in developer quotes in press",
+   "plans": "Page source includes loft-floorplan1, unit6-floorplan, villa1-floorplan, villa3-floorplan1 images and masterplan-top (uploaded Jul 2026)",
+   "record": "Investland Amari Villas I shown 100% completed (developer only)",
+   "returns": "No yield figure or guarantee wording on listing"
+  },
+  "positives": [
+   "Floor plans published for several unit types",
+   "Lease term stated (50 years)",
+   "Construction start and target completion stated publicly",
+   "Shared amenities and unit mix described"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/sanuuri",
+   "https://kinnisvara24.ee/en/blogi/estonian-real-estate-developers-building-large-vacation-resort-in-bali",
+   "https://investlandbali.com/listing/amari-villas-i",
+   "https://arileht.delfi.ee/artikkel/120407465/eesti-ettevotjad-avasid-bali-saarel-kontori-ning-kaivitasid-seal-ka-uue-ehitusfirma"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "breig-edem-i-villas",
+  "name": "EDEM I Villas",
+  "developer": "BREIG Property Development (PT Next Level Group)",
+  "area": "Benoa, Kuta Selatan",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://breig-property.com/projects/edem-i-villas",
+  "docs_url": "https://breig-property.com/projects/edem-i-villas",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "status: Construction",
+   "2BR villas 191 m2 from $357,500",
+   "11% ROI forecast",
+   "completion Q3 2027",
+   "30% down payment",
+   "presentation with floor plans, availability chart, financial model and 'developer contracts and licences' on request"
+  ],
+  "note": "Greek-style private-pool villas in the Nusa Dua hills by BREIG from $357,500, status 'Construction', Q3 2027 completion and 30% down payment; floor plans and 'developer contracts and licences' are only on request and no tenure is stated. The footer NIB 0106220001589 belongs to PT Next Level Group as website and marketing operator, not a project permit; an independent tracker counts few BREIG projects finished by their first stated date (checked 31 Oct 2026)",
+  "seed": {
+   "price": 357500,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 11,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "BREIG lists completed projects Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa and VESNA; About page: founded 2016, 16 completed projects, 450+ objects under management",
+   "units": null,
+   "payment_plan": "30% down payment (rest not published)",
+   "price_per_m2": 1872
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "BREIG brand operated by PT Next Level Group (NIB 0106220001589)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/about-us/"
+   },
+   {
+    "claim": "NIB 0106220001589 is a project building permit",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://breig-property.com/about-us/"
+   },
+   {
+    "claim": "16 completed projects since 2016",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/about-us/"
+   },
+   {
+    "claim": "Aquamarine I completed and operating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/project/aquamarine-i/"
+   },
+   {
+    "claim": "Independent tracker: only 1 of BREIG's projects with a stated date was ready by the first stated quarter",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://askdalam.com/bali/developers/breig-property-investment"
+   },
+   {
+    "claim": "Developer contracts and licences available on request",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-i-villas"
+   },
+   {
+    "claim": "Building permit (PBG) issued for this project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-i-villas"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-i-villas"
+   },
+   {
+    "claim": "Tenure for foreign buyers (not stated on page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-i-villas"
+   },
+   {
+    "claim": "Under construction, completion Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-i-villas"
+   },
+   {
+    "claim": "Nusa Dua complex of 49 villas announced (Oct 2024, developer-written article)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.amazingarchitecture.com/articles/redefining-luxury-living-in-bali-breigs-vision-for-a-new-era-of-real-estate-development"
+   },
+   {
+    "claim": "Price from $357,500 for 191 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-i-villas"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": "PT Next Level Group, NIB 0106220001589 (stated as website and marketing operator of the BREIG brand; project-owning entity not published)",
+   "developer_projects_delivered": 16,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa"
+   ],
+   "size_min_m2": 191,
+   "size_max_m2": 191,
+   "price_min": 357500,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down payment",
+   "foreign_ownership": null,
+   "rental_programme": "BREIG in-house management (86% occupancy claimed); ROI forecast only, no guarantee",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "private plot",
+    "rooftop",
+    "ocean and hill views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Footer: 'PT NEXT LEVEL GROUP, NIB 0106220001589. BREIG Property Development is a commercial brand owned and operated by PT NEXT LEVEL GROUP. The company is responsible for the operation of breig-property.com and the real estate marketing and lead-generation services'; no project permit",
+   "escrow": null,
+   "progress": "Status label 'Construction' only; no % or dated updates",
+   "plans": "'Presentation: Renders and floor plans' behind a request form",
+   "record": "BREIG lists completed projects Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa and VESNA; About page: founded 2016, 16 completed projects, 450+ objects under management",
+   "returns": "'Annual yield (ROI) 11%'; no guarantee wording"
+  },
+  "positives": [
+   "Developer lists many completed Bali projects",
+   "Company entity and NIB disclosed in footer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://breig-property.com/projects/edem-i-villas",
+   "https://breig-property.com/projects",
+   "https://breig-property.com/about-us/",
+   "https://breig-property.com/",
+   "https://askdalam.com/bali/developers/breig-property-investment",
+   "https://www.amazingarchitecture.com/articles/redefining-luxury-living-in-bali-breigs-vision-for-a-new-era-of-real-estate-development",
+   "https://breig-property.com/project/aquamarine-i/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "breig-edem-ii-santorini",
+  "name": "EDEM II Santorini Residences",
+  "developer": "BREIG Property Development (PT Next Level Group)",
+  "area": "Benoa, Kuta Selatan",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://breig-property.com/projects/edem-ii-santorini",
+  "docs_url": "https://breig-property.com/projects/edem-ii-santorini",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "status: Sales Launch",
+   "condo villas 33-40 m2 from $94,950, apartments 28-29 m2, villas 1-3 BR (1BR 114 m2), 28-263 m2 overall",
+   "11-14% ROI forecast",
+   "completion Q1 2028 (condo villas, villas) to Q4 2028 (apartments)",
+   "30% down payment",
+   "spa, Greek baths, fitness centre, restaurant, co-working",
+   "floor plans, availability chart, financial model, legal documents on request"
+  ],
+  "note": "Sales-launch apartments, condo villas and villas in the Nusa Dua hills by BREIG from $94,950, Q1 to Q4 2028 completion and an 11-14% ROI forecast; floor plans and legal documents only on request, and no tenure stated. The footer NIB is the website and marketing operator's, not a project permit (checked 31 Oct 2026)",
+  "seed": {
+   "price": 94950,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "BREIG lists completed projects Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa and VESNA; About page: founded 2016, 16 completed projects, 450+ objects under management",
+   "units": null,
+   "payment_plan": "30% down payment (rest not published)",
+   "price_per_m2": 2877
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "BREIG brand operated by PT Next Level Group (NIB 0106220001589)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/about-us/"
+   },
+   {
+    "claim": "NIB 0106220001589 is a project building permit",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://breig-property.com/about-us/"
+   },
+   {
+    "claim": "16 completed projects since 2016",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/about-us/"
+   },
+   {
+    "claim": "Aquamarine I completed and operating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/project/aquamarine-i/"
+   },
+   {
+    "claim": "Independent tracker: only 1 of BREIG's projects with a stated date was ready by the first stated quarter",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://askdalam.com/bali/developers/breig-property-investment"
+   },
+   {
+    "claim": "Developer contracts and licences available on request",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   },
+   {
+    "claim": "Building permit (PBG) issued for this project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   },
+   {
+    "claim": "Tenure for foreign buyers (not stated on page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   },
+   {
+    "claim": "Completion Q1-Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   },
+   {
+    "claim": "Price from $94,950 (condo villa)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   },
+   {
+    "claim": "Annual ROI 11-14%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://breig-property.com/projects/edem-ii-santorini"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": "PT Next Level Group, NIB 0106220001589 (stated as website and marketing operator of the BREIG brand; project-owning entity not published)",
+   "developer_projects_delivered": 16,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment 1BR",
+    "condo villa",
+    "villa 1BR",
+    "villa 2BR",
+    "villa 3BR"
+   ],
+   "size_min_m2": 28,
+   "size_max_m2": 263,
+   "price_min": 94950,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down payment",
+   "foreign_ownership": null,
+   "rental_programme": "BREIG in-house management (86% occupancy claimed); ROI forecast only, no guarantee",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "spa",
+    "Greek thermal baths",
+    "contrast plunge pools",
+    "fitness centre",
+    "restaurant",
+    "co-working",
+    "shared pool",
+    "rooftops"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Footer: 'PT NEXT LEVEL GROUP, NIB 0106220001589. BREIG Property Development is a commercial brand owned and operated by PT NEXT LEVEL GROUP. The company is responsible for the operation of breig-property.com and the real estate marketing and lead-generation services'; no project permit",
+   "escrow": null,
+   "progress": "Status 'Sales Launch'; nothing built reported",
+   "plans": "'Presentation: Renders and floor plans' behind a request form",
+   "record": "BREIG lists completed projects Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa and VESNA; About page: founded 2016, 16 completed projects, 450+ objects under management",
+   "returns": "'Annual yield (ROI) 11-14%'; no guarantee wording"
+  },
+  "positives": [
+   "Developer lists many completed Bali projects",
+   "Company entity and NIB disclosed in footer",
+   "Unit size ranges and per-type completion dates published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://breig-property.com/projects/edem-ii-santorini",
+   "https://breig-property.com/projects",
+   "https://breig-property.com/about-us/",
+   "https://breig-property.com/",
+   "https://askdalam.com/bali/developers/breig-property-investment",
+   "https://breig-property.com/project/aquamarine-i/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "lb-ubud-dream",
+  "name": "Ubud Dream",
+  "developer": "LOYO & BONDAR (LB Group)",
+  "area": "Penestanan, Ubud",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://ubuddream.com/",
+  "docs_url": "https://loyobondar.com/en/",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "41 villas and apartments: villas 1BR 70 m2 and 2BR 82 m2, apartments 18 m2 (1BR) and 35 m2 (2BR)",
+   "apartments from 1.1 bln IDR (LB homepage)",
+   "layouts per unit type",
+   "general plan",
+   "construction completion Q3 2027",
+   "payment: 30% down, five 14% payments every 3 months, last at transfer of rights",
+   "LB construction feed Oct 2026: villa MEP 93%, partition walls 97%, roofing 94%, finishing 26%, apartment excavation 28%",
+   "LB completed projects listed"
+  ],
+  "note": "41 villas and apartments in Ubud by LOYO & BONDAR from 1.1 bln IDR, completion Q3 2027, with layouts, a quarterly instalment schedule and an October 2026 construction feed (villa roofing 94%, finishing 26%, apartment excavation only 28%). LB names five completed projects but its own materials give 6, 5 or 4 completed; no permit number, escrow or tenure published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1100000000,
+   "currency": "IDR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas (Ubud), U Villas (Bukit), Loyo Villas (Ubud), Melasti Dream (Bukit), XO Canggu (Canggu); homepage says 12 complexes, 6 completed; the LB presentation says 5 completed; loyo-development.com/lb_group says 4 delivered",
+   "units": 41,
+   "payment_plan": "30% down payment, then five 14% payments every 3 months, final at transfer of ownership rights",
+   "price_per_m2": 61111111
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction completion Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ubuddream.com/"
+   },
+   {
+    "claim": "Villa roofing 94%, finishing 26%, apartment excavation 28% (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Villa roofing works had started by Nov 2025 (developer post on a portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/news/construction-progress-key-stages-completed"
+   },
+   {
+    "claim": "41 villas and apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ubuddream.com/"
+   },
+   {
+    "claim": "Apartments from 1.1 bln IDR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "20% of the villa cost covered by rental income after completion ('villas in Ubud for 80% of the price')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Completed complexes: 6 (homepage), 5 (presentation) or 4 (LB Group page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://loyo-development.com/lb_group"
+   },
+   {
+    "claim": "Completed projects Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream bookable as stays",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ubuddream.com/"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ubuddream.com/"
+   },
+   {
+    "claim": "Tenure for foreign buyers (not stated)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ubuddream.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Badung, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "2BR apartment",
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": 18,
+   "size_max_m2": 103,
+   "price_min": 1100000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, five 14% instalments every 3 months, last at transfer of rights",
+   "foreign_ownership": null,
+   "rental_programme": "LOYO & BONDAR Management (in-house); LB homepage offers villas where 20% of the cost is covered by rental income after completion",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool (villas)",
+    "garden",
+    "spa",
+    "yoga shala",
+    "smoothie bar",
+    "tea house",
+    "concierge",
+    "smart home"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com 'Our Construction' October 2026: villa MEP 93%, partition walls 97%, roofing 94%, finishing 26%; apartment excavation 28% (no overall %)",
+   "plans": "ubuddream.com 'Ubud Dream layouts' per unit type with areas",
+   "record": "LB homepage 'Completed Projects': Jungle Flower Villas (Ubud), U Villas (Bukit), Loyo Villas (Ubud), Melasti Dream (Bukit), XO Canggu (Canggu); homepage says 12 complexes, 6 completed; the LB presentation says 5 completed; loyo-development.com/lb_group says 4 delivered",
+   "returns": "No yield guarantee on the project page; LB homepage offer '20% of the cost is covered by rental income after construction is completed'"
+  },
+  "positives": [
+   "Dated, work-by-work construction percentages",
+   "Completed developer projects named",
+   "Instalments tied to a published schedule"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ubuddream.com/",
+   "https://loyobondar.com/en/",
+   "https://loyo-development.com/lb_group",
+   "https://loyobondar.com/wp-content/uploads/presentation_eng.pdf",
+   "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/",
+   "https://balinsky.info/en/news/construction-progress-key-stages-completed"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "lb-xo-pandawa",
+  "name": "XO Pandawa",
+  "developer": "LOYO & BONDAR (LB Group)",
+  "area": "Kutuh, Pandawa, Bukit",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://xo-project.com/pandawa",
+  "docs_url": "https://loyobondar.com/en/",
+  "added": "2026-10-28",
+  "status": "completed",
+  "stage": "completed",
+  "docs_listed": [
+   "42 one-bedroom apartments and 3 two-bed villas",
+   "apartments from 1.8 bln IDR, villas from 5.9 bln IDR",
+   "yield 'from 14%'",
+   "master plan (genplan)",
+   "400 m2 rooftop with pool, bar and cinema",
+   "LB presentation: 'apartments, full property rights... Freehold ownership'",
+   "LB Group page: 'guaranteed annual income (2 years) 12%' for its hotel developments incl. XO Pandawa",
+   "LB construction feed Oct 2026: XO Pandawa 'Завершен' (completed)"
+  ],
+  "note": "42 apartments and 3 villas near Pandawa Beach by LOYO & BONDAR from 1.8 bln IDR, marked completed in LB's October 2026 feed and now advertised as a 42-room guest property. LB markets the apartments as 'freehold, full property rights' although Indonesian rules let foreigners hold only strata or use rights, with a Rp 2 billion minimum for apartments in Bali, and its group page offers 'guaranteed annual income (2 years) 12%'; no permit number, escrow or unit floor plans (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1800000000,
+   "currency": "IDR",
+   "title": "freehold (as marketed)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 14,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": true,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas (Ubud), U Villas (Bukit), Loyo Villas (Ubud), Melasti Dream (Bukit), XO Canggu (Canggu); homepage says 12 complexes, 6 completed; the LB presentation says 5 completed; loyo-development.com/lb_group says 4 delivered",
+   "units": 45,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction completed (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyobondar.com/en/"
+   },
+   {
+    "claim": "Operating as a 42-room guest property (portal reports booking listings)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/xo-pandawa/"
+   },
+   {
+    "claim": "Freehold apartments with full property rights for buyers",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://docs.paralegal.id/PERMEN/PERMEN-ATR-BPN/KEPMEN-ATR-BPN/2022/KEPMEN-ATR-BPN-1241-SK-HK-02-IX-2022.pdf"
+   },
+   {
+    "claim": "Apartments from 1.8 bln IDR can be owned by foreigners (Bali minimum for foreign-owned strata units is Rp 2 billion)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://docs.paralegal.id/PERMEN/PERMEN-ATR-BPN/KEPMEN-ATR-BPN/2022/KEPMEN-ATR-BPN-1241-SK-HK-02-IX-2022.pdf"
+   },
+   {
+    "claim": "Guaranteed annual income 12% for 2 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://loyo-development.com/lb_group"
+   },
+   {
+    "claim": "Yield from 14%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xo-project.com/pandawa"
+   },
+   {
+    "claim": "42 apartments and 3 villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xo-project.com/pandawa"
+   },
+   {
+    "claim": "Completed complexes: 6 (homepage), 5 (presentation) or 4 (LB Group page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://loyo-development.com/lb_group"
+   },
+   {
+    "claim": "Building permit (PBG) and occupancy certificate (SLF) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xo-project.com/pandawa"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xo-project.com/pandawa"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Badung, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "2BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1800000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Marketed as freehold / full property rights; under Kepmen ATR/BPN 1241/2022 foreigners may hold strata units (HMSRS on HGB or Hak Pakai land) only from Rp 2 billion in Bali, and cannot hold Hak Milik land",
+   "rental_programme": "LB hotel operation; group page: 'guaranteed annual income (2 years) 12%', yield 'from 14%'",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "400 m2 rooftop",
+    "rooftop pool",
+    "bar",
+    "open-air cinema"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com 'Our Construction' entry 'October 2026 | XO PANDAWA | Завершен' (completed); NovAsia notes June 2026 finishing figures and a 42-room accommodation listing",
+   "plans": "Master plan (genplan) only, no unit floor plans",
+   "record": "LB homepage 'Completed Projects': Jungle Flower Villas (Ubud), U Villas (Bukit), Loyo Villas (Ubud), Melasti Dream (Bukit), XO Canggu (Canggu); homepage says 12 complexes, 6 completed; the LB presentation says 5 completed; loyo-development.com/lb_group says 4 delivered",
+   "returns": "xo-project.com 'от 14% доходность' (from 14% yield); loyo-development.com/lb_group: 'Invest in a ready-to-operate hotel business in Bali, guaranteed annual income (2 years), 12%' for Pandawa Hills, XO Pandawa and Melasti Arcade"
+  },
+  "positives": [
+   "Developer reports construction completed",
+   "Completed developer projects named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xo-project.com/pandawa",
+   "https://loyobondar.com/en/",
+   "https://loyo-development.com/lb_group",
+   "https://loyobondar.com/wp-content/uploads/presentation_eng.pdf",
+   "https://novasia.estate/en/projects/xo-pandawa/",
+   "https://docs.paralegal.id/PERMEN/PERMEN-ATR-BPN/KEPMEN-ATR-BPN/2022/KEPMEN-ATR-BPN-1241-SK-HK-02-IX-2022.pdf",
+   "https://jdih.atrbpn.go.id/peraturan/detail/1109/keputusan-menteri-agraria-dan-tata-ruang-kepala-badan-pertanahan-nasional-nomor-1241-sk-hk-02-ix-2022-tahun-2022",
+   "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "kaluna-umalas-reserve",
+  "name": "Umalas Reserve",
+  "developer": "Kaluna Development",
+  "area": "Umalas",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://kalunadevelopment.com/projects/umalas-reserve/",
+  "docs_url": "https://kalunadevelopment.com/projects/umalas-reserve/",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "two 4BR villas, 218 m2 building on 250 m2 land, $380,000",
+   "ground and first floor layout with sauna and ice bath",
+   "5-year instalment calculator after handover",
+   "30+30 year leasehold, Yellow Zone, ROI 9-18% (projects page)",
+   "per-unit OCBC bank guarantee (projects and About pages)"
+  ],
+  "note": "Two off-plan 4-bed wellness villas in Umalas by Kaluna Development at $380,000 on a 30+30-year lease, with floor layouts, post-handover instalments of up to 5 years and a stated per-unit OCBC bank guarantee against non-completion. No permit number, construction progress or completion date on the developer page (a portal lists Q4 2027 at $528,000), and Kaluna's own track-record figures disagree (100+ vs 120+ villas, since 2012 vs 2013) (checked 31 Oct 2026)",
+  "seed": {
+   "price": 380000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": 18,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC'; projects page: 'Every offplan Project is backed by a legitimate, certified Bank Guarantee issued directly by OCBC Bank'",
+   "progress_pct": null,
+   "developer_delivered": "Kaluna projects page lists ready villas with rental data (Casa de Fiero, Seminyak; Casa Amadeo, Seminyak; Casa da Tove, Uluwatu) and past projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120+ villas delivered (homepage says 100+)",
+   "units": 2,
+   "payment_plan": "60% until handover, remaining 40% in instalments up to 5 years after handover",
+   "price_per_m2": 1743
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Each unit backed by an OCBC bank guarantee refunding buyers if the project is not completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "120+ villas delivered (About page) vs 100+ (homepage)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/about-us/"
+   },
+   {
+    "claim": "Founded 2013 ('Since 2013') vs 2012 (LinkedIn and portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/about-us/"
+   },
+   {
+    "claim": "Completed villas Casa de Fiero, Casa Amadeo, Casa da Tove operating with rental data",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "30+30 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "Building permit (PBG) issued for this project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/umalas-reserve/"
+   },
+   {
+    "claim": "Projected ROI 9-18%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "Portal describes 'contractual ROI guarantees' (developer pages show projected ranges only)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+   },
+   {
+    "claim": "Up to 5-year instalments after handover",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/umalas-reserve/"
+   },
+   {
+    "claim": "Price $380,000 (portal lists from $528,000)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://newhomes.id/kaluna-development/"
+   },
+   {
+    "claim": "Completion Q4 2027 (portal only)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newhomes.id/kaluna-development/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Jl. Beraban No.72, Kerobokan Kelod, Badung, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 100,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4BR villa"
+   ],
+   "size_min_m2": 218,
+   "size_max_m2": 218,
+   "price_min": 380000,
+   "price_max": 380000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "60% until handover, remaining 40% in instalments up to 5 years after handover",
+   "foreign_ownership": "Leasehold 30 years + 30 years extension",
+   "rental_programme": "In-house management (Solio per portals); projected ROI ranges, no fixed return on project pages",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "sauna",
+    "ice bath",
+    "4 bedrooms"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No permit number for this project (Kaluna shows 'PBG Obtained' only for Vasana)",
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC'; projects page: 'Every offplan Project is backed by a legitimate, certified Bank Guarantee issued directly by OCBC Bank'",
+   "record": "Kaluna projects page lists ready villas with rental data (Casa de Fiero, Seminyak; Casa Amadeo, Seminyak; Casa da Tove, Uluwatu) and past projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120+ villas delivered (homepage says 100+)",
+   "progress": null,
+   "plans": "Project page 'FLOOR LAYOUT - 4 BEDROOM' with ground and first floor",
+   "returns": "Projects page 'ROI 9-18%'; 'Guaranteed by OCBC Bank' refers to completion, not returns"
+  },
+  "positives": [
+   "Per-unit bank guarantee against non-completion stated",
+   "Floor layouts published",
+   "Lease term and extension stated (30+30)",
+   "Named completed and operating villas"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kalunadevelopment.com/projects/umalas-reserve/",
+   "https://kalunadevelopment.com/projects/",
+   "https://kalunadevelopment.com/about-us/",
+   "https://kalunadevelopment.com/",
+   "https://newhomes.id/kaluna-development/",
+   "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "kaluna-berawa-signature",
+  "name": "Berawa Signature",
+  "developer": "Kaluna Development",
+  "area": "Berawa, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://kalunadevelopment.com/projects/berawa-signature/",
+  "docs_url": "https://kalunadevelopment.com/projects/berawa-signature/",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "1-3BR loft villas: 1BR $136,500 (52.5 m2), 2BR $168,000, 3BR $290,000",
+   "1BR ground and mezzanine floor layout",
+   "live availability map (units 01, 03, 05, 06)",
+   "5-year instalment calculator after handover",
+   "30+30 year leasehold, Orange Zone, ROI 9-19% (projects page)",
+   "per-unit OCBC bank guarantee"
+  ],
+  "note": "Off-plan 1-3 bed loft villas near Finns Beach Club in Berawa by Kaluna Development from $136,500 on a 30+30-year lease, with a 1BR floor layout, a live availability map, post-handover instalments and a stated per-unit OCBC bank guarantee against non-completion. No permit number, progress or completion date published, and the bank guarantee could not be confirmed outside Kaluna's own pages (checked 31 Oct 2026)",
+  "seed": {
+   "price": 136500,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": 19,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC'; projects page: 'Every offplan Project is backed by a legitimate, certified Bank Guarantee issued directly by OCBC Bank'",
+   "progress_pct": null,
+   "developer_delivered": "Kaluna projects page lists ready villas with rental data (Casa de Fiero, Seminyak; Casa Amadeo, Seminyak; Casa da Tove, Uluwatu) and past projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120+ villas delivered (homepage says 100+)",
+   "units": 4,
+   "payment_plan": "60% until handover, remaining 40% in instalments up to 5 years after handover",
+   "price_per_m2": 2600
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Each unit backed by an OCBC bank guarantee refunding buyers if the project is not completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "120+ villas delivered (About page) vs 100+ (homepage)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/about-us/"
+   },
+   {
+    "claim": "Founded 2013 ('Since 2013') vs 2012 (LinkedIn and portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/about-us/"
+   },
+   {
+    "claim": "Completed villas Casa de Fiero, Casa Amadeo, Casa da Tove operating with rental data",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "30+30 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "Building permit (PBG) issued for this project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/berawa-signature/"
+   },
+   {
+    "claim": "Projected ROI 9-19%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "Portal describes 'contractual ROI guarantees' (developer pages show projected ranges only)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+   },
+   {
+    "claim": "Up to 5-year instalments after handover",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/berawa-signature/"
+   },
+   {
+    "claim": "Price from $136,500 for a 1BR loft",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/berawa-signature/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Jl. Beraban No.72, Kerobokan Kelod, Badung, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 100,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR loft",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 52.5,
+   "size_max_m2": null,
+   "price_min": 136500,
+   "price_max": 290000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "60% until handover, remaining 40% in instalments up to 5 years after handover",
+   "foreign_ownership": "Leasehold 30 years + 30 years extension",
+   "rental_programme": "In-house management (Solio per portals); projected ROI ranges, no fixed return on project pages",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "mezzanine bedroom",
+    "near Finns Beach Club"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No permit number for this project (Kaluna shows 'PBG Obtained' only for Vasana)",
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC'; projects page: 'Every offplan Project is backed by a legitimate, certified Bank Guarantee issued directly by OCBC Bank'",
+   "record": "Kaluna projects page lists ready villas with rental data (Casa de Fiero, Seminyak; Casa Amadeo, Seminyak; Casa da Tove, Uluwatu) and past projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120+ villas delivered (homepage says 100+)",
+   "progress": null,
+   "plans": "Project page 'FLOOR LAYOUT - 1 BEDROOM' (ground and mezzanine, 52.5 m2)",
+   "returns": "Projects page 'ROI 9-19%'; no return guarantee on the project page"
+  },
+  "positives": [
+   "Per-unit bank guarantee against non-completion stated",
+   "Floor layout published",
+   "Live availability map",
+   "Lease term and extension stated (30+30)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kalunadevelopment.com/projects/berawa-signature/",
+   "https://kalunadevelopment.com/projects/",
+   "https://kalunadevelopment.com/about-us/",
+   "https://kalunadevelopment.com/",
+   "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "kaluna-tumbak-signature",
+  "name": "Tumbak Signature",
+  "developer": "Kaluna Development",
+  "area": "Tumbak Bayuh, Canggu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://kalunadevelopment.com/projects/tumbak-signature/",
+  "docs_url": "https://kalunadevelopment.com/projects/tumbak-signature/",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "1-3BR loft villas: 1BR IDR 1.89B, 2BR IDR 2.952B, 3BR IDR 3.78B (projects card from $86,662)",
+   "unit 01 ground and mezzanine layout (48 m2 / 51.25 m2)",
+   "availability map: 10 units plus community hub",
+   "5-year instalment calculator after handover",
+   "30+30 year leasehold, Yellow Zone, ROI 8-21% (projects page)",
+   "per-unit OCBC bank guarantee"
+  ],
+  "note": "Off-plan loft villas in Tumbak Bayuh by Kaluna Development from IDR 1.89B on a 30+30-year lease, with a unit floor layout, an availability map of 10 units plus a community hub, post-handover instalments and a stated per-unit OCBC bank guarantee. No permit number, progress or completion date published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1890000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": 21,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC'; projects page: 'Every offplan Project is backed by a legitimate, certified Bank Guarantee issued directly by OCBC Bank'",
+   "progress_pct": null,
+   "developer_delivered": "Kaluna projects page lists ready villas with rental data (Casa de Fiero, Seminyak; Casa Amadeo, Seminyak; Casa da Tove, Uluwatu) and past projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120+ villas delivered (homepage says 100+)",
+   "units": 10,
+   "payment_plan": "60% until handover, remaining 40% in instalments up to 5 years after handover",
+   "price_per_m2": 36878049
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Each unit backed by an OCBC bank guarantee refunding buyers if the project is not completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "120+ villas delivered (About page) vs 100+ (homepage)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/about-us/"
+   },
+   {
+    "claim": "Founded 2013 ('Since 2013') vs 2012 (LinkedIn and portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/about-us/"
+   },
+   {
+    "claim": "Completed villas Casa de Fiero, Casa Amadeo, Casa da Tove operating with rental data",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "30+30 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "Building permit (PBG) issued for this project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/tumbak-signature/"
+   },
+   {
+    "claim": "Projected ROI 8-21%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   },
+   {
+    "claim": "Portal describes 'contractual ROI guarantees' (developer pages show projected ranges only)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+   },
+   {
+    "claim": "Up to 5-year instalments after handover",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/tumbak-signature/"
+   },
+   {
+    "claim": "Price from IDR 1.89B (projects card shows from $86,662)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kalunadevelopment.com/projects/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Jl. Beraban No.72, Kerobokan Kelod, Badung, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 100,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR loft",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 51.25,
+   "size_max_m2": null,
+   "price_min": 1890000000,
+   "price_max": 3780000000,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": "60% until handover, remaining 40% in instalments up to 5 years after handover",
+   "foreign_ownership": "Leasehold 30 years + 30 years extension",
+   "rental_programme": "In-house management (Solio per portals); projected ROI ranges, no fixed return on project pages",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "mezzanine bedroom",
+    "community hub"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No permit number for this project (Kaluna shows 'PBG Obtained' only for Vasana)",
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC'; projects page: 'Every offplan Project is backed by a legitimate, certified Bank Guarantee issued directly by OCBC Bank'",
+   "record": "Kaluna projects page lists ready villas with rental data (Casa de Fiero, Seminyak; Casa Amadeo, Seminyak; Casa da Tove, Uluwatu) and past projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120+ villas delivered (homepage says 100+)",
+   "progress": null,
+   "plans": "Project page 'FLOOR LAYOUT - UNIT 01' (ground 48 m2, mezzanine, 51.25 m2)",
+   "returns": "Projects page 'ROI 8-21%'; no return guarantee on the project page"
+  },
+  "positives": [
+   "Per-unit bank guarantee against non-completion stated",
+   "Unit-level floor layout published",
+   "Lease term and extension stated (30+30)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kalunadevelopment.com/projects/tumbak-signature/",
+   "https://kalunadevelopment.com/projects/",
+   "https://kalunadevelopment.com/about-us/",
+   "https://kalunadevelopment.com/",
+   "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "avalon-tao-club-house",
+  "name": "TAO Club House",
+  "developer": "AVALON (Avalon Bali)",
+  "area": "Pererenan",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://avalonbali.com/projects/tao",
+  "docs_url": "https://avalonbali.com/projects/tao",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "129 smart apartments, studios 24-28 m2 from $89,000 (1.4B IDR) incl. taxes, penthouse 98 m2 from $190,000",
+   "completion 2028",
+   "leasehold 32+32 years",
+   "projected ROI 12-14%, 85% occupancy, 6-year payback",
+   "example: $110,000 at construction stage vs $180,000 after completion",
+   "project presentation news (21 Mar 2025)",
+   "Ribas Hotels management"
+  ],
+  "note": "129 smart apartments in Pererenan by Avalon from $89,000 (1.4B IDR), 32+32-year lease and 2028 completion, managed by Ribas Hotels. Since the March 2025 presentation no construction update has been posted, and no permit number, escrow, floor plans or completed earlier Avalon residential project is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 89000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 32,
+   "extension": "+32 years (32+32)",
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 129,
+   "payment_plan": "Booking, MoU, first instalment, then interest-free instalments until completion (amounts not published)",
+   "price_per_m2": 3296
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion in 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "Construction has started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news"
+   },
+   {
+    "claim": "Ribas Hotels Group will manage TAO (Avalon news only)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avalonbali.com/news/avalon-ribas-strategic-partnership"
+   },
+   {
+    "claim": "129 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "Price from $89,000 (1.4B IDR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "Value rises from $110,000 to $180,000 after completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "32+32 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "Projected ROI 12-14%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/projects/tao"
+   },
+   {
+    "claim": "Developer has completed earlier residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avalonbali.com/news/other-avalon-projects-more-than-just-development"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jl. Raya Semat No.99x, Badung, Bali, Indonesia",
+   "developer_company": "AVALON GROUP BALI (name used by Ribas Hotels Group; Indonesian PT and registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "studio with balcony",
+    "penthouse"
+   ],
+   "size_min_m2": 24,
+   "size_max_m2": 98,
+   "price_min": 89000,
+   "price_max": 190000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Interest-free instalments until construction completion (schedule not published)",
+   "foreign_ownership": "Leasehold 32 years + 32 years extension, notarised lease",
+   "rental_programme": "Ribas Hotels Group management; projected ROI 12-14%, 85% occupancy forecast",
+   "service_charge": null,
+   "brand": "Ribas Hotels (operator)",
+   "amenities": [
+    "pool",
+    "gym",
+    "yoga room",
+    "sauna",
+    "kids area",
+    "restaurant",
+    "underground parking",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Only a presentation news item (21 Mar 2025); no construction updates in news feed as of 31 Oct 2026",
+   "plans": "Unit sizes only",
+   "record": "OM Club House is Avalon's first residential project and is not yet handed over; the only operating Avalon businesses named are a gaming club (Cyberpunk) and a restaurant (Lula Kebab)",
+   "returns": "'12% Projected ROI', unit cards 14%; no guarantee wording"
+  },
+  "positives": [
+   "Lease term and extension stated (32+32)",
+   "Per-unit prices and sizes listed",
+   "Operator named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avalonbali.com/projects/tao",
+   "https://avalonbali.com/news",
+   "https://avalonbali.com/news/presentation-of-the-new-project-tao-club-house",
+   "https://www.avalonbali.com/news/avalon-ribas-strategic-partnership",
+   "https://avalonbali.com/news/other-avalon-projects-more-than-just-development"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ }
+]
