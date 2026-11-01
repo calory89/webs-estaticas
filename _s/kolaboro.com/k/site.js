@@ -23,10 +23,10 @@
 
   // live counts: every [data-db] number follows the published database
   var dataP = null;
-  function getData() { return dataP || (dataP = fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })); }
+  function getData() { return dataP || (dataP = fetch('/api/open/summary?t=' + Math.floor(Date.now() / 6e5)).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })); }
   if (document.querySelector('[data-db]')) {
     getData().then(function (d) {
-      if (!d || !d.cases) return; var db = d.db || {}; var v = { projects: d.cases.length, markets: d.markets, countries: d.countries, claims_total: db.claims_total, contradicted: (db.claims || {}).contradicted, all_six_public: db.all_six_public, with_flags: db.with_flags, sources: db.sources, data_points: db.data_points };
+      if (!d || !d.projects) return; var db = d.db || {}; var v = { projects: d.projects, markets: d.markets, countries: d.countries, claims_total: db.claims_total, contradicted: (db.claims || {}).contradicted, all_six_public: db.all_six_public, with_flags: db.with_flags, sources: db.sources, data_points: db.data_points };
       document.querySelectorAll('[data-db]').forEach(function (e) { var x = v[e.getAttribute('data-db')]; if (x) e.textContent = x.toLocaleString('en'); });
     });
   }
@@ -42,7 +42,7 @@
       var day = function (iso) { var a = iso.split('-'); return M[+a[1] - 1] + ' ' + (+a[2]); };
       var T = { data: 'DATA', feature: 'SHIPPED', auto: 'AGENT', building: 'BUILDING' };
       var db = d.db || {}, cl = db.claims || {}, n = function (x) { return (x || 0).toLocaleString('en'); };
-      var h = '<span class="si"><em class="k-live">LIVE</em><s>' + n(d.cases.length) + '</s> projects &middot; <s>' + n(d.countries) + '</s> countries &middot; <s>' + n(db.claims_total) + '</s> claims tested &middot; <s>' + n(cl.contradicted) + '</s> contradicted</span>';
+      var h = '<span class="si"><em class="k-live">LIVE</em><s>' + n(d.projects) + '</s> projects &middot; <s>' + n(d.countries) + '</s> countries &middot; <s>' + n(db.claims_total) + '</s> claims tested &middot; <s>' + n(cl.contradicted) + '</s> contradicted</span>';
       d.ships.slice(0, 16).forEach(function (x) { var inner = '<b>' + day(x.d) + '</b><em class="k-' + (T[x.k] ? x.k : 'feature') + '">' + (T[x.k] || 'SHIPPED') + '</em>' + esc(x.t); h += x.u && /^\/[^\/]/.test(x.u) ? '<a class="si" href="' + esc(x.u) + '">' + inner + '</a>' : '<span class="si">' + inner + '</span>'; });
       shipT.innerHTML = '<div class="ship-g">' + h + '</div><div class="ship-g" aria-hidden="true">' + h + '</div>';
       shipDur();

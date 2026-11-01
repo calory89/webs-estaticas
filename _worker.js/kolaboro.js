@@ -493,6 +493,7 @@ const OPEN_DOC = {
   note: 'Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.',
   endpoints: {
     'GET /api/open/stats': 'database totals (projects, markets, countries, claims tested, verification levels)',
+    'GET /api/open/summary': 'small summary used by the site: totals, latest seal and shipping log',
     'GET /api/open/projects': 'projects; filters: market, country, stage (off-plan|under construction|completed), min_public (0-6), min_confirmed (0-6), all_six (1), flags (1|0), limit (max 1000), offset',
     'GET /api/open/projects.csv': 'same filters, CSV',
     'GET /api/open/projects/{id}': 'one project, e.g. /api/open/projects/BALI-014',
@@ -530,6 +531,7 @@ export async function open(req, u) {
   let d; try { d = await openData(); } catch (e) { return openResp({ error: 'data_unavailable' }, null, 30); }
   const cases = d.cases || [], meta = { updated: d.updated, license: OPEN_DOC.license, note: OPEN_DOC.note };
   if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, countries: d.countries, ...(d.db || {}) });
+  if (path === '/api/open/summary') return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: d.countries, db: d.db || {}, seal: d.seal || null, ships: (d.ships || []).slice(0, 20) });
   if (path === '/api/open/markets') return openResp({ ...meta, method: 'transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects', markets: marketStats(cases) });
   if (path === '/api/open/markets.csv') { const m = marketStats(cases), k = Object.keys(m[0] || {}); return openResp([k.join(',')].concat(m.map(r => k.map(x => csvCell(r[x])).join(','))).join('\n'), 'text/csv; charset=utf-8'); }
   if (path === '/api/open/projects' || path === '/api/open/projects.csv') {
@@ -683,7 +685,7 @@ export async function ssr(base, u, kind) {
     title = 'Off-plan projects in ' + m + ', ' + L[0].country + ': what developers publish | Kolaboro';
     desc = n + ' off-plan projects tracked in ' + m + '. On average ' + avg(x => x.score).toFixed(1) + ' of 6 buyer checks public; ' + pct(x => (x.checks || {}).permit === 2) + '% publish a permit number and ' + pct(x => (x.checks || {}).escrow === true) + '% deposit protection. Updated ' + d.updated + '.';
     canon = 'https://kolaboro.com/m/' + slugM(m) + '/';
-    body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2>'<p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="/p/' + encodeURIComponent(x.id) + '/">' + hesc(x.id) + '</a>: ' + hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed</li>').join('') + '</ul>';
+    body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="/p/' + encodeURIComponent(x.id) + '/">' + hesc(x.id) + '</a>: ' + hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed</li>').join('') + '</ul>';
     ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated };
   }
   const tags = '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
