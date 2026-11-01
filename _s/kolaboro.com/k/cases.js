@@ -119,7 +119,7 @@
     });
   }
   function start(){
-    stat(); bind(); render();
+    stat(); bind(); try { var qs = new URLSearchParams(location.search).get('q'); if (qs) { $('kq').value = qs; S.q = qs.trim(); } } catch (e) {} render();
     var s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'; s.onload = mapInit; document.head.appendChild(s);
     var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'; document.head.appendChild(l);
   }
