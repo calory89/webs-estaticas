@@ -1526,6 +1526,202 @@
   "permit_number": null
  },
  {
+  "slug": "the-one-by-almal-nusa-dua",
+  "name": "The One by Almal Bali Nusa Dua",
+  "developer": "Almal Real Estate Development / PT. Magical Bali Villas",
+  "area": "Nusa Dua (Benoa)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
+  "docs_url": "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "154 residences on a 10,000 m2 plot: 42 studios, 66 1BR, 4 2BR apartments, 30 1BR townhouses, 12 2BR villas",
+   "studios from $98,371; 1BR from $180,320; townhouses from $281,750; 2BR apartments from $313,950; 2BR villas from $476,675",
+   "PBG No. SK-PBG-510305-14102026-001 issued 14 Oct 2026 by Badung Regency to PT Magical Bali Villas (press release)",
+   "handover Q3 2027 (OPR) vs completion 2028 in two phases (Palmera)",
+   "leasehold 25+15 years (OPR) vs 33+15 years (Palmera)",
+   "projected ROI 17-22% at 75-82% occupancy (developer calculation)",
+   "18-month plan: 25% on signing, six 12.5% payments every 3 months",
+   "Registry Collection Hotels (Wyndham) brand licence"
+  ],
+  "note": "154 studios, apartments, townhouses and villas in Nusa Dua by Dubai-based Almal from $98,371, which announced on 14 Oct 2026 that Badung Regency issued PBG No. SK-PBG-510305-14102026-001 to its local company PT Magical Bali Villas. Buyers pay in full within 18 months while construction is only starting; handover is Q3 2027 on the sales portal but 2028 in two phases elsewhere, and the lease is given as 25+15 or 33+15 years; no escrow, progress or open floor plans, and no completed Almal project found (checked 31 Oct 2026)",
+  "seed": {
+   "price": 98371,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+15 years (25+15 per OPR; 33+15 per Palmera)",
+   "guaranteed_language": false,
+   "yield_pct": 22,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "SK-PBG-510305-14102026-001",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 154,
+   "payment_plan": "25% on signing, then six payments of 12.5% every three months (18 months); 3% discount for full payment",
+   "price_per_m2": 3513
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "PBG SK-PBG-510305-14102026-001 issued 14 Oct 2026 by Badung Regency to PT Magical Bali Villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua"
+   },
+   {
+    "claim": "Registry Collection Hotels (Wyndham) brand licence; Wyndham VP quoted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://irhmagazine.com/almal-real-estate-development-secures-building-permit-for-bali-luxury-scheme/"
+   },
+   {
+    "claim": "Handover Q3 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+   },
+   {
+    "claim": "Leasehold 25+15 years",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+   },
+   {
+    "claim": "154 residential units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua"
+   },
+   {
+    "claim": "Work on site has begun (portal, Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+   },
+   {
+    "claim": "Projected ROI 17-22% at 75-82% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+   },
+   {
+    "claim": "Over USD 2B in delivered project value (sales agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+   },
+   {
+    "claim": "Developer has a completed project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://irhmagazine.com/almal-real-estate-development-secures-building-permit-for-bali-luxury-scheme/"
+   },
+   {
+    "claim": "Price from $98,371",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bay Square Business Bay, Dubai, UAE; Bali branch at ITDC Business Centre, Nusa Dua",
+   "developer_company": "PT Magical Bali Villas (Indonesian project entity named in press release; registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR apartment",
+    "2BR apartment",
+    "1BR townhouse",
+    "2BR villa"
+   ],
+   "size_min_m2": 28,
+   "size_max_m2": 110,
+   "price_min": 98371,
+   "price_max": 476675,
+   "currency": "USD",
+   "deposit_pct": 25,
+   "payment_plan": "25% on signing, six quarterly 12.5% instalments over 18 months",
+   "foreign_ownership": "Leasehold 25+15 years (OPR) or 33+15 years (Palmera)",
+   "rental_programme": "Operated by the developer's PT Magical Bali Villas under the Registry Collection Hotels brand licence; projected ROI 17-22% (developer calculation)",
+   "service_charge": null,
+   "brand": "Registry Collection Hotels (Wyndham)",
+   "amenities": [
+    "63 private pools",
+    "4 shared pools",
+    "266 m2 main pool",
+    "352 m2 rooftop restaurant",
+    "gym",
+    "co-working",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Business Wire release (Antara, IRHM, 14-16 Oct 2026): 'PBG No. SK-PBG-510305-14102026-001', issued 14 Oct 2026 by Badung Regency to PT Magical Bali Villas; not checked against a public register (none available)",
+   "escrow": null,
+   "progress": "Permit only just issued; portal says work on site has begun; no dated updates or %",
+   "plans": "'Download All Floor Plans' opens a lead-capture form; unit sizes listed",
+   "record": "No completed Almal project named; agent cites 'over USD 2B in delivered project value' without naming one",
+   "returns": "'Projected ROI: 17-22%' from developer calculations; not presented as guaranteed"
+  },
+  "positives": [
+   "Building permit number published with issue date and authority",
+   "Local project company named (PT Magical Bali Villas)",
+   "International hotel brand licence (Registry Collection)",
+   "Instalment schedule and unit mix published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
+   "https://www.theonebyalmal.com/",
+   "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua",
+   "https://irhmagazine.com/almal-real-estate-development-secures-building-permit-for-bali-luxury-scheme/",
+   "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+  ],
+  "verified_score": 0,
+  "permit_number": "SK-PBG-510305-14102026-001"
+ },
+ {
   "slug": "sanuuri-riverside-residences",
   "name": "Sanuuri Riverside Residences",
   "developer": "Investland Bali",
@@ -3225,6 +3421,193 @@
    "https://miraland.id/wp-content/uploads/2026/03/PRICE-LIST-WEB.pdf",
    "https://bali.antaranews.com/berita/370901/pengembang-lokal-baca-tren-minat-wisatawan-beli-vila-hijau-dan-anti-banjir",
    "https://updatebali.com/miraland-resmi-luncurkan-proyek-tahap-kedua-samani-villa-pecatu-dengan-desain-modern-tropis/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "bocoa-jimbaran",
+  "name": "Bocoa Jimbaran",
+  "developer": "Wahi Group",
+  "area": "Jimbaran",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://bocoajimbaran.com/",
+  "docs_url": "https://bocoajimbaran.com/",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "4 private-pool villas: 1BR XL 63 m2 on 173 m2 land, 3BR A 102 and 140 m2, 3BR B 147 m2 on 313 m2 land",
+   "live availability",
+   "prices and floor plans only in brochure (form)",
+   "developer Wahi Group, design Homeboys Projects, operations in-house",
+   "'Bocoa story': Bocoa Canggu (18 villas) and Bocoa Uluwatu (40 villas) sold out, AirDNA top-10 claim",
+   "bocoavillas.com: Jimbaran 'six villas', 29-year leasehold, $249,000"
+  ],
+  "note": "Four private-pool villas a five-minute walk from Jimbaran beach by Wahi Group with Homeboys Projects design, building and land sizes per villa, and prices and floor plans only in the brochure. The site presents earlier Bocoa projects as its record, but Bocoa Uluwatu was developed by Azuma Developments and Luma Properties (22 units per a sales agent, not 40), and other Bocoa pages describe Jimbaran as six or seven villas on a 29-year lease; no permit number, escrow or progress (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 29,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Site cites Bocoa Canggu (18 villas, operating) and Bocoa Uluwatu (40 villas, sold out) as 'the Bocoa story'; Bocoa Uluwatu developer is Azuma Developments with Homeboys (Azuma site) / Luma Properties (sales agent); no completed Wahi Group project named",
+   "units": 4,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "contradicted",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Bocoa Uluwatu (40 villas) is part of the developer's record",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://azumadevelopments.com/projects/bocoa/"
+   },
+   {
+    "claim": "Bocoa Uluwatu had 40 villas (sales agent lists 22 units)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.ldrgroup.nl/en/bocoa-uluwatu/"
+   },
+   {
+    "claim": "Bocoa Canggu (18 villas) sold out in under 3 months and operating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoajimbaran.com/"
+   },
+   {
+    "claim": "Two Bocoa villas rank in Canggu's AirDNA top ten",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoajimbaran.com/"
+   },
+   {
+    "claim": "Four villas (bocoavillas.com says six)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bocoavillas.com/investments/"
+   },
+   {
+    "claim": "29-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoavillas.com/investments/"
+   },
+   {
+    "claim": "Price $249,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoavillas.com/investments/"
+   },
+   {
+    "claim": "Five-minute walk to Jimbaran beach (270 m)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoajimbaran.com/"
+   },
+   {
+    "claim": "Wahi Group 12-18% annual ROI 'proven data based on our historical property performance'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wahigroup.id/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoajimbaran.com/"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bocoajimbaran.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR XL villa",
+    "3BR A villa",
+    "3BR B villa"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": 147,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 29 years (bocoavillas.com)",
+   "rental_programme": "Operated in-house by the Bocoa team; Wahi Group site cites 12-18% annual ROI",
+   "service_charge": null,
+   "brand": "Bocoa",
+   "amenities": [
+    "private pool",
+    "walled pool garden",
+    "fully furnished"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "'Receive the brochure, prices and availability' behind a form; sizes only on page",
+   "record": "Site 'The Bocoa story' credits Bocoa Canggu and Bocoa Uluwatu; Azuma Developments says it developed Bocoa Uluwatu with Homeboys, and LDR Group credits Luma Properties Bali with Homeboys; no completed Wahi Group project named",
+   "returns": "No yield figure or guarantee wording on the project page; Wahi Group homepage '12-18% Annual ROI'"
+  },
+  "positives": [
+   "Building and land sizes per villa published",
+   "Live availability shown",
+   "Named design studio with operating earlier projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bocoajimbaran.com/",
+   "https://wahigroup.id/",
+   "https://azumadevelopments.com/projects/bocoa/",
+   "https://www.ldrgroup.nl/en/bocoa-uluwatu/",
+   "https://bocoavillas.com/investments/"
   ],
   "verified_score": 0,
   "permit_number": null

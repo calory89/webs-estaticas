@@ -2316,5 +2316,967 @@
   "added": "2026-10-30",
   "verified_score": 0,
   "permit_number": null
+ },
+ {
+  "slug": "oxo-the-residences-nyanyi",
+  "area": "Nyanyi, Beraban, Kediri, Tabanan (next to Nuanu)",
+  "stage": "under construction",
+  "status": "sold out",
+  "url": "https://oxoliving.com/leading-the-way-in-sustainable-living-oxo-the-residences-sold-out-in-1-day/",
+  "docs_url": "https://oxoliving.com/blog/the-residences/oxo-living-announces-plans-for-oxo-the-residences-with-architect-alexis-dornier/",
+  "docs_listed": [
+   "OXO Living: all 40 villas (3-5 BR) sold out on launch day 8 June 2024 at Rp 8-16 billion",
+   "OXO Living: architect Alexis Dornier, IDR 500 billion project on about 1.9-2 ha, villas 184-280 m2 on 298-648 m2 plots, GBCI green certification planned",
+   "OXO Living: buyers purchase through a foreign direct investment company (PT PMA), set-up about $4,500",
+   "ANTARA and Kompas: groundbreaking 9 Oct 2024, completion targeted October 2026 / end 2026",
+   "OXO LinkedIn 2026: mock-up villa completed (Aug 2026 open house), 'targeted completion starting March 2026'",
+   "Nuanu partners portal: handover Q4 2026, resale only, Nuanu Creative City as shareholder; newer OXO storefront and Impala list resale/re-release units from IDR 12.58B with 30/30/40 payment"
+  ],
+  "note": "40 Alexis Dornier-designed villas in Nyanyi next to Nuanu by OXO Group Indonesia, all sold on launch day in June 2024 at Rp 8-16 billion, with groundbreaking on 9 October 2024 confirmed by ANTARA and Kompas and completion targeted for end 2026. In 2026 OXO showed a finished mock-up villa while portals cite about 95% construction; units now appear only as resale or re-release from IDR 12.6B, and no PBG number, escrow or floor plans are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 8000000000,
+   "currency": "IDR",
+   "title": "HGB via PT PMA (foreign buyers); OXO's newer page says freehold, some brokers say leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "OXO Living reports openings of Ecoverse (12 Aug 2026) and The Elan by OXO (29 Aug 2026); BDA portal says OXO has delivered three projects",
+   "units": 40,
+   "payment_plan": "30% booking / 30% construction / 40% handover (current listings)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number published; BDA notes PBG/SLF not confirmed.",
+   "escrow": "None published; Impala listing: 'Escrow account: not published by the developer'.",
+   "progress": "ANTARA and Kompas (9 Oct 2024): groundbreaking held, structural works to start next day. OXO LinkedIn: mock-up villa completed and open house 4-5 Aug 2026; BDA portal: about 95% complete.",
+   "plans": "Villa and plot size ranges only; no plans found.",
+   "record": "OXO Living reports Ecoverse opened Aug 2026 and The Elan soft-launched Aug 2026; BDA says three projects delivered.",
+   "returns": "No yield figure or guarantee on the OXO pages opened."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "All 40 villas sold out on launch day, 8 June 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi"
+   },
+   {
+    "claim": "Groundbreaking on 9 October 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kompas.com/properti/read/2024/10/09/191400021/vila-garapan-oxo-di-bali-mulai-dibangun-beres-tahun-2026"
+   },
+   {
+    "claim": "Prices Rp 8 billion to Rp 16 billion per villa",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi"
+   },
+   {
+    "claim": "Completion target (Q3 2026 OXO Jul 2024, October 2026 ANTARA, Q4 2026 Nuanu)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://oxoliving.com/big-splash-on-villas/"
+   },
+   {
+    "claim": "IDR 500 billion investment on 1.9 hectares, architect Alexis Dornier",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.jakartadaily.id/property/16213707242/luxury-villas-in-bali-set-new-standard-for-quality-living-with-oxo-the-residences-construction"
+   },
+   {
+    "claim": "30% of buyers Indonesian, 20% Australian",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi"
+   },
+   {
+    "claim": "Construction about 95% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bda-bali.com/en/catalog/o/oxo-the-residences/"
+   },
+   {
+    "claim": "Title for foreigners (HGB via PT PMA vs 'freehold' on OXO page vs leasehold on brokers)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/oxo-the-residences/"
+   },
+   {
+    "claim": "Units still on sale from the developer (sold out 2024 vs '3 unsold' listing in Oct 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://impalarealestate.com/projects/oxo-the-residences/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bda-bali.com/en/catalog/o/oxo-the-residences/"
+   },
+   {
+    "claim": "Nuanu Creative City is a shareholder",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://partners.nuanu.realestate/the-residence-en"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Canggu, Bali, Indonesia",
+   "developer_company": "OXO Group Indonesia / OXO Living (founder and CEO Johannes Weissenbaeck); registration number not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-10",
+   "handover_promised": "2026-Q4",
+   "original_handover": "2026-Q3 (OXO, July 2024)",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 184,
+   "size_max_m2": 293,
+   "price_min": 8000000000,
+   "price_max": 16000000000,
+   "currency": "IDR",
+   "deposit_pct": 30,
+   "payment_plan": "30/30/40 (current listings)",
+   "foreign_ownership": "PT PMA (foreign direct investment company) holding HGB, per OXO and Rumavi",
+   "rental_programme": "OXO in-house property management",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "clubhouse",
+    "gym",
+    "kids playground",
+    "BBQ areas",
+    "EV charging",
+    "solar panels",
+    "rainwater catchment"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tabanan Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Sell-out, prices and groundbreaking confirmed by national news agency ANTARA and Kompas",
+   "Named architect and foreign ownership route (PT PMA) stated",
+   "Mock-up villa completed and opened to buyers in August 2026"
+  ],
+  "flags": [],
+  "sources": [
+   "https://oxoliving.com/leading-the-way-in-sustainable-living-oxo-the-residences-sold-out-in-1-day/",
+   "https://oxoliving.com/big-splash-on-villas/",
+   "https://oxoliving.com/blog/the-residences/oxo-living-announces-plans-for-oxo-the-residences-with-architect-alexis-dornier/",
+   "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi",
+   "https://www.kompas.com/properti/read/2024/10/09/191400021/vila-garapan-oxo-di-bali-mulai-dibangun-beres-tahun-2026",
+   "https://www.jakartadaily.id/property/16213707242/luxury-villas-in-bali-set-new-standard-for-quality-living-with-oxo-the-residences-construction",
+   "https://www.linkedin.com/posts/oxoliving_oxotheresidences-oxorealestate-oxo-activity-7433815249813917696-ju5b",
+   "https://linkedin.com/company/oxoliving",
+   "https://rumavi.com/en/new-developments/indonesia/tabanan/oxo-the-residences",
+   "https://partners.nuanu.realestate/the-residence-en",
+   "https://novasia.estate/en/projects/oxo-the-residences/",
+   "https://bda-bali.com/en/catalog/o/oxo-the-residences/",
+   "https://impalarealestate.com/projects/oxo-the-residences/"
+  ],
+  "name": "OXO The Residences",
+  "developer": "OXO Group Indonesia",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 1,
+  "permit_number": null
+ },
+ {
+  "slug": "dasa-ubud-balitecture",
+  "area": "Ubud, Gianyar",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.balitecture.com/developments/dasa-ubud",
+  "docs_url": "https://www.balitecture.com/developments/dasa-ubud",
+  "docs_listed": [
+   "3BR two-storey villa with private pool and rooftop terrace, '1 Villa Remaining'",
+   "leasehold $349,000 (30+30 years) or $379,000 through a PT PMA holding Hak Guna Bangunan",
+   "ground and first floor plans with dimensions in millimetres; full drawings in brochure",
+   "ROI table: 13% / 15% / 17% at 70 / 80 / 90% occupancy and $280 per night, 'not guaranteed returns'",
+   "$5,000 reservation (refundable until signing or 14 days), then 5 x 20% milestone payments",
+   "launch release 10 Mar 2026: 'handover scheduled across 2026', milestone payments tied to verifiable physical stages",
+   "Balitecture about page: '200+ villas built', 10+ years, Australian-owned, International Property Awards 2025"
+  ],
+  "note": "Single remaining 3BR off-plan villa in Ubud by Balitecture at $349,000 on a 30+30 lease or $379,000 through a PT PMA holding HGB, with dimensioned floor plans, five 20% milestone payments and 13-17% return projections labelled not guaranteed. The March 2026 launch promised handover across 2026 but the page still shows it off-plan with no date or progress; no permit number or escrow is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 349000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30); alternative HGB title via PT PMA at $379,000",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Balitecture about page: '200+ villas designed and built'; Casita Alas (Kerobokan) shown completed September 2026",
+   "units": null,
+   "payment_plan": "$5,000 reservation, then 5 x 20% milestone payments",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number. Balitecture says its in-house legal team handles permits; nothing project-specific published.",
+   "escrow": "No escrow; milestone payments 'tied to verifiable physical stages'; reservation refundable for 14 days.",
+   "progress": "No construction updates. Launch release (Mar 2026) gave 'handover scheduled across 2026'; page still 'off-plan'.",
+   "plans": "Ground and first floor plans with millimetre dimensions on the development page.",
+   "record": "About page claims 200+ villas built over 10+ years; Casita Alas portfolio page says completed September 2026.",
+   "returns": "13-17% projections at $280/night; 'Projections are estimates only and not guaranteed returns.'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Leasehold $349,000 or $379,000 via PT PMA on HGB title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/dasa-ubud"
+   },
+   {
+    "claim": "PT PMA route described as 'freehold' (Rumavi) vs HGB right-to-build (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud"
+   },
+   {
+    "claim": "Lease term 30+30 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/dasa-ubud"
+   },
+   {
+    "claim": "Handover scheduled across 2026 (launch) vs no completion date published (portal, page still off-plan)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.balitecture.com/news/dasa-ubud-launch-2026"
+   },
+   {
+    "claim": "15% annual ROI at 80% occupancy and $280 per night",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/dasa-ubud"
+   },
+   {
+    "claim": "Developer has built 200+ villas in 10+ years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/about"
+   },
+   {
+    "claim": "International Property Awards 2025 winner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/about"
+   },
+   {
+    "claim": "Only 1 villa remaining",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/dasa-ubud"
+   },
+   {
+    "claim": "Licensed for development, construction, sales (SIUP-4, AREBI member)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/about"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia (Australian-owned)",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 200,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 349000,
+   "price_max": 379000,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "$5,000 reservation, 5 x 20% milestone payments",
+   "foreign_ownership": "Leasehold 30+30 years, or PT PMA holding HGB",
+   "rental_programme": "Balitecture management at 20% of gross revenue, up to 90 owner nights (Rumavi)",
+   "service_charge": "Running costs $900-1,100 per month (Rumavi)",
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "rooftop terrace",
+    "BBQ pavilion",
+    "tropical garden",
+    "built-in joinery"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dimensioned floor plans published",
+   "Milestone-linked payments with refundable reservation",
+   "Return projections show assumptions and are labelled not guaranteed",
+   "Developer explains correctly that foreigners hold HGB via PT PMA, not freehold"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.balitecture.com/developments/dasa-ubud",
+   "https://www.balitecture.com/news/dasa-ubud-launch-2026",
+   "https://www.balitecture.com/developments",
+   "https://www.balitecture.com/about",
+   "https://www.balitecture.com/portfolio/casita-alas",
+   "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud"
+  ],
+  "name": "Dasa Ubud",
+  "developer": "Balitecture",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "umah-ubud-balitecture",
+  "area": "Ubud, Gianyar",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/",
+  "docs_url": "https://www.balitecture.com/portfolio/umah-ubud",
+  "docs_listed": [
+   "three 2BR villas (layouts 2BR-A and 2BR-B), ~85 m2 build on ~120 m2 land each, private plunge pools, walled compound by a rice field",
+   "master plan and floor plans on portfolio page ('sizes are indicative')",
+   "unit page: $199,000, '30 years land lease + 30 year extension', 'Construction time 12 months', optional management",
+   "launch release 12 July 2024",
+   "portals: completion 2027 (Rumavi) / Q2 2027 (OffPlan), 13.9-19.8% gross yield projections, 4 x 20% milestone payments after $5,000 deposit",
+   "Umah Ubud is not among the six active projects on balitecture.com/developments (Oct 2026)"
+  ],
+  "note": "Three 2BR villas by a rice field in Ubud by Balitecture from $199,000 on a 30+30 lease, launched in July 2024 with a stated 12-month build, now shown by portals for completion in 2027. The developer publishes a master plan and floor plans but no longer lists Umah Ubud among its active developments and calls the images renders; no permit, escrow, progress or confirmed handover date is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 199000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30); PT PMA option on request (Rumavi)",
+   "guaranteed_language": false,
+   "yield_pct": 13.9,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Balitecture about page: '200+ villas designed and built'; Casita Alas shown completed September 2026",
+   "units": 3,
+   "payment_plan": "$5,000 deposit then 4 x 20% milestone payments (Rumavi)",
+   "price_per_m2": 2341
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG number or permit statement for Umah Ubud.",
+   "escrow": "None published.",
+   "progress": "No construction updates. July 2024 launch with '12 months' construction time; portals now give 2027; the portfolio page says 'The pictures on this page are our renders of the design.'",
+   "plans": "Portfolio page publishes master plan (villas A, B, C) and floor plans.",
+   "record": "About page claims 200+ villas built; Casita Alas completed September 2026 per developer.",
+   "returns": "Portal: 13.9-19.8% gross yield projections and 15-20% off-plan appreciation; OffPlan 'Est. ROI 20%'; no guarantee wording."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction time 12 months (unit page) vs completion 2027 after a July 2024 launch",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.so/projects/umah-ubud"
+   },
+   {
+    "claim": "Project still actively marketed (absent from developer's active developments list)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments"
+   },
+   {
+    "claim": "Price from $199,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/"
+   },
+   {
+    "claim": "30-year land lease plus 30-year extension",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/"
+   },
+   {
+    "claim": "Three villas, ~85 m2 on ~120 m2 land",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/portfolio/umah-ubud"
+   },
+   {
+    "claim": "13.9-19.8% gross yield and 15-20% appreciation by completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud"
+   },
+   {
+    "claim": "Developer has built 200+ villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/about"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/portfolio/umah-ubud"
+   },
+   {
+    "claim": "Deposit protection for milestone payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia (Australian-owned)",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 200,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": "2025 (12-month build from July 2024 launch, implied)",
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa"
+   ],
+   "size_min_m2": 85,
+   "size_max_m2": 120,
+   "price_min": 199000,
+   "price_max": 299000,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "$5,000 deposit, 4 x 20% milestone payments",
+   "foreign_ownership": "Leasehold 30+30 years; PT PMA option on request",
+   "rental_programme": "Balitecture management at 20% of gross revenue",
+   "service_charge": "Operating costs $1,100 per month (Rumavi)",
+   "brand": null,
+   "amenities": [
+    "private plunge pool",
+    "outdoor lounge",
+    "outdoor bathroom",
+    "walled gated compound",
+    "rice field view",
+    "shared parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Master plan and floor plans published",
+   "Lease term and extension stated",
+   "Milestone-linked payments"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/",
+   "https://www.balitecture.com/portfolio/umah-ubud",
+   "https://www.balitecture.com/news/umah-ubud-launch-2024",
+   "https://www.balitecture.com/developments",
+   "https://www.balitecture.com/about",
+   "https://www.balitecture.com/portfolio/casita-alas",
+   "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud",
+   "https://offplan.so/projects/umah-ubud"
+  ],
+  "name": "Umah Ubud",
+  "developer": "Balitecture",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "parq-ubud-tegallalang",
+  "area": "Jl. Sri Wedari No.24, Tegallalang, Ubud, Gianyar",
+  "stage": "completed",
+  "status": "completed",
+  "url": "https://parqdevelopment.com/ubud/en",
+  "docs_url": "https://parqdevelopment.com/ubud/en",
+  "docs_listed": [
+   "developer: 'Ready penthouses in PARQ UBUD', apartments 63.35 m2 from $161,543 and penthouses 66-102 m2 from $168,300 to $255,000, priced in rupiah",
+   "developer: management company handles rentals and taxes, quarterly payouts",
+   "Rumavi: 33 units, 47.5-100 m2, about 8 available, completion Q3 2025 (other portals Q3 2024), lease term unconfirmed",
+   "news: Gianyar regency sealed PARQ Ubud on 11 Nov 2024 for lacking PBG and SLF and closed it on 20 Jan 2025 by Regent Decree 285/E-09/HK/2025",
+   "news (Bali Post, Jun 2025): buildings on protected rice-field land (LSD/LP2B) must be demolished before any tourism licence"
+  ],
+  "note": "Apartments and penthouses in the PARQ Ubud campus in Tegallalang, still marketed by Parq Development as ready units from $161,543. Gianyar regency closed PARQ Ubud in January 2025 by regent decree after officials said it had no PBG or SLF, and in June 2025 told the new management to demolish buildings on protected rice-field land before any licence; no lease term, escrow or plans are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 111625,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": false,
+   "developer_delivered": "Parq Development names Parq Ubud (finished), Parq Family, Soho Surfside, Citadel and Ocean City on its site",
+   "units": 33,
+   "payment_plan": "Payment in Indonesian rupiah",
+   "price_per_m2": 2350
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Gianyar Regional Secretary (Nov 2024): 'they did not have basic licences such as PBG and SLF'. Satpol PP head (Jan 2025): 'not a single permit'. Closed under Regent Decree 285/E-09/HK/2025.",
+   "escrow": "None published.",
+   "progress": "Developer markets units as 'ready'; buildings exist and operated until closure in January 2025 (detikBali, ABC News).",
+   "plans": "Unit sizes only.",
+   "record": "Developer names other projects (Parq Family, Soho Surfside, Citadel, Ocean City); Rumavi: founded 2007, 120,000 m2 completed (developer-supplied).",
+   "returns": "Rumavi lists 14-20% gross yield; developer page promises 'passive income' with quarterly payouts but no figure or guarantee."
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Units are ready and can be rented through the developer's management company",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.cnnindonesia.com/nasional/20250122200546-20-1190407/kampung-rusia-di-ubud-dijaga-ketat-satpol-pp-gianyar-usai-ditutup"
+   },
+   {
+    "claim": "PARQ Ubud holds PBG and SLF",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.detik.com/bali/bisnis/d-7635845/kampung-rusia-di-ubud-yang-akhirnya-ditutup"
+   },
+   {
+    "claim": "Business closed by Regent Decree 285/E-09/HK/2025 on 20 Jan 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.liputan6.com/lifestyle/read/5889921/parq-ubud-yang-disebut-sebagai-kampung-rusia-di-bali-akhirnya-ditutup-pemkab-gianyar"
+   },
+   {
+    "claim": "Buildings partly on protected rice-field land (LSD/LP2B) and must be demolished",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.balipost.com/news/2025/06/24/467610/Urus-Izin-Akomodasi-Pariwisata,PARQ...html"
+   },
+   {
+    "claim": "Completion Q3 2025 (Rumavi) vs Q3 2024 (other portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://global-property.investments/indonesia/o1555/"
+   },
+   {
+    "claim": "Apartment and penthouse prices $111,625-$255,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://parqdevelopment.com/penthouses/en"
+   },
+   {
+    "claim": "Lease term (unconfirmed, 'likely 30+30')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud"
+   },
+   {
+    "claim": "Land next to the complex tripled in value",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://parqdevelopment.com/ubud/en"
+   },
+   {
+    "claim": "Immigration checks in April 2023 found no visa violations among foreign guests",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.detik.com/bali/berita/d-7742007/tamat-riwayat-kampung-rusia-di-ubud"
+   },
+   {
+    "claim": "Developer founded 2007 with 650+ units across projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2025-Q3",
+   "original_handover": "2024-Q3 (portals)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "1BR penthouse"
+   ],
+   "size_min_m2": 47.5,
+   "size_max_m2": 102,
+   "price_min": 111625,
+   "price_max": 255000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Payment in rupiah",
+   "foreign_ownership": "Leasehold (term not published)",
+   "rental_programme": "PARQ Development management company, quarterly payouts (operations halted by regency closure in Jan 2025)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "80 m pool",
+    "700 m2 gym",
+    "spa",
+    "10 restaurants",
+    "coworking",
+    "concert hall",
+    "kindergarten",
+    "supermarket"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency government (PBG/SLF via SIMBG; business licensing via OSS)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Physical buildings exist and unit prices and sizes are published"
+  ],
+  "flags": [
+   {
+    "text": "Gianyar regency temporarily sealed PARQ Ubud on 11 November 2024; the regional secretary said it lacked basic permits including PBG and SLF.",
+    "source": "https://www.detik.com/bali/bisnis/d-7635845/kampung-rusia-di-ubud-yang-akhirnya-ditutup"
+   },
+   {
+    "text": "PARQ Ubud was closed on 20 January 2025 under Gianyar Regent Decree No. 285/E-09/HK/2025 for breaching regency regulations on public order and risk-based licensing.",
+    "source": "https://www.kompas.id/artikel/parq-ubud-ditutup-seperti-apa-kawasan-yang-dijuluki-kampung-rusia-tersebut"
+   },
+   {
+    "text": "Bali Post reported in June 2025 that Gianyar officials asked PARQ's new management to demolish buildings on protected rice-field land (LSD/LP2B) before any tourism licence could be considered.",
+    "source": "https://www.balipost.com/news/2025/06/24/467610/Urus-Izin-Akomodasi-Pariwisata,PARQ...html"
+   },
+   {
+    "text": "ABC News reported the January 2025 shutdown and Indonesian media reports that the development was built on protected rice fields.",
+    "source": "https://www.abc.net.au/news/2025-01-23/bali-authorities-shut-down-russian-village-parq-ubud-villa/104849746"
+   }
+  ],
+  "sources": [
+   "https://parqdevelopment.com/ubud/en",
+   "https://parqdevelopment.com/penthouses/en",
+   "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud",
+   "https://global-property.investments/indonesia/o1555/",
+   "https://www.detik.com/bali/bisnis/d-7635845/kampung-rusia-di-ubud-yang-akhirnya-ditutup",
+   "https://www.detik.com/bali/berita/d-7742007/tamat-riwayat-kampung-rusia-di-ubud",
+   "https://www.kompas.id/artikel/parq-ubud-ditutup-seperti-apa-kawasan-yang-dijuluki-kampung-rusia-tersebut",
+   "https://www.liputan6.com/lifestyle/read/5889921/parq-ubud-yang-disebut-sebagai-kampung-rusia-di-bali-akhirnya-ditutup-pemkab-gianyar",
+   "https://www.cnnindonesia.com/nasional/20250122200546-20-1190407/kampung-rusia-di-ubud-dijaga-ketat-satpol-pp-gianyar-usai-ditutup",
+   "https://www.balipost.com/news/2025/06/24/467610/Urus-Izin-Akomodasi-Pariwisata,PARQ...html",
+   "https://www.abc.net.au/news/2025-01-23/bali-authorities-shut-down-russian-village-parq-ubud-villa/104849746"
+  ],
+  "name": "Parq Ubud",
+  "developer": "Parq Development",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 1,
+  "permit_number": null
+ },
+ {
+  "slug": "azura-complex-nusa-dua",
+  "area": "Nusa Dua, Badung",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua",
+  "docs_url": "https://vibedevelopment.pro/news",
+  "docs_listed": [
+   "portals: 99 units in 5 buildings on 10,000 m2, unit types Breeze (1BR 35 m2), Air, Garden, Collection (2-4 BR up to 180 m2), from Rp 1.79B / $100,000-$102,800",
+   "portals: completion September 2027; payment 20% down, 20% at PBG, 20% frame, 20% finishing, 20% furniture",
+   "developer news list: 'Vibe Development Obtains PBG Registration Number for Azura at Nusa Dua Complex' (8 Nov 2025)",
+   "developer site: 'Escrow payments via Bank Mandiri', 'All PBG / SLF documents are publicly verifiable'; Permata Bank escrow partnership (Oct 2026)",
+   "developer company: PT PMA Vibe Development Lab, Jl. Raya Kayu Tulang No.18, Canggu",
+   "Azura is not among the 8 projects on sale on vibedevelopment.pro (Oct 2026); riserealbali lists it at groundwork"
+  ],
+  "note": "99 leasehold apartments, townhouses and penthouses in 5 low-rise buildings in Nusa Dua by PT PMA Vibe Development Lab, from about $100,000 with September 2027 completion and payments tied to PBG, frame, finishing and furniture milestones. The developer announced a PBG registration number in November 2025 and now advertises Bank Mandiri and Permata escrow, but neither the number nor Azura escrow terms were visible, Azura no longer appears on its sales list and the lease term is unpublished (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1790000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-09",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Developer states buyer payments go through Bank Mandiri escrow accounts (since Dec 2025) and a Permata Bank escrow partnership (Oct 2026); not confirmed for Azura contracts",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Vibe Development lists Sanur Cassandra 1 as completed and reports completed Cassandra 3 VIP villa; riserealbali shows Sanur VIP Villa handed over",
+   "units": 99,
+   "payment_plan": "20% down / 20% at PBG / 20% frame / 20% finishing / 20% furniture",
+   "price_per_m2": 51200000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer news headline (8 Nov 2025): PBG registration number obtained for Azura; the number itself was not visible in the pages opened. Site says documents are on OSS / 'upon request'.",
+   "escrow": "vibedevelopment.pro: 'Every buyer payment is protected by independent bank escrow' (Bank Mandiri); news Oct 2026 adds Permata Bank escrow. Whether Azura contracts signed before Dec 2025 are covered is not stated.",
+   "progress": "No dated Azura construction update found; riserealbali lists 'Groundwork'.",
+   "plans": "Portals mention unit floor plans and a master plan tab, but no drawings were visible.",
+   "record": "Developer lists Sanur Cassandra 1 as completed and reports completed Cassandra 3; FazWaz/AsiaVillas show 2 completed of 5 projects.",
+   "returns": "No yield for Azura; site homepage shows a 53.3% IRR calculator example and 'average 5y ROI 11.4%' across projects, no guarantee."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "PBG registration number obtained for Azura (Nov 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/news"
+   },
+   {
+    "claim": "Buyer payments protected by Bank Mandiri escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   },
+   {
+    "claim": "Completion September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asia.villas/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
+   },
+   {
+    "claim": "99 units in 5 buildings on 10,000 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
+   },
+   {
+    "claim": "Starting price ($100,000 / Rp 1.79B vs $102,800 Rumavi)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua"
+   },
+   {
+    "claim": "Developer track record (Rumavi: 'verified multi-project record' and 'not widely documented')",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua"
+   },
+   {
+    "claim": "Developer on the market since 2007",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   },
+   {
+    "claim": "Project still on sale (portals show 82 units for sale; developer sales list omits Azura)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vibedevelopment.pro/"
+   },
+   {
+    "claim": "Construction at groundwork stage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riserealbali.com/developers/vibe-development/"
+   },
+   {
+    "claim": "Lease term",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Canggu, Badung, Bali, Indonesia",
+   "developer_company": "PT PMA Vibe Development Lab (registration number not published)",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "2BR townhouse",
+    "2-3BR villa",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 180,
+   "price_min": 1790000000,
+   "price_max": 10665969683,
+   "currency": "IDR",
+   "deposit_pct": 20,
+   "payment_plan": "20% down / 20% PBG / 20% frame / 20% finishing / 20% furniture",
+   "foreign_ownership": "Leasehold (term not published)",
+   "rental_programme": "Vibe Asia Management being set up (developer news, Oct 2026)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pool",
+    "gym",
+    "yoga area",
+    "spa and recovery centre",
+    "restaurant and bar",
+    "coworking",
+    "kids zones",
+    "24h security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Payment schedule tied to PBG issuance and physical construction stages",
+   "Developer advertises bank escrow (Bank Mandiri, Permata) and says permit documents are on OSS",
+   "Developer legal entity and address published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua",
+   "https://www.asia.villas/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua",
+   "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua",
+   "https://vibedevelopment.pro/",
+   "https://vibedevelopment.pro/news",
+   "https://riserealbali.com/developers/vibe-development/",
+   "https://www.asia.villas/property-developers/pt-vibe-development-lab-d5660"
+  ],
+  "name": "Azura Complex Nusa Dua",
+  "developer": "PT Vibe Development Lab",
+  "country": "Indonesia",
+  "market": "Bali",
+  "added": "2026-10-30",
+  "verified_score": 0,
+  "permit_number": null
  }
 ]

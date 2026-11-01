@@ -1753,6 +1753,383 @@
   "verified_score": 0
  },
  {
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "developer": "Homevibe Development Group",
+  "area": "Jimbaran",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://worldestate.homes/en/indonesia/bali/j-hills/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "from $99,900, units from 22 m2, 1-2 bedrooms (World Estate, OffPlan)",
+   "delivery Q2 2027 (World Estate, OffPlan); Q1 2027 (NewHomes.id)",
+   "lease 33+26 years (World Estate)",
+   "payment plan 35% initial, 65% in 7 interest-free payments (Ulu Homes)",
+   "NewHomes.id: 1BR 22 m2 $99,000, 2BR 83 m2 $279,000, 3BR 99 m2 $299,000; developer named 'Vibe Development'",
+   "developer site jhillsbali.com listed by MIPIF exhibitor page (could not be opened)",
+   "Balibestinvestment developer card: '0 projects built, 1 project in process'"
+  ],
+  "note": "Hillside apartments and townhouses in Jimbaran by PT Homevibe Development Group (listed by one portal as Vibe Development), from $99,900, Q2 2027 delivery and a 33+26-year lease per agency listings, with a 35/65 interest-free payment plan. Listings call the developer 'proven' but a developer directory shows no completed project; no permit number, escrow, floor plans or progress found, and the developer site jhillsbali.com could not be opened (checked 1 Nov 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 99900,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 33,
+   "extension": "+26 years (33+26, per World Estate listing)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "35% initial, 65% in 7 interest-free instalments",
+   "price_per_m2": 4541
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Layouts only via presentation request on agency pages.",
+   "record": "World Estate claims 'a proven track record and successful projects in Bali' without naming any; Balibestinvestment developer card shows '0 projects built, 1 project in process'.",
+   "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer has a proven track record of successful projects in Bali",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://balibestinvestment.com/best-developers-bali/j-hills-resort"
+   },
+   {
+    "claim": "Delivery Q2 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://newhomes.id/j-hills-bali"
+   },
+   {
+    "claim": "Lease 33+26 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://worldestate.homes/en/indonesia/bali/j-hills/"
+   },
+   {
+    "claim": "Prices from $99,900 for 22 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/j-hills-jimbaran"
+   },
+   {
+    "claim": "Developer is PT Homevibe Development Group",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://newhomes.id/j-hills-bali"
+   },
+   {
+    "claim": "High-rise development",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://newhomes.id/j-hills-bali"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://worldestate.homes/en/indonesia/bali/j-hills/"
+   },
+   {
+    "claim": "35/65 payment plan with 7 interest-free instalments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ulu-homes.id/projects/j-hills/"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://worldestate.homes/en/indonesia/bali/j-hills/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "PT Homevibe Development Group (registration number not published)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR apartment",
+    "2BR apartment",
+    "3BR townhouse"
+   ],
+   "size_min_m2": 22,
+   "size_max_m2": 99,
+   "price_min": 99900,
+   "price_max": 299000,
+   "currency": "USD",
+   "deposit_pct": 35,
+   "payment_plan": "35% then 65% in 7 interest-free instalments",
+   "foreign_ownership": "Leasehold 33+26 years (agency listing)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool with sun deck",
+    "spa",
+    "yoga",
+    "gym",
+    "barbecue area",
+    "24/7 CCTV",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Lease term with extension stated (33+26)",
+   "Interest-free instalment plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://worldestate.homes/en/indonesia/bali/j-hills/",
+   "https://offplan.so/projects/j-hills-jimbaran",
+   "https://ulu-homes.id/projects/j-hills/",
+   "https://newhomes.id/j-hills-bali",
+   "https://mipif.com/members/detail/homevibe/",
+   "https://balibestinvestment.com/best-developers-bali/j-hills-resort"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "lyvin-uluwatu",
+  "name": "Lyvin Uluwatu Apartments",
+  "developer": "Lyvin Properties",
+  "area": "Pecatu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://lyvinproperties.co/uluwatu",
+  "docs_url": "https://lyvinproperties.co/uluwatu",
+  "permit_number": null,
+  "docs_listed": [
+   "44 one- and two-bedroom apartments, 14 of 44 remaining",
+   "unit prices $396,000-$550,000 incl. 11% VAT; $3,963-$4,919 per m2",
+   "floor plans and areas per apartment type (78.7-142.7 m2)",
+   "lease 35 years + 20-year priority extension (55 total)",
+   "completion Q4 2028",
+   "company NIB 2302220057448 (PT Lyvin Properties Indonesia, est. 2022)",
+   "completed projects page: Lyvin Melasti Apartments (2024), Lyvin Melasti Villas (2025), Lyvin Bingin (2026)",
+   "Lyvin post on Balinsky (22 May 2026): 'PBG has been issued for Lyvin Uluwatu' (number not shown in text)"
+  ],
+  "note": "44-unit serviced apartment project in a forested park near Uluwatu beach by PT Lyvin Properties Indonesia, from $396,000 incl. VAT, Q4 2028 completion, 35+20-year lease, with floor plans and a company NIB. Lyvin announced in May 2026 that the PBG had been issued but shows no number in text; Real Estate Asia reported its Lyvin Melasti project operating and nearing full completion, while no escrow or construction progress is published for Uluwatu (checked 1 Nov 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 396000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 35,
+   "extension": "+20 years priority right to extend (55 total)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Completed projects page: Lyvin Melasti Apartments (operating since 2024), Lyvin Melasti Villas (operating since 2025), Lyvin Bingin (since 2026); Real Estate Asia (Dec 2025): Lyvin Melasti villas operational, full completion by Mar 2026",
+   "units": 44,
+   "payment_plan": null,
+   "price_per_m2": 3963
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Lyvin's own post on Balinsky (22 May 2026): 'PBG has been issued for Lyvin Uluwatu. PBG number:' with the number not readable in the text. Footer NIB 2302220057448 is the company business ID, not a PBG.",
+   "escrow": null,
+   "progress": "No construction updates for Uluwatu; the PBG post says the project 'moves into the next construction stages'.",
+   "plans": "Floor plans and areas for each apartment type on the project page.",
+   "record": "lyvinproperties.co/completed lists three operating projects; Real Estate Asia (22 Dec 2025) reports Lyvin Melasti villas operational and the project entering final delivery; Lyvin's March 2026 report on Balinsky described Melasti Apartments nearly complete with soft opening end of July 2026.",
+   "returns": "No yield figure or guarantee wording on the project page; Real Estate Asia notes Lyvin did not share financial forecasts."
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "PBG issued for Lyvin Uluwatu (May 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balinsky.info/en/news/lyvin-uluwatu-pbg-issued-next-construction-phase"
+   },
+   {
+    "claim": "Lyvin Melasti villas operating and project in final delivery",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://realestateasia.com/exclusive/lyvin-properties-bets-low-density-luxury-in-balis-south-bukit"
+   },
+   {
+    "claim": "Lyvin Melasti full completion by March 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://balinsky.info/en/news/lyvin-melasti-construction-nearly-complete"
+   },
+   {
+    "claim": "Developer company PT Lyvin Properties Indonesia, NIB 2302220057448",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "Completion Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "Lease 35 + 20 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "Prices $396,000-$550,000 incl. VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "14 of 44 units remaining",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "Set in a 226,624 m2 forested park",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lyvinproperties.co/uluwatu"
+   },
+   {
+    "claim": "Lyvin Melasti rated 9.9 on Booking.com and Airbnb Superhost",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/lyvin-co_phase-2-of-lyvin-melasti-now-on-sale-activity-7481359243955048448-fbH4"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2022,
+   "developer_hq": "Pecatu, Bali, Indonesia (Jl. Bangbang Metuug)",
+   "developer_company": "PT Lyvin Properties Indonesia, NIB 2302220057448",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR duplex",
+    "2BR duplex"
+   ],
+   "size_min_m2": 78.7,
+   "size_max_m2": 142.7,
+   "price_min": 396000,
+   "price_max": 550000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 35 years + 20-year priority extension",
+   "rental_programme": "Full hotel service and hotel-standard asset management by Lyvin; financial model on request",
+   "service_charge": null,
+   "brand": "Lyvin (in-house hospitality brand)",
+   "amenities": [
+    "300 m2 pool",
+    "spa",
+    "restaurant",
+    "forested park",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans and price per m2 published",
+   "Developer business ID (NIB) published",
+   "Developer announced PBG issuance in May 2026",
+   "Prior Lyvin project reported operating by trade media",
+   "Lease term and extension stated (35+20)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lyvinproperties.co/uluwatu",
+   "https://lyvinproperties.co/completed",
+   "https://lyvinproperties.co/melasti",
+   "https://balinsky.info/en/news/lyvin-uluwatu-pbg-issued-next-construction-phase",
+   "https://balinsky.info/en/news/lyvin-melasti-construction-nearly-complete",
+   "https://realestateasia.com/exclusive/lyvin-properties-bets-low-density-luxury-in-balis-south-bukit",
+   "https://www.linkedin.com/posts/lyvin-co_phase-2-of-lyvin-melasti-now-on-sale-activity-7481359243955048448-fbH4"
+  ],
+  "verified_score": 1
+ },
+ {
   "slug": "oasis-iii",
   "name": "Oasis III",
   "developer": "BREIG Property",

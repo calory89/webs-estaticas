@@ -1958,6 +1958,197 @@
   ]
  },
  {
+  "slug": "the-title-coralina-kamala",
+  "name": "The Title Coralina Kamala",
+  "developer": "The Title (developer not named on site)",
+  "area": "Kamala, Phuket",
+  "country": "Thailand",
+  "market": "Phuket",
+  "url": "https://coralinakamala.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "564 apartments in 8 seven-storey buildings + 5 commercial units on 11-1-27.58 rai (18,110 m2)",
+   "prices by type: 1 bed from THB 4,284,000, 2 bed from THB 8,042,000, 2 bed plus from THB 14,800,000",
+   "master plan",
+   "construction start Q2 2026, completion Q2 2028",
+   "0% instalment during construction, discounts up to 10%",
+   "'over 30 years' developer claim (developer not named on this site)"
+  ],
+  "note": "564-unit, eight-building condo 400 m from Kamala Beach from THB 4,284,000, developed by SET-listed Rhom Bho Property (The Title, an AssetWise subsidiary); the site still shows construction start Q2 2026, but the ONEP register lists its EIA report (256909-43) as filed without approval and the project as not yet built, and no permit, escrow or progress is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 4284000,
+   "currency": "THB",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Rhom Bho Property PCL (SET: TITLE): transfers at The Title Legendary Bang-Tao (SET snapshot, AssetWise Q3 2025 results); ONEP shows earlier The Title condos (e.g. The Title, The Title V) handed to their condominium juristic persons",
+   "units": 564,
+   "payment_plan": "0% instalment during the construction period"
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "evidence": {
+   "permit": "No permit or EIA number published. ONEP lists report 256909-43 'Coralina Kamala' condominium, Kamala, owner Rhom Bho Property PCL, with no approval letter number or date and status 'not yet constructed'. A condominium of this size needs EIA approval before a building permit, so the advertised Q2 2026 construction start is not supported by the register",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No progress published; site still lists 'Q2 2026 construction start'; ONEP status 'not yet constructed'. Launch press (REm, Property Channel) gave completion Q1 2028, starting price THB 3 million and project value THB 4.28 billion (AssetWise: THB 3.9 billion)",
+   "plans": "Master plan and unit-type size ranges; no individual unit plans",
+   "record": "Rhom Bho Property PCL is SET-listed; AssetWise reports revenue from The Title Legendary Bang-Tao transfers (Q3 2025); ONEP lists earlier The Title condos (reports 256607-39 and 256509-8) now owned by their condominium juristic persons, i.e. completed and registered",
+   "returns": "'High rental yield' wording only; no guarantee"
+  },
+  "claims": [
+   {
+    "claim": "Construction start Q2 2026",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16529"
+   },
+   {
+    "claim": "EIA approved (needed for building permit)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16529"
+   },
+   {
+    "claim": "Developer is Rhom Bho Property PCL (The Title)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=16529"
+   },
+   {
+    "claim": "Developer is SET-listed and has delivered projects (The Title Legendary Bang-Tao transfers)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+   },
+   {
+    "claim": "Earlier The Title condos completed and handed to juristic persons",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=12762"
+   },
+   {
+    "claim": "564 units in 8 seven-storey buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://assetwise.co.th/en/news/phuket-drives-asws-continued-growth-posting-9-month-revenue-of-thb-6-25-billion/"
+   },
+   {
+    "claim": "Completion Q2 2028",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://remthailand.asia/the-title-expands-its-phuket-legacy-with-coralina-kamala/"
+   },
+   {
+    "claim": "Prices from THB 4,284,000",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://remthailand.asia/the-title-expands-its-phuket-legacy-with-coralina-kamala/"
+   },
+   {
+    "claim": "Developer has over 30 years in Thai real estate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coralinakamala.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coralinakamala.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Phuket, Thailand",
+   "developer_company": "Rhom Bho Property Public Company Limited (SET: TITLE), subsidiary of AssetWise PCL (SET: ASW)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Stock Exchange of Thailand (TITLE); parent AssetWise PCL (ASW) listed",
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": "2028-Q1 (launch press, Oct-Nov 2025)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR plus",
+    "2BR",
+    "2BR plus",
+    "penthouse"
+   ],
+   "size_min_m2": 26,
+   "size_max_m2": 128,
+   "price_min": 4284000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "0% instalment during the construction period",
+   "foreign_ownership": "Freehold or leasehold on request (agent page); quota not stated",
+   "rental_programme": "The Esquire property management, resale and rental service; no figures",
+   "service_charge": null,
+   "brand": "The Title",
+   "amenities": [
+    "5 pools totalling 2,500 m2",
+    "fitness centre",
+    "co-working and lounge",
+    "kids playground",
+    "pet club",
+    "EV charging",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Kamala subdistrict administration (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer is SET-listed with completed Phuket condominiums confirmed on the ONEP register",
+   "Prices by unit type published",
+   "Unit count and land area match the listed parent's disclosure"
+  ],
+  "flags": [],
+  "sources": [
+   "https://coralinakamala.com/",
+   "https://eia.onep.go.th/eia/detail?id=16529",
+   "https://eia.onep.go.th/eia/detail?id=12762",
+   "https://eia.onep.go.th/eia/detail?id=11471",
+   "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html",
+   "https://assetwise.co.th/en/news/phuket-drives-asws-continued-growth-posting-9-month-revenue-of-thb-6-25-billion/",
+   "https://remthailand.asia/the-title-expands-its-phuket-legacy-with-coralina-kamala/",
+   "https://www.propertychannel.co.th/%e0%b8%82%e0%b9%88%e0%b8%b2%e0%b8%a7/title-coralina-kamala/",
+   "https://investor.rhombho.co.th/en/newsroom/news-clippings",
+   "https://www.fazwaz.co.th/en/projects/thailand/phuket/kathu/kamala/the-title-coralina-kamala",
+   "https://phuket.pro/en/news/start-prodaj-the-title-coralina/"
+  ]
+ },
+ {
   "slug": "nichakul-villas-lamai",
   "name": "Nichakul Villas Lamai",
   "developer": "Samui Paradise Group",
@@ -2308,6 +2499,382 @@
    "https://samuiparadisegroup.com/",
    "https://samuiparadisegroup.com/about-us/",
    "https://data.creden.co/company/general/0845566024656"
+  ]
+ },
+ {
+  "slug": "the-crest-samui",
+  "name": "The Crest Residences",
+  "developer": "The Wave Real Estate Group",
+  "area": "Bang Po, Koh Samui",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "url": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
+  "docs_url": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
+  "permit_number": null,
+  "docs_listed": [
+   "thecrestsamui.com redirects to the developer site",
+   "leasehold, 27 villas (phase 1 of 28 residences), Bang Po Beach",
+   "estimated completion 2027",
+   "master plan",
+   "villa plans (Signature 1st/2nd floor; Diamond 1st/2nd/basement)",
+   "developer project timeline 2013-2025"
+  ],
+  "note": "27 leasehold beachfront villas on Bang Po Beach by The Wave Real Estate Group with estimated completion 2027, master plan and villa floor plans; agents list prices from THB 16.8M (3-bed, 356 m2) to THB 42.8M, but the developer publishes no price, permit, escrow or progress, and its delivered projects could not be confirmed outside its own and agents' pages (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 16800000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "Renewable twice, total 90 years (agent page)",
+   "guaranteed_language": false,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Wave Real Estate Group (since 2013) names The Wave I & II (29 and 43 units, 2013-2015), K-Waltz (10 units, 2019) and Coast Breeze (26 units, 2023) on its about page; not confirmed by a registry or independent source",
+   "units": 27,
+   "price_per_m2": 47171
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "No permit, licence or approval number published; 27 villas, below the EIA threshold for housing",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published",
+   "plans": "Master plan and two-level / three-level villa plans on the project page",
+   "record": "About page names The Wave I & II, K-Waltz and Coast Breeze with unit counts and says The Wave I & II are 'fully sold out'; unit counts are inconsistent (29 units in one place, 29 and 43 in the timeline; Coast Breeze 26 on the developer page, 29 on Nestopa); no registry or press confirmation found",
+   "returns": "No guaranteed return language"
+  },
+  "claims": [
+   {
+    "claim": "Developer active in Koh Samui since 2013",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/about-us/"
+   },
+   {
+    "claim": "5 projects and 100+ pool villas delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/about-us/"
+   },
+   {
+    "claim": "The Wave I & II fully sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/about-us/"
+   },
+   {
+    "claim": "Coast Breeze has 26 units",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://nestopa.com/th/developer/the-wave-real-estate-group-1703"
+   },
+   {
+    "claim": "Developer company The Wave Real Estate Group Co., Ltd. is registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/about-us/"
+   },
+   {
+    "claim": "Estimated completion 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/"
+   },
+   {
+    "claim": "Prices from THB 16.8M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/the-crest-residences-samui"
+   },
+   {
+    "claim": "Leasehold 30 years renewable twice",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/the-crest-residences-samui"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2013,
+   "developer_hq": "91/20 Moo 6, Bophut, Koh Samui, Surat Thani, Thailand",
+   "developer_company": "The Wave Real Estate Group Co., Ltd. (registration number not published)",
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa (Signature)",
+    "4BR villa (Diamond)"
+   ],
+   "size_min_m2": 356.15,
+   "size_max_m2": 885.97,
+   "price_min": 16800000,
+   "price_max": 42800000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold (30 years, renewable twice per agent)",
+   "rental_programme": "Affiliated management platform (rental, housekeeping, concierge) per agent; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "3,000 m2 central park",
+    "beachfront restaurant",
+    "sunset cafe",
+    "kids club",
+    "water sports centre",
+    "spa",
+    "wellness clinic"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Koh Samui municipality (building permit); Land Office Koh Samui (lease registration)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Master plan and villa floor plans published",
+   "Developer names earlier Koh Samui projects with years and unit counts"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thecrestsamui.com/",
+   "https://thewavegroupsamui.com/",
+   "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
+   "https://thewavegroupsamui.com/about-us/",
+   "https://kellerhenson.com/project/the-crest-residences-samui",
+   "https://mythai.house/property/luxury-3-4-br-villas-in-bang-po-beach-koh-samui-%f0%9f%8c%b4/",
+   "https://nestopa.com/th/developer/the-wave-real-estate-group-1703",
+   "http://www.thewave.com.cn/h-col-105.html"
+  ]
+ },
+ {
+  "slug": "copacabana-coral-reef-jomtien",
+  "name": "Copacabana Coral Reef Jomtien",
+  "developer": null,
+  "area": "Jomtien, Pattaya",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "url": "https://copacabanacoralreef.com/",
+  "docs_url": "https://copacabanagroup.com/en/projects/copacabana-coralreef/",
+  "permit_number": "EIA approval ทส 1010.5/10429 (11 Aug 2020, report 14612, listed as 'Copacabana Golf Jomtien', owner Copacabana Coral Reef Co., Ltd.)",
+  "docs_listed": [
+   "freehold",
+   "1,972 units on 13 rai 84.5 sq.wah, 55 floors",
+   "master plan, floor-by-floor plans (G to 55), unit plans and unit matrix",
+   "developer group site: progress panel 'updated June 2026' and news of Level 56 topping out (Sep 2026)",
+   "completion 2027 (group site)",
+   "360 room tours"
+  ],
+  "note": "Freehold 55-floor tower on Jomtien 2nd Road by Copacabana Group with full floor and unit plans; the group reports topping out at level 56 in September 2026 and completion in 2027, the ONEP register shows a 2020 EIA for the same company on Jomtien 2nd Road under the name Copacabana Golf Jomtien and lists the group's first tower as completed, but the project site gives 1,972 units against 1,897 in press and agent material, and no escrow or permit number is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 3600000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Copacabana Group: Copacabana Beach Jomtien (59 floors, 1,644 units per REm) completed; ONEP lists its EIA owner as the condominium juristic person",
+   "units": 1972,
+   "progress_updates": true,
+   "payment_plan": null,
+   "price_per_m2": 90000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "evidence": {
+   "permit": "Project site publishes no permit number; an agent (Siam Glow) quotes the January 2026 sales booklet as stating the building permit was received. ONEP lists report 14612 'Copacabana Golf Jomtien', Jomtien 2nd Road, Nong Prue, owner Copacabana Coral Reef Co., Ltd. (0205562035454, registered 23 Sep 2019, active), approval ทส 1010.5/10429 dated 11/08/2563 (11 Aug 2020); the register name differs from the marketing name",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Group project page shows a progress panel 'updated June 2026' (structure, architecture, MEP, overall); news post 8 Sep 2026 reports the Level 56 topping out; Siam Glow quotes about 66% overall in June 2026; REm (Jun 2025) reported structure at the 15th floor. No ONEP construction status recorded",
+   "plans": "Master plan, floor plans for every level and unit plans",
+   "record": "ONEP report 12675 'Copacabana Beach Jomtien' (ทส 1010.5/16473, 2018) now lists the condominium juristic person as owner, former owner Copacabana Jomtien Co., Ltd., i.e. completed and registered; REm reports it as 59 floors and 1,644 units",
+   "returns": "No guaranteed return language"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for the Jomtien 2nd Road tower by Copacabana Coral Reef Co., Ltd.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=9651"
+   },
+   {
+    "claim": "Developer company Copacabana Coral Reef Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=1203"
+   },
+   {
+    "claim": "Group's first project Copacabana Beach Jomtien completed",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=8526"
+   },
+   {
+    "claim": "Building permit received (sales booklet Jan 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://siamglow.com/pattaya-project/copacabana-coral-reef/"
+   },
+   {
+    "claim": "Structure topped out at level 56 (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://copacabanagroup.com/en/category/news/"
+   },
+   {
+    "claim": "Completion 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://copacabanagroup.com/en/projects/copacabana-coralreef/"
+   },
+   {
+    "claim": "1,972 units",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://remthailand.asia/copacabana-group-launch-of-new-luxury-condominium-copacabana-coral-reef-jomtien-valued-at-over-thb-10-billion/"
+   },
+   {
+    "claim": "Over 700 units pre-sold (mid-2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://remthailand.asia/copacabana-group-launch-of-new-luxury-condominium-copacabana-coral-reef-jomtien-valued-at-over-thb-10-billion/"
+   },
+   {
+    "claim": "Freehold tenure",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://copacabanacoralreef.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://copacabanacoralreef.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "385/16 Moo 12, Jomtien 2nd Road, Nong Prue, Bang Lamung, Chonburi, Thailand",
+   "developer_company": "Copacabana Coral Reef Co., Ltd., 0205562035454 (registered 23 Sep 2019); agent cites Copacabana Coral Reef Jomtien Co., Ltd., capital THB 112M",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 1644,
+   "listed_or_audited": null,
+   "construction_start": "2023-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "1BR with pool",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 32,
+   "size_max_m2": 175,
+   "price_min": 3600000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold within the foreign quota",
+   "rental_programme": null,
+   "service_charge": "Common fee THB 50/m2 (agent quoting developer)",
+   "brand": null,
+   "amenities": [
+    "650 m2 wave pool",
+    "51st-floor cantilever lap pool",
+    "2,000 m2 beach club",
+    "gym",
+    "onsen and sauna",
+    "running track",
+    "co-working",
+    "shuttle bus"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Nong Prue municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Group's first Jomtien tower is completed and registered per the ONEP register",
+   "Full floor-by-floor and unit plans published",
+   "Dated progress updates and topping out reported by the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://copacabanacoralreef.com/",
+   "https://copacabanagroup.com/en/projects/copacabana-coralreef/",
+   "https://copacabanagroup.com/en/category/news/",
+   "https://copacabanagroup.com/en/",
+   "https://eia.onep.go.th/eia/detail?id=9651",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=1203",
+   "https://eia.onep.go.th/eia/detail?id=8526",
+   "https://remthailand.asia/copacabana-group-launch-of-new-luxury-condominium-copacabana-coral-reef-jomtien-valued-at-over-thb-10-billion/",
+   "https://siamglow.com/pattaya-project/copacabana-coral-reef/",
+   "https://www.pemaproperty.com/en/our-projects/copacabana-coral-reef/"
   ]
  }
 ]

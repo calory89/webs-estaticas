@@ -1726,5 +1726,542 @@
    "https://terratamo-sanctuary.lovable.app/",
    "https://www.ahp.id/?p=2955"
   ]
+ },
+ {
+  "slug": "atalaya-ocean-view-kuta-lombok",
+  "name": "Atalaya Ocean View",
+  "developer": "Nest Hostels Group (with Reset Lombok Hotel)",
+  "area": "Sengkol, Pujut, Kuta, Central Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "15 furnished villas: 1-bed 86.5 m2 on 288-295 m2 plots from USD 240,000; 2-bed 177.8 m2 on 322-389 m2 plots from USD 315,000",
+   "35-year lease (Hak Sewa), settled in IDR at contract-date FX",
+   "delivery 10-12 months from reservation; portal FAQ says completion Q4 2026",
+   "optional in-house rental management; up to 15% rental income (developer projection)",
+   "portal header price range USD 82,000-410,000",
+   "portal notes older listings showed freehold at USD 165,000"
+  ],
+  "note": "Fifteen furnished hillside villas above Kuta Bay (Sengkol, Pujut) on a 35-year lease from USD 240,000, settled in IDR; delivery is quoted as 10-12 months from reservation (portal says Q4 2026) and marketing cites up to 15% rental income as a projection. Only a portal listing was found: no developer project page, PBG, escrow, plans or progress, and the seller, Valencia hostel operator Nest Hostels Group, has no published villa delivery record. Older listings showed freehold at USD 165,000 (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 240000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 35,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 15,
+   "developer_delivered": null,
+   "yield_pct": 15,
+   "payment_plan": null,
+   "price_per_m2": 2775
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Project is under construction (no date, figure or photos)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "Delivery 10-12 months from reservation; portal FAQ gives completion Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "Tenure is a 35-year Hak Sewa lease; older listings showed freehold at USD 165,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "A Hak Sewa lease is the standard route for individual foreigners; they cannot hold freehold (Hak Milik)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+   },
+   {
+    "claim": "Prices from USD 240,000 (1-bed) and USD 315,000 (2-bed) versus header range USD 82,000-410,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "Up to 15% annual rental income (developer projection)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "Developer Nest Hostels Group (Valencia, est. 2017) has 13 completed projects, all hostels or hotels; residential villa record unverified",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "Partner Reset Lombok Hotel operates in Kuta (booking listing)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.booking.com/hotel/id/reset-boutique.html?aid=381246"
+   },
+   {
+    "claim": "15 units, each with private pool, garden and parking, delivered furnished",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   },
+   {
+    "claim": "No building permit or escrow published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "Valencia, Spain",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": 86.5,
+   "size_max_m2": 177.8,
+   "price_min": 240000,
+   "price_max": 315000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "35-year lease (Hak Sewa); extension terms not stated",
+   "rental_programme": "Optional in-house rental management; up to 15% annual rental income claimed as a projection",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "private garden",
+    "parking",
+    "air conditioning",
+    "fitted wardrobes",
+    "furnished"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit published on the listing",
+   "escrow": "No escrow, bank guarantee or trust account published",
+   "progress": "Listing says 'under construction' with no date, figure or photos",
+   "plans": "Living and plot areas only; no floor plans",
+   "record": "Portal: Nest Hostels Group runs hostels in Spain and Zanzibar; 'residential delivery track record is unverified'",
+   "returns": "Up to 15% rental income labelled a developer projection; no guarantee wording"
+  },
+  "positives": [
+   "Lease term stated",
+   "Unit and plot sizes published",
+   "Named operator for rental programme"
+  ],
+  "flags": [],
+  "sources": [
+   "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view",
+   "https://www.booking.com/hotel/id/reset-boutique.html?aid=381246",
+   "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+  ]
+ },
+ {
+  "slug": "terrakuta-kuta-lombok",
+  "name": "TerraKuta",
+  "developer": "Invest Islands",
+  "area": "Kuta / Mandalika, Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "five off-plan riad-style villas (3 x 1-bed, 2 x 2-bed)",
+   "prices converted from AUD: header USD 75,200-165,000; unit table 1-bed USD 128,000, 2-bed USD 158,000",
+   "personal leasehold (term not stated) or HGB via PT PMA",
+   "completion Q1 2027 in header and FAQ, H2 2027 in text",
+   "optional rental management; no yield published"
+  ],
+  "note": "Five off-plan riad-style villas in Kuta by Invest Islands, sold via personal leasehold or HGB in a PT PMA; the only listing found gives conflicting prices (from about USD 75,200 in the header, USD 128,000 in the unit table) and completion dates (Q1 2027 and H2 2027), with no PBG, escrow, plans or progress. Invest Islands' founding and Lombok projects are reported by The Edge Singapore, but its flagship Gran Melia Lombok was pushed from early 2024 to late 2025 according to TopHotelNews (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 75200,
+   "currency": "USD",
+   "title": "leasehold or HGB via PT PMA",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 5,
+   "developer_delivered": "Invest Islands (est. 2015): Mandala Eco-Village launched Oct 2021 and Gran Melia Lombok under development per The Edge Singapore (2022); portal says 1 project completed, not named",
+   "yield_pct": null,
+   "payment_plan": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Invest Islands was founded around 2015 by Kevin Deisser and Jack Brown",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.sg/property-news/invest-islands-unveils-luxury-villas-lombok-indonesia"
+   },
+   {
+    "claim": "Invest Islands launched the 88-unit Mandala Eco-Village in October 2021 and sold the first 14 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.edgeprop.sg/property-news/invest-islands-unveils-luxury-villas-lombok-indonesia"
+   },
+   {
+    "claim": "Invest Islands has 1 completed project (portal, project not named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+   },
+   {
+    "claim": "Flagship Gran Melia Lombok opening moved from early 2024 to late 2025 (reported March 2023); no confirmation of opening found",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tophotel.news/?p=566132"
+   },
+   {
+    "claim": "Completion Q1 2027 (header and FAQ) versus H2 2027 (text)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+   },
+   {
+    "claim": "Prices from about USD 75,200 (header) versus 1-bed USD 128,000 in the unit table; 2-bed USD 135,000 or 158,000 in different sections",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+   },
+   {
+    "claim": "Construction under way (overview) while listed as off-plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+   },
+   {
+    "claim": "HGB held in a PT PMA is a legal route for foreign buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Leasehold term not stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+   },
+   {
+    "claim": "No permit, escrow or floor plans published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Lombok and Bali, Indonesia (offices reported in Hong Kong and Australia)",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 75200,
+   "price_max": 165000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Personal leasehold (term not stated) or HGB held by a dedicated PT PMA",
+   "rental_programme": "Optional rental management; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pool",
+    "parking",
+    "concierge",
+    "security system"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit published",
+   "escrow": "No escrow, bank guarantee or trust account published",
+   "progress": "Overview says construction under way but listing status is off-plan; no dated progress",
+   "plans": "No floor plans; portal says floor areas unverified",
+   "record": "The Edge Singapore (2022) reports the company and its launched projects; no completed project is named",
+   "returns": "No yield published; no guarantee wording"
+  },
+  "positives": [
+   "Ownership route via HGB in a PT PMA offered",
+   "Unit mix published",
+   "Developer's history covered by independent press"
+  ],
+  "flags": [
+   {
+    "text": "TopHotelNews reported in March 2023 that the opening of Invest Islands' flagship Gran Melia Lombok had been pushed back from early 2024 to late 2025.",
+    "source": "https://tophotel.news/?p=566132"
+   }
+  ],
+  "sources": [
+   "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta",
+   "https://www.edgeprop.sg/property-news/invest-islands-unveils-luxury-villas-lombok-indonesia",
+   "https://tophotel.news/?p=566132",
+   "https://www.ahp.id/?p=2955"
+  ]
+ },
+ {
+  "slug": "are-guling-valley-lombok",
+  "name": "Are Guling Valley",
+  "developer": null,
+  "area": "Areguling, South Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "1-bed: 97 m2 living on 160 m2 plot, 18 m2 pool, from USD 132,000",
+   "2-bed: 154 m2 living on 236 m2 plot, 21 m2 pool, from USD 177,000",
+   "28-year lease (Hak Sewa)",
+   "utilities per villa: 120 m well, power panel, water storage",
+   "Phase One site preparation in progress",
+   "portal FAQ names SeaScape Lombok Properties as developer and Q4 2026 completion; overview says developer and completion not published"
+  ],
+  "note": "Early-stage (Phase One site preparation) hillside villas in Areguling on a 28-year lease from USD 132,000; the only listing found contradicts itself, saying the developer and completion date are unpublished while its FAQ names SeaScape Lombok Properties and Q4 2026. No PBG, escrow, plans, unit count or track record is published, and nothing independent was found (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 132000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 28,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "units": null,
+   "developer_delivered": null,
+   "yield_pct": null,
+   "payment_plan": null,
+   "price_per_m2": 1361
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Developer unnamed (overview) versus 'SeaScape Lombok Properties, founded in 2020, 3+ projects completed' (FAQ)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "Completion date not published (overview) versus Q4 2026 (FAQ and header)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "Phase One site preparation in progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "28-year Hak Sewa lease; renewal terms not stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "A Hak Sewa lease is the standard route for individual foreigners, with less formal protection than registered titles",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+   },
+   {
+    "claim": "1-bed from USD 132,000 (97 m2), 2-bed from USD 177,000 (154 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "Each villa has its own 120 m well, power panel and water storage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "Total unit count not published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   },
+   {
+    "claim": "No permit, escrow or rental yield published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": 97,
+   "size_max_m2": 154,
+   "price_min": 132000,
+   "price_max": 177000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "28-year lease (Hak Sewa)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "communal guest lobby",
+    "private well",
+    "water storage and pump",
+    "furnished"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit published",
+   "escrow": "No escrow, bank guarantee or trust account published",
+   "progress": "'Phase One site preparation in progress', undated, no figure",
+   "plans": "Living, covered and plot areas only; no floor plans",
+   "record": "Developer unnamed in overview; FAQ names SeaScape Lombok Properties without projects; nothing independent found",
+   "returns": "No yield published; no guarantee wording"
+  },
+  "positives": [
+   "Unit sizes and prices published",
+   "Lease term stated",
+   "Per-villa utilities described"
+  ],
+  "flags": [],
+  "sources": [
+   "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley",
+   "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+  ]
  }
 ]

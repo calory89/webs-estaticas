@@ -202,5 +202,444 @@
    "https://www.athens24.com/news/ellinikon-draws-17000-buyer-inquiries-from-110-countries-whos-buying-and-why.html",
    "https://www.greekprops.com/areas/riviera-tower-athens/"
   ]
+ },
+ {
+  "slug": "elounda-hills-crete",
+  "name": "Elounda Hills",
+  "developer": "Mirum Hellas",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Plaka / Schisma, Elounda, Municipality of Agios Nikolaos, Crete",
+  "country": "Greece",
+  "market": "Greece",
+  "url": "https://eloundahills.gr/residences/",
+  "docs_url": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port",
+  "permit_number": "Strategic investment inter-ministerial decision 30/2016 (amended 33/2017 and 55/2020)",
+  "docs_listed": [
+   "strategic investment status: inter-ministerial decisions 30/2016, 33/2017, 55/2020 (Ministry of Development register)",
+   "Special Zoning Plan ratified by Presidential Decree (developer page)",
+   "urban design study permit with environmental terms secured 8 Nov 2024",
+   "Final Design Compliance File (A1) submitted (June 2026)",
+   "ECI contracts with AKTOR and Domiki Kritis (April 2026)",
+   "first main construction contract with Domiki Kritis: 2 Waterfront Villas and 24 Marina apartments, works from Oct 2026 to Dec 2027",
+   "residence clusters with bedroom counts and size ranges (Marina 155-270 m2, Waterfront Villas 550-900 m2)",
+   "operator 1 Hotels & Homes; Ralph Lauren Home interiors on Waterfront Villas"
+  ],
+  "note": "EUR 800m resort with about 130 branded residences in phase one, two 1 Hotels and a marina on Mirabello Bay by Mirum Hellas (investor Vitaliy Borisov). Strategic investment status is on the Ministry of Development register (decision 30/2016); the first residential construction contract was signed in Sept 2026 with works starting Oct 2026 and due Dec 2027, so homes are still essentially off-plan. No prices, floor plans or deposit protection are published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "Strategic investment inter-ministerial decision 30/2016 (amended 33/2017 and 55/2020)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer page says Mirum delivered 'the most expensive villa ever sold in Crete' and The Island Concept boutique hotel, and has invested over EUR 100m in the region",
+   "units": 130,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Ministry of Development strategic investments register lists ELOUNDA HILLS with implementation entity MIRUM HELLAS AE and inter-ministerial decisions 30/2016, 33/2017, 55/2020 (budget EUR 408.49m); individual building permit numbers are not published",
+   "escrow": "No escrow, bank guarantee or deposit protection published on the site or in press",
+   "progress": "Dated milestones in independent press: ECI contracts April 2026, A1 design file June 2026, first main construction contract Sept 2026 with works from Oct 2026; the site's construction-updates page shows no visible content",
+   "plans": "Residences page gives bedroom counts and size ranges per cluster but no floor plans; brochure is behind an email form",
+   "record": "Developer page names a record villa sale and The Island Concept boutique hotel in Crete; no unit counts; not independently verified",
+   "returns": "No guaranteed returns; buyer-benefits page notes Golden Visa homes may not be short-term let"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Project holds Greek strategic investment status (decision 30/2016, amended 2017 and 2020)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port"
+   },
+   {
+    "claim": "Implementation entity is MIRUM HELLAS AE",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port"
+   },
+   {
+    "claim": "Total investment about EUR 800m",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port"
+   },
+   {
+    "claim": "Urban design studies permitted on 8 Nov 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success"
+   },
+   {
+    "claim": "Coastal zone delivered by 2027 and rest of phase one by 2028 (Nov 2024 statement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://news.gtp.gr/2026/04/28/elounda-hills-e800m-project-moves-into-construction-phase/"
+   },
+   {
+    "claim": "ECI agreements signed with AKTOR and Domiki Kritis",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cnn.gr/oikonomia/epixeiriseis/story/530935/pernaei-se-fasi-ylopoiisis-to-elounda-hills-epesan-oi-ypografes-me-aktor-kai-domiki-kritis"
+   },
+   {
+    "claim": "First residential works (2 villas, 24 marina apartments) start Oct 2026, finish Dec 2027",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/deltia-typou/2161178/elounda-hills-mpainei-sti-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskeyastikis-symvasis/"
+   },
+   {
+    "claim": "Operator 1 Hotels & Homes manages hotels and branded residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessnews.gr/epixeiriseis/item/346281-elounda-hills-ksekinaei-i-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskevastikis-symvasis"
+   },
+   {
+    "claim": "Special Zoning Plan ratified by Presidential Decree",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eloundahills.gr/developed-by-lozeus-hellas/"
+   },
+   {
+    "claim": "Building permits for individual residences issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eloundahills.gr/residences/"
+   },
+   {
+    "claim": "Developer delivered record villa sale and The Island Concept hotel",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eloundahills.gr/developed-by-lozeus-hellas/"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eloundahills.gr/buyer-benefits/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Agios Nikolaos, Crete, Greece",
+   "developer_company": "MIRUM HELLAS AE",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2027 (coastal zone, stated Nov 2024)",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR villa",
+    "7BR villa",
+    "8BR villa",
+    "duplex"
+   ],
+   "size_min_m2": 155,
+   "size_max_m2": 900,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; developer markets Greek Golden Visa eligibility (residence of at least 120 m2)",
+   "rental_programme": "Residences managed by 1 Hotels & Homes; no figures stated",
+   "service_charge": null,
+   "brand": "1 Hotels & Homes; Ralph Lauren Home interiors (Waterfront Villas)",
+   "amenities": [
+    "marina",
+    "two 5-star hotels",
+    "Bamford spa 2,000 m2",
+    "beach clubs",
+    "9 dining options",
+    "tennis",
+    "kids club",
+    "botanical gardens"
+   ],
+   "lat": 35.249,
+   "lng": 25.731,
+   "permit_authority": "Interministerial Committee for Strategic Investments; Greek building permit services (e-Adeies)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Strategic investment approval listed on the Ministry of Development register",
+   "Named contractors and dated construction contracts in independent press",
+   "International hotel operator named",
+   "Unit sizes per cluster published",
+   "No guaranteed-return language"
+  ],
+  "flags": [
+   {
+    "text": "Delivery targets have slipped: in Nov 2024 the developer committed to the coastal zone by 2027 and the rest of phase one by 2028; in 2026 construction was described as peaking in 2027-2028 with completion before the end of the decade.",
+    "source": "https://news.gtp.gr/2026/04/28/elounda-hills-e800m-project-moves-into-construction-phase/"
+   },
+   {
+    "text": "The developer described land assembly (since 2006) and permitting as the project's biggest challenges.",
+    "source": "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success"
+   }
+  ],
+  "sources": [
+   "https://eloundahills.gr/",
+   "https://eloundahills.gr/residences/",
+   "https://eloundahills.gr/buyer-benefits/",
+   "https://eloundahills.gr/developed-by-lozeus-hellas/",
+   "https://eloundahills.gr/construction-updates/",
+   "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port",
+   "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success",
+   "https://greekcitytimes.com/2026/06/08/elounda-hills-e800-million-ultra-luxury-resort-development-moves-closer-to-construction/",
+   "https://news.gtp.gr/2026/04/28/elounda-hills-e800m-project-moves-into-construction-phase/",
+   "https://www.cnn.gr/oikonomia/epixeiriseis/story/530935/pernaei-se-fasi-ylopoiisis-to-elounda-hills-epesan-oi-ypografes-me-aktor-kai-domiki-kritis",
+   "https://www.businessnews.gr/epixeiriseis/item/346281-elounda-hills-ksekinaei-i-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskevastikis-symvasis",
+   "https://www.naftemporiki.gr/deltia-typou/2161178/elounda-hills-mpainei-sti-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskeyastikis-symvasis/"
+  ]
+ },
+ {
+  "slug": "the-peaks-lustica-bay",
+  "name": "The Peaks, Luštica Bay",
+  "developer": "Luštica Bay (developer not named on listing)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "The Peaks golf district, Luštica Bay, Luštica peninsula, Tivat",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "url": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences",
+  "docs_url": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "price range EUR 859,000 to 5,076,000 and sizes 105 to 400 m2 (Baerz listing)",
+   "expected completion December 2028; sale and construction start shown as June 2013 (resort-wide)",
+   "interest-free payment plans up to five years; 0% transfer tax claim",
+   "The Peaks Townhouses: 11 units from EUR 2.2m, gardens 184 to 590 m2 (Sept 2025 launch)",
+   "construction notice for wastewater works for phase I-b2 (10 villas, 3 golf houses, 3,374 m2 GFA); wastewater permit issued 25 Jul 2025",
+   "golf course: first holes open, full 18 holes due end 2028, opening 2029 season"
+  ],
+  "note": "Golf-front villas, townhouses and apartments in the Luštica Bay resort, developed by Luštica Development AD (Orascom Development Holding with a 12.24% Montenegrin state stake). Listings quote EUR 859,000 to 5.1m and completion December 2028; government data put the whole resort at about 11% built with roughly 450 apartments, 20 houses and villas and two hotels delivered by mid-2025. Only a wastewater permit date is published for the next Peaks phase; no permit number, escrow or floor plans on the listing. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 859000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "By mid-2025 Luštica Bay had delivered about 450 apartments, 13 houses, 7 villas, The Chedi (111 rooms), a 31-room hotel, 25 commercial units and a marina, per government data reported by Montenegrobusiness",
+   "units": null,
+   "payment_plan": "Interest-free payment plans of up to five years (listing); portal reports 20/80 for Botanika",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Independent business press reports a wastewater construction permit for phase I-b2 issued 25 Jul 2025 and a construction notice in 2026, but no permit number is given and the listing mentions no permit",
+   "escrow": "No escrow, bank guarantee or deposit protection stated on the listing or in press",
+   "progress": "Resort-wide progress figure (about 10% on listing; about 11% per government assessment) and dated golf milestones; The Peaks phase I-b2 only at infrastructure stage as of Aug 2026",
+   "plans": "Listing has a size range only; no floor plans",
+   "record": "Government data reported in press: about 450 apartments, 20 houses/villas, 2 hotels delivered by mid-2025; parent Orascom Development is listed with audited reports",
+   "returns": "No guarantee, but listing cites a 'historical average annual property appreciation of approximately 13%' and 'immediate rental income potential' without source"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Developer is Luštica Development, controlled by Orascom Development Holding, with the state holding 12.24%",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+   },
+   {
+    "claim": "Luštica Bay is about 10% complete",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+   },
+   {
+    "claim": "25% of total development completed (developer statement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://en.mdrealty.me/2025/08/04/lustica-bay-over-600-million-investment/"
+   },
+   {
+    "claim": "More than 700 families from over 50 countries live in the resort",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+   },
+   {
+    "claim": "Wastewater construction permit for phase I-b2 issued 25 Jul 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+   },
+   {
+    "claim": "Construction start June 2013",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+   },
+   {
+    "claim": "Expected completion December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+   },
+   {
+    "claim": "Full 18-hole golf course completed end 2028",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.golfbusinessnews.com/news/property/lustica-bay-launches-new-range-of-townhouses/"
+   },
+   {
+    "claim": "First nine holes open in 2026 (Sept 2025 statement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+   },
+   {
+    "claim": "Historical average annual appreciation about 13%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+   },
+   {
+    "claim": "Prices from EUR 859,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+   },
+   {
+    "claim": "Developer revenue EUR 90.3m and net profit EUR 0.57m in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bankar.me/clanci/kako-se-upravlja-sa-tri-najveca-crnogorska-resorta-190-miliona-eura-prihoda-i-21-milion-profita-najavljen-novi-talas-ulaganja/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2008,
+   "developer_hq": "Tivat, Montenegro",
+   "developer_company": "Luštica Development AD (majority Orascom Development Holding AG, SIX Swiss Exchange)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 470,
+   "listed_or_audited": "Parent Orascom Development Holding listed on SIX Swiss Exchange; Luštica Development 2025 financials reported (revenue EUR 90.3m)",
+   "construction_start": "2013-12",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR townhouse",
+    "4BR",
+    "5BR villa"
+   ],
+   "size_min_m2": 105,
+   "size_max_m2": 400,
+   "price_min": 859000,
+   "price_max": 5076000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "Interest-free payment plans up to five years",
+   "foreign_ownership": "Freehold; foreigners can own property in Montenegro",
+   "rental_programme": "Professionally managed rental programme offered; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "Gary Player 18-hole golf course",
+    "clubhouse",
+    "marina",
+    "five beaches",
+    "The Chedi hotel",
+    "hiking and cycling trails",
+    "pools",
+    "golf academy"
+   ],
+   "lat": 42.394,
+   "lng": 18.654,
+   "permit_authority": "Montenegro Ministry of Spatial Planning, Urbanism and State Property",
+   "brochure_url": null
+  },
+  "positives": [
+   "Established resort with delivered homes, hotels and marina confirmed by government data",
+   "Parent company listed with published financials",
+   "Long interest-free payment plan reduces upfront exposure",
+   "Price and size range published"
+  ],
+  "flags": [
+   {
+    "text": "Business press notes the company has used higher completion estimates than the government assessment of about 11% of the master plan.",
+    "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+   },
+   {
+    "text": "Golf course timetable slipped: nine holes were announced to open in 2026, while 2026 reporting shows three holes open and full completion at end 2028 for the 2029 season.",
+    "source": "https://www.golfbusinessnews.com/news/property/lustica-bay-launches-new-range-of-townhouses/"
+   },
+   {
+    "text": "Developer's net profit fell from about EUR 9.1m in 2024 to about EUR 0.57m in 2025 while short-term liabilities stood near EUR 150m.",
+    "source": "https://bankar.me/clanci/kako-se-upravlja-sa-tri-najveca-crnogorska-resorta-190-miliona-eura-prihoda-i-21-milion-profita-najavljen-novi-talas-ulaganja/"
+   }
+  ],
+  "sources": [
+   "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences",
+   "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/",
+   "https://www.golfbusinessnews.com/news/property/lustica-bay-launches-new-range-of-townhouses/",
+   "https://bankar.me/clanci/kako-se-upravlja-sa-tri-najveca-crnogorska-resorta-190-miliona-eura-prihoda-i-21-milion-profita-najavljen-novi-talas-ulaganja/",
+   "https://en.mdrealty.me/2025/08/04/lustica-bay-over-600-million-investment/",
+   "https://www.omniacapitalgroup.com/en/developments/the-peaks-lustica-bay"
+  ]
  }
 ]

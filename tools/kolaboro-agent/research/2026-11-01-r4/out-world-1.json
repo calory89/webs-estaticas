@@ -1994,5 +1994,983 @@
    "https://acierto.com.co/proyectos/reserva-san-jose-natura/",
    "https://www.semana.com/nacion/medellin/articulo/descalabro-inmobiliario-14000-compradores-y-las-posibles-irregularidades-en-multimillonarios-proyectos-de-vivienda-en-colombia/202559/"
   ]
+ },
+ {
+  "slug": "porto-algarve-beach-studios",
+  "name": "Porto Algarve Beach Studios",
+  "developer": "SNB",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Porto de Galinhas (beachfront), Ipojuca, Pernambuco",
+  "country": "Brazil",
+  "market": "Porto de Galinhas",
+  "url": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios",
+  "docs_url": "https://artemiamedeiros.com.br/porto-de-galinhas",
+  "permit_number": null,
+  "docs_listed": [
+   "SNB price table of 19 Aug 2026 (via agent): studio 21.85 m2 BRL 525,000; studio with balcony 27.85 m2 BRL 535,000",
+   "payment flow: signal, 30 and 60 days, 4 half-yearly, 22 monthly, 50% on keys",
+   "launch Jan 2025; delivery Dec 2028 (Apto) vs 30 May 2028 (agent)",
+   "agent shows works '60% concluded'",
+   "studios 19 to 66 m2 incl. duplex (agent), 35 parking spaces"
+  ],
+  "note": "Beachfront studio building by SNB Engenharia in Porto de Galinhas, launched January 2025 and aimed at holiday-rental investors; the builder's August 2026 price table starts at BRL 525,000 for 21.85 m2 with 50% due on keys, and one agent shows works 60% complete with delivery in May 2028 (portal says December 2028). No registro de incorporacao number or patrimonio de afetacao is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 525000,
+   "currency": "BRL",
+   "title": "freehold (condominium unit after incorporation registration)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 60,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "Signal, 30 and 60 days, 4 half-yearly and 22 monthly instalments, 50% on keys (INCC-indexed during works)",
+   "price_per_m2": 24027
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No registro de incorporacao (RI) or alvara number on the portal or agent pages",
+   "escrow": "No patrimonio de afetacao or escrow mentioned",
+   "progress": "Agent page (Dimaria) shows 'Geral 60% concluidos'; builder posts construction updates for other projects on LinkedIn",
+   "plans": "Portal and agents publish studio layouts of 21.85 to 27.85 m2",
+   "record": "SNB lists projects in Boa Viagem, Pina, Porto de Galinhas and Tamandare (Porto Riviera, Porto Madero, Tours du Tamandare) but none is named as delivered",
+   "returns": "Agents speak of 'alto potencial de rentabilidade' with holiday rentals; no figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Builder is SNB Engenharia e Investimentos (Recife)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dunnaimob.com.br/site/imoveis/edf-porto-algarve-1785264655027"
+   },
+   {
+    "claim": "Launched January 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios"
+   },
+   {
+    "claim": "Works 60% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio"
+   },
+   {
+    "claim": "Delivery 30 May 2028 (agent) vs December 2028 (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio"
+   },
+   {
+    "claim": "Price from BRL 505,000 vs 520,000 vs 525,000 vs 545,000 across agents",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://artemiamedeiros.com.br/porto-de-galinhas"
+   },
+   {
+    "claim": "Address: Rua Cedro (portal) vs Rua dos Baobas (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dunnaimob.com.br/site/imoveis/edf-porto-algarve-1785264655027"
+   },
+   {
+    "claim": "Parking: 'sem vagas' (portal) vs 35 spaces (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio"
+   },
+   {
+    "claim": "Registro de incorporacao filed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios"
+   },
+   {
+    "claim": "Buyer payments ring-fenced (patrimonio de afetacao)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://artemiamedeiros.com.br/porto-de-galinhas"
+   },
+   {
+    "claim": "SNB has delivered previous projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/snbengenharia"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Recife, Brazil",
+   "developer_company": "SNB Engenharia e Investimentos (no CNPJ published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "studio with balcony",
+    "duplex"
+   ],
+   "size_min_m2": 19,
+   "size_max_m2": 66,
+   "price_min": 505000,
+   "price_max": 545000,
+   "currency": "BRL",
+   "deposit_pct": null,
+   "payment_plan": "Instalments during works, 50% on keys",
+   "foreign_ownership": "Foreigners may buy urban property in Brazil directly with a CPF",
+   "rental_programme": "Holiday-rental use promoted; no programme or figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "raised deck with sea-facing pool",
+    "direct beach access",
+    "gym",
+    "games room",
+    "gourmet area",
+    "laundry",
+    "reception",
+    "bike rack"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Prefeitura de Ipojuca (alvara) and Cartorio de Registro de Imoveis de Ipojuca (registro de incorporacao, Lei 4.591/64)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Half the price paid only on keys",
+   "Builder price table dated and published via agent",
+   "Progress figure published (60%, agent)",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios",
+   "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio",
+   "https://dunnaimob.com.br/site/imoveis/edf-porto-algarve-1785264655027",
+   "https://meuimovel.recife.br/porto-algarve-studios-porto-de-galinhas-pe/",
+   "https://artemiamedeiros.com.br/porto-de-galinhas",
+   "https://www.flatnapraia.com/pt/condominios-porto-de-galinhas",
+   "https://linkedin.com/company/snbengenharia",
+   "https://apto.vc/empresas/snb"
+  ]
+ },
+ {
+  "slug": "koa-porto-de-galinhas",
+  "name": "Koa",
+  "developer": "Perfecta Engenharia",
+  "status": "sold out",
+  "stage": "under construction",
+  "area": "Rua dos Baobas 1542, Porto de Galinhas, Ipojuca, Pernambuco",
+  "country": "Brazil",
+  "market": "Porto de Galinhas",
+  "url": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/koa",
+  "docs_url": "https://perfectaeng.com.br/koa-beach/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer progress schedule: design and licensing 100%, foundations and structure 100%, masonry 72%",
+   "delivery February 2028 (developer)",
+   "price table (agent): 18.5 m2 from BRL 299,000 to 2BR duplex from BRL 579,000",
+   "78 units on ground plus 3 floors with rooftop (agent)",
+   "several agents mark the project '100% vendido'"
+  ],
+  "note": "78-unit studio-to-duplex building about 20-50 m from the beach in Porto de Galinhas by Perfecta Engenharia, launched December 2024 and now reported 100% sold by agents; Perfecta's own page shows licensing and structure 100% done and masonry at 72%, with delivery in February 2028 (a portal says December 2028). No registro de incorporacao number is published (one agent shows 'XXXX'). (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 299000,
+   "currency": "BRL",
+   "title": "freehold (condominium unit after incorporation registration)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Agents list Perfecta's Almare Exclusive (Tamandare) as ready; Perfecta has other projects under way (Marano Beira Mar, Duna Beira-Mar, Terrazza)",
+   "units": 78,
+   "payment_plan": null,
+   "price_per_m2": 16162
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer page marks 'Projetos e Licenciamento 100%' but publishes no alvara or registro de incorporacao number; an agent shows 'Registro / Incorporacao: XXXX'",
+   "escrow": "No patrimonio de afetacao or escrow mentioned",
+   "progress": "Developer page shows stage percentages (structure 100%, masonry 72%), undated",
+   "plans": "Agents publish plans and a typology table from 18.5 to 51.1 m2",
+   "record": "Agent lists Almare Exclusive by Perfecta in Tamandare as 'pronto' (ready)",
+   "returns": "Agents cite 'alta rentabilidade' and hotel occupancy statistics; no yield figure or guarantee"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Licensing complete (100%)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://perfectaeng.com.br/koa-beach/"
+   },
+   {
+    "claim": "Foundations and structure 100%, masonry 72%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://perfectaeng.com.br/koa-beach/"
+   },
+   {
+    "claim": "Delivery February 2028 (developer) vs December 2028 (portal) vs end 2027 (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://a3imobiliaria.com.br/empreendimento/31844/koa-beach"
+   },
+   {
+    "claim": "Project 100% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hebersonalves.com.br/koa-beach"
+   },
+   {
+    "claim": "78 units over ground plus three floors and rooftop",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a3imobiliaria.com.br/empreendimento/31844/koa-beach"
+   },
+   {
+    "claim": "Distance to sea: 20 m vs 30 m vs 50 m across agents",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://costaimobi.com/empreendimentos/breve-lancamento-na-praia-de-porto-de-galinhas/"
+   },
+   {
+    "claim": "Prices from BRL 249,000 vs 299,000 vs 389,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.expoimovel.com/servlet/br.com.expoimovel.servlet.GerenciadorDetalhesAnuncioImovelServlet?codigoAnuncioImovel=11933_TIPO_22M_x73142497393423631749652186452&operacao=imprimirDetalhes"
+   },
+   {
+    "claim": "Registro de incorporacao number published",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.hebersonalves.com.br/koa-beach"
+   },
+   {
+    "claim": "Perfecta has delivered Almare Exclusive",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://costaimobi.com/empreendimentos/breve-lancamento-na-praia-de-porto-de-galinhas/"
+   },
+   {
+    "claim": "Buyer payments ring-fenced (patrimonio de afetacao)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://perfectaeng.com.br/koa-beach/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pernambuco, Brazil",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q4 (agent)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR duplex"
+   ],
+   "size_min_m2": 18.5,
+   "size_max_m2": 51.1,
+   "price_min": 299000,
+   "price_max": 579000,
+   "currency": "BRL",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may buy urban property in Brazil directly with a CPF",
+   "rental_programme": "Holiday rental promoted; no programme or figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool with deck",
+    "rooftop gourmet areas",
+    "gym",
+    "sauna",
+    "kids playroom",
+    "games room",
+    "self market",
+    "pet place"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Prefeitura de Ipojuca (alvara) and Cartorio de Registro de Imoveis de Ipojuca (registro de incorporacao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer publishes stage-by-stage construction percentages",
+   "Structure reported complete",
+   "Full typology and price table circulated",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/koa",
+   "https://perfectaeng.com.br/koa-beach/",
+   "https://perfectaeng.com.br/koa/",
+   "https://costaimobi.com/empreendimentos/breve-lancamento-na-praia-de-porto-de-galinhas/",
+   "https://www.hebersonalves.com.br/koa-beach",
+   "https://www.expoimovel.com/servlet/br.com.expoimovel.servlet.GerenciadorDetalhesAnuncioImovelServlet?codigoAnuncioImovel=11933_TIPO_22M_x73142497393423631749652186452&operacao=imprimirDetalhes",
+   "https://a3imobiliaria.com.br/empreendimento/31844/koa-beach",
+   "https://www.thayanemoura.com.br/koabeach",
+   "https://www.flatnapraia.com/pt/condominios-porto-de-galinhas"
+  ]
+ },
+ {
+  "slug": "wave-horizon-porto-de-galinhas",
+  "name": "Wave Horizon",
+  "developer": "Jairo Rocha",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Rua dos Navegantes, Merepe, Porto de Galinhas, Ipojuca, Pernambuco",
+  "country": "Brazil",
+  "market": "Porto de Galinhas",
+  "url": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon",
+  "docs_url": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: 48 flats of 15 to 22.49 m2 over five floors, 100 m from the sea",
+   "rooftop pool, gourmet kitchen, solarium, basement rotating parking",
+   "launch Jan 2026, delivery approx. Dec 2031 (portal)",
+   "price on request"
+  ],
+  "note": "48 micro-flats (15 to 22.49 m2) over five floors about 100 m from the sea in Porto de Galinhas, launched January 2026 by Recife developer Jairo Rocha Incorporadora with delivery not until about December 2031; price is on request and no incorporation registration, construction start or deposit protection is published. The developer claims 40 years and 1,000+ units delivered without naming them. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "BRL",
+   "title": "freehold (condominium unit after incorporation registration)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2031-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer LinkedIn claims 40 years and 1,000+ units delivered in Alagoas, Pernambuco and Bahia; no delivered project named on its site",
+   "units": 48,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No registro de incorporacao or alvara mentioned",
+   "escrow": "No patrimonio de afetacao or escrow mentioned",
+   "progress": "Listed as 'Lancamento' (launch); no construction start or updates",
+   "plans": "Portal lists the 15 and 22 m2 plans; developer page gives unit sizes",
+   "record": "Claims 40 years and 1,000+ units delivered (LinkedIn); site lists projects (Wiki Beach, Wave Beach Serrambi, Wave Maragogi, Edificio Manati) without delivery status",
+   "returns": "Developer says 'para viver ou investir' and LinkedIn mentions 'rentabilidade'; no figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "48 flats of 15 to 22.49 m2 on five floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+   },
+   {
+    "claim": "100 m from the sea",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+   },
+   {
+    "claim": "Launched January 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
+   },
+   {
+    "claim": "Delivery approx. December 2031 (about six years after launch)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
+   },
+   {
+    "claim": "Developer has 40 years and 1,000+ units delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/jairorochaincorporadora"
+   },
+   {
+    "claim": "Developer operating since 1986 (affiliated company)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/jairo-rocha-e-maxima-empreendimentos"
+   },
+   {
+    "claim": "Registro de incorporacao filed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+   },
+   {
+    "claim": "Buyer payments ring-fenced (patrimonio de afetacao)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+   },
+   {
+    "claim": "Basement rotating parking (developer) vs 'sem vagas' (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1986,
+   "developer_hq": "Boa Viagem, Recife, Brazil",
+   "developer_company": "Jairo Rocha Incorporadora (no CNPJ published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2031-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio flat"
+   ],
+   "size_min_m2": 15,
+   "size_max_m2": 22.49,
+   "price_min": null,
+   "price_max": null,
+   "currency": "BRL",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may buy urban property in Brazil directly with a CPF",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool with deck",
+    "gourmet kitchen",
+    "solarium",
+    "mini market",
+    "laundry",
+    "reception",
+    "elevator",
+    "basement parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Prefeitura de Ipojuca (alvara) and Cartorio de Registro de Imoveis de Ipojuca (registro de incorporacao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer page gives exact unit count and sizes",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon",
+   "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon",
+   "https://jairorochaincorporadora.com.br/",
+   "https://apto.vc/empresas/jairo-rocha",
+   "https://linkedin.com/company/jairorochaincorporadora",
+   "https://linkedin.com/company/jairo-rocha-e-maxima-empreendimentos"
+  ]
+ },
+ {
+  "slug": "edition-residences-miami-edgewater",
+  "name": "Edition Residences Miami",
+  "developer": "Two Roads Development",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Edgewater (2121 N Bayshore Dr), Miami",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/",
+  "docs_url": "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/",
+  "permit_number": "2026067492 (Miami-Dade total demolition permit for existing Biscayne 21 building, issued 26 Aug 2026; not a building permit for the tower)",
+  "docs_listed": [
+   "developer project page: 55 storeys, 649 ft, 185 residences plus three tri-level penthouses, 1,952 to 3,864 sq ft",
+   "architect Arquitectonica, interiors Studio Munge, EDITION brand",
+   "settlement with Biscayne 21 holdout owners funded 31 Aug 2026 (about USD 50m per press)",
+   "demolition permit 2026067492 issued 26 Aug 2026 (county data via press)",
+   "sales launched Sep 2022 from USD 1.7m; buyer contracts targeted ~June 2028 completion",
+   "project tracker: construction start 30 Sep 2026, completion Sep or Dec 2029, contractor Coastal Construction"
+  ],
+  "note": "First 185-unit, 55-storey EDITION-branded tower on the former Biscayne 21 site, sold since 2022 from USD 1.7m with contracts aimed at summer 2028; holdout litigation stalled it until Two Roads funded a roughly USD 50m settlement on 31 August 2026, and the county issued a total-demolition permit on 26 August 2026. Three buyers sued in April 2026 to recover about USD 2.5m in deposits, arguing the 2028 date is impossible; trackers now show completion in late 2029. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 1700000,
+   "currency": "USD",
+   "title": "freehold condominium (fee simple)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": "2026067492 (demolition only)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Elysee Miami, 57-storey, 95-residence Edgewater tower completed 2021 (county records via Roebling Index; Biscayne Neighborhoods Association); Biscayne Beach also by Two Roads",
+   "units": 185,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only a demolition permit number is public (2026067492, via Haute Residence citing Miami-Dade data); no building permit for the new tower found",
+   "escrow": "Florida law requires condo deposits to be held in escrow, but the developer publishes no escrow agent or terms; buyers are suing to recover deposits",
+   "progress": "Dated public milestones: settlement funded 31 Aug 2026, demolition permit 26 Aug 2026; construction not started",
+   "plans": "Unit size range and renders only; no floor plans seen in sources opened",
+   "record": "Elysee (788 NE 23rd St, 95 residences, built 2021) is listed as a Two Roads development by the Biscayne Neighborhoods Association and in county-record-based building data; The Real Deal calls Edition the firm's third Edgewater condo",
+   "returns": "Owner-occupier branded residences; no rental return claims"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "185 units, 55 storeys, 649 ft",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.groundbreak.city/miami/biscayne-21-redevelopment-approved-edgewater"
+   },
+   {
+    "claim": "Units completed by about June 2028 per buyer contracts",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://pro.groundbreak.city/miami/projects/2ad83638-ffb2-47bf-b5b3-a940de6abf34"
+   },
+   {
+    "claim": "First tower to be completed by end of 2026 (original 2022 plan)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+   },
+   {
+    "claim": "Settlement with Biscayne 21 holdouts funded 31 Aug 2026 (about USD 50m)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+   },
+   {
+    "claim": "Total demolition permit 2026067492 issued 26 Aug 2026, owner TRD Biscayne LLC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/"
+   },
+   {
+    "claim": "Buyers' suit over deposits 'without merit' (developer)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/"
+   },
+   {
+    "claim": "Prices from USD 1.7m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+   },
+   {
+    "claim": "Site acquisition financed with USD 105m Bank OZK senior loan and USD 45m mezzanine",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+   },
+   {
+    "claim": "Construction start 30 Sep 2026, contractor Coastal Construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pro.groundbreak.city/miami/projects/2ad83638-ffb2-47bf-b5b3-a940de6abf34"
+   },
+   {
+    "claim": "Completion Sep 2029 vs Dec 2029 across tracker entries",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://pro.groundbreak.city/miami/projects/7d90d53d-4d3c-4d95-b542-ee351fc66e54"
+   },
+   {
+    "claim": "Building permit for the new tower issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/"
+   },
+   {
+    "claim": "Two Roads delivered Elysee (95 residences, built 2021)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theroeblingteam.com/miami/buildings/elysee"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami and West Palm Beach, USA",
+   "developer_company": "Two Roads Development; owner entity TRD Biscayne LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-09",
+   "handover_promised": "2029-Q4",
+   "original_handover": "2028-Q2 (buyer contracts)",
+   "delay_months": 18,
+   "unit_types": [
+    "1BR + den",
+    "2BR",
+    "3BR",
+    "4BR",
+    "tri-level penthouse"
+   ],
+   "size_min_m2": 181,
+   "size_max_m2": 359,
+   "price_min": 1700000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "EDITION (Marriott)",
+   "amenities": [
+    "two resort-style pools with cabanas",
+    "spa",
+    "fitness centre",
+    "club lounge and library",
+    "screening room",
+    "kids club",
+    "dog spa and park",
+    "bayfront promenade"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Miami Building Department / Miami-Dade County",
+   "brochure_url": null
+  },
+  "positives": [
+   "Site legal dispute settled and demolition permitted (Aug-Sep 2026)",
+   "Developer, architect, contractor and owner entity all named",
+   "Heavy independent press coverage of every milestone"
+  ],
+  "flags": [
+   {
+    "text": "Three buyers sued in Miami-Dade Circuit Court (Apr 2026) to recover about USD 2.5m in deposits, alleging the developer cannot substantially complete by about June 2028; developer calls the claims without merit",
+    "source": "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/"
+   },
+   {
+    "text": "Holdout owners' litigation over condo termination delayed the project from 2023 to 2026; an appeals court ruled for the holdouts before a roughly USD 50m settlement in Aug 2026",
+    "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+   }
+  ],
+  "sources": [
+   "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/",
+   "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/",
+   "https://www.bizjournals.com/southflorida/news/2026/09/01/edition-condo-miami-edgewater-clears-legal-hurdle.html",
+   "https://www.groundbreak.city/miami/biscayne-21-redevelopment-approved-edgewater",
+   "https://pro.groundbreak.city/miami/projects/2ad83638-ffb2-47bf-b5b3-a940de6abf34",
+   "https://pro.groundbreak.city/miami/projects/7d90d53d-4d3c-4d95-b542-ee351fc66e54",
+   "https://tworoadsre.com/press/miami-market-2/",
+   "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/",
+   "https://realestatetrail.com/news/two-roads-edition-miami-condo",
+   "https://tworoadsre.com/projects/elysee-miami/",
+   "https://bnamiami.org/residential/",
+   "https://www.theroeblingteam.com/miami/buildings/elysee"
+  ]
+ },
+ {
+  "slug": "okan-tower-miami",
+  "name": "Okan Tower",
+  "developer": "Okan Group (builder Okan Construction LLC)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "555 North Miami Avenue, Downtown Miami",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/",
+  "docs_url": "https://floridayimby.com/2026/04/construction-reaches-50th-floor-on-okan-tower-at-555-north-miami-avenue-in-downtown-miami.html",
+  "permit_number": null,
+  "docs_listed": [
+   "50 of 72 floors and about 75% structurally complete (22 Apr 2026)",
+   "USD 200m C-PACE construction loan from Bayview PACE (Jan 2026); EB-5 programme",
+   "about 62% presold (Jan 2026); sales by Fortune Development Sales",
+   "316-key Hilton Miami Bayfront, 236 Hilton-managed condo-hotel units (voluntary rental programme), 163 Sky Residences, office",
+   "Hilton Residences from USD 685,000 (Mar 2025)",
+   "completion 2028 (Jan 2026 reports) vs 2026 in 2022 groundbreaking release"
+  ],
+  "note": "902-foot, 72-storey mixed-use tower by Turkey's Okan Group with a 316-key Hilton, 236 Hilton-managed condo-hotel units and 163 Sky Residences; the frame passed the 50th floor (about 75% of the structure) in April 2026, a USD 200m C-PACE loan closed in January 2026 and about 62% of units were presold. Completion has slipped from 2026 (2022 release) to 2028, the August 2026 top-off is unconfirmed, and a worker died on site on 1 June 2026. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 685000,
+   "currency": "USD",
+   "title": "freehold condominium (fee simple); condo-hotel units in a voluntary Hilton rental programme",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 75,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 399,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Master construction permit approval reported by South Florida Agent Magazine (Aug 2025) and Florida YIMBY (Oct 2025); no permit number published",
+   "escrow": "Florida law requires condo deposit escrow, but no escrow agent or terms are published",
+   "progress": "Independent press: 40th floor Jan 2026, about level 48 Mar 2026, 50th floor and 75% structure 22 Apr 2026",
+   "plans": "Developer unit matrix by floor and layouts on the sales site (as described by an agent page)",
+   "record": "Okan Group (chairman Bekir Okan) is a Turkish group; no delivered US project and no named delivered project found in sources opened",
+   "returns": "Hilton rental programme described as entirely voluntary with rates set by the hotel; no yield or guarantee"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "50 of 72 floors complete, about 75% structural completion (Apr 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/04/construction-reaches-50th-floor-on-okan-tower-at-555-north-miami-avenue-in-downtown-miami.html"
+   },
+   {
+    "claim": "Top-off expected August 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://own.miami/downtown/news/okan-tower-status-october-2026"
+   },
+   {
+    "claim": "Completion 2026 (2022 release) vs 2027 vs 2028 (2026 reports)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+   },
+   {
+    "claim": "USD 200m C-PACE loan from Bayview PACE closed Jan 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+   },
+   {
+    "claim": "About 62% presold (Jan 2026)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://own.miami/downtown/news/okan-tower-status-october-2026"
+   },
+   {
+    "claim": "Master construction permit approved (2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/"
+   },
+   {
+    "claim": "Storey count: 70 (2022 release) vs 72 (2026 reports)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+   },
+   {
+    "claim": "Office space 56,000 vs 60,000 vs 64,000 sq ft",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+   },
+   {
+    "claim": "County still lists folio 01-0106-030-1060 as vacant commercial land (2026 roll)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+   },
+   {
+    "claim": "Hilton rental programme participation voluntary",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+   },
+   {
+    "claim": "Fatal column collapse on 1 June 2026, OSHA investigating",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://southfloridaagentmagazine.com/2026/05/11/okan-tower-50-stories/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Okan Group; builder Okan Construction LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022-06",
+   "handover_promised": "2028",
+   "original_handover": "2026 (2022 groundbreaking release)",
+   "delay_months": 24,
+   "unit_types": [
+    "condo-hotel unit",
+    "Sky Residence"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 685000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+   "rental_programme": "Voluntary Hilton-managed rental programme for 236 condo-hotel units; no figures",
+   "service_charge": null,
+   "brand": "Hilton (hotel and condo-hotel management)",
+   "amenities": [
+    "80,000+ sq ft of amenities",
+    "Hilton hotel services",
+    "wellness facilities",
+    "429-space garage",
+    "Class A office",
+    "retail and dining at base"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Miami Building Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Structure about three-quarters complete with frequent independent progress reports",
+   "Construction financing in place (USD 200m C-PACE)",
+   "Hilton named as manager; rental programme stated as voluntary, no return promises"
+  ],
+  "flags": [
+   {
+    "text": "A worker was killed on 1 June 2026 when a structural column fell from the top floor; OSHA opened an investigation",
+    "source": "https://southfloridaagentmagazine.com/2026/05/11/okan-tower-50-stories/"
+   },
+   {
+    "text": "Completion date moved from 2026 (2022 groundbreaking release) to 2028 (2026 reports)",
+    "source": "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+   }
+  ],
+  "sources": [
+   "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/",
+   "https://own.miami/downtown/news/okan-tower-status-october-2026",
+   "https://profilemiami.com/miamirealestate/2026/4/27/okan-tower-reaches-75-structural-completion-as-construction-passes-50th-floor-in-downtown-miami",
+   "https://floridayimby.com/2026/04/construction-reaches-50th-floor-on-okan-tower-at-555-north-miami-avenue-in-downtown-miami.html",
+   "https://joshsteinrealtor.com/new-construction/okan-tower/",
+   "https://southfloridaagentmagazine.com/2026/05/11/okan-tower-50-stories/",
+   "https://www.citybiz.co/article/835151/race-to-the-top-downtown-miamis-supertall-okan-tower-reaches-75-structural-completion/",
+   "https://hotelpost.org/post/okan-tower-pours-50th-floor-downtown-miami",
+   "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+  ]
  }
 ]

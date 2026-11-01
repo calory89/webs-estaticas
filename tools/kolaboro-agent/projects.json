@@ -1763,7 +1763,24 @@
    "name": "J-Hills",
    "developer": "Homevibe Development Group",
    "area": "Jimbaran",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "status": "active",
    "url": "https://worldestate.homes/en/indonesia/bali/j-hills/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "from $99,900, units from 22 m2, 1-2 bedrooms (World Estate, OffPlan)",
+    "delivery Q2 2027 (World Estate, OffPlan); Q1 2027 (NewHomes.id)",
+    "lease 33+26 years (World Estate)",
+    "payment plan 35% initial, 65% in 7 interest-free payments (Ulu Homes)",
+    "NewHomes.id: 1BR 22 m2 $99,000, 2BR 83 m2 $279,000, 3BR 99 m2 $299,000; developer named 'Vibe Development'",
+    "developer site jhillsbali.com listed by MIPIF exhibitor page (could not be opened)",
+    "Balibestinvestment developer card: '0 projects built, 1 project in process'"
+   ],
+   "note": "Hillside apartments and townhouses in Jimbaran by PT Homevibe Development Group (listed by one portal as Vibe Development), from $99,900, Q2 2027 delivery and a 33+26-year lease per agency listings, with a 35/65 interest-free payment plan. Listings call the developer 'proven' but a developer directory shows no completed project; no permit number, escrow, floor plans or progress found, and the developer site jhillsbali.com could not be opened (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 99900,
     "currency": "USD",
@@ -1771,40 +1788,19 @@
     "lease_base": 33,
     "extension": "+26 years (33+26, per World Estate listing)",
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": "2027-Q2",
     "permit_claim": false,
+    "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
     "developer_delivered": null,
-    "payment_plan": "35% initial, 65% in 7 interest-free instalments"
+    "units": null,
+    "payment_plan": "35% initial, 65% in 7 interest-free instalments",
+    "price_per_m2": 4541,
+    "progress_updates": false
    },
-   "docs_listed": [
-    "from $99,900, units from 22 m2, 1-2 bedrooms",
-    "delivery Q2 2027",
-    "lease 33+26 years",
-    "payment plan 35% then 65% in 7 interest-free payments",
-    "developer named: PT Homevibe Development Group"
-   ],
-   "note": "High-rise apartments and townhouses in Jimbaran by PT Homevibe Development Group from $99,900, Q2 2027 delivery and a 33+26-year lease, per agency listings; no developer website, permit number, escrow, plans or progress found. The listing calls the developer 'proven' but names no completed project (checked 31 Oct 2026)",
-   "positives": [
-    "Lease term with extension stated (33+26)",
-    "Interest-free instalment plan published"
-   ],
-   "evidence": {
-    "permit": null,
-    "escrow": null,
-    "progress": null,
-    "plans": "Layouts offered only via 'Find out the cost' request",
-    "record": "Listing claims 'proven track record and successful projects in Bali' without naming any",
-    "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://offplan.so/projects/j-hills-jimbaran",
-    "https://worldestate.homes/en/indonesia/bali/j-hills/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -1814,14 +1810,159 @@
     "no_guaranteed_returns": true,
     "score": 1,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": null,
+    "escrow": null,
+    "progress": null,
+    "plans": "Layouts only via presentation request on agency pages.",
+    "record": "World Estate claims 'a proven track record and successful projects in Bali' without naming any; Balibestinvestment developer card shows '0 projects built, 1 project in process'.",
+    "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "contradicted",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Developer has a proven track record of successful projects in Bali",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://balibestinvestment.com/best-developers-bali/j-hills-resort"
+    },
+    {
+     "claim": "Delivery Q2 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://newhomes.id/j-hills-bali"
+    },
+    {
+     "claim": "Lease 33+26 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://worldestate.homes/en/indonesia/bali/j-hills/"
+    },
+    {
+     "claim": "Prices from $99,900 for 22 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://offplan.so/projects/j-hills-jimbaran"
+    },
+    {
+     "claim": "Developer is PT Homevibe Development Group",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://newhomes.id/j-hills-bali"
+    },
+    {
+     "claim": "High-rise development",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://newhomes.id/j-hills-bali"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://worldestate.homes/en/indonesia/bali/j-hills/"
+    },
+    {
+     "claim": "35/65 payment plan with 7 interest-free instalments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ulu-homes.id/projects/j-hills/"
+    },
+    {
+     "claim": "Deposit protection or escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://worldestate.homes/en/indonesia/bali/j-hills/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2015.0,
+    "developer_hq": "Bali, Indonesia",
+    "developer_company": "PT Homevibe Development Group (registration number not published)",
+    "developer_projects_delivered": 0.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR apartment",
+     "2BR apartment",
+     "3BR townhouse"
+    ],
+    "size_min_m2": 22.0,
+    "size_max_m2": 99.0,
+    "price_min": 99900.0,
+    "price_max": 299000.0,
+    "currency": "USD",
+    "deposit_pct": 35.0,
+    "payment_plan": "35% then 65% in 7 interest-free instalments",
+    "foreign_ownership": "Leasehold 33+26 years (agency listing)",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "pool with sun deck",
+     "spa",
+     "yoga",
+     "gym",
+     "barbecue area",
+     "24/7 CCTV",
+     "parking"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Lease term with extension stated (33+26)",
+    "Interest-free instalment plan published"
+   ],
+   "flags": [],
+   "sources": [
+    "https://balibestinvestment.com/best-developers-bali/j-hills-resort",
+    "https://mipif.com/members/detail/homevibe/",
+    "https://newhomes.id/j-hills-bali",
+    "https://offplan.so/projects/j-hills-jimbaran",
+    "https://ulu-homes.id/projects/j-hills/",
+    "https://worldestate.homes/en/indonesia/bali/j-hills/"
+   ],
+   "verified_score": 0
   },
   {
    "slug": "lyvin-uluwatu",
    "name": "Lyvin Uluwatu Apartments",
    "developer": "Lyvin Properties",
    "area": "Pecatu",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "status": "active",
    "url": "https://lyvinproperties.co/uluwatu",
+   "docs_url": "https://lyvinproperties.co/uluwatu",
+   "permit_number": null,
+   "docs_listed": [
+    "44 one- and two-bedroom apartments, 14 of 44 remaining",
+    "unit prices $396,000-$550,000 incl. 11% VAT; $3,963-$4,919 per m2",
+    "floor plans and areas per apartment type (78.7-142.7 m2)",
+    "lease 35 years + 20-year priority extension (55 total)",
+    "completion Q4 2028",
+    "company NIB 2302220057448 (PT Lyvin Properties Indonesia, est. 2022)",
+    "completed projects page: Lyvin Melasti Apartments (2024), Lyvin Melasti Villas (2025), Lyvin Bingin (2026)",
+    "Lyvin post on Balinsky (22 May 2026): 'PBG has been issued for Lyvin Uluwatu' (number not shown in text)"
+   ],
+   "note": "44-unit serviced apartment project in a forested park near Uluwatu beach by PT Lyvin Properties Indonesia, from $396,000 incl. VAT, Q4 2028 completion, 35+20-year lease, with floor plans and a company NIB. Lyvin announced in May 2026 that the PBG had been issued but shows no number in text; Real Estate Asia reported its Lyvin Melasti project operating and nearing full completion, while no escrow or construction progress is published for Uluwatu (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 396000,
     "currency": "USD",
@@ -1829,48 +1970,19 @@
     "lease_base": 35,
     "extension": "+20 years priority right to extend (55 total)",
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": "2028-Q4",
     "permit_claim": true,
+    "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": "Completed projects page: Lyvin Melasti Apartments (operating since 2024), Lyvin Melasti Villas (25 villas, since 2025), Lyvin Bingin (since 2026)",
+    "developer_delivered": "Completed projects page: Lyvin Melasti Apartments (operating since 2024), Lyvin Melasti Villas (operating since 2025), Lyvin Bingin (since 2026); Real Estate Asia (Dec 2025): Lyvin Melasti villas operational, full completion by Mar 2026",
     "units": 44,
-    "price_per_m2": 3963
+    "payment_plan": null,
+    "price_per_m2": 3963,
+    "progress_updates": false
    },
-   "docs_url": "https://lyvinproperties.co/uluwatu",
-   "docs_listed": [
-    "44 apartments, 14 remaining",
-    "unit prices $396,000-$550,000 incl. 11% VAT; $3,963-$4,919 per m2",
-    "floor plans per apartment type (Tower A and B, 78.7-142.7 m2)",
-    "master plan",
-    "lease 35 years + 20-year priority extension (55 total)",
-    "completion Q4 2028",
-    "company NIB with OSS verification link",
-    "completed projects page"
-   ],
-   "note": "44-unit serviced apartment project in Pecatu by PT Lyvin Properties Indonesia, from $396,000 incl. VAT, Q4 2028 completion, 35+20-year sublease, with floor plans and a company NIB linked to the government OSS verifier. Lyvin lists Melasti Apartments, Melasti Villas and Lyvin Bingin as completed and operating; no escrow or construction progress published (checked 31 Oct 2026)",
-   "positives": [
-    "Developer NIB published with government OSS verification link",
-    "Floor plans and price per m2 published",
-    "Lease term and extension stated (35+20)",
-    "Three completed and operating projects named",
-    "Developer company business ID (NIB 2302220057448) published with a link to the government OSS check"
-   ],
-   "evidence": {
-    "permit": "Footer 'NIB 2302220057448' for PT Lyvin Properties Indonesia, linked to ui-login.oss.go.id verification; this is the developer's business ID, not a PBG",
-    "escrow": null,
-    "progress": null,
-    "plans": "Floor plans for Tower A and Tower B unit types with areas",
-    "record": "lyvinproperties.co/completed lists three operating projects with start years",
-    "returns": "Financial model on request; no guarantee wording"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://lyvinproperties.co/completed",
-    "https://lyvinproperties.co/uluwatu"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -1880,7 +1992,148 @@
     "no_guaranteed_returns": true,
     "score": 3,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": "Lyvin's own post on Balinsky (22 May 2026): 'PBG has been issued for Lyvin Uluwatu. PBG number:' with the number not readable in the text. Footer NIB 2302220057448 is the company business ID, not a PBG.",
+    "escrow": null,
+    "progress": "No construction updates for Uluwatu; the PBG post says the project 'moves into the next construction stages'.",
+    "plans": "Floor plans and areas for each apartment type on the project page.",
+    "record": "lyvinproperties.co/completed lists three operating projects; Real Estate Asia (22 Dec 2025) reports Lyvin Melasti villas operational and the project entering final delivery; Lyvin's March 2026 report on Balinsky described Melasti Apartments nearly complete with soft opening end of July 2026.",
+    "returns": "No yield figure or guarantee wording on the project page; Real Estate Asia notes Lyvin did not share financial forecasts."
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "independent",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "PBG issued for Lyvin Uluwatu (May 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://balinsky.info/en/news/lyvin-uluwatu-pbg-issued-next-construction-phase"
+    },
+    {
+     "claim": "Lyvin Melasti villas operating and project in final delivery",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://realestateasia.com/exclusive/lyvin-properties-bets-low-density-luxury-in-balis-south-bukit"
+    },
+    {
+     "claim": "Lyvin Melasti full completion by March 2026",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://balinsky.info/en/news/lyvin-melasti-construction-nearly-complete"
+    },
+    {
+     "claim": "Developer company PT Lyvin Properties Indonesia, NIB 2302220057448",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "Completion Q4 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "Lease 35 + 20 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "Prices $396,000-$550,000 incl. VAT",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "14 of 44 units remaining",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "Set in a 226,624 m2 forested park",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "Deposit protection or escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://lyvinproperties.co/uluwatu"
+    },
+    {
+     "claim": "Lyvin Melasti rated 9.9 on Booking.com and Airbnb Superhost",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.linkedin.com/posts/lyvin-co_phase-2-of-lyvin-melasti-now-on-sale-activity-7481359243955048448-fbH4"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2022.0,
+    "developer_hq": "Pecatu, Bali, Indonesia (Jl. Bangbang Metuug)",
+    "developer_company": "PT Lyvin Properties Indonesia, NIB 2302220057448",
+    "developer_projects_delivered": 3.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "1BR duplex",
+     "2BR duplex"
+    ],
+    "size_min_m2": 78.7,
+    "size_max_m2": 142.7,
+    "price_min": 396000.0,
+    "price_max": 550000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Leasehold 35 years + 20-year priority extension",
+    "rental_programme": "Full hotel service and hotel-standard asset management by Lyvin; financial model on request",
+    "service_charge": null,
+    "brand": "Lyvin (in-house hospitality brand)",
+    "amenities": [
+     "300 m2 pool",
+     "spa",
+     "restaurant",
+     "forested park",
+     "24/7 security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Floor plans and price per m2 published",
+    "Developer business ID (NIB) published",
+    "Developer announced PBG issuance in May 2026",
+    "Prior Lyvin project reported operating by trade media",
+    "Lease term and extension stated (35+20)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://balinsky.info/en/news/lyvin-melasti-construction-nearly-complete",
+    "https://balinsky.info/en/news/lyvin-uluwatu-pbg-issued-next-construction-phase",
+    "https://lyvinproperties.co/completed",
+    "https://lyvinproperties.co/melasti",
+    "https://lyvinproperties.co/uluwatu",
+    "https://realestateasia.com/exclusive/lyvin-properties-bets-low-density-luxury-in-balis-south-bukit",
+    "https://www.linkedin.com/posts/lyvin-co_phase-2-of-lyvin-melasti-now-on-sale-activity-7481359243955048448-fbH4"
+   ],
+   "verified_score": 1
   },
   {
    "slug": "magnum-resort-sanur",
@@ -4118,68 +4371,196 @@
    "country": "Indonesia",
    "market": "Bali",
    "url": "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
-   "docs_url": "https://www.theonebyalmal.com/",
-   "permit_number": null,
+   "docs_url": "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua",
+   "added": "2026-10-28",
+   "status": "active",
+   "stage": "off-plan",
    "docs_listed": [
-    "studios from $98,371; 1BR from $180,320; 2BR villas from $476,675",
-    "handover Q3 2027",
-    "leasehold 25+15 years",
+    "154 residences on a 10,000 m2 plot: 42 studios, 66 1BR, 4 2BR apartments, 30 1BR townhouses, 12 2BR villas",
+    "studios from $98,371; 1BR from $180,320; townhouses from $281,750; 2BR apartments from $313,950; 2BR villas from $476,675",
+    "PBG No. SK-PBG-510305-14102026-001 issued 14 Oct 2026 by Badung Regency to PT Magical Bali Villas (press release)",
+    "handover Q3 2027 (OPR) vs completion 2028 in two phases (Palmera)",
+    "leasehold 25+15 years (OPR) vs 33+15 years (Palmera)",
     "projected ROI 17-22% at 75-82% occupancy (developer calculation)",
     "18-month plan: 25% on signing, six 12.5% payments every 3 months",
-    "floor plans behind a lead form",
-    "contractor named: 888 Design & Build with D-Group",
-    "Wyndham Registry Collection operator appointed (Mar 2026)"
+    "Registry Collection Hotels (Wyndham) brand licence"
    ],
-   "note": "Studios, apartments, townhouses and villas in Nusa Dua by Dubai-based ALMAL Real Estate Development, from $98,371 on a 25+15-year lease, Q3 2027 handover and an 18-month instalment plan, with Wyndham's Registry Collection appointed as operator in March 2026. The developer site shows only contact details; no permit number, escrow, progress, open floor plans or completed Bali project found (checked 31 Oct 2026)",
-   "added": "2026-10-28",
+   "note": "154 studios, apartments, townhouses and villas in Nusa Dua by Dubai-based Almal from $98,371, which announced on 14 Oct 2026 that Badung Regency issued PBG No. SK-PBG-510305-14102026-001 to its local company PT Magical Bali Villas. Buyers pay in full within 18 months while construction is only starting; handover is Q3 2027 on the sales portal but 2028 in two phases elsewhere, and the lease is given as 25+15 or 33+15 years; no escrow, progress or open floor plans, and no completed Almal project found (checked 31 Oct 2026)",
    "seed": {
     "price": 98371,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": 25,
-    "extension": "+15 years (25+15)",
+    "extension": "+15 years (25+15 per OPR; 33+15 per Palmera)",
     "guaranteed_language": false,
+    "yield_pct": 22,
     "completion": "2027-Q3",
-    "permit_claim": false,
-    "permit_number": null,
+    "permit_claim": true,
+    "permit_number": "SK-PBG-510305-14102026-001",
     "plans_published": false,
     "escrow": null,
-    "yield_pct": 22,
     "progress_pct": null,
     "developer_delivered": null,
     "units": 154,
-    "payment_plan": "25% on signing, then six payments of 12.5% every three months (18 months)"
+    "payment_plan": "25% on signing, then six payments of 12.5% every three months (18 months); 3% discount for full payment",
+    "price_per_m2": 3513,
+    "progress_updates": null
    },
-   "positives": [
-    "Named international hotel operator (Wyndham Registry Collection)",
-    "Instalment schedule and lease term published"
-   ],
-   "evidence": {
-    "permit": "Antara related-news list shows a headline that ALMAL 'Secures Building Permit' (16 Oct 2026), but no permit number was found",
-    "escrow": null,
-    "progress": null,
-    "plans": "'Download All Floor Plans' opens a lead-capture modal",
-    "record": "OPR cites 'over USD 2B in delivered project value' without naming a delivered project; its listed RAK hotel is not yet handed over",
-    "returns": "'Projected ROI: 17-22%' from developer calculations; not presented as guaranteed"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://en.antaranews.com/amp/news/408758/almal-real-estate-development-appoints-wyndham-hotels-resorts-for-the-one-by-almal-bali-nusa-dua-a-registry-collection-hotel",
-    "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
-    "https://www.bernama.com/lite/news.php?id=2534008",
-    "https://www.theonebyalmal.com/"
-   ],
    "disclosure": {
-    "permit": false,
+    "permit": true,
     "escrow": false,
     "progress": false,
     "plans": false,
     "record": false,
     "no_guaranteed_returns": true,
-    "score": 1,
+    "score": 2,
     "all_six": false
-   }
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "PBG SK-PBG-510305-14102026-001 issued 14 Oct 2026 by Badung Regency to PT Magical Bali Villas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua"
+    },
+    {
+     "claim": "Registry Collection Hotels (Wyndham) brand licence; Wyndham VP quoted",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://irhmagazine.com/almal-real-estate-development-secures-building-permit-for-bali-luxury-scheme/"
+    },
+    {
+     "claim": "Handover Q3 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+    },
+    {
+     "claim": "Leasehold 25+15 years",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+    },
+    {
+     "claim": "154 residential units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua"
+    },
+    {
+     "claim": "Work on site has begun (portal, Oct 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.palmera.realestate/indonesia/property/the-one-by-almal/"
+    },
+    {
+     "claim": "Projected ROI 17-22% at 75-82% occupancy",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+    },
+    {
+     "claim": "Over USD 2B in delivered project value (sales agent)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+    },
+    {
+     "claim": "Developer has a completed project",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://irhmagazine.com/almal-real-estate-development-secures-building-permit-for-bali-luxury-scheme/"
+    },
+    {
+     "claim": "Price from $98,371",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+    },
+    {
+     "claim": "Deposit protected in escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://opr.ae/projects/the-one-almal-nusa-dua-bali"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bay Square Business Bay, Dubai, UAE; Bali branch at ITDC Business Centre, Nusa Dua",
+    "developer_company": "PT Magical Bali Villas (Indonesian project entity named in press release; registration number not published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR apartment",
+     "2BR apartment",
+     "1BR townhouse",
+     "2BR villa"
+    ],
+    "size_min_m2": 28.0,
+    "size_max_m2": 110.0,
+    "price_min": 98371.0,
+    "price_max": 476675.0,
+    "currency": "USD",
+    "deposit_pct": 25.0,
+    "payment_plan": "25% on signing, six quarterly 12.5% instalments over 18 months",
+    "foreign_ownership": "Leasehold 25+15 years (OPR) or 33+15 years (Palmera)",
+    "rental_programme": "Operated by the developer's PT Magical Bali Villas under the Registry Collection Hotels brand licence; projected ROI 17-22% (developer calculation)",
+    "service_charge": null,
+    "brand": "Registry Collection Hotels (Wyndham)",
+    "amenities": [
+     "63 private pools",
+     "4 shared pools",
+     "266 m2 main pool",
+     "352 m2 rooftop restaurant",
+     "gym",
+     "co-working",
+     "underground parking"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Badung Regency (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": "Business Wire release (Antara, IRHM, 14-16 Oct 2026): 'PBG No. SK-PBG-510305-14102026-001', issued 14 Oct 2026 by Badung Regency to PT Magical Bali Villas; not checked against a public register (none available)",
+    "escrow": null,
+    "progress": "Permit only just issued; portal says work on site has begun; no dated updates or %",
+    "plans": "'Download All Floor Plans' opens a lead-capture form; unit sizes listed",
+    "record": "No completed Almal project named; agent cites 'over USD 2B in delivered project value' without naming one",
+    "returns": "'Projected ROI: 17-22%' from developer calculations; not presented as guaranteed"
+   },
+   "positives": [
+    "Building permit number published with issue date and authority",
+    "Local project company named (PT Magical Bali Villas)",
+    "International hotel brand licence (Registry Collection)",
+    "Instalment schedule and unit mix published"
+   ],
+   "flags": [],
+   "sources": [
+    "https://en.antaranews.com/amp/news/408758/almal-real-estate-development-appoints-wyndham-hotels-resorts-for-the-one-by-almal-bali-nusa-dua-a-registry-collection-hotel",
+    "https://en.antaranews.com/news/435845/almal-real-estate-development-secures-building-permit-and-announces-next-phase-of-the-one-by-almal-bali-nusa-dua",
+    "https://irhmagazine.com/almal-real-estate-development-secures-building-permit-for-bali-luxury-scheme/",
+    "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
+    "https://www.bernama.com/lite/news.php?id=2534008",
+    "https://www.palmera.realestate/indonesia/property/the-one-by-almal/",
+    "https://www.theonebyalmal.com/"
+   ],
+   "verified_score": 0,
+   "permit_number": "SK-PBG-510305-14102026-001"
   },
   {
    "slug": "sanuuri-riverside-residences",
@@ -5903,50 +6284,38 @@
    "market": "Bali",
    "url": "https://bocoajimbaran.com/",
    "docs_url": "https://bocoajimbaran.com/",
-   "permit_number": null,
-   "docs_listed": [
-    "4 private-pool villas, 63-147 m2 buildings on 173-313 m2 land",
-    "1BR XL, 3BR A and 3BR B types",
-    "live availability",
-    "floor plans and prices only in brochure",
-    "developer Wahi Group, design Homeboys Projects",
-    "earlier Bocoa Canggu (18 villas) and Bocoa Uluwatu (40 villas) sold out"
-   ],
-   "note": "Four private-pool villas a five-minute walk from Jimbaran beach by Wahi Group, designed by Homeboys Projects, with building and land sizes per villa; prices and floor plans only in the brochure. The site cites Bocoa Canggu (18 villas) as an operating complex with AirDNA rankings; no tenure, permit number, escrow or progress published (checked 31 Oct 2026)",
    "added": "2026-10-28",
+   "status": "active",
+   "stage": "off-plan",
+   "docs_listed": [
+    "4 private-pool villas: 1BR XL 63 m2 on 173 m2 land, 3BR A 102 and 140 m2, 3BR B 147 m2 on 313 m2 land",
+    "live availability",
+    "prices and floor plans only in brochure (form)",
+    "developer Wahi Group, design Homeboys Projects, operations in-house",
+    "'Bocoa story': Bocoa Canggu (18 villas) and Bocoa Uluwatu (40 villas) sold out, AirDNA top-10 claim",
+    "bocoavillas.com: Jimbaran 'six villas', 29-year leasehold, $249,000"
+   ],
+   "note": "Four private-pool villas a five-minute walk from Jimbaran beach by Wahi Group with Homeboys Projects design, building and land sizes per villa, and prices and floor plans only in the brochure. The site presents earlier Bocoa projects as its record, but Bocoa Uluwatu was developed by Azuma Developments and Luma Properties (22 units per a sales agent, not 40), and other Bocoa pages describe Jimbaran as six or seven villas on a 29-year lease; no permit number, escrow or progress (checked 31 Oct 2026)",
    "seed": {
     "price": null,
     "currency": null,
-    "title": null,
-    "lease_base": null,
+    "title": "leasehold",
+    "lease_base": 29,
     "extension": null,
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": null,
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": "Site: Bocoa Canggu, Pererenan (18 villas) 'now one of Bali's best-performing villa complexes', two villas ranked in Canggu's AirDNA top ten; Bocoa Uluwatu (40 villas) sold out before completion",
-    "units": 4
+    "developer_delivered": "Site cites Bocoa Canggu (18 villas, operating) and Bocoa Uluwatu (40 villas, sold out) as 'the Bocoa story'; Bocoa Uluwatu developer is Azuma Developments with Homeboys (Azuma site) / Luma Properties (sales agent); no completed Wahi Group project named",
+    "units": 4,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": null
    },
-   "positives": [
-    "Earlier Bocoa project operating with public performance ranking",
-    "Building and land sizes per villa published"
-   ],
-   "evidence": {
-    "permit": null,
-    "escrow": null,
-    "progress": null,
-    "plans": "'Get the brochure: Floor plans, prices and availability' behind a form",
-    "record": "'The Bocoa story' section: Bocoa Canggu 18 villas operating and ranked on AirDNA",
-    "returns": "No yield figure or guarantee wording"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://bocoajimbaran.com/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -5956,7 +6325,143 @@
     "no_guaranteed_returns": true,
     "score": 2,
     "all_six": false
-   }
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "contradicted",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Bocoa Uluwatu (40 villas) is part of the developer's record",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://azumadevelopments.com/projects/bocoa/"
+    },
+    {
+     "claim": "Bocoa Uluwatu had 40 villas (sales agent lists 22 units)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.ldrgroup.nl/en/bocoa-uluwatu/"
+    },
+    {
+     "claim": "Bocoa Canggu (18 villas) sold out in under 3 months and operating",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoajimbaran.com/"
+    },
+    {
+     "claim": "Two Bocoa villas rank in Canggu's AirDNA top ten",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoajimbaran.com/"
+    },
+    {
+     "claim": "Four villas (bocoavillas.com says six)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://bocoavillas.com/investments/"
+    },
+    {
+     "claim": "29-year leasehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoavillas.com/investments/"
+    },
+    {
+     "claim": "Price $249,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoavillas.com/investments/"
+    },
+    {
+     "claim": "Five-minute walk to Jimbaran beach (270 m)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoajimbaran.com/"
+    },
+    {
+     "claim": "Wahi Group 12-18% annual ROI 'proven data based on our historical property performance'",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wahigroup.id/"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoajimbaran.com/"
+    },
+    {
+     "claim": "Deposit protected in escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocoajimbaran.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali, Indonesia",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR XL villa",
+     "3BR A villa",
+     "3BR B villa"
+    ],
+    "size_min_m2": 63.0,
+    "size_max_m2": 147.0,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Leasehold 29 years (bocoavillas.com)",
+    "rental_programme": "Operated in-house by the Bocoa team; Wahi Group site cites 12-18% annual ROI",
+    "service_charge": null,
+    "brand": "Bocoa",
+    "amenities": [
+     "private pool",
+     "walled pool garden",
+     "fully furnished"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Badung Regency (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": null,
+    "escrow": null,
+    "progress": null,
+    "plans": "'Receive the brochure, prices and availability' behind a form; sizes only on page",
+    "record": "Site 'The Bocoa story' credits Bocoa Canggu and Bocoa Uluwatu; Azuma Developments says it developed Bocoa Uluwatu with Homeboys, and LDR Group credits Luma Properties Bali with Homeboys; no completed Wahi Group project named",
+    "returns": "No yield figure or guarantee wording on the project page; Wahi Group homepage '12-18% Annual ROI'"
+   },
+   "positives": [
+    "Building and land sizes per villa published",
+    "Live availability shown",
+    "Named design studio with operating earlier projects"
+   ],
+   "flags": [],
+   "sources": [
+    "https://azumadevelopments.com/projects/bocoa/",
+    "https://bocoajimbaran.com/",
+    "https://bocoavillas.com/investments/",
+    "https://wahigroup.id/",
+    "https://www.ldrgroup.nl/en/bocoa-uluwatu/"
+   ],
+   "verified_score": 0,
+   "permit_number": null
   },
   {
    "slug": "avalon-tao-club-house",

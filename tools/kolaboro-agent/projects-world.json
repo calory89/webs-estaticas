@@ -7357,14 +7357,17 @@
    "docs_url": null,
    "permit_number": null,
    "docs_listed": [
-    "564 apartments in 8 seven-storey buildings + 5 commercial units",
-    "prices by type from THB 4,284,000",
+    "564 apartments in 8 seven-storey buildings + 5 commercial units on 11-1-27.58 rai (18,110 m2)",
+    "prices by type: 1 bed from THB 4,284,000, 2 bed from THB 8,042,000, 2 bed plus from THB 14,800,000",
     "master plan",
     "construction start Q2 2026, completion Q2 2028",
-    "0% instalment during construction"
+    "0% instalment during construction, discounts up to 10%",
+    "'over 30 years' developer claim (developer not named on this site)"
    ],
-   "note": "564-unit project 400 m from Kamala Beach from THB 4,284,000 with construction Q2 2026 to Q2 2028; developer Rhom Bho Property PCL (SET-listed) has begun transfers at The Title Legendary Bang-Tao, but no permit, EIA, escrow or progress is published (checked 31 Oct 2026)",
+   "note": "564-unit, eight-building condo 400 m from Kamala Beach from THB 4,284,000, developed by SET-listed Rhom Bho Property (The Title, an AssetWise subsidiary); the site still shows construction start Q2 2026, but the ONEP register lists its EIA report (256909-43) as filed without approval and the project as not yet built, and no permit, escrow or progress is published (checked 1 Nov 2026)",
    "added": "2026-10-28",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": 4284000,
     "currency": "THB",
@@ -7372,35 +7375,19 @@
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2028",
+    "yield_pct": null,
+    "completion": "2028-Q2",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": "Rhom Bho Property PCL SET snapshot: commencement of property transfers for The Title Legendary Bang-Tao",
+    "developer_delivered": "Rhom Bho Property PCL (SET: TITLE): transfers at The Title Legendary Bang-Tao (SET snapshot, AssetWise Q3 2025 results); ONEP shows earlier The Title condos (e.g. The Title, The Title V) handed to their condominium juristic persons",
     "units": 564,
-    "payment_plan": "0% instalment during the construction period"
+    "payment_plan": "0% instalment during the construction period",
+    "price_per_m2": null,
+    "progress_updates": null
    },
-   "positives": [
-    "Developer is a SET-listed company",
-    "Prices by unit type published"
-   ],
-   "evidence": {
-    "permit": "No permit, licence or approval number published on the pages opened",
-    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
-    "progress": "No construction progress published",
-    "plans": "Master plan only (keeps earlier check)",
-    "record": "SET listed-company snapshot names transfers at The Title Legendary Bang-Tao; FazWaz names Rhom Bho as developer",
-    "returns": "'High rental yield' wording only; no guarantee"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://coralinakamala.com/",
-    "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html",
-    "https://www.fazwaz.co.th/en/projects/thailand/phuket/kathu/kamala/the-title-coralina-kamala"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -7410,7 +7397,148 @@
     "no_guaranteed_returns": true,
     "score": 3,
     "all_six": false
-   }
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "developer"
+   },
+   "verified_score": 1,
+   "evidence": {
+    "permit": "No permit or EIA number published. ONEP lists report 256909-43 'Coralina Kamala' condominium, Kamala, owner Rhom Bho Property PCL, with no approval letter number or date and status 'not yet constructed'. A condominium of this size needs EIA approval before a building permit, so the advertised Q2 2026 construction start is not supported by the register",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+    "progress": "No progress published; site still lists 'Q2 2026 construction start'; ONEP status 'not yet constructed'. Launch press (REm, Property Channel) gave completion Q1 2028, starting price THB 3 million and project value THB 4.28 billion (AssetWise: THB 3.9 billion)",
+    "plans": "Master plan and unit-type size ranges; no individual unit plans",
+    "record": "Rhom Bho Property PCL is SET-listed; AssetWise reports revenue from The Title Legendary Bang-Tao transfers (Q3 2025); ONEP lists earlier The Title condos (reports 256607-39 and 256509-8) now owned by their condominium juristic persons, i.e. completed and registered",
+    "returns": "'High rental yield' wording only; no guarantee"
+   },
+   "claims": [
+    {
+     "claim": "Construction start Q2 2026",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=16529"
+    },
+    {
+     "claim": "EIA approved (needed for building permit)",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=16529"
+    },
+    {
+     "claim": "Developer is Rhom Bho Property PCL (The Title)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=16529"
+    },
+    {
+     "claim": "Developer is SET-listed and has delivered projects (The Title Legendary Bang-Tao transfers)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+    },
+    {
+     "claim": "Earlier The Title condos completed and handed to juristic persons",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=12762"
+    },
+    {
+     "claim": "564 units in 8 seven-storey buildings",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://assetwise.co.th/en/news/phuket-drives-asws-continued-growth-posting-9-month-revenue-of-thb-6-25-billion/"
+    },
+    {
+     "claim": "Completion Q2 2028",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://remthailand.asia/the-title-expands-its-phuket-legacy-with-coralina-kamala/"
+    },
+    {
+     "claim": "Prices from THB 4,284,000",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://remthailand.asia/the-title-expands-its-phuket-legacy-with-coralina-kamala/"
+    },
+    {
+     "claim": "Developer has over 30 years in Thai real estate",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://coralinakamala.com/"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://coralinakamala.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Phuket, Thailand",
+    "developer_company": "Rhom Bho Property Public Company Limited (SET: TITLE), subsidiary of AssetWise PCL (SET: ASW)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Listed on the Stock Exchange of Thailand (TITLE); parent AssetWise PCL (ASW) listed",
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": "2028-Q1 (launch press, Oct-Nov 2025)",
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "1BR plus",
+     "2BR",
+     "2BR plus",
+     "penthouse"
+    ],
+    "size_min_m2": 26.0,
+    "size_max_m2": 128.0,
+    "price_min": 4284000.0,
+    "price_max": null,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": "0% instalment during the construction period",
+    "foreign_ownership": "Freehold or leasehold on request (agent page); quota not stated",
+    "rental_programme": "The Esquire property management, resale and rental service; no figures",
+    "service_charge": null,
+    "brand": "The Title",
+    "amenities": [
+     "5 pools totalling 2,500 m2",
+     "fitness centre",
+     "co-working and lounge",
+     "kids playground",
+     "pet club",
+     "EV charging",
+     "24-hour security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "ONEP (EIA approval); Kamala subdistrict administration (building permit)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Developer is SET-listed with completed Phuket condominiums confirmed on the ONEP register",
+    "Prices by unit type published",
+    "Unit count and land area match the listed parent's disclosure"
+   ],
+   "flags": [],
+   "sources": [
+    "https://assetwise.co.th/en/news/phuket-drives-asws-continued-growth-posting-9-month-revenue-of-thb-6-25-billion/",
+    "https://coralinakamala.com/",
+    "https://eia.onep.go.th/eia/detail?id=11471",
+    "https://eia.onep.go.th/eia/detail?id=12762",
+    "https://eia.onep.go.th/eia/detail?id=16529",
+    "https://investor.rhombho.co.th/en/newsroom/news-clippings",
+    "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html",
+    "https://phuket.pro/en/news/start-prodaj-the-title-coralina/",
+    "https://remthailand.asia/the-title-expands-its-phuket-legacy-with-coralina-kamala/",
+    "https://www.fazwaz.co.th/en/projects/thailand/phuket/kathu/kamala/the-title-coralina-kamala",
+    "https://www.propertychannel.co.th/%e0%b8%82%e0%b9%88%e0%b8%b2%e0%b8%a7/title-coralina-kamala/"
+   ]
   },
   {
    "slug": "selo-suites",
@@ -8194,48 +8322,37 @@
    "docs_url": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
    "permit_number": null,
    "docs_listed": [
-    "thecrestsamui.com now redirects to the developer site",
-    "leasehold, 27 villas phase 1 of 28 residences",
+    "thecrestsamui.com redirects to the developer site",
+    "leasehold, 27 villas (phase 1 of 28 residences), Bang Po Beach",
     "estimated completion 2027",
     "master plan",
-    "villa types (Signature, Diamond)"
+    "villa plans (Signature 1st/2nd floor; Diamond 1st/2nd/basement)",
+    "developer project timeline 2013-2025"
    ],
-   "note": "thecrestsamui.com now redirects to The Wave Real Estate Group site, which lists The Crest as 27 leasehold beachfront villas in Bang Po with estimated completion 2027 and a master plan; no price, permit, escrow or progress published (checked 31 Oct 2026)",
+   "note": "27 leasehold beachfront villas on Bang Po Beach by The Wave Real Estate Group with estimated completion 2027, master plan and villa floor plans; agents list prices from THB 16.8M (3-bed, 356 m2) to THB 42.8M, but the developer publishes no price, permit, escrow or progress, and its delivered projects could not be confirmed outside its own and agents' pages (checked 1 Nov 2026)",
    "added": "2026-10-28",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
-    "price": null,
-    "currency": null,
+    "price": 16800000,
+    "currency": "THB",
     "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
+    "lease_base": 30,
+    "extension": "Renewable twice, total 90 years (agent page)",
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": "2027",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": "The Wave Real Estate Group (since 2013): The Wave I & II, K-Waltz, Coast Breeze (29 units, fully sold out); '5 projects, 100+ pool villas' (thewavegroupsamui.com/about-us)",
-    "units": 27
+    "developer_delivered": "The Wave Real Estate Group (since 2013) names The Wave I & II (29 and 43 units, 2013-2015), K-Waltz (10 units, 2019) and Coast Breeze (26 units, 2023) on its about page; not confirmed by a registry or independent source",
+    "units": 27,
+    "payment_plan": null,
+    "price_per_m2": 47171,
+    "progress_updates": null
    },
-   "positives": [
-    "Developer has named earlier projects in Koh Samui"
-   ],
-   "evidence": {
-    "permit": "No permit, licence or approval number published on the pages opened",
-    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
-    "progress": "No construction progress published",
-    "plans": "Master plan (keeps earlier check)",
-    "record": "About page names earlier projects and Coast Breeze (29 units) as fully sold out; 100+ pool villas",
-    "returns": "No guaranteed return language"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://thecrestsamui.com/",
-    "https://thewavegroupsamui.com/about-us/",
-    "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -8245,7 +8362,141 @@
     "no_guaranteed_returns": true,
     "score": 3,
     "all_six": false
-   }
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "verified_score": 0,
+   "evidence": {
+    "permit": "No permit, licence or approval number published; 27 villas, below the EIA threshold for housing",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+    "progress": "No construction progress published",
+    "plans": "Master plan and two-level / three-level villa plans on the project page",
+    "record": "About page names The Wave I & II, K-Waltz and Coast Breeze with unit counts and says The Wave I & II are 'fully sold out'; unit counts are inconsistent (29 units in one place, 29 and 43 in the timeline; Coast Breeze 26 on the developer page, 29 on Nestopa); no registry or press confirmation found",
+    "returns": "No guaranteed return language"
+   },
+   "claims": [
+    {
+     "claim": "Developer active in Koh Samui since 2013",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/about-us/"
+    },
+    {
+     "claim": "5 projects and 100+ pool villas delivered",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/about-us/"
+    },
+    {
+     "claim": "The Wave I & II fully sold out",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/about-us/"
+    },
+    {
+     "claim": "Coast Breeze has 26 units",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://nestopa.com/th/developer/the-wave-real-estate-group-1703"
+    },
+    {
+     "claim": "Developer company The Wave Real Estate Group Co., Ltd. is registered",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/about-us/"
+    },
+    {
+     "claim": "Estimated completion 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/"
+    },
+    {
+     "claim": "Prices from THB 16.8M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kellerhenson.com/project/the-crest-residences-samui"
+    },
+    {
+     "claim": "Leasehold 30 years renewable twice",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kellerhenson.com/project/the-crest-residences-samui"
+    },
+    {
+     "claim": "Building permit obtained",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2013.0,
+    "developer_hq": "91/20 Moo 6, Bophut, Koh Samui, Surat Thani, Thailand",
+    "developer_company": "The Wave Real Estate Group Co., Ltd. (registration number not published)",
+    "developer_projects_delivered": 4.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3BR villa (Signature)",
+     "4BR villa (Diamond)"
+    ],
+    "size_min_m2": 356.15,
+    "size_max_m2": 885.97,
+    "price_min": 16800000.0,
+    "price_max": 42800000.0,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Leasehold (30 years, renewable twice per agent)",
+    "rental_programme": "Affiliated management platform (rental, housekeeping, concierge) per agent; no figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "3,000 m2 central park",
+     "beachfront restaurant",
+     "sunset cafe",
+     "kids club",
+     "water sports centre",
+     "spa",
+     "wellness clinic"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Koh Samui municipality (building permit); Land Office Koh Samui (lease registration)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Master plan and villa floor plans published",
+    "Developer names earlier Koh Samui projects with years and unit counts"
+   ],
+   "flags": [],
+   "sources": [
+    "http://www.thewave.com.cn/h-col-105.html",
+    "https://kellerhenson.com/project/the-crest-residences-samui",
+    "https://mythai.house/property/luxury-3-4-br-villas-in-bang-po-beach-koh-samui-%f0%9f%8c%b4/",
+    "https://nestopa.com/th/developer/the-wave-real-estate-group-1703",
+    "https://thecrestsamui.com/",
+    "https://thewavegroupsamui.com/",
+    "https://thewavegroupsamui.com/about-us/",
+    "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/"
+   ]
   },
   {
    "slug": "copacabana-coral-reef-jomtien",
@@ -8255,59 +8506,190 @@
    "country": "Thailand",
    "market": "Pattaya",
    "url": "https://copacabanacoralreef.com/",
-   "docs_url": null,
-   "permit_number": null,
+   "docs_url": "https://copacabanagroup.com/en/projects/copacabana-coralreef/",
+   "permit_number": "EIA approval ทส 1010.5/10429 (11 Aug 2020, report 14612, listed as 'Copacabana Golf Jomtien', owner Copacabana Coral Reef Co., Ltd.)",
    "docs_listed": [
     "freehold",
-    "1,972 units on 13 rai 84.5 sq.wah",
-    "master plan",
-    "floor-by-floor plans",
-    "unit plans"
+    "1,972 units on 13 rai 84.5 sq.wah, 55 floors",
+    "master plan, floor-by-floor plans (G to 55), unit plans and unit matrix",
+    "developer group site: progress panel 'updated June 2026' and news of Level 56 topping out (Sep 2026)",
+    "completion 2027 (group site)",
+    "360 room tours"
    ],
-   "note": "Freehold 1,972-unit project on 13 rai in Jomtien with master plan, floor and unit plans; no developer name, price, completion date, permit, escrow or progress published (checked 31 Oct 2026)",
+   "note": "Freehold 55-floor tower on Jomtien 2nd Road by Copacabana Group with full floor and unit plans; the group reports topping out at level 56 in September 2026 and completion in 2027, the ONEP register shows a 2020 EIA for the same company on Jomtien 2nd Road under the name Copacabana Golf Jomtien and lists the group's first tower as completed, but the project site gives 1,972 units against 1,897 in press and agent material, and no escrow or permit number is published (checked 1 Nov 2026)",
    "added": "2026-10-28",
+   "status": "active",
+   "stage": "under construction",
    "seed": {
-    "price": null,
-    "currency": null,
+    "price": 3600000,
+    "currency": "THB",
     "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": null,
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": null,
-    "units": 1972
+    "developer_delivered": "Copacabana Group: Copacabana Beach Jomtien (59 floors, 1,644 units per REm) completed; ONEP lists its EIA owner as the condominium juristic person",
+    "units": 1972,
+    "payment_plan": null,
+    "price_per_m2": 90000,
+    "progress_updates": true
    },
-   "positives": [
-    "Floor and unit plans published"
-   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "developer"
+   },
+   "verified_score": 2,
    "evidence": {
-    "permit": "No permit, licence or approval number published on the pages opened",
+    "permit": "Project site publishes no permit number; an agent (Siam Glow) quotes the January 2026 sales booklet as stating the building permit was received. ONEP lists report 14612 'Copacabana Golf Jomtien', Jomtien 2nd Road, Nong Prue, owner Copacabana Coral Reef Co., Ltd. (0205562035454, registered 23 Sep 2019, active), approval ทส 1010.5/10429 dated 11/08/2563 (11 Aug 2020); the register name differs from the marketing name",
     "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
-    "progress": "No construction progress published",
-    "plans": "Master plan, floor plans and unit plans",
-    "record": "Developer not named on the site",
+    "progress": "Group project page shows a progress panel 'updated June 2026' (structure, architecture, MEP, overall); news post 8 Sep 2026 reports the Level 56 topping out; Siam Glow quotes about 66% overall in June 2026; REm (Jun 2025) reported structure at the 15th floor. No ONEP construction status recorded",
+    "plans": "Master plan, floor plans for every level and unit plans",
+    "record": "ONEP report 12675 'Copacabana Beach Jomtien' (ทส 1010.5/16473, 2018) now lists the condominium juristic person as owner, former owner Copacabana Jomtien Co., Ltd., i.e. completed and registered; REm reports it as 59 floors and 1,644 units",
     "returns": "No guaranteed return language"
    },
-   "status": "active",
+   "claims": [
+    {
+     "claim": "EIA approved for the Jomtien 2nd Road tower by Copacabana Coral Reef Co., Ltd.",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=9651"
+    },
+    {
+     "claim": "Developer company Copacabana Coral Reef Co., Ltd. registered and active",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=1203"
+    },
+    {
+     "claim": "Group's first project Copacabana Beach Jomtien completed",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=8526"
+    },
+    {
+     "claim": "Building permit received (sales booklet Jan 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://siamglow.com/pattaya-project/copacabana-coral-reef/"
+    },
+    {
+     "claim": "Structure topped out at level 56 (Sep 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://copacabanagroup.com/en/category/news/"
+    },
+    {
+     "claim": "Completion 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://copacabanagroup.com/en/projects/copacabana-coralreef/"
+    },
+    {
+     "claim": "1,972 units",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://remthailand.asia/copacabana-group-launch-of-new-luxury-condominium-copacabana-coral-reef-jomtien-valued-at-over-thb-10-billion/"
+    },
+    {
+     "claim": "Over 700 units pre-sold (mid-2025)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://remthailand.asia/copacabana-group-launch-of-new-luxury-condominium-copacabana-coral-reef-jomtien-valued-at-over-thb-10-billion/"
+    },
+    {
+     "claim": "Freehold tenure",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://copacabanacoralreef.com/"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://copacabanacoralreef.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2018.0,
+    "developer_hq": "385/16 Moo 12, Jomtien 2nd Road, Nong Prue, Bang Lamung, Chonburi, Thailand",
+    "developer_company": "Copacabana Coral Reef Co., Ltd., 0205562035454 (registered 23 Sep 2019); agent cites Copacabana Coral Reef Jomtien Co., Ltd., capital THB 112M",
+    "developer_projects_delivered": 1.0,
+    "developer_units_delivered": 1644.0,
+    "listed_or_audited": null,
+    "construction_start": "2023-10",
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "1BR with pool",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": 32.0,
+    "size_max_m2": 175.0,
+    "price_min": 3600000.0,
+    "price_max": null,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold within the foreign quota",
+    "rental_programme": null,
+    "service_charge": "Common fee THB 50/m2 (agent quoting developer)",
+    "brand": null,
+    "amenities": [
+     "650 m2 wave pool",
+     "51st-floor cantilever lap pool",
+     "2,000 m2 beach club",
+     "gym",
+     "onsen and sauna",
+     "running track",
+     "co-working",
+     "shuttle bus"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "ONEP (EIA approval); Nong Prue municipality (building permit)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Group's first Jomtien tower is completed and registered per the ONEP register",
+    "Full floor-by-floor and unit plans published",
+    "Dated progress updates and topping out reported by the developer"
+   ],
    "flags": [],
    "sources": [
-    "https://copacabanacoralreef.com/"
-   ],
-   "disclosure": {
-    "permit": false,
-    "escrow": false,
-    "progress": false,
-    "plans": true,
-    "record": false,
-    "no_guaranteed_returns": true,
-    "score": 2,
-    "all_six": false
-   }
+    "https://copacabanacoralreef.com/",
+    "https://copacabanagroup.com/en/",
+    "https://copacabanagroup.com/en/category/news/",
+    "https://copacabanagroup.com/en/projects/copacabana-coralreef/",
+    "https://eia.onep.go.th/eia/detail?id=8526",
+    "https://eia.onep.go.th/eia/detail?id=9651",
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=1203",
+    "https://remthailand.asia/copacabana-group-launch-of-new-luxury-condominium-copacabana-coral-reef-jomtien-valued-at-over-thb-10-billion/",
+    "https://siamglow.com/pattaya-project/copacabana-coral-reef/",
+    "https://www.pemaproperty.com/en/our-projects/copacabana-coral-reef/"
+   ]
   },
   {
    "slug": "vibe-town-karon",
@@ -14180,95 +14562,402 @@
    "slug": "vaya-vaya-la-cruz-de-huanacaxtle",
    "name": "Vaya Vaya",
    "developer": null,
-   "area": "La Cruz de Huanacaxtle, Riviera Nayarit",
+   "area": "La Cruz de Huanacaxtle, Riviera Nayarit (Albatros 27)",
    "country": "Mexico",
    "market": "Puerto Vallarta",
-   "url": "https://mexhome.com/property/44371/",
-   "docs_url": null,
-   "permit_number": null,
+   "stage": "under construction",
+   "status": "active",
+   "url": "https://vaya-vaya.com/en",
+   "docs_url": "https://vaya-vaya.com/en/faq-img",
    "docs_listed": [
-    "unit floor area and specs",
-    "estimated delivery date",
-    "short-term rental rules (condo regulations)"
+    "developer site with unit types S, M, L, penthouses and beach units",
+    "FAQ: prices USD 705,640 to 1.4M; construction from April 2025 over 24 months; delivery Q2 2027; fideicomiso explained for foreigners",
+    "broker inventory table (Num Inmobiliaria) with unit, m2, MXN/m2 and sold/available status",
+    "MLS 44371: est. delivery 30 July 2027, title escritura, 'Construction Manifest: No'",
+    "short-term rentals allowed under condo rules"
    ],
-   "note": "About 20 residences (2-4 bedrooms) near the La Cruz marina, listed as pre-construction with estimated delivery 30 July 2027.",
-   "added": "2026-10-30",
+   "note": "About 20 beachfront condos at Albatros 27, La Cruz de Huanacaxtle, now with its own site (vaya-vaya.com) giving prices from USD 705,640 to 1.4M, construction from April 2025 and delivery Q2 2027; agents describe it as under construction and a broker inventory shows about 9 of 20 units sold. No developer company is named, the MLS record marks 'Construction Manifest: No' (no building-permit filing noted), and no permit number, escrow, progress photos or track record are published. (checked 1 Nov 2026)",
    "seed": {
-    "price": 1328397,
+    "price": 705640,
     "currency": "USD",
-    "title": "other",
+    "title": "fideicomiso for foreigners (developer FAQ); MLS title 'Escritura'",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q3 2027",
+    "yield_pct": null,
+    "completion": "2027-Q2",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": 20,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 20,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit number; MLS 44371 lists 'Construction Manifest: No'",
+    "escrow": "Developer FAQ explains the bank fideicomiso as the ownership vehicle for foreigners; no escrow or deposit protection stated",
+    "progress": "Developer FAQ says construction begins April 2025 with a 24-month build; agents say 'currently under construction'; no dated photos or % published",
+    "plans": "Unit types and m2 listed; no floor plan drawings found on the pages opened",
+    "record": "Developer FAQ says it is 'backed by seasoned real estate partners' and will share credentials on request; no company or past projects named",
+    "returns": "Short-term rentals permitted; no return figures or guarantees"
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "Listing does not name the developer and shows no construction permit, payment plan or escrow details",
+     "claim": "Construction began April 2025, 24-month build, delivery Q2 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vaya-vaya.com/en/faq-img"
+    },
+    {
+     "claim": "Estimated delivery 30 July 2027 (MLS)",
+     "status": "unverified",
+     "by": "none",
      "source": "https://mexhome.com/property/44371/"
+    },
+    {
+     "claim": "Building permit filed (MLS field 'Construction Manifest: No')",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://mexhome.com/property/44371/"
+    },
+    {
+     "claim": "Prices USD 705,640 to 1.4M (developer) vs from USD 840,389 (MexHome, Condos Vallarta)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://mexhome.com/dev/vaya-vaya/"
+    },
+    {
+     "claim": "Unit 403: 195 m2 at MXN 22,865,700 (USD 1,328,397 on MLS, USD 1,280,017 at Riviera Partners)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://numinmobiliaria.com/vayavaya.html"
+    },
+    {
+     "claim": "PH2 is 118 m2 (broker inventory) vs 238 m2 (Riviera Partners listing)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rivierapartnersrealty.com/property/vaya-vaya-ph2/"
+    },
+    {
+     "claim": "About 20 residences (MLS, developer) vs 11 units (Condos Vallarta)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.condosvallarta.com/developments/vaya-vaya-riviera-nayarit"
+    },
+    {
+     "claim": "About 9 of 20 units sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://numinmobiliaria.com/vayavaya.html"
+    },
+    {
+     "claim": "Foreigners buy through a bank fideicomiso",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vaya-vaya.com/en/faq-img"
+    },
+    {
+     "claim": "Backed by experienced real estate partners",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vaya-vaya.com/en/faq-img"
+    },
+    {
+     "claim": "Short-term rentals permitted under condo rules",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mexhome.com/property/44371/"
+    },
+    {
+     "claim": "Developer has a PROFECO-registered sales contract",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rpca.profeco.gob.mx/"
     }
    ],
+   "facts": {
+    "developer_company": null,
+    "construction_start": "2025-04",
+    "handover_promised": "2027-Q2",
+    "unit_types": [
+     "2BR",
+     "3BR",
+     "4BR",
+     "penthouse",
+     "beach unit"
+    ],
+    "size_min_m2": 118.0,
+    "size_max_m2": 252.0,
+    "price_min": 705640.0,
+    "price_max": 1621326.0,
+    "currency": "USD",
+    "foreign_ownership": "Bank fideicomiso (developer FAQ)",
+    "rental_programme": "None; short-term rentals allowed under condo rules",
+    "amenities": [
+     "two pools",
+     "beach club",
+     "deli cafe",
+     "rooftop terraces",
+     "lobby",
+     "car-lift parking",
+     "24/7 security",
+     "solar panels"
+    ],
+    "permit_authority": "Municipio de Bahía de Banderas",
+    "brochure_url": null,
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "original_handover": null,
+    "delay_months": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "service_charge": null,
+    "brand": null,
+    "lat": null,
+    "lng": null
+   },
    "positives": [
-    "Estimated delivery date published",
-    "Construction specifications (reinforced concrete, hurricane-resistant glazing) described"
+    "Developer FAQ with price range, build timeline and fideicomiso explanation",
+    "Broker inventory shows unit-level prices and sold status",
+    "Delivery date stated"
    ],
+   "flags": [],
    "sources": [
-    "https://mexhome.com/property/44371/"
-   ]
+    "https://mexhome.com/dev/vaya-vaya/",
+    "https://mexhome.com/property/44371/",
+    "https://numinmobiliaria.com/vayavaya.html",
+    "https://rivierapartnersrealty.com/property/vaya-vaya-ph2/",
+    "https://rpca.profeco.gob.mx/",
+    "https://vaya-vaya.com/en",
+    "https://vaya-vaya.com/en/faq-img",
+    "https://www.condosvallarta.com/developments/vaya-vaya-riviera-nayarit",
+    "https://www.vallartalistings.com/properties/vaya-vaya"
+   ],
+   "permit_number": null,
+   "added": "2026-10-30",
+   "verified_score": 0
   },
   {
    "slug": "kayak-living-nuevo-vallarta",
    "name": "Kayak Living",
    "developer": null,
-   "area": "Las Jarretaderas, Nuevo Vallarta (Riviera Nayarit)",
+   "area": "Las Jarretaderas, Nuevo Vallarta (Av. México 109)",
    "country": "Mexico",
    "market": "Puerto Vallarta",
+   "stage": "off-plan",
+   "status": "active",
    "url": "https://mexhome.com/dev/kayak-living-riviera-nayarit/",
-   "docs_url": "https://mexhome.com/blog/top-new-condo-developments-in-puerto-vallarta-and-the-riviera-nayarit/",
-   "permit_number": null,
+   "docs_url": "https://tropicasa.com/kayakliving/",
    "docs_listed": [
-    "address",
-    "unit sizes"
+    "two towers of 1 and 2-bedroom units, 80 to 118 m2",
+    "prices from MXN 3,833,200 (Tropicasa, Fraccionamientos Inmobiliarios 2023)",
+    "agent listings MXN 4,491,875 (101.22 m2, unit U403) and MXN 4,788,185 (108.39 m2)",
+    "agent copy: 34 apartments on 5 levels, 6 prototypes, delivery August 2024, 'estimated appreciation 20% to 26%'",
+    "payment option 80% down / 20% on delivery with 10% discount",
+    "address Av. México 109, Las Jarretaderas"
    ],
-   "note": "Two towers of one- and two-bedroom units (80-110 m2) tagged pre-construction; portal page gives no price, developer or delivery date.",
-   "added": "2026-10-30",
+   "note": "Two-tower condo project of 1 and 2-bedroom units (80-118 m2) at Av. México 109, Las Jarretaderas, from MXN 3,833,200; agent listings set delivery for August 2024 and claim 20-26% appreciation and a 'guaranteed safe and profitable investment', yet MexHome still tags it pre-construction in Oct 2026. No developer is named anywhere, no construction evidence, licence, escrow or plans were found, and current status is unclear. (checked 1 Nov 2026)",
    "seed": {
-    "price": null,
-    "currency": "USD",
+    "price": 3833200,
+    "currency": "MXN",
     "title": null,
     "lease_base": null,
     "extension": null,
-    "guaranteed_language": false,
-    "completion": null,
+    "guaranteed_language": true,
+    "yield_pct": null,
+    "completion": "2024-Q3",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 34,
+    "payment_plan": "Agent: 80% down and 20% on delivery with 10% discount",
+    "price_per_m2": 44376,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit number in any listing",
+    "escrow": "No escrow or fideicomiso stated",
+    "progress": "No progress published; 2023 listing says 'proyecto en desarrollo'; promised August 2024 delivery has passed and MexHome still labels it pre-construction",
+    "plans": "Only sizes and prototypes described; no floor plans visible",
+    "record": "No developer named on MexHome, Tropicasa or agent listings",
+    "returns": "Agent listings (PRYA, KW Grand) state an 'estimated appreciation of 20% to 26%' and say the development 'guarantees a safe and profitable investment'; MexHome says it 'generates a good return'"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "Portal page names no developer, delivery date, price, permit or escrow; marketing says it 'generates a good return on your investment' without figures",
+     "claim": "Delivery scheduled August 2024",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://prya.easybroker.com/property/preventa-de-departamento-en-nuevo-vallarta-las-jarretaderas-departamento"
+    },
+    {
+     "claim": "Still pre-construction (MexHome, Oct 2026)",
+     "status": "unverified",
+     "by": "none",
      "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+    },
+    {
+     "claim": "34 apartments on 5 levels, 6 prototypes",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.pincali.com/en/home/preventa-de-departamento-en-nuevo-vallarta-47af9007-cfa6-4e6b-adb9-e54361177495"
+    },
+    {
+     "claim": "Two towers of units from 80 to 110 m2 (MexHome) vs 80 to 118 m2 (2023 listing)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.fraccionamientosinmobiliarios.com.mx/casas/kayak-living-2/"
+    },
+    {
+     "claim": "Prices from MXN 3,833,200",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tropicasa.com/kayakliving/"
+    },
+    {
+     "claim": "Estimated appreciation of 20% to 26% and a 'guaranteed' safe investment",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.pincali.com/en/home/preventa-de-departamento-en-nuevo-vallarta-47af9007-cfa6-4e6b-adb9-e54361177495"
+    },
+    {
+     "claim": "Agent copy refers to 'Espacio Mérida' amenities, a different project's text",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://neojaus.com/propiedades/preventa-de-departamento-en-nuevo-vallarta-nayarit-jalisco-3520758959"
+    },
+    {
+     "claim": "Developer identity published",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+    },
+    {
+     "claim": "Building licence issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+    },
+    {
+     "claim": "Developer has a PROFECO-registered contract",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rpca.profeco.gob.mx/"
+    },
+    {
+     "claim": "Short-term rental management option available",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://prya.easybroker.com/property/preventa-de-departamento-en-nuevo-vallarta-las-jarretaderas-departamento"
     }
    ],
+   "facts": {
+    "developer_company": null,
+    "handover_promised": "2024-Q3",
+    "unit_types": [
+     "1BR",
+     "2BR"
+    ],
+    "size_min_m2": 80.0,
+    "size_max_m2": 118.0,
+    "price_min": 3833200.0,
+    "price_max": 4788185.0,
+    "currency": "MXN",
+    "payment_plan": "80/20 with 10% discount (2023)",
+    "foreign_ownership": "Not stated; coastal restricted zone requires a bank fideicomiso for foreigners",
+    "rental_programme": "Optional short-term rental manager (agent claim)",
+    "amenities": [
+     "rooftop pool",
+     "jacuzzi",
+     "sundeck",
+     "BBQ area",
+     "elevator",
+     "security",
+     "parking"
+    ],
+    "permit_authority": "Municipio de Bahía de Banderas",
+    "brochure_url": null,
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "original_handover": null,
+    "delay_months": null,
+    "deposit_pct": null,
+    "service_charge": null,
+    "brand": null,
+    "lat": null,
+    "lng": null
+   },
    "positives": [
-    "Street address published (Av Mexico 109, Las Jarretaderas)"
+    "Street address and unit sizes published"
    ],
+   "flags": [],
    "sources": [
-    "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
-   ]
+    "https://mexhome.com/dev/kayak-living-riviera-nayarit/",
+    "https://neojaus.com/propiedades/preventa-de-departamento-en-nuevo-vallarta-nayarit-jalisco-3520758959",
+    "https://prya.easybroker.com/property/preventa-de-departamento-en-nuevo-vallarta-las-jarretaderas-departamento",
+    "https://rpca.profeco.gob.mx/",
+    "https://tropicasa.com/kayakliving/",
+    "https://www.fraccionamientosinmobiliarios.com.mx/casas/kayak-living-2/",
+    "https://www.pincali.com/en/home/preventa-de-departamento-en-nuevo-vallarta-47af9007-cfa6-4e6b-adb9-e54361177495"
+   ],
+   "permit_number": null,
+   "added": "2026-10-30",
+   "verified_score": 0
   },
   {
    "slug": "living-club-temozon-norte-calle-52",
@@ -16321,225 +17010,978 @@
    "slug": "porto-algarve-beach-studios",
    "name": "Porto Algarve Beach Studios",
    "developer": "SNB",
-   "area": "Porto de Galinhas, Ipojuca, Pernambuco",
+   "status": "active",
+   "stage": "under construction",
+   "area": "Porto de Galinhas (beachfront), Ipojuca, Pernambuco",
    "country": "Brazil",
-   "market": "Brazil",
+   "market": "Porto de Galinhas",
    "url": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios",
-   "docs_url": null,
+   "docs_url": "https://artemiamedeiros.com.br/porto-de-galinhas",
    "permit_number": null,
    "docs_listed": [
-    "floor plans (22/27 m2 studios)",
-    "delivery forecast"
+    "SNB price table of 19 Aug 2026 (via agent): studio 21.85 m2 BRL 525,000; studio with balcony 27.85 m2 BRL 535,000",
+    "payment flow: signal, 30 and 60 days, 4 half-yearly, 22 monthly, 50% on keys",
+    "launch Jan 2025; delivery Dec 2028 (Apto) vs 30 May 2028 (agent)",
+    "agent shows works '60% concluded'",
+    "studios 19 to 66 m2 incl. duplex (agent), 35 parking spaces"
    ],
-   "note": "Studio project listed as under construction with forecast delivery December 2028.",
+   "note": "Beachfront studio building by SNB Engenharia in Porto de Galinhas, launched January 2025 and aimed at holiday-rental investors; the builder's August 2026 price table starts at BRL 525,000 for 21.85 m2 with 50% due on keys, and one agent shows works 60% complete with delivery in May 2028 (portal says December 2028). No registro de incorporacao number or patrimonio de afetacao is published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": 520000,
+    "price": 525000,
     "currency": "BRL",
-    "title": null,
+    "title": "freehold (condominium unit after incorporation registration)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Dec 2028",
+    "yield_pct": null,
+    "completion": "2028-Q2",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
-    "progress_pct": null,
-    "units": null,
+    "progress_pct": 60,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": null,
+    "payment_plan": "Signal, 30 and 60 days, 4 half-yearly and 22 monthly instalments, 50% on keys (INCC-indexed during works)",
+    "price_per_m2": 24027,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No registro de incorporacao (RI) or alvara number on the portal or agent pages",
+    "escrow": "No patrimonio de afetacao or escrow mentioned",
+    "progress": "Agent page (Dimaria) shows 'Geral 60% concluidos'; builder posts construction updates for other projects on LinkedIn",
+    "plans": "Portal and agents publish studio layouts of 21.85 to 27.85 m2",
+    "record": "SNB lists projects in Boa Viagem, Pina, Porto de Galinhas and Tamandare (Porto Riviera, Porto Madero, Tours du Tamandare) but none is named as delivered",
+    "returns": "Agents speak of 'alto potencial de rentabilidade' with holiday rentals; no figure or guarantee"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Portal page shows no registro de incorporação, payment plan or unit count",
+     "claim": "Builder is SNB Engenharia e Investimentos (Recife)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dunnaimob.com.br/site/imoveis/edf-porto-algarve-1785264655027"
+    },
+    {
+     "claim": "Launched January 2025",
+     "status": "unverified",
+     "by": "none",
      "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios"
+    },
+    {
+     "claim": "Works 60% complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio"
+    },
+    {
+     "claim": "Delivery 30 May 2028 (agent) vs December 2028 (portal)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio"
+    },
+    {
+     "claim": "Price from BRL 505,000 vs 520,000 vs 525,000 vs 545,000 across agents",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://artemiamedeiros.com.br/porto-de-galinhas"
+    },
+    {
+     "claim": "Address: Rua Cedro (portal) vs Rua dos Baobas (agent)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://dunnaimob.com.br/site/imoveis/edf-porto-algarve-1785264655027"
+    },
+    {
+     "claim": "Parking: 'sem vagas' (portal) vs 35 spaces (agent)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio"
+    },
+    {
+     "claim": "Registro de incorporacao filed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios"
+    },
+    {
+     "claim": "Buyer payments ring-fenced (patrimonio de afetacao)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://artemiamedeiros.com.br/porto-de-galinhas"
+    },
+    {
+     "claim": "SNB has delivered previous projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://linkedin.com/company/snbengenharia"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Recife, Brazil",
+    "developer_company": "SNB Engenharia e Investimentos (no CNPJ published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "studio with balcony",
+     "duplex"
+    ],
+    "size_min_m2": 19.0,
+    "size_max_m2": 66.0,
+    "price_min": 505000.0,
+    "price_max": 545000.0,
+    "currency": "BRL",
+    "deposit_pct": null,
+    "payment_plan": "Instalments during works, 50% on keys",
+    "foreign_ownership": "Foreigners may buy urban property in Brazil directly with a CPF",
+    "rental_programme": "Holiday-rental use promoted; no programme or figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "raised deck with sea-facing pool",
+     "direct beach access",
+     "gym",
+     "games room",
+     "gourmet area",
+     "laundry",
+     "reception",
+     "bike rack"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Prefeitura de Ipojuca (alvara) and Cartorio de Registro de Imoveis de Ipojuca (registro de incorporacao, Lei 4.591/64)",
+    "brochure_url": null
+   },
    "positives": [
-    "Builder named",
-    "Unit floor areas published"
+    "Half the price paid only on keys",
+    "Builder price table dated and published via agent",
+    "Progress figure published (60%, agent)",
+    "No guaranteed-return language"
    ],
+   "flags": [],
    "sources": [
-    "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios"
+    "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/porto-algarve-beach-studios",
+    "https://apto.vc/empresas/snb",
+    "https://artemiamedeiros.com.br/porto-de-galinhas",
+    "https://dimariaimoveis.com.br/empreendimento/38448/porto-algarve-beach-studio",
+    "https://dunnaimob.com.br/site/imoveis/edf-porto-algarve-1785264655027",
+    "https://linkedin.com/company/snbengenharia",
+    "https://meuimovel.recife.br/porto-algarve-studios-porto-de-galinhas-pe/",
+    "https://www.flatnapraia.com/pt/condominios-porto-de-galinhas"
    ]
   },
   {
    "slug": "koa-porto-de-galinhas",
    "name": "Koa",
    "developer": "Perfecta Engenharia",
-   "area": "Porto de Galinhas, Ipojuca, Pernambuco",
+   "status": "sold out",
+   "stage": "under construction",
+   "area": "Rua dos Baobas 1542, Porto de Galinhas, Ipojuca, Pernambuco",
    "country": "Brazil",
-   "market": "Brazil",
+   "market": "Porto de Galinhas",
    "url": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/koa",
-   "docs_url": null,
+   "docs_url": "https://perfectaeng.com.br/koa-beach/",
    "permit_number": null,
    "docs_listed": [
-    "floor plans (20/26 m2 studios)",
-    "launch and delivery timeline"
+    "developer progress schedule: design and licensing 100%, foundations and structure 100%, masonry 72%",
+    "delivery February 2028 (developer)",
+    "price table (agent): 18.5 m2 from BRL 299,000 to 2BR duplex from BRL 579,000",
+    "78 units on ground plus 3 floors with rooftop (agent)",
+    "several agents mark the project '100% vendido'"
    ],
-   "note": "Beachfront studio project launched December 2024, listed as under construction with delivery around December 2028.",
+   "note": "78-unit studio-to-duplex building about 20-50 m from the beach in Porto de Galinhas by Perfecta Engenharia, launched December 2024 and now reported 100% sold by agents; Perfecta's own page shows licensing and structure 100% done and masonry at 72%, with delivery in February 2028 (a portal says December 2028). No registro de incorporacao number is published (one agent shows 'XXXX'). (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 299000,
     "currency": "BRL",
-    "title": null,
+    "title": "freehold (condominium unit after incorporation registration)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Dec 2028",
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2028-Q1",
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "Agents list Perfecta's Almare Exclusive (Tamandare) as ready; Perfecta has other projects under way (Marano Beira Mar, Duna Beira-Mar, Terrazza)",
+    "units": 78,
+    "payment_plan": null,
+    "price_per_m2": 16162,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Developer page marks 'Projetos e Licenciamento 100%' but publishes no alvara or registro de incorporacao number; an agent shows 'Registro / Incorporacao: XXXX'",
+    "escrow": "No patrimonio de afetacao or escrow mentioned",
+    "progress": "Developer page shows stage percentages (structure 100%, masonry 72%), undated",
+    "plans": "Agents publish plans and a typology table from 18.5 to 51.1 m2",
+    "record": "Agent lists Almare Exclusive by Perfecta in Tamandare as 'pronto' (ready)",
+    "returns": "Agents cite 'alta rentabilidade' and hotel occupancy statistics; no yield figure or guarantee"
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Price on request; portal page shows no registro de incorporação or payment plan",
-     "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/koa"
+     "claim": "Licensing complete (100%)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://perfectaeng.com.br/koa-beach/"
+    },
+    {
+     "claim": "Foundations and structure 100%, masonry 72%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://perfectaeng.com.br/koa-beach/"
+    },
+    {
+     "claim": "Delivery February 2028 (developer) vs December 2028 (portal) vs end 2027 (agent)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://a3imobiliaria.com.br/empreendimento/31844/koa-beach"
+    },
+    {
+     "claim": "Project 100% sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hebersonalves.com.br/koa-beach"
+    },
+    {
+     "claim": "78 units over ground plus three floors and rooftop",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://a3imobiliaria.com.br/empreendimento/31844/koa-beach"
+    },
+    {
+     "claim": "Distance to sea: 20 m vs 30 m vs 50 m across agents",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://costaimobi.com/empreendimentos/breve-lancamento-na-praia-de-porto-de-galinhas/"
+    },
+    {
+     "claim": "Prices from BRL 249,000 vs 299,000 vs 389,000",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.expoimovel.com/servlet/br.com.expoimovel.servlet.GerenciadorDetalhesAnuncioImovelServlet?codigoAnuncioImovel=11933_TIPO_22M_x73142497393423631749652186452&operacao=imprimirDetalhes"
+    },
+    {
+     "claim": "Registro de incorporacao number published",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.hebersonalves.com.br/koa-beach"
+    },
+    {
+     "claim": "Perfecta has delivered Almare Exclusive",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costaimobi.com/empreendimentos/breve-lancamento-na-praia-de-porto-de-galinhas/"
+    },
+    {
+     "claim": "Buyer payments ring-fenced (patrimonio de afetacao)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://perfectaeng.com.br/koa-beach/"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Pernambuco, Brazil",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q1",
+    "original_handover": "2027-Q4 (agent)",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR duplex"
+    ],
+    "size_min_m2": 18.5,
+    "size_max_m2": 51.1,
+    "price_min": 299000.0,
+    "price_max": 579000.0,
+    "currency": "BRL",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners may buy urban property in Brazil directly with a CPF",
+    "rental_programme": "Holiday rental promoted; no programme or figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "pool with deck",
+     "rooftop gourmet areas",
+     "gym",
+     "sauna",
+     "kids playroom",
+     "games room",
+     "self market",
+     "pet place"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Prefeitura de Ipojuca (alvara) and Cartorio de Registro de Imoveis de Ipojuca (registro de incorporacao)",
+    "brochure_url": null
+   },
    "positives": [
-    "Builder named",
-    "Launch date and delivery forecast published"
+    "Developer publishes stage-by-stage construction percentages",
+    "Structure reported complete",
+    "Full typology and price table circulated",
+    "No guaranteed-return language"
    ],
+   "flags": [],
    "sources": [
-    "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/koa"
+    "https://a3imobiliaria.com.br/empreendimento/31844/koa-beach",
+    "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/koa",
+    "https://costaimobi.com/empreendimentos/breve-lancamento-na-praia-de-porto-de-galinhas/",
+    "https://perfectaeng.com.br/koa-beach/",
+    "https://perfectaeng.com.br/koa/",
+    "https://www.expoimovel.com/servlet/br.com.expoimovel.servlet.GerenciadorDetalhesAnuncioImovelServlet?codigoAnuncioImovel=11933_TIPO_22M_x73142497393423631749652186452&operacao=imprimirDetalhes",
+    "https://www.flatnapraia.com/pt/condominios-porto-de-galinhas",
+    "https://www.hebersonalves.com.br/koa-beach",
+    "https://www.thayanemoura.com.br/koabeach"
    ]
   },
   {
    "slug": "wave-horizon-porto-de-galinhas",
    "name": "Wave Horizon",
    "developer": "Jairo Rocha",
-   "area": "Merepe, Porto de Galinhas, Ipojuca, Pernambuco",
+   "status": "active",
+   "stage": "off-plan",
+   "area": "Rua dos Navegantes, Merepe, Porto de Galinhas, Ipojuca, Pernambuco",
    "country": "Brazil",
-   "market": "Brazil",
+   "market": "Porto de Galinhas",
    "url": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon",
-   "docs_url": null,
+   "docs_url": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon",
    "permit_number": null,
    "docs_listed": [
-    "floor plans (15/22 m2 studios)",
-    "delivery forecast"
+    "developer page: 48 flats of 15 to 22.49 m2 over five floors, 100 m from the sea",
+    "rooftop pool, gourmet kitchen, solarium, basement rotating parking",
+    "launch Jan 2026, delivery approx. Dec 2031 (portal)",
+    "price on request"
    ],
-   "note": "Studio project launched January 2026 with forecast delivery December 2031.",
+   "note": "48 micro-flats (15 to 22.49 m2) over five floors about 100 m from the sea in Porto de Galinhas, launched January 2026 by Recife developer Jairo Rocha Incorporadora with delivery not until about December 2031; price is on request and no incorporation registration, construction start or deposit protection is published. The developer claims 40 years and 1,000+ units delivered without naming them. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": null,
     "currency": "BRL",
-    "title": null,
+    "title": "freehold (condominium unit after incorporation registration)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Dec 2031",
+    "yield_pct": null,
+    "completion": "2031-Q4",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "Developer LinkedIn claims 40 years and 1,000+ units delivered in Alagoas, Pernambuco and Bahia; no delivered project named on its site",
+    "units": 48,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No registro de incorporacao or alvara mentioned",
+    "escrow": "No patrimonio de afetacao or escrow mentioned",
+    "progress": "Listed as 'Lancamento' (launch); no construction start or updates",
+    "plans": "Portal lists the 15 and 22 m2 plans; developer page gives unit sizes",
+    "record": "Claims 40 years and 1,000+ units delivered (LinkedIn); site lists projects (Wiki Beach, Wave Beach Serrambi, Wave Maragogi, Edificio Manati) without delivery status",
+    "returns": "Developer says 'para viver ou investir' and LinkedIn mentions 'rentabilidade'; no figure or guarantee"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Price on request; no registro de incorporação, unit count or payment plan shown; delivery over five years from launch",
+     "claim": "48 flats of 15 to 22.49 m2 on five floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+    },
+    {
+     "claim": "100 m from the sea",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+    },
+    {
+     "claim": "Launched January 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
+    },
+    {
+     "claim": "Delivery approx. December 2031 (about six years after launch)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
+    },
+    {
+     "claim": "Developer has 40 years and 1,000+ units delivered",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://linkedin.com/company/jairorochaincorporadora"
+    },
+    {
+     "claim": "Developer operating since 1986 (affiliated company)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://linkedin.com/company/jairo-rocha-e-maxima-empreendimentos"
+    },
+    {
+     "claim": "Registro de incorporacao filed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+    },
+    {
+     "claim": "Buyer payments ring-fenced (patrimonio de afetacao)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon"
+    },
+    {
+     "claim": "Basement rotating parking (developer) vs 'sem vagas' (portal)",
+     "status": "unverified",
+     "by": "none",
      "source": "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
     }
    ],
+   "facts": {
+    "developer_founded": 1986.0,
+    "developer_hq": "Boa Viagem, Recife, Brazil",
+    "developer_company": "Jairo Rocha Incorporadora (no CNPJ published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": 1000.0,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2031-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio flat"
+    ],
+    "size_min_m2": 15.0,
+    "size_max_m2": 22.49,
+    "price_min": null,
+    "price_max": null,
+    "currency": "BRL",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners may buy urban property in Brazil directly with a CPF",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "rooftop pool with deck",
+     "gourmet kitchen",
+     "solarium",
+     "mini market",
+     "laundry",
+     "reception",
+     "elevator",
+     "basement parking"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Prefeitura de Ipojuca (alvara) and Cartorio de Registro de Imoveis de Ipojuca (registro de incorporacao)",
+    "brochure_url": null
+   },
    "positives": [
-    "Builder named",
-    "Delivery forecast published"
+    "Developer page gives exact unit count and sizes",
+    "No guaranteed-return language"
    ],
+   "flags": [],
    "sources": [
-    "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon"
+    "https://apto.vc/br/pe/ipojuca/porto-de-galinhas/wave-horizon",
+    "https://apto.vc/empresas/jairo-rocha",
+    "https://jairorochaincorporadora.com.br/",
+    "https://jairorochaincorporadora.com.br/empreendimentos/wave-horizon",
+    "https://linkedin.com/company/jairo-rocha-e-maxima-empreendimentos",
+    "https://linkedin.com/company/jairorochaincorporadora"
    ]
   },
   {
    "slug": "edition-residences-miami-edgewater",
    "name": "Edition Residences Miami",
    "developer": "Two Roads Development",
+   "status": "active",
+   "stage": "off-plan",
    "area": "Edgewater (2121 N Bayshore Dr), Miami",
    "country": "USA",
    "market": "Miami",
    "url": "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/",
-   "docs_url": null,
-   "permit_number": null,
-   "docs_listed": [],
-   "note": "Planned 55-storey, 185-unit first tower on the former Biscayne 21 site; contracts set a summer 2028 completion target and three buyers sued in April 2026 to recover deposits.",
+   "docs_url": "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/",
+   "permit_number": "2026067492 (Miami-Dade total demolition permit for existing Biscayne 21 building, issued 26 Aug 2026; not a building permit for the tower)",
+   "docs_listed": [
+    "developer project page: 55 storeys, 649 ft, 185 residences plus three tri-level penthouses, 1,952 to 3,864 sq ft",
+    "architect Arquitectonica, interiors Studio Munge, EDITION brand",
+    "settlement with Biscayne 21 holdout owners funded 31 Aug 2026 (about USD 50m per press)",
+    "demolition permit 2026067492 issued 26 Aug 2026 (county data via press)",
+    "sales launched Sep 2022 from USD 1.7m; buyer contracts targeted ~June 2028 completion",
+    "project tracker: construction start 30 Sep 2026, completion Sep or Dec 2029, contractor Coastal Construction"
+   ],
+   "note": "First 185-unit, 55-storey EDITION-branded tower on the former Biscayne 21 site, sold since 2022 from USD 1.7m with contracts aimed at summer 2028; holdout litigation stalled it until Two Roads funded a roughly USD 50m settlement on 31 August 2026, and the county issued a total-demolition permit on 26 August 2026. Three buyers sued in April 2026 to recover about USD 2.5m in deposits, arguing the 2028 date is impossible; trackers now show completion in late 2029. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": 1700000,
     "currency": "USD",
-    "title": null,
+    "title": "freehold condominium (fee simple)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "summer 2028 (contract target)",
+    "yield_pct": null,
+    "completion": "2029-Q4",
     "permit_claim": false,
-    "permit_number": null,
+    "permit_number": "2026067492 (demolition only)",
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Elysee Miami, 57-storey, 95-residence Edgewater tower completed 2021 (county records via Roebling Index; Biscayne Neighborhoods Association); Biscayne Beach also by Two Roads",
     "units": 185,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Only a demolition permit number is public (2026067492, via Haute Residence citing Miami-Dade data); no building permit for the new tower found",
+    "escrow": "Florida law requires condo deposits to be held in escrow, but the developer publishes no escrow agent or terms; buyers are suing to recover deposits",
+    "progress": "Dated public milestones: settlement funded 31 Aug 2026, demolition permit 26 Aug 2026; construction not started",
+    "plans": "Unit size range and renders only; no floor plans seen in sources opened",
+    "record": "Elysee (788 NE 23rd St, 95 residences, built 2021) is listed as a Two Roads development by the Biscayne Neighborhoods Association and in county-record-based building data; The Real Deal calls Edition the firm's third Edgewater condo",
+    "returns": "Owner-occupier branded residences; no rental return claims"
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 3,
+   "claims": [
     {
-     "text": "Buyers sued (Apr 2026, Miami-Dade Circuit Court) to recover ~$2.5m in deposits, alleging the developer cannot substantially complete by ~June 2028; developer calls claims without merit",
+     "claim": "185 units, 55 storeys, 649 ft",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.groundbreak.city/miami/biscayne-21-redevelopment-approved-edgewater"
+    },
+    {
+     "claim": "Units completed by about June 2028 per buyer contracts",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://pro.groundbreak.city/miami/projects/2ad83638-ffb2-47bf-b5b3-a940de6abf34"
+    },
+    {
+     "claim": "First tower to be completed by end of 2026 (original 2022 plan)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+    },
+    {
+     "claim": "Settlement with Biscayne 21 holdouts funded 31 Aug 2026 (about USD 50m)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+    },
+    {
+     "claim": "Total demolition permit 2026067492 issued 26 Aug 2026, owner TRD Biscayne LLC",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/"
+    },
+    {
+     "claim": "Buyers' suit over deposits 'without merit' (developer)",
+     "status": "unverified",
+     "by": "independent",
      "source": "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/"
+    },
+    {
+     "claim": "Prices from USD 1.7m",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+    },
+    {
+     "claim": "Site acquisition financed with USD 105m Bank OZK senior loan and USD 45m mezzanine",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+    },
+    {
+     "claim": "Construction start 30 Sep 2026, contractor Coastal Construction",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://pro.groundbreak.city/miami/projects/2ad83638-ffb2-47bf-b5b3-a940de6abf34"
+    },
+    {
+     "claim": "Completion Sep 2029 vs Dec 2029 across tracker entries",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://pro.groundbreak.city/miami/projects/7d90d53d-4d3c-4d95-b542-ee351fc66e54"
+    },
+    {
+     "claim": "Building permit for the new tower issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/"
+    },
+    {
+     "claim": "Two Roads delivered Elysee (95 residences, built 2021)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.theroeblingteam.com/miami/buildings/elysee"
     }
    ],
-   "positives": [],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Miami and West Palm Beach, USA",
+    "developer_company": "Two Roads Development; owner entity TRD Biscayne LLC",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2026-09",
+    "handover_promised": "2029-Q4",
+    "original_handover": "2028-Q2 (buyer contracts)",
+    "delay_months": 18.0,
+    "unit_types": [
+     "1BR + den",
+     "2BR",
+     "3BR",
+     "4BR",
+     "tri-level penthouse"
+    ],
+    "size_min_m2": 181.0,
+    "size_max_m2": 359.0,
+    "price_min": 1700000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "EDITION (Marriott)",
+    "amenities": [
+     "two resort-style pools with cabanas",
+     "spa",
+     "fitness centre",
+     "club lounge and library",
+     "screening room",
+     "kids club",
+     "dog spa and park",
+     "bayfront promenade"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "City of Miami Building Department / Miami-Dade County",
+    "brochure_url": null
+   },
+   "positives": [
+    "Site legal dispute settled and demolition permitted (Aug-Sep 2026)",
+    "Developer, architect, contractor and owner entity all named",
+    "Heavy independent press coverage of every milestone"
+   ],
+   "flags": [
+    {
+     "text": "Three buyers sued in Miami-Dade Circuit Court (Apr 2026) to recover about USD 2.5m in deposits, alleging the developer cannot substantially complete by about June 2028; developer calls the claims without merit",
+     "source": "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/"
+    },
+    {
+     "text": "Holdout owners' litigation over condo termination delayed the project from 2023 to 2026; an appeals court ruled for the holdouts before a roughly USD 50m settlement in Aug 2026",
+     "source": "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/"
+    }
+   ],
    "sources": [
-    "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/"
+    "https://bnamiami.org/residential/",
+    "https://pro.groundbreak.city/miami/projects/2ad83638-ffb2-47bf-b5b3-a940de6abf34",
+    "https://pro.groundbreak.city/miami/projects/7d90d53d-4d3c-4d95-b542-ee351fc66e54",
+    "https://realestatetrail.com/news/two-roads-edition-miami-condo",
+    "https://therealdeal.com/miami/2026/05/14/edition-residences-miami-buyers-sues-two-roads/",
+    "https://therealdeal.com/miami/2026/09/03/timeline-of-two-roads-condo-buyout-fight-in-miami/",
+    "https://tworoadsre.com/press/miami-market-2/",
+    "https://tworoadsre.com/projects/elysee-miami/",
+    "https://www.bizjournals.com/southflorida/news/2026/09/01/edition-condo-miami-edgewater-clears-legal-hurdle.html",
+    "https://www.groundbreak.city/miami/biscayne-21-redevelopment-approved-edgewater",
+    "https://www.hauteresidence.com/news/edition-residences-miami-edgewater-two-roads-settles-with-biscayne-21-owners/",
+    "https://www.theroeblingteam.com/miami/buildings/elysee"
    ]
   },
   {
    "slug": "okan-tower-miami",
    "name": "Okan Tower",
    "developer": "Okan Group (builder Okan Construction LLC)",
-   "area": "Downtown Miami",
+   "status": "active",
+   "stage": "under construction",
+   "area": "555 North Miami Avenue, Downtown Miami",
    "country": "USA",
    "market": "Miami",
    "url": "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/",
-   "docs_url": null,
+   "docs_url": "https://floridayimby.com/2026/04/construction-reaches-50th-floor-on-okan-tower-at-555-north-miami-avenue-in-downtown-miami.html",
    "permit_number": null,
    "docs_listed": [
-    "master construction permit received",
-    "construction progress (floors)",
-    "hotel operator (Hilton)"
+    "50 of 72 floors and about 75% structurally complete (22 Apr 2026)",
+    "USD 200m C-PACE construction loan from Bayview PACE (Jan 2026); EB-5 programme",
+    "about 62% presold (Jan 2026); sales by Fortune Development Sales",
+    "316-key Hilton Miami Bayfront, 236 Hilton-managed condo-hotel units (voluntary rental programme), 163 Sky Residences, office",
+    "Hilton Residences from USD 685,000 (Mar 2025)",
+    "completion 2028 (Jan 2026 reports) vs 2026 in 2022 groundbreaking release"
    ],
-   "note": "70-storey mixed-use tower with 163 Sky Residences and 236 Hilton-managed condo-hotel units; at 30 floors in Aug 2025 with top-off expected 2026 and opening 2027.",
+   "note": "902-foot, 72-storey mixed-use tower by Turkey's Okan Group with a 316-key Hilton, 236 Hilton-managed condo-hotel units and 163 Sky Residences; the frame passed the 50th floor (about 75% of the structure) in April 2026, a USD 200m C-PACE loan closed in January 2026 and about 62% of units were presold. Completion has slipped from 2026 (2022 release) to 2028, the August 2026 top-off is unconfirmed, and a worker died on site on 1 June 2026. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 685000,
     "currency": "USD",
-    "title": null,
+    "title": "freehold condominium (fee simple); condo-hotel units in a voluntary Hilton rental programme",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2027",
+    "yield_pct": null,
+    "completion": "2028",
     "permit_claim": true,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow": null,
-    "progress_pct": null,
-    "units": 399,
+    "progress_pct": 75,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 399,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Master construction permit approval reported by South Florida Agent Magazine (Aug 2025) and Florida YIMBY (Oct 2025); no permit number published",
+    "escrow": "Florida law requires condo deposit escrow, but no escrow agent or terms are published",
+    "progress": "Independent press: 40th floor Jan 2026, about level 48 Mar 2026, 50th floor and 75% structure 22 Apr 2026",
+    "plans": "Developer unit matrix by floor and layouts on the sales site (as described by an agent page)",
+    "record": "Okan Group (chairman Bekir Okan) is a Turkish group; no delivered US project and no named delivered project found in sources opened",
+    "returns": "Hilton rental programme described as entirely voluntary with rates set by the hotel; no yield or guarantee"
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
+    {
+     "claim": "50 of 72 floors complete, about 75% structural completion (Apr 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://floridayimby.com/2026/04/construction-reaches-50th-floor-on-okan-tower-at-555-north-miami-avenue-in-downtown-miami.html"
+    },
+    {
+     "claim": "Top-off expected August 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://own.miami/downtown/news/okan-tower-status-october-2026"
+    },
+    {
+     "claim": "Completion 2026 (2022 release) vs 2027 vs 2028 (2026 reports)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+    },
+    {
+     "claim": "USD 200m C-PACE loan from Bayview PACE closed Jan 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+    },
+    {
+     "claim": "About 62% presold (Jan 2026)",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://own.miami/downtown/news/okan-tower-status-october-2026"
+    },
+    {
+     "claim": "Master construction permit approved (2025)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/"
+    },
+    {
+     "claim": "Storey count: 70 (2022 release) vs 72 (2026 reports)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+    },
+    {
+     "claim": "Office space 56,000 vs 60,000 vs 64,000 sq ft",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+    },
+    {
+     "claim": "County still lists folio 01-0106-030-1060 as vacant commercial land (2026 roll)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+    },
+    {
+     "claim": "Hilton rental programme participation voluntary",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://joshsteinrealtor.com/new-construction/okan-tower/"
+    },
+    {
+     "claim": "Fatal column collapse on 1 June 2026, OSHA investigating",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://southfloridaagentmagazine.com/2026/05/11/okan-tower-50-stories/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Istanbul, Turkey",
+    "developer_company": "Okan Group; builder Okan Construction LLC",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2022-06",
+    "handover_promised": "2028",
+    "original_handover": "2026 (2022 groundbreaking release)",
+    "delay_months": 24.0,
+    "unit_types": [
+     "condo-hotel unit",
+     "Sky Residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 685000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners can own Florida condominiums in fee simple",
+    "rental_programme": "Voluntary Hilton-managed rental programme for 236 condo-hotel units; no figures",
+    "service_charge": null,
+    "brand": "Hilton (hotel and condo-hotel management)",
+    "amenities": [
+     "80,000+ sq ft of amenities",
+     "Hilton hotel services",
+     "wellness facilities",
+     "429-space garage",
+     "Class A office",
+     "retail and dining at base"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "City of Miami Building Department",
+    "brochure_url": null
+   },
    "positives": [
-    "Master construction permit reported (Aug 2025)",
-    "Floor-by-floor progress reported"
+    "Structure about three-quarters complete with frequent independent progress reports",
+    "Construction financing in place (USD 200m C-PACE)",
+    "Hilton named as manager; rental programme stated as voluntary, no return promises"
+   ],
+   "flags": [
+    {
+     "text": "A worker was killed on 1 June 2026 when a structural column fell from the top floor; OSHA opened an investigation",
+     "source": "https://southfloridaagentmagazine.com/2026/05/11/okan-tower-50-stories/"
+    },
+    {
+     "text": "Completion date moved from 2026 (2022 groundbreaking release) to 2028 (2026 reports)",
+     "source": "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028"
+    }
    ],
    "sources": [
-    "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/"
+    "https://floridayimby.com/2026/04/construction-reaches-50th-floor-on-okan-tower-at-555-north-miami-avenue-in-downtown-miami.html",
+    "https://hotelpost.org/post/okan-tower-pours-50th-floor-downtown-miami",
+    "https://joshsteinrealtor.com/new-construction/okan-tower/",
+    "https://own.miami/downtown/news/okan-tower-status-october-2026",
+    "https://profilemiami.com/miamirealestate/2026/4/27/okan-tower-reaches-75-structural-completion-as-construction-passes-50th-floor-in-downtown-miami",
+    "https://southfloridaagentmagazine.com/2025/08/18/okan-tower-master-construction-permit/",
+    "https://southfloridaagentmagazine.com/2026/05/11/okan-tower-50-stories/",
+    "https://thedailycheckout.org/post/okan-tower-hilton-downtown-miami-2028",
+    "https://www.citybiz.co/article/835151/race-to-the-top-downtown-miamis-supertall-okan-tower-reaches-75-structural-completion/"
    ]
   },
   {
@@ -18179,106 +19621,439 @@
    "slug": "elounda-hills-crete",
    "name": "Elounda Hills",
    "developer": "Mirum Hellas",
-   "area": "Elounda, Crete",
+   "status": "active",
+   "stage": "off-plan",
+   "area": "Plaka / Schisma, Elounda, Municipality of Agios Nikolaos, Crete",
    "country": "Greece",
    "market": "Greece",
-   "url": "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success",
-   "docs_url": "https://greekcitytimes.com/2026/06/08/elounda-hills-e800-million-ultra-luxury-resort-development-moves-closer-to-construction/",
-   "permit_number": null,
+   "url": "https://eloundahills.gr/residences/",
+   "docs_url": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port",
+   "permit_number": "Strategic investment inter-ministerial decision 30/2016 (amended 33/2017 and 55/2020)",
    "docs_listed": [
-    "urban design study permit (environmental terms, archaeology)",
-    "phasing (4-5 phases; coastal zone 2027, rest of phase one 2028)",
-    "named hotel operator (1 Hotels)"
+    "strategic investment status: inter-ministerial decisions 30/2016, 33/2017, 55/2020 (Ministry of Development register)",
+    "Special Zoning Plan ratified by Presidential Decree (developer page)",
+    "urban design study permit with environmental terms secured 8 Nov 2024",
+    "Final Design Compliance File (A1) submitted (June 2026)",
+    "ECI contracts with AKTOR and Domiki Kritis (April 2026)",
+    "first main construction contract with Domiki Kritis: 2 Waterfront Villas and 24 Marina apartments, works from Oct 2026 to Dec 2027",
+    "residence clusters with bedroom counts and size ranges (Marina 155-270 m2, Waterfront Villas 550-900 m2)",
+    "operator 1 Hotels & Homes; Ralph Lauren Home interiors on Waterfront Villas"
    ],
-   "note": "Resort with branded residences and a 64-berth marina on 138 acres; as of Nov 2024 urban design studies were permitted and individual building permits were being sought. A June 2026 headline describes the project as 'moving closer to construction'.",
+   "note": "EUR 800m resort with about 130 branded residences in phase one, two 1 Hotels and a marina on Mirabello Bay by Mirum Hellas (investor Vitaliy Borisov). Strategic investment status is on the Ministry of Development register (decision 30/2016); the first residential construction contract was signed in Sept 2026 with works starting Oct 2026 and due Dec 2027, so homes are still essentially off-plan. No prices, floor plans or deposit protection are published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": null,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2027 (coastal zone); 2028 (rest of phase one)",
+    "yield_pct": null,
+    "completion": "2027-Q4",
     "permit_claim": true,
-    "permit_number": null,
+    "permit_number": "Strategic investment inter-ministerial decision 30/2016 (amended 33/2017 and 55/2020)",
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "Developer page says Mirum delivered 'the most expensive villa ever sold in Crete' and The Island Concept boutique hotel, and has invested over EUR 100m in the region",
+    "units": 130,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Ministry of Development strategic investments register lists ELOUNDA HILLS with implementation entity MIRUM HELLAS AE and inter-ministerial decisions 30/2016, 33/2017, 55/2020 (budget EUR 408.49m); individual building permit numbers are not published",
+    "escrow": "No escrow, bank guarantee or deposit protection published on the site or in press",
+    "progress": "Dated milestones in independent press: ECI contracts April 2026, A1 design file June 2026, first main construction contract Sept 2026 with works from Oct 2026; the site's construction-updates page shows no visible content",
+    "plans": "Residences page gives bedroom counts and size ranges per cluster but no floor plans; brochure is behind an email form",
+    "record": "Developer page names a record villa sale and The Island Concept boutique hotel in Crete; no unit counts; not independently verified",
+    "returns": "No guaranteed returns; buyer-benefits page notes Golden Visa homes may not be short-term let"
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
     {
-     "text": "As of Nov 2024, individual building permits were still being sought; permitting and land assembly (begun 2006) were described as the project's biggest challenges.",
+     "claim": "Project holds Greek strategic investment status (decision 30/2016, amended 2017 and 2020)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port"
+    },
+    {
+     "claim": "Implementation entity is MIRUM HELLAS AE",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port"
+    },
+    {
+     "claim": "Total investment about EUR 800m",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port"
+    },
+    {
+     "claim": "Urban design studies permitted on 8 Nov 2024",
+     "status": "verified",
+     "by": "independent",
      "source": "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success"
     },
     {
-     "text": "June 2026 headline still describes the project as 'moving closer to construction', after a 2027 target for the coastal zone (page could not be opened; headline only).",
-     "source": "https://greekcitytimes.com/2026/06/08/elounda-hills-e800-million-ultra-luxury-resort-development-moves-closer-to-construction/"
+     "claim": "Coastal zone delivered by 2027 and rest of phase one by 2028 (Nov 2024 statement)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://news.gtp.gr/2026/04/28/elounda-hills-e800m-project-moves-into-construction-phase/"
+    },
+    {
+     "claim": "ECI agreements signed with AKTOR and Domiki Kritis",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.cnn.gr/oikonomia/epixeiriseis/story/530935/pernaei-se-fasi-ylopoiisis-to-elounda-hills-epesan-oi-ypografes-me-aktor-kai-domiki-kritis"
+    },
+    {
+     "claim": "First residential works (2 villas, 24 marina apartments) start Oct 2026, finish Dec 2027",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://www.naftemporiki.gr/deltia-typou/2161178/elounda-hills-mpainei-sti-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskeyastikis-symvasis/"
+    },
+    {
+     "claim": "Operator 1 Hotels & Homes manages hotels and branded residences",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.businessnews.gr/epixeiriseis/item/346281-elounda-hills-ksekinaei-i-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskevastikis-symvasis"
+    },
+    {
+     "claim": "Special Zoning Plan ratified by Presidential Decree",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://eloundahills.gr/developed-by-lozeus-hellas/"
+    },
+    {
+     "claim": "Building permits for individual residences issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://eloundahills.gr/residences/"
+    },
+    {
+     "claim": "Developer delivered record villa sale and The Island Concept hotel",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://eloundahills.gr/developed-by-lozeus-hellas/"
+    },
+    {
+     "claim": "Buyer deposits protected",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://eloundahills.gr/buyer-benefits/"
     }
    ],
+   "facts": {
+    "developer_founded": 2006.0,
+    "developer_hq": "Agios Nikolaos, Crete, Greece",
+    "developer_company": "MIRUM HELLAS AE",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2026-10",
+    "handover_promised": "2027-Q4",
+    "original_handover": "2027 (coastal zone, stated Nov 2024)",
+    "delay_months": null,
+    "unit_types": [
+     "2BR",
+     "3BR",
+     "4BR",
+     "5BR villa",
+     "7BR villa",
+     "8BR villa",
+     "duplex"
+    ],
+    "size_min_m2": 155.0,
+    "size_max_m2": 900.0,
+    "price_min": null,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold; developer markets Greek Golden Visa eligibility (residence of at least 120 m2)",
+    "rental_programme": "Residences managed by 1 Hotels & Homes; no figures stated",
+    "service_charge": null,
+    "brand": "1 Hotels & Homes; Ralph Lauren Home interiors (Waterfront Villas)",
+    "amenities": [
+     "marina",
+     "two 5-star hotels",
+     "Bamford spa 2,000 m2",
+     "beach clubs",
+     "9 dining options",
+     "tennis",
+     "kids club",
+     "botanical gardens"
+    ],
+    "lat": 35.249,
+    "lng": 25.731,
+    "permit_authority": "Interministerial Committee for Strategic Investments; Greek building permit services (e-Adeies)",
+    "brochure_url": null
+   },
    "positives": [
-    "Permit stage described publicly",
-    "Hotel operator named",
-    "Phasing plan published"
+    "Strategic investment approval listed on the Ministry of Development register",
+    "Named contractors and dated construction contracts in independent press",
+    "International hotel operator named",
+    "Unit sizes per cluster published",
+    "No guaranteed-return language"
+   ],
+   "flags": [
+    {
+     "text": "Delivery targets have slipped: in Nov 2024 the developer committed to the coastal zone by 2027 and the rest of phase one by 2028; in 2026 construction was described as peaking in 2027-2028 with completion before the end of the decade.",
+     "source": "https://news.gtp.gr/2026/04/28/elounda-hills-e800m-project-moves-into-construction-phase/"
+    },
+    {
+     "text": "The developer described land assembly (since 2006) and permitting as the project's biggest challenges.",
+     "source": "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success"
+    }
    ],
    "sources": [
+    "https://eloundahills.gr/",
+    "https://eloundahills.gr/buyer-benefits/",
+    "https://eloundahills.gr/construction-updates/",
+    "https://eloundahills.gr/developed-by-lozeus-hellas/",
+    "https://eloundahills.gr/residences/",
+    "https://ependyseis.mindev.gov.gr/en/stratigikes/erga/elounda-hills-housing-complexes-and-residence-tourist-port",
+    "https://greekcitytimes.com/2026/06/08/elounda-hills-e800-million-ultra-luxury-resort-development-moves-closer-to-construction/",
+    "https://news.gtp.gr/2026/04/28/elounda-hills-e800m-project-moves-into-construction-phase/",
+    "https://www.businessnews.gr/epixeiriseis/item/346281-elounda-hills-ksekinaei-i-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskevastikis-symvasis",
+    "https://www.cnn.gr/oikonomia/epixeiriseis/story/530935/pernaei-se-fasi-ylopoiisis-to-elounda-hills-epesan-oi-ypografes-me-aktor-kai-domiki-kritis",
     "https://www.hospitalityinvestor.com/index%2Ephp/development/elounda-hills-beats-development-challenges-target-success",
-    "https://greekcitytimes.com/2026/06/08/elounda-hills-e800-million-ultra-luxury-resort-development-moves-closer-to-construction/"
+    "https://www.naftemporiki.gr/deltia-typou/2161178/elounda-hills-mpainei-sti-fasi-anegersis-katoikion-me-tin-ypografi-tis-protis-kyrias-kataskeyastikis-symvasis/"
    ]
   },
   {
    "slug": "the-peaks-lustica-bay",
    "name": "The Peaks, Luštica Bay",
    "developer": "Luštica Bay (developer not named on listing)",
-   "area": "Luštica Bay, Tivat",
+   "status": "active",
+   "stage": "under construction",
+   "area": "The Peaks golf district, Luštica Bay, Luštica peninsula, Tivat",
    "country": "Montenegro",
    "market": "Montenegro",
    "url": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences",
-   "docs_url": null,
+   "docs_url": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/",
    "permit_number": null,
    "docs_listed": [
-    "expected completion (December 2028)",
-    "price range",
-    "size range (105-400 m2)"
+    "price range EUR 859,000 to 5,076,000 and sizes 105 to 400 m2 (Baerz listing)",
+    "expected completion December 2028; sale and construction start shown as June 2013 (resort-wide)",
+    "interest-free payment plans up to five years; 0% transfer tax claim",
+    "The Peaks Townhouses: 11 units from EUR 2.2m, gardens 184 to 590 m2 (Sept 2025 launch)",
+    "construction notice for wastewater works for phase I-b2 (10 villas, 3 golf houses, 3,374 m2 GFA); wastewater permit issued 25 Jul 2025",
+    "golf course: first holes open, full 18 holes due end 2028, opening 2029 season"
    ],
-   "note": "Golf residences within the Luštica Bay resort, listed from EUR 859,000 with completion expected December 2028. The listing says the wider resort is about 10% complete and offers interest-free payment plans of up to five years.",
+   "note": "Golf-front villas, townhouses and apartments in the Luštica Bay resort, developed by Luštica Development AD (Orascom Development Holding with a 12.24% Montenegrin state stake). Listings quote EUR 859,000 to 5.1m and completion December 2028; government data put the whole resort at about 11% built with roughly 450 apartments, 20 houses and villas and two hotels delivered by mid-2025. Only a wastewater permit date is published for the next Peaks phase; no permit number, escrow or floor plans on the listing. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": 859000,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q4 2028",
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "By mid-2025 Luštica Bay had delivered about 450 apartments, 13 houses, 7 villas, The Chedi (111 rooms), a 31-room hotel, 25 commercial units and a marina, per government data reported by Montenegrobusiness",
     "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": "Interest-free payment plans of up to five years (listing); portal reports 20/80 for Botanika",
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Independent business press reports a wastewater construction permit for phase I-b2 issued 25 Jul 2025 and a construction notice in 2026, but no permit number is given and the listing mentions no permit",
+    "escrow": "No escrow, bank guarantee or deposit protection stated on the listing or in press",
+    "progress": "Resort-wide progress figure (about 10% on listing; about 11% per government assessment) and dated golf milestones; The Peaks phase I-b2 only at infrastructure stage as of Aug 2026",
+    "plans": "Listing has a size range only; no floor plans",
+    "record": "Government data reported in press: about 450 apartments, 20 houses/villas, 2 hotels delivered by mid-2025; parent Orascom Development is listed with audited reports",
+    "returns": "No guarantee, but listing cites a 'historical average annual property appreciation of approximately 13%' and 'immediate rental income potential' without source"
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 3,
+   "claims": [
     {
-     "text": "Listing gives a construction start of June 2013 alongside a December 2028 completion, without explanation.",
+     "claim": "Developer is Luštica Development, controlled by Orascom Development Holding, with the state holding 12.24%",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+    },
+    {
+     "claim": "Luštica Bay is about 10% complete",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+    },
+    {
+     "claim": "25% of total development completed (developer statement)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://en.mdrealty.me/2025/08/04/lustica-bay-over-600-million-investment/"
+    },
+    {
+     "claim": "More than 700 families from over 50 countries live in the resort",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
     },
     {
-     "text": "Marketing cites 'historical average annual property appreciation of approximately 13%' and 'immediate rental income potential' without a source; no permit, title or escrow information.",
+     "claim": "Wastewater construction permit for phase I-b2 issued 25 Jul 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+    },
+    {
+     "claim": "Construction start June 2013",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+    },
+    {
+     "claim": "Expected completion December 2028",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+    },
+    {
+     "claim": "Full 18-hole golf course completed end 2028",
+     "status": "unverified",
+     "by": "independent",
+     "source": "https://www.golfbusinessnews.com/news/property/lustica-bay-launches-new-range-of-townhouses/"
+    },
+    {
+     "claim": "First nine holes open in 2026 (Sept 2025 statement)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+    },
+    {
+     "claim": "Historical average annual appreciation about 13%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+    },
+    {
+     "claim": "Prices from EUR 859,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+    },
+    {
+     "claim": "Developer revenue EUR 90.3m and net profit EUR 0.57m in 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://bankar.me/clanci/kako-se-upravlja-sa-tri-najveca-crnogorska-resorta-190-miliona-eura-prihoda-i-21-milion-profita-najavljen-novi-talas-ulaganja/"
     }
    ],
+   "facts": {
+    "developer_founded": 2008.0,
+    "developer_hq": "Tivat, Montenegro",
+    "developer_company": "Luštica Development AD (majority Orascom Development Holding AG, SIX Swiss Exchange)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": 470.0,
+    "listed_or_audited": "Parent Orascom Development Holding listed on SIX Swiss Exchange; Luštica Development 2025 financials reported (revenue EUR 90.3m)",
+    "construction_start": "2013-12",
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR townhouse",
+     "4BR",
+     "5BR villa"
+    ],
+    "size_min_m2": 105.0,
+    "size_max_m2": 400.0,
+    "price_min": 859000.0,
+    "price_max": 5076000.0,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": "Interest-free payment plans up to five years",
+    "foreign_ownership": "Freehold; foreigners can own property in Montenegro",
+    "rental_programme": "Professionally managed rental programme offered; no figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "Gary Player 18-hole golf course",
+     "clubhouse",
+     "marina",
+     "five beaches",
+     "The Chedi hotel",
+     "hiking and cycling trails",
+     "pools",
+     "golf academy"
+    ],
+    "lat": 42.394,
+    "lng": 18.654,
+    "permit_authority": "Montenegro Ministry of Spatial Planning, Urbanism and State Property",
+    "brochure_url": null
+   },
    "positives": [
-    "Completion month stated",
-    "Price range published"
+    "Established resort with delivered homes, hotels and marina confirmed by government data",
+    "Parent company listed with published financials",
+    "Long interest-free payment plan reduces upfront exposure",
+    "Price and size range published"
+   ],
+   "flags": [
+    {
+     "text": "Business press notes the company has used higher completion estimates than the government assessment of about 11% of the master plan.",
+     "source": "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/"
+    },
+    {
+     "text": "Golf course timetable slipped: nine holes were announced to open in 2026, while 2026 reporting shows three holes open and full completion at end 2028 for the 2029 season.",
+     "source": "https://www.golfbusinessnews.com/news/property/lustica-bay-launches-new-range-of-townhouses/"
+    },
+    {
+     "text": "Developer's net profit fell from about EUR 9.1m in 2024 to about EUR 0.57m in 2025 while short-term liabilities stood near EUR 150m.",
+     "source": "https://bankar.me/clanci/kako-se-upravlja-sa-tri-najveca-crnogorska-resorta-190-miliona-eura-prihoda-i-21-milion-profita-najavljen-novi-talas-ulaganja/"
+    }
    ],
    "sources": [
-    "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences"
+    "https://bankar.me/clanci/kako-se-upravlja-sa-tri-najveca-crnogorska-resorta-190-miliona-eura-prihoda-i-21-milion-profita-najavljen-novi-talas-ulaganja/",
+    "https://en.mdrealty.me/2025/08/04/lustica-bay-over-600-million-investment/",
+    "https://montenegrobusiness.eu/lustica-bay-advances-infrastructure-for-13-new-golf-residences/",
+    "https://www.baerz.com/en/tivat/lutica-bay-the-prime-adriatic-destination-the-peaks-montenegros-only-golf-residences",
+    "https://www.golfbusinessnews.com/news/property/lustica-bay-launches-new-range-of-townhouses/",
+    "https://www.omniacapitalgroup.com/en/developments/the-peaks-lustica-bay"
    ]
   },
   {
@@ -20820,250 +22595,965 @@
   },
   {
    "slug": "oxo-the-residences-nyanyi",
-   "name": "OXO The Residences",
-   "developer": "OXO Group Indonesia",
-   "area": "Nyanyi, Tabanan",
-   "country": "Indonesia",
-   "market": "Bali",
-   "url": "https://rumavi.com/en/new-developments/indonesia/tabanan/oxo-the-residences",
-   "docs_url": null,
-   "permit_number": null,
+   "area": "Nyanyi, Beraban, Kediri, Tabanan (next to Nuanu)",
+   "stage": "under construction",
+   "status": "sold out",
+   "url": "https://oxoliving.com/leading-the-way-in-sustainable-living-oxo-the-residences-sold-out-in-1-day/",
+   "docs_url": "https://oxoliving.com/blog/the-residences/oxo-living-announces-plans-for-oxo-the-residences-with-architect-alexis-dornier/",
    "docs_listed": [
-    "Price range (IDR 8-16 bn)",
-    "Ownership via PT PMA holding HGB",
-    "Groundbreaking date (Oct 2024)",
-    "Architect named (Alexis Dornier)",
-    "Unit sizes and plot sizes"
+    "OXO Living: all 40 villas (3-5 BR) sold out on launch day 8 June 2024 at Rp 8-16 billion",
+    "OXO Living: architect Alexis Dornier, IDR 500 billion project on about 1.9-2 ha, villas 184-280 m2 on 298-648 m2 plots, GBCI green certification planned",
+    "OXO Living: buyers purchase through a foreign direct investment company (PT PMA), set-up about $4,500",
+    "ANTARA and Kompas: groundbreaking 9 Oct 2024, completion targeted October 2026 / end 2026",
+    "OXO LinkedIn 2026: mock-up villa completed (Aug 2026 open house), 'targeted completion starting March 2026'",
+    "Nuanu partners portal: handover Q4 2026, resale only, Nuanu Creative City as shareholder; newer OXO storefront and Impala list resale/re-release units from IDR 12.58B with 30/30/40 payment"
    ],
-   "note": "Development of 40 villas next to Nuanu in Nyanyi, reported as sold out within 24 hours of its June 2024 launch, with groundbreaking in October 2024 and completion targeted for Q4 2026. Foreign buyers are described as acquiring via a PT PMA holding HGB title.",
-   "added": "2026-10-30",
+   "note": "40 Alexis Dornier-designed villas in Nyanyi next to Nuanu by OXO Group Indonesia, all sold on launch day in June 2024 at Rp 8-16 billion, with groundbreaking on 9 October 2024 confirmed by ANTARA and Kompas and completion targeted for end 2026. In 2026 OXO showed a finished mock-up villa while portals cite about 95% construction; units now appear only as resale or re-release from IDR 12.6B, and no PBG number, escrow or floor plans are published (checked 31 Oct 2026)",
    "seed": {
     "price": 8000000000,
     "currency": "IDR",
-    "title": "other",
+    "title": "HGB via PT PMA (foreign buyers); OXO's newer page says freehold, some brokers say leasehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q4 2026",
+    "yield_pct": null,
+    "completion": "2026-Q4",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "OXO Living reports openings of Ecoverse (12 Aug 2026) and The Elan by OXO (29 Aug 2026); BDA portal says OXO has delivered three projects",
     "units": 40,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": "30% booking / 30% construction / 40% handover (current listings)",
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [],
-   "positives": [
-    "Groundbreaking date published",
-    "Named architect",
-    "Title route stated (HGB via PT PMA)",
-    "Villa and plot sizes published"
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No PBG number published; BDA notes PBG/SLF not confirmed.",
+    "escrow": "None published; Impala listing: 'Escrow account: not published by the developer'.",
+    "progress": "ANTARA and Kompas (9 Oct 2024): groundbreaking held, structural works to start next day. OXO LinkedIn: mock-up villa completed and open house 4-5 Aug 2026; BDA portal: about 95% complete.",
+    "plans": "Villa and plot size ranges only; no plans found.",
+    "record": "OXO Living reports Ecoverse opened Aug 2026 and The Elan soft-launched Aug 2026; BDA says three projects delivered.",
+    "returns": "No yield figure or guarantee on the OXO pages opened."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "All 40 villas sold out on launch day, 8 June 2024",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi"
+    },
+    {
+     "claim": "Groundbreaking on 9 October 2024",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.kompas.com/properti/read/2024/10/09/191400021/vila-garapan-oxo-di-bali-mulai-dibangun-beres-tahun-2026"
+    },
+    {
+     "claim": "Prices Rp 8 billion to Rp 16 billion per villa",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi"
+    },
+    {
+     "claim": "Completion target (Q3 2026 OXO Jul 2024, October 2026 ANTARA, Q4 2026 Nuanu)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://oxoliving.com/big-splash-on-villas/"
+    },
+    {
+     "claim": "IDR 500 billion investment on 1.9 hectares, architect Alexis Dornier",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.jakartadaily.id/property/16213707242/luxury-villas-in-bali-set-new-standard-for-quality-living-with-oxo-the-residences-construction"
+    },
+    {
+     "claim": "30% of buyers Indonesian, 20% Australian",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi"
+    },
+    {
+     "claim": "Construction about 95% complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bda-bali.com/en/catalog/o/oxo-the-residences/"
+    },
+    {
+     "claim": "Title for foreigners (HGB via PT PMA vs 'freehold' on OXO page vs leasehold on brokers)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://novasia.estate/en/projects/oxo-the-residences/"
+    },
+    {
+     "claim": "Units still on sale from the developer (sold out 2024 vs '3 unsold' listing in Oct 2026)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://impalarealestate.com/projects/oxo-the-residences/"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bda-bali.com/en/catalog/o/oxo-the-residences/"
+    },
+    {
+     "claim": "Nuanu Creative City is a shareholder",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://partners.nuanu.realestate/the-residence-en"
+    }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Canggu, Bali, Indonesia",
+    "developer_company": "OXO Group Indonesia / OXO Living (founder and CEO Johannes Weissenbaeck); registration number not published",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024-10",
+    "handover_promised": "2026-Q4",
+    "original_handover": "2026-Q3 (OXO, July 2024)",
+    "delay_months": null,
+    "unit_types": [
+     "3BR villa",
+     "4BR villa",
+     "5BR villa"
+    ],
+    "size_min_m2": 184.0,
+    "size_max_m2": 293.0,
+    "price_min": 8000000000.0,
+    "price_max": 16000000000.0,
+    "currency": "IDR",
+    "deposit_pct": 30.0,
+    "payment_plan": "30/30/40 (current listings)",
+    "foreign_ownership": "PT PMA (foreign direct investment company) holding HGB, per OXO and Rumavi",
+    "rental_programme": "OXO in-house property management",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "private pools",
+     "clubhouse",
+     "gym",
+     "kids playground",
+     "BBQ areas",
+     "EV charging",
+     "solar panels",
+     "rainwater catchment"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Tabanan Regency government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Sell-out, prices and groundbreaking confirmed by national news agency ANTARA and Kompas",
+    "Named architect and foreign ownership route (PT PMA) stated",
+    "Mock-up villa completed and opened to buyers in August 2026"
+   ],
+   "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/tabanan/oxo-the-residences"
-   ]
+    "https://bda-bali.com/en/catalog/o/oxo-the-residences/",
+    "https://impalarealestate.com/projects/oxo-the-residences/",
+    "https://linkedin.com/company/oxoliving",
+    "https://novasia.estate/en/projects/oxo-the-residences/",
+    "https://oxoliving.com/big-splash-on-villas/",
+    "https://oxoliving.com/blog/the-residences/oxo-living-announces-plans-for-oxo-the-residences-with-architect-alexis-dornier/",
+    "https://oxoliving.com/leading-the-way-in-sustainable-living-oxo-the-residences-sold-out-in-1-day/",
+    "https://partners.nuanu.realestate/the-residence-en",
+    "https://rumavi.com/en/new-developments/indonesia/tabanan/oxo-the-residences",
+    "https://www.antaranews.com/berita/4386470/pengembang-di-bali-mulai-bangun-hunian-mewah-dorong-geliat-ekonomi",
+    "https://www.jakartadaily.id/property/16213707242/luxury-villas-in-bali-set-new-standard-for-quality-living-with-oxo-the-residences-construction",
+    "https://www.kompas.com/properti/read/2024/10/09/191400021/vila-garapan-oxo-di-bali-mulai-dibangun-beres-tahun-2026",
+    "https://www.linkedin.com/posts/oxoliving_oxotheresidences-oxorealestate-oxo-activity-7433815249813917696-ju5b"
+   ],
+   "name": "OXO The Residences",
+   "developer": "OXO Group Indonesia",
+   "country": "Indonesia",
+   "market": "Bali",
+   "added": "2026-10-30",
+   "verified_score": 1,
+   "permit_number": null
   },
   {
    "slug": "dasa-ubud-balitecture",
-   "name": "Dasa Ubud",
-   "developer": "Balitecture",
    "area": "Ubud, Gianyar",
-   "country": "Indonesia",
-   "market": "Bali",
-   "url": "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud",
-   "docs_url": null,
-   "permit_number": null,
+   "stage": "off-plan",
+   "status": "active",
+   "url": "https://www.balitecture.com/developments/dasa-ubud",
+   "docs_url": "https://www.balitecture.com/developments/dasa-ubud",
    "docs_listed": [
-    "Leasehold price and PT PMA freehold-route price",
-    "Lease structure 30 + 30 years",
-    "Milestone payment schedule (5 x 20%)",
-    "Developer ROI projection table"
+    "3BR two-storey villa with private pool and rooftop terrace, '1 Villa Remaining'",
+    "leasehold $349,000 (30+30 years) or $379,000 through a PT PMA holding Hak Guna Bangunan",
+    "ground and first floor plans with dimensions in millimetres; full drawings in brochure",
+    "ROI table: 13% / 15% / 17% at 70 / 80 / 90% occupancy and $280 per night, 'not guaranteed returns'",
+    "$5,000 reservation (refundable until signing or 14 days), then 5 x 20% milestone payments",
+    "launch release 10 Mar 2026: 'handover scheduled across 2026', milestone payments tied to verifiable physical stages",
+    "Balitecture about page: '200+ villas built', 10+ years, Australian-owned, International Property Awards 2025"
    ],
-   "note": "Off-plan three-bedroom villa in Ubud offered at USD 349,000 leasehold (30 + 30 years) or USD 379,000 via a PT PMA route. The developer projects 13-17% returns at 70-90% occupancy; no completion date is published.",
-   "added": "2026-10-30",
+   "note": "Single remaining 3BR off-plan villa in Ubud by Balitecture at $349,000 on a 30+30 lease or $379,000 through a PT PMA holding HGB, with dimensioned floor plans, five 20% milestone payments and 13-17% return projections labelled not guaranteed. The March 2026 launch promised handover across 2026 but the page still shows it off-plan with no date or progress; no permit number or escrow is published (checked 31 Oct 2026)",
    "seed": {
     "price": 349000,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": 30,
-    "extension": true,
+    "extension": "+30 years (30+30); alternative HGB title via PT PMA at $379,000",
     "guaranteed_language": false,
-    "completion": null,
+    "yield_pct": 15,
+    "completion": "2026",
     "permit_claim": false,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Balitecture about page: '200+ villas designed and built'; Casita Alas (Kerobokan) shown completed September 2026",
     "units": null,
-    "developer_delivered": "Balitecture (portal states 150+ projects completed)",
-    "yield_pct": 13
+    "payment_plan": "$5,000 reservation, then 5 x 20% milestone payments",
+    "price_per_m2": null,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No PBG number. Balitecture says its in-house legal team handles permits; nothing project-specific published.",
+    "escrow": "No escrow; milestone payments 'tied to verifiable physical stages'; reservation refundable for 14 days.",
+    "progress": "No construction updates. Launch release (Mar 2026) gave 'handover scheduled across 2026'; page still 'off-plan'.",
+    "plans": "Ground and first floor plans with millimetre dimensions on the development page.",
+    "record": "About page claims 200+ villas built over 10+ years; Casita Alas portfolio page says completed September 2026.",
+    "returns": "13-17% projections at $280/night; 'Projections are estimates only and not guaranteed returns.'"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "No completion date or construction schedule is published.",
+     "claim": "Leasehold $349,000 or $379,000 via PT PMA on HGB title",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/dasa-ubud"
+    },
+    {
+     "claim": "PT PMA route described as 'freehold' (Rumavi) vs HGB right-to-build (developer)",
+     "status": "contradicted",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud"
     },
     {
-     "text": "Developer return projections of 13-17% are based on assumed 70-90% occupancy, not reported results.",
-     "source": "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud"
+     "claim": "Lease term 30+30 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/dasa-ubud"
+    },
+    {
+     "claim": "Handover scheduled across 2026 (launch) vs no completion date published (portal, page still off-plan)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.balitecture.com/news/dasa-ubud-launch-2026"
+    },
+    {
+     "claim": "15% annual ROI at 80% occupancy and $280 per night",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/dasa-ubud"
+    },
+    {
+     "claim": "Developer has built 200+ villas in 10+ years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/about"
+    },
+    {
+     "claim": "International Property Awards 2025 winner",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/about"
+    },
+    {
+     "claim": "Only 1 villa remaining",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/dasa-ubud"
+    },
+    {
+     "claim": "Licensed for development, construction, sales (SIUP-4, AREBI member)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/about"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali, Indonesia (Australian-owned)",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": 200.0,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3BR villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 349000.0,
+    "price_max": 379000.0,
+    "currency": "USD",
+    "deposit_pct": 20.0,
+    "payment_plan": "$5,000 reservation, 5 x 20% milestone payments",
+    "foreign_ownership": "Leasehold 30+30 years, or PT PMA holding HGB",
+    "rental_programme": "Balitecture management at 20% of gross revenue, up to 90 owner nights (Rumavi)",
+    "service_charge": "Running costs $900-1,100 per month (Rumavi)",
+    "brand": null,
+    "amenities": [
+     "private pool",
+     "rooftop terrace",
+     "BBQ pavilion",
+     "tropical garden",
+     "built-in joinery"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+    "brochure_url": null
+   },
    "positives": [
-    "Milestone-linked payment schedule",
-    "Lease structure stated",
-    "Running costs and management fee (20%) disclosed"
+    "Dimensioned floor plans published",
+    "Milestone-linked payments with refundable reservation",
+    "Return projections show assumptions and are labelled not guaranteed",
+    "Developer explains correctly that foreigners hold HGB via PT PMA, not freehold"
    ],
+   "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud"
-   ]
+    "https://rumavi.com/en/new-developments/indonesia/ubud/dasa-ubud",
+    "https://www.balitecture.com/about",
+    "https://www.balitecture.com/developments",
+    "https://www.balitecture.com/developments/dasa-ubud",
+    "https://www.balitecture.com/news/dasa-ubud-launch-2026",
+    "https://www.balitecture.com/portfolio/casita-alas"
+   ],
+   "name": "Dasa Ubud",
+   "developer": "Balitecture",
+   "country": "Indonesia",
+   "market": "Bali",
+   "added": "2026-10-30",
+   "verified_score": 0,
+   "permit_number": null
   },
   {
    "slug": "umah-ubud-balitecture",
-   "name": "Umah Ubud",
-   "developer": "Balitecture",
    "area": "Ubud, Gianyar",
-   "country": "Indonesia",
-   "market": "Bali",
-   "url": "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud",
-   "docs_url": null,
-   "permit_number": null,
+   "stage": "off-plan",
+   "status": "active",
+   "url": "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/",
+   "docs_url": "https://www.balitecture.com/portfolio/umah-ubud",
    "docs_listed": [
-    "Price (USD 199,000)",
-    "Lease structure 30 + 30 years",
-    "Milestone payment schedule",
-    "Developer ROI and appreciation projections"
+    "three 2BR villas (layouts 2BR-A and 2BR-B), ~85 m2 build on ~120 m2 land each, private plunge pools, walled compound by a rice field",
+    "master plan and floor plans on portfolio page ('sizes are indicative')",
+    "unit page: $199,000, '30 years land lease + 30 year extension', 'Construction time 12 months', optional management",
+    "launch release 12 July 2024",
+    "portals: completion 2027 (Rumavi) / Q2 2027 (OffPlan), 13.9-19.8% gross yield projections, 4 x 20% milestone payments after $5,000 deposit",
+    "Umah Ubud is not among the six active projects on balitecture.com/developments (Oct 2026)"
    ],
-   "note": "Three two-bedroom villas in Ubud offered from USD 199,000 on a 30 + 30 year lease, with completion targeted for 2027. Marketing cites 13.9-19.8% gross yield projections and 15-20% off-plan appreciation by completion.",
-   "added": "2026-10-30",
+   "note": "Three 2BR villas by a rice field in Ubud by Balitecture from $199,000 on a 30+30 lease, launched in July 2024 with a stated 12-month build, now shown by portals for completion in 2027. The developer publishes a master plan and floor plans but no longer lists Umah Ubud among its active developments and calls the images renders; no permit, escrow, progress or confirmed handover date is published (checked 31 Oct 2026)",
    "seed": {
     "price": 199000,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": 30,
-    "extension": true,
+    "extension": "+30 years (30+30); PT PMA option on request (Rumavi)",
     "guaranteed_language": false,
+    "yield_pct": 13.9,
     "completion": "2027",
     "permit_claim": false,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Balitecture about page: '200+ villas designed and built'; Casita Alas shown completed September 2026",
     "units": 3,
-    "developer_delivered": "Balitecture (portal states 150+ projects completed)",
-    "yield_pct": 13.9
+    "payment_plan": "$5,000 deposit then 4 x 20% milestone payments (Rumavi)",
+    "price_per_m2": 2341,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No PBG number or permit statement for Umah Ubud.",
+    "escrow": "None published.",
+    "progress": "No construction updates. July 2024 launch with '12 months' construction time; portals now give 2027; the portfolio page says 'The pictures on this page are our renders of the design.'",
+    "plans": "Portfolio page publishes master plan (villas A, B, C) and floor plans.",
+    "record": "About page claims 200+ villas built; Casita Alas completed September 2026 per developer.",
+    "returns": "Portal: 13.9-19.8% gross yield projections and 15-20% off-plan appreciation; OffPlan 'Est. ROI 20%'; no guarantee wording."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "Projected 13.9-19.8% gross yields and 15-20% appreciation are developer estimates, not reported results.",
+     "claim": "Construction time 12 months (unit page) vs completion 2027 after a July 2024 launch",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://offplan.so/projects/umah-ubud"
+    },
+    {
+     "claim": "Project still actively marketed (absent from developer's active developments list)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments"
+    },
+    {
+     "claim": "Price from $199,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/"
+    },
+    {
+     "claim": "30-year land lease plus 30-year extension",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/"
+    },
+    {
+     "claim": "Three villas, ~85 m2 on ~120 m2 land",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/portfolio/umah-ubud"
+    },
+    {
+     "claim": "13.9-19.8% gross yield and 15-20% appreciation by completion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud"
+    },
+    {
+     "claim": "Developer has built 200+ villas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/about"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/portfolio/umah-ubud"
+    },
+    {
+     "claim": "Deposit protection for milestone payments",
+     "status": "unverified",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali, Indonesia (Australian-owned)",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": 200.0,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": "2025 (12-month build from July 2024 launch, implied)",
+    "delay_months": null,
+    "unit_types": [
+     "2BR villa"
+    ],
+    "size_min_m2": 85.0,
+    "size_max_m2": 120.0,
+    "price_min": 199000.0,
+    "price_max": 299000.0,
+    "currency": "USD",
+    "deposit_pct": 20.0,
+    "payment_plan": "$5,000 deposit, 4 x 20% milestone payments",
+    "foreign_ownership": "Leasehold 30+30 years; PT PMA option on request",
+    "rental_programme": "Balitecture management at 20% of gross revenue",
+    "service_charge": "Operating costs $1,100 per month (Rumavi)",
+    "brand": null,
+    "amenities": [
+     "private plunge pool",
+     "outdoor lounge",
+     "outdoor bathroom",
+     "walled gated compound",
+     "rice field view",
+     "shared parking"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Gianyar Regency government (PBG via SIMBG)",
+    "brochure_url": null
+   },
    "positives": [
-    "Milestone-linked payments",
-    "Build and land areas stated",
-    "Operating cost assumptions disclosed"
+    "Master plan and floor plans published",
+    "Lease term and extension stated",
+    "Milestone-linked payments"
    ],
+   "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud"
-   ]
+    "https://offplan.so/projects/umah-ubud",
+    "https://rumavi.com/en/new-developments/indonesia/ubud/umah-ubud",
+    "https://www.balitecture.com/about",
+    "https://www.balitecture.com/development/umah-ubud/2-bedroom-b/",
+    "https://www.balitecture.com/developments",
+    "https://www.balitecture.com/news/umah-ubud-launch-2024",
+    "https://www.balitecture.com/portfolio/casita-alas",
+    "https://www.balitecture.com/portfolio/umah-ubud"
+   ],
+   "name": "Umah Ubud",
+   "developer": "Balitecture",
+   "country": "Indonesia",
+   "market": "Bali",
+   "added": "2026-10-30",
+   "verified_score": 0,
+   "permit_number": null
   },
   {
    "slug": "parq-ubud-tegallalang",
-   "name": "Parq Ubud",
-   "developer": "Parq Development",
-   "area": "Tegallalang, Gianyar (Ubud)",
-   "country": "Indonesia",
-   "market": "Bali",
-   "url": "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud",
-   "docs_url": null,
-   "permit_number": null,
+   "area": "Jl. Sri Wedari No.24, Tegallalang, Ubud, Gianyar",
+   "stage": "completed",
+   "status": "completed",
+   "url": "https://parqdevelopment.com/ubud/en",
+   "docs_url": "https://parqdevelopment.com/ubud/en",
    "docs_listed": [
-    "Unit sizes (47.5-100 sqm)",
-    "Price per sqm range",
-    "Campus amenities list"
+    "developer: 'Ready penthouses in PARQ UBUD', apartments 63.35 m2 from $161,543 and penthouses 66-102 m2 from $168,300 to $255,000, priced in rupiah",
+    "developer: management company handles rentals and taxes, quarterly payouts",
+    "Rumavi: 33 units, 47.5-100 m2, about 8 available, completion Q3 2025 (other portals Q3 2024), lease term unconfirmed",
+    "news: Gianyar regency sealed PARQ Ubud on 11 Nov 2024 for lacking PBG and SLF and closed it on 20 Jan 2025 by Regent Decree 285/E-09/HK/2025",
+    "news (Bali Post, Jun 2025): buildings on protected rice-field land (LSD/LP2B) must be demolished before any tourism licence"
    ],
-   "note": "Apartment and penthouse block of 33 units inside the Parq mixed-use campus near Ubud, listed with a Q3 2025 completion and about 8 units reported available. The lease term is not confirmed on the listing.",
-   "added": "2026-10-30",
+   "note": "Apartments and penthouses in the PARQ Ubud campus in Tegallalang, still marketed by Parq Development as ready units from $161,543. Gianyar regency closed PARQ Ubud in January 2025 by regent decree after officials said it had no PBG or SLF, and in June 2025 told the new management to demolish buildings on protected rice-field land before any licence; no lease term, escrow or plans are published (checked 31 Oct 2026)",
    "seed": {
-    "price": null,
+    "price": 111625,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q3 2025",
+    "yield_pct": null,
+    "completion": "2025-Q3",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
-    "progress_pct": null,
+    "progress_pct": 100,
+    "developer_delivered": "Parq Development names Parq Ubud (finished), Parq Family, Soho Surfside, Citadel and Ocean City on its site",
     "units": 33,
-    "developer_delivered": "Parq Development (portal states 650+ units across projects)",
-    "yield_pct": null
+    "payment_plan": "Payment in Indonesian rupiah",
+    "price_per_m2": 2350,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Gianyar Regional Secretary (Nov 2024): 'they did not have basic licences such as PBG and SLF'. Satpol PP head (Jan 2025): 'not a single permit'. Closed under Regent Decree 285/E-09/HK/2025.",
+    "escrow": "None published.",
+    "progress": "Developer markets units as 'ready'; buildings exist and operated until closure in January 2025 (detikBali, ABC News).",
+    "plans": "Unit sizes only.",
+    "record": "Developer names other projects (Parq Family, Soho Surfside, Citadel, Ocean City); Rumavi: founded 2007, 120,000 m2 completed (developer-supplied).",
+    "returns": "Rumavi lists 14-20% gross yield; developer page promises 'passive income' with quarterly payouts but no figure or guarantee."
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "Listing flags completion/handover status as uncertain and the lease term as unconfirmed.",
+     "claim": "Units are ready and can be rented through the developer's management company",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.cnnindonesia.com/nasional/20250122200546-20-1190407/kampung-rusia-di-ubud-dijaga-ketat-satpol-pp-gianyar-usai-ditutup"
+    },
+    {
+     "claim": "PARQ Ubud holds PBG and SLF",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.detik.com/bali/bisnis/d-7635845/kampung-rusia-di-ubud-yang-akhirnya-ditutup"
+    },
+    {
+     "claim": "Business closed by Regent Decree 285/E-09/HK/2025 on 20 Jan 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.liputan6.com/lifestyle/read/5889921/parq-ubud-yang-disebut-sebagai-kampung-rusia-di-bali-akhirnya-ditutup-pemkab-gianyar"
+    },
+    {
+     "claim": "Buildings partly on protected rice-field land (LSD/LP2B) and must be demolished",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.balipost.com/news/2025/06/24/467610/Urus-Izin-Akomodasi-Pariwisata,PARQ...html"
+    },
+    {
+     "claim": "Completion Q3 2025 (Rumavi) vs Q3 2024 (other portals)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://global-property.investments/indonesia/o1555/"
+    },
+    {
+     "claim": "Apartment and penthouse prices $111,625-$255,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/penthouses/en"
+    },
+    {
+     "claim": "Lease term (unconfirmed, 'likely 30+30')",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud"
+    },
+    {
+     "claim": "Land next to the complex tripled in value",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/ubud/en"
+    },
+    {
+     "claim": "Immigration checks in April 2023 found no visa violations among foreign guests",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.detik.com/bali/berita/d-7742007/tamat-riwayat-kampung-rusia-di-ubud"
+    },
+    {
+     "claim": "Developer founded 2007 with 650+ units across projects",
+     "status": "unverified",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud"
     }
    ],
+   "facts": {
+    "developer_founded": 2007.0,
+    "developer_hq": "Bali, Indonesia",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2025-Q3",
+    "original_handover": "2024-Q3 (portals)",
+    "delay_months": null,
+    "unit_types": [
+     "1BR apartment",
+     "1BR penthouse"
+    ],
+    "size_min_m2": 47.5,
+    "size_max_m2": 102.0,
+    "price_min": 111625.0,
+    "price_max": 255000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": "Payment in rupiah",
+    "foreign_ownership": "Leasehold (term not published)",
+    "rental_programme": "PARQ Development management company, quarterly payouts (operations halted by regency closure in Jan 2025)",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "80 m pool",
+     "700 m2 gym",
+     "spa",
+     "10 restaurants",
+     "coworking",
+     "concert hall",
+     "kindergarten",
+     "supermarket"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Gianyar Regency government (PBG/SLF via SIMBG; business licensing via OSS)",
+    "brochure_url": null
+   },
    "positives": [
-    "Unit sizes published",
-    "Developer portfolio named (PARQ Ubud, PARQ Blue, SOHO Surfside and others)"
+    "Physical buildings exist and unit prices and sizes are published"
+   ],
+   "flags": [
+    {
+     "text": "Gianyar regency temporarily sealed PARQ Ubud on 11 November 2024; the regional secretary said it lacked basic permits including PBG and SLF.",
+     "source": "https://www.detik.com/bali/bisnis/d-7635845/kampung-rusia-di-ubud-yang-akhirnya-ditutup"
+    },
+    {
+     "text": "PARQ Ubud was closed on 20 January 2025 under Gianyar Regent Decree No. 285/E-09/HK/2025 for breaching regency regulations on public order and risk-based licensing.",
+     "source": "https://www.kompas.id/artikel/parq-ubud-ditutup-seperti-apa-kawasan-yang-dijuluki-kampung-rusia-tersebut"
+    },
+    {
+     "text": "Bali Post reported in June 2025 that Gianyar officials asked PARQ's new management to demolish buildings on protected rice-field land (LSD/LP2B) before any tourism licence could be considered.",
+     "source": "https://www.balipost.com/news/2025/06/24/467610/Urus-Izin-Akomodasi-Pariwisata,PARQ...html"
+    },
+    {
+     "text": "ABC News reported the January 2025 shutdown and Indonesian media reports that the development was built on protected rice fields.",
+     "source": "https://www.abc.net.au/news/2025-01-23/bali-authorities-shut-down-russian-village-parq-ubud-villa/104849746"
+    }
    ],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud"
-   ]
+    "https://global-property.investments/indonesia/o1555/",
+    "https://parqdevelopment.com/penthouses/en",
+    "https://parqdevelopment.com/ubud/en",
+    "https://rumavi.com/en/new-developments/indonesia/tegallalang/parq-ubud",
+    "https://www.abc.net.au/news/2025-01-23/bali-authorities-shut-down-russian-village-parq-ubud-villa/104849746",
+    "https://www.balipost.com/news/2025/06/24/467610/Urus-Izin-Akomodasi-Pariwisata,PARQ...html",
+    "https://www.cnnindonesia.com/nasional/20250122200546-20-1190407/kampung-rusia-di-ubud-dijaga-ketat-satpol-pp-gianyar-usai-ditutup",
+    "https://www.detik.com/bali/berita/d-7742007/tamat-riwayat-kampung-rusia-di-ubud",
+    "https://www.detik.com/bali/bisnis/d-7635845/kampung-rusia-di-ubud-yang-akhirnya-ditutup",
+    "https://www.kompas.id/artikel/parq-ubud-ditutup-seperti-apa-kawasan-yang-dijuluki-kampung-rusia-tersebut",
+    "https://www.liputan6.com/lifestyle/read/5889921/parq-ubud-yang-disebut-sebagai-kampung-rusia-di-bali-akhirnya-ditutup-pemkab-gianyar"
+   ],
+   "name": "Parq Ubud",
+   "developer": "Parq Development",
+   "country": "Indonesia",
+   "market": "Bali",
+   "added": "2026-10-30",
+   "verified_score": 1,
+   "permit_number": null
   },
   {
    "slug": "azura-complex-nusa-dua",
-   "name": "Azura Complex Nusa Dua",
-   "developer": "PT Vibe Development Lab",
    "area": "Nusa Dua, Badung",
-   "country": "Indonesia",
-   "market": "Bali",
-   "url": "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua",
-   "docs_url": null,
-   "permit_number": null,
+   "stage": "off-plan",
+   "status": "active",
+   "url": "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua",
+   "docs_url": "https://vibedevelopment.pro/news",
    "docs_listed": [
-    "Unit price range (USD 102,800-410,000)",
-    "Unit sizes",
-    "Completion target"
+    "portals: 99 units in 5 buildings on 10,000 m2, unit types Breeze (1BR 35 m2), Air, Garden, Collection (2-4 BR up to 180 m2), from Rp 1.79B / $100,000-$102,800",
+    "portals: completion September 2027; payment 20% down, 20% at PBG, 20% frame, 20% finishing, 20% furniture",
+    "developer news list: 'Vibe Development Obtains PBG Registration Number for Azura at Nusa Dua Complex' (8 Nov 2025)",
+    "developer site: 'Escrow payments via Bank Mandiri', 'All PBG / SLF documents are publicly verifiable'; Permata Bank escrow partnership (Oct 2026)",
+    "developer company: PT PMA Vibe Development Lab, Jl. Raya Kayu Tulang No.18, Canggu",
+    "Azura is not among the 8 projects on sale on vibedevelopment.pro (Oct 2026); riserealbali lists it at groundwork"
    ],
-   "note": "Off-plan complex of 99 leasehold apartments across 5 buildings in Nusa Dua, from USD 102,800 with Q3 2027 completion. Lease term, permits, notary and escrow are not stated on the listing.",
-   "added": "2026-10-30",
+   "note": "99 leasehold apartments, townhouses and penthouses in 5 low-rise buildings in Nusa Dua by PT PMA Vibe Development Lab, from about $100,000 with September 2027 completion and payments tied to PBG, frame, finishing and furniture milestones. The developer announced a PBG registration number in November 2025 and now advertises Bank Mandiri and Permata escrow, but neither the number nor Azura escrow terms were visible, Azura no longer appears on its sales list and the lease term is unpublished (checked 31 Oct 2026)",
    "seed": {
-    "price": 102800,
-    "currency": "USD",
+    "price": 1790000000,
+    "currency": "IDR",
     "title": "leasehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q3 2027",
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2027-09",
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": false,
-    "escrow": null,
+    "escrow": "Developer states buyer payments go through Bank Mandiri escrow accounts (since Dec 2025) and a Permata Bank escrow partnership (Oct 2026); not confirmed for Azura contracts",
     "progress_pct": null,
+    "developer_delivered": "Vibe Development lists Sanur Cassandra 1 as completed and reports completed Cassandra 3 VIP villa; riserealbali shows Sanur VIP Villa handed over",
     "units": 99,
-    "developer_delivered": "PT Vibe Development Lab (portal states 5 projects / 160 units)",
-    "yield_pct": null
+    "payment_plan": "20% down / 20% at PBG / 20% frame / 20% finishing / 20% furniture",
+    "price_per_m2": 51200000,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": true,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Developer news headline (8 Nov 2025): PBG registration number obtained for Azura; the number itself was not visible in the pages opened. Site says documents are on OSS / 'upon request'.",
+    "escrow": "vibedevelopment.pro: 'Every buyer payment is protected by independent bank escrow' (Bank Mandiri); news Oct 2026 adds Permata Bank escrow. Whether Azura contracts signed before Dec 2025 are covered is not stated.",
+    "progress": "No dated Azura construction update found; riserealbali lists 'Groundwork'.",
+    "plans": "Portals mention unit floor plans and a master plan tab, but no drawings were visible.",
+    "record": "Developer lists Sanur Cassandra 1 as completed and reports completed Cassandra 3; FazWaz/AsiaVillas show 2 completed of 5 projects.",
+    "returns": "No yield for Azura; site homepage shows a 53.3% IRR calculator example and 'average 5y ROI 11.4%' across projects, no guarantee."
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "developer",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
     {
-     "text": "Listing contains conflicting statements on the developer's track record (verified multi-project record vs not widely documented).",
+     "claim": "PBG registration number obtained for Azura (Nov 2025)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibedevelopment.pro/news"
+    },
+    {
+     "claim": "Buyer payments protected by Bank Mandiri escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibedevelopment.pro/"
+    },
+    {
+     "claim": "Completion September 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.asia.villas/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
+    },
+    {
+     "claim": "99 units in 5 buildings on 10,000 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
+    },
+    {
+     "claim": "Starting price ($100,000 / Rp 1.79B vs $102,800 Rumavi)",
+     "status": "contradicted",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua"
+    },
+    {
+     "claim": "Developer track record (Rumavi: 'verified multi-project record' and 'not widely documented')",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua"
+    },
+    {
+     "claim": "Developer on the market since 2007",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibedevelopment.pro/"
+    },
+    {
+     "claim": "Project still on sale (portals show 82 units for sale; developer sales list omits Azura)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://vibedevelopment.pro/"
+    },
+    {
+     "claim": "Construction at groundwork stage",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://riserealbali.com/developers/vibe-development/"
+    },
+    {
+     "claim": "Lease term",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
     }
    ],
+   "facts": {
+    "developer_founded": 2007.0,
+    "developer_hq": "Canggu, Badung, Bali, Indonesia",
+    "developer_company": "PT PMA Vibe Development Lab (registration number not published)",
+    "developer_projects_delivered": 2.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR apartment",
+     "2BR townhouse",
+     "2-3BR villa",
+     "4BR penthouse"
+    ],
+    "size_min_m2": 35.0,
+    "size_max_m2": 180.0,
+    "price_min": 1790000000.0,
+    "price_max": 10665969683.0,
+    "currency": "IDR",
+    "deposit_pct": 20.0,
+    "payment_plan": "20% down / 20% PBG / 20% frame / 20% finishing / 20% furniture",
+    "foreign_ownership": "Leasehold (term not published)",
+    "rental_programme": "Vibe Asia Management being set up (developer news, Oct 2026)",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "swimming pool",
+     "gym",
+     "yoga area",
+     "spa and recovery centre",
+     "restaurant and bar",
+     "coworking",
+     "kids zones",
+     "24h security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Badung Regency government (PBG via SIMBG)",
+    "brochure_url": null
+   },
    "positives": [
-    "Unit prices and sizes published",
-    "Completion quarter stated"
+    "Payment schedule tied to PBG issuance and physical construction stages",
+    "Developer advertises bank escrow (Bank Mandiri, Permata) and says permit documents are on OSS",
+    "Developer legal entity and address published"
    ],
+   "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua"
-   ]
+    "https://riserealbali.com/developers/vibe-development/",
+    "https://rumavi.com/en/new-developments/indonesia/nusa-dua/azura-complex-nusa-dua",
+    "https://vibedevelopment.pro/",
+    "https://vibedevelopment.pro/news",
+    "https://www.asia.villas/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua",
+    "https://www.asia.villas/property-developers/pt-vibe-development-lab-d5660",
+    "https://www.fazwaz.id/projects/indonesia/bali/badung/nusa-dua/azura-complex-nusa-dua"
+   ],
+   "name": "Azura Complex Nusa Dua",
+   "developer": "PT Vibe Development Lab",
+   "country": "Indonesia",
+   "market": "Bali",
+   "added": "2026-10-30",
+   "verified_score": 0,
+   "permit_number": null
   },
   {
    "slug": "atalaya-ocean-view-kuta-lombok",
@@ -21076,13 +23566,17 @@
    "docs_url": null,
    "permit_number": null,
    "docs_listed": [
-    "Unit prices and living/plot areas",
-    "35-year lease (Hak Sewa)",
-    "Delivery 10-12 months from reservation",
-    "Optional rental management"
+    "15 furnished villas: 1-bed 86.5 m2 on 288-295 m2 plots from USD 240,000; 2-bed 177.8 m2 on 322-389 m2 plots from USD 315,000",
+    "35-year lease (Hak Sewa), settled in IDR at contract-date FX",
+    "delivery 10-12 months from reservation; portal FAQ says completion Q4 2026",
+    "optional in-house rental management; up to 15% rental income (developer projection)",
+    "portal header price range USD 82,000-410,000",
+    "portal notes older listings showed freehold at USD 165,000"
    ],
-   "note": "Fifteen furnished hillside villas above Kuta Bay on a 35-year lease, from USD 240,000 and settled in IDR at contract-date FX. Marketing cites up to 15% annual rental income; delivery is quoted as 10-12 months from reservation.",
+   "note": "Fifteen furnished hillside villas above Kuta Bay (Sengkol, Pujut) on a 35-year lease from USD 240,000, settled in IDR; delivery is quoted as 10-12 months from reservation (portal says Q4 2026) and marketing cites up to 15% rental income as a projection. Only a portal listing was found: no developer project page, PBG, escrow, plans or progress, and the seller, Valencia hostel operator Nest Hostels Group, has no published villa delivery record. Older listings showed freehold at USD 165,000 (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "under construction",
    "seed": {
     "price": 240000,
     "currency": "USD",
@@ -21090,33 +23584,157 @@
     "lease_base": 35,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q4 2026",
+    "yield_pct": 15,
+    "completion": "2026-Q4",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": null,
     "units": 15,
-    "developer_delivered": "Nest Hostels Group (hospitality operator; portal states 13 projects)",
-    "yield_pct": 15
+    "payment_plan": null,
+    "price_per_m2": 2775,
+    "progress_updates": null
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Older listings showed freehold title at USD 165k, conflicting with the current 35-year leasehold terms.",
+     "claim": "Project is under construction (no date, figure or photos)",
+     "status": "unverified",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
     },
     {
-     "text": "Up-to-15% rental income figure is a developer projection; extension terms for the 35-year lease are not stated.",
+     "claim": "Delivery 10-12 months from reservation; portal FAQ gives completion Q4 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    },
+    {
+     "claim": "Tenure is a 35-year Hak Sewa lease; older listings showed freehold at USD 165,000",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    },
+    {
+     "claim": "A Hak Sewa lease is the standard route for individual foreigners; they cannot hold freehold (Hak Milik)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+    },
+    {
+     "claim": "Prices from USD 240,000 (1-bed) and USD 315,000 (2-bed) versus header range USD 82,000-410,000",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    },
+    {
+     "claim": "Up to 15% annual rental income (developer projection)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    },
+    {
+     "claim": "Developer Nest Hostels Group (Valencia, est. 2017) has 13 completed projects, all hostels or hotels; residential villa record unverified",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    },
+    {
+     "claim": "Partner Reset Lombok Hotel operates in Kuta (booking listing)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.booking.com/hotel/id/reset-boutique.html?aid=381246"
+    },
+    {
+     "claim": "15 units, each with private pool, garden and parking, delivered furnished",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    },
+    {
+     "claim": "No building permit or escrow published",
+     "status": "unverified",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
     }
    ],
+   "facts": {
+    "developer_founded": 2017.0,
+    "developer_hq": "Valencia, Spain",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2026-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR villa",
+     "2BR villa"
+    ],
+    "size_min_m2": 86.5,
+    "size_max_m2": 177.8,
+    "price_min": 240000.0,
+    "price_max": 315000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "35-year lease (Hak Sewa); extension terms not stated",
+    "rental_programme": "Optional in-house rental management; up to 15% annual rental income claimed as a projection",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "private pool",
+     "private garden",
+     "parking",
+     "air conditioning",
+     "fitted wardrobes",
+     "furnished"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": "No PBG or permit published on the listing",
+    "escrow": "No escrow, bank guarantee or trust account",
+    "progress": "Listing says 'under construction' with no date, figure or photos",
+    "plans": "Living and plot areas only; no floor plans",
+    "record": "Portal: Nest Hostels Group runs hostels in Spain and Zanzibar; 'residential delivery track record is unverified'",
+    "returns": "Up to 15% rental income labelled a developer projection; no guarantee wording"
+   },
    "positives": [
     "Lease term stated",
-    "Unit sizes and plot sizes published",
+    "Unit and plot sizes published",
     "Named operator for rental programme"
    ],
+   "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view"
+    "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia",
+    "https://rumavi.com/en/new-developments/indonesia/kuta/atalaya-ocean-view",
+    "https://www.booking.com/hotel/id/reset-boutique.html?aid=381246"
    ]
   },
   {
@@ -21130,42 +23748,178 @@
    "docs_url": null,
    "permit_number": null,
    "docs_listed": [
-    "Prices (AUD, converted)",
-    "Two ownership routes: personal leasehold or HGB via PT PMA",
-    "Unit mix (3 x 1-bed, 2 x 2-bed)"
+    "five off-plan riad-style villas (3 x 1-bed, 2 x 2-bed)",
+    "prices converted from AUD: header USD 75,200-165,000; unit table 1-bed USD 128,000, 2-bed USD 158,000",
+    "personal leasehold (term not stated) or HGB via PT PMA",
+    "completion Q1 2027 in header and FAQ, H2 2027 in text",
+    "optional rental management; no yield published"
    ],
-   "note": "Five off-plan riad-style villas in Kuta Lombok from about USD 75,200 (converted from AUD), offered via personal leasehold or HGB held in a PT PMA. The listing states completion as Q1 2027 in the header and H2 2027 in the text.",
+   "note": "Five off-plan riad-style villas in Kuta by Invest Islands, sold via personal leasehold or HGB in a PT PMA; the only listing found gives conflicting prices (from about USD 75,200 in the header, USD 128,000 in the unit table) and completion dates (Q1 2027 and H2 2027), with no PBG, escrow, plans or progress. Invest Islands' founding and Lombok projects are reported by The Edge Singapore, but its flagship Gran Melia Lombok was pushed from early 2024 to late 2025 according to TopHotelNews (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": 75200,
     "currency": "USD",
-    "title": "other",
+    "title": "leasehold or HGB via PT PMA",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "H2 2027",
+    "yield_pct": null,
+    "completion": "2027",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Invest Islands (est. 2015): Mandala Eco-Village launched Oct 2021 and Gran Melia Lombok under development per The Edge Singapore (2022); portal says 1 project completed, not named",
     "units": 5,
-    "developer_delivered": "Invest Islands (est. 2015)",
-    "yield_pct": null
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": null
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Listing gives two completion targets (Q1 2027 and H2 2027) and does not confirm the leasehold term or unit floor areas.",
+     "claim": "Invest Islands was founded around 2015 by Kevin Deisser and Jack Brown",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.edgeprop.sg/property-news/invest-islands-unveils-luxury-villas-lombok-indonesia"
+    },
+    {
+     "claim": "Invest Islands launched the 88-unit Mandala Eco-Village in October 2021 and sold the first 14 units",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.edgeprop.sg/property-news/invest-islands-unveils-luxury-villas-lombok-indonesia"
+    },
+    {
+     "claim": "Invest Islands has 1 completed project (portal, project not named)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+    },
+    {
+     "claim": "Flagship Gran Melia Lombok opening moved from early 2024 to late 2025 (reported March 2023); no confirmation of opening found",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://tophotel.news/?p=566132"
+    },
+    {
+     "claim": "Completion Q1 2027 (header and FAQ) versus H2 2027 (text)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+    },
+    {
+     "claim": "Prices from about USD 75,200 (header) versus 1-bed USD 128,000 in the unit table; 2-bed USD 135,000 or 158,000 in different sections",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+    },
+    {
+     "claim": "Construction under way (overview) while listed as off-plan",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+    },
+    {
+     "claim": "HGB held in a PT PMA is a legal route for foreign buyers",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ahp.id/?p=2955"
+    },
+    {
+     "claim": "Leasehold term not stated",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+    },
+    {
+     "claim": "No permit, escrow or floor plans published",
+     "status": "unverified",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
     }
    ],
+   "facts": {
+    "developer_founded": 2015.0,
+    "developer_hq": "Lombok and Bali, Indonesia (offices reported in Hong Kong and Australia)",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR villa",
+     "2BR villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 75200.0,
+    "price_max": 165000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Personal leasehold (term not stated) or HGB held by a dedicated PT PMA",
+    "rental_programme": "Optional rental management; no figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "swimming pool",
+     "parking",
+     "concierge",
+     "security system"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": "No PBG or permit published",
+    "escrow": "No escrow, bank guarantee or trust account",
+    "progress": "Overview says construction under way but listing status is off-plan; no dated progress",
+    "plans": "No floor plans; portal says floor areas unverified",
+    "record": "The Edge Singapore (2022) reports the company and its launched projects; no completed project is named",
+    "returns": "No yield published; no guarantee wording"
+   },
    "positives": [
-    "Ownership route named (HGB via PT PMA)",
+    "Ownership route via HGB in a PT PMA offered",
     "Unit mix published",
-    "Established developer named"
+    "Developer's history covered by independent press"
+   ],
+   "flags": [
+    {
+     "text": "TopHotelNews reported in March 2023 that the opening of Invest Islands' flagship Gran Melia Lombok had been pushed back from early 2024 to late 2025.",
+     "source": "https://tophotel.news/?p=566132"
+    }
    ],
    "sources": [
-    "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta"
+    "https://rumavi.com/en/new-developments/indonesia/kuta/terrakuta",
+    "https://tophotel.news/?p=566132",
+    "https://www.ahp.id/?p=2955",
+    "https://www.edgeprop.sg/property-news/invest-islands-unveils-luxury-villas-lombok-indonesia"
    ]
   },
   {
@@ -21179,12 +23933,17 @@
    "docs_url": null,
    "permit_number": null,
    "docs_listed": [
-    "Unit prices and living/plot areas",
-    "28-year lease",
-    "Utility specification (well, power panel)"
+    "1-bed: 97 m2 living on 160 m2 plot, 18 m2 pool, from USD 132,000",
+    "2-bed: 154 m2 living on 236 m2 plot, 21 m2 pool, from USD 177,000",
+    "28-year lease (Hak Sewa)",
+    "utilities per villa: 120 m well, power panel, water storage",
+    "Phase One site preparation in progress",
+    "portal FAQ names SeaScape Lombok Properties as developer and Q4 2026 completion; overview says developer and completion not published"
    ],
-   "note": "Early-stage (Phase One site preparation) hillside villas in Areguling on a 28-year lease, from USD 132,000. The developer, total unit count and completion date are not published.",
+   "note": "Early-stage (Phase One site preparation) hillside villas in Areguling on a 28-year lease from USD 132,000; the only listing found contradicts itself, saying the developer and completion date are unpublished while its FAQ names SeaScape Lombok Properties and Q4 2026. No PBG, escrow, plans, unit count or track record is published, and nothing independent was found (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": 132000,
     "currency": "USD",
@@ -21192,27 +23951,148 @@
     "lease_base": 28,
     "extension": null,
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": null,
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 1361,
+    "progress_updates": null
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Developer is unnamed and no completion date or total unit count is published.",
+     "claim": "Developer unnamed (overview) versus 'SeaScape Lombok Properties, founded in 2020, 3+ projects completed' (FAQ)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "Completion date not published (overview) versus Q4 2026 (FAQ and header)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "Phase One site preparation in progress",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "28-year Hak Sewa lease; renewal terms not stated",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "A Hak Sewa lease is the standard route for individual foreigners, with less formal protection than registered titles",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+    },
+    {
+     "claim": "1-bed from USD 132,000 (97 m2), 2-bed from USD 177,000 (154 m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "Each villa has its own 120 m well, power panel and water storage",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "Total unit count not published",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
+    },
+    {
+     "claim": "No permit, escrow or rental yield published",
+     "status": "unverified",
+     "by": "none",
      "source": "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR villa",
+     "2BR villa"
+    ],
+    "size_min_m2": 97.0,
+    "size_max_m2": 154.0,
+    "price_min": 132000.0,
+    "price_max": 177000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "28-year lease (Hak Sewa)",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "private pool",
+     "communal guest lobby",
+     "private well",
+     "water storage and pump",
+     "furnished"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "evidence": {
+    "permit": "No PBG or permit published",
+    "escrow": "No escrow, bank guarantee or trust account",
+    "progress": "'Phase One site preparation in progress', undated, no figure",
+    "plans": "Living, covered and plot areas only; no floor plans",
+    "record": "Developer unnamed in overview; FAQ names SeaScape Lombok Properties without projects; nothing independent found",
+    "returns": "No yield published; no guarantee wording"
+   },
    "positives": [
     "Unit sizes and prices published",
-    "Lease term stated"
+    "Lease term stated",
+    "Per-villa utilities described"
    ],
+   "flags": [],
    "sources": [
+    "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia",
     "https://rumavi.com/en/new-developments/indonesia/kuta/are-guling-valley"
    ]
   },

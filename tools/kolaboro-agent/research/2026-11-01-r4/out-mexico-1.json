@@ -2437,5 +2437,406 @@
   "permit_number": null,
   "added": "2026-10-30",
   "verified_score": 0
+ },
+ {
+  "slug": "vaya-vaya-la-cruz-de-huanacaxtle",
+  "name": "Vaya Vaya",
+  "developer": null,
+  "area": "La Cruz de Huanacaxtle, Riviera Nayarit (Albatros 27)",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://vaya-vaya.com/en",
+  "docs_url": "https://vaya-vaya.com/en/faq-img",
+  "docs_listed": [
+   "developer site with unit types S, M, L, penthouses and beach units",
+   "FAQ: prices USD 705,640 to 1.4M; construction from April 2025 over 24 months; delivery Q2 2027; fideicomiso explained for foreigners",
+   "broker inventory table (Num Inmobiliaria) with unit, m2, MXN/m2 and sold/available status",
+   "MLS 44371: est. delivery 30 July 2027, title escritura, 'Construction Manifest: No'",
+   "short-term rentals allowed under condo rules"
+  ],
+  "note": "About 20 beachfront condos at Albatros 27, La Cruz de Huanacaxtle, now with its own site (vaya-vaya.com) giving prices from USD 705,640 to 1.4M, construction from April 2025 and delivery Q2 2027; agents describe it as under construction and a broker inventory shows about 9 of 20 units sold. No developer company is named, the MLS record marks 'Construction Manifest: No' (no building-permit filing noted), and no permit number, escrow, progress photos or track record are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 705640,
+   "currency": "USD",
+   "title": "fideicomiso for foreigners (developer FAQ); MLS title 'Escritura'",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 20,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number; MLS 44371 lists 'Construction Manifest: No'",
+   "escrow": "Developer FAQ explains the bank fideicomiso as the ownership vehicle for foreigners; no escrow or deposit protection stated",
+   "progress": "Developer FAQ says construction begins April 2025 with a 24-month build; agents say 'currently under construction'; no dated photos or % published",
+   "plans": "Unit types and m2 listed; no floor plan drawings found on the pages opened",
+   "record": "Developer FAQ says it is 'backed by seasoned real estate partners' and will share credentials on request; no company or past projects named",
+   "returns": "Short-term rentals permitted; no return figures or guarantees"
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction began April 2025, 24-month build, delivery Q2 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vaya-vaya.com/en/faq-img"
+   },
+   {
+    "claim": "Estimated delivery 30 July 2027 (MLS)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexhome.com/property/44371/"
+   },
+   {
+    "claim": "Building permit filed (MLS field 'Construction Manifest: No')",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mexhome.com/property/44371/"
+   },
+   {
+    "claim": "Prices USD 705,640 to 1.4M (developer) vs from USD 840,389 (MexHome, Condos Vallarta)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mexhome.com/dev/vaya-vaya/"
+   },
+   {
+    "claim": "Unit 403: 195 m2 at MXN 22,865,700 (USD 1,328,397 on MLS, USD 1,280,017 at Riviera Partners)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://numinmobiliaria.com/vayavaya.html"
+   },
+   {
+    "claim": "PH2 is 118 m2 (broker inventory) vs 238 m2 (Riviera Partners listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rivierapartnersrealty.com/property/vaya-vaya-ph2/"
+   },
+   {
+    "claim": "About 20 residences (MLS, developer) vs 11 units (Condos Vallarta)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.condosvallarta.com/developments/vaya-vaya-riviera-nayarit"
+   },
+   {
+    "claim": "About 9 of 20 units sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://numinmobiliaria.com/vayavaya.html"
+   },
+   {
+    "claim": "Foreigners buy through a bank fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vaya-vaya.com/en/faq-img"
+   },
+   {
+    "claim": "Backed by experienced real estate partners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vaya-vaya.com/en/faq-img"
+   },
+   {
+    "claim": "Short-term rentals permitted under condo rules",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexhome.com/property/44371/"
+   },
+   {
+    "claim": "Developer has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   }
+  ],
+  "facts": {
+   "developer_company": null,
+   "construction_start": "2025-04",
+   "handover_promised": "2027-Q2",
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse",
+    "beach unit"
+   ],
+   "size_min_m2": 118,
+   "size_max_m2": 252,
+   "price_min": 705640,
+   "price_max": 1621326,
+   "currency": "USD",
+   "foreign_ownership": "Bank fideicomiso (developer FAQ)",
+   "rental_programme": "None; short-term rentals allowed under condo rules",
+   "amenities": [
+    "two pools",
+    "beach club",
+    "deli cafe",
+    "rooftop terraces",
+    "lobby",
+    "car-lift parking",
+    "24/7 security",
+    "solar panels"
+   ],
+   "permit_authority": "Municipio de Bahía de Banderas",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Developer FAQ with price range, build timeline and fideicomiso explanation",
+   "Broker inventory shows unit-level prices and sold status",
+   "Delivery date stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vaya-vaya.com/en",
+   "https://vaya-vaya.com/en/faq-img",
+   "https://mexhome.com/property/44371/",
+   "https://numinmobiliaria.com/vayavaya.html",
+   "https://www.condosvallarta.com/developments/vaya-vaya-riviera-nayarit",
+   "https://rivierapartnersrealty.com/property/vaya-vaya-ph2/",
+   "https://mexhome.com/dev/vaya-vaya/",
+   "https://www.vallartalistings.com/properties/vaya-vaya",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-30",
+  "verified_score": 0
+ },
+ {
+  "slug": "kayak-living-nuevo-vallarta",
+  "name": "Kayak Living",
+  "developer": null,
+  "area": "Las Jarretaderas, Nuevo Vallarta (Av. México 109)",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://mexhome.com/dev/kayak-living-riviera-nayarit/",
+  "docs_url": "https://tropicasa.com/kayakliving/",
+  "docs_listed": [
+   "two towers of 1 and 2-bedroom units, 80 to 118 m2",
+   "prices from MXN 3,833,200 (Tropicasa, Fraccionamientos Inmobiliarios 2023)",
+   "agent listings MXN 4,491,875 (101.22 m2, unit U403) and MXN 4,788,185 (108.39 m2)",
+   "agent copy: 34 apartments on 5 levels, 6 prototypes, delivery August 2024, 'estimated appreciation 20% to 26%'",
+   "payment option 80% down / 20% on delivery with 10% discount",
+   "address Av. México 109, Las Jarretaderas"
+  ],
+  "note": "Two-tower condo project of 1 and 2-bedroom units (80-118 m2) at Av. México 109, Las Jarretaderas, from MXN 3,833,200; agent listings set delivery for August 2024 and claim 20-26% appreciation and a 'guaranteed safe and profitable investment', yet MexHome still tags it pre-construction in Oct 2026. No developer is named anywhere, no construction evidence, licence, escrow or plans were found, and current status is unclear. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 3833200,
+   "currency": "MXN",
+   "title": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2024-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 34,
+   "payment_plan": "Agent: 80% down and 20% on delivery with 10% discount",
+   "price_per_m2": 44376,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number in any listing",
+   "escrow": "No escrow or fideicomiso stated",
+   "progress": "No progress published; 2023 listing says 'proyecto en desarrollo'; promised August 2024 delivery has passed and MexHome still labels it pre-construction",
+   "plans": "Only sizes and prototypes described; no floor plans visible",
+   "record": "No developer named on MexHome, Tropicasa or agent listings",
+   "returns": "Agent listings (PRYA, KW Grand) state an 'estimated appreciation of 20% to 26%' and say the development 'guarantees a safe and profitable investment'; MexHome says it 'generates a good return'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery scheduled August 2024",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://prya.easybroker.com/property/preventa-de-departamento-en-nuevo-vallarta-las-jarretaderas-departamento"
+   },
+   {
+    "claim": "Still pre-construction (MexHome, Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+   },
+   {
+    "claim": "34 apartments on 5 levels, 6 prototypes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/preventa-de-departamento-en-nuevo-vallarta-47af9007-cfa6-4e6b-adb9-e54361177495"
+   },
+   {
+    "claim": "Two towers of units from 80 to 110 m2 (MexHome) vs 80 to 118 m2 (2023 listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.fraccionamientosinmobiliarios.com.mx/casas/kayak-living-2/"
+   },
+   {
+    "claim": "Prices from MXN 3,833,200",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tropicasa.com/kayakliving/"
+   },
+   {
+    "claim": "Estimated appreciation of 20% to 26% and a 'guaranteed' safe investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/preventa-de-departamento-en-nuevo-vallarta-47af9007-cfa6-4e6b-adb9-e54361177495"
+   },
+   {
+    "claim": "Agent copy refers to 'Espacio Mérida' amenities, a different project's text",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://neojaus.com/propiedades/preventa-de-departamento-en-nuevo-vallarta-nayarit-jalisco-3520758959"
+   },
+   {
+    "claim": "Developer identity published",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mexhome.com/dev/kayak-living-riviera-nayarit/"
+   },
+   {
+    "claim": "Developer has a PROFECO-registered contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "Short-term rental management option available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://prya.easybroker.com/property/preventa-de-departamento-en-nuevo-vallarta-las-jarretaderas-departamento"
+   }
+  ],
+  "facts": {
+   "developer_company": null,
+   "handover_promised": "2024-Q3",
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 118,
+   "price_min": 3833200,
+   "price_max": 4788185,
+   "currency": "MXN",
+   "payment_plan": "80/20 with 10% discount (2023)",
+   "foreign_ownership": "Not stated; coastal restricted zone requires a bank fideicomiso for foreigners",
+   "rental_programme": "Optional short-term rental manager (agent claim)",
+   "amenities": [
+    "rooftop pool",
+    "jacuzzi",
+    "sundeck",
+    "BBQ area",
+    "elevator",
+    "security",
+    "parking"
+   ],
+   "permit_authority": "Municipio de Bahía de Banderas",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Street address and unit sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mexhome.com/dev/kayak-living-riviera-nayarit/",
+   "https://tropicasa.com/kayakliving/",
+   "https://www.fraccionamientosinmobiliarios.com.mx/casas/kayak-living-2/",
+   "https://prya.easybroker.com/property/preventa-de-departamento-en-nuevo-vallarta-las-jarretaderas-departamento",
+   "https://www.pincali.com/en/home/preventa-de-departamento-en-nuevo-vallarta-47af9007-cfa6-4e6b-adb9-e54361177495",
+   "https://neojaus.com/propiedades/preventa-de-departamento-en-nuevo-vallarta-nayarit-jalisco-3520758959",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-30",
+  "verified_score": 0
  }
 ]
