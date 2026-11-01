@@ -47,13 +47,6 @@
  },
  "runs": [
   {
-   "date": "2026-10-31",
-   "mode": "ai",
-   "pages_ok": 293,
-   "pages_failed": 38,
-   "changes": 9
-  },
-  {
    "date": "2026-11-01",
    "mode": "ai",
    "pages_ok": 321,
@@ -129,6 +122,13 @@
    "pages_ok": 588,
    "pages_failed": 58,
    "changes": 14
+  },
+  {
+   "date": "2026-11-01",
+   "mode": "ai",
+   "pages_ok": 588,
+   "pages_failed": 58,
+   "changes": 12
   }
  ]
 }
