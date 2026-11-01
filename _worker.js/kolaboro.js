@@ -175,6 +175,7 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/certificate' && req.method === 'POST') return logged('certificate', () => certificate(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/document' && req.method === 'POST') return logged('document', () => documentRead(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/report-draft' && req.method === 'POST') return logged('report_draft', () => reportDraft(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/telegram' && req.method === 'POST') return telegram(req, env, ctx);
   if (u.pathname.startsWith('/api/v1')) return apiV1(req, u, env, ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
   if (u.pathname === '/api/kb/health') return health(env);
@@ -550,4 +551,38 @@ export async function open(req, u) {
     return openResp(rss, 'application/rss+xml; charset=utf-8');
   }
   return new Response(JSON.stringify({ error: 'not_found', docs: 'https://kolaboro.com/api/open' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
+}
+
+// ---------- Telegram bot: send a project link, get the desk review back ----------
+// Switched on when the Cloudflare secrets TELEGRAM_BOT_TOKEN and TELEGRAM_WEBHOOK_SECRET exist.
+// Register once: https://api.telegram.org/bot<TOKEN>/setWebhook?url=https://kolaboro.com/api/kb/telegram&secret_token=<SECRET>
+async function tgSend(env, chat, text) {
+  return fetch('https://api.telegram.org/bot' + env.TELEGRAM_BOT_TOKEN + '/sendMessage', { method: 'POST', headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ chat_id: chat, text: text.slice(0, 4000), parse_mode: 'HTML', disable_web_page_preview: true }) });
+}
+const tgEsc = t => String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+async function telegram(req, env, ctx) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_WEBHOOK_SECRET) return json({ error: 'not_configured' }, 503);
+  if (req.headers.get('x-telegram-bot-api-secret-token') !== env.TELEGRAM_WEBHOOK_SECRET) return json({ error: 'forbidden' }, 403);
+  let up; try { up = await req.json(); } catch (e) { return json({ ok: true }); }
+  const msg = up.message || up.edited_message; if (!msg || !msg.chat) return json({ ok: true });
+  const chat = msg.chat.id, text = String(msg.text || '');
+  const link = (text.match(/https?:\/\/[^\s<>"]+/) || [])[0];
+  ctx.waitUntil((async () => {
+    if (!link) return tgSend(env, chat, 'Send me the link to an off-plan project page and I will tell you what it promises, what it leaves out and what to ask before you pay. Free, about a minute.\n\nFull database: https://kolaboro.com/database');
+    await tgSend(env, chat, 'Reading the page… about a minute.');
+    const fake = new Request('https://kolaboro.com/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': 'tg-' + chat }, body: JSON.stringify({ url: link }) });
+    let d; try { d = await (await analyze(fake, env, ctx)).json(); } catch (e) { d = { error: 'fetch' }; }
+    if (d.error) return tgSend(env, chat, d.error === 'rate' ? 'Too many checks right now. Try again in a few minutes.' : 'I could not read that page. Try the project or developer page itself, or use https://kolaboro.com/check');
+    const r = d.report || {}, L = [];
+    L.push('<b>' + tgEsc(r.project || d.host) + '</b>' + (r.location ? ' · ' + tgEsc(r.location) : ''));
+    L.push('Attention needed: <b>' + tgEsc(r.attention || 'unknown') + '</b>');
+    if (r.summary) L.push(tgEsc(r.summary));
+    if ((r.missing || []).length) L.push('\n<b>Not stated on the page</b>\n' + r.missing.map(x => '✗ ' + tgEsc(x)).join('\n'));
+    if (r.guaranteed_language) L.push('\n⚠ Uses "guaranteed" return language.');
+    if ((r.questions || []).length) L.push('\n<b>Ask before you pay</b>\n' + r.questions.slice(0, 5).map((x, i) => (i + 1) + '. ' + tgEsc(x)).join('\n'));
+    L.push('\nFull review: https://kolaboro.com/check?url=' + encodeURIComponent(link) + '&src=tg\nAgent on site from €490: https://kolaboro.com/pricing');
+    return tgSend(env, chat, L.join('\n'));
+  })().catch(() => {}));
+  return json({ ok: true });
 }
