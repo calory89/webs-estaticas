@@ -35,7 +35,7 @@ function okUrl(raw) {
   let u; try { u = new URL(/^https?:\/\//i.test(raw) ? raw : 'https://' + raw); } catch (e) { return null; }
   if (!/^https?:$/.test(u.protocol)) return null;
   const h = u.hostname.toLowerCase();
-  if (h === 'localhost' || h.endsWith('.local') || h.endsWith('.internal') || /^[\d.]+$/.test(h) || h.includes(':') || !h.includes('.')) return null;
+  if (h === 'localhost' || h.endsWith('.local') || h.endsWith('.internal') || h.endsWith('.localhost') || /^[\d.]+$/.test(h) || /(^|\.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\.|$)/.test(h) || /\b(nip|sslip|xip)\.io$/.test(h) || h.includes(':') || !h.includes('.')) return null;
   if (h.endsWith('kolaboro.com')) return null;
   u.hash = ''; return u;
 }
@@ -50,7 +50,8 @@ const PILOT = new WeakSet();
 const WKEY = 'kbw_05b9a76d1e8195c0d4b0ef74e8d01b5d16b0276008bbc0d0';
 async function rateLimited(req, ctx) {
   if (PILOT.has(req)) return false;
-  const ip = req.headers.get('cf-connecting-ip') || 'x';
+  const ip0 = req.headers.get('cf-connecting-ip') || 'x';
+  const ip = ip0.includes(':') ? ip0.split(':').slice(0, 4).join(':') + '::/64' : ip0;
   const hour = new Date().toISOString().slice(0, 13);
   const k = new Request('https://kolaboro.com/__rl/' + encodeURIComponent(ip) + '/' + hour);
   const c = caches.default; const hit = await c.match(k);
@@ -88,14 +89,19 @@ async function analyze(req, env, ctx) {
   if (!u) return json({ error: 'url' }, 400);
   const host = u.hostname.replace(/^www\./, '');
   const tracked = TRACKED.some(d => host === d || host.endsWith('.' + d));
-  const ck = new Request('https://kolaboro.com/__kb_desk/' + encodeURIComponent(host + u.pathname.replace(/\/$/, '')));
+  const ck = new Request('https://kolaboro.com/__kb_desk/' + encodeURIComponent(host + u.pathname.replace(/\/$/, '') + u.search));
   const cache = caches.default;
   const hit = await cache.match(ck);
   if (hit) { const d = await hit.json(); return json({ ...d, cached: true, first: false, tracked }); }
   if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
   let html = '';
   try {
-    const r = await fetch(u.toString(), { headers: { 'user-agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/research)', 'accept': 'text/html' }, redirect: 'follow', cf: { cacheTtl: 3600 } });
+    let r, cur = u;
+    for (let hop = 0; hop < 4; hop++) {   // follow redirects by hand so every hop passes the same URL checks
+      r = await fetch(cur.toString(), { headers: { 'user-agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)', 'accept': 'text/html' }, redirect: 'manual', cf: { cacheTtl: 3600 } });
+      if (r.status < 300 || r.status >= 400) break;
+      const nx = okUrl(new URL(r.headers.get('location') || '', cur).toString()); if (!nx) return json({ error: 'fetch' }, 422); cur = nx;
+    }
     if (!r.ok) return json({ error: 'fetch', status: r.status }, 422);
     html = (await r.text()).slice(0, 1500000);
   } catch (e) { return json({ error: 'fetch' }, 422); }
@@ -167,7 +173,17 @@ async function health(env) {
   return json({ ok: true, api: 'up', models_configured: !!env.ANTHROPIC_API_KEY, database: db ? 'up' : 'down', db_ms: Date.now() - t0, time: new Date().toISOString() });
 }
 
+const AI_PATHS = new Set(['/api/kb/progress', '/api/kb/copilot', '/api/kb/analyze', '/api/kb/certificate', '/api/kb/document', '/api/kb/report-draft', '/api/kb/ask']);
+function aiGuard(req, u) {
+  // AI endpoints cost money per call: only our own pages may call them, and only with a JSON body
+  if (!AI_PATHS.has(u.pathname) || req.method !== 'POST') return null;
+  const o = req.headers.get('origin') || '';
+  if (o !== 'https://kolaboro.com' && o !== 'https://www.kolaboro.com') return json({ error: 'forbidden_origin' }, 403);
+  if (!/application\/json/i.test(req.headers.get('content-type') || '')) return json({ error: 'json_required' }, 415);
+  return null;
+}
 export async function api(req, u, env, ctx) {
+  const g = aiGuard(req, u); if (g) return g;
   if (u.pathname === '/api/kb/progress' && req.method === 'POST') return logged('progress', () => progress(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/stamp' && (req.method === 'POST' || req.method === 'GET')) return logged('stamp', () => stamp(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/copilot' && req.method === 'POST') return logged('copilot', () => copilot(req, env, ctx), ctx);
@@ -208,7 +224,7 @@ function parseJson(t) {
 }
 async function claudeVision(env, content, maxTokens) {
   let last = '';
-  for (const model of ['claude-sonnet-5-5', 'claude-haiku-5-5', 'claude-sonnet-5-5']) {
+  for (const model of ['claude-sonnet-5-5', 'claude-haiku-5-5']) {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
@@ -370,11 +386,11 @@ Reply with ONLY one JSON object:
 
 async function documentRead(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
-  const raw = await req.text(); if (raw.length > 7000000) return json({ error: 'too_big' }, 413);
+  const raw = await req.text(); if (raw.length > 4000000) return json({ error: 'too_big' }, 413);
   let b; try { b = JSON.parse(raw); } catch (e) { return json({ error: 'bad_request' }, 400); }
   if (b.company) return json({ error: 'bad_request' }, 400);
   const type = DOC_TYPES[b.type] ? b.type : 'auto', lang = LANGS[b.lang] ? b.lang : 'en', claim = String(b.claim || '').slice(0, 2500);
-  const files = (Array.isArray(b.files) ? b.files : [b.file]).filter(Boolean).slice(0, 6), content = [];
+  const files = (Array.isArray(b.files) ? b.files : [b.file]).filter(Boolean).slice(0, 4), content = [];
   for (const f of files) {
     const m = /^data:(image\/(jpeg|png|webp)|application\/pdf);base64,([A-Za-z0-9+/=]+)$/.exec(String(f));
     if (!m) return json({ error: 'file' }, 400);
@@ -442,7 +458,7 @@ async function apiV1(req, u, env, ctx) {
   if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
   const path = u.pathname.replace(/\/+$/, '');
   if (path === '/api/v1' || path === '/api/v1/docs') return cors(json(API_DOC));
-  const key = req.headers.get('x-api-key') || u.searchParams.get('key') || '';
+  const key = req.headers.get('x-api-key') || '';
   if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return cors(json({ error: 'missing_key', how: 'https://kolaboro.com/api-pilot' }, 401));
   const ep = path.replace(/\/[0-9a-f]{64}$/, '/{sha256}').replace(/\/attestations\/[0-9a-f]+$/, '/attestations/{token}');
   let a; try { a = await rpc('kolaboro_api_use', { p_key: key, p_endpoint: req.method + ' ' + ep }); } catch (e) { return cors(json({ error: 'db' }, 503)); }

@@ -60,9 +60,10 @@ function hex(b){ return [].map.call(new Uint8Array(b), function(x){ return ('0' 
 function sha(t){ return crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)).then(hex); }
 function iso(t){ return t ? new Date(t).toISOString().slice(0, 19) + 'Z' : ''; }
 var o = document.getElementById('chout');
+function vesc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]; }); }
 document.getElementById('chfile').onchange = function(){ var f = this.files[0]; if (!f) return; f.text().then(function(s){ var d = JSON.parse(s), ev = d.evidence || [], prev = null, bad = [], i = 0;
-  function step(){ if (i >= ev.length) return Promise.resolve(); var e = ev[i]; return sha((prev || 'genesis:' + d.case_id) + '|' + e.sha256 + '|' + e.kind + '|' + iso(e.taken_at)).then(function(h){ if (h !== e.chain || (e.prev || null) !== prev) bad.push((i + 1) + '. ' + (e.title || e.kind)); prev = e.chain; i++; return step(); }); }
-  return step().then(function(){ o.innerHTML = bad.length ? '<div class="vf-no"><b>' + bad.length + ' item(s) do not match</b><p>' + bad.join('<br>') + '</p></div>' : '<div class="vf-ok"><b>✓ All ' + ev.length + ' items chain correctly</b><p>Case ' + (d.case || '') + '. Last fingerprint <code style="word-break:break-all">' + prev + '</code>. <a href="/verify/?hash=' + prev + '">See its timestamp</a>.</p></div>'; });
+  function step(){ if (i >= ev.length) return Promise.resolve(); var e = ev[i]; return sha((prev || 'genesis:' + d.case_id) + '|' + e.sha256 + '|' + e.kind + '|' + iso(e.taken_at)).then(function(h){ if (h !== e.chain || (e.prev || null) !== prev) bad.push((i + 1) + '. ' + vesc(e.title || e.kind)); prev = e.chain; i++; return step(); }); }
+  return step().then(function(){ o.innerHTML = bad.length ? '<div class="vf-no"><b>' + bad.length + ' item(s) do not match</b><p>' + bad.join('<br>') + '</p></div>' : '<div class="vf-ok"><b>✓ All ' + (+ev.length || 0) + ' items chain correctly</b><p>Case ' + vesc(d.case || '') + '. Last fingerprint <code style="word-break:break-all">' + vesc(prev) + '</code>. <a href="/verify/?hash=' + encodeURIComponent(String(prev || '')) + '">See its timestamp</a>.</p></div>'; });
 }).catch(function(){ o.innerHTML = '<div class="vf-no"><b>That file isn\'t a Kolaboro evidence file</b></div>'; }); };
 })();</script></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>

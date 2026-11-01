@@ -159,7 +159,7 @@ export default {
     if (host === 'top3hotels.com') return viaTop3(req, env, ctx);
     if (!SITES.has(host)) return new Response('Not found', { status: 404 });
     const pre = '/_s/' + host;
-    if (u.pathname.endsWith('/index.html')) return Response.redirect(new URL(u.pathname.slice(0, -10) + u.search, u).toString(), 301);
+    if (u.pathname.endsWith('/index.html')) { const ip = '/' + u.pathname.slice(0, -10).replace(/^[\/\\]+/, ''); return new Response(null, { status: 301, headers: { location: ip + u.search } }); }
     if (u.pathname.startsWith('/_s/')) return new Response('Not found', { status: 404 });
     if (u.pathname === '/api/geo') { const c = req.cf || {}; return Response.json({ country: c.country || null, city: c.city || null, lat: c.latitude ? +c.latitude : null, lon: c.longitude ? +c.longitude : null }); }
     if (host === 'kolaboro.com' && u.pathname === '/__k/ktraffic.js') return new Response(KTRAF, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'no-store' } });
@@ -173,7 +173,7 @@ export default {
     // realhunt.co: one URL per page, without the trailing slash, matching the canonical tags. "/about/" sends a 301 to
     // "/about", and "/about" is served from the about/index.html file directly instead of redirecting to the folder.
     if (host === 'realhunt.co' && u.pathname.length > 1 && u.pathname.endsWith('/')) {
-      return Response.redirect(new URL(u.pathname.replace(/\/+$/, '') + u.search, u).toString(), 301);
+      return new Response(null, { status: 301, headers: { location: '/' + u.pathname.replace(/\/+$/, '').replace(/^[\/\\]+/, '') + u.search } });
     }
     let r = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + u.search, u), req));
     if (host === 'realhunt.co' && r.status >= 300 && r.status < 400) {
