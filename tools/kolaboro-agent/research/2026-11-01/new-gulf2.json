@@ -948,5 +948,379 @@
    "https://www.omniacapitalgroup.com/en/developers/va-group",
    "https://muscatgates.com/muttrah-waterfront-port-sultan-qaboos-project/"
   ]
+ },
+ {
+  "slug": "vistal-by-victoria-swarovski-leo-developments",
+  "name": "Vistal by Victoria Swarovski",
+  "developer": "LEO Developments",
+  "area": "Al Mouj Muscat",
+  "country": "Oman",
+  "market": "Oman",
+  "stage": "off-plan",
+  "url": "https://www.palmera.realestate/oman/property/vistal-by-victoria-swarovski/",
+  "docs_url": "https://leodevelopments.com/projects/vistal-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "completion 2029 (developer), Q4 2029 (agents)",
+   "architect Lines & Visions",
+   "amenity list",
+   "brochure plan sheets with internal, outdoor and total areas (per agent summary)",
+   "payment plan 20% signing then milestone instalments, 15% at handover (agent)",
+   "resale after 40% paid (agent)"
+  ],
+  "note": "Single nine-floor beachfront building at Al Mouj ITC launched 10 Dec 2025 under the patronage of Oman's Minister of Housing and Urban Planning; agents disagree on unit count (178 vs 213), entry price (OMR 134,000 vs 140,316) and payment plan. No licence number, escrow or progress published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 140316,
+   "currency": "OMR",
+   "title": "freehold (ITC)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Agent Muscat Properties names LEO's European projects (Johannisallee, Neustadt Zossen, Naumanns Brauerei, August Bebel Strasse); founded 2004, in Oman since 2022; no completion details",
+   "units": 213,
+   "payment_plan": "20% at signing, 10% Sep 2026, 10% at each of four construction milestones, 15% at MEP second fix, 15% at handover (agent Muscat Properties)",
+   "price_per_m2": 2126
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or approval number published",
+   "escrow": "Nothing published about an escrow account",
+   "progress": "No updates; sales launch Dec 2025",
+   "plans": "Agents describe brochure plan sheets per layout; brand site lists layouts with areas",
+   "record": "Only agent-named European projects, no delivered units count",
+   "returns": "No guaranteed returns; agent notes the brand partner makes no representation about returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Launched Dec 2025 under the patronage of the Minister of Housing and Urban Planning, open for freehold sales to foreigners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/article/1180942/business/first-victoria-swarovski-branded-residential-project-launched-at-al-mouj-muscat"
+   },
+   {
+    "claim": "Al Mouj is an ITC permitting foreign freehold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/gcc/oman-first-victoria-swarovski-branded-residential-project-launched-at-al-mouj-muscat-i76bzv69"
+   },
+   {
+    "claim": "213 residences",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vistalbyvictoriaswarovski.com/"
+   },
+   {
+    "claim": "Prices from OMR 140,316",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vistalbyvictoriaswarovski.com/"
+   },
+   {
+    "claim": "Payment plan 70/30 with 15% on handover (vs 10/60/30 on brand site)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://muscat.properties/projects/vistal-by-victoria-swarovski"
+   },
+   {
+    "claim": "Handover Q4 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://leodevelopments.com/projects/vistal-residences/"
+   },
+   {
+    "claim": "Developer founded 2004 with completed German projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://muscat.properties/projects/vistal-by-victoria-swarovski"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://leodevelopments.com/projects/vistal-residences/"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://leodevelopments.com/projects/vistal-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2004,
+   "developer_hq": "Muscat office at Al Mouj Walk Mall; European origin",
+   "developer_company": "LEO Developments",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR duplex",
+    "beach chalet",
+    "sky villa"
+   ],
+   "size_min_m2": 66,
+   "size_max_m2": 580,
+   "price_min": 140316,
+   "price_max": null,
+   "currency": "OMR",
+   "deposit_pct": 20,
+   "payment_plan": "about 85/15 (agent) or 10/60/30 (brand site)",
+   "foreign_ownership": "freehold in Al Mouj ITC",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Victoria Swarovski (design and name licence)",
+   "amenities": [
+    "infinity pool",
+    "sandy beach",
+    "spa and wellness",
+    "gym",
+    "VIP lounge",
+    "kids pool",
+    "sauna",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Housing and Urban Planning (ITC sales and escrow)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Inside an established ITC with freehold for all nationalities",
+   "Launch attended by the housing minister and covered by Oman Observer",
+   "Detailed area breakdowns published per layout"
+  ],
+  "flags": [],
+  "sources": [
+   "https://leodevelopments.com/projects/vistal-residences/",
+   "https://leodevelopments.com/",
+   "https://vistalbyvictoriaswarovski.com/",
+   "https://www.omanobserver.om/article/1180942/business/first-victoria-swarovski-branded-residential-project-launched-at-al-mouj-muscat",
+   "https://www.zawya.com/en/economy/gcc/oman-first-victoria-swarovski-branded-residential-project-launched-at-al-mouj-muscat-i76bzv69",
+   "https://muscat.properties/projects/vistal-by-victoria-swarovski",
+   "https://www.palmera.realestate/oman/property/vistal-by-victoria-swarovski/",
+   "https://www.palmera.realestate/oman/guides/al-mouj-muscat/"
+  ]
+ },
+ {
+  "slug": "the-great-escape-2-aida-dar-global",
+  "name": "The Great Escape 2 (AIDA)",
+  "developer": "Dar Global (Dar Global Property Development SPC; LSE: DAR), with OMRAN",
+  "area": "AIDA, Yiti and Yenkit, Muscat",
+  "country": "Oman",
+  "market": "Oman",
+  "stage": "off-plan",
+  "url": "https://www.palmera.realestate/oman/property/the-great-escape-2/",
+  "docs_url": "https://darglobal.co.uk/the-great-escape-2-aida-oman",
+  "permit_number": null,
+  "docs_listed": [
+   "two G+9 buildings (C and D), 1-3BR 49 to 192 m2",
+   "brochure with specifications and floor plans per type",
+   "payment plan 20% then seven 10% time-based instalments, 10% on completion",
+   "escrow bank details (agent Palmera: National Bank of Oman account of Dar Global Property Development SPC)",
+   "handover June 2029 (agents); earlier Sep 2028"
+  ],
+  "note": "Two nine-storey apartment buildings in Dar Global's AIDA clifftop masterplan, an Oman ITC; Dar Global's H1 2024 results list it among AIDA projects launched for 2028 completion, while agents now show June 2029 and give two different escrow banks (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 95000,
+   "currency": "OMR",
+   "title": "freehold (ITC)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Agent Palmera publishes escrow account at National Bank of Oman in the name of Dar Global Property Development SPC; agent Tropical Riviera says escrow is with Sohar Islamic",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Dar Global H1 2024 results presentation: completion and ongoing handover of Urban Oasis (Dubai), Da Vinci Tower expected to complete Dec 2024",
+   "units": null,
+   "payment_plan": "20% on signing, 10% at 6, 9, 15, 21, 27, 33 and 39 months, 10% on completion (90/10)",
+   "price_per_m2": 1939
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Ministry of Housing licence number published",
+   "escrow": "Named escrow account (bank, holder, account number) on Palmera; conflicting bank on another agent page",
+   "progress": "Dar Global page shows 'Under Development'; no figure or dated updates for this phase",
+   "plans": "Dar Global brochure with floor plans per type for Buildings C and D",
+   "record": "Dar Global LSE results presentations name completed projects",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "contradicted",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Great Escape 2 is a Dar Global AIDA project scheduled for 2028 completion (H1 2024 results)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cdn.darglobal.co.uk/Dar_Global_1_H24_Results_Presentation_FINAL_7219dc6c0f.pdf"
+   },
+   {
+    "claim": "Handover June 2029",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://cdn.darglobal.co.uk/Dar_Global_1_H24_Results_Presentation_FINAL_7219dc6c0f.pdf"
+   },
+   {
+    "claim": "Completion 30 Sep 2028 (other agents)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omanpropertyinvestment.com/en/developments/muscat/the-great-escape-2-aida"
+   },
+   {
+    "claim": "Escrow at National Bank of Oman (Palmera) vs Sohar Islamic (Tropical Riviera)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://tropicalriviera.com/the-great-escape-2-signature-residences-aida-oman/"
+   },
+   {
+    "claim": "Main construction contract awarded for Great Escape apartments in AIDA Phase 1 (FY25)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067"
+   },
+   {
+    "claim": "Developer is LSE-listed with audited accounts",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067"
+   },
+   {
+    "claim": "AIDA is an ITC allowing freehold to all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/oman/guides/aida-yiti/"
+   },
+   {
+    "claim": "Starting price OMR 95,000 (also quoted 98,000 and 125,605)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.omanpropertyinvestment.com/en/developments/muscat/the-great-escape-2-aida"
+   },
+   {
+    "claim": "Lifetime residency for owners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/oman/property/the-great-escape-2/"
+   },
+   {
+    "claim": "Dar Global delivered Urban Oasis (Dubai)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cdn.darglobal.co.uk/Dar_Global_1_H24_Results_Presentation_FINAL_7219dc6c0f.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "London, UK",
+   "developer_company": "Dar Global PLC; escrow holder Dar Global Property Development SPC (agent)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "London Stock Exchange (DAR)",
+   "construction_start": null,
+   "handover_promised": "2029-Q2",
+   "original_handover": "2028-Q3 (Sep 2028, agents and H1 2024 results 'scheduled completion 2028')",
+   "delay_months": 9,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR penthouse",
+    "3BR garden villa"
+   ],
+   "size_min_m2": 49,
+   "size_max_m2": 192,
+   "price_min": 95000,
+   "price_max": null,
+   "currency": "OMR",
+   "deposit_pct": 20,
+   "payment_plan": "90/10",
+   "foreign_ownership": "freehold in AIDA ITC",
+   "rental_programme": null,
+   "service_charge": "estimated OMR 9 per m2 (agent Tropical Riviera)",
+   "brand": null,
+   "amenities": [
+    "cliff-edge infinity pool",
+    "gym",
+    "children pool",
+    "play area",
+    "Trump golf social membership",
+    "trails",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Housing and Urban Planning / Ministry of Heritage and Tourism (ITC)",
+   "brochure_url": "https://the-great-escape-2.com/uploads/images/2024-12/DG.TheGreatEscape2_ENG.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "LSE-listed developer reporting AIDA projects in results",
+   "Escrow account details published by an agent",
+   "Full floor plans and specifications"
+  ],
+  "flags": [],
+  "sources": [
+   "https://darglobal.co.uk/the-great-escape-2-aida-oman",
+   "https://the-great-escape-2.com/uploads/images/2024-12/DG.TheGreatEscape2_ENG.pdf",
+   "https://cdn.darglobal.co.uk/Dar_Global_1_H24_Results_Presentation_FINAL_7219dc6c0f.pdf",
+   "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067",
+   "https://www.palmera.realestate/oman/property/the-great-escape-2/",
+   "https://muscat.properties/projects/the-great-escape-2",
+   "https://www.omanpropertyinvestment.com/en/developments/muscat/the-great-escape-2-aida",
+   "https://tropicalriviera.com/the-great-escape-2-signature-residences-aida-oman/",
+   "https://www.palmera.realestate/oman/guides/aida-yiti/"
+  ]
  }
 ]

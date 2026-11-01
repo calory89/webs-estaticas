@@ -180,5 +180,200 @@
    "https://uchijapan.com/properties/miru-residences-hakuba-406-2-bedroom-dual-key-unit",
    "https://uchijapan.com/news/miru-residences-hakuba-ski-in-ski-out-living"
   ]
+ },
+ {
+  "slug": "harmony-on-broadbeach-gold-partners-australia",
+  "name": "Harmony on Broadbeach",
+  "developer": "Gold Partners Australia",
+  "area": "Broadbeach (2797 Gold Coast Highway)",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "stage": "off-plan",
+  "url": "https://www.apartments.com.au/new-apartments/2797-gold-coast-highway-broadbeach",
+  "docs_url": "https://www.apartments.com.au/new-apartments/2797-gold-coast-highway-broadbeach",
+  "permit_number": null,
+  "docs_listed": [
+   "prices from AUD 1.3m (2BR 87 m2), 3BR from AUD 1.83m, skyhomes from AUD 3.465m",
+   "101 residences, 33 floors",
+   "estimated completion late 2028",
+   "progress tracker: plans approved",
+   "floor plans and brochure behind enquiry form",
+   "Queensland Government-backed 6.5-year structural protection mentioned"
+  ],
+  "note": "33-storey, 101-apartment tower by Sydney developer Gold Partners Australia; reported 75% sold by March 2026 with construction due to start Q2 2026 and completion targeted for late 2028. Listing says plans approved but no DA number is published, and the developer company on the Australian Business Register has an ABN only from April 2025 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1300000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Apartments.com.au developer profile names completed Habitat Carlingford, Infinity Park Norwest and Habitat Hornsby (no unit counts)",
+   "units": 101,
+   "payment_plan": null,
+   "price_per_m2": 14943
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listing says 'Approved' and progress tracker shows 'Plans approved' but no City of Gold Coast DA number is given",
+   "escrow": "No deposit holding arrangement published (Queensland law requires deposits to be held in trust, but the listing does not state it)",
+   "progress": "Construction 'commencing soon'; no dated construction updates",
+   "plans": "Floor plans only via brochure request form",
+   "record": "Developer profile lists three completed NSW projects by name",
+   "returns": "No yield or guaranteed rental language"
+  },
+  "positives": [
+   "Prices and internal sizes published per type",
+   "75% sales reported by trade press before construction start",
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development plans approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/2797-gold-coast-highway-broadbeach"
+   },
+   {
+    "claim": "Developer company Gold Partners Australia Pty Ltd is registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/ABN/View?abn=99686447325"
+   },
+   {
+    "claim": "Developer founded 2018",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/developers/gold-partners-australia"
+   },
+   {
+    "claim": "ABN for the developer company active only from 22 Apr 2025 (newer than stated founding year)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/ABN/View?abn=99686447325"
+   },
+   {
+    "claim": "Delivered Habitat Carlingford, Infinity Park Norwest, Habitat Hornsby",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/developers/gold-partners-australia"
+   },
+   {
+    "claim": "75% of apartments sold by March 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-races-to-75-per-cent-sold-as-gold-partners-australia-target-construction-commencement"
+   },
+   {
+    "claim": "Construction starts Q2 2026, completion late 2028",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-races-to-75-per-cent-sold-as-gold-partners-australia-target-construction-commencement"
+   },
+   {
+    "claim": "Prices from AUD 975,000 (launch article) vs AUD 1,300,000 (current listing)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-launches-to-booming-gold-coast-suburb"
+   },
+   {
+    "claim": "Unit count 113 at launch vs 101 on current listing",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-launches-to-booming-gold-coast-suburb"
+   },
+   {
+    "claim": "Site is a 1,201 m2 high-density residential zoned corner lot",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.kollosche.com.au/property/2797-gold-coast-highway-broadbeach"
+   },
+   {
+    "claim": "Off-the-plan purchase open to foreign buyers (outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hsfkramer.com/notes/realestate/2025-posts/firb-update"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Sydney (NSW 2118), Australia",
+   "developer_company": "Gold Partners Australia Pty Ltd, ABN 99 686 447 325",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3BR skyhome"
+   ],
+   "size_min_m2": 87,
+   "size_max_m2": 212,
+   "price_min": 1300000,
+   "price_max": 3465000,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata title; foreign buyers can buy new off-the-plan dwellings (FIRB approval regime applies), outside the temporary ban on established dwellings from 1 Apr 2025 to 31 Mar 2027",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "20m pool",
+    "spa",
+    "sauna",
+    "gym",
+    "yoga lawn",
+    "BBQ areas",
+    "private lounges",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (Planning Act 2016, Queensland)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/2797-gold-coast-highway-broadbeach",
+   "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-races-to-75-per-cent-sold-as-gold-partners-australia-target-construction-commencement",
+   "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-launches-to-booming-gold-coast-suburb",
+   "https://www.apartments.com.au/developers/gold-partners-australia",
+   "https://www.domain.com.au/project/6874",
+   "https://abr.business.gov.au/ABN/View?abn=99686447325",
+   "https://www.kollosche.com.au/property/2797-gold-coast-highway-broadbeach",
+   "https://www.hsfkramer.com/notes/realestate/2025-posts/firb-update",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
  }
 ]

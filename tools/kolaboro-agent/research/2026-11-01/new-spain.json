@@ -3336,5 +3336,179 @@
   "sources": [
    "https://luxinmo.com/new-developments/831637"
   ]
+ },
+ {
+  "slug": "noba-homes-v-esplugues-neinor",
+  "name": "NO|BA Homes V",
+  "developer": "Neinor Homes (promoter Neinor Península S.L.U.)",
+  "area": "Esplugues de Llobregat, Barcelona",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "under construction",
+  "url": "https://www.neinorhomes.com/en/promocion/no-ba-homes-v/",
+  "docs_url": "https://www.neinorhomes.com/uploads/promociones/documentos/2362//dosier_promociones/0000000003531285.PDF",
+  "permit_number": null,
+  "docs_listed": [
+   "information dossier: works under construction with building licence (file number cut off in the PDF)",
+   "Banco Santander bank guarantee (aval) on amounts paid on account",
+   "promoter Neinor Península S.L.U., NIF B-95788634, Registro Mercantil Madrid hoja M712404",
+   "finca registral 30491 (Registro de la Propiedad de Esplugues), referencia catastral 3699603DF2739H0000AQ",
+   "estimated completion and delivery Q2 2028",
+   "90 homes, 2-4BR, listed units EUR 360,500 to 479,000 incl. VAT (parking and storage extra)",
+   "specifications PDF, brochure, virtual model and visit"
+  ],
+  "note": "90 homes in a ground-plus-4 and ground-plus-14 scheme on Calle Sant Gabriel, Esplugues de Llobregat, at the edge of Barcelona; Neinor's dossier states works are under way with a licence, a Banco Santander aval for deposits, land registry and cadastral references, and delivery in Q2 2028, though the licence number is cut off. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 360500,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Banco Santander bank guarantee (aval) on amounts paid on account (information dossier)",
+   "progress_pct": null,
+   "developer_delivered": "Neinor Homes lists delivered Barcelona-area developments (Sitges Homes, Aiguadolç Homes I-II, Diagonal 119, Port Forum Homes III, Sant Just Homes IV) on its site",
+   "units": 90,
+   "payment_plan": null,
+   "price_per_m2": 5470
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Dossier says works have a licencia de obras but the 'Nº EXP' field is cut off, so no number is published",
+   "escrow": "Dossier: aval from Banco Santander",
+   "progress": "Dossier: 'en fase de construcción'; no % or dated updates",
+   "plans": "Unit plans on project page",
+   "record": "Neinor's development list shows delivered Barcelona-area projects; Sa Llosa delivery reported by press",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence granted (number not legible)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2362//dosier_promociones/0000000003531285.PDF"
+   },
+   {
+    "claim": "Banco Santander aval on deposits",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2362//dosier_promociones/0000000003531285.PDF"
+   },
+   {
+    "claim": "Promoter Neinor Península registered in Madrid (M712404) while an earlier dossier gives Córdoba (CO-35814) for the same NIF",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/3738//dosier_promociones/0000000003617899.PDF"
+   },
+   {
+    "claim": "Land: finca 30491, cadastral reference 3699603DF2739H0000AQ",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2362//dosier_promociones/0000000003531285.PDF"
+   },
+   {
+    "claim": "Under construction, delivery Q2 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2362//dosier_promociones/0000000003531285.PDF"
+   },
+   {
+    "claim": "90 homes, prices EUR 360,500 to 479,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/no-ba-homes-v/"
+   },
+   {
+    "claim": "Neinor delivered earlier developments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+   },
+   {
+    "claim": "Neinor listed with H1 2026 results",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Neinor Península S.L.U., NIF B-95788634, Registro Mercantil de Madrid tomo 40.098, folio 125, hoja M-712404",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Neinor Homes listed on the Spanish stock exchange",
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 65.91,
+   "size_max_m2": 88.24,
+   "price_min": 360500,
+   "price_max": 479000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "garden",
+    "gym",
+    "playground",
+    "running track",
+    "rooftop chill-out",
+    "bike workshop",
+    "home automation"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament d'Esplugues de Llobregat",
+   "brochure_url": "https://promociones.neinorhomes.com/noba-homes-v/"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Named bank guarantor and land registry and cadastral references published",
+   "Delivery quarter stated",
+   "Listed parent developer with delivered Barcelona-area projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.neinorhomes.com/en/promocion/no-ba-homes-v/",
+   "https://www.neinorhomes.com/uploads/promociones/documentos/2362//dosier_promociones/0000000003531285.PDF",
+   "https://www.neinorhomes.com/uploads/promociones/documentos/3738//dosier_promociones/0000000003617899.PDF",
+   "https://www.neinorhomes.com/en/promociones/",
+   "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765",
+   "https://www.idealista.com/news/node/909340"
+  ]
  }
 ]

@@ -952,5 +952,174 @@
    "https://m.flsenate.gov/Statutes/718.202"
   ],
   "verified_score": 2
+ },
+ {
+  "slug": "colette-residences-brickell-meta",
+  "name": "Colette Residences",
+  "developer": "META Development (META 1870 LLC)",
+  "area": "South Brickell, Miami (1870-1880 Brickell Ave)",
+  "country": "USA",
+  "market": "Miami",
+  "stage": "off-plan",
+  "url": "https://www.manhattanmiami.com/miami-pre-construction/colette-residences",
+  "docs_url": "https://www.manhattanmiami.com/miami-pre-construction/colette-residences",
+  "permit_number": "DBPR condominium filing PR77830",
+  "docs_listed": [
+   "unit collections with sizes 2,143 to 6,128 sq ft (agent)",
+   "prices, floor plans and deposit schedule on request only",
+   "Florida DBPR filing PR77830 'Colette Brickell Condo' (META 1870 LLC)",
+   "USD 18.5M acquisition and development loan (Florida YIMBY, May 2026)"
+  ],
+  "note": "Five-storey boutique of 38 residences on Brickell Avenue; condo filed with Florida DBPR (PR77830, META 1870 LLC). Florida YIMBY reported an USD 18.5M pre-development loan in May 2026 and a 2028 target; prices, plans, deposit terms and the developer's record are not published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": "DBPR PR77830",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 38,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77830 'Colette Brickell Condo, a Condo', developer META 1870 LLC, Dade; no building permit number published and Florida YIMBY says entitlement work is still in progress",
+   "escrow": "Agent FAQ only says to request the deposit schedule; Florida 718.202 statutory escrow applies to deposits up to 10%",
+   "progress": "Pre-construction; May 2026 loan funds pre-development work (Florida YIMBY)",
+   "plans": "Floor plans on request only",
+   "record": "No completed projects named; agent describes META as a newer name in the market",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR by META 1870 LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "38 residences over five storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=39644"
+   },
+   {
+    "claim": "Assemblage completed for USD 21.5M total",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=39644"
+   },
+   {
+    "claim": "Financing: USD 28M construction loan from Arixa Capital (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=39644"
+   },
+   {
+    "claim": "USD 18.5M acquisition and development loan from BridgeCity Capital",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=39644"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/?p=39644"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/?p=39644"
+   },
+   {
+    "claim": "Developer has delivered earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.manhattanmiami.com/miami-pre-construction/colette-residences"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "META 1870 LLC (DBPR developer of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 199,
+   "size_max_m2": 569,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": 25.756,
+   "lng": -80.204,
+   "permit_authority": "City of Miami Building Department; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filing confirmed in Florida DBPR registry",
+   "Land assembly and loan reported by independent press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.manhattanmiami.com/miami-pre-construction/colette-residences",
+   "https://floridayimby.com/?p=39644",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 2
  }
 ]
