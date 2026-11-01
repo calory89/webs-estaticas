@@ -33,7 +33,8 @@
     var o = document.querySelector('meta[property="og:url"]'); if (o && url) o.setAttribute('content', url);
   }
   var id = '';
-  try { id = (new URLSearchParams(location.search).get('id') || '').trim().toUpperCase(); } catch (e) {}
+  try { id = (new URLSearchParams(location.search).get('id') || ((location.pathname.match(/^\/p\/([A-Za-z0-9-]{3,20})\/?$/) || [])[1]) || '').trim().toUpperCase(); } catch (e) {}
+  var ssr = document.getElementById('ssr'); if (ssr) ssr.remove();
 
   function notFound(msg){
     setMeta('Project not found | Kolaboro', 'This project file could not be found. Search every off-plan project Kolaboro tracks.', 'https://kolaboro.com/p/');
@@ -109,7 +110,7 @@
     var seg = function(n, cls){ var s = '<div class="pf-seg ' + (cls || '') + '" aria-hidden="true">'; for (var j = 0; j < 6; j++) s += '<i class="' + (j < n ? 'on' : '') + '"></i>'; return s + '</div>'; };
     var pct = function(n){ return ct ? (n / ct * 100) : 0; };
 
-    var dq = dataQuality(c), url = 'https://kolaboro.com/p/?id=' + encodeURIComponent(c.id);
+    var dq = dataQuality(c), url = 'https://kolaboro.com/p/' + encodeURIComponent(c.id) + '/';
     var W = window.KBWatch, saved = W ? W.has(c.id) : false;
     var starBtn = W ? '<button type="button" class="btn btn-line pf-star" id="pf-star" aria-pressed="' + saved + '">' + starLabel(saved) + '</button>' : '';
 

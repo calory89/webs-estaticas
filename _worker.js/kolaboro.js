@@ -644,3 +644,59 @@ export async function ask(req, env, ctx) {
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
   return json(res);
 }
+
+// ---------- Server-rendered project and market pages for search engines and AI crawlers ----------
+const LVL = { registry: 'confirmed in an official register', independent: 'confirmed by an independent source', developer: 'stated only by the developer', contradicted: 'contradicted by another source', none: 'not published' };
+const CKN = { permit: 'Permit or licence number', escrow: 'Deposit protection', progress: 'Construction progress', plans: 'Floor or site plans', record: 'Developer track record', returns_ok: 'No guaranteed returns' };
+const hesc = t => String(t == null ? '' : t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const slugM = m => encodeURIComponent(m.toLowerCase().replace(/\s+/g, '-'));
+export async function dataSitemap() {
+  let d; try { d = await openData(); } catch (e) { return new Response('', { status: 503 }); }
+  const cs = d.cases || [], mk = [...new Set(cs.map(c => c.market))];
+  const urls = cs.map(c => '<url><loc>https://kolaboro.com/p/' + encodeURIComponent(c.id) + '/</loc><lastmod>' + d.updated + '</lastmod></url>').concat(mk.map(m => '<url><loc>https://kolaboro.com/m/' + slugM(m) + '/</loc><lastmod>' + d.updated + '</lastmod></url>'));
+  return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls.join('') + '</urlset>', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+}
+export async function ssr(base, u, kind) {
+  let d; try { d = await openData(); } catch (e) { return base; }
+  const cs = d.cases || [], key = decodeURIComponent(u.pathname.split('/')[2] || '');
+  let title, desc, canon, body, ld;
+  if (kind === 'p') {
+    const c = cs.find(x => x.id.toLowerCase() === key.toLowerCase());
+    if (!c) return new Response(base.body, { status: 404, headers: base.headers });
+    const place = c.region && c.region !== c.market ? c.region + ', ' + c.market : c.market;
+    const ck = c.checks || {}, v = c.verified || {}, cl = c.claims || {};
+    title = c.id + ': off-plan project in ' + place + ', ' + c.country + ' | Kolaboro';
+    desc = 'Anonymous off-plan project in ' + place + ' (' + (c.stage || 'off-plan') + '). ' + c.score + ' of 6 buyer checks public, ' + (c.vscore || 0) + ' confirmed by a register or independent source' + (cl.contradicted ? ', ' + cl.contradicted + ' developer claims contradicted' : '') + '. Checked ' + (c.checked || d.updated) + '.';
+    canon = 'https://kolaboro.com/p/' + encodeURIComponent(c.id) + '/';
+    const rows = Object.keys(CKN).map(k => { const val = ck[k]; const pub = k === 'permit' ? val === 2 : k === 'progress' ? val != null : val === true; return '<li>' + CKN[k] + ': ' + (pub ? 'public' : 'not public') + (v[k] ? ', ' + LVL[v[k]] : '') + '</li>'; }).join('');
+    body = '<h1>' + hesc(c.id) + ': off-plan project in ' + hesc(place) + ', ' + hesc(c.country) + '</h1><p>' + hesc(desc) + '</p><ul>' + rows + '</ul>' +
+      (cl.verified + cl.unverified + cl.contradicted ? '<p>Developer claims tested: ' + cl.verified + ' verified, ' + cl.unverified + ' unverified, ' + cl.contradicted + ' contradicted.</p>' : '') +
+      (c.overdue ? '<p>' + c.overdue + ' months past the promised handover.</p>' : '') + ((c.flags || []).length ? '<p>Problems in public reports: ' + c.flags.map(hesc).join('; ') + '</p>' : '') +
+      ((c.q || []).length ? '<h2>What to ask the developer</h2><ul>' + c.q.map(x => '<li>' + hesc(x) + '</li>').join('') + '</ul>' : '') +
+      '<p><a href="/m/' + slugM(c.market) + '/">More projects in ' + hesc(c.market) + '</a> · <a href="/database">The database</a> · <a href="/how-we-score">How we score</a></p>';
+    ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated, isPartOf: { '@type': 'Dataset', name: 'Kolaboro off-plan property database', url: 'https://kolaboro.com/database', license: 'https://creativecommons.org/licenses/by/4.0/' }, about: { '@type': 'Place', name: place + ', ' + c.country } };
+  } else {
+    const L = cs.filter(x => slugM(x.market) === encodeURIComponent(key.toLowerCase().replace(/\s+/g, '-')) || x.market.toLowerCase() === key.toLowerCase());
+    if (!L.length) return new Response(base.body, { status: 404, headers: base.headers });
+    const m = L[0].market, n = L.length, avg = f => (L.reduce((a, x) => a + (f(x) || 0), 0) / n);
+    const pct = f => Math.round(L.filter(f).length / n * 100);
+    title = 'Off-plan projects in ' + m + ', ' + L[0].country + ': what developers publish | Kolaboro';
+    desc = n + ' off-plan projects tracked in ' + m + '. On average ' + avg(x => x.score).toFixed(1) + ' of 6 buyer checks public; ' + pct(x => (x.checks || {}).permit === 2) + '% publish a permit number and ' + pct(x => (x.checks || {}).escrow === true) + '% deposit protection. Updated ' + d.updated + '.';
+    canon = 'https://kolaboro.com/m/' + slugM(m) + '/';
+    body = '<h1>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h1><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="/p/' + encodeURIComponent(x.id) + '/">' + hesc(x.id) + '</a>: ' + hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed</li>').join('') + '</ul>';
+    ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated };
+  }
+  const tags = '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
+  let seenTitle = false;
+  const res = new HTMLRewriter()
+    .on('title', { element(e) { e.remove(); } })
+    .on('meta[name="description"]', { element(e) { e.remove(); } })
+    .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+    .on('meta[property="og:title"],meta[property="og:description"],meta[property="og:url"]', { element(e) { e.remove(); } })
+    .on('meta[name="robots"]', { element(e) { e.remove(); } })
+    .on('head', { element(e) { e.append(tags, { html: true }); } })
+    .on('main', { element(e) { e.prepend('<section class="sec ssr-only" id="ssr"><div class="wrap">' + body + '</div></section>', { html: true }); } })
+    .transform(base);
+  const h = new Headers(res.headers); h.set('cache-control', 'public, max-age=600');
+  return new Response(res.body, { status: 200, headers: h });
+}

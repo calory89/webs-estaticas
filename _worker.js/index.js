@@ -55,11 +55,21 @@ async function viaTop3(req, env, ctx) {
 // kolaboro.com: browser security headers (no framing of private pages, camera and location only for our own pages)
 function kbHeaders(r, u) {
   const ct = r.headers.get('content-type') || '';
-  if (!/text\/html/.test(ct)) return r;
+  if (!/text\/html/.test(ct)) {
+    // static files: versioned (?v=) files never change, so browsers keep them a year; fonts and images a month
+    if (r.status === 200 && /\.(css|js|woff2|svg|png|webp|jpg|jpeg|gif|ico|mp4|pdf)$/i.test(u.pathname)) {
+      const h = new Headers(r.headers);
+      h.set('cache-control', /[?&]v=/.test(u.search) ? 'public, max-age=31536000, immutable' : (/\.(woff2|png|webp|jpg|jpeg|gif|ico|svg|mp4)$/i.test(u.pathname) ? 'public, max-age=2592000' : 'public, max-age=3600'));
+      h.set('x-content-type-options', 'nosniff');
+      return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+    }
+    return r;
+  }
   const h = new Headers(r.headers);
   const priv = /^\/(admin|portal|login|agents\/me|agents\/apply)(\/|$)/.test(u.pathname);
-  h.set('x-frame-options', priv ? 'DENY' : 'SAMEORIGIN');
-  h.set('content-security-policy', "frame-ancestors " + (priv ? "'none'" : "'self'") + "; base-uri 'self'; object-src 'none'; form-action 'self' https://www.paypal.com");
+  const embed = /^\/(embed|press\/data\/embed)(\/|$)/.test(u.pathname);   // widgets made to be embedded by other sites
+  if (embed) h.delete('x-frame-options'); else h.set('x-frame-options', priv ? 'DENY' : 'SAMEORIGIN');
+  h.set('content-security-policy', "frame-ancestors " + (priv ? "'none'" : embed ? "*" : "'self'") + "; base-uri 'self'; object-src 'none'; form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co");
   h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), interest-cohort=()');
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
@@ -89,6 +99,13 @@ export default {
       }
     }
     if (u.pathname.startsWith('/__sb/')) return sbProxy(req, u);
+    if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || /^\/m\/[^/]{2,60}\/?$/.test(u.pathname) || u.pathname === '/sitemap-data.xml')) {
+      if (!kb) kb = await import('./kolaboro.js');
+      if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
+      const isP = u.pathname.startsWith('/p/'), shell = new URL(isP ? '/p/' : '/m/', u);
+      const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
+      return kb.ssr(base, u, isP ? 'p' : 'm');
+    }
     if (host === 'kolaboro.com') { const kr = kbHeaders(await this.site(req, env, ctx, u, host), u); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script src="/__k/ktraffic.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kr; }
     return this.site(req, env, ctx, u, host);
   },

@@ -1,6 +1,6 @@
 # Kolaboro
 
-> Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 640 off-plan projects in 114 markets and 62 countries (1 Nov 2026), 3,922 developer claims tested. Pre-purchase check €490, construction monitoring €99 a month.
+> Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 761 off-plan projects in 137 markets and 74 countries (1 Nov 2026), 7,572 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Pre-purchase check €490, construction monitoring €99 a month.
 
 ## Key pages
 - [Technology: the verification engine (try it live)](https://kolaboro.com/technology/)
@@ -8,14 +8,13 @@
 - [Agent copilot (live demo)](https://kolaboro.com/copilot/)
 - [System status](https://kolaboro.com/status/)
 - [Open data and API](https://kolaboro.com/docs/api/)
-- [Product tour for investors and YC](https://kolaboro.com/yc/)
 - [Kolaboro: never buy property abroad alone](https://kolaboro.com/)
 - [Check a property project (free desk review)](https://kolaboro.com/check/)
 - [Book a pre-purchase check](https://kolaboro.com/book/)
 - [Pricing](https://kolaboro.com/pricing/)
 - [Security and your data](https://kolaboro.com/security/)
 - [Open metrics, including the zeros](https://kolaboro.com/metrics/)
-- [Live cases: 328 projects](https://kolaboro.com/cases/)
+- [Live cases: every project](https://kolaboro.com/cases/)
 - [Sample client report: Villa Kenanga (fictional)](https://kolaboro.com/report/sample/)
 - [How the Kolaboro Trust Score works](https://kolaboro.com/how-we-score/)
 - [Become a Kolaboro agent](https://kolaboro.com/agents/)
@@ -80,3 +79,27 @@
 - Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
 - Agents are never paid by developers. Paying for verification never changes a Trust Score.
 - Kolaboro does not currently hold client money and does not give legal or financial advice.
+
+## Data and research
+- [The database: scale, verification levels, every market](https://kolaboro.com/database/)
+- [Off-plan Transparency Index, markets ranked](https://kolaboro.com/transparency-index/)
+- [State of Off-Plan 2026 report](https://kolaboro.com/report/state-of-off-plan-2026/)
+- [Market pages, e.g. Bali](https://kolaboro.com/m/bali/)
+- [Project file example](https://kolaboro.com/p/BALI-014/)
+- [Off-Plan Disclosure Standard v1.0](https://kolaboro.com/standard/)
+- [Official registers buyers can search, by country](https://kolaboro.com/registers/)
+- [Satellite watch of development areas](https://kolaboro.com/satellite/)
+- [Data desk for journalists](https://kolaboro.com/press/data/)
+- [Open data API, no key (JSON, CSV)](https://kolaboro.com/api/open)
+- [Open-source scoring rules](https://kolaboro.com/open/scoring.py)
+- [Corrections and accuracy check](https://kolaboro.com/corrections/)
+- [How we collect data](https://kolaboro.com/data-policy/)
+- [Public roadmap](https://kolaboro.com/roadmap)
+
+## Buyer tools
+- [Market match](https://kolaboro.com/tools/market-match/)
+- [Payment plan risk score](https://kolaboro.com/tools/payment-risk/)
+- [Total cost of ownership](https://kolaboro.com/tools/total-cost/)
+- [Deposit protection finder](https://kolaboro.com/tools/deposit-protection/)
+- [Personal off-plan checklist](https://kolaboro.com/tools/my-checklist/)
+- [Compare projects](https://kolaboro.com/compare/)

@@ -4,6 +4,7 @@
   var LV = [['registry','Registry','#17212B'],['independent','Confirmed','#1E8A5A'],['developer','Not confirmed','#B9B4A8'],['contradicted','Contradicted','#C9461A'],['none','Not published','#E7E4DC']];
   var ST = [['off-plan','off-plan'],['under construction','under construction'],['completed','completed, still selling']];
   var BASE = 'https://kolaboro.com/m/';
+  var ssrEl = document.getElementById('ssr'); if (ssrEl) ssrEl.remove();
   var $ = function(i){ return document.getElementById(i); };
   var K = window.KTI || {};
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -26,7 +27,7 @@
     var l = q('link[rel="canonical"]'); if (l) l.setAttribute('href', url);
     var o = q('meta[property="og:url"]'); if (o) o.setAttribute('content', url);
   }
-  function params(){ var p; try { p = new URLSearchParams(location.search); } catch (e) { return { m: '', c: '' }; } return { m: p.get('market') || '', c: p.get('country') || '' }; }
+  function params(){ var p; try { p = new URLSearchParams(location.search); } catch (e) { return { m: '', c: '' }; } var pm = (location.pathname.match(/^\/m\/([^\/]{2,60})\/?$/) || [])[1]; return { m: p.get('market') || (pm ? decodeURIComponent(pm).replace(/-/g, ' ') : ''), c: p.get('country') || '' }; }
 
   function stageTags(C){
     var n = {}; C.forEach(function(c){ n[c.stage] = (n[c.stage] || 0) + 1; });
@@ -143,7 +144,7 @@
     wireSort(L.draw);
     var t = 'Off-plan in ' + place + ': ' + C.length + ' project' + pl + ' checked | Kolaboro';
     var desc = C.length + ' off-plan project' + pl + ' in ' + market + ': ' + pct(share(C, 'permit')) + ' publish a permit number, ' + pct(share(C, 'escrow')) + ' publish deposit protection' + (r ? ', transparency index ' + r.index.toFixed(1) + ' (rank ' + r.rank + ' of ' + R.rows.length + ')' : '') + '.';
-    setMeta(t, desc, BASE + '?market=' + encodeURIComponent(market));
+    setMeta(t, desc, BASE + encodeURIComponent(market.toLowerCase().replace(/\s+/g, '-')) + '/');
   }
 
   function renderCountry(d, country, R){
