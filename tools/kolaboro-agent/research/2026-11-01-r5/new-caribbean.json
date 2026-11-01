@@ -775,7 +775,7 @@
   "area": "Children's Bay Cay and Williams Cay, Exuma",
   "country": "Bahamas",
   "market": "Bahamas",
-  "stage": "under construction",
+  "stage": "off-plan",
   "status": "active",
   "url": "https://www.sellingbahamas.com/buildings/amancaya-bahamas/",
   "docs_url": "https://www.aman.com/amancaya",
@@ -2121,7 +2121,7 @@
   "area": "Hofi Sint Joris, Koraal Tabak, Willemstad",
   "country": "Curacao",
   "market": "Curacao",
-  "stage": "under construction",
+  "stage": "off-plan",
   "status": "active",
   "url": "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/",
   "docs_url": "https://baiavista.com/masterplan/",
@@ -2299,6 +2299,563 @@
    "https://baiavista.com/over-ons/",
    "https://baiavista.com/huuranalyse-rond-6-rendement-bij-baia-vista/",
    "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/"
+  ]
+ },
+ {
+  "slug": "caribbean-town-palmaruba-group",
+  "name": "Caribbean Town Condos & Villas",
+  "developer": "PalmAruba Group (principal Victor Acosta)",
+  "area": "Bushiri / Madiki, near Druif Beach, Oranjestad",
+  "country": "Aruba",
+  "market": "Aruba",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.weichertaruba.com/real-estate-summit-2026/",
+  "docs_url": "https://caribbeantownaruba.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: unit models with size and price (e.g. Rincon 2BR 69.4 m2, US$283,000)",
+   "agent (exclusive): building-by-building construction progress % from the developer's report (townhouses 90%, Guadeloupe Residences 40%, site infrastructure 20%)",
+   "agent: downloadable construction report, model home tours",
+   "developer: about-us page naming earlier projects (Oceania Residence, Palma Real, Ponton Plaza, PalmAruba Condos and others)",
+   "developer: 'our properties guarantee long-term value' wording"
+  ],
+  "note": "Large gated community of studios, condos, townhouses and villas 0.4 miles from Druif Beach by a long-established local developer, aimed at both Arubans and foreign buyers. The exclusive agent publishes the developer's progress report by building (security booth 95%, first residential blocks 90%, later blocks 40%, site-wide infrastructure 20%). Home count is given as 250 or 328; launch was first set for Sept 2025. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 283000,
+   "currency": "USD",
+   "title": "condominium apartment right (land tenure not stated)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 20,
+   "progress_updates": true,
+   "developer_delivered": "Developer names Oceania Residence, Palma Real, Ponton Plaza, Calbas Plaza, Montana Plaza, Palm Beach Plaza, Casa del Mar and PalmAruba Condos; claims 500+ units sold (own site) or 800+ residential units built (agent)",
+   "units": 328,
+   "payment_plan": null,
+   "price_per_m2": 4078
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or licence number published",
+   "escrow": null,
+   "progress": "Exclusive agent page summarises developer construction report with % per building; site-wide infrastructure 20% used as the lowest published figure",
+   "plans": "Unit pages give area, rooms and price, with model videos, but no floor plan drawings found",
+   "record": "Developer names several completed Aruba projects; figures for units differ (500+ sold vs 800+ built)",
+   "returns": "No rental guarantee; site says properties 'guarantee long-term value' (appreciation language, no figure)"
+  },
+  "positives": [
+   "Building-level construction progress percentages published",
+   "Entry prices under US$300,000 with unit sizes",
+   "Developer with several named completed local projects"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Townhouses and first blocks 90% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.weichertaruba.com/real-estate-summit-2026/"
+   },
+   {
+    "claim": "Site-wide infrastructure 20% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.weichertaruba.com/real-estate-summit-2026/"
+   },
+   {
+    "claim": "250 homes",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.weichertaruba.com/real-estate-summit-2026/"
+   },
+   {
+    "claim": "Launching September 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/caribbeantownaruba"
+   },
+   {
+    "claim": "Developer built 800+ residential units",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://caribbeantownaruba.com/about-us/"
+   },
+   {
+    "claim": "Earlier projects Oceania Residence, Palma Real, Ponton Plaza",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbeantownaruba.com/about-us/"
+   },
+   {
+    "claim": "Rincon 2BR 69.4 m2 at US$283,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbeantownaruba.com/properties/rincon/"
+   },
+   {
+    "claim": "0.4 miles from the beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbeantownaruba.com/"
+   },
+   {
+    "claim": "Properties guarantee long-term value",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbeantownaruba.com/"
+   },
+   {
+    "claim": "Building permit granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caribbeantownaruba.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Aruba",
+   "developer_company": "PalmAruba Group",
+   "developer_projects_delivered": 8,
+   "developer_units_delivered": 500,
+   "listed_or_audited": null,
+   "construction_start": "2022",
+   "handover_promised": null,
+   "original_handover": "2025-Q3",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR townhouse",
+    "2BR condo",
+    "villa"
+   ],
+   "size_min_m2": 69,
+   "size_max_m2": null,
+   "price_min": 283000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "No restriction on foreign buyers in Aruba; tenure (eigendom or long lease) not stated",
+   "rental_programme": null,
+   "service_charge": "HOA-managed (amount not stated)",
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "playground",
+    "sports areas",
+    "pet park",
+    "shopping centre",
+    "gated security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DIP (Directie Infrastructuur en Planning), Aruba",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://caribbeantownaruba.com/",
+   "https://caribbeantownaruba.com/about-us/",
+   "https://caribbeantownaruba.com/properties/rincon/",
+   "https://www.weichertaruba.com/real-estate-summit-2026/",
+   "https://linkedin.com/company/caribbeantownaruba",
+   "https://aruba-forever.com/guides/new-developments-aruba.html"
+  ]
+ },
+ {
+  "slug": "city-place-luxury-condos-punta-cana",
+  "name": "City Place Luxury Condos & Shops (Phase 1)",
+  "developer": "City Place Punta Cana group (CONFOTUR promoter Inversiones Babesthe, S.R.L.)",
+  "area": "Boulevard Turistico del Este, Downtown Punta Cana / Bavaro",
+  "country": "Dominican Republic",
+  "market": "Punta Cana",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://axiainversiones.com/proyecto/city-place/",
+  "docs_url": "https://cityplacepc.com/punta-cana-condos-for-sale/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: unit types (studio A/B 50 m2, 1BR 70 m2, 2BR 100 m2) from US$128,500, optional furniture packages",
+   "developer master site: City Place masterplan components (The Beach, CP Luxury Condos, Hilton and others)",
+   "agent: 19 buildings and 1,209 apartments, phase 1 buildings 1-6 with 362 units",
+   "agent: payment US$3,000 reservation, 20% on contract, 40% during construction, 40% on delivery",
+   "agent: deliveries Oct 2026 (buildings 1-4) and May 2027 (buildings 5-6); earlier Dec 2025",
+   "agent: CONFOTUR exemption claimed"
+  ],
+  "note": "Large mixed-use condo district near Downtown Punta Cana (1,209 apartments in 19 buildings, phase 1 of 362 units) aimed at foreign investors from about US$100k to US$129k. The official CONFOTUR register shows definitive classification CONFOTUR01-01035 approved 26 Nov 2025 for 'City Place Luxury Condos & Shops' (promoter Inversiones Babesthe, S.R.L.). First-phase delivery has moved from Dec 2025 to Oct 2026 and May 2027. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 128500,
+   "currency": "USD",
+   "title": "freehold condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 1209,
+   "payment_plan": "US$3,000 reservation; 20% on contract; 40% during construction; 40% on delivery; developer financing during construction",
+   "price_per_m2": 2570
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building licence number; only the CONFOTUR tax classification is on record",
+   "escrow": null,
+   "progress": "Agents state phase 1 is 'en ejecucion' and building-by-building delivery dates; no dated photos or % found",
+   "plans": "Unit types and sizes listed, no floor plan drawings found on the developer pages opened",
+   "record": "Agent FAQ says the builder 'owns' Hotel Boutique Oceana Esplendor, Rivera Bay, The Reef, Poseidonia Residences and others, without saying which are completed",
+   "returns": "Agent claims 'alta rentabilidad' from holiday rentals without a figure or guarantee"
+  },
+  "positives": [
+   "Definitive CONFOTUR classification confirmed on the official MITUR register",
+   "Low entry prices and published payment plan"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has definitive CONFOTUR classification",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+   },
+   {
+    "claim": "Promoter company is Inversiones Babesthe, S.R.L.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+   },
+   {
+    "claim": "Phase 1 delivery December 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N"
+   },
+   {
+    "claim": "Buildings 1-4 delivered Oct 2026, 5-6 May 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axiainversiones.com/proyecto/city-place/"
+   },
+   {
+    "claim": "1,209 apartments in 19 buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axiainversiones.com/proyecto/city-place/"
+   },
+   {
+    "claim": "Prices from US$128,500",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cityplacepc.com/punta-cana-condos-for-sale/"
+   },
+   {
+    "claim": "First buyer exempt from transfer tax and IPI for 15 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N"
+   },
+   {
+    "claim": "Hilton hotel within the City Place masterplan holds CONFOTUR approval",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axiainversiones.com/proyecto/city-place/"
+   },
+   {
+    "claim": "Builder delivered earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axiainversiones.com/proyecto/city-place/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Punta Cana, Dominican Republic",
+   "developer_company": "Inversiones Babesthe, S.R.L. (CONFOTUR promoter)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": "2025-Q4",
+   "delay_months": 10,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 118,
+   "price_min": 100650,
+   "price_max": 263875,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "US$3,000 reservation; 20/40/40",
+   "foreign_ownership": "Freehold title, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": "about US$150-200 a month (agent estimate)",
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "central park",
+    "interactive fountain",
+    "beach club membership",
+    "yoga studio",
+    "dog park",
+    "shops and restaurants",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministerio de Turismo (land-use non-objection), MIVED and Ayuntamiento (building licence); CONFOTUR for tax classification",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://cityplacepc.com/",
+   "https://cityplacepc.com/punta-cana-condos-for-sale/",
+   "https://cityplace.com.do/",
+   "https://axiainversiones.com/proyecto/city-place/",
+   "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N",
+   "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur",
+   "https://confotur.mitur.gob.do/consulta/"
+  ]
+ },
+ {
+  "slug": "saphora-grace-bay-rockfin",
+  "name": "Saphora Grace Bay",
+  "developer": "RockFIN Group (builder FBW Construction TCI Ltd)",
+  "area": "Allegro Road, Grace Bay, Providenciales",
+  "country": "Turks and Caicos Islands",
+  "market": "Turks and Caicos",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://saphoragracebay.com/saphora-grace-bay/",
+  "docs_url": "https://saphoragracebay.com/faq/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 44 residences (20 x 1BR, 14 x 2BR, 8 x 3BR, 2 x 4BR penthouses) plus 10 commercial units",
+   "developer: floor plans by unit type and interactive availability map with unit plans",
+   "developer: completion Q2 2027, construction under way",
+   "developer: FAQ on strata bylaws, strata fees, occupancy limits, furniture package (about 10%, 50% deposit)",
+   "developer: short-term rentals only through the RockFIN Rental Program",
+   "MLS grid (Sep 2026): 10 units listed from US$923,250, 1,087 to 3,326 sq ft"
+  ],
+  "note": "Five-storey mixed-use condo building a short walk from Grace Bay Beach by RockFIN Group, formed in 2023 and also behind the planned AMARIS Grace Bay (LXR) project. Construction is under way with completion targeted for Q2 2027; floor plans and strata rules are published, but no permit number, deposit protection or dated progress. MLS listings in Sep 2026 started at US$923,250. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 923250,
+   "currency": "USD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 44,
+   "payment_plan": null,
+   "price_per_m2": 9145
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning or building permit number published",
+   "escrow": "Only the furniture package terms are given (50% deposit on order); no deposit protection for unit purchases stated",
+   "progress": "Only 'construction is already underway', no dates, photos or %",
+   "plans": "Floor plans for each unit type and per-unit plans on the availability map",
+   "record": "RockFIN formed in 2023; no completed developments named (CEO built his own home); team said to have experience building resorts in TCI",
+   "returns": "General claims of high rental returns, no figure or guarantee; rental pool optional but short-term lets must use the RockFIN programme"
+  },
+  "positives": [
+   "Detailed floor plans and unit availability published",
+   "Strata bylaws, occupancy limits and fee structure explained"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/saphora-grace-bay/"
+   },
+   {
+    "claim": "Completion Q2 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/faq/"
+   },
+   {
+    "claim": "44 residences and 10 commercial units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/faq/"
+   },
+   {
+    "claim": "Eight commercial units for sale (FAQ) vs six retail spaces (overview)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://saphoragracebay.com/faq/"
+   },
+   {
+    "claim": "Units listed on MLS from US$923,250",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theresortatlas.tciinsider.com/"
+   },
+   {
+    "claim": "RockFIN also behind AMARIS Grace Bay (Hilton LXR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/about/"
+   },
+   {
+    "claim": "Built by FBW Construction TCI Ltd, part of RockFIN",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/about/"
+   },
+   {
+    "claim": "Planning permission granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/faq/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://saphoragracebay.com/faq/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Providenciales, Turks and Caicos Islands",
+   "developer_company": "RockFIN Group; FBW Construction TCI Ltd (builder)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR lockout",
+    "3BR lockout",
+    "4BR penthouse",
+    "commercial unit"
+   ],
+   "size_min_m2": 101,
+   "size_max_m2": 309,
+   "price_min": 923250,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata title; 10% stamp duty applies in TCI",
+   "rental_programme": "Optional RockFIN Rental Program; third-party short-term letting prohibited; furniture package mandatory to join",
+   "service_charge": "Annual strata fees incl. building hurricane insurance (amount not stated)",
+   "brand": null,
+   "amenities": [
+    "pool",
+    "fitness centre",
+    "bistro and restaurant",
+    "reception lobby",
+    "secure parking",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Physical Planning Board / Department of Planning, TCI",
+   "brochure_url": "https://saphoragracebay.com/brochure/"
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://saphoragracebay.com/saphora-grace-bay/",
+   "https://saphoragracebay.com/faq/",
+   "https://saphoragracebay.com/about/",
+   "https://saphoragracebay.com/investment-opportunity/",
+   "https://saphoragracebay.com/availability/",
+   "https://theresortatlas.tciinsider.com/"
   ]
  }
 ]

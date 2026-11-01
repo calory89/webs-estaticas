@@ -1716,5 +1716,739 @@
   "status": "active",
   "added": "2026-11-01",
   "permit_number": "City of Gold Coast OPW/2025/665 (operational works, 14 Seaview Ave)"
+ },
+ {
+  "slug": "the-anderson-chatswood-huirong-changfa",
+  "name": "The Anderson, Chatswood",
+  "developer": "Huirong Group and Changfa Group JV (applicant Anderson Chatswood Development Pty Ltd)",
+  "area": "Chatswood, Lower North Shore",
+  "country": "Australia",
+  "market": "Sydney",
+  "stage": "under construction",
+  "url": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson",
+  "docs_url": "https://chatswoodanderson.com.au/",
+  "docs_listed": [
+   "developer: 1 to 4 bedroom apartments and penthouses, Hayball interiors, AJC Architects, developer profiles",
+   "Changfa site: completed Ara Leichhardt (139 apartments) and Luxton Carlingford",
+   "NSW Planning Portal SSD-78520463 approved 19 Nov 2025 (122 dwellings)",
+   "Sydney North Planning Panel DA2023/152 approved 18 Dec 2024 (26 storeys, 84 units)",
+   "news: construction started Oct 2026, from AUD 1.09M, completion late 2029"
+  ],
+  "note": "Mixed-use tower of about 120 apartments at 54-56 Anderson St by a Huirong Group and Changfa joint venture, first approved by the Sydney North Planning Panel as an 84-unit, 26-storey scheme (DA2023/152, Dec 2024) and re-approved as a 122-dwelling in-fill affordable housing SSD (SSD-78520463, 19 Nov 2025). Construction began in Oct 2026 with completion targeted for late 2029; prices from AUD 1.09M and no head contractor named publicly. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1090000,
+   "currency": "AUD",
+   "title": "freehold strata title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": "NSW SSD-78520463",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Changfa lists completed Ara Leichhardt (139 apartments) on its own site",
+   "units": 122,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Not on the developer site. NSW Planning Portal shows SSD-78520463 (in-fill affordable housing, Willoughby) approved 19 Nov 2025; Willoughby Council SSD table lists it at 122 dwellings; Planning Panel determination PPSSNH-396 approved DA2023/152 on 18 Dec 2024 for applicant Anderson Chatswood Development Pty Ltd.",
+   "escrow": "No deposit information published (NSW law requires off-plan deposits to be held in trust, but this is not stated).",
+   "progress": "No developer updates; apartments.com.au (27 Oct 2026) reports construction has commenced, head contractor not identified.",
+   "plans": "Floor plans offered on enquiry only.",
+   "record": "Changfa site lists Ara Leichhardt as completed; Huirong profile describes 40 years in China without named Australian deliveries.",
+   "returns": "No rental or yield claims."
+  },
+  "claims": [
+   {
+    "claim": "State significant development consent SSD-78520463 approved",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/major-projects/projects/mixed-use-development-fill-affordable-housing-54-56-anderson-street-chatswood"
+   },
+   {
+    "claim": "Earlier DA2023/152 approved by the Sydney North Planning Panel",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PPSSNH-396!20241220T034052.469%20GMT"
+   },
+   {
+    "claim": "About 120 residences",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.willoughby.nsw.gov.au/Development/State-Significant-Development-Applications-in-the-Willoughby-LGA"
+   },
+   {
+    "claim": "Construction started",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson"
+   },
+   {
+    "claim": "Completion late 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson"
+   },
+   {
+    "claim": "Prices from AUD 1.09M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson"
+   },
+   {
+    "claim": "Never-to-be-built-out views",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://chatswoodanderson.com.au/"
+   },
+   {
+    "claim": "Changfa has completed Ara Leichhardt",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://changfa.com.au/"
+   },
+   {
+    "claim": "Changfa annual turnover over AUD 2 billion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://changfa.com.au/"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://chatswoodanderson.com.au/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Chatswood, Australia (Changfa sales office); Huirong Group, China",
+   "developer_company": "Anderson Chatswood Development Pty Ltd (planning applicant)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-10",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1090000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers need FIRB approval (new dwellings) and pay NSW surcharge purchaser duty",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "ground-floor retail",
+    "EV charging",
+    "outdoor entertaining area",
+    "publicly accessible through-site link"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "NSW Department of Planning (SSD) / Sydney North Planning Panel and Willoughby City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Two separate planning consents on the NSW Planning Portal",
+   "Construction has started"
+  ],
+  "flags": [],
+  "sources": [
+   "https://chatswoodanderson.com.au/",
+   "https://changfa.com.au/",
+   "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson",
+   "https://www.apartments.com.au/new-apartments/the-anderson-chatswood-54-56-anderson-street-chatswood-nsw-2067",
+   "https://www.planningportal.nsw.gov.au/major-projects/projects/mixed-use-development-fill-affordable-housing-54-56-anderson-street-chatswood",
+   "https://www.willoughby.nsw.gov.au/Development/State-Significant-Development-Applications-in-the-Willoughby-LGA",
+   "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PPSSNH-396!20241220T034052.469%20GMT"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "NSW SSD-78520463"
+ },
+ {
+  "slug": "elysium-fields-docklands-gurner",
+  "name": "Elysium Fields (Helios and stage 1 towers)",
+  "developer": "GURNER Group with Digital Harbour Holdings (Liberman family consortium)",
+  "area": "Docklands, Melbourne",
+  "country": "Australia",
+  "market": "Melbourne",
+  "stage": "under construction",
+  "url": "https://www.gurner.com.au/projects/docklands",
+  "docs_url": "https://elysiumfieldsbygurner.com.au/",
+  "docs_listed": [
+   "developer: Elysium Fields wellness precinct, Helios Penthouse Collection from AUD 1.895M",
+   "news: construction on four towers of 18 to 30 levels by Hamilton Marino and Maxcon",
+   "Victorian Government release: Minister for Planning approval, sod turned 6 Nov 2024",
+   "portal: Ministerial Planning Permit PA2000811-1",
+   "Maxcon: tower with 230 build-to-sell apartments and 102-key Veriu hotel, completion 03/2028"
+  ],
+  "note": "Wellness-themed five-tower precinct of about 1,100 residences on a long-vacant 2 ha Docklands site; the Victorian Premier turned the first sod in Nov 2024 for a ministerially approved first stage of more than 700 homes, and construction is now under way on four towers. Gurner reports 580 sales worth over AUD 500M across the first three towers, with Helios (260 residences) sold out except a penthouse collection from AUD 1.895M. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1895000,
+   "currency": "AUD",
+   "title": "freehold strata title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": "Victorian Ministerial Planning Permit PA2000811-1",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 1100,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Developer pages give no permit number. The Victorian Government release (6 Nov 2024) states the first stage was approved by the Minister for Planning; apartments.com.au cites Ministerial Planning Permit PA2000811-1 (not checked on the state register).",
+   "escrow": "Nothing published; Victorian law requires off-plan deposits to be held in trust, but the developer does not state it.",
+   "progress": "No developer updates; Premier's release confirms construction start Nov 2024; trade press (Aug 2026) reports construction on four towers.",
+   "plans": "No floor plans on the developer or Helios sites; register-interest only.",
+   "record": "Developer pages describe the group but list no completed projects with dates; not verified.",
+   "returns": "No rental guarantee or yield claim found."
+  },
+  "claims": [
+   {
+    "claim": "First stage approved by the Victorian Minister for Planning",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+   },
+   {
+    "claim": "Construction started November 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+   },
+   {
+    "claim": "Construction under way on four towers with Hamilton Marino and Maxcon",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025"
+   },
+   {
+    "claim": "Maxcon tower completion March 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://maxcon.net.au/projects/elysium-fields/"
+   },
+   {
+    "claim": "First stage of 700+ homes across three buildings",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/"
+   },
+   {
+    "claim": "580 apartments sold for over AUD 500M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.theurbandeveloper.com/articles/gurner-banks-sales-despite-downturn-elysium-fields"
+   },
+   {
+    "claim": "Helios 240 private residences sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025"
+   },
+   {
+    "claim": "Ministerial Planning Permit PA2000811-1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/elysium-fields-docklands-208-226-harbour-esplanade-docklands-vic-3008"
+   },
+   {
+    "claim": "Penthouses from AUD 1.895M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://helios.elysiumfieldsbygurner.com.au/"
+   },
+   {
+    "claim": "On-site reverse ageing clinic",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Melbourne, Australia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-11",
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 600,
+   "price_min": 1895000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers need FIRB approval (new dwellings) and pay Victorian foreign purchaser duty",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Veriu hotel (one tower); Saint Haven wellness concepts",
+   "amenities": [
+    "mineral bathing pools",
+    "sauna and steam",
+    "lap pool",
+    "gym",
+    "flotation and red-light therapy",
+    "private dining and rooftop lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Victorian Minister for Planning (Docklands)",
+   "brochure_url": null
+  },
+  "positives": [
+   "State government publicly confirmed the planning approval and construction start",
+   "Two named builders on site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.gurner.com.au/projects/docklands",
+   "https://elysiumfieldsbygurner.com.au/",
+   "https://helios.elysiumfieldsbygurner.com.au/",
+   "https://maxcon.net.au/projects/elysium-fields/",
+   "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/",
+   "https://www.theurbandeveloper.com/articles/gurner-banks-sales-despite-downturn-elysium-fields",
+   "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025",
+   "https://www.apartments.com.au/new-apartments/elysium-fields-docklands-208-226-harbour-esplanade-docklands-vic-3008",
+   "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Victorian Ministerial Planning Permit PA2000811-1"
+ },
+ {
+  "slug": "the-kubrick-freemans-bay-ockham",
+  "name": "The Kubrick",
+  "developer": "Ockham Residential (developer entity Periwinkle GP Limited)",
+  "area": "Freemans Bay, Auckland",
+  "country": "New Zealand",
+  "market": "New Zealand",
+  "stage": "off-plan",
+  "url": "https://www.ockham.co.nz/the-kubrick/",
+  "docs_url": "https://www.thekubrick.co.nz/",
+  "docs_listed": [
+   "developer: 52 apartments over nine levels, 2 to 4 bedrooms, 60 to 280 sq m, 616 sq m of shared facilities, 85 carparks",
+   "developer: floor plan options A/B/C per type (on project site)",
+   "LINZ Overseas Investment exemption certificate 202600324 (5 Jun 2026) for overseas buyers",
+   "news: construction from Q1 2027, completion 2029, 10% deposit, remaining units from NZD 1.3M"
+  ],
+  "note": "Nine-level, 52-apartment block in brick by Auckland developer Ockham on a 2,689 sq m site next to Harry Dansey Reserve, consented and in presales with eight sales reported in Oct 2026. LINZ granted an Overseas Investment Act exemption certificate (202600324) on 5 Jun 2026 to Periwinkle GP Limited, letting overseas buyers purchase up to 60% of units off the plan; construction is due to start in Q1 2027 with completion in 2029. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1300000,
+   "currency": "NZD",
+   "title": "freehold unit title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": true,
+   "permit_number": "LINZ OIO exemption certificate 202600324",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 52,
+   "payment_plan": "10% deposit on presale, balance at settlement (news)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "The project site states no consent number. LINZ register lists exemption certificate 202600324 (5 Jun 2026) for Periwinkle GP Limited (company 9277215), 52 apartments over nine levels at 8 Pratt Street, Record of Title 1189458. The Post (Nov 2025) reports resource consent received; building consent was then being completed.",
+   "escrow": "Only a 10% deposit is mentioned; no deposit holder named.",
+   "progress": "Not started; OneRoof (Oct 2026) says construction begins Q1 2027.",
+   "plans": "Developer describes 17 layouts with A, B and C options but plans are not published as files; available via agents.",
+   "record": "Ockham is described as a high-profile Auckland developer, but the project pages list no completed buildings.",
+   "returns": "No rental or yield claims."
+  },
+  "claims": [
+   {
+    "claim": "Overseas buyers may purchase under an OIO exemption certificate",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf"
+   },
+   {
+    "claim": "52 apartments over nine levels at 8 Pratt Street",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.linz.govt.nz/guidance/overseas-investment/apply-consent-variation-or-exemption/application-forms-and-information-sheets/exemptions-need-consent/registers-exemptions/register-exemption-certificates-large"
+   },
+   {
+    "claim": "Developer entity is Periwinkle GP Limited (NZ company 9277215)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf"
+   },
+   {
+    "claim": "Resource consent granted",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thepost.co.nz/business/360883447/ockham-launches-new-apartment-development-thawing-market"
+   },
+   {
+    "claim": "Completion three years from Nov 2025, subject to sales",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299"
+   },
+   {
+    "claim": "Construction starts Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299"
+   },
+   {
+    "claim": "Eight presales",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299"
+   },
+   {
+    "claim": "Prices NZD 1M to 6M, penthouse over NZD 11M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oneroof.co.nz/news/sci-fi-epic-2001-at-the-heart-of-11m-penthouse-drawing-us-eyeballs-49591"
+   },
+   {
+    "claim": "Overseas buyers may live in the apartment",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thekubrick.co.nz/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Auckland, New Zealand",
+   "developer_company": "Periwinkle GP Limited (company number 9277215)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029",
+   "original_handover": "2028-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "sub-penthouse",
+    "penthouse"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 730,
+   "price_min": 1300000,
+   "price_max": 5000000,
+   "currency": "NZD",
+   "deposit_pct": 10,
+   "payment_plan": "10% deposit, balance on settlement",
+   "foreign_ownership": "Overseas buyers allowed under OIO exemption up to 60% of units, bought before completion; they may not live in the unit",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "covered outdoor pool",
+    "gym with sauna and ice bath",
+    "residents' lounge with kitchen",
+    "drinks suite",
+    "shared office and boardroom",
+    "Japanese-inspired courtyard"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Auckland Council (resource and building consent); LINZ Overseas Investment Office (foreign buyer exemption)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Foreign-buyer exemption certificate public on the LINZ register with legal title reference",
+   "Developer entity and company number disclosed by the regulator"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.thekubrick.co.nz/",
+   "https://www.ockham.co.nz/the-kubrick/",
+   "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf",
+   "https://www.linz.govt.nz/guidance/overseas-investment/apply-consent-variation-or-exemption/application-forms-and-information-sheets/exemptions-need-consent/registers-exemptions/register-exemption-certificates-large",
+   "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299",
+   "https://www.oneroof.co.nz/news/sci-fi-epic-2001-at-the-heart-of-11m-penthouse-drawing-us-eyeballs-49591",
+   "https://www.thepost.co.nz/business/360883447/ockham-launches-new-apartment-development-thawing-market"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "LINZ OIO exemption certificate 202600324"
+ },
+ {
+  "slug": "tabua-tower-suva-frontier-investments",
+  "name": "Tabua Tower",
+  "developer": "Frontier Investments Limited (architect Sharma Design Group)",
+  "area": "Forster Street, Suva CBD",
+  "country": "Fiji",
+  "market": "Fiji",
+  "stage": "off-plan",
+  "url": "https://www.fijitimes.com.fj/commercial-landmark/",
+  "docs_url": "https://tabuatower.com/",
+  "docs_listed": [
+   "developer: 21 levels, 120-room international brand hotel, 40 strata-titled apartments, strata office floors, rooftop bar",
+   "developer: floor plans for apartment units 1, 2, 3, 5, 6 and two penthouses",
+   "developer: land titles CT 4949 and CT 4434, Lot 3 Forster Street",
+   "news: launched by Deputy PM 9 Oct 2025; equity shares in the developer offered to investors"
+  ],
+  "note": "21-level mixed-use tower in Suva's CBD with a 120-room hotel, 40 strata apartments and strata office floors, launched for sale by Fiji's Deputy Prime Minister in Oct 2025. Reports conflict on timing: the Fiji Times said in June 2025 it was under construction for Q1 2028 completion, while the launch coverage in Oct 2025 said construction would start in Q3 or Q4 2026; no permit number or deposit protection is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "FJD",
+   "title": "strata title (freehold status not stated)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 40,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No building permit or approval number published; the site lists land titles CT 4949 and CT 4434. Architect called both projects 'shovel-ready' after seven years of approvals (Fiji Sun), without numbers.",
+   "escrow": "No deposit or trust account information.",
+   "progress": "Contradicted: Fiji Times (2 Jun 2025) says construction under way with completion Q1 2028; Fiji Sun (10 Oct 2025) says construction will commence Q3 or Q4 2026. No developer updates.",
+   "plans": "Developer site shows floor plans for five apartment types and two penthouses.",
+   "record": "No completed projects named for Frontier Investments.",
+   "returns": "No guaranteed yield; developer also offers equity shares in Frontier Investments to investors (Fiji Times)."
+  },
+  "claims": [
+   {
+    "claim": "Project launched by Fiji's Deputy Prime Minister",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON"
+   },
+   {
+    "claim": "21-storey tower",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.fijitimes.com.fj/commercial-landmark/"
+   },
+   {
+    "claim": "Construction under way, completion Q1 2028",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "120-room international brand hotel",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tabuatower.com/"
+   },
+   {
+    "claim": "40 strata-titled apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "Project is shovel-ready with approvals",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+   },
+   {
+    "claim": "Land held under CT 4949 and CT 4434",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tabuatower.com/"
+   },
+   {
+    "claim": "Investors can buy equity shares in the developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fijitimes.com.fj/commercial-landmark/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tabuatower.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Suva, Fiji",
+   "developer_company": "Frontier Investments Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment",
+    "penthouse",
+    "strata office floor"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "FJD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata title; tenure of the underlying land and foreign-buyer rules not stated",
+   "rental_programme": "Hotel and serviced apartment operation planned (no figures)",
+   "service_charge": null,
+   "brand": "International hotel brand not named",
+   "amenities": [
+    "rooftop bar and restaurant",
+    "120-room hotel",
+    "basement and podium parking",
+    "24/7 security",
+    "retail lobby"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Suva City Council (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans published on the developer site",
+   "Government publicly launched the project"
+  ],
+  "flags": [],
+  "sources": [
+   "https://tabuatower.com/",
+   "https://www.fijitimes.com.fj/commercial-landmark/",
+   "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines",
+   "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON",
+   "https://www.fijivillage.com/feature/270M-boost-for-Fijis-economy-with-launch-of-The-Koro-Fiji-and-Tabua-Tower-5fx4r8/"
+  ],
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": null
  }
 ]

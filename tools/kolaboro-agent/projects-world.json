@@ -113981,8 +113981,8 @@
     },
     {
      "claim": "Developer is Arthaland with Mitsui Fudosan",
-     "status": "verified",
-     "by": "independent",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
     },
     {
@@ -113993,14 +113993,14 @@
     },
     {
      "claim": "252 residential units over 37 floors",
-     "status": "verified",
-     "by": "independent",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
     },
     {
      "claim": "Official sales launched 28 Feb 2026",
-     "status": "verified",
-     "by": "independent",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
     },
     {
@@ -114749,8 +114749,8 @@
    "claims": [
     {
      "claim": "Construction started 14 Oct 2024",
-     "status": "verified",
-     "by": "independent",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.smfl.co.jp/news/assets/241015.pdf"
     },
     {
@@ -115449,7 +115449,7 @@
    "area": "Children's Bay Cay and Williams Cay, Exuma",
    "country": "Bahamas",
    "market": "Bahamas",
-   "stage": "under construction",
+   "stage": "off-plan",
    "status": "active",
    "url": "https://www.sellingbahamas.com/buildings/amancaya-bahamas/",
    "docs_url": "https://www.aman.com/amancaya",
@@ -124567,9 +124567,9 @@
    "flags": [],
    "sources": [
     "https://azultower.com/",
+    "https://www.belalgarve.com/en/discover-luxury-living-at-blue-tower-boa-vista-island/",
     "https://www.boavistare.com/en/pages/4-real-estates",
-    "https://www.nh21investment.com/listings/apartment-third-floor-azul-tower-boavista-sal-rei-pj3/",
-    "https://www.belalgarve.com/en/discover-luxury-living-at-blue-tower-boa-vista-island/"
+    "https://www.nh21investment.com/listings/apartment-third-floor-azul-tower-boavista-sal-rei-pj3/"
    ],
    "disclosure": {
     "permit": false,
@@ -124740,8 +124740,8 @@
    ],
    "flags": [],
    "sources": [
-    "https://phaproperty.com/developments/ocean-pearl-swakopmund/",
     "https://phaproperty.com/",
+    "https://phaproperty.com/developments/ocean-pearl-swakopmund/",
     "https://phaproperty.com/wp-content/uploads/2026/07/Broschure-Phase-1-Unit-1-to-8.pdf"
    ],
    "disclosure": {
@@ -124933,12 +124933,12 @@
    "flags": [],
    "sources": [
     "https://avida-kigali.com/",
+    "https://elimo.rw/developments.php",
     "https://fortico-group.com/",
-    "https://www.linkedin.com/posts/british-chamber-of-commerce_bccr-memberspotlight-deltadevelopers-activity-7516066364667863041-kEyI",
+    "https://urban-rwanda.com/for-rent",
     "https://vibe.rw/property/aluna-residence-redefining-high-end-urban-living-in-kigali/",
     "https://vibe.rw/property/ohana-residence-luxury-lakeside-living-in-the-heart-of-kigali/",
-    "https://elimo.rw/developments.php",
-    "https://urban-rwanda.com/for-rent"
+    "https://www.linkedin.com/posts/british-chamber-of-commerce_bccr-memberspotlight-deltadevelopers-activity-7516066364667863041-kEyI"
    ],
    "disclosure": {
     "permit": false,
@@ -125122,10 +125122,10 @@
    ],
    "flags": [],
    "sources": [
-    "https://regalia.imaanihomes.com/",
-    "https://regalia.imaanihomes.com/residences",
     "https://imaanihomes.com/blog/introducing-regalia-residence-accras-new-standard-for-luxury-living-at-airport-residential/",
     "https://imaanihomes.com/blog/top-luxury-apartments-in-airport-residential-area-2026/",
+    "https://regalia.imaanihomes.com/",
+    "https://regalia.imaanihomes.com/residences",
     "https://www.myjoyonline.com/introducing-regalia-residence-accras-new-luxury-standard/"
    ],
    "disclosure": {
@@ -125302,11 +125302,11 @@
    ],
    "flags": [],
    "sources": [
-    "https://botanikgarden.ma/",
-    "https://www.leconomiste.com/flash-infos/immobilier-residentiel-aedge-partners-devoile-botanik-garden-a-marrakech/",
-    "https://lematin.ma/regions/marrakech-un-nouveau-projet-residentiel-lance-sur-la-route-damezmiz/337452",
     "https://agenz.ma/en/immobilier-neuf/immo-marrakech/route-d-amezmiz/botanik-garden",
-    "https://linkedin.com/company/aedge-partners"
+    "https://botanikgarden.ma/",
+    "https://lematin.ma/regions/marrakech-un-nouveau-projet-residentiel-lance-sur-la-route-damezmiz/337452",
+    "https://linkedin.com/company/aedge-partners",
+    "https://www.leconomiste.com/flash-infos/immobilier-residentiel-aedge-partners-devoile-botanik-garden-a-marrakech/"
    ],
    "disclosure": {
     "permit": false,
@@ -125494,14 +125494,14 @@
     "brochure_url": null
    },
    "sources": [
+    "https://gulfnews.com/gn-focus/one-development-redefining-real-estate-in-batumi-1.500318517",
+    "https://korter.ge/en/one-batumi",
+    "https://onebatumi.ge/en/development",
     "https://onedev.ge/en/one",
     "https://onedev.ge/en/one-progress",
-    "https://onebatumi.ge/en/development",
-    "https://korter.ge/en/one-batumi",
     "https://sivrce.ge/en/mshenebare-binebi/one-batumi",
-    "https://www.palmera.realestate/georgia/property/one-radisson-red/",
-    "https://gulfnews.com/gn-focus/one-development-redefining-real-estate-in-batumi-1.500318517",
-    "https://wse.am/en/novostrojki/batumi"
+    "https://wse.am/en/novostrojki/batumi",
+    "https://www.palmera.realestate/georgia/property/one-radisson-red/"
    ],
    "permit_number": null,
    "added": "2026-10-31",
@@ -125686,10 +125686,10 @@
     "brochure_url": null
    },
    "sources": [
-    "https://shreeyagnagroup.com/",
-    "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D",
-    "https://rera.goa.gov.in/reraApp/download?DOC_ID=qwFrj0vjLPOnUsfMkwkZlw%3D%3D",
     "https://rera.goa.gov.in/reraApp/download?DOC_ID=MUNnKiM+GyWudbVHjkOS3w%3D%3D",
+    "https://rera.goa.gov.in/reraApp/download?DOC_ID=qwFrj0vjLPOnUsfMkwkZlw%3D%3D",
+    "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D",
+    "https://shreeyagnagroup.com/",
     "https://synergyinfracon.com/projects/cloud-infinity-premium-villas",
     "https://www.aurumproptech.in/pulse/rera/goa/north-goa/cloud-infinity-premium-villas/prgo03262696"
    ],
@@ -125872,12 +125872,12 @@
     "brochure_url": null
    },
    "sources": [
-    "https://www.odomphnompenh.com/construction-updates/",
+    "https://nhsmcambodia.com/odom-construction/",
     "https://novasia.estate/en/projects/odom-living/",
-    "https://www.realestate.com.kh/new-developments/odom-living/",
     "https://www.eracambodia.com/odom-living",
-    "https://www.rielproperty.com/property/odom-living-phnom-penh/",
-    "https://nhsmcambodia.com/odom-construction/"
+    "https://www.odomphnompenh.com/construction-updates/",
+    "https://www.realestate.com.kh/new-developments/odom-living/",
+    "https://www.rielproperty.com/property/odom-living-phnom-penh/"
    ],
    "permit_number": null,
    "added": "2026-10-31",
@@ -126045,8 +126045,8 @@
     "brochure_url": null
    },
    "sources": [
-    "https://cpg.lk/projects/skyhaus/",
-    "https://cpg.lk/"
+    "https://cpg.lk/",
+    "https://cpg.lk/projects/skyhaus/"
    ],
    "permit_number": null,
    "added": "2026-10-31",
@@ -126247,12 +126247,12 @@
    "sources": [
     "https://amibabukitbintang.com.my/",
     "https://hims.kpkt.gov.my/files/31090/31090-1/IKLAN_BROSUR_01.pdf",
-    "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1",
-    "https://teduh.kpkt.gov.my/api/projek-swasta/19748-1",
     "https://proptools.my/projects/amiba-bukit-bintang",
-    "https://www.mybina.com.my/project/59737-amiba-bukit-bintang-jalan-berangan-services-apartment-and-hotel-previously-known-as-ibn-bukit-bintang",
+    "https://teduh.kpkt.gov.my/api/projek-swasta/19748-1",
+    "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1",
     "https://theedgemalaysia.com/article/ibn-bukit-bintang-gets-ground",
-    "https://theedgemalaysia.com/article/ibn-corp-hopes-establish-foothold-malaysian-market"
+    "https://theedgemalaysia.com/article/ibn-corp-hopes-establish-foothold-malaysian-market",
+    "https://www.mybina.com.my/project/59737-amiba-bukit-bintang-jalan-berangan-services-apartment-and-hotel-previously-known-as-ibn-bukit-bintang"
    ],
    "permit_number": "31090-1/10-2029/0804(N)-(S)",
    "added": "2026-10-31",
@@ -126447,14 +126447,14 @@
    "verified_score": 0,
    "sources": [
     "http://casenbasbeachresort.com/",
-    "https://casenbasbeachresort.com/wp-content/uploads/2026/05/HQ-Cas-en-Bas-Beach-Resort-by-sbe-Brochure-Spring-26-1-1.pdf",
     "http://www.wellington-estates.com/portfolio/cas-en-bas-beach-resort/",
     "https://brandedresi.com/hq-cas-en-bas-resort-and-residences/",
-    "https://www.hospitalitynet.org/announcement/41014414/hq-hotels-residences-by-sbe-announces-forthcoming-flagship-hq-cas-en-bas-resort-residences-in-saint-lucia",
-    "https://www.caribjournal.com/2026/05/06/saint-lucia-new-hq-resort-wyndham/",
+    "https://casenbasbeachresort.com/wp-content/uploads/2026/05/HQ-Cas-en-Bas-Beach-Resort-by-sbe-Brochure-Spring-26-1-1.pdf",
     "https://hospitalitydesign.com/news/hq-cas-en-bas-resort-residences-saint-lucia/628165",
+    "https://realtystlucia.com/st-lucia-real-estate-market-update-september-2026/",
+    "https://www.caribjournal.com/2026/05/06/saint-lucia-new-hq-resort-wyndham/",
     "https://www.cipsaintlucia.com/approved-real-estate-and-enterprise-projects",
-    "https://realtystlucia.com/st-lucia-real-estate-market-update-september-2026/"
+    "https://www.hospitalitynet.org/announcement/41014414/hq-hotels-residences-by-sbe-announces-forthcoming-flagship-hq-cas-en-bas-resort-residences-in-saint-lucia"
    ]
   },
   {
@@ -126627,12 +126627,12 @@
    },
    "verified_score": 0,
    "sources": [
-    "https://www.thegardensantigua.com/",
-    "https://www.thegardensantigua.com/villas/",
-    "https://www.thegardensantigua.com/team/",
-    "https://www.thegardensantigua.com/aloe-garden-villa/",
+    "https://cip.gov.ag/investment-options/real-estate/approved-development-projects/",
     "https://thegardensantigua.com/article/construction-update-at-the-gardens/",
-    "https://cip.gov.ag/investment-options/real-estate/approved-development-projects/"
+    "https://www.thegardensantigua.com/",
+    "https://www.thegardensantigua.com/aloe-garden-villa/",
+    "https://www.thegardensantigua.com/team/",
+    "https://www.thegardensantigua.com/villas/"
    ]
   },
   {
@@ -126820,13 +126820,13 @@
    "verified_score": 2,
    "sources": [
     "https://1truebluebeach.com/",
-    "https://linkedin.com/company/goldblat",
-    "https://nowgrenada.com/2025/02/70-room-hotel-is-latest-cbi-approved-project/",
-    "https://mygrenadasolutions.com/one-true-blue-beach-grenadas-latest-cbi-opportunity/",
-    "https://realestatehub.ntltrust.com/grenada/st-george/one-true-blue/",
-    "https://propertyacross.com/property/one-true-blue-beach-hilton-grenada/",
     "https://danmerriam.com/development-guides/hilton-residences-grenada",
-    "https://imagrenada.gd/citizenship-by-investment-2/"
+    "https://imagrenada.gd/citizenship-by-investment-2/",
+    "https://linkedin.com/company/goldblat",
+    "https://mygrenadasolutions.com/one-true-blue-beach-grenadas-latest-cbi-opportunity/",
+    "https://nowgrenada.com/2025/02/70-room-hotel-is-latest-cbi-approved-project/",
+    "https://propertyacross.com/property/one-true-blue-beach-hilton-grenada/",
+    "https://realestatehub.ntltrust.com/grenada/st-george/one-true-blue/"
    ]
   },
   {
@@ -127003,13 +127003,13 @@
    ],
    "flags": [],
    "sources": [
-    "https://jebelsifah.com/",
-    "https://rayajebelsifah.com/",
-    "https://impalarealestate.com/projects/jebel-sifah-raya/",
     "https://aqaroestates.com/communities/raya-jebel-sifah/",
-    "https://www.palmera.realestate/oman/guides/jebel-sifah/",
-    "https://www.cbnme.com/news/hawana-salalah-jebel-sifah-redefining-omans-tourism-and-lifestyle/",
+    "https://impalarealestate.com/projects/jebel-sifah-raya/",
+    "https://jebelsifah.com/",
     "https://muriya.om/construction-updates",
+    "https://rayajebelsifah.com/",
+    "https://www.cbnme.com/news/hawana-salalah-jebel-sifah-redefining-omans-tourism-and-lifestyle/",
+    "https://www.palmera.realestate/oman/guides/jebel-sifah/",
     "https://www.zawya.com/en/press-release/companies-news/jebel-sifah-launches-phase-2-of-olive-farms-by-raya-367372"
    ],
    "verified_score": 1
@@ -127187,12 +127187,12 @@
    ],
    "flags": [],
    "sources": [
-    "https://opalresidence.com/",
-    "https://ngiom.om/en/real-estate/opal-residence",
-    "https://www.zawya.com/en/economy/gcc/oman-al-nama-real-estate-unveils-opal-residence-project-in-muscat-hills-ia8aotli",
-    "https://vistaoman.com/Properties-for-sale-rent/sale/apartments-flat-oman/properties-for-rent-sale-muscat-hills/2-br-maids-room-offplan-freehold-apartment-in-muscat-hills/",
     "https://kvland.com/property/opal-residential-project-muscat-hills/",
-    "https://www.palmera.realestate/oman/guides/muscat-hills/"
+    "https://ngiom.om/en/real-estate/opal-residence",
+    "https://opalresidence.com/",
+    "https://vistaoman.com/Properties-for-sale-rent/sale/apartments-flat-oman/properties-for-rent-sale-muscat-hills/2-br-maids-room-offplan-freehold-apartment-in-muscat-hills/",
+    "https://www.palmera.realestate/oman/guides/muscat-hills/",
+    "https://www.zawya.com/en/economy/gcc/oman-al-nama-real-estate-unveils-opal-residence-project-in-muscat-hills-ia8aotli"
    ],
    "verified_score": 0
   },
@@ -127376,15 +127376,15 @@
    ],
    "flags": [],
    "sources": [
-    "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf",
-    "https://www.propertyfinder.bh/en/new-projects/eagle-hills/palace-residences",
-    "https://www.zawya.com/en/press-release/companies-news/eagle-hills-international-introduces-palace-residences-marassi-al-bahrain-tuwobluf",
     "https://bahrainbourse.com/sysimages/companyannouncement/documents/Alsalam_EN.pdf_26615.pdf",
-    "https://www.gulfconstructiononline.com/Article/386960/new-homes-launched-at-marassi-al-bahrain",
     "https://binaaeaglehills.com/eagle-hills-diyar-appoints-kooheji-contractors-for-palace-residences-marassi-al-bahrain-and-marassi-views-with-a-total-project-cost-of-147-million-dollars/",
+    "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf",
     "https://www.albiladpress.com/news/2026/6307/finance/972040.html",
+    "https://www.gulfconstructiononline.com/Article/386960/new-homes-launched-at-marassi-al-bahrain",
+    "https://www.propertyfinder.bh/en/new-projects",
+    "https://www.propertyfinder.bh/en/new-projects/eagle-hills/palace-residences",
     "https://www.rera.gov.bh/",
-    "https://www.propertyfinder.bh/en/new-projects"
+    "https://www.zawya.com/en/press-release/companies-news/eagle-hills-international-introduces-palace-residences-marassi-al-bahrain-tuwobluf"
    ],
    "verified_score": 2
   },
@@ -127559,14 +127559,14 @@
    "flags": [],
    "sources": [
     "https://canalbay.taameergroup.com/",
-    "https://www.taameergroup.com/",
-    "https://www.qetaifanprojects.com/tameer/",
-    "https://www.qatarliving.com/en/article/taameer-group-unveils-canal-bay-an-integrated-waterfront-district-on-qetaifan-island-north",
-    "https://www.propertyfinder.qa/en/new-projects/taameer-development/canal-bay",
     "https://qatar.alsafaqa.com/en/developers/taameer-development/projects/canal-bay-466417cb",
-    "https://thepeninsulaqatar.com/article/11/10/2026/taameer-al-mirqab-living-announce-beginning-of-handover-at-al-mayyas-by-al-mirqab-living-on-the-pearl-island",
     "https://thepeninsulaqatar.com/article/04/10/2026/taameer-group-announces-handover-preparations-for-skala-tower-in-lusail-waterfront",
-    "https://www.omniacapitalgroup.com/en/developments/les-vagues-by-elie-saab"
+    "https://thepeninsulaqatar.com/article/11/10/2026/taameer-al-mirqab-living-announce-beginning-of-handover-at-al-mayyas-by-al-mirqab-living-on-the-pearl-island",
+    "https://www.omniacapitalgroup.com/en/developments/les-vagues-by-elie-saab",
+    "https://www.propertyfinder.qa/en/new-projects/taameer-development/canal-bay",
+    "https://www.qatarliving.com/en/article/taameer-group-unveils-canal-bay-an-integrated-waterfront-district-on-qetaifan-island-north",
+    "https://www.qetaifanprojects.com/tameer/",
+    "https://www.taameergroup.com/"
    ],
    "verified_score": 1
   },
@@ -127746,13 +127746,13 @@
    "sources": [
     "https://darglobal.co.uk/neptune",
     "https://darglobal.co.uk/partners/Mouawad",
-    "https://www.neptunevilla.com/",
-    "https://www.mouawad.com/int-en/2024-09-23-dar-global-and-mouawad.html",
     "https://markets.ft.com/data/announce/full?dockey=1323-17247830-43M69PEDPJMB5G3259E8DCGJTO",
-    "https://shareprices.com/rns/dar-global-half-year-2025-results-9w55d7y1o7oeb7i/",
-    "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad",
     "https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/",
-    "https://rega.gov.sa/en/rega-services/platforms/wafi-off-plan-sales-and-lease/"
+    "https://rega.gov.sa/en/rega-services/platforms/wafi-off-plan-sales-and-lease/",
+    "https://shareprices.com/rns/dar-global-half-year-2025-results-9w55d7y1o7oeb7i/",
+    "https://www.mouawad.com/int-en/2024-09-23-dar-global-and-mouawad.html",
+    "https://www.neptunevilla.com/",
+    "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad"
    ],
    "verified_score": 2
   },
@@ -127916,13 +127916,13 @@
     "brochure_url": null
    },
    "sources": [
-    "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34",
-    "https://guilhermeimoveis.com.br/apartamento-de-luxo-a-venda-no-harmony-ocean-front-em-balneario-camboriu",
-    "https://lemur.net.br/ed-harmony-ocean-front604",
-    "https://primmeimoveis.com/edificios/ed-harmony/balneario-camboriu/centro/184",
     "https://alvobrimobiliaria.com.br/empreendimentos/balneario-camboriu/harmony-ocean-front/",
-    "https://www.imobillenegocios.com.br/empreendimento/edificio-harmony-ocean-front-EM74922",
-    "https://nuvemimobiliaria.com.br/predios-mais-altos-balneario-camboriu/"
+    "https://guilhermeimoveis.com.br/apartamento-de-luxo-a-venda-no-harmony-ocean-front-em-balneario-camboriu",
+    "https://jarussi.com.br/empreendimentos/Harmony-Ocean-Front_6532985FDED34",
+    "https://lemur.net.br/ed-harmony-ocean-front604",
+    "https://nuvemimobiliaria.com.br/predios-mais-altos-balneario-camboriu/",
+    "https://primmeimoveis.com/edificios/ed-harmony/balneario-camboriu/centro/184",
+    "https://www.imobillenegocios.com.br/empreendimento/edificio-harmony-ocean-front-EM74922"
    ],
    "disclosure": {
     "permit": true,
@@ -128103,16 +128103,16 @@
     "brochure_url": null
    },
    "sources": [
-    "https://www.solea.cr/",
-    "https://solea.cr/es/",
-    "https://thekapitalgroup.com/",
-    "https://www.evco.cr/",
     "https://live.solea.cr/virtual-portal/",
     "https://realtyonegroup.cr/en-US/properties/F24883E1",
     "https://realtyonegroup.cr/es-CR/properties/19A0D580",
     "https://realtyonegroup.cr/es-CR/properties/3E9F8C37",
+    "https://solea.cr/es/",
     "https://terraqueabeachproperties.com/property/pre-sale-oceanview-condos-with-2-and-3-bedrooms-in-the-heart-of-jaco-beach/",
-    "https://www.encuentra24.com/costa-rica-es/bienes-raices-venta-de-propiedades-apartamentos/solea-jaco-apartamentos-frente-al-mar-en-preventa/32834225"
+    "https://thekapitalgroup.com/",
+    "https://www.encuentra24.com/costa-rica-es/bienes-raices-venta-de-propiedades-apartamentos/solea-jaco-apartamentos-frente-al-mar-en-preventa/32834225",
+    "https://www.evco.cr/",
+    "https://www.solea.cr/"
    ],
    "disclosure": {
     "permit": false,
@@ -128287,13 +128287,13 @@
     "brochure_url": null
    },
    "sources": [
-    "https://apresresidences.com.pa/es/",
-    "https://aciertopty.com/en/Proyecto/apres/",
     "https://aciertopty.com/Proyecto/apres/",
-    "https://www.efcgroup.com.pa/proyectos/",
-    "https://www.lifenroi.com/es/propiedades/apres",
+    "https://aciertopty.com/en/Proyecto/apres/",
+    "https://apresresidences.com.pa/es/",
     "https://buypanamarealestate.com/",
-    "https://cocodelmar.com.co/"
+    "https://cocodelmar.com.co/",
+    "https://www.efcgroup.com.pa/proyectos/",
+    "https://www.lifenroi.com/es/propiedades/apres"
    ],
    "disclosure": {
     "permit": false,
@@ -128464,8 +128464,8 @@
    },
    "sources": [
     "https://inlevel.co/proyecto-alejandria",
-    "https://www.medellin.gov.co/es/secretaria-gestion-y-control-territorial/subsecretaria-de-control-urbanistico/enajenaciones/proyectos-de-vivienda-decreto-1077-de-2015/",
-    "https://www.medellin.gov.co/es/sala-de-prensa/noticias/viviendas-turisticas-que-dice-el-acuerdo-48-de-2014-y-que-plantea-la-revision-de-mediano-plazo-del-pot-2026/"
+    "https://www.medellin.gov.co/es/sala-de-prensa/noticias/viviendas-turisticas-que-dice-el-acuerdo-48-de-2014-y-que-plantea-la-revision-de-mediano-plazo-del-pot-2026/",
+    "https://www.medellin.gov.co/es/secretaria-gestion-y-control-territorial/subsecretaria-de-control-urbanistico/enajenaciones/proyectos-de-vivienda-decreto-1077-de-2015/"
    ],
    "disclosure": {
     "permit": false,
@@ -128638,12 +128638,12 @@
     "brochure_url": null
    },
    "sources": [
-    "https://ecidevelopment.com/community/gran-pacifica-resort/bela/",
     "https://ecidevelopment.com/community/gran-pacifica-resort/",
+    "https://ecidevelopment.com/community/gran-pacifica-resort/bela/",
     "https://ecidevelopment.com/destination/nicaragua/",
-    "https://www.laprensani.com/2013/01/21/economia/131515-otro-proyecto-de-lujo-en-el-pacifico",
     "https://free-cities.org/live-more-freely-in-latin-america",
-    "https://ticotimes.net/2007/09/28/large-developments-seek-social-sustainability"
+    "https://ticotimes.net/2007/09/28/large-developments-seek-social-sustainability",
+    "https://www.laprensani.com/2013/01/21/economia/131515-otro-proyecto-de-lujo-en-el-pacifico"
    ],
    "disclosure": {
     "permit": false,
@@ -128821,13 +128821,13 @@
     "brochure_url": null
    },
    "sources": [
-    "https://www.vangproperties.com/pt/lisboa-real-estate/tomas-ribeiro-79/",
-    "https://www.vangproperties.com/pt/real-estate-portugal/",
-    "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/",
-    "https://studio-jv.com/noticias/reportugal-destaca-lancamento-do-tomas-ribeiro-79-projeto-do-studio-jv-em-lisboa/",
-    "https://flatin.pt/en/new-developments/developer/vanguard-properties/",
     "https://construcaonova.pt/empreendimentos/tomas-ribeiro-79-apartamentos-de-luxo-em-lisboa/",
-    "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+    "https://flatin.pt/en/new-developments/developer/vanguard-properties/",
+    "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/",
+    "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/",
+    "https://studio-jv.com/noticias/reportugal-destaca-lancamento-do-tomas-ribeiro-79-projeto-do-studio-jv-em-lisboa/",
+    "https://www.vangproperties.com/pt/lisboa-real-estate/tomas-ribeiro-79/",
+    "https://www.vangproperties.com/pt/real-estate-portugal/"
    ],
    "added": "2026-10-31",
    "disclosure": {
@@ -128998,8 +128998,8 @@
     "brochure_url": null
    },
    "sources": [
-    "https://tasvan.com/1br-villa-lombok/",
     "https://tasvan.com/",
+    "https://tasvan.com/1br-villa-lombok/",
     "https://www.belair-international.com/en/projects/selong-belanak"
    ],
    "added": "2026-10-31",
@@ -129192,17 +129192,17 @@
     "brochure_url": null
    },
    "sources": [
-    "https://www.valedolobo.com/en/the-residences-vale-do-lobo/",
-    "https://www.theportugalnews.com/news/2026-10-23/discover-the-residences-vale-do-lobo/1104958",
     "http://crm.theportugalnews.com/news/2025-06-13/40-of-the-residences-vale-do-lobo-already-reserved-as-construction-begins/98500",
-    "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/06/30/70188-the-residences-at-vale-do-lobo-40-reserved-as-portugal-s-top-new-luxury",
-    "https://www.essential-algarve.com/property/demand-for-resort-living-grows-as-more-than-half-of-the-residences-vale-do-lobo-already-reserved/",
-    "https://www.linkedin.com/posts/vale-do-lobo_the-residences-progress-april-2026-activity-7445038402510458880-J-zi",
-    "https://www.linkedin.com/posts/alda-filipe-7027a01_the-residences-progress-january-2026-activity-7421635318036074496-URMI",
-    "https://propertyacross.com/property/the-residences-at-vale-do-lobo-algarve/",
-    "https://www.portugalresident.com/kronos-homes-appoints-alda-filipe-as-new-real-estate-group-partner/",
     "https://observador.pt/2025/09/17/operacao-marques-ex-diretor-executivo-de-vale-do-lobo-garante-que-cgd-queria-um-peso-maior-na-sociedade-do-resort/",
-    "https://sunnysteve.com/new-developments/"
+    "https://propertyacross.com/property/the-residences-at-vale-do-lobo-algarve/",
+    "https://sunnysteve.com/new-developments/",
+    "https://www.essential-algarve.com/property/demand-for-resort-living-grows-as-more-than-half-of-the-residences-vale-do-lobo-already-reserved/",
+    "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/06/30/70188-the-residences-at-vale-do-lobo-40-reserved-as-portugal-s-top-new-luxury",
+    "https://www.linkedin.com/posts/alda-filipe-7027a01_the-residences-progress-january-2026-activity-7421635318036074496-URMI",
+    "https://www.linkedin.com/posts/vale-do-lobo_the-residences-progress-april-2026-activity-7445038402510458880-J-zi",
+    "https://www.portugalresident.com/kronos-homes-appoints-alda-filipe-as-new-real-estate-group-partner/",
+    "https://www.theportugalnews.com/news/2026-10-23/discover-the-residences-vale-do-lobo/1104958",
+    "https://www.valedolobo.com/en/the-residences-vale-do-lobo/"
    ],
    "added": "2026-10-31",
    "disclosure": {
@@ -129383,13 +129383,13 @@
     "brochure_url": "https://serestarhomes.com/wp-content/uploads/2026/10/20261029_SerestarJavea_V5.pdf"
    },
    "sources": [
-    "https://serestarhomes.com/project/serestar-javea/",
-    "https://serestarhomes.com/wp-content/uploads/2026/10/20261029_SerestarJavea_V5.pdf",
-    "https://serestarhomes.com/wp-content/uploads/2025/09/20250704-Guia-de-Compra-Serestar-Residenciales.pdf",
-    "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/",
     "https://alicanteplaza.es/alicanteplaza/plaza-inmobiliaria-alicante/sodacrowd-impulsa-una-promocion-de-85-viviendas-en-javea-con-una-rentabilidad-estimada-del-173-anual",
-    "https://sodacrowd.com/proyectos/javea",
     "https://observatorioinmobiliario.es/noticias/residencial/talvion-lanza-un-nuevo-desarrollo-residencial-en-javea-con-financiacion-innovadora-2/",
+    "https://serestarhomes.com/project/serestar-javea/",
+    "https://serestarhomes.com/wp-content/uploads/2025/09/20250704-Guia-de-Compra-Serestar-Residenciales.pdf",
+    "https://serestarhomes.com/wp-content/uploads/2026/10/20261029_SerestarJavea_V5.pdf",
+    "https://sodacrowd.com/proyectos/javea",
+    "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/",
     "https://www.talvion.com/proyectos/"
    ],
    "added": "2026-10-31",
@@ -129571,15 +129571,15 @@
    ],
    "flags": [],
    "sources": [
-    "https://fix.dimand.gr/residences/",
-    "https://fix.dimand.gr/",
     "https://dimand.gr/en/projects/fix/",
-    "https://sothebysrealty.gr/dev-project/fix-residences-thessaloniki/",
-    "https://www.powergame.gr/en/real-estate/15429/dimands-luxury-homes-at-historic-fix-prices-revealed/",
-    "https://www.euro2day.gr/en/article/2372358/dimand-greece-sothebys-international-realty-takes",
-    "https://www.voria.gr/article/thessaloniki-fix-residences-kinitikotita-kai-propoliseis-me-timi-ekkinisis-apo-420000-eyro",
     "https://dimand.gr/wp/wp-content/uploads/2026/06/2-Corporate-Presentation-for-HEFAMA-17.04.2026-show-fin.pdf",
-    "https://www.fosterandpartners.com/news/foster-plus-partners-unveils-regenerative-masterplan-for-heritage-site-in-thessaloniki"
+    "https://fix.dimand.gr/",
+    "https://fix.dimand.gr/residences/",
+    "https://sothebysrealty.gr/dev-project/fix-residences-thessaloniki/",
+    "https://www.euro2day.gr/en/article/2372358/dimand-greece-sothebys-international-realty-takes",
+    "https://www.fosterandpartners.com/news/foster-plus-partners-unveils-regenerative-masterplan-for-heritage-site-in-thessaloniki",
+    "https://www.powergame.gr/en/real-estate/15429/dimands-luxury-homes-at-historic-fix-prices-revealed/",
+    "https://www.voria.gr/article/thessaloniki-fix-residences-kinitikotita-kai-propoliseis-me-timi-ekkinisis-apo-420000-eyro"
    ],
    "permit_number": null,
    "disclosure": {
@@ -129760,14 +129760,14 @@
    ],
    "flags": [],
    "sources": [
-    "https://www.horizon-larnaca.com/",
-    "https://horizon-towers.com/",
-    "https://slk-larnaca.com/",
     "https://develeco.com.cy/partnerships/horizon-towers",
+    "https://horizon-towers.com/",
     "https://horizon.bnodevelopments.com/",
-    "https://www.dextekgroup.com/projects/horizon-towers",
+    "https://news.cyprus-property-buyers.com/2026/08/01/livadia-larnaca-property-boom-investment/id=00172865",
+    "https://slk-larnaca.com/",
     "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html",
-    "https://news.cyprus-property-buyers.com/2026/08/01/livadia-larnaca-property-boom-investment/id=00172865"
+    "https://www.dextekgroup.com/projects/horizon-towers",
+    "https://www.horizon-larnaca.com/"
    ],
    "permit_number": null,
    "disclosure": {
@@ -129954,10 +129954,10 @@
     }
    ],
    "sources": [
-    "https://forestclub.bg/en/projects/forest_seaview",
     "https://agup.varna.bg/index.php/rs-agup-2022-25",
     "https://fakti.bg/en/bulgaria/1062900-advokat-tomov-potarpevshi-ot-shemata-baba-alino-plashtali-do-50-ot-stoinostta-na-imotite-bez-predvaritelni-dogovori",
     "https://fakti.bg/razsledvania/1063366-anatomia-na-tainia-grad-v-baba-alino-institucionalen-chadar-milioni-v-rezervacii-i-bageri-v-gorata",
+    "https://forestclub.bg/en/projects/forest_seaview",
     "https://novini.bg/article/2026053107103118735",
     "https://novini.bg/article/2026070806462113543",
     "https://www.novinite.com/articles/238983/Baba+Alino+Case+in+Bulgaria+Deepens%3A+Stolen+Water%2C+Fake+Contracts%2C+New+Illegal+Complex+Close+By"
@@ -130143,10 +130143,10 @@
    ],
    "flags": [],
    "sources": [
+    "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'",
     "https://oneladybirdlake.com/",
-    "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php",
     "https://www.oftmw.com/projects/one-lady-bird-lake/",
-    "https://data.austintexas.gov/resource/3syk-w9eu.json?$where=upper(original_address1)%20like%20'125%20S%201ST%25'%20AND%20permittype='BP'"
+    "https://www.statesman.com/business/real-estate/article/one-lady-bird-lake-austin-luxury-housing-22496889.php"
    ],
    "verified_score": 2,
    "status": "active",
@@ -130326,15 +130326,15 @@
    ],
    "flags": [],
    "sources": [
+    "https://downwell.group/news/london-square-appoints-downwell-group-for-landmark-westminster-tower-redevelopment/",
     "https://londonsquare.co.uk/developments/westminster-tower",
     "https://londonsquare.co.uk/images/uploads/docs/15621_Westminster_Tower_Factsheet_2pp_v2_DIGITAL_AW.pdf",
     "https://planindex.co.uk/planning-applications/lambeth/25-03650-nmc",
     "https://www.constructionenquirer.com/2026/07/22/downwell-gets-going-on-westminster-tower-job/",
-    "https://downwell.group/news/london-square-appoints-downwell-group-for-landmark-westminster-tower-redevelopment/",
-    "https://www.standard.co.uk/business/westminster-tower-parliament-apartments-abu-dhabi-office-conversion-property-b1196826.html",
+    "https://www.oftmw.com/projects/westminster-tower/",
     "https://www.standard.co.uk/business/eighties-riverside-tower-to-be-converted-to-luxury-flats-after-ps40-million-sale-b1151522.html",
-    "https://www.theconstructionindex.co.uk/news/view/westminster-tower-revamp-approved",
-    "https://www.oftmw.com/projects/westminster-tower/"
+    "https://www.standard.co.uk/business/westminster-tower-parliament-apartments-abu-dhabi-office-conversion-property-b1196826.html",
+    "https://www.theconstructionindex.co.uk/news/view/westminster-tower-revamp-approved"
    ],
    "verified_score": 2,
    "status": "active",
@@ -130528,16 +130528,16 @@
     }
    ],
    "sources": [
-    "https://www.redbankriverside.co.uk/",
-    "https://www.crowncontinental.com/property/kingfisher-red-bank-riverside",
     "https://csiprop.com/kingfisher-manchester-uk/",
     "https://democracy.manchester.gov.uk/documents/s41742/136814%20Dantzic%20Street%20back%20up.pdf",
     "https://fecil.uk/latest-news/fec-appoints-hg-construction-to-lead-latest-red-bank-development-in-225-million-contracts/",
-    "https://www.hgconstruction.co.uk/hg-to-deliver-895-homes-across-four-buildings-nt02-nt03-at-red-bank-riverside-manchester/",
+    "https://fecil.uk/media/",
     "https://www.constructionenquirer.com/2026/10/21/hg-lands-225m-quartet-of-manchester-towers/",
-    "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/",
+    "https://www.crowncontinental.com/property/kingfisher-red-bank-riverside",
     "https://www.dimsumdaily.hk/hong-kong-investors-jolted-as-twin-manchester-property-schemes-face-fresh-delays/",
-    "https://fecil.uk/media/"
+    "https://www.hgconstruction.co.uk/hg-to-deliver-895-homes-across-four-buildings-nt02-nt03-at-red-bank-riverside-manchester/",
+    "https://www.redbankriverside.co.uk/",
+    "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/"
    ],
    "verified_score": 3,
    "status": "active",
@@ -130717,19 +130717,1878 @@
    ],
    "flags": [],
    "sources": [
+    "https://offplanproperties.com.au/projects/the-landmark-mermaid-beach-mermaid-beach/",
     "https://thelandmarkmermaidbeach.com.au/",
     "https://www.aniko.com.au/",
     "https://www.apartments.com.au/news/qld/aniko-group-breaks-ground-on-2-5-billion-the-landmark-in-mermaid-beach",
-    "https://www.theurbandeveloper.com/articles/aniko-mermaid-beach-gold-coast-mixed-use-approval",
-    "https://www.theurbandeveloper.com/articles/aniko-mermaid-tower-upsize-plans-gold-coast-queensland",
+    "https://www.oceanroadmagazine.com.au/aniko-group-showcases-final-opportunities-at-chevron-islands-premier-residential-address/",
     "https://www.planningalerts.org.au/applications/3303544",
-    "https://offplanproperties.com.au/projects/the-landmark-mermaid-beach-mermaid-beach/",
-    "https://www.oceanroadmagazine.com.au/aniko-group-showcases-final-opportunities-at-chevron-islands-premier-residential-address/"
+    "https://www.theurbandeveloper.com/articles/aniko-mermaid-beach-gold-coast-mixed-use-approval",
+    "https://www.theurbandeveloper.com/articles/aniko-mermaid-tower-upsize-plans-gold-coast-queensland"
    ],
    "verified_score": 3,
    "status": "active",
    "added": "2026-10-31",
    "permit_number": "City of Gold Coast OPW/2025/665 (operational works, 14 Seaview Ave)"
+  },
+  {
+   "slug": "lao-center-vientiane-qiancheng",
+   "name": "Lao Center",
+   "developer": "Qiancheng Group (Qiancheng Yi Co., Ltd. / Qiancheng Real Estate Investment Co., Ltd.)",
+   "area": "Khouvieng Road, Phapho Village, Sisattanak District, Vientiane",
+   "country": "Laos",
+   "market": "Laos",
+   "stage": "under construction",
+   "url": "https://qiancheng.hk/index.php?lang=en",
+   "docs_url": "https://qiancheng.hk/news/shownews.php?id=684",
+   "seed": {
+    "price": 140400,
+    "currency": "USD",
+    "title": "condominium unit ownership certificate under the 2024 Condominium Decree (land not owned); agent says title handled under Ministry of Finance supervision",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "yield_pct": 7,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": "Annex building (12 storeys) of the same project completed and opened Dec 2025 to Mar 2026 (developer and KPL); group founded Oct 2023, no other delivered project",
+    "units": 953,
+    "payment_plan": "agent: 30% down payment, permanent residence application after 30% paid; floors 5-17 sold as hotel leaseback units",
+    "price_per_m2": 2700,
+    "progress_updates": true
+   },
+   "docs_listed": [
+    "developer: monthly 'home letter' construction updates (Sep 2025, Dec 2025, Jun 2026, Jul 2026), main tower at floor 15 by 31 Jul 2026",
+    "developer: annex completed and in use, HQ moved in (Dec 2025)",
+    "agent: unit types 52.3 to 157.95 sqm, from USD 2,200 to 3,500 per sqm, average USD 2,700",
+    "agent: floors 5-17 hotel leaseback 10 years at 7% pre-tax annual return paid quarterly; handover planned before 30 May 2028",
+    "state news agency KPL: 46-storey tallest hotel-condo in Laos, construction began Oct 2024, completion 2028"
+   ],
+   "note": "46-storey, roughly 155 m hotel and condominium tower in central Vientiane by a Chinese-run group founded in 2023; the state news agency KPL confirms construction since Oct 2024 and a 2028 target, and the developer's monthly updates put the main tower at floor 15 in July 2026. Agents market a 10-year hotel leaseback paying 7% a year and a residence-permit route, while no permit number, escrow or deposit protection is published. (checked 1 Nov 2026)",
+   "evidence": {
+    "permit": "No construction permit or condominium business licence number published",
+    "escrow": null,
+    "progress": "Developer monthly updates with dated floor counts (floor 10 in Jun 2026, floor 15 by 31 Jul 2026); KPL (Dec 2025) confirms construction under way",
+    "plans": "Agents publish unit types A, B, G, E with areas and layouts",
+    "record": "Annex of the same project completed (developer, KPL); developer group only formed in Oct 2023",
+    "returns": "AIAIG listing: floors 5-17 leaseback for 10 years at 7% annual pre-tax return paid quarterly"
+   },
+   "positives": [
+    "Construction start and target confirmed by Lao state news agency",
+    "Detailed monthly construction updates",
+    "Annex building already completed and occupied"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "independent",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Construction began October 2024, completion 2028",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+    },
+    {
+     "claim": "Tallest hotel-condominium in Laos, 46 storeys",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+    },
+    {
+     "claim": "Project partner is the Ministry of Public Security",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+    },
+    {
+     "claim": "Developed under the auspices of the Ministry of National Defense",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/"
+    },
+    {
+     "claim": "Main tower at floor 15 by 31 Jul 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://qiancheng.hk/index.php?lang=en"
+    },
+    {
+     "claim": "Annex building completed and opened",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+    },
+    {
+     "claim": "10-year hotel leaseback at 7% annual return",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane"
+    },
+    {
+     "claim": "Buyers obtain Lao permanent residence after paying 30%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane"
+    },
+    {
+     "claim": "Foreigners can hold registered condominium units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bambooroutes.com/blogs/news/laos-foreigner"
+    },
+    {
+     "claim": "Prices from USD 2,200 per sqm",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/"
+    },
+    {
+     "claim": "Construction permit and condominium licence held",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://qiancheng.hk/index.php?lang=en"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2023.0,
+    "developer_hq": "Vientiane, Laos",
+    "developer_company": "Qiancheng Yi Co., Ltd. (Qiancheng Group)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024-10",
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": 52.3,
+    "size_max_m2": 165.0,
+    "price_min": 140400.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": 30.0,
+    "payment_plan": "30% down payment then instalments (agent)",
+    "foreign_ownership": "Registered condominium unit under the 2019 Land Law and 2024 Condominium Decree; land not owned; foreign cap reported at 70% of units",
+    "rental_programme": "Floors 5-17 hotel leaseback, 10 years, 7% pre-tax annual return paid quarterly (agent)",
+    "service_charge": "USD 1.5 per sqm per month (agent)",
+    "brand": null,
+    "amenities": [
+     "five-star hotel",
+     "glass outdoor pool",
+     "fitness centre",
+     "shopping centre",
+     "conference and banquet halls",
+     "about 500 parking spaces with EV chargers"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Vientiane Department of Public Works and Transport (construction); Ministry of Natural Resources and Environment / DONRE (condominium title)",
+    "brochure_url": null
+   },
+   "sources": [
+    "https://qiancheng.hk/index.php?lang=en",
+    "https://qiancheng.hk/news/shownews.php?id=684",
+    "https://qiancheng.hk/news/shownews.php?id=672",
+    "https://qiancheng.hk/news/shownews.php?id=661&lang=en",
+    "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063",
+    "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane",
+    "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/",
+    "https://bambooroutes.com/blogs/news/laos-foreigner"
+   ],
+   "permit_number": null,
+   "added": "2026-10-31",
+   "status": "active",
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 2
+  },
+  {
+   "slug": "baia-vista-rebirth-development",
+   "name": "Baia Vista (Phase 1 and Phase 2)",
+   "developer": "Rebirth Development (The Hague) for Isla Caribbean Realty",
+   "area": "Hofi Sint Joris, Koraal Tabak, Willemstad",
+   "country": "Curacao",
+   "market": "Curacao",
+   "stage": "off-plan",
+   "status": "active",
+   "url": "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/",
+   "docs_url": "https://baiavista.com/masterplan/",
+   "permit_number": null,
+   "docs_listed": [
+    "developer: dated masterplan timeline (land bought Jan 2025, phase 1 works from Oct 2025, delivery May 2027)",
+    "developer: construction update summer 2026 (penthouse floors being poured, highest point reached on first blocks)",
+    "developer: phase 2 indicative planning (permit expected Q4 2026, construction start Q2 2027)",
+    "developer: purchase step plan (first payment to developer account at Maduro & Curiel Bank, notarial transfer of apartment right, stage payments checked by an independent party)",
+    "developer: team page naming architect, site supervisor (Lucid) and main contractor (Huron Construction)",
+    "developer: rental analysis claiming about 6% expected net yield",
+    "agent: phase 2 ground-floor 2BR, 147 m2, EUR 405,000, delivery end 2028"
+   ],
+   "note": "Gated apartment resort of about 175 homes on Curacao's north-east coast marketed mainly to Dutch buyers. Phase 1 (40 apartments and penthouses) has been under construction since Oct 2025 with delivery planned for May 2027; phase 2 (60 homes) is selling before its building permit, which the developer expects in Q4 2026. Units are sold under a purchase and construction agreement with notarial transfer of title and stage payments. (checked 1 Nov 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 405000,
+    "currency": "EUR",
+    "title": "freehold apartment right (appartementsrecht) on eigendom land",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": 6,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": "Rebirth Development says it has delivered many housing, hotel and office projects in the Netherlands (none named on the Baia Vista site); first Curacao project",
+    "units": 175,
+    "payment_plan": "First instalment on signing the purchase and construction agreement, notarial transfer, then construction-stage instalments checked by an independent party",
+    "price_per_m2": 2755,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit number; developer says phase 2 licensing is expected in Q4 2026, after sales started",
+    "escrow": "No escrow or bank guarantee stated; first payment goes to the developer's own MCB account, buyer receives notarial title to the apartment right before construction, and stage payments are checked by an independent party",
+    "progress": "Dated masterplan milestones and a summer 2026 construction update with specific works",
+    "plans": "Purchase pack includes technical description and drawings; phase plans (masterplan) and agent unit pages with sizes",
+    "record": "Developer claims numerous Dutch projects but names none; first project on Curacao",
+    "returns": "Developer rental analysis: expected net return around 6% (6-7%), described as an expectation, not guaranteed"
+   },
+   "positives": [
+    "Frequent dated construction updates",
+    "Buyer takes notarial title before construction and pays in stages",
+    "Named contractor and independent site supervisor"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Phase 1 construction started Oct 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/masterplan/"
+    },
+    {
+     "claim": "Highest point reached on first blocks (summer 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/bouwupdate-zomer-2026/"
+    },
+    {
+     "claim": "Phase 1 delivery May 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/masterplan/"
+    },
+    {
+     "claim": "Phase 2 sales started 18 May 2026",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://baiavista.com/masterplan/"
+    },
+    {
+     "claim": "Phase 2 building permit expected Q4 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/en/lancering-baia-vista-fase-2/"
+    },
+    {
+     "claim": "Land (42,000 m2) bought by Isla Caribbean Realty in Jan 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/masterplan/"
+    },
+    {
+     "claim": "Expected net rental return around 6%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/huuranalyse-rond-6-rendement-bij-baia-vista/"
+    },
+    {
+     "claim": "Stage payments checked by an independent party",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/stappenplan/"
+    },
+    {
+     "claim": "Phase 2 apartment 147 m2 at EUR 405,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/"
+    },
+    {
+     "claim": "Rebirth Development delivered numerous projects in the Netherlands",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://baiavista.com/over-ons/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "The Hague, Netherlands",
+    "developer_company": "Rebirth Development (a YOUNG. company); landowner Isla Caribbean Realty",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025-10",
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2BR apartment",
+     "penthouse",
+     "semi-detached house"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 405000.0,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": "Purchase and construction agreement with stage payments",
+    "foreign_ownership": "Freehold apartment right on eigendom land, transferred by notary; no restriction on foreign buyers",
+    "rental_programme": "Optional developer rental and management service",
+    "service_charge": "VvE (owners' association) fees, amount not published",
+    "brand": null,
+    "amenities": [
+     "swimming pools",
+     "pool decks",
+     "communal tropical garden",
+     "gated access"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ministerie van Verkeer, Vervoer en Ruimtelijke Planning (VVRP), Curacao",
+    "brochure_url": null
+   },
+   "verified_score": 0,
+   "sources": [
+    "https://baiavista.com/masterplan/",
+    "https://baiavista.com/en/lancering-baia-vista-fase-2/",
+    "https://baiavista.com/bouwupdate-zomer-2026/",
+    "https://baiavista.com/stappenplan/",
+    "https://baiavista.com/faq/",
+    "https://baiavista.com/over-ons/",
+    "https://baiavista.com/huuranalyse-rond-6-rendement-bij-baia-vista/",
+    "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/"
+   ]
+  },
+  {
+   "slug": "caribbean-town-palmaruba-group",
+   "name": "Caribbean Town Condos & Villas",
+   "developer": "PalmAruba Group (principal Victor Acosta)",
+   "area": "Bushiri / Madiki, near Druif Beach, Oranjestad",
+   "country": "Aruba",
+   "market": "Aruba",
+   "stage": "under construction",
+   "status": "active",
+   "url": "https://www.weichertaruba.com/real-estate-summit-2026/",
+   "docs_url": "https://caribbeantownaruba.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "developer: unit models with size and price (e.g. Rincon 2BR 69.4 m2, US$283,000)",
+    "agent (exclusive): building-by-building construction progress % from the developer's report (townhouses 90%, Guadeloupe Residences 40%, site infrastructure 20%)",
+    "agent: downloadable construction report, model home tours",
+    "developer: about-us page naming earlier projects (Oceania Residence, Palma Real, Ponton Plaza, PalmAruba Condos and others)",
+    "developer: 'our properties guarantee long-term value' wording"
+   ],
+   "note": "Large gated community of studios, condos, townhouses and villas 0.4 miles from Druif Beach by a long-established local developer, aimed at both Arubans and foreign buyers. The exclusive agent publishes the developer's progress report by building (security booth 95%, first residential blocks 90%, later blocks 40%, site-wide infrastructure 20%). Home count is given as 250 or 328; launch was first set for Sept 2025. (checked 1 Nov 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 283000,
+    "currency": "USD",
+    "title": "condominium apartment right (land tenure not stated)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 20,
+    "developer_delivered": "Developer names Oceania Residence, Palma Real, Ponton Plaza, Calbas Plaza, Montana Plaza, Palm Beach Plaza, Casa del Mar and PalmAruba Condos; claims 500+ units sold (own site) or 800+ residential units built (agent)",
+    "units": 328,
+    "payment_plan": null,
+    "price_per_m2": 4078,
+    "progress_updates": true
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No permit or licence number published",
+    "escrow": null,
+    "progress": "Exclusive agent page summarises developer construction report with % per building; site-wide infrastructure 20% used as the lowest published figure",
+    "plans": "Unit pages give area, rooms and price, with model videos, but no floor plan drawings found",
+    "record": "Developer names several completed Aruba projects; figures for units differ (500+ sold vs 800+ built)",
+    "returns": "No rental guarantee; site says properties 'guarantee long-term value' (appreciation language, no figure)"
+   },
+   "positives": [
+    "Building-level construction progress percentages published",
+    "Entry prices under US$300,000 with unit sizes",
+    "Developer with several named completed local projects"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Townhouses and first blocks 90% complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.weichertaruba.com/real-estate-summit-2026/"
+    },
+    {
+     "claim": "Site-wide infrastructure 20% complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.weichertaruba.com/real-estate-summit-2026/"
+    },
+    {
+     "claim": "250 homes",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.weichertaruba.com/real-estate-summit-2026/"
+    },
+    {
+     "claim": "Launching September 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://linkedin.com/company/caribbeantownaruba"
+    },
+    {
+     "claim": "Developer built 800+ residential units",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://caribbeantownaruba.com/about-us/"
+    },
+    {
+     "claim": "Earlier projects Oceania Residence, Palma Real, Ponton Plaza",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://caribbeantownaruba.com/about-us/"
+    },
+    {
+     "claim": "Rincon 2BR 69.4 m2 at US$283,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://caribbeantownaruba.com/properties/rincon/"
+    },
+    {
+     "claim": "0.4 miles from the beach",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://caribbeantownaruba.com/"
+    },
+    {
+     "claim": "Properties guarantee long-term value",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://caribbeantownaruba.com/"
+    },
+    {
+     "claim": "Building permit granted",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://caribbeantownaruba.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Aruba",
+    "developer_company": "PalmAruba Group",
+    "developer_projects_delivered": 8.0,
+    "developer_units_delivered": 500.0,
+    "listed_or_audited": null,
+    "construction_start": "2022",
+    "handover_promised": null,
+    "original_handover": "2025-Q3",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR townhouse",
+     "2BR condo",
+     "villa"
+    ],
+    "size_min_m2": 69.0,
+    "size_max_m2": null,
+    "price_min": 283000.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "No restriction on foreign buyers in Aruba; tenure (eigendom or long lease) not stated",
+    "rental_programme": null,
+    "service_charge": "HOA-managed (amount not stated)",
+    "brand": null,
+    "amenities": [
+     "pool",
+     "gym",
+     "playground",
+     "sports areas",
+     "pet park",
+     "shopping centre",
+     "gated security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DIP (Directie Infrastructuur en Planning), Aruba",
+    "brochure_url": null
+   },
+   "verified_score": 0,
+   "sources": [
+    "https://caribbeantownaruba.com/",
+    "https://caribbeantownaruba.com/about-us/",
+    "https://caribbeantownaruba.com/properties/rincon/",
+    "https://www.weichertaruba.com/real-estate-summit-2026/",
+    "https://linkedin.com/company/caribbeantownaruba",
+    "https://aruba-forever.com/guides/new-developments-aruba.html"
+   ]
+  },
+  {
+   "slug": "city-place-luxury-condos-punta-cana",
+   "name": "City Place Luxury Condos & Shops (Phase 1)",
+   "developer": "City Place Punta Cana group (CONFOTUR promoter Inversiones Babesthe, S.R.L.)",
+   "area": "Boulevard Turistico del Este, Downtown Punta Cana / Bavaro",
+   "country": "Dominican Republic",
+   "market": "Punta Cana",
+   "stage": "under construction",
+   "status": "active",
+   "url": "https://axiainversiones.com/proyecto/city-place/",
+   "docs_url": "https://cityplacepc.com/punta-cana-condos-for-sale/",
+   "permit_number": null,
+   "docs_listed": [
+    "developer: unit types (studio A/B 50 m2, 1BR 70 m2, 2BR 100 m2) from US$128,500, optional furniture packages",
+    "developer master site: City Place masterplan components (The Beach, CP Luxury Condos, Hilton and others)",
+    "agent: 19 buildings and 1,209 apartments, phase 1 buildings 1-6 with 362 units",
+    "agent: payment US$3,000 reservation, 20% on contract, 40% during construction, 40% on delivery",
+    "agent: deliveries Oct 2026 (buildings 1-4) and May 2027 (buildings 5-6); earlier Dec 2025",
+    "agent: CONFOTUR exemption claimed"
+   ],
+   "note": "Large mixed-use condo district near Downtown Punta Cana (1,209 apartments in 19 buildings, phase 1 of 362 units) aimed at foreign investors from about US$100k to US$129k. The official CONFOTUR register shows definitive classification CONFOTUR01-01035 approved 26 Nov 2025 for 'City Place Luxury Condos & Shops' (promoter Inversiones Babesthe, S.R.L.). First-phase delivery has moved from Dec 2025 to Oct 2026 and May 2027. (checked 1 Nov 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 128500,
+    "currency": "USD",
+    "title": "freehold condominium",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 1209,
+    "payment_plan": "US$3,000 reservation; 20% on contract; 40% during construction; 40% on delivery; developer financing during construction",
+    "price_per_m2": 2570,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No building licence number; only the CONFOTUR tax classification is on record",
+    "escrow": null,
+    "progress": "Agents state phase 1 is 'en ejecucion' and building-by-building delivery dates; no dated photos or % found",
+    "plans": "Unit types and sizes listed, no floor plan drawings found on the developer pages opened",
+    "record": "Agent FAQ says the builder 'owns' Hotel Boutique Oceana Esplendor, Rivera Bay, The Reef, Poseidonia Residences and others, without saying which are completed",
+    "returns": "Agent claims 'alta rentabilidad' from holiday rentals without a figure or guarantee"
+   },
+   "positives": [
+    "Definitive CONFOTUR classification confirmed on the official MITUR register",
+    "Low entry prices and published payment plan"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Project has definitive CONFOTUR classification",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+    },
+    {
+     "claim": "Promoter company is Inversiones Babesthe, S.R.L.",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+    },
+    {
+     "claim": "Phase 1 delivery December 2025",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N"
+    },
+    {
+     "claim": "Buildings 1-4 delivered Oct 2026, 5-6 May 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://axiainversiones.com/proyecto/city-place/"
+    },
+    {
+     "claim": "1,209 apartments in 19 buildings",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://axiainversiones.com/proyecto/city-place/"
+    },
+    {
+     "claim": "Prices from US$128,500",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://cityplacepc.com/punta-cana-condos-for-sale/"
+    },
+    {
+     "claim": "First buyer exempt from transfer tax and IPI for 15 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N"
+    },
+    {
+     "claim": "Hilton hotel within the City Place masterplan holds CONFOTUR approval",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur"
+    },
+    {
+     "claim": "Construction under way",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://axiainversiones.com/proyecto/city-place/"
+    },
+    {
+     "claim": "Builder delivered earlier projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://axiainversiones.com/proyecto/city-place/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Punta Cana, Dominican Republic",
+    "developer_company": "Inversiones Babesthe, S.R.L. (CONFOTUR promoter)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": "2025-Q4",
+    "delay_months": 10.0,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": 50.0,
+    "size_max_m2": 118.0,
+    "price_min": 100650.0,
+    "price_max": 263875.0,
+    "currency": "USD",
+    "deposit_pct": 20.0,
+    "payment_plan": "US$3,000 reservation; 20/40/40",
+    "foreign_ownership": "Freehold title, no restriction on foreign buyers",
+    "rental_programme": null,
+    "service_charge": "about US$150-200 a month (agent estimate)",
+    "brand": null,
+    "amenities": [
+     "rooftop pool",
+     "central park",
+     "interactive fountain",
+     "beach club membership",
+     "yoga studio",
+     "dog park",
+     "shops and restaurants",
+     "24/7 security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ministerio de Turismo (land-use non-objection), MIVED and Ayuntamiento (building licence); CONFOTUR for tax classification",
+    "brochure_url": null
+   },
+   "verified_score": 0,
+   "sources": [
+    "https://cityplacepc.com/",
+    "https://cityplacepc.com/punta-cana-condos-for-sale/",
+    "https://cityplace.com.do/",
+    "https://axiainversiones.com/proyecto/city-place/",
+    "https://iconic-realty-dr.alterestate.com/propiedad/city-place-downtown-punta-cana-1243-XBU4LZ6A8N",
+    "https://apisoftexpert.servicios.mitur.gob.do/api/projects/confotur",
+    "https://confotur.mitur.gob.do/consulta/"
+   ]
+  },
+  {
+   "slug": "xo-parq-palma-xojay",
+   "name": "XO Parq",
+   "developer": "XOJAY (XOJAY Management)",
+   "area": "C/ Barranquilla, Nou Llevant, Palma de Mallorca",
+   "country": "Spain",
+   "market": "Balearics",
+   "stage": "under construction",
+   "url": "https://xo-jay.com/development/xoparq/",
+   "docs_url": "https://xo-jay.com/development/xoparq/",
+   "seed": {
+    "price": 555000,
+    "currency": "EUR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 65,
+    "payment_plan": null,
+    "price_per_m2": 8043,
+    "progress_updates": true
+   },
+   "docs_listed": [
+    "developer: 65 apartments in three four-storey blocks over shared parking, architect CMV Architects, completion 2027, fact sheet, typologies with m2",
+    "developer disclaimer: renders correspond to 'a project that has not yet received planning permission'",
+    "contractor OCN: XO Parq under construction since 2025 (excavation, structure, envelope, installations)",
+    "developer LinkedIn (Jul 2026): superstructure completed",
+    "agent Dils Lucas Fox: 'licencia de construcción concedida', Q4 2027, unit price list from EUR 555,000 (69 m2)",
+    "agents: completion end 2025 (Engel & Völkers), May 2027 (John Taylor)"
+   ],
+   "note": "65-apartment luxury scheme opposite Parc de Can Palou in Nou Llevant by XOJAY, built by contractor OCN since 2025, with the superstructure topped out in July 2026 and completion now given as 2027. The developer's own page still carries a disclaimer that the project has not received planning permission, while an agent says the licence is granted; no licence number, deposit guarantee or track record is published, and agents quote completion dates from end 2025 to Q4 2027. (checked 1 Nov 2026)",
+   "evidence": {
+    "permit": "No licence number. Developer disclaimer says the design corresponds to a project without planning permission; agent Lucas Fox lists licence as granted; contractor reports works since 2025",
+    "escrow": null,
+    "progress": "Contractor OCN project page (under construction since 2025) and developer LinkedIn post on superstructure completion (Jul 2026); no %",
+    "plans": "Developer lists typologies with areas; agents publish per-unit sheets and plans",
+    "record": "XOJAY names no completed project; its other Palma scheme XO Jonquet is also under construction",
+    "returns": "No yield or guarantee advertised"
+   },
+   "positives": [
+    "Independent contractor confirms construction",
+    "Superstructure completed (Jul 2026)",
+    "Energy rating A, named architect and contractor"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Under construction since 2025, built by OCN",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+    },
+    {
+     "claim": "Superstructure completed (Jul 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.linkedin.com/posts/xo-jay_we-were-delighted-to-celebrate-the-completion-activity-7484881603702464513-qtRu"
+    },
+    {
+     "claim": "Building licence granted",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://xo-jay.com/development/xoparq/"
+    },
+    {
+     "claim": "Completion end 2025",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+    },
+    {
+     "claim": "Completion 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://xo-jay.com/development/xoparq/"
+    },
+    {
+     "claim": "65 apartments in three four-storey blocks",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+    },
+    {
+     "claim": "69 units (agent PDF)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://pdf.lucasfox.com/overview/es/xoparq-apartments.pdf"
+    },
+    {
+     "claim": "Prices from EUR 555,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.lucasfox.es/obra-nueva-en-mallorca.html"
+    },
+    {
+     "claim": "Energy rating A, solar, EV charging",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+    },
+    {
+     "claim": "Amenities: infinity/glass-bottom pool, spa, cinema, golf simulator, gym",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Palma de Mallorca, Spain",
+    "developer_company": "XOJAY (legal entity not published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025",
+    "handover_promised": "2027",
+    "original_handover": "2025-Q4",
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "penthouse"
+    ],
+    "size_min_m2": 69.0,
+    "size_max_m2": 436.0,
+    "price_min": 555000.0,
+    "price_max": 3250000.0,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold, open to foreign buyers",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "glass-bottom infinity pool",
+     "spa rooms",
+     "cinema room",
+     "golf simulator",
+     "gym",
+     "lobby porter",
+     "underground parking",
+     "EV charging"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ajuntament de Palma (licencia de obras)",
+    "brochure_url": null
+   },
+   "sources": [
+    "https://xo-jay.com/development/xoparq/",
+    "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/",
+    "https://www.linkedin.com/posts/xo-jay_we-were-delighted-to-celebrate-the-completion-activity-7484881603702464513-qtRu",
+    "https://www.lucasfox.es/obra-nueva-en-mallorca.html",
+    "https://pdf.lucasfox.com/overview/es/xoparq-apartments.pdf",
+    "https://www.engelvoelkers.com/es/en/projects/37d34ff1-9b13-5861-bb4a-76f603538f55",
+    "https://www.john-taylor.com/spain/new-construction/housing-estate/mallorca/"
+   ],
+   "added": "2026-10-31",
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "permit_number": null,
+   "verified_score": 1,
+   "status": "active"
+  },
+  {
+   "slug": "terracos-do-monte-vanguard-properties",
+   "name": "Terraços do Monte",
+   "developer": "Vanguard Properties",
+   "area": "Graça (near Miradouro da Senhora do Monte), Lisbon",
+   "country": "Portugal",
+   "market": "Lisbon",
+   "stage": "off-plan",
+   "url": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+   "docs_url": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+   "seed": {
+    "price": 2500000,
+    "currency": "EUR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": "Vanguard Properties lists completed projects including Castilho 203, Infinity (Lisbon), White Shell, Terras da Comporta and Foz do Tejo on its portfolio page",
+    "units": 15,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "docs_listed": [
+    "developer: 15 apartments incl. 2 penthouses (T2, T3, T5) over 5 floors, 55 parking spaces with ultra-fast charging",
+    "developer: unit table with gross private, balcony and terrace areas, parking, plan links; prices 'on request', 4 units SOLD and 1 RESERVED",
+    "developer: architect ARX Portugal, interiors Viterbo Interior Design, energy rating A+",
+    "developer: sales start January 2026, works start April 2026, completion TBA",
+    "flatin.pt: Lisbon municipal case files incl. e-EDI/2022/494 and e-EDI/2025/1710 (new construction, under licensing) and later alteration cases to Oct 2026"
+   ],
+   "note": "15-unit luxury building with two pools in Graça by Vanguard Properties, launched January 2026 with works scheduled from April 2026 and no completion date. Plans and areas are published per unit but prices are on request; a portal mirroring Lisbon municipal records shows the new-construction and alteration cases still listed as under licensing in October 2026, and no licence number, progress or deposit protection is published. (checked 1 Nov 2026)",
+   "evidence": {
+    "permit": "No alvará number on developer page; municipal case files mirrored by flatin.pt are shown as 'under licensing' (latest 26 Oct 2026)",
+    "escrow": null,
+    "progress": "Only a planned works start (April 2026); no progress published",
+    "plans": "Plan link per unit in the developer availability table",
+    "record": "Developer portfolio marks several Lisbon and Comporta projects as completed",
+    "returns": "No yield or guarantee advertised"
+   },
+   "positives": [
+    "Unit-level areas, parking and plans published",
+    "Named architect and interior designer",
+    "Developer with completed Lisbon projects"
+   ],
+   "flags": [],
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Works start April 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+    },
+    {
+     "claim": "Licensing cases for new construction filed with Lisbon municipality (e-EDI/2022/494, e-EDI/2025/1710), still under licensing",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://flatin.pt/en/new-developments/developer/vanguard-properties/"
+    },
+    {
+     "claim": "15 apartments, T2 to T5, 5 floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+    },
+    {
+     "claim": "Prices from EUR 2.5m (portal)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://flatin.pt/en/new-developments/developer/vanguard-properties/"
+    },
+    {
+     "claim": "Energy rating A+",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+    },
+    {
+     "claim": "Four units sold and one reserved",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+    },
+    {
+     "claim": "Architect ARX Portugal (Castilho 203 team)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+    },
+    {
+     "claim": "Vanguard is selling some other projects (Lisboète, Muda Reserve)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+    },
+    {
+     "claim": "Developer has completed Castilho 203 and Infinity",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.vangproperties.com/pt/real-estate-portugal/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Lisbon, Portugal",
+    "developer_company": "Vanguard Properties (legal entity not published on page)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2026-04",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T2",
+     "T3",
+     "T5 penthouse"
+    ],
+    "size_min_m2": 106.48,
+    "size_max_m2": 332.31,
+    "price_min": 2500000.0,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold, open to foreign buyers",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "outdoor pool",
+     "indoor pool",
+     "wellness centre",
+     "spa with sauna and Turkish bath",
+     "gym",
+     "garden",
+     "24/7 concierge",
+     "EV fast charging"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Câmara Municipal de Lisboa",
+    "brochure_url": null
+   },
+   "sources": [
+    "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+    "https://www.vangproperties.com/pt/real-estate-portugal/",
+    "https://flatin.pt/en/new-developments/developer/vanguard-properties/",
+    "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+   ],
+   "added": "2026-10-31",
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "permit_number": null,
+   "verified_score": 1,
+   "status": "active"
+  },
+  {
+   "slug": "the-anderson-chatswood-huirong-changfa",
+   "name": "The Anderson, Chatswood",
+   "developer": "Huirong Group and Changfa Group JV (applicant Anderson Chatswood Development Pty Ltd)",
+   "area": "Chatswood, Lower North Shore",
+   "country": "Australia",
+   "market": "Sydney",
+   "stage": "under construction",
+   "url": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson",
+   "docs_url": "https://chatswoodanderson.com.au/",
+   "docs_listed": [
+    "developer: 1 to 4 bedroom apartments and penthouses, Hayball interiors, AJC Architects, developer profiles",
+    "Changfa site: completed Ara Leichhardt (139 apartments) and Luxton Carlingford",
+    "NSW Planning Portal SSD-78520463 approved 19 Nov 2025 (122 dwellings)",
+    "Sydney North Planning Panel DA2023/152 approved 18 Dec 2024 (26 storeys, 84 units)",
+    "news: construction started Oct 2026, from AUD 1.09M, completion late 2029"
+   ],
+   "note": "Mixed-use tower of about 120 apartments at 54-56 Anderson St by a Huirong Group and Changfa joint venture, first approved by the Sydney North Planning Panel as an 84-unit, 26-storey scheme (DA2023/152, Dec 2024) and re-approved as a 122-dwelling in-fill affordable housing SSD (SSD-78520463, 19 Nov 2025). Construction began in Oct 2026 with completion targeted for late 2029; prices from AUD 1.09M and no head contractor named publicly. (checked 1 Nov 2026)",
+   "seed": {
+    "price": 1090000,
+    "currency": "AUD",
+    "title": "freehold strata title",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029-Q4",
+    "permit_claim": false,
+    "permit_number": "NSW SSD-78520463",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": "Changfa lists completed Ara Leichhardt (139 apartments) on its own site",
+    "units": 122,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "Not on the developer site. NSW Planning Portal shows SSD-78520463 (in-fill affordable housing, Willoughby) approved 19 Nov 2025; Willoughby Council SSD table lists it at 122 dwellings; Planning Panel determination PPSSNH-396 approved DA2023/152 on 18 Dec 2024 for applicant Anderson Chatswood Development Pty Ltd.",
+    "escrow": "No deposit information published (NSW law requires off-plan deposits to be held in trust, but this is not stated).",
+    "progress": "No developer updates; apartments.com.au (27 Oct 2026) reports construction has commenced, head contractor not identified.",
+    "plans": "Floor plans offered on enquiry only.",
+    "record": "Changfa site lists Ara Leichhardt as completed; Huirong profile describes 40 years in China without named Australian deliveries.",
+    "returns": "No rental or yield claims."
+   },
+   "claims": [
+    {
+     "claim": "State significant development consent SSD-78520463 approved",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://www.planningportal.nsw.gov.au/major-projects/projects/mixed-use-development-fill-affordable-housing-54-56-anderson-street-chatswood"
+    },
+    {
+     "claim": "Earlier DA2023/152 approved by the Sydney North Planning Panel",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PPSSNH-396!20241220T034052.469%20GMT"
+    },
+    {
+     "claim": "About 120 residences",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://www.willoughby.nsw.gov.au/Development/State-Significant-Development-Applications-in-the-Willoughby-LGA"
+    },
+    {
+     "claim": "Construction started",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson"
+    },
+    {
+     "claim": "Completion late 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson"
+    },
+    {
+     "claim": "Prices from AUD 1.09M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson"
+    },
+    {
+     "claim": "Never-to-be-built-out views",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://chatswoodanderson.com.au/"
+    },
+    {
+     "claim": "Changfa has completed Ara Leichhardt",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://changfa.com.au/"
+    },
+    {
+     "claim": "Changfa annual turnover over AUD 2 billion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://changfa.com.au/"
+    },
+    {
+     "claim": "Deposits held in trust",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://chatswoodanderson.com.au/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Chatswood, Australia (Changfa sales office); Huirong Group, China",
+    "developer_company": "Anderson Chatswood Development Pty Ltd (planning applicant)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2026-10",
+    "handover_promised": "2029-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "4BR",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1090000.0,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold strata; foreign buyers need FIRB approval (new dwellings) and pay NSW surcharge purchaser duty",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "ground-floor retail",
+     "EV charging",
+     "outdoor entertaining area",
+     "publicly accessible through-site link"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "NSW Department of Planning (SSD) / Sydney North Planning Panel and Willoughby City Council",
+    "brochure_url": null
+   },
+   "positives": [
+    "Two separate planning consents on the NSW Planning Portal",
+    "Construction has started"
+   ],
+   "flags": [],
+   "sources": [
+    "https://chatswoodanderson.com.au/",
+    "https://changfa.com.au/",
+    "https://www.apartments.com.au/news/nsw/construction-underway-on-new-120-apartment-chatswood-tower-the-anderson",
+    "https://www.apartments.com.au/new-apartments/the-anderson-chatswood-54-56-anderson-street-chatswood-nsw-2067",
+    "https://www.planningportal.nsw.gov.au/major-projects/projects/mixed-use-development-fill-affordable-housing-54-56-anderson-street-chatswood",
+    "https://www.willoughby.nsw.gov.au/Development/State-Significant-Development-Applications-in-the-Willoughby-LGA",
+    "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PPSSNH-396!20241220T034052.469%20GMT"
+   ],
+   "verified_score": 2,
+   "status": "active",
+   "added": "2026-10-31",
+   "permit_number": "NSW SSD-78520463"
+  },
+  {
+   "slug": "elysium-fields-docklands-gurner",
+   "name": "Elysium Fields (Helios and stage 1 towers)",
+   "developer": "GURNER Group with Digital Harbour Holdings (Liberman family consortium)",
+   "area": "Docklands, Melbourne",
+   "country": "Australia",
+   "market": "Melbourne",
+   "stage": "under construction",
+   "url": "https://www.gurner.com.au/projects/docklands",
+   "docs_url": "https://elysiumfieldsbygurner.com.au/",
+   "docs_listed": [
+    "developer: Elysium Fields wellness precinct, Helios Penthouse Collection from AUD 1.895M",
+    "news: construction on four towers of 18 to 30 levels by Hamilton Marino and Maxcon",
+    "Victorian Government release: Minister for Planning approval, sod turned 6 Nov 2024",
+    "portal: Ministerial Planning Permit PA2000811-1",
+    "Maxcon: tower with 230 build-to-sell apartments and 102-key Veriu hotel, completion 03/2028"
+   ],
+   "note": "Wellness-themed five-tower precinct of about 1,100 residences on a long-vacant 2 ha Docklands site; the Victorian Premier turned the first sod in Nov 2024 for a ministerially approved first stage of more than 700 homes, and construction is now under way on four towers. Gurner reports 580 sales worth over AUD 500M across the first three towers, with Helios (260 residences) sold out except a penthouse collection from AUD 1.895M. (checked 1 Nov 2026)",
+   "seed": {
+    "price": 1895000,
+    "currency": "AUD",
+    "title": "freehold strata title",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": "Victorian Ministerial Planning Permit PA2000811-1",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 1100,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "Developer pages give no permit number. The Victorian Government release (6 Nov 2024) states the first stage was approved by the Minister for Planning; apartments.com.au cites Ministerial Planning Permit PA2000811-1 (not checked on the state register).",
+    "escrow": "Nothing published; Victorian law requires off-plan deposits to be held in trust, but the developer does not state it.",
+    "progress": "No developer updates; Premier's release confirms construction start Nov 2024; trade press (Aug 2026) reports construction on four towers.",
+    "plans": "No floor plans on the developer or Helios sites; register-interest only.",
+    "record": "Developer pages describe the group but list no completed projects with dates; not verified.",
+    "returns": "No rental guarantee or yield claim found."
+   },
+   "claims": [
+    {
+     "claim": "First stage approved by the Victorian Minister for Planning",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+    },
+    {
+     "claim": "Construction started November 2024",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+    },
+    {
+     "claim": "Construction under way on four towers with Hamilton Marino and Maxcon",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025"
+    },
+    {
+     "claim": "Maxcon tower completion March 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://maxcon.net.au/projects/elysium-fields/"
+    },
+    {
+     "claim": "First stage of 700+ homes across three buildings",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/"
+    },
+    {
+     "claim": "580 apartments sold for over AUD 500M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.theurbandeveloper.com/articles/gurner-banks-sales-despite-downturn-elysium-fields"
+    },
+    {
+     "claim": "Helios 240 private residences sold out",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025"
+    },
+    {
+     "claim": "Ministerial Planning Permit PA2000811-1",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.apartments.com.au/new-apartments/elysium-fields-docklands-208-226-harbour-esplanade-docklands-vic-3008"
+    },
+    {
+     "claim": "Penthouses from AUD 1.895M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://helios.elysiumfieldsbygurner.com.au/"
+    },
+    {
+     "claim": "On-site reverse ageing clinic",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Melbourne, Australia",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024-11",
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "penthouse"
+    ],
+    "size_min_m2": 60.0,
+    "size_max_m2": 600.0,
+    "price_min": 1895000.0,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold strata; foreign buyers need FIRB approval (new dwellings) and pay Victorian foreign purchaser duty",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "Veriu hotel (one tower); Saint Haven wellness concepts",
+    "amenities": [
+     "mineral bathing pools",
+     "sauna and steam",
+     "lap pool",
+     "gym",
+     "flotation and red-light therapy",
+     "private dining and rooftop lounge"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Victorian Minister for Planning (Docklands)",
+    "brochure_url": null
+   },
+   "positives": [
+    "State government publicly confirmed the planning approval and construction start",
+    "Two named builders on site"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.gurner.com.au/projects/docklands",
+    "https://elysiumfieldsbygurner.com.au/",
+    "https://helios.elysiumfieldsbygurner.com.au/",
+    "https://maxcon.net.au/projects/elysium-fields/",
+    "https://builtdesignaustralia.com.au/elysium-fields-design-revealed-docklands-precinct/",
+    "https://www.theurbandeveloper.com/articles/gurner-banks-sales-despite-downturn-elysium-fields",
+    "https://www.apartments.com.au/news/vic/elysium-fields-drive-gurner-to-1-65-billion-in-apartment-sales-over-2025",
+    "https://www.apartments.com.au/new-apartments/elysium-fields-docklands-208-226-harbour-esplanade-docklands-vic-3008",
+    "https://www.premier.vic.gov.au/sites/default/files/2024-11/241106-The-New-Concession-Works-More-Homes-Are-On-The-Way.pdf"
+   ],
+   "verified_score": 2,
+   "status": "active",
+   "added": "2026-10-31",
+   "permit_number": "Victorian Ministerial Planning Permit PA2000811-1"
+  },
+  {
+   "slug": "the-kubrick-freemans-bay-ockham",
+   "name": "The Kubrick",
+   "developer": "Ockham Residential (developer entity Periwinkle GP Limited)",
+   "area": "Freemans Bay, Auckland",
+   "country": "New Zealand",
+   "market": "New Zealand",
+   "stage": "off-plan",
+   "url": "https://www.ockham.co.nz/the-kubrick/",
+   "docs_url": "https://www.thekubrick.co.nz/",
+   "docs_listed": [
+    "developer: 52 apartments over nine levels, 2 to 4 bedrooms, 60 to 280 sq m, 616 sq m of shared facilities, 85 carparks",
+    "developer: floor plan options A/B/C per type (on project site)",
+    "LINZ Overseas Investment exemption certificate 202600324 (5 Jun 2026) for overseas buyers",
+    "news: construction from Q1 2027, completion 2029, 10% deposit, remaining units from NZD 1.3M"
+   ],
+   "note": "Nine-level, 52-apartment block in brick by Auckland developer Ockham on a 2,689 sq m site next to Harry Dansey Reserve, consented and in presales with eight sales reported in Oct 2026. LINZ granted an Overseas Investment Act exemption certificate (202600324) on 5 Jun 2026 to Periwinkle GP Limited, letting overseas buyers purchase up to 60% of units off the plan; construction is due to start in Q1 2027 with completion in 2029. (checked 1 Nov 2026)",
+   "seed": {
+    "price": 1300000,
+    "currency": "NZD",
+    "title": "freehold unit title",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029",
+    "permit_claim": true,
+    "permit_number": "LINZ OIO exemption certificate 202600324",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 52,
+    "payment_plan": "10% deposit on presale, balance at settlement (news)",
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "The project site states no consent number. LINZ register lists exemption certificate 202600324 (5 Jun 2026) for Periwinkle GP Limited (company 9277215), 52 apartments over nine levels at 8 Pratt Street, Record of Title 1189458. The Post (Nov 2025) reports resource consent received; building consent was then being completed.",
+    "escrow": "Only a 10% deposit is mentioned; no deposit holder named.",
+    "progress": "Not started; OneRoof (Oct 2026) says construction begins Q1 2027.",
+    "plans": "Developer describes 17 layouts with A, B and C options but plans are not published as files; available via agents.",
+    "record": "Ockham is described as a high-profile Auckland developer, but the project pages list no completed buildings.",
+    "returns": "No rental or yield claims."
+   },
+   "claims": [
+    {
+     "claim": "Overseas buyers may purchase under an OIO exemption certificate",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf"
+    },
+    {
+     "claim": "52 apartments over nine levels at 8 Pratt Street",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://www.linz.govt.nz/guidance/overseas-investment/apply-consent-variation-or-exemption/application-forms-and-information-sheets/exemptions-need-consent/registers-exemptions/register-exemption-certificates-large"
+    },
+    {
+     "claim": "Developer entity is Periwinkle GP Limited (NZ company 9277215)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf"
+    },
+    {
+     "claim": "Resource consent granted",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.thepost.co.nz/business/360883447/ockham-launches-new-apartment-development-thawing-market"
+    },
+    {
+     "claim": "Completion three years from Nov 2025, subject to sales",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299"
+    },
+    {
+     "claim": "Construction starts Q1 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299"
+    },
+    {
+     "claim": "Eight presales",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299"
+    },
+    {
+     "claim": "Prices NZD 1M to 6M, penthouse over NZD 11M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oneroof.co.nz/news/sci-fi-epic-2001-at-the-heart-of-11m-penthouse-drawing-us-eyeballs-49591"
+    },
+    {
+     "claim": "Overseas buyers may live in the apartment",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf"
+    },
+    {
+     "claim": "Deposits protected",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.thekubrick.co.nz/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Auckland, New Zealand",
+    "developer_company": "Periwinkle GP Limited (company number 9277215)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2029",
+    "original_handover": "2028-Q4",
+    "delay_months": null,
+    "unit_types": [
+     "2BR",
+     "3BR",
+     "4BR",
+     "sub-penthouse",
+     "penthouse"
+    ],
+    "size_min_m2": 60.0,
+    "size_max_m2": 730.0,
+    "price_min": 1300000.0,
+    "price_max": 5000000.0,
+    "currency": "NZD",
+    "deposit_pct": 10.0,
+    "payment_plan": "10% deposit, balance on settlement",
+    "foreign_ownership": "Overseas buyers allowed under OIO exemption up to 60% of units, bought before completion; they may not live in the unit",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "covered outdoor pool",
+     "gym with sauna and ice bath",
+     "residents' lounge with kitchen",
+     "drinks suite",
+     "shared office and boardroom",
+     "Japanese-inspired courtyard"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Auckland Council (resource and building consent); LINZ Overseas Investment Office (foreign buyer exemption)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Foreign-buyer exemption certificate public on the LINZ register with legal title reference",
+    "Developer entity and company number disclosed by the regulator"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.thekubrick.co.nz/",
+    "https://www.ockham.co.nz/the-kubrick/",
+    "https://www.linz.govt.nz/sites/default/files/release/Periwinkle%20GP%20Limited.pdf",
+    "https://www.linz.govt.nz/guidance/overseas-investment/apply-consent-variation-or-exemption/application-forms-and-information-sheets/exemptions-need-consent/registers-exemptions/register-exemption-certificates-large",
+    "https://www.oneroof.co.nz/news/living-work-of-art-the-kubrick-brings-bold-colour-to-freemans-bay-with-52-apartments-50299",
+    "https://www.oneroof.co.nz/news/sci-fi-epic-2001-at-the-heart-of-11m-penthouse-drawing-us-eyeballs-49591",
+    "https://www.thepost.co.nz/business/360883447/ockham-launches-new-apartment-development-thawing-market"
+   ],
+   "verified_score": 2,
+   "status": "active",
+   "added": "2026-10-31",
+   "permit_number": "LINZ OIO exemption certificate 202600324"
+  },
+  {
+   "slug": "tabua-tower-suva-frontier-investments",
+   "name": "Tabua Tower",
+   "developer": "Frontier Investments Limited (architect Sharma Design Group)",
+   "area": "Forster Street, Suva CBD",
+   "country": "Fiji",
+   "market": "Fiji",
+   "stage": "off-plan",
+   "url": "https://www.fijitimes.com.fj/commercial-landmark/",
+   "docs_url": "https://tabuatower.com/",
+   "docs_listed": [
+    "developer: 21 levels, 120-room international brand hotel, 40 strata-titled apartments, strata office floors, rooftop bar",
+    "developer: floor plans for apartment units 1, 2, 3, 5, 6 and two penthouses",
+    "developer: land titles CT 4949 and CT 4434, Lot 3 Forster Street",
+    "news: launched by Deputy PM 9 Oct 2025; equity shares in the developer offered to investors"
+   ],
+   "note": "21-level mixed-use tower in Suva's CBD with a 120-room hotel, 40 strata apartments and strata office floors, launched for sale by Fiji's Deputy Prime Minister in Oct 2025. Reports conflict on timing: the Fiji Times said in June 2025 it was under construction for Q1 2028 completion, while the launch coverage in Oct 2025 said construction would start in Q3 or Q4 2026; no permit number or deposit protection is published. (checked 1 Nov 2026)",
+   "seed": {
+    "price": null,
+    "currency": "FJD",
+    "title": "strata title (freehold status not stated)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "developer_delivered": null,
+    "units": 40,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
+   },
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "developer",
+    "record": "none",
+    "returns": "developer"
+   },
+   "evidence": {
+    "permit": "No building permit or approval number published; the site lists land titles CT 4949 and CT 4434. Architect called both projects 'shovel-ready' after seven years of approvals (Fiji Sun), without numbers.",
+    "escrow": "No deposit or trust account.",
+    "progress": "Contradicted: Fiji Times (2 Jun 2025) says construction under way with completion Q1 2028; Fiji Sun (10 Oct 2025) says construction will commence Q3 or Q4 2026. No developer updates.",
+    "plans": "Developer site shows floor plans for five apartment types and two penthouses.",
+    "record": "No completed projects named for Frontier Investments.",
+    "returns": "No guaranteed yield; developer also offers equity shares in Frontier Investments to investors (Fiji Times)."
+   },
+   "claims": [
+    {
+     "claim": "Project launched by Fiji's Deputy Prime Minister",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON"
+    },
+    {
+     "claim": "21-storey tower",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.fijitimes.com.fj/commercial-landmark/"
+    },
+    {
+     "claim": "Construction under way, completion Q1 2028",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+    },
+    {
+     "claim": "120-room international brand hotel",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tabuatower.com/"
+    },
+    {
+     "claim": "40 strata-titled apartments",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+    },
+    {
+     "claim": "Project is shovel-ready with approvals",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+    },
+    {
+     "claim": "Land held under CT 4949 and CT 4434",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tabuatower.com/"
+    },
+    {
+     "claim": "Investors can buy equity shares in the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fijitimes.com.fj/commercial-landmark/"
+    },
+    {
+     "claim": "Deposits protected",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tabuatower.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Suva, Fiji",
+    "developer_company": "Frontier Investments Limited",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "penthouse",
+     "strata office floor"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "FJD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Strata title; tenure of the underlying land and foreign-buyer rules not stated",
+    "rental_programme": "Hotel and serviced apartment operation planned (no figures)",
+    "service_charge": null,
+    "brand": "International hotel brand not named",
+    "amenities": [
+     "rooftop bar and restaurant",
+     "120-room hotel",
+     "basement and podium parking",
+     "24/7 security",
+     "retail lobby"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Suva City Council (building permit)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Floor plans published on the developer site",
+    "Government publicly launched the project"
+   ],
+   "flags": [],
+   "sources": [
+    "https://tabuatower.com/",
+    "https://www.fijitimes.com.fj/commercial-landmark/",
+    "https://fijisun.com.fj/news/business/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines",
+    "https://www.fiji.gov.fj/Media-Centre/News/$270M-LANDMARK-PROJECTS-SIGNAL-STRONG-INVESTOR-CON",
+    "https://www.fijivillage.com/feature/270M-boost-for-Fijis-economy-with-launch-of-The-Koro-Fiji-and-Tabua-Tower-5fx4r8/"
+   ],
+   "verified_score": 0,
+   "status": "active",
+   "added": "2026-10-31",
+   "permit_number": null
   }
  ]
 }

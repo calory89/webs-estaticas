@@ -2437,5 +2437,374 @@
   "permit_number": null,
   "verified_score": 1,
   "status": "active"
+ },
+ {
+  "slug": "xo-parq-palma-xojay",
+  "name": "XO Parq",
+  "developer": "XOJAY (XOJAY Management)",
+  "area": "C/ Barranquilla, Nou Llevant, Palma de Mallorca",
+  "country": "Spain",
+  "market": "Balearics",
+  "stage": "under construction",
+  "url": "https://xo-jay.com/development/xoparq/",
+  "docs_url": "https://xo-jay.com/development/xoparq/",
+  "seed": {
+   "price": 555000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 65,
+   "payment_plan": null,
+   "price_per_m2": 8043
+  },
+  "docs_listed": [
+   "developer: 65 apartments in three four-storey blocks over shared parking, architect CMV Architects, completion 2027, fact sheet, typologies with m2",
+   "developer disclaimer: renders correspond to 'a project that has not yet received planning permission'",
+   "contractor OCN: XO Parq under construction since 2025 (excavation, structure, envelope, installations)",
+   "developer LinkedIn (Jul 2026): superstructure completed",
+   "agent Dils Lucas Fox: 'licencia de construcción concedida', Q4 2027, unit price list from EUR 555,000 (69 m2)",
+   "agents: completion end 2025 (Engel & Völkers), May 2027 (John Taylor)"
+  ],
+  "note": "65-apartment luxury scheme opposite Parc de Can Palou in Nou Llevant by XOJAY, built by contractor OCN since 2025, with the superstructure topped out in July 2026 and completion now given as 2027. The developer's own page still carries a disclaimer that the project has not received planning permission, while an agent says the licence is granted; no licence number, deposit guarantee or track record is published, and agents quote completion dates from end 2025 to Q4 2027. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No licence number. Developer disclaimer says the design corresponds to a project without planning permission; agent Lucas Fox lists licence as granted; contractor reports works since 2025",
+   "escrow": null,
+   "progress": "Contractor OCN project page (under construction since 2025) and developer LinkedIn post on superstructure completion (Jul 2026); no %",
+   "plans": "Developer lists typologies with areas; agents publish per-unit sheets and plans",
+   "record": "XOJAY names no completed project; its other Palma scheme XO Jonquet is also under construction",
+   "returns": "No yield or guarantee advertised"
+  },
+  "positives": [
+   "Independent contractor confirms construction",
+   "Superstructure completed (Jul 2026)",
+   "Energy rating A, named architect and contractor"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Under construction since 2025, built by OCN",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+   },
+   {
+    "claim": "Superstructure completed (Jul 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/xo-jay_we-were-delighted-to-celebrate-the-completion-activity-7484881603702464513-qtRu"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://xo-jay.com/development/xoparq/"
+   },
+   {
+    "claim": "Completion end 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+   },
+   {
+    "claim": "Completion 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xo-jay.com/development/xoparq/"
+   },
+   {
+    "claim": "65 apartments in three four-storey blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+   },
+   {
+    "claim": "69 units (agent PDF)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://pdf.lucasfox.com/overview/es/xoparq-apartments.pdf"
+   },
+   {
+    "claim": "Prices from EUR 555,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.es/obra-nueva-en-mallorca.html"
+   },
+   {
+    "claim": "Energy rating A, solar, EV charging",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+   },
+   {
+    "claim": "Amenities: infinity/glass-bottom pool, spa, cinema, golf simulator, gym",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "XOJAY (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2027",
+   "original_handover": "2025-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 69,
+   "size_max_m2": 436,
+   "price_min": 555000,
+   "price_max": 3250000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "glass-bottom infinity pool",
+    "spa rooms",
+    "cinema room",
+    "golf simulator",
+    "gym",
+    "lobby porter",
+    "underground parking",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Palma (licencia de obras)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://xo-jay.com/development/xoparq/",
+   "https://www.ocngrupo.com/en/proyectos/residencial-xo-parq/",
+   "https://www.linkedin.com/posts/xo-jay_we-were-delighted-to-celebrate-the-completion-activity-7484881603702464513-qtRu",
+   "https://www.lucasfox.es/obra-nueva-en-mallorca.html",
+   "https://pdf.lucasfox.com/overview/es/xoparq-apartments.pdf",
+   "https://www.engelvoelkers.com/es/en/projects/37d34ff1-9b13-5861-bb4a-76f603538f55",
+   "https://www.john-taylor.com/spain/new-construction/housing-estate/mallorca/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1,
+  "status": "active"
+ },
+ {
+  "slug": "terracos-do-monte-vanguard-properties",
+  "name": "Terraços do Monte",
+  "developer": "Vanguard Properties",
+  "area": "Graça (near Miradouro da Senhora do Monte), Lisbon",
+  "country": "Portugal",
+  "market": "Lisbon",
+  "stage": "off-plan",
+  "url": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+  "docs_url": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+  "seed": {
+   "price": 2500000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Vanguard Properties lists completed projects including Castilho 203, Infinity (Lisbon), White Shell, Terras da Comporta and Foz do Tejo on its portfolio page",
+   "units": 15,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: 15 apartments incl. 2 penthouses (T2, T3, T5) over 5 floors, 55 parking spaces with ultra-fast charging",
+   "developer: unit table with gross private, balcony and terrace areas, parking, plan links; prices 'on request', 4 units SOLD and 1 RESERVED",
+   "developer: architect ARX Portugal, interiors Viterbo Interior Design, energy rating A+",
+   "developer: sales start January 2026, works start April 2026, completion TBA",
+   "flatin.pt: Lisbon municipal case files incl. e-EDI/2022/494 and e-EDI/2025/1710 (new construction, under licensing) and later alteration cases to Oct 2026"
+  ],
+  "note": "15-unit luxury building with two pools in Graça by Vanguard Properties, launched January 2026 with works scheduled from April 2026 and no completion date. Plans and areas are published per unit but prices are on request; a portal mirroring Lisbon municipal records shows the new-construction and alteration cases still listed as under licensing in October 2026, and no licence number, progress or deposit protection is published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No alvará number on developer page; municipal case files mirrored by flatin.pt are shown as 'under licensing' (latest 26 Oct 2026)",
+   "escrow": null,
+   "progress": "Only a planned works start (April 2026); no progress published",
+   "plans": "Plan link per unit in the developer availability table",
+   "record": "Developer portfolio marks several Lisbon and Comporta projects as completed",
+   "returns": "No yield or guarantee advertised"
+  },
+  "positives": [
+   "Unit-level areas, parking and plans published",
+   "Named architect and interior designer",
+   "Developer with completed Lisbon projects"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Works start April 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+   },
+   {
+    "claim": "Licensing cases for new construction filed with Lisbon municipality (e-EDI/2022/494, e-EDI/2025/1710), still under licensing",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://flatin.pt/en/new-developments/developer/vanguard-properties/"
+   },
+   {
+    "claim": "15 apartments, T2 to T5, 5 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+   },
+   {
+    "claim": "Prices from EUR 2.5m (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://flatin.pt/en/new-developments/developer/vanguard-properties/"
+   },
+   {
+    "claim": "Energy rating A+",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+   },
+   {
+    "claim": "Four units sold and one reserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+   },
+   {
+    "claim": "Architect ARX Portugal (Castilho 203 team)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/"
+   },
+   {
+    "claim": "Vanguard is selling some other projects (Lisboète, Muda Reserve)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+   },
+   {
+    "claim": "Developer has completed Castilho 203 and Infinity",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/real-estate-portugal/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "Vanguard Properties (legal entity not published on page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T2",
+    "T3",
+    "T5 penthouse"
+   ],
+   "size_min_m2": 106.48,
+   "size_max_m2": 332.31,
+   "price_min": 2500000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "indoor pool",
+    "wellness centre",
+    "spa with sauna and Turkish bath",
+    "gym",
+    "garden",
+    "24/7 concierge",
+    "EV fast charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal de Lisboa",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.vangproperties.com/pt/lisboa-real-estate/terracos-do-monte/",
+   "https://www.vangproperties.com/pt/real-estate-portugal/",
+   "https://flatin.pt/en/new-developments/developer/vanguard-properties/",
+   "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1,
+  "status": "active"
  }
 ]

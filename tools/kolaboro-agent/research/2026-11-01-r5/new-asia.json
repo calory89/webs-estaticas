@@ -658,8 +658,8 @@
    },
    {
     "claim": "Developer is Arthaland with Mitsui Fudosan",
-    "status": "verified",
-    "by": "independent",
+    "status": "unverified",
+    "by": "none",
     "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
    },
    {
@@ -670,14 +670,14 @@
    },
    {
     "claim": "252 residential units over 37 floors",
-    "status": "verified",
-    "by": "independent",
+    "status": "unverified",
+    "by": "none",
     "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
    },
    {
     "claim": "Official sales launched 28 Feb 2026",
-    "status": "verified",
-    "by": "independent",
+    "status": "unverified",
+    "by": "none",
     "source": "https://www.mitsuifudosan.co.jp/english/corporate/news/2026/0216/"
    },
    {
@@ -1426,8 +1426,8 @@
   "claims": [
    {
     "claim": "Construction started 14 Oct 2024",
-    "status": "verified",
-    "by": "independent",
+    "status": "unverified",
+    "by": "none",
     "source": "https://www.smfl.co.jp/news/assets/241015.pdf"
    },
    {
