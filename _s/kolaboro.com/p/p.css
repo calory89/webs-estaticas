@@ -168,3 +168,4 @@
   a{color:#000;text-decoration:none}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none!important}
 }
+.pf-fresh{font-size:.88rem;color:var(--muted);margin:10px 0}.pf-fresh.old{color:var(--hivis-ink);font-weight:700;background:#FDE3D6;padding:8px 12px;border-radius:10px}

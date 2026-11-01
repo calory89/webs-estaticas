@@ -23,7 +23,7 @@
       return (c || a.rank - b.rank) * dir;
     });
     $('tit').querySelector('tbody').innerHTML = list.length ? list.map(function (r) {
-      return '<tr><td class="rk">' + r.rank + '</td><td class="l mk"><a href="/m/?market=' + encodeURIComponent(r.market) + '">' + esc(r.market) + '</a></td>' +
+      return '<tr><td class="rk">' + r.rank + '</td><td class="l mk"><a href="/m/?market=' + encodeURIComponent(r.market) + '">' + esc(r.market) + '</a>' + (r.projects < 10 ? ' <small class="ti-ss" title="Fewer than 10 projects: treat this rank as indicative">small sample</small>' : '') + '</td>' +
         '<td class="l ix" title="' + compT(r) + '"><span class="ixw"><b>' + r.index.toFixed(1) + '</b>' + bar(r) + '<small>' + comp(r) + '</small><span class="ti-sr">' + compT(r) + '</span></span></td>' +
         '<td class="l">' + esc(r.country) + '</td><td>' + r.projects + '</td>' +
         '<td>' + r.avgChecks.toFixed(1) + '</td><td>' + pct(r.permitP) + '</td><td>' + pct(r.escrowP) + '</td><td>' + pct(r.conf4P) + '</td><td class="' + (r.flagged ? '' : 'fl0') + '">' + r.flagged + '</td></tr>';
