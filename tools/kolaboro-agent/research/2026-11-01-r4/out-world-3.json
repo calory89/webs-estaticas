@@ -1664,5 +1664,433 @@
    "https://ren.hr/en/real-estates/?n=5249",
    "https://reatelier.hr/en/p/apartment-in-a-luxurious-new-construction-project-in-novigrad-65"
   ]
+ },
+ {
+  "slug": "ramada-batumi-archi",
+  "name": "Ramada Batumi by Archi",
+  "developer": "Archi (Archi Properties)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "25 Shalva Inasaridze St / David Mamuladze St, New Boulevard, Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "url": "https://metropolitan.realestate/batumi/ramada-batumi-archi-properties-batumi-georgia/",
+  "docs_url": "https://archi.ge/en/block/ramada-hotel-and-suites-by-wyndham",
+  "permit_number": null,
+  "docs_listed": [
+   "developer progress gauge 'Ongoing 75%' on archi.ge (page dated Oct 2026)",
+   "interactive floor and unit chooser (rooms, parking, commercial) on archi.ge",
+   "construction launch announced 11 Jul 2022",
+   "30 storeys, fully furnished units under Ramada Encore by Wyndham; hotel rental pool",
+   "unit sizes 31.9 to 82.4 m2; 667 apartments (korter.ge); cadastral code 05.32.12.239 (korter.ge)",
+   "completion Q4 2027 (korter.ge, Oct 2026) vs Q2 2028 (avezor.ge) vs 2028 (metropolitan)",
+   "instalments: 30% down and up to 18 months (avezor) or 0% over 21-22 months (metropolitan)",
+   "broker projection of 12.5% rental yield and 37% capital appreciation by 2028"
+  ],
+  "note": "30-storey Ramada Encore by Wyndham aparthotel by Archi, Georgia's largest developer (55+ completed projects, Deloitte-audited since 2024), launched in July 2022 and shown by the developer as 75% built in Oct 2026. Handover dates on portals range from Q4 2027 to Q2 2028, unit counts from 667 to 696, and brokers advertise a 12.5% yield and a 'guaranteed' passive income that the developer page does not state. No permit number or escrow is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 90885,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12.5,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 75,
+   "progress_updates": true,
+   "developer_delivered": "Archi: 49 completed projects (June 2024, developer) and 51 to 55+ completed projects in 2025-2026 per CBW and OC Media",
+   "units": 667,
+   "payment_plan": "30% down, instalments up to 18 months (avezor.ge); 0% instalments over 21-22 months (metropolitan)",
+   "price_per_m2": 1678
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number on archi.ge or portals; only a cadastral code on korter.ge",
+   "escrow": "Georgia has no mandatory escrow and none is stated",
+   "progress": "Developer gauge shows 75%; batumiverified quotes about 72% mid-2026; korter.ge has its own dated site photos to Oct 2026; sivrce shows 25% (inconsistent data)",
+   "plans": "archi.ge floor-by-floor unit chooser and korter.ge layouts by type",
+   "record": "Independent press (CBW, OC Media) reports 51 to 55+ completed projects and Deloitte IFRS audit agreement",
+   "returns": "Developer says Wyndham pool 'ensures steady income' and rooms rent 'up to 10 times higher'; broker shows 12.5% yield; avezor portal text says 'guaranteeing a stable and completely passive income'; no contractual guarantee from Archi found"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Construction launched July 2022",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://archi.ge/en/news/archi-ramada-batumi-new-outstanding-aparthotel-of-archi"
+   },
+   {
+    "claim": "Building 75% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://archi.ge/en/block/ramada-hotel-and-suites-by-wyndham"
+   },
+   {
+    "claim": "Construction 25% complete (sivrce data)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sivrce.com/ge/en/mshenebare-binebi/archi-ramada-batumi"
+   },
+   {
+    "claim": "Handover in 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://korter.ge/en/archi-ramada-batumi"
+   },
+   {
+    "claim": "696 units (broker) vs 667 apartments (korter, sivrce)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://korter.ge/en/archi-ramada-batumi"
+   },
+   {
+    "claim": "Developer has completed 52 or more projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://oc-media.org/tbilisis-fairytale-trump-tower-doomed-to-fail/"
+   },
+   {
+    "claim": "Developer accounts audited by Deloitte under IFRS",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cbw.ge/business/archi-conquered-the-domestic-market-now-its-putting-georgian-real-estate-on-the-global-map"
+   },
+   {
+    "claim": "Partnership with Ramada Encore by Wyndham",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://archi.ge/en/news/archi-and-deloitte-signed-an-audit-service-agreement"
+   },
+   {
+    "claim": "12.5% rental yield and 37% capital appreciation by 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metropolitan.realestate/batumi/ramada-batumi-archi-properties-batumi-georgia/"
+   },
+   {
+    "claim": "Guaranteed stable passive income (portal wording)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://avezor.ge/en/developers/archi-ramada-batumi/"
+   },
+   {
+    "claim": "Prices from USD 1,678/m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sivrce.com/ge/en/mshenebare-binebi/archi-ramada-batumi"
+   },
+   {
+    "claim": "Building 30 storeys (developer) vs 36 storeys (avezor)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://avezor.ge/en/developers/archi-ramada-batumi/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": "Archi group (LLC Archi, ID 200120975; LLC Archi Development, ID 404979779, per Bektu summary of reportal.ge)",
+   "developer_projects_delivered": 55,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Private; consolidated IFRS accounts audited by Deloitte since 2024; earlier audits on reportal.ge",
+   "construction_start": "2022-07",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026-Q2 (June 2026 on some agency listings, per batumiverified)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 31.9,
+   "size_max_m2": 82.4,
+   "price_min": 90885,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down, instalments up to 18 months",
+   "foreign_ownership": "Freehold; foreigners may own apartments in Georgia (not agricultural land)",
+   "rental_programme": "Hotel rental pool under Ramada Encore by Wyndham, revenue shared among owners; broker projects 12.5% yield",
+   "service_charge": null,
+   "brand": "Ramada Encore by Wyndham",
+   "amenities": [
+    "outdoor pool",
+    "spa",
+    "fitness centre",
+    "casino",
+    "restaurant and bar",
+    "conference rooms",
+    "kids area",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Batumi City Hall (urban development service)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Largest developer in Georgia with many completed projects reported independently",
+   "IFRS accounts audited by Deloitte",
+   "Developer publishes a progress percentage and unit chooser",
+   "International hotel brand attached"
+  ],
+  "flags": [
+   {
+    "text": "Completion dates for the project differ across listings (June 2026, Q4 2027, Q2 2028) after a July 2022 launch.",
+    "source": "https://batumiverified.com/en/projects/archi-ramada-batumi"
+   },
+   {
+    "text": "The Daily Beast and The Real Deal reported that Archi's founder is a former Georgian Dream MP and that the group's Trump Tower Tbilisi site was bought from a foundation linked to the US-sanctioned Bidzina Ivanishvili; no sanctions have been imposed on Archi or its founder.",
+    "source": "https://therealdeal.com/new-york/2026/10/23/trump-tower-developer-wants-to-make-georgia-the-next-dubai/"
+   }
+  ],
+  "sources": [
+   "https://metropolitan.realestate/batumi/ramada-batumi-archi-properties-batumi-georgia/",
+   "https://archi.ge/en/block/ramada-hotel-and-suites-by-wyndham",
+   "https://archi.ge/en/news/archi-ramada-batumi-new-outstanding-aparthotel-of-archi",
+   "https://archi.ge/en/news/archi-and-deloitte-signed-an-audit-service-agreement",
+   "https://korter.ge/en/archi-ramada-batumi",
+   "https://avezor.ge/en/developers/archi-ramada-batumi/",
+   "https://batumiverified.com/en/projects/archi-ramada-batumi",
+   "https://sivrce.com/ge/en/mshenebare-binebi/archi-ramada-batumi",
+   "https://cbw.ge/business/archi-conquered-the-domestic-market-now-its-putting-georgian-real-estate-on-the-global-map",
+   "https://oc-media.org/tbilisis-fairytale-trump-tower-doomed-to-fail/",
+   "https://therealdeal.com/new-york/2026/10/23/trump-tower-developer-wants-to-make-georgia-the-next-dubai/",
+   "https://www.thedailybeast.com/trumps-sign-mega-tower-deal-with-firm-tied-to-sanctioned-pro-putin-billionaire/",
+   "https://bektu.com/blog/archi-georgia-entity-structure-permit-record-buyer-checks-2026"
+  ]
+ },
+ {
+  "slug": "archi-universe-tbilisi",
+  "name": "Archi Universe",
+  "developer": "Archi",
+  "status": "active",
+  "stage": "under construction",
+  "area": "15a University Street, Saburtalo (Vazha-Pshavela), Tbilisi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "url": "https://metropolitan.realestate/tbilisi/archi-universe-tbilisi-georgia/",
+  "docs_url": "https://archi.ge/en/complex/archi-universe",
+  "permit_number": null,
+  "docs_listed": [
+   "two 26-storey blocks, 257 apartments (developer); Block A 65% and Block B 67% built (archi.ge gauges)",
+   "unit chooser per block on archi.ge",
+   "construction start Q4 2023, completion Q2 2027 (korter.ge); cadastral code 01.14.04.030.048",
+   "sizes 54.4 to 370.8 m2 (korter) vs 31 to 519 m2 (brokers); from USD 2,162/m2 (korter)",
+   "payment plans 60/40, 0% over 14 months, or 20/60/20; TBC Bank mortgage",
+   "delivery in 'premium frame' condition",
+   "broker projection: 13.11% ROI, 34.08% capital growth by June 2027; rental management at 20% of income"
+  ],
+  "note": "Two 26-storey towers with 257 apartments by Archi on University Street, Saburtalo; the developer shows the blocks at 65% and 67% built and portals give a Q4 2023 start and Q2 2027 handover. Brokers advertise 13.11% ROI and 34% capital growth by handover. Archi is Georgia's largest developer with 55+ completed projects and Deloitte-audited accounts, but no permit number or escrow is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 75600,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 13.11,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 66,
+   "progress_updates": true,
+   "developer_delivered": "Archi: 55+ completed projects per OC Media and Wikipedia; 49 completed per developer in June 2024",
+   "units": 257,
+   "payment_plan": "60/40; 0% instalment over 14 months; or 20/60/20 with 20% on handover",
+   "price_per_m2": 2162
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on archi.ge or portals; only a cadastral code on korter.ge",
+   "escrow": "Not stated; Georgian law has no mandatory off-plan escrow",
+   "progress": "Developer gauges: Block A 65%, Block B 67%; korter.ge own photo series March 2025 to Oct 2026; sivrce shows 46%",
+   "plans": "archi.ge per-block unit chooser; korter.ge layouts",
+   "record": "Independent press reports 55+ completed projects and Deloitte IFRS audit",
+   "returns": "No guarantee; brokers project 13.11% ROI and 34.08% capital growth without basis"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "257 apartments in two 26-storey blocks",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://korter.ge/en/archi-universi-tbilisi"
+   },
+   {
+    "claim": "Block A 65% and Block B 67% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://archi.ge/en/complex/archi-universe"
+   },
+   {
+    "claim": "Construction 46% complete (sivrce)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sivrce.ge/en/mshenebare-binebi/archi-universe"
+   },
+   {
+    "claim": "Handover June 2027 / Q2 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/archi-universi-tbilisi"
+   },
+   {
+    "claim": "Developer has 55+ completed projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://oc-media.org/tbilisis-fairytale-trump-tower-doomed-to-fail/"
+   },
+   {
+    "claim": "Developer accounts audited by Deloitte",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cbw.ge/business/archi-conquered-the-domestic-market-now-its-putting-georgian-real-estate-on-the-global-map"
+   },
+   {
+    "claim": "Developer holds 18% of Georgian residential market",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/new-york/2026/10/23/trump-tower-developer-wants-to-make-georgia-the-next-dubai/"
+   },
+   {
+    "claim": "Starting price USD 75,600 vs 'launch price 278k'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://opr.ae/projects/archi-universe-tbilisi-georgia"
+   },
+   {
+    "claim": "13.11% ROI and 34.08% capital growth by June 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metropolitan.realestate/tbilisi/archi-universe-tbilisi-georgia/"
+   },
+   {
+    "claim": "Unit sizes 31 to 519 m2 (broker) vs 54.4 to 370.8 m2 (korter)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://korter.ge/en/archi-universi-tbilisi"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://archi.ge/en/complex/archi-universe"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Tbilisi, Georgia",
+   "developer_company": "Archi group (LLC Archi, ID 200120975; LLC Archi Development, ID 404979779, per Bektu summary of reportal.ge)",
+   "developer_projects_delivered": 55,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Private; IFRS consolidated accounts audited by Deloitte since 2024",
+   "construction_start": "2023-10",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR"
+   ],
+   "size_min_m2": 54.4,
+   "size_max_m2": 370.8,
+   "price_min": 75600,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "60/40, 0% over 14 months, or 20/60/20",
+   "foreign_ownership": "Freehold apartment ownership open to foreigners",
+   "rental_programme": "Broker-offered rental management at 20% of income; no figures from developer",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "fitness hall",
+    "lobby and concierge",
+    "supermarket",
+    "pharmacy",
+    "cafes",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tbilisi City Hall, Architecture Service",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large developer with independently reported track record and audited accounts",
+   "Developer publishes per-block progress percentages",
+   "Unit chooser and price per m2 available",
+   "Payment plans with a share due only on handover"
+  ],
+  "flags": [
+   {
+    "text": "The Daily Beast and The Real Deal reported that Archi's founder is a former Georgian Dream MP and that the group's Trump Tower Tbilisi site was bought from a foundation linked to the US-sanctioned Bidzina Ivanishvili; no sanctions have been imposed on Archi or its founder.",
+    "source": "https://www.thedailybeast.com/trumps-sign-mega-tower-deal-with-firm-tied-to-sanctioned-pro-putin-billionaire/"
+   }
+  ],
+  "sources": [
+   "https://metropolitan.realestate/tbilisi/archi-universe-tbilisi-georgia/",
+   "https://opr.ae/projects/archi-universe-tbilisi-georgia",
+   "https://archi.ge/en/complex/archi-universe",
+   "https://archi.ge/en/building/archi-universe-a",
+   "https://archi.ge/en/building/archi-universe-b",
+   "https://korter.ge/en/archi-universi-tbilisi",
+   "https://sivrce.ge/en/mshenebare-binebi/archi-universe",
+   "https://cbw.ge/business/archi-conquered-the-domestic-market-now-its-putting-georgian-real-estate-on-the-global-map",
+   "https://oc-media.org/tbilisis-fairytale-trump-tower-doomed-to-fail/",
+   "https://therealdeal.com/new-york/2026/10/23/trump-tower-developer-wants-to-make-georgia-the-next-dubai/",
+   "https://www.thedailybeast.com/trumps-sign-mega-tower-deal-with-firm-tied-to-sanctioned-pro-putin-billionaire/",
+   "https://en.wikipedia.org/wiki/Archi_Group"
+  ]
  }
 ]

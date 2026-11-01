@@ -3714,5 +3714,192 @@
    "https://www.blackpoint.group/marketplace/050-resale-2-bedroom-jungle-view-villa-in-secret-by-inshi-ubud"
   ],
   "verified_score": 0
+ },
+ {
+  "slug": "segara",
+  "name": "Segara",
+  "developer": "Axora Developments",
+  "area": "Seseh",
+  "country": "Indonesia",
+  "market": "Bali",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://axoradevelopments.com",
+  "docs_url": "https://axoradevelopments.com",
+  "permit_number": null,
+  "docs_listed": [
+   "78 beachfront studios, apartments and penthouses on Jalan Pantai Seseh, Phase 1 'now releasing'",
+   "leasehold-with-extension structure (term not shown), PT PMA option",
+   "price list, floor plans, payment plans and specification only in emailed 43-page brochure",
+   "developer claims 158,000+ m2 delivered and 140 completed units; other developments named: Axora Candidasa (hillside cabins), Axora Uluwatu",
+   "agency Laguna Prime: studios 31 m2 from $79,000, 1BR 42 m2 from $99,000, penthouses 82-116 m2 from $239,000; completion January 2028; 32-year lease from handover; payment 10% reservation, 50% at contract, 10% per milestone, 10% handover",
+   "OffPlan: handover Q4 2027, leasehold 34 years, est. net yield 11-16%, management by BaliNest, licensed tourism zone",
+   "Axora LinkedIn (Apr 2026): 88 residences, from $69,000"
+  ],
+  "note": "Beachfront apartment project on Jalan Pantai Seseh by Axora Developments, Phase 1 releasing, with studios from about $69,000-$79,000 and prices, plans and payment terms only in an emailed brochure. Listings disagree on unit count (78 vs 88), lease (25+extension, 32 or 34 years) and completion (Q4 2026 to January 2028), and an agency payment plan asks 60% by contract signing; Axora claims 140 completed units without naming them and publishes no permit number, escrow or progress (checked 1 Nov 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 79000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 32,
+   "extension": "extension offered (term not stated); Laguna Prime 32 years from handover, OffPlan 34 years",
+   "guaranteed_language": false,
+   "yield_pct": 16,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 78,
+   "payment_plan": "10% reservation, 50% at contract signing, 10% per construction milestone, 10% at handover (Laguna Prime); OffPlan: 10/50/30/10",
+   "price_per_m2": 2548
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "OffPlan: 'The site sits in a licensed tourism zone'; no PBG number anywhere.",
+   "escrow": "None; agency payment plan takes 60% by contract signing.",
+   "progress": "Phase 1 'now releasing'; no construction updates.",
+   "plans": "Floor plans listed as brochure content behind a form; agency describes layouts in text.",
+   "record": "Claims '158,000+ sqm delivered' and '140 Completed Units' without naming completed projects; Rumavi lists the developer as unverified.",
+   "returns": "OffPlan: projected net yield 11-16%; Rumavi notes a 12% figure cited by aggregators; no guarantee wording on the developer site."
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "140 completed units, 158,000+ m2 delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axoradevelopments.com"
+   },
+   {
+    "claim": "78 residences (vs 88 on Axora LinkedIn and Rumavi)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/axora-developments-bali_segara-by-axora-activity-7449743283536203778-rDxP"
+   },
+   {
+    "claim": "Completion January 2028 (vs Q4 2027 OffPlan, Q4 2026 Rumavi)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.so/projects/segara-seseh"
+   },
+   {
+    "claim": "Lease 32 years from handover (vs 34 years OffPlan, 25 + extension Rumavi)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/seseh/segara-seseh"
+   },
+   {
+    "claim": "Licensed tourism zone allowing short-term rental",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/segara-seseh"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axoradevelopments.com"
+   },
+   {
+    "claim": "Studios from $79,000 (vs $69,000 LinkedIn, $67,000 Rumavi)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://lagunaprime.com.au/properties/segara-seseh-bali/"
+   },
+   {
+    "claim": "Projected net yield 11-16%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/segara-seseh"
+   },
+   {
+    "claim": "Rental managed by BaliNest",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.so/projects/segara-seseh"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://axoradevelopments.com"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": "Rumavi names 'Segara Developments / PT. Segara Seseh Properties' (not confirmed by Axora)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 140,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR apartment",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 31,
+   "size_max_m2": 116,
+   "price_min": 79000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10% reservation, 50% at contract, milestones, 10% at handover",
+   "foreign_ownership": "Leasehold with extension (32 or 34 years cited) or PT PMA option",
+   "rental_programme": "Full rental management (BaliNest per OffPlan); 11-16% net yield projected",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "rooftop restaurant and bar",
+    "spa, sauna and gym",
+    "ice bath",
+    "co-working",
+    "podcast studios",
+    "golf simulator"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "positives": [
+   "In-house design, build and rental management stated",
+   "Agency listings publish unit sizes, prices and a staged payment plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://axoradevelopments.com",
+   "https://www.axorabali.com/",
+   "https://lagunaprime.com.au/properties/segara-seseh-bali/",
+   "https://offplan.so/projects/segara-seseh",
+   "https://rumavi.com/en/new-developments/indonesia/seseh/segara-seseh",
+   "https://www.linkedin.com/posts/axora-developments-bali_segara-by-axora-activity-7449743283536203778-rDxP"
+  ],
+  "verified_score": 0
  }
 ]

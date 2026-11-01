@@ -3017,5 +3017,920 @@
    "https://www.neinorhomes.com/news/neinor-homes-successfully-completes-950mn-acquisition-of-aedas-homes-and-consolidates-spanish-national-champion/",
    "https://forbes.es/economia/884989/neinor-se-hace-con-un-968-del-capital-de-aedas-por-923-millones-de-euros-tras-concluir-su-segunda-opa/"
   ]
+ },
+ {
+  "slug": "balcon-de-finestrat",
+  "name": "Balcón de Finestrat (Sierra Cortina)",
+  "developer": "Not named (listed by Lucas Fox)",
+  "area": "Balcon de Finestrat, Finestrat, Costa Blanca (Alicante)",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.lucasfox.com/new-development/alt69610.html",
+  "docs_url": "https://taylorwimpeyspain.com/es/casa/nature-balcon-de-finestrat-alicante/",
+  "permit_number": null,
+  "docs_listed": [
+   "Lucas Fox: 'Granted building licence' (no number), completion Q4 2027, 2 units listed 425,000 and 460,000 EUR (118 and 180 m2, terraces 39 m2)",
+   "developer page (Taylor Wimpey Espana 'Nature'): 3-bed townhouses from 430,000 EUR ex-VAT, delivery October 2027, unit delivery date 15-10-2027",
+   "developer: construction progress video 07/2026",
+   "developer: floor plans per unit type, memoria de calidades PDF, energy certificate (rating A), brochure catalogue",
+   "developer GPS 38.550835, -0.196550",
+   "buyer guide: payment guarantee policy"
+  ],
+  "note": "The Lucas Fox listing does not name the developer, but its unit sizes, terraces, location and Q4 2027 completion match Taylor Wimpey Espana's 'Nature' townhouses in Balcon de Finestrat (38 homes, 9M EUR, from 425,000 EUR per idealista, Dec 2025). The developer page shows delivery in October 2027 and a 07/2026 progress video; the agent says the building licence is granted but gives no number. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 425000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Developer buyer guide: all instalments during construction covered by bank guarantee or insurance policy (generic, not project-specific); agent listing silent",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024)",
+   "units": 38,
+   "payment_plan": null,
+   "price_per_m2": 3602
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Lucas Fox: 'Granted Building licence', no number; another agent (AlexHomeInvest) also says permit granted",
+   "escrow": "Taylor Wimpey Espana buyer guide: policy covering all instalments during construction (bank guarantee or insurance). Applies only if the developer identification is right",
+   "progress": "Developer page: video 'avance de las obras - 07/2026'; agents report under construction",
+   "plans": "Floor plan links on Lucas Fox and per-unit plans on the developer page",
+   "record": "Taylor Wimpey plc full-year results 2025 (London Stock Exchange RNS): the Spanish business completed 494 homes in 2025 (504 in 2024)",
+   "returns": "No guaranteed returns language"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Taylor Wimpey Espana (project 'Nature', Balcon de Finestrat)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/en/news/property-for-sale-in-spain/2025/12/09/872736-taylor-wimpey-invests-more-than-30-million-to-build-124-homes-in-denia-and"
+   },
+   {
+    "claim": "38 three-bed townhouses, investment 9M EUR, from 425,000 EUR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/en/news/property-for-sale-in-spain/2025/12/09/872736-taylor-wimpey-invests-more-than-30-million-to-build-124-homes-in-denia-and"
+   },
+   {
+    "claim": "Completion Q4 2027 (developer: 15 Oct 2027)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.idealista.com/en/news/property-for-sale-in-spain/2025/12/09/872736-taylor-wimpey-invests-more-than-30-million-to-build-124-homes-in-denia-and"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/alt69610.html"
+   },
+   {
+    "claim": "Construction under way (progress video 07/2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/nature-balcon-de-finestrat-alicante/"
+   },
+   {
+    "claim": "Unit count of the development (agents give 17 and 24, press 38)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.roccabox.com/new-developments/finestrat/nature-balcon-de-finestrat"
+   },
+   {
+    "claim": "Prices 425,000 to 460,000 EUR (developer page from 430,000 EUR ex-VAT)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/nature-balcon-de-finestrat-alicante/"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/casa/nature-balcon-de-finestrat-alicante/"
+   },
+   {
+    "claim": "Taylor Wimpey's Spanish business completed 494 homes in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165"
+   },
+   {
+    "claim": "Payments during construction covered by bank guarantee or insurance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1958,
+   "developer_hq": "Palma de Mallorca, Spain",
+   "developer_company": "Identified as TAYLOR WIMPEY DE ESPANA S.A. UNIPERSONAL, NIF A-07248206 (not named on the agent listing)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc listed on the London Stock Exchange",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": "2027-Q3",
+   "delay_months": 3,
+   "unit_types": [
+    "3BR townhouse"
+   ],
+   "size_min_m2": 115.8,
+   "size_max_m2": 180,
+   "price_min": 425000,
+   "price_max": 460000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "Mediterranean gardens",
+    "private garden",
+    "terraces 37 to 39 m2",
+    "basement in some units",
+    "aerothermal system",
+    "solar panels"
+   ],
+   "lat": 38.551,
+   "lng": -0.197,
+   "permit_authority": "Ayuntamiento de Finestrat (licencia de obras)",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/nature-finestrat-es/"
+  },
+  "positives": [
+   "Developer identified as a subsidiary of a London-listed homebuilder",
+   "Licence stated as granted and construction progress video dated 07/2026",
+   "Floor plans and per-unit prices published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.lucasfox.com/new-development/alt69610.html",
+   "https://taylorwimpeyspain.com/es/casa/nature-balcon-de-finestrat-alicante/",
+   "https://www.idealista.com/en/news/property-for-sale-in-spain/2025/12/09/872736-taylor-wimpey-invests-more-than-30-million-to-build-124-homes-in-denia-and",
+   "https://www.costaselect.com/en/aanbod/nature-balcon-de-finestrat",
+   "https://www.roccabox.com/new-developments/finestrat/nature-balcon-de-finestrat",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./taylor-wimpey-plc-full-year-results/9459165",
+   "https://taylorwimpeyspain.com/es/aviso-legal/"
+  ]
+ },
+ {
+  "slug": "son-cladera-palma-new-development",
+  "name": "Exclusive new development in Son Cladera (EOS)",
+  "developer": "Not named",
+  "area": "Son Cladera, Palma de Mallorca",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.thinkspain.com/spanish-property/9922345/en/eos",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "4-apartment development",
+   "construction start mid-2026, completion end of 2027",
+   "ground-floor 2-bed unit, 77 m2 built, 425,000 EUR",
+   "energy certificate shown as G (consumption and emissions)",
+   "location not provided; developer and agent not named on the page text"
+  ],
+  "note": "Agent listing for one of four apartments in a small development in Son Cladera, Palma: a 77 m2 two-bed ground-floor unit at 425,000 EUR, with construction said to start mid-2026 and finish end of 2027. No developer, licence, deposit guarantee, plans or progress update is published, and the energy rating is shown as G. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 425000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 4,
+   "payment_plan": null,
+   "price_per_m2": 5519
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence mentioned",
+   "escrow": "No deposit guarantee mentioned",
+   "progress": "Only planned start (mid-2026) and completion (end 2027); no update",
+   "plans": "No floor plans",
+   "record": "Developer not named",
+   "returns": "No return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Development of four apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "Construction start mid-2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "Completion end of 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "2-bed ground-floor unit of 77 m2 at 425,000 EUR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "Developer identity",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   },
+   {
+    "claim": "Energy rating G for consumption and emissions on a new build",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thinkspain.com/property-for-sale/9922345"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-06",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR"
+   ],
+   "size_min_m2": 77,
+   "size_max_m2": null,
+   "price_min": 425000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (pleno dominio) under Spanish law",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "air conditioning",
+    "heating",
+    "fitted wardrobes",
+    "laundry room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Palma (llicencia d'obres)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planned start and completion dates stated",
+   "Very small scheme (4 units)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.thinkspain.com/spanish-property/9922345/en/eos",
+   "https://www.thinkspain.com/property-for-sale/9922345"
+  ]
+ },
+ {
+  "slug": "prata-riverside-village-lisbon",
+  "name": "Prata Riverside Village",
+  "developer": "VIC Properties",
+  "area": "Braco de Prata, Marvila, Lisbon",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.pratariversidevillage.com/en/buildings/",
+  "docs_url": "https://www.pratariversidevillage.com/en/buildings/sunrise/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: 10 buildings, 5 marked sold out",
+   "Sunrise (last riverfront building, 56 apartments T1 to T4) unit list with gross area and price (735,000 to 2,115,000 EUR, 72.5 to 201.4 m2)",
+   "Art building (103 apartments T0 to T4) unit list",
+   "'model floor' section",
+   "brochure download (VIC portfolio page)",
+   "press release 3 Sep 2026: 833 units planned, 594 completed, 108 under construction, 653 sold, 49 on sale"
+  ],
+  "note": "Renzo Piano-designed riverside scheme by VIC Properties: of 833 planned homes, 594 were completed and 108 under construction at 3 Sep 2026, when the last riverfront building (Sunrise, 56 apartments from 735,000 EUR) was launched. No licence number, deposit guarantee or unit floor plans found. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 735000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 71,
+   "developer_delivered": "VIC Properties: 594 of 833 Prata Riverside Village homes completed by Sep 2026; seven buildings finished (The One, Riverside, West, Square, Urban, Park, South) per idealista Apr 2026",
+   "units": 833,
+   "payment_plan": null,
+   "price_per_m2": 10138
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or alvara number on the developer site or press",
+   "escrow": "No deposit guarantee mentioned",
+   "progress": "Developer press release (3 Sep 2026): 594 of 833 units completed (71%), 108 under construction; reported by Jornal Economico",
+   "plans": "Unit lists with gross area and price and a 'model floor' section; no downloadable unit floor plan found in the page source",
+   "record": "594 homes completed in seven earlier buildings, reported by idealista and Jornal Economico",
+   "returns": "No return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "833 units planned across the scheme",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vic-properties-lanca-ultimo-edificio-frente-rio-do-projeto-prata-riverside-village/"
+   },
+   {
+    "claim": "594 units completed, 108 under construction (Sep 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vic-properties-lanca-ultimo-edificio-frente-rio-do-projeto-prata-riverside-village/"
+   },
+   {
+    "claim": "Seven buildings completed (The One, Riverside, West, Square, Urban, Park, South) by Apr 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/construcao/2026/04/27/75166-prata-riverside-village-em-marvila-ja-conquistou-mais-de-600-familias"
+   },
+   {
+    "claim": "653 homes sold, 49 on the market",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vic-properties-lanca-ultimo-edificio-frente-rio-do-projeto-prata-riverside-village/"
+   },
+   {
+    "claim": "Investment of 400M EUR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vic-properties-lanca-ultimo-edificio-frente-rio-do-projeto-prata-riverside-village/"
+   },
+   {
+    "claim": "Sunrise is the last riverfront building, 56 apartments T1 to T4",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vic-properties-lanca-ultimo-edificio-frente-rio-do-projeto-prata-riverside-village/"
+   },
+   {
+    "claim": "Earlier agent page figure of 830 units",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://lisbonproperty.com/developments/prata-riverside-village"
+   },
+   {
+    "claim": "Construction licence (alvara) for remaining buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pratariversidevillage.com/en/buildings/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pratariversidevillage.com/en/buildings/"
+   },
+   {
+    "claim": "Sunrise prices from 735,000 EUR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pratariversidevillage.com/en/buildings/sunrise/"
+   },
+   {
+    "claim": "Designed by Renzo Piano",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/construcao/2026/04/27/75166-prata-riverside-village-em-marvila-ja-conquistou-mais-de-600-familias"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "VIC Properties (legal entity and registration number not published on the pages opened)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 594,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+   ],
+   "size_min_m2": 72.5,
+   "size_max_m2": 201.4,
+   "price_min": 735000,
+   "price_max": 2115000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (propriedade plena); no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "riverfront",
+    "about 30 retail spaces",
+    "green spaces",
+    "Sunrise: private gym",
+    "Sunrise: co-working",
+    "private gardens",
+    "Molteni&C kitchens",
+    "home automation with HVAC"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Lisboa (alvara de construcao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large share of the scheme already built and occupied (594 of 833 homes)",
+   "Progress figures published by the developer and carried by national press",
+   "Per-unit prices and areas published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pratariversidevillage.com/en/buildings/",
+   "https://www.pratariversidevillage.com/en/buildings/sunrise/",
+   "https://www.pratariversidevillage.com/en/buildings/art/",
+   "https://vic-properties.com/en/portfolio/prata-riverside-village/",
+   "https://vic-properties.com/en/latest/vic-properties-launches-the-last-riverfront-building-of-prata-riverside-village/",
+   "https://jornaleconomico.sapo.pt/noticias/vic-properties-lanca-ultimo-edificio-frente-rio-do-projeto-prata-riverside-village/",
+   "https://www.idealista.pt/news/imobiliario/construcao/2026/04/27/75166-prata-riverside-village-em-marvila-ja-conquistou-mais-de-600-familias",
+   "https://lisbonproperty.com/developments/prata-riverside-village"
+  ]
+ },
+ {
+  "slug": "funchal-new-development-portugalproperty-180568",
+  "name": "New Development Under Construction, Funchal (listing 180568)",
+  "developer": "Not named",
+  "area": "Funchal, Madeira",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "1-bed, 2-bath apartment at 475,000 EUR (reference PP176019)",
+   "'Ownership Status: Developer'",
+   "figure '3,442 EUR' shown without label (possibly per m2)",
+   "infinity pool with sea views, garden, sun deck, underground parking",
+   "units from 1 to 3 bedrooms"
+  ],
+  "note": "Agency listing (reference PP176019) for a one-bed, two-bath apartment at 475,000 EUR in a development described as under construction near central Funchal, with infinity pool and covered parking. Developer, project name, completion date, licence and deposit protection are not published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 475000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No alvara mentioned",
+   "escrow": "No deposit guarantee mentioned",
+   "progress": "Only described as 'under construction'; no date or figure",
+   "plans": "No floor plans",
+   "record": "Developer not named",
+   "returns": "Mentions investment use but no return figure or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Development under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "1-bed apartment priced 475,000 EUR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "Units from 1 to 3 bedrooms available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "Infinity pool with sea views and covered parking",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "Sold directly by the developer ('Ownership Status: Developer')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "Construction licence (alvara) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 475000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (propriedade plena); no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "sea views",
+    "landscaped garden",
+    "sun deck",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal do Funchal (alvara de construcao)",
+   "brochure_url": null
+  },
+  "positives": [],
+  "flags": [],
+  "sources": [
+   "https://www.portugalproperty.com/property/apartment/funchal-madeira/180568"
+  ]
+ },
+ {
+  "slug": "muda-comporta-villas",
+  "name": "MUDA, Contemporary Village in Comporta",
+  "developer": "Not named (marketed by JLL Residential)",
+  "area": "Muda, Grandola (between Comporta, Carvalhal and Melides)",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://supercasa.pt/en-gb/muda/e2317344",
+  "docs_url": "https://www.vangproperties.com/en/comporta-portugal-real-estate/muda/",
+  "permit_number": null,
+  "docs_listed": [
+   "SuperCasa (JLL): 40 villas planned, first phase 8 villas T2/T3, construction year 2029, gross area 2,304 m2, price 'under appreciation'",
+   "developer (Vanguard Properties): sales launch 14 Oct 2026, expected completion first half of 2029, first 8 villas plus 32 later, 15 plots",
+   "developer: floor plans section, architects Fragmentos, landscape OhLAND, 4 Vhils artworks",
+   "press release 14 Oct 2026: villas 129 to 166 m2 gross private area on 333 to 738 m2 plots",
+   "idealista listing: construction start 01/01/2027, keys June 2029, energy class A",
+   "agent SAVA (citing JLL): T2 860,000 to 890,000 EUR, T3+1 about 1.1M EUR"
+  ],
+  "note": "Vanguard Properties' relaunched MUDA village near Comporta: 40 single-storey villas with pools (first collection of 8, 129 to 166 m2) plus 15 plots, launched 14 Oct 2026 with works due to start in January 2027 and completion in the first half of 2029; agent prices from 860,000 EUR. In Sep 2024 the CEO said the first eight Muda Reserve houses were already being built. No licence number or deposit guarantee is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 860000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-H1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Vanguard Properties lists Castilho 203 (19 apartments, Lisbon) as finished; idealista (2021) reported its use licence issued and 100% sold; other projects listed as 'Concluido' on its site",
+   "units": 40,
+   "payment_plan": null,
+   "price_per_m2": 6667
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or alvara number on the listing or developer pages",
+   "escrow": "No deposit guarantee mentioned",
+   "progress": "Not started: idealista listing gives construction start 01/01/2027; no works update",
+   "plans": "Developer page 'Floor Plans' for the first 8 villas; SuperCasa lists 2 blueprints",
+   "record": "Castilho 203 (19 apartments) completed with use licence issued (idealista 2021, developer page 'Estado: Terminado')",
+   "returns": "No return claims"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Developer is Vanguard Properties",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/projeto-terras-da-comporta-com-investimento-proximo-dos-tres-mil-milhoes/"
+   },
+   {
+    "claim": "40 villas, first collection of 8",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/en/comporta-portugal-real-estate/muda/"
+   },
+   {
+    "claim": "Construction starts January 2027, completion first half of 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.idealista.pt/empreendimento/35411867/"
+   },
+   {
+    "claim": "First eight Muda Reserve houses already under construction (CEO, Sep 2024)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/projeto-terras-da-comporta-com-investimento-proximo-dos-tres-mil-milhoes/"
+   },
+   {
+    "claim": "Muda Reserve originally planned 175 villas and about 50 farms on 350 ha",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/construcao/2024/04/19/63637-aldeia-no-alentejo-vai-ser-transformada-num-espaco-artistico"
+   },
+   {
+    "claim": "Villas 129 to 166 m2 on plots of 333 to 738 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/en/media/press-releases/vanguard-properties-presents-the-new-muda-a-different-way-of-living-in-comporta/"
+   },
+   {
+    "claim": "Prices from 860,000 EUR (T2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sava.pt/en/projects/muda-comporta/"
+   },
+   {
+    "claim": "Construction licence (alvara) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/en/comporta-portugal-real-estate/muda/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/en/comporta-portugal-real-estate/muda/"
+   },
+   {
+    "claim": "Vanguard delivered Castilho 203 with use licence issued",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/financas/investimentos/2021/02/05/46186-os-projetos-da-vanguard-properties-a-lupa-mexicanos-e-norte-americanos-atentos-ao"
+   },
+   {
+    "claim": "Energy class A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.idealista.pt/empreendimento/35411867/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "Vanguard Properties (legal entity and registration number not published on the pages opened)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2027-01",
+   "handover_promised": "2029-H1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T2",
+    "T2+1",
+    "T3",
+    "T3+1",
+    "plots"
+   ],
+   "size_min_m2": 129,
+   "size_max_m2": 166,
+   "price_min": 860000,
+   "price_max": 1100000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (propriedade plena); no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "private garden",
+    "parking",
+    "playground",
+    "sports field",
+    "Vhils public artworks",
+    "village commerce and services planned"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Grandola (alvara de construcao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer, architects and timeline published",
+   "Developer has a completed Lisbon project with use licence (Castilho 203)",
+   "Low-density single-storey villas with plans published"
+  ],
+  "flags": [
+   {
+    "text": "In September 2024 the Vanguard Properties CEO told Jornal Economico the first eight Muda Reserve houses were being built; the October 2026 relaunch lists construction start in January 2027 and completion in the first half of 2029.",
+    "source": "https://jornaleconomico.sapo.pt/noticias/projeto-terras-da-comporta-com-investimento-proximo-dos-tres-mil-milhoes/"
+   }
+  ],
+  "sources": [
+   "https://supercasa.pt/en-gb/muda/e2317344",
+   "https://www.vangproperties.com/en/comporta-portugal-real-estate/muda/",
+   "https://www.vangproperties.com/en/media/press-releases/vanguard-properties-presents-the-new-muda-a-different-way-of-living-in-comporta/",
+   "https://www.idealista.pt/empreendimento/35411867/",
+   "https://sava.pt/en/projects/muda-comporta/",
+   "https://jornaleconomico.sapo.pt/noticias/projeto-terras-da-comporta-com-investimento-proximo-dos-tres-mil-milhoes/",
+   "https://www.idealista.pt/news/financas/investimentos/2021/02/05/46186-os-projetos-da-vanguard-properties-a-lupa-mexicanos-e-norte-americanos-atentos-ao",
+   "https://www.vangproperties.com/en/media/press-releases/vanguard-properties-grandola-town-council-and-vhils-have-teamed-up-to-transform-the-village-of-muda-into-something-uniquely-artistic/",
+   "https://www.vangproperties.com/pt/lisboa-real-estate/castilho-203/",
+   "https://www.idealista.pt/news/imobiliario/construcao/2024/04/19/63637-aldeia-no-alentejo-vai-ser-transformada-num-espaco-artistico"
+  ]
  }
 ]

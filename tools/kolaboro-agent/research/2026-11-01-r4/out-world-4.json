@@ -1,0 +1,210 @@
+[
+ {
+  "slug": "azura-beach-residences-3-4-al-mouj",
+  "name": "Azura Beach Residences 3 & 4",
+  "developer": "Al Mouj Muscat",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "West Point, Al Marsa District, Al Mouj, Muscat",
+  "country": "Oman",
+  "market": "Oman",
+  "url": "https://www.almouj.com/en/azura-iii-iv/",
+  "docs_url": "https://www.almouj.com/en/azura-iii-iv/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: price from OMR 69,000 (agent pages add + VAT)",
+   "payment plan 5% on signing, 5% after 3 months, balance tied to construction milestones",
+   "developer brochure PDF with unit floor plans (1BR 70 m2 to 4BR chalet 305 m2)",
+   "570 apartments + 41 four-bedroom duplex chalets (launch press, Feb 2026)",
+   "freehold for all nationalities, residency visa eligibility"
+  ],
+  "note": "Final release of Al Mouj Muscat's Azura beachfront scheme (570 apartments and 41 chalets), launched Feb 2026 from OMR 69,000 with a 5/5/90 construction-linked plan and floor plans in the developer brochure. Main contractor tenders for the earlier Azura phases were reported only in May 2026, so construction of III and IV has not visibly started; no handover date, project licence or escrow account is published by the developer, although Omani law requires escrow for off-plan sales (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 69000,
+   "currency": "OMR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Sales agent Oman Realty states instalments are paid into the developer's project escrow account; not stated on the developer page",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Al Mouj Muscat handed over more than 2,000 properties at Al Mouj by June 2019 (Oman Observer); Azura I and II sold out but not yet built",
+   "units": 611,
+   "payment_plan": "5% on signing, 5% three months after signing, balance aligned with construction milestones",
+   "price_per_m2": 986
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No off-plan project licence or Ministry approval number published on the developer page, brochure or agent pages; the brochure says the development is subject to final design and authority approvals",
+   "escrow": "Oman Realty (sales agent) says all instalments go to the developer's project escrow account; Omani law (Royal Decree 30/2018, now replaced by Royal Decree 79/2025) requires an escrow account for off-plan sales, and the gov.om licence service lists opening an escrow account as a licence step. Developer page itself is silent",
+   "progress": "No construction progress published. BNC Network reported in May 2026 that main contractor tenders had only just been issued for Azura Phases 1 and 2",
+   "plans": "Developer brochure Azura_Digital_Eng_AZ4.pdf shows unit plans with internal, external and total areas for apartment types and the 305 m2 D-type chalet",
+   "record": "Oman Observer (Jun 2019) reported Al Mouj Muscat had handed over more than 2,000 properties; Times of Oman (2016) reported more than 4,000 residents already living in Al Mouj",
+   "returns": "No guaranteed rental or ROI language on developer page or launch press"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Phases III and IV comprise 570 apartments and 41 four-bedroom duplex chalets",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/article/1184398/business/azura-beach-residences-target-long-term-investors-with-expanded-portfolio"
+   },
+   {
+    "claim": "Freehold ownership for all nationalities with Omani residency eligibility",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfconstructiononline.com/ArticleTA/389288/al-mouj-muscat-launches-last-two-phases-of-key-coastal-residential-project"
+   },
+   {
+    "claim": "Prices from OMR 69,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.almouj.com/en/azura-iii-iv/"
+   },
+   {
+    "claim": "Payment 5% on signing, 5% after 3 months, balance by construction milestones",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.almouj.com/en/azura-iii-iv/"
+   },
+   {
+    "claim": "Instalments paid into a project escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oman-realty.com/projects/azura-beach-residences/"
+   },
+   {
+    "claim": "Escrow is a legal requirement for off-plan sales in Oman",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://gov.om/en/w/get-real-estate-development-project-license"
+   },
+   {
+    "claim": "Handover in 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://homelist.om/ar/projects/azura-4-al-mouj/"
+   },
+   {
+    "claim": "Earlier Azura phase delivery expected within three years after tendering",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/article/1178891/business/azura-beach-2-redefines-coastal-living-at-al-mouj-muscat"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.linkedin.com/posts/bncnetwork-air_oman-muscat-almouj-activity-7460624517447680000-U-AK"
+   },
+   {
+    "claim": "Developer has handed over more than 2,000 properties",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/ampArticle/30539"
+   },
+   {
+    "claim": "Al Mouj Muscat SAOC is a venture of Majid Al Futtaim Properties, Omran Group and Tanmia",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.almouj.com/wp-content/uploads/2026/02/Azura_Digital_Eng_AZ4.pdf"
+   },
+   {
+    "claim": "Project licence number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.almouj.com/en/azura-iii-iv/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Muscat, Oman",
+   "developer_company": "Al Mouj Muscat SAOC (venture of Majid Al Futtaim Properties, Omran Group and Tanmia per brochure)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 2000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR duplex chalet"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 305,
+   "price_min": 69000,
+   "price_max": null,
+   "currency": "OMR",
+   "deposit_pct": 5,
+   "payment_plan": "5% on signing, 5% after 3 months, 90% by construction milestones",
+   "foreign_ownership": "Freehold for all nationalities inside an Integrated Tourism Complex, with residency visa eligibility",
+   "rental_programme": "None stated by developer",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "gym",
+    "co-working lounge",
+    "children's play areas",
+    "direct beach access",
+    "marina promenade access",
+    "18-hole golf course in community"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Housing and Urban Planning with Ministry of Heritage and Tourism (ITC)",
+   "brochure_url": "https://www.almouj.com/wp-content/uploads/2026/02/Azura_Digital_Eng_AZ4.pdf"
+  },
+  "positives": [
+   "Floor plans with exact areas in the developer brochure",
+   "Construction-linked payment plan with only 10% due in the first three months",
+   "Master developer has delivered over 2,000 homes in the same community",
+   "Omani law requires an escrow account and project licence for off-plan sales",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.almouj.com/en/azura-iii-iv/",
+   "https://www.almouj.com/wp-content/uploads/2026/02/Azura_Digital_Eng_AZ4.pdf",
+   "https://www.omanobserver.om/article/1184398/business/azura-beach-residences-target-long-term-investors-with-expanded-portfolio",
+   "https://www.gulfconstructiononline.com/ArticleTA/389288/al-mouj-muscat-launches-last-two-phases-of-key-coastal-residential-project",
+   "https://www.muscatdaily.com/2025/07/06/al-mouj-muscat-launches-azura-beach-residences/",
+   "https://www.omanobserver.om/article/1178891/business/azura-beach-2-redefines-coastal-living-at-al-mouj-muscat",
+   "https://www.linkedin.com/posts/bncnetwork-air_oman-muscat-almouj-activity-7460624517447680000-U-AK",
+   "https://www.omanobserver.om/ampArticle/30539",
+   "https://oman-realty.com/projects/azura-beach-residences/",
+   "https://homelist.om/ar/projects/azura-4-al-mouj/",
+   "https://gov.om/en/w/get-real-estate-development-project-license",
+   "https://decree.om/2025/rd20250079/",
+   "https://www.addleshawgoddard.com/en/insights/insights-briefings/2019/financial-services/escrow-account-regulations/"
+  ]
+ }
+]
