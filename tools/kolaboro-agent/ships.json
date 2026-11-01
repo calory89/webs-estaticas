@@ -2,6 +2,16 @@
  {
   "d": "2026-11-01",
   "k": "feature",
+  "t": "Public roadmap: 27 of 100 features shipped, every one tracked"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Open source scoring code: The scoring rules published so anyone can reproduce a score"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
   "t": "Public roadmap: 26 of 100 features shipped, every one tracked"
  },
  {
