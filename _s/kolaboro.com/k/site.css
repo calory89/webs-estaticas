@@ -987,3 +987,27 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .kv{display:inline-block;margin-left:6px;font-size:.68rem;font-weight:800;letter-spacing:.02em;text-transform:uppercase;padding:1px 6px;border-radius:999px;vertical-align:1px}.kv.r{background:#17212B;color:#fff}.kv.i{background:#DDEFE7;color:#0B5A3E}.kv.d{background:#ECEAE4;color:#4A5560}.kv.x{background:#FBE3DF;color:#9A2A14}
 .kvs{font-size:.84rem;color:#3D4852;margin:6px 0 0;line-height:1.4}.kvs b{color:#17212B}
 .kleg{font-size:.84rem;color:#3D4852;margin:10px 0 0;line-height:1.9}.kleg .kv{margin-left:0}
+/* shipping log ticker */
+.ship{position:relative;z-index:21;display:flex;align-items:center;height:34px;background:var(--ink);color:#E9E7E0;font-size:12.5px;line-height:1;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.06)}
+.ship a{color:inherit;text-decoration:none!important}
+.ship-l{flex:none;display:flex;align-items:center;gap:8px;height:100%;padding:0 14px 0 var(--gut);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;color:#fff;background:var(--ink);box-shadow:12px 0 14px var(--ink);position:relative;z-index:2}
+.ship-l i{width:8px;height:8px;border-radius:50%;background:#2BD38F;box-shadow:0 0 0 0 rgba(43,211,143,.6);animation:shipPulse 2s infinite}
+.ship-v{flex:1;min-width:0;overflow:hidden;height:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 40px),transparent)}
+.ship-t{display:flex;width:max-content;height:100%;align-items:center;animation:shipRun var(--ship-dur,90s) linear infinite}
+.ship:hover .ship-t,.ship:focus-within .ship-t{animation-play-state:paused}
+.ship-g{display:flex;align-items:center}
+.si{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:0 22px;border-right:1px solid rgba(255,255,255,.12)}
+.si b{font-family:ui-monospace,monospace;font-weight:600;font-size:11.5px;color:#9AA4AE;font-variant-numeric:tabular-nums}
+.si em{font-style:normal;font-family:ui-monospace,monospace;font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:3px 6px;border-radius:4px}
+.si em.k-data{background:rgba(43,211,143,.16);color:#4BE3A4}
+.si em.k-feature{background:rgba(255,91,20,.2);color:#FF8A55}
+.si em.k-auto{background:rgba(120,170,255,.18);color:#9CC0FF}
+.si em.k-live{background:#2BD38F;color:#06281B}
+.si s{text-decoration:none;color:#4BE3A4;font-weight:700}
+.ship-r{flex:none;height:100%;display:flex;align-items:center;padding:0 var(--gut) 0 14px;font-weight:600;color:#FF8A55;background:var(--ink);box-shadow:-12px 0 14px var(--ink);position:relative;z-index:2}
+.ship-r:hover span,.ship-l:hover span{text-decoration:underline}
+@keyframes shipRun{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes shipPulse{0%{box-shadow:0 0 0 0 rgba(43,211,143,.55)}70%{box-shadow:0 0 0 7px rgba(43,211,143,0)}100%{box-shadow:0 0 0 0 rgba(43,211,143,0)}}
+@media (max-width:640px){.ship-r{display:none}.ship-l{padding-right:10px}.ship-l{font-size:10px;letter-spacing:.04em}.ship{height:32px;font-size:12px}}
+@media (prefers-reduced-motion:reduce){.ship-t{animation:none}.ship-v{overflow-x:auto;scrollbar-width:none}.ship-l i{animation:none}}
+@media print{.ship{display:none}}
