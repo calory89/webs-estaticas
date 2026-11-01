@@ -6,7 +6,15 @@
     <atom:link href="https://jurimatch.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Articles on no-win-no-fee claims, litigation funding and landmark cases.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Oct 2026 08:01:46 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 08:02:39 GMT</lastBuildDate>
+    <item>
+      <title>Evidence to Gather for a No-Win-No-Fee Lawyer</title>
+      <link>https://jurimatch.com/blog/2026-11-01-evidence-to-gather-for-a-no-win-no-fee-lawyer</link>
+      <guid isPermaLink="true">https://jurimatch.com/blog/2026-11-01-evidence-to-gather-for-a-no-win-no-fee-lawyer</guid>
+      <pubDate>Sun, 01 Nov 2026 08:02:39 GMT</pubDate>
+      <category>Personal Injury</category>
+      <description>Learn what crucial evidence to collect before consulting a no-win-no-fee lawyer to assess and strengthen your legal claim effectively.</description>
+    </item>
     <item>
       <title>Cross-Border Debt Recovery: EU Business Invoices</title>
       <link>https://jurimatch.com/blog/2026-10-30-cross-border-debt-recovery-eu-business-invoices</link>
@@ -398,14 +406,6 @@
       <pubDate>Tue, 14 Apr 2026 06:00:35 GMT</pubDate>
       <category>Corporate</category>
       <description>Explore Rylands v. Fletcher (1868), a landmark UK case establishing strict liability for dangerous escapes, and its legacy for compensation claims.</description>
-    </item>
-    <item>
-      <title>McLibel: Activists vs. McDonald's, A Legal Aid Battle</title>
-      <link>https://jurimatch.com/blog/2026-04-09-mclibel-activists-vs-mcdonald-s-a-legal-aid-battle</link>
-      <guid isPermaLink="true">https://jurimatch.com/blog/2026-04-09-mclibel-activists-vs-mcdonald-s-a-legal-aid-battle</guid>
-      <pubDate>Thu, 09 Apr 2026 18:00:49 GMT</pubDate>
-      <category>International</category>
-      <description>Explore the landmark McLibel case where activists faced McDonald's, leading to the longest trial in English history and a European Court of Human Rights ruling on legal aid and fair trial rights.</description>
     </item>
   </channel>
 </rss>

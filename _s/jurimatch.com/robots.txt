@@ -8,6 +8,8 @@ Disallow: /auth
 Disallow: /reset-password
 Disallow: /payment-success
 Disallow: /my-data
+Disallow: /embed/
+Disallow: /saved
 Disallow: /*?q=
 Disallow: /*&q=
 

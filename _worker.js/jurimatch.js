@@ -226,6 +226,25 @@ const CHROME = {
   'pt-BR': { faq: 'Perguntas frequentes', lawyers: 'Advogados', pricing: 'Preços', about: 'Quem somos' },
 };
 
+// Item 290: what the site loads. Supabase goes through the same-origin /__sb proxy; GA4, Clarity and
+// Cloudflare Web Analytics/Zaraz are the only third-party scripts; fonts are self-hosted (fontsource);
+// flags come from flagcdn.com (images: any https). Stripe Checkout is a full-page redirect.
+const CSP_REPORT_ONLY = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.clarity.ms https://static.cloudflareinsights.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https:",
+  "font-src 'self' data:",
+  "connect-src 'self' wss://jurimatch.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://cloudflareinsights.com",
+  "frame-src 'self' https://checkout.stripe.com https://js.stripe.com",
+  "worker-src 'self' blob:",
+  "manifest-src 'self'",
+  "media-src 'self' blob: https:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self' https://checkout.stripe.com",
+].join('; ');
+
 export async function render(req, res, u, env, ctx) {
   // One URL per page: "/pricing/" redirects to "/pricing" (canonical tags have no trailing slash).
   if (u.pathname.length > 1 && u.pathname.endsWith('/')) return Response.redirect(ORIGIN + u.pathname.replace(/\/+$/, '') + u.search, 301);
@@ -322,7 +341,12 @@ export async function render(req, res, u, env, ctx) {
   if (u.pathname.startsWith('/embed/')) h.delete('x-frame-options'); else h.set('x-frame-options', 'SAMEORIGIN');
   h.set('permissions-policy', 'camera=(), microphone=(), geolocation=(), usb=(), payment=(self "https://checkout.stripe.com")');
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
-  const set = (attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
+  // Items 289/290 (1-nov): referrer and MIME sniffing set here too (not only by the zone), and a
+  // Content-Security-Policy in report-only mode (browsers log violations in the console, nothing is blocked).
+  h.set('referrer-policy', 'strict-origin-when-cross-origin');
+  h.set('x-content-type-options', 'nosniff');
+  h.set('content-security-policy-report-only', CSP_REPORT_ONLY);
+  const set =(attr, value) => ({ element(e) { e.setAttribute(attr, value); } });
 
   return new HTMLRewriter()
     .on('html', set('lang', lang))

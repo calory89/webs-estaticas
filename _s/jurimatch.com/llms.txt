@@ -2,7 +2,7 @@
 
 > Search engine for no-win-no-fee lawyers and litigation funders. 6,500 no-win-no-fee firms indexed in 133 countries, 202 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
-## Facts (as of 2026-10-31)
+## Facts (as of 2026-11-01)
 - Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,500
 - Firms whose fee terms our team checked by hand on their own website: 202
 - Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 26
@@ -86,3 +86,69 @@
 - [No-win-no-fee claims in India](https://jurimatch.com/guides/india)
 - [No-win-no-fee claims in Malaysia](https://jurimatch.com/guides/malaysia)
 - [No-win-no-fee claims in South Africa](https://jurimatch.com/guides/south-africa)
+
+## Pages by language
+
+### English
+- [Find lawyers who only get paid if you win](https://jurimatch.com/): home
+- [Free tools for claimants](https://jurimatch.com/tools): index
+- [What would you actually keep?](https://jurimatch.com/tools/case-value)
+- [Free complaint letter template](https://jurimatch.com/tools/claim-letter)
+- [Contingency fee calculator: what you actually keep](https://jurimatch.com/tools/contingency-fee-calculator)
+- [What documents do I need for my claim?](https://jurimatch.com/tools/document-checklist)
+- [Flight claim deadlines by country](https://jurimatch.com/tools/flight-claim-deadlines)
+- [Airline claim letter (EU261 and UK261)](https://jurimatch.com/tools/flight-claim-letter)
+- [Flight delayed or cancelled? Check what you may be owed](https://jurimatch.com/tools/flight-compensation)
+- [Would a funder look at my case?](https://jurimatch.com/tools/funding-fit)
+- [Notice period in Germany](https://jurimatch.com/tools/germany-notice-period)
+- [Late payment interest on business invoices](https://jurimatch.com/tools/late-payment-interest)
+- [How long do I have to make a claim?](https://jurimatch.com/tools/limitation-checker)
+- [Dismissal compensation in Spain](https://jurimatch.com/tools/spain-dismissal-compensation)
+- [Legal costs cap in Spain](https://jurimatch.com/tools/spain-legal-costs-cap)
+- [Terms of use for the free tools](https://jurimatch.com/tools/terms)
+- [Train delay compensation in the EU](https://jurimatch.com/tools/train-delay-compensation)
+- [Statutory redundancy pay in the UK](https://jurimatch.com/tools/uk-redundancy-pay)
+- [Which lawyer do I need?](https://jurimatch.com/tools/which-lawyer)
+
+### Español
+- [Abogados que solo cobran si usted gana](https://jurimatch.com/es): home
+- [Cómo reclamar en España, paso a paso](https://jurimatch.com/es/guias): index
+- [Herramientas gratuitas para reclamar](https://jurimatch.com/es/herramientas): index
+- [Modelo de carta de reclamación gratis](https://jurimatch.com/es/herramientas/carta-de-reclamacion)
+- [Carta para reclamar los gastos de hipoteca](https://jurimatch.com/es/herramientas/carta-gastos-hipoteca)
+- [Límite de las costas: un tercio de la cuantía](https://jurimatch.com/es/herramientas/costas-procesales)
+- [Indemnización por despido en España](https://jurimatch.com/es/herramientas/indemnizacion-por-despido)
+- [Retraso de tren: lo que le deben](https://jurimatch.com/es/herramientas/indemnizacion-retraso-tren)
+- [¿Vuelo retrasado o cancelado? Calcule lo que le podrían deber](https://jurimatch.com/es/herramientas/indemnizacion-vuelo)
+- [Intereses de demora en facturas entre empresas](https://jurimatch.com/es/herramientas/intereses-de-demora)
+- [¿Cuánto tiempo tengo para reclamar?](https://jurimatch.com/es/herramientas/plazo-de-prescripcion)
+
+### Deutsch
+- [Anwälte und Prozessfinanzierer, die erst im Erfolgsfall verdienen](https://jurimatch.com/de): home
+- [Ihre Rechte in Deutschland, verständlich erklärt](https://jurimatch.com/de/ratgeber): index
+- [Kostenlose Werkzeuge für Ihren Anspruch](https://jurimatch.com/de/werkzeuge): index
+- [Flug verspätet oder annulliert? Prüfen Sie Ihren Anspruch](https://jurimatch.com/de/werkzeuge/flugentschaedigung)
+- [Forderungsschreiben: kostenlose Vorlage](https://jurimatch.com/de/werkzeuge/forderungsschreiben)
+- [Kündigungsfrist nach § 622 BGB](https://jurimatch.com/de/werkzeuge/kuendigungsfrist)
+- [Wie lange habe ich Zeit, meinen Anspruch geltend zu machen?](https://jurimatch.com/de/werkzeuge/verjaehrung)
+- [Zugverspätung: Entschädigung berechnen](https://jurimatch.com/de/werkzeuge/zugverspaetung)
+
+### Français
+- [Des avocats et des financeurs rémunérés au résultat](https://jurimatch.com/fr): home
+- [Vos droits en France, expliqués simplement](https://jurimatch.com/fr/guides): index
+- [Modèle de lettre de réclamation gratuit](https://jurimatch.com/fr/outils/lettre-de-reclamation)
+
+### Italiano
+- [Avvocati e finanziatori pagati in base al risultato](https://jurimatch.com/it): home
+- [I tuoi diritti in Italia, spiegati con chiarezza](https://jurimatch.com/it/guide): index
+- [Modello gratuito di lettera di reclamo](https://jurimatch.com/it/strumenti/lettera-di-reclamo)
+
+### Polski
+- [Prawnicy i fundatorzy procesów, którzy zarabiają na Twoim sukcesie](https://jurimatch.com/pl): home
+- [Twoje prawa w Polsce, prostym językiem](https://jurimatch.com/pl/poradniki): index
+- [Przedsądowe wezwanie do zapłaty: darmowy wzór](https://jurimatch.com/pl/narzedzia/wezwanie-do-zaplaty)
+
+### Português (Brasil)
+- [Advogados que só cobram se você ganhar](https://jurimatch.com/pt-br): home
+- [Seus direitos no Brasil, passo a passo](https://jurimatch.com/pt-br/guias): index
+- [Modelo grátis de carta de reclamação](https://jurimatch.com/pt-br/ferramentas/carta-de-reclamacao)
