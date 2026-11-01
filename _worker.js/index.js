@@ -118,7 +118,7 @@ export default {
     }
     if (u.pathname.startsWith('/__sb/')) return sbProxy(req, u);
     if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u);
-    if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || /^\/m\/[^/]{2,60}\/?$/.test(u.pathname) || u.pathname === '/sitemap-data.xml')) {
+    if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || /^\/m\/[^/.]{2,60}\/?$/.test(u.pathname) || u.pathname === '/sitemap-data.xml')) {
       if (!kb) kb = await import('./kolaboro.js');
       if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
       const isP = u.pathname.startsWith('/p/'), shell = new URL(isP ? '/p/' : '/m/', u);
