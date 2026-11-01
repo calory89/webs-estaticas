@@ -2560,8 +2560,27 @@
    "slug": "nara-villas",
    "name": "Nara Villas",
    "developer": "Balitecture",
-   "area": "Uluwatu",
+   "area": "Uluwatu (Pecatu)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "status": "active",
    "url": "https://www.balitecture.com/developments/nara-villas",
+   "docs_url": "https://www.balitecture.com/developments/nara-villas",
+   "permit_number": null,
+   "docs_listed": [
+    "6 villas, 3 sold; 2BR from $269,000 (153 m2 build), 3BR $329,000 (226 m2 build), land 105-188 m2",
+    "lease 30+30 years",
+    "completion Q4 2027",
+    "masterplan",
+    "10-14% projected return net of 15% management fee, 'Projections, not guarantees'",
+    "$5,000 deposit refundable for 14 days or until signing; progress payments by bill of quantities (earlier check)",
+    "'The Site Today' drone footage of the empty plot",
+    "launch release (6 Mar 2026): 'Pink Zone, with full Pondok Wisata licensing in place'",
+    "past developments: Dasa Uluwatu (12 villas, sold out, completed), Casa Uluwatu, Desa Hut, Sapta Cemagi, Casa Cemagi, Tukad Huts"
+   ],
+   "note": "Six pre-sale villas 600 m from the beach in Uluwatu by Australian-owned Balitecture, launched 6 Mar 2026, from $269,000 on a 30+30-year lease with Q4 2027 completion and returns labelled 'projections, not guarantees'; three of six are sold and the site footage shows an empty plot. Balitecture names completed, sold-out communities such as Dasa Uluwatu and says Pondok Wisata licensing is in place, but publishes no PBG number, escrow, progress or floor plans (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 269000,
     "currency": "USD",
@@ -2569,49 +2588,19 @@
     "lease_base": 30,
     "extension": "+30 years (30+30)",
     "guaranteed_language": false,
-    "completion": "2027-Q4",
-    "permit_claim": false,
     "yield_pct": 14,
+    "completion": "2027-Q4",
+    "permit_claim": true,
+    "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
-    "developer_delivered": "Balitecture portfolio 'Completed & Sold Out' developments: Dasa Uluwatu (12 villas), Casa Uluwatu (8), Desa Hut (7), Sapta Cemagi (7), Casa Cemagi, Tukad Huts; claims 200+ villas designed and delivered",
+    "developer_delivered": "Balitecture 'Previous Developments' list: Dasa Uluwatu (12 villas, sold out and completed, International Property Awards 2025), Casa Uluwatu (8), Desa Hut (7), Sapta Cemagi (7), Casa Cemagi, Tukad Huts",
     "units": 6,
-    "payment_plan": "$5,000 refundable deposit, then five 20% progress payments tied to construction (bill of quantities)",
-    "price_per_m2": 1758
+    "payment_plan": "$5,000 refundable deposit, then progress payments tied to construction (bill of quantities)",
+    "price_per_m2": 1758,
+    "progress_updates": false
    },
-   "invited": "2026-10-28",
-   "docs_url": "https://www.balitecture.com/developments/nara-villas",
-   "docs_listed": [
-    "6 villas, 3 sold; 2BR from $269,000 (153 m2), 3BR $329,000 (226 m2)",
-    "lease 30+30 years",
-    "completion Q4 2027",
-    "masterplan",
-    "10-14% projected return, 'Projections, not guarantees'",
-    "$5,000 deposit refundable for 14 days; five 20% progress payments by bill of quantities",
-    "floor plans only in brochure"
-   ],
-   "note": "Six pre-sale villas in Uluwatu by Balitecture from $269,000 on a 30+30-year lease with Q4 2027 completion, five 20% payments tied to construction and returns labelled 'projections, not guarantees'. Balitecture lists sold-out completed communities (Dasa Uluwatu, Casa Uluwatu, Sapta Cemagi and others) but publishes no permit number, escrow, progress or floor plans (checked 31 Oct 2026)",
-   "positives": [
-    "Lease term and extension stated (30+30)",
-    "Payments tied to construction progress",
-    "Completed prior developments named",
-    "Returns explicitly labelled as not guaranteed"
-   ],
-   "evidence": {
-    "permit": "'Pink Zone - legally licensed for short-term rentals' and SIUP-4 licence mentioned, no permit number",
-    "escrow": "Only a $5,000 deposit refundable for 14 days or until signing; no escrow",
-    "progress": "Drone footage of the empty plot ('The Site Today'), undated",
-    "plans": "Masterplan only; floor plans in downloadable brochure",
-    "record": "balitecture.com/portfolio 'Completed & Sold Out' past developments list",
-    "returns": "'10 to 14% projected annual return ... Projections, not guarantees'"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://www.balitecture.com/developments/nara-villas",
-    "https://www.balitecture.com/portfolio"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -2621,67 +2610,337 @@
     "no_guaranteed_returns": true,
     "score": 2,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": "'Pink Zone - legally licensed for short-term rentals' and launch release 'full Pondok Wisata licensing in place'; no PBG number or licence number published.",
+    "escrow": "Only a $5,000 deposit refundable for 14 days or until signing; no escrow.",
+    "progress": "'The Site Today' drone footage of the empty plot (undated); pre-sale at pre-construction pricing.",
+    "plans": "Masterplan only; floor plans in downloadable brochure.",
+    "record": "Developments page lists sold-out past communities; Dasa Uluwatu page: 'Sold Out - Completed', 12 villas, managed post-handover by Balitecture.",
+    "returns": "'10 to 14% projected annual return ... Projections, not guarantees.'"
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Pink Zone with full Pondok Wisata licensing in place",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/news/nara-villas-launch-2026"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    },
+    {
+     "claim": "Completion Q4 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    },
+    {
+     "claim": "Construction not yet started (empty plot)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    },
+    {
+     "claim": "3 of 6 villas sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments"
+    },
+    {
+     "claim": "Lease 30+30 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    },
+    {
+     "claim": "Prices from $269,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    },
+    {
+     "claim": "Dasa Uluwatu (12 villas) completed and sold out",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/dasa-uluwatu"
+    },
+    {
+     "claim": "Dasa Uluwatu won an International Property Award 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/portfolio/dasa-uluwatu"
+    },
+    {
+     "claim": "10-14% projected annual return",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    },
+    {
+     "claim": "Deposit protection beyond 14-day refundable deposit",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.balitecture.com/developments/nara-villas"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Kerobokan, Bali, Indonesia (Jl. Mertanadi No.81)",
+    "developer_company": null,
+    "developer_projects_delivered": 6.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2BR villa",
+     "3BR villa"
+    ],
+    "size_min_m2": 153.0,
+    "size_max_m2": 226.0,
+    "price_min": 269000.0,
+    "price_max": 329000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": "$5,000 refundable deposit, then construction progress payments",
+    "foreign_ownership": "Leasehold 30 + 30 years",
+    "rental_programme": "Balitecture management at 15% fee; 10-14% projected net return",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "private pool",
+     "cold plunge",
+     "Balinese sauna",
+     "rooftop wellness deck (3BR)",
+     "rainwater harvesting",
+     "solar-ready"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Lease term and extension stated (30+30)",
+    "Payments tied to construction progress",
+    "Completed prior developments named",
+    "Returns explicitly labelled as not guaranteed and net of management fee"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.balitecture.com/developments",
+    "https://www.balitecture.com/developments/dasa-uluwatu",
+    "https://www.balitecture.com/developments/nara-villas",
+    "https://www.balitecture.com/news/nara-villas-launch-2026",
+    "https://www.balitecture.com/portfolio",
+    "https://www.balitecture.com/portfolio/dasa-uluwatu"
+   ],
+   "verified_score": 0,
+   "invited": "2026-10-28"
   },
   {
    "slug": "natha-loka",
    "name": "Natha Loka Eco Village",
    "developer": "Seven Stones Indonesia",
-   "area": "Tabanan",
+   "area": "Tabanan (Kemetug, Selemadeg Timur)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "status": "active",
    "url": "https://realestate.sevenstonesindonesia.com/natha-loka/",
+   "docs_url": "https://kemetugnathaloka.com/",
+   "permit_number": null,
+   "docs_listed": [
+    "8-hectare eco village in Kemetug, Tabanan, 66 villas, building on 10% of land",
+    "1BR from $191,000 (90 m2 build, 1,000 m2 land), 2BR $265,000, 3BR $340,000 (OffPlan)",
+    "30-year leasehold, transferable",
+    "ROI forecast 14-17% / '7-14% yearly passive income' based on 50% occupancy; break-even year 9-10",
+    "project site kemetugnathaloka.com: '...but also guarantee passive income' and 'ensuring a secure return on your investment'",
+    "project site: structure chart with PT Natha Loka Indonesia as management company and a PT PMA per villa (#1 to #66)",
+    "Gapura Bali agency article (Dec 2023): 1BR and 2BR villa layout images supplied by Seven Stones",
+    "NewHomes.id: completion Q3 2027"
+   ],
+   "note": "66-villa jungle eco village on 8 ha in Kemetug, Tabanan, marketed by Seven Stones Indonesia since 2023 (CEO Terje H. Nilsen, management company PT Natha Loka Indonesia), from $191,000 on a 30-year transferable leasehold. The project site says buyers 'guarantee passive income' and shows a separate PT PMA per villa, while sales pages forecast 14-17% at 50% occupancy; no permit number, escrow, progress or delivered project is published and a portal gives Q3 2027 completion (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 191000,
     "currency": "USD",
     "title": "leasehold",
     "lease_base": 30,
     "extension": false,
-    "guaranteed_language": false,
-    "completion": "2027",
-    "permit_claim": false,
+    "guaranteed_language": true,
     "yield_pct": 17,
-    "plans_published": false,
+    "completion": "2027-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
     "developer_delivered": null,
+    "units": 66,
     "payment_plan": "'Flexible payment options' (no schedule)",
-    "price_per_m2": 2122
+    "price_per_m2": 2122,
+    "progress_updates": false
    },
-   "docs_url": "https://realestate.sevenstonesindonesia.com/natha-loka/",
-   "docs_listed": [
-    "8-hectare eco village in Kemetug, Tabanan",
-    "1BR from $191,000 (90 m2 build, 1,000 m2 land), 2BR $265,000, 3BR $340,000",
-    "30-year leasehold, transferable",
-    "ROI forecast 14-17% (7-14% passive income) based on 50% occupancy",
-    "brochure download"
-   ],
-   "note": "Jungle villa eco village in Tabanan marketed by Seven Stones Indonesia from $191,000 on a 30-year transferable leasehold, with a 14-17% ROI forecast based on 50% occupancy. No permit number, escrow, progress, floor plans, completion date or delivered projects published (checked 31 Oct 2026)",
-   "positives": [
-    "Lease term (30 years) and per-type prices and sizes published"
-   ],
-   "evidence": {
-    "permit": null,
-    "escrow": null,
-    "progress": null,
-    "plans": "Only build and land sizes per type",
-    "record": null,
-    "returns": "'ROI Forecast 14%-17%' and '*based on 50% monthly room occupancy'; no guarantee"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://offplan.so/projects/natha-loka-tabanan",
-    "https://realestate.sevenstonesindonesia.com/natha-loka/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
     "progress": false,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "no_guaranteed_returns": true,
+    "no_guaranteed_returns": false,
     "score": 1,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": null,
+    "escrow": null,
+    "progress": "Marketed off-plan since Oct 2023 with 'soft opening special offers'; no construction update found.",
+    "plans": "Gapura Bali article (5 Dec 2023) shows 'One-bedroom villa layout' and 'Two-bedroom villa layout' images supplied by Seven Stones; developer pages list only sizes.",
+    "record": "No completed project named for Natha Loka or Seven Stones as developer.",
+    "returns": "kemetugnathaloka.com: 'not only can you obtain access to unobstructed views of serene paddy fields, but also guarantee passive income' and 'you are also ensuring a secure return on your investment'; sales page: 'ROI Forecast 14%-17%' and '7-14% yearly passive income*' based on 50% occupancy."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Buyers 'guarantee passive income'",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kemetugnathaloka.com/"
+    },
+    {
+     "claim": "ROI forecast 14-17% at 50% occupancy",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realestate.sevenstonesindonesia.com/natha-loka/"
+    },
+    {
+     "claim": "30-year transferable leasehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realestate.sevenstonesindonesia.com/natha-loka/"
+    },
+    {
+     "claim": "Ownership held as leasehold vs one PT PMA per villa",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://kemetugnathaloka.com/"
+    },
+    {
+     "claim": "66 villas on 8 ha, 10% built",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://newhomes.id/natha-loka-bali"
+    },
+    {
+     "claim": "Completion Q3 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://newhomes.id/natha-loka-bali"
+    },
+    {
+     "claim": "Prices from $191,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://offplan.so/projects/natha-loka-tabanan"
+    },
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kemetugnathaloka.com/"
+    },
+    {
+     "claim": "Construction started",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kemetugnathaloka.com/"
+    },
+    {
+     "claim": "Developer has delivered projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realestate.sevenstonesindonesia.com/natha-loka/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Seminyak, Bali, Indonesia (Jl. Sunset Road)",
+    "developer_company": "PT Natha Loka Indonesia (management company); marketed by Seven Stones Indonesia",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR villa",
+     "2BR villa",
+     "3BR villa"
+    ],
+    "size_min_m2": 90.0,
+    "size_max_m2": 190.0,
+    "price_min": 191000.0,
+    "price_max": 340000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": "Flexible (not published)",
+    "foreign_ownership": "30-year transferable leasehold; project site also shows a PT PMA per villa",
+    "rental_programme": "Central management by PT Natha Loka Indonesia; 'guarantee passive income' wording, 7-14% at 50% occupancy",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "cafe and restaurant",
+     "bar",
+     "swimming pool",
+     "yoga shala",
+     "spa",
+     "clinic",
+     "gym",
+     "padel courts"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Tabanan government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Lease term (30 years) and per-type prices and sizes published",
+    "Low-density plan (10% of land built) stated",
+    "Management company and CEO named"
+   ],
+   "flags": [],
+   "sources": [
+    "https://kemetugnathaloka.com/",
+    "https://kemetugnathaloka.com/natha-loka-kemetug-eco-village-a-unique-holistic-residence-and-retreat/",
+    "https://newhomes.id/natha-loka-bali",
+    "https://offplan.so/projects/natha-loka-tabanan",
+    "https://realestate.sevenstonesindonesia.com/natha-loka/",
+    "https://www.gapurabali.com/property/kemetug-tabanan/unique-holistic-residences-hills-tabanan"
+   ],
+   "verified_score": 0
   },
   {
    "slug": "oasis-iii",
@@ -2876,179 +3135,449 @@
    "slug": "octasun",
    "name": "OctaSun Residence",
    "developer": "Seven Sky",
-   "area": "Bukit Pandawa",
+   "area": "Bukit Pandawa (Nusa Dua)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "under construction",
+   "status": "active",
    "url": "https://sevensky-bali.com/octasun",
-   "seed": {
-    "price": 536000,
-    "currency": "USD",
-    "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
-    "guaranteed_language": false,
-    "completion": "2027-Q1",
-    "permit_claim": true,
-    "yield_pct": 12,
-    "plans_published": false,
-    "escrow": null,
-    "progress_pct": null,
-    "developer_delivered": null,
-    "units": 26,
-    "price_per_m2": 4123,
-    "progress_updates": true
-   },
    "docs_url": "https://sevensky-bali.com/octasun",
+   "permit_number": null,
    "docs_listed": [
     "26 villas, 5 types 120-180 m2, prices $536,000-$938,000",
     "master plan",
-    "construction timeline with completed stages (earthworks Q1 2025 to electrical Q3 2025), interior finishing Q2 2026, completion Q1 2027",
-    "ready show unit",
-    "up to 12% annually in USD",
-    "developer About page lists PBG and OSS certificates (no numbers in text)",
-    "press links"
+    "construction timeline: stages marked completed, interior finishing, project completion Q1 2027; construction video",
+    "ready show unit open for viewing",
+    "'Up to 12% annually in USD'; press release: 12-15% projected, 76-78% occupancy",
+    "developer About page lists SBU Konstruksi, OSS certificate, GAPEKNAS membership, PBG and 'PBG License Document' (no numbers in text)",
+    "operator named: Betterplace",
+    "agent LinkedIn (25 Nov 2025): documents signed to obtain the PBG for the second phase of villas",
+    "press coverage (Bali Prawara, detik, RealEstat.id, Mar 2026): phased completion from end 2026 to Q2 2027"
    ],
-   "note": "26-villa complex near Pandawa Beach by Seven Sky Villas, now priced from $536,000, with a dated construction timeline (structure, roof and electrical completed in 2025, interior finishing in Q2 2026, completion Q1 2027) and a ready show unit. The developer lists a PBG and OSS certificate among its licences but no number appears in the page text (checked 31 Oct 2026)",
-   "positives": [
-    "Dated stage-by-stage construction timeline",
-    "Show unit built and open for viewing",
-    "Per-villa prices and sizes published"
-   ],
-   "evidence": {
-    "permit": "About page: 'Building construction permit - PBG' and 'PBG License Document' listed, no number in text",
+   "note": "26-villa complex 500 m from Pandawa Beach by Seven Sky Villas (CEO Aleksandr Dormidonov), priced $536,000-$938,000, with a stage-by-stage construction timeline, a ready show unit and Betterplace as operator; completion is Q1 2027 on the site and end 2026 to Q2 2027 in March 2026 press. The developer lists a PBG among its licences without a number, and an agent post in Nov 2025 said the PBG for the second phase was only then being applied for (checked 1 Nov 2026)",
+   "added": "2026-10-31",
+   "seed": {
+    "price": 536000,
+    "currency": "USD",
+    "title": "leasehold (term not published)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": 12,
+    "completion": "2027-Q1",
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": false,
     "escrow": null,
-    "progress": "OctaSun 'Construction Process': earthworks and foundations completed 1Q 2025, frame and walls 2Q 2025, roof and electrical 3Q 2025, interior finishing 'right now' 2Q 2026, completion 1Q 2027",
-    "plans": "Master plan and villa sizes only",
-    "record": "About page lists a 'Completed - Townhouses' project without name, location or units",
-    "returns": "'Up to 12% annually in USD'; no guarantee"
+    "progress_pct": null,
+    "developer_delivered": "About page lists one 'Completed - Townhouses' project without name, location or unit count",
+    "units": 26,
+    "payment_plan": null,
+    "price_per_m2": 4123,
+    "progress_updates": true
    },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://offplan.so/projects/octa-sun-residence-pandawa",
-    "https://sevensky-bali.com/about",
-    "https://sevensky-bali.com/octasun"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
     "progress": true,
     "plans": false,
-    "record": false,
+    "record": true,
     "no_guaranteed_returns": true,
-    "score": 2,
+    "score": 3,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": "About page: 'Building construction permit - PBG' and 'Official building approval certificate - PBG License Document', no number in text. Agent LinkedIn post (25 Nov 2025): Seven Sky 'signed the documents to obtain the PBG' for the second phase.",
+    "escrow": null,
+    "progress": "OctaSun 'Construction Process' timeline with completed stages, interior finishing and completion '1 qr. 2027'; construction video and May 2026 'Bali Development Diary' on the developer's YouTube; show unit built.",
+    "plans": "Master plan and villa sizes and pool dimensions only.",
+    "record": "About page lists a 'Completed - Townhouses' project without name, location or units.",
+    "returns": "'Up to 12% annually in USD'; press release figures 12-15% and 6-7 year payback; no guarantee wording."
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "PBG held for the project",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/about"
+    },
+    {
+     "claim": "PBG for phase 2 applied for in Nov 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.linkedin.com/posts/dmitry-zaharov-a3888b322_octa-sun-residence-an-important-step-forward-activity-7398975443972014081-SEnf"
+    },
+    {
+     "claim": "Completion Q1 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://baliprawara.com/seven-sky-villas-luncurkan-octasun-residence-di-nusa-dua-tawarkan-26-vila-premium/"
+    },
+    {
+     "claim": "Show unit built and open for viewing",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/octasun"
+    },
+    {
+     "claim": "26 villas with hotel-style amenities managed by Betterplace",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.detik.com/properti/berita/d-8423105/sektor-properti-di-bali-makin-seksi-investor-lirik-proyek-vila-premium"
+    },
+    {
+     "claim": "Prices $536,000-$938,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/octasun"
+    },
+    {
+     "claim": "Returns up to 12% (site) / 12-15% (press)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realestat.id/properti-bali-diminati-investor-global-seven-sky-villas-rilis-octasun-residence/"
+    },
+    {
+     "claim": "Developer has a completed townhouse project",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/about"
+    },
+    {
+     "claim": "Developer holds SBU Konstruksi and OSS certificates",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/about"
+    },
+    {
+     "claim": "Deposit protection or escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/octasun"
+    },
+    {
+     "claim": "Lease term",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sevensky-bali.com/octasun"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali, Indonesia",
+    "developer_company": null,
+    "developer_projects_delivered": 1.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2025-01",
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2BR villa",
+     "3BR villa",
+     "4BR villa"
+    ],
+    "size_min_m2": 120.0,
+    "size_max_m2": 180.0,
+    "price_min": 536000.0,
+    "price_max": 938000.0,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Leasehold (term not published)",
+    "rental_programme": "Managed by Betterplace with monthly profit distribution; up to 12% projected",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "private pools",
+     "spa",
+     "fitness club",
+     "coworking",
+     "cafe",
+     "24/7 reception and concierge",
+     "kids area"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Dated stage-by-stage construction timeline and construction videos",
+    "Show unit built and open for viewing",
+    "Per-villa prices and sizes published",
+    "Operator named (Betterplace)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://baliprawara.com/seven-sky-villas-luncurkan-octasun-residence-di-nusa-dua-tawarkan-26-vila-premium/",
+    "https://offplan.so/projects/octa-sun-residence-pandawa",
+    "https://realestat.id/properti-bali-diminati-investor-global-seven-sky-villas-rilis-octasun-residence/",
+    "https://sevensky-bali.com/",
+    "https://sevensky-bali.com/about",
+    "https://sevensky-bali.com/octasun",
+    "https://www.detik.com/properti/berita/d-8423105/sektor-properti-di-bali-makin-seksi-investor-lirik-proyek-vila-premium",
+    "https://www.linkedin.com/posts/dmitry-zaharov-a3888b322_octa-sun-residence-an-important-step-forward-activity-7398975443972014081-SEnf",
+    "https://www.youtube.com/watch?v=8rQ0EHqH8_4"
+   ],
+   "verified_score": 0
   },
   {
    "slug": "prive-pererenan",
    "name": "Privé Pererenan",
    "developer": "Urban Escape",
    "area": "Pererenan",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "under construction",
+   "status": "active",
    "url": "https://urbanescape.id/prive-en/",
+   "docs_url": "https://urbanescape.id/prive-en/",
+   "permit_number": null,
+   "docs_listed": [
+    "18 villas, 6 layouts, 1-4 BR, 73-261 m2",
+    "prices from 4.09 bln IDR ($248,000, 1BR) to 11.51 bln IDR ($698,000, 4BR)",
+    "completion Q3 2027",
+    "leasehold 32 years after completion + 25-year priority extension",
+    "'8 years full ROI with 12% annual return'",
+    "'Government-Issued Construction Permit (PBG)' claimed, no number; land zoned C-2 (Red Zone)",
+    "'100% self-financed ... Completion is guaranteed regardless of sales'",
+    "floor plans and financials in downloadable deck",
+    "previous projects named: Berawa Week (7 villas, completed, dated construction log), Bingin Elements (4 villas, under construction)",
+    "Balinsky developer page: PBG yes, construction progress 35%"
+   ],
+   "note": "18 double-height villas 1.2 km from Pererenan Beach by Urban Escape (founded 2022, founder Dmitry Puchkin), now from 4.09 bln IDR ($248,000), completion Q3 2027, on a 32-year lease counted from completion plus a 25-year priority extension. The page claims a government-issued PBG and C-2 zoning without numbers, Balinsky shows PBG 'yes' and 35% progress, and the earlier Berawa Week project has a dated construction log ending in completion in July 2025; no escrow is published (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
-    "price": 4480000000,
+    "price": 4090000000,
     "currency": "IDR",
     "title": "leasehold",
     "lease_base": 32,
-    "extension": "+25 years priority extension; 32 years counted from key handover",
+    "extension": "+25 years priority extension; 32 years counted from completion",
     "guaranteed_language": false,
+    "yield_pct": 12,
     "completion": "2027-Q3",
     "permit_claim": true,
-    "yield_pct": 12.1,
+    "permit_number": null,
     "plans_published": false,
     "escrow": null,
-    "progress_pct": null,
-    "developer_delivered": "Urban Escape cites its past projects Berawa Week and Bingin Elements as operating with payouts to owners (Privé page)",
-    "units": 18
+    "progress_pct": 35,
+    "developer_delivered": "Berawa Week (7 villas, Canggu) with dated construction log: completed and commissioned 1 Jul 2025; company page: '1 project delivered on time' (May 2025); Bingin Elements under construction",
+    "units": 18,
+    "payment_plan": null,
+    "price_per_m2": 56027397,
+    "progress_updates": false
    },
-   "invited": "2026-10-28",
-   "docs_url": "https://urbanescape.id/prive-en/",
-   "docs_listed": [
-    "18 villas, 1-4 BR, 73-261 m2",
-    "prices from 4.48 bln IDR (1BR) to 12.63 bln IDR (4BR)",
-    "completion Q3 2027",
-    "leasehold 32 years after key handover + 25-year priority extension",
-    "ROI scenarios 10.6-12.1% (realistic/optimistic), payback 8-11 years",
-    "PBG claimed, no number",
-    "100% self-financed by owner",
-    "previous projects named: Berawa Week, Bingin Elements"
-   ],
-   "note": "18 double-height villas in Pererenan by Urban Escape from 4.48 bln IDR, completion Q3 2027, on a 32-year lease counted from key handover plus a 25-year priority extension. The page says construction runs under a government-issued PBG and names prior projects Berawa Week and Bingin Elements, but shows no permit number, escrow, progress or floor plans (plans are in the gated deck) (checked 31 Oct 2026)",
-   "positives": [
-    "Lease term with extension stated and counted from handover (32+25)",
-    "Prior Urban Escape projects named",
-    "Unit prices and sizes per type published"
-   ],
-   "evidence": {
-    "permit": "'Government-Issued Construction Permit (PBG) - All construction is backed by an official state permit'; no number shown",
-    "escrow": "States project is 100% self-financed by the owner; no escrow or bank guarantee",
-    "progress": null,
-    "plans": "Unit types and sizes listed; layout images are interior renders, floor plans only in the downloadable deck",
-    "record": "'proven through our past success with Berawa Week and Bingin Elements'",
-    "returns": "ROI scenarios (pessimistic to optimistic, 10.6% realistic); the word 'guarantees' is used only about self-financing"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://urbanescape.id/prive-en/",
-    "https://urbanescape.id/ru/prive/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
-    "progress": false,
+    "progress": true,
     "plans": false,
     "record": true,
     "no_guaranteed_returns": true,
-    "score": 2,
+    "score": 3,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": "'Government-Issued Construction Permit (PBG) - All construction is backed by an official state permit'; zoning 'C-2 (Red Zone)'; no number. Balinsky developer page: 'Building permit (PBG): yes'.",
+    "escrow": "'100% Self-Financed Project ... Completion is guaranteed regardless of sales'; no escrow or bank guarantee.",
+    "progress": "Balinsky developer page lists Privé construction progress 35%; no dated update on the project page.",
+    "plans": "Layout sizes per type; floor plans only in the downloadable deck.",
+    "record": "urbanescape.id/berawa-week: dated construction log (9 Jan 2025 structure complete, 24 Feb 2025 villa 4 finished, 1 Jul 2025 'Construction completed, the complex is fully commissioned'); company page says first project delivered on time in May 2025.",
+    "returns": "'8 years full ROI with 12% annual return'; 'guaranteed' is used for completion and financing, not for returns."
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Government-issued PBG for the project",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://balinsky.info/en/developers/urban-escape-bali-developer"
+    },
+    {
+     "claim": "Land zoned C-2 (Red Zone), mixed use",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    },
+    {
+     "claim": "Construction 35% complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://balinsky.info/en/developers/urban-escape-bali-developer"
+    },
+    {
+     "claim": "Completion Q3 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    },
+    {
+     "claim": "Berawa Week delivered on time (May 2025 vs 1 Jul 2025 commissioning)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://urbanescape.id/berawa-week/"
+    },
+    {
+     "claim": "Bingin Elements delivery Q2 2026 (company page) vs Q3 2026 (project page)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://urbanescape.id/bingin-elements/"
+    },
+    {
+     "claim": "Bingin Elements offered as freehold with no time limits",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://urbanescape.id/bingin-elements/"
+    },
+    {
+     "claim": "Lease 32 years from completion + 25-year extension",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    },
+    {
+     "claim": "Prices from 4.09 bln IDR",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    },
+    {
+     "claim": "Project 100% self-financed, completion guaranteed regardless of sales",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    },
+    {
+     "claim": "12% annual return, 8-year payback",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    },
+    {
+     "claim": "Deposit protection or escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://urbanescape.id/prive-en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2022.0,
+    "developer_hq": "Tibubeneng, Bali, Indonesia (Gg. Purnama No.4)",
+    "developer_company": null,
+    "developer_projects_delivered": 1.0,
+    "developer_units_delivered": 7.0,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR villa",
+     "2BR villa",
+     "3BR villa",
+     "4BR villa"
+    ],
+    "size_min_m2": 73.0,
+    "size_max_m2": 261.0,
+    "price_min": 4090000000.0,
+    "price_max": 11510000000.0,
+    "currency": "IDR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Leasehold 32 years from completion + 25-year priority extension",
+    "rental_programme": "In-house management with regular payouts; 12% annual return projected",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "private pool per villa",
+     "on-site cafe",
+     "private green alley",
+     "gated community"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Lease term with extension stated and counted from completion (32+25)",
+    "Prior project delivered with a dated public construction log",
+    "Unit prices and sizes per type published",
+    "Zoning category disclosed"
+   ],
+   "flags": [],
+   "sources": [
+    "https://balinsky.info/en/developers/urban-escape-bali-developer",
+    "https://urbanescape.id/",
+    "https://urbanescape.id/berawa-week/",
+    "https://urbanescape.id/bingin-elements/",
+    "https://urbanescape.id/company/",
+    "https://urbanescape.id/prive-en/",
+    "https://urbanescape.id/ru/prive/"
+   ],
+   "verified_score": 0,
+   "invited": "2026-10-28"
   },
   {
    "slug": "secret-inshi",
    "name": "SECRET by INSHI",
    "developer": "INSHI Development",
-   "area": "Ubud",
+   "area": "Ubud (Petulu)",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "under construction",
+   "status": "active",
    "url": "https://worldestate.homes/en/indonesia/bali/secret-by-inshi/",
+   "docs_url": null,
+   "permit_number": null,
+   "docs_listed": [
+    "villas, apartments and penthouses in Ubud, 40 units, 1-3 BR from 41.49 m2",
+    "from $95,400 (World Estate, OffPlan); $122,500 (Ulu Homes, NewHomes.id Oct 2026); Rp 1.47 bn (Rise Real)",
+    "delivery Q1 2027",
+    "30% initial payment, 0% instalments up to two years; Rise Real: 30/20/30/20 by construction stage",
+    "lease 30+30 years Hak Sewa, Pink commercial zone (Rise Real, Blackpoint)",
+    "developer named: INSHI Development with PREDMET.CONSTRUCTION; address Jl. Raya Laplapan No.38, Petulu",
+    "Rise Real: PBG 'Requested', no developer escrow"
+   ],
+   "note": "Jungle-view complex of 40 villas, apartments and penthouses in Petulu, Ubud by INSHI Development with PREDMET.CONSTRUCTION, from $95,400 (agency prices now up to $122,500 entry), delivery Q1 2027, 30+30-year Hak Sewa lease and stage-linked payments, per agency listings. An agency reviewer lists the project as under construction with the PBG number still requested; no developer website, escrow, plans or dated progress found (checked 1 Nov 2026)",
+   "added": "2026-10-31",
    "seed": {
     "price": 95400,
     "currency": "USD",
-    "title": "leasehold",
-    "lease_base": null,
-    "extension": null,
+    "title": "leasehold (Hak Sewa)",
+    "lease_base": 30,
+    "extension": "+30 years (30+30, per Rise Real and Blackpoint)",
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": "2027-Q1",
     "permit_claim": false,
+    "permit_number": null,
     "plans_published": false,
     "escrow": null,
     "progress_pct": null,
     "developer_delivered": null,
-    "payment_plan": "30% initial, 70% in 0% instalments up to two years"
+    "units": 40,
+    "payment_plan": "30% initial, 70% in 0% instalments up to two years; Rise Real: 30% reservation, 20% foundations, 30% structure, 20% finishing",
+    "price_per_m2": 2299,
+    "progress_updates": false
    },
-   "docs_listed": [
-    "villas, apartments and penthouses in Ubud, 1-3 BR from 41.49 m2",
-    "from $95,400",
-    "delivery Q1 2027",
-    "30% initial payment, 70% in 0% instalments up to two years",
-    "developer named: INSHI Development and PREDMET.CONSTRUCTION"
-   ],
-   "note": "Jungle-view villas, apartments and penthouses in Ubud by INSHI Development with PREDMET.CONSTRUCTION, from $95,400, delivery Q1 2027 and a 30/70 instalment plan, per agency listings. No developer website, lease term, permit number, escrow, plans or progress found (checked 31 Oct 2026)",
-   "positives": [
-    "Interest-free instalment plan published"
-   ],
-   "evidence": {
-    "permit": null,
-    "escrow": null,
-    "progress": null,
-    "plans": "Layouts offered only on request ('Get prices and layouts')",
-    "record": null,
-    "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording"
-   },
-   "status": "active",
-   "flags": [],
-   "sources": [
-    "https://offplan.so/projects/secret-by-inshi-ubud",
-    "https://worldestate.homes/en/indonesia/bali/secret-by-inshi/"
-   ],
    "disclosure": {
     "permit": false,
     "escrow": false,
@@ -3058,7 +3587,144 @@
     "no_guaranteed_returns": true,
     "score": 1,
     "all_six": false
-   }
+   },
+   "evidence": {
+    "permit": "Rise Real (agency review): 'Building approval (PBG): Requested ... Its number is on our list ahead of the deposit.' Pink commercial zone named by the developer, not yet matched to the Gianyar RDTR.",
+    "escrow": "Rise Real: 'Developer escrow: None'.",
+    "progress": "Rise Real and Ask Dalam list the project as under construction; no dated update or figure.",
+    "plans": "Floor plans sent by message only; resale listing gives room areas for one villa.",
+    "record": "Rise Real calls INSHI Dev 'a young company'; PREDMET lists projects in Bali (Cemagi, Babakan, Kaba Kaba) but none is tied to INSHI as delivered.",
+    "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Building permit (PBG) issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://riserealbali.com/properties/secret-by-inshi/"
+    },
+    {
+     "claim": "Delivery Q1 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://worldestate.homes/en/indonesia/bali/secret-by-inshi/"
+    },
+    {
+     "claim": "Under construction",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://askdalam.com/bali/off-plan/secret-99"
+    },
+    {
+     "claim": "Lease 30+30 years Hak Sewa",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://riserealbali.com/properties/secret-by-inshi/"
+    },
+    {
+     "claim": "Starting price ($95,400 vs $122,500)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://newhomes.id/secret-bali"
+    },
+    {
+     "claim": "Developer is INSHI Development (vs PREDMET.Construction on portals)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://newhomes.id/secret-bali"
+    },
+    {
+     "claim": "Pink commercial zone",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://riserealbali.com/properties/secret-by-inshi/"
+    },
+    {
+     "claim": "40 units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://riserealbali.com/properties/secret-by-inshi/"
+    },
+    {
+     "claim": "Developer escrow exists",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://riserealbali.com/properties/secret-by-inshi/"
+    },
+    {
+     "claim": "Developer has delivered projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ulu-homes.id/projects/secret-by-inshi/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Bali, Indonesia",
+    "developer_company": null,
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR apartment",
+     "2BR apartment",
+     "1BR penthouse",
+     "1BR villa",
+     "2BR villa"
+    ],
+    "size_min_m2": 41.49,
+    "size_max_m2": 157.86,
+    "price_min": 95400.0,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": 30.0,
+    "payment_plan": "30/20/30/20 by construction stage (Rise Real) or 30% + 0% instalments up to 2 years",
+    "foreign_ownership": "Leasehold (Hak Sewa) 30 + 30 years",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "infinity pool",
+     "restaurant",
+     "spa in glass cube with sauna and plunge pools",
+     "Apple smart home",
+     "parking",
+     "24/7 CCTV"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Kabupaten Gianyar government (PBG via SIMBG)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Interest-free instalment plan published",
+    "Payments tied to construction stages (per agency)",
+    "Lease term and extension stated by agencies (30+30)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://askdalam.com/bali/off-plan/secret-99",
+    "https://bali.realestate/property/secret-by-inshi-10369/",
+    "https://newhomes.id/secret-bali",
+    "https://offplan.so/projects/secret-by-inshi-ubud",
+    "https://riserealbali.com/properties/secret-by-inshi/",
+    "https://ulu-homes.id/projects/secret-by-inshi/",
+    "https://worldestate.homes/en/indonesia/bali/secret-by-inshi/",
+    "https://www.blackpoint.group/marketplace/050-resale-2-bedroom-jungle-view-villa-in-secret-by-inshi-ubud"
+   ],
+   "verified_score": 0
   },
   {
    "slug": "segara",

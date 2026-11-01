@@ -3380,5 +3380,607 @@
    "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide",
    "https://allaboutlawyer.com/mandarin-oriental-boca-raton-lawsuit/"
   ]
+ },
+ {
+  "slug": "masteri-grand-view-global-city-hcmc",
+  "name": "Masteri Grand View",
+  "developer": "Masterise Homes",
+  "status": "active",
+  "stage": "under construction",
+  "area": "The Global City, Do Xuan Hop St, Binh Trung (former An Phu), Ho Chi Minh City",
+  "country": "Vietnam",
+  "market": "Ho Chi Minh City",
+  "url": "http://masterisehomes.com/the-global-city/vi/masteri-grand-view",
+  "docs_url": "http://masterisehomes.com/the-global-city/vi/masteri-grand-view",
+  "permit_number": "11265/SXD-PTDT (HCMC Department of Construction notice allowing capital raising for 616 units, as cited by PropLab); building permit cited as 155/GPXD",
+  "docs_listed": [
+   "developer page names investor Saigon Investment and Development JSC (SDI Corp), business reg. 0301707699, with Masterise Homes as developer",
+   "two 25-storey towers (Spark and Glow), 616 apartments 57 to 181 m2 plus penthouses to 372 m2",
+   "topped out 29 Jan 2026; handover Q4 2026 to Q1 2027 (agents)",
+   "prices VND 120 to 150 million per m2; 1BR from about VND 6bn",
+   "payment options incl. 25% on SPA then 9% quarterly, 5% held to pink book",
+   "ownership: long-term for Vietnamese, 50 years for foreigners"
+  ],
+  "note": "First high-rise phase of Masterise Homes' 117-ha The Global City: two 25-storey towers with 616 apartments, sold since December 2024 at about VND 120 to 150 million per m2, topped out on 29 January 2026 with handover expected Q4 2026 to Q1 2027. The investor of record is SDI Corp; an analyst cites a Department of Construction capital-raising notice (11265/SXD-PTDT) but also reports the whole site is mortgaged with no unit-by-unit release and that SDI reports large net losses. No bank guarantee certificate is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 6000000000,
+   "currency": "VND",
+   "title": "long-term ownership (Vietnamese); 50-year ownership for foreigners",
+   "lease_base": 50,
+   "extension": "foreign ownership term may be extended under Vietnamese housing law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "11265/SXD-PTDT (cited by third party)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "SOHO low-rise phase of The Global City (915 units) handed over from Jan 2024 with pink books from 30 Nov 2024 (agent citing VnExpress)",
+   "units": 616,
+   "payment_plan": "Standard: 25% on SPA, 9% per quarter, 25% on handover notice, 5% on pink book; fast-pay 30% + 70% within 30 days (16% discount); bank-loan option 20% with 0% interest to 30 Jun 2027",
+   "price_per_m2": 120000000
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "PropLab cites building permit 155/GPXD and Department of Construction notice 11265/SXD-PTDT for 616 units; other agents describe 155/GPXD (18 Dec 2020) as the urban-area infrastructure permit, so the tower permit number is unclear",
+   "escrow": "Vietnamese law requires a bank guarantee for off-plan sales, but no guaranteeing bank or certificate is published; PropLab says the land is mortgaged with no unit-by-unit release letter",
+   "progress": "Agents report topping out on 29 Jan 2026 (5 Feb 2026 site visit) and facade glazing in progress (Apr-Jun 2026)",
+   "plans": "Unit types and areas by bedroom count published by agents with floor layouts",
+   "record": "SOHO townhouse phase in the same city handed over from Jan 2024 with pink books from Nov 2024 (agent citing VnExpress)",
+   "returns": "Agents stress price growth; no rental guarantee or yield figure"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "616 apartments in two 25-storey towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infocanho.com/masteri-grand-view-the-global-city-quan-2.html"
+   },
+   {
+    "claim": "Investor of record SDI Corp (business reg. 0301707699), Masterise Homes as developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://masterisehomes.com/the-global-city/vi/masteri-grand-view"
+   },
+   {
+    "claim": "Capital-raising notice 11265/SXD-PTDT for 616 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://proplab.vn/phan-tich/masteri-grand-view-ho-chi-minh"
+   },
+   {
+    "claim": "155/GPXD is the tower building permit (PropLab) vs the urban-area infrastructure permit (other agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://paceland.vn/du-an/the-global-city.html"
+   },
+   {
+    "claim": "Whole land plot mortgaged, no unit-by-unit release letter",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://proplab.vn/phan-tich/masteri-grand-view-ho-chi-minh"
+   },
+   {
+    "claim": "Topped out 29 Jan 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paceland.vn/du-an/the-global-city.html"
+   },
+   {
+    "claim": "Handover Q4 2026 vs Q1 2027 vs 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://theglobalcityvietnam.com.vn/"
+   },
+   {
+    "claim": "Price VND 120-150 million per m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://masterisehomesbysalereal.vn/gia-ban-the-global-city/"
+   },
+   {
+    "claim": "Foreign buyers get 50-year ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infocanho.com/masteri-grand-view-the-global-city-quan-2.html"
+   },
+   {
+    "claim": "Developer site says 'so hong so huu lau dai' (long-term pink book) without stating the 50-year limit for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://masterishomes.vn/the-global-city/"
+   },
+   {
+    "claim": "SOHO phase handed over Jan 2024, pink books from 30 Nov 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paceland.vn/du-an/the-global-city.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ho Chi Minh City, Vietnam",
+   "developer_company": "Masterise Homes Real Estate Development Co. Ltd (reg. 0316001930); project investor Saigon Investment and Development JSC (SDI Corp, reg. 0301707699)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 56.56,
+   "size_max_m2": 372.2,
+   "price_min": 6000000000,
+   "price_max": 20200000000,
+   "currency": "VND",
+   "deposit_pct": 25,
+   "payment_plan": "25% on SPA then 9% quarterly; 25% at handover notice; 5% at pink book",
+   "foreign_ownership": "50-year ownership certificate for foreigners (Vietnamese: long-term)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "spa",
+    "park",
+    "kids play area",
+    "podium retail",
+    "20+ residents' facilities on level 5"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "HCMC Department of Construction (building permit and off-plan sale eligibility notice)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large developer with an earlier phase in the same township handed over and titled",
+   "Structure topped out January 2026",
+   "Capital-raising notice number circulated by analysts",
+   "Only 25-30% due before handover under standard plan"
+  ],
+  "flags": [],
+  "sources": [
+   "http://masterisehomes.com/the-global-city/vi/masteri-grand-view",
+   "https://masterishomes.vn/the-global-city/",
+   "https://masterisehomesbysalereal.vn/gia-ban-the-global-city/",
+   "https://bachnhuproperties.vn/can-ho-masteri-grand-view-khi-nao-co-so-hong-1926.html",
+   "https://duonghungthinh.com/cap-nhat-tien-do-the-global-city-thang-6-2026/",
+   "https://infocanho.com/masteri-grand-view-the-global-city-quan-2.html",
+   "https://theglobalcityvietnam.com.vn/",
+   "https://proplab.vn/phan-tich/masteri-grand-view-ho-chi-minh",
+   "https://theglobalcityvietnam.com.vn/tien-do-masteri-grand-view-thang-02-2026-chinh-thuc-cat-noc-2-toa-thap/",
+   "https://www.vutrongkhai.com/du-an/the-global-city/",
+   "https://paceland.vn/du-an/the-global-city.html"
+  ]
+ },
+ {
+  "slug": "eaton-park-thu-duc-hcmc",
+  "name": "Eaton Park",
+  "developer": "Gamuda Land (Gamuda Berhad)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Mai Chi Tho Boulevard, An Phu, Thu Duc City, Ho Chi Minh City",
+  "country": "Vietnam",
+  "market": "Ho Chi Minh City",
+  "url": "https://gamudaland.com.vn/en/news/news-and-story-38",
+  "docs_url": "https://gamudaland.com.vn/en/news/news-and-story-38",
+  "permit_number": "07/GPXD (HCMC Department of Construction, 17 Feb 2023); sale-eligibility notices 6488/SXD-PTDT (678 units, A5-A6) and 11801/SXD-PTDT (1,322 units, A1-A4)",
+  "docs_listed": [
+   "developer news: construction began Mar 2024; final towers A3-A4 topped out 12 Aug 2026; handover from Q3 2027",
+   "six towers of 29 to 39 storeys on about 3.76 ha; 2,052 products (1,968 apartments, 12 penthouses, 52 podium shops, 20 shophouses)",
+   "building permit 07/GPXD and two sale-eligibility notices (agent)",
+   "unit sizes 1BR 50.7-55.8 m2 to duplex 113.9 m2",
+   "foreigners: 50-year title within 30% per-tower cap",
+   "Gamuda Berhad FY2024 integrated report: Eaton Park phase 1 RM1bn sales, sold out in a week"
+  ],
+  "note": "Six-tower, 2,052-unit development by Gamuda Land (listed Gamuda Berhad) on Mai Chi Tho Boulevard: building permit 07/GPXD and two Department of Construction sale-eligibility notices are cited, construction began March 2024 and all six towers topped out by 12 August 2026, with handover from Q3 2027 (agents give Q2 2027 for A5-A6 and Q1 2028 for A1-A4). Foreigners can buy on 50-year titles; no bank-guarantee details are published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": "long-term ownership (Vietnamese); 50-year ownership for foreigners",
+   "lease_base": 50,
+   "extension": "foreign ownership term may be extended under Vietnamese housing law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "07/GPXD",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Gamuda Land Vietnam townships Celadon City and Gamuda City (Gamuda Berhad integrated report FY2024); Artisan Park vacant possession targeted Q4 FY2025",
+   "units": 2052,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Agent publishes building permit 07/GPXD (17 Feb 2023) and sale notices 6488/SXD-PTDT and 11801/SXD-PTDT; developer-related site says permit, 1/500 plan and investment approval complete",
+   "escrow": "No guaranteeing bank or bank-guarantee certificate published, although Vietnamese law requires one for off-plan sales",
+   "progress": "Topping out of final towers on 12 Aug 2026 reported by CafeLand, Cong Luan (via vietnam.vn) and Nhip Song Kinh Doanh; May 2026 floor-by-floor update",
+   "plans": "Unit types and areas published; agents show layouts",
+   "record": "Gamuda Berhad's audited integrated report names delivered Vietnam townships (Celadon City, Gamuda City) and reports Eaton Park phase 1 sales",
+   "returns": "No rental guarantee or yield claim"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Building permit 07/GPXD issued 17 Feb 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+   },
+   {
+    "claim": "Sale-eligibility notices 6488/SXD-PTDT (678 units) and 11801/SXD-PTDT (1,322 units)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+   },
+   {
+    "claim": "Construction began March 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nhipsongkinhdoanh.vn/gamuda-land-cat-noc-hai-toa-thap-cuoi-cung-tai-du-an-hang-sang-eaton-park-31848.htm"
+   },
+   {
+    "claim": "All six towers topped out by 12 Aug 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.vietnam.vn/eaton-park-cat-noc-hai-toa-thap-cuoi-gamuda-land-hoan-tat-ket-cau-toan-du-an"
+   },
+   {
+    "claim": "Handover from Q3 2027 (developer) vs Q2 2027 for A5-A6 and Q1 2028 for A1-A4 (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+   },
+   {
+    "claim": "2,052 products incl. 1,968 apartments vs 1,980 apartments",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/"
+   },
+   {
+    "claim": "Phase 1 sold out within a week, RM1bn sales",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf"
+   },
+   {
+    "claim": "Gamuda Land delivered Celadon City and Gamuda City in Vietnam",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf"
+   },
+   {
+    "claim": "Legal developer is Tam Luc Real Estate JSC (Gamuda Land company)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+   },
+   {
+    "claim": "Foreigners can buy on 50-year title within 30% per-tower cap",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/"
+   },
+   {
+    "claim": "Bank guarantee for off-plan payments in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gamudaland.com.vn/en/news/news-and-story-38"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1995,
+   "developer_hq": "Selangor, Malaysia (Vietnam since 2007)",
+   "developer_company": "Tam Luc Real Estate JSC (project company, per agent); parent Gamuda Berhad",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Gamuda Berhad listed on Bursa Malaysia; audited integrated annual reports",
+   "construction_start": "2024-03",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex",
+    "penthouse",
+    "shophouse"
+   ],
+   "size_min_m2": 50.7,
+   "size_max_m2": 113.9,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "50-year ownership certificate for foreigners, max 30% of units per tower",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "biophilic landscaped park",
+    "podium commercial centre",
+    "pools",
+    "gym",
+    "kids areas",
+    "two connected basements"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "HCMC Department of Construction",
+   "brochure_url": null
+  },
+  "positives": [
+   "Listed, audited parent company reporting project sales",
+   "Building permit and sale-eligibility notice numbers circulated",
+   "All towers topped out ahead of handover, confirmed by national press",
+   "Named main contractors (Coteccons, Hoa Binh)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://gamudaland.com.vn/en/news/news-and-story-38",
+   "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/",
+   "https://gamudalandvietnam.vn/cap-nhat-tien-do-xay-dung-du-an-eaton-park-gamuda-land-moi-nhat-thang-5-2026/",
+   "https://dndrealty.com.vn/en/du-an/eaton-park/",
+   "https://www.vietnam.vn/eaton-park-cat-noc-hai-toa-thap-cuoi-gamuda-land-hoan-tat-ket-cau-toan-du-an",
+   "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf",
+   "https://nhipsongkinhdoanh.vn/gamuda-land-cat-noc-hai-toa-thap-cuoi-cung-tai-du-an-hang-sang-eaton-park-31848.htm"
+  ]
+ },
+ {
+  "slug": "sun-ponte-residence-da-nang",
+  "name": "Sun Ponte Residence",
+  "developer": "Sun Group (Sun Property)",
+  "status": "completed",
+  "stage": "under construction",
+  "area": "Tran Hung Dao St, An Hai Tay, beside Dragon Bridge, Da Nang",
+  "country": "Vietnam",
+  "market": "Da Nang",
+  "url": "https://vietnamnet.vn/ban-giao-dung-le-hoi-phao-hoa-cu-dan-sun-ponte-residence-don-dac-quyen-hiem-co-2519604.html",
+  "docs_url": "https://sunponteresidence.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "project site names investor Cu Lao Cham Trading-Tourism-Investment JSC; 16,439 m2 site",
+   "The Ponte tower: 26 floors + 3 basements, 495 apartments, 26 podium shops, 7 penthouses; The Rio: 41 townhouses, 16-18 villas",
+   "apartment sizes 25.8 to 112.1 m2; prices from about VND 64 million per m2 (studio about VND 2.4-2.7bn)",
+   "construction started Q1 2024; apartment handover began March 2026 with interior fit-out",
+   "payment: 30% deposit, bank loans up to 70% at 0% for up to 30 months (agent)",
+   "fit-out and shell handover specifications published"
+  ],
+  "note": "Riverside twin-tower complex by Sun Group next to Da Nang's Dragon Bridge (495 apartments, 7 penthouses, 26 shops, plus 41 townhouses and 16-18 villas), started in Q1 2024; handover of The Ponte apartments began in March 2026 per national press, with fit-out continuing and units still marketed from about VND 64 million per m2. No building permit or bank-guarantee details are published, and agents disagree on ownership terms for shops and foreigners. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 2400000000,
+   "currency": "VND",
+   "title": "long-term ownership (Vietnamese); 50 years for foreigners per agents",
+   "lease_base": 50,
+   "extension": "foreign ownership term may be extended under Vietnamese housing law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Sun Group's Sun Symphony Residence in Da Nang also handing over in 2026 (VnBizNews); other Sun Group Da Nang projects incl. Sun Cosmo Residence",
+   "units": 528,
+   "payment_plan": "30% deposit during construction; bank loan up to 70% with 0% interest up to 30 months (agent)",
+   "price_per_m2": 64000000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Agents say 1/500 plan approved and legal documents complete, but no building permit or sale-eligibility notice number is published",
+   "escrow": "An agent lists a bank guarantee among legally required documents in general terms; no guaranteeing bank or certificate is named",
+   "progress": "VietNamNet (May 2026) and VnBizNews (Jun 2026) report handover started in March 2026 with interior fit-out; both read as promotional",
+   "plans": "Unit types and sizes published; handover specification tables published on a project site",
+   "record": "Sun Group delivering other Da Nang residences (Sun Symphony Residence) per VnBizNews; Sun Group is a major national developer",
+   "returns": "Press notes demand for rentals; no guaranteed return; Sun Group's 8-9% market yield claim (per prior VnExpress feature) is a general market figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Investor Cu Lao Cham Trading-Tourism-Investment JSC, developed by Sun Group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sunponteresidence.com/"
+   },
+   {
+    "claim": "495 apartments, 26 shops, 7 penthouses in a 26-storey tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sun-property.vn/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Tower count: twin towers linked at floors 19-24 (press) vs 1 tower (agent) vs 3 towers (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Villas: 16 vs 18",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://hiephoangmt.com/du-an/sun-ponte-residence/"
+   },
+   {
+    "claim": "Handover started March 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vietnamnet.vn/ban-giao-dung-le-hoi-phao-hoa-cu-dan-sun-ponte-residence-don-dac-quyen-hiem-co-2519604.html"
+   },
+   {
+    "claim": "Original handover Q4 2025 (agent) vs Q3 2026 (other agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Shophouses: 50-year ownership vs long-term ownership",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sun-property.vn/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Prices from VND 64 million per m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://duanbdsdanang.com/du-an/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Foreigners can own for 50 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://duanbdsdanang.com/du-an/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Bank guarantee for off-plan sales in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/"
+   },
+   {
+    "claim": "Sun Group delivering Sun Symphony Residence in Da Nang",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vnbiznews.com/sun-group-tang-toc-ban-giao-loat-du-an-can-ho-tai-da-nang-pid1989510620"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Hanoi, Vietnam",
+   "developer_company": "Investor Cu Lao Cham Trading-Tourism-Investment JSC; Sun Property (founded 26 Jun 2020, Hanoi) as developer arm of Sun Group",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-Q1",
+   "handover_promised": "2026-Q3",
+   "original_handover": "2025-Q4 (agent)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR+",
+    "2BR",
+    "3BR",
+    "dual key",
+    "duplex",
+    "penthouse",
+    "townhouse",
+    "villa"
+   ],
+   "size_min_m2": 25.8,
+   "size_max_m2": 112.1,
+   "price_min": 2400000000,
+   "price_max": 10400000000,
+   "currency": "VND",
+   "deposit_pct": 30,
+   "payment_plan": "30% then bank financing up to 70%",
+   "foreign_ownership": "50-year ownership for foreigners (agents)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "yoga",
+    "spa",
+    "pool",
+    "kids club",
+    "community room",
+    "BBQ",
+    "sky bridge floors 19-24"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Da Nang Department of Construction",
+   "brochure_url": null
+  },
+  "positives": [
+   "Building complete and handover under way since March 2026",
+   "Handover specifications published in detail",
+   "Large national developer",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sun-property.vn/sun-ponte-residence-da-nang/",
+   "https://vietnamnet.vn/ban-giao-dung-le-hoi-phao-hoa-cu-dan-sun-ponte-residence-don-dac-quyen-hiem-co-2519604.html",
+   "https://duanbdsdanang.com/du-an/sun-ponte-residence-da-nang/",
+   "https://hiephoangmt.com/du-an/sun-ponte-residence/",
+   "https://sunponteresidence.com/",
+   "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/",
+   "https://vnbiznews.com/sun-group-tang-toc-ban-giao-loat-du-an-can-ho-tai-da-nang-pid1989510620",
+   "https://sunponte.vn/tieu-chuan-ban-giao-can-ho-the-ponte-sun-ponte-residence-da-nang/"
+  ]
  }
 ]

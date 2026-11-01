@@ -418,5 +418,612 @@
    "https://ren.ph/verify/lts?q=Fortis+Residences",
    "https://www.philstar.com/business/2025/10/29/2483192/dmci-sees-strong-demand-upscale-makati-condo"
   ]
+ },
+ {
+  "slug": "mandtra-residences-tower-3-mandaue",
+  "name": "Mandtra Residences Tower 3 (Phase 2)",
+  "developer": "Cebu Homegrown Developers, Inc.",
+  "status": "active",
+  "stage": "under construction",
+  "area": "P. Basubas Street, Tipolo, Mandaue City, Cebu",
+  "country": "Philippines",
+  "market": "Philippines",
+  "url": "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences",
+  "docs_url": "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf",
+  "permit_number": "LS-RO7-21-013 (printed for Tower 3 in the developer presentation); registry lists Tower 3 Phase 2 under PLS RO07-21-087 and RO07-21-085",
+  "docs_listed": [
+   "developer presentation (Oct 2021) with Tower 3 floor plans by level, 599 units, 26 floors, and printed LTS numbers",
+   "dated construction photo updates on the official CLI page (June, July, Aug 2026)",
+   "agent price lists Sept 2026: Tower 3 studios 21.04 to 26.94 sqm at PHP 3.70m to 4.90m, 1BR 41.48 sqm",
+   "payment plan 10% downpayment over 24 months, 90% bank financing; PHP 20,000 reservation",
+   "virtual tour"
+  ],
+  "note": "Third tower (599 units, 26 floors) of Cebu Landmasters' 1.24 ha Mandtra Residences JV with Ixidor Holdings, launched Q4 2021 and still selling; agents now give a Q2 2027 target while the first tower was originally due in 2025. DHSUD records on REN.PH show both Tower 3 Phase 2 Licenses to Sell (PLS RO07-21-085 and -087) expired on 13 Sept 2024, and the LTS numbers in the developer brochure appear swapped between towers. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 3700000,
+   "currency": "PHP",
+   "title": "condominium unit title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "LS-RO7-21-013",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Managed and developed by Cebu Landmasters Inc., a PSE-listed Visayas and Mindanao developer (Philstar, MarketScreener)",
+   "units": 599,
+   "payment_plan": "PHP 20,000 reservation; 10% downpayment over 24 months; 90% bank financing; spot cash 5% discount",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer presentation prints DHSUD LTS LS-RO7-21-087 for Tower 1 and LS-RO7-21-013 for Tower 3. REN.PH (DHSUD public records) lists PLS RO7-21-013 as 'Mandtra Residences' issued 18 Feb 2021 (before the Tower 3 launch), and PLS RO07-21-087 and RO07-21-085 as 'Tower 3 Phase 2' issued 13 Sept 2021; all three are shown as expired (Aug and Sept 2024). The only active record is LS 0000792 under Cebu Landmasters, issued 27 Apr 2023, expiring 31 Mar 2028, project not specified by tower",
+   "escrow": "No escrow or deposit protection published",
+   "progress": "Official CLI page carries dated construction photo sets (30 June, 31 July, 31 Aug 2026); no % published",
+   "plans": "Developer presentation shows Tower 3 residential floor plans by level and unit types",
+   "record": "Cebu Landmasters Inc. is PSE-listed and manages the JV; MarketScreener and Philstar reported the 2021 launch",
+   "returns": "No guaranteed returns from developer; one portal (irealtee) shows an 8% 'expected annual rental yield', not a developer claim"
+  },
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "Tower 3 License to Sell is LS-RO7-21-013",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Mandtra"
+   },
+   {
+    "claim": "Tower 3 Phase 2 licences PLS RO07-21-085 and RO07-21-087 are active",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Mandtra"
+   },
+   {
+    "claim": "Developer entity Cebu Homegrown Developers, Inc. holds DHSUD licences for the project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Mandtra"
+   },
+   {
+    "claim": "JV between Cebu Landmasters Inc. and Ixidor Holdings, managed by CLI",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.marketscreener.com/quote/stock/CEBU-LANDMASTERS-INC-64310128/news/Cebu-Landmasters-Through-Joint-Venture-Cebu-Homegrown-Developers-Inc-Launches-Latest-Condominium-33463217/"
+   },
+   {
+    "claim": "First tower completed in 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://gabrielrealtors.com/property/mandtra-residences-2/"
+   },
+   {
+    "claim": "Target completion Q2 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gabrielrealtors.com/property/mandtra-residences-2/"
+   },
+   {
+    "claim": "Project completed in September 2024 (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://irealtee.com/properties/mandtra-residences-tower-3-phase-2-1"
+   },
+   {
+    "claim": "Construction under way with dated updates to Aug 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences"
+   },
+   {
+    "claim": "Tower 3 has 599 units on 26 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf"
+   },
+   {
+    "claim": "Three towers totalling 1,879 units on 1.24 ha (CDN says 2.4 ha)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://cebudailynews.inquirer.net/560108/mandtra-residences-showroom-opens-in-mandaue-city"
+   },
+   {
+    "claim": "Tower 3 studios priced PHP 3.70m to 4.90m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ablcrealty.com/properties/mandtra-residences/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cebu City, Philippines",
+   "developer_company": "Cebu Homegrown Developers, Inc. (JV of Cebu Landmasters Inc. and Ixidor Holdings, Inc.)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Cebu Landmasters Inc. listed on the Philippine Stock Exchange",
+   "construction_start": "2021-03",
+   "handover_promised": "2027-Q2",
+   "original_handover": "2025 (Tower 1, per 2021 launch)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR"
+   ],
+   "size_min_m2": 21.04,
+   "size_max_m2": 41.48,
+   "price_min": 3700000,
+   "price_max": 7216776,
+   "currency": "PHP",
+   "deposit_pct": 10,
+   "payment_plan": "PHP 20,000 reservation, 10% downpayment over 24 months, 90% bank financing",
+   "foreign_ownership": "Condominium unit; foreign ownership capped at 40% of a condominium project under Philippine law",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "sky garden",
+    "wellness lounge",
+    "fitness gym",
+    "adult and kiddie pools",
+    "jogging paths",
+    "clubhouse and function hall",
+    "children's playground",
+    "chapel"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD Region VII (License to Sell); Mandaue City (building permit)",
+   "brochure_url": "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf"
+  },
+  "positives": [
+   "Managed by a PSE-listed developer",
+   "Dated construction photo updates on official page through Aug 2026",
+   "Floor plans and price lists by tower available",
+   "No guaranteed-return language from developer"
+  ],
+  "flags": [
+   {
+    "text": "DHSUD records mirrored on REN.PH show both Tower 3 Phase 2 Licenses to Sell (PLS RO07-21-085 and RO07-21-087) expired on 13 Sept 2024 while Tower 3 units are still marketed as pre-selling; the only active licence (LS 0000792, Cebu Landmasters) does not name a tower.",
+    "source": "https://ren.ph/verify/lts?q=Mandtra"
+   }
+  ],
+  "sources": [
+   "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences",
+   "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf",
+   "https://ren.ph/verify/lts?q=Mandtra",
+   "https://www.philstar.com/business/2021/04/04/2088653/cli-launches-new-cebu-condo-project",
+   "https://www.marketscreener.com/quote/stock/CEBU-LANDMASTERS-INC-64310128/news/Cebu-Landmasters-Through-Joint-Venture-Cebu-Homegrown-Developers-Inc-Launches-Latest-Condominium-33463217/",
+   "https://cebudailynews.inquirer.net/560108/mandtra-residences-showroom-opens-in-mandaue-city",
+   "https://ablcrealty.com/properties/mandtra-residences/",
+   "https://gabrielrealtors.com/property/mandtra-residences-2/",
+   "https://irealtee.com/properties/mandtra-residences-tower-3-phase-2-1",
+   "https://cebubestestate.com/property/mandtra-residences-in-mandaue-city/"
+  ]
+ },
+ {
+  "slug": "lio-tourism-estate-el-nido",
+  "name": "Lio Tourism Estate",
+  "developer": "Ten Knots Philippines, Inc.",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Sitio Aplaya, Lio Estate, Brgy. Villa Libertad, El Nido, Palawan",
+  "country": "Philippines",
+  "market": "Philippines",
+  "url": "https://ayalaland.com/estates/lio",
+  "docs_url": "https://ayalaland.com/properties/sitio-aplaya",
+  "permit_number": null,
+  "docs_listed": [
+   "Sitio Aplaya mixed-use lots, pre-selling, from PHP 45.2m, lots from 604 sqm, 113,000 sqm land area (official page)",
+   "Oct 2026 lot inventory: 24 lots of 599 to 815 sqm at PHP 70,500 to 78,500 per sqm before VAT (agent page citing developer price sheet)",
+   "five payment plans, PHP 500,000 reservation, promo terms to 30 Nov 2026 (agent page)",
+   "design guidelines and DCCR: 12 m height limit, setbacks, developer right of first refusal on resale (agent page)",
+   "estate expansion announced 29 June 2026 (Ayala Land)"
+  ],
+  "note": "Ayala Land's 320 ha Lio estate in El Nido (sold through subsidiary Ten Knots Philippines) is now pre-selling mixed-use lots in its 16.3 ha Sitio Aplaya district from PHP 45.2m; Ayala announced new estate investments on 29 June 2026, confirmed by Palawan News. The official page prints no License to Sell, but DHSUD records on REN.PH show a temporary licence for Sitio Aplaya (TLS R4B-015, 19 Dec 2025 to 19 Dec 2026) alongside two older active Lio licences. These are land lots, which foreigners cannot own under Philippine law. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 45200000,
+   "currency": "PHP",
+   "title": "titled land lot (not available to foreign individuals)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Lio estate established 2014 with operating hotels, The Shops, Kalye Artisano and Lio Airport access (Ayala Land, Palawan News)",
+   "units": 92,
+   "payment_plan": "PHP 500,000 reservation; five plans from spot cash (30% discount) to 5 years, incl. 10-10-80",
+   "price_per_m2": 70500
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number on ayalaland.com. REN.PH (DHSUD public records) lists for Ten Knots Philippines: Sitio Aplaya TLS R4B-015 (issued 19 Dec 2025, expires 19 Dec 2026), Lio Tourism Estate HL 34289 (19 Dec 2018, active), Lio Tourism Estates Phases 2A and 3A HL 32054 (9 Dec 2016, active) and an expired LS 0000684",
+   "escrow": "Nothing published",
+   "progress": "No progress figure or dated updates for Sitio Aplaya infrastructure; Palawan News lists terminal, boardwalk and jetty works as planned",
+   "plans": "Developer lot location map and lot inventory with sizes and prices, plus design guidelines, reproduced on an agent page citing developer documents",
+   "record": "Lio estate operating since 2014 under PSE-listed Ayala Land, with hotels and retail in operation (Ayala Land, Palawan News)",
+   "returns": "No guaranteed return; agent page notes a developer claim of 12% yearly lot appreciation since 2015, not a guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Sitio Aplaya holds a DHSUD licence to sell (TLS R4B-015)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Ten+Knots"
+   },
+   {
+    "claim": "Temporary licence valid only to 19 Dec 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Ten+Knots"
+   },
+   {
+    "claim": "Earlier Lio phases licensed (HL 32054, HL 34289 active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ren.ph/verify/lts?q=Ten+Knots"
+   },
+   {
+    "claim": "Estate size 320 ha (developer pages also say 322 and 325 ha)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ayalaland.com/estates/lio"
+   },
+   {
+    "claim": "Ayala Land committing new investment to Lio and launching Sitio Aplaya (June 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://palawan-news.com/ayala-land-reimagines-lio-estate-to-capture-el-nidos-long-stay-lifestyle-demand/"
+   },
+   {
+    "claim": "Sitio Aplaya district is 16.3 ha (agent page cites 16.2 ha; official page lists 113,000 sqm land area)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ayalaland.com/properties/sitio-aplaya"
+   },
+   {
+    "claim": "Lots priced from PHP 45.2m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ayalaland.com/properties/sitio-aplaya"
+   },
+   {
+    "claim": "Lot values grew 12% a year since 2015",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hivepropertyhub.com/premium/lio-el-nido-executive-summary.html"
+   },
+   {
+    "claim": "Lots suitable for foreign second-home buyers",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://hivepropertyhub.com/premium/lio-el-nido-executive-summary.html"
+   },
+   {
+    "claim": "Boardwalk, transport terminal and jetty redevelopment to be built",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://palawan-news.com/ayala-land-reimagines-lio-estate-to-capture-el-nidos-long-stay-lifestyle-demand/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ayalaland.com/properties/sitio-aplaya"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Makati, Philippines",
+   "developer_company": "Ten Knots Philippines, Inc. (licensee per DHSUD records), within Ayala Land",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Ayala Land, Inc. listed on the Philippine Stock Exchange",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "mixed-use lot"
+   ],
+   "size_min_m2": 599,
+   "size_max_m2": 815,
+   "price_min": 44918000,
+   "price_max": 60310000,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": "PHP 500,000 reservation; spot cash to 5-year plans",
+   "foreign_ownership": "Land lots; the Philippine Constitution bars foreign individuals from owning land, so a foreigner would need a qualifying Philippine entity or lease",
+   "rental_programme": null,
+   "service_charge": "Lio Tourism Estate Association dues, amount not published",
+   "brand": null,
+   "amenities": [
+    "Lio Beach (4.2 km shoreline)",
+    "3.7 km boardwalk (planned)",
+    "Lio Jetty",
+    "The Shops",
+    "events pavilion",
+    "transport terminal",
+    "nature trails",
+    "near Lio Airport"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD Region IV-B (MIMAROPA) License to Sell; El Nido municipality (building permits)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Backed by PSE-listed Ayala Land with an operating estate since 2014",
+   "Active DHSUD licences for Lio found in registry mirror",
+   "Lot prices, sizes and design rules available in detail",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ayalaland.com/estates/lio",
+   "https://ayalaland.com/properties/sitio-aplaya",
+   "https://ayalaland.com/blog/ayala-land-boosts-investments-in-lio-estate-el-nido",
+   "https://palawan-news.com/ayala-land-reimagines-lio-estate-to-capture-el-nidos-long-stay-lifestyle-demand/",
+   "https://philstarproperty.com/news/2026/07/17/231273/where-island-living-feels-at-home/",
+   "https://hivepropertyhub.com/premium/lio-el-nido-executive-summary.html",
+   "https://ren.ph/verify/lts?q=Ten+Knots"
+  ]
+ },
+ {
+  "slug": "forest-city-johor",
+  "name": "Forest City",
+  "developer": "Country Garden (60%) with Johor partner",
+  "status": "completed",
+  "stage": "under construction",
+  "area": "Iskandar Puteri (Gelang Patah), Johor",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "url": "https://theedgemalaysia.com/node/819942",
+  "docs_url": "https://www.ram.com.my/pressrelease/?prviewid=7218",
+  "permit_number": null,
+  "docs_listed": [
+   "developer interview (The Edge, Oct 2026): 26,000 residential units completed in 66 blocks, about 20,000 residents, no new residential launches planned, focus on clearing inventory",
+   "Special Financial Zone tax incentives and JS-SEZ Flagship G status (press)",
+   "418-acre industrial park and planned healthcare hub (press)"
+  ],
+  "note": "Country Garden Pacificview's 7,500-acre reclaimed-island city launched in 2016; in an Oct 2026 interview the developer said 26,000 residential units in 66 blocks are completed, about 20,000 people live there, and no new residential projects will be launched while it clears inventory and shifts to industrial land. RAM Ratings (Mar 2026) said Country Garden Real Estate plans to sell the Forest City subsidiary to group shareholder Concrete Win by mid-2026. No off-plan residential phase is currently marketed. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "MYR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "26,000 residential units completed in 66 blocks on about 770 acres (developer, The Edge Oct 2026); Al Jazeera reported 28,000 units and about 9,000 residents in Nov 2023",
+   "units": 26000,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No developer licence or advertising permit (APDL) number found. The developer states it holds approvals to sell to foreigners under s.433B National Land Code (The Edge); DoE approved the detailed EIA (The Edge)",
+   "escrow": "Nothing published; Malaysian Housing Development Act projects use a Housing Development Account, but no account details were found for Forest City",
+   "progress": "No % or dated updates; residential construction is complete per the developer and the master plan is in a 'third phase' focused on industry",
+   "plans": "No unit plans found for any current offering",
+   "record": "Developer-reported 26,000 completed units; Al Jazeera independently reported 28,000 housing units built and 700 acres completed (2023)",
+   "returns": "No guaranteed rental return found"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "26,000 residential units completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+   },
+   {
+    "claim": "About 20,000 residents live in Forest City (developer, 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theedgemalaysia.com/node/819942"
+   },
+   {
+    "claim": "Planned city for 700,000 residents by 2035",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+   },
+   {
+    "claim": "Only about 10% (700 acres) of the project completed as of 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+   },
+   {
+    "claim": "Foreigners can buy units with state approval under s.433B National Land Code",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/article/country-garden-forest-city-has-complied-all-laws-and-regulations"
+   },
+   {
+    "claim": "Government barred foreigners from buying (Aug 2018 statement by PM Mahathir)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers"
+   },
+   {
+    "claim": "Developer is a 60:40 JV of Country Garden and Esplanade Danga 88",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/node/819942"
+   },
+   {
+    "claim": "Forest City subsidiary to be sold by Country Garden Real Estate to Concrete Win by mid-2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ram.com.my/pressrelease/?prviewid=7218"
+   },
+   {
+    "claim": "Forest City designated Special Financial Zone and JS-SEZ Flagship G",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/node/819942"
+   },
+   {
+    "claim": "No new residential launches planned",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theedgemalaysia.com/node/819942"
+   },
+   {
+    "claim": "Detailed EIA approved by the Department of Environment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/article/country-garden-receives-doe-approval-forest-city-project"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Iskandar Puteri, Johor, Malaysia",
+   "developer_company": "Country Garden Pacificview Sdn Bhd (JV of Country Garden Holdings and Esplanade Danga 88 Sdn Bhd)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 26000,
+   "listed_or_audited": "Parent Country Garden Holdings listed in Hong Kong; RAM Ratings rates Country Garden Real Estate Sdn Bhd sukuk B1 (Mar 2026)",
+   "construction_start": "2016",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment",
+    "villa",
+    "cluster home"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold or leasehold strata title subject to Johor state approval for foreign buyers (s.433B National Land Code)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "duty-free zone",
+    "golf courses",
+    "golf hotel",
+    "beach and water park",
+    "shuttle to Second Link CIQ"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Johor state authority / Majlis Bandaraya Iskandar Puteri; KPKT developer licence",
+   "brochure_url": null
+  },
+  "positives": [
+   "Large completed stock: 26,000 units built (developer), with independent press confirming tens of thousands of units",
+   "Special Financial Zone tax incentives in force",
+   "Country Garden Real Estate rating upgraded to B1 stable by RAM (Mar 2026)"
+  ],
+  "flags": [
+   {
+    "text": "Al Jazeera reported in Nov 2023 that about 9,000 people lived in 28,000 units, about 10% of the project was complete and about 5,000 units were unsold.",
+    "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+   },
+   {
+    "text": "Majority shareholder Country Garden missed a US dollar bond interest payment in Oct 2023 amid about US$186bn of liabilities, per Al Jazeera.",
+    "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+   },
+   {
+    "text": "In Aug 2018 then PM Mahathir said foreigners would not be allowed to buy residential units or get visas to live there; the developer said it had approvals to sell to foreigners.",
+    "source": "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers"
+   },
+   {
+    "text": "In July 2026 the home ministry opened an investigation into the Network School, a private community operating in Forest City; the developer said it would cooperate.",
+    "source": "https://www.freemalaysiatoday.com/category/nation/2026/07/15/forest-city-developer-ready-to-cooperate-in-network-school-probe"
+   }
+  ],
+  "sources": [
+   "https://theedgemalaysia.com/node/819942",
+   "https://www.ram.com.my/pressrelease/?prviewid=7218",
+   "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city",
+   "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers",
+   "https://theedgemalaysia.com/article/country-garden-forest-city-has-complied-all-laws-and-regulations",
+   "https://theedgemalaysia.com/article/country-garden-receives-doe-approval-forest-city-project",
+   "https://www.freemalaysiatoday.com/category/nation/2026/07/15/forest-city-developer-ready-to-cooperate-in-network-school-probe"
+  ]
  }
 ]

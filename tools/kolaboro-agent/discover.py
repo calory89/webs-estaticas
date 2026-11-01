@@ -36,7 +36,7 @@ MARKETS = [
     ('Croatia', 'Croatia', 'building permit'), ('Albania', 'Albania', 'building permit'), ('Bulgaria', 'Bulgaria', 'Act 14/15/16'), ('Georgia', 'Georgia', 'public registry'),
     ('Italy', 'Italy', 'permesso di costruire'), ('French Riviera', 'France', 'permis de construire, GFA guarantee'), ('Malta', 'Malta', 'Planning Authority PA number'),
     ('London', 'UK', 'planning portal, Companies House'), ('Manchester', 'UK', 'planning portal'), ('Dublin', 'Ireland', 'planning register'),
-    ('Bali', 'Indonesia', 'PBG building permit number (a NIB is not a permit); foreigners cannot hold freehold, strata only above Rp 2B in Bali (Kepmen ATR/BPN 1241/2022)'), ('Lombok', 'Indonesia', 'PBG'), ('Phuket', 'Thailand', 'EIA approval, building permit, SET filings'),
+    ('Bali', 'Indonesia', 'PBG building permit number (a NIB is not a permit); foreigners cannot hold freehold, strata only above Rp 2B in Bali (Kepmen ATR/BPN 1241/2022)'), ('Lombok', 'Indonesia', 'PBG'), ('Phuket', 'Thailand', 'EIA approval on the ONEP register (eia.onep.go.th, filed is not approved), building permit, SET filings'),
     ('Koh Samui', 'Thailand', 'building permit'), ('Pattaya', 'Thailand', 'EIA approval'), ('Bangkok', 'Thailand', 'EIA approval, SET filings'),
     ('Hua Hin', 'Thailand', 'building permit'), ('Vietnam', 'Vietnam', 'provincial approval'), ('Philippines', 'Philippines', 'DHSUD License to Sell'),
     ('Malaysia', 'Malaysia', 'KPKT developer licence and advertising permit'), ('Cambodia', 'Cambodia', 'construction permit'), ('Sri Lanka', 'Sri Lanka', 'UDA approval'),

@@ -3058,7 +3058,752 @@
    "https://vibe-residence.com/",
    "https://inasia.consulting/developers/esm-development/",
    "https://eia.onep.go.th/eia/detail?id=16545",
-   "https://eia.onep.go.th/site/eia"
+   "https://eia.onep.go.th/services/web/open-api/eia-list"
+  ]
+ },
+ {
+  "slug": "widen-by-sansiri-sathorn",
+  "name": "Widen by Sansiri",
+  "developer": "Sansiri",
+  "area": "Thung Mahamek, Sathon, Bangkok",
+  "country": "Thailand",
+  "market": "Bangkok",
+  "url": "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702",
+  "docs_url": "https://www.sansiri.com/condominium/widen-by-sansiri/th/",
+  "permit_number": "EIA approval กท 1104/794 (11 Apr 2025, report 256709-48, registered as 'HAUS Nang Linchi')",
+  "docs_listed": [
+   "Sansiri project page: 1 building, 34 floors, 215 units, land about 2 rai 90 sq.wah, 105% parking, price from THB 8.59M (promotion)",
+   "Sansiri project progress page: update 8 Oct 2026, EIA approved, construction permit issued, expected completion February 2028",
+   "joint venture with Tokyu Development (Thailand)",
+   "unit types 1BR 45.25 m2 to 3BR 209.75 m2 (agent)",
+   "portal: foreign quota units, prices THB 9.3M to 32.9M"
+  ],
+  "note": "34-floor, 215-unit Sansiri and Tokyu joint-venture condo on Nang Linchi Road, Sathon, from THB 8.59M with completion February 2028; the ONEP register confirms its Bangkok EIA (กท 1104/794, 11 Apr 2025) under the working name HAUS Nang Linchi, owner Siri TK Seven Co., Ltd., and Sansiri's progress page (8 Oct 2026) says the construction permit is issued, but no permit number or escrow is published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 8590000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 215,
+   "developer_delivered": "Sansiri PCL (SET: SIRI), listed developer; ONEP shows earlier Sansiri joint-venture condos (e.g. Taka Haus by Siri TK One, The Base Sukhumvit 50) handed to their condominium juristic persons",
+   "yield_pct": null,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "evidence": {
+   "permit": "Sansiri states the EIA is approved and the construction permit issued, with no numbers. ONEP lists report 256709-48 'HAUS Nang Linchi', Nang Linchi Road, Thung Maha Mek, Sathon, owner Siri TK Seven Co., Ltd. (0105566076792, registered 11 Apr 2023, active), approval กท 1104/794 dated 11/04/2568 (11 Apr 2025); the agent portal TookTee names Siri TK Seven as Widen's developer company",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Sansiri project progress page updated 8 Oct 2026 (no percentage in page text) with expected completion February 2028; ONEP status still reads 'not yet constructed', which conflicts with the developer's statement that the construction permit is issued. Construction start July 2025 per agent Richmonts",
+   "plans": "Unit types and sizes published (agent and portal floor plans); Sansiri page shows project details",
+   "record": "Sansiri PCL is SET-listed; ONEP lists earlier Siri TK joint-venture condos such as Taka Haus (report 11128) and The Base Sukhumvit 50 (report 11990) with condominium juristic persons as owners",
+   "returns": "No guaranteed return language"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14204"
+   },
+   {
+    "claim": "Project company Siri TK Seven Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=10556"
+   },
+   {
+    "claim": "Construction permit issued and construction under way",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14204"
+   },
+   {
+    "claim": "Expected completion February 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sansiri.com/projectprogress/en/"
+   },
+   {
+    "claim": "215 units in a 34-storey tower",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://homeday.co.th/articles/news/sansiri-20250818"
+   },
+   {
+    "claim": "Joint venture with Tokyu Development (Thailand)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.moneyandbanking.co.th/2025/198411/"
+   },
+   {
+    "claim": "Prices from THB 8.59M (promotion; launch price THB 8.9M)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sansiri.com/condominium/widen-by-sansiri/th/"
+   },
+   {
+    "claim": "Earlier Sansiri joint-venture condos completed and registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/services/web/open-api/eia-list"
+   },
+   {
+    "claim": "Foreign quota units available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sansiri.com/condominium/widen-by-sansiri/th/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1984,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Siri TK Seven Co., Ltd., 0105566076792 (registered 11 Apr 2023), Sansiri PCL joint venture with Tokyu Development (Thailand)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Sansiri PCL listed on the Stock Exchange of Thailand (SIRI)",
+   "construction_start": "2025-07",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR plus",
+    "3BR",
+    "Signature Suite"
+   ],
+   "size_min_m2": 45.25,
+   "size_max_m2": 209.75,
+   "price_min": 8590000,
+   "price_max": 49900000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit within the 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Sansiri",
+   "amenities": [
+    "25 m infinity pool with Bang Kachao view",
+    "pet playground",
+    "putting green",
+    "sauna and steam",
+    "co-living lounge",
+    "fitness",
+    "EV charging",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Bangkok Metropolitan Administration EIA committee (กท) and Sathon district office (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Bangkok EIA approval confirmed on the ONEP register",
+   "SET-listed developer with completed joint-venture condos listed on the register",
+   "Developer publishes a dated project progress page with permit status",
+   "Unit count, floors, land size and parking published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702",
+   "https://www.sansiri.com/condominium/widen-by-sansiri/th/",
+   "https://www.sansiri.com/projectprogress/en/",
+   "https://eia.onep.go.th/eia/detail?id=14204",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=10556",
+   "https://eia.onep.go.th/services/web/open-api/eia-list",
+   "https://homeday.co.th/articles/news/sansiri-20250818",
+   "https://en.moneyandbanking.co.th/2025/198411/",
+   "https://www.thaipr.net/estate/3646317",
+   "https://www.richmonts.com/our-properties/thailand/new-developments/widen-by-sansiri",
+   "https://tanacityhome.tooktee.com/en/project/15399/?l=en"
+  ]
+ },
+ {
+  "slug": "the-chatt-huahin-pran",
+  "name": "The Chatt Huahin-Pran",
+  "developer": "Chatt Asset",
+  "area": "Hua Hin - Pranburi corridor, Prachuap Khiri Khan",
+  "country": "Thailand",
+  "market": "Hua Hin",
+  "url": "https://kellerhenson.com/project/the-chatt-huahin-pran",
+  "docs_url": "https://www.chattassets.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: 78 units (80 on an older page) on 42.2 rai, Soi Wang Phong 12, Pranburi",
+   "3-bed 3-bath villa floor plan: indoor 150.8 m2, outdoor 73.7 m2, pool 8x4 m",
+   "solar package, AAC walls (developer)",
+   "agent: prices THB 8.9M-13.4M, 3BR 306.5 m2 and 4BR 332 m2 built, completion Q2 or Q3 2027",
+   "agent: freehold or leasehold (30+30+30) for foreigners, THB 100,000 booking"
+  ],
+  "note": "78 private pool villas on about 42 rai off Soi Wang Phong 12, Pranburi, launched on 9 January 2026 by Chatt Asset Co., Ltd. with prices of about THB 9M to 20M and 30-year leases for foreigners; the developer site publishes a villa floor plan but no permit, price, completion date, escrow or progress, agent and portal pages disagree on sizes, unit count and completion (Q2 or Q3 2027 versus a portal's 'completed May 2025'), and the earlier projects the director cites are not named (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 8900000,
+   "currency": "THB",
+   "title": "leasehold for foreigners (freehold for Thai buyers)",
+   "lease_base": 30,
+   "extension": "Two 30-year renewals offered contractually (agent page)",
+   "guaranteed_language": false,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 78,
+   "developer_delivered": null,
+   "yield_pct": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "No land allocation licence or building permit number published; 78 plots on about 42 rai is below the EIA threshold, but a provincial land allocation permit would normally apply to a 78-plot estate and none is cited",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published; Hua Hin Today reports the launch with a show villa on 9 Jan 2026",
+   "plans": "Developer site shows the 3-bed villa floor plan and areas",
+   "record": "Hua Hin Today quotes the managing director saying earlier projects in Ao Nang (Krabi) and Bang Pa-in (Ayutthaya) sold out; no names or registry records found",
+   "returns": "No guaranteed return language; agent page refers generally to Airbnb rental potential"
+  },
+  "claims": [
+   {
+    "claim": "78 pool villas on about 43 rai, launched 9 January 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/"
+   },
+   {
+    "claim": "Developer Chatt Asset Co., Ltd. (Thanapat Phatsarueang, MD)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://huahinsarn.com/20260110a/"
+   },
+   {
+    "claim": "Prices THB 8.9M-13.4M",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/"
+   },
+   {
+    "claim": "Completion Q3 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.fazwaz.com/projects/thailand/prachuap-khiri-khan/pran-buri/wang-phong/the-chatt-hua-hin-pran"
+   },
+   {
+    "claim": "Built area 306.5-332 m2 with 3 and 4 bedroom types",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.chattassets.com/"
+   },
+   {
+    "claim": "Earlier projects in Ao Nang and Bang Pa-in fully sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/"
+   },
+   {
+    "claim": "30-year lease renewable twice for foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/the-chatt-huahin-pran"
+   },
+   {
+    "claim": "Land allocation or building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.chattassets.com/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.chattassets.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pranburi, Prachuap Khiri Khan, Thailand",
+   "developer_company": "Chatt Asset Co., Ltd. (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 150.8,
+   "size_max_m2": 332,
+   "price_min": 8900000,
+   "price_max": 20000000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "THB 100,000 booking deposit, then milestone payments (agent)",
+   "foreign_ownership": "Leasehold up to 30 years (renewals contractual); freehold for Thai buyers",
+   "rental_programme": null,
+   "service_charge": "CAM THB 5/m2 per month, first year free (agent)",
+   "brand": null,
+   "amenities": [
+    "private 8x4 m saltwater pool",
+    "outdoor dining pavilion",
+    "solar energy package",
+    "gated estate with 24/7 security",
+    "CCTV"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Prachuap Khiri Khan provincial land allocation committee; Wang Phong subdistrict administration (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Villa floor plan with areas published by the developer",
+   "Launch, unit count and site size reported by local press",
+   "Ownership structure for foreigners disclosed (leasehold)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kellerhenson.com/project/the-chatt-huahin-pran",
+   "https://www.chattassets.com/",
+   "https://www.chattassets.com/thechatt-huahin",
+   "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/",
+   "https://huahinsarn.com/20260110a/",
+   "https://centuryhuahin.com/prachuap-khiri-khan/project/the-chatt-luxury-pool-villa-15501",
+   "https://www.fazwaz.com/projects/thailand/prachuap-khiri-khan/pran-buri/wang-phong/the-chatt-hua-hin-pran"
+  ]
+ },
+ {
+  "slug": "sunpao-village-krabi",
+  "name": "Sunpao Village Krabi",
+  "developer": "The Suksan Group",
+  "area": "Ao Nang, Krabi",
+  "country": "Thailand",
+  "market": "Krabi",
+  "url": "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo",
+  "docs_url": "https://suksanhomes.com/products/suksan-village",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page now titled 'Suksan Village', Ao Nang (Sunpao Village per developer blog Jun 2025 and agents)",
+   "1BR from THB 4.9M (92.12 m2 built), 2BR from THB 9.9M (234.42 m2), 3BR from THB 12.6M (259.31 m2)",
+   "masterplan and specifications per type",
+   "rental programme and '6-10% annual rental return' wording",
+   "developer financing: 50% at purchase, balance up to 36 months at 0% (promotion page)",
+   "agent: 18 units (4 SOLO, 7 DUO, 7 villas), THB 200,000 booking, 30% down, 70% on completion, completion Q3 2027"
+  ],
+  "note": "18 private-pool lofts and villas below the Ao Nang cliffs, now sold on the developer site as Suksan Village from THB 4.9M (1-bed, 92 m2) with developer financing; agents give completion Q3 2027, but the developer publishes no permit, escrow, completion date or progress, and its delivery record (Villa Sunpao phases in Phuket, '80 villas sold') is stated only by the developer and portals (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 4900000,
+   "currency": "THB",
+   "title": "leasehold (freehold option on some villas per agent)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 18,
+   "developer_delivered": "Suksan Homes / The Suksan Group: developer blog cites earlier Villa Sunpao phases in Rawai and Layan (Phuket); homepage says over 80 villas designed and sold and 34,000 m2 built in 20 years",
+   "yield_pct": null,
+   "payment_plan": "Agent: THB 200,000 booking, 30% down, 70% on completion; developer promotion: 50% at purchase and balance over up to 36 months at 0%",
+   "price_per_m2": 53191
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "No permit or licence number published; 18 villas, below the EIA threshold",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published; developer financing means buyers pay the developer directly ('payments to the developer and no bureaucracy')",
+   "progress": "No construction progress published; agent says 'phased construction underway' without dates",
+   "plans": "Masterplan and per-type specifications with indoor/outdoor areas. Agent prices differ (SOLO THB 5.9M-6.2M, villas THB 13.5M-16.9M on one page, THB 4.9M-12.6M on another)",
+   "record": "Developer blog: Sunpao Village follows the Villa Sunpao concept 'which saw great success in Phuket's Rawai and Layan areas'; homepage: 'designed and sold over 80 villas', '34,000 sqm of property' in 20 years; asia.villas portal says Villa Sunpao at Layan was sold and delivered within 20 months. No registry or press confirmation found",
+   "returns": "'6-10% Annual Rental Return' and '5-10% annual appreciation' presented as market expectations; no guarantee"
+  },
+  "claims": [
+   {
+    "claim": "18 units (4 SOLO, 7 DUO, 7 villas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/sunpao-village-krabi"
+   },
+   {
+    "claim": "Prices from THB 4.9M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/sunpao-village-krabi"
+   },
+   {
+    "claim": "Completion Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo"
+   },
+   {
+    "claim": "Developer with over 20 years and 80+ villas sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://suksanhomes.com/"
+   },
+   {
+    "claim": "Villa Sunpao Layan sold and delivered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.asia.villas/projects/thailand/krabi/mueang-krabi/nong-thale/villa-sunpao-ao-nang"
+   },
+   {
+    "claim": "6-10% annual rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://suksanhomes.com/products/suksan-village"
+   },
+   {
+    "claim": "Foreign ownership through secure long-term land rights (leasehold)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://suksanhomes.com/products/suksan-village"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://suksanhomes.com/products/suksan-village"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://suksanhomes.com/pages/promotion"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "21/3 Moo 6 Baan Layan Rd, Choeng Thale, Thalang, Phuket, Thailand",
+   "developer_company": "Suksan Homes / The Suksan Group (legal entity and registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR loft (SOLO)",
+    "2BR loft (DUO)",
+    "3BR villa"
+   ],
+   "size_min_m2": 92.12,
+   "size_max_m2": 305.59,
+   "price_min": 4900000,
+   "price_max": 16900000,
+   "currency": "THB",
+   "deposit_pct": 30,
+   "payment_plan": "THB 200,000 booking, 30% down, 70% on completion (agent); or 50% plus up to 36 months 0% developer financing (promotion)",
+   "foreign_ownership": "Leasehold (freehold structures offered on some villas per agent)",
+   "rental_programme": "Suksan Homes rental and property management; '6-10% annual rental return' market wording",
+   "service_charge": "THB 30-40/m2 common fee (agent)",
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "gated community",
+    "BBQ area",
+    "landscaped gardens",
+    "CCTV and 24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ao Nang subdistrict administration (building permit); Krabi Land Office (lease registration)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Prices and built areas per unit type published by the developer",
+   "Masterplan and specifications published",
+   "70% of price payable only on completion under the agent's terms"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo",
+   "https://kellerhenson.com/project/sunpao-village-krabi",
+   "https://suksanhomes.com/products/suksan-village",
+   "https://suksanhomes.com/blogs/magazine/sunpao-village-krabi-a-new-chapter-in-tropical-elegance",
+   "https://suksanhomes.com/pages/promotion",
+   "https://suksanhomes.com/",
+   "https://www.asia.villas/projects/thailand/krabi/mueang-krabi/nong-thale/villa-sunpao-ao-nang"
+  ]
+ },
+ {
+  "slug": "astra-infinite-chiang-mai",
+  "name": "Astra Infinite",
+  "developer": "North Home Company Limited (Ornsirin Group)",
+  "area": "Chang Klan Road, Chiang Mai",
+  "country": "Thailand",
+  "market": "Chiang Mai",
+  "url": "https://kellerhenson.com/project/astra-infinite",
+  "docs_url": "https://ornsirin.co.th/en/property-item/the-astra-infinite/",
+  "permit_number": "EIA approval ทส 1009.5/2041 (2 Feb 2026, report 256811-27, registered as 'ASTRA Chang Klan 3')",
+  "docs_listed": [
+   "Ornsirin project page: studio 30 m2, 1BR 36 m2, 1BR plus 40 m2, 2BR 57 m2, 3BR 96 m2 plans; from THB 3.1M",
+   "360 tour listing 421 units by floor",
+   "ORN press: 16 floors, 421 units, over 5 rai, value THB 1,812M, EIA approved, EDGE standard",
+   "ORN press 2 Oct 2026: pile-driving ceremony, presale over 60%, completion 2028",
+   "agent: freehold within 49% foreign quota, completion Q3 2028"
+  ],
+  "note": "16-floor, 421-unit condo in the Chang Klan-Rakaeng area of Chiang Mai by SET-listed Ornsirin Holding (developer company North Home Co., Ltd.) from THB 3.1M; the ONEP register confirms its EIA (ทส 1009.5/2041, 2 Feb 2026, as ASTRA Chang Klan 3) and lists North Home's earlier Astra condos as operating, and the developer held the pile-driving ceremony in October 2026 with completion due in 2028, but no permit number or escrow is published (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 3100000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "units": 421,
+   "developer_delivered": "North Home Co., Ltd. (Ornsirin Group): The Astra and The Astra Sky River condominiums in Chang Klan listed as opened and operating on the ONEP register",
+   "yield_pct": null,
+   "progress_updates": true,
+   "payment_plan": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "evidence": {
+   "permit": "Ornsirin states 'EIA Approved' with no number. ONEP lists report 256811-27 'ASTRA Chang Klan 3', Rakaeng Road, Chang Klan, Mueang Chiang Mai, owner North Home Co., Ltd. (0505531000630, registered 1 Jun 1988, active), approval letter ทส 1009.5/2041 dated 02/02/2569 (2 Feb 2026); ONEP status 'not yet constructed'",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Ornsirin news (2 Oct 2026): pile-driving ceremony to start construction, presale above 60%, completion within 2028; no percentage",
+   "plans": "Unit plans with sizes for five types on the developer page and a 360 tour by floor",
+   "record": "ONEP lists North Home's 'The Astra' (report 7331) and 'ASTRA-Sky River' (report 15147, now owned by its condominium juristic person) as opened and operating; Ornsirin Holding is SET-listed (ORN)",
+   "returns": "No guaranteed return language"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=15527"
+   },
+   {
+    "claim": "Developer North Home Co., Ltd. registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=3352"
+   },
+   {
+    "claim": "North Home delivered The Astra condominium",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=5333"
+   },
+   {
+    "claim": "North Home delivered The Astra Sky River",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=10127"
+   },
+   {
+    "claim": "Construction started (pile-driving, Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/"
+   },
+   {
+    "claim": "Completion 2028 (Q3 per agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/"
+   },
+   {
+    "claim": "421 units on 16 floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.chiangmainews.co.th/landandhouse/%e0%b8%ad%e0%b8%aa%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%b4%e0%b8%a1%e0%b8%97%e0%b8%a3%e0%b8%b1%e0%b8%9e%e0%b8%a2%e0%b9%8c/3936963/"
+   },
+   {
+    "claim": "Presale above 60%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/"
+   },
+   {
+    "claim": "Prices from THB 3.1M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale/"
+   },
+   {
+    "claim": "Freehold within the 49% foreign quota",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kellerhenson.com/project/astra-infinite"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/property-item/the-astra-infinite/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1988,
+   "developer_hq": "Chiang Mai, Thailand",
+   "developer_company": "North Home Co., Ltd., 0505531000630 (registered 1 Jun 1988), Ornsirin Holding PCL group",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Ornsirin Holding PCL listed on the Stock Exchange of Thailand (ORN)",
+   "construction_start": "2026-10",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR plus",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 29.54,
+   "size_max_m2": 95.93,
+   "price_min": 3100000,
+   "price_max": 20000000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit within the 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "The Astra (Ornsirin)",
+   "amenities": [
+    "rooftop pool",
+    "sky lounge",
+    "co-working",
+    "180-degree fitness",
+    "green areas on floors 1 and 3",
+    "PM2.5 air filtration",
+    "24-hour security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Chiang Mai City Municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Developer's earlier Chang Klan condominiums listed as operating on the register",
+   "Parent company SET-listed",
+   "Unit plans with sizes published and construction start dated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kellerhenson.com/project/astra-infinite",
+   "https://ornsirin.co.th/en/property-item/the-astra-infinite/",
+   "https://the-astra-infinite-360.ornsirin.co.th/",
+   "https://ornsirin.co.th/en/the-astra-infinite-pre-sale/",
+   "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/",
+   "https://www.chiangmainews.co.th/landandhouse/%e0%b8%ad%e0%b8%aa%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%b4%e0%b8%a1%e0%b8%97%e0%b8%a3%e0%b8%b1%e0%b8%9e%e0%b8%a2%e0%b9%8c/3936963/",
+   "https://eia.onep.go.th/eia/detail?id=15527",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=3352",
+   "https://eia.onep.go.th/eia/detail?id=5333",
+   "https://eia.onep.go.th/eia/detail?id=10127"
   ]
  }
 ]

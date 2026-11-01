@@ -8868,6 +8868,7 @@
    "flags": [],
    "sources": [
     "https://eia.onep.go.th/eia/detail?id=16545",
+    "https://eia.onep.go.th/services/web/open-api/eia-list",
     "https://eia.onep.go.th/site/eia",
     "https://inasia.consulting/developers/esm-development/",
     "https://vibe-downtown.com/",
@@ -18665,149 +18666,608 @@
    "slug": "masteri-grand-view-global-city-hcmc",
    "name": "Masteri Grand View",
    "developer": "Masterise Homes",
-   "area": "The Global City, Ho Chi Minh City",
+   "status": "active",
+   "stage": "under construction",
+   "area": "The Global City, Do Xuan Hop St, Binh Trung (former An Phu), Ho Chi Minh City",
    "country": "Vietnam",
-   "market": "Vietnam",
-   "url": "https://plo.vn/masterise-homes-dinh-hinh-nhip-song-thoi-thuong-tai-trung-tam-moi-voi-masteri-grand-view-post819924.html",
-   "docs_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-masteri-grand-view/gia-tu-3-ty-den-5-ty",
-   "permit_number": null,
+   "market": "Ho Chi Minh City",
+   "url": "http://masterisehomes.com/the-global-city/vi/masteri-grand-view",
+   "docs_url": "http://masterisehomes.com/the-global-city/vi/masteri-grand-view",
+   "permit_number": "11265/SXD-PTDT (HCMC Department of Construction notice allowing capital raising for 616 units, as cited by PropLab); building permit cited as 155/GPXD",
    "docs_listed": [
-    "tower count",
-    "unit sizes (57-181 m2)",
-    "number of units released"
+    "developer page names investor Saigon Investment and Development JSC (SDI Corp), business reg. 0301707699, with Masterise Homes as developer",
+    "two 25-storey towers (Spark and Glow), 616 apartments 57 to 181 m2 plus penthouses to 372 m2",
+    "topped out 29 Jan 2026; handover Q4 2026 to Q1 2027 (agents)",
+    "prices VND 120 to 150 million per m2; 1BR from about VND 6bn",
+    "payment options incl. 25% on SPA then 9% quarterly, 5% held to pink book",
+    "ownership: long-term for Vietnamese, 50 years for foreigners"
    ],
-   "note": "Two-tower apartment project at the gateway of The Global City; the launch article states over 600 units released (1-4 bedrooms). It gives no handover date, price, legal status or foreign-ownership details.",
+   "note": "First high-rise phase of Masterise Homes' 117-ha The Global City: two 25-storey towers with 616 apartments, sold since December 2024 at about VND 120 to 150 million per m2, topped out on 29 January 2026 with handover expected Q4 2026 to Q1 2027. The investor of record is SDI Corp; an analyst cites a Department of Construction capital-raising notice (11265/SXD-PTDT) but also reports the whole site is mortgaged with no unit-by-unit release and that SDI reports large net losses. No bank guarantee certificate is published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 6000000000,
     "currency": "VND",
-    "title": null,
-    "lease_base": null,
-    "extension": null,
+    "title": "long-term ownership (Vietnamese); 50-year ownership for foreigners",
+    "lease_base": 50,
+    "extension": "foreign ownership term may be extended under Vietnamese housing law",
     "guaranteed_language": false,
-    "completion": null,
-    "permit_claim": false,
-    "permit_number": null,
-    "plans_published": false,
+    "yield_pct": null,
+    "completion": "2026-Q4",
+    "permit_claim": true,
+    "permit_number": "11265/SXD-PTDT (cited by third party)",
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": 600,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "SOHO low-rise phase of The Global City (915 units) handed over from Jan 2024 with pink books from 30 Nov 2024 (agent citing VnExpress)",
+    "units": 616,
+    "payment_plan": "Standard: 25% on SPA, 9% per quarter, 25% on handover notice, 5% on pink book; fast-pay 30% + 70% within 30 days (16% discount); bank-loan option 20% with 0% interest to 30 Jun 2027",
+    "price_per_m2": 120000000,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "PropLab cites building permit 155/GPXD and Department of Construction notice 11265/SXD-PTDT for 616 units; other agents describe 155/GPXD (18 Dec 2020) as the urban-area infrastructure permit, so the tower permit number is unclear",
+    "escrow": "Vietnamese law requires a bank guarantee for off-plan sales, but no guaranteeing bank or certificate is published; PropLab says the land is mortgaged with no unit-by-unit release letter",
+    "progress": "Agents report topping out on 29 Jan 2026 (5 Feb 2026 site visit) and facade glazing in progress (Apr-Jun 2026)",
+    "plans": "Unit types and areas by bedroom count published by agents with floor layouts",
+    "record": "SOHO townhouse phase in the same city handed over from Jan 2024 with pink books from Nov 2024 (agent citing VnExpress)",
+    "returns": "Agents stress price growth; no rental guarantee or yield figure"
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Launch coverage gives no handover date, legal/permit status or foreign-ownership terms.",
-     "source": "https://plo.vn/masterise-homes-dinh-hinh-nhip-song-thoi-thuong-tai-trung-tam-moi-voi-masteri-grand-view-post819924.html"
+     "claim": "616 apartments in two 25-storey towers",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://infocanho.com/masteri-grand-view-the-global-city-quan-2.html"
+    },
+    {
+     "claim": "Investor of record SDI Corp (business reg. 0301707699), Masterise Homes as developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "http://masterisehomes.com/the-global-city/vi/masteri-grand-view"
+    },
+    {
+     "claim": "Capital-raising notice 11265/SXD-PTDT for 616 units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://proplab.vn/phan-tich/masteri-grand-view-ho-chi-minh"
+    },
+    {
+     "claim": "155/GPXD is the tower building permit (PropLab) vs the urban-area infrastructure permit (other agents)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://paceland.vn/du-an/the-global-city.html"
+    },
+    {
+     "claim": "Whole land plot mortgaged, no unit-by-unit release letter",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://proplab.vn/phan-tich/masteri-grand-view-ho-chi-minh"
+    },
+    {
+     "claim": "Topped out 29 Jan 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://paceland.vn/du-an/the-global-city.html"
+    },
+    {
+     "claim": "Handover Q4 2026 vs Q1 2027 vs 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://theglobalcityvietnam.com.vn/"
+    },
+    {
+     "claim": "Price VND 120-150 million per m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://masterisehomesbysalereal.vn/gia-ban-the-global-city/"
+    },
+    {
+     "claim": "Foreign buyers get 50-year ownership",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://infocanho.com/masteri-grand-view-the-global-city-quan-2.html"
+    },
+    {
+     "claim": "Developer site says 'so hong so huu lau dai' (long-term pink book) without stating the 50-year limit for foreigners",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://masterishomes.vn/the-global-city/"
+    },
+    {
+     "claim": "SOHO phase handed over Jan 2024, pink books from 30 Nov 2024",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://paceland.vn/du-an/the-global-city.html"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Ho Chi Minh City, Vietnam",
+    "developer_company": "Masterise Homes Real Estate Development Co. Ltd (reg. 0316001930); project investor Saigon Investment and Development JSC (SDI Corp, reg. 0301707699)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2026-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "4BR",
+     "penthouse"
+    ],
+    "size_min_m2": 56.56,
+    "size_max_m2": 372.2,
+    "price_min": 6000000000.0,
+    "price_max": 20200000000.0,
+    "currency": "VND",
+    "deposit_pct": 25.0,
+    "payment_plan": "25% on SPA then 9% quarterly; 25% at handover notice; 5% at pink book",
+    "foreign_ownership": "50-year ownership certificate for foreigners (Vietnamese: long-term)",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "pool",
+     "gym",
+     "spa",
+     "park",
+     "kids play area",
+     "podium retail",
+     "20+ residents' facilities on level 5"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "HCMC Department of Construction (building permit and off-plan sale eligibility notice)",
+    "brochure_url": null
+   },
    "positives": [
-    "Named developer and named township",
-    "Unit mix and size range published"
+    "Large developer with an earlier phase in the same township handed over and titled",
+    "Structure topped out January 2026",
+    "Capital-raising notice number circulated by analysts",
+    "Only 25-30% due before handover under standard plan"
    ],
+   "flags": [],
    "sources": [
+    "http://masterisehomes.com/the-global-city/vi/masteri-grand-view",
+    "https://bachnhuproperties.vn/can-ho-masteri-grand-view-khi-nao-co-so-hong-1926.html",
+    "https://batdongsan.com.vn/ban-can-ho-chung-cu-masteri-grand-view/gia-tu-3-ty-den-5-ty",
+    "https://duonghungthinh.com/cap-nhat-tien-do-the-global-city-thang-6-2026/",
+    "https://infocanho.com/masteri-grand-view-the-global-city-quan-2.html",
+    "https://masterisehomesbysalereal.vn/gia-ban-the-global-city/",
+    "https://masterishomes.vn/the-global-city/",
+    "https://paceland.vn/du-an/the-global-city.html",
     "https://plo.vn/masterise-homes-dinh-hinh-nhip-song-thoi-thuong-tai-trung-tam-moi-voi-masteri-grand-view-post819924.html",
-    "https://batdongsan.com.vn/ban-can-ho-chung-cu-masteri-grand-view/gia-tu-3-ty-den-5-ty"
+    "https://proplab.vn/phan-tich/masteri-grand-view-ho-chi-minh",
+    "https://theglobalcityvietnam.com.vn/",
+    "https://theglobalcityvietnam.com.vn/tien-do-masteri-grand-view-thang-02-2026-chinh-thuc-cat-noc-2-toa-thap/",
+    "https://www.vutrongkhai.com/du-an/the-global-city/"
    ]
   },
   {
    "slug": "eaton-park-thu-duc-hcmc",
    "name": "Eaton Park",
    "developer": "Gamuda Land (Gamuda Berhad)",
+   "status": "active",
+   "stage": "under construction",
    "area": "Mai Chi Tho Boulevard, An Phu, Thu Duc City, Ho Chi Minh City",
    "country": "Vietnam",
-   "market": "Vietnam",
-   "url": "https://residential.cbrevietnam.com/en-US/eaton-park-1",
-   "docs_url": "https://en.vneconomy.vn/gamuda-lands-eaton-park-project-sees-99-of-second-batch-sold-in-a-week.htm",
-   "permit_number": null,
+   "market": "Ho Chi Minh City",
+   "url": "https://gamudaland.com.vn/en/news/news-and-story-38",
+   "docs_url": "https://gamudaland.com.vn/en/news/news-and-story-38",
+   "permit_number": "07/GPXD (HCMC Department of Construction, 17 Feb 2023); sale-eligibility notices 6488/SXD-PTDT (678 units, A5-A6) and 11801/SXD-PTDT (1,322 units, A1-A4)",
    "docs_listed": [
-    "site area and density",
-    "unit count and tower heights",
-    "unit sizes",
-    "ownership term for foreigners (50 years)",
-    "handover condition (fully finished)"
+    "developer news: construction began Mar 2024; final towers A3-A4 topped out 12 Aug 2026; handover from Q3 2027",
+    "six towers of 29 to 39 storeys on about 3.76 ha; 2,052 products (1,968 apartments, 12 penthouses, 52 podium shops, 20 shophouses)",
+    "building permit 07/GPXD and two sale-eligibility notices (agent)",
+    "unit sizes 1BR 50.7-55.8 m2 to duplex 113.9 m2",
+    "foreigners: 50-year title within 30% per-tower cap",
+    "Gamuda Berhad FY2024 integrated report: Eaton Park phase 1 RM1bn sales, sold out in a week"
    ],
-   "note": "Six towers (29-39 storeys) with 2,052 units on a 3.76 ha site; CBRE lists prices from VND 120 million per sqm, freehold for Vietnamese and 50-year ownership for foreigners. Phase completion dates are blank on the portal.",
+   "note": "Six-tower, 2,052-unit development by Gamuda Land (listed Gamuda Berhad) on Mai Chi Tho Boulevard: building permit 07/GPXD and two Department of Construction sale-eligibility notices are cited, construction began March 2024 and all six towers topped out by 12 August 2026, with handover from Q3 2027 (agents give Q2 2027 for A5-A6 and Q1 2028 for A1-A4). Foreigners can buy on 50-year titles; no bank-guarantee details are published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": null,
     "currency": "VND",
-    "title": "other",
+    "title": "long-term ownership (Vietnamese); 50-year ownership for foreigners",
     "lease_base": 50,
-    "extension": null,
+    "extension": "foreign ownership term may be extended under Vietnamese housing law",
     "guaranteed_language": false,
-    "completion": null,
-    "permit_claim": false,
-    "permit_number": null,
+    "yield_pct": null,
+    "completion": "2027-Q3",
+    "permit_claim": true,
+    "permit_number": "07/GPXD",
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Gamuda Land Vietnam townships Celadon City and Gamuda City (Gamuda Berhad integrated report FY2024); Artisan Park vacant possession targeted Q4 FY2025",
     "units": 2052,
-    "developer_delivered": "Gamuda Land (listed Malaysian group)",
-    "yield_pct": null
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Agent publishes building permit 07/GPXD (17 Feb 2023) and sale notices 6488/SXD-PTDT and 11801/SXD-PTDT; developer-related site says permit, 1/500 plan and investment approval complete",
+    "escrow": "No guaranteeing bank or bank-guarantee certificate published, although Vietnamese law requires one for off-plan sales",
+    "progress": "Topping out of final towers on 12 Aug 2026 reported by CafeLand, Cong Luan (via vietnam.vn) and Nhip Song Kinh Doanh; May 2026 floor-by-floor update",
+    "plans": "Unit types and areas published; agents show layouts",
+    "record": "Gamuda Berhad's audited integrated report names delivered Vietnam townships (Celadon City, Gamuda City) and reports Eaton Park phase 1 sales",
+    "returns": "No rental guarantee or yield claim"
+   },
+   "verification": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
     {
-     "text": "Portal leaves Phase 1 and Phase 2 completion dates blank and lists no permit or payment plan.",
-     "source": "https://residential.cbrevietnam.com/en-US/eaton-park-1"
+     "claim": "Building permit 07/GPXD issued 17 Feb 2023",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+    },
+    {
+     "claim": "Sale-eligibility notices 6488/SXD-PTDT (678 units) and 11801/SXD-PTDT (1,322 units)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+    },
+    {
+     "claim": "Construction began March 2024",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://nhipsongkinhdoanh.vn/gamuda-land-cat-noc-hai-toa-thap-cuoi-cung-tai-du-an-hang-sang-eaton-park-31848.htm"
+    },
+    {
+     "claim": "All six towers topped out by 12 Aug 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.vietnam.vn/eaton-park-cat-noc-hai-toa-thap-cuoi-gamuda-land-hoan-tat-ket-cau-toan-du-an"
+    },
+    {
+     "claim": "Handover from Q3 2027 (developer) vs Q2 2027 for A5-A6 and Q1 2028 for A1-A4 (agent)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+    },
+    {
+     "claim": "2,052 products incl. 1,968 apartments vs 1,980 apartments",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/"
+    },
+    {
+     "claim": "Phase 1 sold out within a week, RM1bn sales",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf"
+    },
+    {
+     "claim": "Gamuda Land delivered Celadon City and Gamuda City in Vietnam",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf"
+    },
+    {
+     "claim": "Legal developer is Tam Luc Real Estate JSC (Gamuda Land company)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+    },
+    {
+     "claim": "Foreigners can buy on 50-year title within 30% per-tower cap",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/"
+    },
+    {
+     "claim": "Bank guarantee for off-plan payments in place",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://gamudaland.com.vn/en/news/news-and-story-38"
     }
    ],
+   "facts": {
+    "developer_founded": 1995.0,
+    "developer_hq": "Selangor, Malaysia (Vietnam since 2007)",
+    "developer_company": "Tam Luc Real Estate JSC (project company, per agent); parent Gamuda Berhad",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Gamuda Berhad listed on Bursa Malaysia; audited integrated annual reports",
+    "construction_start": "2024-03",
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "duplex",
+     "penthouse",
+     "shophouse"
+    ],
+    "size_min_m2": 50.7,
+    "size_max_m2": 113.9,
+    "price_min": null,
+    "price_max": null,
+    "currency": "VND",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "50-year ownership certificate for foreigners, max 30% of units per tower",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "biophilic landscaped park",
+     "podium commercial centre",
+     "pools",
+     "gym",
+     "kids areas",
+     "two connected basements"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "HCMC Department of Construction",
+    "brochure_url": null
+   },
    "positives": [
-    "Listed parent company (Gamuda Berhad)",
-    "Unit count, tower heights and site density published",
-    "Foreign ownership term stated (50 years)"
+    "Listed, audited parent company reporting project sales",
+    "Building permit and sale-eligibility notice numbers circulated",
+    "All towers topped out ahead of handover, confirmed by national press",
+    "Named main contractors (Coteccons, Hoa Binh)"
    ],
+   "flags": [],
    "sources": [
+    "https://dndrealty.com.vn/en/du-an/eaton-park/",
+    "https://en.vneconomy.vn/gamuda-lands-eaton-park-project-sees-99-of-second-batch-sold-in-a-week.htm",
+    "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf",
+    "https://gamudaland.com.vn/en/news/news-and-story-38",
+    "https://gamudalandvietnam.vn/cap-nhat-tien-do-xay-dung-du-an-eaton-park-gamuda-land-moi-nhat-thang-5-2026/",
+    "https://nhipsongkinhdoanh.vn/gamuda-land-cat-noc-hai-toa-thap-cuoi-cung-tai-du-an-hang-sang-eaton-park-31848.htm",
     "https://residential.cbrevietnam.com/en-US/eaton-park-1",
-    "https://en.vneconomy.vn/gamuda-lands-eaton-park-project-sees-99-of-second-batch-sold-in-a-week.htm"
+    "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/",
+    "https://www.vietnam.vn/eaton-park-cat-noc-hai-toa-thap-cuoi-gamuda-land-hoan-tat-ket-cau-toan-du-an"
    ]
   },
   {
    "slug": "sun-ponte-residence-da-nang",
    "name": "Sun Ponte Residence",
    "developer": "Sun Group (Sun Property)",
-   "area": "Han River, beside Dragon Bridge, Da Nang",
+   "status": "completed",
+   "stage": "under construction",
+   "area": "Tran Hung Dao St, An Hai Tay, beside Dragon Bridge, Da Nang",
    "country": "Vietnam",
-   "market": "Vietnam",
-   "url": "https://e.vnexpress.net/photo/vietnamproperty/sun-ponte-residence-after-two-years-of-construction-5086492.html",
-   "docs_url": "https://thoibaotaichinhvietnam.vn/da-nang-sun-property-ra-mat-sieu-pham-sun-ponte-residence-ven-song-han-148730.html",
+   "market": "Da Nang",
+   "url": "https://vietnamnet.vn/ban-giao-dung-le-hoi-phao-hoa-cu-dan-sun-ponte-residence-don-dac-quyen-hiem-co-2519604.html",
+   "docs_url": "https://sunponteresidence.com/",
    "permit_number": null,
    "docs_listed": [
-    "construction photos",
-    "handover/fit-out status"
+    "project site names investor Cu Lao Cham Trading-Tourism-Investment JSC; 16,439 m2 site",
+    "The Ponte tower: 26 floors + 3 basements, 495 apartments, 26 podium shops, 7 penthouses; The Rio: 41 townhouses, 16-18 villas",
+    "apartment sizes 25.8 to 112.1 m2; prices from about VND 64 million per m2 (studio about VND 2.4-2.7bn)",
+    "construction started Q1 2024; apartment handover began March 2026 with interior fit-out",
+    "payment: 30% deposit, bank loans up to 70% at 0% for up to 30 months (agent)",
+    "fit-out and shell handover specifications published"
    ],
-   "note": "Twin towers linked between floors 19 and 24; VnExpress (June 2026) reports about two years of construction and handover/interior fit-out under way, with first residents expected within one to two months. The article cites Sun Group's own figure of 8-9% rental yields for Da Nang generally.",
+   "note": "Riverside twin-tower complex by Sun Group next to Da Nang's Dragon Bridge (495 apartments, 7 penthouses, 26 shops, plus 41 townhouses and 16-18 villas), started in Q1 2024; handover of The Ponte apartments began in March 2026 per national press, with fit-out continuing and units still marketed from about VND 64 million per m2. No building permit or bank-guarantee details are published, and agents disagree on ownership terms for shops and foreigners. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 2400000000,
     "currency": "VND",
-    "title": null,
-    "lease_base": null,
-    "extension": null,
+    "title": "long-term ownership (Vietnamese); 50 years for foreigners per agents",
+    "lease_base": 50,
+    "extension": "foreign ownership term may be extended under Vietnamese housing law",
     "guaranteed_language": false,
-    "completion": "Q3 2026",
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2026-Q3",
+    "permit_claim": true,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
-    "developer_delivered": "Sun Group (other Da Nang projects incl. Sun Cosmo Residence)",
-    "yield_pct": null
+    "developer_delivered": "Sun Group's Sun Symphony Residence in Da Nang also handing over in 2026 (VnBizNews); other Sun Group Da Nang projects incl. Sun Cosmo Residence",
+    "units": 528,
+    "payment_plan": "30% deposit during construction; bank loan up to 70% with 0% interest up to 30 months (agent)",
+    "price_per_m2": 64000000,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Agents say 1/500 plan approved and legal documents complete, but no building permit or sale-eligibility notice number is published",
+    "escrow": "An agent lists a bank guarantee among legally required documents in general terms; no guaranteeing bank or certificate is named",
+    "progress": "VietNamNet (May 2026) and VnBizNews (Jun 2026) report handover started in March 2026 with interior fit-out; both read as promotional",
+    "plans": "Unit types and sizes published; handover specification tables published on a project site",
+    "record": "Sun Group delivering other Da Nang residences (Sun Symphony Residence) per VnBizNews; Sun Group is a major national developer",
+    "returns": "Press notes demand for rentals; no guaranteed return; Sun Group's 8-9% market yield claim (per prior VnExpress feature) is a general market figure"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "verified_score": 0,
+   "claims": [
     {
-     "text": "Rental-yield figure (8-9%) is a developer-sourced market claim, not a project-specific guarantee; article is a developer-sourced photo feature.",
-     "source": "https://e.vnexpress.net/photo/vietnamproperty/sun-ponte-residence-after-two-years-of-construction-5086492.html"
+     "claim": "Investor Cu Lao Cham Trading-Tourism-Investment JSC, developed by Sun Group",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunponteresidence.com/"
+    },
+    {
+     "claim": "495 apartments, 26 shops, 7 penthouses in a 26-storey tower",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sun-property.vn/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Tower count: twin towers linked at floors 19-24 (press) vs 1 tower (agent) vs 3 towers (agent)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Villas: 16 vs 18",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://hiephoangmt.com/du-an/sun-ponte-residence/"
+    },
+    {
+     "claim": "Handover started March 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vietnamnet.vn/ban-giao-dung-le-hoi-phao-hoa-cu-dan-sun-ponte-residence-don-dac-quyen-hiem-co-2519604.html"
+    },
+    {
+     "claim": "Original handover Q4 2025 (agent) vs Q3 2026 (other agents)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Shophouses: 50-year ownership vs long-term ownership",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://sun-property.vn/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Prices from VND 64 million per m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://duanbdsdanang.com/du-an/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Foreigners can own for 50 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://duanbdsdanang.com/du-an/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Bank guarantee for off-plan sales in place",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/"
+    },
+    {
+     "claim": "Sun Group delivering Sun Symphony Residence in Da Nang",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vnbiznews.com/sun-group-tang-toc-ban-giao-loat-du-an-can-ho-tai-da-nang-pid1989510620"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Hanoi, Vietnam",
+    "developer_company": "Investor Cu Lao Cham Trading-Tourism-Investment JSC; Sun Property (founded 26 Jun 2020, Hanoi) as developer arm of Sun Group",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": "2024-Q1",
+    "handover_promised": "2026-Q3",
+    "original_handover": "2025-Q4 (agent)",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "1BR+",
+     "2BR",
+     "3BR",
+     "dual key",
+     "duplex",
+     "penthouse",
+     "townhouse",
+     "villa"
+    ],
+    "size_min_m2": 25.8,
+    "size_max_m2": 112.1,
+    "price_min": 2400000000.0,
+    "price_max": 10400000000.0,
+    "currency": "VND",
+    "deposit_pct": 30.0,
+    "payment_plan": "30% then bank financing up to 70%",
+    "foreign_ownership": "50-year ownership for foreigners (agents)",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "gym",
+     "yoga",
+     "spa",
+     "pool",
+     "kids club",
+     "community room",
+     "BBQ",
+     "sky bridge floors 19-24"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Da Nang Department of Construction",
+    "brochure_url": null
+   },
    "positives": [
-    "Construction progress documented with photos by national media",
-    "Handover reported as started"
+    "Building complete and handover under way since March 2026",
+    "Handover specifications published in detail",
+    "Large national developer",
+    "No guaranteed-return language"
    ],
+   "flags": [],
    "sources": [
+    "https://duanbdsdanang.com/du-an/sun-ponte-residence-da-nang/",
     "https://e.vnexpress.net/photo/vietnamproperty/sun-ponte-residence-after-two-years-of-construction-5086492.html",
-    "https://thoibaotaichinhvietnam.vn/da-nang-sun-property-ra-mat-sieu-pham-sun-ponte-residence-ven-song-han-148730.html"
+    "https://hiephoangmt.com/du-an/sun-ponte-residence/",
+    "https://mientrungrealty.com/khu-do-thi/sun-ponte-residence-da-nang/",
+    "https://sun-property.vn/sun-ponte-residence-da-nang/",
+    "https://sunponte.vn/tieu-chuan-ban-giao-can-ho-the-ponte-sun-ponte-residence-da-nang/",
+    "https://sunponteresidence.com/",
+    "https://thoibaotaichinhvietnam.vn/da-nang-sun-property-ra-mat-sieu-pham-sun-ponte-residence-ven-song-han-148730.html",
+    "https://vietnamnet.vn/ban-giao-dung-le-hoi-phao-hoa-cu-dan-sun-ponte-residence-don-dac-quyen-hiem-co-2519604.html",
+    "https://vnbiznews.com/sun-group-tang-toc-ban-giao-loat-du-an-can-ho-tai-da-nang-pid1989510620"
    ]
   },
   {
@@ -19236,100 +19696,424 @@
    "slug": "mandtra-residences-tower-3-mandaue",
    "name": "Mandtra Residences Tower 3 (Phase 2)",
    "developer": "Cebu Homegrown Developers, Inc.",
-   "area": "Mandaue City, Cebu",
+   "status": "active",
+   "stage": "under construction",
+   "area": "P. Basubas Street, Tipolo, Mandaue City, Cebu",
    "country": "Philippines",
    "market": "Philippines",
-   "url": "https://ren.ph/projects/cebu-homegrown-developers-inc-mk7t5e4z/mandtra-residences-tower-3-phase-2-mc-mk7urpor",
-   "docs_url": null,
-   "permit_number": "PLS RO07-21-085",
+   "url": "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences",
+   "docs_url": "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf",
+   "permit_number": "LS-RO7-21-013 (printed for Tower 3 in the developer presentation); registry lists Tower 3 Phase 2 under PLS RO07-21-087 and RO07-21-085",
    "docs_listed": [
-    "DHSUD License to Sell numbers (PLS RO07-21-085, PLS RO07-21-087)"
+    "developer presentation (Oct 2021) with Tower 3 floor plans by level, 599 units, 26 floors, and printed LTS numbers",
+    "dated construction photo updates on the official CLI page (June, July, Aug 2026)",
+    "agent price lists Sept 2026: Tower 3 studios 21.04 to 26.94 sqm at PHP 3.70m to 4.90m, 1BR 41.48 sqm",
+    "payment plan 10% downpayment over 24 months, 90% bank financing; PHP 20,000 reservation",
+    "virtual tour"
    ],
-   "note": "Pre-selling condominium with two active DHSUD Licenses to Sell per a portal citing DHSUD public records. No completion date, unit count or price is shown, and the portal marks status as estimated.",
+   "note": "Third tower (599 units, 26 floors) of Cebu Landmasters' 1.24 ha Mandtra Residences JV with Ixidor Holdings, launched Q4 2021 and still selling; agents now give a Q2 2027 target while the first tower was originally due in 2025. DHSUD records on REN.PH show both Tower 3 Phase 2 Licenses to Sell (PLS RO07-21-085 and -087) expired on 13 Sept 2024, and the LTS numbers in the developer brochure appear swapped between towers. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 3700000,
     "currency": "PHP",
-    "title": null,
+    "title": "condominium unit title",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": null,
+    "yield_pct": null,
+    "completion": "2027-Q2",
     "permit_claim": true,
-    "permit_number": "PLS RO07-21-085",
-    "plans_published": false,
+    "permit_number": "LS-RO7-21-013",
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "Managed and developed by Cebu Landmasters Inc., a PSE-listed Visayas and Mindanao developer (Philstar, MarketScreener)",
+    "units": 599,
+    "payment_plan": "PHP 20,000 reservation; 10% downpayment over 24 months; 90% bank financing; spot cash 5% discount",
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Developer presentation prints DHSUD LTS LS-RO7-21-087 for Tower 1 and LS-RO7-21-013 for Tower 3. REN.PH (DHSUD public records) lists PLS RO7-21-013 as 'Mandtra Residences' issued 18 Feb 2021 (before the Tower 3 launch), and PLS RO07-21-087 and RO07-21-085 as 'Tower 3 Phase 2' issued 13 Sept 2021; all three are shown as expired (Aug and Sept 2024). The only active record is LS 0000792 under Cebu Landmasters, issued 27 Apr 2023, expiring 31 Mar 2028, project not specified by tower",
+    "escrow": "No escrow or deposit protection published",
+    "progress": "Official CLI page carries dated construction photo sets (30 June, 31 July, 31 Aug 2026); no % published",
+    "plans": "Developer presentation shows Tower 3 residential floor plans by level and unit types",
+    "record": "Cebu Landmasters Inc. is PSE-listed and manages the JV; MarketScreener and Philstar reported the 2021 launch",
+    "returns": "No guaranteed returns from developer; one portal (irealtee) shows an 8% 'expected annual rental yield', not a developer claim"
+   },
+   "verification": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 1,
+   "claims": [
     {
-     "text": "LTS issued in 2021 series while project still listed as pre-selling; portal says status is estimated and should be verified with the developer.",
-     "source": "https://ren.ph/projects/cebu-homegrown-developers-inc-mk7t5e4z/mandtra-residences-tower-3-phase-2-mc-mk7urpor"
+     "claim": "Tower 3 License to Sell is LS-RO7-21-013",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Mandtra"
+    },
+    {
+     "claim": "Tower 3 Phase 2 licences PLS RO07-21-085 and RO07-21-087 are active",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Mandtra"
+    },
+    {
+     "claim": "Developer entity Cebu Homegrown Developers, Inc. holds DHSUD licences for the project",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Mandtra"
+    },
+    {
+     "claim": "JV between Cebu Landmasters Inc. and Ixidor Holdings, managed by CLI",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.marketscreener.com/quote/stock/CEBU-LANDMASTERS-INC-64310128/news/Cebu-Landmasters-Through-Joint-Venture-Cebu-Homegrown-Developers-Inc-Launches-Latest-Condominium-33463217/"
+    },
+    {
+     "claim": "First tower completed in 2025",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://gabrielrealtors.com/property/mandtra-residences-2/"
+    },
+    {
+     "claim": "Target completion Q2 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://gabrielrealtors.com/property/mandtra-residences-2/"
+    },
+    {
+     "claim": "Project completed in September 2024 (portal)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://irealtee.com/properties/mandtra-residences-tower-3-phase-2-1"
+    },
+    {
+     "claim": "Construction under way with dated updates to Aug 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences"
+    },
+    {
+     "claim": "Tower 3 has 599 units on 26 floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf"
+    },
+    {
+     "claim": "Three towers totalling 1,879 units on 1.24 ha (CDN says 2.4 ha)",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://cebudailynews.inquirer.net/560108/mandtra-residences-showroom-opens-in-mandaue-city"
+    },
+    {
+     "claim": "Tower 3 studios priced PHP 3.70m to 4.90m",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ablcrealty.com/properties/mandtra-residences/"
+    },
+    {
+     "claim": "Buyer payments protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Cebu City, Philippines",
+    "developer_company": "Cebu Homegrown Developers, Inc. (JV of Cebu Landmasters Inc. and Ixidor Holdings, Inc.)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Cebu Landmasters Inc. listed on the Philippine Stock Exchange",
+    "construction_start": "2021-03",
+    "handover_promised": "2027-Q2",
+    "original_handover": "2025 (Tower 1, per 2021 launch)",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR"
+    ],
+    "size_min_m2": 21.04,
+    "size_max_m2": 41.48,
+    "price_min": 3700000.0,
+    "price_max": 7216776.0,
+    "currency": "PHP",
+    "deposit_pct": 10.0,
+    "payment_plan": "PHP 20,000 reservation, 10% downpayment over 24 months, 90% bank financing",
+    "foreign_ownership": "Condominium unit; foreign ownership capped at 40% of a condominium project under Philippine law",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "sky garden",
+     "wellness lounge",
+     "fitness gym",
+     "adult and kiddie pools",
+     "jogging paths",
+     "clubhouse and function hall",
+     "children's playground",
+     "chapel"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DHSUD Region VII (License to Sell); Mandaue City (building permit)",
+    "brochure_url": "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf"
+   },
    "positives": [
-    "License to Sell numbers traceable to DHSUD records"
+    "Managed by a PSE-listed developer",
+    "Dated construction photo updates on official page through Aug 2026",
+    "Floor plans and price lists by tower available",
+    "No guaranteed-return language from developer"
+   ],
+   "flags": [
+    {
+     "text": "DHSUD records mirrored on REN.PH show both Tower 3 Phase 2 Licenses to Sell (PLS RO07-21-085 and RO07-21-087) expired on 13 Sept 2024 while Tower 3 units are still marketed as pre-selling; the only active licence (LS 0000792, Cebu Landmasters) does not name a tower.",
+     "source": "https://ren.ph/verify/lts?q=Mandtra"
+    }
    ],
    "sources": [
-    "https://ren.ph/projects/cebu-homegrown-developers-inc-mk7t5e4z/mandtra-residences-tower-3-phase-2-mc-mk7urpor"
+    "https://ablcrealty.com/properties/mandtra-residences/",
+    "https://cebu-for-rent.net/wp-content/uploads/2023/04/Mandtra-Residences-Presmat-TOWER-3-october082021-compressed_compressed-1_compressed.pdf",
+    "https://cebubestestate.com/property/mandtra-residences-in-mandaue-city/",
+    "https://cebudailynews.inquirer.net/560108/mandtra-residences-showroom-opens-in-mandaue-city",
+    "https://gabrielrealtors.com/property/mandtra-residences-2/",
+    "https://irealtee.com/properties/mandtra-residences-tower-3-phase-2-1",
+    "https://ren.ph/projects/cebu-homegrown-developers-inc-mk7t5e4z/mandtra-residences-tower-3-phase-2-mc-mk7urpor",
+    "https://ren.ph/verify/lts?q=Mandtra",
+    "https://www.cebulandmasters.com/properties/condominiums/mandtra-residences",
+    "https://www.marketscreener.com/quote/stock/CEBU-LANDMASTERS-INC-64310128/news/Cebu-Landmasters-Through-Joint-Venture-Cebu-Homegrown-Developers-Inc-Launches-Latest-Condominium-33463217/",
+    "https://www.philstar.com/business/2021/04/04/2088653/cli-launches-new-cebu-condo-project"
    ]
   },
   {
    "slug": "lio-tourism-estate-el-nido",
    "name": "Lio Tourism Estate",
    "developer": "Ten Knots Philippines, Inc.",
-   "area": "El Nido, Palawan",
+   "status": "active",
+   "stage": "off-plan",
+   "area": "Sitio Aplaya, Lio Estate, Brgy. Villa Libertad, El Nido, Palawan",
    "country": "Philippines",
    "market": "Philippines",
-   "url": "https://ren.ph/projects/ten-knots-philippines-inc-mk7rzpa6/lio-tourism-mk7rzpe2",
-   "docs_url": "https://mb.com.ph/tag/seda-lio",
-   "permit_number": "HL 32054",
+   "url": "https://ayalaland.com/estates/lio",
+   "docs_url": "https://ayalaland.com/properties/sitio-aplaya",
+   "permit_number": null,
    "docs_listed": [
-    "DHSUD License to Sell numbers (HL 32054, HL 34289, PLS 04B-007)"
+    "Sitio Aplaya mixed-use lots, pre-selling, from PHP 45.2m, lots from 604 sqm, 113,000 sqm land area (official page)",
+    "Oct 2026 lot inventory: 24 lots of 599 to 815 sqm at PHP 70,500 to 78,500 per sqm before VAT (agent page citing developer price sheet)",
+    "five payment plans, PHP 500,000 reservation, promo terms to 30 Nov 2026 (agent page)",
+    "design guidelines and DCCR: 12 m height limit, setbacks, developer right of first refusal on resale (agent page)",
+    "estate expansion announced 29 June 2026 (Ayala Land)"
    ],
-   "note": "House-and-lot development in El Nido listed as pre-selling with three active Licenses to Sell per DHSUD public records. Completion, units and prices are not shown on the registry page.",
+   "note": "Ayala Land's 320 ha Lio estate in El Nido (sold through subsidiary Ten Knots Philippines) is now pre-selling mixed-use lots in its 16.3 ha Sitio Aplaya district from PHP 45.2m; Ayala announced new estate investments on 29 June 2026, confirmed by Palawan News. The official page prints no License to Sell, but DHSUD records on REN.PH show a temporary licence for Sitio Aplaya (TLS R4B-015, 19 Dec 2025 to 19 Dec 2026) alongside two older active Lio licences. These are land lots, which foreigners cannot own under Philippine law. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 45200000,
     "currency": "PHP",
-    "title": null,
+    "title": "titled land lot (not available to foreign individuals)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": null,
-    "permit_claim": true,
-    "permit_number": "HL 32054",
-    "plans_published": false,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "developer_delivered": "Lio estate established 2014 with operating hotels, The Shops, Kalye Artisano and Lio Airport access (Ayala Land, Palawan News)",
+    "units": 92,
+    "payment_plan": "PHP 500,000 reservation; five plans from spot cash (30% discount) to 5 years, incl. 10-10-80",
+    "price_per_m2": 70500,
+    "progress_updates": false
    },
-   "flags": [],
-   "positives": [
-    "Multiple License to Sell numbers traceable to DHSUD records"
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No licence number on ayalaland.com. REN.PH (DHSUD public records) lists for Ten Knots Philippines: Sitio Aplaya TLS R4B-015 (issued 19 Dec 2025, expires 19 Dec 2026), Lio Tourism Estate HL 34289 (19 Dec 2018, active), Lio Tourism Estates Phases 2A and 3A HL 32054 (9 Dec 2016, active) and an expired LS 0000684",
+    "escrow": "Nothing published",
+    "progress": "No progress figure or dated updates for Sitio Aplaya infrastructure; Palawan News lists terminal, boardwalk and jetty works as planned",
+    "plans": "Developer lot location map and lot inventory with sizes and prices, plus design guidelines, reproduced on an agent page citing developer documents",
+    "record": "Lio estate operating since 2014 under PSE-listed Ayala Land, with hotels and retail in operation (Ayala Land, Palawan News)",
+    "returns": "No guaranteed return; agent page notes a developer claim of 12% yearly lot appreciation since 2015, not a guarantee"
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
+    {
+     "claim": "Sitio Aplaya holds a DHSUD licence to sell (TLS R4B-015)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Ten+Knots"
+    },
+    {
+     "claim": "Temporary licence valid only to 19 Dec 2026",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Ten+Knots"
+    },
+    {
+     "claim": "Earlier Lio phases licensed (HL 32054, HL 34289 active)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://ren.ph/verify/lts?q=Ten+Knots"
+    },
+    {
+     "claim": "Estate size 320 ha (developer pages also say 322 and 325 ha)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://ayalaland.com/estates/lio"
+    },
+    {
+     "claim": "Ayala Land committing new investment to Lio and launching Sitio Aplaya (June 2026)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://palawan-news.com/ayala-land-reimagines-lio-estate-to-capture-el-nidos-long-stay-lifestyle-demand/"
+    },
+    {
+     "claim": "Sitio Aplaya district is 16.3 ha (agent page cites 16.2 ha; official page lists 113,000 sqm land area)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://ayalaland.com/properties/sitio-aplaya"
+    },
+    {
+     "claim": "Lots priced from PHP 45.2m",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ayalaland.com/properties/sitio-aplaya"
+    },
+    {
+     "claim": "Lot values grew 12% a year since 2015",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://hivepropertyhub.com/premium/lio-el-nido-executive-summary.html"
+    },
+    {
+     "claim": "Lots suitable for foreign second-home buyers",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://hivepropertyhub.com/premium/lio-el-nido-executive-summary.html"
+    },
+    {
+     "claim": "Boardwalk, transport terminal and jetty redevelopment to be built",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://palawan-news.com/ayala-land-reimagines-lio-estate-to-capture-el-nidos-long-stay-lifestyle-demand/"
+    },
+    {
+     "claim": "Buyer payments protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ayalaland.com/properties/sitio-aplaya"
+    }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Makati, Philippines",
+    "developer_company": "Ten Knots Philippines, Inc. (licensee per DHSUD records), within Ayala Land",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Ayala Land, Inc. listed on the Philippine Stock Exchange",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "mixed-use lot"
+    ],
+    "size_min_m2": 599.0,
+    "size_max_m2": 815.0,
+    "price_min": 44918000.0,
+    "price_max": 60310000.0,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": "PHP 500,000 reservation; spot cash to 5-year plans",
+    "foreign_ownership": "Land lots; the Philippine Constitution bars foreign individuals from owning land, so a foreigner would need a qualifying Philippine entity or lease",
+    "rental_programme": null,
+    "service_charge": "Lio Tourism Estate Association dues, amount not published",
+    "brand": null,
+    "amenities": [
+     "Lio Beach (4.2 km shoreline)",
+     "3.7 km boardwalk (planned)",
+     "Lio Jetty",
+     "The Shops",
+     "events pavilion",
+     "transport terminal",
+     "nature trails",
+     "near Lio Airport"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DHSUD Region IV-B (MIMAROPA) License to Sell; El Nido municipality (building permits)",
+    "brochure_url": null
+   },
+   "positives": [
+    "Backed by PSE-listed Ayala Land with an operating estate since 2014",
+    "Active DHSUD licences for Lio found in registry mirror",
+    "Lot prices, sizes and design rules available in detail",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
    "sources": [
+    "https://ayalaland.com/blog/ayala-land-boosts-investments-in-lio-estate-el-nido",
+    "https://ayalaland.com/estates/lio",
+    "https://ayalaland.com/properties/sitio-aplaya",
+    "https://hivepropertyhub.com/premium/lio-el-nido-executive-summary.html",
+    "https://mb.com.ph/tag/seda-lio",
+    "https://palawan-news.com/ayala-land-reimagines-lio-estate-to-capture-el-nidos-long-stay-lifestyle-demand/",
+    "https://philstarproperty.com/news/2026/07/17/231273/where-island-living-feels-at-home/",
     "https://ren.ph/projects/ten-knots-philippines-inc-mk7rzpa6/lio-tourism-mk7rzpe2",
-    "https://mb.com.ph/tag/seda-lio"
+    "https://ren.ph/verify/lts?q=Ten+Knots"
    ]
   },
   {
    "slug": "forest-city-johor",
    "name": "Forest City",
    "developer": "Country Garden (60%) with Johor partner",
-   "area": "Gelang Patah, Johor (reclaimed islands)",
+   "status": "completed",
+   "stage": "under construction",
+   "area": "Iskandar Puteri (Gelang Patah), Johor",
    "country": "Malaysia",
    "market": "Malaysia",
-   "url": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city",
-   "docs_url": "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers",
+   "url": "https://theedgemalaysia.com/node/819942",
+   "docs_url": "https://www.ram.com.my/pressrelease/?prviewid=7218",
    "permit_number": null,
-   "docs_listed": [],
-   "note": "Planned US$100bn city on four reclaimed islands launched in 2016 for 700,000 residents; Al Jazeera (Nov 2023) reported about 9,000 residents, 28,000 housing units, about 10% of the project complete and roughly 5,000 units unsold.",
+   "docs_listed": [
+    "developer interview (The Edge, Oct 2026): 26,000 residential units completed in 66 blocks, about 20,000 residents, no new residential launches planned, focus on clearing inventory",
+    "Special Financial Zone tax incentives and JS-SEZ Flagship G status (press)",
+    "418-acre industrial park and planned healthcare hub (press)"
+   ],
+   "note": "Country Garden Pacificview's 7,500-acre reclaimed-island city launched in 2016; in an Oct 2026 interview the developer said 26,000 residential units in 66 blocks are completed, about 20,000 people live there, and no new residential projects will be launched while it clears inventory and shifts to industrial land. RAM Ratings (Mar 2026) said Country Garden Real Estate plans to sell the Forest City subsidiary to group shareholder Concrete Win by mid-2026. No off-plan residential phase is currently marketed. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": null,
@@ -19338,34 +20122,184 @@
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
+    "yield_pct": null,
     "completion": null,
-    "permit_claim": false,
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
-    "progress_pct": 10,
-    "units": null,
-    "developer_delivered": null,
-    "yield_pct": null
+    "progress_pct": null,
+    "developer_delivered": "26,000 residential units completed in 66 blocks on about 770 acres (developer, The Edge Oct 2026); Al Jazeera reported 28,000 units and about 9,000 residents in Nov 2023",
+    "units": 26000,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": false
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No developer licence or advertising permit (APDL) number found. The developer states it holds approvals to sell to foreigners under s.433B National Land Code (The Edge); DoE approved the detailed EIA (The Edge)",
+    "escrow": "Nothing published; Malaysian Housing Development Act projects use a Housing Development Account, but no account were found for Forest City",
+    "progress": "No % or dated updates; residential construction is complete per the developer and the master plan is in a 'third phase' focused on industry",
+    "plans": "No unit plans found for any current offering",
+    "record": "Developer-reported 26,000 completed units; Al Jazeera independently reported 28,000 housing units built and 700 acres completed (2023)",
+    "returns": "No guaranteed rental return found"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
     {
-     "text": "About 10% of the project complete and ~9,000 residents against a 700,000 target as of Nov 2023.",
+     "claim": "26,000 residential units completed",
+     "status": "verified",
+     "by": "independent",
      "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
     },
     {
-     "text": "Majority shareholder Country Garden missed a US$15.4m dollar-bond interest payment in Oct 2023 with about US$186bn in liabilities.",
+     "claim": "About 20,000 residents live in Forest City (developer, 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theedgemalaysia.com/node/819942"
+    },
+    {
+     "claim": "Planned city for 700,000 residents by 2035",
+     "status": "contradicted",
+     "by": "independent",
      "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
     },
     {
-     "text": "In 2018 the Malaysian government said foreigners would not be eligible to buy/live there, a policy later softened.",
+     "claim": "Only about 10% (700 acres) of the project completed as of 2023",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+    },
+    {
+     "claim": "Foreigners can buy units with state approval under s.433B National Land Code",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://theedgemalaysia.com/article/country-garden-forest-city-has-complied-all-laws-and-regulations"
+    },
+    {
+     "claim": "Government barred foreigners from buying (Aug 2018 statement by PM Mahathir)",
+     "status": "verified",
+     "by": "independent",
      "source": "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers"
+    },
+    {
+     "claim": "Developer is a 60:40 JV of Country Garden and Esplanade Danga 88",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://theedgemalaysia.com/node/819942"
+    },
+    {
+     "claim": "Forest City subsidiary to be sold by Country Garden Real Estate to Concrete Win by mid-2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.ram.com.my/pressrelease/?prviewid=7218"
+    },
+    {
+     "claim": "Forest City designated Special Financial Zone and JS-SEZ Flagship G",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://theedgemalaysia.com/node/819942"
+    },
+    {
+     "claim": "No new residential launches planned",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theedgemalaysia.com/node/819942"
+    },
+    {
+     "claim": "Detailed EIA approved by the Department of Environment",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://theedgemalaysia.com/article/country-garden-receives-doe-approval-forest-city-project"
     }
    ],
-   "positives": [],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Iskandar Puteri, Johor, Malaysia",
+    "developer_company": "Country Garden Pacificview Sdn Bhd (JV of Country Garden Holdings and Esplanade Danga 88 Sdn Bhd)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": 26000.0,
+    "listed_or_audited": "Parent Country Garden Holdings listed in Hong Kong; RAM Ratings rates Country Garden Real Estate Sdn Bhd sukuk B1 (Mar 2026)",
+    "construction_start": "2016",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "villa",
+     "cluster home"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold or leasehold strata title subject to Johor state approval for foreign buyers (s.433B National Land Code)",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "duty-free zone",
+     "golf courses",
+     "golf hotel",
+     "beach and water park",
+     "shuttle to Second Link CIQ"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Johor state authority / Majlis Bandaraya Iskandar Puteri; KPKT developer licence",
+    "brochure_url": null
+   },
+   "positives": [
+    "Large completed stock: 26,000 units built (developer), with independent press confirming tens of thousands of units",
+    "Special Financial Zone tax incentives in force",
+    "Country Garden Real Estate rating upgraded to B1 stable by RAM (Mar 2026)"
+   ],
+   "flags": [
+    {
+     "text": "Al Jazeera reported in Nov 2023 that about 9,000 people lived in 28,000 units, about 10% of the project was complete and about 5,000 units were unsold.",
+     "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+    },
+    {
+     "text": "Majority shareholder Country Garden missed a US dollar bond interest payment in Oct 2023 amid about US$186bn of liabilities, per Al Jazeera.",
+     "source": "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city"
+    },
+    {
+     "text": "In Aug 2018 then PM Mahathir said foreigners would not be allowed to buy residential units or get visas to live there; the developer said it had approvals to sell to foreigners.",
+     "source": "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers"
+    },
+    {
+     "text": "In July 2026 the home ministry opened an investigation into the Network School, a private community operating in Forest City; the developer said it would cooperate.",
+     "source": "https://www.freemalaysiatoday.com/category/nation/2026/07/15/forest-city-developer-ready-to-cooperate-in-network-school-probe"
+    }
+   ],
    "sources": [
+    "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers",
+    "https://theedgemalaysia.com/article/country-garden-forest-city-has-complied-all-laws-and-regulations",
+    "https://theedgemalaysia.com/article/country-garden-receives-doe-approval-forest-city-project",
+    "https://theedgemalaysia.com/node/819942",
     "https://www.aljazeera.com/news/2023/11/23/how-a-focus-on-chinese-buyers-doomed-malaysias-forest-city",
-    "https://edgeprop.sg/property-news/malaysia-bars-foreigners-forest-city-project-drew-chinese-buyers"
+    "https://www.freemalaysiatoday.com/category/nation/2026/07/15/forest-city-developer-ready-to-cooperate-in-network-school-probe",
+    "https://www.ram.com.my/pressrelease/?prviewid=7218"
    ]
   },
   {
@@ -19771,46 +20705,191 @@
    "country": "Thailand",
    "market": "Bangkok",
    "url": "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702",
-   "docs_url": null,
-   "permit_number": null,
+   "docs_url": "https://www.sansiri.com/condominium/widen-by-sansiri/th/",
+   "permit_number": "EIA approval กท 1104/794 (11 Apr 2025, report 256709-48, registered as 'HAUS Nang Linchi')",
    "docs_listed": [
-    "unit count and floors",
-    "completion month",
-    "foreign quota availability",
-    "unit prices"
+    "Sansiri project page: 1 building, 34 floors, 215 units, land about 2 rai 90 sq.wah, 105% parking, price from THB 8.59M (promotion)",
+    "Sansiri project progress page: update 8 Oct 2026, EIA approved, construction permit issued, expected completion February 2028",
+    "joint venture with Tokyu Development (Thailand)",
+    "unit types 1BR 45.25 m2 to 3BR 209.75 m2 (agent)",
+    "portal: foreign quota units, prices THB 9.3M to 32.9M"
    ],
-   "note": "Off-plan 34-floor condominium with 215 units, completion listed as May 2028; portal units range from THB 9.3m to 32.9m and are tagged foreign quota. No EIA status is shown on the listing.",
+   "note": "34-floor, 215-unit Sansiri and Tokyu joint-venture condo on Nang Linchi Road, Sathon, from THB 8.59M with completion February 2028; the ONEP register confirms its Bangkok EIA (กท 1104/794, 11 Apr 2025) under the working name HAUS Nang Linchi, owner Siri TK Seven Co., Ltd., and Sansiri's progress page (8 Oct 2026) says the construction permit is issued, but no permit number or escrow is published (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "under construction",
    "seed": {
-    "price": 9300000,
+    "price": 8590000,
     "currency": "THB",
-    "title": "foreign quota",
+    "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q2 2028",
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2028-Q1",
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Sansiri PCL (SET: SIRI), listed developer; ONEP shows earlier Sansiri joint-venture condos (e.g. Taka Haus by Siri TK One, The Base Sukhumvit 50) handed to their condominium juristic persons",
     "units": 215,
-    "developer_delivered": "Sansiri (listed Thai developer)",
-    "yield_pct": null
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "developer"
+   },
+   "verified_score": 2,
+   "evidence": {
+    "permit": "Sansiri states the EIA is approved and the construction permit issued, with no numbers. ONEP lists report 256709-48 'HAUS Nang Linchi', Nang Linchi Road, Thung Maha Mek, Sathon, owner Siri TK Seven Co., Ltd. (0105566076792, registered 11 Apr 2023, active), approval กท 1104/794 dated 11/04/2568 (11 Apr 2025); the agent portal TookTee names Siri TK Seven as Widen's developer company",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+    "progress": "Sansiri project progress page updated 8 Oct 2026 (no percentage in page text) with expected completion February 2028; ONEP status still reads 'not yet constructed', which conflicts with the developer's statement that the construction permit is issued. Construction start July 2025 per agent Richmonts",
+    "plans": "Unit types and sizes published (agent and portal floor plans); Sansiri page shows project details",
+    "record": "Sansiri PCL is SET-listed; ONEP lists earlier Siri TK joint-venture condos such as Taka Haus (report 11128) and The Base Sukhumvit 50 (report 11990) with condominium juristic persons as owners",
+    "returns": "No guaranteed return language"
+   },
+   "claims": [
     {
-     "text": "Listing does not state EIA approval status for an off-plan high-rise.",
+     "claim": "EIA approved",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=14204"
+    },
+    {
+     "claim": "Project company Siri TK Seven Co., Ltd. registered and active",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=10556"
+    },
+    {
+     "claim": "Construction permit issued and construction under way",
+     "status": "contradicted",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=14204"
+    },
+    {
+     "claim": "Expected completion February 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "215 units in a 34-storey tower",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://homeday.co.th/articles/news/sansiri-20250818"
+    },
+    {
+     "claim": "Joint venture with Tokyu Development (Thailand)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://en.moneyandbanking.co.th/2025/198411/"
+    },
+    {
+     "claim": "Prices from THB 8.59M (promotion; launch price THB 8.9M)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/widen-by-sansiri/th/"
+    },
+    {
+     "claim": "Earlier Sansiri joint-venture condos completed and registered",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/services/web/open-api/eia-list"
+    },
+    {
+     "claim": "Foreign quota units available",
+     "status": "unverified",
+     "by": "none",
      "source": "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/widen-by-sansiri/th/"
     }
    ],
+   "facts": {
+    "developer_founded": 1984.0,
+    "developer_hq": "Bangkok, Thailand",
+    "developer_company": "Siri TK Seven Co., Ltd., 0105566076792 (registered 11 Apr 2023), Sansiri PCL joint venture with Tokyu Development (Thailand)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Sansiri PCL listed on the Stock Exchange of Thailand (SIRI)",
+    "construction_start": "2025-07",
+    "handover_promised": "2028-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "2BR plus",
+     "3BR",
+     "Signature Suite"
+    ],
+    "size_min_m2": 45.25,
+    "size_max_m2": 209.75,
+    "price_min": 8590000.0,
+    "price_max": 49900000.0,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold condominium unit within the 49% foreign quota",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "Sansiri",
+    "amenities": [
+     "25 m infinity pool with Bang Kachao view",
+     "pet playground",
+     "putting green",
+     "sauna and steam",
+     "co-living lounge",
+     "fitness",
+     "EV charging",
+     "24-hour security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Bangkok Metropolitan Administration EIA committee (กท) and Sathon district office (building permit)",
+    "brochure_url": null
+   },
    "positives": [
-    "Listed developer",
-    "Foreign-quota units identified",
-    "Unit count, floors and completion month stated"
+    "Bangkok EIA approval confirmed on the ONEP register",
+    "SET-listed developer with completed joint-venture condos listed on the register",
+    "Developer publishes a dated project progress page with permit status",
+    "Unit count, floors, land size and parking published"
    ],
+   "flags": [],
    "sources": [
-    "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702"
+    "https://eia.onep.go.th/eia/detail?id=14204",
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=10556",
+    "https://eia.onep.go.th/services/web/open-api/eia-list",
+    "https://en.moneyandbanking.co.th/2025/198411/",
+    "https://homeday.co.th/articles/news/sansiri-20250818",
+    "https://tanacityhome.tooktee.com/en/project/15399/?l=en",
+    "https://www.fazwaz.com/property-sales/3-bedroom-condo-for-sale-at-widen-by-sansiri-in-thung-mahamek-bangkok-u6151702",
+    "https://www.richmonts.com/our-properties/thailand/new-developments/widen-by-sansiri",
+    "https://www.sansiri.com/condominium/widen-by-sansiri/th/",
+    "https://www.sansiri.com/projectprogress/en/",
+    "https://www.thaipr.net/estate/3646317"
    ]
   },
   {
@@ -19821,49 +20900,174 @@
    "country": "Thailand",
    "market": "Hua Hin",
    "url": "https://kellerhenson.com/project/the-chatt-huahin-pran",
-   "docs_url": null,
+   "docs_url": "https://www.chattassets.com/",
    "permit_number": null,
    "docs_listed": [
-    "unit count",
-    "villa prices",
-    "ownership structure for foreigners",
-    "milestone payment description"
+    "developer site: 78 units (80 on an older page) on 42.2 rai, Soi Wang Phong 12, Pranburi",
+    "3-bed 3-bath villa floor plan: indoor 150.8 m2, outdoor 73.7 m2, pool 8x4 m",
+    "solar package, AAC walls (developer)",
+    "agent: prices THB 8.9M-13.4M, 3BR 306.5 m2 and 4BR 332 m2 built, completion Q2 or Q3 2027",
+    "agent: freehold or leasehold (30+30+30) for foreigners, THB 100,000 booking"
    ],
-   "note": "78 private pool villas priced THB 8.9m-13.4m with completion listed for 2027; foreigners are offered a 30-year lease renewable twice. The agency page does not mention permits or developer track record.",
+   "note": "78 private pool villas on about 42 rai off Soi Wang Phong 12, Pranburi, launched on 9 January 2026 by Chatt Asset Co., Ltd. with prices of about THB 9M to 20M and 30-year leases for foreigners; the developer site publishes a villa floor plan but no permit, price, completion date, escrow or progress, agent and portal pages disagree on sizes, unit count and completion (Q2 or Q3 2027 versus a portal's 'completed May 2025'), and the earlier projects the director cites are not named (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": 8900000,
     "currency": "THB",
-    "title": "leasehold",
+    "title": "leasehold for foreigners (freehold for Thai buyers)",
     "lease_base": 30,
-    "extension": true,
+    "extension": "Two 30-year renewals offered contractually (agent page)",
     "guaranteed_language": false,
-    "completion": "Q3 2027",
+    "yield_pct": null,
+    "completion": "2027-Q3",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
-    "units": 78,
     "developer_delivered": null,
-    "yield_pct": null
+    "units": 78,
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": null
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "developer"
+   },
+   "verified_score": 0,
+   "evidence": {
+    "permit": "No land allocation licence or building permit number published; 78 plots on about 42 rai is below the EIA threshold, but a provincial land allocation permit would normally apply to a 78-plot estate and none is cited",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+    "progress": "No construction progress published; Hua Hin Today reports the launch with a show villa on 9 Jan 2026",
+    "plans": "Developer site shows the 3-bed villa floor plan and areas",
+    "record": "Hua Hin Today quotes the managing director saying earlier projects in Ao Nang (Krabi) and Bang Pa-in (Ayutthaya) sold out; no names or registry records found",
+    "returns": "No guaranteed return language; agent page refers generally to Airbnb rental potential"
+   },
+   "claims": [
     {
-     "text": "Page gives conflicting completion (Q2 vs Q3 2027), price-per-sqm and plot-size figures.",
+     "claim": "78 pool villas on about 43 rai, launched 9 January 2026",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/"
+    },
+    {
+     "claim": "Developer Chatt Asset Co., Ltd. (Thanapat Phatsarueang, MD)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://huahinsarn.com/20260110a/"
+    },
+    {
+     "claim": "Prices THB 8.9M-13.4M",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/"
+    },
+    {
+     "claim": "Completion Q3 2027",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.fazwaz.com/projects/thailand/prachuap-khiri-khan/pran-buri/wang-phong/the-chatt-hua-hin-pran"
+    },
+    {
+     "claim": "Built area 306.5-332 m2 with 3 and 4 bedroom types",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.chattassets.com/"
+    },
+    {
+     "claim": "Earlier projects in Ao Nang and Bang Pa-in fully sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/"
+    },
+    {
+     "claim": "30-year lease renewable twice for foreigners",
+     "status": "unverified",
+     "by": "none",
      "source": "https://kellerhenson.com/project/the-chatt-huahin-pran"
     },
     {
-     "text": "Foreign buyers get leasehold with renewals (30+30+30) rather than registered freehold; renewals are contractual.",
-     "source": "https://kellerhenson.com/project/the-chatt-huahin-pran"
+     "claim": "Land allocation or building permit obtained",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.chattassets.com/"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.chattassets.com/"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Pranburi, Prachuap Khiri Khan, Thailand",
+    "developer_company": "Chatt Asset Co., Ltd. (registration number not published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3BR villa",
+     "4BR villa"
+    ],
+    "size_min_m2": 150.8,
+    "size_max_m2": 332.0,
+    "price_min": 8900000.0,
+    "price_max": 20000000.0,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": "THB 100,000 booking deposit, then milestone payments (agent)",
+    "foreign_ownership": "Leasehold up to 30 years (renewals contractual); freehold for Thai buyers",
+    "rental_programme": null,
+    "service_charge": "CAM THB 5/m2 per month, first year free (agent)",
+    "brand": null,
+    "amenities": [
+     "private 8x4 m saltwater pool",
+     "outdoor dining pavilion",
+     "solar energy package",
+     "gated estate with 24/7 security",
+     "CCTV"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Prachuap Khiri Khan provincial land allocation committee; Wang Phong subdistrict administration (building permit)",
+    "brochure_url": null
+   },
    "positives": [
-    "Prices and unit count published",
-    "Ownership structure disclosed"
+    "Villa floor plan with areas published by the developer",
+    "Launch, unit count and site size reported by local press",
+    "Ownership structure for foreigners disclosed (leasehold)"
    ],
+   "flags": [],
    "sources": [
-    "https://kellerhenson.com/project/the-chatt-huahin-pran"
+    "https://centuryhuahin.com/prachuap-khiri-khan/project/the-chatt-luxury-pool-villa-15501",
+    "https://huahinsarn.com/20260110a/",
+    "https://huahintoday.com/real-estate-property/the-chatt-pool-villa-project-launches-in-pranburi/",
+    "https://kellerhenson.com/project/the-chatt-huahin-pran",
+    "https://www.chattassets.com/",
+    "https://www.chattassets.com/thechatt-huahin",
+    "https://www.fazwaz.com/projects/thailand/prachuap-khiri-khan/pran-buri/wang-phong/the-chatt-hua-hin-pran"
    ]
   },
   {
@@ -19874,45 +21078,176 @@
    "country": "Thailand",
    "market": "Krabi",
    "url": "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo",
-   "docs_url": null,
+   "docs_url": "https://suksanhomes.com/products/suksan-village",
    "permit_number": null,
    "docs_listed": [
-    "unit count",
-    "price range",
-    "payment terms",
-    "completion quarter"
+    "developer page now titled 'Suksan Village', Ao Nang (Sunpao Village per developer blog Jun 2025 and agents)",
+    "1BR from THB 4.9M (92.12 m2 built), 2BR from THB 9.9M (234.42 m2), 3BR from THB 12.6M (259.31 m2)",
+    "masterplan and specifications per type",
+    "rental programme and '6-10% annual rental return' wording",
+    "developer financing: 50% at purchase, balance up to 36 months at 0% (promotion page)",
+    "agent: 18 units (4 SOLO, 7 DUO, 7 villas), THB 200,000 booking, 30% down, 70% on completion, completion Q3 2027"
    ],
-   "note": "18-unit, two-storey project with units from THB 4.9m to 12.6m and completion listed for Q3 2027; terms are a THB 200,000 booking fee, 30% down and 70% on completion.",
+   "note": "18 private-pool lofts and villas below the Ao Nang cliffs, now sold on the developer site as Suksan Village from THB 4.9M (1-bed, 92 m2) with developer financing; agents give completion Q3 2027, but the developer publishes no permit, escrow, completion date or progress, and its delivery record (Villa Sunpao phases in Phuket, '80 villas sold') is stated only by the developer and portals (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
     "price": 4900000,
     "currency": "THB",
-    "title": null,
+    "title": "leasehold (freehold option on some villas per agent)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q3 2027",
+    "yield_pct": null,
+    "completion": "2027-Q3",
     "permit_claim": false,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "Suksan Homes / The Suksan Group: developer blog cites earlier Villa Sunpao phases in Rawai and Layan (Phuket); homepage says over 80 villas designed and sold and 34,000 m2 built in 20 years",
     "units": 18,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": "Agent: THB 200,000 booking, 30% down, 70% on completion; developer promotion: 50% at purchase and balance over up to 36 months at 0%",
+    "price_per_m2": 53191,
+    "progress_updates": null
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "verified_score": 0,
+   "evidence": {
+    "permit": "No permit or licence number published; 18 villas, below the EIA threshold",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published; developer financing means buyers pay the developer directly ('payments to the developer and no bureaucracy')",
+    "progress": "No construction progress published; agent says 'phased construction underway' without dates",
+    "plans": "Masterplan and per-type specifications with indoor/outdoor areas. Agent prices differ (SOLO THB 5.9M-6.2M, villas THB 13.5M-16.9M on one page, THB 4.9M-12.6M on another)",
+    "record": "Developer blog: Sunpao Village follows the Villa Sunpao concept 'which saw great success in Phuket's Rawai and Layan areas'; homepage: 'designed and sold over 80 villas', '34,000 sqm of property' in 20 years; asia.villas portal says Villa Sunpao at Layan was sold and delivered within 20 months. No registry or press confirmation found",
+    "returns": "'6-10% Annual Rental Return' and '5-10% annual appreciation' presented as market expectations; no guarantee"
+   },
+   "claims": [
     {
-     "text": "Title type for foreign buyers, permits and construction status not stated; unit is labelled condo while project is labelled villa.",
+     "claim": "18 units (4 SOLO, 7 DUO, 7 villas)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kellerhenson.com/project/sunpao-village-krabi"
+    },
+    {
+     "claim": "Prices from THB 4.9M",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://kellerhenson.com/project/sunpao-village-krabi"
+    },
+    {
+     "claim": "Completion Q3 2027",
+     "status": "unverified",
+     "by": "none",
      "source": "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo"
+    },
+    {
+     "claim": "Developer with over 20 years and 80+ villas sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://suksanhomes.com/"
+    },
+    {
+     "claim": "Villa Sunpao Layan sold and delivered",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.asia.villas/projects/thailand/krabi/mueang-krabi/nong-thale/villa-sunpao-ao-nang"
+    },
+    {
+     "claim": "6-10% annual rental return",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://suksanhomes.com/products/suksan-village"
+    },
+    {
+     "claim": "Foreign ownership through secure long-term land rights (leasehold)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://suksanhomes.com/products/suksan-village"
+    },
+    {
+     "claim": "Building permit obtained",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://suksanhomes.com/products/suksan-village"
+    },
+    {
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://suksanhomes.com/pages/promotion"
     }
    ],
+   "facts": {
+    "developer_founded": 2007.0,
+    "developer_hq": "21/3 Moo 6 Baan Layan Rd, Choeng Thale, Thalang, Phuket, Thailand",
+    "developer_company": "Suksan Homes / The Suksan Group (legal entity and registration number not published)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR loft (SOLO)",
+     "2BR loft (DUO)",
+     "3BR villa"
+    ],
+    "size_min_m2": 92.12,
+    "size_max_m2": 305.59,
+    "price_min": 4900000.0,
+    "price_max": 16900000.0,
+    "currency": "THB",
+    "deposit_pct": 30.0,
+    "payment_plan": "THB 200,000 booking, 30% down, 70% on completion (agent); or 50% plus up to 36 months 0% developer financing (promotion)",
+    "foreign_ownership": "Leasehold (freehold structures offered on some villas per agent)",
+    "rental_programme": "Suksan Homes rental and property management; '6-10% annual rental return' market wording",
+    "service_charge": "THB 30-40/m2 common fee (agent)",
+    "brand": null,
+    "amenities": [
+     "private pools",
+     "gated community",
+     "BBQ area",
+     "landscaped gardens",
+     "CCTV and 24/7 security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Ao Nang subdistrict administration (building permit); Krabi Land Office (lease registration)",
+    "brochure_url": null
+   },
    "positives": [
-    "70% of price payable only on completion",
-    "Price range and unit count published"
+    "Prices and built areas per unit type published by the developer",
+    "Masterplan and specifications published",
+    "70% of price payable only on completion under the agent's terms"
    ],
+   "flags": [],
    "sources": [
-    "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo"
+    "https://kellerhenson.com/project/sunpao-village-krabi",
+    "https://kellerhenson.com/unit/sunpao-village-krabi-1br-loft-solo",
+    "https://suksanhomes.com/",
+    "https://suksanhomes.com/blogs/magazine/sunpao-village-krabi-a-new-chapter-in-tropical-elegance",
+    "https://suksanhomes.com/pages/promotion",
+    "https://suksanhomes.com/products/suksan-village",
+    "https://www.asia.villas/projects/thailand/krabi/mueang-krabi/nong-thale/villa-sunpao-ao-nang"
    ]
   },
   {
@@ -19923,49 +21258,195 @@
    "country": "Thailand",
    "market": "Chiang Mai",
    "url": "https://kellerhenson.com/project/astra-infinite",
-   "docs_url": null,
-   "permit_number": null,
+   "docs_url": "https://ornsirin.co.th/en/property-item/the-astra-infinite/",
+   "permit_number": "EIA approval ทส 1009.5/2041 (2 Feb 2026, report 256811-27, registered as 'ASTRA Chang Klan 3')",
    "docs_listed": [
-    "unit count and floors",
-    "foreign quota (49%)",
-    "price range",
-    "payment terms"
+    "Ornsirin project page: studio 30 m2, 1BR 36 m2, 1BR plus 40 m2, 2BR 57 m2, 3BR 96 m2 plans; from THB 3.1M",
+    "360 tour listing 421 units by floor",
+    "ORN press: 16 floors, 421 units, over 5 rai, value THB 1,812M, EIA approved, EDGE standard",
+    "ORN press 2 Oct 2026: pile-driving ceremony, presale over 60%, completion 2028",
+    "agent: freehold within 49% foreign quota, completion Q3 2028"
    ],
-   "note": "16-floor, 421-unit condominium with completion listed for Q3 2028; prices roughly THB 3m-20m and foreign freehold within the 49% quota. No EIA status is mentioned.",
+   "note": "16-floor, 421-unit condo in the Chang Klan-Rakaeng area of Chiang Mai by SET-listed Ornsirin Holding (developer company North Home Co., Ltd.) from THB 3.1M; the ONEP register confirms its EIA (ทส 1009.5/2041, 2 Feb 2026, as ASTRA Chang Klan 3) and lists North Home's earlier Astra condos as operating, and the developer held the pile-driving ceremony in October 2026 with completion due in 2028, but no permit number or escrow is published (checked 1 Nov 2026)",
    "added": "2026-10-30",
+   "status": "active",
+   "stage": "off-plan",
    "seed": {
-    "price": 3000000,
+    "price": 3100000,
     "currency": "THB",
-    "title": "foreign quota",
+    "title": "freehold",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "Q3 2028",
-    "permit_claim": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": true,
     "permit_number": null,
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
+    "developer_delivered": "North Home Co., Ltd. (Ornsirin Group): The Astra and The Astra Sky River condominiums in Chang Klan listed as opened and operating on the ONEP register",
     "units": 421,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "developer"
+   },
+   "verified_score": 2,
+   "evidence": {
+    "permit": "Ornsirin states 'EIA Approved' with no number. ONEP lists report 256811-27 'ASTRA Chang Klan 3', Rakaeng Road, Chang Klan, Mueang Chiang Mai, owner North Home Co., Ltd. (0505531000630, registered 1 Jun 1988, active), approval letter ทส 1009.5/2041 dated 02/02/2569 (2 Feb 2026); ONEP status 'not yet constructed'",
+    "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+    "progress": "Ornsirin news (2 Oct 2026): pile-driving ceremony to start construction, presale above 60%, completion within 2028; no percentage",
+    "plans": "Unit plans with sizes for five types on the developer page and a 360 tour by floor",
+    "record": "ONEP lists North Home's 'The Astra' (report 7331) and 'ASTRA-Sky River' (report 15147, now owned by its condominium juristic person) as opened and operating; Ornsirin Holding is SET-listed (ORN)",
+    "returns": "No guaranteed return language"
+   },
+   "claims": [
     {
-     "text": "Page gives three different payment schedules (70%, 75% or 90% on transfer).",
+     "claim": "EIA approved",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=15527"
+    },
+    {
+     "claim": "Developer North Home Co., Ltd. registered and active",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=3352"
+    },
+    {
+     "claim": "North Home delivered The Astra condominium",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=5333"
+    },
+    {
+     "claim": "North Home delivered The Astra Sky River",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://eia.onep.go.th/eia/detail?id=10127"
+    },
+    {
+     "claim": "Construction started (pile-driving, Oct 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/"
+    },
+    {
+     "claim": "Completion 2028 (Q3 per agent)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/"
+    },
+    {
+     "claim": "421 units on 16 floors",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.chiangmainews.co.th/landandhouse/%e0%b8%ad%e0%b8%aa%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%b4%e0%b8%a1%e0%b8%97%e0%b8%a3%e0%b8%b1%e0%b8%9e%e0%b8%a2%e0%b9%8c/3936963/"
+    },
+    {
+     "claim": "Presale above 60%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/"
+    },
+    {
+     "claim": "Prices from THB 3.1M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ornsirin.co.th/en/the-astra-infinite-pre-sale/"
+    },
+    {
+     "claim": "Freehold within the 49% foreign quota",
+     "status": "unverified",
+     "by": "none",
      "source": "https://kellerhenson.com/project/astra-infinite"
     },
     {
-     "text": "No EIA approval mentioned for a 421-unit building; track record asserted without named projects.",
-     "source": "https://kellerhenson.com/project/astra-infinite"
+     "claim": "Deposits protected by escrow",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ornsirin.co.th/en/property-item/the-astra-infinite/"
     }
    ],
+   "facts": {
+    "developer_founded": 1988.0,
+    "developer_hq": "Chiang Mai, Thailand",
+    "developer_company": "North Home Co., Ltd., 0505531000630 (registered 1 Jun 1988), Ornsirin Holding PCL group",
+    "developer_projects_delivered": 2.0,
+    "developer_units_delivered": null,
+    "listed_or_audited": "Ornsirin Holding PCL listed on the Stock Exchange of Thailand (ORN)",
+    "construction_start": "2026-10",
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1BR",
+     "1BR plus",
+     "2BR",
+     "3BR"
+    ],
+    "size_min_m2": 29.54,
+    "size_max_m2": 95.93,
+    "price_min": 3100000.0,
+    "price_max": 20000000.0,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold condominium unit within the 49% foreign quota",
+    "rental_programme": null,
+    "service_charge": null,
+    "brand": "The Astra (Ornsirin)",
+    "amenities": [
+     "rooftop pool",
+     "sky lounge",
+     "co-working",
+     "180-degree fitness",
+     "green areas on floors 1 and 3",
+     "PM2.5 air filtration",
+     "24-hour security"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "ONEP (EIA approval); Chiang Mai City Municipality (building permit)",
+    "brochure_url": null
+   },
    "positives": [
-    "Foreign-quota freehold stated",
-    "Named developer entity and parent group"
+    "EIA approval confirmed on the ONEP register",
+    "Developer's earlier Chang Klan condominiums listed as operating on the register",
+    "Parent company SET-listed",
+    "Unit plans with sizes published and construction start dated"
    ],
+   "flags": [],
    "sources": [
-    "https://kellerhenson.com/project/astra-infinite"
+    "https://eia.onep.go.th/eia/detail?id=10127",
+    "https://eia.onep.go.th/eia/detail?id=15527",
+    "https://eia.onep.go.th/eia/detail?id=5333",
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=3352",
+    "https://kellerhenson.com/project/astra-infinite",
+    "https://ornsirin.co.th/en/property-item/the-astra-infinite/",
+    "https://ornsirin.co.th/en/the-astra-infinite-pre-sale-60-percent/",
+    "https://ornsirin.co.th/en/the-astra-infinite-pre-sale/",
+    "https://the-astra-infinite-360.ornsirin.co.th/",
+    "https://www.chiangmainews.co.th/landandhouse/%e0%b8%ad%e0%b8%aa%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%b4%e0%b8%a1%e0%b8%97%e0%b8%a3%e0%b8%b1%e0%b8%9e%e0%b8%a2%e0%b9%8c/3936963/"
    ]
   },
   {
@@ -21365,148 +22846,625 @@
    "slug": "molum-hotel-residences-dalmatia",
    "name": "Molum Hotel & Residences",
    "developer": "Jako Andabak (investor)",
-   "area": "Sv. Filip i Jakov, near Zadar, Dalmatia",
+   "status": "completed",
+   "stage": "completed",
+   "area": "Sveti Filip i Jakov, near Zadar, Dalmatia",
    "country": "Croatia",
    "market": "Croatia",
-   "url": "https://total-croatia-news.com/news/business/molum-hotel-residences/",
-   "docs_url": null,
+   "url": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140",
+   "docs_url": "https://total-croatia-news.com/news/business/molum-hotel-residences/",
    "permit_number": null,
    "docs_listed": [
-    "residence count (60 in six buildings)",
-    "scheduled completion (July 2024, per Nov 2023 article)",
-    "selling agency named (Regent Real Estate)"
+    "60 hotel rooms and 60 residences in six buildings, 12,000 m2 of buildings on 25,000 m2 of grounds",
+    "opened at Easter 2025 with 5-star categorisation confirmed by the Ministry of Tourism; formal opening 8 Jul 2025",
+    "investment EUR 23m by Sunčani Resort (Andabak family)",
+    "residences sold as condominium units under a leaseback to the resort",
+    "manager-guaranteed minimum return: 4% a year (Nov 2023) then 5% a year (2025) of the investment for four years, to end 2027",
+    "original opening target July 2024",
+    "adjacent Molum Marine Club, 127 berths in phase one"
    ],
-   "note": "Serviced residences within a planned 5-star resort, sold furnished for tourist rental in the complex. The Nov 2023 article reports a manager-guaranteed minimum annual return of 4% of purchase price for the first four years; current completion status was not verified.",
+   "note": "Five-star resort by Sunčani Resort (Jako Andabak family) with 60 hotel rooms and 60 leaseback residences, opened in spring 2025 (about nine months after the July 2024 target) and formally inaugurated in July 2025, so the project is completed. Residences are still sold with a manager-guaranteed minimum return, reported as 4% a year in 2023 and 5% a year in 2025, for four years to end 2027. No prices, permit number or floor plans are published. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
     "price": null,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold (condominium / etažno vlasništvo)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": true,
-    "completion": "July 2024 (scheduled, per 2023 article)",
+    "yield_pct": 5,
+    "completion": "2025-Q2",
     "permit_claim": false,
     "permit_number": null,
     "plans_published": false,
     "escrow": null,
-    "progress_pct": null,
+    "progress_pct": 100,
+    "developer_delivered": "Sunčani Resort / Andabak family described in press as owner of many hotel and tourism projects across Croatia; Molum itself opened 2025 (HINA)",
     "units": 60,
-    "developer_delivered": null,
-    "yield_pct": 4
+    "payment_plan": null,
+    "price_per_m2": null,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 2,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "No building permit number published; local press mentions a building permit for the adjoining port (127 berths) only",
+    "escrow": "No escrow or bank guarantee stated; resort is now complete",
+    "progress": "Completed and operating: 5-star categorisation confirmed by Ministry of Tourism (057info, Apr 2025) and formal opening reported by state agency HINA (8 Jul 2025)",
+    "plans": "No floor plans or unit sizes published in any source opened",
+    "record": "HINA confirms EUR 23m investment by Sunčani Resort and opening; Andabak family's wider hotel portfolio is described in press but not itemised",
+    "returns": "Manager 'guarantees a minimum annual return' of 4% (2023 article) or 5% (2025 articles) of the investment for the first four years to end 2027"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns": "none"
+   },
+   "verified_score": 2,
+   "claims": [
     {
-     "text": "Marketed with a manager-guaranteed minimum 4% annual return for the first four years (until end of 2027); the guarantor entity is not named.",
+     "claim": "Resort opening scheduled for July 2024",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+    },
+    {
+     "claim": "Resort opened and formally inaugurated in 2025",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.hina.hr/news/12000547"
+    },
+    {
+     "claim": "Five-star categorisation",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+    },
+    {
+     "claim": "Investment of EUR 23m by Sunčani Resort",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.hina.hr/news/12000547"
+    },
+    {
+     "claim": "60 residences in six buildings",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://slobodnadalmacija.hr/dalmacija/zadar/regional/jako-andabak-otvorio-resort-u-sv-filipu-i-jakovu-luksuzni-smjestaj-dobit-ce-i-nauticku-marinu-prodaju-se-i-rezidencije-1478951"
+    },
+    {
+     "claim": "Guaranteed minimum return 4% a year until end 2027",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
+    },
+    {
+     "claim": "Guaranteed minimum return 5% a year for four years to end 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.poslovni.hr/hrvatska/andabak-u-sv-filip-i-jakov-dovodimo-najvise-standarde-komfora-i-dizajna-4486586"
+    },
+    {
+     "claim": "Guarantor of the return is the resort manager (entity not named)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
+    },
+    {
+     "claim": "Residences sold as condominium ownership",
+     "status": "unverified",
+     "by": "none",
      "source": "https://total-croatia-news.com/news/business/molum-hotel-residences/"
     },
     {
-     "text": "No prices or building permit information published.",
+     "claim": "Marina phase one has 127 berths",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+    },
+    {
+     "claim": "Building permit published for the residences",
+     "status": "unverified",
+     "by": "none",
      "source": "https://total-croatia-news.com/news/business/molum-hotel-residences/"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Croatia",
+    "developer_company": "Sunčani Resort d.o.o. (Andabak family)",
+    "developer_projects_delivered": null,
+    "developer_units_delivered": null,
+    "listed_or_audited": null,
+    "construction_start": null,
+    "handover_promised": "2025-Q2",
+    "original_handover": "2024-Q3",
+    "delay_months": 9.0,
+    "unit_types": [
+     "residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Condominium (etažno vlasništvo); EU buyers freely, others subject to Croatian reciprocity rules",
+    "rental_programme": "Leaseback to the resort with guaranteed minimum 5% a year (reported 4% in 2023) for four years to end 2027",
+    "service_charge": null,
+    "brand": "Molum Hotel & Residences (independent)",
+    "amenities": [
+     "two heated outdoor pools",
+     "children's pool",
+     "Noku spa",
+     "Maisa restaurant",
+     "kids club",
+     "beach 150 m",
+     "Molum Marine Club marina"
+    ],
+    "lat": 43.963,
+    "lng": 15.432,
+    "permit_authority": "Zadar County administrative department for spatial planning and building",
+    "brochure_url": null
+   },
    "positives": [
-    "Investor named publicly",
-    "Selling agency named"
+    "Resort is built and operating with 5-star categorisation",
+    "Investor and investment amount confirmed by state news agency",
+    "Leaseback terms (rate and period) stated publicly"
+   ],
+   "flags": [
+    {
+     "text": "Residences are marketed with a manager-guaranteed minimum annual return (4% in 2023 reporting, 5% in 2025 reporting) until end 2027; the guaranteeing entity and its backing are not disclosed.",
+     "source": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
+    },
+    {
+     "text": "Local press reported that the adjoining nautical port was not in the county spatial plan and was permitted as part of a public county port where communal berths should have priority.",
+     "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+    },
+    {
+     "text": "Opening came about nine months after the July 2024 target.",
+     "source": "https://total-croatia-news.com/news/business/molum-hotel-residences/"
+    }
    ],
    "sources": [
-    "https://total-croatia-news.com/news/business/molum-hotel-residences/"
+    "https://karlobag.eu/putovanja/molum-hotel-residences-novi-luksuzni-resort-u-svetom-filipu-i-jakovu-okupio-zlat-yaozp/",
+    "https://slobodnadalmacija.hr/dalmacija/zadar/regional/jako-andabak-otvorio-resort-u-sv-filipu-i-jakovu-luksuzni-smjestaj-dobit-ce-i-nauticku-marinu-prodaju-se-i-rezidencije-1478951",
+    "https://total-croatia-news.com/news/business/molum-hotel-residences/",
+    "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/",
+    "https://www.hina.hr/news/12000547",
+    "https://www.poslovni.hr/hrvatska/andabak-u-sv-filip-i-jakov-dovodimo-najvise-standarde-komfora-i-dizajna-4486586",
+    "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
    ]
   },
   {
    "slug": "top-hill-residence-novigrad",
    "name": "Top Hill Residence I & II",
    "developer": "Not named (listed by Eurovilla)",
-   "area": "Novigrad, Istria",
+   "status": "completed",
+   "stage": "completed",
+   "area": "Vidal, Novigrad, Istria (k.č. 1426/1 and 1426/3 k.o. Novigrad)",
    "country": "Croatia",
    "market": "Croatia",
-   "url": "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/",
-   "docs_url": null,
-   "permit_number": null,
+   "url": "https://k-invest.hr/top-hill-residence-3/",
+   "docs_url": "https://k-invest.hr/",
+   "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)",
    "docs_listed": [
-    "unit count (16 units in two buildings, 14 for sale)",
-    "unit size range (36-99 m2)"
+    "building permit PDF (Town of Novigrad, KLASA UP/I-361-03/23-01/000074, 21 Feb 2024, investor K. INVEST d.o.o., OIB 27452460207)",
+    "use permits for THR I and THR II (5 Sep 2025), each an 8-unit P+2 residential building",
+    "land registry extract ZK 3170 k.o. Novigrad (30 Apr 2024)",
+    "condominium subdivision studies (elaborat etažiranja) KI-ET-01-2025 and KI-ET-02-2025",
+    "energy certificates for both buildings",
+    "floor plans per apartment in brochure; equipment catalogue and specification",
+    "agency prices EUR 479,000 to 699,000 for remaining units (Eurovilla); developer page 'from EUR 233,310 excl. VAT' (older)",
+    "Top Hill Residence III brochure (Mar 2026) for a next phase"
    ],
-   "note": "Two small residential buildings in Novigrad listed as under construction. The listing gives no developer, prices, completion date or permit; the A/A+ energy rating is stated as a target.",
+   "note": "Two 8-unit buildings (16 apartments) by K. INVEST d.o.o. in Vidal, Novigrad; the developer publishes the building permits, land registry extract, condominium plans and the use permits issued on 5 Sep 2025, so the project is completed and remaining units are move-in ready from about EUR 479,000. This is the same project as the Regent 'Luxury residential complex, Vidal' entry. The original Eurovilla project URL now returns 410. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": null,
+    "price": 479000,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold (condominium)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": null,
-    "permit_claim": false,
-    "permit_number": null,
-    "plans_published": false,
+    "yield_pct": null,
+    "completion": "2025-Q3",
+    "permit_claim": true,
+    "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)",
+    "plans_published": true,
     "escrow": null,
-    "progress_pct": null,
+    "progress_pct": 100,
+    "developer_delivered": "K. INVEST d.o.o. obtained use permits for Top Hill Residence I and II (16 units) on 5 Sep 2025, published on its site",
     "units": 16,
-    "developer_delivered": null,
-    "yield_pct": null
+    "payment_plan": "Flexible payment plans (developer page); no terms stated",
+    "price_per_m2": 4736,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Scanned building permit and use permits issued by the Town of Novigrad with KLASA/URBROJ numbers, investor K. INVEST d.o.o. OIB 27452460207, hosted on the developer site",
+    "escrow": "No escrow or bank guarantee; buildings are complete and condominium-subdivided, which removes off-plan deposit risk",
+    "progress": "Use permits dated 5 Sep 2025 for both buildings; agencies state the buildings are completed and move-in ready",
+    "plans": "Brochure shows floor plans per floor and apartment; Eurovilla and Regent link per-unit blueprints",
+    "record": "Use permits confirm delivery of these 16 units; no earlier projects named",
+    "returns": "Developer page talks of 'high profits from renting' and 'consistent rental income' but gives no figure or guarantee"
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "registry",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "none"
+   },
+   "verified_score": 3,
+   "claims": [
     {
-     "text": "No developer, price, completion date, building permit or bank guarantee published; energy rating is a target, not a certificate.",
+     "claim": "Building permit issued for THR I (KLASA UP/I-361-03/23-01/000074)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf"
+    },
+    {
+     "claim": "Use permit issued for THR I on 5 Sep 2025",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+    },
+    {
+     "claim": "Use permit issued for THR II on 5 Sep 2025 (building permit UP/I-361-03/23-01/000081)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf"
+    },
+    {
+     "claim": "Each building has 8 residential units, P+2 (16 total)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+    },
+    {
+     "claim": "Developer K. INVEST d.o.o. (OIB 27452460207) holds the land",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf"
+    },
+    {
+     "claim": "Units condominium-subdivided in K. INVEST's name",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf"
+    },
+    {
+     "claim": "Energy class A/A+",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/05/Top-Hill-2-Certifikat_420590.pdf"
+    },
+    {
+     "claim": "Prices EUR 479,000 to 699,000 for remaining units",
+     "status": "unverified",
+     "by": "none",
      "source": "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/"
+    },
+    {
+     "claim": "Prices from EUR 233,310 excl. VAT (developer page)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://k-invest.hr/top-hill-residence-3/"
+    },
+    {
+     "claim": "Apartment sizes 36 to 99 m2 (Eurovilla) vs 40 to 160 m2 (developer)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://k-invest.hr/k-apartments-2/"
+    },
+    {
+     "claim": "10-year structural warranty",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ren.hr/en/real-estates/?n=5249"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Novigrad, Croatia",
+    "developer_company": "K. INVEST d.o.o., Ulica Branka Fučića 2A, Novigrad, OIB 27452460207",
+    "developer_projects_delivered": 2.0,
+    "developer_units_delivered": 16.0,
+    "listed_or_audited": null,
+    "construction_start": "2024-02",
+    "handover_promised": "2025-Q3",
+    "original_handover": "2025-Q2 (May 2025 per Reatelier listing)",
+    "delay_months": 4.0,
+    "unit_types": [
+     "2BR",
+     "penthouse"
+    ],
+    "size_min_m2": 36.0,
+    "size_max_m2": 160.0,
+    "price_min": 479000.0,
+    "price_max": 699000.0,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": "Flexible plans, no terms stated",
+    "foreign_ownership": "Freehold condominium; EU buyers freely, non-EU subject to reciprocity",
+    "rental_programme": "Support for tourist-rental set-up offered; no figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "lift",
+     "private parking or garage",
+     "storage rooms",
+     "bike room",
+     "planned communal heated pool (THR II)",
+     "video intercom",
+     "EV charging prep",
+     "solar prep"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Town of Novigrad, administrative department for spatial planning and building",
+    "brochure_url": "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf"
+   },
    "positives": [
-    "Unit count and size range published"
+    "Building permits, use permits, land registry and condominium plans published by the developer",
+    "Buildings completed with use permits, so no construction risk",
+    "Floor plans and per-unit prices published",
+    "No guaranteed-return language"
    ],
+   "flags": [],
    "sources": [
-    "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/"
+    "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/",
+    "https://eurovilla.hr/en/property/istria-novigrad-a-ground-floor-two-bedroom-apartment-with-garden-115-m2-parking-space/746292/",
+    "https://k-invest.hr/",
+    "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf",
+    "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf",
+    "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf",
+    "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf",
+    "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf",
+    "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf",
+    "https://k-invest.hr/k-apartments-2/",
+    "https://k-invest.hr/top-hill-residence-3/",
+    "https://konekt-nekretnine.hr/en/project-listing/63",
+    "https://reatelier.hr/en/p/apartment-in-a-luxurious-new-construction-project-in-novigrad-65",
+    "https://ren.hr/en/real-estates/?n=5249"
    ]
   },
   {
    "slug": "novigrad-vidal-luxury-residential-complex",
    "name": "Luxury residential complex, Vidal (Novigrad)",
    "developer": "Not named (listed by Regent Real Estate)",
-   "area": "Vidal, Novigrad, Istria",
+   "status": "completed",
+   "stage": "completed",
+   "area": "Vidal, Novigrad, Istria (k.č. 1426/1 and 1426/3 k.o. Novigrad)",
    "country": "Croatia",
    "market": "Croatia",
    "url": "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex",
-   "docs_url": null,
-   "permit_number": null,
+   "docs_url": "https://k-invest.hr/top-hill-residence-3/",
+   "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)",
    "docs_listed": [
-    "per-unit prices",
-    "floor plans for most units",
-    "energy class A/A+ (passive buildings)",
-    "completion year (2025)"
+    "Regent listing (now 410): 8 units 94 to 138 m2 at EUR 469,000 to 720,000, floor plans for six, completion 2025, starting price EUR 292K",
+    "building permit PDF (Town of Novigrad, KLASA UP/I-361-03/23-01/000074, 21 Feb 2024, investor K. INVEST d.o.o., OIB 27452460207)",
+    "use permits for THR I and THR II (5 Sep 2025), each an 8-unit P+2 residential building",
+    "land registry extract ZK 3170 k.o. Novigrad (30 Apr 2024)",
+    "condominium subdivision studies (elaborat etažiranja) KI-ET-01-2025 and KI-ET-02-2025",
+    "energy certificates for both buildings"
    ],
-   "note": "Fifteen apartments of 40-160 m2 on the highest point of the Vidal settlement, listed with per-unit prices and floor plans and a 2025 completion year; construction status is not stated.",
+   "note": "Duplicate of Top Hill Residence I & II: Regent's 'Luxury residential complex, Vidal' is the same 16-unit K. INVEST d.o.o. project (same Vidal hilltop, 40-160 m2, A/A+, two buildings). Regent listed eight units at EUR 469,000 to 720,000 with floor plans and a 2025 completion; use permits were issued on 5 Sep 2025, so it is completed. The Regent page now returns 410. (checked 1 Nov 2026)",
    "added": "2026-10-30",
    "seed": {
-    "price": 291637,
+    "price": 469000,
     "currency": "EUR",
-    "title": null,
+    "title": "freehold (condominium)",
     "lease_base": null,
     "extension": null,
     "guaranteed_language": false,
-    "completion": "2025",
-    "permit_claim": false,
-    "permit_number": null,
+    "yield_pct": null,
+    "completion": "2025-Q3",
+    "permit_claim": true,
+    "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)",
     "plans_published": true,
     "escrow": null,
-    "progress_pct": null,
-    "units": 15,
-    "developer_delivered": null,
-    "yield_pct": null
+    "progress_pct": 100,
+    "developer_delivered": "K. INVEST d.o.o. obtained use permits for Top Hill Residence I and II (16 units) on 5 Sep 2025, published on its site",
+    "units": 16,
+    "payment_plan": "Flexible payment plans (developer page); no terms stated",
+    "price_per_m2": 4987,
+    "progress_updates": true
    },
-   "flags": [
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 5,
+    "all_six": false
+   },
+   "evidence": {
+    "permit": "Scanned building permit and use permits issued by the Town of Novigrad with KLASA/URBROJ numbers, investor K. INVEST d.o.o. OIB 27452460207, hosted on the developer site",
+    "escrow": "No escrow or bank guarantee; buildings are complete and condominium-subdivided, which removes off-plan deposit risk",
+    "progress": "Use permits dated 5 Sep 2025 for both buildings; agencies state the buildings are completed and move-in ready",
+    "plans": "Brochure shows floor plans per floor and apartment; Eurovilla and Regent link per-unit blueprints",
+    "record": "Use permits confirm delivery of these 16 units; no earlier projects named",
+    "returns": "Developer page talks of 'high profits from renting' and 'consistent rental income' but gives no figure or guarantee"
+   },
+   "verification": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "registry",
+    "plans": "developer",
+    "record": "registry",
+    "returns": "none"
+   },
+   "verified_score": 3,
+   "claims": [
     {
-     "text": "Developer not named and no building permit or bank guarantee mentioned; listed completion year (2025) has passed with no status update on the page.",
+     "claim": "Building permit issued for THR I (KLASA UP/I-361-03/23-01/000074)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf"
+    },
+    {
+     "claim": "Use permit issued for THR I on 5 Sep 2025",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+    },
+    {
+     "claim": "Use permit issued for THR II on 5 Sep 2025 (building permit UP/I-361-03/23-01/000081)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf"
+    },
+    {
+     "claim": "Each building has 8 residential units, P+2 (16 total)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+    },
+    {
+     "claim": "Developer K. INVEST d.o.o. (OIB 27452460207) holds the land",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf"
+    },
+    {
+     "claim": "Units condominium-subdivided in K. INVEST's name",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf"
+    },
+    {
+     "claim": "Energy class A/A+",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/05/Top-Hill-2-Certifikat_420590.pdf"
+    },
+    {
+     "claim": "Eight units available at EUR 469,000 to 720,000 (Regent)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex"
+    },
+    {
+     "claim": "Prices from EUR 233,310 excl. VAT (developer page)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://k-invest.hr/top-hill-residence-3/"
+    },
+    {
+     "claim": "Project completion 2025",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf"
+    },
+    {
+     "claim": "10-year structural warranty",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ren.hr/en/real-estates/?n=5249"
+    },
+    {
+     "claim": "Starting price EUR 292K (Regent header) vs lowest listed unit EUR 469,000",
+     "status": "contradicted",
+     "by": "none",
      "source": "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex"
     }
    ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Novigrad, Croatia",
+    "developer_company": "K. INVEST d.o.o., Ulica Branka Fučića 2A, Novigrad, OIB 27452460207",
+    "developer_projects_delivered": 2.0,
+    "developer_units_delivered": 16.0,
+    "listed_or_audited": null,
+    "construction_start": "2024-02",
+    "handover_promised": "2025-Q3",
+    "original_handover": "2025-Q2 (May 2025 per Reatelier listing)",
+    "delay_months": 4.0,
+    "unit_types": [
+     "2BR",
+     "penthouse"
+    ],
+    "size_min_m2": 36.0,
+    "size_max_m2": 160.0,
+    "price_min": 469000.0,
+    "price_max": 720000.0,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": "Flexible plans, no terms stated",
+    "foreign_ownership": "Freehold condominium; EU buyers freely, non-EU subject to reciprocity",
+    "rental_programme": "Support for tourist-rental set-up offered; no figures",
+    "service_charge": null,
+    "brand": null,
+    "amenities": [
+     "lift",
+     "private parking or garage",
+     "storage rooms",
+     "bike room",
+     "planned communal heated pool (THR II)",
+     "video intercom",
+     "EV charging prep",
+     "solar prep"
+    ],
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Town of Novigrad, administrative department for spatial planning and building",
+    "brochure_url": "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf"
+   },
    "positives": [
-    "Per-unit prices published",
-    "Floor plans available for most units",
-    "Energy class stated (A/A+)"
+    "Building permits, use permits, land registry and condominium plans published by the developer",
+    "Buildings completed with use permits, so no construction risk",
+    "Floor plans and per-unit prices published",
+    "No guaranteed-return language"
+   ],
+   "flags": [
+    {
+     "text": "Listing is a duplicate of the Top Hill Residence I & II project by K. INVEST d.o.o.; the agency page did not name the developer.",
+     "source": "https://k-invest.hr/k-apartments-2/"
+    }
    ],
    "sources": [
-    "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex"
+    "https://broker.hr/en/projects/novigrad-contemporary-new-construction-in-a-residential-area-with-a-sea-view",
+    "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/",
+    "https://eurovilla.hr/en/property/istria-novigrad-a-ground-floor-two-bedroom-apartment-with-garden-115-m2-parking-space/746292/",
+    "https://k-invest.hr/",
+    "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf",
+    "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf",
+    "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf",
+    "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf",
+    "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf",
+    "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf",
+    "https://k-invest.hr/k-apartments-2/",
+    "https://k-invest.hr/top-hill-residence-3/",
+    "https://konekt-nekretnine.hr/en/project-listing/63",
+    "https://reatelier.hr/en/p/apartment-in-a-luxurious-new-construction-project-in-novigrad-65",
+    "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex",
+    "https://ren.hr/en/real-estates/?n=5249"
    ]
   },
   {

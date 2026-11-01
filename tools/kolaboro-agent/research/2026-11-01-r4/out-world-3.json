@@ -1039,5 +1039,630 @@
    "https://portomontenegro.com/blog/siro-boka-place-reservations/",
    "https://www.jamesedition.com/stories/?p=47745"
   ]
+ },
+ {
+  "slug": "molum-hotel-residences-dalmatia",
+  "name": "Molum Hotel & Residences",
+  "developer": "Jako Andabak (investor)",
+  "status": "completed",
+  "stage": "completed",
+  "area": "Sveti Filip i Jakov, near Zadar, Dalmatia",
+  "country": "Croatia",
+  "market": "Croatia",
+  "url": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140",
+  "docs_url": "https://total-croatia-news.com/news/business/molum-hotel-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "60 hotel rooms and 60 residences in six buildings, 12,000 m2 of buildings on 25,000 m2 of grounds",
+   "opened at Easter 2025 with 5-star categorisation confirmed by the Ministry of Tourism; formal opening 8 Jul 2025",
+   "investment EUR 23m by Sunčani Resort (Andabak family)",
+   "residences sold as condominium units under a leaseback to the resort",
+   "manager-guaranteed minimum return: 4% a year (Nov 2023) then 5% a year (2025) of the investment for four years, to end 2027",
+   "original opening target July 2024",
+   "adjacent Molum Marine Club, 127 berths in phase one"
+  ],
+  "note": "Five-star resort by Sunčani Resort (Jako Andabak family) with 60 hotel rooms and 60 leaseback residences, opened in spring 2025 (about nine months after the July 2024 target) and formally inaugurated in July 2025, so the project is completed. Residences are still sold with a manager-guaranteed minimum return, reported as 4% a year in 2023 and 5% a year in 2025, for four years to end 2027. No prices, permit number or floor plans are published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (condominium / etažno vlasništvo)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5,
+   "completion": "2025-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": true,
+   "developer_delivered": "Sunčani Resort / Andabak family described in press as owner of many hotel and tourism projects across Croatia; Molum itself opened 2025 (HINA)",
+   "units": 60,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number published; local press mentions a building permit for the adjoining port (127 berths) only",
+   "escrow": "No escrow or bank guarantee stated; resort is now complete",
+   "progress": "Completed and operating: 5-star categorisation confirmed by Ministry of Tourism (057info, Apr 2025) and formal opening reported by state agency HINA (8 Jul 2025)",
+   "plans": "No floor plans or unit sizes published in any source opened",
+   "record": "HINA confirms EUR 23m investment by Sunčani Resort and opening; Andabak family's wider hotel portfolio is described in press but not itemised",
+   "returns": "Manager 'guarantees a minimum annual return' of 4% (2023 article) or 5% (2025 articles) of the investment for the first four years to end 2027"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "independent"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Resort opening scheduled for July 2024",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+   },
+   {
+    "claim": "Resort opened and formally inaugurated in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hina.hr/news/12000547"
+   },
+   {
+    "claim": "Five-star categorisation",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+   },
+   {
+    "claim": "Investment of EUR 23m by Sunčani Resort",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hina.hr/news/12000547"
+   },
+   {
+    "claim": "60 residences in six buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://slobodnadalmacija.hr/dalmacija/zadar/regional/jako-andabak-otvorio-resort-u-sv-filipu-i-jakovu-luksuzni-smjestaj-dobit-ce-i-nauticku-marinu-prodaju-se-i-rezidencije-1478951"
+   },
+   {
+    "claim": "Guaranteed minimum return 4% a year until end 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
+   },
+   {
+    "claim": "Guaranteed minimum return 5% a year for four years to end 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.poslovni.hr/hrvatska/andabak-u-sv-filip-i-jakov-dovodimo-najvise-standarde-komfora-i-dizajna-4486586"
+   },
+   {
+    "claim": "Guarantor of the return is the resort manager (entity not named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
+   },
+   {
+    "claim": "Residences sold as condominium ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://total-croatia-news.com/news/business/molum-hotel-residences/"
+   },
+   {
+    "claim": "Marina phase one has 127 berths",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+   },
+   {
+    "claim": "Building permit published for the residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://total-croatia-news.com/news/business/molum-hotel-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Croatia",
+   "developer_company": "Sunčani Resort d.o.o. (Andabak family)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2025-Q2",
+   "original_handover": "2024-Q3",
+   "delay_months": 9,
+   "unit_types": [
+    "residence"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condominium (etažno vlasništvo); EU buyers freely, others subject to Croatian reciprocity rules",
+   "rental_programme": "Leaseback to the resort with guaranteed minimum 5% a year (reported 4% in 2023) for four years to end 2027",
+   "service_charge": null,
+   "brand": "Molum Hotel & Residences (independent)",
+   "amenities": [
+    "two heated outdoor pools",
+    "children's pool",
+    "Noku spa",
+    "Maisa restaurant",
+    "kids club",
+    "beach 150 m",
+    "Molum Marine Club marina"
+   ],
+   "lat": 43.963,
+   "lng": 15.432,
+   "permit_authority": "Zadar County administrative department for spatial planning and building",
+   "brochure_url": null
+  },
+  "positives": [
+   "Resort is built and operating with 5-star categorisation",
+   "Investor and investment amount confirmed by state news agency",
+   "Leaseback terms (rate and period) stated publicly"
+  ],
+  "flags": [
+   {
+    "text": "Residences are marketed with a manager-guaranteed minimum annual return (4% in 2023 reporting, 5% in 2025 reporting) until end 2027; the guaranteeing entity and its backing are not disclosed.",
+    "source": "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140"
+   },
+   {
+    "text": "Local press reported that the adjoining nautical port was not in the county spatial plan and was permitted as part of a public county port where communal berths should have priority.",
+    "source": "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/"
+   },
+   {
+    "text": "Opening came about nine months after the July 2024 target.",
+    "source": "https://total-croatia-news.com/news/business/molum-hotel-residences/"
+   }
+  ],
+  "sources": [
+   "https://total-croatia-news.com/news/business/molum-hotel-residences/",
+   "https://www.hina.hr/news/12000547",
+   "https://slobodnadalmacija.hr/dalmacija/zadar/regional/jako-andabak-otvorio-resort-u-sv-filipu-i-jakovu-luksuzni-smjestaj-dobit-ce-i-nauticku-marinu-prodaju-se-i-rezidencije-1478951",
+   "https://www.poslovni.hr/hrvatska/andabak-u-sv-filip-i-jakov-dovodimo-najvise-standarde-komfora-i-dizajna-4486586",
+   "https://www.poslovni.hr/hrvatska/molum-upisao-sv-filip-i-jakov-na-resort-kartu-rh-4501140",
+   "https://www.057info.hr/vijesti/2025-04-27/sv-filip-jakov-dobio-marinu-s-palmama-hotelsko-naselje-s-5-zvjezdica-a-glas-iz-mora-porucuje-bas-lipo-svitli-andabakovo/",
+   "https://karlobag.eu/putovanja/molum-hotel-residences-novi-luksuzni-resort-u-svetom-filipu-i-jakovu-okupio-zlat-yaozp/"
+  ]
+ },
+ {
+  "slug": "top-hill-residence-novigrad",
+  "name": "Top Hill Residence I & II",
+  "developer": "Not named (listed by Eurovilla)",
+  "status": "completed",
+  "stage": "completed",
+  "area": "Vidal, Novigrad, Istria (k.č. 1426/1 and 1426/3 k.o. Novigrad)",
+  "country": "Croatia",
+  "market": "Croatia",
+  "url": "https://k-invest.hr/top-hill-residence-3/",
+  "docs_url": "https://k-invest.hr/",
+  "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)",
+  "docs_listed": [
+   "building permit PDF (Town of Novigrad, KLASA UP/I-361-03/23-01/000074, 21 Feb 2024, investor K. INVEST d.o.o., OIB 27452460207)",
+   "use permits for THR I and THR II (5 Sep 2025), each an 8-unit P+2 residential building",
+   "land registry extract ZK 3170 k.o. Novigrad (30 Apr 2024)",
+   "condominium subdivision studies (elaborat etažiranja) KI-ET-01-2025 and KI-ET-02-2025",
+   "energy certificates for both buildings",
+   "floor plans per apartment in brochure; equipment catalogue and specification",
+   "agency prices EUR 479,000 to 699,000 for remaining units (Eurovilla); developer page 'from EUR 233,310 excl. VAT' (older)",
+   "Top Hill Residence III brochure (Mar 2026) for a next phase"
+  ],
+  "note": "Two 8-unit buildings (16 apartments) by K. INVEST d.o.o. in Vidal, Novigrad; the developer publishes the building permits, land registry extract, condominium plans and the use permits issued on 5 Sep 2025, so the project is completed and remaining units are move-in ready from about EUR 479,000. This is the same project as the Regent 'Luxury residential complex, Vidal' entry. The original Eurovilla project URL now returns 410. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 479000,
+   "currency": "EUR",
+   "title": "freehold (condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-Q3",
+   "permit_claim": true,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": true,
+   "developer_delivered": "K. INVEST d.o.o. obtained use permits for Top Hill Residence I and II (16 units) on 5 Sep 2025, published on its site",
+   "units": 16,
+   "payment_plan": "Flexible payment plans (developer page); no terms stated",
+   "price_per_m2": 4736,
+   "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)"
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Scanned building permit and use permits issued by the Town of Novigrad with KLASA/URBROJ numbers, investor K. INVEST d.o.o. OIB 27452460207, hosted on the developer site",
+   "escrow": "No escrow or bank guarantee; buildings are complete and condominium-subdivided, which removes off-plan deposit risk",
+   "progress": "Use permits dated 5 Sep 2025 for both buildings; agencies state the buildings are completed and move-in ready",
+   "plans": "Brochure shows floor plans per floor and apartment; Eurovilla and Regent link per-unit blueprints",
+   "record": "Use permits confirm delivery of these 16 units; no earlier projects named",
+   "returns": "Developer page talks of 'high profits from renting' and 'consistent rental income' but gives no figure or guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Building permit issued for THR I (KLASA UP/I-361-03/23-01/000074)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf"
+   },
+   {
+    "claim": "Use permit issued for THR I on 5 Sep 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+   },
+   {
+    "claim": "Use permit issued for THR II on 5 Sep 2025 (building permit UP/I-361-03/23-01/000081)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf"
+   },
+   {
+    "claim": "Each building has 8 residential units, P+2 (16 total)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+   },
+   {
+    "claim": "Developer K. INVEST d.o.o. (OIB 27452460207) holds the land",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf"
+   },
+   {
+    "claim": "Units condominium-subdivided in K. INVEST's name",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf"
+   },
+   {
+    "claim": "Energy class A/A+",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/05/Top-Hill-2-Certifikat_420590.pdf"
+   },
+   {
+    "claim": "Prices EUR 479,000 to 699,000 for remaining units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/"
+   },
+   {
+    "claim": "Prices from EUR 233,310 excl. VAT (developer page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://k-invest.hr/top-hill-residence-3/"
+   },
+   {
+    "claim": "Apartment sizes 36 to 99 m2 (Eurovilla) vs 40 to 160 m2 (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://k-invest.hr/k-apartments-2/"
+   },
+   {
+    "claim": "10-year structural warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ren.hr/en/real-estates/?n=5249"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Novigrad, Croatia",
+   "developer_company": "K. INVEST d.o.o., Ulica Branka Fučića 2A, Novigrad, OIB 27452460207",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": 16,
+   "listed_or_audited": null,
+   "construction_start": "2024-02",
+   "handover_promised": "2025-Q3",
+   "original_handover": "2025-Q2 (May 2025 per Reatelier listing)",
+   "delay_months": 4,
+   "unit_types": [
+    "2BR",
+    "penthouse"
+   ],
+   "size_min_m2": 36,
+   "size_max_m2": 160,
+   "price_min": 479000,
+   "price_max": 699000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "Flexible plans, no terms stated",
+   "foreign_ownership": "Freehold condominium; EU buyers freely, non-EU subject to reciprocity",
+   "rental_programme": "Support for tourist-rental set-up offered; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lift",
+    "private parking or garage",
+    "storage rooms",
+    "bike room",
+    "planned communal heated pool (THR II)",
+    "video intercom",
+    "EV charging prep",
+    "solar prep"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Town of Novigrad, administrative department for spatial planning and building",
+   "brochure_url": "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf"
+  },
+  "positives": [
+   "Building permits, use permits, land registry and condominium plans published by the developer",
+   "Buildings completed with use permits, so no construction risk",
+   "Floor plans and per-unit prices published",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://k-invest.hr/",
+   "https://k-invest.hr/top-hill-residence-3/",
+   "https://k-invest.hr/k-apartments-2/",
+   "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf",
+   "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf",
+   "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf",
+   "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf",
+   "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf",
+   "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf",
+   "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/",
+   "https://eurovilla.hr/en/property/istria-novigrad-a-ground-floor-two-bedroom-apartment-with-garden-115-m2-parking-space/746292/",
+   "https://konekt-nekretnine.hr/en/project-listing/63",
+   "https://ren.hr/en/real-estates/?n=5249",
+   "https://reatelier.hr/en/p/apartment-in-a-luxurious-new-construction-project-in-novigrad-65"
+  ]
+ },
+ {
+  "slug": "novigrad-vidal-luxury-residential-complex",
+  "name": "Luxury residential complex, Vidal (Novigrad)",
+  "developer": "Not named (listed by Regent Real Estate)",
+  "status": "completed",
+  "stage": "completed",
+  "area": "Vidal, Novigrad, Istria (k.č. 1426/1 and 1426/3 k.o. Novigrad)",
+  "country": "Croatia",
+  "market": "Croatia",
+  "url": "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex",
+  "docs_url": "https://k-invest.hr/top-hill-residence-3/",
+  "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)",
+  "docs_listed": [
+   "Regent listing (now 410): 8 units 94 to 138 m2 at EUR 469,000 to 720,000, floor plans for six, completion 2025, starting price EUR 292K",
+   "building permit PDF (Town of Novigrad, KLASA UP/I-361-03/23-01/000074, 21 Feb 2024, investor K. INVEST d.o.o., OIB 27452460207)",
+   "use permits for THR I and THR II (5 Sep 2025), each an 8-unit P+2 residential building",
+   "land registry extract ZK 3170 k.o. Novigrad (30 Apr 2024)",
+   "condominium subdivision studies (elaborat etažiranja) KI-ET-01-2025 and KI-ET-02-2025",
+   "energy certificates for both buildings"
+  ],
+  "note": "Duplicate of Top Hill Residence I & II: Regent's 'Luxury residential complex, Vidal' is the same 16-unit K. INVEST d.o.o. project (same Vidal hilltop, 40-160 m2, A/A+, two buildings). Regent listed eight units at EUR 469,000 to 720,000 with floor plans and a 2025 completion; use permits were issued on 5 Sep 2025, so it is completed. The Regent page now returns 410. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": 469000,
+   "currency": "EUR",
+   "title": "freehold (condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-Q3",
+   "permit_claim": true,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": true,
+   "developer_delivered": "K. INVEST d.o.o. obtained use permits for Top Hill Residence I and II (16 units) on 5 Sep 2025, published on its site",
+   "units": 16,
+   "payment_plan": "Flexible payment plans (developer page); no terms stated",
+   "price_per_m2": 4987,
+   "permit_number": "Building permits KLASA UP/I-361-03/23-01/000074 (THR I, 21 Feb 2024) and UP/I-361-03/23-01/000081 (THR II); use permits UP/I-361-05/25-01/000024 and UP/I-361-05/25-01/000023 (5 Sep 2025)"
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Scanned building permit and use permits issued by the Town of Novigrad with KLASA/URBROJ numbers, investor K. INVEST d.o.o. OIB 27452460207, hosted on the developer site",
+   "escrow": "No escrow or bank guarantee; buildings are complete and condominium-subdivided, which removes off-plan deposit risk",
+   "progress": "Use permits dated 5 Sep 2025 for both buildings; agencies state the buildings are completed and move-in ready",
+   "plans": "Brochure shows floor plans per floor and apartment; Eurovilla and Regent link per-unit blueprints",
+   "record": "Use permits confirm delivery of these 16 units; no earlier projects named",
+   "returns": "Developer page talks of 'high profits from renting' and 'consistent rental income' but gives no figure or guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Building permit issued for THR I (KLASA UP/I-361-03/23-01/000074)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf"
+   },
+   {
+    "claim": "Use permit issued for THR I on 5 Sep 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+   },
+   {
+    "claim": "Use permit issued for THR II on 5 Sep 2025 (building permit UP/I-361-03/23-01/000081)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf"
+   },
+   {
+    "claim": "Each building has 8 residential units, P+2 (16 total)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf"
+   },
+   {
+    "claim": "Developer K. INVEST d.o.o. (OIB 27452460207) holds the land",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf"
+   },
+   {
+    "claim": "Units condominium-subdivided in K. INVEST's name",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf"
+   },
+   {
+    "claim": "Energy class A/A+",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/05/Top-Hill-2-Certifikat_420590.pdf"
+   },
+   {
+    "claim": "Eight units available at EUR 469,000 to 720,000 (Regent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex"
+   },
+   {
+    "claim": "Prices from EUR 233,310 excl. VAT (developer page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://k-invest.hr/top-hill-residence-3/"
+   },
+   {
+    "claim": "Project completion 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf"
+   },
+   {
+    "claim": "10-year structural warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ren.hr/en/real-estates/?n=5249"
+   },
+   {
+    "claim": "Starting price EUR 292K (Regent header) vs lowest listed unit EUR 469,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Novigrad, Croatia",
+   "developer_company": "K. INVEST d.o.o., Ulica Branka Fučića 2A, Novigrad, OIB 27452460207",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": 16,
+   "listed_or_audited": null,
+   "construction_start": "2024-02",
+   "handover_promised": "2025-Q3",
+   "original_handover": "2025-Q2 (May 2025 per Reatelier listing)",
+   "delay_months": 4,
+   "unit_types": [
+    "2BR",
+    "penthouse"
+   ],
+   "size_min_m2": 36,
+   "size_max_m2": 160,
+   "price_min": 469000,
+   "price_max": 720000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "Flexible plans, no terms stated",
+   "foreign_ownership": "Freehold condominium; EU buyers freely, non-EU subject to reciprocity",
+   "rental_programme": "Support for tourist-rental set-up offered; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lift",
+    "private parking or garage",
+    "storage rooms",
+    "bike room",
+    "planned communal heated pool (THR II)",
+    "video intercom",
+    "EV charging prep",
+    "solar prep"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Town of Novigrad, administrative department for spatial planning and building",
+   "brochure_url": "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf"
+  },
+  "positives": [
+   "Building permits, use permits, land registry and condominium plans published by the developer",
+   "Buildings completed with use permits, so no construction risk",
+   "Floor plans and per-unit prices published",
+   "No guaranteed-return language"
+  ],
+  "flags": [
+   {
+    "text": "Listing is a duplicate of the Top Hill Residence I & II project by K. INVEST d.o.o.; the agency page did not name the developer.",
+    "source": "https://k-invest.hr/k-apartments-2/"
+   }
+  ],
+  "sources": [
+   "https://regent.hr/en/new-builds/istria-novigrad-luxury-residential-complex",
+   "https://broker.hr/en/projects/novigrad-contemporary-new-construction-in-a-residential-area-with-a-sea-view",
+   "https://k-invest.hr/",
+   "https://k-invest.hr/top-hill-residence-3/",
+   "https://k-invest.hr/k-apartments-2/",
+   "https://k-invest.hr/givohiv/uploads/2024/05/Gradevinska-dozvola-kc1426-3-ko-Novigrad.pdf",
+   "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-I.pdf",
+   "https://k-invest.hr/givohiv/uploads/2025/09/Uporabna-dozvola-top-hill-residence-II.pdf",
+   "https://k-invest.hr/givohiv/uploads/2024/05/ZK-3170-NOVIGRAD.pdf",
+   "https://k-invest.hr/givohiv/uploads/2025/07/Elaborat-etaziranja-KI-ET-01-2025.pdf",
+   "https://k-invest.hr/givohiv/uploads/2026/03/BROSURA-THR-III-20262.pdf",
+   "https://eurovilla.hr/en/project/istria-novigrad-project-top-hill-residence-i-ii/588/",
+   "https://eurovilla.hr/en/property/istria-novigrad-a-ground-floor-two-bedroom-apartment-with-garden-115-m2-parking-space/746292/",
+   "https://konekt-nekretnine.hr/en/project-listing/63",
+   "https://ren.hr/en/real-estates/?n=5249",
+   "https://reatelier.hr/en/p/apartment-in-a-luxurious-new-construction-project-in-novigrad-65"
+  ]
  }
 ]
