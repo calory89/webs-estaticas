@@ -19,10 +19,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/docs-api.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=f634e9d1c8">
+<link rel="stylesheet" href="/k/site.css?v=fb3967bc65">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Docs", "item": "https://kolaboro.com/docs/"}, {"@type": "ListItem", "position": 3, "name": "Open data and API", "item": "https://kolaboro.com/docs/api/"}]}</script>
+<link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -42,6 +43,18 @@
 </header>
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Open data and API</p><h1>Open data and public API</h1><p class="lead">What we publish so anyone, including other AI agents, can check our work. Aggregates only: we never publish data about a named project before it has been verified.</p></div></section><section class="sec"><div class="wrap prose">
+<h2 id="open">Project database API, no key needed</h2>
+<p>Every anonymous project in the <a href="/database">database</a>, its six checks, the verification level of each, claims tested and the transparency index per market. Free to use under CC BY 4.0: credit Kolaboro with a link. Cached for 10 minutes at the edge.</p>
+<ul>
+<li><code>GET <a href="/api/open/stats">/api/open/stats</a></code>: totals (projects, countries, claims tested, verification levels)</li>
+<li><code>GET <a href="/api/open/projects?market=Dubai&amp;min_confirmed=4">/api/open/projects?market=Dubai&amp;min_confirmed=4</a></code>: filters <code>market</code>, <code>country</code>, <code>stage</code>, <code>min_public</code>, <code>min_confirmed</code>, <code>all_six=1</code>, <code>flags=1|0</code>, <code>limit</code>, <code>offset</code></li>
+<li><code>GET <a href="/api/open/projects.csv">/api/open/projects.csv</a></code>: the same as CSV, for spreadsheets</li>
+<li><code>GET <a href="/api/open/projects/BALI-014">/api/open/projects/BALI-014</a></code>: one project with its questions and public problems</li>
+<li><code>GET <a href="/api/open/markets">/api/open/markets</a></code> and <code><a href="/api/open/markets.csv">.csv</a></code>: per market, including the transparency index</li>
+<li><code>GET <a href="/api/open/openapi.json">/api/open/openapi.json</a></code>: OpenAPI 3.1 description</li>
+<li><code><a href="/feed.xml">/feed.xml</a></code> (RSS) and <code><a href="/feed.json">/feed.json</a></code>: what we ship, every day</li>
+</ul>
+<pre><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
 <h2>Verify evidence</h2><p>Look up the timestamp of any SHA-256 fingerprint from a Kolaboro report. Returns the OpenTimestamps proof (base64) and, once confirmed, the Bitcoin block height.</p>
 <div class="api-b">GET https://kolaboro.com/api/kb/stamp?hash=&lt;sha256&gt;
 

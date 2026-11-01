@@ -24,9 +24,44 @@
     var opts = Object.keys(mk).sort().map(function(m){ return '<option value="' + esc(m) + '">' + esc(m) + ' (' + C.filter(function(c){ return c.market === m; }).length + ')</option>'; }).join('');
     $('kmk').innerHTML = '<option value="">All markets (' + C.length + ')</option>' + opts;
   }
+  // plain-language search: "bali under construction with permit and escrow under 400k", "late dubai", "contradicted freehold 2027"
+  var STOP = /^(and|with|the|a|an|in|of|for|projects?|that|have|has|show|me|which|are|is|where|no|not|without|public|published|only)$/;
+  function priceTop(b){ var m = String(b || '').match(/(\d+(?:\.\d+)?)\s*([km])\b(?!.*\d+\s*[km]\b)/i); if (!m) return null; return +m[1] * (m[2].toLowerCase() === 'm' ? 1000 : 1); }
+  function parseQ(raw){
+    var q = ' ' + String(raw || '').toLowerCase().replace(/[,;]/g, ' ') + ' ', T = [], L = [];
+    var add = function(re, label, fn){ if (re.test(q)) { q = q.replace(re, ' '); T.push(fn); L.push(label); } };
+    add(/\bno (flags?|problems?|red flags?)\b|\bclean\b/, 'no public problems', function(c){ return !(c.flags || []).length; });
+    add(/\b(red )?flags?\b|\bproblems?\b|\bwarnings?\b/, 'public problems', function(c){ return (c.flags || []).length > 0; });
+    add(/\bno (escrow|deposit protection)\b|\bwithout (escrow|deposit protection)\b/, 'no deposit protection', function(c){ return (c.checks || {}).escrow !== true; });
+    add(/\bescrow\b|\bdeposit protect(ion|ed)\b|\btrust account\b/, 'deposit protection', function(c){ return (c.checks || {}).escrow === true; });
+    add(/\bno permit\b|\bwithout (a )?permit\b/, 'no permit number', function(c){ return (c.checks || {}).permit !== 2; });
+    add(/\bpermits?\b|\blicen[cs]es?\b/, 'permit number public', function(c){ return (c.checks || {}).permit === 2; });
+    add(/\b100 ?%|\ball (6|six)\b|\bfully public\b/, '100% public', function(c){ return full(c); });
+    add(/\bcontradict(ed|ions?)?\b|\bfalse\b|\bmisleading\b/, 'contradicted claims', function(c){ return c.claims && c.claims.contradicted > 0; });
+    add(/\bconfirmed\b|\bverified\b|\bregistry\b/, 'confirmed 4+ of 6', function(c){ return (c.vscore || 0) >= 4; });
+    add(/\b(late|delayed|delays?|overdue|behind)\b/, 'late', function(c){ return !!(c.overdue || c.delay); });
+    add(/\bguaranteed?( returns?| rental| income)?\b/, 'guaranteed-return language', function(c){ return (c.checks || {}).returns_ok === false; });
+    add(/\bunder construction\b|\bbuilding\b/, 'under construction', function(c){ return c.stage === 'under construction'; });
+    add(/\boff[- ]?plan\b|\bpre[- ]?sale\b/, 'off-plan', function(c){ return c.stage === 'off-plan'; });
+    add(/\bcompleted?\b|\bready\b|\bfinished\b/, 'completed', function(c){ return c.stage === 'completed'; });
+    add(/\bfreehold\b/, 'freehold', function(c){ return /free/.test(c.title || ''); });
+    add(/\bleasehold\b|\blease\b/, 'leasehold', function(c){ return /lease/.test(c.title || ''); });
+    var pm = q.match(/\b(under|below|less than|max|<)\s*\$?\s*(\d+(?:\.\d+)?)\s*(k|m|million)?\b/);
+    if (pm) { var cap = +pm[2] * (/m/.test(pm[3] || '') ? 1000 : (pm[3] ? 1 : (+pm[2] > 5000 ? 0.001 : 1))); q = q.replace(pm[0], ' '); L.push('under $' + (cap >= 1000 ? cap / 1000 + 'M' : cap + 'k')); T.push(function(c){ var t = priceTop(c.band); return t != null && t <= cap; }); }
+    var ym = q.match(/\b(20[2-3]\d)\b/); if (ym) { var y = +ym[1]; q = q.replace(ym[0], ' '); L.push('completion ' + y); T.push(function(c){ return +c.done === y; }); }
+    var words = q.split(/\s+/).filter(function(w){ return w && !STOP.test(w); });
+    var places = {}; C.forEach(function(c){ [c.market, c.country, c.region].forEach(function(x){ if (x) places[x.toLowerCase()] = 1; }); });
+    var rest = [];
+    for (var i = 0; i < words.length; i++) { var two = words[i] + ' ' + (words[i + 1] || ''), three = two + ' ' + (words[i + 2] || '');
+      if (places[three.trim()]) { rest.push(three.trim()); i += 2; } else if (places[two.trim()]) { rest.push(two.trim()); i += 1; } else rest.push(words[i]); }
+    rest.forEach(function(w){ L.push('"' + w + '"'); T.push(function(c){ return [c.market, c.country, c.region, c.id, c.band, c.title, c.stage].concat(c.flags || [], c.notes || [], c.q || []).join(' ').toLowerCase().indexOf(w) >= 0; }); });
+    return { labels: raw && raw.trim() ? L : [], test: function(c){ for (var j = 0; j < T.length; j++) if (!T[j](c)) return false; return true; } };
+  }
+  function showQ(P){ var el = $('kqi'); if (!el) { var kn = $('kn'); if (!kn) return; el = document.createElement('p'); el.id = 'kqi'; el.className = 'kqi'; kn.parentNode.insertBefore(el, kn); }
+    el.innerHTML = P.labels.length ? 'Showing projects with: ' + P.labels.map(function(l){ return '<b>' + esc(l) + '</b>'; }).join(' ') : ''; }
   function list(){
-    var q = S.q.toLowerCase();
-    var L = C.filter(function(c){ return (!S.m || c.market === S.m) && tierOk(c) && (!q || JSON.stringify(c).toLowerCase().indexOf(q) >= 0); });
+    var P = parseQ(S.q); showQ(P);
+    var L = C.filter(function(c){ return (!S.m || c.market === S.m) && tierOk(c) && P.test(c); });
     var ord = { clear: 0, mixed: 1, caution: 2 };
     if (S.sort === 'best') L.sort(function(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (a.flags || []).length - (b.flags || []).length; });
     if (S.sort === 'worst') L.sort(function(a, b){ return ord[b.tier] - ord[a.tier] || (a.score || 0) / (a.max || 6) - (b.score || 0) / (b.max || 6); });
@@ -43,12 +78,12 @@
       return '<li class="' + (ok ? 'y' : half ? 'h' : 'n') + '"><i aria-hidden="true">' + (ok ? '✓' : half ? '~' : '✗') + '</i>' + esc(txt) + vb + '</li>'; }).join('') + (R.length < 6 ? '<li class="u"><i aria-hidden="true">·</i><em>Deposit protection, progress and track record: being researched</em></li>' : '');
     var steps = [['Promises read by AI', c.read, c.read ? c.checked : 'Queued'], ['Developer invited', !!c.invited, c.invited || 'Next'], ['Registry check', false, 'Pending'], ['Site visit with GPS video', false, 'Pending'], ['Verified and published', false, 'Pending']];
     return '<article class="case kc t-' + esc(c.tier || 'mixed') + '"><header><span class="cid">' + esc(c.id) + '</span><span class="kt" style="color:' + t[1] + ';border-color:' + t[1] + '">' + t[0] + '</span></header>' +
-      '<h3>Off-plan project · ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + '<small> · ' + esc(c.country) + '</small></h3><p class="cmeta">' + esc(meta) + '</p>' +
+      '<h3>Off-plan project · ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + '<small> · ' + esc(c.country) + '</small></h3><p class="cmeta">' + esc(meta) + '</p>' + (c.overdue ? '<p class="kod">⏱ ' + c.overdue + ' month' + (c.overdue === 1 ? '' : 's') + ' past the promised handover</p>' : '') +
       (mx === 6 ? (full(c) ? '<p class="k100 y">✓ 100% public: all 6 checks published</p>' : '<p class="k100 n">Not 100%: missing ' + esc(CK.filter(function(k){ return !okk(c, k[0]); }).map(function(k){ return k[1].split(' (')[0].toLowerCase(); }).join(', ')) + '</p>') : '') + '<div class="ksc"><b>' + (c.score || 0) + '/' + mx + '</b><span>public checks' + (mx < 6 ? ' (deeper research pending)' : '') + '</span><i style="width:' + ((c.score || 0) / mx * 100) + '%;background:' + t[1] + '"></i></div><ul class="k6">' + ticks + '</ul>' +
       (c.vscore != null ? '<p class="kvs"><b>' + c.vscore + '/6</b> confirmed by a registry or independent source' + (c.claims ? ' · ' + (c.claims.verified + c.claims.unverified + c.claims.contradicted) + ' claims checked: ' + c.claims.verified + ' verified, ' + c.claims.unverified + ' unverified' + (c.claims.contradicted ? ', <b class="kv x">' + c.claims.contradicted + ' contradicted</b>' : '') : '') + (c.delay ? ' · handover moved ' + c.delay + ' months' : '') + '</p>' : '') +
       ((c.flags || []).length ? '<p class="kfl">' + c.flags.map(function(f){ return '<span>⚠ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
       ((c.notes || []).length ? '<p class="kfl kno">' + c.notes.map(function(f){ return '<span>ℹ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
-      '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      '<p class="kopen"><a href="/p/?id=' + encodeURIComponent(c.id) + '">Open project file →</a><a href="/compare/?ids=' + encodeURIComponent(c.id) + '">Compare</a></p>' + '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
       '<ol class="csteps">' + steps.map(function(x){ return '<li class="' + (x[1] ? 'ok1' : '') + '"><span>' + x[0] + '</span><small>' + esc(x[2]) + '</small></li>'; }).join('') + '</ol>' +
       '<p class="kfoll"><a href="/check#analyze">Buying here? Get a free desk review →</a></p></details></article>';
   }
