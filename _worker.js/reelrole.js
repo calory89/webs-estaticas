@@ -120,7 +120,23 @@ export async function render(req, res, u, env, ctx) {
       const place = j.remote ? 'Remote' : [j.city, j.country].filter(Boolean).map(clean).join(', ');
       const title = `${clean(j.title)}${j.company_name ? ' at ' + clean(j.company_name) : ''}${place ? ', ' + place : ''} | ReelRole`;
       const description = clean(j.description || '').replace(/\s+/g, ' ').slice(0, 155) || `Apply to ${clean(j.title)} with a short video on ReelRole.`;
-      return rewrite(res, { title, description, canonical: ORIGIN + '/jobs/' + jm[1].toLowerCase(), robots: 'index, follow' });
+      // Google Jobs: JobPosting structured data with only the facts the post has.
+      const canonicalJob = ORIGIN + '/jobs/' + jm[1].toLowerCase();
+      const posting = {
+        '@context': 'https://schema.org', '@type': 'JobPosting',
+        title: clean(j.title), description: clean(j.description || j.title || ''),
+        datePosted: (j.published_at || new Date().toISOString()).slice(0, 10),
+        hiringOrganization: { '@type': 'Organization', name: clean(j.company_name) || 'Confidential company' },
+        directApply: true, url: canonicalJob,
+      };
+      const ET = { full_time: 'FULL_TIME', part_time: 'PART_TIME', contract: 'CONTRACTOR', freelance: 'CONTRACTOR', internship: 'INTERN', temporary: 'TEMPORARY' };
+      if (j.employment_type && ET[String(j.employment_type).toLowerCase()]) posting.employmentType = ET[String(j.employment_type).toLowerCase()];
+      if (j.remote) {
+        posting.jobLocationType = 'TELECOMMUTE';
+        posting.applicantLocationRequirements = { '@type': 'Country', name: clean(j.country) || 'Worldwide' };
+      }
+      if (j.city || j.country) posting.jobLocation = { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: clean(j.city) || undefined, addressCountry: clean(j.country) || undefined } };
+      return rewrite(res, { title, description, canonical: canonicalJob, robots: 'index, follow', extraHead: ld(posting) });
     }
 
     const m = path.match(/^\/v\/([^/]+)$/);
