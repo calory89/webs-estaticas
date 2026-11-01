@@ -286,7 +286,7 @@
    "theme": "Developer trust standard",
    "title": "Open disclosure standard",
    "desc": "A public, versioned list of what every off-plan project should publish.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 42,
@@ -335,7 +335,7 @@
    "theme": "Developer trust standard",
    "title": "Template documents",
    "desc": "Free templates for escrow letters, progress reports and permit pages.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 49,
