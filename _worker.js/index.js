@@ -94,7 +94,7 @@ export default {
   },
   async site(req, env, ctx, u, host) {
     // kolaboro.com: desk-review API (see kolaboro.js).
-    if (host === 'kolaboro.com' && (u.pathname === '/api/open' || u.pathname.startsWith('/api/open/') || u.pathname === '/feed.json' || u.pathname === '/feed.xml')) { if (!kb) kb = await import('./kolaboro.js'); return kb.open(req, u); }
+    if (host === 'kolaboro.com' && (u.pathname === '/api/open' || u.pathname.startsWith('/api/open/') || u.pathname === '/feed.json' || u.pathname === '/feed.xml' || u.pathname === '/feed/alerts.xml')) { if (!kb) kb = await import('./kolaboro.js'); return kb.open(req, u); }
     if (host === 'kolaboro.com' && (u.pathname.startsWith('/api/kb/') || u.pathname === '/api/v1' || u.pathname.startsWith('/api/v1/'))) { if (!kb) kb = await import('./kolaboro.js'); return kb.api(req, u, env, ctx); }
     // jobersity.com: 301, HTML propio en /oferta/<id> y /empresa|company/<slug>, sitemap de empresas, 404 reales y cabeceras (see jobersity.js).
     if (host === 'jobersity.com' && req.method === 'GET') {

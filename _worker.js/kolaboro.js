@@ -499,7 +499,7 @@ const OPEN_DOC = {
     'GET /api/open/markets': 'per-market statistics and the transparency index (0-100)',
     'GET /api/open/markets.csv': 'same, CSV',
     'GET /api/open/openapi.json': 'OpenAPI 3.1 description',
-    'GET /feed.json, /feed.xml': 'shipping log and new data, JSON Feed and RSS'
+    'GET /feed.json, /feed.xml': 'shipping log and new data, JSON Feed and RSS', 'GET /feed.xml?market=Bali': 'changes and alerts for one market or country', 'GET /feed/alerts.xml': 'overdue, stalled and unapproved projects across all markets', 'GET /api/open/badge/{id}.svg': 'live badge for a project, for portals and listings'
   }
 };
 function openapiSpec() {
@@ -544,6 +544,33 @@ export async function open(req, u) {
   }
   const m = path.match(/^\/api\/open\/projects\/([A-Za-z0-9-]{3,20})$/);
   if (m) { const c = cases.find(x => x.id.toLowerCase() === m[1].toLowerCase()); return c ? openResp({ ...meta, project: openProject(c), questions: c.q || [], flags: c.flags || [], notes: c.notes || [] }) : new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } }); }
+  if (path === '/feed/alerts.xml' || ((path === '/feed.xml' || path === '/feed.json') && u.searchParams.get('market'))) {
+    const mk = (u.searchParams.get('market') || '').toLowerCase();
+    const pool = cases.filter(c => !mk || c.market.toLowerCase() === mk || (c.country || '').toLowerCase() === mk);
+    const items = [];
+    pool.forEach(c => {
+      (c.history || []).forEach((h, i) => items.push({ id: c.id + '-h' + h.d + '-' + i, date: h.d, title: c.id + ' (' + c.market + '): ' + h.f + ' changed from ' + (h.from === null ? 'not stated' : h.from) + ' to ' + (h.to === null ? 'not stated' : h.to), url: 'https://kolaboro.com/p/?id=' + c.id }));
+      if (c.overdue >= 6) items.push({ id: c.id + '-od-' + c.overdue, date: d.updated, title: c.id + ' (' + c.market + '): ' + c.overdue + ' months past the promised handover', url: 'https://kolaboro.com/p/?id=' + c.id });
+      if (c.sat && c.sat.status === 'no visible change' && c.stage === 'under construction') items.push({ id: c.id + '-sat-' + c.sat.date, date: c.sat.date, title: c.id + ' (' + c.market + '): sold as under construction, almost no change visible from space in a year', url: 'https://kolaboro.com/p/?id=' + c.id });
+      if (c.register && c.register.status !== 'approved') items.push({ id: c.id + '-reg-' + c.register.checked, date: c.register.checked, title: c.id + ' (' + c.market + '): ' + c.register.register + ', ' + c.register.item + ': ' + c.register.status, url: 'https://kolaboro.com/p/?id=' + c.id });
+    });
+    const alertsOnly = path === '/feed/alerts.xml';
+    const list = items.filter(x => !alertsOnly || /past the promised|from space|not approved|not in the approved/.test(x.title)).sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
+    const title = alertsOnly ? 'Kolaboro alerts: overdue, stalled and unapproved projects' : 'Kolaboro: ' + (pool.length && new Set(pool.map(c => c.market)).size > 1 ? pool[0].country : (pool[0] ? pool[0].market : mk)) + ' changes';
+    if (path.endsWith('.json')) return openResp({ version: 'https://jsonfeed.org/version/1.1', title, home_page_url: 'https://kolaboro.com/database', items: list.map(x => ({ id: x.id, url: x.url, title: x.title, content_text: x.title, date_published: x.date + 'T12:00:00Z' })) }, 'application/feed+json; charset=utf-8');
+    return openResp('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>' + xesc(title) + '</title><link>https://kolaboro.com/database</link><description>Changes on developer pages and alerts from the Kolaboro database. Projects are anonymous.</description>' +
+      list.map(x => '<item><title>' + xesc(x.title) + '</title><link>' + x.url + '</link><guid isPermaLink="false">' + xesc(x.id) + '</guid><pubDate>' + new Date((x.date || d.updated) + 'T12:00:00Z').toUTCString() + '</pubDate></item>').join('') + '</channel></rss>', 'application/rss+xml; charset=utf-8');
+  }
+  const bm = path.match(/^\/api\/open\/badge\/([A-Za-z0-9-]{3,20})\.svg$/);
+  if (bm) {
+    const c = cases.find(x => x.id.toLowerCase() === bm[1].toLowerCase());
+    const L = c ? (c.score + '/6 public · ' + (c.vscore || 0) + '/6 confirmed') : 'not tracked';
+    const col = !c ? '#59626B' : (c.flags || []).length ? '#B83A05' : c.score >= 5 && (c.vscore || 0) >= 3 ? '#0B7A55' : c.score >= 3 ? '#9A6B00' : '#B83A05';
+    const w1 = 66, w2 = 8 + L.length * 6.4, W = Math.round(w1 + w2);
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="22" role="img" aria-label="Kolaboro: ' + xesc(L) + '"><title>Kolaboro: ' + xesc(L) + (c ? ' (checked ' + xesc(c.checked || d.updated) + ')' : '') + '</title><rect width="' + W + '" height="22" rx="4" fill="#17212B"/><rect x="' + w1 + '" width="' + (W - w1) + '" height="22" rx="4" fill="' + col + '"/><rect x="' + w1 + '" width="6" height="22" fill="' + col + '"/>' +
+      '<g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11"><circle cx="10" cy="11" r="3.5" fill="#FF5B14"/><text x="18" y="15">kolaboro</text><text x="' + (w1 + 6) + '" y="15">' + xesc(L) + '</text></g></svg>';
+    return new Response(svg, { headers: { 'content-type': 'image/svg+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } });
+  }
   if (path === '/feed.json' || path === '/feed.xml') {
     const items = (d.ships || []).map((s, i) => ({ id: 'kolaboro-' + s.d + '-' + i, date: s.d + 'T12:00:00Z', title: s.t, tag: s.k }));
     if (path === '/feed.json') return openResp({ version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: what we shipped', home_page_url: 'https://kolaboro.com/changelog', feed_url: 'https://kolaboro.com/feed.json', items: items.map(x => ({ id: x.id, url: 'https://kolaboro.com/changelog', title: x.title, content_text: x.title, date_published: x.date, tags: [x.tag] })) }, 'application/feed+json; charset=utf-8');

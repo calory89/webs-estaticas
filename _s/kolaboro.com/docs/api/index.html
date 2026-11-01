@@ -53,6 +53,9 @@
 <li><code>GET <a href="/api/open/markets">/api/open/markets</a></code> and <code><a href="/api/open/markets.csv">.csv</a></code>: per market, including the transparency index</li>
 <li><code>GET <a href="/api/open/openapi.json">/api/open/openapi.json</a></code>: OpenAPI 3.1 description</li>
 <li><code><a href="/feed.xml">/feed.xml</a></code> (RSS) and <code><a href="/feed.json">/feed.json</a></code>: what we ship, every day</li>
+<li><code><a href="/feed.xml?market=Bali">/feed.xml?market=Bali</a></code>: changes on developer pages and alerts for one market or country</li>
+<li><code><a href="/feed/alerts.xml">/feed/alerts.xml</a></code>: projects overdue by 6+ months, stalled from space, or missing an official approval</li>
+<li><code>GET /api/open/badge/{id}.svg</code>: a live badge for listings and portals, e.g. <img src="/api/open/badge/DXB-001.svg" alt="Kolaboro badge example" height="22" style="vertical-align:middle"></li>
 </ul>
 <pre style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
 <h2>Verify evidence</h2><p>Look up the timestamp of any SHA-256 fingerprint from a Kolaboro report. Returns the OpenTimestamps proof (base64) and, once confirmed, the Bitcoin block height.</p>
