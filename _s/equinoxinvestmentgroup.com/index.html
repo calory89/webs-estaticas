@@ -468,6 +468,17 @@ footer{background:var(--ink);color:rgba(245,240,231,.74);padding:76px 0 calc(40p
   .equinox{height:auto}.equinox .stick{position:relative;height:auto;padding:140px 0;--t:1;--tc:1}
   .cur{display:none}
 }
+
+/* cookie consent */
+.cc{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:96;max-width:440px;padding:20px 20px 18px;border-radius:20px;background:rgba(13,17,23,.97);color:var(--on-night);border:1px solid var(--line-n2);box-shadow:0 30px 60px -20px rgba(0,0,0,.6);font-size:.9rem;line-height:1.5;transform:translateY(20px);opacity:0;transition:opacity .4s,transform .4s var(--ease);pointer-events:none}
+.cc.on{opacity:1;transform:none;pointer-events:auto}
+.cc .mono{color:var(--sun);margin-bottom:8px}
+.cc p{color:var(--on-night-2)}
+.cc a{color:var(--on-night)}
+.cc .row2{display:flex;gap:10px;margin-top:16px}
+.cc .btn{flex:1}
+@media (min-width:700px){.cc{left:24px;right:auto}}
+.linkbtn{padding:4px 0;opacity:.85;text-align:left;text-decoration:none;cursor:pointer}.linkbtn:hover{opacity:1;color:#fff}
 @media print{nav.top,.sidx,.totop,.cur,#orbit,.stars,.marquee{display:none!important}.manifesto,.equinox{height:auto}.manifesto .stick,.equinox .stick{position:static;height:auto}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -700,12 +711,34 @@ footer{background:var(--ink);color:rgba(245,240,231,.74);padding:76px 0 calc(40p
       <div><div class="big">Equinox Investment Group</div><p>A venture builder. We design, launch and operate companies, and run them like an engine.</p><div class="mail"><a class="btn btn-sm" href="mailto:carlos@equinoxinvestmentgroup.com">Email us <span class="ar">→</span></a><button class="btn btn-sm" id="copyMail" type="button">Copy address</button></div></div>
       <div><h4>Portfolio</h4><a href="https://ecobeachcity.com" rel="noopener">Eco Beach City</a><a href="https://realhunt.co" rel="noopener">RealHunt</a><a href="https://jurimatch.com" rel="noopener">JuriMatch</a><a href="https://reelrole.com" rel="noopener">ReelRole</a><a href="https://happylowcost.com" rel="noopener">Happy Low Cost</a><a href="https://top3hotels.com" rel="noopener">Top3Hotels</a><a href="#portfolio">All thirteen</a></div>
       <div><h4>Work with us</h4><a href="/operators/apply/">Operators</a><a href="/investors/brief/">Investors</a><a href="/12ambassadors/">Ambassadors</a><a href="/jobs/">Jobs</a><a href="#faq">FAQ</a></div>
-      <div><h4>Legal</h4><a href="/privacy-policy/">Privacy</a><a href="/cookie-policy/">Cookies</a><a href="/terms/">Terms</a><a href="/disclaimer/">Disclaimer</a></div>
+      <div><h4>Legal</h4><a href="/privacy-policy/">Privacy</a><a href="/cookie-policy/">Cookies</a><button class="linkbtn" type="button" id="cookieSettings">Cookie settings</button><a href="/terms/">Terms</a><a href="/disclaimer/">Disclaimer</a></div>
     </div>
     <div class="legal"><span>© <span id="yr">2026</span> Equinox Investment Group LLC · Wyoming, USA</span><span>Nothing on this site is an offer to sell securities or investment advice.</span></div>
   </div>
 </footer>
 
+<div class="cc" id="cc" role="dialog" aria-label="Cookie preferences" aria-hidden="true">
+  <div class="mono">Cookies</div>
+  <p>We use essential cookies to run the site. With your permission we also use Google Analytics and Microsoft Clarity to understand how it is used. Nothing is loaded until you accept. <a href="/cookie-policy/">Cookie Policy</a></p>
+  <div class="row2"><button class="btn btn-sm" type="button" id="ccNo">Reject</button><button class="btn btn-primary btn-sm" type="button" id="ccYes">Accept</button></div>
+</div>
+<script>
+(function(){
+  var cc=document.getElementById('cc'),K='eq_cookie_consent';
+  function get(){try{return localStorage.getItem(K)}catch(e){return null}}
+  function hasCookie(){return /(?:^|;\s*)eq_consent=/.test(document.cookie)}
+  function show(){cc.classList.add('on');cc.setAttribute('aria-hidden','false')}
+  function hide(){cc.classList.remove('on');cc.setAttribute('aria-hidden','true')}
+  function save(v){try{localStorage.setItem(K,v)}catch(e){}document.cookie='eq_consent='+(v==='accepted'?'all':'essential')+'; path=/; max-age=15552000; samesite=lax; secure';hide();if(v==='accepted')location.reload()}
+  function wipe(){['_ga','_clck','_clsk','cf_zaraz_client'].forEach(function(n){document.cookie=n+'=; path=/; max-age=0';document.cookie=n+'=; path=/; domain=.'+location.hostname+'; max-age=0'});document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(/^_ga_/.test(n)){document.cookie=n+'=; path=/; max-age=0';document.cookie=n+'=; path=/; domain=.'+location.hostname+'; max-age=0'}})}
+  document.getElementById('ccYes').addEventListener('click',function(){save('accepted')});
+  document.getElementById('ccNo').addEventListener('click',function(){var was=/(?:^|;\s*)eq_consent=all/.test(document.cookie);wipe();save('rejected');if(was)location.reload()});
+  var cs=document.getElementById('cookieSettings');if(cs)cs.addEventListener('click',function(){show();document.getElementById('ccYes').focus()});
+  var v=get();
+  if(v&&!hasCookie())save(v);           // choice made in the app before the edge cookie existed
+  else if(!v||!hasCookie())setTimeout(show,900);
+})();
+</script>
 <a class="totop" id="totop" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 <div class="toast" id="toast" role="status" aria-live="polite"><i></i><span></span></div>
 

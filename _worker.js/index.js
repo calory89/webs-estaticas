@@ -77,7 +77,7 @@ function kbHeaders(r, u) {
   return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
 }
 // equinoxinvestmentgroup.com: browser security headers (no framing, no plugins, admin never indexed or cached) and long cache for fonts
-function eqHeaders(r, u) {
+function eqHeaders(r, u, req) {
   const h = new Headers(r.headers);
   const ct = h.get('content-type') || '';
   if (/^\/fonts\/.+\.woff2$/.test(u.pathname) && r.status === 200) h.set('cache-control', 'public, max-age=31536000, immutable');
@@ -85,7 +85,12 @@ function eqHeaders(r, u) {
   if (/text\/html/.test(ct)) {
     const adm = /^\/admin(\/|$)/.test(u.pathname);
     h.set('x-frame-options', 'DENY');
-    h.set('content-security-policy', "frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests");
+    // analytics (Zaraz: GA4 + Clarity) may load only after the visitor accepts cookies (eq_consent=all set by the site's banner)
+    const ok = /(?:^|;\s*)eq_consent=all(?:;|$)/.test(req.headers.get('cookie') || '');
+    const o = 'https://' + u.host;
+    const scripts = ok ? '' : "script-src 'unsafe-inline' " + o + '/assets/ ' + o + '/cdn-cgi/scripts/ ' + o + '/cdn-cgi/challenge-platform/ https://static.cloudflareinsights.com; ';
+    h.set('content-security-policy', scripts + "frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests");
+    h.append('vary', 'Cookie');
     h.set('permissions-policy', 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()');
     h.set('cross-origin-opener-policy', 'same-origin');
     h.set('strict-transport-security', 'max-age=31536000');
@@ -117,7 +122,7 @@ export default {
       }
     }
     if (u.pathname.startsWith('/__sb/')) return sbProxy(req, u);
-    if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u);
+    if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u, req);
     if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || /^\/m\/[^/.]{2,60}\/?$/.test(u.pathname) || u.pathname === '/sitemap-data.xml')) {
       if (!kb) kb = await import('./kolaboro.js');
       if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
