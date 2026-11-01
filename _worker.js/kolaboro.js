@@ -176,6 +176,7 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/document' && req.method === 'POST') return logged('document', () => documentRead(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/report-draft' && req.method === 'POST') return logged('report_draft', () => reportDraft(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/telegram' && req.method === 'POST') return telegram(req, env, ctx);
+  if (u.pathname === '/api/kb/ask' && req.method === 'POST') return logged('ask', () => ask(req, env, ctx), ctx);
   if (u.pathname.startsWith('/api/v1')) return apiV1(req, u, env, ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
   if (u.pathname === '/api/kb/health') return health(env);
@@ -585,4 +586,34 @@ async function telegram(req, env, ctx) {
     return tgSend(env, chat, L.join('\n'));
   })().catch(() => {}));
   return json({ ok: true });
+}
+
+// ---------- Ask the database: plain-language questions answered only from the published data ----------
+const ASK_PROMPT = `You answer questions about the Kolaboro database of off-plan property projects. Use ONLY the data below. Projects are anonymous (ids like BALI-014); never guess names, developers or facts that are not in the data. If the data cannot answer, say what it can tell instead.
+Definitions: six public checks per project (permit number public, deposit protection, construction progress, plans, developer track record, no guaranteed returns); score = how many are public (0-6); confirmed (vscore) = how many are confirmed by an official registry or independent source; claims = developer claims tested (verified, unverified, contradicted); overdue = months past the promised handover; transparency index = 60% avg score/6 + 30% avg confirmed/6 + 10% share without public problems.
+A high score means documents are public, not that they are genuine. Not financial or legal advice.
+Reply with ONLY one JSON object: {"answer": "2 to 5 plain sentences with the key numbers", "numbers": [{"label": "short", "value": "short"}] (0 to 4), "projects": ["ids worth opening, max 6"], "follow_up": ["up to 2 short follow-up questions"]}`;
+export async function ask(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  const q = String(b.q || '').replace(/\s+/g, ' ').trim().slice(0, 300);
+  if (q.length < 4) return json({ error: 'question' }, 400);
+  const ck = new Request('https://kolaboro.com/__kb_ask/' + encodeURIComponent(q.toLowerCase()));
+  const hit = await caches.default.match(ck); if (hit) return json({ ...(await hit.json()), cached: true });
+  if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
+  let d; try { d = await openData(); } catch (e) { return json({ error: 'data' }, 503); }
+  const cases = d.cases || [], ql = q.toLowerCase();
+  const ms = marketStats(cases).map(m => [m.market, m.country, m.projects, m.avg_checks, m.avg_confirmed, m.permit_public_pct, m.deposit_protection_pct, m.all_six_public, m.with_flags, m.transparency_index].join('|'));
+  const named = [...new Set(cases.map(c => c.market).concat(cases.map(c => c.country)))].filter(x => x && ql.includes(x.toLowerCase()));
+  const pick = (named.length ? cases.filter(c => named.includes(c.market) || named.includes(c.country)) : []).slice(0, 80);
+  const row = c => [c.id, c.market, c.stage || '', c.band || '', c.done || '', c.title || '', c.score, c.vscore ?? '', (c.checks || {}).permit === 2 ? 'permit' : '', (c.checks || {}).escrow === true ? 'escrow' : '', c.overdue || '', c.delay || '', (c.claims || {}).contradicted || 0, (c.flags || []).length].join('|');
+  const db = d.db || {};
+  const ctxt = 'DATA updated ' + d.updated + '\nTOTALS: ' + JSON.stringify({ projects: cases.length, markets: d.markets, countries: d.countries, claims: db.claims, claims_total: db.claims_total, checks_by_level: db.checks_by_level, stages: db.stages, all_six_public: db.all_six_public, with_flags: db.with_flags, overdue: db.overdue, overdue_avg_months: db.overdue_avg_months, delayed: db.delayed }) +
+    '\nMARKETS (market|country|projects|avg_checks|avg_confirmed|permit_public_pct|deposit_protection_pct|all_six_public|with_flags|transparency_index):\n' + ms.join('\n') +
+    (pick.length ? '\nPROJECTS IN NAMED MARKETS (id|market|stage|band|completion|title|score|confirmed|permit|escrow|overdue_months|delay_months|contradicted_claims|flags):\n' + pick.map(row).join('\n') : '');
+  let out; try { out = await claude(env, ASK_PROMPT + '\n\n' + ctxt + '\n\nQUESTION: ' + q); } catch (e) { return json({ error: 'model' }, 503); }
+  const ids = new Set(cases.map(c => c.id));
+  const res = { q, updated: d.updated, answer: String(out.answer || ''), numbers: (out.numbers || []).slice(0, 4), projects: (out.projects || []).filter(x => ids.has(x)).slice(0, 6), follow_up: (out.follow_up || []).slice(0, 2) };
+  ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
+  return json(res);
 }

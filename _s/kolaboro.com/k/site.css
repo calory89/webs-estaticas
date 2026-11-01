@@ -1033,3 +1033,20 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .kqi{font-size:.85rem;color:var(--muted);margin:6px 0}.kqi b{display:inline-block;background:var(--ink);color:#fff;border-radius:999px;padding:3px 9px;margin:2px 4px 2px 0;font-weight:600;font-size:.78rem}
 .kopen{display:flex;gap:16px;align-items:center;margin:10px 0 4px;font-weight:700;font-size:.9rem}.kopen a{color:var(--hivis-ink)}.kopen a+a{color:var(--ink);font-weight:600}
 .kod{display:inline-block;margin:6px 0 0;background:#FDE3D6;color:var(--hivis-ink);border-radius:8px;padding:4px 8px;font-size:.8rem;font-weight:700}
+/* ask the database */
+.ask{background:var(--ink);color:#fff}.ask h2,.ask .lead{color:#fff}.ask .eyebrow{color:#FF8A55}
+.ask-form{display:flex;gap:10px;margin:18px 0 12px;max-width:820px}
+.ask-form input{flex:1;min-width:0;font:inherit;font-size:1.05rem;padding:14px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff}
+.ask-form input::placeholder{color:rgba(255,255,255,.55)}.ask-form input:focus{outline:2px solid #FF8A55;outline-offset:2px}
+.ask-ex,.ask-f{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.ask-chip{font:inherit;font-size:.85rem;padding:9px 14px;min-height:40px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:transparent;color:#E9E7E0;cursor:pointer;text-align:left}
+.ask-chip:hover{background:rgba(255,255,255,.1)}
+.ask-out{margin-top:20px;max-width:820px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px}
+.ask-a{font-size:1.08rem;line-height:1.55;margin:0 0 14px;color:#fff}
+.ask-n{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:0 0 14px}.ask-n div{background:rgba(255,255,255,.07);border-radius:12px;padding:10px 12px}
+.ask-n b{display:block;font-size:1.3rem;color:#4BE3A4}.ask-n span{font-size:.8rem;color:#B8BFC6}
+.ask-p a{color:#FF8A55;font-weight:700;margin-right:8px}.ask-src{font-size:.78rem;color:#9AA4AE;margin:12px 0 0}
+.ask-wait{display:flex;align-items:center;gap:10px;margin:0;color:#B8BFC6}.ask-wait span{width:14px;height:14px;border-radius:50%;border:2px solid #FF8A55;border-top-color:transparent;animation:askSpin .8s linear infinite}
+@keyframes askSpin{to{transform:rotate(360deg)}}
+@media (max-width:600px){.ask-form{flex-direction:column}.ask-form .btn{width:100%}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
