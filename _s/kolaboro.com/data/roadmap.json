@@ -118,7 +118,7 @@
    "theme": "Money and escrow",
    "title": "Refund tracker",
    "desc": "Track refund requests to developers with dated evidence.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 18,
@@ -167,14 +167,14 @@
    "theme": "Data products for business",
    "title": "Government dashboard",
    "desc": "Market-level transparency data for regulators, free.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 25,
    "theme": "Data products for business",
    "title": "Research licence",
    "desc": "Bulk data and history for investors and analysts.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 26,
@@ -545,7 +545,7 @@
    "theme": "Growth and distribution",
    "title": "Partner program for lawyers",
    "desc": "Lawyers refer buyers and get case files in return.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 79,
