@@ -1,15 +1,15 @@
 {
  "updated": "2026-11-01",
- "projects": 761,
+ "projects": 835,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-01",
    "market": "Abu Dhabi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 17,
+   "projects": 19,
    "title": {
     "leasehold": 0,
-    "known": 9
+    "known": 10
    },
    "lease": {
     "known": 0,
@@ -32,7 +32,7 @@
    "permit_numbers_published": 3,
    "plans_published": 5,
    "price_usd": {
-    "known": 13,
+    "known": 15,
     "median": 720000.0,
     "min": 368000.0,
     "max": 1879000.0
@@ -44,19 +44,12 @@
    },
    "completion": {
     "2027": 3,
-    "2028": 4,
+    "2028": 6,
     "2029": 3,
     "2030": 2,
     "unknown": 5
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -133,6 +126,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -183,13 +183,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -263,6 +256,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -270,10 +270,10 @@
    "updated": "2026-11-01",
    "market": "Ajman",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 5,
+   "projects": 6,
    "title": {
     "leasehold": 0,
-    "known": 4
+    "known": 5
    },
    "lease": {
     "known": 0,
@@ -294,10 +294,10 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 5,
    "price_usd": {
-    "known": 5,
-    "median": 230000.0,
+    "known": 6,
+    "median": 211000.0,
     "min": 100000.0,
     "max": 572000.0
    },
@@ -307,17 +307,10 @@
     "max": null
    },
    "completion": {
-    "2026": 1,
+    "2026": 2,
     "2028": 4
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -394,6 +387,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -444,13 +444,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -524,6 +517,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -576,13 +576,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -656,6 +649,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -663,7 +663,7 @@
    "updated": "2026-11-01",
    "market": "Algarve",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 7,
+   "projects": 8,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -689,9 +689,9 @@
    "permit_numbers_published": 1,
    "plans_published": 3,
    "price_usd": {
-    "known": 5,
-    "median": 648000.0,
-    "min": 572000.0,
+    "known": 6,
+    "median": 643000.0,
+    "min": 267000.0,
     "max": 1069000.0
    },
    "yield": {
@@ -702,16 +702,9 @@
    "completion": {
     "2027": 1,
     "2028": 1,
-    "unknown": 5
+    "unknown": 6
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -788,6 +781,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -841,13 +841,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -921,6 +914,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -971,13 +971,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1051,6 +1044,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1101,13 +1101,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1181,6 +1174,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1231,13 +1231,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1311,6 +1304,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1362,13 +1362,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1442,6 +1435,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1495,13 +1495,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1575,6 +1568,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1582,7 +1582,7 @@
    "updated": "2026-11-01",
    "market": "Balearics",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 4,
+   "projects": 5,
    "title": {
     "leasehold": 0,
     "known": 2
@@ -1606,10 +1606,10 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 2,
+   "plans_published": 3,
    "price_usd": {
-    "known": 3,
-    "median": 810000.0,
+    "known": 4,
+    "median": 674000.0,
     "min": 366000.0,
     "max": 4828000.0
    },
@@ -1619,7 +1619,7 @@
     "max": null
    },
    "completion": {
-    "2027": 1,
+    "2027": 2,
     "2028": 1,
     "2029": 1,
     "unknown": 1
@@ -1628,13 +1628,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1708,6 +1701,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1715,57 +1715,50 @@
    "updated": "2026-11-01",
    "market": "Bali",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 66,
+   "projects": 75,
    "title": {
-    "leasehold": 33,
-    "known": 36
+    "leasehold": 36,
+    "known": 42
    },
    "lease": {
-    "known": 28,
-    "median": 30.0,
+    "known": 31,
+    "median": 30,
     "min": 25,
     "max": 50,
     "hist": {
-     "under 30": 9,
-     "30 to 34": 16,
+     "under 30": 11,
+     "30 to 34": 17,
      "35 to 39": 1,
      "40 or more": 2
     }
    },
    "extension_promised": {
-    "yes": 27,
-    "known": 28
+    "yes": 30,
+    "known": 33
    },
-   "guaranteed_language": 8,
-   "permit_claims": 10,
+   "guaranteed_language": 10,
+   "permit_claims": 11,
    "permit_numbers_published": 0,
-   "plans_published": 26,
+   "plans_published": 28,
    "price_usd": {
-    "known": 47,
-    "median": 176000.0,
+    "known": 53,
+    "median": 190000.0,
     "min": 11000.0,
     "max": 1050000.0
    },
    "yield": {
-    "known": 37,
-    "median": 12,
-    "max": 18
+    "known": 42,
+    "median": 12.0,
+    "max": 40
    },
    "completion": {
     "2024": 1,
-    "2026": 8,
-    "2027": 22,
+    "2026": 10,
+    "2027": 25,
     "2028": 7,
-    "unknown": 28
+    "unknown": 32
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -1842,6 +1835,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1895,13 +1895,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -1975,6 +1968,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -1982,7 +1982,7 @@
    "updated": "2026-11-01",
    "market": "Barbados",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -2019,16 +2019,10 @@
     "max": null
    },
    "completion": {
+    "2027": 1,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -2105,6 +2099,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2156,13 +2157,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -2236,6 +2230,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2287,13 +2288,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -2367,6 +2361,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2418,13 +2419,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -2498,6 +2492,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2552,13 +2553,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -2632,6 +2626,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2683,13 +2684,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -2763,6 +2757,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2815,13 +2816,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -2895,6 +2889,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -2948,13 +2949,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3028,6 +3022,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3080,13 +3081,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3160,6 +3154,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3167,7 +3168,7 @@
    "updated": "2026-11-01",
    "market": "Canary Islands",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 4,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -3193,10 +3194,10 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 1,
-    "median": 727000.0,
+    "known": 2,
+    "median": 1009000.0,
     "min": 727000.0,
-    "max": 727000.0
+    "max": 1291000.0
    },
    "yield": {
     "known": 0,
@@ -3204,16 +3205,9 @@
     "max": null
    },
    "completion": {
-    "unknown": 4
+    "unknown": 6
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -3290,6 +3284,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3343,13 +3344,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3423,6 +3417,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3474,13 +3475,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3554,6 +3548,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3604,13 +3605,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3684,6 +3678,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3734,13 +3735,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3814,6 +3808,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3865,13 +3866,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -3945,6 +3939,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -3997,13 +3998,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -4077,6 +4071,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4084,7 +4085,7 @@
    "updated": "2026-11-01",
    "market": "Costa Blanca",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 5,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -4108,11 +4109,11 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 3,
+   "plans_published": 4,
    "price_usd": {
-    "known": 4,
-    "median": 391000.0,
-    "min": 362000.0,
+    "known": 5,
+    "median": 373000.0,
+    "min": 356000.0,
     "max": 431000.0
    },
    "yield": {
@@ -4122,17 +4123,11 @@
    },
    "completion": {
     "2026": 1,
+    "2027": 1,
     "2028": 2,
     "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -4209,6 +4204,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4216,7 +4218,7 @@
    "updated": "2026-11-01",
    "market": "Costa Rica",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 8,
+   "projects": 9,
    "title": {
     "leasehold": 0,
     "known": 2
@@ -4242,10 +4244,10 @@
    "permit_numbers_published": 0,
    "plans_published": 3,
    "price_usd": {
-    "known": 7,
-    "median": 313000.0,
+    "known": 8,
+    "median": 346000.0,
     "min": 179000.0,
-    "max": 670000.0
+    "max": 1170000.0
    },
    "yield": {
     "known": 0,
@@ -4255,16 +4257,9 @@
    "completion": {
     "2026": 2,
     "2027": 4,
-    "unknown": 2
+    "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -4341,6 +4336,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4348,10 +4350,10 @@
    "updated": "2026-11-01",
    "market": "Costa del Sol",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 18,
+   "projects": 19,
    "title": {
     "leasehold": 0,
-    "known": 1
+    "known": 2
    },
    "lease": {
     "known": 0,
@@ -4374,10 +4376,10 @@
    "permit_numbers_published": 0,
    "plans_published": 15,
    "price_usd": {
-    "known": 17,
+    "known": 18,
     "median": 427000.0,
     "min": 329000.0,
-    "max": 1242000.0
+    "max": 3672000.0
    },
    "yield": {
     "known": 0,
@@ -4386,18 +4388,11 @@
    },
    "completion": {
     "2026": 1,
-    "2027": 6,
+    "2027": 7,
     "2028": 1,
     "unknown": 10
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -4474,6 +4469,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4527,13 +4529,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -4607,6 +4602,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4657,13 +4659,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -4737,6 +4732,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4744,7 +4746,7 @@
    "updated": "2026-11-01",
    "market": "Cyprus",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 7,
+   "projects": 8,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -4770,8 +4772,8 @@
    "permit_numbers_published": 0,
    "plans_published": 3,
    "price_usd": {
-    "known": 4,
-    "median": 678000.0,
+    "known": 5,
+    "median": 632000.0,
     "min": 232000.0,
     "max": 886000.0
    },
@@ -4783,16 +4785,9 @@
    "completion": {
     "2027": 2,
     "2028": 2,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -4869,6 +4864,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -4919,13 +4921,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -4999,6 +4994,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5049,13 +5051,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -5129,6 +5124,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5160,7 +5162,7 @@
    "guaranteed_language": 0,
    "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 1,
+   "plans_published": 2,
    "price_usd": {
     "known": 5,
     "median": 352000.0,
@@ -5181,13 +5183,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -5261,6 +5256,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5268,10 +5270,10 @@
    "updated": "2026-11-01",
    "market": "Dubai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 59,
+   "projects": 71,
    "title": {
     "leasehold": 0,
-    "known": 17
+    "known": 27
    },
    "lease": {
     "known": 0,
@@ -5290,12 +5292,12 @@
     "known": 0
    },
    "guaranteed_language": 1,
-   "permit_claims": 30,
-   "permit_numbers_published": 34,
-   "plans_published": 15,
+   "permit_claims": 31,
+   "permit_numbers_published": 35,
+   "plans_published": 22,
    "price_usd": {
-    "known": 55,
-    "median": 490000.0,
+    "known": 65,
+    "median": 466000.0,
     "min": 135000.0,
     "max": 15584000.0
    },
@@ -5306,20 +5308,13 @@
    },
    "completion": {
     "2026": 9,
-    "2027": 13,
-    "2028": 19,
-    "2029": 13,
-    "2030": 4,
+    "2027": 19,
+    "2028": 23,
+    "2029": 14,
+    "2030": 5,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -5396,6 +5391,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5446,13 +5448,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -5526,6 +5521,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5576,13 +5578,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -5656,6 +5651,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5706,13 +5708,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -5786,6 +5781,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5840,13 +5842,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -5920,6 +5915,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -5970,13 +5972,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6050,6 +6045,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6101,13 +6103,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6181,6 +6176,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6232,13 +6234,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6312,6 +6307,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6362,13 +6364,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6442,6 +6437,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6493,13 +6495,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6573,6 +6568,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6580,10 +6582,10 @@
    "updated": "2026-11-01",
    "market": "Georgia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 8,
+   "projects": 9,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 1
    },
    "lease": {
     "known": 0,
@@ -6606,8 +6608,8 @@
    "permit_numbers_published": 0,
    "plans_published": 4,
    "price_usd": {
-    "known": 5,
-    "median": 91000.0,
+    "known": 6,
+    "median": 83000.0,
     "min": 23000.0,
     "max": 111000.0
    },
@@ -6617,19 +6619,12 @@
     "max": 8.7
    },
    "completion": {
-    "2027": 4,
+    "2027": 5,
     "2028": 1,
     "2029": 2,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -6706,6 +6701,143 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
+    }
+   ]
+  },
+  "Gili Islands": {
+   "updated": "2026-11-01",
+   "market": "Gili Islands",
+   "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+   "projects": 1,
+   "title": {
+    "leasehold": 0,
+    "known": 1
+   },
+   "lease": {
+    "known": 0,
+    "median": null,
+    "min": null,
+    "max": null,
+    "hist": {
+     "under 30": 0,
+     "30 to 34": 0,
+     "35 to 39": 0,
+     "40 or more": 0
+    }
+   },
+   "extension_promised": {
+    "yes": 0,
+    "known": 0
+   },
+   "guaranteed_language": 0,
+   "permit_claims": 0,
+   "permit_numbers_published": 0,
+   "plans_published": 0,
+   "price_usd": {
+    "known": 1,
+    "median": 130000.0,
+    "min": 130000.0,
+    "max": 130000.0
+   },
+   "yield": {
+    "known": 0,
+    "median": null,
+    "max": null
+   },
+   "completion": {
+    "unknown": 1
+   },
+   "runs": [
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 572,
+     "pages_failed": 74,
+     "changes": 49
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 577,
+     "pages_failed": 69,
+     "changes": 15
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 12
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 691,
+     "pages_failed": 70,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 678,
+     "pages_failed": 83,
+     "changes": 25
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6756,13 +6888,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6836,6 +6961,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -6887,13 +7019,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -6967,6 +7092,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7019,13 +7151,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -7099,6 +7224,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7106,7 +7238,7 @@
    "updated": "2026-11-01",
    "market": "Greece",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 10,
    "title": {
     "leasehold": 0,
     "known": 2
@@ -7130,7 +7262,7 @@
    "guaranteed_language": 0,
    "permit_claims": 2,
    "permit_numbers_published": 0,
-   "plans_published": 2,
+   "plans_published": 3,
    "price_usd": {
     "known": 4,
     "median": 3413000.0,
@@ -7145,18 +7277,11 @@
    "completion": {
     "2026": 1,
     "2027": 2,
-    "2028": 2,
+    "2028": 3,
     "2029": 1,
     "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -7233,6 +7358,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7284,13 +7416,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -7364,6 +7489,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7414,13 +7546,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -7494,6 +7619,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7545,13 +7677,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -7625,6 +7750,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7676,13 +7808,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -7756,6 +7881,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7806,13 +7938,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -7886,6 +8011,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -7938,13 +8070,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -8018,6 +8143,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8025,7 +8157,7 @@
    "updated": "2026-11-01",
    "market": "Istanbul",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 11,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -8051,9 +8183,9 @@
    "permit_numbers_published": 0,
    "plans_published": 5,
    "price_usd": {
-    "known": 2,
-    "median": 450000.0,
-    "min": 295000.0,
+    "known": 4,
+    "median": 318000.0,
+    "min": 140000.0,
     "max": 605000.0
    },
    "yield": {
@@ -8062,19 +8194,13 @@
     "max": 5
    },
    "completion": {
+    "2025": 1,
     "2027": 1,
     "2028": 1,
     "2029": 1,
-    "unknown": 6
+    "unknown": 7
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -8151,6 +8277,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8202,13 +8335,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -8282,6 +8408,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8332,13 +8465,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -8412,6 +8538,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8462,13 +8595,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -8542,6 +8668,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8593,13 +8726,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -8673,6 +8799,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8723,13 +8856,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -8803,6 +8929,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8810,10 +8943,10 @@
    "updated": "2026-11-01",
    "market": "Koh Samui",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 10,
    "title": {
     "leasehold": 7,
-    "known": 8
+    "known": 9
    },
    "lease": {
     "known": 7,
@@ -8831,13 +8964,13 @@
     "yes": 5,
     "known": 5
    },
-   "guaranteed_language": 1,
+   "guaranteed_language": 2,
    "permit_claims": 0,
    "permit_numbers_published": 0,
    "plans_published": 3,
    "price_usd": {
-    "known": 8,
-    "median": 230000.0,
+    "known": 9,
+    "median": 228000.0,
     "min": 91000.0,
     "max": 350000.0
    },
@@ -8848,17 +8981,10 @@
    },
    "completion": {
     "2026": 1,
-    "2027": 4,
+    "2027": 5,
     "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -8935,6 +9061,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -8960,8 +9093,8 @@
     }
    },
    "extension_promised": {
-    "yes": 0,
-    "known": 0
+    "yes": 1,
+    "known": 1
    },
    "guaranteed_language": 0,
    "permit_claims": 0,
@@ -8984,13 +9117,6 @@
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -9067,6 +9193,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9117,13 +9250,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -9197,6 +9323,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9249,13 +9382,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -9329,6 +9455,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9379,13 +9512,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -9459,6 +9585,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9510,13 +9643,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -9590,6 +9716,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9641,13 +9774,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -9721,6 +9847,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9752,7 +9885,7 @@
    "guaranteed_language": 1,
    "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 3,
+   "plans_published": 2,
    "price_usd": {
     "known": 3,
     "median": 589000.0,
@@ -9769,13 +9902,6 @@
     "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -9852,6 +9978,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9904,13 +10037,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -9984,6 +10110,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -9991,21 +10124,21 @@
    "updated": "2026-11-01",
    "market": "Lombok",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 21,
+   "projects": 24,
    "title": {
-    "leasehold": 10,
-    "known": 13
+    "leasehold": 11,
+    "known": 14
    },
    "lease": {
-    "known": 10,
-    "median": 50.0,
+    "known": 11,
+    "median": 60,
     "min": 28,
-    "max": 80,
+    "max": 90,
     "hist": {
      "under 30": 1,
      "30 to 34": 1,
      "35 to 39": 1,
-     "40 or more": 7
+     "40 or more": 8
     }
    },
    "extension_promised": {
@@ -10017,30 +10150,23 @@
    "permit_numbers_published": 0,
    "plans_published": 9,
    "price_usd": {
-    "known": 18,
-    "median": 143000.0,
+    "known": 19,
+    "median": 135000.0,
     "min": 16000.0,
     "max": 275000.0
    },
    "yield": {
-    "known": 9,
-    "median": 15,
+    "known": 10,
+    "median": 15.0,
     "max": 20
    },
    "completion": {
     "2026": 2,
     "2027": 5,
-    "2028": 3,
-    "unknown": 11
+    "2028": 4,
+    "unknown": 13
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -10117,6 +10243,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10169,13 +10302,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -10249,6 +10375,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10256,7 +10389,7 @@
    "updated": "2026-11-01",
    "market": "Los Cabos",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 8,
+   "projects": 9,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -10295,16 +10428,9 @@
    "completion": {
     "2026": 1,
     "2027": 1,
-    "unknown": 6
+    "unknown": 7
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -10381,6 +10507,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10432,13 +10565,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -10512,6 +10638,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10519,10 +10652,10 @@
    "updated": "2026-11-01",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 15,
+   "projects": 18,
    "title": {
     "leasehold": 2,
-    "known": 12
+    "known": 13
    },
    "lease": {
     "known": 1,
@@ -10545,10 +10678,10 @@
    "permit_numbers_published": 5,
    "plans_published": 5,
    "price_usd": {
-    "known": 9,
+    "known": 11,
     "median": 203000.0,
     "min": 120000.0,
-    "max": 437000.0
+    "max": 474000.0
    },
    "yield": {
     "known": 0,
@@ -10556,21 +10689,14 @@
     "max": null
    },
    "completion": {
-    "2027": 1,
-    "2028": 2,
+    "2027": 2,
+    "2028": 3,
     "2029": 2,
     "2030": 2,
     "2032": 1,
-    "unknown": 7
+    "unknown": 8
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -10647,6 +10773,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10698,13 +10831,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -10778,6 +10904,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10830,13 +10963,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -10910,6 +11036,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -10961,13 +11094,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -11041,6 +11167,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11093,13 +11226,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -11173,6 +11299,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11225,13 +11358,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -11305,6 +11431,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11357,13 +11490,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -11437,6 +11563,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11488,13 +11621,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -11568,6 +11694,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11575,10 +11708,10 @@
    "updated": "2026-11-01",
    "market": "Mexico City",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 4,
+   "projects": 5,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 1
    },
    "lease": {
     "known": 0,
@@ -11601,10 +11734,10 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 1500000.0,
+    "min": 1500000.0,
+    "max": 1500000.0
    },
    "yield": {
     "known": 0,
@@ -11612,17 +11745,10 @@
     "max": null
    },
    "completion": {
-    "2027": 1,
+    "2027": 2,
     "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -11699,6 +11825,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11706,7 +11839,7 @@
    "updated": "2026-11-01",
    "market": "Miami",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 10,
+   "projects": 12,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -11744,19 +11877,12 @@
    },
    "completion": {
     "2027": 3,
-    "2028": 2,
+    "2028": 3,
     "2029": 1,
     "2030": 1,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -11833,6 +11959,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -11840,10 +11973,10 @@
    "updated": "2026-11-01",
    "market": "Montenegro",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 7,
+   "projects": 8,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 1
    },
    "lease": {
     "known": 0,
@@ -11864,31 +11997,24 @@
    "guaranteed_language": 1,
    "permit_claims": 2,
    "permit_numbers_published": 1,
-   "plans_published": 2,
+   "plans_published": 3,
    "price_usd": {
-    "known": 6,
-    "median": 159000.0,
+    "known": 7,
+    "median": 204000.0,
     "min": 71000.0,
     "max": 928000.0
    },
    "yield": {
-    "known": 1,
-    "median": 4.2,
+    "known": 2,
+    "median": 4.1,
     "max": 4.2
    },
    "completion": {
     "2027": 3,
-    "2028": 3,
+    "2028": 4,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -11965,6 +12091,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12017,13 +12150,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -12097,6 +12223,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12148,13 +12281,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -12228,6 +12354,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12279,10 +12412,133 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
+     "pages_ok": 572,
+     "pages_failed": 74,
+     "changes": 49
     },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 577,
+     "pages_failed": 69,
+     "changes": 15
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 12
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 691,
+     "pages_failed": 70,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 678,
+     "pages_failed": 83,
+     "changes": 25
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
+    }
+   ]
+  },
+  "Naples": {
+   "updated": "2026-11-01",
+   "market": "Naples",
+   "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+   "projects": 1,
+   "title": {
+    "leasehold": 0,
+    "known": 0
+   },
+   "lease": {
+    "known": 0,
+    "median": null,
+    "min": null,
+    "max": null,
+    "hist": {
+     "under 30": 0,
+     "30 to 34": 0,
+     "35 to 39": 0,
+     "40 or more": 0
+    }
+   },
+   "extension_promised": {
+    "yes": 0,
+    "known": 0
+   },
+   "guaranteed_language": 0,
+   "permit_claims": 0,
+   "permit_numbers_published": 0,
+   "plans_published": 0,
+   "price_usd": {
+    "known": 1,
+    "median": 3700000.0,
+    "min": 3700000.0,
+    "max": 3700000.0
+   },
+   "yield": {
+    "known": 0,
+    "median": null,
+    "max": null
+   },
+   "completion": {
+    "unknown": 1
+   },
+   "runs": [
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -12359,6 +12615,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12410,13 +12673,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -12490,6 +12746,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12541,13 +12804,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -12621,6 +12877,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12672,13 +12935,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -12752,6 +13008,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12802,13 +13065,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -12882,6 +13138,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -12889,7 +13152,7 @@
    "updated": "2026-11-01",
    "market": "Niseko",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 3,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -12926,18 +13189,12 @@
     "max": null
    },
    "completion": {
+    "2025": 1,
     "2026": 1,
     "2029": 1,
     "2030": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -13014,6 +13271,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13021,7 +13285,7 @@
    "updated": "2026-11-01",
    "market": "Northern Cyprus",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 6,
+   "projects": 7,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -13045,10 +13309,10 @@
    "guaranteed_language": 1,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 5,
    "price_usd": {
-    "known": 5,
-    "median": 209000.0,
+    "known": 6,
+    "median": 206000.0,
     "min": 149000.0,
     "max": 1391000.0
    },
@@ -13058,18 +13322,12 @@
     "max": 8
    },
    "completion": {
+    "2026": 1,
     "2027": 3,
     "2028": 2,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -13146,6 +13404,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13197,13 +13462,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -13277,6 +13535,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13330,13 +13595,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -13410,6 +13668,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13461,13 +13726,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -13541,6 +13799,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13591,13 +13856,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -13671,6 +13929,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13723,13 +13988,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -13803,6 +14061,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13810,7 +14075,7 @@
    "updated": "2026-11-01",
    "market": "Panama City",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 4,
+   "projects": 5,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -13849,16 +14114,9 @@
    "completion": {
     "2029": 1,
     "2030": 1,
-    "unknown": 2
+    "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -13935,6 +14193,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -13942,10 +14207,10 @@
    "updated": "2026-11-01",
    "market": "Pattaya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 10,
+   "projects": 11,
    "title": {
     "leasehold": 0,
-    "known": 7
+    "known": 8
    },
    "lease": {
     "known": 0,
@@ -13966,10 +14231,10 @@
    "guaranteed_language": 0,
    "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 5,
+   "plans_published": 6,
    "price_usd": {
-    "known": 2,
-    "median": 264000.0,
+    "known": 3,
+    "median": 273000.0,
     "min": 203000.0,
     "max": 325000.0
    },
@@ -13982,17 +14247,10 @@
     "2026": 2,
     "2027": 1,
     "2028": 2,
-    "2029": 3,
+    "2029": 4,
     "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -14069,6 +14327,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14119,13 +14384,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -14199,6 +14457,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14206,10 +14471,10 @@
    "updated": "2026-11-01",
    "market": "Philippines",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 11,
+   "projects": 13,
    "title": {
     "leasehold": 0,
-    "known": 1
+    "known": 2
    },
    "lease": {
     "known": 0,
@@ -14229,8 +14494,8 @@
    },
    "guaranteed_language": 0,
    "permit_claims": 3,
-   "permit_numbers_published": 3,
-   "plans_published": 5,
+   "permit_numbers_published": 4,
+   "plans_published": 6,
    "price_usd": {
     "known": 6,
     "median": 214000.0,
@@ -14243,19 +14508,13 @@
     "max": 4.5
    },
    "completion": {
-    "2028": 1,
+    "2027": 1,
+    "2028": 2,
     "2030": 2,
     "2032": 1,
     "unknown": 7
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -14332,6 +14591,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14339,10 +14605,10 @@
    "updated": "2026-11-01",
    "market": "Phuket",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 17,
+   "projects": 19,
    "title": {
     "leasehold": 2,
-    "known": 8
+    "known": 10
    },
    "lease": {
     "known": 3,
@@ -14363,10 +14629,10 @@
    "guaranteed_language": 1,
    "permit_claims": 3,
    "permit_numbers_published": 0,
-   "plans_published": 8,
+   "plans_published": 9,
    "price_usd": {
-    "known": 13,
-    "median": 136000.0,
+    "known": 15,
+    "median": 126000.0,
     "min": 86000.0,
     "max": 308000.0
    },
@@ -14376,20 +14642,13 @@
     "max": 8.5
    },
    "completion": {
-    "2026": 2,
-    "2027": 1,
+    "2026": 3,
+    "2027": 2,
     "2028": 10,
     "2029": 1,
     "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -14466,6 +14725,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14514,13 +14780,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -14594,6 +14853,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14601,7 +14867,7 @@
    "updated": "2026-11-01",
    "market": "Portugal",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 7,
+   "projects": 8,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -14641,16 +14907,9 @@
     "2027": 2,
     "2029": 1,
     "2030": 1,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -14727,6 +14986,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14777,13 +15043,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -14857,6 +15116,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -14864,7 +15130,7 @@
    "updated": "2026-11-01",
    "market": "Puerto Vallarta",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 8,
+   "projects": 9,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -14888,7 +15154,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 5,
    "price_usd": {
     "known": 4,
     "median": 338000.0,
@@ -14903,16 +15169,9 @@
    "completion": {
     "2027": 2,
     "2028": 1,
-    "unknown": 5
+    "unknown": 6
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -14989,6 +15248,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15040,13 +15306,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -15120,6 +15379,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15173,13 +15439,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -15253,6 +15512,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15260,10 +15526,10 @@
    "updated": "2026-11-01",
    "market": "Ras Al Khaimah",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 15,
+   "projects": 17,
    "title": {
     "leasehold": 0,
-    "known": 9
+    "known": 11
    },
    "lease": {
     "known": 0,
@@ -15284,9 +15550,9 @@
    "guaranteed_language": 1,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 8,
+   "plans_published": 9,
    "price_usd": {
-    "known": 15,
+    "known": 17,
     "median": 654000.0,
     "min": 204000.0,
     "max": 2315000.0
@@ -15297,20 +15563,13 @@
     "max": null
    },
    "completion": {
-    "2026": 1,
+    "2026": 2,
     "2027": 3,
     "2028": 9,
-    "2029": 1,
+    "2029": 2,
     "2030": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -15387,6 +15646,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15394,10 +15660,10 @@
    "updated": "2026-11-01",
    "market": "Riviera Maya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 14,
+   "projects": 17,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 1
    },
    "lease": {
     "known": 0,
@@ -15420,10 +15686,10 @@
    "permit_numbers_published": 0,
    "plans_published": 5,
    "price_usd": {
-    "known": 9,
-    "median": 176000.0,
+    "known": 11,
+    "median": 206000.0,
     "min": 78000.0,
-    "max": 598000.0
+    "max": 778000.0
    },
    "yield": {
     "known": 0,
@@ -15432,16 +15698,9 @@
    },
    "completion": {
     "2029": 1,
-    "unknown": 13
+    "unknown": 16
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -15518,6 +15777,144 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
+    }
+   ]
+  },
+  "Riviera Nayarit": {
+   "updated": "2026-11-01",
+   "market": "Riviera Nayarit",
+   "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+   "projects": 2,
+   "title": {
+    "leasehold": 0,
+    "known": 2
+   },
+   "lease": {
+    "known": 0,
+    "median": null,
+    "min": null,
+    "max": null,
+    "hist": {
+     "under 30": 0,
+     "30 to 34": 0,
+     "35 to 39": 0,
+     "40 or more": 0
+    }
+   },
+   "extension_promised": {
+    "yes": 0,
+    "known": 0
+   },
+   "guaranteed_language": 0,
+   "permit_claims": 1,
+   "permit_numbers_published": 0,
+   "plans_published": 2,
+   "price_usd": {
+    "known": 2,
+    "median": 4950000.0,
+    "min": 4950000.0,
+    "max": 4950000.0
+   },
+   "yield": {
+    "known": 0,
+    "median": null,
+    "max": null
+   },
+   "completion": {
+    "2027": 1,
+    "unknown": 1
+   },
+   "runs": [
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 572,
+     "pages_failed": 74,
+     "changes": 49
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 577,
+     "pages_failed": 69,
+     "changes": 15
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 12
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 691,
+     "pages_failed": 70,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 678,
+     "pages_failed": 83,
+     "changes": 25
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15568,13 +15965,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -15648,6 +16038,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15701,13 +16098,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -15781,6 +16171,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15831,10 +16228,133 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
+     "pages_ok": 572,
+     "pages_failed": 74,
+     "changes": 49
     },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 577,
+     "pages_failed": 69,
+     "changes": 15
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 588,
+     "pages_failed": 58,
+     "changes": 12
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 691,
+     "pages_failed": 70,
+     "changes": 9
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 678,
+     "pages_failed": 83,
+     "changes": 25
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 677,
+     "pages_failed": 84,
+     "changes": 19
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 685,
+     "pages_failed": 76,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 85,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
+    }
+   ]
+  },
+  "Serbia": {
+   "updated": "2026-11-01",
+   "market": "Serbia",
+   "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+   "projects": 1,
+   "title": {
+    "leasehold": 0,
+    "known": 0
+   },
+   "lease": {
+    "known": 0,
+    "median": null,
+    "min": null,
+    "max": null,
+    "hist": {
+     "under 30": 0,
+     "30 to 34": 0,
+     "35 to 39": 0,
+     "40 or more": 0
+    }
+   },
+   "extension_promised": {
+    "yes": 0,
+    "known": 0
+   },
+   "guaranteed_language": 0,
+   "permit_claims": 0,
+   "permit_numbers_published": 0,
+   "plans_published": 1,
+   "price_usd": {
+    "known": 0,
+    "median": null,
+    "min": null,
+    "max": null
+   },
+   "yield": {
+    "known": 0,
+    "median": null,
+    "max": null
+   },
+   "completion": {
+    "2029": 1
+   },
+   "runs": [
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -15911,6 +16431,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -15962,13 +16489,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16042,6 +16562,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16049,10 +16576,10 @@
    "updated": "2026-11-01",
    "market": "Sharjah",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 8,
+   "projects": 10,
    "title": {
     "leasehold": 0,
-    "known": 6
+    "known": 7
    },
    "lease": {
     "known": 0,
@@ -16073,10 +16600,10 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 1,
+   "plans_published": 3,
    "price_usd": {
-    "known": 7,
-    "median": 572000.0,
+    "known": 9,
+    "median": 564000.0,
     "min": 190000.0,
     "max": 681000.0
    },
@@ -16086,19 +16613,12 @@
     "max": null
    },
    "completion": {
-    "2026": 1,
+    "2026": 2,
     "2028": 3,
     "2029": 2,
-    "unknown": 2
+    "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -16175,6 +16695,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16227,13 +16754,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16307,6 +16827,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16359,13 +16886,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16439,6 +16959,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16489,13 +17016,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16569,6 +17089,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16619,13 +17146,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16699,6 +17219,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16751,13 +17278,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16831,6 +17351,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16884,13 +17411,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -16964,6 +17484,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -16971,7 +17498,7 @@
    "updated": "2026-11-01",
    "market": "Tampa",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 2,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -16997,8 +17524,8 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 2,
-    "median": 983000.0,
+    "known": 3,
+    "median": 1000000.0,
     "min": 647000.0,
     "max": 1319000.0
    },
@@ -17009,16 +17536,10 @@
    },
    "completion": {
     "2027": 1,
-    "2029": 1
+    "2029": 1,
+    "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -17095,6 +17616,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17145,13 +17673,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -17225,6 +17746,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17276,13 +17804,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -17356,6 +17877,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17407,13 +17935,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -17487,6 +18008,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17538,13 +18066,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -17618,6 +18139,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17668,13 +18196,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -17748,6 +18269,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17755,10 +18283,10 @@
    "updated": "2026-11-01",
    "market": "Vietnam",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 11,
    "title": {
     "leasehold": 2,
-    "known": 3
+    "known": 4
    },
    "lease": {
     "known": 1,
@@ -17779,7 +18307,7 @@
    "guaranteed_language": 2,
    "permit_claims": 3,
    "permit_numbers_published": 2,
-   "plans_published": 3,
+   "plans_published": 4,
    "price_usd": {
     "known": 3,
     "median": 181000.0,
@@ -17793,19 +18321,12 @@
    },
    "completion": {
     "2026": 2,
-    "2027": 2,
+    "2027": 3,
     "2028": 1,
     "2029": 1,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
     {
      "date": "2026-11-01",
      "mode": "ai",
@@ -17882,6 +18403,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   },
@@ -17935,13 +18463,6 @@
     {
      "date": "2026-11-01",
      "mode": "ai",
-     "pages_ok": 585,
-     "pages_failed": 61,
-     "changes": 46
-    },
-    {
-     "date": "2026-11-01",
-     "mode": "ai",
      "pages_ok": 572,
      "pages_failed": 74,
      "changes": 49
@@ -18015,6 +18536,13 @@
      "pages_ok": 676,
      "pages_failed": 85,
      "changes": 14
+    },
+    {
+     "date": "2026-11-01",
+     "mode": "ai",
+     "pages_ok": 700,
+     "pages_failed": 135,
+     "changes": 10
     }
    ]
   }
