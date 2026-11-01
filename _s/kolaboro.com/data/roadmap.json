@@ -293,7 +293,7 @@
    "theme": "Developer trust standard",
    "title": "Developer response portal",
    "desc": "Developers answer findings with documents, free, before anything is published.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 43,
@@ -342,7 +342,7 @@
    "theme": "Developer trust standard",
    "title": "Right of reply on every case",
    "desc": "The developer's answer shown next to every finding.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 50,
