@@ -36,7 +36,7 @@ var KB = (function(){
   function call(action, payload){ if (D && D.user && D.user.demo && ['me','read','logout'].indexOf(action || 'me') < 0) { KB.toast('This is the demo account: nothing is saved. Create your own case to try it for real.'); return Promise.resolve(D); } return KB.rpc('kolaboro_portal', { p_token: TOKEN, p_action: action || 'me', p_payload: payload || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; } return d; }); }
   function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(undefined, { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
   function days(t){ return Math.ceil((new Date(t) - new Date()) / 864e5); }
-  function load(action, payload){ return call(action, payload).then(function(d){ if (d.error) { KB.toast('Could not save: ' + d.error); return; } D = d; if (!CUR || !D.cases.some(function(c){ return c.id === CUR; })) CUR = D.cases[0] && D.cases[0].id; render(); }); }
+  function load(action, payload){ return call(action, payload).then(function(d){ if (d.error) { KB.toast('Could not save: ' + d.error); return; } D = d; if (!CUR || !D.cases.some(function(c){ return c.id === CUR; })) CUR = D.cases[0] && D.cases[0].id; render(); syncWatch(); }); }
   function stageDate(c, i){ var l = c.log.filter(function(x){ return x.stage === i; })[0]; return l ? fmt(l.at) : ''; }
   function render(){
     var u = D.user, c = D.cases.filter(function(x){ return x.id === CUR; })[0];
@@ -44,20 +44,21 @@ var KB = (function(){
     var h = '';
     if (u.demo) h += '<div class="ap-banner ok" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between"><span>👋 <b>Demo account.</b> This is the real client portal with a fictional case, so you can see what a buyer sees. Nothing you type here is saved.</span><a class="btn btn-hi" href="/check#analyze" style="padding:8px 14px">Start my own case</a></div>';
     if (u.admin_view) h += '<div class="ap-banner admin">👁 Admin view: you are seeing exactly what ' + esc(u.email) + ' sees. Messages you send here appear as the Kolaboro team.</div>';
-    if (q.get('welcome')) h += '<div class="ap-banner ok">✓ Your account is ready and your case is open. Add your project details below so your agent can start.</div>';
-    if (u.status !== 'active') h += '<div class="ap-banner warn">⏳ We are confirming your PayPal payment. It usually takes a few hours. You can already add your project details and write to us.</div>';
+    if (q.get('welcome') === 'free') h += '<div class="ap-banner ok">✓ Your free account is ready. Projects you save with ☆ in the database now appear here on every device.</div>';
+    else if (q.get('welcome')) h += '<div class="ap-banner ok">✓ Your account is ready and your case is open. Add your project details below so your agent can start.</div>';
+    if (u.status === 'pending') h += '<div class="ap-banner warn">⏳ We are confirming your PayPal payment. It usually takes a few hours. You can already add your project details and write to us.</div>';
     if (D.cases.length > 1) h += '<div class="ap-cases">' + D.cases.map(function(x){ return '<button data-c="' + x.id + '" class="' + (x.id === CUR ? 'on' : '') + '"><b>' + esc(x.project_name || x.code) + '</b><small>' + esc(x.code) + ' · ' + (x.paid ? STAGES[x.stage] : 'Not paid yet') + '</small></button>'; }).join('') + '</div>';
-    if (!c) { $('app').innerHTML = h + '<div class="ap-card ap-empty">No cases yet. <button class="ap-btn" id="nc2">Check a project</button></div>'; return; }
+    if (!c) { $('app').innerHTML = h + homeHtml(u); bindPlus(null); return; }
     var v = VERD[c.verdict] || VERD.pending, st = c.stage, firstCase = D.cases[D.cases.length - 1].id === c.id;
     var unread = c.messages.filter(function(m){ return m.admin && !m.read; }).length;
     var steps = STAGES.map(function(s, i){ var cls = (i < st || (i === st && st === 5 && c.report_url)) ? 'done' : (i === st ? 'now' : ''); return '<li class="' + cls + '">' + s + '<small>' + (stageDate(c, i) || (i === 5 && c.eta ? 'due ' + fmt(c.eta) : '')) + '</small></li>'; }).join('');
     h += '<div class="ap-grid"><div class="ap-col">';
     h += '<section class="ap-card ap-hero"><p class="ap-k">Case ' + esc(c.code) + ' · opened ' + fmt(c.created_at) + '</p><h1>' + esc(c.project_name || (c.project_url ? c.project_url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : 'Your project')) + '</h1>' +
       '<p style="margin:0;color:#C9D0D6;position:relative;z-index:1">' + esc([c.developer, c.location, c.price_text].filter(Boolean).join(' · ') || 'Add the project details so your agent knows exactly what to check.') + (c.project_url ? ' · <a href="' + esc(c.project_url) + '" target="_blank" rel="noopener">website ↗</a>' : '') + '</p>' +
-      '<div class="ap-badges"><span class="ap-badge ' + v[1] + '">' + (c.verdict === 'pending' ? '● ' : '') + v[0] + '</span>' + (c.paid ? '' : '<span class="ap-badge hold">' + (firstCase && u.status !== 'active' ? 'Confirming payment' : 'Not paid yet') + '</span>') + (c.eta && st < 5 ? '<span class="ap-badge">Report due ' + fmt(c.eta) + (days(c.eta) >= 0 ? ' · ' + days(c.eta) + ' days' : '') + '</span>' : '') + '</div>' +
+      '<div class="ap-badges"><span class="ap-badge ' + v[1] + '">' + (c.verdict === 'pending' ? '● ' : '') + v[0] + '</span>' + (c.paid ? '' : '<span class="ap-badge hold">' + (firstCase && u.status === 'pending' ? 'Confirming payment' : 'Not paid yet') + '</span>') + (c.eta && st < 5 ? '<span class="ap-badge">Report due ' + fmt(c.eta) + (days(c.eta) >= 0 ? ' · ' + days(c.eta) + ' days' : '') + '</span>' : '') + '</div>' +
       '<ol class="ap-steps">' + steps + '</ol>' +
       '<div class="ap-now"><span class="ap-k">Now</span><div style="margin-top:4px">' + esc(c.stage_note || STAGE_HELP[st]) + '</div></div></section>';
-    if (!c.paid && (u.status === 'active' || !firstCase)) h += '<section class="ap-card" style="border-color:var(--hi)"><h2>Start this check</h2><p class="ap-muted">Pay €490 to start the full check of this project. Full refund if we can\'t take the case.</p><a class="ap-btn" href="' + PAY + '" rel="noopener">Pay €490 with PayPal</a></section>';
+    if (!c.paid && (u.status !== 'pending' || !firstCase)) h += '<section class="ap-card" style="border-color:var(--hi)"><h2>Start this check</h2><p class="ap-muted">Pay €490 to start the full check of this project. Full refund if we can\'t take the case.</p><a class="ap-btn" href="' + PAY + '" rel="noopener">Pay €490 with PayPal</a></section>';
     // report
     h += '<section class="ap-card"><h2>Your report</h2>' + (c.report_url ? '<div class="ap-report"><svg viewBox="0 0 40 40"><rect x="6" y="3" width="28" height="34" rx="4" fill="#17212B"/><path d="M12 13h16M12 19h16M12 25h10" stroke="#FF5B14" stroke-width="2.5" stroke-linecap="round"/></svg><div style="flex:1"><b>Report ready</b><div class="ap-small ap-muted">Verdict: ' + v[0] + '</div></div><a class="ap-btn" href="' + esc(c.report_url) + '" target="_blank" rel="noopener">Download</a></div>'
       : '<div class="ap-empty">Your written report appears here the day it\'s ready' + (c.eta ? ' (due ' + fmt(c.eta) + ')' : '') + '. <a href="/cases/files/kolaboro-report-example-safe-to-pay.pdf" target="_blank" rel="noopener">See an example report</a>.</div>') + '</section>';
@@ -75,6 +76,7 @@ var KB = (function(){
     if (c.next_payment_date) { var dd = days(c.next_payment_date), before = c.eta && new Date(c.next_payment_date) < new Date(c.eta) && !c.report_url;
       h += '<section class="ap-card"><p class="ap-k">Your next payment</p><div class="ap-money"><b>' + esc(c.next_payment_amount || '-') + '</b><span class="ap-muted">' + fmt(c.next_payment_date) + (dd >= 0 ? ' · in ' + dd + ' days' : ' · overdue') + '</span></div>' +
       (before ? '<div class="ap-banner warn" style="margin:12px 0 0">This payment is due before our report. Ask the developer for a few extra days, or tell us in the chat and we prioritise your case.</div>' : (c.verdict === 'safe' ? '<div class="ap-banner ok" style="margin:12px 0 0">No red flags at this milestone: the evidence supports paying this instalment.</div>' : '<p class="ap-small ap-muted" style="margin-bottom:0">We\'ll tell you here if it\'s OK to pay, based on the evidence.</p>')) + '</section>'; }
+    if (D.saved) h += schedHtml(c);
     // chat
     h += '<section class="ap-card"><h2>Messages' + (unread ? ' <span class="ap-att high">' + unread + ' new</span>' : '') + '</h2><p class="ap-small ap-muted" style="margin:0">With the Kolaboro team and your local agent. We reply within one working day.</p><div class="ap-chat" id="chat">' +
       c.messages.map(function(m){ var mine = u.admin_view ? m.admin : !m.admin; return '<div class="ap-msg ' + (mine ? 'me' : 'them') + '">' + esc(m.body) + '<small>' + (m.admin ? 'Kolaboro' : (u.admin_view ? esc(u.name) : 'You')) + ' · ' + fmt(m.at, true) + '</small></div>'; }).join('') +
@@ -84,8 +86,9 @@ var KB = (function(){
     h += '<section class="ap-card"><h2>What we need from you</h2><ul class="ap-chk">' + chk.map(function(x){ return '<li class="' + (x[1] ? 'y' : '') + '"><i>' + (x[1] ? '✓' : '') + '</i>' + x[0] + '</li>'; }).join('') + '</ul></section>';
     // timeline
     h += '<section class="ap-card"><h2>Case timeline</h2><ul class="ap-tl">' + c.log.slice().reverse().map(function(l){ return '<li><b>' + STAGES[l.stage] + '</b><div class="ap-small ap-muted">' + fmt(l.at, true) + '</div>' + (l.note ? '<div>' + esc(l.note) + '</div>' : '') + '</li>'; }).join('') + '</ul></section>';
+    if (D.saved) h += savedHtml();
     h += '</div></div>';
-    $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN);
+    $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN); bindPlus(c);
     var ch = $('chat'); if (ch) ch.scrollTop = ch.scrollHeight;
     document.querySelectorAll('[data-c]').forEach(function(b){ b.onclick = function(){ CUR = b.dataset.c; render(); }; });
     $('df').addEventListener('submit', function(e){ e.preventDefault(); var o = { case_id: c.id }; new FormData(e.target).forEach(function(v, k){ o[k] = v; }); load('update_case', o).then(function(){ KB.toast('Saved'); }); });
@@ -93,6 +96,71 @@ var KB = (function(){
     $('mf').body.addEventListener('keydown', function(e){ if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) $('mf').requestSubmit(); });
     if (unread && !u.admin_view) call('read', { case_id: c.id });
     if (!c.desk && c.project_url && !deskBusy[c.id]) runDesk(c);
+  }
+  // ---- free accounts, saved projects, payment schedule (needs the 1 Nov database update; hidden until D.saved exists)
+  function homeHtml(u){
+    var first = esc((u.name || '').split(' ')[0] || 'there');
+    var h = '<div class="ap-grid"><div class="ap-col"><section class="ap-card ap-hero"><p class="ap-k">Free account</p><h1>Welcome, ' + first + '.</h1><p style="margin:0;color:#C9D0D6;position:relative;z-index:1">Save projects from the database, get a free desk review of any developer website, and keep your payment schedule in one place. When you want someone on the ground to check a project before you pay, open a case.</p></section>';
+    h += '<section class="ap-card"><h2>Check a project</h2><p class="ap-muted ap-small" style="margin-top:0">Paste the developer\'s website or listing. Our research agent reads it in about a minute and lists what to ask before paying. The desk review is free; the on-the-ground check is €490 and starts only when you pay.</p><form id="hf" class="ap-send"><input name="u" type="url" required placeholder="https://developer-website.com/project" style="flex:1;min-height:48px;padding:0 14px;border:1px solid #D8D6CE;border-radius:12px;font:inherit"><button class="ap-btn">Open case</button></form></section>';
+    h += '<section class="ap-card"><h2>How it works</h2><ol class="ap-list"><li>Save the projects you are considering. We show you here when their public record changes.</li><li>Open a case for the one you are about to pay. The desk review is free.</li><li>Pay €490 for the full check: land title, building permit, developer and a site visit by someone who lives there.</li><li>Before each instalment, you see whether the evidence supports paying it.</li></ol><p class="ap-small ap-muted" style="margin-bottom:0"><a href="/database/">Browse the database</a> · <a href="/cases/files/kolaboro-report-example-safe-to-pay.pdf" target="_blank" rel="noopener">Example report</a> · <a href="/pricing/">Pricing</a></p></section>';
+    h += '</div><div class="ap-col">' + (D.saved ? savedHtml() : '') + '</div></div>';
+    return h;
+  }
+  function savedHtml(){
+    var S = D.saved || [];
+    return '<section class="ap-card" id="saved"><h2>Saved projects' + (S.length ? ' <span class="ap-muted ap-small">' + S.length + '</span>' : '') + '</h2>' + (S.length ? '<ul class="kp-sv">' + S.map(function(x){ return '<li data-ref="' + esc(x.ref) + '"><a href="/p/' + encodeURIComponent(x.ref) + '/"><b>' + esc(x.ref) + '</b></a><span class="kp-svi ap-small ap-muted">Loading…</span><button class="kp-x" data-unsave="' + esc(x.ref) + '" aria-label="Remove ' + esc(x.ref) + '">✕</button></li>'; }).join('') + '</ul>' : '<p class="ap-muted ap-small">Nothing saved yet. Press ☆ Save on any <a href="/database/">project in the database</a> and it appears here, on every device you log in from.</p>') + '</section>';
+  }
+  function schedHtml(c){
+    var S = c.schedule || [], t = new Date().toISOString().slice(0, 10), next = S.filter(function(p){ return !p.paid; })[0];
+    var h = '<section class="ap-card" id="sched"><h2>Payment schedule</h2><p class="ap-small ap-muted" style="margin-top:0">Copy each instalment from your contract. We use it to tell you, before each one, whether the evidence supports paying.</p>';
+    if (next && next.due) { var dd = days(next.due), before = c.eta && next.due < c.eta && !c.report_url;
+      h += '<div class="ap-banner ' + (dd < 0 ? 'warn' : before ? 'warn' : 'ok') + '" style="margin:0 0 10px"><b>Next: ' + esc(next.label) + (next.amount ? ' · ' + esc(next.amount) : '') + '</b> ' + (dd < 0 ? 'was due ' + fmt(next.due) : dd === 0 ? 'is due today' : 'in ' + dd + ' day' + (dd > 1 ? 's' : '')) + (before ? '. It falls before our report: ask the developer for a few days, or tell us in the chat.' : c.verdict === 'safe' ? '. No red flags at this milestone.' : c.verdict === 'hold' || c.verdict === 'stop' ? '. Our current advice: hold this payment.' : '') + '</div>'; }
+    if (S.length) h += '<table class="kp-tab"><tr><th></th><th>Instalment</th><th>Due</th><th>Amount</th><th></th></tr>' + S.map(function(p){ return '<tr class="' + (p.paid ? 'pd' : (p.due && p.due < t ? 'od' : '')) + '"><td><input type="checkbox" data-tp="' + p.id + '"' + (p.paid ? ' checked' : '') + ' aria-label="Paid"></td><td>' + esc(p.label) + (p.milestone ? '<div class="ap-small ap-muted">' + esc(p.milestone) + '</div>' : '') + '</td><td>' + (p.due ? fmt(p.due) : '-') + '</td><td>' + esc(p.amount || '') + '</td><td><button class="kp-x" data-dp="' + p.id + '" aria-label="Delete">✕</button></td></tr>'; }).join('') + '</table>';
+    h += '<form id="pf2" class="kp-pf"><input name="label" placeholder="e.g. 2nd instalment" required><input name="due" type="date"><input name="amount" placeholder="Amount"><input name="milestone" placeholder="Tied to (e.g. roof finished)" class="full"><button class="ap-btn" type="submit">Add</button></form>' +
+      (S.some(function(p){ return p.due && !p.paid; }) ? '<p class="ap-small" style="margin-bottom:0"><a href="#" id="ics">Add the unpaid instalments to your calendar</a> (reminder 7 days before each)</p>' : '') + '</section>';
+    return h;
+  }
+  function ics(c){
+    var L = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Kolaboro//Payment schedule//EN','CALSCALE:GREGORIAN'];
+    function e(t){ return String(t || '').replace(/[\;,]/g, function(m){ return '\\' + m; }).replace(/\n/g, '\\n'); }
+    (c.schedule || []).filter(function(p){ return p.due && !p.paid; }).forEach(function(p){ var d = p.due.replace(/-/g, ''), n = new Date(p.due + 'T00:00:00Z'); n.setUTCDate(n.getUTCDate() + 1); var d2 = n.toISOString().slice(0, 10).replace(/-/g, '');
+      L.push('BEGIN:VEVENT','UID:kb-' + c.code + '-' + p.id + '@kolaboro.com','DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z','DTSTART;VALUE=DATE:' + d,'DTEND;VALUE=DATE:' + d2,'SUMMARY:' + e((c.project_name || c.code) + ': ' + p.label + (p.amount ? ' (' + p.amount + ')' : '')),'DESCRIPTION:' + e('Before paying, check your Kolaboro case: https://kolaboro.com/portal' + (p.milestone ? '\nTied to: ' + p.milestone : '')),'BEGIN:VALARM','TRIGGER:-P7D','ACTION:DISPLAY','DESCRIPTION:' + e('In 7 days: ' + p.label),'END:VALARM','END:VEVENT'); });
+    L.push('END:VCALENDAR');
+    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([L.join('\r\n')], { type: 'text/calendar' })); a.download = 'kolaboro-' + c.code + '-payments.ics'; a.click();
+  }
+  var PCACHE = {};
+  function fillSaved(){
+    document.querySelectorAll('#saved li[data-ref]').forEach(function(li){ var ref = li.dataset.ref, sv = (D.saved || []).filter(function(x){ return x.ref === ref; })[0] || {}, out = li.querySelector('.kp-svi');
+      (PCACHE[ref] || (PCACHE[ref] = fetch('/api/open/projects/' + encodeURIComponent(ref)).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }))).then(function(d){
+        if (!d || !d.project) { out.textContent = 'No longer in the database'; return; }
+        var p = d.project, sn = sv.snap || {}, ch = [];
+        if (sn.score != null && sn.score !== p.score) ch.push('public score ' + sn.score + ' → ' + p.score);
+        if (sn.stage && p.stage && sn.stage !== p.stage) ch.push('stage ' + sn.stage + ' → ' + p.stage);
+        if (sn.flags != null && sn.flags !== p.flags) ch.push('public problems ' + sn.flags + ' → ' + p.flags);
+        out.innerHTML = esc([p.market, p.stage].filter(Boolean).join(' · ')) + ' · ' + (p.score != null ? p.score + '/' + (p.max || 6) + ' public' : '') + (p.flags ? ' · <b style="color:#B42318">' + p.flags + ' public problem' + (p.flags > 1 ? 's' : '') + '</b>' : '') + (ch.length ? '<br><b>Changed since you saved:</b> ' + esc(ch.join(', ')) : '');
+      }); });
+  }
+  function bindPlus(c){
+    var hf = $('hf'); if (hf) hf.onsubmit = function(e){ e.preventDefault(); var v = hf.u.value.trim(); if (!v) return; hf.querySelector('button').disabled = true; load('new_case', { project_url: v }).then(function(){ if (D.cases[0]) { CUR = D.cases[0].id; render(); KB.toast('Case opened. The desk review starts now.'); } }); };
+    document.querySelectorAll('[data-unsave]').forEach(function(b){ b.onclick = function(){ var r = b.dataset.unsave; try { if (window.KBWatch) KBWatch.remove(r); else { var L = JSON.parse(localStorage.getItem('kb_watch') || '[]'); localStorage.setItem('kb_watch', JSON.stringify(L.filter(function(x){ return String(x.id).toUpperCase() !== r.toUpperCase(); }))); } } catch (x) {} load('unsave_project', { ref: r }); }; });
+    if (c) {
+      document.querySelectorAll('[data-tp]').forEach(function(b){ b.onchange = function(){ load('toggle_pay', { case_id: c.id, id: +b.dataset.tp }); }; });
+      document.querySelectorAll('[data-dp]').forEach(function(b){ b.onclick = function(){ if (confirm('Delete this instalment?')) load('del_pay', { case_id: c.id, id: +b.dataset.dp }); }; });
+      var pf = $('pf2'); if (pf) pf.onsubmit = function(e){ e.preventDefault(); var o = { case_id: c.id }; new FormData(pf).forEach(function(v, k){ o[k] = v; }); load('add_pay', o).then(function(){ KB.toast('Added to your schedule'); }); };
+      var ic = $('ics'); if (ic) ic.onclick = function(e){ e.preventDefault(); ics(c); };
+    }
+    fillSaved();
+  }
+  var SYNCED = false;
+  function syncWatch(){
+    if (SYNCED || !D || !D.saved || D.user.demo || D.user.admin_view) return; SYNCED = true;
+    var L = []; try { L = JSON.parse(localStorage.getItem('kb_watch') || '[]'); } catch (x) {}
+    var have = {}; D.saved.forEach(function(x){ have[x.ref.toUpperCase()] = 1; });
+    var push = (Array.isArray(L) ? L : []).map(function(x){ return String(x && x.id || '').toUpperCase(); }).filter(function(r){ return /^[A-Z0-9-]{3,20}$/.test(r) && !have[r]; });
+    var local = {}; (Array.isArray(L) ? L : []).forEach(function(x){ local[String(x && x.id || '').toUpperCase()] = 1; });
+    var add = D.saved.filter(function(x){ return !local[x.ref.toUpperCase()]; }).map(function(x){ return { id: x.ref.toUpperCase(), snap: x.snap, added: String(x.at || '').slice(0, 10) }; });
+    if (add.length) try { localStorage.setItem('kb_watch', JSON.stringify(add.concat(L).slice(0, 200))); } catch (x) {}
+    if (push.length) load('save_many', { refs: push });
   }
   function fld(n, l, v, t, cls){ return '<label class="' + (cls || '') + '">' + l + '<input name="' + n + '" type="' + (t || 'text') + '" value="' + esc(v) + '"></label>'; }
   function deskHtml(c){
@@ -133,4 +201,5 @@ var KB = (function(){
   setTimeout(go, 1200); })();
 </script>
 <style>.r31-tour{position:fixed;left:16px;right:16px;bottom:16px;max-width:380px;margin-left:auto;background:#17212B;color:#fff;border-radius:16px;padding:18px;z-index:90;box-shadow:0 20px 40px -12px rgba(0,0,0,.5)}.r31-tour b{display:block;font-size:1.05rem;margin:2px 0 6px}.r31-tour p{margin:0;color:#C9D0D6;font-size:.92rem}.r31-tour .r31-tk{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#FF8A57;margin-bottom:4px}.r31-tour div{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}.r31-tour button{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid #55606B;background:transparent;color:#fff;font-weight:700;cursor:pointer}.r31-tour button.on{background:#FF5B14;border-color:#FF5B14;color:#17212B}</style>
+<style>.kp-sv{list-style:none;padding:0;margin:0}.kp-sv li{display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:10px 0;border-bottom:1px solid #ECEAE3}.kp-sv li .kp-svi{grid-column:1}.kp-sv li .kp-x{grid-row:1/3;grid-column:2;align-self:center}.kp-x{border:0;background:#F2F1EC;border-radius:8px;width:30px;height:30px;cursor:pointer}.kp-tab{width:100%;border-collapse:collapse;font-size:.9rem}.kp-tab td,.kp-tab th{padding:7px 4px;border-bottom:1px solid #ECEAE3;text-align:left;vertical-align:top}.kp-tab th{font-size:.72rem;text-transform:uppercase;color:#5E6B76}.kp-tab tr.pd td{color:#8A949C;text-decoration:line-through}.kp-tab tr.pd td:first-child,.kp-tab tr.pd td:last-child{text-decoration:none}.kp-tab tr.od td{color:#B42318}.kp-pf{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px}.kp-pf input{min-height:44px;padding:0 12px;border:1px solid #D8D6CE;border-radius:12px;font:inherit;min-width:0}.kp-pf .full{grid-column:1/3}@media(max-width:560px){.kp-pf{grid-template-columns:1fr}.kp-pf .full{grid-column:auto}}</style>
 </body></html>

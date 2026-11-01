@@ -64,7 +64,7 @@ input,select,textarea{font:inherit;padding:8px 10px;border:1px solid var(--line)
   <div class="card"><div class="row"><input id="agq" placeholder="Search agents…" style="flex:1"><select id="agf"><option value="">All statuses</option><option>academy</option><option>test</option><option>review</option><option>active</option><option>rejected</option></select></div><div id="agl" class="ag-cards"></div></div>
 </section>
 <section id="t-leads" class="hide">
-  <div class="card"><div class="row"><input id="q" placeholder="Search name, email, URL…" style="flex:1;min-width:200px"><select id="pf"><option value="">All types</option></select><select id="sf"><option value="">Any status</option><option>new</option><option>contacted</option><option>paid</option><option>no</option></select><button class="btn2" id="csv">Export CSV</button></div>
+  <div class="card"><div class="row"><input id="q" placeholder="Search name, email, URL…" style="flex:1;min-width:200px"><select id="pf"><option value="">All types</option></select><select id="sf"><option value="">Any status</option><option>new</option><option>contacted</option><option>qualified</option><option>proposal</option><option>won</option><option>lost</option></select><button class="btn2" id="csv">Export CSV</button></div>
   <div class="tw" style="margin-top:10px"><table id="lt"></table></div></div>
 </section>
 <section id="t-pay" class="hide">
@@ -87,9 +87,9 @@ function st(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function surl(u){u=String(u==null?'':u).trim();return /^https?:\/\//i.test(u)?esc(u):'#';}
 function rpc(fn,body){return fetch(SB+fn,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+KEY,'Content-Type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json()})}
-window.KBADM = { rpc: function(f, b){ return rpc(f, b); }, pw: function(){ return PW; } };
+window.KBADM = { rpc: function(f, b){ return rpc(f, b); }, pw: function(){ return PW; }, reload: function(){ return load(); }, D: null };
 function when(t){var d=new Date(t),s=(Date.now()-d)/1000;if(s<3600)return Math.max(1,Math.round(s/60))+' min ago';if(s<86400)return Math.round(s/3600)+' h ago';return d.toLocaleDateString(undefined,{day:'numeric',month:'short'})+' '+d.toTimeString().slice(0,5)}
-function load(){ $('upd').textContent='Loading…'; return rpc('kolaboro_admin',{p_key:PW}).then(function(d){ if(d.error){ st('kb-admin',null); $('app').classList.add('hide'); $('login').classList.remove('hide'); $('le').textContent='Wrong password.'; return;} D=d; $('login').classList.add('hide'); $('app').classList.remove('hide'); render(); $('upd').textContent='Updated '+new Date().toTimeString().slice(0,5); })}
+function load(){ $('upd').textContent='Loading…'; return rpc('kolaboro_admin',{p_key:PW}).then(function(d){ if(d.error){ st('kb-admin',null); $('app').classList.add('hide'); $('login').classList.remove('hide'); $('le').textContent='Wrong password.'; return;} D=d; window.KBADM.D=d; $('login').classList.add('hide'); $('app').classList.remove('hide'); render(); try{document.dispatchEvent(new CustomEvent('kbadm',{detail:d}))}catch(x){} $('upd').textContent='Updated '+new Date().toTimeString().slice(0,5); })}
 $('lf').addEventListener('submit',function(e){e.preventDefault();PW=$('pw').value;st('kb-admin',PW);load()});
 $('lo').onclick=function(){st('kb-admin',null);location.reload()}; $('rf').onclick=load;
 document.querySelectorAll('nav.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('nav.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});['ov','ops','growth','reports','audits','graph','clients','agents','leads','pay','tests','tools'].forEach(function(t){$('t-'+t).classList.toggle('hide',t!==b.dataset.t)}); if(b.dataset.t==='tests'&&!$('tt').innerHTML)runTests();}});
@@ -110,9 +110,9 @@ function render(){
   var plans={};L.forEach(function(l){plans[l.plan||'other']=1});$('pf').innerHTML='<option value="">All types</option>'+Object.keys(plans).map(function(p){return '<option>'+esc(p)+'</option>'}).join('');
   leads(); pays(); clients(); agLoad();
 }
-function flt(){var q=$('q').value.toLowerCase(),p=$('pf').value,s=$('sf').value;return D.leads.filter(function(l){return (!p||(l.plan||'other')===p)&&(!s||(l.status||'new')===s)&&(!q||JSON.stringify(l).toLowerCase().indexOf(q)>=0)})}
+function flt(){var q=$('q').value.toLowerCase(),p=$('pf').value,s=$('sf').value;return D.leads.filter(function(l){return (!p||(l.plan||'other')===p)&&(!s||({paid:'won',no:'lost'}[l.status]||l.status||'new')===s)&&(!q||JSON.stringify(l).toLowerCase().indexOf(q)>=0)})}
 function leads(){var r=flt();$('lt').innerHTML='<tr><th>When</th><th>Type</th><th>Name / email</th><th>Status</th><th>Country</th><th>Project / URL</th><th>Details</th></tr>'+r.map(function(l){var url=/^https?:/.test(l.learn||'')?'<a href="'+esc(l.learn)+'" target="_blank" rel="noopener">'+esc(l.learn.replace(/^https?:\/\/(www\.)?/,'').slice(0,40))+'</a>':esc(l.learn);
-  return '<tr><td>'+when(l.created_at)+'</td><td><span class="pill p-'+esc(l.plan)+'">'+esc(l.plan||'other')+'</span></td><td><b>'+esc(l.name)+'</b><br><a href="mailto:'+esc(l.email)+'">'+esc(l.email)+'</a>'+(l.phone?'<br>'+esc(l.phone):'')+'</td><td><select data-id="'+l.id+'">'+['new','contacted','paid','no'].map(function(s){return '<option'+((l.status||'new')===s?' selected':'')+'>'+s+'</option>'}).join('')+'</select></td><td>'+esc(l.country)+'</td><td>'+url+'</td><td><details><summary>'+esc((l.who||'').slice(0,40))+'</summary><p>'+esc(l.bring)+'</p><p class="muted">'+esc(l.source)+' · '+esc(l.lang)+' '+esc(l.week)+'</p></details></td></tr>'}).join('');
+  return '<tr><td>'+when(l.created_at)+'</td><td><span class="pill p-'+esc(l.plan)+'">'+esc(l.plan||'other')+'</span></td><td><b>'+esc(l.name)+'</b><br><a href="mailto:'+esc(l.email)+'">'+esc(l.email)+'</a>'+(l.phone?'<br>'+esc(l.phone):'')+'</td><td><select data-id="'+l.id+'">'+['new','contacted','qualified','proposal','won','lost'].map(function(s){var cur={paid:'won',no:'lost'}[l.status]||l.status||'new';return '<option'+(cur===s?' selected':'')+'>'+s+'</option>'}).join('')+'</select></td><td>'+esc(l.country)+'</td><td>'+url+'</td><td><details><summary>'+esc((l.who||'').slice(0,40))+'</summary><p>'+esc(l.bring)+'</p><p class="muted">'+esc(l.source)+' · '+esc(l.lang)+' '+esc(l.week)+'</p></details></td></tr>'}).join('');
   $('lt').querySelectorAll('select').forEach(function(s){s.onchange=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'set_status',p_payload:{id:s.dataset.id,status:s.value}}).then(load)}})}
 ['q','pf','sf'].forEach(function(i){$(i).addEventListener('input',leads)});
 $('csv').onclick=function(){var r=flt(),c=['created_at','plan','status','name','email','phone','country','learn','who','bring','source','lang'];var t=c.join(',')+'\n'+r.map(function(l){return c.map(function(k){return '"'+String(l[k]==null?'':l[k]).replace(/"/g,'""')+'"'}).join(',')}).join('\n');var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/csv'}));a.download='kolaboro-leads.csv';a.click()};
@@ -192,5 +192,6 @@ PW=st('kb-admin')||''; if(PW)load();
 })();
 </script><script src="/k/ops.js?v=cff90ae77e"></script>
 <script src="/k/ops2.js?v=e6abdb8c2f"></script>
+<script src="/k/crm.js?v=5c23d48475"></script>
 <script>document.addEventListener('click',function(e){var i=e.target.closest&&e.target.closest('img.ag-photo');if(!i)return;var w=window.open('','_blank');if(!w)return;w.opener=null;var im=w.document.createElement('img');im.src=i.src;im.style.maxWidth='100%';w.document.body.appendChild(im);});</script>
 </body></html>

@@ -197,7 +197,7 @@
     });
   }
   function starLabel(on){ return '<span aria-hidden="true">' + (on ? '\u2605' : '\u2606') + '</span> ' + (on ? 'Saved' : 'Save'); }
-  function wlMsg(on, acted){ return on ? (acted ? 'Saved to your watchlist in this browser. ' : 'In your watchlist. ') + '<a href="/watchlist/">See what changed</a>' : (acted ? 'Removed from your watchlist. ' : 'Save it to see what changes next time you visit. ') + '<a href="/watchlist/">Your watchlist</a>'; }
+  function wlMsg(on, acted){ return on ? (acted ? (window.KBWatch && KBWatch.account && KBWatch.account() ? 'Saved to your watchlist and your account. ' : 'Saved to your watchlist in this browser. <a href="/login#signup">Create a free account</a> to keep it on every device. ') : 'In your watchlist. ') + '<a href="/watchlist/">See what changed</a>' : (acted ? 'Removed from your watchlist. ' : 'Save it to see what changes next time you visit. ') + '<a href="/watchlist/">Your watchlist</a>'; }
 
   if (!id) { notFound(); return; }
   fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); })

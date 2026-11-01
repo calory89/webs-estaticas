@@ -1,4 +1,5 @@
-/* Kolaboro watchlist helper. Saved projects live only in this browser (localStorage 'kb_watch').
+/* Kolaboro watchlist helper. Saved projects live in this browser (localStorage 'kb_watch') and, when the
+   visitor is logged in, are also saved to their account (kolaboro_portal save_project / unsave_project).
    window.KBWatch = { has(id), toggle(id, case), list(), remove(id), snap(case), save(list), on(fn) } */
 (function(){
   var KEY = 'kb_watch', subs = [];
@@ -32,14 +33,17 @@
     subs.forEach(function(f){ try { f(); } catch (e) {} });
     return ok;
   }
+  var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_portal', AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  function token(){ try { return localStorage.getItem('kb-token'); } catch (e) { return null; } }
+  function remote(action, payload){ var t = token(); if (!t) return; try { fetch(SB, { method: 'POST', keepalive: true, headers: { apikey: AK, Authorization: 'Bearer ' + AK, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_token: t, p_action: action, p_payload: payload }) }).catch(function(){}); } catch (e) {} }
   function has(id){ id = norm(id); return list().some(function(x){ return x.id === id; }); }
-  function remove(id){ id = norm(id); return save(list().filter(function(x){ return x.id !== id; })); }
+  function remove(id){ id = norm(id); remote('unsave_project', { ref: id }); return save(list().filter(function(x){ return x.id !== id; })); }
   function toggle(id, c){
     id = norm(id); if (!id) return false;
     var L = list();
-    if (L.some(function(x){ return x.id === id; })) { save(L.filter(function(x){ return x.id !== id; })); return false; }
-    L.unshift({ id: id, snap: snap(c), added: today() });
+    if (L.some(function(x){ return x.id === id; })) { save(L.filter(function(x){ return x.id !== id; })); remote('unsave_project', { ref: id }); return false; }
+    var sn = snap(c); L.unshift({ id: id, snap: sn, added: today() }); remote('save_project', { ref: id, snap: sn });
     return save(L) ? true : false;
   }
-  window.KBWatch = { has: has, toggle: toggle, list: list, remove: remove, snap: snap, save: save, on: function(f){ subs.push(f); } };
+  window.KBWatch = { account: function(){ return !!token(); }, has: has, toggle: toggle, list: list, remove: remove, snap: snap, save: save, on: function(f){ subs.push(f); } };
 })();
