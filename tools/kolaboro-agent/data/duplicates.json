@@ -14,5 +14,21 @@
   "why": [
    "similar name"
   ]
+ },
+ {
+  "a": "cipriani-residences-miami",
+  "b": "residences-1428-brickell-ytech",
+  "market": "Miami",
+  "why": [
+   "149 m apart"
+  ]
+ },
+ {
+  "a": "oystra-richmind",
+  "b": "fortune-bay-residences-topero",
+  "market": "Ras Al Khaimah",
+  "why": [
+   "0 m apart"
+  ]
  }
 ]

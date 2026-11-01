@@ -5427,5 +5427,115 @@
     "Registro de Incorporação R13 da Matrícula nº 135.051"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria named as the project's trust (fiducia); page says the trust 'respaldó este proyecto' (backed the project). No escrow or guarantee terms given.",
+    "Alianza Fiduciaria, fiducia de este proyecto"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9491,
+    9493
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140918,
+    140819
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "intercontinental-residences-bangkok-asoke-cg-capital",
+  "name": "InterContinental Residences Bangkok Asoke",
+  "changed": {
+   "price_from": [
+    1328143,
+    1328144
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "extension_promised": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark, the trust that bought the land in a 2018 public auction; no buyer escrow or bank guarantee mentioned",
+    "Fideicomiso Buenos Aires Landmark (held the land purchase in 2018); no buyer escrow or guarantee mentioned"
+   ]
+  }
  }
 ]
