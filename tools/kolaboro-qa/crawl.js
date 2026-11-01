@@ -13,7 +13,7 @@ const BASE = process.env.KB_BASE || 'https://kolaboro.com';
     const ctx = await b.newContext({ viewport: { width: w, height: h } });
     for (const u of urls) {
       const p = await ctx.newPage(); const errs = [];
-      p.on('pageerror', e => errs.push('js: ' + e.message.slice(0, 160)));
+      p.on('pageerror', e => { if (!/clarity\.ms|googletagmanager|google-analytics|gtag/.test(e.stack || '')) errs.push('js: ' + e.message.slice(0, 160)); });
       p.on('response', r => { if (r.status() >= 400 && r.url().startsWith(BASE) && !/\/api\/geo|\/cdn-cgi\//.test(r.url())) errs.push(r.status() + ' ' + r.url().replace(BASE, '')); });
       try { const r = await p.goto(BASE + u, { waitUntil: 'load', timeout: 45000 }); if (!r || r.status() >= 400) errs.push('status ' + (r && r.status())); } catch (e) { errs.push('load: ' + e.message.slice(0, 80)); }
       await p.waitForTimeout(1500);
