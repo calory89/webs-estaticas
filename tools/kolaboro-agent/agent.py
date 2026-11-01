@@ -335,17 +335,21 @@ def public_cases(projects, latest):
                 if all(x is None or isinstance(x, (bool, int, float)) or (k == 'completion' and isinstance(x, str) and len(x) < 20) for x in (a, b)) and a != b:
                     hist.setdefault(ch.get('slug'), []).append({'d': ch.get('date'), 'f': HK[k], 'from': a, 'to': b})
     sat = (load(os.path.join(DATA, 'sat-projects.json'), {}) or {}).get('sites', {})
+    regw = (load(os.path.join(DATA, 'registry-watch.json'), {}) or {}).get('projects', {})
     for c in out:
         sx = sat.get(c.get('_slug'))
         if sx and sx.get('status') in ('visible change', 'no visible change'):
             c['sat'] = {'status': sx['status'], 'changed_pct': sx.get('changed_pct'), 'date': sx.get('date')}
+        rw = regw.get(c.get('_slug'))
+        if rw:
+            c['register'] = {k: rw.get(k) for k in ('register', 'item', 'status', 'detail', 'checked')}
         h = hist.get(c.get('_slug'))
         if h:
             c['history'] = sorted(h, key=lambda x: x['d'] or '', reverse=True)[:8]
         c.pop('_slug', None)
     res['db'] = db_stats(projects, out)
     res['db']['changes_detected'] = sum(len(v) for v in hist.values())
-    res['db']['sat_watched'] = sum(1 for c in out if c.get('sat')); res['db']['sat_no_change'] = sum(1 for c in out if (c.get('sat') or {}).get('status') == 'no visible change')
+    res['db']['sat_watched'] = sum(1 for c in out if c.get('sat')); res['db']['sat_no_change'] = sum(1 for c in out if (c.get('sat') or {}).get('status') == 'no visible change'); res['db']['register_watched'] = sum(1 for c in out if c.get('register'))
     res['ships'] = ships()
     return res
 

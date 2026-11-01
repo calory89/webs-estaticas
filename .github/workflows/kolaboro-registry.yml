@@ -1,0 +1,31 @@
+name: Kolaboro registry watch
+# Weekly: re-check official registers (Thailand ONEP EIA approvals for now) for every watched project,
+# save the results on main, then rebuild the public data so each anonymous case shows the latest register status.
+on:
+  schedule:
+    - cron: '17 6 * * 2'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Check registers
+        run: python3 tools/kolaboro-agent/registry_watch.py
+      - name: Save on main and rebuild public data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/data/registry-watch.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro registry watch $(date -u +%F)"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && break; git pull -q --rebase origin main; sleep 5; done
+          gh workflow run kolaboro-agent.yml --ref main || true
