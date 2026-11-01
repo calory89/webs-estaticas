@@ -57,7 +57,7 @@
     var s = x.sat_last, certArea = x.cert_area_m2 || lastCertArea(x);
     return '<section class="ap-card" id="plot"><h2>Your plot</h2><p class="ap-small ap-muted" style="margin-top:0">Put a pin on your plot (or trace its outline). Your agent\'s photos are checked against this point, and our satellite watch compares it with Sentinel-2 images every time a new cloud-free one is taken.</p>' +
       '<div id="xmap" class="x-map"></div><div class="x-tools"><button class="ap-btn x-sm x-line" id="xpin">📍 Place pin</button><button class="ap-btn x-sm x-line" id="xdraw">✏️ Trace outline</button><button class="ap-btn x-sm x-line" id="xclr">Clear</button><input id="xsearch" placeholder="Search a place (e.g. Pecatu, Bali)"></div>' +
-      '<div class="x-area"><div><span>Traced on the map</span><b id="xarea">' + (x.plot_area_m2 ? Math.round(x.plot_area_m2) + ' m²' : '—') + '</b></div><div><span>On the certificate</span><b><input id="xcert" type="number" min="0" value="' + (certArea || '') + '" placeholder="m²"></b></div><div><span>Difference</span><b id="xdiff">—</b></div></div>' +
+      '<div class="x-area"><div><span>Traced on the map</span><b id="xarea">' + (x.plot_area_m2 ? Math.round(x.plot_area_m2) + ' m²' : '-') + '</b></div><div><span>On the certificate</span><b><input id="xcert" type="number" min="0" value="' + (certArea || '') + '" placeholder="m²"></b></div><div><span>Difference</span><b id="xdiff">—</b></div></div>' +
       '<button class="ap-btn" id="xsave" style="margin-top:10px">Save the plot</button>' +
       '<div class="x-sat">' + (x.lat ? (s ? '<b>🛰 Satellite watch on.</b> Last comparison ' + fmt(s.at) + ': ' + esc(s.summary || '') : '<b>🛰 Satellite watch on.</b> First comparison within 24 hours of saving the plot (Sentinel-2, 10 m per pixel).') : 'Satellite watch starts when you save the plot.') + '</div></section>';
   }
@@ -227,9 +227,9 @@
         y += 3; line('Evidence (' + ev.length + ' items, oldest first)', 13, true);
         ev.forEach(function(e, i){
           line((i + 1) + '. ' + (KIND[e.kind] ? KIND[e.kind][1] : e.kind) + ': ' + (e.title || '') , 10, true);
-          var m = e.meta || {}, bits = ['taken ' + (e.taken_at ? new Date(e.taken_at).toUTCString() : '—')];
+          var m = e.meta || {}, bits = ['taken ' + (e.taken_at ? new Date(e.taken_at).toUTCString() : '-')];
           if (e.lat) bits.push('GPS ' + (+e.lat).toFixed(5) + ', ' + (+e.lng).toFixed(5) + (e.acc ? ' ±' + Math.round(e.acc) + ' m' : ''));
-          bits.push('by ' + (e.by || '—')); line(bits.join(' · '), 8.5, false, '#41505C');
+          bits.push('by ' + (e.by || '-')); line(bits.join(' · '), 8.5, false, '#41505C');
           if (m.result && m.result.summary) line(m.result.summary, 9);
           if (m.text) line('"' + m.text + '"', 9);
           if (e.kind === 'satellite' && m.summary) line(m.summary, 9);
@@ -241,7 +241,7 @@
         if (y > 220) { d.addPage(); y = 18; }
         y += 4; line('How to check this file wasn\'t changed', 13, true);
         line('Each item\'s fingerprint is chained to the previous one: chain = sha256(previous chain | file sha256 | kind | time). The last chain value below is the fingerprint of the whole case today' + (r.st && r.st.stamp ? ', timestamped with OpenTimestamps (anchored in Bitcoin) on ' + new Date(r.st.stamp.created_at).toUTCString() + '.' : '.'), 9);
-        line('Case fingerprint: ' + (head || '—'), 9, true);
+        line('Case fingerprint: ' + (head || '-'), 9, true);
         line('Scan the QR code or open kolaboro.com/verify/?hash=' + (head || '') + ' to see its timestamp. To recompute the chain, download the evidence data from the portal and drop it on kolaboro.com/verify.', 8.5, false, '#41505C');
         if (head) { var q = document.createElement('div'); new QRCode(q, { text: 'https://kolaboro.com/verify/?hash=' + head, width: 256, height: 256, correctLevel: QRCode.CorrectLevel.M }); var cv = q.querySelector('canvas'); if (cv) d.addImage(cv.toDataURL('image/png'), 'PNG', L, y + 2, 38, 38); y += 44; }
         line('Kolaboro checks property for people buying abroad. This file records evidence; it is not legal advice. kolaboro.com · hello@kolaboro.com', 7.5, false, '#6B7A86');

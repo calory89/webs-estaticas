@@ -8,7 +8,7 @@
 <li><b>What you do:</b> visit off-plan construction sites near you, take GPS-stamped photos, collect documents. Our AI copilot tells you what to check.</li>
 <li><b>What you earn:</b> €40 per site visit and €150 per full pre-purchase check. An agent doing 6 to 20 visits a month would earn roughly €300 to €1,200, paid by Kolaboro, never by developers. We are recruiting our first agents now, so these are estimates, not averages.</li>
 <li class="ap-auth-hide"><b>No degree needed.</b> Free academy, a short exam and one test visit. Then cases near you.</li>
-<li class="ap-auth-hide"><b>Your hours.</b> You choose your days. Most visits take 1–2 hours.</li></ul></div>
+<li class="ap-auth-hide"><b>Your hours.</b> You choose your days. Most visits take 1 to 2 hours.</li></ul></div>
 <p class="ap-auth-hide" style="color:#7E8D9A;font-size:.85rem;position:relative;z-index:1">Kolaboro is operated by Equinox Investment Group LLC. Your data is used only to match you with cases.</p></div>
 <div class="ap-auth-r"><div class="ap-auth-box" style="max-width:520px">
   <p class="ap-k" id="stepk">Step 1 of 3 · You</p>
@@ -62,7 +62,7 @@ function kbResize(file, max, q){ return new Promise(function(res, rej){ var r = 
 
 (function(){
   var f = document.getElementById('af'), e = document.getElementById('ae'), step = 1, photo = '', lat = '', lng = '';
-  var H = { 1:['Step 1 of 3 · You','Apply as a Kolaboro agent','Takes 3 minutes. You can start the academy straight after.'], 2:['Step 2 of 3 · Where you are','Where do you live?','We send you cases close to home.'], 3:['Step 3 of 3 · Availability','When can you work?','You choose. Most visits take 1–2 hours.'] };
+  var H = { 1:['Step 1 of 3 · You','Apply as a Kolaboro agent','Takes 3 minutes. You can start the academy straight after.'], 2:['Step 2 of 3 · Where you are','Where do you live?','We send you cases close to home.'], 3:['Step 3 of 3 · Availability','When can you work?','You choose. Most visits take 1 to 2 hours.'] };
   KB.pwToggle(f); KB.meter(f.password, document.getElementById('pm'));
   var q = new URLSearchParams(location.search); var src = q.get('src') || q.get('utm_source') || document.referrer.slice(0,100);
   document.getElementById('ph').addEventListener('change', function(ev){ var fl = ev.target.files[0]; if (!fl) return; kbResize(fl, 480, .78).then(function(r){ photo = r.url; var l = document.getElementById('phl'); l.style.backgroundImage = 'url(' + photo + ')'; l.classList.add('has'); document.getElementById('phs').textContent = 'Change photo'; }); });

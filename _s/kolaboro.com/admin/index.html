@@ -174,7 +174,7 @@ function agRender(){
     var av = a.availability || {}, wa = (a.phone || '').replace(/[^\d]/g, '');
     return '<div class="ag-c ' + esc(a.status) + '"><div class="ag-top"><img src="' + esc(a.photo) + '" alt=""><div style="flex:1"><b>' + esc(a.name) + '</b> <span class="ag-st ' + esc(a.status) + '">' + esc(a.status) + '</span><br><small class="muted">' + esc(a.city) + (a.area ? ' · ' + esc(a.area) : '') + '</small></div></div>' +
       '<p style="font-size:.85rem;margin:8px 0 0">' + esc(a.languages) + ' · ' + esc(a.transport) + ' · ' + esc(a.background) + '<br>' + (a.days_per_week || '?') + ' days/week · ' + esc((av.days || []).join(' ')) + ' ' + esc((av.slots || []).join(', ')) + (a.start_date ? ' · from ' + esc(a.start_date) : '') +
-      '<br>Exam: ' + (a.exam_score != null ? '<b>' + a.exam_score + '/' + a.exam_total + '</b>' : '—') + ' · joined ' + when(a.since) + (a.lat ? ' · <a target="_blank" href="https://maps.google.com/?q=' + a.lat + ',' + a.lng + '">map</a>' : '') + '</p>' +
+      '<br>Exam: ' + (a.exam_score != null ? '<b>' + a.exam_score + '/' + a.exam_total + '</b>' : '-') + ' · joined ' + when(a.since) + (a.lat ? ' · <a target="_blank" href="https://maps.google.com/?q=' + a.lat + ',' + a.lng + '">map</a>' : '') + '</p>' +
       (a.why ? '<details><summary style="font-size:.85rem">Why them</summary><p style="font-size:.85rem">' + esc(a.why) + '</p></details>' : '') +
       (a.test_photos ? '<div class="ag-thumbs">' + a.test_photos.map(function(p){ return '<img src="' + esc(p.img) + '" title="' + esc(p.label + ' · ' + p.gps + ' · ' + p.at + ' · ±' + p.acc + 'm') + '" onclick="window.open().document.write(\'<img src=&quot;\'+this.src+\'&quot; style=max-width:100%>\')">'; }).join('') + '</div>' : '') +
       '<div class="row" style="margin-top:10px"><a class="btn2" href="mailto:' + esc(a.email) + '">Email</a>' + (wa ? '<a class="btn2" target="_blank" href="https://wa.me/' + wa + '">WhatsApp</a>' : '') +
@@ -190,5 +190,5 @@ $('links').innerHTML=LK.map(function(l){return '<a href="'+l[1]+'" target="_blan
 PW=st('kb-admin')||''; if(PW)load();
 })();
 </script><script src="/k/ops.js?v=cff90ae77e"></script>
-<script src="/k/ops2.js?v=2840e4bb0b"></script>
+<script src="/k/ops2.js?v=e6abdb8c2f"></script>
 </body></html>

@@ -20,6 +20,14 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); } });
   }
 
+
+  // live counts: every [data-db] number follows the published database
+  if (document.querySelector('[data-db]')) {
+    fetch('/data/bali-cases.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (!d || !d.cases) return; var v = { projects: d.cases.length, markets: d.markets, countries: d.countries };
+      document.querySelectorAll('[data-db]').forEach(function (e) { var x = v[e.getAttribute('data-db')]; if (x) e.textContent = x.toLocaleString('en'); });
+    }).catch(function () {});
+  }
   // tracked clicks
   document.addEventListener('click', function (e) {
     var a = e.target.closest('[data-ev]');
