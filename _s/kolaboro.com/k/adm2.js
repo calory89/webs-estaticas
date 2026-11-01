@@ -123,3 +123,19 @@
   document.addEventListener('visibilitychange', function(){ if (!document.hidden && A.D) A.reload(); });
   document.addEventListener('click', function once(){ try { if (window.Notification && Notification.permission === 'default') Notification.requestPermission(); } catch (e) {} document.removeEventListener('click', once); });
 })();
+/* Automatic payments (PayPal IPN and webhooks): shown on the Payments tab, unmatched ones can be assigned to a buyer. */
+(function(){
+  var A = window.KBADM; if (!A) return;
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function draw(d){
+    var sec = document.getElementById('t-pay'); if (!sec || !d.pay_events) return;
+    var box = document.getElementById('pe-card'); if (!box) { box = document.createElement('div'); box.className = 'card'; box.id = 'pe-card'; sec.insertBefore(box, sec.children[1] || null); }
+    var E = d.pay_events, un = E.filter(function(e){ return !e.matched && /completed/i.test(e.status || ''); });
+    box.innerHTML = '<h2>Automatic confirmation</h2><p class="muted" style="margin-top:0">PayPal tells the site about every payment. Payments from a Kolaboro buyer (same email as their account or lead, or "Kolaboro" in the item name) are recorded and their case is marked paid automatically. Others wait here so you can assign them.</p>' +
+      (E.length ? '<div class="tw"><table><tr><th>When</th><th>Source</th><th>Status</th><th>Payer</th><th>Amount</th><th>Item</th><th></th></tr>' + E.slice(0, 50).map(function(e){ return '<tr><td>' + esc(String(e.created_at).slice(0, 16).replace('T', ' ')) + '</td><td>' + esc(e.source) + '</td><td>' + esc(e.status) + '</td><td>' + esc(e.email || '-') + '</td><td>' + esc((e.currency || '') + ' ' + (e.amount == null ? '' : e.amount)) + '</td><td>' + esc(e.item || '') + '</td><td>' + (e.matched ? '<span class="pill" style="background:#DDEFE7">recorded</span>' : (/completed/i.test(e.status || '') ? '<button class="btn2" data-pe="' + e.id + '">Assign to buyer</button>' : '')) + '</td></tr>'; }).join('') + '</table></div>' : '<p class="muted">No PayPal notifications received yet.</p>') +
+      (un.length ? '<p style="margin-bottom:0"><b>' + un.length + ' payment' + (un.length > 1 ? 's' : '') + ' not matched to a buyer.</b> If one is for Kolaboro, assign it with the buyer\'s account email.</p>' : '');
+    box.querySelectorAll('[data-pe]').forEach(function(b){ b.onclick = function(){ var em = prompt('Email of the Kolaboro account this payment belongs to'); if (!em) return; A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'assign_event', p_payload: { id: +b.dataset.pe, email: em } }).then(function(r){ if (r && r.error) alert('Not assigned: ' + r.error); A.reload(); }); }; });
+  }
+  document.addEventListener('kbadm', function(e){ draw(e.detail); });
+  if (A.D) draw(A.D);
+})();

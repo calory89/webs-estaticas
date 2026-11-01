@@ -192,6 +192,8 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/document' && req.method === 'POST') return logged('document', () => documentRead(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/report-draft' && req.method === 'POST') return logged('report_draft', () => reportDraft(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/telegram' && req.method === 'POST') return telegram(req, env, ctx);
+  if (u.pathname === '/api/kb/paypal-ipn' && req.method === 'POST') return ppIpn(req, env, ctx);
+  if (u.pathname === '/api/kb/paypal-webhook' && req.method === 'POST') return ppWebhook(req, env, ctx);
   if (u.pathname === '/api/kb/ask' && req.method === 'POST') return logged('ask', () => ask(req, env, ctx), ctx);
   if (u.pathname.startsWith('/api/v1')) return apiV1(req, u, env, ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
@@ -273,6 +275,67 @@ const SB_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsIn
 const CALENDARS = ['https://a.pool.opentimestamps.org', 'https://b.pool.opentimestamps.org', 'https://a.pool.eternitywall.com'];
 const OTS_MAGIC = [0x00, 0x4f, 0x70, 0x65, 0x6e, 0x54, 0x69, 0x6d, 0x65, 0x73, 0x74, 0x61, 0x6d, 0x70, 0x73, 0x00, 0x00, 0x50, 0x72, 0x6f, 0x6f, 0x66, 0x00, 0xbf, 0x89, 0xe2, 0xe8, 0x84, 0xe8, 0x92, 0x94];
 
+// ===== Automatic payment confirmation.
+// IPN: PayPal posts every payment on the account; we post the exact bytes back to PayPal, which answers VERIFIED or INVALID.
+// Webhooks: signed by PayPal; we check the signature with PayPal's public certificate (no API secret needed).
+// Either way the database only records payments it can tie to a Kolaboro buyer (kolaboro_pay_event).
+async function payEvent(env, a) {
+  if (!env.KB_HOOK_KEY || !a.p_txn) return;
+  try { await rpc('kolaboro_pay_event', Object.assign({ p_key: env.KB_HOOK_KEY }, a)); } catch (e) {}
+}
+async function ppIpn(req, env, ctx) {
+  const raw = new Uint8Array(await req.arrayBuffer());
+  if (raw.length > 30000) return new Response('', { status: 200 });
+  ctx.waitUntil((async () => {
+    const pre = new TextEncoder().encode('cmd=_notify-validate&'), body = new Uint8Array(pre.length + raw.length);
+    body.set(pre); body.set(raw, pre.length);
+    let ok = false;
+    try { const v = await fetch('https://ipnpb.paypal.com/cgi-bin/webscr', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Kolaboro-IPN-Verifier' }, body }); ok = (await v.text()).trim() === 'VERIFIED'; } catch (e) {}
+    if (!ok) return;
+    const p = new URLSearchParams(new TextDecoder('latin1').decode(raw));
+    if (p.get('test_ipn') === '1') return;
+    await payEvent(env, { p_source: 'paypal_ipn', p_txn: p.get('txn_id') || '', p_status: p.get('payment_status') || '', p_email: p.get('payer_email') || '', p_amount: parseFloat(p.get('mc_gross')) || null, p_currency: p.get('mc_currency') || '', p_item: p.get('item_name') || p.get('item_name1') || p.get('transaction_subject') || '' });
+  })());
+  return new Response('', { status: 200 });
+}
+function crc32(u8) { let c, crc = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) { c = (crc ^ u8[i]) & 0xFF; for (let k = 0; k < 8; k++) c = c & 1 ? (c >>> 1) ^ 0xEDB88320 : c >>> 1; crc = (crc >>> 8) ^ c; } return (crc ^ 0xFFFFFFFF) >>> 0; }
+function derTLV(b, o) { const tag = b[o]; let len = b[o + 1], hl = 2; if (len & 0x80) { const n = len & 0x7f; len = 0; for (let i = 0; i < n; i++) len = len * 256 + b[o + 2 + i]; hl = 2 + n; } return { tag, start: o, hl, len, end: o + hl + len }; }
+function spkiFromCert(der) {
+  const cert = derTLV(der, 0), tbs = derTLV(der, cert.start + cert.hl); let o = tbs.start + tbs.hl, f = derTLV(der, o);
+  if (f.tag === 0xa0) { o = f.end; f = derTLV(der, o); }
+  for (let i = 0; i < 5; i++) { o = f.end; f = derTLV(der, o); } // serial, sigAlg, issuer, validity, subject -> spki
+  return der.slice(f.start, f.end);
+}
+const ppCerts = new Map();
+async function ppVerify(req, raw, env) {
+  const h = k => req.headers.get(k) || '', certUrl = h('paypal-cert-url'), id = h('paypal-transmission-id'), time = h('paypal-transmission-time'), sig = h('paypal-transmission-sig');
+  if (!env.KB_PP_WEBHOOK_ID || !id || !time || !sig || !/^https:\/\/api(-m)?\.paypal\.com\//.test(certUrl) || !/SHA256/i.test(h('paypal-auth-algo'))) return false;
+  if (Math.abs(Date.now() - Date.parse(time)) > 15 * 60 * 1000) return false;
+  let key = ppCerts.get(certUrl);
+  if (!key) {
+    const pem = await (await fetch(certUrl)).text(), m = pem.match(/-----BEGIN CERTIFICATE-----([\s\S]+?)-----END CERTIFICATE-----/);
+    if (!m) return false;
+    const der = Uint8Array.from(atob(m[1].replace(/\s+/g, '')), c => c.charCodeAt(0));
+    key = await crypto.subtle.importKey('spki', spkiFromCert(der), { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' }, false, ['verify']);
+    ppCerts.set(certUrl, key);
+  }
+  const msg = new TextEncoder().encode(id + '|' + time + '|' + env.KB_PP_WEBHOOK_ID + '|' + crc32(raw));
+  return crypto.subtle.verify('RSASSA-PKCS1-v1_5', key, Uint8Array.from(atob(sig), c => c.charCodeAt(0)), msg);
+}
+async function ppWebhook(req, env, ctx) {
+  const raw = new Uint8Array(await req.arrayBuffer());
+  if (raw.length > 200000) return new Response('', { status: 413 });
+  let ok = false; try { ok = await ppVerify(req, raw, env); } catch (e) {}
+  if (!ok) return new Response('', { status: 400 });
+  let ev = {}; try { ev = JSON.parse(new TextDecoder().decode(raw)); } catch (e) { return new Response('', { status: 200 }); }
+  const t = String(ev.event_type || ''), r = ev.resource || {}, pu = (r.purchase_units || [])[0] || {};
+  let a = null;
+  if (t === 'PAYMENT.CAPTURE.COMPLETED') a = { p_txn: r.id, p_amount: parseFloat((r.amount || {}).value) || null, p_currency: (r.amount || {}).currency_code || '', p_email: ((r.payer || {}).email_address) || '', p_item: r.custom_id || r.invoice_id || '' };
+  else if (t === 'CHECKOUT.ORDER.COMPLETED') { const cap = (((pu.payments || {}).captures) || [])[0] || {}; a = { p_txn: cap.id || r.id, p_amount: parseFloat((pu.amount || {}).value) || null, p_currency: (pu.amount || {}).currency_code || '', p_email: ((r.payer || {}).email_address) || '', p_item: pu.description || ((pu.items || [])[0] || {}).name || '' }; }
+  else if (t === 'PAYMENT.SALE.COMPLETED') a = { p_txn: r.id, p_amount: parseFloat((r.amount || {}).total) || null, p_currency: (r.amount || {}).currency || '', p_email: '', p_item: r.custom || '' };
+  if (a) { a.p_source = 'paypal_webhook'; a.p_status = t.toLowerCase(); if (t === 'PAYMENT.SALE.COMPLETED') a.p_status = 'completed'; ctx.waitUntil(payEvent(env, a)); }
+  return new Response('', { status: 200 });
+}
 async function rpc(fn, args) {
   const r = await fetch(SB_RPC + fn, { method: 'POST', headers: { apikey: SB_ANON, authorization: 'Bearer ' + SB_ANON, 'content-type': 'application/json' }, body: JSON.stringify(args) });
   if (!r.ok) throw new Error('db ' + r.status);
