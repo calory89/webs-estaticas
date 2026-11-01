@@ -456,12 +456,12 @@
    "escrow_or_guarantee": null,
    "quotes": [
     "30 years leasehold ownership.",
-    "Break Even Point reached in the 9th-10th year*.",
+    "7-14% yearly passive income*.",
     "14% - 17% ROI Forecast"
    ]
   },
   "source": "ai",
-  "hash": "894d51bc9ebb35fd",
+  "hash": "9feb69c5d2330d23",
   "checked": "2026-11-01"
  },
  "biom": {
@@ -485,7 +485,8 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "anjuna-bay": {
   "name": "The Anjuna Bay",
@@ -548,7 +549,7 @@
   "claims": {
    "price_from": 99900,
    "currency": "USD",
-   "title_type": "leasehold",
+   "title_type": null,
    "lease_years_base": 33,
    "extension_promised": true,
    "guaranteed_language": false,
@@ -560,12 +561,12 @@
    "escrow_or_guarantee": null,
    "quotes": [
     "Flexible lease terms (33+26 years), affordable rates from $99,900, and high demand for the properties.",
-    "$99 900 Starting price. 22 м² Minimum area. Date of delivery 2nd quarter 2027",
-    "Not a public offer, all prices are posted for information. Prices for objects are constantly changing."
+    "$99 900 Starting price",
+    "Date of delivery 2nd quarter 2027"
    ]
   },
   "source": "ai",
-  "hash": "26cd6f00c8b1f767",
+  "hash": "e0fbd494e21eea9b",
   "checked": "2026-11-01"
  },
  "secret-inshi": {
@@ -583,16 +584,16 @@
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
    "quotes": [
-    "\"$95 400 Starting price\"",
-    "\"Q1 2027 Date of delivery\"",
-    "\"make it ideal for both living and investment\""
+    "$95 400 Starting price",
+    "Q1 2027 Date of delivery",
+    "Maximum privacy, thoughtful zoning and premium finishes make it ideal for both living and investment."
    ]
   },
   "source": "ai",
-  "hash": "b8afb57d27ba3478",
+  "hash": "dff97b5e546797ae",
   "checked": "2026-11-01"
  },
  "bingin-ocean-villas": {
@@ -2291,7 +2292,7 @@
    ]
   },
   "source": "ai",
-  "hash": "42f89220214d0f30",
+  "hash": "446c3fd290cd1c1d",
   "checked": "2026-11-01"
  },
  "naga-kiri-villas-lamai": {
@@ -3958,13 +3959,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "The project, with units to be sold at an average of P250,000 per square meter, will cater to the upscale segment",
-    "scheduled start of unit turnover in December 2027",
-    "We expect this to be sold out pretty much soon after we completed some of the areas"
+    "construction work would now shift to masonry and finishing in preparation for the scheduled start of unit turnover in December 2027",
+    "with units to be sold at an average of P250,000 per square meter",
+    "has a total of 576 units, 14 percent of which has been sold to date"
    ]
   },
   "source": "ai",
-  "hash": "265dcaff3f3195c2",
+  "hash": "7a6472a17da25c23",
   "checked": "2026-11-01"
  },
  "mandtra-residences-tower-3-mandaue": {
@@ -4111,13 +4112,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Price starting from £ 129,536",
+    "Starting from GBP 129,536 in Pulau Pinang, Pulau Pinang",
     "Tenure Freehold",
     "Completion Date March 30, 2029"
    ]
   },
   "source": "ai",
-  "hash": "1fd7a6b32250ad87",
+  "hash": "e6347617d3ab030a",
   "checked": "2026-11-01"
  },
  "lz-sea-view-premium-sihanoukville": {
@@ -4141,7 +4142,8 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "time-square-8-phnom-penh": {
   "name": "Time Square 8",
@@ -4459,7 +4461,7 @@
    ]
   },
   "source": "ai",
-  "hash": "c1646cbb1f00aa53",
+  "hash": "8826bb93f147e7e8",
   "checked": "2026-11-01"
  },
  "caesar-blue-quatro-villas-iskele": {
@@ -4643,13 +4645,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Completion date: June 2027.",
     "Land is owned by the investor — ensuring legal and financial security.",
-    "Expected price growth after completion"
+    "Completion date: June 2027.",
+    "Expected price growth after completion."
    ]
   },
   "source": "ai",
-  "hash": "b52cecc9318efed5",
+  "hash": "92b6c0577a904151",
   "checked": "2026-11-01"
  },
  "boka-place-porto-montenegro": {
@@ -4929,13 +4931,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Discover a truly unique opportunity to own a modern apartment in one of the most prestigious areas of Madeira Island",
-    "Whether as a permanent residence, holiday home, or investment, this property represents an excellent opportunity.",
-    "Ownership Status: Developer Built in: n/a"
+    "New Development Under Construction, Funchal € 475,000",
+    "Ownership Status: Developer Built in: n/a 138m 2 Build size",
+    "Whether as a permanent residence, holiday home, or investment, this property represents an excellent opportunity."
    ]
   },
   "source": "ai",
-  "hash": "77cf660b80e4d024",
+  "hash": "78d5c3c1df1a9b86",
   "checked": "2026-11-01"
  },
  "muda-comporta-villas": {
@@ -5283,13 +5285,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "bu konum, yüksek ulaşım kolaylığı sağlar ve dairelerin değerinin zamanla artmasını garanti eder",
     "Yüksek kira getirisi (%6 - %8 arası)",
-    "TeslimTarihi 06-2027"
+    "dairelerin değerinin zamanla artmasını garanti eder",
+    "Güvenli Devlet Güvenceli Yatırım."
    ]
   },
   "source": "ai",
-  "hash": "47a556a553f9c9a7",
+  "hash": "9b0ad6e0534e910f",
   "checked": "2026-11-01"
  },
  "basaksehir-low-rise-mixed-use-148606": {
@@ -5312,11 +5314,11 @@
    "quotes": [
     "3+1 bedroom apartments sized from 184m2 and priced from 605,000 USD",
     "Completion date September 2028.",
-    "These apartments quality for Turkish Citizenship by Investment applications."
+    "50% down payment and balance paid within 12 months."
    ]
   },
   "source": "ai",
-  "hash": "75ca992ce21ca61d",
+  "hash": "2acd803aefc87304",
   "checked": "2026-11-01"
  },
  "brooklyn-life-fikirtepe": {
@@ -5369,7 +5371,7 @@
    ]
   },
   "source": "ai",
-  "hash": "632267561532d416",
+  "hash": "95e97ba899edd8fb",
   "checked": "2026-11-01"
  },
  "altintas-swim-up-complex-ayt-3204": {
@@ -5978,13 +5980,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Launch price 785K AED",
+    "Azizi Venice 14 Launch price 785K AED",
     "Ownership type Freehold",
     "This blend of convenience, luxury, and strategic positioning promises a high return on investment"
    ]
   },
   "source": "ai",
-  "hash": "a37ee049bf1a7e15",
+  "hash": "7a703cdc22021ede",
   "checked": "2026-11-01"
  },
  "viewz-2-by-danube-jlt": {
@@ -6304,7 +6306,7 @@
  },
  "bahia-papagayo-enjoy-grupo-laguna": {
   "name": "Bahia Papagayo Phase 1",
-  "url": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf",
+  "url": "https://bahiapapagayo.com/",
   "market": "Costa Rica",
   "claims": {
    "price_from": null,
@@ -6317,12 +6319,16 @@
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Download Floorplan",
+    "Only 30% of the total property will ever be developed",
+    "Materials may be substituted with equivalent or better at the developer's sole discretion."
+   ]
   },
   "source": "ai",
-  "hash": "2e6f1fcd3cee24a5",
+  "hash": "530fc829c5ffed3e",
   "checked": "2026-11-01"
  },
  "numandi-residences-consudespro-armabloque": {
@@ -6427,7 +6433,8 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "vista-ponta-negra-mirantes": {
   "name": "Vista Ponta Negra",
@@ -6648,13 +6655,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "1 house is under construction",
-    "Apartments from the developer are sold",
-    "Construction uses a proven monolithic frame method, guaranteeing structural integrity, long-term durability"
+    "Resale apartments from $23,000",
+    "Construction uses a proven monolithic frame method, guaranteeing structural integrity, long-term durability",
+    "flexible purchase options; ideal for living or investment; experienced developer"
    ]
   },
   "source": "ai",
-  "hash": "b3800e6b4c10df6e",
+  "hash": "5a8bf738c6bd1fb6",
   "checked": "2026-11-01"
  },
  "al-mare-green-midtown-group": {
@@ -6672,16 +6679,16 @@
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": null,
    "escrow_or_guarantee": null,
    "quotes": [
-    "1 house is under construction, next delivery in Q4 2027",
     "Developer’s apartments price upon request",
-    "competitive price at the start of sales; different purchase options"
+    "1 house is under construction, next delivery in Q4 2027",
+    "guarantees a long service life without loss of operational characteristics"
    ]
   },
   "source": "ai",
-  "hash": "f755acf7d1dedcd0",
+  "hash": "e4cdc4f9d6ea6273",
   "checked": "2026-11-01"
  },
  "querencia-dovec-group": {
@@ -6704,11 +6711,11 @@
    "quotes": [
     "Fiyat başlangıç 208,993 usd",
     "Yıllık Kira Getirisi : 8%",
-    "Teslimat tarihi 01.06.2027"
+    "Teslimat tarihi 01.06.2027 Tapu Sözleşme Proje Tamamlama"
    ]
   },
   "source": "ai",
-  "hash": "3a784331e5a4fe3a",
+  "hash": "2367e8a4f2b0c6e4",
   "checked": "2026-11-01"
  },
  "avrupa-konutlari-gunesli-artas": {
@@ -6726,16 +6733,16 @@
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": null,
+   "plans_published": true,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Price starts from 295,000 usd",
+    "Title deed type : Easement",
     "Annual Rental Yield : 5%",
-    "Title deed type : Easement"
+    "The buildings were constructed according to the standards of the Ministry of Public Works"
    ]
   },
   "source": "ai",
-  "hash": "4f7fd5541191025d",
+  "hash": "8dd820898c4c177e",
   "checked": "2026-11-01"
  },
  "yalikavak-loft-akfen-gyo": {
@@ -6824,7 +6831,7 @@
   "url": "https://www.emlakplatform.com.tr/en/projects/mevacity-alanya",
   "market": "Antalya",
   "claims": {
-   "price_from": 9459,
+   "price_from": 9460,
    "currency": "USD",
    "title_type": null,
    "lease_years_base": null,
@@ -6834,16 +6841,16 @@
    "completion_year": 2026,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Title deed type : Easement",
+    "Price starts from Login 9,460",
     "Annual Rental Yield : 7%",
-    "Delivery date 30.12.2026"
+    "Title deed type : Easement"
    ]
   },
   "source": "ai",
-  "hash": "5854a35595524fc9",
+  "hash": "add0f69a81c1bc07",
   "checked": "2026-11-01"
  },
  "ferreiros-residences-yard-properties": {
@@ -6867,14 +6874,15 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "becici-sea-view-building-value-one": {
   "name": "New residential building 200 m from Bečići beach (building 5)",
   "url": "https://realting.com/montenegro/new-buildings/27295",
   "market": "Montenegro",
   "claims": {
-   "price_from": 217827,
+   "price_from": 203831,
    "currency": "USD",
    "title_type": null,
    "lease_years_base": null,
@@ -6887,13 +6895,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
+    "Apartment price, USD 203 831",
     "The estimated completion date is 2027.",
-    "The developer offers an installment payment plan linked to construction phases",
-    "This is the fifth building in a new development by the same developer, with the previous four buildings already completed and occupied."
+    "with the previous four buildings already completed and occupied."
    ]
   },
   "source": "ai",
-  "hash": "7a522c3ce36b76e4",
+  "hash": "8d350b7f49a3fadc",
   "checked": "2026-11-01"
  },
  "podstrana-modern-apartments-eurovilla": {
@@ -7095,11 +7103,11 @@
    "quotes": [
     "Freehold ownership is available to both local and international investors",
     "Rental Demand: High appeal for luxury waterfront living ensures strong rental returns",
-    "Expected Completion December 1, 2028"
+    "Ellington Sands is a freehold property, allowing UAE nationals and international buyers full ownership"
    ]
   },
   "source": "ai",
-  "hash": "649d76fac3b6f28a",
+  "hash": "cabd53f34377e1cc",
   "checked": "2026-11-01"
  },
  "golf-dale-emaar": {
@@ -7131,10 +7139,10 @@
  },
  "sky-gate-tower-tiger": {
   "name": "Sky Gate Tower",
-  "url": "https://dxbpropy.ai/offplan/sky-gate-tower-jumeirah-village-triangle-3244",
+  "url": "https://www.prop971.com/project/PRJ-TIG-YLQYF",
   "market": "Dubai",
   "claims": {
-   "price_from": 600000,
+   "price_from": 795000,
    "currency": "AED",
    "title_type": null,
    "lease_years_base": null,
@@ -7142,18 +7150,18 @@
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2028,
-   "permit_claim": true,
-   "permit_number": "registered project #4120",
-   "plans_published": true,
-   "escrow_or_guarantee": "Escrow account 10487681920050 at Abu Dhabi Commercial Bank",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": "Escrow Account Number 10487681920050, Escrow Agent Abu Dhabi Commercial Bank",
    "quotes": [
-    "Prices start from AED 600,000.",
-    "Escrow account 10487681920050 at Abu Dhabi Commercial Bank.",
-    "Sky Gate Tower is registered with the Dubai Land Department as project number 4120"
+    "Handover for SkyGate Tower by Tiger is planned for Q1 2028.",
+    "Prices at SkyGate Tower by Tiger start from AED 885.8 K, with a starting rate of AED 1,736 per sqft.",
+    "Escrow Account Number 10487681920050 Escrow Agent Abu Dhabi Commercial Bank"
    ]
   },
   "source": "ai",
-  "hash": "bebfe5e34a8b0360",
+  "hash": "7de36a86ad4a8461",
   "checked": "2026-11-01"
  },
  "sunstone-imkan": {
@@ -7787,7 +7795,7 @@
    "quotes": []
   },
   "source": "ai",
-  "hash": "cea01ca8230159aa",
+  "hash": "492738be46597514",
   "checked": "2026-11-01"
  },
  "cascades-three-white-city-living-st-james": {
@@ -8175,29 +8183,29 @@
  },
  "skypark-lucean-jomtien-lunique": {
   "name": "Skypark Lucean Jomtien Pattaya",
-  "url": "https://thethaiger.com/thai-life/property/property-news/lunique-real-estate-celebrates-skypark-lucean-jomtien-pattayas-phase-one-sales-hitting-42",
+  "url": "https://skyparklucean.com/",
   "market": "Pattaya",
   "claims": {
-   "price_from": 4300000,
-   "currency": "THB",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": true,
-   "advertised_yield_pct": 6,
-   "completion_year": 2028,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
    "quotes": [
-    "starting at just 4.3 million Thai baht, with guaranteed 6% returns for three years",
-    "Skypark Lucean Jomtien Pattaya is scheduled for completion in December 2028.",
-    "Beyond residential living, Skypark Lucean at Jomtien Beach represents a long-term investment opportunity with stable returns."
+    "Overall status 19.55 % COMPLETED Updated Sep 2026",
+    "Sanctuary Club owners are recognised with special privileges and enjoy unique experiences",
+    "Phase 1 Tower A - 60 Floors, Tower B - 31 Floors, 899 Units"
    ]
   },
   "source": "ai",
-  "hash": "5240a90b2e2f7f4e",
+  "hash": "eed3ddbc4917ac7c",
   "checked": "2026-11-01"
  },
  "tait-pattaya-raimon-land": {
@@ -8224,11 +8232,11 @@
  },
  "intercontinental-residences-bangkok-asoke-cg-capital": {
   "name": "InterContinental Residences Bangkok Asoke",
-  "url": "https://www.malaymail.com/news/money/mediaoutreach/2025/11/24/cg-capital-partners-with-ihg-hotels-resorts-to-introduce-intercontinental-residences-bangkok-asoke-the-only-freehold-branded-residences-in-the-heart-of-sukhumvit/420954",
+  "url": "https://www.fazwaz.co.th/en/projects/thailand/bangkok/khlong-toei/khlong-toei/intercontinental-residences-bangkok-asoke",
   "market": "Bangkok",
   "claims": {
-   "price_from": 40800000,
-   "currency": "THB",
+   "price_from": 1329078,
+   "currency": "USD",
    "title_type": "freehold",
    "lease_years_base": null,
    "extension_promised": null,
@@ -8237,16 +8245,16 @@
    "completion_year": 2029,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
    "quotes": [
-    "With only 88 exclusive freehold residences ranging from 139 to 547 sq.m., priced from THB 40.8 million",
-    "The project is scheduled for completion in Q2 2029.",
-    "the development's freehold status meets buyers' needs for both personal use and long-term asset transfer."
+    "InterContinental Residences Bangkok Asoke is ... scheduled for completion in Jan 2029.",
+    "Foreigners can own a condominium Freehold in their own name.",
+    "The ownership titles of these 49 units is referred to as Freehold or Foreign Quota."
    ]
   },
   "source": "ai",
-  "hash": "b854c7aea0fcca89",
+  "hash": "0e668cb5dee30a18",
   "checked": "2026-11-01"
  },
  "sls-residences-bangkok-sukhumvit-24-valanti": {
@@ -8397,13 +8405,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "The Sculptura is designed to meet luxury apartment standards, with the majority of units featuring three bedrooms",
-    "Spanning over 2,370 square metres and rising 12 stories high, The Sculptura features 75 apartments and 10 retail shops",
-    "The project's completion will align with the rollout of several billion-VND-scale infrastructure and amenity developments"
+    "The Sculptura is designed to meet luxury apartment standards",
+    "The Sculptura features 75 apartments and 10 retail shops",
+    "the company is expected to host the official sales launch for The Sculptura in November"
    ]
   },
   "source": "ai",
-  "hash": "69802a02cb295431",
+  "hash": "d1c3bd4f7377e3d5",
   "checked": "2026-11-01"
  },
  "avea-andaman-island-eastern-oriental": {
@@ -8579,7 +8587,8 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "gato-tower-miraku": {
   "name": "G.A.T.O Tower",
@@ -8602,7 +8611,8 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "the-sustainable-city-yiti-diamond-developers-see-holding-through-the-j": {
   "name": "The Sustainable City - Yiti",
@@ -9138,7 +9148,8 @@
   },
   "source": "ai",
   "hash": "304b9c5c29d37222",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "HTTP Error 404: Not Found"
  },
  "marassi-views-eagle-hills": {
   "name": "Marassi Views",
@@ -9158,13 +9169,13 @@
    "plans_published": false,
    "escrow_or_guarantee": null,
    "quotes": [
-    "Marassi Views Launch price 68K BHD",
     "Marassi Views is a freehold property, granting buyers full ownership rights and complete control over their investment and property.",
-    "Payment plan 10% Down payment At sales launch"
+    "Studio from 68K BHD 53-67 sqm",
+    "Expected Completion March 31, 2028"
    ]
   },
   "source": "ai",
-  "hash": "ace56a63fb62dc56",
+  "hash": "613dca038b10f4e8",
   "checked": "2026-11-01"
  },
  "nobu-residences-manchester-salboy": {
@@ -9188,7 +9199,8 @@
   },
   "source": "ai",
   "hash": "e3b0c44298fc1c14",
-  "checked": "2026-11-01"
+  "checked": "2026-11-01",
+  "last_error": "Remote end closed connection without response"
  },
  "edition-birmingham-centenary-tower-sphere-select": {
   "name": "Edition Birmingham, Centenary Tower",
@@ -9211,5 +9223,2167 @@
   },
   "source": "seed",
   "last_error": "HTTP Error 403: Forbidden"
+ },
+ "takaya-union-properties": {
+  "name": "Takaya",
+  "url": "https://up.ae/takaya-by-up/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 850000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Starts from 2,796,000",
+    "850,000 Starting price",
+    "Q4 2027 Handover plan",
+    "3 Years Post hand over payment plan"
+   ]
+  },
+  "source": "ai",
+  "hash": "a2f88b08f17a6f54",
+  "checked": "2026-11-01"
+ },
+ "keturah-reserve-mag": {
+  "name": "Keturah Reserve",
+  "url": "https://www.keturah-reserve.ae/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 3759000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": "DLD project 2924",
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow account at Emirates NBD per the DLD project register (mirrored on dubairealestateiq.com); not stated by the developer",
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ "mar-casa-deyaar": {
+  "name": "Mar Casa",
+  "url": "https://www.propertyfinder.ae/en/new-projects/deyaar-leasing/mar-casa",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 820238,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 5,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": null,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership type Freehold",
+    "The starting price for Mar Casa is 820238 AED.",
+    "Mar Casa is a strong investment opportunity in Dubai's Maritime City."
+   ]
+  },
+  "source": "ai",
+  "hash": "7771238b79e7e0ad",
+  "checked": "2026-11-01"
+ },
+ "rove-home-dubai-marina-irth": {
+  "name": "Rove Home Dubai Marina",
+  "url": "https://irth.ae/rove-home-dubai-marina/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Number of Apartments Q4 1 Anticipated Handover Year",
+    "Apt Types Fully-furnished Studio, 1 Bedroom, Combinable Apartments on-demand and limited Sky Lofts"
+   ]
+  },
+  "source": "ai",
+  "hash": "acc1a5debc60f505",
+  "checked": "2026-11-01"
+ },
+ "bluewaters-bay-meraas": {
+  "name": "Bluewaters Bay",
+  "url": "https://www.propertyfinder.ae/en/new-projects/meraas-holding/bluewaters-bay",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 2850000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership type Freehold",
+    "Bluewaters Bay is currently under construction",
+    "it represents an excellent investment opportunity for those looking for a luxurious lifestyle in Dubai"
+   ]
+  },
+  "source": "ai",
+  "hash": "13f92dc68e45cb88",
+  "checked": "2026-11-01"
+ },
+ "reportage-hills-reportage": {
+  "name": "Reportage Hills (R. Hills)",
+  "url": "https://reportagehills.com/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 2590000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 6,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Estimated ROI : 6–7% annually, aligned with Dubailand’s suburban rental trends.",
+    "Priced from AED 2.59 million with a flexible 30/70 payment plan (20% down payment)",
+    "Ownership : Freehold for all nationalities"
+   ]
+  },
+  "source": "ai",
+  "hash": "3abbbf580f37c997",
+  "checked": "2026-11-01"
+ },
+ "kensington-gardens-leos": {
+  "name": "Kensington Gardens (Greenwood)",
+  "url": "https://www.propertyfinder.ae/en/new-projects/leos-international/kensington-gardens",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 3200000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership type Freehold",
+    "Kensington Gardens is a freehold development, allowing full property ownership for both UAE nationals and international investors without restrictions.",
+    "Expected Completion September 27, 2027"
+   ]
+  },
+  "source": "ai",
+  "hash": "54720e8cfff31cb1",
+  "checked": "2026-11-01"
+ },
+ "artistry-one-residences-select-group": {
+  "name": "Artistry One Residences",
+  "url": "https://takweenaldar.ae/en/off-plan/project/artistry-one-residences",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 2347000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow : 0204977502032",
+   "quotes": [
+    "From AED 2,347,000 – AED 26,968,000",
+    "Escrow : 0204977502032",
+    "Handover 31.03.2029"
+   ]
+  },
+  "source": "ai",
+  "hash": "9a0989a780a43baa",
+  "checked": "2026-11-01"
+ },
+ "expo-valley-expo-city-dubai": {
+  "name": "Expo Valley (villas and townhouses)",
+  "url": "https://www.bayut.com/for-sale/off-plan/5-bedroom-townhouses/dubai/expo-city/expo-valley/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 3390000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": "DLD project 2623",
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow account at Dubai Islamic Bank (DLD data via dxbpropy.ai; bank also on dubairealestateiq.com)",
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 401: Unauthorized"
+ },
+ "nirvana-residences-i-meraki": {
+  "name": "Nirvana Residences I",
+  "url": "https://metropolitan.realestate/dubai-production-city/nirvana-residences-i-by-meraki-developers-dubai-production-city/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 711388,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": "DLD project 4313",
+   "plans_published": false,
+   "escrow_or_guarantee": "Escrow account at Dubai Islamic Bank per the DLD project register; not stated by the developer",
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 403: Forbidden"
+ },
+ "azizi-grand-azizi": {
+  "name": "Azizi Grand",
+  "url": "https://propsearch.ae/dubai/azizi-grand",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 494000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "At the time of the sales launch, units were priced from AED 495k.",
+    "It was never built and was relaunched in 2023 as Aziz Grand.",
+    "The estimated handover date was Q4 2024 which was later revised to Q1 2026."
+   ]
+  },
+  "source": "ai",
+  "hash": "ce926f7516a2b769",
+  "checked": "2026-11-01"
+ },
+ "shahrukhz-residences-danube": {
+  "name": "Shahrukhz Residences by Danube",
+  "url": "https://foundgroup.ae/new-launches/shahrukhz-residences-by-danube-ref-op-2166",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 1650000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow account no. 011201382016",
+   "quotes": [
+    "Escrow account no. 011201382016.",
+    "Payment plan: 10% on booking, 20% during construction and 70% on handover.",
+    "Handover is due Q4 2029."
+   ]
+  },
+  "source": "ai",
+  "hash": "c3e96e0202fc17d5",
+  "checked": "2026-11-01"
+ },
+ "rise-blanco-thornton": {
+  "name": "Rise by Blanco Thornton",
+  "url": "https://propsearch.ae/dubai/rise-by-blanco-thornton",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 813000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "At the time of the sales launch, units were priced from AED 813k.",
+    "The estimated handover date is December 2026.",
+    "The project was launched with an installment plan allowing investors to pay 10% as a deposit on booking"
+   ]
+  },
+  "source": "ai",
+  "hash": "947f64bb0f958f70",
+  "checked": "2026-11-01"
+ },
+ "bay-residences-dubai-islands-nakheel": {
+  "name": "Rixos Bay Residences, Dubai Islands",
+  "url": "https://propsearch.ae/dubai/bay-residences-dubai-islands",
+  "market": "Dubai",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "The estimated handover date was October 2026.",
+    "Estimated Completion October 2026",
+    "Estimate submitted by the developer prior to construction; final cost may differ."
+   ]
+  },
+  "source": "ai",
+  "hash": "01f3631aa395b98b",
+  "checked": "2026-11-01"
+ },
+ "nine-collective-wasl": {
+  "name": "Nine Collective",
+  "url": "https://directdealuae.com/projects/nine-collective",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 4400000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2030,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Launch prices start from AED 4.4M for 2 bedroom residences",
+    "Nine Collective is a freehold residential tower in Wasl 1",
+    "returns are not guaranteed - request the full information pack and take independent advice"
+   ]
+  },
+  "source": "ai",
+  "hash": "c78d95e52085ae17",
+  "checked": "2026-11-01"
+ },
+ "orla-dorchester-collection-omniyat": {
+  "name": "ORLA, Dorchester Collection",
+  "url": "https://jre.ae/projects/orla-dorchester-collection",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 57230250,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow number 019000072183 (Dubai Land Department)",
+   "quotes": [
+    "Yes, Orla Dorchester Collection has escrow number 019000072183 with the Dubai Land Department.",
+    "Handover is scheduled for Q4 2026; the project is 60% complete.",
+    "Prices at Orla Dorchester Collection currently range from AED 57,230,250 to AED 81,333,000."
+   ]
+  },
+  "source": "ai",
+  "hash": "c7a029b13b3cd0ea",
+  "checked": "2026-11-01"
+ },
+ "elaris-sky-object-1": {
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "url": "https://dxbpropy.ai/offplan/elaris-sky-jumeirah-village-triangle-b3172",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 771000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": true,
+   "permit_number": "4019",
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow account 19517041 at Abu Dhabi Islamic Bank",
+   "quotes": [
+    "Prices start from AED 771,000, for homes from 390 sqft (36 m²)",
+    "Elaris Sky is registered with the Dubai Land Department as project number 4019",
+    "Escrow account 19517041 at Abu Dhabi Islamic Bank. Payments for units in this project go into this account."
+   ]
+  },
+  "source": "ai",
+  "hash": "a7a6c4ae5d2e19c1",
+  "checked": "2026-11-01"
+ },
+ "karl-lagerfeld-villas-taraf": {
+  "name": "Karl Lagerfeld Villas by Taraf",
+  "url": "https://vartur.ae/en/projects/karl-lagerfeld-villas/",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 25580000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Handover is set for the third quarter of 2027.",
+    "Six bedroom villa 11,345 sq ft AED 25.58M",
+    "Payment 10% On booking 50% During construction 40% On handover"
+   ]
+  },
+  "source": "ai",
+  "hash": "a368ad064d2fb68d",
+  "checked": "2026-11-01"
+ },
+ "armani-beach-residences-palm-jumeirah-arada": {
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "url": "https://foundgroup.ae/new-launches/armani-beach-residence-ref-op-0927",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 23000000,
+   "currency": "AED",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": "Escrow account no. 3538468744702 (listed as 'Escrow Registered No. 3538468744702')",
+   "quotes": [
+    "Escrow account no. 3538468744702.",
+    "Handover is due Q4 2026.",
+    "Construction is 7% done."
+   ]
+  },
+  "source": "ai",
+  "hash": "9431132f23e17e12",
+  "checked": "2026-11-01"
+ },
+ "arancia-yards-beyond": {
+  "name": "Arancia Yards by Beyond",
+  "url": "https://dxbpropy.ai/offplan/arancia-yards-by-beyond-city-of-arabia-b3778",
+  "market": "Dubai",
+  "claims": {
+   "price_from": 1300000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": "DLD project 4480",
+   "plans_published": false,
+   "escrow_or_guarantee": "Escrow account at Abu Dhabi Commercial Bank (DLD record, via dxbpropy.ai and booknewproperty.com)",
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 500: Internal Server Error"
+ },
+ "two-sudirman-private-residences-central-sudirman-development": {
+  "name": "Two Sudirman Private Residences",
+  "url": "https://twosudirman.com",
+  "market": "Jakarta",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "ai",
+  "hash": "3b342bccdf75d1d4",
+  "checked": "2026-11-01"
+ },
+ "senja-sumba-imvest-land-indonesia": {
+  "name": "Senja Sumba",
+  "url": "https://www.juwai.asia/77966033",
+  "market": "Sumba",
+  "claims": {
+   "price_from": 290000,
+   "currency": "EUR",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": "renewable (terms not published); sponsored article says leasehold up to 80 years via a Swiss holding company",
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 404: Not Found"
+ },
+ "kabisu-sumba-villas": {
+  "name": "Kabisu Sumba",
+  "url": "https://kabisu.id/",
+  "market": "Sumba",
+  "claims": {
+   "price_from": 199000,
+   "currency": "EUR",
+   "title_type": "hgb",
+   "lease_years_base": 80,
+   "extension_promised": true,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 21,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "From €199 k $235 k Turnkey entry, fully furnished",
+    "21 %+ Expected yearly ROI",
+    "Freehold 80 years renewable HGB land title"
+   ]
+  },
+  "source": "ai",
+  "hash": "b9819dc32fa88c9c",
+  "checked": "2026-11-01"
+ },
+ "arya-sumba-kodi-arya-properties": {
+  "name": "ARYA Sumba Kodi (villa phases)",
+  "url": "https://homesgofast.com/?p=693982",
+  "market": "Sumba",
+  "claims": {
+   "price_from": 114990,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 80,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "The read operation timed out"
+ },
+ "noda-flores-noda-collective": {
+  "name": "NODA Flores",
+  "url": "https://kvertexpropertiesgroup.com/properties/noda-flores-luxury-villa-investment-in-flores-indonesia/",
+  "market": "Labuan Bajo",
+  "claims": {
+   "price_from": 678710,
+   "currency": "USD",
+   "title_type": "hgb",
+   "lease_years_base": 100,
+   "extension_promised": false,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 9,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership: 100-year HGB title via PT PMA (foreign investment company)",
+    "ROI Table – Projected Rental Yield Based on occupancy and daily rate scenarios",
+    "Warranty: 5-year structural warranty"
+   ]
+  },
+  "source": "ai",
+  "hash": "8e9e7fcf966e5367",
+  "checked": "2026-11-01"
+ },
+ "maua-labuan-bajo-bukit-warloka-sejahtera": {
+  "name": "Maua Labuan Bajo (Eco Luxury Resort villas)",
+  "url": "https://bajoecoresort.com/",
+  "market": "Labuan Bajo",
+  "claims": {
+   "price_from": null,
+   "currency": "IDR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "<urlopen error [Errno -2] Name or service not known>"
+ },
+ "habitat-vibe-the-habitat-lombok": {
+  "name": "Habitat Vibe",
+  "url": "https://www.thehabitatlombok.com/",
+  "market": "Lombok",
+  "claims": {
+   "price_from": 165000,
+   "currency": "USD",
+   "title_type": "hgb",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "From $165,000 USD",
+    "Own with confidence through HGB title held by your own PT PMA company.",
+    "Use your villa when you want it. When you're away, professional management can take care of the rental."
+   ]
+  },
+  "source": "ai",
+  "hash": "563a382f2c6b9ee8",
+  "checked": "2026-11-01"
+ },
+ "saona-studios-malasama-development": {
+  "name": "Saona Studios",
+  "url": "https://malasamadevelopments.com/projects",
+  "market": "Lombok",
+  "claims": {
+   "price_from": 69000,
+   "currency": "EUR",
+   "title_type": "leasehold",
+   "lease_years_base": 60,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Saona Studios Ocean-view studios · 60 m² · Leasehold 60 years · Phase 3, only 2 units left",
+    "From €69,000 Leasehold 60 years Coming Soon",
+    "Rental income is not guaranteed and past performance does not guarantee future results."
+   ]
+  },
+  "source": "ai",
+  "hash": "0a1a409ea02b56ed",
+  "checked": "2026-11-01"
+ },
+ "linton-villas-mandalika-medusia": {
+  "name": "Linton Villas",
+  "url": "https://medusiainvest.com/linton-en",
+  "market": "Lombok",
+  "claims": {
+   "price_from": 44940,
+   "currency": "EUR",
+   "title_type": "leasehold",
+   "lease_years_base": 40,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 15,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "EstimatedROI: 15–30% Developer projection. This is not a guaranteed return.",
+    "The project is marketed under a 40-year leasehold.",
+    "The estimated delivery currently indicated is early 2028."
+   ]
+  },
+  "source": "ai",
+  "hash": "25b8170651cfe0c2",
+  "checked": "2026-11-01"
+ },
+ "zaya-kuta-hills-mojo-developments": {
+  "name": "Zaya",
+  "url": "https://excellencebali.com/projects/zaya-private-pool-villas-kuta-lombok/",
+  "market": "Lombok",
+  "claims": {
+   "price_from": 130000,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 14.58,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Consequently, this strategic address guarantees high year-round short-term rental demand.",
+    "a secure thirty-year leasehold contract protects your property rights",
+    "Verified financial models project an outstanding 14.58% net ROI in Year 1."
+   ]
+  },
+  "source": "ai",
+  "hash": "a07cd331e1047e22",
+  "checked": "2026-11-01"
+ },
+ "nai-2-nusa-dua-vibe-development": {
+  "name": "Nai 2 (NAI by Vibe wellness resort, phase 2)",
+  "url": "https://vibedevelopment.pro/",
+  "market": "Bali",
+  "claims": {
+   "price_from": 82375,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": "30-year extension stated (30+30)",
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": "Developer states every buyer payment goes through independent Bank Mandiri escrow accounts",
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "no JSON in answer"
+ },
+ "the-collections-vol-2-618-development": {
+  "name": "The Collections Vol. 2",
+  "url": "https://partners.nuanu.realestate/collectionsvol2_en",
+  "market": "Bali",
+  "claims": {
+   "price_from": 1050000,
+   "currency": "USD",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 11,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Freehold for foreigners & Indonesians Handover Q3-4 2026",
+    "11–12% ROI 8–9 year payback From $1,050,000",
+    "Master Plan Open File Floor plan Open File Renders Open File"
+   ]
+  },
+  "source": "ai",
+  "hash": "6b1a07270e5354b5",
+  "checked": "2026-11-01"
+ },
+ "oceaniq-nusa-dua-ii-oceaniq": {
+  "name": "OceaniQ Nusa Dua II (Resort Nusa Dua)",
+  "url": "https://balinsky.info/en/complexes/o/oceaniq-2",
+  "market": "Bali",
+  "claims": {
+   "price_from": 176000,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 25,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 429: Too Many Requests"
+ },
+ "sky-stars-ocean-view-phase-2-magnum-estate": {
+  "name": "Sky Stars Ocean View Phase 2",
+  "url": "https://magnumestate.com/projects/sky-stars",
+  "market": "Bali",
+  "claims": {
+   "price_from": 508000,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 10.8,
+   "completion_year": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Each project under its own building permit (PBG)",
+    "with prices from $508,000 and a projected ROI of 10.8%",
+    "Contracts verified by independent notaries"
+   ]
+  },
+  "source": "ai",
+  "hash": "bd497317742443fb",
+  "checked": "2026-11-01"
+ },
+ "blacksand-villas-padang-linjong-canggu": {
+  "name": "Blacksand Villas Padang Linjong",
+  "url": "https://blacksand.villas/",
+  "market": "Bali",
+  "claims": {
+   "price_from": 245000,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": true,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 12.5,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": "10% holding deposit into a notary-managed escrow account",
+   "quotes": [
+    "30 years leasehold with 25 years extension secured OR take the freehold option at special price.",
+    "The property is a fully legal and registered 30-year leasehold.",
+    "±12.5% Annual Yield Projected Net ROI after all expense deducted"
+   ]
+  },
+  "source": "ai",
+  "hash": "e908c52d73303ce6",
+  "checked": "2026-11-01"
+ },
+ "hidden-city-ubud-phase-2-apartments": {
+  "name": "Hidden City Ubud (Phase II apartments)",
+  "url": "https://hiddencityubud.com/",
+  "market": "Bali",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": "leasehold",
+   "lease_years_base": null,
+   "extension_promised": true,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 12,
+   "completion_year": 2026,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": "All payments processed via notary escrow account",
+   "quotes": [
+    "PBG, due diligence, and a 20-year construction guarantee make investing in the project safe and profitable",
+    "With the option to extend for 20 years at a fixed rate stated in the contract",
+    "All payments processed via notary escrow account"
+   ]
+  },
+  "source": "ai",
+  "hash": "3b603282dd2d3ac0",
+  "checked": "2026-11-01"
+ },
+ "minori-luxury-seminyak-eco-invest-group": {
+  "name": "Minori Luxury Seminyak",
+  "url": "https://excellencebali.com/projects/minori-seminyak-villas/",
+  "market": "Bali",
+  "claims": {
+   "price_from": 284050,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 25,
+   "extension_promised": true,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 15,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": "Contractually guaranteed 6% net annual return for two years; no escrow, bank guarantee or trust mentioned",
+   "quotes": [
+    "The contract includes a 25-year guaranteed extension and a 10-year priority extension.",
+    "the developer provides a contractually guaranteed 6% net annual return for two years.",
+    "Realistic operational models project long-term net rental yields between 15% and 17%."
+   ]
+  },
+  "source": "ai",
+  "hash": "9248ad5f6c1e2c0b",
+  "checked": "2026-11-01"
+ },
+ "luna-villas-uluwatu-zayari-developments": {
+  "name": "LUNA Villas Uluwatu",
+  "url": "https://zayaridevelopments.com/",
+  "market": "Bali",
+  "claims": {
+   "price_from": 350000,
+   "currency": "EUR",
+   "title_type": "leasehold",
+   "lease_years_base": null,
+   "extension_promised": false,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 14,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Wij rekenen voor onze projecten met 14% om schattingen aan de conservatieve kant te laten zien.",
+    "Een lease overeenkomst wordt niet automatisch verlengd.",
+    "Ja, indien onderhandeld en notarieel bekrachtigd."
+   ]
+  },
+  "source": "ai",
+  "hash": "d6eee88241cf7fc6",
+  "checked": "2026-11-01"
+ },
+ "jimbaran-cliffside-reserve-aterra": {
+  "name": "Jimbaran Cliffside Reserve",
+  "url": "https://www.aterraestate.com/opportunity-list/jimbaran-cliffside-reserve",
+  "market": "Bali",
+  "claims": {
+   "price_from": 249000,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 29,
+   "extension_promised": true,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 8,
+   "completion_year": 2027,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership Leasehold Ownership period 29 years with extension rights",
+    "Seven-villa, limited-supply development in Tourism Zoning, approved for short-term rentals",
+    "Rental Yield ~ 8–12% annually"
+   ]
+  },
+  "source": "ai",
+  "hash": "792619cde159b150",
+  "checked": "2026-11-01"
+ },
+ "nautica-residences-cancun-nauma": {
+  "name": "Nautica Residences by Naúma",
+  "url": "https://gmb.com.mx/nautica-residences/",
+  "market": "Riviera Maya",
+  "claims": {
+   "price_from": 6700000,
+   "currency": "MXN",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "PRECIO DESDE $6,700,000 MXN",
+    "Torre A - Agosto 2028 Torre B - Diciembre 2029",
+    "Como el primer proyecto de la marca Nautica en el mundo"
+   ]
+  },
+  "source": "ai",
+  "hash": "ff779f6a442218e2",
+  "checked": "2026-11-01"
+ },
+ "mondrian-residences-cancun-murano": {
+  "name": "Mondrian Residences Cancún (Grand Island)",
+  "url": "https://mondrianresidencescancun.com.mx/pressrelease/",
+  "market": "Riviera Maya",
+  "claims": {
+   "price_from": 592500,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Prototype A | 79 m 2 to 100 m2 | 1 | Since $592,500 to $750,000 USD",
+    "Note: Prices are subject to availability and may change without notice.",
+    "un hotel lifestyle de 400 habitaciones cuya apertura está prevista para 2026"
+   ]
+  },
+  "source": "ai",
+  "hash": "12b7442a173065d5",
+  "checked": "2026-11-01"
+ },
+ "ocean-tulum-grupo-vinsa": {
+  "name": "Ocean Tulum",
+  "url": "https://oceantulum.mx/",
+  "market": "Riviera Maya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "que su propiedad genera altos rendimientos gracias al exitoso modelo de condo-hotel",
+    "existen aspectos cuya revisión y formalización requieren diversas etapas de validación",
+    "la reanudación y ejecución de las etapas correspondientes del proyecto"
+   ]
+  },
+  "source": "ai",
+  "hash": "7ab71e824c684f8a",
+  "checked": "2026-11-01"
+ },
+ "viceroy-residences-playa-del-carmen-related-simca": {
+  "name": "Viceroy Residences Playa del Carmen",
+  "url": "https://viceroyplayadelcarmen.com/floor-plans/",
+  "market": "Riviera Maya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": "Banco Monex, S.A., Institución de Banca Múltiple, Monex Grupo Financiero acting as trustee of fideicomiso identified by number F/12238",
+   "quotes": [
+    "Spacious, versatile layouts with spectacular water and skyline views.",
+    "Developer expressly does not guarantee any view.",
+    "acting as trustee of fideicomiso identified by number F/12238"
+   ]
+  },
+  "source": "ai",
+  "hash": "7318a1e283eeb633",
+  "checked": "2026-11-01"
+ },
+ "tao-monte-rocella-tao-mexico": {
+  "name": "TAO Monte Rocella",
+  "url": "https://www.taomonterocella.com/",
+  "market": "Los Cabos",
+  "claims": {
+   "price_from": 299000,
+   "currency": "USD",
+   "title_type": "fideicomiso (restricted zone)",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000)>"
+ },
+ "cora-sur-los-cabos-grupo-habitat": {
+  "name": "Cora Sur",
+  "url": "https://coraloscabos.com/",
+  "market": "Los Cabos",
+  "claims": {
+   "price_from": 476000,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": null,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Preventa de departamentos de 2 hab. desde $476K USD",
+    "Con entrega inmediata, te permite mudarte hoy mismo",
+    "El más completo desarrollo residencial al mejor precio del mercado"
+   ]
+  },
+  "source": "ai",
+  "hash": "1f6c8f6cea673714",
+  "checked": "2026-11-01"
+ },
+ "conrad-residences-oleada-los-cabos-parks-hospitality": {
+  "name": "Conrad Residences at Oleada Los Cabos",
+  "url": "https://conradloscabos.mx/",
+  "market": "Los Cabos",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Introducing an Exclusive Collection of 59 Luxury Oceanfront Residences.",
+    "Early reservations are now being accepted.",
+    "As an Owner, you'll enjoy access to the full suite of amenities and services at the Conrad Los Cabos Resort"
+   ]
+  },
+  "source": "ai",
+  "hash": "1d6ca15a8d994e2f",
+  "checked": "2026-11-01"
+ },
+ "casa-blake-costa-palmas-irongate": {
+  "name": "Casa Blake at Costa Palmas",
+  "url": "https://costapalmas.com/real-estate/casa-blake/",
+  "market": "Los Cabos",
+  "claims": {
+   "price_from": 830000,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Starting at $830K.",
+    "Choose from studios to 4-bedrooms, 535 to 2,497 sq.ft.",
+    "Renderings and maps represent an artist's conception and may differ from the finished product."
+   ]
+  },
+  "source": "ai",
+  "hash": "867da364163a04d8",
+  "checked": "2026-11-01"
+ },
+ "mayamar-torre-sur-grupo-solcon": {
+  "name": "MAYĀMAR (Torre Sur)",
+  "url": "https://www.cblacosta.com/mayamar-puerto-vallarta/",
+  "market": "Puerto Vallarta",
+  "claims": {
+   "price_from": 7524000,
+   "currency": "MXN",
+   "title_type": "fideicomiso (restricted zone)",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "no JSON in answer"
+ },
+ "macaria-puerto-vallarta-grupo-origen": {
+  "name": "Macaria",
+  "url": "https://macariavallarta.mx/en/",
+  "market": "Puerto Vallarta",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "DOWN PAYMENTS FROM 15% PRE-SALE DISCOUNTS UP TO 16%",
+    "you're investing in one of Puerto Vallarta's most desirable real estate hot spots, with strong year-round rental demand.",
+    "Macaria is developed by Grupo Origen, a collaboration between RISE and Eidós Arquitectos"
+   ]
+  },
+  "source": "ai",
+  "hash": "87a8e76a938e640a",
+  "checked": "2026-11-01"
+ },
+ "thompson-puerto-vallarta-residences-related": {
+  "name": "Thompson Puerto Vallarta Hotel & Residences",
+  "url": "https://thompsonvallarta.com/",
+  "market": "Puerto Vallarta",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Now Under Construction — Over 85% Sold — Delivering Winter 2027",
+    "DOWNLOAD FLOOR PLANS"
+   ]
+  },
+  "source": "ai",
+  "hash": "e762c7003d4a4c66",
+  "checked": "2026-11-01"
+ },
+ "south-bay-puerto-vallarta-verde-vallarta": {
+  "name": "South Bay",
+  "url": "https://tropicasa.com/southbay/",
+  "market": "Puerto Vallarta",
+  "claims": {
+   "price_from": 403785,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Price starting from $403,785 USD",
+    "The price in USD is for informational purposes only; the official list price is in pesos",
+    "Pre-construction developers reserve the right, without prior notice, to modify or change plans/designs, renderings"
+   ]
+  },
+  "source": "ai",
+  "hash": "a7d8309c2a269c33",
+  "checked": "2026-11-01"
+ },
+ "casa-mitos-via-montejo-inmobilia": {
+  "name": "Casa Mitos (Torre Mitos)",
+  "url": "https://torremitos.com/",
+  "market": "Mérida",
+  "claims": {
+   "price_from": 3300000,
+   "currency": "MXN",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Departamentos en preventa desde $3.3 MDP | 10% de Enganche",
+    "Plusvalía Proyectada de hasta el 30%",
+    "Torre de 125 departamentos de lujo de 1 a 3 recámaras"
+   ]
+  },
+  "source": "ai",
+  "hash": "7f35ec5040be6a85",
+  "checked": "2026-11-01"
+ },
+ "ozalia-temozon-grupo-acber": {
+  "name": "Ozalia Temozón",
+  "url": "https://ozalia.mx/",
+  "market": "Mérida",
+  "claims": {
+   "price_from": 1879000,
+   "currency": "MXN",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Desde $1,879,000 MXN",
+    "Preventa · Entrega noviembre 2029",
+    "Demanda de renta todo el año"
+   ]
+  },
+  "source": "ai",
+  "hash": "5a5b45ad5b7f1d37",
+  "checked": "2026-11-01"
+ },
+ "punta-norte-temozon-concoord": {
+  "name": "Punta Norte",
+  "url": "https://triburealestate.mx/property/puntanorte/",
+  "market": "Mérida",
+  "claims": {
+   "price_from": 2250000,
+   "currency": "MXN",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Entrega diciembre 2028",
+    "APOSENTO Desde $2,250,000 MXN 51 M2 INTERIORES",
+    "Punta Norte ofrece 68 departamentos, divididos en 2 etapas."
+   ]
+  },
+  "source": "ai",
+  "hash": "27060fedd7755770",
+  "checked": "2026-11-01"
+ },
+ "rum-residencias-universitarias-mb-signature": {
+  "name": "RUM Residencias Universitarias",
+  "url": "https://www.pincali.com/inmueble/preventa-departamentos-residencias-universitarias-mayab",
+  "market": "Mérida",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "ai",
+  "hash": "e3b0c44298fc1c14",
+  "checked": "2026-11-01"
+ },
+ "australy-thera-neinor-aedas": {
+  "name": "Australy Thera",
+  "url": "https://www.idealista.com/news/node/909340",
+  "market": "Costa del Sol",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Neinor Homes acaba de lanzar Australy Thera, el tercer y último proyecto de su complejo Australy",
+    "Las ventas de la primera fase ya alcanzan el 50%",
+    "atrayendo a un cliente nacional y sobre todo internacional que busca obra nueva"
+   ]
+  },
+  "source": "ai",
+  "hash": "7fba28f6c2417a44",
+  "checked": "2026-11-01"
+ },
+ "aire-de-llevant-metrovacesa": {
+  "name": "Aire de Llevant",
+  "url": "https://metrovacesa.com/en/developments/illes-balears/palma-de-mallorca/aire-de-llevant",
+  "market": "Balearics",
+  "claims": {
+   "price_from": 339000,
+   "currency": "EUR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Opportunity, we start marketing, with launch prices!",
+    "VAT must be added to these prices at the rate in force whenever it accrues.",
+    "The information and features of the home will be specified in the contractual documentation"
+   ]
+  },
+  "source": "ai",
+  "hash": "234436e0a194d37e",
+  "checked": "2026-11-01"
+ },
+ "sora-denia-taylor-wimpey": {
+  "name": "Sora",
+  "url": "https://www.rightmove.co.uk/properties/169260455",
+  "market": "Costa Blanca",
+  "claims": {
+   "price_from": 399000,
+   "currency": "EUR",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 404: Not Found"
+ },
+ "salvia-san-pedro-grupo-abu-nvoga": {
+  "name": "Salvia",
+  "url": "https://lucasfox.com/new-development/salviasanpedro.html",
+  "market": "Costa del Sol",
+  "claims": {
+   "price_from": 1150000,
+   "currency": "EUR",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 403: Forbidden"
+ },
+ "the-olive-naiyang-rhom-bho": {
+  "name": "The Olive Naiyang (The Title Olive)",
+  "url": "https://titleolivephuket.com/",
+  "market": "Phuket",
+  "claims": {
+   "price_from": 4042400,
+   "currency": "THB",
+   "title_type": "freehold",
+   "lease_years_base": 30,
+   "extension_promised": true,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Within the foreign quota (49% of the condominium's area) full freehold ownership is available.",
+    "Once the quota is filled, 30-year renewable leasehold applies.",
+    "Payments are tied to construction progress, which reduces buyer risk."
+   ]
+  },
+  "source": "ai",
+  "hash": "0552416a97ef25fd",
+  "checked": "2026-11-01"
+ },
+ "vip-tropika-bangtao-vip-property-development": {
+  "name": "VIP TropiKa Bangtao",
+  "url": "https://rumavi.com/en/new-developments/thailand/cherng-talay/vip-tropika",
+  "market": "Phuket",
+  "claims": {
+   "price_from": 4620000,
+   "currency": "THB",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 6,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Buyers benefit from a 6% guaranteed return over three years",
+    "6% guaranteed rental return for 3 years from completion",
+    "Freehold Title"
+   ]
+  },
+  "source": "ai",
+  "hash": "0b53eda5e6c22885",
+  "checked": "2026-11-01"
+ },
+ "laguna-lake-residences-aster-banyan-group": {
+  "name": "Laguna Lake Residences Aster (formerly Laguna Lakeside 2)",
+  "url": "https://buro.co.th/en/news/buro-aster-building-3",
+  "market": "Phuket",
+  "claims": {
+   "price_from": 10480000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "17 freehold units (from 12,840,000 baht) and 20 leasehold units.",
+    "completion is scheduled for Q2 2028.",
+    "We can send you the building's term sheet and floor plans and help you choose a unit."
+   ]
+  },
+  "source": "ai",
+  "hash": "63e0afbe2caed041",
+  "checked": "2026-11-01"
+ },
+ "layan-verde-villacarte": {
+  "name": "Layan Verde",
+  "url": "https://layanre.com/en/blog/layan-verde-review-2026",
+  "market": "Phuket",
+  "claims": {
+   "price_from": 235995,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 8,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "the owner receives 60% of net profit — an owner net yield benchmark of ~8–10% a year",
+    "this is a forecast, not a guarantee",
+    "Leasehold registration 1.1% (every 30 years)"
+   ]
+  },
+  "source": "ai",
+  "hash": "73c76e4e96d0ae78",
+  "checked": "2026-11-01"
+ },
+ "still-sukhumvit-20-sc-asset": {
+  "name": "STILL Sukhumvit 20",
+  "url": "https://www.siamrealestate.com/detail/bangkok/apartment-condo/foreign-freehold/still-sukhumvit-20",
+  "market": "Bangkok",
+  "claims": {
+   "price_from": 30000000,
+   "currency": "THB",
+   "title_type": "freehold (49% foreign quota)",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "HTTP Error 403: Forbidden"
+ },
+ "mavista-phrom-phong-major-development": {
+  "name": "MAVISTA Phrom Phong",
+  "url": "https://www.terrabkk.com/en/projects/show/36778",
+  "market": "Bangkok",
+  "claims": {
+   "price_from": 70000000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Fully EIA-approved, MAVISTA PHROM PHONG redefines luxury living in Bangkok's most sought-after neighborhood",
+    "Start at : 70,000,000 THB",
+    "Finish date : 06/11/2027"
+   ]
+  },
+  "source": "ai",
+  "hash": "a9699d0ee1334e52",
+  "checked": "2026-11-01"
+ },
+ "xelf-by-sansiri": {
+  "name": "XELF by Sansiri",
+  "url": "https://baanscope.com/projects/sansiri-xelf-by-sansiri",
+  "market": "Bangkok",
+  "claims": {
+   "price_from": 3590000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 4.2,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Starting from ฿3.59M",
+    "Est. gross rental yield : 4.2 – 5.8 % per year",
+    "Developed by Sansiri, a premium developer with a strong delivery track record"
+   ]
+  },
+  "source": "ai",
+  "hash": "ff7a7ebdf18c9db7",
+  "checked": "2026-11-01"
+ },
+ "once-wongamat-honour-thailand": {
+  "name": "Once Wongamat",
+  "url": "https://www.wongamatgroup.com/en/new-projects/once-wongamat/",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": 11050000,
+   "currency": "THB",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership Freehold — Thai and foreign quota (foreign ≤ 49%)",
+    "Completion 2029 (planned)",
+    "Layouts are indicative and subject to final design and statutory approvals."
+   ]
+  },
+  "source": "ai",
+  "hash": "4081be327826ead5",
+  "checked": "2026-11-01"
+ },
+ "soondri-wongamat-craftwork": {
+  "name": "Soondri Wongamat",
+  "url": "https://embarkestate.com/en/coast/pattaya/soondri-wongamat",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": null,
+   "currency": "THB",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "The sales material calls the homes \"foreign freehold\", which means condominium units inside the building's 49 per cent foreign quota",
+    "We found no environmental approval for the project on the government's EIA database on 11 October 2026",
+    "The sales material gives completion as Q4 2029 to Q4 2030 and the construction start as 2026 in one place"
+   ]
+  },
+  "source": "ai",
+  "hash": "6e4165e775ea945a",
+  "checked": "2026-11-01"
+ },
+ "aquarous-jomtien-pattaya-assetwise": {
+  "name": "Aquarous Jomtien Pattaya",
+  "url": "https://www.9asset.com/en/condo-project/aquarous-jomtien-pattaya-464124",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 6.75,
+   "completion_year": 2027,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Project Information Project Type Condo EIA Permission approved Quantity 606 Unit Completed 2027",
+    "The project is expected to be completed around 2027 and is developed by AssetWise Public Company Limited.",
+    "Divide by THB 3,200,000 purchase price gives an estimated gross yield of ~6.75% p.a. (before common fees, taxes, and vacancy)."
+   ]
+  },
+  "source": "ai",
+  "hash": "758a92839821183f",
+  "checked": "2026-11-01"
+ },
+ "the-boon-condo-bophut-b2-development": {
+  "name": "The Boon Condo",
+  "url": "https://www.fazwaz.co.th/en/projects/thailand/surat-thani/koh-samui/bo-phut/the-boon-condo",
+  "market": "Koh Samui",
+  "claims": {
+   "price_from": 91500,
+   "currency": "USD",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "it is scheduled for completion in Dec 2027",
+    "Foreigners can own a condominium Freehold in their own name.",
+    "Foreign Quota Fully Furnished Mountain View"
+   ]
+  },
+  "source": "ai",
+  "hash": "b1c9d5b162195ef1",
+  "checked": "2026-11-01"
+ },
+ "verdant-residence-maenam-verdant-developments": {
+  "name": "Verdant Residence Maenam",
+  "url": "https://kellerhenson.com/project/verdant-residence-maenam",
+  "market": "Koh Samui",
+  "claims": {
+   "price_from": 9900000,
+   "currency": "THB",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": true,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 17,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "the guaranteed 17% net ROI per year",
+    "Ownership: 30-year leasehold + optional 30-year extension",
+    "Leasehold ownership for non-Thai nationals (30 years lease renewable 2 times for a total of 90 years)"
+   ]
+  },
+  "source": "ai",
+  "hash": "134d5733e26b0908",
+  "checked": "2026-11-01"
+ },
+ "terra-mare-beach-villas-maenam": {
+  "name": "Terra Mare Beach Villas",
+  "url": "https://www.thaigerproperty.com/projects/thailand/surat-thani/koh-samui/maenam/terra-mare-beach-villas",
+  "market": "Koh Samui",
+  "claims": {
+   "price_from": 228000,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 30,
+   "extension_promised": true,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "scheduled for completion in Oct 2027",
+    "most developers will offer 3 terms for a total of 90 years",
+    "Land can be controlled through either a Thai Company or a long-term registered lease."
+   ]
+  },
+  "source": "ai",
+  "hash": "92ba7ced529a4883",
+  "checked": "2026-11-01"
+ },
+ "the-standard-residences-hua-hin-sansiri": {
+  "name": "The Standard Residences Hua Hin",
+  "url": "https://lionandland.com/projects/the-standard-residences-hua-hin/",
+  "market": "Hua Hin",
+  "claims": {
+   "price_from": 10650000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Price from THB 10,650,000 Handover 2026",
+    "Documentation available on request",
+    "Indicative only. Prices and availability must be confirmed."
+   ]
+  },
+  "source": "ai",
+  "hash": "cdf0702578f9adfd",
+  "checked": "2026-11-01"
+ },
+ "elanique-huahin-94-fullrich-asset": {
+  "name": "Elanique HuaHin 94 (Elanique Luxury Pool Villa)",
+  "url": "https://kellerhenson.com/project/elanique-luxury-pool-villa",
+  "market": "Hua Hin",
+  "claims": {
+   "price_from": 12290000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership: Freehold or Leasehold",
+    "All villas come with a Red Chanote title deed, ensuring secure legal ownership.",
+    "Scheduled for completion in Q2/2027"
+   ]
+  },
+  "source": "ai",
+  "hash": "b8f6703ad738b01d",
+  "checked": "2026-11-01"
+ },
+ "sobha-siniya-island-villas-sobha-realty": {
+  "name": "Sobha Siniya Island Villas (Phase 1)",
+  "url": "https://www.propertyfinder.ae/en/new-projects/sobha-real-estate-llc/siniyah-island",
+  "market": "Umm Al Quwain",
+  "claims": {
+   "price_from": 10600000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Starting Price: AED 10,600,000",
+    "Ownership type Freehold",
+    "Expected Completion December 1, 2028"
+   ]
+  },
+  "source": "ai",
+  "hash": "ddbd69058a043dac",
+  "checked": "2026-11-01"
+ },
+ "stellar-by-elie-saab-emirates-developments": {
+  "name": "Stellar by Elie Saab",
+  "url": "https://www.propertyfinder.ae/en/new-projects/emirates-property-investment/stellar-by-elie-saab",
+  "market": "Abu Dhabi",
+  "claims": {
+   "price_from": 2300000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership type Freehold",
+    "Expected Completion December 1, 2028",
+    "Rental Yield Potential : High demand for luxury rentals in the area"
+   ]
+  },
+  "source": "ai",
+  "hash": "61307e47c264ef47",
+  "checked": "2026-11-01"
+ },
+ "mamsha-palm-aldar": {
+  "name": "Mamsha Palm",
+  "url": "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/mamsha-palm",
+  "market": "Abu Dhabi",
+  "claims": {
+   "price_from": 3600000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Launch price 3.6M AED",
+    "Ownership type Freehold",
+    "Expected Completion December 31, 2028"
+   ]
+  },
+  "source": "ai",
+  "hash": "2fdd8e1bdacb94ae",
+  "checked": "2026-11-01"
+ },
+ "bab-al-qasr-garden-residence-66-burtville": {
+  "name": "Bab Al Qasr Garden Residence 66",
+  "url": "https://www.propertyfinder.ae/en/new-projects/burtville/bab-al-qasr-garden-residence-66",
+  "market": "Abu Dhabi",
+  "claims": {
+   "price_from": 2100000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Prices start from 2.1 million AED",
+    "Bab Al Qasr Garden Residence 66 is a freehold property, allowing buyers full ownership rights",
+    "Expected Completion June 1, 2029"
+   ]
+  },
+  "source": "ai",
+  "hash": "e0a1f1cae97dd3a1",
+  "checked": "2026-11-01"
+ },
+ "ramhan-island-villas-phase-4-eagle-hills": {
+  "name": "Ramhan Island Villas Phase 4",
+  "url": "https://propertyfinder.ae/en/new-projects/eagle-hills/ramhan-island-villas-phase-4",
+  "market": "Abu Dhabi",
+  "claims": {
+   "price_from": 6900000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership type Freehold",
+    "Starting from 6,900,000 AED",
+    "Expected Completion September 1, 2028"
+   ]
+  },
+  "source": "ai",
+  "hash": "d74090fb9591ee2b",
+  "checked": "2026-11-01"
+ },
+ "nasim-al-bahr-residences-adnh": {
+  "name": "Nasim Al Bahr Residences (The Luxury Collection)",
+  "url": "https://www.propertyfinder.ae/en/new-projects/abu-dhabi-national-hotels/nasim-al-bahr-residences",
+  "market": "Ras Al Khaimah",
+  "claims": {
+   "price_from": 3513000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Nasim Al Bahr Residences is a freehold development, allowing buyers full property ownership rights",
+    "with prices starting from AED 3,513,000",
+    "Rental Yields : Attractive rental returns from short-term and long-term tenants"
+   ]
+  },
+  "source": "ai",
+  "hash": "8f76f669763629eb",
+  "checked": "2026-11-01"
+ },
+ "oystra-richmind": {
+  "name": "Oystra",
+  "url": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra",
+  "market": "Ras Al Khaimah",
+  "claims": {
+   "price_from": 2400000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Yes, Oystra is a freehold property, allowing full ownership for both UAE nationals and foreign investors.",
+    "Oystra is a strong investment opportunity for both homeowners and investors.",
+    "property values are expected to rise, making Oystra a solid long-term asset."
+   ]
+  },
+  "source": "ai",
+  "hash": "38f0ee420bf6ed99",
+  "checked": "2026-11-01"
+ },
+ "gianfranco-ferre-residences-mira": {
+  "name": "Gianfranco Ferré Residences",
+  "url": "https://www.propertyfinder.ae/en/new-projects/mira-developments/gianfranco-ferre-residences",
+  "market": "Ras Al Khaimah",
+  "claims": {
+   "price_from": 1200000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ownership type Freehold",
+    "Expected Completion January 1, 2028",
+    "The starting price is AED 1200000."
+   ]
+  },
+  "source": "ai",
+  "hash": "925baccd5f026e0a",
+  "checked": "2026-11-01"
+ },
+ "azure-by-lapis-lapis-properties": {
+  "name": "Azure by Lapis",
+  "url": "https://www.propertyfinder.ae/en/new-projects/lapis-properties/azure-by-lapis",
+  "market": "Ras Al Khaimah",
+  "claims": {
+   "price_from": 750000,
+   "currency": "AED",
+   "title_type": "freehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "With units starting from AED 750,000, this development presents an exceptional opportunity",
+    "The starting price for Azure by Lapis is AED 790,000.",
+    "Azure by Lapis is a freehold development, granting full property ownership rights to buyers, investors, and residents"
+   ]
+  },
+  "source": "ai",
+  "hash": "acec5d69e25335c9",
+  "checked": "2026-11-01"
  }
 }

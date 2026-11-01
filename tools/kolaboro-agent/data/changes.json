@@ -948,5 +948,163 @@
     "leasehold"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bahia-papagayo-enjoy-grupo-laguna",
+  "name": "Bahia Papagayo Phase 1",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9459,
+    9460
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203831
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sky-gate-tower-tiger",
+  "name": "Sky Gate Tower",
+  "changed": {
+   "price_from": [
+    600000,
+    795000
+   ],
+   "permit_claim": [
+    true,
+    false
+   ],
+   "permit_number": [
+    "registered project #4120",
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ],
+   "escrow_or_guarantee": [
+    "Escrow account 10487681920050 at Abu Dhabi Commercial Bank",
+    "Escrow Account Number 10487681920050, Escrow Agent Abu Dhabi Commercial Bank"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "skypark-lucean-jomtien-lunique",
+  "name": "Skypark Lucean Jomtien Pattaya",
+  "changed": {
+   "price_from": [
+    4300000,
+    null
+   ],
+   "currency": [
+    "THB",
+    null
+   ],
+   "guaranteed_language": [
+    true,
+    false
+   ],
+   "advertised_yield_pct": [
+    6,
+    null
+   ],
+   "completion_year": [
+    2028,
+    null
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "intercontinental-residences-bangkok-asoke-cg-capital",
+  "name": "InterContinental Residences Bangkok Asoke",
+  "changed": {
+   "price_from": [
+    40800000,
+    1329078
+   ],
+   "currency": [
+    "THB",
+    "USD"
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
  }
 ]
