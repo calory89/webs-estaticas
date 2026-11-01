@@ -16,7 +16,9 @@
     '.cmdk input{width:100%;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:16px 18px;font-size:1.05rem;outline:none}.cmdk ul{list-style:none;margin:0;padding:6px;max-height:52vh;overflow:auto}.cmdk li{padding:9px 12px;border-radius:10px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}.cmdk li.on{background:#F2F1EC}.cmdk li small{color:var(--muted)}' +
     '.wk{display:flex;align-items:flex-end;gap:6px;height:150px;margin-top:10px}.wk div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;position:relative}.wk i{display:block;border-radius:3px 3px 0 0;min-height:1px}.wk i.a{background:#F6B08F}.wk i.b{background:#3B6FD8}.wk i.c{background:var(--ok)}.wk span{font-size:.65rem;color:var(--muted);text-align:center}' +
     '.live{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;color:#9fb0bf}.live i{width:8px;height:8px;border-radius:50%;background:var(--ok);animation:lv 2s infinite}@keyframes lv{50%{opacity:.3}}' +
-    '@media(max-width:900px){.ib{grid-template-columns:1fr}}';
+    '@media(max-width:900px){.ib{grid-template-columns:1fr}}' +
+    'a.btn2{text-decoration:none;color:inherit;display:inline-block}.ib-i.un b::before{content:none}.ib-i.un b span:first-child::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--hi);margin-right:6px;vertical-align:middle}' +
+    '@media(max-width:700px){header{padding:10px 12px;gap:8px}header #upd,header .live,header a[target=_blank]{display:none}header button,header a{padding:6px 10px;font-size:.85rem}nav.tabs{flex-wrap:nowrap;overflow-x:auto;padding:10px 12px 6px;scrollbar-width:none;position:sticky;top:52px;background:var(--paper);z-index:4}nav.tabs::-webkit-scrollbar{display:none}nav.tabs button{flex:0 0 auto}main{padding-top:6px}}';
   document.head.appendChild(css);
 
   // ---------- Inbox tab
@@ -102,7 +104,7 @@
   $('cmdk-q').addEventListener('input', function(){ IDX = 0; drawPal(); });
   pal.addEventListener('click', function(e){ var li = e.target.closest('li[data-i]'); if (li) pick(+li.dataset.i); else if (e.target === pal) closePal(); });
   var hdr = document.querySelector('header .sp');
-  if (hdr) { var kb = document.createElement('button'); kb.type = 'button'; kb.textContent = 'Search  ⌘K'; kb.onclick = openPal; hdr.parentNode.insertBefore(kb, hdr.nextSibling); var lv = document.createElement('span'); lv.className = 'live'; lv.innerHTML = '<i></i>Live'; lv.title = 'Refreshes every 60 seconds while this tab is open'; hdr.parentNode.insertBefore(lv, hdr); }
+  if (hdr) { var kb = document.createElement('button'); kb.type = 'button'; kb.textContent = matchMedia('(max-width:700px)').matches ? 'Search' : 'Search  ⌘K'; kb.onclick = openPal; hdr.parentNode.insertBefore(kb, hdr.nextSibling); var lv = document.createElement('span'); lv.className = 'live'; lv.innerHTML = '<i></i>Live'; lv.title = 'Refreshes every 60 seconds while this tab is open'; hdr.parentNode.insertBefore(lv, hdr); }
 
   // ---------- Live refresh + notifications
   var seen = null, baseTitle = document.title;
