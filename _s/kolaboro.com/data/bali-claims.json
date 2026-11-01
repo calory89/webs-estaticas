@@ -26,7 +26,7 @@
  "guaranteed_language": 8,
  "permit_claims": 10,
  "permit_numbers_published": 0,
- "plans_published": 22,
+ "plans_published": 21,
  "price_usd": {
   "known": 49,
   "median": 182000.0,
@@ -115,6 +115,13 @@
    "pages_ok": 471,
    "pages_failed": 60,
    "changes": 11
+  },
+  {
+   "date": "2026-11-01",
+   "mode": "ai",
+   "pages_ok": 535,
+   "pages_failed": 74,
+   "changes": 12
   }
  ]
 }

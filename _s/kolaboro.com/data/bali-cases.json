@@ -1,7 +1,7 @@
 {
  "updated": "2026-11-01",
- "markets": 91,
- "countries": 54,
+ "markets": 105,
+ "countries": 60,
  "note": "Anonymised until verification is complete. Advertised claims, not verified facts.",
  "cases": [
   {
@@ -2935,7 +2935,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Under $100k",
    "done": 2027,
    "title": "leasehold",
@@ -2946,7 +2946,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -2958,11 +2958,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "caution",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -4313,7 +4313,7 @@
    "market": "Ajman",
    "country": "UAE",
    "region": "Ajman",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$400k and up",
    "done": 2028,
@@ -4322,8 +4322,8 @@
    "yield": null,
    "units": 328,
    "checks": {
-    "permit": 0,
-    "escrow": null,
+    "permit": 2,
+    "escrow": true,
     "progress": null,
     "plans": true,
     "record": false,
@@ -4337,32 +4337,32 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
+    "Permit 537 (Ajman project registration number) is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
+    "permit": "registry",
+    "escrow": "registry",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 2,
    "claims": {
-    "verified": 0,
-    "unverified": 8,
-    "contradicted": 0
+    "verified": 2,
+    "unverified": 7,
+    "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
@@ -4373,17 +4373,17 @@
    "market": "Ajman",
    "country": "UAE",
    "region": "Ajman",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Under $100k",
    "done": 2028,
    "title": "freehold",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 1331,
    "checks": {
-    "permit": 0,
-    "escrow": null,
+    "permit": 2,
+    "escrow": true,
     "progress": null,
     "plans": false,
     "record": true,
@@ -4397,31 +4397,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
+    "Permit 529 (Ajman project registration number, Orchid) is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
+    "permit": "registry",
+    "escrow": "registry",
     "progress": "none",
     "plans": "none",
     "record": "developer",
     "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 2,
    "claims": {
-    "verified": 0,
-    "unverified": 6,
+    "verified": 3,
+    "unverified": 5,
     "contradicted": 3
    },
    "stage": "off-plan",
@@ -4433,16 +4433,16 @@
    "market": "Ajman",
    "country": "UAE",
    "region": "Ajman",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$200k to $400k",
    "done": 2026,
    "title": "freehold",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 103,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": true,
     "progress": 8,
     "plans": true,
@@ -4457,7 +4457,7 @@
      "returns_ok"
     ]
    },
-   "score": 5,
+   "score": 6,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -4466,26 +4466,27 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
+    "Permit 501 (Ajman project registration number) is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "developer",
+    "permit": "registry",
+    "escrow": "contradicted",
     "progress": "developer",
     "plans": "developer",
-    "record": "developer",
+    "record": "registry",
     "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 2,
    "claims": {
-    "verified": 1,
-    "unverified": 5,
-    "contradicted": 3
+    "verified": 3,
+    "unverified": 3,
+    "contradicted": 4
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 17
+   "profile": 18
   },
   {
    "id": "ALA-001",
@@ -5452,6 +5453,65 @@
    "profile": 8
   },
   {
+   "id": "ANU-002",
+   "market": "Antigua",
+   "country": "Antigua and Barbuda",
+   "region": "Antigua",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 69,
+   "checks": {
+    "permit": 1,
+    "escrow": true,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "developer",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 4,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": 6.0,
+   "profile": 14
+  },
+  {
    "id": "AUS-001",
    "market": "Austin",
    "country": "USA",
@@ -5510,6 +5570,69 @@
    "stage": "under construction",
    "delay": null,
    "profile": 15
+  },
+  {
+   "id": "BHS-001",
+   "market": "Bahamas",
+   "country": "Bahamas",
+   "region": "Bahamas",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 97,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [
+    "Construction stalled"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Construction stalled in public sources: ask the developer for the current status, in writing.",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 1,
+    "contradicted": 4
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 11
   },
   {
    "id": "BAH-001",
@@ -5630,6 +5753,246 @@
    "stage": null,
    "delay": null,
    "profile": 14
+  },
+  {
+   "id": "BAH-003",
+   "market": "Bahrain",
+   "country": "Bahrain",
+   "region": "Bahrain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": 7,
+   "units": 700,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 62,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 2,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 13
+  },
+  {
+   "id": "BAH-004",
+   "market": "Bahrain",
+   "country": "Bahrain",
+   "region": "Bahrain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 5,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 14
+  },
+  {
+   "id": "BAH-005",
+   "market": "Bahrain",
+   "country": "Bahrain",
+   "region": "Bahrain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 6,
+    "contradicted": 3
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 9
+  },
+  {
+   "id": "BAH-006",
+   "market": "Bahrain",
+   "country": "Bahrain",
+   "region": "Bahrain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 12
   },
   {
    "id": "PMI-001",
@@ -6280,6 +6643,66 @@
    "profile": 11
   },
   {
+   "id": "BZE-003",
+   "market": "Belize",
+   "country": "Belize",
+   "region": "Belize",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2023,
+   "title": "freehold (strata condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 155,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2023: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 5,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": 58.0,
+   "profile": 15
+  },
+  {
    "id": "BHX-001",
    "market": "Birmingham",
    "country": "United Kingdom",
@@ -6339,6 +6762,68 @@
    "stage": null,
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "BHX-002",
+   "market": "Birmingham",
+   "country": "United Kingdom",
+   "region": "Birmingham",
+   "docs": true,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": 999,
+   "yield": 6.2,
+   "units": 59,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit Birmingham City Council 2025/06786/PA (prior approval, 59 fl is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 4,
+    "unverified": 5,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 15
   },
   {
    "id": "BJV-001",
@@ -6436,7 +6921,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "31 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -6734,6 +7219,66 @@
    "profile": 15
   },
   {
+   "id": "BRI-001",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 236,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 4,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 12
+  },
+  {
    "id": "BUE-001",
    "market": "Buenos Aires",
    "country": "Argentina",
@@ -6793,6 +7338,65 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "BUE-002",
+   "market": "Buenos Aires",
+   "country": "Argentina",
+   "region": "Buenos Aires",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2030,
+   "title": "freehold (propiedad horizontal)",
+   "lease": null,
+   "yield": null,
+   "units": 350,
+   "checks": {
+    "permit": 0,
+    "escrow": true,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 4,
+    "unverified": 3,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": 24.0,
+   "profile": 19
   },
   {
    "id": "BGR-001",
@@ -7201,6 +7805,126 @@
    "profile": 18
   },
   {
+   "id": "KHM-005",
+   "market": "Cambodia",
+   "country": "Cambodia",
+   "region": "Cambodia",
+   "docs": false,
+   "plans": true,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "freehold",
+   "lease": null,
+   "yield": 6,
+   "units": 438,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "contradicted"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 7,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": 24.0,
+   "profile": 16
+  },
+  {
+   "id": "KHM-006",
+   "market": "Cambodia",
+   "country": "Cambodia",
+   "region": "Cambodia",
+   "docs": false,
+   "plans": true,
+   "band": "Under $100k",
+   "done": 2029,
+   "title": "strata (hard) title, freehold per agents",
+   "lease": null,
+   "yield": null,
+   "units": 224,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 7,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "CAN-001",
    "market": "Canary Islands",
    "country": "Spain",
@@ -7437,6 +8161,368 @@
    "stage": "under construction",
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "CPT-002",
+   "market": "Cape Town",
+   "country": "South Africa",
+   "region": "Cape Town",
+   "docs": false,
+   "plans": true,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "sectional title (freehold)",
+   "lease": null,
+   "yield": null,
+   "units": 151,
+   "checks": {
+    "permit": 0,
+    "escrow": true,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 2,
+    "unverified": 8,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 15
+  },
+  {
+   "id": "CPT-003",
+   "market": "Cape Town",
+   "country": "South Africa",
+   "region": "Cape Town",
+   "docs": false,
+   "plans": true,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "sectional title (freehold)",
+   "lease": null,
+   "yield": null,
+   "units": 226,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [
+    "Legal dispute reported"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Legal dispute reported in public sources: ask the developer for the current status, in writing.",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 5,
+    "unverified": 5,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 14
+  },
+  {
+   "id": "CPT-004",
+   "market": "Cape Town",
+   "country": "South Africa",
+   "region": "Cape Town",
+   "docs": false,
+   "plans": true,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": "sectional title (freehold)",
+   "lease": null,
+   "yield": null,
+   "units": 148,
+   "checks": {
+    "permit": 0,
+    "escrow": true,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 8,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 18
+  },
+  {
+   "id": "CPV-001",
+   "market": "Cape Verde",
+   "country": "Cape Verde",
+   "region": "Cape Verde",
+   "docs": false,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2028,
+   "title": "freehold",
+   "lease": null,
+   "yield": 6,
+   "units": 200,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "independent"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 5,
+    "unverified": 2,
+    "contradicted": 4
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 11
+  },
+  {
+   "id": "CPV-002",
+   "market": "Cape Verde",
+   "country": "Cape Verde",
+   "region": "Cape Verde",
+   "docs": false,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2028,
+   "title": "freehold (suite registered to buyer)",
+   "lease": null,
+   "yield": null,
+   "units": 65,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 8,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 10
+  },
+  {
+   "id": "CYM-001",
+   "market": "Cayman Islands",
+   "country": "Cayman Islands",
+   "region": "Cayman Islands",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "freehold (strata)",
+   "lease": null,
+   "yield": null,
+   "units": 42,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 5,
+    "unverified": 2,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": 69.0,
+   "profile": 16
   },
   {
    "id": "CNX-001",
@@ -7771,6 +8857,125 @@
    "stage": "under construction",
    "delay": null,
    "profile": 19
+  },
+  {
+   "id": "COL-004",
+   "market": "Colombia",
+   "country": "Colombia",
+   "region": "Colombia",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "freehold (individual matricula inmobiliaria per suite)",
+   "lease": null,
+   "yield": null,
+   "units": 153,
+   "checks": {
+    "permit": 0,
+    "escrow": true,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 8,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": 2.0,
+   "profile": 19
+  },
+  {
+   "id": "COL-005",
+   "market": "Colombia",
+   "country": "Colombia",
+   "region": "Colombia",
+   "docs": false,
+   "plans": true,
+   "band": "$100k to $200k",
+   "done": 2029,
+   "title": "freehold (escritura publica)",
+   "lease": null,
+   "yield": null,
+   "units": 309,
+   "checks": {
+    "permit": 0,
+    "escrow": true,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 8,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 10
   },
   {
    "id": "CBL-001",
@@ -8237,6 +9442,126 @@
     "contradicted": 2
    },
    "stage": "off-plan",
+   "delay": null,
+   "profile": 12
+  },
+  {
+   "id": "CRI-005",
+   "market": "Costa Rica",
+   "country": "Costa Rica",
+   "region": "Costa Rica",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "freehold (condominium title, direct or via S.A./S.R.L.)",
+   "lease": null,
+   "yield": null,
+   "units": 13,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 8,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 13
+  },
+  {
+   "id": "CRI-006",
+   "market": "Costa Rica",
+   "country": "Costa Rica",
+   "region": "Costa Rica",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "freehold (condominium title)",
+   "lease": null,
+   "yield": null,
+   "units": 59,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 7,
+    "contradicted": 0
+   },
+   "stage": "under construction",
    "delay": null,
    "profile": 12
   },
@@ -9961,6 +11286,126 @@
     "verified": 2,
     "unverified": 9,
     "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 16
+  },
+  {
+   "id": "DOM-005",
+   "market": "Dominican Republic",
+   "country": "Dominican Republic",
+   "region": "Dominican Republic",
+   "docs": false,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "freehold (condominium title)",
+   "lease": null,
+   "yield": null,
+   "units": 216,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "contradicted",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 6,
+    "contradicted": 3
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 17
+  },
+  {
+   "id": "DOM-006",
+   "market": "Dominican Republic",
+   "country": "Dominican Republic",
+   "region": "Dominican Republic",
+   "docs": true,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "freehold (condominium title)",
+   "lease": null,
+   "yield": null,
+   "units": 282,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 4,
+    "unverified": 4,
+    "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
@@ -13024,7 +14469,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit 4019 is published: does it exist in the official register and match this plot?",
+    "Permit #4019 is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
    ],
@@ -13174,7 +14619,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": 2029,
+   "done": 2028,
    "title": "freehold",
    "lease": null,
    "yield": 8,
@@ -13201,12 +14646,12 @@
    "notes": [],
    "tier": "clear",
    "read": true,
-   "checked": "31 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit DLD project 4480 is published: does it exist in the official register and match this plot?",
-    "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?"
+    "Permit project number 4480 is published: does it exist in the official register and match this plot?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -13552,18 +14997,18 @@
    "country": "Egypt",
    "region": "Egypt",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2028,
    "title": "freehold",
    "lease": null,
    "yield": null,
-   "units": 60000,
+   "units": null,
    "checks": {
     "permit": 0,
     "escrow": null,
-    "progress": null,
-    "plans": false,
+    "progress": "updates",
+    "plans": true,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -13575,11 +15020,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -13599,12 +15044,12 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 4,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 15
+   "profile": 13
   },
   {
    "id": "EGY-008",
@@ -13667,6 +15112,127 @@
    "profile": 16
   },
   {
+   "id": "EGY-009",
+   "market": "Egypt",
+   "country": "Egypt",
+   "region": "Egypt",
+   "docs": false,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "freehold",
+   "lease": null,
+   "yield": 7,
+   "units": 97,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 5,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 17
+  },
+  {
+   "id": "EGY-010",
+   "market": "Egypt",
+   "country": "Egypt",
+   "region": "Egypt",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2029,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit Ministerial Decree No. 216 of 2026 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "contradicted",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 6,
+    "contradicted": 4
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 13
+  },
+  {
    "id": "FJI-001",
    "market": "Fiji",
    "country": "Fiji",
@@ -13726,6 +15292,187 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 5
+  },
+  {
+   "id": "FLL-001",
+   "market": "Fort Lauderdale",
+   "country": "USA",
+   "region": "Fort Lauderdale",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 163,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77476 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 15
+  },
+  {
+   "id": "FLL-002",
+   "market": "Fort Lauderdale",
+   "country": "USA",
+   "region": "Fort Lauderdale",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 88,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77746 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 13
+  },
+  {
+   "id": "FLL-003",
+   "market": "Fort Lauderdale",
+   "country": "USA",
+   "region": "Fort Lauderdale",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 238,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77962 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 4,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 10
   },
   {
    "id": "NCE-001",
@@ -14546,20 +16293,80 @@
    "verified": {
     "permit": "developer",
     "escrow": "none",
-    "progress": "independent",
+    "progress": "developer",
     "plans": "none",
     "record": "developer",
     "returns_ok": "developer"
    },
-   "vscore": 1,
+   "vscore": 0,
    "claims": {
-    "verified": 5,
-    "unverified": 4,
+    "verified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "profile": 14
+  },
+  {
+   "id": "OOL-005",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": "freehold strata",
+   "lease": null,
+   "yield": null,
+   "units": 347,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 4,
+    "unverified": 7,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 12
   },
   {
    "id": "GRC-001",
@@ -14779,7 +16586,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 11
+   "profile": 9
   },
   {
    "id": "GRC-005",
@@ -14967,6 +16774,66 @@
    "profile": 12
   },
   {
+   "id": "GND-002",
+   "market": "Grenada",
+   "country": "Grenada",
+   "region": "Grenada",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "real estate share in hotel (CBI)",
+   "lease": null,
+   "yield": null,
+   "units": 120,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 2,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "HAK-001",
    "market": "Hakuba",
    "country": "Japan",
@@ -15028,7 +16895,7 @@
    "profile": 9
   },
   {
-   "id": "HAW-001",
+   "id": "HNL-001",
    "market": "Hawaii",
    "country": "USA",
    "region": "Hawaii",
@@ -15087,6 +16954,66 @@
    "stage": "under construction",
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "HOU-001",
+   "market": "Houston",
+   "country": "USA",
+   "region": "Houston",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 90,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 5,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": 15.0,
+   "profile": 12
   },
   {
    "id": "HHQ-001",
@@ -15380,7 +17307,7 @@
    "region": "Istanbul",
    "docs": false,
    "plans": false,
-   "band": "$400k and up",
+   "band": "$200k to $400k",
    "done": 2027,
    "title": null,
    "lease": null,
@@ -15388,7 +17315,7 @@
    "units": 720,
    "checks": {
     "permit": 0,
-    "escrow": null,
+    "escrow": true,
     "progress": null,
     "plans": false,
     "record": false,
@@ -15402,7 +17329,7 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -15414,8 +17341,7 @@
     "Title type not stated: leasehold, freehold or a company structure?",
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": null,
    "vscore": null,
@@ -16786,6 +18712,125 @@
    "profile": 8
   },
   {
+   "id": "LAS-001",
+   "market": "Las Vegas",
+   "country": "USA",
+   "region": "Las Vegas",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 171,
+   "checks": {
+    "permit": 0,
+    "escrow": true,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "developer",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 2,
+    "unverified": 6,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": 21.0,
+   "profile": 14
+  },
+  {
+   "id": "LAS-002",
+   "market": "Las Vegas",
+   "country": "USA",
+   "region": "Las Vegas",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 240,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 2,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 13
+  },
+  {
    "id": "LIS-001",
    "market": "Lisbon",
    "country": "Portugal",
@@ -16844,7 +18889,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 19
+   "profile": 17
   },
   {
    "id": "LIS-002",
@@ -16905,6 +18950,198 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "LIV-001",
+   "market": "Liverpool",
+   "country": "United Kingdom",
+   "region": "Liverpool",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "leasehold",
+   "lease": 999,
+   "yield": 8,
+   "units": 95,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Permit Liverpool City Council 26F/1624 and 26/PCU/1639 is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 5,
+    "unverified": 4,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 15
+  },
+  {
+   "id": "LIV-002",
+   "market": "Liverpool",
+   "country": "United Kingdom",
+   "region": "Liverpool",
+   "docs": true,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "leasehold",
+   "lease": 999,
+   "yield": 6.0,
+   "units": 138,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [
+    "Legal dispute reported"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Legal dispute reported in public sources: ask the developer for the current status, in writing.",
+    "Permit Liverpool City Council 21F/1699 is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 5,
+    "unverified": 4,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 18
+  },
+  {
+   "id": "LIV-003",
+   "market": "Liverpool",
+   "country": "United Kingdom",
+   "region": "Liverpool",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": null,
+   "yield": 6.0,
+   "units": 656,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [
+    "Construction stalled"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Construction stalled in public sources: ask the developer for the current status, in writing.",
+    "Permit Liverpool City Council 17F/0874 is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 3,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": 9.0,
+   "profile": 21
   },
   {
    "id": "LOM-001",
@@ -18152,7 +20389,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 18
+   "profile": 16
   },
   {
    "id": "CAB-006",
@@ -18272,7 +20509,7 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 9
+   "profile": 7
   },
   {
    "id": "CAB-008",
@@ -18900,6 +21137,250 @@
    "profile": 13
   },
   {
+   "id": "MYS-009",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2029,
+   "title": "leasehold (99 years to 4 Oct 2122), serviced apartment strata",
+   "lease": 99,
+   "yield": null,
+   "units": 960,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit Developer licence 30633/11-2028/0308(A); Advertising and sal is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 4,
+   "claims": {
+    "verified": 10,
+    "unverified": 1,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": 22.0,
+   "profile": 18
+  },
+  {
+   "id": "MYS-010",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 111,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit Developer's License No.: 32/08-2028/1034 (R); Advertising an is published: does it exist in the official register and match this plot?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 4,
+   "claims": {
+    "verified": 9,
+    "unverified": 1,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": 24.0,
+   "profile": 19
+  },
+  {
+   "id": "MYS-011",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": false,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2032,
+   "title": "leasehold",
+   "lease": 99,
+   "yield": null,
+   "units": 1033,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2032: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 10,
+    "unverified": 1,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": 39.0,
+   "profile": 21
+  },
+  {
+   "id": "MYS-012",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2030,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 786,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit MBJB/U/2025/14/BGN/101/KOM(0) is published: does it exist in the official register and match this plot?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 4,
+   "claims": {
+    "verified": 10,
+    "unverified": 1,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": 18.0,
+   "profile": 18
+  },
+  {
    "id": "MLA-001",
    "market": "Malta",
    "country": "Malta",
@@ -18963,7 +21444,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 19
+   "profile": 17
   },
   {
    "id": "MLA-002",
@@ -19024,7 +21505,7 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "profile": 13
   },
   {
    "id": "MLA-003",
@@ -19088,7 +21569,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 14
+   "profile": 12
   },
   {
    "id": "MLA-004",
@@ -19274,6 +21755,261 @@
    "profile": 12
   },
   {
+   "id": "MAN-003",
+   "market": "Manchester",
+   "country": "United Kingdom",
+   "region": "Manchester",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": 250,
+   "yield": 6,
+   "units": 113,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [
+    "Legal dispute reported",
+    "Reported delays"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Reported delays in public sources: ask the developer for the current status, in writing.",
+    "Legal dispute reported in public sources: ask the developer for the current status, in writing.",
+    "Permit Trafford Council 111364/RES/23 is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "contradicted",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 4,
+    "unverified": 4,
+    "contradicted": 4
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 14
+  },
+  {
+   "id": "MAN-004",
+   "market": "Manchester",
+   "country": "United Kingdom",
+   "region": "Manchester",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "leasehold",
+   "lease": 999,
+   "yield": 6,
+   "units": 250,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit Salford City Council 23/81487/FUL is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 3,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 16
+  },
+  {
+   "id": "MAN-005",
+   "market": "Manchester",
+   "country": "United Kingdom",
+   "region": "Manchester",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "leasehold",
+   "lease": 980,
+   "yield": 6,
+   "units": 494,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [
+    "Legal dispute reported"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Legal dispute reported in public sources: ask the developer for the current status, in writing.",
+    "Permit Manchester City Council 132199/FO/2021 is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 7,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 0.0,
+   "profile": 21
+  },
+  {
+   "id": "MAN-006",
+   "market": "Manchester",
+   "country": "United Kingdom",
+   "region": "Manchester",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": null,
+   "yield": null,
+   "units": 217,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit Manchester City Council 114664/FO/2016 (as varied, latest 13 is published: does it exist in the official register and match this plot?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 4,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "MRK-001",
    "market": "Marrakech",
    "country": "Morocco",
@@ -19332,6 +22068,125 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "MRK-002",
+   "market": "Marrakech",
+   "country": "Morocco",
+   "region": "Marrakech",
+   "docs": false,
+   "plans": true,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold (individual land title at delivery)",
+   "lease": null,
+   "yield": null,
+   "units": 16,
+   "checks": {
+    "permit": 1,
+    "escrow": true,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "contradicted",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 9,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 10
+  },
+  {
+   "id": "MRK-003",
+   "market": "Marrakech",
+   "country": "Morocco",
+   "region": "Marrakech",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 10
   },
   {
    "id": "MRU-001",
@@ -19690,6 +22545,66 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 16
+  },
+  {
+   "id": "MRU-007",
+   "market": "Mauritius",
+   "country": "Mauritius",
+   "region": "Mauritius",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 220,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 6,
+    "unverified": 2,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": 6.0,
+   "profile": 17
   },
   {
    "id": "MEX-001",
@@ -20379,6 +23294,67 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 10
+  },
+  {
+   "id": "MIA-009",
+   "market": "Miami",
+   "country": "USA",
+   "region": "Miami",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 216,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77375 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 17
   },
   {
    "id": "MNE-001",
@@ -21135,6 +24111,430 @@
    "profile": 16
   },
   {
+   "id": "NBO-002",
+   "market": "Nairobi",
+   "country": "Kenya",
+   "region": "Nairobi",
+   "docs": false,
+   "plans": true,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": "leasehold (sectional title)",
+   "lease": null,
+   "yield": 9,
+   "units": 380,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 1,
+    "unverified": 7,
+    "contradicted": 4
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 16
+  },
+  {
+   "id": "NBO-003",
+   "market": "Nairobi",
+   "country": "Kenya",
+   "region": "Nairobi",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "leasehold (sectional title)",
+   "lease": null,
+   "yield": 7.5,
+   "units": 284,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 6,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 12
+  },
+  {
+   "id": "WDH-001",
+   "market": "Namibia",
+   "country": "Namibia",
+   "region": "Namibia",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": "sectional title (freehold)",
+   "lease": null,
+   "yield": 10,
+   "units": 90,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 2,
+    "unverified": 7,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 10
+  },
+  {
+   "id": "BNA-001",
+   "market": "Nashville",
+   "country": "USA",
+   "region": "Nashville",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 146,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 2,
+    "unverified": 6,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 12
+  },
+  {
+   "id": "BNA-002",
+   "market": "Nashville",
+   "country": "USA",
+   "region": "Nashville",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 84,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 4,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 10
+  },
+  {
+   "id": "NYC-001",
+   "market": "New York",
+   "country": "USA",
+   "region": "New York",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 73,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Permit NYC DOB M00995463-I1-GC is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 4,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 9
+  },
+  {
+   "id": "NYC-002",
+   "market": "New York",
+   "country": "USA",
+   "region": "New York",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 98,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [
+    "Legal dispute reported"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Legal dispute reported in public sources: ask the developer for the current status, in writing.",
+    "Permit NYC DOB B00501131 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 3,
+    "unverified": 5,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "NZL-001",
    "market": "New Zealand",
    "country": "New Zealand",
@@ -21353,6 +24753,67 @@
    "stage": "under construction",
    "delay": null,
    "profile": 14
+  },
+  {
+   "id": "NSK-004",
+   "market": "Niseko",
+   "country": "Japan",
+   "region": "Niseko",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 31,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 3,
+    "unverified": 6,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": 84.0,
+   "profile": 7
   },
   {
    "id": "NCY-001",
@@ -21955,7 +25416,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "30 Oct 2026",
+   "checked": "1 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -22446,6 +25907,65 @@
    "profile": 18
   },
   {
+   "id": "OMN-012",
+   "market": "Oman",
+   "country": "Oman",
+   "region": "Oman",
+   "docs": false,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 4,
+    "unverified": 3,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "ORL-001",
    "market": "Orlando",
    "country": "USA",
@@ -22504,6 +26024,66 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 20
+  },
+  {
+   "id": "ORL-002",
+   "market": "Orlando",
+   "country": "USA",
+   "region": "Orlando",
+   "docs": true,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 960,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": 38,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77061 / PR77135 / PR77136 / PR77332 (unrecorded tower is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "registry",
+    "plans": "developer",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 5,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 16
   },
   {
    "id": "PAN-001",
@@ -22719,6 +26299,66 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 14
+  },
+  {
+   "id": "PAN-005",
+   "market": "Panama",
+   "country": "Panama",
+   "region": "Panama",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "freehold (horizontal property title)",
+   "lease": null,
+   "yield": 8,
+   "units": 126,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 6,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": 24.0,
+   "profile": 16
   },
   {
    "id": "PAT-001",
@@ -23600,7 +27240,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 18
+   "profile": 16
   },
   {
    "id": "PHL-007",
@@ -24139,7 +27779,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "freehold (foreign quota units) or leasehold",
+   "title": "leasehold",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -24168,6 +27808,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -24492,8 +28133,8 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 4,
-    "contradicted": 1
+    "unverified": 5,
+    "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
@@ -24959,7 +28600,7 @@
    "region": "Portugal",
    "docs": false,
    "plans": true,
-   "band": "$400k and up",
+   "band": "$200k to $400k",
    "done": 2030,
    "title": "freehold",
    "lease": null,
@@ -25072,6 +28713,66 @@
    "stage": null,
    "delay": null,
    "profile": 10
+  },
+  {
+   "id": "PRI-002",
+   "market": "Puerto Rico",
+   "country": "Puerto Rico",
+   "region": "Puerto Rico",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold (condominium; some units restricted to tourism use)",
+   "lease": null,
+   "yield": null,
+   "units": 66,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 5,
+    "unverified": 1,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": 9.0,
+   "profile": 17
   },
   {
    "id": "PVR-001",
@@ -25593,6 +29294,245 @@
    "stage": "under construction",
    "delay": 3.0,
    "profile": 16
+  },
+  {
+   "id": "QAT-002",
+   "market": "Qatar",
+   "country": "Qatar",
+   "region": "Qatar",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 150,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 5,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 8
+  },
+  {
+   "id": "QAT-003",
+   "market": "Qatar",
+   "country": "Qatar",
+   "region": "Qatar",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": 34,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 4,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 15
+  },
+  {
+   "id": "QAT-004",
+   "market": "Qatar",
+   "country": "Qatar",
+   "region": "Qatar",
+   "docs": false,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2030,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 4,
+    "contradicted": 2
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 15
+  },
+  {
+   "id": "QAT-005",
+   "market": "Qatar",
+   "country": "Qatar",
+   "region": "Qatar",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 6,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 13
   },
   {
    "id": "RAK-001",
@@ -26886,7 +30826,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 17
+   "profile": 15
   },
   {
    "id": "RMY-013",
@@ -26948,7 +30888,7 @@
    },
    "stage": "under construction",
    "delay": null,
-   "profile": 10
+   "profile": 8
   },
   {
    "id": "RMY-014",
@@ -26996,10 +30936,10 @@
     "escrow": "developer",
     "progress": "none",
     "plans": "developer",
-    "record": "independent",
+    "record": "developer",
     "returns_ok": "developer"
    },
-   "vscore": 1,
+   "vscore": 0,
    "claims": {
     "verified": 2,
     "unverified": 8,
@@ -27007,7 +30947,7 @@
    },
    "stage": "off-plan",
    "delay": null,
-   "profile": 15
+   "profile": 13
   },
   {
    "id": "KSA-001",
@@ -27368,6 +31308,66 @@
    "stage": "under construction",
    "delay": null,
    "profile": 10
+  },
+  {
+   "id": "DKR-001",
+   "market": "Senegal",
+   "country": "Senegal",
+   "region": "Senegal",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "freehold (titre foncier) not stated",
+   "lease": null,
+   "yield": null,
+   "units": 20,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 9,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 8
   },
   {
    "id": "SEZ-001",
@@ -28688,6 +32688,126 @@
    "profile": 10
   },
   {
+   "id": "SKB-002",
+   "market": "St Kitts and Nevis",
+   "country": "St Kitts and Nevis",
+   "region": "St Kitts and Nevis",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": "freehold (title-deeded villa or share)",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 4,
+    "unverified": 3,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": 48.0,
+   "profile": 11
+  },
+  {
+   "id": "SLU-001",
+   "market": "St Lucia",
+   "country": "St Lucia",
+   "region": "St Lucia",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "freehold unit or CIP share (confirm instrument)",
+   "lease": null,
+   "yield": 8,
+   "units": 156,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 2,
+    "unverified": 6,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 15
+  },
+  {
    "id": "SUM-001",
    "market": "Sumba",
    "country": "Indonesia",
@@ -29060,6 +33180,190 @@
    "profile": 10
   },
   {
+   "id": "SYD-004",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "strata (tenure on the government-owned Darling Harbour site not stated)",
+   "lease": null,
+   "yield": null,
+   "units": 263,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit SSD-7874 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 9,
+    "unverified": 1,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 13
+  },
+  {
+   "id": "TPA-001",
+   "market": "Tampa",
+   "country": "USA",
+   "region": "Tampa",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "freehold (fee simple condominium)",
+   "lease": null,
+   "yield": null,
+   "units": 225,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": "updates",
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77422 is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "registry",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 4,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": 2.0,
+   "profile": 13
+  },
+  {
+   "id": "TPA-002",
+   "market": "Tampa",
+   "country": "USA",
+   "region": "Tampa",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": "freehold (fee simple condo-hotel unit)",
+   "lease": null,
+   "yield": 8,
+   "units": 658,
+   "checks": {
+    "permit": 2,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Permit DBPR PR77776 is published: does it exist in the official register and match this plot?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 3,
+    "unverified": 7,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 12
+  },
+  {
    "id": "TCA-001",
    "market": "Turks and Caicos",
    "country": "Turks and Caicos Islands",
@@ -29359,6 +33663,66 @@
    "stage": null,
    "delay": null,
    "profile": 11
+  },
+  {
+   "id": "URY-002",
+   "market": "Uruguay",
+   "country": "Uruguay",
+   "region": "Uruguay",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2020,
+   "title": "freehold (propiedad horizontal)",
+   "lease": null,
+   "yield": null,
+   "units": 63,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2020: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 6,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 9
   },
   {
    "id": "VNM-001",
@@ -29688,6 +34052,251 @@
    "profile": 11
   },
   {
+   "id": "VNM-007",
+   "market": "Vietnam",
+   "country": "Vietnam",
+   "region": "Vietnam",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "apartment ownership; foreigners within the approved foreign-ownership list (50-year term under Vietnamese law)",
+   "lease": 50,
+   "yield": null,
+   "units": 616,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": "updates",
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Permit HCMC Department of Construction letter 26381/SXD-PTDT (23 Ju is published: does it exist in the official register and match this plot?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "independent",
+    "escrow": "independent",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 9,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 15
+  },
+  {
+   "id": "VNM-008",
+   "market": "Vietnam",
+   "country": "Vietnam",
+   "region": "Vietnam",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": "leasehold",
+   "lease": null,
+   "yield": 6,
+   "units": 264,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "contradicted"
+   },
+   "vscore": 1,
+   "claims": {
+    "verified": 3,
+    "unverified": 4,
+    "contradicted": 3
+   },
+   "stage": "under construction",
+   "delay": 18.0,
+   "profile": 17
+  },
+  {
+   "id": "VNM-009",
+   "market": "Vietnam",
+   "country": "Vietnam",
+   "region": "Vietnam",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 214,
+   "checks": {
+    "permit": 1,
+    "escrow": true,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [
+    "Construction stalled"
+   ],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Construction stalled in public sources: ask the developer for the current status, in writing.",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "independent",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 5
+  },
+  {
+   "id": "VNM-010",
+   "market": "Vietnam",
+   "country": "Vietnam",
+   "region": "Vietnam",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "apartment ownership (long-term for Vietnamese; foreigners 50 years renewable within 30% quota)",
+   "lease": 50,
+   "yield": null,
+   "units": 800,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "31 Oct 2026",
+   "invited": null,
+   "q": [
+    "Permit Da Nang Department of Construction letter 1818/SXD-QLN (30 J is published: does it exist in the official register and match this plot?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "developer",
+    "progress": "independent",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 2,
+   "claims": {
+    "verified": 8,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "profile": 14
+  },
+  {
    "id": "ZNZ-001",
    "market": "Zanzibar",
    "country": "Tanzania",
@@ -29808,35 +34417,157 @@
    "stage": "off-plan",
    "delay": null,
    "profile": 13
+  },
+  {
+   "id": "ZNZ-003",
+   "market": "Zanzibar",
+   "country": "Tanzania",
+   "region": "Zanzibar",
+   "docs": false,
+   "plans": true,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": null,
+   "yield": 15,
+   "units": 93,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "developer",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 7,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "profile": 14
+  },
+  {
+   "id": "ZNZ-004",
+   "market": "Zanzibar",
+   "country": "Tanzania",
+   "region": "Zanzibar",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "leasehold",
+   "lease": 99,
+   "yield": null,
+   "units": 120,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": "updates",
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "1 Nov 2026",
+   "invited": null,
+   "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "developer"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 9,
+    "contradicted": 1
+   },
+   "stage": "under construction",
+   "delay": null,
+   "profile": 13
   }
  ],
  "db": {
   "updated": "2026-11-01",
-  "projects": 531,
-  "markets": 91,
-  "countries": 54,
-  "sources": 2241,
-  "data_points": 12881,
+  "projects": 609,
+  "markets": 105,
+  "countries": 60,
+  "sources": 2798,
+  "data_points": 15368,
   "claims": {
-   "verified": 784,
-   "unverified": 1596,
-   "contradicted": 434
+   "verified": 1072,
+   "unverified": 1967,
+   "contradicted": 555
   },
-  "claims_total": 2814,
-  "deep_profiles": 303,
+  "claims_total": 3594,
+  "deep_profiles": 381,
   "checks_by_level": {
-   "registry": 154,
-   "independent": 179,
-   "developer": 657,
-   "contradicted": 37,
-   "none": 791
+   "registry": 206,
+   "independent": 238,
+   "developer": 803,
+   "contradicted": 47,
+   "none": 992
   },
-  "checks_rated": 1818,
+  "checks_rated": 2286,
   "stages": {
-   "off-plan": 118,
-   "under construction": 136
+   "off-plan": 148,
+   "under construction": 184
   },
-  "all_six_public": 22,
-  "with_flags": 31
+  "all_six_public": 23,
+  "with_flags": 39
  }
 }
