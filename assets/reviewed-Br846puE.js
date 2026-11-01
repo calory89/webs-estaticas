@@ -1,1 +1,0 @@
-const e={limitationChecker:"2026-10-24",caseValue:"2026-10-24",claimLetter:"2026-10-30",flightCompensation:"2026-10-31",latePaymentInterest:"2026-10-31",spainDismissal:"2026-11-01",ukRedundancy:"2026-11-01",spainLegalCosts:"2026-11-01",flightClaimDeadlines:"2026-11-01",germanNotice:"2026-11-01",trainDelay:"2026-11-01"};export{e as T};

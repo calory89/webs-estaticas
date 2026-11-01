@@ -91,7 +91,8 @@ async function sbCount(path, ctx) {
 async function listFirms(list, ctx) {
   const base = 'lawyers?select=' + FIRM_COLS + '&status=eq.active&quarantine_reason=is.null&domain_resolves=is.true&is_winwin=is.true&accepting_cases=not.is.false&listing_tier=in.(partner,verified_listing)'
     + (list.types ? '&case_types=ov.' + encodeURIComponent(pgArr(list.types)) : '')
-    + (list.country ? '&countries_norm=cs.' + encodeURIComponent(pgArr([list.country])) : '');
+    + (list.country ? '&countries_norm=cs.' + encodeURIComponent(pgArr([list.country])) : '')
+    + (list.category ? '&category=eq.' + encodeURIComponent(list.category) : '');
   const countBase = base.replace('select=' + FIRM_COLS, 'select=id');
   const [v, ix, nv, ni] = await Promise.all([
     sb(base + '&source=eq.' + CURATED + '&order=firm_name&limit=20', ctx),
@@ -112,6 +113,41 @@ function firmItem(f, verified, es) {
 
 function breadcrumbLd(crumbs) {
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: ORIGIN + path })) };
+}
+
+// 1-nov (indexing): a firm profile links to the listing pages that exist for its case types and
+// countries, so crawlers that do not run JavaScript find the related pages (only existing pages).
+function firmLinks(f, m) {
+  const pages = (m && m.pages) || {};
+  const out = [];
+  const add = (href, text) => { if (pages[href] && !out.some((x) => x.href === href) && out.length < 10) out.push({ href, text }); };
+  const types = (f.case_types || []).map((x) => String(x).replace(/_/g, '-')).slice(0, 6);
+  const countries = (f.countries_served || []).map((c) => slugify(c)).slice(0, 3);
+  for (const t of types) for (const c of countries) add('/lawyers/' + t + '/' + c, (pages['/lawyers/' + t + '/' + c] || {}).h1 || '');
+  for (const c of countries) add('/countries/' + c, (pages['/countries/' + c] || {}).h1 || '');
+  for (const t of types) add('/lawyers/' + t, (pages['/lawyers/' + t] || {}).h1 || '');
+  add('/firms', 'All firms and funders');
+  return out.filter((x) => x.text);
+}
+
+// 1-nov (indexing): article text for crawlers that do not run JavaScript (blog posts are plain
+// text with light Markdown). Escaped; headings, lists and paragraphs only.
+function articleHtml(text) {
+  const src = String(text || '').slice(0, 20000);
+  const inline = (t) => esc(clean(t)).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\[([^\]]+)\]\((?:https?:\/\/jurimatch\.com)?(\/[^)\s]*)\)/g, '<a href="$2">$1</a>').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1');
+  let html = '', list = false;
+  for (const raw of src.split(/\n+/)) {
+    const line = raw.trim();
+    if (!line) continue;
+    const h = line.match(/^(#{1,4})\s+(.*)$/);
+    const li = line.match(/^(?:[-*]|\d+\.)\s+(.*)$/);
+    if (li) { if (!list) { html += '<ul>'; list = true; } html += '<li>' + inline(li[1]) + '</li>'; continue; }
+    if (list) { html += '</ul>'; list = false; }
+    if (h) html += (h[1].length <= 2 ? '<h2>' : '<h3>') + inline(h[2]) + (h[1].length <= 2 ? '</h2>' : '</h3>');
+    else html += '<p>' + inline(line) + '</p>';
+  }
+  if (list) html += '</ul>';
+  return html;
 }
 
 async function dynamicPage(path, m, ctx) {
@@ -148,19 +184,20 @@ async function dynamicPage(path, m, ctx) {
         ['Fee model', hand && f.typical_model ? feeLabel(f.typical_model) : ''],
         ['Case types', (f.case_types || []).slice(0, 6).map((x) => { const t = titleCaseLabel(x).toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); }).join(', ').replace(/\bchf\b/gi, 'CHF')],
       ].filter((x) => x[1]),
+      links: firmLinks(f, m),
       crumbs: [['Home', '/'], ['Firms', '/firms'], [f.firm_name, path]],
       extraLd: [{ '@context': 'https://schema.org', '@type': 'LegalService', name: f.firm_name, url: ORIGIN + path, ...(f.website ? { sameAs: [f.website] } : {}), ...(where ? { areaServed: (f.countries_served || []).slice(0, 5) } : {}), description: d.slice(0, 300) }],
     };
   }
   if ((mm = path.match(/^\/blog\/([a-z0-9-]+)$/))) {
-    const rows = await sb('blog_posts?select=slug,title,excerpt,published_at,created_at,image_url,status&slug=eq.' + encodeURIComponent(mm[1]) + '&limit=1', ctx);
+    const rows = await sb('blog_posts?select=slug,title,excerpt,content,published_at,created_at,image_url,status&slug=eq.' + encodeURIComponent(mm[1]) + '&limit=1', ctx);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const p = rows[0];
     if (!p) return { t: 'Article not found | JuriMatch', d: 'This article is not available.', noindex: true, status: 404 };
     return {
       noindex: (m.blogNoindex || []).includes(p.slug),
       t: clean(p.title) + ' | JuriMatch', d: clean(p.excerpt || p.title), h1: clean(p.title), lead: clean(p.excerpt), article: true,
-      image: p.image_url || null, published: p.published_at || p.created_at,
+      image: p.image_url || null, published: p.published_at || p.created_at, text: p.content || '',
       crumbs: [['Home', '/'], ['Blog', '/blog'], [clean(p.title), path]],
     };
   }
@@ -303,6 +340,7 @@ export async function render(req, res, u, env, ctx) {
   if (page.crumbs) body += '<nav aria-label="Breadcrumb"><ol style="list-style:none;padding:0;display:flex;gap:8px;flex-wrap:wrap;font-size:14px">' + page.crumbs.map(([n, p]) => '<li><a href="' + esc(p) + '">' + esc(n) + '</a></li>').join('') + '</ol></nav>';
   body += '<h1>' + esc(page.h1 || page.t) + '</h1>';
   if (page.lead) body += '<p>' + esc(page.lead) + '</p>';
+  if (page.text) body += '<article>' + articleHtml(page.text) + '</article>';
   if (page.facts) body += '<dl>' + page.facts.map(([k, v]) => '<dt>' + esc(k) + '</dt><dd>' + esc(v) + '</dd>').join('') + '</dl>';
   if (page.list) {
     try {
