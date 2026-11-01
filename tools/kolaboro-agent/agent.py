@@ -314,7 +314,7 @@ def public_cases(projects, latest):
         if ck['escrow'] is not True: q.append('No deposit protection published: will your payments go into an escrow or trust account in your name?')
         for f in fl[:2]: q.insert(0, f + ' in public sources: ask the developer for the current status, in writing.')
         for f in notes[:1]: q.insert(0, f + ': ask for the correct figures in writing before paying.')
-        out.append({'id': '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
+        out.append({'_slug': p.get('slug'), 'id': '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
                     'docs': ck['permit'] == 2, 'plans': ck['plans'], 'band': _band(m), 'done': m.get('completion_year'),
                     'title': m.get('title_type'), 'lease': m.get('lease_years_base'), 'yield': m.get('advertised_yield_pct') or s.get('yield_pct'), 'units': s.get('units'),
                     'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,
@@ -323,7 +323,24 @@ def public_cases(projects, latest):
                     'claims': _claims(p), 'stage': (lambda st: 'completed' if 'complet' in st or 'handed' in st else 'under construction' if 'construct' in st else 'off-plan' if 'off' in st or 'plan' in st else None)(str(p.get('stage') or '').lower()), 'delay': (p.get('facts') or {}).get('delay_months'), 'overdue': _overdue(p), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
     res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
+    HK = {'permit_claim': 'permit claimed', 'plans_published': 'plans published', 'price': 'price from', 'completion': 'completion', 'escrow': 'deposit protection stated',
+          'progress_pct': 'construction progress %', 'guaranteed_language': 'guaranteed-return language', 'yield_pct': 'advertised yield %', 'units': 'units', 'permit_number': 'permit number published'}
+    hist = {}
+    for ch in load(os.path.join(DATA, 'changes.json'), []):
+        for k, v in (ch.get('changed') or {}).items():
+            if k in HK and isinstance(v, list) and len(v) == 2:
+                a, b = v
+                if k == 'permit_number':
+                    a, b = bool(a), bool(b)
+                if all(x is None or isinstance(x, (bool, int, float)) or (k == 'completion' and isinstance(x, str) and len(x) < 20) for x in (a, b)) and a != b:
+                    hist.setdefault(ch.get('slug'), []).append({'d': ch.get('date'), 'f': HK[k], 'from': a, 'to': b})
+    for c in out:
+        h = hist.get(c.get('_slug'))
+        if h:
+            c['history'] = sorted(h, key=lambda x: x['d'] or '', reverse=True)[:8]
+        c.pop('_slug', None)
     res['db'] = db_stats(projects, out)
+    res['db']['changes_detected'] = sum(len(v) for v in hist.values())
     res['ships'] = ships()
     return res
 
@@ -340,6 +357,13 @@ def ships(limit=40):
             if n > 0 and r.get('date'):
                 mk = ', '.join((r.get('markets') or [])[:3])
                 out.append({'d': r['date'], 'k': 'auto', 't': '+%d new project%s found and checked by the daily research agent%s' % (n, '' if n == 1 else 's', (' (' + mk + ')') if mk else '')})
+    except Exception:
+        pass
+    try:
+        for r in json.load(open(os.path.join(DATA, 'runs.json'))):
+            n = int(r.get('changes') or 0)
+            if n > 0 and r.get('date'):
+                out.append({'d': r['date'], 'k': 'auto', 't': '%d change%s detected on developer pages by the research agent' % (n, '' if n == 1 else 's')})
     except Exception:
         pass
     seen = set(); res = []
